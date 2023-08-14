@@ -12,3 +12,8 @@ FROM (
                 unnest(@onlines::TIMESTAMP[]) AS online
      ) AS from_t
 WHERE to_t.user_id = from_t.user_id;
+
+-- name: UserOnlineAll :many
+SELECT user_id, online
+FROM user_online
+ORDER BY user_id;
