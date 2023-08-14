@@ -19,3 +19,22 @@
 
 # Go workspace file
 go.work
+
+# Goland
+.idea
+
+# Go
+vendor
+
+# TypeScript
+client/node_modules
+client/package-lock.json
+
+# Database volume
+.docker/volumes
+
+# temporary scripts
+private
+
+.env
+.production.env

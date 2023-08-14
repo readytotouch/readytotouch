@@ -1,0 +1,14 @@
+# https://docs.sqlc.dev/en/stable/overview/install.html
+# https://docs.sqlc.dev/en/stable/tutorials/getting-started-postgresql.html
+version: "2"
+sql:
+  - engine: "postgresql"
+    queries: "./internal/storage/postgres/query/"
+    schema: "./internal/storage/postgres/migrations/"
+
+    gen:
+      go:
+        package: "dbs"
+        sql_package: "pgx/v5"
+        out: "./internal/storage/postgres/dbs/"
+        emit_prepared_queries: true
