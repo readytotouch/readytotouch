@@ -44,8 +44,6 @@ migrate-pgsql-status:
 generate-sqlc:
 	# go install github.com/sqlc-dev/sqlc/cmd/sqlc@latest
 	sqlc generate
-	# alternative
-	# docker run --rm -v $(shell pwd):/src -w /src kjconroy/sqlc generate
 
 go-mod-update:
 	go mod tidy

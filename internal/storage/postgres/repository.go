@@ -6,16 +6,17 @@ import (
 	"github.com/readytotouch-yaaws/yaaws-go/internal/storage/postgres/dbs"
 
 	"github.com/jackc/pgx/v5"
+	"github.com/jackc/pgx/v5/pgxpool"
 )
 
 // Repository - repository
 type Repository struct {
-	connection *pgx.Conn
+	connection *pgxpool.Pool
 	queries    *dbs.Queries
 }
 
 // NewSqlcRepository - constructor
-func NewSqlcRepository(connection *pgx.Conn) *Repository {
+func NewSqlcRepository(connection *pgxpool.Pool) *Repository {
 	var queries = dbs.New(connection)
 
 	return &Repository{
@@ -25,7 +26,7 @@ func NewSqlcRepository(connection *pgx.Conn) *Repository {
 }
 
 // Connection - getter
-func (r *Repository) Connection() *pgx.Conn {
+func (r *Repository) Connection() *pgxpool.Pool {
 	return r.connection
 }
 
@@ -39,7 +40,7 @@ func (r *Repository) WithTransaction(ctx context.Context, fn func(queries *dbs.Q
 	return withTransaction(ctx, r.connection, r.queries, fn)
 }
 
-func withTransaction(ctx context.Context, db *pgx.Conn, queries *dbs.Queries, fn func(queries *dbs.Queries) error) (err error) {
+func withTransaction(ctx context.Context, db *pgxpool.Pool, queries *dbs.Queries, fn func(queries *dbs.Queries) error) (err error) {
 	tx, err := db.BeginTx(ctx, pgx.TxOptions{})
 	if err != nil {
 		return

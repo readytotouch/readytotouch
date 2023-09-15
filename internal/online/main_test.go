@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/jackc/pgx/v5"
+	"github.com/jackc/pgx/v5/pgxpool"
 
 	"github.com/stretchr/testify/require"
 )
@@ -20,9 +20,9 @@ func TestPing(t *testing.T) {
 
 	ctx := context.Background()
 
-	connection, err := pgx.Connect(ctx, dataSourceName)
+	connection, err := pgxpool.New(ctx, dataSourceName)
 	require.NoError(t, err)
-	defer connection.Close(ctx)
+	defer connection.Close()
 
 	require.NoError(t, connection.Ping(ctx))
 }
