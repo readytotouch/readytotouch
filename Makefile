@@ -45,7 +45,6 @@ migrate-pgsql-status:
 	goose -dir ./internal/storage/postgres/migrations -table schema_migrations postgres $(POSTGRES_DSN) status
 
 generate-sqlc:
-	# go install github.com/sqlc-dev/sqlc/cmd/sqlc@latest
 	sqlc generate
 
 go-mod-update:
