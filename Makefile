@@ -3,6 +3,9 @@ POSTGRES_DSN="postgresql://yaaws_user:yaaws_password@localhost:5432/yaaws?sslmod
 env-up:
 	docker-compose -f docker-compose.yml --env-file .env up -d
 
+postgres-test-run:
+	docker exec readytotouch_postgres_db psql -U yaaws_user -d yaaws -c "SELECT VERSION();"
+
 logs:
 	docker logs readytotouch_go_app
 
@@ -44,8 +47,6 @@ migrate-pgsql-status:
 generate-sqlc:
 	# go install github.com/sqlc-dev/sqlc/cmd/sqlc@latest
 	sqlc generate
-	# alternative
-	# docker run --rm -v $(shell pwd):/src -w /src kjconroy/sqlc generate
 
 go-mod-update:
 	go mod tidy
