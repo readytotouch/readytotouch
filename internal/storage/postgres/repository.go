@@ -1,4 +1,4 @@
-package postgresql
+package postgres
 
 import (
 	"context"
@@ -15,8 +15,8 @@ type Repository struct {
 	queries    *dbs.Queries
 }
 
-// NewSqlcRepository - constructor
-func NewSqlcRepository(connection *pgxpool.Pool) *Repository {
+// NewRepository - constructor
+func NewRepository(connection *pgxpool.Pool) *Repository {
 	var queries = dbs.New(connection)
 
 	return &Repository{

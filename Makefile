@@ -1,5 +1,3 @@
-POSTGRES_DSN="postgresql://yaaws_user:yaaws_password@localhost:5432/yaaws?sslmode=disable"
-
 env-up:
 	docker-compose -f docker-compose.yml --env-file .env up -d
 
@@ -29,20 +27,28 @@ bench:
 
 # make migrate-pgsql-create NAME=init
 migrate-pgsql-create:
-	# mkdir -p ./internal/storage/postgres/migrations
-	$(eval NAME ?= todo)
-	goose -dir ./internal/storage/postgres/migrations -table schema_migrations postgres $(POSTGRES_DSN) create $(NAME) sql
+	goose -dir ./internal/storage/postgres/migrations -table schema_migrations postgres create $(NAME) sql
 
 migrate-pgsql-up:
-	goose -dir ./internal/storage/postgres/migrations -table schema_migrations postgres $(POSTGRES_DSN) up
+	docker exec readytotouch_postgres_goose_migrations \
+		goose --dir=/db/migrations --table=schema_migrations \
+		up
 migrate-pgsql-redo:
-	goose -dir ./internal/storage/postgres/migrations -table schema_migrations postgres $(POSTGRES_DSN) redo
+	docker exec readytotouch_postgres_goose_migrations \
+		goose --dir=/db/migrations --table=schema_migrations \
+		redo
 migrate-pgsql-down:
-	goose -dir ./internal/storage/postgres/migrations -table schema_migrations postgres $(POSTGRES_DSN) down-to 20230815012800
+	docker exec readytotouch_postgres_goose_migrations \
+		goose --dir=/db/migrations --table=schema_migrations \
+		down-to 20230815012800
 migrate-pgsql-reset:
-	goose -dir ./internal/storage/postgres/migrations -table schema_migrations postgres $(POSTGRES_DSN) reset
+	docker exec readytotouch_postgres_goose_migrations \
+		goose --dir=/db/migrations --table=schema_migrations \
+		reset
 migrate-pgsql-status:
-	goose -dir ./internal/storage/postgres/migrations -table schema_migrations postgres $(POSTGRES_DSN) status
+	docker exec readytotouch_postgres_goose_migrations \
+		goose --dir=/db/migrations --table=schema_migrations \
+		status
 
 generate-sqlc:
 	sqlc generate
