@@ -4,6 +4,7 @@ import (
 	"context"
 
 	"github.com/readytotouch-yaaws/yaaws-go/internal/env"
+	"github.com/readytotouch-yaaws/yaaws-go/internal/online"
 	"github.com/readytotouch-yaaws/yaaws-go/internal/server"
 	"github.com/readytotouch-yaaws/yaaws-go/internal/storage/postgres"
 
@@ -25,7 +26,11 @@ func main() {
 
 	r.Use(gzip.Gzip(gzip.DefaultCompression))
 
-	_ = repository
+	var (
+		onlineController = online.NewController(online.NewRepository(repository))
+	)
+
+	r.GET("/api/v1/online/daily/stats.json", onlineController.Index)
 
 	r.StaticFile("/robots.txt", "./public/robots.txt")
 
