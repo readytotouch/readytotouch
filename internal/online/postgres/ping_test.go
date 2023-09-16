@@ -1,16 +1,18 @@
-package main
+package postgres
 
 import (
 	"context"
 	"testing"
+
+	"github.com/readytotouch-yaaws/yaaws-go/internal/env"
 
 	"github.com/jackc/pgx/v5/pgxpool"
 
 	"github.com/stretchr/testify/require"
 )
 
-const (
-	dataSourceName = "postgresql://yaaws_user:yaaws_password@postgres:5432/yaaws?sslmode=disable&timezone=UTC"
+var (
+	dataSourceName = env.Must("POSTGRES_DSN")
 )
 
 func TestPing(t *testing.T) {

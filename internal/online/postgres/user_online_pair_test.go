@@ -1,4 +1,4 @@
-package main
+package postgres
 
 func incUserOnlinePair(source UserOnlinePair, shift int64) UserOnlinePair {
 	return UserOnlinePair{
