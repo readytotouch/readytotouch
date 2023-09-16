@@ -12,24 +12,24 @@ import (
 )
 
 const userOnlineDailyCountStats = `-- name: UserOnlineDailyCountStats :many
-SELECT days.online                       AS online,
+SELECT days.online::DATE                 AS online,
        COALESCE(s.user_count, 0)::BIGINT AS user_count
 FROM GENERATE_SERIES(
-     $1::TIMESTAMP,
-     $2::TIMESTAMP,
-     '1 DAY'::INTERVAL
+    $1::DATE,
+    $2::DATE,
+    '1 DAY'::INTERVAL
 ) AS days (online)
     LEFT JOIN user_online_daily_count_stats s ON (days.online = s.online)
 ORDER BY days.online
 `
 
 type UserOnlineDailyCountStatsParams struct {
-	From pgtype.Timestamp
-	To   pgtype.Timestamp
+	From pgtype.Date
+	To   pgtype.Date
 }
 
 type UserOnlineDailyCountStatsRow struct {
-	Online    interface{}
+	Online    pgtype.Date
 	UserCount int64
 }
 
