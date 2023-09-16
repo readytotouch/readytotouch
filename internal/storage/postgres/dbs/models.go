@@ -64,6 +64,7 @@ type User struct {
 	ID        int64
 	CreatedAt pgtype.Timestamp
 	UpdatedAt pgtype.Timestamp
+	DeletedAt pgtype.Timestamp
 }
 
 type UserOnlineDailyCountStat struct {
@@ -90,6 +91,7 @@ type UserSocialProfile struct {
 	Username  string
 	CreatedAt pgtype.Timestamp
 	UpdatedAt pgtype.Timestamp
+	DeletedAt pgtype.Timestamp
 }
 
 type UserSocialProfileChangeHistory struct {
@@ -99,4 +101,5 @@ type UserSocialProfileChangeHistory struct {
 	Email               string
 	Username            string
 	CreatedAt           pgtype.Timestamp
+	DeletedAt           pgtype.Timestamp
 }

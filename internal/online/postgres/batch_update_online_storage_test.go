@@ -1,4 +1,4 @@
-package main
+package postgres
 
 import (
 	"context"
@@ -22,7 +22,7 @@ func TestBatchUpdateOnlineStorage(t *testing.T) {
 	require.NoError(t, err)
 	defer connection.Close()
 
-	storage := NewBatchUpdateOnlineStorage(postgresql.NewSqlcRepository(connection))
+	storage := NewBatchUpdateOnlineStorage(postgresql.NewRepository(connection))
 
 	testOnlineStorage(t, storage)
 }
@@ -38,7 +38,7 @@ func BenchmarkBatchUpdateOnlineStorage(b *testing.B) {
 	require.NoError(b, err)
 	defer connection.Close()
 
-	storage := NewBatchUpdateOnlineStorage(postgresql.NewSqlcRepository(connection))
+	storage := NewBatchUpdateOnlineStorage(postgresql.NewRepository(connection))
 
 	benchmarkOnlineStorage(b, storage)
 }

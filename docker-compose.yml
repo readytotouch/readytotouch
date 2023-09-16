@@ -7,12 +7,20 @@ services:
     working_dir: /go/src/github.com/readytotouch-yaaws/yaaws-go
     volumes:
       - .:/go/src/github.com/readytotouch-yaaws/yaaws-go
-    command: "sleep 1d"
+      - ./.docker/volumes/go/tls-certificates:/var/lib/tls-certificates/data/
+    environment:
+      GIN_MODE: release
+      ENVIRONMENT: ${ENVIRONMENT:-development}
+      POSTGRES_DSN: ${POSTGRES_DSN}
+      TLS_CERTIFICATES_DIR: /var/lib/tls-certificates/data/
+      HOSTS: ${HOSTS}
     ports:
       - "80:80"
       - "443:443"
     depends_on:
       - postgres
+      - goose
+    command: "sleep infinity"
 
   postgres:
     container_name: "readytotouch_postgres_db"
@@ -25,3 +33,16 @@ services:
       - "5432:5432"
     volumes:
       - ./.docker/volumes/postgresql/data/:/var/lib/postgresql/data/
+
+  goose:
+    container_name: "readytotouch_postgres_goose_migrations"
+    build:
+      context: ./docker/migrations
+      dockerfile: Dockerfile
+    volumes:
+      - ./internal/storage/postgres/migrations:/db/migrations:ro
+    environment:
+      GOOSE_DRIVER: "postgres"
+      GOOSE_DBSTRING: ${POSTGRES_DSN}
+    depends_on:
+      - postgres

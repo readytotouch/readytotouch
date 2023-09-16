@@ -1,8 +1,3 @@
--- name: UserOnlineHourlyStats :many
-SELECT user_id, online
-FROM user_online_hourly_stats
-ORDER BY user_id, online;
-
 -- name: UserOnlineHourlyStatsUpsert :execrows
 INSERT INTO user_online_hourly_stats (user_id, online)
 VALUES (unnest(@user_ids::BIGINT[]),

@@ -17,7 +17,8 @@ CREATE TABLE users
 (
     id         BIGSERIAL NOT NULL PRIMARY KEY,
     created_at TIMESTAMP NOT NULL,
-    updated_at TIMESTAMP NOT NULL
+    updated_at TIMESTAMP NOT NULL,
+    deleted_at TIMESTAMP NULL
 );
 
 CREATE TABLE user_social_profiles
@@ -25,24 +26,31 @@ CREATE TABLE user_social_profiles
     id         BIGSERIAL       NOT NULL PRIMARY KEY,
     user_id    BIGINT          NOT NULL REFERENCES users (id),
     provider   SOCIAL_PROVIDER NOT NULL,
-    social_id  VARCHAR         NOT NULL,
-    email      VARCHAR         NOT NULL,
-    username   VARCHAR         NOT NULL,
+    social_id  VARCHAR         NOT NULL, -- erase on soft delete
+    email      VARCHAR         NOT NULL, -- erase on soft delete
+    username   VARCHAR         NOT NULL, -- erase on soft delete
     created_at TIMESTAMP       NOT NULL,
     updated_at TIMESTAMP       NOT NULL,
-    UNIQUE (provider, social_id)
+    deleted_at TIMESTAMP       NULL
 );
 
-CREATE INDEX ON user_social_profiles (email);
+CREATE UNIQUE INDEX
+    ON user_social_profiles (provider, social_id)
+    WHERE deleted_at IS NULL;
+
+CREATE INDEX
+    ON user_social_profiles (email)
+    WHERE deleted_at IS NULL;
 
 CREATE TABLE user_social_profile_change_history
 (
     id                     BIGSERIAL NOT NULL PRIMARY KEY,
     user_id                BIGINT    NOT NULL REFERENCES users (id),
     user_social_profile_id BIGINT    NOT NULL REFERENCES user_social_profiles (id),
-    email                  VARCHAR   NOT NULL,
-    username               VARCHAR   NOT NULL,
-    created_at             TIMESTAMP NOT NULL
+    email                  VARCHAR   NOT NULL, -- erase on soft delete
+    username               VARCHAR   NOT NULL, -- erase on soft delete
+    created_at             TIMESTAMP NOT NULL,
+    deleted_at             TIMESTAMP NULL
 );
 -- +goose StatementEnd
 

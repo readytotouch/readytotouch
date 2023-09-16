@@ -1,4 +1,4 @@
-package main
+package postgres
 
 import (
 	"context"
@@ -173,7 +173,7 @@ func truncateOnline(t testing.TB, ctx context.Context, connection *pgxpool.Pool)
 func expectedHourlyStats(t *testing.T, ctx context.Context, connection *pgxpool.Pool, expectedPairs []UserOnlinePair) {
 	t.Helper()
 
-	repository := postgresql.NewSqlcRepository(connection)
+	repository := postgresql.NewRepository(connection)
 	actualPairs, err := repository.Queries().UserOnlineHourlyStats(ctx)
 	require.NoError(t, err)
 
