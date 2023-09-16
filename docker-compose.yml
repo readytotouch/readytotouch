@@ -10,6 +10,7 @@ services:
       - ./.docker/volumes/go/tls-certificates:/var/lib/tls-certificates/data/
     environment:
       GIN_MODE: release
+      ENVIRONMENT: ${ENVIRONMENT:-development}
       POSTGRES_DSN: ${POSTGRES_DSN}
       TLS_CERTIFICATES_DIR: /var/lib/tls-certificates/data/
       HOSTS: ${HOSTS}
