@@ -82,8 +82,8 @@ func main() {
 		// System
 		StaticFile("/humans.txt", "./public/humans.txt").
 		StaticFile("/robots.txt", "./public/robots.txt").
-		StaticFile("/browserconfig.xml", "./public/browserconfig.xml").
-		StaticFile("/manifest.json", "./public/manifest.json")
+		StaticFile("/manifest.json", "./public/manifest.json").
+		StaticFile("/browserconfig.xml", "./public/browserconfig.xml")
 
 	server.Run(r.Handler())
 }
