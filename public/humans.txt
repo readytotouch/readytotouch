@@ -1,0 +1,15 @@
+/* TEAM */
+    Name: Yaroslav Podorvanov
+    Role: Back-end Developer
+    Profile: https://github.com/YaroslavPodorvanov
+    From: Ukraine
+
+    Name: Victor Poprozhuk
+    Role: Front-end Developer
+    Profile: https://github.com/VictorPoprozhuk
+    From: Ukraine
+
+    Name: Anastasiia Sihetii
+    Role: Designer
+    Profile: https://github.com/AnastasiiaSihetii
+    From: Ukraine

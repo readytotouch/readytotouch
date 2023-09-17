@@ -19,8 +19,10 @@ env-down:
 env-down-with-clear:
 	docker-compose -f docker-compose.yml --env-file .env down --remove-orphans -v # --rmi=all
 
-app:
+app-stop:
 	docker exec readytotouch_go_app pkill go
+
+app-start:
 	docker exec readytotouch_go_app go run ./cmd/main.go
 
 test:
@@ -54,9 +56,25 @@ migrate-pgsql-status:
 		goose --dir=/db/migrations --table=schema_migrations \
 		status
 
+generate-template:
+	# go get -u github.com/valyala/quicktemplate/qtc
+	qtc -dir=./internal/templates/v1 -skipLineComments
+	git add .
+
 generate-sqlc:
 	sqlc generate
 
 go-mod-update:
 	go mod tidy
 	go mod vendor
+
+# make design DESIGN="~/go/src/github.com/readytotouch-yaaws/readytotouch-yaaws.github.io"
+design:
+	$(eval DESIGN := ~/go/src/github.com/readytotouch-yaaws/readytotouch-yaaws.github.io)
+	rm -rf ./public/assets/images ./public/design
+	mkdir -p ./public/assets/images ./public/design
+
+	cp -r $(DESIGN)/public/assets/images/* ./public/assets/images
+	cp -r $(DESIGN)/public/*.html ./public/design
+
+	git add .

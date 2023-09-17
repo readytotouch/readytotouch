@@ -1,0 +1,24 @@
+{% func stats() %}
+<section class="stats">
+    <div class="stats__item">
+        <div class="stats__header">
+            <h3 class="stats__title">
+                Online users
+            </h3>
+            <div class="stats__period">Last month</div>
+        </div>
+        <div class="stats__chart js-chart-online-statistics"></div>
+    </div>
+    <div class="stats__item">
+        <div class="stats__header">
+            <h3 class="stats__title">
+                User registration statistics
+            </h3>
+            <div class="stats__period">Last month</div>
+        </div>
+        <div class="stats__chart">
+            <div class="stats__chart js-chart-registration-statistics"></div>
+        </div>
+    </div>
+</section>
+{% endfunc %}

@@ -5,6 +5,7 @@ import (
 	"time"
 
 	"github.com/readytotouch-yaaws/yaaws-go/internal/domain"
+	template "github.com/readytotouch-yaaws/yaaws-go/internal/templates/v1"
 
 	"github.com/gin-gonic/gin"
 )
@@ -15,6 +16,12 @@ type Controller struct {
 
 func NewController(repository *Repository) *Controller {
 	return &Controller{repository: repository}
+}
+
+func (c *Controller) Index(ctx *gin.Context) {
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.Online()))
+
+	return
 }
 
 func (c *Controller) DailyCountStats(ctx *gin.Context) {
