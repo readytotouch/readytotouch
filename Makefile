@@ -60,3 +60,14 @@ generate-sqlc:
 go-mod-update:
 	go mod tidy
 	go mod vendor
+
+# make design DESIGN="~/go/src/github.com/readytotouch-yaaws/readytotouch-yaaws.github.io"
+design:
+	$(eval DESIGN := ~/go/src/github.com/readytotouch-yaaws/readytotouch-yaaws.github.io)
+	rm -rf ./public/assets/images ./public/design
+	mkdir -p ./public/assets/images ./public/design
+
+	cp -r $(DESIGN)/public/assets/images/* ./public/assets/images
+	cp -r $(DESIGN)/public/*.html ./public/design
+
+	git add .
