@@ -56,6 +56,11 @@ migrate-pgsql-status:
 		goose --dir=/db/migrations --table=schema_migrations \
 		status
 
+generate-template:
+	# go get -u github.com/valyala/quicktemplate/qtc
+	qtc -dir=./internal/templates/v1 -skipLineComments
+	git add .
+
 generate-sqlc:
 	sqlc generate
 
