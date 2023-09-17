@@ -1,0 +1,48 @@
+{% func header() %}
+<header class="header">
+	<div class="header__wrapper">
+		<a href="#" class="header__logo">
+			<img class="header__logo-img" src="/assets/images/pages/online/logo.svg" alt="logo">
+			<h3 class="header__logo-title">Ready To Touch</h3>
+		</a>
+		<div class="header__stars">
+			<iframe src="https://ghbtns.com/github-btn.html?user=readytotouch-yaaws&repo=readytotouch-yaaws.github.io&type=star&count=true&size=large"
+				frameborder="0" scrolling="0" width="170" height="30" title="GitHub"></iframe>
+		</div>
+		{% comment %}
+		<div class="header__profile">
+			<button class="header__profile-button">
+				<img src="https://avatars.githubusercontent.com/u/63663261?v=4&s=48" alt="photo-profile">
+			</button>
+			<div class="header__modal modal">
+				<div class="modal__profile">
+					<img src="https://avatars.githubusercontent.com/u/63663261?v=4&s=48" class="modal__user-photo" width="48" height="48" alt="photo-profile">
+					<div class="modal__profile-info">
+						<div class="modal__profile-name">Yaroslav Podorvanov</div>
+						<a href="https://github.com/YaroslavPodorvanov" target="_blank" class="modal__link">
+							<img src="/assets/images/pages/online/github-black.svg" width="20" height="20" alt="link">
+							<span class="modal__profile-github">github.com/YaroslavPodorvanov</span>
+						</a>
+						<a href="https://gitlab.com/YaroslavPodorvanov" target="_blank" class="modal__link">
+							<img src="/assets/images/pages/online/gitlab.png" width="20" height="20" alt="link">
+							<span class="modal__profile-gitlab">gitlab.com/YaroslavPodorvanov</span>
+						</a>
+					</div>
+				</div>
+				<div class="modal__log-out">
+					<a href="#" class="modal__button">
+						<img src="/assets/images/pages/online/log-out.svg" alt="log-out">
+						<span>Log out</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		{% endcomment %}
+	</div>
+</header>
+<script>
+	document.querySelector(".header__profile-button").addEventListener("click", function () {
+		document.querySelector(".header__modal").classList.toggle("active");
+	})
+</script>
+{% endfunc %}
