@@ -75,7 +75,7 @@ func StreamOnline(qw422016 *qt422016.Writer) {
 	streamstats(qw422016)
 	qw422016.N().S(`
     `)
-	streamhistory(qw422016)
+	streamregistrationHistory(qw422016)
 	qw422016.N().S(`
     `)
 	streamprojects(qw422016)

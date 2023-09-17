@@ -40,9 +40,11 @@
 		{% endcomment %}
 	</div>
 </header>
+{% comment %}
 <script>
 	document.querySelector(".header__profile-button").addEventListener("click", function () {
 		document.querySelector(".header__modal").classList.toggle("active");
 	})
 </script>
+{% endcomment %}
 {% endfunc %}

@@ -30,11 +30,8 @@ func streamheader(qw422016 *qt422016.Writer) {
 	qw422016.N().S(`
 	</div>
 </header>
-<script>
-	document.querySelector(".header__profile-button").addEventListener("click", function () {
-		document.querySelector(".header__modal").classList.toggle("active");
-	})
-</script>
+`)
+	qw422016.N().S(`
 `)
 }
 

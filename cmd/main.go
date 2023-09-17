@@ -32,6 +32,7 @@ func main() {
 		onlineController = pkgOnline.NewController(pkgOnline.NewRepository(database))
 	)
 
+	r.GET("/", onlineController.Index)
 	r.GET("/api/v1/users/registration/stats/daily.json", userController.RegistrationDailyCountStats)
 	r.GET("/api/v1/users/online/stats/daily.json", onlineController.DailyCountStats)
 

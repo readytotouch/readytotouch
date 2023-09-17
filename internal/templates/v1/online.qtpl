@@ -49,7 +49,7 @@
 </section>
 <div class="container">
     {%= stats() %}
-    {%= history() %}
+    {%= registrationHistory() %}
     {%= projects() %}
     {%= articles() %}
 </div>
