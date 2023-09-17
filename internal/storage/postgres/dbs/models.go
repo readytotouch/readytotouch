@@ -68,18 +68,18 @@ type User struct {
 }
 
 type UserOnlineDailyCountStat struct {
-	Online    pgtype.Date
+	CreatedAt pgtype.Date
 	UserCount int64
 }
 
 type UserOnlineDailyStat struct {
-	Online pgtype.Date
-	UserID int64
+	CreatedAt pgtype.Date
+	UserID    int64
 }
 
 type UserOnlineHourlyStat struct {
-	UserID int64
-	Online pgtype.Timestamp
+	UserID    int64
+	CreatedAt pgtype.Timestamp
 }
 
 type UserSocialProfile struct {

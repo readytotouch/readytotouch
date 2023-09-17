@@ -11,10 +11,6 @@ import (
 	"github.com/stretchr/testify/require"
 )
 
-var (
-	dataSourceName = env.Must("POSTGRES_DSN")
-)
-
 func TestPing(t *testing.T) {
 	if testing.Short() {
 		t.Skip()
@@ -22,7 +18,7 @@ func TestPing(t *testing.T) {
 
 	ctx := context.Background()
 
-	connection, err := pgxpool.New(ctx, dataSourceName)
+	connection, err := pgxpool.New(ctx, env.Must("POSTGRES_DSN"))
 	require.NoError(t, err)
 	defer connection.Close()
 

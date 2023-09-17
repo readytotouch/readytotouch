@@ -12,36 +12,36 @@ import (
 )
 
 const userOnlineDailyCountStatsUpsert = `-- name: UserOnlineDailyCountStatsUpsert :exec
-INSERT INTO user_online_daily_count_stats (online, user_count)
-SELECT source.online, COUNT(*)
+INSERT INTO user_online_daily_count_stats (created_at, user_count)
+SELECT source.created_at, COUNT(*)
 FROM user_online_daily_stats AS source
-WHERE source.online >= $1
-GROUP BY source.online
-ORDER BY source.online
-ON CONFLICT (online)
+WHERE source.created_at >= $1
+GROUP BY source.created_at
+ORDER BY source.created_at
+ON CONFLICT (created_at)
     DO UPDATE
     SET user_count = excluded.user_count
 `
 
-func (q *Queries) UserOnlineDailyCountStatsUpsert(ctx context.Context, online pgtype.Date) error {
-	_, err := q.db.Exec(ctx, userOnlineDailyCountStatsUpsert, online)
+func (q *Queries) UserOnlineDailyCountStatsUpsert(ctx context.Context, createdAt pgtype.Date) error {
+	_, err := q.db.Exec(ctx, userOnlineDailyCountStatsUpsert, createdAt)
 	return err
 }
 
 const userOnlineDailyStatsUpsert = `-- name: UserOnlineDailyStatsUpsert :execrows
-INSERT INTO user_online_daily_stats (online, user_id)
+INSERT INTO user_online_daily_stats (created_at, user_id)
 VALUES (unnest($1::DATE[]),
         unnest($2::BIGINT[]))
-ON CONFLICT (online, user_id) DO NOTHING
+ON CONFLICT (created_at, user_id) DO NOTHING
 `
 
 type UserOnlineDailyStatsUpsertParams struct {
-	Onlines []pgtype.Date
-	UserIds []int64
+	CreatedAts []pgtype.Date
+	UserIds    []int64
 }
 
 func (q *Queries) UserOnlineDailyStatsUpsert(ctx context.Context, arg UserOnlineDailyStatsUpsertParams) (int64, error) {
-	result, err := q.db.Exec(ctx, userOnlineDailyStatsUpsert, arg.Onlines, arg.UserIds)
+	result, err := q.db.Exec(ctx, userOnlineDailyStatsUpsert, arg.CreatedAts, arg.UserIds)
 	if err != nil {
 		return 0, err
 	}
@@ -49,19 +49,19 @@ func (q *Queries) UserOnlineDailyStatsUpsert(ctx context.Context, arg UserOnline
 }
 
 const userOnlineHourlyStatsUpsert = `-- name: UserOnlineHourlyStatsUpsert :execrows
-INSERT INTO user_online_hourly_stats (user_id, online)
+INSERT INTO user_online_hourly_stats (user_id, created_at)
 VALUES (unnest($1::BIGINT[]),
         unnest($2::TIMESTAMP[]))
-ON CONFLICT (user_id, online) DO NOTHING
+ON CONFLICT (user_id, created_at) DO NOTHING
 `
 
 type UserOnlineHourlyStatsUpsertParams struct {
-	UserIds []int64
-	Onlines []pgtype.Timestamp
+	UserIds    []int64
+	CreatedAts []pgtype.Timestamp
 }
 
 func (q *Queries) UserOnlineHourlyStatsUpsert(ctx context.Context, arg UserOnlineHourlyStatsUpsertParams) (int64, error) {
-	result, err := q.db.Exec(ctx, userOnlineHourlyStatsUpsert, arg.UserIds, arg.Onlines)
+	result, err := q.db.Exec(ctx, userOnlineHourlyStatsUpsert, arg.UserIds, arg.CreatedAts)
 	if err != nil {
 		return 0, err
 	}

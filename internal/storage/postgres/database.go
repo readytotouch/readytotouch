@@ -9,34 +9,34 @@ import (
 	"github.com/jackc/pgx/v5/pgxpool"
 )
 
-// Repository - repository
-type Repository struct {
+// Database - repository
+type Database struct {
 	connection *pgxpool.Pool
 	queries    *dbs.Queries
 }
 
-// NewRepository - constructor
-func NewRepository(connection *pgxpool.Pool) *Repository {
+// NewDatabase - constructor
+func NewDatabase(connection *pgxpool.Pool) *Database {
 	var queries = dbs.New(connection)
 
-	return &Repository{
+	return &Database{
 		connection: connection,
 		queries:    queries,
 	}
 }
 
 // Connection - getter
-func (r *Repository) Connection() *pgxpool.Pool {
+func (r *Database) Connection() *pgxpool.Pool {
 	return r.connection
 }
 
 // Queries - getter
-func (r *Repository) Queries() *dbs.Queries {
+func (r *Database) Queries() *dbs.Queries {
 	return r.queries
 }
 
 // WithTransaction - start transaction
-func (r *Repository) WithTransaction(ctx context.Context, fn func(queries *dbs.Queries) error) error {
+func (r *Database) WithTransaction(ctx context.Context, fn func(queries *dbs.Queries) error) error {
 	return withTransaction(ctx, r.connection, r.queries, fn)
 }
 
