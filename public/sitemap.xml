@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.google.com/schemas/sitemap/0.84">
+    <sitemap>
+        <loc>https://readytotouch.com/sitemap-main.xml</loc>
+    </sitemap>
+    <sitemap>
+        <loc>https://readytotouch.com/sitemap-companies.xml</loc>
+    </sitemap>
+    <sitemap>
+        <loc>https://readytotouch.com/sitemap-vacancies.xml</loc>
+    </sitemap>
+    <sitemap>
+        <loc>https://readytotouch.com/sitemap-projects.xml</loc>
+    </sitemap>
+</sitemapindex>
