@@ -6,7 +6,8 @@ import (
 	"testing"
 	"time"
 
-	postgresql "github.com/readytotouch-yaaws/yaaws-go/internal/storage/postgres"
+	"github.com/readytotouch-yaaws/yaaws-go/internal/env"
+	"github.com/readytotouch-yaaws/yaaws-go/internal/storage/postgres"
 
 	"github.com/jackc/pgx/v5/pgxpool"
 
@@ -21,7 +22,7 @@ func testOnlineStorage(
 
 	ctx := context.Background()
 
-	connection, err := pgxpool.New(ctx, dataSourceName)
+	connection, err := pgxpool.New(ctx, env.Must("POSTGRES_DSN"))
 	require.NoError(t, err)
 	defer connection.Close()
 
@@ -104,7 +105,7 @@ func benchmarkOnlineStorage(
 
 	ctx := context.Background()
 
-	connection, err := pgxpool.New(ctx, dataSourceName)
+	connection, err := pgxpool.New(ctx, env.Must("POSTGRES_DSN"))
 	require.NoError(b, err)
 	defer connection.Close()
 
@@ -173,7 +174,7 @@ func truncateOnline(t testing.TB, ctx context.Context, connection *pgxpool.Pool)
 func expectedHourlyStats(t *testing.T, ctx context.Context, connection *pgxpool.Pool, expectedPairs []UserOnlinePair) {
 	t.Helper()
 
-	repository := postgresql.NewRepository(connection)
+	repository := postgres.NewDatabase(connection)
 	actualPairs, err := repository.Queries().UserOnlineHourlyStats(ctx)
 	require.NoError(t, err)
 
@@ -181,7 +182,7 @@ func expectedHourlyStats(t *testing.T, ctx context.Context, connection *pgxpool.
 	for i, pair := range actualPairs {
 		hourlyActualPairs[i] = UserOnlinePair{
 			UserID: pair.UserID,
-			Online: truncate(pair.Online.Time.Unix(), hour),
+			Online: truncate(pair.CreatedAt.Time.Unix(), hour),
 		}
 	}
 

@@ -12,15 +12,15 @@ import (
 )
 
 const userOnlineDailyCountStats = `-- name: UserOnlineDailyCountStats :many
-SELECT days.online::DATE                 AS online,
+SELECT days.day::DATE                    AS day,
        COALESCE(s.user_count, 0)::BIGINT AS user_count
 FROM GENERATE_SERIES(
     $1::DATE,
     $2::DATE,
     '1 DAY'::INTERVAL
-) AS days (online)
-    LEFT JOIN user_online_daily_count_stats s ON (days.online = s.online)
-ORDER BY days.online
+) AS days (day)
+    LEFT JOIN user_online_daily_count_stats s ON (days.day = s.created_at)
+ORDER BY days.day
 `
 
 type UserOnlineDailyCountStatsParams struct {
@@ -29,7 +29,7 @@ type UserOnlineDailyCountStatsParams struct {
 }
 
 type UserOnlineDailyCountStatsRow struct {
-	Online    pgtype.Date
+	Day       pgtype.Date
 	UserCount int64
 }
 
@@ -42,7 +42,7 @@ func (q *Queries) UserOnlineDailyCountStats(ctx context.Context, arg UserOnlineD
 	var items []UserOnlineDailyCountStatsRow
 	for rows.Next() {
 		var i UserOnlineDailyCountStatsRow
-		if err := rows.Scan(&i.Online, &i.UserCount); err != nil {
+		if err := rows.Scan(&i.Day, &i.UserCount); err != nil {
 			return nil, err
 		}
 		items = append(items, i)
@@ -54,9 +54,9 @@ func (q *Queries) UserOnlineDailyCountStats(ctx context.Context, arg UserOnlineD
 }
 
 const userOnlineHourlyStats = `-- name: UserOnlineHourlyStats :many
-SELECT user_id, online
+SELECT user_id, created_at
 FROM user_online_hourly_stats
-ORDER BY user_id, online
+ORDER BY user_id, created_at
 `
 
 func (q *Queries) UserOnlineHourlyStats(ctx context.Context) ([]UserOnlineHourlyStat, error) {
@@ -68,7 +68,7 @@ func (q *Queries) UserOnlineHourlyStats(ctx context.Context) ([]UserOnlineHourly
 	var items []UserOnlineHourlyStat
 	for rows.Next() {
 		var i UserOnlineHourlyStat
-		if err := rows.Scan(&i.UserID, &i.Online); err != nil {
+		if err := rows.Scan(&i.UserID, &i.CreatedAt); err != nil {
 			return nil, err
 		}
 		items = append(items, i)

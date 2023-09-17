@@ -10,7 +10,7 @@ import (
 	"github.com/readytotouch-yaaws/yaaws-go/internal/env"
 
 	"golang.org/x/crypto/acme/autocert"
-	errgroup "golang.org/x/sync/errgroup"
+	"golang.org/x/sync/errgroup"
 )
 
 func Run(handler http.Handler) {

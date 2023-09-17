@@ -20,6 +20,7 @@ env-down-with-clear:
 	docker-compose -f docker-compose.yml --env-file .env down --remove-orphans -v # --rmi=all
 
 app:
+	docker exec readytotouch_go_app pkill go
 	docker exec readytotouch_go_app go run ./cmd/main.go
 
 test:

@@ -1,6 +1,8 @@
 package domain
 
-type UserOnlineDailyCountStats struct {
-	Online    int64 `json:"online"`
-	UserCount int64 `json:"userCount"`
+import "time"
+
+type TimeCountStats struct {
+	Time  time.Time `json:"time"`
+	Count int64     `json:"count"`
 }

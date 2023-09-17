@@ -1,4 +1,4 @@
-package online
+package user
 
 import (
 	"context"
@@ -19,12 +19,12 @@ func NewRepository(db *postgres.Database) *Repository {
 	return &Repository{db: db}
 }
 
-func (r *Repository) DailyCountStats(
+func (r *Repository) RegistrationDailyCountStats(
 	ctx context.Context,
 	from time.Time,
 	to time.Time,
 ) ([]domain.TimeCountStats, error) {
-	rows, err := r.db.Queries().UserOnlineDailyCountStats(ctx, dbs.UserOnlineDailyCountStatsParams{
+	rows, err := r.db.Queries().UserRegistrationDailyCountStats(ctx, dbs.UserRegistrationDailyCountStatsParams{
 		From: pgtype.Date{
 			Time:  from,
 			Valid: true,
