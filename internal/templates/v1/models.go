@@ -6,6 +6,11 @@ const (
 	appVersion = 1
 )
 
+const (
+	github = domain.SocialProviderGithub
+	gitlab = domain.SocialProviderGitlab
+)
+
 type SocialUserProfile = domain.SocialUserProfile
 
 func SocialUserProfileName(v SocialUserProfile) string {

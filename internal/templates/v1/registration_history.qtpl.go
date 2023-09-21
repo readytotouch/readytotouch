@@ -31,27 +31,56 @@ func streamregistrationHistory(qw422016 *qt422016.Writer, socialUserProfiles []S
             `)
 		for _, profile := range socialUserProfiles {
 			qw422016.N().S(`
+            `)
+			switch profile.SocialProvider {
+			case github:
+				qw422016.N().S(`
             <li class="history__table-user">
                 <div class="history__user-group">
                     <img src="https://avatars.githubusercontent.com/u/`)
-			qw422016.E().S(profile.SocialProviderUserID)
-			qw422016.N().S(`?v=4&s=48" width="40" height="40"
+				qw422016.E().S(profile.SocialProviderUserID)
+				qw422016.N().S(`?v=4&s=40" width="40" height="40"
                          alt="photo"
                          class="history__user-photo">
                     <span class="history__user-name">`)
-			qw422016.E().S(SocialUserProfileName(profile))
-			qw422016.N().S(`</span>
+				qw422016.E().S(SocialUserProfileName(profile))
+				qw422016.N().S(`</span>
                 </div>
                 <a href="https://github.com/`)
-			qw422016.E().S(profile.Username)
-			qw422016.N().S(`" target="_blank"
-                   class="history__user-link history__user-item">github.com/`)
-			qw422016.E().S(profile.Username)
-			qw422016.N().S(`</a>
+				qw422016.E().S(profile.Username)
+				qw422016.N().S(`" class="history__user-link history__user-item">github.com/`)
+				qw422016.E().S(profile.Username)
+				qw422016.N().S(`</a>
                 <span class="history__user-date history__user-item">`)
-			qw422016.E().S(profile.CreatedAt.Format("Januany _2, 2006"))
-			qw422016.N().S(`</span>
+				qw422016.E().S(profile.CreatedAt.Format("Januany _2, 2006"))
+				qw422016.N().S(`</span>
             </li>
+            `)
+			case gitlab:
+				qw422016.N().S(`
+            <li class="history__table-user">
+                <div class="history__user-group">
+                    <img src="https://gitlab.com/uploads/-/system/user/avatar/`)
+				qw422016.E().S(profile.SocialProviderUserID)
+				qw422016.N().S(`/avatar.png?width=40" width="40" height="40"
+                         alt="photo"
+                         class="history__user-photo">
+                    <span class="history__user-name">`)
+				qw422016.E().S(SocialUserProfileName(profile))
+				qw422016.N().S(`</span>
+                </div>
+                <a href="https://gitlab.com/`)
+				qw422016.E().S(profile.Username)
+				qw422016.N().S(`" class="history__user-link history__user-item">gitlab.com/`)
+				qw422016.E().S(profile.Username)
+				qw422016.N().S(`</a>
+                <span class="history__user-date history__user-item">`)
+				qw422016.E().S(profile.CreatedAt.Format("Januany _2, 2006"))
+				qw422016.N().S(`</span>
+            </li>
+            `)
+			}
+			qw422016.N().S(`
             `)
 		}
 		qw422016.N().S(`
