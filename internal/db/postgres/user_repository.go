@@ -46,3 +46,23 @@ func (r *UserRepository) RegistrationDailyCountStats(
 	}
 	return result, nil
 }
+
+func (r *UserRepository) SocialUserProfiles(ctx context.Context, limit int32) ([]domain.SocialUserProfile, error) {
+	rows, err := r.db.Queries().SocialUserProfiles(ctx, limit)
+	if err != nil {
+		return nil, err
+	}
+
+	result := make([]domain.SocialUserProfile, len(rows))
+	for i, row := range rows {
+		result[i] = domain.SocialUserProfile{
+			ID:                   row.ID,
+			SocialProvider:       domain.SocialProvider(row.SocialProvider),
+			SocialProviderUserID: row.SocialProviderUserID,
+			Username:             row.Username,
+			Name:                 row.Name,
+			CreatedAt:            row.CreatedAt.Time,
+		}
+	}
+	return result, nil
+}

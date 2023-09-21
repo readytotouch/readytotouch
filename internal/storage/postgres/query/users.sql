@@ -15,7 +15,7 @@ FROM GENERATE_SERIES(
     ) AS s ON (days.day = s.day)
 ORDER BY days.day;
 
--- name: UsersGet :many
+-- name: SocialUserProfiles :many
 SELECT u.id,
        s.social_provider,
        s.social_provider_user_id,

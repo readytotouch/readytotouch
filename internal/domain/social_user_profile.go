@@ -4,6 +4,10 @@ import (
 	"time"
 )
 
+const (
+	RegistrationHistoryLimit = 32
+)
+
 type SocialProvider string
 
 const (

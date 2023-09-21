@@ -28,8 +28,13 @@ func main() {
 	r.Use(gzip.Gzip(gzip.DefaultCompression))
 
 	var (
-		userController   = pkgUser.NewController(postgres.NewUserRepository(database))
-		onlineController = pkgOnline.NewController(postgres.NewOnlineRepository(database))
+		userRepository   = postgres.NewUserRepository(database)
+		onlineRepository = postgres.NewOnlineRepository(database)
+	)
+
+	var (
+		userController   = pkgUser.NewController(userRepository)
+		onlineController = pkgOnline.NewController(userRepository, onlineRepository)
 	)
 
 	r.GET("/", onlineController.Index)
