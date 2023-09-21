@@ -1,0 +1,12 @@
+{
+  "name": "ReadyToTouch",
+  "version": "0.1.0",
+  "description": "Yet another anonymous work search",
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.19.3"
+  },
+  "scripts": {
+    "esbuild": "node esbuild.js"
+  }
+}

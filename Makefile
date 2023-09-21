@@ -64,6 +64,15 @@ generate-template:
 generate-sqlc:
 	sqlc generate
 
+esbuild-minify:
+	npm --prefix=client i
+	MINIFY=true npm run --prefix=client esbuild
+	tree -h ./public/assets/js
+
+esbuild:
+	MINIFY=false npm run --prefix=client esbuild
+	tree -h ./public/assets/js
+
 go-mod-update:
 	go mod tidy
 	go mod vendor

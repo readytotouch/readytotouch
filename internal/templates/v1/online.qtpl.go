@@ -88,6 +88,9 @@ func StreamOnline(qw422016 *qt422016.Writer) {
 `)
 	streamfooter(qw422016)
 	qw422016.N().S(`
+<script src="/assets/js/online-stats-app.js?`)
+	qw422016.N().D(appVersion)
+	qw422016.N().S(`"></script>
 </body>
 </html>
 `)
