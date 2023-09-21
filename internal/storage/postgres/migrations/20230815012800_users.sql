@@ -36,7 +36,7 @@ CREATE TABLE user_social_profiles
 );
 
 CREATE UNIQUE INDEX
-    ON user_social_profiles (provider, social_id)
+    ON user_social_profiles (social_provider, social_provider_user_id)
     WHERE deleted_at IS NULL;
 
 CREATE INDEX
