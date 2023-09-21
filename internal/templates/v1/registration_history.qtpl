@@ -1,4 +1,5 @@
-{% func registrationHistory() %}
+{% func registrationHistory(socialUserProfiles []SocialUserProfile) %}
+{% if len(socialUserProfiles) > 0 %}
 <section class="history">
     <h2 class="history__title">Registration history</h2>
     <div class="history__table">
@@ -8,40 +9,34 @@
             <span class="history__date history__header-item">Registration date</span>
         </div>
         <ul class="history__table-list">
+            {% for _, profile := range socialUserProfiles %}
+            {% switch profile.SocialProvider %}
+            {% case github %}
             <li class="history__table-user">
                 <div class="history__user-group">
-                    <img src="https://avatars.githubusercontent.com/u/123738314?v=4&s=48" width="40" height="40"
+                    <img src="https://avatars.githubusercontent.com/u/{%s profile.SocialProviderUserID %}?v=4&s=40" width="40" height="40"
                          alt="photo"
                          class="history__user-photo">
-                    <span class="history__user-name">Anastasiia Sihetii</span>
+                    <span class="history__user-name">{%s SocialUserProfileName(profile) %}</span>
                 </div>
-                <a href="https://github.com/AnastasiiaSihetii" target="_blank"
-                   class="history__user-link history__user-item">github.com/AnastasiiaSihetii</a>
-                <span class="history__user-date history__user-item">August 2, 2023</span>
+                <a href="https://github.com/{%s profile.Username %}" class="history__user-link history__user-item">github.com/{%s profile.Username %}</a>
+                <span class="history__user-date history__user-item">{%s profile.CreatedAt.Format("Januany _2, 2006") %}</span>
             </li>
+            {% case gitlab %}
             <li class="history__table-user">
                 <div class="history__user-group">
-                    <img src="https://avatars.githubusercontent.com/u/97196828?v=4&s=48" width="40" height="40"
+                    <img src="https://gitlab.com/uploads/-/system/user/avatar/{%s profile.SocialProviderUserID %}/avatar.png?width=40" width="40" height="40"
                          alt="photo"
                          class="history__user-photo">
-                    <span class="history__user-name">Victor Poprozhuk</span>
+                    <span class="history__user-name">{%s SocialUserProfileName(profile) %}</span>
                 </div>
-                <a href="https://github.com/VictorPoprozhuk" target="_blank"
-                   class="history__user-link history__user-item">github.com/VictorPoprozhuk</a>
-                <span class="history__user-date history__user-item">August 2, 2023</span>
+                <a href="https://gitlab.com/{%s profile.Username %}" class="history__user-link history__user-item">gitlab.com/{%s profile.Username %}</a>
+                <span class="history__user-date history__user-item">{%s profile.CreatedAt.Format("Januany _2, 2006") %}</span>
             </li>
-            <li class="history__table-user">
-                <div class="history__user-group">
-                    <img src="https://avatars.githubusercontent.com/u/63663261?v=4&s=48" width="40" height="40"
-                         alt="photo"
-                         class="history__user-photo">
-                    <span class="history__user-name">Yaroslav Podorvanov</span>
-                </div>
-                <a href="https://github.com/YaroslavPodorvanov" target="_blank"
-                   class="history__user-link history__user-item">github.com/YaroslavPodorvanov</a>
-                <span class="history__user-date history__user-item">August 2, 2023</span>
-            </li>
+            {% endswitch %}
+            {% endfor %}
         </ul>
     </div>
 </section>
+{% endif %}
 {% endfunc %}

@@ -30,6 +30,9 @@ vendor
 client/node_modules
 client/package-lock.json
 
+# temporary solution
+public/assets/js/online-stats-app.js
+
 # Database volume
 .docker/volumes
 

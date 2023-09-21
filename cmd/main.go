@@ -3,9 +3,9 @@ package main
 import (
 	"context"
 
+	"github.com/readytotouch-yaaws/yaaws-go/internal/db/postgres"
 	"github.com/readytotouch-yaaws/yaaws-go/internal/env"
 	"github.com/readytotouch-yaaws/yaaws-go/internal/server"
-	"github.com/readytotouch-yaaws/yaaws-go/internal/storage/postgres"
 
 	pkgOnline "github.com/readytotouch-yaaws/yaaws-go/internal/online"
 	pkgUser "github.com/readytotouch-yaaws/yaaws-go/internal/user"
@@ -28,8 +28,13 @@ func main() {
 	r.Use(gzip.Gzip(gzip.DefaultCompression))
 
 	var (
-		userController   = pkgUser.NewController(pkgUser.NewRepository(database))
-		onlineController = pkgOnline.NewController(pkgOnline.NewRepository(database))
+		userRepository   = postgres.NewUserRepository(database)
+		onlineRepository = postgres.NewOnlineRepository(database)
+	)
+
+	var (
+		userController   = pkgUser.NewController(userRepository)
+		onlineController = pkgOnline.NewController(userRepository, onlineRepository)
 	)
 
 	r.GET("/", onlineController.Index)

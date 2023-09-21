@@ -14,7 +14,7 @@ var (
 	_ = qt422016.AcquireByteBuffer
 )
 
-func StreamOnline(qw422016 *qt422016.Writer) {
+func StreamOnline(qw422016 *qt422016.Writer, socialUserProfiles []SocialUserProfile) {
 	qw422016.N().S(`
 <!DOCTYPE html>
 <html lang="en">
@@ -75,7 +75,7 @@ func StreamOnline(qw422016 *qt422016.Writer) {
 	streamstats(qw422016)
 	qw422016.N().S(`
     `)
-	streamregistrationHistory(qw422016)
+	streamregistrationHistory(qw422016, socialUserProfiles)
 	qw422016.N().S(`
     `)
 	streamprojects(qw422016)
@@ -88,20 +88,23 @@ func StreamOnline(qw422016 *qt422016.Writer) {
 `)
 	streamfooter(qw422016)
 	qw422016.N().S(`
+<script src="/assets/js/online-stats-app.js?`)
+	qw422016.N().D(appVersion)
+	qw422016.N().S(`"></script>
 </body>
 </html>
 `)
 }
 
-func WriteOnline(qq422016 qtio422016.Writer) {
+func WriteOnline(qq422016 qtio422016.Writer, socialUserProfiles []SocialUserProfile) {
 	qw422016 := qt422016.AcquireWriter(qq422016)
-	StreamOnline(qw422016)
+	StreamOnline(qw422016, socialUserProfiles)
 	qt422016.ReleaseWriter(qw422016)
 }
 
-func Online() string {
+func Online(socialUserProfiles []SocialUserProfile) string {
 	qb422016 := qt422016.AcquireByteBuffer()
-	WriteOnline(qb422016)
+	WriteOnline(qb422016, socialUserProfiles)
 	qs422016 := string(qb422016.B)
 	qt422016.ReleaseByteBuffer(qb422016)
 	return qs422016

@@ -14,8 +14,11 @@ var (
 	_ = qt422016.AcquireByteBuffer
 )
 
-func streamregistrationHistory(qw422016 *qt422016.Writer) {
+func streamregistrationHistory(qw422016 *qt422016.Writer, socialUserProfiles []SocialUserProfile) {
 	qw422016.N().S(`
+`)
+	if len(socialUserProfiles) > 0 {
+		qw422016.N().S(`
 <section class="history">
     <h2 class="history__title">Registration history</h2>
     <div class="history__table">
@@ -25,54 +28,80 @@ func streamregistrationHistory(qw422016 *qt422016.Writer) {
             <span class="history__date history__header-item">Registration date</span>
         </div>
         <ul class="history__table-list">
+            `)
+		for _, profile := range socialUserProfiles {
+			qw422016.N().S(`
+            `)
+			switch profile.SocialProvider {
+			case github:
+				qw422016.N().S(`
             <li class="history__table-user">
                 <div class="history__user-group">
-                    <img src="https://avatars.githubusercontent.com/u/123738314?v=4&s=48" width="40" height="40"
+                    <img src="https://avatars.githubusercontent.com/u/`)
+				qw422016.E().S(profile.SocialProviderUserID)
+				qw422016.N().S(`?v=4&s=40" width="40" height="40"
                          alt="photo"
                          class="history__user-photo">
-                    <span class="history__user-name">Anastasiia Sihetii</span>
+                    <span class="history__user-name">`)
+				qw422016.E().S(SocialUserProfileName(profile))
+				qw422016.N().S(`</span>
                 </div>
-                <a href="https://github.com/AnastasiiaSihetii" target="_blank"
-                   class="history__user-link history__user-item">github.com/AnastasiiaSihetii</a>
-                <span class="history__user-date history__user-item">August 2, 2023</span>
+                <a href="https://github.com/`)
+				qw422016.E().S(profile.Username)
+				qw422016.N().S(`" class="history__user-link history__user-item">github.com/`)
+				qw422016.E().S(profile.Username)
+				qw422016.N().S(`</a>
+                <span class="history__user-date history__user-item">`)
+				qw422016.E().S(profile.CreatedAt.Format("Januany _2, 2006"))
+				qw422016.N().S(`</span>
             </li>
+            `)
+			case gitlab:
+				qw422016.N().S(`
             <li class="history__table-user">
                 <div class="history__user-group">
-                    <img src="https://avatars.githubusercontent.com/u/97196828?v=4&s=48" width="40" height="40"
+                    <img src="https://gitlab.com/uploads/-/system/user/avatar/`)
+				qw422016.E().S(profile.SocialProviderUserID)
+				qw422016.N().S(`/avatar.png?width=40" width="40" height="40"
                          alt="photo"
                          class="history__user-photo">
-                    <span class="history__user-name">Victor Poprozhuk</span>
+                    <span class="history__user-name">`)
+				qw422016.E().S(SocialUserProfileName(profile))
+				qw422016.N().S(`</span>
                 </div>
-                <a href="https://github.com/VictorPoprozhuk" target="_blank"
-                   class="history__user-link history__user-item">github.com/VictorPoprozhuk</a>
-                <span class="history__user-date history__user-item">August 2, 2023</span>
+                <a href="https://gitlab.com/`)
+				qw422016.E().S(profile.Username)
+				qw422016.N().S(`" class="history__user-link history__user-item">gitlab.com/`)
+				qw422016.E().S(profile.Username)
+				qw422016.N().S(`</a>
+                <span class="history__user-date history__user-item">`)
+				qw422016.E().S(profile.CreatedAt.Format("Januany _2, 2006"))
+				qw422016.N().S(`</span>
             </li>
-            <li class="history__table-user">
-                <div class="history__user-group">
-                    <img src="https://avatars.githubusercontent.com/u/63663261?v=4&s=48" width="40" height="40"
-                         alt="photo"
-                         class="history__user-photo">
-                    <span class="history__user-name">Yaroslav Podorvanov</span>
-                </div>
-                <a href="https://github.com/YaroslavPodorvanov" target="_blank"
-                   class="history__user-link history__user-item">github.com/YaroslavPodorvanov</a>
-                <span class="history__user-date history__user-item">August 2, 2023</span>
-            </li>
+            `)
+			}
+			qw422016.N().S(`
+            `)
+		}
+		qw422016.N().S(`
         </ul>
     </div>
 </section>
 `)
+	}
+	qw422016.N().S(`
+`)
 }
 
-func writeregistrationHistory(qq422016 qtio422016.Writer) {
+func writeregistrationHistory(qq422016 qtio422016.Writer, socialUserProfiles []SocialUserProfile) {
 	qw422016 := qt422016.AcquireWriter(qq422016)
-	streamregistrationHistory(qw422016)
+	streamregistrationHistory(qw422016, socialUserProfiles)
 	qt422016.ReleaseWriter(qw422016)
 }
 
-func registrationHistory() string {
+func registrationHistory(socialUserProfiles []SocialUserProfile) string {
 	qb422016 := qt422016.AcquireByteBuffer()
-	writeregistrationHistory(qb422016)
+	writeregistrationHistory(qb422016, socialUserProfiles)
 	qs422016 := string(qb422016.B)
 	qt422016.ReleaseByteBuffer(qb422016)
 	return qs422016

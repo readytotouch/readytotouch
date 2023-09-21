@@ -23,19 +23,20 @@ CREATE TABLE users
 
 CREATE TABLE user_social_profiles
 (
-    id         BIGSERIAL       NOT NULL PRIMARY KEY,
-    user_id    BIGINT          NOT NULL REFERENCES users (id),
-    provider   SOCIAL_PROVIDER NOT NULL,
-    social_id  VARCHAR         NOT NULL, -- erase on soft delete
-    email      VARCHAR         NOT NULL, -- erase on soft delete
-    username   VARCHAR         NOT NULL, -- erase on soft delete
-    created_at TIMESTAMP       NOT NULL,
-    updated_at TIMESTAMP       NOT NULL,
-    deleted_at TIMESTAMP       NULL
+    id                      BIGSERIAL       NOT NULL PRIMARY KEY,
+    user_id                 BIGINT          NOT NULL REFERENCES users (id),
+    social_provider         SOCIAL_PROVIDER NOT NULL,
+    social_provider_user_id VARCHAR         NOT NULL, -- erase on soft delete
+    email                   VARCHAR         NOT NULL, -- erase on soft delete
+    username                VARCHAR         NOT NULL, -- erase on soft delete
+    name                    VARCHAR         NOT NULL, -- erase on soft delete
+    created_at              TIMESTAMP       NOT NULL,
+    updated_at              TIMESTAMP       NOT NULL,
+    deleted_at              TIMESTAMP       NULL
 );
 
 CREATE UNIQUE INDEX
-    ON user_social_profiles (provider, social_id)
+    ON user_social_profiles (social_provider, social_provider_user_id)
     WHERE deleted_at IS NULL;
 
 CREATE INDEX

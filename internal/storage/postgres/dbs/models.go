@@ -83,15 +83,16 @@ type UserOnlineHourlyStat struct {
 }
 
 type UserSocialProfile struct {
-	ID        int64
-	UserID    int64
-	Provider  SocialProvider
-	SocialID  string
-	Email     string
-	Username  string
-	CreatedAt pgtype.Timestamp
-	UpdatedAt pgtype.Timestamp
-	DeletedAt pgtype.Timestamp
+	ID                   int64
+	UserID               int64
+	SocialProvider       SocialProvider
+	SocialProviderUserID string
+	Email                string
+	Username             string
+	Name                 string
+	CreatedAt            pgtype.Timestamp
+	UpdatedAt            pgtype.Timestamp
+	DeletedAt            pgtype.Timestamp
 }
 
 type UserSocialProfileChangeHistory struct {

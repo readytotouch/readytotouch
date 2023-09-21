@@ -11,6 +11,56 @@ import (
 	"github.com/jackc/pgx/v5/pgtype"
 )
 
+const socialUserProfiles = `-- name: SocialUserProfiles :many
+SELECT u.id,
+       s.social_provider,
+       s.social_provider_user_id,
+       s.username,
+       s.name,
+       u.created_at
+FROM users u
+         INNER JOIN user_social_profiles s ON u.id = s.user_id
+WHERE s.deleted_at IS NULL
+ORDER BY s.id DESC
+LIMIT $1
+`
+
+type SocialUserProfilesRow struct {
+	ID                   int64
+	SocialProvider       SocialProvider
+	SocialProviderUserID string
+	Username             string
+	Name                 string
+	CreatedAt            pgtype.Timestamp
+}
+
+func (q *Queries) SocialUserProfiles(ctx context.Context, limit int32) ([]SocialUserProfilesRow, error) {
+	rows, err := q.db.Query(ctx, socialUserProfiles, limit)
+	if err != nil {
+		return nil, err
+	}
+	defer rows.Close()
+	var items []SocialUserProfilesRow
+	for rows.Next() {
+		var i SocialUserProfilesRow
+		if err := rows.Scan(
+			&i.ID,
+			&i.SocialProvider,
+			&i.SocialProviderUserID,
+			&i.Username,
+			&i.Name,
+			&i.CreatedAt,
+		); err != nil {
+			return nil, err
+		}
+		items = append(items, i)
+	}
+	if err := rows.Err(); err != nil {
+		return nil, err
+	}
+	return items, nil
+}
+
 const userRegistrationDailyCountStats = `-- name: UserRegistrationDailyCountStats :many
 SELECT days.day::DATE                    AS day,
        COALESCE(s.user_count, 0)::BIGINT AS user_count
