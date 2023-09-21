@@ -1,25 +1,24 @@
-package online
+package postgres
 
 import (
 	"context"
 	"time"
 
 	"github.com/readytotouch-yaaws/yaaws-go/internal/domain"
-	"github.com/readytotouch-yaaws/yaaws-go/internal/storage/postgres"
 	"github.com/readytotouch-yaaws/yaaws-go/internal/storage/postgres/dbs"
 
 	"github.com/jackc/pgx/v5/pgtype"
 )
 
-type Repository struct {
-	db *postgres.Database
+type OnlineRepository struct {
+	db *Database
 }
 
-func NewRepository(db *postgres.Database) *Repository {
-	return &Repository{db: db}
+func NewOnlineRepository(db *Database) *OnlineRepository {
+	return &OnlineRepository{db: db}
 }
 
-func (r *Repository) DailyCountStats(
+func (r *OnlineRepository) DailyCountStats(
 	ctx context.Context,
 	from time.Time,
 	to time.Time,

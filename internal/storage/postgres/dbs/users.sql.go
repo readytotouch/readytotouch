@@ -58,3 +58,53 @@ func (q *Queries) UserRegistrationDailyCountStats(ctx context.Context, arg UserR
 	}
 	return items, nil
 }
+
+const usersGet = `-- name: UsersGet :many
+SELECT u.id,
+       s.social_provider,
+       s.social_provider_user_id,
+       s.username,
+       s.name,
+       u.created_at
+FROM users u
+         INNER JOIN user_social_profiles s ON u.id = s.user_id
+WHERE s.deleted_at IS NULL
+ORDER BY s.id DESC
+LIMIT $1
+`
+
+type UsersGetRow struct {
+	ID                   int64
+	SocialProvider       SocialProvider
+	SocialProviderUserID string
+	Username             string
+	Name                 string
+	CreatedAt            pgtype.Timestamp
+}
+
+func (q *Queries) UsersGet(ctx context.Context, limit int32) ([]UsersGetRow, error) {
+	rows, err := q.db.Query(ctx, usersGet, limit)
+	if err != nil {
+		return nil, err
+	}
+	defer rows.Close()
+	var items []UsersGetRow
+	for rows.Next() {
+		var i UsersGetRow
+		if err := rows.Scan(
+			&i.ID,
+			&i.SocialProvider,
+			&i.SocialProviderUserID,
+			&i.Username,
+			&i.Name,
+			&i.CreatedAt,
+		); err != nil {
+			return nil, err
+		}
+		items = append(items, i)
+	}
+	if err := rows.Err(); err != nil {
+		return nil, err
+	}
+	return items, nil
+}

@@ -7,7 +7,6 @@ import (
 	"time"
 
 	"github.com/readytotouch-yaaws/yaaws-go/internal/env"
-	"github.com/readytotouch-yaaws/yaaws-go/internal/storage/postgres"
 
 	"github.com/jackc/pgx/v5/pgxpool"
 
@@ -174,7 +173,7 @@ func truncateOnline(t testing.TB, ctx context.Context, connection *pgxpool.Pool)
 func expectedHourlyStats(t *testing.T, ctx context.Context, connection *pgxpool.Pool, expectedPairs []UserOnlinePair) {
 	t.Helper()
 
-	repository := postgres.NewDatabase(connection)
+	repository := NewDatabase(connection)
 	actualPairs, err := repository.Queries().UserOnlineHourlyStats(ctx)
 	require.NoError(t, err)
 

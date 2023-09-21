@@ -4,6 +4,7 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/readytotouch-yaaws/yaaws-go/internal/db/postgres"
 	"github.com/readytotouch-yaaws/yaaws-go/internal/domain"
 	template "github.com/readytotouch-yaaws/yaaws-go/internal/templates/v1"
 
@@ -11,10 +12,10 @@ import (
 )
 
 type Controller struct {
-	repository *Repository
+	repository *postgres.OnlineRepository
 }
 
-func NewController(repository *Repository) *Controller {
+func NewController(repository *postgres.OnlineRepository) *Controller {
 	return &Controller{repository: repository}
 }
 

@@ -5,7 +5,6 @@ import (
 	"testing"
 
 	"github.com/readytotouch-yaaws/yaaws-go/internal/env"
-	"github.com/readytotouch-yaaws/yaaws-go/internal/storage/postgres"
 
 	"github.com/jackc/pgx/v5/pgxpool"
 
@@ -23,7 +22,7 @@ func TestBatchUpdateOnlineStorage(t *testing.T) {
 	require.NoError(t, err)
 	defer connection.Close()
 
-	storage := NewBatchUpdateOnlineStorage(postgres.NewDatabase(connection))
+	storage := NewBatchUpdateOnlineStorage(NewDatabase(connection))
 
 	testOnlineStorage(t, storage)
 }
@@ -39,7 +38,7 @@ func BenchmarkBatchUpdateOnlineStorage(b *testing.B) {
 	require.NoError(b, err)
 	defer connection.Close()
 
-	storage := NewBatchUpdateOnlineStorage(postgres.NewDatabase(connection))
+	storage := NewBatchUpdateOnlineStorage(NewDatabase(connection))
 
 	benchmarkOnlineStorage(b, storage)
 }

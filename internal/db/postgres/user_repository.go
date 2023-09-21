@@ -1,25 +1,24 @@
-package user
+package postgres
 
 import (
 	"context"
 	"time"
 
 	"github.com/readytotouch-yaaws/yaaws-go/internal/domain"
-	"github.com/readytotouch-yaaws/yaaws-go/internal/storage/postgres"
 	"github.com/readytotouch-yaaws/yaaws-go/internal/storage/postgres/dbs"
 
 	"github.com/jackc/pgx/v5/pgtype"
 )
 
-type Repository struct {
-	db *postgres.Database
+type UserRepository struct {
+	db *Database
 }
 
-func NewRepository(db *postgres.Database) *Repository {
-	return &Repository{db: db}
+func NewUserRepository(db *Database) *UserRepository {
+	return &UserRepository{db: db}
 }
 
-func (r *Repository) RegistrationDailyCountStats(
+func (r *UserRepository) RegistrationDailyCountStats(
 	ctx context.Context,
 	from time.Time,
 	to time.Time,

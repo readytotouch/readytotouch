@@ -3,23 +3,22 @@ package postgres
 import (
 	"context"
 
-	"github.com/readytotouch-yaaws/yaaws-go/internal/storage/postgres"
 	"github.com/readytotouch-yaaws/yaaws-go/internal/storage/postgres/dbs"
 )
 
 type BatchUpdateOnlineStorage struct {
-	repository *postgres.Database
+	db *Database
 }
 
-func NewBatchUpdateOnlineStorage(repository *postgres.Database) *BatchUpdateOnlineStorage {
-	return &BatchUpdateOnlineStorage{repository: repository}
+func NewBatchUpdateOnlineStorage(db *Database) *BatchUpdateOnlineStorage {
+	return &BatchUpdateOnlineStorage{db: db}
 }
 
 func (s *BatchUpdateOnlineStorage) BatchStore(ctx context.Context, pairs []UserOnlinePair) error {
 	// user_online_hourly_stats
 	{
 		hourUserIDs, hourOnlineTimestamps := toHourlyStats(pairs)
-		rowsAffected, err := s.repository.Queries().UserOnlineHourlyStatsUpsert(ctx, dbs.UserOnlineHourlyStatsUpsertParams{
+		rowsAffected, err := s.db.Queries().UserOnlineHourlyStatsUpsert(ctx, dbs.UserOnlineHourlyStatsUpsertParams{
 			UserIds:    hourUserIDs,
 			CreatedAts: hourOnlineTimestamps,
 		})
@@ -34,7 +33,7 @@ func (s *BatchUpdateOnlineStorage) BatchStore(ctx context.Context, pairs []UserO
 	// user_online_daily_stats
 	{
 		dayUserIDs, dayOnlineTimestamps := toDailyStats(pairs)
-		rowsAffected, err := s.repository.Queries().UserOnlineDailyStatsUpsert(ctx, dbs.UserOnlineDailyStatsUpsertParams{
+		rowsAffected, err := s.db.Queries().UserOnlineDailyStatsUpsert(ctx, dbs.UserOnlineDailyStatsUpsertParams{
 			UserIds:    dayUserIDs,
 			CreatedAts: dayOnlineTimestamps,
 		})
@@ -48,7 +47,7 @@ func (s *BatchUpdateOnlineStorage) BatchStore(ctx context.Context, pairs []UserO
 
 	// user_online_daily_count_stats
 	{
-		err := s.repository.Queries().UserOnlineDailyCountStatsUpsert(ctx, toDailyMin(pairs))
+		err := s.db.Queries().UserOnlineDailyCountStatsUpsert(ctx, toDailyMin(pairs))
 		if err != nil {
 			return err
 		}
