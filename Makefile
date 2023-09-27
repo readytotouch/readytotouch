@@ -1,3 +1,11 @@
+env-docker-compose-development:
+	rm -f docker-compose.yml
+	ln -s ./docker/compose/development/docker-compose.yml docker-compose.yml
+
+env-docker-compose-production:
+	rm -f docker-compose.yml
+	ln -s ./docker/compose/production/docker-compose.yml docker-compose.yml
+
 env-up:
 	docker-compose -f docker-compose.yml --env-file .env up -d
 
