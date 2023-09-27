@@ -1,0 +1,29 @@
+---
+- name: "Install Node.js and npm"
+  hosts: "web"
+  gather_facts: "no"
+
+  tasks:
+    - name: "Update apt cache"
+      apt:
+        update_cache: "yes"
+
+    - name: "Install Node.js and npm"
+      apt:
+        name:
+          - "nodejs"
+          - "npm"
+        state: "present"
+
+    - name: "Get Node.js version"
+      shell: "node -v"
+      register: "node_version"
+    - debug:
+        var: "node_version.stdout"
+
+
+    - name: "Get npm version"
+      shell: "npm -v"
+      register: "npm_version"
+    - debug:
+        var: "npm_version.stdout"

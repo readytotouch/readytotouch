@@ -1,3 +1,5 @@
+include Makefile.ansible
+
 env-docker-compose-development:
 	rm -f docker-compose.yml
 	ln -s ./docker/compose/development/docker-compose.yml docker-compose.yml
@@ -114,3 +116,6 @@ generate-production-environment-file:
 	grep -qF 'HOSTS=' .production.env || echo 'HOSTS="readytotouch.com,dev.readytotouch.com"' >> .production.env
 
 	cat .production.env
+
+ssh:
+	ssh -t root@70.34.247.27 "cd /var/go/readytotouch/; bash --login"

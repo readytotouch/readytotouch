@@ -1,0 +1,7 @@
+[web]
+# Current 1024 MB Intel High Performance
+readytotouch.com ansible_host=70.34.247.27
+
+[web:vars]
+ansible_ssh_user=root
+ansible_ssh_private_key_file="{{ lookup('env', 'SSH_KEYDIR') }}/id_rsa"
