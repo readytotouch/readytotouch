@@ -1,0 +1,60 @@
+---
+- name: "Install Docker and Docker Compose"
+  hosts: "web"
+  gather_facts: "no"
+  vars:
+    - DOCKER_COMPOSE_VERSION: "2.22.0"
+
+  tasks:
+    - name: "Update apt cache"
+      apt:
+        update_cache: "yes"
+
+    - name: "Install required packages"
+      package:
+        name: "{{ item }}"
+        state: "present"
+      loop:
+        - "apt-transport-https"
+        - "ca-certificates"
+        - "curl"
+        - "software-properties-common"
+
+    - name: "Add Docker GPG key"
+      apt_key:
+        url: "https://download.docker.com/linux/ubuntu/gpg"
+        state: "present"
+
+    - name: "Add Docker APT repository"
+      apt_repository:
+        repo: "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+        state: "present"
+
+    - name: "Install Docker"
+      package:
+        name: "docker-ce"
+        state: "present"
+
+    - name: "Start and enable Docker service"
+      service:
+        name: "docker"
+        state: "started"
+        enabled: "yes"
+
+    - name: "Install Docker Compose"
+      get_url:
+        url: "https://github.com/docker/compose/releases/download/v{{ DOCKER_COMPOSE_VERSION }}/docker-compose-{{ lookup('pipe', 'uname -s') }}-{{ lookup('pipe', 'uname -m') }}"
+        dest: "/usr/local/bin/docker-compose"
+        mode: "a+x"
+
+    - name: "Get Docker version"
+      command: "docker --version"
+      register: "docker_version"
+    - debug:
+        var: "docker_version.stdout"
+
+    - name: "Get Docker Compose version"
+      command: "docker-compose --version"
+      register: "docker_compose_version"
+    - debug:
+        var: "docker_compose_version.stdout"

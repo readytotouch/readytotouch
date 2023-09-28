@@ -1,3 +1,17 @@
+include Makefile.ansible
+
+env-docker-compose-development:
+	rm -f docker-compose.yml
+	ln -s ./docker/compose/development/docker-compose.yml docker-compose.yml
+
+	cp .development.env .env
+
+env-docker-compose-production:
+	rm -f docker-compose.yml
+	ln -s ./docker/compose/production/docker-compose.yml docker-compose.yml
+
+	cp .production.env .env
+
 env-up:
 	docker-compose -f docker-compose.yml --env-file .env up -d
 
@@ -87,3 +101,21 @@ design:
 	cp -r $(DESIGN)/public/*.html ./public/design
 
 	git add .
+
+# POSTGRES_PASSWORD=$(echo "$RANDOM$RANDOM" | md5sum | head -c 16; echo;) make generate-production-environment-file
+generate-production-environment-file:
+	touch .production.env
+
+	grep -qF 'ENVIRONMENT=' .production.env || echo 'ENVIRONMENT="production"' >> .production.env
+
+	# Database
+	grep -qF 'POSTGRES_USER=' .production.env || echo 'POSTGRES_USER="u8user"' >> .production.env
+	grep -qF 'POSTGRES_PASSWORD=' .production.env || echo 'POSTGRES_PASSWORD="$(POSTGRES_PASSWORD)"' >> .production.env
+	grep -qF 'POSTGRES_DB=' .production.env || echo 'POSTGRES_DB="yaaws"' >> .production.env
+	grep -qF 'POSTGRES_DSN=' .production.env || echo 'POSTGRES_DSN="postgresql://u8user:$(POSTGRES_PASSWORD)@postgres:5432/yaaws?sslmode=disable"' >> .production.env
+	grep -qF 'HOSTS=' .production.env || echo 'HOSTS="readytotouch.com,dev.readytotouch.com,www.readytotouch.com"' >> .production.env
+
+	cat .production.env
+
+ssh:
+	ssh -t root@70.34.247.27 "cd /var/go/readytotouch/; bash --login"

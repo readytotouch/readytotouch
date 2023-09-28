@@ -2,6 +2,8 @@ package main
 
 import (
 	"context"
+	"net/http"
+	"strings"
 
 	"github.com/readytotouch-yaaws/yaaws-go/internal/db/postgres"
 	"github.com/readytotouch-yaaws/yaaws-go/internal/env"
@@ -25,6 +27,7 @@ func main() {
 	database := postgres.NewDatabase(pgConnection)
 
 	r := gin.New()
+	r.Use(redirectFromWWW())
 	r.Use(gzip.Gzip(gzip.DefaultCompression))
 
 	var (
@@ -92,4 +95,15 @@ func main() {
 		StaticFile("/browserconfig.xml", "./public/browserconfig.xml")
 
 	server.Run(r.Handler())
+}
+
+func redirectFromWWW() gin.HandlerFunc {
+	return func(c *gin.Context) {
+		if strings.HasPrefix(c.Request.Host, "www.") {
+			newHost := "https://" + c.Request.Host[len("www."):]
+			c.Redirect(http.StatusMovedPermanently, newHost+c.Request.URL.String())
+			return
+		}
+		c.Next()
+	}
 }
