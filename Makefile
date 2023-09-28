@@ -113,7 +113,7 @@ generate-production-environment-file:
 	grep -qF 'POSTGRES_PASSWORD=' .production.env || echo 'POSTGRES_PASSWORD="$(POSTGRES_PASSWORD)"' >> .production.env
 	grep -qF 'POSTGRES_DB=' .production.env || echo 'POSTGRES_DB="yaaws"' >> .production.env
 	grep -qF 'POSTGRES_DSN=' .production.env || echo 'POSTGRES_DSN="postgresql://u8user:$(POSTGRES_PASSWORD)@postgres:5432/yaaws?sslmode=disable"' >> .production.env
-	grep -qF 'HOSTS=' .production.env || echo 'HOSTS="readytotouch.com,dev.readytotouch.com"' >> .production.env
+	grep -qF 'HOSTS=' .production.env || echo 'HOSTS="readytotouch.com,dev.readytotouch.com,www.readytotouch.com"' >> .production.env
 
 	cat .production.env
 
