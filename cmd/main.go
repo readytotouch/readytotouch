@@ -3,7 +3,13 @@ package main
 import (
 	"context"
 	"net/http"
+	"os"
 	"strings"
+
+	"golang.org/x/oauth2"
+	"golang.org/x/oauth2/bitbucket"
+	"golang.org/x/oauth2/github"
+	"golang.org/x/oauth2/gitlab"
 
 	"github.com/readytotouch-yaaws/yaaws-go/internal/db/postgres"
 	"github.com/readytotouch-yaaws/yaaws-go/internal/env"
@@ -14,6 +20,32 @@ import (
 
 	"github.com/gin-contrib/gzip"
 	"github.com/gin-gonic/gin"
+)
+
+var (
+	githubOAuthConfig = oauth2.Config{
+		ClientID:     os.Getenv("GITHUB_CLIENT_ID"),
+		ClientSecret: os.Getenv("GITHUB_CLIENT_SECRET"),
+		RedirectURL:  "https://readytotouch.com/auth/github/callback",
+		Endpoint:     github.Endpoint,
+		Scopes:       []string{"user:email"},
+	}
+
+	gitlabOAuthConfig = oauth2.Config{
+		ClientID:     os.Getenv("GITLAB_CLIENT_ID"),
+		ClientSecret: os.Getenv("GITLAB_CLIENT_SECRET"),
+		RedirectURL:  "https://readytotouch.com/auth/gitlab/callback",
+		Endpoint:     gitlab.Endpoint,
+		Scopes:       []string{"read_user"},
+	}
+
+	bitbucketOAuthConfig = oauth2.Config{
+		ClientID:     os.Getenv("BITBUCKET_CLIENT_ID"),
+		ClientSecret: os.Getenv("BITBUCKET_CLIENT_SECRET"),
+		RedirectURL:  "https://readytotouch.com/auth/bitbucket/callback",
+		Endpoint:     bitbucket.Endpoint,
+		Scopes:       nil, // Scopes are defined on the client/consumer instance.
+	}
 )
 
 func main() {

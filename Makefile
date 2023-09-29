@@ -115,6 +115,13 @@ generate-production-environment-file:
 	grep -qF 'POSTGRES_DSN=' .production.env || echo 'POSTGRES_DSN="postgresql://u8user:$(POSTGRES_PASSWORD)@postgres:5432/yaaws?sslmode=disable"' >> .production.env
 	grep -qF 'HOSTS=' .production.env || echo 'HOSTS="readytotouch.com,dev.readytotouch.com,www.readytotouch.com"' >> .production.env
 
+	grep -qF 'GITHUB_CLIENT_ID=' .production.env || echo 'GITHUB_CLIENT_ID="8dce25b763367e846763"' >> .production.env
+	grep -qF 'GITHUB_CLIENT_SECRET=' .production.env || echo 'GITHUB_CLIENT_SECRET=""' >> .production.env
+	grep -qF 'GITLAB_CLIENT_ID=' .production.env || echo 'GITLAB_CLIENT_ID="1f8bc1174d17998654c82400ff7a230c87d4e633327c17c2414f315f62b80d28"' >> .production.env
+	grep -qF 'GITLAB_CLIENT_SECRET=' .production.env || echo 'GITLAB_CLIENT_SECRET=""' >> .production.env
+	grep -qF 'BITBUCKET_CLIENT_ID=' .production.env || echo 'BITBUCKET_CLIENT_ID="PY4qXGrqgvCS34DuqT"' >> .production.env
+	grep -qF 'BITBUCKET_CLIENT_SECRET=' .production.env || echo 'BITBUCKET_CLIENT_SECRET=""' >> .production.env
+
 	cat .production.env
 
 ssh:
