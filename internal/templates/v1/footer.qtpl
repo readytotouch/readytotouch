@@ -4,18 +4,18 @@
         <div class="footer__group-u8">
             <div class="footer__info">
                 <a href="#" class="footer__title">
-                    <h3 class="footer__title-link">Ready To Touch</h3>
+                    <h3 class="footer__title-link">ReadyToTouch</h3>
                 </a>
-                <p class="footer__subtitle">Anonymous job search</p>
+                <p class="footer__subtitle">Anonymous work search</p>
                 <div class="footer__map">
                     <img class="footer__map-Ukraine" src="/assets/images/pages/online/map-of-Ukraine.png"
                          alt="Map of Ukraine">
                 </div>
             </div>
             <div class="footer__middle-section">
-                <iframe class="footer__stars" src="https://ghbtns.com/github-btn.html?user=readytotouch-yaaws&repo=readytotouch-yaaws.github.io&type=star&count=true&size=large"
+                <iframe class="footer__stars" src="https://ghbtns.com/github-btn.html?user=readytotouch-yaaws&repo=yaaws-go&type=star&count=true&size=large"
                         frameborder="0" scrolling="0" width="170" height="30" title="GitHub"></iframe>
-                <a href="https://github.com/readytotouch-yaaws/readytotouch-yaaws.github.io" target="_blank" class="footer__statistics-link">View the project on GitHub</a>
+                <a href="https://github.com/readytotouch-yaaws/yaaws-go" target="_blank" class="footer__statistics-link">View the project on GitHub</a>
                 <a href="https://readytotouch.com/" target="_blank" class="footer__github-link">
                     readytotouch.com
                 </a>

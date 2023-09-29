@@ -57,7 +57,7 @@ func StreamOnline(qw422016 *qt422016.Writer, socialUserProfiles []SocialUserProf
             </a>
         </div>
         <div class="hero__main">
-            <h1 class="hero__title">Anonymous job search</h1>
+            <h1 class="hero__title">Anonymous work search</h1>
             <p class="hero__subtitle">Tracking registrations and online users of the platform. Sign in with GitHub or GitLab to support the project</p>
         </div>
         <div class="hero__buttons-group">

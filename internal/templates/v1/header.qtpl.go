@@ -20,10 +20,10 @@ func streamheader(qw422016 *qt422016.Writer) {
 	<div class="header__wrapper">
 		<a href="#" class="header__logo">
 			<img class="header__logo-img" src="/assets/images/pages/online/logo.svg" alt="logo">
-			<h3 class="header__logo-title">Ready To Touch</h3>
+			<h3 class="header__logo-title">ReadyToTouch</h3>
 		</a>
 		<div class="header__stars">
-			<iframe src="https://ghbtns.com/github-btn.html?user=readytotouch-yaaws&repo=readytotouch-yaaws.github.io&type=star&count=true&size=large"
+			<iframe src="https://ghbtns.com/github-btn.html?user=readytotouch-yaaws&repo=yaaws-go&type=star&count=true&size=large"
 				frameborder="0" scrolling="0" width="170" height="30" title="GitHub"></iframe>
 		</div>
 		`)
