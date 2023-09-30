@@ -1,5 +1,9 @@
 include Makefile.ansible
 
+volumes:
+	mkdir -p ./.docker/volumes/go/tls-certificates
+	mkdir -p ./.docker/volumes/postgresql/data
+
 env-docker-compose-development:
 	rm -f docker-compose.yml
 	ln -s ./docker/compose/development/docker-compose.yml docker-compose.yml
@@ -126,3 +130,6 @@ generate-production-environment-file:
 
 ssh:
 	ssh -t root@70.34.247.27 "cd /var/go/readytotouch/; bash --login"
+
+ssh-copy-tls-certificates:
+	scp -r root@70.34.247.27:/var/go/readytotouch/.docker/volumes/go/tls-certificates ./.docker/volumes/go
