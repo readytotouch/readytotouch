@@ -50,7 +50,7 @@ var (
 
 func main() {
 	var (
-		dsn = env.Must("POSTGRES_DSN")
+		dsn = env.Required("POSTGRES_DSN")
 	)
 
 	pgConnection := postgres.MustConnection(context.Background(), dsn)

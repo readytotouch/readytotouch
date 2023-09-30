@@ -18,7 +18,7 @@ func TestPing(t *testing.T) {
 
 	ctx := context.Background()
 
-	connection, err := pgxpool.New(ctx, env.Must("POSTGRES_DSN"))
+	connection, err := pgxpool.New(ctx, env.Required("POSTGRES_DSN"))
 	require.NoError(t, err)
 	defer connection.Close()
 
