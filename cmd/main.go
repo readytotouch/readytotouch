@@ -84,7 +84,8 @@ func main() {
 		GET("/auth/bitbucket", authController.BitbucketRedirect).
 		GET("/auth/github/callback", authController.GithubCallback).
 		GET("/auth/gitlab/callback", authController.GitlabCallback).
-		GET("/auth/bitbucket/callback", authController.BitbucketCallback)
+		GET("/auth/bitbucket/callback", authController.BitbucketCallback).
+		GET("/logout", authController.Logout)
 
 	r.
 		StaticFile("/design", "./public/design/online.html").

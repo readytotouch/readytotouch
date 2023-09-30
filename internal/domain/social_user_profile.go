@@ -22,7 +22,7 @@ const (
 	SocialProviderGoogle    SocialProvider = "google"
 )
 
-type SocialUserProfile struct {
+type SocialProviderUser struct {
 	ID                   int64
 	SocialProvider       SocialProvider
 	SocialProviderUserID string

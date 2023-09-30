@@ -14,10 +14,10 @@ var (
 	_ = qt422016.AcquireByteBuffer
 )
 
-func streamregistrationHistory(qw422016 *qt422016.Writer, socialUserProfiles []SocialUserProfile) {
+func streamregistrationHistory(qw422016 *qt422016.Writer, socialProviderUsers []SocialProviderUser) {
 	qw422016.N().S(`
 `)
-	if len(socialUserProfiles) > 0 {
+	if len(socialProviderUsers) > 0 {
 		qw422016.N().S(`
 <section class="history">
     <h2 class="history__title">Registration history</h2>
@@ -29,7 +29,7 @@ func streamregistrationHistory(qw422016 *qt422016.Writer, socialUserProfiles []S
         </div>
         <ul class="history__table-list">
             `)
-		for _, profile := range socialUserProfiles {
+		for _, profile := range socialProviderUsers {
 			qw422016.N().S(`
             `)
 			switch profile.SocialProvider {
@@ -43,7 +43,7 @@ func streamregistrationHistory(qw422016 *qt422016.Writer, socialUserProfiles []S
                          alt="photo"
                          class="history__user-photo">
                     <span class="history__user-name">`)
-				qw422016.E().S(SocialUserProfileName(profile))
+				qw422016.E().S(SocialProviderUserName(profile))
 				qw422016.N().S(`</span>
                 </div>
                 <a href="https://github.com/`)
@@ -66,7 +66,7 @@ func streamregistrationHistory(qw422016 *qt422016.Writer, socialUserProfiles []S
                          alt="photo"
                          class="history__user-photo">
                     <span class="history__user-name">`)
-				qw422016.E().S(SocialUserProfileName(profile))
+				qw422016.E().S(SocialProviderUserName(profile))
 				qw422016.N().S(`</span>
                 </div>
                 <a href="https://gitlab.com/`)
@@ -93,15 +93,15 @@ func streamregistrationHistory(qw422016 *qt422016.Writer, socialUserProfiles []S
 `)
 }
 
-func writeregistrationHistory(qq422016 qtio422016.Writer, socialUserProfiles []SocialUserProfile) {
+func writeregistrationHistory(qq422016 qtio422016.Writer, socialProviderUsers []SocialProviderUser) {
 	qw422016 := qt422016.AcquireWriter(qq422016)
-	streamregistrationHistory(qw422016, socialUserProfiles)
+	streamregistrationHistory(qw422016, socialProviderUsers)
 	qt422016.ReleaseWriter(qw422016)
 }
 
-func registrationHistory(socialUserProfiles []SocialUserProfile) string {
+func registrationHistory(socialProviderUsers []SocialProviderUser) string {
 	qb422016 := qt422016.AcquireByteBuffer()
-	writeregistrationHistory(qb422016, socialUserProfiles)
+	writeregistrationHistory(qb422016, socialProviderUsers)
 	qs422016 := string(qb422016.B)
 	qt422016.ReleaseByteBuffer(qb422016)
 	return qs422016

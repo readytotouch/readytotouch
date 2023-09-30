@@ -11,9 +11,10 @@ const (
 	gitlab = domain.SocialProviderGitlab
 )
 
-type SocialUserProfile = domain.SocialUserProfile
+// SocialProviderUser reference
+type SocialProviderUser = domain.SocialProviderUser
 
-func SocialUserProfileName(v SocialUserProfile) string {
+func SocialProviderUserName(v SocialProviderUser) string {
 	if v.Name == "" {
 		return v.Username
 	}

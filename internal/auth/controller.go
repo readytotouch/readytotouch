@@ -53,6 +53,10 @@ func (c *Controller) BitbucketCallback(ctx *gin.Context) {
 	c.callback(ctx, c.bitbucketConfig)
 }
 
+func (c *Controller) Logout(context *gin.Context) {
+
+}
+
 func (c *Controller) redirect(ctx *gin.Context, config oauth2.Config) {
 	if config.ClientSecret == "" {
 		ctx.Data(http.StatusInternalServerError, "text/html; charset=utf-8", []byte("Current OAuth2 provider disabled"))

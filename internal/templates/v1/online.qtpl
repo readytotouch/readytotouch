@@ -1,4 +1,4 @@
-{% func Online(socialUserProfiles []SocialUserProfile) %}
+{% func Online(socialProviderUsers []SocialProviderUser) %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,7 +49,7 @@
 </section>
 <div class="container">
     {%= stats() %}
-    {%= registrationHistory(socialUserProfiles) %}
+    {%= registrationHistory(socialProviderUsers) %}
     {%= projects() %}
     {%= articles() %}
 </div>
