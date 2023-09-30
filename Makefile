@@ -25,6 +25,9 @@ postgres-test-run:
 logs:
 	docker logs readytotouch_go_app
 
+app:
+	docker exec -it readytotouch_go_app sh
+
 pg:
 	docker exec -it readytotouch_postgres_db bash
 
@@ -37,11 +40,16 @@ env-down:
 env-down-with-clear:
 	docker-compose -f docker-compose.yml --env-file .env down --remove-orphans -v # --rmi=all
 
-app-stop:
-	docker exec readytotouch_go_app pkill go
+app-build:
+	docker exec readytotouch_go_app go build -o /bin/yaaws-server ./cmd/main.go
 
 app-start:
-	docker exec readytotouch_go_app go run ./cmd/main.go
+	docker exec readytotouch_go_app yaaws-server
+
+app-stop:
+	docker exec readytotouch_go_app pkill yaaws-server
+
+app-restart: app-build app-stop app-start
 
 test:
 	docker exec readytotouch_go_app go test ./... -v -count=1
@@ -92,6 +100,7 @@ esbuild:
 	tree -h ./public/assets/js
 
 go-mod-update:
+	go get -u
 	go mod tidy
 	go mod vendor
 
