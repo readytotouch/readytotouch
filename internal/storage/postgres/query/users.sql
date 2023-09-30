@@ -1,3 +1,23 @@
+-- name: UserSocialProfileGet :one
+SELECT id, user_id, email, username, name
+FROM user_social_profiles usp
+WHERE usp.social_provider = @social_provider
+  AND usp.social_provider_user_id = @social_provider_user_id
+  AND usp.deleted_at IS NULL
+    FOR UPDATE;
+
+-- name: UserSocialProfileUpdate :exec
+UPDATE user_social_profiles
+SET email      = @email,
+    username   = @username,
+    name       = @name,
+    updated_at = @updated_at
+WHERE id = @id;
+
+-- name: UserSocialProfileChangeHistoryNew :exec
+INSERT INTO user_social_profile_change_history (user_id, user_social_profile_id, email, username, name, created_at)
+VALUES (@user_id, @user_social_profile_id, @email, @username, @name, @created_at);
+
 -- name: UserRegistrationDailyCountStats :many
 SELECT days.day::DATE                    AS day,
        COALESCE(s.user_count, 0)::BIGINT AS user_count

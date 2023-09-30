@@ -30,3 +30,11 @@ type SocialProviderUser struct {
 	Name                 string
 	CreatedAt            time.Time
 }
+
+type SocialProviderUserCreateParams struct {
+	SocialProvider       SocialProvider
+	SocialProviderUserID string
+	Username             string
+	Name                 string
+	Email                string
+}

@@ -2,6 +2,7 @@ package postgres
 
 import (
 	"context"
+	"strings"
 	"time"
 
 	"github.com/readytotouch-yaaws/yaaws-go/internal/domain"
@@ -16,6 +17,33 @@ type UserRepository struct {
 
 func NewUserRepository(db *Database) *UserRepository {
 	return &UserRepository{db: db}
+}
+
+func (r *UserRepository) Upsert(ctx context.Context, params *domain.SocialProviderUserCreateParams) (int64, error) {
+	var (
+		userID int64
+		now    = time.Now().Truncate(time.Second).UTC()
+	)
+
+	txErr := r.db.WithTransaction(ctx, func(queries *dbs.Queries) error {
+		row, err := queries.UserSocialProfileGet(ctx, dbs.UserSocialProfileGetParams{
+			SocialProvider:       dbs.SocialProvider(params.SocialProvider),
+			SocialProviderUserID: params.SocialProviderUserID,
+		})
+		switch err {
+		case nil:
+			userID = row.UserID
+
+			return r.update(ctx, queries, params, row, now)
+		}
+
+		return nil
+	})
+	if txErr != nil {
+		return 0, txErr
+	}
+
+	return userID, nil
 }
 
 func (r *UserRepository) RegistrationDailyCountStats(
@@ -65,4 +93,53 @@ func (r *UserRepository) SocialUserProfiles(ctx context.Context, limit int32) ([
 		}
 	}
 	return result, nil
+}
+
+func (r *UserRepository) update(ctx context.Context, queries *dbs.Queries, params *domain.SocialProviderUserCreateParams, row dbs.UserSocialProfileGetRow, now time.Time) error {
+	sensitivitySame := params.Email == row.Email &&
+		params.Username == row.Username &&
+		params.Name == row.Name
+	if sensitivitySame {
+		return nil
+	}
+
+	err := queries.UserSocialProfileUpdate(ctx, dbs.UserSocialProfileUpdateParams{
+		Email:    row.Email,
+		Username: row.Username,
+		Name:     row.Name,
+		UpdatedAt: pgtype.Timestamp{
+			Time:             now,
+			InfinityModifier: 0,
+			Valid:            true,
+		},
+		ID: row.ID,
+	})
+	if err != nil {
+		return err
+	}
+
+	insensitivitySame := strings.EqualFold(params.Email, row.Email) &&
+		strings.EqualFold(params.Username, row.Username) &&
+		strings.EqualFold(params.Name, row.Name)
+	if insensitivitySame {
+		return nil
+	}
+
+	err = queries.UserSocialProfileChangeHistoryNew(ctx, dbs.UserSocialProfileChangeHistoryNewParams{
+		UserID:              row.UserID,
+		UserSocialProfileID: row.ID,
+		Email:               params.Email,
+		Username:            params.Username,
+		Name:                params.Name,
+		CreatedAt: pgtype.Timestamp{
+			Time:             now,
+			InfinityModifier: 0,
+			Valid:            true,
+		},
+	})
+	if err != nil {
+		return err
+	}
+
+	return nil
 }

@@ -101,6 +101,7 @@ type UserSocialProfileChangeHistory struct {
 	UserSocialProfileID int64
 	Email               string
 	Username            string
+	Name                string
 	CreatedAt           pgtype.Timestamp
 	DeletedAt           pgtype.Timestamp
 }

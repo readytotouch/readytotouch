@@ -108,3 +108,92 @@ func (q *Queries) UserRegistrationDailyCountStats(ctx context.Context, arg UserR
 	}
 	return items, nil
 }
+
+const userSocialProfileChangeHistoryNew = `-- name: UserSocialProfileChangeHistoryNew :exec
+INSERT INTO user_social_profile_change_history (user_id, user_social_profile_id, email, username, name, created_at)
+VALUES ($1, $2, $3, $4, $5, $6)
+`
+
+type UserSocialProfileChangeHistoryNewParams struct {
+	UserID              int64
+	UserSocialProfileID int64
+	Email               string
+	Username            string
+	Name                string
+	CreatedAt           pgtype.Timestamp
+}
+
+func (q *Queries) UserSocialProfileChangeHistoryNew(ctx context.Context, arg UserSocialProfileChangeHistoryNewParams) error {
+	_, err := q.db.Exec(ctx, userSocialProfileChangeHistoryNew,
+		arg.UserID,
+		arg.UserSocialProfileID,
+		arg.Email,
+		arg.Username,
+		arg.Name,
+		arg.CreatedAt,
+	)
+	return err
+}
+
+const userSocialProfileGet = `-- name: UserSocialProfileGet :one
+SELECT id, user_id, email, username, name
+FROM user_social_profiles usp
+WHERE usp.social_provider = $1
+  AND usp.social_provider_user_id = $2
+  AND usp.deleted_at IS NULL
+    FOR UPDATE
+`
+
+type UserSocialProfileGetParams struct {
+	SocialProvider       SocialProvider
+	SocialProviderUserID string
+}
+
+type UserSocialProfileGetRow struct {
+	ID       int64
+	UserID   int64
+	Email    string
+	Username string
+	Name     string
+}
+
+func (q *Queries) UserSocialProfileGet(ctx context.Context, arg UserSocialProfileGetParams) (UserSocialProfileGetRow, error) {
+	row := q.db.QueryRow(ctx, userSocialProfileGet, arg.SocialProvider, arg.SocialProviderUserID)
+	var i UserSocialProfileGetRow
+	err := row.Scan(
+		&i.ID,
+		&i.UserID,
+		&i.Email,
+		&i.Username,
+		&i.Name,
+	)
+	return i, err
+}
+
+const userSocialProfileUpdate = `-- name: UserSocialProfileUpdate :exec
+UPDATE user_social_profiles
+SET email      = $1,
+    username   = $2,
+    name       = $3,
+    updated_at = $4
+WHERE id = $5
+`
+
+type UserSocialProfileUpdateParams struct {
+	Email     string
+	Username  string
+	Name      string
+	UpdatedAt pgtype.Timestamp
+	ID        int64
+}
+
+func (q *Queries) UserSocialProfileUpdate(ctx context.Context, arg UserSocialProfileUpdateParams) error {
+	_, err := q.db.Exec(ctx, userSocialProfileUpdate,
+		arg.Email,
+		arg.Username,
+		arg.Name,
+		arg.UpdatedAt,
+		arg.ID,
+	)
+	return err
+}
