@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"github.com/readytotouch-yaaws/yaaws-go/internal/auth"
 	"net/http"
 	"os"
 	"strings"
@@ -16,33 +17,33 @@ import (
 	"github.com/readytotouch-yaaws/yaaws-go/internal/server"
 
 	pkgOnline "github.com/readytotouch-yaaws/yaaws-go/internal/online"
-	pkgUser "github.com/readytotouch-yaaws/yaaws-go/internal/user"
+	pkgUsers "github.com/readytotouch-yaaws/yaaws-go/internal/users"
 
 	"github.com/gin-contrib/gzip"
 	"github.com/gin-gonic/gin"
 )
 
 var (
-	githubOAuthConfig = oauth2.Config{
+	githubConfig = oauth2.Config{
 		ClientID:     os.Getenv("GITHUB_CLIENT_ID"),
 		ClientSecret: os.Getenv("GITHUB_CLIENT_SECRET"),
-		RedirectURL:  "https://readytotouch.com/auth/github/callback",
+		RedirectURL:  os.Getenv("GITHUB_REDIRECT_URL"),
 		Endpoint:     github.Endpoint,
 		Scopes:       []string{"user:email"},
 	}
 
-	gitlabOAuthConfig = oauth2.Config{
+	gitlabConfig = oauth2.Config{
 		ClientID:     os.Getenv("GITLAB_CLIENT_ID"),
 		ClientSecret: os.Getenv("GITLAB_CLIENT_SECRET"),
-		RedirectURL:  "https://readytotouch.com/auth/gitlab/callback",
+		RedirectURL:  os.Getenv("GITLAB_REDIRECT_URL"),
 		Endpoint:     gitlab.Endpoint,
 		Scopes:       []string{"read_user"},
 	}
 
-	bitbucketOAuthConfig = oauth2.Config{
+	bitbucketConfig = oauth2.Config{
 		ClientID:     os.Getenv("BITBUCKET_CLIENT_ID"),
 		ClientSecret: os.Getenv("BITBUCKET_CLIENT_SECRET"),
-		RedirectURL:  "https://readytotouch.com/auth/bitbucket/callback",
+		RedirectURL:  os.Getenv("BITBUCKET_REDIRECT_URL"),
 		Endpoint:     bitbucket.Endpoint,
 		Scopes:       nil, // Scopes are defined on the client/consumer instance.
 	}
@@ -68,13 +69,22 @@ func main() {
 	)
 
 	var (
-		userController   = pkgUser.NewController(userRepository)
+		authController   = auth.NewController(userRepository, githubConfig, gitlabConfig, bitbucketConfig)
+		userController   = pkgUsers.NewController(userRepository)
 		onlineController = pkgOnline.NewController(userRepository, onlineRepository)
 	)
 
 	r.GET("/", onlineController.Index)
 	r.GET("/api/v1/users/registration/stats/daily.json", userController.RegistrationDailyCountStats)
 	r.GET("/api/v1/users/online/stats/daily.json", onlineController.DailyCountStats)
+
+	r.
+		GET("/auth/github", authController.GithubRedirect).
+		GET("/auth/gitlab", authController.GitlabRedirect).
+		GET("/auth/bitbucket", authController.BitbucketRedirect).
+		GET("/auth/github/callback", authController.GithubCallback).
+		GET("/auth/gitlab/callback", authController.GitlabCallback).
+		GET("/auth/bitbucket/callback", authController.BitbucketCallback)
 
 	r.
 		StaticFile("/design", "./public/design/online.html").

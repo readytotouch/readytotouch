@@ -121,10 +121,13 @@ generate-production-environment-file:
 
 	grep -qF 'GITHUB_CLIENT_ID=' .production.env || echo 'GITHUB_CLIENT_ID="8dce25b763367e846763"' >> .production.env
 	grep -qF 'GITHUB_CLIENT_SECRET=' .production.env || echo 'GITHUB_CLIENT_SECRET=""' >> .production.env
+	grep -qF 'GITHUB_REDIRECT_URL=' .production.env || echo 'GITHUB_REDIRECT_URL="https://readytotouch.com/auth/github/callback"' >> .production.env
 	grep -qF 'GITLAB_CLIENT_ID=' .production.env || echo 'GITLAB_CLIENT_ID="1f8bc1174d17998654c82400ff7a230c87d4e633327c17c2414f315f62b80d28"' >> .production.env
 	grep -qF 'GITLAB_CLIENT_SECRET=' .production.env || echo 'GITLAB_CLIENT_SECRET=""' >> .production.env
+	grep -qF 'GITLAB_REDIRECT_URL=' .production.env || echo 'GITLAB_REDIRECT_URL="https://readytotouch.com/auth/gitlab/callback"' >> .production.env
 	grep -qF 'BITBUCKET_CLIENT_ID=' .production.env || echo 'BITBUCKET_CLIENT_ID="PY4qXGrqgvCS34DuqT"' >> .production.env
 	grep -qF 'BITBUCKET_CLIENT_SECRET=' .production.env || echo 'BITBUCKET_CLIENT_SECRET=""' >> .production.env
+	grep -qF 'BITBUCKET_REDIRECT_URL=' .production.env || echo 'BITBUCKET_REDIRECT_URL="https://readytotouch.com/auth/bitbucket/callback"' >> .production.env
 
 	cat .production.env
 
