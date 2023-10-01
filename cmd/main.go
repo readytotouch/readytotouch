@@ -2,7 +2,6 @@ package main
 
 import (
 	"context"
-	"github.com/readytotouch-yaaws/yaaws-go/internal/auth"
 	"net/http"
 	"os"
 	"strings"
@@ -12,41 +11,19 @@ import (
 	"golang.org/x/oauth2/github"
 	"golang.org/x/oauth2/gitlab"
 
+	"github.com/readytotouch-yaaws/yaaws-go/internal/auth"
 	"github.com/readytotouch-yaaws/yaaws-go/internal/db/postgres"
 	"github.com/readytotouch-yaaws/yaaws-go/internal/env"
 	"github.com/readytotouch-yaaws/yaaws-go/internal/server"
 
+	pkgBitbucket "github.com/readytotouch-yaaws/yaaws-go/internal/oauth-providers/bitbucket"
+	pkgGitHub "github.com/readytotouch-yaaws/yaaws-go/internal/oauth-providers/github"
+	pkgGitLab "github.com/readytotouch-yaaws/yaaws-go/internal/oauth-providers/gitlab"
 	pkgOnline "github.com/readytotouch-yaaws/yaaws-go/internal/online"
 	pkgUsers "github.com/readytotouch-yaaws/yaaws-go/internal/users"
 
 	"github.com/gin-contrib/gzip"
 	"github.com/gin-gonic/gin"
-)
-
-var (
-	githubConfig = oauth2.Config{
-		ClientID:     os.Getenv("GITHUB_CLIENT_ID"),
-		ClientSecret: os.Getenv("GITHUB_CLIENT_SECRET"),
-		RedirectURL:  os.Getenv("GITHUB_REDIRECT_URL"),
-		Endpoint:     github.Endpoint,
-		Scopes:       []string{"user:email"},
-	}
-
-	gitlabConfig = oauth2.Config{
-		ClientID:     os.Getenv("GITLAB_CLIENT_ID"),
-		ClientSecret: os.Getenv("GITLAB_CLIENT_SECRET"),
-		RedirectURL:  os.Getenv("GITLAB_REDIRECT_URL"),
-		Endpoint:     gitlab.Endpoint,
-		Scopes:       []string{"read_user"},
-	}
-
-	bitbucketConfig = oauth2.Config{
-		ClientID:     os.Getenv("BITBUCKET_CLIENT_ID"),
-		ClientSecret: os.Getenv("BITBUCKET_CLIENT_SECRET"),
-		RedirectURL:  os.Getenv("BITBUCKET_REDIRECT_URL"),
-		Endpoint:     bitbucket.Endpoint,
-		Scopes:       nil, // Scopes are defined on the client/consumer instance.
-	}
 )
 
 func main() {
@@ -69,7 +46,33 @@ func main() {
 	)
 
 	var (
-		authController   = auth.NewController(userRepository, githubConfig, gitlabConfig, bitbucketConfig)
+		githubOAuthProvider = pkgGitHub.NewGithubOAuthProvider(&oauth2.Config{
+			ClientID:     os.Getenv("GITHUB_CLIENT_ID"),
+			ClientSecret: os.Getenv("GITHUB_CLIENT_SECRET"),
+			RedirectURL:  os.Getenv("GITHUB_REDIRECT_URL"),
+			Endpoint:     github.Endpoint,
+			Scopes:       []string{"user:email"},
+		})
+
+		gitlabOAuthProvider = pkgGitLab.NewGitlabOAuthProvider(&oauth2.Config{
+			ClientID:     os.Getenv("GITLAB_CLIENT_ID"),
+			ClientSecret: os.Getenv("GITLAB_CLIENT_SECRET"),
+			RedirectURL:  os.Getenv("GITLAB_REDIRECT_URL"),
+			Endpoint:     gitlab.Endpoint,
+			Scopes:       []string{"read_user"},
+		})
+
+		bitbucketOAuthProvider = pkgBitbucket.NewBitbucketOAuthProvider(&oauth2.Config{
+			ClientID:     os.Getenv("BITBUCKET_CLIENT_ID"),
+			ClientSecret: os.Getenv("BITBUCKET_CLIENT_SECRET"),
+			RedirectURL:  os.Getenv("BITBUCKET_REDIRECT_URL"),
+			Endpoint:     bitbucket.Endpoint,
+			Scopes:       nil, // Scopes are defined on the client/consumer instance.
+		})
+	)
+
+	var (
+		authController   = auth.NewController(userRepository, githubOAuthProvider, gitlabOAuthProvider, bitbucketOAuthProvider)
 		userController   = pkgUsers.NewController(userRepository)
 		onlineController = pkgOnline.NewController(userRepository, onlineRepository)
 	)

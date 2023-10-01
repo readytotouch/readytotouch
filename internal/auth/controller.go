@@ -4,61 +4,66 @@ import (
 	"crypto/rand"
 	"encoding/base64"
 	"net/http"
-
-	"golang.org/x/oauth2"
+	"strconv"
 
 	"github.com/readytotouch-yaaws/yaaws-go/internal/db/postgres"
+	"github.com/readytotouch-yaaws/yaaws-go/internal/domain"
 	"github.com/readytotouch-yaaws/yaaws-go/internal/env"
 
 	"github.com/gin-gonic/gin"
 )
 
 type Controller struct {
-	repository      *postgres.UserRepository
-	githubConfig    oauth2.Config
-	gitlabConfig    oauth2.Config
-	bitbucketConfig oauth2.Config
+	repository             *postgres.UserRepository
+	githubOAuthProvider    domain.OAuthProvider
+	gitlabOAuthProvider    domain.OAuthProvider
+	bitbucketOAuthProvider domain.OAuthProvider
 }
 
-func NewController(repository *postgres.UserRepository, githubConfig oauth2.Config, gitlabConfig oauth2.Config, bitbucketConfig oauth2.Config) *Controller {
+func NewController(
+	repository *postgres.UserRepository,
+	githubOAuthProvider domain.OAuthProvider,
+	gitlabOAuthProvider domain.OAuthProvider,
+	bitbucketOAuthProvider domain.OAuthProvider,
+) *Controller {
 	return &Controller{
-		repository:      repository,
-		githubConfig:    githubConfig,
-		gitlabConfig:    gitlabConfig,
-		bitbucketConfig: bitbucketConfig,
+		repository:             repository,
+		githubOAuthProvider:    githubOAuthProvider,
+		gitlabOAuthProvider:    gitlabOAuthProvider,
+		bitbucketOAuthProvider: bitbucketOAuthProvider,
 	}
 }
 
 func (c *Controller) GithubRedirect(ctx *gin.Context) {
-	c.redirect(ctx, c.githubConfig)
+	c.redirect(ctx, c.githubOAuthProvider)
 }
 
 func (c *Controller) GitlabRedirect(ctx *gin.Context) {
-	c.redirect(ctx, c.gitlabConfig)
+	c.redirect(ctx, c.gitlabOAuthProvider)
 }
 
 func (c *Controller) BitbucketRedirect(ctx *gin.Context) {
-	c.redirect(ctx, c.bitbucketConfig)
+	c.redirect(ctx, c.bitbucketOAuthProvider)
 }
 
 func (c *Controller) GithubCallback(ctx *gin.Context) {
-	c.callback(ctx, c.githubConfig)
+	c.callback(ctx, c.githubOAuthProvider)
 }
 
 func (c *Controller) GitlabCallback(ctx *gin.Context) {
-	c.callback(ctx, c.gitlabConfig)
+	c.callback(ctx, c.gitlabOAuthProvider)
 }
 
 func (c *Controller) BitbucketCallback(ctx *gin.Context) {
-	c.callback(ctx, c.bitbucketConfig)
+	c.callback(ctx, c.bitbucketOAuthProvider)
 }
 
 func (c *Controller) Logout(context *gin.Context) {
 
 }
 
-func (c *Controller) redirect(ctx *gin.Context, config oauth2.Config) {
-	if config.ClientSecret == "" {
+func (c *Controller) redirect(ctx *gin.Context, provider domain.OAuthProvider) {
+	if provider.GetConfig().ClientSecret == "" {
 		ctx.Data(http.StatusInternalServerError, "text/html; charset=utf-8", []byte("Current OAuth2 provider disabled"))
 
 		return
@@ -72,10 +77,10 @@ func (c *Controller) redirect(ctx *gin.Context, config oauth2.Config) {
 	}
 
 	ctx.SetCookie(c.getStateCookieName(), state, 3600, "/", "", true, true)
-	ctx.Redirect(http.StatusFound, config.AuthCodeURL(state))
+	ctx.Redirect(http.StatusFound, provider.GetConfig().AuthCodeURL(state))
 }
 
-func (c *Controller) callback(ctx *gin.Context, config oauth2.Config) {
+func (c *Controller) callback(ctx *gin.Context, provider domain.OAuthProvider) {
 	var (
 		queryCode  = ctx.Query("code")
 		queryState = ctx.Query("state")
@@ -105,14 +110,34 @@ func (c *Controller) callback(ctx *gin.Context, config oauth2.Config) {
 		return
 	}
 
-	token, err := config.Exchange(ctx, queryCode)
+	token, err := provider.GetConfig().Exchange(ctx, queryCode)
 	if err != nil {
 		ctx.Data(http.StatusInternalServerError, "text/html; charset=utf-8", []byte("Cannot retrieve access token from OAuth2 provider"))
 
 		return
 	}
 
-	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(token.AccessToken))
+	user, err := provider.GetUser(token.AccessToken)
+	if err != nil {
+		ctx.Data(http.StatusInternalServerError, "text/html; charset=utf-8", []byte("Cannot retrieve user data from OAuth2 provider"))
+
+		return
+	}
+
+	userID, err := c.repository.Create(ctx, &domain.SocialProviderUserCreateParams{
+		SocialProvider:       provider.SocialProvider(),
+		SocialProviderUserID: user.ID,
+		Email:                user.Email,
+		Username:             user.Username,
+		Name:                 user.Name,
+	})
+	if err != nil {
+		ctx.Data(http.StatusInternalServerError, "text/html; charset=utf-8", []byte("Cannot create user"))
+
+		return
+	}
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(strconv.FormatInt(userID, 10)))
 }
 
 func (c *Controller) getStateCookieName() string {

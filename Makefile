@@ -47,7 +47,7 @@ app-start:
 	docker exec readytotouch_go_app yaaws-server
 
 app-stop:
-	docker exec readytotouch_go_app pkill yaaws-server
+	docker exec readytotouch_go_app pkill yaaws-server || echo "already stopped"
 
 app-restart: app-build app-stop app-start
 
@@ -98,11 +98,6 @@ esbuild-minify:
 esbuild:
 	MINIFY=false npm run --prefix=client esbuild
 	tree -h ./public/assets/js
-
-go-mod-update:
-	go get -u
-	go mod tidy
-	go mod vendor
 
 # make design DESIGN="~/go/src/github.com/readytotouch-yaaws/readytotouch-yaaws.github.io"
 design:
