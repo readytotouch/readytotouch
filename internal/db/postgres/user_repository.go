@@ -20,6 +20,25 @@ func NewUserRepository(db *Database) *UserRepository {
 	return &UserRepository{db: db}
 }
 
+func (r *UserRepository) SocialUserProfilesByUser(ctx context.Context, id int64) ([]domain.SocialProviderUser, error) {
+	rows, err := r.db.Queries().SocialUserProfilesByUser(ctx, id)
+	if err != nil {
+		return nil, err
+	}
+
+	result := make([]domain.SocialProviderUser, len(rows))
+	for i, row := range rows {
+		result[i] = domain.SocialProviderUser{
+			SocialProvider:       domain.SocialProvider(row.SocialProvider),
+			SocialProviderUserID: row.SocialProviderUserID,
+			Username:             row.Username,
+			Name:                 row.Name,
+			CreatedAt:            row.CreatedAt.Time,
+		}
+	}
+	return result, nil
+}
+
 func (r *UserRepository) Create(ctx context.Context, params *domain.SocialProviderUserCreateParams) (int64, error) {
 	var (
 		userID int64
@@ -94,7 +113,6 @@ func (r *UserRepository) SocialUserProfiles(ctx context.Context, limit int32) ([
 	result := make([]domain.SocialProviderUser, len(rows))
 	for i, row := range rows {
 		result[i] = domain.SocialProviderUser{
-			ID:                   row.ID,
 			SocialProvider:       domain.SocialProvider(row.SocialProvider),
 			SocialProviderUserID: row.SocialProviderUserID,
 			Username:             row.Username,

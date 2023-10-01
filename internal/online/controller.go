@@ -24,6 +24,8 @@ func (c *Controller) Index(ctx *gin.Context) {
 	socialUserProfiles, err := c.userRepository.SocialUserProfiles(ctx, domain.RegistrationHistoryLimit)
 	if err != nil {
 		// @TODO logging
+
+		// NOP, continue
 	}
 
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.Online(socialUserProfiles)))

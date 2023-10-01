@@ -12,21 +12,18 @@ import (
 )
 
 const socialUserProfiles = `-- name: SocialUserProfiles :many
-SELECT u.id,
-       s.social_provider,
+SELECT s.social_provider,
        s.social_provider_user_id,
        s.username,
        s.name,
-       u.created_at
-FROM users u
-         INNER JOIN user_social_profiles s ON u.id = s.user_id
+       s.created_at
+FROM user_social_profiles s
 WHERE s.deleted_at IS NULL
 ORDER BY s.id DESC
 LIMIT $1
 `
 
 type SocialUserProfilesRow struct {
-	ID                   int64
 	SocialProvider       SocialProvider
 	SocialProviderUserID string
 	Username             string
@@ -44,7 +41,52 @@ func (q *Queries) SocialUserProfiles(ctx context.Context, limit int32) ([]Social
 	for rows.Next() {
 		var i SocialUserProfilesRow
 		if err := rows.Scan(
-			&i.ID,
+			&i.SocialProvider,
+			&i.SocialProviderUserID,
+			&i.Username,
+			&i.Name,
+			&i.CreatedAt,
+		); err != nil {
+			return nil, err
+		}
+		items = append(items, i)
+	}
+	if err := rows.Err(); err != nil {
+		return nil, err
+	}
+	return items, nil
+}
+
+const socialUserProfilesByUser = `-- name: SocialUserProfilesByUser :many
+SELECT s.social_provider,
+       s.social_provider_user_id,
+       s.username,
+       s.name,
+       s.created_at
+FROM user_social_profiles s
+WHERE s.user_id = $1
+  AND s.deleted_at IS NULL
+ORDER BY s.id
+`
+
+type SocialUserProfilesByUserRow struct {
+	SocialProvider       SocialProvider
+	SocialProviderUserID string
+	Username             string
+	Name                 string
+	CreatedAt            pgtype.Timestamp
+}
+
+func (q *Queries) SocialUserProfilesByUser(ctx context.Context, userID int64) ([]SocialUserProfilesByUserRow, error) {
+	rows, err := q.db.Query(ctx, socialUserProfilesByUser, userID)
+	if err != nil {
+		return nil, err
+	}
+	defer rows.Close()
+	var items []SocialUserProfilesByUserRow
+	for rows.Next() {
+		var i SocialUserProfilesByUserRow
+		if err := rows.Scan(
 			&i.SocialProvider,
 			&i.SocialProviderUserID,
 			&i.Username,

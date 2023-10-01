@@ -23,7 +23,6 @@ const (
 )
 
 type SocialProviderUser struct {
-	ID                   int64
 	SocialProvider       SocialProvider
 	SocialProviderUserID string
 	Username             string

@@ -59,14 +59,23 @@ FROM GENERATE_SERIES(
 ORDER BY days.day;
 
 -- name: SocialUserProfiles :many
-SELECT u.id,
-       s.social_provider,
+SELECT s.social_provider,
        s.social_provider_user_id,
        s.username,
        s.name,
-       u.created_at
-FROM users u
-         INNER JOIN user_social_profiles s ON u.id = s.user_id
+       s.created_at
+FROM user_social_profiles s
 WHERE s.deleted_at IS NULL
 ORDER BY s.id DESC
 LIMIT sqlc.arg('limit');
+
+-- name: SocialUserProfilesByUser :many
+SELECT s.social_provider,
+       s.social_provider_user_id,
+       s.username,
+       s.name,
+       s.created_at
+FROM user_social_profiles s
+WHERE s.user_id = @user_id
+  AND s.deleted_at IS NULL
+ORDER BY s.id;
