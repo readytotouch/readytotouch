@@ -135,8 +135,8 @@ func (q *Queries) UserSocialProfileChangeHistoryNew(ctx context.Context, arg Use
 	return err
 }
 
-const userSocialProfileGet = `-- name: UserSocialProfileGet :one
-SELECT id, user_id, email, username, name
+const userSocialProfileGetByID = `-- name: UserSocialProfileGetByID :one
+SELECT usp.id, usp.user_id, usp.email, usp.username, usp.name
 FROM user_social_profiles usp
 WHERE usp.social_provider = $1
   AND usp.social_provider_user_id = $2
@@ -144,12 +144,12 @@ WHERE usp.social_provider = $1
     FOR UPDATE
 `
 
-type UserSocialProfileGetParams struct {
+type UserSocialProfileGetByIDParams struct {
 	SocialProvider       SocialProvider
 	SocialProviderUserID string
 }
 
-type UserSocialProfileGetRow struct {
+type UserSocialProfileGetByIDRow struct {
 	ID       int64
 	UserID   int64
 	Email    string
@@ -157,9 +157,9 @@ type UserSocialProfileGetRow struct {
 	Name     string
 }
 
-func (q *Queries) UserSocialProfileGet(ctx context.Context, arg UserSocialProfileGetParams) (UserSocialProfileGetRow, error) {
-	row := q.db.QueryRow(ctx, userSocialProfileGet, arg.SocialProvider, arg.SocialProviderUserID)
-	var i UserSocialProfileGetRow
+func (q *Queries) UserSocialProfileGetByID(ctx context.Context, arg UserSocialProfileGetByIDParams) (UserSocialProfileGetByIDRow, error) {
+	row := q.db.QueryRow(ctx, userSocialProfileGetByID, arg.SocialProvider, arg.SocialProviderUserID)
+	var i UserSocialProfileGetByIDRow
 	err := row.Scan(
 		&i.ID,
 		&i.UserID,
@@ -170,9 +170,56 @@ func (q *Queries) UserSocialProfileGet(ctx context.Context, arg UserSocialProfil
 	return i, err
 }
 
+const userSocialProfileGetUserByEmail = `-- name: UserSocialProfileGetUserByEmail :one
+SELECT usp.user_id
+FROM user_social_profiles usp
+WHERE usp.email = LOWER($1)
+  AND usp.deleted_at IS NULL
+ORDER BY usp.id DESC
+LIMIT 1
+`
+
+func (q *Queries) UserSocialProfileGetUserByEmail(ctx context.Context, email string) (int64, error) {
+	row := q.db.QueryRow(ctx, userSocialProfileGetUserByEmail, email)
+	var user_id int64
+	err := row.Scan(&user_id)
+	return user_id, err
+}
+
+const userSocialProfileNew = `-- name: UserSocialProfileNew :one
+INSERT INTO user_social_profiles (user_id, social_provider, social_provider_user_id, email, username, name, created_at, updated_at)
+VALUES ($1, $2, $3, $4, $5, $6, $7, $7)
+RETURNING id
+`
+
+type UserSocialProfileNewParams struct {
+	UserID               int64
+	SocialProvider       SocialProvider
+	SocialProviderUserID string
+	Email                string
+	Username             string
+	Name                 string
+	CreatedAt            pgtype.Timestamp
+}
+
+func (q *Queries) UserSocialProfileNew(ctx context.Context, arg UserSocialProfileNewParams) (int64, error) {
+	row := q.db.QueryRow(ctx, userSocialProfileNew,
+		arg.UserID,
+		arg.SocialProvider,
+		arg.SocialProviderUserID,
+		arg.Email,
+		arg.Username,
+		arg.Name,
+		arg.CreatedAt,
+	)
+	var id int64
+	err := row.Scan(&id)
+	return id, err
+}
+
 const userSocialProfileUpdate = `-- name: UserSocialProfileUpdate :exec
 UPDATE user_social_profiles
-SET email      = $1,
+SET email      = LOWER($1),
     username   = $2,
     name       = $3,
     updated_at = $4
@@ -195,5 +242,34 @@ func (q *Queries) UserSocialProfileUpdate(ctx context.Context, arg UserSocialPro
 		arg.UpdatedAt,
 		arg.ID,
 	)
+	return err
+}
+
+const usersNew = `-- name: UsersNew :one
+INSERT INTO users (created_at, updated_at)
+VALUES ($1, $1)
+RETURNING id
+`
+
+func (q *Queries) UsersNew(ctx context.Context, createdAt pgtype.Timestamp) (int64, error) {
+	row := q.db.QueryRow(ctx, usersNew, createdAt)
+	var id int64
+	err := row.Scan(&id)
+	return id, err
+}
+
+const usersUpdate = `-- name: UsersUpdate :exec
+UPDATE users
+SET updated_at = $1
+WHERE id = $2
+`
+
+type UsersUpdateParams struct {
+	UpdatedAt pgtype.Timestamp
+	ID        int64
+}
+
+func (q *Queries) UsersUpdate(ctx context.Context, arg UsersUpdateParams) error {
+	_, err := q.db.Exec(ctx, usersUpdate, arg.UpdatedAt, arg.ID)
 	return err
 }

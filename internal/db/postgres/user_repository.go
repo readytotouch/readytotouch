@@ -2,6 +2,7 @@ package postgres
 
 import (
 	"context"
+	"database/sql"
 	"strings"
 	"time"
 
@@ -19,14 +20,14 @@ func NewUserRepository(db *Database) *UserRepository {
 	return &UserRepository{db: db}
 }
 
-func (r *UserRepository) Upsert(ctx context.Context, params *domain.SocialProviderUserCreateParams) (int64, error) {
+func (r *UserRepository) Create(ctx context.Context, params *domain.SocialProviderUserCreateParams) (int64, error) {
 	var (
 		userID int64
 		now    = time.Now().Truncate(time.Second).UTC()
 	)
 
 	txErr := r.db.WithTransaction(ctx, func(queries *dbs.Queries) error {
-		row, err := queries.UserSocialProfileGet(ctx, dbs.UserSocialProfileGetParams{
+		row, err := queries.UserSocialProfileGetByID(ctx, dbs.UserSocialProfileGetByIDParams{
 			SocialProvider:       dbs.SocialProvider(params.SocialProvider),
 			SocialProviderUserID: params.SocialProviderUserID,
 		})
@@ -35,9 +36,18 @@ func (r *UserRepository) Upsert(ctx context.Context, params *domain.SocialProvid
 			userID = row.UserID
 
 			return r.update(ctx, queries, params, row, now)
-		}
+		case sql.ErrNoRows:
+			id, err := r.create(ctx, queries, params, now)
+			if err != nil {
+				return err
+			}
 
-		return nil
+			userID = id
+
+			return nil
+		default:
+			return err
+		}
 	})
 	if txErr != nil {
 		return 0, txErr
@@ -95,8 +105,8 @@ func (r *UserRepository) SocialUserProfiles(ctx context.Context, limit int32) ([
 	return result, nil
 }
 
-func (r *UserRepository) update(ctx context.Context, queries *dbs.Queries, params *domain.SocialProviderUserCreateParams, row dbs.UserSocialProfileGetRow, now time.Time) error {
-	sensitivitySame := params.Email == row.Email &&
+func (r *UserRepository) update(ctx context.Context, queries *dbs.Queries, params *domain.SocialProviderUserCreateParams, row dbs.UserSocialProfileGetByIDRow, now time.Time) error {
+	sensitivitySame := strings.EqualFold(params.Email, row.Email) &&
 		params.Username == row.Username &&
 		params.Name == row.Name
 	if sensitivitySame {
@@ -108,11 +118,21 @@ func (r *UserRepository) update(ctx context.Context, queries *dbs.Queries, param
 		Username: row.Username,
 		Name:     row.Name,
 		UpdatedAt: pgtype.Timestamp{
-			Time:             now,
-			InfinityModifier: 0,
-			Valid:            true,
+			Time:  now,
+			Valid: true,
 		},
 		ID: row.ID,
+	})
+	if err != nil {
+		return err
+	}
+
+	err = queries.UsersUpdate(ctx, dbs.UsersUpdateParams{
+		UpdatedAt: pgtype.Timestamp{
+			Time:  now,
+			Valid: true,
+		},
+		ID: row.UserID,
 	})
 	if err != nil {
 		return err
@@ -132,9 +152,73 @@ func (r *UserRepository) update(ctx context.Context, queries *dbs.Queries, param
 		Username:            params.Username,
 		Name:                params.Name,
 		CreatedAt: pgtype.Timestamp{
-			Time:             now,
-			InfinityModifier: 0,
-			Valid:            true,
+			Time:  now,
+			Valid: true,
+		},
+	})
+	if err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (r *UserRepository) create(ctx context.Context, queries *dbs.Queries, params *domain.SocialProviderUserCreateParams, now time.Time) (int64, error) {
+	userID, err := queries.UserSocialProfileGetUserByEmail(ctx, params.Email)
+	switch err {
+	case nil:
+		err = r.createUserSocialProfile(ctx, queries, userID, params, now)
+		if err != nil {
+			return 0, err
+		}
+
+		return userID, nil
+	case sql.ErrNoRows:
+		userID, err = queries.UsersNew(ctx, pgtype.Timestamp{
+			Time:  now,
+			Valid: true,
+		})
+		if err != nil {
+			return 0, err
+		}
+
+		err = r.createUserSocialProfile(ctx, queries, userID, params, now)
+		if err != nil {
+			return 0, err
+		}
+
+		return userID, nil
+	default:
+		return 0, err
+	}
+}
+
+func (r *UserRepository) createUserSocialProfile(ctx context.Context, queries *dbs.Queries, userID int64, params *domain.SocialProviderUserCreateParams, now time.Time) error {
+	userSocialProfileID, err := queries.UserSocialProfileNew(ctx, dbs.UserSocialProfileNewParams{
+		UserID:               userID,
+		SocialProvider:       dbs.SocialProvider(params.SocialProvider),
+		SocialProviderUserID: params.SocialProviderUserID,
+		Email:                params.Email,
+		Username:             params.Username,
+		Name:                 params.Name,
+		CreatedAt: pgtype.Timestamp{
+			Time:  now,
+			Valid: true,
+		},
+	})
+	if err != nil {
+		return err
+	}
+
+	err = queries.UserSocialProfileChangeHistoryNew(ctx, dbs.UserSocialProfileChangeHistoryNewParams{
+		UserID:              userID,
+		UserSocialProfileID: userSocialProfileID,
+		Email:               params.Email,
+		Username:            params.Username,
+		Name:                params.Name,
+		CreatedAt: pgtype.Timestamp{
+			Time:  now,
+			Valid: true,
 		},
 	})
 	if err != nil {
