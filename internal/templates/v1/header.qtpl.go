@@ -14,7 +14,7 @@ var (
 	_ = qt422016.AcquireByteBuffer
 )
 
-func streamheader(qw422016 *qt422016.Writer) {
+func streamheader(qw422016 *qt422016.Writer, profiles []SocialProviderUser) {
 	qw422016.N().S(`
 <header class="header">
 	<div class="header__wrapper">
@@ -27,23 +27,93 @@ func streamheader(qw422016 *qt422016.Writer) {
 				frameborder="0" scrolling="0" width="170" height="30" title="GitHub"></iframe>
 		</div>
 		`)
+	if len(profiles) > 0 {
+		qw422016.N().S(`
+		<div class="header__profile">
+			<button class="header__profile-button">
+				<img src="`)
+		qw422016.E().S(SocialProviderUserHeaderPhoto(profiles[0]))
+		qw422016.N().S(`" alt="Profile photo">
+			</button>
+			<div class="header__modal modal">
+				<div class="modal__profile">
+					<img src="`)
+		qw422016.E().S(SocialProviderUserHeaderPhoto(profiles[0]))
+		qw422016.N().S(`" class="modal__user-photo" width="48" height="48" alt="Profile photo">
+					<div class="modal__profile-info">
+						<div class="modal__profile-name">`)
+		qw422016.E().S(SocialProviderUserName(profiles[0]))
+		qw422016.N().S(`</div>
+						`)
+		for _, profile := range profiles {
+			qw422016.N().S(`
+						`)
+			switch profile.SocialProvider {
+			case github:
+				qw422016.N().S(`
+						<a href="https://github.com/`)
+				qw422016.E().S(profile.Username)
+				qw422016.N().S(`" target="_blank" class="modal__link">
+							<img src="/assets/images/pages/online/github-black.svg" width="20" height="20" alt="link">
+							<span class="modal__profile-github">github.com/`)
+				qw422016.E().S(profile.Username)
+				qw422016.N().S(`</span>
+						</a>
+						`)
+			case gitlab:
+				qw422016.N().S(`
+						<a href="https://gitlab.com/`)
+				qw422016.E().S(profile.Username)
+				qw422016.N().S(`" target="_blank" class="modal__link">
+							<img src="/assets/images/pages/online/gitlab.png" width="20" height="20" alt="link">
+							<span class="modal__profile-gitlab">gitlab.com/`)
+				qw422016.E().S(profile.Username)
+				qw422016.N().S(`</span>
+						</a>
+						`)
+			}
+			qw422016.N().S(`
+						`)
+		}
+		qw422016.N().S(`
+					</div>
+				</div>
+				<div class="modal__log-out">
+					<a href="/logout" class="modal__button">
+						<img src="/assets/images/pages/online/log-out.svg" alt="log-out">
+						<span>Log out</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		`)
+	}
 	qw422016.N().S(`
 	</div>
 </header>
 `)
+	if len(profiles) > 0 {
+		qw422016.N().S(`
+<script>
+	document.querySelector(".header__profile-button").addEventListener("click", function () {
+		document.querySelector(".header__modal").classList.toggle("active");
+	})
+</script>
+`)
+	}
 	qw422016.N().S(`
 `)
 }
 
-func writeheader(qq422016 qtio422016.Writer) {
+func writeheader(qq422016 qtio422016.Writer, profiles []SocialProviderUser) {
 	qw422016 := qt422016.AcquireWriter(qq422016)
-	streamheader(qw422016)
+	streamheader(qw422016, profiles)
 	qt422016.ReleaseWriter(qw422016)
 }
 
-func header() string {
+func header(profiles []SocialProviderUser) string {
 	qb422016 := qt422016.AcquireByteBuffer()
-	writeheader(qb422016)
+	writeheader(qb422016, profiles)
 	qs422016 := string(qb422016.B)
 	qt422016.ReleaseByteBuffer(qb422016)
 	return qs422016
