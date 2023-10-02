@@ -2,7 +2,6 @@ package server
 
 import (
 	"crypto/tls"
-	"fmt"
 	"log"
 	"net/http"
 	"strings"
@@ -14,15 +13,11 @@ import (
 )
 
 func Run(handler http.Handler) {
-	environment := env.Must("ENVIRONMENT")
-
-	switch environment {
-	case "production":
+	switch env.Environment() {
+	case env.Production:
 		runProduction(handler)
-	case "development":
+	case env.Development:
 		runDevelopment(handler)
-	default:
-		panic(fmt.Sprintf("unknown environment %q", environment))
 	}
 }
 
@@ -31,8 +26,8 @@ func Run(handler http.Handler) {
 func runProduction(handler http.Handler) {
 	certManager := autocert.Manager{
 		Prompt:     autocert.AcceptTOS,
-		HostPolicy: autocert.HostWhitelist(strings.Split(env.Must("HOSTS"), ",")...),
-		Cache:      autocert.DirCache(env.Must("TLS_CERTIFICATES_DIR")),
+		HostPolicy: autocert.HostWhitelist(strings.Split(env.Required("HOSTS"), ",")...),
+		Cache:      autocert.DirCache(env.Required("TLS_CERTIFICATES_DIR")),
 	}
 
 	server := &http.Server{

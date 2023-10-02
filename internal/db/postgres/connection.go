@@ -1,17 +1,15 @@
 package postgres
 
 import (
-	"context"
-
-	"github.com/jackc/pgx/v5/pgxpool"
+	"database/sql"
 )
 
-func Connection(ctx context.Context, dsn string) (*pgxpool.Pool, error) {
-	return pgxpool.New(ctx, dsn)
+func Connection(dsn string) (*sql.DB, error) {
+	return sql.Open("postgres", dsn)
 }
 
-func MustConnection(ctx context.Context, dsn string) *pgxpool.Pool {
-	var connection, err = Connection(ctx, dsn)
+func MustConnection(dsn string) *sql.DB {
+	connection, err := Connection(dsn)
 	if err != nil {
 		panic(err)
 	}

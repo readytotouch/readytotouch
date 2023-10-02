@@ -1,5 +1,9 @@
 include Makefile.ansible
 
+volumes:
+	mkdir -p ./.docker/volumes/go/tls-certificates
+	mkdir -p ./.docker/volumes/postgresql/data
+
 env-docker-compose-development:
 	rm -f docker-compose.yml
 	ln -s ./docker/compose/development/docker-compose.yml docker-compose.yml
@@ -21,6 +25,9 @@ postgres-test-run:
 logs:
 	docker logs readytotouch_go_app
 
+app:
+	docker exec -it readytotouch_go_app sh
+
 pg:
 	docker exec -it readytotouch_postgres_db bash
 
@@ -33,11 +40,17 @@ env-down:
 env-down-with-clear:
 	docker-compose -f docker-compose.yml --env-file .env down --remove-orphans -v # --rmi=all
 
-app-stop:
-	docker exec readytotouch_go_app pkill go
+app-build:
+	docker exec readytotouch_go_app go build -o /bin/yaaws-server ./cmd/main.go
 
 app-start:
-	docker exec readytotouch_go_app go run ./cmd/main.go
+	docker exec readytotouch_go_app yaaws-server
+
+app-stop:
+	docker exec readytotouch_go_app pkill go || echo "go already stopped" # delete after first deploy
+	docker exec readytotouch_go_app pkill yaaws-server || echo "yaaws-server already stopped"
+
+app-restart: app-build app-stop app-start
 
 test:
 	docker exec readytotouch_go_app go test ./... -v -count=1
@@ -87,10 +100,6 @@ esbuild:
 	MINIFY=false npm run --prefix=client esbuild
 	tree -h ./public/assets/js
 
-go-mod-update:
-	go mod tidy
-	go mod vendor
-
 # make design DESIGN="~/go/src/github.com/readytotouch-yaaws/readytotouch-yaaws.github.io"
 design:
 	$(eval DESIGN := ~/go/src/github.com/readytotouch-yaaws/readytotouch-yaaws.github.io)
@@ -115,7 +124,20 @@ generate-production-environment-file:
 	grep -qF 'POSTGRES_DSN=' .production.env || echo 'POSTGRES_DSN="postgresql://u8user:$(POSTGRES_PASSWORD)@postgres:5432/yaaws?sslmode=disable"' >> .production.env
 	grep -qF 'HOSTS=' .production.env || echo 'HOSTS="readytotouch.com,dev.readytotouch.com,www.readytotouch.com"' >> .production.env
 
+	grep -qF 'GITHUB_CLIENT_ID=' .production.env || echo 'GITHUB_CLIENT_ID="8dce25b763367e846763"' >> .production.env
+	grep -qF 'GITHUB_CLIENT_SECRET=' .production.env || echo 'GITHUB_CLIENT_SECRET=""' >> .production.env
+	grep -qF 'GITHUB_REDIRECT_URL=' .production.env || echo 'GITHUB_REDIRECT_URL="https://readytotouch.com/auth/github/callback"' >> .production.env
+	grep -qF 'GITLAB_CLIENT_ID=' .production.env || echo 'GITLAB_CLIENT_ID="1f8bc1174d17998654c82400ff7a230c87d4e633327c17c2414f315f62b80d28"' >> .production.env
+	grep -qF 'GITLAB_CLIENT_SECRET=' .production.env || echo 'GITLAB_CLIENT_SECRET=""' >> .production.env
+	grep -qF 'GITLAB_REDIRECT_URL=' .production.env || echo 'GITLAB_REDIRECT_URL="https://readytotouch.com/auth/gitlab/callback"' >> .production.env
+	grep -qF 'BITBUCKET_CLIENT_ID=' .production.env || echo 'BITBUCKET_CLIENT_ID="PY4qXGrqgvCS34DuqT"' >> .production.env
+	grep -qF 'BITBUCKET_CLIENT_SECRET=' .production.env || echo 'BITBUCKET_CLIENT_SECRET=""' >> .production.env
+	grep -qF 'BITBUCKET_REDIRECT_URL=' .production.env || echo 'BITBUCKET_REDIRECT_URL="https://readytotouch.com/auth/bitbucket/callback"' >> .production.env
+
 	cat .production.env
 
 ssh:
 	ssh -t root@70.34.247.27 "cd /var/go/readytotouch/; bash --login"
+
+ssh-copy-tls-certificates:
+	scp -r root@70.34.247.27:/var/go/readytotouch/.docker/volumes/go/tls-certificates ./.docker/volumes/go

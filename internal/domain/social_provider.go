@@ -1,13 +1,5 @@
 package domain
 
-import (
-	"time"
-)
-
-const (
-	RegistrationHistoryLimit = 32
-)
-
 type SocialProvider string
 
 const (
@@ -21,12 +13,3 @@ const (
 	SocialProviderXing      SocialProvider = "xing"
 	SocialProviderGoogle    SocialProvider = "google"
 )
-
-type SocialUserProfile struct {
-	ID                   int64
-	SocialProvider       SocialProvider
-	SocialProviderUserID string
-	Username             string
-	Name                 string
-	CreatedAt            time.Time
-}

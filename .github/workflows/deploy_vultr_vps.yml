@@ -1,0 +1,28 @@
+name: Deploy to Vultr VPS
+
+on:
+  workflow_dispatch
+
+jobs:
+  deploy:
+    name: "Deploy to Vultr VPS"
+    runs-on: "ubuntu-latest"
+
+    steps:
+      - name: "Checkout code"
+        uses: actions/checkout@v4
+
+      - name: "SSH into Vultr VPS"
+        uses: appleboy/ssh-action@master
+        with:
+          host: "70.34.247.27"
+          port: 22
+          username: "root"
+          key: ${{ secrets.READYTOTOUCH_VULTR_VPS_SSH_PRIVATE_KEY }}
+          script: |
+            cd /var/go/readytotouch/
+            git pull
+            go mod vendor
+            make env-up
+            make migrate-pgsql-up
+            make app-restart

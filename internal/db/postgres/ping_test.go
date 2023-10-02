@@ -6,8 +6,6 @@ import (
 
 	"github.com/readytotouch-yaaws/yaaws-go/internal/env"
 
-	"github.com/jackc/pgx/v5/pgxpool"
-
 	"github.com/stretchr/testify/require"
 )
 
@@ -18,9 +16,9 @@ func TestPing(t *testing.T) {
 
 	ctx := context.Background()
 
-	connection, err := pgxpool.New(ctx, env.Must("POSTGRES_DSN"))
+	connection, err := Connection(env.Required("POSTGRES_DSN"))
 	require.NoError(t, err)
 	defer connection.Close()
 
-	require.NoError(t, connection.Ping(ctx))
+	require.NoError(t, connection.PingContext(ctx))
 }

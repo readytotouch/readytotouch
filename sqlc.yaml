@@ -9,6 +9,6 @@ sql:
     gen:
       go:
         package: "dbs"
-        sql_package: "pgx/v5"
+        sql_package: "database/sql"
         out: "./internal/storage/postgres/dbs/"
         emit_prepared_queries: true

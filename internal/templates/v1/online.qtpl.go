@@ -14,7 +14,7 @@ var (
 	_ = qt422016.AcquireByteBuffer
 )
 
-func StreamOnline(qw422016 *qt422016.Writer, socialUserProfiles []SocialUserProfile) {
+func StreamOnline(qw422016 *qt422016.Writer, headerProfiles []SocialProviderUser, socialProviderUsers []SocialProviderUser) {
 	qw422016.N().S(`
 <!DOCTYPE html>
 <html lang="en">
@@ -40,7 +40,7 @@ func StreamOnline(qw422016 *qt422016.Writer, socialUserProfiles []SocialUserProf
 </head>
 <body>
 `)
-	streamheader(qw422016)
+	streamheader(qw422016, headerProfiles)
 	qw422016.N().S(`
 <main class="main-wrapper">
 <section class="hero">
@@ -57,14 +57,14 @@ func StreamOnline(qw422016 *qt422016.Writer, socialUserProfiles []SocialUserProf
             </a>
         </div>
         <div class="hero__main">
-            <h1 class="hero__title">Anonymous job search</h1>
+            <h1 class="hero__title">Anonymous work search</h1>
             <p class="hero__subtitle">Tracking registrations and online users of the platform. Sign in with GitHub or GitLab to support the project</p>
         </div>
         <div class="hero__buttons-group">
-            <a href="#" class="hero__button">
+            <a href="/auth/github" class="hero__button">
                 <img src="/assets/images/pages/online/github-white.svg" alt="GitHub" class="button-icon">Log in with GitHub
             </a>
-            <a href="#" class="hero__button">
+            <a href="/auth/gitlab" class="hero__button">
                 <img src="/assets/images/pages/online/gitlab.png" alt="GitLab" class="hero__button-icon">Log in with GitLab
             </a>
         </div>
@@ -75,7 +75,7 @@ func StreamOnline(qw422016 *qt422016.Writer, socialUserProfiles []SocialUserProf
 	streamstats(qw422016)
 	qw422016.N().S(`
     `)
-	streamregistrationHistory(qw422016, socialUserProfiles)
+	streamregistrationHistory(qw422016, socialProviderUsers)
 	qw422016.N().S(`
     `)
 	streamprojects(qw422016)
@@ -96,15 +96,15 @@ func StreamOnline(qw422016 *qt422016.Writer, socialUserProfiles []SocialUserProf
 `)
 }
 
-func WriteOnline(qq422016 qtio422016.Writer, socialUserProfiles []SocialUserProfile) {
+func WriteOnline(qq422016 qtio422016.Writer, headerProfiles []SocialProviderUser, socialProviderUsers []SocialProviderUser) {
 	qw422016 := qt422016.AcquireWriter(qq422016)
-	StreamOnline(qw422016, socialUserProfiles)
+	StreamOnline(qw422016, headerProfiles, socialProviderUsers)
 	qt422016.ReleaseWriter(qw422016)
 }
 
-func Online(socialUserProfiles []SocialUserProfile) string {
+func Online(headerProfiles []SocialProviderUser, socialProviderUsers []SocialProviderUser) string {
 	qb422016 := qt422016.AcquireByteBuffer()
-	WriteOnline(qb422016, socialUserProfiles)
+	WriteOnline(qb422016, headerProfiles, socialProviderUsers)
 	qs422016 := string(qb422016.B)
 	qt422016.ReleaseByteBuffer(qb422016)
 	return qs422016

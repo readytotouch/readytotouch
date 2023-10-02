@@ -21,12 +21,26 @@ func NewController(userRepository *postgres.UserRepository, onlineRepository *po
 }
 
 func (c *Controller) Index(ctx *gin.Context) {
+	const (
+		// @TODO get user ID from ctx
+		authUserID = 1
+	)
+
+	headerProfiles, err := c.userRepository.SocialUserProfilesByUser(ctx, authUserID)
+	if err != nil {
+		// @TODO logging
+
+		// NOP, continue
+	}
+
 	socialUserProfiles, err := c.userRepository.SocialUserProfiles(ctx, domain.RegistrationHistoryLimit)
 	if err != nil {
 		// @TODO logging
+
+		// NOP, continue
 	}
 
-	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.Online(socialUserProfiles)))
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.Online(headerProfiles, socialUserProfiles)))
 }
 
 func (c *Controller) DailyCountStats(ctx *gin.Context) {

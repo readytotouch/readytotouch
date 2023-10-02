@@ -2,13 +2,12 @@ package postgres
 
 import (
 	"context"
+	"database/sql"
 	"sync/atomic"
 	"testing"
 	"time"
 
 	"github.com/readytotouch-yaaws/yaaws-go/internal/env"
-
-	"github.com/jackc/pgx/v5/pgxpool"
 
 	"github.com/stretchr/testify/require"
 )
@@ -21,7 +20,7 @@ func testOnlineStorage(
 
 	ctx := context.Background()
 
-	connection, err := pgxpool.New(ctx, env.Must("POSTGRES_DSN"))
+	connection, err := Connection(env.Required("POSTGRES_DSN"))
 	require.NoError(t, err)
 	defer connection.Close()
 
@@ -104,7 +103,7 @@ func benchmarkOnlineStorage(
 
 	ctx := context.Background()
 
-	connection, err := pgxpool.New(ctx, env.Must("POSTGRES_DSN"))
+	connection, err := Connection(env.Required("POSTGRES_DSN"))
 	require.NoError(b, err)
 	defer connection.Close()
 
@@ -135,7 +134,7 @@ func benchmarkOnlineStorage(
 	b.StopTimer()
 }
 
-func truncateOnline(t testing.TB, ctx context.Context, connection *pgxpool.Pool) {
+func truncateOnline(t testing.TB, ctx context.Context, connection *sql.DB) {
 	t.Helper()
 
 	// clear
@@ -145,7 +144,7 @@ func truncateOnline(t testing.TB, ctx context.Context, connection *pgxpool.Pool)
 			query = "TRUNCATE TABLE user_online_hourly_stats;"
 		)
 
-		_, err := connection.Exec(ctx, query)
+		_, err := connection.ExecContext(ctx, query)
 		require.NoError(t, err)
 	}
 
@@ -155,7 +154,7 @@ func truncateOnline(t testing.TB, ctx context.Context, connection *pgxpool.Pool)
 			query = "TRUNCATE TABLE user_online_daily_stats;"
 		)
 
-		_, err := connection.Exec(ctx, query)
+		_, err := connection.ExecContext(ctx, query)
 		require.NoError(t, err)
 	}
 
@@ -165,23 +164,25 @@ func truncateOnline(t testing.TB, ctx context.Context, connection *pgxpool.Pool)
 			query = "TRUNCATE TABLE user_online_daily_count_stats;"
 		)
 
-		_, err := connection.Exec(ctx, query)
+		_, err := connection.ExecContext(ctx, query)
 		require.NoError(t, err)
 	}
 }
 
-func expectedHourlyStats(t *testing.T, ctx context.Context, connection *pgxpool.Pool, expectedPairs []UserOnlinePair) {
+func expectedHourlyStats(t *testing.T, ctx context.Context, connection *sql.DB, expectedPairs []UserOnlinePair) {
 	t.Helper()
 
-	repository := NewDatabase(connection)
-	actualPairs, err := repository.Queries().UserOnlineHourlyStats(ctx)
+	database, err := NewDatabase(connection)
 	require.NoError(t, err)
+	defer database.Queries().Close()
+
+	actualPairs, err := database.Queries().UserOnlineHourlyStats(ctx)
 
 	hourlyActualPairs := make([]UserOnlinePair, len(actualPairs))
 	for i, pair := range actualPairs {
 		hourlyActualPairs[i] = UserOnlinePair{
 			UserID: pair.UserID,
-			Online: truncate(pair.CreatedAt.Time.Unix(), hour),
+			Online: truncate(pair.CreatedAt.Unix(), hour),
 		}
 	}
 

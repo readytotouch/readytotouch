@@ -50,6 +50,7 @@ CREATE TABLE user_social_profile_change_history
     user_social_profile_id BIGINT    NOT NULL REFERENCES user_social_profiles (id),
     email                  VARCHAR   NOT NULL, -- erase on soft delete
     username               VARCHAR   NOT NULL, -- erase on soft delete
+    name                   VARCHAR   NOT NULL, -- erase on soft delete
     created_at             TIMESTAMP NOT NULL,
     deleted_at             TIMESTAMP NULL
 );

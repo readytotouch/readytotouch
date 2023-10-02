@@ -1,4 +1,4 @@
-{% func Online(socialUserProfiles []SocialUserProfile) %}
+{% func Online(headerProfiles []SocialProviderUser, socialProviderUsers []SocialProviderUser) %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,7 +18,7 @@
     {%= onlineStyles() %}
 </head>
 <body>
-{%= header() %}
+{%= header(headerProfiles) %}
 <main class="main-wrapper">
 <section class="hero">
     <div class="hero__wrapper">
@@ -34,14 +34,14 @@
             </a>
         </div>
         <div class="hero__main">
-            <h1 class="hero__title">Anonymous job search</h1>
+            <h1 class="hero__title">Anonymous work search</h1>
             <p class="hero__subtitle">Tracking registrations and online users of the platform. Sign in with GitHub or GitLab to support the project</p>
         </div>
         <div class="hero__buttons-group">
-            <a href="#" class="hero__button">
+            <a href="/auth/github" class="hero__button">
                 <img src="/assets/images/pages/online/github-white.svg" alt="GitHub" class="button-icon">Log in with GitHub
             </a>
-            <a href="#" class="hero__button">
+            <a href="/auth/gitlab" class="hero__button">
                 <img src="/assets/images/pages/online/gitlab.png" alt="GitLab" class="hero__button-icon">Log in with GitLab
             </a>
         </div>
@@ -49,7 +49,7 @@
 </section>
 <div class="container">
     {%= stats() %}
-    {%= registrationHistory(socialUserProfiles) %}
+    {%= registrationHistory(socialProviderUsers) %}
     {%= projects() %}
     {%= articles() %}
 </div>

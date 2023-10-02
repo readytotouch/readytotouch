@@ -1,30 +1,42 @@
 package main
 
 import (
-	"context"
 	"net/http"
+	"os"
 	"strings"
 
+	"golang.org/x/oauth2"
+	"golang.org/x/oauth2/bitbucket"
+	"golang.org/x/oauth2/github"
+	"golang.org/x/oauth2/gitlab"
+
+	"github.com/readytotouch-yaaws/yaaws-go/internal/auth"
 	"github.com/readytotouch-yaaws/yaaws-go/internal/db/postgres"
 	"github.com/readytotouch-yaaws/yaaws-go/internal/env"
 	"github.com/readytotouch-yaaws/yaaws-go/internal/server"
 
+	pkgBitbucket "github.com/readytotouch-yaaws/yaaws-go/internal/oauth-providers/bitbucket"
+	pkgGitHub "github.com/readytotouch-yaaws/yaaws-go/internal/oauth-providers/github"
+	pkgGitLab "github.com/readytotouch-yaaws/yaaws-go/internal/oauth-providers/gitlab"
 	pkgOnline "github.com/readytotouch-yaaws/yaaws-go/internal/online"
-	pkgUser "github.com/readytotouch-yaaws/yaaws-go/internal/user"
+	pkgUsers "github.com/readytotouch-yaaws/yaaws-go/internal/users"
 
 	"github.com/gin-contrib/gzip"
 	"github.com/gin-gonic/gin"
+
+	_ "github.com/lib/pq"
 )
 
 func main() {
 	var (
-		dsn = env.Must("POSTGRES_DSN")
+		dsn = env.Required("POSTGRES_DSN")
 	)
 
-	pgConnection := postgres.MustConnection(context.Background(), dsn)
+	pgConnection := postgres.MustConnection(dsn)
 	defer pgConnection.Close()
 
-	database := postgres.NewDatabase(pgConnection)
+	database := postgres.MustDatabase(pgConnection)
+	defer database.Queries().Close()
 
 	r := gin.New()
 	r.Use(redirectFromWWW())
@@ -36,13 +48,49 @@ func main() {
 	)
 
 	var (
-		userController   = pkgUser.NewController(userRepository)
+		githubOAuthProvider = pkgGitHub.NewGithubOAuthProvider(&oauth2.Config{
+			ClientID:     os.Getenv("GITHUB_CLIENT_ID"),
+			ClientSecret: os.Getenv("GITHUB_CLIENT_SECRET"),
+			RedirectURL:  os.Getenv("GITHUB_REDIRECT_URL"),
+			Endpoint:     github.Endpoint,
+			Scopes:       []string{"user:email"},
+		})
+
+		gitlabOAuthProvider = pkgGitLab.NewGitlabOAuthProvider(&oauth2.Config{
+			ClientID:     os.Getenv("GITLAB_CLIENT_ID"),
+			ClientSecret: os.Getenv("GITLAB_CLIENT_SECRET"),
+			RedirectURL:  os.Getenv("GITLAB_REDIRECT_URL"),
+			Endpoint:     gitlab.Endpoint,
+			Scopes:       []string{"read_user"},
+		})
+
+		bitbucketOAuthProvider = pkgBitbucket.NewBitbucketOAuthProvider(&oauth2.Config{
+			ClientID:     os.Getenv("BITBUCKET_CLIENT_ID"),
+			ClientSecret: os.Getenv("BITBUCKET_CLIENT_SECRET"),
+			RedirectURL:  os.Getenv("BITBUCKET_REDIRECT_URL"),
+			Endpoint:     bitbucket.Endpoint,
+			Scopes:       nil, // Scopes are defined on the client/consumer instance.
+		})
+	)
+
+	var (
+		authController   = auth.NewController(userRepository, githubOAuthProvider, gitlabOAuthProvider, bitbucketOAuthProvider)
+		userController   = pkgUsers.NewController(userRepository)
 		onlineController = pkgOnline.NewController(userRepository, onlineRepository)
 	)
 
 	r.GET("/", onlineController.Index)
 	r.GET("/api/v1/users/registration/stats/daily.json", userController.RegistrationDailyCountStats)
 	r.GET("/api/v1/users/online/stats/daily.json", onlineController.DailyCountStats)
+
+	r.
+		GET("/auth/github", authController.GithubRedirect).
+		GET("/auth/gitlab", authController.GitlabRedirect).
+		GET("/auth/bitbucket", authController.BitbucketRedirect).
+		GET("/auth/github/callback", authController.GithubCallback).
+		GET("/auth/gitlab/callback", authController.GitlabCallback).
+		GET("/auth/bitbucket/callback", authController.BitbucketCallback).
+		GET("/logout", authController.Logout)
 
 	r.
 		StaticFile("/design", "./public/design/online.html").

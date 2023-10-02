@@ -25,18 +25,19 @@ go.work
 
 # Go
 vendor
+yaaws-server
 
 # TypeScript
 client/node_modules
 client/package-lock.json
 
-# temporary solution
+# Temporary solution
 public/assets/js/online-stats-app.js
 
 # Database volume
 .docker/volumes
 
-# temporary scripts
+# Temporary scripts
 private
 
 .env
