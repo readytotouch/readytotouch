@@ -3,6 +3,7 @@ package bitbucket
 import (
 	"encoding/json"
 	"net/http"
+	"strings"
 	"sync"
 
 	"golang.org/x/oauth2"
@@ -73,7 +74,7 @@ func (p *BitbucketOAuthProvider) GetUser(accessToken string) (*domain.OAuthProvi
 		ID:       userResponse.UUID,
 		Email:    verifyEmail,
 		Username: userResponse.Username,
-		Name:     userResponse.DisplayName,
+		Name:     strings.TrimSpace(userResponse.DisplayName),
 	}, nil
 }
 

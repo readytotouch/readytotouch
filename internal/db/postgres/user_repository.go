@@ -44,15 +44,15 @@ func (r *UserRepository) Create(ctx context.Context, params *domain.SocialProvid
 	)
 
 	txErr := r.db.WithTransaction(ctx, func(queries *dbs.Queries) error {
-		row, err := queries.UserSocialProfileGetByID(ctx, dbs.UserSocialProfileGetByIDParams{
+		prev, err := queries.UserSocialProfileGetByID(ctx, dbs.UserSocialProfileGetByIDParams{
 			SocialProvider:       dbs.SocialProvider(params.SocialProvider),
 			SocialProviderUserID: params.SocialProviderUserID,
 		})
 		switch err {
 		case nil:
-			userID = row.UserID
+			userID = prev.UserID
 
-			return r.update(ctx, queries, params, row, now)
+			return r.update(ctx, queries, params, prev, now)
 		case sql.ErrNoRows:
 			id, err := r.create(ctx, queries, params, now)
 			if err != nil {
@@ -115,20 +115,20 @@ func (r *UserRepository) SocialUserProfiles(ctx context.Context, limit int32) ([
 	return result, nil
 }
 
-func (r *UserRepository) update(ctx context.Context, queries *dbs.Queries, params *domain.SocialProviderUserCreateParams, row dbs.UserSocialProfileGetByIDRow, now time.Time) error {
-	sensitivitySame := strings.EqualFold(params.Email, row.Email) &&
-		params.Username == row.Username &&
-		params.Name == row.Name
+func (r *UserRepository) update(ctx context.Context, queries *dbs.Queries, params *domain.SocialProviderUserCreateParams, prev dbs.UserSocialProfileGetByIDRow, now time.Time) error {
+	sensitivitySame := strings.EqualFold(params.Email, prev.Email) &&
+		params.Username == prev.Username &&
+		params.Name == prev.Name
 	if sensitivitySame {
 		return nil
 	}
 
 	err := queries.UserSocialProfileUpdate(ctx, dbs.UserSocialProfileUpdateParams{
-		Email:     row.Email,
-		Username:  row.Username,
-		Name:      row.Name,
+		Email:     params.Email,
+		Username:  params.Username,
+		Name:      params.Name,
 		UpdatedAt: now,
-		ID:        row.ID,
+		ID:        prev.ID,
 	})
 	if err != nil {
 		return err
@@ -136,22 +136,22 @@ func (r *UserRepository) update(ctx context.Context, queries *dbs.Queries, param
 
 	err = queries.UsersUpdate(ctx, dbs.UsersUpdateParams{
 		UpdatedAt: now,
-		ID:        row.UserID,
+		ID:        prev.UserID,
 	})
 	if err != nil {
 		return err
 	}
 
-	insensitivitySame := strings.EqualFold(params.Email, row.Email) &&
-		strings.EqualFold(params.Username, row.Username) &&
-		strings.EqualFold(params.Name, row.Name)
+	insensitivitySame := strings.EqualFold(params.Email, prev.Email) &&
+		strings.EqualFold(params.Username, prev.Username) &&
+		strings.EqualFold(params.Name, prev.Name)
 	if insensitivitySame {
 		return nil
 	}
 
 	err = queries.UserSocialProfileChangeHistoryNew(ctx, dbs.UserSocialProfileChangeHistoryNewParams{
-		UserID:              row.UserID,
-		UserSocialProfileID: row.ID,
+		UserID:              prev.UserID,
+		UserSocialProfileID: prev.ID,
 		Email:               params.Email,
 		Username:            params.Username,
 		Name:                params.Name,

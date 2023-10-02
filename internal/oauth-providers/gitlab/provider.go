@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 	"strconv"
+	"strings"
 
 	"golang.org/x/oauth2"
 
@@ -48,6 +49,7 @@ func (p *GitlabOAuthProvider) GetUser(accessToken string) (*domain.OAuthProvider
 		ID:       strconv.FormatUint(userResponse.ID, 10),
 		Email:    userResponse.Email,
 		Username: userResponse.Username,
+		Name:     strings.TrimSpace(userResponse.Name),
 	}, nil
 }
 

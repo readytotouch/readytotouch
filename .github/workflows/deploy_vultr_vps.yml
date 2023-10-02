@@ -22,6 +22,7 @@ jobs:
           script: |
             cd /var/go/readytotouch/
             git pull
+            go mod vendor
             make env-up
             make migrate-pgsql-up
             make app-restart

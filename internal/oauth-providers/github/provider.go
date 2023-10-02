@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 	"strconv"
+	"strings"
 	"sync"
 
 	"golang.org/x/oauth2"
@@ -74,7 +75,7 @@ func (p *GithubOAuthProvider) GetUser(accessToken string) (*domain.OAuthProvider
 		ID:       strconv.FormatUint(userResponse.ID, 10),
 		Email:    verifyEmail,
 		Username: userResponse.Login,
-		Name:     userResponse.Name,
+		Name:     strings.TrimSpace(userResponse.Name),
 	}, nil
 }
 
