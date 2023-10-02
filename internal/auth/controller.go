@@ -4,7 +4,6 @@ import (
 	"crypto/rand"
 	"encoding/base64"
 	"net/http"
-	"strconv"
 
 	"github.com/readytotouch-yaaws/yaaws-go/internal/db/postgres"
 	"github.com/readytotouch-yaaws/yaaws-go/internal/domain"
@@ -137,7 +136,10 @@ func (c *Controller) callback(ctx *gin.Context, provider domain.OAuthProvider) {
 		return
 	}
 
-	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(strconv.FormatInt(userID, 10)))
+	// @TODO set to JWT token
+	_ = userID
+
+	ctx.Redirect(http.StatusFound, "/")
 }
 
 func (c *Controller) getStateCookieName() string {

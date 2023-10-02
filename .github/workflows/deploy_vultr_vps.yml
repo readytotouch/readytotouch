@@ -25,4 +25,6 @@ jobs:
             go mod vendor
             make env-up
             make migrate-pgsql-up
-            make app-restart
+            docker exec readytotouch_go_app go build -o /bin/yaaws-server ./cmd/main.go
+            docker exec readytotouch_go_app pkill yaaws-server || echo "yaaws-server already stopped"
+            docker exec readytotouch_go_app yaaws-server &

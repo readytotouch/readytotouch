@@ -20,7 +20,7 @@
                     <span class="history__user-name">{%s SocialProviderUserName(profile) %}</span>
                 </div>
                 <a href="https://github.com/{%s profile.Username %}" class="history__user-link history__user-item">github.com/{%s profile.Username %}</a>
-                <span class="history__user-date history__user-item">{%s profile.CreatedAt.Format("Januany _2, 2006") %}</span>
+                <span class="history__user-date history__user-item">{%s profile.CreatedAt.Format("January _2, 2006") %}</span>
             </li>
             {% case gitlab %}
             <li class="history__table-user">
@@ -31,7 +31,7 @@
                     <span class="history__user-name">{%s SocialProviderUserName(profile) %}</span>
                 </div>
                 <a href="https://gitlab.com/{%s profile.Username %}" class="history__user-link history__user-item">gitlab.com/{%s profile.Username %}</a>
-                <span class="history__user-date history__user-item">{%s profile.CreatedAt.Format("Januany _2, 2006") %}</span>
+                <span class="history__user-date history__user-item">{%s profile.CreatedAt.Format("January _2, 2006") %}</span>
             </li>
             {% endswitch %}
             {% endfor %}

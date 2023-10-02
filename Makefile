@@ -47,7 +47,6 @@ app-start:
 	docker exec readytotouch_go_app yaaws-server
 
 app-stop:
-	docker exec readytotouch_go_app pkill go || echo "go already stopped" # delete after first deploy
 	docker exec readytotouch_go_app pkill yaaws-server || echo "yaaws-server already stopped"
 
 app-restart: app-build app-stop app-start

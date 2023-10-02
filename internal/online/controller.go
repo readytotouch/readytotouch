@@ -22,11 +22,11 @@ func NewController(userRepository *postgres.UserRepository, onlineRepository *po
 
 func (c *Controller) Index(ctx *gin.Context) {
 	const (
-		// @TODO get user ID from ctx
-		authUserID = 1
+		// @TODO get user ID from JWT token
+		authUserID = 0
 	)
 
-	headerProfiles, err := c.userRepository.SocialUserProfilesByUser(ctx, authUserID)
+	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)
 	if err != nil {
 		// @TODO logging
 
@@ -57,4 +57,12 @@ func (c *Controller) DailyCountStats(ctx *gin.Context) {
 	}
 
 	ctx.JSON(http.StatusOK, stats)
+}
+
+func (c *Controller) getHeaderProfiles(ctx *gin.Context, userID int64) ([]domain.SocialProviderUser, error) {
+	if userID > 0 {
+		return c.userRepository.SocialUserProfilesByUser(ctx, userID)
+	}
+
+	return nil, nil
 }

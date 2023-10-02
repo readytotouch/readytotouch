@@ -52,7 +52,7 @@ func streamregistrationHistory(qw422016 *qt422016.Writer, socialProviderUsers []
 				qw422016.E().S(profile.Username)
 				qw422016.N().S(`</a>
                 <span class="history__user-date history__user-item">`)
-				qw422016.E().S(profile.CreatedAt.Format("Januany _2, 2006"))
+				qw422016.E().S(profile.CreatedAt.Format("January _2, 2006"))
 				qw422016.N().S(`</span>
             </li>
             `)
@@ -75,7 +75,7 @@ func streamregistrationHistory(qw422016 *qt422016.Writer, socialProviderUsers []
 				qw422016.E().S(profile.Username)
 				qw422016.N().S(`</a>
                 <span class="history__user-date history__user-item">`)
-				qw422016.E().S(profile.CreatedAt.Format("Januany _2, 2006"))
+				qw422016.E().S(profile.CreatedAt.Format("January _2, 2006"))
 				qw422016.N().S(`</span>
             </li>
             `)
