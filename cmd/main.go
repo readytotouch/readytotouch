@@ -1,7 +1,6 @@
 package main
 
 import (
-	"context"
 	"net/http"
 	"os"
 	"strings"
@@ -24,6 +23,8 @@ import (
 
 	"github.com/gin-contrib/gzip"
 	"github.com/gin-gonic/gin"
+
+	_ "github.com/lib/pq"
 )
 
 func main() {
@@ -31,10 +32,11 @@ func main() {
 		dsn = env.Required("POSTGRES_DSN")
 	)
 
-	pgConnection := postgres.MustConnection(context.Background(), dsn)
+	pgConnection := postgres.MustConnection(dsn)
 	defer pgConnection.Close()
 
-	database := postgres.NewDatabase(pgConnection)
+	database := postgres.MustDatabase(pgConnection)
+	defer database.Queries().Close()
 
 	r := gin.New()
 	r.Use(redirectFromWWW())

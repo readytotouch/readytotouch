@@ -6,8 +6,6 @@ import (
 
 	"github.com/readytotouch-yaaws/yaaws-go/internal/domain"
 	"github.com/readytotouch-yaaws/yaaws-go/internal/storage/postgres/dbs"
-
-	"github.com/jackc/pgx/v5/pgtype"
 )
 
 type OnlineRepository struct {
@@ -24,14 +22,8 @@ func (r *OnlineRepository) DailyCountStats(
 	to time.Time,
 ) ([]domain.TimeCountStats, error) {
 	rows, err := r.db.Queries().UserOnlineDailyCountStats(ctx, dbs.UserOnlineDailyCountStatsParams{
-		From: pgtype.Date{
-			Time:  from,
-			Valid: true,
-		},
-		To: pgtype.Date{
-			Time:  to,
-			Valid: true,
-		},
+		From: from,
+		To:   to,
 	})
 	if err != nil {
 		return nil, err
@@ -40,7 +32,7 @@ func (r *OnlineRepository) DailyCountStats(
 	result := make([]domain.TimeCountStats, len(rows))
 	for i, row := range rows {
 		result[i] = domain.TimeCountStats{
-			Time:  row.Day.Time,
+			Time:  row.Day,
 			Count: row.UserCount,
 		}
 	}

@@ -2,31 +2,40 @@ package postgres
 
 import (
 	"context"
+	"database/sql"
 
 	"github.com/readytotouch-yaaws/yaaws-go/internal/storage/postgres/dbs"
-
-	"github.com/jackc/pgx/v5"
-	"github.com/jackc/pgx/v5/pgxpool"
 )
 
 // Database - repository
 type Database struct {
-	connection *pgxpool.Pool
+	connection *sql.DB
 	queries    *dbs.Queries
 }
 
 // NewDatabase - constructor
-func NewDatabase(connection *pgxpool.Pool) *Database {
-	var queries = dbs.New(connection)
+func NewDatabase(connection *sql.DB) (*Database, error) {
+	var queries, err = dbs.Prepare(context.Background(), connection)
+	if err != nil {
+		return nil, err
+	}
 
 	return &Database{
 		connection: connection,
 		queries:    queries,
+	}, err
+}
+
+func MustDatabase(connection *sql.DB) *Database {
+	var repository, err = NewDatabase(connection)
+	if err != nil {
+		panic(err)
 	}
+	return repository
 }
 
 // Connection - getter
-func (r *Database) Connection() *pgxpool.Pool {
+func (r *Database) Connection() *sql.DB {
 	return r.connection
 }
 
@@ -40,8 +49,8 @@ func (r *Database) WithTransaction(ctx context.Context, fn func(queries *dbs.Que
 	return withTransaction(ctx, r.connection, r.queries, fn)
 }
 
-func withTransaction(ctx context.Context, db *pgxpool.Pool, queries *dbs.Queries, fn func(queries *dbs.Queries) error) (err error) {
-	tx, err := db.BeginTx(ctx, pgx.TxOptions{})
+func withTransaction(ctx context.Context, db *sql.DB, queries *dbs.Queries, fn func(queries *dbs.Queries) error) (err error) {
+	tx, err := db.BeginTx(ctx, nil)
 	if err != nil {
 		return
 	}
@@ -49,15 +58,15 @@ func withTransaction(ctx context.Context, db *pgxpool.Pool, queries *dbs.Queries
 	defer func() {
 		if p := recover(); p != nil {
 			// a panic occurred, rollback and repanic
-			tx.Rollback(ctx)
+			tx.Rollback()
 
 			panic(p)
 		} else if err != nil {
 			// something went wrong, rollback
-			tx.Rollback(ctx)
+			tx.Rollback()
 		} else {
 			// all good, commit
-			err = tx.Commit(ctx)
+			err = tx.Commit()
 		}
 	}()
 

@@ -1,12 +1,9 @@
 package postgres
 
 import (
-	"context"
 	"testing"
 
 	"github.com/readytotouch-yaaws/yaaws-go/internal/env"
-
-	"github.com/jackc/pgx/v5/pgxpool"
 
 	"github.com/stretchr/testify/require"
 )
@@ -16,13 +13,15 @@ func TestBatchUpdateOnlineStorage(t *testing.T) {
 		t.Skip()
 	}
 
-	ctx := context.Background()
-
-	connection, err := pgxpool.New(ctx, env.Required("POSTGRES_DSN"))
+	pgConnection, err := Connection(env.Required("POSTGRES_DSN"))
 	require.NoError(t, err)
-	defer connection.Close()
+	defer pgConnection.Close()
 
-	storage := NewBatchUpdateOnlineStorage(NewDatabase(connection))
+	database, err := NewDatabase(pgConnection)
+	require.NoError(t, err)
+	defer database.Queries().Close()
+
+	storage := NewBatchUpdateOnlineStorage(database)
 
 	testOnlineStorage(t, storage)
 }
@@ -32,13 +31,15 @@ func BenchmarkBatchUpdateOnlineStorage(b *testing.B) {
 		b.Skip()
 	}
 
-	ctx := context.Background()
-
-	connection, err := pgxpool.New(ctx, env.Required("POSTGRES_DSN"))
+	pgConnection, err := Connection(env.Required("POSTGRES_DSN"))
 	require.NoError(b, err)
-	defer connection.Close()
+	defer pgConnection.Close()
 
-	storage := NewBatchUpdateOnlineStorage(NewDatabase(connection))
+	database, err := NewDatabase(pgConnection)
+	require.NoError(b, err)
+	defer database.Queries().Close()
+
+	storage := NewBatchUpdateOnlineStorage(database)
 
 	benchmarkOnlineStorage(b, storage)
 }

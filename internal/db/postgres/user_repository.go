@@ -8,8 +8,6 @@ import (
 
 	"github.com/readytotouch-yaaws/yaaws-go/internal/domain"
 	"github.com/readytotouch-yaaws/yaaws-go/internal/storage/postgres/dbs"
-
-	"github.com/jackc/pgx/v5/pgtype"
 )
 
 type UserRepository struct {
@@ -33,7 +31,7 @@ func (r *UserRepository) SocialUserProfilesByUser(ctx context.Context, id int64)
 			SocialProviderUserID: row.SocialProviderUserID,
 			Username:             row.Username,
 			Name:                 row.Name,
-			CreatedAt:            row.CreatedAt.Time,
+			CreatedAt:            row.CreatedAt,
 		}
 	}
 	return result, nil
@@ -81,14 +79,8 @@ func (r *UserRepository) RegistrationDailyCountStats(
 	to time.Time,
 ) ([]domain.TimeCountStats, error) {
 	rows, err := r.db.Queries().UserRegistrationDailyCountStats(ctx, dbs.UserRegistrationDailyCountStatsParams{
-		From: pgtype.Date{
-			Time:  from,
-			Valid: true,
-		},
-		To: pgtype.Date{
-			Time:  to,
-			Valid: true,
-		},
+		From: from,
+		To:   to,
 	})
 	if err != nil {
 		return nil, err
@@ -97,7 +89,7 @@ func (r *UserRepository) RegistrationDailyCountStats(
 	result := make([]domain.TimeCountStats, len(rows))
 	for i, row := range rows {
 		result[i] = domain.TimeCountStats{
-			Time:  row.Day.Time,
+			Time:  row.Day,
 			Count: row.UserCount,
 		}
 	}
@@ -117,7 +109,7 @@ func (r *UserRepository) SocialUserProfiles(ctx context.Context, limit int32) ([
 			SocialProviderUserID: row.SocialProviderUserID,
 			Username:             row.Username,
 			Name:                 row.Name,
-			CreatedAt:            row.CreatedAt.Time,
+			CreatedAt:            row.CreatedAt,
 		}
 	}
 	return result, nil
@@ -132,25 +124,19 @@ func (r *UserRepository) update(ctx context.Context, queries *dbs.Queries, param
 	}
 
 	err := queries.UserSocialProfileUpdate(ctx, dbs.UserSocialProfileUpdateParams{
-		Email:    row.Email,
-		Username: row.Username,
-		Name:     row.Name,
-		UpdatedAt: pgtype.Timestamp{
-			Time:  now,
-			Valid: true,
-		},
-		ID: row.ID,
+		Email:     row.Email,
+		Username:  row.Username,
+		Name:      row.Name,
+		UpdatedAt: now,
+		ID:        row.ID,
 	})
 	if err != nil {
 		return err
 	}
 
 	err = queries.UsersUpdate(ctx, dbs.UsersUpdateParams{
-		UpdatedAt: pgtype.Timestamp{
-			Time:  now,
-			Valid: true,
-		},
-		ID: row.UserID,
+		UpdatedAt: now,
+		ID:        row.UserID,
 	})
 	if err != nil {
 		return err
@@ -169,10 +155,7 @@ func (r *UserRepository) update(ctx context.Context, queries *dbs.Queries, param
 		Email:               params.Email,
 		Username:            params.Username,
 		Name:                params.Name,
-		CreatedAt: pgtype.Timestamp{
-			Time:  now,
-			Valid: true,
-		},
+		CreatedAt:           now,
 	})
 	if err != nil {
 		return err
@@ -192,10 +175,7 @@ func (r *UserRepository) create(ctx context.Context, queries *dbs.Queries, param
 
 		return userID, nil
 	case sql.ErrNoRows:
-		userID, err = queries.UsersNew(ctx, pgtype.Timestamp{
-			Time:  now,
-			Valid: true,
-		})
+		userID, err = queries.UsersNew(ctx, now)
 		if err != nil {
 			return 0, err
 		}
@@ -219,10 +199,7 @@ func (r *UserRepository) createUserSocialProfile(ctx context.Context, queries *d
 		Email:                params.Email,
 		Username:             params.Username,
 		Name:                 params.Name,
-		CreatedAt: pgtype.Timestamp{
-			Time:  now,
-			Valid: true,
-		},
+		CreatedAt:            now,
 	})
 	if err != nil {
 		return err
@@ -234,10 +211,7 @@ func (r *UserRepository) createUserSocialProfile(ctx context.Context, queries *d
 		Email:               params.Email,
 		Username:            params.Username,
 		Name:                params.Name,
-		CreatedAt: pgtype.Timestamp{
-			Time:  now,
-			Valid: true,
-		},
+		CreatedAt:           now,
 	})
 	if err != nil {
 		return err
