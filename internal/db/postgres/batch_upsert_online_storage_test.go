@@ -21,7 +21,7 @@ func TestBatchUpdateOnlineStorage(t *testing.T) {
 	require.NoError(t, err)
 	defer database.Queries().Close()
 
-	storage := NewBatchUpdateOnlineStorage(database)
+	storage := NewBatchUpsertOnlineStorage(database)
 
 	testOnlineStorage(t, storage)
 }
@@ -39,7 +39,7 @@ func BenchmarkBatchUpdateOnlineStorage(b *testing.B) {
 	require.NoError(b, err)
 	defer database.Queries().Close()
 
-	storage := NewBatchUpdateOnlineStorage(database)
+	storage := NewBatchUpsertOnlineStorage(database)
 
 	benchmarkOnlineStorage(b, storage)
 }

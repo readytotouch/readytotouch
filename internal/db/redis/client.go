@@ -20,3 +20,11 @@ func Client(ctx context.Context, addr string) (*redis.Client, error) {
 
 	return client, nil
 }
+
+func MustClient(ctx context.Context, addr string) *redis.Client {
+	client, err := Client(ctx, addr)
+	if err != nil {
+		panic(err)
+	}
+	return client
+}

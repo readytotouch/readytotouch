@@ -1,9 +1,11 @@
 package main
 
 import (
+	"context"
 	"net/http"
 	"os"
 	"strings"
+	"time"
 
 	"golang.org/x/oauth2"
 	"golang.org/x/oauth2/bitbucket"
@@ -12,6 +14,7 @@ import (
 
 	"github.com/readytotouch-yaaws/yaaws-go/internal/auth"
 	"github.com/readytotouch-yaaws/yaaws-go/internal/db/postgres"
+	"github.com/readytotouch-yaaws/yaaws-go/internal/db/redis"
 	"github.com/readytotouch-yaaws/yaaws-go/internal/domain"
 	"github.com/readytotouch-yaaws/yaaws-go/internal/env"
 	"github.com/readytotouch-yaaws/yaaws-go/internal/server"
@@ -41,9 +44,16 @@ func main() {
 	database := postgres.MustDatabase(pgConnection)
 	defer database.Queries().Close()
 
+	redisClient := redis.MustClient("redis:6379")
+
 	var (
 		userRepository   = postgres.NewUserRepository(database)
 		onlineRepository = postgres.NewOnlineRepository(database)
+	)
+
+	var (
+		onlineRedisStorage    = redis.NewHashOnlineStorage(redisClient)
+		onlinePostgresStorage = postgres.NewBatchUpsertOnlineStorage(database)
 	)
 
 	var (
@@ -104,7 +114,23 @@ func main() {
 	})
 	r.Use(gzip.Gzip(gzip.DefaultCompression))
 
-	r.GET("/", onlineController.Index)
+	r.
+		Use(func(ctx *gin.Context) {
+			userID := domain.ContextGetUserID(ctx)
+			if userID > 0 {
+				err := onlineRedisStorage.Store(context.Background(), domain.UserOnlinePair{
+					UserID:    userID,
+					Timestamp: time.Now().Unix(),
+				})
+				if err != nil {
+					// NOP
+				}
+			}
+
+			ctx.Next()
+		}).
+		GET("/", onlineController.Index)
+
 	r.GET("/api/v1/users/registration/stats/daily.json", userController.RegistrationDailyCountStats)
 	r.GET("/api/v1/users/online/stats/daily.json", onlineController.DailyCountStats)
 
@@ -166,6 +192,27 @@ func main() {
 		StaticFile("/robots.txt", "./public/robots.txt").
 		StaticFile("/manifest.json", "./public/manifest.json").
 		StaticFile("/browserconfig.xml", "./public/browserconfig.xml")
+
+	{
+		// very fast solution
+		go func() {
+			for range time.Tick(time.Minute) {
+				pairs, err := onlineRedisStorage.GetAndClear(context.Background())
+				if err != nil {
+					// NOP
+
+					continue
+				}
+
+				err = onlinePostgresStorage.BatchStore(context.Background(), pairs)
+				if err != nil {
+					// NOP
+
+					continue
+				}
+			}
+		}()
+	}
 
 	server.Run(r.Handler())
 }
