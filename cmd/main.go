@@ -12,9 +12,11 @@ import (
 
 	"github.com/readytotouch-yaaws/yaaws-go/internal/auth"
 	"github.com/readytotouch-yaaws/yaaws-go/internal/db/postgres"
+	"github.com/readytotouch-yaaws/yaaws-go/internal/domain"
 	"github.com/readytotouch-yaaws/yaaws-go/internal/env"
 	"github.com/readytotouch-yaaws/yaaws-go/internal/server"
 
+	pkgJWT "github.com/readytotouch-yaaws/yaaws-go/internal/jwt"
 	pkgBitbucket "github.com/readytotouch-yaaws/yaaws-go/internal/oauth-providers/bitbucket"
 	pkgGitHub "github.com/readytotouch-yaaws/yaaws-go/internal/oauth-providers/github"
 	pkgGitLab "github.com/readytotouch-yaaws/yaaws-go/internal/oauth-providers/gitlab"
@@ -29,7 +31,8 @@ import (
 
 func main() {
 	var (
-		dsn = env.Required("POSTGRES_DSN")
+		dsn          = env.Required("POSTGRES_DSN")
+		jwtSecretKey = env.Required("JWT_SECRET_KEY")
 	)
 
 	pgConnection := postgres.MustConnection(dsn)
@@ -37,10 +40,6 @@ func main() {
 
 	database := postgres.MustDatabase(pgConnection)
 	defer database.Queries().Close()
-
-	r := gin.New()
-	r.Use(redirectFromWWW())
-	r.Use(gzip.Gzip(gzip.DefaultCompression))
 
 	var (
 		userRepository   = postgres.NewUserRepository(database)
@@ -74,10 +73,36 @@ func main() {
 	)
 
 	var (
-		authController   = auth.NewController(userRepository, githubOAuthProvider, gitlabOAuthProvider, bitbucketOAuthProvider)
+		jwtService = pkgJWT.NewService(jwtSecretKey, 2*30*24*3600)
+	)
+
+	var (
+		authController = auth.NewController(
+			userRepository,
+			githubOAuthProvider,
+			gitlabOAuthProvider,
+			bitbucketOAuthProvider,
+			jwtService,
+		)
 		userController   = pkgUsers.NewController(userRepository)
 		onlineController = pkgOnline.NewController(userRepository, onlineRepository)
 	)
+
+	r := gin.New()
+	r.Use(redirectFromWWW())
+	r.Use(func(ctx *gin.Context) {
+		user, err := jwtService.ParseToken(ctx)
+		if err != nil {
+			// NOP,
+
+			ctx.Next()
+		}
+
+		domain.ContextSetUser(ctx, user)
+
+		ctx.Next()
+	})
+	r.Use(gzip.Gzip(gzip.DefaultCompression))
 
 	r.GET("/", onlineController.Index)
 	r.GET("/api/v1/users/registration/stats/daily.json", userController.RegistrationDailyCountStats)

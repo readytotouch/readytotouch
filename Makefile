@@ -110,7 +110,7 @@ design:
 
 	git add .
 
-# POSTGRES_PASSWORD=$(echo "$RANDOM$RANDOM" | md5sum | head -c 16; echo;) make generate-production-environment-file
+# POSTGRES_PASSWORD=$(echo "$RANDOM$RANDOM" | sha256sum | head -c 32; echo;) JWT_SECRET_KEY=$(echo "$RANDOM$RANDOM" | sha256sum | head -c 32; echo;) make generate-production-environment-file
 generate-production-environment-file:
 	touch .production.env
 
@@ -122,6 +122,8 @@ generate-production-environment-file:
 	grep -qF 'POSTGRES_DB=' .production.env || echo 'POSTGRES_DB="yaaws"' >> .production.env
 	grep -qF 'POSTGRES_DSN=' .production.env || echo 'POSTGRES_DSN="postgresql://u8user:$(POSTGRES_PASSWORD)@postgres:5432/yaaws?sslmode=disable"' >> .production.env
 	grep -qF 'HOSTS=' .production.env || echo 'HOSTS="readytotouch.com,dev.readytotouch.com,www.readytotouch.com"' >> .production.env
+
+	grep -qF 'JWT_SECRET_KEY=' .production.env || echo 'JWT_SECRET_KEY="$(JWT_SECRET_KEY)"' >> .production.env
 
 	grep -qF 'GITHUB_CLIENT_ID=' .production.env || echo 'GITHUB_CLIENT_ID="8dce25b763367e846763"' >> .production.env
 	grep -qF 'GITHUB_CLIENT_SECRET=' .production.env || echo 'GITHUB_CLIENT_SECRET=""' >> .production.env
