@@ -21,9 +21,8 @@ func NewController(userRepository *postgres.UserRepository, onlineRepository *po
 }
 
 func (c *Controller) Index(ctx *gin.Context) {
-	const (
-		// @TODO get user ID from JWT token
-		authUserID = 0
+	var (
+		authUserID = domain.ContextGetUserID(ctx)
 	)
 
 	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)

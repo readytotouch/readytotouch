@@ -17,20 +17,11 @@ type Controller struct {
 	githubOAuthProvider    domain.OAuthProvider
 	gitlabOAuthProvider    domain.OAuthProvider
 	bitbucketOAuthProvider domain.OAuthProvider
+	jwtService             domain.JwtService
 }
 
-func NewController(
-	repository *postgres.UserRepository,
-	githubOAuthProvider domain.OAuthProvider,
-	gitlabOAuthProvider domain.OAuthProvider,
-	bitbucketOAuthProvider domain.OAuthProvider,
-) *Controller {
-	return &Controller{
-		repository:             repository,
-		githubOAuthProvider:    githubOAuthProvider,
-		gitlabOAuthProvider:    gitlabOAuthProvider,
-		bitbucketOAuthProvider: bitbucketOAuthProvider,
-	}
+func NewController(repository *postgres.UserRepository, githubOAuthProvider domain.OAuthProvider, gitlabOAuthProvider domain.OAuthProvider, bitbucketOAuthProvider domain.OAuthProvider, jwtService domain.JwtService) *Controller {
+	return &Controller{repository: repository, githubOAuthProvider: githubOAuthProvider, gitlabOAuthProvider: gitlabOAuthProvider, bitbucketOAuthProvider: bitbucketOAuthProvider, jwtService: jwtService}
 }
 
 func (c *Controller) GithubRedirect(ctx *gin.Context) {
@@ -57,8 +48,10 @@ func (c *Controller) BitbucketCallback(ctx *gin.Context) {
 	c.callback(ctx, c.bitbucketOAuthProvider)
 }
 
-func (c *Controller) Logout(context *gin.Context) {
+func (c *Controller) Logout(ctx *gin.Context) {
+	c.jwtService.RemoveToken(ctx)
 
+	ctx.Redirect(http.StatusFound, "/")
 }
 
 func (c *Controller) redirect(ctx *gin.Context, provider domain.OAuthProvider) {
@@ -136,8 +129,14 @@ func (c *Controller) callback(ctx *gin.Context, provider domain.OAuthProvider) {
 		return
 	}
 
-	// @TODO set to JWT token
-	_ = userID
+	err = c.jwtService.AddToken(ctx, domain.JwtUser{
+		ID: userID,
+	})
+	if err != nil {
+		ctx.Data(http.StatusInternalServerError, "text/html; charset=utf-8", []byte("Cannot generate JWT token"))
+
+		return
+	}
 
 	ctx.Redirect(http.StatusFound, "/")
 }
