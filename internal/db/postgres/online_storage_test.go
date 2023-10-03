@@ -7,6 +7,7 @@ import (
 	"testing"
 	"time"
 
+	"github.com/readytotouch-yaaws/yaaws-go/internal/domain"
 	"github.com/readytotouch-yaaws/yaaws-go/internal/env"
 
 	"github.com/stretchr/testify/require"
@@ -25,32 +26,32 @@ func testOnlineStorage(
 	defer connection.Close()
 
 	var (
-		pair1v1 = UserOnlinePair{
-			UserID: 1,
-			Online: 1679800725,
+		pair1v1 = domain.UserOnlinePair{
+			UserID:    1,
+			Timestamp: 1679800725,
 		}
-		pair2v1 = UserOnlinePair{
-			UserID: 2,
-			Online: 1679800730,
+		pair2v1 = domain.UserOnlinePair{
+			UserID:    2,
+			Timestamp: 1679800730,
 		}
-		pair3v1 = UserOnlinePair{
-			UserID: 3,
-			Online: 1679800735,
+		pair3v1 = domain.UserOnlinePair{
+			UserID:    3,
+			Timestamp: 1679800735,
 		}
-		pair4v1 = UserOnlinePair{
-			UserID: 4,
-			Online: 1679800740,
+		pair4v1 = domain.UserOnlinePair{
+			UserID:    4,
+			Timestamp: 1679800740,
 		}
-		pair5v1 = UserOnlinePair{
-			UserID: 5,
-			Online: 1679800745,
+		pair5v1 = domain.UserOnlinePair{
+			UserID:    5,
+			Timestamp: 1679800745,
 		}
 	)
 
 	truncateOnline(t, ctx, connection)
 
 	{
-		err := storage.BatchStore(ctx, []UserOnlinePair{
+		err := storage.BatchStore(ctx, []domain.UserOnlinePair{
 			pair1v1,
 			pair2v1,
 			pair3v1,
@@ -59,7 +60,7 @@ func testOnlineStorage(
 		})
 		require.NoError(t, err)
 
-		expectedHourlyStats(t, ctx, connection, []UserOnlinePair{
+		expectedHourlyStats(t, ctx, connection, []domain.UserOnlinePair{
 			pair1v1,
 			pair2v1,
 			pair3v1,
@@ -74,13 +75,13 @@ func testOnlineStorage(
 			pair2v2 = incUserOnlinePair(pair2v1, hour+1)
 		)
 
-		err := storage.BatchStore(ctx, []UserOnlinePair{
+		err := storage.BatchStore(ctx, []domain.UserOnlinePair{
 			pair1v2,
 			pair2v2,
 		})
 		require.NoError(t, err)
 
-		expectedHourlyStats(t, ctx, connection, []UserOnlinePair{
+		expectedHourlyStats(t, ctx, connection, []domain.UserOnlinePair{
 			pair1v1,
 			pair2v1,
 			pair2v2, // +
@@ -114,16 +115,16 @@ func benchmarkOnlineStorage(
 		counter        = int64(0)
 	)
 
-	pairs := make([]UserOnlinePair, batch)
+	pairs := make([]domain.UserOnlinePair, batch)
 
 	b.ResetTimer()
 	for i := 0; i < b.N; i++ {
 		index := atomic.AddInt64(&counter, batch)
 
 		for j := 0; j < batch; j++ {
-			pairs[j] = UserOnlinePair{
-				UserID: int64(i*batch + j + 1), // 0 .. 99, 100 .. 199
-				Online: startTimestamp + index,
+			pairs[j] = domain.UserOnlinePair{
+				UserID:    int64(i*batch + j + 1), // 0 .. 99, 100 .. 199
+				Timestamp: startTimestamp + index,
 			}
 		}
 
@@ -169,7 +170,7 @@ func truncateOnline(t testing.TB, ctx context.Context, connection *sql.DB) {
 	}
 }
 
-func expectedHourlyStats(t *testing.T, ctx context.Context, connection *sql.DB, expectedPairs []UserOnlinePair) {
+func expectedHourlyStats(t *testing.T, ctx context.Context, connection *sql.DB, expectedPairs []domain.UserOnlinePair) {
 	t.Helper()
 
 	database, err := NewDatabase(connection)
@@ -178,19 +179,19 @@ func expectedHourlyStats(t *testing.T, ctx context.Context, connection *sql.DB, 
 
 	actualPairs, err := database.Queries().UserOnlineHourlyStats(ctx)
 
-	hourlyActualPairs := make([]UserOnlinePair, len(actualPairs))
+	hourlyActualPairs := make([]domain.UserOnlinePair, len(actualPairs))
 	for i, pair := range actualPairs {
-		hourlyActualPairs[i] = UserOnlinePair{
-			UserID: pair.UserID,
-			Online: truncate(pair.CreatedAt.Unix(), hour),
+		hourlyActualPairs[i] = domain.UserOnlinePair{
+			UserID:    pair.UserID,
+			Timestamp: truncate(pair.CreatedAt.Unix(), hour),
 		}
 	}
 
-	hourlyExpectedPairs := make([]UserOnlinePair, len(expectedPairs))
+	hourlyExpectedPairs := make([]domain.UserOnlinePair, len(expectedPairs))
 	for i, pair := range expectedPairs {
-		hourlyExpectedPairs[i] = UserOnlinePair{
-			UserID: pair.UserID,
-			Online: truncate(pair.Online, hour),
+		hourlyExpectedPairs[i] = domain.UserOnlinePair{
+			UserID:    pair.UserID,
+			Timestamp: truncate(pair.Timestamp, hour),
 		}
 	}
 

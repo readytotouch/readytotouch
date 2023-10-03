@@ -1,8 +1,10 @@
 package postgres
 
-func incUserOnlinePair(source UserOnlinePair, shift int64) UserOnlinePair {
-	return UserOnlinePair{
-		UserID: source.UserID,
-		Online: source.Online + shift,
+import "github.com/readytotouch-yaaws/yaaws-go/internal/domain"
+
+func incUserOnlinePair(source domain.UserOnlinePair, shift int64) domain.UserOnlinePair {
+	return domain.UserOnlinePair{
+		UserID:    source.UserID,
+		Timestamp: source.Timestamp + shift,
 	}
 }
