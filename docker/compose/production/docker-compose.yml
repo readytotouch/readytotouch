@@ -29,6 +29,7 @@ services:
       - "443:443"
     depends_on:
       - postgres
+      - redis
       - goose
     command: "sleep infinity"
 
@@ -41,6 +42,10 @@ services:
       POSTGRES_DB: ${POSTGRES_DB}
     volumes:
       - ./.docker/volumes/postgresql/data/:/var/lib/postgresql/data/
+
+  redis:
+    container_name: "readytotouch_redis"
+    image: "redis:latest"
 
   goose:
     container_name: "readytotouch_postgres_goose_migrations"

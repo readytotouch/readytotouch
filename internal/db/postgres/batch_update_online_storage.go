@@ -3,6 +3,7 @@ package postgres
 import (
 	"context"
 
+	"github.com/readytotouch-yaaws/yaaws-go/internal/domain"
 	"github.com/readytotouch-yaaws/yaaws-go/internal/storage/postgres/dbs"
 )
 
@@ -14,7 +15,7 @@ func NewBatchUpdateOnlineStorage(db *Database) *BatchUpdateOnlineStorage {
 	return &BatchUpdateOnlineStorage{db: db}
 }
 
-func (s *BatchUpdateOnlineStorage) BatchStore(ctx context.Context, pairs []UserOnlinePair) error {
+func (s *BatchUpdateOnlineStorage) BatchStore(ctx context.Context, pairs []domain.UserOnlinePair) error {
 	// user_online_hourly_stats
 	{
 		hourUserIDs, hourOnlineTimestamps := toHourlyStats(pairs)
