@@ -20,11 +20,12 @@
 <body>
 {%= header(headerProfiles) %}
 <main class="main-wrapper">
+{% if len(headerProfiles) == 0 %}
 <section class="hero">
     <div class="hero__wrapper">
         <div class="hero__header">
             <div class="hero__status">
-                Service status: <span class="hero__progress">Work in progress</span>
+                Service status: <span class="hero__progress">work in progress</span>
             </div>
             <a href="https://readytotouch.com/" target="_blank" class="hero__link">
                 <span class="hero__link-title">readytotouch.com</span>
@@ -47,6 +48,27 @@
         </div>
     </div>
 </section>
+{% else %}
+<section class="hero auth">
+    <div class="hero__wrapper">
+        <div class="hero__header">
+            <div class="hero__status">
+                Service status: <span class="hero__progress">work in progress</span>
+            </div>
+            <a href="https://readytotouch.com/" target="_blank" class="hero__link">
+                <span class="hero__link-title">readytotouch.com</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 17L17 7M7 7h10v10" stroke="#C6CAD2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
+        <div class="hero__main">
+            <h1 class="hero__title">Anonymous work search</h1>
+            <p class="hero__subtitle">Tracking registrations and online users of the platform</p>
+        </div>
+    </div>
+</section>
+{% endif %}
 <div class="container">
     {%= stats() %}
     {%= registrationHistory(socialProviderUsers) %}
