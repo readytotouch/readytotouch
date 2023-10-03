@@ -11,6 +11,10 @@ import (
 )
 
 func TestRedisHashOnlineStorage(t *testing.T) {
+	if testing.Short() {
+		t.Skip()
+	}
+
 	testHashOnlineStorage(t, "redis:6379")
 }
 

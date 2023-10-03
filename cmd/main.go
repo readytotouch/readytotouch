@@ -44,7 +44,7 @@ func main() {
 	database := postgres.MustDatabase(pgConnection)
 	defer database.Queries().Close()
 
-	redisClient := redis.MustClient("redis:6379")
+	redisClient := redis.MustClient(context.Background(), "redis:6379")
 
 	var (
 		userRepository   = postgres.NewUserRepository(database)
