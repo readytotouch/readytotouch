@@ -20,11 +20,5 @@ jobs:
           username: "root"
           key: ${{ secrets.READYTOTOUCH_VULTR_VPS_SSH_PRIVATE_KEY }}
           script: |
-            cd /var/go/readytotouch/
-            git pull
-            go mod vendor
-            make env-up
-            make migrate-pgsql-up
-            docker exec readytotouch_go_app go build -o /bin/yaaws-server ./cmd/main.go
-            docker exec readytotouch_go_app pkill yaaws-server || echo "yaaws-server already stopped"
-            docker exec readytotouch_go_app yaaws-server &
+            whoami
+            ls -al
