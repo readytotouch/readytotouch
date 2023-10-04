@@ -1,4 +1,6 @@
 User-agent: *
-Allow: /
+Disallow: /auth/github
+Disallow: /auth/gitlab
+Disallow: /auth/bitbucket
 
 Sitemap: https://readytotouch.com/sitemap.xml
