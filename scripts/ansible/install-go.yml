@@ -21,8 +21,9 @@
     - name: "Add Go binaries to PATH"
       lineinfile:
         path: "~/.profile"
-        line: "export PATH=$PATH:/usr/local/go/bin"
-        create: "yes"
+        line: "{{ item }}"
+        state: "present"
+      loop: "{{ ['export GOROOT=/usr/local/go', 'export GOPATH=$HOME/go', 'export PATH=$GOPATH/bin:$GOROOT/bin:$PATH'] }}"
 
     - name: "Source ~/.profile"
       shell: "source ~/.profile; go version"
