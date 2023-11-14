@@ -39,15 +39,6 @@ func toDailyStats(pairs []domain.UserOnlinePair) ([]int64, []time.Time) {
 	return userIDs, timestamps
 }
 
-func toDailyMin(pairs []domain.UserOnlinePair) time.Time {
-	online := pairs[0].Timestamp
-	for _, pair := range pairs {
-		online = min(online, pair.Timestamp)
-	}
-
-	return time.Unix(truncate(online, day), 0)
-}
-
 func truncate(source int64, d int64) int64 {
 	return source - source%d
 }

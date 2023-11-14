@@ -65,6 +65,29 @@ func streamarticles(qw422016 *qt422016.Writer) {
                 <p class="article__subtitle">В цій статті Ярослав Характерник пропонує розглянути швидкодію, скільки пам’яті займає кожен з типів даних та яку базу даних вибрати: Redis, KeyDB або DragonflyDB.</p>
             </div>
         </div>
+
+        <div class="articles__item article">
+            <a href="https://dou.ua/forums/topic/35261/" target="_blank" class="article__link">
+                <img src="https://s.dou.ua/img/announces/8_Uq7sQTh.jpg" alt="article preview" class="article__preview">
+            </a>
+            <div class="article__info">
+                <div class="article__top-group">
+                    <div class="article__date-group">
+                        <img src="/assets/images/pages/online/calendar.svg" alt="calendar icon"
+                             class="article__date-icon">
+                        <span class="article__date">14 листопада 2023</span>
+                    </div>
+                    <div class="article__author">
+                        <img src="https://avatars.githubusercontent.com/u/63663261?v=4&s=48" alt="author"
+                             class="article__author-photo">
+                        <a href="https://dou.ua/users/yaroslav-harakternik/" target="_blank"
+                           class="article__author-name">Ярослав Характерник</a>
+                    </div>
+                </div>
+                <a href="https://dou.ua/forums/topic/35261/" target="_blank" class="article__title">Batch UPDATE в PostgreSQL</a>
+                <p class="article__subtitle">У цій статті Ярослав Характерник продовжує розповідати про свій проєкт з анонімного пошуку роботи. Сьогодні йтиметься про те, як зробити статистику онлайну публічною, а саме: про запуск команди перенесення онлайну пачками з Redis в PostgreSQL і тестування.</p>
+            </div>
+        </div>
     </div>
 </section>
 `)

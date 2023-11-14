@@ -14,7 +14,7 @@ ON CONFLICT (created_at, user_id) DO NOTHING;
 INSERT INTO user_online_daily_count_stats (created_at, user_count)
 SELECT source.created_at, COUNT(*)
 FROM user_online_daily_stats AS source
-WHERE source.created_at >= @created_at
+WHERE source.created_at = ANY (@created_ats::DATE[])
 GROUP BY source.created_at
 ORDER BY source.created_at
 ON CONFLICT (created_at)

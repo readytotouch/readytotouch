@@ -32,8 +32,8 @@ func (s *BatchUpsertOnlineStorage) BatchStore(ctx context.Context, pairs []domai
 	}
 
 	// user_online_daily_stats
+	dayUserIDs, dayOnlineTimestamps := toDailyStats(pairs)
 	{
-		dayUserIDs, dayOnlineTimestamps := toDailyStats(pairs)
 		rowsAffected, err := s.db.Queries().UserOnlineDailyStatsUpsert(ctx, dbs.UserOnlineDailyStatsUpsertParams{
 			UserIds:    dayUserIDs,
 			CreatedAts: dayOnlineTimestamps,
@@ -48,7 +48,7 @@ func (s *BatchUpsertOnlineStorage) BatchStore(ctx context.Context, pairs []domai
 
 	// user_online_daily_count_stats
 	{
-		err := s.db.Queries().UserOnlineDailyCountStatsUpsert(ctx, toDailyMin(pairs))
+		err := s.db.Queries().UserOnlineDailyCountStatsUpsert(ctx, dayOnlineTimestamps)
 		if err != nil {
 			return err
 		}
