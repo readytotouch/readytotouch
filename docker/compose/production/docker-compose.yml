@@ -4,9 +4,9 @@ services:
   app:
     container_name: "readytotouch_go_app"
     image: golang:1.21.0-alpine
-    working_dir: /go/src/github.com/readytotouch-yaaws/yaaws-go
+    working_dir: /go/src/github.com/readytotouch/readytotouch
     volumes:
-      - .:/go/src/github.com/readytotouch-yaaws/yaaws-go
+      - .:/go/src/github.com/readytotouch/readytotouch
       - ./.docker/volumes/go/tls-certificates:/var/lib/tls-certificates/data/
     environment:
       GIN_MODE: release

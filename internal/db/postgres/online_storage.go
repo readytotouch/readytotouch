@@ -3,7 +3,7 @@ package postgres
 import (
 	"context"
 
-	"github.com/readytotouch-yaaws/yaaws-go/internal/domain"
+	"github.com/readytotouch/readytotouch/internal/domain"
 )
 
 type OnlineStorage interface {

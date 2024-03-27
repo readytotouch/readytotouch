@@ -9,8 +9,8 @@ import (
 
 	"golang.org/x/oauth2"
 
-	"github.com/readytotouch-yaaws/yaaws-go/internal/domain"
-	pkgOAuthProviders "github.com/readytotouch-yaaws/yaaws-go/internal/oauth-providers"
+	"github.com/readytotouch/readytotouch/internal/domain"
+	pkgOAuthProviders "github.com/readytotouch/readytotouch/internal/oauth-providers"
 
 	"github.com/valyala/fasthttp"
 )

@@ -1,6 +1,6 @@
 package postgres
 
-import "github.com/readytotouch-yaaws/yaaws-go/internal/domain"
+import "github.com/readytotouch/readytotouch/internal/domain"
 
 func incUserOnlinePair(source domain.UserOnlinePair, shift int64) domain.UserOnlinePair {
 	return domain.UserOnlinePair{

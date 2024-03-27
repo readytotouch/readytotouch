@@ -4,9 +4,9 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/readytotouch-yaaws/yaaws-go/internal/db/postgres"
-	"github.com/readytotouch-yaaws/yaaws-go/internal/domain"
-	template "github.com/readytotouch-yaaws/yaaws-go/internal/templates/v1"
+	"github.com/readytotouch/readytotouch/internal/db/postgres"
+	"github.com/readytotouch/readytotouch/internal/domain"
+	template "github.com/readytotouch/readytotouch/internal/templates/v1"
 
 	"github.com/gin-gonic/gin"
 )

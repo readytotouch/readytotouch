@@ -3,7 +3,7 @@ package v1
 import (
 	"fmt"
 
-	"github.com/readytotouch-yaaws/yaaws-go/internal/domain"
+	"github.com/readytotouch/readytotouch/internal/domain"
 )
 
 const (

@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/readytotouch-yaaws/yaaws-go/internal/env"
+	"github.com/readytotouch/readytotouch/internal/env"
 
 	"golang.org/x/crypto/acme/autocert"
 	"golang.org/x/sync/errgroup"

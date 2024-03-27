@@ -30,9 +30,9 @@ func streamfooter(qw422016 *qt422016.Writer) {
                 </div>
             </div>
             <div class="footer__middle-section">
-                <iframe class="footer__stars" src="https://ghbtns.com/github-btn.html?user=readytotouch-yaaws&repo=yaaws-go&type=star&count=true&size=large"
+                <iframe class="footer__stars" src="https://ghbtns.com/github-btn.html?user=readytotouch&repo=readytotouch&type=star&count=true&size=large"
                         frameborder="0" scrolling="0" width="170" height="30" title="GitHub"></iframe>
-                <a href="https://github.com/readytotouch-yaaws/yaaws-go" target="_blank" class="footer__statistics-link">View the project on GitHub</a>
+                <a href="https://github.com/readytotouch/readytotouch" target="_blank" class="footer__statistics-link">View the project on GitHub</a>
                 <a href="https://readytotouch.com/" target="_blank" class="footer__github-link">
                     readytotouch.com
                 </a>

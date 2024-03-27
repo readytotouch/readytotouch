@@ -4,7 +4,7 @@ import (
 	"context"
 	"database/sql"
 
-	"github.com/readytotouch-yaaws/yaaws-go/internal/storage/postgres/dbs"
+	"github.com/readytotouch/readytotouch/internal/storage/postgres/dbs"
 )
 
 // Database - repository

@@ -4,7 +4,7 @@ import (
 	"context"
 	"strconv"
 
-	"github.com/readytotouch-yaaws/yaaws-go/internal/domain"
+	"github.com/readytotouch/readytotouch/internal/domain"
 
 	"github.com/redis/go-redis/v9"
 )

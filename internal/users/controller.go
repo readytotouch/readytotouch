@@ -4,8 +4,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/readytotouch-yaaws/yaaws-go/internal/db/postgres"
-	"github.com/readytotouch-yaaws/yaaws-go/internal/domain"
+	"github.com/readytotouch/readytotouch/internal/db/postgres"
+	"github.com/readytotouch/readytotouch/internal/domain"
 
 	"github.com/gin-gonic/gin"
 )

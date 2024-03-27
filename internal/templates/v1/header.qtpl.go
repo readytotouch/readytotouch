@@ -23,7 +23,7 @@ func streamheader(qw422016 *qt422016.Writer, profiles []SocialProviderUser) {
 			<h3 class="header__logo-title">ReadyToTouch</h3>
 		</a>
 		<div class="header__stars">
-			<iframe src="https://ghbtns.com/github-btn.html?user=readytotouch-yaaws&repo=yaaws-go&type=star&count=true&size=large"
+			<iframe src="https://ghbtns.com/github-btn.html?user=readytotouch&repo=readytotouch&type=star&count=true&size=large"
 				frameborder="0" scrolling="0" width="170" height="30" title="GitHub"></iframe>
 		</div>
 		`)

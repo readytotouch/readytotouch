@@ -3,7 +3,7 @@
   hosts: "web"
   gather_facts: "no"
   vars:
-    - REPOSITORY: "https://github.com/readytotouch-yaaws/yaaws-go.git"
+    - REPOSITORY: "https://github.com/readytotouch/readytotouch.git"
     - DESTINATION: "/var/go/readytotouch"
 
   tasks:

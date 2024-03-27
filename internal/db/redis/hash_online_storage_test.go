@@ -5,7 +5,7 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/readytotouch-yaaws/yaaws-go/internal/domain"
+	"github.com/readytotouch/readytotouch/internal/domain"
 
 	"github.com/stretchr/testify/require"
 )

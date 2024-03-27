@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/readytotouch-yaaws/yaaws-go/internal/domain"
-	"github.com/readytotouch-yaaws/yaaws-go/internal/env"
+	"github.com/readytotouch/readytotouch/internal/domain"
+	"github.com/readytotouch/readytotouch/internal/env"
 
 	"github.com/gin-gonic/gin"
 	"github.com/golang-jwt/jwt/v5"

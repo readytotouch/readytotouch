@@ -3,8 +3,8 @@ package postgres
 import (
 	"context"
 
-	"github.com/readytotouch-yaaws/yaaws-go/internal/domain"
-	"github.com/readytotouch-yaaws/yaaws-go/internal/storage/postgres/dbs"
+	"github.com/readytotouch/readytotouch/internal/domain"
+	"github.com/readytotouch/readytotouch/internal/storage/postgres/dbs"
 )
 
 type BatchUpsertOnlineStorage struct {
