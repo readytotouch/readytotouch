@@ -3,7 +3,7 @@
   hosts: "web"
   gather_facts: "no"
   vars:
-    - GO_VERSION: "1.21.1"
+    - GO_VERSION: "1.22.6"
 
   tasks:
     - name: "Download Go {{ GO_VERSION }} tarball"

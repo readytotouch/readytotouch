@@ -3,7 +3,7 @@ version: "3.7"
 services:
   app:
     container_name: "readytotouch_go_app"
-    image: golang:1.21.0-alpine
+    image: golang:1.22.6-alpine
     working_dir: /go/src/github.com/readytotouch/readytotouch
     volumes:
       - .:/go/src/github.com/readytotouch/readytotouch
