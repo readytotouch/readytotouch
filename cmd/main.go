@@ -191,7 +191,14 @@ func main() {
 		StaticFile("/humans.txt", "./public/humans.txt").
 		StaticFile("/robots.txt", "./public/robots.txt").
 		StaticFile("/manifest.json", "./public/manifest.json").
-		StaticFile("/browserconfig.xml", "./public/browserconfig.xml")
+		StaticFile("/browserconfig.xml", "./public/browserconfig.xml").
+
+		// Privacy policy aliases
+		// https://dou.ua/privacy/
+		// https://privacy.xing.com/en/privacy-policy
+		// https://www.linkedin.com/legal/privacy-policy
+		// https://www.facebook.com/privacy/policy/
+		StaticFile("privacy-policy", "./public/privacy-policy.html")
 
 	{
 		// very fast solution
