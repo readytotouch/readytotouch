@@ -143,7 +143,7 @@
         <h1>Companies</h1>
 
         <ul class="company-list" id="company-list">
-            <li class="company-item" data-name="Facebook" data-linkedin="https://www.linkedin.com/company/facebook">
+            <li class="company-item" data-linkedin-name="Facebook" data-linkedin-vanity-name="https://www.linkedin.com/company/facebook">
                 <a href="https://www.linkedin.com/company/facebook" target="_blank">Facebook</a>
                 <div>
                     <button class="complete" onclick="completeCompany(this)">Complete</button>
@@ -151,7 +151,7 @@
                     <button class="delete" onclick="deleteCompany(this)">Delete</button>
                 </div>
             </li>
-            <li class="company-item" data-name="Amazon" data-linkedin="https://www.linkedin.com/company/amazon">
+            <li class="company-item" data-linkedin-name="Amazon" data-linkedin-vanity-name="https://www.linkedin.com/company/amazon">
                 <a href="https://www.linkedin.com/company/amazon" target="_blank">Amazon</a>
                 <div>
                     <button class="complete" onclick="completeCompany(this)">Complete</button>
@@ -159,7 +159,7 @@
                     <button class="delete" onclick="deleteCompany(this)">Delete</button>
                 </div>
             </li>
-            <li class="company-item" data-name="Google" data-linkedin="https://www.linkedin.com/company/google">
+            <li class="company-item" data-linkedin-name="Google" data-linkedin-vanity-name="https://www.linkedin.com/company/google">
                 <a href="https://www.linkedin.com/company/google" target="_blank">Google</a>
                 <div>
                     <button class="complete" onclick="completeCompany(this)">Complete</button>
@@ -210,19 +210,12 @@
 
             // Restore the original content
             $company.classList.remove('recover-mode');
-            $company.innerHTML = `
-                <a href="${linkedinUrl}" target="_blank">${name}</a>
-                <div>
-                    <button class="complete" onclick="completeCompany(this)">Complete</button>
-                    <a href="https://www.linkedin.com/search/results/people/?keywords=&company=${encodeURIComponent(name)}" class="connections">Connections</a>
-                    <button class="delete" onclick="deleteCompany(this)">Delete</button>
-                </div>
-            `;
+            $company.innerHTML = renderCompany(linkedinUrl, name);
         }
 
         function completeCompany($button) {
             const $company = $button.closest('li');
-            const name = $company.dataset.name;
+            const name = $company.dataset['linkedin-name'];
 
             $company.classList.add('complete-mode');
             $company.innerHTML = `
@@ -233,58 +226,57 @@
 
         function resumeCompany($button) {
             const $company = $button.closest('li');
-            const name = $company.dataset.name;
-            const linkedinUrl = $company.dataset.linkedin;
+            const name = $company.dataset['linkedin-name'];
+            const vanityName = $company.dataset['linkedin-vanity-name'];
 
             // Restore the original content
             $company.classList.remove('complete-mode');
-            $company.innerHTML = `
-                <a href="${linkedinUrl}" target="_blank">${name}</a>
-                <div>
-                    <button class="complete" onclick="completeCompany(this)">Complete</button>
-                    <a href="https://www.linkedin.com/search/results/people/?keywords=&company=${encodeURIComponent(name)}" class="connections">Connections</a>
-                    <button class="delete" onclick="deleteCompany(this)">Delete</button>
-                </div>
-            `;
+            $company.innerHTML = renderCompany(name, vanityName);
         }
 
         function addCompany() {
-            const url = document.getElementById('company-url').value;
+            const $companyUrl = document.getElementById('company-url');
+            const url = $companyUrl.value.trim();
+
             if (!url) {
                 alert('Please enter a company URL.');
                 return;
             }
 
-            const companyName = new URL(url).hostname.replace('www.', '');
+            const vanityName = new URL(url).pathname;
             const companyList = document.getElementById('company-list');
-            const listItem = document.createElement('li');
-            listItem.className = 'company-item';
-            listItem.dataset.name = companyName;
-            listItem.dataset.linkedin = `https://www.linkedin.com/company/${companyName}`;
+            const $company = document.createElement('li');
+            $company.className = 'company-item';
+            $company.dataset['linkedin-name'] = vanityName;
+            $company.dataset['linkedin-vanity-name'] = vanityName;
 
-            listItem.innerHTML = `
-                <a href="https://www.linkedin.com/company/${companyName}" target="_blank">${companyName}</a>
-                <div>
-                    <button class="complete" onclick="completeCompany(this)">Complete</button>
-                    <a href="https://www.linkedin.com/search/results/people/?keywords=&company=${encodeURIComponent(companyName)}" class="connections">Connections</a>
-                    <button class="delete" onclick="deleteCompany(this)">Delete</button>
-                </div>
-            `;
+            $company.innerHTML = renderCompany(vanityName, vanityName);
 
-            companyList.appendChild(listItem);
-            document.getElementById('company-url').value = '';
+            companyList.appendChild($company);
+            $companyUrl.value = '';
         }
 
         function regenerateConnections() {
             const keywords = document.getElementById('keywords').value;
             const level = document.getElementById('connection-level').value;
-            const connectionLinks = document.querySelectorAll('.connections');
+            const $connections = document.querySelectorAll('.connections');
 
-            connectionLinks.forEach(link => {
-                const companyItem = link.closest('.company-item');
+            $connections.forEach($connection => {
+                const companyItem = $connection.closest('.company-item');
                 const companyName = companyItem.dataset.name;
-                link.href = `https://www.linkedin.com/search/results/people/?keywords=${keywords}&company=${encodeURIComponent(companyName)}&connectionOf=%23${level}`;
+                $connection.href = `https://www.linkedin.com/search/results/people/?keywords=${keywords}&company=${encodeURIComponent(companyName)}&connectionOf=%23${level}`;
             });
+        }
+
+        function renderCompany(name, vanityName) {
+            return `
+                <a href="https://www.linkedin.com/company/${vanityName}" target="_blank">${name}</a>
+                <div>
+                    <button class="complete" onclick="completeCompany(this)">Complete</button>
+                    <a href="https://www.linkedin.com/search/results/people/?keywords=&company=${encodeURIComponent(vanityName)}" class="connections">Connections</a>
+                    <button class="delete" onclick="deleteCompany(this)">Delete</button>
+                </div>
+            `;
         }
     </script>
 
