@@ -86,6 +86,18 @@
         .company-item.complete-mode {
             background-color: #d4edda;
         }
+        .company-item .recover {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 5px 10px;
+            font-size: 14px;
+            margin-left: 10px;
+        }
+        .company-item.recover-mode {
+            background-color: #edd4da;
+        }
         .add-company,
         .controls {
             display: flex;
@@ -179,57 +191,58 @@
     </div>
 
     <script>
-        function deleteCompany(button) {
-            const listItem = button.closest('li');
-            const companyName = listItem.dataset.name;
+        function deleteCompany($button) {
+            const $company = $button.closest('li');
+            const name = $company.dataset.name;
 
             // Replace the company details with the company name and recovery button
-            listItem.innerHTML = `
-                <span>${companyName}</span>
-                <button class="recovery" onclick="recoverCompany(this)">Recovery</button>
+            $company.classList.add('recover-mode');
+            $company.innerHTML = `
+                <span>${name}</span>
+                <button class="recover" onclick="recoverCompany(this)">Recover</button>
             `;
         }
 
-        function recoverCompany(button) {
-            const listItem = button.closest('li');
-            const companyName = listItem.dataset.name;
-            const linkedinUrl = listItem.dataset.linkedin;
+        function recoverCompany($button) {
+            const $company = $button.closest('li');
+            const name = $company.dataset.name;
+            const linkedinUrl = $company.dataset.linkedin;
 
             // Restore the original content
-            listItem.innerHTML = `
-                <a href="${linkedinUrl}" target="_blank">${companyName}</a>
+            $company.classList.remove('recover-mode');
+            $company.innerHTML = `
+                <a href="${linkedinUrl}" target="_blank">${name}</a>
                 <div>
                     <button class="complete" onclick="completeCompany(this)">Complete</button>
-                    <a href="https://www.linkedin.com/search/results/people/?keywords=&company=${encodeURIComponent(companyName)}" class="connections">Connections</a>
+                    <a href="https://www.linkedin.com/search/results/people/?keywords=&company=${encodeURIComponent(name)}" class="connections">Connections</a>
                     <button class="delete" onclick="deleteCompany(this)">Delete</button>
                 </div>
             `;
         }
 
-        function completeCompany(button) {
-            const listItem = button.closest('li');
-            listItem.classList.add('complete-mode');
-            const companyName = listItem.dataset.name;
+        function completeCompany($button) {
+            const $company = $button.closest('li');
+            const name = $company.dataset.name;
 
-            // Replace the company details with the company name and resume button
-            listItem.innerHTML = `
-                <span>${companyName}</span>
+            $company.classList.add('complete-mode');
+            $company.innerHTML = `
+                <span>${name}</span>
                 <button class="resume" onclick="resumeCompany(this)">Resume</button>
             `;
         }
 
-        function resumeCompany(button) {
-            const listItem = button.closest('li');
-            const companyName = listItem.dataset.name;
-            const linkedinUrl = listItem.dataset.linkedin;
+        function resumeCompany($button) {
+            const $company = $button.closest('li');
+            const name = $company.dataset.name;
+            const linkedinUrl = $company.dataset.linkedin;
 
             // Restore the original content
-            listItem.classList.remove('complete-mode');
-            listItem.innerHTML = `
-                <a href="${linkedinUrl}" target="_blank">${companyName}</a>
+            $company.classList.remove('complete-mode');
+            $company.innerHTML = `
+                <a href="${linkedinUrl}" target="_blank">${name}</a>
                 <div>
                     <button class="complete" onclick="completeCompany(this)">Complete</button>
-                    <a href="https://www.linkedin.com/search/results/people/?keywords=&company=${encodeURIComponent(companyName)}" class="connections">Connections</a>
+                    <a href="https://www.linkedin.com/search/results/people/?keywords=&company=${encodeURIComponent(name)}" class="connections">Connections</a>
                     <button class="delete" onclick="deleteCompany(this)">Delete</button>
                 </div>
             `;
