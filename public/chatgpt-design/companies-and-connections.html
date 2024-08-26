@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Companies</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0073b1;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+        header a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 15px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #444;
+        }
+        .company-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .company-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            border-bottom: 1px solid #e0e0e0;
+            position: relative;
+            transition: background-color 0.3s;
+        }
+        .company-item:last-child {
+            border-bottom: none;
+        }
+        .company-item a {
+            color: #0073b1;
+            text-decoration: none;
+            margin-right: 10px;
+            font-weight: 500;
+        }
+        .company-item button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .company-item .delete {
+            color: #e74c3c;
+        }
+        .company-item .complete {
+            color: #28a745;
+            margin-right: 10px;
+        }
+        .company-item .resume {
+            background-color: #ffc107;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 5px 10px;
+            font-size: 14px;
+            margin-left: 10px;
+        }
+        .company-item.complete-mode {
+            background-color: #d4edda;
+        }
+        .add-company,
+        .controls {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .add-company input,
+        .controls input,
+        .controls select,
+        .controls button {
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            width: 100%;
+        }
+        .add-company button {
+            background-color: #0073b1;
+            color: white;
+            cursor: pointer;
+            font-size: 14px;
+            border: none;
+            white-space: nowrap; /* Ensures the text stays in one line */
+            padding: 10px 20px; /* Adjusts padding to make the button wider */
+            min-width: 150px; /* Sets a minimum width to accommodate the text */
+        }
+        .controls button {
+            background-color: #0073b1;
+            color: white;
+            cursor: pointer;
+            font-size: 14px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="https://readytotouch.com">ReadyToTouch</a>
+    </header>
+
+    <div class="container">
+        <h1>Companies</h1>
+
+        <ul class="company-list" id="company-list">
+            <li class="company-item" data-name="Facebook" data-linkedin="https://www.linkedin.com/company/facebook">
+                <a href="https://www.linkedin.com/company/facebook" target="_blank">Facebook</a>
+                <div>
+                    <button class="complete" onclick="completeCompany(this)">Complete</button>
+                    <a href="https://www.linkedin.com/search/results/people/?keywords=&company=Facebook" class="connections">Connections</a>
+                    <button class="delete" onclick="deleteCompany(this)">Delete</button>
+                </div>
+            </li>
+            <li class="company-item" data-name="Amazon" data-linkedin="https://www.linkedin.com/company/amazon">
+                <a href="https://www.linkedin.com/company/amazon" target="_blank">Amazon</a>
+                <div>
+                    <button class="complete" onclick="completeCompany(this)">Complete</button>
+                    <a href="https://www.linkedin.com/search/results/people/?keywords=&company=Amazon" class="connections">Connections</a>
+                    <button class="delete" onclick="deleteCompany(this)">Delete</button>
+                </div>
+            </li>
+            <li class="company-item" data-name="Google" data-linkedin="https://www.linkedin.com/company/google">
+                <a href="https://www.linkedin.com/company/google" target="_blank">Google</a>
+                <div>
+                    <button class="complete" onclick="completeCompany(this)">Complete</button>
+                    <a href="https://www.linkedin.com/search/results/people/?keywords=&company=Google" class="connections">Connections</a>
+                    <button class="delete" onclick="deleteCompany(this)">Delete</button>
+                </div>
+            </li>
+        </ul>
+
+        <div class="add-company">
+            <input type="text" id="company-url" placeholder="Company URL">
+            <button onclick="addCompany()">Add company</button>
+        </div>
+
+        <div class="controls">
+            <input list="keywords-suggestions" type="text" id="keywords" placeholder="Connections search keywords">
+            <datalist id="keywords-suggestions">
+                <option value='"Golang Developer" OR "Go Developer"'>
+                <option value="Rust">
+                <option value="Scala">
+                <option value='"Elixir" OR "Erlang"'>
+            </datalist>
+            <select id="connection-level">
+                <option value="1st">1st</option>
+                <option value="2nd">2nd</option>
+            </select>
+            <button onclick="regenerateConnections()">Regenerate connections</button>
+        </div>
+    </div>
+
+    <script>
+        function deleteCompany(button) {
+            const listItem = button.closest('li');
+            const companyName = listItem.dataset.name;
+
+            // Replace the company details with the company name and recovery button
+            listItem.innerHTML = `
+                <span>${companyName}</span>
+                <button class="recovery" onclick="recoverCompany(this)">Recovery</button>
+            `;
+        }
+
+        function recoverCompany(button) {
+            const listItem = button.closest('li');
+            const companyName = listItem.dataset.name;
+            const linkedinUrl = listItem.dataset.linkedin;
+
+            // Restore the original content
+            listItem.innerHTML = `
+                <a href="${linkedinUrl}" target="_blank">${companyName}</a>
+                <div>
+                    <button class="complete" onclick="completeCompany(this)">Complete</button>
+                    <a href="https://www.linkedin.com/search/results/people/?keywords=&company=${encodeURIComponent(companyName)}" class="connections">Connections</a>
+                    <button class="delete" onclick="deleteCompany(this)">Delete</button>
+                </div>
+            `;
+        }
+
+        function completeCompany(button) {
+            const listItem = button.closest('li');
+            listItem.classList.add('complete-mode');
+            const companyName = listItem.dataset.name;
+
+            // Replace the company details with the company name and resume button
+            listItem.innerHTML = `
+                <span>${companyName}</span>
+                <button class="resume" onclick="resumeCompany(this)">Resume</button>
+            `;
+        }
+
+        function resumeCompany(button) {
+            const listItem = button.closest('li');
+            const companyName = listItem.dataset.name;
+            const linkedinUrl = listItem.dataset.linkedin;
+
+            // Restore the original content
+            listItem.classList.remove('complete-mode');
+            listItem.innerHTML = `
+                <a href="${linkedinUrl}" target="_blank">${companyName}</a>
+                <div>
+                    <button class="complete" onclick="completeCompany(this)">Complete</button>
+                    <a href="https://www.linkedin.com/search/results/people/?keywords=&company=${encodeURIComponent(companyName)}" class="connections">Connections</a>
+                    <button class="delete" onclick="deleteCompany(this)">Delete</button>
+                </div>
+            `;
+        }
+
+        function addCompany() {
+            const url = document.getElementById('company-url').value;
+            if (!url) {
+                alert('Please enter a company URL.');
+                return;
+            }
+
+            const companyName = new URL(url).hostname.replace('www.', '');
+            const companyList = document.getElementById('company-list');
+            const listItem = document.createElement('li');
+            listItem.className = 'company-item';
+            listItem.dataset.name = companyName;
+            listItem.dataset.linkedin = `https://www.linkedin.com/company/${companyName}`;
+
+            listItem.innerHTML = `
+                <a href="https://www.linkedin.com/company/${companyName}" target="_blank">${companyName}</a>
+                <div>
+                    <button class="complete" onclick="completeCompany(this)">Complete</button>
+                    <a href="https://www.linkedin.com/search/results/people/?keywords=&company=${encodeURIComponent(companyName)}" class="connections">Connections</a>
+                    <button class="delete" onclick="deleteCompany(this)">Delete</button>
+                </div>
+            `;
+
+            companyList.appendChild(listItem);
+            document.getElementById('company-url').value = '';
+        }
+
+        function regenerateConnections() {
+            const keywords = document.getElementById('keywords').value;
+            const level = document.getElementById('connection-level').value;
+            const connectionLinks = document.querySelectorAll('.connections');
+
+            connectionLinks.forEach(link => {
+                const companyItem = link.closest('.company-item');
+                const companyName = companyItem.dataset.name;
+                link.href = `https://www.linkedin.com/search/results/people/?keywords=${keywords}&company=${encodeURIComponent(companyName)}&connectionOf=%23${level}`;
+            });
+        }
+    </script>
+
+</body>
+</html>
