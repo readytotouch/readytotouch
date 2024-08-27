@@ -143,30 +143,7 @@
         <h1>Companies</h1>
 
         <ul class="company-list" id="company-list">
-            <li class="company-item" data-linkedin-name="Facebook" data-linkedin-vanity-name="https://www.linkedin.com/company/facebook">
-                <a href="https://www.linkedin.com/company/facebook" target="_blank">Facebook</a>
-                <div>
-                    <button class="complete" onclick="completeCompany(this)">Complete</button>
-                    <a href="https://www.linkedin.com/search/results/people/?keywords=&company=Facebook" class="connections">Connections</a>
-                    <button class="delete" onclick="deleteCompany(this)">Delete</button>
-                </div>
-            </li>
-            <li class="company-item" data-linkedin-name="Amazon" data-linkedin-vanity-name="https://www.linkedin.com/company/amazon">
-                <a href="https://www.linkedin.com/company/amazon" target="_blank">Amazon</a>
-                <div>
-                    <button class="complete" onclick="completeCompany(this)">Complete</button>
-                    <a href="https://www.linkedin.com/search/results/people/?keywords=&company=Amazon" class="connections">Connections</a>
-                    <button class="delete" onclick="deleteCompany(this)">Delete</button>
-                </div>
-            </li>
-            <li class="company-item" data-linkedin-name="Google" data-linkedin-vanity-name="https://www.linkedin.com/company/google">
-                <a href="https://www.linkedin.com/company/google" target="_blank">Google</a>
-                <div>
-                    <button class="complete" onclick="completeCompany(this)">Complete</button>
-                    <a href="https://www.linkedin.com/search/results/people/?keywords=&company=Google" class="connections">Connections</a>
-                    <button class="delete" onclick="deleteCompany(this)">Delete</button>
-                </div>
-            </li>
+            <!-- Companies will be added here -->
         </ul>
 
         <div class="add-company">
@@ -191,9 +168,16 @@
     </div>
 
     <script>
+        {
+            appendCompany("Google", "google");
+            appendCompany("Netflix", "netflix");
+            appendCompany("VictoriaMetrics", "victoriametrics");
+            appendCompany("FirstDemoCompany", "firstdemocompany");
+        }
+
         function deleteCompany($button) {
             const $company = $button.closest('li');
-            const name = $company.dataset.name;
+            const name = $company.dataset.linkedinName;
 
             // Replace the company details with the company name and recovery button
             $company.classList.add('recover-mode');
@@ -205,12 +189,12 @@
 
         function recoverCompany($button) {
             const $company = $button.closest('li');
-            const name = $company.dataset.name;
-            const linkedinUrl = $company.dataset.linkedin;
+            const name = $company.dataset.linkedinName;
+            const vanityName = $company.dataset.linkedinVanityName;
 
             // Restore the original content
             $company.classList.remove('recover-mode');
-            $company.innerHTML = renderCompany(linkedinUrl, name);
+            $company.innerHTML = renderCompany(name, vanityName);
         }
 
         function completeCompany($button) {
@@ -246,15 +230,8 @@
                 return;
             }
 
-            const companyList = document.getElementById('company-list');
-            const $company = document.createElement('li');
-            $company.className = 'company-item';
-            $company.dataset.linkedinName = vanityName;
-            $company.dataset.linkedinVanityName = vanityName;
+            appendCompany(vanityName, vanityName);
 
-            $company.innerHTML = renderCompany(vanityName, vanityName);
-
-            companyList.appendChild($company);
             $companyUrl.value = '';
         }
 
@@ -279,6 +256,17 @@
                     <button class="delete" onclick="deleteCompany(this)">Delete</button>
                 </div>
             `;
+        }
+
+        function appendCompany(name, vanityName) {
+            const $company = document.createElement('li');
+            $company.className = 'company-item';
+            $company.dataset.linkedinName = name;
+            $company.dataset.linkedinVanityName = vanityName;
+            $company.innerHTML = renderCompany(name, vanityName);
+
+            const $companies = document.getElementById('company-list');
+            $companies.appendChild($company);
         }
 
         function parseVanityName(linkedinCompanyURL) {
