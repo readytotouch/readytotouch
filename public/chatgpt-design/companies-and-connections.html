@@ -215,7 +215,7 @@
 
         function completeCompany($button) {
             const $company = $button.closest('li');
-            const name = $company.dataset['linkedin-name'];
+            const name = $company.dataset.linkedinName;
 
             $company.classList.add('complete-mode');
             $company.innerHTML = `
@@ -226,8 +226,8 @@
 
         function resumeCompany($button) {
             const $company = $button.closest('li');
-            const name = $company.dataset['linkedin-name'];
-            const vanityName = $company.dataset['linkedin-vanity-name'];
+            const name = $company.dataset.linkedinName;
+            const vanityName = $company.dataset.linkedinVanityName;
 
             // Restore the original content
             $company.classList.remove('complete-mode');
@@ -236,19 +236,21 @@
 
         function addCompany() {
             const $companyUrl = document.getElementById('company-url');
-            const url = $companyUrl.value.trim();
+            const vanityName = parseVanityName($companyUrl.value.trim());
 
-            if (!url) {
-                alert('Please enter a company URL.');
+            if (vanityName === "") {
+                const errorMessages = `Please enter a valid LinkedIn company URL like ${randomCompanyMAANG()}`;
+
+                alert(errorMessages);
+
                 return;
             }
 
-            const vanityName = new URL(url).pathname;
             const companyList = document.getElementById('company-list');
             const $company = document.createElement('li');
             $company.className = 'company-item';
-            $company.dataset['linkedin-name'] = vanityName;
-            $company.dataset['linkedin-vanity-name'] = vanityName;
+            $company.dataset.linkedinName = vanityName;
+            $company.dataset.linkedinVanityName = vanityName;
 
             $company.innerHTML = renderCompany(vanityName, vanityName);
 
@@ -277,6 +279,42 @@
                     <button class="delete" onclick="deleteCompany(this)">Delete</button>
                 </div>
             `;
+        }
+
+        function parseVanityName(linkedinCompanyURL) {
+            if (linkedinCompanyURL === "") {
+                return "";
+            }
+
+            try {
+                const url = new URL(linkedinCompanyURL);
+
+                if (url.hostname !== "linkedin.com" && url.hostname !== "www.linkedin.com") {
+                    return "";
+                }
+
+                const match = url.pathname.match(/^\/company\/([^\/]+)\/?/);
+
+                return match ? match[1] : "";
+            } catch (error) {
+                return "";
+            }
+        }
+
+        function randomCompanyMAANG() {
+            const companies = [
+                "meta",
+                "apple",
+                "amazon",
+                "netflix",
+                "google",
+                "microsoft",
+                "nvidia",
+            ];
+
+            const randomIndex = Math.floor(Math.random() * companies.length);
+
+            return `https://www.linkedin.com/company/${companies[randomIndex]}/`;
         }
     </script>
 
