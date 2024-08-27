@@ -144,9 +144,18 @@ func main() {
 		GET("/logout", authController.Logout)
 
 	r.
+		// WIP
+		StaticFile("/wip/companies-and-connections", "./public/chatgpt-design/companies-and-connections.html").
+		StaticFile("/wip/companies-and-connections/ukraine", "./public/chatgpt-design/companies-and-connections.html")
+
+	r.
 		StaticFile("/design", "./public/design/online.html").
 		StaticFile("/design/online", "./public/design/online.html").
-		StaticFile("/design/online-auth", "./public/design//online-auth.html")
+		StaticFile("/design/online-auth", "./public/design/online-auth.html").
+
+		// Design from ChatGPT
+		StaticFile("/design/wip/companies-and-connections", "./public/chatgpt-design/companies-and-connections.html").
+		StaticFile("/design/wip/companies-and-connections/ukraine", "./public/chatgpt-design/companies-and-connections.html")
 
 	r.
 		// Assets

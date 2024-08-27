@@ -110,6 +110,9 @@ design:
 
 	git add .
 
+companies-and-connections:
+	firefox ./public/chatgpt-design/companies-and-connections.html
+
 # POSTGRES_PASSWORD=$(echo "$RANDOM$RANDOM" | sha256sum | head -c 32; echo;) JWT_SECRET_KEY=$(echo "$RANDOM$RANDOM" | sha256sum | head -c 32; echo;) make generate-production-environment-file
 generate-production-environment-file:
 	touch .production.env
