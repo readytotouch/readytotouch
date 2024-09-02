@@ -1,0 +1,210 @@
+organizer-styles.qtpl{%- func Organizer(companies []Company, universities []University) -%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Golang companies organizer</title>
+    <meta name="description" content="Golang companies organizer">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="author" type="text/plain" href="https://golang-companies-organizer.readytotouch.com/humans.txt"/>
+
+    {%= favicon() %}
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+    {%= organizerStyles() %}
+</head>
+
+<body>
+<header class="header">
+	<div class="header__wrapper">
+		<a href="/" class="header__logo">
+			<img class="header__logo-img" src="/assets/images/pages/online/logo.svg" alt="logo">
+			<h3 class="header__logo-title">Ready To Touch</h3>
+		</a>
+		<div class="header__stars">
+			<iframe src="https://ghbtns.com/github-btn.html?user=readytotouch&repo=readytotouch&type=star&count=true&size=large" frameborder="0" scrolling="0" width="170" height="30" title="GitHub"></iframe>
+		</div>
+	</div>
+</header>
+<main class="main-wrapper">
+    <div class="main-container">
+        <section class="organizer">
+            <div class="wrapper">
+                <div class="organizer__table-container">
+                    <div class="table__header-top">
+                        <p class="table__result-counter">{%d len(companies) %} companies</p>
+                    </div>
+                    <table class="organizer__table table">
+                        <thead class="organizer__head">
+                            <tr>
+                                <th>
+                                    <span>Name</span>
+                                </th>
+                                <th>
+                                    <img src="/assets/images/pages/common-images/linkedin.svg" alt="linkedin">
+                                    <span>LinkedIn</span>
+                                </th>
+                                <th>
+                                    <img src="/assets/images/pages/online/github-black.svg" alt="github-black">
+                                    <span>GitHub</span>
+                                </th>
+                                <th>
+                                    <img src="/assets/images/pages/common-images/glassdoor.svg" alt="glassdoor">
+                                    <span>Glassdoor</span>
+                                </th>
+                                <th>
+                                    <img src="/assets/images/pages/common-images/similarweb.svg" alt="SimilarWeb">
+                                    <span>SimilarWeb</span>
+                                </th>
+                                <th>
+                                    <img src="/assets/images/pages/common-images/otta.svg" alt="otta">
+                                    <span>Otta</span>
+                                </th>
+                                <th>
+                                    <img src="/assets/images/pages/common/link.svg" alt="link">
+                                    <span>Vacancies</span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for _, company := range companies %}
+                            <tr class="table__item">
+                                <td>
+                                    <div class="table__item name">
+                                        <a class="table__item-link" href="{%s company.URL %}">{%s company.Name %}</a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__item">
+                                        <div class="table__link-group">
+                                            <img src="/assets/images/pages/common/square.svg">
+                                            <a class="table__item-link" href="https://www.linkedin.com/company/{%s company.LinkedInProfile.Alias %}/" title="{%s company.LinkedInProfile.Name %}">Overview</a>
+                                        </div>
+                                        <div class="table__link-group">
+                                            <img src="/assets/images/pages/common/response.svg">
+                                            <a class="table__item-link" href="{%s linkedinConnectionsURL([]Company{company}, universities) %}" title="{%s company.LinkedInProfile.Name %}">Connections</a>
+                                        </div>
+                                        <div class="table__link-group">
+                                            <img src="/assets/images/pages/vacancy/briefcase.svg">
+                                            <a class="table__item-link" href="{%s linkedinJobsURL([]Company{company}, golangKeywordsTitles) %}" title="{%s company.LinkedInProfile.Name %}">Jobs</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__item">
+                                        {%- if company.GitHubProfile.Login != "" -%}
+                                        <div class="table__link-group">
+                                            <img src="/assets/images/pages/common/square.svg">
+                                            <a class="table__item-link" href="https://github.com/{%s company.GitHubProfile.Login %}">Overview</a>
+                                        </div>
+                                        <div class="table__link-group">
+                                            <img src="/assets/images/pages/common/database.svg">
+                                            <a class="table__item-link" href="https://github.com/orgs/{%s company.GitHubProfile.Login %}/repositories?q=lang:go">Repositories</a>&nbsp;({%d company.GitHubProfile.RepositoryCount %})
+                                        </div>
+                                        {%- endif -%}
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__item">
+                                        <div class="table__link-group">
+                                            <img src="/assets/images/pages/common/square.svg">
+                                            <a class="table__item-link" href="{%s company.GlassdoorProfile.OverviewURL %}">Overview</a>
+                                        </div>
+                                        <div class="table__link-group">
+                                            <img src="/assets/images/pages/common/message.svg">
+                                            <a class="table__item-link" href="{%s company.GlassdoorProfile.ReviewsURL %}">Reviews</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__item">
+                                        <div class="table__link-group">
+                                            <img src="/assets/images/pages/common/square.svg">
+                                            <a class="table__item-link" href="{%s similarwebURL(company.URL) %}">Overview</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__item">
+                                        {%- if company.OttaProfileSlug != "" -%}
+                                            <div class="table__link-group">
+                                                <img src="/assets/images/pages/common/square.svg">
+                                                <a class="table__item-link" href="https://app.otta.com/companies/{%s company.OttaProfileSlug %}">Overview</a>
+                                            </div>
+                                        {%- endif -%}
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table__item">
+                                        {%- for i, vacancy := range company.Vacancies -%}
+                                            <a class="table__item-link vacancies" href="{%s vacancy %}">Vacancy #{%d i %}</a>
+                                        {%- endfor -%}
+                                    </div>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                <div class="organizer__linkedin">
+                    <h2 class="headline headline--lvl1 organizer__block-title">LinkedIn</h2>
+                    <div class="organizer__links">
+                        <a class="organizer__link" href="{%s linkedinConnectionsURL(companies, nil) %}">LinkedIn Connections [Companies]</a>
+                        {% if len(universities) > 0 %}
+                            <a class="organizer__link" href="{%s linkedinConnectionsURL(companies, universities)  %}">LinkedIn Connections [Companies] [Universities]</a>
+                        {% endif %}
+                        <a class="organizer__link" href="{%s linkedinJobsURL(companies, golangKeywordsTitles) %}">LinkedIn Jobs [Companies] [Worldwide]</a>
+                        <a class="organizer__link" href="{%s linkedinJobsURL(nil, golangKeywordsTitles) %}">LinkedIn Jobs [Worldwide]</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+<footer class="footer">
+    <div class="footer__wrapper main-container">
+        <div class="footer__group-u8">
+            <div class="footer__info">
+                <a href="/" class="footer__title">
+                    <h3 class="footer__title-link">Ready To Touch</h3>
+                </a>
+                <p class="footer__subtitle">Anonymous job search</p>
+                <div class="footer__map">
+                    <img class="footer__map-Ukraine" src="/assets/images/pages/online/map-of-Ukraine.png" alt="Map of Ukraine">
+                </div>
+            </div>
+            <div class="footer__middle-section">
+                <iframe class="footer__stars" src="https://ghbtns.com/github-btn.html?user=readytotouch&repo=readytotouch&type=star&count=true&size=large" frameborder="0" scrolling="0" width="170" height="30" title="GitHub"></iframe>
+                <a href="https://github.com/readytotouch/golang-companies-organizer" target="_blank" class="footer__statistics-link">View the project on GitHub</a>
+                <a href="https://readytotouch.com/" target="_blank" class="footer__github-link">readytotouch.com</a>
+            </div>
+            <div class="footer__support">
+                <a href="https://savelife.in.ua/en/" target="_blank" class="footer__link">
+                    <figure class="footer__figure">
+                        <img width="60" height="24" src="https://savelife.in.ua/wp-content/themes/savelife/assets/images/new-logo-en.svg" alt="support">
+                        <figcaption class="footer__caption">Support</figcaption>
+                        <img src="/assets/images/pages/online/arrow-up.svg" alt="arrow">
+                    </figure>
+                </a>
+                <a href="https://war.ukraine.ua/" target="_blank" class="footer__link">
+                    <figure class="footer__figure">
+                        <figcaption class="footer__caption">war.ukraine.ua</figcaption>
+                        <img src="/assets/images/pages/online/arrow-up.svg"  alt="arrow">
+                    </figure>
+                </a>
+            </div>
+        </div>
+        <div class="footer__copyrights">
+            <span>© 2024 Yaroslav Podorvanov</span>
+            <img class="footer__flag-UA" src="/assets/images/pages/online/flag-of-Ukraine.svg" alt="Flag of Ukraine">
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
+{%- endfunc -%}

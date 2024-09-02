@@ -24,6 +24,7 @@ import (
 	pkgGitHub "github.com/readytotouch/readytotouch/internal/oauth-providers/github"
 	pkgGitLab "github.com/readytotouch/readytotouch/internal/oauth-providers/gitlab"
 	pkgOnline "github.com/readytotouch/readytotouch/internal/online"
+	pkgOrganizer "github.com/readytotouch/readytotouch/internal/organizer"
 	pkgUsers "github.com/readytotouch/readytotouch/internal/users"
 
 	"github.com/gin-contrib/gzip"
@@ -94,8 +95,9 @@ func main() {
 			bitbucketOAuthProvider,
 			jwtService,
 		)
-		userController   = pkgUsers.NewController(userRepository)
-		onlineController = pkgOnline.NewController(userRepository, onlineRepository)
+		userController      = pkgUsers.NewController(userRepository)
+		onlineController    = pkgOnline.NewController(userRepository, onlineRepository)
+		organizerController = pkgOrganizer.NewController()
 	)
 
 	r := gin.New()
@@ -133,6 +135,9 @@ func main() {
 
 	r.GET("/api/v1/users/registration/stats/daily.json", userController.RegistrationDailyCountStats)
 	r.GET("/api/v1/users/online/stats/daily.json", onlineController.DailyCountStats)
+
+	r.GET("/organizers/golang/companies/ukraine", organizerController.GolangCompaniesUkraine)
+	r.GET("/organizers/golang/companies", organizerController.GolangCompanies)
 
 	r.
 		GET("/auth/github", authController.GithubRedirect).
