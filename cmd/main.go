@@ -165,6 +165,7 @@ func main() {
 	r.
 		// Assets
 		Static("/assets/images", "./public/assets/images").
+		Static("/assets/fonts", "./public/assets/fonts").
 		Static("/assets/js", "./public/assets/js").
 
 		// Favicons

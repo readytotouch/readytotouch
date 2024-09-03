@@ -33,6 +33,7 @@ client/package-lock.json
 
 # Temporary solution
 public/assets/js/online-stats-app.js
+public/assets/js/
 
 # Database volume
 .docker/volumes
