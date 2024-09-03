@@ -32,8 +32,10 @@ CREATE TABLE user_feature_waitlist_subscription_history
     user_id    BIGINT       NOT NULL REFERENCES users (id),
     feature    FEATURE_WAIT NOT NULL,
     active     BOOLEAN      NOT NULL,
-    created_at TIMESTAMP    NOT NULL,
+    created_at TIMESTAMP    NOT NULL
 );
+
+-- @TODO subscription page views
 -- +goose StatementEnd
 
 -- +goose Down
