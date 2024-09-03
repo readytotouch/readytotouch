@@ -59,7 +59,7 @@ bench:
 
 # make migrate-pgsql-create NAME=init
 migrate-pgsql-create:
-	goose -dir ./internal/storage/postgres/migrations -table schema_migrations postgres create $(NAME) sql
+	goose -dir ./internal/storage/postgres/migrations -table schema_migrations create $(NAME) sql
 
 migrate-pgsql-up:
 	docker exec readytotouch_postgres_goose_migrations \
