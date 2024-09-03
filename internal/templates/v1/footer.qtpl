@@ -3,7 +3,7 @@
     <div class="footer__wrapper wrapper-u8">
         <div class="footer__group-u8">
             <div class="footer__info">
-                <a href="#" class="footer__title">
+                <a href="/" class="footer__title">
                     <h3 class="footer__title-link">ReadyToTouch</h3>
                 </a>
                 <p class="footer__subtitle">Anonymous work search</p>

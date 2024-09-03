@@ -4,6 +4,11 @@
     Profile: https://github.com/YaroslavPodorvanov
     From: Ukraine
 
+    Name: Yevhen Kholevchuk
+    Role: Front-end Developer
+    Profile: https://github.com/YevhenKholevchuk2016
+    From: Ukraine
+
     Name: Victor Poprozhuk
     Role: Front-end Developer
     Profile: https://github.com/VictorPoprozhuk
@@ -11,5 +16,10 @@
 
     Name: Anastasiia Sihetii
     Role: Designer
-    Profile: https://github.com/AnastasiiaSihetii
+    Profile: https://www.behance.net/AnastasiiaSihetii
+    From: Ukraine
+
+    Name: Liliia Shpak
+    Role: Designer
+    Profile: https://dribbble.com/LiliiaShpak
     From: Ukraine

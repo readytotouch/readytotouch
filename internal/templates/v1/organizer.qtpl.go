@@ -25,7 +25,7 @@ func StreamOrganizer(qw422016 *qt422016.Writer, companies []Company, universitie
     <meta name="description" content="Golang companies organizer">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="author" type="text/plain" href="https://golang-companies-organizer.readytotouch.com/humans.txt"/>
+    <link rel="author" type="text/plain" href="https://readytotouch.com/humans.txt"/>
 
     `)
 	streamfavicon(qw422016)
@@ -45,7 +45,7 @@ func StreamOrganizer(qw422016 *qt422016.Writer, companies []Company, universitie
 	<div class="header__wrapper">
 		<a href="/" class="header__logo">
 			<img class="header__logo-img" src="/assets/images/pages/online/logo.svg" alt="logo">
-			<h3 class="header__logo-title">Ready To Touch</h3>
+			<h3 class="header__logo-title">ReadyToTouch</h3>
 		</a>
 		<div class="header__stars">
 			<iframe src="https://ghbtns.com/github-btn.html?user=readytotouch&repo=readytotouch&type=star&count=true&size=large" frameborder="0" scrolling="0" width="170" height="30" title="GitHub"></iframe>
@@ -250,17 +250,21 @@ func StreamOrganizer(qw422016 *qt422016.Writer, companies []Company, universitie
         <div class="footer__group-u8">
             <div class="footer__info">
                 <a href="/" class="footer__title">
-                    <h3 class="footer__title-link">Ready To Touch</h3>
+                    <h3 class="footer__title-link">ReadyToTouch</h3>
                 </a>
-                <p class="footer__subtitle">Anonymous job search</p>
+                <p class="footer__subtitle">Anonymous work search</p>
                 <div class="footer__map">
-                    <img class="footer__map-Ukraine" src="/assets/images/pages/online/map-of-Ukraine.png" alt="Map of Ukraine">
+                    <img class="footer__map-Ukraine" src="/assets/images/pages/online/map-of-Ukraine.png"
+                         alt="Map of Ukraine">
                 </div>
             </div>
             <div class="footer__middle-section">
-                <iframe class="footer__stars" src="https://ghbtns.com/github-btn.html?user=readytotouch&repo=readytotouch&type=star&count=true&size=large" frameborder="0" scrolling="0" width="170" height="30" title="GitHub"></iframe>
-                <a href="https://github.com/readytotouch/golang-companies-organizer" target="_blank" class="footer__statistics-link">View the project on GitHub</a>
-                <a href="https://readytotouch.com/" target="_blank" class="footer__github-link">readytotouch.com</a>
+                <iframe class="footer__stars" src="https://ghbtns.com/github-btn.html?user=readytotouch&repo=readytotouch&type=star&count=true&size=large"
+                        frameborder="0" scrolling="0" width="170" height="30" title="GitHub"></iframe>
+                <a href="https://github.com/readytotouch/readytotouch" target="_blank" class="footer__statistics-link">View the project on GitHub</a>
+                <a href="https://readytotouch.com/" target="_blank" class="footer__github-link">
+                    readytotouch.com
+                </a>
             </div>
             <div class="footer__support">
                 <a href="https://savelife.in.ua/en/" target="_blank" class="footer__link">
