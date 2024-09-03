@@ -138,6 +138,7 @@ func main() {
 
 	r.GET("/organizers/golang/companies/ukraine", organizerController.GolangCompaniesUkraine)
 	r.GET("/organizers/golang/companies", organizerController.GolangCompanies)
+	r.GET("/organizers/golang/vacancies", organizerController.GolangVacancies)
 
 	r.
 		GET("/auth/github", authController.GithubRedirect).
@@ -157,6 +158,11 @@ func main() {
 		StaticFile("/design", "./public/design/online.html").
 		StaticFile("/design/online", "./public/design/online.html").
 		StaticFile("/design/online-auth", "./public/design/online-auth.html").
+
+		// Design from Organizer
+		StaticFile("/organizers/golang/vacancies", "./public/design/organizer-vacancies-subscribe.html").
+		StaticFile("/organizers/golang/vacancies/subscribe", "./public/design/organizer-vacancies-subscribe.html").
+		StaticFile("/organizers/golang/vacancies/unsubscribe", "./public/design/organizer-vacancies-unsubscribe.html").
 
 		// Design from ChatGPT
 		StaticFile("/design/wip/companies-and-connections", "./public/chatgpt-design/companies-and-connections.html").

@@ -27,3 +27,9 @@ func (c *Controller) GolangCompanies(ctx *gin.Context) {
 
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
 }
+
+func (c *Controller) GolangVacancies(ctx *gin.Context) {
+	content := "" // @TODO
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
+}
