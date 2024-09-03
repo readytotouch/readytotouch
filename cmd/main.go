@@ -136,8 +136,8 @@ func main() {
 	r.GET("/api/v1/users/registration/stats/daily.json", userController.RegistrationDailyCountStats)
 	r.GET("/api/v1/users/online/stats/daily.json", onlineController.DailyCountStats)
 
-	r.GET("/organizers/golang/companies/ukraine", organizerController.GolangCompaniesUkraine)
 	r.GET("/organizers/golang/companies", organizerController.GolangCompanies)
+	r.GET("/organizers/golang/companies/ukraine", organizerController.GolangCompaniesUkraine)
 	r.GET("/organizers/golang/vacancies", organizerController.GolangVacancies)
 
 	r.
@@ -160,9 +160,11 @@ func main() {
 		StaticFile("/design/online-auth", "./public/design/online-auth.html").
 
 		// Design from Organizer
-		StaticFile("/organizers/golang/vacancies", "./public/design/organizer-vacancies-subscribe.html").
-		StaticFile("/organizers/golang/vacancies/subscribe", "./public/design/organizer-vacancies-subscribe.html").
-		StaticFile("/organizers/golang/vacancies/unsubscribe", "./public/design/organizer-vacancies-unsubscribe.html").
+		StaticFile("/design/organizers/golang/companies", "./public/design/golang-companies-organizer.html").
+		StaticFile("/design/organizers/golang/companies/ukraine", "./public/design/golang-companies-organizer.html").
+		StaticFile("/design/organizers/golang/vacancies", "./public/design/organizer-vacancies-subscribe.html").
+		StaticFile("/design/organizers/golang/vacancies/subscribe", "./public/design/organizer-vacancies-subscribe.html").
+		StaticFile("/design/organizers/golang/vacancies/unsubscribe", "./public/design/organizer-vacancies-unsubscribe.html").
 
 		// Design from ChatGPT
 		StaticFile("/design/wip/companies-and-connections", "./public/chatgpt-design/companies-and-connections.html").
