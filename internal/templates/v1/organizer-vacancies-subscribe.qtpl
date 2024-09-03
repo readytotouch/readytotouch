@@ -1,4 +1,4 @@
-{%- func OrganizerVacanciesSubscribe() -%}
+{%- func OrganizerVacanciesSubscribe(subscribedState bool) -%}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -132,8 +132,23 @@
         alt="eyes icon"
       />
       <h1 class="hero__headline">You've come across something we're still working on</h1>
-      <p class="hero__description">Subscribe to be notified when this page is available</p>
-      <a href="#" class="button button--small-padding button--black hero__button">Subscribe</a>
+      {% if subscribedState %}
+        <p class="hero__description hero__description--with-icon">
+          <img
+            class="hero__description-image"
+            width="20"
+            height="20"
+            srcset="/assets/images/pages/organizer/check-mark@2x.png 2x"
+            src="/assets/images/pages/organizer/check-mark.png"
+            alt="check mar icon"
+          />
+          You are subscribed to be notified when this page is available
+        </p>
+        <a href="javascript:void(0);" class="button button--small-padding button--bordered-gray hero__button">Unsubscribe</a>
+      {% else %}
+        <p class="hero__description">Subscribe to be notified when this page is available</p>
+        <a href="javascript:void(0);" class="button button--small-padding button--black hero__button">Subscribe</a>
+      {% endif %}
     </div>
   </div>
 </section>

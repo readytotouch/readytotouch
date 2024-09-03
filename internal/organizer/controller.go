@@ -29,7 +29,11 @@ func (c *Controller) GolangCompanies(ctx *gin.Context) {
 }
 
 func (c *Controller) GolangVacancies(ctx *gin.Context) {
-	content := template.OrganizerVacanciesSubscribe()
+	const (
+		subscribedState = true // @TODO fetch from DB
+	)
+
+	content := template.OrganizerVacanciesSubscribe(subscribedState)
 
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
 }

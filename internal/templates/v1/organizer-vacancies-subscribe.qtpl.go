@@ -14,7 +14,7 @@ var (
 	_ = qt422016.AcquireByteBuffer
 )
 
-func StreamOrganizerVacanciesSubscribe(qw422016 *qt422016.Writer) {
+func StreamOrganizerVacanciesSubscribe(qw422016 *qt422016.Writer, subscribedState bool) {
 	qw422016.N().S(`<!DOCTYPE html>
 <html lang="en">
 
@@ -152,8 +152,29 @@ func StreamOrganizerVacanciesSubscribe(qw422016 *qt422016.Writer) {
         alt="eyes icon"
       />
       <h1 class="hero__headline">You've come across something we're still working on</h1>
-      <p class="hero__description">Subscribe to be notified when this page is available</p>
-      <a href="#" class="button button--small-padding button--black hero__button">Subscribe</a>
+      `)
+	if subscribedState {
+		qw422016.N().S(`
+        <p class="hero__description hero__description--with-icon">
+          <img
+            class="hero__description-image"
+            width="20"
+            height="20"
+            srcset="/assets/images/pages/organizer/check-mark@2x.png 2x"
+            src="/assets/images/pages/organizer/check-mark.png"
+            alt="check mar icon"
+          />
+          You are subscribed to be notified when this page is available
+        </p>
+        <a href="javascript:void(0);" class="button button--small-padding button--bordered-gray hero__button">Unsubscribe</a>
+      `)
+	} else {
+		qw422016.N().S(`
+        <p class="hero__description">Subscribe to be notified when this page is available</p>
+        <a href="javascript:void(0);" class="button button--small-padding button--black hero__button">Subscribe</a>
+      `)
+	}
+	qw422016.N().S(`
     </div>
   </div>
 </section>
@@ -274,15 +295,15 @@ func StreamOrganizerVacanciesSubscribe(qw422016 *qt422016.Writer) {
 `)
 }
 
-func WriteOrganizerVacanciesSubscribe(qq422016 qtio422016.Writer) {
+func WriteOrganizerVacanciesSubscribe(qq422016 qtio422016.Writer, subscribedState bool) {
 	qw422016 := qt422016.AcquireWriter(qq422016)
-	StreamOrganizerVacanciesSubscribe(qw422016)
+	StreamOrganizerVacanciesSubscribe(qw422016, subscribedState)
 	qt422016.ReleaseWriter(qw422016)
 }
 
-func OrganizerVacanciesSubscribe() string {
+func OrganizerVacanciesSubscribe(subscribedState bool) string {
 	qb422016 := qt422016.AcquireByteBuffer()
-	WriteOrganizerVacanciesSubscribe(qb422016)
+	WriteOrganizerVacanciesSubscribe(qb422016, subscribedState)
 	qs422016 := string(qb422016.B)
 	qt422016.ReleaseByteBuffer(qb422016)
 	return qs422016
