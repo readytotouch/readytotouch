@@ -11,6 +11,58 @@ import (
 	"time"
 )
 
+type FeatureWait string
+
+const (
+	FeatureWaitOrganizerGolangCompanies  FeatureWait = "organizer_golang_companies"
+	FeatureWaitOrganizerGolangVacancies  FeatureWait = "organizer_golang_vacancies"
+	FeatureWaitOrganizerRustCompanies    FeatureWait = "organizer_rust_companies"
+	FeatureWaitOrganizerRustVacancies    FeatureWait = "organizer_rust_vacancies"
+	FeatureWaitOrganizerZigCompanies     FeatureWait = "organizer_zig_companies"
+	FeatureWaitOrganizerZigVacancies     FeatureWait = "organizer_zig_vacancies"
+	FeatureWaitOrganizerScalaCompanies   FeatureWait = "organizer_scala_companies"
+	FeatureWaitOrganizerScalaVacancies   FeatureWait = "organizer_scala_vacancies"
+	FeatureWaitOrganizerElixirCompanies  FeatureWait = "organizer_elixir_companies"
+	FeatureWaitOrganizerElixirVacancies  FeatureWait = "organizer_elixir_vacancies"
+	FeatureWaitOrganizerClojureCompanies FeatureWait = "organizer_clojure_companies"
+	FeatureWaitOrganizerClojureVacancies FeatureWait = "organizer_clojure_vacancies"
+)
+
+func (e *FeatureWait) Scan(src interface{}) error {
+	switch s := src.(type) {
+	case []byte:
+		*e = FeatureWait(s)
+	case string:
+		*e = FeatureWait(s)
+	default:
+		return fmt.Errorf("unsupported scan type for FeatureWait: %T", src)
+	}
+	return nil
+}
+
+type NullFeatureWait struct {
+	FeatureWait FeatureWait
+	Valid       bool // Valid is true if FeatureWait is not NULL
+}
+
+// Scan implements the Scanner interface.
+func (ns *NullFeatureWait) Scan(value interface{}) error {
+	if value == nil {
+		ns.FeatureWait, ns.Valid = "", false
+		return nil
+	}
+	ns.Valid = true
+	return ns.FeatureWait.Scan(value)
+}
+
+// Value implements the driver Valuer interface.
+func (ns NullFeatureWait) Value() (driver.Value, error) {
+	if !ns.Valid {
+		return nil, nil
+	}
+	return string(ns.FeatureWait), nil
+}
+
 type SocialProvider string
 
 const (
@@ -60,11 +112,35 @@ func (ns NullSocialProvider) Value() (driver.Value, error) {
 	return string(ns.SocialProvider), nil
 }
 
+type FeatureViewDailyStat struct {
+	Feature   FeatureWait
+	CreatedAt time.Time
+	ViewCount int64
+}
+
+type FeatureViewStat struct {
+	Feature   FeatureWait
+	ViewCount int64
+}
+
 type User struct {
 	ID        int64
 	CreatedAt time.Time
 	UpdatedAt time.Time
 	DeletedAt sql.NullTime
+}
+
+type UserFeatureWaitlist struct {
+	UserID    int64
+	Feature   FeatureWait
+	Active    bool
+	CreatedAt time.Time
+	UpdatedAt time.Time
+}
+
+type UserFeatureWaitlistStat struct {
+	Feature   FeatureWait
+	UserCount int64
 }
 
 type UserOnlineDailyCountStat struct {

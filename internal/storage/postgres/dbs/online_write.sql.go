@@ -31,8 +31,8 @@ func (q *Queries) UserOnlineDailyCountStatsUpsert(ctx context.Context, createdAt
 
 const userOnlineDailyStatsUpsert = `-- name: UserOnlineDailyStatsUpsert :execrows
 INSERT INTO user_online_daily_stats (created_at, user_id)
-VALUES (unnest($1::DATE[]),
-        unnest($2::BIGINT[]))
+VALUES (UNNEST($1::DATE[]),
+        UNNEST($2::BIGINT[]))
 ON CONFLICT (created_at, user_id) DO NOTHING
 `
 
@@ -51,8 +51,8 @@ func (q *Queries) UserOnlineDailyStatsUpsert(ctx context.Context, arg UserOnline
 
 const userOnlineHourlyStatsUpsert = `-- name: UserOnlineHourlyStatsUpsert :execrows
 INSERT INTO user_online_hourly_stats (user_id, created_at)
-VALUES (unnest($1::BIGINT[]),
-        unnest($2::TIMESTAMP[]))
+VALUES (UNNEST($1::BIGINT[]),
+        UNNEST($2::TIMESTAMP[]))
 ON CONFLICT (user_id, created_at) DO NOTHING
 `
 

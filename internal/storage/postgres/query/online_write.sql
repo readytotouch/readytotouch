@@ -1,13 +1,13 @@
 -- name: UserOnlineHourlyStatsUpsert :execrows
 INSERT INTO user_online_hourly_stats (user_id, created_at)
-VALUES (unnest(@user_ids::BIGINT[]),
-        unnest(@created_ats::TIMESTAMP[]))
+VALUES (UNNEST(@user_ids::BIGINT[]),
+        UNNEST(@created_ats::TIMESTAMP[]))
 ON CONFLICT (user_id, created_at) DO NOTHING;
 
 -- name: UserOnlineDailyStatsUpsert :execrows
 INSERT INTO user_online_daily_stats (created_at, user_id)
-VALUES (unnest(@created_ats::DATE[]),
-        unnest(@user_ids::BIGINT[]))
+VALUES (UNNEST(@created_ats::DATE[]),
+        UNNEST(@user_ids::BIGINT[]))
 ON CONFLICT (created_at, user_id) DO NOTHING;
 
 -- name: UserOnlineDailyCountStatsUpsert :exec
