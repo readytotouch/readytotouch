@@ -96,7 +96,7 @@ func (q *Queries) UserFeatureWaitlistStatsUpsert(ctx context.Context, arg UserFe
 
 const userFeatureWaitlistUpsert = `-- name: UserFeatureWaitlistUpsert :execrows
 INSERT INTO user_feature_waitlist AS ufw (user_id, feature, active, created_at, updated_at)
-VALUES ($1, $2, $3, $4, $5)
+VALUES ($1, $2, $3, $4, $4)
 ON CONFLICT (user_id, feature) DO UPDATE
     SET active     = excluded.active,
         updated_at = excluded.updated_at
@@ -108,7 +108,6 @@ type UserFeatureWaitlistUpsertParams struct {
 	Feature   FeatureWait
 	Active    bool
 	CreatedAt time.Time
-	UpdatedAt time.Time
 }
 
 func (q *Queries) UserFeatureWaitlistUpsert(ctx context.Context, arg UserFeatureWaitlistUpsertParams) (int64, error) {
@@ -117,7 +116,6 @@ func (q *Queries) UserFeatureWaitlistUpsert(ctx context.Context, arg UserFeature
 		arg.Feature,
 		arg.Active,
 		arg.CreatedAt,
-		arg.UpdatedAt,
 	)
 	if err != nil {
 		return 0, err

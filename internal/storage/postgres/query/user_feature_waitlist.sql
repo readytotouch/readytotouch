@@ -1,6 +1,6 @@
 -- name: UserFeatureWaitlistUpsert :execrows
 INSERT INTO user_feature_waitlist AS ufw (user_id, feature, active, created_at, updated_at)
-VALUES (@user_id, @feature, @active, @created_at, @updated_at)
+VALUES (@user_id, @feature, @active, @created_at, @created_at)
 ON CONFLICT (user_id, feature) DO UPDATE
     SET active     = excluded.active,
         updated_at = excluded.updated_at

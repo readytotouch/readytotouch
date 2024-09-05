@@ -4,6 +4,7 @@ import (
 	"crypto/rand"
 	"encoding/base64"
 	"net/http"
+	"time"
 
 	"github.com/readytotouch/readytotouch/internal/db/postgres"
 	"github.com/readytotouch/readytotouch/internal/domain"
@@ -122,7 +123,7 @@ func (c *Controller) callback(ctx *gin.Context, provider domain.OAuthProvider) {
 		Email:                user.Email,
 		Username:             user.Username,
 		Name:                 user.Name,
-	})
+	}, time.Now().UTC())
 	if err != nil {
 		ctx.Data(http.StatusInternalServerError, "text/html; charset=utf-8", []byte("Cannot create user"))
 
