@@ -12,6 +12,12 @@ VALUES (@feature, @user_count)
 ON CONFLICT (feature) DO UPDATE
     SET user_count = ufws.user_count + excluded.user_count;
 
+-- name: UserFeatureWaitlist :one
+SELECT active
+FROM user_feature_waitlist
+WHERE user_id = @user_id
+  AND feature = @feature;
+
 -- name: UserFeatureWaitlistDailyStats :many
 WITH aggs AS (
     SELECT created_at::DATE AS day,

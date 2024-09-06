@@ -62,6 +62,25 @@ func (r *UserFeatureWaitlistRepository) Upsert(
 	return nil
 }
 
+func (r *UserFeatureWaitlistRepository) SubscribedState(
+	ctx context.Context,
+	userID int64,
+	feature dbs.FeatureWait,
+) (bool, error) {
+	active, err := r.db.Queries().UserFeatureWaitlist(ctx, dbs.UserFeatureWaitlistParams{
+		UserID:  userID,
+		Feature: feature,
+	})
+	if err == sql.ErrNoRows {
+		return false, nil
+	}
+	if err != nil {
+		return false, err
+	}
+
+	return active, nil
+}
+
 func (r *UserFeatureWaitlistRepository) DailyCountStats(
 	ctx context.Context,
 	feature dbs.FeatureWait,

@@ -10,6 +10,25 @@ import (
 	"time"
 )
 
+const userFeatureWaitlist = `-- name: UserFeatureWaitlist :one
+SELECT active
+FROM user_feature_waitlist
+WHERE user_id = $1
+  AND feature = $2
+`
+
+type UserFeatureWaitlistParams struct {
+	UserID  int64
+	Feature FeatureWait
+}
+
+func (q *Queries) UserFeatureWaitlist(ctx context.Context, arg UserFeatureWaitlistParams) (bool, error) {
+	row := q.queryRow(ctx, q.userFeatureWaitlistStmt, userFeatureWaitlist, arg.UserID, arg.Feature)
+	var active bool
+	err := row.Scan(&active)
+	return active, err
+}
+
 const userFeatureWaitlistDailyStats = `-- name: UserFeatureWaitlistDailyStats :many
 WITH aggs AS (
     SELECT created_at::DATE AS day,

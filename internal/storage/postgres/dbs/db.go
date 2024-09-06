@@ -42,6 +42,9 @@ func Prepare(ctx context.Context, db DBTX) (*Queries, error) {
 	if q.socialUserProfilesByUserStmt, err = db.PrepareContext(ctx, socialUserProfilesByUser); err != nil {
 		return nil, fmt.Errorf("error preparing query SocialUserProfilesByUser: %w", err)
 	}
+	if q.userFeatureWaitlistStmt, err = db.PrepareContext(ctx, userFeatureWaitlist); err != nil {
+		return nil, fmt.Errorf("error preparing query UserFeatureWaitlist: %w", err)
+	}
 	if q.userFeatureWaitlistDailyStatsStmt, err = db.PrepareContext(ctx, userFeatureWaitlistDailyStats); err != nil {
 		return nil, fmt.Errorf("error preparing query UserFeatureWaitlistDailyStats: %w", err)
 	}
@@ -126,6 +129,11 @@ func (q *Queries) Close() error {
 	if q.socialUserProfilesByUserStmt != nil {
 		if cerr := q.socialUserProfilesByUserStmt.Close(); cerr != nil {
 			err = fmt.Errorf("error closing socialUserProfilesByUserStmt: %w", cerr)
+		}
+	}
+	if q.userFeatureWaitlistStmt != nil {
+		if cerr := q.userFeatureWaitlistStmt.Close(); cerr != nil {
+			err = fmt.Errorf("error closing userFeatureWaitlistStmt: %w", cerr)
 		}
 	}
 	if q.userFeatureWaitlistDailyStatsStmt != nil {
@@ -258,6 +266,7 @@ type Queries struct {
 	featureViewStatsUpsertStmt            *sql.Stmt
 	socialUserProfilesStmt                *sql.Stmt
 	socialUserProfilesByUserStmt          *sql.Stmt
+	userFeatureWaitlistStmt               *sql.Stmt
 	userFeatureWaitlistDailyStatsStmt     *sql.Stmt
 	userFeatureWaitlistStatsStmt          *sql.Stmt
 	userFeatureWaitlistStatsUpsertStmt    *sql.Stmt
@@ -287,6 +296,7 @@ func (q *Queries) WithTx(tx *sql.Tx) *Queries {
 		featureViewStatsUpsertStmt:            q.featureViewStatsUpsertStmt,
 		socialUserProfilesStmt:                q.socialUserProfilesStmt,
 		socialUserProfilesByUserStmt:          q.socialUserProfilesByUserStmt,
+		userFeatureWaitlistStmt:               q.userFeatureWaitlistStmt,
 		userFeatureWaitlistDailyStatsStmt:     q.userFeatureWaitlistDailyStatsStmt,
 		userFeatureWaitlistStatsStmt:          q.userFeatureWaitlistStatsStmt,
 		userFeatureWaitlistStatsUpsertStmt:    q.userFeatureWaitlistStatsUpsertStmt,

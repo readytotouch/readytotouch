@@ -48,8 +48,10 @@ func main() {
 	redisClient := redis.MustClient(context.Background(), "redis:6379")
 
 	var (
-		userRepository   = postgres.NewUserRepository(database)
-		onlineRepository = postgres.NewOnlineRepository(database)
+		userRepository                = postgres.NewUserRepository(database)
+		onlineRepository              = postgres.NewOnlineRepository(database)
+		userFeatureWaitlistRepository = postgres.NewUserFeatureWaitlistRepository(database)
+		featureViewStatsRepository    = postgres.NewFeatureViewStatsRepository(database)
 	)
 
 	var (
@@ -97,7 +99,10 @@ func main() {
 		)
 		userController      = pkgUsers.NewController(userRepository)
 		onlineController    = pkgOnline.NewController(userRepository, onlineRepository)
-		organizerController = pkgOrganizer.NewController()
+		organizerController = pkgOrganizer.NewController(
+			userFeatureWaitlistRepository,
+			featureViewStatsRepository,
+		)
 	)
 
 	r := gin.New()
