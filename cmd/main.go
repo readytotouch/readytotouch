@@ -145,6 +145,19 @@ func main() {
 	r.GET("/organizers/golang/companies/ukraine", organizerController.GolangCompaniesUkraine)
 	r.GET("/organizers/golang/vacancies", organizerController.GolangVacancies)
 
+	r.GET("/api/v1/organizers/golang/companies/waitlist/stats.json", organizerController.GolangCompaniesWaitlistStats)
+	r.GET("/api/v1/organizers/golang/vacancies/waitlist/stats.json", organizerController.GolangVacanciesWaitlistStats)
+	r.GET("/api/v1/organizers/rust/companies/waitlist/stats.json", organizerController.RustCompaniesWaitlistStats)
+	r.GET("/api/v1/organizers/rust/vacancies/waitlist/stats.json", organizerController.RustVacanciesWaitlistStats)
+	r.GET("/api/v1/organizers/zig/companies/waitlist/stats.json", organizerController.ZigCompaniesWaitlistStats)
+	r.GET("/api/v1/organizers/zig/vacancies/waitlist/stats.json", organizerController.ZigVacanciesWaitlistStats)
+	r.GET("/api/v1/organizers/scala/companies/waitlist/stats.json", organizerController.ScalaCompaniesWaitlistStats)
+	r.GET("/api/v1/organizers/scala/vacancies/waitlist/stats.json", organizerController.ScalaVacanciesWaitlistStats)
+	r.GET("/api/v1/organizers/elixir/companies/waitlist/stats.json", organizerController.ElixirCompaniesWaitlistStats)
+	r.GET("/api/v1/organizers/elixir/vacancies/waitlist/stats.json", organizerController.ElixirVacanciesWaitlistStats)
+	r.GET("/api/v1/organizers/clojure/companies/waitlist/stats.json", organizerController.ClojureCompaniesWaitlistStats)
+	r.GET("/api/v1/organizers/clojure/vacancies/waitlist/stats.json", organizerController.ClojureVacanciesWaitlistStats)
+
 	r.
 		GET("/auth/github", authController.GithubRedirect).
 		GET("/auth/gitlab", authController.GitlabRedirect).

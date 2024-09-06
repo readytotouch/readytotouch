@@ -64,55 +64,55 @@ func (c *Controller) GolangVacancies(ctx *gin.Context) {
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
 }
 
-func (c *Controller) GolangCompaniesDailyCountStats(ctx *gin.Context) {
-	c.dailyCountStats(ctx, dbs.FeatureWaitOrganizerGolangCompanies)
+func (c *Controller) GolangCompaniesWaitlistStats(ctx *gin.Context) {
+	c.waitlistStats(ctx, dbs.FeatureWaitOrganizerGolangCompanies)
 }
 
-func (c *Controller) GolangVacanciesDailyCountStats(ctx *gin.Context) {
-	c.dailyCountStats(ctx, dbs.FeatureWaitOrganizerGolangVacancies)
+func (c *Controller) GolangVacanciesWaitlistStats(ctx *gin.Context) {
+	c.waitlistStats(ctx, dbs.FeatureWaitOrganizerGolangVacancies)
 }
 
-func (c *Controller) RustCompaniesDailyCountStats(ctx *gin.Context) {
-	c.dailyCountStats(ctx, dbs.FeatureWaitOrganizerRustCompanies)
+func (c *Controller) RustCompaniesWaitlistStats(ctx *gin.Context) {
+	c.waitlistStats(ctx, dbs.FeatureWaitOrganizerRustCompanies)
 }
 
-func (c *Controller) RustVacanciesDailyCountStats(ctx *gin.Context) {
-	c.dailyCountStats(ctx, dbs.FeatureWaitOrganizerRustVacancies)
+func (c *Controller) RustVacanciesWaitlistStats(ctx *gin.Context) {
+	c.waitlistStats(ctx, dbs.FeatureWaitOrganizerRustVacancies)
 }
 
-func (c *Controller) ZigCompaniesDailyCountStats(ctx *gin.Context) {
-	c.dailyCountStats(ctx, dbs.FeatureWaitOrganizerZigCompanies)
+func (c *Controller) ZigCompaniesWaitlistStats(ctx *gin.Context) {
+	c.waitlistStats(ctx, dbs.FeatureWaitOrganizerZigCompanies)
 }
 
-func (c *Controller) ZigVacanciesDailyCountStats(ctx *gin.Context) {
-	c.dailyCountStats(ctx, dbs.FeatureWaitOrganizerZigVacancies)
+func (c *Controller) ZigVacanciesWaitlistStats(ctx *gin.Context) {
+	c.waitlistStats(ctx, dbs.FeatureWaitOrganizerZigVacancies)
 }
 
-func (c *Controller) ScalaCompaniesDailyCountStats(ctx *gin.Context) {
-	c.dailyCountStats(ctx, dbs.FeatureWaitOrganizerScalaCompanies)
+func (c *Controller) ScalaCompaniesWaitlistStats(ctx *gin.Context) {
+	c.waitlistStats(ctx, dbs.FeatureWaitOrganizerScalaCompanies)
 }
 
-func (c *Controller) ScalaVacanciesDailyCountStats(ctx *gin.Context) {
-	c.dailyCountStats(ctx, dbs.FeatureWaitOrganizerScalaVacancies)
+func (c *Controller) ScalaVacanciesWaitlistStats(ctx *gin.Context) {
+	c.waitlistStats(ctx, dbs.FeatureWaitOrganizerScalaVacancies)
 }
 
-func (c *Controller) ElixirCompaniesDailyCountStats(ctx *gin.Context) {
-	c.dailyCountStats(ctx, dbs.FeatureWaitOrganizerElixirCompanies)
+func (c *Controller) ElixirCompaniesWaitlistStats(ctx *gin.Context) {
+	c.waitlistStats(ctx, dbs.FeatureWaitOrganizerElixirCompanies)
 }
 
-func (c *Controller) ElixirVacanciesDailyCountStats(ctx *gin.Context) {
-	c.dailyCountStats(ctx, dbs.FeatureWaitOrganizerElixirVacancies)
+func (c *Controller) ElixirVacanciesWaitlistStats(ctx *gin.Context) {
+	c.waitlistStats(ctx, dbs.FeatureWaitOrganizerElixirVacancies)
 }
 
-func (c *Controller) ClojureCompaniesDailyCountStats(ctx *gin.Context) {
-	c.dailyCountStats(ctx, dbs.FeatureWaitOrganizerClojureCompanies)
+func (c *Controller) ClojureCompaniesWaitlistStats(ctx *gin.Context) {
+	c.waitlistStats(ctx, dbs.FeatureWaitOrganizerClojureCompanies)
 }
 
-func (c *Controller) ClojureVacanciesDailyCountStats(ctx *gin.Context) {
-	c.dailyCountStats(ctx, dbs.FeatureWaitOrganizerClojureVacancies)
+func (c *Controller) ClojureVacanciesWaitlistStats(ctx *gin.Context) {
+	c.waitlistStats(ctx, dbs.FeatureWaitOrganizerClojureVacancies)
 }
 
-func (c *Controller) dailyCountStats(ctx *gin.Context, feature dbs.FeatureWait) {
+func (c *Controller) waitlistStats(ctx *gin.Context, feature dbs.FeatureWait) {
 	stats, err := c.fetchStats(ctx, feature)
 	if err != nil {
 		// @TODO logging
@@ -129,7 +129,7 @@ func (c *Controller) dailyCountStats(ctx *gin.Context, feature dbs.FeatureWait) 
 func (c *Controller) fetchStats(
 	ctx *gin.Context,
 	feature dbs.FeatureWait,
-) (*domain.UserFeatureWaitlistPageStats, error) {
+) (*domain.UserFeatureWaitlistStats, error) {
 	var (
 		to   = time.Now().UTC().Truncate(24 * time.Hour)
 		from = to.AddDate(0, -1, 0)
@@ -155,7 +155,7 @@ func (c *Controller) fetchStats(
 		return nil, err
 	}
 
-	return &domain.UserFeatureWaitlistPageStats{
+	return &domain.UserFeatureWaitlistStats{
 		Subscribers: domain.ChartStats{
 			DailyStats: subscribersDailyStats,
 			TotalCount: subscribersTotalCount,

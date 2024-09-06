@@ -5,7 +5,7 @@ type ChartStats struct {
 	TotalCount int64            `json:"total_count"`
 }
 
-type UserFeatureWaitlistPageStats struct {
+type UserFeatureWaitlistStats struct {
 	Subscribers ChartStats `json:"subscribers"`
 	Views       ChartStats `json:"views"`
 }
