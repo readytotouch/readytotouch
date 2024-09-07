@@ -154,28 +154,41 @@ func StreamOrganizerVacanciesSubscribe(qw422016 *qt422016.Writer, subscribedStat
       />
       <h1 class="hero__headline">You've come across something we're still working on</h1>
       `)
+	var (
+		subscribeStateClass   = ""
+		unsubscribeStateClass = ""
+	)
+
 	if subscribedState {
-		qw422016.N().S(`
-        <p class="hero__description hero__description--with-icon">
-          <img
-            class="hero__description-image"
-            width="20"
-            height="20"
-            srcset="/assets/images/pages/organizer/check-mark@2x.png 2x"
-            src="/assets/images/pages/organizer/check-mark.png"
-            alt="check mar icon"
-          />
-          You are subscribed to be notified when this page is available
-        </p>
-        <a href="javascript:void(0);" class="button button--small-padding button--bordered-gray hero__button">Unsubscribe</a>
-      `)
+		subscribeStateClass = "d-none"
 	} else {
-		qw422016.N().S(`
-        <p class="hero__description">Subscribe to be notified when this page is available</p>
-        <a href="javascript:void(0);" class="button button--small-padding button--black hero__button">Subscribe</a>
-      `)
+		unsubscribeStateClass = "d-none"
 	}
+
 	qw422016.N().S(`
+      <p class="hero__description hero__description--with-icon js-feature-unsubscribe `)
+	qw422016.E().S(unsubscribeStateClass)
+	qw422016.N().S(`">
+        <img
+          class="hero__description-image"
+          width="20"
+          height="20"
+          srcset="/assets/images/pages/organizer/check-mark@2x.png 2x"
+          src="/assets/images/pages/organizer/check-mark.png"
+          alt="check mar icon"
+        />
+        You are subscribed to be notified when this page is available
+      </p>
+      <a href="javascript:void(0);" class="button button--small-padding button--bordered-gray hero__button js-feature-unsubscribe `)
+	qw422016.E().S(unsubscribeStateClass)
+	qw422016.N().S(`">Unsubscribe</a>
+
+      <p class="hero__description js-feature-subscribe `)
+	qw422016.E().S(subscribeStateClass)
+	qw422016.N().S(`">Subscribe to be notified when this page is available</p>
+      <a href="javascript:void(0);" class="button button--small-padding button--black hero__button js-feature-subscribe `)
+	qw422016.E().S(subscribeStateClass)
+	qw422016.N().S(`">Subscribe</a>
     </div>
   </div>
 </section>

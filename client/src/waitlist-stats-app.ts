@@ -9,6 +9,24 @@ fetch(`/api/v1${window.location.pathname}/waitlist/stats.json`)
     .then(renderWaitlistStats)
     .catch(console.error);
 
+document.querySelector("a.js-feature-subscribe").addEventListener("click", function (event) {
+    toggleSubscribeState(false);
+});
+
+document.querySelector("a.js-feature-unsubscribe").addEventListener("click", function (event) {
+    toggleSubscribeState(true);
+});
+
+function toggleSubscribeState(subscribed: boolean) {
+    document.querySelectorAll(".js-feature-unsubscribe").forEach(function ($element) {
+        $element.classList.toggle("d-none", subscribed);
+    });
+
+    document.querySelectorAll(".js-feature-subscribe").forEach(function ($element) {
+        $element.classList.toggle("d-none", !subscribed);
+    });
+}
+
 function renderWaitlistStats(data) {
     renderViewsStats(data.views.daily_stats);
     renderSubscribersStats(data.subscribers.daily_stats);
