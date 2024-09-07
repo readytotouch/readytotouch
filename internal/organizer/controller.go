@@ -23,6 +23,10 @@ func NewController(userFeatureWaitlistRepository *postgres.UserFeatureWaitlistRe
 	return &Controller{userFeatureWaitlistRepository: userFeatureWaitlistRepository, featureViewStatsRepository: featureViewStatsRepository}
 }
 
+func (c *Controller) Welcome(ctx *gin.Context) {
+
+}
+
 func (c *Controller) GolangCompaniesUkraine(ctx *gin.Context) {
 	content := template.Organizer(db.GolangCompanies(), db.UkrainianUniversities())
 
@@ -63,6 +67,10 @@ func (c *Controller) GolangVacancies(ctx *gin.Context) {
 	content := template.OrganizerVacanciesSubscribe(subscribedState)
 
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
+}
+
+func (c *Controller) TODO(ctx *gin.Context) {
+	ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("TODO"))
 }
 
 func (c *Controller) WaitlistStats(ctx *gin.Context) {

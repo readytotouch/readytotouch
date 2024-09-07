@@ -26,7 +26,7 @@ function subscribe(subscribed: boolean) {
     }).then(function (response) {
         // Unauthorized
         if (response.status === 401) {
-            window.location.href = `/organizers/welcome?redirect=${encodeURIComponent(window.location.pathname)}`;
+            window.location.href = welcome();
 
             return;
         }
@@ -81,4 +81,12 @@ function render($element: Element, name, color: string, data: Array<TimeCountSta
 
 function sum(data: Array<TimeCountStats>) {
     return data.reduce((acc, item) => acc + item.count, 0);
+}
+
+function welcome() {
+    const pathname = window.location.pathname;
+
+    const index = pathname.lastIndexOf('/');
+
+    return `${pathname.substring(0, index)}/welcome?redirect=${encodeURIComponent(pathname)}`;
 }
