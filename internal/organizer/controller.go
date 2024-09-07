@@ -64,7 +64,7 @@ func (c *Controller) GolangVacancies(ctx *gin.Context) {
 		}
 	}
 
-	content := template.OrganizerVacanciesSubscribe(subscribedState)
+	content := template.OrganizersWaitlist(subscribedState)
 
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
 }
