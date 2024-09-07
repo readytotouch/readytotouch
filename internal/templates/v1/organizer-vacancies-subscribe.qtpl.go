@@ -29,24 +29,25 @@ func StreamOrganizerVacanciesSubscribe(qw422016 *qt422016.Writer, subscribedStat
 	streamfavicon(qw422016)
 	qw422016.N().S(`
 
-	<link rel='preload'
-				href='/assets/fonts/montserrat/montserrat-latin-700.woff2'
-				as='font'
-				type='font/woff2'
+	<link rel="preload"
+				href="/assets/fonts/montserrat/montserrat-latin-700.woff2"
+				as="font"
+				type="font/woff2"
 				crossorigin
 	>
-	<link rel='preload'
-				href='/assets/fonts/inter/inter-latin-regular.woff2'
-				as='font'
-				type='font/woff2'
+	<link rel="preload"
+				href="/assets/fonts/inter/inter-latin-regular.woff2"
+				as="font"
+				type="font/woff2"
 				crossorigin
 	>
-	<link rel='preload'
-				href='/assets/fonts/inter/inter-latin-500.woff2'
-				as='font'
-				type='font/woff2'
+	<link rel="preload"
+				href="/assets/fonts/inter/inter-latin-500.woff2"
+				as="font"
+				type="font/woff2"
 				crossorigin
 	>
+	<script src="https://cdn.jsdelivr.net/npm/apexcharts@3.52.0"></script>
 
 	`)
 	streamorganizerVacanciesSubscribeStyles(qw422016)
@@ -189,14 +190,14 @@ func StreamOrganizerVacanciesSubscribe(qw422016 *qt422016.Writer, subscribedStat
         <div class="stats__counters">
           <div class="stats__counters-item">
             <p class="stats__counters-views">Total views</p>
-            <p class="stats__counters-item-number">846</p>
+            <p class="stats__counters-item-number js-stats-total-views">∞</p>
           </div>
           <div class="stats__counters-item">
             <p class="stats__counters-views">Last month's views</p>
-            <p class="stats__counters-item-number">146</p>
+            <p class="stats__counters-item-number js-stats-last-month-views">∞</p>
           </div>
         </div>
-        <div class="stats__chart stats__chart--page-views-statistics js-page-views-statistics"></div>
+        <div class="stats__chart stats__chart--page-views-statistics js-chart-views-statistics"></div>
       </div>
       <div class="stats__item">
         <div class="stats__header">
@@ -205,15 +206,15 @@ func StreamOrganizerVacanciesSubscribe(qw422016 *qt422016.Writer, subscribedStat
         <div class="stats__counters">
           <div class="stats__counters-item">
             <p class="stats__counters-views">Total subscribers</p>
-            <p class="stats__counters-item-number">129</p>
+            <p class="stats__counters-item-number js-stats-total-subscribers">∞</p>
           </div>
           <div class="stats__counters-item">
             <p class="stats__counters-views">Last month’s subscribers</p>
-            <p class="stats__counters-item-number">63</p>
+            <p class="stats__counters-item-number js-stats-last-month-subscribers">∞</p>
           </div>
         </div>
         <div class="stats__chart">
-          <div class="stats__chart stats__chart--subscribers-statistics js-subscribers-statistics"></div>
+          <div class="stats__chart stats__chart--subscribers-statistics js-chart-subscribers-statistics"></div>
         </div>
       </div>
     </div>
@@ -289,7 +290,9 @@ func StreamOrganizerVacanciesSubscribe(qw422016 *qt422016.Writer, subscribedStat
     </div>
   </div>
 </footer>
-<script src="/assets/js/organizer-vacancies_4801c60e30ec09e3b1f78ec58c31176c.js"></script>
+<script src="/assets/js/waitlist-stats-app.js?`)
+	qw422016.N().D(appVersion)
+	qw422016.N().S(`"></script>
 </body>
 </html>
 `)
