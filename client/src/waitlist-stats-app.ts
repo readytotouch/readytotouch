@@ -24,6 +24,13 @@ function subscribe(subscribed: boolean) {
             active: subscribed,
         }),
     }).then(function (response) {
+        // Unauthorized
+        if (response.status === 401) {
+            window.location.href = `/organizers/welcome?redirect=${encodeURIComponent(window.location.pathname)}`;
+
+            return;
+        }
+
         toggleSubscribeState(!subscribed);
     }).catch(console.error);
 }
