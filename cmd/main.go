@@ -185,8 +185,9 @@ func main() {
 		StaticFile("/design/online-auth", "./public/design/online-auth.html").
 
 		// Design from Organizer
-		StaticFile("/design/organizers/golang/companies", "./public/design/golang-companies-organizer.html").
+		StaticFile("/design/organizers/golang/welcome", "./public/design/organizer-welcome.html").
 		StaticFile("/design/organizers/golang/companies/ukraine", "./public/design/golang-companies-organizer.html").
+		StaticFile("/design/organizers/golang/companies", "./public/design/golang-companies-organizer.html").
 		StaticFile("/design/organizers/golang/vacancies", "./public/design/organizer-vacancies-subscribe.html").
 		StaticFile("/design/organizers/golang/vacancies/subscribe", "./public/design/organizer-vacancies-subscribe.html").
 		StaticFile("/design/organizers/golang/vacancies/unsubscribe", "./public/design/organizer-vacancies-unsubscribe.html").
