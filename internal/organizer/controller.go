@@ -2,6 +2,7 @@ package organizer
 
 import (
 	"net/http"
+	"net/url"
 	"time"
 
 	"github.com/readytotouch/readytotouch/internal/db/postgres"
@@ -64,52 +65,98 @@ func (c *Controller) GolangVacancies(ctx *gin.Context) {
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
 }
 
-func (c *Controller) GolangCompaniesWaitlistStats(ctx *gin.Context) {
-	c.waitlistStats(ctx, dbs.FeatureWaitOrganizerGolangCompanies)
+func (c *Controller) WaitlistStats(ctx *gin.Context) {
+	feature, done := c.parseFeatureFromReferer(ctx)
+	if done {
+		return
+	}
+
+	c.waitlistStats(ctx, feature)
 }
 
-func (c *Controller) GolangVacanciesWaitlistStats(ctx *gin.Context) {
-	c.waitlistStats(ctx, dbs.FeatureWaitOrganizerGolangVacancies)
+func (c *Controller) WaitlistSubscribe(ctx *gin.Context) {
+	type subscribeRequestBody struct {
+		Active bool `json:"active"`
+	}
+
+	var (
+		authUserID = domain.ContextGetUserID(ctx)
+	)
+
+	if authUserID == 0 {
+		ctx.JSON(http.StatusUnauthorized, &domain.ErrorResponse{
+			ErrorMessage: "Unauthorized",
+		})
+		return
+	}
+
+	var body subscribeRequestBody
+	if err := ctx.ShouldBindJSON(&body); err != nil {
+		ctx.JSON(http.StatusBadRequest, &domain.ErrorResponse{
+			ErrorMessage: err.Error(),
+		})
+		return
+	}
+
+	feature, done := c.parseFeatureFromReferer(ctx)
+	if done {
+		return
+	}
+
+	err := c.userFeatureWaitlistRepository.Upsert(ctx, authUserID, feature, body.Active, time.Now().UTC())
+	if err != nil {
+		// @TODO logging
+
+		ctx.JSON(http.StatusInternalServerError, &domain.ErrorResponse{
+			ErrorMessage: err.Error(), // Yes, we are leaking the error message to the client, it's fine for now
+		})
+		return
+	}
+
+	ctx.JSON(http.StatusOK, nil)
 }
 
-func (c *Controller) RustCompaniesWaitlistStats(ctx *gin.Context) {
-	c.waitlistStats(ctx, dbs.FeatureWaitOrganizerRustCompanies)
-}
+func (c *Controller) parseFeatureFromReferer(ctx *gin.Context) (dbs.FeatureWait, bool) {
+	var referer = ctx.Request.Referer()
+	if referer == "" {
+		ctx.JSON(http.StatusBadRequest, &domain.ErrorResponse{
+			ErrorMessage: "Referer is empty",
+		})
+		return "", true
+	}
 
-func (c *Controller) RustVacanciesWaitlistStats(ctx *gin.Context) {
-	c.waitlistStats(ctx, dbs.FeatureWaitOrganizerRustVacancies)
-}
+	refererURL, err := url.Parse(referer)
+	if err != nil {
+		ctx.JSON(http.StatusBadRequest, &domain.ErrorResponse{
+			ErrorMessage: err.Error(),
+		})
+		return "", true
+	}
 
-func (c *Controller) ZigCompaniesWaitlistStats(ctx *gin.Context) {
-	c.waitlistStats(ctx, dbs.FeatureWaitOrganizerZigCompanies)
-}
+	featurePathMap := map[string]dbs.FeatureWait{
+		"/organizers/golang/companies":  dbs.FeatureWaitOrganizerGolangCompanies,
+		"/organizers/golang/vacancies":  dbs.FeatureWaitOrganizerGolangVacancies,
+		"/organizers/rust/companies":    dbs.FeatureWaitOrganizerRustCompanies,
+		"/organizers/rust/vacancies":    dbs.FeatureWaitOrganizerRustVacancies,
+		"/organizers/zig/companies":     dbs.FeatureWaitOrganizerZigCompanies,
+		"/organizers/zig/vacancies":     dbs.FeatureWaitOrganizerZigVacancies,
+		"/organizers/scala/companies":   dbs.FeatureWaitOrganizerScalaCompanies,
+		"/organizers/scala/vacancies":   dbs.FeatureWaitOrganizerScalaVacancies,
+		"/organizers/elixir/companies":  dbs.FeatureWaitOrganizerElixirCompanies,
+		"/organizers/elixir/vacancies":  dbs.FeatureWaitOrganizerElixirVacancies,
+		"/organizers/clojure/companies": dbs.FeatureWaitOrganizerClojureCompanies,
+		"/organizers/clojure/vacancies": dbs.FeatureWaitOrganizerClojureVacancies,
+	}
 
-func (c *Controller) ZigVacanciesWaitlistStats(ctx *gin.Context) {
-	c.waitlistStats(ctx, dbs.FeatureWaitOrganizerZigVacancies)
-}
+	feature, ok := featurePathMap[refererURL.Path]
+	if !ok {
+		ctx.JSON(http.StatusBadRequest, &domain.ErrorResponse{
+			ErrorMessage: "Feature not found",
+		})
+		return "", true
+	}
 
-func (c *Controller) ScalaCompaniesWaitlistStats(ctx *gin.Context) {
-	c.waitlistStats(ctx, dbs.FeatureWaitOrganizerScalaCompanies)
-}
-
-func (c *Controller) ScalaVacanciesWaitlistStats(ctx *gin.Context) {
-	c.waitlistStats(ctx, dbs.FeatureWaitOrganizerScalaVacancies)
-}
-
-func (c *Controller) ElixirCompaniesWaitlistStats(ctx *gin.Context) {
-	c.waitlistStats(ctx, dbs.FeatureWaitOrganizerElixirCompanies)
-}
-
-func (c *Controller) ElixirVacanciesWaitlistStats(ctx *gin.Context) {
-	c.waitlistStats(ctx, dbs.FeatureWaitOrganizerElixirVacancies)
-}
-
-func (c *Controller) ClojureCompaniesWaitlistStats(ctx *gin.Context) {
-	c.waitlistStats(ctx, dbs.FeatureWaitOrganizerClojureCompanies)
-}
-
-func (c *Controller) ClojureVacanciesWaitlistStats(ctx *gin.Context) {
-	c.waitlistStats(ctx, dbs.FeatureWaitOrganizerClojureVacancies)
+	return feature, false
 }
 
 func (c *Controller) waitlistStats(ctx *gin.Context, feature dbs.FeatureWait) {

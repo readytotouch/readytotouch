@@ -2,7 +2,7 @@ import {TimeCountStats} from "./domain";
 import {formatDay} from "./format";
 import apexchartsCommonOptions from "./apexcharts-common-options";
 
-fetch(`/api/v1${window.location.pathname}/waitlist/stats.json`)
+fetch(`/api/v1/features/auto/waitlist/stats.json`)
     .then(function (response) {
         return response.json();
     })
@@ -10,12 +10,23 @@ fetch(`/api/v1${window.location.pathname}/waitlist/stats.json`)
     .catch(console.error);
 
 document.querySelector("a.js-feature-subscribe").addEventListener("click", function (event) {
-    toggleSubscribeState(false);
+    subscribe(true);
 });
 
 document.querySelector("a.js-feature-unsubscribe").addEventListener("click", function (event) {
-    toggleSubscribeState(true);
+    subscribe(false);
 });
+
+function subscribe(subscribed: boolean) {
+    fetch(`/api/v1/features/auto/waitlist/subscribe.json`, {
+        method: "POST",
+        body: JSON.stringify({
+            active: subscribed,
+        }),
+    }).then(function (response) {
+        toggleSubscribeState(!subscribed);
+    }).catch(console.error);
+}
 
 function toggleSubscribeState(subscribed: boolean) {
     document.querySelectorAll(".js-feature-unsubscribe").forEach(function ($element) {
