@@ -14,7 +14,7 @@ var (
 	_ = qt422016.AcquireByteBuffer
 )
 
-func StreamOrganizersWaitlist(qw422016 *qt422016.Writer, subscribedState bool) {
+func StreamOrganizersWaitlist(qw422016 *qt422016.Writer, organizerFeature OrganizerFeature, subscribedState bool) {
 	qw422016.N().S(`<!DOCTYPE html>
 <html lang="en">
 
@@ -46,16 +46,30 @@ func StreamOrganizersWaitlist(qw422016 *qt422016.Writer, subscribedState bool) {
         width="129"
         height="32"
         class="header__logo-img"
-        src="/assets/images/pages/organizer/organizer.svg"
+        src="/assets/images/pages/organizer/`)
+	qw422016.E().S(organizerFeature.Organizer.Logo)
+	qw422016.N().S(`"
         alt="organizer logo"
       />
     </a>
+    `)
+	var navigation = toFeatureNavigation(organizerFeature.Path)
+
+	qw422016.N().S(`
     <ul class="header__nav">
       <li class="header__nav-item">
-        <a href="/companies" class="header__nav-link">Companies</a>
+        <a href="`)
+	qw422016.E().S(navigation.companiesURL)
+	qw422016.N().S(`" class="header__nav-link `)
+	qw422016.E().S(navigation.companiesActive)
+	qw422016.N().S(`">Companies</a>
       </li>
       <li class="header__nav-item">
-        <a href="/vacancies" class="header__nav-link active">Vacancies</a>
+        <a href="`)
+	qw422016.E().S(navigation.vacanciesURL)
+	qw422016.N().S(`" class="header__nav-link `)
+	qw422016.E().S(navigation.vacanciesActive)
+	qw422016.N().S(`">Vacancies</a>
       </li>
     </ul>
     <div class="header__stars">
@@ -112,13 +126,20 @@ func StreamOrganizersWaitlist(qw422016 *qt422016.Writer, subscribedState bool) {
   <nav aria-label="breadcrumb" aria-labelledby="navigation through the bread crumbs" class="breadcrumb">
     <ul class="breadcrumb__list">
       <li class="breadcrumb__item">
-        <a class="breadcrumb__link" href="javascript:">Main</a>
+        <a class="breadcrumb__link" href="/">Main</a>
       </li>
       <li class="breadcrumb__item">
-        <a class="breadcrumb__link" href="javascript:">Organizer</a>
+        <a class="breadcrumb__link" href="/organizers">Organizers</a>
       </li>
       <li class="breadcrumb__item">
-        <span class="breadcrumb__page" aria-current="page">Golang</span>
+        <a class="breadcrumb__link" href="javascript:void(0);">`)
+	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.N().S(`</a>
+      </li>
+      <li class="breadcrumb__item">
+        <span class="breadcrumb__page" aria-current="page">`)
+	qw422016.E().S(organizerFeature.Title)
+	qw422016.N().S(`</span>
       </li>
     </ul>
   </nav>
@@ -294,15 +315,15 @@ func StreamOrganizersWaitlist(qw422016 *qt422016.Writer, subscribedState bool) {
 `)
 }
 
-func WriteOrganizersWaitlist(qq422016 qtio422016.Writer, subscribedState bool) {
+func WriteOrganizersWaitlist(qq422016 qtio422016.Writer, organizerFeature OrganizerFeature, subscribedState bool) {
 	qw422016 := qt422016.AcquireWriter(qq422016)
-	StreamOrganizersWaitlist(qw422016, subscribedState)
+	StreamOrganizersWaitlist(qw422016, organizerFeature, subscribedState)
 	qt422016.ReleaseWriter(qw422016)
 }
 
-func OrganizersWaitlist(subscribedState bool) string {
+func OrganizersWaitlist(organizerFeature OrganizerFeature, subscribedState bool) string {
 	qb422016 := qt422016.AcquireByteBuffer()
-	WriteOrganizersWaitlist(qb422016, subscribedState)
+	WriteOrganizersWaitlist(qb422016, organizerFeature, subscribedState)
 	qs422016 := string(qb422016.B)
 	qt422016.ReleaseByteBuffer(qb422016)
 	return qs422016

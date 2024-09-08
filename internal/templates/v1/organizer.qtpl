@@ -1,4 +1,8 @@
-{%- func Organizer(companies []Company, universities []University) -%}
+{% comment %}
+    https://github.com/readytotouch/golang-companies-organizer
+{% endcomment %}
+
+{%- func OrganizerStatic(companies []Company, universities []University) -%}
 <!DOCTYPE html>
 <html lang="en">
 

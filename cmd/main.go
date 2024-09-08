@@ -150,17 +150,17 @@ func main() {
 
 	r.GET("/organizers/golang/companies/ukraine", organizerController.GolangCompaniesUkraine)
 	r.GET("/organizers/golang/companies", organizerController.GolangCompanies)
-	r.GET("/organizers/golang/vacancies", organizerController.GolangVacancies)
-	r.GET("/organizers/rust/companies", organizerController.TODO)
-	r.GET("/organizers/rust/vacancies", organizerController.TODO)
-	r.GET("/organizers/zig/companies", organizerController.TODO)
-	r.GET("/organizers/zig/vacancies", organizerController.TODO)
-	r.GET("/organizers/scala/companies", organizerController.TODO)
-	r.GET("/organizers/scala/vacancies", organizerController.TODO)
-	r.GET("/organizers/elixir/companies", organizerController.TODO)
-	r.GET("/organizers/elixir/vacancies", organizerController.TODO)
-	r.GET("/organizers/clojure/companies", organizerController.TODO)
-	r.GET("/organizers/clojure/vacancies", organizerController.TODO)
+	r.GET("/organizers/golang/vacancies", organizerController.Waitlist)
+	r.GET("/organizers/rust/companies", organizerController.Waitlist)
+	r.GET("/organizers/rust/vacancies", organizerController.Waitlist)
+	r.GET("/organizers/zig/companies", organizerController.Waitlist)
+	r.GET("/organizers/zig/vacancies", organizerController.Waitlist)
+	r.GET("/organizers/scala/companies", organizerController.Waitlist)
+	r.GET("/organizers/scala/vacancies", organizerController.Waitlist)
+	r.GET("/organizers/elixir/companies", organizerController.Waitlist)
+	r.GET("/organizers/elixir/vacancies", organizerController.Waitlist)
+	r.GET("/organizers/clojure/companies", organizerController.Waitlist)
+	r.GET("/organizers/clojure/vacancies", organizerController.Waitlist)
 
 	r.GET("/api/v1/features/auto/waitlist/stats.json", organizerController.WaitlistStats)
 	r.POST("/api/v1/features/auto/waitlist/subscribe.json", organizerController.WaitlistSubscribe)
@@ -184,7 +184,7 @@ func main() {
 		StaticFile("/design/online", "./public/design/online.html").
 		StaticFile("/design/online-auth", "./public/design/online-auth.html").
 
-		// Design from Organizer
+		// Design from OrganizerFeature
 		StaticFile("/design/organizers/golang/welcome", "./public/design/organizer-welcome.html").
 		StaticFile("/design/organizers/golang/companies/ukraine", "./public/design/golang-companies-organizer.html").
 		StaticFile("/design/organizers/golang/companies", "./public/design/golang-companies-organizer.html").

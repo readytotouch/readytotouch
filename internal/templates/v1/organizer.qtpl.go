@@ -14,7 +14,7 @@ var (
 	_ = qt422016.AcquireByteBuffer
 )
 
-func StreamOrganizer(qw422016 *qt422016.Writer, companies []Company, universities []University) {
+func StreamOrganizerStatic(qw422016 *qt422016.Writer, companies []Company, universities []University) {
 	qw422016.N().S(`<!DOCTYPE html>
 <html lang="en">
 
@@ -252,15 +252,15 @@ func StreamOrganizer(qw422016 *qt422016.Writer, companies []Company, universitie
 `)
 }
 
-func WriteOrganizer(qq422016 qtio422016.Writer, companies []Company, universities []University) {
+func WriteOrganizerStatic(qq422016 qtio422016.Writer, companies []Company, universities []University) {
 	qw422016 := qt422016.AcquireWriter(qq422016)
-	StreamOrganizer(qw422016, companies, universities)
+	StreamOrganizerStatic(qw422016, companies, universities)
 	qt422016.ReleaseWriter(qw422016)
 }
 
-func Organizer(companies []Company, universities []University) string {
+func OrganizerStatic(companies []Company, universities []University) string {
 	qb422016 := qt422016.AcquireByteBuffer()
-	WriteOrganizer(qb422016, companies, universities)
+	WriteOrganizerStatic(qb422016, companies, universities)
 	qs422016 := string(qb422016.B)
 	qt422016.ReleaseByteBuffer(qb422016)
 	return qs422016

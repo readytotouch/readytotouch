@@ -24,28 +24,39 @@ func NewController(userFeatureWaitlistRepository *postgres.UserFeatureWaitlistRe
 }
 
 func (c *Controller) Welcome(ctx *gin.Context) {
+	content := template.OrganizersWelcome()
 
+	ctx.FullPath()
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
 }
 
 func (c *Controller) GolangCompaniesUkraine(ctx *gin.Context) {
-	content := template.Organizer(db.GolangCompanies(), db.UkrainianUniversities())
+	content := template.OrganizerStatic(db.GolangCompanies(), db.UkrainianUniversities())
 
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
 }
 
 func (c *Controller) GolangCompanies(ctx *gin.Context) {
-	content := template.Organizer(db.GolangCompanies(), db.UkrainianUniversities())
+	content := template.OrganizerStatic(db.GolangCompanies(), db.UkrainianUniversities())
 
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
 }
 
-func (c *Controller) GolangVacancies(ctx *gin.Context) {
+func (c *Controller) Waitlist(ctx *gin.Context) {
 	var (
 		authUserID      = domain.ContextGetUserID(ctx)
 		subscribedState = false
 	)
 
-	err := c.featureViewStatsRepository.Upsert(ctx, dbs.FeatureWaitOrganizerGolangVacancies, time.Now().UTC())
+	organizer, ok := c.organizer(ctx.FullPath())
+	if !ok {
+		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Feature not found"))
+
+		return
+	}
+
+	err := c.featureViewStatsRepository.Upsert(ctx, organizer.Feature, time.Now().UTC())
 	if err != nil {
 		// @TODO logging
 
@@ -55,7 +66,7 @@ func (c *Controller) GolangVacancies(ctx *gin.Context) {
 	if authUserID > 0 {
 		subscribedState, err = c.
 			userFeatureWaitlistRepository.
-			SubscribedState(ctx, authUserID, dbs.FeatureWaitOrganizerGolangVacancies)
+			SubscribedState(ctx, authUserID, organizer.Feature)
 
 		if err != nil {
 			// @TODO logging
@@ -64,7 +75,7 @@ func (c *Controller) GolangVacancies(ctx *gin.Context) {
 		}
 	}
 
-	content := template.OrganizersWaitlist(subscribedState)
+	content := template.OrganizersWaitlist(organizer, subscribedState)
 
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
 }
@@ -141,22 +152,7 @@ func (c *Controller) parseFeatureFromReferer(ctx *gin.Context) (dbs.FeatureWait,
 		return "", true
 	}
 
-	featurePathMap := map[string]dbs.FeatureWait{
-		"/organizers/golang/companies":  dbs.FeatureWaitOrganizerGolangCompanies,
-		"/organizers/golang/vacancies":  dbs.FeatureWaitOrganizerGolangVacancies,
-		"/organizers/rust/companies":    dbs.FeatureWaitOrganizerRustCompanies,
-		"/organizers/rust/vacancies":    dbs.FeatureWaitOrganizerRustVacancies,
-		"/organizers/zig/companies":     dbs.FeatureWaitOrganizerZigCompanies,
-		"/organizers/zig/vacancies":     dbs.FeatureWaitOrganizerZigVacancies,
-		"/organizers/scala/companies":   dbs.FeatureWaitOrganizerScalaCompanies,
-		"/organizers/scala/vacancies":   dbs.FeatureWaitOrganizerScalaVacancies,
-		"/organizers/elixir/companies":  dbs.FeatureWaitOrganizerElixirCompanies,
-		"/organizers/elixir/vacancies":  dbs.FeatureWaitOrganizerElixirVacancies,
-		"/organizers/clojure/companies": dbs.FeatureWaitOrganizerClojureCompanies,
-		"/organizers/clojure/vacancies": dbs.FeatureWaitOrganizerClojureVacancies,
-	}
-
-	feature, ok := featurePathMap[refererURL.Path]
+	organizer, ok := c.organizer(refererURL.Path)
 	if !ok {
 		ctx.JSON(http.StatusBadRequest, &domain.ErrorResponse{
 			ErrorMessage: "Feature not found",
@@ -164,7 +160,88 @@ func (c *Controller) parseFeatureFromReferer(ctx *gin.Context) (dbs.FeatureWait,
 		return "", true
 	}
 
-	return feature, false
+	return organizer.Feature, false
+}
+
+func (c *Controller) organizer(path string) (domain.OrganizerFeature, bool) {
+	featurePathMap := map[string]domain.OrganizerFeature{
+		"/organizers/golang/companies": {
+			Organizer: domain.OrganizerGolang,
+			Feature:   dbs.FeatureWaitOrganizerGolangCompanies,
+			Path:      path,
+			Title:     "Companies",
+		},
+		"/organizers/golang/vacancies": {
+			Organizer: domain.OrganizerGolang,
+			Feature:   dbs.FeatureWaitOrganizerGolangVacancies,
+			Path:      path,
+			Title:     "Vacancies",
+		},
+		"/organizers/rust/companies": {
+			Organizer: domain.OrganizerRust,
+			Feature:   dbs.FeatureWaitOrganizerRustCompanies,
+			Path:      path,
+			Title:     "Companies",
+		},
+		"/organizers/rust/vacancies": {
+			Organizer: domain.OrganizerRust,
+			Feature:   dbs.FeatureWaitOrganizerRustVacancies,
+			Path:      path,
+			Title:     "Vacancies",
+		},
+		"/organizers/zig/companies": {
+			Organizer: domain.OrganizerZig,
+			Feature:   dbs.FeatureWaitOrganizerZigCompanies,
+			Path:      path,
+			Title:     "Companies",
+		},
+		"/organizers/zig/vacancies": {
+			Organizer: domain.OrganizerZig,
+			Feature:   dbs.FeatureWaitOrganizerZigVacancies,
+			Path:      path,
+			Title:     "Vacancies",
+		},
+		"/organizers/scala/companies": {
+			Organizer: domain.OrganizerScala,
+			Feature:   dbs.FeatureWaitOrganizerScalaCompanies,
+			Path:      path,
+			Title:     "Companies",
+		},
+		"/organizers/scala/vacancies": {
+			Organizer: domain.OrganizerScala,
+			Feature:   dbs.FeatureWaitOrganizerScalaVacancies,
+			Path:      path,
+			Title:     "Vacancies",
+		},
+		"/organizers/elixir/companies": {
+			Organizer: domain.OrganizerElixir,
+			Feature:   dbs.FeatureWaitOrganizerElixirCompanies,
+			Path:      path,
+			Title:     "Companies",
+		},
+		"/organizers/elixir/vacancies": {
+			Organizer: domain.OrganizerElixir,
+			Feature:   dbs.FeatureWaitOrganizerElixirVacancies,
+			Path:      path,
+			Title:     "Vacancies",
+		},
+		"/organizers/clojure/companies": {
+			Organizer: domain.OrganizerClojure,
+			Feature:   dbs.FeatureWaitOrganizerClojureCompanies,
+			Path:      path,
+			Title:     "Companies",
+		},
+		"/organizers/clojure/vacancies": {
+			Organizer: domain.OrganizerClojure,
+			Feature:   dbs.FeatureWaitOrganizerClojureVacancies,
+			Path:      path,
+			Title:     "Vacancies",
+		},
+	}
+
+	feature, ok := featurePathMap[path]
+
+	return feature, ok
 }
 
 func (c *Controller) waitlistStats(ctx *gin.Context, feature dbs.FeatureWait) {

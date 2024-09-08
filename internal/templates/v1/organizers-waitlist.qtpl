@@ -1,4 +1,4 @@
-{%- func OrganizersWaitlist(subscribedState bool) -%}
+{%- func OrganizersWaitlist(organizerFeature OrganizerFeature, subscribedState bool) -%}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,16 +24,17 @@
         width="129"
         height="32"
         class="header__logo-img"
-        src="/assets/images/pages/organizer/organizer.svg"
+        src="/assets/images/pages/organizer/{%s organizerFeature.Organizer.Logo %}"
         alt="organizer logo"
       />
     </a>
+    {% code var navigation = toFeatureNavigation(organizerFeature.Path) %}
     <ul class="header__nav">
       <li class="header__nav-item">
-        <a href="/companies" class="header__nav-link">Companies</a>
+        <a href="{%s navigation.companiesURL %}" class="header__nav-link {%s navigation.companiesActive %}">Companies</a>
       </li>
       <li class="header__nav-item">
-        <a href="/vacancies" class="header__nav-link active">Vacancies</a>
+        <a href="{%s navigation.vacanciesURL %}" class="header__nav-link {%s navigation.vacanciesActive %}">Vacancies</a>
       </li>
     </ul>
     <div class="header__stars">
@@ -90,13 +91,16 @@
   <nav aria-label="breadcrumb" aria-labelledby="navigation through the bread crumbs" class="breadcrumb">
     <ul class="breadcrumb__list">
       <li class="breadcrumb__item">
-        <a class="breadcrumb__link" href="javascript:">Main</a>
+        <a class="breadcrumb__link" href="/">Main</a>
       </li>
       <li class="breadcrumb__item">
-        <a class="breadcrumb__link" href="javascript:">Organizer</a>
+        <a class="breadcrumb__link" href="/organizers">Organizers</a>
       </li>
       <li class="breadcrumb__item">
-        <span class="breadcrumb__page" aria-current="page">Golang</span>
+        <a class="breadcrumb__link" href="javascript:void(0);">{%s organizerFeature.Organizer.Title %}</a>
+      </li>
+      <li class="breadcrumb__item">
+        <span class="breadcrumb__page" aria-current="page">{%s organizerFeature.Title %}</span>
       </li>
     </ul>
   </nav>

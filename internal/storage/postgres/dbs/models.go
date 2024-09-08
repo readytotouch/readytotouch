@@ -35,7 +35,7 @@ func (e *FeatureWait) Scan(src interface{}) error {
 	case string:
 		*e = FeatureWait(s)
 	default:
-		return fmt.Errorf("unsupported scan type for FeatureWait: %T", src)
+		return fmt.Errorf("unsupported scan type for Feature: %T", src)
 	}
 	return nil
 }
