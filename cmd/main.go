@@ -100,6 +100,7 @@ func main() {
 		userController      = pkgUsers.NewController(userRepository)
 		onlineController    = pkgOnline.NewController(userRepository, onlineRepository)
 		organizerController = pkgOrganizer.NewController(
+			userRepository,
 			userFeatureWaitlistRepository,
 			featureViewStatsRepository,
 		)
@@ -135,11 +136,13 @@ func main() {
 			}
 
 			ctx.Next()
-		}).
-		GET("/", onlineController.Index)
+		})
+	r.GET("/", onlineController.Index)
 
 	r.GET("/api/v1/users/registration/stats/daily.json", userController.RegistrationDailyCountStats)
 	r.GET("/api/v1/users/online/stats/daily.json", onlineController.DailyCountStats)
+
+	r.GET("/organizers", organizerController.Main)
 
 	r.GET("/organizers/golang/welcome", organizerController.Welcome)
 	r.GET("/organizers/rust/welcome", organizerController.Welcome)
@@ -161,6 +164,13 @@ func main() {
 	r.GET("/organizers/elixir/vacancies", organizerController.Waitlist)
 	r.GET("/organizers/clojure/companies", organizerController.Waitlist)
 	r.GET("/organizers/clojure/vacancies", organizerController.Waitlist)
+
+	r.GET("/organizers/golang", found("/organizers/golang/companies"))
+	r.GET("/organizers/rust", found("/organizers/rust/companies"))
+	r.GET("/organizers/zig", found("/organizers/zig/companies"))
+	r.GET("/organizers/scala", found("/organizers/scala/companies"))
+	r.GET("/organizers/elixir", found("/organizers/elixir/companies"))
+	r.GET("/organizers/clojure", found("/organizers/clojure/companies"))
 
 	r.GET("/api/v1/features/auto/waitlist/stats.json", organizerController.WaitlistStats)
 	r.POST("/api/v1/features/auto/waitlist/subscribe.json", organizerController.WaitlistSubscribe)
@@ -185,6 +195,8 @@ func main() {
 		StaticFile("/design/online-auth", "./public/design/online-auth.html").
 
 		// Design from OrganizerFeature
+		StaticFile("/design/organizers", "./public/design/organizer-main-page-auth.html").
+		StaticFile("/design/organizers-auth", "./public/design/organizer-main-page.html").
 		StaticFile("/design/organizers/golang/welcome", "./public/design/organizer-welcome.html").
 		StaticFile("/design/organizers/golang/companies/ukraine", "./public/design/golang-companies-organizer.html").
 		StaticFile("/design/organizers/golang/companies", "./public/design/golang-companies-organizer.html").
@@ -281,5 +293,11 @@ func redirectFromWWW() gin.HandlerFunc {
 			return
 		}
 		c.Next()
+	}
+}
+
+func found(path string) gin.HandlerFunc {
+	return func(c *gin.Context) {
+		c.Redirect(http.StatusFound, path)
 	}
 }

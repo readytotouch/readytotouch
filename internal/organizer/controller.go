@@ -16,12 +16,13 @@ import (
 )
 
 type Controller struct {
+	userRepository                *postgres.UserRepository
 	userFeatureWaitlistRepository *postgres.UserFeatureWaitlistRepository
 	featureViewStatsRepository    *postgres.FeatureViewStatsRepository
 }
 
-func NewController(userFeatureWaitlistRepository *postgres.UserFeatureWaitlistRepository, featureViewStatsRepository *postgres.FeatureViewStatsRepository) *Controller {
-	return &Controller{userFeatureWaitlistRepository: userFeatureWaitlistRepository, featureViewStatsRepository: featureViewStatsRepository}
+func NewController(userRepository *postgres.UserRepository, userFeatureWaitlistRepository *postgres.UserFeatureWaitlistRepository, featureViewStatsRepository *postgres.FeatureViewStatsRepository) *Controller {
+	return &Controller{userRepository: userRepository, userFeatureWaitlistRepository: userFeatureWaitlistRepository, featureViewStatsRepository: featureViewStatsRepository}
 }
 
 func (c *Controller) Welcome(ctx *gin.Context) {
@@ -33,6 +34,19 @@ func (c *Controller) Welcome(ctx *gin.Context) {
 	}
 
 	content := template.OrganizersWelcome(organizer, c.authQueryParams(ctx))
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
+}
+
+func (c *Controller) Main(ctx *gin.Context) {
+	headerProfiles, err := c.getHeaderProfiles(ctx, domain.ContextGetUserID(ctx))
+	if err != nil {
+		// @TODO logging
+
+		// NOP, continue
+	}
+
+	content := template.OrganizersMain(headerProfiles, c.redirect("/organizers"))
 
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
 }
@@ -268,10 +282,14 @@ func (c *Controller) organizer(path string) (domain.Organizer, bool) {
 func (c *Controller) authQueryParams(ctx *gin.Context) string {
 	redirect := ctx.Query("redirect")
 	if strings.HasPrefix(redirect, "/") {
-		return "?" + url.Values{"redirect": []string{redirect}}.Encode()
+		return c.redirect(redirect)
 	}
 
 	return ""
+}
+
+func (c *Controller) redirect(redirect string) string {
+	return "?" + url.Values{"redirect": []string{redirect}}.Encode()
 }
 
 func (c *Controller) waitlistStats(ctx *gin.Context, feature dbs.FeatureWait) {
@@ -327,4 +345,12 @@ func (c *Controller) fetchStats(
 			TotalCount: viewsTotalCount,
 		},
 	}, nil
+}
+
+func (c *Controller) getHeaderProfiles(ctx *gin.Context, userID int64) ([]domain.SocialProviderUser, error) {
+	if userID > 0 {
+		return c.userRepository.SocialUserProfilesByUser(ctx, userID)
+	}
+
+	return nil, nil
 }

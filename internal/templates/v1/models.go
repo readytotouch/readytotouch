@@ -11,8 +11,9 @@ const (
 )
 
 const (
-	github = domain.SocialProviderGithub
-	gitlab = domain.SocialProviderGitlab
+	github    = domain.SocialProviderGithub
+	gitlab    = domain.SocialProviderGitlab
+	bitbucket = domain.SocialProviderBitbucket
 )
 
 // SocialProviderUser reference
