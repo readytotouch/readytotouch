@@ -24,9 +24,14 @@ func NewController(userFeatureWaitlistRepository *postgres.UserFeatureWaitlistRe
 }
 
 func (c *Controller) Welcome(ctx *gin.Context) {
-	content := template.OrganizersWelcome()
+	organizer, ok := c.organizer(ctx.FullPath())
+	if !ok {
+		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Organizer not found"))
 
-	ctx.FullPath()
+		return
+	}
+
+	content := template.OrganizersWelcome(organizer, c.authQueryParams(ctx))
 
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
 }
@@ -49,7 +54,7 @@ func (c *Controller) Waitlist(ctx *gin.Context) {
 		subscribedState = false
 	)
 
-	organizer, ok := c.organizer(ctx.FullPath())
+	organizer, ok := c.organizerFeature(ctx.FullPath())
 	if !ok {
 		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Feature not found"))
 
@@ -152,7 +157,7 @@ func (c *Controller) parseFeatureFromReferer(ctx *gin.Context) (dbs.FeatureWait,
 		return "", true
 	}
 
-	organizer, ok := c.organizer(refererURL.Path)
+	organizer, ok := c.organizerFeature(refererURL.Path)
 	if !ok {
 		ctx.JSON(http.StatusBadRequest, &domain.ErrorResponse{
 			ErrorMessage: "Feature not found",
@@ -163,7 +168,7 @@ func (c *Controller) parseFeatureFromReferer(ctx *gin.Context) (dbs.FeatureWait,
 	return organizer.Feature, false
 }
 
-func (c *Controller) organizer(path string) (domain.OrganizerFeature, bool) {
+func (c *Controller) organizerFeature(path string) (domain.OrganizerFeature, bool) {
 	featurePathMap := map[string]domain.OrganizerFeature{
 		"/organizers/golang/companies": {
 			Organizer: domain.OrganizerGolang,
@@ -242,6 +247,30 @@ func (c *Controller) organizer(path string) (domain.OrganizerFeature, bool) {
 	feature, ok := featurePathMap[path]
 
 	return feature, ok
+}
+
+func (c *Controller) organizer(path string) (domain.Organizer, bool) {
+	organizerPathMap := map[string]domain.Organizer{
+		"/organizers/golang/welcome":  domain.OrganizerGolang,
+		"/organizers/rust/welcome":    domain.OrganizerRust,
+		"/organizers/zig/welcome":     domain.OrganizerZig,
+		"/organizers/scala/welcome":   domain.OrganizerScala,
+		"/organizers/elixir/welcome":  domain.OrganizerElixir,
+		"/organizers/clojure/welcome": domain.OrganizerClojure,
+	}
+
+	feature, ok := organizerPathMap[path]
+
+	return feature, ok
+}
+
+func (c *Controller) authQueryParams(ctx *gin.Context) string {
+	redirect := ctx.Query("redirect")
+	if redirect == "" {
+		return ""
+	}
+
+	return "?" + url.Values{"redirect": []string{redirect}}.Encode()
 }
 
 func (c *Controller) waitlistStats(ctx *gin.Context, feature dbs.FeatureWait) {

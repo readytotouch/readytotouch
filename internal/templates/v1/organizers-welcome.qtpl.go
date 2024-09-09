@@ -14,7 +14,7 @@ var (
 	_ = qt422016.AcquireByteBuffer
 )
 
-func StreamOrganizersWelcome(qw422016 *qt422016.Writer) {
+func StreamOrganizersWelcome(qw422016 *qt422016.Writer, organizer Organizer, authQueryParams string) {
 	qw422016.N().S(`<!DOCTYPE html>
 <html lang="en">
 
@@ -34,19 +34,20 @@ func StreamOrganizersWelcome(qw422016 *qt422016.Writer) {
     `)
 	streamorganizersWelcomeStyles(qw422016)
 	qw422016.N().S(`
-
 </head>
 
 <body class="organizer-welcome">
 <main class="main-wrapper">
 	<header class="header">
   <div class="header__wrapper">
-    <a href="#" class="header__logo">
+    <a href="/" class="header__logo">
       <img
         width="129"
         height="32"
         class="header__logo-img"
-        src="/assets/images/pages/organizer/golang-organizer.svg"
+        src="/assets/images/pages/organizer/`)
+	qw422016.E().S(organizer.Logo)
+	qw422016.N().S(`"
         alt="organizer logo"
       />
     </a>
@@ -70,7 +71,9 @@ func StreamOrganizersWelcome(qw422016 *qt422016.Writer) {
       <p class="hero__subtitle">Our projects are ReadyToTouch, u8views, Organizer, and others. Log in to support.</p>
     </div>
     <div class="hero__buttons-group">
-      <a href="#" class="button button--bordered-gray hero__button">
+      <a href="/auth/github`)
+	qw422016.E().S(authQueryParams)
+	qw422016.N().S(`" class="button button--bordered-gray hero__button">
         <img
           width="20"
           height="20"
@@ -79,7 +82,9 @@ func StreamOrganizersWelcome(qw422016 *qt422016.Writer) {
           class="button-icon"
         />Log in with GitHub
       </a>
-      <a href="#" class="button button--bordered-gray hero__button">
+      <a href="/auth/gitlab`)
+	qw422016.E().S(authQueryParams)
+	qw422016.N().S(`" class="button button--bordered-gray hero__button">
         <img
           width="20"
           height="20"
@@ -88,7 +93,9 @@ func StreamOrganizersWelcome(qw422016 *qt422016.Writer) {
           class="hero__button-icon"
         />Log in with GitLab
       </a>
-      <a href="#" class="button button--bordered-gray hero__button">
+      <a href="/auth/bitbucket`)
+	qw422016.E().S(authQueryParams)
+	qw422016.N().S(`" class="button button--bordered-gray hero__button">
         <img
           width="21"
           height="20"
@@ -109,15 +116,15 @@ func StreamOrganizersWelcome(qw422016 *qt422016.Writer) {
 `)
 }
 
-func WriteOrganizersWelcome(qq422016 qtio422016.Writer) {
+func WriteOrganizersWelcome(qq422016 qtio422016.Writer, organizer Organizer, authQueryParams string) {
 	qw422016 := qt422016.AcquireWriter(qq422016)
-	StreamOrganizersWelcome(qw422016)
+	StreamOrganizersWelcome(qw422016, organizer, authQueryParams)
 	qt422016.ReleaseWriter(qw422016)
 }
 
-func OrganizersWelcome() string {
+func OrganizersWelcome(organizer Organizer, authQueryParams string) string {
 	qb422016 := qt422016.AcquireByteBuffer()
-	WriteOrganizersWelcome(qb422016)
+	WriteOrganizersWelcome(qb422016, organizer, authQueryParams)
 	qs422016 := string(qb422016.B)
 	qt422016.ReleaseByteBuffer(qb422016)
 	return qs422016

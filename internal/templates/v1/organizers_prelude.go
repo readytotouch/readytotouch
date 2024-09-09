@@ -6,7 +6,10 @@ import (
 	"github.com/readytotouch/readytotouch/internal/domain"
 )
 
-type OrganizerFeature = domain.OrganizerFeature
+type (
+	Organizer        = domain.Organizer
+	OrganizerFeature = domain.OrganizerFeature
+)
 
 type featureNavigation struct {
 	vacanciesURL    string
