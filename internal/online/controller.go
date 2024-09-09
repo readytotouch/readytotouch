@@ -21,11 +21,7 @@ func NewController(userRepository *postgres.UserRepository, onlineRepository *po
 }
 
 func (c *Controller) Index(ctx *gin.Context) {
-	var (
-		authUserID = domain.ContextGetUserID(ctx)
-	)
-
-	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)
+	headerProfiles, err := c.getHeaderProfiles(ctx, domain.ContextGetUserID(ctx))
 	if err != nil {
 		// @TODO logging
 

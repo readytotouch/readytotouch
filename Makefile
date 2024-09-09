@@ -59,7 +59,7 @@ bench:
 
 # make migrate-pgsql-create NAME=init
 migrate-pgsql-create:
-	goose -dir ./internal/storage/postgres/migrations -table schema_migrations postgres create $(NAME) sql
+	goose -dir ./internal/storage/postgres/migrations -table schema_migrations create $(NAME) sql
 
 migrate-pgsql-up:
 	docker exec readytotouch_postgres_goose_migrations \
@@ -102,16 +102,24 @@ esbuild:
 # make design DESIGN="~/go/src/github.com/readytotouch/readytotouch.github.io"
 design:
 	$(eval DESIGN := ~/go/src/github.com/readytotouch/readytotouch.github.io)
-	rm -rf ./public/assets/images ./public/design
-	mkdir -p ./public/assets/images ./public/design
+	rm -rf ./public/assets/images ./public/assets/fonts ./public/assets/js ./public/design
+	mkdir -p ./public/assets/images ./public/assets/fonts ./public/assets/js ./public/design
 
 	cp -r $(DESIGN)/public/assets/images/* ./public/assets/images
+	cp -r $(DESIGN)/public/assets/fonts/* ./public/assets/fonts
+	cp -r $(DESIGN)/public/assets/js/* ./public/assets/js
 	cp -r $(DESIGN)/public/*.html ./public/design
 
 	git add .
 
 companies-and-connections:
 	firefox ./public/chatgpt-design/companies-and-connections.html
+
+generate-protos:
+	# https://grpc.io/docs/languages/go/quickstart/
+	# sudo apt install -y protobuf-compiler
+	# protoc --version
+	protoc -I . protos/auth/*.proto --go_out=./internal/
 
 # POSTGRES_PASSWORD=$(echo "$RANDOM$RANDOM" | sha256sum | head -c 32; echo;) JWT_SECRET_KEY=$(echo "$RANDOM$RANDOM" | sha256sum | head -c 32; echo;) make generate-production-environment-file
 generate-production-environment-file:

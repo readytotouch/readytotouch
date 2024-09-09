@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package auth;
+
+option go_package = "protos/auth";
+
+message State {
+  Payload payload = 1;
+}
+
+message Payload {
+  string redirect = 1;
+  bytes random = 2;
+}

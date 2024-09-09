@@ -1,4 +1,5 @@
 import {TimeCountStats} from "./domain";
+import {formatDay} from "./format";
 
 fetch("/api/v1/users/registration/stats/daily.json")
     .then(function (response) {
@@ -82,8 +83,4 @@ function render($element: Element, color: string, data: Array<TimeCountStats>) {
 
     const chart = new ApexCharts($element, options);
     chart.render();
-}
-
-function formatDay(item: TimeCountStats) {
-    return new Date(item.time).toLocaleDateString("en-us", {day: "2-digit", month: "long"});
 }

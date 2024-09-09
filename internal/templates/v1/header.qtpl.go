@@ -18,7 +18,7 @@ func streamheader(qw422016 *qt422016.Writer, profiles []SocialProviderUser) {
 	qw422016.N().S(`
 <header class="header">
 	<div class="header__wrapper">
-		<a href="#" class="header__logo">
+		<a href="/" class="header__logo">
 			<img class="header__logo-img" src="/assets/images/pages/online/logo.svg" alt="logo">
 			<h3 class="header__logo-title">ReadyToTouch</h3>
 		</a>
@@ -35,13 +35,13 @@ func streamheader(qw422016 *qt422016.Writer, profiles []SocialProviderUser) {
 		qw422016.E().S(SocialProviderUserHeaderPhoto(profiles[0]))
 		qw422016.N().S(`" alt="Profile photo">
 			</button>
-			<div class="header__modal modal">
-				<div class="modal__profile">
+			<div class="header__modal modal-profile">
+				<div class="modal-profile__profile">
 					<img src="`)
 		qw422016.E().S(SocialProviderUserHeaderPhoto(profiles[0]))
-		qw422016.N().S(`" class="modal__user-photo" width="48" height="48" alt="Profile photo">
-					<div class="modal__profile-info">
-						<div class="modal__profile-name">`)
+		qw422016.N().S(`" class="modal-profile__user-photo" width="48" height="48" alt="Profile photo">
+					<div class="modal-profile__profile-info">
+						<div class="modal-profile__profile-name">`)
 		qw422016.E().S(SocialProviderUserName(profiles[0]))
 		qw422016.N().S(`</div>
 						`)
@@ -53,9 +53,9 @@ func streamheader(qw422016 *qt422016.Writer, profiles []SocialProviderUser) {
 				qw422016.N().S(`
 						<a href="https://github.com/`)
 				qw422016.E().S(profile.Username)
-				qw422016.N().S(`" target="_blank" class="modal__link">
+				qw422016.N().S(`" target="_blank" class="modal-profile__link">
 							<img src="/assets/images/pages/online/github-black.svg" width="20" height="20" alt="link">
-							<span class="modal__profile-github">github.com/`)
+							<span class="modal-profile__profile-github">github.com/`)
 				qw422016.E().S(profile.Username)
 				qw422016.N().S(`</span>
 						</a>
@@ -64,9 +64,9 @@ func streamheader(qw422016 *qt422016.Writer, profiles []SocialProviderUser) {
 				qw422016.N().S(`
 						<a href="https://gitlab.com/`)
 				qw422016.E().S(profile.Username)
-				qw422016.N().S(`" target="_blank" class="modal__link">
+				qw422016.N().S(`" target="_blank" class="modal-profile__link">
 							<img src="/assets/images/pages/online/gitlab.png" width="20" height="20" alt="link">
-							<span class="modal__profile-gitlab">gitlab.com/`)
+							<span class="modal-profile__profile-gitlab">gitlab.com/`)
 				qw422016.E().S(profile.Username)
 				qw422016.N().S(`</span>
 						</a>
@@ -78,8 +78,8 @@ func streamheader(qw422016 *qt422016.Writer, profiles []SocialProviderUser) {
 		qw422016.N().S(`
 					</div>
 				</div>
-				<div class="modal__log-out">
-					<a href="/logout" class="modal__button">
+				<div class="modal-profile__log-out">
+					<a href="/logout" class="modal-profile__button">
 						<img src="/assets/images/pages/online/log-out.svg" alt="log-out">
 						<span>Log out</span>
 					</a>

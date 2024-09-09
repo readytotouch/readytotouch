@@ -17,7 +17,7 @@ var (
 func streamfooter(qw422016 *qt422016.Writer) {
 	qw422016.N().S(`
 <footer class="footer">
-    <div class="footer__wrapper wrapper-u8">
+    <div class="footer__wrapper main-container">
         <div class="footer__group-u8">
             <div class="footer__info">
                 <a href="/" class="footer__title">

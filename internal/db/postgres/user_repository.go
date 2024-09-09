@@ -37,10 +37,9 @@ func (r *UserRepository) SocialUserProfilesByUser(ctx context.Context, id int64)
 	return result, nil
 }
 
-func (r *UserRepository) Create(ctx context.Context, params *domain.SocialProviderUserCreateParams) (int64, error) {
+func (r *UserRepository) Create(ctx context.Context, params *domain.SocialProviderUserCreateParams, createdAt time.Time) (int64, error) {
 	var (
 		userID int64
-		now    = time.Now().Truncate(time.Second).UTC()
 	)
 
 	txErr := r.db.WithTransaction(ctx, func(queries *dbs.Queries) error {
@@ -52,9 +51,9 @@ func (r *UserRepository) Create(ctx context.Context, params *domain.SocialProvid
 		case nil:
 			userID = prev.UserID
 
-			return r.update(ctx, queries, params, prev, now)
+			return r.update(ctx, queries, params, prev, createdAt)
 		case sql.ErrNoRows:
-			id, err := r.create(ctx, queries, params, now)
+			id, err := r.create(ctx, queries, params, createdAt)
 			if err != nil {
 				return err
 			}
