@@ -1,4 +1,4 @@
-{%- func OrganizersWaitlist(organizerFeature OrganizerFeature, headerProfiles []SocialProviderUser, subscribedState bool) -%}
+{%- func OrganizersWaitlist(organizerFeature OrganizerFeature, headerProfiles []SocialProviderUser, authQueryParams string, subscribedState bool) -%}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -37,16 +37,11 @@
         <a href="{%s navigation.vacanciesURL %}" class="header__nav-link {%s navigation.vacanciesActive %}">Vacancies</a>
       </li>
     </ul>
-    <div class="header__stars">
-      <iframe
-        src="https://ghbtns.com/github-btn.html?user=readytotouch&repo=readytotouch.github.io&type=star&count=true&size=large"
-        width="110"
-        height="33"
-        title="GitHub"
-      ></iframe>
-    </div>
+    {%= organizersHeaderStars() %}
     {% if len(headerProfiles) > 0 %}
     {%= organizersHeaderProfile(headerProfiles) %}
+    {% else %}
+    <a href="/organizers/{%s organizerFeature.Organizer.Alias %}/welcome{%s authQueryParams %}" class="button button--small-padding button--black header__login-button">Log in</a>
     {% endif %}
   </div>
 </header>
@@ -175,7 +170,7 @@
         </div>
         <div class="footer__right-side">
           <iframe class="footer__stars"
-                  src="https://ghbtns.com/github-btn.html?user=readytotouch&repo=readytotouch.github.io&type=star&count=true&size=large"
+                  src="https://ghbtns.com/github-btn.html?user=readytotouch&repo=readytotouch&type=star&count=true&size=large"
                   width="168"
                   height="33"
                   title="GitHub"

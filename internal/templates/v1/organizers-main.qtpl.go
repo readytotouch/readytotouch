@@ -49,14 +49,9 @@ func StreamOrganizersMain(qw422016 *qt422016.Writer, headerProfiles []SocialProv
         alt="organizer logo"
       />
     </a>
-    <div class="header__stars">
-      <iframe
-        src="https://ghbtns.com/github-btn.html?user=readytotouch&repo=readytotouch.github.io&type=star&count=true&size=large"
-        width="110"
-        height="33"
-        title="GitHub"
-      ></iframe>
-    </div>
+    `)
+	streamorganizersHeaderStars(qw422016)
+	qw422016.N().S(`
     `)
 	if len(headerProfiles) > 0 {
 		qw422016.N().S(`
@@ -91,7 +86,7 @@ func StreamOrganizersMain(qw422016 *qt422016.Writer, headerProfiles []SocialProv
         </p>
       </div>
       <div class="hero__buttons-group">
-        <a target="_blank" href="/organizers/golang" class="button button--bordered-gray hero__button">
+        <a href="/organizers/golang" class="button button--bordered-gray hero__button">
           <img
             width="20"
             height="20"
@@ -110,7 +105,7 @@ func StreamOrganizersMain(qw422016 *qt422016.Writer, headerProfiles []SocialProv
             />
           </div>
         </a>
-        <a target="_blank" href="/organizers/rust" class="button button--bordered-gray hero__button">
+        <a href="/organizers/rust" class="button button--bordered-gray hero__button">
           <img
             width="20"
             height="20"
@@ -129,7 +124,7 @@ func StreamOrganizersMain(qw422016 *qt422016.Writer, headerProfiles []SocialProv
             />
           </div>
         </a>
-        <a target="_blank" href="/organizers/scala" class="button button--bordered-gray hero__button">
+        <a href="/organizers/scala" class="button button--bordered-gray hero__button">
           <img
             width="20"
             height="20"
@@ -148,7 +143,7 @@ func StreamOrganizersMain(qw422016 *qt422016.Writer, headerProfiles []SocialProv
             />
           </div>
         </a>
-        <a target="_blank" href="/organizers/elixir" class="button button--bordered-gray hero__button">
+        <a href="/organizers/elixir" class="button button--bordered-gray hero__button">
           <img
             width="20"
             height="20"
@@ -167,7 +162,7 @@ func StreamOrganizersMain(qw422016 *qt422016.Writer, headerProfiles []SocialProv
             />
           </div>
         </a>
-        <a target="_blank" href="/organizers/clojure" class="button button--bordered-gray hero__button">
+        <a href="/organizers/clojure" class="button button--bordered-gray hero__button">
           <img
             width="20"
             height="20"
@@ -333,7 +328,7 @@ func StreamOrganizersMain(qw422016 *qt422016.Writer, headerProfiles []SocialProv
         </div>
         <div class="footer__right-side">
           <iframe class="footer__stars"
-                  src="https://ghbtns.com/github-btn.html?user=readytotouch&repo=readytotouch.github.io&type=star&count=true&size=large"
+                  src="https://ghbtns.com/github-btn.html?user=readytotouch&repo=readytotouch&type=star&count=true&size=large"
                   width="168"
                   height="33"
                   title="GitHub"

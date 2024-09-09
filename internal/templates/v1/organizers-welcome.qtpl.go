@@ -51,14 +51,9 @@ func StreamOrganizersWelcome(qw422016 *qt422016.Writer, organizer Organizer, aut
         alt="organizer logo"
       />
     </a>
-    <div class="header__stars">
-      <iframe
-        src="https://ghbtns.com/github-btn.html?user=readytotouch&repo=readytotouch.github.io&type=star&count=true&size=large"
-        width="110"
-        height="33"
-        title="GitHub"
-      ></iframe>
-    </div>
+    `)
+	streamorganizersHeaderStars(qw422016)
+	qw422016.N().S(`
   </div>
 </header>
 

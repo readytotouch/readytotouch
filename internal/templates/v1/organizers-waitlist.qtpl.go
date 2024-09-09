@@ -14,7 +14,7 @@ var (
 	_ = qt422016.AcquireByteBuffer
 )
 
-func StreamOrganizersWaitlist(qw422016 *qt422016.Writer, organizerFeature OrganizerFeature, headerProfiles []SocialProviderUser, subscribedState bool) {
+func StreamOrganizersWaitlist(qw422016 *qt422016.Writer, organizerFeature OrganizerFeature, headerProfiles []SocialProviderUser, authQueryParams string, subscribedState bool) {
 	qw422016.N().S(`<!DOCTYPE html>
 <html lang="en">
 
@@ -72,20 +72,23 @@ func StreamOrganizersWaitlist(qw422016 *qt422016.Writer, organizerFeature Organi
 	qw422016.N().S(`">Vacancies</a>
       </li>
     </ul>
-    <div class="header__stars">
-      <iframe
-        src="https://ghbtns.com/github-btn.html?user=readytotouch&repo=readytotouch.github.io&type=star&count=true&size=large"
-        width="110"
-        height="33"
-        title="GitHub"
-      ></iframe>
-    </div>
+    `)
+	streamorganizersHeaderStars(qw422016)
+	qw422016.N().S(`
     `)
 	if len(headerProfiles) > 0 {
 		qw422016.N().S(`
     `)
 		streamorganizersHeaderProfile(qw422016, headerProfiles)
 		qw422016.N().S(`
+    `)
+	} else {
+		qw422016.N().S(`
+    <a href="/organizers/`)
+		qw422016.E().S(organizerFeature.Organizer.Alias)
+		qw422016.N().S(`/welcome`)
+		qw422016.E().S(authQueryParams)
+		qw422016.N().S(`" class="button button--small-padding button--black header__login-button">Log in</a>
     `)
 	}
 	qw422016.N().S(`
@@ -229,7 +232,7 @@ func StreamOrganizersWaitlist(qw422016 *qt422016.Writer, organizerFeature Organi
         </div>
         <div class="footer__right-side">
           <iframe class="footer__stars"
-                  src="https://ghbtns.com/github-btn.html?user=readytotouch&repo=readytotouch.github.io&type=star&count=true&size=large"
+                  src="https://ghbtns.com/github-btn.html?user=readytotouch&repo=readytotouch&type=star&count=true&size=large"
                   width="168"
                   height="33"
                   title="GitHub"
@@ -285,15 +288,15 @@ func StreamOrganizersWaitlist(qw422016 *qt422016.Writer, organizerFeature Organi
 `)
 }
 
-func WriteOrganizersWaitlist(qq422016 qtio422016.Writer, organizerFeature OrganizerFeature, headerProfiles []SocialProviderUser, subscribedState bool) {
+func WriteOrganizersWaitlist(qq422016 qtio422016.Writer, organizerFeature OrganizerFeature, headerProfiles []SocialProviderUser, authQueryParams string, subscribedState bool) {
 	qw422016 := qt422016.AcquireWriter(qq422016)
-	StreamOrganizersWaitlist(qw422016, organizerFeature, headerProfiles, subscribedState)
+	StreamOrganizersWaitlist(qw422016, organizerFeature, headerProfiles, authQueryParams, subscribedState)
 	qt422016.ReleaseWriter(qw422016)
 }
 
-func OrganizersWaitlist(organizerFeature OrganizerFeature, headerProfiles []SocialProviderUser, subscribedState bool) string {
+func OrganizersWaitlist(organizerFeature OrganizerFeature, headerProfiles []SocialProviderUser, authQueryParams string, subscribedState bool) string {
 	qb422016 := qt422016.AcquireByteBuffer()
-	WriteOrganizersWaitlist(qb422016, organizerFeature, headerProfiles, subscribedState)
+	WriteOrganizersWaitlist(qb422016, organizerFeature, headerProfiles, authQueryParams, subscribedState)
 	qs422016 := string(qb422016.B)
 	qt422016.ReleaseByteBuffer(qb422016)
 	return qs422016

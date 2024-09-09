@@ -69,14 +69,14 @@ func (c *Controller) Waitlist(ctx *gin.Context) {
 		subscribedState = false
 	)
 
-	organizer, ok := c.organizerFeature(ctx.FullPath())
+	organizerFeature, ok := c.organizerFeature(ctx.FullPath())
 	if !ok {
 		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Feature not found"))
 
 		return
 	}
 
-	err := c.featureViewStatsRepository.Upsert(ctx, organizer.Feature, time.Now().UTC())
+	err := c.featureViewStatsRepository.Upsert(ctx, organizerFeature.Feature, time.Now().UTC())
 	if err != nil {
 		// @TODO logging
 
@@ -86,7 +86,7 @@ func (c *Controller) Waitlist(ctx *gin.Context) {
 	if authUserID > 0 {
 		subscribedState, err = c.
 			userFeatureWaitlistRepository.
-			SubscribedState(ctx, authUserID, organizer.Feature)
+			SubscribedState(ctx, authUserID, organizerFeature.Feature)
 
 		if err != nil {
 			// @TODO logging
@@ -102,7 +102,7 @@ func (c *Controller) Waitlist(ctx *gin.Context) {
 		// NOP, continue
 	}
 
-	content := template.OrganizersWaitlist(organizer, headerProfiles, subscribedState)
+	content := template.OrganizersWaitlist(organizerFeature, headerProfiles, c.redirect(organizerFeature.Path), subscribedState)
 
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
 }

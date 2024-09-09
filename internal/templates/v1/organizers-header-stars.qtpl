@@ -1,0 +1,10 @@
+{% func organizersHeaderStars() %}
+<div class="header__stars">
+  <iframe
+    src="https://ghbtns.com/github-btn.html?user=readytotouch&repo=readytotouch&type=star&count=true&size=large"
+    width="110"
+    height="33"
+    title="GitHub"
+  ></iframe>
+</div>
+{% endfunc %}

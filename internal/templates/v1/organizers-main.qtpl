@@ -27,14 +27,7 @@
         alt="organizer logo"
       />
     </a>
-    <div class="header__stars">
-      <iframe
-        src="https://ghbtns.com/github-btn.html?user=readytotouch&repo=readytotouch.github.io&type=star&count=true&size=large"
-        width="110"
-        height="33"
-        title="GitHub"
-      ></iframe>
-    </div>
+    {%= organizersHeaderStars() %}
     {% if len(headerProfiles) > 0 %}
     {%= organizersHeaderProfile(headerProfiles) %}
     {% else %}
@@ -59,7 +52,7 @@
         </p>
       </div>
       <div class="hero__buttons-group">
-        <a target="_blank" href="/organizers/golang" class="button button--bordered-gray hero__button">
+        <a href="/organizers/golang" class="button button--bordered-gray hero__button">
           <img
             width="20"
             height="20"
@@ -78,7 +71,7 @@
             />
           </div>
         </a>
-        <a target="_blank" href="/organizers/rust" class="button button--bordered-gray hero__button">
+        <a href="/organizers/rust" class="button button--bordered-gray hero__button">
           <img
             width="20"
             height="20"
@@ -97,7 +90,7 @@
             />
           </div>
         </a>
-        <a target="_blank" href="/organizers/scala" class="button button--bordered-gray hero__button">
+        <a href="/organizers/scala" class="button button--bordered-gray hero__button">
           <img
             width="20"
             height="20"
@@ -116,7 +109,7 @@
             />
           </div>
         </a>
-        <a target="_blank" href="/organizers/elixir" class="button button--bordered-gray hero__button">
+        <a href="/organizers/elixir" class="button button--bordered-gray hero__button">
           <img
             width="20"
             height="20"
@@ -135,7 +128,7 @@
             />
           </div>
         </a>
-        <a target="_blank" href="/organizers/clojure" class="button button--bordered-gray hero__button">
+        <a href="/organizers/clojure" class="button button--bordered-gray hero__button">
           <img
             width="20"
             height="20"
@@ -301,7 +294,7 @@
         </div>
         <div class="footer__right-side">
           <iframe class="footer__stars"
-                  src="https://ghbtns.com/github-btn.html?user=readytotouch&repo=readytotouch.github.io&type=star&count=true&size=large"
+                  src="https://ghbtns.com/github-btn.html?user=readytotouch&repo=readytotouch&type=star&count=true&size=large"
                   width="168"
                   height="33"
                   title="GitHub"
