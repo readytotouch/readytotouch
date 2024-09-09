@@ -1,4 +1,4 @@
-{%- func OrganizersWaitlist(organizerFeature OrganizerFeature, subscribedState bool) -%}
+{%- func OrganizersWaitlist(organizerFeature OrganizerFeature, headerProfiles []SocialProviderUser, subscribedState bool) -%}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -45,47 +45,11 @@
         title="GitHub"
       ></iframe>
     </div>
-    <div class="header__profile">
-      <button class="header__profile-button">
-        <img src="https://avatars.githubusercontent.com/u/63663261?v=4&s=48" alt="photo-profile" />
-      </button>
-      <div class="header__modal modal-profile">
-        <div class="modal-profile__profile">
-          <figure class="modal-profile__profile-info">
-            <img
-              src="https://avatars.githubusercontent.com/u/63663261?v=4&s=48"
-              class="modal-profile__user-photo"
-              width="48"
-              height="48"
-              alt="photo-profile"
-            />
-            <figcaption class="modal-profile__profile-name">Yaroslav Podorvanov</figcaption>
-          </figure>
-          <div class="modal-profile__profile-list">
-            <a href="https://github.com/YaroslavPodorvanov" target="_blank" class="modal-profile__link">
-              <img src="/assets/images/pages/online-new/github-black.svg" width="20" height="20" alt="GitHub logo" />
-              <span class="modal-profile__profile-github">github.com/YaroslavPodorvanov</span>
-            </a>
-            <a href="https://gitlab.com/YaroslavPodorvanov" target="_blank" class="modal-profile__link">
-              <img src="/assets/images/pages/online-new/gitlab.svg" width="20" height="20" alt="GitLab logo" />
-              <span class="modal-profile__profile-gitlab">gitlab.com/YaroslavPodorvanov</span>
-            </a>
-          </div>
-        </div>
-        <div class="modal-profile__log-out">
-          <a href="#" class="modal-profile__button">Log out</a>
-        </div>
-      </div>
-    </div>
+    {% if len(headerProfiles) > 0 %}
+    {%= organizersHeaderProfile(headerProfiles) %}
+    {% endif %}
   </div>
 </header>
-<script>
-  document.querySelector('.header__profile-button').addEventListener('click', () => {
-    document.querySelector('.header__modal').classList.toggle('active')
-  })
-</script>
-
-
 
 <div class="container">
   <nav aria-label="breadcrumb" aria-labelledby="navigation through the bread crumbs" class="breadcrumb">

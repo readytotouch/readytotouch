@@ -14,7 +14,7 @@ var (
 	_ = qt422016.AcquireByteBuffer
 )
 
-func StreamOrganizersWaitlist(qw422016 *qt422016.Writer, organizerFeature OrganizerFeature, subscribedState bool) {
+func StreamOrganizersWaitlist(qw422016 *qt422016.Writer, organizerFeature OrganizerFeature, headerProfiles []SocialProviderUser, subscribedState bool) {
 	qw422016.N().S(`<!DOCTYPE html>
 <html lang="en">
 
@@ -80,47 +80,17 @@ func StreamOrganizersWaitlist(qw422016 *qt422016.Writer, organizerFeature Organi
         title="GitHub"
       ></iframe>
     </div>
-    <div class="header__profile">
-      <button class="header__profile-button">
-        <img src="https://avatars.githubusercontent.com/u/63663261?v=4&s=48" alt="photo-profile" />
-      </button>
-      <div class="header__modal modal-profile">
-        <div class="modal-profile__profile">
-          <figure class="modal-profile__profile-info">
-            <img
-              src="https://avatars.githubusercontent.com/u/63663261?v=4&s=48"
-              class="modal-profile__user-photo"
-              width="48"
-              height="48"
-              alt="photo-profile"
-            />
-            <figcaption class="modal-profile__profile-name">Yaroslav Podorvanov</figcaption>
-          </figure>
-          <div class="modal-profile__profile-list">
-            <a href="https://github.com/YaroslavPodorvanov" target="_blank" class="modal-profile__link">
-              <img src="/assets/images/pages/online-new/github-black.svg" width="20" height="20" alt="GitHub logo" />
-              <span class="modal-profile__profile-github">github.com/YaroslavPodorvanov</span>
-            </a>
-            <a href="https://gitlab.com/YaroslavPodorvanov" target="_blank" class="modal-profile__link">
-              <img src="/assets/images/pages/online-new/gitlab.svg" width="20" height="20" alt="GitLab logo" />
-              <span class="modal-profile__profile-gitlab">gitlab.com/YaroslavPodorvanov</span>
-            </a>
-          </div>
-        </div>
-        <div class="modal-profile__log-out">
-          <a href="#" class="modal-profile__button">Log out</a>
-        </div>
-      </div>
-    </div>
+    `)
+	if len(headerProfiles) > 0 {
+		qw422016.N().S(`
+    `)
+		streamorganizersHeaderProfile(qw422016, headerProfiles)
+		qw422016.N().S(`
+    `)
+	}
+	qw422016.N().S(`
   </div>
 </header>
-<script>
-  document.querySelector('.header__profile-button').addEventListener('click', () => {
-    document.querySelector('.header__modal').classList.toggle('active')
-  })
-</script>
-
-
 
 <div class="container">
   <nav aria-label="breadcrumb" aria-labelledby="navigation through the bread crumbs" class="breadcrumb">
@@ -315,15 +285,15 @@ func StreamOrganizersWaitlist(qw422016 *qt422016.Writer, organizerFeature Organi
 `)
 }
 
-func WriteOrganizersWaitlist(qq422016 qtio422016.Writer, organizerFeature OrganizerFeature, subscribedState bool) {
+func WriteOrganizersWaitlist(qq422016 qtio422016.Writer, organizerFeature OrganizerFeature, headerProfiles []SocialProviderUser, subscribedState bool) {
 	qw422016 := qt422016.AcquireWriter(qq422016)
-	StreamOrganizersWaitlist(qw422016, organizerFeature, subscribedState)
+	StreamOrganizersWaitlist(qw422016, organizerFeature, headerProfiles, subscribedState)
 	qt422016.ReleaseWriter(qw422016)
 }
 
-func OrganizersWaitlist(organizerFeature OrganizerFeature, subscribedState bool) string {
+func OrganizersWaitlist(organizerFeature OrganizerFeature, headerProfiles []SocialProviderUser, subscribedState bool) string {
 	qb422016 := qt422016.AcquireByteBuffer()
-	WriteOrganizersWaitlist(qb422016, organizerFeature, subscribedState)
+	WriteOrganizersWaitlist(qb422016, organizerFeature, headerProfiles, subscribedState)
 	qs422016 := string(qb422016.B)
 	qt422016.ReleaseByteBuffer(qb422016)
 	return qs422016

@@ -95,7 +95,14 @@ func (c *Controller) Waitlist(ctx *gin.Context) {
 		}
 	}
 
-	content := template.OrganizersWaitlist(organizer, subscribedState)
+	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)
+	if err != nil {
+		// @TODO logging
+
+		// NOP, continue
+	}
+
+	content := template.OrganizersWaitlist(organizer, headerProfiles, subscribedState)
 
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
 }
