@@ -4,13 +4,16 @@ import (
 	"crypto/rand"
 	"encoding/base64"
 	"net/http"
+	"strings"
 	"time"
 
 	"github.com/readytotouch/readytotouch/internal/db/postgres"
 	"github.com/readytotouch/readytotouch/internal/domain"
 	"github.com/readytotouch/readytotouch/internal/env"
+	"github.com/readytotouch/readytotouch/internal/protos/auth"
 
 	"github.com/gin-gonic/gin"
+	"google.golang.org/protobuf/proto"
 )
 
 type Controller struct {
@@ -62,7 +65,7 @@ func (c *Controller) redirect(ctx *gin.Context, provider domain.OAuthProvider) {
 		return
 	}
 
-	state, err := c.generateRandomState()
+	state, err := c.encodeRedirectState(ctx.Query("redirect"))
 	if err != nil {
 		ctx.Data(http.StatusInternalServerError, "text/html; charset=utf-8", []byte("Cannot generate random state for OAuth2 redirect"))
 
@@ -139,7 +142,18 @@ func (c *Controller) callback(ctx *gin.Context, provider domain.OAuthProvider) {
 		return
 	}
 
-	ctx.Redirect(http.StatusFound, "/")
+	redirect, err := c.decodeRedirectState(queryState)
+	if err != nil {
+		// @TODO logging
+
+		ctx.Redirect(http.StatusFound, "/")
+	}
+
+	if redirect == "" {
+		redirect = "/"
+	}
+
+	ctx.Redirect(http.StatusFound, redirect)
 }
 
 func (c *Controller) getStateCookieName() string {
@@ -150,11 +164,48 @@ func (c *Controller) getStateCookieName() string {
 	return "oauth_state"
 }
 
-func (c *Controller) generateRandomState() (string, error) {
-	b := make([]byte, 32)
-	_, err := rand.Read(b)
+func (c *Controller) encodeRedirectState(redirect string) (string, error) {
+	random := make([]byte, 32)
+	_, err := rand.Read(random)
 	if err != nil {
 		return "", nil
 	}
-	return base64.StdEncoding.EncodeToString(b), nil
+
+	state := &auth.State{
+		Payload: &auth.Payload{
+			Redirect: "",
+			Random:   random,
+		},
+	}
+
+	if strings.HasPrefix(redirect, "/") {
+		state.Payload.Redirect = redirect
+	}
+
+	content, err := proto.Marshal(state)
+	if err != nil {
+		return "", err
+	}
+
+	return base64.StdEncoding.EncodeToString(content), nil
+}
+
+func (c *Controller) decodeRedirectState(source string) (string, error) {
+	content, err := base64.StdEncoding.DecodeString(source)
+	if err != nil {
+		return "", err
+	}
+
+	state := &auth.State{}
+	err = proto.Unmarshal(content, state)
+	if err != nil {
+		return "", err
+	}
+
+	redirect := state.GetPayload().GetRedirect()
+	if strings.HasPrefix(redirect, "/") {
+		return redirect, nil
+	}
+
+	return "", nil
 }

@@ -3,6 +3,7 @@ package organizer
 import (
 	"net/http"
 	"net/url"
+	"strings"
 	"time"
 
 	"github.com/readytotouch/readytotouch/internal/db/postgres"
@@ -266,11 +267,11 @@ func (c *Controller) organizer(path string) (domain.Organizer, bool) {
 
 func (c *Controller) authQueryParams(ctx *gin.Context) string {
 	redirect := ctx.Query("redirect")
-	if redirect == "" {
-		return ""
+	if strings.HasPrefix(redirect, "/") {
+		return "?" + url.Values{"redirect": []string{redirect}}.Encode()
 	}
 
-	return "?" + url.Values{"redirect": []string{redirect}}.Encode()
+	return ""
 }
 
 func (c *Controller) waitlistStats(ctx *gin.Context, feature dbs.FeatureWait) {

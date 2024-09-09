@@ -115,6 +115,12 @@ design:
 companies-and-connections:
 	firefox ./public/chatgpt-design/companies-and-connections.html
 
+generate-protos:
+	# https://grpc.io/docs/languages/go/quickstart/
+	# sudo apt install -y protobuf-compiler
+	# protoc --version
+	protoc -I . protos/auth/*.proto --go_out=./internal/
+
 # POSTGRES_PASSWORD=$(echo "$RANDOM$RANDOM" | sha256sum | head -c 32; echo;) JWT_SECRET_KEY=$(echo "$RANDOM$RANDOM" | sha256sum | head -c 32; echo;) make generate-production-environment-file
 generate-production-environment-file:
 	touch .production.env
