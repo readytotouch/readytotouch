@@ -152,7 +152,7 @@ func main() {
 	r.GET("/organizers/clojure/welcome", organizerController.Welcome)
 
 	r.GET("/organizers/golang/companies/ukraine", organizerController.GolangCompaniesUkraine)
-	r.GET("/organizers/golang/companies", organizerController.GolangCompanies)
+	r.GET("/organizers/golang/companies", organizerController.Waitlist)
 	r.GET("/organizers/golang/vacancies", organizerController.Waitlist)
 	r.GET("/organizers/rust/companies", organizerController.Waitlist)
 	r.GET("/organizers/rust/vacancies", organizerController.Waitlist)
