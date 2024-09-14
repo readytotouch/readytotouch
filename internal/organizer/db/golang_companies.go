@@ -293,6 +293,925 @@ func Companies() []domain.Company {
 			},
 			Skip: false,
 		},
+		{
+			// A
+			Code: struct{}{},
+			Name: "HashiCorp",
+			URL:  "https://www.hashicorp.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    2830763,
+				Alias: "hashicorp",
+				Name:  "HashiCorp",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "hashicorp",
+				GoRepositoryCount: 296,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-HashiCorp-EI_IE1359860.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/HashiCorp-Reviews-E1359860.htm",
+			},
+			OttaProfileSlug:   "HashiCorp",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    true,
+			Vacancies: domain.Vacancies{
+				domain.Go:      []string{},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			Skip: false,
+		},
+		{
+			// A
+			Code: struct{}{},
+			Name: "Grafana Labs",
+			URL:  "https://grafana.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    11062162,
+				Alias: "grafana-labs",
+				Name:  "Grafana Labs",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "grafana",
+				GoRepositoryCount: 233,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Grafana-Labs-EI_IE2300269.11,23.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Grafana-Labs-Reviews-E2300269.htm",
+			},
+			OttaProfileSlug:   "Grafana-Labs",
+			YouTubeChannelURL: "https://www.youtube.com/channel/UCYCwgQAMm9sTJv0rgwQLCxw",
+			GoMainLanguage:    true,
+			Vacancies: domain.Vacancies{
+				domain.Go:      []string{},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			Skip: false,
+		},
+		{
+			// A
+			Code: struct{}{},
+			Name: "Okta",
+			URL:  "https://www.okta.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    926041,
+				Alias: "okta-inc-",
+				Name:  "Okta",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "okta",
+				GoRepositoryCount: 5,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Okta-EI_IE444756.11,15.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Okta-Reviews-E444756.htm",
+			},
+			OttaProfileSlug:   "Okta",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://app.otta.com/jobs/FtbF4gpB",
+					"https://app.otta.com/jobs/QcMdOhR_",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			Skip: false,
+		},
+		{
+			// A
+			Code: struct{}{},
+			Name: "1Password",
+			URL:  "https://1password.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    18648301,
+				Alias: "1password",
+				Name:  "1Password",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "1Password",
+				GoRepositoryCount: 19,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-1Password-EI_IE2984143.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/1Password-Reviews-E2984143.htm",
+			},
+			OttaProfileSlug:   "1Password",
+			YouTubeChannelURL: "https://www.youtube.com/@1PasswordVideos",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/3905310871/",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			Skip: false,
+		},
+		{
+			// A
+			Code: struct{}{},
+			Name: "DoorDash",
+			URL:  "https://doordash.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    3205573,
+				Alias: "doordash",
+				Name:  "DoorDash",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "doordash",
+				GoRepositoryCount: 7,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-DoorDash-EI_IE813073.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/DoorDash-Reviews-E813073.htm",
+			},
+			OttaProfileSlug:   "DoorDash",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go:      []string{},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			Skip: false,
+		},
+		{
+			// A
+			Code: struct{}{},
+			Name: "Mastercard",
+			URL:  "https://www.mastercard.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    3015,
+				Alias: "mastercard",
+				Name:  "Mastercard",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "Mastercard",
+				GoRepositoryCount: 3,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Mastercard-EI_IE3677.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Mastercard-Reviews-E3677.htm",
+			},
+			OttaProfileSlug:   "Mastercard",
+			YouTubeChannelURL: "https://www.youtube.com/@MasterCard",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/3842471708/",
+					"https://www.linkedin.com/jobs/view/3928338037/",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			Skip: false,
+		},
+		{
+			// A
+			Code: struct{}{},
+			Name: "Canonical",
+			URL:  "https://canonical.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    234280,
+				Alias: "canonical",
+				Name:  "Canonical",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "canonical",
+				GoRepositoryCount: 83,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Canonical-EI_IE230560.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Canonical-Reviews-E230560.htm",
+			},
+			OttaProfileSlug:   "canonical",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go:      []string{},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			Skip: true, // too many vacancies on LinkedIn
+		},
+		{
+			// A
+			Code: struct{}{},
+			Name: "Pinterest",
+			URL:  "https://www.pinterest.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    1124131,
+				Alias: "pinterest",
+				Name:  "Pinterest",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "pinterest",
+				GoRepositoryCount: 3,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Pinterest-EI_IE503467.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Pinterest-Reviews-E503467.htm",
+			},
+			OttaProfileSlug:   "Pinterest",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://app.otta.com/jobs/JwXeQ-gm",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			Skip: false,
+		},
+		{
+			// A
+			Code: struct{}{},
+			Name: "Timescale",
+			URL:  "https://www.timescale.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    11065434,
+				Alias: "timescaledb",
+				Name:  "Timescale",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "timescale",
+				GoRepositoryCount: 11,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Timescale-EI_IE2214356.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Timescale-Reviews-E2214356.htm",
+			},
+			OttaProfileSlug:   "Timescale",
+			YouTubeChannelURL: "https://www.youtube.com/@TimescaleDB",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://app.otta.com/jobs/qZT84OgV",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			Skip: false,
+		},
+		{
+			// A
+			Code: struct{}{},
+			Name: "ScyllaDB",
+			URL:  "https://www.scylladb.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    10201068,
+				Alias: "scylladb",
+				Name:  "ScyllaDB",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "scylladb",
+				GoRepositoryCount: 18,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-ScyllaDB-EI_IE1622223.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/ScyllaDB-Reviews-E1622223.htm",
+			},
+			OttaProfileSlug:   "ScyllaDB",
+			YouTubeChannelURL: "https://www.youtube.com/@ScyllaDB",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://app.otta.com/jobs/Xj1J-uAC",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			Skip: false,
+		},
+		{
+			// A
+			Code: struct{}{},
+			Name: "IBM",
+			URL:  "https://www.ibm.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    1009,
+				Alias: "ibm",
+				Name:  "IBM",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "IBM",
+				GoRepositoryCount: 199,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-IBM-EI_IE354.11,14.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/IBM-Reviews-E354.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "https://www.youtube.com/@IBMTechnology",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/3890489682/",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			Skip: false,
+		},
+		{
+			// A
+			Code: struct{}{},
+			Name: "Namecheap",
+			URL:  "https://www.namecheap.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    486932,
+				Alias: "namecheap-inc",
+				Name:  "Namecheap, Inc",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "namecheap",
+				GoRepositoryCount: 3,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Namecheap-EI_IE994113.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Namecheap-Reviews-E994113.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "https://www.youtube.com/@namecheap",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/3902607066/",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			Skip: false,
+		},
+		{
+			// A
+			Code: struct{}{},
+			Name: "Microsoft",
+			URL:  "https://www.microsoft.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    1035,
+				Alias: "microsoft",
+				Name:  "Microsoft",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "microsoft",
+				GoRepositoryCount: 78,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Microsoft-EI_IE1651.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Microsoft-Reviews-E1651.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "https://www.youtube.com/@Microsoft",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/3908309859/",
+					"https://www.linkedin.com/jobs/view/3905989512/",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			Skip: false,
+		},
+		{
+			// A
+			Code: struct{}{},
+			Name: "Siemens",
+			URL:  "https://www.siemens.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    0,
+				IDs:   []int{1043, 157241},
+				Alias: "siemens",
+				Name:  "Siemens",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "siemens",
+				GoRepositoryCount: 19,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Siemens-EI_IE3510.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Siemens-Reviews-E3510.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "https://www.youtube.com/@SiemensKnowledgeHub",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/3901324430/",
+				},
+				domain.Rust: []string{
+					"https://www.linkedin.com/jobs/view/4018413094/",
+				},
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			Skip: false,
+		},
+		{
+			// A
+			Code: struct{}{},
+			Name: "Medium",
+			URL:  "https://medium.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    3039001,
+				Alias: "medium-com",
+				Name:  "Medium",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "Medium",
+				GoRepositoryCount: 20,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Medium-EI_IE784883.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Medium-Reviews-E784883.htm",
+			},
+			OttaProfileSlug:   "Medium",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/3910516815/",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			Skip: false,
+		},
+		{
+			// A
+			Code: struct{}{},
+			Name: "GitHub",
+			URL:  "https://github.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    1418841,
+				Alias: "github",
+				Name:  "GitHub",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "github",
+				GoRepositoryCount: 18,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-GitHub-EI_IE671945.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/GitHub-Reviews-E671945.htm",
+			},
+			OttaProfileSlug:   "Github",
+			YouTubeChannelURL: "https://www.youtube.com/@GitHub",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/3914880703/",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			Skip: false,
+		},
+		{
+			// A
+			Code: struct{}{},
+			Name: "Grammarly",
+			URL:  "https://www.grammarly.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    1253671,
+				Alias: "grammarly",
+				Name:  "Grammarly",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "grammarly",
+				GoRepositoryCount: 0,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Grammarly-EI_IE636873.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Grammarly-Reviews-E636873.htm",
+			},
+			OttaProfileSlug:   "Grammarly",
+			YouTubeChannelURL: "https://www.youtube.com/@grammarly",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://app.otta.com/jobs/jonw8YN_",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			Skip: false,
+		},
+		{
+			// A
+			Code: struct{}{},
+			Name: "DigitalOcean",
+			URL:  "https://www.digitalocean.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    2601253,
+				Alias: "digitalocean",
+				Name:  "DigitalOcean",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "digitalocean",
+				GoRepositoryCount: 116,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-DigitalOcean-EI_IE823482.11,23.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/DigitalOcean-Reviews-E823482.htm",
+			},
+			OttaProfileSlug:   "DigitalOcean",
+			YouTubeChannelURL: "https://www.youtube.com/@DigitalOcean",
+			GoMainLanguage:    true,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://app.otta.com/jobs/bwHc4GXE",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			Skip: false,
+		},
+		{
+			// A
+			Code: struct{}{},
+			Name: "Snap",
+			URL:  "https://snap.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    15191764,
+				Alias: "snap-inc-co",
+				Name:  "Snap Inc.",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "Snapchat",
+				GoRepositoryCount: 1,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Snap-EI_IE671946.11,15.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Snap-Reviews-E671946.htm",
+			},
+			OttaProfileSlug:   "Snap",
+			YouTubeChannelURL: "https://www.youtube.com/@snapinc",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://app.otta.com/jobs/hr1D1_FZ",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			Skip: false,
+		},
+		{
+			// A
+			Code: struct{}{},
+			Name: "American Express",
+			URL:  "https://www.americanexpress.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    1277,
+				Alias: "american-express",
+				Name:  "American Express",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "americanexpress",
+				GoRepositoryCount: 4,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-American-Express-EI_IE35.11,27.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/American-Express-Reviews-E35.htm",
+			},
+			OttaProfileSlug:   "American-Express",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/3926321626/",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			Skip: false,
+		},
+		{
+			// A
+			Code: struct{}{},
+			Name: "Wise",
+			URL:  "https://wise.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    1769571,
+				Alias: "wiseaccount",
+				Name:  "Wise",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "transferwise",
+				GoRepositoryCount: 35,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Wise-EI_IE637715.11,15.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Wise-Reviews-E637715.htm",
+			},
+			OttaProfileSlug:   "Wise",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://app.otta.com/jobs/UVRcHQhe",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			Skip: false,
+		},
+		{
+			// A
+			Code: struct{}{},
+			Name: "GoDaddy",
+			URL:  "https://www.godaddy.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    7846,
+				Alias: "godaddy",
+				Name:  "GoDaddy",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "godaddy",
+				GoRepositoryCount: 6,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-GoDaddy-EI_IE35337.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/GoDaddy-Reviews-E35337.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/4011177772/",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			Skip: false,
+		},
+		{
+			// A
+			Code: struct{}{},
+			Name: "Netlify",
+			URL:  "https://www.netlify.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    6392431,
+				Alias: "netlify",
+				Name:  "Netlify",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "netlify",
+				GoRepositoryCount: 35,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Netlify-EI_IE1426251.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Netlify-Reviews-E1426251.htm",
+			},
+			OttaProfileSlug:   "Netlify",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://app.otta.com/jobs/qdIzdfOu",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			Skip: false,
+		},
+		{
+			// A
+			Code: struct{}{},
+			Name: "SoundCloud",
+			URL:  "https://soundcloud.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    200200,
+				Alias: "soundcloud",
+				Name:  "SoundCloud",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "soundcloud",
+				GoRepositoryCount: 5,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-SoundCloud-EI_IE407066.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/SoundCloud-Reviews-E407066.htm",
+			},
+			OttaProfileSlug:   "SoundCloud",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://app.otta.com/jobs/Q8WY5QwP",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			Skip: false,
+		},
+		{
+			// A
+			Code: struct{}{},
+			Name: "CrowdStrike",
+			URL:  "https://www.crowdstrike.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    2497653,
+				Alias: "crowdstrike",
+				Name:  "CrowdStrike",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "CrowdStrike",
+				GoRepositoryCount: 20,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-CrowdStrike-EI_IE795976.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/CrowdStrike-Reviews-E795976.htm",
+			},
+			OttaProfileSlug:   "CrowdStrike-1",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://app.otta.com/jobs/Ex_2fkZL",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			Skip: false,
+		},
+		{
+			// A
+			Code: struct{}{},
+			Name: "Percona",
+			URL:  "https://www.percona.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    421929,
+				Alias: "percona",
+				Name:  "Percona",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "percona",
+				GoRepositoryCount: 46,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-EI_IE283779.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Percona-Reviews-E283779.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://app.otta.com/jobs/5n3UU6ZU",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			Skip: false,
+		},
+		{
+			// A
+			Code: struct{}{},
+			Name: "LinkedIn",
+			URL:  "https://www.linkedin.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    1337,
+				Alias: "linkedin",
+				Name:  "LinkedIn",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "linkedin",
+				GoRepositoryCount: 8,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-LinkedIn-EI_IE34865.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/LinkedIn-Reviews-E34865.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/4023583351/",
+				},
+				domain.Rust: []string{
+					"https://www.linkedin.com/jobs/view/4023579503/",
+					"https://www.linkedin.com/jobs/view/4023583351/",
+				},
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			Skip: false,
+		},
 
 		// APPEND HERE
 
@@ -708,70 +1627,6 @@ func Companies() []domain.Company {
 			Skip: false,
 		},
 		{
-			// A
-			Code: struct{}{},
-			Name: "HashiCorp",
-			URL:  "https://www.hashicorp.com/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:    2830763,
-				Alias: "hashicorp",
-				Name:  "HashiCorp",
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:             "hashicorp",
-				GoRepositoryCount: 296,
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-HashiCorp-EI_IE1359860.11,20.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/HashiCorp-Reviews-E1359860.htm",
-			},
-			OttaProfileSlug:   "HashiCorp",
-			YouTubeChannelURL: "",
-			GoMainLanguage:    true,
-			Vacancies: domain.Vacancies{
-				domain.Go:      []string{},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
-			Skip: false,
-		},
-		{
-			// A
-			Code: struct{}{},
-			Name: "Grafana Labs",
-			URL:  "https://grafana.com/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:    11062162,
-				Alias: "grafana-labs",
-				Name:  "Grafana Labs",
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:             "grafana",
-				GoRepositoryCount: 233,
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Grafana-Labs-EI_IE2300269.11,23.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/Grafana-Labs-Reviews-E2300269.htm",
-			},
-			OttaProfileSlug:   "Grafana-Labs",
-			YouTubeChannelURL: "https://www.youtube.com/channel/UCYCwgQAMm9sTJv0rgwQLCxw",
-			GoMainLanguage:    true,
-			Vacancies: domain.Vacancies{
-				domain.Go:      []string{},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
-			Skip: false,
-		},
-		{
 			Code: struct{}{},
 			Name: "Weaviate",
 			URL:  "https://weaviate.io/",
@@ -834,75 +1689,6 @@ func Companies() []domain.Company {
 			Skip: false,
 		},
 		{
-			// A
-			Code: struct{}{},
-			Name: "Okta",
-			URL:  "https://www.okta.com/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:    926041,
-				Alias: "okta-inc-",
-				Name:  "Okta",
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:             "okta",
-				GoRepositoryCount: 5,
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Okta-EI_IE444756.11,15.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/Okta-Reviews-E444756.htm",
-			},
-			OttaProfileSlug:   "Okta",
-			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://app.otta.com/jobs/FtbF4gpB",
-					"https://app.otta.com/jobs/QcMdOhR_",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
-			Skip: false,
-		},
-		{
-			// A
-			Code: struct{}{},
-			Name: "1Password",
-			URL:  "https://1password.com/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:    18648301,
-				Alias: "1password",
-				Name:  "1Password",
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:             "1Password",
-				GoRepositoryCount: 19,
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-1Password-EI_IE2984143.11,20.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/1Password-Reviews-E2984143.htm",
-			},
-			OttaProfileSlug:   "1Password",
-			YouTubeChannelURL: "https://www.youtube.com/@1PasswordVideos",
-			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/3905310871/",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
-			Skip: false,
-		},
-		{
 			Code: struct{}{},
 			Name: "Fubo",
 			URL:  "https://www.fubo.tv/",
@@ -951,38 +1737,6 @@ func Companies() []domain.Company {
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/YASSIR-Reviews-E2601333.htm",
 			},
 			OttaProfileSlug:   "Yassir",
-			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go:      []string{},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
-			Skip: false,
-		},
-		{
-			// A
-			Code: struct{}{},
-			Name: "DoorDash",
-			URL:  "https://doordash.com/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:    3205573,
-				Alias: "doordash",
-				Name:  "DoorDash",
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:             "doordash",
-				GoRepositoryCount: 7,
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-DoorDash-EI_IE813073.11,19.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/DoorDash-Reviews-E813073.htm",
-			},
-			OttaProfileSlug:   "DoorDash",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{
@@ -1080,41 +1834,6 @@ func Companies() []domain.Company {
 			Skip: false,
 		},
 		{
-			// A
-			Code: struct{}{},
-			Name: "Mastercard",
-			URL:  "https://www.mastercard.com/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:    3015,
-				Alias: "mastercard",
-				Name:  "Mastercard",
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:             "Mastercard",
-				GoRepositoryCount: 3,
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Mastercard-EI_IE3677.11,21.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/Mastercard-Reviews-E3677.htm",
-			},
-			OttaProfileSlug:   "Mastercard",
-			YouTubeChannelURL: "https://www.youtube.com/@MasterCard",
-			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/3842471708/",
-					"https://www.linkedin.com/jobs/view/3928338037/",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
-			Skip: false,
-		},
-		{
 			Code: struct{}{},
 			Name: "Cynergy Bank",
 			URL:  "https://www.cynergybank.co.uk/",
@@ -1147,38 +1866,6 @@ func Companies() []domain.Company {
 				domain.Haskell: nil,
 			},
 			Skip: false,
-		},
-		{
-			// A
-			Code: struct{}{},
-			Name: "Canonical",
-			URL:  "https://canonical.com/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:    234280,
-				Alias: "canonical",
-				Name:  "Canonical",
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:             "canonical",
-				GoRepositoryCount: 83,
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Canonical-EI_IE230560.11,20.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/Canonical-Reviews-E230560.htm",
-			},
-			OttaProfileSlug:   "canonical",
-			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go:      []string{},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
-			Skip: true, // too many vacancies on LinkedIn
 		},
 		{
 			Code: struct{}{},
@@ -1316,40 +2003,6 @@ func Companies() []domain.Company {
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{
 				domain.Go:      []string{},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
-			Skip: false,
-		},
-		{
-			// A
-			Code: struct{}{},
-			Name: "Pinterest",
-			URL:  "https://www.pinterest.com/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:    1124131,
-				Alias: "pinterest",
-				Name:  "Pinterest",
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:             "pinterest",
-				GoRepositoryCount: 3,
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Pinterest-EI_IE503467.11,20.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/Pinterest-Reviews-E503467.htm",
-			},
-			OttaProfileSlug:   "Pinterest",
-			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://app.otta.com/jobs/JwXeQ-gm",
-				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
 				domain.Scala:   nil,
@@ -1810,40 +2463,6 @@ func Companies() []domain.Company {
 			Skip: false,
 		},
 		{
-			// A
-			Code: struct{}{},
-			Name: "Timescale",
-			URL:  "https://www.timescale.com/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:    11065434,
-				Alias: "timescaledb",
-				Name:  "Timescale",
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:             "timescale",
-				GoRepositoryCount: 11,
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Timescale-EI_IE2214356.11,20.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/Timescale-Reviews-E2214356.htm",
-			},
-			OttaProfileSlug:   "Timescale",
-			YouTubeChannelURL: "https://www.youtube.com/@TimescaleDB",
-			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://app.otta.com/jobs/qZT84OgV",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
-			Skip: false,
-		},
-		{
 			Code: struct{}{},
 			Name: "Arenko",
 			URL:  "https://arenko.group/",
@@ -1979,40 +2598,6 @@ func Companies() []domain.Company {
 			Skip: false,
 		},
 		{
-			// A
-			Code: struct{}{},
-			Name: "ScyllaDB",
-			URL:  "https://www.scylladb.com/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:    10201068,
-				Alias: "scylladb",
-				Name:  "ScyllaDB",
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:             "scylladb",
-				GoRepositoryCount: 18,
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-ScyllaDB-EI_IE1622223.11,19.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/ScyllaDB-Reviews-E1622223.htm",
-			},
-			OttaProfileSlug:   "ScyllaDB",
-			YouTubeChannelURL: "https://www.youtube.com/@ScyllaDB",
-			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://app.otta.com/jobs/Xj1J-uAC",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
-			Skip: false,
-		},
-		{
 			Code: struct{}{},
 			Name: "Unnax",
 			URL:  "https://www.unnax.com/",
@@ -2102,40 +2687,6 @@ func Companies() []domain.Company {
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
 					"https://www.linkedin.com/jobs/view/3855486951/",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
-			Skip: false,
-		},
-		{
-			// A
-			Code: struct{}{},
-			Name: "IBM",
-			URL:  "https://www.ibm.com/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:    1009,
-				Alias: "ibm",
-				Name:  "IBM",
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:             "IBM",
-				GoRepositoryCount: 199,
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-IBM-EI_IE354.11,14.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/IBM-Reviews-E354.htm",
-			},
-			OttaProfileSlug:   "",
-			YouTubeChannelURL: "https://www.youtube.com/@IBMTechnology",
-			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/3890489682/",
 				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
@@ -2566,40 +3117,6 @@ func Companies() []domain.Company {
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
 					"https://www.linkedin.com/jobs/view/3901803458/",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
-			Skip: false,
-		},
-		{
-			// A
-			Code: struct{}{},
-			Name: "Namecheap",
-			URL:  "https://www.namecheap.com/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:    486932,
-				Alias: "namecheap-inc",
-				Name:  "Namecheap, Inc",
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:             "namecheap",
-				GoRepositoryCount: 3,
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Namecheap-EI_IE994113.11,20.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/Namecheap-Reviews-E994113.htm",
-			},
-			OttaProfileSlug:   "",
-			YouTubeChannelURL: "https://www.youtube.com/@namecheap",
-			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/3902607066/",
 				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
@@ -3075,41 +3592,6 @@ func Companies() []domain.Company {
 			Skip: false,
 		},
 		{
-			// A
-			Code: struct{}{},
-			Name: "Microsoft",
-			URL:  "https://www.microsoft.com/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:    1035,
-				Alias: "microsoft",
-				Name:  "Microsoft",
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:             "microsoft",
-				GoRepositoryCount: 78,
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Microsoft-EI_IE1651.11,20.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/Microsoft-Reviews-E1651.htm",
-			},
-			OttaProfileSlug:   "",
-			YouTubeChannelURL: "https://www.youtube.com/@Microsoft",
-			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/3908309859/",
-					"https://www.linkedin.com/jobs/view/3905989512/",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
-			Skip: false,
-		},
-		{
 			Code: struct{}{},
 			Name: "OLX",
 			URL:  "https://www.olxgroup.com/",
@@ -3168,43 +3650,6 @@ func Companies() []domain.Company {
 					"https://app.otta.com/jobs/AOeyI9AM",
 				},
 				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
-			Skip: false,
-		},
-		{
-			// A
-			Code: struct{}{},
-			Name: "Siemens",
-			URL:  "https://www.siemens.com/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:    0,
-				IDs:   []int{1043, 157241},
-				Alias: "siemens",
-				Name:  "Siemens",
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:             "siemens",
-				GoRepositoryCount: 19,
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Siemens-EI_IE3510.11,18.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/Siemens-Reviews-E3510.htm",
-			},
-			OttaProfileSlug:   "",
-			YouTubeChannelURL: "https://www.youtube.com/@SiemensKnowledgeHub",
-			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/3901324430/",
-				},
-				domain.Rust: []string{
-					"https://www.linkedin.com/jobs/view/4018413094/",
-				},
 				domain.Zig:     nil,
 				domain.Scala:   nil,
 				domain.Elixir:  nil,
@@ -3335,40 +3780,6 @@ func Companies() []domain.Company {
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
 					"https://www.linkedin.com/jobs/view/3797062001/",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
-			Skip: false,
-		},
-		{
-			// A
-			Code: struct{}{},
-			Name: "Medium",
-			URL:  "https://medium.com/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:    3039001,
-				Alias: "medium-com",
-				Name:  "Medium",
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:             "Medium",
-				GoRepositoryCount: 20,
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Medium-EI_IE784883.11,17.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/Medium-Reviews-E784883.htm",
-			},
-			OttaProfileSlug:   "Medium",
-			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/3910516815/",
 				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
@@ -3909,40 +4320,6 @@ func Companies() []domain.Company {
 			Skip: false,
 		},
 		{
-			// A
-			Code: struct{}{},
-			Name: "GitHub",
-			URL:  "https://github.com/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:    1418841,
-				Alias: "github",
-				Name:  "GitHub",
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:             "github",
-				GoRepositoryCount: 18,
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-GitHub-EI_IE671945.11,17.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/GitHub-Reviews-E671945.htm",
-			},
-			OttaProfileSlug:   "Github",
-			YouTubeChannelURL: "https://www.youtube.com/@GitHub",
-			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/3914880703/",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
-			Skip: false,
-		},
-		{
 			Code: struct{}{},
 			Name: "Voltus",
 			URL:  "https://www.voltus.co/",
@@ -3965,40 +4342,6 @@ func Companies() []domain.Company {
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
 					"https://app.otta.com/jobs/pB_hGf0W",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
-			Skip: false,
-		},
-		{
-			// A
-			Code: struct{}{},
-			Name: "Grammarly",
-			URL:  "https://www.grammarly.com/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:    1253671,
-				Alias: "grammarly",
-				Name:  "Grammarly",
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:             "grammarly",
-				GoRepositoryCount: 0,
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Grammarly-EI_IE636873.11,20.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/Grammarly-Reviews-E636873.htm",
-			},
-			OttaProfileSlug:   "Grammarly",
-			YouTubeChannelURL: "https://www.youtube.com/@grammarly",
-			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://app.otta.com/jobs/jonw8YN_",
 				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
@@ -4736,74 +5079,6 @@ func Companies() []domain.Company {
 			Skip: false,
 		},
 		{
-			// A
-			Code: struct{}{},
-			Name: "DigitalOcean",
-			URL:  "https://www.digitalocean.com/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:    2601253,
-				Alias: "digitalocean",
-				Name:  "DigitalOcean",
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:             "digitalocean",
-				GoRepositoryCount: 116,
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-DigitalOcean-EI_IE823482.11,23.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/DigitalOcean-Reviews-E823482.htm",
-			},
-			OttaProfileSlug:   "DigitalOcean",
-			YouTubeChannelURL: "https://www.youtube.com/@DigitalOcean",
-			GoMainLanguage:    true,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://app.otta.com/jobs/bwHc4GXE",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
-			Skip: false,
-		},
-		{
-			// A
-			Code: struct{}{},
-			Name: "Snap",
-			URL:  "https://snap.com/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:    15191764,
-				Alias: "snap-inc-co",
-				Name:  "Snap Inc.",
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:             "Snapchat",
-				GoRepositoryCount: 1,
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Snap-EI_IE671946.11,15.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/Snap-Reviews-E671946.htm",
-			},
-			OttaProfileSlug:   "Snap",
-			YouTubeChannelURL: "https://www.youtube.com/@snapinc",
-			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://app.otta.com/jobs/hr1D1_FZ",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
-			Skip: false,
-		},
-		{
 			Code: struct{}{},
 			Name: "Nuro",
 			URL:  "https://www.nuro.ai/",
@@ -5101,74 +5376,6 @@ func Companies() []domain.Company {
 			Skip: false,
 		},
 		{
-			// A
-			Code: struct{}{},
-			Name: "American Express",
-			URL:  "https://www.americanexpress.com/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:    1277,
-				Alias: "american-express",
-				Name:  "American Express",
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:             "americanexpress",
-				GoRepositoryCount: 4,
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-American-Express-EI_IE35.11,27.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/American-Express-Reviews-E35.htm",
-			},
-			OttaProfileSlug:   "American-Express",
-			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/3926321626/",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
-			Skip: false,
-		},
-		{
-			// A
-			Code: struct{}{},
-			Name: "Wise",
-			URL:  "https://wise.com/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:    1769571,
-				Alias: "wiseaccount",
-				Name:  "Wise",
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:             "transferwise",
-				GoRepositoryCount: 35,
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Wise-EI_IE637715.11,15.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/Wise-Reviews-E637715.htm",
-			},
-			OttaProfileSlug:   "Wise",
-			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://app.otta.com/jobs/UVRcHQhe",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
-			Skip: false,
-		},
-		{
 			Code: struct{}{},
 			Name: "Checkout.com",
 			URL:  "https://www.checkout.com/",
@@ -5235,74 +5442,6 @@ func Companies() []domain.Company {
 			Skip: false,
 		},
 		{
-			// A
-			Code: struct{}{},
-			Name: "GoDaddy",
-			URL:  "https://www.godaddy.com/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:    7846,
-				Alias: "godaddy",
-				Name:  "GoDaddy",
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:             "godaddy",
-				GoRepositoryCount: 6,
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-GoDaddy-EI_IE35337.11,18.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/GoDaddy-Reviews-E35337.htm",
-			},
-			OttaProfileSlug:   "",
-			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/4011177772/",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
-			Skip: false,
-		},
-		{
-			// A
-			Code: struct{}{},
-			Name: "Netlify",
-			URL:  "https://www.netlify.com/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:    6392431,
-				Alias: "netlify",
-				Name:  "Netlify",
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:             "netlify",
-				GoRepositoryCount: 35,
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Netlify-EI_IE1426251.11,18.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/Netlify-Reviews-E1426251.htm",
-			},
-			OttaProfileSlug:   "Netlify",
-			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://app.otta.com/jobs/qdIzdfOu",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
-			Skip: false,
-		},
-		{
 			Code: struct{}{},
 			Name: "Unlimit",
 			URL:  "https://www.unlimit.com/",
@@ -5325,40 +5464,6 @@ func Companies() []domain.Company {
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
 					"https://app.otta.com/jobs/P4ept_aQ",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
-			Skip: false,
-		},
-		{
-			// A
-			Code: struct{}{},
-			Name: "SoundCloud",
-			URL:  "https://soundcloud.com/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:    200200,
-				Alias: "soundcloud",
-				Name:  "SoundCloud",
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:             "soundcloud",
-				GoRepositoryCount: 5,
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-SoundCloud-EI_IE407066.11,21.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/SoundCloud-Reviews-E407066.htm",
-			},
-			OttaProfileSlug:   "SoundCloud",
-			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://app.otta.com/jobs/Q8WY5QwP",
 				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
@@ -5456,40 +5561,6 @@ func Companies() []domain.Company {
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
 					"https://app.otta.com/jobs/xpGrXDnd",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
-			Skip: false,
-		},
-		{
-			// A
-			Code: struct{}{},
-			Name: "CrowdStrike",
-			URL:  "https://www.crowdstrike.com/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:    2497653,
-				Alias: "crowdstrike",
-				Name:  "CrowdStrike",
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:             "CrowdStrike",
-				GoRepositoryCount: 20,
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-CrowdStrike-EI_IE795976.11,22.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/CrowdStrike-Reviews-E795976.htm",
-			},
-			OttaProfileSlug:   "CrowdStrike-1",
-			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://app.otta.com/jobs/Ex_2fkZL",
 				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
@@ -5624,77 +5695,6 @@ func Companies() []domain.Company {
 					"https://app.otta.com/jobs/L8SSyDNH",
 				},
 				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
-			Skip: false,
-		},
-		{
-			// A
-			Code: struct{}{},
-			Name: "Percona",
-			URL:  "https://www.percona.com/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:    421929,
-				Alias: "percona",
-				Name:  "Percona",
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:             "percona",
-				GoRepositoryCount: 46,
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-EI_IE283779.11,18.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/Percona-Reviews-E283779.htm",
-			},
-			OttaProfileSlug:   "",
-			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://app.otta.com/jobs/5n3UU6ZU",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
-			Skip: false,
-		},
-		{
-			// A
-			Code: struct{}{},
-			Name: "LinkedIn",
-			URL:  "https://www.linkedin.com/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:    1337,
-				Alias: "linkedin",
-				Name:  "LinkedIn",
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:             "linkedin",
-				GoRepositoryCount: 8,
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-LinkedIn-EI_IE34865.11,19.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/LinkedIn-Reviews-E34865.htm",
-			},
-			OttaProfileSlug:   "",
-			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/4023583351/",
-				},
-				domain.Rust: []string{
-					"https://www.linkedin.com/jobs/view/4023579503/",
-					"https://www.linkedin.com/jobs/view/4023583351/",
-				},
 				domain.Zig:     nil,
 				domain.Scala:   nil,
 				domain.Elixir:  nil,
