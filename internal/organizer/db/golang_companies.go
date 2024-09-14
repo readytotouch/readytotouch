@@ -130,37 +130,6 @@ func Companies() []domain.Company {
 		},
 		{
 			Code: struct{}{},
-			Name: "Careem",
-			URL:  "https://www.careem.com/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:    2852511,
-				Alias: "careem",
-				Name:  "Careem",
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:           "careem",
-				RepositoryCount: 3,
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Careem-EI_IE1438731.11,17.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/Careem-Reviews-E1438731.htm",
-			},
-			OttaProfileSlug:   "Careem",
-			YouTubeChannelURL: "",
-			GoMainLanguage:    true,
-			Vacancies: domain.Vacancies{
-				domain.Go:      []string{},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
-			Skip: false,
-		},
-		{
-			Code: struct{}{},
 			Name: "Cloudflare",
 			URL:  "https://www.cloudflare.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -282,6 +251,71 @@ func Companies() []domain.Company {
 				domain.Go: []string{
 					"https://app.otta.com/jobs/l-8sLbJL",
 				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			Skip: false,
+		},
+		{
+			Code: struct{}{},
+			Name: "Docker",
+			URL:  "https://www.docker.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    1301808,
+				Alias: "docker",
+				Name:  "Docker, Inc",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "docker",
+				RepositoryCount: 28,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Docker-EI_IE1089506.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Docker-Reviews-E1089506.htm",
+			},
+			OttaProfileSlug:   "Docker-1",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    true,
+			Vacancies: domain.Vacancies{
+				domain.Go:      []string{},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			Skip: false,
+		},
+
+		// APPEND HERE
+
+		{
+			Code: struct{}{},
+			Name: "Careem",
+			URL:  "https://www.careem.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    2852511,
+				Alias: "careem",
+				Name:  "Careem",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "careem",
+				RepositoryCount: 3,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Careem-EI_IE1438731.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Careem-Reviews-E1438731.htm",
+			},
+			OttaProfileSlug:   "Careem",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    true,
+			Vacancies: domain.Vacancies{
+				domain.Go:      []string{},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
 				domain.Scala:   nil,
@@ -441,37 +475,6 @@ func Companies() []domain.Company {
 				domain.Go: []string{
 					"https://relocate.me/the-united-kingdom/london/form3/senior-software-engineer-go-7646",
 				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
-			Skip: false,
-		},
-		{
-			Code: struct{}{},
-			Name: "Docker",
-			URL:  "https://www.docker.com/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:    1301808,
-				Alias: "docker",
-				Name:  "Docker, Inc",
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:           "docker",
-				RepositoryCount: 28,
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Docker-EI_IE1089506.11,17.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/Docker-Reviews-E1089506.htm",
-			},
-			OttaProfileSlug:   "Docker-1",
-			YouTubeChannelURL: "",
-			GoMainLanguage:    true,
-			Vacancies: domain.Vacancies{
-				domain.Go:      []string{},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
 				domain.Scala:   nil,
@@ -703,6 +706,7 @@ func Companies() []domain.Company {
 			Skip: false,
 		},
 		{
+			// A
 			Code: struct{}{},
 			Name: "HashiCorp",
 			URL:  "https://www.hashicorp.com/",
@@ -734,6 +738,7 @@ func Companies() []domain.Company {
 			Skip: false,
 		},
 		{
+			// A
 			Code: struct{}{},
 			Name: "Grafana Labs",
 			URL:  "https://grafana.com/",
@@ -827,6 +832,7 @@ func Companies() []domain.Company {
 			Skip: false,
 		},
 		{
+			// A
 			Code: struct{}{},
 			Name: "Okta",
 			URL:  "https://www.okta.com/",
@@ -861,6 +867,7 @@ func Companies() []domain.Company {
 			Skip: false,
 		},
 		{
+			// A
 			Code: struct{}{},
 			Name: "1Password",
 			URL:  "https://1password.com/",
@@ -956,6 +963,7 @@ func Companies() []domain.Company {
 			Skip: false,
 		},
 		{
+			// A
 			Code: struct{}{},
 			Name: "DoorDash",
 			URL:  "https://doordash.com/",
@@ -1070,6 +1078,7 @@ func Companies() []domain.Company {
 			Skip: false,
 		},
 		{
+			// A
 			Code: struct{}{},
 			Name: "Mastercard",
 			URL:  "https://www.mastercard.com/",
@@ -1138,6 +1147,7 @@ func Companies() []domain.Company {
 			Skip: false,
 		},
 		{
+			// A
 			Code: struct{}{},
 			Name: "Canonical",
 			URL:  "https://canonical.com/",
@@ -1314,6 +1324,7 @@ func Companies() []domain.Company {
 			Skip: false,
 		},
 		{
+			// A
 			Code: struct{}{},
 			Name: "Pinterest",
 			URL:  "https://www.pinterest.com/",
@@ -1797,6 +1808,7 @@ func Companies() []domain.Company {
 			Skip: false,
 		},
 		{
+			// A
 			Code: struct{}{},
 			Name: "Timescale",
 			URL:  "https://www.timescale.com/",
@@ -1965,6 +1977,7 @@ func Companies() []domain.Company {
 			Skip: false,
 		},
 		{
+			// A
 			Code: struct{}{},
 			Name: "ScyllaDB",
 			URL:  "https://www.scylladb.com/",
@@ -2098,6 +2111,7 @@ func Companies() []domain.Company {
 			Skip: false,
 		},
 		{
+			// A
 			Code: struct{}{},
 			Name: "IBM",
 			URL:  "https://www.ibm.com/",
@@ -2561,6 +2575,7 @@ func Companies() []domain.Company {
 			Skip: false,
 		},
 		{
+			// A
 			Code: struct{}{},
 			Name: "Namecheap",
 			URL:  "https://www.namecheap.com/",
@@ -3058,6 +3073,7 @@ func Companies() []domain.Company {
 			Skip: false,
 		},
 		{
+			// A
 			Code: struct{}{},
 			Name: "Microsoft",
 			URL:  "https://www.microsoft.com/",
@@ -3159,6 +3175,7 @@ func Companies() []domain.Company {
 			Skip: false,
 		},
 		{
+			// A
 			Code: struct{}{},
 			Name: "Siemens",
 			URL:  "https://www.siemens.com/",
@@ -3325,6 +3342,7 @@ func Companies() []domain.Company {
 			Skip: false,
 		},
 		{
+			// A
 			Code: struct{}{},
 			Name: "Medium",
 			URL:  "https://medium.com/",
@@ -3887,6 +3905,7 @@ func Companies() []domain.Company {
 			Skip: false,
 		},
 		{
+			// A
 			Code: struct{}{},
 			Name: "GitHub",
 			URL:  "https://github.com/",
@@ -3953,6 +3972,7 @@ func Companies() []domain.Company {
 			Skip: false,
 		},
 		{
+			// A
 			Code: struct{}{},
 			Name: "Grammarly",
 			URL:  "https://www.grammarly.com/",
@@ -4712,6 +4732,7 @@ func Companies() []domain.Company {
 			Skip: false,
 		},
 		{
+			// A
 			Code: struct{}{},
 			Name: "DigitalOcean",
 			URL:  "https://www.digitalocean.com/",
@@ -4745,6 +4766,7 @@ func Companies() []domain.Company {
 			Skip: false,
 		},
 		{
+			// A
 			Code: struct{}{},
 			Name: "Snap",
 			URL:  "https://snap.com/",
@@ -5075,6 +5097,7 @@ func Companies() []domain.Company {
 			Skip: false,
 		},
 		{
+			// A
 			Code: struct{}{},
 			Name: "American Express",
 			URL:  "https://www.americanexpress.com/",
@@ -5108,6 +5131,7 @@ func Companies() []domain.Company {
 			Skip: false,
 		},
 		{
+			// A
 			Code: struct{}{},
 			Name: "Wise",
 			URL:  "https://wise.com/",
@@ -5207,6 +5231,7 @@ func Companies() []domain.Company {
 			Skip: false,
 		},
 		{
+			// A
 			Code: struct{}{},
 			Name: "GoDaddy",
 			URL:  "https://www.godaddy.com/",
@@ -5240,6 +5265,7 @@ func Companies() []domain.Company {
 			Skip: false,
 		},
 		{
+			// A
 			Code: struct{}{},
 			Name: "Netlify",
 			URL:  "https://www.netlify.com/",
@@ -5306,6 +5332,7 @@ func Companies() []domain.Company {
 			Skip: false,
 		},
 		{
+			// A
 			Code: struct{}{},
 			Name: "SoundCloud",
 			URL:  "https://soundcloud.com/",
@@ -5436,6 +5463,7 @@ func Companies() []domain.Company {
 			Skip: false,
 		},
 		{
+			// A
 			Code: struct{}{},
 			Name: "CrowdStrike",
 			URL:  "https://www.crowdstrike.com/",
