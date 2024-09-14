@@ -14,8 +14,8 @@ func Companies() []domain.Company {
 				Name:  "Google",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "google",
-				RepositoryCount: 157,
+				Login:             "google",
+				GoRepositoryCount: 157,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Google-EI_IE9079.11,17.htm",
@@ -45,8 +45,8 @@ func Companies() []domain.Company {
 				Name:  "VictoriaMetrics",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "VictoriaMetrics",
-				RepositoryCount: 10,
+				Login:             "VictoriaMetrics",
+				GoRepositoryCount: 10,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.google.com/search?q=Glassdoor+VictoriaMetrics",
@@ -76,8 +76,8 @@ func Companies() []domain.Company {
 				Name:  "DocHQ",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "dochq",
-				RepositoryCount: 9,
+				Login:             "dochq",
+				GoRepositoryCount: 9,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.google.com/search?q=Glassdoor+DocHQ",
@@ -107,8 +107,8 @@ func Companies() []domain.Company {
 				Name:  "Uber",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "uber",
-				RepositoryCount: 30,
+				Login:             "uber",
+				GoRepositoryCount: 30,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Uber-EI_IE575263.11,15.htm",
@@ -138,8 +138,8 @@ func Companies() []domain.Company {
 				Name:  "Cloudflare",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "cloudflare",
-				RepositoryCount: 87,
+				Login:             "cloudflare",
+				GoRepositoryCount: 87,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Cloudflare-EI_IE430862.11,21.htm",
@@ -154,7 +154,9 @@ func Companies() []domain.Company {
 					"https://app.otta.com/jobs/B_RaZ6l5",
 					"https://app.otta.com/jobs/e4CavNqx",
 				},
-				domain.Rust:    nil,
+				domain.Rust: []string{
+					"https://startup.jobs/software-engineer-rust-cloudflare-3768119",
+				},
 				domain.Zig:     nil,
 				domain.Scala:   nil,
 				domain.Elixir:  nil,
@@ -173,8 +175,8 @@ func Companies() []domain.Company {
 				Name:  "Bitly",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "bitly",
-				RepositoryCount: 11,
+				Login:             "bitly",
+				GoRepositoryCount: 11,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Bitly-EI_IE800313.11,16.htm",
@@ -204,8 +206,8 @@ func Companies() []domain.Company {
 				Name:  "Cockroach Labs",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "cockroachdb",
-				RepositoryCount: 92,
+				Login:             "cockroachdb",
+				GoRepositoryCount: 92,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Cockroach-Labs-EI_IE1168502.11,25.htm",
@@ -237,8 +239,8 @@ func Companies() []domain.Company {
 				Name:  "Reddit, Inc.",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "reddit",
-				RepositoryCount: 20,
+				Login:             "reddit",
+				GoRepositoryCount: 20,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Reddit-EI_IE796358.11,17.htm",
@@ -270,8 +272,8 @@ func Companies() []domain.Company {
 				Name:  "Docker, Inc",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "docker",
-				RepositoryCount: 28,
+				Login:             "docker",
+				GoRepositoryCount: 28,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Docker-EI_IE1089506.11,17.htm",
@@ -304,8 +306,8 @@ func Companies() []domain.Company {
 				Name:  "Careem",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "careem",
-				RepositoryCount: 3,
+				Login:             "careem",
+				GoRepositoryCount: 3,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Careem-EI_IE1438731.11,17.htm",
@@ -335,8 +337,8 @@ func Companies() []domain.Company {
 				Name:  "Dailymotion",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "dailymotion",
-				RepositoryCount: 18,
+				Login:             "dailymotion",
+				GoRepositoryCount: 18,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Dailymotion-EI_IE372880.11,22.htm",
@@ -366,8 +368,8 @@ func Companies() []domain.Company {
 				Name:  "Stream",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "GetStream",
-				RepositoryCount: 32,
+				Login:             "GetStream",
+				GoRepositoryCount: 32,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Stream-CO-EI_IE1703813.11,20.htm",
@@ -399,8 +401,8 @@ func Companies() []domain.Company {
 				Name:  "Workato",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "workato",
-				RepositoryCount: 4,
+				Login:             "workato",
+				GoRepositoryCount: 4,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Workato-EI_IE1333040.11,18.htm",
@@ -430,8 +432,8 @@ func Companies() []domain.Company {
 				Name:  "FerretDB",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "FerretDB",
-				RepositoryCount: 5,
+				Login:             "FerretDB",
+				GoRepositoryCount: 5,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.google.com/search?q=Glassdoor+FerretDB",
@@ -461,8 +463,8 @@ func Companies() []domain.Company {
 				Name:  "Form3",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "form3tech-oss",
-				RepositoryCount: 43,
+				Login:             "form3tech-oss",
+				GoRepositoryCount: 43,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Form3-EI_IE2008415.11,16.htm",
@@ -494,8 +496,8 @@ func Companies() []domain.Company {
 				Name:  "Assertive Yield B.V.",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "Assertive-Yield",
-				RepositoryCount: 1,
+				Login:             "Assertive-Yield",
+				GoRepositoryCount: 1,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: `https://www.google.com/search?q=Glassdoor+"Assertive+Yield"`,
@@ -525,8 +527,8 @@ func Companies() []domain.Company {
 				Name:  "Splunk",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "splunk",
-				RepositoryCount: 43,
+				Login:             "splunk",
+				GoRepositoryCount: 43,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Splunk-EI_IE117313.11,17.htm",
@@ -558,8 +560,8 @@ func Companies() []domain.Company {
 				Name:  "Ninety Percent of Everything (90POE)",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "90poe",
-				RepositoryCount: 28,
+				Login:             "90poe",
+				GoRepositoryCount: 28,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-90-POE-EI_IE3898368.11,17.htm",
@@ -589,8 +591,8 @@ func Companies() []domain.Company {
 				Name:  "HelloFresh",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "hellofresh",
-				RepositoryCount: 9,
+				Login:             "hellofresh",
+				GoRepositoryCount: 9,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-HelloFresh-EI_IE998728.11,21.htm",
@@ -620,8 +622,8 @@ func Companies() []domain.Company {
 				Name:  "AUTODOC",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "", // unknown
-				RepositoryCount: 0,  // unknown
+				Login:             "", // unknown
+				GoRepositoryCount: 0,  // unknown
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-AUTODOC-EI_IE2179604.11,18.htm",
@@ -651,8 +653,8 @@ func Companies() []domain.Company {
 				Name:  "Gymondo",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "Gymondo-git",
-				RepositoryCount: 3,
+				Login:             "Gymondo-git",
+				GoRepositoryCount: 3,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Gymondo-EI_IE1344198.11,18.htm",
@@ -682,8 +684,8 @@ func Companies() []domain.Company {
 				Name:  "Delivery Hero",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "deliveryhero",
-				RepositoryCount: 11,
+				Login:             "deliveryhero",
+				GoRepositoryCount: 11,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Delivery-Hero-EI_IE504556.11,24.htm",
@@ -716,8 +718,8 @@ func Companies() []domain.Company {
 				Name:  "HashiCorp",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "hashicorp",
-				RepositoryCount: 296,
+				Login:             "hashicorp",
+				GoRepositoryCount: 296,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-HashiCorp-EI_IE1359860.11,20.htm",
@@ -748,8 +750,8 @@ func Companies() []domain.Company {
 				Name:  "Grafana Labs",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "grafana",
-				RepositoryCount: 233,
+				Login:             "grafana",
+				GoRepositoryCount: 233,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Grafana-Labs-EI_IE2300269.11,23.htm",
@@ -779,8 +781,8 @@ func Companies() []domain.Company {
 				Name:  "Weaviate",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "weaviate",
-				RepositoryCount: 13,
+				Login:             "weaviate",
+				GoRepositoryCount: 13,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Weaviate-EI_IE7479527.11,19.htm",
@@ -810,8 +812,8 @@ func Companies() []domain.Company {
 				Name:  "Palantir Technologies",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "palantir",
-				RepositoryCount: 57,
+				Login:             "palantir",
+				GoRepositoryCount: 57,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Palantir-Technologies-EI_IE236375.11,32.htm",
@@ -842,8 +844,8 @@ func Companies() []domain.Company {
 				Name:  "Okta",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "okta",
-				RepositoryCount: 5,
+				Login:             "okta",
+				GoRepositoryCount: 5,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Okta-EI_IE444756.11,15.htm",
@@ -877,8 +879,8 @@ func Companies() []domain.Company {
 				Name:  "1Password",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "1Password",
-				RepositoryCount: 19,
+				Login:             "1Password",
+				GoRepositoryCount: 19,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-1Password-EI_IE2984143.11,20.htm",
@@ -910,8 +912,8 @@ func Companies() []domain.Company {
 				Name:  "Fubo",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "fubotv",
-				RepositoryCount: 6,
+				Login:             "fubotv",
+				GoRepositoryCount: 6,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-FuboTV-EI_IE1006878.11,17.htm",
@@ -941,8 +943,8 @@ func Companies() []domain.Company {
 				Name:  "Yassir",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "YAtechnologies",
-				RepositoryCount: 0, // 0
+				Login:             "YAtechnologies",
+				GoRepositoryCount: 0, // 0
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-YASSIR-EI_IE2601333.11,17.htm",
@@ -973,8 +975,8 @@ func Companies() []domain.Company {
 				Name:  "DoorDash",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "doordash",
-				RepositoryCount: 7,
+				Login:             "doordash",
+				GoRepositoryCount: 7,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-DoorDash-EI_IE813073.11,19.htm",
@@ -1003,8 +1005,8 @@ func Companies() []domain.Company {
 				Name:  "BeReal.",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "BeReal-App",
-				RepositoryCount: 0,
+				Login:             "BeReal-App",
+				GoRepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-BeReal-EI_IE7468524.11,17.htm",
@@ -1023,8 +1025,8 @@ func Companies() []domain.Company {
 				Name:  "Vio.com",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "viodotcom",
-				RepositoryCount: 2,
+				Login:             "viodotcom",
+				GoRepositoryCount: 2,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Vio-com-EI_IE940798.11,18.htm",
@@ -1054,8 +1056,8 @@ func Companies() []domain.Company {
 				Name:  "Monzo Bank",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "monzo",
-				RepositoryCount: 76,
+				Login:             "monzo",
+				GoRepositoryCount: 76,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Monzo-Bank-EI_IE1557148.11,21.htm",
@@ -1088,8 +1090,8 @@ func Companies() []domain.Company {
 				Name:  "Mastercard",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "Mastercard",
-				RepositoryCount: 3,
+				Login:             "Mastercard",
+				GoRepositoryCount: 3,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Mastercard-EI_IE3677.11,21.htm",
@@ -1122,8 +1124,8 @@ func Companies() []domain.Company {
 				Name:  "Cynergy Bank",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "", // NOP
-				RepositoryCount: 0,  // NOP
+				Login:             "", // NOP
+				GoRepositoryCount: 0,  // NOP
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Cynergy-Bank-EI_IE769090.11,23.htm",
@@ -1157,8 +1159,8 @@ func Companies() []domain.Company {
 				Name:  "Canonical",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "canonical",
-				RepositoryCount: 83,
+				Login:             "canonical",
+				GoRepositoryCount: 83,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Canonical-EI_IE230560.11,20.htm",
@@ -1188,8 +1190,8 @@ func Companies() []domain.Company {
 				Name:  "Vodeno",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "vodeno",
-				RepositoryCount: 0,
+				Login:             "vodeno",
+				GoRepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Vodeno-EI_IE2877672.11,17.htm",
@@ -1221,8 +1223,8 @@ func Companies() []domain.Company {
 				Name:  "Utility Warehouse",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "utilitywarehouse",
-				RepositoryCount: 85,
+				Login:             "utilitywarehouse",
+				GoRepositoryCount: 85,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Utility-Warehouse-EI_IE512935.11,28.htm",
@@ -1252,8 +1254,8 @@ func Companies() []domain.Company {
 				Name:  "Codenotary",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "codenotary",
-				RepositoryCount: 23,
+				Login:             "codenotary",
+				GoRepositoryCount: 23,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-CodeNotary-EI_IE3677292.11,21.htm",
@@ -1282,8 +1284,8 @@ func Companies() []domain.Company {
 				Name:  "Audigent",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "AuDigent",
-				RepositoryCount: 2,
+				Login:             "AuDigent",
+				GoRepositoryCount: 2,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Audigent-EI_IE5815298.11,19.htm",
@@ -1302,8 +1304,8 @@ func Companies() []domain.Company {
 				Name:  "runZero",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "runZeroInc",
-				RepositoryCount: 7,
+				Login:             "runZeroInc",
+				GoRepositoryCount: 7,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-runZero-EI_IE7717209.11,18.htm",
@@ -1334,8 +1336,8 @@ func Companies() []domain.Company {
 				Name:  "Pinterest",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "pinterest",
-				RepositoryCount: 3,
+				Login:             "pinterest",
+				GoRepositoryCount: 3,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Pinterest-EI_IE503467.11,20.htm",
@@ -1367,8 +1369,8 @@ func Companies() []domain.Company {
 				Name:  "Tyk",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "TykTechnologies",
-				RepositoryCount: 79,
+				Login:             "TykTechnologies",
+				GoRepositoryCount: 79,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Tyk-EI_IE2321465.11,14.htm",
@@ -1397,8 +1399,8 @@ func Companies() []domain.Company {
 				Name:  "SIXT",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "Sixt",
-				RepositoryCount: 5,
+				Login:             "Sixt",
+				GoRepositoryCount: 5,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Sixt-EI_IE10875.11,15.htm",
@@ -1417,8 +1419,8 @@ func Companies() []domain.Company {
 				Name:  "OpenTag",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "OpenTagOS",
-				RepositoryCount: 3,
+				Login:             "OpenTagOS",
+				GoRepositoryCount: 3,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-OpenTag-EI_IE3310869.11,18.htm",
@@ -1448,8 +1450,8 @@ func Companies() []domain.Company {
 				Name:  "Oxla",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "", // NOP
-				RepositoryCount: 0,  // NOP
+				Login:             "", // NOP
+				GoRepositoryCount: 0,  // NOP
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -1481,8 +1483,8 @@ func Companies() []domain.Company {
 				Name:  "Lightspeed Commerce",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "lightspeed",
-				RepositoryCount: 0,
+				Login:             "lightspeed",
+				GoRepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Lightspeed-EI_IE648762.11,21.htm",
@@ -1514,8 +1516,8 @@ func Companies() []domain.Company {
 				Name:  "Squarespace",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "squarespace",
-				RepositoryCount: 2,
+				Login:             "squarespace",
+				GoRepositoryCount: 2,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Squarespace-EI_IE466343.11,22.htm",
@@ -1547,8 +1549,8 @@ func Companies() []domain.Company {
 				Name:  "Curve",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "", // NOP
-				RepositoryCount: 0,  // NOP
+				Login:             "", // NOP
+				GoRepositoryCount: 0,  // NOP
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Curve-EI_IE1739754.11,16.htm",
@@ -1580,8 +1582,8 @@ func Companies() []domain.Company {
 				Name:  "Tradevest",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "", // NOP
-				RepositoryCount: 0,  // NOP
+				Login:             "", // NOP
+				GoRepositoryCount: 0,  // NOP
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -1614,8 +1616,8 @@ func Companies() []domain.Company {
 				Name:  "Samsung Electronics",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "Samsung",
-				RepositoryCount: 0,
+				Login:             "Samsung",
+				GoRepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Samsung-Electronics-EI_IE3363.11,30.htm",
@@ -1650,8 +1652,8 @@ func Companies() []domain.Company {
 				Name:  "Woolsocks",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "amsterdam-platform-creation",
-				RepositoryCount: 3,
+				Login:             "amsterdam-platform-creation",
+				GoRepositoryCount: 3,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -1683,8 +1685,8 @@ func Companies() []domain.Company {
 				Name:  "Applied Systems Canada",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "",
-				RepositoryCount: 0,
+				Login:             "",
+				GoRepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Applied-Systems-EI_IE8534.11,26.htm",
@@ -1716,8 +1718,8 @@ func Companies() []domain.Company {
 				Name:  "Autodesk",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "Autodesk",
-				RepositoryCount: 5,
+				Login:             "Autodesk",
+				GoRepositoryCount: 5,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Autodesk-EI_IE1155.11,19.htm",
@@ -1750,8 +1752,8 @@ func Companies() []domain.Company {
 				Name:  "Vonage",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "Vonage",
-				RepositoryCount: 4,
+				Login:             "Vonage",
+				GoRepositoryCount: 4,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Vonage-EI_IE23019.11,17.htm",
@@ -1784,8 +1786,8 @@ func Companies() []domain.Company {
 				Name:  "OpenWeb",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "",
-				RepositoryCount: 0,
+				Login:             "",
+				GoRepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-OpenWeb-EI_IE1675932.11,18.htm",
@@ -1818,8 +1820,8 @@ func Companies() []domain.Company {
 				Name:  "Timescale",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "timescale",
-				RepositoryCount: 11,
+				Login:             "timescale",
+				GoRepositoryCount: 11,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Timescale-EI_IE2214356.11,20.htm",
@@ -1851,8 +1853,8 @@ func Companies() []domain.Company {
 				Name:  "Arenko",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "",
-				RepositoryCount: 0,
+				Login:             "",
+				GoRepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Arenko-Group-EI_IE4554199.11,23.htm",
@@ -1885,8 +1887,8 @@ func Companies() []domain.Company {
 				Name:  "Kong Inc.",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "Kong",
-				RepositoryCount: 51,
+				Login:             "Kong",
+				GoRepositoryCount: 51,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Kong-EI_IE801963.11,15.htm",
@@ -1918,8 +1920,8 @@ func Companies() []domain.Company {
 				Name:  "Xata.io",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "xataio",
-				RepositoryCount: 3,
+				Login:             "xataio",
+				GoRepositoryCount: 3,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -1951,8 +1953,8 @@ func Companies() []domain.Company {
 				Name:  "Dojo",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "",
-				RepositoryCount: 0,
+				Login:             "",
+				GoRepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Dojo-EI_IE687810.11,15.htm",
@@ -1987,8 +1989,8 @@ func Companies() []domain.Company {
 				Name:  "ScyllaDB",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "scylladb",
-				RepositoryCount: 18,
+				Login:             "scylladb",
+				GoRepositoryCount: 18,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-ScyllaDB-EI_IE1622223.11,19.htm",
@@ -2020,8 +2022,8 @@ func Companies() []domain.Company {
 				Name:  "Unnax",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "unnax",
-				RepositoryCount: 1,
+				Login:             "unnax",
+				GoRepositoryCount: 1,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Unnax-EI_IE2108310.11,16.htm",
@@ -2053,8 +2055,8 @@ func Companies() []domain.Company {
 				Name:  "AB Tasty",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "",
-				RepositoryCount: 0,
+				Login:             "",
+				GoRepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-AB-Tasty-EI_IE1309242.11,19.htm",
@@ -2087,8 +2089,8 @@ func Companies() []domain.Company {
 				Name:  "Firebolt",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "firebolt-db",
-				RepositoryCount: 2,
+				Login:             "firebolt-db",
+				GoRepositoryCount: 2,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Firebolt-EI_IE5001853.11,19.htm",
@@ -2121,8 +2123,8 @@ func Companies() []domain.Company {
 				Name:  "IBM",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "IBM",
-				RepositoryCount: 199,
+				Login:             "IBM",
+				GoRepositoryCount: 199,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-IBM-EI_IE354.11,14.htm",
@@ -2154,8 +2156,8 @@ func Companies() []domain.Company {
 				Name:  "Nine",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "",
-				RepositoryCount: 0,
+				Login:             "",
+				GoRepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Nine-Entertainment-EI_IE229827.11,29.htm",
@@ -2187,8 +2189,8 @@ func Companies() []domain.Company {
 				Name:  "Isovalent",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "isovalent",
-				RepositoryCount: 10,
+				Login:             "isovalent",
+				GoRepositoryCount: 10,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Isovalent-EI_IE3180689.11,20.htm",
@@ -2220,8 +2222,8 @@ func Companies() []domain.Company {
 				Name:  "ABC Fitness",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "",
-				RepositoryCount: 0,
+				Login:             "",
+				GoRepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-ABC-Fitness-EI_IE28305.11,22.htm",
@@ -2253,8 +2255,8 @@ func Companies() []domain.Company {
 				Name:  "Device42",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "device42",
-				RepositoryCount: 0,
+				Login:             "device42",
+				GoRepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Device42-EI_IE1705087.11,19.htm",
@@ -2286,8 +2288,8 @@ func Companies() []domain.Company {
 				Name:  "Acronis",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "acronis",
-				RepositoryCount: 3,
+				Login:             "acronis",
+				GoRepositoryCount: 3,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Acronis-EI_IE152824.11,18.htm",
@@ -2319,8 +2321,8 @@ func Companies() []domain.Company {
 				Name:  "Gcore",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "Gcore",
-				RepositoryCount: 11,
+				Login:             "Gcore",
+				GoRepositoryCount: 11,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Gcore-EI_IE2156026.11,16.htm",
@@ -2352,8 +2354,8 @@ func Companies() []domain.Company {
 				Name:  "Zep AI",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "",
-				RepositoryCount: 0,
+				Login:             "",
+				GoRepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -2385,8 +2387,8 @@ func Companies() []domain.Company {
 				Name:  "Gelato",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "gelatoas",
-				RepositoryCount: 0,
+				Login:             "gelatoas",
+				GoRepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Gelato-EI_IE1297272.11,17.htm",
@@ -2418,8 +2420,8 @@ func Companies() []domain.Company {
 				Name:  "SumUp",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "sumup",
-				RepositoryCount: 11,
+				Login:             "sumup",
+				GoRepositoryCount: 11,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-SumUp-EI_IE673829.11,16.htm",
@@ -2451,8 +2453,8 @@ func Companies() []domain.Company {
 				Name:  "Level Home Inc.",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "LevelHome",
-				RepositoryCount: 0,
+				Login:             "LevelHome",
+				GoRepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Level-Home-EI_IE3556695.11,21.htm",
@@ -2484,8 +2486,8 @@ func Companies() []domain.Company {
 				Name:  "Nord Security",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "NordSecurity",
-				RepositoryCount: 7, // Rust 22 repositories
+				Login:             "NordSecurity",
+				GoRepositoryCount: 7, // Rust 22 repositories
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Nord-Security-EI_IE4015819.11,24.htm",
@@ -2518,8 +2520,8 @@ func Companies() []domain.Company {
 				Name:  "SonicWall",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "sonicwall",
-				RepositoryCount: 0,
+				Login:             "sonicwall",
+				GoRepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-SonicWall-EI_IE9777.11,20.htm",
@@ -2551,8 +2553,8 @@ func Companies() []domain.Company {
 				Name:  "Pindrop",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "", // NOP
-				RepositoryCount: 0,  // NOP
+				Login:             "", // NOP
+				GoRepositoryCount: 0,  // NOP
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Pindrop-EI_IE709157.11,18.htm",
@@ -2585,8 +2587,8 @@ func Companies() []domain.Company {
 				Name:  "Namecheap, Inc",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "namecheap",
-				RepositoryCount: 3,
+				Login:             "namecheap",
+				GoRepositoryCount: 3,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Namecheap-EI_IE994113.11,20.htm",
@@ -2618,8 +2620,8 @@ func Companies() []domain.Company {
 				Name:  "Seedtag",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "seedtag",
-				RepositoryCount: 0,
+				Login:             "seedtag",
+				GoRepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Seedtag-EI_IE1421858.11,18.htm",
@@ -2651,8 +2653,8 @@ func Companies() []domain.Company {
 				Name:  "Flix",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "flix-tech",
-				RepositoryCount: 17,
+				Login:             "flix-tech",
+				GoRepositoryCount: 17,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Flix-EI_IE976463.11,15.htm",
@@ -2684,8 +2686,8 @@ func Companies() []domain.Company {
 				Name:  "Press Ganey",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "",
-				RepositoryCount: 0,
+				Login:             "",
+				GoRepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Press-Ganey-EI_IE35100.11,22.htm",
@@ -2717,8 +2719,8 @@ func Companies() []domain.Company {
 				Name:  "Atmail",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "", // NOP
-				RepositoryCount: 0,  // NOP
+				Login:             "", // NOP
+				GoRepositoryCount: 0,  // NOP
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "", // NOP
@@ -2750,8 +2752,8 @@ func Companies() []domain.Company {
 				Name:  "Dusty Robotics",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "", // NOP
-				RepositoryCount: 0,  // NOP
+				Login:             "", // NOP
+				GoRepositoryCount: 0,  // NOP
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Dusty-Robotics-EI_IE3518259.11,25.htm",
@@ -2784,8 +2786,8 @@ func Companies() []domain.Company {
 				Name:  "Cimri",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "",
-				RepositoryCount: 0,
+				Login:             "",
+				GoRepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Cimri-EI_IE2401296.11,16.htm",
@@ -2817,8 +2819,8 @@ func Companies() []domain.Company {
 				Name:  "Quadcode",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "",
-				RepositoryCount: 0,
+				Login:             "",
+				GoRepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Quadcode-EI_IE3293771.11,19.htm",
@@ -2850,8 +2852,8 @@ func Companies() []domain.Company {
 				Name:  "FinCompare",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "fincompare",
-				RepositoryCount: 1,
+				Login:             "fincompare",
+				GoRepositoryCount: 1,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-FinCompare-EI_IE1644778.11,21.htm",
@@ -2883,8 +2885,8 @@ func Companies() []domain.Company {
 				Name:  "Mellifera Operations Limited",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "",
-				RepositoryCount: 0,
+				Login:             "",
+				GoRepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -2917,8 +2919,8 @@ func Companies() []domain.Company {
 				Name:  "BNP Paribas - Securities Services",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "",
-				RepositoryCount: 0,
+				Login:             "",
+				GoRepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-BNP-Paribas-EI_IE10342.11,22.htm",
@@ -2950,8 +2952,8 @@ func Companies() []domain.Company {
 				Name:  "Apifonica",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "apifonica",
-				RepositoryCount: 4,
+				Login:             "apifonica",
+				GoRepositoryCount: 4,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Apifonica-EI_IE1805118.11,20.htm",
@@ -2983,8 +2985,8 @@ func Companies() []domain.Company {
 				Name:  "Cybus",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "cybusio",
-				RepositoryCount: 1,
+				Login:             "cybusio",
+				GoRepositoryCount: 1,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Cybus-EI_IE2928520.11,16.htm",
@@ -3016,8 +3018,8 @@ func Companies() []domain.Company {
 				Name:  "Flink",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "",
-				RepositoryCount: 0,
+				Login:             "",
+				GoRepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Flink-EI_IE4921496.11,16.htm",
@@ -3049,8 +3051,8 @@ func Companies() []domain.Company {
 				Name:  "Greenbone AG",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "greenbone",
-				RepositoryCount: 7,
+				Login:             "greenbone",
+				GoRepositoryCount: 7,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Greenbone-Networks-EI_IE379229.11,29.htm",
@@ -3083,8 +3085,8 @@ func Companies() []domain.Company {
 				Name:  "Microsoft",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "microsoft",
-				RepositoryCount: 78,
+				Login:             "microsoft",
+				GoRepositoryCount: 78,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Microsoft-EI_IE1651.11,20.htm",
@@ -3117,8 +3119,8 @@ func Companies() []domain.Company {
 				Name:  "OLX",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "",
-				RepositoryCount: 0,
+				Login:             "",
+				GoRepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-OLX-Group-EI_IE517166.11,20.htm",
@@ -3150,8 +3152,8 @@ func Companies() []domain.Company {
 				Name:  "Snyk",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "snyk",
-				RepositoryCount: 22,
+				Login:             "snyk",
+				GoRepositoryCount: 22,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Snyk-EI_IE2094989.11,15.htm",
@@ -3186,8 +3188,8 @@ func Companies() []domain.Company {
 				Name:  "Siemens",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "siemens",
-				RepositoryCount: 19,
+				Login:             "siemens",
+				GoRepositoryCount: 19,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Siemens-EI_IE3510.11,18.htm",
@@ -3200,7 +3202,9 @@ func Companies() []domain.Company {
 				domain.Go: []string{
 					"https://www.linkedin.com/jobs/view/3901324430/",
 				},
-				domain.Rust:    nil,
+				domain.Rust: []string{
+					"https://www.linkedin.com/jobs/view/4018413094/",
+				},
 				domain.Zig:     nil,
 				domain.Scala:   nil,
 				domain.Elixir:  nil,
@@ -3219,8 +3223,8 @@ func Companies() []domain.Company {
 				Name:  "Sinch",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "sinch",
-				RepositoryCount: 0,
+				Login:             "sinch",
+				GoRepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Sinch-EI_IE788805.11,16.htm",
@@ -3252,8 +3256,8 @@ func Companies() []domain.Company {
 				Name:  "FOX Tech",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "",
-				RepositoryCount: 0,
+				Login:             "",
+				GoRepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-FOX-Broadcasting-EI_IE13272.11,27.htm",
@@ -3285,8 +3289,8 @@ func Companies() []domain.Company {
 				Name:  "SailPoint",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "sailpoint-oss",
-				RepositoryCount: 2,
+				Login:             "sailpoint-oss",
+				GoRepositoryCount: 2,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-SailPoint-Technologies-EI_IE449696.11,33.htm",
@@ -3318,8 +3322,8 @@ func Companies() []domain.Company {
 				Name:  "Proofpoint",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "proofpoint",
-				RepositoryCount: 0,
+				Login:             "proofpoint",
+				GoRepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Proofpoint-EI_IE39140.11,21.htm",
@@ -3352,8 +3356,8 @@ func Companies() []domain.Company {
 				Name:  "Medium",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "Medium",
-				RepositoryCount: 20,
+				Login:             "Medium",
+				GoRepositoryCount: 20,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Medium-EI_IE784883.11,17.htm",
@@ -3385,8 +3389,8 @@ func Companies() []domain.Company {
 				Name:  "Asset Reality",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "",
-				RepositoryCount: 0,
+				Login:             "",
+				GoRepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -3418,8 +3422,8 @@ func Companies() []domain.Company {
 				Name:  "Limango",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "",
-				RepositoryCount: 0,
+				Login:             "",
+				GoRepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Limango-Polska-EI_IE2884426.11,25.htm",
@@ -3451,8 +3455,8 @@ func Companies() []domain.Company {
 				Name:  "RxBenefits, Inc.",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "", // NOP
-				RepositoryCount: 0,  // NOP
+				Login:             "", // NOP
+				GoRepositoryCount: 0,  // NOP
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-RxBenefits-EI_IE1175839.11,21.htm",
@@ -3484,8 +3488,8 @@ func Companies() []domain.Company {
 				Name:  "SmithRx",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "", // NOP
-				RepositoryCount: 0,  // NOP
+				Login:             "", // NOP
+				GoRepositoryCount: 0,  // NOP
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-SmithRx-EI_IE1901555.11,18.htm",
@@ -3517,8 +3521,8 @@ func Companies() []domain.Company {
 				Name:  "k-ID",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "", // NOP
-				RepositoryCount: 0,  // NOP
+				Login:             "", // NOP
+				GoRepositoryCount: 0,  // NOP
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -3550,8 +3554,8 @@ func Companies() []domain.Company {
 				Name:  "CAFU",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "", // NOP
-				RepositoryCount: 0,  // NOP
+				Login:             "", // NOP
+				GoRepositoryCount: 0,  // NOP
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-CAFU-EI_IE3713615.11,15.htm",
@@ -3583,8 +3587,8 @@ func Companies() []domain.Company {
 				Name:  "Rollee",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "", // NOP
-				RepositoryCount: 0,  // NOP
+				Login:             "", // NOP
+				GoRepositoryCount: 0,  // NOP
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "", // NOP
@@ -3617,8 +3621,8 @@ func Companies() []domain.Company {
 				Name:  "Net2Phone",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "net2phone",
-				RepositoryCount: 0,
+				Login:             "net2phone",
+				GoRepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Net2Phone-EI_IE9342.11,20.htm",
@@ -3650,8 +3654,8 @@ func Companies() []domain.Company {
 				Name:  "Ola Chat",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "olachat",
-				RepositoryCount: 8,
+				Login:             "olachat",
+				GoRepositoryCount: 8,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "", // NOP
@@ -3683,8 +3687,8 @@ func Companies() []domain.Company {
 				Name:  "Veracity Software Inc",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "", // NOP
-				RepositoryCount: 0,  // NOP
+				Login:             "", // NOP
+				GoRepositoryCount: 0,  // NOP
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Veracity-Software-EI_IE1357198.11,28.htm",
@@ -3716,8 +3720,8 @@ func Companies() []domain.Company {
 				Name:  "Salesforge",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "",
-				RepositoryCount: 0,
+				Login:             "",
+				GoRepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -3749,8 +3753,8 @@ func Companies() []domain.Company {
 				Name:  "Treecard",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "TreeCard",
-				RepositoryCount: 2,
+				Login:             "TreeCard",
+				GoRepositoryCount: 2,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Treecard-EI_IE5675051.11,19.htm",
@@ -3782,8 +3786,8 @@ func Companies() []domain.Company {
 				Name:  "Openprovider",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "openprovider",
-				RepositoryCount: 10,
+				Login:             "openprovider",
+				GoRepositoryCount: 10,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Openprovider-EI_IE1267124.11,23.htm",
@@ -3815,8 +3819,8 @@ func Companies() []domain.Company {
 				Name:  "fiskaly",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "fiskaly",
-				RepositoryCount: 5,
+				Login:             "fiskaly",
+				GoRepositoryCount: 5,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-fiskaly-EI_IE3059515.11,18.htm",
@@ -3848,8 +3852,8 @@ func Companies() []domain.Company {
 				Name:  "Vay",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "Reemote",
-				RepositoryCount: 2,
+				Login:             "Reemote",
+				GoRepositoryCount: 2,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -3881,8 +3885,8 @@ func Companies() []domain.Company {
 				Name:  "Fortinet",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "fortinet",
-				RepositoryCount: 1,
+				Login:             "fortinet",
+				GoRepositoryCount: 1,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Fortinet-EI_IE23128.11,19.htm",
@@ -3915,8 +3919,8 @@ func Companies() []domain.Company {
 				Name:  "GitHub",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "github",
-				RepositoryCount: 18,
+				Login:             "github",
+				GoRepositoryCount: 18,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-GitHub-EI_IE671945.11,17.htm",
@@ -3948,8 +3952,8 @@ func Companies() []domain.Company {
 				Name:  "Voltus",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "voltusdev",
-				RepositoryCount: 2,
+				Login:             "voltusdev",
+				GoRepositoryCount: 2,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Voltus-EI_IE2090197.11,17.htm",
@@ -3982,8 +3986,8 @@ func Companies() []domain.Company {
 				Name:  "Grammarly",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "grammarly",
-				RepositoryCount: 0,
+				Login:             "grammarly",
+				GoRepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Grammarly-EI_IE636873.11,20.htm",
@@ -4015,8 +4019,8 @@ func Companies() []domain.Company {
 				Name:  "Stonebranch",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "stonebranch-marketplace",
-				RepositoryCount: 0,
+				Login:             "stonebranch-marketplace",
+				GoRepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Stonebranch-EI_IE408996.11,22.htm",
@@ -4048,8 +4052,8 @@ func Companies() []domain.Company {
 				Name:  "Rapid7",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "rapid7",
-				RepositoryCount: 7,
+				Login:             "rapid7",
+				GoRepositoryCount: 7,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Rapid7-EI_IE243542.11,17.htm",
@@ -4081,8 +4085,8 @@ func Companies() []domain.Company {
 				Name:  "Toggle AI",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "",
-				RepositoryCount: 0,
+				Login:             "",
+				GoRepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Toggle-EI_IE3924898.11,17.htm",
@@ -4114,8 +4118,8 @@ func Companies() []domain.Company {
 				Name:  "hearX Group",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "hearxgroup",
-				RepositoryCount: 0,
+				Login:             "hearxgroup",
+				GoRepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-hearX-Group-EI_IE5800566.11,22.htm",
@@ -4147,8 +4151,8 @@ func Companies() []domain.Company {
 				Name:  "MarkiTech.AI",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "", // NOP
-				RepositoryCount: 0,  // NOP
+				Login:             "", // NOP
+				GoRepositoryCount: 0,  // NOP
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Markitech-EI_IE4190913.11,20.htm",
@@ -4180,8 +4184,8 @@ func Companies() []domain.Company {
 				Name:  "Lantronix",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "Lantronix",
-				RepositoryCount: 0,
+				Login:             "Lantronix",
+				GoRepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Lantronix-EI_IE5498.11,20.htm",
@@ -4213,8 +4217,8 @@ func Companies() []domain.Company {
 				Name:  "Citi",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "Citi",
-				RepositoryCount: 1,
+				Login:             "Citi",
+				GoRepositoryCount: 1,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/citi",
@@ -4246,8 +4250,8 @@ func Companies() []domain.Company {
 				Name:  "INFOLOB",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "", // NOP
-				RepositoryCount: 0,  // NOP
+				Login:             "", // NOP
+				GoRepositoryCount: 0,  // NOP
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Infolob-Solutions-EI_IE423113.11,28.htm",
@@ -4279,8 +4283,8 @@ func Companies() []domain.Company {
 				Name:  "Argela Technologies",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "", // NOP
-				RepositoryCount: 0,  // NOP
+				Login:             "", // NOP
+				GoRepositoryCount: 0,  // NOP
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Argela-EI_IE389528.11,17.htm",
@@ -4312,8 +4316,8 @@ func Companies() []domain.Company {
 				Name:  "Top Doctors",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "", // NOP
-				RepositoryCount: 0,  // NOP
+				Login:             "", // NOP
+				GoRepositoryCount: 0,  // NOP
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Top-Doctors-EI_IE1712721.11,22.htm",
@@ -4345,8 +4349,8 @@ func Companies() []domain.Company {
 				Name:  "Recurly",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "recurly",
-				RepositoryCount: 2,
+				Login:             "recurly",
+				GoRepositoryCount: 2,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Recurly-EI_IE692611.11,18.htm",
@@ -4378,8 +4382,8 @@ func Companies() []domain.Company {
 				Name:  "Cynet Systems",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "", // NOP
-				RepositoryCount: 0,  // NOP
+				Login:             "", // NOP
+				GoRepositoryCount: 0,  // NOP
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Cynet-Systems-EI_IE654628.11,24.htm",
@@ -4411,8 +4415,8 @@ func Companies() []domain.Company {
 				Name:  "Odyssey Information Services",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "", // NOP
-				RepositoryCount: 0,  // NOP
+				Login:             "", // NOP
+				GoRepositoryCount: 0,  // NOP
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Odyssey-Information-Services-EI_IE558201.11,39.htm",
@@ -4444,8 +4448,8 @@ func Companies() []domain.Company {
 				Name:  "Infomatics Corp",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "", // NOP
-				RepositoryCount: 0,  // NOP
+				Login:             "", // NOP
+				GoRepositoryCount: 0,  // NOP
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Infomatics-EI_IE925978.11,21.htm",
@@ -4477,8 +4481,8 @@ func Companies() []domain.Company {
 				Name:  "Mindera",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "Mindera",
-				RepositoryCount: 3,
+				Login:             "Mindera",
+				GoRepositoryCount: 3,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Mindera-EI_IE1139926.11,18.htm",
@@ -4510,8 +4514,8 @@ func Companies() []domain.Company {
 				Name:  "Sytac",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "sytac",
-				RepositoryCount: 0,
+				Login:             "sytac",
+				GoRepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Sytac-EI_IE1255983.11,16.htm",
@@ -4543,8 +4547,8 @@ func Companies() []domain.Company {
 				Name:  "Qumulus Cloud Platform",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "QumulusTechnology",
-				RepositoryCount: 2,
+				Login:             "QumulusTechnology",
+				GoRepositoryCount: 2,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "", // NOP
@@ -4576,8 +4580,8 @@ func Companies() []domain.Company {
 				Name:  "Saxon AI",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "", // NOP
-				RepositoryCount: 0,  // NOP
+				Login:             "", // NOP
+				GoRepositoryCount: 0,  // NOP
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "", // NOP
@@ -4609,8 +4613,8 @@ func Companies() []domain.Company {
 				Name:  "Dyninno Group",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "", // NOP
-				RepositoryCount: 0,  // NOP
+				Login:             "", // NOP
+				GoRepositoryCount: 0,  // NOP
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-DYNINNO-Group-EI_IE2562842.11,24.htm",
@@ -4642,8 +4646,8 @@ func Companies() []domain.Company {
 				Name:  "Holland & Barrett",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "", // NOP
-				RepositoryCount: 0,  // NOP
+				Login:             "", // NOP
+				GoRepositoryCount: 0,  // NOP
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Holland-and-Barrett-EI_IE36174.11,30.htm",
@@ -4675,8 +4679,8 @@ func Companies() []domain.Company {
 				Name:  "Group Avows",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "", // NOP
-				RepositoryCount: 0,  // NOP
+				Login:             "", // NOP
+				GoRepositoryCount: 0,  // NOP
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-AVOWS-Technologies-EI_IE870406.11,29.htm",
@@ -4708,8 +4712,8 @@ func Companies() []domain.Company {
 				Name:  "Cognizant",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "", // NOP
-				RepositoryCount: 0,  // NOP
+				Login:             "", // NOP
+				GoRepositoryCount: 0,  // NOP
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Cognizant-Technology-Solutions-EI_IE8014.11,41.htm",
@@ -4742,8 +4746,8 @@ func Companies() []domain.Company {
 				Name:  "DigitalOcean",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "digitalocean",
-				RepositoryCount: 116,
+				Login:             "digitalocean",
+				GoRepositoryCount: 116,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-DigitalOcean-EI_IE823482.11,23.htm",
@@ -4776,8 +4780,8 @@ func Companies() []domain.Company {
 				Name:  "Snap Inc.",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "Snapchat",
-				RepositoryCount: 1,
+				Login:             "Snapchat",
+				GoRepositoryCount: 1,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Snap-EI_IE671946.11,15.htm",
@@ -4809,8 +4813,8 @@ func Companies() []domain.Company {
 				Name:  "Nuro",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "", // NOP
-				RepositoryCount: 0,  // NOP
+				Login:             "", // NOP
+				GoRepositoryCount: 0,  // NOP
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Nuro-EI_IE1550693.11,15.htm",
@@ -4842,8 +4846,8 @@ func Companies() []domain.Company {
 				Name:  "CloudWalk, Inc.",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "cloudwalk",
-				RepositoryCount: 6,
+				Login:             "cloudwalk",
+				GoRepositoryCount: 6,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-CloudWalk-Inc-EI_IE2722308.11,24.htm",
@@ -4875,8 +4879,8 @@ func Companies() []domain.Company {
 				Name:  "Transition Technologies PSC",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "", // NOP
-				RepositoryCount: 0,  // NOP
+				Login:             "", // NOP
+				GoRepositoryCount: 0,  // NOP
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Transition-Technologies-PSC-EI_IE1875542.11,38.htm",
@@ -4908,8 +4912,8 @@ func Companies() []domain.Company {
 				Name:  "Kroger",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "Kroger-Technology",
-				RepositoryCount: 0,
+				Login:             "Kroger-Technology",
+				GoRepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Kroger-EI_IE386.11,17.htm",
@@ -4941,8 +4945,8 @@ func Companies() []domain.Company {
 				Name:  "Precisely",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "PreciselyData",
-				RepositoryCount: 1,
+				Login:             "PreciselyData",
+				GoRepositoryCount: 1,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Precisely-EI_IE3372755.11,20.htm",
@@ -4974,8 +4978,8 @@ func Companies() []domain.Company {
 				Name:  "R Systems",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "", // NOP
-				RepositoryCount: 0,  // NOP
+				Login:             "", // NOP
+				GoRepositoryCount: 0,  // NOP
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-R-Systems-EI_IE32444.11,20.htm",
@@ -5007,8 +5011,8 @@ func Companies() []domain.Company {
 				Name:  "Hays",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "", // NOP
-				RepositoryCount: 0,  // NOP
+				Login:             "", // NOP
+				GoRepositoryCount: 0,  // NOP
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Hays-EI_IE10166.11,15.htm",
@@ -5040,8 +5044,8 @@ func Companies() []domain.Company {
 				Name:  "Consort Group",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "", // NOP
-				RepositoryCount: 0,  // NOP
+				Login:             "", // NOP
+				GoRepositoryCount: 0,  // NOP
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Groupe-Consort-EI_IE915503.11,25.htm",
@@ -5073,8 +5077,8 @@ func Companies() []domain.Company {
 				Name:  "Ascendion",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "", // NOP
-				RepositoryCount: 0,  // NOP
+				Login:             "", // NOP
+				GoRepositoryCount: 0,  // NOP
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Ascendion-EI_IE7774544.11,20.htm",
@@ -5107,8 +5111,8 @@ func Companies() []domain.Company {
 				Name:  "American Express",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "americanexpress",
-				RepositoryCount: 4,
+				Login:             "americanexpress",
+				GoRepositoryCount: 4,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-American-Express-EI_IE35.11,27.htm",
@@ -5141,8 +5145,8 @@ func Companies() []domain.Company {
 				Name:  "Wise",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "transferwise",
-				RepositoryCount: 35,
+				Login:             "transferwise",
+				GoRepositoryCount: 35,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Wise-EI_IE637715.11,15.htm",
@@ -5174,8 +5178,8 @@ func Companies() []domain.Company {
 				Name:  "Checkout.com",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "checkout",
-				RepositoryCount: 1,
+				Login:             "checkout",
+				GoRepositoryCount: 1,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Checkout-com-EI_IE837487.11,23.htm",
@@ -5207,8 +5211,8 @@ func Companies() []domain.Company {
 				Name:  "Atom bank",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "atombank",
-				RepositoryCount: 0,
+				Login:             "atombank",
+				GoRepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Atom-Bank-EI_IE1354887.11,20.htm",
@@ -5241,8 +5245,8 @@ func Companies() []domain.Company {
 				Name:  "GoDaddy",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "godaddy",
-				RepositoryCount: 6,
+				Login:             "godaddy",
+				GoRepositoryCount: 6,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-GoDaddy-EI_IE35337.11,18.htm",
@@ -5275,8 +5279,8 @@ func Companies() []domain.Company {
 				Name:  "Netlify",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "netlify",
-				RepositoryCount: 35,
+				Login:             "netlify",
+				GoRepositoryCount: 35,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Netlify-EI_IE1426251.11,18.htm",
@@ -5308,8 +5312,8 @@ func Companies() []domain.Company {
 				Name:  "Unlimit",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "",
-				RepositoryCount: 0,
+				Login:             "",
+				GoRepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -5342,8 +5346,8 @@ func Companies() []domain.Company {
 				Name:  "SoundCloud",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "soundcloud",
-				RepositoryCount: 5,
+				Login:             "soundcloud",
+				GoRepositoryCount: 5,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-SoundCloud-EI_IE407066.11,21.htm",
@@ -5375,8 +5379,8 @@ func Companies() []domain.Company {
 				Name:  "Chime",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "",
-				RepositoryCount: 0,
+				Login:             "",
+				GoRepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Chime-EI_IE1493686.11,16.htm",
@@ -5408,8 +5412,8 @@ func Companies() []domain.Company {
 				Name:  "Collective Minds Radiology",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "",
-				RepositoryCount: 0,
+				Login:             "",
+				GoRepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Collective-Minds-Radiology-EI_IE4686955.11,37.htm",
@@ -5439,8 +5443,8 @@ func Companies() []domain.Company {
 				Name:  "Cruise",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "cruise-automation",
-				RepositoryCount: 6,
+				Login:             "cruise-automation",
+				GoRepositoryCount: 6,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Cruise-EI_IE977351.11,17.htm",
@@ -5473,8 +5477,8 @@ func Companies() []domain.Company {
 				Name:  "CrowdStrike",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "CrowdStrike",
-				RepositoryCount: 20,
+				Login:             "CrowdStrike",
+				GoRepositoryCount: 20,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-CrowdStrike-EI_IE795976.11,22.htm",
@@ -5506,8 +5510,8 @@ func Companies() []domain.Company {
 				Name:  "Compass",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "UrbanCompass",
-				RepositoryCount: 10,
+				Login:             "UrbanCompass",
+				GoRepositoryCount: 10,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Compass-EI_IE719025.11,18.htm",
@@ -5539,8 +5543,8 @@ func Companies() []domain.Company {
 				Name:  "Exasol",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "exasol",
-				RepositoryCount: 7,
+				Login:             "exasol",
+				GoRepositoryCount: 7,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Exasol-EI_IE968677.11,17.htm",
@@ -5572,8 +5576,8 @@ func Companies() []domain.Company {
 				Name:  "SentinelOne",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "Sentinel-One",
-				RepositoryCount: 2,
+				Login:             "Sentinel-One",
+				GoRepositoryCount: 2,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-SentinelOne-EI_IE1361978.11,22.htm",
@@ -5605,8 +5609,8 @@ func Companies() []domain.Company {
 				Name:  "Motorola Solutions",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "",
-				RepositoryCount: 0,
+				Login:             "",
+				GoRepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Motorola-Solutions-EI_IE427189.11,29.htm",
@@ -5639,8 +5643,8 @@ func Companies() []domain.Company {
 				Name:  "Percona",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:           "percona",
-				RepositoryCount: 46,
+				Login:             "percona",
+				GoRepositoryCount: 46,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-EI_IE283779.11,18.htm",
@@ -5662,6 +5666,43 @@ func Companies() []domain.Company {
 			},
 			Skip: false,
 		},
+		{
+			// A
+			Code: struct{}{},
+			Name: "LinkedIn",
+			URL:  "https://www.linkedin.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    1337,
+				Alias: "linkedin",
+				Name:  "LinkedIn",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "linkedin",
+				GoRepositoryCount: 8,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-LinkedIn-EI_IE34865.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/LinkedIn-Reviews-E34865.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/4023583351/",
+				},
+				domain.Rust: []string{
+					"https://www.linkedin.com/jobs/view/4023579503/",
+					"https://www.linkedin.com/jobs/view/4023583351/",
+				},
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			Skip: false,
+		},
 		//{
 		//	Code: struct{}{},
 		//	Name: "",
@@ -5673,7 +5714,7 @@ func Companies() []domain.Company {
 		//	},
 		//	GitHubProfile: domain.GitHubProfile{
 		//		Login:           "",
-		//		RepositoryCount: 0,
+		//		GoRepositoryCount: 0,
 		//	},
 		//	GlassdoorProfile: domain.GlassdoorProfile{
 		//		OverviewURL: "",

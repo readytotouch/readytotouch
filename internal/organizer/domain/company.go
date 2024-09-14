@@ -20,8 +20,8 @@ type LinkedInProfile struct {
 }
 
 type GitHubProfile struct {
-	Login           string
-	RepositoryCount int
+	Login             string
+	GoRepositoryCount int
 }
 
 type GlassdoorProfile struct {
