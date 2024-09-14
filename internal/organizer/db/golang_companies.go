@@ -5628,6 +5628,40 @@ func Companies() []domain.Company {
 			},
 			Skip: false,
 		},
+		{
+			// A
+			Code: struct{}{},
+			Name: "Percona",
+			URL:  "https://www.percona.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    421929,
+				Alias: "percona",
+				Name:  "Percona",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:           "percona",
+				RepositoryCount: 46,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-EI_IE283779.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Percona-Reviews-E283779.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://app.otta.com/jobs/5n3UU6ZU",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			Skip: false,
+		},
 		//{
 		//	Code: struct{}{},
 		//	Name: "",
