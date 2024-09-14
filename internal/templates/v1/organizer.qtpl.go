@@ -79,7 +79,7 @@ func StreamOrganizerStatic(qw422016 *qt422016.Writer, companies []Company, unive
                                     <span>Glassdoor</span>
                                 </th>
                                 <th>
-                                    <img src="/assets/images/pages/common-images/similarweb.svg" alt="SimilarWeb">
+                                    <img src="/assets/images/pages/common-images/SimilarWeb.svg" alt="SimilarWeb">
                                     <span>SimilarWeb</span>
                                 </th>
                                 <th>
