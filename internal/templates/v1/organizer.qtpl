@@ -144,7 +144,7 @@
                                 </td>
                                 <td>
                                     <div class="table__item">
-                                        {%- for i, vacancy := range company.Vacancies -%}
+                                        {%- for i, vacancy := range company.Vacancies[Go] -%}
                                             <a class="table__item-link vacancies" href="{%s vacancy %}">Vacancy #{%d i %}</a>
                                         {%- endfor -%}
                                     </div>

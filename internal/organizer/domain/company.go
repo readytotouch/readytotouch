@@ -1,5 +1,17 @@
 package domain
 
+const (
+	Go      int = 0
+	Rust    int = 1
+	Zig     int = 2
+	Scala   int = 3
+	Elixir  int = 4
+	Clojure int = 5
+	Haskell int = 6
+)
+
+type Vacancies = [7][]string
+
 type LinkedInProfile struct {
 	ID    int
 	IDs   []int
@@ -18,6 +30,7 @@ type GlassdoorProfile struct {
 }
 
 type Company struct {
+	Code              struct{} // @TODO extract this as company_code.proto
 	Name              string
 	URL               string
 	LinkedInProfile   LinkedInProfile
@@ -25,7 +38,7 @@ type Company struct {
 	GlassdoorProfile  GlassdoorProfile
 	OttaProfileSlug   string
 	YouTubeChannelURL string
-	MainLanguage      bool // Golang is the main language
-	Vacancies         []string
+	GoMainLanguage    bool // Golang is the main language
+	Vacancies         Vacancies
 	Skip              bool
 }

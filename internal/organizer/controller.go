@@ -52,13 +52,13 @@ func (c *Controller) Main(ctx *gin.Context) {
 }
 
 func (c *Controller) GolangCompaniesUkraine(ctx *gin.Context) {
-	content := template.OrganizerStatic(db.GolangCompanies(), db.UkrainianUniversities())
+	content := template.OrganizerStatic(db.Companies(), db.UkrainianUniversities())
 
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
 }
 
 func (c *Controller) GolangCompanies(ctx *gin.Context) {
-	content := template.OrganizerStatic(db.GolangCompanies(), db.UkrainianUniversities())
+	content := template.OrganizerStatic(db.Companies(), db.UkrainianUniversities())
 
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
 }

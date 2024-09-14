@@ -199,7 +199,7 @@ func StreamOrganizerStatic(qw422016 *qt422016.Writer, companies []Company, unive
                                 <td>
                                     <div class="table__item">
 `)
-		for i, vacancy := range company.Vacancies {
+		for i, vacancy := range company.Vacancies[Go] {
 			qw422016.N().S(`                                            <a class="table__item-link vacancies" href="`)
 			qw422016.E().S(vacancy)
 			qw422016.N().S(`">Vacancy #`)

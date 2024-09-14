@@ -6,6 +6,10 @@ import (
 	"github.com/readytotouch/readytotouch/internal/domain"
 )
 
+const (
+	Go = 0
+)
+
 type (
 	Organizer        = domain.Organizer
 	OrganizerFeature = domain.OrganizerFeature
