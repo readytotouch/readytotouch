@@ -49,13 +49,16 @@
   <nav aria-label="breadcrumb" aria-labelledby="navigation through the bread crumbs" class="breadcrumb">
     <ul class="breadcrumb__list">
       <li class="breadcrumb__item">
-        <a class="breadcrumb__link" href="javascript:">Main</a>
+        <a class="breadcrumb__link" href="/">Main</a>
       </li>
       <li class="breadcrumb__item">
-        <a class="breadcrumb__link" href="javascript:">Organizer</a>
+        <a class="breadcrumb__link" href="/organizers">Organizers</a>
       </li>
       <li class="breadcrumb__item">
-        <span class="breadcrumb__page" aria-current="page">Golang</span>
+        <a class="breadcrumb__link" href="javascript:void(0);">{%s organizerFeature.Organizer.Title %}</a>
+      </li>
+      <li class="breadcrumb__item">
+        <span class="breadcrumb__page" aria-current="page">{%s organizerFeature.Title %}</span>
       </li>
     </ul>
   </nav>

@@ -98,13 +98,20 @@ func StreamOrganizersCompanies(qw422016 *qt422016.Writer, organizerFeature Organ
   <nav aria-label="breadcrumb" aria-labelledby="navigation through the bread crumbs" class="breadcrumb">
     <ul class="breadcrumb__list">
       <li class="breadcrumb__item">
-        <a class="breadcrumb__link" href="javascript:">Main</a>
+        <a class="breadcrumb__link" href="/">Main</a>
       </li>
       <li class="breadcrumb__item">
-        <a class="breadcrumb__link" href="javascript:">Organizer</a>
+        <a class="breadcrumb__link" href="/organizers">Organizers</a>
       </li>
       <li class="breadcrumb__item">
-        <span class="breadcrumb__page" aria-current="page">Golang</span>
+        <a class="breadcrumb__link" href="javascript:void(0);">`)
+	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.N().S(`</a>
+      </li>
+      <li class="breadcrumb__item">
+        <span class="breadcrumb__page" aria-current="page">`)
+	qw422016.E().S(organizerFeature.Title)
+	qw422016.N().S(`</span>
       </li>
     </ul>
   </nav>
