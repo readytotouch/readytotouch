@@ -40,5 +40,4 @@ type Company struct {
 	YouTubeChannelURL string
 	GoMainLanguage    bool // Golang is the main language
 	Vacancies         Vacancies
-	Skip              bool
 }

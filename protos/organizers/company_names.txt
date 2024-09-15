@@ -39,10 +39,6 @@
 // Tech | Exasol
 // Tech | Palantir
 
-// Favorites
-// Favorites VictoriaMetrics
-// Favorites Grammarly
-
 // FinTech
 // FinTech | Wise
 // FinTech | American Express
