@@ -9,40 +9,40 @@ Microsoft
 IBM
 
 # Social
-Reddit
-Pinterest
-Medium
-BeReal.
-Snap
+GitHub
 LinkedIn
+Reddit
+Medium
+Pinterest
+Snap
+BeReal.
 
 # FinTech
+Wise
 American Express
 Mastercard
-Wise
 Monzo
 Cynergy Bank
 Atom bank
 Citi
 
 # Tech
-GitHub
-Cockroach Labs
-HashiCorp
+Netlify
+Docker
 Grafana Labs
-DigitalOcean
+HashiCorp
+CrowdStrike
+Cockroach Labs
 ScyllaDB
 Timescale
+Percona
 Elastic
-Docker
 FerretDB
+DigitalOcean
 Canonical
-Netlify
-CrowdStrike
 Kong
 Exasol
 Palantir
-Percona
 
 # Ukraine
 VictoriaMetrics
@@ -57,15 +57,15 @@ Fortinet
 SentinelOne
 
 # Internet
-Namecheap
 Bitly
 Cloudflare
+Namecheap
 GoDaddy
 
 # Famous
+Uber
 Siemens
 SoundCloud
-Uber
 DoorDash
 Sixt
 Motorola Solutions
