@@ -1,13 +1,15 @@
 package domain
 
+type Language int
+
 const (
-	Go      int = 0
-	Rust    int = 1
-	Zig     int = 2
-	Scala   int = 3
-	Elixir  int = 4
-	Clojure int = 5
-	Haskell int = 6
+	Go      Language = 0
+	Rust    Language = 1
+	Zig     Language = 2
+	Scala   Language = 3
+	Elixir  Language = 4
+	Clojure Language = 5
+	Haskell Language = 6
 )
 
 type Vacancies = [7][]string
@@ -30,7 +32,7 @@ type GlassdoorProfile struct {
 }
 
 type Company struct {
-	Code              struct{} // @TODO extract this as company_code.proto
+	ID                int64 // populates from the CompanyAliasMap
 	Name              string
 	URL               string
 	LinkedInProfile   LinkedInProfile

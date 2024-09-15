@@ -1,6 +1,6 @@
 package dev
 
-import "github.com/readytotouch/readytotouch/internal/organizer/domain"
+import "github.com/readytotouch/readytotouch/internal/domain"
 
 type Company = domain.Company
 

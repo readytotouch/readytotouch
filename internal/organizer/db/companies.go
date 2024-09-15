@@ -1,13 +1,13 @@
 package db
 
-import "github.com/readytotouch/readytotouch/internal/organizer/domain"
+import "github.com/readytotouch/readytotouch/internal/domain"
 
 func Companies() []domain.Company {
 	return []domain.Company{
 		// Favorites
 		// Favorites | ReadyToTouch
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "ReadyToTouch",
 			URL:  "https://readytotouch.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -26,7 +26,7 @@ func Companies() []domain.Company {
 
 		// Favorites | DocHQ
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "DocHQ",
 			URL:  "https://dochq.co.uk/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -59,7 +59,7 @@ func Companies() []domain.Company {
 		// BigTech
 		// BigTech | Google
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Google",
 			URL:  "https://www.google.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -91,7 +91,7 @@ func Companies() []domain.Company {
 
 		// BigTech | Mozilla
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Mozilla",
 			URL:  "https://www.mozilla.org/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -127,7 +127,7 @@ func Companies() []domain.Company {
 
 		// BigTech | Microsoft
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Microsoft",
 			URL:  "https://www.microsoft.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -162,7 +162,7 @@ func Companies() []domain.Company {
 
 		// BigTech | IBM
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "IBM",
 			URL:  "https://www.ibm.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -197,7 +197,7 @@ func Companies() []domain.Company {
 		// Social
 		// Social | GitHub
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "GitHub",
 			URL:  "https://github.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -231,7 +231,7 @@ func Companies() []domain.Company {
 
 		// Social | LinkedIn
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "LinkedIn",
 			URL:  "https://www.linkedin.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -268,7 +268,7 @@ func Companies() []domain.Company {
 
 		// Social | Reddit
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Reddit",
 			URL:  "https://www.reddit.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -302,7 +302,7 @@ func Companies() []domain.Company {
 
 		// Social | Medium
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Medium",
 			URL:  "https://medium.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -336,7 +336,7 @@ func Companies() []domain.Company {
 
 		// Social | Pinterest
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Pinterest",
 			URL:  "https://www.pinterest.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -370,7 +370,7 @@ func Companies() []domain.Company {
 
 		// Social | Snap
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Snap",
 			URL:  "https://snap.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -426,7 +426,7 @@ func Companies() []domain.Company {
 		// Favorites
 		// Favorites | VictoriaMetrics
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "VictoriaMetrics",
 			URL:  "https://victoriametrics.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -458,7 +458,7 @@ func Companies() []domain.Company {
 
 		// Favorites | Grammarly
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Grammarly",
 			URL:  "https://www.grammarly.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -493,7 +493,7 @@ func Companies() []domain.Company {
 		// Tech
 		// Tech | Netlify
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Netlify",
 			URL:  "https://www.netlify.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -527,7 +527,7 @@ func Companies() []domain.Company {
 
 		// Tech | Docker
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Docker",
 			URL:  "https://www.docker.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -559,7 +559,7 @@ func Companies() []domain.Company {
 
 		// Tech | Grafana Labs
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Grafana Labs",
 			URL:  "https://grafana.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -591,7 +591,7 @@ func Companies() []domain.Company {
 
 		// Tech | HashiCorp
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "HashiCorp",
 			URL:  "https://www.hashicorp.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -623,7 +623,7 @@ func Companies() []domain.Company {
 
 		// Tech | CrowdStrike
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "CrowdStrike",
 			URL:  "https://www.crowdstrike.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -657,7 +657,7 @@ func Companies() []domain.Company {
 
 		// Tech | Cockroach Labs
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Cockroach Labs",
 			URL:  "https://www.cockroachlabs.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -691,7 +691,7 @@ func Companies() []domain.Company {
 
 		// Tech | Timescale
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Timescale",
 			URL:  "https://www.timescale.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -725,7 +725,7 @@ func Companies() []domain.Company {
 
 		// Tech | ScyllaDB
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "ScyllaDB",
 			URL:  "https://www.scylladb.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -759,7 +759,7 @@ func Companies() []domain.Company {
 
 		// Tech | Percona
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Percona",
 			URL:  "https://www.percona.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -793,7 +793,7 @@ func Companies() []domain.Company {
 
 		// Tech | Elastic
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Elastic",
 			URL:  "https://www.elastic.co/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -827,7 +827,7 @@ func Companies() []domain.Company {
 
 		// Tech | FerretDB
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "FerretDB",
 			URL:  "https://www.ferretdb.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -859,7 +859,7 @@ func Companies() []domain.Company {
 
 		// Tech | DigitalOcean
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "DigitalOcean",
 			URL:  "https://www.digitalocean.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -893,7 +893,7 @@ func Companies() []domain.Company {
 
 		// Tech | Canonical
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Canonical",
 			URL:  "https://canonical.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -925,7 +925,7 @@ func Companies() []domain.Company {
 
 		// Tech | Kong
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Kong",
 			URL:  "https://konghq.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -959,7 +959,7 @@ func Companies() []domain.Company {
 
 		// Tech | Exasol
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Exasol",
 			URL:  "https://www.exasol.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -993,7 +993,7 @@ func Companies() []domain.Company {
 
 		// Tech | Palantir
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Palantir",
 			URL:  "https://www.palantir.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1026,7 +1026,7 @@ func Companies() []domain.Company {
 		// FinTech
 		// FinTech | Wise
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Wise",
 			URL:  "https://wise.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1060,7 +1060,7 @@ func Companies() []domain.Company {
 
 		// FinTech | American Express
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "American Express",
 			URL:  "https://www.americanexpress.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1094,7 +1094,7 @@ func Companies() []domain.Company {
 
 		// FinTech | Mastercard
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Mastercard",
 			URL:  "https://www.mastercard.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1129,7 +1129,7 @@ func Companies() []domain.Company {
 
 		// FinTech | Monzo
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Monzo",
 			URL:  "https://monzo.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1163,7 +1163,7 @@ func Companies() []domain.Company {
 
 		// FinTech | Cynergy Bank
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Cynergy Bank",
 			URL:  "https://www.cynergybank.co.uk/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1198,7 +1198,7 @@ func Companies() []domain.Company {
 
 		// FinTech | Atom bank
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Atom bank",
 			URL:  "https://www.atombank.co.uk/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1232,7 +1232,7 @@ func Companies() []domain.Company {
 
 		// FinTech | Citi
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Citi",
 			URL:  "https://www.citi.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1267,7 +1267,7 @@ func Companies() []domain.Company {
 		// Internet
 		// Internet Bitly
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Bitly",
 			URL:  "https://bitly.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1299,7 +1299,7 @@ func Companies() []domain.Company {
 
 		// Internet Cloudflare
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Cloudflare",
 			URL:  "https://www.cloudflare.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1337,7 +1337,7 @@ func Companies() []domain.Company {
 
 		// Internet Namecheap
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Namecheap",
 			URL:  "https://www.namecheap.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1371,7 +1371,7 @@ func Companies() []domain.Company {
 
 		// Internet GoDaddy
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "GoDaddy",
 			URL:  "https://www.godaddy.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1406,7 +1406,7 @@ func Companies() []domain.Company {
 		// Security
 		// Security 1Password
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "1Password",
 			URL:  "https://1password.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1440,7 +1440,7 @@ func Companies() []domain.Company {
 
 		// Security Okta
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Okta",
 			URL:  "https://www.okta.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1475,7 +1475,7 @@ func Companies() []domain.Company {
 
 		// Security Nord Security
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Nord Security",
 			URL:  "https://nordsecurity.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1510,7 +1510,7 @@ func Companies() []domain.Company {
 
 		// Security Proton
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Proton",
 			URL:  "https://proton.me/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1545,7 +1545,7 @@ func Companies() []domain.Company {
 
 		// Security Fortinet
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Fortinet",
 			URL:  "https://www.fortinet.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1579,7 +1579,7 @@ func Companies() []domain.Company {
 
 		// Security SentinelOne
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "SentinelOne",
 			URL:  "https://www.sentinelone.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1614,7 +1614,7 @@ func Companies() []domain.Company {
 		// Famous
 		// Famous Uber
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Uber",
 			URL:  "https://www.uber.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1646,7 +1646,7 @@ func Companies() []domain.Company {
 
 		// Famous Siemens
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Siemens",
 			URL:  "https://www.siemens.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1683,7 +1683,7 @@ func Companies() []domain.Company {
 
 		// Famous SoundCloud
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "SoundCloud",
 			URL:  "https://soundcloud.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1717,7 +1717,7 @@ func Companies() []domain.Company {
 
 		// Famous DoorDash
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "DoorDash",
 			URL:  "https://doordash.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1770,7 +1770,7 @@ func Companies() []domain.Company {
 
 		// Famous Motorola Solutions
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Motorola Solutions",
 			URL:  "https://www.motorolasolutions.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1804,7 +1804,7 @@ func Companies() []domain.Company {
 
 		// Famous Samsung
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Samsung",
 			URL:  "https://www.samsung.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1841,7 +1841,7 @@ func Companies() []domain.Company {
 
 		// Famous Salesforge
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Salesforge",
 			URL:  "https://www.salesforge.ai/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1876,7 +1876,7 @@ func Companies() []domain.Company {
 		// Some
 		// Some | Careem
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Careem",
 			URL:  "https://www.careem.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1908,7 +1908,7 @@ func Companies() []domain.Company {
 
 		// Some | Dailymotion
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Dailymotion",
 			URL:  "https://www.dailymotion.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1940,7 +1940,7 @@ func Companies() []domain.Company {
 
 		// Some | Stream
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Stream",
 			URL:  "https://getstream.io/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1974,7 +1974,7 @@ func Companies() []domain.Company {
 
 		// Some | Workato
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Workato",
 			URL:  "https://www.workato.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2006,7 +2006,7 @@ func Companies() []domain.Company {
 
 		// Some | Form3
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Form3",
 			URL:  "https://www.form3.tech/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2040,7 +2040,7 @@ func Companies() []domain.Company {
 
 		// Some | Assertive Yield
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Assertive Yield",
 			URL:  "https://www.assertiveyield.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2072,7 +2072,7 @@ func Companies() []domain.Company {
 
 		// Some | Splunk
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Splunk",
 			URL:  "https://www.splunk.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2106,7 +2106,7 @@ func Companies() []domain.Company {
 
 		// Some | 90POE
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "90POE",
 			URL:  "https://www.90poe.io/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2138,7 +2138,7 @@ func Companies() []domain.Company {
 
 		// Some | HelloFresh
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "HelloFresh",
 			URL:  "https://www.hellofresh.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2170,7 +2170,7 @@ func Companies() []domain.Company {
 
 		// Some | AUTODOC
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "AUTODOC",
 			URL:  "https://autodoc.group/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2202,7 +2202,7 @@ func Companies() []domain.Company {
 
 		// Some | Gymondo
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Gymondo",
 			URL:  "https://www.gymondo.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2234,7 +2234,7 @@ func Companies() []domain.Company {
 
 		// Some | Delivery Hero
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Delivery Hero",
 			URL:  "https://www.deliveryhero.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2268,7 +2268,7 @@ func Companies() []domain.Company {
 
 		// Some | Weaviate
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Weaviate",
 			URL:  "https://weaviate.io/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2300,7 +2300,7 @@ func Companies() []domain.Company {
 
 		// Some | Fubo
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Fubo",
 			URL:  "https://www.fubo.tv/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2332,7 +2332,7 @@ func Companies() []domain.Company {
 
 		// Some | Yassir
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Yassir",
 			URL:  "https://yassir.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2364,7 +2364,7 @@ func Companies() []domain.Company {
 
 		// Some | Vio.com
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Vio.com",
 			URL:  "https://www.vio.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2396,7 +2396,7 @@ func Companies() []domain.Company {
 
 		// Some | Vodeno
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Vodeno",
 			URL:  "https://vodeno.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2430,7 +2430,7 @@ func Companies() []domain.Company {
 
 		// Some | Utility Warehouse
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Utility Warehouse",
 			URL:  "https://uw.co.uk/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2462,7 +2462,7 @@ func Companies() []domain.Company {
 
 		// Some | Codenotary
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Codenotary",
 			URL:  "https://codenotary.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2515,7 +2515,7 @@ func Companies() []domain.Company {
 
 		// Some | runZero
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "runZero",
 			URL:  "https://www.runzero.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2547,7 +2547,7 @@ func Companies() []domain.Company {
 
 		// Some | Tyk
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Tyk",
 			URL:  "https://tyk.io/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2579,7 +2579,7 @@ func Companies() []domain.Company {
 
 		// Some | OpenTag
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "OpenTag",
 			URL:  "https://theopentag.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2611,7 +2611,7 @@ func Companies() []domain.Company {
 
 		// Some | Oxla
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Oxla",
 			URL:  "https://oxla.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2645,7 +2645,7 @@ func Companies() []domain.Company {
 
 		// Some | Lightspeed
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Lightspeed",
 			URL:  "https://www.lightspeedhq.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2679,7 +2679,7 @@ func Companies() []domain.Company {
 
 		// Some | Squarespace
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Squarespace",
 			URL:  "https://www.squarespace.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2713,7 +2713,7 @@ func Companies() []domain.Company {
 
 		// Some | Curve
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Curve",
 			URL:  "https://curve.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2747,7 +2747,7 @@ func Companies() []domain.Company {
 
 		// Some | Tradevest
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Tradevest",
 			URL:  "https://www.tradevest.ai/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2781,7 +2781,7 @@ func Companies() []domain.Company {
 
 		// Some | Woolsocks
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Woolsocks",
 			URL:  "https://woolsocks.eu/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2816,7 +2816,7 @@ func Companies() []domain.Company {
 
 		// Some | Applied Systems Canada
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Applied Systems Canada",
 			URL:  "https://www.appliedsystems.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2850,7 +2850,7 @@ func Companies() []domain.Company {
 
 		// Some | Autodesk
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Autodesk",
 			URL:  "https://www.autodesk.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2884,7 +2884,7 @@ func Companies() []domain.Company {
 
 		// Some | Vonage
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Vonage",
 			URL:  "https://www.vonage.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2920,7 +2920,7 @@ func Companies() []domain.Company {
 
 		// Some | OpenWeb
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "OpenWeb",
 			URL:  "https://www.openweb.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2954,7 +2954,7 @@ func Companies() []domain.Company {
 
 		// Some | Arenko
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Arenko",
 			URL:  "https://arenko.group/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2989,7 +2989,7 @@ func Companies() []domain.Company {
 
 		// Some | Xata
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Xata",
 			URL:  "https://xata.io/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3023,7 +3023,7 @@ func Companies() []domain.Company {
 
 		// Some | Dojo
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Dojo",
 			URL:  "https://dojo.careers/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3059,7 +3059,7 @@ func Companies() []domain.Company {
 
 		// Some | Unnax
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Unnax",
 			URL:  "https://www.unnax.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3093,7 +3093,7 @@ func Companies() []domain.Company {
 
 		// Some | AB Tasty
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "AB Tasty",
 			URL:  "https://www.abtasty.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3128,7 +3128,7 @@ func Companies() []domain.Company {
 
 		// Some | Firebolt
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Firebolt",
 			URL:  "https://www.firebolt.io/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3162,7 +3162,7 @@ func Companies() []domain.Company {
 
 		// Some | Nine
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Nine",
 			URL:  "https://www.nineforbrands.com.au/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3196,7 +3196,7 @@ func Companies() []domain.Company {
 
 		// Some | Isovalent
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Isovalent",
 			URL:  "https://isovalent.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3230,7 +3230,7 @@ func Companies() []domain.Company {
 
 		// Some | ABC Fitness
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "ABC Fitness",
 			URL:  "https://abcfitness.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3264,7 +3264,7 @@ func Companies() []domain.Company {
 
 		// Some | Device42
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Device42",
 			URL:  "https://www.device42.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3298,7 +3298,7 @@ func Companies() []domain.Company {
 
 		// Some | Acronis
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Acronis",
 			URL:  "https://www.acronis.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3332,7 +3332,7 @@ func Companies() []domain.Company {
 
 		// Some | Gcore
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Gcore",
 			URL:  "https://gcore.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3366,7 +3366,7 @@ func Companies() []domain.Company {
 
 		// Some | Zep AI
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Zep AI",
 			URL:  "https://www.getzep.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3400,7 +3400,7 @@ func Companies() []domain.Company {
 
 		// Some | Gelato
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Gelato",
 			URL:  "https://www.gelato.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3434,7 +3434,7 @@ func Companies() []domain.Company {
 
 		// Some | SumUp
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "SumUp",
 			URL:  "https://www.sumup.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3468,7 +3468,7 @@ func Companies() []domain.Company {
 
 		// Some | Level Home
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Level Home",
 			URL:  "https://level.co/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3502,7 +3502,7 @@ func Companies() []domain.Company {
 
 		// Some | SonicWall
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "SonicWall",
 			URL:  "https://www.sonicwall.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3536,7 +3536,7 @@ func Companies() []domain.Company {
 
 		// Some | Pindrop
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Pindrop",
 			URL:  "https://www.pindrop.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3570,7 +3570,7 @@ func Companies() []domain.Company {
 
 		// Some | Seedtag
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Seedtag",
 			URL:  "https://www.seedtag.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3604,7 +3604,7 @@ func Companies() []domain.Company {
 
 		// Some | Flix
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Flix",
 			URL:  "https://www.flixbus.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3638,7 +3638,7 @@ func Companies() []domain.Company {
 
 		// Some | Press Ganey
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Press Ganey",
 			URL:  "https://www.pressganey.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3672,7 +3672,7 @@ func Companies() []domain.Company {
 
 		// Some | Atmail
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Atmail",
 			URL:  "https://www.atmail.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3706,7 +3706,7 @@ func Companies() []domain.Company {
 
 		// Some | Dusty Robotics
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Dusty Robotics",
 			URL:  "https://www.dustyrobotics.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3741,7 +3741,7 @@ func Companies() []domain.Company {
 
 		// Some | Cimri
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Cimri",
 			URL:  "https://www.cimri.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3775,7 +3775,7 @@ func Companies() []domain.Company {
 
 		// Some | Quadcode
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Quadcode",
 			URL:  "https://quadcode.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3809,7 +3809,7 @@ func Companies() []domain.Company {
 
 		// Some | FinCompare
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "FinCompare",
 			URL:  "https://fincompare.de/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3843,7 +3843,7 @@ func Companies() []domain.Company {
 
 		// Some | Mellifera
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Mellifera",
 			URL:  "https://mellifera.team/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3878,7 +3878,7 @@ func Companies() []domain.Company {
 
 		// Some | BNP Paribas - Securities Services
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "BNP Paribas - Securities Services",
 			URL:  "https://securities.cib.bnpparibas/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3912,7 +3912,7 @@ func Companies() []domain.Company {
 
 		// Some | Apifonica
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Apifonica",
 			URL:  "https://www.apifonica.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3946,7 +3946,7 @@ func Companies() []domain.Company {
 
 		// Some | Cybus
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Cybus",
 			URL:  "https://www.cybus.io/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3980,7 +3980,7 @@ func Companies() []domain.Company {
 
 		// Some | Flink
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Flink",
 			URL:  "https://www.goflink.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4014,7 +4014,7 @@ func Companies() []domain.Company {
 
 		// Some | Greenbone
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Greenbone",
 			URL:  "https://www.greenbone.net/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4048,7 +4048,7 @@ func Companies() []domain.Company {
 
 		// Some | OLX
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "OLX",
 			URL:  "https://www.olxgroup.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4082,7 +4082,7 @@ func Companies() []domain.Company {
 
 		// Some | Snyk
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Snyk",
 			URL:  "https://snyk.io/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4117,7 +4117,7 @@ func Companies() []domain.Company {
 
 		// Some | Sinch
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Sinch",
 			URL:  "https://www.sinch.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4151,7 +4151,7 @@ func Companies() []domain.Company {
 
 		// Some | FOX Tech
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "FOX Tech",
 			URL:  "https://tech.fox.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4185,7 +4185,7 @@ func Companies() []domain.Company {
 
 		// Some | SailPoint
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "SailPoint",
 			URL:  "https://www.sailpoint.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4219,7 +4219,7 @@ func Companies() []domain.Company {
 
 		// Some | Proofpoint
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Proofpoint",
 			URL:  "https://www.proofpoint.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4253,7 +4253,7 @@ func Companies() []domain.Company {
 
 		// Some | Asset Reality
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Asset Reality",
 			URL:  "https://www.assetreality.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4287,7 +4287,7 @@ func Companies() []domain.Company {
 
 		// Some | Limango
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Limango",
 			URL:  "https://www.limango.pl/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4321,7 +4321,7 @@ func Companies() []domain.Company {
 
 		// Some | RxBenefits
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "RxBenefits",
 			URL:  "https://www.rxbenefits.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4355,7 +4355,7 @@ func Companies() []domain.Company {
 
 		// Some | SmithRx
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "SmithRx",
 			URL:  "https://www.smithrx.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4389,7 +4389,7 @@ func Companies() []domain.Company {
 
 		// Some | k-ID
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "k-ID",
 			URL:  "https://www.k-id.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4423,7 +4423,7 @@ func Companies() []domain.Company {
 
 		// Some | CAFU
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "CAFU",
 			URL:  "https://www.cafu.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4457,7 +4457,7 @@ func Companies() []domain.Company {
 
 		// Some | Rollee
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Rollee",
 			URL:  "https://www.getrollee.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4492,7 +4492,7 @@ func Companies() []domain.Company {
 
 		// Some | Net2Phone
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Net2Phone",
 			URL:  "https://www.net2phone.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4526,7 +4526,7 @@ func Companies() []domain.Company {
 
 		// Some | Ola Chat
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Ola Chat",
 			URL:  "https://olachat.sg/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4560,7 +4560,7 @@ func Companies() []domain.Company {
 
 		// Some | Veracity Software Inc
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Veracity Software Inc",
 			URL:  "https://veracity-us.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4594,7 +4594,7 @@ func Companies() []domain.Company {
 
 		// Some | Treecard
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Treecard",
 			URL:  "https://www.treecard.org/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4628,7 +4628,7 @@ func Companies() []domain.Company {
 
 		// Some | Openprovider
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Openprovider",
 			URL:  "https://www.openprovider.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4662,7 +4662,7 @@ func Companies() []domain.Company {
 
 		// Some | fiskaly
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "fiskaly",
 			URL:  "https://www.fiskaly.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4696,7 +4696,7 @@ func Companies() []domain.Company {
 
 		// Some | Vay
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Vay",
 			URL:  "https://vay.io/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4730,7 +4730,7 @@ func Companies() []domain.Company {
 
 		// Some | Voltus
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Voltus",
 			URL:  "https://www.voltus.co/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4764,7 +4764,7 @@ func Companies() []domain.Company {
 
 		// Some | Stonebranch
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Stonebranch",
 			URL:  "https://www.stonebranch.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4798,7 +4798,7 @@ func Companies() []domain.Company {
 
 		// Some | Rapid7
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Rapid7",
 			URL:  "https://www.rapid7.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4832,7 +4832,7 @@ func Companies() []domain.Company {
 
 		// Some | Toggle AI
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Toggle AI",
 			URL:  "https://toggle.ai/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4866,7 +4866,7 @@ func Companies() []domain.Company {
 
 		// Some | hearX Group
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "hearX Group",
 			URL:  "https://www.hearxgroup.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4900,7 +4900,7 @@ func Companies() []domain.Company {
 
 		// Some | MarkiTech.AI
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "MarkiTech.AI",
 			URL:  "https://markitech.ca/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4934,7 +4934,7 @@ func Companies() []domain.Company {
 
 		// Some | Lantronix
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Lantronix",
 			URL:  "https://www.lantronix.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4968,7 +4968,7 @@ func Companies() []domain.Company {
 
 		// Some | INFOLOB
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "INFOLOB",
 			URL:  "https://www.infolob.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5002,7 +5002,7 @@ func Companies() []domain.Company {
 
 		// Some | Argela Technologies
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Argela Technologies",
 			URL:  "https://www.argela.com.tr/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5036,7 +5036,7 @@ func Companies() []domain.Company {
 
 		// Some | Top Doctors
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Top Doctors",
 			URL:  "https://topdoctors.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5070,7 +5070,7 @@ func Companies() []domain.Company {
 
 		// Some | Recurly
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Recurly",
 			URL:  "https://recurly.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5104,7 +5104,7 @@ func Companies() []domain.Company {
 
 		// Some | Cynet Systems
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Cynet Systems",
 			URL:  "https://www.cynetsystems.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5138,7 +5138,7 @@ func Companies() []domain.Company {
 
 		// Some | Odyssey Information Services
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Odyssey Information Services",
 			URL:  "https://www.odysseyis.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5172,7 +5172,7 @@ func Companies() []domain.Company {
 
 		// Some | Infomatics Corp
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Infomatics Corp",
 			URL:  "https://infomaticscorp.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5206,7 +5206,7 @@ func Companies() []domain.Company {
 
 		// Some | Mindera
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Mindera",
 			URL:  "https://mindera.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5240,7 +5240,7 @@ func Companies() []domain.Company {
 
 		// Some | Sytac
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Sytac",
 			URL:  "https://sytac.io/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5274,7 +5274,7 @@ func Companies() []domain.Company {
 
 		// Some | Qumulus Cloud Platform
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Qumulus Cloud Platform",
 			URL:  "https://www.qumulus.io/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5308,7 +5308,7 @@ func Companies() []domain.Company {
 
 		// Some | Saxon AI
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Saxon AI",
 			URL:  "https://saxon.ai/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5342,7 +5342,7 @@ func Companies() []domain.Company {
 
 		// Some | Dyninno Group
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Dyninno Group",
 			URL:  "https://dyninno.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5377,7 +5377,7 @@ func Companies() []domain.Company {
 		// TODO solve alias later "holland-&-barrett"
 		// Some | Holland & Barrett
 		//{
-		//	Code: struct{}{},
+		//	ID: 0,
 		//	Name: "Holland & Barrett",
 		//	URL:  "https://www.hollandandbarrett.com/",
 		//	LinkedInProfile: domain.LinkedInProfile{
@@ -5411,7 +5411,7 @@ func Companies() []domain.Company {
 
 		// Some | Group Avows
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Group Avows",
 			URL:  "https://avowstech.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5445,7 +5445,7 @@ func Companies() []domain.Company {
 
 		// Some | Cognizant
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Cognizant",
 			URL:  "https://www.cognizant.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5479,7 +5479,7 @@ func Companies() []domain.Company {
 
 		// Some | Nuro
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Nuro",
 			URL:  "https://www.nuro.ai/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5513,7 +5513,7 @@ func Companies() []domain.Company {
 
 		// Some | CloudWalk
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "CloudWalk",
 			URL:  "https://cloudwalk.io/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5547,7 +5547,7 @@ func Companies() []domain.Company {
 
 		// Some | Transition Technologies PSC
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Transition Technologies PSC",
 			URL:  "https://ttpsc.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5581,7 +5581,7 @@ func Companies() []domain.Company {
 
 		// Some | Kroger
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Kroger",
 			URL:  "https://www.kroger.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5615,7 +5615,7 @@ func Companies() []domain.Company {
 
 		// Some | Precisely
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Precisely",
 			URL:  "https://www.precisely.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5649,7 +5649,7 @@ func Companies() []domain.Company {
 
 		// Some | R Systems
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "R Systems",
 			URL:  "https://www.rsystems.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5683,7 +5683,7 @@ func Companies() []domain.Company {
 
 		// Some | Hays
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Hays",
 			URL:  "https://www.haysplc.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5717,7 +5717,7 @@ func Companies() []domain.Company {
 
 		// Some | Consort Group
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Consort Group",
 			URL:  "https://consort-group.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5751,7 +5751,7 @@ func Companies() []domain.Company {
 
 		// Some | Ascendion
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Ascendion",
 			URL:  "https://ascendion.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5785,7 +5785,7 @@ func Companies() []domain.Company {
 
 		// Some | Checkout.com
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Checkout.com",
 			URL:  "https://www.checkout.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5819,7 +5819,7 @@ func Companies() []domain.Company {
 
 		// Some | Unlimit
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Unlimit",
 			URL:  "https://www.unlimit.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5853,7 +5853,7 @@ func Companies() []domain.Company {
 
 		// Some | Chime
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Chime",
 			URL:  "https://www.chime.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5887,7 +5887,7 @@ func Companies() []domain.Company {
 
 		// Some | Collective Minds Radiology
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Collective Minds Radiology",
 			URL:  "https://cmrad.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5919,7 +5919,7 @@ func Companies() []domain.Company {
 
 		// Some | Cruise
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Cruise",
 			URL:  "https://www.getcruise.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5953,7 +5953,7 @@ func Companies() []domain.Company {
 
 		// Some | Compass
 		{
-			Code: struct{}{},
+			ID:   0,
 			Name: "Compass",
 			URL:  "https://www.compass.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5987,7 +5987,7 @@ func Companies() []domain.Company {
 
 		// Template
 		//{
-		//	Code: struct{}{},
+		//	ID: 0,
 		//	Name: "",
 		//	URL:  "",
 		//	LinkedInProfile: domain.LinkedInProfile{

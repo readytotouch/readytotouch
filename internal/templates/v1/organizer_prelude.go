@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/readytotouch/readytotouch/internal/organizer/domain"
+	"github.com/readytotouch/readytotouch/internal/domain"
 )
 
 type (

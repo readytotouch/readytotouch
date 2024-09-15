@@ -1,6 +1,6 @@
 package db
 
-import "github.com/readytotouch/readytotouch/internal/organizer/domain"
+import "github.com/readytotouch/readytotouch/internal/domain"
 
 func UkrainianUniversities() []domain.University {
 	// https://dou.ua/lenta/articles/ukrainian-universities-2023/
