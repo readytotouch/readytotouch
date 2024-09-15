@@ -1,197 +1,201 @@
-# Favorites
-ReadyToTouch
-DocHQ
+// Favorites
+// Favorites | ReadyToTouch
+// Favorites | DocHQ
 
-# BigTech
-Google
-Mozilla
-Microsoft
-IBM
+// BigTech
+// BigTech | Google
+// BigTech | Mozilla
+// BigTech | Microsoft
+// BigTech | IBM
 
-# Social
-GitHub
-LinkedIn
-Reddit
-Medium
-Pinterest
-Snap
-BeReal.
+// Social
+// Social | GitHub
+// Social | LinkedIn
+// Social | Reddit
+// Social | Medium
+// Social | Pinterest
+// Social | Snap
+// Social | BeReal.
 
-# FinTech
-Wise
-American Express
-Mastercard
-Monzo
-Cynergy Bank
-Atom bank
-Citi
+// Favorites
+// Favorites | VictoriaMetrics
+// Favorites | Grammarly
 
-# Tech
-Netlify
-Docker
-Grafana Labs
-HashiCorp
-CrowdStrike
-Cockroach Labs
-ScyllaDB
-Timescale
-Percona
-Elastic
-FerretDB
-DigitalOcean
-Canonical
-Kong
-Exasol
-Palantir
+// Tech
+// Tech | Netlify
+// Tech | Docker
+// Tech | Grafana Labs
+// Tech | HashiCorp
+// Tech | CrowdStrike
+// Tech | Cockroach Labs
+// Tech | ScyllaDB
+// Tech | Timescale
+// Tech | Percona
+// Tech | Elastic
+// Tech | FerretDB
+// Tech | DigitalOcean
+// Tech | Canonical
+// Tech | Kong
+// Tech | Exasol
+// Tech | Palantir
 
-# Ukraine
-VictoriaMetrics
-Grammarly
+// Favorites
+// Favorites VictoriaMetrics
+// Favorites Grammarly
 
-# Security
-1Password
-Okta
-Nord Security
-Proton
-Fortinet
-SentinelOne
+// FinTech
+// FinTech | Wise
+// FinTech | American Express
+// FinTech | Mastercard
+// FinTech | Monzo
+// FinTech | Cynergy Bank
+// FinTech | Atom bank
+// FinTech | Citi
 
-# Internet
-Bitly
-Cloudflare
-Namecheap
-GoDaddy
+// Internet
+// Internet Bitly
+// Internet Cloudflare
+// Internet Namecheap
+// Internet GoDaddy
 
-# Famous
-Uber
-Siemens
-SoundCloud
-DoorDash
-Sixt
-Motorola Solutions
-Samsung
-Salesforge
+// Security
+// Security 1Password
+// Security Okta
+// Security Nord Security
+// Security Proton
+// Security Fortinet
+// Security SentinelOne
 
-# Other
-Careem
-Dailymotion
-Stream
-Workato
-Form3
-Assertive Yield
-Splunk
-90POE
-HelloFresh
-AUTODOC
-Gymondo
-Delivery Hero
-Weaviate
-Fubo
-Yassir
-Vio.com
-Vodeno
-Utility Warehouse
-Codenotary
-Audigent
-runZero
-Tyk
-OpenTag
-Oxla
-Lightspeed
-Squarespace
-Curve
-Tradevest
-Woolsocks
-Applied Systems Canada
-Autodesk
-Vonage
-OpenWeb
-Arenko
-Xata
-Dojo
-Unnax
-AB Tasty
-Firebolt
-Nine
-Isovalent
-ABC Fitness
-Device42
-Acronis
-Gcore
-Zep AI
-Gelato
-SumUp
-Level Home
-SonicWall
-Pindrop
-Seedtag
-Flix
-Press Ganey
-Atmail
-Dusty Robotics
-Cimri
-Quadcode
-FinCompare
-Mellifera
-BNP Paribas - Securities Services
-Apifonica
-Cybus
-Flink
-Greenbone
-OLX
-Snyk
-Sinch
-FOX Tech
-SailPoint
-Proofpoint
-Asset Reality
-Limango
-RxBenefits
-SmithRx
-k-ID
-CAFU
-Rollee
-Net2Phone
-Ola Chat
-Veracity Software Inc
-Treecard
-Openprovider
-fiskaly
-Vay
-Voltus
-Stonebranch
-Rapid7
-Toggle AI
-hearX Group
-MarkiTech.AI
-Lantronix
-INFOLOB
-Argela Technologies
-Top Doctors
-Recurly
-Cynet Systems
-Odyssey Information Services
-Infomatics Corp
-Mindera
-Sytac
-Qumulus Cloud Platform
-Saxon AI
-Dyninno Group
-Holland & Barrett
-Group Avows
-Cognizant
-Nuro
-CloudWalk
-Transition Technologies PSC
-Kroger
-Precisely
-R Systems
-Hays
-Consort Group
-Ascendion
-Checkout.com
-Unlimit
-Chime
-Collective Minds Radiology
-Cruise
-Compass
+// Famous
+// Famous Uber
+// Famous Siemens
+// Famous SoundCloud
+// Famous DoorDash
+// Famous Sixt
+// Famous Motorola Solutions
+// Famous Samsung
+// Famous Salesforge
+
+// Some
+// Some | Careem
+// Some | Dailymotion
+// Some | Stream
+// Some | Workato
+// Some | Form3
+// Some | Assertive Yield
+// Some | Splunk
+// Some | 90POE
+// Some | HelloFresh
+// Some | AUTODOC
+// Some | Gymondo
+// Some | Delivery Hero
+// Some | Weaviate
+// Some | Fubo
+// Some | Yassir
+// Some | Vio.com
+// Some | Vodeno
+// Some | Utility Warehouse
+// Some | Codenotary
+// Some | Audigent
+// Some | runZero
+// Some | Tyk
+// Some | OpenTag
+// Some | Oxla
+// Some | Lightspeed
+// Some | Squarespace
+// Some | Curve
+// Some | Tradevest
+// Some | Woolsocks
+// Some | Applied Systems Canada
+// Some | Autodesk
+// Some | Vonage
+// Some | OpenWeb
+// Some | Arenko
+// Some | Xata
+// Some | Dojo
+// Some | Unnax
+// Some | AB Tasty
+// Some | Firebolt
+// Some | Nine
+// Some | Isovalent
+// Some | ABC Fitness
+// Some | Device42
+// Some | Acronis
+// Some | Gcore
+// Some | Zep AI
+// Some | Gelato
+// Some | SumUp
+// Some | Level Home
+// Some | SonicWall
+// Some | Pindrop
+// Some | Seedtag
+// Some | Flix
+// Some | Press Ganey
+// Some | Atmail
+// Some | Dusty Robotics
+// Some | Cimri
+// Some | Quadcode
+// Some | FinCompare
+// Some | Mellifera
+// Some | BNP Paribas - Securities Services
+// Some | Apifonica
+// Some | Cybus
+// Some | Flink
+// Some | Greenbone
+// Some | OLX
+// Some | Snyk
+// Some | Sinch
+// Some | FOX Tech
+// Some | SailPoint
+// Some | Proofpoint
+// Some | Asset Reality
+// Some | Limango
+// Some | RxBenefits
+// Some | SmithRx
+// Some | k-ID
+// Some | CAFU
+// Some | Rollee
+// Some | Net2Phone
+// Some | Ola Chat
+// Some | Veracity Software Inc
+// Some | Treecard
+// Some | Openprovider
+// Some | fiskaly
+// Some | Vay
+// Some | Voltus
+// Some | Stonebranch
+// Some | Rapid7
+// Some | Toggle AI
+// Some | hearX Group
+// Some | MarkiTech.AI
+// Some | Lantronix
+// Some | INFOLOB
+// Some | Argela Technologies
+// Some | Top Doctors
+// Some | Recurly
+// Some | Cynet Systems
+// Some | Odyssey Information Services
+// Some | Infomatics Corp
+// Some | Mindera
+// Some | Sytac
+// Some | Qumulus Cloud Platform
+// Some | Saxon AI
+// Some | Dyninno Group
+// Some | Holland & Barrett
+// Some | Group Avows
+// Some | Cognizant
+// Some | Nuro
+// Some | CloudWalk
+// Some | Transition Technologies PSC
+// Some | Kroger
+// Some | Precisely
+// Some | R Systems
+// Some | Hays
+// Some | Consort Group
+// Some | Ascendion
+// Some | Checkout.com
+// Some | Unlimit
+// Some | Chime
+// Some | Collective Minds Radiology
+// Some | Cruise
+// Some | Compass
