@@ -1,6 +1,8 @@
 package main
 
 import (
+	"bufio"
+	"fmt"
 	"net/url"
 	"os"
 	"regexp"
@@ -13,6 +15,31 @@ import (
 )
 
 func main() {
+	// Open the file in append mode, create it if it doesn't exist
+	file, err := os.OpenFile("./protos/organizers/company_names.txt", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+	if err != nil {
+		panic(err)
+	}
+	defer file.Close()
+
+	writer := bufio.NewWriter(file)
+
+	for _, company := range db.Companies() {
+		_, err := writer.WriteString(company.Name + "\n")
+		if err != nil {
+			panic(err)
+		}
+	}
+
+	err = writer.Flush()
+	if err != nil {
+		panic(err)
+	}
+
+	fmt.Println("Company names have been written to ./protos/organizers/company_names.txt")
+}
+
+func old() {
 	var (
 		maxCompanyCode  int32 = 0
 		letterOnlyRegex       = regexp.MustCompile(`^[a-zA-Z]+$`)
