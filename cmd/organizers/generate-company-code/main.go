@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"go/format"
 	"os"
 
@@ -41,4 +42,7 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
+
+	fmt.Println("Company code generated successfully")
+	fmt.Printf("Max ID: %d\n", maxID)
 }
