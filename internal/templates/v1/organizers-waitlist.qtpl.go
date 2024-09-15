@@ -41,7 +41,7 @@ func StreamOrganizersWaitlist(qw422016 *qt422016.Writer, organizerFeature Organi
 <main class="main-wrapper">
 	<header class="header">
   <div class="header__wrapper">
-    <a href="#" class="header__logo">
+    <a href="/organizers" class="header__logo">
       <img
         width="129"
         height="32"
