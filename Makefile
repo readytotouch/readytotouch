@@ -125,7 +125,6 @@ generate-protos:
 
 generate-company-code:
 	go run ./cmd/organizers/generate-company-code/main.go
-	make generate-protos
 
 # POSTGRES_PASSWORD=$(echo "$RANDOM$RANDOM" | sha256sum | head -c 32; echo;) JWT_SECRET_KEY=$(echo "$RANDOM$RANDOM" | sha256sum | head -c 32; echo;) make generate-production-environment-file
 generate-production-environment-file:

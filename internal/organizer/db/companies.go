@@ -7,10 +7,15 @@ func Companies() []domain.Company {
 		// Favorites
 		// Favorites | ReadyToTouch
 		{
-			Code:              struct{}{},
-			Name:              "ReadyToTouch",
-			URL:               "https://readytotouch.com/",
-			LinkedInProfile:   domain.LinkedInProfile{},
+			Code: struct{}{},
+			Name: "ReadyToTouch",
+			URL:  "https://readytotouch.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    97909464,
+				IDs:   nil,
+				Alias: "readytotouch",
+				Name:  "ReadyToTouch",
+			},
 			GitHubProfile:     domain.GitHubProfile{},
 			GlassdoorProfile:  domain.GlassdoorProfile{},
 			OttaProfileSlug:   "",
