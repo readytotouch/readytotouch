@@ -1,0 +1,22 @@
+{%- func CompanyCode(data map[int32]string, max int32, companies []Company) -%}
+syntax = "proto3";
+
+package auth;
+
+option go_package = "protos/organizers";
+
+{% stripspace %}
+enum CompanyCode {{% newline %}
+    {% for i := int32(0); i <= max; i++ %}
+        {% space %}
+        {%s data[i] %} {% space %} = {% space %} {%d int(i) %};
+        {% newline %}
+    {% endfor %}
+    {% for i, company := range companies %}
+        {% space %}
+        {%s company.LinkedInProfile.Alias %} {% space %} = {% space %} {%d int(max) + int(i) + 1 %};
+        {% newline %}
+    {% endfor %}
+}
+{% endstripspace %}
+{%- endfunc -%}
