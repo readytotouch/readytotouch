@@ -1,0 +1,3 @@
+{%- func OrganizersCompanies(organizerFeature OrganizerFeature, headerProfiles []SocialProviderUser, authQueryParams string) -%}
+
+{%- endfunc -%}

@@ -152,7 +152,7 @@ func main() {
 	r.GET("/organizers/clojure/welcome", organizerController.Welcome)
 
 	r.GET("/organizers/golang/companies/ukraine", organizerController.GolangCompaniesUkraine)
-	r.GET("/organizers/golang/companies", organizerController.Waitlist)
+	r.GET("/organizers/golang/companies", organizerController.Companies)
 	r.GET("/organizers/golang/vacancies", organizerController.Waitlist)
 	r.GET("/organizers/rust/companies", organizerController.Waitlist)
 	r.GET("/organizers/rust/vacancies", organizerController.Waitlist)
@@ -199,7 +199,7 @@ func main() {
 		StaticFile("/design/organizers-auth", "./public/design/organizer-main-page.html").
 		StaticFile("/design/organizers/golang/welcome", "./public/design/organizer-welcome.html").
 		StaticFile("/design/organizers/golang/companies/ukraine", "./public/design/golang-companies-organizer.html").
-		StaticFile("/design/organizers/golang/companies", "./public/design/golang-companies-organizer.html").
+		StaticFile("/design/organizers/golang/companies", "./public/design/organizer-companies.html").
 		StaticFile("/design/organizers/golang/vacancies", "./public/design/organizer-vacancies-subscribe.html").
 		StaticFile("/design/organizers/golang/vacancies/subscribe", "./public/design/organizer-vacancies-subscribe.html").
 		StaticFile("/design/organizers/golang/vacancies/unsubscribe", "./public/design/organizer-vacancies-unsubscribe.html").
