@@ -5374,39 +5374,40 @@ func Companies() []domain.Company {
 			},
 		},
 
+		// TODO solve alias later "holland-&-barrett"
 		// Some | Holland & Barrett
-		{
-			Code: struct{}{},
-			Name: "Holland & Barrett",
-			URL:  "https://www.hollandandbarrett.com/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:    815488,
-				Alias: "holland-&-barrett",
-				Name:  "Holland & Barrett",
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:             "", // NOP
-				GoRepositoryCount: 0,  // NOP
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Holland-and-Barrett-EI_IE36174.11,30.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/Holland-and-Barrett-Reviews-E36174.htm",
-			},
-			OttaProfileSlug:   "",
-			YouTubeChannelURL: "https://www.youtube.com/@hollandandbarrett",
-			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/3911059005/",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
-		},
+		//{
+		//	Code: struct{}{},
+		//	Name: "Holland & Barrett",
+		//	URL:  "https://www.hollandandbarrett.com/",
+		//	LinkedInProfile: domain.LinkedInProfile{
+		//		ID:    815488,
+		//		Alias: "holland-&-barrett",
+		//		Name:  "Holland & Barrett",
+		//	},
+		//	GitHubProfile: domain.GitHubProfile{
+		//		Login:             "", // NOP
+		//		GoRepositoryCount: 0,  // NOP
+		//	},
+		//	GlassdoorProfile: domain.GlassdoorProfile{
+		//		OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Holland-and-Barrett-EI_IE36174.11,30.htm",
+		//		ReviewsURL:  "https://www.glassdoor.com/Reviews/Holland-and-Barrett-Reviews-E36174.htm",
+		//	},
+		//	OttaProfileSlug:   "",
+		//	YouTubeChannelURL: "https://www.youtube.com/@hollandandbarrett",
+		//	GoMainLanguage:    false,
+		//	Vacancies: domain.Vacancies{
+		//		domain.Go: []string{
+		//			"https://www.linkedin.com/jobs/view/3911059005/",
+		//		},
+		//		domain.Rust:    nil,
+		//		domain.Zig:     nil,
+		//		domain.Scala:   nil,
+		//		domain.Elixir:  nil,
+		//		domain.Clojure: nil,
+		//		domain.Haskell: nil,
+		//	},
+		//},
 
 		// Some | Group Avows
 		{
