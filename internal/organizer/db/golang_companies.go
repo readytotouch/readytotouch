@@ -1212,6 +1212,75 @@ func Companies() []domain.Company {
 			},
 			Skip: false,
 		},
+		{
+			// A
+			Code: struct{}{},
+			Name: "Elastic",
+			URL:  "https://www.elastic.co/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    814025,
+				Alias: "elastic-co",
+				Name:  "Elastic",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "elastic",
+				GoRepositoryCount: 124,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Elastic-EI_IE751551.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Elastic-Reviews-E751551.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/3999755835/",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			Skip: false,
+		},
+		{
+			// A
+			Code: struct{}{},
+			Name: "Proton",
+			URL:  "https://proton.me/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    5241679,
+				Alias: "protonprivacy",
+				Name:  "Proton",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "ProtonMail",
+				GoRepositoryCount: 36,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Proton-privacy-by-default-EI_IE1405328.11,36.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Proton-privacy-by-default-Reviews-E1405328.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: nil,
+				domain.Rust: []string{
+					"https://www.linkedin.com/jobs/view/3955798795/",
+					"https://www.linkedin.com/jobs/view/4012882343/",
+				},
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			Skip: false,
+		},
 
 		// APPEND HERE
 
