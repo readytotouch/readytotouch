@@ -2,7 +2,7 @@ package db
 
 import "github.com/readytotouch/readytotouch/internal/organizer/domain"
 
-func Companies() []domain.Company {
+func companies() []domain.Company {
 	return []domain.Company{
 		{
 			Code:              struct{}{},
