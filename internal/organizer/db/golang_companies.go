@@ -5,6 +5,19 @@ import "github.com/readytotouch/readytotouch/internal/organizer/domain"
 func Companies() []domain.Company {
 	return []domain.Company{
 		{
+			Code:              struct{}{},
+			Name:              "ReadyToTouch",
+			URL:               "https://readytotouch.com/",
+			LinkedInProfile:   domain.LinkedInProfile{},
+			GitHubProfile:     domain.GitHubProfile{},
+			GlassdoorProfile:  domain.GlassdoorProfile{},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies:         domain.Vacancies{},
+			Skip:              false,
+		},
+		{
 			Code: struct{}{},
 			Name: "Google",
 			URL:  "https://www.google.com/",
