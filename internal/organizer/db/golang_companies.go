@@ -37,6 +37,41 @@ func Companies() []domain.Company {
 		},
 		{
 			Code: struct{}{},
+			Name: "Mozilla",
+			URL:  "https://www.mozilla.org/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    13948,
+				Alias: "mozilla-corporation",
+				Name:  "Mozilla",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "mozilla",
+				GoRepositoryCount: 24,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Mozilla-EI_IE19129.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Mozilla-Reviews-E19129.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://app.otta.com/jobs/x1nUGqRw",
+				},
+				domain.Rust: []string{
+					"https://app.otta.com/jobs/x1nUGqRw",
+				},
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			Skip: false,
+		},
+		{
+			Code: struct{}{},
 			Name: "VictoriaMetrics",
 			URL:  "https://victoriametrics.com/",
 			LinkedInProfile: domain.LinkedInProfile{
