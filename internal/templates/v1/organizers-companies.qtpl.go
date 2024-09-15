@@ -14,7 +14,12 @@ var (
 	_ = qt422016.AcquireByteBuffer
 )
 
-func StreamOrganizersCompanies(qw422016 *qt422016.Writer, organizerFeature OrganizerFeature, headerProfiles []SocialProviderUser, authQueryParams string) {
+func StreamOrganizersCompanies(qw422016 *qt422016.Writer,
+	organizerFeature OrganizerFeature,
+	headerProfiles []SocialProviderUser,
+	companies []Company,
+	authQueryParams string,
+) {
 	qw422016.N().S(`<!DOCTYPE html>
 <html lang="en">
 
@@ -322,443 +327,300 @@ func StreamOrganizersCompanies(qw422016 *qt422016.Writer, organizerFeature Organ
 <!-- /selected filters -->
 
         <div id="search_result_list" class="search-result__list">
-          <p class="search-result-found"><span class="search-result-found__amount">160</span> results</p>
+          <p class="search-result-found"><span class="search-result-found__amount">`)
+	qw422016.N().D(len(companies))
+	qw422016.N().S(`</span> results</p>
           <!-- card list -->
           <div class="search-result__cards row-gap-8 mt-24">
+            `)
+	for _, company := range companies {
+		qw422016.N().S(`
             <div class="card">
-  <aside class="card__action">
-    <button class="favorite in-favorite card__action-button button-group__item" title="Remove from favorites">
-      <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" class="favorite__icon" viewBox="0 0 28 28">
-        <path
-          d="m14.5 22.1-.5-.3-.5.3-6.8 4.2c-.5.3-1.1-.1-.9-.7L7.5 18l.1-.6-.4-.4-5.9-5.2c-.3-.3-.3-.6-.2-.8.1-.2.3-.4.5-.4l7.9-.7.6-.1.2-.6 2.9-7.4c.2-.5 1-.5 1.2 0l3.1 7.3.2.5.6.1 7.9.7c.2 0 .4.2.5.5.1.3 0 .6-.2.7l-5.9 5.2-.4.4.1.6 1.8 7.7c.1.3 0 .5-.2.6-.2.1-.5.2-.8 0l-6.6-4z"
-        />
-      </svg>
-    </button>
-    <button class="button-group__item" title="View statistics">
-      <img width="20" height="20" alt="icon stats" src="/assets/images/pages/common/stats.svg" />
-    </button>
-  </aside>
-  <figure class="card__header">
-    <div class="card__image-overlay card__image-overlay--small">
-      <img
-        width="18"
-        height="18"
-        class="card__image card__image--preview"
-        alt="card image preview icon"
-        src="/assets/images/pages/common/image-preview.svg"
-      />
-    </div>
-    <figcaption class="card__header-caption">
-      <a href="/page-stub.html" class="card__headline vacancy__link">Google</a>
-    </figcaption>
-  </figure>
-  <div class="card__info">
-    <figure class="card__figure">
-      <img
-        class="card__icon"
-        alt="card type icon"
-        width="16"
-        height="16"
-        src="/assets/images/pages/vacancy/building.svg"
-      />
-      <figcaption class="card__figcaption">Product</figcaption>
-    </figure>
-    <figure class="card__figure">
-      <img
-        class="card__icon"
-        alt="card type icon"
-        width="16"
-        height="16"
-        src="/assets/images/pages/vacancy/company-type.svg"
-      />
-      <figcaption class="card__figcaption">HRTech</figcaption>
-    </figure>
-  </div>
-  <p class="card__text">
-    DocHQ is your wellbeing partner. As a UK employee benefits provider, our vision is to enable people to make informed
-    health choices and inspire them to improve their quality of life. We are a specialist medical technology provider
-    aimed at enhancing employee wellbeing at work and home - connecting businesses, providers, and consumers through
-    technology.
-  </p>
-  <div class="card__links">
-    <ul class="card__links-group">
-      <li class="card__links-item">
-        <img
-          class="card__links-icon"
-          alt="linkedin icon"
-          width="20"
-          height="20"
-          src="/assets/images/pages/organizer/linkedin.svg"
-        />
-        <a href="#" class="button-link card__links-link">LinkedIn</a>
-      </li>
-      <li class="card__links-item">
-        <a href="#" class="button-link card__links-link">Connections</a>
-      </li>
-      <li class="card__links-item">
-        <a href="#" class="button-link card__links-link">Jobs</a>
-      </li>
-    </ul>
-    <ul class="card__links-group">
-      <li class="card__links-item">
-        <img
-          class="card__links-icon"
-          alt="github icon"
-          width="20"
-          height="20"
-          src="/assets/images/pages/organizer/github.svg"
-        />
-        <a href="#" class="card__links-link card__links-link--google">
-          <img
-            class="card__links-icon"
-            alt="google icon"
-            width="20"
-            height="20"
-            src="/assets/images/pages/organizer/google.svg"
-          />
-        </a>
-        <a href="#" class="button-link card__links-link">GitHub</a>
-      </li>
-      <li class="card__links-item">
-        <a href="#" class="button-link card__links-link">Repositories (3)</a>
-      </li>
-    </ul>
-    <ul class="card__links-group">
-      <li class="card__links-item">
-        <img
-          class="card__links-icon"
-          alt="glassdoor icon"
-          width="20"
-          height="20"
-          src="/assets/images/pages/organizer/glassdoor.svg"
-        />
-        <a href="#" class="button-link card__links-link">Glassdoor</a>
-      </li>
-      <li class="card__links-item">
-        <a href="#" class="button-link card__links-link">Reviews</a>
-      </li>
-    </ul>
-    <ul class="card__links-group card__links-group--unbordered">
-      <li class="card__links-item">
-        <img
-          class="card__links-icon"
-          alt="similarweb icon"
-          width="20"
-          height="20"
-          src="/assets/images/pages/organizer/similarweb.svg"
-        />
-        <a href="#" class="button-link card__links-link">SimilarWeb</a>
-      </li>
-      <li class="card__links-item">
-        <img
-          class="card__links-icon"
-          alt="whois icon"
-          width="20"
-          height="20"
-          src="/assets/images/pages/organizer/whois.svg"
-        />
-        <a href="#" class="button-link card__links-link">Whois</a>
-      </li>
-      <li class="card__links-item">
-        <img class="card__links-icon" alt="otta icon" width="20" height="20" src="/assets/images/pages/organizer/otta.svg" />
-        <a href="#" class="button-link card__links-link">Otta</a>
-      </li>
-      <li class="card__links-item">
-        <img class="card__links-icon" alt="xing icon" width="20" height="20" src="/assets/images/pages/organizer/xing.svg" />
-        <a href="#" class="button-link card__links-link">XING</a>
-      </li>
-    </ul>
-  </div>
-</div>
+              <aside class="card__action">
+                `)
+		qw422016.N().S(`
 
-            <div class="card">
-  <aside class="card__action">
-    <button class="favorite in-favorite card__action-button button-group__item" title="Remove from favorites">
-      <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" class="favorite__icon" viewBox="0 0 28 28">
-        <path
-          d="m14.5 22.1-.5-.3-.5.3-6.8 4.2c-.5.3-1.1-.1-.9-.7L7.5 18l.1-.6-.4-.4-5.9-5.2c-.3-.3-.3-.6-.2-.8.1-.2.3-.4.5-.4l7.9-.7.6-.1.2-.6 2.9-7.4c.2-.5 1-.5 1.2 0l3.1 7.3.2.5.6.1 7.9.7c.2 0 .4.2.5.5.1.3 0 .6-.2.7l-5.9 5.2-.4.4.1.6 1.8 7.7c.1.3 0 .5-.2.6-.2.1-.5.2-.8 0l-6.6-4z"
-        />
-      </svg>
-    </button>
-    <button class="button-group__item" title="View statistics">
-      <img width="20" height="20" alt="icon stats" src="/assets/images/pages/common/stats.svg" />
-    </button>
-  </aside>
-  <figure class="card__header">
-    <div class="card__image-overlay card__image-overlay--small">
-      <img
-        class="card__image"
-        alt="card image preview icon"
-        src="/assets/images/pages/common-images/unknown.svg"
-      />
-    </div>
-    <figcaption class="card__header-caption">
-      <a href="/page-stub.html" class="card__headline vacancy__link">VictoriaMetrics</a>
-    </figcaption>
-  </figure>
-  <div class="card__info">
-    <figure class="card__figure">
-      <img
-        class="card__icon"
-        alt="card type icon"
-        width="16"
-        height="16"
-        src="/assets/images/pages/vacancy/building.svg"
-      />
-      <figcaption class="card__figcaption">Product</figcaption>
-    </figure>
-    <figure class="card__figure">
-      <img
-        class="card__icon"
-        alt="card type icon"
-        width="16"
-        height="16"
-        src="/assets/images/pages/vacancy/company-type.svg"
-      />
-      <figcaption class="card__figcaption">HRTech</figcaption>
-    </figure>
-  </div>
-  <p class="card__text">
-    DocHQ is your wellbeing partner. As a UK employee benefits provider, our vision is to enable people to make informed
-    health choices and inspire them to improve their quality of life. We are a specialist medical technology provider
-    aimed at enhancing employee wellbeing at work and home - connecting businesses, providers, and consumers through
-    technology.
-  </p>
-  <div class="card__links">
-    <ul class="card__links-group">
-      <li class="card__links-item">
-        <img
-          class="card__links-icon"
-          alt="linkedin icon"
-          width="20"
-          height="20"
-          src="/assets/images/pages/organizer/linkedin.svg"
-        />
-        <a href="#" class="button-link card__links-link">LinkedIn</a>
-      </li>
-      <li class="card__links-item">
-        <a href="#" class="button-link card__links-link">Connections</a>
-      </li>
-      <li class="card__links-item">
-        <a href="#" class="button-link card__links-link">Jobs</a>
-      </li>
-    </ul>
-    <ul class="card__links-group">
-      <li class="card__links-item card__links-item--disabled">
-        <img
-          class="card__links-icon"
-          alt="github icon"
-          width="20"
-          height="20"
-          src="/assets/images/pages/organizer/github.svg"
-        />
-        <a href="#" class="card__links-link card__links-link--google">
-          <img
-            class="card__links-icon card__links-icon--google"
-            alt="google icon"
-            width="20"
-            height="20"
-            src="/assets/images/pages/organizer/google.svg"
-          />
-        </a>
-        <a href="#" class="button-link card__links-link">GitHub</a>
-      </li>
-      <li class="card__links-item card__links-item--disabled">
-        <a href="#" class="button-link card__links-link">Repositories (3)</a>
-      </li>
-    </ul>
-    <ul class="card__links-group">
-      <li class="card__links-item card__links-item--disabled">
-        <img
-          class="card__links-icon"
-          alt="glassdoor icon"
-          width="20"
-          height="20"
-          src="/assets/images/pages/organizer/glassdoor.svg"
-        />
-        <a href="#" class="button-link card__links-link">Glassdoor</a>
-      </li>
-      <li class="card__links-item">
-        <a href="#" class="button-link card__links-link">Reviews</a>
-      </li>
-    </ul>
-    <ul class="card__links-group card__links-group--unbordered">
-      <li class="card__links-item">
-        <img
-          class="card__links-icon"
-          alt="similarweb icon"
-          width="20"
-          height="20"
-          src="/assets/images/pages/organizer/similarweb.svg"
-        />
-        <a href="#" class="button-link card__links-link">SimilarWeb</a>
-      </li>
-      <li class="card__links-item">
-        <img
-          class="card__links-icon"
-          alt="whois icon"
-          width="20"
-          height="20"
-          src="/assets/images/pages/organizer/whois.svg"
-        />
-        <a href="#" class="button-link card__links-link">Whois</a>
-      </li>
-      <li class="card__links-item card__links-item--disabled">
-        <img class="card__links-icon" alt="otta icon" width="20" height="20" src="/assets/images/pages/organizer/otta.svg" />
-        <a href="#" class="button-link card__links-link">Otta</a>
-      </li>
-      <li class="card__links-item card__links-item--disabled">
-        <img class="card__links-icon" alt="xing icon" width="20" height="20" src="/assets/images/pages/organizer/xing.svg" />
-        <a href="#" class="button-link card__links-link">XING</a>
-      </li>
-    </ul>
-  </div>
-</div>
+                <button class="favorite in-favorite card__action-button button-group__item" title="Remove from favorites">
+                  <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" class="favorite__icon" viewBox="0 0 28 28">
+                    <path
+                      d="m14.5 22.1-.5-.3-.5.3-6.8 4.2c-.5.3-1.1-.1-.9-.7L7.5 18l.1-.6-.4-.4-5.9-5.2c-.3-.3-.3-.6-.2-.8.1-.2.3-.4.5-.4l7.9-.7.6-.1.2-.6 2.9-7.4c.2-.5 1-.5 1.2 0l3.1 7.3.2.5.6.1 7.9.7c.2 0 .4.2.5.5.1.3 0 .6-.2.7l-5.9 5.2-.4.4.1.6 1.8 7.7c.1.3 0 .5-.2.6-.2.1-.5.2-.8 0l-6.6-4z"
+                    />
+                  </svg>
+                </button>
+                <button class="button-group__item" title="View statistics">
+                  <img width="20" height="20" alt="icon stats" src="/assets/images/pages/common/stats.svg" />
+                </button>
+              </aside>
+              <figure class="card__header">
+                <div class="card__image-overlay card__image-overlay--small">
+                  <img
+                    width="18"
+                    height="18"
+                    class="card__image card__image--preview"
+                    alt="card image preview icon"
+                    src="/assets/images/pages/common/image-preview.svg"
+                  />
+                </div>
+                <figcaption class="card__header-caption">
+                  `)
+		qw422016.N().S(`
+                  <a href="`)
+		qw422016.E().S(company.URL)
+		qw422016.N().S(`" class="card__headline vacancy__link">`)
+		qw422016.E().S(company.Name)
+		qw422016.N().S(`</a>
+                </figcaption>
+              </figure>
+              <div class="card__info">
+                <figure class="card__figure">
+                  <img
+                    class="card__icon"
+                    alt="card type icon"
+                    width="16"
+                    height="16"
+                    src="/assets/images/pages/vacancy/building.svg"
+                  />
+                  <figcaption class="card__figcaption">Product|Startup</figcaption>
+                </figure>
+                <figure class="card__figure">
+                  <img
+                    class="card__icon"
+                    alt="card type icon"
+                    width="16"
+                    height="16"
+                    src="/assets/images/pages/vacancy/company-type.svg"
+                  />
+                  <figcaption class="card__figcaption">TodoTech</figcaption>
+                </figure>
+              </div>
+              <p class="card__text">
+                `)
+		qw422016.N().S(`
+              </p>
+              <div class="card__links">
+                <ul class="card__links-group">
+                  <li class="card__links-item">
+                    <img
+                      class="card__links-icon"
+                      alt="linkedin icon"
+                      width="20"
+                      height="20"
+                      src="/assets/images/pages/organizer/linkedin.svg"
+                    />
+                    <a href="https://www.linkedin.com/company/`)
+		qw422016.E().S(company.LinkedInProfile.Alias)
+		qw422016.N().S(`/" class="button-link card__links-link">LinkedIn</a>
+                  </li>
+                  <li class="card__links-item">
+                    <a href="`)
+		qw422016.E().S(linkedinConnectionsURL([]Company{company}, nil))
+		qw422016.N().S(`" class="button-link card__links-link">Connections</a>
+                  </li>
+                  <li class="card__links-item">
+                    `)
+		qw422016.N().S(`
+                    <a href="`)
+		qw422016.E().S(linkedinJobsURL([]Company{company}, golangKeywordsTitles))
+		qw422016.N().S(`" class="button-link card__links-link">Jobs</a>
+                  </li>
+                </ul>
+`)
+		if company.GitHubProfile.Login == "" {
+			qw422016.N().S(`                  <ul class="card__links-group">
+                    <li class="card__links-item card__links-item--disabled">
+                      <img
+                        class="card__links-icon"
+                        alt="github icon"
+                        width="20"
+                        height="20"
+                        src="/assets/images/pages/organizer/github.svg"
+                      />
+                      <a href="`)
+			qw422016.E().S(googleSearchGitHub(company.Name))
+			qw422016.N().S(`" class="card__links-link card__links-link--google">
+                        <img
+                          class="card__links-icon card__links-icon--google"
+                          alt="google icon"
+                          width="20"
+                          height="20"
+                          src="/assets/images/pages/organizer/google.svg"
+                        />
+                      </a>
+                      <span class="button-link card__links-link">GitHub</span>
+                    </li>
+                  </ul>
+                `)
+		} else {
+			qw422016.N().S(`
+                  <ul class="card__links-group">
+                    <li class="card__links-item">
+                      <img
+                        class="card__links-icon"
+                        alt="github icon"
+                        width="20"
+                        height="20"
+                        src="/assets/images/pages/organizer/github.svg"
+                      />
+                      <a href="https://github.com/`)
+			qw422016.E().S(company.GitHubProfile.Login)
+			qw422016.N().S(`" class="button-link card__links-link">GitHub</a>
+                    </li>
+                    <li class="card__links-item">
+                      `)
+			qw422016.N().S(`
+                      <a href="https://github.com/orgs/`)
+			qw422016.E().S(company.GitHubProfile.Login)
+			qw422016.N().S(`/repositories?q=lang:go" class="button-link card__links-link" title="`)
+			qw422016.N().D(company.GitHubProfile.GoRepositoryCount)
+			qw422016.N().S(` repositories">Repositories</a>
+                    </li>
+                  </ul>
+`)
+		}
+		if company.GlassdoorProfile.OverviewURL == "" {
+			qw422016.N().S(`                  <ul class="card__links-group">
+                    <li class="card__links-item card__links-item--disabled">
+                      <img
+                        class="card__links-icon"
+                        alt="glassdoor icon"
+                        width="20"
+                        height="20"
+                        src="/assets/images/pages/organizer/glassdoor.svg"
+                      />
+                      <a href="`)
+			qw422016.E().S(googleSearchGlassdoor(company.Name))
+			qw422016.N().S(`" class="card__links-link card__links-link--google">
+                        <img
+                          class="card__links-icon card__links-icon--google"
+                          alt="google icon"
+                          width="20"
+                          height="20"
+                          src="/assets/images/pages/organizer/google.svg"
+                        />
+                      </a>
+                      <span class="button-link card__links-link">Glassdoor</span>
+                    </li>
+                  </ul>
+                `)
+		} else {
+			qw422016.N().S(`
+                  <ul class="card__links-group">
+                    <li class="card__links-item">
+                      <img
+                        class="card__links-icon"
+                        alt="glassdoor icon"
+                        width="20"
+                        height="20"
+                        src="/assets/images/pages/organizer/glassdoor.svg"
+                      />
+                      <a href="`)
+			qw422016.E().S(company.GlassdoorProfile.OverviewURL)
+			qw422016.N().S(`" class="button-link card__links-link">Glassdoor</a>
+                    </li>
+                    <li class="card__links-item">
+                      <a href="`)
+			qw422016.E().S(company.GlassdoorProfile.ReviewsURL)
+			qw422016.N().S(`" class="button-link card__links-link">Reviews</a>
+                    </li>
+                  </ul>
+`)
+		}
+		qw422016.N().S(`                <ul class="card__links-group card__links-group--unbordered">
+                  <li class="card__links-item">
+                    <img
+                      class="card__links-icon"
+                      alt="similarweb icon"
+                      width="20"
+                      height="20"
+                      src="/assets/images/pages/organizer/similarweb.svg"
+                    />
+                    <a href="`)
+		qw422016.E().S(similarwebURL(company.URL))
+		qw422016.N().S(`" class="button-link card__links-link">SimilarWeb</a>
+                  </li>
+                  <li class="card__links-item">
+                    <img
+                      class="card__links-icon"
+                      alt="whois icon"
+                      width="20"
+                      height="20"
+                      src="/assets/images/pages/organizer/whois.svg"
+                    />
+                    <a href="`)
+		qw422016.E().S(whoisURL(company.URL))
+		qw422016.N().S(`" class="button-link card__links-link">Whois</a>
+                  </li>
 
-            <div class="card">
-  <aside class="card__action">
-    <button class="favorite card__action-button button-group__item" title="Add to favorite">
-      <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" class="favorite__icon" viewBox="0 0 28 28">
-        <path
-          d="m14.5 22.1-.5-.3-.5.3-6.8 4.2c-.5.3-1.1-.1-.9-.7L7.5 18l.1-.6-.4-.4-5.9-5.2c-.3-.3-.3-.6-.2-.8.1-.2.3-.4.5-.4l7.9-.7.6-.1.2-.6 2.9-7.4c.2-.5 1-.5 1.2 0l3.1 7.3.2.5.6.1 7.9.7c.2 0 .4.2.5.5.1.3 0 .6-.2.7l-5.9 5.2-.4.4.1.6 1.8 7.7c.1.3 0 .5-.2.6-.2.1-.5.2-.8 0l-6.6-4z"
-        />
-      </svg>
-    </button>
-    <button class="button-group__item" title="View statistics">
-      <img width="20" height="20" alt="icon stats" src="/assets/images/pages/common/stats.svg" />
-    </button>
-  </aside>
-  <figure class="card__header">
-    <div class="card__image-overlay card__image-overlay--small">
-      <img
-        class="card__image"
-        alt="card image preview icon"
-        src="/assets/images/pages/common-images/unknown.svg"
-      />
-    </div>
-    <figcaption class="card__header-caption">
-      <a href="/page-stub.html" class="card__headline vacancy__link">DocHQ</a>
-    </figcaption>
-  </figure>
-  <div class="card__info">
-    <figure class="card__figure">
-      <img
-        class="card__icon"
-        alt="card type icon"
-        width="16"
-        height="16"
-        src="/assets/images/pages/vacancy/building.svg"
-      />
-      <figcaption class="card__figcaption">Product</figcaption>
-    </figure>
-    <figure class="card__figure">
-      <img
-        class="card__icon"
-        alt="card type icon"
-        width="16"
-        height="16"
-        src="/assets/images/pages/vacancy/company-type.svg"
-      />
-      <figcaption class="card__figcaption">HRTech</figcaption>
-    </figure>
-  </div>
-  <p class="card__text">
-    DocHQ is your wellbeing partner. As a UK employee benefits provider, our vision is to enable people to make informed
-    health choices and inspire them to improve their quality of life. We are a specialist medical technology provider
-    aimed at enhancing employee wellbeing at work and home - connecting businesses, providers, and consumers through
-    technology.
-  </p>
-  <div class="card__links">
-    <ul class="card__links-group">
-      <li class="card__links-item">
-        <img
-          class="card__links-icon"
-          alt="linkedin icon"
-          width="20"
-          height="20"
-          src="/assets/images/pages/organizer/linkedin.svg"
-        />
-        <a href="#" class="button-link card__links-link">LinkedIn</a>
-      </li>
-      <li class="card__links-item">
-        <a href="#" class="button-link card__links-link">Connections</a>
-      </li>
-      <li class="card__links-item">
-        <a href="#" class="button-link card__links-link">Jobs</a>
-      </li>
-    </ul>
-    <ul class="card__links-group">
-      <li class="card__links-item">
-        <img
-          class="card__links-icon"
-          alt="github icon"
-          width="20"
-          height="20"
-          src="/assets/images/pages/organizer/github.svg"
-        />
-        <a href="#" class="card__links-link card__links-link--google">
-          <img
-            class="card__links-icon"
-            alt="google icon"
-            width="20"
-            height="20"
-            src="/assets/images/pages/organizer/google.svg"
-          />
-        </a>
-        <a href="#" class="button-link card__links-link">GitHub</a>
-      </li>
-      <li class="card__links-item">
-        <a href="#" class="button-link card__links-link">Repositories (3)</a>
-      </li>
-    </ul>
-    <ul class="card__links-group">
-      <li class="card__links-item">
-        <img
-          class="card__links-icon"
-          alt="glassdoor icon"
-          width="20"
-          height="20"
-          src="/assets/images/pages/organizer/glassdoor.svg"
-        />
-        <a href="#" class="button-link card__links-link">Glassdoor</a>
-      </li>
-      <li class="card__links-item">
-        <a href="#" class="button-link card__links-link">Reviews</a>
-      </li>
-    </ul>
-    <ul class="card__links-group card__links-group--unbordered">
-      <li class="card__links-item">
-        <img
-          class="card__links-icon"
-          alt="similarweb icon"
-          width="20"
-          height="20"
-          src="/assets/images/pages/organizer/similarweb.svg"
-        />
-        <a href="#" class="button-link card__links-link">SimilarWeb</a>
-      </li>
-      <li class="card__links-item">
-        <img
-          class="card__links-icon"
-          alt="whois icon"
-          width="20"
-          height="20"
-          src="/assets/images/pages/organizer/whois.svg"
-        />
-        <a href="#" class="button-link card__links-link">Whois</a>
-      </li>
-      <li class="card__links-item">
-        <img class="card__links-icon" alt="otta icon" width="20" height="20" src="/assets/images/pages/organizer/otta.svg" />
-        <a href="#" class="button-link card__links-link">Otta</a>
-      </li>
-      <li class="card__links-item">
-        <img class="card__links-icon" alt="xing icon" width="20" height="20" src="/assets/images/pages/organizer/xing.svg" />
-        <a href="#" class="button-link card__links-link">XING</a>
-      </li>
-    </ul>
-  </div>
-</div>
+                  `)
+		qw422016.N().S(`
+                  <li class="card__links-item card__links-item--disabled">
+                    <img
+                      class="card__links-icon"
+                      alt="xing icon"
+                      width="20"
+                      height="20"
+                      src="/assets/images/pages/organizer/xing.svg"
+                    />
+                    <a href="`)
+		qw422016.E().S(googleSearchXing(company.Name))
+		qw422016.N().S(`" class="card__links-link card__links-link--google">
+                      <img
+                        class="card__links-icon card__links-icon--google"
+                        alt="google icon"
+                        width="20"
+                        height="20"
+                        src="/assets/images/pages/organizer/google.svg"
+                      />
+                    </a>
+                    <span class="button-link card__links-link">XING</span>
+                  </li>
 
+`)
+		if company.OttaProfileSlug == "" {
+			qw422016.N().S(`                    <li class="card__links-item card__links-item--disabled">
+                      <img
+                        class="card__links-icon"
+                        alt="otta icon"
+                        width="20"
+                        height="20"
+                        src="/assets/images/pages/organizer/otta.svg"
+                      />
+                      <a href="`)
+			qw422016.E().S(googleSearchOtta(company.Name))
+			qw422016.N().S(`" class="card__links-link card__links-link--google">
+                        <img
+                          class="card__links-icon card__links-icon--google"
+                          alt="google icon"
+                          width="20"
+                          height="20"
+                          src="/assets/images/pages/organizer/google.svg"
+                        />
+                      </a>
+                      <span class="button-link card__links-link">Otta</span>
+                    </li>
+                  `)
+		} else {
+			qw422016.N().S(`
+                    <li class="card__links-item">
+                      <img
+                        class="card__links-icon"
+                        alt="otta icon"
+                        width="20"
+                        height="20"
+                        src="/assets/images/pages/organizer/otta.svg"
+                      />
+                      <a href="https://app.otta.com/companies/`)
+			qw422016.E().S(company.OttaProfileSlug)
+			qw422016.N().S(`" class="button-link card__links-link">Otta</a>
+                    </li>
+`)
+		}
+		qw422016.N().S(`                </ul>
+              </div>
+            </div>
+            `)
+	}
+	qw422016.N().S(`
           </div>
 
           <!-- /card list -->
@@ -833,15 +695,25 @@ func StreamOrganizersCompanies(qw422016 *qt422016.Writer, organizerFeature Organ
 `)
 }
 
-func WriteOrganizersCompanies(qq422016 qtio422016.Writer, organizerFeature OrganizerFeature, headerProfiles []SocialProviderUser, authQueryParams string) {
+func WriteOrganizersCompanies(qq422016 qtio422016.Writer,
+	organizerFeature OrganizerFeature,
+	headerProfiles []SocialProviderUser,
+	companies []Company,
+	authQueryParams string,
+) {
 	qw422016 := qt422016.AcquireWriter(qq422016)
-	StreamOrganizersCompanies(qw422016, organizerFeature, headerProfiles, authQueryParams)
+	StreamOrganizersCompanies(qw422016, organizerFeature, headerProfiles, companies, authQueryParams)
 	qt422016.ReleaseWriter(qw422016)
 }
 
-func OrganizersCompanies(organizerFeature OrganizerFeature, headerProfiles []SocialProviderUser, authQueryParams string) string {
+func OrganizersCompanies(
+	organizerFeature OrganizerFeature,
+	headerProfiles []SocialProviderUser,
+	companies []Company,
+	authQueryParams string,
+) string {
 	qb422016 := qt422016.AcquireByteBuffer()
-	WriteOrganizersCompanies(qb422016, organizerFeature, headerProfiles, authQueryParams)
+	WriteOrganizersCompanies(qb422016, organizerFeature, headerProfiles, companies, authQueryParams)
 	qs422016 := string(qb422016.B)
 	qt422016.ReleaseByteBuffer(qb422016)
 	return qs422016

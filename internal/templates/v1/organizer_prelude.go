@@ -117,3 +117,52 @@ func similarwebURL(s string) string {
 
 	return fmt.Sprintf("https://www.similarweb.com/website/%s/", parsedURL.Hostname())
 }
+
+func whoisURL(s string) string {
+	// https://www.whois.com/whois/readytotouch.com
+
+	if s == "" {
+		return ""
+	}
+
+	parsedURL, err := url.Parse(s)
+	if err != nil {
+		// panic allowed because HTML is pre-generated
+
+		panic(err)
+	}
+
+	return fmt.Sprintf("https://www.whois.com/whois/%s", parsedURL.Hostname())
+}
+
+func googleSearchGitHub(companyName string) string {
+	values := url.Values{
+		"q": {"site:github.com" + " " + companyName},
+	}
+
+	return "https://www.google.com/search?" + values.Encode()
+}
+
+func googleSearchGlassdoor(companyName string) string {
+	values := url.Values{
+		"q": {"site:glassdoor.com" + " " + companyName},
+	}
+
+	return "https://www.google.com/search?" + values.Encode()
+}
+
+func googleSearchXing(companyName string) string {
+	values := url.Values{
+		"q": {"site:xing.com" + " " + companyName},
+	}
+
+	return "https://www.google.com/search?" + values.Encode()
+}
+
+func googleSearchOtta(companyName string) string {
+	values := url.Values{
+		"q": {"site:otta.com" + " " + companyName},
+	}
+
+	return "https://www.google.com/search?" + values.Encode()
+}

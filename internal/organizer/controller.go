@@ -57,12 +57,6 @@ func (c *Controller) GolangCompaniesUkraine(ctx *gin.Context) {
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
 }
 
-func (c *Controller) GolangCompanies(ctx *gin.Context) {
-	content := template.OrganizerStatic(db.Companies(), db.UkrainianUniversities())
-
-	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
-}
-
 func (c *Controller) Companies(ctx *gin.Context) {
 	var (
 		authUserID = domain.ContextGetUserID(ctx)
@@ -82,7 +76,12 @@ func (c *Controller) Companies(ctx *gin.Context) {
 		// NOP, continue
 	}
 
-	content := template.OrganizersCompanies(organizerFeature, headerProfiles, c.redirect(organizerFeature.Path))
+	content := template.OrganizersCompanies(
+		organizerFeature,
+		headerProfiles,
+		db.Companies(), // @TODO filter by language
+		c.redirect(organizerFeature.Path),
+	)
 
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
 }
