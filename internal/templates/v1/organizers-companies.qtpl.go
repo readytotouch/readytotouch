@@ -40,72 +40,59 @@ func StreamOrganizersCompanies(qw422016 *qt422016.Writer, organizerFeature Organ
 <main class="main-wrapper">
 	<header class="header">
   <div class="header__wrapper">
-    <a href="#" class="header__logo">
+    <a href="/organizers" class="header__logo">
       <img
         width="129"
         height="32"
         class="header__logo-img"
-        src="/assets/images/pages/organizer/golang-organizer.svg"
+        src="/assets/images/pages/organizer/`)
+	qw422016.E().S(organizerFeature.Organizer.Logo)
+	qw422016.N().S(`"
         alt="organizer logo"
       />
     </a>
+    `)
+	var navigation = toFeatureNavigation(organizerFeature.Path)
+
+	qw422016.N().S(`
     <ul class="header__nav">
       <li class="header__nav-item">
-        <a href="/companies" class="header__nav-link active">Companies</a>
+        <a href="`)
+	qw422016.E().S(navigation.companiesURL)
+	qw422016.N().S(`" class="header__nav-link `)
+	qw422016.E().S(navigation.companiesActive)
+	qw422016.N().S(`">Companies</a>
       </li>
       <li class="header__nav-item">
-        <a href="/vacancies" class="header__nav-link">Vacancies</a>
+        <a href="`)
+	qw422016.E().S(navigation.vacanciesURL)
+	qw422016.N().S(`" class="header__nav-link `)
+	qw422016.E().S(navigation.vacanciesActive)
+	qw422016.N().S(`">Vacancies</a>
       </li>
     </ul>
-    <div class="header__stars">
-      <iframe
-        src="https://ghbtns.com/github-btn.html?user=readytotouch&repo=readytotouch.github.io&type=star&count=true&size=large"
-        width="110"
-        height="33"
-        title="GitHub"
-      ></iframe>
-    </div>
-    <div class="header__profile">
-      <button class="header__profile-button">
-        <img src="https://avatars.githubusercontent.com/u/63663261?v=4&s=48" alt="photo-profile" />
-      </button>
-      <div class="header__modal modal-profile">
-        <div class="modal-profile__profile">
-          <figure class="modal-profile__profile-info">
-            <img
-              src="https://avatars.githubusercontent.com/u/63663261?v=4&s=48"
-              class="modal-profile__user-photo"
-              width="48"
-              height="48"
-              alt="photo-profile"
-            />
-            <figcaption class="modal-profile__profile-name">Yaroslav Podorvanov</figcaption>
-          </figure>
-          <div class="modal-profile__profile-list">
-            <a href="https://github.com/YaroslavPodorvanov" target="_blank" class="modal-profile__link">
-              <img src="/assets/images/pages/online-new/github-black.svg" width="20" height="20" alt="GitHub logo" />
-              <span class="modal-profile__profile-github">github.com/YaroslavPodorvanov</span>
-            </a>
-            <a href="https://gitlab.com/YaroslavPodorvanov" target="_blank" class="modal-profile__link">
-              <img src="/assets/images/pages/online-new/gitlab.svg" width="20" height="20" alt="GitLab logo" />
-              <span class="modal-profile__profile-gitlab">gitlab.com/YaroslavPodorvanov</span>
-            </a>
-          </div>
-        </div>
-        <div class="modal-profile__log-out">
-          <a href="#" class="modal-profile__button">Log out</a>
-        </div>
-      </div>
-    </div>
+    `)
+	streamorganizersHeaderStars(qw422016)
+	qw422016.N().S(`
+    `)
+	if len(headerProfiles) > 0 {
+		qw422016.N().S(`
+    `)
+		streamorganizersHeaderProfile(qw422016, headerProfiles)
+		qw422016.N().S(`
+    `)
+	} else {
+		qw422016.N().S(`
+    <a href="/organizers/`)
+		qw422016.E().S(organizerFeature.Organizer.Alias)
+		qw422016.N().S(`/welcome`)
+		qw422016.E().S(authQueryParams)
+		qw422016.N().S(`" class="button button--small-padding button--black header__login-button">Log in</a>
+    `)
+	}
+	qw422016.N().S(`
   </div>
 </header>
-<script>
-  document.querySelector('.header__profile-button').addEventListener('click', () => {
-    document.querySelector('.header__modal').classList.toggle('active')
-  })
-</script>
-
-
 
 <div class="container">
   <nav aria-label="breadcrumb" aria-labelledby="navigation through the bread crumbs" class="breadcrumb">
