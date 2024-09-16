@@ -39,8 +39,8 @@ func Companies() []domain.Company {
 				GoRepositoryCount: 9,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.google.com/search?q=Glassdoor+DocHQ",
-				ReviewsURL:  "https://www.google.com/search?q=Glassdoor+DocHQ+reviews",
+				OverviewURL: "",
+				ReviewsURL:  "",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",

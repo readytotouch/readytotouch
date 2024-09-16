@@ -126,7 +126,18 @@ func StreamOrganizersCompanies(qw422016 *qt422016.Writer,
 <section class="search-container container">
   <div class="search search--projects search--organizer">
     <div class="search__input-group">
-      <input class="search__input" id="company" type="text" placeholder="Search" />
+      <input class="search__input" id="js-company-query" type="search" name="search" placeholder="Search" list="js-company-query-datalist" />
+      <datalist id="js-company-query-datalist">
+        `)
+	for _, company := range companies {
+		qw422016.N().S(`
+          <option value="`)
+		qw422016.E().S(company.Name)
+		qw422016.N().S(`"></option>
+        `)
+	}
+	qw422016.N().S(`
+      </datalist>
       <img class="search__icon" alt="Search icon" width="20" height="20" src="/assets/images/pages/common/search.svg" />
     </div>
   </div>
@@ -140,7 +151,7 @@ func StreamOrganizersCompanies(qw422016 *qt422016.Writer,
   <div class="search-result__filter-group search-result__filter-group--wide">
     <div class="search-result__filter-header">
       <h2 class="search-result__filter-headline">Filters:</h2>
-      <button class="button button--light-link search-result__filter-headline-reset">Reset all</button>
+      <button id="js-criteria-reset" class="button button--light-link search-result__filter-headline-reset" style="visibility: hidden;">Reset all</button>
     </div>
 
     <div class="filters">
@@ -151,12 +162,12 @@ func StreamOrganizersCompanies(qw422016 *qt422016.Writer,
         </header>
         <div class="filters__elements">
           <label class="checkbox filters__element">
-            <input class="checkbox__input" type="checkbox" />
+            <input class="js-criteria-company-type checkbox__input" type="checkbox" data-alias="product" />
             <span class="checkbox__element"></span>
             Product
           </label>
           <label class="checkbox filters__element">
-            <input class="checkbox__input" type="checkbox" />
+            <input class="js-criteria-company-type checkbox__input" type="checkbox" data-alias="startup" />
             <span class="checkbox__element"></span>
             Startup
           </label>
@@ -175,30 +186,14 @@ func StreamOrganizersCompanies(qw422016 *qt422016.Writer,
       <!-- /filters -->
       <div class="search-result--group">
         <!-- selected filters -->
-<div id="search_result_filter_used" class="filter-used filter-used--small">
-  <div class="filter-used__title">Applied filters:</div>
-  <ul class="filter-used__list">
-    <li class="filter-used__item">
-      Product
-      <button class="filter-used__link" type="button">
-        <img
-          class="filter-used__cross-icon"
-          alt="cross icon"
-          width="10"
-          height="10"
-          title="info"
-          src="/assets/images/pages/common/cross.svg"
-        />
-      </button>
-    </li>
-    `)
-	qw422016.N().S(`
-  </ul>
-</div>
-<!-- /selected filters -->
+        <div class="filter-used filter-used--small" style="visibility: hidden;">
+          <div class="filter-used__title">Applied filters:</div>
+          <ul id="js-company-selected-criteria" class="filter-used__list"></ul>
+        </div>
+        <!-- /selected filters -->
 
         <div id="search_result_list" class="search-result__list">
-          <p class="search-result-found"><span class="search-result-found__amount">`)
+          <p class="search-result-found"><span id="js-result-count" class="search-result-found__amount">`)
 	qw422016.N().D(len(companies))
 	qw422016.N().S(`</span> results</p>
           <!-- card list -->
@@ -209,6 +204,9 @@ func StreamOrganizersCompanies(qw422016 *qt422016.Writer,
             <div class="js-company card"
                  data-company-id="`)
 		qw422016.N().DL(company.ID)
+		qw422016.N().S(`"
+                 data-company-name="`)
+		qw422016.E().S(company.Name)
 		qw422016.N().S(`"
                  data-company-type="`)
 		qw422016.E().S(string(company.Type))
