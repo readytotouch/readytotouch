@@ -156,7 +156,7 @@ func main() {
 	r.GET("/organizers/golang/companies/ukraine", organizerController.GolangCompaniesUkraine)
 	r.GET("/organizers/golang/companies", organizerController.Companies)
 	r.GET("/organizers/golang/vacancies", organizerController.Waitlist)
-	r.GET("/organizers/rust/companies", organizerController.Waitlist)
+	r.GET("/organizers/rust/companies", organizerController.Companies)
 	r.GET("/organizers/rust/vacancies", organizerController.Waitlist)
 	r.GET("/organizers/zig/companies", organizerController.Waitlist)
 	r.GET("/organizers/zig/vacancies", organizerController.Waitlist)

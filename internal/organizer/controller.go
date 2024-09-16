@@ -95,6 +95,12 @@ func (c *Controller) Companies(ctx *gin.Context) {
 			continue
 		}
 
+		if organizerFeature.Organizer.Language == domain.Go {
+			// NOP
+		} else {
+			company.GitHubProfile.GoRepositoryCount = 0
+		}
+
 		companies = append(companies, company)
 	}
 
