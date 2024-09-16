@@ -57,7 +57,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "DocHQ is a Health Tech company",
+			ShortDescription: "Health Tech company",
 		},
 
 		// BigTech
@@ -92,7 +92,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "American multinational technology company",
 		},
 
 		// BigTech | Mozilla
@@ -130,7 +130,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "Organization dedicated to making the web better",
 		},
 
 		// BigTech | Microsoft
@@ -167,7 +167,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "American multinational technology company",
 		},
 
 		// BigTech | IBM
@@ -203,7 +203,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "American multinational technology company",
 		},
 
 		// Social
@@ -240,7 +240,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "Developer platform",
 		},
 
 		// Social | LinkedIn
@@ -279,7 +279,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "Business and employment-focused social media platform",
 		},
 
 		// Social | Reddit
@@ -315,7 +315,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "Network of communities where people can dive into their interests, hobbies and passions",
 		},
 
 		// Social | Medium
@@ -351,7 +351,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "Home for human stories and ideas",
 		},
 
 		// Social | Pinterest
@@ -387,7 +387,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "Visual discovery engine for finding ideas",
 		},
 
 		// Social | Snap
@@ -423,11 +423,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "American multimedia instant messaging app",
 		},
 
 		// Social | BeReal.
 		{
+			ID:   0,
+			Type: "",
 			Name: "BeReal.",
 			URL:  "https://bereal.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -443,8 +445,19 @@ func Companies() []domain.Company {
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-BeReal-EI_IE7468524.11,17.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/BeReal-Reviews-E7468524.htm",
 			},
-			OttaProfileSlug: "BeReal",
-			GoMainLanguage:  false,
+			OttaProfileSlug:   "BeReal",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go:      []string{},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "Simplest photo sharing app",
 		},
 
 		// Favorites
@@ -479,7 +492,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "Time series database and easy-to-use high performance monitoring solutions",
 		},
 
 		// Favorites | Grammarly
@@ -552,7 +565,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "Static hosting service",
 		},
 
 		// Tech | Docker
@@ -690,7 +703,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "Cybersecurity technology company",
 		},
 
 		// Tech | Cockroach Labs
@@ -726,7 +739,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "Distributed database with standard SQL for cloud applications",
 		},
 
 		// Tech | Timescale
