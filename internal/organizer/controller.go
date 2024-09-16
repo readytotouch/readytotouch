@@ -129,6 +129,48 @@ func (c *Controller) Companies(ctx *gin.Context) {
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
 }
 
+func (c *Controller) Company(ctx *gin.Context) {
+	type (
+		companyURI struct {
+			CompanyAlias string `uri:"company_alias" binding:"required"`
+		}
+	)
+
+	var (
+		uri companyURI
+	)
+
+	err := ctx.ShouldBindUri(&uri)
+	if err != nil {
+		ctx.Data(http.StatusBadRequest, "text/html; charset=utf-8", []byte("Company alias is required"))
+
+		return
+	}
+
+	var (
+		featurePath = strings.TrimSuffix(ctx.FullPath(), "/:company_alias")
+	)
+
+	// Redirect to lowercase company alias
+	{
+		redirectAlias := strings.ToLower(uri.CompanyAlias)
+		if uri.CompanyAlias != redirectAlias {
+			ctx.Redirect(http.StatusFound, featurePath+"/"+redirectAlias)
+
+			return
+		}
+	}
+
+	company, ok := c.findCompany(ctx, uri.CompanyAlias)
+	if !ok {
+		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Company not found"))
+
+		return
+	}
+
+	// @TODO: Implement company view stats
+}
+
 func (c *Controller) Waitlist(ctx *gin.Context) {
 	var (
 		authUserID      = domain.ContextGetUserID(ctx)
@@ -478,4 +520,16 @@ func (c *Controller) getHeaderProfiles(ctx *gin.Context, userID int64) ([]domain
 	}
 
 	return nil, nil
+}
+
+func (c *Controller) findCompany(ctx *gin.Context, alias string) (domain.Company, bool) {
+	// Yes, we are leaking the database implementation to the controller, it's fine for now
+	// Yes, we use linear search, it's fine for now
+	for _, company := range db.Companies() {
+		if company.LinkedInProfile.Alias == alias {
+			return company, true
+		}
+	}
+
+	return domain.Company{}, false
 }

@@ -155,16 +155,22 @@ func main() {
 
 	r.GET("/organizers/golang/companies/ukraine", organizerController.GolangCompaniesUkraine)
 	r.GET("/organizers/golang/companies", organizerController.Companies)
+	r.GET("/organizers/golang/companies/:company_alias", organizerController.Company)
 	r.GET("/organizers/golang/vacancies", organizerController.Waitlist)
 	r.GET("/organizers/rust/companies", organizerController.Companies)
+	r.GET("/organizers/rust/companies/:company_alias", organizerController.Company)
 	r.GET("/organizers/rust/vacancies", organizerController.Waitlist)
 	r.GET("/organizers/zig/companies", organizerController.Waitlist)
+	r.GET("/organizers/zig/companies/:company_alias", organizerController.Company)
 	r.GET("/organizers/zig/vacancies", organizerController.Waitlist)
 	r.GET("/organizers/scala/companies", organizerController.Waitlist)
+	r.GET("/organizers/scala/companies/:company_alias", organizerController.Company)
 	r.GET("/organizers/scala/vacancies", organizerController.Waitlist)
 	r.GET("/organizers/elixir/companies", organizerController.Waitlist)
+	r.GET("/organizers/elixir/companies/:company_alias", organizerController.Company)
 	r.GET("/organizers/elixir/vacancies", organizerController.Waitlist)
 	r.GET("/organizers/clojure/companies", organizerController.Waitlist)
+	r.GET("/organizers/clojure/companies/:company_alias", organizerController.Company)
 	r.GET("/organizers/clojure/vacancies", organizerController.Waitlist)
 
 	r.GET("/organizers/golang", found("/organizers/golang/companies"))
@@ -206,6 +212,7 @@ func main() {
 		StaticFile("/design/organizers/golang/vacancies", "./public/design/organizer-vacancies-subscribe.html").
 		StaticFile("/design/organizers/golang/vacancies/subscribe", "./public/design/organizer-vacancies-subscribe.html").
 		StaticFile("/design/organizers/golang/vacancies/unsubscribe", "./public/design/organizer-vacancies-unsubscribe.html").
+		GET("/design/organizers/golang/:company_alias", s("./public/design/organizer-statistics.html")).
 
 		// Design from ChatGPT
 		StaticFile("/design/wip/companies-and-connections", "./public/chatgpt-design/companies-and-connections.html").
@@ -302,5 +309,11 @@ func redirectFromWWW() gin.HandlerFunc {
 func found(path string) gin.HandlerFunc {
 	return func(c *gin.Context) {
 		c.Redirect(http.StatusFound, path)
+	}
+}
+
+func s(path string) gin.HandlerFunc {
+	return func(ctx *gin.Context) {
+		ctx.File(path)
 	}
 }
