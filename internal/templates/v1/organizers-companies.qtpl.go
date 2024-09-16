@@ -177,8 +177,26 @@ func StreamOrganizersCompanies(qw422016 *qt422016.Writer,
       `)
 	qw422016.N().S(`
 
-      `)
+      <!-- Other -->
+      <div class="filters__group">
+        <header class="filters__header">
+          <h4 class="filters__headline">Other</h4>
+        </header>
+        <div class="filters__elements">
+          `)
 	qw422016.N().S(`
+          <label class="checkbox filters__element">
+            <input id="js-criteria-in-favorites" class="checkbox__input" type="checkbox" />
+            <span class="checkbox__element"></span>
+            Favorites
+          </label>
+          `)
+	qw422016.N().S(`
+        </div>
+      </div>
+
+      <!-- /Other -->
+
     </div>
   </div>
 </aside>

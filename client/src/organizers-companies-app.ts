@@ -1,7 +1,11 @@
 import {welcome} from "./welcome";
 
 import urlStateContainer from "./framework/company_url_state_container";
-import {COMPANY_SEARCH_QUERY, COMPANY_TYPE_CRITERIA_NAME} from "./framework/company_criteria_names";
+import {
+    COMPANY_SEARCH_QUERY,
+    COMPANY_TYPE_CRITERIA_NAME,
+    COMPANY_IN_FAVORITES_CRITERIA_NAME,
+} from "./framework/company_criteria_names";
 import {InputCheckboxes} from "./framework/checkboxes";
 import {companyTypes} from "./framework/company_types";
 import {htmlToNode} from "./framework/html";
@@ -56,12 +60,23 @@ $companies.forEach(function ($company: HTMLElement) {
 
 
 const $search = document.getElementById("js-company-query") as HTMLInputElement;
-const $companyTypeCheckboxes = new InputCheckboxes(document.querySelectorAll("input.js-criteria-company-type") as any as Array<HTMLInputElement>);
+const $typeCheckboxes = new InputCheckboxes(document.querySelectorAll("input.js-criteria-company-type") as any as Array<HTMLInputElement>);
+const $inFavoritesCheckbox = document.getElementById("js-criteria-in-favorites") as HTMLInputElement;
 const $selectedCriteria = document.getElementById("js-company-selected-criteria");
 const $reset = document.getElementById("js-criteria-reset");
 
-$companyTypeCheckboxes.onChange(function (state: Array<string>) {
+$typeCheckboxes.onChange(function (state: Array<string>) {
     urlStateContainer.setArrayCriteria(COMPANY_TYPE_CRITERIA_NAME, state);
+    urlStateContainer.setPage(1);
+    urlStateContainer.storeCurrentState();
+
+    renderSelectedCriteriaByURL();
+
+    search();
+});
+
+$inFavoritesCheckbox.addEventListener("change", function () {
+    urlStateContainer.setBoolCriteria(COMPANY_IN_FAVORITES_CRITERIA_NAME, $inFavoritesCheckbox.checked);
     urlStateContainer.setPage(1);
     urlStateContainer.storeCurrentState();
 
@@ -73,18 +88,22 @@ $companyTypeCheckboxes.onChange(function (state: Array<string>) {
 const {
     setInputStateByURL,
     setCheckboxesStateByURL,
+    setCheckboxStateByURL,
 } = setStateByURLMapper(urlStateContainer);
 
 function setStateByURL() {
     setInputStateByURL($search, COMPANY_SEARCH_QUERY);
 
-    setCheckboxesStateByURL($companyTypeCheckboxes, COMPANY_TYPE_CRITERIA_NAME);
+    setCheckboxesStateByURL($typeCheckboxes, COMPANY_TYPE_CRITERIA_NAME);
+
+    setCheckboxStateByURL($inFavoritesCheckbox, COMPANY_IN_FAVORITES_CRITERIA_NAME);
 }
 
 function renderSelectedCriteriaByURL() {
     const $views: Array<HTMLElement> = [];
 
     renderSelectedCheckboxes($views, COMPANY_TYPE_CRITERIA_NAME, companyTypes);
+    renderSelectedCheckbox($views, COMPANY_IN_FAVORITES_CRITERIA_NAME, "Favorites");
 
     $selectedCriteria.innerHTML = "";
     $selectedCriteria.append(...$views);
@@ -114,6 +133,24 @@ function renderSelectedCheckboxes(
 
         $views.push($view);
     });
+}
+
+function renderSelectedCheckbox($views: Array<HTMLElement>, criteriaName: string, title: string) {
+    const checked = urlStateContainer.getCriteria(criteriaName, false);
+
+    if (checked) {
+        const $view = htmlToNode(renderSelected(title));
+
+        firstQuerySelector($view, "button").addEventListener("click", function () {
+            urlStateContainer.remove(criteriaName);
+            urlStateContainer.setPage(1);
+            urlStateContainer.storeCurrentState();
+
+            updatePageState();
+        });
+
+        $views.push($view);
+    }
 }
 
 const handleSearch = function () {
@@ -148,6 +185,7 @@ function updatePageState() {
 function search() {
     const query = $search.value.trim().toLowerCase();
     const types = urlStateContainer.getCriteria(COMPANY_TYPE_CRITERIA_NAME, []);
+    const inFavorites = urlStateContainer.getCriteria(COMPANY_IN_FAVORITES_CRITERIA_NAME, false);
 
     const match = function ($company: HTMLElement): boolean {
         if (query.length > 0 && $company.getAttribute("data-company-name").toLowerCase().indexOf(query) === -1) {
@@ -156,6 +194,15 @@ function search() {
 
         if (types.length > 0 && types.indexOf($company.getAttribute("data-company-type")) === -1) {
             return false;
+        }
+
+        if (inFavorites) {
+            const $favorite = $company.querySelector(".js-company-favorite");
+            const current = $favorite.classList.contains("in-favorite");
+
+            if (!current) {
+                return false;
+            }
         }
 
         return true;

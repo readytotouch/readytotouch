@@ -182,14 +182,13 @@
       <!-- /Direction -->
       {% endcomment %}
 
-      {% comment %}
-      <!-- TODO -->
       <!-- Other -->
       <div class="filters__group">
         <header class="filters__header">
           <h4 class="filters__headline">Other</h4>
         </header>
         <div class="filters__elements">
+          {% comment %}
           <label class="checkbox filters__element">
             <input class="checkbox__input" type="checkbox" />
             <span class="checkbox__element"></span>
@@ -202,11 +201,13 @@
               src="/assets/images/pages/online-new/ua_flag_with_waves.svg"
             />
           </label>
+          {% endcomment %}
           <label class="checkbox filters__element">
-            <input class="checkbox__input" type="checkbox" />
+            <input id="js-criteria-in-favorites" class="checkbox__input" type="checkbox" />
             <span class="checkbox__element"></span>
             Favorites
           </label>
+          {% comment %}
           <div class="switch-wrapper filters__element">
             <label class="switch">
               <input type="checkbox" name="active_search" id="active_search" class="switch__input" />
@@ -222,11 +223,12 @@
               src="/assets/images/pages/common/info.svg"
             />
           </div>
+          {% endcomment %}
         </div>
       </div>
 
       <!-- /Other -->
-      {% endcomment %}
+
     </div>
   </div>
 </aside>
