@@ -7,7 +7,8 @@ func Companies() []domain.Company {
 		// Favorites
 		// Favorites | ReadyToTouch
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "ReadyToTouch",
 			URL:  "https://readytotouch.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -22,11 +23,13 @@ func Companies() []domain.Company {
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
 			Vacancies:         domain.Vacancies{},
+			ShortDescription:  "", // @TODO for Mykhailo
 		},
 
 		// Favorites | DocHQ
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "DocHQ",
 			URL:  "https://dochq.co.uk/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -54,12 +57,14 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "DocHQ is a Health Tech company",
 		},
 
 		// BigTech
 		// BigTech | Google
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Google",
 			URL:  "https://www.google.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -87,11 +92,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// BigTech | Mozilla
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Mozilla",
 			URL:  "https://www.mozilla.org/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -123,11 +130,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// BigTech | Microsoft
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Microsoft",
 			URL:  "https://www.microsoft.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -158,11 +167,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// BigTech | IBM
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "IBM",
 			URL:  "https://www.ibm.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -192,12 +203,14 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Social
 		// Social | GitHub
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "GitHub",
 			URL:  "https://github.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -227,11 +240,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Social | LinkedIn
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "LinkedIn",
 			URL:  "https://www.linkedin.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -264,11 +279,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Social | Reddit
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Reddit",
 			URL:  "https://www.reddit.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -298,11 +315,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Social | Medium
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Medium",
 			URL:  "https://medium.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -332,11 +351,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Social | Pinterest
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Pinterest",
 			URL:  "https://www.pinterest.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -366,11 +387,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Social | Snap
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Snap",
 			URL:  "https://snap.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -400,6 +423,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Social | BeReal.
@@ -426,7 +450,8 @@ func Companies() []domain.Company {
 		// Favorites
 		// Favorites | VictoriaMetrics
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "VictoriaMetrics",
 			URL:  "https://victoriametrics.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -454,11 +479,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Favorites | Grammarly
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Grammarly",
 			URL:  "https://www.grammarly.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -488,12 +515,14 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Tech
 		// Tech | Netlify
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Netlify",
 			URL:  "https://www.netlify.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -523,11 +552,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Tech | Docker
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Docker",
 			URL:  "https://www.docker.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -555,11 +586,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Tech | Grafana Labs
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Grafana Labs",
 			URL:  "https://grafana.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -587,11 +620,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Tech | HashiCorp
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "HashiCorp",
 			URL:  "https://www.hashicorp.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -619,11 +654,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Tech | CrowdStrike
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "CrowdStrike",
 			URL:  "https://www.crowdstrike.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -653,11 +690,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Tech | Cockroach Labs
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Cockroach Labs",
 			URL:  "https://www.cockroachlabs.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -687,11 +726,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Tech | Timescale
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Timescale",
 			URL:  "https://www.timescale.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -721,11 +762,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Tech | ScyllaDB
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "ScyllaDB",
 			URL:  "https://www.scylladb.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -755,11 +798,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Tech | Percona
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Percona",
 			URL:  "https://www.percona.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -789,11 +834,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Tech | Elastic
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Elastic",
 			URL:  "https://www.elastic.co/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -823,11 +870,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Tech | FerretDB
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "FerretDB",
 			URL:  "https://www.ferretdb.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -855,11 +904,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Tech | DigitalOcean
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "DigitalOcean",
 			URL:  "https://www.digitalocean.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -889,11 +940,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Tech | Canonical
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Canonical",
 			URL:  "https://canonical.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -921,11 +974,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Tech | Kong
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Kong",
 			URL:  "https://konghq.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -955,11 +1010,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Tech | Exasol
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Exasol",
 			URL:  "https://www.exasol.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -989,11 +1046,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Tech | Palantir
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Palantir",
 			URL:  "https://www.palantir.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1021,12 +1080,14 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// FinTech
 		// FinTech | Wise
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Wise",
 			URL:  "https://wise.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1056,11 +1117,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// FinTech | American Express
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "American Express",
 			URL:  "https://www.americanexpress.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1090,11 +1153,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// FinTech | Mastercard
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Mastercard",
 			URL:  "https://www.mastercard.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1125,11 +1190,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// FinTech | Monzo
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Monzo",
 			URL:  "https://monzo.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1159,11 +1226,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// FinTech | Cynergy Bank
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Cynergy Bank",
 			URL:  "https://www.cynergybank.co.uk/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1194,11 +1263,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// FinTech | Atom bank
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Atom bank",
 			URL:  "https://www.atombank.co.uk/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1228,11 +1299,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// FinTech | Citi
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Citi",
 			URL:  "https://www.citi.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1262,12 +1335,14 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Internet
 		// Internet Bitly
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Bitly",
 			URL:  "https://bitly.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1295,11 +1370,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Internet Cloudflare
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Cloudflare",
 			URL:  "https://www.cloudflare.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1333,11 +1410,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Internet Namecheap
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Namecheap",
 			URL:  "https://www.namecheap.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1367,11 +1446,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Internet GoDaddy
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "GoDaddy",
 			URL:  "https://www.godaddy.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1401,12 +1482,14 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Security
 		// Security 1Password
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "1Password",
 			URL:  "https://1password.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1436,11 +1519,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Security Okta
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Okta",
 			URL:  "https://www.okta.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1471,11 +1556,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Security Nord Security
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Nord Security",
 			URL:  "https://nordsecurity.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1506,11 +1593,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Security Proton
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Proton",
 			URL:  "https://proton.me/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1541,11 +1630,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Security Fortinet
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Fortinet",
 			URL:  "https://www.fortinet.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1575,11 +1666,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Security SentinelOne
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "SentinelOne",
 			URL:  "https://www.sentinelone.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1609,12 +1702,14 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Famous
 		// Famous Uber
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Uber",
 			URL:  "https://www.uber.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1642,11 +1737,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Famous Siemens
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Siemens",
 			URL:  "https://www.siemens.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1679,11 +1776,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Famous SoundCloud
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "SoundCloud",
 			URL:  "https://soundcloud.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1713,11 +1812,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Famous DoorDash
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "DoorDash",
 			URL:  "https://doordash.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1745,6 +1846,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Famous Sixt
@@ -1770,7 +1872,8 @@ func Companies() []domain.Company {
 
 		// Famous Motorola Solutions
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Motorola Solutions",
 			URL:  "https://www.motorolasolutions.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1800,11 +1903,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Famous Samsung
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Samsung",
 			URL:  "https://www.samsung.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1837,11 +1942,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Famous Salesforge
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Salesforge",
 			URL:  "https://www.salesforge.ai/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1871,12 +1978,14 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some
 		// Some | Careem
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Careem",
 			URL:  "https://www.careem.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1904,11 +2013,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Dailymotion
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Dailymotion",
 			URL:  "https://www.dailymotion.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1936,11 +2047,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Stream
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Stream",
 			URL:  "https://getstream.io/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1970,11 +2083,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Workato
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Workato",
 			URL:  "https://www.workato.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2002,11 +2117,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Form3
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Form3",
 			URL:  "https://www.form3.tech/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2036,11 +2153,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Assertive Yield
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Assertive Yield",
 			URL:  "https://www.assertiveyield.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2068,11 +2187,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Splunk
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Splunk",
 			URL:  "https://www.splunk.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2102,11 +2223,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | 90POE
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "90POE",
 			URL:  "https://www.90poe.io/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2134,11 +2257,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | HelloFresh
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "HelloFresh",
 			URL:  "https://www.hellofresh.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2166,11 +2291,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | AUTODOC
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "AUTODOC",
 			URL:  "https://autodoc.group/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2198,11 +2325,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Gymondo
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Gymondo",
 			URL:  "https://www.gymondo.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2230,11 +2359,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Delivery Hero
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Delivery Hero",
 			URL:  "https://www.deliveryhero.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2264,11 +2395,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Weaviate
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Weaviate",
 			URL:  "https://weaviate.io/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2296,11 +2429,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Fubo
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Fubo",
 			URL:  "https://www.fubo.tv/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2328,11 +2463,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Yassir
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Yassir",
 			URL:  "https://yassir.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2360,11 +2497,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Vio.com
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Vio.com",
 			URL:  "https://www.vio.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2392,11 +2531,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Vodeno
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Vodeno",
 			URL:  "https://vodeno.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2426,11 +2567,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Utility Warehouse
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Utility Warehouse",
 			URL:  "https://uw.co.uk/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2458,11 +2601,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Codenotary
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Codenotary",
 			URL:  "https://codenotary.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2490,6 +2635,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Audigent
@@ -2515,7 +2661,8 @@ func Companies() []domain.Company {
 
 		// Some | runZero
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "runZero",
 			URL:  "https://www.runzero.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2543,11 +2690,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Tyk
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Tyk",
 			URL:  "https://tyk.io/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2575,11 +2724,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | OpenTag
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "OpenTag",
 			URL:  "https://theopentag.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2607,11 +2758,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Oxla
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Oxla",
 			URL:  "https://oxla.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2641,11 +2794,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Lightspeed
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Lightspeed",
 			URL:  "https://www.lightspeedhq.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2675,11 +2830,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Squarespace
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Squarespace",
 			URL:  "https://www.squarespace.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2709,11 +2866,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Curve
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Curve",
 			URL:  "https://curve.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2743,11 +2902,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Tradevest
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Tradevest",
 			URL:  "https://www.tradevest.ai/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2777,11 +2938,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Woolsocks
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Woolsocks",
 			URL:  "https://woolsocks.eu/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2812,11 +2975,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Applied Systems Canada
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Applied Systems Canada",
 			URL:  "https://www.appliedsystems.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2846,11 +3011,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Autodesk
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Autodesk",
 			URL:  "https://www.autodesk.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2880,11 +3047,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Vonage
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Vonage",
 			URL:  "https://www.vonage.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2916,11 +3085,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | OpenWeb
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "OpenWeb",
 			URL:  "https://www.openweb.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2950,11 +3121,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Arenko
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Arenko",
 			URL:  "https://arenko.group/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2985,11 +3158,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Xata
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Xata",
 			URL:  "https://xata.io/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3019,11 +3194,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Dojo
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Dojo",
 			URL:  "https://dojo.careers/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3055,11 +3232,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Unnax
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Unnax",
 			URL:  "https://www.unnax.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3089,11 +3268,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | AB Tasty
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "AB Tasty",
 			URL:  "https://www.abtasty.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3124,11 +3305,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Firebolt
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Firebolt",
 			URL:  "https://www.firebolt.io/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3158,11 +3341,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Nine
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Nine",
 			URL:  "https://www.nineforbrands.com.au/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3192,11 +3377,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Isovalent
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Isovalent",
 			URL:  "https://isovalent.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3226,11 +3413,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | ABC Fitness
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "ABC Fitness",
 			URL:  "https://abcfitness.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3260,11 +3449,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Device42
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Device42",
 			URL:  "https://www.device42.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3294,11 +3485,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Acronis
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Acronis",
 			URL:  "https://www.acronis.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3328,11 +3521,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Gcore
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Gcore",
 			URL:  "https://gcore.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3362,11 +3557,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Zep AI
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Zep AI",
 			URL:  "https://www.getzep.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3396,11 +3593,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Gelato
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Gelato",
 			URL:  "https://www.gelato.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3430,11 +3629,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | SumUp
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "SumUp",
 			URL:  "https://www.sumup.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3464,11 +3665,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Level Home
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Level Home",
 			URL:  "https://level.co/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3498,11 +3701,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | SonicWall
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "SonicWall",
 			URL:  "https://www.sonicwall.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3532,11 +3737,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Pindrop
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Pindrop",
 			URL:  "https://www.pindrop.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3566,11 +3773,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Seedtag
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Seedtag",
 			URL:  "https://www.seedtag.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3600,11 +3809,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Flix
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Flix",
 			URL:  "https://www.flixbus.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3634,11 +3845,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Press Ganey
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Press Ganey",
 			URL:  "https://www.pressganey.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3668,11 +3881,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Atmail
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Atmail",
 			URL:  "https://www.atmail.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3702,11 +3917,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Dusty Robotics
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Dusty Robotics",
 			URL:  "https://www.dustyrobotics.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3737,11 +3954,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Cimri
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Cimri",
 			URL:  "https://www.cimri.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3771,11 +3990,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Quadcode
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Quadcode",
 			URL:  "https://quadcode.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3805,11 +4026,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | FinCompare
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "FinCompare",
 			URL:  "https://fincompare.de/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3839,11 +4062,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Mellifera
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Mellifera",
 			URL:  "https://mellifera.team/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3874,11 +4099,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | BNP Paribas - Securities Services
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "BNP Paribas - Securities Services",
 			URL:  "https://securities.cib.bnpparibas/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3908,11 +4135,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Apifonica
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Apifonica",
 			URL:  "https://www.apifonica.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3942,11 +4171,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Cybus
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Cybus",
 			URL:  "https://www.cybus.io/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3976,11 +4207,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Flink
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Flink",
 			URL:  "https://www.goflink.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4010,11 +4243,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Greenbone
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Greenbone",
 			URL:  "https://www.greenbone.net/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4044,11 +4279,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | OLX
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "OLX",
 			URL:  "https://www.olxgroup.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4078,11 +4315,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Snyk
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Snyk",
 			URL:  "https://snyk.io/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4113,11 +4352,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Sinch
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Sinch",
 			URL:  "https://www.sinch.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4147,11 +4388,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | FOX Tech
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "FOX Tech",
 			URL:  "https://tech.fox.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4181,11 +4424,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | SailPoint
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "SailPoint",
 			URL:  "https://www.sailpoint.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4215,11 +4460,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Proofpoint
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Proofpoint",
 			URL:  "https://www.proofpoint.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4249,11 +4496,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Asset Reality
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Asset Reality",
 			URL:  "https://www.assetreality.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4283,11 +4532,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Limango
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Limango",
 			URL:  "https://www.limango.pl/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4317,11 +4568,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | RxBenefits
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "RxBenefits",
 			URL:  "https://www.rxbenefits.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4351,11 +4604,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | SmithRx
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "SmithRx",
 			URL:  "https://www.smithrx.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4385,11 +4640,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | k-ID
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "k-ID",
 			URL:  "https://www.k-id.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4419,11 +4676,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | CAFU
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "CAFU",
 			URL:  "https://www.cafu.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4453,11 +4712,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Rollee
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Rollee",
 			URL:  "https://www.getrollee.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4488,11 +4749,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Net2Phone
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Net2Phone",
 			URL:  "https://www.net2phone.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4522,11 +4785,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Ola Chat
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Ola Chat",
 			URL:  "https://olachat.sg/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4556,11 +4821,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Veracity Software Inc
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Veracity Software Inc",
 			URL:  "https://veracity-us.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4590,11 +4857,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Treecard
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Treecard",
 			URL:  "https://www.treecard.org/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4624,11 +4893,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Openprovider
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Openprovider",
 			URL:  "https://www.openprovider.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4658,11 +4929,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | fiskaly
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "fiskaly",
 			URL:  "https://www.fiskaly.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4692,11 +4965,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Vay
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Vay",
 			URL:  "https://vay.io/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4726,11 +5001,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Voltus
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Voltus",
 			URL:  "https://www.voltus.co/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4760,11 +5037,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Stonebranch
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Stonebranch",
 			URL:  "https://www.stonebranch.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4794,11 +5073,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Rapid7
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Rapid7",
 			URL:  "https://www.rapid7.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4828,11 +5109,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Toggle AI
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Toggle AI",
 			URL:  "https://toggle.ai/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4862,11 +5145,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | hearX Group
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "hearX Group",
 			URL:  "https://www.hearxgroup.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4896,11 +5181,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | MarkiTech.AI
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "MarkiTech.AI",
 			URL:  "https://markitech.ca/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4930,11 +5217,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Lantronix
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Lantronix",
 			URL:  "https://www.lantronix.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4964,11 +5253,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | INFOLOB
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "INFOLOB",
 			URL:  "https://www.infolob.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4998,11 +5289,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Argela Technologies
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Argela Technologies",
 			URL:  "https://www.argela.com.tr/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5032,11 +5325,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Top Doctors
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Top Doctors",
 			URL:  "https://topdoctors.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5066,11 +5361,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Recurly
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Recurly",
 			URL:  "https://recurly.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5100,11 +5397,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Cynet Systems
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Cynet Systems",
 			URL:  "https://www.cynetsystems.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5134,11 +5433,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Odyssey Information Services
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Odyssey Information Services",
 			URL:  "https://www.odysseyis.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5168,11 +5469,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Infomatics Corp
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Infomatics Corp",
 			URL:  "https://infomaticscorp.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5202,11 +5505,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Mindera
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Mindera",
 			URL:  "https://mindera.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5236,11 +5541,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Sytac
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Sytac",
 			URL:  "https://sytac.io/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5270,11 +5577,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Qumulus Cloud Platform
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Qumulus Cloud Platform",
 			URL:  "https://www.qumulus.io/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5304,11 +5613,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Saxon AI
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Saxon AI",
 			URL:  "https://saxon.ai/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5338,11 +5649,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Dyninno Group
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Dyninno Group",
 			URL:  "https://dyninno.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5372,6 +5685,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// TODO solve alias later "holland-&-barrett"
@@ -5411,7 +5725,8 @@ func Companies() []domain.Company {
 
 		// Some | Group Avows
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Group Avows",
 			URL:  "https://avowstech.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5441,11 +5756,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Cognizant
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Cognizant",
 			URL:  "https://www.cognizant.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5475,11 +5792,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Nuro
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Nuro",
 			URL:  "https://www.nuro.ai/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5509,11 +5828,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | CloudWalk
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "CloudWalk",
 			URL:  "https://cloudwalk.io/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5543,11 +5864,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Transition Technologies PSC
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Transition Technologies PSC",
 			URL:  "https://ttpsc.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5577,11 +5900,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Kroger
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Kroger",
 			URL:  "https://www.kroger.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5611,11 +5936,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Precisely
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Precisely",
 			URL:  "https://www.precisely.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5645,11 +5972,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | R Systems
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "R Systems",
 			URL:  "https://www.rsystems.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5679,11 +6008,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Hays
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Hays",
 			URL:  "https://www.haysplc.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5713,11 +6044,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Consort Group
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Consort Group",
 			URL:  "https://consort-group.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5747,11 +6080,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Ascendion
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Ascendion",
 			URL:  "https://ascendion.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5781,11 +6116,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Checkout.com
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Checkout.com",
 			URL:  "https://www.checkout.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5815,11 +6152,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Unlimit
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Unlimit",
 			URL:  "https://www.unlimit.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5849,11 +6188,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Chime
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Chime",
 			URL:  "https://www.chime.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5883,11 +6224,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Collective Minds Radiology
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Collective Minds Radiology",
 			URL:  "https://cmrad.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5915,11 +6258,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Cruise
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Cruise",
 			URL:  "https://www.getcruise.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5949,11 +6294,13 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Some | Compass
 		{
-			ID:   0,
+			ID:   0,  // system
+			Type: "", // system
 			Name: "Compass",
 			URL:  "https://www.compass.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5983,6 +6330,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			ShortDescription: "", // @TODO for Mykhailo
 		},
 
 		// Template
@@ -6015,7 +6363,7 @@ func Companies() []domain.Company {
 		//		domain.Clojure: nil,
 		//		domain.Haskell: nil,
 		//	},
-		//
+		//	ShortDescription: "",
 		//},
 	}
 }

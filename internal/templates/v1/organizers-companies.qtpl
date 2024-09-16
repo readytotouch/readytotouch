@@ -316,11 +316,7 @@
                 </figure>
                 {% endcomment %}
               </div>
-              <p class="card__text">
-                {% comment %}
-                  <!-- @TODO {%s company.Description %} -->
-                {% endcomment %}
-              </p>
+              <p class="js-company-description card__text">{%s company.ShortDescription %}</p>
               <div class="card__links">
                 <ul class="card__links-group">
                   <li class="card__links-item">

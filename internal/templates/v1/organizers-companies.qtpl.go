@@ -295,10 +295,9 @@ func StreamOrganizersCompanies(qw422016 *qt422016.Writer,
                 `)
 		qw422016.N().S(`
               </div>
-              <p class="card__text">
-                `)
-		qw422016.N().S(`
-              </p>
+              <p class="js-company-description card__text">`)
+		qw422016.E().S(company.ShortDescription)
+		qw422016.N().S(`</p>
               <div class="card__links">
                 <ul class="card__links-group">
                   <li class="card__links-item">

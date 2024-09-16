@@ -187,8 +187,24 @@ function search() {
     const types = urlStateContainer.getCriteria(COMPANY_TYPE_CRITERIA_NAME, []);
     const inFavorites = urlStateContainer.getCriteria(COMPANY_IN_FAVORITES_CRITERIA_NAME, false);
 
+    const matchQuery = function ($company: HTMLElement): boolean {
+        if (query.length === 0) {
+            return true;
+        }
+
+        if ($company.getAttribute("data-company-name").toLowerCase().indexOf(query) !== -1) {
+            return true;
+        }
+
+        if ($company.querySelector(".js-company-description").textContent.toLowerCase().indexOf(query) !== -1) {
+            return true;
+        }
+
+        return false;
+    }
+
     const match = function ($company: HTMLElement): boolean {
-        if (query.length > 0 && $company.getAttribute("data-company-name").toLowerCase().indexOf(query) === -1) {
+        if (!matchQuery($company)) {
             return false;
         }
 
