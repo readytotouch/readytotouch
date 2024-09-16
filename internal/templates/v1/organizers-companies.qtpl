@@ -91,14 +91,14 @@
     </div>
 
     <div class="filters">
-      <!-- English level -->
+      <!-- Company type -->
       <div class="filters__group">
         <header class="filters__header">
-          <h4 class="filters__headline">Project type</h4>
+          <h4 class="filters__headline">Company type</h4>
         </header>
         <div class="filters__elements">
           <label class="checkbox filters__element">
-            <input checked class="checkbox__input" type="checkbox" />
+            <input class="checkbox__input" type="checkbox" />
             <span class="checkbox__element"></span>
             Product
           </label>
@@ -109,7 +109,9 @@
           </label>
         </div>
       </div>
-      <!-- /English level -->
+
+      {% comment %}
+      <!-- TODO -->
 
       <!-- Direction -->
       <div class="filters__group">
@@ -173,8 +175,11 @@
         </div>
       </div>
       <!-- /Direction -->
+      {% endcomment %}
 
-      <!-- Company type -->
+      {% comment %}
+      <!-- TODO -->
+      <!-- Other -->
       <div class="filters__group">
         <header class="filters__header">
           <h4 class="filters__headline">Other</h4>
@@ -214,6 +219,9 @@
           </div>
         </div>
       </div>
+
+      <!-- /Other -->
+      {% endcomment %}
     </div>
   </div>
 </aside>
@@ -237,6 +245,7 @@
         />
       </button>
     </li>
+    {% comment %}
     <li class="filter-used__item">
       EdTech
       <button class="filter-used__link" type="button">
@@ -270,6 +279,7 @@
         />
       </button>
     </li>
+    {% endcomment %}
   </ul>
 </div>
 <!-- /selected filters -->
@@ -279,7 +289,10 @@
           <!-- card list -->
           <div class="search-result__cards row-gap-8 mt-24">
             {% for _, company := range companies %}
-            <div class="js-company card" data-company-id="{%dl company.ID %}">
+            <div class="js-company card"
+                 data-company-id="{%dl company.ID %}"
+                 data-company-type="{%s string(company.Type) %}"
+            >
               <aside class="card__action">
                 {% if userCompanyFavoriteMap[company.ID] %}
                   <button class="js-company-favorite favorite card__action-button button-group__item in-favorite" title="Remove from favorites">
@@ -329,7 +342,7 @@
                     height="16"
                     src="/assets/images/pages/vacancy/building.svg"
                   />
-                  <figcaption class="card__figcaption">Product|Startup</figcaption>
+                  <figcaption class="card__figcaption">{%s companyTypeName[company.Type] %}</figcaption>
                 </figure>
                 <figure class="card__figure">
                   <img

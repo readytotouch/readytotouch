@@ -4,182 +4,183 @@ package organizers
 
 var (
 	CompanyAliasMap = map[string]int64{
-		"readytotouch":                 1,
-		"dochq":                        2,
-		"google":                       3,
-		"mozilla-corporation":          4,
-		"microsoft":                    5,
-		"ibm":                          6,
-		"github":                       7,
-		"linkedin":                     8,
-		"reddit-com":                   9,
-		"medium-com":                   10,
-		"pinterest":                    11,
-		"snap-inc-co":                  12,
-		"bereal-app":                   13,
-		"victoriametrics":              14,
-		"grammarly":                    15,
-		"netlify":                      16,
-		"docker":                       17,
-		"grafana-labs":                 18,
-		"hashicorp":                    19,
-		"crowdstrike":                  20,
-		"cockroach-labs":               21,
-		"timescaledb":                  22,
-		"scylladb":                     23,
-		"percona":                      24,
-		"elastic-co":                   25,
-		"ferretdb":                     26,
-		"digitalocean":                 27,
-		"canonical":                    28,
-		"konghq":                       29,
-		"exasol-ag":                    30,
-		"palantir-technologies":        31,
-		"wiseaccount":                  32,
-		"american-express":             33,
-		"mastercard":                   34,
-		"monzo-bank":                   35,
-		"cynergy-bank":                 36,
-		"atom-bank":                    37,
-		"citi":                         38,
-		"bitly":                        39,
-		"cloudflare":                   40,
-		"namecheap-inc":                41,
-		"godaddy":                      42,
-		"1password":                    43,
-		"okta-inc-":                    44,
-		"nordsecurity":                 45,
-		"protonprivacy":                46,
-		"fortinet":                     47,
-		"sentinelone":                  48,
-		"uber-com":                     49,
-		"siemens":                      50,
-		"soundcloud":                   51,
-		"doordash":                     52,
-		"sixt":                         53,
-		"motorolasolutions":            54,
-		"samsung-electronics":          55,
-		"salesforgeai":                 56,
-		"careem":                       57,
-		"dailymotion":                  58,
-		"getstream":                    59,
-		"workato":                      60,
-		"form3-financial-cloud":        61,
-		"assertive-yield":              62,
-		"splunk":                       63,
-		"90poe":                        64,
-		"hellofresh":                   65,
-		"autodoc":                      66,
-		"gymondo-gmbh":                 67,
-		"delivery-hero-se":             68,
-		"weaviate-io":                  69,
-		"fubotv":                       70,
-		"yassir":                       71,
-		"viodotcom":                    72,
-		"vodeno":                       73,
-		"utilitywarehouse":             74,
-		"codenotary":                   75,
-		"audigent":                     76,
-		"runzero":                      77,
-		"tyk":                          78,
-		"theopentag":                   79,
-		"oxla":                         80,
-		"lightspeedcommerce":           81,
-		"squarespace":                  82,
-		"curve-ltd":                    83,
-		"tradevestgmbh":                84,
-		"woolsocks":                    85,
-		"applied-systems-canada":       86,
-		"autodesk":                     87,
-		"vonage":                       88,
-		"openwebhq":                    89,
-		"arenko-cleantech":             90,
-		"xataio":                       91,
-		"dojo-tech":                    92,
-		"unnax-emi":                    93,
-		"ab-tasty":                     94,
-		"Firebolt":                     95,
-		"nine-entertainment-co.":       96,
-		"isovalent":                    97,
-		"abc-fitness":                  98,
-		"device42":                     99,
-		"acronis":                      100,
-		"g-core":                       101,
-		"zep-ai":                       102,
-		"gelato":                       103,
-		"sumup":                        104,
-		"levelhome":                    105,
-		"sonicwall":                    106,
-		"pindrop":                      107,
-		"seedtag":                      108,
-		"flixbus":                      109,
-		"press-ganey-associates":       110,
-		"atmail":                       111,
-		"dusty-robotics":               112,
-		"cimri":                        113,
-		"quadcodecareer":               114,
-		"fincompare":                   115,
-		"mellifera-operations-limited": 116,
-		"bnpparibassecuritiesservices": 117,
-		"apifonica":                    118,
-		"cybus":                        119,
-		"goflink":                      120,
-		"greenbone-networks-gmbh":      121,
-		"olx-group":                    122,
-		"snyk":                         123,
-		"sinch":                        124,
-		"foxtechteam":                  125,
-		"sailpoint-technologies":       126,
-		"proofpoint":                   127,
-		"asset-reality":                128,
-		"limango-sp-z-o-o-":            129,
-		"rxbenefits-inc-":              130,
-		"smithrx":                      131,
-		"k-id":                         132,
-		"mycafu":                       133,
-		"rollee":                       134,
-		"net2phone":                    135,
-		"ola-chat":                     136,
-		"veracitysoftwareinc":          137,
-		"treecardapp":                  138,
-		"openprovider":                 139,
-		"fiskaly":                      140,
-		"vaytechnology":                141,
-		"voltus-inc.":                  142,
-		"stonebranch":                  143,
-		"rapid7":                       144,
-		"toggle-ai":                    145,
-		"hearx-group":                  146,
-		"markitech-ai":                 147,
-		"lantronix":                    148,
-		"infolob-global":               149,
-		"argela-technologies":          150,
-		"top-doctors-europe":           151,
-		"recurly":                      152,
-		"cynet-systems":                153,
-		"odyssey-information-services": 154,
-		"infomatics-corp":              155,
-		"mindera-world":                156,
-		"sytac":                        157,
-		"qumuluscloudplatform":         158,
-		"saxonai":                      159,
-		"dyninno-group":                160,
-		"group-avows":                  161,
-		"cognizant":                    162,
-		"nuro-inc.":                    163,
-		"cloudwalk-inc":                164,
-		"transition-technologies-psc":  165,
-		"kroger":                       166,
-		"preciselydata":                167,
-		"r-systems":                    168,
-		"hays":                         169,
-		"consortgroup":                 170,
-		"ascendion":                    171,
-		"checkout":                     172,
-		"unlimit-com":                  173,
-		"chime-card":                   174,
-		"cmrad":                        175,
-		"getcruise":                    176,
-		"compassinc":                   177,
+		"readytotouch":                 1,   // ReadyToTouch
+		"dochq":                        2,   // DocHQ
+		"google":                       3,   // Google
+		"mozilla-corporation":          4,   // Mozilla
+		"microsoft":                    5,   // Microsoft
+		"ibm":                          6,   // IBM
+		"github":                       7,   // GitHub
+		"linkedin":                     8,   // LinkedIn
+		"reddit-com":                   9,   // Reddit, Inc.
+		"medium-com":                   10,  // Medium
+		"pinterest":                    11,  // Pinterest
+		"snap-inc-co":                  12,  // Snap Inc.
+		"bereal-app":                   13,  // BeReal.
+		"victoriametrics":              14,  // VictoriaMetrics
+		"grammarly":                    15,  // Grammarly
+		"netlify":                      16,  // Netlify
+		"docker":                       17,  // Docker, Inc
+		"grafana-labs":                 18,  // Grafana Labs
+		"hashicorp":                    19,  // HashiCorp
+		"crowdstrike":                  20,  // CrowdStrike
+		"cockroach-labs":               21,  // Cockroach Labs
+		"timescaledb":                  22,  // Timescale
+		"scylladb":                     23,  // ScyllaDB
+		"percona":                      24,  // Percona
+		"elastic-co":                   25,  // Elastic
+		"ferretdb":                     26,  // FerretDB
+		"digitalocean":                 27,  // DigitalOcean
+		"canonical":                    28,  // Canonical
+		"konghq":                       29,  // Kong Inc.
+		"exasol-ag":                    30,  // Exasol
+		"palantir-technologies":        31,  // Palantir Technologies
+		"wiseaccount":                  32,  // Wise
+		"american-express":             33,  // American Express
+		"mastercard":                   34,  // Mastercard
+		"monzo-bank":                   35,  // Monzo Bank
+		"cynergy-bank":                 36,  // Cynergy Bank
+		"atom-bank":                    37,  // Atom bank
+		"citi":                         38,  // Citi
+		"bitly":                        39,  // Bitly
+		"cloudflare":                   40,  // Cloudflare
+		"namecheap-inc":                41,  // Namecheap, Inc
+		"godaddy":                      42,  // GoDaddy
+		"1password":                    43,  // 1Password
+		"okta-inc-":                    44,  // Okta
+		"nordsecurity":                 45,  // Nord Security
+		"protonprivacy":                46,  // Proton
+		"fortinet":                     47,  // Fortinet
+		"sentinelone":                  48,  // SentinelOne
+		"uber-com":                     49,  // Uber
+		"siemens":                      50,  // Siemens
+		"soundcloud":                   51,  // SoundCloud
+		"doordash":                     52,  // DoorDash
+		"sixt":                         53,  // SIXT
+		"motorolasolutions":            54,  // Motorola Solutions
+		"samsung-electronics":          55,  // Samsung Electronics
+		"salesforgeai":                 56,  // Salesforge
+		"careem":                       57,  // Careem
+		"dailymotion":                  58,  // Dailymotion
+		"getstream":                    59,  // Stream
+		"workato":                      60,  // Workato
+		"form3-financial-cloud":        61,  // Form3
+		"assertive-yield":              62,  // Assertive Yield B.V.
+		"splunk":                       63,  // Splunk
+		"90poe":                        64,  // Ninety Percent of Everything (90POE)
+		"hellofresh":                   65,  // HelloFresh
+		"autodoc":                      66,  // AUTODOC
+		"gymondo-gmbh":                 67,  // Gymondo
+		"delivery-hero-se":             68,  // Delivery Hero
+		"weaviate-io":                  69,  // Weaviate
+		"fubotv":                       70,  // Fubo
+		"yassir":                       71,  // Yassir
+		"viodotcom":                    72,  // Vio.com
+		"vodeno":                       73,  // Vodeno
+		"utilitywarehouse":             74,  // Utility Warehouse
+		"codenotary":                   75,  // Codenotary
+		"audigent":                     76,  // Audigent
+		"runzero":                      77,  // runZero
+		"tyk":                          78,  // Tyk
+		"theopentag":                   79,  // OpenTag
+		"oxla":                         80,  // Oxla
+		"lightspeedcommerce":           81,  // Lightspeed Commerce
+		"squarespace":                  82,  // Squarespace
+		"curve-ltd":                    83,  // Curve
+		"tradevestgmbh":                84,  // Tradevest
+		"woolsocks":                    85,  // Woolsocks
+		"applied-systems-canada":       86,  // Applied Systems Canada
+		"autodesk":                     87,  // Autodesk
+		"vonage":                       88,  // Vonage
+		"openwebhq":                    89,  // OpenWeb
+		"arenko-cleantech":             90,  // Arenko
+		"xataio":                       91,  // Xata.io
+		"dojo-tech":                    92,  // Dojo
+		"unnax-emi":                    93,  // Unnax
+		"ab-tasty":                     94,  // AB Tasty
+		"firebolt":                     95,  // Firebolt
+		"nine-entertainment-co.":       96,  // Nine
+		"isovalent":                    97,  // Isovalent
+		"abc-fitness":                  98,  // ABC Fitness
+		"device42":                     99,  // Device42
+		"acronis":                      100, // Acronis
+		"g-core":                       101, // Gcore
+		"zep-ai":                       102, // Zep AI
+		"gelato":                       103, // Gelato
+		"sumup":                        104, // SumUp
+		"levelhome":                    105, // Level Home Inc.
+		"sonicwall":                    106, // SonicWall
+		"pindrop":                      107, // Pindrop
+		"seedtag":                      108, // Seedtag
+		"flixbus":                      109, // Flix
+		"press-ganey-associates":       110, // Press Ganey
+		"atmail":                       111, // Atmail
+		"dusty-robotics":               112, // Dusty Robotics
+		"cimri":                        113, // Cimri
+		"quadcodecareer":               114, // Quadcode
+		"fincompare":                   115, // FinCompare
+		"mellifera-operations-limited": 116, // Mellifera Operations Limited
+		"bnpparibassecuritiesservices": 117, // BNP Paribas - Securities Services
+		"apifonica":                    118, // Apifonica
+		"cybus":                        119, // Cybus
+		"goflink":                      120, // Flink
+		"greenbone-networks-gmbh":      121, // Greenbone AG
+		"olx-group":                    122, // OLX
+		"snyk":                         123, // Snyk
+		"sinch":                        124, // Sinch
+		"foxtechteam":                  125, // FOX Tech
+		"sailpoint-technologies":       126, // SailPoint
+		"proofpoint":                   127, // Proofpoint
+		"asset-reality":                128, // Asset Reality
+		"limango-sp-z-o-o-":            129, // Limango
+		"rxbenefits-inc-":              130, // RxBenefits, Inc.
+		"smithrx":                      131, // SmithRx
+		"k-id":                         132, // k-ID
+		"mycafu":                       133, // CAFU
+		"rollee":                       134, // Rollee
+		"net2phone":                    135, // Net2Phone
+		"ola-chat":                     136, // Ola Chat
+		"veracitysoftwareinc":          137, // Veracity Software Inc
+		"treecardapp":                  138, // Treecard
+		"openprovider":                 139, // Openprovider
+		"fiskaly":                      140, // fiskaly
+		"vaytechnology":                141, // Vay
+		"voltus-inc.":                  142, // Voltus
+		"stonebranch":                  143, // Stonebranch
+		"rapid7":                       144, // Rapid7
+		"toggle-ai":                    145, // Toggle AI
+		"hearx-group":                  146, // hearX Group
+		"markitech-ai":                 147, // MarkiTech.AI
+		"lantronix":                    148, // Lantronix
+		"infolob-global":               149, // INFOLOB
+		"argela-technologies":          150, // Argela Technologies
+		"top-doctors-europe":           151, // Top Doctors
+		"recurly":                      152, // Recurly
+		"cynet-systems":                153, // Cynet Systems
+		"odyssey-information-services": 154, // Odyssey Information Services
+		"infomatics-corp":              155, // Infomatics Corp
+		"mindera-world":                156, // Mindera
+		"sytac":                        157, // Sytac
+		"qumuluscloudplatform":         158, // Qumulus Cloud Platform
+		"saxonai":                      159, // Saxon AI
+		"dyninno-group":                160, // Dyninno Group
+		"group-avows":                  161, // Group Avows
+		"cognizant":                    162, // Cognizant
+		"nuro-inc.":                    163, // Nuro
+		"cloudwalk-inc":                164, // CloudWalk, Inc.
+		"transition-technologies-psc":  165, // Transition Technologies PSC
+		"kroger":                       166, // Kroger
+		"preciselydata":                167, // Precisely
+		"r-systems":                    168, // R Systems
+		"hays":                         169, // Hays
+		"consortgroup":                 170, // Consort Group
+		"ascendion":                    171, // Ascendion
+		"checkout":                     172, // Checkout.com
+		"unlimit-com":                  173, // Unlimit
+		"chime-card":                   174, // Chime
+		"cmrad":                        175, // Collective Minds Radiology
+		"getcruise":                    176, // Cruise
+		"compassinc":                   177, // Compass
+
 	}
 )

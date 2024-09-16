@@ -90,6 +90,12 @@ func (c *Controller) Companies(ctx *gin.Context) {
 			continue
 		}
 
+		if organizers.CompanyStartupMap[company.LinkedInProfile.Alias] {
+			company.Type = domain.CompanyTypeStartup
+		} else {
+			company.Type = domain.CompanyTypeProduct
+		}
+
 		// nil slice mean skip company for the language
 		if company.Vacancies[organizerFeature.Organizer.Language] == nil {
 			continue

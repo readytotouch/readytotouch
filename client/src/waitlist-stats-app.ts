@@ -1,6 +1,7 @@
 import {TimeCountStats} from "./domain";
 import {formatDay} from "./format";
 import apexchartsCommonOptions from "./apexcharts-common-options";
+import {welcome} from "./welcome";
 
 fetch(`/api/v1/features/auto/waitlist/stats.json`)
     .then(function (response) {
@@ -81,12 +82,4 @@ function render($element: Element, name, color: string, data: Array<TimeCountSta
 
 function sum(data: Array<TimeCountStats>) {
     return data.reduce((acc, item) => acc + item.count, 0);
-}
-
-function welcome() {
-    const pathname = window.location.pathname;
-
-    const index = pathname.lastIndexOf('/');
-
-    return `${pathname.substring(0, index)}/welcome?redirect=${encodeURIComponent(pathname)}`;
 }

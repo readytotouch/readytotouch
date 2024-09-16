@@ -10,6 +10,11 @@ const (
 	Go = 0
 )
 
+const (
+	CompanyTypeProduct = domain.CompanyTypeProduct
+	CompanyTypeStartup = domain.CompanyTypeStartup
+)
+
 type (
 	Organizer        = domain.Organizer
 	OrganizerFeature = domain.OrganizerFeature
@@ -48,3 +53,10 @@ func toFeatureNavigation(path string) featureNavigation {
 		vacanciesActive: "",
 	}
 }
+
+var (
+	companyTypeName = map[domain.CompanyType]string{
+		CompanyTypeProduct: "Product",
+		CompanyTypeStartup: "Startup",
+	}
+)

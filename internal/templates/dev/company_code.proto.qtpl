@@ -8,7 +8,7 @@ var (
 {% stripspace %}
     {% for _, pair := range pairs %}
         {% space %}
-        "{%s pair.Alias %}":{%dl pair.ID %},
+        "{%s pair.Alias %}":{%dl pair.ID %}, // {% space %} {%s pair.Name %}
         {% newline %}
     {% endfor %}
 {% endstripspace %}

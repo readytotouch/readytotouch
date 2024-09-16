@@ -16,9 +16,17 @@ func main() {
 		pairs = make([]*dev.CompanyCodePair, len(db.Companies()))
 	)
 
+	// Assert that all company aliases are present in the map
+	for alias := range organizers.CompanyStartupMap {
+		if _, ok := organizers.CompanyAliasMap[alias]; !ok {
+			panic(fmt.Sprintf("Company alias not found: %s", alias))
+		}
+	}
+
 	for i, company := range db.Companies() {
 		pair := &dev.CompanyCodePair{
 			ID:    organizers.CompanyAliasMap[company.LinkedInProfile.Alias],
+			Name:  company.LinkedInProfile.Name,
 			Alias: company.LinkedInProfile.Alias,
 		}
 
@@ -45,4 +53,6 @@ func main() {
 
 	fmt.Println("Company code generated successfully")
 	fmt.Printf("Max ID: %d\n", maxID)
+
+	// json.NewEncoder(os.Stdout).Encode(pairs)
 }

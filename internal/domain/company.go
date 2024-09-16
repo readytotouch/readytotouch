@@ -1,6 +1,9 @@
 package domain
 
-type Language int
+type (
+	Language    int
+	CompanyType string
+)
 
 const (
 	Go      Language = 0
@@ -10,6 +13,11 @@ const (
 	Elixir  Language = 4
 	Clojure Language = 5
 	Haskell Language = 6
+)
+
+const (
+	CompanyTypeProduct CompanyType = "product"
+	CompanyTypeStartup CompanyType = "startup"
 )
 
 type Vacancies = [7][]string
@@ -32,7 +40,8 @@ type GlassdoorProfile struct {
 }
 
 type Company struct {
-	ID                int64 // populates from the CompanyAliasMap
+	ID                int64       // populates from the CompanyAliasMap
+	Type              CompanyType // populates from the CompanyTypeMap
 	Name              string
 	URL               string
 	LinkedInProfile   LinkedInProfile

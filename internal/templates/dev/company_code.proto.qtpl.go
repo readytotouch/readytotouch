@@ -28,7 +28,9 @@ var (
 		qw422016.E().S(pair.Alias)
 		qw422016.N().S(`":`)
 		qw422016.N().DL(pair.ID)
-		qw422016.N().S(`,`)
+		qw422016.N().S(`, //`)
+		qw422016.N().S(` `)
+		qw422016.E().S(pair.Name)
 		qw422016.N().S(`
 `)
 	}

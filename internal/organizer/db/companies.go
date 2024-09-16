@@ -3133,7 +3133,7 @@ func Companies() []domain.Company {
 			URL:  "https://www.firebolt.io/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:    40719957,
-				Alias: "Firebolt",
+				Alias: "firebolt",
 				Name:  "Firebolt",
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -3144,7 +3144,7 @@ func Companies() []domain.Company {
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Firebolt-EI_IE5001853.11,19.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Firebolt-Reviews-E5001853.htm",
 			},
-			OttaProfileSlug:   "Firebolt",
+			OttaProfileSlug:   "firebolt",
 			YouTubeChannelURL: "https://www.youtube.com/@FireboltHQ",
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{

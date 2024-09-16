@@ -144,14 +144,14 @@ func StreamOrganizersCompanies(qw422016 *qt422016.Writer,
     </div>
 
     <div class="filters">
-      <!-- English level -->
+      <!-- Company type -->
       <div class="filters__group">
         <header class="filters__header">
-          <h4 class="filters__headline">Project type</h4>
+          <h4 class="filters__headline">Company type</h4>
         </header>
         <div class="filters__elements">
           <label class="checkbox filters__element">
-            <input checked class="checkbox__input" type="checkbox" />
+            <input class="checkbox__input" type="checkbox" />
             <span class="checkbox__element"></span>
             Product
           </label>
@@ -162,111 +162,12 @@ func StreamOrganizersCompanies(qw422016 *qt422016.Writer,
           </label>
         </div>
       </div>
-      <!-- /English level -->
 
-      <!-- Direction -->
-      <div class="filters__group">
-        <header class="filters__header">
-          <h4 class="filters__headline">Direction</h4>
-        </header>
+      `)
+	qw422016.N().S(`
 
-        <div class="filters__elements">
-          <div class="filters__elements-inner">
-            <label class="checkbox filters__element">
-              <input class="checkbox__input" type="checkbox" />
-              <span class="checkbox__element"></span>
-              CyberSecurity
-            </label>
-            <label class="checkbox filters__element">
-              <input class="checkbox__input" type="checkbox" />
-              <span class="checkbox__element"></span>
-              Embedded
-            </label>
-            <label class="checkbox filters__element">
-              <input checked class="checkbox__input" type="checkbox" />
-              <span class="checkbox__element"></span>
-              EdTech
-            </label>
-            <label class="checkbox filters__element">
-              <input class="checkbox__input" type="checkbox" />
-              <span class="checkbox__element"></span>
-              eCommerce
-            </label>
-            <label class="checkbox filters__element">
-              <input class="checkbox__input" type="checkbox" />
-              <span class="checkbox__element"></span>
-              HealthTech
-            </label>
-            <label class="checkbox filters__element">
-              <input class="checkbox__input" type="checkbox" />
-              <span class="checkbox__element"></span>
-              CyberSecurity
-            </label>
-            <label class="checkbox filters__element">
-              <input class="checkbox__input" type="checkbox" />
-              <span class="checkbox__element"></span>
-              Embedded
-            </label>
-            <label class="checkbox filters__element">
-              <input class="checkbox__input" type="checkbox" />
-              <span class="checkbox__element"></span>
-              EdTech
-            </label>
-            <label class="checkbox filters__element">
-              <input class="checkbox__input" type="checkbox" />
-              <span class="checkbox__element"></span>
-              eCommerce
-            </label>
-            <label class="checkbox filters__element">
-              <input class="checkbox__input" type="checkbox" />
-              <span class="checkbox__element"></span>
-              HealthTech
-            </label>
-          </div>
-        </div>
-      </div>
-      <!-- /Direction -->
-
-      <!-- Company type -->
-      <div class="filters__group">
-        <header class="filters__header">
-          <h4 class="filters__headline">Other</h4>
-        </header>
-        <div class="filters__elements">
-          <label class="checkbox filters__element">
-            <input checked class="checkbox__input" type="checkbox" />
-            <span class="checkbox__element"></span>
-            Has Ukrainian employees
-            <img
-              class="checkbox__content-image"
-              alt="Flag of Ukraine with waves"
-              width="24"
-              height="24"
-              src="/assets/images/pages/online-new/ua_flag_with_waves.svg"
-            />
-          </label>
-          <label class="checkbox filters__element">
-            <input class="checkbox__input" type="checkbox" />
-            <span class="checkbox__element"></span>
-            Favorites
-          </label>
-          <div class="switch-wrapper filters__element">
-            <label class="switch">
-              <input type="checkbox" name="active_search" id="active_search" class="switch__input" />
-              <span class="switch__slider switch__slider--round"></span>
-            </label>
-            <span class="switch-wrapper__text">Active search</span>
-            <img
-              class="ml-16"
-              alt="info icon"
-              width="20"
-              height="20"
-              title="info"
-              src="/assets/images/pages/common/info.svg"
-            />
-          </div>
-        </div>
-      </div>
+      `)
+	qw422016.N().S(`
     </div>
   </div>
 </aside>
@@ -290,39 +191,8 @@ func StreamOrganizersCompanies(qw422016 *qt422016.Writer,
         />
       </button>
     </li>
-    <li class="filter-used__item">
-      EdTech
-      <button class="filter-used__link" type="button">
-        <img
-          class="filter-used__cross-icon"
-          alt="cross icon"
-          width="10"
-          height="10"
-          title="info"
-          src="/assets/images/pages/common/cross.svg"
-        />
-      </button>
-    </li>
-    <li class="filter-used__item">
-      Has Ukrainian employees
-      <img
-        class="filter-used__content-image"
-        alt="Flag of Ukraine with waves"
-        width="20"
-        height="20"
-        src="/assets/images/pages/online-new/ua_flag_with_waves.svg"
-      />
-      <button class="filter-used__link" type="button">
-        <img
-          class="filter-used__cross-icon"
-          alt="cross icon"
-          width="10"
-          height="10"
-          title="info"
-          src="/assets/images/pages/common/cross.svg"
-        />
-      </button>
-    </li>
+    `)
+	qw422016.N().S(`
   </ul>
 </div>
 <!-- /selected filters -->
@@ -336,9 +206,14 @@ func StreamOrganizersCompanies(qw422016 *qt422016.Writer,
             `)
 	for _, company := range companies {
 		qw422016.N().S(`
-            <div class="js-company card" data-company-id="`)
+            <div class="js-company card"
+                 data-company-id="`)
 		qw422016.N().DL(company.ID)
-		qw422016.N().S(`">
+		qw422016.N().S(`"
+                 data-company-type="`)
+		qw422016.E().S(string(company.Type))
+		qw422016.N().S(`"
+            >
               <aside class="card__action">
                 `)
 		if userCompanyFavoriteMap[company.ID] {
@@ -397,7 +272,9 @@ func StreamOrganizersCompanies(qw422016 *qt422016.Writer,
                     height="16"
                     src="/assets/images/pages/vacancy/building.svg"
                   />
-                  <figcaption class="card__figcaption">Product|Startup</figcaption>
+                  <figcaption class="card__figcaption">`)
+		qw422016.E().S(companyTypeName[company.Type])
+		qw422016.N().S(`</figcaption>
                 </figure>
                 <figure class="card__figure">
                   <img
