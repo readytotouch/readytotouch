@@ -57,10 +57,10 @@ func (q *Queries) FeatureViewDailyStats(ctx context.Context, arg FeatureViewDail
 }
 
 const featureViewDailyStatsUpsert = `-- name: FeatureViewDailyStatsUpsert :exec
-INSERT INTO feature_view_daily_stats AS fvhs (feature, created_at, view_count)
+INSERT INTO feature_view_daily_stats AS fvds (feature, created_at, view_count)
 VALUES ($1, $2, 1)
 ON CONFLICT (feature, created_at) DO UPDATE
-    SET view_count = fvhs.view_count + 1
+    SET view_count = fvds.view_count + 1
 `
 
 type FeatureViewDailyStatsUpsertParams struct {
@@ -87,10 +87,10 @@ func (q *Queries) FeatureViewStats(ctx context.Context, feature FeatureWait) (in
 }
 
 const featureViewStatsUpsert = `-- name: FeatureViewStatsUpsert :exec
-INSERT INTO feature_view_stats AS fvhs (feature, view_count)
+INSERT INTO feature_view_stats AS fvs (feature, view_count)
 VALUES ($1, 1)
 ON CONFLICT (feature) DO UPDATE
-    SET view_count = fvhs.view_count + 1
+    SET view_count = fvs.view_count + 1
 `
 
 func (q *Queries) FeatureViewStatsUpsert(ctx context.Context, feature FeatureWait) error {

@@ -9,6 +9,7 @@ import (
 	"github.com/readytotouch/readytotouch/internal/db/postgres"
 	"github.com/readytotouch/readytotouch/internal/domain"
 	"github.com/readytotouch/readytotouch/internal/organizer/db"
+	"github.com/readytotouch/readytotouch/internal/protos/organizers"
 	"github.com/readytotouch/readytotouch/internal/storage/postgres/dbs"
 	template "github.com/readytotouch/readytotouch/internal/templates/v1"
 
@@ -76,10 +77,30 @@ func (c *Controller) Companies(ctx *gin.Context) {
 		// NOP, continue
 	}
 
+	var (
+		source    = db.Companies()
+		companies = make([]domain.Company, 0, len(source))
+	)
+	for _, company := range source {
+		company.ID = organizers.CompanyAliasMap[company.LinkedInProfile.Alias]
+		if company.ID == 0 {
+			// make generate-company-code
+
+			continue
+		}
+
+		// nil slice mean skip company for the language
+		if company.Vacancies[organizerFeature.Organizer.Language] == nil {
+			continue
+		}
+
+		companies = append(companies, company)
+	}
+
 	content := template.OrganizersCompanies(
 		organizerFeature,
 		headerProfiles,
-		db.Companies(), // @TODO filter by language
+		companies,
 		c.redirect(organizerFeature.Path),
 	)
 

@@ -278,7 +278,7 @@
           <!-- card list -->
           <div class="search-result__cards row-gap-8 mt-24">
             {% for _, company := range companies %}
-            <div class="card">
+            <div class="js-company card" data-company-id="{%dl company.ID %}">
               <aside class="card__action">
                 {% comment %}
                   <button class="favorite card__action-button button-group__item" title="Add to favorite">
@@ -531,6 +531,9 @@
             {% endfor %}
           </div>
 
+          {% comment %}
+          <!-- Pagination skipped for now -->
+
           <!-- /card list -->
           <!-- search footer -->
           <footer class="search-result__footer">
@@ -586,6 +589,7 @@
             <!-- /pagination -->
           </footer>
           <!-- /search footer -->
+          {% endcomment %}
         </div>
       </div>
     </div>

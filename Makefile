@@ -85,6 +85,7 @@ migrate-pgsql-status:
 generate-template:
 	# go get -u github.com/valyala/quicktemplate/qtc
 	qtc -dir=./internal/templates/v1 -skipLineComments
+	qtc -dir=./internal/templates/dev -skipLineComments
 	git add .
 
 generate-sqlc:
@@ -120,6 +121,10 @@ generate-protos:
 	# sudo apt install -y protobuf-compiler
 	# protoc --version
 	protoc -I . protos/auth/*.proto --go_out=./internal/
+	protoc -I . protos/organizers/*.proto --go_out=./internal/
+
+generate-company-code:
+	go run ./cmd/organizers/generate-company-code/main.go
 
 # POSTGRES_PASSWORD=$(echo "$RANDOM$RANDOM" | sha256sum | head -c 32; echo;) JWT_SECRET_KEY=$(echo "$RANDOM$RANDOM" | sha256sum | head -c 32; echo;) make generate-production-environment-file
 generate-production-environment-file:

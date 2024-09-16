@@ -335,7 +335,9 @@ func StreamOrganizersCompanies(qw422016 *qt422016.Writer,
             `)
 	for _, company := range companies {
 		qw422016.N().S(`
-            <div class="card">
+            <div class="js-company card" data-company-id="`)
+		qw422016.N().DL(company.ID)
+		qw422016.N().S(`">
               <aside class="card__action">
                 `)
 		qw422016.N().S(`
@@ -623,61 +625,8 @@ func StreamOrganizersCompanies(qw422016 *qt422016.Writer,
 	qw422016.N().S(`
           </div>
 
-          <!-- /card list -->
-          <!-- search footer -->
-          <footer class="search-result__footer">
-            <button class="button button--bordered-black-transparent" type="button">More</button>
-
-            <!-- pagination -->
-            <nav class="pagination search-result__pagination">
-  <a class="pagination__button pagination__button--prev" href="javascript:" aria-label="arrow left">
-    <img
-      class="pagination__icon pagination__icon--prev"
-      width="12"
-      height="12"
-      src="/assets/images/pages/common/double-left.svg"
-      alt="arrow left"
-    />
-  </a>
-  <a class="pagination__button pagination__button--prev" href="javascript:" aria-label="arrow left">
-    <img
-      class="pagination__icon pagination__icon--prev"
-      width="14"
-      height="14"
-      src="/assets/images/pages/common/left.svg"
-      alt="arrow left"
-    />
-  </a>
-  <a class="pagination__item pagination__item--active" href="javascript:">1</a>
-  <a class="pagination__item" href="javascript:">2</a>
-  <a class="pagination__item" href="javascript:">3</a>
-  <a class="pagination__item" href="javascript:">4</a>
-  <a class="pagination__item" href="javascript:">5</a>
-  <span class="pagination__item">...</span>
-  <a class="pagination__item" href="javascript:">9</a>
-  <a class="pagination__button pagination__button--prev" href="javascript:" aria-label="arrow left">
-    <img
-      class="pagination__icon pagination__icon--prev"
-      width="14"
-      height="14"
-      src="/assets/images/pages/common/right.svg"
-      alt="arrow left"
-    />
-  </a>
-  <a class="pagination__button pagination__button--next" href="javascript:" aria-label="arrow right">
-    <img
-      class="pagination__icon pagination__icon--next"
-      width="12"
-      height="12"
-      src="/assets/images/pages/common/double-left.svg"
-      alt="arrow right"
-    />
-  </a>
-</nav>
-
-            <!-- /pagination -->
-          </footer>
-          <!-- /search footer -->
+          `)
+	qw422016.N().S(`
         </div>
       </div>
     </div>
