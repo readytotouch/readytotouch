@@ -23,7 +23,7 @@ func Companies() []domain.Company {
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
 			Vacancies:         domain.Vacancies{},
-			ShortDescription:  "", // @TODO for Mykhailo
+			ShortDescription:  "Service for simplifying job search",
 		},
 
 		// Favorites | DocHQ
