@@ -121,7 +121,6 @@ generate-protos:
 	# sudo apt install -y protobuf-compiler
 	# protoc --version
 	protoc -I . protos/auth/*.proto --go_out=./internal/
-	protoc -I . protos/organizers/*.proto --go_out=./internal/
 
 generate-company-code:
 	go run ./cmd/organizers/generate-company-code/main.go

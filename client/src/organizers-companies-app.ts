@@ -240,22 +240,3 @@ function search() {
 }
 
 updatePageState();
-
-// <DEBUG>
-/*
-    function markCompanyFavoriteAll(favoriteGenerator: () => boolean) {
-        document.querySelectorAll(".js-company").forEach(function ($element: HTMLElement) {
-            markCompanyFavorite(
-                parseInt($element.getAttribute("data-company-id")),
-                favoriteGenerator(),
-                function () {
-                },
-            );
-        });
-    }
-
-    markCompanyFavoriteAll(function () {
-        return Math.random() > 0.5;
-    });
-*/
-// </DEBUG>
