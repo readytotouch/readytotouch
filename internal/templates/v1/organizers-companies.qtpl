@@ -2,6 +2,7 @@
   organizerFeature OrganizerFeature,
   headerProfiles []SocialProviderUser,
   companies []Company,
+  ukrainianUniversities []University,
   userCompanyFavoriteMap map[int64]bool,
   authQueryParams string,
 ) -%}
@@ -330,13 +331,19 @@
                     <a href="https://www.linkedin.com/company/{%s company.LinkedInProfile.Alias %}/" class="button-link card__links-link">LinkedIn</a>
                   </li>
                   <li class="card__links-item">
+                    <a href="{%s linkedinConnectionsURL([]Company{company}, ukrainianUniversities) %}" class="button-link card__links-link">Connections             <img
+                            class="checkbox__content-image"
+                            alt="Flag of Ukraine with waves"
+                            width="16"
+                            height="16"
+                            src="/assets/images/pages/online-new/ua_flag_with_waves.svg"
+                    /></a>
+                  </li>
+                  <li class="card__links-item">
                     <a href="{%s linkedinConnectionsURL([]Company{company}, nil) %}" class="button-link card__links-link">Connections</a>
                   </li>
                   <li class="card__links-item">
-                    {% comment %}
-                      <!-- @TODO Rust, Zig, Scala, Elixir, Clojure, Haskell keywords -->
-                    {% endcomment %}
-                    <a href="{%s linkedinJobsURL([]Company{company}, golangKeywordsTitles) %}" class="button-link card__links-link">Jobs</a>
+                    <a href="{%s linkedinJobsURL([]Company{company}, string(organizerFeature.Organizer.LanguageTitleKeywords)) %}" class="button-link card__links-link">Jobs</a>
                   </li>
                 </ul>
                 {%- if company.GitHubProfile.Login == "" -%}

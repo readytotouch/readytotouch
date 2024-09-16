@@ -18,6 +18,7 @@ func StreamOrganizersCompanies(qw422016 *qt422016.Writer,
 	organizerFeature OrganizerFeature,
 	headerProfiles []SocialProviderUser,
 	companies []Company,
+	ukrainianUniversities []University,
 	userCompanyFavoriteMap map[int64]bool,
 	authQueryParams string,
 ) {
@@ -314,14 +315,23 @@ func StreamOrganizersCompanies(qw422016 *qt422016.Writer,
                   </li>
                   <li class="card__links-item">
                     <a href="`)
+		qw422016.E().S(linkedinConnectionsURL([]Company{company}, ukrainianUniversities))
+		qw422016.N().S(`" class="button-link card__links-link">Connections             <img
+                            class="checkbox__content-image"
+                            alt="Flag of Ukraine with waves"
+                            width="16"
+                            height="16"
+                            src="/assets/images/pages/online-new/ua_flag_with_waves.svg"
+                    /></a>
+                  </li>
+                  <li class="card__links-item">
+                    <a href="`)
 		qw422016.E().S(linkedinConnectionsURL([]Company{company}, nil))
 		qw422016.N().S(`" class="button-link card__links-link">Connections</a>
                   </li>
                   <li class="card__links-item">
-                    `)
-		qw422016.N().S(`
                     <a href="`)
-		qw422016.E().S(linkedinJobsURL([]Company{company}, golangKeywordsTitles))
+		qw422016.E().S(linkedinJobsURL([]Company{company}, string(organizerFeature.Organizer.LanguageTitleKeywords)))
 		qw422016.N().S(`" class="button-link card__links-link">Jobs</a>
                   </li>
                 </ul>
@@ -549,11 +559,12 @@ func WriteOrganizersCompanies(qq422016 qtio422016.Writer,
 	organizerFeature OrganizerFeature,
 	headerProfiles []SocialProviderUser,
 	companies []Company,
+	ukrainianUniversities []University,
 	userCompanyFavoriteMap map[int64]bool,
 	authQueryParams string,
 ) {
 	qw422016 := qt422016.AcquireWriter(qq422016)
-	StreamOrganizersCompanies(qw422016, organizerFeature, headerProfiles, companies, userCompanyFavoriteMap, authQueryParams)
+	StreamOrganizersCompanies(qw422016, organizerFeature, headerProfiles, companies, ukrainianUniversities, userCompanyFavoriteMap, authQueryParams)
 	qt422016.ReleaseWriter(qw422016)
 }
 
@@ -561,11 +572,12 @@ func OrganizersCompanies(
 	organizerFeature OrganizerFeature,
 	headerProfiles []SocialProviderUser,
 	companies []Company,
+	ukrainianUniversities []University,
 	userCompanyFavoriteMap map[int64]bool,
 	authQueryParams string,
 ) string {
 	qb422016 := qt422016.AcquireByteBuffer()
-	WriteOrganizersCompanies(qb422016, organizerFeature, headerProfiles, companies, userCompanyFavoriteMap, authQueryParams)
+	WriteOrganizersCompanies(qb422016, organizerFeature, headerProfiles, companies, ukrainianUniversities, userCompanyFavoriteMap, authQueryParams)
 	qs422016 := string(qb422016.B)
 	qt422016.ReleaseByteBuffer(qb422016)
 	return qs422016

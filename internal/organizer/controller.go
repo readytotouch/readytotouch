@@ -121,6 +121,7 @@ func (c *Controller) Companies(ctx *gin.Context) {
 		organizerFeature,
 		headerProfiles,
 		companies,
+		db.UkrainianUniversities(),
 		userCompanyFavoriteMap,
 		c.redirect(organizerFeature.Path),
 	)

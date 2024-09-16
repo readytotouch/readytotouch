@@ -16,7 +16,7 @@ type (
 )
 
 const (
-	golangKeywordsTitles = `"Golang Engineer" OR "Golang Software Engineer" OR "Golang Developer" OR "Go Engineer" OR "Go Software Engineer" OR "Golang Developer"`
+	golangKeywordsTitles = string(domain.GoTitleKeywords)
 	keywordsCommon       = `"Developer" OR "Engineer"`
 )
 
