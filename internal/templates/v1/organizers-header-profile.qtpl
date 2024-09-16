@@ -1,13 +1,13 @@
 {% func organizersHeaderProfile(profiles []SocialProviderUser) %}
 <div class="header__profile">
   <button class="header__profile-button">
-    <img src="{%s SocialProviderUserHeaderPhoto(profiles[0]) %}" alt="photo-profile" />
+    <img src="{%s SocialProviderUserHeaderPhoto(profiles) %}" alt="photo-profile" />
   </button>
   <div class="header__modal modal-profile">
     <div class="modal-profile__profile">
       <figure class="modal-profile__profile-info">
         <img
-          src="{%s SocialProviderUserHeaderPhoto(profiles[0]) %}"
+          src="{%s SocialProviderUserHeaderPhoto(profiles) %}"
           class="modal-profile__user-photo"
           width="48"
           height="48"

@@ -32,13 +32,13 @@ func streamheader(qw422016 *qt422016.Writer, profiles []SocialProviderUser) {
 		<div class="header__profile">
 			<button class="header__profile-button">
 				<img src="`)
-		qw422016.E().S(SocialProviderUserHeaderPhoto(profiles[0]))
+		qw422016.E().S(SocialProviderUserHeaderPhoto(profiles))
 		qw422016.N().S(`" alt="Profile photo">
 			</button>
 			<div class="header__modal modal-profile">
 				<div class="modal-profile__profile">
 					<img src="`)
-		qw422016.E().S(SocialProviderUserHeaderPhoto(profiles[0]))
+		qw422016.E().S(SocialProviderUserHeaderPhoto(profiles))
 		qw422016.N().S(`" class="modal-profile__user-photo" width="48" height="48" alt="Profile photo">
 					<div class="modal-profile__profile-info">
 						<div class="modal-profile__profile-name">`)

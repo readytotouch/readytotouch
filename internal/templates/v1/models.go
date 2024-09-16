@@ -27,13 +27,20 @@ func SocialProviderUserName(v SocialProviderUser) string {
 	return v.Name
 }
 
-func SocialProviderUserHeaderPhoto(v SocialProviderUser) string {
-	switch v.SocialProvider {
-	case github:
-		return fmt.Sprintf("https://avatars.githubusercontent.com/u/%s?v=4&s=48", v.SocialProviderUserID)
-	case gitlab:
-		return fmt.Sprintf("https://gitlab.com/uploads/-/system/user/avatar/%s/avatar.png?width=48", v.SocialProviderUserID)
-	default:
-		return ""
+func SocialProviderUserHeaderPhoto(vs []SocialProviderUser) string {
+	for _, v := range vs {
+		switch v.SocialProvider {
+		case github:
+			return fmt.Sprintf("https://avatars.githubusercontent.com/u/%s?v=4&s=48", v.SocialProviderUserID)
+		case gitlab:
+
+			// GitLab outdated API
+			// return fmt.Sprintf("https://gitlab.com/uploads/-/system/user/avatar/%s/avatar.png?width=48", v.SocialProviderUserID)
+
+		case bitbucket:
+			// Unknown
+		}
 	}
+
+	return ""
 }

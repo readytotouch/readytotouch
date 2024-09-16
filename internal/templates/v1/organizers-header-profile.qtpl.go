@@ -19,7 +19,7 @@ func streamorganizersHeaderProfile(qw422016 *qt422016.Writer, profiles []SocialP
 <div class="header__profile">
   <button class="header__profile-button">
     <img src="`)
-	qw422016.E().S(SocialProviderUserHeaderPhoto(profiles[0]))
+	qw422016.E().S(SocialProviderUserHeaderPhoto(profiles))
 	qw422016.N().S(`" alt="photo-profile" />
   </button>
   <div class="header__modal modal-profile">
@@ -27,7 +27,7 @@ func streamorganizersHeaderProfile(qw422016 *qt422016.Writer, profiles []SocialP
       <figure class="modal-profile__profile-info">
         <img
           src="`)
-	qw422016.E().S(SocialProviderUserHeaderPhoto(profiles[0]))
+	qw422016.E().S(SocialProviderUserHeaderPhoto(profiles))
 	qw422016.N().S(`"
           class="modal-profile__user-photo"
           width="48"

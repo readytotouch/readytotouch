@@ -301,6 +301,7 @@
                   />
                   <figcaption class="card__figcaption">{%s companyTypeName[company.Type] %}</figcaption>
                 </figure>
+                {% comment %}
                 <figure class="card__figure">
                   <img
                     class="card__icon"
@@ -311,6 +312,7 @@
                   />
                   <figcaption class="card__figcaption">TodoTech</figcaption>
                 </figure>
+                {% endcomment %}
               </div>
               <p class="card__text">
                 {% comment %}

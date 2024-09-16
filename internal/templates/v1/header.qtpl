@@ -12,11 +12,11 @@
 		{% if len(profiles) > 0 %}
 		<div class="header__profile">
 			<button class="header__profile-button">
-				<img src="{%s SocialProviderUserHeaderPhoto(profiles[0]) %}" alt="Profile photo">
+				<img src="{%s SocialProviderUserHeaderPhoto(profiles) %}" alt="Profile photo">
 			</button>
 			<div class="header__modal modal-profile">
 				<div class="modal-profile__profile">
-					<img src="{%s SocialProviderUserHeaderPhoto(profiles[0]) %}" class="modal-profile__user-photo" width="48" height="48" alt="Profile photo">
+					<img src="{%s SocialProviderUserHeaderPhoto(profiles) %}" class="modal-profile__user-photo" width="48" height="48" alt="Profile photo">
 					<div class="modal-profile__profile-info">
 						<div class="modal-profile__profile-name">{%s SocialProviderUserName(profiles[0]) %}</div>
 						{% for _, profile := range profiles %}
