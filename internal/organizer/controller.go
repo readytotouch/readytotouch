@@ -20,10 +20,11 @@ type Controller struct {
 	userRepository                *postgres.UserRepository
 	userFeatureWaitlistRepository *postgres.UserFeatureWaitlistRepository
 	featureViewStatsRepository    *postgres.FeatureViewStatsRepository
+	userFavoriteCompanyRepository *postgres.UserFavoriteCompanyRepository
 }
 
-func NewController(userRepository *postgres.UserRepository, userFeatureWaitlistRepository *postgres.UserFeatureWaitlistRepository, featureViewStatsRepository *postgres.FeatureViewStatsRepository) *Controller {
-	return &Controller{userRepository: userRepository, userFeatureWaitlistRepository: userFeatureWaitlistRepository, featureViewStatsRepository: featureViewStatsRepository}
+func NewController(userRepository *postgres.UserRepository, userFeatureWaitlistRepository *postgres.UserFeatureWaitlistRepository, featureViewStatsRepository *postgres.FeatureViewStatsRepository, userFavoriteCompanyRepository *postgres.UserFavoriteCompanyRepository) *Controller {
+	return &Controller{userRepository: userRepository, userFeatureWaitlistRepository: userFeatureWaitlistRepository, featureViewStatsRepository: featureViewStatsRepository, userFavoriteCompanyRepository: userFavoriteCompanyRepository}
 }
 
 func (c *Controller) Welcome(ctx *gin.Context) {
@@ -97,10 +98,18 @@ func (c *Controller) Companies(ctx *gin.Context) {
 		companies = append(companies, company)
 	}
 
+	userCompanyFavoriteMap, err := c.userFavoriteCompanyRepository.GetMap(ctx, authUserID)
+	if err != nil {
+		// @TODO logging
+
+		// NOP, continue
+	}
+
 	content := template.OrganizersCompanies(
 		organizerFeature,
 		headerProfiles,
 		companies,
+		userCompanyFavoriteMap,
 		c.redirect(organizerFeature.Path),
 	)
 
@@ -197,6 +206,58 @@ func (c *Controller) WaitlistSubscribe(ctx *gin.Context) {
 	if err != nil {
 		// @TODO logging
 
+		ctx.JSON(http.StatusInternalServerError, &domain.ErrorResponse{
+			ErrorMessage: err.Error(), // Yes, we are leaking the error message to the client, it's fine for now
+		})
+		return
+	}
+
+	ctx.JSON(http.StatusOK, nil)
+}
+
+func (c *Controller) FavoriteCompany(ctx *gin.Context) {
+	type (
+		favoriteCompanyURI struct {
+			CompanyID int64 `uri:"company_id" binding:"required"`
+		}
+		favoriteCompanyRequestBody struct {
+			Favorite bool `json:"favorite"`
+		}
+	)
+
+	var (
+		uri  favoriteCompanyURI
+		body favoriteCompanyRequestBody
+	)
+
+	err := ctx.ShouldBindUri(&uri)
+	if err != nil {
+		ctx.JSON(http.StatusBadRequest, &domain.ErrorResponse{
+			ErrorMessage: err.Error(),
+		})
+		return
+	}
+
+	var (
+		authUserID = domain.ContextGetUserID(ctx)
+	)
+
+	if authUserID == 0 {
+		ctx.JSON(http.StatusUnauthorized, &domain.ErrorResponse{
+			ErrorMessage: "Unauthorized",
+		})
+		return
+	}
+
+	if err := ctx.ShouldBindJSON(&body); err != nil {
+		ctx.JSON(http.StatusBadRequest, &domain.ErrorResponse{
+			ErrorMessage: err.Error(),
+		})
+		return
+	}
+
+	err = c.userFavoriteCompanyRepository.Upsert(ctx, authUserID, uri.CompanyID, body.Favorite, time.Now().UTC())
+	if err != nil {
 		ctx.JSON(http.StatusInternalServerError, &domain.ErrorResponse{
 			ErrorMessage: err.Error(), // Yes, we are leaking the error message to the client, it's fine for now
 		})

@@ -52,6 +52,7 @@ func main() {
 		onlineRepository              = postgres.NewOnlineRepository(database)
 		userFeatureWaitlistRepository = postgres.NewUserFeatureWaitlistRepository(database)
 		featureViewStatsRepository    = postgres.NewFeatureViewStatsRepository(database)
+		userFavoriteCompanyRepository = postgres.NewUserFavoriteCompanyRepository(database)
 	)
 
 	var (
@@ -103,6 +104,7 @@ func main() {
 			userRepository,
 			userFeatureWaitlistRepository,
 			featureViewStatsRepository,
+			userFavoriteCompanyRepository,
 		)
 	)
 
@@ -174,6 +176,7 @@ func main() {
 
 	r.GET("/api/v1/features/auto/waitlist/stats.json", organizerController.WaitlistStats)
 	r.POST("/api/v1/features/auto/waitlist/subscribe.json", organizerController.WaitlistSubscribe)
+	r.PATCH("/api/v1/companies/:company_id/favorite.json", organizerController.FavoriteCompany)
 
 	r.
 		GET("/auth/github", authController.GithubRedirect).
