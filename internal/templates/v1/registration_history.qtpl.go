@@ -60,11 +60,15 @@ func streamregistrationHistory(qw422016 *qt422016.Writer, socialProviderUsers []
 				qw422016.N().S(`
             <li class="history__table-user">
                 <div class="history__user-group">
-                    <img src="https://gitlab.com/uploads/-/system/user/avatar/`)
-				qw422016.E().S(profile.SocialProviderUserID)
-				qw422016.N().S(`/avatar.png?width=40" width="40" height="40"
-                         alt="photo"
-                         class="history__user-photo">
+                    <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg" class="history__user-photo">
+                      <!-- Background Circle -->
+                      <circle cx="20" cy="20" r="20" fill="#ffd966" />
+                      <!-- Eyes -->
+                      <circle cx="13" cy="15" r="3" fill="#000" />
+                      <circle cx="27" cy="15" r="3" fill="#000" />
+                      <!-- Smile -->
+                      <path d="M12 25 Q20 35, 28 25" stroke="#000" stroke-width="2" fill="none" />
+                    </svg>
                     <span class="history__user-name">`)
 				qw422016.E().S(SocialProviderUserName(profile))
 				qw422016.N().S(`</span>
@@ -72,6 +76,33 @@ func streamregistrationHistory(qw422016 *qt422016.Writer, socialProviderUsers []
                 <a href="https://gitlab.com/`)
 				qw422016.E().S(profile.Username)
 				qw422016.N().S(`" class="history__user-link history__user-item">gitlab.com/`)
+				qw422016.E().S(profile.Username)
+				qw422016.N().S(`</a>
+                <span class="history__user-date history__user-item">`)
+				qw422016.E().S(profile.CreatedAt.Format("January _2, 2006"))
+				qw422016.N().S(`</span>
+            </li>
+            `)
+			case bitbucket:
+				qw422016.N().S(`
+            <li class="history__table-user">
+                <div class="history__user-group">
+                    <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg" class="history__user-photo">
+                      <!-- Background Circle -->
+                      <circle cx="20" cy="20" r="20" fill="#ffd966" />
+                      <!-- Eyes -->
+                      <circle cx="13" cy="15" r="3" fill="#000" />
+                      <circle cx="27" cy="15" r="3" fill="#000" />
+                      <!-- Smile -->
+                      <path d="M12 25 Q20 35, 28 25" stroke="#000" stroke-width="2" fill="none" />
+                    </svg>
+                    <span class="history__user-name">`)
+				qw422016.E().S(SocialProviderUserName(profile))
+				qw422016.N().S(`</span>
+                </div>
+                <a href="https://bitbucket.org/`)
+				qw422016.E().S(profile.Username)
+				qw422016.N().S(`" class="history__user-link history__user-item">bitbucket.org/`)
 				qw422016.E().S(profile.Username)
 				qw422016.N().S(`</a>
                 <span class="history__user-date history__user-item">`)
