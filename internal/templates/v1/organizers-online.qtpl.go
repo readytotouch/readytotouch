@@ -36,6 +36,7 @@ func StreamOrganizersOnline(qw422016 *qt422016.Writer,
     `)
 	streamorganizersOnlineStyles(qw422016)
 	qw422016.N().S(`
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts@3.52.0"></script>
 </head>
 
 <body>
@@ -436,7 +437,9 @@ func StreamOrganizersOnline(qw422016 *qt422016.Writer,
 `)
 	streamorganizersFooter(qw422016)
 	qw422016.N().S(`
-<script src="/assets/js/online-new_aca0043278f5ae468e54c15ff53c6b0d.js"></script>
+<script src="/assets/js/online-stats-app.js?`)
+	qw422016.N().D(appVersion)
+	qw422016.N().S(`"></script>
 </body>
 </html>
 `)

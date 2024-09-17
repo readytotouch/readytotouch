@@ -14,6 +14,7 @@
     {%= favicon() %}
     {%= organizersFonts() %}
     {%= organizersOnlineStyles() %}
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts@3.52.0"></script>
 </head>
 
 <body>
@@ -394,7 +395,7 @@
 
 </main>
 {%= organizersFooter() %}
-<script src="/assets/js/online-new_aca0043278f5ae468e54c15ff53c6b0d.js"></script>
+<script src="/assets/js/online-stats-app.js?{%d appVersion %}"></script>
 </body>
 </html>
 {%- endfunc -%}
