@@ -141,7 +141,7 @@ func main() {
 
 			ctx.Next()
 		})
-	r.GET("/", onlineController.Index)
+	r.GET("/", organizerController.Index)
 
 	r.GET("/api/v1/users/registration/stats/daily.json", userController.RegistrationDailyCountStats)
 	r.GET("/api/v1/users/online/stats/daily.json", onlineController.DailyCountStats)

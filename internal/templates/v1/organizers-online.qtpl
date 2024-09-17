@@ -1,6 +1,6 @@
 {%- func OrganizersOnline(
   headerProfiles []SocialProviderUser,
-  socialProviderUsers []SocialProviderUser
+  socialProviderUsers []SocialProviderUser,
 ) -%}
 <html lang="en">
 
@@ -28,7 +28,6 @@
     {% if len(headerProfiles) > 0 %}
     {%= organizersHeaderProfile(headerProfiles) %}
     {% else %}
-    <a href="/organizers/{%s organizerFeature.Organizer.Alias %}/welcome{%s authQueryParams %}" class="button button--small-padding button--black header__login-button">Log in</a>
     {% endif %}
   </div>
 </header>
@@ -94,8 +93,19 @@
             class="top-projects__image"
             width="129"
             height="32"
-            alt="organizer logo"
-            src="/assets/images/pages/online-new/golang-organizer.svg"
+            alt="Golang organizer logo"
+            src="/assets/images/pages/organizer/golang-organizer.svg"
+          />
+        </figure>
+      </a>
+      <a class="top-projects__link" href="/organizers/rust/companies">
+        <figure class="top-projects__figure">
+          <img
+            class="top-projects__image"
+            width="129"
+            height="32"
+            alt="Rust organizer logo"
+            src="/assets/images/pages/organizer/rust-organizer.svg"
           />
         </figure>
       </a>
@@ -107,17 +117,6 @@
             height="35"
             alt="u8views logo"
             src="/assets/images/pages/online-new/u8views.svg"
-          />
-        </figure>
-      </a>
-      <a class="top-projects__link" href="https://doutivity.github.io/" target="_blank">
-        <figure class="top-projects__figure">
-          <img
-            class="top-projects__image"
-            width="111"
-            height="41"
-            alt="doutivity logo"
-            src="/assets/images/pages/online-new/doutivity.svg"
           />
         </figure>
       </a>
@@ -230,7 +229,7 @@
           <a
             class="button button--black organizer-card__try-btn"
             target="_blank"
-            href="https://golang-companies-organizer.readytotouch.com/"
+            href="/organizers"
           >
             Try Organizer
             <div class="organizer-card__try-btn-icon-box">
@@ -312,26 +311,6 @@
           </div>
         </div>
       </div>
-      <div class="other-projects__item project big-card">
-        <div class="project__info-card">
-          <div class="project__stars">
-            <iframe
-              src="https://ghbtns.com/github-btn.html?user=doutivity&repo=doutivity.github.io&type=star&count=true&size=large"
-              width="170"
-              height="30"
-              title="GitHub"
-            ></iframe>
-          </div>
-          <div class="project__info-group">
-            <h3 class="project__title">doutivity</h3>
-            <p class="project__subtitle">Search for a comment among comments published on DOU</p>
-          </div>
-          <a href="https://doutivity.github.io/" target="_blank" class="project__link">doutivity.github.io</a>
-        </div>
-        <div class="project__view">
-          <img src="/assets/images/pages/online/doutivity.png" class="project__view-img" alt="project view" />
-        </div>
-      </div>
     </div>
   </div>
 </section>
@@ -340,67 +319,74 @@
   <div class="container articles__container">
     <h2 class="articles__title">Articles</h2>
     <div class="articles__group-wrapper">
-      <div class="articles__item article">
-  <a href="https://dou.ua/forums/topic/35260/" target="_blank" class="article__link">
-    <img src="https://s.dou.ua/img/announces/image_Yne6Ph2.jpg" alt="article preview" class="article__preview" />
-  </a>
-  <div class="article__info">
-    <div class="article__top-group">
-      <div class="article__date-group">
-        <img src="/assets/images/pages/online/calendar.svg" alt="calendar icon" class="article__date-icon" />
-        <span class="article__date">5 квітня 2023</span>
-      </div>
-      <div class="article__author">
-        <img
-          src="https://avatars.githubusercontent.com/u/63663261?v=4&s=48"
-          alt="author"
-          class="article__author-photo"
-        />
-        <a href="https://dou.ua/users/yaroslav-harakternik/" target="_blank" class="article__author-name"
-          >Ярослав Характерник</a
-        >
-      </div>
-    </div>
-    <a href="https://dou.ua/forums/topic/35260/" target="_blank" class="article__title"
-      >Збереження стану онлайну користувача в Redis</a
-    >
-    <p class="article__subtitle">
-      Ярослав Характерник — про методику вибору оптимального типу даних для збереження статусу онлайну користувачів в
-      інтернет-магазині.
-    </p>
-  </div>
-</div>
+        <div class="articles__item article">
+            <a href="https://dou.ua/forums/topic/35260/" target="_blank" class="article__link">
+                <img src="https://s.dou.ua/img/announces/image_Yne6Ph2.jpg" alt="article preview" class="article__preview">
+            </a>
+            <div class="article__info">
+                <div class="article__top-group">
+                    <div class="article__date-group">
+                        <img src="/assets/images/pages/online/calendar.svg" alt="calendar icon"
+                             class="article__date-icon">
+                        <span class="article__date">5 квітня 2023</span>
+                    </div>
+                    <div class="article__author">
+                        <img src="https://avatars.githubusercontent.com/u/63663261?v=4&s=48" alt="author"
+                             class="article__author-photo">
+                        <a href="https://dou.ua/users/yaroslav-harakternik/" target="_blank"
+                           class="article__author-name">Ярослав Характерник</a>
+                    </div>
+                </div>
+                <a href="https://dou.ua/forums/topic/35260/" target="_blank" class="article__title">Збереження стану онлайну користувача в Redis</a>
+                <p class="article__subtitle">Ярослав Характерник — про методику вибору оптимального типу даних для збереження статусу онлайну користувачів в інтернет-магазині.</p>
+            </div>
+        </div>
 
-      <div class="articles__item article">
-  <a href="https://dou.ua/forums/topic/44655/" target="_blank" class="article__link">
-    <img src="https://s.dou.ua/img/announces/0tech_redis_image.jpg" alt="article preview" class="article__preview" />
-  </a>
-  <div class="article__info">
-    <div class="article__top-group">
-      <div class="article__date-group">
-        <img src="/assets/images/pages/online/calendar.svg" alt="calendar icon" class="article__date-icon" />
-        <span class="article__date">15 серпня 2023</span>
-      </div>
-      <div class="article__author">
-        <img
-          src="https://avatars.githubusercontent.com/u/63663261?v=4&s=48"
-          alt="author"
-          class="article__author-photo"
-        />
-        <a href="https://dou.ua/users/yaroslav-harakternik/" target="_blank" class="article__author-name"
-          >Ярослав Характерник</a
-        >
-      </div>
-    </div>
-    <a href="https://dou.ua/forums/topic/44655/" target="_blank" class="article__title"
-      >Hash, Set чи Sorted set. Який тип даних вибрати для збереження стану онлайну користувача в Redis</a
-    >
-    <p class="article__subtitle">
-      В цій статті Ярослав Характерник пропонує розглянути швидкодію, скільки пам’яті займає кожен з типів даних та яку
-      базу даних вибрати: Redis, KeyDB або DragonflyDB.
-    </p>
-  </div>
-</div>
+        <div class="articles__item article">
+            <a href="https://dou.ua/forums/topic/44655/" target="_blank" class="article__link">
+                <img src="https://s.dou.ua/img/announces/0tech_redis_image.jpg" alt="article preview" class="article__preview">
+            </a>
+            <div class="article__info">
+                <div class="article__top-group">
+                    <div class="article__date-group">
+                        <img src="/assets/images/pages/online/calendar.svg" alt="calendar icon"
+                             class="article__date-icon">
+                        <span class="article__date">15 серпня 2023</span>
+                    </div>
+                    <div class="article__author">
+                        <img src="https://avatars.githubusercontent.com/u/63663261?v=4&s=48" alt="author"
+                             class="article__author-photo">
+                        <a href="https://dou.ua/users/yaroslav-harakternik/" target="_blank"
+                           class="article__author-name">Ярослав Характерник</a>
+                    </div>
+                </div>
+                <a href="https://dou.ua/forums/topic/44655/" target="_blank" class="article__title">Hash, Set чи Sorted set. Який тип даних вибрати для збереження стану онлайну користувача в Redis</a>
+                <p class="article__subtitle">В цій статті Ярослав Характерник пропонує розглянути швидкодію, скільки пам’яті займає кожен з типів даних та яку базу даних вибрати: Redis, KeyDB або DragonflyDB.</p>
+            </div>
+        </div>
+
+        <div class="articles__item article">
+            <a href="https://dou.ua/forums/topic/35261/" target="_blank" class="article__link">
+                <img src="https://s.dou.ua/img/announces/8_Uq7sQTh.jpg" alt="article preview" class="article__preview">
+            </a>
+            <div class="article__info">
+                <div class="article__top-group">
+                    <div class="article__date-group">
+                        <img src="/assets/images/pages/online/calendar.svg" alt="calendar icon"
+                             class="article__date-icon">
+                        <span class="article__date">14 листопада 2023</span>
+                    </div>
+                    <div class="article__author">
+                        <img src="https://avatars.githubusercontent.com/u/63663261?v=4&s=48" alt="author"
+                             class="article__author-photo">
+                        <a href="https://dou.ua/users/yaroslav-harakternik/" target="_blank"
+                           class="article__author-name">Ярослав Характерник</a>
+                    </div>
+                </div>
+                <a href="https://dou.ua/forums/topic/35261/" target="_blank" class="article__title">Batch UPDATE в PostgreSQL</a>
+                <p class="article__subtitle">У цій статті Ярослав Характерник продовжує розповідати про свій проєкт з анонімного пошуку роботи. Сьогодні йтиметься про те, як зробити статистику онлайну публічною, а саме: про запуск команди перенесення онлайну пачками з Redis в PostgreSQL і тестування.</p>
+            </div>
+        </div>
     </div>
   </div>
 </section>

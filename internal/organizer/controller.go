@@ -27,6 +27,23 @@ type Controller struct {
 func NewController(userRepository *postgres.UserRepository, userFeatureWaitlistRepository *postgres.UserFeatureWaitlistRepository, featureViewStatsRepository *postgres.FeatureViewStatsRepository, userFavoriteCompanyRepository *postgres.UserFavoriteCompanyRepository, companyViewDailyStatsRepository *postgres.CompanyViewDailyStatsRepository) *Controller {
 	return &Controller{userRepository: userRepository, userFeatureWaitlistRepository: userFeatureWaitlistRepository, featureViewStatsRepository: featureViewStatsRepository, userFavoriteCompanyRepository: userFavoriteCompanyRepository, companyViewDailyStatsRepository: companyViewDailyStatsRepository}
 }
+func (c *Controller) Index(ctx *gin.Context) {
+	headerProfiles, err := c.getHeaderProfiles(ctx, domain.ContextGetUserID(ctx))
+	if err != nil {
+		// @TODO logging
+
+		// NOP, continue
+	}
+
+	socialUserProfiles, err := c.userRepository.SocialUserProfiles(ctx, domain.RegistrationHistoryLimit)
+	if err != nil {
+		// @TODO logging
+
+		// NOP, continue
+	}
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.OrganizersOnline(headerProfiles, socialUserProfiles)))
+}
 
 func (c *Controller) Welcome(ctx *gin.Context) {
 	organizer, ok := c.organizer(ctx.FullPath())
