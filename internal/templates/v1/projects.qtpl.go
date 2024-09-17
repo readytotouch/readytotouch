@@ -35,23 +35,6 @@ func streamprojects(qw422016 *qt422016.Writer) {
                 <img src="/assets/images/pages/online/u8views.png" class="project__view-img" alt="project view">
             </div>
         </div>
-        <div class="projects__item project big-card">
-            <div class="project__info-card">
-                <div class="project__stars">
-                    <iframe src="https://ghbtns.com/github-btn.html?user=doutivity&repo=doutivity.github.io&type=star&count=true&size=large"
-                            frameborder="0" scrolling="0" width="170" height="30" title="GitHub"></iframe>
-                </div>
-                <div class="project__info-group">
-                    <h3 class="project__title">doutivity</h3>
-                    <p class="project__subtitle">Search for a comment among comments published on DOU</p>
-                </div>
-                <a href="https://doutivity.github.io/" target="_blank"
-                   class="project__link">doutivity.github.io</a>
-            </div>
-            <div class="project__view">
-                <img src="/assets/images/pages/online/doutivity.png" class="project__view-img" alt="project view">
-            </div>
-        </div>
         <div class="projects__group">
             <div class="projects__item project small-card">
                 <div class="project__info-card">
