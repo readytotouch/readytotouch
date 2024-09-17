@@ -61,7 +61,7 @@
                                     <span>Glassdoor</span>
                                 </th>
                                 <th>
-                                    <img src="/assets/images/pages/common-images/similarweb.svg" alt="SimilarWeb">
+                                    <img src="/assets/images/pages/common-images/SimilarWeb.svg" alt="SimilarWeb">
                                     <span>SimilarWeb</span>
                                 </th>
                                 <th>
@@ -107,7 +107,7 @@
                                         </div>
                                         <div class="table__link-group">
                                             <img src="/assets/images/pages/common/database.svg">
-                                            <a class="table__item-link" href="https://github.com/orgs/{%s company.GitHubProfile.Login %}/repositories?q=lang:go">Repositories</a>&nbsp;({%d company.GitHubProfile.RepositoryCount %})
+                                            <a class="table__item-link" href="https://github.com/orgs/{%s company.GitHubProfile.Login %}/repositories?q=lang:go">Repositories</a>&nbsp;({%d company.GitHubProfile.GoRepositoryCount %})
                                         </div>
                                         {%- endif -%}
                                     </div>
@@ -144,7 +144,7 @@
                                 </td>
                                 <td>
                                     <div class="table__item">
-                                        {%- for i, vacancy := range company.Vacancies -%}
+                                        {%- for i, vacancy := range company.Vacancies[Go] -%}
                                             <a class="table__item-link vacancies" href="{%s vacancy %}">Vacancy #{%d i %}</a>
                                         {%- endfor -%}
                                     </div>

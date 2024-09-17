@@ -79,7 +79,7 @@ func StreamOrganizerStatic(qw422016 *qt422016.Writer, companies []Company, unive
                                     <span>Glassdoor</span>
                                 </th>
                                 <th>
-                                    <img src="/assets/images/pages/common-images/similarweb.svg" alt="SimilarWeb">
+                                    <img src="/assets/images/pages/common-images/SimilarWeb.svg" alt="SimilarWeb">
                                     <span>SimilarWeb</span>
                                 </th>
                                 <th>
@@ -149,7 +149,7 @@ func StreamOrganizerStatic(qw422016 *qt422016.Writer, companies []Company, unive
                                             <a class="table__item-link" href="https://github.com/orgs/`)
 			qw422016.E().S(company.GitHubProfile.Login)
 			qw422016.N().S(`/repositories?q=lang:go">Repositories</a>&nbsp;(`)
-			qw422016.N().D(company.GitHubProfile.RepositoryCount)
+			qw422016.N().D(company.GitHubProfile.GoRepositoryCount)
 			qw422016.N().S(`)
                                         </div>
 `)
@@ -199,7 +199,7 @@ func StreamOrganizerStatic(qw422016 *qt422016.Writer, companies []Company, unive
                                 <td>
                                     <div class="table__item">
 `)
-		for i, vacancy := range company.Vacancies {
+		for i, vacancy := range company.Vacancies[Go] {
 			qw422016.N().S(`                                            <a class="table__item-link vacancies" href="`)
 			qw422016.E().S(vacancy)
 			qw422016.N().S(`">Vacancy #`)

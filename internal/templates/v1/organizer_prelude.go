@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/readytotouch/readytotouch/internal/organizer/domain"
+	"github.com/readytotouch/readytotouch/internal/domain"
 )
 
 type (
@@ -16,12 +16,12 @@ type (
 )
 
 const (
-	golangKeywordsTitles = `"Golang Engineer" OR "Golang Software Engineer" OR "Golang Developer" OR "Go Engineer" OR "Go Software Engineer" OR "Golang Developer"`
+	golangKeywordsTitles = string(domain.GoTitleKeywords)
 	keywordsCommon       = `"Developer" OR "Engineer"`
 )
 
 func linkedinConnectionsURL(companies []Company, universities []University) string {
-	companyQueryParam, _ := json.Marshal(companiesToLinkedInIDs(companies, false))
+	companyQueryParam, _ := json.Marshal(companiesToLinkedInIDs(companies))
 
 	values := url.Values{
 		"currentCompany": {string(companyQueryParam)},
@@ -50,22 +50,15 @@ func linkedinJobsURL(companies []Company, keywords string) string {
 	}
 
 	if len(companies) > 0 {
-		// Stay when there is only one company
-		skip := len(companies) > 1
-
-		values["f_C"] = []string{strings.Join(companiesToLinkedInIDs(companies, skip), ",")}
+		values["f_C"] = []string{strings.Join(companiesToLinkedInIDs(companies), ",")}
 	}
 
 	return "https://www.linkedin.com/jobs/search/?" + values.Encode()
 }
 
-func companiesToLinkedInIDs(companies []Company, skip bool) []string {
+func companiesToLinkedInIDs(companies []Company) []string {
 	ids := make([]string, 0, len(companies)*2)
 	for _, company := range companies {
-		if skip && company.Skip {
-			continue
-		}
-
 		ids = appendLinkedInProfileIDs(ids, company.LinkedInProfile)
 	}
 	return ids
@@ -76,16 +69,6 @@ func universitiesToLinkedInIDs(universities []University) []string {
 	for _, university := range universities {
 		ids = appendLinkedInProfileIDs(ids, university.LinkedInProfile)
 	}
-	return ids
-}
-
-func linkedInProfileIDs(profiles []domain.LinkedInProfile) []string {
-	var ids []string
-
-	for _, profile := range profiles {
-		ids = appendLinkedInProfileIDs(ids, profile)
-	}
-
 	return ids
 }
 
@@ -116,4 +99,53 @@ func similarwebURL(s string) string {
 	}
 
 	return fmt.Sprintf("https://www.similarweb.com/website/%s/", parsedURL.Hostname())
+}
+
+func whoisURL(s string) string {
+	// https://www.whois.com/whois/readytotouch.com
+
+	if s == "" {
+		return ""
+	}
+
+	parsedURL, err := url.Parse(s)
+	if err != nil {
+		// panic allowed because HTML is pre-generated
+
+		panic(err)
+	}
+
+	return fmt.Sprintf("https://www.whois.com/whois/%s", parsedURL.Hostname())
+}
+
+func googleSearchGitHub(companyName string) string {
+	values := url.Values{
+		"q": {"site:github.com" + " " + companyName},
+	}
+
+	return "https://www.google.com/search?" + values.Encode()
+}
+
+func googleSearchGlassdoor(companyName string) string {
+	values := url.Values{
+		"q": {"site:glassdoor.com" + " " + companyName},
+	}
+
+	return "https://www.google.com/search?" + values.Encode()
+}
+
+func googleSearchXing(companyName string) string {
+	values := url.Values{
+		"q": {"site:xing.com" + " " + companyName},
+	}
+
+	return "https://www.google.com/search?" + values.Encode()
+}
+
+func googleSearchOtta(companyName string) string {
+	values := url.Values{
+		"q": {"site:otta.com" + " " + companyName},
+	}
+
+	return "https://www.google.com/search?" + values.Encode()
 }

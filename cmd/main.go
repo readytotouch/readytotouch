@@ -48,10 +48,12 @@ func main() {
 	redisClient := redis.MustClient(context.Background(), "redis:6379")
 
 	var (
-		userRepository                = postgres.NewUserRepository(database)
-		onlineRepository              = postgres.NewOnlineRepository(database)
-		userFeatureWaitlistRepository = postgres.NewUserFeatureWaitlistRepository(database)
-		featureViewStatsRepository    = postgres.NewFeatureViewStatsRepository(database)
+		userRepository                  = postgres.NewUserRepository(database)
+		onlineRepository                = postgres.NewOnlineRepository(database)
+		userFeatureWaitlistRepository   = postgres.NewUserFeatureWaitlistRepository(database)
+		featureViewStatsRepository      = postgres.NewFeatureViewStatsRepository(database)
+		userFavoriteCompanyRepository   = postgres.NewUserFavoriteCompanyRepository(database)
+		companyViewDailyStatsRepository = postgres.NewCompanyViewDailyStatsRepository(database)
 	)
 
 	var (
@@ -103,6 +105,8 @@ func main() {
 			userRepository,
 			userFeatureWaitlistRepository,
 			featureViewStatsRepository,
+			userFavoriteCompanyRepository,
+			companyViewDailyStatsRepository,
 		)
 	)
 
@@ -152,17 +156,23 @@ func main() {
 	r.GET("/organizers/clojure/welcome", organizerController.Welcome)
 
 	r.GET("/organizers/golang/companies/ukraine", organizerController.GolangCompaniesUkraine)
-	r.GET("/organizers/golang/companies", organizerController.Waitlist)
+	r.GET("/organizers/golang/companies", organizerController.Companies)
+	r.GET("/organizers/golang/companies/:company_alias", organizerController.Company)
 	r.GET("/organizers/golang/vacancies", organizerController.Waitlist)
-	r.GET("/organizers/rust/companies", organizerController.Waitlist)
+	r.GET("/organizers/rust/companies", organizerController.Companies)
+	r.GET("/organizers/rust/companies/:company_alias", organizerController.Company)
 	r.GET("/organizers/rust/vacancies", organizerController.Waitlist)
 	r.GET("/organizers/zig/companies", organizerController.Waitlist)
+	r.GET("/organizers/zig/companies/:company_alias", organizerController.Company)
 	r.GET("/organizers/zig/vacancies", organizerController.Waitlist)
 	r.GET("/organizers/scala/companies", organizerController.Waitlist)
+	r.GET("/organizers/scala/companies/:company_alias", organizerController.Company)
 	r.GET("/organizers/scala/vacancies", organizerController.Waitlist)
 	r.GET("/organizers/elixir/companies", organizerController.Waitlist)
+	r.GET("/organizers/elixir/companies/:company_alias", organizerController.Company)
 	r.GET("/organizers/elixir/vacancies", organizerController.Waitlist)
 	r.GET("/organizers/clojure/companies", organizerController.Waitlist)
+	r.GET("/organizers/clojure/companies/:company_alias", organizerController.Company)
 	r.GET("/organizers/clojure/vacancies", organizerController.Waitlist)
 
 	r.GET("/organizers/golang", found("/organizers/golang/companies"))
@@ -174,6 +184,8 @@ func main() {
 
 	r.GET("/api/v1/features/auto/waitlist/stats.json", organizerController.WaitlistStats)
 	r.POST("/api/v1/features/auto/waitlist/subscribe.json", organizerController.WaitlistSubscribe)
+	r.PATCH("/api/v1/companies/:company_id/favorite.json", organizerController.FavoriteCompany)
+	r.GET("/api/v1/companies/:company_id/views/stats/daily.json", organizerController.CompanyViewStats)
 
 	r.
 		GET("/auth/github", authController.GithubRedirect).
@@ -199,10 +211,11 @@ func main() {
 		StaticFile("/design/organizers-auth", "./public/design/organizer-main-page.html").
 		StaticFile("/design/organizers/golang/welcome", "./public/design/organizer-welcome.html").
 		StaticFile("/design/organizers/golang/companies/ukraine", "./public/design/golang-companies-organizer.html").
-		StaticFile("/design/organizers/golang/companies", "./public/design/golang-companies-organizer.html").
+		StaticFile("/design/organizers/golang/companies", "./public/design/organizer-companies.html").
 		StaticFile("/design/organizers/golang/vacancies", "./public/design/organizer-vacancies-subscribe.html").
 		StaticFile("/design/organizers/golang/vacancies/subscribe", "./public/design/organizer-vacancies-subscribe.html").
 		StaticFile("/design/organizers/golang/vacancies/unsubscribe", "./public/design/organizer-vacancies-unsubscribe.html").
+		GET("/design/organizers/golang/:company_alias", s("./public/design/organizer-statistics.html")).
 
 		// Design from ChatGPT
 		StaticFile("/design/wip/companies-and-connections", "./public/chatgpt-design/companies-and-connections.html").
@@ -299,5 +312,11 @@ func redirectFromWWW() gin.HandlerFunc {
 func found(path string) gin.HandlerFunc {
 	return func(c *gin.Context) {
 		c.Redirect(http.StatusFound, path)
+	}
+}
+
+func s(path string) gin.HandlerFunc {
+	return func(ctx *gin.Context) {
+		ctx.File(path)
 	}
 }

@@ -6,9 +6,24 @@ import (
 	"github.com/readytotouch/readytotouch/internal/domain"
 )
 
+const (
+	Go = 0
+)
+
+const (
+	CompanyTypeProduct = domain.CompanyTypeProduct
+	CompanyTypeStartup = domain.CompanyTypeStartup
+)
+
 type (
 	Organizer        = domain.Organizer
 	OrganizerFeature = domain.OrganizerFeature
+	CompanyStats     struct {
+		TotalViews         int64
+		LastMonthViews     int64
+		TotalFavorites     int64
+		LastMonthFavorites int64
+	}
 )
 
 type featureNavigation struct {
@@ -44,3 +59,10 @@ func toFeatureNavigation(path string) featureNavigation {
 		vacanciesActive: "",
 	}
 }
+
+var (
+	companyTypeName = map[domain.CompanyType]string{
+		CompanyTypeProduct: "Product",
+		CompanyTypeStartup: "Startup",
+	}
+)

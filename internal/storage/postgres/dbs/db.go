@@ -24,6 +24,15 @@ func New(db DBTX) *Queries {
 func Prepare(ctx context.Context, db DBTX) (*Queries, error) {
 	q := Queries{db: db}
 	var err error
+	if q.companyTotalViewsStmt, err = db.PrepareContext(ctx, companyTotalViews); err != nil {
+		return nil, fmt.Errorf("error preparing query CompanyTotalViews: %w", err)
+	}
+	if q.companyViewDailyStatsStmt, err = db.PrepareContext(ctx, companyViewDailyStats); err != nil {
+		return nil, fmt.Errorf("error preparing query CompanyViewDailyStats: %w", err)
+	}
+	if q.companyViewDailyStatsUpsertStmt, err = db.PrepareContext(ctx, companyViewDailyStatsUpsert); err != nil {
+		return nil, fmt.Errorf("error preparing query CompanyViewDailyStatsUpsert: %w", err)
+	}
 	if q.featureViewDailyStatsStmt, err = db.PrepareContext(ctx, featureViewDailyStats); err != nil {
 		return nil, fmt.Errorf("error preparing query FeatureViewDailyStats: %w", err)
 	}
@@ -41,6 +50,15 @@ func Prepare(ctx context.Context, db DBTX) (*Queries, error) {
 	}
 	if q.socialUserProfilesByUserStmt, err = db.PrepareContext(ctx, socialUserProfilesByUser); err != nil {
 		return nil, fmt.Errorf("error preparing query SocialUserProfilesByUser: %w", err)
+	}
+	if q.userFavoriteCompaniesStmt, err = db.PrepareContext(ctx, userFavoriteCompanies); err != nil {
+		return nil, fmt.Errorf("error preparing query UserFavoriteCompanies: %w", err)
+	}
+	if q.userFavoriteCompaniesStatsStmt, err = db.PrepareContext(ctx, userFavoriteCompaniesStats); err != nil {
+		return nil, fmt.Errorf("error preparing query UserFavoriteCompaniesStats: %w", err)
+	}
+	if q.userFavoriteCompaniesUpsertStmt, err = db.PrepareContext(ctx, userFavoriteCompaniesUpsert); err != nil {
+		return nil, fmt.Errorf("error preparing query UserFavoriteCompaniesUpsert: %w", err)
 	}
 	if q.userFeatureWaitlistStmt, err = db.PrepareContext(ctx, userFeatureWaitlist); err != nil {
 		return nil, fmt.Errorf("error preparing query UserFeatureWaitlist: %w", err)
@@ -101,6 +119,21 @@ func Prepare(ctx context.Context, db DBTX) (*Queries, error) {
 
 func (q *Queries) Close() error {
 	var err error
+	if q.companyTotalViewsStmt != nil {
+		if cerr := q.companyTotalViewsStmt.Close(); cerr != nil {
+			err = fmt.Errorf("error closing companyTotalViewsStmt: %w", cerr)
+		}
+	}
+	if q.companyViewDailyStatsStmt != nil {
+		if cerr := q.companyViewDailyStatsStmt.Close(); cerr != nil {
+			err = fmt.Errorf("error closing companyViewDailyStatsStmt: %w", cerr)
+		}
+	}
+	if q.companyViewDailyStatsUpsertStmt != nil {
+		if cerr := q.companyViewDailyStatsUpsertStmt.Close(); cerr != nil {
+			err = fmt.Errorf("error closing companyViewDailyStatsUpsertStmt: %w", cerr)
+		}
+	}
 	if q.featureViewDailyStatsStmt != nil {
 		if cerr := q.featureViewDailyStatsStmt.Close(); cerr != nil {
 			err = fmt.Errorf("error closing featureViewDailyStatsStmt: %w", cerr)
@@ -129,6 +162,21 @@ func (q *Queries) Close() error {
 	if q.socialUserProfilesByUserStmt != nil {
 		if cerr := q.socialUserProfilesByUserStmt.Close(); cerr != nil {
 			err = fmt.Errorf("error closing socialUserProfilesByUserStmt: %w", cerr)
+		}
+	}
+	if q.userFavoriteCompaniesStmt != nil {
+		if cerr := q.userFavoriteCompaniesStmt.Close(); cerr != nil {
+			err = fmt.Errorf("error closing userFavoriteCompaniesStmt: %w", cerr)
+		}
+	}
+	if q.userFavoriteCompaniesStatsStmt != nil {
+		if cerr := q.userFavoriteCompaniesStatsStmt.Close(); cerr != nil {
+			err = fmt.Errorf("error closing userFavoriteCompaniesStatsStmt: %w", cerr)
+		}
+	}
+	if q.userFavoriteCompaniesUpsertStmt != nil {
+		if cerr := q.userFavoriteCompaniesUpsertStmt.Close(); cerr != nil {
+			err = fmt.Errorf("error closing userFavoriteCompaniesUpsertStmt: %w", cerr)
 		}
 	}
 	if q.userFeatureWaitlistStmt != nil {
@@ -260,12 +308,18 @@ func (q *Queries) queryRow(ctx context.Context, stmt *sql.Stmt, query string, ar
 type Queries struct {
 	db                                    DBTX
 	tx                                    *sql.Tx
+	companyTotalViewsStmt                 *sql.Stmt
+	companyViewDailyStatsStmt             *sql.Stmt
+	companyViewDailyStatsUpsertStmt       *sql.Stmt
 	featureViewDailyStatsStmt             *sql.Stmt
 	featureViewDailyStatsUpsertStmt       *sql.Stmt
 	featureViewStatsStmt                  *sql.Stmt
 	featureViewStatsUpsertStmt            *sql.Stmt
 	socialUserProfilesStmt                *sql.Stmt
 	socialUserProfilesByUserStmt          *sql.Stmt
+	userFavoriteCompaniesStmt             *sql.Stmt
+	userFavoriteCompaniesStatsStmt        *sql.Stmt
+	userFavoriteCompaniesUpsertStmt       *sql.Stmt
 	userFeatureWaitlistStmt               *sql.Stmt
 	userFeatureWaitlistDailyStatsStmt     *sql.Stmt
 	userFeatureWaitlistStatsStmt          *sql.Stmt
@@ -290,12 +344,18 @@ func (q *Queries) WithTx(tx *sql.Tx) *Queries {
 	return &Queries{
 		db:                                    tx,
 		tx:                                    tx,
+		companyTotalViewsStmt:                 q.companyTotalViewsStmt,
+		companyViewDailyStatsStmt:             q.companyViewDailyStatsStmt,
+		companyViewDailyStatsUpsertStmt:       q.companyViewDailyStatsUpsertStmt,
 		featureViewDailyStatsStmt:             q.featureViewDailyStatsStmt,
 		featureViewDailyStatsUpsertStmt:       q.featureViewDailyStatsUpsertStmt,
 		featureViewStatsStmt:                  q.featureViewStatsStmt,
 		featureViewStatsUpsertStmt:            q.featureViewStatsUpsertStmt,
 		socialUserProfilesStmt:                q.socialUserProfilesStmt,
 		socialUserProfilesByUserStmt:          q.socialUserProfilesByUserStmt,
+		userFavoriteCompaniesStmt:             q.userFavoriteCompaniesStmt,
+		userFavoriteCompaniesStatsStmt:        q.userFavoriteCompaniesStatsStmt,
+		userFavoriteCompaniesUpsertStmt:       q.userFavoriteCompaniesUpsertStmt,
 		userFeatureWaitlistStmt:               q.userFeatureWaitlistStmt,
 		userFeatureWaitlistDailyStatsStmt:     q.userFeatureWaitlistDailyStatsStmt,
 		userFeatureWaitlistStatsStmt:          q.userFeatureWaitlistStatsStmt,

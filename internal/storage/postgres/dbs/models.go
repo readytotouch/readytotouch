@@ -35,7 +35,7 @@ func (e *FeatureWait) Scan(src interface{}) error {
 	case string:
 		*e = FeatureWait(s)
 	default:
-		return fmt.Errorf("unsupported scan type for Feature: %T", src)
+		return fmt.Errorf("unsupported scan type for FeatureWait: %T", src)
 	}
 	return nil
 }
@@ -112,6 +112,18 @@ func (ns NullSocialProvider) Value() (driver.Value, error) {
 	return string(ns.SocialProvider), nil
 }
 
+type Company struct {
+	ID        int64
+	CreatedAt time.Time
+	CreatedBy int64
+}
+
+type CompanyViewDailyStat struct {
+	CompanyID int64
+	CreatedAt time.Time
+	ViewCount int64
+}
+
 type FeatureViewDailyStat struct {
 	Feature   FeatureWait
 	CreatedAt time.Time
@@ -128,6 +140,14 @@ type User struct {
 	CreatedAt time.Time
 	UpdatedAt time.Time
 	DeletedAt sql.NullTime
+}
+
+type UserFavoriteCompany struct {
+	UserID    int64
+	CompanyID int64
+	Favorite  bool
+	CreatedAt time.Time
+	UpdatedAt time.Time
 }
 
 type UserFeatureWaitlist struct {
