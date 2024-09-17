@@ -599,7 +599,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "", // "Multi-platform application for developers"
 		},
 
 		// Tech | Grafana Labs
