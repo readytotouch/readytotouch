@@ -17,14 +17,15 @@ import (
 )
 
 type Controller struct {
-	userRepository                *postgres.UserRepository
-	userFeatureWaitlistRepository *postgres.UserFeatureWaitlistRepository
-	featureViewStatsRepository    *postgres.FeatureViewStatsRepository
-	userFavoriteCompanyRepository *postgres.UserFavoriteCompanyRepository
+	userRepository                  *postgres.UserRepository
+	userFeatureWaitlistRepository   *postgres.UserFeatureWaitlistRepository
+	featureViewStatsRepository      *postgres.FeatureViewStatsRepository
+	userFavoriteCompanyRepository   *postgres.UserFavoriteCompanyRepository
+	companyViewDailyStatsRepository *postgres.CompanyViewDailyStatsRepository
 }
 
-func NewController(userRepository *postgres.UserRepository, userFeatureWaitlistRepository *postgres.UserFeatureWaitlistRepository, featureViewStatsRepository *postgres.FeatureViewStatsRepository, userFavoriteCompanyRepository *postgres.UserFavoriteCompanyRepository) *Controller {
-	return &Controller{userRepository: userRepository, userFeatureWaitlistRepository: userFeatureWaitlistRepository, featureViewStatsRepository: featureViewStatsRepository, userFavoriteCompanyRepository: userFavoriteCompanyRepository}
+func NewController(userRepository *postgres.UserRepository, userFeatureWaitlistRepository *postgres.UserFeatureWaitlistRepository, featureViewStatsRepository *postgres.FeatureViewStatsRepository, userFavoriteCompanyRepository *postgres.UserFavoriteCompanyRepository, companyViewDailyStatsRepository *postgres.CompanyViewDailyStatsRepository) *Controller {
+	return &Controller{userRepository: userRepository, userFeatureWaitlistRepository: userFeatureWaitlistRepository, featureViewStatsRepository: featureViewStatsRepository, userFavoriteCompanyRepository: userFavoriteCompanyRepository, companyViewDailyStatsRepository: companyViewDailyStatsRepository}
 }
 
 func (c *Controller) Welcome(ctx *gin.Context) {
@@ -90,11 +91,7 @@ func (c *Controller) Companies(ctx *gin.Context) {
 			continue
 		}
 
-		if organizers.CompanyStartupMap[company.LinkedInProfile.Alias] {
-			company.Type = domain.CompanyTypeStartup
-		} else {
-			company.Type = domain.CompanyTypeProduct
-		}
+		company.Type = organizers.ToCompanyType(company.LinkedInProfile.Alias)
 
 		// nil slice mean skip company for the language
 		if company.Vacancies[organizerFeature.Organizer.Language] == nil {
@@ -168,7 +165,61 @@ func (c *Controller) Company(ctx *gin.Context) {
 		return
 	}
 
-	// @TODO: Implement company view stats
+	company.ID = organizers.CompanyAliasMap[company.LinkedInProfile.Alias]
+	if company.ID == 0 {
+		// make generate-company-code
+
+		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Company not found"))
+
+		return
+	}
+
+	company.Type = organizers.ToCompanyType(company.LinkedInProfile.Alias)
+
+	organizerFeature, ok := c.organizerFeature(featurePath)
+	if !ok {
+		// Should be unreachable
+		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Feature not found"))
+
+		return
+	}
+
+	var (
+		authUserID = domain.ContextGetUserID(ctx)
+	)
+	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)
+	if err != nil {
+		// @TODO logging
+
+		// NOP, continue
+	}
+
+	// Should be optimized
+	userCompanyFavoriteMap, err := c.userFavoriteCompanyRepository.GetMap(ctx, authUserID)
+	if err != nil {
+		// @TODO logging
+
+		// NOP, continue
+	}
+
+	err = c.companyViewDailyStatsRepository.Upsert(ctx, company.ID, time.Now().UTC())
+	if err != nil {
+		// @TODO logging
+
+		// NOP, continue
+	}
+
+	content := template.OrganizersCompany(
+		organizerFeature,
+		headerProfiles,
+		company,
+		db.UkrainianUniversities(),
+		userCompanyFavoriteMap[company.ID],
+		c.companyStats(ctx, company.ID),
+		c.redirect(organizerFeature.Path+"/"+uri.CompanyAlias),
+	)
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
 }
 
 func (c *Controller) Waitlist(ctx *gin.Context) {
@@ -268,6 +319,43 @@ func (c *Controller) WaitlistSubscribe(ctx *gin.Context) {
 	}
 
 	ctx.JSON(http.StatusOK, nil)
+}
+
+func (c *Controller) CompanyViewStats(ctx *gin.Context) {
+	type (
+		companyURI struct {
+			CompanyID int64 `uri:"company_id" binding:"required"`
+		}
+	)
+
+	var (
+		uri companyURI
+	)
+
+	err := ctx.ShouldBindUri(&uri)
+	if err != nil {
+		ctx.JSON(http.StatusBadRequest, &domain.ErrorResponse{
+			ErrorMessage: err.Error(),
+		})
+		return
+	}
+
+	var (
+		to   = time.Now().UTC().Truncate(24 * time.Hour)
+		from = to.AddDate(0, -1, 0)
+	)
+
+	viewsDailyStats, err := c.companyViewDailyStatsRepository.DailyCountStats(ctx, uri.CompanyID, from, to)
+	if err != nil {
+		// @TODO logging
+
+		ctx.JSON(http.StatusInternalServerError, &domain.ErrorResponse{
+			ErrorMessage: err.Error(), // Yes, we are leaking the error message to the client, it's fine for now
+		})
+		return
+	}
+
+	ctx.JSON(http.StatusOK, viewsDailyStats)
 }
 
 func (c *Controller) FavoriteCompany(ctx *gin.Context) {
@@ -512,6 +600,34 @@ func (c *Controller) fetchStats(
 			TotalCount: viewsTotalCount,
 		},
 	}, nil
+}
+
+func (c *Controller) companyStats(ctx *gin.Context, companyID int64) template.CompanyStats {
+	var (
+		to   = time.Now().UTC().Truncate(24 * time.Hour)
+		from = to.AddDate(0, -1, 0)
+	)
+
+	totalViews, lastMonthViews, err := c.companyViewDailyStatsRepository.Stats(ctx, companyID, from)
+	if err != nil {
+		// @TODO logging
+
+		// NOP, continue
+	}
+
+	totalFavorites, lastMonthFavorites, err := c.userFavoriteCompanyRepository.Stats(ctx, companyID, from)
+	if err != nil {
+		// @TODO logging
+
+		// NOP, continue
+	}
+
+	return template.CompanyStats{
+		TotalViews:         totalViews,
+		LastMonthViews:     lastMonthViews,
+		TotalFavorites:     totalFavorites,
+		LastMonthFavorites: lastMonthFavorites,
+	}
 }
 
 func (c *Controller) getHeaderProfiles(ctx *gin.Context, userID int64) ([]domain.SocialProviderUser, error) {

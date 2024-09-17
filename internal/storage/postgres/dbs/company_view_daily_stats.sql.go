@@ -11,16 +11,27 @@ import (
 )
 
 const companyTotalViews = `-- name: CompanyTotalViews :one
-SELECT SUM(view_count)
+SELECT SUM(view_count)                                                       AS count,
+       SUM(view_count) FILTER ( WHERE created_at >= $1::DATE ) AS count_since
 FROM company_view_daily_stats s
-WHERE s.company_id = $1
+WHERE s.company_id = $2
 `
 
-func (q *Queries) CompanyTotalViews(ctx context.Context, companyID int64) (int64, error) {
-	row := q.queryRow(ctx, q.companyTotalViewsStmt, companyTotalViews, companyID)
-	var sum int64
-	err := row.Scan(&sum)
-	return sum, err
+type CompanyTotalViewsParams struct {
+	From      time.Time
+	CompanyID int64
+}
+
+type CompanyTotalViewsRow struct {
+	Count      int64
+	CountSince int64
+}
+
+func (q *Queries) CompanyTotalViews(ctx context.Context, arg CompanyTotalViewsParams) (CompanyTotalViewsRow, error) {
+	row := q.queryRow(ctx, q.companyTotalViewsStmt, companyTotalViews, arg.From, arg.CompanyID)
+	var i CompanyTotalViewsRow
+	err := row.Scan(&i.Count, &i.CountSince)
+	return i, err
 }
 
 const companyViewDailyStats = `-- name: CompanyViewDailyStats :many

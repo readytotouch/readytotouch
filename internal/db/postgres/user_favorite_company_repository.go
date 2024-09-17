@@ -2,6 +2,7 @@ package postgres
 
 import (
 	"context"
+	"database/sql"
 	"time"
 
 	"github.com/readytotouch/readytotouch/internal/storage/postgres/dbs"
@@ -45,4 +46,19 @@ func (r *UserFavoriteCompanyRepository) GetMap(
 	}
 
 	return result, nil
+}
+
+func (r *UserFavoriteCompanyRepository) Stats(ctx context.Context, companyID int64, from time.Time) (int64, int64, error) {
+	row, err := r.db.Queries().UserFavoriteCompaniesStats(ctx, dbs.UserFavoriteCompaniesStatsParams{
+		From:      from,
+		CompanyID: companyID,
+	})
+	if err == sql.ErrNoRows {
+		return 0, 0, nil
+	}
+	if err != nil {
+		return 0, 0, err
+	}
+
+	return row.Count, row.CountSince, nil
 }

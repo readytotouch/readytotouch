@@ -256,9 +256,13 @@ func StreamOrganizersCompanies(qw422016 *qt422016.Writer,
 		}
 		qw422016.N().S(`
 
-                <button class="button-group__item" title="View statistics">
+                <a href="`)
+		qw422016.E().S(organizerFeature.Path)
+		qw422016.N().S(`/`)
+		qw422016.E().S(company.LinkedInProfile.Alias)
+		qw422016.N().S(`/" class="button-group__item" title="View statistics">
                   <img width="20" height="20" alt="icon stats" src="/assets/images/pages/common/stats.svg" />
-                </button>
+                </a>
               </aside>
               <figure class="card__header">
                 <div class="card__image-overlay card__image-overlay--small">
@@ -271,8 +275,6 @@ func StreamOrganizersCompanies(qw422016 *qt422016.Writer,
                   />
                 </div>
                 <figcaption class="card__header-caption">
-                  `)
-		qw422016.N().S(`
                   <a href="`)
 		qw422016.E().S(company.URL)
 		qw422016.N().S(`" class="card__headline vacancy__link">`)

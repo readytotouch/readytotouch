@@ -16,6 +16,7 @@ FROM GENERATE_SERIES(
 ORDER BY days.day;
 
 -- name: CompanyTotalViews :one
-SELECT SUM(view_count)
+SELECT SUM(view_count)                                                       AS count,
+       SUM(view_count) FILTER ( WHERE created_at >= sqlc.arg('from')::DATE ) AS count_since
 FROM company_view_daily_stats s
 WHERE s.company_id = @company_id;

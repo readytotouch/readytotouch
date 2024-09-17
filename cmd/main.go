@@ -48,11 +48,12 @@ func main() {
 	redisClient := redis.MustClient(context.Background(), "redis:6379")
 
 	var (
-		userRepository                = postgres.NewUserRepository(database)
-		onlineRepository              = postgres.NewOnlineRepository(database)
-		userFeatureWaitlistRepository = postgres.NewUserFeatureWaitlistRepository(database)
-		featureViewStatsRepository    = postgres.NewFeatureViewStatsRepository(database)
-		userFavoriteCompanyRepository = postgres.NewUserFavoriteCompanyRepository(database)
+		userRepository                  = postgres.NewUserRepository(database)
+		onlineRepository                = postgres.NewOnlineRepository(database)
+		userFeatureWaitlistRepository   = postgres.NewUserFeatureWaitlistRepository(database)
+		featureViewStatsRepository      = postgres.NewFeatureViewStatsRepository(database)
+		userFavoriteCompanyRepository   = postgres.NewUserFavoriteCompanyRepository(database)
+		companyViewDailyStatsRepository = postgres.NewCompanyViewDailyStatsRepository(database)
 	)
 
 	var (
@@ -105,6 +106,7 @@ func main() {
 			userFeatureWaitlistRepository,
 			featureViewStatsRepository,
 			userFavoriteCompanyRepository,
+			companyViewDailyStatsRepository,
 		)
 	)
 
@@ -183,6 +185,7 @@ func main() {
 	r.GET("/api/v1/features/auto/waitlist/stats.json", organizerController.WaitlistStats)
 	r.POST("/api/v1/features/auto/waitlist/subscribe.json", organizerController.WaitlistSubscribe)
 	r.PATCH("/api/v1/companies/:company_id/favorite.json", organizerController.FavoriteCompany)
+	r.GET("/api/v1/companies/:company_id/views/stats/daily.json", organizerController.CompanyViewStats)
 
 	r.
 		GET("/auth/github", authController.GithubRedirect).

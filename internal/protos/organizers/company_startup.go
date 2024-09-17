@@ -1,5 +1,7 @@
 package organizers
 
+import "github.com/readytotouch/readytotouch/internal/domain"
+
 // https://chatgpt.com/share/66e88b74-6470-8007-825c-e26def03e5f6
 var (
 	CompanyStartupMap = map[string]bool{
@@ -32,3 +34,11 @@ var (
 		"checkout":        true,
 	}
 )
+
+func ToCompanyType(alias string) domain.CompanyType {
+	if CompanyStartupMap[alias] {
+		return domain.CompanyTypeStartup
+	}
+
+	return domain.CompanyTypeProduct
+}

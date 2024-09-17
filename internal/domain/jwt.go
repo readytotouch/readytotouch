@@ -34,11 +34,6 @@ func ContextGetUser(ctx *gin.Context) (*JwtUser, bool) {
 }
 
 func ContextGetUserID(ctx *gin.Context) int64 {
-	// @TODO remove after debugging
-	if true {
-		return 1
-	}
-
 	user, ok := ContextGetUser(ctx)
 	if ok {
 		return user.ID

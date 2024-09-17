@@ -18,6 +18,12 @@ const (
 type (
 	Organizer        = domain.Organizer
 	OrganizerFeature = domain.OrganizerFeature
+	CompanyStats     struct {
+		TotalViews         int64
+		LastMonthViews     int64
+		TotalFavorites     int64
+		LastMonthFavorites int64
+	}
 )
 
 type featureNavigation struct {
