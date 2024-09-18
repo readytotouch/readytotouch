@@ -1992,7 +1992,8 @@ func Companies() []domain.Company {
 				domain.Haskell: nil,
 			},
 			ShortDescription: "All-inclusive sales app"
-
+		},
+		
 		// Some
 		// Some | Careem
 		{
