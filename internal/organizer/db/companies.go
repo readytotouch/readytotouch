@@ -599,7 +599,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // "Multi-platform application for developers"
+			ShortDescription: "Multi-platform application for developers"
 		},
 
 		// Tech | Grafana Labs
@@ -633,7 +633,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "Open source monitoring and observability platform"
 		},
 
 		// Tech | HashiCorp
@@ -667,7 +667,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "American software company "
 		},
 
 		// Tech | CrowdStrike
@@ -775,7 +775,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "Relational open-source database with PostgreSQL"
 		},
 
 		// Tech | ScyllaDB
@@ -811,7 +811,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "Open Source NoSQL Database with better performance"
 		},
 
 		// Tech | Percona
@@ -847,7 +847,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "A software development company that helps make databases and applications work better"
 		},
 
 		// Tech | Elastic
