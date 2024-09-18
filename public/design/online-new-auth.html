@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Yet another anonymous work search</title>
+	<meta name="description" content="Yet another anonymous work search">
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<link rel='preload'
+				href='/assets/fonts/montserrat/montserrat-latin-700.woff2'
+				as='font'
+				type='font/woff2'
+				crossorigin
+	>
+	<link rel='preload'
+				href='/assets/fonts/inter/inter-latin-regular.woff2'
+				as='font'
+				type='font/woff2'
+				crossorigin
+	>
+	<link rel='preload'
+				href='/assets/fonts/inter/inter-latin-500.woff2'
+				as='font'
+				type='font/woff2'
+				crossorigin
+	>
+
+	<style>.txt-ellipsis-2{display:block;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}.txt-ellipsis-3{display:block;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}@font-face{font-family:Inter;font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/inter/inter-latin-regular.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Inter;font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/inter/inter-latin-ext-regular.woff2) format("woff2");unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Inter;font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/inter/inter-latin-500.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Inter;font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/inter/inter-latin-ext-500.woff2) format("woff2");unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Montserrat;font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/montserrat/montserrat-latin-700.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Montserrat;font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/montserrat/montserrat-latin-ext-700.woff2) format("woff2");unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}.d-none{display:none!important}.mt-16{margin-top:16px!important}.pt-16{padding-top:16px!important}.mb-16{margin-bottom:16px!important}.pb-16{padding-bottom:16px!important}.ml-16{margin-left:16px!important}.pl-16{padding-left:16px!important}.mr-16{margin-right:16px!important}.pr-16{padding-right:16px!important}.mt-24{margin-top:24px!important}.pt-24{padding-top:24px!important}.mb-24{margin-bottom:24px!important}.pb-24{padding-bottom:24px!important}.ml-24{margin-left:24px!important}.pl-24{padding-left:24px!important}.mr-24{margin-right:24px!important}.pr-24{padding-right:24px!important}.mt-26{margin-top:26px!important}.pt-26{padding-top:26px!important}.mb-26{margin-bottom:26px!important}.pb-26{padding-bottom:26px!important}.ml-26{margin-left:26px!important}.pl-26{padding-left:26px!important}.mr-26{margin-right:26px!important}.pr-26{padding-right:26px!important}.mt-32{margin-top:32px!important}.pt-32{padding-top:32px!important}.mb-32{margin-bottom:32px!important}.pb-32{padding-bottom:32px!important}.ml-32{margin-left:32px!important}.pl-32{padding-left:32px!important}.mr-32{margin-right:32px!important}.pr-32{padding-right:32px!important}.column-gap-2{-webkit-column-gap:2px!important;-moz-column-gap:2px!important;column-gap:2px!important}.column-gap-4{-webkit-column-gap:4px!important;-moz-column-gap:4px!important;column-gap:4px!important}.column-gap-8{-webkit-column-gap:8px!important;-moz-column-gap:8px!important;column-gap:8px!important}.row-gap-2{row-gap:2px!important}.row-gap-4{row-gap:4px!important}.row-gap-8{row-gap:8px!important}html{box-sizing:border-box}*,:before,:after{box-sizing:inherit}html{-webkit-text-size-adjust:100%;-moz-text-size-adjust:100%;text-size-adjust:100%}body{-webkit-overflow-scrolling:touch}html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}a{background-color:transparent;color:#21212b}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}dfn{font-style:italic}mark{background-color:#ff0;color:#000}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace;font-size:1em}hr{box-sizing:content-box;height:0;overflow:visible}button,input,select,textarea{margin:0;font:inherit}button,input{overflow:visible}button,select{text-transform:none}button,[type=button],[type=reset],[type=submit]{-webkit-appearance:button;-moz-appearance:button;appearance:button}input,textarea,button,select,a{-webkit-tap-highlight-color:transparent}address{font-style:normal}a:focus:not(:focus-visible),select:focus:not(:focus-visible),input:focus:not(:focus-visible),textarea:focus:not(:focus-visible){outline:0}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{padding:0;border-style:none}button,input[type=reset],input[type=button],input[type=submit]{cursor:pointer}button[disabled],input[disabled]{cursor:default}button{padding:0;border:0;border-radius:0;background:0 0;line-height:1;-webkit-appearance:none;-moz-appearance:none;appearance:none}button:focus:not(:focus-visible){outline:0}a,a:hover{text-decoration:none}[href="javascript:void();"],[href="javascript:"]{cursor:default}ul,ol{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-spacing:0;border-collapse:collapse}input[type=text],input[type=password],input[type=date],input[type=datetime],input[type=datetime-local],input[type=email],input[type=month],input[type=number],input[type=search],input[type=tel],input[type=time],input[type=url],input[type=week],textarea{box-sizing:border-box}[type=checkbox],[type=radio]{box-sizing:border-box;margin:0;padding:0}input[type=search]{-webkit-appearance:textfield;-moz-appearance:textfield;appearance:textfield;outline-offset:-2px}input[type=search]::-webkit-search-decoration,input[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;appearance:none}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto;-webkit-appearance:none;appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;appearance:button;font:inherit}input[type=number]{-webkit-appearance:textfield;-moz-appearance:textfield;appearance:textfield}select{width:100%;height:20px;border:0;background:0 0}textarea{overflow:auto;border:0;resize:none}::-webkit-input-placeholder{color:#777;line-height:normal}::-moz-placeholder{color:#777;line-height:normal}::placeholder{color:#777;line-height:normal}[hidden]{display:none}.button{display:-webkit-inline-flex;display:inline-flex;-webkit-align-items:center;align-items:center;-webkit-justify-content:center;justify-content:center;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;height:48px;padding-right:32px;padding-left:32px;transition:background-color .225s ease,box-shadow .225s ease,border-color .225s ease,color .225s ease;border:1px solid transparent;border-radius:8px;font-family:"Inter",arial,helvetica neue,helvetica,sans-serif;font-size:18px;font-weight:500}.button:focus-visible{border-radius:4px;outline:0;box-shadow:0 0 0 2px #000,0 0 0 3px #fff}.button--small-padding{padding-right:24px;padding-left:24px}.button--small{height:40px;padding-right:24px;padding-left:24px}.button--medium{height:44px;padding-right:20px;padding-left:20px}.button--black{border-width:2px;border-color:#1c1f29;background-color:#1c1f29;color:#fff}.button--black:hover{border-color:#303647;background-color:#303647}.button--black:active{border-color:#2f2c6d;background-color:#2f2c6d}.button--black:focus-visible{border-color:#b8b6e2;background-color:#3f3a92;box-shadow:none}.button--black:disabled{border-color:#ededf8;background-color:#ededf8;color:#9695a5}.button--secondary{padding:0 24px;border:2px solid #1c1f29;background-color:transparent}.button--secondary:hover{border-color:#3f3a92;color:#3f3a92}.button--secondary:active{border-color:#2f2c6d;color:#2f2c6d}.button--secondary:focus-visible{border-color:#b8b6e2;box-shadow:none;color:#111028}.button--secondary:disabled{border-color:#96969c;color:#96969c}.button--empty,.button--empty-icon{-webkit-column-gap:8px;-moz-column-gap:8px;column-gap:8px;border-width:2px;color:#1c1f29;font-weight:400}.button--empty:hover,.button--empty-icon:hover{background-color:#ebedf5;color:#3f3a92}.button--empty:hover svg,.button--empty-icon:hover svg{fill:#3f3a92}.button--empty:active,.button--empty-icon:active{background-color:transparent;color:#2f2c6d}.button--empty:active svg,.button--empty-icon:active svg{fill:#2f2c6d}.button--empty:focus-visible,.button--empty-icon:focus-visible{border-color:#b8b6e2;background-color:#ededf8;box-shadow:none;color:#3f3a92}.button--empty:focus-visible svg,.button--empty-icon:focus-visible svg{fill:#3f3a92}.button--empty:disabled,.button--empty.disabled,.button--empty-icon:disabled,.button--empty-icon.disabled{color:#9695a5}.button--empty:disabled svg,.button--empty.disabled svg,.button--empty-icon:disabled svg,.button--empty-icon.disabled svg{fill:#9695a5}.button--empty-icon{padding:0}.button--empty-icon svg{width:20px;height:20px}.button--outline-icon{padding:0;border:2px solid #dddde0;background-color:transparent}.button--outline-icon svg{width:20px;height:20px}.button--outline-icon:hover{border-color:#1c1f29;color:#1c1f29}.button--outline-icon:active{border-color:#dddde0;color:#1c1f29}.button--outline-icon:focus-visible{border-color:#b8b6e2;box-shadow:none;color:#111028}.button--outline-icon:disabled{border-color:#96969c;color:#96969c}.button--gray{border-width:2px;border-color:#ededf8;background-color:#ededf8;color:#111028}.button--gray:hover{color:#3f3a92}.button--gray:active{color:#2f2c6d}.button--gray:focus-visible{border-color:#b8b6e2;box-shadow:none;color:#3f3a92}.button--gray:disabled,.button--gray.disabled{color:#b5b5be}.button--gray2{padding-right:24px;padding-left:24px;border-width:2px;border-radius:4px;border-color:#ededf8;background-color:#ededf8;color:#111028}.button--gray2:hover{color:#3f3a92}.button--gray2:active{color:#2f2c6d}.button--gray2:focus-visible{border:2px solid #b8b6e2;box-shadow:none;color:#3f3a92}.button--gray2:disabled{background-color:#ededf8;color:#9695a5}.button--gray3{border-width:2px;border-radius:4px;border-color:#dcdbf0;background-color:#dcdbf0;color:#111028}.button--gray3:hover{color:#3f3a92}.button--gray3:active{color:#2f2c6d}.button--gray3:focus-visible{border:2px solid #b8b6e2;box-shadow:none;color:#3f3a92}.button--gray3:disabled{background-color:#ededf8;color:#9695a5}.button--white{border-color:#fff;background-color:#fff;box-shadow:0 0 40px rgba(0,0,0,.15);color:#000}.button--white:hover,.button--white:active{border-color:#f2f2f2;background-color:#f2f2f2}.button--white-shadow{border-color:#fff;background-color:#fff;color:#000}.button--white-shadow:hover,.button--white-shadow:active{box-shadow:0 6px 16px #e1e1e1}.button--bordered-black{border-width:3px;border-color:#000;background-color:#fff;color:#000}.button--bordered-black:hover,.button--bordered-black:active{background-color:#000;color:#fff}.button--bordered-black-transparent{border-width:3px;border-color:#000;background-color:transparent;color:#000}.button--bordered-black-transparent:hover,.button--bordered-black-transparent:active{background-color:#000;color:#fff}.button--bordered-light{border-width:2px;border-color:#1c1f29;color:#1c1f29}.button--bordered-light:hover,.button--bordered-light:active{background-color:#ebedf5;color:#1c1f29}.button--bordered-white{border-width:2px;border-color:#dddde0;color:#1c1f29}.button--bordered-white:hover,.button--bordered-white:active{border-color:#1c1f29;color:#1c1f29}.button--bordered-black-blank{border-width:3px;border-color:#000;color:#000}.button--bordered-black-blank:hover,.button--bordered-black-blank:active{background-color:#000;color:#fff}.button--bordered-gray{padding-right:24px;padding-left:24px;border-width:2px;border-color:#c4c6d3;color:#1c1f29;color:#000}.button--bordered-gray:hover,.button--bordered-gray:active{border-color:#1c1f29}.button--bordered-gray:focus-visible{border-radius:8px;border-color:#b3c5ff;box-shadow:initial}.button--bordered-gray-disabled{border-color:#e8e8e8;color:#969696;cursor:default;pointer-events:none}.button.in-respond{border-color:#eeeff1;background-color:#eeeff1;color:#828282}.button--light-link{height:auto;padding:0;color:#96969c;font-weight:500}.button--light-link:hover,.button--light-link:active{color:#3f3a92}.favorite{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-justify-content:center;justify-content:center;width:48px;height:48px;cursor:pointer}.favorite .favorite__icon{pointer-events:none}.favorite .favorite__icon path{transition:fill .225s ease;stroke-width:2px;stroke:#000;fill:none}.favorite.in-favorite .favorite__icon path{fill:#000}.favorite__icon{width:20px;height:20px}.action{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-justify-content:center;justify-content:center;width:50px;height:50px;border:2px solid #000;border-radius:3px;cursor:pointer}.action__button-img{pointer-events:none}.custom-icon{display:inline-block;width:16px;height:16px;transition:color .225s ease,fill .225s ease;stroke-width:0;stroke:currentcolor;fill:currentcolor}.bold{font-weight:700}.badge{display:-webkit-inline-flex;display:inline-flex;-webkit-align-items:center;align-items:center;height:32px;padding-right:16px;padding-left:16px;border-radius:100px;font-size:16px}.badge--work-in-progress{background-color:#dbe1ff;color:#003ea6}.badge--new{background-color:#e7deff;color:#4c21bb}.main-container{z-index:40;max-width:1216px;margin:0 auto;color:#020111}body{display:grid;grid-template-rows:auto 1fr auto;min-height:100%;color:#21212b;font-family:"Inter",arial,helvetica neue,helvetica,sans-serif;font-size:16px}.main-wrapper{min-height:calc(100vh - 300px);background-color:#f5f5f9;background-image:url(/assets/images/pages/common/home_top_bg.svg);background-repeat:no-repeat;background-position:center top;background-size:1440px 280px}.header{display:-webkit-flex;display:flex;z-index:50;-webkit-align-items:center;align-items:center;height:64px}.header__wrapper{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-justify-content:space-between;justify-content:space-between;width:1216px;height:100%;margin:0 auto}.header__logo{display:-webkit-flex;display:flex;gap:12px;-webkit-align-items:center;align-items:center}.header__logo-title{color:#1d1b1e;font-family:montserrat,verdana,roboto,sans-serif;font-size:19px;font-weight:700;letter-spacing:-.03em;line-height:1}.header__profile{position:relative;font-size:0}.header__nav{display:-webkit-flex;display:flex;gap:8px;margin-left:auto}.header__nav-link{position:relative;padding:6.5px 16px;transition:all .225s ease;border-radius:48px;color:#4d515c;font-size:18px;font-weight:500;line-height:150%}.header__nav-link:hover{color:#21212b}.header__nav-link.active{background-color:#ededf8;color:#21212b}.header__stars{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;margin-left:auto}.header__profile-button{width:40px;height:40px;margin-left:24px;overflow:hidden;border-radius:50%}.header__profile-button img{display:block;width:inherit;height:inherit}.modal-profile.active{display:-webkit-flex;display:flex;pointer-events:all}.modal-profile{display:none;position:absolute;top:48px;right:0;-webkit-flex-direction:column;flex-direction:column;width:540px;border-radius:8px;background:#fff;pointer-events:none;-webkit-filter:drop-shadow(-1px 0 20px rgba(28,24,34,.05)) drop-shadow(0 1px 5px rgba(14,11,17,.15));filter:drop-shadow(-1px 0 20px rgba(28,24,34,.05)) drop-shadow(0 1px 5px rgba(14,11,17,.15))}.modal-profile__profile{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column}.modal-profile__profile-info{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;padding-top:24px;padding-right:24px;padding-left:24px;-webkit-column-gap:12px;-moz-column-gap:12px;column-gap:12px}.modal-profile__profile-name{width:100%;color:#1d1b1e;font-size:18px;font-weight:500;line-height:1.3333333333}.modal-profile__user-photo{width:40px;height:40px;border-radius:50%}.modal-profile__profile-list{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;margin:16px 0}.modal-profile__link{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;padding:8px 24px;-webkit-column-gap:12px;-moz-column-gap:12px;column-gap:12px;transition:color .255s ease,background-color .255s ease;color:#4d515c;font-size:18px;line-height:1.3333333333}.modal-profile__link:hover{background-color:#ebedf5;color:#1d1b1e}.modal-profile__log-out{padding:24px 24px 32px;border-top:1px solid #edeefe}.modal-profile__button{color:#4d515c;font-size:18px;line-height:1.3333333333}.footer{display:-webkit-flex;display:flex;-webkit-align-items:stretch;align-items:stretch;height:392px;background-color:#f5f5f9}.footer__overlay{display:-webkit-flex;display:flex;-webkit-align-items:stretch;align-items:stretch;width:100%;padding-right:24px;padding-bottom:24px;padding-left:24px;border-radius:60px;background:#fff;background-clip:content-box}.footer__wrapper{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;width:100%;padding:64px 88px 32px}.footer__group{display:-webkit-flex;display:flex;-webkit-justify-content:space-between;justify-content:space-between}.footer__info{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column}.footer__title-link{color:#1d1b1e;font-family:montserrat,verdana,roboto,sans-serif;font-size:19px;font-weight:700;letter-spacing:-.03em;line-height:1}.footer__subtitle{margin-top:16px;color:#4d515c;font-size:18px;line-height:1.3333333333}.footer__ukraine-map{display:block;margin-top:32px}.footer__right-side{display:-webkit-flex;display:flex}.footer__support{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;width:210px;row-gap:16px;margin-left:40px}.footer__support-figure{display:-webkit-flex;display:flex;-webkit-column-gap:8px;-moz-column-gap:8px;column-gap:8px}.footer__link{width:100%;-webkit-column-gap:8px;-moz-column-gap:8px;column-gap:8px}.footer__support-icon-box{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-justify-content:center;justify-content:center;width:24px;height:24px}.footer__copyrights{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;margin-top:auto;padding-top:24px;-webkit-column-gap:6px;-moz-column-gap:6px;column-gap:6px;border-top:1px solid #f5f5f9;color:#7e8596;font-size:16px;line-height:1.375}</style>
+	<style>.txt-ellipsis-2{display:block;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}.txt-ellipsis-3{display:block;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}.container{max-width:1216px;margin:0 auto;overflow:hidden}.hero.auth .hero__main{margin-bottom:0}.hero__wrapper{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;max-width:1216px;margin:0 auto;padding:52px 0}.hero__top-flag{display:block;margin-right:auto;margin-bottom:16px;margin-left:auto}.hero__header{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-justify-content:space-between;justify-content:space-between;margin-bottom:24px}.hero__status{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;color:#9b9db5;font-size:18px;line-height:150%;gap:12px}.hero__progress{padding:2px 16px 3px;border-radius:100px;background:#ecf2ff;color:#5484ff}.hero__link{display:-webkit-flex;display:flex;gap:8px}.hero__link:hover span{border-bottom:1px solid #fff;color:#fff}.hero__link:hover svg path{transition:.225s;stroke:#fff}.hero__link-title{transition:border .225s,color .225s;border-bottom:1px solid #c6cad2;color:#c6cad2;font-size:18px;font-weight:500;line-height:130%}.hero__main{max-width:720px;margin-right:auto;margin-bottom:32px;margin-left:auto;text-align:center}.hero__title{margin-bottom:24px;color:#1d1b1e;font-size:56px;font-weight:500;line-height:1.2}.hero__subtitle{color:#4d515c;font-size:18px;line-height:1.3333333333}.hero__buttons-group{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;-webkit-align-items:center;align-items:center;row-gap:16px}.hero__button{min-width:316px;-webkit-column-gap:8px;-moz-column-gap:8px;column-gap:8px}.hero__button-icon{width:24px;height:24px}.top-projects__container{padding-top:52px;padding-bottom:52px}.top-projects__group{display:-webkit-flex;display:flex;-webkit-flex-wrap:wrap;flex-wrap:wrap;-webkit-justify-content:center;justify-content:center;max-width:696px;margin-right:auto;margin-left:auto;-webkit-column-gap:48px;-moz-column-gap:48px;column-gap:48px;row-gap:32px}.top-projects__figure{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-justify-content:center;justify-content:center;width:200px;height:48px}.project-statistics__container{padding-top:52px;padding-bottom:52px;overflow:initial}.project-statistics__header{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;margin-bottom:40px}.project-statistics__headline{color:#1d1b1e;font-size:44px;font-weight:500;line-height:1.2;white-space:nowrap}.project-statistics__description{max-width:560px;margin-left:auto;color:#4d515c;font-size:18px;line-height:1.3333333333}.stats{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;gap:32px;margin-bottom:32px}.stats__item{padding:24px 0 16px;border-radius:20px;background:#fff}.stats__header{display:-webkit-flex;display:flex;-webkit-align-items:flex-end;align-items:flex-end;-webkit-justify-content:space-between;justify-content:space-between;padding-right:16px;padding-left:16px}.stats__title{color:#1d1b1e;font-size:22px;font-weight:500;line-height:1.2727272727}.stats__period{color:#4d515c;font-size:16px;line-height:1.375}.stats__labels{color:#7e8596;font-family:"Inter",arial,helvetica neue,helvetica,sans-serif!important;font-size:12px;line-height:1.3333333333}.history{overflow:hidden;border-radius:16px}.history__title{padding:24px;background:#fff;font-size:26px;font-weight:500}.history__table{background:#fff}.history__table-header{display:-webkit-flex;display:flex;border-top:1px solid #ededf8;border-bottom:1px solid #ededf8;background:#f9f9fb}.history__header-item{display:block;padding:24px;color:#404c5f;font-weight:600;text-align:left}.history__name,.history__user-group{width:320px}.history__profile,.history__user-link{width:656px}.history__user-link{transition:color .3s}.history__user-link:hover{color:#0057ff}.history__date,.history__user-date{width:240px}.history__table-list{height:648px;overflow:auto}.history__table-list::-webkit-scrollbar{width:8px}.history__table-list::-webkit-scrollbar-track{background-color:transparent}.history__table-list::-webkit-scrollbar-thumb{border-radius:8px;background-color:#b8b6e2}.history__table-user{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;border-bottom:1px solid #ededf8;color:#404c5f}.history__table-user:last-child{border-bottom:none}.history__user-item{padding:12px 24px}.history__user-group{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;padding:12px 24px;gap:12px}.organizer-card__container{padding-top:52px;padding-bottom:52px}.organizer-card__figure{display:grid;grid-template-areas:"a b";grid-template-columns:repeat(2,1fr);border-radius:20px}.organizer-card__picture{grid-area:b}.organizer-card__image{display:block;border-top-right-radius:20px;border-bottom-right-radius:20px}.organizer-card__caption{display:-webkit-flex;display:flex;grid-area:a;-webkit-flex-direction:column;flex-direction:column;-webkit-justify-content:center;justify-content:center;padding-right:64px;padding-left:64px;border-top-left-radius:20px;border-bottom-left-radius:20px;background-color:#fff}.organizer-card__header{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-column-gap:8px;-moz-column-gap:8px;column-gap:8px}.organizer-card__headline{margin-top:24px;color:#1d1b1e;font-size:44px;font-weight:500;line-height:1.2}.organizer-card__description{margin-top:24px;color:#4d515c;font-size:18px;line-height:1.3333333333}.organizer-card__footer{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;margin-top:24px;-webkit-column-gap:24px;-moz-column-gap:24px;column-gap:24px}.organizer-card__try-btn{-webkit-column-gap:8px;-moz-column-gap:8px;column-gap:8px}.organizer-card__try-btn-icon-box{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-justify-content:center;justify-content:center;width:24px;height:24px}.other-projects__container{padding-top:52px;padding-bottom:52px}.other-projects__title{margin-bottom:32px;color:#1d1b1e;font-size:44px;font-weight:500;line-height:1.2}.other-projects__item{display:-webkit-flex;display:flex;-webkit-justify-content:space-between;justify-content:space-between;padding:24px}.other-projects__wrapper{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;gap:16px}.other-projects__group{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.project{border-radius:16px;background:#fff}.project.big-card{width:100%}.project__info-card{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;width:100%}.project__stars{margin-bottom:24px}.project__title{margin-bottom:12px;font-size:32px;font-weight:500;line-height:120%;text-overflow:ellipsis}.project__subtitle{color:#738099;line-height:150%}.project__link{display:block;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;margin-top:auto;transition:color .3s;border-bottom:1px solid #1a1b26;color:#1a1b26}.project__link:hover{border-bottom:1px solid #0057ff;color:#0057ff}.project__view{border-radius:16px}.project__view-img{display:block}.articles__container{padding-top:52px;padding-bottom:104px}.articles__title{margin-bottom:32px;color:#1d1b1e;font-size:44px;font-weight:500;line-height:1.2}.articles__group-wrapper{display:grid;grid-template-columns:repeat(3,1fr);-webkit-column-gap:24px;-moz-column-gap:24px;column-gap:24px;row-gap:32px}.article__link{display:block;margin-bottom:24px}.article__preview{width:100%;border-radius:16px}.article__top-group{display:-webkit-flex;display:flex;gap:24px;-webkit-align-items:center;align-items:center;margin-bottom:20px}.article__date-group,.article__author{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;gap:8px}.article__date,.article__author-name{color:#4d515c;font-size:14px;line-height:1.4285714286}.article__subtitle{color:#4d515c;font-size:18px;line-height:1.3333333333}.article__author-name{transition:color .3s}.article__author-name:hover{color:#0057ff}.article__author-photo{width:24px;height:24px;border-radius:50%}.article__title{display:block;margin-bottom:12px;transition:color .225s;color:#1d1b1e;font-size:26px;font-weight:500;line-height:1.2307692308}.article__title:hover{color:#0057ff}</style>
+</head>
+
+<body>
+<main class="main-wrapper">
+	<header class="header">
+  <div class="header__wrapper">
+    <a href="#" class="header__logo">
+      <img width="40" height="40" class="header__logo-img" src="/assets/images/pages/online/logo.svg" alt="logo" />
+      <h3 class="header__logo-title">ReadyToTouch</h3>
+    </a>
+    <div class="header__stars">
+      <iframe
+        src="https://ghbtns.com/github-btn.html?user=readytotouch&repo=readytotouch.github.io&type=star&count=true&size=large"
+        width="110"
+        height="33"
+        title="GitHub"
+      ></iframe>
+    </div>
+    <div class="header__profile">
+      <button class="header__profile-button">
+        <img src="https://avatars.githubusercontent.com/u/63663261?v=4&s=48" alt="photo-profile" />
+      </button>
+      <div class="header__modal modal-profile">
+        <div class="modal-profile__profile">
+          <figure class="modal-profile__profile-info">
+            <img
+              src="https://avatars.githubusercontent.com/u/63663261?v=4&s=48"
+              class="modal-profile__user-photo"
+              width="48"
+              height="48"
+              alt="photo-profile"
+            />
+            <figcaption class="modal-profile__profile-name">Yaroslav Podorvanov</figcaption>
+          </figure>
+          <div class="modal-profile__profile-list">
+            <a href="https://github.com/YaroslavPodorvanov" target="_blank" class="modal-profile__link">
+              <img src="/assets/images/pages/online-new/github-black.svg" width="20" height="20" alt="GitHub logo" />
+              <span class="modal-profile__profile-github">github.com/YaroslavPodorvanov</span>
+            </a>
+            <a href="https://gitlab.com/YaroslavPodorvanov" target="_blank" class="modal-profile__link">
+              <img src="/assets/images/pages/online-new/gitlab.svg" width="20" height="20" alt="GitLab logo" />
+              <span class="modal-profile__profile-gitlab">gitlab.com/YaroslavPodorvanov</span>
+            </a>
+          </div>
+        </div>
+        <div class="modal-profile__log-out">
+          <a href="#" class="modal-profile__button">Log out</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<script>
+  document.querySelector('.header__profile-button').addEventListener('click', () => {
+    document.querySelector('.header__modal').classList.toggle('active')
+  })
+</script>
+
+
+<section class="hero">
+  <div class="hero__wrapper">
+    <img
+      class="hero__top-flag"
+      alt="Flag of Ukraine with waves"
+      width="24"
+      height="24"
+      src="/assets/images/pages/online-new/ua_flag_with_waves.svg"
+    />
+    <div class="hero__main">
+      <h1 class="hero__title">ReadyToTouch is a space to help you find jobs</h1>
+      <p class="hero__subtitle">Our projects are u8views, Organizer, and others. Log in to support.</p>
+    </div>
+    <div class="hero__buttons-group">
+      <a href="#" class="button button--bordered-gray hero__button">
+        <img
+          width="20"
+          height="20"
+          src="/assets/images/pages/online-new/github-black.svg"
+          alt="GitHub logo"
+          class="button-icon"
+        />Log in with GitHub
+      </a>
+      <a href="#" class="button button--bordered-gray hero__button">
+        <img
+          width="20"
+          height="20"
+          src="/assets/images/pages/online-new/gitlab.svg"
+          alt="GitLab logo"
+          class="hero__button-icon"
+        />Log in with GitLab
+      </a>
+      <a href="#" class="button button--bordered-gray hero__button">
+        <img
+          width="21"
+          height="20"
+          src="/assets/images/pages/online-new/bitbucket.svg"
+          alt="Bitbucket logo"
+          class="hero__button-icon"
+        />Log in with Bitbucket
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="top-projects">
+  <div class="container top-projects__container">
+    <div class="top-projects__group">
+      <a class="top-projects__link" href="#">
+        <figure class="top-projects__figure">
+          <img
+            class="top-projects__image"
+            width="129"
+            height="32"
+            alt="organizer logo"
+            src="/assets/images/pages/online-new/golang-organizer.svg"
+          />
+        </figure>
+      </a>
+      <a class="top-projects__link" href="https://u8views.com/" target="_blank">
+        <figure class="top-projects__figure">
+          <img
+            class="top-projects__image"
+            width="109"
+            height="35"
+            alt="u8views logo"
+            src="/assets/images/pages/online-new/u8views.svg"
+          />
+        </figure>
+      </a>
+      <a class="top-projects__link" href="https://doutivity.github.io/" target="_blank">
+        <figure class="top-projects__figure">
+          <img
+            class="top-projects__image"
+            width="111"
+            height="41"
+            alt="doutivity logo"
+            src="/assets/images/pages/online-new/doutivity.svg"
+          />
+        </figure>
+      </a>
+      <a class="top-projects__link" href="https://json-to-proto.github.io/" target="_blank">
+        <figure class="top-projects__figure">
+          <img
+            class="top-projects__image"
+            width="157"
+            height="18"
+            alt="JSON-to-PROTO logo"
+            src="/assets/images/pages/online-new/json_to_proto.svg"
+          />
+        </figure>
+      </a>
+      <a class="top-projects__link" href="https://xml-to-go.github.io/" target="_blank">
+        <figure class="top-projects__figure">
+          <img
+            class="top-projects__image"
+            width="117"
+            height="18"
+            alt="XML-to-GO logo"
+            src="/assets/images/pages/online-new/xml_to_go.svg"
+          />
+        </figure>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="project-statistics">
+  <div class="container project-statistics__container">
+    <header class="project-statistics__header">
+      <h2 class="project-statistics__headline">Project Statistics</h2>
+      <p class="project-statistics__description">
+        We like statistics and transparency, so we show users who logged in here to support our projects or found our
+        tools useful.
+      </p>
+    </header>
+    <section class="stats">
+      <div class="stats__item">
+        <div class="stats__header">
+          <h3 class="stats__title">Online users</h3>
+          <div class="stats__period">Last month</div>
+        </div>
+        <div class="stats__chart stats__chart--online-statistics js-chart-online-statistics"></div>
+      </div>
+      <div class="stats__item">
+        <div class="stats__header">
+          <h3 class="stats__title">User registrations</h3>
+          <div class="stats__period">Last month</div>
+        </div>
+        <div class="stats__chart">
+          <div class="stats__chart stats__chart--registration-statistics js-chart-registration-statistics"></div>
+        </div>
+      </div>
+    </section>
+    <section class="history">
+      <h2 class="history__title">Registration history</h2>
+      <div class="history__table">
+        <div class="history__table-header">
+          <span class="history__name history__header-item">User name</span>
+          <span class="history__profile history__header-item">Profile</span>
+          <span class="history__date history__header-item">Registration date</span>
+        </div>
+        <ul class="history__table-list">
+          <li class="history__table-user">
+  <div class="history__user-group">
+    <img
+      src="https://avatars.githubusercontent.com/u/123738314?v=4&s=48"
+      width="40"
+      height="40"
+      alt="photo"
+      class="history__user-photo"
+    />
+    <span class="history__user-name">Anastasiia Sihetii</span>
+  </div>
+  <a href="https://github.com/AnastasiiaSihetii" target="_blank" class="history__user-link history__user-item"
+    >github.com/AnastasiiaSihetii</a
+  >
+  <span class="history__user-date history__user-item">August 2, 2023</span>
+</li>
+
+          <li class="history__table-user">
+  <div class="history__user-group">
+    <img
+      src="https://avatars.githubusercontent.com/u/97196828?v=4&s=48"
+      width="40"
+      height="40"
+      alt="photo"
+      class="history__user-photo"
+    />
+    <span class="history__user-name">Victor Poprozhuk</span>
+  </div>
+  <a href="https://github.com/VictorPoprozhuk" target="_blank" class="history__user-link history__user-item"
+    >github.com/VictorPoprozhuk</a
+  >
+  <span class="history__user-date history__user-item">August 2, 2023</span>
+</li>
+
+          <li class="history__table-user">
+  <div class="history__user-group">
+    <img
+      src="https://avatars.githubusercontent.com/u/63663261?v=4&s=48"
+      width="40"
+      height="40"
+      alt="photo"
+      class="history__user-photo"
+    />
+    <span class="history__user-name">Yaroslav Podorvanov</span>
+  </div>
+  <a href="https://github.com/YaroslavPodorvanov" target="_blank" class="history__user-link history__user-item"
+    >github.com/YaroslavPodorvanov</a
+  >
+  <span class="history__user-date history__user-item">August 2, 2023</span>
+</li>
+
+          <li class="history__table-user">
+  <div class="history__user-group">
+    <img
+      src="https://avatars.githubusercontent.com/u/123738314?v=4&s=48"
+      width="40"
+      height="40"
+      alt="photo"
+      class="history__user-photo"
+    />
+    <span class="history__user-name">Anastasiia Sihetii</span>
+  </div>
+  <a href="https://github.com/AnastasiiaSihetii" target="_blank" class="history__user-link history__user-item"
+    >github.com/AnastasiiaSihetii</a
+  >
+  <span class="history__user-date history__user-item">August 2, 2023</span>
+</li>
+
+          <li class="history__table-user">
+  <div class="history__user-group">
+    <img
+      src="https://avatars.githubusercontent.com/u/97196828?v=4&s=48"
+      width="40"
+      height="40"
+      alt="photo"
+      class="history__user-photo"
+    />
+    <span class="history__user-name">Victor Poprozhuk</span>
+  </div>
+  <a href="https://github.com/VictorPoprozhuk" target="_blank" class="history__user-link history__user-item"
+    >github.com/VictorPoprozhuk</a
+  >
+  <span class="history__user-date history__user-item">August 2, 2023</span>
+</li>
+
+          <li class="history__table-user">
+  <div class="history__user-group">
+    <img
+      src="https://avatars.githubusercontent.com/u/63663261?v=4&s=48"
+      width="40"
+      height="40"
+      alt="photo"
+      class="history__user-photo"
+    />
+    <span class="history__user-name">Yaroslav Podorvanov</span>
+  </div>
+  <a href="https://github.com/YaroslavPodorvanov" target="_blank" class="history__user-link history__user-item"
+    >github.com/YaroslavPodorvanov</a
+  >
+  <span class="history__user-date history__user-item">August 2, 2023</span>
+</li>
+
+          <li class="history__table-user">
+  <div class="history__user-group">
+    <img
+      src="https://avatars.githubusercontent.com/u/123738314?v=4&s=48"
+      width="40"
+      height="40"
+      alt="photo"
+      class="history__user-photo"
+    />
+    <span class="history__user-name">Anastasiia Sihetii</span>
+  </div>
+  <a href="https://github.com/AnastasiiaSihetii" target="_blank" class="history__user-link history__user-item"
+    >github.com/AnastasiiaSihetii</a
+  >
+  <span class="history__user-date history__user-item">August 2, 2023</span>
+</li>
+
+          <li class="history__table-user">
+  <div class="history__user-group">
+    <img
+      src="https://avatars.githubusercontent.com/u/97196828?v=4&s=48"
+      width="40"
+      height="40"
+      alt="photo"
+      class="history__user-photo"
+    />
+    <span class="history__user-name">Victor Poprozhuk</span>
+  </div>
+  <a href="https://github.com/VictorPoprozhuk" target="_blank" class="history__user-link history__user-item"
+    >github.com/VictorPoprozhuk</a
+  >
+  <span class="history__user-date history__user-item">August 2, 2023</span>
+</li>
+
+          <li class="history__table-user">
+  <div class="history__user-group">
+    <img
+      src="https://avatars.githubusercontent.com/u/63663261?v=4&s=48"
+      width="40"
+      height="40"
+      alt="photo"
+      class="history__user-photo"
+    />
+    <span class="history__user-name">Yaroslav Podorvanov</span>
+  </div>
+  <a href="https://github.com/YaroslavPodorvanov" target="_blank" class="history__user-link history__user-item"
+    >github.com/YaroslavPodorvanov</a
+  >
+  <span class="history__user-date history__user-item">August 2, 2023</span>
+</li>
+
+          <li class="history__table-user">
+  <div class="history__user-group">
+    <img
+      src="https://avatars.githubusercontent.com/u/123738314?v=4&s=48"
+      width="40"
+      height="40"
+      alt="photo"
+      class="history__user-photo"
+    />
+    <span class="history__user-name">Anastasiia Sihetii</span>
+  </div>
+  <a href="https://github.com/AnastasiiaSihetii" target="_blank" class="history__user-link history__user-item"
+    >github.com/AnastasiiaSihetii</a
+  >
+  <span class="history__user-date history__user-item">August 2, 2023</span>
+</li>
+
+          <li class="history__table-user">
+  <div class="history__user-group">
+    <img
+      src="https://avatars.githubusercontent.com/u/97196828?v=4&s=48"
+      width="40"
+      height="40"
+      alt="photo"
+      class="history__user-photo"
+    />
+    <span class="history__user-name">Victor Poprozhuk</span>
+  </div>
+  <a href="https://github.com/VictorPoprozhuk" target="_blank" class="history__user-link history__user-item"
+    >github.com/VictorPoprozhuk</a
+  >
+  <span class="history__user-date history__user-item">August 2, 2023</span>
+</li>
+
+          <li class="history__table-user">
+  <div class="history__user-group">
+    <img
+      src="https://avatars.githubusercontent.com/u/63663261?v=4&s=48"
+      width="40"
+      height="40"
+      alt="photo"
+      class="history__user-photo"
+    />
+    <span class="history__user-name">Yaroslav Podorvanov</span>
+  </div>
+  <a href="https://github.com/YaroslavPodorvanov" target="_blank" class="history__user-link history__user-item"
+    >github.com/YaroslavPodorvanov</a
+  >
+  <span class="history__user-date history__user-item">August 2, 2023</span>
+</li>
+
+          <li class="history__table-user">
+  <div class="history__user-group">
+    <img
+      src="https://avatars.githubusercontent.com/u/123738314?v=4&s=48"
+      width="40"
+      height="40"
+      alt="photo"
+      class="history__user-photo"
+    />
+    <span class="history__user-name">Anastasiia Sihetii</span>
+  </div>
+  <a href="https://github.com/AnastasiiaSihetii" target="_blank" class="history__user-link history__user-item"
+    >github.com/AnastasiiaSihetii</a
+  >
+  <span class="history__user-date history__user-item">August 2, 2023</span>
+</li>
+
+          <li class="history__table-user">
+  <div class="history__user-group">
+    <img
+      src="https://avatars.githubusercontent.com/u/97196828?v=4&s=48"
+      width="40"
+      height="40"
+      alt="photo"
+      class="history__user-photo"
+    />
+    <span class="history__user-name">Victor Poprozhuk</span>
+  </div>
+  <a href="https://github.com/VictorPoprozhuk" target="_blank" class="history__user-link history__user-item"
+    >github.com/VictorPoprozhuk</a
+  >
+  <span class="history__user-date history__user-item">August 2, 2023</span>
+</li>
+
+          <li class="history__table-user">
+  <div class="history__user-group">
+    <img
+      src="https://avatars.githubusercontent.com/u/63663261?v=4&s=48"
+      width="40"
+      height="40"
+      alt="photo"
+      class="history__user-photo"
+    />
+    <span class="history__user-name">Yaroslav Podorvanov</span>
+  </div>
+  <a href="https://github.com/YaroslavPodorvanov" target="_blank" class="history__user-link history__user-item"
+    >github.com/YaroslavPodorvanov</a
+  >
+  <span class="history__user-date history__user-item">August 2, 2023</span>
+</li>
+
+          <li class="history__table-user">
+  <div class="history__user-group">
+    <img
+      src="https://avatars.githubusercontent.com/u/123738314?v=4&s=48"
+      width="40"
+      height="40"
+      alt="photo"
+      class="history__user-photo"
+    />
+    <span class="history__user-name">Anastasiia Sihetii</span>
+  </div>
+  <a href="https://github.com/AnastasiiaSihetii" target="_blank" class="history__user-link history__user-item"
+    >github.com/AnastasiiaSihetii</a
+  >
+  <span class="history__user-date history__user-item">August 2, 2023</span>
+</li>
+
+          <li class="history__table-user">
+  <div class="history__user-group">
+    <img
+      src="https://avatars.githubusercontent.com/u/97196828?v=4&s=48"
+      width="40"
+      height="40"
+      alt="photo"
+      class="history__user-photo"
+    />
+    <span class="history__user-name">Victor Poprozhuk</span>
+  </div>
+  <a href="https://github.com/VictorPoprozhuk" target="_blank" class="history__user-link history__user-item"
+    >github.com/VictorPoprozhuk</a
+  >
+  <span class="history__user-date history__user-item">August 2, 2023</span>
+</li>
+
+          <li class="history__table-user">
+  <div class="history__user-group">
+    <img
+      src="https://avatars.githubusercontent.com/u/63663261?v=4&s=48"
+      width="40"
+      height="40"
+      alt="photo"
+      class="history__user-photo"
+    />
+    <span class="history__user-name">Yaroslav Podorvanov</span>
+  </div>
+  <a href="https://github.com/YaroslavPodorvanov" target="_blank" class="history__user-link history__user-item"
+    >github.com/YaroslavPodorvanov</a
+  >
+  <span class="history__user-date history__user-item">August 2, 2023</span>
+</li>
+
+          <li class="history__table-user">
+  <div class="history__user-group">
+    <img
+      src="https://avatars.githubusercontent.com/u/123738314?v=4&s=48"
+      width="40"
+      height="40"
+      alt="photo"
+      class="history__user-photo"
+    />
+    <span class="history__user-name">Anastasiia Sihetii</span>
+  </div>
+  <a href="https://github.com/AnastasiiaSihetii" target="_blank" class="history__user-link history__user-item"
+    >github.com/AnastasiiaSihetii</a
+  >
+  <span class="history__user-date history__user-item">August 2, 2023</span>
+</li>
+
+          <li class="history__table-user">
+  <div class="history__user-group">
+    <img
+      src="https://avatars.githubusercontent.com/u/97196828?v=4&s=48"
+      width="40"
+      height="40"
+      alt="photo"
+      class="history__user-photo"
+    />
+    <span class="history__user-name">Victor Poprozhuk</span>
+  </div>
+  <a href="https://github.com/VictorPoprozhuk" target="_blank" class="history__user-link history__user-item"
+    >github.com/VictorPoprozhuk</a
+  >
+  <span class="history__user-date history__user-item">August 2, 2023</span>
+</li>
+
+          <li class="history__table-user">
+  <div class="history__user-group">
+    <img
+      src="https://avatars.githubusercontent.com/u/63663261?v=4&s=48"
+      width="40"
+      height="40"
+      alt="photo"
+      class="history__user-photo"
+    />
+    <span class="history__user-name">Yaroslav Podorvanov</span>
+  </div>
+  <a href="https://github.com/YaroslavPodorvanov" target="_blank" class="history__user-link history__user-item"
+    >github.com/YaroslavPodorvanov</a
+  >
+  <span class="history__user-date history__user-item">August 2, 2023</span>
+</li>
+
+          <li class="history__table-user">
+  <div class="history__user-group">
+    <img
+      src="https://avatars.githubusercontent.com/u/123738314?v=4&s=48"
+      width="40"
+      height="40"
+      alt="photo"
+      class="history__user-photo"
+    />
+    <span class="history__user-name">Anastasiia Sihetii</span>
+  </div>
+  <a href="https://github.com/AnastasiiaSihetii" target="_blank" class="history__user-link history__user-item"
+    >github.com/AnastasiiaSihetii</a
+  >
+  <span class="history__user-date history__user-item">August 2, 2023</span>
+</li>
+
+          <li class="history__table-user">
+  <div class="history__user-group">
+    <img
+      src="https://avatars.githubusercontent.com/u/97196828?v=4&s=48"
+      width="40"
+      height="40"
+      alt="photo"
+      class="history__user-photo"
+    />
+    <span class="history__user-name">Victor Poprozhuk</span>
+  </div>
+  <a href="https://github.com/VictorPoprozhuk" target="_blank" class="history__user-link history__user-item"
+    >github.com/VictorPoprozhuk</a
+  >
+  <span class="history__user-date history__user-item">August 2, 2023</span>
+</li>
+
+          <li class="history__table-user">
+  <div class="history__user-group">
+    <img
+      src="https://avatars.githubusercontent.com/u/63663261?v=4&s=48"
+      width="40"
+      height="40"
+      alt="photo"
+      class="history__user-photo"
+    />
+    <span class="history__user-name">Yaroslav Podorvanov</span>
+  </div>
+  <a href="https://github.com/YaroslavPodorvanov" target="_blank" class="history__user-link history__user-item"
+    >github.com/YaroslavPodorvanov</a
+  >
+  <span class="history__user-date history__user-item">August 2, 2023</span>
+</li>
+
+          <li class="history__table-user">
+  <div class="history__user-group">
+    <img
+      src="https://avatars.githubusercontent.com/u/123738314?v=4&s=48"
+      width="40"
+      height="40"
+      alt="photo"
+      class="history__user-photo"
+    />
+    <span class="history__user-name">Anastasiia Sihetii</span>
+  </div>
+  <a href="https://github.com/AnastasiiaSihetii" target="_blank" class="history__user-link history__user-item"
+    >github.com/AnastasiiaSihetii</a
+  >
+  <span class="history__user-date history__user-item">August 2, 2023</span>
+</li>
+
+          <li class="history__table-user">
+  <div class="history__user-group">
+    <img
+      src="https://avatars.githubusercontent.com/u/97196828?v=4&s=48"
+      width="40"
+      height="40"
+      alt="photo"
+      class="history__user-photo"
+    />
+    <span class="history__user-name">Victor Poprozhuk</span>
+  </div>
+  <a href="https://github.com/VictorPoprozhuk" target="_blank" class="history__user-link history__user-item"
+    >github.com/VictorPoprozhuk</a
+  >
+  <span class="history__user-date history__user-item">August 2, 2023</span>
+</li>
+
+          <li class="history__table-user">
+  <div class="history__user-group">
+    <img
+      src="https://avatars.githubusercontent.com/u/63663261?v=4&s=48"
+      width="40"
+      height="40"
+      alt="photo"
+      class="history__user-photo"
+    />
+    <span class="history__user-name">Yaroslav Podorvanov</span>
+  </div>
+  <a href="https://github.com/YaroslavPodorvanov" target="_blank" class="history__user-link history__user-item"
+    >github.com/YaroslavPodorvanov</a
+  >
+  <span class="history__user-date history__user-item">August 2, 2023</span>
+</li>
+
+        </ul>
+      </div>
+    </section>
+  </div>
+</section>
+
+<section class="organizer-card">
+  <div class="container organizer-card__container">
+    <figure class="organizer-card__figure">
+      <picture class="organizer-card__picture">
+        <source
+          width="608"
+          height="538"
+          type="image/webp"
+          srcset="
+            /assets/images/pages/online-new/organizer/organizer.webp,
+            /assets/images/pages/online-new/organizer/organizer@2x.webp 2x
+          "
+        />
+        <source
+          width="608"
+          height="538"
+          srcset="
+            /assets/images/pages/online-new/organizer/organizer.jpg,
+            /assets/images/pages/online-new/organizer/organizer@2x.jpg 2x
+          "
+        />
+        <img
+          class="organizer-card__image"
+          width="608"
+          height="538"
+          loading="lazy"
+          srcset="/assets/images/pages/online-new/organizer/organizer@2x.jpg 2x"
+          src="/assets/images/pages/online-new/organizer/organizer.jpg"
+          alt="organizer page screen"
+        />
+      </picture>
+      <figcaption class="organizer-card__caption">
+        <header class="organizer-card__header">
+          <span class="organizer-card__header-text">Service status:</span>
+          <span class="badge badge--new">New</span>
+          <span class="badge badge--work-in-progress">Work in progress</span>
+        </header>
+        <h2 class="organizer-card__headline">Direct Contract Job Search Organizer</h2>
+        <p class="organizer-card__description">
+          A list of useful links to simplify your job search. The basis is a list of companies searching for Golang
+          developers.
+        </p>
+        <footer class="organizer-card__footer">
+          <iframe
+            src="https://ghbtns.com/github-btn.html?user=readytotouch&amp;repo=golang-companies-organizer&amp;type=star&amp;count=true&amp;size=large"
+            width="120"
+            height="33"
+            title="GitHub"
+          ></iframe>
+          <a
+            class="button button--black organizer-card__try-btn"
+            target="_blank"
+            href="https://golang-companies-organizer.readytotouch.com/"
+          >
+            Try Organizer
+            <div class="organizer-card__try-btn-icon-box">
+              <img width="12" height="12" alt="arrow top icon" src="/assets/images/pages/common/arrow-small-top.svg" />
+            </div>
+          </a>
+        </footer>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="other-projects">
+  <div class="container other-projects__container">
+    <h2 class="other-projects__title">Other projects</h2>
+    <div class="other-projects__wrapper">
+      <div class="other-projects__item project big-card">
+        <div class="project__info-card">
+          <div class="project__stars">
+            <iframe
+              src="https://ghbtns.com/github-btn.html?user=u8views&repo=go-u8views&type=star&count=true&size=large"
+              width="170"
+              height="30"
+              title="GitHub"
+            ></iframe>
+          </div>
+          <div class="project__info-group">
+            <h3 class="project__title">u8views — views counter</h3>
+            <p class="project__subtitle">
+              Track your GitHub profile views. Receive, view and analyze your profile views and profile performance
+              statistics.
+            </p>
+          </div>
+          <a href="https://u8views.com/" target="_blank" class="project__link">u8views.com</a>
+        </div>
+        <div class="project__view">
+          <img src="/assets/images/pages/online/u8views.png" class="project__view-img" alt="project view" />
+        </div>
+      </div>
+      <div class="other-projects__group">
+        <div class="other-projects__item project">
+          <div class="project__info-card">
+            <div class="project__stars">
+              <iframe
+                src="https://ghbtns.com/github-btn.html?user=json-to-proto&repo=json-to-proto.github.io&type=star&count=true&size=large"
+                width="170"
+                height="30"
+                title="GitHub"
+              ></iframe>
+            </div>
+            <div class="project__info-group">
+              <h3 class="project__title">JSON-to-Proto</h3>
+              <p class="project__subtitle">Convert JSON to Protobuf</p>
+            </div>
+            <a href="https://json-to-proto.github.io/" target="_blank" class="project__link">json-to-proto.github.io</a>
+          </div>
+          <div class="project__view">
+            <img src="/assets/images/pages/online/open-project.png" class="project__view-img" alt="project view" />
+          </div>
+        </div>
+        <div class="other-projects__item project">
+          <div class="project__info-card">
+            <div class="project__stars">
+              <iframe
+                src="https://ghbtns.com/github-btn.html?user=xml-to-go&repo=xml-to-go.github.io&type=star&count=true&size=large"
+                width="170"
+                height="30"
+                title="GitHub"
+              ></iframe>
+            </div>
+            <div class="project__info-group">
+              <h3 class="project__title">XML-to-Go</h3>
+              <p class="project__subtitle">Convert XML to Go</p>
+            </div>
+            <a href="https://xml-to-go.github.io/" target="_blank" class="project__link">xml-to-go.github.io</a>
+          </div>
+          <div class="project__view">
+            <img src="/assets/images/pages/online/open-project.png" class="project__view-img" alt="project view" />
+          </div>
+        </div>
+      </div>
+      <div class="other-projects__item project big-card">
+        <div class="project__info-card">
+          <div class="project__stars">
+            <iframe
+              src="https://ghbtns.com/github-btn.html?user=doutivity&repo=doutivity.github.io&type=star&count=true&size=large"
+              width="170"
+              height="30"
+              title="GitHub"
+            ></iframe>
+          </div>
+          <div class="project__info-group">
+            <h3 class="project__title">doutivity</h3>
+            <p class="project__subtitle">Search for a comment among comments published on DOU</p>
+          </div>
+          <a href="https://doutivity.github.io/" target="_blank" class="project__link">doutivity.github.io</a>
+        </div>
+        <div class="project__view">
+          <img src="/assets/images/pages/online/doutivity.png" class="project__view-img" alt="project view" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="articles">
+  <div class="container articles__container">
+    <h2 class="articles__title">Articles</h2>
+    <div class="articles__group-wrapper">
+      <div class="articles__item article">
+  <a href="https://dou.ua/forums/topic/35260/" target="_blank" class="article__link">
+    <img src="https://s.dou.ua/img/announces/image_Yne6Ph2.jpg" alt="article preview" class="article__preview" />
+  </a>
+  <div class="article__info">
+    <div class="article__top-group">
+      <div class="article__date-group">
+        <img src="/assets/images/pages/online/calendar.svg" alt="calendar icon" class="article__date-icon" />
+        <span class="article__date">5 квітня 2023</span>
+      </div>
+      <div class="article__author">
+        <img
+          src="https://avatars.githubusercontent.com/u/63663261?v=4&s=48"
+          alt="author"
+          class="article__author-photo"
+        />
+        <a href="https://dou.ua/users/yaroslav-harakternik/" target="_blank" class="article__author-name"
+          >Ярослав Характерник</a
+        >
+      </div>
+    </div>
+    <a href="https://dou.ua/forums/topic/35260/" target="_blank" class="article__title"
+      >Збереження стану онлайну користувача в Redis</a
+    >
+    <p class="article__subtitle">
+      Ярослав Характерник — про методику вибору оптимального типу даних для збереження статусу онлайну користувачів в
+      інтернет-магазині.
+    </p>
+  </div>
+</div>
+
+      <div class="articles__item article">
+  <a href="https://dou.ua/forums/topic/44655/" target="_blank" class="article__link">
+    <img src="https://s.dou.ua/img/announces/0tech_redis_image.jpg" alt="article preview" class="article__preview" />
+  </a>
+  <div class="article__info">
+    <div class="article__top-group">
+      <div class="article__date-group">
+        <img src="/assets/images/pages/online/calendar.svg" alt="calendar icon" class="article__date-icon" />
+        <span class="article__date">15 серпня 2023</span>
+      </div>
+      <div class="article__author">
+        <img
+          src="https://avatars.githubusercontent.com/u/63663261?v=4&s=48"
+          alt="author"
+          class="article__author-photo"
+        />
+        <a href="https://dou.ua/users/yaroslav-harakternik/" target="_blank" class="article__author-name"
+          >Ярослав Характерник</a
+        >
+      </div>
+    </div>
+    <a href="https://dou.ua/forums/topic/44655/" target="_blank" class="article__title"
+      >Hash, Set чи Sorted set. Який тип даних вибрати для збереження стану онлайну користувача в Redis</a
+    >
+    <p class="article__subtitle">
+      В цій статті Ярослав Характерник пропонує розглянути швидкодію, скільки пам’яті займає кожен з типів даних та яку
+      базу даних вибрати: Redis, KeyDB або DragonflyDB.
+    </p>
+  </div>
+</div>
+
+      <div class="articles__item article">
+  <a href="https://dou.ua/forums/topic/35260/" target="_blank" class="article__link">
+    <img src="https://s.dou.ua/img/announces/image_Yne6Ph2.jpg" alt="article preview" class="article__preview" />
+  </a>
+  <div class="article__info">
+    <div class="article__top-group">
+      <div class="article__date-group">
+        <img src="/assets/images/pages/online/calendar.svg" alt="calendar icon" class="article__date-icon" />
+        <span class="article__date">5 квітня 2023</span>
+      </div>
+      <div class="article__author">
+        <img
+          src="https://avatars.githubusercontent.com/u/63663261?v=4&s=48"
+          alt="author"
+          class="article__author-photo"
+        />
+        <a href="https://dou.ua/users/yaroslav-harakternik/" target="_blank" class="article__author-name"
+          >Ярослав Характерник</a
+        >
+      </div>
+    </div>
+    <a href="https://dou.ua/forums/topic/35260/" target="_blank" class="article__title"
+      >Збереження стану онлайну користувача в Redis</a
+    >
+    <p class="article__subtitle">
+      Ярослав Характерник — про методику вибору оптимального типу даних для збереження статусу онлайну користувачів в
+      інтернет-магазині.
+    </p>
+  </div>
+</div>
+
+      <div class="articles__item article">
+  <a href="https://dou.ua/forums/topic/35260/" target="_blank" class="article__link">
+    <img src="https://s.dou.ua/img/announces/image_Yne6Ph2.jpg" alt="article preview" class="article__preview" />
+  </a>
+  <div class="article__info">
+    <div class="article__top-group">
+      <div class="article__date-group">
+        <img src="/assets/images/pages/online/calendar.svg" alt="calendar icon" class="article__date-icon" />
+        <span class="article__date">5 квітня 2023</span>
+      </div>
+      <div class="article__author">
+        <img
+          src="https://avatars.githubusercontent.com/u/63663261?v=4&s=48"
+          alt="author"
+          class="article__author-photo"
+        />
+        <a href="https://dou.ua/users/yaroslav-harakternik/" target="_blank" class="article__author-name"
+          >Ярослав Характерник</a
+        >
+      </div>
+    </div>
+    <a href="https://dou.ua/forums/topic/35260/" target="_blank" class="article__title"
+      >Збереження стану онлайну користувача в Redis</a
+    >
+    <p class="article__subtitle">
+      Ярослав Характерник — про методику вибору оптимального типу даних для збереження статусу онлайну користувачів в
+      інтернет-магазині.
+    </p>
+  </div>
+</div>
+
+      <div class="articles__item article">
+  <a href="https://dou.ua/forums/topic/44655/" target="_blank" class="article__link">
+    <img src="https://s.dou.ua/img/announces/0tech_redis_image.jpg" alt="article preview" class="article__preview" />
+  </a>
+  <div class="article__info">
+    <div class="article__top-group">
+      <div class="article__date-group">
+        <img src="/assets/images/pages/online/calendar.svg" alt="calendar icon" class="article__date-icon" />
+        <span class="article__date">15 серпня 2023</span>
+      </div>
+      <div class="article__author">
+        <img
+          src="https://avatars.githubusercontent.com/u/63663261?v=4&s=48"
+          alt="author"
+          class="article__author-photo"
+        />
+        <a href="https://dou.ua/users/yaroslav-harakternik/" target="_blank" class="article__author-name"
+          >Ярослав Характерник</a
+        >
+      </div>
+    </div>
+    <a href="https://dou.ua/forums/topic/44655/" target="_blank" class="article__title"
+      >Hash, Set чи Sorted set. Який тип даних вибрати для збереження стану онлайну користувача в Redis</a
+    >
+    <p class="article__subtitle">
+      В цій статті Ярослав Характерник пропонує розглянути швидкодію, скільки пам’яті займає кожен з типів даних та яку
+      базу даних вибрати: Redis, KeyDB або DragonflyDB.
+    </p>
+  </div>
+</div>
+
+      <div class="articles__item article">
+  <a href="https://dou.ua/forums/topic/35260/" target="_blank" class="article__link">
+    <img src="https://s.dou.ua/img/announces/image_Yne6Ph2.jpg" alt="article preview" class="article__preview" />
+  </a>
+  <div class="article__info">
+    <div class="article__top-group">
+      <div class="article__date-group">
+        <img src="/assets/images/pages/online/calendar.svg" alt="calendar icon" class="article__date-icon" />
+        <span class="article__date">5 квітня 2023</span>
+      </div>
+      <div class="article__author">
+        <img
+          src="https://avatars.githubusercontent.com/u/63663261?v=4&s=48"
+          alt="author"
+          class="article__author-photo"
+        />
+        <a href="https://dou.ua/users/yaroslav-harakternik/" target="_blank" class="article__author-name"
+          >Ярослав Характерник</a
+        >
+      </div>
+    </div>
+    <a href="https://dou.ua/forums/topic/35260/" target="_blank" class="article__title"
+      >Збереження стану онлайну користувача в Redis</a
+    >
+    <p class="article__subtitle">
+      Ярослав Характерник — про методику вибору оптимального типу даних для збереження статусу онлайну користувачів в
+      інтернет-магазині.
+    </p>
+  </div>
+</div>
+
+      <div class="articles__item article">
+  <a href="https://dou.ua/forums/topic/35260/" target="_blank" class="article__link">
+    <img src="https://s.dou.ua/img/announces/image_Yne6Ph2.jpg" alt="article preview" class="article__preview" />
+  </a>
+  <div class="article__info">
+    <div class="article__top-group">
+      <div class="article__date-group">
+        <img src="/assets/images/pages/online/calendar.svg" alt="calendar icon" class="article__date-icon" />
+        <span class="article__date">5 квітня 2023</span>
+      </div>
+      <div class="article__author">
+        <img
+          src="https://avatars.githubusercontent.com/u/63663261?v=4&s=48"
+          alt="author"
+          class="article__author-photo"
+        />
+        <a href="https://dou.ua/users/yaroslav-harakternik/" target="_blank" class="article__author-name"
+          >Ярослав Характерник</a
+        >
+      </div>
+    </div>
+    <a href="https://dou.ua/forums/topic/35260/" target="_blank" class="article__title"
+      >Збереження стану онлайну користувача в Redis</a
+    >
+    <p class="article__subtitle">
+      Ярослав Характерник — про методику вибору оптимального типу даних для збереження статусу онлайну користувачів в
+      інтернет-магазині.
+    </p>
+  </div>
+</div>
+
+    </div>
+  </div>
+</section>
+
+
+</main>
+<footer class="footer">
+  <div class="footer__overlay">
+    <div class="footer__wrapper">
+      <div class="footer__group">
+        <div class="footer__info">
+          <a href="/" class="footer__title">
+            <h3 class="footer__title-link">ReadyToTouch</h3>
+          </a>
+          <p class="footer__subtitle">Space to help you find jobs</p>
+          <img width="98"
+               height="64"
+               loading="lazy"
+               class="footer__ukraine-map"
+               src="/assets/images/pages/online-new/ukraine-map.svg"
+               alt="Map of Ukraine"
+          >
+        </div>
+        <div class="footer__right-side">
+          <iframe class="footer__stars"
+                  src="https://ghbtns.com/github-btn.html?user=readytotouch&repo=readytotouch.github.io&type=star&count=true&size=large"
+                  width="168"
+                  height="33"
+                  title="GitHub"
+          ></iframe>
+          <div class="footer__support">
+            <a href="https://savelife.in.ua/en/" target="_blank" class="button button--bordered-gray footer__link">
+              <figure class="footer__support-figure">
+                <img width="49"
+                     height="23"
+                     src="/assets/images/pages/common-images/come_back_alive.svg"
+                     alt="come back alive logo"
+                >
+                <figcaption class="footer__support-caption">Support</figcaption>
+              </figure>
+              <div class="footer__support-icon-box">
+                <img width="18"
+                     height="18"
+                     src="/assets/images/pages/common/external-link.svg"
+                     alt="external link icon"
+                >
+              </div>
+            </a>
+            <a href="https://war.ukraine.ua/" target="_blank" class="button button--bordered-gray footer__link">
+              war.ukraine.ua
+              <div class="footer__support-icon-box">
+                <img width="18"
+                     height="18"
+                     src="/assets/images/pages/common/external-link.svg"
+                     alt="external link icon"
+                >
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copyrights">
+        &copy; 2024 Yaroslav Podorvanov
+        <img width="24"
+             height="24"
+             class="footer__flag-ua"
+             src="/assets/images/pages/online-new/ua_flag_with_waves.svg"
+             alt="Flag of Ukraine"
+        >
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="/assets/js/online-new_aca0043278f5ae468e54c15ff53c6b0d.js"></script>
+</body>
+</html>
+
