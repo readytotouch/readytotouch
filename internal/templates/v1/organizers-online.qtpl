@@ -2,6 +2,7 @@
   headerProfiles []SocialProviderUser,
   socialProviderUsers []SocialProviderUser,
 ) -%}
+<!DOCTYPE html>
 <html lang="en">
 
 <head>

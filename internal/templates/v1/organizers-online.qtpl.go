@@ -18,7 +18,8 @@ func StreamOrganizersOnline(qw422016 *qt422016.Writer,
 	headerProfiles []SocialProviderUser,
 	socialProviderUsers []SocialProviderUser,
 ) {
-	qw422016.N().S(`<html lang="en">
+	qw422016.N().S(`<!DOCTYPE html>
+<html lang="en">
 
 <head>
 	<title>Yet another anonymous work search</title>
