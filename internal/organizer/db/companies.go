@@ -1789,7 +1789,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "German multinational technology conglomerate"
 		},
 
 		// Famous SoundCloud
@@ -1825,7 +1825,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "Audio streaming service"
 		},
 
 		// Famous DoorDash
@@ -1859,7 +1859,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "American operating online food ordering and food delivery company"
 		},
 
 		// Famous Sixt
@@ -1916,7 +1916,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "American multinational telecommunications company"
 		},
 
 		// Famous Samsung
@@ -1955,7 +1955,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "South Korean multinational major appliance and consumer electronics corporation"
 		},
 
 		// Famous Salesforge
@@ -1991,8 +1991,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
-		},
+			ShortDescription: "All-inclusive sales app"
 
 		// Some
 		// Some | Careem
