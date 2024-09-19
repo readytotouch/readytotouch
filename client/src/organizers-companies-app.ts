@@ -231,12 +231,19 @@ function search() {
             $company.style.display = "block";
 
             total++;
-        } else {
-            $company.style.display = "none";
+
+            return;
         }
+
+        $company.style.display = "none";
     });
 
     $resultCount.innerHTML = total.toString();
 }
+
+// Each time when the user navigates back or forward, the page state is updated
+window.addEventListener('popstate', function(event) {
+    updatePageState();
+});
 
 updatePageState();
