@@ -250,7 +250,6 @@
                   />
                   <figcaption class="card__figcaption">{%s companyTypeName[company.Type] %}</figcaption>
                 </figure>
-                {% comment %}
                 <figure class="card__figure">
                   <img
                     class="card__icon"
@@ -259,9 +258,8 @@
                     height="16"
                     src="/assets/images/pages/vacancy/company-type.svg"
                   />
-                  <figcaption class="card__figcaption">TodoTech</figcaption>
+                  <figcaption class="card__figcaption">{%s industryNames(company.Industries) %}</figcaption>
                 </figure>
-                {% endcomment %}
               </div>
               <p class="js-company-description card__text">{%s company.ShortDescription %}</p>
               <div class="card__links">

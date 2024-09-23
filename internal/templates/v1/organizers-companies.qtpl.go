@@ -320,8 +320,18 @@ func StreamOrganizersCompanies(qw422016 *qt422016.Writer,
 		qw422016.E().S(companyTypeName[company.Type])
 		qw422016.N().S(`</figcaption>
                 </figure>
-                `)
-		qw422016.N().S(`
+                <figure class="card__figure">
+                  <img
+                    class="card__icon"
+                    alt="card type icon"
+                    width="16"
+                    height="16"
+                    src="/assets/images/pages/vacancy/company-type.svg"
+                  />
+                  <figcaption class="card__figcaption">`)
+		qw422016.E().S(industryNames(company.Industries))
+		qw422016.N().S(`</figcaption>
+                </figure>
               </div>
               <p class="js-company-description card__text">`)
 		qw422016.E().S(company.ShortDescription)
