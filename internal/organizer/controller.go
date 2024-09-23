@@ -74,7 +74,7 @@ func (c *Controller) Main(ctx *gin.Context) {
 func (c *Controller) GolangCompaniesUkraine(ctx *gin.Context) {
 	var (
 		source    = db.Companies()
-		companies = make([]domain.Company, 0, len(source))
+		companies = make([]domain.CompanyProfile, 0, len(source))
 	)
 
 	for _, company := range source {
@@ -111,7 +111,7 @@ func (c *Controller) Companies(ctx *gin.Context) {
 
 	var (
 		source    = db.Companies()
-		companies = make([]domain.Company, 0, len(source))
+		companies = make([]domain.CompanyProfile, 0, len(source))
 	)
 	for _, company := range source {
 		company.ID = organizers.CompanyAliasMap[company.LinkedInProfile.Alias]
@@ -668,7 +668,7 @@ func (c *Controller) getHeaderProfiles(ctx *gin.Context, userID int64) ([]domain
 	return nil, nil
 }
 
-func (c *Controller) findCompany(ctx *gin.Context, alias string) (domain.Company, bool) {
+func (c *Controller) findCompany(ctx *gin.Context, alias string) (domain.CompanyProfile, bool) {
 	// Yes, we are leaking the database implementation to the controller, it's fine for now
 	// Yes, we use linear search, it's fine for now
 	for _, company := range db.Companies() {
@@ -677,5 +677,5 @@ func (c *Controller) findCompany(ctx *gin.Context, alias string) (domain.Company
 		}
 	}
 
-	return domain.Company{}, false
+	return domain.CompanyProfile{}, false
 }

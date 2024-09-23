@@ -7,8 +7,9 @@ import {
 import {
     COMPANY_SEARCH_QUERY,
     COMPANY_TYPE_CRITERIA_NAME,
-    COMPANY_CRITERIA_NAMES,
+    COMPANY_INDUSTRY_CRITERIA_NAME,
     COMPANY_IN_FAVORITES_CRITERIA_NAME,
+    COMPANY_CRITERIA_NAMES,
 } from "./company_criteria_names";
 
 const multiSelectCriteriaConverter = new MultiSelectCriteriaConverter();
@@ -18,6 +19,7 @@ const checkedCriteriaConverter = new CheckedCriteriaConverter();
 const companyUrlStateContainer = new UrlStateContainer(COMPANY_CRITERIA_NAMES, {
     [COMPANY_SEARCH_QUERY]: identityCriteriaConverter,
     [COMPANY_TYPE_CRITERIA_NAME]: multiSelectCriteriaConverter,
+    [COMPANY_INDUSTRY_CRITERIA_NAME]: multiSelectCriteriaConverter,
     [COMPANY_IN_FAVORITES_CRITERIA_NAME]: checkedCriteriaConverter,
 });
 

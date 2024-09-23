@@ -116,72 +116,20 @@
         </div>
       </div>
 
-      {% comment %}
-      <!-- TODO -->
-
-      <!-- Direction -->
       <div class="filters__group">
         <header class="filters__header">
-          <h4 class="filters__headline">Direction</h4>
+          <h4 class="filters__headline">Industry</h4>
         </header>
-
         <div class="filters__elements">
-          <div class="filters__elements-inner">
-            <label class="checkbox filters__element">
-              <input class="checkbox__input" type="checkbox" />
-              <span class="checkbox__element"></span>
-              CyberSecurity
-            </label>
-            <label class="checkbox filters__element">
-              <input class="checkbox__input" type="checkbox" />
-              <span class="checkbox__element"></span>
-              Embedded
-            </label>
-            <label class="checkbox filters__element">
-              <input class="checkbox__input" type="checkbox" />
-              <span class="checkbox__element"></span>
-              EdTech
-            </label>
-            <label class="checkbox filters__element">
-              <input class="checkbox__input" type="checkbox" />
-              <span class="checkbox__element"></span>
-              eCommerce
-            </label>
-            <label class="checkbox filters__element">
-              <input class="checkbox__input" type="checkbox" />
-              <span class="checkbox__element"></span>
-              HealthTech
-            </label>
-            <label class="checkbox filters__element">
-              <input class="checkbox__input" type="checkbox" />
-              <span class="checkbox__element"></span>
-              CyberSecurity
-            </label>
-            <label class="checkbox filters__element">
-              <input class="checkbox__input" type="checkbox" />
-              <span class="checkbox__element"></span>
-              Embedded
-            </label>
-            <label class="checkbox filters__element">
-              <input class="checkbox__input" type="checkbox" />
-              <span class="checkbox__element"></span>
-              EdTech
-            </label>
-            <label class="checkbox filters__element">
-              <input class="checkbox__input" type="checkbox" />
-              <span class="checkbox__element"></span>
-              eCommerce
-            </label>
-            <label class="checkbox filters__element">
-              <input class="checkbox__input" type="checkbox" />
-              <span class="checkbox__element"></span>
-              HealthTech
-            </label>
-          </div>
+          {% for _, industry := range industries %}
+          <label class="checkbox filters__element">
+            <input class="js-criteria-company-industry checkbox__input" type="checkbox" data-alias="{%s industry.Alias %}" />
+            <span class="checkbox__element"></span>
+            {%s industry.Name %}
+          </label>
+          {% endfor %}
         </div>
       </div>
-      <!-- /Direction -->
-      {% endcomment %}
 
       <!-- Other -->
       <div class="filters__group">
@@ -252,6 +200,7 @@
                  data-company-id="{%dl company.ID %}"
                  data-company-name="{%s company.Name %}"
                  data-company-type="{%s string(company.Type) %}"
+                 data-company-industries="{%s industryAliases(company.Industries) %}"
             >
               <aside class="card__action">
                 {% if userCompanyFavoriteMap[company.ID] %}
@@ -287,7 +236,7 @@
                   />
                 </div>
                 <figcaption class="card__header-caption">
-                  <a href="{%s company.URL %}" class="card__headline vacancy__link">{%s company.Name %}</a>
+                  <a href="{%s organizerFeature.Path %}/{%s company.LinkedInProfile.Alias %}/" class="card__headline vacancy__link">{%s company.Name %}</a>
                 </figcaption>
               </figure>
               <div class="card__info">

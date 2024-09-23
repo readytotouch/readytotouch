@@ -2,8 +2,8 @@ package db
 
 import "github.com/readytotouch/readytotouch/internal/domain"
 
-func Companies() []domain.Company {
-	return []domain.Company{
+func Companies() []domain.CompanyProfile {
+	return []domain.CompanyProfile{
 		// Favorites
 		// Favorites | ReadyToTouch
 		{
@@ -24,6 +24,7 @@ func Companies() []domain.Company {
 			GoMainLanguage:    false,
 			Vacancies:         domain.Vacancies{},
 			ShortDescription:  "Service for simplifying job search",
+			Industries:        []domain.Industry{},
 		},
 
 		// Favorites | DocHQ
@@ -58,6 +59,9 @@ func Companies() []domain.Company {
 				domain.Haskell: nil,
 			},
 			ShortDescription: "Health Tech company",
+			Industries: []domain.Industry{
+				domain.IndustryHealthTech,
+			},
 		},
 
 		// BigTech
@@ -93,6 +97,9 @@ func Companies() []domain.Company {
 				domain.Haskell: nil,
 			},
 			ShortDescription: "American multinational technology company",
+			Industries:       []domain.Industry{
+				// Too many industries
+			},
 		},
 
 		// BigTech | Mozilla
@@ -131,6 +138,7 @@ func Companies() []domain.Company {
 				domain.Haskell: nil,
 			},
 			ShortDescription: "Organization dedicated to making the web better",
+			Industries:       []domain.Industry{},
 		},
 
 		// BigTech | Microsoft
@@ -168,6 +176,9 @@ func Companies() []domain.Company {
 				domain.Haskell: nil,
 			},
 			ShortDescription: "American multinational technology company",
+			Industries:       []domain.Industry{
+				// Too many industries
+			},
 		},
 
 		// BigTech | IBM
@@ -204,6 +215,9 @@ func Companies() []domain.Company {
 				domain.Haskell: nil,
 			},
 			ShortDescription: "American multinational technology company",
+			Industries:       []domain.Industry{
+				// Too many industries
+			},
 		},
 
 		// Social
@@ -241,6 +255,9 @@ func Companies() []domain.Company {
 				domain.Haskell: nil,
 			},
 			ShortDescription: "Developer platform",
+			Industries: []domain.Industry{
+				domain.IndustryDevOps,
+			},
 		},
 
 		// Social | LinkedIn
@@ -280,6 +297,9 @@ func Companies() []domain.Company {
 				domain.Haskell: nil,
 			},
 			ShortDescription: "Business and employment-focused social media platform",
+			Industries: []domain.Industry{
+				domain.IndustrySocialMedia,
+			},
 		},
 
 		// Social | Reddit
@@ -316,6 +336,9 @@ func Companies() []domain.Company {
 				domain.Haskell: nil,
 			},
 			ShortDescription: "Network of communities where people can dive into their interests, hobbies and passions",
+			Industries: []domain.Industry{
+				domain.IndustrySocialMedia,
+			},
 		},
 
 		// Social | Medium
@@ -352,6 +375,9 @@ func Companies() []domain.Company {
 				domain.Haskell: nil,
 			},
 			ShortDescription: "Home for human stories and ideas",
+			Industries: []domain.Industry{
+				domain.IndustrySocialMedia,
+			},
 		},
 
 		// Social | Pinterest
@@ -388,6 +414,9 @@ func Companies() []domain.Company {
 				domain.Haskell: nil,
 			},
 			ShortDescription: "Visual discovery engine for finding ideas",
+			Industries: []domain.Industry{
+				domain.IndustrySocialMedia,
+			},
 		},
 
 		// Social | Snap
@@ -424,6 +453,9 @@ func Companies() []domain.Company {
 				domain.Haskell: nil,
 			},
 			ShortDescription: "American multimedia instant messaging app",
+			Industries: []domain.Industry{
+				domain.IndustrySocialMedia,
+			},
 		},
 
 		// Social | BeReal.
@@ -458,6 +490,9 @@ func Companies() []domain.Company {
 				domain.Haskell: nil,
 			},
 			ShortDescription: "Simplest photo sharing app",
+			Industries: []domain.Industry{
+				domain.IndustrySocialMedia,
+			},
 		},
 
 		// Favorites
@@ -493,6 +528,9 @@ func Companies() []domain.Company {
 				domain.Haskell: nil,
 			},
 			ShortDescription: "Time series database and easy-to-use high performance monitoring solutions",
+			Industries: []domain.Industry{
+				domain.IndustryDevOps,
+			},
 		},
 
 		// Favorites | Grammarly
@@ -528,7 +566,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "Typing assistant",
+			Industries:       []domain.Industry{},
 		},
 
 		// Tech
@@ -566,6 +605,9 @@ func Companies() []domain.Company {
 				domain.Haskell: nil,
 			},
 			ShortDescription: "Static hosting service",
+			Industries: []domain.Industry{
+				domain.IndustryDevOps,
+			},
 		},
 
 		// Tech | Docker
@@ -600,6 +642,9 @@ func Companies() []domain.Company {
 				domain.Haskell: nil,
 			},
 			ShortDescription: "Multi-platform application for developers",
+			Industries: []domain.Industry{
+				domain.IndustryDevOps,
+			},
 		},
 
 		// Tech | Grafana Labs
@@ -634,6 +679,9 @@ func Companies() []domain.Company {
 				domain.Haskell: nil,
 			},
 			ShortDescription: "Open source monitoring and observability platform",
+			Industries: []domain.Industry{
+				domain.IndustryDevOps,
+			},
 		},
 
 		// Tech | HashiCorp
@@ -667,7 +715,10 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "American software company",
+			ShortDescription: "Software company that provides modular DevOps infrastructure provisioning and management products",
+			Industries: []domain.Industry{
+				domain.IndustryDevOps,
+			},
 		},
 
 		// Tech | CrowdStrike
@@ -704,6 +755,7 @@ func Companies() []domain.Company {
 				domain.Haskell: nil,
 			},
 			ShortDescription: "Cybersecurity technology company",
+			Industries:       []domain.Industry{},
 		},
 
 		// Tech | Cockroach Labs
@@ -740,6 +792,9 @@ func Companies() []domain.Company {
 				domain.Haskell: nil,
 			},
 			ShortDescription: "Distributed database with standard SQL for cloud applications",
+			Industries: []domain.Industry{
+				domain.IndustryDevOps,
+			},
 		},
 
 		// Tech | Timescale
@@ -776,6 +831,9 @@ func Companies() []domain.Company {
 				domain.Haskell: nil,
 			},
 			ShortDescription: "Relational open-source database with PostgreSQL",
+			Industries: []domain.Industry{
+				domain.IndustryDevOps,
+			},
 		},
 
 		// Tech | ScyllaDB
@@ -811,7 +869,10 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "Open Source NoSQL Database with better performance",
+			ShortDescription: "ScyllaDB is the distributed database",
+			Industries: []domain.Industry{
+				domain.IndustryDevOps,
+			},
 		},
 
 		// Tech | Percona
@@ -847,7 +908,10 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "A software development company that helps make databases and applications work better",
+			ShortDescription: "Open source database software",
+			Industries: []domain.Industry{
+				domain.IndustryDevOps,
+			},
 		},
 
 		// Tech | Elastic
@@ -883,7 +947,10 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "AI search engine",
+			ShortDescription: "Search engine",
+			Industries: []domain.Industry{
+				domain.IndustryDevOps,
+			},
 		},
 
 		// Tech | FerretDB
@@ -917,7 +984,10 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "Truly Open Source, MongoDB compatible database",
+			ShortDescription: "MongoDB compatible database",
+			Industries: []domain.Industry{
+				domain.IndustryDevOps,
+			},
 		},
 
 		// Tech | DigitalOcean
@@ -953,7 +1023,10 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "American multinational technology company and cloud service provider",
+			ShortDescription: "Cloud service provider",
+			Industries: []domain.Industry{
+				domain.IndustryDevOps,
+			},
 		},
 
 		// Tech | Canonical
@@ -987,7 +1060,10 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "Software company. Ubuntu publisher",
+			ShortDescription: "Ubuntu publisher",
+			Industries: []domain.Industry{
+				domain.IndustryDevOps,
+			},
 		},
 
 		// Tech | Kong
@@ -1023,7 +1099,10 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "Сloud connectivity company for API and micro-service management",
+			ShortDescription: "Cloud-native, platform-agnostic, scalable API Gateway",
+			Industries: []domain.Industry{
+				domain.IndustryDevOps,
+			},
 		},
 
 		// Tech | Exasol
@@ -1059,7 +1138,10 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "Is an analytics database management software company",
+			ShortDescription: "Analytics database",
+			Industries: []domain.Industry{
+				domain.IndustryDevOps,
+			},
 		},
 
 		// Tech | Palantir
@@ -1093,7 +1175,10 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "American software platforms for big data analytics",
+			ShortDescription: "Platform for big data analytics",
+			Industries: []domain.Industry{
+				domain.IndustryDevOps,
+			},
 		},
 
 		// Tech | Buf
@@ -1130,7 +1215,10 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "The Protobuf developer platform Accelerate API development with Buf, the only end-to-end developer platform for Protocol Buffers and gRPC",
+			ShortDescription: "Protobuf developer platform",
+			Industries: []domain.Industry{
+				domain.IndustryDevOps,
+			},
 		},
 
 		// FinTech
@@ -1167,7 +1255,10 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "Financial technology company focused on global money transfers",
+			ShortDescription: "FinTech company",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
 		},
 
 		// FinTech | American Express
@@ -1203,7 +1294,10 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "American multinational financial services corporation",
+			ShortDescription: "Bank holding",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
 		},
 
 		// FinTech | Mastercard
@@ -1240,7 +1334,10 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "American multinational payment card services corporation",
+			ShortDescription: "Payment card services corporation",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
 		},
 
 		// FinTech | Monzo
@@ -1276,7 +1373,10 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "British mobile banking",
+			ShortDescription: "Mobile banking",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
 		},
 
 		// FinTech | Cynergy Bank
@@ -1313,7 +1413,10 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "Bank is a specialist for business",
+			ShortDescription: "",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
 		},
 
 		// FinTech | Atom bank
@@ -1349,7 +1452,10 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "British mobile banking",
+			ShortDescription: "",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
 		},
 
 		// FinTech | Citi
@@ -1385,7 +1491,10 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "Financial services company",
+			ShortDescription: "",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
 		},
 
 		// Internet
@@ -1421,6 +1530,9 @@ func Companies() []domain.Company {
 				domain.Haskell: nil,
 			},
 			ShortDescription: "URL shortening service and a link management platform",
+			Industries: []domain.Industry{
+				domain.IndustryMarTech,
+			},
 		},
 
 		// Internet Cloudflare
@@ -1461,6 +1573,9 @@ func Companies() []domain.Company {
 				domain.Haskell: nil,
 			},
 			ShortDescription: "CDN and a reverse proxy cloud provider, cybersecurity",
+			Industries: []domain.Industry{
+				domain.IndustryDevOps,
+			},
 		},
 
 		// Internet Namecheap
@@ -1496,7 +1611,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "American domain and web-hosting company",
+			ShortDescription: "Domain and web-hosting company",
+			Industries:       []domain.Industry{},
 		},
 
 		// Internet GoDaddy
@@ -1532,7 +1648,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "American domain and web-hosting company",
+			ShortDescription: "Domain and web-hosting company",
+			Industries:       []domain.Industry{},
 		},
 
 		// Security
@@ -1570,6 +1687,9 @@ func Companies() []domain.Company {
 				domain.Haskell: nil,
 			},
 			ShortDescription: "Service for users to store various passwords",
+			Industries: []domain.Industry{
+				domain.IndustryCyberSecurity,
+			},
 		},
 
 		// Security Okta
@@ -1606,7 +1726,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "American identity and access management company",
+			ShortDescription: "Identity and access management company",
+			Industries:       []domain.Industry{},
 		},
 
 		// Security Nord Security
@@ -1643,7 +1764,10 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "Lithuanian cybersecurity company",
+			ShortDescription: "",
+			Industries: []domain.Industry{
+				domain.IndustryCyberSecurity,
+			},
 		},
 
 		// Security Proton
@@ -1680,7 +1804,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Security Fortinet
@@ -1716,7 +1841,10 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "American cybersecurity company",
+			ShortDescription: "",
+			Industries: []domain.Industry{
+				domain.IndustryCyberSecurity,
+			},
 		},
 
 		// Security SentinelOne
@@ -1752,7 +1880,10 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "American cybersecurity company",
+			ShortDescription: "",
+			Industries: []domain.Industry{
+				domain.IndustryCyberSecurity,
+			},
 		},
 
 		// Famous
@@ -1787,7 +1918,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "American multinational transportation company",
+			ShortDescription: "Transportation company",
+			Industries:       []domain.Industry{},
 		},
 
 		// Famous Siemens
@@ -1826,7 +1958,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "German multinational technology conglomerate",
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Famous SoundCloud
@@ -1863,6 +1996,7 @@ func Companies() []domain.Company {
 				domain.Haskell: nil,
 			},
 			ShortDescription: "Audio streaming service",
+			Industries:       []domain.Industry{},
 		},
 
 		// Famous DoorDash
@@ -1896,11 +2030,14 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "American operating online food ordering and food delivery company",
+			ShortDescription: "Food delivery",
+			Industries:       []domain.Industry{},
 		},
 
 		// Famous Sixt
 		{
+			ID:   0,
+			Type: "",
 			Name: "Sixt",
 			URL:  "https://www.sixt.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1916,8 +2053,12 @@ func Companies() []domain.Company {
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Sixt-EI_IE10875.11,15.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Sixt-Reviews-E10875.htm",
 			},
-			OttaProfileSlug: "",
-			GoMainLanguage:  false,
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies:         domain.Vacancies{},
+			ShortDescription:  "Car Rental service",
+			Industries:        []domain.Industry{},
 		},
 
 		// Famous Motorola Solutions
@@ -1954,6 +2095,7 @@ func Companies() []domain.Company {
 				domain.Haskell: nil,
 			},
 			ShortDescription: "American multinational telecommunications company",
+			Industries:       []domain.Industry{},
 		},
 
 		// Famous Samsung
@@ -1992,7 +2134,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "South Korean multinational major appliance and consumer electronics corporation",
+			ShortDescription: "Electronics corporation",
+			Industries:       []domain.Industry{},
 		},
 
 		// Famous Salesforge
@@ -2029,6 +2172,7 @@ func Companies() []domain.Company {
 				domain.Haskell: nil,
 			},
 			ShortDescription: "All-inclusive sales app",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some
@@ -2063,7 +2207,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "Middle East app provides services: food delivery, grocery delivery, online payments, and taxi services",
+			ShortDescription: "SuperApp",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Dailymotion
@@ -2098,6 +2243,7 @@ func Companies() []domain.Company {
 				domain.Haskell: nil,
 			},
 			ShortDescription: "Video hosting and sharing platforms",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Stream
@@ -2134,6 +2280,7 @@ func Companies() []domain.Company {
 				domain.Haskell: nil,
 			},
 			ShortDescription: "Scalable and fast APIs for building social networks and apps",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Workato
@@ -2167,7 +2314,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "American software (integration and automation) company",
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Form3
@@ -2204,6 +2352,9 @@ func Companies() []domain.Company {
 				domain.Haskell: nil,
 			},
 			ShortDescription: "Financial technology company focused on money transfers",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
 		},
 
 		// Some | Assertive Yield
@@ -2238,6 +2389,10 @@ func Companies() []domain.Company {
 				domain.Haskell: nil,
 			},
 			ShortDescription: "Marketing services company",
+			Industries: []domain.Industry{
+				domain.IndustryAdTech,
+				domain.IndustryMarTech,
+			},
 		},
 
 		// Some | Splunk
@@ -2273,7 +2428,10 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "American software company",
+			ShortDescription: "Big Data platform",
+			Industries: []domain.Industry{
+				domain.IndustryBigData,
+			},
 		},
 
 		// Some | 90POE
@@ -2308,6 +2466,7 @@ func Companies() []domain.Company {
 				domain.Haskell: nil,
 			},
 			ShortDescription: "Digital platform for maritime transporting",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | HelloFresh
@@ -2341,7 +2500,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | AUTODOC
@@ -2375,7 +2535,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Gymondo
@@ -2409,7 +2570,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Delivery Hero
@@ -2445,7 +2607,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Weaviate
@@ -2479,7 +2642,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Fubo
@@ -2513,7 +2677,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Yassir
@@ -2547,7 +2712,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Vio.com
@@ -2581,7 +2747,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Vodeno
@@ -2617,7 +2784,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Utility Warehouse
@@ -2651,7 +2819,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Codenotary
@@ -2685,11 +2854,14 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Audigent
 		{
+			ID:   0,
+			Type: "",
 			Name: "Audigent",
 			URL:  "https://audigent.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2705,8 +2877,12 @@ func Companies() []domain.Company {
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Audigent-EI_IE5815298.11,19.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Audigent-Reviews-E5815298.htm",
 			},
-			OttaProfileSlug: "Audigent",
-			GoMainLanguage:  false,
+			OttaProfileSlug:   "Audigent",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies:         domain.Vacancies{},
+			ShortDescription:  "",
+			Industries:        []domain.Industry{},
 		},
 
 		// Some | runZero
@@ -2740,7 +2916,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Tyk
@@ -2774,7 +2951,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | OpenTag
@@ -2808,7 +2986,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Oxla
@@ -2844,7 +3023,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Lightspeed
@@ -2880,7 +3060,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Squarespace
@@ -2916,7 +3097,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Curve
@@ -2952,7 +3134,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Tradevest
@@ -2988,7 +3171,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Woolsocks
@@ -3025,7 +3209,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Applied Systems Canada
@@ -3061,7 +3246,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Autodesk
@@ -3097,7 +3283,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Vonage
@@ -3135,7 +3322,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | OpenWeb
@@ -3171,7 +3359,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Arenko
@@ -3208,7 +3397,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Xata
@@ -3244,7 +3434,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Dojo
@@ -3282,7 +3473,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Unnax
@@ -3318,7 +3510,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | AB Tasty
@@ -3355,7 +3548,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Firebolt
@@ -3391,7 +3585,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Nine
@@ -3427,7 +3622,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Isovalent
@@ -3463,7 +3659,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | ABC Fitness
@@ -3499,7 +3696,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Device42
@@ -3535,7 +3733,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Acronis
@@ -3571,7 +3770,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Gcore
@@ -3607,7 +3807,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Zep AI
@@ -3643,7 +3844,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Gelato
@@ -3679,7 +3881,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | SumUp
@@ -3715,7 +3918,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Level Home
@@ -3751,7 +3955,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | SonicWall
@@ -3787,7 +3992,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Pindrop
@@ -3823,7 +4029,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Seedtag
@@ -3859,7 +4066,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Flix
@@ -3895,7 +4103,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Press Ganey
@@ -3931,7 +4140,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Atmail
@@ -3967,7 +4177,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Dusty Robotics
@@ -4004,7 +4215,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Cimri
@@ -4040,7 +4252,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Quadcode
@@ -4076,7 +4289,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | FinCompare
@@ -4112,7 +4326,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Mellifera
@@ -4149,7 +4364,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | BNP Paribas - Securities Services
@@ -4185,7 +4401,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Apifonica
@@ -4221,7 +4438,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Cybus
@@ -4257,7 +4475,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Flink
@@ -4293,7 +4512,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Greenbone
@@ -4329,7 +4549,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | OLX
@@ -4365,7 +4586,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Snyk
@@ -4402,7 +4624,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Sinch
@@ -4438,7 +4661,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | FOX Tech
@@ -4474,7 +4698,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | SailPoint
@@ -4510,7 +4735,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Proofpoint
@@ -4546,7 +4772,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Asset Reality
@@ -4582,7 +4809,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Limango
@@ -4618,7 +4846,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | RxBenefits
@@ -4654,7 +4883,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | SmithRx
@@ -4690,7 +4920,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | k-ID
@@ -4726,7 +4957,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | CAFU
@@ -4762,7 +4994,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Rollee
@@ -4799,7 +5032,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Net2Phone
@@ -4835,7 +5069,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Ola Chat
@@ -4871,7 +5106,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Veracity Software Inc
@@ -4907,7 +5143,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Treecard
@@ -4943,7 +5180,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Openprovider
@@ -4979,7 +5217,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | fiskaly
@@ -5015,7 +5254,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Vay
@@ -5051,7 +5291,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Voltus
@@ -5087,7 +5328,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Stonebranch
@@ -5123,7 +5365,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Rapid7
@@ -5159,7 +5402,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Toggle AI
@@ -5195,7 +5439,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | hearX Group
@@ -5231,7 +5476,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | MarkiTech.AI
@@ -5267,7 +5513,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Lantronix
@@ -5303,7 +5550,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | INFOLOB
@@ -5339,7 +5587,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Argela Technologies
@@ -5375,7 +5624,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Top Doctors
@@ -5411,7 +5661,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Recurly
@@ -5447,7 +5698,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Cynet Systems
@@ -5483,7 +5735,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Odyssey Information Services
@@ -5519,7 +5772,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Infomatics Corp
@@ -5555,7 +5809,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Mindera
@@ -5591,7 +5846,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Sytac
@@ -5627,7 +5883,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Qumulus Cloud Platform
@@ -5663,7 +5920,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Saxon AI
@@ -5699,7 +5957,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Dyninno Group
@@ -5735,7 +5994,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// TODO solve alias later "holland-&-barrett"
@@ -5806,7 +6066,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Cognizant
@@ -5842,7 +6103,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Nuro
@@ -5878,7 +6140,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | CloudWalk
@@ -5914,7 +6177,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Transition Technologies PSC
@@ -5950,7 +6214,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Kroger
@@ -5986,7 +6251,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Precisely
@@ -6022,7 +6288,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | R Systems
@@ -6058,7 +6325,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Hays
@@ -6094,7 +6362,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Consort Group
@@ -6130,7 +6399,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Ascendion
@@ -6166,7 +6436,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Checkout.com
@@ -6202,7 +6473,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Unlimit
@@ -6238,7 +6510,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Chime
@@ -6274,7 +6547,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Collective Minds Radiology
@@ -6308,7 +6582,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Cruise
@@ -6344,7 +6619,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | Compass
@@ -6380,7 +6656,8 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 		{
 			ID:   0,  // system
@@ -6415,6 +6692,45 @@ func Companies() []domain.Company {
 				},
 			},
 			ShortDescription: "FinTech company",
+			Industries:       []domain.Industry{},
+		},
+
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "Tailscale",
+			URL:  "https://tailscale.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    35653234,
+				Alias: "tailscale",
+				Name:  "Tailscale",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "tailscale",
+				GoRepositoryCount: 68,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://app.otta.com/jobs/N2SJQvgM",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "VPN",
+			Industries: []domain.Industry{
+				domain.IndustryCyberSecurity,
+			},
 		},
 
 		// Template
@@ -6449,6 +6765,7 @@ func Companies() []domain.Company {
 		//		domain.Haskell: nil,
 		//	},
 		//	ShortDescription: "",
+		//	Industries:       []domain.Industry{},
 		//},
 	}
 }

@@ -15,6 +15,19 @@ const (
 	CompanyTypeStartup = domain.CompanyTypeStartup
 )
 
+var (
+	industries = []Industry{
+		domain.IndustryCyberSecurity,
+		domain.IndustryHealthTech,
+		domain.IndustryFinTech,
+		domain.IndustryAdTech,
+		domain.IndustryMarTech,
+		domain.IndustryDevOps,
+		domain.IndustryBigData,
+		domain.IndustrySocialMedia,
+	}
+)
+
 type (
 	Organizer        = domain.Organizer
 	OrganizerFeature = domain.OrganizerFeature
@@ -24,6 +37,7 @@ type (
 		TotalFavorites     int64
 		LastMonthFavorites int64
 	}
+	Industry = domain.Industry
 )
 
 type featureNavigation struct {
@@ -58,6 +72,22 @@ func toFeatureNavigation(path string) featureNavigation {
 		companiesActive: "",
 		vacanciesActive: "",
 	}
+}
+
+func industryAliases(source []Industry) string {
+	result := make([]string, len(source))
+	for i, v := range source {
+		result[i] = v.Alias
+	}
+	return strings.Join(result, ",")
+}
+
+func industryNames(source []Industry) string {
+	result := make([]string, len(source))
+	for i, v := range source {
+		result[i] = v.Name
+	}
+	return strings.Join(result, ", ")
 }
 
 var (

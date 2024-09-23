@@ -4,10 +4,12 @@ import urlStateContainer from "./framework/company_url_state_container";
 import {
     COMPANY_SEARCH_QUERY,
     COMPANY_TYPE_CRITERIA_NAME,
+    COMPANY_INDUSTRY_CRITERIA_NAME,
     COMPANY_IN_FAVORITES_CRITERIA_NAME,
 } from "./framework/company_criteria_names";
 import {InputCheckboxes} from "./framework/checkboxes";
 import {companyTypes} from "./framework/company_types";
+import {industries} from "./framework/industries";
 import {htmlToNode} from "./framework/html";
 import {Alias} from "./framework/alias";
 import {renderSelected} from "./framework/selected_criteria";
@@ -61,12 +63,23 @@ $companies.forEach(function ($company: HTMLElement) {
 
 const $search = document.getElementById("js-company-query") as HTMLInputElement;
 const $typeCheckboxes = new InputCheckboxes(document.querySelectorAll("input.js-criteria-company-type") as any as Array<HTMLInputElement>);
+const $industryCheckboxes = new InputCheckboxes(document.querySelectorAll("input.js-criteria-company-industry") as any as Array<HTMLInputElement>);
 const $inFavoritesCheckbox = document.getElementById("js-criteria-in-favorites") as HTMLInputElement;
 const $selectedCriteria = document.getElementById("js-company-selected-criteria");
 const $reset = document.getElementById("js-criteria-reset");
 
 $typeCheckboxes.onChange(function (state: Array<string>) {
     urlStateContainer.setArrayCriteria(COMPANY_TYPE_CRITERIA_NAME, state);
+    urlStateContainer.setPage(1);
+    urlStateContainer.storeCurrentState();
+
+    renderSelectedCriteriaByURL();
+
+    search();
+});
+
+$industryCheckboxes.onChange(function (state: Array<string>) {
+    urlStateContainer.setArrayCriteria(COMPANY_INDUSTRY_CRITERIA_NAME, state);
     urlStateContainer.setPage(1);
     urlStateContainer.storeCurrentState();
 
@@ -95,6 +108,7 @@ function setStateByURL() {
     setInputStateByURL($search, COMPANY_SEARCH_QUERY);
 
     setCheckboxesStateByURL($typeCheckboxes, COMPANY_TYPE_CRITERIA_NAME);
+    setCheckboxesStateByURL($industryCheckboxes, COMPANY_INDUSTRY_CRITERIA_NAME);
 
     setCheckboxStateByURL($inFavoritesCheckbox, COMPANY_IN_FAVORITES_CRITERIA_NAME);
 }
@@ -103,6 +117,7 @@ function renderSelectedCriteriaByURL() {
     const $views: Array<HTMLElement> = [];
 
     renderSelectedCheckboxes($views, COMPANY_TYPE_CRITERIA_NAME, companyTypes);
+    renderSelectedCheckboxes($views, COMPANY_INDUSTRY_CRITERIA_NAME, industries);
     renderSelectedCheckbox($views, COMPANY_IN_FAVORITES_CRITERIA_NAME, "Favorites");
 
     $selectedCriteria.innerHTML = "";
@@ -185,6 +200,7 @@ function updatePageState() {
 function search() {
     const query = $search.value.trim().toLowerCase();
     const types = urlStateContainer.getCriteria(COMPANY_TYPE_CRITERIA_NAME, []);
+    const industries = urlStateContainer.getCriteria(COMPANY_INDUSTRY_CRITERIA_NAME, []);
     const inFavorites = urlStateContainer.getCriteria(COMPANY_IN_FAVORITES_CRITERIA_NAME, false);
 
     const matchQuery = function ($company: HTMLElement): boolean {
@@ -203,12 +219,32 @@ function search() {
         return false;
     }
 
+    const matchIndustry = function ($company: HTMLElement): boolean {
+        if (industries.length === 0) {
+            return true;
+        }
+
+        const companyIndustries = $company.getAttribute("data-company-industries").split(",");
+
+        for (const industry of industries) {
+            if (companyIndustries.indexOf(industry) !== -1) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
     const match = function ($company: HTMLElement): boolean {
         if (!matchQuery($company)) {
             return false;
         }
 
         if (types.length > 0 && types.indexOf($company.getAttribute("data-company-type")) === -1) {
+            return false;
+        }
+
+        if (!matchIndustry($company)) {
             return false;
         }
 

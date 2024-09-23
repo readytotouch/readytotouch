@@ -35,6 +35,7 @@ var (
 		"konghq":                       29,  // Kong Inc.
 		"exasol-ag":                    30,  // Exasol
 		"palantir-technologies":        31,  // Palantir Technologies
+		"bufbuild":                     178, // Buf
 		"wiseaccount":                  32,  // Wise
 		"american-express":             33,  // American Express
 		"mastercard":                   34,  // Mastercard
@@ -181,6 +182,8 @@ var (
 		"cmrad":                        175, // Collective Minds Radiology
 		"getcruise":                    176, // Cruise
 		"compassinc":                   177, // Compass
+		"mercuryhq":                    179, // Mercury
+		"tailscale":                    180, // Tailscale
 
 	}
 )

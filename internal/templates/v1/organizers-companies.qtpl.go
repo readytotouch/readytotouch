@@ -175,8 +175,28 @@ func StreamOrganizersCompanies(qw422016 *qt422016.Writer,
         </div>
       </div>
 
-      `)
+      <div class="filters__group">
+        <header class="filters__header">
+          <h4 class="filters__headline">Industry</h4>
+        </header>
+        <div class="filters__elements">
+          `)
+	for _, industry := range industries {
+		qw422016.N().S(`
+          <label class="checkbox filters__element">
+            <input class="js-criteria-company-industry checkbox__input" type="checkbox" data-alias="`)
+		qw422016.E().S(industry.Alias)
+		qw422016.N().S(`" />
+            <span class="checkbox__element"></span>
+            `)
+		qw422016.E().S(industry.Name)
+		qw422016.N().S(`
+          </label>
+          `)
+	}
 	qw422016.N().S(`
+        </div>
+      </div>
 
       <!-- Other -->
       <div class="filters__group">
@@ -230,6 +250,9 @@ func StreamOrganizersCompanies(qw422016 *qt422016.Writer,
                  data-company-type="`)
 		qw422016.E().S(string(company.Type))
 		qw422016.N().S(`"
+                 data-company-industries="`)
+		qw422016.E().S(industryAliases(company.Industries))
+		qw422016.N().S(`"
             >
               <aside class="card__action">
                 `)
@@ -276,8 +299,10 @@ func StreamOrganizersCompanies(qw422016 *qt422016.Writer,
                 </div>
                 <figcaption class="card__header-caption">
                   <a href="`)
-		qw422016.E().S(company.URL)
-		qw422016.N().S(`" class="card__headline vacancy__link">`)
+		qw422016.E().S(organizerFeature.Path)
+		qw422016.N().S(`/`)
+		qw422016.E().S(company.LinkedInProfile.Alias)
+		qw422016.N().S(`/" class="card__headline vacancy__link">`)
 		qw422016.E().S(company.Name)
 		qw422016.N().S(`</a>
                 </figcaption>

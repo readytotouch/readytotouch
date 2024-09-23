@@ -142,7 +142,7 @@
         height="16"
         src="/assets/images/pages/vacancy/company-type.svg"
       />
-      <figcaption class="card__figcaption">TodoTech</figcaption>
+      <figcaption class="card__figcaption">{%s industryNames(company.Industries) %}</figcaption>
     </figure>
     {% endcomment %}
   </div>

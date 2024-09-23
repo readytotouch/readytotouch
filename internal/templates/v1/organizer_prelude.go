@@ -11,7 +11,7 @@ import (
 )
 
 type (
-	Company    = domain.Company
+	Company    = domain.CompanyProfile
 	University = domain.University
 )
 

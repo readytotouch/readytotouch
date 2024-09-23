@@ -2,7 +2,7 @@ package dev
 
 import "github.com/readytotouch/readytotouch/internal/domain"
 
-type Company = domain.Company
+type Company = domain.CompanyProfile
 
 type CompanyCodePair struct {
 	ID    int64
