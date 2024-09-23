@@ -2,6 +2,7 @@ package domain
 
 type (
 	Language              int
+	Industry              string
 	LanguageTitleKeywords string
 	CompanyType           string
 )
@@ -31,6 +32,18 @@ const (
 	CompanyTypeStartup CompanyType = "startup"
 )
 
+const (
+	IndustryCyberSecurity Industry = "cybersecurity"
+	IndustryEdTech        Industry = "edtech"
+	IndustryECommerce     Industry = "ecommerce"
+	IndustryHealthTech    Industry = "healthtech"
+	IndustryMedTech       Industry = "medtech"
+	IndustryFinTech       Industry = "fintech"
+	IndustryGameDev       Industry = "gamedev"
+	IndustryIoT           Industry = "iot"
+	IndustryAdTech        Industry = "AdTech"
+)
+
 type Vacancies = [7][]string
 
 type LinkedInProfile struct {
@@ -54,6 +67,7 @@ type Company struct {
 	ID                int64       // populates from the CompanyAliasMap
 	Type              CompanyType // populates from the CompanyTypeMap
 	Name              string
+	Industries        []Industry
 	URL               string
 	LinkedInProfile   LinkedInProfile
 	GitHubProfile     GitHubProfile

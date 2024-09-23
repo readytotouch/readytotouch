@@ -13,6 +13,6 @@ const all = [
     new Alias("adtech", "AdTech"),
 ];
 
-export function directions(aliases: Array<string>): Array<Alias> {
+export function industries(aliases: Array<string>): Array<Alias> {
     return orderAliases(all, aliases);
 }

@@ -1096,6 +1096,43 @@ func Companies() []domain.Company {
 			ShortDescription: "American software platforms for big data analytics",
 		},
 
+		// Tech | Buf
+		// Template
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "Buf",
+			URL:  "https://buf.build/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    68684262,
+				Alias: "bufbuild",
+				Name:  "Buf",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "bufbuild",
+				GoRepositoryCount: 25,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+			},
+			OttaProfileSlug:   "Buf",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://app.otta.com/jobs/9KLKULQr",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "The Protobuf developer platform Accelerate API development with Buf, the only end-to-end developer platform for Protocol Buffers and gRPC",
+		},
+
 		// FinTech
 		// FinTech | Wise
 		{
