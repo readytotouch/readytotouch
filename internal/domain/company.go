@@ -81,5 +81,4 @@ type Company struct {
 	GoMainLanguage    bool // Golang is the main language
 	Vacancies         Vacancies
 	ShortDescription  string // Only for understanding what the company does
-	Industries        []Industry
 }
