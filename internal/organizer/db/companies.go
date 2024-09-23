@@ -599,7 +599,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "Multi-platform application for developers"
 		},
 
 		// Tech | Grafana Labs
@@ -633,7 +633,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "Open source monitoring and observability platform"
 		},
 
 		// Tech | HashiCorp
@@ -667,7 +667,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "American software company "
 		},
 
 		// Tech | CrowdStrike
@@ -775,7 +775,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "Relational open-source database with PostgreSQL",
 		},
 
 		// Tech | ScyllaDB
@@ -811,7 +811,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "Open Source NoSQL Database with better performance",
 		},
 
 		// Tech | Percona
@@ -847,7 +847,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "A software development company that helps make databases and applications work better",
 		},
 
 		// Tech | Elastic
@@ -883,7 +883,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "AI search engine",
 		},
 
 		// Tech | FerretDB
@@ -917,7 +917,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "Truly Open Source, MongoDB compatible database",
 		},
 
 		// Tech | DigitalOcean
@@ -953,7 +953,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "American multinational technology company and cloud service provider",
 		},
 
 		// Tech | Canonical
@@ -987,7 +987,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "Software company. Ubuntu publisher",
 		},
 
 		// Tech | Kong
@@ -1023,7 +1023,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "Сloud connectivity company for API and micro-service management",
 		},
 
 		// Tech | Exasol
@@ -1059,7 +1059,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "Is an analytics database management software company",
 		},
 
 		// Tech | Palantir
@@ -1093,7 +1093,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "American software platforms for big data analytics",
 		},
 
 		// FinTech
@@ -1130,7 +1130,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "Financial technology company focused on global money transfers",
 		},
 
 		// FinTech | American Express
@@ -1166,7 +1166,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "American multinational financial services corporation",
 		},
 
 		// FinTech | Mastercard
@@ -1203,7 +1203,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "American multinational payment card services corporation",
 		},
 
 		// FinTech | Monzo
@@ -1239,7 +1239,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "British mobile banking",
 		},
 
 		// FinTech | Cynergy Bank
@@ -1276,7 +1276,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: " Bank is a specialist for business",
 		},
 
 		// FinTech | Atom bank
@@ -1312,7 +1312,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "British mobile banking",
 		},
 
 		// FinTech | Citi
@@ -1348,7 +1348,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "Financial services company",
 		},
 
 		// Internet
@@ -1383,7 +1383,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "URL shortening service and a link management platform",
 		},
 
 		// Internet Cloudflare
@@ -1423,7 +1423,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "CDN and a reverse proxy cloud provider, cybersecurity",
 		},
 
 		// Internet Namecheap
@@ -1459,7 +1459,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "American domain and web-hosting company",
 		},
 
 		// Internet GoDaddy
@@ -1495,7 +1495,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "American domain and web-hosting company",
 		},
 
 		// Security
@@ -1532,7 +1532,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "Service for users to store various passwords",
 		},
 
 		// Security Okta
@@ -1569,7 +1569,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "American identity and access management company",
 		},
 
 		// Security Nord Security
@@ -1606,7 +1606,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "Lithuanian cybersecurity company",
 		},
 
 		// Security Proton
@@ -1679,7 +1679,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "American cybersecurity company",
 		},
 
 		// Security SentinelOne
@@ -1715,7 +1715,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "American cybersecurity company",
 		},
 
 		// Famous
@@ -1750,7 +1750,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "American multinational transportation company",
 		},
 
 		// Famous Siemens
@@ -1789,7 +1789,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "German multinational technology conglomerate",
 		},
 
 		// Famous SoundCloud
@@ -1825,7 +1825,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "Audio streaming service",
 		},
 
 		// Famous DoorDash
@@ -1859,7 +1859,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "American operating online food ordering and food delivery company",
 		},
 
 		// Famous Sixt
@@ -1916,7 +1916,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "American multinational telecommunications company",
 		},
 
 		// Famous Samsung
@@ -1955,7 +1955,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "South Korean multinational major appliance and consumer electronics corporation",
 		},
 
 		// Famous Salesforge
@@ -1991,7 +1991,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "All-inclusive sales app",
 		},
 
 		// Some
@@ -2026,7 +2026,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "Middle East app provides services: food delivery, grocery delivery, online payments, and taxi services",
 		},
 
 		// Some | Dailymotion
@@ -2060,7 +2060,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "Video hosting and sharing platforms",
 		},
 
 		// Some | Stream
@@ -2096,7 +2096,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "Scalable and fast APIs for building social networks and apps",
 		},
 
 		// Some | Workato
@@ -2130,7 +2130,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "American software (integration and automation) company",
 		},
 
 		// Some | Form3
@@ -2166,7 +2166,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "Financial technology company focused on money transfers", 
 		},
 
 		// Some | Assertive Yield
@@ -2200,7 +2200,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "Marketing services company", 
 		},
 
 		// Some | Splunk
@@ -2236,7 +2236,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "American software company", 
 		},
 
 		// Some | 90POE
@@ -2270,7 +2270,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "", // @TODO for Mykhailo
+			ShortDescription: "Digital platform for maritime transporting",
 		},
 
 		// Some | HelloFresh
