@@ -72,7 +72,20 @@ func (c *Controller) Main(ctx *gin.Context) {
 }
 
 func (c *Controller) GolangCompaniesUkraine(ctx *gin.Context) {
-	content := template.OrganizerStatic(db.Companies(), db.UkrainianUniversities())
+	var (
+		source    = db.Companies()
+		companies = make([]domain.Company, 0, len(source))
+	)
+
+	for _, company := range source {
+		if company.Vacancies[domain.Go] == nil {
+			continue
+		}
+
+		companies = append(companies, company)
+	}
+
+	content := template.OrganizerStatic(companies, db.UkrainianUniversities())
 
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
 }

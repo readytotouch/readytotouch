@@ -6345,10 +6345,45 @@ func Companies() []domain.Company {
 			},
 			ShortDescription: "", // @TODO for Mykhailo
 		},
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "Mercury",
+			URL:  "https://mercury.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    19107985,
+				Alias: "mercuryhq",
+				Name:  "Mercury",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "",
+				GoRepositoryCount: 0,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Mercury-EI_IE3583070.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Mercury-Reviews-E3583070.htm",
+			},
+			OttaProfileSlug:   "Mercury",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go:      nil,
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: []string{
+					"https://app.otta.com/jobs/8o2_A2QN",
+				},
+			},
+			ShortDescription: "FinTech company",
+		},
 
 		// Template
 		//{
-		//	ID: 0,
+		//	ID:   0,  // system
+		//	Type: "", // system
 		//	Name: "",
 		//	URL:  "",
 		//	LinkedInProfile: domain.LinkedInProfile{
@@ -6357,7 +6392,7 @@ func Companies() []domain.Company {
 		//		Name:  "",
 		//	},
 		//	GitHubProfile: domain.GitHubProfile{
-		//		Login:           "",
+		//		Login:             "",
 		//		GoRepositoryCount: 0,
 		//	},
 		//	GlassdoorProfile: domain.GlassdoorProfile{
