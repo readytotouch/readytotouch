@@ -599,7 +599,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "Multi-platform application for developers"
+			ShortDescription: "Multi-platform application for developers",
 		},
 
 		// Tech | Grafana Labs
@@ -633,7 +633,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "Open source monitoring and observability platform"
+			ShortDescription: "Open source monitoring and observability platform",
 		},
 
 		// Tech | HashiCorp
@@ -667,7 +667,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "American software company "
+			ShortDescription: "American software company",
 		},
 
 		// Tech | CrowdStrike
@@ -1276,7 +1276,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: " Bank is a specialist for business",
+			ShortDescription: "Bank is a specialist for business",
 		},
 
 		// FinTech | Atom bank
@@ -2166,7 +2166,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "Financial technology company focused on money transfers", 
+			ShortDescription: "Financial technology company focused on money transfers",
 		},
 
 		// Some | Assertive Yield
@@ -2200,7 +2200,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "Marketing services company", 
+			ShortDescription: "Marketing services company",
 		},
 
 		// Some | Splunk
@@ -2236,7 +2236,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "American software company", 
+			ShortDescription: "American software company",
 		},
 
 		// Some | 90POE
