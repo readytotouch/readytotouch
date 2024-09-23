@@ -33,15 +33,20 @@ const (
 )
 
 const (
-	IndustryCyberSecurity Industry = "cybersecurity"
-	IndustryEdTech        Industry = "edtech"
-	IndustryECommerce     Industry = "ecommerce"
-	IndustryHealthTech    Industry = "healthtech"
-	IndustryMedTech       Industry = "medtech"
-	IndustryFinTech       Industry = "fintech"
-	IndustryGameDev       Industry = "gamedev"
-	IndustryIoT           Industry = "iot"
-	IndustryAdTech        Industry = "AdTech"
+	IndustryCyberSecurity  Industry = "cybersecurity"
+	IndustryEdTech         Industry = "edtech"
+	IndustryECommerce      Industry = "e-commerce"
+	IndustryHealthTech     Industry = "healthtech"
+	IndustryMedTech        Industry = "medtech"
+	IndustryFinTech        Industry = "fintech"
+	IndustryGameDev        Industry = "gamedev"
+	IndustryIoT            Industry = "iot"
+	IndustryAdTech         Industry = "adtech"
+	IndustryMarTech        Industry = "martech"
+	IndustryDevOps         Industry = "devops"
+	IndustryCloudComputing Industry = "cloud-computing"
+	IndustryBigData        Industry = "big-data"
+	IndustrySocialMedia    Industry = "social-media"
 )
 
 type Vacancies = [7][]string
@@ -67,7 +72,6 @@ type Company struct {
 	ID                int64       // populates from the CompanyAliasMap
 	Type              CompanyType // populates from the CompanyTypeMap
 	Name              string
-	Industries        []Industry
 	URL               string
 	LinkedInProfile   LinkedInProfile
 	GitHubProfile     GitHubProfile
@@ -77,4 +81,5 @@ type Company struct {
 	GoMainLanguage    bool // Golang is the main language
 	Vacancies         Vacancies
 	ShortDescription  string // Only for understanding what the company does
+	Industries        []Industry
 }
