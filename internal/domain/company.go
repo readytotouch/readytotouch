@@ -2,6 +2,7 @@ package domain
 
 type (
 	Language              int
+	Industry              string
 	LanguageTitleKeywords string
 	CompanyType           string
 )
@@ -29,6 +30,23 @@ const (
 const (
 	CompanyTypeProduct CompanyType = "product"
 	CompanyTypeStartup CompanyType = "startup"
+)
+
+const (
+	IndustryCyberSecurity  Industry = "cybersecurity"
+	IndustryEdTech         Industry = "edtech"
+	IndustryECommerce      Industry = "e-commerce"
+	IndustryHealthTech     Industry = "healthtech"
+	IndustryMedTech        Industry = "medtech"
+	IndustryFinTech        Industry = "fintech"
+	IndustryGameDev        Industry = "gamedev"
+	IndustryIoT            Industry = "iot"
+	IndustryAdTech         Industry = "adtech"
+	IndustryMarTech        Industry = "martech"
+	IndustryDevOps         Industry = "devops"
+	IndustryCloudComputing Industry = "cloud-computing"
+	IndustryBigData        Industry = "big-data"
+	IndustrySocialMedia    Industry = "social-media"
 )
 
 type Vacancies = [7][]string

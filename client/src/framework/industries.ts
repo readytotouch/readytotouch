@@ -4,15 +4,20 @@ import {orderAliases} from "./order_aliases";
 const all = [
     new Alias("cybersecurity", "CyberSecurity"),
     new Alias("edtech", "EdTech"),
-    new Alias("ecommerce", "eCommerce"),
+    new Alias("ecommerce", "e-commerce"),
     new Alias("healthtech", "HealthTech"),
     new Alias("medtech", "MedTech"),
     new Alias("fintech", "FinTech"),
     new Alias("gamedev", "GameDev"),
     new Alias("iot", "IoT"),
     new Alias("adtech", "AdTech"),
+    new Alias("martech", "MarTech"),
+    new Alias("devops", "DevOps"),
+    new Alias("cloud-computing", "Cloud Computing"),
+    new Alias("big-data", "Big Data"),
+    new Alias("social-media", "Social Media"),
 ];
 
-export function directions(aliases: Array<string>): Array<Alias> {
+export function industries(aliases: Array<string>): Array<Alias> {
     return orderAliases(all, aliases);
 }

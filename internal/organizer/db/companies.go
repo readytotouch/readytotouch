@@ -599,7 +599,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "Multi-platform application for developers"
+			ShortDescription: "Multi-platform application for developers",
 		},
 
 		// Tech | Grafana Labs
@@ -633,7 +633,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "Open source monitoring and observability platform"
+			ShortDescription: "Open source monitoring and observability platform",
 		},
 
 		// Tech | HashiCorp
@@ -667,7 +667,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "American software company "
+			ShortDescription: "American software company",
 		},
 
 		// Tech | CrowdStrike
@@ -1096,6 +1096,43 @@ func Companies() []domain.Company {
 			ShortDescription: "American software platforms for big data analytics",
 		},
 
+		// Tech | Buf
+		// Template
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "Buf",
+			URL:  "https://buf.build/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    68684262,
+				Alias: "bufbuild",
+				Name:  "Buf",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "bufbuild",
+				GoRepositoryCount: 25,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+			},
+			OttaProfileSlug:   "Buf",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://app.otta.com/jobs/9KLKULQr",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "The Protobuf developer platform Accelerate API development with Buf, the only end-to-end developer platform for Protocol Buffers and gRPC",
+		},
+
 		// FinTech
 		// FinTech | Wise
 		{
@@ -1276,7 +1313,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: " Bank is a specialist for business",
+			ShortDescription: "Bank is a specialist for business",
 		},
 
 		// FinTech | Atom bank
@@ -2166,7 +2203,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "Financial technology company focused on money transfers", 
+			ShortDescription: "Financial technology company focused on money transfers",
 		},
 
 		// Some | Assertive Yield
@@ -2200,7 +2237,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "Marketing services company", 
+			ShortDescription: "Marketing services company",
 		},
 
 		// Some | Splunk
@@ -2236,7 +2273,7 @@ func Companies() []domain.Company {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "American software company", 
+			ShortDescription: "American software company",
 		},
 
 		// Some | 90POE
