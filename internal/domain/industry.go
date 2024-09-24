@@ -1,9 +1,6 @@
 package domain
 
-type Industry struct {
-	Alias string
-	Name  string
-}
+type Industry = AliasName
 
 var (
 	IndustryCyberSecurity = Industry{

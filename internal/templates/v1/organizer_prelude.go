@@ -17,7 +17,7 @@ type (
 
 const (
 	golangKeywordsTitles = string(domain.GoTitleKeywords)
-	keywordsCommon       = `"Developer" OR "Engineer"`
+	keywordsCommon       = `"Developer" OR "Engineer" OR "DevOps"`
 )
 
 func linkedinConnectionsURL(companies []Company, universities []University) string {
