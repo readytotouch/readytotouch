@@ -29,6 +29,9 @@ func UkrainianUniversities() []domain.University {
 	// НАУ
 	// ВНТУ
 
+	// https://www.linkedin.com/search/results/schools/?keywords=Ukraine
+	// https://www.linkedin.com/search/results/schools/?keywords=Ukraine%20OR%20Kyiv%20OR%20%20Kharkiv%20OR%20Lviv%20OR%20Dnipro%20OR%20Vinnytsia
+
 	return []domain.University{
 		// УКУ | Український Католицький Університет
 		{
@@ -213,6 +216,128 @@ func UkrainianUniversities() []domain.University {
 				ID:    15102004,
 				Alias: "vinnytsia-national-technical-university",
 				Name:  "Vinnytsia National Technical University",
+			},
+		},
+
+		// From https://www.linkedin.com/search/results/schools/?keywords=Ukraine
+
+		{
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    18080249,
+				Alias: "kyivnationaluniversityoftechnologiesanddesignknutd",
+				Name:  "Kyiv National University of Technologies and Design (KNUTD)",
+			},
+		},
+
+		{
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    15143861,
+				Alias: "kyiv-national-university-of-construction-and-archi",
+				Name:  "Kyiv National University of Construction and Architecture",
+			},
+		},
+
+		{
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    15101046,
+				Alias: "kyiv-national-economics-university",
+				Name:  "Kyiv National Economics University",
+			},
+		},
+
+		{
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    1599158,
+				Alias: "donetsk-national-university",
+				Name:  "Donetsk National University",
+			},
+		},
+
+		{
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    15101060,
+				Alias: "national-medical-university-'o.o.-bogomolec'-kyiv",
+				Name:  "Bogomolets National Medical University",
+			},
+		},
+
+		{
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    15100187,
+				Alias: "ivano-frankivsk-national-technical-university-of-oil-and-gas",
+				Name:  "Ivano-Frankivsk National Technical University of Oil and Gas",
+			},
+		},
+
+		{
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    9029417,
+				Alias: "zaporizhzhya-national-technical-university",
+				Name:  "Zaporizhzhya National Technical University",
+			},
+		},
+
+		{
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    7991636,
+				Alias: "donetsk-national-technical-university",
+				Name:  "Donetsk National Technical University",
+			},
+		},
+
+		{
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    15101074,
+				Alias: "west-ukrainian-national-university",
+				Name:  "Ternopil Academy of National Economy",
+			},
+		},
+
+		{
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    27066401,
+				Alias: "national-pedagogical-dragomanov-university",
+				Name:  "National Pedagogical Dragomanov University",
+			},
+		},
+
+		{
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    18144134,
+				Alias: "national-university-of-food-technologies",
+				Name:  "National University of Food Technologies",
+			},
+		},
+
+		{
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    15101998,
+				Alias: "vasyl-stefanyk-precarpathian-national-university",
+				Name:  "Vasyl Stefanyk Precarpathian National University",
+			},
+		},
+
+		{
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    15149751,
+				Alias: "nlu1804",
+				Name:  "Yaroslav Mudryi National Law University",
+			},
+		},
+
+		{
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    18691495,
+				Alias: "national-university-of-life-and-environmental-sciences-of-ukraine",
+				Name:  "National University of Life and Environmental Sciences of Ukraine",
+			},
+		},
+
+		{
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    15099038,
+				Alias: "state-university-of-trade-and-economics",
+				Name:  "State University of Trade and Economics",
 			},
 		},
 
