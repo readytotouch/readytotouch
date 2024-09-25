@@ -108,6 +108,7 @@ func Companies() []domain.CompanyProfile {
 			},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -148,6 +149,9 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "Organization dedicated to making the web better",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Czechia,
+			},
 		},
 
 		// BigTech | Microsoft
@@ -190,6 +194,7 @@ func Companies() []domain.CompanyProfile {
 			},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -232,6 +237,7 @@ func Companies() []domain.CompanyProfile {
 			},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -275,6 +281,7 @@ func Companies() []domain.CompanyProfile {
 			},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -320,6 +327,7 @@ func Companies() []domain.CompanyProfile {
 			},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -404,6 +412,7 @@ func Companies() []domain.CompanyProfile {
 			},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -446,6 +455,7 @@ func Companies() []domain.CompanyProfile {
 			},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -488,6 +498,7 @@ func Companies() []domain.CompanyProfile {
 			},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -607,6 +618,7 @@ func Companies() []domain.CompanyProfile {
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -770,6 +782,7 @@ func Companies() []domain.CompanyProfile {
 			},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -808,6 +821,9 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "Cybersecurity technology company",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Czechia,
+			},
 		},
 
 		// Tech | Cockroach Labs
@@ -927,6 +943,7 @@ func Companies() []domain.CompanyProfile {
 			},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -1011,6 +1028,7 @@ func Companies() []domain.CompanyProfile {
 			},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -1127,6 +1145,7 @@ func Companies() []domain.CompanyProfile {
 			},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -1211,6 +1230,7 @@ func Companies() []domain.CompanyProfile {
 			},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -1251,6 +1271,7 @@ func Companies() []domain.CompanyProfile {
 			},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -1334,6 +1355,7 @@ func Companies() []domain.CompanyProfile {
 			},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -1376,6 +1398,7 @@ func Companies() []domain.CompanyProfile {
 			},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -1419,6 +1442,7 @@ func Companies() []domain.CompanyProfile {
 			},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -1461,6 +1485,7 @@ func Companies() []domain.CompanyProfile {
 			},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -1582,6 +1607,7 @@ func Companies() []domain.CompanyProfile {
 			},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -1666,6 +1692,7 @@ func Companies() []domain.CompanyProfile {
 			},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -1827,6 +1854,7 @@ func Companies() []domain.CompanyProfile {
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -1870,6 +1898,7 @@ func Companies() []domain.CompanyProfile {
 			},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -1950,6 +1979,7 @@ func Companies() []domain.CompanyProfile {
 			},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -1992,6 +2022,7 @@ func Companies() []domain.CompanyProfile {
 			},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -2031,6 +2062,7 @@ func Companies() []domain.CompanyProfile {
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -2074,6 +2106,7 @@ func Companies() []domain.CompanyProfile {
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -2114,6 +2147,7 @@ func Companies() []domain.CompanyProfile {
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -2152,6 +2186,7 @@ func Companies() []domain.CompanyProfile {
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -2219,6 +2254,7 @@ func Companies() []domain.CompanyProfile {
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -2262,6 +2298,7 @@ func Companies() []domain.CompanyProfile {
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -2338,6 +2375,7 @@ func Companies() []domain.CompanyProfile {
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -2485,6 +2523,10 @@ func Companies() []domain.CompanyProfile {
 			Industries: []domain.Industry{
 				domain.IndustryFinTech,
 			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
 		},
 
 		// Some | Assertive Yield
@@ -2564,6 +2606,7 @@ func Companies() []domain.CompanyProfile {
 			},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -2602,6 +2645,7 @@ func Companies() []domain.CompanyProfile {
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -2640,6 +2684,7 @@ func Companies() []domain.CompanyProfile {
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -2756,6 +2801,7 @@ func Companies() []domain.CompanyProfile {
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -2902,6 +2948,7 @@ func Companies() []domain.CompanyProfile {
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -2940,6 +2987,9 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Czechia,
+			},
 		},
 
 		// Some | Utility Warehouse
@@ -2975,6 +3025,9 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Czechia,
+			},
 		},
 
 		// Some | Codenotary
@@ -3224,6 +3277,7 @@ func Companies() []domain.CompanyProfile {
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -3300,8 +3354,11 @@ func Companies() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "",
-			Industries:       []domain.Industry{},
+			ShortDescription:          "",
+			Industries:                []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				//
+			},
 		},
 
 		// Some | Tradevest
@@ -3453,6 +3510,7 @@ func Companies() []domain.CompanyProfile {
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -3802,6 +3860,9 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Czechia,
+			},
 		},
 
 		// Some | Isovalent
@@ -4064,6 +4125,9 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Czechia,
+			},
 		},
 
 		// Some | SumUp
@@ -4103,6 +4167,7 @@ func Companies() []domain.CompanyProfile {
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -4291,6 +4356,7 @@ func Companies() []domain.CompanyProfile {
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -4710,6 +4776,9 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Czechia,
+			},
 		},
 
 		// Some | Greenbone
@@ -4786,6 +4855,7 @@ func Companies() []domain.CompanyProfile {
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -4975,6 +5045,7 @@ func Companies() []domain.CompanyProfile {
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -5611,6 +5682,7 @@ func Companies() []domain.CompanyProfile {
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -6056,6 +6128,9 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Czechia,
+			},
 		},
 
 		// Some | Sytac
@@ -6315,6 +6390,7 @@ func Companies() []domain.CompanyProfile {
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -6506,6 +6582,7 @@ func Companies() []domain.CompanyProfile {
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -6582,8 +6659,11 @@ func Companies() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "",
-			Industries:       []domain.Industry{},
+			ShortDescription:          "",
+			Industries:                []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				//
+			},
 		},
 
 		// Some | Consort Group
@@ -6697,6 +6777,7 @@ func Companies() []domain.CompanyProfile {
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -6737,6 +6818,7 @@ func Companies() []domain.CompanyProfile {
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -6777,6 +6859,7 @@ func Companies() []domain.CompanyProfile {
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
