@@ -149,6 +149,7 @@ func (c *Controller) Companies(ctx *gin.Context) {
 		headerProfiles,
 		companies,
 		db.UkrainianUniversities(),
+		db.CzechUniversities(),
 		userCompanyFavoriteMap,
 		c.redirect(organizerFeature.Path),
 	)
@@ -244,6 +245,7 @@ func (c *Controller) Company(ctx *gin.Context) {
 		headerProfiles,
 		company,
 		db.UkrainianUniversities(),
+		db.CzechUniversities(),
 		userCompanyFavoriteMap[company.ID],
 		c.companyStats(ctx, company.ID),
 		c.redirect(organizerFeature.Path+"/"+uri.CompanyAlias),

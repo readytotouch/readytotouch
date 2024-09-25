@@ -19,6 +19,7 @@ func StreamOrganizersCompanies(qw422016 *qt422016.Writer,
 	headerProfiles []SocialProviderUser,
 	companies []Company,
 	ukrainianUniversities []University,
+	czechUniversities []University,
 	userCompanyFavoriteMap map[int64]bool,
 	authQueryParams string,
 ) {
@@ -388,6 +389,17 @@ func StreamOrganizersCompanies(qw422016 *qt422016.Writer,
                   </li>
                   <li class="card__links-item">
                     <a href="`)
+		qw422016.E().S(linkedinConnectionsURL([]Company{company}, czechUniversities))
+		qw422016.N().S(`" class="button-link card__links-link">Connections             <img
+                            class="checkbox__content-image"
+                            alt="Flag of Czechia"
+                            width="16"
+                            height="16"
+                            src="/assets/images/pages/online-new/cz_flag.svg"
+                    /></a>
+                  </li>
+                  <li class="card__links-item">
+                    <a href="`)
 		qw422016.E().S(linkedinConnectionsURL([]Company{company}, nil))
 		qw422016.N().S(`" class="button-link card__links-link">Connections</a>
                   </li>
@@ -622,11 +634,12 @@ func WriteOrganizersCompanies(qq422016 qtio422016.Writer,
 	headerProfiles []SocialProviderUser,
 	companies []Company,
 	ukrainianUniversities []University,
+	czechUniversities []University,
 	userCompanyFavoriteMap map[int64]bool,
 	authQueryParams string,
 ) {
 	qw422016 := qt422016.AcquireWriter(qq422016)
-	StreamOrganizersCompanies(qw422016, organizerFeature, headerProfiles, companies, ukrainianUniversities, userCompanyFavoriteMap, authQueryParams)
+	StreamOrganizersCompanies(qw422016, organizerFeature, headerProfiles, companies, ukrainianUniversities, czechUniversities, userCompanyFavoriteMap, authQueryParams)
 	qt422016.ReleaseWriter(qw422016)
 }
 
@@ -635,11 +648,12 @@ func OrganizersCompanies(
 	headerProfiles []SocialProviderUser,
 	companies []Company,
 	ukrainianUniversities []University,
+	czechUniversities []University,
 	userCompanyFavoriteMap map[int64]bool,
 	authQueryParams string,
 ) string {
 	qb422016 := qt422016.AcquireByteBuffer()
-	WriteOrganizersCompanies(qb422016, organizerFeature, headerProfiles, companies, ukrainianUniversities, userCompanyFavoriteMap, authQueryParams)
+	WriteOrganizersCompanies(qb422016, organizerFeature, headerProfiles, companies, ukrainianUniversities, czechUniversities, userCompanyFavoriteMap, authQueryParams)
 	qs422016 := string(qb422016.B)
 	qt422016.ReleaseByteBuffer(qb422016)
 	return qs422016

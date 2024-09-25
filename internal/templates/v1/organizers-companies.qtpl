@@ -3,6 +3,7 @@
   headerProfiles []SocialProviderUser,
   companies []Company,
   ukrainianUniversities []University,
+  czechUniversities []University,
   userCompanyFavoriteMap map[int64]bool,
   authQueryParams string,
 ) -%}
@@ -292,6 +293,15 @@
                             width="16"
                             height="16"
                             src="/assets/images/pages/online-new/ua_flag_with_waves.svg"
+                    /></a>
+                  </li>
+                  <li class="card__links-item">
+                    <a href="{%s linkedinConnectionsURL([]Company{company}, czechUniversities) %}" class="button-link card__links-link">Connections             <img
+                            class="checkbox__content-image"
+                            alt="Flag of Czechia"
+                            width="16"
+                            height="16"
+                            src="/assets/images/pages/online-new/cz_flag.svg"
                     /></a>
                   </li>
                   <li class="card__links-item">
