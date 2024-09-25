@@ -51,17 +51,18 @@ type GlassdoorProfile struct {
 }
 
 type CompanyProfile struct {
-	ID                int64       // populates from the CompanyAliasMap
-	Type              CompanyType // populates from the CompanyTypeMap
-	Name              string
-	URL               string
-	LinkedInProfile   LinkedInProfile
-	GitHubProfile     GitHubProfile
-	GlassdoorProfile  GlassdoorProfile
-	OttaProfileSlug   string
-	YouTubeChannelURL string
-	GoMainLanguage    bool // Golang is the main language
-	Vacancies         Vacancies
-	ShortDescription  string // Only for understanding what the company does
-	Industries        []Industry
+	ID                        int64       // populates from the CompanyAliasMap
+	Type                      CompanyType // populates from the CompanyTypeMap
+	Name                      string
+	URL                       string
+	LinkedInProfile           LinkedInProfile
+	GitHubProfile             GitHubProfile
+	GlassdoorProfile          GlassdoorProfile
+	OttaProfileSlug           string
+	YouTubeChannelURL         string
+	GoMainLanguage            bool // Golang is the main language
+	Vacancies                 Vacancies
+	ShortDescription          string // Only for understanding what the company does
+	Industries                []Industry
+	HasEmployeesFromCountries []Country
 }

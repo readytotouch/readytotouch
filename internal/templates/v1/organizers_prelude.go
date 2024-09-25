@@ -74,7 +74,7 @@ func toFeatureNavigation(path string) featureNavigation {
 	}
 }
 
-func industryAliases(source []Industry) string {
+func aliases(source []Industry) string {
 	result := make([]string, len(source))
 	for i, v := range source {
 		result[i] = v.Alias

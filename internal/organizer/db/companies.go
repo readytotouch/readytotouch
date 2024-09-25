@@ -25,6 +25,9 @@ func Companies() []domain.CompanyProfile {
 			Vacancies:         domain.Vacancies{},
 			ShortDescription:  "Service for simplifying job search",
 			Industries:        []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+			},
 		},
 
 		// Favorites | DocHQ
@@ -61,6 +64,9 @@ func Companies() []domain.CompanyProfile {
 			ShortDescription: "Health Tech company",
 			Industries: []domain.Industry{
 				domain.IndustryHealthTech,
+			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
 			},
 		},
 
@@ -99,6 +105,10 @@ func Companies() []domain.CompanyProfile {
 			ShortDescription: "American multinational technology company",
 			Industries:       []domain.Industry{
 				// Too many industries
+			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -139,6 +149,9 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "Organization dedicated to making the web better",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Czechia,
+			},
 		},
 
 		// BigTech | Microsoft
@@ -179,6 +192,10 @@ func Companies() []domain.CompanyProfile {
 			Industries:       []domain.Industry{
 				// Too many industries
 			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
 		},
 
 		// BigTech | IBM
@@ -217,6 +234,10 @@ func Companies() []domain.CompanyProfile {
 			ShortDescription: "American multinational technology company",
 			Industries:       []domain.Industry{
 				// Too many industries
+			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -257,6 +278,10 @@ func Companies() []domain.CompanyProfile {
 			ShortDescription: "Developer platform",
 			Industries: []domain.Industry{
 				domain.IndustryDevOps,
+			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -300,6 +325,10 @@ func Companies() []domain.CompanyProfile {
 			Industries: []domain.Industry{
 				domain.IndustrySocialMedia,
 			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
 		},
 
 		// Social | Reddit
@@ -338,6 +367,9 @@ func Companies() []domain.CompanyProfile {
 			ShortDescription: "Network of communities where people can dive into their interests, hobbies and passions",
 			Industries: []domain.Industry{
 				domain.IndustrySocialMedia,
+			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
 			},
 		},
 
@@ -378,6 +410,10 @@ func Companies() []domain.CompanyProfile {
 			Industries: []domain.Industry{
 				domain.IndustrySocialMedia,
 			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
 		},
 
 		// Social | Pinterest
@@ -416,6 +452,10 @@ func Companies() []domain.CompanyProfile {
 			ShortDescription: "Visual discovery engine for finding ideas",
 			Industries: []domain.Industry{
 				domain.IndustrySocialMedia,
+			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -456,6 +496,10 @@ func Companies() []domain.CompanyProfile {
 			Industries: []domain.Industry{
 				domain.IndustrySocialMedia,
 			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
 		},
 
 		// Social | BeReal.
@@ -493,6 +537,7 @@ func Companies() []domain.CompanyProfile {
 			Industries: []domain.Industry{
 				domain.IndustrySocialMedia,
 			},
+			HasEmployeesFromCountries: []domain.Country{},
 		},
 
 		// Favorites
@@ -531,6 +576,9 @@ func Companies() []domain.CompanyProfile {
 			Industries: []domain.Industry{
 				domain.IndustryDevOps,
 			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+			},
 		},
 
 		// Favorites | Grammarly
@@ -568,6 +616,10 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "Typing assistant",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
 		},
 
 		// Tech
@@ -608,6 +660,9 @@ func Companies() []domain.CompanyProfile {
 			Industries: []domain.Industry{
 				domain.IndustryDevOps,
 			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+			},
 		},
 
 		// Tech | Docker
@@ -644,6 +699,9 @@ func Companies() []domain.CompanyProfile {
 			ShortDescription: "Multi-platform application for developers",
 			Industries: []domain.Industry{
 				domain.IndustryDevOps,
+			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
 			},
 		},
 
@@ -682,6 +740,9 @@ func Companies() []domain.CompanyProfile {
 			Industries: []domain.Industry{
 				domain.IndustryDevOps,
 			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+			},
 		},
 
 		// Tech | HashiCorp
@@ -718,6 +779,10 @@ func Companies() []domain.CompanyProfile {
 			ShortDescription: "Software company that provides modular DevOps infrastructure provisioning and management products",
 			Industries: []domain.Industry{
 				domain.IndustryDevOps,
+			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -756,6 +821,9 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "Cybersecurity technology company",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Czechia,
+			},
 		},
 
 		// Tech | Cockroach Labs
@@ -873,6 +941,10 @@ func Companies() []domain.CompanyProfile {
 			Industries: []domain.Industry{
 				domain.IndustryDevOps,
 			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
 		},
 
 		// Tech | Percona
@@ -912,6 +984,9 @@ func Companies() []domain.CompanyProfile {
 			Industries: []domain.Industry{
 				domain.IndustryDevOps,
 			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+			},
 		},
 
 		// Tech | Elastic
@@ -950,6 +1025,10 @@ func Companies() []domain.CompanyProfile {
 			ShortDescription: "Search engine",
 			Industries: []domain.Industry{
 				domain.IndustryDevOps,
+			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -1064,6 +1143,10 @@ func Companies() []domain.CompanyProfile {
 			Industries: []domain.Industry{
 				domain.IndustryDevOps,
 			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
 		},
 
 		// Tech | Kong
@@ -1102,6 +1185,9 @@ func Companies() []domain.CompanyProfile {
 			ShortDescription: "Cloud-native, platform-agnostic, scalable API Gateway",
 			Industries: []domain.Industry{
 				domain.IndustryDevOps,
+			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
 			},
 		},
 
@@ -1142,6 +1228,10 @@ func Companies() []domain.CompanyProfile {
 			Industries: []domain.Industry{
 				domain.IndustryDevOps,
 			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
 		},
 
 		// Tech | Palantir
@@ -1178,6 +1268,10 @@ func Companies() []domain.CompanyProfile {
 			ShortDescription: "Platform for big data analytics",
 			Industries: []domain.Industry{
 				domain.IndustryDevOps,
+			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -1259,6 +1353,10 @@ func Companies() []domain.CompanyProfile {
 			Industries: []domain.Industry{
 				domain.IndustryFinTech,
 			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
 		},
 
 		// FinTech | American Express
@@ -1297,6 +1395,10 @@ func Companies() []domain.CompanyProfile {
 			ShortDescription: "Bank holding",
 			Industries: []domain.Industry{
 				domain.IndustryFinTech,
+			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -1338,6 +1440,10 @@ func Companies() []domain.CompanyProfile {
 			Industries: []domain.Industry{
 				domain.IndustryFinTech,
 			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
 		},
 
 		// FinTech | Monzo
@@ -1376,6 +1482,10 @@ func Companies() []domain.CompanyProfile {
 			ShortDescription: "Mobile banking",
 			Industries: []domain.Industry{
 				domain.IndustryFinTech,
+			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -1495,6 +1605,10 @@ func Companies() []domain.CompanyProfile {
 			Industries: []domain.Industry{
 				domain.IndustryFinTech,
 			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
 		},
 
 		// Internet
@@ -1576,6 +1690,10 @@ func Companies() []domain.CompanyProfile {
 			Industries: []domain.Industry{
 				domain.IndustryDevOps,
 			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
 		},
 
 		// Internet Namecheap
@@ -1613,6 +1731,9 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "Domain and web-hosting company",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+			},
 		},
 
 		// Internet GoDaddy
@@ -1650,6 +1771,9 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "Domain and web-hosting company",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+			},
 		},
 
 		// Security
@@ -1728,6 +1852,10 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "Identity and access management company",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
 		},
 
 		// Security Nord Security
@@ -1767,6 +1895,10 @@ func Companies() []domain.CompanyProfile {
 			ShortDescription: "",
 			Industries: []domain.Industry{
 				domain.IndustryCyberSecurity,
+			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
 			},
 		},
 
@@ -1845,6 +1977,10 @@ func Companies() []domain.CompanyProfile {
 			Industries: []domain.Industry{
 				domain.IndustryCyberSecurity,
 			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
 		},
 
 		// Security SentinelOne
@@ -1884,6 +2020,10 @@ func Companies() []domain.CompanyProfile {
 			Industries: []domain.Industry{
 				domain.IndustryCyberSecurity,
 			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
 		},
 
 		// Famous
@@ -1920,6 +2060,10 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "Transportation company",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
 		},
 
 		// Famous Siemens
@@ -1960,6 +2104,10 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
 		},
 
 		// Famous SoundCloud
@@ -1997,6 +2145,10 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "Audio streaming service",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
 		},
 
 		// Famous DoorDash
@@ -2032,6 +2184,10 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "Food delivery",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
 		},
 
 		// Famous Sixt
@@ -2096,6 +2252,10 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "American multinational telecommunications company",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
 		},
 
 		// Famous Samsung
@@ -2136,6 +2296,10 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "Electronics corporation",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
 		},
 
 		// Famous Salesforge
@@ -2209,6 +2373,10 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "SuperApp",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
 		},
 
 		// Some | Dailymotion
@@ -2355,6 +2523,10 @@ func Companies() []domain.CompanyProfile {
 			Industries: []domain.Industry{
 				domain.IndustryFinTech,
 			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
 		},
 
 		// Some | Assertive Yield
@@ -2432,6 +2604,10 @@ func Companies() []domain.CompanyProfile {
 			Industries: []domain.Industry{
 				domain.IndustryBigData,
 			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
 		},
 
 		// Some | 90POE
@@ -2467,6 +2643,10 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "Digital platform for maritime transporting",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
 		},
 
 		// Some | HelloFresh
@@ -2502,6 +2682,10 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
 		},
 
 		// Some | AUTODOC
@@ -2537,6 +2721,9 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+			},
 		},
 
 		// Some | Gymondo
@@ -2572,6 +2759,9 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+			},
 		},
 
 		// Some | Delivery Hero
@@ -2609,6 +2799,10 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
 		},
 
 		// Some | Weaviate
@@ -2679,6 +2873,9 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+			},
 		},
 
 		// Some | Yassir
@@ -2749,6 +2946,10 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
 		},
 
 		// Some | Vodeno
@@ -2786,6 +2987,9 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Czechia,
+			},
 		},
 
 		// Some | Utility Warehouse
@@ -2821,6 +3025,9 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Czechia,
+			},
 		},
 
 		// Some | Codenotary
@@ -2953,6 +3160,9 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+			},
 		},
 
 		// Some | OpenTag
@@ -2988,6 +3198,9 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+			},
 		},
 
 		// Some | Oxla
@@ -3062,6 +3275,10 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
 		},
 
 		// Some | Squarespace
@@ -3099,6 +3316,9 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+			},
 		},
 
 		// Some | Curve
@@ -3134,8 +3354,11 @@ func Companies() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "",
-			Industries:       []domain.Industry{},
+			ShortDescription:          "",
+			Industries:                []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				//
+			},
 		},
 
 		// Some | Tradevest
@@ -3285,6 +3508,10 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
 		},
 
 		// Some | Vonage
@@ -3324,6 +3551,9 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+			},
 		},
 
 		// Some | OpenWeb
@@ -3361,6 +3591,9 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+			},
 		},
 
 		// Some | Arenko
@@ -3587,6 +3820,9 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+			},
 		},
 
 		// Some | Nine
@@ -3624,6 +3860,9 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Czechia,
+			},
 		},
 
 		// Some | Isovalent
@@ -3772,6 +4011,9 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+			},
 		},
 
 		// Some | Gcore
@@ -3883,6 +4125,9 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Czechia,
+			},
 		},
 
 		// Some | SumUp
@@ -3920,6 +4165,10 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
 		},
 
 		// Some | Level Home
@@ -4105,6 +4354,10 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
 		},
 
 		// Some | Press Ganey
@@ -4291,6 +4544,9 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+			},
 		},
 
 		// Some | FinCompare
@@ -4366,6 +4622,9 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+			},
 		},
 
 		// Some | BNP Paribas - Securities Services
@@ -4403,6 +4662,9 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+			},
 		},
 
 		// Some | Apifonica
@@ -4514,6 +4776,9 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Czechia,
+			},
 		},
 
 		// Some | Greenbone
@@ -4588,6 +4853,10 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
 		},
 
 		// Some | Snyk
@@ -4774,6 +5043,10 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
 		},
 
 		// Some | Asset Reality
@@ -5256,6 +5529,9 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+			},
 		},
 
 		// Some | Vay
@@ -5404,6 +5680,10 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
 		},
 
 		// Some | Toggle AI
@@ -5848,6 +6128,9 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Czechia,
+			},
 		},
 
 		// Some | Sytac
@@ -6105,6 +6388,10 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
 		},
 
 		// Some | Nuro
@@ -6216,6 +6503,9 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+			},
 		},
 
 		// Some | Kroger
@@ -6290,6 +6580,10 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
 		},
 
 		// Some | R Systems
@@ -6327,6 +6621,9 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+			},
 		},
 
 		// Some | Hays
@@ -6362,8 +6659,11 @@ func Companies() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "",
-			Industries:       []domain.Industry{},
+			ShortDescription:          "",
+			Industries:                []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				//
+			},
 		},
 
 		// Some | Consort Group
@@ -6475,6 +6775,10 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
 		},
 
 		// Some | Unlimit
@@ -6512,6 +6816,10 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
 		},
 
 		// Some | Chime
@@ -6549,6 +6857,10 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
 		},
 
 		// Some | Collective Minds Radiology
@@ -6621,6 +6933,9 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+			},
 		},
 
 		// Some | Compass
@@ -6658,7 +6973,12 @@ func Companies() []domain.CompanyProfile {
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+			},
 		},
+
+		// Some | Mercury
 		{
 			ID:   0,  // system
 			Type: "", // system

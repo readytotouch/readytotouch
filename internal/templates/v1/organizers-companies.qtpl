@@ -3,6 +3,7 @@
   headerProfiles []SocialProviderUser,
   companies []Company,
   ukrainianUniversities []University,
+  czechUniversities []University,
   userCompanyFavoriteMap map[int64]bool,
   authQueryParams string,
 ) -%}
@@ -137,9 +138,8 @@
           <h4 class="filters__headline">Other</h4>
         </header>
         <div class="filters__elements">
-          {% comment %}
           <label class="checkbox filters__element">
-            <input class="checkbox__input" type="checkbox" />
+            <input class="js-criteria-has-employees-from-country checkbox__input" type="checkbox" data-alias="ukraine" />
             <span class="checkbox__element"></span>
             Has Ukrainian employees
             <img
@@ -150,7 +150,18 @@
               src="/assets/images/pages/online-new/ua_flag_with_waves.svg"
             />
           </label>
-          {% endcomment %}
+          <label class="checkbox filters__element">
+            <input class="js-criteria-has-employees-from-country checkbox__input" type="checkbox" data-alias="czechia" />
+            <span class="checkbox__element"></span>
+            Has Czechs employees
+            <img
+              class="checkbox__content-image"
+              alt="Flag of Czechia"
+              width="24"
+              height="24"
+              src="/assets/images/pages/online-new/cz_flag.svg"
+            />
+          </label>
           <label class="checkbox filters__element">
             <input id="js-criteria-in-favorites" class="checkbox__input" type="checkbox" />
             <span class="checkbox__element"></span>
@@ -200,7 +211,8 @@
                  data-company-id="{%dl company.ID %}"
                  data-company-name="{%s company.Name %}"
                  data-company-type="{%s string(company.Type) %}"
-                 data-company-industries="{%s industryAliases(company.Industries) %}"
+                 data-company-industries="{%s aliases(company.Industries) %}"
+                 data-company-has-employees-from-countries="{%s aliases(company.HasEmployeesFromCountries) %}"
             >
               <aside class="card__action">
                 {% if userCompanyFavoriteMap[company.ID] %}
@@ -281,6 +293,15 @@
                             width="16"
                             height="16"
                             src="/assets/images/pages/online-new/ua_flag_with_waves.svg"
+                    /></a>
+                  </li>
+                  <li class="card__links-item">
+                    <a href="{%s linkedinConnectionsURL([]Company{company}, czechUniversities) %}" class="button-link card__links-link">Connections             <img
+                            class="checkbox__content-image"
+                            alt="Flag of Czechia"
+                            width="16"
+                            height="16"
+                            src="/assets/images/pages/online-new/cz_flag.svg"
                     /></a>
                   </li>
                   <li class="card__links-item">
