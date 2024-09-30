@@ -12,6 +12,7 @@
     {%= favicon() %}
     {%= organizersFonts() %}
     {%= organizersWelcomeStyles() %}
+    {%= ga() %}
 </head>
 
 <body class="organizer-welcome">

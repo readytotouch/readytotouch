@@ -12,6 +12,7 @@
     {%= favicon() %}
     {%= organizersFonts() %}
     {%= organizersMainStyles() %}
+    {%= ga() %}
 </head>
 
 <body class="authorized">

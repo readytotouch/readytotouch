@@ -34,6 +34,9 @@ func StreamOrganizersMain(qw422016 *qt422016.Writer, headerProfiles []SocialProv
     `)
 	streamorganizersMainStyles(qw422016)
 	qw422016.N().S(`
+    `)
+	streamga(qw422016)
+	qw422016.N().S(`
 </head>
 
 <body class="authorized">

@@ -37,7 +37,7 @@ func StreamOrganizersCompanies(qw422016 *qt422016.Writer,
 	qw422016.E().S(organizerFeature.Organizer.Description)
 	qw422016.N().S(`">
     <meta name="keywords" content="`)
-	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.E().S(organizerFeature.Organizer.Keywords)
 	qw422016.N().S(`">
 
 	<meta charset="UTF-8">
@@ -51,6 +51,9 @@ func StreamOrganizersCompanies(qw422016 *qt422016.Writer,
 	qw422016.N().S(`
     `)
 	streamorganizersCompaniesStyles(qw422016)
+	qw422016.N().S(`
+    `)
+	streamga(qw422016)
 	qw422016.N().S(`
 </head>
 

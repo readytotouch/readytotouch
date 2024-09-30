@@ -19,8 +19,18 @@ func StreamOrganizersWaitlist(qw422016 *qt422016.Writer, organizerFeature Organi
 <html lang="en">
 
 <head>
-	<title>Yet another anonymous work search</title>
-	<meta name="description" content="Yet another anonymous work search">
+	<title>Find jobs from companies using `)
+	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.N().S(` | ReadyToTouch</title>
+	<meta name="title" content="Find jobs from companies using `)
+	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.N().S(` | ReadyToTouch">
+	<meta name="description" content="`)
+	qw422016.E().S(organizerFeature.Organizer.Description)
+	qw422016.N().S(`">
+	<meta name="keywords" content="`)
+	qw422016.E().S(organizerFeature.Organizer.Keywords)
+	qw422016.N().S(`">
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -35,6 +45,9 @@ func StreamOrganizersWaitlist(qw422016 *qt422016.Writer, organizerFeature Organi
 	streamorganizersWaitlistStyles(qw422016)
 	qw422016.N().S(`
 	<script src="https://cdn.jsdelivr.net/npm/apexcharts@3.52.0"></script>
+	`)
+	streamga(qw422016)
+	qw422016.N().S(`
 </head>
 
 <body class="organizer-inner">

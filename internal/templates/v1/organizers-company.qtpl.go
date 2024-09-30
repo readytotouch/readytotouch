@@ -28,8 +28,16 @@ func StreamOrganizersCompany(qw422016 *qt422016.Writer,
 <html lang="en">
 
 <head>
-	<title>Yet another anonymous work search</title>
-	<meta name="description" content="Yet another anonymous work search">
+	<title>`)
+	qw422016.E().S(company.Name)
+	qw422016.N().S(` – company using `)
+	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.N().S(` | ReadyToTouch</title>
+	<meta name="description" content="Improve your chances of getting a job by connecting with `)
+	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.N().S(` developers from `)
+	qw422016.E().S(company.Name)
+	qw422016.N().S(` and receiving further recommendations.">
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -44,6 +52,9 @@ func StreamOrganizersCompany(qw422016 *qt422016.Writer,
 	streamorganizersCompanyStyles(qw422016)
 	qw422016.N().S(`
     <script src="https://cdn.jsdelivr.net/npm/apexcharts@3.52.0"></script>
+    `)
+	streamga(qw422016)
+	qw422016.N().S(`
 </head>
 
 <body class="organizer-companies-inner">
