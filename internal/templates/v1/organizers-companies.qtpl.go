@@ -27,8 +27,18 @@ func StreamOrganizersCompanies(qw422016 *qt422016.Writer,
 <html lang="en">
 
 <head>
-	<title>Yet another anonymous work search</title>
-	<meta name="description" content="Yet another anonymous work search">
+	<title>Companies using `)
+	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.N().S(` | ReadyToTouch</title>
+	<meta name="title" content="Companies using `)
+	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.N().S(` | ReadyToTouch">
+	<meta name="description" content="`)
+	qw422016.E().S(organizerFeature.Organizer.Description)
+	qw422016.N().S(`">
+    <meta name="keywords" content="`)
+	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.N().S(`">
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
