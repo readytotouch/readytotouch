@@ -9,6 +9,7 @@ var (
 		"google":                       3,   // Google
 		"mozilla-corporation":          4,   // Mozilla
 		"microsoft":                    5,   // Microsoft
+		"amazon":                       181, // Amazon
 		"ibm":                          6,   // IBM
 		"github":                       7,   // GitHub
 		"linkedin":                     8,   // LinkedIn
@@ -29,7 +30,9 @@ var (
 		"scylladb":                     23,  // ScyllaDB
 		"percona":                      24,  // Percona
 		"elastic-co":                   25,  // Elastic
+		"mongodbinc":                   182, // MongoDB
 		"ferretdb":                     26,  // FerretDB
+		"redisinc":                     183, // Redis
 		"digitalocean":                 27,  // DigitalOcean
 		"canonical":                    28,  // Canonical
 		"konghq":                       29,  // Kong Inc.
@@ -184,6 +187,14 @@ var (
 		"compassinc":                   177, // Compass
 		"mercuryhq":                    179, // Mercury
 		"tailscale":                    180, // Tailscale
+		"customer-io":                  184, // Customer.io
+		"tabbypay":                     185, // Tabby
+		"sonatus":                      186, // Sonatus
+		"koho":                         187, // KOHO
+		"nico-lab":                     188, // Nicolab
+		"operantai":                    189, // Operant AI
+		"crowd-riff":                   190, // CrowdRiff
+		"swiss-post":                   191, // Swiss Post
 
 	}
 )
