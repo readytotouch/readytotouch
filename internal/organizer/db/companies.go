@@ -7411,26 +7411,28 @@ func Companies() []domain.CompanyProfile {
 		{
 			ID:   0,  // system
 			Type: "", // system
-			Name: "",
-			URL:  "",
+			Name: "Swiss Post",
+			URL:  "https://www.post.ch/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    0,
-				Alias: "",
-				Name:  "",
+				ID:    338556,
+				Alias: "swiss-post",
+				Name:  "Swiss Post",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "",
-				GoRepositoryCount: 0,
+				Login:             "swisspost",
+				GoRepositoryCount: 5,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Die-Schweizerische-Post-EI_IE12870.11,34.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Die-Schweizerische-Post-Reviews-E12870.htm",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{
-				domain.Go:      []string{},
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/4040049773/",
+				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
 				domain.Scala:   nil,
