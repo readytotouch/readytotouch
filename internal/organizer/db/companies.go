@@ -7533,6 +7533,44 @@ func Companies() []domain.CompanyProfile {
 				domain.Ukraine,
 			},
 		},
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "Rialtic",
+			URL:  "https://www.rialtic.io/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    68821761,
+				Alias: "rialtic-io",
+				Name:  "Rialtic",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "",
+				GoRepositoryCount: 0,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Rialtic-EI_IE4497416.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Rialtic-Reviews-E4497416.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/4040651981/",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "",
+			Industries: []domain.Industry{
+				domain.IndustryHealthTech,
+			},
+			HasEmployeesFromCountries: []domain.Country{},
+		},
 
 		// Template
 		//{
