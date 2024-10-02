@@ -1,6 +1,6 @@
 -- name: UserFavoriteCompaniesUpsert :exec
 INSERT INTO user_favorite_companies AS t (user_id, company_id, favorite, created_at, updated_at)
-VALUES (@user_id, @company_id, @favorite, @created_at, @updated_at)
+VALUES (@user_id, @company_id, @favorite, @created_at, @created_at)
 ON CONFLICT (user_id, company_id)
     DO UPDATE
     SET favorite   = excluded.favorite,

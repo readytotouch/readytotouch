@@ -64,10 +64,10 @@ func StreamOnline(qw422016 *qt422016.Writer, headerProfiles []SocialProviderUser
             <p class="hero__subtitle">Tracking registrations and online users of the platform. Sign in with GitHub or GitLab to support the project</p>
         </div>
         <div class="hero__buttons-group">
-            <a href="/auth/github" class="hero__button">
+            <a href="/auth/github" class="hero__button" rel="nofollow">
                 <img src="/assets/images/pages/online/github-white.svg" alt="GitHub" class="button-icon">Log in with GitHub
             </a>
-            <a href="/auth/gitlab" class="hero__button">
+            <a href="/auth/gitlab" class="hero__button" rel="nofollow">
                 <img src="/assets/images/pages/online/gitlab.png" alt="GitLab" class="hero__button-icon">Log in with GitLab
             </a>
         </div>

@@ -86,7 +86,7 @@ func StreamOrganizersOnline(qw422016 *qt422016.Writer,
       <p class="hero__subtitle">Our projects are u8views, Organizer, and others. Log in to support.</p>
     </div>
     <div class="hero__buttons-group">
-      <a href="/auth/github" class="button button--bordered-gray hero__button">
+      <a href="/auth/github" class="button button--bordered-gray hero__button" rel="nofollow">
         <img
           width="20"
           height="20"
@@ -95,7 +95,7 @@ func StreamOrganizersOnline(qw422016 *qt422016.Writer,
           class="button-icon"
         />Log in with GitHub
       </a>
-      <a href="/auth/gitlab" class="button button--bordered-gray hero__button">
+      <a href="/auth/gitlab" class="button button--bordered-gray hero__button" rel="nofollow">
         <img
           width="20"
           height="20"
@@ -104,7 +104,7 @@ func StreamOrganizersOnline(qw422016 *qt422016.Writer,
           class="hero__button-icon"
         />Log in with GitLab
       </a>
-      <a href="/auth/bitbucket" class="button button--bordered-gray hero__button">
+      <a href="/auth/bitbucket" class="button button--bordered-gray hero__button" rel="nofollow">
         <img
           width="21"
           height="20"

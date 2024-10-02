@@ -71,7 +71,7 @@ func StreamOrganizersWelcome(qw422016 *qt422016.Writer, organizer Organizer, aut
     <div class="hero__buttons-group">
       <a href="/auth/github`)
 	qw422016.E().S(authQueryParams)
-	qw422016.N().S(`" class="button button--bordered-gray hero__button">
+	qw422016.N().S(`" class="button button--bordered-gray hero__button" rel="nofollow">
         <img
           width="20"
           height="20"
@@ -82,7 +82,7 @@ func StreamOrganizersWelcome(qw422016 *qt422016.Writer, organizer Organizer, aut
       </a>
       <a href="/auth/gitlab`)
 	qw422016.E().S(authQueryParams)
-	qw422016.N().S(`" class="button button--bordered-gray hero__button">
+	qw422016.N().S(`" class="button button--bordered-gray hero__button" rel="nofollow">
         <img
           width="20"
           height="20"
@@ -93,7 +93,7 @@ func StreamOrganizersWelcome(qw422016 *qt422016.Writer, organizer Organizer, aut
       </a>
       <a href="/auth/bitbucket`)
 	qw422016.E().S(authQueryParams)
-	qw422016.N().S(`" class="button button--bordered-gray hero__button">
+	qw422016.N().S(`" class="button button--bordered-gray hero__button" rel="nofollow">
         <img
           width="21"
           height="20"

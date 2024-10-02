@@ -67,7 +67,7 @@ func (q *Queries) UserFavoriteCompaniesStats(ctx context.Context, arg UserFavori
 
 const userFavoriteCompaniesUpsert = `-- name: UserFavoriteCompaniesUpsert :exec
 INSERT INTO user_favorite_companies AS t (user_id, company_id, favorite, created_at, updated_at)
-VALUES ($1, $2, $3, $4, $5)
+VALUES ($1, $2, $3, $4, $4)
 ON CONFLICT (user_id, company_id)
     DO UPDATE
     SET favorite   = excluded.favorite,
@@ -80,7 +80,6 @@ type UserFavoriteCompaniesUpsertParams struct {
 	CompanyID int64
 	Favorite  bool
 	CreatedAt time.Time
-	UpdatedAt time.Time
 }
 
 func (q *Queries) UserFavoriteCompaniesUpsert(ctx context.Context, arg UserFavoriteCompaniesUpsertParams) error {
@@ -89,7 +88,6 @@ func (q *Queries) UserFavoriteCompaniesUpsert(ctx context.Context, arg UserFavor
 		arg.CompanyID,
 		arg.Favorite,
 		arg.CreatedAt,
-		arg.UpdatedAt,
 	)
 	return err
 }

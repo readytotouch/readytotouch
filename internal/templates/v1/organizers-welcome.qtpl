@@ -41,7 +41,7 @@
       <p class="hero__subtitle">Our projects are ReadyToTouch, u8views, Organizer, and others. Log in to support.</p>
     </div>
     <div class="hero__buttons-group">
-      <a href="/auth/github{%s authQueryParams %}" class="button button--bordered-gray hero__button">
+      <a href="/auth/github{%s authQueryParams %}" class="button button--bordered-gray hero__button" rel="nofollow">
         <img
           width="20"
           height="20"
@@ -50,7 +50,7 @@
           class="button-icon"
         />Log in with GitHub
       </a>
-      <a href="/auth/gitlab{%s authQueryParams %}" class="button button--bordered-gray hero__button">
+      <a href="/auth/gitlab{%s authQueryParams %}" class="button button--bordered-gray hero__button" rel="nofollow">
         <img
           width="20"
           height="20"
@@ -59,7 +59,7 @@
           class="hero__button-icon"
         />Log in with GitLab
       </a>
-      <a href="/auth/bitbucket{%s authQueryParams %}" class="button button--bordered-gray hero__button">
+      <a href="/auth/bitbucket{%s authQueryParams %}" class="button button--bordered-gray hero__button" rel="nofollow">
         <img
           width="21"
           height="20"
