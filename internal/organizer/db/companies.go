@@ -1158,6 +1158,48 @@ func Companies() []domain.CompanyProfile {
 			},
 		},
 
+		// Tech | Redis
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "Redis",
+			URL:  "https://redis.io/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    2014725,
+				Alias: "redisinc",
+				Name:  "Redis",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "redis",
+				GoRepositoryCount: 2,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Redis-EI_IE928722.11,16.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Redis-Reviews-E928722.htm",
+			},
+			OttaProfileSlug:   "Redis",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/4021697979/",
+				},
+				domain.Rust: []string{
+					"https://www.linkedin.com/jobs/view/3963199017/",
+				},
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "Key-value database",
+			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+			},
+		},
+
 		// Tech | DigitalOcean
 		{
 			ID:   0,  // system
@@ -7440,9 +7482,11 @@ func Companies() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription:          "",
-			Industries:                []domain.Industry{},
-			HasEmployeesFromCountries: []domain.Country{},
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+			},
 		},
 		{
 			ID:   0,  // system
