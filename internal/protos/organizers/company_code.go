@@ -58,8 +58,10 @@ var (
 		"sentinelone":                  48,  // SentinelOne
 		"uber-com":                     49,  // Uber
 		"siemens":                      50,  // Siemens
+		"ericsson":                     192, // Ericsson
 		"soundcloud":                   51,  // SoundCloud
 		"doordash":                     52,  // DoorDash
+		"just-eat-takeaway-com":        193, // Just Eat Takeaway.com
 		"sixt":                         53,  // SIXT
 		"motorolasolutions":            54,  // Motorola Solutions
 		"samsung-electronics":          55,  // Samsung Electronics
@@ -195,6 +197,7 @@ var (
 		"operantai":                    189, // Operant AI
 		"crowd-riff":                   190, // CrowdRiff
 		"swiss-post":                   191, // Swiss Post
+		"rialtic-io":                   194, // Rialtic
 
 	}
 )

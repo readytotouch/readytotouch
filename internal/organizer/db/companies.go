@@ -2363,6 +2363,49 @@ func Companies() []domain.CompanyProfile {
 			},
 		},
 
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "Just Eat Takeaway.com",
+			URL:  "https://careers.justeattakeaway.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID: 0,
+				IDs: []int{
+					103531,  // Just Eat Takeaway.com
+					2708300, //  SkipTheDishes
+				},
+				Alias: "just-eat-takeaway-com",
+				Name:  "Just Eat Takeaway.com",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "justeattakeaway",
+				GoRepositoryCount: 0,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Just-Eat-Takeaway-com-EI_IE490124.11,32.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Just-Eat-Takeaway-com-Reviews-E490124.htm",
+			},
+			OttaProfileSlug:   "Just-Eat",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/4039505901/",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "Food delivery",
+			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+			},
+		},
+
 		// Famous Sixt
 		{
 			ID:   0,
