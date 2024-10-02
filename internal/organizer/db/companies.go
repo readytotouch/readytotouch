@@ -1194,7 +1194,9 @@ func Companies() []domain.CompanyProfile {
 				domain.Haskell: nil,
 			},
 			ShortDescription: "Key-value database",
-			Industries:       []domain.Industry{},
+			Industries: []domain.Industry{
+				domain.IndustryDevOps,
+			},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
 			},
@@ -7255,8 +7257,10 @@ func Companies() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription:          "",
-			Industries:                []domain.Industry{},
+			ShortDescription: "",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 		{
