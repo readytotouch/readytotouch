@@ -2243,6 +2243,46 @@ func Companies() []domain.CompanyProfile {
 			},
 		},
 
+		// Famous Ericsson
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "Ericsson",
+			URL:  "https://www.ericsson.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    1060,
+				Alias: "ericsson",
+				Name:  "Ericsson",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "Ericsson",
+				GoRepositoryCount: 4,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Ericsson-Worldwide-EI_IE3472.11,29.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Ericsson-Worldwide-Reviews-E3472.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/4038208151/",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+			},
+		},
+
 		// Famous SoundCloud
 		{
 			ID:   0,  // system
