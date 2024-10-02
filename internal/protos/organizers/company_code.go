@@ -42,6 +42,7 @@ var (
 		"wiseaccount":                  32,  // Wise
 		"american-express":             33,  // American Express
 		"mastercard":                   34,  // Mastercard
+		"morgan-stanley":               195, // Morgan Stanley
 		"monzo-bank":                   35,  // Monzo Bank
 		"cynergy-bank":                 36,  // Cynergy Bank
 		"atom-bank":                    37,  // Atom bank
@@ -198,6 +199,8 @@ var (
 		"crowd-riff":                   190, // CrowdRiff
 		"swiss-post":                   191, // Swiss Post
 		"rialtic-io":                   194, // Rialtic
+		"prisma-io":                    196, // Prisma
+		"flyzipline":                   197, // Zipline
 
 	}
 )

@@ -1579,6 +1579,52 @@ func Companies() []domain.CompanyProfile {
 			},
 		},
 
+		// FinTech | Morgan Stanley
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "Morgan Stanley",
+			URL:  "https://www.morganstanley.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID: 0,
+				IDs: []int{
+					497017,  // Morgan Stanley
+					1292145, // Graystone Consulting from Morgan Stanley
+				},
+				Alias: "morgan-stanley",
+				Name:  "Morgan Stanley",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "MorganStanley",
+				GoRepositoryCount: 0,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Morgan-Stanley-EI_IE2282.11,25.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Morgan-Stanley-Reviews-E2282.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/3952881485/",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+			},
+		},
+
 		// FinTech | Monzo
 		{
 			ID:   0,  // system
@@ -1806,11 +1852,13 @@ func Companies() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/4038005635/",
 					"https://app.otta.com/jobs/RWRkVWNJ",
 					"https://app.otta.com/jobs/B_RaZ6l5",
 					"https://app.otta.com/jobs/e4CavNqx",
 				},
 				domain.Rust: []string{
+					"https://www.linkedin.com/jobs/view/4038005635/",
 					"https://startup.jobs/software-engineer-rust-cloudflare-3768119",
 				},
 				domain.Zig:     nil,
@@ -3824,8 +3872,8 @@ func Companies() []domain.CompanyProfile {
 				Name:  "Arenko",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "",
-				GoRepositoryCount: 0,
+				Login:             "arenko-group",
+				GoRepositoryCount: 2,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Arenko-Group-EI_IE4554199.11,23.htm",
@@ -3836,7 +3884,9 @@ func Companies() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/4037978333/",
 					"https://www.linkedin.com/jobs/view/3889419131/",
+					"https://app.otta.com/jobs/tvHMOMCd",
 					"https://app.otta.com/jobs/hKvg-QNr",
 				},
 				domain.Rust:    nil,
@@ -3846,8 +3896,9 @@ func Companies() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "",
-			Industries:       []domain.Industry{},
+			ShortDescription:          "Technology provider enabling the clean energy transition",
+			Industries:                []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{},
 		},
 
 		// Some | Xata
@@ -7612,6 +7663,84 @@ func Companies() []domain.CompanyProfile {
 			Industries: []domain.Industry{
 				domain.IndustryHealthTech,
 			},
+			HasEmployeesFromCountries: []domain.Country{},
+		},
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "Prisma",
+			URL:  "https://www.prisma.io/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    10614939,
+				Alias: "prisma-io",
+				Name:  "Prisma",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "prisma",
+				GoRepositoryCount: 3,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Prisma-Data-EI_IE2431237.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Prisma-Data-Reviews-E2431237.htm",
+			},
+			OttaProfileSlug:   "Prisma",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://app.otta.com/jobs/k6ASPhV7",
+				},
+				domain.Rust: []string{
+					"https://app.otta.com/jobs/k6ASPhV7",
+				},
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "",
+			Industries: []domain.Industry{
+				domain.IndustryDevOps,
+			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+			},
+		},
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "Zipline",
+			URL:  "https://www.flyzipline.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    7602863,
+				Alias: "flyzipline",
+				Name:  "Zipline",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "",
+				GoRepositoryCount: 0,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Zipline-EI_IE1394276.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Zipline-Reviews-E1394276.htm",
+			},
+			OttaProfileSlug:   "Zipline",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://app.otta.com/jobs/DwReS2t8",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription:          "",
+			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 
