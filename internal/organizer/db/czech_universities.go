@@ -190,13 +190,14 @@ func CzechUniversities() []domain.University {
 			},
 		},
 
-		{
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:    386175,
-				Alias: "university-of-zilina",
-				Name:  "University of Zilina",
-			},
-		},
+		// Словаччина
+		// {
+		// 	LinkedInProfile: domain.LinkedInProfile{
+		// 		ID:    386175,
+		// 		Alias: "university-of-zilina",
+		// 		Name:  "University of Zilina",
+		// 	},
+		// },
 
 		{
 			LinkedInProfile: domain.LinkedInProfile{
