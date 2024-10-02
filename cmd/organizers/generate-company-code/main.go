@@ -1,6 +1,7 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"go/format"
 	"os"
@@ -14,6 +15,7 @@ func main() {
 	var (
 		maxID = int64(0)
 		pairs = make([]*dev.CompanyCodePair, len(db.Companies()))
+		names = make([]string, len(db.Companies()))
 	)
 
 	// Assert that all company aliases are present in the map
@@ -31,6 +33,7 @@ func main() {
 		}
 
 		pairs[i] = pair
+		names[i] = company.LinkedInProfile.Name
 		maxID = max(maxID, pair.ID)
 	}
 
@@ -55,4 +58,5 @@ func main() {
 	fmt.Printf("Max ID: %d\n", maxID)
 
 	// json.NewEncoder(os.Stdout).Encode(pairs)
+	json.NewEncoder(os.Stdout).Encode(names) // hide
 }
