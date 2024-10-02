@@ -2243,6 +2243,46 @@ func Companies() []domain.CompanyProfile {
 			},
 		},
 
+		// Famous Ericsson
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "Ericsson",
+			URL:  "https://www.ericsson.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    1060,
+				Alias: "ericsson",
+				Name:  "Ericsson",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "Ericsson",
+				GoRepositoryCount: 4,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Ericsson-Worldwide-EI_IE3472.11,29.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Ericsson-Worldwide-Reviews-E3472.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/4038208151/",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+			},
+		},
+
 		// Famous SoundCloud
 		{
 			ID:   0,  // system
@@ -2320,6 +2360,49 @@ func Companies() []domain.CompanyProfile {
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
 				domain.Czechia,
+			},
+		},
+
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "Just Eat Takeaway.com",
+			URL:  "https://careers.justeattakeaway.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID: 0,
+				IDs: []int{
+					103531,  // Just Eat Takeaway.com
+					2708300, //  SkipTheDishes
+				},
+				Alias: "just-eat-takeaway-com",
+				Name:  "Just Eat Takeaway.com",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "justeattakeaway",
+				GoRepositoryCount: 0,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Just-Eat-Takeaway-com-EI_IE490124.11,32.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Just-Eat-Takeaway-com-Reviews-E490124.htm",
+			},
+			OttaProfileSlug:   "Just-Eat",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/4039505901/",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "Food delivery",
+			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
 			},
 		},
 
@@ -7492,6 +7575,44 @@ func Companies() []domain.CompanyProfile {
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
 			},
+		},
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "Rialtic",
+			URL:  "https://www.rialtic.io/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    68821761,
+				Alias: "rialtic-io",
+				Name:  "Rialtic",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "",
+				GoRepositoryCount: 0,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Rialtic-EI_IE4497416.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Rialtic-Reviews-E4497416.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/4040651981/",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "",
+			Industries: []domain.Industry{
+				domain.IndustryHealthTech,
+			},
+			HasEmployeesFromCountries: []domain.Country{},
 		},
 
 		// Template
