@@ -19,6 +19,7 @@ import (
 	"github.com/readytotouch/readytotouch/internal/env"
 	"github.com/readytotouch/readytotouch/internal/server"
 
+	pkgCAC "github.com/readytotouch/readytotouch/internal/cac"
 	pkgJWT "github.com/readytotouch/readytotouch/internal/jwt"
 	pkgBitbucket "github.com/readytotouch/readytotouch/internal/oauth-providers/bitbucket"
 	pkgGitHub "github.com/readytotouch/readytotouch/internal/oauth-providers/github"
@@ -108,6 +109,7 @@ func main() {
 			userFavoriteCompanyRepository,
 			companyViewDailyStatsRepository,
 		)
+		cacController = pkgCAC.NewController()
 	)
 
 	r := gin.New()
@@ -198,8 +200,9 @@ func main() {
 
 	r.
 		// WIP
-		StaticFile("/wip/companies-and-connections", "./public/chatgpt-design/companies-and-connections.html").
-		StaticFile("/wip/companies-and-connections/ukraine", "./public/chatgpt-design/companies-and-connections.html")
+		GET("/wip/companies-and-connections", cacController.Index).
+		GET("/wip/companies-and-connections/ukraine", cacController.Ukraine).
+		GET("/wip/companies-and-connections/czechia", cacController.Czechia)
 
 	r.
 		StaticFile("/design", "./public/design/online.html").
