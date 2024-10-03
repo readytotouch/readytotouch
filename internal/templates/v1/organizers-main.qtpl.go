@@ -19,8 +19,8 @@ func StreamOrganizersMain(qw422016 *qt422016.Writer, headerProfiles []SocialProv
 <html lang="en">
 
 <head>
-	<title>Yet another anonymous work search</title>
-	<meta name="description" content="Yet another anonymous work search">
+	<title>ReadyToTouch — Simplify Job Searching by Connecting with Developers</title>
+	<meta name="description" content="ReadyToTouch is a platform that simplifies your job search. Connect directly with developers and boost your chances of getting hired through recommendations.">
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
