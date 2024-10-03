@@ -1,4 +1,4 @@
-import {welcome} from "./welcome";
+import {organizersWelcome} from "./welcome";
 
 import urlStateContainer from "./framework/company_url_state_container";
 import {
@@ -28,7 +28,7 @@ function markCompanyFavorite(companyId: number, favorite: boolean, callback: () 
     }).then(function (response) {
         // Unauthorized
         if (response.status === 401) {
-            window.location.href = welcome();
+            window.location.href = organizersWelcome();
 
             return;
         }

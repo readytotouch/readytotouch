@@ -1,4 +1,4 @@
-import {welcome} from "./welcome";
+import {organizersWelcome} from "./welcome";
 import {TimeCountStats} from "./domain";
 import apexchartsCommonOptions from "./apexcharts-common-options";
 import {formatDay} from "./format";
@@ -12,7 +12,7 @@ function markCompanyFavorite(companyId: number, favorite: boolean, callback: () 
     }).then(function (response) {
         // Unauthorized
         if (response.status === 401) {
-            window.location.href = welcome();
+            window.location.href = organizersWelcome();
 
             return;
         }

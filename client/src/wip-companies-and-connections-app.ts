@@ -1,5 +1,14 @@
 import {toEnter} from "./framework/enter";
 
+class ResponseCompany {
+    constructor(
+        public readonly id: number,
+        public readonly alias: string,
+        public readonly name: string,
+    ) {
+    }
+}
+
 class Company {
     constructor(
         public readonly id: number,
@@ -140,4 +149,36 @@ function highlightCard(card) {
     setTimeout(() => {
         card.classList.remove('highlight');
     }, 2000); // Highlight lasts for 2 seconds
+}
+
+fetch('/api/v1/companies-and-connections/companies.json')
+    .then(function (response) {
+        return response.json();
+    })
+    .then(renderCompanies)
+    .catch(console.error);
+
+function renderCompanies(companies: Array<ResponseCompany>) {
+    $companyList.innerHTML = '';
+
+    companies.forEach((company, index) => {
+        const $card = renderCompany(new Company(
+            company.id,
+            company.alias,
+            company.name,
+            'javascript:void(0)',
+            'javascript:void(0)',
+            'javascript:void(0)',
+            'javascript:void(0)',
+        ));
+
+        $companyList.appendChild($card);
+
+        if (index === 0) {
+            // Highlight the new company $card
+            highlightCard($card);
+        }
+    })
+
+    $companyListBlock.classList.toggle('hidden', companies.length === 0);
 }

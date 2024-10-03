@@ -200,9 +200,13 @@ func main() {
 
 	r.
 		// WIP
-		GET("/wip/companies-and-connections", cacController.Index).
+		// GET("/wip/companies-and-connections", cacController.Countries).
 		GET("/wip/companies-and-connections/ukraine", cacController.Ukraine).
-		GET("/wip/companies-and-connections/czechia", cacController.Czechia)
+		GET("/wip/companies-and-connections/czechia", cacController.Czechia).
+		GET("/wip/companies-and-connections/poland", cacController.Poland).
+		GET("/api/v1/companies-and-connections/companies.json", cacController.Companies).
+		POST("/api/v1/companies-and-connections/companies.json", cacController.AddCompany).
+		DELETE("/api/v1/companies-and-connections/companies.json", cacController.DeleteCompany)
 
 	r.
 		StaticFile("/design", "./public/design/online.html").

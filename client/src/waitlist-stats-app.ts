@@ -1,7 +1,7 @@
 import {TimeCountStats} from "./domain";
 import {formatDay} from "./format";
 import apexchartsCommonOptions from "./apexcharts-common-options";
-import {welcome} from "./welcome";
+import {organizersWelcome} from "./welcome";
 
 fetch(`/api/v1/features/auto/waitlist/stats.json`)
     .then(function (response) {
@@ -27,7 +27,7 @@ function subscribe(subscribed: boolean) {
     }).then(function (response) {
         // Unauthorized
         if (response.status === 401) {
-            window.location.href = welcome();
+            window.location.href = organizersWelcome();
 
             return;
         }
