@@ -3,308 +3,257 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Companies</title>
+    <title>Companies and connections</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f5f5f5;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f4f7f6;
             color: #333;
             margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #0073b1;
-            color: white;
-            text-align: center;
-            padding: 15px 0;
-        }
-        header a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            margin: 0 15px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 40px auto;
             padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         h1 {
-            font-size: 24px;
             text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #4CAF50;
+            cursor: pointer;
+        }
+        .block {
+            background-color: #fff;
+            padding: 20px;
             margin-bottom: 20px;
-            color: #444;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
-        .company-list {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
+        .hidden {
+            display: none;
         }
-        .company-item {
+        label {
+            font-weight: bold;
+        }
+        input[type="text"], select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+        button:hover:enabled {
+            background-color: #45a049;
+        }
+        #company-list {
+            margin-top: 10px;
+        }
+        .company-card {
+            background-color: #fafafa;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
             display: flex;
             justify-content: space-between;
-            align-items: center;
-            padding: 15px;
-            border-bottom: 1px solid #e0e0e0;
-            position: relative;
-            transition: background-color 0.3s;
+            align-items: flex-start;
+            transition: background-color 0.5s ease;
         }
-        .company-item:last-child {
-            border-bottom: none;
+        .highlight {
+            background-color: #d4edda !important;
         }
-        .company-item a {
-            color: #0073b1;
+        .company-name {
+            flex-grow: 1;
+            text-align: left;
+        }
+        .company-name a {
+            color: #3498db;
             text-decoration: none;
-            margin-right: 10px;
-            font-weight: 500;
+            font-weight: bold;
         }
-        .company-item button {
-            background-color: transparent;
-            border: none;
-            cursor: pointer;
-            font-size: 14px;
-        }
-        .company-item .delete {
-            color: #e74c3c;
-        }
-        .company-item .complete {
-            color: #28a745;
-            margin-right: 10px;
-        }
-        .company-item .resume {
-            background-color: #ffc107;
-            color: white;
-            border: none;
-            cursor: pointer;
-            padding: 5px 10px;
-            font-size: 14px;
-            margin-left: 10px;
-        }
-        .company-item.complete-mode {
-            background-color: #d4edda;
-        }
-        .company-item .recover {
-            background-color: #28a745;
-            color: white;
-            border: none;
-            cursor: pointer;
-            padding: 5px 10px;
-            font-size: 14px;
-            margin-left: 10px;
-        }
-        .company-item.recover-mode {
-            background-color: #edd4da;
-        }
-        .add-company,
-        .controls {
+        .company-connections {
             display: flex;
-            gap: 10px;
-            margin-top: 20px;
+            flex-direction: column;
+            text-align: right;
+            margin-right: 20px;
+            flex-grow: 2;
         }
-        .add-company input,
-        .controls input,
-        .controls select,
-        .controls button {
-            padding: 10px;
+        .company-connections a {
+            color: #3498db;
+            text-decoration: none;
+            margin-bottom: 5px;
+        }
+        .company-actions {
+            text-align: right;
+        }
+        .company-actions button {
+            background-color: #e74c3c;
+            padding: 5px 10px;
+            border: none;
             border-radius: 4px;
-            border: 1px solid #ccc;
-            font-size: 14px;
-            width: 100%;
-        }
-        .add-company button {
-            background-color: #0073b1;
-            color: white;
             cursor: pointer;
-            font-size: 14px;
-            border: none;
-            white-space: nowrap; /* Ensures the text stays in one line */
-            padding: 10px 20px; /* Adjusts padding to make the button wider */
-            min-width: 150px; /* Sets a minimum width to accommodate the text */
-        }
-        .controls button {
-            background-color: #0073b1;
             color: white;
-            cursor: pointer;
-            font-size: 14px;
-            border: none;
+            transition: background-color 0.3s ease;
+        }
+        .company-actions button:hover {
+            background-color: #c0392b;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <a href="https://readytotouch.com">ReadyToTouch</a>
-    </header>
+    <!-- Title of the page -->
+    <h1>Companies and connections</h1>
 
-    <div class="container">
-        <h1>Companies</h1>
-
-        <ul class="company-list" id="company-list">
-            <!-- Companies will be added here -->
-        </ul>
-
-        <div class="add-company">
-            <input type="text" id="company-url" placeholder="Company URL">
-            <button onclick="addCompany()">Add company</button>
-        </div>
-
-        <div class="controls">
-            <input list="keywords-suggestions" type="text" id="keywords" placeholder="Connections search keywords">
-            <datalist id="keywords-suggestions">
-                <option value='"Golang Developer" OR "Go Developer"'>
-                <option value="Rust">
-                <option value="Scala">
-                <option value='"Elixir" OR "Erlang"'>
-            </datalist>
-            <select id="connection-level">
-                <option value="1st">1st</option>
-                <option value="2nd">2nd</option>
+    <!-- Block 1: Manage Connections -->
+    <div class="block">
+        <h2 id="manage-connections-header">Manage Connections</h2>
+        <div id="manage-connections-content">
+            <label for="keywords">Keywords:</label>
+            <input type="text" id="keywords" name="keywords" placeholder="Enter keywords...">
+            <br><br>
+            <label for="location">Location:</label>
+            <select id="location" name="location">
+                <option value="global">Global</option>
+                <option value="usa">USA</option>
+                <option value="europe">Europe</option>
+                <!-- Add more locations as needed -->
             </select>
-            <button onclick="regenerateConnections()">Regenerate connections</button>
+            <br><br>
+            <button id="update-connections">Update connections</button>
+        </div>
+    </div>
+
+    <!-- Block 2: Add Company -->
+    <div class="block">
+        <h2 id="add-company-header">Add Company</h2>
+        <div id="add-company-content">
+            <label for="company-name">Company name:</label>
+            <input type="text" id="company-name" name="company-name" placeholder="Enter company name...">
+            <br><br>
+            <button id="add-company" disabled>Add</button>
+        </div>
+    </div>
+
+    <!-- Block 3: Company List -->
+    <div class="block hidden" id="company-list-block">
+        <h2>Company List</h2>
+        <div id="company-list">
+            <!-- Company cards will be dynamically added here -->
         </div>
     </div>
 
     <script>
-        {
-            appendCompany("Google", "google");
-            appendCompany("Netflix", "netflix");
-            appendCompany("VictoriaMetrics", "victoriametrics");
-            appendCompany("FirstDemoCompany", "firstdemocompany");
-        }
+        // Manage Connections toggle
+        const manageConnectionsHeader = document.getElementById('manage-connections-header');
+        const manageConnectionsContent = document.getElementById('manage-connections-content');
+        manageConnectionsHeader.addEventListener('click', () => {
+            manageConnectionsContent.classList.toggle('hidden');
+        });
 
-        function deleteCompany($button) {
-            const $company = $button.closest('li');
-            const name = $company.dataset.linkedinName;
+        // Add Company toggle
+        const addCompanyHeader = document.getElementById('add-company-header');
+        const addCompanyContent = document.getElementById('add-company-content');
+        addCompanyHeader.addEventListener('click', () => {
+            addCompanyContent.classList.toggle('hidden');
+        });
 
-            // Replace the company details with the company name and recovery button
-            $company.classList.add('recover-mode');
-            $company.innerHTML = `
-                <span>${name}</span>
-                <button class="recover" onclick="recoverCompany(this)">Recover</button>
-            `;
-        }
+        // Add company functionality and show Company List when there's at least one company
+        const companyList = document.getElementById('company-list');
+        const companyListBlock = document.getElementById('company-list-block');
+        const companyNameInput = document.getElementById('company-name');
+        const addCompanyButton = document.getElementById('add-company');
 
-        function recoverCompany($button) {
-            const $company = $button.closest('li');
-            const name = $company.dataset.linkedinName;
-            const vanityName = $company.dataset.linkedinVanityName;
-
-            // Restore the original content
-            $company.classList.remove('recover-mode');
-            $company.innerHTML = renderCompany(name, vanityName);
-        }
-
-        function completeCompany($button) {
-            const $company = $button.closest('li');
-            const name = $company.dataset.linkedinName;
-
-            $company.classList.add('complete-mode');
-            $company.innerHTML = `
-                <span>${name}</span>
-                <button class="resume" onclick="resumeCompany(this)">Resume</button>
-            `;
-        }
-
-        function resumeCompany($button) {
-            const $company = $button.closest('li');
-            const name = $company.dataset.linkedinName;
-            const vanityName = $company.dataset.linkedinVanityName;
-
-            // Restore the original content
-            $company.classList.remove('complete-mode');
-            $company.innerHTML = renderCompany(name, vanityName);
-        }
-
-        function addCompany() {
-            const $companyUrl = document.getElementById('company-url');
-            const vanityName = parseVanityName($companyUrl.value.trim());
-
-            if (vanityName === "") {
-                const errorMessages = `Please enter a valid LinkedIn company URL like ${randomCompanyMAANG()}`;
-
-                alert(errorMessages);
-
-                return;
+        // Enable/Disable Add button based on input
+        companyNameInput.addEventListener('input', function() {
+            if (companyNameInput.value.trim() !== '') {
+                addCompanyButton.removeAttribute('disabled');
+            } else {
+                addCompanyButton.setAttribute('disabled', 'disabled');
             }
+        });
 
-            appendCompany(vanityName, vanityName);
-
-            $companyUrl.value = '';
+        // Function to temporarily highlight the new company card
+        function highlightCard(card) {
+            card.classList.add('highlight');
+            setTimeout(() => {
+                card.classList.remove('highlight');
+            }, 2000); // Highlight lasts for 2 seconds
         }
 
-        function regenerateConnections() {
-            const keywords = document.getElementById('keywords').value;
-            const level = document.getElementById('connection-level').value;
-            const $connections = document.querySelectorAll('.connections');
+        // Add Company button click event
+        addCompanyButton.addEventListener('click', function() {
+            const companyName = companyNameInput.value;
+            if (companyName) {
+                // Create a new company card
+                const card = document.createElement('div');
+                card.className = 'company-card';
 
-            $connections.forEach($connection => {
-                const companyItem = $connection.closest('.company-item');
-                const companyName = companyItem.dataset.name;
-                $connection.href = `https://www.linkedin.com/search/results/people/?keywords=${keywords}&company=${encodeURIComponent(companyName)}&connectionOf=%23${level}`;
-            });
-        }
+                // Create company name container
+                const companyNameContainer = document.createElement('div');
+                companyNameContainer.className = 'company-name';
+                const companyLink = document.createElement('a');
+                companyLink.href = 'javascript:void(0);';
+                companyLink.innerText = companyName;
+                companyNameContainer.appendChild(companyLink);
+                card.appendChild(companyNameContainer);
 
-        function renderCompany(name, vanityName) {
-            return `
-                <a href="https://www.linkedin.com/company/${vanityName}" target="_blank">${name}</a>
-                <div>
-                    <button class="complete" onclick="completeCompany(this)">Complete</button>
-                    <a href="https://www.linkedin.com/search/results/people/?keywords=&company=${encodeURIComponent(vanityName)}" class="connections">Connections</a>
-                    <button class="delete" onclick="deleteCompany(this)">Delete</button>
-                </div>
-            `;
-        }
+                // Create connections container
+                const companyConnectionsContainer = document.createElement('div');
+                companyConnectionsContainer.className = 'company-connections';
+                const connections = ['1st', '2nd', '1st X', '2nd X'];
+                connections.forEach(conn => {
+                    const connLink = document.createElement('a');
+                    connLink.href = 'javascript:void(0);';
+                    connLink.innerText = `Connections ${conn}`;
+                    companyConnectionsContainer.appendChild(connLink);
+                });
+                card.appendChild(companyConnectionsContainer);
 
-        function appendCompany(name, vanityName) {
-            const $company = document.createElement('li');
-            $company.className = 'company-item';
-            $company.dataset.linkedinName = name;
-            $company.dataset.linkedinVanityName = vanityName;
-            $company.innerHTML = renderCompany(name, vanityName);
+                // Create actions container (delete button)
+                const companyActionsContainer = document.createElement('div');
+                companyActionsContainer.className = 'company-actions';
+                const deleteButton = document.createElement('button');
+                deleteButton.innerText = 'Delete';
+                deleteButton.addEventListener('click', function() {
+                    card.remove();
+                    // Hide Company List if no companies are left
+                    if (!companyList.hasChildNodes()) {
+                        companyListBlock.classList.add('hidden');
+                    }
+                });
+                companyActionsContainer.appendChild(deleteButton);
+                card.appendChild(companyActionsContainer);
 
-            const $companies = document.getElementById('company-list');
-            $companies.appendChild($company);
-        }
+                // Append card to company list
+                companyList.appendChild(card);
 
-        function parseVanityName(linkedinCompanyURL) {
-            if (linkedinCompanyURL === "") {
-                return "";
-            }
+                // Highlight the new company card
+                highlightCard(card);
 
-            try {
-                const url = new URL(linkedinCompanyURL);
-
-                if (url.hostname !== "linkedin.com" && url.hostname !== "www.linkedin.com") {
-                    return "";
+                // Show Company List block when there's at least one company
+                if (companyList.children.length > 0) {
+                    companyListBlock.classList.remove('hidden');
                 }
 
-                const match = url.pathname.match(/^\/company\/([^\/]+)\/?/);
-
-                return match ? match[1] : "";
-            } catch (error) {
-                return "";
+                // Clear input field and disable Add button
+                companyNameInput.value = '';
+                addCompanyButton.setAttribute('disabled', 'disabled');
             }
-        }
-
-        function randomCompanyMAANG() {
-            const companies = [
-                "meta",
-                "apple",
-                "amazon",
-                "netflix",
-                "google",
-                "microsoft",
-                "nvidia",
-            ];
-
-            const randomIndex = Math.floor(Math.random() * companies.length);
-
-            return `https://www.linkedin.com/company/${companies[randomIndex]}/`;
-        }
+        });
     </script>
-
 </body>
 </html>
