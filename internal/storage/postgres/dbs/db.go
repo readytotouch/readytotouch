@@ -114,6 +114,27 @@ func Prepare(ctx context.Context, db DBTX) (*Queries, error) {
 	if q.usersUpdateStmt, err = db.PrepareContext(ctx, usersUpdate); err != nil {
 		return nil, fmt.Errorf("error preparing query UsersUpdate: %w", err)
 	}
+	if q.wipLinkedInCompaniesGetByVanityNameStmt, err = db.PrepareContext(ctx, wipLinkedInCompaniesGetByVanityName); err != nil {
+		return nil, fmt.Errorf("error preparing query WipLinkedInCompaniesGetByVanityName: %w", err)
+	}
+	if q.wipLinkedInCompaniesNewStmt, err = db.PrepareContext(ctx, wipLinkedInCompaniesNew); err != nil {
+		return nil, fmt.Errorf("error preparing query WipLinkedInCompaniesNew: %w", err)
+	}
+	if q.wipLinkedInCompanyRequestHistoryCountStmt, err = db.PrepareContext(ctx, wipLinkedInCompanyRequestHistoryCount); err != nil {
+		return nil, fmt.Errorf("error preparing query WipLinkedInCompanyRequestHistoryCount: %w", err)
+	}
+	if q.wipLinkedInCompanyRequestHistoryExistsVanityNameStmt, err = db.PrepareContext(ctx, wipLinkedInCompanyRequestHistoryExistsVanityName); err != nil {
+		return nil, fmt.Errorf("error preparing query WipLinkedInCompanyRequestHistoryExistsVanityName: %w", err)
+	}
+	if q.wipLinkedInCompanyRequestHistoryNewStmt, err = db.PrepareContext(ctx, wipLinkedInCompanyRequestHistoryNew); err != nil {
+		return nil, fmt.Errorf("error preparing query WipLinkedInCompanyRequestHistoryNew: %w", err)
+	}
+	if q.wipUserLinkedInCompaniesStmt, err = db.PrepareContext(ctx, wipUserLinkedInCompanies); err != nil {
+		return nil, fmt.Errorf("error preparing query WipUserLinkedInCompanies: %w", err)
+	}
+	if q.wipUserToLinkedInCompaniesUpsertStmt, err = db.PrepareContext(ctx, wipUserToLinkedInCompaniesUpsert); err != nil {
+		return nil, fmt.Errorf("error preparing query WipUserToLinkedInCompaniesUpsert: %w", err)
+	}
 	return &q, nil
 }
 
@@ -269,6 +290,41 @@ func (q *Queries) Close() error {
 			err = fmt.Errorf("error closing usersUpdateStmt: %w", cerr)
 		}
 	}
+	if q.wipLinkedInCompaniesGetByVanityNameStmt != nil {
+		if cerr := q.wipLinkedInCompaniesGetByVanityNameStmt.Close(); cerr != nil {
+			err = fmt.Errorf("error closing wipLinkedInCompaniesGetByVanityNameStmt: %w", cerr)
+		}
+	}
+	if q.wipLinkedInCompaniesNewStmt != nil {
+		if cerr := q.wipLinkedInCompaniesNewStmt.Close(); cerr != nil {
+			err = fmt.Errorf("error closing wipLinkedInCompaniesNewStmt: %w", cerr)
+		}
+	}
+	if q.wipLinkedInCompanyRequestHistoryCountStmt != nil {
+		if cerr := q.wipLinkedInCompanyRequestHistoryCountStmt.Close(); cerr != nil {
+			err = fmt.Errorf("error closing wipLinkedInCompanyRequestHistoryCountStmt: %w", cerr)
+		}
+	}
+	if q.wipLinkedInCompanyRequestHistoryExistsVanityNameStmt != nil {
+		if cerr := q.wipLinkedInCompanyRequestHistoryExistsVanityNameStmt.Close(); cerr != nil {
+			err = fmt.Errorf("error closing wipLinkedInCompanyRequestHistoryExistsVanityNameStmt: %w", cerr)
+		}
+	}
+	if q.wipLinkedInCompanyRequestHistoryNewStmt != nil {
+		if cerr := q.wipLinkedInCompanyRequestHistoryNewStmt.Close(); cerr != nil {
+			err = fmt.Errorf("error closing wipLinkedInCompanyRequestHistoryNewStmt: %w", cerr)
+		}
+	}
+	if q.wipUserLinkedInCompaniesStmt != nil {
+		if cerr := q.wipUserLinkedInCompaniesStmt.Close(); cerr != nil {
+			err = fmt.Errorf("error closing wipUserLinkedInCompaniesStmt: %w", cerr)
+		}
+	}
+	if q.wipUserToLinkedInCompaniesUpsertStmt != nil {
+		if cerr := q.wipUserToLinkedInCompaniesUpsertStmt.Close(); cerr != nil {
+			err = fmt.Errorf("error closing wipUserToLinkedInCompaniesUpsertStmt: %w", cerr)
+		}
+	}
 	return err
 }
 
@@ -306,73 +362,87 @@ func (q *Queries) queryRow(ctx context.Context, stmt *sql.Stmt, query string, ar
 }
 
 type Queries struct {
-	db                                    DBTX
-	tx                                    *sql.Tx
-	companyTotalViewsStmt                 *sql.Stmt
-	companyViewDailyStatsStmt             *sql.Stmt
-	companyViewDailyStatsUpsertStmt       *sql.Stmt
-	featureViewDailyStatsStmt             *sql.Stmt
-	featureViewDailyStatsUpsertStmt       *sql.Stmt
-	featureViewStatsStmt                  *sql.Stmt
-	featureViewStatsUpsertStmt            *sql.Stmt
-	socialUserProfilesStmt                *sql.Stmt
-	socialUserProfilesByUserStmt          *sql.Stmt
-	userFavoriteCompaniesStmt             *sql.Stmt
-	userFavoriteCompaniesStatsStmt        *sql.Stmt
-	userFavoriteCompaniesUpsertStmt       *sql.Stmt
-	userFeatureWaitlistStmt               *sql.Stmt
-	userFeatureWaitlistDailyStatsStmt     *sql.Stmt
-	userFeatureWaitlistStatsStmt          *sql.Stmt
-	userFeatureWaitlistStatsUpsertStmt    *sql.Stmt
-	userFeatureWaitlistUpsertStmt         *sql.Stmt
-	userOnlineDailyCountStatsStmt         *sql.Stmt
-	userOnlineDailyCountStatsUpsertStmt   *sql.Stmt
-	userOnlineDailyStatsUpsertStmt        *sql.Stmt
-	userOnlineHourlyStatsStmt             *sql.Stmt
-	userOnlineHourlyStatsUpsertStmt       *sql.Stmt
-	userRegistrationDailyCountStatsStmt   *sql.Stmt
-	userSocialProfileChangeHistoryNewStmt *sql.Stmt
-	userSocialProfileGetByIDStmt          *sql.Stmt
-	userSocialProfileGetUserByEmailStmt   *sql.Stmt
-	userSocialProfileNewStmt              *sql.Stmt
-	userSocialProfileUpdateStmt           *sql.Stmt
-	usersNewStmt                          *sql.Stmt
-	usersUpdateStmt                       *sql.Stmt
+	db                                                   DBTX
+	tx                                                   *sql.Tx
+	companyTotalViewsStmt                                *sql.Stmt
+	companyViewDailyStatsStmt                            *sql.Stmt
+	companyViewDailyStatsUpsertStmt                      *sql.Stmt
+	featureViewDailyStatsStmt                            *sql.Stmt
+	featureViewDailyStatsUpsertStmt                      *sql.Stmt
+	featureViewStatsStmt                                 *sql.Stmt
+	featureViewStatsUpsertStmt                           *sql.Stmt
+	socialUserProfilesStmt                               *sql.Stmt
+	socialUserProfilesByUserStmt                         *sql.Stmt
+	userFavoriteCompaniesStmt                            *sql.Stmt
+	userFavoriteCompaniesStatsStmt                       *sql.Stmt
+	userFavoriteCompaniesUpsertStmt                      *sql.Stmt
+	userFeatureWaitlistStmt                              *sql.Stmt
+	userFeatureWaitlistDailyStatsStmt                    *sql.Stmt
+	userFeatureWaitlistStatsStmt                         *sql.Stmt
+	userFeatureWaitlistStatsUpsertStmt                   *sql.Stmt
+	userFeatureWaitlistUpsertStmt                        *sql.Stmt
+	userOnlineDailyCountStatsStmt                        *sql.Stmt
+	userOnlineDailyCountStatsUpsertStmt                  *sql.Stmt
+	userOnlineDailyStatsUpsertStmt                       *sql.Stmt
+	userOnlineHourlyStatsStmt                            *sql.Stmt
+	userOnlineHourlyStatsUpsertStmt                      *sql.Stmt
+	userRegistrationDailyCountStatsStmt                  *sql.Stmt
+	userSocialProfileChangeHistoryNewStmt                *sql.Stmt
+	userSocialProfileGetByIDStmt                         *sql.Stmt
+	userSocialProfileGetUserByEmailStmt                  *sql.Stmt
+	userSocialProfileNewStmt                             *sql.Stmt
+	userSocialProfileUpdateStmt                          *sql.Stmt
+	usersNewStmt                                         *sql.Stmt
+	usersUpdateStmt                                      *sql.Stmt
+	wipLinkedInCompaniesGetByVanityNameStmt              *sql.Stmt
+	wipLinkedInCompaniesNewStmt                          *sql.Stmt
+	wipLinkedInCompanyRequestHistoryCountStmt            *sql.Stmt
+	wipLinkedInCompanyRequestHistoryExistsVanityNameStmt *sql.Stmt
+	wipLinkedInCompanyRequestHistoryNewStmt              *sql.Stmt
+	wipUserLinkedInCompaniesStmt                         *sql.Stmt
+	wipUserToLinkedInCompaniesUpsertStmt                 *sql.Stmt
 }
 
 func (q *Queries) WithTx(tx *sql.Tx) *Queries {
 	return &Queries{
-		db:                                    tx,
-		tx:                                    tx,
-		companyTotalViewsStmt:                 q.companyTotalViewsStmt,
-		companyViewDailyStatsStmt:             q.companyViewDailyStatsStmt,
-		companyViewDailyStatsUpsertStmt:       q.companyViewDailyStatsUpsertStmt,
-		featureViewDailyStatsStmt:             q.featureViewDailyStatsStmt,
-		featureViewDailyStatsUpsertStmt:       q.featureViewDailyStatsUpsertStmt,
-		featureViewStatsStmt:                  q.featureViewStatsStmt,
-		featureViewStatsUpsertStmt:            q.featureViewStatsUpsertStmt,
-		socialUserProfilesStmt:                q.socialUserProfilesStmt,
-		socialUserProfilesByUserStmt:          q.socialUserProfilesByUserStmt,
-		userFavoriteCompaniesStmt:             q.userFavoriteCompaniesStmt,
-		userFavoriteCompaniesStatsStmt:        q.userFavoriteCompaniesStatsStmt,
-		userFavoriteCompaniesUpsertStmt:       q.userFavoriteCompaniesUpsertStmt,
-		userFeatureWaitlistStmt:               q.userFeatureWaitlistStmt,
-		userFeatureWaitlistDailyStatsStmt:     q.userFeatureWaitlistDailyStatsStmt,
-		userFeatureWaitlistStatsStmt:          q.userFeatureWaitlistStatsStmt,
-		userFeatureWaitlistStatsUpsertStmt:    q.userFeatureWaitlistStatsUpsertStmt,
-		userFeatureWaitlistUpsertStmt:         q.userFeatureWaitlistUpsertStmt,
-		userOnlineDailyCountStatsStmt:         q.userOnlineDailyCountStatsStmt,
-		userOnlineDailyCountStatsUpsertStmt:   q.userOnlineDailyCountStatsUpsertStmt,
-		userOnlineDailyStatsUpsertStmt:        q.userOnlineDailyStatsUpsertStmt,
-		userOnlineHourlyStatsStmt:             q.userOnlineHourlyStatsStmt,
-		userOnlineHourlyStatsUpsertStmt:       q.userOnlineHourlyStatsUpsertStmt,
-		userRegistrationDailyCountStatsStmt:   q.userRegistrationDailyCountStatsStmt,
-		userSocialProfileChangeHistoryNewStmt: q.userSocialProfileChangeHistoryNewStmt,
-		userSocialProfileGetByIDStmt:          q.userSocialProfileGetByIDStmt,
-		userSocialProfileGetUserByEmailStmt:   q.userSocialProfileGetUserByEmailStmt,
-		userSocialProfileNewStmt:              q.userSocialProfileNewStmt,
-		userSocialProfileUpdateStmt:           q.userSocialProfileUpdateStmt,
-		usersNewStmt:                          q.usersNewStmt,
-		usersUpdateStmt:                       q.usersUpdateStmt,
+		db:                                                   tx,
+		tx:                                                   tx,
+		companyTotalViewsStmt:                                q.companyTotalViewsStmt,
+		companyViewDailyStatsStmt:                            q.companyViewDailyStatsStmt,
+		companyViewDailyStatsUpsertStmt:                      q.companyViewDailyStatsUpsertStmt,
+		featureViewDailyStatsStmt:                            q.featureViewDailyStatsStmt,
+		featureViewDailyStatsUpsertStmt:                      q.featureViewDailyStatsUpsertStmt,
+		featureViewStatsStmt:                                 q.featureViewStatsStmt,
+		featureViewStatsUpsertStmt:                           q.featureViewStatsUpsertStmt,
+		socialUserProfilesStmt:                               q.socialUserProfilesStmt,
+		socialUserProfilesByUserStmt:                         q.socialUserProfilesByUserStmt,
+		userFavoriteCompaniesStmt:                            q.userFavoriteCompaniesStmt,
+		userFavoriteCompaniesStatsStmt:                       q.userFavoriteCompaniesStatsStmt,
+		userFavoriteCompaniesUpsertStmt:                      q.userFavoriteCompaniesUpsertStmt,
+		userFeatureWaitlistStmt:                              q.userFeatureWaitlistStmt,
+		userFeatureWaitlistDailyStatsStmt:                    q.userFeatureWaitlistDailyStatsStmt,
+		userFeatureWaitlistStatsStmt:                         q.userFeatureWaitlistStatsStmt,
+		userFeatureWaitlistStatsUpsertStmt:                   q.userFeatureWaitlistStatsUpsertStmt,
+		userFeatureWaitlistUpsertStmt:                        q.userFeatureWaitlistUpsertStmt,
+		userOnlineDailyCountStatsStmt:                        q.userOnlineDailyCountStatsStmt,
+		userOnlineDailyCountStatsUpsertStmt:                  q.userOnlineDailyCountStatsUpsertStmt,
+		userOnlineDailyStatsUpsertStmt:                       q.userOnlineDailyStatsUpsertStmt,
+		userOnlineHourlyStatsStmt:                            q.userOnlineHourlyStatsStmt,
+		userOnlineHourlyStatsUpsertStmt:                      q.userOnlineHourlyStatsUpsertStmt,
+		userRegistrationDailyCountStatsStmt:                  q.userRegistrationDailyCountStatsStmt,
+		userSocialProfileChangeHistoryNewStmt:                q.userSocialProfileChangeHistoryNewStmt,
+		userSocialProfileGetByIDStmt:                         q.userSocialProfileGetByIDStmt,
+		userSocialProfileGetUserByEmailStmt:                  q.userSocialProfileGetUserByEmailStmt,
+		userSocialProfileNewStmt:                             q.userSocialProfileNewStmt,
+		userSocialProfileUpdateStmt:                          q.userSocialProfileUpdateStmt,
+		usersNewStmt:                                         q.usersNewStmt,
+		usersUpdateStmt:                                      q.usersUpdateStmt,
+		wipLinkedInCompaniesGetByVanityNameStmt:              q.wipLinkedInCompaniesGetByVanityNameStmt,
+		wipLinkedInCompaniesNewStmt:                          q.wipLinkedInCompaniesNewStmt,
+		wipLinkedInCompanyRequestHistoryCountStmt:            q.wipLinkedInCompanyRequestHistoryCountStmt,
+		wipLinkedInCompanyRequestHistoryExistsVanityNameStmt: q.wipLinkedInCompanyRequestHistoryExistsVanityNameStmt,
+		wipLinkedInCompanyRequestHistoryNewStmt:              q.wipLinkedInCompanyRequestHistoryNewStmt,
+		wipUserLinkedInCompaniesStmt:                         q.wipUserLinkedInCompaniesStmt,
+		wipUserToLinkedInCompaniesUpsertStmt:                 q.wipUserToLinkedInCompaniesUpsertStmt,
 	}
 }
