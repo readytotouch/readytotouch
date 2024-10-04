@@ -45,6 +45,15 @@ function addCompany(companyVanityName: string, callback: () => void) {
     }).catch(console.error);
 }
 
+function deleteCompany(id: number) {
+    fetch(`/api/v1/companies-and-connections/companies.json`, {
+        method: "DELETE",
+        body: JSON.stringify({
+            id: id,
+        }),
+    })
+}
+
 class ResponseCompany {
     constructor(
         public readonly id: number,
@@ -190,6 +199,8 @@ function renderCompany(company: Company) {
     const $deleteButton = document.createElement('button');
     $deleteButton.innerText = 'Delete';
     $deleteButton.addEventListener('click', function () {
+        deleteCompany(company.id);
+
         $card.remove();
 
         $companyListBlock.classList.toggle('hidden', $companyList.children.length === 0);

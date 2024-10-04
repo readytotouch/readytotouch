@@ -1,6 +1,7 @@
 package cac
 
 import (
+	"fmt"
 	"net/http"
 
 	"github.com/readytotouch/readytotouch/internal/domain"
@@ -33,6 +34,16 @@ func (c *Controller) Poland(ctx *gin.Context) {
 }
 
 func (c *Controller) Companies(ctx *gin.Context) {
+	var (
+		authUserID = domain.ContextGetUserID(ctx)
+	)
+	if authUserID == 0 {
+		ctx.JSON(http.StatusUnauthorized, &domain.ErrorResponse{
+			ErrorMessage: "Unauthorized",
+		})
+		return
+	}
+
 	ctx.JSON(http.StatusOK, []domain.LinkedInProfileResponse{
 		{
 			ID:    97909464,
@@ -53,6 +64,30 @@ func (c *Controller) Companies(ctx *gin.Context) {
 }
 
 func (c *Controller) AddCompany(ctx *gin.Context) {
+	type addRequestBody struct {
+		Alias string `json:"alias"`
+	}
+
+	var (
+		authUserID = domain.ContextGetUserID(ctx)
+	)
+	if authUserID == 0 {
+		ctx.JSON(http.StatusUnauthorized, &domain.ErrorResponse{
+			ErrorMessage: "Unauthorized",
+		})
+		return
+	}
+
+	var body addRequestBody
+	if err := ctx.ShouldBindJSON(&body); err != nil {
+		ctx.JSON(http.StatusBadRequest, &domain.ErrorResponse{
+			ErrorMessage: err.Error(),
+		})
+		return
+	}
+
+	fmt.Printf("Add company %s\n", body.Alias)
+
 	ctx.JSON(http.StatusOK, []domain.LinkedInProfileResponse{
 		{
 			ID:    97909464,
@@ -73,5 +108,29 @@ func (c *Controller) AddCompany(ctx *gin.Context) {
 }
 
 func (c *Controller) DeleteCompany(ctx *gin.Context) {
+	type deleteRequestBody struct {
+		ID int64 `json:"id"`
+	}
+
+	var (
+		authUserID = domain.ContextGetUserID(ctx)
+	)
+	if authUserID == 0 {
+		ctx.JSON(http.StatusUnauthorized, &domain.ErrorResponse{
+			ErrorMessage: "Unauthorized",
+		})
+		return
+	}
+
+	var body deleteRequestBody
+	if err := ctx.ShouldBindJSON(&body); err != nil {
+		ctx.JSON(http.StatusBadRequest, &domain.ErrorResponse{
+			ErrorMessage: err.Error(),
+		})
+		return
+	}
+
+	fmt.Printf("Delete company %d\n", body.ID)
+
 	ctx.JSON(http.StatusOK, nil)
 }
