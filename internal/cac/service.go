@@ -43,6 +43,18 @@ func (s *Service) Load(ctx context.Context, companyVanityName string, userID int
 		return 0, fmt.Errorf("cannot load company %s, it's already in the database", companyVanityName)
 	}
 
+	// Minimize the number of requests to the LinkedIn API per user
+	{
+		previousRequestHistoryCount, err := s.userToLinkedInCompanyRepository.GetRequestHistoryCount(ctx, userID)
+		if err != nil {
+			return 0, err
+		}
+
+		if previousRequestHistoryCount >= 100 {
+			return 0, fmt.Errorf("cannot load company %s, the limit of 100 requests per user has been reached", companyVanityName)
+		}
+	}
+
 	companies, payload, err := s.linkedinClient.CompaniesSearch(companyVanityName)
 	if err != nil {
 		return 0, err
