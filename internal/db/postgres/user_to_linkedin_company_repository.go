@@ -41,6 +41,14 @@ func (r *UserToLinkedInCompanyRepository) List(ctx context.Context, userID int64
 	return result, nil
 }
 
+func (r *UserToLinkedInCompanyRepository) Add(ctx context.Context, userID int64, linkedinCompanyID int64, createdAt time.Time) error {
+	return r.db.Queries().WipUserToLinkedInCompaniesAdd(ctx, dbs.WipUserToLinkedInCompaniesAddParams{
+		CreatedBy:         userID,
+		LinkedinCompanyID: linkedinCompanyID,
+		CreatedAt:         createdAt,
+	})
+}
+
 func (r *UserToLinkedInCompanyRepository) Delete(ctx context.Context, userID int64, linkedinCompanyID int64, updatedAt time.Time) error {
 	return r.db.Queries().WipUserToLinkedInCompaniesDelete(ctx, dbs.WipUserToLinkedInCompaniesDeleteParams{
 		UpdatedAt:         updatedAt,

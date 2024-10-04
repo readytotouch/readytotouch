@@ -42,9 +42,25 @@ func (c *Controller) Companies(ctx *gin.Context) {
 		authUserID = domain.ContextGetUserID(ctx)
 	)
 	if authUserID == 0 {
-		ctx.JSON(http.StatusUnauthorized, &domain.ErrorResponse{
-			ErrorMessage: "Unauthorized",
+		// For the sake of the demo, we're going to return a list of companies
+		ctx.JSON(http.StatusOK, []domain.LinkedInProfileResponse{
+			{
+				ID:    14136494,
+				Alias: "dochq",
+				Name:  "DocHQ",
+			},
+			{
+				ID:    1441,
+				Alias: "google",
+				Name:  "Google",
+			},
+			{
+				ID:    1035,
+				Alias: "microsoft",
+				Name:  "Microsoft",
+			},
 		})
+
 		return
 	}
 
@@ -82,7 +98,18 @@ func (c *Controller) AddCompany(ctx *gin.Context) {
 		return
 	}
 
-	if err := c.service.Add(companyVanityName, authUserID, time.Now().UTC()); err != nil {
+	var now = time.Now().UTC()
+
+	linkedinCompanyID, err := c.service.Add(companyVanityName, authUserID, now)
+	if err != nil {
+		ctx.JSON(http.StatusInternalServerError, &domain.ErrorResponse{
+			ErrorMessage: err.Error(),
+		})
+		return
+	}
+
+	err = c.userToLinkedInCompanyRepository.Add(ctx, authUserID, linkedinCompanyID, now)
+	if err != nil {
 		ctx.JSON(http.StatusInternalServerError, &domain.ErrorResponse{
 			ErrorMessage: err.Error(),
 		})
@@ -121,7 +148,9 @@ func (c *Controller) DeleteCompany(ctx *gin.Context) {
 		return
 	}
 
-	err := c.userToLinkedInCompanyRepository.Delete(ctx, authUserID, body.ID, time.Now().UTC())
+	var now = time.Now().UTC()
+
+	err := c.userToLinkedInCompanyRepository.Delete(ctx, authUserID, body.ID, now)
 	if err != nil {
 		ctx.JSON(http.StatusInternalServerError, &domain.ErrorResponse{
 			ErrorMessage: err.Error(),

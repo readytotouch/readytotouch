@@ -14,6 +14,6 @@ func NewService(linkedinClient *linkedin.Client) *Service {
 	return &Service{linkedinClient: linkedinClient}
 }
 
-func (s *Service) Add(companyVanityName string, userID int64, now time.Time) error {
-	return nil
+func (s *Service) Add(companyVanityName string, userID int64, now time.Time) (int64, error) {
+	return 0, nil
 }
