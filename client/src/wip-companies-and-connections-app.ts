@@ -9,6 +9,16 @@ class ResponseCompany {
     }
 }
 
+class Connections {
+    constructor(
+        public readonly connections1stURL: string,
+        public readonly connections2ndURL: string,
+        public readonly connections1stXURL: string,
+        public readonly connections2ndXURL: string,
+    ) {
+    }
+}
+
 class Company {
     constructor(
         public readonly id: number,
@@ -162,14 +172,16 @@ function renderCompanies(companies: Array<ResponseCompany>) {
     $companyList.innerHTML = '';
 
     companies.forEach((company, index) => {
+        const prepared = prepareConnections(company, companies, [], '');
+
         const $card = renderCompany(new Company(
             company.id,
             company.alias,
             company.name,
-            'javascript:void(0)',
-            'javascript:void(0)',
-            'javascript:void(0)',
-            'javascript:void(0)',
+            prepared.connections1stURL,
+            prepared.connections2ndURL,
+            prepared.connections1stXURL,
+            prepared.connections2ndXURL,
         ));
 
         $companyList.appendChild($card);
@@ -181,4 +193,65 @@ function renderCompanies(companies: Array<ResponseCompany>) {
     })
 
     $companyListBlock.classList.toggle('hidden', companies.length === 0);
+}
+
+function prepareConnections(
+    currentCompany: ResponseCompany,
+    companies: Array<ResponseCompany>,
+    universities: Array<ResponseCompany>,
+    keywords: string,
+    ): Connections {
+
+    const pastCompanies = [];
+    const universitiesIds = [];
+
+    for (const company of companies) {
+        if (currentCompany === company) {
+            continue;
+        }
+
+        pastCompanies.push(company.id.toString());
+    }
+
+    for (const university of universities) {
+        universitiesIds.push(university.id.toString());
+    }
+
+    const currentCompanyQueryParam = `["${currentCompany.id}"]`;
+    const pastCompaniesQueryParam = JSON.stringify(pastCompanies);
+    const universitiesQueryParam = JSON.stringify(universitiesIds);
+
+    let connections1stURL = new URL('https://www.linkedin.com/search/results/PEOPLE/');
+    let connections2ndURL = new URL('https://www.linkedin.com/search/results/PEOPLE/');
+    let connections1stXURL = new URL('https://www.linkedin.com/search/results/PEOPLE/');
+    let connections2ndXURL = new URL('https://www.linkedin.com/search/results/PEOPLE/');
+
+    connections1stURL.searchParams.append('currentCompany', currentCompanyQueryParam);
+    connections1stURL.searchParams.append('network', `["F"]`);
+    connections1stURL.searchParams.append('keywords', keywords);
+    connections1stURL.searchParams.append('schoolFilter', universitiesQueryParam);
+
+    connections2ndURL.searchParams.append('currentCompany', currentCompanyQueryParam);
+    connections2ndURL.searchParams.append('network', `["S"]`);
+    connections2ndURL.searchParams.append('keywords', keywords);
+    connections2ndURL.searchParams.append('schoolFilter', universitiesQueryParam);
+
+    connections1stXURL.searchParams.append('currentCompany', currentCompanyQueryParam);
+    connections1stXURL.searchParams.append('network', `["F"]`);
+    connections1stXURL.searchParams.append('keywords', keywords);
+    connections1stXURL.searchParams.append('pastCompany', pastCompaniesQueryParam);
+    connections1stXURL.searchParams.append('schoolFilter', universitiesQueryParam);
+
+    connections2ndXURL.searchParams.append('currentCompany', currentCompanyQueryParam);
+    connections2ndXURL.searchParams.append('network', `["S"]`);
+    connections2ndXURL.searchParams.append('keywords', keywords);
+    connections2ndXURL.searchParams.append('pastCompany', pastCompaniesQueryParam);
+    connections2ndXURL.searchParams.append('schoolFilter', universitiesQueryParam);
+
+    return new Connections(
+        connections1stURL.toString(),
+        connections2ndURL.toString(),
+        connections1stXURL.toString(),
+        connections2ndXURL.toString(),
+    );
 }
