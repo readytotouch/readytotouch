@@ -1,4 +1,49 @@
 import {toEnter} from "./framework/enter";
+import {organizersWelcome} from "./welcome";
+
+let latestKeywords = '';
+let latestLocation = '';
+let latestCompanies = [];
+
+fetch('/api/v1/companies-and-connections/companies.json')
+    .then(function (response) {
+        // Unauthorized
+        if (response.status === 401) {
+            window.location.href = organizersWelcome();
+
+            return [];
+        }
+
+        return response.json();
+    }).then(function (companies: Array<ResponseCompany>) {
+    latestCompanies = companies;
+
+    renderCompanies(companies, false);
+}).catch(console.error);
+
+function addCompany(companyVanityName: string, callback: () => void) {
+    fetch(`/api/v1/companies-and-connections/companies.json`, {
+        method: "POST",
+        body: JSON.stringify({
+            alias: companyVanityName,
+        }),
+    }).then(function (response) {
+        // Unauthorized
+        if (response.status === 401) {
+            window.location.href = organizersWelcome();
+
+            return;
+        }
+
+        return response.json();
+    }).then(function (companies: Array<ResponseCompany>) {
+        latestCompanies = companies;
+
+        renderCompanies(companies, true);
+
+        callback();
+    }).catch(console.error);
+}
 
 class ResponseCompany {
     constructor(
@@ -49,48 +94,50 @@ $addCompanyHeader.addEventListener('click', () => {
 // Add company functionality and show Company List when there's at least one company
 const $companyList = document.getElementById('company-list');
 const $companyListBlock = document.getElementById('company-list-block') as HTMLElement;
-const $companyNameInput = document.getElementById('company-name') as HTMLInputElement
+const $companyUrlInput = document.getElementById('company-url') as HTMLInputElement
 const $addCompanyButton = document.getElementById('add-company') as HTMLButtonElement;
 
+const $location = document.getElementById('location') as HTMLInputElement;
+const $keywords = document.getElementById('keywords') as HTMLInputElement;
+const $updateConnectionsButton = document.getElementById('update-connections') as HTMLButtonElement;
+
 // Enable/Disable Add button based on input
-$companyNameInput.addEventListener('input', function () {
-    if ($companyNameInput.value.trim() !== '') {
+$companyUrlInput.addEventListener('input', function () {
+    if ($companyUrlInput.value.trim() !== '') {
         $addCompanyButton.removeAttribute('disabled');
     } else {
         $addCompanyButton.setAttribute('disabled', 'disabled');
     }
 });
 
-$companyNameInput.addEventListener("keyup", toEnter(submitCompany));
+$companyUrlInput.addEventListener("keyup", toEnter(submitCompany));
 
 // Add Company button click event
 $addCompanyButton.addEventListener('click', submitCompany);
 
+$updateConnectionsButton.addEventListener('click', function () {
+    latestKeywords = $keywords.value.trim();
+    latestLocation = $location.value;
+
+    renderCompanies(latestCompanies, false)
+});
+
 function submitCompany() {
-    const companyName = $companyNameInput.value;
-    if (companyName) {
-        const $card = renderCompany(new Company(
-            1,
-            'todo',
-            companyName,
-            'javascript:void(0)',
-            'javascript:void(0)',
-            'javascript:void(0)',
-            'javascript:void(0)',
-        ));
-
-        // Append $card to company list
-        $companyList.appendChild($card);
-
-        // Highlight the new company $card
-        highlightCard($card);
-
-        $companyListBlock.classList.toggle('hidden', $companyList.children.length === 0);
-
-        // Clear input field and disable Add button
-        $companyNameInput.value = '';
-        $addCompanyButton.setAttribute('disabled', 'disabled');
+    const companyUrl = $companyUrlInput.value.trim();
+    if (companyUrl === '') {
+        return;
     }
+
+    const vanityName = parseVanityName($companyUrlInput.value);
+    if (vanityName === '') {
+        return;
+    }
+
+    addCompany(vanityName, function () {
+        // Clear input field and disable Add button
+        $companyUrlInput.value = '';
+        $addCompanyButton.setAttribute('disabled', 'disabled');
+    });
 }
 
 function renderCompany(company: Company) {
@@ -140,14 +187,14 @@ function renderCompany(company: Company) {
     // Create actions container (delete button)
     const companyActionsContainer = document.createElement('div');
     companyActionsContainer.className = 'company-actions';
-    const deleteButton = document.createElement('button');
-    deleteButton.innerText = 'Delete';
-    deleteButton.addEventListener('click', function () {
+    const $deleteButton = document.createElement('button');
+    $deleteButton.innerText = 'Delete';
+    $deleteButton.addEventListener('click', function () {
         $card.remove();
 
         $companyListBlock.classList.toggle('hidden', $companyList.children.length === 0);
     });
-    companyActionsContainer.appendChild(deleteButton);
+    companyActionsContainer.appendChild($deleteButton);
     $card.appendChild(companyActionsContainer);
 
     return $card;
@@ -161,14 +208,7 @@ function highlightCard(card) {
     }, 2000); // Highlight lasts for 2 seconds
 }
 
-fetch('/api/v1/companies-and-connections/companies.json')
-    .then(function (response) {
-        return response.json();
-    })
-    .then(renderCompanies)
-    .catch(console.error);
-
-function renderCompanies(companies: Array<ResponseCompany>) {
+function renderCompanies(companies: Array<ResponseCompany>, added: boolean) {
     $companyList.innerHTML = '';
 
     companies.forEach((company, index) => {
@@ -186,7 +226,7 @@ function renderCompanies(companies: Array<ResponseCompany>) {
 
         $companyList.appendChild($card);
 
-        if (index === 0) {
+        if (added && index === 0) {
             // Highlight the new company $card
             highlightCard($card);
         }
@@ -199,9 +239,7 @@ function prepareConnections(
     currentCompany: ResponseCompany,
     companies: Array<ResponseCompany>,
     universities: Array<ResponseCompany>,
-    keywords: string,
-    location: string = '',
-    ): Connections {
+): Connections {
 
     const pastCompanies = [];
     const universitiesIds = [];
@@ -243,15 +281,15 @@ function prepareConnections(
     connections2ndXURL.searchParams.append('network', `["S"]`);
     connections2ndXURL.searchParams.append('schoolFilter', universitiesQueryParam);
 
-    if (keywords !== '') {
-        connections1stURL.searchParams.append('keywords', keywords);
-        connections2ndURL.searchParams.append('keywords', keywords);
-        connections1stXURL.searchParams.append('keywords', keywords);
-        connections2ndXURL.searchParams.append('keywords', keywords);
+    if (latestKeywords !== '') {
+        connections1stURL.searchParams.append('keywords', latestKeywords);
+        connections2ndURL.searchParams.append('keywords', latestKeywords);
+        connections1stXURL.searchParams.append('keywords', latestKeywords);
+        connections2ndXURL.searchParams.append('keywords', latestKeywords);
     }
 
-    if (location !== '') {
-        const queryParam = `["${location}"]`;
+    if (latestLocation !== '') {
+        const queryParam = `["${latestLocation}"]`;
         connections1stURL.searchParams.append('geoUrn', queryParam);
         connections2ndURL.searchParams.append('geoUrn', queryParam);
         connections1stXURL.searchParams.append('geoUrn', queryParam);
@@ -270,4 +308,34 @@ function prepareConnections(
         connections1stXURL.toString(),
         connections2ndXURL.toString(),
     );
+}
+
+function parseVanityName(url) {
+    // Your errors = your pain
+    const error = 'Expected URL like https://www.linkedin.com/company/company-name/';
+
+    let parsedUrl = null;
+
+    try {
+        parsedUrl = new URL(url);
+    } catch (e) {
+        alert(error);
+
+        return '';
+    }
+
+    const prefix = '/company/';
+
+    if (parsedUrl.pathname.indexOf(prefix) === -1) {
+        alert(error);
+
+        return '';
+    }
+
+    const end = parsedUrl.pathname.indexOf('/', prefix.length);
+    if (end === -1) {
+        return parsedUrl.pathname.substring(prefix.length);
+    }
+
+    return parsedUrl.pathname.substring(prefix.length, end);
 }

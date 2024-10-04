@@ -140,14 +140,30 @@ func StreamWipCompaniesAndConnections(qw422016 *qt422016.Writer) {
         <h2 id="manage-connections-header">Manage Connections</h2>
         <div id="manage-connections-content">
             <label for="keywords">Keywords:</label>
-            <input type="text" id="keywords" name="keywords" placeholder="Enter keywords...">
+            <input type="text" id="keywords" name="keywords" placeholder="Enter keywords..." list="keywords-list">
+            <datalist id="keywords-list">
+                <option value='"Developer" OR "Engineer" OR "DevOps"'>
+                <option value="Golang">
+                <option value="Rust">
+                <option value="Scala">
+            </datalist>
             <br><br>
             <label for="location">Location:</label>
             <select id="location" name="location">
-                <option value="global">Global</option>
-                <option value="usa">USA</option>
-                <option value="europe">Europe</option>
-                <!-- Add more locations as needed -->
+                <option value="">Worldwide</option>
+                <option value="105072130">Poland</option>
+                <option value="101282230">Germany</option>
+                <option value="106670623">Romania</option>
+                <option value="105646813">Spain</option>
+                <option value="104508036">Czechia</option>
+                <option value="102105699">Türkiye</option>
+                <option value="100364837">Portugal</option>
+                <option value="105333783">Bulgaria</option>
+                <option value="103350119">Italy</option>
+                <option value="106693272">Switzerland</option>
+                <option value="103644278">United States</option>
+                <option value="101165590">United Kingdom</option>
+                <option value="101174742">Canada</option>
             </select>
             <br><br>
             <button id="update-connections">Update connections</button>
@@ -158,8 +174,13 @@ func StreamWipCompaniesAndConnections(qw422016 *qt422016.Writer) {
     <div class="block">
         <h2 id="add-company-header">Add Company</h2>
         <div id="add-company-content">
-            <label for="company-name">Company name:</label>
-            <input type="text" id="company-name" name="company-name" placeholder="Enter company name...">
+            <label for="company-url">Company URL:</label>
+            <input type="text" id="company-url" name="company-url" placeholder="Enter company URL" list="company-url-list">
+            <datalist id="company-url-list">
+                <option value="https://www.linkedin.com/company/google/">
+                <option value="https://www.linkedin.com/company/microsoft/">
+                <option value="https://www.linkedin.com/company/nvidia/">
+            </datalist>
             <br><br>
             <button id="add-company" disabled>Add</button>
         </div>
