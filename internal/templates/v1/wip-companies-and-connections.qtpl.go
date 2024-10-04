@@ -18,9 +18,15 @@ func StreamWipCompaniesAndConnections(qw422016 *qt422016.Writer) {
 	qw422016.N().S(`<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Companies and connections</title>
+    <title>Companies and connections | Ukraine | ReadyToTouch</title>
+    <meta name="description" content="Companies and connections">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="author" type="text/plain" href="https://readytotouch.com/humans.txt"/>
+    `)
+	streamfavicon(qw422016)
+	qw422016.N().S(`
+
     <style>
         body {
             font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -129,6 +135,9 @@ func StreamWipCompaniesAndConnections(qw422016 *qt422016.Writer) {
             background-color: #c0392b;
         }
     </style>
+    `)
+	streamga(qw422016)
+	qw422016.N().S(`
 </head>
 <body>
 
@@ -172,7 +181,7 @@ func StreamWipCompaniesAndConnections(qw422016 *qt422016.Writer) {
 
     <!-- Block 2: Load Company -->
     <div class="block">
-        <h2 id="add-company-header">Load Company</h2>
+        <h2 id="add-company-header">Add Company</h2>
         <div id="add-company-content">
             <label for="company-url">Company URL:</label>
             <input type="text" id="company-url" name="company-url" placeholder="Enter company URL" list="company-url-list">
@@ -182,7 +191,7 @@ func StreamWipCompaniesAndConnections(qw422016 *qt422016.Writer) {
                 <option value="https://www.linkedin.com/company/nvidia/">
             </datalist>
             <br><br>
-            <button id="add-company" disabled>Load</button>
+            <button id="add-company" disabled>Add</button>
         </div>
     </div>
 

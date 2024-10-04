@@ -2,9 +2,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Companies and connections</title>
+    <title>Companies and connections | Ukraine | ReadyToTouch</title>
+    <meta name="description" content="Companies and connections">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="author" type="text/plain" href="https://readytotouch.com/humans.txt"/>
+    {%= favicon() %}
+
     <style>
         body {
             font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -113,6 +117,7 @@
             background-color: #c0392b;
         }
     </style>
+    {%= ga() %}
 </head>
 <body>
 
