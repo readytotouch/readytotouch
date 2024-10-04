@@ -132,8 +132,11 @@ func Prepare(ctx context.Context, db DBTX) (*Queries, error) {
 	if q.wipUserLinkedInCompaniesStmt, err = db.PrepareContext(ctx, wipUserLinkedInCompanies); err != nil {
 		return nil, fmt.Errorf("error preparing query WipUserLinkedInCompanies: %w", err)
 	}
-	if q.wipUserToLinkedInCompaniesUpsertStmt, err = db.PrepareContext(ctx, wipUserToLinkedInCompaniesUpsert); err != nil {
-		return nil, fmt.Errorf("error preparing query WipUserToLinkedInCompaniesUpsert: %w", err)
+	if q.wipUserToLinkedInCompaniesAddStmt, err = db.PrepareContext(ctx, wipUserToLinkedInCompaniesAdd); err != nil {
+		return nil, fmt.Errorf("error preparing query WipUserToLinkedInCompaniesAdd: %w", err)
+	}
+	if q.wipUserToLinkedInCompaniesDeleteStmt, err = db.PrepareContext(ctx, wipUserToLinkedInCompaniesDelete); err != nil {
+		return nil, fmt.Errorf("error preparing query WipUserToLinkedInCompaniesDelete: %w", err)
 	}
 	return &q, nil
 }
@@ -320,9 +323,14 @@ func (q *Queries) Close() error {
 			err = fmt.Errorf("error closing wipUserLinkedInCompaniesStmt: %w", cerr)
 		}
 	}
-	if q.wipUserToLinkedInCompaniesUpsertStmt != nil {
-		if cerr := q.wipUserToLinkedInCompaniesUpsertStmt.Close(); cerr != nil {
-			err = fmt.Errorf("error closing wipUserToLinkedInCompaniesUpsertStmt: %w", cerr)
+	if q.wipUserToLinkedInCompaniesAddStmt != nil {
+		if cerr := q.wipUserToLinkedInCompaniesAddStmt.Close(); cerr != nil {
+			err = fmt.Errorf("error closing wipUserToLinkedInCompaniesAddStmt: %w", cerr)
+		}
+	}
+	if q.wipUserToLinkedInCompaniesDeleteStmt != nil {
+		if cerr := q.wipUserToLinkedInCompaniesDeleteStmt.Close(); cerr != nil {
+			err = fmt.Errorf("error closing wipUserToLinkedInCompaniesDeleteStmt: %w", cerr)
 		}
 	}
 	return err
@@ -400,7 +408,8 @@ type Queries struct {
 	wipLinkedInCompanyRequestHistoryExistsVanityNameStmt *sql.Stmt
 	wipLinkedInCompanyRequestHistoryNewStmt              *sql.Stmt
 	wipUserLinkedInCompaniesStmt                         *sql.Stmt
-	wipUserToLinkedInCompaniesUpsertStmt                 *sql.Stmt
+	wipUserToLinkedInCompaniesAddStmt                    *sql.Stmt
+	wipUserToLinkedInCompaniesDeleteStmt                 *sql.Stmt
 }
 
 func (q *Queries) WithTx(tx *sql.Tx) *Queries {
@@ -443,6 +452,7 @@ func (q *Queries) WithTx(tx *sql.Tx) *Queries {
 		wipLinkedInCompanyRequestHistoryExistsVanityNameStmt: q.wipLinkedInCompanyRequestHistoryExistsVanityNameStmt,
 		wipLinkedInCompanyRequestHistoryNewStmt:              q.wipLinkedInCompanyRequestHistoryNewStmt,
 		wipUserLinkedInCompaniesStmt:                         q.wipUserLinkedInCompaniesStmt,
-		wipUserToLinkedInCompaniesUpsertStmt:                 q.wipUserToLinkedInCompaniesUpsertStmt,
+		wipUserToLinkedInCompaniesAddStmt:                    q.wipUserToLinkedInCompaniesAddStmt,
+		wipUserToLinkedInCompaniesDeleteStmt:                 q.wipUserToLinkedInCompaniesDeleteStmt,
 	}
 }

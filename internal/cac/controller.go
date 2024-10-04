@@ -1,9 +1,11 @@
 package cac
 
 import (
-	"fmt"
 	"net/http"
+	"strings"
+	"time"
 
+	"github.com/readytotouch/readytotouch/internal/db/postgres"
 	"github.com/readytotouch/readytotouch/internal/domain"
 	template "github.com/readytotouch/readytotouch/internal/templates/v1"
 
@@ -11,10 +13,12 @@ import (
 )
 
 type Controller struct {
+	userToLinkedInCompanyRepository *postgres.UserToLinkedInCompanyRepository
+	service                         *Service
 }
 
-func NewController() *Controller {
-	return &Controller{}
+func NewController(userToLinkedInCompanyRepository *postgres.UserToLinkedInCompanyRepository, service *Service) *Controller {
+	return &Controller{userToLinkedInCompanyRepository: userToLinkedInCompanyRepository, service: service}
 }
 
 func (c *Controller) Index(ctx *gin.Context) {
@@ -44,23 +48,7 @@ func (c *Controller) Companies(ctx *gin.Context) {
 		return
 	}
 
-	ctx.JSON(http.StatusOK, []domain.LinkedInProfileResponse{
-		{
-			ID:    97909464,
-			Alias: "readytotouch",
-			Name:  "ReadyToTouch",
-		},
-		{
-			ID:    14136494,
-			Alias: "dochq",
-			Name:  "DocHQ",
-		},
-		{
-			ID:    1441,
-			Alias: "google",
-			Name:  "Google",
-		},
-	})
+	c.companies(ctx, authUserID)
 }
 
 func (c *Controller) AddCompany(ctx *gin.Context) {
@@ -86,25 +74,22 @@ func (c *Controller) AddCompany(ctx *gin.Context) {
 		return
 	}
 
-	fmt.Printf("Add company %s\n", body.Alias)
+	var companyVanityName = strings.ToLower(strings.TrimSpace(body.Alias))
+	if companyVanityName == "" {
+		ctx.JSON(http.StatusBadRequest, &domain.ErrorResponse{
+			ErrorMessage: "Alias is required",
+		})
+		return
+	}
 
-	ctx.JSON(http.StatusOK, []domain.LinkedInProfileResponse{
-		{
-			ID:    97909464,
-			Alias: "readytotouch",
-			Name:  "ReadyToTouch",
-		},
-		{
-			ID:    14136494,
-			Alias: "dochq",
-			Name:  "DocHQ",
-		},
-		{
-			ID:    1441,
-			Alias: "google",
-			Name:  "Google",
-		},
-	})
+	if err := c.service.Add(companyVanityName, authUserID, time.Now().UTC()); err != nil {
+		ctx.JSON(http.StatusInternalServerError, &domain.ErrorResponse{
+			ErrorMessage: err.Error(),
+		})
+		return
+	}
+
+	c.companies(ctx, authUserID)
 }
 
 func (c *Controller) DeleteCompany(ctx *gin.Context) {
@@ -129,8 +114,32 @@ func (c *Controller) DeleteCompany(ctx *gin.Context) {
 		})
 		return
 	}
+	if body.ID == 0 {
+		ctx.JSON(http.StatusBadRequest, &domain.ErrorResponse{
+			ErrorMessage: "ID is required",
+		})
+		return
+	}
 
-	fmt.Printf("Delete company %d\n", body.ID)
+	err := c.userToLinkedInCompanyRepository.Delete(ctx, authUserID, body.ID, time.Now().UTC())
+	if err != nil {
+		ctx.JSON(http.StatusInternalServerError, &domain.ErrorResponse{
+			ErrorMessage: err.Error(),
+		})
+		return
+	}
 
 	ctx.JSON(http.StatusOK, nil)
+}
+
+func (c *Controller) companies(ctx *gin.Context, authUserID int64) {
+	companies, err := c.userToLinkedInCompanyRepository.List(ctx, authUserID)
+	if err != nil {
+		ctx.JSON(http.StatusInternalServerError, &domain.ErrorResponse{
+			ErrorMessage: err.Error(),
+		})
+		return
+	}
+
+	ctx.JSON(http.StatusOK, companies)
 }

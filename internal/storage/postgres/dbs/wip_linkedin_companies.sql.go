@@ -141,30 +141,50 @@ func (q *Queries) WipUserLinkedInCompanies(ctx context.Context, userID int64) ([
 	return items, nil
 }
 
-const wipUserToLinkedInCompaniesUpsert = `-- name: WipUserToLinkedInCompaniesUpsert :exec
+const wipUserToLinkedInCompaniesAdd = `-- name: WipUserToLinkedInCompaniesAdd :exec
 INSERT INTO wip_user_to_linkedin_companies AS t (user_id, linkedin_company_id, active, created_at, created_by,
                                                  updated_at, updated_by)
-VALUES ($1, $2, $3, $4, $1,
-        $4, $1)
+VALUES ($1, $2, TRUE, $3, $1,
+        $3, $1)
 ON CONFLICT (user_id, linkedin_company_id) DO UPDATE
-    SET active     = excluded.active,
+    SET active     = TRUE,
         updated_at = excluded.updated_at,
         updated_by = excluded.updated_by
 `
 
-type WipUserToLinkedInCompaniesUpsertParams struct {
+type WipUserToLinkedInCompaniesAddParams struct {
 	CreatedBy         int64
 	LinkedinCompanyID int64
-	Active            bool
 	CreatedAt         time.Time
 }
 
-func (q *Queries) WipUserToLinkedInCompaniesUpsert(ctx context.Context, arg WipUserToLinkedInCompaniesUpsertParams) error {
-	_, err := q.exec(ctx, q.wipUserToLinkedInCompaniesUpsertStmt, wipUserToLinkedInCompaniesUpsert,
-		arg.CreatedBy,
+func (q *Queries) WipUserToLinkedInCompaniesAdd(ctx context.Context, arg WipUserToLinkedInCompaniesAddParams) error {
+	_, err := q.exec(ctx, q.wipUserToLinkedInCompaniesAddStmt, wipUserToLinkedInCompaniesAdd, arg.CreatedBy, arg.LinkedinCompanyID, arg.CreatedAt)
+	return err
+}
+
+const wipUserToLinkedInCompaniesDelete = `-- name: WipUserToLinkedInCompaniesDelete :exec
+UPDATE wip_user_to_linkedin_companies
+SET active     = FALSE,
+    updated_at = $1,
+    updated_by = $2
+WHERE user_id = $3
+  AND linkedin_company_id = $4
+`
+
+type WipUserToLinkedInCompaniesDeleteParams struct {
+	UpdatedAt         time.Time
+	UpdatedBy         int64
+	UserID            int64
+	LinkedinCompanyID int64
+}
+
+func (q *Queries) WipUserToLinkedInCompaniesDelete(ctx context.Context, arg WipUserToLinkedInCompaniesDeleteParams) error {
+	_, err := q.exec(ctx, q.wipUserToLinkedInCompaniesDeleteStmt, wipUserToLinkedInCompaniesDelete,
+		arg.UpdatedAt,
+		arg.UpdatedBy,
+		arg.UserID,
 		arg.LinkedinCompanyID,
-		arg.Active,
-		arg.CreatedAt,
 	)
 	return err
 }

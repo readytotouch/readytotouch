@@ -17,6 +17,14 @@ func NewClient(apiKey string) *Client {
 }
 
 func (c *Client) CompaniesSearch(vanityName string) ([]Company, []byte, error) {
+	if c.apiKey == "" {
+		return nil, nil, fmt.Errorf("api key is required")
+	}
+
+	if vanityName == "" {
+		return nil, nil, fmt.Errorf("vanity name is required")
+	}
+
 	var (
 		path   = "https://api.linkedin.com/rest/organizations"
 		values = url.Values{

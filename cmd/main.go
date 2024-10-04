@@ -21,6 +21,7 @@ import (
 
 	pkgCAC "github.com/readytotouch/readytotouch/internal/cac"
 	pkgJWT "github.com/readytotouch/readytotouch/internal/jwt"
+	pkgLinkedIn "github.com/readytotouch/readytotouch/internal/linkedin"
 	pkgBitbucket "github.com/readytotouch/readytotouch/internal/oauth-providers/bitbucket"
 	pkgGitHub "github.com/readytotouch/readytotouch/internal/oauth-providers/github"
 	pkgGitLab "github.com/readytotouch/readytotouch/internal/oauth-providers/gitlab"
@@ -36,8 +37,9 @@ import (
 
 func main() {
 	var (
-		dsn          = env.Required("POSTGRES_DSN")
-		jwtSecretKey = env.Required("JWT_SECRET_KEY")
+		dsn                = env.Required("POSTGRES_DSN")
+		jwtSecretKey       = env.Required("JWT_SECRET_KEY")
+		linkedinOAuthToken = os.Getenv("LINKEDIN_OAUTH2_TOKEN")
 	)
 
 	pgConnection := postgres.MustConnection(dsn)
@@ -55,6 +57,7 @@ func main() {
 		featureViewStatsRepository      = postgres.NewFeatureViewStatsRepository(database)
 		userFavoriteCompanyRepository   = postgres.NewUserFavoriteCompanyRepository(database)
 		companyViewDailyStatsRepository = postgres.NewCompanyViewDailyStatsRepository(database)
+		userToLinkedInCompanyRepository = postgres.NewUserToLinkedInCompanyRepository(database)
 	)
 
 	var (
@@ -109,7 +112,10 @@ func main() {
 			userFavoriteCompanyRepository,
 			companyViewDailyStatsRepository,
 		)
-		cacController = pkgCAC.NewController()
+		cacController = pkgCAC.NewController(
+			userToLinkedInCompanyRepository,
+			pkgCAC.NewService(pkgLinkedIn.NewClient(linkedinOAuthToken)),
+		)
 	)
 
 	r := gin.New()
