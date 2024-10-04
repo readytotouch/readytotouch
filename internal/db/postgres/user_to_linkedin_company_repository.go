@@ -77,6 +77,19 @@ func (r *UserToLinkedInCompanyRepository) CreateCompany(
 	createdAt time.Time,
 ) error {
 	txErr := r.db.WithTransaction(ctx, func(queries *dbs.Queries) error {
+		if linkedinCompanyID > 0 {
+			err := queries.WipLinkedInCompaniesNew(ctx, dbs.WipLinkedInCompaniesNewParams{
+				ID:         linkedinCompanyID,
+				VanityName: linkedinCompanyVanityName,
+				Name:       linkedinCompanyName,
+				CreatedAt:  createdAt,
+				CreatedBy:  createdBy,
+			})
+			if err != nil {
+				return err
+			}
+		}
+
 		err := queries.WipLinkedInCompanyRequestHistoryNew(ctx, dbs.WipLinkedInCompanyRequestHistoryNewParams{
 			VanityName: linkedinCompanyVanityName,
 			LinkedinCompanyID: sql.NullInt64{
@@ -89,19 +102,6 @@ func (r *UserToLinkedInCompanyRepository) CreateCompany(
 		})
 		if err != nil {
 			return err
-		}
-
-		if linkedinCompanyID > 0 {
-			err := queries.WipLinkedInCompaniesNew(ctx, dbs.WipLinkedInCompaniesNewParams{
-				ID:         linkedinCompanyID,
-				VanityName: linkedinCompanyVanityName,
-				Name:       linkedinCompanyName,
-				CreatedAt:  createdAt,
-				CreatedBy:  createdBy,
-			})
-			if err != nil {
-				return err
-			}
 		}
 
 		return nil
