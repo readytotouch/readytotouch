@@ -249,12 +249,10 @@ function renderCompanies(companies: Array<ResponseCompany>, added: boolean) {
 function prepareConnections(
     currentCompany: ResponseCompany,
     companies: Array<ResponseCompany>,
-    universities: Array<ResponseCompany>,
+    universities: Array<number>,
 ): Connections {
 
     const pastCompanies = [];
-    const universitiesIds = [];
-
     for (const company of companies) {
         if (currentCompany === company) {
             continue;
@@ -263,13 +261,14 @@ function prepareConnections(
         pastCompanies.push(company.id.toString());
     }
 
-    for (const university of universities) {
-        universitiesIds.push(university.id.toString());
-    }
+    // const universitiesIds = [];
+    // for (const university of universities) {
+    //     universitiesIds.push(university.toString());
+    // }
 
     const currentCompanyQueryParam = `["${currentCompany.id}"]`;
 
-    const universitiesQueryParam = JSON.stringify(universitiesIds);
+    const universitiesQueryParam = JSON.stringify(["818029","850102","364340","496320","1198954","1257361","15250306","15251128","15099424","782774","15101979","15101061","80424966","6261241","658198","11443062","15099425","15099711","15101057","15102004","18080249","15143861","15101046","1599158","15101060","15100187","9029417","7991636","15101074","27066401","18144134","15101998","15149751","18691495","15099038"]);
 
     let connections1stURL = new URL('https://www.linkedin.com/search/results/PEOPLE/');
     let connections2ndURL = new URL('https://www.linkedin.com/search/results/PEOPLE/');
