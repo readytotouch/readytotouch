@@ -1,5 +1,5 @@
 import {toEnter} from "./framework/enter";
-import {organizersWelcome} from "./welcome";
+import {welcome} from "./welcome";
 
 let latestKeywords = '';
 let latestLocation = '';
@@ -9,7 +9,7 @@ fetch('/api/v1/companies-and-connections/companies.json')
     .then(function (response) {
         // Unauthorized
         if (response.status === 401) {
-            window.location.href = organizersWelcome();
+            window.location.href = welcome();
 
             return [];
         }
@@ -30,7 +30,7 @@ function addCompany(companyVanityName: string, callback: () => void) {
     }).then(function (response) {
         // Unauthorized
         if (response.status === 401) {
-            window.location.href = organizersWelcome();
+            window.location.href = welcome();
 
             return;
         }

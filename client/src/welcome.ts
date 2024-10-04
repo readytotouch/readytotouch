@@ -5,3 +5,9 @@ export function organizersWelcome() {
 
     return `${pathname.substring(0, index)}/welcome?redirect=${encodeURIComponent(pathname)}`;
 }
+
+export function welcome() {
+    const pathname = window.location.pathname;
+
+    return `/organizers/golang/welcome?redirect=${encodeURIComponent(pathname)}`;
+}
