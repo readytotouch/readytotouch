@@ -42,6 +42,7 @@ func StreamOrganizersCompanies(qw422016 *qt422016.Writer,
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="author" type="text/plain" href="https://readytotouch.com/humans.txt"/>
 
     `)
 	streamfavicon(qw422016)

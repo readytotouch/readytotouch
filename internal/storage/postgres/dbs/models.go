@@ -7,6 +7,7 @@ package dbs
 import (
 	"database/sql"
 	"database/sql/driver"
+	"encoding/json"
 	"fmt"
 	"time"
 )
@@ -200,4 +201,31 @@ type UserSocialProfileChangeHistory struct {
 	Name                string
 	CreatedAt           time.Time
 	DeletedAt           sql.NullTime
+}
+
+type WipLinkedinCompany struct {
+	ID         int64
+	VanityName string
+	Name       string
+	CreatedAt  time.Time
+	CreatedBy  int64
+}
+
+type WipLinkedinCompanyRequestHistory struct {
+	ID                int64
+	VanityName        string
+	LinkedinCompanyID sql.NullInt64
+	ResponsePayload   json.RawMessage
+	CreatedAt         time.Time
+	CreatedBy         int64
+}
+
+type WipUserToLinkedinCompany struct {
+	UserID            int64
+	LinkedinCompanyID int64
+	Active            bool
+	CreatedAt         time.Time
+	CreatedBy         int64
+	UpdatedAt         time.Time
+	UpdatedBy         int64
 }

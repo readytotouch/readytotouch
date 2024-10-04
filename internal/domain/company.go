@@ -40,6 +40,12 @@ type LinkedInProfile struct {
 	Name  string
 }
 
+type LinkedInProfileResponse struct {
+	ID    int64  `json:"id"`
+	Alias string `json:"alias"`
+	Name  string `json:"name"`
+}
+
 type GitHubProfile struct {
 	Login             string
 	GoRepositoryCount int

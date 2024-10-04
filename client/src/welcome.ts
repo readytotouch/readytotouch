@@ -1,4 +1,4 @@
-export function welcome() {
+export function organizersWelcome() {
     const pathname = window.location.pathname;
 
     const index = pathname.lastIndexOf('/');

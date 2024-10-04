@@ -149,6 +149,7 @@ generate-production-environment-file:
 	grep -qF 'BITBUCKET_CLIENT_ID=' .production.env || echo 'BITBUCKET_CLIENT_ID="PY4qXGrqgvCS34DuqT"' >> .production.env
 	grep -qF 'BITBUCKET_CLIENT_SECRET=' .production.env || echo 'BITBUCKET_CLIENT_SECRET=""' >> .production.env
 	grep -qF 'BITBUCKET_REDIRECT_URL=' .production.env || echo 'BITBUCKET_REDIRECT_URL="https://readytotouch.com/auth/bitbucket/callback"' >> .production.env
+	grep -qF 'LINKEDIN_OAUTH2_TOKEN=' .production.env || echo 'LINKEDIN_OAUTH2_TOKEN=""' >> .production.env
 
 	cat .production.env
 

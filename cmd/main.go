@@ -19,7 +19,9 @@ import (
 	"github.com/readytotouch/readytotouch/internal/env"
 	"github.com/readytotouch/readytotouch/internal/server"
 
+	pkgCAC "github.com/readytotouch/readytotouch/internal/cac"
 	pkgJWT "github.com/readytotouch/readytotouch/internal/jwt"
+	pkgLinkedIn "github.com/readytotouch/readytotouch/internal/linkedin"
 	pkgBitbucket "github.com/readytotouch/readytotouch/internal/oauth-providers/bitbucket"
 	pkgGitHub "github.com/readytotouch/readytotouch/internal/oauth-providers/github"
 	pkgGitLab "github.com/readytotouch/readytotouch/internal/oauth-providers/gitlab"
@@ -35,8 +37,9 @@ import (
 
 func main() {
 	var (
-		dsn          = env.Required("POSTGRES_DSN")
-		jwtSecretKey = env.Required("JWT_SECRET_KEY")
+		dsn                = env.Required("POSTGRES_DSN")
+		jwtSecretKey       = env.Required("JWT_SECRET_KEY")
+		linkedinOAuthToken = os.Getenv("LINKEDIN_OAUTH2_TOKEN")
 	)
 
 	pgConnection := postgres.MustConnection(dsn)
@@ -54,6 +57,7 @@ func main() {
 		featureViewStatsRepository      = postgres.NewFeatureViewStatsRepository(database)
 		userFavoriteCompanyRepository   = postgres.NewUserFavoriteCompanyRepository(database)
 		companyViewDailyStatsRepository = postgres.NewCompanyViewDailyStatsRepository(database)
+		userToLinkedInCompanyRepository = postgres.NewUserToLinkedInCompanyRepository(database)
 	)
 
 	var (
@@ -107,6 +111,13 @@ func main() {
 			featureViewStatsRepository,
 			userFavoriteCompanyRepository,
 			companyViewDailyStatsRepository,
+		)
+		cacController = pkgCAC.NewController(
+			userToLinkedInCompanyRepository,
+			pkgCAC.NewService(
+				userToLinkedInCompanyRepository,
+				pkgLinkedIn.NewClient(linkedinOAuthToken),
+			),
 		)
 	)
 
@@ -198,8 +209,13 @@ func main() {
 
 	r.
 		// WIP
-		StaticFile("/wip/companies-and-connections", "./public/chatgpt-design/companies-and-connections.html").
-		StaticFile("/wip/companies-and-connections/ukraine", "./public/chatgpt-design/companies-and-connections.html")
+		// GET("/wip/companies-and-connections", cacController.Countries).
+		GET("/wip/companies-and-connections/ukraine", cacController.Ukraine).
+		GET("/wip/companies-and-connections/czechia", cacController.Czechia).
+		GET("/wip/companies-and-connections/poland", cacController.Poland).
+		GET("/api/v1/companies-and-connections/companies.json", cacController.Companies).
+		POST("/api/v1/companies-and-connections/companies.json", cacController.AddCompany).
+		DELETE("/api/v1/companies-and-connections/companies.json", cacController.DeleteCompany)
 
 	r.
 		StaticFile("/design", "./public/design/online.html").
