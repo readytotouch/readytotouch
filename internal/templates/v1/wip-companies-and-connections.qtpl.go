@@ -170,9 +170,9 @@ func StreamWipCompaniesAndConnections(qw422016 *qt422016.Writer) {
         </div>
     </div>
 
-    <!-- Block 2: Add Company -->
+    <!-- Block 2: Load Company -->
     <div class="block">
-        <h2 id="add-company-header">Add Company</h2>
+        <h2 id="add-company-header">Load Company</h2>
         <div id="add-company-content">
             <label for="company-url">Company URL:</label>
             <input type="text" id="company-url" name="company-url" placeholder="Enter company URL" list="company-url-list">
@@ -182,7 +182,7 @@ func StreamWipCompaniesAndConnections(qw422016 *qt422016.Writer) {
                 <option value="https://www.linkedin.com/company/nvidia/">
             </datalist>
             <br><br>
-            <button id="add-company" disabled>Add</button>
+            <button id="add-company" disabled>Load</button>
         </div>
     </div>
 

@@ -4,12 +4,12 @@ FROM wip_linkedin_companies
 WHERE vanity_name = @vanity_name;
 
 -- name: WipLinkedInCompaniesNew :exec
-INSERT INTO wip_linkedin_companies (id, vanity_name, name, payload, created_at, created_by)
-VALUES (@id, @vanity_name, @name, @payload, @created_at, @created_by);
+INSERT INTO wip_linkedin_companies (id, vanity_name, name, created_at, created_by)
+VALUES (@id, @vanity_name, @name, @created_at, @created_by);
 
 -- name: WipLinkedInCompanyRequestHistoryNew :exec
-INSERT INTO wip_linkedin_company_request_history (vanity_name, linkedin_company_id, created_at, created_by)
-VALUES (@vanity_name, @id, @created_at, @created_by);
+INSERT INTO wip_linkedin_company_request_history (vanity_name, linkedin_company_id, response_payload, created_at, created_by)
+VALUES (@vanity_name, @linkedin_company_id, @response_payload, @created_at, @created_by);
 
 -- name: WipLinkedInCompanyRequestHistoryExistsVanityName :one
 SELECT EXISTS(

@@ -100,7 +100,7 @@ func (c *Controller) AddCompany(ctx *gin.Context) {
 
 	var now = time.Now().UTC()
 
-	linkedinCompanyID, err := c.service.Add(companyVanityName, authUserID, now)
+	linkedinCompanyID, err := c.service.Load(ctx, companyVanityName, authUserID, now)
 	if err != nil {
 		ctx.JSON(http.StatusInternalServerError, &domain.ErrorResponse{
 			ErrorMessage: err.Error(),

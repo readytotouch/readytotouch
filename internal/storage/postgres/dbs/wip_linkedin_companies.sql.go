@@ -26,15 +26,14 @@ func (q *Queries) WipLinkedInCompaniesGetByVanityName(ctx context.Context, vanit
 }
 
 const wipLinkedInCompaniesNew = `-- name: WipLinkedInCompaniesNew :exec
-INSERT INTO wip_linkedin_companies (id, vanity_name, name, payload, created_at, created_by)
-VALUES ($1, $2, $3, $4, $5, $6)
+INSERT INTO wip_linkedin_companies (id, vanity_name, name, created_at, created_by)
+VALUES ($1, $2, $3, $4, $5)
 `
 
 type WipLinkedInCompaniesNewParams struct {
 	ID         int64
 	VanityName string
 	Name       string
-	Payload    json.RawMessage
 	CreatedAt  time.Time
 	CreatedBy  int64
 }
@@ -44,7 +43,6 @@ func (q *Queries) WipLinkedInCompaniesNew(ctx context.Context, arg WipLinkedInCo
 		arg.ID,
 		arg.VanityName,
 		arg.Name,
-		arg.Payload,
 		arg.CreatedAt,
 		arg.CreatedBy,
 	)
@@ -80,21 +78,23 @@ func (q *Queries) WipLinkedInCompanyRequestHistoryExistsVanityName(ctx context.C
 }
 
 const wipLinkedInCompanyRequestHistoryNew = `-- name: WipLinkedInCompanyRequestHistoryNew :exec
-INSERT INTO wip_linkedin_company_request_history (vanity_name, linkedin_company_id, created_at, created_by)
-VALUES ($1, $2, $3, $4)
+INSERT INTO wip_linkedin_company_request_history (vanity_name, linkedin_company_id, response_payload, created_at, created_by)
+VALUES ($1, $2, $3, $4, $5)
 `
 
 type WipLinkedInCompanyRequestHistoryNewParams struct {
-	VanityName string
-	ID         sql.NullInt64
-	CreatedAt  time.Time
-	CreatedBy  int64
+	VanityName        string
+	LinkedinCompanyID sql.NullInt64
+	ResponsePayload   json.RawMessage
+	CreatedAt         time.Time
+	CreatedBy         int64
 }
 
 func (q *Queries) WipLinkedInCompanyRequestHistoryNew(ctx context.Context, arg WipLinkedInCompanyRequestHistoryNewParams) error {
 	_, err := q.exec(ctx, q.wipLinkedInCompanyRequestHistoryNewStmt, wipLinkedInCompanyRequestHistoryNew,
 		arg.VanityName,
-		arg.ID,
+		arg.LinkedinCompanyID,
+		arg.ResponsePayload,
 		arg.CreatedAt,
 		arg.CreatedBy,
 	)

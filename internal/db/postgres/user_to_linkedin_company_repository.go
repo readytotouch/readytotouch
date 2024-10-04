@@ -2,6 +2,7 @@ package postgres
 
 import (
 	"context"
+	"database/sql"
 	"time"
 
 	"github.com/readytotouch/readytotouch/internal/domain"
@@ -48,4 +49,66 @@ func (r *UserToLinkedInCompanyRepository) Delete(ctx context.Context, userID int
 		UserID:            userID,
 		LinkedinCompanyID: linkedinCompanyID,
 	})
+}
+
+func (r *UserToLinkedInCompanyRepository) GetByVanityName(ctx context.Context, name string) (int64, bool, error) {
+	id, err := r.db.Queries().WipLinkedInCompaniesGetByVanityName(ctx, name)
+	if err == sql.ErrNoRows {
+		return 0, false, nil
+	}
+	if err != nil {
+		return 0, false, err
+	}
+
+	return id, true, nil
+}
+
+func (r *UserToLinkedInCompanyRepository) ExistsVanityName(ctx context.Context, name string) (bool, error) {
+	return r.db.Queries().WipLinkedInCompanyRequestHistoryExistsVanityName(ctx, name)
+}
+
+func (r *UserToLinkedInCompanyRepository) CreateCompany(
+	ctx context.Context,
+	linkedinCompanyID int64,
+	linkedinCompanyVanityName string,
+	linkedinCompanyName string,
+	responsePayload []byte,
+	createdBy int64,
+	createdAt time.Time,
+) error {
+	txErr := r.db.WithTransaction(ctx, func(queries *dbs.Queries) error {
+		err := queries.WipLinkedInCompanyRequestHistoryNew(ctx, dbs.WipLinkedInCompanyRequestHistoryNewParams{
+			VanityName: linkedinCompanyVanityName,
+			LinkedinCompanyID: sql.NullInt64{
+				Int64: linkedinCompanyID,
+				Valid: linkedinCompanyID > 0,
+			},
+			ResponsePayload: responsePayload,
+			CreatedAt:       createdAt,
+			CreatedBy:       createdBy,
+		})
+		if err != nil {
+			return err
+		}
+
+		if linkedinCompanyID > 0 {
+			err := queries.WipLinkedInCompaniesNew(ctx, dbs.WipLinkedInCompaniesNewParams{
+				ID:         linkedinCompanyID,
+				VanityName: linkedinCompanyVanityName,
+				Name:       linkedinCompanyName,
+				CreatedAt:  createdAt,
+				CreatedBy:  createdBy,
+			})
+			if err != nil {
+				return err
+			}
+		}
+
+		return nil
+	})
+	if txErr != nil {
+		return txErr
+	}
+
+	return nil
 }

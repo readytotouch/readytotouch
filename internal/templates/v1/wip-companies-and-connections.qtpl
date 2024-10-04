@@ -154,7 +154,7 @@
         </div>
     </div>
 
-    <!-- Block 2: Add Company -->
+    <!-- Block 2: Load Company -->
     <div class="block">
         <h2 id="add-company-header">Add Company</h2>
         <div id="add-company-content">
