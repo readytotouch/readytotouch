@@ -200,6 +200,7 @@ function prepareConnections(
     companies: Array<ResponseCompany>,
     universities: Array<ResponseCompany>,
     keywords: string,
+    location: string = '',
     ): Connections {
 
     const pastCompanies = [];
@@ -218,7 +219,7 @@ function prepareConnections(
     }
 
     const currentCompanyQueryParam = `["${currentCompany.id}"]`;
-    const pastCompaniesQueryParam = JSON.stringify(pastCompanies);
+
     const universitiesQueryParam = JSON.stringify(universitiesIds);
 
     let connections1stURL = new URL('https://www.linkedin.com/search/results/PEOPLE/');
@@ -228,25 +229,40 @@ function prepareConnections(
 
     connections1stURL.searchParams.append('currentCompany', currentCompanyQueryParam);
     connections1stURL.searchParams.append('network', `["F"]`);
-    connections1stURL.searchParams.append('keywords', keywords);
     connections1stURL.searchParams.append('schoolFilter', universitiesQueryParam);
 
     connections2ndURL.searchParams.append('currentCompany', currentCompanyQueryParam);
     connections2ndURL.searchParams.append('network', `["S"]`);
-    connections2ndURL.searchParams.append('keywords', keywords);
     connections2ndURL.searchParams.append('schoolFilter', universitiesQueryParam);
 
     connections1stXURL.searchParams.append('currentCompany', currentCompanyQueryParam);
     connections1stXURL.searchParams.append('network', `["F"]`);
-    connections1stXURL.searchParams.append('keywords', keywords);
-    connections1stXURL.searchParams.append('pastCompany', pastCompaniesQueryParam);
     connections1stXURL.searchParams.append('schoolFilter', universitiesQueryParam);
 
     connections2ndXURL.searchParams.append('currentCompany', currentCompanyQueryParam);
     connections2ndXURL.searchParams.append('network', `["S"]`);
-    connections2ndXURL.searchParams.append('keywords', keywords);
-    connections2ndXURL.searchParams.append('pastCompany', pastCompaniesQueryParam);
     connections2ndXURL.searchParams.append('schoolFilter', universitiesQueryParam);
+
+    if (keywords !== '') {
+        connections1stURL.searchParams.append('keywords', keywords);
+        connections2ndURL.searchParams.append('keywords', keywords);
+        connections1stXURL.searchParams.append('keywords', keywords);
+        connections2ndXURL.searchParams.append('keywords', keywords);
+    }
+
+    if (location !== '') {
+        const queryParam = `["${location}"]`;
+        connections1stURL.searchParams.append('geoUrn', queryParam);
+        connections2ndURL.searchParams.append('geoUrn', queryParam);
+        connections1stXURL.searchParams.append('geoUrn', queryParam);
+        connections2ndXURL.searchParams.append('geoUrn', queryParam);
+    }
+
+    if (pastCompanies.length > 0) {
+        const queryParam = JSON.stringify(pastCompanies);
+        connections1stXURL.searchParams.append('pastCompany', queryParam);
+        connections2ndXURL.searchParams.append('pastCompany', queryParam);
+    }
 
     return new Connections(
         connections1stURL.toString(),
