@@ -2,9 +2,9 @@ package postgres
 
 import (
 	"context"
-	"github.com/readytotouch/readytotouch/internal/domain"
 	"time"
 
+	"github.com/readytotouch/readytotouch/internal/domain"
 	"github.com/readytotouch/readytotouch/internal/storage/postgres/dbs"
 )
 
@@ -14,14 +14,6 @@ type UserToLinkedInCompanyRepository struct {
 
 func NewUserToLinkedInCompanyRepository(db *Database) *UserToLinkedInCompanyRepository {
 	return &UserToLinkedInCompanyRepository{db: db}
-}
-
-func (r *UserToLinkedInCompanyRepository) Upsert(ctx context.Context, userID int64, linkedinCompanyID int64, active bool, createdAt time.Time) error {
-	return r.db.Queries().WipUserToLinkedInCompaniesAdd(ctx, dbs.WipUserToLinkedInCompaniesAddParams{
-		CreatedBy:         userID,
-		LinkedinCompanyID: linkedinCompanyID,
-		CreatedAt:         createdAt,
-	})
 }
 
 func (r *UserToLinkedInCompanyRepository) List(ctx context.Context, userID int64) ([]domain.LinkedInProfileResponse, error) {

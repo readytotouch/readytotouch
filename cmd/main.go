@@ -114,7 +114,10 @@ func main() {
 		)
 		cacController = pkgCAC.NewController(
 			userToLinkedInCompanyRepository,
-			pkgCAC.NewService(pkgLinkedIn.NewClient(linkedinOAuthToken)),
+			pkgCAC.NewService(
+				userToLinkedInCompanyRepository,
+				pkgLinkedIn.NewClient(linkedinOAuthToken),
+			),
 		)
 	)
 
