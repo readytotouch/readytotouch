@@ -6,8 +6,12 @@ export function organizersWelcome() {
     return `${pathname.substring(0, index)}/welcome?redirect=${encodeURIComponent(pathname)}`;
 }
 
-export function welcome() {
-    const pathname = window.location.pathname;
+export function welcome(companyUrl: string = '') {
+    let redirect = window.location.pathname;
 
-    return `/organizers/golang/welcome?redirect=${encodeURIComponent(pathname)}`;
+    if (companyUrl) {
+        redirect = window.location.pathname + "?company-url=" + encodeURIComponent(companyUrl)
+    }
+
+    return `/organizers/golang/welcome?redirect=${encodeURIComponent(redirect)}`;
 }

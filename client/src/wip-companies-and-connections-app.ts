@@ -21,7 +21,7 @@ fetch('/api/v1/companies-and-connections/companies.json')
     renderCompanies(companies, false);
 }).catch(console.error);
 
-function addCompany(companyVanityName: string, callback: () => void) {
+function addCompany(companyUrl: string, companyVanityName: string, callback: () => void) {
     fetch(`/api/v1/companies-and-connections/companies.json`, {
         method: "POST",
         body: JSON.stringify({
@@ -30,7 +30,7 @@ function addCompany(companyVanityName: string, callback: () => void) {
     }).then(function (response) {
         // Unauthorized
         if (response.status === 401) {
-            window.location.href = welcome();
+            window.location.href = welcome(companyUrl);
 
             return;
         }
@@ -142,7 +142,7 @@ function submitCompany() {
         return;
     }
 
-    addCompany(vanityName, function () {
+    addCompany(companyUrl, vanityName, function () {
         // Clear input field and disable Add button
         $companyUrlInput.value = '';
         $addCompanyButton.setAttribute('disabled', 'disabled');
@@ -277,7 +277,6 @@ function prepareConnections(
 
     connections1stURL.searchParams.append('currentCompany', currentCompanyQueryParam);
     connections1stURL.searchParams.append('network', `["F"]`);
-    connections1stURL.searchParams.append('schoolFilter', universitiesQueryParam);
 
     connections2ndURL.searchParams.append('currentCompany', currentCompanyQueryParam);
     connections2ndURL.searchParams.append('network', `["S"]`);
@@ -285,7 +284,6 @@ function prepareConnections(
 
     connections1stXURL.searchParams.append('currentCompany', currentCompanyQueryParam);
     connections1stXURL.searchParams.append('network', `["F"]`);
-    connections1stXURL.searchParams.append('schoolFilter', universitiesQueryParam);
 
     connections2ndXURL.searchParams.append('currentCompany', currentCompanyQueryParam);
     connections2ndXURL.searchParams.append('network', `["S"]`);
@@ -348,4 +346,12 @@ function parseVanityName(url) {
     }
 
     return parsedUrl.pathname.substring(prefix.length, end);
+}
+
+{
+    const url = new URL(window.location.href);
+    const companyUrl = url.searchParams.get('company-url');
+    if (companyUrl) {
+        $companyUrlInput.value = companyUrl;
+    }
 }
