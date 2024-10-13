@@ -8368,8 +8368,8 @@ func Companies() []domain.CompanyProfile {
 		{
 			ID:   0,  // system
 			Type: "", // system
-			Name: "https://www.datadoghq.com/",
-			URL:  "Datadog",
+			Name: "Datadog",
+			URL:  "https://www.datadoghq.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:    1066442,
 				Alias: "datadog",
