@@ -59,4 +59,8 @@ var (
 		Alias: "social-media",
 		Name:  "Social Media",
 	}
+	IndustryEntertainment = Industry{
+		Alias: "entertainment",
+		Name:  "Entertainment",
+	}
 )

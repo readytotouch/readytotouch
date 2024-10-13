@@ -121,7 +121,9 @@ func (c *Controller) Companies(ctx *gin.Context) {
 			continue
 		}
 
-		company.Type = organizers.ToCompanyType(company.LinkedInProfile.Alias)
+		if company.Type == "" {
+			company.Type = organizers.ToCompanyType(company.LinkedInProfile.Alias)
+		}
 
 		// nil slice mean skip company for the language
 		if company.Vacancies[organizerFeature.Organizer.Language] == nil {
@@ -205,7 +207,9 @@ func (c *Controller) Company(ctx *gin.Context) {
 		return
 	}
 
-	company.Type = organizers.ToCompanyType(company.LinkedInProfile.Alias)
+	if company.Type == "" {
+		company.Type = organizers.ToCompanyType(company.LinkedInProfile.Alias)
+	}
 
 	organizerFeature, ok := c.organizerFeature(featurePath)
 	if !ok {
