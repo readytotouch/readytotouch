@@ -715,6 +715,46 @@ func Companies() []domain.CompanyProfile {
 			},
 		},
 
+		// Tech | Vercel
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "Vercel",
+			URL:  "https://vercel.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    16181286,
+				Alias: "vercel",
+				Name:  "Vercel",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "vercel",
+				GoRepositoryCount: 6,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Vercel-EI_IE6510369.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Vercel-Reviews-E6510369.htm",
+			},
+			OttaProfileSlug:   "Vercel",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/4048326475/",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "Static hosting service",
+			Industries: []domain.Industry{
+				domain.IndustryDevOps,
+			},
+			HasEmployeesFromCountries: []domain.Country{},
+		},
+
 		// Tech | Docker
 		{
 			ID:   0,  // system
@@ -8669,40 +8709,6 @@ func Companies() []domain.CompanyProfile {
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Czechia,
 			},
-		},
-		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "",
-			URL:  "",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:    0,
-				Alias: "",
-				Name:  "",
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:             "",
-				GoRepositoryCount: 0,
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
-			},
-			OttaProfileSlug:   "",
-			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go:      []string{},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
-			ShortDescription:          "",
-			Industries:                []domain.Industry{},
-			HasEmployeesFromCountries: []domain.Country{},
 		},
 
 		// Template
