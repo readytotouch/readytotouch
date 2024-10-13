@@ -8633,26 +8633,28 @@ func Companies() []domain.CompanyProfile {
 		{
 			ID:   0,  // system
 			Type: "", // system
-			Name: "",
-			URL:  "",
+			Name: "Ebury",
+			URL:  "https://ebury.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    0,
-				Alias: "",
-				Name:  "",
+				ID:    963919,
+				Alias: "eburyfintech",
+				Name:  "Ebury",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Ebury-Partners-EI_IE823195.11,25.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Ebury-Partners-Reviews-E823195.htm",
 			},
-			OttaProfileSlug:   "",
+			OttaProfileSlug:   "Ebury",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{
-				domain.Go:      []string{},
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/3990418832/",
+				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
 				domain.Scala:   nil,
@@ -8660,9 +8662,13 @@ func Companies() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription:          "",
-			Industries:                []domain.Industry{},
-			HasEmployeesFromCountries: []domain.Country{},
+			ShortDescription: "",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Czechia,
+			},
 		},
 		{
 			ID:   0,  // system
