@@ -1271,6 +1271,7 @@ func Companies() []domain.CompanyProfile {
 			GoMainLanguage:    true,
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/4049491677/",
 					"https://app.otta.com/jobs/bwHc4GXE",
 				},
 				domain.Rust:    nil,
@@ -8708,6 +8709,44 @@ func Companies() []domain.CompanyProfile {
 			},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Czechia,
+			},
+		},
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "Talon.One",
+			URL:  "https://talon.one",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    10393857,
+				Alias: "talon.one",
+				Name:  "Talon.One",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "talon-one",
+				GoRepositoryCount: 18,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Talon-One-EI_IE2176357.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Talon-One-Reviews-E2176357.htm",
+			},
+			OttaProfileSlug:   "Talon-One",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/3945724263/",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "Loyalty and promotion engine for enterprises",
+			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
 			},
 		},
 
