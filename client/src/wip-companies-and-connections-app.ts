@@ -353,5 +353,6 @@ function parseVanityName(url) {
     const companyUrl = url.searchParams.get('company-url');
     if (companyUrl) {
         $companyUrlInput.value = companyUrl;
+        $addCompanyButton.setAttribute('disabled', 'disabled');
     }
 }

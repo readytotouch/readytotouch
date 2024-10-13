@@ -16,6 +16,7 @@ const all = [
     // new Alias("cloud-computing", "Cloud Computing"),
     new Alias("big-data", "Big Data"),
     new Alias("social-media", "Social Media"),
+    new Alias("entertainment", "Entertainment"),
 ];
 
 export function industries(aliases: Array<string>): Array<Alias> {
