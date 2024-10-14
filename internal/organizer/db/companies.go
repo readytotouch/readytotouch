@@ -10114,6 +10114,47 @@ func Companies() []domain.CompanyProfile {
 				domain.Ukraine,
 			},
 		},
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "Electronic Arts",
+			URL:  "https://www.ea.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    1449,
+				Alias: "electronic-arts",
+				Name:  "Electronic Arts",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "electronicarts",
+				GoRepositoryCount: 3,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Electronic-Arts-EI_IE1628.11,26.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Electronic-Arts-Reviews-E1628.htm",
+			},
+			OttaProfileSlug:   "Electronic-Arts",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/4043032750/",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "",
+			Industries: []domain.Industry{
+				domain.IndustryEntertainment,
+			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
+		},
 
 		// Template
 		//{
