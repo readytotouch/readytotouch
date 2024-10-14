@@ -154,6 +154,49 @@ func Companies() []domain.CompanyProfile {
 			},
 		},
 
+		// BigTech | Figma
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "Figma",
+			URL:  "https://www.figma.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    3650502,
+				Alias: "figma",
+				Name:  "Figma",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "figma",
+				GoRepositoryCount: 14, // Rust 4
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Figma-EI_IE1537286.11,16.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Figma-Reviews-E1537286.htm",
+			},
+			OttaProfileSlug:   "Figma",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://app.welcometothejungle.com/jobs/YXcMzOW8",
+				},
+				domain.Rust: []string{
+					"https://app.welcometothejungle.com/jobs/YXcMzOW8",
+				},
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "Design platform for product teams",
+			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
+		},
+
 		// BigTech | Microsoft
 		{
 			ID:   0,  // system
@@ -753,6 +796,92 @@ func Companies() []domain.CompanyProfile {
 				domain.IndustryDevOps,
 			},
 			HasEmployeesFromCountries: []domain.Country{},
+		},
+
+		// Tech | Fastly
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "Fastly",
+			URL:  "https://www.fastly.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    2602522,
+				Alias: "fastly",
+				Name:  "Fastly",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "fastly",
+				GoRepositoryCount: 35,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Fastly-EI_IE814479.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Fastly-Reviews-E814479.htm",
+			},
+			OttaProfileSlug:   "Fastly",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://app.welcometothejungle.com/jobs/mZtAqCtB",
+				},
+				domain.Rust: []string{
+					"https://app.welcometothejungle.com/jobs/mZtAqCtB",
+				},
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "Edge cloud platform",
+			Industries: []domain.Industry{
+				domain.IndustryDevOps,
+			},
+			HasEmployeesFromCountries: []domain.Country{},
+		},
+
+		// Tech | Dropbox
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "Dropbox",
+			URL:  "https://www.dropbox.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    167251,
+				Alias: "dropbox",
+				Name:  "Dropbox",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "dropbox",
+				GoRepositoryCount: 22, // Rust 16
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Dropbox-EI_IE415350.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Dropbox-Reviews-E415350.htm",
+			},
+			OttaProfileSlug:   "Dropbox",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://app.welcometothejungle.com/jobs/WKQvjdTx",
+				},
+				domain.Rust: []string{
+					"https://app.welcometothejungle.com/jobs/WKQvjdTx",
+				},
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "File hosting service",
+			Industries: []domain.Industry{
+				domain.IndustryDevOps,
+			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+			},
 		},
 
 		// Tech | Docker
@@ -9370,46 +9499,6 @@ func Companies() []domain.CompanyProfile {
 		{
 			ID:   0,  // system
 			Type: "", // system
-			Name: "Fastly",
-			URL:  "https://www.fastly.com/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:    2602522,
-				Alias: "fastly",
-				Name:  "Fastly",
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:             "fastly",
-				GoRepositoryCount: 35,
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Fastly-EI_IE814479.11,17.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/Fastly-Reviews-E814479.htm",
-			},
-			OttaProfileSlug:   "Fastly",
-			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://app.welcometothejungle.com/jobs/mZtAqCtB",
-				},
-				domain.Rust: []string{
-					"https://app.welcometothejungle.com/jobs/mZtAqCtB",
-				},
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
-			ShortDescription: "Edge cloud platform",
-			Industries: []domain.Industry{
-				domain.IndustryDevOps,
-			},
-			HasEmployeesFromCountries: []domain.Country{},
-		},
-		{
-			ID:   0,  // system
-			Type: "", // system
 			Name: "Enova",
 			URL:  "https://www.enova.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -9562,32 +9651,68 @@ func Companies() []domain.CompanyProfile {
 		{
 			ID:   0,  // system
 			Type: "", // system
-			Name: "",
-			URL:  "",
+			Name: "Coalition",
+			URL:  "https://www.coalitioninc.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    0,
-				Alias: "",
-				Name:  "",
+				ID:    11193112,
+				Alias: "coalitioninc",
+				Name:  "Coalition",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Coalition-EI_IE1717118.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Coalition-Reviews-E1717118.htm",
 			},
-			OttaProfileSlug:   "",
+			OttaProfileSlug:   "Coalition",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
-					"",
+					"https://app.welcometothejungle.com/jobs/7o-foHYQ",
 				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
 				domain.Scala:   nil,
 				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription:          "Cyber insurance and security for businesses",
+			Industries:                []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{},
+		},
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "Mechanical Orchard",
+			URL:  "https://www.mechanical-orchard.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    89798793,
+				Alias: "mechanical-orchard",
+				Name:  "Mechanical Orchard",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "mechanical-orchard",
+				GoRepositoryCount: 0, // Elixir 9
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+			},
+			OttaProfileSlug:   "Mechanical-Orchard",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go:    nil,
+				domain.Rust:  nil,
+				domain.Zig:   nil,
+				domain.Scala: nil,
+				domain.Elixir: []string{
+					"https://app.welcometothejungle.com/jobs/h2lbAL5a",
+				},
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
@@ -9598,27 +9723,28 @@ func Companies() []domain.CompanyProfile {
 		{
 			ID:   0,  // system
 			Type: "", // system
-			Name: "",
-			URL:  "",
+			Name: "Moveworks",
+			URL:  "https://www.moveworks.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    0,
-				Alias: "",
-				Name:  "",
+				ID:    18311685,
+				Alias: "moveworksai",
+				Name:  "Moveworks",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "",
+				Login:             "moveworks",
 				GoRepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Moveworks-EI_IE1730936.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Moveworks-Reviews-E1730936.htm",
 			},
-			OttaProfileSlug:   "",
+			OttaProfileSlug:   "Moveworks",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
-					"",
+					"https://www.linkedin.com/jobs/view/3923093175/",
+					"https://app.welcometothejungle.com/jobs/X1IQMOCK",
 				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
@@ -9627,34 +9753,70 @@ func Companies() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription:          "",
+			ShortDescription:          "Enterprise-built conversational AI platform",
+			Industries:                []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{},
+		},
+		{
+			ID:   0,                         // system
+			Type: domain.CompanyTypeStartup, // system
+			Name: "Emitwise",
+			URL:  "https://emitwise.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    20511470,
+				Alias: "emitwise",
+				Name:  "Emitwise",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "emitwise",
+				GoRepositoryCount: 0,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Emitwise-EI_IE3915102.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Emitwise-Reviews-E3915102.htm",
+			},
+			OttaProfileSlug:   "Emitwise",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://app.welcometothejungle.com/jobs/w8X1TqCu",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription:          "Carbon accounting platform",
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 		{
 			ID:   0,  // system
 			Type: "", // system
-			Name: "",
-			URL:  "",
+			Name: "Upvest",
+			URL:  "https://upvest.co/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    0,
-				Alias: "",
-				Name:  "",
+				ID:    18388245,
+				Alias: "upvest",
+				Name:  "Upvest",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "",
-				GoRepositoryCount: 0,
+				Login:             "upvestco",
+				GoRepositoryCount: 3,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Upvest-EI_IE2948356.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Upvest-Reviews-E2948356.htm",
 			},
-			OttaProfileSlug:   "",
+			OttaProfileSlug:   "Upvest",
 			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
+			GoMainLanguage:    true, // https://app.welcometothejungle.com/jobs/JTNWvpsj Work with cutting-edge technologies (Go is the primary language) without a legacy codebase
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
-					"",
+					"https://app.welcometothejungle.com/jobs/JTNWvpsj",
 				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
@@ -9663,34 +9825,77 @@ func Companies() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription:          "",
-			Industries:                []domain.Industry{},
+			ShortDescription: "The Investment API",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+			},
+		},
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "CoreWeave",
+			URL:  "https://www.coreweave.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    36121341,
+				Alias: "coreweave",
+				Name:  "CoreWeave",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "coreweave",
+				GoRepositoryCount: 44,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-CoreWeave-EI_IE5711823.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/CoreWeave-Reviews-E5711823.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/4029510008/",
+					"https://app.welcometothejungle.com/jobs/-02MRxuv",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "Specialized cloud provider",
+			Industries: []domain.Industry{
+				domain.IndustryDevOps,
+			},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 		{
 			ID:   0,  // system
 			Type: "", // system
-			Name: "",
-			URL:  "",
+			Name: "Neo4j",
+			URL:  "https://www.neo4j.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    0,
-				Alias: "",
-				Name:  "",
+				ID:    828370,
+				Alias: "neo4j",
+				Name:  "Neo4j",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "",
-				GoRepositoryCount: 0,
+				Login:             "neo4j",
+				GoRepositoryCount: 3,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Neo4j-EI_IE665767.11,16.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Neo4j-Reviews-E665767.htm",
 			},
-			OttaProfileSlug:   "",
+			OttaProfileSlug:   "Neo4j",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
-					"",
+					"https://app.welcometothejungle.com/jobs/xOagXoE8",
 				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
@@ -9699,34 +9904,200 @@ func Companies() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription:          "",
-			Industries:                []domain.Industry{},
+			ShortDescription: "Graph-based data analysis",
+			Industries: []domain.Industry{
+				domain.IndustryDevOps,
+			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
+		},
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "Jack Henry",
+			URL:  "https://www.jackhenry.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    6970,
+				Alias: "jack-henry",
+				Name:  "Jack Henry",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "jkhy",
+				GoRepositoryCount: 0,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Jack-Henry-and-Associates-EI_IE1543.11,36.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Jack-Henry-and-Associates-Reviews-E1543.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/4044914356/",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "Financial technology company that strengthens connections between people and their financial institutions",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
+		},
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "GoCardless",
+			URL:  "https://gocardless.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    2808012,
+				Alias: "gocardless",
+				Name:  "GoCardless",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "gocardless",
+				GoRepositoryCount: 24,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-GoCardless-EI_IE1001543.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/GoCardless-Reviews-E1001543.htm",
+			},
+			OttaProfileSlug:   "GoCardless",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://app.welcometothejungle.com/jobs/xxfBLoSU",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
+		},
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "Zalando",
+			URL:  "https://jobs.zalando.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    698916,
+				Alias: "zalando",
+				Name:  "Zalando",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "zalando",
+				GoRepositoryCount: 5,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Zalando-EI_IE613421.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Zalando-Reviews-E613421.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/3959001476/",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "Online fashion platform",
+			Industries: []domain.Industry{
+				domain.IndustryECommerce,
+			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
+		},
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "FreeWheel",
+			URL:  "https://www.freewheel.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    458871,
+				Alias: "freewheel",
+				Name:  "FreeWheel",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "freewheel",
+				GoRepositoryCount: 0,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-FreeWheel-EI_IE313920.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/FreeWheel-Reviews-E313920.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/4008715409/",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "Platform makes TV and video advertising work",
+			Industries: []domain.Industry{
+				domain.IndustryAdTech,
+			},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 		{
 			ID:   0,  // system
 			Type: "", // system
-			Name: "",
-			URL:  "",
+			Name: "GeoComply",
+			URL:  "https://www.geocomply.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    0,
-				Alias: "",
-				Name:  "",
+				ID:    2457172,
+				Alias: "geocomply",
+				Name:  "GeoComply",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "",
+				Login:             "GeoComply",
 				GoRepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-GeoComply-EI_IE2333177.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/GeoComply-Reviews-E2333177.htm",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
-					"",
+					"https://www.linkedin.com/jobs/view/4026401818/",
 				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
@@ -9735,333 +10106,13 @@ func Companies() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription:          "",
-			Industries:                []domain.Industry{},
-			HasEmployeesFromCountries: []domain.Country{},
-		},
-		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "",
-			URL:  "",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:    0,
-				Alias: "",
-				Name:  "",
+			ShortDescription: "Fraud prevention and cybersecurity solutions",
+			Industries: []domain.Industry{
+				domain.IndustryCyberSecurity,
 			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:             "",
-				GoRepositoryCount: 0,
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
 			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
-			},
-			OttaProfileSlug:   "",
-			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
-			ShortDescription:          "",
-			Industries:                []domain.Industry{},
-			HasEmployeesFromCountries: []domain.Country{},
-		},
-		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "",
-			URL:  "",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:    0,
-				Alias: "",
-				Name:  "",
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:             "",
-				GoRepositoryCount: 0,
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
-			},
-			OttaProfileSlug:   "",
-			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
-			ShortDescription:          "",
-			Industries:                []domain.Industry{},
-			HasEmployeesFromCountries: []domain.Country{},
-		},
-		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "",
-			URL:  "",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:    0,
-				Alias: "",
-				Name:  "",
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:             "",
-				GoRepositoryCount: 0,
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
-			},
-			OttaProfileSlug:   "",
-			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
-			ShortDescription:          "",
-			Industries:                []domain.Industry{},
-			HasEmployeesFromCountries: []domain.Country{},
-		},
-		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "",
-			URL:  "",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:    0,
-				Alias: "",
-				Name:  "",
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:             "",
-				GoRepositoryCount: 0,
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
-			},
-			OttaProfileSlug:   "",
-			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
-			ShortDescription:          "",
-			Industries:                []domain.Industry{},
-			HasEmployeesFromCountries: []domain.Country{},
-		},
-		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "",
-			URL:  "",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:    0,
-				Alias: "",
-				Name:  "",
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:             "",
-				GoRepositoryCount: 0,
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
-			},
-			OttaProfileSlug:   "",
-			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
-			ShortDescription:          "",
-			Industries:                []domain.Industry{},
-			HasEmployeesFromCountries: []domain.Country{},
-		},
-		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "",
-			URL:  "",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:    0,
-				Alias: "",
-				Name:  "",
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:             "",
-				GoRepositoryCount: 0,
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
-			},
-			OttaProfileSlug:   "",
-			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
-			ShortDescription:          "",
-			Industries:                []domain.Industry{},
-			HasEmployeesFromCountries: []domain.Country{},
-		},
-		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "",
-			URL:  "",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:    0,
-				Alias: "",
-				Name:  "",
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:             "",
-				GoRepositoryCount: 0,
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
-			},
-			OttaProfileSlug:   "",
-			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
-			ShortDescription:          "",
-			Industries:                []domain.Industry{},
-			HasEmployeesFromCountries: []domain.Country{},
-		},
-		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "",
-			URL:  "",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:    0,
-				Alias: "",
-				Name:  "",
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:             "",
-				GoRepositoryCount: 0,
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
-			},
-			OttaProfileSlug:   "",
-			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
-			ShortDescription:          "",
-			Industries:                []domain.Industry{},
-			HasEmployeesFromCountries: []domain.Country{},
-		},
-		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "",
-			URL:  "",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:    0,
-				Alias: "",
-				Name:  "",
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:             "",
-				GoRepositoryCount: 0,
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
-			},
-			OttaProfileSlug:   "",
-			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
-			ShortDescription:          "",
-			Industries:                []domain.Industry{},
-			HasEmployeesFromCountries: []domain.Country{},
 		},
 
 		// Template
