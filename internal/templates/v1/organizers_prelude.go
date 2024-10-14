@@ -26,6 +26,7 @@ var (
 		domain.IndustryBigData,
 		domain.IndustrySocialMedia,
 		domain.IndustryEntertainment,
+		domain.IndustryPropTech,
 	}
 )
 
