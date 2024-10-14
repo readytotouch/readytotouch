@@ -9178,16 +9178,56 @@ func Companies() []domain.CompanyProfile {
 		{
 			ID:   0,  // system
 			Type: "", // system
-			Name: "",
-			URL:  "",
+			Name: "Starling Bank",
+			URL:  "https://www.starlingbank.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    0,
-				Alias: "",
-				Name:  "",
+				ID:    9180896,
+				Alias: "starlingbank",
+				Name:  "Starling Bank",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "",
+				Login:             "starlingbank",
 				GoRepositoryCount: 0,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Starling-Bank-EI_IE1337967.11,24.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Starling-Bank-Reviews-E1337967.htm",
+			},
+			OttaProfileSlug:   "Starling-Bank",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://app.welcometothejungle.com/jobs/lfnyRzC0",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "Mobile-first bank",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+			},
+		},
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "https://spice.ai/",
+			URL:  "Spice AI",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    74148478,
+				Alias: "spice-ai",
+				Name:  "Spice AI",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "spiceai",
+				GoRepositoryCount: 6,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -9198,43 +9238,47 @@ func Companies() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
-					"",
+					"https://app.welcometothejungle.com/jobs/WlVadVlu",
+					"https://app.welcometothejungle.com/jobs/emdLdWlp",
 				},
-				domain.Rust:    nil,
+				domain.Rust: []string{
+					"https://app.welcometothejungle.com/jobs/WlVadVlu",
+					"https://app.welcometothejungle.com/jobs/emdLdWlp",
+				},
 				domain.Zig:     nil,
 				domain.Scala:   nil,
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription:          "",
+			ShortDescription:          "Blocks for data and time-series AI applications",
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 		{
 			ID:   0,  // system
 			Type: "", // system
-			Name: "",
-			URL:  "",
+			Name: "Algolia",
+			URL:  "https://www.algolia.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    0,
-				Alias: "",
-				Name:  "",
+				ID:    2728700,
+				Alias: "algolia",
+				Name:  "Algolia",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "",
-				GoRepositoryCount: 0,
+				Login:             "algolia",
+				GoRepositoryCount: 14,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Algolia-EI_IE998983.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Algolia-Reviews-E998983.htm",
 			},
-			OttaProfileSlug:   "",
+			OttaProfileSlug:   "Algolia",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
-					"",
+					"https://app.welcometothejungle.com/jobs/tsBqRgc_",
 				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
@@ -9243,34 +9287,36 @@ func Companies() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription:          "",
-			Industries:                []domain.Industry{},
-			HasEmployeesFromCountries: []domain.Country{},
+			ShortDescription: "End-to-end AI Search solution",
+			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Czechia,
+			},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "",
-			URL:  "",
+			ID:   0,                         // system
+			Type: domain.CompanyTypeStartup, // system
+			Name: "Observe",
+			URL:  "https://www.observeinc.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    0,
-				Alias: "",
-				Name:  "",
+				ID:    18796376,
+				Alias: "observe-inc",
+				Name:  "Observe",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "",
-				GoRepositoryCount: 0,
+				Login:             "observeinc",
+				GoRepositoryCount: 21,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Observe-CA-EI_IE4567528.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Observe-CA-Reviews-E4567528.htm",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
-					"",
+					"https://app.welcometothejungle.com/jobs/bjD5ZhEh",
 				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
@@ -9279,44 +9325,10 @@ func Companies() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription:          "",
-			Industries:                []domain.Industry{},
-			HasEmployeesFromCountries: []domain.Country{},
-		},
-		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "",
-			URL:  "",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:    0,
-				Alias: "",
-				Name:  "",
+			ShortDescription: "SaaS Observability means fewer incidents",
+			Industries: []domain.Industry{
+				domain.IndustryDevOps,
 			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:             "",
-				GoRepositoryCount: 0,
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
-			},
-			OttaProfileSlug:   "",
-			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
-			ShortDescription:          "",
-			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 		{
