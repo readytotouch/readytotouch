@@ -8,6 +8,7 @@ var (
 		"dochq":                              2,   // DocHQ
 		"google":                             3,   // Google
 		"mozilla-corporation":                4,   // Mozilla
+		"figma":                              224, // Figma
 		"microsoft":                          5,   // Microsoft
 		"amazon":                             181, // Amazon
 		"ibm":                                6,   // IBM
@@ -22,6 +23,8 @@ var (
 		"grammarly":                          15,  // Grammarly
 		"netlify":                            16,  // Netlify
 		"vercel":                             198, // Vercel
+		"fastly":                             225, // Fastly
+		"dropbox":                            226, // Dropbox
 		"docker":                             17,  // Docker, Inc
 		"grafana-labs":                       18,  // Grafana Labs
 		"hashicorp":                          19,  // HashiCorp
@@ -227,6 +230,39 @@ var (
 		"evercharge":                         221, // EverCharge
 		"eburyfintech":                       222, // Ebury
 		"talon.one":                          223, // Talon.One
+		"newhomesmate":                       227, // NewHomesMate
+		"density-inc-":                       228, // Density
+		"surfly":                             229, // Surfly
+		"cross-river-bank":                   230, // Cross River
+		"abnormalsecurity":                   231, // Abnormal Security
+		"scope3data":                         232, // Scope3
+		"apollo-graphql":                     233, // Apollo GraphQL
+		"paessler-gmbh":                      234, // Paessler
+		"hasura":                             235, // Hasura
+		"airahome":                           236, // Aira
+		"ddn-storage":                        237, // DDN
+		"starlingbank":                       238, // Starling Bank
+		"spice-ai":                           239, // Spice AI
+		"algolia":                            240, // Algolia
+		"observe-inc":                        241, // Observe
+		"chalkai":                            242, // Chalk
+		"enova-international":                243, // Enova
+		"justwatch":                          244, // JustWatch
+		"sourcegraph":                        245, // Sourcegraph
+		"plaid-":                             246, // Plaid
+		"coalitioninc":                       247, // Coalition
+		"mechanical-orchard":                 248, // Mechanical Orchard
+		"moveworksai":                        249, // Moveworks
+		"emitwise":                           250, // Emitwise
+		"upvest":                             251, // Upvest
+		"coreweave":                          252, // CoreWeave
+		"neo4j":                              253, // Neo4j
+		"jack-henry":                         254, // Jack Henry
+		"gocardless":                         255, // GoCardless
+		"zalando":                            256, // Zalando
+		"freewheel":                          257, // FreeWheel
+		"geocomply":                          258, // GeoComply
+		"electronic-arts":                    259, // Electronic Arts
 
 	}
 )
