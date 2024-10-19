@@ -7631,11 +7631,18 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: []string{
+					"https://app.welcometothejungle.com/jobs/UzSGGV5V",
 					"https://app.otta.com/jobs/8o2_A2QN",
 				},
 			},
 			ShortDescription: "FinTech company",
-			Industries:       []domain.Industry{},
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
 		},
 
 		{
