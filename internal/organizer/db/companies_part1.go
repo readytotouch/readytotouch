@@ -154,6 +154,46 @@ func companiesPart1() []domain.CompanyProfile {
 			},
 		},
 
+		// BigTech | Discord
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "Discord",
+			URL:  "https://discord.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    3765675,
+				Alias: "discord",
+				Name:  "Discord",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "discord",
+				GoRepositoryCount: 10, // Rust 35
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Discord-EI_IE910317.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Discord-Reviews-E910317.htm",
+			},
+			OttaProfileSlug:   "Discord",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: nil,
+				domain.Rust: []string{
+					"https://app.welcometothejungle.com/jobs/q5H-48wM",
+				},
+				domain.Zig:   nil,
+				domain.Scala: nil,
+				domain.Elixir: []string{
+					"https://app.welcometothejungle.com/jobs/HxEBR9jp",
+				},
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription:          "Chat",
+			Industries:                []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{},
+		},
+
 		// BigTech | Figma
 		{
 			ID:   0,  // system
@@ -314,6 +354,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/4029871105/",
 					"https://www.linkedin.com/jobs/view/3890489682/",
 				},
 				domain.Rust:    nil,
@@ -1461,6 +1502,46 @@ func companiesPart1() []domain.CompanyProfile {
 			},
 		},
 
+		// Tech | SUSE
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "SUSE",
+			URL:  "https://www.suse.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    1455,
+				Alias: "suse",
+				Name:  "SUSE",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "suse",
+				GoRepositoryCount: 69,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-SUSE-EI_IE466462.11,15.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/SUSE-Reviews-E466462.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/4034618699/",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "Secure enterprise open source solutions",
+			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Czechia,
+			},
+		},
+
 		// Tech | Kong
 		{
 			ID:   0,  // system
@@ -1628,6 +1709,50 @@ func companiesPart1() []domain.CompanyProfile {
 		},
 
 		// FinTech
+		// FinTech | Stripe
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "Stripe",
+			URL:  "https://stripe.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    2135371,
+				Alias: "stripe",
+				Name:  "Stripe",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "stripe",
+				GoRepositoryCount: 12,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Stripe-EI_IE671932.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Stripe-Reviews-E671932.htm",
+			},
+			OttaProfileSlug:   "Stripe",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/4032599929/",
+					"https://app.welcometothejungle.com/jobs/pnIwTyGO",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "A financial infrastructure platform for businesses",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
+		},
+
 		// FinTech | Wise
 		{
 			ID:   0,  // system
@@ -2551,6 +2676,49 @@ func companiesPart1() []domain.CompanyProfile {
 			},
 		},
 
+		// Famous Spotify
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "Spotify",
+			URL:  "https://www.lifeatspotify.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    207470,
+				Alias: "spotify",
+				Name:  "Spotify",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "spotify",
+				GoRepositoryCount: 12,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/spotify",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Spotify-Reviews-E408251.htm",
+			},
+			OttaProfileSlug:   "Spotify",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://app.welcometothejungle.com/jobs/BAoL6B1_",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "Music streaming service",
+			Industries: []domain.Industry{
+				domain.IndustryEntertainment,
+			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
+		},
+
 		// Famous DoorDash
 		{
 			ID:   0,  // system
@@ -2881,6 +3049,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/3989947743/",
 					"https://www.linkedin.com/jobs/view/3873637399/",
 				},
 				domain.Rust:    nil,
@@ -4992,8 +5161,10 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "",
-			Industries:       []domain.Industry{},
+			ShortDescription: "Fintech company developing software for the trading and investment industry",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
 			},
@@ -7821,19 +7992,20 @@ func companiesPart1() []domain.CompanyProfile {
 				Name:  "Rialtic",
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "",
+				Login:             "Rialtic",
 				GoRepositoryCount: 0,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Rialtic-EI_IE4497416.11,18.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Rialtic-Reviews-E4497416.htm",
 			},
-			OttaProfileSlug:   "",
+			OttaProfileSlug:   "Rialtic",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
 					"https://www.linkedin.com/jobs/view/4040651981/",
+					"https://app.welcometothejungle.com/jobs/plR62gLg",
 				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
@@ -7842,7 +8014,7 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "",
+			ShortDescription: "Administrative and financial technology for healthcare",
 			Industries: []domain.Industry{
 				domain.IndustryHealthTech,
 			},
@@ -9711,6 +9883,7 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Zig:   nil,
 				domain.Scala: nil,
 				domain.Elixir: []string{
+					"https://app.welcometothejungle.com/jobs/zLruxuAk",
 					"https://app.welcometothejungle.com/jobs/h2lbAL5a",
 				},
 				domain.Clojure: nil,

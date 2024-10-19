@@ -38,6 +38,7 @@ type LinkedInProfile struct {
 	IDs   []int
 	Alias string
 	Name  string
+	// @TODO Verified bool
 }
 
 type LinkedInProfileResponse struct {
@@ -49,11 +50,13 @@ type LinkedInProfileResponse struct {
 type GitHubProfile struct {
 	Login             string
 	GoRepositoryCount int
+	// @TODO Verified bool
 }
 
 type GlassdoorProfile struct {
 	OverviewURL string
 	ReviewsURL  string
+	// @TODO Verified bool // Engaged Employer
 }
 
 type CompanyProfile struct {
