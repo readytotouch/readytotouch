@@ -8,6 +8,7 @@ var (
 		"dochq":                              2,   // DocHQ
 		"google":                             3,   // Google
 		"mozilla-corporation":                4,   // Mozilla
+		"discord":                            260, // Discord
 		"figma":                              224, // Figma
 		"microsoft":                          5,   // Microsoft
 		"amazon":                             181, // Amazon
@@ -39,10 +40,12 @@ var (
 		"redisinc":                           183, // Redis
 		"digitalocean":                       27,  // DigitalOcean
 		"canonical":                          28,  // Canonical
+		"suse":                               261, // SUSE
 		"konghq":                             29,  // Kong Inc.
 		"exasol-ag":                          30,  // Exasol
 		"palantir-technologies":              31,  // Palantir Technologies
 		"bufbuild":                           178, // Buf
+		"stripe":                             262, // Stripe
 		"wiseaccount":                        32,  // Wise
 		"american-express":                   33,  // American Express
 		"mastercard":                         34,  // Mastercard
@@ -65,6 +68,7 @@ var (
 		"siemens":                            50,  // Siemens
 		"ericsson":                           192, // Ericsson
 		"soundcloud":                         51,  // SoundCloud
+		"spotify":                            263, // Spotify
 		"doordash":                           52,  // DoorDash
 		"just-eat-takeaway-com":              193, // Just Eat Takeaway.com
 		"sixt":                               53,  // SIXT
@@ -263,6 +267,54 @@ var (
 		"freewheel":                          257, // FreeWheel
 		"geocomply":                          258, // GeoComply
 		"electronic-arts":                    259, // Electronic Arts
+		"trustingsocial":                     264, // Trusting Social
+		"mcafee":                             265, // McAfee
+		"hadrianspace":                       266, // Hadrian
+		"scaleway":                           267, // Scaleway
+		"demandbase":                         268, // Demandbase
+		"overwolf.com":                       269, // Overwolf
+		"bitfount":                           270, // Bitfount
+		"hinge-app":                          271, // Hinge
+		"fireworkhq":                         272, // Firework
+		"breakroom":                          273, // Breakroom
+		"getansa":                            274, // Ansa
+		"1global":                            275, // 1GLOBAL
+		"eco-movement-charge-point-data":     276, // Eco-Movement
+		"network-optix":                      277, // Network Optix
+		"cinemo":                             278, // Cinemo
+		"readdle":                            279, // Readdle
+		"ipsos":                              280, // Ipsos
+		"bedrock-streaming":                  281, // Bedrock Streaming
+		"whaleboneio":                        282, // Whalebone
+		"onesignal":                          283, // OneSignal
+		"metabase":                           284, // Metabase
+		"anjuna-security":                    285, // Anjuna Security
+		"aquasecteam":                        286, // Aqua Security
+		"verve-ad-solutions":                 287, // Verve
+		"wargaming-net":                      288, // Wargaming
+		"napier":                             289, // Napier AI
+		"kaseya":                             290, // Kaseya
+		"omio":                               291, // Omio
+		"liebherr":                           292, // Liebherr Group
+		"fiserv":                             293, // Fiserv
+		"gettaxi":                            294, // Gett
+		"stairwell-inc":                      295, // Stairwell
+		"solo.io":                            296, // Solo.io
+		"splash-damage":                      297, // Splash Damage
+		"dittolive":                          298, // Ditto
+		"pinecone-io":                        299, // Pinecone
+		"beyond-identity-inc":                300, // Beyond Identity
+		"nightfall-ai":                       301, // Nightfall AI
+		"cyberhaven":                         302, // Cyberhaven
+		"fonoa":                              303, // Fonoa
+		"payrails":                           304, // Payrails
+		"go-teleport":                        305, // Teleport
+		"bigblue-co":                         306, // Bigblue
+		"taxfix":                             307, // Taxfix
+		"clerkinc":                           308, // Clerk.com
+		"clearscore":                         309, // ClearScore
+		"oneschema":                          310, // OneSchema
+		"strongdm":                           311, // StrongDM
 
 	}
 )
