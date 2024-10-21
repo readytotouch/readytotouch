@@ -1560,9 +1560,10 @@ func companiesPart1() []domain.CompanyProfile {
 			Name: "SUSE",
 			URL:  "https://www.suse.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    1455,
-				Alias: "suse",
-				Name:  "SUSE",
+				ID:       1455,
+				Alias:    "suse",
+				Name:     "SUSE",
+				Verified: true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "suse",
@@ -1571,6 +1572,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-SUSE-EI_IE466462.11,15.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/SUSE-Reviews-E466462.htm",
+				Verified:    true,
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -4359,9 +4361,10 @@ func companiesPart1() []domain.CompanyProfile {
 			Name: "Dojo",
 			URL:  "https://dojo.careers/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    42391390,
-				Alias: "dojo-tech",
-				Name:  "Dojo",
+				ID:       42391390,
+				Alias:    "dojo-tech",
+				Name:     "Dojo",
+				Verified: true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -4371,6 +4374,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Dojo-EI_IE687810.11,15.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Dojo-Reviews-E687810.htm",
+				Verified:    true,
 			},
 			OttaProfileSlug:   "Dojo",
 			YouTubeChannelURL: "",
@@ -4824,17 +4828,20 @@ func companiesPart1() []domain.CompanyProfile {
 			Name: "SumUp",
 			URL:  "https://www.sumup.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    2619512,
-				Alias: "sumup",
-				Name:  "SumUp",
+				ID:       2619512,
+				Alias:    "sumup",
+				Name:     "SumUp",
+				Verified: true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "sumup",
 				GoRepositoryCount: 11,
+				Verified:          true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-SumUp-EI_IE673829.11,16.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/SumUp-Reviews-E673829.htm",
+				Verified:    true,
 			},
 			OttaProfileSlug:   "sumup",
 			YouTubeChannelURL: "https://www.youtube.com/@SumUpGlobal",
@@ -4843,15 +4850,19 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Go: []string{
 					"https://www.linkedin.com/jobs/view/3848461191/",
 				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
+				domain.Rust:  nil,
+				domain.Zig:   nil,
+				domain.Scala: nil,
+				domain.Elixir: []string{
+					"https://www.linkedin.com/jobs/view/4014335109/", // Senior Backend Engineer (Elixir & Go)
+				},
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "",
-			Industries:       []domain.Industry{},
+			ShortDescription: "Payments company",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
 				domain.Czechia,
@@ -5401,28 +5412,32 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Cybus
 		{
-			ID:   0,  // system
-			Type: "", // system
+			ID:   0,                         // system
+			Type: domain.CompanyTypeStartup, // system
 			Name: "Cybus",
 			URL:  "https://www.cybus.io/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    7798667,
-				Alias: "cybus",
-				Name:  "Cybus",
+				ID:       7798667,
+				Alias:    "cybus",
+				Name:     "Cybus",
+				Verified: false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "cybusio",
 				GoRepositoryCount: 1,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Cybus-EI_IE2928520.11,16.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Cybus-Reviews-E2928520.htm",
+				Verified:    false,
 			},
 			OttaProfileSlug:   "Cybus",
 			YouTubeChannelURL: "https://www.youtube.com/@cybus_io",
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/4054430926/", // Highly proficient in GO and proficient in Node.js for backend development
 					"https://www.linkedin.com/jobs/view/3905530455/",
 				},
 				domain.Rust:    nil,
@@ -5432,8 +5447,9 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "",
-			Industries:       []domain.Industry{},
+			ShortDescription:          "Data architecture for the industrial IoT world",
+			Industries:                []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{},
 		},
 
 		// Some | Flink
@@ -8366,10 +8382,11 @@ func companiesPart1() []domain.CompanyProfile {
 			Name: "Statista",
 			URL:  "https://www.statista.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    0,
-				IDs:   []int{1042846, 42875927},
-				Alias: "statista",
-				Name:  "Statista",
+				ID:       0,
+				IDs:      []int{1042846, 42875927},
+				Alias:    "statista",
+				Name:     "Statista",
+				Verified: true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -8379,6 +8396,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Statista-EI_IE800158.11,19.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Statista-Reviews-E800158.htm",
+				Verified:    true,
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -9315,9 +9333,10 @@ func companiesPart1() []domain.CompanyProfile {
 			Name: "Cross River",
 			URL:  "https://www.crossriver.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    967395,
-				Alias: "cross-river-bank",
-				Name:  "Cross River",
+				ID:       967395,
+				Alias:    "cross-river-bank",
+				Name:     "Cross River",
+				Verified: true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -9327,6 +9346,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Cross-River-Bank-EI_IE1177112.11,27.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Cross-River-Bank-Reviews-E1177112.htm",
+				Verified:    true,
 			},
 			OttaProfileSlug:   "Cross-River",
 			YouTubeChannelURL: "",
