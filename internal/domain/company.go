@@ -34,11 +34,11 @@ const (
 type Vacancies = [7][]string
 
 type LinkedInProfile struct {
-	ID    int
-	IDs   []int
-	Alias string
-	Name  string
-	// @TODO Verified bool
+	ID       int
+	IDs      []int
+	Alias    string
+	Name     string
+	Verified bool
 }
 
 type LinkedInProfileResponse struct {
@@ -50,13 +50,13 @@ type LinkedInProfileResponse struct {
 type GitHubProfile struct {
 	Login             string
 	GoRepositoryCount int
-	// @TODO Verified bool
+	Verified          bool
 }
 
 type GlassdoorProfile struct {
 	OverviewURL string
 	ReviewsURL  string
-	// @TODO Verified bool // Engaged Employer
+	Verified    bool
 }
 
 type CompanyProfile struct {

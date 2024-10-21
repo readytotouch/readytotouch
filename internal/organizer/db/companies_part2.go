@@ -17,6 +17,7 @@ func companiesPart2() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-TrustingSocial-EI_IE741535.11,25.htm",
@@ -96,6 +97,7 @@ func companiesPart2() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Hadrian-EI_IE5364733.11,18.htm",
@@ -246,6 +248,7 @@ func companiesPart2() []domain.CompanyProfile {
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
 				ReviewsURL:  "",
+				Verified:    false,
 			},
 			OttaProfileSlug:   "Bitfount",
 			YouTubeChannelURL: "",
@@ -316,6 +319,7 @@ func companiesPart2() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Firework-EI_IE2300706.11,19.htm",
@@ -391,10 +395,12 @@ func companiesPart2() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
 				ReviewsURL:  "",
+				Verified:    false,
 			},
 			OttaProfileSlug:   "Ansa",
 			YouTubeChannelURL: "",
@@ -427,6 +433,7 @@ func companiesPart2() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-1GLOBAL-EI_IE9805631.11,18.htm",
@@ -466,6 +473,7 @@ func companiesPart2() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Eco-Movement-EI_IE5353422.11,23.htm",
@@ -540,6 +548,7 @@ func companiesPart2() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Cinemo-EI_IE2189711.11,17.htm",
@@ -617,6 +626,7 @@ func companiesPart2() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Ipsos-EI_IE13063.11,16.htm",
@@ -888,6 +898,7 @@ func companiesPart2() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Verve-EI_IE4432646.11,16.htm",
@@ -1087,6 +1098,7 @@ func companiesPart2() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Liebherr-Group-EI_IE787369.11,25.htm",
@@ -1207,6 +1219,7 @@ func companiesPart2() []domain.CompanyProfile {
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
 				ReviewsURL:  "",
+				Verified:    false,
 			},
 			OttaProfileSlug:   "Stairwell",
 			YouTubeChannelURL: "",
@@ -1326,6 +1339,7 @@ func companiesPart2() []domain.CompanyProfile {
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
 				ReviewsURL:  "",
+				Verified:    false,
 			},
 			OttaProfileSlug:   "ditto",
 			YouTubeChannelURL: "",
@@ -1559,10 +1573,12 @@ func companiesPart2() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
 				ReviewsURL:  "",
+				Verified:    false,
 			},
 			OttaProfileSlug:   "Payrails",
 			YouTubeChannelURL: "",
@@ -1641,6 +1657,7 @@ func companiesPart2() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Bigblue-EI_IE3379658.11,18.htm",
@@ -1721,6 +1738,7 @@ func companiesPart2() []domain.CompanyProfile {
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
 				ReviewsURL:  "",
+				Verified:    false,
 			},
 			OttaProfileSlug:   "Clerk",
 			YouTubeChannelURL: "",
@@ -1855,6 +1873,582 @@ func companiesPart2() []domain.CompanyProfile {
 			},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "JMA Wireless",
+			URL:  "https://jmawireless.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    3105986,
+				Alias: "jmawireless",
+				Name:  "JMA Wireless",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "",
+				GoRepositoryCount: 0,
+				Verified:          false,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-JMA-Wireless-EI_IE875877.11,23.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/JMA-Wireless-Reviews-E875877.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/4048251309/",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription:          "JMA Wireless designs and delivers cutting-edge wireless technology",
+			Industries:                []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{},
+		},
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "ON2IT Cybersecurity",
+			URL:  "https://on2it.net/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       489607,
+				Alias:    "on2it-cybersecurity",
+				Name:     "ON2IT Cybersecurity",
+				Verified: true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "on2itsecurity",
+				GoRepositoryCount: 6,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-ON2IT-EI_IE1075463.11,16.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/ON2IT-Reviews-E1075463.htm",
+				Verified:    true,
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/3513136315/", // "We mainly use PHP and Go"
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "CyberSecurity service provider",
+			Industries: []domain.Industry{
+				domain.IndustryCyberSecurity,
+			},
+			HasEmployeesFromCountries: []domain.Country{},
+		},
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "Cycloid",
+			URL:  "https://www.cycloid.io/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    10071522,
+				Alias: "cycloid",
+				Name:  "Cycloid - Sustainable Platform Engineering",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "cycloidio",
+				GoRepositoryCount: 40,
+				Verified:          false,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Cycloid-io-EI_IE1562422.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Cycloid-io-Reviews-E1562422.htm",
+				Verified:    false,
+			},
+			OttaProfileSlug:   "Cycloid",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/4048269201/",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "Hybrid cloud DevOps platform",
+			Industries: []domain.Industry{
+				domain.IndustryDevOps,
+			},
+			HasEmployeesFromCountries: []domain.Country{},
+		},
+		{
+			ID:   0,                         // system
+			Type: domain.CompanyTypeStartup, // system
+			Name: "Cybus",
+			URL:  "https://www.cybus.io/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       7798667,
+				Alias:    "cybus",
+				Name:     "Cybus",
+				Verified: false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "cybusio",
+				GoRepositoryCount: 1,
+				Verified:          false,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Cybus-EI_IE2928520.11,16.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Cybus-Reviews-E2928520.htm",
+				Verified:    false,
+			},
+			OttaProfileSlug:   "Cybus",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/4054430926/", // Highly proficient in GO and proficient in Node.js for backend development
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription:          "Data architecture for the industrial IoT world",
+			Industries:                []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{},
+		},
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "Circuit",
+			URL:  "https://circuit.ai/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       36014538,
+				Alias:    "circuitknowledge",
+				Name:     "Circuit",
+				Verified: false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "",
+				GoRepositoryCount: 0,
+				Verified:          false,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Circuit-TX-EI_IE10004565.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Circuit-TX-Reviews-E10004565.htm",
+				Verified:    true,
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/3984171089/", // 5+ years of experience with Go
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "AI-powered platform transforms information into actionable knowledge",
+			Industries: []domain.Industry{
+				domain.IndustryEdTech,
+			},
+			HasEmployeesFromCountries: []domain.Country{},
+		},
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "Aylo",
+			URL:  "https://www.aylo.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       98389423,
+				Alias:    "ayloservices",
+				Name:     "Aylo",
+				Verified: false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "MindGeekOSS",
+				GoRepositoryCount: 1,
+				Verified:          false,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Aylo-EI_IE9049055.11,15.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Aylo-Reviews-E9049055.htm",
+				Verified:    true,
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/3968183921/", // Familiarity of Golang
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "Adult content platforms",
+			Industries: []domain.Industry{
+				domain.IndustryEntertainment,
+			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
+		},
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "FactSet",
+			URL:  "https://www.factset.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       163755,
+				Alias:    "factset",
+				Name:     "FactSet",
+				Verified: true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "factset",
+				GoRepositoryCount: 1,
+				Verified:          true,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-FactSet-EI_IE6066.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/FactSet-Reviews-E6066.htm",
+				Verified:    true,
+			},
+			OttaProfileSlug:   "Factset",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/4018413250/", // Proficiency with Go and protobuf for minimum of 1+ years
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "Providing instant access to financial data and analytics that investors use to make decisions",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
+		},
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "Voodoo",
+			URL:  "https://voodoo.io/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       5353630,
+				Alias:    "voodoo.io",
+				Name:     "Voodoo",
+				Verified: true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "VoodooTeam",
+				GoRepositoryCount: 3,
+				Verified:          false,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Voodoo-EI_IE1889746.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Voodoo-Reviews-E1889746.htm",
+				Verified:    true,
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/3966903286/", // Our Stack Backend: Go, Node.js
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "Company that creates mobile games and apps",
+			Industries: []domain.Industry{
+				domain.IndustryGameDev,
+			},
+			HasEmployeesFromCountries: []domain.Country{},
+		},
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "home24",
+			URL:  "https://www.home24.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       2653180,
+				Alias:    "home24",
+				Name:     "home24",
+				Verified: true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "home24",
+				GoRepositoryCount: 1,
+				Verified:          false,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-home24-SE-EI_IE3166011.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/home24-SE-Reviews-E3166011.htm",
+				Verified:    false,
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/3872092645/", // Our tech stack includes Golang
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "Home & living e-commerce platform",
+			Industries: []domain.Industry{
+				domain.IndustryECommerce,
+			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+			},
+		},
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "Australian Broadcasting Corporation",
+			URL:  "https://www.abc.net.au/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       2242,
+				Alias:    "australian-broadcasting-corporation",
+				Name:     "Australian Broadcasting Corporation",
+				Verified: false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "abcnews",
+				GoRepositoryCount: 0,
+				Verified:          false,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Australian-Broadcasting-EI_IE416033.11,34.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Australian-Broadcasting-Reviews-E416033.htm",
+				Verified:    false,
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/4050919710/", // Outstanding enterprise-level experience with Golang and extensive background in server-side development
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "Independent public broadcaster",
+			Industries:       []domain.Industry{
+				// Media
+			},
+			HasEmployeesFromCountries: []domain.Country{},
+		},
+		{
+			ID:   0,                         // system
+			Type: domain.CompanyTypeStartup, // system
+			Name: "Nitro",
+			URL:  "https://www.gonitro.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       76281,
+				Alias:    "go-nitro",
+				Name:     "Nitro Software, Inc.",
+				Verified: true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "nitro",
+				GoRepositoryCount: 21, // Scala 5
+				Verified:          true,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Nitro-EI_IE402100.11,16.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Nitro-Reviews-E402100.htm",
+				Verified:    true,
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go:   nil,
+				domain.Rust: nil,
+				domain.Zig:  nil,
+				domain.Scala: []string{
+					"https://www.linkedin.com/jobs/view/4042171556/", // We are seeking a backend Software Engineer with skills in Scala and Java
+				},
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "Document productivity SaaS company",
+			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Czechia,
+			},
+		},
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "Appodeal",
+			URL:  "https://appodeal.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       19139082,
+				Alias:    "appodeal",
+				Name:     "Appodeal",
+				Verified: true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "appodeal",
+				GoRepositoryCount: 2, // Scala 2
+				Verified:          true,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Appodeal-EI_IE4606703.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Appodeal-Reviews-E4606703.htm",
+				Verified:    false,
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go:   nil,
+				domain.Rust: nil,
+				domain.Zig:  nil,
+				domain.Scala: []string{
+					"https://www.linkedin.com/jobs/view/4051754807/", // Scala Developer
+				},
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "",
+			Industries: []domain.Industry{
+				domain.IndustryAdTech,
+			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+			},
+		},
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "Tala",
+			URL:  "https://tala.co/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       2647513,
+				Alias:    "talamobile",
+				Name:     "Tala",
+				Verified: true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "inventure",
+				GoRepositoryCount: 2, // Scala 2
+				Verified:          true,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Tala-EI_IE1264165.11,15.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Tala-Reviews-E1264165.htm",
+				Verified:    true,
+			},
+			OttaProfileSlug:   "Tala",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go:   nil,
+				domain.Rust: nil,
+				domain.Zig:  nil,
+				domain.Scala: []string{
+					"https://www.linkedin.com/jobs/view/4048262224/", // Senior Scala Developer
+				},
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "Financial platform",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
+			HasEmployeesFromCountries: []domain.Country{},
+		},
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "MacroHealth",
+			URL:  "https://macrohealth.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       19012089,
+				Alias:    "macrohealth",
+				Name:     "MacroHealth",
+				Verified: true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "",
+				GoRepositoryCount: 0,
+				Verified:          false,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-MacroHealth-EI_IE3277977.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/MacroHealth-Reviews-E3277977.htm",
+				Verified:    false,
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go:   nil,
+				domain.Rust: nil,
+				domain.Zig:  nil,
+				domain.Scala: []string{
+					"https://www.linkedin.com/jobs/view/4051275869/", // Maintain and extend applications using Scala and Java
+				},
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "Health Market-as-a-Service platform that enables Payers, Providers, and Health Market Partners",
+			Industries:       []domain.Industry{
+				// HealthTech, eCommerce?
+			},
+			HasEmployeesFromCountries: []domain.Country{},
+		},
 
 		// Template
 		//{
@@ -1863,23 +2457,26 @@ func companiesPart2() []domain.CompanyProfile {
 		//	Name: "",
 		//	URL:  "",
 		//	LinkedInProfile: domain.LinkedInProfile{
-		//		ID:    0,
-		//		Alias: "",
-		//		Name:  "",
+		//		ID:       0,
+		//		Alias:    "",
+		//		Name:     "",
+		//		Verified: false,
 		//	},
 		//	GitHubProfile: domain.GitHubProfile{
 		//		Login:             "",
 		//		GoRepositoryCount: 0,
+		//		Verified:          false,
 		//	},
 		//	GlassdoorProfile: domain.GlassdoorProfile{
 		//		OverviewURL: "",
 		//		ReviewsURL:  "",
+		//		Verified:    false,
 		//	},
 		//	OttaProfileSlug:   "",
 		//	YouTubeChannelURL: "",
 		//	GoMainLanguage:    false,
 		//	Vacancies: domain.Vacancies{
-		//		domain.Go:      []string{},
+		//		domain.Go:      nil,
 		//		domain.Rust:    nil,
 		//		domain.Zig:     nil,
 		//		domain.Scala:   nil,
