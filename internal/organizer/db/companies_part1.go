@@ -48,6 +48,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
 				ReviewsURL:  "",
+				Verified:    false,
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -337,13 +338,15 @@ func companiesPart1() []domain.CompanyProfile {
 			Name: "IBM",
 			URL:  "https://www.ibm.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    1009,
-				Alias: "ibm",
-				Name:  "IBM",
+				ID:       1009,
+				Alias:    "ibm",
+				Name:     "IBM",
+				Verified: true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "IBM",
 				GoRepositoryCount: 199,
+				Verified:          true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-IBM-EI_IE354.11,14.htm",
@@ -357,9 +360,11 @@ func companiesPart1() []domain.CompanyProfile {
 					"https://www.linkedin.com/jobs/view/4029871105/",
 					"https://www.linkedin.com/jobs/view/3890489682/",
 				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
+				domain.Rust: nil,
+				domain.Zig:  nil,
+				domain.Scala: []string{
+					"https://www.linkedin.com/jobs/view/4044607588/", // Scala Software Engineer // Lead the development and implementation of front-end and back-end applications using Scala
+				},
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
@@ -368,6 +373,50 @@ func companiesPart1() []domain.CompanyProfile {
 			Industries:       []domain.Industry{
 				// Too many industries
 			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
+		},
+
+		// BigTech | Oracle
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "Oracle",
+			URL:  "https://www.oracle.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       1028,
+				Alias:    "oracle",
+				Name:     "Oracle",
+				Verified: true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "oracle",
+				GoRepositoryCount: 31,
+				Verified:          false,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Oracle-EI_IE1737.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Oracle-Reviews-E1737.htm",
+				Verified:    true,
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go:   nil,
+				domain.Rust: nil,
+				domain.Zig:  nil,
+				domain.Scala: []string{
+					"https://www.linkedin.com/jobs/view/4034901984/",
+				},
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "American multinational technology company",
+			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
 				domain.Czechia,
@@ -693,6 +742,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
 				ReviewsURL:  "",
+				Verified:    false,
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -1354,6 +1404,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
 				ReviewsURL:  "",
+				Verified:    false,
 			},
 			OttaProfileSlug:   "FerretDB",
 			YouTubeChannelURL: "",
@@ -1509,9 +1560,10 @@ func companiesPart1() []domain.CompanyProfile {
 			Name: "SUSE",
 			URL:  "https://www.suse.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    1455,
-				Alias: "suse",
-				Name:  "SUSE",
+				ID:       1455,
+				Alias:    "suse",
+				Name:     "SUSE",
+				Verified: true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "suse",
@@ -1520,6 +1572,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-SUSE-EI_IE466462.11,15.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/SUSE-Reviews-E466462.htm",
+				Verified:    true,
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -1687,6 +1740,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
 				ReviewsURL:  "",
+				Verified:    false,
 			},
 			OttaProfileSlug:   "Buf",
 			YouTubeChannelURL: "",
@@ -2842,6 +2896,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Motorola-Solutions-EI_IE427189.11,29.htm",
@@ -2927,10 +2982,12 @@ func companiesPart1() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
 				ReviewsURL:  "",
+				Verified:    false,
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "https://www.youtube.com/@salesforge",
@@ -3159,6 +3216,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
 				ReviewsURL:  "",
+				Verified:    false,
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -3837,6 +3895,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
 				ReviewsURL:  "",
+				Verified:    false,
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -3995,6 +4054,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
 				ReviewsURL:  "",
+				Verified:    false,
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -4033,6 +4093,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
 				ReviewsURL:  "",
+				Verified:    false,
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -4066,6 +4127,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Applied-Systems-EI_IE8534.11,26.htm",
@@ -4186,6 +4248,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-OpenWeb-EI_IE1675932.11,18.htm",
@@ -4271,6 +4334,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
 				ReviewsURL:  "",
+				Verified:    false,
 			},
 			OttaProfileSlug:   "Xata",
 			YouTubeChannelURL: "https://www.youtube.com/@xataio",
@@ -4297,17 +4361,20 @@ func companiesPart1() []domain.CompanyProfile {
 			Name: "Dojo",
 			URL:  "https://dojo.careers/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    42391390,
-				Alias: "dojo-tech",
-				Name:  "Dojo",
+				ID:       42391390,
+				Alias:    "dojo-tech",
+				Name:     "Dojo",
+				Verified: true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Dojo-EI_IE687810.11,15.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Dojo-Reviews-E687810.htm",
+				Verified:    true,
 			},
 			OttaProfileSlug:   "Dojo",
 			YouTubeChannelURL: "",
@@ -4380,6 +4447,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-AB-Tasty-EI_IE1309242.11,19.htm",
@@ -4458,6 +4526,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Nine-Entertainment-EI_IE229827.11,29.htm",
@@ -4535,6 +4604,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-ABC-Fitness-EI_IE28305.11,22.htm",
@@ -4686,10 +4756,12 @@ func companiesPart1() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
 				ReviewsURL:  "",
+				Verified:    false,
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -4756,17 +4828,20 @@ func companiesPart1() []domain.CompanyProfile {
 			Name: "SumUp",
 			URL:  "https://www.sumup.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    2619512,
-				Alias: "sumup",
-				Name:  "SumUp",
+				ID:       2619512,
+				Alias:    "sumup",
+				Name:     "SumUp",
+				Verified: true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "sumup",
 				GoRepositoryCount: 11,
+				Verified:          true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-SumUp-EI_IE673829.11,16.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/SumUp-Reviews-E673829.htm",
+				Verified:    true,
 			},
 			OttaProfileSlug:   "sumup",
 			YouTubeChannelURL: "https://www.youtube.com/@SumUpGlobal",
@@ -4775,15 +4850,19 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Go: []string{
 					"https://www.linkedin.com/jobs/view/3848461191/",
 				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
+				domain.Rust:  nil,
+				domain.Zig:   nil,
+				domain.Scala: nil,
+				domain.Elixir: []string{
+					"https://www.linkedin.com/jobs/view/4014335109/", // Senior Backend Engineer (Elixir & Go)
+				},
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "",
-			Industries:       []domain.Industry{},
+			ShortDescription: "Payments company",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
 				domain.Czechia,
@@ -4993,6 +5072,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Press-Ganey-EI_IE35100.11,22.htm",
@@ -5105,6 +5185,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Cimri-EI_IE2401296.11,16.htm",
@@ -5142,6 +5223,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Quadcode-EI_IE3293771.11,19.htm",
@@ -5221,10 +5303,12 @@ func companiesPart1() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
 				ReviewsURL:  "",
+				Verified:    false,
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -5262,6 +5346,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-BNP-Paribas-EI_IE10342.11,22.htm",
@@ -5327,28 +5412,32 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Cybus
 		{
-			ID:   0,  // system
-			Type: "", // system
+			ID:   0,                         // system
+			Type: domain.CompanyTypeStartup, // system
 			Name: "Cybus",
 			URL:  "https://www.cybus.io/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    7798667,
-				Alias: "cybus",
-				Name:  "Cybus",
+				ID:       7798667,
+				Alias:    "cybus",
+				Name:     "Cybus",
+				Verified: false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "cybusio",
 				GoRepositoryCount: 1,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Cybus-EI_IE2928520.11,16.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Cybus-Reviews-E2928520.htm",
+				Verified:    false,
 			},
 			OttaProfileSlug:   "Cybus",
 			YouTubeChannelURL: "https://www.youtube.com/@cybus_io",
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/4054430926/", // Highly proficient in GO and proficient in Node.js for backend development
 					"https://www.linkedin.com/jobs/view/3905530455/",
 				},
 				domain.Rust:    nil,
@@ -5358,8 +5447,9 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "",
-			Industries:       []domain.Industry{},
+			ShortDescription:          "Data architecture for the industrial IoT world",
+			Industries:                []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{},
 		},
 
 		// Some | Flink
@@ -5376,6 +5466,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Flink-EI_IE4921496.11,16.htm",
@@ -5446,23 +5537,27 @@ func companiesPart1() []domain.CompanyProfile {
 			Name: "OLX",
 			URL:  "https://www.olxgroup.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    167557,
-				Alias: "olx-group",
-				Name:  "OLX",
+				ID:       167557,
+				Alias:    "olx-group",
+				Name:     "OLX",
+				Verified: true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-OLX-Group-EI_IE517166.11,20.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/OLX-Group-Reviews-E517166.htm",
+				Verified:    true,
 			},
 			OttaProfileSlug:   "OLX-Group",
 			YouTubeChannelURL: "https://www.youtube.com/@OLXGroup",
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/4055838812/", // Our systems are built with Golang and they run on AWS
 					"https://www.linkedin.com/jobs/view/3904643356/",
 				},
 				domain.Rust:    nil,
@@ -5472,8 +5567,10 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "",
-			Industries:       []domain.Industry{},
+			ShortDescription: "Marketplace ecosystems",
+			Industries: []domain.Industry{
+				domain.IndustryECommerce,
+			},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
 				domain.Czechia,
@@ -5570,6 +5667,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-FOX-Broadcasting-EI_IE13272.11,27.htm",
@@ -5686,10 +5784,12 @@ func companiesPart1() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
 				ReviewsURL:  "",
+				Verified:    false,
 			},
 			OttaProfileSlug:   "Asset-Reality",
 			YouTubeChannelURL: "https://www.youtube.com/@assetreality",
@@ -5723,6 +5823,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Limango-Polska-EI_IE2884426.11,25.htm",
@@ -5838,6 +5939,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
 				ReviewsURL:  "",
+				Verified:    false,
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "https://www.youtube.com/@k-IDofficial",
@@ -6124,24 +6226,27 @@ func companiesPart1() []domain.CompanyProfile {
 			Name: "fiskaly",
 			URL:  "https://www.fiskaly.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    18929063,
-				Alias: "fiskaly",
-				Name:  "fiskaly",
+				ID:       18929063,
+				Alias:    "fiskaly",
+				Name:     "fiskaly",
+				Verified: true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "fiskaly",
 				GoRepositoryCount: 5,
+				Verified:          true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-fiskaly-EI_IE3059515.11,18.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/fiskaly-Reviews-E3059515.htm",
+				Verified:    true,
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "https://www.youtube.com/@fiskaly",
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/3914242491/",
+					"https://www.linkedin.com/jobs/view/3914242491/", // 5 years working with Golang or other OOP languages
 				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
@@ -6150,8 +6255,10 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "",
-			Industries:       []domain.Industry{},
+			ShortDescription: "fiskaly builds innovative tools to make receipts simple",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
 			},
@@ -6175,6 +6282,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
 				ReviewsURL:  "",
+				Verified:    false,
 			},
 			OttaProfileSlug:   "Vay",
 			YouTubeChannelURL: "https://www.youtube.com/@vay_io",
@@ -6323,6 +6431,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Toggle-EI_IE3924898.11,17.htm",
@@ -7418,10 +7527,12 @@ func companiesPart1() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
 				ReviewsURL:  "",
+				Verified:    false,
 			},
 			OttaProfileSlug:   "Unlimit",
 			YouTubeChannelURL: "",
@@ -7459,6 +7570,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Chime-EI_IE1493686.11,16.htm",
@@ -7500,6 +7612,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Collective-Minds-Radiology-EI_IE4686955.11,37.htm",
@@ -7615,6 +7728,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Mercury-EI_IE3583070.11,18.htm",
@@ -7662,6 +7776,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
 				ReviewsURL:  "",
+				Verified:    false,
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -7731,6 +7846,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-tabby-EI_IE6075206.11,16.htm",
@@ -7771,6 +7887,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Sonatus-EI_IE3258616.11,18.htm",
@@ -7846,10 +7963,12 @@ func companiesPart1() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
 				ReviewsURL:  "",
+				Verified:    false,
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -7889,6 +8008,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
 				ReviewsURL:  "",
+				Verified:    false,
 			},
 			OttaProfileSlug:   "Operant-AI",
 			YouTubeChannelURL: "",
@@ -8082,6 +8202,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Zipline-EI_IE1394276.11,18.htm",
@@ -8119,6 +8240,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-VisionAI-EI_IE9666263.11,19.htm",
@@ -8155,6 +8277,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Vector-Atomic-EI_IE3378320.11,24.htm",
@@ -8191,6 +8314,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Freeform-Future-EI_IE8374898.11,26.htm",
@@ -8258,18 +8382,21 @@ func companiesPart1() []domain.CompanyProfile {
 			Name: "Statista",
 			URL:  "https://www.statista.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    0,
-				IDs:   []int{1042846, 42875927},
-				Alias: "statista",
-				Name:  "Statista",
+				ID:       0,
+				IDs:      []int{1042846, 42875927},
+				Alias:    "statista",
+				Name:     "Statista",
+				Verified: true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Statista-EI_IE800158.11,19.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Statista-Reviews-E800158.htm",
+				Verified:    true,
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -8305,6 +8432,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-DroneSense-EI_IE1830147.11,21.htm",
@@ -8423,6 +8551,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-SciTec-EI_IE1000832.11,17.htm",
@@ -8461,10 +8590,12 @@ func companiesPart1() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
 				ReviewsURL:  "",
+				Verified:    false,
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -8540,6 +8671,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Materialise-EI_IE223927.11,22.htm",
@@ -8617,10 +8749,12 @@ func companiesPart1() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
 				ReviewsURL:  "",
+				Verified:    false,
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -8653,6 +8787,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Sony-Interactive-Entertainment-EI_IE5580180.11,41.htm",
@@ -8737,6 +8872,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Genius-Sports-EI_IE769838.11,24.htm",
@@ -8780,6 +8916,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
 				ReviewsURL:  "",
+				Verified:    false,
 			},
 			OttaProfileSlug:   "Windmill",
 			YouTubeChannelURL: "",
@@ -8814,6 +8951,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Fetcherr-EI_IE7854340.11,19.htm",
@@ -8850,10 +8988,12 @@ func companiesPart1() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
 				ReviewsURL:  "",
+				Verified:    false,
 			},
 			OttaProfileSlug:   "Flok-Health",
 			YouTubeChannelURL: "",
@@ -8888,10 +9028,12 @@ func companiesPart1() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
 				ReviewsURL:  "",
+				Verified:    false,
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -8926,6 +9068,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Bjak-EI_IE3055055.11,15.htm",
@@ -8962,10 +9105,12 @@ func companiesPart1() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
 				ReviewsURL:  "",
+				Verified:    false,
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -9000,6 +9145,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Ebury-Partners-EI_IE823195.11,25.htm",
@@ -9011,6 +9157,7 @@ func companiesPart1() []domain.CompanyProfile {
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
 					"https://www.linkedin.com/jobs/view/3990418832/",
+					"https://www.linkedin.com/jobs/view/3990418832/",
 				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
@@ -9019,7 +9166,7 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "",
+			ShortDescription: "Ebury is a hyper-growth FinTech firm",
 			Industries: []domain.Industry{
 				domain.IndustryFinTech,
 			},
@@ -9078,6 +9225,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-NewHomesMate-EI_IE8164563.11,23.htm",
@@ -9118,6 +9266,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Density-EI_IE1627818.11,18.htm",
@@ -9184,17 +9333,20 @@ func companiesPart1() []domain.CompanyProfile {
 			Name: "Cross River",
 			URL:  "https://www.crossriver.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    967395,
-				Alias: "cross-river-bank",
-				Name:  "Cross River",
+				ID:       967395,
+				Alias:    "cross-river-bank",
+				Name:     "Cross River",
+				Verified: true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Cross-River-Bank-EI_IE1177112.11,27.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Cross-River-Bank-Reviews-E1177112.htm",
+				Verified:    true,
 			},
 			OttaProfileSlug:   "Cross-River",
 			YouTubeChannelURL: "",
@@ -9274,6 +9426,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
 				ReviewsURL:  "",
+				Verified:    false,
 			},
 			OttaProfileSlug:   "Scope3",
 			YouTubeChannelURL: "",
@@ -9424,6 +9577,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Aira-EI_IE8976549.11,15.htm",
@@ -9540,6 +9694,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
 				ReviewsURL:  "",
+				Verified:    false,
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -9652,10 +9807,12 @@ func companiesPart1() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
 				ReviewsURL:  "",
+				Verified:    false,
 			},
 			OttaProfileSlug:   "Chalk",
 			YouTubeChannelURL: "",
@@ -9840,6 +9997,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Coalition-EI_IE1717118.11,20.htm",
@@ -9880,6 +10038,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
 				ReviewsURL:  "",
+				Verified:    false,
 			},
 			OttaProfileSlug:   "Mechanical-Orchard",
 			YouTubeChannelURL: "",

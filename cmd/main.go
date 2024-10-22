@@ -176,7 +176,7 @@ func main() {
 	r.GET("/organizers/zig/companies", organizerController.Waitlist)
 	r.GET("/organizers/zig/companies/:company_alias", organizerController.Company)
 	r.GET("/organizers/zig/vacancies", organizerController.Waitlist)
-	r.GET("/organizers/scala/companies", organizerController.Waitlist)
+	r.GET("/organizers/scala/companies", organizerController.Companies)
 	r.GET("/organizers/scala/companies/:company_alias", organizerController.Company)
 	r.GET("/organizers/scala/vacancies", organizerController.Waitlist)
 	r.GET("/organizers/elixir/companies", organizerController.Waitlist)
