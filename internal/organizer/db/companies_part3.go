@@ -4,48 +4,43 @@ import "github.com/readytotouch/readytotouch/internal/domain"
 
 func companiesPart3() []domain.CompanyProfile {
 	return []domain.CompanyProfile{
-		//  monitoring platform for cloud applications / Datadog
+		//
 		{
 			ID:   0,  // system
 			Type: "", // system
-			Name: "Datadog ",
-			URL:  "https://www.datadoghq.com/",
+			Name: "",
+			URL:  "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:       1066442,
-				Alias:    "datadog",
-				Name:     "Datadog",
-				Verified: true,
+				ID:       0,
+				Alias:    "",
+				Name:     "",
+				Verified: false,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "datadog",
-				GoRepositoryCount: 85,
-				Verified:          true,
+				Login:             "",
+				GoRepositoryCount: 0,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.es/Resumen/Trabajar-en-Datadog-EI_IE762009.12,19.htm",
+				OverviewURL: "",
 				ReviewsURL:  "",
-				Verified:    true,
+				Verified:    false,
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{
-				domain.Go: nil,
-				domain.Rust: []string{
-					"https://www.linkedin.com/jobs/view/3967138677/",
-				},
+				domain.Go:      nil,
+				domain.Rust:    nil,
 				domain.Zig:     nil,
 				domain.Scala:   nil,
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "observability platform that supports every phase of software development",
-			Industries:       []domain.Industry{},
-			HasEmployeesFromCountries: []domain.Country{
-				domain.Ukraine,
-				domain.Czechia,
-			},
+			ShortDescription:          "",
+			Industries:                []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{},
 		},
 
 		// web application security and performance / Cloudflare
@@ -426,6 +421,295 @@ func companiesPart3() []domain.CompanyProfile {
 				domain.Czechia,
 				domain.Ukraine,
 			},
+		},
+
+		// Tele2 - telecommunications
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "Tele2",
+			URL:  "https://www.tele2.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       2831,
+				Alias:    "tele2",
+				Name:     "Tele2",
+				Verified: true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "",
+				GoRepositoryCount: 0,
+				Verified:          false,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+				Verified:    false,
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/4058482144/",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "Telecommunication services",
+			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Czechia,
+				domain.Ukraine,
+			},
+		},
+
+		// emnify - telecommunications
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "emnify",
+			URL:  "https://www.emnify.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       0,
+				Alias:    "emnify",
+				Name:     "emnify",
+				Verified: true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "emnify",
+				GoRepositoryCount: 7,
+				Verified:          true,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+				Verified:    false,
+			},
+			OttaProfileSlug:   "emnify-1",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/4058102205/",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "IoT connectivity",
+			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+			},
+		},
+
+		// PayNearMe - payments technology
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "PayNearMe",
+			URL:  "https://home.paynearme.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       1137260,
+				Alias:    "paynearme",
+				Name:     "PayNearMe",
+				Verified: true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "paynearme",
+				GoRepositoryCount: 13,
+				Verified:          false,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+				Verified:    false,
+			},
+			OttaProfileSlug:   "PayNearMe",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/4058460891",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription:          "Payments DevOps",
+			Industries:                []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{},
+		},
+
+		// TikTok
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "ByteDance",
+			URL:  "https://jobs.bytedance.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       6575553,
+				Alias:    "bytedance",
+				Name:     "ByteDance",
+				Verified: true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "bytedance",
+				GoRepositoryCount: 33,
+				Verified:          false,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+				Verified:    false,
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/4057761195/",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "Chinese internet technology company",
+			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Czechia,
+				domain.Ukraine,
+			},
+		},
+
+		//
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "",
+			URL:  "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       0,
+				Alias:    "",
+				Name:     "",
+				Verified: false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "",
+				GoRepositoryCount: 0,
+				Verified:          false,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+				Verified:    false,
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go:      nil,
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription:          "",
+			Industries:                []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{},
+		},
+
+		//
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "",
+			URL:  "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       0,
+				Alias:    "",
+				Name:     "",
+				Verified: false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "",
+				GoRepositoryCount: 0,
+				Verified:          false,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+				Verified:    false,
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go:      nil,
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription:          "",
+			Industries:                []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{},
+		},
+
+		//
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "",
+			URL:  "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       0,
+				Alias:    "",
+				Name:     "",
+				Verified: false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "",
+				GoRepositoryCount: 0,
+				Verified:          false,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+				Verified:    false,
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go:      nil,
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription:          "",
+			Industries:                []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{},
 		},
 
 		//
