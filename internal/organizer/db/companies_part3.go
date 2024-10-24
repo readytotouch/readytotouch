@@ -4,17 +4,17 @@ import "github.com/readytotouch/readytotouch/internal/domain"
 
 func companiesPart3() []domain.CompanyProfile {
 	return []domain.CompanyProfile{
-		//
+		// Pro5.ai  - AI-powered platform
 		{
 			ID:   0,  // system
 			Type: "", // system
-			Name: "",
-			URL:  "",
+			Name: "Pro5.ai",
+			URL:  "https://www.pro5.ai/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:       0,
-				Alias:    "",
-				Name:     "",
-				Verified: false,
+				ID:       71633800,
+				Alias:    "pro5-ai",
+				Name:     "Pro5.ai",
+				Verified: true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -30,7 +30,9 @@ func companiesPart3() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{
-				domain.Go:      nil,
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/4057458776/",
+				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
 				domain.Scala:   nil,
@@ -38,7 +40,7 @@ func companiesPart3() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription:          "",
+			ShortDescription:          "The leading AI-powered platform",
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
@@ -340,21 +342,21 @@ func companiesPart3() []domain.CompanyProfile {
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 
-		//
+		// Capital One - banking
 		{
 			ID:   0,  // system
 			Type: "", // system
-			Name: "",
+			Name: "Capital One",
 			URL:  "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:       0,
-				Alias:    "",
-				Name:     "",
-				Verified: false,
+				ID:       1419,
+				Alias:    "capital-one",
+				Name:     "Capital One",
+				Verified: true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "",
-				GoRepositoryCount: 0,
+				Login:             "capitalone",
+				GoRepositoryCount: 5,
 				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
@@ -366,7 +368,9 @@ func companiesPart3() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{
-				domain.Go:      nil,
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/4058793283/",
+				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
 				domain.Scala:   nil,
@@ -374,9 +378,12 @@ func companiesPart3() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription:          "",
-			Industries:                []domain.Industry{},
-			HasEmployeesFromCountries: []domain.Country{},
+			ShortDescription: "American bank holding company",
+			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Czechia,
+				domain.Ukraine,
+			},
 		},
 
 		//Dynatrace - analytics and automation
@@ -595,33 +602,35 @@ func companiesPart3() []domain.CompanyProfile {
 			},
 		},
 
-		//
+		// TikTok - short-form video
 		{
 			ID:   0,  // system
 			Type: "", // system
-			Name: "",
-			URL:  "",
+			Name: "TikTok",
+			URL:  "https://careers.tiktok.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:       0,
-				Alias:    "",
-				Name:     "",
-				Verified: false,
+				ID:       33246798,
+				Alias:    "tiktok",
+				Name:     "TikTok",
+				Verified: true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "",
-				GoRepositoryCount: 0,
-				Verified:          false,
+				Login:             "tiktok",
+				GoRepositoryCount: 15,
+				Verified:          true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
 				ReviewsURL:  "",
 				Verified:    false,
 			},
-			OttaProfileSlug:   "",
+			OttaProfileSlug:   "TikTok",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{
-				domain.Go:      nil,
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/4057303610/",
+				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
 				domain.Scala:   nil,
@@ -629,9 +638,12 @@ func companiesPart3() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription:          "",
-			Industries:                []domain.Industry{},
-			HasEmployeesFromCountries: []domain.Country{},
+			ShortDescription: "Social media platform",
+			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Czechia,
+				domain.Ukraine,
+			},
 		},
 
 		//
