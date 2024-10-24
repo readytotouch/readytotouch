@@ -9742,6 +9742,7 @@ func companiesPart1() []domain.CompanyProfile {
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
 					"https://app.welcometothejungle.com/jobs/tsBqRgc_",
+					"https://www.linkedin.com/jobs/view/3984452580/",
 				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
