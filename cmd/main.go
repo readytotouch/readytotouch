@@ -218,6 +218,10 @@ func main() {
 		DELETE("/api/v1/companies-and-connections/companies.json", cacController.DeleteCompany)
 
 	r.
+		// Unsafe API endpoints that can be changed without any notice.
+		GET("/api/v1/unsafe/companies.json", organizerController.UnsafeCompanies)
+
+	r.
 		StaticFile("/design", "./public/design/online.html").
 		StaticFile("/design/online", "./public/design/online.html").
 		StaticFile("/design/online-auth", "./public/design/online-auth.html").

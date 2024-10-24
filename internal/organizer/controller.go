@@ -446,6 +446,23 @@ func (c *Controller) FavoriteCompany(ctx *gin.Context) {
 	ctx.JSON(http.StatusOK, nil)
 }
 
+func (c *Controller) UnsafeCompanies(ctx *gin.Context) {
+	companies := db.Companies()
+
+	result := make([]domain.LinkedInProfileResponse, len(companies))
+	for i, company := range companies {
+		result[i] = domain.LinkedInProfileResponse{
+			ID:    int64(company.LinkedInProfile.ID),
+			Alias: company.LinkedInProfile.Alias,
+			Name:  company.LinkedInProfile.Name,
+		}
+	}
+
+	ctx.JSON(http.StatusOK, &domain.UnsafeCompaniesResponse{
+		Companies: result,
+	})
+}
+
 func (c *Controller) parseFeatureFromReferer(ctx *gin.Context) (dbs.FeatureWait, bool) {
 	var referer = ctx.Request.Referer()
 	if referer == "" {
