@@ -304,6 +304,47 @@ func companiesPart3() []domain.CompanyProfile {
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 
+		// telecommunications
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "PLC Group",
+			URL:  "https://www.plcgroup.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       11759368,
+				Alias:    "plcgroupinc",
+				Name:     "PLC Group",
+				Verified: false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "",
+				GoRepositoryCount: 0,
+				Verified:          false,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+				Verified:    false,
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/4057742583/",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription:          "Critical Facilities & Infrastructure Management solutions",
+			Industries:                []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{},
+		},
+
 		//
 		{
 			ID:   0,  // system
@@ -343,6 +384,90 @@ func companiesPart3() []domain.CompanyProfile {
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 
+		//Dynatrace - analytics and automation
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "Dynatrace",
+			URL:  "https://www.dynatrace.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       125999,
+				Alias:    "dynatrace",
+				Name:     "Dynatrace",
+				Verified: true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "dynatrace",
+				GoRepositoryCount: 11,
+				Verified:          true,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+				Verified:    false,
+			},
+			OttaProfileSlug:   "Dynatrace",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/4057742583/",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "Platform that delivers analytics and automation for unified observability and security",
+			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Czechia,
+				domain.Ukraine,
+			},
+		},
+
+		//
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "",
+			URL:  "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       0,
+				Alias:    "",
+				Name:     "",
+				Verified: false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "",
+				GoRepositoryCount: 0,
+				Verified:          false,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+				Verified:    false,
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go:      nil,
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription:          "",
+			Industries:                []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{},
+		},
+
+		//
 		{
 			ID:   0,  // system
 			Type: "", // system
