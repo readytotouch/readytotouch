@@ -92,7 +92,7 @@ func companiesPart3() []domain.CompanyProfile {
 			},
 		},
 
-		//
+		// Smart Electric Vehicle charging stations
 		{
 			ID:   0,  // system
 			Type: "", // system
@@ -128,22 +128,151 @@ func companiesPart3() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "",
+			ShortDescription: "Smart Electric Vehicle charging stations",
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
 			},
 		},
 
+		// VPN company - ExpressVPN
 		{
 			ID:   0,  // system
 			Type: "", // system
-			Name: "",
-			URL:  "",
+			Name: "ExpressVPN ",
+			URL:  "https://www.expressvpn.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       14488856,
+				Alias:    "expressvpn",
+				Name:     "ExpressVPN",
+				Verified: false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "expressvpn",
+				GoRepositoryCount: 3,
+				Verified:          true,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+				Verified:    false,
+			},
+			OttaProfileSlug:   "ExpressVPN",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/4058715430/,",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription:          "VPN company",
+			Industries:                []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{},
+		},
+
+		//GlobalLogic -  full-lifecycle product development services
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "GlobalLogic",
+			URL:  "https://www.globallogic.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       164008,
+				Alias:    "globallogic",
+				Name:     "GlobalLogic",
+				Verified: true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "",
+				GoRepositoryCount: 0,
+				Verified:          false,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+				Verified:    false,
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/4057277625/",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "Full-lifecycle product development services",
+			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Czechia,
+				domain.Ukraine,
+			},
+		},
+
+		// Advertising - Influ2
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "Influ2",
+			URL:  "https://www.influ2.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:       0,
+				Alias:    "influ2",
+				Name:     "Influ2",
+				Verified: true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "",
+				GoRepositoryCount: 0,
+				Verified:          false,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+				Verified:    false,
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/4058445939/",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "Person-based advertising engine",
+			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+			},
+		},
+
+		// DoublU -  AI enabled process automation.
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "DoublU",
+			URL:  "https://doublu.ai/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       18898324,
 				Alias:    "",
-				Name:     "",
+				Name:     "DoublU",
 				Verified: false,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -160,7 +289,9 @@ func companiesPart3() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{
-				domain.Go:      nil,
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/4058240622/",
+				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
 				domain.Scala:   nil,
@@ -168,125 +299,12 @@ func companiesPart3() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription:          "",
+			ShortDescription:          "AI enabled process automation.",
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 
-		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "",
-			URL:  "",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:       0,
-				Alias:    "",
-				Name:     "",
-				Verified: false,
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:             "",
-				GoRepositoryCount: 0,
-				Verified:          false,
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
-				Verified:    false,
-			},
-			OttaProfileSlug:   "",
-			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go:      nil,
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
-			ShortDescription:          "",
-			Industries:                []domain.Industry{},
-			HasEmployeesFromCountries: []domain.Country{},
-		},
-
-		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "",
-			URL:  "",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:       0,
-				Alias:    "",
-				Name:     "",
-				Verified: false,
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:             "",
-				GoRepositoryCount: 0,
-				Verified:          false,
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
-				Verified:    false,
-			},
-			OttaProfileSlug:   "",
-			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go:      nil,
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
-			ShortDescription:          "",
-			Industries:                []domain.Industry{},
-			HasEmployeesFromCountries: []domain.Country{},
-		},
-
-		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "",
-			URL:  "",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:       0,
-				Alias:    "",
-				Name:     "",
-				Verified: false,
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:             "",
-				GoRepositoryCount: 0,
-				Verified:          false,
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
-				Verified:    false,
-			},
-			OttaProfileSlug:   "",
-			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go:      nil,
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
-			ShortDescription:          "",
-			Industries:                []domain.Industry{},
-			HasEmployeesFromCountries: []domain.Country{},
-		},
-
+		//
 		{
 			ID:   0,  // system
 			Type: "", // system
