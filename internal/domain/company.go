@@ -75,3 +75,7 @@ type CompanyProfile struct {
 	Industries                []Industry
 	HasEmployeesFromCountries []Country
 }
+
+type UnsafeCompaniesResponse struct {
+	Companies []LinkedInProfileResponse `json:"companies"`
+}

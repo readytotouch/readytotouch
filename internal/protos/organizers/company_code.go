@@ -23,6 +23,7 @@ var (
 		"bereal-app":                          13,  // BeReal.
 		"victoriametrics":                     14,  // VictoriaMetrics
 		"grammarly":                           15,  // Grammarly
+		"influ2":                              336, // Influ2
 		"netlify":                             16,  // Netlify
 		"vercel":                              198, // Vercel
 		"fastly":                              225, // Fastly
@@ -339,6 +340,22 @@ var (
 		"ubs":                                 333, // UBS
 		"droneshield":                         334, // DroneShield
 		"automox":                             335, // Automox
+		"darktrace":                           337, // Darktrace
+		"poppi-technologies":                  338, // Poppi Technologies
+		"booz-allen-hamilton":                 339, // Booz Allen Hamilton
+		"flexera":                             340, // Flexera
+		"flowhub":                             341, // Flowhub
+		"teachable":                           342, // Teachable
+		"lloyds-banking-group":                343, // Lloyds Banking Group
+		"cyber-ark-software":                  344, // CyberArk
+		"paynearme":                           345, // PayNearMe
+		"creative-fabrica":                    346, // Creative Fabrica
+		"cast-ai":                             347, // CAST AI
+		"grasshopperasia":                     348, // Grasshopper
+		"swish-analytics":                     349, // Swish Analytics
+		"abbott-":                             350, // Abbott
+		"dealer-tire":                         351, // Dealer Tire
+		"jpmorganchase":                       352, // JPMorganChase
 
 	}
 )
