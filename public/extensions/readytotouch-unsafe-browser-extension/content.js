@@ -1,7 +1,6 @@
 const CACHE_DURATION = 5 * 60 * 1000;
 
 let companiesCache = null;
-let currentCompanyName = null;
 let cacheTimestamp = 0;
 
 function fetchCompanyList() {
@@ -52,15 +51,9 @@ function monitorCompanyNameChange() {
     const $company = getCompanyNameElement();
 
     if ($company) {
-        const newCompanyName = $company.textContent.trim();
+        const currentCompanyName = $company.textContent.trim();
 
-        if (newCompanyName === "" || newCompanyName === currentCompanyName) {
-            return;
-        }
-
-        currentCompanyName = newCompanyName;
-
-        const status = checkCompanyStatusFromCache(newCompanyName);
+        const status = checkCompanyStatusFromCache(currentCompanyName);
 
         updateCompanyColor(status);
     }
