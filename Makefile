@@ -103,10 +103,10 @@ esbuild:
 # make design DESIGN="~/go/src/github.com/readytotouch/readytotouch.github.io"
 design:
 	$(eval DESIGN := ~/go/src/github.com/readytotouch/readytotouch.github.io)
-	rm -rf ./public/assets/images ./public/assets/fonts ./public/assets/js ./public/design
-	mkdir -p ./public/assets/images ./public/assets/fonts ./public/assets/js ./public/design
+	rm -rf ./public/assets/images/pages ./public/assets/fonts ./public/assets/js ./public/design
+	mkdir -p ./public/assets/images/pages ./public/assets/fonts ./public/assets/js ./public/design
 
-	cp -r $(DESIGN)/public/assets/images/* ./public/assets/images
+	cp -r $(DESIGN)/public/assets/images/pages/* ./public/assets/images/pages
 	cp -r $(DESIGN)/public/assets/fonts/* ./public/assets/fonts
 	cp -r $(DESIGN)/public/assets/js/* ./public/assets/js
 	cp -r $(DESIGN)/public/*.html ./public/design
