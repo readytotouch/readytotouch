@@ -21,7 +21,7 @@ function checkCompanyStatusFromCache(companyName) {
         return "in_progress";
     }
 
-    const exists = companiesCache.any(function (c) {
+    const exists = companiesCache.find(function (c) {
         return c.name.toLowerCase() === companyName || c.id.toString() === companyName;
     });
     if (exists) {
@@ -41,9 +41,9 @@ function updateCompanyColor(status) {
     if (status === "exists") {
         $companyName.style.color = "#28a745";
     } else if (status === "not_found") {
-        $companyName.style.color = "#dc3545";
-    } else if (status === "in_progress") {
         $companyName.style.color = "#007bff";
+    } else if (status === "in_progress") {
+        $companyName.style.color = "#ffc107";
     }
 }
 
@@ -51,7 +51,7 @@ function monitorCompanyNameChange() {
     const $company = getCompanyNameElement();
 
     if ($company) {
-        const currentCompanyName = $company.textContent.trim();
+        const currentCompanyName = $company.textContent.trim().toLowerCase();
 
         const status = checkCompanyStatusFromCache(currentCompanyName);
 
