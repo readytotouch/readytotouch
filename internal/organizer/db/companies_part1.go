@@ -469,6 +469,52 @@ func companiesPart1() []domain.CompanyProfile {
 			},
 		},
 
+		// Social | GitLab
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "GitLab",
+			URL:  "https://gitlab.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       5101804,
+				Alias:    "gitlab-com",
+				Name:     "GitLab",
+				Verified: true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "gitlabhq",
+				GoRepositoryCount: 3,
+				Verified:          false,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-GitLab-EI_IE1296544.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/GitLab-Reviews-E1296544.htm",
+				Verified:    true,
+			},
+			OttaProfileSlug:   "GitLab-1",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/4018780627/", // Significant experience with Go
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "DevOps platform",
+			Industries: []domain.Industry{
+				domain.IndustryDevOps,
+			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
+		},
+
 		// Social | LinkedIn
 		{
 			ID:   0,  // system
