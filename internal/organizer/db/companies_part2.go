@@ -3486,7 +3486,9 @@ func companiesPart2() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{
-				domain.Go:   nil,
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/4053910803/", // Experience in Golang, Terraform and AWS
+				},
 				domain.Rust: nil,
 				domain.Zig:  nil,
 				domain.Scala: []string{
