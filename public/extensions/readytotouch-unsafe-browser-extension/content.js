@@ -62,7 +62,6 @@ function monitorCompanyNameChange() {
 function getCompanyNameElement() {
     const url = window.location.href;
 
-    // Визначаємо селектор в залежності від сайту
     if (url.includes("linkedin.com")) {
         return document.querySelector(".job-details-jobs-unified-top-card__company-name a");
     }
