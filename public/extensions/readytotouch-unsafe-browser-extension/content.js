@@ -62,6 +62,10 @@ function monitorCompanyNameChange() {
 function getCompanyNameElement() {
     const url = window.location.href;
 
+    if (url.includes("linkedin.com/company/")) {
+        return document.querySelector("h1");
+    }
+
     if (url.includes("linkedin.com")) {
         return document.querySelector(".job-details-jobs-unified-top-card__company-name a");
     }
@@ -79,8 +83,8 @@ function initializeCompanyCache() {
     }
 }
 
-setInterval(initializeCompanyCache, CACHE_DURATION);
-
 initializeCompanyCache();
+
+setInterval(initializeCompanyCache, CACHE_DURATION);
 
 setInterval(monitorCompanyNameChange, 250);

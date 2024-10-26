@@ -381,6 +381,51 @@ func companiesPart1() []domain.CompanyProfile {
 			},
 		},
 
+		// BigTech | SAP
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "SAP",
+			URL:  "https://www.sap.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       1115,
+				IDs:      []int{1115, 2573558, 2818, 166185, 5822},
+				Alias:    "sap",
+				Name:     "SAP",
+				Verified: true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "SAP",
+				GoRepositoryCount: 53,
+				Verified:          true,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/sap",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/SAP-Reviews-E10471.htm",
+				Verified:    true,
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/3943874981/", // strong understanding of Golang
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "Enterprise application and business AI company",
+			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
+		},
+
 		// BigTech | Oracle
 		{
 			ID:   0,  // system
