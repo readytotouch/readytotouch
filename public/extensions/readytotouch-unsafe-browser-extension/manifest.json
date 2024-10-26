@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Company Status Checker",
+  "name": "Company status checker | ReadyToTouch",
   "version": "1.0",
   "description": "Checks the status of a company name and changes the color based on the API response.",
   "permissions": [
@@ -10,12 +10,6 @@
   "host_permissions": [
     "*://*/*"
   ],
-  "action": {
-    "default_popup": "popup.html",
-    "default_icon": {
-      "16": "icons/favicon-16x16.png"
-    }
-  },
   "icons": {
     "16": "icons/favicon-16x16.png"
   },
