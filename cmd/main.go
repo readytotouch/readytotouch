@@ -29,6 +29,7 @@ import (
 	pkgOrganizer "github.com/readytotouch/readytotouch/internal/organizer"
 	pkgUsers "github.com/readytotouch/readytotouch/internal/users"
 
+	"github.com/gin-contrib/cors"
 	"github.com/gin-contrib/gzip"
 	"github.com/gin-gonic/gin"
 
@@ -123,6 +124,7 @@ func main() {
 
 	r := gin.New()
 	r.Use(redirectFromWWW())
+	r.Use(cors.Default())
 	r.Use(func(ctx *gin.Context) {
 		user, err := jwtService.ParseToken(ctx)
 		if err != nil {

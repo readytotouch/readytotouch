@@ -13,8 +13,10 @@ var (
 		"microsoft":                           5,   // Microsoft
 		"amazon":                              181, // Amazon
 		"ibm":                                 6,   // IBM
+		"sap":                                 353, // SAP
 		"oracle":                              312, // Oracle
 		"github":                              7,   // GitHub
+		"gitlab-com":                          354, // GitLab
 		"linkedin":                            8,   // LinkedIn
 		"reddit-com":                          9,   // Reddit, Inc.
 		"medium-com":                          10,  // Medium
@@ -356,6 +358,21 @@ var (
 		"abbott-":                             350, // Abbott
 		"dealer-tire":                         351, // Dealer Tire
 		"jpmorganchase":                       352, // JPMorganChase
+		"outreach-saas":                       355, // Outreach
+		"tucows":                              356, // Tucows
+		"ing":                                 357, // ING
+		"remitly":                             358, // Remitly
+		"level-all":                           359, // Level All
+		"littlelives":                         360, // LittleLives
+		"bill":                                361, // BILL
+		"communitydotcom":                     362, // Community
+		"bigpayme":                            363, // BigPay
+		"rabbet":                              364, // Rabbet
+		"agentero":                            365, // Agentero
+		"marbill-technologies":                366, // Marbill Technologies
+		"bitaksi":                             367, // BiTaksi
+		"oddingg":                             368, // Oddin.gg
+		"mimecast":                            369, // Mimecast
 
 	}
 )

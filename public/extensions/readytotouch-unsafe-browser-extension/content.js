@@ -1,0 +1,90 @@
+const CACHE_DURATION = 5 * 60 * 1000;
+
+let companiesCache = null;
+let cacheTimestamp = 0;
+
+function fetchCompanyList() {
+    return fetch("https://readytotouch.com/api/v1/unsafe/companies.json")
+        .then(response => response.json())
+        .then(data => {
+            companiesCache = data.companies;
+            cacheTimestamp = Date.now();
+            console.log("Fetched and cached company list.");
+        })
+        .catch(error => {
+            console.error("Error fetching company list:", error);
+        });
+}
+
+function checkCompanyStatusFromCache(companyName) {
+    if (companiesCache === null) {
+        return "in_progress";
+    }
+
+    const exists = companiesCache.find(function (c) {
+        return c.name.toLowerCase() === companyName || c.id.toString() === companyName;
+    });
+    if (exists) {
+        return "exists";
+    }
+
+    return "not_found";
+}
+
+function updateCompanyColor(status) {
+    const $companyName = getCompanyNameElement();
+
+    if ($companyName === null) {
+        return;
+    }
+
+    if (status === "exists") {
+        $companyName.style.color = "#28a745";
+    } else if (status === "not_found") {
+        $companyName.style.color = "#007bff";
+    } else if (status === "in_progress") {
+        $companyName.style.color = "#ffc107";
+    }
+}
+
+function monitorCompanyNameChange() {
+    const $company = getCompanyNameElement();
+
+    if ($company) {
+        const currentCompanyName = $company.textContent.trim().toLowerCase();
+
+        const status = checkCompanyStatusFromCache(currentCompanyName);
+
+        updateCompanyColor(status);
+    }
+}
+
+function getCompanyNameElement() {
+    const url = window.location.href;
+
+    if (url.includes("linkedin.com/company/")) {
+        return document.querySelector("h1");
+    }
+
+    if (url.includes("linkedin.com")) {
+        return document.querySelector(".job-details-jobs-unified-top-card__company-name a");
+    }
+
+    if (url.includes("welcometothejungle.com")) {
+        return null;
+    }
+
+    return null;
+}
+
+function initializeCompanyCache() {
+    if (companiesCache === null || Date.now() - cacheTimestamp > CACHE_DURATION) {
+        fetchCompanyList();
+    }
+}
+
+initializeCompanyCache();
+
+setInterval(initializeCompanyCache, CACHE_DURATION);
+
+setInterval(monitorCompanyNameChange, 250);

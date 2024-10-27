@@ -158,3 +158,11 @@ ssh:
 
 ssh-copy-tls-certificates:
 	scp -r root@70.34.247.27:/var/go/readytotouch/.docker/volumes/go/tls-certificates ./.docker/volumes/go
+
+unsafe-browser-extension:
+	mkdir -p ./public/extensions/readytotouch-unsafe-browser-extension/icons
+	cp ./public/favicon-16x16.png ./public/extensions/readytotouch-unsafe-browser-extension/icons
+	cd ./public/extensions \
+		&& rm -rf readytotouch-unsafe-browser-extension.zip \
+		&& zip -r readytotouch-unsafe-browser-extension.zip readytotouch-unsafe-browser-extension \
+		&& chmod 777 readytotouch-unsafe-browser-extension.zip
