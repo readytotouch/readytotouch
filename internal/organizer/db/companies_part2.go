@@ -4133,6 +4133,213 @@ func companiesPart2() []domain.CompanyProfile {
 				domain.Czechia,
 			},
 		},
+		{
+			ID:   0,                         // system
+			Type: domain.CompanyTypeStartup, // system
+			Name: "Sentry",
+			URL:  "https://sentry.io/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       6424460,
+				Alias:    "getsentry",
+				Name:     "Sentry",
+				Verified: true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "getsentry",
+				GoRepositoryCount: 22, // Rust 67
+				Verified:          true,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Sentry-CA-EI_IE1622271.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Sentry-CA-Reviews-E1622271.htm",
+				Verified:    true,
+			},
+			OttaProfileSlug:   "Sentry",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/4042362901/", // Work in the client infrastructure team to improve and evolve our https://github.com/getsentry/sentry-go
+				},
+				domain.Rust: []string{
+					"https://www.linkedin.com/jobs/view/3997074001/",   // Familiarity with Rust or other system-level programming language is a plus
+					"https://app.welcometothejungle.com/jobs/U4CoD4b3", // Familiarity with Rust is a plus
+				},
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "Error tracking and app monitoring software",
+			Industries: []domain.Industry{
+				domain.IndustryDevOps,
+			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
+		},
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "Track24",
+			URL:  "https://www.track24.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       315653,
+				Alias:    "track24",
+				Name:     "Track24",
+				Verified: false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "",
+				GoRepositoryCount: 0,
+				Verified:          false,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Track24-EI_IE1463252.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Track24-Reviews-E1463252.htm",
+				Verified:    true,
+			},
+			OttaProfileSlug:   "Track24",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go:    nil,
+				domain.Rust:  nil,
+				domain.Zig:   nil,
+				domain.Scala: nil,
+				domain.Elixir: []string{
+					"https://www.linkedin.com/jobs/view/4055781039/", // Elixir Engineer
+				},
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription:          "Operational risk management and communications solutions",
+			Industries:                []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{},
+		},
+		{
+			ID:   0,                         // system
+			Type: domain.CompanyTypeStartup, // system
+			Name: "Hiive",
+			URL:  "https://www.hiive.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       76581616,
+				Alias:    "hiive",
+				Name:     "Hiive",
+				Verified: false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "",
+				GoRepositoryCount: 0,
+				Verified:          false,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Hiive-Canada-EI_IE6926718.11,23.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Hiive-Canada-Reviews-E6926718.htm",
+				Verified:    true,
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go:    nil,
+				domain.Rust:  nil,
+				domain.Zig:   nil,
+				domain.Scala: nil,
+				domain.Elixir: []string{
+					"https://www.linkedin.com/jobs/view/4060816724/", // Senior Software Engineer (Elixir)
+				},
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "All-in-one liquidity platform for private companies and their shareholders",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
+			HasEmployeesFromCountries: []domain.Country{},
+		},
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "ExpressVPN",
+			URL:  "https://www.expressvpn.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       14488856,
+				Alias:    "expressvpn",
+				Name:     "ExpressVPN",
+				Verified: true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "expressvpn",
+				GoRepositoryCount: 0, // Rust 3
+				Verified:          true,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-ExpressVPN-EI_IE3355140.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/ExpressVPN-Reviews-E3355140.htm",
+				Verified:    true,
+			},
+			OttaProfileSlug:   "ExpressVPN",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/4058715430/", // Backend Golang Engineer
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "VPN",
+			Industries: []domain.Industry{
+				domain.IndustryCyberSecurity,
+			},
+			HasEmployeesFromCountries: []domain.Country{},
+		},
+		{
+			ID:   0,                         // system
+			Type: domain.CompanyTypeStartup, // system
+			Name: "Shuttle",
+			URL:  "https://www.shuttle.dev/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       67174759,
+				Alias:    "shuttle-yc",
+				Name:     "Shuttle",
+				Verified: false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "shuttle-hq",
+				GoRepositoryCount: 1, // Rust 26
+				Verified:          false,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+				Verified:    false,
+			},
+			OttaProfileSlug:   "shuttle",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: nil,
+				domain.Rust: []string{
+					"https://www.ycombinator.com/companies/shuttle/jobs/pEYmbIL-senior-software-engineer",
+				},
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription:          "Serverless Rust platform",
+			Industries:                []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{},
+		},
 
 		// Template
 		//{

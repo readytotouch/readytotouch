@@ -411,7 +411,9 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Go: []string{
 					"https://www.linkedin.com/jobs/view/3943874981/", // strong understanding of Golang
 				},
-				domain.Rust:    nil,
+				domain.Rust: []string{
+					"https://www.linkedin.com/jobs/view/4059368134/",
+				},
 				domain.Zig:     nil,
 				domain.Scala:   nil,
 				domain.Elixir:  nil,
@@ -8792,6 +8794,7 @@ func companiesPart1() []domain.CompanyProfile {
 			Vacancies: domain.Vacancies{
 				domain.Go: nil,
 				domain.Rust: []string{
+					"https://www.linkedin.com/jobs/view/4059511810/",
 					"https://www.linkedin.com/jobs/view/4024400919/",
 				},
 				domain.Zig:     nil,
