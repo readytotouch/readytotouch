@@ -659,7 +659,7 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified: true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "https://github.com/moodysanalytics",
+				Login:             "moodysanalytics",
 				GoRepositoryCount: 0,
 				Verified:          false,
 			},
@@ -688,6 +688,323 @@ func companiesPart3() []domain.CompanyProfile {
 				domain.Czechia,
 				domain.Ukraine,
 			},
+		},
+
+		//Lytx - fleet and compliance management solutions
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "Lytx, Inc.",
+			URL:  "https://www.lytx.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       26167,
+				Alias:    "lytxinc",
+				Name:     "Lytx, Inc.",
+				Verified: true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "lytx",
+				GoRepositoryCount: 0,
+				Verified:          false,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+				Verified:    false,
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: nil,
+				domain.Rust: []string{
+					"https://www.linkedin.com/jobs/view/3951803632/",
+				},
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription: "Fleet and compliance management solutions",
+			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Czechia,
+				domain.Ukraine,
+			},
+		},
+
+		//
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "",
+			URL:  "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       0,
+				Alias:    "",
+				Name:     "",
+				Verified: false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "",
+				GoRepositoryCount: 0,
+				Verified:          false,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+				Verified:    false,
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go:      nil,
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription:          "",
+			Industries:                []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{},
+		},
+
+		//
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "",
+			URL:  "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       0,
+				Alias:    "",
+				Name:     "",
+				Verified: false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "",
+				GoRepositoryCount: 0,
+				Verified:          false,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+				Verified:    false,
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go:      nil,
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription:          "",
+			Industries:                []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{},
+		},
+
+		//
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "",
+			URL:  "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       0,
+				Alias:    "",
+				Name:     "",
+				Verified: false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "",
+				GoRepositoryCount: 0,
+				Verified:          false,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+				Verified:    false,
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go:      nil,
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription:          "",
+			Industries:                []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{},
+		},
+
+		//
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "",
+			URL:  "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       0,
+				Alias:    "",
+				Name:     "",
+				Verified: false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "",
+				GoRepositoryCount: 0,
+				Verified:          false,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+				Verified:    false,
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go:      nil,
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription:          "",
+			Industries:                []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{},
+		},
+
+		//
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "",
+			URL:  "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       0,
+				Alias:    "",
+				Name:     "",
+				Verified: false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "",
+				GoRepositoryCount: 0,
+				Verified:          false,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+				Verified:    false,
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go:      nil,
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription:          "",
+			Industries:                []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{},
+		},
+
+		//
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "",
+			URL:  "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       0,
+				Alias:    "",
+				Name:     "",
+				Verified: false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "",
+				GoRepositoryCount: 0,
+				Verified:          false,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+				Verified:    false,
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go:      nil,
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription:          "",
+			Industries:                []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{},
+		},
+
+		//
+		{
+			ID:   0,  // system
+			Type: "", // system
+			Name: "",
+			URL:  "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       0,
+				Alias:    "",
+				Name:     "",
+				Verified: false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "",
+				GoRepositoryCount: 0,
+				Verified:          false,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+				Verified:    false,
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go:      nil,
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			ShortDescription:          "",
+			Industries:                []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{},
 		},
 
 		//
