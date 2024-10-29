@@ -181,7 +181,7 @@ func main() {
 	r.GET("/organizers/scala/companies", organizerController.Companies)
 	r.GET("/organizers/scala/companies/:company_alias", organizerController.Company)
 	r.GET("/organizers/scala/vacancies", organizerController.Waitlist)
-	r.GET("/organizers/elixir/companies", organizerController.Waitlist)
+	r.GET("/organizers/elixir/companies", organizerController.Companies)
 	r.GET("/organizers/elixir/companies/:company_alias", organizerController.Company)
 	r.GET("/organizers/elixir/vacancies", organizerController.Waitlist)
 	r.GET("/organizers/clojure/companies", organizerController.Waitlist)
