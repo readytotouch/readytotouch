@@ -587,7 +587,9 @@ func companiesPart3() []domain.CompanyProfile {
 				domain.Go: []string{
 					"https://www.linkedin.com/jobs/view/4057761195/",
 				},
-				domain.Rust:    nil,
+				domain.Rust: []string{
+					"https://www.linkedin.com/jobs/view/4059885479/",
+				},
 				domain.Zig:     nil,
 				domain.Scala:   nil,
 				domain.Elixir:  nil,
@@ -734,21 +736,21 @@ func companiesPart3() []domain.CompanyProfile {
 			},
 		},
 
-		//
+		// Agoda - booking platform
 		{
 			ID:   0,  // system
 			Type: "", // system
-			Name: "",
-			URL:  "",
+			Name: "Agoda",
+			URL:  "https://careersatagoda.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:       0,
-				Alias:    "",
-				Name:     "",
-				Verified: false,
+				ID:       66719,
+				Alias:    "agoda",
+				Name:     "Agoda",
+				Verified: true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "",
-				GoRepositoryCount: 0,
+				Login:             "agoda-com",
+				GoRepositoryCount: 10,
 				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
@@ -760,17 +762,24 @@ func companiesPart3() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{
-				domain.Go:      nil,
-				domain.Rust:    nil,
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/4059885479/",
+				},
+				domain.Rust: []string{
+					"https://www.linkedin.com/jobs/view/4059885479/",
+				},
 				domain.Zig:     nil,
 				domain.Scala:   nil,
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription:          "",
-			Industries:                []domain.Industry{},
-			HasEmployeesFromCountries: []domain.Country{},
+			ShortDescription: "Online travel-booking platforms",
+			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Czechia,
+				domain.Ukraine,
+			},
 		},
 
 		//
