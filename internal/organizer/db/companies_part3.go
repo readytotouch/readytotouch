@@ -646,20 +646,20 @@ func companiesPart3() []domain.CompanyProfile {
 			},
 		},
 
-		//
+		// Moody's -  American business and financial services company
 		{
 			ID:   0,  // system
 			Type: "", // system
-			Name: "",
-			URL:  "",
+			Name: "Moody's Corporation",
+			URL:  "https://www.moodys.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:       0,
-				Alias:    "",
-				Name:     "",
-				Verified: false,
+				ID:       165033,
+				Alias:    "moodys-corporation",
+				Name:     "Moody's Corporation",
+				Verified: true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "",
+				Login:             "https://github.com/moodysanalytics",
 				GoRepositoryCount: 0,
 				Verified:          false,
 			},
@@ -672,17 +672,22 @@ func companiesPart3() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{
-				domain.Go:      nil,
-				domain.Rust:    nil,
+				domain.Go: nil,
+				domain.Rust: []string{
+					"https://www.linkedin.com/jobs/view/4060347505/",
+				},
 				domain.Zig:     nil,
 				domain.Scala:   nil,
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription:          "",
-			Industries:                []domain.Industry{},
-			HasEmployeesFromCountries: []domain.Country{},
+			ShortDescription: "American business and financial services company",
+			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Czechia,
+				domain.Ukraine,
+			},
 		},
 
 		//
