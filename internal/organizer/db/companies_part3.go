@@ -218,10 +218,14 @@ func companiesPart3() []domain.CompanyProfile {
 
 		// Template
 		//{
-		//	ID:   0,  // system
-		//	Type: "", // system
-		//	Name: "",
-		//	URL:  "",
+		//	ID:      0,  // system
+		//	Type:    "", // system
+		//	Name:    "",
+		//	URL:     "",
+		//	Website: "",
+		//	Careers: "",
+		//	About:   "",
+		//	Blog:    "",
 		//	LinkedInProfile: domain.LinkedInProfile{
 		//		ID:       0,
 		//		Alias:    "",
@@ -233,10 +237,24 @@ func companiesPart3() []domain.CompanyProfile {
 		//		GoRepositoryCount: 0,
 		//		Verified:          false,
 		//	},
+		//	BlindProfile:     domain.BlindProfile{
+		//		Alias:       "",
+		//		Employees:   "",
+		//		Salary:      "",
+		//		Reviews:     "",
+		//		ReviewsRate: "",
+		//	},
+		//	LevelsFyiProfile: domain.LevelsFyiProfile{
+		//		Alias:     "",
+		//		Employees: "",
+		//	},
 		//	GlassdoorProfile: domain.GlassdoorProfile{
 		//		OverviewURL: "",
 		//		ReviewsURL:  "",
 		//		Verified:    false,
+		//	},
+		//	IndeedProfile:     domain.IndeedProfile{
+		//		Alias: "",
 		//	},
 		//	OttaProfileSlug:   "",
 		//	YouTubeChannelURL: "",
@@ -250,7 +268,14 @@ func companiesPart3() []domain.CompanyProfile {
 		//		domain.Clojure: nil,
 		//		domain.Haskell: nil,
 		//	},
+		//	Languages:                 nil,
 		//	ShortDescription:          "",
+		//	DealroomURL:               "",
+		//	CrunchbaseURL:             "",
+		//	PitchbookURL:              "",
+		//	YahooFinanceURL:           "",
+		//	GoogleFinanceURL:          "",
+		//	YCombinatorURL:            "",
 		//	Industries:                []domain.Industry{},
 		//	HasEmployeesFromCountries: []domain.Country{},
 		//},

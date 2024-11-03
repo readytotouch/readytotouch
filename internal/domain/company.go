@@ -86,10 +86,10 @@ type IndeedProfile struct {
 }
 
 type Vacancy struct {
-	Title       string
-	Description string
-	URL         string
-	Date        time.Time
+	Title            string
+	ShortDescription string // proof that the vacancy is for a particular technology
+	URL              string
+	Date             time.Time
 }
 
 type LanguageProfile struct {
