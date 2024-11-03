@@ -378,6 +378,11 @@ var (
 		"hiive":                               372, // Hiive
 		"expressvpn":                          373, // ExpressVPN
 		"shuttle-yc":                          374, // Shuttle
+		"capital-one":                         375, // Capital One
+		"dynatrace":                           376, // Dynatrace
+		"emnify":                              377, // emnify
+		"moodys-corporation":                  378, // Moody&#39;s Corporation
+		"lytxinc":                             379, // Lytx, Inc.
 
 	}
 )

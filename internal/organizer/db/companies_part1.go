@@ -2342,11 +2342,13 @@ func companiesPart1() []domain.CompanyProfile {
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "cloudflare",
-				GoRepositoryCount: 87,
+				GoRepositoryCount: 98,
+				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Cloudflare-EI_IE430862.11,21.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Cloudflare-Reviews-E430862.htm",
+				Verified:    true,
 			},
 			OttaProfileSlug:   "Cloudflare-1",
 			YouTubeChannelURL: "https://www.youtube.com/@cloudflare",
@@ -2359,6 +2361,7 @@ func companiesPart1() []domain.CompanyProfile {
 					"https://app.otta.com/jobs/e4CavNqx",
 				},
 				domain.Rust: []string{
+					"https://www.linkedin.com/jobs/view/4041774900/",
 					"https://www.linkedin.com/jobs/view/4038005635/",
 					"https://startup.jobs/software-engineer-rust-cloudflare-3768119",
 				},
@@ -2368,9 +2371,10 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "CDN and a reverse proxy cloud provider, cybersecurity",
+			ShortDescription: "Web application security and performance",
 			Industries: []domain.Industry{
 				domain.IndustryDevOps,
+				domain.IndustryCyberSecurity,
 			},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
@@ -9896,6 +9900,7 @@ func companiesPart1() []domain.CompanyProfile {
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
 					"https://app.welcometothejungle.com/jobs/tsBqRgc_",
+					"https://www.linkedin.com/jobs/view/3984452580/",
 				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
