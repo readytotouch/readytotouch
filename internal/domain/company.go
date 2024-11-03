@@ -1,5 +1,7 @@
 package domain
 
+import "time"
+
 type (
 	Language              int
 	LanguageTitleKeywords string
@@ -34,11 +36,14 @@ const (
 type Vacancies = [7][]string
 
 type LinkedInProfile struct {
-	ID       int
-	IDs      []int
-	Alias    string
-	Name     string
-	Verified bool
+	ID                int
+	IDs               []int
+	Alias             string
+	Name              string
+	Followers         string
+	Employees         string
+	AssociatedMembers string
+	Verified          bool
 }
 
 type LinkedInProfileResponse struct {
@@ -56,22 +61,69 @@ type GitHubProfile struct {
 type GlassdoorProfile struct {
 	OverviewURL string
 	ReviewsURL  string
+	Jobs        string // will be mostly outdated
+	Reviews     string
+	Salaries    string
+	ReviewsRate string
 	Verified    bool
+}
+
+type BlindProfile struct {
+	Alias       string
+	Employees   string
+	Salary      string
+	Reviews     string
+	ReviewsRate string
+}
+
+type LevelsFyiProfile struct {
+	Alias     string
+	Employees string
+}
+
+type IndeedProfile struct {
+	Alias string // for now, will be more in the future
+}
+
+type Vacancy struct {
+	Title       string
+	Description string
+	URL         string
+	Date        time.Time
+}
+
+type LanguageProfile struct {
+	GitHubRepositoriesCount int
+	Vacancies               []Vacancy
 }
 
 type CompanyProfile struct {
 	ID                        int64       // populates from the CompanyAliasMap
 	Type                      CompanyType // populates from the CompanyTypeMap
 	Name                      string
-	URL                       string
+	URL                       string // Deprecated
+	Website                   string // Production website
+	Careers                   string // Careers page URL
+	About                     string // About URL
+	Blog                      string // Development blog URL
 	LinkedInProfile           LinkedInProfile
 	GitHubProfile             GitHubProfile
+	BlindProfile              BlindProfile
+	LevelsFyiProfile          LevelsFyiProfile
 	GlassdoorProfile          GlassdoorProfile
+	IndeedProfile             IndeedProfile
 	OttaProfileSlug           string
 	YouTubeChannelURL         string
-	GoMainLanguage            bool // Golang is the main language
-	Vacancies                 Vacancies
+	GoMainLanguage            bool      // Golang is the main language
+	Vacancies                 Vacancies // Deprecated
+	Languages                 []LanguageProfile
 	ShortDescription          string // Only for understanding what the company does
+	DealroomURL               string // Investors, funding, etc.
+	CrunchbaseURL             string // Investors, funding, etc.
+	PitchbookURL              string // Investors, funding, etc.
+	YahooFinanceURL           string // Market cap, etc.
+	GoogleFinanceURL          string // Market cap, etc.
+	YCombinatorURL            string // YC profile
 	Industries                []Industry
 	HasEmployeesFromCountries []Country
 }
