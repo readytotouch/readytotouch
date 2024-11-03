@@ -31,13 +31,7 @@ function checkCompanyStatusFromCache(companyName) {
     return "not_found";
 }
 
-function updateCompanyColor(status) {
-    const $companyName = getCompanyNameElement();
-
-    if ($companyName === null) {
-        return;
-    }
-
+function updateCompanyColor($companyName, status) {
     if (status === "exists") {
         $companyName.style.color = "#28a745";
     } else if (status === "not_found") {
@@ -48,14 +42,14 @@ function updateCompanyColor(status) {
 }
 
 function monitorCompanyNameChange() {
-    const $company = getCompanyNameElement();
+    const $companyName = getCompanyNameElement();
 
-    if ($company) {
-        const currentCompanyName = $company.textContent.trim().toLowerCase();
+    if ($companyName) {
+        const currentCompanyName = $companyName.textContent.trim().toLowerCase();
 
         const status = checkCompanyStatusFromCache(currentCompanyName);
 
-        updateCompanyColor(status);
+        updateCompanyColor($companyName, status);
     }
 }
 
@@ -70,8 +64,8 @@ function getCompanyNameElement() {
         return document.querySelector(".job-details-jobs-unified-top-card__company-name a");
     }
 
-    if (url.includes("welcometothejungle.com")) {
-        return null;
+    if (url.includes("app.welcometothejungle.com/jobs/")) {
+        return document.querySelector("h1 a");
     }
 
     return null;
