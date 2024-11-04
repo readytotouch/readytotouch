@@ -34,6 +34,7 @@ const (
 )
 
 type Vacancies = [7][]string
+type Languages = [7]LanguageProfile
 
 type LinkedInProfile struct {
 	ID                int
@@ -116,7 +117,7 @@ type CompanyProfile struct {
 	YouTubeChannelURL         string
 	GoMainLanguage            bool      // Golang is the main language
 	Vacancies                 Vacancies // Deprecated
-	Languages                 []LanguageProfile
+	Languages                 Languages
 	ShortDescription          string // Only for understanding what the company does
 	DealroomURL               string // Investors, funding, etc.
 	CrunchbaseURL             string // Investors, funding, etc.
