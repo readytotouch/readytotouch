@@ -4347,7 +4347,6 @@ func companiesPart2() []domain.CompanyProfile {
 		//	ID:      0,  // system
 		//	Type:    "", // system
 		//	Name:    "",
-		//	URL:     "",
 		//	Website: "",
 		//	Careers: "",
 		//	About:   "",
@@ -4360,10 +4359,9 @@ func companiesPart2() []domain.CompanyProfile {
 		//	},
 		//	GitHubProfile: domain.GitHubProfile{
 		//		Login:             "",
-		//		GoRepositoryCount: 0,
 		//		Verified:          false,
 		//	},
-		//	BlindProfile:     domain.BlindProfile{
+		//	BlindProfile: domain.BlindProfile{
 		//		Alias:       "",
 		//		Employees:   "",
 		//		Salary:      "",
@@ -4379,22 +4377,31 @@ func companiesPart2() []domain.CompanyProfile {
 		//		ReviewsURL:  "",
 		//		Verified:    false,
 		//	},
-		//	IndeedProfile:     domain.IndeedProfile{
+		//	IndeedProfile: domain.IndeedProfile{
 		//		Alias: "",
 		//	},
 		//	OttaProfileSlug:   "",
 		//	YouTubeChannelURL: "",
 		//	GoMainLanguage:    false,
-		//	Vacancies: domain.Vacancies{
-		//		domain.Go:      nil,
-		//		domain.Rust:    nil,
-		//		domain.Zig:     nil,
-		//		domain.Scala:   nil,
-		//		domain.Elixir:  nil,
-		//		domain.Clojure: nil,
-		//		domain.Haskell: nil,
+		//	Languages: domain.Languages{
+		//		domain.Go: {
+		//			GitHubRepositoriesCount: 0,
+		//			Vacancies:               []domain.Vacancy{
+		//				{
+		//					Title:            "",
+		//					ShortDescription: "",
+		//					URL:              "",
+		//					Date:             time.Time{},
+		//				},
+		//			},
+		//		},
+		//		domain.Rust:    {},
+		//		domain.Zig:     {},
+		//		domain.Scala:   {},
+		//		domain.Elixir:  {},
+		//		domain.Clojure: {},
+		//		domain.Haskell: {},
 		//	},
-		//	Languages:                 nil,
 		//	ShortDescription:          "",
 		//	DealroomURL:               "",
 		//	CrunchbaseURL:             "",
