@@ -217,13 +217,219 @@ func companiesPart3() []domain.CompanyProfile {
 				domain.Ukraine,
 			},
 		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Applied Systems",
+			Website: "https://www1.appliedsystems.com/en-us",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       162482,
+				Alias:    "applied-systems",
+				Name:     "Applied Systems",
+				Verified: true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias:       "",
+				Employees:   "",
+				Salary:      "",
+				Reviews:     "",
+				ReviewsRate: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "",
+				Employees: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+				Verified:    false,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Software Engineer (Golang/React)",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4068444754/",
+							Date:             mustDate("2024-11-04"),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription:          "",
+			DealroomURL:               "",
+			CrunchbaseURL:             "",
+			PitchbookURL:              "",
+			YahooFinanceURL:           "",
+			GoogleFinanceURL:          "",
+			YCombinatorURL:            "",
+			Industries:                []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Yum! Brands",
+			Website: "https://www.yum.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       3409,
+				Alias:    "yum-brands",
+				Name:     "Yum! Brands",
+				Verified: true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias:       "",
+				Employees:   "",
+				Salary:      "",
+				Reviews:     "",
+				ReviewsRate: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "",
+				Employees: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+				Verified:    false,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Sr. Software Engineer (GoLang)",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4027419578/",
+							Date:             mustDate("2024-11-01"),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription:          "",
+			DealroomURL:               "",
+			CrunchbaseURL:             "",
+			PitchbookURL:              "",
+			YahooFinanceURL:           "",
+			GoogleFinanceURL:          "",
+			YCombinatorURL:            "",
+			Industries:                []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Nokia",
+			Website: "https://www.nokia.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       1070,
+				Alias:    "nokia",
+				Name:     "Nokia",
+				Verified: true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias:       "",
+				Employees:   "",
+				Salary:      "",
+				Reviews:     "",
+				ReviewsRate: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "",
+				Employees: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+				Verified:    false,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Software Engineer — Golang developer",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4062804124/",
+							Date:             mustDate("2024-10-31"),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription:          "",
+			DealroomURL:               "",
+			CrunchbaseURL:             "",
+			PitchbookURL:              "",
+			YahooFinanceURL:           "",
+			GoogleFinanceURL:          "",
+			YCombinatorURL:            "",
+			Industries:                []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{},
+		},
 
 		// Template
 		//{
 		//	ID:      0,  // system
 		//	Type:    "", // system
 		//	Name:    "",
-		//	URL:     "",
 		//	Website: "",
 		//	Careers: "",
 		//	About:   "",

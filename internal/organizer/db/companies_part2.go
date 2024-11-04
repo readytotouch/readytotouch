@@ -4347,7 +4347,6 @@ func companiesPart2() []domain.CompanyProfile {
 		//	ID:      0,  // system
 		//	Type:    "", // system
 		//	Name:    "",
-		//	URL:     "",
 		//	Website: "",
 		//	Careers: "",
 		//	About:   "",
