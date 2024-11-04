@@ -383,6 +383,12 @@ var (
 		"emnify":                              377, // emnify
 		"moodys-corporation":                  378, // Moody&#39;s Corporation
 		"lytxinc":                             379, // Lytx, Inc.
+		"applied-systems":                     380, // Applied Systems
+		"yum-brands":                          381, // Yum! Brands
+		"nokia":                               382, // Nokia
+		"flyrinc":                             383, // FLYR
+		"we-are-venatus":                      384, // Venatus
+		"rocket-lab-limited":                  385, // Rocket Lab
 
 	}
 )
