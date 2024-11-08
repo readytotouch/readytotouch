@@ -390,6 +390,15 @@ var (
 		"millennium-partners":                 396, // Millennium
 		"mondoo":                              397, // Mondoo
 		"fullinfo":                            398, // fullinfo
+		"bloomberg":                           399, // Bloomberg
+		"sainsburys":                          400, // Sainsbury&#39;s
+		"stratascale-llc":                     401, // Stratascale — An SHI Company
+		"gartner":                             402, // Gartner
+		"extreme-networks":                    403, // Extreme Networks
+		"yalo":                                404, // Yalo
+		"remarkable-as":                       405, // reMarkable
+		"synopsys":                            406, // Synopsys
+		"pubmatic":                            407, // PubMatic
 		"capital-one":                         375, // Capital One
 		"dynatrace":                           376, // Dynatrace
 		"emnify":                              377, // emnify
