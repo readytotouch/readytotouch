@@ -78,7 +78,7 @@ func (c *Controller) GolangCompaniesUkraine(ctx *gin.Context) {
 	)
 
 	for _, company := range source {
-		if company.Vacancies[domain.Go] == nil {
+		if len(company.Languages[domain.Go].Vacancies) == 0 && company.Vacancies[domain.Go] == nil {
 			continue
 		}
 
@@ -124,13 +124,16 @@ func (c *Controller) Companies(ctx *gin.Context) {
 		if company.Type == "" {
 			company.Type = organizers.ToCompanyType(company.LinkedInProfile.Alias)
 		}
+		if company.Website == "" {
+			company.Website = company.URL
+		}
 
-		// nil slice mean skip company for the language
-		if company.Vacancies[organizerFeature.Organizer.Language] == nil {
+		language := organizerFeature.Organizer.Language
+		if len(company.Languages[language].Vacancies) == 0 && company.Vacancies[language] == nil {
 			continue
 		}
 
-		if organizerFeature.Organizer.Language == domain.Go {
+		if language == domain.Go {
 			// NOP
 		} else {
 			company.GitHubProfile.GoRepositoryCount = 0
@@ -209,6 +212,9 @@ func (c *Controller) Company(ctx *gin.Context) {
 
 	if company.Type == "" {
 		company.Type = organizers.ToCompanyType(company.LinkedInProfile.Alias)
+	}
+	if company.Website == "" {
+		company.Website = company.URL
 	}
 
 	organizerFeature, ok := c.organizerFeature(featurePath)
