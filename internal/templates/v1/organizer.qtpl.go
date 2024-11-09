@@ -101,7 +101,7 @@ func StreamOrganizerStatic(qw422016 *qt422016.Writer, companies []Company, unive
                                 <td>
                                     <div class="table__item name">
                                         <a class="table__item-link" href="`)
-		qw422016.E().S(company.URL)
+		qw422016.E().S(company.Website)
 		qw422016.N().S(`">`)
 		qw422016.E().S(company.Name)
 		qw422016.N().S(`</a>
@@ -178,7 +178,7 @@ func StreamOrganizerStatic(qw422016 *qt422016.Writer, companies []Company, unive
                                         <div class="table__link-group">
                                             <img src="/assets/images/pages/common/square.svg">
                                             <a class="table__item-link" href="`)
-		qw422016.E().S(similarwebURL(company.URL))
+		qw422016.E().S(similarwebURL(company.Website))
 		qw422016.N().S(`">Overview</a>
                                         </div>
                                     </div>

@@ -7,10 +7,13 @@ import (
 func companiesPart3() []domain.CompanyProfile {
 	return []domain.CompanyProfile{
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Capital One",
-			URL:  "https://www.capitalonecareers.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Capital One",
+			Website: "https://www.capitalonecareers.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:       1419,
 				Alias:    "capital-one",
@@ -22,26 +25,53 @@ func companiesPart3() []domain.CompanyProfile {
 				GoRepositoryCount: 5,
 				Verified:          false,
 			},
+			BlindProfile:     domain.BlindProfile{},
+			LevelsFyiProfile: domain.LevelsFyiProfile{},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Capital-One-EI_IE3736.11,22.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Capital-One-Reviews-E3736.htm",
 				Verified:    true,
 			},
+			IndeedProfile:     domain.IndeedProfile{},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/4058793283/",
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Software Engineer, Back End (Golang or Scala, AWS)",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4060428354/",
+							Date:             mustDate("2024-11-01"),
+						},
+					},
 				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
+				domain.Rust: {},
+				domain.Zig:  {},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Software Engineer, Back End (Golang or Scala, AWS)",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4060428354/",
+							Date:             mustDate("2024-11-01"),
+						},
+					},
+				},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "American bank holding company",
+			DealroomURL:      "",
+			CrunchbaseURL:    "",
+			PitchbookURL:     "",
+			YahooFinanceURL:  "",
+			GoogleFinanceURL: "",
+			YCombinatorURL:   "",
 			Industries: []domain.Industry{
 				domain.IndustryFinTech,
 			},
@@ -134,10 +164,13 @@ func companiesPart3() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Moody's Corporation",
-			URL:  "https://www.moodys.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Moody's Corporation",
+			Website: "https://www.moodys.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:       165033,
 				Alias:    "moodys-corporation",
@@ -149,26 +182,43 @@ func companiesPart3() []domain.CompanyProfile {
 				GoRepositoryCount: 0,
 				Verified:          false,
 			},
+			BlindProfile:     domain.BlindProfile{},
+			LevelsFyiProfile: domain.LevelsFyiProfile{},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Moody-s-EI_IE11303.11,18.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Moody-s-Reviews-E11303.htm",
 				Verified:    true,
 			},
+			IndeedProfile:     domain.IndeedProfile{},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: nil,
-				domain.Rust: []string{
-					"https://www.linkedin.com/jobs/view/4060347505/",
+			Languages: domain.Languages{
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Software Engineer — Rust",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4060347505/",
+							Date:             mustDate("2024-11-01"),
+						},
+					},
 				},
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "American business and financial services company",
+			DealroomURL:      "",
+			CrunchbaseURL:    "",
+			PitchbookURL:     "",
+			YahooFinanceURL:  "",
+			GoogleFinanceURL: "",
+			YCombinatorURL:   "",
 			Industries: []domain.Industry{
 				domain.IndustryFinTech,
 			},
@@ -1591,7 +1641,7 @@ func companiesPart3() []domain.CompanyProfile {
 		//					Title:            "",
 		//					ShortDescription: "",
 		//					URL:              "",
-		//					Date:             time.Time{},
+		//					Date:             mustDate(""),
 		//				},
 		//			},
 		//		},

@@ -13,9 +13,10 @@ import (
 
 func main() {
 	var (
-		maxID = int64(0)
-		pairs = make([]*dev.CompanyCodePair, len(db.Companies()))
-		names = make([]string, len(db.Companies()))
+		companies = db.Companies()
+		maxID     = int64(0)
+		pairs     = make([]*dev.CompanyCodePair, len(companies))
+		names     = make([]string, len(companies))
 	)
 
 	// Assert that all company aliases are present in the map
@@ -25,7 +26,7 @@ func main() {
 		}
 	}
 
-	for i, company := range db.Companies() {
+	for i, company := range companies {
 		pair := &dev.CompanyCodePair{
 			ID:    organizers.CompanyAliasMap[company.LinkedInProfile.Alias],
 			Name:  company.LinkedInProfile.Name,

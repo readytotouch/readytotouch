@@ -248,7 +248,7 @@ var (
 		"paessler-gmbh":                       234, // Paessler
 		"hasura":                              235, // Hasura
 		"airahome":                            236, // Aira
-		"ddn-storage":                         237, // DDN
+		"ddn":                                 386, // DDN
 		"starlingbank":                        238, // Starling Bank
 		"spice-ai":                            239, // Spice AI
 		"algolia":                             240, // Algolia
@@ -328,7 +328,7 @@ var (
 		"voodoo.io":                           319, // Voodoo
 		"home24":                              320, // home24
 		"australian-broadcasting-corporation": 321, // Australian Broadcasting Corporation
-		"go-nitro":                            322, // Nitro Software, Inc.
+		"go-nitro":                            322, // Nitro Software
 		"appodeal":                            323, // Appodeal
 		"talamobile":                          324, // Tala
 		"macrohealth":                         325, // MacroHealth
@@ -378,6 +378,27 @@ var (
 		"hiive":                               372, // Hiive
 		"expressvpn":                          373, // ExpressVPN
 		"shuttle-yc":                          374, // Shuttle
+		"second-spectrum":                     387, // Second Spectrum
+		"worldpay":                            388, // Worldpay
+		"exabeam":                             389, // Exabeam
+		"selby-jennings":                      390, // Selby Jennings
+		"databeaconaero":                      391, // DataBeacon
+		"wearemntn":                           392, // MNTN
+		"getwriter":                           393, // Writer
+		"dlocal":                              394, // dLocal
+		"clearstory-build":                    395, // Clearstory.build
+		"millennium-partners":                 396, // Millennium
+		"mondoo":                              397, // Mondoo
+		"fullinfo":                            398, // fullinfo
+		"bloomberg":                           399, // Bloomberg
+		"sainsburys":                          400, // Sainsbury&#39;s
+		"stratascale-llc":                     401, // Stratascale — An SHI Company
+		"gartner":                             402, // Gartner
+		"extreme-networks":                    403, // Extreme Networks
+		"yalo":                                404, // Yalo
+		"remarkable-as":                       405, // reMarkable
+		"synopsys":                            406, // Synopsys
+		"pubmatic":                            407, // PubMatic
 		"capital-one":                         375, // Capital One
 		"dynatrace":                           376, // Dynatrace
 		"emnify":                              377, // emnify

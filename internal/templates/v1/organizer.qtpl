@@ -80,7 +80,7 @@
                             <tr class="table__item">
                                 <td>
                                     <div class="table__item name">
-                                        <a class="table__item-link" href="{%s company.URL %}">{%s company.Name %}</a>
+                                        <a class="table__item-link" href="{%s company.Website %}">{%s company.Name %}</a>
                                     </div>
                                 </td>
                                 <td>
@@ -129,7 +129,7 @@
                                     <div class="table__item">
                                         <div class="table__link-group">
                                             <img src="/assets/images/pages/common/square.svg">
-                                            <a class="table__item-link" href="{%s similarwebURL(company.URL) %}">Overview</a>
+                                            <a class="table__item-link" href="{%s similarwebURL(company.Website) %}">Overview</a>
                                         </div>
                                     </div>
                                 </td>
