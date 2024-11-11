@@ -1627,40 +1627,69 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Tech | Redis
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Redis",
-			URL:  "https://redis.io/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Redis",
+			Website: "https://redis.io/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    2014725,
-				Alias: "redisinc",
-				Name:  "Redis",
+				ID:       2014725,
+				Alias:    "redisinc",
+				Name:     "Redis",
+				Verified: true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "redis",
 				GoRepositoryCount: 2,
 			},
+			BlindProfile:     domain.BlindProfile{},
+			LevelsFyiProfile: domain.LevelsFyiProfile{},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Redis-EI_IE928722.11,16.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Redis-Reviews-E928722.htm",
 			},
+			IndeedProfile:     domain.IndeedProfile{},
 			OttaProfileSlug:   "Redis",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/4021697979/",
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Golang Software Engineer",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4021697979/",
+							Date:             mustDate("2024-10-28"),
+						},
+					},
 				},
-				domain.Rust: []string{
-					"https://www.linkedin.com/jobs/view/3963199017/",
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Rust Senior Software Engineer",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/3963199017/",
+							Date:             mustDate("2024-11-11"),
+						},
+					},
 				},
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "Key-value database",
+			DealroomURL:      "",
+			CrunchbaseURL:    "",
+			PitchbookURL:     "",
+			YahooFinanceURL:  "",
+			GoogleFinanceURL: "",
+			YCombinatorURL:   "",
 			Industries: []domain.Industry{
 				domain.IndustryDevOps,
 			},
