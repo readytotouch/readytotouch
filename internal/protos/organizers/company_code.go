@@ -399,6 +399,11 @@ var (
 		"remarkable-as":                       405, // reMarkable
 		"synopsys":                            406, // Synopsys
 		"pubmatic":                            407, // PubMatic
+		"fanatics-inc-":                       408, // Fanatics
+		"kantox":                              409, // Kantox
+		"smartrentdotcom":                     410, // SmartRent
+		"join-denim":                          411, // Denim
+		"thryve-earth":                        412, // Thryve.Earth
 		"capital-one":                         375, // Capital One
 		"dynatrace":                           376, // Dynatrace
 		"emnify":                              377, // emnify
