@@ -215,6 +215,7 @@ func main() {
 		GET("/wip/companies-and-connections/ukraine", cacController.Ukraine).
 		GET("/wip/companies-and-connections/czechia", cacController.Czechia).
 		GET("/wip/companies-and-connections/poland", cacController.Poland).
+		GET("/wip/companies-and-connections/brazil", cacController.Brazil).
 		GET("/api/v1/companies-and-connections/companies.json", cacController.Companies).
 		POST("/api/v1/companies-and-connections/companies.json", cacController.AddCompany).
 		DELETE("/api/v1/companies-and-connections/companies.json", cacController.DeleteCompany)

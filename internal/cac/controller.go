@@ -37,6 +37,10 @@ func (c *Controller) Poland(ctx *gin.Context) {
 	c.Index(ctx)
 }
 
+func (c *Controller) Brazil(ctx *gin.Context) {
+	c.Index(ctx)
+}
+
 func (c *Controller) Companies(ctx *gin.Context) {
 	var (
 		authUserID = domain.ContextGetUserID(ctx)
