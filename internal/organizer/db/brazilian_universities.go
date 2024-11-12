@@ -78,18 +78,27 @@ func BrazilianUniversities() []domain.University {
 		},
 		{
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:       1379596,
+				ID:       38307,
 				Alias:    "ufpr",
 				Name:     "Universidade Federal do Paraná",
+				Verified: true,
+			},
+		},
+		{
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       760298,
+				Alias:    "ufcinforma",
+				Name:     "Federal University of Ceara",
 				Verified: true,
 			},
 		},
 
 		//{
 		//	LinkedInProfile: domain.LinkedInProfile{
-		//		ID:    0,
-		//		Alias: "",
-		//		Name:  "",
+		//		ID:       0,
+		//		Alias:    "",
+		//		Name:     "",
+		//		Verified: false,
 		//	},
 		//},
 	}
