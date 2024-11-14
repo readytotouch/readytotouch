@@ -404,6 +404,14 @@ var (
 		"smartrentdotcom":                     410, // SmartRent
 		"join-denim":                          411, // Denim
 		"thryve-earth":                        412, // Thryve.Earth
+		"zubale":                              413, // Zubale
+		"priceline-com":                       414, // Priceline
+		"new-relic-inc-":                      415, // New Relic
+		"riskified":                           416, // Riskified
+		"omilia-ltd":                          417, // Omilia — Conversational Intelligence
+		"rakuten-viber":                       418, // Rakuten Viber
+		"nebius":                              419, // Nebius
+		"zoom":                                420, // Zoom
 		"capital-one":                         375, // Capital One
 		"dynatrace":                           376, // Dynatrace
 		"emnify":                              377, // emnify
