@@ -596,42 +596,69 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Social | LinkedIn
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "LinkedIn",
-			URL:  "https://www.linkedin.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "LinkedIn",
+			Website: "https://www.linkedin.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    1337,
-				Alias: "linkedin",
-				Name:  "LinkedIn",
+				ID:       1337,
+				Alias:    "linkedin",
+				Name:     "LinkedIn",
+				Verified: true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "linkedin",
 				GoRepositoryCount: 8,
 			},
+			BlindProfile:     domain.BlindProfile{},
+			LevelsFyiProfile: domain.LevelsFyiProfile{},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-LinkedIn-EI_IE34865.11,19.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/LinkedIn-Reviews-E34865.htm",
 			},
+			IndeedProfile:     domain.IndeedProfile{},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/4023583351/",
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Staff Software Engineer (Rust & Go)",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4023583351/",
+							Date:             mustDate("2024-09-16"),
+						},
+					},
 				},
-				domain.Rust: []string{
-					"https://www.linkedin.com/jobs/view/4023579503/",
-					"https://www.linkedin.com/jobs/view/4023583351/",
-					"https://www.linkedin.com/jobs/view/3981396826/",
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Software Engineer — Rust Expertise",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4073651431/",
+							Date:             mustDate("2024-11-14"),
+						},
+					},
 				},
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "Business and employment-focused social media platform",
+			DealroomURL:      "",
+			CrunchbaseURL:    "",
+			PitchbookURL:     "",
+			YahooFinanceURL:  "",
+			GoogleFinanceURL: "",
+			YCombinatorURL:   "",
 			Industries: []domain.Industry{
 				domain.IndustrySocialMedia,
 			},
@@ -4567,41 +4594,59 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Arenko
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Arenko",
-			URL:  "https://arenko.group/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Arenko",
+			Website: "https://arenko.group/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    10288973,
-				Alias: "arenko-cleantech",
-				Name:  "Arenko",
+				ID:       10288973,
+				Alias:    "arenko-cleantech",
+				Name:     "Arenko",
+				Verified: true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "arenko-group",
 				GoRepositoryCount: 2,
 			},
+			BlindProfile:     domain.BlindProfile{},
+			LevelsFyiProfile: domain.LevelsFyiProfile{},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Arenko-Group-EI_IE4554199.11,23.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Arenko-Group-Reviews-E4554199.htm",
 			},
+			IndeedProfile:     domain.IndeedProfile{},
 			OttaProfileSlug:   "Arenko-Group",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/4037978333/",
-					"https://www.linkedin.com/jobs/view/3889419131/",
-					"https://app.otta.com/jobs/tvHMOMCd",
-					"https://app.otta.com/jobs/hKvg-QNr",
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Software Engineer (Golang)",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4037978333/",
+							Date:             mustDate("2024-11-14"),
+						},
+					},
 				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription:          "Technology provider enabling the clean energy transition",
+			DealroomURL:               "",
+			CrunchbaseURL:             "",
+			PitchbookURL:              "",
+			YahooFinanceURL:           "",
+			GoogleFinanceURL:          "",
+			YCombinatorURL:            "",
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
@@ -5113,10 +5158,13 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | SumUp
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "SumUp",
-			URL:  "https://www.sumup.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "SumUp",
+			Website: "https://www.sumup.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:       2619512,
 				Alias:    "sumup",
@@ -5128,28 +5176,53 @@ func companiesPart1() []domain.CompanyProfile {
 				GoRepositoryCount: 11,
 				Verified:          true,
 			},
+			BlindProfile:     domain.BlindProfile{},
+			LevelsFyiProfile: domain.LevelsFyiProfile{},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-SumUp-EI_IE673829.11,16.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/SumUp-Reviews-E673829.htm",
 				Verified:    true,
 			},
+			IndeedProfile:     domain.IndeedProfile{},
 			OttaProfileSlug:   "sumup",
 			YouTubeChannelURL: "https://www.youtube.com/@SumUpGlobal",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/3848461191/",
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Backend Software Engineer (Golang)",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/3848461191/",
+							Date:             mustDate("2024-05-14"),
+						},
+					},
 				},
-				domain.Rust:  nil,
-				domain.Zig:   nil,
-				domain.Scala: nil,
-				domain.Elixir: []string{
-					"https://www.linkedin.com/jobs/view/4014335109/", // Senior Backend Engineer (Elixir & Go)
+				domain.Rust:  {},
+				domain.Zig:   {},
+				domain.Scala: {},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "(Senior) Backend Engineer — Elixir",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4056886705/",
+							Date:             mustDate("2024-11-14"),
+						},
+					},
 				},
-				domain.Clojure: nil,
-				domain.Haskell: nil,
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "Payments company",
+			DealroomURL:      "",
+			CrunchbaseURL:    "",
+			PitchbookURL:     "",
+			YahooFinanceURL:  "",
+			GoogleFinanceURL: "",
+			YCombinatorURL:   "",
 			Industries: []domain.Industry{
 				domain.IndustryFinTech,
 			},
@@ -5869,41 +5942,61 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Snyk
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Snyk",
-			URL:  "https://snyk.io/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Snyk",
+			Website: "https://snyk.io/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    10043614,
-				Alias: "snyk",
-				Name:  "Snyk",
+				ID:       10043614,
+				Alias:    "snyk",
+				Name:     "Snyk",
+				Verified: true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "snyk",
 				GoRepositoryCount: 22,
 			},
+			BlindProfile:     domain.BlindProfile{},
+			LevelsFyiProfile: domain.LevelsFyiProfile{},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Snyk-EI_IE2094989.11,15.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Snyk-Reviews-E2094989.htm",
 			},
+			IndeedProfile:     domain.IndeedProfile{},
 			OttaProfileSlug:   "Snyk",
 			YouTubeChannelURL: "https://www.youtube.com/@Snyksec",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/3903469567/",
-					"https://app.otta.com/jobs/AOeyI9AM",
-					"https://app.otta.com/jobs/HX7eW7pM",
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Software Engineer (Go)",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4006143681/",
+							Date:             mustDate("2024-11-14"),
+						},
+					},
 				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
-			ShortDescription: "",
-			Industries:       []domain.Industry{},
+			ShortDescription:          "",
+			DealroomURL:               "",
+			CrunchbaseURL:             "",
+			PitchbookURL:              "",
+			YahooFinanceURL:           "",
+			GoogleFinanceURL:          "",
+			YCombinatorURL:            "",
+			Industries:                []domain.Industry{},
+			HasEmployeesFromCountries: nil,
 		},
 
 		// Some | Sinch
