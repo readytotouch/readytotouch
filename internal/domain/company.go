@@ -55,7 +55,7 @@ type LinkedInProfileResponse struct {
 
 type GitHubProfile struct {
 	Login             string
-	GoRepositoryCount int
+	GoRepositoryCount int // Deprecated
 	Verified          bool
 }
 

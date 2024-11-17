@@ -372,6 +372,12 @@ func companiesPart1() []domain.CompanyProfile {
 							URL:              "https://www.linkedin.com/jobs/view/4036994106/",
 							Date:             mustDate("2024-10-25"),
 						},
+						{
+							Title:            "Software Engineer (Go)",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4075807665/",
+							Date:             mustDate("2024-11-16"),
+						},
 					},
 				},
 				domain.Rust: {},
@@ -1531,10 +1537,13 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Tech | Elastic
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Elastic",
-			URL:  "https://www.elastic.co/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Elastic",
+			Website: "https://www.elastic.co/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:    814025,
 				Alias: "elastic-co",
@@ -1544,25 +1553,43 @@ func companiesPart1() []domain.CompanyProfile {
 				Login:             "elastic",
 				GoRepositoryCount: 124,
 			},
+			BlindProfile:     domain.BlindProfile{},
+			LevelsFyiProfile: domain.LevelsFyiProfile{},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Elastic-EI_IE751551.11,18.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Elastic-Reviews-E751551.htm",
 			},
+			IndeedProfile:     domain.IndeedProfile{},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/3999755835/",
+			Vacancies:         domain.Vacancies{},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Go Developer",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4001888204/",
+							Date:             mustDate("2024-11-14"),
+						},
+					},
 				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "Search engine",
+			DealroomURL:      "",
+			CrunchbaseURL:    "",
+			PitchbookURL:     "",
+			YahooFinanceURL:  "",
+			GoogleFinanceURL: "",
+			YCombinatorURL:   "",
 			Industries: []domain.Industry{
 				domain.IndustryDevOps,
 			},
@@ -3745,38 +3772,59 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Delivery Hero
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Delivery Hero",
-			URL:  "https://www.deliveryhero.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Delivery Hero",
+			Website: "https://www.deliveryhero.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    2393200,
-				Alias: "delivery-hero-se",
-				Name:  "Delivery Hero",
+				ID:       2393200,
+				Alias:    "delivery-hero-se",
+				Name:     "Delivery Hero",
+				Verified: true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "deliveryhero",
 				GoRepositoryCount: 11,
 			},
+			BlindProfile:     domain.BlindProfile{},
+			LevelsFyiProfile: domain.LevelsFyiProfile{},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Delivery-Hero-EI_IE504556.11,24.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Delivery-Hero-Reviews-E504556.htm",
 			},
+			IndeedProfile:     domain.IndeedProfile{},
 			OttaProfileSlug:   "Delivery-Hero",
 			YouTubeChannelURL: "https://www.youtube.com/@DeliveryHeroDH",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/3908507037/",
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "(Junior) Software Engineer (Golang) — Demand Domain (AdTech)",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4023882932/",
+							Date:             mustDate("2024-11-16"),
+						},
+					},
 				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "Delivery platform",
+			DealroomURL:      "",
+			CrunchbaseURL:    "",
+			PitchbookURL:     "",
+			YahooFinanceURL:  "",
+			GoogleFinanceURL: "",
+			YCombinatorURL:   "",
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
@@ -8486,38 +8534,59 @@ func companiesPart1() []domain.CompanyProfile {
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Swiss Post",
-			URL:  "https://www.post.ch/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Swiss Post",
+			Website: "https://www.post.ch/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    338556,
-				Alias: "swiss-post",
-				Name:  "Swiss Post",
+				ID:       338556,
+				Alias:    "swiss-post",
+				Name:     "Swiss Post",
+				Verified: true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "swisspost",
 				GoRepositoryCount: 5,
 			},
+			BlindProfile:     domain.BlindProfile{},
+			LevelsFyiProfile: domain.LevelsFyiProfile{},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Die-Schweizerische-Post-EI_IE12870.11,34.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Die-Schweizerische-Post-Reviews-E12870.htm",
 			},
+			IndeedProfile:     domain.IndeedProfile{},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/4040049773/",
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Go Developer",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4077388502/",
+							Date:             mustDate("2024-11-16"),
+						},
+					},
 				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "Postal service",
+			DealroomURL:      "",
+			CrunchbaseURL:    "",
+			PitchbookURL:     "",
+			YahooFinanceURL:  "",
+			GoogleFinanceURL: "",
+			YCombinatorURL:   "",
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
@@ -9601,40 +9670,60 @@ func companiesPart1() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Ebury",
-			URL:  "https://ebury.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Ebury",
+			Website: "https://ebury.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    963919,
-				Alias: "eburyfintech",
-				Name:  "Ebury",
+				ID:       963919,
+				Alias:    "eburyfintech",
+				Name:     "Ebury",
+				Verified: true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
 				GoRepositoryCount: 0,
 				Verified:          false,
 			},
+			BlindProfile:     domain.BlindProfile{},
+			LevelsFyiProfile: domain.LevelsFyiProfile{},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Ebury-Partners-EI_IE823195.11,25.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Ebury-Partners-Reviews-E823195.htm",
 			},
+			IndeedProfile:     domain.IndeedProfile{},
 			OttaProfileSlug:   "Ebury",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/3990418832/",
-					"https://www.linkedin.com/jobs/view/3990418832/",
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Golang Developer",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/3990418832/",
+							Date:             mustDate("2024-11-16"),
+						},
+					},
 				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "Ebury is a hyper-growth FinTech firm",
+			DealroomURL:      "",
+			CrunchbaseURL:    "",
+			PitchbookURL:     "",
+			YahooFinanceURL:  "",
+			GoogleFinanceURL: "",
+			YCombinatorURL:   "",
 			Industries: []domain.Industry{
 				domain.IndustryFinTech,
 			},
@@ -10743,10 +10832,13 @@ func companiesPart1() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Jack Henry",
-			URL:  "https://www.jackhenry.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Jack Henry",
+			Website: "https://www.jackhenry.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:       6970,
 				Alias:    "jack-henry",
@@ -10757,27 +10849,49 @@ func companiesPart1() []domain.CompanyProfile {
 				Login:             "jkhy",
 				GoRepositoryCount: 0,
 			},
+			BlindProfile:     domain.BlindProfile{},
+			LevelsFyiProfile: domain.LevelsFyiProfile{},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Jack-Henry-and-Associates-EI_IE1543.11,36.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Jack-Henry-and-Associates-Reviews-E1543.htm",
 				Verified:    true, // openCompany ???
 			},
+			IndeedProfile:     domain.IndeedProfile{},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/4057290510/", // Professional experience programming in Golang
-					"https://www.linkedin.com/jobs/view/4044914356/",
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Software Engineer: Golang/Back End",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4057290510/",
+							Date:             mustDate("2024-10-25"),
+						},
+						{
+							Title:            "Staff Engineer: Golang/GCP Infrastructure",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4075815840//",
+							Date:             mustDate("2024-11-16"),
+						},
+					},
 				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "Financial technology company that strengthens connections between people and their financial institutions",
+			DealroomURL:      "",
+			CrunchbaseURL:    "",
+			PitchbookURL:     "",
+			YahooFinanceURL:  "",
+			GoogleFinanceURL: "",
+			YCombinatorURL:   "",
 			Industries: []domain.Industry{
 				domain.IndustryFinTech,
 			},
@@ -10828,10 +10942,13 @@ func companiesPart1() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Zalando",
-			URL:  "https://jobs.zalando.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Zalando",
+			Website: "https://jobs.zalando.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:       698916,
 				Alias:    "zalando",
@@ -10843,28 +10960,53 @@ func companiesPart1() []domain.CompanyProfile {
 				GoRepositoryCount: 5,
 				Verified:          false,
 			},
+			BlindProfile:     domain.BlindProfile{},
+			LevelsFyiProfile: domain.LevelsFyiProfile{},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Zalando-EI_IE613421.11,18.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Zalando-Reviews-E613421.htm",
 				Verified:    true,
 			},
+			IndeedProfile:     domain.IndeedProfile{},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/3959001476/",
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Software Engineer Golang",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/3978516002/",
+							Date:             mustDate("2024-11-15"),
+						},
+					},
 				},
-				domain.Rust: nil,
-				domain.Zig:  nil,
-				domain.Scala: []string{
-					"https://www.linkedin.com/jobs/view/4055507332/",
+				domain.Rust: {},
+				domain.Zig:  {},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Software Engineer (Scala / Kotlin)",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4055507332/",
+							Date:             mustDate("2024-11-13"),
+						},
+					},
 				},
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "Online fashion platform",
+			DealroomURL:      "",
+			CrunchbaseURL:    "",
+			PitchbookURL:     "",
+			YahooFinanceURL:  "",
+			GoogleFinanceURL: "",
+			YCombinatorURL:   "",
 			Industries: []domain.Industry{
 				domain.IndustryECommerce,
 			},
