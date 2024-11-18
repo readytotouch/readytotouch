@@ -412,6 +412,26 @@ var (
 		"rakuten-viber":                       418, // Rakuten Viber
 		"nebius":                              419, // Nebius
 		"zoom":                                420, // Zoom
+		"lexisnexis-risk-solutions":           421, // LexisNexis Risk Solutions
+		"skidos-games":                        422, // SKIDOS
+		"singlestore":                         423, // SingleStore
+		"diabolocom":                          424, // Diabolocom
+		"flexaihq":                            425, // FlexAI
+		"stockbit":                            426, // Stockbit
+		"teaching-strategies-llc":             427, // Teaching Strategies, LLC
+		"sophos":                              428, // Sophos
+		"macquariegroup":                      429, // Macquarie Group
+		"ayoconnect":                          430, // Ayoconnect
+		"campingworld":                        431, // Camping World
+		"shopee":                              432, // Shopee
+		"guardsquare":                         433, // Guardsquare
+		"jfrog-ltd":                           434, // JFrog
+		"hp":                                  435, // HP
+		"mirantis":                            436, // Mirantis
+		"zscaler":                             437, // Zscaler
+		"purestorage":                         438, // Pure Storage
+		"teya-global":                         439, // Teya
+		"tomtom":                              440, // TomTom
 		"capital-one":                         375, // Capital One
 		"dynatrace":                           376, // Dynatrace
 		"emnify":                              377, // emnify
