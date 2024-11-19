@@ -681,78 +681,6 @@ func companiesPart3() []domain.CompanyProfile {
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
-
-		
-		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "LexisNexis Risk Solutions",
-			Website: "https://risk.lexisnexis.com/",
-			Careers: "",
-			About:   "",
-			Blog:    "",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:       10371941,
-				Alias:    "lexisnexis-risk-solutions",
-				Name:     "LexisNexis Risk Solutions",
-				Verified: true,
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "lexisnexis-risk-open-source",
-				Verified: false,
-			},
-			BlindProfile: domain.BlindProfile{
-				Alias:       "",
-				Employees:   "",
-				Salary:      "",
-				Reviews:     "",
-				ReviewsRate: "",
-			},
-			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias:     "",
-				Employees: "",
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
-				Verified:    false,
-			},
-			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
-			},
-			OttaProfileSlug:   "",
-			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
-			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:            "Go Lang Full Stack Developer",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4072146682/",
-							Date:             mustDate("2024-11-08"),
-						},
-					},
-				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-			ShortDescription:          "",
-			DealroomURL:               "",
-			CrunchbaseURL:             "",
-			PitchbookURL:              "",
-			YahooFinanceURL:           "",
-			GoogleFinanceURL:          "",
-			YCombinatorURL:            "",
-			Industries:                []domain.Industry{},
-			HasEmployeesFromCountries: []domain.Country{},
-		},
-
 		{
 			ID:      0,  // system
 			Type:    "", // system
@@ -795,7 +723,7 @@ func companiesPart3() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 2,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:            "Senior GO Developer",
@@ -865,7 +793,7 @@ func companiesPart3() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 6,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:            "Staff Backend Engineer (Go)",
@@ -892,13 +820,12 @@ func companiesPart3() []domain.CompanyProfile {
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
-
 		{
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "GEICO",
-			Website: "https://careers.geico.com/",
-			Careers: "",
+			Website: "https://geico.com/",
+			Careers: "https://careers.geico.com/",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -962,7 +889,6 @@ func companiesPart3() []domain.CompanyProfile {
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
-
 		{
 			ID:      0,  // system
 			Type:    "", // system
@@ -978,7 +904,7 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified: true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "invia-de",
+				Login:    "",
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
@@ -1032,7 +958,6 @@ func companiesPart3() []domain.CompanyProfile {
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
-
 		{
 			ID:      0,  // system
 			Type:    "", // system
@@ -1048,7 +973,7 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified: true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "airslate-oss",
+				Login:    "",
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
@@ -1092,17 +1017,18 @@ func companiesPart3() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription:          "",
-			DealroomURL:               "",
-			CrunchbaseURL:             "",
-			PitchbookURL:              "",
-			YahooFinanceURL:           "",
-			GoogleFinanceURL:          "",
-			YCombinatorURL:            "",
-			Industries:                []domain.Industry{},
-			HasEmployeesFromCountries: []domain.Country{},
+			ShortDescription: "",
+			DealroomURL:      "",
+			CrunchbaseURL:    "",
+			PitchbookURL:     "",
+			YahooFinanceURL:  "",
+			GoogleFinanceURL: "",
+			YCombinatorURL:   "",
+			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+			},
 		},
-
 		{
 			ID:      0,  // system
 			Type:    "", // system
@@ -1162,17 +1088,18 @@ func companiesPart3() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription:          "",
-			DealroomURL:               "",
-			CrunchbaseURL:             "",
-			PitchbookURL:              "",
-			YahooFinanceURL:           "",
-			GoogleFinanceURL:          "",
-			YCombinatorURL:            "",
-			Industries:                []domain.Industry{},
+			ShortDescription: "",
+			DealroomURL:      "",
+			CrunchbaseURL:    "",
+			PitchbookURL:     "",
+			YahooFinanceURL:  "",
+			GoogleFinanceURL: "",
+			YCombinatorURL:   "",
+			Industries: []domain.Industry{
+				domain.IndustryGameDev,
+			},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
-
 		{
 			ID:      0,  // system
 			Type:    "", // system
@@ -1221,7 +1148,7 @@ func companiesPart3() []domain.CompanyProfile {
 							Title:            "Sr. Go Application Development Engineer",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4072292175/",
-							Date:             mustDate("2024-11-08"),
+							Date:             mustDate("2024-11-15"),
 						},
 					},
 				},
@@ -1242,77 +1169,6 @@ func companiesPart3() []domain.CompanyProfile {
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
-
-		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "PLVision",
-			Website: "https://plvision.eu/",
-			Careers: "",
-			About:   "",
-			Blog:    "",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:       2685529,
-				Alias:    "plvision",
-				Name:     "PLVision",
-				Verified: falce,
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "plvision",
-				Verified: false,
-			},
-			BlindProfile: domain.BlindProfile{
-				Alias:       "",
-				Employees:   "",
-				Salary:      "",
-				Reviews:     "",
-				ReviewsRate: "",
-			},
-			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias:     "",
-				Employees: "",
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
-				Verified:    false,
-			},
-			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
-			},
-			OttaProfileSlug:   "",
-			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
-			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:            "Software Development Engineer in Test (Go/Python)",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4079949593/",
-							Date:             mustDate("2024-11-19"),
-						},
-					},
-				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-			ShortDescription:          "",
-			DealroomURL:               "",
-			CrunchbaseURL:             "",
-			PitchbookURL:              "",
-			YahooFinanceURL:           "",
-			GoogleFinanceURL:          "",
-			YCombinatorURL:            "",
-			Industries:                []domain.Industry{},
-			HasEmployeesFromCountries: []domain.Country{},
-		},
-		
 		{
 			ID:      0,  // system
 			Type:    "", // system
@@ -1350,7 +1206,7 @@ func companiesPart3() []domain.CompanyProfile {
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
 			},
-			OttaProfileSlug:   "https://app.welcometothejungle.com/companies/Vestiaire-Collective",
+			OttaProfileSlug:   "Vestiaire-Collective",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
@@ -1382,217 +1238,7 @@ func companiesPart3() []domain.CompanyProfile {
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
-		
-		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "",
-			Website: "",
-			Careers: "",
-			About:   "",
-			Blog:    "",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:       0,
-				Alias:    "",
-				Name:     "",
-				Verified: false,
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
-			},
-			BlindProfile: domain.BlindProfile{
-				Alias:       "",
-				Employees:   "",
-				Salary:      "",
-				Reviews:     "",
-				ReviewsRate: "",
-			},
-			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias:     "",
-				Employees: "",
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
-				Verified:    false,
-			},
-			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
-			},
-			OttaProfileSlug:   "",
-			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
-			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:            "",
-							ShortDescription: "",
-							URL:              "",
-							Date:             mustDate("2024-11-12"),
-						},
-					},
-				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-			ShortDescription:          "",
-			DealroomURL:               "",
-			CrunchbaseURL:             "",
-			PitchbookURL:              "",
-			YahooFinanceURL:           "",
-			GoogleFinanceURL:          "",
-			YCombinatorURL:            "",
-			Industries:                []domain.Industry{},
-			HasEmployeesFromCountries: []domain.Country{},
-		},
-		
-		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "",
-			Website: "",
-			Careers: "",
-			About:   "",
-			Blog:    "",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:       0,
-				Alias:    "",
-				Name:     "",
-				Verified: false,
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
-			},
-			BlindProfile: domain.BlindProfile{
-				Alias:       "",
-				Employees:   "",
-				Salary:      "",
-				Reviews:     "",
-				ReviewsRate: "",
-			},
-			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias:     "",
-				Employees: "",
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
-				Verified:    false,
-			},
-			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
-			},
-			OttaProfileSlug:   "",
-			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
-			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:            "",
-							ShortDescription: "",
-							URL:              "",
-							Date:             mustDate("2024-11-12"),
-						},
-					},
-				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-			ShortDescription:          "",
-			DealroomURL:               "",
-			CrunchbaseURL:             "",
-			PitchbookURL:              "",
-			YahooFinanceURL:           "",
-			GoogleFinanceURL:          "",
-			YCombinatorURL:            "",
-			Industries:                []domain.Industry{},
-			HasEmployeesFromCountries: []domain.Country{},
-		},
-		
-		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "",
-			Website: "",
-			Careers: "",
-			About:   "",
-			Blog:    "",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:       0,
-				Alias:    "",
-				Name:     "",
-				Verified: false,
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
-			},
-			BlindProfile: domain.BlindProfile{
-				Alias:       "",
-				Employees:   "",
-				Salary:      "",
-				Reviews:     "",
-				ReviewsRate: "",
-			},
-			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias:     "",
-				Employees: "",
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
-				Verified:    false,
-			},
-			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
-			},
-			OttaProfileSlug:   "",
-			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
-			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:            "",
-							ShortDescription: "",
-							URL:              "",
-							Date:             mustDate("2024-11-12"),
-						},
-					},
-				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-			ShortDescription:          "",
-			DealroomURL:               "",
-			CrunchbaseURL:             "",
-			PitchbookURL:              "",
-			YahooFinanceURL:           "",
-			GoogleFinanceURL:          "",
-			YCombinatorURL:            "",
-			Industries:                []domain.Industry{},
-			HasEmployeesFromCountries: []domain.Country{},
-		},
-		
+
 		// Template
 		//{
 		//	ID:      0,  // system
