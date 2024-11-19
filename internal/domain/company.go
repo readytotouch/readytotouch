@@ -91,6 +91,8 @@ type Vacancy struct {
 	ShortDescription string // proof that the vacancy is for a particular technology
 	URL              string
 	Date             time.Time
+	WithSalary       bool // for future use
+	Remote           bool // for future use
 }
 
 type LanguageProfile struct {
