@@ -443,6 +443,14 @@ var (
 		"flyrinc":                             383, // FLYR
 		"we-are-venatus":                      384, // Venatus
 		"rocket-lab-limited":                  385, // Rocket Lab
+		"sportradar":                          441, // Sportradar
+		"bestowtech":                          442, // Bestow
+		"geico":                               443, // GEICO
+		"inviatravelgermany":                  444, // Invia Travel Germany GmbH
+		"airslate":                            445, // airSlate
+		"embark-studios-ab":                   446, // Embark Studios
+		"centene-corporation":                 447, // Centene Corporation
+		"vestiaireco":                         448, // Vestiaire Collective
 
 	}
 )
