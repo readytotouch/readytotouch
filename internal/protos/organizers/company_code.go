@@ -432,6 +432,11 @@ var (
 		"purestorage":                         438, // Pure Storage
 		"teya-global":                         439, // Teya
 		"tomtom":                              440, // TomTom
+		"postscriptio":                        449, // Postscript
+		"impossiblecloud":                     450, // Impossible Cloud
+		"arista-networks-inc":                 451, // Arista Networks
+		"pavenow":                             452, // PaveNow
+		"lemfi":                               453, // LemFi
 		"capital-one":                         375, // Capital One
 		"dynatrace":                           376, // Dynatrace
 		"emnify":                              377, // emnify
