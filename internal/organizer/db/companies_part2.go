@@ -3273,10 +3273,13 @@ func companiesPart2() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "CyberArk",
-			URL:  "https://www.cyberark.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "CyberArk",
+			Website: "https://www.cyberark.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:       26630,
 				Alias:    "cyber-ark-software",
@@ -3284,30 +3287,46 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified: true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "cyberark",
-				GoRepositoryCount: 21,
-				Verified:          false,
+				Login:    "cyberark",
+				Verified: false,
 			},
+			BlindProfile:     domain.BlindProfile{},
+			LevelsFyiProfile: domain.LevelsFyiProfile{},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-CyberArk-EI_IE30042.11,19.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/CyberArk-Reviews-E30042.htm",
 				Verified:    false,
 			},
+			IndeedProfile:     domain.IndeedProfile{},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/4055365922/", // Design, develop, and maintain robust backend services for Venafi's cloud platform using Golang
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 21,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Staff Software Engineer, Golang",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4077219379/",
+							Date:             mustDate("2024-11-19"),
+						},
+					},
 				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "Machine Identity Security",
+			DealroomURL:      "",
+			CrunchbaseURL:    "",
+			PitchbookURL:     "",
+			YahooFinanceURL:  "",
+			GoogleFinanceURL: "",
+			YCombinatorURL:   "",
 			Industries: []domain.Industry{
 				domain.IndustryCyberSecurity,
 			},
@@ -8184,6 +8203,192 @@ func companiesPart2() []domain.CompanyProfile {
 				domain.Ukraine,
 				domain.Czechia,
 			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Postscript",
+			Website: "https://postscript.io/",
+			Careers: "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       18771172,
+				Alias:    "postscriptio",
+				Name:     "Postscript",
+				Verified: true,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Staff Golang Software Engineer",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4071761682/",
+							Date:             mustDate("2024-11-19"),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription:          "SMS marketing platform for ecommerce companies",
+			Industries:                []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Impossible Cloud",
+			Website: "https://www.impossiblecloud.com/",
+			Careers: "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       76137251,
+				Alias:    "impossiblecloud",
+				Name:     "Impossible Cloud",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Junior Engineer — Golang & Distributed Systems",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4079088056/",
+							Date:             mustDate("2024-11-19"),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Cloud storage",
+			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Arista Networks",
+			Website: "https://www.arista.com/",
+			Careers: "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       80069,
+				Alias:    "arista-networks-inc",
+				Name:     "Arista Networks",
+				Verified: true,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Software Engineer (Java/Golang)",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4077123852/",
+							Date:             mustDate("2024-11-19"),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Data-Driven Networking",
+			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "PaveNow",
+			Website: "https://www.pavenow.io/",
+			Careers: "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       96200958,
+				Alias:    "pavenow",
+				Name:     "PaveNow",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Golang Developer",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4077178228/",
+							Date:             mustDate("2024-11-19"),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Financial management for small and medium-sized businesses",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "LemFi",
+			Website: "https://lemfi.com/",
+			Careers: "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       68838211,
+				Alias:    "lemfi",
+				Name:     "LemFi",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Backend Engineer — Golang",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4080247545/",
+							Date:             mustDate("2024-11-19"),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
+			HasEmployeesFromCountries: []domain.Country{},
 		},
 
 		// Template
