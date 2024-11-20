@@ -7073,39 +7073,61 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Top Doctors
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Top Doctors",
-			URL:  "https://topdoctors.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Top Doctors",
+			Website: "https://topdoctors.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    3035481,
-				Alias: "top-doctors-europe",
-				Name:  "Top Doctors",
+				ID:       3035481,
+				Alias:    "top-doctors-europe",
+				Name:     "Top Doctors",
+				Verified: true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "", // NOP
 				GoRepositoryCount: 0,  // NOP
 			},
+			BlindProfile:     domain.BlindProfile{},
+			LevelsFyiProfile: domain.LevelsFyiProfile{},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Top-Doctors-EI_IE1712721.11,22.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Top-Doctors-Reviews-E1712721.htm",
 			},
+			IndeedProfile:     domain.IndeedProfile{},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "https://www.youtube.com/@TopDoctorsUK",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/3912190311/",
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Developer Backend Golang",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4077191404/",
+							Date:             mustDate("2024-11-19"),
+						},
+					},
 				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
-			ShortDescription: "",
-			Industries:       []domain.Industry{},
+			ShortDescription:          "",
+			DealroomURL:               "",
+			CrunchbaseURL:             "",
+			PitchbookURL:              "",
+			YahooFinanceURL:           "",
+			GoogleFinanceURL:          "",
+			YCombinatorURL:            "",
+			Industries:                []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{},
 		},
 
 		// Some | Recurly
