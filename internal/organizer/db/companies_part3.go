@@ -1596,7 +1596,7 @@ func companiesPart3() []domain.CompanyProfile {
 			Website: "https://www.paddle.com/",
 			Careers: "https://www.paddle.com/careers",
 			About:   "https://www.paddle.com/about",
-			Blog:    "https://www.paddle.com/blog",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:       2695021,
 				Alias:    "paddle",
