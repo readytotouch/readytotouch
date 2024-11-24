@@ -456,6 +456,12 @@ var (
 		"embark-studios-ab":                   446, // Embark Studios
 		"centene-corporation":                 447, // Centene Corporation
 		"vestiaireco":                         448, // Vestiaire Collective
+		"check-point-software-technologies":   454, // Check Point Software
+		"qohash":                              455, // Qohash
+		"kimiagroup":                          456, // Kimia Group
+		"telestream":                          457, // Telestream
+		"mitratech":                           458, // Mitratech
+		"paddle":                              459, // Paddle
 
 	}
 )
