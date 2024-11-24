@@ -1284,7 +1284,7 @@ func companiesPart3() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 4,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "C++/GO Developer",
+							Title:            "C++/Go Developer",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4079760230/",
 							Date:             mustDate("2024-11-21"),
@@ -1298,17 +1298,18 @@ func companiesPart3() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription:          "",
-			DealroomURL:               "",
-			CrunchbaseURL:             "",
-			PitchbookURL:              "",
-			YahooFinanceURL:           "",
-			GoogleFinanceURL:          "",
-			YCombinatorURL:            "",
-			Industries:                []domain.Industry{},
+			ShortDescription: "",
+			DealroomURL:      "",
+			CrunchbaseURL:    "",
+			PitchbookURL:     "",
+			YahooFinanceURL:  "",
+			GoogleFinanceURL: "",
+			YCombinatorURL:   "",
+			Industries: []domain.Industry{
+				domain.IndustryCyberSecurity,
+			},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
-		
 		{
 			ID:      0,  // system
 			Type:    "", // system
@@ -1354,7 +1355,7 @@ func companiesPart3() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Senior Software Developer (Go), Cyber",
+							Title:            "Senior Software Developer (Go)",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4081420924/",
 							Date:             mustDate("2024-11-21"),
@@ -1368,17 +1369,19 @@ func companiesPart3() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription:          "",
-			DealroomURL:               "",
-			CrunchbaseURL:             "",
-			PitchbookURL:              "",
-			YahooFinanceURL:           "",
-			GoogleFinanceURL:          "",
-			YCombinatorURL:            "",
-			Industries:                []domain.Industry{},
+			ShortDescription: "",
+			DealroomURL:      "",
+			CrunchbaseURL:    "",
+			PitchbookURL:     "",
+			YahooFinanceURL:  "",
+			GoogleFinanceURL: "",
+			YCombinatorURL:   "",
+			Industries: []domain.Industry{
+				domain.IndustryCyberSecurity,
+			},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
-		
+
 		{
 			ID:      0,  // system
 			Type:    "", // system
@@ -1386,7 +1389,7 @@ func companiesPart3() []domain.CompanyProfile {
 			Website: "https://kimiagroup.com/",
 			Careers: "https://kimiagroup.com/careers.html",
 			About:   "",
-			Blog:    "https://blog.kimiagroup.com/",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:       1417742,
 				Alias:    "kimiagroup",
@@ -1448,77 +1451,6 @@ func companiesPart3() []domain.CompanyProfile {
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
-		
-		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "株式会社マネーフォワード",
-			Website: "https://corp.moneyforward.com/en/",
-			Careers: "",
-			About:   "https://corp.moneyforward.com/en/aboutus/",
-			Blog:    "",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:       5775746,
-				Alias:    "money-forward",
-				Name:     "株式会社マネーフォワード",
-				Verified: true,
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "moneyforward",
-				Verified: true,
-			},
-			BlindProfile: domain.BlindProfile{
-				Alias:       "",
-				Employees:   "",
-				Salary:      "",
-				Reviews:     "",
-				ReviewsRate: "",
-			},
-			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias:     "",
-				Employees: "",
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
-				Verified:    false,
-			},
-			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
-			},
-			OttaProfileSlug:   "",
-			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
-			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 12,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:            "Senior Backend Engineer (Go), CTO Office, Platform Application Division",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4083435012/",
-							Date:             mustDate("2024-11-22"),
-						},
-					},
-				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-			ShortDescription:          "",
-			DealroomURL:               "",
-			CrunchbaseURL:             "",
-			PitchbookURL:              "",
-			YahooFinanceURL:           "",
-			GoogleFinanceURL:          "",
-			YCombinatorURL:            "",
-			Industries:                []domain.Industry{},
-			HasEmployeesFromCountries: []domain.Country{},
-		},
-		
 		{
 			ID:      0,  // system
 			Type:    "", // system
@@ -1526,7 +1458,7 @@ func companiesPart3() []domain.CompanyProfile {
 			Website: "https://www.telestream.net/",
 			Careers: "https://www.telestream.net/careers/",
 			About:   "https://www.telestream.net/company/",
-			Blog:    "https://telestreamblog.telestream.net/",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:       534757,
 				Alias:    "telestream",
@@ -1564,7 +1496,7 @@ func companiesPart3() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 2,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Senior Software Engineer - GO",
+							Title:            "Senior Software Engineer — GO",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4083629889/",
 							Date:             mustDate("2024-11-22"),
@@ -1588,7 +1520,6 @@ func companiesPart3() []domain.CompanyProfile {
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
-		
 		{
 			ID:      0,  // system
 			Type:    "", // system
@@ -1596,7 +1527,7 @@ func companiesPart3() []domain.CompanyProfile {
 			Website: "https://mitratech.com/",
 			Careers: "https://mitratech.com/about-us/careers/",
 			About:   "https://mitratech.com/about-us/",
-			Blog:    "https://mitratech.com/resource-hub/mitratech-blog/",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:       165007,
 				Alias:    "mitratech",
@@ -1658,8 +1589,6 @@ func companiesPart3() []domain.CompanyProfile {
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
-		
-
 		{
 			ID:      0,  // system
 			Type:    "", // system
@@ -1675,8 +1604,8 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified: true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "Paddle",
-				Verified: true,
+				Login:    "",
+				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "",
@@ -1729,287 +1658,7 @@ func companiesPart3() []domain.CompanyProfile {
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
-		
-		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "",
-			Website: "",
-			Careers: "",
-			About:   "",
-			Blog:    "",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:       0,
-				Alias:    "",
-				Name:     "",
-				Verified: false,
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
-			},
-			BlindProfile: domain.BlindProfile{
-				Alias:       "",
-				Employees:   "",
-				Salary:      "",
-				Reviews:     "",
-				ReviewsRate: "",
-			},
-			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias:     "",
-				Employees: "",
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
-				Verified:    false,
-			},
-			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
-			},
-			OttaProfileSlug:   "",
-			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
-			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:            "",
-							ShortDescription: "",
-							URL:              "",
-							Date:             mustDate("2024-11-12"),
-						},
-					},
-				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-			ShortDescription:          "",
-			DealroomURL:               "",
-			CrunchbaseURL:             "",
-			PitchbookURL:              "",
-			YahooFinanceURL:           "",
-			GoogleFinanceURL:          "",
-			YCombinatorURL:            "",
-			Industries:                []domain.Industry{},
-			HasEmployeesFromCountries: []domain.Country{},
-		},
-		
-		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "",
-			Website: "",
-			Careers: "",
-			About:   "",
-			Blog:    "",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:       0,
-				Alias:    "",
-				Name:     "",
-				Verified: false,
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
-			},
-			BlindProfile: domain.BlindProfile{
-				Alias:       "",
-				Employees:   "",
-				Salary:      "",
-				Reviews:     "",
-				ReviewsRate: "",
-			},
-			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias:     "",
-				Employees: "",
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
-				Verified:    false,
-			},
-			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
-			},
-			OttaProfileSlug:   "",
-			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
-			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:            "",
-							ShortDescription: "",
-							URL:              "",
-							Date:             mustDate("2024-11-12"),
-						},
-					},
-				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-			ShortDescription:          "",
-			DealroomURL:               "",
-			CrunchbaseURL:             "",
-			PitchbookURL:              "",
-			YahooFinanceURL:           "",
-			GoogleFinanceURL:          "",
-			YCombinatorURL:            "",
-			Industries:                []domain.Industry{},
-			HasEmployeesFromCountries: []domain.Country{},
-		},
-		
-		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "",
-			Website: "",
-			Careers: "",
-			About:   "",
-			Blog:    "",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:       0,
-				Alias:    "",
-				Name:     "",
-				Verified: false,
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
-			},
-			BlindProfile: domain.BlindProfile{
-				Alias:       "",
-				Employees:   "",
-				Salary:      "",
-				Reviews:     "",
-				ReviewsRate: "",
-			},
-			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias:     "",
-				Employees: "",
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
-				Verified:    false,
-			},
-			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
-			},
-			OttaProfileSlug:   "",
-			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
-			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:            "",
-							ShortDescription: "",
-							URL:              "",
-							Date:             mustDate("2024-11-12"),
-						},
-					},
-				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-			ShortDescription:          "",
-			DealroomURL:               "",
-			CrunchbaseURL:             "",
-			PitchbookURL:              "",
-			YahooFinanceURL:           "",
-			GoogleFinanceURL:          "",
-			YCombinatorURL:            "",
-			Industries:                []domain.Industry{},
-			HasEmployeesFromCountries: []domain.Country{},
-		},
-		
-		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "",
-			Website: "",
-			Careers: "",
-			About:   "",
-			Blog:    "",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:       0,
-				Alias:    "",
-				Name:     "",
-				Verified: false,
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
-			},
-			BlindProfile: domain.BlindProfile{
-				Alias:       "",
-				Employees:   "",
-				Salary:      "",
-				Reviews:     "",
-				ReviewsRate: "",
-			},
-			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias:     "",
-				Employees: "",
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
-				Verified:    false,
-			},
-			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
-			},
-			OttaProfileSlug:   "",
-			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
-			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:            "",
-							ShortDescription: "",
-							URL:              "",
-							Date:             mustDate("2024-11-12"),
-						},
-					},
-				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-			ShortDescription:          "",
-			DealroomURL:               "",
-			CrunchbaseURL:             "",
-			PitchbookURL:              "",
-			YahooFinanceURL:           "",
-			GoogleFinanceURL:          "",
-			YCombinatorURL:            "",
-			Industries:                []domain.Industry{},
-			HasEmployeesFromCountries: []domain.Country{},
-		},
-		
+
 		// Template
 		//{
 		//	ID:      0,  // system
