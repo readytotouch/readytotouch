@@ -232,17 +232,26 @@ func main() {
 		// Design from OrganizerFeature
 		StaticFile("/design/organizers", "./public/design/organizer-main-page-auth.html").
 		StaticFile("/design/organizers-auth", "./public/design/organizer-main-page.html").
-		StaticFile("/design/organizers/golang/welcome", "./public/design/organizer-welcome.html").
-		StaticFile("/design/organizers/golang/companies/ukraine", "./public/design/golang-companies-organizer.html").
-		StaticFile("/design/organizers/golang/companies", "./public/design/organizer-companies.html").
-		StaticFile("/design/organizers/golang/vacancies", "./public/design/organizer-vacancies-subscribe.html").
-		StaticFile("/design/organizers/golang/vacancies/subscribe", "./public/design/organizer-vacancies-subscribe.html").
-		StaticFile("/design/organizers/golang/vacancies/unsubscribe", "./public/design/organizer-vacancies-unsubscribe.html").
-		GET("/design/organizers/golang/:company_alias", s("./public/design/organizer-statistics.html")).
+		GET("/design/organizers/:language/welcome", s("./public/design/organizer-welcome.html")).
+		GET("/design/organizers/:language/companies/ukraine", s("./public/design/golang-companies-organizer.html")).
+		GET("/design/organizers/:language/companies/:company_alias", s("./public/design/organizer-statistics.html")).
+		GET("/design/organizers/:language/companies/:company_alias/v1", s("./public/design/organizer-statistics.html")).
+		GET("/design/organizers/:language/companies/:company_alias/v2", s("./public/design/organizer-statistics.html")).
+		GET("/design/organizers/:language/companies", s("./public/design/organizer-companies.html")).
+		GET("/design/organizers/:language/vacancies", s("./public/design/organizer-vacancies-subscribe.html")).
+		GET("/design/organizers/:language/vacancies/subscribe", s("./public/design/organizer-vacancies-subscribe.html")).
+		GET("/design/organizers/:language/vacancies/unsubscribe", s("./public/design/organizer-vacancies-unsubscribe.html")).
+		GET("/design/organizers/golang/communities", s("./public/design/organizer-go-communities.html")).
+		GET("/design/organizers/rust/communities", s("./public/design/organizer-rust-communities.html")).
+		GET("/design/organizers/scala/communities", s("./public/design/organizer-scala-communities.html")).
+		GET("/design/organizers/elixir/communities", s("./public/design/organizer-elixir-communities.html")).
+		GET("/design/organizers/clojure/communities", s("./public/design/organizer-clojure-communities.html")).
+		GET("/design/organizers/:language/communities", s("./public/design/organizer-go-communities.html")).
 
 		// Design from ChatGPT
 		StaticFile("/design/wip/companies-and-connections", "./public/chatgpt-design/companies-and-connections.html").
-		StaticFile("/design/wip/companies-and-connections/ukraine", "./public/chatgpt-design/companies-and-connections.html")
+		StaticFile("/design/wip/companies-and-connections/ukraine", "./public/chatgpt-design/companies-and-connections.html").
+		StaticFile("/design/wip/companies-and-connections/brazil", "./public/chatgpt-design/companies-and-connections.html")
 
 	r.
 		// Assets
