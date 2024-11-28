@@ -120,9 +120,9 @@
 						/>
 					</div>
 					<figcaption class="card__header-caption">
-						<a href="https://clojurians.net/" class="card__headline vacancy__link">Clojurians</a>
+						<a href="http://clojurians.net/" class="card__headline vacancy__link">Clojurians</a>
 					</figcaption>
-					<a href="https://clojurians.net/" class="button button--small-padding button--black button--gap-images">
+					<a href="http://clojurians.net/" class="button button--small-padding button--black button--gap-images">
 						Visit
 						<img width="18" height="18" alt="arrow top icon" src="/assets/images/pages/common/external-link-white.svg">
 					</a>
