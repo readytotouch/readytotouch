@@ -1,0 +1,3 @@
+{%- func OrganizersCommunitiesElixir(headerProfiles []SocialProviderUser) -%}
+
+{%- endfunc -%}

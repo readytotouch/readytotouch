@@ -1,0 +1,3 @@
+{%- func OrganizersCommunitiesRust(headerProfiles []SocialProviderUser) -%}
+
+{%- endfunc -%}

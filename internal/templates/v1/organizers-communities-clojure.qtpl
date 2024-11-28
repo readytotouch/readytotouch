@@ -1,0 +1,3 @@
+{%- func OrganizersCommunitiesClojure(headerProfiles []SocialProviderUser) -%}
+
+{%- endfunc -%}

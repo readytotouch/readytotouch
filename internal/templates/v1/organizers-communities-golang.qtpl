@@ -1,0 +1,3 @@
+{%- func OrganizersCommunitiesGolang(headerProfiles []SocialProviderUser) -%}
+
+{%- endfunc -%}

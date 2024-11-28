@@ -1,0 +1,3 @@
+{%- func OrganizersCommunitiesScala(headerProfiles []SocialProviderUser) -%}
+
+{%- endfunc -%}
