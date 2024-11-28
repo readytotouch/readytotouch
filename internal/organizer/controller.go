@@ -16,6 +16,12 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+type (
+	companyAliasURI struct {
+		CompanyAlias string `uri:"company_alias" binding:"required"`
+	}
+)
+
 type Controller struct {
 	userRepository                  *postgres.UserRepository
 	userFeatureWaitlistRepository   *postgres.UserFeatureWaitlistRepository
@@ -163,14 +169,8 @@ func (c *Controller) Companies(ctx *gin.Context) {
 }
 
 func (c *Controller) CompanyV1(ctx *gin.Context) {
-	type (
-		companyURI struct {
-			CompanyAlias string `uri:"company_alias" binding:"required"`
-		}
-	)
-
 	var (
-		uri companyURI
+		uri companyAliasURI
 	)
 
 	err := ctx.ShouldBindUri(&uri)
@@ -265,7 +265,99 @@ func (c *Controller) CompanyV1(ctx *gin.Context) {
 }
 
 func (c *Controller) CompanyV2(ctx *gin.Context) {
-	c.CompanyV1(ctx)
+	var (
+		uri companyAliasURI
+	)
+
+	err := ctx.ShouldBindUri(&uri)
+	if err != nil {
+		ctx.Data(http.StatusBadRequest, "text/html; charset=utf-8", []byte("Company alias is required"))
+
+		return
+	}
+
+	var (
+		featurePath = c.trimCompanyAlias(ctx)
+	)
+
+	// Redirect to lowercase company alias
+	{
+		redirectAlias := strings.ToLower(uri.CompanyAlias)
+		if uri.CompanyAlias != redirectAlias {
+			ctx.Redirect(http.StatusFound, featurePath+"/"+redirectAlias)
+
+			return
+		}
+	}
+
+	company, ok := c.findCompany(ctx, uri.CompanyAlias)
+	if !ok {
+		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Company not found"))
+
+		return
+	}
+
+	company.ID = organizers.CompanyAliasMap[company.LinkedInProfile.Alias]
+	if company.ID == 0 {
+		// make generate-organizers
+
+		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Company not found"))
+
+		return
+	}
+
+	if company.Type == "" {
+		company.Type = organizers.ToCompanyType(company.LinkedInProfile.Alias)
+	}
+	if company.Website == "" {
+		company.Website = company.URL
+	}
+
+	organizerFeature, ok := c.organizerFeature(featurePath)
+	if !ok {
+		// Should be unreachable
+		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Feature not found"))
+
+		return
+	}
+
+	var (
+		authUserID = domain.ContextGetUserID(ctx)
+	)
+	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)
+	if err != nil {
+		// @TODO logging
+
+		// NOP, continue
+	}
+
+	// Should be optimized
+	userCompanyFavoriteMap, err := c.userFavoriteCompanyRepository.GetMap(ctx, authUserID)
+	if err != nil {
+		// @TODO logging
+
+		// NOP, continue
+	}
+
+	err = c.companyViewDailyStatsRepository.Upsert(ctx, company.ID, time.Now().UTC())
+	if err != nil {
+		// @TODO logging
+
+		// NOP, continue
+	}
+
+	content := template.OrganizersCompanyV2(
+		organizerFeature,
+		headerProfiles,
+		company,
+		db.UkrainianUniversities(),
+		db.CzechUniversities(),
+		userCompanyFavoriteMap[company.ID],
+		c.companyStats(ctx, company.ID),
+		c.redirect(organizerFeature.Path+"/"+uri.CompanyAlias),
+	)
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
 }
 
 func (c *Controller) trimCompanyAlias(ctx *gin.Context) (result string) {

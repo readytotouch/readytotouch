@@ -145,18 +145,45 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 </div>
 
 <section class="companies-cards">
-  <div class="container companies-cards__container"><div class="card">
+  <div class="container companies-cards__container">
+<div class="js-company card"
+     data-company-id="`)
+	qw422016.N().DL(company.ID)
+	qw422016.N().S(`"
+     data-company-name="`)
+	qw422016.E().S(company.Name)
+	qw422016.N().S(`"
+     data-company-type="`)
+	qw422016.E().S(string(company.Type))
+	qw422016.N().S(`"
+>
   <aside class="card__action">
-    <button class="favorite in-favorite card__action-button button-group__item" title="Add to favorite">
-      <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" class="favorite__icon" viewBox="0 0 28 28">
-        <path
-          d="m14.5 22.1-.5-.3-.5.3-6.8 4.2c-.5.3-1.1-.1-.9-.7L7.5 18l.1-.6-.4-.4-5.9-5.2c-.3-.3-.3-.6-.2-.8.1-.2.3-.4.5-.4l7.9-.7.6-.1.2-.6 2.9-7.4c.2-.5 1-.5 1.2 0l3.1 7.3.2.5.6.1 7.9.7c.2 0 .4.2.5.5.1.3 0 .6-.2.7l-5.9 5.2-.4.4.1.6 1.8 7.7c.1.3 0 .5-.2.6-.2.1-.5.2-.8 0l-6.6-4z"
-        />
-      </svg>
-    </button>
-    <!--<button class="button-group__item" title="View statistics">
-      <img width="20" height="20" alt="icon stats" src="/assets/images/pages/common/stats.svg" />
-    </button>-->
+    `)
+	if favorite {
+		qw422016.N().S(`
+      <button class="js-company-favorite favorite card__action-button button-group__item in-favorite" title="Remove from favorites">
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" class="favorite__icon" viewBox="0 0 28 28">
+          <path
+            d="m14.5 22.1-.5-.3-.5.3-6.8 4.2c-.5.3-1.1-.1-.9-.7L7.5 18l.1-.6-.4-.4-5.9-5.2c-.3-.3-.3-.6-.2-.8.1-.2.3-.4.5-.4l7.9-.7.6-.1.2-.6 2.9-7.4c.2-.5 1-.5 1.2 0l3.1 7.3.2.5.6.1 7.9.7c.2 0 .4.2.5.5.1.3 0 .6-.2.7l-5.9 5.2-.4.4.1.6 1.8 7.7c.1.3 0 .5-.2.6-.2.1-.5.2-.8 0l-6.6-4z"
+          />
+        </svg>
+      </button>
+    `)
+	} else {
+		qw422016.N().S(`
+      <button class="js-company-favorite favorite card__action-button button-group__item" title="Add to favorite">
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" class="favorite__icon" viewBox="0 0 28 28">
+          <path
+            d="m14.5 22.1-.5-.3-.5.3-6.8 4.2c-.5.3-1.1-.1-.9-.7L7.5 18l.1-.6-.4-.4-5.9-5.2c-.3-.3-.3-.6-.2-.8.1-.2.3-.4.5-.4l7.9-.7.6-.1.2-.6 2.9-7.4c.2-.5 1-.5 1.2 0l3.1 7.3.2.5.6.1 7.9.7c.2 0 .4.2.5.5.1.3 0 .6-.2.7l-5.9 5.2-.4.4.1.6 1.8 7.7c.1.3 0 .5-.2.6-.2.1-.5.2-.8 0l-6.6-4z"
+          />
+        </svg>
+      </button>
+    `)
+	}
+	qw422016.N().S(`
+
+    `)
+	qw422016.N().S(`
   </aside>
   <figure class="card__header">
     <div class="card__image-overlay">
@@ -671,11 +698,15 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
           <div class="stats__counters-group">
             <div class="stats__counters-item">
               <p class="stats__counters-views">Total</p>
-              <p class="stats__counters-item-number">846</p>
+              <p class="stats__counters-item-number">`)
+	qw422016.N().DL(stats.TotalViews)
+	qw422016.N().S(`</p>
             </div>
             <div class="stats__counters-item">
               <p class="stats__counters-views">Last month</p>
-              <p class="stats__counters-item-number">146</p>
+              <p class="stats__counters-item-number">`)
+	qw422016.N().DL(stats.LastMonthViews)
+	qw422016.N().S(`</p>
             </div>
           </div>
         </div>
@@ -684,11 +715,15 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
           <div class="stats__counters-group">
             <div class="stats__counters-item">
               <p class="stats__counters-views">Total</p>
-              <p class="stats__counters-item-number">68</p>
+              <p class="stats__counters-item-number">`)
+	qw422016.N().DL(stats.TotalFavorites)
+	qw422016.N().S(`</p>
             </div>
             <div class="stats__counters-item">
               <p class="stats__counters-views">Last month</p>
-              <p class="stats__counters-item-number">13</p>
+              <p class="stats__counters-item-number">`)
+	qw422016.N().DL(stats.LastMonthFavorites)
+	qw422016.N().S(`</p>
             </div>
           </div>
         </div>
@@ -698,7 +733,7 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
           <h3 class="stats__title">Company website views</h3>
           <div class="stats__period">Last month</div>
         </div>
-        <div class="stats__chart stats__chart--page-views-statistics js-page-views-statistics"></div>
+        <div class="stats__chart stats__chart--page-views-statistics js-chart-views-statistics"></div>
       </div>
     </div>
   </div>
