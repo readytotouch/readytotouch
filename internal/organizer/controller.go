@@ -308,6 +308,43 @@ func (c *Controller) Waitlist(ctx *gin.Context) {
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
 }
 
+func (c *Controller) GolangCommunities(ctx *gin.Context) {
+	var (
+		authUserID = domain.ContextGetUserID(ctx)
+	)
+
+	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)
+	if err != nil {
+		// @TODO logging
+
+		// NOP, continue
+	}
+
+	content := template.OrganizersCommunitiesGolang(domain.OrganizerGolang, headerProfiles)
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
+}
+
+func (c *Controller) RustCommunities(ctx *gin.Context) {
+	c.TODO(ctx)
+}
+
+func (c *Controller) ZigCommunities(ctx *gin.Context) {
+	c.TODO(ctx)
+}
+
+func (c *Controller) ScalaCommunities(ctx *gin.Context) {
+	c.TODO(ctx)
+}
+
+func (c *Controller) ElixirCommunities(ctx *gin.Context) {
+	c.TODO(ctx)
+}
+
+func (c *Controller) ClojureCommunities(ctx *gin.Context) {
+	c.TODO(ctx)
+}
+
 func (c *Controller) TODO(ctx *gin.Context) {
 	ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("TODO"))
 }
