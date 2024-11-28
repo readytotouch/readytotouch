@@ -171,26 +171,38 @@ func main() {
 	r.GET("/organizers/golang/companies/ukraine", organizerController.GolangCompaniesUkraine)
 	r.GET("/organizers/golang/companies", organizerController.Companies)
 	r.GET("/organizers/golang/companies/:company_alias", organizerController.Company)
+	r.GET("/organizers/golang/companies/:company_alias/v1", organizerController.Company)
+	r.GET("/organizers/golang/companies/:company_alias/v2", organizerController.Company)
 	r.GET("/organizers/golang/vacancies", organizerController.Waitlist)
 	r.GET("/organizers/golang/communities", organizerController.GolangCommunities)
 	r.GET("/organizers/rust/companies", organizerController.Companies)
 	r.GET("/organizers/rust/companies/:company_alias", organizerController.Company)
+	r.GET("/organizers/rust/companies/:company_alias/v1", organizerController.Company)
+	r.GET("/organizers/rust/companies/:company_alias/v2", organizerController.Company)
 	r.GET("/organizers/rust/vacancies", organizerController.Waitlist)
 	r.GET("/organizers/rust/communities", organizerController.RustCommunities)
 	r.GET("/organizers/zig/companies", organizerController.Waitlist)
 	r.GET("/organizers/zig/companies/:company_alias", organizerController.Company)
+	r.GET("/organizers/zig/companies/:company_alias/v1", organizerController.Company)
+	r.GET("/organizers/zig/companies/:company_alias/v2", organizerController.Company)
 	r.GET("/organizers/zig/vacancies", organizerController.Waitlist)
 	r.GET("/organizers/zig/communities", organizerController.ZigCommunities)
 	r.GET("/organizers/scala/companies", organizerController.Companies)
 	r.GET("/organizers/scala/companies/:company_alias", organizerController.Company)
+	r.GET("/organizers/scala/companies/:company_alias/v1", organizerController.Company)
+	r.GET("/organizers/scala/companies/:company_alias/v2", organizerController.Company)
 	r.GET("/organizers/scala/vacancies", organizerController.Waitlist)
 	r.GET("/organizers/scala/communities", organizerController.ScalaCommunities)
 	r.GET("/organizers/elixir/companies", organizerController.Companies)
 	r.GET("/organizers/elixir/companies/:company_alias", organizerController.Company)
+	r.GET("/organizers/elixir/companies/:company_alias/v1", organizerController.Company)
+	r.GET("/organizers/elixir/companies/:company_alias/v2", organizerController.Company)
 	r.GET("/organizers/elixir/vacancies", organizerController.Waitlist)
 	r.GET("/organizers/elixir/communities", organizerController.ElixirCommunities)
 	r.GET("/organizers/clojure/companies", organizerController.Waitlist)
 	r.GET("/organizers/clojure/companies/:company_alias", organizerController.Company)
+	r.GET("/organizers/clojure/companies/:company_alias/v1", organizerController.Company)
+	r.GET("/organizers/clojure/companies/:company_alias/v2", organizerController.Company)
 	r.GET("/organizers/clojure/vacancies", organizerController.Waitlist)
 	r.GET("/organizers/clojure/communities", organizerController.ClojureCommunities)
 
@@ -241,7 +253,7 @@ func main() {
 		GET("/design/organizers/:language/welcome", s("./public/design/organizer-welcome.html")).
 		GET("/design/organizers/:language/companies/ukraine", s("./public/design/golang-companies-organizer.html")).
 		GET("/design/organizers/:language/companies/:company_alias", s("./public/design/organizer-statistics.html")).
-		GET("/design/organizers/:language/companies/:company_alias/v1", s("./public/design/organizer-statistics.html")).
+		GET("/design/organizers/:language/companies/:company_alias/v1", s("./public/design-v1/organizer-statistics.html")).
 		GET("/design/organizers/:language/companies/:company_alias/v2", s("./public/design/organizer-statistics.html")).
 		GET("/design/organizers/:language/companies", s("./public/design/organizer-companies.html")).
 		GET("/design/organizers/:language/vacancies", s("./public/design/organizer-vacancies-subscribe.html")).
