@@ -3,8 +3,8 @@
 <html lang="en">
 
 <head>
-	<title>Golang Communities | ReadyToTouch</title>
-	<meta name="title" content="Golang Communities | ReadyToTouch">
+	<title>{%s organizer.Title %} Communities | ReadyToTouch</title>
+	<meta name="title" content="{%s organizer.Title %} Communities | ReadyToTouch">
 	<meta name="description" content="">
     <meta name="keywords" content="">
 
