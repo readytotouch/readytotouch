@@ -111,6 +111,8 @@ design:
 	cp -r $(DESIGN)/public/assets/js/* ./public/assets/js
 	cp -r $(DESIGN)/public/*.html ./public/design
 
+	git restore ./public/assets/images/pages/online-new/cz_flag.svg
+
 	git add .
 
 companies-and-connections:
