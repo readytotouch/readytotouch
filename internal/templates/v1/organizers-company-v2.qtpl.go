@@ -256,7 +256,9 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
         height="16"
         src="/assets/images/pages/vacancy/building.svg"
       />
-      <figcaption class="card__figcaption">Product</figcaption>
+      <figcaption class="card__figcaption">`)
+	qw422016.E().S(companyTypeName[company.Type])
+	qw422016.N().S(`</figcaption>
     </figure>
     <figure class="card__figure">
       <img
@@ -266,15 +268,15 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
         height="16"
         src="/assets/images/pages/vacancy/company-type.svg"
       />
-      <figcaption class="card__figcaption">HRTech</figcaption>
+      <figcaption class="card__figcaption">`)
+	qw422016.E().S(industryNames(company.Industries))
+	qw422016.N().S(`</figcaption>
     </figure>
   </div>
   <p class="card__text card__text--full-text">
-		A problem isn't truly solved until it's solved for all. Googlers
-		build products that help create opportunities for everyone, whether
-		down the street or across the globe. Bring your insight, imagination
-		and a healthy disregard for the impossible. Bring everything that
-		makes you unique. Together, we can build for everyone.
+	`)
+	qw422016.E().S(company.ShortDescription)
+	qw422016.N().S(`
   </p>
 </div>
 <div class="cards-group">
