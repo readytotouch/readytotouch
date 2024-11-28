@@ -1,4 +1,4 @@
-{%- func OrganizersCompany(
+{%- func OrganizersCompanyV1(
   organizerFeature OrganizerFeature,
   headerProfiles []SocialProviderUser,
   company Company,
@@ -22,7 +22,7 @@
 
     {%= favicon() %}
     {%= organizersFonts() %}
-    {%= organizersCompanyStyles() %}
+    {%= organizersCompanyV1Styles() %}
     <script src="https://cdn.jsdelivr.net/npm/apexcharts@3.52.0"></script>
     {%= ga() %}
 </head>
