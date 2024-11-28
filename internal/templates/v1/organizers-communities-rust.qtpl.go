@@ -14,20 +14,20 @@ var (
 	_ = qt422016.AcquireByteBuffer
 )
 
-func StreamOrganizersCommunitiesRust(qw422016 *qt422016.Writer, headerProfiles []SocialProviderUser) {
+func StreamOrganizersCommunitiesRust(qw422016 *qt422016.Writer, organizer Organizer, headerProfiles []SocialProviderUser) {
 	qw422016.N().S(`
 `)
 }
 
-func WriteOrganizersCommunitiesRust(qq422016 qtio422016.Writer, headerProfiles []SocialProviderUser) {
+func WriteOrganizersCommunitiesRust(qq422016 qtio422016.Writer, organizer Organizer, headerProfiles []SocialProviderUser) {
 	qw422016 := qt422016.AcquireWriter(qq422016)
-	StreamOrganizersCommunitiesRust(qw422016, headerProfiles)
+	StreamOrganizersCommunitiesRust(qw422016, organizer, headerProfiles)
 	qt422016.ReleaseWriter(qw422016)
 }
 
-func OrganizersCommunitiesRust(headerProfiles []SocialProviderUser) string {
+func OrganizersCommunitiesRust(organizer Organizer, headerProfiles []SocialProviderUser) string {
 	qb422016 := qt422016.AcquireByteBuffer()
-	WriteOrganizersCommunitiesRust(qb422016, headerProfiles)
+	WriteOrganizersCommunitiesRust(qb422016, organizer, headerProfiles)
 	qs422016 := string(qb422016.B)
 	qt422016.ReleaseByteBuffer(qb422016)
 	return qs422016

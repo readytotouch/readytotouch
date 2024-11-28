@@ -326,7 +326,20 @@ func (c *Controller) GolangCommunities(ctx *gin.Context) {
 }
 
 func (c *Controller) RustCommunities(ctx *gin.Context) {
-	c.TODO(ctx)
+	var (
+		authUserID = domain.ContextGetUserID(ctx)
+	)
+
+	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)
+	if err != nil {
+		// @TODO logging
+
+		// NOP, continue
+	}
+
+	content := template.OrganizersCommunitiesRust(domain.OrganizerRust, headerProfiles)
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
 }
 
 func (c *Controller) ZigCommunities(ctx *gin.Context) {
@@ -334,15 +347,54 @@ func (c *Controller) ZigCommunities(ctx *gin.Context) {
 }
 
 func (c *Controller) ScalaCommunities(ctx *gin.Context) {
-	c.TODO(ctx)
+	var (
+		authUserID = domain.ContextGetUserID(ctx)
+	)
+
+	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)
+	if err != nil {
+		// @TODO logging
+
+		// NOP, continue
+	}
+
+	content := template.OrganizersCommunitiesScala(domain.OrganizerScala, headerProfiles)
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
 }
 
 func (c *Controller) ElixirCommunities(ctx *gin.Context) {
-	c.TODO(ctx)
+	var (
+		authUserID = domain.ContextGetUserID(ctx)
+	)
+
+	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)
+	if err != nil {
+		// @TODO logging
+
+		// NOP, continue
+	}
+
+	content := template.OrganizersCommunitiesElixir(domain.OrganizerElixir, headerProfiles)
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
 }
 
 func (c *Controller) ClojureCommunities(ctx *gin.Context) {
-	c.TODO(ctx)
+	var (
+		authUserID = domain.ContextGetUserID(ctx)
+	)
+
+	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)
+	if err != nil {
+		// @TODO logging
+
+		// NOP, continue
+	}
+
+	content := template.OrganizersCommunitiesClojure(domain.OrganizerClojure, headerProfiles)
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
 }
 
 func (c *Controller) TODO(ctx *gin.Context) {

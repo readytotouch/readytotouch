@@ -14,20 +14,20 @@ var (
 	_ = qt422016.AcquireByteBuffer
 )
 
-func StreamOrganizersCommunitiesElixir(qw422016 *qt422016.Writer, headerProfiles []SocialProviderUser) {
+func StreamOrganizersCommunitiesElixir(qw422016 *qt422016.Writer, organizer Organizer, headerProfiles []SocialProviderUser) {
 	qw422016.N().S(`
 `)
 }
 
-func WriteOrganizersCommunitiesElixir(qq422016 qtio422016.Writer, headerProfiles []SocialProviderUser) {
+func WriteOrganizersCommunitiesElixir(qq422016 qtio422016.Writer, organizer Organizer, headerProfiles []SocialProviderUser) {
 	qw422016 := qt422016.AcquireWriter(qq422016)
-	StreamOrganizersCommunitiesElixir(qw422016, headerProfiles)
+	StreamOrganizersCommunitiesElixir(qw422016, organizer, headerProfiles)
 	qt422016.ReleaseWriter(qw422016)
 }
 
-func OrganizersCommunitiesElixir(headerProfiles []SocialProviderUser) string {
+func OrganizersCommunitiesElixir(organizer Organizer, headerProfiles []SocialProviderUser) string {
 	qb422016 := qt422016.AcquireByteBuffer()
-	WriteOrganizersCommunitiesElixir(qb422016, headerProfiles)
+	WriteOrganizersCommunitiesElixir(qb422016, organizer, headerProfiles)
 	qs422016 := string(qb422016.B)
 	qt422016.ReleaseByteBuffer(qb422016)
 	return qs422016
