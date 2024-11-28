@@ -116,7 +116,7 @@ func (c *Controller) Companies(ctx *gin.Context) {
 	for _, company := range source {
 		company.ID = organizers.CompanyAliasMap[company.LinkedInProfile.Alias]
 		if company.ID == 0 {
-			// make generate-company-code
+			// make generate-organizers
 
 			continue
 		}
@@ -203,7 +203,7 @@ func (c *Controller) Company(ctx *gin.Context) {
 
 	company.ID = organizers.CompanyAliasMap[company.LinkedInProfile.Alias]
 	if company.ID == 0 {
-		// make generate-company-code
+		// make generate-organizers
 
 		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Company not found"))
 
