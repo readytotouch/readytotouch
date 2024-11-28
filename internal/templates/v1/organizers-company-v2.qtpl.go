@@ -190,18 +190,62 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
       <img
         class="card__image"
         alt="card image preview icon"
-				src="/assets/images/pages/organizer/google.png"
+		src="/assets/images/pages/common-images/unknown.svg"
       />
     </div>
     <figcaption class="card__header-caption">
-      <a href="/page-stub.html" class="card__headline card__headline--title">Google</a>
+      <a href="`)
+	qw422016.E().S(organizerFeature.Path)
+	qw422016.N().S(`/`)
+	qw422016.E().S(company.LinkedInProfile.Alias)
+	qw422016.N().S(`" class="card__headline card__headline--title">`)
+	qw422016.E().S(company.Name)
+	qw422016.N().S(`</a>
     </figcaption>
   </figure>
 	<div class="card__top-links">
-		<a href="#" class="card__top-link button-link">Website</a>
-		<a href="#" class="card__top-link button-link">Careers</a>
-		<a href="#" class="card__top-link button-link">About</a>
-		<a href="#" class="card__top-link button-link">Dev Blog</a>
+		<a href="`)
+	qw422016.E().S(company.Website)
+	qw422016.N().S(`" class="card__top-link button-link">Website</a>
+		`)
+	if company.Careers == "" {
+		qw422016.N().S(`
+			<a href="javascript:void(0);" class="card__top-link button-link disabled">Careers</a>
+		`)
+	} else {
+		qw422016.N().S(`
+			<a href="`)
+		qw422016.E().S(company.Careers)
+		qw422016.N().S(`" class="card__top-link button-link">Careers</a>
+		`)
+	}
+	qw422016.N().S(`
+		`)
+	if company.About == "" {
+		qw422016.N().S(`
+			<a href="javascript:void(0);" class="card__top-link button-link disabled">About</a>
+		`)
+	} else {
+		qw422016.N().S(`
+			<a href="`)
+		qw422016.E().S(company.About)
+		qw422016.N().S(`" class="card__top-link button-link">About</a>
+		`)
+	}
+	qw422016.N().S(`
+		`)
+	if company.Blog == "" {
+		qw422016.N().S(`
+			<a href="javascript:void(0);" class="card__top-link button-link disabled">Dev Blog</a>
+		`)
+	} else {
+		qw422016.N().S(`
+			<a href="`)
+		qw422016.E().S(company.Blog)
+		qw422016.N().S(`" class="card__top-link button-link">Dev Blog</a>
+		`)
+	}
+	qw422016.N().S(`
 	</div>
   <div class="card__info">
     <figure class="card__figure">
