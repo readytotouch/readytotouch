@@ -61,7 +61,7 @@ func StreamOrganizersCompanyV1(qw422016 *qt422016.Writer,
 
 <body class="organizer-companies-inner">
 <main class="main-wrapper">
-	<header class="header">
+<header class="header">
   <div class="header__wrapper">
     <a href="/organizers" class="header__logo">
       <img
@@ -74,24 +74,21 @@ func StreamOrganizersCompanyV1(qw422016 *qt422016.Writer,
         alt="organizer logo"
       />
     </a>
-    `)
-	var navigation = toFeatureNavigation(organizerFeature.Path)
-
-	qw422016.N().S(`
     <ul class="header__nav">
       <li class="header__nav-item">
-        <a href="`)
-	qw422016.E().S(navigation.companiesURL)
-	qw422016.N().S(`" class="header__nav-link `)
-	qw422016.E().S(navigation.companiesActive)
-	qw422016.N().S(`">Companies</a>
+        <a href="/organizers/`)
+	qw422016.E().S(organizerFeature.Organizer.Alias)
+	qw422016.N().S(`/companies" class="header__nav-link active">Companies</a>
       </li>
       <li class="header__nav-item">
-        <a href="`)
-	qw422016.E().S(navigation.vacanciesURL)
-	qw422016.N().S(`" class="header__nav-link `)
-	qw422016.E().S(navigation.vacanciesActive)
-	qw422016.N().S(`">Vacancies</a>
+        <a href="/organizers/`)
+	qw422016.E().S(organizerFeature.Organizer.Alias)
+	qw422016.N().S(`/vacancies" class="header__nav-link">Vacancies</a>
+      </li>
+      <li class="header__nav-item">
+        <a href="/organizers/`)
+	qw422016.E().S(organizerFeature.Organizer.Alias)
+	qw422016.N().S(`/communities" class="header__nav-link">Communities</a>
       </li>
     </ul>
     `)

@@ -29,7 +29,7 @@
 
 <body class="organizer-companies-inner">
 <main class="main-wrapper">
-	<header class="header">
+<header class="header">
   <div class="header__wrapper">
     <a href="/organizers" class="header__logo">
       <img
@@ -40,13 +40,15 @@
         alt="organizer logo"
       />
     </a>
-    {% code var navigation = toFeatureNavigation(organizerFeature.Path) %}
     <ul class="header__nav">
       <li class="header__nav-item">
-        <a href="{%s navigation.companiesURL %}" class="header__nav-link {%s navigation.companiesActive %}">Companies</a>
+        <a href="/organizers/{%s organizerFeature.Organizer.Alias %}/companies" class="header__nav-link active">Companies</a>
       </li>
       <li class="header__nav-item">
-        <a href="{%s navigation.vacanciesURL %}" class="header__nav-link {%s navigation.vacanciesActive %}">Vacancies</a>
+        <a href="/organizers/{%s organizerFeature.Organizer.Alias %}/vacancies" class="header__nav-link">Vacancies</a>
+      </li>
+      <li class="header__nav-item">
+        <a href="/organizers/{%s organizerFeature.Organizer.Alias %}/communities" class="header__nav-link">Communities</a>
       </li>
     </ul>
     {%= organizersHeaderStars() %}

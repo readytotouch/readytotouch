@@ -24,7 +24,696 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 	stats CompanyStats,
 	authQueryParams string,
 ) {
+	qw422016.N().S(`<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>`)
+	qw422016.E().S(company.Name)
+	qw422016.N().S(` – company using `)
+	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.N().S(` | ReadyToTouch</title>
+	<meta name="description" content="Improve your chances of getting a job by connecting with `)
+	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.N().S(` developers from `)
+	qw422016.E().S(company.Name)
+	qw422016.N().S(` and receiving further recommendations.">
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="author" type="text/plain" href="https://readytotouch.com/humans.txt"/>
+	<meta property="og:image" content="/assets/images/og/organizers-light.jpg">
+
+    `)
+	streamfavicon(qw422016)
 	qw422016.N().S(`
+    `)
+	streamorganizersFonts(qw422016)
+	qw422016.N().S(`
+    `)
+	streamorganizersCompanyV2Styles(qw422016)
+	qw422016.N().S(`
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts@3.52.0"></script>
+    `)
+	streamga(qw422016)
+	qw422016.N().S(`
+</head>
+
+<body class="organizer-companies-inner">
+<main class="main-wrapper">
+<header class="header">
+  <div class="header__wrapper">
+    <a href="/organizers" class="header__logo">
+      <img
+        width="129"
+        height="32"
+        class="header__logo-img"
+        src="/assets/images/pages/organizer/`)
+	qw422016.E().S(organizerFeature.Organizer.Logo)
+	qw422016.N().S(`"
+        alt="organizer logo"
+      />
+    </a>
+    <ul class="header__nav">
+      <li class="header__nav-item">
+        <a href="/organizers/`)
+	qw422016.E().S(organizerFeature.Organizer.Alias)
+	qw422016.N().S(`/companies" class="header__nav-link active">Companies</a>
+      </li>
+      <li class="header__nav-item">
+        <a href="/organizers/`)
+	qw422016.E().S(organizerFeature.Organizer.Alias)
+	qw422016.N().S(`/vacancies" class="header__nav-link">Vacancies</a>
+      </li>
+      <li class="header__nav-item">
+        <a href="/organizers/`)
+	qw422016.E().S(organizerFeature.Organizer.Alias)
+	qw422016.N().S(`/communities" class="header__nav-link">Communities</a>
+      </li>
+    </ul>
+    `)
+	streamorganizersHeaderStars(qw422016)
+	qw422016.N().S(`
+    `)
+	if len(headerProfiles) > 0 {
+		qw422016.N().S(`
+    `)
+		streamorganizersHeaderProfile(qw422016, headerProfiles)
+		qw422016.N().S(`
+    `)
+	} else {
+		qw422016.N().S(`
+    <a href="/organizers/`)
+		qw422016.E().S(organizerFeature.Organizer.Alias)
+		qw422016.N().S(`/welcome`)
+		qw422016.E().S(authQueryParams)
+		qw422016.N().S(`" class="button button--small-padding button--black header__login-button">Log in</a>
+    `)
+	}
+	qw422016.N().S(`
+  </div>
+</header>
+
+<div class="container">
+  <nav aria-label="breadcrumb" aria-labelledby="navigation through the bread crumbs" class="breadcrumb">
+    <ul class="breadcrumb__list">
+      <li class="breadcrumb__item">
+        <a class="breadcrumb__link" href="/">Main</a>
+      </li>
+      <li class="breadcrumb__item">
+        <a class="breadcrumb__link" href="/organizers">Organizers</a>
+      </li>
+      <li class="breadcrumb__item">
+        <a class="breadcrumb__link" href="javascript:void(0);">`)
+	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.N().S(`</a>
+      </li>
+      <li class="breadcrumb__item">
+        <a class="breadcrumb__link" href="`)
+	qw422016.E().S(organizerFeature.Path)
+	qw422016.N().S(`">`)
+	qw422016.E().S(organizerFeature.Title)
+	qw422016.N().S(`</a>
+      </li>
+      <li class="breadcrumb__item">
+        <span class="breadcrumb__page" aria-current="page">`)
+	qw422016.E().S(company.Name)
+	qw422016.N().S(`</span>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<section class="companies-cards">
+  <div class="container companies-cards__container"><div class="card">
+  <aside class="card__action">
+    <button class="favorite in-favorite card__action-button button-group__item" title="Add to favorite">
+      <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" class="favorite__icon" viewBox="0 0 28 28">
+        <path
+          d="m14.5 22.1-.5-.3-.5.3-6.8 4.2c-.5.3-1.1-.1-.9-.7L7.5 18l.1-.6-.4-.4-5.9-5.2c-.3-.3-.3-.6-.2-.8.1-.2.3-.4.5-.4l7.9-.7.6-.1.2-.6 2.9-7.4c.2-.5 1-.5 1.2 0l3.1 7.3.2.5.6.1 7.9.7c.2 0 .4.2.5.5.1.3 0 .6-.2.7l-5.9 5.2-.4.4.1.6 1.8 7.7c.1.3 0 .5-.2.6-.2.1-.5.2-.8 0l-6.6-4z"
+        />
+      </svg>
+    </button>
+    <!--<button class="button-group__item" title="View statistics">
+      <img width="20" height="20" alt="icon stats" src="/assets/images/pages/common/stats.svg" />
+    </button>-->
+  </aside>
+  <figure class="card__header">
+    <div class="card__image-overlay">
+      <img
+        class="card__image"
+        alt="card image preview icon"
+				src="/assets/images/pages/organizer/google.png"
+      />
+    </div>
+    <figcaption class="card__header-caption">
+      <a href="/page-stub.html" class="card__headline card__headline--title">Google</a>
+    </figcaption>
+  </figure>
+	<div class="card__top-links">
+		<a href="#" class="card__top-link button-link">Website</a>
+		<a href="#" class="card__top-link button-link">Careers</a>
+		<a href="#" class="card__top-link button-link">About</a>
+		<a href="#" class="card__top-link button-link">Dev Blog</a>
+	</div>
+  <div class="card__info">
+    <figure class="card__figure">
+      <img
+        class="card__icon"
+        alt="card type icon"
+        width="16"
+        height="16"
+        src="/assets/images/pages/vacancy/building.svg"
+      />
+      <figcaption class="card__figcaption">Product</figcaption>
+    </figure>
+    <figure class="card__figure">
+      <img
+        class="card__icon"
+        alt="card type icon"
+        width="16"
+        height="16"
+        src="/assets/images/pages/vacancy/company-type.svg"
+      />
+      <figcaption class="card__figcaption">HRTech</figcaption>
+    </figure>
+  </div>
+  <p class="card__text card__text--full-text">
+		A problem isn't truly solved until it's solved for all. Googlers
+		build products that help create opportunities for everyone, whether
+		down the street or across the globe. Bring your insight, imagination
+		and a healthy disregard for the impossible. Bring everything that
+		makes you unique. Together, we can build for everyone.
+  </p>
+</div>
+<div class="cards-group">
+	<div class="card">
+		<ul class="card__links-group">
+			<li class="card__links-item card__links-item--title">
+				<div class="card__links-item-group">
+					<img
+						class="card__links-icon"
+						alt="linkedin icon"
+						width="32"
+						height="32"
+						src="/assets/images/pages/organizer/linkedin.svg"
+					/>
+					<a href="#" class="card__links-link">LinkedIn</a>
+					<a href="#" class="card__links-link card__links-link--verify">
+						<img
+							class="card__links-icon"
+							alt="icon"
+							src="/assets/images/pages/organizer/verified-icon.png"
+						/>
+					</a>
+				</div>
+				<ul class="card__links-item-info">
+					<li class="card__link-stats-item">35M followers</li>
+					<li class="card__link-stats-item">10,001+ employees</li>
+					<li class="card__link-stats-item">302,261 associated members</li>
+				</ul>
+			</li>
+			<li class="card__links-item">
+				<a href="#" class="button-link card__links-link">Overview</a>
+			</li>
+			<li class="card__links-item">
+				<a href="#" class="button-link card__links-link">Connections</a>
+				<img
+					class="card__links-icon"
+					alt="language icon"
+					width="20"
+					height="20"
+					src="/assets/images/pages/organizer/language.svg"
+				/>
+			</li>
+			<li class="card__links-item">
+				<a href="#" class="button-link card__links-link">Connections 🇺🇦</a>
+			</li>
+			<li class="card__links-item">
+				<a href="#" class="button-link card__links-link">Connections 🇨🇿</a>
+			</li>
+			<li class="card__links-item">
+				<a href="#" class="button-link card__links-link">Jobs</a>
+			</li>
+		</ul>
+	</div>
+	<div class="card">
+		<ul class="card__links-group">
+			<li class="card__links-item card__links-item--title">
+				<div class="card__links-item-group">
+					<img
+						class="card__links-icon"
+						alt="github icon"
+						width="32"
+						height="32"
+						src="/assets/images/pages/organizer/github.svg"
+					/>
+					<a href="#" class="card__links-link card__links-link--verify ">
+						<img
+							class="card__links-icon"
+							alt="icon"
+							src="/assets/images/pages/organizer/verified.png"
+						/>
+					</a>
+					<a href="#" class="card__links-link">GitHub</a>
+				</div>
+			</li>
+			<li class="card__links-item">
+				<a href="#" class="button-link card__links-link">Overview</a>
+			</li>
+			<li class="card__links-item">
+				<a href="#" class="button-link card__links-link">Repositories (3)</a>
+			</li>
+		</ul>
+	</div>
+	<div class="card">
+		<ul class="card__links-group">
+			<li class="card__links-item card__links-item--title">
+				<div class="card__links-item-group">
+					<img
+						class="card__links-icon"
+						alt="linkedin icon"
+						width="32"
+						height="32"
+						src="/assets/images/pages/organizer/blind.png"
+					/>
+					<a href="#" class="card__links-link">LinkedIn</a>
+				</div>
+				<ul class="card__links-item-info">
+					<li class="card__link-stats-item">10,000+ employees</li>
+					<li class="card__link-stats-item">$60K ~ $356K a year</li>
+					<li class="card__link-stats-item">10 095 Reviews</li>
+				</ul>
+			</li>
+			<li class="card__links-item">
+				<a href="#" class="button-link card__links-link">Overview</a>
+			</li>
+			<li class="card__links-item">
+				<a href="#" class="button-link card__links-link">Reviews</a>
+				<span class="card__links-link-star">⭐ 4.2</span>
+			</li>
+		</ul>
+	</div>
+	<div class="card">
+		<ul class="card__links-group">
+			<li class="card__links-item card__links-item--title">
+				<div class="card__links-item-group">
+					<img
+						class="card__links-icon"
+						alt="linkedin icon"
+						width="32"
+						height="32"
+						src="/assets/images/pages/organizer/levels.png"
+					/>
+					<a href="#" class="card__links-link">Levels.fyi</a>
+				</div>
+				<ul class="card__links-item-info">
+					<li class="card__link-stats-item">258 750 of Employees</li>
+				</ul>
+			</li>
+			<li class="card__links-item">
+				<a href="#" class="button-link card__links-link">Overview</a>
+			</li>
+			<li class="card__links-item">
+				<a href="#" class="button-link card__links-link">Jobs</a>
+			</li>
+		</ul>
+	</div>
+	<div class="card">
+		<ul class="card__links-group">
+			<li class="card__links-item card__links-item--title">
+				<div class="card__links-item-group">
+					<img
+						class="card__links-icon"
+						alt="glassdoor icon"
+						width="32"
+						height="32"
+						src="/assets/images/pages/organizer/glassdoor.svg"
+					/>
+					<a href="#" class="card__links-link">Glassdoor</a>
+					<a href="#" class="card__links-link card__links-link--verify">
+						<img
+							class="card__links-icon"
+							alt="icon"
+							src="/assets/images/pages/organizer/verified-emp.png"
+						/>
+					</a>
+				</div>
+				<ul class="card__links-item-info">
+					<li class="card__link-stats-item card__link-stats-item--one-line">
+						<span>
+							<strong>4.8K</strong> jobs
+						</span>
+						<span>
+							<strong>58.2K</strong> reviews
+						</span>
+						<span>
+							<strong>166.1K</strong> salaries
+						</span>
+					</li>
+				</ul>
+			</li>
+			<li class="card__links-item">
+				<a href="#" class="button-link card__links-link">Overview</a>
+			</li>
+			<li class="card__links-item">
+				<a href="#" class="button-link card__links-link">Reviews</a>
+				<span class="card__links-link-star">4.2 ★</span>
+			</li>
+			<li class="card__links-item">
+				<a href="#" class="button-link card__links-link">Jobs</a>
+			</li>
+		</ul>
+	</div>
+	<div class="card">
+		<ul class="card__links-group">
+			<li class="card__links-item card__links-item--title">
+				<div class="card__links-item-group">
+					<img
+						class="card__links-icon"
+						alt="linkedin icon"
+						width="32"
+						height="32"
+						src="/assets/images/pages/organizer/indeed.png"
+					/>
+					<a href="#" class="card__links-link">Indeed</a>
+				</div>
+			</li>
+			<li class="card__links-item">
+				<a href="#" class="button-link card__links-link">Overview</a>
+			</li>
+			<li class="card__links-item">
+				<a href="#" class="button-link card__links-link">Jobs</a>
+			</li>
+		</ul>
+	</div>
+	<div class="card">
+		<ul class="card__links-group">
+			<li class="card__links-item card__links-item--title">
+				<div class="card__links-item-group">
+					<img
+						class="card__links-icon"
+						alt="linkedin icon"
+						width="32"
+						height="32"
+						src="/assets/images/pages/organizer/investors.svg"
+					/>
+					<a href="#" class="card__links-link">Investors</a>
+				</div>
+			</li>
+			<li class="card__links-item">
+				<img class="card__links-icon" alt="Dealroom icon" width="20" height="20" src="/assets/images/pages/organizer/dealroom.png" />
+				<a href="#" class="button-link card__links-link">Dealroom</a>
+			</li>
+			<li class="card__links-item">
+				<img class="card__links-icon" alt="Crunchbase icon" width="20" height="20" src="/assets/images/pages/organizer/crunchbase.svg" />
+				<a href="#" class="button-link card__links-link">Crunchbase</a>
+			</li>
+			<li class="card__links-item">
+				<img class="card__links-icon" alt="Pitchbook icon" width="20" height="20" src="/assets/images/pages/organizer/pitchbook.png" />
+				<a href="#" class="button-link card__links-link">Pitchbook</a>
+			</li>
+		</ul>
+	</div>
+	<div class="card">
+		<ul class="card__links-group">
+			<li class="card__links-item card__links-item--title">
+				<div class="card__links-item-group">
+					<img
+						class="card__links-icon"
+						alt="linkedin icon"
+						width="32"
+						height="32"
+						src="/assets/images/pages/organizer/query_stats.svg"
+					/>
+					<a href="#" class="card__links-link">Market</a>
+				</div>
+			</li>
+			<li class="card__links-item">
+				<img class="card__links-icon" alt="Pitchbook icon" width="20" height="20" src="/assets/images/pages/organizer/yahoo.png" />
+				<a href="#" class="button-link card__links-link">Yahoo Finance</a>
+			</li>
+			<li class="card__links-item">
+				<img class="card__links-icon" alt="Pitchbook icon" width="20" height="20" src="/assets/images/pages/organizer/google-fin.png" />
+				<a href="#" class="button-link card__links-link">Google Finance</a>
+			</li>
+		</ul>
+	</div>
+	<div class="card">
+		<ul class="card__links-group card__links-group--unbordered">
+			<li class="card__links-item card__links-item--title">
+				<div class="card__links-item-group">
+					<a href="#" class="card__links-link">Other links</a>
+				</div>
+			</li>
+			<li class="card__links-item">
+				<img
+					class="card__links-icon"
+					alt="whois icon"
+					width="20"
+					height="20"
+					src="/assets/images/pages/organizer/whois.svg"
+				/>
+				<a href="#" class="button-link card__links-link">Whois</a>
+			</li>
+			<li class="card__links-item">
+				<img
+					class="card__links-icon"
+					alt="similarweb icon"
+					width="20"
+					height="20"
+					src="/assets/images/pages/organizer/similarweb.svg"
+				/>
+				<a href="#" class="button-link card__links-link">Similarweb</a>
+			</li>
+			<li class="card__links-item">
+				<img class="card__links-icon" alt="otta icon" width="20" height="20" src="/assets/images/pages/organizer/otta.svg" />
+				<a href="#" class="button-link card__links-link">Otta</a>
+			</li>
+			<li class="card__links-item">
+				<img class="card__links-icon" alt="xing icon" width="20" height="20" src="/assets/images/pages/organizer/xing.svg" />
+				<a href="#" class="button-link card__links-link">XING</a>
+			</li>
+			<li class="card__links-item">
+				<img class="card__links-icon" alt="xing icon" width="20" height="20" src="/assets/images/pages/organizer/y-combinator.png" />
+				<a href="#" class="button-link card__links-link">Y Combinator</a>
+			</li>
+		</ul>
+	</div>
+</div></div>
+</section>
+<section class="company-vacancies">
+	<div class="container company-vacancies__container">
+		<h2 class="company-statistics__headline">Vacancies</h2>
+		<div class="vacancies__empty d-none">
+			<img class="vacancies__empty-logo" width="64" height="64" src="/assets/images/pages/common-images/📂.png" alt="folder">
+			<h2 class="vacancies__empty-title">No vacancies yet</h2>
+			<p class="vacancies__empty-subtitle">This company currently has no vacancies, or we are unaware of them.</p>
+		</div>
+		<div class="vacancies__list">
+			<div class="card">
+	<aside class="card__action">
+		<button class="favorite card__action-button button-group__item" title="Add to favorite">
+			<svg class="favorite__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28"
+					 xml:space="preserve"><path d="m14.5 22.1-.5-.3-.5.3-6.8 4.2c-.5.3-1.1-.1-.9-.7L7.5 18l.1-.6-.4-.4-5.9-5.2c-.3-.3-.3-.6-.2-.8.1-.2.3-.4.5-.4l7.9-.7.6-.1.2-.6 2.9-7.4c.2-.5 1-.5 1.2 0l3.1 7.3.2.5.6.1 7.9.7c.2 0 .4.2.5.5.1.3 0 .6-.2.7l-5.9 5.2-.4.4.1.6 1.8 7.7c.1.3 0 .5-.2.6-.2.1-.5.2-.8 0l-6.6-4z"/></svg>
+		</button>
+		<button title="Hide vacancy"
+						class="button-group__item button-group__item-sloth card__action-button-sloth"></button>
+	</aside>
+	<figure class="card__header card__header--organizer">
+		<div class="card__image-overlay">
+			<img class="card__image"
+					 alt="card image preview icon"
+					 src="/assets/images/pages/vacancy/company-logo.svg"
+			/>
+		</div>
+		<figcaption class="card__header-caption">
+			<a href=""
+				 class="card__headline vacancy__link"
+			>
+				Go Developer
+			</a>
+			<a href=""
+				 class="card__sub-headline vacancy__link">
+				RoboSoft
+			</a>
+		</figcaption>
+	</figure>
+	<p class="card__text card__text--organizer">
+		The candidate will have strong expertise in Go programming, experience with microservices architecture, and a
+		passion for building scalable and efficient software solutions.
+	</p>
+	<div class="card__footer">
+		<div class="card__details">
+			<figure class="card__figure" title="09:05 29.02.2024">
+				<img class="card__icon"
+						 alt="card type icon"
+						 width="16"
+						 height="16"
+						 src="/assets/images/pages/online/calendar.svg"
+				/>
+				<figcaption class="card__figcaption">Yesterday</figcaption>
+			</figure>
+			<figure class="card__figure" title="Views last month: 164">
+				<img class="card__icon"
+						 alt="card type icon"
+						 width="16"
+						 height="16"
+						 src="/assets/images/pages/common/eye.svg"
+				/>
+				<figcaption class="card__figcaption">Views last month: 164</figcaption>
+			</figure>
+		</div>
+		<button target="_blank" href="#" class="button button--bordered-gray button--gap-images">
+			<img
+				width="20"
+				height="20"
+				src="/assets/images/pages/organizer/linkedin.svg"
+				alt="go original logo"
+				class="hero__button-icon"
+			/>
+			View source
+			<img
+				width="18"
+				height="18"
+				src="/assets/images/pages/common/external-link.svg"
+				alt="arrow black icon"
+				class="hero__button-icon"
+			/>
+		</button>
+	</div>
+</div>
+
+			<div class="card">
+	<aside class="card__action">
+		<button class="favorite card__action-button button-group__item" title="Add to favorite">
+			<svg class="favorite__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28"
+					 xml:space="preserve"><path d="m14.5 22.1-.5-.3-.5.3-6.8 4.2c-.5.3-1.1-.1-.9-.7L7.5 18l.1-.6-.4-.4-5.9-5.2c-.3-.3-.3-.6-.2-.8.1-.2.3-.4.5-.4l7.9-.7.6-.1.2-.6 2.9-7.4c.2-.5 1-.5 1.2 0l3.1 7.3.2.5.6.1 7.9.7c.2 0 .4.2.5.5.1.3 0 .6-.2.7l-5.9 5.2-.4.4.1.6 1.8 7.7c.1.3 0 .5-.2.6-.2.1-.5.2-.8 0l-6.6-4z"/></svg>
+		</button>
+		<button title="Hide vacancy"
+						class="button-group__item button-group__item-sloth card__action-button-sloth"></button>
+	</aside>
+	<figure class="card__header card__header--organizer">
+		<div class="card__image-overlay">
+			<img class="card__image"
+					 alt="card image preview icon"
+					 src="/assets/images/pages/vacancy/company-logo.svg"
+			/>
+		</div>
+		<figcaption class="card__header-caption">
+			<a href=""
+				 class="card__headline vacancy__link"
+			>
+				Go Developer
+			</a>
+			<a href=""
+				 class="card__sub-headline vacancy__link">
+				RoboSoft
+			</a>
+		</figcaption>
+	</figure>
+	<p class="card__text card__text--organizer">
+		The candidate will have strong expertise in Go programming, experience with microservices architecture, and a
+		passion for building scalable and efficient software solutions.
+	</p>
+	<div class="card__footer">
+		<div class="card__details">
+			<figure class="card__figure" title="09:05 29.02.2024">
+				<img class="card__icon"
+						 alt="card type icon"
+						 width="16"
+						 height="16"
+						 src="/assets/images/pages/online/calendar.svg"
+				/>
+				<figcaption class="card__figcaption">Yesterday</figcaption>
+			</figure>
+			<figure class="card__figure" title="Views last month: 164">
+				<img class="card__icon"
+						 alt="card type icon"
+						 width="16"
+						 height="16"
+						 src="/assets/images/pages/common/eye.svg"
+				/>
+				<figcaption class="card__figcaption">Views last month: 164</figcaption>
+			</figure>
+		</div>
+		<button target="_blank" href="#" class="button button--bordered-gray button--gap-images">
+			<img
+				width="20"
+				height="20"
+				src="/assets/images/pages/organizer/linkedin.svg"
+				alt="go original logo"
+				class="hero__button-icon"
+			/>
+			View source
+			<img
+				width="18"
+				height="18"
+				src="/assets/images/pages/common/external-link.svg"
+				alt="arrow black icon"
+				class="hero__button-icon"
+			/>
+		</button>
+	</div>
+</div>
+
+		</div>
+	</div>
+</section>
+
+<section class="company-statistics">
+  <div class="container company-statistics__container">
+    <h2 class="company-statistics__headline">Statistics</h2>
+    <div class="stats">
+      <header class="stats__head">
+        <div class="stats__counters">
+          <h3 class="stats__title">Views</h3>
+          <div class="stats__counters-group">
+            <div class="stats__counters-item">
+              <p class="stats__counters-views">Total</p>
+              <p class="stats__counters-item-number">846</p>
+            </div>
+            <div class="stats__counters-item">
+              <p class="stats__counters-views">Last month</p>
+              <p class="stats__counters-item-number">146</p>
+            </div>
+          </div>
+        </div>
+        <div class="stats__counters">
+          <h3 class="stats__title">Added to favorites</h3>
+          <div class="stats__counters-group">
+            <div class="stats__counters-item">
+              <p class="stats__counters-views">Total</p>
+              <p class="stats__counters-item-number">68</p>
+            </div>
+            <div class="stats__counters-item">
+              <p class="stats__counters-views">Last month</p>
+              <p class="stats__counters-item-number">13</p>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="stats__item">
+        <div class="stats__header">
+          <h3 class="stats__title">Company website views</h3>
+          <div class="stats__period">Last month</div>
+        </div>
+        <div class="stats__chart stats__chart--page-views-statistics js-page-views-statistics"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+</main>
+`)
+	streamorganizersFooter(qw422016)
+	qw422016.N().S(`
+<script src="/assets/js/organizers-company-app.js?`)
+	qw422016.N().D(appVersion)
+	qw422016.N().S(`"></script>
+</body>
+</html>
 `)
 }
 
