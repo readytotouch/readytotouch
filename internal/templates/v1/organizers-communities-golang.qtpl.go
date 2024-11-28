@@ -19,8 +19,12 @@ func StreamOrganizersCommunitiesGolang(qw422016 *qt422016.Writer, organizer Orga
 <html lang="en">
 
 <head>
-	<title>Golang Communities | ReadyToTouch</title>
-	<meta name="title" content="Golang Communities | ReadyToTouch">
+	<title>`)
+	qw422016.E().S(organizer.Title)
+	qw422016.N().S(` Communities | ReadyToTouch</title>
+	<meta name="title" content="`)
+	qw422016.E().S(organizer.Title)
+	qw422016.N().S(` Communities | ReadyToTouch">
 	<meta name="description" content="">
     <meta name="keywords" content="">
 
