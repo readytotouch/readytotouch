@@ -162,7 +162,7 @@ func (c *Controller) Companies(ctx *gin.Context) {
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
 }
 
-func (c *Controller) Company(ctx *gin.Context) {
+func (c *Controller) CompanyV1(ctx *gin.Context) {
 	type (
 		companyURI struct {
 			CompanyAlias string `uri:"company_alias" binding:"required"`
@@ -181,7 +181,7 @@ func (c *Controller) Company(ctx *gin.Context) {
 	}
 
 	var (
-		featurePath = strings.TrimSuffix(ctx.FullPath(), "/:company_alias")
+		featurePath = c.trimCompanyAlias(ctx)
 	)
 
 	// Redirect to lowercase company alias
@@ -262,6 +262,19 @@ func (c *Controller) Company(ctx *gin.Context) {
 	)
 
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
+}
+
+func (c *Controller) CompanyV2(ctx *gin.Context) {
+	c.CompanyV1(ctx)
+}
+
+func (c *Controller) trimCompanyAlias(ctx *gin.Context) (result string) {
+	result = ctx.FullPath()
+	result = strings.TrimSuffix(result, "/:company_alias")
+	result = strings.TrimSuffix(result, "/:company_alias/v1")
+	result = strings.TrimSuffix(result, "/:company_alias/v2")
+
+	return result
 }
 
 func (c *Controller) Waitlist(ctx *gin.Context) {
