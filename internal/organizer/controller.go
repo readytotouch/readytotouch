@@ -20,6 +20,10 @@ type (
 	companyAliasURI struct {
 		CompanyAlias string `uri:"company_alias" binding:"required"`
 	}
+
+	vacancyURI struct {
+		VacancyID int64 `uri:"vacancy_id" binding:"required"`
+	}
 )
 
 type Controller struct {
@@ -500,6 +504,40 @@ func (c *Controller) ClojureCommunities(ctx *gin.Context) {
 	content := template.OrganizersCommunitiesClojure(domain.OrganizerClojure, headerProfiles)
 
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
+}
+
+func (c *Controller) VacancyRedirect(ctx *gin.Context) {
+	var (
+		authUserID = domain.ContextGetUserID(ctx)
+	)
+
+	if authUserID == 0 {
+		ctx.Redirect(http.StatusFound, "/organizers/golang/welcome"+c.redirect(ctx.FullPath()))
+
+		return
+	}
+
+	var (
+		uri vacancyURI
+	)
+
+	err := ctx.ShouldBindUri(&uri)
+	if err != nil {
+		ctx.Data(http.StatusBadRequest, "text/html; charset=utf-8", []byte("Vacancy ID is required"))
+
+		return
+	}
+
+	vacancyExternalURL, ok := organizers.VacancyIdMap[uri.VacancyID]
+	if !ok {
+		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Vacancy not found"))
+
+		return
+	}
+
+	// @TODO store vacancy view stats
+
+	ctx.Redirect(http.StatusFound, vacancyExternalURL)
 }
 
 func (c *Controller) TODO(ctx *gin.Context) {

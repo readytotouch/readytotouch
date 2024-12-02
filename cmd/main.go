@@ -205,6 +205,7 @@ func main() {
 	r.GET("/organizers/clojure/companies/:company_alias/v2", organizerController.CompanyV2)
 	r.GET("/organizers/clojure/vacancies", organizerController.Waitlist)
 	r.GET("/organizers/clojure/communities", organizerController.ClojureCommunities)
+	r.GET("/organizers/v/:vacancy_id", organizerController.VacancyRedirect)
 
 	r.GET("/organizers/golang", found("/organizers/golang/companies"))
 	r.GET("/organizers/rust", found("/organizers/rust/companies"))
