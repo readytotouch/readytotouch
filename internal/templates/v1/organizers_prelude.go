@@ -92,6 +92,42 @@ func industryNames(source []Industry) string {
 	return strings.Join(result, ", ")
 }
 
+func formatLinkedInFollowers(s string) string {
+	if s == "" {
+		return "??? followers"
+	}
+
+	if strings.HasSuffix(s, "followers") {
+		return s
+	}
+
+	return s + " " + "followers"
+}
+
+func formatLinkedInEmployees(s string) string {
+	if s == "" {
+		return "??? employees"
+	}
+
+	if strings.HasSuffix(s, "employees") {
+		return s
+	}
+
+	return s + " " + "employees"
+}
+
+func formatLinkedInAssociatedMembers(s string) string {
+	if s == "" {
+		return "??? associated members"
+	}
+
+	if strings.HasSuffix(s, "associated members") {
+		return s
+	}
+
+	return s + " " + "associated members"
+}
+
 var (
 	companyTypeName = map[domain.CompanyType]string{
 		CompanyTypeProduct: "Product",

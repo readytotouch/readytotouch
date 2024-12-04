@@ -182,26 +182,28 @@
 						height="32"
 						src="/assets/images/pages/organizer/linkedin.svg"
 					/>
-					<a href="#" class="card__links-link">LinkedIn</a>
-					<a href="#" class="card__links-link card__links-link--verify">
+					<a href="https://www.linkedin.com/company/{%s company.LinkedInProfile.Alias %}/" class="card__links-link">LinkedIn</a>
+					{% if company.LinkedInProfile.Verified %}
+					<a href="https://www.linkedin.com/company/{%s company.LinkedInProfile.Alias %}/about" class="card__links-link card__links-link--verify">
 						<img
 							class="card__links-icon"
 							alt="icon"
 							src="/assets/images/pages/organizer/verified-icon.png"
 						/>
 					</a>
+					{% endif %}
 				</div>
 				<ul class="card__links-item-info">
-					<li class="card__link-stats-item">35M followers</li>
-					<li class="card__link-stats-item">10,001+ employees</li>
-					<li class="card__link-stats-item">302,261 associated members</li>
+					<li class="card__link-stats-item">{%s formatLinkedInFollowers(company.LinkedInProfile.Followers) %}</li>
+					<li class="card__link-stats-item">{%s formatLinkedInEmployees(company.LinkedInProfile.Employees) %}</li>
+					<li class="card__link-stats-item">{%s formatLinkedInAssociatedMembers(company.LinkedInProfile.AssociatedMembers) %}</li>
 				</ul>
 			</li>
 			<li class="card__links-item">
-				<a href="#" class="button-link card__links-link">Overview</a>
+				<a href="https://www.linkedin.com/company/{%s company.LinkedInProfile.Alias %}/" class="button-link card__links-link">Overview</a>
 			</li>
 			<li class="card__links-item">
-				<a href="#" class="button-link card__links-link">Connections</a>
+				<a href="{%s linkedinConnectionsURL([]Company{company}, nil) %}" class="button-link card__links-link">Connections</a>
 				<img
 					class="card__links-icon"
 					alt="language icon"
@@ -211,13 +213,13 @@
 				/>
 			</li>
 			<li class="card__links-item">
-				<a href="#" class="button-link card__links-link">Connections 🇺🇦</a>
+				<a href="{%s linkedinConnectionsURL([]Company{company}, ukrainianUniversities) %}" class="button-link card__links-link">Connections 🇺🇦</a>
 			</li>
 			<li class="card__links-item">
-				<a href="#" class="button-link card__links-link">Connections 🇨🇿</a>
+				<a href="{%s linkedinConnectionsURL([]Company{company}, czechUniversities) %}" class="button-link card__links-link">Connections 🇨🇿</a>
 			</li>
 			<li class="card__links-item">
-				<a href="#" class="button-link card__links-link">Jobs</a>
+				<a href="{%s linkedinJobsURL([]Company{company}, string(organizerFeature.Organizer.LanguageTitleKeywords)) %}" class="button-link card__links-link">Jobs</a>
 			</li>
 		</ul>
 	</div>

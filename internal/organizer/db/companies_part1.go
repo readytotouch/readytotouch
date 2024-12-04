@@ -79,9 +79,13 @@ func companiesPart1() []domain.CompanyProfile {
 			Name: "Google",
 			URL:  "https://www.google.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    1441,
-				Alias: "google",
-				Name:  "Google",
+				ID:                1441,
+				Alias:             "google",
+				Name:              "Google",
+				Followers:         "35M",
+				Employees:         "10K+",
+				AssociatedMembers: "303,309",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "google",
