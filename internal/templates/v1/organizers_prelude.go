@@ -128,6 +128,46 @@ func formatLinkedInAssociatedMembers(s string) string {
 	return s + " " + "associated members"
 }
 
+func fetchGitHubRepositoriesCount(company domain.CompanyProfile, language domain.Language) int {
+	return company.Languages[language].GitHubRepositoriesCount
+}
+
+func formatBlindEmployees(s string) string {
+	if s == "" {
+		return "??? employees"
+	}
+
+	if strings.HasSuffix(s, "employees") {
+		return s
+	}
+
+	return s + " " + "employees"
+}
+
+func formatBlindSalary(s string) string {
+	if s == "" {
+		return "$??K ~ $???K a year"
+	}
+
+	if strings.HasSuffix(s, "a year") {
+		return s
+	}
+
+	return s + " " + "a year"
+}
+
+func formatBlindReviews(s string) string {
+	if s == "" {
+		return "??? reviews"
+	}
+
+	if strings.HasSuffix(s, "reviews") {
+		return s
+	}
+
+	return s + " " + "reviews"
+}
+
 var (
 	companyTypeName = map[domain.CompanyType]string{
 		CompanyTypeProduct: "Product",

@@ -234,21 +234,23 @@
 						height="32"
 						src="/assets/images/pages/organizer/github.svg"
 					/>
-					<a href="#" class="card__links-link card__links-link--verify ">
+					{% if company.GitHubProfile.Verified %}
+					<a href="javascript:void(0);" class="card__links-link card__links-link--verify">
 						<img
 							class="card__links-icon"
 							alt="icon"
 							src="/assets/images/pages/organizer/verified.png"
 						/>
 					</a>
-					<a href="#" class="card__links-link">GitHub</a>
+					{% endif %}
+					<a href="https://github.com/{%s company.GitHubProfile.Login %}" class="card__links-link">GitHub</a>
 				</div>
 			</li>
 			<li class="card__links-item">
-				<a href="#" class="button-link card__links-link">Overview</a>
+				<a href="https://github.com/{%s company.GitHubProfile.Login %}" class="button-link card__links-link">Overview</a>
 			</li>
 			<li class="card__links-item">
-				<a href="#" class="button-link card__links-link">Repositories (3)</a>
+				<a href="https://github.com/orgs/{%s company.GitHubProfile.Login %}/repositories?q=lang%3A{%s organizerFeature.Organizer.GitHubAlias %}&type=all" class="button-link card__links-link">Repositories ({%d fetchGitHubRepositoriesCount(company, organizerFeature.Organizer.Language) %})</a>
 			</li>
 		</ul>
 	</div>
@@ -263,20 +265,20 @@
 						height="32"
 						src="/assets/images/pages/organizer/blind.png"
 					/>
-					<a href="#" class="card__links-link">LinkedIn</a>
+					<a href="https://www.teamblind.com/company/{%s company.BlindProfile.Alias %}" class="card__links-link">Blind</a>
 				</div>
 				<ul class="card__links-item-info">
-					<li class="card__link-stats-item">10,000+ employees</li>
-					<li class="card__link-stats-item">$60K ~ $356K a year</li>
-					<li class="card__link-stats-item">10 095 Reviews</li>
+					<li class="card__link-stats-item">{%s formatBlindEmployees(company.BlindProfile.Employees) %}</li>
+					<li class="card__link-stats-item">{%s formatBlindSalary(company.BlindProfile.Salary) %}</li>
+					<li class="card__link-stats-item">{%s formatBlindReviews(company.BlindProfile.Reviews) %}</li>
 				</ul>
 			</li>
 			<li class="card__links-item">
-				<a href="#" class="button-link card__links-link">Overview</a>
+				<a href="https://www.teamblind.com/company/{%s company.BlindProfile.Alias %}" class="button-link card__links-link">Overview</a>
 			</li>
 			<li class="card__links-item">
-				<a href="#" class="button-link card__links-link">Reviews</a>
-				<span class="card__links-link-star">⭐ 4.2</span>
+				<a href="https://www.teamblind.com/company/{%s company.BlindProfile.Alias %}/reviews" class="button-link card__links-link">Reviews</a>
+				<span class="card__links-link-star">⭐ {%s company.BlindProfile.ReviewsRate %}</span>
 			</li>
 		</ul>
 	</div>
