@@ -293,17 +293,17 @@
 						height="32"
 						src="/assets/images/pages/organizer/levels.png"
 					/>
-					<a href="#" class="card__links-link">Levels.fyi</a>
+					<a href="https://www.levels.fyi/companies/{%s company.LevelsFyiProfile.Alias %}" class="card__links-link">Levels.fyi</a>
 				</div>
 				<ul class="card__links-item-info">
-					<li class="card__link-stats-item">258 750 of Employees</li>
+					<li class="card__link-stats-item">{%s formatLevelsFyiEmployees(company.LevelsFyiProfile.Employees) %}</li>
 				</ul>
 			</li>
 			<li class="card__links-item">
-				<a href="#" class="button-link card__links-link">Overview</a>
+				<a href="https://www.levels.fyi/companies/{%s company.LevelsFyiProfile.Alias %}" class="button-link card__links-link">Overview</a>
 			</li>
 			<li class="card__links-item">
-				<a href="#" class="button-link card__links-link">Jobs</a>
+				<a href="https://www.levels.fyi/companies/{%s company.LevelsFyiProfile.Alias %}/jobs" class="button-link card__links-link">Jobs</a>
 			</li>
 		</ul>
 	</div>

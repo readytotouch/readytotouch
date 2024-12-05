@@ -168,6 +168,18 @@ func formatBlindReviews(s string) string {
 	return s + " " + "reviews"
 }
 
+func formatLevelsFyiEmployees(s string) string {
+	if s == "" {
+		return "??? employees"
+	}
+
+	if strings.HasSuffix(s, "employees") {
+		return s
+	}
+
+	return s + " " + "employees"
+}
+
 var (
 	companyTypeName = map[domain.CompanyType]string{
 		CompanyTypeProduct: "Product",

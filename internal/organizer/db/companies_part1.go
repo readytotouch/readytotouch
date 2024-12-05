@@ -101,7 +101,10 @@ func companiesPart1() []domain.CompanyProfile {
 				Reviews:     "10,265",
 				ReviewsRate: "4.2",
 			},
-			LevelsFyiProfile: domain.LevelsFyiProfile{},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "google",
+				Employees: "258,750",
+			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Google-EI_IE9079.11,17.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Google-Reviews-E9079.htm",

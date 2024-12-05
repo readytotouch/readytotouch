@@ -1,7 +1,7 @@
 export function organizersWelcome() {
     const pathname = window.location.pathname;
 
-    const index = pathname.lastIndexOf('/');
+    const index = pathname.indexOf("/", "/organizers/".length + 1);
 
     return `${pathname.substring(0, index)}/welcome?redirect=${encodeURIComponent(pathname)}`;
 }
