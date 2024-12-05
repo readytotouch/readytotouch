@@ -146,11 +146,11 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "American multinational technology company",
-			DealroomURL:      "",
-			CrunchbaseURL:    "",
-			PitchbookURL:     "",
-			YahooFinanceURL:  "",
-			GoogleFinanceURL: "",
+			DealroomURL:      "https://app.dealroom.co/companies/google",
+			CrunchbaseURL:    "https://www.crunchbase.com/organization/google",
+			PitchbookURL:     "https://pitchbook.com/profiles/company/10453-33",
+			YahooFinanceURL:  "https://finance.yahoo.com/quote/GOOG/",
+			GoogleFinanceURL: "https://www.google.com/finance/quote/GOOG:NASDAQ",
 			YCombinatorURL:   "",
 			Industries:       []domain.Industry{
 				// Too many industries

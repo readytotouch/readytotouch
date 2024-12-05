@@ -388,20 +388,20 @@
 						height="32"
 						src="/assets/images/pages/organizer/investors.svg"
 					/>
-					<a href="#" class="card__links-link">Investors</a>
+					<span class="card__links-link">Investors</span>
 				</div>
 			</li>
 			<li class="card__links-item">
 				<img class="card__links-icon" alt="Dealroom icon" width="20" height="20" src="/assets/images/pages/organizer/dealroom.png" />
-				<a href="#" class="button-link card__links-link">Dealroom</a>
+				<a href="{%s company.DealroomURL %}" class="button-link card__links-link">Dealroom</a>
 			</li>
 			<li class="card__links-item">
 				<img class="card__links-icon" alt="Crunchbase icon" width="20" height="20" src="/assets/images/pages/organizer/crunchbase.svg" />
-				<a href="#" class="button-link card__links-link">Crunchbase</a>
+				<a href="{%s company.CrunchbaseURL %}" class="button-link card__links-link">Crunchbase</a>
 			</li>
 			<li class="card__links-item">
 				<img class="card__links-icon" alt="Pitchbook icon" width="20" height="20" src="/assets/images/pages/organizer/pitchbook.png" />
-				<a href="#" class="button-link card__links-link">Pitchbook</a>
+				<a href="{%s company.PitchbookURL %}" class="button-link card__links-link">Pitchbook</a>
 			</li>
 		</ul>
 	</div>
@@ -416,16 +416,16 @@
 						height="32"
 						src="/assets/images/pages/organizer/query_stats.svg"
 					/>
-					<a href="#" class="card__links-link">Market</a>
+					<span class="card__links-link">Market</span>
 				</div>
 			</li>
 			<li class="card__links-item">
 				<img class="card__links-icon" alt="Pitchbook icon" width="20" height="20" src="/assets/images/pages/organizer/yahoo.png" />
-				<a href="#" class="button-link card__links-link">Yahoo Finance</a>
+				<a href="{%s company.YahooFinanceURL %}" class="button-link card__links-link">Yahoo Finance</a>
 			</li>
 			<li class="card__links-item">
 				<img class="card__links-icon" alt="Pitchbook icon" width="20" height="20" src="/assets/images/pages/organizer/google-fin.png" />
-				<a href="#" class="button-link card__links-link">Google Finance</a>
+				<a href="{%s company.GoogleFinanceURL %}" class="button-link card__links-link">Google Finance</a>
 			</li>
 		</ul>
 	</div>
@@ -433,7 +433,7 @@
 		<ul class="card__links-group card__links-group--unbordered">
 			<li class="card__links-item card__links-item--title">
 				<div class="card__links-item-group">
-					<a href="#" class="card__links-link">Other links</a>
+					<span class="card__links-link">Other links</span>
 				</div>
 			</li>
 			<li class="card__links-item">
@@ -444,7 +444,7 @@
 					height="20"
 					src="/assets/images/pages/organizer/whois.svg"
 				/>
-				<a href="#" class="button-link card__links-link">Whois</a>
+				<a href="{%s whoisURL(company.Website) %}" class="button-link card__links-link">Whois</a>
 			</li>
 			<li class="card__links-item">
 				<img
@@ -454,19 +454,19 @@
 					height="20"
 					src="/assets/images/pages/organizer/similarweb.svg"
 				/>
-				<a href="#" class="button-link card__links-link">Similarweb</a>
+				<a href="{%s similarwebURL(company.Website) %}" class="button-link card__links-link">SimilarWeb</a>
 			</li>
 			<li class="card__links-item">
 				<img class="card__links-icon" alt="otta icon" width="20" height="20" src="/assets/images/pages/organizer/otta.svg" />
-				<a href="#" class="button-link card__links-link">Otta</a>
+				<a href="https://app.otta.com/companies/{%s company.OttaProfileSlug %}" class="button-link card__links-link">Otta</a>
 			</li>
 			<li class="card__links-item">
 				<img class="card__links-icon" alt="xing icon" width="20" height="20" src="/assets/images/pages/organizer/xing.svg" />
-				<a href="#" class="button-link card__links-link">XING</a>
+				<a href="javascript:void(0);" class="button-link card__links-link">XING</a>
 			</li>
 			<li class="card__links-item">
 				<img class="card__links-icon" alt="xing icon" width="20" height="20" src="/assets/images/pages/organizer/y-combinator.png" />
-				<a href="#" class="button-link card__links-link">Y Combinator</a>
+				<a href="{%s company.YCombinatorURL %}" class="button-link card__links-link">Y Combinator</a>
 			</li>
 		</ul>
 	</div>
