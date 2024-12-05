@@ -108,6 +108,12 @@ func companiesPart1() []domain.CompanyProfile {
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Google-EI_IE9079.11,17.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Google-Reviews-E9079.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Google-Jobs-E9079.htm",
+				Jobs:        "3.5K",
+				Reviews:     "59K",
+				Salaries:    "168K",
+				ReviewsRate: "4.3",
+				Verified:    true,
 			},
 			IndeedProfile:     domain.IndeedProfile{},
 			OttaProfileSlug:   "",

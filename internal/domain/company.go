@@ -62,6 +62,7 @@ type GitHubProfile struct {
 type GlassdoorProfile struct {
 	OverviewURL string
 	ReviewsURL  string
+	JobsURL     string
 	Jobs        string // will be mostly outdated
 	Reviews     string
 	Salaries    string

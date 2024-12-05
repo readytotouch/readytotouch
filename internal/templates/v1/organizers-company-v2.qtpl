@@ -194,9 +194,9 @@
 					{% endif %}
 				</div>
 				<ul class="card__links-item-info">
-					<li class="card__link-stats-item">{%s formatLinkedInFollowers(company.LinkedInProfile.Followers) %}</li>
-					<li class="card__link-stats-item">{%s formatLinkedInEmployees(company.LinkedInProfile.Employees) %}</li>
-					<li class="card__link-stats-item">{%s formatLinkedInAssociatedMembers(company.LinkedInProfile.AssociatedMembers) %}</li>
+					<li class="card__link-stats-item">{%s formatLinkedInFollowers(company.LinkedInProfile.Followers) %} followers</li>
+					<li class="card__link-stats-item">{%s formatLinkedInEmployees(company.LinkedInProfile.Employees) %} employees</li>
+					<li class="card__link-stats-item">{%s formatLinkedInAssociatedMembers(company.LinkedInProfile.AssociatedMembers) %} associated members</li>
 				</ul>
 			</li>
 			<li class="card__links-item">
@@ -268,9 +268,9 @@
 					<a href="https://www.teamblind.com/company/{%s company.BlindProfile.Alias %}" class="card__links-link">Blind</a>
 				</div>
 				<ul class="card__links-item-info">
-					<li class="card__link-stats-item">{%s formatBlindEmployees(company.BlindProfile.Employees) %}</li>
+					<li class="card__link-stats-item">{%s formatBlindEmployees(company.BlindProfile.Employees) %} employees</li>
 					<li class="card__link-stats-item">{%s formatBlindSalary(company.BlindProfile.Salary) %}</li>
-					<li class="card__link-stats-item">{%s formatBlindReviews(company.BlindProfile.Reviews) %}</li>
+					<li class="card__link-stats-item">{%s formatBlindReviews(company.BlindProfile.Reviews) %} reviews</li>
 				</ul>
 			</li>
 			<li class="card__links-item">
@@ -296,7 +296,7 @@
 					<a href="https://www.levels.fyi/companies/{%s company.LevelsFyiProfile.Alias %}" class="card__links-link">Levels.fyi</a>
 				</div>
 				<ul class="card__links-item-info">
-					<li class="card__link-stats-item">{%s formatLevelsFyiEmployees(company.LevelsFyiProfile.Employees) %}</li>
+					<li class="card__link-stats-item">{%s formatLevelsFyiEmployees(company.LevelsFyiProfile.Employees) %} employees</li>
 				</ul>
 			</li>
 			<li class="card__links-item">
@@ -318,38 +318,40 @@
 						height="32"
 						src="/assets/images/pages/organizer/glassdoor.svg"
 					/>
-					<a href="#" class="card__links-link">Glassdoor</a>
-					<a href="#" class="card__links-link card__links-link--verify">
+					<a href="{%s company.GlassdoorProfile.OverviewURL %}" class="card__links-link">Glassdoor</a>
+					{% if company.GlassdoorProfile.Verified %}
+					<a href="javascript:void(0);" class="card__links-link card__links-link--verify">
 						<img
 							class="card__links-icon"
 							alt="icon"
 							src="/assets/images/pages/organizer/verified-emp.png"
 						/>
 					</a>
+					{% endif %}
 				</div>
 				<ul class="card__links-item-info">
 					<li class="card__link-stats-item card__link-stats-item--one-line">
 						<span>
-							<strong>4.8K</strong> jobs
+							<strong>{%s formatGlassdoorJobs(company.GlassdoorProfile.Jobs) %}</strong> jobs
 						</span>
 						<span>
-							<strong>58.2K</strong> reviews
+							<strong>{%s formatGlassdoorReviews(company.GlassdoorProfile.Reviews) %}</strong> reviews
 						</span>
 						<span>
-							<strong>166.1K</strong> salaries
+							<strong>{%s formatGlassdoorSalaries(company.GlassdoorProfile.Salaries) %}</strong> salaries
 						</span>
 					</li>
 				</ul>
 			</li>
 			<li class="card__links-item">
-				<a href="#" class="button-link card__links-link">Overview</a>
+				<a href="{%s company.GlassdoorProfile.OverviewURL %}" class="button-link card__links-link">Overview</a>
 			</li>
 			<li class="card__links-item">
-				<a href="#" class="button-link card__links-link">Reviews</a>
-				<span class="card__links-link-star">4.2 ★</span>
+				<a href="{%s company.GlassdoorProfile.ReviewsURL %}" class="button-link card__links-link">Reviews</a>
+				<span class="card__links-link-star">{%s formatGlassdoorReviewsRate(company.GlassdoorProfile.ReviewsRate) %} ★</span>
 			</li>
 			<li class="card__links-item">
-				<a href="#" class="button-link card__links-link">Jobs</a>
+				<a href="{%s company.GlassdoorProfile.JobsURL %}" class="button-link card__links-link">Jobs</a>
 			</li>
 		</ul>
 	</div>

@@ -94,38 +94,26 @@ func industryNames(source []Industry) string {
 
 func formatLinkedInFollowers(s string) string {
 	if s == "" {
-		return "??? followers"
+		return "???"
 	}
 
-	if strings.HasSuffix(s, "followers") {
-		return s
-	}
-
-	return s + " " + "followers"
+	return s
 }
 
 func formatLinkedInEmployees(s string) string {
 	if s == "" {
-		return "??? employees"
+		return "???"
 	}
 
-	if strings.HasSuffix(s, "employees") {
-		return s
-	}
-
-	return s + " " + "employees"
+	return s
 }
 
 func formatLinkedInAssociatedMembers(s string) string {
 	if s == "" {
-		return "??? associated members"
+		return "???"
 	}
 
-	if strings.HasSuffix(s, "associated members") {
-		return s
-	}
-
-	return s + " " + "associated members"
+	return s
 }
 
 func fetchGitHubRepositoriesCount(company domain.CompanyProfile, language domain.Language) int {
@@ -134,14 +122,10 @@ func fetchGitHubRepositoriesCount(company domain.CompanyProfile, language domain
 
 func formatBlindEmployees(s string) string {
 	if s == "" {
-		return "??? employees"
+		return "???"
 	}
 
-	if strings.HasSuffix(s, "employees") {
-		return s
-	}
-
-	return s + " " + "employees"
+	return s
 }
 
 func formatBlindSalary(s string) string {
@@ -158,26 +142,50 @@ func formatBlindSalary(s string) string {
 
 func formatBlindReviews(s string) string {
 	if s == "" {
-		return "??? reviews"
+		return "???"
 	}
 
-	if strings.HasSuffix(s, "reviews") {
-		return s
-	}
-
-	return s + " " + "reviews"
+	return s
 }
 
 func formatLevelsFyiEmployees(s string) string {
 	if s == "" {
-		return "??? employees"
+		return "???"
 	}
 
-	if strings.HasSuffix(s, "employees") {
-		return s
+	return s
+}
+
+func formatGlassdoorJobs(s string) string {
+	if s == "" {
+		return "???"
 	}
 
-	return s + " " + "employees"
+	return s
+}
+
+func formatGlassdoorReviews(s string) string {
+	if s == "" {
+		return "???"
+	}
+
+	return s
+}
+
+func formatGlassdoorSalaries(s string) string {
+	if s == "" {
+		return "???"
+	}
+
+	return s
+}
+
+func formatGlassdoorReviewsRate(s string) string {
+	if s == "" {
+		return "?.?"
+	}
+
+	return s
 }
 
 var (
