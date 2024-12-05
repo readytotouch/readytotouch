@@ -366,14 +366,14 @@
 						height="32"
 						src="/assets/images/pages/organizer/indeed.png"
 					/>
-					<a href="#" class="card__links-link">Indeed</a>
+					<a href="https://www.indeed.com/cmp/{%s company.IndeedProfile.Alias %}" class="card__links-link">Indeed</a>
 				</div>
 			</li>
 			<li class="card__links-item">
-				<a href="#" class="button-link card__links-link">Overview</a>
+				<a href="https://www.indeed.com/cmp/{%s company.IndeedProfile.Alias %}" class="button-link card__links-link">Overview</a>
 			</li>
 			<li class="card__links-item">
-				<a href="#" class="button-link card__links-link">Jobs</a>
+				<a href="https://www.indeed.com/cmp/{%s company.IndeedProfile.Alias %}/jobs" class="button-link card__links-link">Jobs</a>
 			</li>
 		</ul>
 	</div>

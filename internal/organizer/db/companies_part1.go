@@ -115,7 +115,9 @@ func companiesPart1() []domain.CompanyProfile {
 				ReviewsRate: "4.3",
 				Verified:    true,
 			},
-			IndeedProfile:     domain.IndeedProfile{},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "Google",
+			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
