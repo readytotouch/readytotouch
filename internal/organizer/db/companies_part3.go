@@ -2152,6 +2152,286 @@ func companiesPart3() []domain.CompanyProfile {
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 		
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Remington & Vernick Engineers",
+			Website: "https://rve.com/",
+			Careers: "https://rve.com/careers",
+			About:   "https://rve.com/about-us/",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       94905,
+				Alias:    "remington-&-vernick-engineers",
+				Name:     "Remington & Vernick Engineers",
+				Verified: true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias:       "",
+				Employees:   "",
+				Salary:      "",
+				Reviews:     "",
+				ReviewsRate: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "",
+				Employees: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Remington-and-Vernick-Engineers-EI_IE303457.11,42.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Remington-and-Vernick-Engineers-Reviews-E303457.htm",
+				Verified:    true,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Go Back End Developer",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4090274755/",
+							Date:             mustDate("2024-12-04"),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription:          "",
+			DealroomURL:               "",
+			CrunchbaseURL:             "",
+			PitchbookURL:              "",
+			YahooFinanceURL:           "",
+			GoogleFinanceURL:          "",
+			YCombinatorURL:            "",
+			Industries:                []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{},
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Social Discovery Group",
+			Website: "https://socialdiscoverygroup.com/",
+			Careers: "https://socialdiscoverygroup.com/vacancies",
+			About:   "https://socialdiscoverygroup.com/about-us",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       3683382,
+				Alias:    "social-discovery-group",
+				Name:     "Social Discovery Group",
+				Verified: true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias:       "",
+				Employees:   "",
+				Salary:      "",
+				Reviews:     "",
+				ReviewsRate: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "",
+				Employees: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Social-Discovery-Group-EI_IE1482223.11,33.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Social-Discovery-Group-Reviews-E1482223.htm",
+				Verified:    true,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Go-developer (RCML)",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4087164770/",
+							Date:             mustDate("2024-12-03"),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription:          "",
+			DealroomURL:               "",
+			CrunchbaseURL:             "",
+			PitchbookURL:              "",
+			YahooFinanceURL:           "",
+			GoogleFinanceURL:          "",
+			YCombinatorURL:            "",
+			Industries:                []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{},
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "CloudLinux",
+			Website: "http://www.cloudlinux.com/",
+			Careers: "https://cloudlinux.com/about-us-company-jobs/",
+			About:   "https://cloudlinux.com/about-us",
+			Blog:    "https://blog.cloudlinux.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       632769,
+				Alias:    "cloudlinux",
+				Name:     "CloudLinux",
+				Verified: true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "cloudlinux",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias:       "",
+				Employees:   "",
+				Salary:      "",
+				Reviews:     "",
+				ReviewsRate: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "",
+				Employees: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-CloudLinux-EI_IE1448501.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/CloudLinux-Reviews-E1448501.htm",
+				Verified:    true,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 101,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Python/Go Developer for Imunify (worldwide remote, work anywhere)",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4054985909/",
+							Date:             mustDate("2024-11-30"),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription:          "",
+			DealroomURL:               "",
+			CrunchbaseURL:             "",
+			PitchbookURL:              "",
+			YahooFinanceURL:           "",
+			GoogleFinanceURL:          "",
+			YCombinatorURL:            "",
+			Industries:                []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{},
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Sysdig",
+			Website: "https://sysdig.com/",
+			Careers: "https://sysdig.com/careers/",
+			About:   "https://sysdig.com/about/",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       3592486,
+				Alias:    "sysdig",
+				Name:     "Sysdig",
+				Verified: true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "draios",
+				Verified: true,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias:       "",
+				Employees:   "",
+				Salary:      "",
+				Reviews:     "",
+				ReviewsRate: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "",
+				Employees: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Sysdig-EI_IE956879.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Sysdig-Reviews-E956879.htm",
+				Verified:    true,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 76,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Software Engineer BackEnd (Java/Go) — Monitor",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4075012835/",
+							Date:             mustDate("2024-12-04"),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription:          "",
+			DealroomURL:               "",
+			CrunchbaseURL:             "",
+			PitchbookURL:              "",
+			YahooFinanceURL:           "",
+			GoogleFinanceURL:          "",
+			YCombinatorURL:            "",
+			Industries:                []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{},
+		},
+
 		// Template
 		//{
 		//	ID:      0,  // system
