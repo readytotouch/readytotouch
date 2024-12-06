@@ -220,6 +220,7 @@ func main() {
 	r.POST("/api/v1/features/auto/waitlist/subscribe.json", organizerController.WaitlistSubscribe)
 	r.PATCH("/api/v1/companies/:company_id/favorite.json", organizerController.FavoriteCompany)
 	r.GET("/api/v1/companies/:company_id/views/stats/daily.json", organizerController.CompanyViewStats)
+	r.PATCH("/api/v1/vacancies/:vacancy_id/favorite.json", organizerController.FavoriteVacancy)
 
 	r.
 		GET("/auth/github", authController.GithubRedirect).

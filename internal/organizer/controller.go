@@ -721,6 +721,58 @@ func (c *Controller) FavoriteCompany(ctx *gin.Context) {
 	ctx.JSON(http.StatusOK, nil)
 }
 
+func (c *Controller) FavoriteVacancy(ctx *gin.Context) {
+	type (
+		favoriteVacancyURI struct {
+			VacancyID int64 `uri:"vacancy_id" binding:"required"`
+		}
+		favoriteVacancyRequestBody struct {
+			Favorite bool `json:"favorite"`
+		}
+	)
+
+	var (
+		uri  favoriteVacancyURI
+		body favoriteVacancyRequestBody
+	)
+
+	err := ctx.ShouldBindUri(&uri)
+	if err != nil {
+		ctx.JSON(http.StatusBadRequest, &domain.ErrorResponse{
+			ErrorMessage: err.Error(),
+		})
+		return
+	}
+
+	var (
+		authUserID = domain.ContextGetUserID(ctx)
+	)
+
+	if authUserID == 0 {
+		ctx.JSON(http.StatusUnauthorized, &domain.ErrorResponse{
+			ErrorMessage: "Unauthorized",
+		})
+		return
+	}
+
+	if err := ctx.ShouldBindJSON(&body); err != nil {
+		ctx.JSON(http.StatusBadRequest, &domain.ErrorResponse{
+			ErrorMessage: err.Error(),
+		})
+		return
+	}
+
+	err = c.userFavoriteVacancyRepository.Upsert(ctx, authUserID, uri.VacancyID, body.Favorite, time.Now().UTC())
+	if err != nil {
+		ctx.JSON(http.StatusInternalServerError, &domain.ErrorResponse{
+			ErrorMessage: err.Error(), // Yes, we are leaking the error message to the client, it's fine for now
+		})
+		return
+	}
+
+	ctx.JSON(http.StatusOK, nil)
+}
+
 func (c *Controller) UnsafeCompanies(ctx *gin.Context) {
 	companies := db.Companies()
 
