@@ -383,7 +383,13 @@ func (c *Controller) CompanyV2(ctx *gin.Context) {
 		// NOP, continue
 	}
 
-	var vacancyMonthlyViewsMap map[int64]int64 // @TODO implement
+	month := time.Now().UTC().Truncate(time.Hour*24).AddDate(0, -1, 0)
+	vacancyMonthlyViewsMap, err := c.vacancyViewStatsRepository.Stats(ctx, vacancyIDs, month)
+	if err != nil {
+		// @TODO logging
+
+		// NOP, continue
+	}
 
 	content := template.OrganizersCompanyV2(
 		organizerFeature,

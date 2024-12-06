@@ -8,6 +8,8 @@ package dbs
 import (
 	"context"
 	"time"
+
+	"github.com/lib/pq"
 )
 
 const userVacancyViewDailyStatsUpsert = `-- name: UserVacancyViewDailyStatsUpsert :execrows
@@ -65,4 +67,46 @@ type VacancyViewDailyStatsUpsertParams struct {
 func (q *Queries) VacancyViewDailyStatsUpsert(ctx context.Context, arg VacancyViewDailyStatsUpsertParams) error {
 	_, err := q.exec(ctx, q.vacancyViewDailyStatsUpsertStmt, vacancyViewDailyStatsUpsert, arg.VacancyID, arg.CreatedAt)
 	return err
+}
+
+const vacancyViewStats = `-- name: VacancyViewStats :many
+SELECT s.vacancy_id,
+       SUM(user_count) AS count
+FROM vacancy_view_daily_stats s
+WHERE s.vacancy_id = ANY ($1::BIGINT[])
+  AND s.created_at >= $2::DATE
+GROUP BY s.vacancy_id
+`
+
+type VacancyViewStatsParams struct {
+	VacancyIds []int64
+	From       time.Time
+}
+
+type VacancyViewStatsRow struct {
+	VacancyID int64
+	Count     int64
+}
+
+func (q *Queries) VacancyViewStats(ctx context.Context, arg VacancyViewStatsParams) ([]VacancyViewStatsRow, error) {
+	rows, err := q.query(ctx, q.vacancyViewStatsStmt, vacancyViewStats, pq.Array(arg.VacancyIds), arg.From)
+	if err != nil {
+		return nil, err
+	}
+	defer rows.Close()
+	var items []VacancyViewStatsRow
+	for rows.Next() {
+		var i VacancyViewStatsRow
+		if err := rows.Scan(&i.VacancyID, &i.Count); err != nil {
+			return nil, err
+		}
+		items = append(items, i)
+	}
+	if err := rows.Close(); err != nil {
+		return nil, err
+	}
+	if err := rows.Err(); err != nil {
+		return nil, err
+	}
+	return items, nil
 }
