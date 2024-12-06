@@ -59,6 +59,7 @@ func main() {
 		userFavoriteCompanyRepository   = postgres.NewUserFavoriteCompanyRepository(database)
 		userFavoriteVacancyRepository   = postgres.NewUserFavoriteVacancyRepository(database)
 		companyViewDailyStatsRepository = postgres.NewCompanyViewDailyStatsRepository(database)
+		vacancyViewStatsRepository      = postgres.NewVacancyViewStatsRepository(database)
 		userToLinkedInCompanyRepository = postgres.NewUserToLinkedInCompanyRepository(database)
 	)
 
@@ -114,6 +115,7 @@ func main() {
 			userFavoriteCompanyRepository,
 			userFavoriteVacancyRepository,
 			companyViewDailyStatsRepository,
+			vacancyViewStatsRepository,
 		)
 		cacController = pkgCAC.NewController(
 			userToLinkedInCompanyRepository,

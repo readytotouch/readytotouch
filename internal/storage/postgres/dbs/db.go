@@ -114,11 +114,20 @@ func Prepare(ctx context.Context, db DBTX) (*Queries, error) {
 	if q.userSocialProfileUpdateStmt, err = db.PrepareContext(ctx, userSocialProfileUpdate); err != nil {
 		return nil, fmt.Errorf("error preparing query UserSocialProfileUpdate: %w", err)
 	}
+	if q.userVacancyViewDailyStatsUpsertStmt, err = db.PrepareContext(ctx, userVacancyViewDailyStatsUpsert); err != nil {
+		return nil, fmt.Errorf("error preparing query UserVacancyViewDailyStatsUpsert: %w", err)
+	}
+	if q.userVacancyViewHourlyStatsUpsertStmt, err = db.PrepareContext(ctx, userVacancyViewHourlyStatsUpsert); err != nil {
+		return nil, fmt.Errorf("error preparing query UserVacancyViewHourlyStatsUpsert: %w", err)
+	}
 	if q.usersNewStmt, err = db.PrepareContext(ctx, usersNew); err != nil {
 		return nil, fmt.Errorf("error preparing query UsersNew: %w", err)
 	}
 	if q.usersUpdateStmt, err = db.PrepareContext(ctx, usersUpdate); err != nil {
 		return nil, fmt.Errorf("error preparing query UsersUpdate: %w", err)
+	}
+	if q.vacancyViewDailyStatsUpsertStmt, err = db.PrepareContext(ctx, vacancyViewDailyStatsUpsert); err != nil {
+		return nil, fmt.Errorf("error preparing query VacancyViewDailyStatsUpsert: %w", err)
 	}
 	if q.wipLinkedInCompaniesGetByVanityNameStmt, err = db.PrepareContext(ctx, wipLinkedInCompaniesGetByVanityName); err != nil {
 		return nil, fmt.Errorf("error preparing query WipLinkedInCompaniesGetByVanityName: %w", err)
@@ -299,6 +308,16 @@ func (q *Queries) Close() error {
 			err = fmt.Errorf("error closing userSocialProfileUpdateStmt: %w", cerr)
 		}
 	}
+	if q.userVacancyViewDailyStatsUpsertStmt != nil {
+		if cerr := q.userVacancyViewDailyStatsUpsertStmt.Close(); cerr != nil {
+			err = fmt.Errorf("error closing userVacancyViewDailyStatsUpsertStmt: %w", cerr)
+		}
+	}
+	if q.userVacancyViewHourlyStatsUpsertStmt != nil {
+		if cerr := q.userVacancyViewHourlyStatsUpsertStmt.Close(); cerr != nil {
+			err = fmt.Errorf("error closing userVacancyViewHourlyStatsUpsertStmt: %w", cerr)
+		}
+	}
 	if q.usersNewStmt != nil {
 		if cerr := q.usersNewStmt.Close(); cerr != nil {
 			err = fmt.Errorf("error closing usersNewStmt: %w", cerr)
@@ -307,6 +326,11 @@ func (q *Queries) Close() error {
 	if q.usersUpdateStmt != nil {
 		if cerr := q.usersUpdateStmt.Close(); cerr != nil {
 			err = fmt.Errorf("error closing usersUpdateStmt: %w", cerr)
+		}
+	}
+	if q.vacancyViewDailyStatsUpsertStmt != nil {
+		if cerr := q.vacancyViewDailyStatsUpsertStmt.Close(); cerr != nil {
+			err = fmt.Errorf("error closing vacancyViewDailyStatsUpsertStmt: %w", cerr)
 		}
 	}
 	if q.wipLinkedInCompaniesGetByVanityNameStmt != nil {
@@ -418,8 +442,11 @@ type Queries struct {
 	userSocialProfileGetUserByEmailStmt                  *sql.Stmt
 	userSocialProfileNewStmt                             *sql.Stmt
 	userSocialProfileUpdateStmt                          *sql.Stmt
+	userVacancyViewDailyStatsUpsertStmt                  *sql.Stmt
+	userVacancyViewHourlyStatsUpsertStmt                 *sql.Stmt
 	usersNewStmt                                         *sql.Stmt
 	usersUpdateStmt                                      *sql.Stmt
+	vacancyViewDailyStatsUpsertStmt                      *sql.Stmt
 	wipLinkedInCompaniesGetByVanityNameStmt              *sql.Stmt
 	wipLinkedInCompaniesNewStmt                          *sql.Stmt
 	wipLinkedInCompanyRequestHistoryCountStmt            *sql.Stmt
@@ -464,8 +491,11 @@ func (q *Queries) WithTx(tx *sql.Tx) *Queries {
 		userSocialProfileGetUserByEmailStmt:                  q.userSocialProfileGetUserByEmailStmt,
 		userSocialProfileNewStmt:                             q.userSocialProfileNewStmt,
 		userSocialProfileUpdateStmt:                          q.userSocialProfileUpdateStmt,
+		userVacancyViewDailyStatsUpsertStmt:                  q.userVacancyViewDailyStatsUpsertStmt,
+		userVacancyViewHourlyStatsUpsertStmt:                 q.userVacancyViewHourlyStatsUpsertStmt,
 		usersNewStmt:                                         q.usersNewStmt,
 		usersUpdateStmt:                                      q.usersUpdateStmt,
+		vacancyViewDailyStatsUpsertStmt:                      q.vacancyViewDailyStatsUpsertStmt,
 		wipLinkedInCompaniesGetByVanityNameStmt:              q.wipLinkedInCompaniesGetByVanityNameStmt,
 		wipLinkedInCompaniesNewStmt:                          q.wipLinkedInCompaniesNewStmt,
 		wipLinkedInCompanyRequestHistoryCountStmt:            q.wipLinkedInCompanyRequestHistoryCountStmt,
