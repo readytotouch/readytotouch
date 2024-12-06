@@ -18,9 +18,12 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 	organizerFeature OrganizerFeature,
 	headerProfiles []SocialProviderUser,
 	company Company,
+	vacancies []PreparedVacancy,
 	ukrainianUniversities []University,
 	czechUniversities []University,
 	favorite bool,
+	userVacancyFavoriteMap map[int64]bool,
+	vacancyMonthlyViewsMap map[int64]int64,
 	stats CompanyStats,
 	authQueryParams string,
 ) {
@@ -291,26 +294,46 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 						height="32"
 						src="/assets/images/pages/organizer/linkedin.svg"
 					/>
-					<a href="#" class="card__links-link">LinkedIn</a>
-					<a href="#" class="card__links-link card__links-link--verify">
+					<a href="https://www.linkedin.com/company/`)
+	qw422016.E().S(company.LinkedInProfile.Alias)
+	qw422016.N().S(`/" class="card__links-link">LinkedIn</a>
+					`)
+	if company.LinkedInProfile.Verified {
+		qw422016.N().S(`
+					<a href="https://www.linkedin.com/company/`)
+		qw422016.E().S(company.LinkedInProfile.Alias)
+		qw422016.N().S(`/about" class="card__links-link card__links-link--verify">
 						<img
 							class="card__links-icon"
 							alt="icon"
 							src="/assets/images/pages/organizer/verified-icon.png"
 						/>
 					</a>
+					`)
+	}
+	qw422016.N().S(`
 				</div>
 				<ul class="card__links-item-info">
-					<li class="card__link-stats-item">35M followers</li>
-					<li class="card__link-stats-item">10,001+ employees</li>
-					<li class="card__link-stats-item">302,261 associated members</li>
+					<li class="card__link-stats-item">`)
+	qw422016.E().S(formatLinkedInFollowers(company.LinkedInProfile.Followers))
+	qw422016.N().S(` followers</li>
+					<li class="card__link-stats-item">`)
+	qw422016.E().S(formatLinkedInEmployees(company.LinkedInProfile.Employees))
+	qw422016.N().S(` employees</li>
+					<li class="card__link-stats-item">`)
+	qw422016.E().S(formatLinkedInAssociatedMembers(company.LinkedInProfile.AssociatedMembers))
+	qw422016.N().S(` associated members</li>
 				</ul>
 			</li>
 			<li class="card__links-item">
-				<a href="#" class="button-link card__links-link">Overview</a>
+				<a href="https://www.linkedin.com/company/`)
+	qw422016.E().S(company.LinkedInProfile.Alias)
+	qw422016.N().S(`/" class="button-link card__links-link">Overview</a>
 			</li>
 			<li class="card__links-item">
-				<a href="#" class="button-link card__links-link">Connections</a>
+				<a href="`)
+	qw422016.E().S(linkedinConnectionsURL([]Company{company}, nil))
+	qw422016.N().S(`" class="button-link card__links-link">Connections</a>
 				<img
 					class="card__links-icon"
 					alt="language icon"
@@ -320,13 +343,19 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 				/>
 			</li>
 			<li class="card__links-item">
-				<a href="#" class="button-link card__links-link">Connections 🇺🇦</a>
+				<a href="`)
+	qw422016.E().S(linkedinConnectionsURL([]Company{company}, ukrainianUniversities))
+	qw422016.N().S(`" class="button-link card__links-link">Connections 🇺🇦</a>
 			</li>
 			<li class="card__links-item">
-				<a href="#" class="button-link card__links-link">Connections 🇨🇿</a>
+				<a href="`)
+	qw422016.E().S(linkedinConnectionsURL([]Company{company}, czechUniversities))
+	qw422016.N().S(`" class="button-link card__links-link">Connections 🇨🇿</a>
 			</li>
 			<li class="card__links-item">
-				<a href="#" class="button-link card__links-link">Jobs</a>
+				<a href="`)
+	qw422016.E().S(linkedinJobsURL([]Company{company}, string(organizerFeature.Organizer.LanguageTitleKeywords)))
+	qw422016.N().S(`" class="button-link card__links-link">Jobs</a>
 			</li>
 		</ul>
 	</div>
@@ -341,21 +370,37 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 						height="32"
 						src="/assets/images/pages/organizer/github.svg"
 					/>
-					<a href="#" class="card__links-link card__links-link--verify ">
+					`)
+	if company.GitHubProfile.Verified {
+		qw422016.N().S(`
+					<a href="javascript:void(0);" class="card__links-link card__links-link--verify">
 						<img
 							class="card__links-icon"
 							alt="icon"
 							src="/assets/images/pages/organizer/verified.png"
 						/>
 					</a>
-					<a href="#" class="card__links-link">GitHub</a>
+					`)
+	}
+	qw422016.N().S(`
+					<a href="https://github.com/`)
+	qw422016.E().S(company.GitHubProfile.Login)
+	qw422016.N().S(`" class="card__links-link">GitHub</a>
 				</div>
 			</li>
 			<li class="card__links-item">
-				<a href="#" class="button-link card__links-link">Overview</a>
+				<a href="https://github.com/`)
+	qw422016.E().S(company.GitHubProfile.Login)
+	qw422016.N().S(`" class="button-link card__links-link">Overview</a>
 			</li>
 			<li class="card__links-item">
-				<a href="#" class="button-link card__links-link">Repositories (3)</a>
+				<a href="https://github.com/orgs/`)
+	qw422016.E().S(company.GitHubProfile.Login)
+	qw422016.N().S(`/repositories?q=lang%3A`)
+	qw422016.E().S(organizerFeature.Organizer.GitHubAlias)
+	qw422016.N().S(`&type=all" class="button-link card__links-link">Repositories (`)
+	qw422016.N().D(fetchGitHubRepositoriesCount(company, organizerFeature.Organizer.Language))
+	qw422016.N().S(`)</a>
 			</li>
 		</ul>
 	</div>
@@ -370,20 +415,34 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 						height="32"
 						src="/assets/images/pages/organizer/blind.png"
 					/>
-					<a href="#" class="card__links-link">LinkedIn</a>
+					<a href="https://www.teamblind.com/company/`)
+	qw422016.E().S(company.BlindProfile.Alias)
+	qw422016.N().S(`" class="card__links-link">Blind</a>
 				</div>
 				<ul class="card__links-item-info">
-					<li class="card__link-stats-item">10,000+ employees</li>
-					<li class="card__link-stats-item">$60K ~ $356K a year</li>
-					<li class="card__link-stats-item">10 095 Reviews</li>
+					<li class="card__link-stats-item">`)
+	qw422016.E().S(formatBlindEmployees(company.BlindProfile.Employees))
+	qw422016.N().S(` employees</li>
+					<li class="card__link-stats-item">`)
+	qw422016.E().S(formatBlindSalary(company.BlindProfile.Salary))
+	qw422016.N().S(`</li>
+					<li class="card__link-stats-item">`)
+	qw422016.E().S(formatBlindReviews(company.BlindProfile.Reviews))
+	qw422016.N().S(` reviews</li>
 				</ul>
 			</li>
 			<li class="card__links-item">
-				<a href="#" class="button-link card__links-link">Overview</a>
+				<a href="https://www.teamblind.com/company/`)
+	qw422016.E().S(company.BlindProfile.Alias)
+	qw422016.N().S(`" class="button-link card__links-link">Overview</a>
 			</li>
 			<li class="card__links-item">
-				<a href="#" class="button-link card__links-link">Reviews</a>
-				<span class="card__links-link-star">⭐ 4.2</span>
+				<a href="https://www.teamblind.com/company/`)
+	qw422016.E().S(company.BlindProfile.Alias)
+	qw422016.N().S(`/reviews" class="button-link card__links-link">Reviews</a>
+				<span class="card__links-link-star">⭐ `)
+	qw422016.E().S(company.BlindProfile.ReviewsRate)
+	qw422016.N().S(`</span>
 			</li>
 		</ul>
 	</div>
@@ -398,17 +457,25 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 						height="32"
 						src="/assets/images/pages/organizer/levels.png"
 					/>
-					<a href="#" class="card__links-link">Levels.fyi</a>
+					<a href="https://www.levels.fyi/companies/`)
+	qw422016.E().S(company.LevelsFyiProfile.Alias)
+	qw422016.N().S(`" class="card__links-link">Levels.fyi</a>
 				</div>
 				<ul class="card__links-item-info">
-					<li class="card__link-stats-item">258 750 of Employees</li>
+					<li class="card__link-stats-item">`)
+	qw422016.E().S(formatLevelsFyiEmployees(company.LevelsFyiProfile.Employees))
+	qw422016.N().S(` employees</li>
 				</ul>
 			</li>
 			<li class="card__links-item">
-				<a href="#" class="button-link card__links-link">Overview</a>
+				<a href="https://www.levels.fyi/companies/`)
+	qw422016.E().S(company.LevelsFyiProfile.Alias)
+	qw422016.N().S(`" class="button-link card__links-link">Overview</a>
 			</li>
 			<li class="card__links-item">
-				<a href="#" class="button-link card__links-link">Jobs</a>
+				<a href="https://www.levels.fyi/companies/`)
+	qw422016.E().S(company.LevelsFyiProfile.Alias)
+	qw422016.N().S(`/jobs" class="button-link card__links-link">Jobs</a>
 			</li>
 		</ul>
 	</div>
@@ -423,38 +490,60 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 						height="32"
 						src="/assets/images/pages/organizer/glassdoor.svg"
 					/>
-					<a href="#" class="card__links-link">Glassdoor</a>
-					<a href="#" class="card__links-link card__links-link--verify">
+					<a href="`)
+	qw422016.E().S(company.GlassdoorProfile.OverviewURL)
+	qw422016.N().S(`" class="card__links-link">Glassdoor</a>
+					`)
+	if company.GlassdoorProfile.Verified {
+		qw422016.N().S(`
+					<a href="javascript:void(0);" class="card__links-link card__links-link--verify">
 						<img
 							class="card__links-icon"
 							alt="icon"
 							src="/assets/images/pages/organizer/verified-emp.png"
 						/>
 					</a>
+					`)
+	}
+	qw422016.N().S(`
 				</div>
 				<ul class="card__links-item-info">
 					<li class="card__link-stats-item card__link-stats-item--one-line">
 						<span>
-							<strong>4.8K</strong> jobs
+							<strong>`)
+	qw422016.E().S(formatGlassdoorJobs(company.GlassdoorProfile.Jobs))
+	qw422016.N().S(`</strong> jobs
 						</span>
 						<span>
-							<strong>58.2K</strong> reviews
+							<strong>`)
+	qw422016.E().S(formatGlassdoorReviews(company.GlassdoorProfile.Reviews))
+	qw422016.N().S(`</strong> reviews
 						</span>
 						<span>
-							<strong>166.1K</strong> salaries
+							<strong>`)
+	qw422016.E().S(formatGlassdoorSalaries(company.GlassdoorProfile.Salaries))
+	qw422016.N().S(`</strong> salaries
 						</span>
 					</li>
 				</ul>
 			</li>
 			<li class="card__links-item">
-				<a href="#" class="button-link card__links-link">Overview</a>
+				<a href="`)
+	qw422016.E().S(company.GlassdoorProfile.OverviewURL)
+	qw422016.N().S(`" class="button-link card__links-link">Overview</a>
 			</li>
 			<li class="card__links-item">
-				<a href="#" class="button-link card__links-link">Reviews</a>
-				<span class="card__links-link-star">4.2 ★</span>
+				<a href="`)
+	qw422016.E().S(company.GlassdoorProfile.ReviewsURL)
+	qw422016.N().S(`" class="button-link card__links-link">Reviews</a>
+				<span class="card__links-link-star">`)
+	qw422016.E().S(formatGlassdoorReviewsRate(company.GlassdoorProfile.ReviewsRate))
+	qw422016.N().S(` ★</span>
 			</li>
 			<li class="card__links-item">
-				<a href="#" class="button-link card__links-link">Jobs</a>
+				<a href="`)
+	qw422016.E().S(company.GlassdoorProfile.JobsURL)
+	qw422016.N().S(`" class="button-link card__links-link">Jobs</a>
 			</li>
 		</ul>
 	</div>
@@ -469,14 +558,20 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 						height="32"
 						src="/assets/images/pages/organizer/indeed.png"
 					/>
-					<a href="#" class="card__links-link">Indeed</a>
+					<a href="https://www.indeed.com/cmp/`)
+	qw422016.E().S(company.IndeedProfile.Alias)
+	qw422016.N().S(`" class="card__links-link">Indeed</a>
 				</div>
 			</li>
 			<li class="card__links-item">
-				<a href="#" class="button-link card__links-link">Overview</a>
+				<a href="https://www.indeed.com/cmp/`)
+	qw422016.E().S(company.IndeedProfile.Alias)
+	qw422016.N().S(`" class="button-link card__links-link">Overview</a>
 			</li>
 			<li class="card__links-item">
-				<a href="#" class="button-link card__links-link">Jobs</a>
+				<a href="https://www.indeed.com/cmp/`)
+	qw422016.E().S(company.IndeedProfile.Alias)
+	qw422016.N().S(`/jobs" class="button-link card__links-link">Jobs</a>
 			</li>
 		</ul>
 	</div>
@@ -491,20 +586,26 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 						height="32"
 						src="/assets/images/pages/organizer/investors.svg"
 					/>
-					<a href="#" class="card__links-link">Investors</a>
+					<span class="card__links-link">Investors</span>
 				</div>
 			</li>
 			<li class="card__links-item">
 				<img class="card__links-icon" alt="Dealroom icon" width="20" height="20" src="/assets/images/pages/organizer/dealroom.png" />
-				<a href="#" class="button-link card__links-link">Dealroom</a>
+				<a href="`)
+	qw422016.E().S(company.DealroomURL)
+	qw422016.N().S(`" class="button-link card__links-link">Dealroom</a>
 			</li>
 			<li class="card__links-item">
 				<img class="card__links-icon" alt="Crunchbase icon" width="20" height="20" src="/assets/images/pages/organizer/crunchbase.svg" />
-				<a href="#" class="button-link card__links-link">Crunchbase</a>
+				<a href="`)
+	qw422016.E().S(company.CrunchbaseURL)
+	qw422016.N().S(`" class="button-link card__links-link">Crunchbase</a>
 			</li>
 			<li class="card__links-item">
 				<img class="card__links-icon" alt="Pitchbook icon" width="20" height="20" src="/assets/images/pages/organizer/pitchbook.png" />
-				<a href="#" class="button-link card__links-link">Pitchbook</a>
+				<a href="`)
+	qw422016.E().S(company.PitchbookURL)
+	qw422016.N().S(`" class="button-link card__links-link">Pitchbook</a>
 			</li>
 		</ul>
 	</div>
@@ -519,16 +620,20 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 						height="32"
 						src="/assets/images/pages/organizer/query_stats.svg"
 					/>
-					<a href="#" class="card__links-link">Market</a>
+					<span class="card__links-link">Market</span>
 				</div>
 			</li>
 			<li class="card__links-item">
 				<img class="card__links-icon" alt="Pitchbook icon" width="20" height="20" src="/assets/images/pages/organizer/yahoo.png" />
-				<a href="#" class="button-link card__links-link">Yahoo Finance</a>
+				<a href="`)
+	qw422016.E().S(company.YahooFinanceURL)
+	qw422016.N().S(`" class="button-link card__links-link">Yahoo Finance</a>
 			</li>
 			<li class="card__links-item">
 				<img class="card__links-icon" alt="Pitchbook icon" width="20" height="20" src="/assets/images/pages/organizer/google-fin.png" />
-				<a href="#" class="button-link card__links-link">Google Finance</a>
+				<a href="`)
+	qw422016.E().S(company.GoogleFinanceURL)
+	qw422016.N().S(`" class="button-link card__links-link">Google Finance</a>
 			</li>
 		</ul>
 	</div>
@@ -536,7 +641,7 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 		<ul class="card__links-group card__links-group--unbordered">
 			<li class="card__links-item card__links-item--title">
 				<div class="card__links-item-group">
-					<a href="#" class="card__links-link">Other links</a>
+					<span class="card__links-link">Other links</span>
 				</div>
 			</li>
 			<li class="card__links-item">
@@ -547,7 +652,9 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 					height="20"
 					src="/assets/images/pages/organizer/whois.svg"
 				/>
-				<a href="#" class="button-link card__links-link">Whois</a>
+				<a href="`)
+	qw422016.E().S(whoisURL(company.Website))
+	qw422016.N().S(`" class="button-link card__links-link">Whois</a>
 			</li>
 			<li class="card__links-item">
 				<img
@@ -557,19 +664,25 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 					height="20"
 					src="/assets/images/pages/organizer/similarweb.svg"
 				/>
-				<a href="#" class="button-link card__links-link">Similarweb</a>
+				<a href="`)
+	qw422016.E().S(similarwebURL(company.Website))
+	qw422016.N().S(`" class="button-link card__links-link">SimilarWeb</a>
 			</li>
 			<li class="card__links-item">
 				<img class="card__links-icon" alt="otta icon" width="20" height="20" src="/assets/images/pages/organizer/otta.svg" />
-				<a href="#" class="button-link card__links-link">Otta</a>
+				<a href="https://app.otta.com/companies/`)
+	qw422016.E().S(company.OttaProfileSlug)
+	qw422016.N().S(`" class="button-link card__links-link">Otta</a>
 			</li>
 			<li class="card__links-item">
 				<img class="card__links-icon" alt="xing icon" width="20" height="20" src="/assets/images/pages/organizer/xing.svg" />
-				<a href="#" class="button-link card__links-link">XING</a>
+				<a href="javascript:void(0);" class="button-link card__links-link">XING</a>
 			</li>
 			<li class="card__links-item">
 				<img class="card__links-icon" alt="xing icon" width="20" height="20" src="/assets/images/pages/organizer/y-combinator.png" />
-				<a href="#" class="button-link card__links-link">Y Combinator</a>
+				<a href="`)
+	qw422016.E().S(company.YCombinatorURL)
+	qw422016.N().S(`" class="button-link card__links-link">Y Combinator</a>
 			</li>
 		</ul>
 	</div>
@@ -578,158 +691,136 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 <section class="company-vacancies">
 	<div class="container company-vacancies__container">
 		<h2 class="company-statistics__headline">Vacancies</h2>
-		<div class="vacancies__empty d-none">
-			<img class="vacancies__empty-logo" width="64" height="64" src="/assets/images/pages/common-images/📂.png" alt="folder">
-			<h2 class="vacancies__empty-title">No vacancies yet</h2>
-			<p class="vacancies__empty-subtitle">This company currently has no vacancies, or we are unaware of them.</p>
-		</div>
+		`)
+	qw422016.N().S(`
 		<div class="vacancies__list">
-			<div class="card">
-	<aside class="card__action">
-		<button class="favorite card__action-button button-group__item" title="Add to favorite">
-			<svg class="favorite__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28"
-					 xml:space="preserve"><path d="m14.5 22.1-.5-.3-.5.3-6.8 4.2c-.5.3-1.1-.1-.9-.7L7.5 18l.1-.6-.4-.4-5.9-5.2c-.3-.3-.3-.6-.2-.8.1-.2.3-.4.5-.4l7.9-.7.6-.1.2-.6 2.9-7.4c.2-.5 1-.5 1.2 0l3.1 7.3.2.5.6.1 7.9.7c.2 0 .4.2.5.5.1.3 0 .6-.2.7l-5.9 5.2-.4.4.1.6 1.8 7.7c.1.3 0 .5-.2.6-.2.1-.5.2-.8 0l-6.6-4z"/></svg>
-		</button>
-		<button title="Hide vacancy"
-						class="button-group__item button-group__item-sloth card__action-button-sloth"></button>
-	</aside>
-	<figure class="card__header card__header--organizer">
-		<div class="card__image-overlay">
-			<img class="card__image"
-					 alt="card image preview icon"
-					 src="/assets/images/pages/vacancy/company-logo.svg"
-			/>
-		</div>
-		<figcaption class="card__header-caption">
-			<a href=""
-				 class="card__headline vacancy__link"
-			>
-				Go Developer
-			</a>
-			<a href=""
-				 class="card__sub-headline vacancy__link">
-				RoboSoft
-			</a>
-		</figcaption>
-	</figure>
-	<p class="card__text card__text--organizer">
-		The candidate will have strong expertise in Go programming, experience with microservices architecture, and a
-		passion for building scalable and efficient software solutions.
-	</p>
-	<div class="card__footer">
-		<div class="card__details">
-			<figure class="card__figure" title="09:05 29.02.2024">
-				<img class="card__icon"
-						 alt="card type icon"
-						 width="16"
-						 height="16"
-						 src="/assets/images/pages/online/calendar.svg"
-				/>
-				<figcaption class="card__figcaption">Yesterday</figcaption>
-			</figure>
-			<figure class="card__figure" title="Views last month: 164">
-				<img class="card__icon"
-						 alt="card type icon"
-						 width="16"
-						 height="16"
-						 src="/assets/images/pages/common/eye.svg"
-				/>
-				<figcaption class="card__figcaption">Views last month: 164</figcaption>
-			</figure>
-		</div>
-		<button target="_blank" href="#" class="button button--bordered-gray button--gap-images">
-			<img
-				width="20"
-				height="20"
-				src="/assets/images/pages/organizer/linkedin.svg"
-				alt="go original logo"
-				class="hero__button-icon"
-			/>
-			View source
-			<img
-				width="18"
-				height="18"
-				src="/assets/images/pages/common/external-link.svg"
-				alt="arrow black icon"
-				class="hero__button-icon"
-			/>
-		</button>
-	</div>
-</div>
+			`)
+	for _, vacancy := range vacancies {
+		qw422016.N().S(`
+				<div class="js-vacancy card"
+					 data-vacancy-id="`)
+		qw422016.N().DL(vacancy.ID)
+		qw422016.N().S(`"
+				>
+					<aside class="card__action">
+						`)
+		if userVacancyFavoriteMap[vacancy.ID] {
+			qw422016.N().S(`
+						  <button class="js-vacancy-favorite favorite card__action-button button-group__item in-favorite" title="Remove from favorites">
+							<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" class="favorite__icon" viewBox="0 0 28 28">
+							  <path
+								d="m14.5 22.1-.5-.3-.5.3-6.8 4.2c-.5.3-1.1-.1-.9-.7L7.5 18l.1-.6-.4-.4-5.9-5.2c-.3-.3-.3-.6-.2-.8.1-.2.3-.4.5-.4l7.9-.7.6-.1.2-.6 2.9-7.4c.2-.5 1-.5 1.2 0l3.1 7.3.2.5.6.1 7.9.7c.2 0 .4.2.5.5.1.3 0 .6-.2.7l-5.9 5.2-.4.4.1.6 1.8 7.7c.1.3 0 .5-.2.6-.2.1-.5.2-.8 0l-6.6-4z"
+							  />
+							</svg>
+						  </button>
+						`)
+		} else {
+			qw422016.N().S(`
+						  <button class="js-vacancy-favorite favorite card__action-button button-group__item" title="Add to favorite">
+							<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" class="favorite__icon" viewBox="0 0 28 28">
+							  <path
+								d="m14.5 22.1-.5-.3-.5.3-6.8 4.2c-.5.3-1.1-.1-.9-.7L7.5 18l.1-.6-.4-.4-5.9-5.2c-.3-.3-.3-.6-.2-.8.1-.2.3-.4.5-.4l7.9-.7.6-.1.2-.6 2.9-7.4c.2-.5 1-.5 1.2 0l3.1 7.3.2.5.6.1 7.9.7c.2 0 .4.2.5.5.1.3 0 .6-.2.7l-5.9 5.2-.4.4.1.6 1.8 7.7c.1.3 0 .5-.2.6-.2.1-.5.2-.8 0l-6.6-4z"
+							  />
+							</svg>
+						  </button>
+						`)
+		}
+		qw422016.N().S(`
 
-			<div class="card">
-	<aside class="card__action">
-		<button class="favorite card__action-button button-group__item" title="Add to favorite">
-			<svg class="favorite__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28"
-					 xml:space="preserve"><path d="m14.5 22.1-.5-.3-.5.3-6.8 4.2c-.5.3-1.1-.1-.9-.7L7.5 18l.1-.6-.4-.4-5.9-5.2c-.3-.3-.3-.6-.2-.8.1-.2.3-.4.5-.4l7.9-.7.6-.1.2-.6 2.9-7.4c.2-.5 1-.5 1.2 0l3.1 7.3.2.5.6.1 7.9.7c.2 0 .4.2.5.5.1.3 0 .6-.2.7l-5.9 5.2-.4.4.1.6 1.8 7.7c.1.3 0 .5-.2.6-.2.1-.5.2-.8 0l-6.6-4z"/></svg>
-		</button>
-		<button title="Hide vacancy"
-						class="button-group__item button-group__item-sloth card__action-button-sloth"></button>
-	</aside>
-	<figure class="card__header card__header--organizer">
-		<div class="card__image-overlay">
-			<img class="card__image"
-					 alt="card image preview icon"
-					 src="/assets/images/pages/vacancy/company-logo.svg"
-			/>
-		</div>
-		<figcaption class="card__header-caption">
-			<a href=""
-				 class="card__headline vacancy__link"
-			>
-				Go Developer
-			</a>
-			<a href=""
-				 class="card__sub-headline vacancy__link">
-				RoboSoft
-			</a>
-		</figcaption>
-	</figure>
-	<p class="card__text card__text--organizer">
-		The candidate will have strong expertise in Go programming, experience with microservices architecture, and a
-		passion for building scalable and efficient software solutions.
-	</p>
-	<div class="card__footer">
-		<div class="card__details">
-			<figure class="card__figure" title="09:05 29.02.2024">
-				<img class="card__icon"
-						 alt="card type icon"
-						 width="16"
-						 height="16"
-						 src="/assets/images/pages/online/calendar.svg"
-				/>
-				<figcaption class="card__figcaption">Yesterday</figcaption>
-			</figure>
-			<figure class="card__figure" title="Views last month: 164">
-				<img class="card__icon"
-						 alt="card type icon"
-						 width="16"
-						 height="16"
-						 src="/assets/images/pages/common/eye.svg"
-				/>
-				<figcaption class="card__figcaption">Views last month: 164</figcaption>
-			</figure>
-		</div>
-		<button target="_blank" href="#" class="button button--bordered-gray button--gap-images">
-			<img
-				width="20"
-				height="20"
-				src="/assets/images/pages/organizer/linkedin.svg"
-				alt="go original logo"
-				class="hero__button-icon"
-			/>
-			View source
-			<img
-				width="18"
-				height="18"
-				src="/assets/images/pages/common/external-link.svg"
-				alt="arrow black icon"
-				class="hero__button-icon"
-			/>
-		</button>
-	</div>
-</div>
-
+						<button title="Hide vacancy" class="button-group__item button-group__item-sloth card__action-button-sloth"></button>
+					</aside>
+					<figure class="card__header card__header--organizer">
+						<div class="card__image-overlay">
+							<img class="card__image"
+								alt="card image preview icon"
+								src="/assets/images/pages/vacancy/company-logo.svg"
+							/>
+						</div>
+						<figcaption class="card__header-caption">
+							<a href="/organizers/v/`)
+		qw422016.N().DL(vacancy.ID)
+		qw422016.N().S(`" class="card__headline vacancy__link">`)
+		qw422016.E().S(vacancy.Title)
+		qw422016.N().S(`</a>
+							<a href="`)
+		qw422016.E().S(organizerFeature.Path)
+		qw422016.N().S(`/`)
+		qw422016.E().S(company.LinkedInProfile.Alias)
+		qw422016.N().S(`" class="card__sub-headline vacancy__link">`)
+		qw422016.E().S(company.Name)
+		qw422016.N().S(`</a>
+						</figcaption>
+					</figure>
+					<p class="card__text card__text--organizer">`)
+		qw422016.E().S(vacancy.ShortDescription)
+		qw422016.N().S(`</p>
+					<div class="card__footer">
+						<div class="card__details">
+							<figure class="card__figure" title="`)
+		qw422016.E().S(formatVacancyDate(vacancy.Date))
+		qw422016.N().S(`">
+								<img class="card__icon"
+									alt="calendar icon"
+									width="16"
+									height="16"
+									src="/assets/images/pages/online/calendar.svg"
+								/>
+								<figcaption class="card__figcaption">`)
+		qw422016.E().S(formatVacancyDiffDate(vacancy.Date))
+		qw422016.N().S(`</figcaption>
+							</figure>
+							<figure class="card__figure">
+								<img class="card__icon"
+									alt="eye icon"
+									width="16"
+									height="16"
+									src="/assets/images/pages/common/eye.svg"
+								/>
+								<figcaption class="card__figcaption">Monthly views: `)
+		qw422016.N().DL(vacancyMonthlyViewsMap[vacancy.ID])
+		qw422016.N().S(`</figcaption>
+							</figure>
+						</div>
+						<a href="/organizers/v/`)
+		qw422016.N().DL(vacancy.ID)
+		qw422016.N().S(`" class="button button--bordered-gray button--gap-images">
+							`)
+		if isLinkedInVacancyURL(vacancy.URL) {
+			qw422016.N().S(`
+								<img
+									width="20"
+									height="20"
+									src="/assets/images/pages/organizer/linkedin.svg"
+									alt="linkedin logo"
+									class="hero__button-icon"
+								/>
+							`)
+		} else if isOttaVacancyURL(vacancy.URL) {
+			qw422016.N().S(`
+								<img
+									width="20"
+									height="20"
+									src="/assets/images/pages/organizer/otta.svg"
+									alt="otta logo"
+									class="hero__button-icon"
+								/>
+							`)
+		}
+		qw422016.N().S(`
+							View source
+							<img
+								width="18"
+								height="18"
+								src="/assets/images/pages/common/external-link.svg"
+								alt="arrow black icon"
+								class="hero__button-icon"
+							/>
+						</a>
+					</div>
+				</div>
+			`)
+	}
+	qw422016.N().S(`
 		</div>
 	</div>
 </section>
@@ -802,14 +893,17 @@ func WriteOrganizersCompanyV2(qq422016 qtio422016.Writer,
 	organizerFeature OrganizerFeature,
 	headerProfiles []SocialProviderUser,
 	company Company,
+	vacancies []PreparedVacancy,
 	ukrainianUniversities []University,
 	czechUniversities []University,
 	favorite bool,
+	userVacancyFavoriteMap map[int64]bool,
+	vacancyMonthlyViewsMap map[int64]int64,
 	stats CompanyStats,
 	authQueryParams string,
 ) {
 	qw422016 := qt422016.AcquireWriter(qq422016)
-	StreamOrganizersCompanyV2(qw422016, organizerFeature, headerProfiles, company, ukrainianUniversities, czechUniversities, favorite, stats, authQueryParams)
+	StreamOrganizersCompanyV2(qw422016, organizerFeature, headerProfiles, company, vacancies, ukrainianUniversities, czechUniversities, favorite, userVacancyFavoriteMap, vacancyMonthlyViewsMap, stats, authQueryParams)
 	qt422016.ReleaseWriter(qw422016)
 }
 
@@ -817,14 +911,17 @@ func OrganizersCompanyV2(
 	organizerFeature OrganizerFeature,
 	headerProfiles []SocialProviderUser,
 	company Company,
+	vacancies []PreparedVacancy,
 	ukrainianUniversities []University,
 	czechUniversities []University,
 	favorite bool,
+	userVacancyFavoriteMap map[int64]bool,
+	vacancyMonthlyViewsMap map[int64]int64,
 	stats CompanyStats,
 	authQueryParams string,
 ) string {
 	qb422016 := qt422016.AcquireByteBuffer()
-	WriteOrganizersCompanyV2(qb422016, organizerFeature, headerProfiles, company, ukrainianUniversities, czechUniversities, favorite, stats, authQueryParams)
+	WriteOrganizersCompanyV2(qb422016, organizerFeature, headerProfiles, company, vacancies, ukrainianUniversities, czechUniversities, favorite, userVacancyFavoriteMap, vacancyMonthlyViewsMap, stats, authQueryParams)
 	qs422016 := string(qb422016.B)
 	qt422016.ReleaseByteBuffer(qb422016)
 	return qs422016
