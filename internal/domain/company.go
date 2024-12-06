@@ -96,6 +96,16 @@ type Vacancy struct {
 	Remote           bool // for future use
 }
 
+type PreparedVacancy struct {
+	ID               int64 // populates from the VacancyAliasMap
+	Title            string
+	ShortDescription string // proof that the vacancy is for a particular technology
+	URL              string
+	Date             time.Time
+	WithSalary       bool // for future use
+	Remote           bool // for future use
+}
+
 type LanguageProfile struct {
 	GitHubRepositoriesCount int
 	Vacancies               []Vacancy

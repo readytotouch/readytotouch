@@ -2,9 +2,12 @@
   organizerFeature OrganizerFeature,
   headerProfiles []SocialProviderUser,
   company Company,
+  vacancies []PreparedVacancy,
   ukrainianUniversities []University,
   czechUniversities []University,
   favorite bool,
+  userVacancyFavoriteMap map[int64]bool,
+  vacancyMonthlyViewsMap map[int64]int64,
   stats CompanyStats,
   authQueryParams string,
 ) -%}
@@ -475,158 +478,103 @@
 <section class="company-vacancies">
 	<div class="container company-vacancies__container">
 		<h2 class="company-statistics__headline">Vacancies</h2>
+		{% comment %}
 		<div class="vacancies__empty d-none">
 			<img class="vacancies__empty-logo" width="64" height="64" src="/assets/images/pages/common-images/📂.png" alt="folder">
 			<h2 class="vacancies__empty-title">No vacancies yet</h2>
 			<p class="vacancies__empty-subtitle">This company currently has no vacancies, or we are unaware of them.</p>
 		</div>
+		{% endcomment %}
 		<div class="vacancies__list">
-			<div class="card">
-	<aside class="card__action">
-		<button class="favorite card__action-button button-group__item" title="Add to favorite">
-			<svg class="favorite__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28"
-					 xml:space="preserve"><path d="m14.5 22.1-.5-.3-.5.3-6.8 4.2c-.5.3-1.1-.1-.9-.7L7.5 18l.1-.6-.4-.4-5.9-5.2c-.3-.3-.3-.6-.2-.8.1-.2.3-.4.5-.4l7.9-.7.6-.1.2-.6 2.9-7.4c.2-.5 1-.5 1.2 0l3.1 7.3.2.5.6.1 7.9.7c.2 0 .4.2.5.5.1.3 0 .6-.2.7l-5.9 5.2-.4.4.1.6 1.8 7.7c.1.3 0 .5-.2.6-.2.1-.5.2-.8 0l-6.6-4z"/></svg>
-		</button>
-		<button title="Hide vacancy"
-						class="button-group__item button-group__item-sloth card__action-button-sloth"></button>
-	</aside>
-	<figure class="card__header card__header--organizer">
-		<div class="card__image-overlay">
-			<img class="card__image"
-					 alt="card image preview icon"
-					 src="/assets/images/pages/vacancy/company-logo.svg"
-			/>
-		</div>
-		<figcaption class="card__header-caption">
-			<a href=""
-				 class="card__headline vacancy__link"
-			>
-				Go Developer
-			</a>
-			<a href=""
-				 class="card__sub-headline vacancy__link">
-				RoboSoft
-			</a>
-		</figcaption>
-	</figure>
-	<p class="card__text card__text--organizer">
-		The candidate will have strong expertise in Go programming, experience with microservices architecture, and a
-		passion for building scalable and efficient software solutions.
-	</p>
-	<div class="card__footer">
-		<div class="card__details">
-			<figure class="card__figure" title="09:05 29.02.2024">
-				<img class="card__icon"
-						 alt="card type icon"
-						 width="16"
-						 height="16"
-						 src="/assets/images/pages/online/calendar.svg"
-				/>
-				<figcaption class="card__figcaption">Yesterday</figcaption>
-			</figure>
-			<figure class="card__figure" title="Views last month: 164">
-				<img class="card__icon"
-						 alt="card type icon"
-						 width="16"
-						 height="16"
-						 src="/assets/images/pages/common/eye.svg"
-				/>
-				<figcaption class="card__figcaption">Views last month: 164</figcaption>
-			</figure>
-		</div>
-		<button target="_blank" href="#" class="button button--bordered-gray button--gap-images">
-			<img
-				width="20"
-				height="20"
-				src="/assets/images/pages/organizer/linkedin.svg"
-				alt="go original logo"
-				class="hero__button-icon"
-			/>
-			View source
-			<img
-				width="18"
-				height="18"
-				src="/assets/images/pages/common/external-link.svg"
-				alt="arrow black icon"
-				class="hero__button-icon"
-			/>
-		</button>
-	</div>
-</div>
+			{% for _, vacancy := range vacancies %}
+				<div class="js-vacancy card"
+					 data-vacancy-id="{%dl vacancy.ID %}"
+				>
+					<aside class="card__action">
+						{% if userVacancyFavoriteMap[vacancy.ID] %}
+						  <button class="js-vacancy-favorite favorite card__action-button button-group__item in-favorite" title="Remove from favorites">
+							<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" class="favorite__icon" viewBox="0 0 28 28">
+							  <path
+								d="m14.5 22.1-.5-.3-.5.3-6.8 4.2c-.5.3-1.1-.1-.9-.7L7.5 18l.1-.6-.4-.4-5.9-5.2c-.3-.3-.3-.6-.2-.8.1-.2.3-.4.5-.4l7.9-.7.6-.1.2-.6 2.9-7.4c.2-.5 1-.5 1.2 0l3.1 7.3.2.5.6.1 7.9.7c.2 0 .4.2.5.5.1.3 0 .6-.2.7l-5.9 5.2-.4.4.1.6 1.8 7.7c.1.3 0 .5-.2.6-.2.1-.5.2-.8 0l-6.6-4z"
+							  />
+							</svg>
+						  </button>
+						{% else %}
+						  <button class="js-vacancy-favorite favorite card__action-button button-group__item" title="Add to favorite">
+							<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" class="favorite__icon" viewBox="0 0 28 28">
+							  <path
+								d="m14.5 22.1-.5-.3-.5.3-6.8 4.2c-.5.3-1.1-.1-.9-.7L7.5 18l.1-.6-.4-.4-5.9-5.2c-.3-.3-.3-.6-.2-.8.1-.2.3-.4.5-.4l7.9-.7.6-.1.2-.6 2.9-7.4c.2-.5 1-.5 1.2 0l3.1 7.3.2.5.6.1 7.9.7c.2 0 .4.2.5.5.1.3 0 .6-.2.7l-5.9 5.2-.4.4.1.6 1.8 7.7c.1.3 0 .5-.2.6-.2.1-.5.2-.8 0l-6.6-4z"
+							  />
+							</svg>
+						  </button>
+						{% endif %}
 
-			<div class="card">
-	<aside class="card__action">
-		<button class="favorite card__action-button button-group__item" title="Add to favorite">
-			<svg class="favorite__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28"
-					 xml:space="preserve"><path d="m14.5 22.1-.5-.3-.5.3-6.8 4.2c-.5.3-1.1-.1-.9-.7L7.5 18l.1-.6-.4-.4-5.9-5.2c-.3-.3-.3-.6-.2-.8.1-.2.3-.4.5-.4l7.9-.7.6-.1.2-.6 2.9-7.4c.2-.5 1-.5 1.2 0l3.1 7.3.2.5.6.1 7.9.7c.2 0 .4.2.5.5.1.3 0 .6-.2.7l-5.9 5.2-.4.4.1.6 1.8 7.7c.1.3 0 .5-.2.6-.2.1-.5.2-.8 0l-6.6-4z"/></svg>
-		</button>
-		<button title="Hide vacancy"
-						class="button-group__item button-group__item-sloth card__action-button-sloth"></button>
-	</aside>
-	<figure class="card__header card__header--organizer">
-		<div class="card__image-overlay">
-			<img class="card__image"
-					 alt="card image preview icon"
-					 src="/assets/images/pages/vacancy/company-logo.svg"
-			/>
-		</div>
-		<figcaption class="card__header-caption">
-			<a href=""
-				 class="card__headline vacancy__link"
-			>
-				Go Developer
-			</a>
-			<a href=""
-				 class="card__sub-headline vacancy__link">
-				RoboSoft
-			</a>
-		</figcaption>
-	</figure>
-	<p class="card__text card__text--organizer">
-		The candidate will have strong expertise in Go programming, experience with microservices architecture, and a
-		passion for building scalable and efficient software solutions.
-	</p>
-	<div class="card__footer">
-		<div class="card__details">
-			<figure class="card__figure" title="09:05 29.02.2024">
-				<img class="card__icon"
-						 alt="card type icon"
-						 width="16"
-						 height="16"
-						 src="/assets/images/pages/online/calendar.svg"
-				/>
-				<figcaption class="card__figcaption">Yesterday</figcaption>
-			</figure>
-			<figure class="card__figure" title="Views last month: 164">
-				<img class="card__icon"
-						 alt="card type icon"
-						 width="16"
-						 height="16"
-						 src="/assets/images/pages/common/eye.svg"
-				/>
-				<figcaption class="card__figcaption">Views last month: 164</figcaption>
-			</figure>
-		</div>
-		<button target="_blank" href="#" class="button button--bordered-gray button--gap-images">
-			<img
-				width="20"
-				height="20"
-				src="/assets/images/pages/organizer/linkedin.svg"
-				alt="go original logo"
-				class="hero__button-icon"
-			/>
-			View source
-			<img
-				width="18"
-				height="18"
-				src="/assets/images/pages/common/external-link.svg"
-				alt="arrow black icon"
-				class="hero__button-icon"
-			/>
-		</button>
-	</div>
-</div>
-
+						<button title="Hide vacancy" class="button-group__item button-group__item-sloth card__action-button-sloth"></button>
+					</aside>
+					<figure class="card__header card__header--organizer">
+						<div class="card__image-overlay">
+							<img class="card__image"
+								alt="card image preview icon"
+								src="/assets/images/pages/vacancy/company-logo.svg"
+							/>
+						</div>
+						<figcaption class="card__header-caption">
+							<a href="/organizers/v/{%dl vacancy.ID %}" class="card__headline vacancy__link">{%s vacancy.Title %}</a>
+							<a href="{%s organizerFeature.Path %}/{%s company.LinkedInProfile.Alias %}" class="card__sub-headline vacancy__link">{%s company.Name %}</a>
+						</figcaption>
+					</figure>
+					<p class="card__text card__text--organizer">{%s vacancy.ShortDescription %}</p>
+					<div class="card__footer">
+						<div class="card__details">
+							<figure class="card__figure" title="{%s formatVacancyDate(vacancy.Date) %}">
+								<img class="card__icon"
+									alt="calendar icon"
+									width="16"
+									height="16"
+									src="/assets/images/pages/online/calendar.svg"
+								/>
+								<figcaption class="card__figcaption">{%s formatVacancyDiffDate(vacancy.Date) %}</figcaption>
+							</figure>
+							<figure class="card__figure">
+								<img class="card__icon"
+									alt="eye icon"
+									width="16"
+									height="16"
+									src="/assets/images/pages/common/eye.svg"
+								/>
+								<figcaption class="card__figcaption">Monthly views: {%dl vacancyMonthlyViewsMap[vacancy.ID] %}</figcaption>
+							</figure>
+						</div>
+						<a href="/organizers/v/{%dl vacancy.ID %}" class="button button--bordered-gray button--gap-images">
+							{% if isLinkedInVacancyURL(vacancy.URL) %}
+								<img
+									width="20"
+									height="20"
+									src="/assets/images/pages/organizer/linkedin.svg"
+									alt="linkedin logo"
+									class="hero__button-icon"
+								/>
+							{% elseif isOttaVacancyURL(vacancy.URL) %}
+								<img
+									width="20"
+									height="20"
+									src="/assets/images/pages/organizer/otta.svg"
+									alt="otta logo"
+									class="hero__button-icon"
+								/>
+							{% endif %}
+							View source
+							<img
+								width="18"
+								height="18"
+								src="/assets/images/pages/common/external-link.svg"
+								alt="arrow black icon"
+								class="hero__button-icon"
+							/>
+						</a>
+					</div>
+				</div>
+			{% endfor %}
 		</div>
 	</div>
 </section>

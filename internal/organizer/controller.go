@@ -31,12 +31,14 @@ type Controller struct {
 	userFeatureWaitlistRepository   *postgres.UserFeatureWaitlistRepository
 	featureViewStatsRepository      *postgres.FeatureViewStatsRepository
 	userFavoriteCompanyRepository   *postgres.UserFavoriteCompanyRepository
+	userFavoriteVacancyRepository   *postgres.UserFavoriteVacancyRepository
 	companyViewDailyStatsRepository *postgres.CompanyViewDailyStatsRepository
 }
 
-func NewController(userRepository *postgres.UserRepository, userFeatureWaitlistRepository *postgres.UserFeatureWaitlistRepository, featureViewStatsRepository *postgres.FeatureViewStatsRepository, userFavoriteCompanyRepository *postgres.UserFavoriteCompanyRepository, companyViewDailyStatsRepository *postgres.CompanyViewDailyStatsRepository) *Controller {
-	return &Controller{userRepository: userRepository, userFeatureWaitlistRepository: userFeatureWaitlistRepository, featureViewStatsRepository: featureViewStatsRepository, userFavoriteCompanyRepository: userFavoriteCompanyRepository, companyViewDailyStatsRepository: companyViewDailyStatsRepository}
+func NewController(userRepository *postgres.UserRepository, userFeatureWaitlistRepository *postgres.UserFeatureWaitlistRepository, featureViewStatsRepository *postgres.FeatureViewStatsRepository, userFavoriteCompanyRepository *postgres.UserFavoriteCompanyRepository, userFavoriteVacancyRepository *postgres.UserFavoriteVacancyRepository, companyViewDailyStatsRepository *postgres.CompanyViewDailyStatsRepository) *Controller {
+	return &Controller{userRepository: userRepository, userFeatureWaitlistRepository: userFeatureWaitlistRepository, featureViewStatsRepository: featureViewStatsRepository, userFavoriteCompanyRepository: userFavoriteCompanyRepository, userFavoriteVacancyRepository: userFavoriteVacancyRepository, companyViewDailyStatsRepository: companyViewDailyStatsRepository}
 }
+
 func (c *Controller) Index(ctx *gin.Context) {
 	headerProfiles, err := c.getHeaderProfiles(ctx, domain.ContextGetUserID(ctx))
 	if err != nil {
@@ -152,7 +154,7 @@ func (c *Controller) Companies(ctx *gin.Context) {
 		companies = append(companies, company)
 	}
 
-	userCompanyFavoriteMap, err := c.userFavoriteCompanyRepository.GetMap(ctx, authUserID)
+	userCompanyFavoriteMap, err := c.userFavoriteCompanyRepository.GetMap(ctx, authUserID, nil)
 	if err != nil {
 		// @TODO logging
 
@@ -240,7 +242,7 @@ func (c *Controller) CompanyV1(ctx *gin.Context) {
 	}
 
 	// Should be optimized
-	userCompanyFavoriteMap, err := c.userFavoriteCompanyRepository.GetMap(ctx, authUserID)
+	userCompanyFavoriteMap, err := c.userFavoriteCompanyRepository.GetMap(ctx, authUserID, []int64{company.ID})
 	if err != nil {
 		// @TODO logging
 
@@ -336,7 +338,7 @@ func (c *Controller) CompanyV2(ctx *gin.Context) {
 	}
 
 	// Should be optimized
-	userCompanyFavoriteMap, err := c.userFavoriteCompanyRepository.GetMap(ctx, authUserID)
+	userCompanyFavoriteMap, err := c.userFavoriteCompanyRepository.GetMap(ctx, authUserID, []int64{company.ID})
 	if err != nil {
 		// @TODO logging
 
@@ -350,13 +352,48 @@ func (c *Controller) CompanyV2(ctx *gin.Context) {
 		// NOP, continue
 	}
 
+	var (
+		vacancies         = company.Languages[organizerFeature.Organizer.Language].Vacancies
+		preparedVacancies = make([]domain.PreparedVacancy, 0, len(vacancies))
+		vacancyIDs        = make([]int64, 0, len(vacancies))
+	)
+
+	for _, vacancy := range vacancies {
+		id, ok := organizers.VacancyUrlMap[vacancy.URL]
+
+		if ok {
+			preparedVacancies = append(preparedVacancies, domain.PreparedVacancy{
+				ID:               id,
+				Title:            vacancy.Title,
+				ShortDescription: vacancy.ShortDescription,
+				URL:              vacancy.URL,
+				Date:             vacancy.Date,
+				WithSalary:       vacancy.WithSalary,
+				Remote:           vacancy.Remote,
+			})
+			vacancyIDs = append(vacancyIDs, id)
+		}
+	}
+
+	userVacancyFavoriteMap, err := c.userFavoriteVacancyRepository.GetMap(ctx, authUserID, vacancyIDs)
+	if err != nil {
+		// @TODO logging
+
+		// NOP, continue
+	}
+
+	var vacancyMonthlyViewsMap map[int64]int64 // @TODO implement
+
 	content := template.OrganizersCompanyV2(
 		organizerFeature,
 		headerProfiles,
 		company,
+		preparedVacancies,
 		db.UkrainianUniversities(),
 		db.CzechUniversities(),
 		userCompanyFavoriteMap[company.ID],
+		userVacancyFavoriteMap,
+		vacancyMonthlyViewsMap,
 		c.companyStats(ctx, company.ID),
 		c.redirect(organizerFeature.Path+"/"+uri.CompanyAlias),
 	)

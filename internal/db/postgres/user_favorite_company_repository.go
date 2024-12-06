@@ -34,8 +34,13 @@ func (r *UserFavoriteCompanyRepository) Upsert(
 func (r *UserFavoriteCompanyRepository) GetMap(
 	ctx context.Context,
 	userID int64,
+	companyIDs []int64,
 ) (map[int64]bool, error) {
-	rows, err := r.db.Queries().UserFavoriteCompanies(ctx, userID)
+	rows, err := r.db.Queries().UserFavoriteCompanies(ctx, dbs.UserFavoriteCompaniesParams{
+		UserID:                 userID,
+		CompanyIdsFilterExists: len(companyIDs) > 0,
+		CompanyIds:             companyIDs,
+	})
 	if err != nil {
 		return nil, err
 	}

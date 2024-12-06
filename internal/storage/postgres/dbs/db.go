@@ -60,6 +60,12 @@ func Prepare(ctx context.Context, db DBTX) (*Queries, error) {
 	if q.userFavoriteCompaniesUpsertStmt, err = db.PrepareContext(ctx, userFavoriteCompaniesUpsert); err != nil {
 		return nil, fmt.Errorf("error preparing query UserFavoriteCompaniesUpsert: %w", err)
 	}
+	if q.userFavoriteVacanciesStmt, err = db.PrepareContext(ctx, userFavoriteVacancies); err != nil {
+		return nil, fmt.Errorf("error preparing query UserFavoriteVacancies: %w", err)
+	}
+	if q.userFavoriteVacanciesUpsertStmt, err = db.PrepareContext(ctx, userFavoriteVacanciesUpsert); err != nil {
+		return nil, fmt.Errorf("error preparing query UserFavoriteVacanciesUpsert: %w", err)
+	}
 	if q.userFeatureWaitlistStmt, err = db.PrepareContext(ctx, userFeatureWaitlist); err != nil {
 		return nil, fmt.Errorf("error preparing query UserFeatureWaitlist: %w", err)
 	}
@@ -201,6 +207,16 @@ func (q *Queries) Close() error {
 	if q.userFavoriteCompaniesUpsertStmt != nil {
 		if cerr := q.userFavoriteCompaniesUpsertStmt.Close(); cerr != nil {
 			err = fmt.Errorf("error closing userFavoriteCompaniesUpsertStmt: %w", cerr)
+		}
+	}
+	if q.userFavoriteVacanciesStmt != nil {
+		if cerr := q.userFavoriteVacanciesStmt.Close(); cerr != nil {
+			err = fmt.Errorf("error closing userFavoriteVacanciesStmt: %w", cerr)
+		}
+	}
+	if q.userFavoriteVacanciesUpsertStmt != nil {
+		if cerr := q.userFavoriteVacanciesUpsertStmt.Close(); cerr != nil {
+			err = fmt.Errorf("error closing userFavoriteVacanciesUpsertStmt: %w", cerr)
 		}
 	}
 	if q.userFeatureWaitlistStmt != nil {
@@ -384,6 +400,8 @@ type Queries struct {
 	userFavoriteCompaniesStmt                            *sql.Stmt
 	userFavoriteCompaniesStatsStmt                       *sql.Stmt
 	userFavoriteCompaniesUpsertStmt                      *sql.Stmt
+	userFavoriteVacanciesStmt                            *sql.Stmt
+	userFavoriteVacanciesUpsertStmt                      *sql.Stmt
 	userFeatureWaitlistStmt                              *sql.Stmt
 	userFeatureWaitlistDailyStatsStmt                    *sql.Stmt
 	userFeatureWaitlistStatsStmt                         *sql.Stmt
@@ -428,6 +446,8 @@ func (q *Queries) WithTx(tx *sql.Tx) *Queries {
 		userFavoriteCompaniesStmt:                            q.userFavoriteCompaniesStmt,
 		userFavoriteCompaniesStatsStmt:                       q.userFavoriteCompaniesStatsStmt,
 		userFavoriteCompaniesUpsertStmt:                      q.userFavoriteCompaniesUpsertStmt,
+		userFavoriteVacanciesStmt:                            q.userFavoriteVacanciesStmt,
+		userFavoriteVacanciesUpsertStmt:                      q.userFavoriteVacanciesUpsertStmt,
 		userFeatureWaitlistStmt:                              q.userFeatureWaitlistStmt,
 		userFeatureWaitlistDailyStatsStmt:                    q.userFeatureWaitlistDailyStatsStmt,
 		userFeatureWaitlistStatsStmt:                         q.userFeatureWaitlistStatsStmt,

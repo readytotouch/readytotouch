@@ -1,7 +1,9 @@
 package v1
 
 import (
+	"fmt"
 	"strings"
+	"time"
 
 	"github.com/readytotouch/readytotouch/internal/domain"
 )
@@ -186,6 +188,61 @@ func formatGlassdoorReviewsRate(s string) string {
 	}
 
 	return s
+}
+
+func formatVacancyDate(s time.Time) string {
+	return s.Format("02 January 2006")
+}
+
+func formatVacancyDiffDate(t time.Time) string {
+	today := time.Now().UTC().Truncate(24 * time.Hour)
+
+	if t.After(today) {
+		return "Today"
+	}
+
+	if t.After(today.Add(-24 * time.Hour)) {
+		return "Yesterday"
+	}
+
+	days := int(today.Sub(t).Hours() / 24)
+	if days < 7 {
+		if days == 1 {
+			return "1 day ago"
+		}
+		return fmt.Sprintf("%d days ago", days)
+	}
+
+	weeks := days / 7
+	if weeks < 4 {
+		if weeks == 1 {
+			return "1 week ago"
+		}
+		return fmt.Sprintf("%d weeks ago", weeks)
+	}
+
+	months := days / 30
+	if months < 12 {
+		if months == 1 {
+			return "1 month ago"
+		}
+		return fmt.Sprintf("%d months ago", months)
+	}
+
+	years := days / 365
+	if years == 1 {
+		return "1 year ago"
+	}
+	return fmt.Sprintf("%d years ago", years)
+}
+
+func isLinkedInVacancyURL(s string) bool {
+	return strings.Contains(s, "https://www.linkedin.com/jobs/view/")
+}
+
+func isOttaVacancyURL(s string) bool {
+	return strings.Contains(s, "https://app.welcometothejungle.com/jobs/") ||
+		strings.Contains(s, "https://app.otta.com/jobs/")
 }
 
 var (
