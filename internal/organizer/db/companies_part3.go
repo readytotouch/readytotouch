@@ -2431,6 +2431,286 @@ func companiesPart3() []domain.CompanyProfile {
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
+		
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "arculus — a Jungheinrich company",
+			Website: "https://www.arculus.de/",
+			Careers: "https://www.arculus.de/career",
+			About:   "https://www.arculus.de/about",
+			Blog:    "https://www.arculus.de/blog/software",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       10614020,
+				Alias:    "arculus-a-jungheinrich-company",
+				Name:     "arculus — a Jungheinrich company",
+				Verified: true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias:       "",
+				Employees:   "",
+				Salary:      "",
+				Reviews:     "",
+				ReviewsRate: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "",
+				Employees: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-arculus-EI_IE4073737.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/arculus-Reviews-E4073737.htm",
+				Verified:    false,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Languages: domain.Languages{
+				domain.Go: 	   {},
+				domain.Rust:    {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title           : "Rust Developer (d/f/m) ",
+							ShortDescription: "",
+							URL             : "https://www.linkedin.com/jobs/view/4088212368/",
+							Date            : mustDate("2024-11-12"),
+						}
+					}
+				},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription:          "",
+			DealroomURL:               "",
+			CrunchbaseURL:             "",
+			PitchbookURL:              "",
+			YahooFinanceURL:           "",
+			GoogleFinanceURL:          "",
+			YCombinatorURL:            "",
+			Industries:                []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{},
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "eBay",
+			Website: "https://www.ebayinc.com/",
+			Careers: "https://jobs.ebayinc.com/us/en",
+			About:   "https://www.ebayinc.com/company/",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       1481,
+				Alias:    "ebay",
+				Name:     "eBay",
+				Verified: true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "eBay",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias:       "",
+				Employees:   "",
+				Salary:      "",
+				Reviews:     "",
+				ReviewsRate: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "",
+				Employees: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-eBay-EI_IE7853.11,15.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/eBay-Reviews-E7853.htm",
+				Verified:    true,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			OttaProfileSlug:   "eBay",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Languages: domain.Languages{
+				domain.Go: 		{},
+				domain.Rust:    {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title           : "Senior Rust Developer (MTS1/2)",
+							ShortDescription: "",
+							URL             : "https://www.linkedin.com/jobs/view/4066364870/",
+							Date            : mustDate("2024-12-01"),
+						}
+					}
+				},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription:          "",
+			DealroomURL:               "",
+			CrunchbaseURL:             "",
+			PitchbookURL:              "",
+			YahooFinanceURL:           "",
+			GoogleFinanceURL:          "",
+			YCombinatorURL:            "",
+			Industries:                []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{},
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Digiexam",
+			Website: "https://www.digiexam.com/",
+			Careers: "https://careers.digiexam.com/",
+			About:   "https://www.digiexam.com/about",
+			Blog:    "https://www.digiexam.com/blog",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       4992190,
+				Alias:    "digiexams",
+				Name:     "Digiexam",
+				Verified: true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "digiexam",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias:       "",
+				Employees:   "",
+				Salary:      "",
+				Reviews:     "",
+				ReviewsRate: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "",
+				Employees: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Digiexam-EI_IE1525489.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Digiexam-Reviews-E1525489.htm",
+				Verified:    false,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Languages: domain.Languages{
+				domain.Go: 		{},
+				domain.Rust:    {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title           : "Rust Developer",
+							ShortDescription: "",
+							URL             : "https://www.linkedin.com/jobs/view/4081085456/",
+							Date            : mustDate("2024-11-24"),
+						}
+					}
+				},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription:          "",
+			DealroomURL:               "",
+			CrunchbaseURL:             "",
+			PitchbookURL:              "",
+			YahooFinanceURL:           "",
+			GoogleFinanceURL:          "",
+			YCombinatorURL:            "",
+			Industries:                []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{},
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Axis Communications",
+			Website: "https://www.axis.com/",
+			Careers: "https://www.axis.com/careers",
+			About:   "https://www.axis.com/about-axis",
+			Blog:    "https://engineeringat.axis.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       6390,
+				Alias:    "axis-communications",
+				Name:     "Axis Communications",
+				Verified: true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "AxisCommunications",
+				Verified: true,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias:       "",
+				Employees:   "",
+				Salary:      "",
+				Reviews:     "",
+				ReviewsRate: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "",
+				Employees: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Axis-Communications-EI_IE199800.11,30.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Axis-Communications-Reviews-E199800.htm",
+				Verified:    true,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Languages: domain.Languages{
+				domain.Go: 		{},
+				domain.Rust:    {
+					GitHubRepositoriesCount: 1,
+					Vacancies: []domain.Vacancy{
+						{
+							Title           : "C/C++/Rust Developer- streaming to cloud from cameras",
+							ShortDescription: "",
+							URL             : "https://www.linkedin.com/jobs/view/4079469920/",
+							Date            : mustDate("2024-11-24"),
+						}
+					}
+				},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription:          "",
+			DealroomURL:               "",
+			CrunchbaseURL:             "",
+			PitchbookURL:              "",
+			YahooFinanceURL:           "",
+			GoogleFinanceURL:          "",
+			YCombinatorURL:            "",
+			Industries:                []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{},
+		},
 
 		// Template
 		//{
