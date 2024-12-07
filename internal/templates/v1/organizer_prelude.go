@@ -11,8 +11,9 @@ import (
 )
 
 type (
-	Company    = domain.CompanyProfile
-	University = domain.University
+	Company         = domain.CompanyProfile
+	University      = domain.University
+	PreparedVacancy = domain.PreparedVacancy
 )
 
 const (

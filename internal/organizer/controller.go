@@ -16,17 +16,30 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+type (
+	companyAliasURI struct {
+		CompanyAlias string `uri:"company_alias" binding:"required"`
+	}
+
+	vacancyURI struct {
+		VacancyID int64 `uri:"vacancy_id" binding:"required"`
+	}
+)
+
 type Controller struct {
 	userRepository                  *postgres.UserRepository
 	userFeatureWaitlistRepository   *postgres.UserFeatureWaitlistRepository
 	featureViewStatsRepository      *postgres.FeatureViewStatsRepository
 	userFavoriteCompanyRepository   *postgres.UserFavoriteCompanyRepository
+	userFavoriteVacancyRepository   *postgres.UserFavoriteVacancyRepository
 	companyViewDailyStatsRepository *postgres.CompanyViewDailyStatsRepository
+	vacancyViewStatsRepository      *postgres.VacancyViewStatsRepository
 }
 
-func NewController(userRepository *postgres.UserRepository, userFeatureWaitlistRepository *postgres.UserFeatureWaitlistRepository, featureViewStatsRepository *postgres.FeatureViewStatsRepository, userFavoriteCompanyRepository *postgres.UserFavoriteCompanyRepository, companyViewDailyStatsRepository *postgres.CompanyViewDailyStatsRepository) *Controller {
-	return &Controller{userRepository: userRepository, userFeatureWaitlistRepository: userFeatureWaitlistRepository, featureViewStatsRepository: featureViewStatsRepository, userFavoriteCompanyRepository: userFavoriteCompanyRepository, companyViewDailyStatsRepository: companyViewDailyStatsRepository}
+func NewController(userRepository *postgres.UserRepository, userFeatureWaitlistRepository *postgres.UserFeatureWaitlistRepository, featureViewStatsRepository *postgres.FeatureViewStatsRepository, userFavoriteCompanyRepository *postgres.UserFavoriteCompanyRepository, userFavoriteVacancyRepository *postgres.UserFavoriteVacancyRepository, companyViewDailyStatsRepository *postgres.CompanyViewDailyStatsRepository, vacancyViewStatsRepository *postgres.VacancyViewStatsRepository) *Controller {
+	return &Controller{userRepository: userRepository, userFeatureWaitlistRepository: userFeatureWaitlistRepository, featureViewStatsRepository: featureViewStatsRepository, userFavoriteCompanyRepository: userFavoriteCompanyRepository, userFavoriteVacancyRepository: userFavoriteVacancyRepository, companyViewDailyStatsRepository: companyViewDailyStatsRepository, vacancyViewStatsRepository: vacancyViewStatsRepository}
 }
+
 func (c *Controller) Index(ctx *gin.Context) {
 	headerProfiles, err := c.getHeaderProfiles(ctx, domain.ContextGetUserID(ctx))
 	if err != nil {
@@ -116,7 +129,7 @@ func (c *Controller) Companies(ctx *gin.Context) {
 	for _, company := range source {
 		company.ID = organizers.CompanyAliasMap[company.LinkedInProfile.Alias]
 		if company.ID == 0 {
-			// make generate-company-code
+			// make generate-organizers
 
 			continue
 		}
@@ -142,14 +155,14 @@ func (c *Controller) Companies(ctx *gin.Context) {
 		companies = append(companies, company)
 	}
 
-	userCompanyFavoriteMap, err := c.userFavoriteCompanyRepository.GetMap(ctx, authUserID)
+	userCompanyFavoriteMap, err := c.userFavoriteCompanyRepository.GetMap(ctx, authUserID, nil)
 	if err != nil {
 		// @TODO logging
 
 		// NOP, continue
 	}
 
-	content := template.OrganizersCompanies(
+	content := template.OrganizersCompaniesV1(
 		organizerFeature,
 		headerProfiles,
 		companies,
@@ -162,15 +175,9 @@ func (c *Controller) Companies(ctx *gin.Context) {
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
 }
 
-func (c *Controller) Company(ctx *gin.Context) {
-	type (
-		companyURI struct {
-			CompanyAlias string `uri:"company_alias" binding:"required"`
-		}
-	)
-
+func (c *Controller) CompanyV1(ctx *gin.Context) {
 	var (
-		uri companyURI
+		uri companyAliasURI
 	)
 
 	err := ctx.ShouldBindUri(&uri)
@@ -181,7 +188,7 @@ func (c *Controller) Company(ctx *gin.Context) {
 	}
 
 	var (
-		featurePath = strings.TrimSuffix(ctx.FullPath(), "/:company_alias")
+		featurePath = c.trimCompanyAlias(ctx)
 	)
 
 	// Redirect to lowercase company alias
@@ -203,7 +210,7 @@ func (c *Controller) Company(ctx *gin.Context) {
 
 	company.ID = organizers.CompanyAliasMap[company.LinkedInProfile.Alias]
 	if company.ID == 0 {
-		// make generate-company-code
+		// make generate-organizers
 
 		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Company not found"))
 
@@ -236,7 +243,7 @@ func (c *Controller) Company(ctx *gin.Context) {
 	}
 
 	// Should be optimized
-	userCompanyFavoriteMap, err := c.userFavoriteCompanyRepository.GetMap(ctx, authUserID)
+	userCompanyFavoriteMap, err := c.userFavoriteCompanyRepository.GetMap(ctx, authUserID, []int64{company.ID})
 	if err != nil {
 		// @TODO logging
 
@@ -250,7 +257,7 @@ func (c *Controller) Company(ctx *gin.Context) {
 		// NOP, continue
 	}
 
-	content := template.OrganizersCompany(
+	content := template.OrganizersCompanyV1(
 		organizerFeature,
 		headerProfiles,
 		company,
@@ -262,6 +269,152 @@ func (c *Controller) Company(ctx *gin.Context) {
 	)
 
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
+}
+
+func (c *Controller) CompanyV2(ctx *gin.Context) {
+	var (
+		uri companyAliasURI
+	)
+
+	err := ctx.ShouldBindUri(&uri)
+	if err != nil {
+		ctx.Data(http.StatusBadRequest, "text/html; charset=utf-8", []byte("Company alias is required"))
+
+		return
+	}
+
+	var (
+		featurePath = c.trimCompanyAlias(ctx)
+	)
+
+	// Redirect to lowercase company alias
+	{
+		redirectAlias := strings.ToLower(uri.CompanyAlias)
+		if uri.CompanyAlias != redirectAlias {
+			ctx.Redirect(http.StatusFound, featurePath+"/"+redirectAlias)
+
+			return
+		}
+	}
+
+	company, ok := c.findCompany(ctx, uri.CompanyAlias)
+	if !ok {
+		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Company not found"))
+
+		return
+	}
+
+	company.ID = organizers.CompanyAliasMap[company.LinkedInProfile.Alias]
+	if company.ID == 0 {
+		// make generate-organizers
+
+		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Company not found"))
+
+		return
+	}
+
+	if company.Type == "" {
+		company.Type = organizers.ToCompanyType(company.LinkedInProfile.Alias)
+	}
+	if company.Website == "" {
+		company.Website = company.URL
+	}
+
+	organizerFeature, ok := c.organizerFeature(featurePath)
+	if !ok {
+		// Should be unreachable
+		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Feature not found"))
+
+		return
+	}
+
+	var (
+		authUserID = domain.ContextGetUserID(ctx)
+	)
+	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)
+	if err != nil {
+		// @TODO logging
+
+		// NOP, continue
+	}
+
+	// Should be optimized
+	userCompanyFavoriteMap, err := c.userFavoriteCompanyRepository.GetMap(ctx, authUserID, []int64{company.ID})
+	if err != nil {
+		// @TODO logging
+
+		// NOP, continue
+	}
+
+	err = c.companyViewDailyStatsRepository.Upsert(ctx, company.ID, time.Now().UTC())
+	if err != nil {
+		// @TODO logging
+
+		// NOP, continue
+	}
+
+	var (
+		vacancies         = company.Languages[organizerFeature.Organizer.Language].Vacancies
+		preparedVacancies = make([]domain.PreparedVacancy, 0, len(vacancies))
+		vacancyIDs        = make([]int64, 0, len(vacancies))
+	)
+
+	for _, vacancy := range vacancies {
+		id, ok := organizers.VacancyUrlMap[vacancy.URL]
+
+		if ok {
+			preparedVacancies = append(preparedVacancies, domain.PreparedVacancy{
+				ID:               id,
+				Title:            vacancy.Title,
+				ShortDescription: vacancy.ShortDescription,
+				URL:              vacancy.URL,
+				Date:             vacancy.Date,
+				WithSalary:       vacancy.WithSalary,
+				Remote:           vacancy.Remote,
+			})
+			vacancyIDs = append(vacancyIDs, id)
+		}
+	}
+
+	userVacancyFavoriteMap, err := c.userFavoriteVacancyRepository.GetMap(ctx, authUserID, vacancyIDs)
+	if err != nil {
+		// @TODO logging
+
+		// NOP, continue
+	}
+
+	month := time.Now().UTC().Truncate(time.Hour*24).AddDate(0, -1, 0)
+	vacancyMonthlyViewsMap, err := c.vacancyViewStatsRepository.Stats(ctx, vacancyIDs, month)
+	if err != nil {
+		// @TODO logging
+
+		// NOP, continue
+	}
+
+	content := template.OrganizersCompanyV2(
+		organizerFeature,
+		headerProfiles,
+		company,
+		preparedVacancies,
+		db.UkrainianUniversities(),
+		db.CzechUniversities(),
+		userCompanyFavoriteMap[company.ID],
+		userVacancyFavoriteMap,
+		vacancyMonthlyViewsMap,
+		c.companyStats(ctx, company.ID),
+		c.redirect(organizerFeature.Path+"/"+uri.CompanyAlias),
+	)
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
+}
+
+func (c *Controller) trimCompanyAlias(ctx *gin.Context) (result string) {
+	result = ctx.FullPath()
+	result = strings.TrimSuffix(result, "/:company_alias")
+	result = strings.TrimSuffix(result, "/:company_alias/v1")
+	result = strings.TrimSuffix(result, "/:company_alias/v2")
+
+	return result
 }
 
 func (c *Controller) Waitlist(ctx *gin.Context) {
@@ -306,6 +459,134 @@ func (c *Controller) Waitlist(ctx *gin.Context) {
 	content := template.OrganizersWaitlist(organizerFeature, headerProfiles, c.redirect(organizerFeature.Path), subscribedState)
 
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
+}
+
+func (c *Controller) GolangCommunities(ctx *gin.Context) {
+	var (
+		authUserID = domain.ContextGetUserID(ctx)
+	)
+
+	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)
+	if err != nil {
+		// @TODO logging
+
+		// NOP, continue
+	}
+
+	content := template.OrganizersCommunitiesGolang(domain.OrganizerGolang, headerProfiles)
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
+}
+
+func (c *Controller) RustCommunities(ctx *gin.Context) {
+	var (
+		authUserID = domain.ContextGetUserID(ctx)
+	)
+
+	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)
+	if err != nil {
+		// @TODO logging
+
+		// NOP, continue
+	}
+
+	content := template.OrganizersCommunitiesRust(domain.OrganizerRust, headerProfiles)
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
+}
+
+func (c *Controller) ZigCommunities(ctx *gin.Context) {
+	c.TODO(ctx)
+}
+
+func (c *Controller) ScalaCommunities(ctx *gin.Context) {
+	var (
+		authUserID = domain.ContextGetUserID(ctx)
+	)
+
+	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)
+	if err != nil {
+		// @TODO logging
+
+		// NOP, continue
+	}
+
+	content := template.OrganizersCommunitiesScala(domain.OrganizerScala, headerProfiles)
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
+}
+
+func (c *Controller) ElixirCommunities(ctx *gin.Context) {
+	var (
+		authUserID = domain.ContextGetUserID(ctx)
+	)
+
+	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)
+	if err != nil {
+		// @TODO logging
+
+		// NOP, continue
+	}
+
+	content := template.OrganizersCommunitiesElixir(domain.OrganizerElixir, headerProfiles)
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
+}
+
+func (c *Controller) ClojureCommunities(ctx *gin.Context) {
+	var (
+		authUserID = domain.ContextGetUserID(ctx)
+	)
+
+	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)
+	if err != nil {
+		// @TODO logging
+
+		// NOP, continue
+	}
+
+	content := template.OrganizersCommunitiesClojure(domain.OrganizerClojure, headerProfiles)
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
+}
+
+func (c *Controller) VacancyRedirect(ctx *gin.Context) {
+	var (
+		authUserID = domain.ContextGetUserID(ctx)
+	)
+
+	if authUserID == 0 {
+		ctx.Redirect(http.StatusFound, "/organizers/golang/welcome"+c.redirect(ctx.FullPath()))
+
+		return
+	}
+
+	var (
+		uri vacancyURI
+	)
+
+	err := ctx.ShouldBindUri(&uri)
+	if err != nil {
+		ctx.Data(http.StatusBadRequest, "text/html; charset=utf-8", []byte("Vacancy ID is required"))
+
+		return
+	}
+
+	vacancyExternalURL, ok := organizers.VacancyIdMap[uri.VacancyID]
+	if !ok {
+		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Vacancy not found"))
+
+		return
+	}
+
+	err = c.vacancyViewStatsRepository.Upsert(ctx, uri.VacancyID, authUserID, time.Now().UTC())
+	if err != nil {
+		// @TODO logging
+
+		// NOP, continue
+	}
+
+	ctx.Redirect(http.StatusFound, vacancyExternalURL)
 }
 
 func (c *Controller) TODO(ctx *gin.Context) {
@@ -442,6 +723,58 @@ func (c *Controller) FavoriteCompany(ctx *gin.Context) {
 	}
 
 	err = c.userFavoriteCompanyRepository.Upsert(ctx, authUserID, uri.CompanyID, body.Favorite, time.Now().UTC())
+	if err != nil {
+		ctx.JSON(http.StatusInternalServerError, &domain.ErrorResponse{
+			ErrorMessage: err.Error(), // Yes, we are leaking the error message to the client, it's fine for now
+		})
+		return
+	}
+
+	ctx.JSON(http.StatusOK, nil)
+}
+
+func (c *Controller) FavoriteVacancy(ctx *gin.Context) {
+	type (
+		favoriteVacancyURI struct {
+			VacancyID int64 `uri:"vacancy_id" binding:"required"`
+		}
+		favoriteVacancyRequestBody struct {
+			Favorite bool `json:"favorite"`
+		}
+	)
+
+	var (
+		uri  favoriteVacancyURI
+		body favoriteVacancyRequestBody
+	)
+
+	err := ctx.ShouldBindUri(&uri)
+	if err != nil {
+		ctx.JSON(http.StatusBadRequest, &domain.ErrorResponse{
+			ErrorMessage: err.Error(),
+		})
+		return
+	}
+
+	var (
+		authUserID = domain.ContextGetUserID(ctx)
+	)
+
+	if authUserID == 0 {
+		ctx.JSON(http.StatusUnauthorized, &domain.ErrorResponse{
+			ErrorMessage: "Unauthorized",
+		})
+		return
+	}
+
+	if err := ctx.ShouldBindJSON(&body); err != nil {
+		ctx.JSON(http.StatusBadRequest, &domain.ErrorResponse{
+			ErrorMessage: err.Error(),
+		})
+		return
+	}
+
+	err = c.userFavoriteVacancyRepository.Upsert(ctx, authUserID, uri.VacancyID, body.Favorite, time.Now().UTC())
 	if err != nil {
 		ctx.JSON(http.StatusInternalServerError, &domain.ErrorResponse{
 			ErrorMessage: err.Error(), // Yes, we are leaking the error message to the client, it's fine for now
