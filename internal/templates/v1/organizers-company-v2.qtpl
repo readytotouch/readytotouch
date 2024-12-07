@@ -253,7 +253,7 @@
 				<a href="https://github.com/{%s company.GitHubProfile.Login %}" class="button-link card__links-link">Overview</a>
 			</li>
 			<li class="card__links-item">
-				<a href="https://github.com/orgs/{%s company.GitHubProfile.Login %}/repositories?q=lang%3A{%s organizerFeature.Organizer.GitHubAlias %}&type=all" class="button-link card__links-link">Repositories ({%d fetchGitHubRepositoriesCount(company, organizerFeature.Organizer.Language) %})</a>
+				<a href="https://github.com/orgs/{%s company.GitHubProfile.Login %}/repositories?q=lang:{%s organizerFeature.Organizer.GitHubAlias %}" class="button-link card__links-link">Repositories ({%d fetchGitHubRepositoriesCount(company, organizerFeature.Organizer.Language) %})</a>
 			</li>
 		</ul>
 	</div>

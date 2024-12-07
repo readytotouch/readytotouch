@@ -311,12 +311,12 @@ func StreamOrganizersCompanyV1(qw422016 *qt422016.Writer,
 		qw422016.N().S(`" class="button-link card__links-link">GitHub</a>
         </li>
         <li class="card__links-item">
-          `)
-		qw422016.N().S(`
           <a href="https://github.com/orgs/`)
 		qw422016.E().S(company.GitHubProfile.Login)
-		qw422016.N().S(`/repositories?q=lang:go" class="button-link card__links-link" title="`)
-		qw422016.N().D(company.GitHubProfile.GoRepositoryCount)
+		qw422016.N().S(`/repositories?q=lang:`)
+		qw422016.E().S(organizerFeature.Organizer.GitHubAlias)
+		qw422016.N().S(`" class="button-link card__links-link" title="`)
+		qw422016.N().D(fetchGitHubRepositoriesCount(company, organizerFeature.Organizer.Language))
 		qw422016.N().S(` repositories">Repositories</a>
         </li>
       </ul>

@@ -162,7 +162,7 @@ func (c *Controller) Companies(ctx *gin.Context) {
 		// NOP, continue
 	}
 
-	content := template.OrganizersCompanies(
+	content := template.OrganizersCompaniesV1(
 		organizerFeature,
 		headerProfiles,
 		companies,
