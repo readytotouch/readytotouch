@@ -143,6 +143,14 @@ func googleSearchBlind(companyName string) string {
 	return "https://www.google.com/search?" + values.Encode()
 }
 
+func googleSearchLevelsFyi(companyName string) string {
+	values := url.Values{
+		"q": {"site:levels.fyi" + " " + companyName},
+	}
+
+	return "https://www.google.com/search?" + values.Encode()
+}
+
 func googleSearchXing(companyName string) string {
 	values := url.Values{
 		"q": {"site:xing.com" + " " + companyName},

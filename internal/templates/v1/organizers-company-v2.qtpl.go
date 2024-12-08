@@ -518,6 +518,38 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 	</div>
 	<div class="card">
 		<ul class="card__links-group">
+			`)
+	if company.LevelsFyiProfile.Alias == "" {
+		qw422016.N().S(`
+			<li class="card__links-item card__links-item--title card__links-item--disabled">
+				<div class="card__links-item-group">
+					<img
+						class="card__links-icon"
+						alt="linkedin icon"
+						width="32"
+						height="32"
+						src="/assets/images/pages/organizer/levels.png"
+					/>
+					<span class="card__links-link">Levels.fyi</span>
+				</div>
+				<ul class="card__links-item-info">
+					<li class="card__link-stats-item">??? employees</li>
+				</ul>
+			</li>
+			<li class="card__links-item card__links-item--disabled">
+				<span class="button-link card__links-link">Overview</span>
+				<a href="`)
+		qw422016.E().S(googleSearchLevelsFyi(company.Name))
+		qw422016.N().S(`" class="card__links-link card__links-link--google">
+					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+				</a>
+			</li>
+			<li class="card__links-item card__links-item--disabled">
+				<span class="button-link card__links-link">Jobs</span>
+			</li>
+			`)
+	} else {
+		qw422016.N().S(`
 			<li class="card__links-item card__links-item--title">
 				<div class="card__links-item-group">
 					<img
@@ -528,25 +560,28 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 						src="/assets/images/pages/organizer/levels.png"
 					/>
 					<a href="https://www.levels.fyi/companies/`)
-	qw422016.E().S(company.LevelsFyiProfile.Alias)
-	qw422016.N().S(`" class="card__links-link">Levels.fyi</a>
+		qw422016.E().S(company.LevelsFyiProfile.Alias)
+		qw422016.N().S(`" class="card__links-link">Levels.fyi</a>
 				</div>
 				<ul class="card__links-item-info">
 					<li class="card__link-stats-item">`)
-	qw422016.E().S(formatLevelsFyiEmployees(company.LevelsFyiProfile.Employees))
-	qw422016.N().S(` employees</li>
+		qw422016.E().S(formatLevelsFyiEmployees(company.LevelsFyiProfile.Employees))
+		qw422016.N().S(` employees</li>
 				</ul>
 			</li>
 			<li class="card__links-item">
 				<a href="https://www.levels.fyi/companies/`)
-	qw422016.E().S(company.LevelsFyiProfile.Alias)
-	qw422016.N().S(`" class="button-link card__links-link">Overview</a>
+		qw422016.E().S(company.LevelsFyiProfile.Alias)
+		qw422016.N().S(`" class="button-link card__links-link">Overview</a>
 			</li>
 			<li class="card__links-item">
 				<a href="https://www.levels.fyi/companies/`)
-	qw422016.E().S(company.LevelsFyiProfile.Alias)
-	qw422016.N().S(`/jobs" class="button-link card__links-link">Jobs</a>
+		qw422016.E().S(company.LevelsFyiProfile.Alias)
+		qw422016.N().S(`/jobs" class="button-link card__links-link">Jobs</a>
 			</li>
+			`)
+	}
+	qw422016.N().S(`
 		</ul>
 	</div>
 	<div class="card">

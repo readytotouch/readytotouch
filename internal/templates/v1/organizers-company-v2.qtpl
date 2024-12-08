@@ -341,6 +341,32 @@
 	</div>
 	<div class="card">
 		<ul class="card__links-group">
+			{% if company.LevelsFyiProfile.Alias == "" %}
+			<li class="card__links-item card__links-item--title card__links-item--disabled">
+				<div class="card__links-item-group">
+					<img
+						class="card__links-icon"
+						alt="linkedin icon"
+						width="32"
+						height="32"
+						src="/assets/images/pages/organizer/levels.png"
+					/>
+					<span class="card__links-link">Levels.fyi</span>
+				</div>
+				<ul class="card__links-item-info">
+					<li class="card__link-stats-item">??? employees</li>
+				</ul>
+			</li>
+			<li class="card__links-item card__links-item--disabled">
+				<span class="button-link card__links-link">Overview</span>
+				<a href="{%s googleSearchLevelsFyi(company.Name) %}" class="card__links-link card__links-link--google">
+					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+				</a>
+			</li>
+			<li class="card__links-item card__links-item--disabled">
+				<span class="button-link card__links-link">Jobs</span>
+			</li>
+			{% else %}
 			<li class="card__links-item card__links-item--title">
 				<div class="card__links-item-group">
 					<img
@@ -362,6 +388,7 @@
 			<li class="card__links-item">
 				<a href="https://www.levels.fyi/companies/{%s company.LevelsFyiProfile.Alias %}/jobs" class="button-link card__links-link">Jobs</a>
 			</li>
+			{% endif %}
 		</ul>
 	</div>
 	<div class="card">
