@@ -468,7 +468,7 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 			</li>
 			<li class="card__links-item card__links-item--disabled">
 				<span class="button-link card__links-link">Reviews</span>
-				<span class="card__links-link-star">⭐ ?</span>
+				<span class="card__links-link-star">⭐ ?.?</span>
 			</li>
 			`)
 	} else {
@@ -586,6 +586,52 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 	</div>
 	<div class="card">
 		<ul class="card__links-group">
+			`)
+	if company.GlassdoorProfile.OverviewURL == "" {
+		qw422016.N().S(`
+			<li class="card__links-item card__links-item--title card__links-item--disabled">
+				<div class="card__links-item-group">
+					<img
+						class="card__links-icon"
+						alt="glassdoor icon"
+						width="32"
+						height="32"
+						src="/assets/images/pages/organizer/glassdoor.svg"
+					/>
+					<span class="card__links-link">Glassdoor</span>
+				</div>
+				<ul class="card__links-item-info">
+					<li class="card__link-stats-item card__link-stats-item--one-line">
+						<span>
+							<strong>???</strong> jobs
+						</span>
+						<span>
+							<strong>???</strong> reviews
+						</span>
+						<span>
+							<strong>???</strong> salaries
+						</span>
+					</li>
+				</ul>
+			</li>
+			<li class="card__links-item card__links-item--disabled">
+				<span class="button-link card__links-link">Overview</span>
+				<a href="`)
+		qw422016.E().S(googleSearchGlassdoor(company.Name))
+		qw422016.N().S(`" class="card__links-link card__links-link--google">
+					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+				</a>
+			</li>
+			<li class="card__links-item card__links-item--disabled">
+				<span class="button-link card__links-link">Reviews</span>
+				<span class="card__links-link-star">?.? ★</span>
+			</li>
+			<li class="card__links-item card__links-item--disabled">
+				<span class="button-link card__links-link">Jobs</span>
+			</li>
+			`)
+	} else {
+		qw422016.N().S(`
 			<li class="card__links-item card__links-item--title">
 				<div class="card__links-item-group">
 					<img
@@ -596,11 +642,11 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 						src="/assets/images/pages/organizer/glassdoor.svg"
 					/>
 					<a href="`)
-	qw422016.E().S(company.GlassdoorProfile.OverviewURL)
-	qw422016.N().S(`" class="card__links-link">Glassdoor</a>
+		qw422016.E().S(company.GlassdoorProfile.OverviewURL)
+		qw422016.N().S(`" class="card__links-link">Glassdoor</a>
 					`)
-	if company.GlassdoorProfile.Verified {
-		qw422016.N().S(`
+		if company.GlassdoorProfile.Verified {
+			qw422016.N().S(`
 					<span class="card__links-link card__links-link--verify">
 						<img
 							class="card__links-icon"
@@ -609,47 +655,50 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 						/>
 					</span>
 					`)
-	}
-	qw422016.N().S(`
+		}
+		qw422016.N().S(`
 				</div>
 				<ul class="card__links-item-info">
 					<li class="card__link-stats-item card__link-stats-item--one-line">
 						<span>
 							<strong>`)
-	qw422016.E().S(formatGlassdoorJobs(company.GlassdoorProfile.Jobs))
-	qw422016.N().S(`</strong> jobs
+		qw422016.E().S(formatGlassdoorJobs(company.GlassdoorProfile.Jobs))
+		qw422016.N().S(`</strong> jobs
 						</span>
 						<span>
 							<strong>`)
-	qw422016.E().S(formatGlassdoorReviews(company.GlassdoorProfile.Reviews))
-	qw422016.N().S(`</strong> reviews
+		qw422016.E().S(formatGlassdoorReviews(company.GlassdoorProfile.Reviews))
+		qw422016.N().S(`</strong> reviews
 						</span>
 						<span>
 							<strong>`)
-	qw422016.E().S(formatGlassdoorSalaries(company.GlassdoorProfile.Salaries))
-	qw422016.N().S(`</strong> salaries
+		qw422016.E().S(formatGlassdoorSalaries(company.GlassdoorProfile.Salaries))
+		qw422016.N().S(`</strong> salaries
 						</span>
 					</li>
 				</ul>
 			</li>
 			<li class="card__links-item">
 				<a href="`)
-	qw422016.E().S(company.GlassdoorProfile.OverviewURL)
-	qw422016.N().S(`" class="button-link card__links-link">Overview</a>
+		qw422016.E().S(company.GlassdoorProfile.OverviewURL)
+		qw422016.N().S(`" class="button-link card__links-link">Overview</a>
 			</li>
 			<li class="card__links-item">
 				<a href="`)
-	qw422016.E().S(company.GlassdoorProfile.ReviewsURL)
-	qw422016.N().S(`" class="button-link card__links-link">Reviews</a>
+		qw422016.E().S(company.GlassdoorProfile.ReviewsURL)
+		qw422016.N().S(`" class="button-link card__links-link">Reviews</a>
 				<span class="card__links-link-star">`)
-	qw422016.E().S(formatGlassdoorReviewsRate(company.GlassdoorProfile.ReviewsRate))
-	qw422016.N().S(` ★</span>
+		qw422016.E().S(formatGlassdoorReviewsRate(company.GlassdoorProfile.ReviewsRate))
+		qw422016.N().S(` ★</span>
 			</li>
 			<li class="card__links-item">
 				<a href="`)
-	qw422016.E().S(company.GlassdoorProfile.JobsURL)
-	qw422016.N().S(`" class="button-link card__links-link">Jobs</a>
+		qw422016.E().S(company.GlassdoorProfile.JobsURL)
+		qw422016.N().S(`" class="button-link card__links-link">Jobs</a>
 			</li>
+			`)
+	}
+	qw422016.N().S(`
 		</ul>
 	</div>
 	<div class="card">
