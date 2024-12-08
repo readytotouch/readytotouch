@@ -228,6 +228,29 @@
 	</div>
 	<div class="card">
 		<ul class="card__links-group">
+			{% if company.GitHubProfile.Login == "" %}
+			<li class="card__links-item card__links-item--title card__links-item--disabled">
+				<div class="card__links-item-group">
+					<img
+						class="card__links-icon"
+						alt="github icon"
+						width="32"
+						height="32"
+						src="/assets/images/pages/organizer/github.svg"
+					/>
+					<a href="javascript:void(0);" class="card__links-link">GitHub</a>
+				</div>
+			</li>
+			<li class="card__links-item card__links-item--disabled">
+				<a href="javascript:void(0);" class="button-link card__links-link">Overview</a>
+				<a href="{%s googleSearchGitHub(company.Name) %}" class="card__links-link card__links-link--google">
+					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+				</a>
+			</li>
+			<li class="card__links-item card__links-item--disabled">
+				<a href="javascript:void(0);" class="button-link card__links-link">Repositories (?)</a>
+			</li>
+			{% else %}
 			<li class="card__links-item card__links-item--title">
 				<div class="card__links-item-group">
 					<img
@@ -255,6 +278,7 @@
 			<li class="card__links-item">
 				<a href="https://github.com/orgs/{%s company.GitHubProfile.Login %}/repositories?q=lang:{%s organizerFeature.Organizer.GitHubAlias %}" class="button-link card__links-link">Repositories ({%d fetchGitHubRepositoriesCount(company, organizerFeature.Organizer.Language) %})</a>
 			</li>
+			{% endif %}
 		</ul>
 	</div>
 	<div class="card">
