@@ -132,17 +132,17 @@
 	<div class="card__top-links">
 		<a href="{%s company.Website %}" class="card__top-link button-link">Website</a>
 		{% if company.Careers == "" %}
-			<a href="javascript:void(0);" class="card__top-link button-link disabled">Careers</a>
+			<span class="card__top-link button-link disabled">Careers</span>
 		{% else %}
 			<a href="{%s company.Careers %}" class="card__top-link button-link">Careers</a>
 		{% endif %}
 		{% if company.About == "" %}
-			<a href="javascript:void(0);" class="card__top-link button-link disabled">About</a>
+			<span class="card__top-link button-link disabled">About</span>
 		{% else %}
 			<a href="{%s company.About %}" class="card__top-link button-link">About</a>
 		{% endif %}
 		{% if company.Blog == "" %}
-			<a href="javascript:void(0);" class="card__top-link button-link disabled">Dev Blog</a>
+			<span class="card__top-link button-link disabled">Dev Blog</span>
 		{% else %}
 			<a href="{%s company.Blog %}" class="card__top-link button-link">Dev Blog</a>
 		{% endif %}
@@ -238,17 +238,17 @@
 						height="32"
 						src="/assets/images/pages/organizer/github.svg"
 					/>
-					<a href="javascript:void(0);" class="card__links-link">GitHub</a>
+					<span class="card__links-link">GitHub</span>
 				</div>
 			</li>
 			<li class="card__links-item card__links-item--disabled">
-				<a href="javascript:void(0);" class="button-link card__links-link">Overview</a>
+				<span class="button-link card__links-link">Overview</span>
 				<a href="{%s googleSearchGitHub(company.Name) %}" class="card__links-link card__links-link--google">
 					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
 				</a>
 			</li>
 			<li class="card__links-item card__links-item--disabled">
-				<a href="javascript:void(0);" class="button-link card__links-link">Repositories (?)</a>
+				<span class="button-link card__links-link">Repositories (?)</span>
 			</li>
 			{% else %}
 			<li class="card__links-item card__links-item--title">
@@ -261,13 +261,13 @@
 						src="/assets/images/pages/organizer/github.svg"
 					/>
 					{% if company.GitHubProfile.Verified %}
-					<a href="javascript:void(0);" class="card__links-link card__links-link--verify">
+					<span class="card__links-link card__links-link--verify">
 						<img
 							class="card__links-icon"
 							alt="icon"
 							src="/assets/images/pages/organizer/verified.png"
 						/>
-					</a>
+					</span>
 					{% endif %}
 					<a href="https://github.com/{%s company.GitHubProfile.Login %}" class="card__links-link">GitHub</a>
 				</div>
@@ -347,13 +347,13 @@
 					/>
 					<a href="{%s company.GlassdoorProfile.OverviewURL %}" class="card__links-link">Glassdoor</a>
 					{% if company.GlassdoorProfile.Verified %}
-					<a href="javascript:void(0);" class="card__links-link card__links-link--verify">
+					<span class="card__links-link card__links-link--verify">
 						<img
 							class="card__links-icon"
 							alt="icon"
 							src="/assets/images/pages/organizer/verified-emp.png"
 						/>
-					</a>
+					</span>
 					{% endif %}
 				</div>
 				<ul class="card__links-item-info">
@@ -487,9 +487,12 @@
 				<img class="card__links-icon" alt="otta icon" width="20" height="20" src="/assets/images/pages/organizer/otta.svg" />
 				<a href="https://app.otta.com/companies/{%s company.OttaProfileSlug %}" class="button-link card__links-link">Otta</a>
 			</li>
-			<li class="card__links-item">
+			<li class="card__links-item card__links-item--disabled">
 				<img class="card__links-icon" alt="xing icon" width="20" height="20" src="/assets/images/pages/organizer/xing.svg" />
-				<a href="javascript:void(0);" class="button-link card__links-link">XING</a>
+				<span class="button-link card__links-link">XING</span>
+				<a href="{%s googleSearchXing(company.Name) %}" class="card__links-link card__links-link--google">
+					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+				</a>
 			</li>
 			<li class="card__links-item">
 				<img class="card__links-icon" alt="xing icon" width="20" height="20" src="/assets/images/pages/organizer/y-combinator.png" />
