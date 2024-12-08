@@ -283,6 +283,35 @@
 	</div>
 	<div class="card">
 		<ul class="card__links-group">
+			{% if company.BlindProfile.Alias == "" %}
+			<li class="card__links-item card__links-item--title card__links-item--disabled">
+				<div class="card__links-item-group">
+					<img
+						class="card__links-icon"
+						alt="linkedin icon"
+						width="32"
+						height="32"
+						src="/assets/images/pages/organizer/blind.png"
+					/>
+					<span class="card__links-link">Blind</span>
+				</div>
+				<ul class="card__links-item-info">
+					<li class="card__link-stats-item">??? employees</li>
+					<li class="card__link-stats-item">$??K ~ $???K a year</li>
+					<li class="card__link-stats-item">??? reviews</li>
+				</ul>
+			</li>
+			<li class="card__links-item card__links-item--disabled">
+				<span class="button-link card__links-link">Overview</span>
+				<a href="{%s googleSearchBlind(company.Name) %}" class="card__links-link card__links-link--google">
+					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+				</a>
+			</li>
+			<li class="card__links-item card__links-item--disabled">
+				<span class="button-link card__links-link">Reviews</span>
+				<span class="card__links-link-star">⭐ ?</span>
+			</li>
+			{% else %}
 			<li class="card__links-item card__links-item--title">
 				<div class="card__links-item-group">
 					<img
@@ -307,6 +336,7 @@
 				<a href="https://www.teamblind.com/company/{%s company.BlindProfile.Alias %}/reviews" class="button-link card__links-link">Reviews</a>
 				<span class="card__links-link-star">⭐ {%s company.BlindProfile.ReviewsRate %}</span>
 			</li>
+			{% endif %}
 		</ul>
 	</div>
 	<div class="card">

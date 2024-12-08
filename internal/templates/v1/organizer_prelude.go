@@ -135,6 +135,14 @@ func googleSearchGlassdoor(companyName string) string {
 	return "https://www.google.com/search?" + values.Encode()
 }
 
+func googleSearchBlind(companyName string) string {
+	values := url.Values{
+		"q": {"site:teamblind.com" + " " + companyName},
+	}
+
+	return "https://www.google.com/search?" + values.Encode()
+}
+
 func googleSearchXing(companyName string) string {
 	values := url.Values{
 		"q": {"site:xing.com" + " " + companyName},
