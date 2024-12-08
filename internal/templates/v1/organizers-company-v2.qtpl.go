@@ -703,6 +703,35 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 	</div>
 	<div class="card">
 		<ul class="card__links-group">
+			`)
+	if company.IndeedProfile.Alias == "" {
+		qw422016.N().S(`
+			<li class="card__links-item card__links-item--title card__links-item--disabled">
+				<div class="card__links-item-group">
+					<img
+						class="card__links-icon"
+						alt="linkedin icon"
+						width="32"
+						height="32"
+						src="/assets/images/pages/organizer/indeed.png"
+					/>
+					<span class="card__links-link">Indeed</span>
+				</div>
+			</li>
+			<li class="card__links-item card__links-item--disabled">
+				<span class="button-link card__links-link">Overview</span>
+				<a href="`)
+		qw422016.E().S(googleSearchIndeed(company.Name))
+		qw422016.N().S(`" class="card__links-link card__links-link--google">
+					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+				</a>
+			</li>
+			<li class="card__links-item  card__links-item--disabled">
+				<span class="button-link card__links-link">Jobs</span>
+			</li>
+			`)
+	} else {
+		qw422016.N().S(`
 			<li class="card__links-item card__links-item--title">
 				<div class="card__links-item-group">
 					<img
@@ -713,20 +742,23 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 						src="/assets/images/pages/organizer/indeed.png"
 					/>
 					<a href="https://www.indeed.com/cmp/`)
-	qw422016.E().S(company.IndeedProfile.Alias)
-	qw422016.N().S(`" class="card__links-link">Indeed</a>
+		qw422016.E().S(company.IndeedProfile.Alias)
+		qw422016.N().S(`" class="card__links-link">Indeed</a>
 				</div>
 			</li>
 			<li class="card__links-item">
 				<a href="https://www.indeed.com/cmp/`)
-	qw422016.E().S(company.IndeedProfile.Alias)
-	qw422016.N().S(`" class="button-link card__links-link">Overview</a>
+		qw422016.E().S(company.IndeedProfile.Alias)
+		qw422016.N().S(`" class="button-link card__links-link">Overview</a>
 			</li>
 			<li class="card__links-item">
 				<a href="https://www.indeed.com/cmp/`)
-	qw422016.E().S(company.IndeedProfile.Alias)
-	qw422016.N().S(`/jobs" class="button-link card__links-link">Jobs</a>
+		qw422016.E().S(company.IndeedProfile.Alias)
+		qw422016.N().S(`/jobs" class="button-link card__links-link">Jobs</a>
 			</li>
+			`)
+	}
+	qw422016.N().S(`
 		</ul>
 	</div>
 	<div class="card">
