@@ -159,6 +159,30 @@ func googleSearchIndeed(companyName string) string {
 	return "https://www.google.com/search?" + values.Encode()
 }
 
+func googleSearchDealroom(companyName string) string {
+	values := url.Values{
+		"q": {"site:dealroom.co" + " " + companyName},
+	}
+
+	return "https://www.google.com/search?" + values.Encode()
+}
+
+func googleSearchCrunchbase(companyName string) string {
+	values := url.Values{
+		"q": {"site:crunchbase.com" + " " + companyName},
+	}
+
+	return "https://www.google.com/search?" + values.Encode()
+}
+
+func googleSearchPitchbook(companyName string) string {
+	values := url.Values{
+		"q": {"site:pitchbook.com" + " " + companyName},
+	}
+
+	return "https://www.google.com/search?" + values.Encode()
+}
+
 func googleSearchXing(companyName string) string {
 	values := url.Values{
 		"q": {"site:xing.com" + " " + companyName},

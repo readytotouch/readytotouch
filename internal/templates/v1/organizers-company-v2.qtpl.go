@@ -775,24 +775,78 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 					<span class="card__links-link">Investors</span>
 				</div>
 			</li>
+			`)
+	if company.DealroomURL == "" {
+		qw422016.N().S(`
+			<li class="card__links-item card__links-item--disabled">
+				<img class="card__links-icon" alt="Dealroom icon" width="20" height="20" src="/assets/images/pages/organizer/dealroom.png" />
+				<span class="button-link card__links-link">Dealroom</span>
+				<a href="`)
+		qw422016.E().S(googleSearchDealroom(company.Name))
+		qw422016.N().S(`" class="card__links-link card__links-link--google">
+					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+				</a>
+			</li>
+			`)
+	} else {
+		qw422016.N().S(`
 			<li class="card__links-item">
 				<img class="card__links-icon" alt="Dealroom icon" width="20" height="20" src="/assets/images/pages/organizer/dealroom.png" />
 				<a href="`)
-	qw422016.E().S(company.DealroomURL)
-	qw422016.N().S(`" class="button-link card__links-link">Dealroom</a>
+		qw422016.E().S(company.DealroomURL)
+		qw422016.N().S(`" class="button-link card__links-link">Dealroom</a>
 			</li>
+			`)
+	}
+	qw422016.N().S(`
+			`)
+	if company.CrunchbaseURL == "" {
+		qw422016.N().S(`
+			<li class="card__links-item card__links-item--disabled">
+				<img class="card__links-icon" alt="Crunchbase icon" width="20" height="20" src="/assets/images/pages/organizer/crunchbase.svg" />
+				<span class="button-link card__links-link">Crunchbase</span>
+				<a href="`)
+		qw422016.E().S(googleSearchCrunchbase(company.Name))
+		qw422016.N().S(`" class="card__links-link card__links-link--google">
+					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+				</a>
+			</li>
+			`)
+	} else {
+		qw422016.N().S(`
 			<li class="card__links-item">
 				<img class="card__links-icon" alt="Crunchbase icon" width="20" height="20" src="/assets/images/pages/organizer/crunchbase.svg" />
 				<a href="`)
-	qw422016.E().S(company.CrunchbaseURL)
-	qw422016.N().S(`" class="button-link card__links-link">Crunchbase</a>
+		qw422016.E().S(company.CrunchbaseURL)
+		qw422016.N().S(`" class="button-link card__links-link">Crunchbase</a>
 			</li>
+			`)
+	}
+	qw422016.N().S(`
+			`)
+	if company.PitchbookURL == "" {
+		qw422016.N().S(`
+			<li class="card__links-item card__links-item--disabled">
+				<img class="card__links-icon" alt="Pitchbook icon" width="20" height="20" src="/assets/images/pages/organizer/pitchbook.png" />
+				<span class="button-link card__links-link">Pitchbook</span>
+				<a href="`)
+		qw422016.E().S(googleSearchPitchbook(company.Name))
+		qw422016.N().S(`" class="card__links-link card__links-link--google">
+					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+				</a>
+			</li>
+			`)
+	} else {
+		qw422016.N().S(`
 			<li class="card__links-item">
 				<img class="card__links-icon" alt="Pitchbook icon" width="20" height="20" src="/assets/images/pages/organizer/pitchbook.png" />
 				<a href="`)
-	qw422016.E().S(company.PitchbookURL)
-	qw422016.N().S(`" class="button-link card__links-link">Pitchbook</a>
+		qw422016.E().S(company.PitchbookURL)
+		qw422016.N().S(`" class="button-link card__links-link">Pitchbook</a>
 			</li>
+			`)
+	}
+	qw422016.N().S(`
 		</ul>
 	</div>
 	<div class="card">
