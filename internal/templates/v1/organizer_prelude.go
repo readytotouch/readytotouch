@@ -183,6 +183,22 @@ func googleSearchPitchbook(companyName string) string {
 	return "https://www.google.com/search?" + values.Encode()
 }
 
+func googleSearchYahooFinance(companyName string) string {
+	values := url.Values{
+		"q": {"site:finance.yahoo.com/quote/" + " " + companyName},
+	}
+
+	return "https://www.google.com/search?" + values.Encode()
+}
+
+func googleSearchGoogleFinance(companyName string) string {
+	values := url.Values{
+		"q": {"site:google.com/finance/quote/" + " " + companyName},
+	}
+
+	return "https://www.google.com/search?" + values.Encode()
+}
+
 func googleSearchXing(companyName string) string {
 	values := url.Values{
 		"q": {"site:xing.com" + " " + companyName},

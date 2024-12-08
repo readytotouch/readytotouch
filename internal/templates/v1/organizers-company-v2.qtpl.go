@@ -863,18 +863,54 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 					<span class="card__links-link">Market</span>
 				</div>
 			</li>
-			<li class="card__links-item">
-				<img class="card__links-icon" alt="Pitchbook icon" width="20" height="20" src="/assets/images/pages/organizer/yahoo.png" />
+			`)
+	if company.YahooFinanceURL == "" {
+		qw422016.N().S(`
+			<li class="card__links-item card__links-item--disabled">
+				<img class="card__links-icon" alt="Yahoo Finance icon" width="20" height="20" src="/assets/images/pages/organizer/yahoo.png" />
+				<span class="button-link card__links-link">Yahoo Finance</span>
 				<a href="`)
-	qw422016.E().S(company.YahooFinanceURL)
-	qw422016.N().S(`" class="button-link card__links-link">Yahoo Finance</a>
+		qw422016.E().S(googleSearchYahooFinance(company.Name))
+		qw422016.N().S(`" class="card__links-link card__links-link--google">
+					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+				</a>
 			</li>
+			`)
+	} else {
+		qw422016.N().S(`
 			<li class="card__links-item">
-				<img class="card__links-icon" alt="Pitchbook icon" width="20" height="20" src="/assets/images/pages/organizer/google-fin.png" />
+				<img class="card__links-icon" alt="Yahoo Finance icon" width="20" height="20" src="/assets/images/pages/organizer/yahoo.png" />
 				<a href="`)
-	qw422016.E().S(company.GoogleFinanceURL)
-	qw422016.N().S(`" class="button-link card__links-link">Google Finance</a>
+		qw422016.E().S(company.YahooFinanceURL)
+		qw422016.N().S(`" class="button-link card__links-link">Yahoo Finance</a>
 			</li>
+			`)
+	}
+	qw422016.N().S(`
+			`)
+	if company.GoogleFinanceURL == "" {
+		qw422016.N().S(`
+			<li class="card__links-item card__links-item--disabled">
+				<img class="card__links-icon" alt="Google Finance icon" width="20" height="20" src="/assets/images/pages/organizer/google-fin.png" />
+				<span class="button-link card__links-link">Google Finance</span>
+				<a href="`)
+		qw422016.E().S(googleSearchGoogleFinance(company.Name))
+		qw422016.N().S(`" class="card__links-link card__links-link--google">
+					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+				</a>
+			</li>
+			`)
+	} else {
+		qw422016.N().S(`
+			<li class="card__links-item">
+				<img class="card__links-icon" alt="Google Finance icon" width="20" height="20" src="/assets/images/pages/organizer/google-fin.png" />
+				<a href="`)
+		qw422016.E().S(company.GoogleFinanceURL)
+		qw422016.N().S(`" class="button-link card__links-link">Google Finance</a>
+			</li>
+			`)
+	}
+	qw422016.N().S(`
 		</ul>
 	</div>
 	<div class="card">

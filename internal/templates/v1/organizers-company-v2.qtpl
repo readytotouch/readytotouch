@@ -598,14 +598,34 @@
 					<span class="card__links-link">Market</span>
 				</div>
 			</li>
+			{% if company.YahooFinanceURL == "" %}
+			<li class="card__links-item card__links-item--disabled">
+				<img class="card__links-icon" alt="Yahoo Finance icon" width="20" height="20" src="/assets/images/pages/organizer/yahoo.png" />
+				<span class="button-link card__links-link">Yahoo Finance</span>
+				<a href="{%s googleSearchYahooFinance(company.Name) %}" class="card__links-link card__links-link--google">
+					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+				</a>
+			</li>
+			{% else %}
 			<li class="card__links-item">
-				<img class="card__links-icon" alt="Pitchbook icon" width="20" height="20" src="/assets/images/pages/organizer/yahoo.png" />
+				<img class="card__links-icon" alt="Yahoo Finance icon" width="20" height="20" src="/assets/images/pages/organizer/yahoo.png" />
 				<a href="{%s company.YahooFinanceURL %}" class="button-link card__links-link">Yahoo Finance</a>
 			</li>
+			{% endif %}
+			{% if company.GoogleFinanceURL == "" %}
+			<li class="card__links-item card__links-item--disabled">
+				<img class="card__links-icon" alt="Google Finance icon" width="20" height="20" src="/assets/images/pages/organizer/google-fin.png" />
+				<span class="button-link card__links-link">Google Finance</span>
+				<a href="{%s googleSearchGoogleFinance(company.Name) %}" class="card__links-link card__links-link--google">
+					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+				</a>
+			</li>
+			{% else %}
 			<li class="card__links-item">
-				<img class="card__links-icon" alt="Pitchbook icon" width="20" height="20" src="/assets/images/pages/organizer/google-fin.png" />
+				<img class="card__links-icon" alt="Google Finance icon" width="20" height="20" src="/assets/images/pages/organizer/google-fin.png" />
 				<a href="{%s company.GoogleFinanceURL %}" class="button-link card__links-link">Google Finance</a>
 			</li>
+			{% endif %}
 		</ul>
 	</div>
 	<div class="card">
