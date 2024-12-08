@@ -214,3 +214,11 @@ func googleSearchOtta(companyName string) string {
 
 	return "https://www.google.com/search?" + values.Encode()
 }
+
+func googleSearchYCombinator(companyName string) string {
+	values := url.Values{
+		"q": {"site:ycombinator.com/companies/" + " " + companyName},
+	}
+
+	return "https://www.google.com/search?" + values.Encode()
+}

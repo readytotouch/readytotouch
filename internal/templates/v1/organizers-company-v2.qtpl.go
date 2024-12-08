@@ -944,12 +944,30 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 	qw422016.E().S(similarwebURL(company.Website))
 	qw422016.N().S(`" class="button-link card__links-link">SimilarWeb</a>
 			</li>
+			`)
+	if company.OttaProfileSlug == "" {
+		qw422016.N().S(`
+			<li class="card__links-item card__links-item--disabled">
+				<img class="card__links-icon" alt="otta icon" width="20" height="20" src="/assets/images/pages/organizer/otta.svg" />
+				<span class="button-link card__links-link">Otta</span>
+				<a href="`)
+		qw422016.E().S(googleSearchOtta(company.Name))
+		qw422016.N().S(`" class="card__links-link card__links-link--google">
+					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+				</a>
+			</li>
+			`)
+	} else {
+		qw422016.N().S(`
 			<li class="card__links-item">
 				<img class="card__links-icon" alt="otta icon" width="20" height="20" src="/assets/images/pages/organizer/otta.svg" />
 				<a href="https://app.otta.com/companies/`)
-	qw422016.E().S(company.OttaProfileSlug)
-	qw422016.N().S(`" class="button-link card__links-link">Otta</a>
+		qw422016.E().S(company.OttaProfileSlug)
+		qw422016.N().S(`" class="button-link card__links-link">Otta</a>
 			</li>
+			`)
+	}
+	qw422016.N().S(`
 			<li class="card__links-item card__links-item--disabled">
 				<img class="card__links-icon" alt="xing icon" width="20" height="20" src="/assets/images/pages/organizer/xing.svg" />
 				<span class="button-link card__links-link">XING</span>
@@ -959,12 +977,30 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
 				</a>
 			</li>
-			<li class="card__links-item">
-				<img class="card__links-icon" alt="xing icon" width="20" height="20" src="/assets/images/pages/organizer/y-combinator.png" />
+			`)
+	if company.YCombinatorURL == "" {
+		qw422016.N().S(`
+			<li class="card__links-item card__links-item--disabled">
+				<img class="card__links-icon" alt="Y Combinator icon" width="20" height="20" src="/assets/images/pages/organizer/y-combinator.png" />
+				<span class="button-link card__links-link">Y Combinator</span>
 				<a href="`)
-	qw422016.E().S(company.YCombinatorURL)
-	qw422016.N().S(`" class="button-link card__links-link">Y Combinator</a>
+		qw422016.E().S(googleSearchYCombinator(company.Name))
+		qw422016.N().S(`" class="card__links-link card__links-link--google">
+					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+				</a>
 			</li>
+			`)
+	} else {
+		qw422016.N().S(`
+			<li class="card__links-item">
+				<img class="card__links-icon" alt="Y Combinator icon" width="20" height="20" src="/assets/images/pages/organizer/y-combinator.png" />
+				<a href="`)
+		qw422016.E().S(company.YCombinatorURL)
+		qw422016.N().S(`" class="button-link card__links-link">Y Combinator</a>
+			</li>
+			`)
+	}
+	qw422016.N().S(`
 		</ul>
 	</div>
 </div></div>

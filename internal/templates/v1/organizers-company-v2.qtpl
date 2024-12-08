@@ -655,10 +655,20 @@
 				/>
 				<a href="{%s similarwebURL(company.Website) %}" class="button-link card__links-link">SimilarWeb</a>
 			</li>
+			{% if company.OttaProfileSlug == "" %}
+			<li class="card__links-item card__links-item--disabled">
+				<img class="card__links-icon" alt="otta icon" width="20" height="20" src="/assets/images/pages/organizer/otta.svg" />
+				<span class="button-link card__links-link">Otta</span>
+				<a href="{%s googleSearchOtta(company.Name) %}" class="card__links-link card__links-link--google">
+					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+				</a>
+			</li>
+			{% else %}
 			<li class="card__links-item">
 				<img class="card__links-icon" alt="otta icon" width="20" height="20" src="/assets/images/pages/organizer/otta.svg" />
 				<a href="https://app.otta.com/companies/{%s company.OttaProfileSlug %}" class="button-link card__links-link">Otta</a>
 			</li>
+			{% endif %}
 			<li class="card__links-item card__links-item--disabled">
 				<img class="card__links-icon" alt="xing icon" width="20" height="20" src="/assets/images/pages/organizer/xing.svg" />
 				<span class="button-link card__links-link">XING</span>
@@ -666,10 +676,20 @@
 					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
 				</a>
 			</li>
+			{% if company.YCombinatorURL == "" %}
+			<li class="card__links-item card__links-item--disabled">
+				<img class="card__links-icon" alt="Y Combinator icon" width="20" height="20" src="/assets/images/pages/organizer/y-combinator.png" />
+				<span class="button-link card__links-link">Y Combinator</span>
+				<a href="{%s googleSearchYCombinator(company.Name) %}" class="card__links-link card__links-link--google">
+					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+				</a>
+			</li>
+			{% else %}
 			<li class="card__links-item">
-				<img class="card__links-icon" alt="xing icon" width="20" height="20" src="/assets/images/pages/organizer/y-combinator.png" />
+				<img class="card__links-icon" alt="Y Combinator icon" width="20" height="20" src="/assets/images/pages/organizer/y-combinator.png" />
 				<a href="{%s company.YCombinatorURL %}" class="button-link card__links-link">Y Combinator</a>
 			</li>
+			{% endif %}
 		</ul>
 	</div>
 </div></div>
