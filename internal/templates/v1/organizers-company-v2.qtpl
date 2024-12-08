@@ -734,7 +734,7 @@
 						<div class="card__image-overlay">
 							<img class="card__image"
 								alt="card image preview icon"
-								src="/assets/images/pages/vacancy/company-logo.svg"
+								src="/assets/images/pages/common-images/unknown.svg"
 							/>
 						</div>
 						<figcaption class="card__header-caption">
