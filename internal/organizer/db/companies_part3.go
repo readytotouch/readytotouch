@@ -2712,6 +2712,216 @@ func companiesPart3() []domain.CompanyProfile {
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Palta",
+			Website: "https://palta.com/",
+			Careers: "https://palta.com/careers",
+			About:   "https://palta.com/about",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       17940854,
+				Alias:    "paltafamily",
+				Name:     "Palta",
+				Verified: true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "Palta-Data-Platform",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias:       "",
+				Employees:   "",
+				Salary:      "",
+				Reviews:     "",
+				ReviewsRate: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "",
+				Employees: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Palta-EI_IE6042331.11,16.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Palta-Reviews-E6042331.htm",
+				Verified:    false,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			OttaProfileSlug:   "Palta-1",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 2,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior GO Developer",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4075722584/",
+							Date:             mustDate("2024-12-06"),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription:          "",
+			DealroomURL:               "",
+			CrunchbaseURL:             "",
+			PitchbookURL:              "",
+			YahooFinanceURL:           "",
+			GoogleFinanceURL:          "",
+			YCombinatorURL:            "",
+			Industries:                []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{},
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Huntress",
+			Website: "https://huntress.com/",
+			Careers: "https://www.huntress.com/company/careers",
+			About:   "https://www.huntress.com/company/our-company",
+			Blog:    "https://www.huntress.com/blog",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       10172550,
+				Alias:    "huntress-labs",
+				Name:     "Huntress",
+				Verified: true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "huntresslabs",
+				Verified: true,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias:       "",
+				Employees:   "",
+				Salary:      "",
+				Reviews:     "",
+				ReviewsRate: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "",
+				Employees: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Huntress-EI_IE4474883.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Huntress-Reviews-E4474883.htm",
+				Verified:    true,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			OttaProfileSlug:   "Huntress",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 5,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Software Engineer, Windows SIEM Agent (GO)",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4055142455/",
+							Date:             mustDate("2024-12-06"),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription:          "",
+			DealroomURL:               "",
+			CrunchbaseURL:             "",
+			PitchbookURL:              "",
+			YahooFinanceURL:           "",
+			GoogleFinanceURL:          "",
+			YCombinatorURL:            "",
+			Industries:                []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{},
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "bol",
+			Website: "https://bol.com",
+			Careers: "https://careers.bol.com/en/earlycareers/",
+			About:   "https://techlab.bol.com/en/about-techlab/",
+			Blog:    "https://techlab.bol.com/en/blog/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       11699,
+				Alias:    "bol-com",
+				Name:     "bol",
+				Verified: true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "bolcom",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias:       "",
+				Employees:   "",
+				Salary:      "",
+				Reviews:     "",
+				ReviewsRate: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "",
+				Employees: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-bol-EI_IE838762.11,14.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/bol-Reviews-E838762.htm",
+				Verified:    true,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 22,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Software Engineer GO",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4090264579/",
+							Date:             mustDate("2024-12-04"),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription:          "",
+			DealroomURL:               "",
+			CrunchbaseURL:             "",
+			PitchbookURL:              "",
+			YahooFinanceURL:           "",
+			GoogleFinanceURL:          "",
+			YCombinatorURL:            "",
+			Industries:                []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{},
+		},
+
 		// Template
 		//{
 		//	ID:      0,  // system
