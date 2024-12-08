@@ -556,7 +556,7 @@ func (c *Controller) VacancyRedirect(ctx *gin.Context) {
 	)
 
 	if authUserID == 0 {
-		ctx.Redirect(http.StatusFound, "/organizers/golang/welcome"+c.redirect(ctx.FullPath()))
+		ctx.Redirect(http.StatusFound, "/organizers/golang/welcome"+c.redirect(ctx.Request.URL.Path))
 
 		return
 	}
