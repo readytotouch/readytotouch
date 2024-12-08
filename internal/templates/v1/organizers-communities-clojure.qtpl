@@ -1,0 +1,178 @@
+{%- func OrganizersCommunitiesClojure(organizer Organizer, headerProfiles []SocialProviderUser) -%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>{%s organizer.Title %} Communities | ReadyToTouch</title>
+	<meta name="title" content="{%s organizer.Title %} Communities | ReadyToTouch">
+	<meta name="description" content="">
+    <meta name="keywords" content="">
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="author" type="text/plain" href="https://readytotouch.com/humans.txt"/>
+	<meta property="og:image" content="/assets/images/og/organizers-light.jpg">
+
+    {%= favicon() %}
+    {%= organizersFonts() %}
+    {%= organizersCommunitiesStyles() %}
+    {%= ga() %}
+</head>
+
+<body class="organizer-companies-inner">
+<main class="main-wrapper">
+	<header class="header">
+  <div class="header__wrapper">
+    <a href="/organizers" class="header__logo">
+      <img
+        width="129"
+        height="32"
+        class="header__logo-img"
+        src="/assets/images/pages/organizer/{%s organizer.Logo %}"
+        alt="organizer logo"
+      />
+    </a>
+    <ul class="header__nav">
+      <li class="header__nav-item">
+        <a href="/organizers/{%s organizer.Alias %}/companies" class="header__nav-link">Companies</a>
+      </li>
+      <li class="header__nav-item">
+        <a href="/organizers/{%s organizer.Alias %}/vacancies" class="header__nav-link">Vacancies</a>
+      </li>
+      <li class="header__nav-item">
+        <a href="/organizers/{%s organizer.Alias %}/communities" class="header__nav-link active">Communities</a>
+      </li>
+    </ul>
+
+    {%= organizersHeaderStars() %}
+    {% if len(headerProfiles) > 0 %}
+    {%= organizersHeaderProfile(headerProfiles) %}
+    {% else %}
+    <a href="/organizers/{%s organizer.Alias %}/welcome" class="button button--small-padding button--black header__login-button">Log in</a>
+    {% endif %}
+  </div>
+</header>
+
+<div class="container">
+  <nav aria-label="breadcrumb" aria-labelledby="navigation through the bread crumbs" class="breadcrumb">
+    <ul class="breadcrumb__list">
+      <li class="breadcrumb__item">
+        <a class="breadcrumb__link" href="/">Main</a>
+      </li>
+      <li class="breadcrumb__item">
+        <a class="breadcrumb__link" href="/organizers">Organizers</a>
+      </li>
+      <li class="breadcrumb__item">
+        <a class="breadcrumb__link" href="javascript:void(0);">{%s organizer.Title %}</a>
+      </li>
+      <li class="breadcrumb__item">
+        <span class="breadcrumb__page" aria-current="page">Communities</span>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<section class="organizer-communities">
+	<div class="container organizer-communities__container-block">
+		<div class="hero">
+			<div class="hero__fill hero__fill--clojure"></div>
+			<div class="organizer-communities__headline headline">Clojure Developers Communities</div>
+		</div>
+	</div>
+</section>
+<section class="organizer-communities">
+	<div class="container organizer-communities__container">
+		<p class="organizer-communities__count"><strong>2</strong> Communities</p>
+		<div class="organizer-communities__list">
+			<div class="card">
+				<figure class="card__header">
+					<div class="card__image-overlay card__image-overlay--small">
+						<img
+							width="112"
+							height="56"
+							class="card__image card__image--preview"
+							alt="card image preview icon"
+                            src="/assets/images/pages/organizer/clojure-communities-1.png"
+						/>
+					</div>
+					<figcaption class="card__header-caption">
+						<a href="https://www.reddit.com/r/Clojure/" class="card__headline vacancy__link">r/Clojure</a>
+					</figcaption>
+					<a href="https://www.reddit.com/r/Clojure/" class="button button--small-padding button--black button--gap-images">
+						Visit
+						<img width="18" height="18" alt="arrow top icon" src="/assets/images/pages/common/external-link-white.svg">
+					</a>
+				</figure>
+				<p class="card__sub-headline">
+					Clojure is a dynamic, general-purpose programming language, combining the approachability and interactive development of a scripting language with an efficient and robust infrastructure for multithreaded programming.
+				</p>
+			</div>
+
+			<div class="card">
+				<figure class="card__header">
+					<div class="card__image-overlay card__image-overlay--small">
+						<img
+							width="112"
+							height="56"
+							class="card__image card__image--preview"
+							alt="card image preview icon"
+							src="/assets/images/pages/organizer/clojure-communities-1.png"
+						/>
+					</div>
+					<figcaption class="card__header-caption">
+						<a href="http://clojurians.net/" class="card__headline vacancy__link">Clojurians</a>
+					</figcaption>
+					<a href="http://clojurians.net/" class="button button--small-padding button--black button--gap-images">
+						Visit
+						<img width="18" height="18" alt="arrow top icon" src="/assets/images/pages/common/external-link-white.svg">
+					</a>
+				</figure>
+				<p class="card__sub-headline">
+                    The Clojure(script) slack community
+				</p>
+			</div>
+
+		</div>
+	</div>
+</section>
+<section class="organizer-communities">
+	<div class="container organizer-communities__container">
+		<div class="contact__empty">
+			<img class="contact__empty-logo" width="64" height="64" src="/assets/images/pages/organizer/share.png" alt="share">
+			<h2 class="contact__empty-title">Know a great community that should be added to this list?</h2>
+			<a class="button button--small-padding button--black" href="https://www.linkedin.com/in/yaroslav-podorvanov/">Contact me!</a>
+		</div>
+	</div>
+</section>
+{% comment %}
+<section class="organizer-communities">
+	<div class="container organizer-communities__container">
+		<h2 class="organizer-communities__headline">Statistics</h2>
+		<div class="stats">
+			<div class="stats__item">
+				<div class="stats__header">
+					<h3 class="stats__title">Page views</h3>
+				</div>
+				<div class="stats__counters">
+					<div class="stats__counters-item">
+						<p class="stats__counters-views">Total views</p>
+						<p class="stats__counters-item-number">846</p>
+					</div>
+					<div class="stats__counters-item">
+						<p class="stats__counters-views">Last month's views</p>
+						<p class="stats__counters-item-number">146</p>
+					</div>
+				</div>
+				<div class="stats__chart stats__chart--page-views-statistics js-communities-statistics" data-type="clojure"></div>
+			</div>
+		</div>
+	</div>
+</section>
+{% endcomment %}
+
+</main>
+{%= organizersFooter() %}
+<script src="/assets/js/organizers-communities-app.js?{%d appVersion %}"></script>
+</body>
+</html>
+{%- endfunc -%}

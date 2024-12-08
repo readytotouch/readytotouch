@@ -57,7 +57,9 @@ func main() {
 		userFeatureWaitlistRepository   = postgres.NewUserFeatureWaitlistRepository(database)
 		featureViewStatsRepository      = postgres.NewFeatureViewStatsRepository(database)
 		userFavoriteCompanyRepository   = postgres.NewUserFavoriteCompanyRepository(database)
+		userFavoriteVacancyRepository   = postgres.NewUserFavoriteVacancyRepository(database)
 		companyViewDailyStatsRepository = postgres.NewCompanyViewDailyStatsRepository(database)
+		vacancyViewStatsRepository      = postgres.NewVacancyViewStatsRepository(database)
 		userToLinkedInCompanyRepository = postgres.NewUserToLinkedInCompanyRepository(database)
 	)
 
@@ -111,7 +113,9 @@ func main() {
 			userFeatureWaitlistRepository,
 			featureViewStatsRepository,
 			userFavoriteCompanyRepository,
+			userFavoriteVacancyRepository,
 			companyViewDailyStatsRepository,
+			vacancyViewStatsRepository,
 		)
 		cacController = pkgCAC.NewController(
 			userToLinkedInCompanyRepository,
@@ -170,23 +174,42 @@ func main() {
 
 	r.GET("/organizers/golang/companies/ukraine", organizerController.GolangCompaniesUkraine)
 	r.GET("/organizers/golang/companies", organizerController.Companies)
-	r.GET("/organizers/golang/companies/:company_alias", organizerController.Company)
+	r.GET("/organizers/golang/companies/:company_alias", organizerController.CompanyV2)
+	r.GET("/organizers/golang/companies/:company_alias/v1", organizerController.CompanyV1)
+	r.GET("/organizers/golang/companies/:company_alias/v2", organizerController.CompanyV2)
 	r.GET("/organizers/golang/vacancies", organizerController.Waitlist)
+	r.GET("/organizers/golang/communities", organizerController.GolangCommunities)
 	r.GET("/organizers/rust/companies", organizerController.Companies)
-	r.GET("/organizers/rust/companies/:company_alias", organizerController.Company)
+	r.GET("/organizers/rust/companies/:company_alias", organizerController.CompanyV2)
+	r.GET("/organizers/rust/companies/:company_alias/v1", organizerController.CompanyV1)
+	r.GET("/organizers/rust/companies/:company_alias/v2", organizerController.CompanyV2)
 	r.GET("/organizers/rust/vacancies", organizerController.Waitlist)
+	r.GET("/organizers/rust/communities", organizerController.RustCommunities)
 	r.GET("/organizers/zig/companies", organizerController.Waitlist)
-	r.GET("/organizers/zig/companies/:company_alias", organizerController.Company)
+	r.GET("/organizers/zig/companies/:company_alias", organizerController.CompanyV2)
+	r.GET("/organizers/zig/companies/:company_alias/v1", organizerController.CompanyV1)
+	r.GET("/organizers/zig/companies/:company_alias/v2", organizerController.CompanyV2)
 	r.GET("/organizers/zig/vacancies", organizerController.Waitlist)
+	r.GET("/organizers/zig/communities", organizerController.ZigCommunities)
 	r.GET("/organizers/scala/companies", organizerController.Companies)
-	r.GET("/organizers/scala/companies/:company_alias", organizerController.Company)
+	r.GET("/organizers/scala/companies/:company_alias", organizerController.CompanyV2)
+	r.GET("/organizers/scala/companies/:company_alias/v1", organizerController.CompanyV1)
+	r.GET("/organizers/scala/companies/:company_alias/v2", organizerController.CompanyV2)
 	r.GET("/organizers/scala/vacancies", organizerController.Waitlist)
+	r.GET("/organizers/scala/communities", organizerController.ScalaCommunities)
 	r.GET("/organizers/elixir/companies", organizerController.Companies)
-	r.GET("/organizers/elixir/companies/:company_alias", organizerController.Company)
+	r.GET("/organizers/elixir/companies/:company_alias", organizerController.CompanyV2)
+	r.GET("/organizers/elixir/companies/:company_alias/v1", organizerController.CompanyV1)
+	r.GET("/organizers/elixir/companies/:company_alias/v2", organizerController.CompanyV2)
 	r.GET("/organizers/elixir/vacancies", organizerController.Waitlist)
+	r.GET("/organizers/elixir/communities", organizerController.ElixirCommunities)
 	r.GET("/organizers/clojure/companies", organizerController.Waitlist)
-	r.GET("/organizers/clojure/companies/:company_alias", organizerController.Company)
+	r.GET("/organizers/clojure/companies/:company_alias", organizerController.CompanyV2)
+	r.GET("/organizers/clojure/companies/:company_alias/v1", organizerController.CompanyV1)
+	r.GET("/organizers/clojure/companies/:company_alias/v2", organizerController.CompanyV2)
 	r.GET("/organizers/clojure/vacancies", organizerController.Waitlist)
+	r.GET("/organizers/clojure/communities", organizerController.ClojureCommunities)
+	r.GET("/organizers/v/:vacancy_id", organizerController.VacancyRedirect)
 
 	r.GET("/organizers/golang", found("/organizers/golang/companies"))
 	r.GET("/organizers/rust", found("/organizers/rust/companies"))
@@ -199,6 +222,7 @@ func main() {
 	r.POST("/api/v1/features/auto/waitlist/subscribe.json", organizerController.WaitlistSubscribe)
 	r.PATCH("/api/v1/companies/:company_id/favorite.json", organizerController.FavoriteCompany)
 	r.GET("/api/v1/companies/:company_id/views/stats/daily.json", organizerController.CompanyViewStats)
+	r.PATCH("/api/v1/vacancies/:vacancy_id/favorite.json", organizerController.FavoriteVacancy)
 
 	r.
 		GET("/auth/github", authController.GithubRedirect).
@@ -232,17 +256,26 @@ func main() {
 		// Design from OrganizerFeature
 		StaticFile("/design/organizers", "./public/design/organizer-main-page-auth.html").
 		StaticFile("/design/organizers-auth", "./public/design/organizer-main-page.html").
-		StaticFile("/design/organizers/golang/welcome", "./public/design/organizer-welcome.html").
-		StaticFile("/design/organizers/golang/companies/ukraine", "./public/design/golang-companies-organizer.html").
-		StaticFile("/design/organizers/golang/companies", "./public/design/organizer-companies.html").
-		StaticFile("/design/organizers/golang/vacancies", "./public/design/organizer-vacancies-subscribe.html").
-		StaticFile("/design/organizers/golang/vacancies/subscribe", "./public/design/organizer-vacancies-subscribe.html").
-		StaticFile("/design/organizers/golang/vacancies/unsubscribe", "./public/design/organizer-vacancies-unsubscribe.html").
-		GET("/design/organizers/golang/:company_alias", s("./public/design/organizer-statistics.html")).
+		GET("/design/organizers/:language/welcome", s("./public/design/organizer-welcome.html")).
+		GET("/design/organizers/:language/companies/ukraine", s("./public/design/golang-companies-organizer.html")).
+		GET("/design/organizers/:language/companies/:company_alias", s("./public/design/organizer-statistics.html")).
+		GET("/design/organizers/:language/companies/:company_alias/v1", s("./public/design-v1/organizer-statistics.html")).
+		GET("/design/organizers/:language/companies/:company_alias/v2", s("./public/design/organizer-statistics.html")).
+		GET("/design/organizers/:language/companies", s("./public/design/organizer-companies.html")).
+		GET("/design/organizers/:language/vacancies", s("./public/design/organizer-vacancies-subscribe.html")).
+		GET("/design/organizers/:language/vacancies/subscribe", s("./public/design/organizer-vacancies-subscribe.html")).
+		GET("/design/organizers/:language/vacancies/unsubscribe", s("./public/design/organizer-vacancies-unsubscribe.html")).
+		GET("/design/organizers/golang/communities", s("./public/design/organizer-go-communities.html")).
+		GET("/design/organizers/rust/communities", s("./public/design/organizer-rust-communities.html")).
+		GET("/design/organizers/scala/communities", s("./public/design/organizer-scala-communities.html")).
+		GET("/design/organizers/elixir/communities", s("./public/design/organizer-elixir-communities.html")).
+		GET("/design/organizers/clojure/communities", s("./public/design/organizer-clojure-communities.html")).
+		GET("/design/organizers/:language/communities", s("./public/design/organizer-go-communities.html")).
 
 		// Design from ChatGPT
 		StaticFile("/design/wip/companies-and-connections", "./public/chatgpt-design/companies-and-connections.html").
-		StaticFile("/design/wip/companies-and-connections/ukraine", "./public/chatgpt-design/companies-and-connections.html")
+		StaticFile("/design/wip/companies-and-connections/ukraine", "./public/chatgpt-design/companies-and-connections.html").
+		StaticFile("/design/wip/companies-and-connections/brazil", "./public/chatgpt-design/companies-and-connections.html")
 
 	r.
 		// Assets

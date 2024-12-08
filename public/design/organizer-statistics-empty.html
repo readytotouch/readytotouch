@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Yet another anonymous work search</title>
+	<meta name="description" content="Yet another anonymous work search">
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<link rel='preload'
+				href='/assets/fonts/montserrat/montserrat-latin-700.woff2'
+				as='font'
+				type='font/woff2'
+				crossorigin
+	>
+	<link rel='preload'
+				href='/assets/fonts/inter/inter-latin-regular.woff2'
+				as='font'
+				type='font/woff2'
+				crossorigin
+	>
+	<link rel='preload'
+				href='/assets/fonts/inter/inter-latin-500.woff2'
+				as='font'
+				type='font/woff2'
+				crossorigin
+	>
+
+	<style>.txt-ellipsis-2{display:block;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}.txt-ellipsis-3{display:block;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}@font-face{font-family:Inter;font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/inter/inter-latin-regular.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Inter;font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/inter/inter-latin-ext-regular.woff2) format("woff2");unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Inter;font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/inter/inter-latin-500.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Inter;font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/inter/inter-latin-ext-500.woff2) format("woff2");unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Montserrat;font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/montserrat/montserrat-latin-700.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Montserrat;font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/montserrat/montserrat-latin-ext-700.woff2) format("woff2");unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}.d-none{display:none!important}.mt-16{margin-top:16px!important}.pt-16{padding-top:16px!important}.mb-16{margin-bottom:16px!important}.pb-16{padding-bottom:16px!important}.ml-16{margin-left:16px!important}.pl-16{padding-left:16px!important}.mr-16{margin-right:16px!important}.pr-16{padding-right:16px!important}.mt-24{margin-top:24px!important}.pt-24{padding-top:24px!important}.mb-24{margin-bottom:24px!important}.pb-24{padding-bottom:24px!important}.ml-24{margin-left:24px!important}.pl-24{padding-left:24px!important}.mr-24{margin-right:24px!important}.pr-24{padding-right:24px!important}.mt-26{margin-top:26px!important}.pt-26{padding-top:26px!important}.mb-26{margin-bottom:26px!important}.pb-26{padding-bottom:26px!important}.ml-26{margin-left:26px!important}.pl-26{padding-left:26px!important}.mr-26{margin-right:26px!important}.pr-26{padding-right:26px!important}.mt-32{margin-top:32px!important}.pt-32{padding-top:32px!important}.mb-32{margin-bottom:32px!important}.pb-32{padding-bottom:32px!important}.ml-32{margin-left:32px!important}.pl-32{padding-left:32px!important}.mr-32{margin-right:32px!important}.pr-32{padding-right:32px!important}.column-gap-2{-webkit-column-gap:2px!important;-moz-column-gap:2px!important;column-gap:2px!important}.column-gap-4{-webkit-column-gap:4px!important;-moz-column-gap:4px!important;column-gap:4px!important}.column-gap-8{-webkit-column-gap:8px!important;-moz-column-gap:8px!important;column-gap:8px!important}.row-gap-2{row-gap:2px!important}.row-gap-4{row-gap:4px!important}.row-gap-8{row-gap:8px!important}html{box-sizing:border-box}*,:before,:after{box-sizing:inherit}html{-webkit-text-size-adjust:100%;-moz-text-size-adjust:100%;text-size-adjust:100%}body{-webkit-overflow-scrolling:touch}html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}a{background-color:transparent;color:#21212b}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}dfn{font-style:italic}mark{background-color:#ff0;color:#000}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace;font-size:1em}hr{box-sizing:content-box;height:0;overflow:visible}button,input,select,textarea{margin:0;font:inherit}button,input{overflow:visible}button,select{text-transform:none}button,[type=button],[type=reset],[type=submit]{-webkit-appearance:button;-moz-appearance:button;appearance:button}input,textarea,button,select,a{-webkit-tap-highlight-color:transparent}address{font-style:normal}a:focus:not(:focus-visible),select:focus:not(:focus-visible),input:focus:not(:focus-visible),textarea:focus:not(:focus-visible){outline:0}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{padding:0;border-style:none}button,input[type=reset],input[type=button],input[type=submit]{cursor:pointer}button[disabled],input[disabled]{cursor:default}button{padding:0;border:0;border-radius:0;background:0 0;line-height:1;-webkit-appearance:none;-moz-appearance:none;appearance:none}button:focus:not(:focus-visible){outline:0}a,a:hover{text-decoration:none}[href="javascript:void();"],[href="javascript:"]{cursor:default}ul,ol{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-spacing:0;border-collapse:collapse}input[type=text],input[type=password],input[type=date],input[type=datetime],input[type=datetime-local],input[type=email],input[type=month],input[type=number],input[type=search],input[type=tel],input[type=time],input[type=url],input[type=week],textarea{box-sizing:border-box}[type=checkbox],[type=radio]{box-sizing:border-box;margin:0;padding:0}input[type=search]{-webkit-appearance:textfield;-moz-appearance:textfield;appearance:textfield;outline-offset:-2px}input[type=search]::-webkit-search-decoration,input[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;appearance:none}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto;-webkit-appearance:none;appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;appearance:button;font:inherit}input[type=number]{-webkit-appearance:textfield;-moz-appearance:textfield;appearance:textfield}select{width:100%;height:20px;border:0;background:0 0}textarea{overflow:auto;border:0;resize:none}::-webkit-input-placeholder{color:#777;line-height:normal}::-moz-placeholder{color:#777;line-height:normal}::placeholder{color:#777;line-height:normal}[hidden]{display:none}.button{display:-webkit-inline-flex;display:inline-flex;-webkit-align-items:center;align-items:center;-webkit-justify-content:center;justify-content:center;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;height:48px;padding-right:32px;padding-left:32px;transition:background-color .225s ease,box-shadow .225s ease,border-color .225s ease,color .225s ease;border:1px solid transparent;border-radius:8px;font-family:"Inter",arial,helvetica neue,helvetica,sans-serif;font-size:18px;font-weight:500}.button:focus-visible{border-radius:4px;outline:0;box-shadow:0 0 0 2px #000,0 0 0 3px #fff}.button--small-padding{padding-right:24px;padding-left:24px}.button--small{height:40px;padding-right:24px;padding-left:24px}.button--medium{height:44px;padding-right:20px;padding-left:20px}.button--black{border-width:2px;border-color:#1c1f29;background-color:#1c1f29;color:#fff}.button--black:hover{border-color:#303647;background-color:#303647}.button--black:active{border-color:#2f2c6d;background-color:#2f2c6d}.button--black:focus-visible{border-color:#b8b6e2;background-color:#3f3a92;box-shadow:none}.button--black:disabled{border-color:#ededf8;background-color:#ededf8;color:#9695a5}.button--secondary{padding:0 24px;border:2px solid #1c1f29;background-color:transparent}.button--secondary:hover{border-color:#3f3a92;color:#3f3a92}.button--secondary:active{border-color:#2f2c6d;color:#2f2c6d}.button--secondary:focus-visible{border-color:#b8b6e2;box-shadow:none;color:#111028}.button--secondary:disabled{border-color:#96969c;color:#96969c}.button--empty,.button--empty-icon{-webkit-column-gap:8px;-moz-column-gap:8px;column-gap:8px;border-width:2px;color:#1c1f29;font-weight:400}.button--empty:hover,.button--empty-icon:hover{background-color:#ebedf5;color:#3f3a92}.button--empty:hover svg,.button--empty-icon:hover svg{fill:#3f3a92}.button--empty:active,.button--empty-icon:active{background-color:transparent;color:#2f2c6d}.button--empty:active svg,.button--empty-icon:active svg{fill:#2f2c6d}.button--empty:focus-visible,.button--empty-icon:focus-visible{border-color:#b8b6e2;background-color:#ededf8;box-shadow:none;color:#3f3a92}.button--empty:focus-visible svg,.button--empty-icon:focus-visible svg{fill:#3f3a92}.button--empty:disabled,.button--empty.disabled,.button--empty-icon:disabled,.button--empty-icon.disabled{color:#9695a5}.button--empty:disabled svg,.button--empty.disabled svg,.button--empty-icon:disabled svg,.button--empty-icon.disabled svg{fill:#9695a5}.button--empty-icon{padding:0}.button--empty-icon svg{width:20px;height:20px}.button--outline-icon{padding:0;border:2px solid #dddde0;background-color:transparent}.button--outline-icon svg{width:20px;height:20px}.button--outline-icon:hover{border-color:#1c1f29;color:#1c1f29}.button--outline-icon:active{border-color:#dddde0;color:#1c1f29}.button--outline-icon:focus-visible{border-color:#b8b6e2;box-shadow:none;color:#111028}.button--outline-icon:disabled{border-color:#96969c;color:#96969c}.button--gray{border-width:2px;border-color:#ededf8;background-color:#ededf8;color:#111028}.button--gray:hover{color:#3f3a92}.button--gray:active{color:#2f2c6d}.button--gray:focus-visible{border-color:#b8b6e2;box-shadow:none;color:#3f3a92}.button--gray:disabled,.button--gray.disabled{color:#b5b5be}.button--gray2{padding-right:24px;padding-left:24px;border-width:2px;border-radius:4px;border-color:#ededf8;background-color:#ededf8;color:#111028}.button--gray2:hover{color:#3f3a92}.button--gray2:active{color:#2f2c6d}.button--gray2:focus-visible{border:2px solid #b8b6e2;box-shadow:none;color:#3f3a92}.button--gray2:disabled{background-color:#ededf8;color:#9695a5}.button--gray3{border-width:2px;border-radius:4px;border-color:#dcdbf0;background-color:#dcdbf0;color:#111028}.button--gray3:hover{color:#3f3a92}.button--gray3:active{color:#2f2c6d}.button--gray3:focus-visible{border:2px solid #b8b6e2;box-shadow:none;color:#3f3a92}.button--gray3:disabled{background-color:#ededf8;color:#9695a5}.button--white{border-color:#fff;background-color:#fff;box-shadow:0 0 40px rgba(0,0,0,.15);color:#000}.button--white:hover,.button--white:active{border-color:#f2f2f2;background-color:#f2f2f2}.button--white-shadow{border-color:#fff;background-color:#fff;color:#000}.button--white-shadow:hover,.button--white-shadow:active{box-shadow:0 6px 16px #e1e1e1}.button--bordered-black{border-width:3px;border-color:#000;background-color:#fff;color:#000}.button--bordered-black:hover,.button--bordered-black:active{background-color:#000;color:#fff}.button--bordered-black-transparent{border-width:3px;border-color:#000;background-color:transparent;color:#000}.button--bordered-black-transparent:hover,.button--bordered-black-transparent:active{background-color:#000;color:#fff}.button--bordered-light{border-width:2px;border-color:#1c1f29;color:#1c1f29}.button--bordered-light:hover,.button--bordered-light:active{background-color:#ebedf5;color:#1c1f29}.button--bordered-white{border-width:2px;border-color:#dddde0;color:#1c1f29}.button--bordered-white:hover,.button--bordered-white:active{border-color:#1c1f29;color:#1c1f29}.button--bordered-black-blank{border-width:3px;border-color:#000;color:#000}.button--bordered-black-blank:hover,.button--bordered-black-blank:active{background-color:#000;color:#fff}.button--bordered-gray{padding-right:24px;padding-left:24px;border-width:2px;border-color:#c4c6d3;color:#1c1f29;color:#000}.button--bordered-gray:hover,.button--bordered-gray:active{border-color:#1c1f29}.button--bordered-gray:focus-visible{border-radius:8px;border-color:#b3c5ff;box-shadow:initial}.button--bordered-gray-disabled{border-color:#e8e8e8;color:#969696;cursor:default;pointer-events:none}.button.in-respond{border-color:#eeeff1;background-color:#eeeff1;color:#828282}.button--light-link{height:auto;padding:0;color:#96969c;font-weight:500}.button--light-link:hover,.button--light-link:active{color:#3f3a92}.button--gap-images{max-width:316px;-webkit-column-gap:8px;-moz-column-gap:8px;column-gap:8px}.favorite{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-justify-content:center;justify-content:center;width:48px;height:48px;cursor:pointer}.favorite .favorite__icon{pointer-events:none}.favorite .favorite__icon path{transition:fill .225s ease;stroke-width:2px;stroke:#000;fill:none}.favorite.in-favorite .favorite__icon path{fill:#000}.favorite__icon{width:20px;height:20px}.action{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-justify-content:center;justify-content:center;width:50px;height:50px;border:2px solid #000;border-radius:3px;cursor:pointer}.action__button-img{pointer-events:none}.custom-icon{display:inline-block;width:16px;height:16px;transition:color .225s ease,fill .225s ease;stroke-width:0;stroke:currentcolor;fill:currentcolor}.bold{font-weight:700}.badge{display:-webkit-inline-flex;display:inline-flex;-webkit-align-items:center;align-items:center;height:32px;padding-right:16px;padding-left:16px;border-radius:100px;font-size:16px}.badge--work-in-progress{background-color:#dbe1ff;color:#003ea6}.badge--new{background-color:#e7deff;color:#4c21bb}html:has(.organizer-welcome){height:100%}html:has(.organizer-welcome) .main-wrapper .header{background:0 0}.main-container{z-index:40;max-width:1216px;margin:0 auto;color:#020111}body{display:grid;grid-template-rows:auto 1fr auto;min-height:100%;background-color:#f5f5f9;background-image:url(/assets/images/pages/organizer/circles.svg),linear-gradient(229.85deg,rgba(245,245,249,.5) 56.34%,rgba(134,99,245,.5) 107.13%),linear-gradient(126.21deg,rgba(255,255,255,.4) 76.3%,rgba(134,99,245,.4) 112.13%);background-repeat:no-repeat,no-repeat,no-repeat;background-position:100% calc(100% - 392px),bottom left,bottom right;color:#21212b;font-family:"Inter",arial,helvetica neue,helvetica,sans-serif;font-size:16px}body.organizer-inner{background-image:linear-gradient(229.85deg,rgba(245,245,249,.5) 56.34%,rgba(134,99,245,.5) 107.13%),linear-gradient(126.21deg,rgba(255,255,255,.4) 76.3%,rgba(134,99,245,.4) 112.13%);background-repeat:no-repeat,no-repeat;background-position:bottom left,bottom right}body.organizer-companies-inner{background-image:initial;background-repeat:no-repeat;background-position:initial}body.organizer-welcome{grid-template-rows:auto 1fr;background-image:url(/assets/images/pages/common/home_top_bg.svg);background-repeat:no-repeat;background-position:center top;background-size:1440px 280px}body.organizer-welcome .main-wrapper{min-height:initial}.main-wrapper{min-height:calc(100vh - 300px)}.header{display:-webkit-flex;display:flex;z-index:50;-webkit-align-items:center;align-items:center;height:64px;background-color:transparent}.header__wrapper{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-justify-content:space-between;justify-content:space-between;width:1216px;height:100%;margin:0 auto}.header__logo{display:-webkit-flex;display:flex;gap:12px;-webkit-align-items:center;align-items:center}.header__profile{position:relative;font-size:0}.header__nav{display:-webkit-flex;display:flex;gap:8px;margin-left:auto}.header__nav-link{position:relative;padding:6.5px 16px;transition:all .225s ease;border-radius:48px;color:#4d515c;font-size:18px;font-weight:500;line-height:150%}.header__nav-link:hover{color:#21212b}.header__nav-link.active{background-color:#ededf8;color:#21212b}.header__stars{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;margin-left:auto}.header__login-button{margin-left:24px}.header__profile-button{width:40px;height:40px;margin-left:24px;overflow:hidden;border-radius:50%}.header__profile-button img{display:block;width:inherit;height:inherit}.modal-profile.active{display:-webkit-flex;display:flex;pointer-events:all}.modal-profile{display:none;position:absolute;z-index:1;top:48px;right:0;-webkit-flex-direction:column;flex-direction:column;width:540px;border-radius:8px;background:#fff;pointer-events:none;-webkit-filter:drop-shadow(-1px 0 20px rgba(28,24,34,.05)) drop-shadow(0 1px 5px rgba(14,11,17,.15));filter:drop-shadow(-1px 0 20px rgba(28,24,34,.05)) drop-shadow(0 1px 5px rgba(14,11,17,.15))}.modal-profile__profile{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column}.modal-profile__profile-info{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;padding-top:24px;padding-right:24px;padding-left:24px;-webkit-column-gap:12px;-moz-column-gap:12px;column-gap:12px}.modal-profile__profile-name{width:100%;color:#1d1b1e;font-size:18px;font-weight:500;line-height:1.3333333333}.modal-profile__user-photo{width:40px;height:40px;border-radius:50%}.modal-profile__profile-list{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;margin:16px 0}.modal-profile__link{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;padding:8px 24px;-webkit-column-gap:12px;-moz-column-gap:12px;column-gap:12px;transition:color .255s ease,background-color .255s ease;color:#4d515c;font-size:18px;line-height:1.3333333333}.modal-profile__link:hover{background-color:#ebedf5;color:#1d1b1e}.modal-profile__log-out{padding:24px 24px 32px;border-top:1px solid #e3e5fc}.modal-profile__button{color:#4d515c;font-size:18px;line-height:1.3333333333}.footer{display:-webkit-flex;display:flex;-webkit-align-items:stretch;align-items:stretch;height:392px}.footer__overlay{display:-webkit-flex;display:flex;-webkit-align-items:stretch;align-items:stretch;width:100%;padding-right:24px;padding-bottom:24px;padding-left:24px;border-radius:60px;background:#fff;background-clip:content-box}.footer__wrapper{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;width:100%;padding:64px 88px 32px}.footer__group{display:-webkit-flex;display:flex;-webkit-justify-content:space-between;justify-content:space-between}.footer__info{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column}.footer__title-link{color:#1d1b1e;font-family:montserrat,verdana,roboto,sans-serif;font-size:19px;font-weight:700;letter-spacing:-.03em;line-height:1}.footer__subtitle{margin-top:16px;color:#4d515c;font-size:18px;line-height:1.3333333333}.footer__ukraine-map{display:block;margin-top:32px}.footer__right-side{display:-webkit-flex;display:flex}.footer__support{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;width:210px;row-gap:16px;margin-left:40px}.footer__support-figure{display:-webkit-flex;display:flex;-webkit-column-gap:8px;-moz-column-gap:8px;column-gap:8px}.footer__link{width:100%;-webkit-column-gap:8px;-moz-column-gap:8px;column-gap:8px}.footer__support-icon-box{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-justify-content:center;justify-content:center;width:24px;height:24px}.footer__copyrights{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;margin-top:auto;padding-top:24px;-webkit-column-gap:6px;-moz-column-gap:6px;column-gap:6px;border-top:1px solid #f5f5f9;color:#7e8596;font-size:16px;line-height:1.375}</style>
+	<style>.txt-ellipsis-2{display:block;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}.txt-ellipsis-3,.card__text{display:block;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}.breadcrumb{margin-top:24px;margin-bottom:24px;color:#4d515c}.breadcrumb__list{display:-webkit-flex;display:flex;-webkit-flex-wrap:wrap;flex-wrap:wrap}.breadcrumb__item{font-size:0}.breadcrumb__item+.breadcrumb__item{position:relative}.breadcrumb__item+.breadcrumb__item:before{content:">";margin-right:8px;margin-left:8px;color:#4d515c;font-size:14px;line-height:130%}.breadcrumb__link{position:relative;cursor:pointer}.breadcrumb__link:after{content:"";position:absolute;right:0;bottom:0;width:100%;height:2px;transition:opacity .225s ease;opacity:0;background-color:#4d515c}.breadcrumb__link:hover{-webkit-text-decoration-skip-ink:none;text-decoration-skip-ink:none}.breadcrumb__link:hover:after{opacity:1}.breadcrumb__link,.breadcrumb__page{color:#4d515c;font-size:14px;font-weight:500;line-height:130%;white-space:nowrap}.breadcrumb__page{color:#96969c}.container{max-width:1216px;margin:0 auto;overflow:hidden}.button-link{color:#003ea6;font-size:18px;font-weight:500;line-height:1.3333333333}.button-link:hover,.button-link:active{text-decoration:underline;text-underline-offset:3px}.button-link:focus-visible{outline:0;box-shadow:0 0 0 2px rgba(0,62,166,.5)}.button-link:disabled{color:#969696}.button-group{display:grid;grid-template-rows:repeat(auto-fit,40px);row-gap:8px}.button-group__item{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-justify-content:center;justify-content:center;width:40px;height:40px;transition:.225s ease}.button-group__item:hover{border-radius:4px;background-color:#eff2fa}.companies-cards__container,.vacancies-cards__container{padding-top:24px;padding-bottom:52px;overflow:initial}.card{position:relative;padding:24px;border-radius:16px;background-color:#fff}.card__vacancy{display:grid;z-index:20;grid-template-rows:repeat(3,auto);max-width:1008px;-webkit-column-gap:26px;-moz-column-gap:26px;column-gap:26px}.card.hidden .card__vacancy{display:none}.card.hidden .card-hidden{display:block}.card__action{display:grid;position:absolute;top:16px;right:16px;grid-column:2;grid-row:1/-1;grid-template-rows:repeat(auto-fit,40px)}.card__header{display:-webkit-flex;display:flex;grid-column:1;margin-bottom:20px!important}.card__image-overlay{display:-webkit-flex;display:flex;position:relative;-webkit-flex-shrink:0;flex-shrink:0;-webkit-align-items:center;align-items:center;-webkit-justify-content:center;justify-content:center;width:112px;height:56px;overflow:hidden;border-radius:8px;background-color:rgba(216,216,216,.2)}.card__header-caption{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;-webkit-justify-content:center;justify-content:center;margin-left:12px;row-gap:4px}.card__header-caption--project{-webkit-flex-direction:row;flex-direction:row}.card__headline{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-align-self:flex-start;align-self:flex-start;transition:border .225s ease,color .225s ease;border-bottom:1px solid transparent;color:#4d515c;font-size:26px;font-weight:500;line-height:1.2307692308;gap:8px}.card__headline:hover{text-decoration:underline}.card__sub-headline{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-align-self:flex-start;align-self:flex-start;color:#4d515c;font-size:18px;line-height:25px;gap:8px}.card__top-links{display:-webkit-flex;display:flex;margin-bottom:20px}.card__top-link{margin-right:24px}.card__top-link.disabled{color:#969696;cursor:default;pointer-events:none}.card__text{position:relative;grid-column:1;margin:16px 0 0!important;color:#4d515c;font-size:18px;line-height:25px}.card__info{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;gap:8px}.card__figure{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center}.card__figcaption{margin-left:12px;color:#4d515c;font-size:18px;line-height:25px}.card__image{width:inherit;aspect-ratio:2/1}.card__image--preview{width:initial;aspect-ratio:initial}.cards-group{display:grid;grid-gap:4px;grid-template-columns:repeat(3,1fr);margin-top:4px}.card__links-item-group{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center}.card__links-item-group img{margin-right:8px}.card__links-item-info{display:block;margin-top:20px}.card__links-item-info li{padding-bottom:10px;color:#1d1b1e}.card__links-item-info li:last-child{padding:0}.card__link-stats-item--one-line span{margin-right:16px}.card__links-group{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;border-radius:12px;row-gap:20px}.card__links-group--unbordered{border-color:transparent}.card__links-item{display:-webkit-flex;display:flex;position:relative;-webkit-align-items:center;align-items:center;-webkit-column-gap:4px;-moz-column-gap:4px;column-gap:4px}.card__links-item--disabled .card__links-link:not(.card__links-link--google),.card__links-item--disabled .card__links-icon:not(.card__links-icon--google){color:#969696;pointer-events:none;-webkit-filter:grayscale(1) invert(.4);filter:grayscale(1) invert(.4)}.card__links-link-star{margin-left:16px;font-weight:500}.card__links-link--google{position:absolute;top:3px;right:0;margin-right:0!important}.card__links-link--verify{position:absolute;top:8px;right:0;margin-right:0!important}.card__links-link--verify img,.card__links-link--google img{margin-right:0!important}.card__links-item--title{-webkit-flex-direction:column;flex-direction:column;-webkit-align-items:flex-start;align-items:flex-start}.card__links-item--title .card__links-link{font-size:22px;font-weight:500}.card__links-icon{display:block}.company-statistics__container,.vacancy-statistics__container,.company-vacancies__container{padding-top:52px;padding-bottom:104px;overflow:initial}.company-statistics__headline,.vacancy-statistics__headline,.company-vacancies__headline{margin-bottom:24px;color:#1d1b1e;font-size:44px;font-weight:500;line-height:1.2;white-space:nowrap}.company-vacancies__container{padding-bottom:52px}.stats{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;gap:24px}.stats__head{display:grid;grid-template-columns:repeat(2,1fr);padding:24px 16px;-webkit-column-gap:24px;-moz-column-gap:24px;column-gap:24px;border-radius:20px;background-color:#fff}.stats__head--double{grid-template-columns:none}.stats__head .stats__counters{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;margin-top:initial;padding-right:initial;padding-left:initial}.stats__head .stats__counters-group{margin-top:16px;padding-right:initial;padding-left:initial}.stats__counters,.stats__counters-group{display:grid;grid-template-columns:repeat(2,1fr);margin-top:24px;padding-right:16px;padding-left:16px}.stats__counters-item{padding:12px 16px;border:1px solid #dddde9;border-radius:12px}.stats__counters-item:nth-child(2){margin-left:-1px}.stats__counters-views{color:#4d515c;font-size:18px;line-height:1.3333333333}.stats__counters-item-number{margin-top:8px;color:#1d1b1e;font-size:36px;line-height:1.2222222222}.stats__item{padding:24px 0 16px;border-radius:20px;background:#fff}.stats__header{display:-webkit-flex;display:flex;-webkit-align-items:flex-end;align-items:flex-end;-webkit-justify-content:space-between;justify-content:space-between;padding-right:16px;padding-left:16px}.stats__title{color:#1d1b1e;font-size:22px;font-weight:500;line-height:1.2727272727}.stats__labels{color:#7e8596;font-family:"Inter",arial,helvetica neue,helvetica,sans-serif!important;font-size:12px;line-height:1.3333333333}.vacancies__empty{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;-webkit-align-items:center;align-items:center;-webkit-justify-content:center;justify-content:center;width:100%}.vacancies__empty-logo{margin-bottom:16px}.vacancies__empty-title{margin:16px 0;color:#1d1b1e;font-weight:500}.vacancies__empty-subtitle{max-width:380px;color:#4d515c;font-size:18px;line-height:24px;text-align:center}.vacancies__list{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;row-gap:16px}.card{position:relative;padding:24px;border-radius:16px;background-color:#fff}.card__vacancy{display:grid;z-index:20;grid-template-rows:repeat(3,auto);max-width:1008px;-webkit-column-gap:26px;-moz-column-gap:26px;column-gap:26px}.card.hidden .card__vacancy{display:none}.card.hidden .card-hidden{display:block}.card__action{display:grid;position:absolute;top:16px;right:16px;grid-column:2;grid-row:1/-1;grid-template-rows:repeat(auto-fit,40px)}.card__header{display:-webkit-flex;display:flex;grid-column:1;margin-bottom:16px}.card__header--organizer{margin-bottom:0}.card__image-overlay{display:-webkit-flex;display:flex;-webkit-flex-shrink:0;flex-shrink:0;-webkit-align-items:flex-start;align-items:flex-start;-webkit-justify-content:center;justify-content:center;overflow:hidden;border-radius:4px}.card__header-caption{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;-webkit-justify-content:center;justify-content:center;margin-left:12px}.card__header-caption--project{-webkit-flex-direction:row;flex-direction:row}.card__headline{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-align-self:flex-start;align-self:flex-start;margin-bottom:4px;transition:border .225s ease,color .225s ease;border-bottom:1px solid transparent;color:#303647;font-size:26px;font-weight:500;line-height:120%;gap:8px}.card__headline--title{font-size:44px}.card__headline:hover{text-decoration:underline}.card__sub-headline{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-align-self:flex-start;align-self:flex-start;color:#4d515c;font-size:18px;line-height:25px;gap:8px}.card__text{display:box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;position:relative;grid-column:1;margin:16px 0;color:#4d515c;font-size:18px;line-height:25px}.card__text--organizer{margin-top:24px}.card__text--full-text{display:block;overflow:hidden;text-overflow:unset;white-space:wrap;margin-bottom:24px}.card__info{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;gap:8px}.card__figure{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center}.card__figcaption{margin-left:8px;color:#4d515c;font-size:18px;line-height:25px}.card__figure-salary .card__figcaption{color:#1c1f29;font-weight:500}.card__hidden-salary{margin-left:8px;padding:2px 12px;border-radius:8px;background-color:#f5f5f9;color:#4d515c;line-height:27px}.card--filled .card__image-overlay{background-color:transparent}.card__company-links{display:-webkit-flex;display:flex;border-top:2px solid #f2f2f8;color:#1c1f29;font-size:18px;line-height:25px}.card__link-item{display:-webkit-flex;display:flex;position:relative;margin:24px 24px 0 0;transition:border .225s ease;border-bottom:1px solid transparent;color:#0737b9;gap:8px}.card__link-item:hover{border-color:#0737b9}.card__image{width:112px;height:56px}.card__footer{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-justify-content:space-between;justify-content:space-between;margin-top:8px}.card__details{display:-webkit-flex;display:flex;gap:24px}.card__details .card__figcaption{color:#6f727a}.card__action-button-sloth{transition:background-image .3s,background-color .3s;background-image:url(/assets/images/pages/vacancy/sloth.svg);background-repeat:no-repeat;background-position:center center}.card__action-button-sloth:hover{border-radius:4px;background-color:#ededf8;background-image:url(/assets/images/pages/vacancy/sloth-hide.svg)}.card__action-button-sloth:active{border-radius:0;background-color:transparent;background-image:url(/assets/images/pages/vacancy/sloth-hide.svg)}.card__action-button-sloth:focus-visible{border:2px solid #b8b6e2;border-radius:4px;outline:0;background-color:#ededf8}.button-link{color:#003ea6;font-size:18px;font-weight:500;line-height:1.3333333333}.button-link:hover,.button-link:active{text-decoration:underline;text-underline-offset:3px}.button-link:focus-visible{outline:0;box-shadow:0 0 0 2px rgba(0,62,166,.5)}.button-link:disabled{color:#969696}</style>
+</head>
+
+<body class="organizer-companies-inner">
+<main class="main-wrapper">
+	<header class="header">
+  <div class="header__wrapper">
+    <a href="#" class="header__logo">
+      <img
+        width="129"
+        height="32"
+        class="header__logo-img"
+        src="/assets/images/pages/organizer/golang-organizer.svg"
+        alt="organizer logo"
+      />
+    </a>
+    <ul class="header__nav">
+      <li class="header__nav-item">
+        <a href="/companies" class="header__nav-link active">Companies</a>
+      </li>
+      <li class="header__nav-item">
+        <a href="/vacancies" class="header__nav-link">Vacancies</a>
+      </li>
+    </ul>
+    <div class="header__stars">
+      <iframe
+        src="https://ghbtns.com/github-btn.html?user=readytotouch&repo=readytotouch.github.io&type=star&count=true&size=large"
+        width="110"
+        height="33"
+        title="GitHub"
+      ></iframe>
+    </div>
+    <div class="header__profile">
+      <button class="header__profile-button">
+        <img src="https://avatars.githubusercontent.com/u/63663261?v=4&s=48" alt="photo-profile" />
+      </button>
+      <div class="header__modal modal-profile">
+        <div class="modal-profile__profile">
+          <figure class="modal-profile__profile-info">
+            <img
+              src="https://avatars.githubusercontent.com/u/63663261?v=4&s=48"
+              class="modal-profile__user-photo"
+              width="48"
+              height="48"
+              alt="photo-profile"
+            />
+            <figcaption class="modal-profile__profile-name">Yaroslav Podorvanov</figcaption>
+          </figure>
+          <div class="modal-profile__profile-list">
+            <a href="https://github.com/YaroslavPodorvanov" target="_blank" class="modal-profile__link">
+              <img src="/assets/images/pages/online-new/github-black.svg" width="20" height="20" alt="GitHub logo" />
+              <span class="modal-profile__profile-github">github.com/YaroslavPodorvanov</span>
+            </a>
+            <a href="https://gitlab.com/YaroslavPodorvanov" target="_blank" class="modal-profile__link">
+              <img src="/assets/images/pages/online-new/gitlab.svg" width="20" height="20" alt="GitLab logo" />
+              <span class="modal-profile__profile-gitlab">gitlab.com/YaroslavPodorvanov</span>
+            </a>
+          </div>
+        </div>
+        <div class="modal-profile__log-out">
+          <a href="#" class="modal-profile__button">Log out</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<script>
+  document.querySelector('.header__profile-button').addEventListener('click', () => {
+    document.querySelector('.header__modal').classList.toggle('active')
+  })
+</script>
+
+
+
+<div class="container">
+  <nav aria-label="breadcrumb" aria-labelledby="navigation through the bread crumbs" class="breadcrumb">
+    <ul class="breadcrumb__list">
+      <li class="breadcrumb__item">
+        <a class="breadcrumb__link" href="javascript:">Main</a>
+      </li>
+      <li class="breadcrumb__item">
+        <a class="breadcrumb__link" href="javascript:">Organizer</a>
+      </li>
+      <li class="breadcrumb__item">
+        <a class="breadcrumb__link" href="javascript:">Golang</a>
+      </li>
+      <li class="breadcrumb__item">
+        <span class="breadcrumb__page" aria-current="page">DocHQ</span>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<section class="companies-cards">
+  <div class="container companies-cards__container"><div class="card">
+  <aside class="card__action">
+    <button class="favorite in-favorite card__action-button button-group__item" title="Add to favorite">
+      <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" class="favorite__icon" viewBox="0 0 28 28">
+        <path
+          d="m14.5 22.1-.5-.3-.5.3-6.8 4.2c-.5.3-1.1-.1-.9-.7L7.5 18l.1-.6-.4-.4-5.9-5.2c-.3-.3-.3-.6-.2-.8.1-.2.3-.4.5-.4l7.9-.7.6-.1.2-.6 2.9-7.4c.2-.5 1-.5 1.2 0l3.1 7.3.2.5.6.1 7.9.7c.2 0 .4.2.5.5.1.3 0 .6-.2.7l-5.9 5.2-.4.4.1.6 1.8 7.7c.1.3 0 .5-.2.6-.2.1-.5.2-.8 0l-6.6-4z"
+        />
+      </svg>
+    </button>
+    <!--<button class="button-group__item" title="View statistics">
+      <img width="20" height="20" alt="icon stats" src="/assets/images/pages/common/stats.svg" />
+    </button>-->
+  </aside>
+  <figure class="card__header">
+    <div class="card__image-overlay">
+      <img
+        class="card__image"
+        alt="card image preview icon"
+				src="/assets/images/pages/organizer/google.png"
+      />
+    </div>
+    <figcaption class="card__header-caption">
+      <a href="/page-stub.html" class="card__headline card__headline--title">Google</a>
+    </figcaption>
+  </figure>
+	<div class="card__top-links">
+		<a href="#" class="card__top-link button-link">Website</a>
+		<a href="#" class="card__top-link button-link disabled">Careers</a>
+		<a href="#" class="card__top-link button-link disabled">About</a>
+		<a href="#" class="card__top-link button-link disabled">Dev Blog</a>
+	</div>
+  <div class="card__info">
+    <figure class="card__figure">
+      <img
+        class="card__icon"
+        alt="card type icon"
+        width="16"
+        height="16"
+        src="/assets/images/pages/vacancy/building.svg"
+      />
+      <figcaption class="card__figcaption">Product</figcaption>
+    </figure>
+    <figure class="card__figure">
+      <img
+        class="card__icon"
+        alt="card type icon"
+        width="16"
+        height="16"
+        src="/assets/images/pages/vacancy/company-type.svg"
+      />
+      <figcaption class="card__figcaption">HRTech</figcaption>
+    </figure>
+  </div>
+  <p class="card__text card__text--full-text">
+		A problem isn't truly solved until it's solved for all. Googlers
+		build products that help create opportunities for everyone, whether
+		down the street or across the globe. Bring your insight, imagination
+		and a healthy disregard for the impossible. Bring everything that
+		makes you unique. Together, we can build for everyone.
+  </p>
+</div>
+<div class="cards-group">
+	<div class="card">
+		<ul class="card__links-group">
+			<li class="card__links-item card__links-item--title">
+				<div class="card__links-item-group">
+					<img
+						class="card__links-icon"
+						alt="linkedin icon"
+						width="32"
+						height="32"
+						src="/assets/images/pages/organizer/linkedin.svg"
+					/>
+					<a href="#" class="card__links-link">LinkedIn</a>
+					<a href="#" class="card__links-link card__links-link--verify">
+						<img
+							class="card__links-icon"
+							alt="icon"
+							src="/assets/images/pages/organizer/verified-icon.png"
+						/>
+					</a>
+				</div>
+				<ul class="card__links-item-info">
+					<li class="card__link-stats-item">35M followers</li>
+					<li class="card__link-stats-item">10,001+ employees</li>
+					<li class="card__link-stats-item">302,261 associated members</li>
+				</ul>
+			</li>
+			<li class="card__links-item">
+				<a href="#" class="button-link card__links-link">Overview</a>
+			</li>
+			<li class="card__links-item">
+				<a href="#" class="button-link card__links-link">Connections</a>
+				<img
+					class="card__links-icon"
+					alt="language icon"
+					width="20"
+					height="20"
+					src="/assets/images/pages/organizer/language.svg"
+				/>
+			</li>
+			<li class="card__links-item">
+				<a href="#" class="button-link card__links-link">Connections 🇺🇦</a>
+			</li>
+			<li class="card__links-item">
+				<a href="#" class="button-link card__links-link">Connections 🇨🇿</a>
+			</li>
+			<li class="card__links-item">
+				<a href="#" class="button-link card__links-link">Jobs</a>
+			</li>
+		</ul>
+	</div>
+	<div class="card">
+		<ul class="card__links-group">
+			<li class="card__links-item card__links-item--title">
+				<div class="card__links-item-group">
+					<img
+						class="card__links-icon"
+						alt="github icon"
+						width="32"
+						height="32"
+						src="/assets/images/pages/organizer/github.svg"
+					/>
+					<a href="#" class="card__links-link card__links-link--verify ">
+						<img
+							class="card__links-icon"
+							alt="icon"
+							src="/assets/images/pages/organizer/verified.png"
+						/>
+					</a>
+					<a href="#" class="card__links-link">GitHub</a>
+				</div>
+			</li>
+			<li class="card__links-item card__links-item--disabled">
+				<a href="#" class="button-link card__links-link">Overview</a>
+				<a href="#" class="card__links-link card__links-link--google">
+					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+				</a>
+			</li>
+			<li class="card__links-item card__links-item--disabled">
+				<a href="#" class="button-link card__links-link">Repositories (?)</a>
+			</li>
+		</ul>
+	</div>
+	<div class="card">
+		<ul class="card__links-group">
+			<li class="card__links-item card__links-item--title">
+				<div class="card__links-item-group">
+					<img
+						class="card__links-icon"
+						alt="linkedin icon"
+						width="32"
+						height="32"
+						src="/assets/images/pages/organizer/blind.png"
+					/>
+					<a href="#" class="card__links-link">LinkedIn</a>
+				</div>
+				<ul class="card__links-item-info">
+					<li class="card__link-stats-item">10,000+ employees</li>
+					<li class="card__link-stats-item">$60K ~ $356K a year</li>
+					<li class="card__link-stats-item">10 095 Reviews</li>
+				</ul>
+			</li>
+			<li class="card__links-item card__links-item--disabled">
+				<a href="#" class="button-link card__links-link">Overview</a>
+				<a href="#" class="card__links-link card__links-link--google">
+					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+				</a>
+			</li>
+			<li class="card__links-item card__links-item--disabled">
+				<a href="#" class="button-link card__links-link">Reviews</a>
+				<span class="card__links-link-star">⭐ ?</span>
+				<a href="#" class="card__links-link card__links-link--google">
+					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="card">
+		<ul class="card__links-group">
+			<li class="card__links-item card__links-item--title">
+				<div class="card__links-item-group">
+					<img
+						class="card__links-icon"
+						alt="linkedin icon"
+						width="32"
+						height="32"
+						src="/assets/images/pages/organizer/levels.png"
+					/>
+					<a href="#" class="card__links-link">Levels.fyi</a>
+				</div>
+				<ul class="card__links-item-info">
+					<li class="card__link-stats-item">258 750 of Employees</li>
+				</ul>
+			</li>
+			<li class="card__links-item card__links-item--disabled">
+				<a href="#" class="button-link card__links-link">Overview</a>
+				<a href="#" class="card__links-link card__links-link--google">
+					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+				</a>
+			</li>
+			<li class="card__links-item card__links-item--disabled">
+				<a href="#" class="button-link card__links-link">Jobs</a>
+				<a href="#" class="card__links-link card__links-link--google">
+					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="card">
+		<ul class="card__links-group">
+			<li class="card__links-item card__links-item--title">
+				<div class="card__links-item-group">
+					<img
+						class="card__links-icon"
+						alt="glassdoor icon"
+						width="32"
+						height="32"
+						src="/assets/images/pages/organizer/glassdoor.svg"
+					/>
+					<a href="#" class="card__links-link">Glassdoor</a>
+					<a href="#" class="card__links-link card__links-link--verify">
+						<img
+							class="card__links-icon"
+							alt="icon"
+							src="/assets/images/pages/organizer/verified-emp.png"
+						/>
+					</a>
+				</div>
+				<ul class="card__links-item-info">
+					<li class="card__link-stats-item card__link-stats-item--one-line">
+						<span>
+							<strong>4.8K</strong> jobs
+						</span>
+						<span>
+							<strong>58.2K</strong> reviews
+						</span>
+						<span>
+							<strong>166.1K</strong> salaries
+						</span>
+					</li>
+				</ul>
+			</li>
+			<li class="card__links-item card__links-item--disabled">
+				<a href="#" class="button-link card__links-link">Overview</a>
+				<a href="#" class="card__links-link card__links-link--google">
+					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+				</a>
+			</li>
+			<li class="card__links-item card__links-item--disabled">
+				<a href="#" class="button-link card__links-link">Reviews</a>
+				<span class="card__links-link-star">? ★</span>
+				<a href="#" class="card__links-link card__links-link--google">
+					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+				</a>
+			</li>
+			<li class="card__links-item card__links-item--disabled">
+				<a href="#" class="button-link card__links-link">Jobs</a>
+				<a href="#" class="card__links-link card__links-link--google">
+					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="card">
+		<ul class="card__links-group">
+			<li class="card__links-item card__links-item--title">
+				<div class="card__links-item-group">
+					<img
+						class="card__links-icon"
+						alt="linkedin icon"
+						width="32"
+						height="32"
+						src="/assets/images/pages/organizer/indeed.png"
+					/>
+					<a href="#" class="card__links-link">Indeed</a>
+				</div>
+			</li>
+			<li class="card__links-item card__links-item--disabled">
+				<a href="#" class="button-link card__links-link">Overview</a>
+				<a href="#" class="card__links-link card__links-link--google">
+					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+				</a>
+			</li>
+			<li class="card__links-item  card__links-item--disabled">
+				<a href="#" class="button-link card__links-link">Jobs</a>
+				<a href="#" class="card__links-link card__links-link--google">
+					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="card">
+		<ul class="card__links-group">
+			<li class="card__links-item card__links-item--title">
+				<div class="card__links-item-group">
+					<img
+						class="card__links-icon"
+						alt="linkedin icon"
+						width="32"
+						height="32"
+						src="/assets/images/pages/organizer/investors.svg"
+					/>
+					<a href="#" class="card__links-link">Investors</a>
+				</div>
+			</li>
+			<li class="card__links-item card__links-item--disabled">
+				<img class="card__links-icon" alt="Dealroom icon" width="20" height="20" src="/assets/images/pages/organizer/dealroom.png" />
+				<a href="#" class="button-link card__links-link">Dealroom</a>
+				<a href="#" class="card__links-link card__links-link--google">
+					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+				</a>
+			</li>
+			<li class="card__links-item card__links-item--disabled">
+				<img class="card__links-icon" alt="Crunchbase icon" width="20" height="20" src="/assets/images/pages/organizer/crunchbase.svg" />
+				<a href="#" class="button-link card__links-link">Crunchbase</a>
+				<a href="#" class="card__links-link card__links-link--google">
+					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+				</a>
+			</li>
+			<li class="card__links-item card__links-item--disabled">
+				<img class="card__links-icon" alt="Pitchbook icon" width="20" height="20" src="/assets/images/pages/organizer/pitchbook.png" />
+				<a href="#" class="button-link card__links-link">Pitchbook</a>
+				<a href="#" class="card__links-link card__links-link--google">
+					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="card">
+		<ul class="card__links-group">
+			<li class="card__links-item card__links-item--title">
+				<div class="card__links-item-group">
+					<img
+						class="card__links-icon"
+						alt="linkedin icon"
+						width="32"
+						height="32"
+						src="/assets/images/pages/organizer/query_stats.svg"
+					/>
+					<a href="#" class="card__links-link">Market</a>
+				</div>
+			</li>
+			<li class="card__links-item card__links-item--disabled">
+				<img class="card__links-icon" alt="Pitchbook icon" width="20" height="20" src="/assets/images/pages/organizer/yahoo.png" />
+				<a href="#" class="button-link card__links-link">Yahoo Finance</a>
+				<a href="#" class="card__links-link card__links-link--google">
+					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+				</a>
+			</li>
+			<li class="card__links-item card__links-item--disabled">
+				<img class="card__links-icon" alt="Pitchbook icon" width="20" height="20" src="/assets/images/pages/organizer/google-fin.png" />
+				<a href="#" class="button-link card__links-link">Google Finance</a>
+				<a href="#" class="card__links-link card__links-link--google">
+					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="card">
+		<ul class="card__links-group card__links-group--unbordered">
+			<li class="card__links-item card__links-item--title">
+				<div class="card__links-item-group">
+					<a href="#" class="card__links-link">Other links</a>
+				</div>
+			</li>
+			<li class="card__links-item card__links-item--disabled">
+				<img class="card__links-icon" alt="whois icon" width="20" height="20" src="/assets/images/pages/organizer/whois.svg" />
+				<a href="#" class="button-link card__links-link">Whois</a>
+				<a href="#" class="card__links-link card__links-link--google">
+					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+				</a>
+			</li>
+			<li class="card__links-item card__links-item--disabled">
+				<img class="card__links-icon" alt="similarweb icon" width="20" height="20" src="/assets/images/pages/organizer/similarweb.svg" />
+				<a href="#" class="button-link card__links-link">Similarweb</a>
+				<a href="#" class="card__links-link card__links-link--google">
+					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+				</a>
+			</li>
+			<li class="card__links-item card__links-item--disabled">
+				<img class="card__links-icon" alt="otta icon" width="20" height="20" src="/assets/images/pages/organizer/otta.svg" />
+				<a href="#" class="button-link card__links-link">Otta</a>
+				<a href="#" class="card__links-link card__links-link--google">
+					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+				</a>
+			</li>
+			<li class="card__links-item card__links-item--disabled">
+				<img class="card__links-icon" alt="xing icon" width="20" height="20" src="/assets/images/pages/organizer/xing.svg" />
+				<a href="#" class="button-link card__links-link">XING</a>
+				<a href="#" class="card__links-link card__links-link--google">
+					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+				</a>
+			</li>
+			<li class="card__links-item card__links-item--disabled">
+				<img class="card__links-icon" alt="xing icon" width="20" height="20" src="/assets/images/pages/organizer/y-combinator.png" />
+				<a href="#" class="button-link card__links-link">Y Combinator</a>
+				<a href="#" class="card__links-link card__links-link--google">
+					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+				</a>
+			</li>
+		</ul>
+	</div>
+</div></div>
+</section>
+<section class="company-vacancies">
+	<div class="container company-vacancies__container">
+		<h2 class="company-statistics__headline">Vacancies</h2>
+		<div class="vacancies__empty">
+			<img class="vacancies__empty-logo" width="64" height="64" src="/assets/images/pages/common-images/📂.png" alt="folder">
+			<h2 class="vacancies__empty-title">No vacancies yet</h2>
+			<p class="vacancies__empty-subtitle">This company currently has no vacancies, or we are unaware of them.</p>
+		</div>
+	</div>
+</section>
+
+<section class="company-statistics">
+  <div class="container company-statistics__container">
+    <h2 class="company-statistics__headline">Statistics</h2>
+    <div class="stats">
+      <header class="stats__head">
+        <div class="stats__counters">
+          <h3 class="stats__title">Views</h3>
+          <div class="stats__counters-group">
+            <div class="stats__counters-item">
+              <p class="stats__counters-views">Total</p>
+              <p class="stats__counters-item-number">846</p>
+            </div>
+            <div class="stats__counters-item">
+              <p class="stats__counters-views">Last month</p>
+              <p class="stats__counters-item-number">146</p>
+            </div>
+          </div>
+        </div>
+        <div class="stats__counters">
+          <h3 class="stats__title">Added to favorites</h3>
+          <div class="stats__counters-group">
+            <div class="stats__counters-item">
+              <p class="stats__counters-views">Total</p>
+              <p class="stats__counters-item-number">68</p>
+            </div>
+            <div class="stats__counters-item">
+              <p class="stats__counters-views">Last month</p>
+              <p class="stats__counters-item-number">13</p>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="stats__item">
+        <div class="stats__header">
+          <h3 class="stats__title">Company website views</h3>
+          <div class="stats__period">Last month</div>
+        </div>
+        <div class="stats__chart stats__chart--page-views-statistics js-page-views-statistics"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+</main>
+<footer class="footer">
+  <div class="footer__overlay">
+    <div class="footer__wrapper">
+      <div class="footer__group">
+        <div class="footer__info">
+          <a href="/" class="footer__title">
+            <h3 class="footer__title-link">ReadyToTouch</h3>
+          </a>
+          <p class="footer__subtitle">Space to help you find jobs</p>
+          <img width="98"
+               height="64"
+               loading="lazy"
+               class="footer__ukraine-map"
+               src="/assets/images/pages/online-new/ukraine-map.svg"
+               alt="Map of Ukraine"
+          >
+        </div>
+        <div class="footer__right-side">
+          <iframe class="footer__stars"
+                  src="https://ghbtns.com/github-btn.html?user=readytotouch&repo=readytotouch.github.io&type=star&count=true&size=large"
+                  width="168"
+                  height="33"
+                  title="GitHub"
+          ></iframe>
+          <div class="footer__support">
+            <a href="https://savelife.in.ua/en/" target="_blank" class="button button--bordered-gray footer__link">
+              <figure class="footer__support-figure">
+                <img width="49"
+                     height="23"
+                     src="/assets/images/pages/common-images/come_back_alive.svg"
+                     alt="come back alive logo"
+                >
+                <figcaption class="footer__support-caption">Support</figcaption>
+              </figure>
+              <div class="footer__support-icon-box">
+                <img width="18"
+                     height="18"
+                     src="/assets/images/pages/common/external-link.svg"
+                     alt="external link icon"
+                >
+              </div>
+            </a>
+            <a href="https://war.ukraine.ua/" target="_blank" class="button button--bordered-gray footer__link">
+              war.ukraine.ua
+              <div class="footer__support-icon-box">
+                <img width="18"
+                     height="18"
+                     src="/assets/images/pages/common/external-link.svg"
+                     alt="external link icon"
+                >
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copyrights">
+        &copy; 2024 Yaroslav Podorvanov
+        <img width="24"
+             height="24"
+             class="footer__flag-ua"
+             src="/assets/images/pages/online-new/ua_flag_with_waves.svg"
+             alt="Flag of Ukraine"
+        >
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="/assets/js/organizer-statistics_dc65fd8121d6137b05cb63138c8924c4.js"></script>
+</body>
+</html>
+
