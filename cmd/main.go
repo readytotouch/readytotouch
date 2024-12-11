@@ -179,7 +179,7 @@ func main() {
 	r.GET("/organizers/golang/companies/:company_alias", organizerController.CompanyV2)
 	r.GET("/organizers/golang/companies/:company_alias/v1", organizerController.CompanyV1)
 	r.GET("/organizers/golang/companies/:company_alias/v2", organizerController.CompanyV2)
-	r.GET("/organizers/golang/vacancies", organizerController.Waitlist)
+	r.GET("/organizers/golang/vacancies", organizerController.Vacancies)
 	r.GET("/organizers/golang/communities", organizerController.GolangCommunities)
 	r.GET("/organizers/rust/companies", organizerController.CompaniesV2)
 	r.GET("/organizers/rust/companies/v1", organizerController.CompaniesV1)

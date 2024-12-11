@@ -418,6 +418,41 @@ func (c *Controller) CompanyV2(ctx *gin.Context) {
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
 }
 
+func (c *Controller) Vacancies(ctx *gin.Context) {
+	var (
+		authUserID = domain.ContextGetUserID(ctx)
+	)
+
+	organizerFeature, ok := c.organizerFeature(ctx.FullPath())
+	if !ok {
+		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Feature not found"))
+
+		return
+	}
+
+	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)
+	if err != nil {
+		// @TODO logging
+
+		// NOP, continue
+	}
+
+	companies := c.companies(organizerFeature)
+
+	_ = companies
+
+	content := template.OrganizersVacanciesV2(
+		organizerFeature,
+		headerProfiles,
+		nil,
+		nil,
+		nil,
+		c.redirect(organizerFeature.Path),
+	)
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
+}
+
 func (c *Controller) trimCompanyAlias(ctx *gin.Context) (result string) {
 	result = ctx.FullPath()
 	result = strings.TrimSuffix(result, "/:company_alias")
