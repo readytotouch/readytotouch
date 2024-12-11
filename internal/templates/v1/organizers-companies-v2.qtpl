@@ -435,16 +435,10 @@
                               <a href="{%s company.GlassdoorProfile.OverviewURL %}" class="card__links-link">Glassdoor</a>
                               {% if company.GlassdoorProfile.Verified %}
                               <span class="card__links-link card__links-link--verify">
-                                  {% comment %}
-                                  <!--
-                                    LinkedIn's verified icon used
-                                    not enough space for Glassdoor's verified icon
-                                  -->
-                                  {% endcomment %}
                                   <img
                                       class="card__links-icon"
                                       alt="icon"
-                                      src="/assets/images/pages/organizer/verified-icon.png"
+                                      src="/assets/images/pages/organizer/verified-icon-2.png"
                                   />
                               </span>
                               {% endif %}

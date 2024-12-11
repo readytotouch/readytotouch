@@ -604,12 +604,10 @@ func StreamOrganizersCompaniesV2(qw422016 *qt422016.Writer,
 			if company.GlassdoorProfile.Verified {
 				qw422016.N().S(`
                               <span class="card__links-link card__links-link--verify">
-                                  `)
-				qw422016.N().S(`
                                   <img
                                       class="card__links-icon"
                                       alt="icon"
-                                      src="/assets/images/pages/organizer/verified-icon.png"
+                                      src="/assets/images/pages/organizer/verified-icon-2.png"
                                   />
                               </span>
                               `)
