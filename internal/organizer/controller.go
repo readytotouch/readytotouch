@@ -1172,10 +1172,10 @@ func (c *Controller) findCompany(ctx *gin.Context, alias string) (domain.Company
 
 func (c *Controller) toPrepareCompany(company domain.CompanyProfile) domain.PreparedCompany {
 	return domain.PreparedCompany{
-		ID:                   company.ID,
-		Type:                 company.Type,
-		Name:                 company.Name,
-		LinkedInProfileAlias: company.LinkedInProfile.Alias,
-		Industries:           company.Industries,
+		ID:         company.ID,
+		Type:       company.Type,
+		Name:       company.Name,
+		Alias:      company.LinkedInProfile.Alias,
+		Industries: company.Industries,
 	}
 }

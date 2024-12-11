@@ -1062,9 +1062,9 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 							<a href="`)
 		qw422016.E().S(organizerFeature.Path)
 		qw422016.N().S(`/`)
-		qw422016.E().S(company.LinkedInProfile.Alias)
+		qw422016.E().S(vacancy.Company.Alias)
 		qw422016.N().S(`" class="card__sub-headline vacancy__link">`)
-		qw422016.E().S(company.Name)
+		qw422016.E().S(vacancy.Company.Name)
 		qw422016.N().S(`</a>
 						</figcaption>
 					</figure>
