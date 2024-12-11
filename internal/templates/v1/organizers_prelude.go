@@ -45,8 +45,6 @@ type (
 )
 
 type featureNavigation struct {
-	vacanciesURL    string
-	companiesURL    string
 	companiesActive string
 	vacanciesActive string
 }
@@ -54,8 +52,6 @@ type featureNavigation struct {
 func toFeatureNavigation(path string) featureNavigation {
 	if strings.HasSuffix(path, "/companies") {
 		return featureNavigation{
-			vacanciesURL:    strings.Replace(path, "/companies", "/vacancies", 1),
-			companiesURL:    path,
 			companiesActive: "active",
 			vacanciesActive: "",
 		}
@@ -63,16 +59,12 @@ func toFeatureNavigation(path string) featureNavigation {
 
 	if strings.HasSuffix(path, "/vacancies") {
 		return featureNavigation{
-			vacanciesURL:    path,
-			companiesURL:    strings.Replace(path, "/vacancies", "/companies", 1),
 			companiesActive: "",
 			vacanciesActive: "active",
 		}
 	}
 
 	return featureNavigation{
-		vacanciesURL:    "javascript:void(0)",
-		companiesURL:    "javascript:void(0)",
 		companiesActive: "",
 		vacanciesActive: "",
 	}
