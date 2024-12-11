@@ -276,7 +276,7 @@ func main() {
 		GET("/design/organizers/:language/companies", s("./public/design/organizer-companies.html")).
 		GET("/design/organizers/:language/companies/v1", s("./public/design-v1/organizer-companies.html")).
 		GET("/design/organizers/:language/companies/v2", s("./public/design/organizer-companies.html")).
-		GET("/design/organizers/:language/vacancies", s("./public/design/organizer-vacancies-subscribe.html")).
+		GET("/design/organizers/:language/vacancies", s("./public/design/organizer-vacancies.html")).
 		GET("/design/organizers/:language/vacancies/subscribe", s("./public/design/organizer-vacancies-subscribe.html")).
 		GET("/design/organizers/:language/vacancies/unsubscribe", s("./public/design/organizer-vacancies-unsubscribe.html")).
 		GET("/design/organizers/golang/communities", s("./public/design/organizer-go-communities.html")).
