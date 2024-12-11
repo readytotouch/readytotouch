@@ -1,0 +1,11 @@
+{%- func OrganizersCompaniesV2(
+  organizerFeature OrganizerFeature,
+  headerProfiles []SocialProviderUser,
+  companies []Company,
+  ukrainianUniversities []University,
+  czechUniversities []University,
+  userCompanyFavoriteMap map[int64]bool,
+  authQueryParams string,
+) -%}
+
+{%- endfunc -%}

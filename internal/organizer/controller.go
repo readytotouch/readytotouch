@@ -122,38 +122,7 @@ func (c *Controller) CompaniesV1(ctx *gin.Context) {
 		// NOP, continue
 	}
 
-	var (
-		source    = db.Companies()
-		companies = make([]domain.CompanyProfile, 0, len(source))
-	)
-	for _, company := range source {
-		company.ID = organizers.CompanyAliasMap[company.LinkedInProfile.Alias]
-		if company.ID == 0 {
-			// make generate-organizers
-
-			continue
-		}
-
-		if company.Type == "" {
-			company.Type = organizers.ToCompanyType(company.LinkedInProfile.Alias)
-		}
-		if company.Website == "" {
-			company.Website = company.URL
-		}
-
-		language := organizerFeature.Organizer.Language
-		if len(company.Languages[language].Vacancies) == 0 && company.Vacancies[language] == nil {
-			continue
-		}
-
-		if language == domain.Go {
-			// NOP
-		} else {
-			company.GitHubProfile.GoRepositoryCount = 0
-		}
-
-		companies = append(companies, company)
-	}
+	companies := c.companies(organizerFeature)
 
 	userCompanyFavoriteMap, err := c.userFavoriteCompanyRepository.GetMap(ctx, authUserID, nil)
 	if err != nil {
@@ -176,7 +145,44 @@ func (c *Controller) CompaniesV1(ctx *gin.Context) {
 }
 
 func (c *Controller) CompaniesV2(ctx *gin.Context) {
-	c.CompaniesV1(ctx)
+	var (
+		authUserID = domain.ContextGetUserID(ctx)
+	)
+
+	organizerFeature, ok := c.organizerFeature(ctx.FullPath())
+	if !ok {
+		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Feature not found"))
+
+		return
+	}
+
+	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)
+	if err != nil {
+		// @TODO logging
+
+		// NOP, continue
+	}
+
+	companies := c.companies(organizerFeature)
+
+	userCompanyFavoriteMap, err := c.userFavoriteCompanyRepository.GetMap(ctx, authUserID, nil)
+	if err != nil {
+		// @TODO logging
+
+		// NOP, continue
+	}
+
+	content := template.OrganizersCompaniesV2(
+		organizerFeature,
+		headerProfiles,
+		companies,
+		db.UkrainianUniversities(),
+		db.CzechUniversities(),
+		userCompanyFavoriteMap,
+		c.redirect(organizerFeature.Path),
+	)
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
 }
 
 func (c *Controller) CompanyV1(ctx *gin.Context) {
@@ -1035,6 +1041,36 @@ func (c *Controller) getHeaderProfiles(ctx *gin.Context, userID int64) ([]domain
 	}
 
 	return nil, nil
+}
+
+func (c *Controller) companies(organizerFeature domain.OrganizerFeature) []domain.CompanyProfile {
+	var (
+		source    = db.Companies()
+		companies = make([]domain.CompanyProfile, 0, len(source))
+	)
+	for _, company := range source {
+		company.ID = organizers.CompanyAliasMap[company.LinkedInProfile.Alias]
+		if company.ID == 0 {
+			// make generate-organizers
+
+			continue
+		}
+
+		if company.Type == "" {
+			company.Type = organizers.ToCompanyType(company.LinkedInProfile.Alias)
+		}
+		if company.Website == "" {
+			company.Website = company.URL
+		}
+
+		language := organizerFeature.Organizer.Language
+		if len(company.Languages[language].Vacancies) == 0 && company.Vacancies[language] == nil {
+			continue
+		}
+
+		companies = append(companies, company)
+	}
+	return companies
 }
 
 func (c *Controller) findCompany(ctx *gin.Context, alias string) (domain.CompanyProfile, bool) {

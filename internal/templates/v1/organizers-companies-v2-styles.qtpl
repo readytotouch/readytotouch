@@ -1,0 +1,2 @@
+{% func organizersCompaniesV2Styles() %}
+{% endfunc %}
