@@ -298,198 +298,159 @@
               </div>
               <p class="js-company-description card__text">{%s company.ShortDescription %}</p>
               <div class="card__links">
-                <ul class="card__links-group">
-                  <li class="card__links-item">
-                    <img
-                      class="card__links-icon"
-                      alt="linkedin icon"
-                      width="20"
-                      height="20"
-                      src="/assets/images/pages/organizer/linkedin.svg"
-                    />
-                    <a href="https://www.linkedin.com/company/{%s company.LinkedInProfile.Alias %}/" class="button-link card__links-link">LinkedIn</a>
-                  </li>
-                  <li class="card__links-item">
-                    <a href="{%s linkedinConnectionsURL([]Company{company}, ukrainianUniversities) %}" class="button-link card__links-link">Connections             <img
-                            class="checkbox__content-image"
-                            alt="Flag of Ukraine with waves"
-                            width="16"
-                            height="16"
-                            src="/assets/images/pages/online-new/ua_flag_with_waves.svg"
-                    /></a>
-                  </li>
-                  <li class="card__links-item">
-                    <a href="{%s linkedinConnectionsURL([]Company{company}, czechUniversities) %}" class="button-link card__links-link">Connections             <img
-                            class="checkbox__content-image"
-                            alt="Flag of Czechia"
-                            width="16"
-                            height="16"
-                            src="/assets/images/pages/online-new/cz_flag.svg"
-                    /></a>
-                  </li>
-                  <li class="card__links-item">
-                    <a href="{%s linkedinConnectionsURL([]Company{company}, nil) %}" class="button-link card__links-link">Connections</a>
-                  </li>
-                  <li class="card__links-item">
-                    <a href="{%s linkedinJobsURL([]Company{company}, string(organizerFeature.Organizer.LanguageTitleKeywords)) %}" class="button-link card__links-link">Jobs</a>
-                  </li>
-                </ul>
-                {%- if company.GitHubProfile.Login == "" -%}
                   <ul class="card__links-group">
-                    <li class="card__links-item card__links-item--disabled">
-                      <img
-                        class="card__links-icon"
-                        alt="github icon"
-                        width="20"
-                        height="20"
-                        src="/assets/images/pages/organizer/github.svg"
-                      />
-                      <a href="{%s googleSearchGitHub(company.Name) %}" class="card__links-link card__links-link--google">
-                        <img
-                          class="card__links-icon card__links-icon--google"
-                          alt="google icon"
-                          width="20"
-                          height="20"
-                          src="/assets/images/pages/organizer/google.svg"
-                        />
-                      </a>
-                      <span class="button-link card__links-link">GitHub</span>
-                    </li>
+                      <li class="card__links-item card__links-item--title">
+                          <div class="card__links-item-group">
+                              <img
+                                  class="card__links-icon"
+                                  alt="linkedin icon"
+                                  width="32"
+                                  height="32"
+                                  src="/assets/images/pages/organizer/linkedin.svg"
+                              />
+                              <a href="https://www.linkedin.com/company/{%s company.LinkedInProfile.Alias %}/" class="card__links-link">LinkedIn</a>
+                              {% if company.LinkedInProfile.Verified %}
+                              <a href="https://www.linkedin.com/company/{%s company.LinkedInProfile.Alias %}/about" class="card__links-link card__links-link--verify">
+                                  <img
+                                      class="card__links-icon"
+                                      alt="icon"
+                                      src="/assets/images/pages/organizer/verified-icon.png"
+                                  />
+                              </a>
+                              {% endif %}
+                          </div>
+                      </li>
+                      <li class="card__links-item">
+                          <a href="https://www.linkedin.com/company/{%s company.LinkedInProfile.Alias %}/" class="button-link card__links-link">Overview</a>
+                      </li>
+                      <li class="card__links-item">
+                          <a href="{%s linkedinConnectionsURL([]Company{company}, nil) %}" class="button-link card__links-link">Connections</a>
+                          <img
+                              class="card__links-icon"
+                              alt="language icon"
+                              width="20"
+                              height="20"
+                              src="/assets/images/pages/organizer/language.svg"
+                          />
+                      </li>
+                      <li class="card__links-item">
+                          <a href="{%s linkedinConnectionsURL([]Company{company}, ukrainianUniversities) %}" class="button-link card__links-link">Connections 🇺🇦</a>
+                      </li>
+                      <li class="card__links-item">
+                          <a href="{%s linkedinConnectionsURL([]Company{company}, czechUniversities) %}" class="button-link card__links-link">Connections 🇨🇿</a>
+                      </li>
+                      <li class="card__links-item">
+                          <a href="{%s linkedinJobsURL([]Company{company}, string(organizerFeature.Organizer.LanguageTitleKeywords)) %}" class="button-link card__links-link">Jobs</a>
+                      </li>
                   </ul>
-                {% else %}
                   <ul class="card__links-group">
-                    <li class="card__links-item">
-                      <img
-                        class="card__links-icon"
-                        alt="github icon"
-                        width="20"
-                        height="20"
-                        src="/assets/images/pages/organizer/github.svg"
-                      />
-                      <a href="https://github.com/{%s company.GitHubProfile.Login %}" class="button-link card__links-link">GitHub</a>
-                    </li>
-                    <li class="card__links-item">
-                      <a href="https://github.com/orgs/{%s company.GitHubProfile.Login %}/repositories?q=lang:{%s organizerFeature.Organizer.GitHubAlias %}" class="button-link card__links-link" title="{%d fetchGitHubRepositoriesCount(company, organizerFeature.Organizer.Language) %} repositories">Repositories</a>
-                    </li>
+                      {% if company.GitHubProfile.Login == "" %}
+                      <li class="card__links-item card__links-item--title card__links-item--disabled">
+                          <div class="card__links-item-group">
+                              <img
+                                  class="card__links-icon"
+                                  alt="github icon"
+                                  width="32"
+                                  height="32"
+                                  src="/assets/images/pages/organizer/github.svg"
+                              />
+                              <span class="card__links-link">GitHub</span>
+                          </div>
+                      </li>
+                      <li class="card__links-item card__links-item--disabled">
+                          <span class="button-link card__links-link">Overview</span>
+                          <a href="{%s googleSearchGitHub(company.Name) %}" class="card__links-link card__links-link--google">
+                              <img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+                          </a>
+                      </li>
+                      <li class="card__links-item card__links-item--disabled">
+                          <span class="button-link card__links-link">Repositories (?)</span>
+                      </li>
+                      {% else %}
+                      <li class="card__links-item card__links-item--title">
+                          <div class="card__links-item-group">
+                              <img
+                                  class="card__links-icon"
+                                  alt="github icon"
+                                  width="32"
+                                  height="32"
+                                  src="/assets/images/pages/organizer/github.svg"
+                              />
+                              {% if company.GitHubProfile.Verified %}
+                              <span class="card__links-link card__links-link--verify">
+                                  <img
+                                      class="card__links-icon"
+                                      alt="icon"
+                                      src="/assets/images/pages/organizer/verified.png"
+                                  />
+                              </span>
+                              {% endif %}
+                              <a href="https://github.com/{%s company.GitHubProfile.Login %}" class="card__links-link">GitHub</a>
+                          </div>
+                      </li>
+                      <li class="card__links-item">
+                          <a href="https://github.com/{%s company.GitHubProfile.Login %}" class="button-link card__links-link">Overview</a>
+                      </li>
+                      <li class="card__links-item">
+                          <a href="https://github.com/orgs/{%s company.GitHubProfile.Login %}/repositories?q=lang:{%s organizerFeature.Organizer.GitHubAlias %}" class="button-link card__links-link">Repositories ({%d fetchGitHubRepositoriesCount(company, organizerFeature.Organizer.Language) %})</a>
+                      </li>
+                      {% endif %}
                   </ul>
-                {%- endif -%}
-                {%- if company.GlassdoorProfile.OverviewURL == "" -%}
                   <ul class="card__links-group">
-                    <li class="card__links-item card__links-item--disabled">
-                      <img
-                        class="card__links-icon"
-                        alt="glassdoor icon"
-                        width="20"
-                        height="20"
-                        src="/assets/images/pages/organizer/glassdoor.svg"
-                      />
-                      <a href="{%s googleSearchGlassdoor(company.Name) %}" class="card__links-link card__links-link--google">
-                        <img
-                          class="card__links-icon card__links-icon--google"
-                          alt="google icon"
-                          width="20"
-                          height="20"
-                          src="/assets/images/pages/organizer/google.svg"
-                        />
-                      </a>
-                      <span class="button-link card__links-link">Glassdoor</span>
-                    </li>
+                      {% if company.GlassdoorProfile.OverviewURL == "" %}
+                      <li class="card__links-item card__links-item--title card__links-item--disabled">
+                          <div class="card__links-item-group">
+                              <img
+                                  class="card__links-icon"
+                                  alt="glassdoor icon"
+                                  width="32"
+                                  height="32"
+                                  src="/assets/images/pages/organizer/glassdoor.svg"
+                              />
+                              <span class="card__links-link">Glassdoor</span>
+                          </div>
+                      </li>
+                      <li class="card__links-item card__links-item--disabled">
+                          <span class="button-link card__links-link">Overview</span>
+                          <a href="{%s googleSearchGlassdoor(company.Name) %}" class="card__links-link card__links-link--google">
+                              <img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+                          </a>
+                      </li>
+                      <li class="card__links-item card__links-item--disabled">
+                          <span class="button-link card__links-link">Reviews</span>
+                          <span class="card__links-link-star">?.? ★</span>
+                      </li>
+                      {% else %}
+                      <li class="card__links-item card__links-item--title">
+                          <div class="card__links-item-group">
+                              <img
+                                  class="card__links-icon"
+                                  alt="glassdoor icon"
+                                  width="32"
+                                  height="32"
+                                  src="/assets/images/pages/organizer/glassdoor.svg"
+                              />
+                              <a href="{%s company.GlassdoorProfile.OverviewURL %}" class="card__links-link">Glassdoor</a>
+                              {% if company.GlassdoorProfile.Verified %}
+                              <span class="card__links-link card__links-link--verify">
+                                  <img
+                                      class="card__links-icon"
+                                      alt="icon"
+                                      src="/assets/images/pages/organizer/verified-emp.png"
+                                  />
+                              </span>
+                              {% endif %}
+                          </div>
+                      </li>
+                      <li class="card__links-item">
+                          <a href="{%s company.GlassdoorProfile.OverviewURL %}" class="button-link card__links-link">Overview</a>
+                      </li>
+                      <li class="card__links-item">
+                          <a href="{%s company.GlassdoorProfile.ReviewsURL %}" class="button-link card__links-link">Reviews</a>
+                          <span class="card__links-link-star">{%s formatGlassdoorReviewsRate(company.GlassdoorProfile.ReviewsRate) %} ★</span>
+                      </li>
+                      {% endif %}
                   </ul>
-                {% else %}
-                  <ul class="card__links-group">
-                    <li class="card__links-item">
-                      <img
-                        class="card__links-icon"
-                        alt="glassdoor icon"
-                        width="20"
-                        height="20"
-                        src="/assets/images/pages/organizer/glassdoor.svg"
-                      />
-                      <a href="{%s company.GlassdoorProfile.OverviewURL %}" class="button-link card__links-link">Glassdoor</a>
-                    </li>
-                    <li class="card__links-item">
-                      <a href="{%s company.GlassdoorProfile.ReviewsURL %}" class="button-link card__links-link">Reviews</a>
-                    </li>
-                  </ul>
-                {%- endif -%}
-                <ul class="card__links-group card__links-group--unbordered">
-                  <li class="card__links-item">
-                    <img
-                      class="card__links-icon"
-                      alt="similarweb icon"
-                      width="20"
-                      height="20"
-                      src="/assets/images/pages/organizer/similarweb.svg"
-                    />
-                    <a href="{%s similarwebURL(company.Website) %}" class="button-link card__links-link">SimilarWeb</a>
-                  </li>
-                  <li class="card__links-item">
-                    <img
-                      class="card__links-icon"
-                      alt="whois icon"
-                      width="20"
-                      height="20"
-                      src="/assets/images/pages/organizer/whois.svg"
-                    />
-                    <a href="{%s whoisURL(company.Website) %}" class="button-link card__links-link">Whois</a>
-                  </li>
-
-                  {% comment %}
-                    <!-- @TODO XING -->
-                  {% endcomment %}
-                  <li class="card__links-item card__links-item--disabled">
-                    <img
-                      class="card__links-icon"
-                      alt="xing icon"
-                      width="20"
-                      height="20"
-                      src="/assets/images/pages/organizer/xing.svg"
-                    />
-                    <a href="{%s googleSearchXing(company.Name) %}" class="card__links-link card__links-link--google">
-                      <img
-                        class="card__links-icon card__links-icon--google"
-                        alt="google icon"
-                        width="20"
-                        height="20"
-                        src="/assets/images/pages/organizer/google.svg"
-                      />
-                    </a>
-                    <span class="button-link card__links-link">XING</span>
-                  </li>
-
-                  {%- if company.OttaProfileSlug == "" -%}
-                    <li class="card__links-item card__links-item--disabled">
-                      <img
-                        class="card__links-icon"
-                        alt="otta icon"
-                        width="20"
-                        height="20"
-                        src="/assets/images/pages/organizer/otta.svg"
-                      />
-                      <a href="{%s googleSearchOtta(company.Name) %}" class="card__links-link card__links-link--google">
-                        <img
-                          class="card__links-icon card__links-icon--google"
-                          alt="google icon"
-                          width="20"
-                          height="20"
-                          src="/assets/images/pages/organizer/google.svg"
-                        />
-                      </a>
-                      <span class="button-link card__links-link">Otta</span>
-                    </li>
-                  {% else %}
-                    <li class="card__links-item">
-                      <img
-                        class="card__links-icon"
-                        alt="otta icon"
-                        width="20"
-                        height="20"
-                        src="/assets/images/pages/organizer/otta.svg"
-                      />
-                      <a href="https://app.otta.com/companies/{%s company.OttaProfileSlug %}" class="button-link card__links-link">Otta</a>
-                    </li>
-                  {%- endif -%}
-                </ul>
               </div>
               <div class="card__footer">
                   <a href="{%s organizerFeature.Path %}/{%s company.LinkedInProfile.Alias %}/" class="card__footer-button button button-link">
