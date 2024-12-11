@@ -11,8 +11,9 @@ import (
 )
 
 type (
-	Company    = domain.CompanyProfile
-	University = domain.University
+	Company         = domain.CompanyProfile
+	University      = domain.University
+	PreparedVacancy = domain.PreparedVacancy
 )
 
 const (
@@ -134,6 +135,70 @@ func googleSearchGlassdoor(companyName string) string {
 	return "https://www.google.com/search?" + values.Encode()
 }
 
+func googleSearchBlind(companyName string) string {
+	values := url.Values{
+		"q": {"site:teamblind.com" + " " + companyName},
+	}
+
+	return "https://www.google.com/search?" + values.Encode()
+}
+
+func googleSearchLevelsFyi(companyName string) string {
+	values := url.Values{
+		"q": {"site:levels.fyi" + " " + companyName},
+	}
+
+	return "https://www.google.com/search?" + values.Encode()
+}
+
+func googleSearchIndeed(companyName string) string {
+	values := url.Values{
+		"q": {"site:indeed.com" + " " + companyName},
+	}
+
+	return "https://www.google.com/search?" + values.Encode()
+}
+
+func googleSearchDealroom(companyName string) string {
+	values := url.Values{
+		"q": {"site:dealroom.co" + " " + companyName},
+	}
+
+	return "https://www.google.com/search?" + values.Encode()
+}
+
+func googleSearchCrunchbase(companyName string) string {
+	values := url.Values{
+		"q": {"site:crunchbase.com" + " " + companyName},
+	}
+
+	return "https://www.google.com/search?" + values.Encode()
+}
+
+func googleSearchPitchbook(companyName string) string {
+	values := url.Values{
+		"q": {"site:pitchbook.com" + " " + companyName},
+	}
+
+	return "https://www.google.com/search?" + values.Encode()
+}
+
+func googleSearchYahooFinance(companyName string) string {
+	values := url.Values{
+		"q": {"site:finance.yahoo.com/quote/" + " " + companyName},
+	}
+
+	return "https://www.google.com/search?" + values.Encode()
+}
+
+func googleSearchGoogleFinance(companyName string) string {
+	values := url.Values{
+		"q": {"site:google.com/finance/quote/" + " " + companyName},
+	}
+
+	return "https://www.google.com/search?" + values.Encode()
+}
+
 func googleSearchXing(companyName string) string {
 	values := url.Values{
 		"q": {"site:xing.com" + " " + companyName},
@@ -145,6 +210,14 @@ func googleSearchXing(companyName string) string {
 func googleSearchOtta(companyName string) string {
 	values := url.Values{
 		"q": {"site:otta.com" + " " + companyName},
+	}
+
+	return "https://www.google.com/search?" + values.Encode()
+}
+
+func googleSearchYCombinator(companyName string) string {
+	values := url.Values{
+		"q": {"site:ycombinator.com/companies/" + " " + companyName},
 	}
 
 	return "https://www.google.com/search?" + values.Encode()

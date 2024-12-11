@@ -8,10 +8,11 @@ ON CONFLICT (user_id, company_id)
 WHERE t.favorite <> excluded.favorite;
 
 -- name: UserFavoriteCompanies :many
-SELECT company_id
-FROM user_favorite_companies
-WHERE user_id = @user_id
-  AND favorite = TRUE;
+SELECT ufc.company_id
+FROM user_favorite_companies ufc
+WHERE ufc.user_id = @user_id
+  AND (@company_ids_filter_exists::BOOLEAN = FALSE OR ufc.company_id = ANY (@company_ids::BIGINT[]))
+  AND ufc.favorite = TRUE;
 
 -- name: UserFavoriteCompaniesStats :one
 SELECT COUNT(*)                                                             AS count,

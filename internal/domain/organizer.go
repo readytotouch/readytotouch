@@ -13,6 +13,7 @@ type Organizer struct {
 	Language              Language
 	LanguageTitleKeywords LanguageTitleKeywords
 	Alias                 string
+	GitHubAlias           string
 	Title                 string
 	Logo                  string
 	Keywords              string // for SEO
@@ -24,6 +25,7 @@ var (
 		Language:              Go,
 		LanguageTitleKeywords: GoTitleKeywords,
 		Alias:                 "golang",
+		GitHubAlias:           "go",
 		Title:                 "Golang",
 		Logo:                  "golang-organizer.svg",
 		Keywords:              "Go, Golang, GoLand, Companies using Go, Companies using Golang, Companies using GoLand, Go companies, Golang companies, GoLand companies, Go connections, Golang connections, GoLand connections",
@@ -33,6 +35,7 @@ var (
 		Language:              Rust,
 		LanguageTitleKeywords: RustTitleKeywords,
 		Alias:                 "rust",
+		GitHubAlias:           "rust",
 		Title:                 "Rust",
 		Logo:                  "rust-organizer.svg",
 		Keywords:              "Rust, RustRover, Companies using Rust, Companies using RustRover, Rust companies, RustRover companies, Rust connections, RustRover connections",
@@ -42,6 +45,7 @@ var (
 		Language:              Zig,
 		LanguageTitleKeywords: ZigTitleKeywords,
 		Alias:                 "zig",
+		GitHubAlias:           "zig",
 		Title:                 "Zig",
 		Logo:                  "zig-organizer.svg",
 		Keywords:              "Zig, Companies using Zig, Zig companies, Zig connections",
@@ -51,6 +55,7 @@ var (
 		Language:              Scala,
 		LanguageTitleKeywords: ScalaTitleKeywords,
 		Alias:                 "scala",
+		GitHubAlias:           "scala",
 		Title:                 "Scala",
 		Logo:                  "scala-organizer.svg",
 		Keywords:              "Scala, Companies using Scala, Scala companies, Scala connections",
@@ -60,6 +65,7 @@ var (
 		Language:              Elixir,
 		LanguageTitleKeywords: ElixirTitleKeywords,
 		Alias:                 "elixir",
+		GitHubAlias:           "elixir",
 		Title:                 "Elixir",
 		Logo:                  "elixir-organizer.svg",
 		Keywords:              "Elixir, Erlang, Companies using Elixir, Companies using Erlang, Elixir companies, Erlang companies, Elixir connections, Erlang connections",
@@ -69,6 +75,7 @@ var (
 		Language:              Clojure,
 		LanguageTitleKeywords: ClojureTitleKeywords,
 		Alias:                 "clojure",
+		GitHubAlias:           "clojure",
 		Title:                 "Clojure",
 		Logo:                  "clojure-organizer.svg",
 		Keywords:              "Clojure, Companies using Clojure, Clojure companies, Clojure connections",

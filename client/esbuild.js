@@ -3,6 +3,8 @@ require("esbuild").buildSync({
         "./src/online-stats-app.ts",
         "./src/waitlist-stats-app.ts",
         "./src/organizers-companies-app.ts",
+        "./src/organizers-vacancies-app.ts",
+        "./src/organizers-communities-app.ts",
         "./src/organizers-company-app.ts",
         "./src/wip-companies-and-connections-app.ts",
     ],

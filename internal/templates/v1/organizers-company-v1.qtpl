@@ -1,4 +1,4 @@
-{%- func OrganizersCompany(
+{%- func OrganizersCompanyV1(
   organizerFeature OrganizerFeature,
   headerProfiles []SocialProviderUser,
   company Company,
@@ -22,14 +22,14 @@
 
     {%= favicon() %}
     {%= organizersFonts() %}
-    {%= organizersCompanyStyles() %}
+    {%= organizersCompanyV1Styles() %}
     <script src="https://cdn.jsdelivr.net/npm/apexcharts@3.52.0"></script>
     {%= ga() %}
 </head>
 
 <body class="organizer-companies-inner">
 <main class="main-wrapper">
-	<header class="header">
+<header class="header">
   <div class="header__wrapper">
     <a href="/organizers" class="header__logo">
       <img
@@ -40,13 +40,15 @@
         alt="organizer logo"
       />
     </a>
-    {% code var navigation = toFeatureNavigation(organizerFeature.Path) %}
     <ul class="header__nav">
       <li class="header__nav-item">
-        <a href="{%s navigation.companiesURL %}" class="header__nav-link {%s navigation.companiesActive %}">Companies</a>
+        <a href="/organizers/{%s organizerFeature.Organizer.Alias %}/companies" class="header__nav-link active">Companies</a>
       </li>
       <li class="header__nav-item">
-        <a href="{%s navigation.vacanciesURL %}" class="header__nav-link {%s navigation.vacanciesActive %}">Vacancies</a>
+        <a href="/organizers/{%s organizerFeature.Organizer.Alias %}/vacancies" class="header__nav-link">Vacancies</a>
+      </li>
+      <li class="header__nav-item">
+        <a href="/organizers/{%s organizerFeature.Organizer.Alias %}/communities" class="header__nav-link">Communities</a>
       </li>
     </ul>
     {%= organizersHeaderStars() %}
@@ -107,7 +109,7 @@
     {% endif %}
 
     {% comment %}
-    <a href="{%s organizerFeature.Path %}/{%s company.LinkedInProfile.Alias %}/" class="button-group__item" title="View statistics">
+    <a href="{%s organizerFeature.Path %}/{%s company.LinkedInProfile.Alias %}" class="button-group__item" title="View statistics">
       <img width="20" height="20" alt="icon stats" src="/assets/images/pages/common/stats.svg" />
     </a>
     {% endcomment %}
@@ -223,10 +225,7 @@
           <a href="https://github.com/{%s company.GitHubProfile.Login %}" class="button-link card__links-link">GitHub</a>
         </li>
         <li class="card__links-item">
-          {% comment %}
-            <!-- @TODO Rust, Zig, Scala, Elixir, Clojure, Haskell repositories -->
-          {% endcomment %}
-          <a href="https://github.com/orgs/{%s company.GitHubProfile.Login %}/repositories?q=lang:go" class="button-link card__links-link" title="{%d company.GitHubProfile.GoRepositoryCount %} repositories">Repositories</a>
+          <a href="https://github.com/orgs/{%s company.GitHubProfile.Login %}/repositories?q=lang:{%s organizerFeature.Organizer.GitHubAlias %}" class="button-link card__links-link" title="{%d fetchGitHubRepositoriesCount(company, organizerFeature.Organizer.Language) %} repositories">Repositories</a>
         </li>
       </ul>
     {%- endif -%}
