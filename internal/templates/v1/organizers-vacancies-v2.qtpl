@@ -1,6 +1,7 @@
 {%- func OrganizersVacanciesV2(
   organizerFeature OrganizerFeature,
   headerProfiles []SocialProviderUser,
+  companies []Company,
   vacancies []PreparedVacancy,
   userVacancyFavoriteMap map[int64]bool,
   vacancyMonthlyViewsMap map[int64]int64,
@@ -81,7 +82,25 @@
 </div>
 
 <section class="search-container container">
-    <!-- TODO   -->
+  <div class="search search--org-vacancies search--organizer">
+    <div class="search__input-group">
+      <input class="search__input" id="js-vacancy-query" type="search" name="search" placeholder="Search" list="js-vacancy-query-datalist" />
+      <datalist id="js-vacancy-query-datalist">
+        {% for _, company := range companies %}
+          <option value="{%s company.Name %}"></option>
+        {% endfor %}
+      </datalist>
+      <img class="search__icon" alt="Search icon" width="20" height="20" src="/assets/images/pages/common/search.svg" />
+    </div>
+    {% comment %}
+		<select class="search__select search__common-select" name="sort">
+			<option selected>Newest first</option>
+			<option selected>Oldest first</option>
+			<option selected>Most viewed</option>
+			<option selected>Least viewed</option>
+		</select>
+    {% endcomment %}
+  </div>
 </section>
 
 <div class="search-result mt-32">

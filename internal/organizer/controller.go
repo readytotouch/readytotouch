@@ -122,7 +122,7 @@ func (c *Controller) CompaniesV1(ctx *gin.Context) {
 		// NOP, continue
 	}
 
-	companies := c.companies(organizerFeature)
+	companies := c.companies(organizerFeature, false)
 
 	userCompanyFavoriteMap, err := c.userFavoriteCompanyRepository.GetMap(ctx, authUserID, nil)
 	if err != nil {
@@ -163,7 +163,7 @@ func (c *Controller) CompaniesV2(ctx *gin.Context) {
 		// NOP, continue
 	}
 
-	companies := c.companies(organizerFeature)
+	companies := c.companies(organizerFeature, false)
 
 	userCompanyFavoriteMap, err := c.userFavoriteCompanyRepository.GetMap(ctx, authUserID, nil)
 	if err != nil {
@@ -364,6 +364,7 @@ func (c *Controller) CompanyV2(ctx *gin.Context) {
 	}
 
 	var (
+		preparedCompany   = c.toPrepareCompany(company)
 		vacancies         = company.Languages[organizerFeature.Organizer.Language].Vacancies
 		preparedVacancies = make([]domain.PreparedVacancy, 0, len(vacancies))
 		vacancyIDs        = make([]int64, 0, len(vacancies))
@@ -375,6 +376,7 @@ func (c *Controller) CompanyV2(ctx *gin.Context) {
 		if ok {
 			preparedVacancies = append(preparedVacancies, domain.PreparedVacancy{
 				ID:               id,
+				Company:          preparedCompany,
 				Title:            vacancy.Title,
 				ShortDescription: vacancy.ShortDescription,
 				URL:              vacancy.URL,
@@ -437,16 +439,60 @@ func (c *Controller) Vacancies(ctx *gin.Context) {
 		// NOP, continue
 	}
 
-	companies := c.companies(organizerFeature)
+	companies := c.companies(organizerFeature, true)
 
-	_ = companies
+	var (
+		preparedVacancies = make([]domain.PreparedVacancy, 0, 1024)
+		vacancyIDs        = make([]int64, 0, 1024)
+	)
+
+	for _, company := range companies {
+		var (
+			preparedCompany = c.toPrepareCompany(company)
+			vacancies       = company.Languages[organizerFeature.Organizer.Language].Vacancies
+		)
+
+		for _, vacancy := range vacancies {
+			id, ok := organizers.VacancyUrlMap[vacancy.URL]
+
+			if ok {
+				preparedVacancies = append(preparedVacancies, domain.PreparedVacancy{
+					ID:               id,
+					Company:          preparedCompany,
+					Title:            vacancy.Title,
+					ShortDescription: vacancy.ShortDescription,
+					URL:              vacancy.URL,
+					Date:             vacancy.Date,
+					WithSalary:       vacancy.WithSalary,
+					Remote:           vacancy.Remote,
+				})
+				vacancyIDs = append(vacancyIDs, id)
+			}
+		}
+	}
+
+	userVacancyFavoriteMap, err := c.userFavoriteVacancyRepository.GetMap(ctx, authUserID, vacancyIDs)
+	if err != nil {
+		// @TODO logging
+
+		// NOP, continue
+	}
+
+	month := time.Now().UTC().Truncate(time.Hour*24).AddDate(0, -1, 0)
+	vacancyMonthlyViewsMap, err := c.vacancyViewStatsRepository.Stats(ctx, vacancyIDs, month)
+	if err != nil {
+		// @TODO logging
+
+		// NOP, continue
+	}
 
 	content := template.OrganizersVacanciesV2(
 		organizerFeature,
 		headerProfiles,
-		nil,
-		nil,
-		nil,
+		companies,
+		preparedVacancies,
+		userVacancyFavoriteMap,
+		vacancyMonthlyViewsMap,
 		c.redirect(organizerFeature.Path),
 	)
 
@@ -1078,7 +1124,7 @@ func (c *Controller) getHeaderProfiles(ctx *gin.Context, userID int64) ([]domain
 	return nil, nil
 }
 
-func (c *Controller) companies(organizerFeature domain.OrganizerFeature) []domain.CompanyProfile {
+func (c *Controller) companies(organizerFeature domain.OrganizerFeature, skip bool) []domain.CompanyProfile {
 	var (
 		source    = db.Companies()
 		companies = make([]domain.CompanyProfile, 0, len(source))
@@ -1103,6 +1149,10 @@ func (c *Controller) companies(organizerFeature domain.OrganizerFeature) []domai
 			continue
 		}
 
+		if len(company.Languages[language].Vacancies) == 0 && skip {
+			continue
+		}
+
 		companies = append(companies, company)
 	}
 	return companies
@@ -1118,4 +1168,14 @@ func (c *Controller) findCompany(ctx *gin.Context, alias string) (domain.Company
 	}
 
 	return domain.CompanyProfile{}, false
+}
+
+func (c *Controller) toPrepareCompany(company domain.CompanyProfile) domain.PreparedCompany {
+	return domain.PreparedCompany{
+		ID:                   company.ID,
+		Type:                 company.Type,
+		Name:                 company.Name,
+		LinkedInProfileAlias: company.LinkedInProfile.Alias,
+		Industries:           company.Industries,
+	}
 }

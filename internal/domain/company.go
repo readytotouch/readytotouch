@@ -96,8 +96,17 @@ type Vacancy struct {
 	Remote           bool // for future use
 }
 
+type PreparedCompany struct {
+	ID                   int64       // populates from the CompanyAliasMap
+	Type                 CompanyType // populates from the CompanyTypeMap
+	Name                 string
+	LinkedInProfileAlias string
+	Industries           []Industry
+}
+
 type PreparedVacancy struct {
 	ID               int64 // populates from the VacancyAliasMap
+	Company          PreparedCompany
 	Title            string
 	ShortDescription string // proof that the vacancy is for a particular technology
 	URL              string

@@ -17,6 +17,7 @@ var (
 func StreamOrganizersVacanciesV2(qw422016 *qt422016.Writer,
 	organizerFeature OrganizerFeature,
 	headerProfiles []SocialProviderUser,
+	companies []Company,
 	vacancies []PreparedVacancy,
 	userVacancyFavoriteMap map[int64]bool,
 	vacancyMonthlyViewsMap map[int64]int64,
@@ -133,7 +134,25 @@ func StreamOrganizersVacanciesV2(qw422016 *qt422016.Writer,
 </div>
 
 <section class="search-container container">
-    <!-- TODO   -->
+  <div class="search search--org-vacancies search--organizer">
+    <div class="search__input-group">
+      <input class="search__input" id="js-vacancy-query" type="search" name="search" placeholder="Search" list="js-vacancy-query-datalist" />
+      <datalist id="js-vacancy-query-datalist">
+        `)
+	for _, company := range companies {
+		qw422016.N().S(`
+          <option value="`)
+		qw422016.E().S(company.Name)
+		qw422016.N().S(`"></option>
+        `)
+	}
+	qw422016.N().S(`
+      </datalist>
+      <img class="search__icon" alt="Search icon" width="20" height="20" src="/assets/images/pages/common/search.svg" />
+    </div>
+    `)
+	qw422016.N().S(`
+  </div>
 </section>
 
 <div class="search-result mt-32">
@@ -156,26 +175,28 @@ func StreamOrganizersVacanciesV2(qw422016 *qt422016.Writer,
 func WriteOrganizersVacanciesV2(qq422016 qtio422016.Writer,
 	organizerFeature OrganizerFeature,
 	headerProfiles []SocialProviderUser,
+	companies []Company,
 	vacancies []PreparedVacancy,
 	userVacancyFavoriteMap map[int64]bool,
 	vacancyMonthlyViewsMap map[int64]int64,
 	authQueryParams string,
 ) {
 	qw422016 := qt422016.AcquireWriter(qq422016)
-	StreamOrganizersVacanciesV2(qw422016, organizerFeature, headerProfiles, vacancies, userVacancyFavoriteMap, vacancyMonthlyViewsMap, authQueryParams)
+	StreamOrganizersVacanciesV2(qw422016, organizerFeature, headerProfiles, companies, vacancies, userVacancyFavoriteMap, vacancyMonthlyViewsMap, authQueryParams)
 	qt422016.ReleaseWriter(qw422016)
 }
 
 func OrganizersVacanciesV2(
 	organizerFeature OrganizerFeature,
 	headerProfiles []SocialProviderUser,
+	companies []Company,
 	vacancies []PreparedVacancy,
 	userVacancyFavoriteMap map[int64]bool,
 	vacancyMonthlyViewsMap map[int64]int64,
 	authQueryParams string,
 ) string {
 	qb422016 := qt422016.AcquireByteBuffer()
-	WriteOrganizersVacanciesV2(qb422016, organizerFeature, headerProfiles, vacancies, userVacancyFavoriteMap, vacancyMonthlyViewsMap, authQueryParams)
+	WriteOrganizersVacanciesV2(qb422016, organizerFeature, headerProfiles, companies, vacancies, userVacancyFavoriteMap, vacancyMonthlyViewsMap, authQueryParams)
 	qs422016 := string(qb422016.B)
 	qt422016.ReleaseByteBuffer(qb422016)
 	return qs422016
