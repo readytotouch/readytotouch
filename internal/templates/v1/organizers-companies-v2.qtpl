@@ -256,6 +256,24 @@
                   <a href="{%s organizerFeature.Path %}/{%s company.LinkedInProfile.Alias %}/" class="card__headline vacancy__link">{%s company.Name %}</a>
                 </figcaption>
               </figure>
+              <div class="card__top-links">
+                  <a href="{%s company.Website %}" class="card__top-link button-link">Website</a>
+                  {% if company.Careers == "" %}
+                      <span class="card__top-link button-link disabled">Careers</span>
+                  {% else %}
+                      <a href="{%s company.Careers %}" class="card__top-link button-link">Careers</a>
+                  {% endif %}
+                  {% if company.About == "" %}
+                      <span class="card__top-link button-link disabled">About</span>
+                  {% else %}
+                      <a href="{%s company.About %}" class="card__top-link button-link">About</a>
+                  {% endif %}
+                  {% if company.Blog == "" %}
+                      <span class="card__top-link button-link disabled">Dev Blog</span>
+                  {% else %}
+                      <a href="{%s company.Blog %}" class="card__top-link button-link">Dev Blog</a>
+                  {% endif %}
+              </div>
               <div class="card__info">
                 <figure class="card__figure">
                   <img
