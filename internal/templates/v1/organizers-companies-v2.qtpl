@@ -491,6 +491,20 @@
                   {%- endif -%}
                 </ul>
               </div>
+              <div class="card__footer">
+                  <a href="{%s organizerFeature.Path %}/{%s company.LinkedInProfile.Alias %}/" class="card__footer-button button button-link">
+                      <div class="card__footer-images">
+                          <img class="card__footer-icon" alt="blind icon" width="32" height="32" src="/assets/images/pages/organizer/blind.png" />
+                          <img class="card__footer-icon" alt="levels icon" width="32" height="32" src="/assets/images/pages/organizer/levels.png" />
+                          <img class="card__footer-icon" alt="Indeed icon" width="32" height="32" src="/assets/images/pages/organizer/indeed.png" />
+                          <img class="card__footer-icon" alt="Y Combinator icon" width="32" height="32" src="/assets/images/pages/organizer/y-combinator.png" />
+                      </div>
+                      More on the company page
+                      <svg width="20" height="20" viewBox="0 0 8 12" fill="003ea6" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0.999531 0.710632C0.609531 1.10063 0.609531 1.73063 0.999531 2.12063L4.87953 6.00063L0.999531 9.88063C0.609531 10.2706 0.609531 10.9006 0.999531 11.2906C1.38953 11.6806 2.01953 11.6806 2.40953 11.2906L6.99953 6.70063C7.38953 6.31063 7.38953 5.68063 6.99953 5.29063L2.40953 0.700632C2.02953 0.320632 1.38953 0.320632 0.999531 0.710632Z" fill="#003ea6"/>
+                      </svg>
+                  </a>
+              </div>
             </div>
             {% endfor %}
           </div>
