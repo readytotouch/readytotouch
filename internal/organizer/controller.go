@@ -103,7 +103,7 @@ func (c *Controller) GolangCompaniesUkraine(ctx *gin.Context) {
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
 }
 
-func (c *Controller) Companies(ctx *gin.Context) {
+func (c *Controller) CompaniesV1(ctx *gin.Context) {
 	var (
 		authUserID = domain.ContextGetUserID(ctx)
 	)
@@ -173,6 +173,10 @@ func (c *Controller) Companies(ctx *gin.Context) {
 	)
 
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
+}
+
+func (c *Controller) CompaniesV2(ctx *gin.Context) {
+	c.CompaniesV1(ctx)
 }
 
 func (c *Controller) CompanyV1(ctx *gin.Context) {
@@ -831,6 +835,9 @@ func (c *Controller) parseFeatureFromReferer(ctx *gin.Context) (dbs.FeatureWait,
 }
 
 func (c *Controller) organizerFeature(path string) (domain.OrganizerFeature, bool) {
+	path = strings.TrimSuffix(path, "/v1")
+	path = strings.TrimSuffix(path, "/v2")
+
 	featurePathMap := map[string]domain.OrganizerFeature{
 		"/organizers/golang/companies": {
 			Organizer: domain.OrganizerGolang,
