@@ -324,7 +324,7 @@ func StreamOrganizersCompaniesV1(qw422016 *qt422016.Writer,
 		qw422016.E().S(organizerFeature.Path)
 		qw422016.N().S(`/`)
 		qw422016.E().S(company.LinkedInProfile.Alias)
-		qw422016.N().S(`/" class="button-group__item" title="View statistics">
+		qw422016.N().S(`" class="button-group__item" title="View statistics">
                   <img width="20" height="20" alt="icon stats" src="/assets/images/pages/common/stats.svg" />
                 </a>
               </aside>
@@ -343,7 +343,7 @@ func StreamOrganizersCompaniesV1(qw422016 *qt422016.Writer,
 		qw422016.E().S(organizerFeature.Path)
 		qw422016.N().S(`/`)
 		qw422016.E().S(company.LinkedInProfile.Alias)
-		qw422016.N().S(`/" class="card__headline vacancy__link">`)
+		qw422016.N().S(`" class="card__headline vacancy__link">`)
 		qw422016.E().S(company.Name)
 		qw422016.N().S(`</a>
                 </figcaption>

@@ -238,7 +238,7 @@
                   </button>
                 {% endif %}
 
-                <a href="{%s organizerFeature.Path %}/{%s company.LinkedInProfile.Alias %}/" class="button-group__item" title="View statistics">
+                <a href="{%s organizerFeature.Path %}/{%s company.LinkedInProfile.Alias %}" class="button-group__item" title="View statistics">
                   <img width="20" height="20" alt="icon stats" src="/assets/images/pages/common/stats.svg" />
                 </a>
               </aside>
@@ -249,11 +249,11 @@
                     height="18"
                     class="card__image card__image--preview"
                     alt="card image preview icon"
-                    src="/assets/images/pages/common/image-preview.svg"
+                    src="/assets/images/pages/common-images/unknown.svg"
                   />
                 </div>
                 <figcaption class="card__header-caption">
-                  <a href="{%s organizerFeature.Path %}/{%s company.LinkedInProfile.Alias %}/" class="card__headline vacancy__link">{%s company.Name %}</a>
+                  <a href="{%s organizerFeature.Path %}/{%s company.LinkedInProfile.Alias %}" class="card__headline">{%s company.Name %}</a>
                 </figcaption>
               </figure>
               <div class="card__top-links">
@@ -433,10 +433,16 @@
                               <a href="{%s company.GlassdoorProfile.OverviewURL %}" class="card__links-link">Glassdoor</a>
                               {% if company.GlassdoorProfile.Verified %}
                               <span class="card__links-link card__links-link--verify">
+                                  {% comment %}
+                                  <!--
+                                    LinkedIn's verified icon used
+                                    not enough space for Glassdoor's verified icon
+                                  -->
+                                  {% endcomment %}
                                   <img
                                       class="card__links-icon"
                                       alt="icon"
-                                      src="/assets/images/pages/organizer/verified-emp.png"
+                                      src="/assets/images/pages/organizer/verified-icon.png"
                                   />
                               </span>
                               {% endif %}
@@ -453,7 +459,7 @@
                   </ul>
               </div>
               <div class="card__footer">
-                  <a href="{%s organizerFeature.Path %}/{%s company.LinkedInProfile.Alias %}/" class="card__footer-button button button-link">
+                  <a href="{%s organizerFeature.Path %}/{%s company.LinkedInProfile.Alias %}" class="card__footer-button button button-link">
                       <div class="card__footer-images">
                           <img class="card__footer-icon" alt="blind icon" width="32" height="32" src="/assets/images/pages/organizer/blind.png" />
                           <img class="card__footer-icon" alt="levels icon" width="32" height="32" src="/assets/images/pages/organizer/levels.png" />

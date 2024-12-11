@@ -238,7 +238,7 @@
                   </button>
                 {% endif %}
 
-                <a href="{%s organizerFeature.Path %}/{%s company.LinkedInProfile.Alias %}/" class="button-group__item" title="View statistics">
+                <a href="{%s organizerFeature.Path %}/{%s company.LinkedInProfile.Alias %}" class="button-group__item" title="View statistics">
                   <img width="20" height="20" alt="icon stats" src="/assets/images/pages/common/stats.svg" />
                 </a>
               </aside>
@@ -253,7 +253,7 @@
                   />
                 </div>
                 <figcaption class="card__header-caption">
-                  <a href="{%s organizerFeature.Path %}/{%s company.LinkedInProfile.Alias %}/" class="card__headline vacancy__link">{%s company.Name %}</a>
+                  <a href="{%s organizerFeature.Path %}/{%s company.LinkedInProfile.Alias %}" class="card__headline vacancy__link">{%s company.Name %}</a>
                 </figcaption>
               </figure>
               <div class="card__info">

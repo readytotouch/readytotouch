@@ -324,7 +324,7 @@ func StreamOrganizersCompaniesV2(qw422016 *qt422016.Writer,
 		qw422016.E().S(organizerFeature.Path)
 		qw422016.N().S(`/`)
 		qw422016.E().S(company.LinkedInProfile.Alias)
-		qw422016.N().S(`/" class="button-group__item" title="View statistics">
+		qw422016.N().S(`" class="button-group__item" title="View statistics">
                   <img width="20" height="20" alt="icon stats" src="/assets/images/pages/common/stats.svg" />
                 </a>
               </aside>
@@ -335,7 +335,7 @@ func StreamOrganizersCompaniesV2(qw422016 *qt422016.Writer,
                     height="18"
                     class="card__image card__image--preview"
                     alt="card image preview icon"
-                    src="/assets/images/pages/common/image-preview.svg"
+                    src="/assets/images/pages/common-images/unknown.svg"
                   />
                 </div>
                 <figcaption class="card__header-caption">
@@ -343,7 +343,7 @@ func StreamOrganizersCompaniesV2(qw422016 *qt422016.Writer,
 		qw422016.E().S(organizerFeature.Path)
 		qw422016.N().S(`/`)
 		qw422016.E().S(company.LinkedInProfile.Alias)
-		qw422016.N().S(`/" class="card__headline vacancy__link">`)
+		qw422016.N().S(`" class="card__headline">`)
 		qw422016.E().S(company.Name)
 		qw422016.N().S(`</a>
                 </figcaption>
@@ -607,10 +607,12 @@ func StreamOrganizersCompaniesV2(qw422016 *qt422016.Writer,
 			if company.GlassdoorProfile.Verified {
 				qw422016.N().S(`
                               <span class="card__links-link card__links-link--verify">
+                                  `)
+				qw422016.N().S(`
                                   <img
                                       class="card__links-icon"
                                       alt="icon"
-                                      src="/assets/images/pages/organizer/verified-emp.png"
+                                      src="/assets/images/pages/organizer/verified-icon.png"
                                   />
                               </span>
                               `)
@@ -641,7 +643,7 @@ func StreamOrganizersCompaniesV2(qw422016 *qt422016.Writer,
 		qw422016.E().S(organizerFeature.Path)
 		qw422016.N().S(`/`)
 		qw422016.E().S(company.LinkedInProfile.Alias)
-		qw422016.N().S(`/" class="card__footer-button button button-link">
+		qw422016.N().S(`" class="card__footer-button button button-link">
                       <div class="card__footer-images">
                           <img class="card__footer-icon" alt="blind icon" width="32" height="32" src="/assets/images/pages/organizer/blind.png" />
                           <img class="card__footer-icon" alt="levels icon" width="32" height="32" src="/assets/images/pages/organizer/levels.png" />

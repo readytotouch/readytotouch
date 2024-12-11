@@ -112,7 +112,7 @@
     {% endif %}
 
     {% comment %}
-    <a href="{%s organizerFeature.Path %}/{%s company.LinkedInProfile.Alias %}/" class="button-group__item" title="View statistics">
+    <a href="{%s organizerFeature.Path %}/{%s company.LinkedInProfile.Alias %}" class="button-group__item" title="View statistics">
       <img width="20" height="20" alt="icon stats" src="/assets/images/pages/common/stats.svg" />
     </a>
     {% endcomment %}
