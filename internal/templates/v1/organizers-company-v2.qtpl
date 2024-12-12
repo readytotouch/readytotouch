@@ -739,7 +739,7 @@
 						</div>
 						<figcaption class="card__header-caption">
 							<a href="/organizers/v/{%dl vacancy.ID %}" class="card__headline vacancy__link">{%s vacancy.Title %}</a>
-							<a href="{%s organizerFeature.Path %}/{%s vacancy.Company.Alias %}" class="card__sub-headline vacancy__link">{%s vacancy.Company.Name %}</a>
+							<a href="/organizers/{%s organizerFeature.Organizer.Alias %}/companies/{%s vacancy.Company.Alias %}" class="card__sub-headline vacancy__link">{%s vacancy.Company.Name %}</a>
 						</figcaption>
 					</figure>
 					<p class="card__text card__text--organizer">{%s vacancy.ShortDescription %}</p>

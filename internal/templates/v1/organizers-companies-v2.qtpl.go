@@ -160,8 +160,9 @@ func StreamOrganizersCompaniesV2(qw422016 *qt422016.Writer,
 <div class="search-result mt-32">
   <div class="container">
     <div class="search-result__wrapper">
-      <!-- filters -->
-      <aside class="search-result__filters">
+
+<!-- filters -->
+<aside class="search-result__filters">
   <div class="search-result__filter-group search-result__filter-group--wide">
     <div class="search-result__filter-header">
       <h2 class="search-result__filter-headline">Filters:</h2>
@@ -187,6 +188,7 @@ func StreamOrganizersCompaniesV2(qw422016 *qt422016.Writer,
           </label>
         </div>
       </div>
+      <!-- /Company type  -->
 
       <div class="filters__group">
         <header class="filters__header">
@@ -250,14 +252,13 @@ func StreamOrganizersCompaniesV2(qw422016 *qt422016.Writer,
 	qw422016.N().S(`
         </div>
       </div>
-
       <!-- /Other -->
 
     </div>
   </div>
 </aside>
+<!-- /filters -->
 
-      <!-- /filters -->
       <div class="search-result--group">
         <!-- selected filters -->
         <div class="filter-used filter-used--small" style="visibility: hidden;">

@@ -1059,9 +1059,9 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 		qw422016.N().S(`" class="card__headline vacancy__link">`)
 		qw422016.E().S(vacancy.Title)
 		qw422016.N().S(`</a>
-							<a href="`)
-		qw422016.E().S(organizerFeature.Path)
-		qw422016.N().S(`/`)
+							<a href="/organizers/`)
+		qw422016.E().S(organizerFeature.Organizer.Alias)
+		qw422016.N().S(`/companies/`)
 		qw422016.E().S(vacancy.Company.Alias)
 		qw422016.N().S(`" class="card__sub-headline vacancy__link">`)
 		qw422016.E().S(vacancy.Company.Name)
