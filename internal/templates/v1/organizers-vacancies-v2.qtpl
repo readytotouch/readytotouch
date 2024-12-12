@@ -256,6 +256,10 @@
 			{% for _, vacancy := range vacancies %}
 				<div class="js-vacancy card"
 					 data-vacancy-id="{%dl vacancy.ID %}"
+					 data-company-name="{%s vacancy.Company.Name %}"
+					 data-company-type="{%s string(vacancy.Company.Type) %}"
+					 data-company-industries="{%s aliases(vacancy.Company.Industries) %}"
+					 data-company-has-employees-from-countries="{%s aliases(vacancy.Company.HasEmployeesFromCountries) %}"
 				>
 					<aside class="card__action">
 						{% if userVacancyFavoriteMap[vacancy.ID] %}
@@ -290,7 +294,7 @@
 							<a href="/organizers/{%s organizerFeature.Organizer.Alias %}/companies/{%s vacancy.Company.Alias %}" class="card__sub-headline vacancy__link">{%s vacancy.Company.Name %}</a>
 						</figcaption>
 					</figure>
-					<p class="card__text card__text--organizer">{%s vacancy.ShortDescription %}</p>
+					<p class="js-vacancy-short-description card__text card__text--organizer">{%s vacancy.ShortDescription %}</p>
 					<div class="card__footer">
 						<div class="card__details">
 							<figure class="card__figure" title="{%s formatVacancyDate(vacancy.Date) %}">

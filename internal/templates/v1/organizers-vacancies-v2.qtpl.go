@@ -307,6 +307,18 @@ func StreamOrganizersVacanciesV2(qw422016 *qt422016.Writer,
 					 data-vacancy-id="`)
 		qw422016.N().DL(vacancy.ID)
 		qw422016.N().S(`"
+					 data-company-name="`)
+		qw422016.E().S(vacancy.Company.Name)
+		qw422016.N().S(`"
+					 data-company-type="`)
+		qw422016.E().S(string(vacancy.Company.Type))
+		qw422016.N().S(`"
+					 data-company-industries="`)
+		qw422016.E().S(aliases(vacancy.Company.Industries))
+		qw422016.N().S(`"
+					 data-company-has-employees-from-countries="`)
+		qw422016.E().S(aliases(vacancy.Company.HasEmployeesFromCountries))
+		qw422016.N().S(`"
 				>
 					<aside class="card__action">
 						`)
@@ -357,7 +369,7 @@ func StreamOrganizersVacanciesV2(qw422016 *qt422016.Writer,
 		qw422016.N().S(`</a>
 						</figcaption>
 					</figure>
-					<p class="card__text card__text--organizer">`)
+					<p class="js-vacancy-short-description card__text card__text--organizer">`)
 		qw422016.E().S(vacancy.ShortDescription)
 		qw422016.N().S(`</p>
 					<div class="card__footer">

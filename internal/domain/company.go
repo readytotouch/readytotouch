@@ -97,11 +97,12 @@ type Vacancy struct {
 }
 
 type PreparedCompany struct {
-	ID         int64       // populates from the CompanyAliasMap
-	Type       CompanyType // populates from the CompanyTypeMap
-	Name       string
-	Alias      string // LinkedIn alias
-	Industries []Industry
+	ID                        int64       // populates from the CompanyAliasMap
+	Type                      CompanyType // populates from the CompanyTypeMap
+	Name                      string
+	Alias                     string // LinkedIn alias
+	Industries                []Industry
+	HasEmployeesFromCountries []Country
 }
 
 type PreparedVacancy struct {
