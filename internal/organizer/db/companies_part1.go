@@ -74,36 +74,84 @@ func companiesPart1() []domain.CompanyProfile {
 		// BigTech
 		// BigTech | Google
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Google",
-			URL:  "https://www.google.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Google",
+			Website: "https://www.google.com/",
+			Careers: "https://www.google.com/about/careers/",
+			About:   "https://about.google/",
+			Blog:    "https://blog.google/technology/developers/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    1441,
-				Alias: "google",
-				Name:  "Google",
+				ID:                1441,
+				Alias:             "google",
+				Name:              "Google",
+				Followers:         "35M",
+				Employees:         "10K+",
+				AssociatedMembers: "303,309",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "google",
-				GoRepositoryCount: 157,
+				Login:    "google",
+				Verified: true,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias:       "google",
+				Employees:   "10,000+",
+				Salary:      "$60K ~ $357K a year",
+				Reviews:     "10,265",
+				ReviewsRate: "4.2",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "google",
+				Employees: "258,750",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Google-EI_IE9079.11,17.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Google-Reviews-E9079.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Google-Jobs-E9079.htm",
+				Jobs:        "3.5K",
+				Reviews:     "59K",
+				Salaries:    "168K",
+				ReviewsRate: "4.3",
+				Verified:    true,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "Google",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go:      []string{},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 227,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Software Engineer III, Google Kubernetes Engine",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4087466433/",
+							Date:             mustDate("2024-12-04"),
+							WithSalary:       false,
+							Remote:           false,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 80,
+					Vacancies:               nil,
+				},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "American multinational technology company",
+			DealroomURL:      "https://app.dealroom.co/companies/google",
+			CrunchbaseURL:    "https://www.crunchbase.com/organization/google",
+			PitchbookURL:     "https://pitchbook.com/profiles/company/10453-33",
+			YahooFinanceURL:  "https://finance.yahoo.com/quote/GOOG/",
+			GoogleFinanceURL: "https://www.google.com/finance/quote/GOOG:NASDAQ",
+			YCombinatorURL:   "",
 			Industries:       []domain.Industry{
 				// Too many industries
 			},

@@ -9,3 +9,9 @@ type CompanyCodePair struct {
 	Name  string
 	Alias string
 }
+
+type VacancyCodePair struct {
+	ID           int64
+	URL          string
+	CompanyAlias string
+}

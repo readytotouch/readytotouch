@@ -151,6 +151,14 @@ type UserFavoriteCompany struct {
 	UpdatedAt time.Time
 }
 
+type UserFavoriteVacancy struct {
+	UserID    int64
+	VacancyID int64
+	Favorite  bool
+	CreatedAt time.Time
+	UpdatedAt time.Time
+}
+
 type UserFeatureWaitlist struct {
 	UserID    int64
 	Feature   FeatureWait
@@ -201,6 +209,31 @@ type UserSocialProfileChangeHistory struct {
 	Name                string
 	CreatedAt           time.Time
 	DeletedAt           sql.NullTime
+}
+
+type UserVacancyViewDailyStat struct {
+	VacancyID int64
+	CreatedAt time.Time
+	UserID    int64
+}
+
+type UserVacancyViewHourlyStat struct {
+	VacancyID int64
+	CreatedAt time.Time
+	UserID    int64
+}
+
+type Vacancy struct {
+	ID        int64
+	CompanyID int64
+	CreatedAt time.Time
+	CreatedBy int64
+}
+
+type VacancyViewDailyStat struct {
+	VacancyID int64
+	CreatedAt time.Time
+	UserCount int64
 }
 
 type WipLinkedinCompany struct {
