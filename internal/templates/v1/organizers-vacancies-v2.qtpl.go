@@ -305,6 +305,9 @@ func StreamOrganizersVacanciesV2(qw422016 *qt422016.Writer,
 					 data-vacancy-id="`)
 		qw422016.N().DL(vacancy.ID)
 		qw422016.N().S(`"
+					 data-vacancy-title="`)
+		qw422016.E().S(vacancy.Title)
+		qw422016.N().S(`"
 					 data-company-name="`)
 		qw422016.E().S(vacancy.Company.Name)
 		qw422016.N().S(`"

@@ -7,7 +7,6 @@ import {
     VACANCY_COMPANY_INDUSTRY_CRITERIA_NAME,
     VACANCY_IN_FAVORITES_CRITERIA_NAME,
     VACANCY_COMPANY_HAS_EMPLOYEES_FROM_COUNTRY_CRITERIA_NAME,
-    VACANCY_CRITERIA_NAMES,
 } from "./framework/vacancy_criteria_names";
 import {InputCheckboxes} from "./framework/checkboxes";
 import {companyTypes} from "./framework/company_types";
@@ -20,8 +19,8 @@ import {firstQuerySelector} from "./framework/query_selector";
 import {setStateByURLMapper} from "./framework/set_state_by_url";
 import {toEnter} from "./framework/enter";
 
-function markCompanyFavorite(companyId: number, favorite: boolean, callback: () => void) {
-    fetch(`/api/v1/companies/${companyId}/favorite.json`, {
+function markVacancyFavorite(vacancyId: number, favorite: boolean, callback: () => void) {
+    fetch(`/api/v1/vacancies/${vacancyId}/favorite.json`, {
         method: "PATCH",
         body: JSON.stringify({
             favorite: favorite,
@@ -38,18 +37,18 @@ function markCompanyFavorite(companyId: number, favorite: boolean, callback: () 
     }).catch(console.error);
 }
 
-const $companies = document.querySelectorAll(".js-company");
+const $vacancies = document.querySelectorAll(".js-vacancy");
 const $resultCount = document.getElementById("js-result-count");
 
-$companies.forEach(function ($company: HTMLElement) {
-    const companyId = parseInt($company.getAttribute("data-company-id"));
+$vacancies.forEach(function ($vacancy: HTMLElement) {
+    const vacancyId = parseInt($vacancy.getAttribute("data-vacancy-id"));
 
-    const $favorite = $company.querySelector(".js-company-favorite");
+    const $favorite = $vacancy.querySelector(".js-vacancy-favorite");
     $favorite.addEventListener("click", function () {
         const current = $favorite.classList.contains("in-favorite");
         const next = !current;
 
-        markCompanyFavorite(companyId, next, function () {
+        markVacancyFavorite(vacancyId, next, function () {
             if (next) {
                 $favorite.classList.add("in-favorite");
 
@@ -64,16 +63,16 @@ $companies.forEach(function ($company: HTMLElement) {
 });
 
 
-const $search = document.getElementById("js-company-query") as HTMLInputElement;
+const $search = document.getElementById("js-vacancy-query") as HTMLInputElement;
 const $typeCheckboxes = new InputCheckboxes(document.querySelectorAll("input.js-criteria-company-type") as any as Array<HTMLInputElement>);
 const $industryCheckboxes = new InputCheckboxes(document.querySelectorAll("input.js-criteria-company-industry") as any as Array<HTMLInputElement>);
 const $hasEmployeesFromCountryCheckboxes = new InputCheckboxes(document.querySelectorAll("input.js-criteria-has-employees-from-country") as any as Array<HTMLInputElement>);
 const $inFavoritesCheckbox = document.getElementById("js-criteria-in-favorites") as HTMLInputElement;
-const $selectedCriteria = document.getElementById("js-company-selected-criteria");
+const $selectedCriteria = document.getElementById("js-vacancy-selected-criteria");
 const $reset = document.getElementById("js-criteria-reset");
 
 $typeCheckboxes.onChange(function (state: Array<string>) {
-    urlStateContainer.setArrayCriteria(COMPANY_TYPE_CRITERIA_NAME, state);
+    urlStateContainer.setArrayCriteria(VACANCY_COMPANY_TYPE_CRITERIA_NAME, state);
     urlStateContainer.setPage(1);
     urlStateContainer.storeCurrentState();
 
@@ -83,7 +82,7 @@ $typeCheckboxes.onChange(function (state: Array<string>) {
 });
 
 $industryCheckboxes.onChange(function (state: Array<string>) {
-    urlStateContainer.setArrayCriteria(COMPANY_INDUSTRY_CRITERIA_NAME, state);
+    urlStateContainer.setArrayCriteria(VACANCY_COMPANY_INDUSTRY_CRITERIA_NAME, state);
     urlStateContainer.setPage(1);
     urlStateContainer.storeCurrentState();
 
@@ -93,7 +92,7 @@ $industryCheckboxes.onChange(function (state: Array<string>) {
 });
 
 $hasEmployeesFromCountryCheckboxes.onChange(function (state: Array<string>) {
-    urlStateContainer.setArrayCriteria(COMPANY_HAS_EMPLOYEES_FROM_COUNTRY_CRITERIA_NAME, state);
+    urlStateContainer.setArrayCriteria(VACANCY_COMPANY_HAS_EMPLOYEES_FROM_COUNTRY_CRITERIA_NAME, state);
     urlStateContainer.setPage(1);
     urlStateContainer.storeCurrentState();
 
@@ -103,7 +102,7 @@ $hasEmployeesFromCountryCheckboxes.onChange(function (state: Array<string>) {
 });
 
 $inFavoritesCheckbox.addEventListener("change", function () {
-    urlStateContainer.setBoolCriteria(COMPANY_IN_FAVORITES_CRITERIA_NAME, $inFavoritesCheckbox.checked);
+    urlStateContainer.setBoolCriteria(VACANCY_IN_FAVORITES_CRITERIA_NAME, $inFavoritesCheckbox.checked);
     urlStateContainer.setPage(1);
     urlStateContainer.storeCurrentState();
 
@@ -119,22 +118,22 @@ const {
 } = setStateByURLMapper(urlStateContainer);
 
 function setStateByURL() {
-    setInputStateByURL($search, COMPANY_SEARCH_QUERY);
+    setInputStateByURL($search, VACANCY_SEARCH_QUERY);
 
-    setCheckboxesStateByURL($typeCheckboxes, COMPANY_TYPE_CRITERIA_NAME);
-    setCheckboxesStateByURL($industryCheckboxes, COMPANY_INDUSTRY_CRITERIA_NAME);
-    setCheckboxesStateByURL($hasEmployeesFromCountryCheckboxes, COMPANY_HAS_EMPLOYEES_FROM_COUNTRY_CRITERIA_NAME);
+    setCheckboxesStateByURL($typeCheckboxes, VACANCY_COMPANY_TYPE_CRITERIA_NAME);
+    setCheckboxesStateByURL($industryCheckboxes, VACANCY_COMPANY_INDUSTRY_CRITERIA_NAME);
+    setCheckboxesStateByURL($hasEmployeesFromCountryCheckboxes, VACANCY_COMPANY_HAS_EMPLOYEES_FROM_COUNTRY_CRITERIA_NAME);
 
-    setCheckboxStateByURL($inFavoritesCheckbox, COMPANY_IN_FAVORITES_CRITERIA_NAME);
+    setCheckboxStateByURL($inFavoritesCheckbox, VACANCY_IN_FAVORITES_CRITERIA_NAME);
 }
 
 function renderSelectedCriteriaByURL() {
     const $views: Array<HTMLElement> = [];
 
-    renderSelectedCheckboxes($views, COMPANY_TYPE_CRITERIA_NAME, companyTypes);
-    renderSelectedCheckboxes($views, COMPANY_INDUSTRY_CRITERIA_NAME, industries);
-    renderSelectedCheckboxes($views, COMPANY_HAS_EMPLOYEES_FROM_COUNTRY_CRITERIA_NAME, hasEmployeesFromCountries);
-    renderSelectedCheckbox($views, COMPANY_IN_FAVORITES_CRITERIA_NAME, "Favorites");
+    renderSelectedCheckboxes($views, VACANCY_COMPANY_TYPE_CRITERIA_NAME, companyTypes);
+    renderSelectedCheckboxes($views, VACANCY_COMPANY_INDUSTRY_CRITERIA_NAME, industries);
+    renderSelectedCheckboxes($views, VACANCY_COMPANY_HAS_EMPLOYEES_FROM_COUNTRY_CRITERIA_NAME, hasEmployeesFromCountries);
+    renderSelectedCheckbox($views, VACANCY_IN_FAVORITES_CRITERIA_NAME, "Favorites");
 
     $selectedCriteria.innerHTML = "";
     $selectedCriteria.append(...$views);
@@ -193,12 +192,12 @@ const handleSearch = function () {
 
 $search.addEventListener("keyup", toEnter(handleSearch));
 $search.addEventListener("change", function () {
-    urlStateContainer.setStringCriteria(COMPANY_SEARCH_QUERY, $search.value);
+    urlStateContainer.setStringCriteria(VACANCY_SEARCH_QUERY, $search.value);
 });
 $search.addEventListener("search", handleSearch);
 
 $reset.addEventListener("click", function () {
-    urlStateContainer.keep(COMPANY_SEARCH_QUERY);
+    urlStateContainer.keep(VACANCY_SEARCH_QUERY);
     urlStateContainer.setPage(1);
     urlStateContainer.storeCurrentState();
 
@@ -215,33 +214,37 @@ function updatePageState() {
 
 function search() {
     const query = $search.value.trim().toLowerCase();
-    const types = urlStateContainer.getCriteria(COMPANY_TYPE_CRITERIA_NAME, []);
-    const industries = urlStateContainer.getCriteria(COMPANY_INDUSTRY_CRITERIA_NAME, []);
-    const hasEmployeesFromCountries = urlStateContainer.getCriteria(COMPANY_HAS_EMPLOYEES_FROM_COUNTRY_CRITERIA_NAME, []);
-    const inFavorites = urlStateContainer.getCriteria(COMPANY_IN_FAVORITES_CRITERIA_NAME, false);
+    const types = urlStateContainer.getCriteria(VACANCY_COMPANY_TYPE_CRITERIA_NAME, []);
+    const industries = urlStateContainer.getCriteria(VACANCY_COMPANY_INDUSTRY_CRITERIA_NAME, []);
+    const hasEmployeesFromCountries = urlStateContainer.getCriteria(VACANCY_COMPANY_HAS_EMPLOYEES_FROM_COUNTRY_CRITERIA_NAME, []);
+    const inFavorites = urlStateContainer.getCriteria(VACANCY_IN_FAVORITES_CRITERIA_NAME, false);
 
-    const matchQuery = function ($company: HTMLElement): boolean {
+    const matchQuery = function ($vacancy: HTMLElement): boolean {
         if (query.length === 0) {
             return true;
         }
 
-        if ($company.getAttribute("data-company-name").toLowerCase().indexOf(query) !== -1) {
+        if ($vacancy.getAttribute("data-vacancy-title").toLowerCase().indexOf(query) !== -1) {
             return true;
         }
 
-        if ($company.querySelector(".js-company-description").textContent.toLowerCase().indexOf(query) !== -1) {
+        if ($vacancy.getAttribute("data-company-name").toLowerCase().indexOf(query) !== -1) {
+            return true;
+        }
+
+        if ($vacancy.querySelector(".js-vacancy-short-description").textContent.toLowerCase().indexOf(query) !== -1) {
             return true;
         }
 
         return false;
     }
 
-    const matchIndustry = function ($company: HTMLElement): boolean {
+    const matchIndustry = function ($vacancy: HTMLElement): boolean {
         if (industries.length === 0) {
             return true;
         }
 
-        const companyIndustries = $company.getAttribute("data-company-industries").split(",");
+        const companyIndustries = $vacancy.getAttribute("data-company-industries").split(",");
 
         for (const industry of industries) {
             if (companyIndustries.indexOf(industry) !== -1) {
@@ -252,12 +255,12 @@ function search() {
         return false;
     }
 
-    const matchHasEmployeesFromCountry = function ($company: HTMLElement): boolean {
+    const matchHasEmployeesFromCountry = function ($vacancy: HTMLElement): boolean {
         if (hasEmployeesFromCountries.length === 0) {
             return true;
         }
 
-        const companyHasEmployeesFromCountries = $company.getAttribute("data-company-has-employees-from-countries").split(",");
+        const companyHasEmployeesFromCountries = $vacancy.getAttribute("data-company-has-employees-from-countries").split(",");
 
         for (const country of hasEmployeesFromCountries) {
             if (companyHasEmployeesFromCountries.indexOf(country) !== -1) {
@@ -268,25 +271,25 @@ function search() {
         return false;
     }
 
-    const match = function ($company: HTMLElement): boolean {
-        if (!matchQuery($company)) {
+    const match = function ($vacancy: HTMLElement): boolean {
+        if (!matchQuery($vacancy)) {
             return false;
         }
 
-        if (types.length > 0 && types.indexOf($company.getAttribute("data-company-type")) === -1) {
+        if (types.length > 0 && types.indexOf($vacancy.getAttribute("data-company-type")) === -1) {
             return false;
         }
 
-        if (!matchIndustry($company)) {
+        if (!matchIndustry($vacancy)) {
             return false;
         }
 
-        if (!matchHasEmployeesFromCountry($company)) {
+        if (!matchHasEmployeesFromCountry($vacancy)) {
             return false;
         }
 
         if (inFavorites) {
-            const $favorite = $company.querySelector(".js-company-favorite");
+            const $favorite = $vacancy.querySelector(".js-vacancy-favorite");
             const current = $favorite.classList.contains("in-favorite");
 
             if (!current) {
@@ -299,16 +302,16 @@ function search() {
 
     let total = 0;
 
-    $companies.forEach(function ($company: HTMLElement) {
-        if (match($company)) {
-            $company.style.display = "block";
+    $vacancies.forEach(function ($vacancy: HTMLElement) {
+        if (match($vacancy)) {
+            $vacancy.style.display = "block";
 
             total++;
 
             return;
         }
 
-        $company.style.display = "none";
+        $vacancy.style.display = "none";
     });
 
     $resultCount.innerHTML = total.toString();

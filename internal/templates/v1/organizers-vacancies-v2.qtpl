@@ -267,6 +267,7 @@
 
 				<div class="js-vacancy card"
 					 data-vacancy-id="{%dl vacancy.ID %}"
+					 data-vacancy-title="{%s vacancy.Title %}"
 					 data-company-name="{%s vacancy.Company.Name %}"
 					 data-company-type="{%s string(vacancy.Company.Type) %}"
 					 data-company-industries="{%s aliases(vacancy.Company.Industries) %}"
