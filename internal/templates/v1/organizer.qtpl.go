@@ -150,7 +150,7 @@ func StreamOrganizerStatic(qw422016 *qt422016.Writer, companies []Company, unive
                                             <a class="table__item-link" href="https://github.com/orgs/`)
 			qw422016.E().S(company.GitHubProfile.Login)
 			qw422016.N().S(`/repositories?q=lang:go">Repositories</a>&nbsp;(`)
-			qw422016.N().D(fetchGitHubRepositoriesCount(company, 0))
+			qw422016.N().D(fetchGitHubRepositoriesCount(company, Go))
 			qw422016.N().S(`)
                                         </div>
 `)
