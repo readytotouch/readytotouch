@@ -157,6 +157,7 @@
       </div>
       <!-- /Direction -->
 
+      {% comment %}
       <!-- Source -->
       <div class="filters__group">
       	<header class="filters__header">
@@ -179,6 +180,7 @@
       	</div>
       </div>
       <!-- /Source  -->
+      {% endcomment %}
 
       <!-- Other -->
       <div class="filters__group">
@@ -252,8 +254,17 @@
         <div id="search_result_list" class="search-result__list">
           <p class="search-result-found"><span id="js-result-count" class="search-result-found__amount">{%d len(vacancies) %}</span> results</p>
           <!-- card list -->
+          {% code var currentVacancyPeriods = newVacancyPeriods() %}
           <div class="search-result__cards row-gap-8 mt-24">
 			{% for _, vacancy := range vacancies %}
+                {% for _, periodName := range currentVacancyPeriods.over(vacancy.Date) %}
+                <div class="search-result__time-period">
+                    <div class="search-result__time-period-line"></div>
+                    <div class="search-result__time-period-content">{%s periodName %}</div>
+                    <div class="search-result__time-period-line"></div>
+                </div>
+                {% endfor %}
+
 				<div class="js-vacancy card"
 					 data-vacancy-id="{%dl vacancy.ID %}"
 					 data-company-name="{%s vacancy.Company.Name %}"

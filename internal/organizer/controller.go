@@ -3,6 +3,7 @@ package organizer
 import (
 	"net/http"
 	"net/url"
+	"sort"
 	"strings"
 	"time"
 
@@ -403,6 +404,10 @@ func (c *Controller) CompanyV2(ctx *gin.Context) {
 		// NOP, continue
 	}
 
+	sort.Slice(preparedVacancies, func(i, j int) bool {
+		return preparedVacancies[i].Date.After(preparedVacancies[j].Date)
+	})
+
 	content := template.OrganizersCompanyV2(
 		organizerFeature,
 		headerProfiles,
@@ -485,6 +490,10 @@ func (c *Controller) Vacancies(ctx *gin.Context) {
 
 		// NOP, continue
 	}
+
+	sort.Slice(preparedVacancies, func(i, j int) bool {
+		return preparedVacancies[i].Date.After(preparedVacancies[j].Date)
+	})
 
 	content := template.OrganizersVacanciesV2(
 		organizerFeature,

@@ -198,34 +198,10 @@ func formatVacancyDiffDate(t time.Time) string {
 	}
 
 	days := int(today.Sub(t).Hours() / 24)
-	if days < 7 {
-		if days == 1 {
-			return "1 day ago"
-		}
-		return fmt.Sprintf("%d days ago", days)
+	if days == 1 {
+		return "1 day ago"
 	}
-
-	weeks := days / 7
-	if weeks < 4 {
-		if weeks == 1 {
-			return "1 week ago"
-		}
-		return fmt.Sprintf("%d weeks ago", weeks)
-	}
-
-	months := days / 30
-	if months < 12 {
-		if months == 1 {
-			return "1 month ago"
-		}
-		return fmt.Sprintf("%d months ago", months)
-	}
-
-	years := days / 365
-	if years == 1 {
-		return "1 year ago"
-	}
-	return fmt.Sprintf("%d years ago", years)
+	return fmt.Sprintf("%d days ago", days)
 }
 
 func isLinkedInVacancyURL(s string) bool {

@@ -217,28 +217,8 @@ func StreamOrganizersVacanciesV2(qw422016 *qt422016.Writer,
       </div>
       <!-- /Direction -->
 
-      <!-- Source -->
-      <div class="filters__group">
-      	<header class="filters__header">
-      		<h4 class="filters__headline">Source</h4>
-      	</header>
-
-      	<div class="filters__elements">
-      		<div class="filters__elements-inner">
-            <label class="checkbox filters__element">
-              <input class="checkbox__input" type="checkbox"/>
-              <span class="checkbox__element"></span>
-              LinkedIn
-            </label>
-            <label class="checkbox filters__element">
-              <input class="checkbox__input" type="checkbox"/>
-              <span class="checkbox__element"></span>
-              Otto
-            </label>
-      		</div>
-      	</div>
-      </div>
-      <!-- /Source  -->
+      `)
+	qw422016.N().S(`
 
       <!-- Other -->
       <div class="filters__group">
@@ -299,10 +279,28 @@ func StreamOrganizersVacanciesV2(qw422016 *qt422016.Writer,
 	qw422016.N().D(len(vacancies))
 	qw422016.N().S(`</span> results</p>
           <!-- card list -->
+          `)
+	var currentVacancyPeriods = newVacancyPeriods()
+
+	qw422016.N().S(`
           <div class="search-result__cards row-gap-8 mt-24">
 			`)
 	for _, vacancy := range vacancies {
 		qw422016.N().S(`
+                `)
+		for _, periodName := range currentVacancyPeriods.over(vacancy.Date) {
+			qw422016.N().S(`
+                <div class="search-result__time-period">
+                    <div class="search-result__time-period-line"></div>
+                    <div class="search-result__time-period-content">`)
+			qw422016.E().S(periodName)
+			qw422016.N().S(`</div>
+                    <div class="search-result__time-period-line"></div>
+                </div>
+                `)
+		}
+		qw422016.N().S(`
+
 				<div class="js-vacancy card"
 					 data-vacancy-id="`)
 		qw422016.N().DL(vacancy.ID)
