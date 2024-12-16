@@ -8,17 +8,26 @@ package dbs
 import (
 	"context"
 	"time"
+
+	"github.com/lib/pq"
 )
 
 const userFavoriteCompanies = `-- name: UserFavoriteCompanies :many
-SELECT company_id
-FROM user_favorite_companies
-WHERE user_id = $1
-  AND favorite = TRUE
+SELECT ufc.company_id
+FROM user_favorite_companies ufc
+WHERE ufc.user_id = $1
+  AND ($2::BOOLEAN = FALSE OR ufc.company_id = ANY ($3::BIGINT[]))
+  AND ufc.favorite = TRUE
 `
 
-func (q *Queries) UserFavoriteCompanies(ctx context.Context, userID int64) ([]int64, error) {
-	rows, err := q.query(ctx, q.userFavoriteCompaniesStmt, userFavoriteCompanies, userID)
+type UserFavoriteCompaniesParams struct {
+	UserID                 int64
+	CompanyIdsFilterExists bool
+	CompanyIds             []int64
+}
+
+func (q *Queries) UserFavoriteCompanies(ctx context.Context, arg UserFavoriteCompaniesParams) ([]int64, error) {
+	rows, err := q.query(ctx, q.userFavoriteCompaniesStmt, userFavoriteCompanies, arg.UserID, arg.CompanyIdsFilterExists, pq.Array(arg.CompanyIds))
 	if err != nil {
 		return nil, err
 	}

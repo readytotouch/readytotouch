@@ -62,6 +62,7 @@ type GitHubProfile struct {
 type GlassdoorProfile struct {
 	OverviewURL string
 	ReviewsURL  string
+	JobsURL     string
 	Jobs        string // will be mostly outdated
 	Reviews     string
 	Salaries    string
@@ -87,6 +88,26 @@ type IndeedProfile struct {
 }
 
 type Vacancy struct {
+	Title            string
+	ShortDescription string // proof that the vacancy is for a particular technology
+	URL              string
+	Date             time.Time
+	WithSalary       bool // for future use
+	Remote           bool // for future use
+}
+
+type PreparedCompany struct {
+	ID                        int64       // populates from the CompanyAliasMap
+	Type                      CompanyType // populates from the CompanyTypeMap
+	Name                      string
+	Alias                     string // LinkedIn alias
+	Industries                []Industry
+	HasEmployeesFromCountries []Country
+}
+
+type PreparedVacancy struct {
+	ID               int64 // populates from the VacancyAliasMap
+	Company          PreparedCompany
 	Title            string
 	ShortDescription string // proof that the vacancy is for a particular technology
 	URL              string

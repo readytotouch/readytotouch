@@ -21,6 +21,24 @@ function markCompanyFavorite(companyId: number, favorite: boolean, callback: () 
     }).catch(console.error);
 }
 
+function markVacancyFavorite(vacancyId: number, favorite: boolean, callback: () => void) {
+    fetch(`/api/v1/vacancies/${vacancyId}/favorite.json`, {
+        method: "PATCH",
+        body: JSON.stringify({
+            favorite: favorite,
+        }),
+    }).then(function (response) {
+        // Unauthorized
+        if (response.status === 401) {
+            window.location.href = organizersWelcome();
+
+            return;
+        }
+
+        callback();
+    }).catch(console.error);
+}
+
 const $companies = document.querySelectorAll(".js-company");
 
 $companies.forEach(function ($company: HTMLElement) {
@@ -71,3 +89,27 @@ function render($element: Element, name, color: string, data: Array<TimeCountSta
     const chart = new ApexCharts($element, options);
     chart.render();
 }
+
+const $vacancies = document.querySelectorAll(".js-vacancy");
+
+$vacancies.forEach(function ($vacancy: HTMLElement) {
+    const vacancyId = parseInt($vacancy.getAttribute("data-vacancy-id"));
+
+    const $favorite = $vacancy.querySelector(".js-vacancy-favorite");
+    $favorite.addEventListener("click", function () {
+        const current = $favorite.classList.contains("in-favorite");
+        const next = !current;
+
+        markVacancyFavorite(vacancyId, next, function () {
+            if (next) {
+                $favorite.classList.add("in-favorite");
+
+                $favorite.setAttribute("title", "Remove from favorites")
+            } else {
+                $favorite.classList.remove("in-favorite");
+
+                $favorite.setAttribute("title", "Add to favorites")
+            }
+        });
+    });
+});

@@ -73,18 +73,23 @@ func StreamOrganizersWaitlist(qw422016 *qt422016.Writer, organizerFeature Organi
 	qw422016.N().S(`
     <ul class="header__nav">
       <li class="header__nav-item">
-        <a href="`)
-	qw422016.E().S(navigation.companiesURL)
-	qw422016.N().S(`" class="header__nav-link `)
+        <a href="/organizers/`)
+	qw422016.E().S(organizerFeature.Organizer.Alias)
+	qw422016.N().S(`/companies" class="header__nav-link `)
 	qw422016.E().S(navigation.companiesActive)
 	qw422016.N().S(`">Companies</a>
       </li>
       <li class="header__nav-item">
-        <a href="`)
-	qw422016.E().S(navigation.vacanciesURL)
-	qw422016.N().S(`" class="header__nav-link `)
+        <a href="/organizers/`)
+	qw422016.E().S(organizerFeature.Organizer.Alias)
+	qw422016.N().S(`/vacancies" class="header__nav-link `)
 	qw422016.E().S(navigation.vacanciesActive)
 	qw422016.N().S(`">Vacancies</a>
+      </li>
+      <li class="header__nav-item">
+        <a href="/organizers/`)
+	qw422016.E().S(organizerFeature.Organizer.Alias)
+	qw422016.N().S(`/communities" class="header__nav-link">Communities</a>
       </li>
     </ul>
     `)

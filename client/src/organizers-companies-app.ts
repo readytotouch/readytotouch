@@ -313,9 +313,4 @@ function search() {
     $resultCount.innerHTML = total.toString();
 }
 
-// Each time when the user navigates back or forward, the page state is updated
-window.addEventListener('popstate', function (event) {
-    updatePageState();
-});
-
 updatePageState();

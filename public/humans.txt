@@ -23,3 +23,8 @@
     Role: Designer
     Profile: https://dribbble.com/LiliiaShpak
     From: Ukraine
+
+    Name: Mykhailo Upir
+    Role: Support
+    Profile: https://github.com/MykhailoUpir
+    From: Ukraine
