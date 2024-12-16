@@ -750,7 +750,6 @@ func companiesPart3() []domain.CompanyProfile {
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
-
 		{
 			ID:      0,  // system
 			Type:    "", // system
@@ -1238,7 +1237,6 @@ func companiesPart3() []domain.CompanyProfile {
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
-
 		{
 			ID:      0,  // system
 			Type:    "", // system
@@ -1310,7 +1308,6 @@ func companiesPart3() []domain.CompanyProfile {
 			},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
-
 		{
 			ID:      0,  // system
 			Type:    "", // system
@@ -1382,7 +1379,6 @@ func companiesPart3() []domain.CompanyProfile {
 			},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
-
 		{
 			ID:      0,  // system
 			Type:    "", // system
@@ -1390,7 +1386,7 @@ func companiesPart3() []domain.CompanyProfile {
 			Website: "https://kimiagroup.com/",
 			Careers: "https://kimiagroup.com/careers.html",
 			About:   "",
-			Blog:    "https://blog.kimiagroup.com/",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:       1417742,
 				Alias:    "kimiagroup",
@@ -1452,7 +1448,6 @@ func companiesPart3() []domain.CompanyProfile {
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
-
 		{
 			ID:      0,  // system
 			Type:    "", // system
@@ -1522,7 +1517,6 @@ func companiesPart3() []domain.CompanyProfile {
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
-
 		{
 			ID:      0,  // system
 			Type:    "", // system
@@ -1592,7 +1586,6 @@ func companiesPart3() []domain.CompanyProfile {
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
-
 		{
 			ID:      0,  // system
 			Type:    "", // system
@@ -1662,7 +1655,6 @@ func companiesPart3() []domain.CompanyProfile {
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
-
 		{
 			ID:      0,  // system
 			Type:    "", // system
@@ -1732,7 +1724,6 @@ func companiesPart3() []domain.CompanyProfile {
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
-
 		{
 			ID:      0,  // system
 			Type:    "", // system
@@ -1802,7 +1793,6 @@ func companiesPart3() []domain.CompanyProfile {
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
-
 		{
 			ID:      0,  // system
 			Type:    "", // system
@@ -1872,7 +1862,6 @@ func companiesPart3() []domain.CompanyProfile {
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
-
 		{
 			ID:      0,  // system
 			Type:    "", // system
@@ -1944,7 +1933,6 @@ func companiesPart3() []domain.CompanyProfile {
 			},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
-
 		{
 			ID:      0,  // system
 			Type:    "", // system
@@ -2014,7 +2002,6 @@ func companiesPart3() []domain.CompanyProfile {
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
-
 		{
 			ID:      0,  // system
 			Type:    "", // system
@@ -2084,77 +2071,6 @@ func companiesPart3() []domain.CompanyProfile {
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
-
-		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "CloudLinux",
-			Website: "http://www.cloudlinux.com/",
-			Careers: "https://cloudlinux.com/about-us-company-jobs/",
-			About:   "https://cloudlinux.com/about-us",
-			Blog:    "https://blog.cloudlinux.com/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:       632769,
-				Alias:    "cloudlinux",
-				Name:     "CloudLinux",
-				Verified: true,
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "cloudlinux",
-				Verified: false,
-			},
-			BlindProfile: domain.BlindProfile{
-				Alias:       "",
-				Employees:   "",
-				Salary:      "",
-				Reviews:     "",
-				ReviewsRate: "",
-			},
-			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias:     "",
-				Employees: "",
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-CloudLinux-EI_IE1448501.11,21.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/CloudLinux-Reviews-E1448501.htm",
-				Verified:    true,
-			},
-			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
-			},
-			OttaProfileSlug:   "",
-			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
-			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 101,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:            "Senior Python/Go Developer for Imunify (worldwide remote, work anywhere)",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4054985909/",
-							Date:             mustDate("2024-11-30"),
-						},
-					},
-				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-			ShortDescription:          "",
-			DealroomURL:               "",
-			CrunchbaseURL:             "",
-			PitchbookURL:              "",
-			YahooFinanceURL:           "",
-			GoogleFinanceURL:          "",
-			YCombinatorURL:            "",
-			Industries:                []domain.Industry{},
-			HasEmployeesFromCountries: []domain.Country{},
-		},
-
 		{
 			ID:      0,  // system
 			Type:    "", // system
@@ -2224,7 +2140,6 @@ func companiesPart3() []domain.CompanyProfile {
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
-
 		{
 			ID:      0,  // system
 			Type:    "", // system
@@ -2294,7 +2209,6 @@ func companiesPart3() []domain.CompanyProfile {
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
-
 		{
 			ID:      0,  // system
 			Type:    "", // system
@@ -2364,7 +2278,6 @@ func companiesPart3() []domain.CompanyProfile {
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
-
 		{
 			ID:      0,  // system
 			Type:    "", // system
@@ -2434,7 +2347,6 @@ func companiesPart3() []domain.CompanyProfile {
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
-
 		{
 			ID:      0,  // system
 			Type:    "", // system
@@ -2504,7 +2416,6 @@ func companiesPart3() []domain.CompanyProfile {
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
-
 		{
 			ID:      0,  // system
 			Type:    "", // system
@@ -2574,7 +2485,6 @@ func companiesPart3() []domain.CompanyProfile {
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
-
 		{
 			ID:      0,  // system
 			Type:    "", // system
@@ -2644,7 +2554,6 @@ func companiesPart3() []domain.CompanyProfile {
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
-
 		{
 			ID:      0,  // system
 			Type:    "", // system
