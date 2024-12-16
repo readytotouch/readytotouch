@@ -8,7 +8,7 @@ func BrazilianUniversities() []domain.University {
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:       239895,
 				Alias:    "uspoficial",
-				Name:     "USP - Universidade de São Paulo",
+				Name:     "USP — Universidade de São Paulo",
 				Verified: true,
 			},
 		},

@@ -1284,7 +1284,7 @@ func companiesPart3() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 4,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "C++/GO Developer",
+							Title:            "C++/Go Developer",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4079760230/",
 							Date:             mustDate("2024-11-21"),
@@ -1298,17 +1298,19 @@ func companiesPart3() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription:          "",
-			DealroomURL:               "",
-			CrunchbaseURL:             "",
-			PitchbookURL:              "",
-			YahooFinanceURL:           "",
-			GoogleFinanceURL:          "",
-			YCombinatorURL:            "",
-			Industries:                []domain.Industry{},
+			ShortDescription: "",
+			DealroomURL:      "",
+			CrunchbaseURL:    "",
+			PitchbookURL:     "",
+			YahooFinanceURL:  "",
+			GoogleFinanceURL: "",
+			YCombinatorURL:   "",
+			Industries: []domain.Industry{
+				domain.IndustryCyberSecurity,
+			},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
-		
+
 		{
 			ID:      0,  // system
 			Type:    "", // system
@@ -1354,7 +1356,7 @@ func companiesPart3() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Senior Software Developer (Go), Cyber",
+							Title:            "Senior Software Developer (Go)",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4081420924/",
 							Date:             mustDate("2024-11-21"),
@@ -1368,17 +1370,19 @@ func companiesPart3() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription:          "",
-			DealroomURL:               "",
-			CrunchbaseURL:             "",
-			PitchbookURL:              "",
-			YahooFinanceURL:           "",
-			GoogleFinanceURL:          "",
-			YCombinatorURL:            "",
-			Industries:                []domain.Industry{},
+			ShortDescription: "",
+			DealroomURL:      "",
+			CrunchbaseURL:    "",
+			PitchbookURL:     "",
+			YahooFinanceURL:  "",
+			GoogleFinanceURL: "",
+			YCombinatorURL:   "",
+			Industries: []domain.Industry{
+				domain.IndustryCyberSecurity,
+			},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
-		
+
 		{
 			ID:      0,  // system
 			Type:    "", // system
@@ -1448,77 +1452,7 @@ func companiesPart3() []domain.CompanyProfile {
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
-		
-		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "株式会社マネーフォワード",
-			Website: "https://corp.moneyforward.com/en/",
-			Careers: "",
-			About:   "https://corp.moneyforward.com/en/aboutus/",
-			Blog:    "",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:       5775746,
-				Alias:    "money-forward",
-				Name:     "株式会社マネーフォワード",
-				Verified: true,
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "moneyforward",
-				Verified: true,
-			},
-			BlindProfile: domain.BlindProfile{
-				Alias:       "",
-				Employees:   "",
-				Salary:      "",
-				Reviews:     "",
-				ReviewsRate: "",
-			},
-			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias:     "",
-				Employees: "",
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
-				Verified:    false,
-			},
-			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
-			},
-			OttaProfileSlug:   "",
-			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
-			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 12,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:            "Senior Backend Engineer (Go), CTO Office, Platform Application Division",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4083435012/",
-							Date:             mustDate("2024-11-22"),
-						},
-					},
-				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-			ShortDescription:          "",
-			DealroomURL:               "",
-			CrunchbaseURL:             "",
-			PitchbookURL:              "",
-			YahooFinanceURL:           "",
-			GoogleFinanceURL:          "",
-			YCombinatorURL:            "",
-			Industries:                []domain.Industry{},
-			HasEmployeesFromCountries: []domain.Country{},
-		},
-		
+
 		{
 			ID:      0,  // system
 			Type:    "", // system
@@ -1526,7 +1460,7 @@ func companiesPart3() []domain.CompanyProfile {
 			Website: "https://www.telestream.net/",
 			Careers: "https://www.telestream.net/careers/",
 			About:   "https://www.telestream.net/company/",
-			Blog:    "https://telestreamblog.telestream.net/",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:       534757,
 				Alias:    "telestream",
@@ -1564,7 +1498,7 @@ func companiesPart3() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 2,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Senior Software Engineer - GO",
+							Title:            "Senior Software Engineer — GO",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4083629889/",
 							Date:             mustDate("2024-11-22"),
@@ -1588,7 +1522,7 @@ func companiesPart3() []domain.CompanyProfile {
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
-		
+
 		{
 			ID:      0,  // system
 			Type:    "", // system
@@ -1596,7 +1530,7 @@ func companiesPart3() []domain.CompanyProfile {
 			Website: "https://mitratech.com/",
 			Careers: "https://mitratech.com/about-us/careers/",
 			About:   "https://mitratech.com/about-us/",
-			Blog:    "https://mitratech.com/resource-hub/mitratech-blog/",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:       165007,
 				Alias:    "mitratech",
@@ -1658,7 +1592,6 @@ func companiesPart3() []domain.CompanyProfile {
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
-		
 
 		{
 			ID:      0,  // system
@@ -1667,7 +1600,7 @@ func companiesPart3() []domain.CompanyProfile {
 			Website: "https://www.paddle.com/",
 			Careers: "https://www.paddle.com/careers",
 			About:   "https://www.paddle.com/about",
-			Blog:    "https://www.paddle.com/blog",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:       2695021,
 				Alias:    "paddle",
@@ -1675,8 +1608,8 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified: true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "Paddle",
-				Verified: true,
+				Login:    "",
+				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "",
@@ -1729,7 +1662,7 @@ func companiesPart3() []domain.CompanyProfile {
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
-		
+
 		{
 			ID:      0,  // system
 			Type:    "", // system
@@ -1799,7 +1732,7 @@ func companiesPart3() []domain.CompanyProfile {
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
-		
+
 		{
 			ID:      0,  // system
 			Type:    "", // system
@@ -1807,7 +1740,7 @@ func companiesPart3() []domain.CompanyProfile {
 			Website: "https://www.cohesity.com/",
 			Careers: "https://careers.cohesity.com/",
 			About:   "https://www.cohesity.com/company/",
-			Blog:    "https://www.cohesity.com/blogs/",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:       3750699,
 				Alias:    "cohesity",
@@ -1869,77 +1802,7 @@ func companiesPart3() []domain.CompanyProfile {
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
-		
-		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Amazon Web Services (AWS)",
-			Website: "https://aws.amazon.com/",
-			Careers: "https://aws.amazon.com/careers/",
-			About:   "https://aws.amazon.com/about-aws/",
-			Blog:    "https://aws.amazon.com/blogs/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:       2382910,
-				Alias:    "amazon-web-services",
-				Name:     "Amazon Web Services (AWS)",
-				Verified: true,
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "aws",
-				Verified: true,
-			},
-			BlindProfile: domain.BlindProfile{
-				Alias:       "",
-				Employees:   "",
-				Salary:      "",
-				Reviews:     "",
-				ReviewsRate: "",
-			},
-			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias:     "",
-				Employees: "",
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
-				Verified:    false,
-			},
-			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
-			},
-			OttaProfileSlug:   "",
-			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
-			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 71,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:            "Software Development Engineer — Amazon Go",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4071988613/",
-							Date:             mustDate("2024-11-12"),
-						},
-					},
-				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-			ShortDescription:          "",
-			DealroomURL:               "",
-			CrunchbaseURL:             "",
-			PitchbookURL:              "",
-			YahooFinanceURL:           "",
-			GoogleFinanceURL:          "",
-			YCombinatorURL:            "",
-			Industries:                []domain.Industry{},
-			HasEmployeesFromCountries: []domain.Country{},
-		},
-		
+
 		{
 			ID:      0,  // system
 			Type:    "", // system
@@ -1988,7 +1851,6 @@ func companiesPart3() []domain.CompanyProfile {
 							Title:            "Senior Backend Software Engineer (Lua, GO, Node.js)",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4085817047/",
-											  "https://www.linkedin.com/jobs/view/4085812909/",
 							Date:             mustDate("2024-11-26"),
 						},
 					},
@@ -2011,77 +1873,6 @@ func companiesPart3() []domain.CompanyProfile {
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 
-		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Gorilla Logic",
-			Website: "https://www.gorillalogic.com/",
-			Careers: "https://www.gorillalogic.com/careers",
-			About:   "https://www.gorillalogic.com/who-we-are",
-			Blog:    "https://www.gorillalogic.com/blog-and-resources",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:       68692,
-				Alias:    "gorillalogic",
-				Name:     "Gorilla Logic",
-				Verified: true,
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "gorillalogic",
-				Verified: false,
-			},
-			BlindProfile: domain.BlindProfile{
-				Alias:       "",
-				Employees:   "",
-				Salary:      "",
-				Reviews:     "",
-				ReviewsRate: "",
-			},
-			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias:     "",
-				Employees: "",
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
-				Verified:    false,
-			},
-			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
-			},
-			OttaProfileSlug:   "",
-			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
-			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 3,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:            "Senior Go Engineer — GP",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4085414974/",
-							Date:             mustDate("2024-11-26"),
-						},
-					},
-				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-			ShortDescription:          "",
-			DealroomURL:               "",
-			CrunchbaseURL:             "",
-			PitchbookURL:              "",
-			YahooFinanceURL:           "",
-			GoogleFinanceURL:          "",
-			YCombinatorURL:            "",
-			Industries:                []domain.Industry{},
-			HasEmployeesFromCountries: []domain.Country{},
-		},
-		
-		
 		{
 			ID:      0,  // system
 			Type:    "", // system
@@ -2127,7 +1918,7 @@ func companiesPart3() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Senior GO Engineer",
+							Title:            "Senior Go Engineer",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4082475828/",
 							Date:             mustDate("2024-11-25"),
@@ -2141,17 +1932,19 @@ func companiesPart3() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription:          "",
-			DealroomURL:               "",
-			CrunchbaseURL:             "",
-			PitchbookURL:              "",
-			YahooFinanceURL:           "",
-			GoogleFinanceURL:          "",
-			YCombinatorURL:            "",
-			Industries:                []domain.Industry{},
+			ShortDescription: "",
+			DealroomURL:      "",
+			CrunchbaseURL:    "",
+			PitchbookURL:     "",
+			YahooFinanceURL:  "",
+			GoogleFinanceURL: "",
+			YCombinatorURL:   "",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
-		
+
 		{
 			ID:      0,  // system
 			Type:    "", // system
@@ -2431,7 +2224,7 @@ func companiesPart3() []domain.CompanyProfile {
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
-		
+
 		{
 			ID:      0,  // system
 			Type:    "", // system
@@ -2473,17 +2266,17 @@ func companiesPart3() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
-				domain.Go: 	   {},
-				domain.Rust:    {
+				domain.Go: {},
+				domain.Rust: {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title           : "Rust Developer (d/f/m) ",
+							Title:            "Rust Developer (d/f/m) ",
 							ShortDescription: "",
-							URL             : "https://www.linkedin.com/jobs/view/4088212368/",
-							Date            : mustDate("2024-11-12"),
-						}
-					}
+							URL:              "https://www.linkedin.com/jobs/view/4088212368/",
+							Date:             mustDate("2024-11-12"),
+						},
+					},
 				},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -2543,17 +2336,17 @@ func companiesPart3() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
-				domain.Go: 		{},
-				domain.Rust:    {
+				domain.Go: {},
+				domain.Rust: {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title           : "Senior Rust Developer (MTS1/2)",
+							Title:            "Senior Rust Developer (MTS1/2)",
 							ShortDescription: "",
-							URL             : "https://www.linkedin.com/jobs/view/4066364870/",
-							Date            : mustDate("2024-12-01"),
-						}
-					}
+							URL:              "https://www.linkedin.com/jobs/view/4066364870/",
+							Date:             mustDate("2024-12-01"),
+						},
+					},
 				},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -2613,17 +2406,17 @@ func companiesPart3() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
-				domain.Go: 		{},
-				domain.Rust:    {
+				domain.Go: {},
+				domain.Rust: {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title           : "Rust Developer",
+							Title:            "Rust Developer",
 							ShortDescription: "",
-							URL             : "https://www.linkedin.com/jobs/view/4081085456/",
-							Date            : mustDate("2024-11-24"),
-						}
-					}
+							URL:              "https://www.linkedin.com/jobs/view/4081085456/",
+							Date:             mustDate("2024-11-24"),
+						},
+					},
 				},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -2683,17 +2476,17 @@ func companiesPart3() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
-				domain.Go: 		{},
-				domain.Rust:    {
+				domain.Go: {},
+				domain.Rust: {
 					GitHubRepositoriesCount: 1,
 					Vacancies: []domain.Vacancy{
 						{
-							Title           : "C/C++/Rust Developer- streaming to cloud from cameras",
+							Title:            "C/C++/Rust Developer- streaming to cloud from cameras",
 							ShortDescription: "",
-							URL             : "https://www.linkedin.com/jobs/view/4079469920/",
-							Date            : mustDate("2024-11-24"),
-						}
-					}
+							URL:              "https://www.linkedin.com/jobs/view/4079469920/",
+							Date:             mustDate("2024-11-24"),
+						},
+					},
 				},
 				domain.Zig:     {},
 				domain.Scala:   {},
