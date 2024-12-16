@@ -152,7 +152,7 @@ func companiesPart1() []domain.CompanyProfile {
 			YahooFinanceURL:  "https://finance.yahoo.com/quote/GOOG/",
 			GoogleFinanceURL: "https://www.google.com/finance/quote/GOOG:NASDAQ",
 			YCombinatorURL:   "",
-			Industries: []domain.Industry{
+			Industries:       []domain.Industry{
 				// Too many industries
 			},
 			HasEmployeesFromCountries: []domain.Country{
@@ -323,7 +323,7 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Haskell: nil,
 			},
 			ShortDescription: "American multinational technology company",
-			Industries: []domain.Industry{
+			Industries:       []domain.Industry{
 				// Too many industries
 			},
 			HasEmployeesFromCountries: []domain.Country{
@@ -458,7 +458,7 @@ func companiesPart1() []domain.CompanyProfile {
 			YahooFinanceURL:  "",
 			GoogleFinanceURL: "",
 			YCombinatorURL:   "",
-			Industries: []domain.Industry{
+			Industries:       []domain.Industry{
 				// Too many industries
 			},
 			HasEmployeesFromCountries: []domain.Country{
@@ -4442,8 +4442,8 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "",
-			Industries:       []domain.Industry{},
+			ShortDescription:          "",
+			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
 				//
 			},
@@ -7944,8 +7944,8 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
-			ShortDescription: "",
-			Industries:       []domain.Industry{},
+			ShortDescription:          "",
+			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
 				//
 			},

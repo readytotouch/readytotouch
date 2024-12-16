@@ -2563,7 +2563,40 @@ func companiesPart3() []domain.CompanyProfile {
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 
-		// Template
+		// Template short
+		//{
+		//	ID:      0,  // system
+		//	Type:    "", // system
+		//	Name:    "",
+		//	Website: "",
+		//	LinkedInProfile: domain.LinkedInProfile{
+		//		ID:       0,
+		//		Alias:    "",
+		//		Name:     "",
+		//		Verified: false,
+		//	},
+		//	Languages: domain.Languages{
+		//		domain.Go: {
+		//			GitHubRepositoriesCount: 0,
+		//			Vacancies: []domain.Vacancy{
+		//				{
+		//					Title:            "",
+		//					ShortDescription: "",
+		//					URL:              "",
+		//					Date:             mustDate(""),
+		//				},
+		//			},
+		//		},
+		//		domain.Rust:    {},
+		//		domain.Zig:     {},
+		//		domain.Scala:   {},
+		//		domain.Elixir:  {},
+		//		domain.Clojure: {},
+		//		domain.Haskell: {},
+		//	},
+		//},
+
+		// Template full
 		//{
 		//	ID:      0,  // system
 		//	Type:    "", // system
