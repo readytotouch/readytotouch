@@ -21,6 +21,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4037978333/":  14,  // arenko-cleantech
 		"https://www.linkedin.com/jobs/view/3848461191/":  15,  // sumup
 		"https://www.linkedin.com/jobs/view/4056886705/":  16,  // sumup
+		"https://www.linkedin.com/jobs/view/4101217107/":  132, // flixbus
 		"https://www.linkedin.com/jobs/view/4006143681/":  17,  // snyk
 		"https://www.linkedin.com/jobs/view/4077191404/":  18,  // top-doctors-europe
 		"https://www.linkedin.com/jobs/view/4066607632/":  19,  // cognizant
@@ -87,6 +88,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4071728951/":  80,  // omilia-ltd
 		"https://www.linkedin.com/jobs/view/4076696523/":  81,  // rakuten-viber
 		"https://www.linkedin.com/jobs/view/4074905433/":  82,  // nebius
+		"https://www.linkedin.com/jobs/view/4102045400/":  133, // nebius
 		"https://www.linkedin.com/jobs/view/4075517057/":  83,  // zoom
 		"https://www.linkedin.com/jobs/view/4077459247/":  84,  // lexisnexis-risk-solutions
 		"https://www.linkedin.com/jobs/view/4075801293/":  85,  // skidos-games
@@ -135,6 +137,18 @@ var (
 		"https://www.linkedin.com/jobs/view/4083629889/":  128, // telestream
 		"https://www.linkedin.com/jobs/view/4062327545/":  129, // mitratech
 		"https://www.linkedin.com/jobs/view/3946499898/":  130, // paddle
+		"https://www.linkedin.com/jobs/view/4085819915/":  134, // bell
+		"https://www.linkedin.com/jobs/view/4070794151/":  135, // cohesity
+		"https://www.linkedin.com/jobs/view/4085817047/":  136, // idt
+		"https://www.linkedin.com/jobs/view/4082475828/":  137, // dtonesolution
+		"https://www.linkedin.com/jobs/view/4087164770/":  138, // social-discovery-group
+		"https://www.linkedin.com/jobs/view/4075012835/":  139, // sysdig
+		"https://www.linkedin.com/jobs/view/4088212368/":  140, // arculus-a-jungheinrich-company
+		"https://www.linkedin.com/jobs/view/4066364870/":  141, // ebay
+		"https://www.linkedin.com/jobs/view/4081085456/":  142, // digiexams
+		"https://www.linkedin.com/jobs/view/4079469920/":  143, // axis-communications
+		"https://www.linkedin.com/jobs/view/4075722584/":  144, // paltafamily
+		"https://www.linkedin.com/jobs/view/4090264579/":  145, // bol-com
 
 	}
 )

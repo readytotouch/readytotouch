@@ -5478,10 +5478,13 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Flix
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Flix",
-			URL:  "https://www.flixbus.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Flix",
+			Website: "https://www.flixbus.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:    2726149,
 				Alias: "flixbus",
@@ -5489,27 +5492,44 @@ func companiesPart1() []domain.CompanyProfile {
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "flix-tech",
-				GoRepositoryCount: 17,
+				GoRepositoryCount: 0,
 			},
+			BlindProfile:     domain.BlindProfile{},
+			LevelsFyiProfile: domain.LevelsFyiProfile{},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Flix-EI_IE976463.11,15.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Flix-Reviews-E976463.htm",
 			},
+			IndeedProfile:     domain.IndeedProfile{},
 			OttaProfileSlug:   "FlixBus-1",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/3901538380/",
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 17,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Middle Golang Engineer — Content Platform team",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4101217107/",
+							Date:             mustDate("2024-12-16"),
+						},
+					},
 				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			DealroomURL:      "",
+			CrunchbaseURL:    "",
+			PitchbookURL:     "",
+			YahooFinanceURL:  "",
+			GoogleFinanceURL: "",
+			YCombinatorURL:   "",
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,

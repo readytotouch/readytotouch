@@ -139,7 +139,7 @@ var (
 		"quadcodecareer":                      114, // Quadcode
 		"fincompare":                          115, // FinCompare
 		"mellifera-operations-limited":        116, // Mellifera Operations Limited
-		"bnpparibassecuritiesservices":        117, // BNP Paribas - Securities Services
+		"bnpparibassecuritiesservices":        117, // BNP Paribas — Securities Services
 		"apifonica":                           118, // Apifonica
 		"cybus":                               119, // Cybus
 		"goflink":                             120, // Flink
@@ -321,7 +321,7 @@ var (
 		"strongdm":                            311, // StrongDM
 		"jmawireless":                         313, // JMA Wireless
 		"on2it-cybersecurity":                 314, // ON2IT Cybersecurity
-		"cycloid":                             315, // Cycloid - Sustainable Platform Engineering
+		"cycloid":                             315, // Cycloid — Sustainable Platform Engineering
 		"circuitknowledge":                    316, // Circuit
 		"ayloservices":                        317, // Aylo
 		"factset":                             318, // FactSet
@@ -462,6 +462,18 @@ var (
 		"telestream":                          457, // Telestream
 		"mitratech":                           458, // Mitratech
 		"paddle":                              459, // Paddle
+		"bell":                                460, // Bell
+		"cohesity":                            461, // Cohesity
+		"idt":                                 462, // IDT Corporation
+		"dtonesolution":                       463, // DT One
+		"social-discovery-group":              464, // Social Discovery Group
+		"sysdig":                              465, // Sysdig
+		"arculus-a-jungheinrich-company":      466, // arculus — a Jungheinrich company
+		"ebay":                                467, // eBay
+		"digiexams":                           468, // Digiexam
+		"axis-communications":                 469, // Axis Communications
+		"paltafamily":                         470, // Palta
+		"bol-com":                             471, // bol
 
 	}
 )

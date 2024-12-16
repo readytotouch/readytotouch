@@ -1936,75 +1936,6 @@ func companiesPart3() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "Remington & Vernick Engineers",
-			Website: "https://rve.com/",
-			Careers: "https://rve.com/careers",
-			About:   "https://rve.com/about-us/",
-			Blog:    "",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:       94905,
-				Alias:    "remington-&-vernick-engineers",
-				Name:     "Remington & Vernick Engineers",
-				Verified: true,
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
-			},
-			BlindProfile: domain.BlindProfile{
-				Alias:       "",
-				Employees:   "",
-				Salary:      "",
-				Reviews:     "",
-				ReviewsRate: "",
-			},
-			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias:     "",
-				Employees: "",
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Remington-and-Vernick-Engineers-EI_IE303457.11,42.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/Remington-and-Vernick-Engineers-Reviews-E303457.htm",
-				Verified:    true,
-			},
-			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
-			},
-			OttaProfileSlug:   "",
-			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
-			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:            "Go Back End Developer",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4090274755/",
-							Date:             mustDate("2024-12-04"),
-						},
-					},
-				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-			ShortDescription:          "",
-			DealroomURL:               "",
-			CrunchbaseURL:             "",
-			PitchbookURL:              "",
-			YahooFinanceURL:           "",
-			GoogleFinanceURL:          "",
-			YCombinatorURL:            "",
-			Industries:                []domain.Industry{},
-			HasEmployeesFromCountries: []domain.Country{},
-		},
-		{
-			ID:      0,  // system
-			Type:    "", // system
 			Name:    "Social Discovery Group",
 			Website: "https://socialdiscoverygroup.com/",
 			Careers: "https://socialdiscoverygroup.com/vacancies",
@@ -2563,7 +2494,40 @@ func companiesPart3() []domain.CompanyProfile {
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 
-		// Template
+		// Template short
+		//{
+		//	ID:      0,  // system
+		//	Type:    "", // system
+		//	Name:    "",
+		//	Website: "",
+		//	LinkedInProfile: domain.LinkedInProfile{
+		//		ID:       0,
+		//		Alias:    "",
+		//		Name:     "",
+		//		Verified: false,
+		//	},
+		//	Languages: domain.Languages{
+		//		domain.Go: {
+		//			GitHubRepositoriesCount: 0,
+		//			Vacancies: []domain.Vacancy{
+		//				{
+		//					Title:            "",
+		//					ShortDescription: "",
+		//					URL:              "",
+		//					Date:             mustDate(""),
+		//				},
+		//			},
+		//		},
+		//		domain.Rust:    {},
+		//		domain.Zig:     {},
+		//		domain.Scala:   {},
+		//		domain.Elixir:  {},
+		//		domain.Clojure: {},
+		//		domain.Haskell: {},
+		//	},
+		//},
+
+		// Template full
 		//{
 		//	ID:      0,  // system
 		//	Type:    "", // system
