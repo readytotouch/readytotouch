@@ -1,5 +1,12 @@
 # ReadyToTouch
-Yet another anonymous work search
+A platform for simplifying job search
+
+### Organizers:
+- [Companies using Go](https://readytotouch.com/organizers/golang/companies)
+- [Companies using Rust](https://readytotouch.com/organizers/rust/companies)
+- [Companies using Scala](https://readytotouch.com/organizers/scala/companies)
+- [Companies using Elixir](https://readytotouch.com/organizers/elixir/companies)
+- [Companies using Clojure](https://readytotouch.com/organizers/clojure/companies)
 
 # Articles
 - [gRPC-автогенерація Front-end-у](https://dou.ua/lenta/articles/grpc-web-guide/)
