@@ -58,7 +58,7 @@ func CzechUniversities() []domain.University {
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:    156185,
 				Alias: "vsb-technical-university-of-ostrava",
-				Name:  "VSB - Technical University of Ostrava",
+				Name:  "VSB — Technical University of Ostrava",
 			},
 		},
 

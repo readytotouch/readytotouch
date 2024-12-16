@@ -5791,16 +5791,16 @@ func companiesPart1() []domain.CompanyProfile {
 			},
 		},
 
-		// Some | BNP Paribas - Securities Services
+		// Some | BNP Paribas — Securities Services
 		{
 			ID:   0,  // system
 			Type: "", // system
-			Name: "BNP Paribas - Securities Services",
+			Name: "BNP Paribas — Securities Services",
 			URL:  "https://securities.cib.bnpparibas/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:    3625182,
 				Alias: "bnpparibassecuritiesservices",
-				Name:  "BNP Paribas - Securities Services",
+				Name:  "BNP Paribas — Securities Services",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",

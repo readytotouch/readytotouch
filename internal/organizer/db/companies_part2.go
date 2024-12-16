@@ -2019,7 +2019,7 @@ func companiesPart2() []domain.CompanyProfile {
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:       10071522,
 				Alias:    "cycloid",
-				Name:     "Cycloid - Sustainable Platform Engineering",
+				Name:     "Cycloid — Sustainable Platform Engineering",
 				Verified: true,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -4792,7 +4792,7 @@ func companiesPart2() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Senior Software Engineer - Scala & AWS",
+							Title:            "Senior Software Engineer — Scala & AWS",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/3982972845/",
 							Date:             mustDate("2024-11-06"),
