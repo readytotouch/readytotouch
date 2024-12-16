@@ -2113,7 +2113,7 @@ func companiesPart3() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 76,
+					GitHubRepositoriesCount: 18,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:            "Senior Software Engineer BackEnd (Java/Go) — Monitor",
@@ -2130,14 +2130,16 @@ func companiesPart3() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription:          "",
-			DealroomURL:               "",
-			CrunchbaseURL:             "",
-			PitchbookURL:              "",
-			YahooFinanceURL:           "",
-			GoogleFinanceURL:          "",
-			YCombinatorURL:            "",
-			Industries:                []domain.Industry{},
+			ShortDescription: "",
+			DealroomURL:      "",
+			CrunchbaseURL:    "",
+			PitchbookURL:     "",
+			YahooFinanceURL:  "",
+			GoogleFinanceURL: "",
+			YCombinatorURL:   "",
+			Industries: []domain.Industry{
+				domain.IndustryCyberSecurity,
+			},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 		{
@@ -2186,7 +2188,7 @@ func companiesPart3() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Rust Developer (d/f/m) ",
+							Title:            "Rust Developer",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4088212368/",
 							Date:             mustDate("2024-11-12"),
@@ -2255,7 +2257,7 @@ func companiesPart3() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Senior Rust Developer (MTS1/2)",
+							Title:            "Senior Rust Developer",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4066364870/",
 							Date:             mustDate("2024-12-01"),
@@ -2285,7 +2287,7 @@ func companiesPart3() []domain.CompanyProfile {
 			Website: "https://www.digiexam.com/",
 			Careers: "https://careers.digiexam.com/",
 			About:   "https://www.digiexam.com/about",
-			Blog:    "https://www.digiexam.com/blog",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:       4992190,
 				Alias:    "digiexams",
@@ -2337,14 +2339,16 @@ func companiesPart3() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription:          "",
-			DealroomURL:               "",
-			CrunchbaseURL:             "",
-			PitchbookURL:              "",
-			YahooFinanceURL:           "",
-			GoogleFinanceURL:          "",
-			YCombinatorURL:            "",
-			Industries:                []domain.Industry{},
+			ShortDescription: "",
+			DealroomURL:      "",
+			CrunchbaseURL:    "",
+			PitchbookURL:     "",
+			YahooFinanceURL:  "",
+			GoogleFinanceURL: "",
+			YCombinatorURL:   "",
+			Industries: []domain.Industry{
+				domain.IndustryEdTech,
+			},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 		{
@@ -2354,7 +2358,7 @@ func companiesPart3() []domain.CompanyProfile {
 			Website: "https://www.axis.com/",
 			Careers: "https://www.axis.com/careers",
 			About:   "https://www.axis.com/about-axis",
-			Blog:    "https://engineeringat.axis.com/",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:       6390,
 				Alias:    "axis-communications",
@@ -2393,7 +2397,7 @@ func companiesPart3() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 1,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "C/C++/Rust Developer- streaming to cloud from cameras",
+							Title:            "C/C++/Rust Developer — streaming to cloud from cameras",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4079469920/",
 							Date:             mustDate("2024-11-24"),
@@ -2461,7 +2465,7 @@ func companiesPart3() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 2,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Senior GO Developer",
+							Title:            "Senior Go Developer",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4075722584/",
 							Date:             mustDate("2024-12-06"),
@@ -2475,83 +2479,16 @@ func companiesPart3() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription:          "",
-			DealroomURL:               "",
-			CrunchbaseURL:             "",
-			PitchbookURL:              "",
-			YahooFinanceURL:           "",
-			GoogleFinanceURL:          "",
-			YCombinatorURL:            "",
-			Industries:                []domain.Industry{},
-			HasEmployeesFromCountries: []domain.Country{},
-		},
-		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Huntress",
-			Website: "https://huntress.com/",
-			Careers: "https://www.huntress.com/company/careers",
-			About:   "https://www.huntress.com/company/our-company",
-			Blog:    "https://www.huntress.com/blog",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:       10172550,
-				Alias:    "huntress-labs",
-				Name:     "Huntress",
-				Verified: true,
+			ShortDescription: "",
+			DealroomURL:      "",
+			CrunchbaseURL:    "",
+			PitchbookURL:     "",
+			YahooFinanceURL:  "",
+			GoogleFinanceURL: "",
+			YCombinatorURL:   "",
+			Industries: []domain.Industry{
+				domain.IndustryHealthTech,
 			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "huntresslabs",
-				Verified: true,
-			},
-			BlindProfile: domain.BlindProfile{
-				Alias:       "",
-				Employees:   "",
-				Salary:      "",
-				Reviews:     "",
-				ReviewsRate: "",
-			},
-			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias:     "",
-				Employees: "",
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Huntress-EI_IE4474883.11,19.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/Huntress-Reviews-E4474883.htm",
-				Verified:    true,
-			},
-			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
-			},
-			OttaProfileSlug:   "Huntress",
-			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
-			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 5,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:            "Senior Software Engineer, Windows SIEM Agent (GO)",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4055142455/",
-							Date:             mustDate("2024-12-06"),
-						},
-					},
-				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-			ShortDescription:          "",
-			DealroomURL:               "",
-			CrunchbaseURL:             "",
-			PitchbookURL:              "",
-			YahooFinanceURL:           "",
-			GoogleFinanceURL:          "",
-			YCombinatorURL:            "",
-			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 		{
@@ -2613,14 +2550,16 @@ func companiesPart3() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription:          "",
-			DealroomURL:               "",
-			CrunchbaseURL:             "",
-			PitchbookURL:              "",
-			YahooFinanceURL:           "",
-			GoogleFinanceURL:          "",
-			YCombinatorURL:            "",
-			Industries:                []domain.Industry{},
+			ShortDescription: "",
+			DealroomURL:      "",
+			CrunchbaseURL:    "",
+			PitchbookURL:     "",
+			YahooFinanceURL:  "",
+			GoogleFinanceURL: "",
+			YCombinatorURL:   "",
+			Industries: []domain.Industry{
+				domain.IndustryECommerce,
+			},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 
