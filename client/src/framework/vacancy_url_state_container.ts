@@ -21,8 +21,8 @@ const vacancyUrlStateContainer = new UrlStateContainer(VACANCY_CRITERIA_NAMES, {
     [VACANCY_SEARCH_QUERY]: identityCriteriaConverter,
     [VACANCY_COMPANY_TYPE_CRITERIA_NAME]: multiSelectCriteriaConverter,
     [VACANCY_COMPANY_INDUSTRY_CRITERIA_NAME]: multiSelectCriteriaConverter,
-    [VACANCY_IN_FAVORITES_CRITERIA_NAME]: multiSelectCriteriaConverter,
-    [VACANCY_COMPANY_HAS_EMPLOYEES_FROM_COUNTRY_CRITERIA_NAME]: checkedCriteriaConverter,
+    [VACANCY_COMPANY_HAS_EMPLOYEES_FROM_COUNTRY_CRITERIA_NAME]: multiSelectCriteriaConverter,
+    [VACANCY_IN_FAVORITES_CRITERIA_NAME]: checkedCriteriaConverter,
 });
 
 export default vacancyUrlStateContainer;
