@@ -474,6 +474,62 @@ var (
 		"axis-communications":                 469, // Axis Communications
 		"paltafamily":                         470, // Palta
 		"bol-com":                             471, // bol
+		"limango-gmbh":                        472, // limango GmbH — A member of the otto group
+		"varonis":                             473, // Varonis
+		"worldtechit":                         474, // WorldTech IT, LLC
+		"applied-research-solutions":          475, // Applied Research Solutions
+		"wexinc":                              476, // WEX
+		"comcast":                             477, // Comcast
+		"semrush":                             478, // Semrush
+		"pi-square-technology":                479, // Pi Square Technologies
+		"dataoncorp":                          480, // DataOn (PT Indodev Niaga Internet)
+		"kiteworkscgcp":                       481, // Kiteworks
+		"centripetal-ai":                      482, // Centripetal
+		"tiiuae":                              483, // Technology Innovation Institute
+		"bauhaus-deutschland":                 484, // BAUHAUS Deutschland
+		"sunasterisk":                         485, // Sun* Vietnam
+		"miraclesoft":                         486, // Miracle Software Systems, Inc
+		"collabera":                           487, // Collabera
+		"teamsparq":                           488, // Sparq
+		"smg-marketplace":                     489, // SMG Swiss Marketplace Group
+		"hornetsecurity":                      490, // Hornetsecurity
+		"gorillalogic":                        491, // Gorilla Logic
+		"zeptolab":                            492, // ZeptoLab
+		"getir":                               493, // Getir
+		"happen-ing":                          494, // Happening
+		"zeller":                              495, // Zeller
+		"flip.id":                             496, // Flip
+		"openx":                               497, // OpenX
+		"lenskart-com":                        498, // Lenskart.com
+		"lowe&#39;s-home-improvement":         528, // Lowe&#39;s Companies, Inc.
+		"huntress-labs":                       500, // Huntress
+		"1nce":                                501, // 1NCE
+		"waystar":                             502, // Waystar
+		"e-food-gr":                           503, // efood
+		"eset":                                504, // ESET
+		"praxent":                             505, // Praxent
+		"stacklok":                            506, // Stacklok
+		"superindo":                           507, // PT Lion Super Indo
+		"ubiquiti-":                           508, // Ubiquiti Inc.
+		"enflick-inc-":                        509, // TextNow
+		"altenar":                             510, // Altenar
+		"vustheenglishcenter":                 511, // VUS — The English Center
+		"exness":                              512, // Exness
+		"xsolla":                              513, // Xsolla
+		"emerchantpay-ltd":                    514, // emerchantpay
+		"power-factors-inc":                   515, // Power Factors
+		"airspace-inc":                        516, // Airspace
+		"amartha":                             517, // Amartha
+		"creativesoftware":                    518, // Creative Software
+		"thousandeyes":                        519, // Cisco ThousandEyes
+		"us-bank":                             520, // U.S. Bank
+		"netapp":                              521, // NetApp
+		"trend-micro":                         522, // Trend Micro
+		"centralretail":                       523, // Central Retail
+		"kargo":                               524, // Kargo
+		"salesloft":                           525, // Salesloft
+		"cj-express-group":                    526, // CJ MORE
+		"heb":                                 527, // H-E-B
 
 	}
 )
