@@ -1601,38 +1601,6 @@ func companiesPart4() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "Stratascale — An SHI Company",
-			Website: "https://www.stratascale.com/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:       4791832,
-				Alias:    "stratascale-llc",
-				Name:     "Stratascale — An SHI Company",
-				Verified: true,
-			},
-			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:            "Stratascale Sr. Software Engineer — Golang",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4042996119/",
-							Date:             mustDate("2024-12-12"),
-						},
-					},
-				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-		},
-
-		{
-			ID:      0,  // system
-			Type:    "", // system
 			Name:    "NetApp",
 			Website: "https://www.netapp.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1681,38 +1649,6 @@ func companiesPart4() []domain.CompanyProfile {
 							Title:            "Cloud Engineer (Golang/Python, Backend Focus) 雲端開發工程師",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4063567336/",
-							Date:             mustDate("2024-12-11"),
-						},
-					},
-				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-		},
-
-		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Stratascale — An SHI Company",
-			Website: "https://www.stratascale.com/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:       4791832,
-				Alias:    "stratascale-llc",
-				Name:     "Stratascale — An SHI Company",
-				Verified: true,
-			},
-			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:            "Stratascale — An SHI Company",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4042998003/",
 							Date:             mustDate("2024-12-11"),
 						},
 					},
