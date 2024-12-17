@@ -361,37 +361,6 @@ func companiesPart4() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "Apex Systems",
-			Website: "https://www.apexsystems.com/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:       4787,
-				Alias:    "apex-systems",
-				Name:     "Apex Systems",
-				Verified: true,
-			},
-			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:            "Front-End Golang Developer",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4087413917/",
-							Date:             mustDate("2024-12-10"),
-						},
-					},
-				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-		},
-		{
-			ID:      0,  // system
-			Type:    "", // system
 			Name:    "Centripetal",
 			Website: "https://www.centripetal.ai/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1171,6 +1140,772 @@ func companiesPart4() []domain.CompanyProfile {
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4079391812/",
 							Date:             mustDate("2024-12-"),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "PT Lion Super Indo",
+			Website: "https://www.superindo.co.id/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       1104467,
+				Alias:    "superindo",
+				Name:     "PT Lion Super Indo",
+				Verified: true,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Backend Developer (GoLang)",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4102186636/",
+							Date:             mustDate("2024-12-17"),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Ubiquiti Inc.",
+			Website: "https://www.ui.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       109341,
+				Alias:    "ubiquiti-",
+				Name:     "Ubiquiti Inc.",
+				Verified: true,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 4,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "F0007 - Backend Developer (Golang)",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4100868953/",
+							Date:             mustDate("2024-12-16"),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "TextNow",
+			Website: "https://textnow.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       529693,
+				Alias:    "enflick-inc-",
+				Name:     "TextNow",
+				Verified: true,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 18,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Golang Backend Developer — Trust & Safety",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4096314146/",
+							Date:             mustDate("2024-12-11"),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Altenar",
+			Website: "https://altenar.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       11063103,
+				Alias:    "altenar",
+				Name:     "Altenar",
+				Verified: true,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Golang Software Developer",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4006862895/",
+							Date:             mustDate("2024-12-10"),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "VUS - The English Center",
+			Website: "https://vus.edu.vn/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       33233160,
+				Alias:    "vustheenglishcenter",
+				Name:     "VUS - The English Center",
+				Verified: true,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Backend Developer (Golang) — 3 years Exp",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4089423781/",
+							Date:             mustDate("2024-12-10"),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Exness",
+			Website: "https://www.exness.uk/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       3291356,
+				Alias:    "exness",
+				Name:     "Exness",
+				Verified: true,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Golang/Python Developer",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4088177442/",
+							Date:             mustDate("2024-12-03"),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Xsolla",
+			Website: "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       875431,
+				Alias:    "xsolla",
+				Name:     "Xsolla",
+				Verified: true,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 3,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Golang Backend Developer",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4069628874/",
+							Date:             mustDate("2024-12-03"),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "emerchantpay",
+			Website: "https://www.emerchantpay.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       1432812,
+				Alias:    "emerchantpay-ltd",
+				Name:     "emerchantpay",
+				Verified: true,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Developer with Golang",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4084138762/",
+							Date:             mustDate("2024-12-03"),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Power Factors",
+			Website: "https://www.powerfactors.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       4748453,
+				Alias:    "power-factors-inc",
+				Name:     "Power Factors",
+				Verified: true,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Engineer, Back-End, Golang (Greece)",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4102953810/",
+							Date:             mustDate("2024-12-17"),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Airspace",
+			Website: "https://www.airspace.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       10504949,
+				Alias:    "airspace-inc",
+				Name:     "Airspace",
+				Verified: true,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Software Engineer — Golang",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4101213697/",
+							Date:             mustDate("2024-12-16"),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Amartha",
+			Website: "https://amartha.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       3655032,
+				Alias:    "amartha",
+				Name:     "Amartha",
+				Verified: true,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Backend Engineer (Golang) — Senior/Principal Level",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4102510260/",
+							Date:             mustDate("2024-12-16"),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Creative Software",
+			Website: "http://www.creativesoftware.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       12688,
+				Alias:    "creativesoftware",
+				Name:     "Creative Software",
+				Verified: true,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Software Engineer(Golang) — REF7502",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4101950317/",
+							Date:             mustDate("2024-12-16"),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Cisco ThousandEyes",
+			Website: "https://www.thousandeyes.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       687352,
+				Alias:    "thousandeyes",
+				Name:     "Cisco ThousandEyes",
+				Verified: true,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 9,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Site Reliability Engineer I (Python/Golang), Agent Ops",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4100798671/",
+							Date:             mustDate("2024-12-14"),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "U.S. Bank",
+			Website: "https://usbank.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       2532,
+				Alias:    "us-bank",
+				Name:     "U.S. Bank",
+				Verified: true,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Software Information Security Engineer (Golang or Python)",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4063303097/",
+							Date:             mustDate("2024-12-12"),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Stratascale — An SHI Company",
+			Website: "https://www.stratascale.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       4791832,
+				Alias:    "stratascale-llc",
+				Name:     "Stratascale — An SHI Company",
+				Verified: true,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Stratascale Sr. Software Engineer — Golang",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4042996119/",
+							Date:             mustDate("2024-12-12"),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "NetApp",
+			Website: "https://www.netapp.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       2105,
+				Alias:    "netapp",
+				Name:     "NetApp",
+				Verified: true,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 23,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Software Engineer — Golang",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4095534140/",
+							Date:             mustDate("2024-12-12"),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Trend Micro",
+			Website: "https://www.trendmicro.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       4312,
+				Alias:    "trend-micro",
+				Name:     "Trend Micro",
+				Verified: true,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 4,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Cloud Engineer (Golang/Python, Backend Focus) 雲端開發工程師",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4063567336/",
+							Date:             mustDate("2024-12-11"),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Stratascale — An SHI Company",
+			Website: "https://www.stratascale.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       4791832,
+				Alias:    "stratascale-llc",
+				Name:     "Stratascale — An SHI Company",
+				Verified: true,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Stratascale — An SHI Company",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4042998003/",
+							Date:             mustDate("2024-12-11"),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Electronic Arts (EA)",
+			Website: "https://www.ea.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       1449,
+				Alias:    "electronic-arts",
+				Name:     "Electronic Arts (EA)",
+				Verified: true,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 3,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Full Stack Software Engineer — Golang",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4092326507/",
+							Date:             mustDate("2024-12-10"),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Central Retail",
+			Website: "https://www.centralretail.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       26628492,
+				Alias:    "centralretail",
+				Name:     "Central Retail",
+				Verified: true,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Software Engineer (Golang)",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4093163873/",
+							Date:             mustDate("2024-12-10"),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Kargo",
+			Website: "https://www.kargo.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       55830,
+				Alias:    "kargo",
+				Name:     "Kargo",
+				Verified: true,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Software Engineer (Golang)",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4089015041/",
+							Date:             mustDate("2024-12-10"),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Salesloft",
+			Website: "https://www.salesloft.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       2296178,
+				Alias:    "salesloft",
+				Name:     "Salesloft",
+				Verified: true,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 3,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Software Engineer (Golang)",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4072522353/",
+							Date:             mustDate("2024-12-03"),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "CJ MORE",
+			Website: "https://www.cjexpress.co.th/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       10081692,
+				Alias:    "cj-express-group",
+				Name:     "CJ MORE",
+				Verified: true,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Software Engineer (Golang)",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4088241281/",
+							Date:             mustDate("2024-12-03"),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "H-E-B",
+			Website: "https://www.heb.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:       164159,
+				Alias:    "heb",
+				Name:     "H-E-B",
+				Verified: true,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Sr Software Engineer, Golang",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4000104862/",
+							Date:             mustDate("2024-12-03"),
 						},
 					},
 				},
