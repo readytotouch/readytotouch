@@ -2040,13 +2040,13 @@ func companiesPart2() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 40,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:            "Senior Backend Go Developer",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4075626268/",
-							Date:             mustDate("2024-11-17"),
+							Date:             mustDate("2024-12-12"), // mustDate("2024-11-17"),
 						},
 					},
 				},

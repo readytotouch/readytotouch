@@ -11205,38 +11205,59 @@ func companiesPart1() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Electronic Arts",
-			URL:  "https://www.ea.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Electronic Arts",
+			Website: "https://www.ea.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    1449,
-				Alias: "electronic-arts",
-				Name:  "Electronic Arts",
+				ID:       1449,
+				Alias:    "electronic-arts",
+				Name:     "Electronic Arts (EA)",
+				Verified: true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "electronicarts",
-				GoRepositoryCount: 3,
+				GoRepositoryCount: 0,
 			},
+			BlindProfile:     domain.BlindProfile{},
+			LevelsFyiProfile: domain.LevelsFyiProfile{},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Electronic-Arts-EI_IE1628.11,26.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Electronic-Arts-Reviews-E1628.htm",
 			},
+			IndeedProfile:     domain.IndeedProfile{},
 			OttaProfileSlug:   "Electronic-Arts",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/4043032750/",
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 3,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Full Stack Software Engineer — Golang",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4092326507/",
+							Date:             mustDate("2024-12-10"),
+						},
+					},
 				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			DealroomURL:      "",
+			CrunchbaseURL:    "",
+			PitchbookURL:     "",
+			YahooFinanceURL:  "",
+			GoogleFinanceURL: "",
+			YCombinatorURL:   "",
 			Industries: []domain.Industry{
 				domain.IndustryEntertainment,
 			},

@@ -9,12 +9,12 @@ func companiesPart4() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "limango GmbH - A member of the otto group",
+			Name:    "limango GmbH — A member of the otto group",
 			Website: "https://limango.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:       9381585,
 				Alias:    "limango-gmbh",
-				Name:     "limango GmbH - A member of the otto group",
+				Name:     "limango GmbH — A member of the otto group",
 				Verified: true,
 			},
 			Languages: domain.Languages{
@@ -26,38 +26,6 @@ func companiesPart4() []domain.CompanyProfile {
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4096830999/",
 							Date:             mustDate("2024-12-13"),
-						},
-					},
-				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-		},
-
-		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Cycloid - Sustainable Platform Engineering",
-			Website: "https://www.cycloid.io/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:       10071522,
-				Alias:    "cycloid",
-				Name:     "Cycloid - Sustainable Platform Engineering",
-				Verified: true,
-			},
-			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 40,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:            "Senior Backend GO Developer - Remote",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4075626268/",
-							Date:             mustDate("2024-12-12"),
 						},
 					},
 				},
@@ -660,7 +628,7 @@ func companiesPart4() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 3,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Senior GO Engineer - GP",
+							Title:            "Senior GO Engineer — GP",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4085414974/",
 							Date:             mustDate("2024-11-26"),
@@ -917,7 +885,7 @@ func companiesPart4() []domain.CompanyProfile {
 							Title:            "Sr Software Engineer — Mobile/Backend (Android, GO, Kotlin)",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4093511115/",
-							Date:             mustDate("2024-12-"),
+							Date:             mustDate("2024-12-11"),
 						},
 					},
 				},
@@ -1139,7 +1107,7 @@ func companiesPart4() []domain.CompanyProfile {
 							Title:            "Software Engineer II (GO & Python)",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4079391812/",
-							Date:             mustDate("2024-12-"),
+							Date:             mustDate("2024-11-20"),
 						},
 					},
 				},
@@ -1200,7 +1168,7 @@ func companiesPart4() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 4,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "F0007 - Backend Developer (Golang)",
+							Title:            "F0007 — Backend Developer (Golang)",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4100868953/",
 							Date:             mustDate("2024-12-16"),
@@ -1282,12 +1250,12 @@ func companiesPart4() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "VUS - The English Center",
+			Name:    "VUS — The English Center",
 			Website: "https://vus.edu.vn/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:       33233160,
 				Alias:    "vustheenglishcenter",
-				Name:     "VUS - The English Center",
+				Name:     "VUS — The English Center",
 				Verified: true,
 			},
 			Languages: domain.Languages{
@@ -1650,38 +1618,6 @@ func companiesPart4() []domain.CompanyProfile {
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4063567336/",
 							Date:             mustDate("2024-12-11"),
-						},
-					},
-				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-		},
-
-		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Electronic Arts (EA)",
-			Website: "https://www.ea.com/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:       1449,
-				Alias:    "electronic-arts",
-				Name:     "Electronic Arts (EA)",
-				Verified: true,
-			},
-			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 3,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:            "Full Stack Software Engineer — Golang",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4092326507/",
-							Date:             mustDate("2024-12-10"),
 						},
 					},
 				},
