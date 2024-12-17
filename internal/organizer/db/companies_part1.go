@@ -11215,7 +11215,7 @@ func companiesPart1() []domain.CompanyProfile {
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:       1449,
 				Alias:    "electronic-arts",
-				Name:     "Electronic Arts (EA)",
+				Name:     "Electronic Arts",
 				Verified: true,
 			},
 			GitHubProfile: domain.GitHubProfile{
