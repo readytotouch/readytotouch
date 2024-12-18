@@ -15,10 +15,13 @@ func companiesPart3() []domain.CompanyProfile {
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:       1419,
-				Alias:    "capital-one",
-				Name:     "Capital One",
-				Verified: true,
+				ID:                1419,
+				Alias:             "capital-one",
+				Name:              "Capital One",
+				Followers:         "804K+",
+				Employees:         "10K+",
+				AssociatedMembers: "57,898",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "capitalone",
