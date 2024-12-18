@@ -29,6 +29,8 @@ var (
 		"https://www.linkedin.com/jobs/view/4062048996/":  21,  // rialtic-io
 		"https://www.linkedin.com/jobs/view/4071554607/":  22,  // the-walt-disney-company
 		"https://www.linkedin.com/jobs/view/4063482617/":  23,  // the-walt-disney-company
+		"https://www.linkedin.com/jobs/view/3948655227/":  203, // materialise
+		"https://www.linkedin.com/jobs/view/3978294129/":  204, // influxdb
 		"https://www.linkedin.com/jobs/view/3990418832/":  24,  // eburyfintech
 		"https://www.linkedin.com/jobs/view/4064738212/":  25,  // ddn
 		"https://www.linkedin.com/jobs/view/4057290510/":  26,  // jack-henry
