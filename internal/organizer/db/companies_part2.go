@@ -12,9 +12,11 @@ func companiesPart2() []domain.CompanyProfile {
 			Name: "Trusting Social",
 			URL:  "https://www.trustingsocial.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    3506386,
-				Alias: "trustingsocial",
-				Name:  "Trusting Social",
+				ID:        3506386,
+				Alias:     "trustingsocial",
+				Name:      "Trusting Social",
+				Followers: "13K",
+				Employees: "321",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -51,9 +53,11 @@ func companiesPart2() []domain.CompanyProfile {
 			Name: "McAfee",
 			URL:  "https://www.mcafee.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    2336,
-				Alias: "mcafee",
-				Name:  "McAfee",
+				ID:        2336,
+				Alias:     "mcafee",
+				Name:      "McAfee",
+				Followers: "320K",
+				Employees: "5,531",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "mcafee",
@@ -92,9 +96,11 @@ func companiesPart2() []domain.CompanyProfile {
 			Name: "Hadrian",
 			URL:  "https://www.hadrian.co/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    71668100,
-				Alias: "hadrianspace",
-				Name:  "Hadrian",
+				ID:        71668100,
+				Alias:     "hadrianspace",
+				Name:      "Hadrian",
+				Followers: "13K",
+				Employees: "182",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -129,9 +135,11 @@ func companiesPart2() []domain.CompanyProfile {
 			Name: "Scaleway",
 			URL:  "https://www.scaleway.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    9427185,
-				Alias: "scaleway",
-				Name:  "Scaleway",
+				ID:        9427185,
+				Alias:     "scaleway",
+				Name:      "Scaleway",
+				Followers: "33K",
+				Employees: "561",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "scaleway",
@@ -208,9 +216,11 @@ func companiesPart2() []domain.CompanyProfile {
 			Name: "Overwolf",
 			URL:  "https://www.overwolf.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    519584,
-				Alias: "overwolf.com",
-				Name:  "Overwolf",
+				ID:        519584,
+				Alias:     "overwolf.com",
+				Name:      "Overwolf",
+				Followers: "21K",
+				Employees: "193",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "overwolf",
@@ -288,9 +298,11 @@ func companiesPart2() []domain.CompanyProfile {
 			Name: "Hinge",
 			URL:  "https://hinge.co/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    2603651,
-				Alias: "hinge-app",
-				Name:  "Hinge",
+				ID:        2603651,
+				Alias:     "hinge-app",
+				Name:      "Hinge",
+				Followers: "",
+				Employees: "431",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "Hinge",
@@ -428,9 +440,11 @@ func companiesPart2() []domain.CompanyProfile {
 			Name: "Ansa",
 			URL:  "https://www.ansa.dev/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    91158109,
-				Alias: "getansa",
-				Name:  "Ansa",
+				ID:        91158109,
+				Alias:     "getansa",
+				Name:      "Ansa",
+				Followers: "2K",
+				Employees: "27",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -466,9 +480,11 @@ func companiesPart2() []domain.CompanyProfile {
 			Name: "1GLOBAL",
 			URL:  "https://www.1global.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    39711,
-				Alias: "1global",
-				Name:  "1GLOBAL",
+				ID:        39711,
+				Alias:     "1global",
+				Name:      "1GLOBAL",
+				Followers: "61K",
+				Employees: "463",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -506,9 +522,11 @@ func companiesPart2() []domain.CompanyProfile {
 			Name: "Eco-Movement",
 			URL:  "https://eco-movement.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    15223273,
-				Alias: "eco-movement-charge-point-data",
-				Name:  "Eco-Movement",
+				ID:        15223273,
+				Alias:     "eco-movement-charge-point-data",
+				Name:      "Eco-Movement",
+				Followers: "",
+				Employees: "50",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -543,10 +561,12 @@ func companiesPart2() []domain.CompanyProfile {
 			Name: "Network Optix",
 			URL:  "https://www.networkoptix.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:       1896041,
-				Alias:    "network-optix",
-				Name:     "Network Optix",
-				Verified: true,
+				ID:        1896041,
+				Alias:     "network-optix",
+				Name:      "Network Optix",
+				Followers: "22K",
+				Employees: "183",
+				Verified:  true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "networkoptix",
@@ -583,9 +603,11 @@ func companiesPart2() []domain.CompanyProfile {
 			Name: "Cinemo",
 			URL:  "https://www.cinemo.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    564661,
-				Alias: "cinemo",
-				Name:  "Cinemo",
+				ID:        564661,
+				Alias:     "cinemo",
+				Name:      "Cinemo",
+				Followers: "",
+				Employees: "262",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -623,9 +645,11 @@ func companiesPart2() []domain.CompanyProfile {
 			Name: "Readdle",
 			URL:  "https://readdle.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    629551,
-				Alias: "readdle",
-				Name:  "Readdle",
+				ID:        629551,
+				Alias:     "readdle",
+				Name:      "Readdle",
+				Followers: "7K",
+				Employees: "280",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "readdle",
@@ -661,9 +685,11 @@ func companiesPart2() []domain.CompanyProfile {
 			Name: "Ipsos",
 			URL:  "https://www.ipsos.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    4318,
-				Alias: "ipsos",
-				Name:  "Ipsos",
+				ID:        4318,
+				Alias:     "ipsos",
+				Name:      "Ipsos",
+				Followers: "",
+				Employees: "17,733",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -701,9 +727,11 @@ func companiesPart2() []domain.CompanyProfile {
 			Name: "Bedrock Streaming",
 			URL:  "https://bedrockstreaming.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    64853943,
-				Alias: "bedrock-streaming",
-				Name:  "Bedrock Streaming",
+				ID:        64853943,
+				Alias:     "bedrock-streaming",
+				Name:      "Bedrock Streaming",
+				Followers: "",
+				Employees: "315",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "bedrockstreaming",
@@ -737,9 +765,11 @@ func companiesPart2() []domain.CompanyProfile {
 			Name: "Whalebone",
 			URL:  "https://www.whalebone.io/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    10961729,
-				Alias: "whaleboneio",
-				Name:  "Whalebone",
+				ID:        10961729,
+				Alias:     "whaleboneio",
+				Name:      "Whalebone",
+				Followers: "",
+				Employees: "118",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "whalebone",
@@ -903,9 +933,11 @@ func companiesPart2() []domain.CompanyProfile {
 			Name: "Aqua Security",
 			URL:  "https://www.aquasec.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    10034420,
-				Alias: "aquasecteam",
-				Name:  "Aqua Security",
+				ID:        10034420,
+				Alias:     "aquasecteam",
+				Name:      "Aqua Security",
+				Followers: "63K",
+				Employees: "639",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "aquasecurity",
@@ -941,9 +973,11 @@ func companiesPart2() []domain.CompanyProfile {
 			Name: "Verve",
 			URL:  "https://verve.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    108605,
-				Alias: "verve-ad-solutions",
-				Name:  "Verve",
+				ID:        108605,
+				Alias:     "verve-ad-solutions",
+				Name:      "Verve",
+				Followers: "23K",
+				Employees: "470",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -1058,9 +1092,11 @@ func companiesPart2() []domain.CompanyProfile {
 			Name: "Napier AI",
 			URL:  "https://www.napier.ai/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    15197985,
-				Alias: "napier",
-				Name:  "Napier AI",
+				ID:        15197985,
+				Alias:     "napier",
+				Name:      "Napier AI",
+				Followers: "17K",
+				Employees: "229",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "napier-ai",
