@@ -6407,7 +6407,7 @@ func companiesPart1() []domain.CompanyProfile {
 							Title:            "(Senior) Backend Engineer — Elixir",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4056886705/",
-							Date:             mustDate("2024-11-14"),
+							Date:             mustDate("2024-12-06"), // mustDate("2024-11-14"),
 						},
 					},
 				},
@@ -9300,7 +9300,6 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Hays
 		{
-			// The deleted recruiting agency was added by mistake
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "Hays",
@@ -9314,6 +9313,7 @@ func companiesPart1() []domain.CompanyProfile {
 				AssociatedMembers: "26,240",
 				Verified:          true,
 			},
+			Ignore: true, // The deleted recruiting agency was added by mistake
 		},
 
 		// Some | Consort Group

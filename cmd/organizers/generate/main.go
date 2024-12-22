@@ -24,8 +24,8 @@ func main() {
 func generateCompanies(companies []domain.CompanyProfile) {
 	var (
 		maxID = int64(0)
-		pairs = make([]*dev.CompanyCodePair, len(companies))
-		names = make([]string, len(companies))
+		pairs = make([]*dev.CompanyCodePair, 0, len(companies))
+		names = make([]string, 0, len(companies))
 	)
 
 	// Assert that all company aliases are present in the map
@@ -35,16 +35,23 @@ func generateCompanies(companies []domain.CompanyProfile) {
 		}
 	}
 
-	for i, company := range companies {
+	for _, company := range companies {
+		id := organizers.CompanyAliasMap[company.LinkedInProfile.Alias]
+
+		// If we added the ignored company before, then keep it
+		if id == 0 && company.Ignore {
+			continue
+		}
+
 		pair := &dev.CompanyCodePair{
-			ID:    organizers.CompanyAliasMap[company.LinkedInProfile.Alias],
+			ID:    id,
 			Name:  company.LinkedInProfile.Name,
 			Alias: company.LinkedInProfile.Alias,
 		}
 
-		pairs[i] = pair
-		names[i] = company.LinkedInProfile.Name
-		maxID = max(maxID, pair.ID)
+		pairs = append(pairs, pair)
+		names = append(names, company.LinkedInProfile.Name)
+		maxID = max(maxID, id)
 	}
 
 	for _, pair := range pairs {
