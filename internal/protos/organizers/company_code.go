@@ -476,6 +476,7 @@ var (
 		"bol-com":                             471, // bol
 		"drw":                                 529, // DRW
 		"nice-systems":                        530, // NICE
+		"maersk-group":                        531, // A.P. Moller - Maersk
 		"limango-gmbh":                        472, // limango GmbH - A member of the otto group
 		"varonis":                             473, // Varonis
 		"worldtechit":                         474, // WorldTech IT, LLC

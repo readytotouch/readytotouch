@@ -155,6 +155,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4090264579/":  145, // bol-com
 		"https://www.linkedin.com/jobs/view/4080206651/":  206, // drw
 		"https://www.linkedin.com/jobs/view/4099130926/":  207, // nice-systems
+		"https://www.linkedin.com/jobs/view/4056139785/":  209, // maersk-group
 		"https://www.linkedin.com/jobs/view/4096830999/":  147, // limango-gmbh
 		"https://www.linkedin.com/jobs/view/4093559031/":  148, // varonis
 		"https://www.linkedin.com/jobs/view/4101282630/":  149, // worldtechit
