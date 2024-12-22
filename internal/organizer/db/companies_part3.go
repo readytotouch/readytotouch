@@ -2177,7 +2177,7 @@ func companiesPart3() []domain.CompanyProfile {
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                10614020,
 				Alias:             "arculus-a-jungheinrich-company",
-				Name:              "arculus — a Jungheinrich company",
+				Name:              "arculus – a Jungheinrich company",
 				Followers:         "10K",
 				Employees:         "50+",
 				AssociatedMembers: "95",
@@ -2604,6 +2604,158 @@ func companiesPart3() []domain.CompanyProfile {
 			},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "BlueLabs",
+			Website: "https://bluelabs.eu/",
+			Careers: "https://careers.bluelabs.eu/",
+			About:   "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                18728132,
+				Alias:             "bluelabs-eu",
+				Name:              "BlueLabs",
+				Followers:         "985",
+				Employees:         "11-50",
+				AssociatedMembers: "30",
+				Verified:          true,
+			},
+			Ignore: true, // We ignore the job openings of this company because it is related to casinos, according to the job description: https://www.linkedin.com/jobs/view/4092131104/
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "DRW",
+			Website: "https://www.drw.com/",
+			Careers: "https://www.drw.com/careers",
+			About:   "https://www.drw.com/work-at-drw/who-we-are",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                15999,
+				Alias:             "drw",
+				Name:              "DRW",
+				Followers:         "73K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "2,116",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go:    {},
+				domain.Rust:  {},
+				domain.Zig:   {},
+				domain.Scala: {},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Software Engineer, Elixir",
+							ShortDescription: "We make extensive use of the OTP and wider Elixir ecosystem, with applications leveraging Ecto, Broadway, LiveView, and Nx.",
+							URL:              "https://www.linkedin.com/jobs/view/4080206651/",
+							Date:             mustDate("2024-12-12"),
+						},
+					},
+				},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "NICE",
+			Website: "https://www.nice.com/",
+			Careers: "https://www.nice.com/careers",
+			About:   "https://www.nice.com/company/about-us",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                4728,
+				Alias:             "nice-systems",
+				Name:              "NICE",
+				Followers:         "351K",
+				Employees:         "5K-10K",
+				AssociatedMembers: "12,149",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go:    {},
+				domain.Rust:  {},
+				domain.Zig:   {},
+				domain.Scala: {},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Software Engineer (Elixir)",
+							ShortDescription: "Proficiency in the Elixir programming language.",
+							URL:              "https://www.linkedin.com/jobs/view/4099130926/",
+							Date:             mustDate("2024-12-12"),
+						},
+					},
+				},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "NICE provides cloud and on-premises enterprise software solutions that help organizations make smarter decisions through advanced analytics of structured and unstructured data.",
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "A.P. Moller — Maersk",
+			Website: "https://www.maersk.com/",
+			Careers: "https://www.maersk.com/careers",
+			About:   "https://www.maersk.com/about",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                479080,
+				Alias:             "maersk-group",
+				Name:              "A.P. Moller - Maersk",
+				Followers:         "2M",
+				Employees:         "10K+",
+				AssociatedMembers: "70,494",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go:    {},
+				domain.Rust:  {},
+				domain.Zig:   {},
+				domain.Scala: {},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Elixir Software Engineer",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4056139785/",
+							Date:             mustDate("2024-12-12"),
+						},
+					},
+				},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "An integrated transport and logistics company",
+		},
 
 		// Template short
 		//{
@@ -2611,10 +2763,19 @@ func companiesPart3() []domain.CompanyProfile {
 		//	Type:    "", // system
 		//	Name:    "",
 		//	Website: "",
+		//	Careers: "",
+		//	About:   "",
 		//	LinkedInProfile: domain.LinkedInProfile{
-		//		ID:       0,
-		//		Alias:    "",
-		//		Name:     "",
+		//		ID:                0,
+		//		Alias:             "",
+		//		Name:              "",
+		//		Followers:         "",
+		//		Employees:         "",
+		//		AssociatedMembers: "",
+		//		Verified:          false,
+		//	},
+		//	GitHubProfile: domain.GitHubProfile{
+		//		Login:    "",
 		//		Verified: false,
 		//	},
 		//	Languages: domain.Languages{
@@ -2636,6 +2797,7 @@ func companiesPart3() []domain.CompanyProfile {
 		//		domain.Clojure: {},
 		//		domain.Haskell: {},
 		//	},
+		//	ShortDescription: "",
 		//},
 
 		// Template full

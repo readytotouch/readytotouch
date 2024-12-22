@@ -149,6 +149,7 @@ type CompanyProfile struct {
 	YCombinatorURL            string // YC profile
 	Industries                []Industry
 	HasEmployeesFromCountries []Country
+	Ignore                    bool
 }
 
 type UnsafeCompaniesResponse struct {

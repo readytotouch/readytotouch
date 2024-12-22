@@ -6407,7 +6407,7 @@ func companiesPart1() []domain.CompanyProfile {
 							Title:            "(Senior) Backend Engineer — Elixir",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4056886705/",
-							Date:             mustDate("2024-11-14"),
+							Date:             mustDate("2024-12-06"), // mustDate("2024-11-14"),
 						},
 					},
 				},
@@ -6994,7 +6994,7 @@ func companiesPart1() []domain.CompanyProfile {
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                3625182,
 				Alias:             "bnpparibassecuritiesservices",
-				Name:              "BNP Paribas — Securities Services",
+				Name:              "BNP Paribas - Securities Services",
 				Followers:         "137K",
 				Employees:         "5K+",
 				AssociatedMembers: "6,620",
@@ -9313,33 +9313,7 @@ func companiesPart1() []domain.CompanyProfile {
 				AssociatedMembers: "26,240",
 				Verified:          true,
 			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:             "", // NOP
-				GoRepositoryCount: 0,  // NOP
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Hays-EI_IE10166.11,15.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/Hays-Reviews-E10166.htm",
-			},
-			OttaProfileSlug:   "",
-			YouTubeChannelURL: "https://www.youtube.com/@HaysTV",
-			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/3913846166/",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
-			ShortDescription:          "",
-			Industries:                []domain.Industry{},
-			HasEmployeesFromCountries: []domain.Country{
-				//
-			},
+			Ignore: true, // The deleted recruiting agency was added by mistake
 		},
 
 		// Some | Consort Group

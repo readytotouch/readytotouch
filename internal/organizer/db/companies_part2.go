@@ -2215,7 +2215,7 @@ func companiesPart2() []domain.CompanyProfile {
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                10071522,
 				Alias:             "cycloid",
-				Name:              "Cycloid — Sustainable Platform Engineering",
+				Name:              "Cycloid - Sustainable Platform Engineering",
 				Followers:         "11K",
 				Employees:         "10+",
 				AssociatedMembers: "25",
@@ -4242,9 +4242,8 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "Level-All",
-				GoRepositoryCount: 0, // Elixir 6
-				Verified:          false,
+				Login:    "Level-All",
+				Verified: false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -4254,16 +4253,24 @@ func companiesPart2() []domain.CompanyProfile {
 			OttaProfileSlug:   "Level-All",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go:    nil,
-				domain.Rust:  nil,
-				domain.Zig:   nil,
-				domain.Scala: nil,
-				domain.Elixir: []string{
-					"https://www.linkedin.com/jobs/view/4046475339/", // Elixir Software Engineer
+			Languages: domain.Languages{
+				domain.Go:    {},
+				domain.Rust:  {},
+				domain.Zig:   {},
+				domain.Scala: {},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 6,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Software Engineer",
+							ShortDescription: "We’re looking for a Senior Elixir Software Engineer to contribute to our core web platform and supporting applications built in Elixir, Phoenix, LiveView, TypeScript, and Tailwind, AlpineJS backed with a Postgres database.",
+							URL:              "https://www.linkedin.com/jobs/view/4092211710/",
+							Date:             mustDate("2024-12-06"),
+						},
+					},
 				},
-				domain.Clojure: nil,
-				domain.Haskell: nil,
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "Personalized college & career guidance",
 			Industries: []domain.Industry{
@@ -6077,11 +6084,11 @@ func companiesPart2() []domain.CompanyProfile {
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                4791832,
 				Alias:             "stratascale-llc",
-				Name:              "Stratascale — An SHI Company",
+				Name:              "Stratascale – An SHI Company",
 				Followers:         "13K",
 				Employees:         "200+",
 				AssociatedMembers: "233",
-				Verified:          false,
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -7254,7 +7261,7 @@ func companiesPart2() []domain.CompanyProfile {
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1057955,
 				Alias:             "omilia-ltd",
-				Name:              "Omilia — Conversational Intelligence",
+				Name:              "Omilia - Conversational Intelligence",
 				Followers:         "21K",
 				Employees:         "200+",
 				AssociatedMembers: "384",

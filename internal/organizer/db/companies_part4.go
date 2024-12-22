@@ -14,7 +14,7 @@ func companiesPart4() []domain.CompanyProfile {
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                9381585,
 				Alias:             "limango-gmbh",
-				Name:              "limango GmbH — A member of the otto group",
+				Name:              "limango GmbH - A member of the otto group",
 				Followers:         "4K",
 				Employees:         "200+",
 				AssociatedMembers: "195",
@@ -804,10 +804,20 @@ func companiesPart4() []domain.CompanyProfile {
 						},
 					},
 				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
+				domain.Rust:  {},
+				domain.Zig:   {},
+				domain.Scala: {},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Backend Engineer (Elixir)",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/3884244005/",
+							Date:             mustDate("2024-11-29"),
+						},
+					},
+				},
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
@@ -957,8 +967,9 @@ func companiesPart4() []domain.CompanyProfile {
 			Name:    "Lowe's Companies, Inc.",
 			Website: "https://lowes.com/",
 			LinkedInProfile: domain.LinkedInProfile{
+				// LinkedIn alias that is hard to encode
 				ID:                4128,
-				Alias:             "lowe's-home-improvement",
+				Alias:             "4128", // "lowe's-home-improvement",
 				Name:              "Lowe's Companies, Inc.",
 				Followers:         "756K",
 				Employees:         "10K+",
@@ -1376,7 +1387,7 @@ func companiesPart4() []domain.CompanyProfile {
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                33233160,
 				Alias:             "vustheenglishcenter",
-				Name:              "VUS — The English Center",
+				Name:              "VUS - The English Center",
 				Followers:         "13K",
 				Employees:         "1K+",
 				AssociatedMembers: "1,987",
