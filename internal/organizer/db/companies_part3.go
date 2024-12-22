@@ -2177,7 +2177,7 @@ func companiesPart3() []domain.CompanyProfile {
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                10614020,
 				Alias:             "arculus-a-jungheinrich-company",
-				Name:              "arculus — a Jungheinrich company",
+				Name:              "arculus – a Jungheinrich company",
 				Followers:         "10K",
 				Employees:         "50+",
 				AssociatedMembers: "95",

@@ -139,7 +139,7 @@ var (
 		"quadcodecareer":                      114, // Quadcode
 		"fincompare":                          115, // FinCompare
 		"mellifera-operations-limited":        116, // Mellifera Operations Limited
-		"bnpparibassecuritiesservices":        117, // BNP Paribas — Securities Services
+		"bnpparibassecuritiesservices":        117, // BNP Paribas - Securities Services
 		"apifonica":                           118, // Apifonica
 		"cybus":                               119, // Cybus
 		"goflink":                             120, // Flink
@@ -321,7 +321,7 @@ var (
 		"strongdm":                            311, // StrongDM
 		"jmawireless":                         313, // JMA Wireless
 		"on2it-cybersecurity":                 314, // ON2IT Cybersecurity
-		"cycloid":                             315, // Cycloid — Sustainable Platform Engineering
+		"cycloid":                             315, // Cycloid - Sustainable Platform Engineering
 		"circuitknowledge":                    316, // Circuit
 		"ayloservices":                        317, // Aylo
 		"factset":                             318, // FactSet
@@ -392,7 +392,7 @@ var (
 		"fullinfo":                            398, // fullinfo
 		"bloomberg":                           399, // Bloomberg
 		"sainsburys":                          400, // Sainsbury&#39;s
-		"stratascale-llc":                     401, // Stratascale — An SHI Company
+		"stratascale-llc":                     401, // Stratascale – An SHI Company
 		"gartner":                             402, // Gartner
 		"extreme-networks":                    403, // Extreme Networks
 		"yalo":                                404, // Yalo
@@ -408,7 +408,7 @@ var (
 		"priceline-com":                       414, // Priceline
 		"new-relic-inc-":                      415, // New Relic
 		"riskified":                           416, // Riskified
-		"omilia-ltd":                          417, // Omilia — Conversational Intelligence
+		"omilia-ltd":                          417, // Omilia - Conversational Intelligence
 		"rakuten-viber":                       418, // Rakuten Viber
 		"nebius":                              419, // Nebius
 		"zoom":                                420, // Zoom
@@ -468,7 +468,7 @@ var (
 		"dtonesolution":                       463, // DT One
 		"social-discovery-group":              464, // Social Discovery Group
 		"sysdig":                              465, // Sysdig
-		"arculus-a-jungheinrich-company":      466, // arculus — a Jungheinrich company
+		"arculus-a-jungheinrich-company":      466, // arculus – a Jungheinrich company
 		"ebay":                                467, // eBay
 		"digiexams":                           468, // Digiexam
 		"axis-communications":                 469, // Axis Communications
@@ -476,7 +476,7 @@ var (
 		"bol-com":                             471, // bol
 		"drw":                                 529, // DRW
 		"nice-systems":                        530, // NICE
-		"limango-gmbh":                        472, // limango GmbH — A member of the otto group
+		"limango-gmbh":                        472, // limango GmbH - A member of the otto group
 		"varonis":                             473, // Varonis
 		"worldtechit":                         474, // WorldTech IT, LLC
 		"applied-research-solutions":          475, // Applied Research Solutions
@@ -515,7 +515,7 @@ var (
 		"ubiquiti-":                           508, // Ubiquiti Inc.
 		"enflick-inc-":                        509, // TextNow
 		"altenar":                             510, // Altenar
-		"vustheenglishcenter":                 511, // VUS — The English Center
+		"vustheenglishcenter":                 511, // VUS - The English Center
 		"exness":                              512, // Exness
 		"xsolla":                              513, // Xsolla
 		"emerchantpay-ltd":                    514, // emerchantpay

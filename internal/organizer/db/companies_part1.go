@@ -6994,7 +6994,7 @@ func companiesPart1() []domain.CompanyProfile {
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                3625182,
 				Alias:             "bnpparibassecuritiesservices",
-				Name:              "BNP Paribas — Securities Services",
+				Name:              "BNP Paribas - Securities Services",
 				Followers:         "137K",
 				Employees:         "5K+",
 				AssociatedMembers: "6,620",

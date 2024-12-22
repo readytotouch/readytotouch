@@ -14,7 +14,7 @@ func companiesPart4() []domain.CompanyProfile {
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                9381585,
 				Alias:             "limango-gmbh",
-				Name:              "limango GmbH — A member of the otto group",
+				Name:              "limango GmbH - A member of the otto group",
 				Followers:         "4K",
 				Employees:         "200+",
 				AssociatedMembers: "195",
@@ -1387,7 +1387,7 @@ func companiesPart4() []domain.CompanyProfile {
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                33233160,
 				Alias:             "vustheenglishcenter",
-				Name:              "VUS — The English Center",
+				Name:              "VUS - The English Center",
 				Followers:         "13K",
 				Employees:         "1K+",
 				AssociatedMembers: "1,987",
