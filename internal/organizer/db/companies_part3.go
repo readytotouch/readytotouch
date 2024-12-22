@@ -2715,6 +2715,47 @@ func companiesPart3() []domain.CompanyProfile {
 				domain.Czechia,
 			},
 		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "A.P. Moller — Maersk",
+			Website: "https://www.maersk.com/",
+			Careers: "https://www.maersk.com/careers",
+			About:   "https://www.maersk.com/about",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                479080,
+				Alias:             "maersk-group",
+				Name:              "A.P. Moller - Maersk",
+				Followers:         "2M",
+				Employees:         "10K+",
+				AssociatedMembers: "70,494",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go:    {},
+				domain.Rust:  {},
+				domain.Zig:   {},
+				domain.Scala: {},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Elixir Software Engineer",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4056139785/",
+							Date:             mustDate("2024-12-12"),
+						},
+					},
+				},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "An integrated transport and logistics company",
+		},
 
 		// Template short
 		//{
