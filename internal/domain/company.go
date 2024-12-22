@@ -125,7 +125,6 @@ type CompanyProfile struct {
 	ID                        int64       // populates from the CompanyAliasMap
 	Type                      CompanyType // populates from the CompanyTypeMap
 	Name                      string
-	URL                       string // Deprecated
 	Website                   string // Production website
 	Careers                   string // Careers page URL
 	About                     string // About URL

@@ -231,9 +231,6 @@ func (c *Controller) CompanyV1(ctx *gin.Context) {
 	if company.Type == "" {
 		company.Type = organizers.ToCompanyType(company.LinkedInProfile.Alias)
 	}
-	if company.Website == "" {
-		company.Website = company.URL
-	}
 
 	organizerFeature, ok := c.organizerFeature(featurePath)
 	if !ok {
@@ -326,9 +323,6 @@ func (c *Controller) CompanyV2(ctx *gin.Context) {
 
 	if company.Type == "" {
 		company.Type = organizers.ToCompanyType(company.LinkedInProfile.Alias)
-	}
-	if company.Website == "" {
-		company.Website = company.URL
 	}
 
 	organizerFeature, ok := c.organizerFeature(featurePath)
@@ -1148,9 +1142,6 @@ func (c *Controller) companies(organizerFeature domain.OrganizerFeature, skip bo
 
 		if company.Type == "" {
 			company.Type = organizers.ToCompanyType(company.LinkedInProfile.Alias)
-		}
-		if company.Website == "" {
-			company.Website = company.URL
 		}
 
 		language := organizerFeature.Organizer.Language
