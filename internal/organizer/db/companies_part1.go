@@ -7,10 +7,10 @@ func companiesPart1() []domain.CompanyProfile {
 		// Favorites
 		// Favorites | ReadyToTouch
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "ReadyToTouch",
-			URL:  "https://readytotouch.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "ReadyToTouch",
+			Website: "https://readytotouch.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:    97909464,
 				IDs:   nil,
@@ -32,14 +32,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Favorites | DocHQ
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "DocHQ",
-			URL:  "https://dochq.co.uk/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "DocHQ",
+			Website: "https://dochq.co.uk/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    14136494,
-				Alias: "dochq",
-				Name:  "DocHQ",
+				ID:                14136494,
+				Alias:             "dochq",
+				Name:              "DocHQ",
+				Followers:         "1.5k",
+				Employees:         "50+",
+				AssociatedMembers: "20+",
+				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "dochq",
@@ -163,14 +167,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// BigTech | Mozilla
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Mozilla",
-			URL:  "https://www.mozilla.org/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Mozilla",
+			Website: "https://www.mozilla.org/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    13948,
-				Alias: "mozilla-corporation",
-				Name:  "Mozilla",
+				ID:                13948,
+				Alias:             "mozilla-corporation",
+				Name:              "Mozilla",
+				Followers:         "415K",
+				Employees:         "500+",
+				AssociatedMembers: "1,798",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "mozilla",
@@ -211,14 +219,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// BigTech | Discord
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Discord",
-			URL:  "https://discord.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Discord",
+			Website: "https://discord.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    3765675,
-				Alias: "discord",
-				Name:  "Discord",
+				ID:                3765675,
+				Alias:             "discord",
+				Name:              "Discord",
+				Followers:         "427K",
+				Employees:         "500+",
+				AssociatedMembers: "3,028",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "discord",
@@ -257,14 +269,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// BigTech | Figma
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Figma",
-			URL:  "https://www.figma.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Figma",
+			Website: "https://www.figma.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    3650502,
-				Alias: "figma",
-				Name:  "Figma",
+				ID:                3650502,
+				Alias:             "figma",
+				Name:              "Figma",
+				Followers:         "2M",
+				Employees:         "2.5K+",
+				AssociatedMembers: "2,386",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "figma",
@@ -306,14 +322,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// BigTech | Microsoft
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Microsoft",
-			URL:  "https://www.microsoft.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Microsoft",
+			Website: "https://www.microsoft.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    1035,
-				Alias: "microsoft",
-				Name:  "Microsoft",
+				ID:                1035,
+				Alias:             "microsoft",
+				Name:              "Microsoft",
+				Followers:         "24M",
+				Employees:         "10K+",
+				AssociatedMembers: "244,487",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "microsoft",
@@ -358,18 +378,22 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// BigTech | Amazon
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Amazon",
-			URL:  "https://www.aboutamazon.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Amazon",
+			Website: "https://www.aboutamazon.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID: 0,
 				IDs: []int{
 					1586,    // Amazon
 					2382910, // Amazon Web Services (AWS)
 				},
-				Alias: "amazon",
-				Name:  "Amazon",
+				Alias:             "amazon",
+				Name:              "Amazon",
+				Followers:         "33M",
+				Employees:         "10K+",
+				AssociatedMembers: "732,323",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "aws", // "amzn",
@@ -419,10 +443,13 @@ func companiesPart1() []domain.CompanyProfile {
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:       1009,
-				Alias:    "ibm",
-				Name:     "IBM",
-				Verified: true,
+				ID:                1009,
+				Alias:             "ibm",
+				Name:              "IBM",
+				Followers:         "18M",
+				Employees:         "10K+",
+				AssociatedMembers: "317,108",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "IBM",
@@ -504,16 +531,19 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// BigTech | SAP
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "SAP",
-			URL:  "https://www.sap.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "SAP",
+			Website: "https://www.sap.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:       1115,
-				IDs:      []int{1115, 2573558, 2818, 166185, 5822},
-				Alias:    "sap",
-				Name:     "SAP",
-				Verified: true,
+				ID:                1115,
+				IDs:               []int{1115, 2573558, 2818, 166185, 5822},
+				Alias:             "sap",
+				Name:              "SAP",
+				Followers:         "4M",
+				Employees:         "10K+",
+				AssociatedMembers: "125,121",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "SAP",
@@ -556,15 +586,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// BigTech | Oracle
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Oracle",
-			URL:  "https://www.oracle.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Oracle",
+			Website: "https://www.oracle.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:       1028,
-				Alias:    "oracle",
-				Name:     "Oracle",
-				Verified: true,
+				ID:                1028,
+				Alias:             "oracle",
+				Name:              "Oracle",
+				Followers:         "10M",
+				Employees:         "10K+",
+				AssociatedMembers: "199,448",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "oracle",
@@ -606,14 +639,18 @@ func companiesPart1() []domain.CompanyProfile {
 		// Social
 		// Social | GitHub
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "GitHub",
-			URL:  "https://github.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "GitHub",
+			Website: "https://github.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    1418841,
-				Alias: "github",
-				Name:  "GitHub",
+				ID:                1418841,
+				Alias:             "github",
+				Name:              "GitHub",
+				Followers:         "5M",
+				Employees:         "500+",
+				AssociatedMembers: "6,253",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "github",
@@ -655,15 +692,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Social | GitLab
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "GitLab",
-			URL:  "https://gitlab.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "GitLab",
+			Website: "https://gitlab.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:       5101804,
-				Alias:    "gitlab-com",
-				Name:     "GitLab",
-				Verified: true,
+				ID:                5101804,
+				Alias:             "gitlab-com",
+				Name:              "GitLab",
+				Followers:         "1M",
+				Employees:         "1K+",
+				AssociatedMembers: "2,850",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "gitlabhq",
@@ -714,10 +754,13 @@ func companiesPart1() []domain.CompanyProfile {
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:       1337,
-				Alias:    "linkedin",
-				Name:     "LinkedIn",
-				Verified: true,
+				ID:                1337,
+				Alias:             "linkedin",
+				Name:              "LinkedIn",
+				Followers:         "29M",
+				Employees:         "10K+",
+				AssociatedMembers: "25,395",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "linkedin",
@@ -786,14 +829,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Social | Reddit
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Reddit",
-			URL:  "https://www.reddit.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Reddit",
+			Website: "https://www.reddit.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    150573,
-				Alias: "reddit-com",
-				Name:  "Reddit, Inc.",
+				ID:                150573,
+				Alias:             "reddit-com",
+				Name:              "Reddit, Inc.",
+				Followers:         "400K",
+				Employees:         "1K+",
+				AssociatedMembers: "3,697",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "reddit",
@@ -834,14 +881,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Social | Medium
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Medium",
-			URL:  "https://medium.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Medium",
+			Website: "https://medium.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    3039001,
-				Alias: "medium-com",
-				Name:  "Medium",
+				ID:                3039001,
+				Alias:             "medium-com",
+				Name:              "Medium",
+				Followers:         "191K",
+				Employees:         "50+",
+				AssociatedMembers: "8,665",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "Medium",
@@ -883,14 +934,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Social | Pinterest
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Pinterest",
-			URL:  "https://www.pinterest.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Pinterest",
+			Website: "https://www.pinterest.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    1124131,
-				Alias: "pinterest",
-				Name:  "Pinterest",
+				ID:                1124131,
+				Alias:             "pinterest",
+				Name:              "Pinterest",
+				Followers:         "950K",
+				Employees:         "1K+",
+				AssociatedMembers: "10,702",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "pinterest",
@@ -932,14 +987,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Social | Snap
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Snap",
-			URL:  "https://snap.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Snap",
+			Website: "https://snap.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    15191764,
-				Alias: "snap-inc-co",
-				Name:  "Snap Inc.",
+				ID:                15191764,
+				Alias:             "snap-inc-co",
+				Name:              "Snap Inc.",
+				Followers:         "471K",
+				Employees:         "5K+",
+				AssociatedMembers: "7,527",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "Snapchat",
@@ -981,14 +1040,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Social | BeReal.
 		{
-			ID:   0,
-			Type: "",
-			Name: "BeReal.",
-			URL:  "https://bereal.com/",
+			ID:      0,
+			Type:    "",
+			Name:    "BeReal.",
+			Website: "https://bereal.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    34731272,
-				Alias: "bereal-app",
-				Name:  "BeReal.",
+				ID:                34731272,
+				Alias:             "bereal-app",
+				Name:              "BeReal.",
+				Followers:         "23K",
+				Employees:         "50+",
+				AssociatedMembers: "71",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "BeReal-App",
@@ -1026,14 +1089,18 @@ func companiesPart1() []domain.CompanyProfile {
 		// Favorites
 		// Favorites | VictoriaMetrics
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "VictoriaMetrics",
-			URL:  "https://victoriametrics.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "VictoriaMetrics",
+			Website: "https://victoriametrics.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    30169914,
-				Alias: "victoriametrics",
-				Name:  "VictoriaMetrics",
+				ID:                30169914,
+				Alias:             "victoriametrics",
+				Name:              "VictoriaMetrics",
+				Followers:         "4K",
+				Employees:         "10+",
+				AssociatedMembers: "33",
+				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "VictoriaMetrics",
@@ -1065,14 +1132,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Favorites | Grammarly
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Grammarly",
-			URL:  "https://www.grammarly.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Grammarly",
+			Website: "https://www.grammarly.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    1253671,
-				Alias: "grammarly",
-				Name:  "Grammarly",
+				ID:                1253671,
+				Alias:             "grammarly",
+				Name:              "Grammarly",
+				Followers:         "223K",
+				Employees:         "1K+",
+				AssociatedMembers: "1,728",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "grammarly",
@@ -1112,15 +1183,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Favorites | Influ2
 		{
-			ID:   0,                         // system
-			Type: domain.CompanyTypeStartup, // system
-			Name: "Influ2",
-			URL:  "https://www.influ2.com/",
+			ID:      0,                         // system
+			Type:    domain.CompanyTypeStartup, // system
+			Name:    "Influ2",
+			Website: "https://www.influ2.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:       18119989,
-				Alias:    "influ2",
-				Name:     "Influ2",
-				Verified: true,
+				ID:                18119989,
+				Alias:             "influ2",
+				Name:              "Influ2",
+				Followers:         "7K",
+				Employees:         "50+",
+				AssociatedMembers: "120",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -1163,14 +1237,18 @@ func companiesPart1() []domain.CompanyProfile {
 		// Tech
 		// Tech | Netlify
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Netlify",
-			URL:  "https://www.netlify.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Netlify",
+			Website: "https://www.netlify.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    6392431,
-				Alias: "netlify",
-				Name:  "Netlify",
+				ID:                6392431,
+				Alias:             "netlify",
+				Name:              "Netlify",
+				Followers:         "29K",
+				Employees:         "200+",
+				AssociatedMembers: "202",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "netlify",
@@ -1211,14 +1289,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Tech | Vercel
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Vercel",
-			URL:  "https://vercel.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Vercel",
+			Website: "https://vercel.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    16181286,
-				Alias: "vercel",
-				Name:  "Vercel",
+				ID:                16181286,
+				Alias:             "vercel",
+				Name:              "Vercel",
+				Followers:         "124K",
+				Employees:         "200+",
+				AssociatedMembers: "601",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "vercel",
@@ -1257,14 +1339,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Tech | Fastly
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Fastly",
-			URL:  "https://www.fastly.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Fastly",
+			Website: "https://www.fastly.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    2602522,
-				Alias: "fastly",
-				Name:  "Fastly",
+				ID:                2602522,
+				Alias:             "fastly",
+				Name:              "Fastly",
+				Followers:         "57K",
+				Employees:         "500+",
+				AssociatedMembers: "1,292",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "fastly",
@@ -1305,14 +1391,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Tech | Dropbox
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Dropbox",
-			URL:  "https://www.dropbox.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Dropbox",
+			Website: "https://www.dropbox.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    167251,
-				Alias: "dropbox",
-				Name:  "Dropbox",
+				ID:                167251,
+				Alias:             "dropbox",
+				Name:              "Dropbox",
+				Followers:         "468K",
+				Employees:         "1K+",
+				AssociatedMembers: "3,598",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "dropbox",
@@ -1355,14 +1445,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Tech | Docker
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Docker",
-			URL:  "https://www.docker.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Docker",
+			Website: "https://www.docker.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    1301808,
-				Alias: "docker",
-				Name:  "Docker, Inc",
+				ID:                1301808,
+				Alias:             "docker",
+				Name:              "Docker, Inc",
+				Followers:         "707K",
+				Employees:         "500+",
+				AssociatedMembers: "941",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "docker",
@@ -1401,14 +1495,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Tech | Grafana Labs
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Grafana Labs",
-			URL:  "https://grafana.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Grafana Labs",
+			Website: "https://grafana.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    11062162,
-				Alias: "grafana-labs",
-				Name:  "Grafana Labs",
+				ID:                11062162,
+				Alias:             "grafana-labs",
+				Name:              "Grafana Labs",
+				Followers:         "213K",
+				Employees:         "1K+",
+				AssociatedMembers: "1420",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "grafana",
@@ -1447,14 +1545,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Tech | HashiCorp
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "HashiCorp",
-			URL:  "https://www.hashicorp.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "HashiCorp",
+			Website: "https://www.hashicorp.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    2830763,
-				Alias: "hashicorp",
-				Name:  "HashiCorp",
+				ID:                2830763,
+				Alias:             "hashicorp",
+				Name:              "HashiCorp",
+				Followers:         "287K",
+				Employees:         "1K+",
+				AssociatedMembers: "2,476",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "hashicorp",
@@ -1502,10 +1604,13 @@ func companiesPart1() []domain.CompanyProfile {
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:       2497653,
-				Alias:    "crowdstrike",
-				Name:     "CrowdStrike",
-				Verified: true,
+				ID:                2497653,
+				Alias:             "crowdstrike",
+				Name:              "CrowdStrike",
+				Followers:         "775K",
+				Employees:         "5K+",
+				AssociatedMembers: "9,641",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "CrowdStrike",
@@ -1571,14 +1676,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Tech | Cockroach Labs
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Cockroach Labs",
-			URL:  "https://www.cockroachlabs.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Cockroach Labs",
+			Website: "https://www.cockroachlabs.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    9309408,
-				Alias: "cockroach-labs",
-				Name:  "Cockroach Labs",
+				ID:                9309408,
+				Alias:             "cockroach-labs",
+				Name:              "Cockroach Labs",
+				Followers:         "104K",
+				Employees:         "500+",
+				AssociatedMembers: "661",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "cockroachdb",
@@ -1616,14 +1725,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Tech | Timescale
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Timescale",
-			URL:  "https://www.timescale.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Timescale",
+			Website: "https://www.timescale.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    11065434,
-				Alias: "timescaledb",
-				Name:  "Timescale",
+				ID:                11065434,
+				Alias:             "timescaledb",
+				Name:              "Timescale",
+				Followers:         "13K",
+				Employees:         "50+",
+				AssociatedMembers: "164",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "timescale",
@@ -1661,14 +1774,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Tech | ScyllaDB
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "ScyllaDB",
-			URL:  "https://www.scylladb.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "ScyllaDB",
+			Website: "https://www.scylladb.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    10201068,
-				Alias: "scylladb",
-				Name:  "ScyllaDB",
+				ID:                10201068,
+				Alias:             "scylladb",
+				Name:              "ScyllaDB",
+				Followers:         "21K",
+				Employees:         "200+",
+				AssociatedMembers: "214",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "scylladb",
@@ -1710,14 +1827,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Tech | Percona
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Percona",
-			URL:  "https://www.percona.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Percona",
+			Website: "https://www.percona.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    421929,
-				Alias: "percona",
-				Name:  "Percona",
+				ID:                421929,
+				Alias:             "percona",
+				Name:              "Percona",
+				Followers:         "24K",
+				Employees:         "200+",
+				AssociatedMembers: "345",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "percona",
@@ -1766,9 +1887,13 @@ func companiesPart1() []domain.CompanyProfile {
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    814025,
-				Alias: "elastic-co",
-				Name:  "Elastic",
+				ID:                814025,
+				Alias:             "elastic-co",
+				Name:              "Elastic",
+				Followers:         "447K",
+				Employees:         "1K+",
+				AssociatedMembers: "4,151",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "elastic",
@@ -1828,14 +1953,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Tech | MongoDB
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "MongoDB",
-			URL:  "https://www.mongodb.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "MongoDB",
+			Website: "https://www.mongodb.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    783611,
-				Alias: "mongodbinc",
-				Name:  "MongoDB",
+				ID:                783611,
+				Alias:             "mongodbinc",
+				Name:              "MongoDB",
+				Followers:         "813K",
+				Employees:         "5K+",
+				AssociatedMembers: "6,990",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "mongodb",
@@ -1876,14 +2005,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Tech | FerretDB
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "FerretDB",
-			URL:  "https://www.ferretdb.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "FerretDB",
+			Website: "https://www.ferretdb.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    80672744,
-				Alias: "ferretdb",
-				Name:  "FerretDB",
+				ID:                80672744,
+				Alias:             "ferretdb",
+				Name:              "FerretDB",
+				Followers:         "1K",
+				Employees:         "2+",
+				AssociatedMembers: "8",
+				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "FerretDB",
@@ -1922,10 +2055,13 @@ func companiesPart1() []domain.CompanyProfile {
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:       2014725,
-				Alias:    "redisinc",
-				Name:     "Redis",
-				Verified: true,
+				ID:                2014725,
+				Alias:             "redisinc",
+				Name:              "Redis",
+				Followers:         "251K",
+				Employees:         "500+",
+				AssociatedMembers: "1,135",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "redis",
@@ -1993,14 +2129,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Tech | DigitalOcean
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "DigitalOcean",
-			URL:  "https://www.digitalocean.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "DigitalOcean",
+			Website: "https://www.digitalocean.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    2601253,
-				Alias: "digitalocean",
-				Name:  "DigitalOcean",
+				ID:                2601253,
+				Alias:             "digitalocean",
+				Name:              "DigitalOcean",
+				Followers:         "121K",
+				Employees:         "1K+",
+				AssociatedMembers: "1,814",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "digitalocean",
@@ -2047,10 +2187,13 @@ func companiesPart1() []domain.CompanyProfile {
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:       234280,
-				Alias:    "canonical",
-				Name:     "Canonical",
-				Verified: true,
+				ID:                234280,
+				Alias:             "canonical",
+				Name:              "Canonical",
+				Followers:         "480K",
+				Employees:         "1K+",
+				AssociatedMembers: "1,631",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "canonical",
@@ -2115,15 +2258,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Tech | SUSE
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "SUSE",
-			URL:  "https://www.suse.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "SUSE",
+			Website: "https://www.suse.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:       1455,
-				Alias:    "suse",
-				Name:     "SUSE",
-				Verified: true,
+				ID:                1455,
+				Alias:             "suse",
+				Name:              "SUSE",
+				Followers:         "169K",
+				Employees:         "1K+",
+				AssociatedMembers: "2,589",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "suse",
@@ -2162,14 +2308,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Tech | Kong
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Kong",
-			URL:  "https://konghq.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Kong",
+			Website: "https://konghq.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    278819,
-				Alias: "konghq",
-				Name:  "Kong Inc.",
+				ID:                278819,
+				Alias:             "konghq",
+				Name:              "Kong Inc.",
+				Followers:         "48K",
+				Employees:         "500+",
+				AssociatedMembers: "694",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "Kong",
@@ -2210,14 +2360,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Tech | Exasol
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Exasol",
-			URL:  "https://www.exasol.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Exasol",
+			Website: "https://www.exasol.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    1741694,
-				Alias: "exasol-ag",
-				Name:  "Exasol",
+				ID:                1741694,
+				Alias:             "exasol-ag",
+				Name:              "Exasol",
+				Followers:         "17K",
+				Employees:         "200+",
+				AssociatedMembers: "201",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "exasol",
@@ -2259,14 +2413,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Tech | Palantir
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Palantir",
-			URL:  "https://www.palantir.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Palantir",
+			Website: "https://www.palantir.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    20708,
-				Alias: "palantir-technologies",
-				Name:  "Palantir Technologies",
+				ID:                20708,
+				Alias:             "palantir-technologies",
+				Name:              "Palantir Technologies",
+				Followers:         "370K",
+				Employees:         "1K+",
+				AssociatedMembers: "4,387",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "palantir",
@@ -2307,14 +2465,18 @@ func companiesPart1() []domain.CompanyProfile {
 		// Tech | Buf
 		// Template
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Buf",
-			URL:  "https://buf.build/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Buf",
+			Website: "https://buf.build/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    68684262,
-				Alias: "bufbuild",
-				Name:  "Buf",
+				ID:                68684262,
+				Alias:             "bufbuild",
+				Name:              "Buf",
+				Followers:         "2K",
+				Employees:         "10+",
+				AssociatedMembers: "49",
+				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "bufbuild",
@@ -2348,14 +2510,18 @@ func companiesPart1() []domain.CompanyProfile {
 		// FinTech
 		// FinTech | Stripe
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Stripe",
-			URL:  "https://stripe.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Stripe",
+			Website: "https://stripe.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    2135371,
-				Alias: "stripe",
-				Name:  "Stripe",
+				ID:                2135371,
+				Alias:             "stripe",
+				Name:              "Stripe",
+				Followers:         "946K",
+				Employees:         "1K+",
+				AssociatedMembers: "10,673",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "stripe",
@@ -2398,14 +2564,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// FinTech | Wise
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Wise",
-			URL:  "https://wise.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Wise",
+			Website: "https://wise.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    1769571,
-				Alias: "wiseaccount",
-				Name:  "Wise",
+				ID:                1769571,
+				Alias:             "wiseaccount",
+				Name:              "Wise",
+				Followers:         "413K",
+				Employees:         "1K+",
+				AssociatedMembers: "6,511",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "transferwise",
@@ -2447,14 +2617,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// FinTech | American Express
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "American Express",
-			URL:  "https://www.americanexpress.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "American Express",
+			Website: "https://www.americanexpress.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    1277,
-				Alias: "american-express",
-				Name:  "American Express",
+				ID:                1277,
+				Alias:             "american-express",
+				Name:              "American Express",
+				Followers:         "2M",
+				Employees:         "10K+",
+				AssociatedMembers: "81,656",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "americanexpress",
@@ -2496,14 +2670,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// FinTech | Mastercard
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Mastercard",
-			URL:  "https://www.mastercard.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Mastercard",
+			Website: "https://www.mastercard.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    3015,
-				Alias: "mastercard",
-				Name:  "Mastercard",
+				ID:                3015,
+				Alias:             "mastercard",
+				Name:              "Mastercard",
+				Followers:         "2M",
+				Employees:         "10K+",
+				AssociatedMembers: "39,600",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "Mastercard",
@@ -2546,18 +2724,22 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// FinTech | Morgan Stanley
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Morgan Stanley",
-			URL:  "https://www.morganstanley.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Morgan Stanley",
+			Website: "https://www.morganstanley.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID: 0,
 				IDs: []int{
 					497017,  // Morgan Stanley
 					1292145, // Graystone Consulting from Morgan Stanley
 				},
-				Alias: "morgan-stanley",
-				Name:  "Morgan Stanley",
+				Alias:             "morgan-stanley",
+				Name:              "Morgan Stanley",
+				Followers:         "3M",
+				Employees:         "10K+",
+				AssociatedMembers: "88,989",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "MorganStanley",
@@ -2598,14 +2780,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// FinTech | Monzo
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Monzo",
-			URL:  "https://monzo.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Monzo",
+			Website: "https://monzo.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    9471107,
-				Alias: "monzo-bank",
-				Name:  "Monzo Bank",
+				ID:                9471107,
+				Alias:             "monzo-bank",
+				Name:              "Monzo Bank",
+				Followers:         "524K",
+				Employees:         "1K+",
+				AssociatedMembers: "3,352",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "monzo",
@@ -2647,14 +2833,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// FinTech | Cynergy Bank
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Cynergy Bank",
-			URL:  "https://www.cynergybank.co.uk/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Cynergy Bank",
+			Website: "https://www.cynergybank.co.uk/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    18921842,
-				Alias: "cynergy-bank",
-				Name:  "Cynergy Bank",
+				ID:                18921842,
+				Alias:             "cynergy-bank",
+				Name:              "Cynergy Bank",
+				Followers:         "22K",
+				Employees:         "200+",
+				AssociatedMembers: "363",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "", // NOP
@@ -2693,14 +2883,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// FinTech | Atom bank
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Atom bank",
-			URL:  "https://www.atombank.co.uk/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Atom bank",
+			Website: "https://www.atombank.co.uk/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    5197064,
-				Alias: "atom-bank",
-				Name:  "Atom bank",
+				ID:                5197064,
+				Alias:             "atom-bank",
+				Name:              "Atom bank",
+				Followers:         "62K",
+				Employees:         "500+",
+				AssociatedMembers: "528",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "atombank",
@@ -2738,14 +2932,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// FinTech | Citi
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Citi",
-			URL:  "https://www.citi.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Citi",
+			Website: "https://www.citi.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    11448,
-				Alias: "citi",
-				Name:  "Citi",
+				ID:                11448,
+				Alias:             "citi",
+				Name:              "Citi",
+				Followers:         "4M",
+				Employees:         "10K+",
+				AssociatedMembers: "189,284",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "Citi",
@@ -2788,14 +2986,18 @@ func companiesPart1() []domain.CompanyProfile {
 		// Internet
 		// Internet Bitly
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Bitly",
-			URL:  "https://bitly.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Bitly",
+			Website: "https://bitly.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    552285,
-				Alias: "bitly",
-				Name:  "Bitly",
+				ID:                552285,
+				Alias:             "bitly",
+				Name:              "Bitly",
+				Followers:         "37K",
+				Employees:         "200+",
+				AssociatedMembers: "381",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "bitly",
@@ -2831,14 +3033,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Internet Cloudflare
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Cloudflare",
-			URL:  "https://www.cloudflare.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Cloudflare",
+			Website: "https://www.cloudflare.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    407222,
-				Alias: "cloudflare",
-				Name:  "Cloudflare",
+				ID:                407222,
+				Alias:             "cloudflare",
+				Name:              "Cloudflare",
+				Followers:         "1M",
+				Employees:         "1K+",
+				AssociatedMembers: "4,969",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "cloudflare",
@@ -2889,14 +3095,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Internet Namecheap
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Namecheap",
-			URL:  "https://www.namecheap.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Namecheap",
+			Website: "https://www.namecheap.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    486932,
-				Alias: "namecheap-inc",
-				Name:  "Namecheap, Inc",
+				ID:                486932,
+				Alias:             "namecheap-inc",
+				Name:              "Namecheap, Inc",
+				Followers:         "60K",
+				Employees:         "1K+",
+				AssociatedMembers: "1,563",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "namecheap",
@@ -2935,14 +3145,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Internet GoDaddy
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "GoDaddy",
-			URL:  "https://www.godaddy.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "GoDaddy",
+			Website: "https://www.godaddy.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    7846,
-				Alias: "godaddy",
-				Name:  "GoDaddy",
+				ID:                7846,
+				Alias:             "godaddy",
+				Name:              "GoDaddy",
+				Followers:         "139K",
+				Employees:         "5K+",
+				AssociatedMembers: "8,227",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "godaddy",
@@ -2982,14 +3196,18 @@ func companiesPart1() []domain.CompanyProfile {
 		// Security
 		// Security 1Password
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "1Password",
-			URL:  "https://1password.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "1Password",
+			Website: "https://1password.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    18648301,
-				Alias: "1password",
-				Name:  "1Password",
+				ID:                18648301,
+				Alias:             "1password",
+				Name:              "1Password",
+				Followers:         "36K+",
+				Employees:         "1K+",
+				AssociatedMembers: "2,450",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "1Password",
@@ -3027,14 +3245,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Security Okta
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Okta",
-			URL:  "https://www.okta.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Okta",
+			Website: "https://www.okta.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    926041,
-				Alias: "okta-inc-",
-				Name:  "Okta",
+				ID:                926041,
+				Alias:             "okta-inc-",
+				Name:              "Okta",
+				Followers:         "446K",
+				Employees:         "5K+",
+				AssociatedMembers: "8,097",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "okta",
@@ -3075,14 +3297,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Security Nord Security
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Nord Security",
-			URL:  "https://nordsecurity.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Nord Security",
+			Website: "https://nordsecurity.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    64277258,
-				Alias: "nordsecurity",
-				Name:  "Nord Security",
+				ID:                64277258,
+				Alias:             "nordsecurity",
+				Name:              "Nord Security",
+				Followers:         "53K+",
+				Employees:         "1K+",
+				AssociatedMembers: "1,573",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "NordSecurity",
@@ -3125,10 +3351,10 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Security Proton
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Proton",
-			URL:  "https://proton.me/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Proton",
+			Website: "https://proton.me/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:    5241679,
 				Alias: "protonprivacy",
@@ -3169,14 +3395,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Security Fortinet
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Fortinet",
-			URL:  "https://www.fortinet.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Fortinet",
+			Website: "https://www.fortinet.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    6460,
-				Alias: "fortinet",
-				Name:  "Fortinet",
+				ID:                6460,
+				Alias:             "fortinet",
+				Name:              "Fortinet",
+				Followers:         "1M",
+				Employees:         "10K+",
+				AssociatedMembers: "14,428",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "fortinet",
@@ -3226,10 +3456,13 @@ func companiesPart1() []domain.CompanyProfile {
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:       2886771,
-				Alias:    "sentinelone",
-				Name:     "SentinelOne",
-				Verified: true,
+				ID:                2886771,
+				Alias:             "sentinelone",
+				Name:              "SentinelOne",
+				Followers:         "253K",
+				Employees:         "1K+",
+				AssociatedMembers: "2,799",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "Sentinel-One",
@@ -3290,14 +3523,18 @@ func companiesPart1() []domain.CompanyProfile {
 		// Famous
 		// Famous Uber
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Uber",
-			URL:  "https://www.uber.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Uber",
+			Website: "https://www.uber.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    1815218,
-				Alias: "uber-com",
-				Name:  "Uber",
+				ID:                1815218,
+				Alias:             "uber-com",
+				Name:              "Uber",
+				Followers:         "3M",
+				Employees:         "10K+",
+				AssociatedMembers: "108,744",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "uber",
@@ -3335,15 +3572,19 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Famous Siemens
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Siemens",
-			URL:  "https://www.siemens.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Siemens",
+			Website: "https://www.siemens.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    0,
-				IDs:   []int{1043, 157241},
-				Alias: "siemens",
-				Name:  "Siemens",
+				ID:                0,
+				IDs:               []int{1043, 157241},
+				Alias:             "siemens",
+				Name:              "Siemens",
+				Followers:         "7M",
+				Employees:         "10K+",
+				AssociatedMembers: "225,230",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "siemens",
@@ -3385,14 +3626,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Famous Ericsson
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Ericsson",
-			URL:  "https://www.ericsson.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Ericsson",
+			Website: "https://www.ericsson.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    1060,
-				Alias: "ericsson",
-				Name:  "Ericsson",
+				ID:                1060,
+				Alias:             "ericsson",
+				Name:              "Ericsson",
+				Followers:         "2M",
+				Employees:         "10K+",
+				AssociatedMembers: "107,578",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "Ericsson",
@@ -3431,14 +3676,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Famous SoundCloud
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "SoundCloud",
-			URL:  "https://soundcloud.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "SoundCloud",
+			Website: "https://soundcloud.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    200200,
-				Alias: "soundcloud",
-				Name:  "SoundCloud",
+				ID:                200200,
+				Alias:             "soundcloud",
+				Name:              "SoundCloud",
+				Followers:         "255K",
+				Employees:         "200+",
+				AssociatedMembers: "582",
+				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "soundcloud",
@@ -3478,14 +3727,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Famous Spotify
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Spotify",
-			URL:  "https://www.lifeatspotify.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Spotify",
+			Website: "https://www.lifeatspotify.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    207470,
-				Alias: "spotify",
-				Name:  "Spotify",
+				ID:                207470,
+				Alias:             "spotify",
+				Name:              "Spotify",
+				Followers:         "4M",
+				Employees:         "5K+",
+				AssociatedMembers: "15,151",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "spotify",
@@ -3527,14 +3780,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Famous DoorDash
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "DoorDash",
-			URL:  "https://doordash.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "DoorDash",
+			Website: "https://doordash.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    3205573,
-				Alias: "doordash",
-				Name:  "DoorDash",
+				ID:                3205573,
+				Alias:             "doordash",
+				Name:              "DoorDash",
+				Followers:         "1M",
+				Employees:         "10K+",
+				AssociatedMembers: "62,210",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "doordash",
@@ -3571,18 +3828,22 @@ func companiesPart1() []domain.CompanyProfile {
 		},
 
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Just Eat Takeaway.com",
-			URL:  "https://careers.justeattakeaway.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Just Eat Takeaway.com",
+			Website: "https://careers.justeattakeaway.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID: 0,
 				IDs: []int{
 					103531,  // Just Eat Takeaway.com
 					2708300, //  SkipTheDishes
 				},
-				Alias: "just-eat-takeaway-com",
-				Name:  "Just Eat Takeaway.com",
+				Alias:             "just-eat-takeaway-com",
+				Name:              "Just Eat Takeaway.com",
+				Followers:         "246K",
+				Employees:         "10K+",
+				AssociatedMembers: "12,411",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "justeattakeaway",
@@ -3621,10 +3882,10 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Famous Sixt
 		{
-			ID:   0,
-			Type: "",
-			Name: "Sixt",
-			URL:  "https://www.sixt.com/",
+			ID:      0,
+			Type:    "",
+			Name:    "Sixt",
+			Website: "https://www.sixt.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:    17120,
 				Alias: "sixt",
@@ -3654,14 +3915,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Famous Motorola Solutions
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Motorola Solutions",
-			URL:  "https://www.motorolasolutions.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Motorola Solutions",
+			Website: "https://www.motorolasolutions.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    1771432,
-				Alias: "motorolasolutions",
-				Name:  "Motorola Solutions",
+				ID:                1771432,
+				Alias:             "motorolasolutions",
+				Name:              "Motorola Solutions",
+				Followers:         "592K",
+				Employees:         "10K+",
+				AssociatedMembers: "24,454",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -3702,15 +3967,19 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Famous Samsung
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Samsung",
-			URL:  "https://www.samsung.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Samsung",
+			Website: "https://www.samsung.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    0,
-				IDs:   []int{1753, 13749561, 3270132, 77752302, 3812597, 3220515, 10633911, 1447520, 3238801, 2711168, 10261221, 87464967, 5089912, 9500165, 10218505, 895705, 78467539, 10332849, 10660176, 79815984, 3290134, 76958044, 85881048, 27127559, 9278177, 37470202, 22316801, 81590082, 11229641, 15213487, 68478415, 5552815, 14472582},
-				Alias: "samsung-electronics",
-				Name:  "Samsung Electronics",
+				ID:                0,
+				IDs:               []int{1753, 13749561, 3270132, 77752302, 3812597, 3220515, 10633911, 1447520, 3238801, 2711168, 10261221, 87464967, 5089912, 9500165, 10218505, 895705, 78467539, 10332849, 10660176, 79815984, 3290134, 76958044, 85881048, 27127559, 9278177, 37470202, 22316801, 81590082, 11229641, 15213487, 68478415, 5552815, 14472582},
+				Alias:             "samsung-electronics",
+				Name:              "Samsung Electronics",
+				Followers:         "5M",
+				Employees:         "10K+",
+				AssociatedMembers: "139,362",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "Samsung",
@@ -3752,14 +4021,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Famous Salesforge
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Salesforge",
-			URL:  "https://www.salesforge.ai/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Salesforge",
+			Website: "https://www.salesforge.ai/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    91706116,
-				Alias: "salesforgeai",
-				Name:  "Salesforge",
+				ID:                91706116,
+				Alias:             "salesforgeai",
+				Name:              "Salesforge",
+				Followers:         "4K",
+				Employees:         "50+",
+				AssociatedMembers: "34",
+				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -3792,14 +4065,18 @@ func companiesPart1() []domain.CompanyProfile {
 		// Some
 		// Some | Careem
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Careem",
-			URL:  "https://www.careem.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Careem",
+			Website: "https://www.careem.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    2852511,
-				Alias: "careem",
-				Name:  "Careem",
+				ID:                2852511,
+				Alias:             "careem",
+				Name:              "Careem",
+				Followers:         "500K",
+				Employees:         "1K+",
+				AssociatedMembers: "5,759",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "careem",
@@ -3837,14 +4114,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Dailymotion
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Dailymotion",
-			URL:  "https://www.dailymotion.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Dailymotion",
+			Website: "https://www.dailymotion.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    24411,
-				Alias: "dailymotion",
-				Name:  "Dailymotion",
+				ID:                24411,
+				Alias:             "dailymotion",
+				Name:              "Dailymotion",
+				Followers:         "84K",
+				Employees:         "200+",
+				AssociatedMembers: "574",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "dailymotion",
@@ -3878,14 +4159,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Stream
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Stream",
-			URL:  "https://getstream.io/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Stream",
+			Website: "https://getstream.io/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    5338728,
-				Alias: "getstream",
-				Name:  "Stream",
+				ID:                5338728,
+				Alias:             "getstream",
+				Name:              "Stream",
+				Followers:         "14K",
+				Employees:         "50+",
+				AssociatedMembers: "275",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "GetStream",
@@ -3922,14 +4207,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Workato
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Workato",
-			URL:  "https://www.workato.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Workato",
+			Website: "https://www.workato.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    3675685,
-				Alias: "workato",
-				Name:  "Workato",
+				ID:                3675685,
+				Alias:             "workato",
+				Name:              "Workato",
+				Followers:         "68K",
+				Employees:         "500+",
+				AssociatedMembers: "1,051",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "workato",
@@ -3963,14 +4252,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Form3
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Form3",
-			URL:  "https://www.form3.tech/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Form3",
+			Website: "https://www.form3.tech/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    15156804,
-				Alias: "form3-financial-cloud",
-				Name:  "Form3",
+				ID:                15156804,
+				Alias:             "form3-financial-cloud",
+				Name:              "Form3",
+				Followers:         "23K",
+				Employees:         "500+",
+				AssociatedMembers: "359",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "form3tech-oss",
@@ -4012,14 +4305,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Assertive Yield
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Assertive Yield",
-			URL:  "https://www.assertiveyield.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Assertive Yield",
+			Website: "https://www.assertiveyield.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    76806664,
-				Alias: "assertive-yield",
-				Name:  "Assertive Yield B.V.",
+				ID:                76806664,
+				Alias:             "assertive-yield",
+				Name:              "Assertive Yield B.V.",
+				Followers:         "3K",
+				Employees:         "10+",
+				AssociatedMembers: "32",
+				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "Assertive-Yield",
@@ -4051,14 +4348,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Splunk
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Splunk",
-			URL:  "https://www.splunk.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Splunk",
+			Website: "https://www.splunk.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    20226,
-				Alias: "splunk",
-				Name:  "Splunk",
+				ID:                20226,
+				Alias:             "splunk",
+				Name:              "Splunk",
+				Followers:         "697K",
+				Employees:         "5K+",
+				AssociatedMembers: "10,195",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "splunk",
@@ -4100,14 +4401,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | 90POE
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "90POE",
-			URL:  "https://www.90poe.io/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "90POE",
+			Website: "https://www.90poe.io/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    18466590,
-				Alias: "90poe",
-				Name:  "Ninety Percent of Everything (90POE)",
+				ID:                18466590,
+				Alias:             "90poe",
+				Name:              "Ninety Percent of Everything (90POE)",
+				Followers:         "11K",
+				Employees:         "50+",
+				AssociatedMembers: "187",
+				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "90poe",
@@ -4145,14 +4450,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | HelloFresh
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "HelloFresh",
-			URL:  "https://www.hellofresh.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "HelloFresh",
+			Website: "https://www.hellofresh.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    2454643,
-				Alias: "hellofresh",
-				Name:  "HelloFresh",
+				ID:                2454643,
+				Alias:             "hellofresh",
+				Name:              "HelloFresh",
+				Followers:         "380K",
+				Employees:         "10K+",
+				AssociatedMembers: "15,625",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "hellofresh",
@@ -4190,14 +4499,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | AUTODOC
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "AUTODOC",
-			URL:  "https://autodoc.group/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "AUTODOC",
+			Website: "https://autodoc.group/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    7703911,
-				Alias: "autodoc",
-				Name:  "AUTODOC",
+				ID:                7703911,
+				Alias:             "autodoc",
+				Name:              "AUTODOC",
+				Followers:         "61K",
+				Employees:         "5K+",
+				AssociatedMembers: "2,148",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "", // unknown
@@ -4234,14 +4547,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Gymondo
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Gymondo",
-			URL:  "https://www.gymondo.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Gymondo",
+			Website: "https://www.gymondo.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    5233814,
-				Alias: "gymondo-gmbh",
-				Name:  "Gymondo",
+				ID:                5233814,
+				Alias:             "gymondo-gmbh",
+				Name:              "Gymondo",
+				Followers:         "5K",
+				Employees:         "50+",
+				AssociatedMembers: "102",
+				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "Gymondo-git",
@@ -4286,10 +4603,13 @@ func companiesPart1() []domain.CompanyProfile {
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:       2393200,
-				Alias:    "delivery-hero-se",
-				Name:     "Delivery Hero",
-				Verified: true,
+				ID:                2393200,
+				Alias:             "delivery-hero-se",
+				Name:              "Delivery Hero",
+				Followers:         "239K",
+				Employees:         "10K+",
+				AssociatedMembers: "35,000",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "deliveryhero",
@@ -4346,14 +4666,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Weaviate
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Weaviate",
-			URL:  "https://weaviate.io/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Weaviate",
+			Website: "https://weaviate.io/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    11702022,
-				Alias: "weaviate-io",
-				Name:  "Weaviate",
+				ID:                11702022,
+				Alias:             "weaviate-io",
+				Name:              "Weaviate",
+				Followers:         "26K",
+				Employees:         "50+",
+				AssociatedMembers: "103",
+				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "weaviate",
@@ -4387,14 +4711,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Fubo
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Fubo",
-			URL:  "https://www.fubo.tv/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Fubo",
+			Website: "https://www.fubo.tv/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    5316737,
-				Alias: "fubotv",
-				Name:  "Fubo",
+				ID:                5316737,
+				Alias:             "fubotv",
+				Name:              "Fubo",
+				Followers:         "19K",
+				Employees:         "500+",
+				AssociatedMembers: "682",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "fubotv",
@@ -4431,14 +4759,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Yassir
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Yassir",
-			URL:  "https://yassir.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Yassir",
+			Website: "https://yassir.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    19069709,
-				Alias: "yassir",
-				Name:  "Yassir",
+				ID:                19069709,
+				Alias:             "yassir",
+				Name:              "Yassir",
+				Followers:         "88K",
+				Employees:         "500+",
+				AssociatedMembers: "1,519",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "YAtechnologies",
@@ -4472,14 +4804,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Vio.com
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Vio.com",
-			URL:  "https://www.vio.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Vio.com",
+			Website: "https://www.vio.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    1192098,
-				Alias: "viodotcom",
-				Name:  "Vio.com",
+				ID:                1192098,
+				Alias:             "viodotcom",
+				Name:              "Vio.com",
+				Followers:         "10K",
+				Employees:         "50+",
+				AssociatedMembers: "193",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "viodotcom",
@@ -4517,14 +4853,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Vodeno
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Vodeno",
-			URL:  "https://vodeno.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Vodeno",
+			Website: "https://vodeno.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    19016391,
-				Alias: "vodeno",
-				Name:  "Vodeno",
+				ID:                19016391,
+				Alias:             "vodeno",
+				Name:              "Vodeno",
+				Followers:         "9K",
+				Employees:         "200+",
+				AssociatedMembers: "221",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "vodeno",
@@ -4563,14 +4903,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Utility Warehouse
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Utility Warehouse",
-			URL:  "https://uw.co.uk/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Utility Warehouse",
+			Website: "https://uw.co.uk/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    457903,
-				Alias: "utilitywarehouse",
-				Name:  "Utility Warehouse",
+				ID:                457903,
+				Alias:             "utilitywarehouse",
+				Name:              "Utility Warehouse",
+				Followers:         "31K",
+				Employees:         "1K+",
+				AssociatedMembers: "4,349",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "utilitywarehouse",
@@ -4607,14 +4951,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Codenotary
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Codenotary",
-			URL:  "https://codenotary.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Codenotary",
+			Website: "https://codenotary.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    35523736,
-				Alias: "codenotary",
-				Name:  "Codenotary",
+				ID:                35523736,
+				Alias:             "codenotary",
+				Name:              "Codenotary",
+				Followers:         "3K",
+				Employees:         "10+",
+				AssociatedMembers: "16",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "codenotary",
@@ -4648,10 +4996,10 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Audigent
 		{
-			ID:   0,
-			Type: "",
-			Name: "Audigent",
-			URL:  "https://audigent.com/",
+			ID:      0,
+			Type:    "",
+			Name:    "Audigent",
+			Website: "https://audigent.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:    10642467,
 				Alias: "audigent",
@@ -4681,14 +5029,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | runZero
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "runZero",
-			URL:  "https://www.runzero.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "runZero",
+			Website: "https://www.runzero.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    33274038,
-				Alias: "runzero",
-				Name:  "runZero",
+				ID:                33274038,
+				Alias:             "runzero",
+				Name:              "runZero",
+				Followers:         "17K",
+				Employees:         "50+",
+				AssociatedMembers: "78",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "runZeroInc",
@@ -4722,14 +5074,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Tyk
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Tyk",
-			URL:  "https://tyk.io/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Tyk",
+			Website: "https://tyk.io/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    10775050,
-				Alias: "tyk",
-				Name:  "Tyk",
+				ID:                10775050,
+				Alias:             "tyk",
+				Name:              "Tyk",
+				Followers:         "31K",
+				Employees:         "50+",
+				AssociatedMembers: "161",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "TykTechnologies",
@@ -4770,14 +5126,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | OpenTag
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "OpenTag",
-			URL:  "https://theopentag.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "OpenTag",
+			Website: "https://theopentag.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    20565935,
-				Alias: "theopentag",
-				Name:  "OpenTag",
+				ID:                20565935,
+				Alias:             "theopentag",
+				Name:              "OpenTag",
+				Followers:         "4K",
+				Employees:         "50+",
+				AssociatedMembers: "88",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "OpenTagOS",
@@ -4814,14 +5174,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Oxla
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Oxla",
-			URL:  "https://oxla.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Oxla",
+			Website: "https://oxla.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    79378182,
-				Alias: "oxla",
-				Name:  "Oxla",
+				ID:                79378182,
+				Alias:             "oxla",
+				Name:              "Oxla",
+				Followers:         "830",
+				Employees:         "10+",
+				AssociatedMembers: "43",
+				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "", // NOP
@@ -4857,15 +5221,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Lightspeed
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Lightspeed",
-			URL:  "https://www.lightspeedhq.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Lightspeed",
+			Website: "https://www.lightspeedhq.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:       1557218,
-				Alias:    "lightspeedcommerce",
-				Name:     "Lightspeed Commerce",
-				Verified: true,
+				ID:                1557218,
+				Alias:             "lightspeedcommerce",
+				Name:              "Lightspeed Commerce",
+				Followers:         "77K",
+				Employees:         "1K+",
+				AssociatedMembers: "2,974",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "lightspeed",
@@ -4907,15 +5274,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Squarespace
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Squarespace",
-			URL:  "https://www.squarespace.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Squarespace",
+			Website: "https://www.squarespace.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:       265314,
-				Alias:    "squarespace",
-				Name:     "Squarespace",
-				Verified: true,
+				ID:                265314,
+				Alias:             "squarespace",
+				Name:              "Squarespace",
+				Followers:         "136K",
+				Employees:         "1K+",
+				AssociatedMembers: "1,812",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "squarespace",
@@ -4956,14 +5326,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Curve
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Curve",
-			URL:  "https://curve.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Curve",
+			Website: "https://curve.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    10023464,
-				Alias: "curve-ltd",
-				Name:  "Curve",
+				ID:                10023464,
+				Alias:             "curve-ltd",
+				Name:              "Curve",
+				Followers:         "59K",
+				Employees:         "200+",
+				AssociatedMembers: "283",
+				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "", // NOP
@@ -5002,14 +5376,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Tradevest
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Tradevest",
-			URL:  "https://www.tradevest.ai/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Tradevest",
+			Website: "https://www.tradevest.ai/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    92827682,
-				Alias: "tradevestgmbh",
-				Name:  "Tradevest",
+				ID:                92827682,
+				Alias:             "tradevestgmbh",
+				Name:              "Tradevest",
+				Followers:         "501",
+				Employees:         "10+",
+				AssociatedMembers: "19",
+				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "", // NOP
@@ -5045,15 +5423,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Woolsocks
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Woolsocks",
-			URL:  "https://woolsocks.eu/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Woolsocks",
+			Website: "https://woolsocks.eu/",
 			LinkedInProfile: domain.LinkedInProfile{
-
-				ID:    79728837,
-				Alias: "woolsocks",
-				Name:  "Woolsocks",
+				ID:                79728837,
+				Alias:             "woolsocks",
+				Name:              "Woolsocks",
+				Followers:         "2K",
+				Employees:         "10+",
+				AssociatedMembers: "37",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "amsterdam-platform-creation",
@@ -5089,14 +5470,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Applied Systems Canada
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Applied Systems Canada",
-			URL:  "https://www.appliedsystems.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Applied Systems Canada",
+			Website: "https://www.appliedsystems.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    908801,
-				Alias: "applied-systems-canada",
-				Name:  "Applied Systems Canada",
+				ID:                908801,
+				Alias:             "applied-systems-canada",
+				Name:              "Applied Systems Canada",
+				Followers:         "9K",
+				Employees:         "1K+",
+				AssociatedMembers: "77",
+				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -5133,14 +5518,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Autodesk
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Autodesk",
-			URL:  "https://www.autodesk.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Autodesk",
+			Website: "https://www.autodesk.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    1879,
-				Alias: "autodesk",
-				Name:  "Autodesk",
+				ID:                1879,
+				Alias:             "autodesk",
+				Name:              "Autodesk",
+				Followers:         "886K",
+				Employees:         "10K+",
+				AssociatedMembers: "15,691",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "Autodesk",
@@ -5180,15 +5569,19 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Vonage
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Vonage",
-			URL:  "https://www.vonage.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Vonage",
+			Website: "https://www.vonage.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    0,
-				IDs:   []int{5028, 1345545, 66428, 76778, 2102},
-				Alias: "vonage",
-				Name:  "Vonage",
+				ID:                0,
+				IDs:               []int{5028, 1345545, 66428, 76778, 2102},
+				Alias:             "vonage",
+				Name:              "Vonage",
+				Followers:         "128K",
+				Employees:         "1K+",
+				AssociatedMembers: "2,821",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "Vonage",
@@ -5228,14 +5621,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | OpenWeb
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "OpenWeb",
-			URL:  "https://www.openweb.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "OpenWeb",
+			Website: "https://www.openweb.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    2506872,
-				Alias: "openwebhq",
-				Name:  "OpenWeb",
+				ID:                2506872,
+				Alias:             "openwebhq",
+				Name:              "OpenWeb",
+				Followers:         "27K",
+				Employees:         "200+",
+				AssociatedMembers: "300",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -5283,10 +5680,13 @@ func companiesPart1() []domain.CompanyProfile {
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:       10288973,
-				Alias:    "arenko-cleantech",
-				Name:     "Arenko",
-				Verified: true,
+				ID:                10288973,
+				Alias:             "arenko-cleantech",
+				Name:              "Arenko",
+				Followers:         "7K",
+				Employees:         "50+",
+				AssociatedMembers: "60",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "arenko-group",
@@ -5340,14 +5740,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Xata
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Xata",
-			URL:  "https://xata.io/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Xata",
+			Website: "https://xata.io/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    69560619,
-				Alias: "xataio",
-				Name:  "Xata.io",
+				ID:                69560619,
+				Alias:             "xataio",
+				Name:              "Xata.io",
+				Followers:         "3K",
+				Employees:         "10+",
+				AssociatedMembers: "26",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "xataio",
@@ -5383,15 +5787,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Dojo
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Dojo",
-			URL:  "https://dojo.careers/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Dojo",
+			Website: "https://dojo.careers/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:       42391390,
-				Alias:    "dojo-tech",
-				Name:     "Dojo",
-				Verified: true,
+				ID:                42391390,
+				Alias:             "dojo-tech",
+				Name:              "Dojo",
+				Followers:         "50K",
+				Employees:         "1K+",
+				AssociatedMembers: "1,508",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -5430,14 +5837,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Unnax
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Unnax",
-			URL:  "https://www.unnax.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Unnax",
+			Website: "https://www.unnax.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    10295665,
-				Alias: "unnax-emi",
-				Name:  "Unnax",
+				ID:                10295665,
+				Alias:             "unnax-emi",
+				Name:              "Unnax",
+				Followers:         "9K",
+				Employees:         "50+",
+				AssociatedMembers: "65",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "unnax",
@@ -5473,14 +5884,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | AB Tasty
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "AB Tasty",
-			URL:  "https://www.abtasty.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "AB Tasty",
+			Website: "https://www.abtasty.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    1885711,
-				Alias: "ab-tasty",
-				Name:  "AB Tasty",
+				ID:                1885711,
+				Alias:             "ab-tasty",
+				Name:              "AB Tasty",
+				Followers:         "26K",
+				Employees:         "200+",
+				AssociatedMembers: "356",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -5518,14 +5933,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Firebolt
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Firebolt",
-			URL:  "https://www.firebolt.io/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Firebolt",
+			Website: "https://www.firebolt.io/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    40719957,
-				Alias: "firebolt",
-				Name:  "Firebolt",
+				ID:                40719957,
+				Alias:             "firebolt",
+				Name:              "Firebolt",
+				Followers:         "29K",
+				Employees:         "50+",
+				AssociatedMembers: "173",
+				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "firebolt-db",
@@ -5564,14 +5983,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Nine
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Nine",
-			URL:  "https://www.nineforbrands.com.au/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Nine",
+			Website: "https://www.nineforbrands.com.au/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    14933,
-				Alias: "nine-entertainment-co.",
-				Name:  "Nine",
+				ID:                14933,
+				Alias:             "nine-entertainment-co.",
+				Name:              "Nine",
+				Followers:         "89K",
+				Employees:         "1K+",
+				AssociatedMembers: "4,170",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -5611,14 +6034,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Isovalent
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Isovalent",
-			URL:  "https://isovalent.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Isovalent",
+			Website: "https://isovalent.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    34714411,
-				Alias: "isovalent",
-				Name:  "Isovalent",
+				ID:                34714411,
+				Alias:             "isovalent",
+				Name:              "Isovalent",
+				Followers:         "16K",
+				Employees:         "50+",
+				AssociatedMembers: "152",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "isovalent",
@@ -5654,14 +6081,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | ABC Fitness
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "ABC Fitness",
-			URL:  "https://abcfitness.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "ABC Fitness",
+			Website: "https://abcfitness.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    110372,
-				Alias: "abc-fitness",
-				Name:  "ABC Fitness",
+				ID:                110372,
+				Alias:             "abc-fitness",
+				Name:              "ABC Fitness",
+				Followers:         "34K",
+				Employees:         "500+",
+				AssociatedMembers: "2,697",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -5698,14 +6129,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Device42
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Device42",
-			URL:  "https://www.device42.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Device42",
+			Website: "https://www.device42.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    2345405,
-				Alias: "device42",
-				Name:  "Device42",
+				ID:                2345405,
+				Alias:             "device42",
+				Name:              "Device42",
+				Followers:         "6K",
+				Employees:         "50+",
+				AssociatedMembers: "121",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "device42",
@@ -5735,14 +6170,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Acronis
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Acronis",
-			URL:  "https://www.acronis.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Acronis",
+			Website: "https://www.acronis.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    13179,
-				Alias: "acronis",
-				Name:  "Acronis",
+				ID:                13179,
+				Alias:             "acronis",
+				Name:              "Acronis",
+				Followers:         "131K",
+				Employees:         "1K+",
+				AssociatedMembers: "1,974",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "acronis",
@@ -5775,14 +6214,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Gcore
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Gcore",
-			URL:  "https://gcore.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Gcore",
+			Website: "https://gcore.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    10351246,
-				Alias: "g-core",
-				Name:  "Gcore",
+				ID:                10351246,
+				Alias:             "g-core",
+				Name:              "Gcore",
+				Followers:         "17K",
+				Employees:         "500+",
+				AssociatedMembers: "474",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "Gcore",
@@ -5812,14 +6255,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Zep AI
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Zep AI",
-			URL:  "https://www.getzep.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Zep AI",
+			Website: "https://www.getzep.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    97181599,
-				Alias: "zep-ai",
-				Name:  "Zep AI",
+				ID:                97181599,
+				Alias:             "zep-ai",
+				Name:              "Zep AI",
+				Followers:         "679",
+				Employees:         "2+",
+				AssociatedMembers: "6",
+				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -5851,14 +6298,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Gelato
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Gelato",
-			URL:  "https://www.gelato.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Gelato",
+			Website: "https://www.gelato.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    5037871,
-				Alias: "gelato",
-				Name:  "Gelato",
+				ID:                5037871,
+				Alias:             "gelato",
+				Name:              "Gelato",
+				Followers:         "47K",
+				Employees:         "200+",
+				AssociatedMembers: "496",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "gelatoas",
@@ -5905,10 +6356,13 @@ func companiesPart1() []domain.CompanyProfile {
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:       2619512,
-				Alias:    "sumup",
-				Name:     "SumUp",
-				Verified: true,
+				ID:                2619512,
+				Alias:             "sumup",
+				Name:              "SumUp",
+				Followers:         "144k",
+				Employees:         "1k+",
+				AssociatedMembers: "3,565",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "sumup",
@@ -5978,14 +6432,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Level Home
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Level Home",
-			URL:  "https://level.co/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Level Home",
+			Website: "https://level.co/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    28779237,
-				Alias: "levelhome",
-				Name:  "Level Home Inc.",
+				ID:                28779237,
+				Alias:             "levelhome",
+				Name:              "Level Home Inc.",
+				Followers:         "6K",
+				Employees:         "50+",
+				AssociatedMembers: "136",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "LevelHome",
@@ -6015,14 +6473,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | SonicWall
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "SonicWall",
-			URL:  "https://www.sonicwall.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "SonicWall",
+			Website: "https://www.sonicwall.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    4926,
-				Alias: "sonicwall",
-				Name:  "SonicWall",
+				ID:                4926,
+				Alias:             "sonicwall",
+				Name:              "SonicWall",
+				Followers:         "102K",
+				Employees:         "1K+",
+				AssociatedMembers: "2,005",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "sonicwall",
@@ -6058,14 +6520,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Pindrop
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Pindrop",
-			URL:  "https://www.pindrop.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Pindrop",
+			Website: "https://www.pindrop.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    2326557,
-				Alias: "pindrop",
-				Name:  "Pindrop",
+				ID:                2326557,
+				Alias:             "pindrop",
+				Name:              "Pindrop",
+				Followers:         "17K",
+				Employees:         "200+",
+				AssociatedMembers: "284",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "", // NOP
@@ -6101,14 +6567,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Seedtag
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Seedtag",
-			URL:  "https://www.seedtag.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Seedtag",
+			Website: "https://www.seedtag.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    5171806,
-				Alias: "seedtag",
-				Name:  "Seedtag",
+				ID:                5171806,
+				Alias:             "seedtag",
+				Name:              "Seedtag",
+				Followers:         "97K",
+				Employees:         "500+",
+				AssociatedMembers: "645",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "seedtag",
@@ -6152,9 +6622,13 @@ func companiesPart1() []domain.CompanyProfile {
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    2726149,
-				Alias: "flixbus",
-				Name:  "Flix",
+				ID:                2726149,
+				Alias:             "flixbus",
+				Name:              "Flix",
+				Followers:         "97K",
+				Employees:         "1K+",
+				AssociatedMembers: "2,246",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "flix-tech",
@@ -6211,14 +6685,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Press Ganey
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Press Ganey",
-			URL:  "https://www.pressganey.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Press Ganey",
+			Website: "https://www.pressganey.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    18007,
-				Alias: "press-ganey-associates",
-				Name:  "Press Ganey",
+				ID:                18007,
+				Alias:             "press-ganey-associates",
+				Name:              "Press Ganey",
+				Followers:         "90K",
+				Employees:         "1K+",
+				AssociatedMembers: "2,070",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -6249,14 +6727,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Atmail
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Atmail",
-			URL:  "https://www.atmail.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Atmail",
+			Website: "https://www.atmail.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    918978,
-				Alias: "atmail",
-				Name:  "Atmail",
+				ID:                918978,
+				Alias:             "atmail",
+				Name:              "Atmail",
+				Followers:         "5K",
+				Employees:         "50+",
+				AssociatedMembers: "32",
+				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "", // NOP
@@ -6286,14 +6768,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Dusty Robotics
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Dusty Robotics",
-			URL:  "https://www.dustyrobotics.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Dusty Robotics",
+			Website: "https://www.dustyrobotics.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    33298433,
-				Alias: "dusty-robotics",
-				Name:  "Dusty Robotics",
+				ID:                33298433,
+				Alias:             "dusty-robotics",
+				Name:              "Dusty Robotics",
+				Followers:         "20K",
+				Employees:         "50+",
+				AssociatedMembers: "88",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "", // NOP
@@ -6324,14 +6810,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Cimri
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Cimri",
-			URL:  "https://www.cimri.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Cimri",
+			Website: "https://www.cimri.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    411498,
-				Alias: "cimri",
-				Name:  "Cimri",
+				ID:                411498,
+				Alias:             "cimri",
+				Name:              "Cimri",
+				Followers:         "32K",
+				Employees:         "50+",
+				AssociatedMembers: "178",
+				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -6362,14 +6852,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Quadcode
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Quadcode",
-			URL:  "https://quadcode.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Quadcode",
+			Website: "https://quadcode.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    42345997,
-				Alias: "quadcodecareer",
-				Name:  "Quadcode",
+				ID:                42345997,
+				Alias:             "quadcodecareer",
+				Name:              "Quadcode",
+				Followers:         "38K",
+				Employees:         "500+",
+				AssociatedMembers: "422",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -6405,14 +6899,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | FinCompare
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "FinCompare",
-			URL:  "https://fincompare.de/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "FinCompare",
+			Website: "https://fincompare.de/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    10976436,
-				Alias: "fincompare",
-				Name:  "FinCompare",
+				ID:                10976436,
+				Alias:             "fincompare",
+				Name:              "FinCompare",
+				Followers:         "5K",
+				Employees:         "50+",
+				AssociatedMembers: "64",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "fincompare",
@@ -6442,14 +6940,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Mellifera
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Mellifera",
-			URL:  "https://mellifera.team/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Mellifera",
+			Website: "https://mellifera.team/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    98533069,
-				Alias: "mellifera-operations-limited",
-				Name:  "Mellifera Operations Limited",
+				ID:                98533069,
+				Alias:             "mellifera-operations-limited",
+				Name:              "Mellifera Operations Limited",
+				Followers:         "7K",
+				Employees:         "50+",
+				AssociatedMembers: "85",
+				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -6485,14 +6987,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | BNP Paribas — Securities Services
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "BNP Paribas — Securities Services",
-			URL:  "https://securities.cib.bnpparibas/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "BNP Paribas — Securities Services",
+			Website: "https://securities.cib.bnpparibas/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    3625182,
-				Alias: "bnpparibassecuritiesservices",
-				Name:  "BNP Paribas — Securities Services",
+				ID:                3625182,
+				Alias:             "bnpparibassecuritiesservices",
+				Name:              "BNP Paribas — Securities Services",
+				Followers:         "137K",
+				Employees:         "5K+",
+				AssociatedMembers: "6,620",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -6526,14 +7032,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Apifonica
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Apifonica",
-			URL:  "https://www.apifonica.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Apifonica",
+			Website: "https://www.apifonica.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    10943475,
-				Alias: "apifonica",
-				Name:  "Apifonica",
+				ID:                10943475,
+				Alias:             "apifonica",
+				Name:              "Apifonica",
+				Followers:         "15K",
+				Employees:         "50+",
+				AssociatedMembers: "45",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "apifonica",
@@ -6563,15 +7073,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Cybus
 		{
-			ID:   0,                         // system
-			Type: domain.CompanyTypeStartup, // system
-			Name: "Cybus",
-			URL:  "https://www.cybus.io/",
+			ID:      0,                         // system
+			Type:    domain.CompanyTypeStartup, // system
+			Name:    "Cybus",
+			Website: "https://www.cybus.io/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:       7798667,
-				Alias:    "cybus",
-				Name:     "Cybus",
-				Verified: false,
+				ID:                7798667,
+				Alias:             "cybus",
+				Name:              "Cybus",
+				Followers:         "3K",
+				Employees:         "50+",
+				AssociatedMembers: "62",
+				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "cybusio",
@@ -6605,14 +7118,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Flink
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Flink",
-			URL:  "https://www.goflink.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Flink",
+			Website: "https://www.goflink.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    71241902,
-				Alias: "goflink",
-				Name:  "Flink",
+				ID:                71241902,
+				Alias:             "goflink",
+				Name:              "Flink",
+				Followers:         "52K",
+				Employees:         "5K+",
+				AssociatedMembers: "2,478",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -6646,14 +7163,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Greenbone
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Greenbone",
-			URL:  "https://www.greenbone.net/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Greenbone",
+			Website: "https://www.greenbone.net/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    697428,
-				Alias: "greenbone-networks-gmbh",
-				Name:  "Greenbone AG",
+				ID:                697428,
+				Alias:             "greenbone-networks-gmbh",
+				Name:              "Greenbone AG",
+				Followers:         "7K",
+				Employees:         "50+",
+				AssociatedMembers: "104",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "greenbone",
@@ -6683,15 +7204,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | OLX
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "OLX",
-			URL:  "https://www.olxgroup.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "OLX",
+			Website: "https://www.olxgroup.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:       167557,
-				Alias:    "olx-group",
-				Name:     "OLX",
-				Verified: true,
+				ID:                167557,
+				Alias:             "olx-group",
+				Name:              "OLX",
+				Followers:         "213K",
+				Employees:         "1K+",
+				AssociatedMembers: "4,306",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -6743,10 +7267,13 @@ func companiesPart1() []domain.CompanyProfile {
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:       10043614,
-				Alias:    "snyk",
-				Name:     "Snyk",
-				Verified: true,
+				ID:                10043614,
+				Alias:             "snyk",
+				Name:              "Snyk",
+				Followers:         "92K",
+				Employees:         "1K+",
+				AssociatedMembers: "1,290",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "snyk",
@@ -6800,14 +7327,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Sinch
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Sinch",
-			URL:  "https://www.sinch.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Sinch",
+			Website: "https://www.sinch.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    3726743,
-				Alias: "sinch",
-				Name:  "Sinch",
+				ID:                3726743,
+				Alias:             "sinch",
+				Name:              "Sinch",
+				Followers:         "398K",
+				Employees:         "1K+",
+				AssociatedMembers: "4,169",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "sinch",
@@ -6837,14 +7368,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | FOX Tech
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "FOX Tech",
-			URL:  "https://tech.fox.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "FOX Tech",
+			Website: "https://tech.fox.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    14850572,
-				Alias: "foxtechteam",
-				Name:  "FOX Tech",
+				ID:                14850572,
+				Alias:             "foxtechteam",
+				Name:              "FOX Tech",
+				Followers:         "11K",
+				Employees:         "5K+",
+				AssociatedMembers: "111",
+				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -6875,14 +7410,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | SailPoint
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "SailPoint",
-			URL:  "https://www.sailpoint.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "SailPoint",
+			Website: "https://www.sailpoint.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    47456,
-				Alias: "sailpoint-technologies",
-				Name:  "SailPoint",
+				ID:                47456,
+				Alias:             "sailpoint-technologies",
+				Name:              "SailPoint",
+				Followers:         "125K",
+				Employees:         "1K+",
+				AssociatedMembers: "2,830",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "sailpoint-oss",
@@ -6913,14 +7452,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Proofpoint
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Proofpoint",
-			URL:  "https://www.proofpoint.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Proofpoint",
+			Website: "https://www.proofpoint.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    11681,
-				Alias: "proofpoint",
-				Name:  "Proofpoint",
+				ID:                11681,
+				Alias:             "proofpoint",
+				Name:              "Proofpoint",
+				Followers:         "154K",
+				Employees:         "1K+",
+				AssociatedMembers: "4,698",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "proofpoint",
@@ -6954,14 +7497,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Asset Reality
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Asset Reality",
-			URL:  "https://www.assetreality.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Asset Reality",
+			Website: "https://www.assetreality.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    42805677,
-				Alias: "asset-reality",
-				Name:  "Asset Reality",
+				ID:                42805677,
+				Alias:             "asset-reality",
+				Name:              "Asset Reality",
+				Followers:         "3K",
+				Employees:         "10+",
+				AssociatedMembers: "50",
+				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -6993,14 +7540,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Limango
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Limango",
-			URL:  "https://www.limango.pl/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Limango",
+			Website: "https://www.limango.pl/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    2966982,
-				Alias: "limango-sp-z-o-o-",
-				Name:  "Limango",
+				ID:                2966982,
+				Alias:             "limango-sp-z-o-o-",
+				Name:              "Limango",
+				Followers:         "2K",
+				Employees:         "500+",
+				AssociatedMembers: "179",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -7031,14 +7582,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | RxBenefits
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "RxBenefits",
-			URL:  "https://www.rxbenefits.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "RxBenefits",
+			Website: "https://www.rxbenefits.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    2873210,
-				Alias: "rxbenefits-inc-",
-				Name:  "RxBenefits, Inc.",
+				ID:                2873210,
+				Alias:             "rxbenefits-inc-",
+				Name:              "RxBenefits, Inc.",
+				Followers:         "38K",
+				Employees:         "1K+",
+				AssociatedMembers: "879",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "", // NOP
@@ -7068,14 +7623,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | SmithRx
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "SmithRx",
-			URL:  "https://www.smithrx.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "SmithRx",
+			Website: "https://www.smithrx.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    10886362,
-				Alias: "smithrx",
-				Name:  "SmithRx",
+				ID:                10886362,
+				Alias:             "smithrx",
+				Name:              "SmithRx",
+				Followers:         "11K",
+				Employees:         "500+",
+				AssociatedMembers: "409",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "", // NOP
@@ -7105,14 +7664,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | k-ID
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "k-ID",
-			URL:  "https://www.k-id.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "k-ID",
+			Website: "https://www.k-id.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    45973117,
-				Alias: "k-id",
-				Name:  "k-ID",
+				ID:                45973117,
+				Alias:             "k-id",
+				Name:              "k-ID",
+				Followers:         "5K",
+				Employees:         "10+",
+				AssociatedMembers: "41",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "", // NOP
@@ -7143,14 +7706,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | CAFU
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "CAFU",
-			URL:  "https://www.cafu.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "CAFU",
+			Website: "https://www.cafu.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    13892019,
-				Alias: "mycafu",
-				Name:  "CAFU",
+				ID:                13892019,
+				Alias:             "mycafu",
+				Name:              "CAFU",
+				Followers:         "293K",
+				Employees:         "50+",
+				AssociatedMembers: "1,090",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "", // NOP
@@ -7180,14 +7747,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Rollee
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Rollee",
-			URL:  "https://www.getrollee.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Rollee",
+			Website: "https://www.getrollee.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    76353840,
-				Alias: "rollee",
-				Name:  "Rollee",
+				ID:                76353840,
+				Alias:             "rollee",
+				Name:              "Rollee",
+				Followers:         "3K",
+				Employees:         "10+",
+				AssociatedMembers: "26",
+				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "", // NOP
@@ -7218,14 +7789,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Net2Phone
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Net2Phone",
-			URL:  "https://www.net2phone.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Net2Phone",
+			Website: "https://www.net2phone.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    2965,
-				Alias: "net2phone",
-				Name:  "Net2Phone",
+				ID:                2965,
+				Alias:             "net2phone",
+				Name:              "Net2Phone",
+				Followers:         "10K",
+				Employees:         "1K+",
+				AssociatedMembers: "259",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "net2phone",
@@ -7255,14 +7830,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Ola Chat
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Ola Chat",
-			URL:  "https://olachat.sg/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Ola Chat",
+			Website: "https://olachat.sg/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    68332088,
-				Alias: "ola-chat",
-				Name:  "Ola Chat",
+				ID:                68332088,
+				Alias:             "ola-chat",
+				Name:              "Ola Chat",
+				Followers:         "47K",
+				Employees:         "1K+",
+				AssociatedMembers: "243",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "olachat",
@@ -7292,14 +7871,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Veracity Software Inc
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Veracity Software Inc",
-			URL:  "https://veracity-us.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Veracity Software Inc",
+			Website: "https://veracity-us.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    11137552,
-				Alias: "veracitysoftwareinc",
-				Name:  "Veracity Software Inc",
+				ID:                11137552,
+				Alias:             "veracitysoftwareinc",
+				Name:              "Veracity Software Inc",
+				Followers:         "46K",
+				Employees:         "50+",
+				AssociatedMembers: "60",
+				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "", // NOP
@@ -7329,14 +7912,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Treecard
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Treecard",
-			URL:  "https://www.treecard.org/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Treecard",
+			Website: "https://www.treecard.org/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    68821773,
-				Alias: "treecardapp",
-				Name:  "Treecard",
+				ID:                68821773,
+				Alias:             "treecardapp",
+				Name:              "Treecard",
+				Followers:         "16K",
+				Employees:         "10+",
+				AssociatedMembers: "19",
+				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "TreeCard",
@@ -7366,14 +7953,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Openprovider
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Openprovider",
-			URL:  "https://www.openprovider.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Openprovider",
+			Website: "https://www.openprovider.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    550698,
-				Alias: "openprovider",
-				Name:  "Openprovider",
+				ID:                550698,
+				Alias:             "openprovider",
+				Name:              "Openprovider",
+				Followers:         "6K",
+				Employees:         "50+",
+				AssociatedMembers: "73",
+				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "openprovider",
@@ -7403,15 +7994,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | fiskaly
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "fiskaly",
-			URL:  "https://www.fiskaly.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "fiskaly",
+			Website: "https://www.fiskaly.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:       18929063,
-				Alias:    "fiskaly",
-				Name:     "fiskaly",
-				Verified: true,
+				ID:                18929063,
+				Alias:             "fiskaly",
+				Name:              "fiskaly",
+				Followers:         "8K",
+				Employees:         "50+",
+				AssociatedMembers: "86",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "fiskaly",
@@ -7448,14 +8042,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Vay
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Vay",
-			URL:  "https://vay.io/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Vay",
+			Website: "https://vay.io/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    12584218,
-				Alias: "vaytechnology",
-				Name:  "Vay",
+				ID:                12584218,
+				Alias:             "vaytechnology",
+				Name:              "Vay",
+				Followers:         "15K",
+				Employees:         "50+",
+				AssociatedMembers: "162",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "Reemote",
@@ -7486,14 +8084,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Voltus
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Voltus",
-			URL:  "https://www.voltus.co/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Voltus",
+			Website: "https://www.voltus.co/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    10866628,
-				Alias: "voltus-inc.",
-				Name:  "Voltus",
+				ID:                10866628,
+				Alias:             "voltus-inc.",
+				Name:              "Voltus",
+				Followers:         "14K",
+				Employees:         "200+",
+				AssociatedMembers: "256",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "voltusdev",
@@ -7523,14 +8125,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Stonebranch
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Stonebranch",
-			URL:  "https://www.stonebranch.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Stonebranch",
+			Website: "https://www.stonebranch.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    71261,
-				Alias: "stonebranch",
-				Name:  "Stonebranch",
+				ID:                71261,
+				Alias:             "stonebranch",
+				Name:              "Stonebranch",
+				Followers:         "8K",
+				Employees:         "50+",
+				AssociatedMembers: "161",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "stonebranch-marketplace",
@@ -7560,14 +8166,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Rapid7
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Rapid7",
-			URL:  "https://www.rapid7.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Rapid7",
+			Website: "https://www.rapid7.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    39624,
-				Alias: "rapid7",
-				Name:  "Rapid7",
+				ID:                39624,
+				Alias:             "rapid7",
+				Name:              "Rapid7",
+				Followers:         "183K",
+				Employees:         "1K+",
+				AssociatedMembers: "3,070",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "rapid7",
@@ -7601,14 +8211,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Toggle AI
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Toggle AI",
-			URL:  "https://toggle.ai/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Toggle AI",
+			Website: "https://toggle.ai/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    28508827,
-				Alias: "toggle-ai",
-				Name:  "Toggle AI",
+				ID:                28508827,
+				Alias:             "toggle-ai",
+				Name:              "Toggle AI",
+				Followers:         "4K",
+				Employees:         "10+",
+				AssociatedMembers: "47",
+				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -7639,14 +8253,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | hearX Group
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "hearX Group",
-			URL:  "https://www.hearxgroup.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "hearX Group",
+			Website: "https://www.hearxgroup.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    18002825,
-				Alias: "hearx-group",
-				Name:  "hearX Group",
+				ID:                18002825,
+				Alias:             "hearx-group",
+				Name:              "hearX Group",
+				Followers:         "11K",
+				Employees:         "50+",
+				AssociatedMembers: "160",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "hearxgroup",
@@ -7676,14 +8294,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | MarkiTech.AI
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "MarkiTech.AI",
-			URL:  "https://markitech.ca/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "MarkiTech.AI",
+			Website: "https://markitech.ca/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    9294422,
-				Alias: "markitech-ai",
-				Name:  "MarkiTech.AI",
+				ID:                9294422,
+				Alias:             "markitech-ai",
+				Name:              "MarkiTech.AI",
+				Followers:         "3K",
+				Employees:         "10+",
+				AssociatedMembers: "32",
+				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "", // NOP
@@ -7713,14 +8335,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Lantronix
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Lantronix",
-			URL:  "https://www.lantronix.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Lantronix",
+			Website: "https://www.lantronix.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    12612,
-				Alias: "lantronix",
-				Name:  "Lantronix",
+				ID:                12612,
+				Alias:             "lantronix",
+				Name:              "Lantronix",
+				Followers:         "10K",
+				Employees:         "200+",
+				AssociatedMembers: "443",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "Lantronix",
@@ -7750,14 +8376,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | INFOLOB
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "INFOLOB",
-			URL:  "https://www.infolob.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "INFOLOB",
+			Website: "https://www.infolob.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    404211,
-				Alias: "infolob-global",
-				Name:  "INFOLOB",
+				ID:                404211,
+				Alias:             "infolob-global",
+				Name:              "INFOLOB",
+				Followers:         "48K",
+				Employees:         "200+",
+				AssociatedMembers: "468",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "", // NOP
@@ -7787,14 +8417,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Argela Technologies
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Argela Technologies",
-			URL:  "https://www.argela.com.tr/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Argela Technologies",
+			Website: "https://www.argela.com.tr/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    26805,
-				Alias: "argela-technologies",
-				Name:  "Argela Technologies",
+				ID:                26805,
+				Alias:             "argela-technologies",
+				Name:              "Argela Technologies",
+				Followers:         "21K",
+				Employees:         "50+",
+				AssociatedMembers: "190",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "", // NOP
@@ -7832,10 +8466,13 @@ func companiesPart1() []domain.CompanyProfile {
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:       3035481,
-				Alias:    "top-doctors-europe",
-				Name:     "Top Doctors",
-				Verified: true,
+				ID:                3035481,
+				Alias:             "top-doctors-europe",
+				Name:              "Top Doctors",
+				Followers:         "35K",
+				Employees:         "200+",
+				AssociatedMembers: "452",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "", // NOP
@@ -7883,14 +8520,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Recurly
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Recurly",
-			URL:  "https://recurly.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Recurly",
+			Website: "https://recurly.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    810383,
-				Alias: "recurly",
-				Name:  "Recurly",
+				ID:                810383,
+				Alias:             "recurly",
+				Name:              "Recurly",
+				Followers:         "17K",
+				Employees:         "200+",
+				AssociatedMembers: "300",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "recurly",
@@ -7920,14 +8561,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Cynet Systems
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Cynet Systems",
-			URL:  "https://www.cynetsystems.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Cynet Systems",
+			Website: "https://www.cynetsystems.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    5003556,
-				Alias: "cynet-systems",
-				Name:  "Cynet Systems",
+				ID:                5003556,
+				Alias:             "cynet-systems",
+				Name:              "Cynet Systems",
+				Followers:         "72K",
+				Employees:         "1K+",
+				AssociatedMembers: "682",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "", // NOP
@@ -7957,14 +8602,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Odyssey Information Services
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Odyssey Information Services",
-			URL:  "https://www.odysseyis.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Odyssey Information Services",
+			Website: "https://www.odysseyis.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    56445,
-				Alias: "odyssey-information-services",
-				Name:  "Odyssey Information Services",
+				ID:                56445,
+				Alias:             "odyssey-information-services",
+				Name:              "Odyssey Information Services",
+				Followers:         "117K",
+				Employees:         "200+",
+				AssociatedMembers: "164",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "", // NOP
@@ -7994,14 +8643,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Infomatics Corp
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Infomatics Corp",
-			URL:  "https://infomaticscorp.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Infomatics Corp",
+			Website: "https://infomaticscorp.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    821065,
-				Alias: "infomatics-corp",
-				Name:  "Infomatics Corp",
+				ID:                821065,
+				Alias:             "infomatics-corp",
+				Name:              "Infomatics Corp",
+				Followers:         "36K",
+				Employees:         "50+",
+				AssociatedMembers: "99",
+				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "", // NOP
@@ -8031,14 +8684,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Mindera
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Mindera",
-			URL:  "https://mindera.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Mindera",
+			Website: "https://mindera.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    80044268,
-				Alias: "mindera-world",
-				Name:  "Mindera",
+				ID:                80044268,
+				Alias:             "mindera-world",
+				Name:              "Mindera",
+				Followers:         "96K",
+				Employees:         "1K+",
+				AssociatedMembers: "952",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "Mindera",
@@ -8071,14 +8728,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Sytac
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Sytac",
-			URL:  "https://sytac.io/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Sytac",
+			Website: "https://sytac.io/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    626751,
-				Alias: "sytac",
-				Name:  "Sytac",
+				ID:                626751,
+				Alias:             "sytac",
+				Name:              "Sytac",
+				Followers:         "7K",
+				Employees:         "50+",
+				AssociatedMembers: "102",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "sytac",
@@ -8108,14 +8769,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Qumulus Cloud Platform
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Qumulus Cloud Platform",
-			URL:  "https://www.qumulus.io/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Qumulus Cloud Platform",
+			Website: "https://www.qumulus.io/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    81905634,
-				Alias: "qumuluscloudplatform",
-				Name:  "Qumulus Cloud Platform",
+				ID:                81905634,
+				Alias:             "qumuluscloudplatform",
+				Name:              "Qumulus Cloud Platform",
+				Followers:         "1K",
+				Employees:         "2+",
+				AssociatedMembers: "13",
+				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "QumulusTechnology",
@@ -8145,14 +8810,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Saxon AI
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Saxon AI",
-			URL:  "https://saxon.ai/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Saxon AI",
+			Website: "https://saxon.ai/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    224935,
-				Alias: "saxonai",
-				Name:  "Saxon AI",
+				ID:                224935,
+				Alias:             "saxonai",
+				Name:              "Saxon AI",
+				Followers:         "135K",
+				Employees:         "200+",
+				AssociatedMembers: "374",
+				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "", // NOP
@@ -8182,14 +8851,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Dyninno Group
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Dyninno Group",
-			URL:  "https://dyninno.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Dyninno Group",
+			Website: "https://dyninno.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    9456141,
-				Alias: "dyninno-group",
-				Name:  "Dyninno Group",
+				ID:                9456141,
+				Alias:             "dyninno-group",
+				Name:              "Dyninno Group",
+				Followers:         "60K",
+				Employees:         "1K+",
+				AssociatedMembers: "1,713",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "", // NOP
@@ -8254,14 +8927,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Group Avows
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Group Avows",
-			URL:  "https://avowstech.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Group Avows",
+			Website: "https://avowstech.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    3651016,
-				Alias: "group-avows",
-				Name:  "Group Avows",
+				ID:                3651016,
+				Alias:             "group-avows",
+				Name:              "Group Avows",
+				Followers:         "31K",
+				Employees:         "500+",
+				AssociatedMembers: "267",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "", // NOP
@@ -8299,10 +8976,13 @@ func companiesPart1() []domain.CompanyProfile {
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:       1680,
-				Alias:    "cognizant",
-				Name:     "Cognizant",
-				Verified: true,
+				ID:                1680,
+				Alias:             "cognizant",
+				Name:              "Cognizant",
+				Followers:         "8M",
+				Employees:         "10K+",
+				AssociatedMembers: "326,260",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "", // NOP
@@ -8364,14 +9044,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Nuro
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Nuro",
-			URL:  "https://www.nuro.ai/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Nuro",
+			Website: "https://www.nuro.ai/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    12957486,
-				Alias: "nuro-inc.",
-				Name:  "Nuro",
+				ID:                12957486,
+				Alias:             "nuro-inc.",
+				Name:              "Nuro",
+				Followers:         "86K",
+				Employees:         "500+",
+				AssociatedMembers: "930",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "", // NOP
@@ -8401,14 +9085,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | CloudWalk
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "CloudWalk",
-			URL:  "https://cloudwalk.io/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "CloudWalk",
+			Website: "https://cloudwalk.io/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    3523168,
-				Alias: "cloudwalk-inc",
-				Name:  "CloudWalk, Inc.",
+				ID:                3523168,
+				Alias:             "cloudwalk-inc",
+				Name:              "CloudWalk, Inc.",
+				Followers:         "40K",
+				Employees:         "500+",
+				AssociatedMembers: "601",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "cloudwalk",
@@ -8438,14 +9126,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Transition Technologies PSC
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Transition Technologies PSC",
-			URL:  "https://ttpsc.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Transition Technologies PSC",
+			Website: "https://ttpsc.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    17880075,
-				Alias: "transition-technologies-psc",
-				Name:  "Transition Technologies PSC",
+				ID:                17880075,
+				Alias:             "transition-technologies-psc",
+				Name:              "Transition Technologies PSC",
+				Followers:         "6K",
+				Employees:         "500+",
+				AssociatedMembers: "622",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "", // NOP
@@ -8478,14 +9170,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Kroger
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Kroger",
-			URL:  "https://www.kroger.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Kroger",
+			Website: "https://www.kroger.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    4914,
-				Alias: "kroger",
-				Name:  "Kroger",
+				ID:                4914,
+				Alias:             "kroger",
+				Name:              "Kroger",
+				Followers:         "454K",
+				Employees:         "10K+",
+				AssociatedMembers: "135,606",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "Kroger-Technology",
@@ -8515,14 +9211,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Precisely
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Precisely",
-			URL:  "https://www.precisely.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Precisely",
+			Website: "https://www.precisely.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    64863146,
-				Alias: "preciselydata",
-				Name:  "Precisely",
+				ID:                64863146,
+				Alias:             "preciselydata",
+				Name:              "Precisely",
+				Followers:         "149K",
+				Employees:         "1K+",
+				AssociatedMembers: "2,958",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "PreciselyData",
@@ -8556,14 +9256,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | R Systems
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "R Systems",
-			URL:  "https://www.rsystems.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "R Systems",
+			Website: "https://www.rsystems.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    165636,
-				Alias: "r-systems",
-				Name:  "R Systems",
+				ID:                165636,
+				Alias:             "r-systems",
+				Name:              "R Systems",
+				Followers:         "146K",
+				Employees:         "1K+",
+				AssociatedMembers: "5,830",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "", // NOP
@@ -8596,14 +9300,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Hays
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Hays",
-			URL:  "https://www.haysplc.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Hays",
+			Website: "https://www.haysplc.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    3486,
-				Alias: "hays",
-				Name:  "Hays",
+				ID:                3486,
+				Alias:             "hays",
+				Name:              "Hays",
+				Followers:         "8M",
+				Employees:         "5K+",
+				AssociatedMembers: "26,240",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "", // NOP
@@ -8636,14 +9344,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Consort Group
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Consort Group",
-			URL:  "https://consort-group.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Consort Group",
+			Website: "https://consort-group.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    46088,
-				Alias: "consortgroup",
-				Name:  "Consort Group",
+				ID:                46088,
+				Alias:             "consortgroup",
+				Name:              "Consort Group",
+				Followers:         "65K",
+				Employees:         "1K+",
+				AssociatedMembers: "1,666",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "", // NOP
@@ -8673,14 +9385,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Ascendion
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Ascendion",
-			URL:  "https://ascendion.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Ascendion",
+			Website: "https://ascendion.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    86694680,
-				Alias: "ascendion",
-				Name:  "Ascendion",
+				ID:                86694680,
+				Alias:             "ascendion",
+				Name:              "Ascendion",
+				Followers:         "1M",
+				Employees:         "5K+",
+				AssociatedMembers: "3,039",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "", // NOP
@@ -8710,14 +9426,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Checkout.com
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Checkout.com",
-			URL:  "https://www.checkout.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Checkout.com",
+			Website: "https://www.checkout.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    3110635,
-				Alias: "checkout",
-				Name:  "Checkout.com",
+				ID:                3110635,
+				Alias:             "checkout",
+				Name:              "Checkout.com",
+				Followers:         "205K",
+				Employees:         "1K+",
+				AssociatedMembers: "1,956",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "checkout",
@@ -8757,14 +9477,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Unlimit
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Unlimit",
-			URL:  "https://www.unlimit.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Unlimit",
+			Website: "https://www.unlimit.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    56459436,
-				Alias: "unlimit-com",
-				Name:  "Unlimit",
+				ID:                56459436,
+				Alias:             "unlimit-com",
+				Name:              "Unlimit",
+				Followers:         "138K",
+				Employees:         "200+",
+				AssociatedMembers: "559",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -8800,14 +9524,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Chime
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Chime",
-			URL:  "https://www.chime.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Chime",
+			Website: "https://www.chime.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    3738695,
-				Alias: "chime-card",
-				Name:  "Chime",
+				ID:                3738695,
+				Alias:             "chime-card",
+				Name:              "Chime",
+				Followers:         "138K",
+				Employees:         "1K+",
+				AssociatedMembers: "1,971",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -8842,14 +9570,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Collective Minds Radiology
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Collective Minds Radiology",
-			URL:  "https://cmrad.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Collective Minds Radiology",
+			Website: "https://cmrad.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    11564593,
-				Alias: "cmrad",
-				Name:  "Collective Minds Radiology",
+				ID:                11564593,
+				Alias:             "cmrad",
+				Name:              "Collective Minds Radiology",
+				Followers:         "10K",
+				Employees:         "50+",
+				AssociatedMembers: "75",
+				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -8878,14 +9610,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Cruise
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Cruise",
-			URL:  "https://www.getcruise.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Cruise",
+			Website: "https://www.getcruise.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    6577635,
-				Alias: "getcruise",
-				Name:  "Cruise",
+				ID:                6577635,
+				Alias:             "getcruise",
+				Name:              "Cruise",
+				Followers:         "164K",
+				Employees:         "1K+",
+				AssociatedMembers: "3,211",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "cruise-automation",
@@ -8918,14 +9654,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Compass
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Compass",
-			URL:  "https://www.compass.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Compass",
+			Website: "https://www.compass.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    2866215,
-				Alias: "compassinc",
-				Name:  "Compass",
+				ID:                2866215,
+				Alias:             "compassinc",
+				Name:              "Compass",
+				Followers:         "328K",
+				Employees:         "1K+",
+				AssociatedMembers: "29,272",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "UrbanCompass",
@@ -8958,14 +9698,18 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Mercury
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Mercury",
-			URL:  "https://mercury.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Mercury",
+			Website: "https://mercury.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    19107985,
-				Alias: "mercuryhq",
-				Name:  "Mercury",
+				ID:                19107985,
+				Alias:             "mercuryhq",
+				Name:              "Mercury",
+				Followers:         "57K",
+				Employees:         "500+",
+				AssociatedMembers: "1,033",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -9002,14 +9746,18 @@ func companiesPart1() []domain.CompanyProfile {
 		},
 
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Tailscale",
-			URL:  "https://tailscale.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Tailscale",
+			Website: "https://tailscale.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    35653234,
-				Alias: "tailscale",
-				Name:  "Tailscale",
+				ID:                35653234,
+				Alias:             "tailscale",
+				Name:              "Tailscale",
+				Followers:         "14K",
+				Employees:         "50+",
+				AssociatedMembers: "150",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "tailscale",
@@ -9045,14 +9793,18 @@ func companiesPart1() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Customer.io",
-			URL:  "https://customer.io/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Customer.io",
+			Website: "https://customer.io/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    2492471,
-				Alias: "customer-io",
-				Name:  "Customer.io",
+				ID:                2492471,
+				Alias:             "customer-io",
+				Name:              "Customer.io",
+				Followers:         "23K",
+				Employees:         "200+",
+				AssociatedMembers: "373",
+				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "customerio",
@@ -9081,14 +9833,18 @@ func companiesPart1() []domain.CompanyProfile {
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Tabby",
-			URL:  "https://tabby.ai/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Tabby",
+			Website: "https://tabby.ai/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    26615638,
-				Alias: "tabbypay",
-				Name:  "Tabby",
+				ID:                26615638,
+				Alias:             "tabbypay",
+				Name:              "Tabby",
+				Followers:         "113K",
+				Employees:         "1K+",
+				AssociatedMembers: "2,048",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -9122,14 +9878,18 @@ func companiesPart1() []domain.CompanyProfile {
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Sonatus",
-			URL:  "https://www.sonatus.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Sonatus",
+			Website: "https://www.sonatus.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    18780890,
-				Alias: "sonatus",
-				Name:  "Sonatus",
+				ID:                18780890,
+				Alias:             "sonatus",
+				Name:              "Sonatus",
+				Followers:         "7K",
+				Employees:         "50+",
+				AssociatedMembers: "182",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -9159,14 +9919,18 @@ func companiesPart1() []domain.CompanyProfile {
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "KOHO",
-			URL:  "https://www.koho.ca/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "KOHO",
+			Website: "https://www.koho.ca/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    9443598,
-				Alias: "koho",
-				Name:  "KOHO",
+				ID:                9443598,
+				Alias:             "koho",
+				Name:              "KOHO",
+				Followers:         "40K",
+				Employees:         "200+",
+				AssociatedMembers: "411",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "kohofinancial",
@@ -9198,14 +9962,18 @@ func companiesPart1() []domain.CompanyProfile {
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Nicolab",
-			URL:  "https://www.nicolab.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Nicolab",
+			Website: "https://www.nicolab.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    10873366,
-				Alias: "nico-lab",
-				Name:  "Nicolab",
+				ID:                10873366,
+				Alias:             "nico-lab",
+				Name:              "Nicolab",
+				Followers:         "5K",
+				Employees:         "50+",
+				AssociatedMembers: "53",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -9239,14 +10007,18 @@ func companiesPart1() []domain.CompanyProfile {
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Operant AI",
-			URL:  "https://www.operant.ai/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Operant AI",
+			Website: "https://www.operant.ai/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    67522377,
-				Alias: "operantai",
-				Name:  "Operant AI",
+				ID:                67522377,
+				Alias:             "operantai",
+				Name:              "Operant AI",
+				Followers:         "4K",
+				Employees:         "10+",
+				AssociatedMembers: "34",
+				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "OperantAI",
@@ -9279,14 +10051,18 @@ func companiesPart1() []domain.CompanyProfile {
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "CrowdRiff",
-			URL:  "https://crowdriff.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "CrowdRiff",
+			Website: "https://crowdriff.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    2781710,
-				Alias: "crowd-riff",
-				Name:  "CrowdRiff",
+				ID:                2781710,
+				Alias:             "crowd-riff",
+				Name:              "CrowdRiff",
+				Followers:         "13K",
+				Employees:         "50+",
+				AssociatedMembers: "113",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "crowdriff",
@@ -9326,10 +10102,13 @@ func companiesPart1() []domain.CompanyProfile {
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:       338556,
-				Alias:    "swiss-post",
-				Name:     "Swiss Post",
-				Verified: true,
+				ID:                338556,
+				Alias:             "swiss-post",
+				Name:              "Swiss Post",
+				Followers:         "111K",
+				Employees:         "10K+",
+				AssociatedMembers: "9,482",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "swisspost",
@@ -9391,10 +10170,13 @@ func companiesPart1() []domain.CompanyProfile {
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:       68821761,
-				Alias:    "rialtic-io",
-				Name:     "Rialtic",
-				Verified: true,
+				ID:                68821761,
+				Alias:             "rialtic-io",
+				Name:              "Rialtic",
+				Followers:         "3K",
+				Employees:         "50+",
+				AssociatedMembers: "64",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "Rialtic",
@@ -9442,14 +10224,18 @@ func companiesPart1() []domain.CompanyProfile {
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Prisma",
-			URL:  "https://www.prisma.io/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Prisma",
+			Website: "https://www.prisma.io/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    10614939,
-				Alias: "prisma-io",
-				Name:  "Prisma",
+				ID:                10614939,
+				Alias:             "prisma-io",
+				Name:              "Prisma",
+				Followers:         "15K",
+				Employees:         "10+",
+				AssociatedMembers: "138",
+				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "prisma",
@@ -9484,14 +10270,18 @@ func companiesPart1() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Zipline",
-			URL:  "https://www.flyzipline.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Zipline",
+			Website: "https://www.flyzipline.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    7602863,
-				Alias: "flyzipline",
-				Name:  "Zipline",
+				ID:                7602863,
+				Alias:             "flyzipline",
+				Name:              "Zipline",
+				Followers:         "109K",
+				Employees:         "1K+",
+				AssociatedMembers: "1,315",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -9522,14 +10312,18 @@ func companiesPart1() []domain.CompanyProfile {
 		},
 
 		{
-			ID:   0,                         // system
-			Type: domain.CompanyTypeStartup, // system
-			Name: "VisionAI",
-			URL:  "https://www.visionai.co/",
+			ID:      0,                         // system
+			Type:    domain.CompanyTypeStartup, // system
+			Name:    "VisionAI",
+			Website: "https://www.visionai.co/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    18858131,
-				Alias: "wearevisionai",
-				Name:  "VisionAI",
+				ID:                18858131,
+				Alias:             "wearevisionai",
+				Name:              "VisionAI",
+				Followers:         "2K",
+				Employees:         "50+",
+				AssociatedMembers: "56",
+				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -9559,14 +10353,18 @@ func companiesPart1() []domain.CompanyProfile {
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Vector Atomic",
-			URL:  "https://www.vectoratomic.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Vector Atomic",
+			Website: "https://www.vectoratomic.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    18630145,
-				Alias: "vectoratomic",
-				Name:  "Vector Atomic",
+				ID:                18630145,
+				Alias:             "vectoratomic",
+				Name:              "Vector Atomic",
+				Followers:         "4K",
+				Employees:         "10+",
+				AssociatedMembers: "49",
+				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -9596,14 +10394,18 @@ func companiesPart1() []domain.CompanyProfile {
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 		{
-			ID:   0,                         // system
-			Type: domain.CompanyTypeStartup, // system
-			Name: "Freeform",
-			URL:  "https://freeform.co/",
+			ID:      0,                         // system
+			Type:    domain.CompanyTypeStartup, // system
+			Name:    "Freeform",
+			Website: "https://freeform.co/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    19207744,
-				Alias: "freeformfuture",
-				Name:  "Freeform",
+				ID:                19207744,
+				Alias:             "freeformfuture",
+				Name:              "Freeform",
+				Followers:         "6K",
+				Employees:         "10+",
+				AssociatedMembers: "47",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -9633,14 +10435,18 @@ func companiesPart1() []domain.CompanyProfile {
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Daedalean AI",
-			URL:  "https://daedalean.ai/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Daedalean AI",
+			Website: "https://daedalean.ai/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    10999325,
-				Alias: "daedalean",
-				Name:  "Daedalean AI",
+				ID:                10999325,
+				Alias:             "daedalean",
+				Name:              "Daedalean AI",
+				Followers:         "9K",
+				Employees:         "50+",
+				AssociatedMembers: "129",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "daedaleanai",
@@ -9671,16 +10477,19 @@ func companiesPart1() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Statista",
-			URL:  "https://www.statista.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Statista",
+			Website: "https://www.statista.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:       0,
-				IDs:      []int{1042846, 42875927},
-				Alias:    "statista",
-				Name:     "Statista",
-				Verified: true,
+				ID:                0,
+				IDs:               []int{1042846, 42875927},
+				Alias:             "statista",
+				Name:              "Statista",
+				Followers:         "258K",
+				Employees:         "1K+",
+				AssociatedMembers: "1,455",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -9719,14 +10528,18 @@ func companiesPart1() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "DroneSense",
-			URL:  "https://www.dronesense.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "DroneSense",
+			Website: "https://www.dronesense.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    10128253,
-				Alias: "dronesense",
-				Name:  "DroneSense",
+				ID:                10128253,
+				Alias:             "dronesense",
+				Name:              "DroneSense",
+				Followers:         "10K",
+				Employees:         "10+",
+				AssociatedMembers: "53",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -9756,14 +10569,18 @@ func companiesPart1() []domain.CompanyProfile {
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Zurich Instruments",
-			URL:  "https://www.zhinst.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Zurich Instruments",
+			Website: "https://www.zhinst.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    2289023,
-				Alias: "zurich-instruments-ag",
-				Name:  "Zurich Instruments",
+				ID:                2289023,
+				Alias:             "zurich-instruments-ag",
+				Name:              "Zurich Instruments",
+				Followers:         "17K",
+				Employees:         "50+",
+				AssociatedMembers: "158",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "zhinst",
@@ -9795,14 +10612,18 @@ func companiesPart1() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Palo Alto Networks",
-			URL:  "https://www.paloaltonetworks.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Palo Alto Networks",
+			Website: "https://www.paloaltonetworks.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    30086,
-				Alias: "palo-alto-networks",
-				Name:  "Palo Alto Networks",
+				ID:                30086,
+				Alias:             "palo-alto-networks",
+				Name:              "Palo Alto Networks",
+				Followers:         "1M",
+				Employees:         "10K+",
+				AssociatedMembers: "16,701",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "paloaltonetworks",
@@ -9844,15 +10665,18 @@ func companiesPart1() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "SciTec",
-			URL:  "https://scitec.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "SciTec",
+			Website: "https://scitec.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:       22302976,
-				Alias:    "scitecinc",
-				Name:     "SciTec",
-				Verified: true,
+				ID:                22302976,
+				Alias:             "scitecinc",
+				Name:              "SciTec",
+				Followers:         "16K",
+				Employees:         "200+",
+				AssociatedMembers: "304",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -9885,14 +10709,18 @@ func companiesPart1() []domain.CompanyProfile {
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Stackx.me",
-			URL:  "https://stackx.me/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Stackx.me",
+			Website: "https://stackx.me/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    71717406,
-				Alias: "stack-x-me",
-				Name:  "Stackx.me",
+				ID:                71717406,
+				Alias:             "stack-x-me",
+				Name:              "Stackx.me",
+				Followers:         "3K",
+				Employees:         "2+",
+				AssociatedMembers: "12",
+				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -9933,10 +10761,13 @@ func companiesPart1() []domain.CompanyProfile {
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:       1292,
-				Alias:    "the-walt-disney-company",
-				Name:     "The Walt Disney Company",
-				Verified: true,
+				ID:                1292,
+				Alias:             "the-walt-disney-company",
+				Name:              "The Walt Disney Company",
+				Followers:         "6M",
+				Employees:         "10K+",
+				AssociatedMembers: "178,451",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "disney",
@@ -10003,15 +10834,18 @@ func companiesPart1() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Materialise",
-			URL:  "https://www.materialise.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Materialise",
+			Website: "https://www.materialise.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:       4463,
-				Alias:    "materialise",
-				Name:     "Materialise",
-				Verified: true,
+				ID:                4463,
+				Alias:             "materialise",
+				Name:              "Materialise",
+				Followers:         "66K",
+				Employees:         "1K+",
+				AssociatedMembers: "1,800",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -10058,14 +10892,18 @@ func companiesPart1() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:   0,                         // system
-			Type: domain.CompanyTypeStartup, // system
-			Name: "InfluxData",
-			URL:  "https://www.influxdata.com/",
+			ID:      0,                         // system
+			Type:    domain.CompanyTypeStartup, // system
+			Name:    "InfluxData",
+			Website: "https://www.influxdata.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    5159145,
-				Alias: "influxdb",
-				Name:  "InfluxData",
+				ID:                5159145,
+				Alias:             "influxdb",
+				Name:              "InfluxData",
+				Followers:         "20K",
+				Employees:         "200+",
+				AssociatedMembers: "197",
+				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "influxdata",
@@ -10110,14 +10948,18 @@ func companiesPart1() []domain.CompanyProfile {
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "amo",
-			URL:  "https://amo.co/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "amo",
+			Website: "https://amo.co/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    92897504,
-				Alias: "amoamoamo",
-				Name:  "amo",
+				ID:                92897504,
+				Alias:             "amoamoamo",
+				Name:              "amo",
+				Followers:         "5K",
+				Employees:         "50+",
+				AssociatedMembers: "149",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -10148,14 +10990,18 @@ func companiesPart1() []domain.CompanyProfile {
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Sony Interactive Entertainment",
-			URL:  "http://www.sonyinteractive.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Sony Interactive Entertainment",
+			Website: "http://www.sonyinteractive.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    57993393,
-				Alias: "sony-interactive-entertainment-llc",
-				Name:  "Sony Interactive Entertainment",
+				ID:                57993393,
+				Alias:             "sony-interactive-entertainment-llc",
+				Name:              "Sony Interactive Entertainment",
+				Followers:         "111K",
+				Employees:         "10K+",
+				AssociatedMembers: "10,714",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -10190,14 +11036,18 @@ func companiesPart1() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Datadog",
-			URL:  "https://www.datadoghq.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Datadog",
+			Website: "https://www.datadoghq.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    1066442,
-				Alias: "datadog",
-				Name:  "Datadog",
+				ID:                1066442,
+				Alias:             "datadog",
+				Name:              "Datadog",
+				Followers:         "372K",
+				Employees:         "1K+",
+				AssociatedMembers: "7,942",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "datadog",
@@ -10233,14 +11083,18 @@ func companiesPart1() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:   0,               // system
-			Type: "",              // system
-			Name: "Genius Sports", // "Second Spectrum" somehow related to "Genius Sports"
-			URL:  "https://www.geniussports.com/",
+			ID:      0,               // system
+			Type:    "",              // system
+			Name:    "Genius Sports", // "Second Spectrum" somehow related to "Genius Sports"
+			Website: "https://www.geniussports.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    22208562,
-				Alias: "geniussports",
-				Name:  "Genius Sports",
+				ID:                22208562,
+				Alias:             "geniussports",
+				Name:              "Genius Sports",
+				Followers:         "89K",
+				Employees:         "1K+",
+				AssociatedMembers: "2,816",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -10273,14 +11127,18 @@ func companiesPart1() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Windmill",
-			URL:  "https://www.windmill.dev/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Windmill",
+			Website: "https://www.windmill.dev/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    82268299,
-				Alias: "windmill-dev",
-				Name:  "Windmill",
+				ID:                82268299,
+				Alias:             "windmill-dev",
+				Name:              "Windmill",
+				Followers:         "2K",
+				Employees:         "2+",
+				AssociatedMembers: "18",
+				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "windmill-labs",
@@ -10312,14 +11170,18 @@ func companiesPart1() []domain.CompanyProfile {
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 		{
-			ID:   0,                         // system
-			Type: domain.CompanyTypeStartup, // system
-			Name: "Fetcherr",
-			URL:  "https://fetcherr.io",
+			ID:      0,                         // system
+			Type:    domain.CompanyTypeStartup, // system
+			Name:    "Fetcherr",
+			Website: "https://fetcherr.io",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    31454791,
-				Alias: "fetcherr-ltd",
-				Name:  "Fetcherr",
+				ID:                31454791,
+				Alias:             "fetcherr-ltd",
+				Name:              "Fetcherr",
+				Followers:         "5K",
+				Employees:         "50+",
+				AssociatedMembers: "116",
+				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -10349,14 +11211,18 @@ func companiesPart1() []domain.CompanyProfile {
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Flok Health",
-			URL:  "https://flok.health/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Flok Health",
+			Website: "https://flok.health/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    84475363,
-				Alias: "flok-health",
-				Name:  "Flok Health",
+				ID:                84475363,
+				Alias:             "flok-health",
+				Name:              "Flok Health",
+				Followers:         "1K",
+				Employees:         "10+",
+				AssociatedMembers: "10",
+				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -10389,14 +11255,18 @@ func companiesPart1() []domain.CompanyProfile {
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Rhebo",
-			URL:  "https://rhebo.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Rhebo",
+			Website: "https://rhebo.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    5312885,
-				Alias: "rhebo",
-				Name:  "Rhebo",
+				ID:                5312885,
+				Alias:             "rhebo",
+				Name:              "Rhebo",
+				Followers:         "4K",
+				Employees:         "10+",
+				AssociatedMembers: "32",
+				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -10429,14 +11299,18 @@ func companiesPart1() []domain.CompanyProfile {
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Bjak",
-			URL:  "https://bjak.my/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Bjak",
+			Website: "https://bjak.my/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    14607755,
-				Alias: "bjak",
-				Name:  "Bjak",
+				ID:                14607755,
+				Alias:             "bjak",
+				Name:              "Bjak",
+				Followers:         "101K",
+				Employees:         "500+",
+				AssociatedMembers: "245",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -10466,14 +11340,18 @@ func companiesPart1() []domain.CompanyProfile {
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "EverCharge",
-			URL:  "https://evercharge.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "EverCharge",
+			Website: "https://evercharge.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    4817778,
-				Alias: "evercharge",
-				Name:  "EverCharge",
+				ID:                4817778,
+				Alias:             "evercharge",
+				Name:              "EverCharge",
+				Followers:         "9K",
+				Employees:         "50+",
+				AssociatedMembers: "111",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -10514,10 +11392,13 @@ func companiesPart1() []domain.CompanyProfile {
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:       963919,
-				Alias:    "eburyfintech",
-				Name:     "Ebury",
-				Verified: true,
+				ID:                963919,
+				Alias:             "eburyfintech",
+				Name:              "Ebury",
+				Followers:         "75K",
+				Employees:         "1K+",
+				AssociatedMembers: "1,614",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -10568,14 +11449,18 @@ func companiesPart1() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Talon.One",
-			URL:  "https://talon.one",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Talon.One",
+			Website: "https://talon.one",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    10393857,
-				Alias: "talon.one",
-				Name:  "Talon.One",
+				ID:                10393857,
+				Alias:             "talon.one",
+				Name:              "Talon.One",
+				Followers:         "13K",
+				Employees:         "50+",
+				AssociatedMembers: "217",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "talon-one",
@@ -10606,14 +11491,18 @@ func companiesPart1() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:   0,                         // system
-			Type: domain.CompanyTypeStartup, // system
-			Name: "NewHomesMate",
-			URL:  "https://newhomesmate.com/",
+			ID:      0,                         // system
+			Type:    domain.CompanyTypeStartup, // system
+			Name:    "NewHomesMate",
+			Website: "https://newhomesmate.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    86332598,
-				Alias: "newhomesmate",
-				Name:  "NewHomesMate",
+				ID:                86332598,
+				Alias:             "newhomesmate",
+				Name:              "NewHomesMate",
+				Followers:         "2K",
+				Employees:         "50+",
+				AssociatedMembers: "104",
+				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -10647,14 +11536,18 @@ func companiesPart1() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:   0,                         // system
-			Type: domain.CompanyTypeStartup, // system
-			Name: "Density",
-			URL:  "https://www.density.io/",
+			ID:      0,                         // system
+			Type:    domain.CompanyTypeStartup, // system
+			Name:    "Density",
+			Website: "https://www.density.io/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    7589398,
-				Alias: "density-inc-",
-				Name:  "Density",
+				ID:                7589398,
+				Alias:             "density-inc-",
+				Name:              "Density",
+				Followers:         "10K",
+				Employees:         "50+",
+				AssociatedMembers: "106",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -10684,14 +11577,18 @@ func companiesPart1() []domain.CompanyProfile {
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Surfly",
-			URL:  "https://www.surfly.com",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Surfly",
+			Website: "https://www.surfly.com",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    1943587,
-				Alias: "surfly",
-				Name:  "Surfly",
+				ID:                1943587,
+				Alias:             "surfly",
+				Name:              "Surfly",
+				Followers:         "6K",
+				Employees:         "10+",
+				AssociatedMembers: "30",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "surfly",
@@ -10721,15 +11618,18 @@ func companiesPart1() []domain.CompanyProfile {
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Cross River",
-			URL:  "https://www.crossriver.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Cross River",
+			Website: "https://www.crossriver.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:       967395,
-				Alias:    "cross-river-bank",
-				Name:     "Cross River",
-				Verified: true,
+				ID:                967395,
+				Alias:             "cross-river-bank",
+				Name:              "Cross River",
+				Followers:         "28K",
+				Employees:         "500+",
+				AssociatedMembers: "1,411",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -10763,14 +11663,18 @@ func companiesPart1() []domain.CompanyProfile {
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 		{
-			ID:   0,                         // system
-			Type: domain.CompanyTypeStartup, // system
-			Name: "Abnormal Security",
-			URL:  "https://abnormalsecurity.com/",
+			ID:      0,                         // system
+			Type:    domain.CompanyTypeStartup, // system
+			Name:    "Abnormal Security",
+			Website: "https://abnormalsecurity.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    18586257,
-				Alias: "abnormalsecurity",
-				Name:  "Abnormal Security",
+				ID:                18586257,
+				Alias:             "abnormalsecurity",
+				Name:              "Abnormal Security",
+				Followers:         "64K",
+				Employees:         "500+",
+				AssociatedMembers: "945",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "abnormal-security",
@@ -10803,14 +11707,18 @@ func companiesPart1() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:   0,                         // system
-			Type: domain.CompanyTypeStartup, // system
-			Name: "Scope3",
-			URL:  "https://scope3.com/",
+			ID:      0,                         // system
+			Type:    domain.CompanyTypeStartup, // system
+			Name:    "Scope3",
+			Website: "https://scope3.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    80943372,
-				Alias: "scope3data",
-				Name:  "Scope3",
+				ID:                80943372,
+				Alias:             "scope3data",
+				Name:              "Scope3",
+				Followers:         "8K",
+				Employees:         "50+",
+				AssociatedMembers: "106",
+				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "scope3data",
@@ -10840,14 +11748,18 @@ func companiesPart1() []domain.CompanyProfile {
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 		{
-			ID:   0,                         // system
-			Type: domain.CompanyTypeStartup, // system
-			Name: "Apollo GraphQL",
-			URL:  "https://www.apollographql.com/",
+			ID:      0,                         // system
+			Type:    domain.CompanyTypeStartup, // system
+			Name:    "Apollo GraphQL",
+			Website: "https://www.apollographql.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    28602935,
-				Alias: "apollo-graphql",
-				Name:  "Apollo GraphQL",
+				ID:                28602935,
+				Alias:             "apollo-graphql",
+				Name:              "Apollo GraphQL",
+				Followers:         "17K",
+				Employees:         "200+",
+				AssociatedMembers: "243",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "apollographql",
@@ -10880,14 +11792,18 @@ func companiesPart1() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Paessler",
-			URL:  "https://www.paessler.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Paessler",
+			Website: "https://www.paessler.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    409588,
-				Alias: "paessler-gmbh",
-				Name:  "Paessler",
+				ID:                409588,
+				Alias:             "paessler-gmbh",
+				Name:              "Paessler",
+				Followers:         "15K",
+				Employees:         "200+",
+				AssociatedMembers: "367",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "PaesslerAG",
@@ -10918,14 +11834,18 @@ func companiesPart1() []domain.CompanyProfile {
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 		{
-			ID:   0,                         // system
-			Type: domain.CompanyTypeStartup, // system
-			Name: "Hasura",
-			URL:  "https://hasura.io/",
+			ID:      0,                         // system
+			Type:    domain.CompanyTypeStartup, // system
+			Name:    "Hasura",
+			Website: "https://hasura.io/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    13211008,
-				Alias: "hasura",
-				Name:  "Hasura",
+				ID:                13211008,
+				Alias:             "hasura",
+				Name:              "Hasura",
+				Followers:         "19K",
+				Employees:         "50+",
+				AssociatedMembers: "170",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "hasura",
@@ -10958,14 +11878,18 @@ func companiesPart1() []domain.CompanyProfile {
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 		{
-			ID:   0,                         // system
-			Type: domain.CompanyTypeStartup, // system
-			Name: "Aira",
-			URL:  "https://company.airahome.com/",
+			ID:      0,                         // system
+			Type:    domain.CompanyTypeStartup, // system
+			Name:    "Aira",
+			Website: "https://company.airahome.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    93205887,
-				Alias: "airahome",
-				Name:  "Aira",
+				ID:                93205887,
+				Alias:             "airahome",
+				Name:              "Aira",
+				Followers:         "21K",
+				Employees:         "200+",
+				AssociatedMembers: "662",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -11003,10 +11927,13 @@ func companiesPart1() []domain.CompanyProfile {
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:       21665,
-				Alias:    "ddn", // before ddn-storage
-				Name:     "DDN",
-				Verified: true,
+				ID:                21665,
+				Alias:             "ddn", // before ddn-storage
+				Name:              "DDN",
+				Followers:         "51K",
+				Employees:         "1K+",
+				AssociatedMembers: "914",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "DDNStorage",
@@ -11052,14 +11979,18 @@ func companiesPart1() []domain.CompanyProfile {
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Starling Bank",
-			URL:  "https://www.starlingbank.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Starling Bank",
+			Website: "https://www.starlingbank.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    9180896,
-				Alias: "starlingbank",
-				Name:  "Starling Bank",
+				ID:                9180896,
+				Alias:             "starlingbank",
+				Name:              "Starling Bank",
+				Followers:         "266K",
+				Employees:         "1K+",
+				AssociatedMembers: "2,642",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "starlingbank",
@@ -11092,14 +12023,18 @@ func companiesPart1() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Spice AI",
-			URL:  "https://spice.ai/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Spice AI",
+			Website: "https://spice.ai/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    74148478,
-				Alias: "spice-ai",
-				Name:  "Spice AI",
+				ID:                74148478,
+				Alias:             "spice-ai",
+				Name:              "Spice AI",
+				Followers:         "2K",
+				Employees:         "2+",
+				AssociatedMembers: "17",
+				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "spiceai",
@@ -11133,14 +12068,18 @@ func companiesPart1() []domain.CompanyProfile {
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Algolia",
-			URL:  "https://www.algolia.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Algolia",
+			Website: "https://www.algolia.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    2728700,
-				Alias: "algolia",
-				Name:  "Algolia",
+				ID:                2728700,
+				Alias:             "algolia",
+				Name:              "Algolia",
+				Followers:         "56K",
+				Employees:         "500+",
+				AssociatedMembers: "817",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "algolia",
@@ -11172,14 +12111,18 @@ func companiesPart1() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:   0,                         // system
-			Type: domain.CompanyTypeStartup, // system
-			Name: "Observe",
-			URL:  "https://www.observeinc.com/",
+			ID:      0,                         // system
+			Type:    domain.CompanyTypeStartup, // system
+			Name:    "Observe",
+			Website: "https://www.observeinc.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    18796376,
-				Alias: "observe-inc",
-				Name:  "Observe",
+				ID:                18796376,
+				Alias:             "observe-inc",
+				Name:              "Observe",
+				Followers:         "10K",
+				Employees:         "200+",
+				AssociatedMembers: "227",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "observeinc",
@@ -11210,14 +12153,18 @@ func companiesPart1() []domain.CompanyProfile {
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Chalk",
-			URL:  "https://chalk.ai/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Chalk",
+			Website: "https://chalk.ai/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    78829224,
-				Alias: "chalkai",
-				Name:  "Chalk",
+				ID:                78829224,
+				Alias:             "chalkai",
+				Name:              "Chalk",
+				Followers:         "2K",
+				Employees:         "10+",
+				AssociatedMembers: "53",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -11248,14 +12195,18 @@ func companiesPart1() []domain.CompanyProfile {
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Enova",
-			URL:  "https://www.enova.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Enova",
+			Website: "https://www.enova.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    670584,
-				Alias: "enova-international",
-				Name:  "Enova",
+				ID:                670584,
+				Alias:             "enova-international",
+				Name:              "Enova",
+				Followers:         "62K",
+				Employees:         "1K+",
+				AssociatedMembers: "1,401",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "enova",
@@ -11286,14 +12237,18 @@ func companiesPart1() []domain.CompanyProfile {
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "JustWatch",
-			URL:  "https://media.justwatch.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "JustWatch",
+			Website: "https://media.justwatch.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    9216347,
-				Alias: "justwatch",
-				Name:  "JustWatch",
+				ID:                9216347,
+				Alias:             "justwatch",
+				Name:              "JustWatch",
+				Followers:         "15K",
+				Employees:         "200+",
+				AssociatedMembers: "225",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "justwatch",
@@ -11324,14 +12279,18 @@ func companiesPart1() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:   0,                         // system
-			Type: domain.CompanyTypeStartup, // system
-			Name: "Sourcegraph",
-			URL:  "https://sourcegraph.com/",
+			ID:      0,                         // system
+			Type:    domain.CompanyTypeStartup, // system
+			Name:    "Sourcegraph",
+			Website: "https://sourcegraph.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    4803356,
-				Alias: "sourcegraph",
-				Name:  "Sourcegraph",
+				ID:                4803356,
+				Alias:             "sourcegraph",
+				Name:              "Sourcegraph",
+				Followers:         "20K",
+				Employees:         "50+",
+				AssociatedMembers: "191",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "sourcegraph",
@@ -11360,14 +12319,18 @@ func companiesPart1() []domain.CompanyProfile {
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Plaid",
-			URL:  "https://plaid.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Plaid",
+			Website: "https://plaid.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    2684737,
-				Alias: "plaid-",
-				Name:  "Plaid",
+				ID:                2684737,
+				Alias:             "plaid-",
+				Name:              "Plaid",
+				Followers:         "188K",
+				Employees:         "500+",
+				AssociatedMembers: "1,273",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "plaid",
@@ -11400,14 +12363,18 @@ func companiesPart1() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Coalition",
-			URL:  "https://www.coalitioninc.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Coalition",
+			Website: "https://www.coalitioninc.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    11193112,
-				Alias: "coalitioninc",
-				Name:  "Coalition",
+				ID:                11193112,
+				Alias:             "coalitioninc",
+				Name:              "Coalition",
+				Followers:         "82K",
+				Employees:         "500+",
+				AssociatedMembers: "718",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "",
@@ -11437,14 +12404,18 @@ func companiesPart1() []domain.CompanyProfile {
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Mechanical Orchard",
-			URL:  "https://www.mechanical-orchard.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Mechanical Orchard",
+			Website: "https://www.mechanical-orchard.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    89798793,
-				Alias: "mechanical-orchard",
-				Name:  "Mechanical Orchard",
+				ID:                89798793,
+				Alias:             "mechanical-orchard",
+				Name:              "Mechanical Orchard",
+				Followers:         "5K",
+				Employees:         "50+",
+				AssociatedMembers: "103",
+				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "mechanical-orchard",
@@ -11475,14 +12446,18 @@ func companiesPart1() []domain.CompanyProfile {
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Moveworks",
-			URL:  "https://www.moveworks.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Moveworks",
+			Website: "https://www.moveworks.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    18311685,
-				Alias: "moveworksai",
-				Name:  "Moveworks",
+				ID:                18311685,
+				Alias:             "moveworksai",
+				Name:              "Moveworks",
+				Followers:         "41K",
+				Employees:         "500+",
+				AssociatedMembers: "606",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "moveworks",
@@ -11512,14 +12487,18 @@ func companiesPart1() []domain.CompanyProfile {
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 		{
-			ID:   0,                         // system
-			Type: domain.CompanyTypeStartup, // system
-			Name: "Emitwise",
-			URL:  "https://emitwise.com/",
+			ID:      0,                         // system
+			Type:    domain.CompanyTypeStartup, // system
+			Name:    "Emitwise",
+			Website: "https://emitwise.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    20511470,
-				Alias: "emitwise",
-				Name:  "Emitwise",
+				ID:                20511470,
+				Alias:             "emitwise",
+				Name:              "Emitwise",
+				Followers:         "10K",
+				Employees:         "50+",
+				AssociatedMembers: "53",
+				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "emitwise",
@@ -11548,14 +12527,18 @@ func companiesPart1() []domain.CompanyProfile {
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Upvest",
-			URL:  "https://upvest.co/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Upvest",
+			Website: "https://upvest.co/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    18388245,
-				Alias: "upvest",
-				Name:  "Upvest",
+				ID:                18388245,
+				Alias:             "upvest",
+				Name:              "Upvest",
+				Followers:         "14K",
+				Employees:         "50+",
+				AssociatedMembers: "180",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "upvestco",
@@ -11588,14 +12571,18 @@ func companiesPart1() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "CoreWeave",
-			URL:  "https://www.coreweave.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "CoreWeave",
+			Website: "https://www.coreweave.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    36121341,
-				Alias: "coreweave",
-				Name:  "CoreWeave",
+				ID:                36121341,
+				Alias:             "coreweave",
+				Name:              "CoreWeave",
+				Followers:         "37K",
+				Employees:         "500+",
+				AssociatedMembers: "713",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "coreweave",
@@ -11627,14 +12614,18 @@ func companiesPart1() []domain.CompanyProfile {
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Neo4j",
-			URL:  "https://www.neo4j.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Neo4j",
+			Website: "https://www.neo4j.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    828370,
-				Alias: "neo4j",
-				Name:  "Neo4j",
+				ID:                828370,
+				Alias:             "neo4j",
+				Name:              "Neo4j",
+				Followers:         "85K",
+				Employees:         "500+",
+				AssociatedMembers: "919",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "neo4j",
@@ -11676,10 +12667,13 @@ func companiesPart1() []domain.CompanyProfile {
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:       6970,
-				Alias:    "jack-henry",
-				Name:     "Jack Henry",
-				Verified: true,
+				ID:                6970,
+				Alias:             "jack-henry",
+				Name:              "Jack Henry",
+				Followers:         "81K",
+				Employees:         "5K+",
+				AssociatedMembers: "7,818",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "jkhy",
@@ -11737,14 +12731,18 @@ func companiesPart1() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "GoCardless",
-			URL:  "https://gocardless.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "GoCardless",
+			Website: "https://gocardless.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    2808012,
-				Alias: "gocardless",
-				Name:  "GoCardless",
+				ID:                2808012,
+				Alias:             "gocardless",
+				Name:              "GoCardless",
+				Followers:         "56K",
+				Employees:         "500+",
+				AssociatedMembers: "826",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "gocardless",
@@ -11786,10 +12784,13 @@ func companiesPart1() []domain.CompanyProfile {
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:       698916,
-				Alias:    "zalando",
-				Name:     "Zalando",
-				Verified: true,
+				ID:                698916,
+				Alias:             "zalando",
+				Name:              "Zalando",
+				Followers:         "347K",
+				Employees:         "10K+",
+				AssociatedMembers: "11,355",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "zalando",
@@ -11852,14 +12853,18 @@ func companiesPart1() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "FreeWheel",
-			URL:  "https://www.freewheel.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "FreeWheel",
+			Website: "https://www.freewheel.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    458871,
-				Alias: "freewheel",
-				Name:  "FreeWheel",
+				ID:                458871,
+				Alias:             "freewheel",
+				Name:              "FreeWheel",
+				Followers:         "42K",
+				Employees:         "1K+",
+				AssociatedMembers: "1,434",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "freewheel",
@@ -11898,10 +12903,13 @@ func companiesPart1() []domain.CompanyProfile {
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:       2457172,
-				Alias:    "geocomply",
-				Name:     "GeoComply",
-				Verified: true,
+				ID:                2457172,
+				Alias:             "geocomply",
+				Name:              "GeoComply",
+				Followers:         "20K",
+				Employees:         "200+",
+				AssociatedMembers: "534",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "GeoComply",
@@ -11959,10 +12967,13 @@ func companiesPart1() []domain.CompanyProfile {
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:       1449,
-				Alias:    "electronic-arts",
-				Name:     "Electronic Arts",
-				Verified: true,
+				ID:                1449,
+				Alias:             "electronic-arts",
+				Name:              "Electronic Arts",
+				Followers:         "1M",
+				Employees:         "10K+",
+				AssociatedMembers: "33,233",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "electronicarts",
