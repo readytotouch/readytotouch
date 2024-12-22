@@ -52,6 +52,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4050118492/":  41,  // jpmorganchase
 		"https://www.linkedin.com/jobs/view/4055220537/":  42,  // jpmorganchase
 		"https://www.linkedin.com/jobs/view/4074568575/":  43,  // outreach-saas
+		"https://www.linkedin.com/jobs/view/4092211710/":  205, // level-all
 		"https://www.linkedin.com/jobs/view/3906024674/":  44,  // bill
 		"https://www.linkedin.com/jobs/view/4041341979/":  45,  // rabbet
 		"https://www.linkedin.com/jobs/view/3987632672/":  46,  // mimecast
@@ -152,6 +153,8 @@ var (
 		"https://www.linkedin.com/jobs/view/4079469920/":  143, // axis-communications
 		"https://www.linkedin.com/jobs/view/4075722584/":  144, // paltafamily
 		"https://www.linkedin.com/jobs/view/4090264579/":  145, // bol-com
+		"https://www.linkedin.com/jobs/view/4080206651/":  206, // drw
+		"https://www.linkedin.com/jobs/view/4099130926/":  207, // nice-systems
 		"https://www.linkedin.com/jobs/view/4096830999/":  147, // limango-gmbh
 		"https://www.linkedin.com/jobs/view/4093559031/":  148, // varonis
 		"https://www.linkedin.com/jobs/view/4101282630/":  149, // worldtechit
@@ -175,11 +178,12 @@ var (
 		"https://www.linkedin.com/jobs/view/4102533913/":  167, // zeptolab
 		"https://www.linkedin.com/jobs/view/4050960562/":  168, // getir
 		"https://www.linkedin.com/jobs/view/4102013036/":  169, // happen-ing
+		"https://www.linkedin.com/jobs/view/3884244005/":  208, // happen-ing
 		"https://www.linkedin.com/jobs/view/4047579348/":  170, // zeller
 		"https://www.linkedin.com/jobs/view/4096854844/":  171, // flip.id
 		"https://www.linkedin.com/jobs/view/4062276145/":  172, // openx
 		"https://www.linkedin.com/jobs/view/4096376928/":  173, // lenskart-com
-		"https://www.linkedin.com/jobs/view/4093511115/":  174, // lowe&#39;s-home-improvement
+		"https://www.linkedin.com/jobs/view/4093511115/":  174, // 4128
 		"https://www.linkedin.com/jobs/view/4055142455/":  175, // huntress-labs
 		"https://www.linkedin.com/jobs/view/4088250312/":  176, // 1nce
 		"https://www.linkedin.com/jobs/view/4089563703/":  177, // waystar

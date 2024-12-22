@@ -967,8 +967,9 @@ func companiesPart4() []domain.CompanyProfile {
 			Name:    "Lowe's Companies, Inc.",
 			Website: "https://lowes.com/",
 			LinkedInProfile: domain.LinkedInProfile{
+				// LinkedIn alias that is hard to encode
 				ID:                4128,
-				Alias:             "lowe's-home-improvement",
+				Alias:             "4128", // "lowe's-home-improvement",
 				Name:              "Lowe's Companies, Inc.",
 				Followers:         "756K",
 				Employees:         "10K+",

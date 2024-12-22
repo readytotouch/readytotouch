@@ -474,6 +474,8 @@ var (
 		"axis-communications":                 469, // Axis Communications
 		"paltafamily":                         470, // Palta
 		"bol-com":                             471, // bol
+		"drw":                                 529, // DRW
+		"nice-systems":                        530, // NICE
 		"limango-gmbh":                        472, // limango GmbH — A member of the otto group
 		"varonis":                             473, // Varonis
 		"worldtechit":                         474, // WorldTech IT, LLC
@@ -501,7 +503,7 @@ var (
 		"flip.id":                             496, // Flip
 		"openx":                               497, // OpenX
 		"lenskart-com":                        498, // Lenskart.com
-		"lowe&#39;s-home-improvement":         528, // Lowe&#39;s Companies, Inc.
+		"4128":                                528, // Lowe&#39;s Companies, Inc.
 		"huntress-labs":                       500, // Huntress
 		"1nce":                                501, // 1NCE
 		"waystar":                             502, // Waystar
