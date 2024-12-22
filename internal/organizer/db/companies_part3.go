@@ -84,10 +84,10 @@ func companiesPart3() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Dynatrace",
-			URL:  "https://www.dynatrace.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Dynatrace",
+			Website: "https://www.dynatrace.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                125999,
 				Alias:             "dynatrace",
@@ -129,10 +129,10 @@ func companiesPart3() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "emnify",
-			URL:  "https://www.emnify.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "emnify",
+			Website: "https://www.emnify.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                5131340,
 				Alias:             "emnify",
@@ -239,10 +239,10 @@ func companiesPart3() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:   0,  // system
-			Type: "", // system
-			Name: "Lytx, Inc.",
-			URL:  "https://www.lytx.com/",
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Lytx, Inc.",
+			Website: "https://www.lytx.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                26167,
 				Alias:             "lytxinc",
