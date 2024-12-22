@@ -2611,10 +2611,19 @@ func companiesPart3() []domain.CompanyProfile {
 		//	Type:    "", // system
 		//	Name:    "",
 		//	Website: "",
+		//	Careers: "",
+		//	About:   "",
 		//	LinkedInProfile: domain.LinkedInProfile{
-		//		ID:       0,
-		//		Alias:    "",
-		//		Name:     "",
+		//		ID:                0,
+		//		Alias:             "",
+		//		Name:              "",
+		//		Followers:         "",
+		//		Employees:         "",
+		//		AssociatedMembers: "",
+		//		Verified:          false,
+		//	},
+		//	GitHubProfile: domain.GitHubProfile{
+		//		Login:    "",
 		//		Verified: false,
 		//	},
 		//	Languages: domain.Languages{
@@ -2636,6 +2645,7 @@ func companiesPart3() []domain.CompanyProfile {
 		//		domain.Clojure: {},
 		//		domain.Haskell: {},
 		//	},
+		//	ShortDescription: "",
 		//},
 
 		// Template full

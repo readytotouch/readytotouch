@@ -9300,6 +9300,7 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Hays
 		{
+			// The deleted recruiting agency was added by mistake
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "Hays",
@@ -9312,33 +9313,6 @@ func companiesPart1() []domain.CompanyProfile {
 				Employees:         "5K+",
 				AssociatedMembers: "26,240",
 				Verified:          true,
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:             "", // NOP
-				GoRepositoryCount: 0,  // NOP
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Hays-EI_IE10166.11,15.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/Hays-Reviews-E10166.htm",
-			},
-			OttaProfileSlug:   "",
-			YouTubeChannelURL: "https://www.youtube.com/@HaysTV",
-			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/3913846166/",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
-			ShortDescription:          "",
-			Industries:                []domain.Industry{},
-			HasEmployeesFromCountries: []domain.Country{
-				//
 			},
 		},
 
