@@ -636,6 +636,48 @@ func companiesPart5() []domain.CompanyProfile {
 			},
 			ShortDescription: "Online platform that allows employers to provide rewards and recognition",
 		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "NN Group",
+			Website: "https://www.nn-group.com",
+			Careers: "https://www.nn-group.com/careers/engaging-employees.htm",
+			About:   "https://www.nn-group.com/our-company/who-we-are.htm",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                23110483,
+				Alias:             "nn-group",
+				Name:              "NN Group",
+				Followers:         "31K",
+				Employees:         "10K+",
+				AssociatedMembers: "21,871",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Rust Developer",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4106226520/",
+							Date:             mustDate("2024-12-21"),
+						},
+					},
+				},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "International financial services company",
+		},
 		// Template short
 		//{
 		//	ID:      0,  // system
