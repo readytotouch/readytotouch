@@ -774,6 +774,7 @@ func companiesPart2() []domain.CompanyProfile {
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
 					"https://www.linkedin.com/jobs/view/4049210489/",
+					"https://www.linkedin.com/jobs/view/4079483983/",
 				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
@@ -8434,6 +8435,12 @@ func companiesPart2() []domain.CompanyProfile {
 							URL:              "https://www.linkedin.com/jobs/view/3777868160/",
 							Date:             mustDate("2024-11-14"),
 						},
+						{
+							Title:            "Web Engineer (GO/React)",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4020630528/",
+							Date:             mustDate("2024-12-18"),
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -8452,6 +8459,7 @@ func companiesPart2() []domain.CompanyProfile {
 				domain.Czechia,
 			},
 		},
+
 		{
 			ID:      0,  // system
 			Type:    "", // system
@@ -8535,6 +8543,7 @@ func companiesPart2() []domain.CompanyProfile {
 				domain.Czechia,
 			},
 		},
+
 		{
 			ID:      0,  // system
 			Type:    "", // system
@@ -8686,6 +8695,12 @@ func companiesPart2() []domain.CompanyProfile {
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4073753061/",
 							Date:             mustDate("2024-11-14"),
+						},
+						{
+							Title:            "Senior Software Engineer (Golang)",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4107304437/",
+							Date:             mustDate("2024-12-24"),
 						},
 					},
 				},

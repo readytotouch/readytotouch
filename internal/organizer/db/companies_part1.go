@@ -792,6 +792,12 @@ func companiesPart1() []domain.CompanyProfile {
 							URL:              "https://www.linkedin.com/jobs/view/4023583351/",
 							Date:             mustDate("2024-09-16"),
 						},
+						{
+							Title:            "Senior Software Engineer, Languages (Rust, GO, & Python) Tooling",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4103336471/",
+							Date:             mustDate("2024-02-18"),
+						},
 					},
 				},
 				domain.Rust: {
@@ -6507,6 +6513,7 @@ func companiesPart1() []domain.CompanyProfile {
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
 					"https://www.linkedin.com/jobs/view/3875719837/",
+					"https://www.linkedin.com/jobs/view/4034349867/",
 				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
@@ -11452,6 +11459,7 @@ func companiesPart1() []domain.CompanyProfile {
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
 					"https://www.linkedin.com/jobs/view/3945724263/",
+					"https://www.linkedin.com/jobs/view/4092377724/",
 				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
@@ -11883,6 +11891,7 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Go: nil,
 				domain.Rust: []string{
 					"https://www.linkedin.com/jobs/view/4039345477/",
+					"https://www.linkedin.com/jobs/view/4075293644/",
 				},
 				domain.Zig:     nil,
 				domain.Scala:   nil,
@@ -12909,7 +12918,7 @@ func companiesPart1() []domain.CompanyProfile {
 							Title:            "Senior Software Engineer (Golang)",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4026401818/",
-							Date:             mustDate("2024-11-01"),
+							Date:             mustDate("2024-12-24"),
 						},
 					},
 				},

@@ -678,6 +678,217 @@ func companiesPart5() []domain.CompanyProfile {
 			},
 			ShortDescription: "International financial services company",
 		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "American Airlines",
+			Website: "https://www.americanairlines.com/",
+			Careers: "https://jobs.aa.com/",
+			About:   "https://www.aa.com/i18n/customer-service/about-us/history-of-american-airlines.jsp",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2640,
+				Alias:             "american-airlines",
+				Name:              "American Airlines",
+				Followers:         "1M",
+				Employees:         "10K+",
+				AssociatedMembers: "53,291",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "americanairlines",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Engineer/Sr Engineer, Kubernetes GO — Developer",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4092856552/",
+							Date:             mustDate("2024-12-10"),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Major airline in the United States",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Cake by VPBank — Digital Bank",
+			Website: "https://cake.vn/",
+			Careers: "https://cake.vn/recruitment",
+			About:   "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                76580235,
+				Alias:             "cake-by-vpbank",
+				Name:              "Cake by VPBank — Digital Bank",
+				Followers:         "12K",
+				Employees:         "500+",
+				AssociatedMembers: "175",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior/Staff/Principal Software Engineer (GO, GCP)",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4108779705/",
+							Date:             mustDate("2024-12-24"),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Digital bank in Vietnam",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Cheesecake Labs",
+			Website: "https://cheesecakelabs.com/",
+			Careers: "https://cheesecakelabs.com/careers/",
+			About:   "https://cheesecakelabs.com/about/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                5251039,
+				Alias:             "cheesecake-labs",
+				Name:              "Cheesecake Labs",
+				Followers:         "16K",
+				Employees:         "50+",
+				AssociatedMembers: "139",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "CheesecakeLabs",
+				Verified: true,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Software Engineer Fullstack — GO",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4109304866/",
+							Date:             mustDate("2024-12-24"),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Maya",
+			Website: "https://www.maya.ph/",
+			Careers: "https://www.maya.ph/careers",
+			About:   "https://www.maya.ph/about-us",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                80861757,
+				Alias:             "mayaph",
+				Name:              "Maya",
+				Followers:         "205K",
+				Employees:         "500+",
+				AssociatedMembers: "1,556",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Software Engineer (Java/GO)",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4103938575/",
+							Date:             mustDate("2024-12-19"),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Digital Bank in the Philippines",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Ashley Furniture Industries",
+			Website: "https://www.ashleyfurnitureindustriesllc.com",
+			Careers: "https://careers.ashleyfurniture.com",
+			About:   "https://www.ashleyfurnitureindustriesllc.com/en/company/company-overview",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                162547,
+				Alias:             "ashley-furniture-industries",
+				Name:              "Ashley Furniture Industries",
+				Followers:         "102K",
+				Employees:         "10K+",
+				AssociatedMembers: "9,746",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Sr Rust Developer",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4080571465/",
+							Date:             mustDate("2024-12-18"),
+						},
+					},
+				},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American home furnishings manufacturer and retailer",
+		},
+
 		// Template short
 		//{
 		//	ID:      0,  // system
