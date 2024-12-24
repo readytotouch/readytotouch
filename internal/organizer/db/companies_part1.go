@@ -3427,7 +3427,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/3907970778/",
+					"https://www.linkedin.com/jobs/view/4104785473/",
 				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
@@ -3605,7 +3605,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/3901324430/",
+					"https://www.linkedin.com/jobs/view/4103717982/",
 				},
 				domain.Rust: []string{
 					"https://www.linkedin.com/jobs/view/4018413094/",
@@ -4193,6 +4193,7 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Go: []string{
 					"https://www.linkedin.com/jobs/view/3989947743/",
 					"https://www.linkedin.com/jobs/view/3873637399/",
+					"https://www.linkedin.com/jobs/view/4105750575/",
 				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
@@ -7438,6 +7439,7 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Go: []string{
 					"https://www.linkedin.com/jobs/view/4030943277/",
 					"https://www.linkedin.com/jobs/view/3903153316/",
+					"https://www.linkedin.com/jobs/view/4107495969/",
 				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
@@ -7856,7 +7858,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/3912130901/",
+					"https://www.linkedin.com/jobs/view/4105518392/",
 				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
@@ -8151,7 +8153,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/3914103960/",
+					"https://www.linkedin.com/jobs/view/4106867221/",
 				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,

@@ -644,7 +644,7 @@ func companiesPart2() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/4050001754/",
+					"https://www.linkedin.com/jobs/view/3921611198/",
 				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
@@ -1150,7 +1150,7 @@ func companiesPart2() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/4044948110/",
+					"https://www.linkedin.com/jobs/view/4106841758/",
 				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
@@ -3984,10 +3984,10 @@ func companiesPart2() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Software Engineer III — Golang, AWS, Terraform",
+							Title:            "Software Engineer II —  Core Engineering —  GO / Python",
 							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4050118492/",
-							Date:             mustDate("2024-11-03"),
+							URL:              "https://www.linkedin.com/jobs/view/4105782609/",
+							Date:             mustDate("2024-12-19"),
 						},
 					},
 				},
@@ -7375,8 +7375,8 @@ func companiesPart2() []domain.CompanyProfile {
 						{
 							Title:            "Golang Developer",
 							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4076696523/",
-							Date:             mustDate("2024-11-14"),
+							URL:              "https://www.linkedin.com/jobs/view/4106769274/",
+							Date:             mustDate("2024-12-20"),
 						},
 					},
 				},
