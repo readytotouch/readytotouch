@@ -431,8 +431,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "microsoft",
-				GoRepositoryCount: 78,
+				Login:    "microsoft",
+				Verified: true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Microsoft-EI_IE1651.11,20.htm",
@@ -447,33 +447,29 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "https://www.youtube.com/@Microsoft",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/3908309859/",
-					"https://www.linkedin.com/jobs/view/3905989512/",
-				},
-				domain.Rust: []string{
-					"https://www.linkedin.com/jobs/view/4038788830/",
-				},
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 112,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "",
+							Title:            "Senior Software Engineer (Golang)",
 							ShortDescription: "",
-							URL:              "",
-							Date:             mustDate(""),
+							URL:              "https://www.linkedin.com/jobs/view/3905989512/",
+							Date:             mustDate("2024-04-25"),
 						},
 					},
 				},
-				domain.Rust:    {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 75,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Product Manager – Rust Tooling",
+							ShortDescription: "Join us and play a pivotal role in building the next generation of developer tools and services, enhancing productivity for all Rust developers!",
+							URL:              "https://www.linkedin.com/jobs/view/4038788830/",
+							Date:             mustDate("2024-10-25"),
+						},
+					},
+				},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},
