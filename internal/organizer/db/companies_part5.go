@@ -33,7 +33,7 @@ func companiesPart5() []domain.CompanyProfile {
 					Vacancies: []domain.Vacancy{
 						{
 							Title:            "Backend Golang Software Engineer",
-							ShortDescription: "Build and scale backend systems for a FinTech SaaS platform, focusing on low-latency, high-reliability, and scalability.",
+							ShortDescription: "Build and scale backend systems for a FinTech SaaS platform, focusing on low-latency, high-reliability, and scalability",
 							URL:              "https://www.linkedin.com/jobs/view/4106745259/",
 							Date:             mustDate("2024-12-21"),
 						},
@@ -553,7 +553,7 @@ func companiesPart5() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "Open source, pre-configured, certified binary PostgreSQL distribution that simplifies enterprise deployment.",
+			ShortDescription: "Open source, pre-configured, certified binary PostgreSQL distribution that simplifies enterprise deployment",
 		},
 
 		{

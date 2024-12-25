@@ -5,19 +5,38 @@ package organizers
 var (
 	VacancyUrlMap = map[string]int64{
 		"https://www.linkedin.com/jobs/view/4087466433/":  131, // google
+		"https://www.linkedin.com/jobs/view/3905989512/":  256, // microsoft
+		"https://www.linkedin.com/jobs/view/4038788830/":  257, // microsoft
 		"https://www.linkedin.com/jobs/view/4036994106/":  1,   // ibm
 		"https://www.linkedin.com/jobs/view/4075807665/":  2,   // ibm
 		"https://www.linkedin.com/jobs/view/3998480636/":  3,   // ibm
 		"https://www.linkedin.com/jobs/view/4063746170/":  4,   // ibm
+		"https://www.linkedin.com/jobs/view/4072909509/":  258, // sap
+		"https://www.linkedin.com/jobs/view/4059368134/":  259, // sap
+		"https://www.linkedin.com/jobs/view/4034901984/":  260, // oracle
+		"https://www.linkedin.com/jobs/view/3914880703/":  261, // github
+		"https://www.linkedin.com/jobs/view/4018780627/":  262, // gitlab-com
 		"https://www.linkedin.com/jobs/view/4023583351/":  5,   // linkedin
 		"https://www.linkedin.com/jobs/view/4103336471/":  210, // linkedin
 		"https://www.linkedin.com/jobs/view/4073651431/":  6,   // linkedin
+		"https://www.linkedin.com/jobs/view/4075867913/":  263, // reddit-com
+		"https://www.linkedin.com/jobs/view/3910516815/":  264, // medium-com
+		"https://www.linkedin.com/jobs/view/3947425956/":  265, // pinterest
+		"https://www.linkedin.com/jobs/view/4103915582/":  266, // snap-inc-co
+		"https://www.linkedin.com/jobs/view/4096907990/":  267, // victoriametrics
+		"https://www.linkedin.com/jobs/view/3983712751/":  268, // grammarly
+		"https://www.linkedin.com/jobs/view/4058445939/":  269, // influ2
+		"https://app.otta.com/jobs/qdIzdfOu":              270, // netlify
+		"https://www.linkedin.com/jobs/view/4048326475/":  271, // vercel
+		"https://www.linkedin.com/jobs/view/4077452954/":  272, // fastly
+		"https://www.linkedin.com/jobs/view/4097075408/":  273, // fastly
 		"https://www.linkedin.com/jobs/view/3996818515/":  7,   // crowdstrike
 		"https://www.linkedin.com/jobs/view/4040870810/":  8,   // crowdstrike
 		"https://www.linkedin.com/jobs/view/4001888204/":  9,   // elastic-co
 		"https://www.linkedin.com/jobs/view/4021697979/":  10,  // redisinc
 		"https://www.linkedin.com/jobs/view/3963199017/":  11,  // redisinc
 		"https://www.linkedin.com/jobs/view/3736604544/":  12,  // canonical
+		"https://www.linkedin.com/jobs/view/3210061536/":  274, // canonical
 		"https://www.linkedin.com/jobs/view/3907970778/":  211, // fortinet
 		"https://www.linkedin.com/jobs/view/4104785473/":  212, // fortinet
 		"https://www.linkedin.com/jobs/view/4103717982/":  213, // siemens
@@ -65,7 +84,13 @@ var (
 		"https://www.linkedin.com/jobs/view/4077490300/":  33,  // wargaming-net
 		"https://www.linkedin.com/jobs/view/4044948110/":  231, // napier
 		"https://www.linkedin.com/jobs/view/4106841758/":  232, // napier
+		"https://www.linkedin.com/jobs/view/4068292201/":  275, // beyond-identity-inc
+		"https://www.linkedin.com/jobs/view/4068295195/":  276, // nightfall-ai
+		"https://www.linkedin.com/jobs/view/4056670384/":  277, // cyberhaven
+		"https://www.linkedin.com/jobs/view/3960607071/":  278, // fonoa
+		"https://www.linkedin.com/jobs/view/4026258568/":  279, // payrails
 		"https://www.linkedin.com/jobs/view/4075626268/":  34,  // cycloid
+		"https://www.linkedin.com/jobs/view/3966903286/":  280, // voodoo.io
 		"https://www.linkedin.com/jobs/view/4042171556/":  35,  // go-nitro
 		"https://www.linkedin.com/jobs/view/4068403021/":  36,  // appodeal
 		"https://www.linkedin.com/jobs/view/4068296805/":  37,  // appodeal
