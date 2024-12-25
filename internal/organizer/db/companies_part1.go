@@ -1443,26 +1443,15 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/4058445939/",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "",
+							Title:            "Senior Go Developer",
 							ShortDescription: "",
-							URL:              "",
-							Date:             mustDate(""),
+							URL:              "https://www.linkedin.com/jobs/view/4058445939/",
+							Date:             mustDate("2024-10-25"),
 						},
 					},
 				},
