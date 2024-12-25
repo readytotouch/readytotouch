@@ -53,6 +53,13 @@ type LinkedInProfileResponse struct {
 	Name  string `json:"name"`
 }
 
+type UnsafeCompanyResponse struct {
+	ID     int    `json:"id"`
+	Alias  string `json:"alias"`
+	Name   string `json:"name"`
+	Ignore bool   `json:"ignore"`
+}
+
 type GitHubProfile struct {
 	Login             string
 	GoRepositoryCount int // Deprecated
@@ -153,5 +160,5 @@ type CompanyProfile struct {
 }
 
 type UnsafeCompaniesResponse struct {
-	Companies []LinkedInProfileResponse `json:"companies"`
+	Companies []UnsafeCompanyResponse `json:"companies"`
 }
