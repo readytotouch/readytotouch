@@ -1367,8 +1367,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "grammarly",
-				GoRepositoryCount: 0,
+				Login:    "grammarly",
+				Verified: false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Grammarly-EI_IE636873.11,20.htm",
@@ -1383,26 +1383,15 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "Grammarly",
 			YouTubeChannelURL: "https://www.youtube.com/@grammarly",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://app.otta.com/jobs/jonw8YN_",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 2,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "",
-							ShortDescription: "",
-							URL:              "",
-							Date:             mustDate(""),
+							Title:            "System Engineer, Enterprise Infrastructure",
+							ShortDescription: "Writing code by using Golang, PowerShell, Bash.",
+							URL:              "https://www.linkedin.com/jobs/view/3983712751/",
+							Date:             mustDate("2024-12-04"),
 						},
 					},
 				},
