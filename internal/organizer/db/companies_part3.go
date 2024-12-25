@@ -121,6 +121,25 @@ func companiesPart3() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "Digital and application performance monitoring",
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
@@ -165,6 +184,25 @@ func companiesPart3() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "Cloud-based services for IoT communications",
 			Industries:       []domain.Industry{},
@@ -275,6 +313,25 @@ func companiesPart3() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "Fleet and compliance management solutions",
 			Industries:       []domain.Industry{},

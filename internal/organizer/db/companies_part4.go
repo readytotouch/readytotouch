@@ -1192,7 +1192,7 @@ func companiesPart4() []domain.CompanyProfile {
 							Title:            "LATAM Senior Backend Engineer (Python or GO)",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4085449585/",
-							Date:             mustDate("2024-12-26"),
+							Date:             mustDate("2024-11-27"),
 						},
 					},
 				},

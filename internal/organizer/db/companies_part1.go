@@ -23,8 +23,27 @@ func companiesPart1() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
 			Vacancies:         domain.Vacancies{},
-			ShortDescription:  "Service for simplifying job search",
-			Industries:        []domain.Industry{},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Service for simplifying job search",
+			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
 			},
@@ -65,6 +84,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "Health Tech company",
 			Industries: []domain.Industry{
@@ -210,6 +248,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "Organization dedicated to making the web better",
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
@@ -262,6 +319,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription:          "Chat",
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
@@ -311,6 +387,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "Design platform for product teams",
 			Industries:       []domain.Industry{},
@@ -365,6 +460,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "American multinational technology company",
 			Industries:       []domain.Industry{
@@ -424,6 +538,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
@@ -576,6 +709,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "Enterprise application and business AI company",
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
@@ -628,6 +780,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "American multinational technology company",
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
@@ -679,6 +850,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "Developer platform",
 			Industries: []domain.Industry{
@@ -733,6 +923,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "DevOps platform",
 			Industries: []domain.Industry{
@@ -876,6 +1085,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "Network of communities where people can dive into their interests, hobbies and passions",
 			Industries: []domain.Industry{
 				domain.IndustrySocialMedia,
@@ -927,6 +1155,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "Home for human stories and ideas",
 			Industries: []domain.Industry{
@@ -981,6 +1228,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "Visual discovery engine for finding ideas",
 			Industries: []domain.Industry{
 				domain.IndustrySocialMedia,
@@ -1034,6 +1300,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "American multimedia instant messaging app",
 			Industries: []domain.Industry{
 				domain.IndustrySocialMedia,
@@ -1085,6 +1370,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "Simplest photo sharing app",
 			Industries: []domain.Industry{
 				domain.IndustrySocialMedia,
@@ -1126,6 +1430,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "Time series database and easy-to-use high performance monitoring solutions",
 			Industries: []domain.Industry{
@@ -1179,6 +1502,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "Typing assistant",
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
@@ -1230,6 +1572,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "Person-based advertising platform",
 			Industries: []domain.Industry{
@@ -1284,6 +1645,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "Static hosting service",
 			Industries: []domain.Industry{
 				domain.IndustryDevOps,
@@ -1335,6 +1715,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "Static hosting service",
 			Industries: []domain.Industry{
@@ -1388,6 +1787,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "Edge cloud platform",
 			Industries: []domain.Industry{
 				domain.IndustryDevOps,
@@ -1440,6 +1858,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "File hosting service",
 			Industries: []domain.Industry{
 				domain.IndustryDevOps,
@@ -1489,6 +1926,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "Multi-platform application for developers",
 			Industries: []domain.Industry{
@@ -1540,6 +1996,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "Open source monitoring and observability platform",
 			Industries: []domain.Industry{
 				domain.IndustryDevOps,
@@ -1589,6 +2064,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "Software company that provides modular DevOps infrastructure provisioning and management products",
 			Industries: []domain.Industry{
@@ -1723,6 +2217,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "Distributed database with standard SQL for cloud applications",
 			Industries: []domain.Industry{
 				domain.IndustryDevOps,
@@ -1772,6 +2285,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "Relational open-source database with PostgreSQL",
 			Industries: []domain.Industry{
 				domain.IndustryDevOps,
@@ -1820,6 +2352,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "ScyllaDB is the distributed database",
 			Industries: []domain.Industry{
@@ -1873,6 +2424,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "Open source database software",
 			Industries: []domain.Industry{
@@ -2000,6 +2570,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries: []domain.Industry{
 				domain.IndustryDevOps,
@@ -2044,6 +2633,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "MongoDB compatible database",
 			Industries: []domain.Industry{
@@ -2177,6 +2785,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "Cloud service provider",
 			Industries: []domain.Industry{
 				domain.IndustryDevOps,
@@ -2202,9 +2829,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "canonical",
-				GoRepositoryCount: 83,
-				Verified:          true,
+				Login:    "canonical",
+				Verified: true,
 			},
 			BlindProfile:     domain.BlindProfile{},
 			LevelsFyiProfile: domain.LevelsFyiProfile{},
@@ -2222,14 +2848,9 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "canonical",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Rust: []string{
-					"https://www.linkedin.com/jobs/view/3210061536/",
-				},
-			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 123,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:            "Golang Engineer",
@@ -2239,7 +2860,17 @@ func companiesPart1() []domain.CompanyProfile {
 						},
 					},
 				},
-				domain.Rust:    {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 10,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "System Software Engineer",
+							ShortDescription: "We are building a new team to focus on the Rust programming language and its ecosystem on Ubuntu.",
+							URL:              "https://www.linkedin.com/jobs/view/3210061536/",
+							Date:             mustDate("2024-12-04"),
+						},
+					},
+				},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},
@@ -2305,6 +2936,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "Secure enterprise open source solutions",
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
@@ -2354,6 +3004,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "Cloud-native, platform-agnostic, scalable API Gateway",
 			Industries: []domain.Industry{
@@ -2407,6 +3076,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "Analytics database",
 			Industries: []domain.Industry{
 				domain.IndustryDevOps,
@@ -2458,6 +3146,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "Platform for big data analytics",
 			Industries: []domain.Industry{
 				domain.IndustryDevOps,
@@ -2506,6 +3213,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "Protobuf developer platform",
 			Industries: []domain.Industry{
@@ -2557,6 +3283,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "A financial infrastructure platform for businesses",
 			Industries: []domain.Industry{
@@ -2611,6 +3356,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "FinTech company",
 			Industries: []domain.Industry{
 				domain.IndustryFinTech,
@@ -2663,6 +3427,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "Bank holding",
 			Industries: []domain.Industry{
@@ -2717,6 +3500,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "Payment card services corporation",
 			Industries: []domain.Industry{
@@ -2775,6 +3577,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries: []domain.Industry{
 				domain.IndustryFinTech,
@@ -2826,6 +3647,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "Mobile banking",
 			Industries: []domain.Industry{
@@ -2881,6 +3721,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries: []domain.Industry{
 				domain.IndustryFinTech,
@@ -2930,6 +3789,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries: []domain.Industry{
 				domain.IndustryFinTech,
@@ -2978,6 +3856,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "",
 			Industries: []domain.Industry{
@@ -3030,6 +3927,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "URL shortening service and a link management platform",
 			Industries: []domain.Industry{
@@ -3088,6 +4004,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "Web application security and performance",
 			Industries: []domain.Industry{
 				domain.IndustryDevOps,
@@ -3142,6 +4077,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "Domain and web-hosting company",
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
@@ -3191,6 +4145,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "Domain and web-hosting company",
 			Industries:       []domain.Industry{},
@@ -3243,6 +4216,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "Service for users to store various passwords",
 			Industries: []domain.Industry{
 				domain.IndustryCyberSecurity,
@@ -3292,6 +4284,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "Identity and access management company",
 			Industries:       []domain.Industry{},
@@ -3345,6 +4356,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries: []domain.Industry{
 				domain.IndustryCyberSecurity,
@@ -3394,6 +4424,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
@@ -3516,7 +4565,17 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Haskell: nil,
 			},
 			Languages: domain.Languages{
-				domain.Go:      {},
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -3581,6 +4640,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "Transportation company",
 			Industries:       []domain.Industry{},
@@ -3703,6 +4781,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
@@ -3752,6 +4849,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "Audio streaming service",
 			Industries:       []domain.Industry{},
@@ -3804,6 +4920,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "Music streaming service",
 			Industries: []domain.Industry{
 				domain.IndustryEntertainment,
@@ -3854,6 +4989,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "Food delivery",
 			Industries:       []domain.Industry{},
@@ -3909,6 +5063,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "Food delivery",
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
@@ -3945,8 +5118,27 @@ func companiesPart1() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
 			Vacancies:         domain.Vacancies{},
-			ShortDescription:  "Car Rental service",
-			Industries:        []domain.Industry{},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Car Rental service",
+			Industries:       []domain.Industry{},
 		},
 
 		// Famous Motorola Solutions
@@ -3992,6 +5184,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "American multinational telecommunications company",
 			Industries:       []domain.Industry{},
@@ -4047,6 +5258,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "Electronics corporation",
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
@@ -4094,6 +5324,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "All-inclusive sales app",
 			Industries:       []domain.Industry{},
 		},
@@ -4139,6 +5388,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "SuperApp",
 			Industries:       []domain.Industry{},
@@ -4189,6 +5457,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "Video hosting and sharing platforms",
 			Industries:       []domain.Industry{},
 		},
@@ -4237,6 +5524,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "Scalable and fast APIs for building social networks and apps",
 			Industries:       []domain.Industry{},
 		},
@@ -4281,6 +5587,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
@@ -4329,6 +5654,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "Financial technology company focused on money transfers",
 			Industries: []domain.Industry{
 				domain.IndustryFinTech,
@@ -4374,6 +5718,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "Marketing services company",
 			Industries: []domain.Industry{
@@ -4424,6 +5787,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "Big Data platform",
 			Industries: []domain.Industry{
@@ -4476,6 +5858,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "Digital platform for maritime transporting",
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
@@ -4524,6 +5925,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
@@ -4574,6 +5994,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
@@ -4621,6 +6060,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
@@ -4741,6 +6199,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 		},
@@ -4785,6 +6262,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
@@ -4834,6 +6330,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 		},
@@ -4878,6 +6393,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
@@ -4930,6 +6464,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
@@ -4977,6 +6530,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
@@ -5026,6 +6598,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 		},
@@ -5059,8 +6650,27 @@ func companiesPart1() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
 			Vacancies:         domain.Vacancies{},
-			ShortDescription:  "",
-			Industries:        []domain.Industry{},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "",
+			Industries:       []domain.Industry{},
 		},
 
 		// Some | runZero
@@ -5103,6 +6713,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
@@ -5150,6 +6779,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "Open-source API gateway & API management platform",
 			Industries: []domain.Industry{
@@ -5201,6 +6849,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
@@ -5251,6 +6918,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 		},
@@ -5299,6 +6985,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
@@ -5353,6 +7058,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
@@ -5402,6 +7126,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription:          "",
 			Industries:                []domain.Industry{},
@@ -5453,6 +7196,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 		},
@@ -5499,6 +7261,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
@@ -5548,6 +7329,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 		},
@@ -5594,6 +7394,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
@@ -5648,6 +7467,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
@@ -5698,6 +7536,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
@@ -5817,6 +7674,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 		},
@@ -5867,6 +7743,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 		},
@@ -5913,6 +7808,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
@@ -5963,6 +7877,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 		},
@@ -6009,6 +7942,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
@@ -6061,6 +8013,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
@@ -6111,6 +8082,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 		},
@@ -6159,6 +8149,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 		},
@@ -6200,6 +8209,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 		},
@@ -6240,6 +8268,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
@@ -6285,6 +8332,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 		},
@@ -6327,6 +8393,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
@@ -6374,6 +8459,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
@@ -6503,6 +8607,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 		},
@@ -6611,6 +8734,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 		},
@@ -6657,6 +8799,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
@@ -6771,6 +8932,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 		},
@@ -6811,6 +8991,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
@@ -6854,6 +9053,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 		},
@@ -6896,6 +9114,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 		},
@@ -6937,6 +9174,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "Fintech company developing software for the trading and investment industry",
 			Industries: []domain.Industry{
@@ -6984,6 +9240,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 		},
@@ -7027,6 +9302,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
@@ -7073,6 +9367,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
@@ -7116,6 +9429,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
@@ -7161,6 +9493,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription:          "Data architecture for the industrial IoT world",
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
@@ -7203,6 +9554,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
@@ -7247,6 +9617,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
@@ -7296,6 +9685,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "Marketplace ecosystems",
 			Industries: []domain.Industry{
@@ -7412,6 +9820,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 		},
@@ -7453,6 +9880,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
@@ -7550,6 +9996,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
@@ -7597,6 +10062,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 		},
@@ -7639,6 +10123,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 		},
@@ -7680,6 +10183,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 		},
@@ -7720,6 +10242,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
@@ -7763,6 +10304,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 		},
@@ -7803,6 +10363,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
@@ -7846,6 +10425,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 		},
@@ -7886,6 +10484,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
@@ -7983,6 +10600,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 		},
@@ -8024,6 +10660,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 		},
@@ -8064,6 +10719,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
@@ -8107,6 +10781,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "fiskaly builds innovative tools to make receipts simple",
 			Industries: []domain.Industry{
@@ -8155,6 +10848,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 		},
@@ -8195,6 +10907,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
@@ -8292,6 +11023,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
@@ -8338,6 +11088,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 		},
@@ -8378,6 +11147,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
@@ -8420,6 +11208,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 		},
@@ -8460,6 +11267,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
@@ -8502,6 +11328,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 		},
@@ -8542,6 +11387,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
@@ -8646,6 +11510,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 		},
@@ -8686,6 +11569,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
@@ -8728,6 +11630,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 		},
@@ -8769,6 +11690,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 		},
@@ -8809,6 +11749,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
@@ -8854,6 +11813,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 		},
@@ -8894,6 +11872,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
@@ -8936,6 +11933,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 		},
@@ -8977,44 +11993,81 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 		},
 
-		// TODO solve alias later "holland-&-barrett"
 		// Some | Holland & Barrett
-		//{
-		//	ID: 0,
-		//	Name: "Holland & Barrett",
-		//	URL:  "https://www.hollandandbarrett.com/",
-		//	LinkedInProfile: domain.LinkedInProfile{
-		//		ID:    815488,
-		//		Alias: "holland-&-barrett",
-		//		Name:  "Holland & Barrett",
-		//	},
-		//	GitHubProfile: domain.GitHubProfile{
-		//		Login:             "", // NOP
-		//		GoRepositoryCount: 0,  // NOP
-		//	},
-		//	GlassdoorProfile: domain.GlassdoorProfile{
-		//		OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Holland-and-Barrett-EI_IE36174.11,30.htm",
-		//		ReviewsURL:  "https://www.glassdoor.com/Reviews/Holland-and-Barrett-Reviews-E36174.htm",
-		//	},
-		//	OttaProfileSlug:   "",
-		//	YouTubeChannelURL: "https://www.youtube.com/@hollandandbarrett",
-		//	GoMainLanguage:    false,
-		//	Vacancies: domain.Vacancies{
-		//		domain.Go: []string{
-		//			"https://www.linkedin.com/jobs/view/3911059005/",
-		//		},
-		//		domain.Rust:    nil,
-		//		domain.Zig:     nil,
-		//		domain.Scala:   nil,
-		//		domain.Elixir:  nil,
-		//		domain.Clojure: nil,
-		//		domain.Haskell: nil,
-		//	},
-		//},
+		{
+			ID:      0,
+			Name:    "Holland & Barrett",
+			Website: "https://www.hollandandbarrett.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:    815488,
+				Alias: "815488",
+				Name:  "Holland & Barrett",
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:             "", // NOP
+				GoRepositoryCount: 0,  // NOP
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Holland-and-Barrett-EI_IE36174.11,30.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Holland-and-Barrett-Reviews-E36174.htm",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "https://www.youtube.com/@hollandandbarrett",
+			GoMainLanguage:    false,
+			Vacancies: domain.Vacancies{
+				domain.Go: []string{
+					"https://www.linkedin.com/jobs/view/3911059005/",
+				},
+				domain.Rust:    nil,
+				domain.Zig:     nil,
+				domain.Scala:   nil,
+				domain.Elixir:  nil,
+				domain.Clojure: nil,
+				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+		},
 
 		// Some | Group Avows
 		{
@@ -9052,6 +12105,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
@@ -9170,6 +12242,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 		},
@@ -9211,6 +12302,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 		},
@@ -9251,6 +12361,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
@@ -9296,6 +12425,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 		},
@@ -9336,6 +12484,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
@@ -9381,6 +12548,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
@@ -9444,6 +12630,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 		},
@@ -9484,6 +12689,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
@@ -9532,6 +12756,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
@@ -9579,6 +12822,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
@@ -9625,6 +12887,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
@@ -9669,6 +12950,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 		},
@@ -9709,6 +13009,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
@@ -9753,6 +13072,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
@@ -9799,6 +13137,25 @@ func companiesPart1() []domain.CompanyProfile {
 					"https://app.welcometothejungle.com/jobs/UzSGGV5V",
 					"https://app.otta.com/jobs/8o2_A2QN",
 				},
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "FinTech company",
 			Industries: []domain.Industry{
@@ -9852,6 +13209,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "VPN",
 			Industries: []domain.Industry{
 				domain.IndustryCyberSecurity,
@@ -9892,6 +13268,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription:          "",
 			Industries:                []domain.Industry{},
@@ -9936,6 +13331,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries: []domain.Industry{
 				domain.IndustryFinTech,
@@ -9979,6 +13393,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription:          "",
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
@@ -10019,6 +13452,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "",
 			Industries: []domain.Industry{
@@ -10063,6 +13515,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "",
 			Industries: []domain.Industry{
@@ -10109,6 +13580,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries: []domain.Industry{
 				domain.IndustryCyberSecurity,
@@ -10151,6 +13641,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "",
 			Industries: []domain.Industry{
@@ -10326,6 +13835,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries: []domain.Industry{
 				domain.IndustryDevOps,
@@ -10371,6 +13899,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription:          "",
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
@@ -10413,6 +13960,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription:          "",
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
@@ -10453,6 +14019,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription:          "",
 			Industries:                []domain.Industry{},
@@ -10495,6 +14080,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription:          "Metal 3D printing factories",
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
@@ -10534,6 +14138,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "Autonomous flight control for the aircraft",
 			Industries:       []domain.Industry{},
@@ -10585,6 +14208,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "Business-data platform",
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
@@ -10629,6 +14271,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription:          "Drone software platform",
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
@@ -10668,6 +14329,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "Instrumentation for Quantum Computing and Periodic Signal Measurement",
 			Industries:       []domain.Industry{},
@@ -10720,6 +14400,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries: []domain.Industry{
 				domain.IndustryCyberSecurity,
@@ -10767,6 +14466,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries: []domain.Industry{
 				domain.IndustryCyberSecurity,
@@ -10810,6 +14528,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "Social investment app",
 			Industries: []domain.Industry{
@@ -11050,6 +14787,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription:          "Social Networking Platforms",
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
@@ -11090,6 +14846,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "PlayStation",
 			Industries: []domain.Industry{
@@ -11138,6 +14913,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "Datadog provides cloud-scale monitoring and security for metrics, traces and logs in one unified platform",
 			Industries: []domain.Industry{
 				domain.IndustryDevOps,
@@ -11184,6 +14978,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
@@ -11228,6 +15041,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "OSS self-hostable developer platform for APIs, background jobs, workflows and UIs",
 			Industries: []domain.Industry{
 				domain.IndustryDevOps,
@@ -11271,6 +15103,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription:          "AI-driven solutions for the airline industry",
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
@@ -11312,6 +15163,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "Digital-native healthcare provider",
 			Industries: []domain.Industry{
@@ -11357,6 +15227,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries: []domain.Industry{
 				domain.IndustryCyberSecurity,
@@ -11400,6 +15289,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription:          "",
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
@@ -11441,6 +15349,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "Electric vehicle (EV) charging",
 			Industries:       []domain.Industry{},
@@ -11606,6 +15533,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "Platform to search, compare, and purchase newly constructed homes",
 			Industries: []domain.Industry{
 				domain.IndustryPropTech,
@@ -11651,6 +15597,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription:          "Analytics platform for measuring and improving workplaces",
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
@@ -11691,6 +15656,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription:          "Co-browsing middleware provider",
 			Industries:                []domain.Industry{},
@@ -11735,6 +15719,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "Bank",
 			Industries: []domain.Industry{
 				domain.IndustryFinTech,
@@ -11776,6 +15779,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "Keeps your email protected",
 			Industries: []domain.Industry{
@@ -11822,6 +15844,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription:          "Sustainability platform for media & advertising",
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
@@ -11861,6 +15902,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "Deliver GraphQL at any scale",
 			Industries: []domain.Industry{
@@ -11906,6 +15966,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "",
 			Industries: []domain.Industry{
 				domain.IndustryDevOps,
@@ -11949,6 +16028,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "API platform, built for data delivery",
 			Industries: []domain.Industry{
@@ -12107,6 +16205,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "Mobile-first bank",
 			Industries: []domain.Industry{
 				domain.IndustryFinTech,
@@ -12156,6 +16273,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription:          "Blocks for data and time-series AI applications",
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
@@ -12196,6 +16332,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "End-to-end AI Search solution",
 			Industries:       []domain.Industry{},
@@ -12238,6 +16393,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "SaaS Observability means fewer incidents",
 			Industries: []domain.Industry{
@@ -12283,6 +16457,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription:          "Data platform for machine learning",
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
@@ -12322,6 +16515,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "Financial credit provider",
 			Industries: []domain.Industry{
@@ -12365,6 +16577,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "Cross platform streaming guide",
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
@@ -12407,6 +16638,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription:          "Universal code search and code intelligence for developers",
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
@@ -12446,6 +16696,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "Infrastructure and APIs for FinTech",
 			Industries: []domain.Industry{
@@ -12492,6 +16761,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription:          "Cyber insurance and security for businesses",
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
@@ -12534,6 +16822,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription:          "",
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
@@ -12575,6 +16882,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription:          "Enterprise-built conversational AI platform",
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
@@ -12615,6 +16941,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription:          "Carbon accounting platform",
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
@@ -12654,6 +16999,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "The Investment API",
 			Industries: []domain.Industry{
@@ -12700,6 +17064,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: nil,
 			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
 			ShortDescription: "Specialized cloud provider",
 			Industries: []domain.Industry{
 				domain.IndustryDevOps,
@@ -12741,6 +17124,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "Graph-based data analysis",
 			Industries: []domain.Industry{
@@ -12858,6 +17260,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "",
 			Industries: []domain.Industry{
@@ -12980,6 +17401,25 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Elixir:  nil,
 				domain.Clojure: nil,
 				domain.Haskell: nil,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "",
+							ShortDescription: "",
+							URL:              "",
+							Date:             mustDate(""),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "Platform makes TV and video advertising work",
 			Industries: []domain.Industry{
