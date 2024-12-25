@@ -1488,8 +1488,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "netlify",
-				GoRepositoryCount: 35,
+				Login:    "netlify",
+				Verified: true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Netlify-EI_IE1426251.11,18.htm",
@@ -1504,26 +1504,15 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "Netlify",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://app.otta.com/jobs/qdIzdfOu",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 35,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "",
-							ShortDescription: "",
-							URL:              "",
-							Date:             mustDate(""),
+							Title:            "Staff Backend Engineer",
+							ShortDescription: "Experience developing production-level Golang",
+							URL:              "https://app.otta.com/jobs/qdIzdfOu",
+							Date:             mustDate("2024-10-18"), // The date is approximate because it is missing on the job listing page
 						},
 					},
 				},
@@ -1559,8 +1548,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "vercel",
-				GoRepositoryCount: 6,
+				Login:    "vercel",
+				Verified: true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Vercel-EI_IE6510369.11,17.htm",
@@ -1575,26 +1564,15 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "Vercel",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/4048326475/",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 6,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "",
-							ShortDescription: "",
-							URL:              "",
-							Date:             mustDate(""),
+							Title:            "Software Engineer, Compute",
+							ShortDescription: "You will be writing Golang on a daily basis, while terraform will be your go-to tool when it comes to provisioning the needed infra.",
+							URL:              "https://www.linkedin.com/jobs/view/4048326475/",
+							Date:             mustDate("2024-11-25"),
 						},
 					},
 				},
