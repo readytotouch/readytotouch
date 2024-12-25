@@ -886,26 +886,15 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "GitLab-1",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/4018780627/", // Significant experience with Go
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "",
-							ShortDescription: "",
-							URL:              "",
-							Date:             mustDate(""),
+							Title:            "Intermediate Backend Engineer (Go)",
+							ShortDescription: "Significant experience with Go",
+							URL:              "https://www.linkedin.com/jobs/view/4018780627/",
+							Date:             mustDate("2024-11-25"),
 						},
 					},
 				},
