@@ -1288,42 +1288,13 @@ func companiesPart1() []domain.CompanyProfile {
 				ReviewsRate: "4.4",
 				Verified:    false,
 			},
-			OttaProfileSlug:   "BeReal",
-			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go:      []string{},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
-			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:            "",
-							ShortDescription: "",
-							URL:              "",
-							Date:             mustDate(""),
-						},
-					},
-				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
+			OttaProfileSlug:  "BeReal",
 			ShortDescription: "Simplest photo sharing app",
 			Industries: []domain.Industry{
 				domain.IndustrySocialMedia,
 			},
 			HasEmployeesFromCountries: []domain.Country{},
+			Ignore:                    true, // Voodoo acquires BeReal to take authentic social network to new heights https://voodoo.io/news/voodoo-acquires-bereal
 		},
 
 		// Favorites
