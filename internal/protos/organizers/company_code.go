@@ -533,6 +533,24 @@ var (
 		"salesloft":                           525, // Salesloft
 		"cj-express-group":                    526, // CJ MORE
 		"heb":                                 527, // H-E-B
+		"atomicskiing":                        532, // Atomic
+		"outpost24":                           533, // Outpost24
+		"lumentechnologies":                   534, // Lumen Technologies
+		"sas":                                 535, // SAS
+		"kochinc":                             536, // Koch
+		"groq":                                537, // Groq
+		"pay-retailers":                       538, // PayRetailers
+		"zendesk":                             539, // Zendesk
+		"mobica":                              540, // Mobica
+		"edbpostgres":                         541, // EDB
+		"altair-engineering":                  542, // Altair
+		"reward-gateway":                      543, // Reward Gateway
+		"nn-group":                            544, // NN Group
+		"american-airlines":                   545, // American Airlines
+		"cake-by-vpbank":                      546, // Cake by VPBank — Digital Bank
+		"cheesecake-labs":                     547, // Cheesecake Labs
+		"mayaph":                              548, // Maya
+		"ashley-furniture-industries":         549, // Ashley Furniture Industries
 
 	}
 )

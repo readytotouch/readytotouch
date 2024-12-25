@@ -458,7 +458,7 @@ func companiesPart5() []domain.CompanyProfile {
 							Title:            "Software Engineer II, Golang",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4105423482/",
-							Date:             mustDate("24-12-20"),
+							Date:             mustDate("2024-12-20"),
 						},
 					},
 				},
