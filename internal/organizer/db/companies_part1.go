@@ -1214,8 +1214,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "Snapchat",
-				GoRepositoryCount: 1,
+				Login:    "Snapchat",
+				Verified: true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Snap-EI_IE671946.11,15.htm",
@@ -1230,26 +1230,15 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "Snap",
 			YouTubeChannelURL: "https://www.youtube.com/@snapinc",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://app.otta.com/jobs/hr1D1_FZ",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 1,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "",
-							ShortDescription: "",
-							URL:              "",
-							Date:             mustDate(""),
+							Title:            "Software Engineer",
+							ShortDescription: "Highly proficient in Java, Golang, NodeJs, and/or Python",
+							URL:              "https://www.linkedin.com/jobs/view/4103915582/",
+							Date:             mustDate("2024-12-19"),
 						},
 					},
 				},
