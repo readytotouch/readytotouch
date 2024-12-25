@@ -701,7 +701,7 @@ func companiesPart1() []domain.CompanyProfile {
 					Vacancies: []domain.Vacancy{
 						{
 							Title:            "(Senior) Software Engineer for Cloud Development",
-							ShortDescription: "Design, develop, and maintain high-quality software applications using Golang and cloud technologies.",
+							ShortDescription: "Design, develop, and maintain high-quality software applications using Golang and cloud technologies",
 							URL:              "https://www.linkedin.com/jobs/view/4072909509/",
 							Date:             mustDate("2024-12-04"),
 						},
@@ -1329,7 +1329,7 @@ func companiesPart1() []domain.CompanyProfile {
 					Vacancies: []domain.Vacancy{
 						{
 							Title:            "Senior Site Reliability Engineer",
-							ShortDescription: "Ability to understand, write and review code in Go.",
+							ShortDescription: "Ability to understand, write and review code in Go",
 							URL:              "https://www.linkedin.com/jobs/view/4096907990/",
 							Date:             mustDate("2024-12-11"),
 						},
@@ -1389,7 +1389,7 @@ func companiesPart1() []domain.CompanyProfile {
 					Vacancies: []domain.Vacancy{
 						{
 							Title:            "System Engineer, Enterprise Infrastructure",
-							ShortDescription: "Writing code by using Golang, PowerShell, Bash.",
+							ShortDescription: "Writing code by using Golang, PowerShell, Bash",
 							URL:              "https://www.linkedin.com/jobs/view/3983712751/",
 							Date:             mustDate("2024-12-04"),
 						},
@@ -1570,7 +1570,7 @@ func companiesPart1() []domain.CompanyProfile {
 					Vacancies: []domain.Vacancy{
 						{
 							Title:            "Software Engineer, Compute",
-							ShortDescription: "You will be writing Golang on a daily basis, while terraform will be your go-to tool when it comes to provisioning the needed infra.",
+							ShortDescription: "You will be writing Golang on a daily basis, while terraform will be your go-to tool when it comes to provisioning the needed infra",
 							URL:              "https://www.linkedin.com/jobs/view/4048326475/",
 							Date:             mustDate("2024-11-25"),
 						},
@@ -1606,8 +1606,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "fastly",
-				GoRepositoryCount: 35,
+				Login:    "fastly",
+				Verified: false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Fastly-EI_IE814479.11,17.htm",
@@ -1622,32 +1622,29 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "Fastly",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://app.welcometothejungle.com/jobs/mZtAqCtB",
-				},
-				domain.Rust: []string{
-					"https://app.welcometothejungle.com/jobs/mZtAqCtB",
-				},
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 35,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "",
-							ShortDescription: "",
-							URL:              "",
-							Date:             mustDate(""),
+							Title:            "Senior Engineer — API Services",
+							ShortDescription: "Contribute, support and deploy applications and scripts written in Go to cloud environments",
+							URL:              "https://www.linkedin.com/jobs/view/4077452954/",
+							Date:             mustDate("2024-11-25"),
 						},
 					},
 				},
-				domain.Rust:    {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 29,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Software Engineer — Edge Applications",
+							ShortDescription: "Develop, test, and maintain new features in Rust for a variety of products Fastly offers",
+							URL:              "https://www.linkedin.com/jobs/view/4097075408/",
+							Date:             mustDate("2024-12-21"),
+						},
+					},
+				},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},
@@ -2713,7 +2710,7 @@ func companiesPart1() []domain.CompanyProfile {
 					Vacancies: []domain.Vacancy{
 						{
 							Title:            "System Software Engineer",
-							ShortDescription: "We are building a new team to focus on the Rust programming language and its ecosystem on Ubuntu.",
+							ShortDescription: "We are building a new team to focus on the Rust programming language and its ecosystem on Ubuntu",
 							URL:              "https://www.linkedin.com/jobs/view/3210061536/",
 							Date:             mustDate("2024-12-04"),
 						},

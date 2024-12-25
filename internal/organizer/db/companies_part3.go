@@ -2715,7 +2715,7 @@ func companiesPart3() []domain.CompanyProfile {
 					Vacancies: []domain.Vacancy{
 						{
 							Title:            "Senior Software Engineer, Elixir",
-							ShortDescription: "We make extensive use of the OTP and wider Elixir ecosystem, with applications leveraging Ecto, Broadway, LiveView, and Nx.",
+							ShortDescription: "We make extensive use of the OTP and wider Elixir ecosystem, with applications leveraging Ecto, Broadway, LiveView, and Nx",
 							URL:              "https://www.linkedin.com/jobs/view/4080206651/",
 							Date:             mustDate("2024-12-12"),
 						},
@@ -2763,7 +2763,7 @@ func companiesPart3() []domain.CompanyProfile {
 					Vacancies: []domain.Vacancy{
 						{
 							Title:            "Senior Software Engineer (Elixir)",
-							ShortDescription: "Proficiency in the Elixir programming language.",
+							ShortDescription: "Proficiency in the Elixir programming language",
 							URL:              "https://www.linkedin.com/jobs/view/4099130926/",
 							Date:             mustDate("2024-12-12"),
 						},
@@ -2772,7 +2772,7 @@ func companiesPart3() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "NICE provides cloud and on-premises enterprise software solutions that help organizations make smarter decisions through advanced analytics of structured and unstructured data.",
+			ShortDescription: "NICE provides cloud and on-premises enterprise software solutions that help organizations make smarter decisions through advanced analytics of structured and unstructured data",
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
 				domain.Czechia,

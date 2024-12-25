@@ -2266,7 +2266,7 @@ func companiesPart2() []domain.CompanyProfile {
 					Vacancies: []domain.Vacancy{
 						{
 							Title:            "Senior Software Engineer",
-							ShortDescription: "We develop most of our server-side code in Rust and it's a plus if you already love Rust, or want a chance to become a Rust expert.",
+							ShortDescription: "We develop most of our server-side code in Rust and it's a plus if you already love Rust, or want a chance to become a Rust expert",
 							URL:              "https://www.linkedin.com/jobs/view/4068292201/",
 							Date:             mustDate("2024-11-25"),
 						},
@@ -5724,7 +5724,7 @@ func companiesPart2() []domain.CompanyProfile {
 					Vacancies: []domain.Vacancy{
 						{
 							Title:            "Senior Software Engineer",
-							ShortDescription: "We’re looking for a Senior Elixir Software Engineer to contribute to our core web platform and supporting applications built in Elixir, Phoenix, LiveView, TypeScript, and Tailwind, AlpineJS backed with a Postgres database.",
+							ShortDescription: "We’re looking for a Senior Elixir Software Engineer to contribute to our core web platform and supporting applications built in Elixir, Phoenix, LiveView, TypeScript, and Tailwind, AlpineJS backed with a Postgres database",
 							URL:              "https://www.linkedin.com/jobs/view/4092211710/",
 							Date:             mustDate("2024-12-06"),
 						},
