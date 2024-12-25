@@ -3436,6 +3436,12 @@ func companiesPart1() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
+							Title:            "Software Developer (Golang and Python)",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/3907970778/",
+							Date:             mustDate("2024-08-23"),
+						},
+						{
 							Title:            "Golang Developer",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4104785473/",
