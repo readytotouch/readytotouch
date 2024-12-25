@@ -1314,8 +1314,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "VictoriaMetrics",
-				GoRepositoryCount: 10,
+				Login:    "VictoriaMetrics",
+				Verified: true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				// NOP
@@ -1323,24 +1323,15 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    true,
-			Vacancies: domain.Vacancies{
-				domain.Go:      []string{},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 12,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "",
-							ShortDescription: "",
-							URL:              "",
-							Date:             mustDate(""),
+							Title:            "Senior Site Reliability Engineer",
+							ShortDescription: "Ability to understand, write and review code in Go.",
+							URL:              "https://www.linkedin.com/jobs/view/4096907990/",
+							Date:             mustDate("2024-12-11"),
 						},
 					},
 				},
