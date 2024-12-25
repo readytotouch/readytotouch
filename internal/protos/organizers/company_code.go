@@ -183,6 +183,7 @@ var (
 		"qumuluscloudplatform":                158, // Qumulus Cloud Platform
 		"saxonai":                             159, // Saxon AI
 		"dyninno-group":                       160, // Dyninno Group
+		"815488":                              550, // Holland &amp; Barrett
 		"group-avows":                         161, // Group Avows
 		"cognizant":                           162, // Cognizant
 		"nuro-inc.":                           163, // Nuro
