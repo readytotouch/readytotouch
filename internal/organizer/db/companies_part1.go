@@ -4229,7 +4229,6 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Go: []string{
 					"https://www.linkedin.com/jobs/view/3989947743/",
 					"https://www.linkedin.com/jobs/view/3873637399/",
-					"https://www.linkedin.com/jobs/view/4105750575/",
 				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
