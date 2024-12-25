@@ -642,16 +642,30 @@ func companiesPart2() []domain.CompanyProfile {
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/3921611198/",
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Software Engineer / Golang Developer",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4050001754/",
+							Date:             mustDate("2024-10-25"),
+						},
+						{
+							Title:            "(Senior) Software Engineer – React & Golang",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/3921611198/",
+							Date:             mustDate("2024-12-21"),
+						},
+					},
 				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "Make every screen an opportunity",
 			Industries:       []domain.Industry{},
@@ -761,8 +775,8 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "bedrockstreaming",
-				GoRepositoryCount: 7,
+				Login:    "bedrockstreaming",
+				Verified: true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Bedrock-Streaming-EI_IE5955934.11,28.htm",
@@ -771,17 +785,30 @@ func companiesPart2() []domain.CompanyProfile {
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/4049210489/",
-					"https://www.linkedin.com/jobs/view/4079483983/",
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 7,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Software Developer — Backend GO / PHP",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4049210489/",
+							Date:             mustDate("2024-10-25"),
+						},
+						{
+							Title:            "Software Developer —  Backend GO",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4079483983/",
+							Date:             mustDate("2024-12-11"),
+						},
+					},
 				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription:          "Bedrock creates and operates full-scope streaming platforms",
 			Industries:                []domain.Industry{},
@@ -1139,8 +1166,8 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "napier-ai",
-				GoRepositoryCount: 0,
+				Login:    "napier-ai",
+				Verified: true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Napier-Technologies-EI_IE4370088.11,30.htm",
@@ -1149,16 +1176,30 @@ func companiesPart2() []domain.CompanyProfile {
 			OttaProfileSlug:   "Napier",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/4106841758/",
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Back-end Engineer (Go)",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4044948110/",
+							Date:             mustDate("2024-12-18"),
+						},
+						{
+							Title:            "Back-end Engineer (Go)",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4106841758/",
+							Date:             mustDate("2024-12-24"),
+						},
+					},
 				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
 			},
 			ShortDescription: "AI-driven AML solutions transform financial crime compliance from legal obligation to competitive edge",
 			Industries:       []domain.Industry{},
@@ -3984,6 +4025,12 @@ func companiesPart2() []domain.CompanyProfile {
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Software Engineer III — Golang, AWS, Terraform",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4050118492/",
+							Date:             mustDate("2024-11-03"),
+						},
 						{
 							Title:            "Software Engineer II —  Core Engineering —  GO / Python",
 							ShortDescription: "",
@@ -7373,6 +7420,12 @@ func companiesPart2() []domain.CompanyProfile {
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Golang Developer",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4076696523/",
+							Date:             mustDate("2024-11-14"),
+						},
 						{
 							Title:            "Golang Developer",
 							ShortDescription: "",
