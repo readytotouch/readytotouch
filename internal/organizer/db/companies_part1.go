@@ -749,7 +749,6 @@ func companiesPart1() []domain.CompanyProfile {
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:             "oracle",
-				GoRepositoryCount: 31,
 				Verified:          false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
@@ -765,32 +764,21 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go:   nil,
-				domain.Rust: nil,
-				domain.Zig:  nil,
-				domain.Scala: []string{
-					"https://www.linkedin.com/jobs/view/4034901984/",
-				},
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 0,
+				domain.Go:   {},
+				domain.Rust: {},
+				domain.Zig:  {},
+				domain.Scala: {
+					GitHubRepositoriesCount: 14,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "",
+							Title:            "Principal Software Engineer — Java/Scala",
 							ShortDescription: "",
-							URL:              "",
-							Date:             mustDate(""),
+							URL:              "https://www.linkedin.com/jobs/view/4034901984/",
+							Date:             mustDate("2024-10-25"),
 						},
 					},
 				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
 				domain.Elixir:  {},
 				domain.Clojure: {},
 				domain.Haskell: {},
