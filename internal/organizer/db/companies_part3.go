@@ -839,6 +839,12 @@ func companiesPart3() []domain.CompanyProfile {
 							URL:              "https://www.linkedin.com/jobs/view/4072906267/",
 							Date:             mustDate("2024-11-12"),
 						},
+						{
+							Title:            "Staff Backend Engineer (GO)",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4103327636/",
+							Date:             mustDate("2024-12-18"),
+						},
 					},
 				},
 				domain.Rust:    {},

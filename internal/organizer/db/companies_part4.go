@@ -1119,7 +1119,7 @@ func companiesPart4() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Senior Software Engineer (Go)",
+							Title:            "Senior Software Engineer (GO)",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/3873641135/",
 							Date:             mustDate("2024-12-03"),
