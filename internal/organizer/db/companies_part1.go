@@ -1090,8 +1090,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "Medium",
-				GoRepositoryCount: 20,
+				Login:    "Medium",
+				Verified: true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Medium-EI_IE784883.11,17.htm",
@@ -1106,26 +1106,15 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "Medium",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/3910516815/",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 21,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "",
-							ShortDescription: "",
-							URL:              "",
-							Date:             mustDate(""),
+							Title:            "Senior Core Platform Engineer",
+							ShortDescription: "3+ years experience in software engineering, specifically in Golang or similar backend language and interacting with API’s",
+							URL:              "https://www.linkedin.com/jobs/view/3910516815/",
+							Date:             mustDate("2024-04-25"),
 						},
 					},
 				},
