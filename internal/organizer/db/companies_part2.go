@@ -3318,9 +3318,8 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "VoodooTeam",
-				GoRepositoryCount: 3,
-				Verified:          false,
+				Login:    "VoodooTeam",
+				Verified: false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Voodoo-EI_IE1889746.11,17.htm",
@@ -3330,26 +3329,15 @@ func companiesPart2() []domain.CompanyProfile {
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/3966903286/", // Our Stack Backend: Go, Node.js
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 3,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "",
+							Title:            "Senior Backend Engineer — Golang",
 							ShortDescription: "",
-							URL:              "",
-							Date:             mustDate(""),
+							URL:              "https://www.linkedin.com/jobs/view/3966903286/",
+							Date:             mustDate("2024-12-04"),
 						},
 					},
 				},
