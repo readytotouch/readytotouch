@@ -748,8 +748,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "oracle",
-				Verified:          false,
+				Login:    "oracle",
+				Verified: false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Oracle-EI_IE1737.11,17.htm",
@@ -824,26 +824,15 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "Github",
 			YouTubeChannelURL: "https://www.youtube.com/@GitHub",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/3914880703/",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "",
-							ShortDescription: "",
-							URL:              "",
-							Date:             mustDate(""),
+							Title:            "Software Engineer, Copilot",
+							ShortDescription: "Write, review, and maintain code primarily in Go",
+							URL:              "https://www.linkedin.com/jobs/view/3914880703/",
+							Date:             mustDate("2024-05-24"),
 						},
 					},
 				},
