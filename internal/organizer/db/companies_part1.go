@@ -679,9 +679,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "SAP",
-				GoRepositoryCount: 53,
-				Verified:          true,
+				Login:    "SAP",
+				Verified: true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/sap",
@@ -696,32 +695,29 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/3943874981/", // strong understanding of Golang
-				},
-				domain.Rust: []string{
-					"https://www.linkedin.com/jobs/view/4059368134/",
-				},
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 54,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "",
-							ShortDescription: "",
-							URL:              "",
-							Date:             mustDate(""),
+							Title:            "(Senior) Software Engineer for Cloud Development",
+							ShortDescription: "Design, develop, and maintain high-quality software applications using Golang and cloud technologies.",
+							URL:              "https://www.linkedin.com/jobs/view/4072909509/",
+							Date:             mustDate("2024-12-04"),
 						},
 					},
 				},
-				domain.Rust:    {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 1,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "(Junior) Cloud Engineer — Python/Rust",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4059368134/",
+							Date:             mustDate("2024-10-25"),
+						},
+					},
+				},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},
