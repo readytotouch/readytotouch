@@ -1141,6 +1141,8 @@ func companiesPart1() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "Pinterest",
 			Website: "https://www.pinterest.com/",
+			Careers: "https://www.pinterestcareers.com/",
+			About:   "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1124131,
 				Alias:             "pinterest",
@@ -1151,8 +1153,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "pinterest",
-				GoRepositoryCount: 3,
+				Login:    "pinterest",
+				Verified: true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Pinterest-EI_IE503467.11,20.htm",
@@ -1167,26 +1169,15 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "Pinterest",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://app.otta.com/jobs/JwXeQ-gm",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 3,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "",
-							ShortDescription: "",
-							URL:              "",
-							Date:             mustDate(""),
+							Title:            "Senior Backend Software Engineer",
+							ShortDescription: "Experience in Python, Java, C++, or Go or another language and a willingness to learn",
+							URL:              "https://www.linkedin.com/jobs/view/3947425956/",
+							Date:             mustDate("2024-09-25"),
 						},
 					},
 				},
