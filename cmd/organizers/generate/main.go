@@ -96,8 +96,15 @@ func generateVacancies(companies []domain.CompanyProfile) {
 					continue
 				}
 
+				vacancyID := organizers.VacancyUrlMap[vacancy.URL]
+
+				// If we added the ignored company before, then keep it
+				if vacancyID == 0 && company.Ignore {
+					continue
+				}
+
 				pair := &dev.VacancyCodePair{
-					ID:           organizers.VacancyUrlMap[vacancy.URL],
+					ID:           vacancyID,
 					URL:          vacancy.URL,
 					CompanyAlias: company.LinkedInProfile.Alias,
 				}

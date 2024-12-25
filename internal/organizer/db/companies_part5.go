@@ -19,7 +19,7 @@ func companiesPart5() []domain.CompanyProfile {
 				Alias:             "atomicskiing",
 				Name:              "Atomic",
 				Followers:         "18K",
-				Employees:         "500+",
+				Employees:         "500+", // 501-1K
 				AssociatedMembers: "346",
 				Verified:          true,
 			},
@@ -32,8 +32,8 @@ func companiesPart5() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Backend Golang Software Engineer ️ | US Fintech SaaS Platform | Remote",
-							ShortDescription: "",
+							Title:            "Backend Golang Software Engineer",
+							ShortDescription: "Build and scale backend systems for a FinTech SaaS platform, focusing on low-latency, high-reliability, and scalability.",
 							URL:              "https://www.linkedin.com/jobs/view/4106745259/",
 							Date:             mustDate("2024-12-21"),
 						},
@@ -61,7 +61,7 @@ func companiesPart5() []domain.CompanyProfile {
 				Alias:             "outpost24",
 				Name:              "Outpost24",
 				Followers:         "8K",
-				Employees:         "200+",
+				Employees:         "200+", // 201-500
 				AssociatedMembers: "245",
 				Verified:          true,
 			},
@@ -116,7 +116,7 @@ func companiesPart5() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Principal Golang Developer - Automation Systems",
+							Title:            "Principal Golang Developer",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4106292200/",
 							Date:             mustDate("2024-12-21"),
@@ -215,6 +215,7 @@ func companiesPart5() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Software development company",
+			Ignore:           true, // Miquido is an outsourcing company, according to the description
 		},
 
 		{
@@ -257,6 +258,7 @@ func companiesPart5() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Mobile phone retail system",
+			Ignore:           true, // For now, we are adding companies that have an English vacancy description and an English company description, so CellphoneS has been removed.
 		},
 
 		{
@@ -341,6 +343,7 @@ func companiesPart5() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Charting platform and social network",
+			Ignore:           true, // Currently ignored
 		},
 
 		{
@@ -410,7 +413,7 @@ func companiesPart5() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Sr. Software Engineer, Golang (Sao Paulo)",
+							Title:            "Senior Software Engineer, Golang",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4105750575/",
 							Date:             mustDate("2024-12-20"),
