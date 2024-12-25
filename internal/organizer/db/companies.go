@@ -9,7 +9,13 @@ func Companies() []domain.CompanyProfile {
 		part3  = companiesPart3()
 		part4  = companiesPart4()
 		part5  = companiesPart5()
-		result = make([]domain.CompanyProfile, 0, len(part1)+len(part2)+len(part3)+len(part4)+len(part5))
+		part6  = companiesPart6()
+		result = make([]domain.CompanyProfile, 0, len(part1)+
+			len(part2)+
+			len(part3)+
+			len(part4)+
+			len(part5)+
+			len(part6))
 	)
 
 	result = append(result, part1...)
@@ -17,6 +23,7 @@ func Companies() []domain.CompanyProfile {
 	result = append(result, part3...)
 	result = append(result, part4...)
 	result = append(result, part5...)
+	result = append(result, part6...)
 
 	return result
 }

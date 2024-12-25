@@ -882,12 +882,13 @@ func (c *Controller) FavoriteVacancy(ctx *gin.Context) {
 func (c *Controller) UnsafeCompanies(ctx *gin.Context) {
 	companies := db.Companies()
 
-	result := make([]domain.LinkedInProfileResponse, len(companies))
+	result := make([]domain.UnsafeCompanyResponse, len(companies))
 	for i, company := range companies {
-		result[i] = domain.LinkedInProfileResponse{
-			ID:    int64(company.LinkedInProfile.ID),
-			Alias: company.LinkedInProfile.Alias,
-			Name:  company.LinkedInProfile.Name,
+		result[i] = domain.UnsafeCompanyResponse{
+			ID:     company.LinkedInProfile.ID,
+			Alias:  company.LinkedInProfile.Alias,
+			Name:   company.LinkedInProfile.Name,
+			Ignore: company.Ignore,
 		}
 	}
 

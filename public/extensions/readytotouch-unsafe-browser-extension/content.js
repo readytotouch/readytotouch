@@ -21,10 +21,15 @@ function checkCompanyStatusFromCache(companyName) {
         return "in_progress";
     }
 
-    const exists = companiesCache.find(function (c) {
+    const company = companiesCache.find(function (c) {
         return c.name.toLowerCase() === companyName || c.id.toString() === companyName;
     });
-    if (exists) {
+
+    if (company) {
+        if (company.ignore) {
+            return "ignore";
+        }
+
         return "exists";
     }
 
@@ -38,6 +43,8 @@ function updateCompanyColor($companyName, status) {
         $companyName.style.color = "#007bff";
     } else if (status === "in_progress") {
         $companyName.style.color = "#ffc107";
+    } else if (status === "ignore") {
+        $companyName.style.color = "#dc3545";
     }
 }
 
