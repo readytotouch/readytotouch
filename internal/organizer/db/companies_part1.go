@@ -5246,7 +5246,17 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Haskell: nil,
 			},
 			Languages: domain.Languages{
-				domain.Go:      {},
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Software Developer GO",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/3757109938/",
+							Date:             mustDate("2024-12-12"),
+						},
+					},
+				},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
