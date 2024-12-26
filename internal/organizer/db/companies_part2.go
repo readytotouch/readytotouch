@@ -900,6 +900,8 @@ func companiesPart2() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "Bedrock Streaming",
 			Website: "https://bedrockstreaming.com/",
+			Careers: "https://bedrockstreaming.com/career/",
+			About:   "https://bedrockstreaming.com/company/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                64853943,
 				Alias:             "bedrock-streaming",
@@ -3889,19 +3891,20 @@ func companiesPart2() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "Poppi Technologies",
 			Website: "https://www.poppitechnologies.com/",
+			Careers: "https://www.poppitechnologies.com/careers",
+			About:   "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                93580213,
 				Alias:             "poppi-technologies",
 				Name:              "Poppi Technologies",
-				Followers:         "300",
-				Employees:         "10+",
+				Followers:         "351",
+				Employees:         "11-50",
 				AssociatedMembers: "7",
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "",
-				GoRepositoryCount: 0,
-				Verified:          false,
+				Login:    "",
+				Verified: false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -3911,27 +3914,26 @@ func companiesPart2() []domain.CompanyProfile {
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: nil,
-				domain.Rust: []string{
-					"https://www.linkedin.com/jobs/view/4056511585/",
-				},
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
-				domain.Rust:    {},
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Rust Software Engineer",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4102305954/",
+							Date:             mustDate("2024-12-19"),
+						},
+					},
+				},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "Purpose driven investing hedge fund operating solely to effect positive change across various sectors and industries",
 			Industries: []domain.Industry{
 				domain.IndustryFinTech,
 			},
@@ -4240,13 +4242,19 @@ func companiesPart2() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 21,
+					GitHubRepositoriesCount: 22,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:            "Senior Staff Software Engineer, Golang",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4077219379/",
 							Date:             mustDate("2024-11-19"),
+						},
+						{
+							Title:            "Senior Full Stack Engineer — Flows Team (GO & Angular)",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4102677424/",
+							Date:             mustDate("2024-12-19"),
 						},
 					},
 				},
