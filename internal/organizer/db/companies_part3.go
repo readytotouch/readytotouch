@@ -2066,8 +2066,8 @@ func companiesPart3() []domain.CompanyProfile {
 				Alias:             "social-discovery-group",
 				Name:              "Social Discovery Group",
 				Followers:         "23K",
-				Employees:         "1K+",
-				AssociatedMembers: "777",
+				Employees:         "1K-5K",
+				AssociatedMembers: "773",
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -2101,7 +2101,7 @@ func companiesPart3() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Go-developer (RCML)",
+							Title:            "GO — developer",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4087164770/",
 							Date:             mustDate("2024-12-03"),

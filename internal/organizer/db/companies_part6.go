@@ -16,7 +16,7 @@ func companiesPart6() []domain.CompanyProfile {
 			About:   "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                31033180,
-				Alias:             "hasaki-vn/people",
+				Alias:             "hasaki-vn",
 				Name:              "Hasaki.vn",
 				Followers:         "9K",
 				Employees:         "1K-5K",
@@ -47,90 +47,6 @@ func companiesPart6() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Retail Health and Personal Care Products company",
-		},
-
-		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Bedrock Streaming",
-			Website: "https://bedrockstreaming.com/",
-			Careers: "https://bedrockstreaming.com/career/",
-			About:   "https://bedrockstreaming.com/company/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:                64853943,
-				Alias:             "bedrock-streaming",
-				Name:              "Bedrock Streaming",
-				Followers:         "30K",
-				Employees:         "201-500",
-				AssociatedMembers: "315",
-				Verified:          true,
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
-			},
-			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:            "Software Developer — Backend GO",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4079483983/",
-							Date:             mustDate("2024-12-12"),
-						},
-					},
-				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-			ShortDescription: "Streaming-tech venture",
-		},
-
-		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Social Discovery Group",
-			Website: "https://socialdiscoverygroup.com/",
-			Careers: "https://socialdiscoverygroup.com/vacancies",
-			About:   "https://socialdiscoverygroup.com/about-us",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:                3683382,
-				Alias:             "social-discovery-group",
-				Name:              "Social Discovery Group",
-				Followers:         "23K",
-				Employees:         "1K-5K",
-				AssociatedMembers: "773",
-				Verified:          true,
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "SDVentures",
-				Verified: false,
-			},
-			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:            "GO — developer",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4087164770/",
-							Date:             mustDate("2024-12-05"),
-						},
-					},
-				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-			ShortDescription: "Global technology company",
 		},
 
 		{
@@ -204,7 +120,7 @@ func companiesPart6() []domain.CompanyProfile {
 							Title:            "Senior Spacecraft Flight/Software Engineer (Rust)",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4105560497/",
-							Date:             mustDate("26-12-24"),
+							Date:             mustDate("2024-12-24"),
 						},
 					},
 				},
@@ -257,48 +173,6 @@ func companiesPart6() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Automates and scales industrial data contextualization ",
-		},
-
-		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Poppi Technologies",
-			Website: "https://www.poppitechnologies.com/",
-			Careers: "https://www.poppitechnologies.com/careers",
-			About:   "",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:                93580213,
-				Alias:             "poppi-technologies",
-				Name:              "Poppi Technologies",
-				Followers:         "351",
-				Employees:         "11-50",
-				AssociatedMembers: "7",
-				Verified:          true,
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
-			},
-			Languages: domain.Languages{
-				domain.Go: {},
-				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:            "Rust Software Engineer",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4102305954/",
-							Date:             mustDate("2024-12-19"),
-						},
-					},
-				},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-			ShortDescription: "Purpose driven investing hedge fund operating solely to effect positive change across various sectors and industries.",
 		},
 
 		// Template short

@@ -5250,7 +5250,7 @@ func companiesPart1() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Software Developer GO",
+							Title:            "Software Developer Go",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/3757109938/",
 							Date:             mustDate("2024-12-12"),
@@ -9359,9 +9359,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "fiskaly",
-				GoRepositoryCount: 5,
-				Verified:          true,
+				Login:    "fiskaly",
+				Verified: true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-fiskaly-EI_IE3059515.11,18.htm",
@@ -9373,16 +9372,16 @@ func companiesPart1() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 5,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Sr. Backend Developer Golang",
+							Title:            "Senior Backend Developer Golang",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/3914242491/", // 5 years working with Golang or other OOP languages
-							Date:             mustDate("2024-05-10"),
+							Date:             mustDate("2024-05-26"),
 						},
 						{
-							Title:            "Sr. Backend Developer Golang",
+							Title:            "Senior Backend Developer Golang",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4055768396/", // 5 years working with Golang or other OOP languages
 							Date:             mustDate("2024-12-19"),
@@ -10666,8 +10665,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "cloudwalk",
-				GoRepositoryCount: 6,
+				Login:    "cloudwalk",
+				Verified: false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-CloudWalk-Inc-EI_IE2722308.11,24.htm",
@@ -10678,19 +10677,19 @@ func companiesPart1() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 6,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:            "Senior Software Engineer — Golang",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/3917078597/",
-							Date:             mustDate("2024-05-10"),
+							Date:             mustDate("2024-08-26"),
 						},
 						{
 							Title:            "Senior Software Engineer — Golang",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4088770341/",
-							Date:             mustDate("2024-12-125"),
+							Date:             mustDate("2024-12-25"),
 						},
 					},
 				},
@@ -12451,8 +12450,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "paloaltonetworks",
-				GoRepositoryCount: 46,
+				Login:    "paloaltonetworks",
+				Verified: true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Palo-Alto-Networks-EI_IE115142.11,29.htm",
@@ -12469,13 +12468,13 @@ func companiesPart1() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 46,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:            "Senior Software Engineer, Backend (Shared Services)",
-							ShortDescription: "",
+							ShortDescription: "Design and develop robust backend services using 1 or 2 years of expertise Golang, Node.js",
 							URL:              "https://www.linkedin.com/jobs/view/4033692599/",
-							Date:             mustDate("2024-11-19"),
+							Date:             mustDate("2024-11-26"),
 						},
 					},
 				},
@@ -12483,13 +12482,13 @@ func companiesPart1() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Principal Rust Engineer - Data Classification (Prisma Cloud)",
+							Title:            "Principal Rust Engineer — Data Classification (Prisma Cloud)",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4035556879/",
-							Date:             mustDate("2024-11-19"),
+							Date:             mustDate("2024-11-26"),
 						},
 						{
-							Title:            "Principal Rust Engineer - Data Classification (Prisma Cloud)",
+							Title:            "Principal Rust Engineer — Data Classification (Prisma Cloud)",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4104811687/",
 							Date:             mustDate("2024-12-19"),
@@ -12635,8 +12634,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "disney",
-				GoRepositoryCount: 1,
+				Login:    "disney",
+				Verified: false,
 			},
 			BlindProfile:     domain.BlindProfile{},
 			LevelsFyiProfile: domain.LevelsFyiProfile{},
@@ -12666,7 +12665,7 @@ func companiesPart1() []domain.CompanyProfile {
 							Date:             mustDate("2024-11-07"),
 						},
 						{
-							Title:            "Software Engineer (Rust Developer)",
+							Title:            "Software Engineer II (Rust Developer)",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4088472435/",
 							Date:             mustDate("2024-12-05"),
@@ -13320,9 +13319,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "",
-				GoRepositoryCount: 0,
-				Verified:          false,
+				Login:    "",
+				Verified: false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -13350,7 +13348,7 @@ func companiesPart1() []domain.CompanyProfile {
 							Title:            "Senior Rust Engineer",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4040225807/",
-							Date:             mustDate("2024-11-10"),
+							Date:             mustDate("2024-11-26"),
 						},
 						{
 							Title:            "Senior Rust Engineer",

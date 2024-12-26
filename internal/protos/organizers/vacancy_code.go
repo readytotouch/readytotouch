@@ -41,7 +41,9 @@ var (
 		"https://www.linkedin.com/jobs/view/4104785473/":  212, // fortinet
 		"https://www.linkedin.com/jobs/view/4103717982/":  213, // siemens
 		"https://www.linkedin.com/jobs/view/4018413094/":  214, // siemens
+		"https://www.linkedin.com/jobs/view/3757109938/":  281, // autodoc
 		"https://www.linkedin.com/jobs/view/4023882932/":  13,  // delivery-hero-se
+		"https://www.linkedin.com/jobs/view/4068633971/":  282, // applied-systems-canada
 		"https://www.linkedin.com/jobs/view/4037978333/":  14,  // arenko-cleantech
 		"https://www.linkedin.com/jobs/view/3848461191/":  15,  // sumup
 		"https://www.linkedin.com/jobs/view/4056886705/":  16,  // sumup
@@ -53,16 +55,28 @@ var (
 		"https://www.linkedin.com/jobs/view/4107495969/":  218, // sailpoint-technologies
 		"https://www.linkedin.com/jobs/view/3912130901/":  219, // ola-chat
 		"https://www.linkedin.com/jobs/view/4105518392/":  220, // ola-chat
+		"https://www.linkedin.com/jobs/view/3914242491/":  283, // fiskaly
+		"https://www.linkedin.com/jobs/view/4055768396/":  284, // fiskaly
 		"https://www.linkedin.com/jobs/view/3914103960/":  221, // stonebranch
 		"https://www.linkedin.com/jobs/view/4106867221/":  222, // stonebranch
 		"https://www.linkedin.com/jobs/view/4077191404/":  18,  // top-doctors-europe
 		"https://www.linkedin.com/jobs/view/4066607632/":  19,  // cognizant
+		"https://www.linkedin.com/jobs/view/3917078597/":  285, // cloudwalk-inc
+		"https://www.linkedin.com/jobs/view/4088770341/":  286, // cloudwalk-inc
 		"https://www.linkedin.com/jobs/view/4077388502/":  20,  // swiss-post
 		"https://www.linkedin.com/jobs/view/4062048996/":  21,  // rialtic-io
+		"https://www.linkedin.com/jobs/view/4033692599/":  287, // palo-alto-networks
+		"https://www.linkedin.com/jobs/view/4035556879/":  288, // palo-alto-networks
+		"https://www.linkedin.com/jobs/view/4104811687/":  289, // palo-alto-networks
 		"https://www.linkedin.com/jobs/view/4071554607/":  22,  // the-walt-disney-company
+		"https://www.linkedin.com/jobs/view/4088472435/":  290, // the-walt-disney-company
 		"https://www.linkedin.com/jobs/view/4063482617/":  23,  // the-walt-disney-company
 		"https://www.linkedin.com/jobs/view/3948655227/":  203, // materialise
 		"https://www.linkedin.com/jobs/view/3978294129/":  204, // influxdb
+		"https://www.linkedin.com/jobs/view/4039692138/":  291, // geniussports
+		"https://www.linkedin.com/jobs/view/4068518142/":  292, // geniussports
+		"https://www.linkedin.com/jobs/view/4040225807/":  293, // evercharge
+		"https://www.linkedin.com/jobs/view/4081026868/":  294, // evercharge
 		"https://www.linkedin.com/jobs/view/3990418832/":  24,  // eburyfintech
 		"https://www.linkedin.com/jobs/view/3945724263/":  223, // talon.one
 		"https://www.linkedin.com/jobs/view/4092377724/":  224, // talon.one
@@ -95,7 +109,9 @@ var (
 		"https://www.linkedin.com/jobs/view/4068403021/":  36,  // appodeal
 		"https://www.linkedin.com/jobs/view/4068296805/":  37,  // appodeal
 		"https://www.linkedin.com/jobs/view/4076698129/":  38,  // automox
+		"https://www.linkedin.com/jobs/view/4102305954/":  295, // poppi-technologies
 		"https://www.linkedin.com/jobs/view/4077219379/":  39,  // cyber-ark-software
+		"https://www.linkedin.com/jobs/view/4102677424/":  296, // cyber-ark-software
 		"https://www.linkedin.com/jobs/view/4076610998/":  40,  // abbott-
 		"https://www.linkedin.com/jobs/view/4050118492/":  41,  // jpmorganchase
 		"https://www.linkedin.com/jobs/view/4105782609/":  233, // jpmorganchase
@@ -284,6 +300,10 @@ var (
 		"https://www.linkedin.com/jobs/view/4109304866/":  253, // cheesecake-labs
 		"https://www.linkedin.com/jobs/view/4103938575/":  254, // mayaph
 		"https://www.linkedin.com/jobs/view/4080571465/":  255, // ashley-furniture-industries
+		"https://www.linkedin.com/jobs/view/4109417330/":  297, // hasaki-vn
+		"https://www.linkedin.com/jobs/view/4110235695/":  298, // nutanix
+		"https://www.linkedin.com/jobs/view/4105560497/":  299, // umbraspace
+		"https://www.linkedin.com/jobs/view/4106227833/":  300, // cognitedata
 
 	}
 )
