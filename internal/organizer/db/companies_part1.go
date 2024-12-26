@@ -5246,7 +5246,17 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Haskell: nil,
 			},
 			Languages: domain.Languages{
-				domain.Go:      {},
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Software Developer GO",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/3757109938/",
+							Date:             mustDate("2024-12-12"),
+						},
+					},
+				},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -6379,19 +6389,18 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/3879152828/",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Staff Software Engineer (Platform, Reliability, Golang)",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4068633971/",
+							Date:             mustDate("2024-12-20"),
+						},
+					},
+				},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -9362,19 +9371,24 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "https://www.youtube.com/@fiskaly",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/3914242491/", // 5 years working with Golang or other OOP languages
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Sr. Backend Developer Golang",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/3914242491/", // 5 years working with Golang or other OOP languages
+							Date:             mustDate("2024-05-10"),
+						},
+						{
+							Title:            "Sr. Backend Developer Golang",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4055768396/", // 5 years working with Golang or other OOP languages
+							Date:             mustDate("2024-12-19"),
+						},
+					},
+				},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -10662,19 +10676,24 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "https://www.youtube.com/@cloudwalk_shorts",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/3917078597/",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Software Engineer — Golang",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/3917078597/",
+							Date:             mustDate("2024-05-10"),
+						},
+						{
+							Title:            "Senior Software Engineer — Golang",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4088770341/",
+							Date:             mustDate("2024-12-125"),
+						},
+					},
+				},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -12448,22 +12467,35 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/4033692599/",
-				},
-				domain.Rust: []string{
-					"https://www.linkedin.com/jobs/view/4035556879/",
-				},
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
-				domain.Rust:    {},
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Software Engineer, Backend (Shared Services)",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4033692599/",
+							Date:             mustDate("2024-11-19"),
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Principal Rust Engineer - Data Classification (Prisma Cloud)",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4035556879/",
+							Date:             mustDate("2024-11-19"),
+						},
+						{
+							Title:            "Principal Rust Engineer - Data Classification (Prisma Cloud)",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4104811687/",
+							Date:             mustDate("2024-12-19"),
+						},
+					},
+				},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},
@@ -12632,6 +12664,12 @@ func companiesPart1() []domain.CompanyProfile {
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4071554607/",
 							Date:             mustDate("2024-11-07"),
+						},
+						{
+							Title:            "Software Engineer (Rust Developer)",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4088472435/",
+							Date:             mustDate("2024-12-05"),
 						},
 					},
 				},
@@ -12969,10 +13007,8 @@ func companiesPart1() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{
-				domain.Go: nil,
-				domain.Rust: []string{
-					"https://www.linkedin.com/jobs/view/4039692138/",
-				},
+				domain.Go:      nil,
+				domain.Rust:    nil,
 				domain.Zig:     nil,
 				domain.Scala:   nil,
 				domain.Elixir:  nil,
@@ -12980,8 +13016,24 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Haskell: nil,
 			},
 			Languages: domain.Languages{
-				domain.Go:      {},
-				domain.Rust:    {},
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Software Engineer, Rust",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4039692138/",
+							Date:             mustDate("2024-10-10"),
+						},
+						{
+							Title:            "Senior Software Engineer, Rust",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4068518142/",
+							Date:             mustDate("2024-12-22"),
+						},
+					},
+				},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},
@@ -13281,10 +13333,8 @@ func companiesPart1() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{
-				domain.Go: nil,
-				domain.Rust: []string{
-					"https://www.linkedin.com/jobs/view/4040225807/",
-				},
+				domain.Go:      nil,
+				domain.Rust:    nil,
 				domain.Zig:     nil,
 				domain.Scala:   nil,
 				domain.Elixir:  nil,
@@ -13292,8 +13342,24 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Haskell: nil,
 			},
 			Languages: domain.Languages{
-				domain.Go:      {},
-				domain.Rust:    {},
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Rust Engineer",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4040225807/",
+							Date:             mustDate("2024-11-10"),
+						},
+						{
+							Title:            "Senior Rust Engineer",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4081026868/",
+							Date:             mustDate("2024-12-25"),
+						},
+					},
+				},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},
