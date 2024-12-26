@@ -4248,6 +4248,12 @@ func companiesPart2() []domain.CompanyProfile {
 							URL:              "https://www.linkedin.com/jobs/view/4077219379/",
 							Date:             mustDate("2024-11-19"),
 						},
+						{
+							Title:            "Senior Full Stack Engineer — Flows Team (GO & Angular)",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4102677424/",
+							Date:             mustDate("2024-12-19"),
+						},
 					},
 				},
 				domain.Rust:    {},
