@@ -486,7 +486,17 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Haskell: nil,
 			},
 			Languages: domain.Languages{
-				domain.Go:      {},
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Data Engineer - Amazon Go, JWO Tech",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4091646856/",
+							Date:             mustDate("2024-12-27"),
+						},
+					},
+				},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -2137,7 +2147,17 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Haskell: nil,
 			},
 			Languages: domain.Languages{
-				domain.Go:      {},
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Go Senior Software Engineer (Remote)",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4110883947/",
+							Date:             mustDate("2024-12-27"),
+						},
+					},
+				},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -3878,8 +3898,18 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Haskell: nil,
 			},
 			Languages: domain.Languages{
-				domain.Go:      {},
-				domain.Rust:    {},
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Rust Engineer",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4108568196/",
+							Date:             mustDate("2024-12-23"),
+						},
+					},
+				},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},

@@ -32,7 +32,7 @@ func companiesPart6() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Senior Back-end Developer (PHP/ GO)",
+							Title:            "Senior Back-end Developer (PHP/ Go)",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4109417330/",
 							Date:             mustDate("2024-12-25"),
@@ -173,6 +173,132 @@ func companiesPart6() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Automates and scales industrial data contextualization ",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Europa-Park Resort",
+			Website: "https://jobs.europapark.de/en",
+			Careers: "https://jobs.europapark.de/en/careers-and-jobs-europa-park-resort",
+			About:   "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2325165,
+				Alias:             "europa-park-rust-germany-",
+				Name:              "Europa-Park Resort",
+				Followers:         "24K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "1,108",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "(Senior) Full Stack Developer",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4099924892/",
+							Date:             mustDate("2024-12-03"),
+						},
+					},
+				},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Germany's largest theme park and holiday resort",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Ubisoft",
+			Website: "https://www.ubisoft.com/",
+			Careers: "https://jobs.ubisoft.com/",
+			About:   "https://www.ubisoft.com/en-us/company/about-us/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2528,
+				Alias:             "ubisoft",
+				Name:              "Ubisoft",
+				Followers:         "1M",
+				Employees:         "10K+",
+				AssociatedMembers: "22,599",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "ubisoft",
+				Verified: true,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Software Engineer - RUST Backend",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4094489606/",
+							Date:             mustDate("2024-12-20"),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "French video game publisher",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Two Six Technologies",
+			Website: "https://twosixtech.com/",
+			Careers: "https://twosixtech.com/careers/",
+			About:   "https://twosixtech.com/about/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                75453814,
+				Alias:             "twosixtechnologies",
+				Name:              "Two Six Technologies",
+				Followers:         "8K",
+				Employees:         "501-1K",
+				AssociatedMembers: "659",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "twosixlabs",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Research Engineer – Rust Development and Formal Methods",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4081194563/",
+							Date:             mustDate("2024-12-20"),
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Provides cybersecurity and technology solutions",
 		},
 
 		// Template short
