@@ -556,6 +556,8 @@ var (
 		"nutanix":                             552, // Nutanix
 		"umbraspace":                          553, // Umbra
 		"cognitedata":                         554, // Cognite
+		"ubisoft":                             555, // Ubisoft
+		"twosixtechnologies":                  556, // Two Six Technologies
 
 	}
 )
