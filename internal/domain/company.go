@@ -33,6 +33,7 @@ const (
 	CompanyTypeStartup CompanyType = "startup"
 )
 
+// Deprecated
 type Vacancies = [7][]string
 type Languages = [7]LanguageProfile
 
