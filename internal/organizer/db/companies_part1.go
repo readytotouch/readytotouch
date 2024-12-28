@@ -3770,8 +3770,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "NordSecurity",
-				GoRepositoryCount: 7, // Rust 22 repositories
+				Login:    "NordSecurity",
+				Verified: true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Nord-Security-EI_IE4015819.11,24.htm",
@@ -3786,21 +3786,18 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "https://www.youtube.com/@nordsecurity",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				// Both links unavailable
-				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/3890883832/",
-					"https://www.linkedin.com/jobs/view/3892388207/",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
+				domain.Go: {
+					GitHubRepositoriesCount: 12,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Software Engineer (Go) (B2B Checkout)",
+							ShortDescription: "Experience working with Go",
+							URL:              "https://www.linkedin.com/jobs/view/4074033527/",
+							Date:             mustDate("2024-11-25"),
+						},
+					},
+				},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
