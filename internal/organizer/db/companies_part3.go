@@ -24,9 +24,8 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "capitalone",
-				GoRepositoryCount: 5,
-				Verified:          false,
+				Login:    "capitalone",
+				Verified: false,
 			},
 			BlindProfile:     domain.BlindProfile{},
 			LevelsFyiProfile: domain.LevelsFyiProfile{},
@@ -41,7 +40,7 @@ func companiesPart3() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 5,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:            "Senior Software Engineer, Back End (Golang or Scala, AWS)",
@@ -98,9 +97,8 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "dynatrace",
-				GoRepositoryCount: 11,
-				Verified:          true,
+				Login:    "dynatrace",
+				Verified: true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Dynatrace-EI_IE309684.11,20.htm",
@@ -110,19 +108,18 @@ func companiesPart3() []domain.CompanyProfile {
 			OttaProfileSlug:   "Dynatrace",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/3951768378/",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
+				domain.Go: {
+					GitHubRepositoriesCount: 11,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior C++ / Go Software Engineer",
+							ShortDescription: "Experience with Go or a willingness to learn on the job",
+							URL:              "https://www.linkedin.com/jobs/view/3951768378/",
+							Date:             mustDate("2024-12-20"),
+						},
+					},
+				},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -152,9 +149,8 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "emnify",
-				GoRepositoryCount: 7,
-				Verified:          true,
+				Login:    "emnify",
+				Verified: true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-EMnify-EI_IE1356231.11,17.htm",
@@ -164,19 +160,18 @@ func companiesPart3() []domain.CompanyProfile {
 			OttaProfileSlug:   "emnify-1",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://www.linkedin.com/jobs/view/4058102205/",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
+				domain.Go: {
+					GitHubRepositoriesCount: 7,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "(Senior) Software Engineer — Packet Gateway C/Go",
+							ShortDescription: "Proficiency in high-performance applications on Linux using C and Go",
+							URL:              "https://www.linkedin.com/jobs/view/4058102205/",
+							Date:             mustDate("2024-12-20"),
+						},
+					},
+				},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -208,9 +203,8 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "",
-				GoRepositoryCount: 0,
-				Verified:          false,
+				Login:    "",
+				Verified: false,
 			},
 			BlindProfile:     domain.BlindProfile{},
 			LevelsFyiProfile: domain.LevelsFyiProfile{},
@@ -271,9 +265,8 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "lytx",
-				GoRepositoryCount: 0,
-				Verified:          false,
+				Login:    "lytx",
+				Verified: false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Lytx-EI_IE813859.11,15.htm",
@@ -283,20 +276,19 @@ func companiesPart3() []domain.CompanyProfile {
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: nil,
-				domain.Rust: []string{
-					"https://www.linkedin.com/jobs/view/3951803632/",
-				},
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
-				domain.Rust:    {},
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Embedded Engineer",
+							ShortDescription: "Rust is good to have",
+							URL:              "https://www.linkedin.com/jobs/view/4053645963/",
+							Date:             mustDate("2024-11-25"),
+						},
+					},
+				},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},

@@ -54,8 +54,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "dochq",
-				GoRepositoryCount: 9,
+				Login:    "dochq",
+				Verified: true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -65,17 +65,11 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    true,
-			Vacancies: domain.Vacancies{
-				domain.Go:      []string{},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
+				domain.Go: {
+					GitHubRepositoriesCount: 10,
+					Vacancies:               []domain.Vacancy{},
+				},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -198,8 +192,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "mozilla",
-				GoRepositoryCount: 24,
+				Login:    "mozilla",
+				Verified: false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Mozilla-EI_IE19129.11,18.htm",
@@ -214,22 +208,29 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://app.otta.com/jobs/x1nUGqRw",
-				},
-				domain.Rust: []string{
-					"https://app.otta.com/jobs/x1nUGqRw",
-				},
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
-				domain.Rust:    {},
+				domain.Go: {
+					GitHubRepositoriesCount: 25,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Staff Software Engineer, Ads",
+							ShortDescription: "Expertise in one of the following back-end technologies: Golang, Rust or Java",
+							URL:              "https://www.linkedin.com/jobs/view/4068076458/",
+							Date:             mustDate("2024-11-25"),
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 62,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Staff Software Engineer, Ads",
+							ShortDescription: "Expertise in one of the following back-end technologies: Golang, Rust or Java",
+							URL:              "https://www.linkedin.com/jobs/view/4068076458/",
+							Date:             mustDate("2024-11-25"),
+						},
+					},
+				},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},
@@ -259,8 +260,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "discord",
-				GoRepositoryCount: 10, // Rust 35
+				Login:    "discord",
+				Verified: true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Discord-EI_IE910317.11,18.htm",
@@ -275,25 +276,32 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "Discord",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: nil,
-				domain.Rust: []string{
-					"https://app.welcometothejungle.com/jobs/q5H-48wM",
-				},
-				domain.Zig:   nil,
-				domain.Scala: nil,
-				domain.Elixir: []string{
-					"https://app.welcometothejungle.com/jobs/HxEBR9jp",
-				},
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 36,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Software Engineer, Persistence Infrastructure",
+							ShortDescription: "Building and operating large-scale, reliable and performant systems with Rust, ScyllaDB, PostgreSQL, ElasticSearch, and Linux",
+							URL:              "https://www.linkedin.com/jobs/view/4082697010/",
+							Date:             mustDate("2024-11-25"),
+						},
+					},
+				},
+				domain.Zig:   {},
+				domain.Scala: {},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 20,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Staff Software Engineer, Realtime Infrastructure",
+							ShortDescription: "Our tech stack is Elixir, Python and Rust",
+							URL:              "https://www.linkedin.com/jobs/view/4102671396/",
+							Date:             mustDate("2024-12-20"),
+						},
+					},
+				},
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
@@ -318,8 +326,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "figma",
-				GoRepositoryCount: 14, // Rust 4
+				Login:    "figma",
+				Verified: false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Figma-EI_IE1537286.11,16.htm",
@@ -334,22 +342,29 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "Figma",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://app.welcometothejungle.com/jobs/YXcMzOW8",
-				},
-				domain.Rust: []string{
-					"https://app.welcometothejungle.com/jobs/YXcMzOW8",
-				},
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
-				domain.Rust:    {},
+				domain.Go: {
+					GitHubRepositoriesCount: 15,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Software Engineer — FigFile Platform",
+							ShortDescription: "We own services written in Rust, Ruby, TypeScript, and Go",
+							URL:              "https://www.linkedin.com/jobs/view/3906200700/",
+							Date:             mustDate("2024-12-12"),
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 4,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Software Engineer — FigFile Platform",
+							ShortDescription: "We own services written in Rust, Ruby, TypeScript, and Go",
+							URL:              "https://www.linkedin.com/jobs/view/3906200700/",
+							Date:             mustDate("2024-12-12"),
+						},
+					},
+				},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},
@@ -471,19 +486,6 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "Amazon",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://app.otta.com/jobs/G0JaYF4Z",
-				},
-				domain.Rust: []string{
-					"https://app.otta.com/jobs/G0JaYF4Z",
-				},
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
 				domain.Go:      {},
 				domain.Rust:    {},
@@ -1609,8 +1611,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "dropbox",
-				GoRepositoryCount: 22, // Rust 16
+				Login:    "dropbox",
+				Verified: true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Dropbox-EI_IE415350.11,18.htm",
@@ -1625,22 +1627,29 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "Dropbox",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://app.welcometothejungle.com/jobs/WKQvjdTx",
-				},
-				domain.Rust: []string{
-					"https://app.welcometothejungle.com/jobs/WKQvjdTx",
-				},
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
-				domain.Rust:    {},
+				domain.Go: {
+					GitHubRepositoriesCount: 22,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Backend Product Software Engineer, Sync",
+							ShortDescription: "Highly skilled at developing and debugging in Rust, C, C++, or Go",
+							URL:              "https://www.linkedin.com/jobs/view/3983369109/",
+							Date:             mustDate("2024-09-25"),
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 16,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Backend Product Software Engineer, Sync",
+							ShortDescription: "Highly skilled at developing and debugging in Rust, C, C++, or Go",
+							URL:              "https://www.linkedin.com/jobs/view/3983369109/",
+							Date:             mustDate("2024-09-25"),
+						},
+					},
+				},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},
@@ -1672,8 +1681,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "docker",
-				GoRepositoryCount: 28,
+				Login:    "docker",
+				Verified: true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Docker-EI_IE1089506.11,17.htm",
@@ -1688,17 +1697,11 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "Docker-1",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    true,
-			Vacancies: domain.Vacancies{
-				domain.Go:      []string{},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
+				domain.Go: {
+					GitHubRepositoriesCount: 49,
+					Vacancies:               []domain.Vacancy{},
+				},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -1731,8 +1734,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "grafana",
-				GoRepositoryCount: 233,
+				Login:    "grafana",
+				Verified: true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Grafana-Labs-EI_IE2300269.11,23.htm",
@@ -1747,17 +1750,18 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "Grafana-Labs",
 			YouTubeChannelURL: "https://www.youtube.com/channel/UCYCwgQAMm9sTJv0rgwQLCxw",
 			GoMainLanguage:    true,
-			Vacancies: domain.Vacancies{
-				domain.Go:      []string{},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
+				domain.Go: {
+					GitHubRepositoriesCount: 332,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Backend Engineer — Adaptive Telemetry",
+							ShortDescription: "We use Go, but if you have familiarity with Python, C, C++, Rust or similar then that translates well",
+							URL:              "https://www.linkedin.com/jobs/view/4076482530/",
+							Date:             mustDate("2024-12-05"),
+						},
+					},
+				},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -1790,8 +1794,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "hashicorp",
-				GoRepositoryCount: 296,
+				Login:    "hashicorp",
+				Verified: true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-HashiCorp-EI_IE1359860.11,20.htm",
@@ -1806,17 +1810,18 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "HashiCorp",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    true,
-			Vacancies: domain.Vacancies{
-				domain.Go:      []string{},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
+				domain.Go: {
+					GitHubRepositoriesCount: 471,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Backend Engineer II",
+							ShortDescription: "You have professional experience developing with modern programming languages and frameworks, and are interested in working in Golang and Ruby specifically",
+							URL:              "https://www.linkedin.com/jobs/view/4102997754/",
+							Date:             mustDate("2024-12-20"),
+						},
+					},
+				},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -1930,8 +1935,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "cockroachdb",
-				GoRepositoryCount: 92,
+				Login:    "cockroachdb",
+				Verified: true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Cockroach-Labs-EI_IE1168502.11,25.htm",
@@ -1946,19 +1951,18 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "Cockroach-Labs",
 			YouTubeChannelURL: "https://www.youtube.com/@cockroachdb",
 			GoMainLanguage:    true,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://app.otta.com/jobs/uPMrLAMV",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
+				domain.Go: {
+					GitHubRepositoriesCount: 102,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Software Engineer, Backend (Disaster Recovery)",
+							ShortDescription: "Develop in Go, but if you don't know it you'll learn while you're here",
+							URL:              "https://www.linkedin.com/jobs/view/4062743637/",
+							Date:             mustDate("2024-12-20"),
+						},
+					},
+				},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -1988,8 +1992,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "timescale",
-				GoRepositoryCount: 11,
+				Login:    "timescale",
+				Verified: true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Timescale-EI_IE2214356.11,20.htm",
@@ -2004,19 +2008,18 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "Timescale",
 			YouTubeChannelURL: "https://www.youtube.com/@TimescaleDB",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://app.otta.com/jobs/qZT84OgV",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
+				domain.Go: {
+					GitHubRepositoriesCount: 16,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Software Engineer — Backend",
+							ShortDescription: "Design, develop, and maintain Golang-based services",
+							URL:              "https://www.linkedin.com/jobs/view/4024039384/",
+							Date:             mustDate("2024-09-25"),
+						},
+					},
+				},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -2046,8 +2049,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "scylladb",
-				GoRepositoryCount: 18,
+				Login:    "scylladb",
+				Verified: true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-ScyllaDB-EI_IE1622223.11,19.htm",
@@ -2062,19 +2065,18 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "ScyllaDB",
 			YouTubeChannelURL: "https://www.youtube.com/@ScyllaDB",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://app.otta.com/jobs/Xj1J-uAC",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
+				domain.Go: {
+					GitHubRepositoriesCount: 19,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "FullStack Software Engineer (Golang, React)",
+							ShortDescription: "Design & Build APIs with Go",
+							URL:              "https://www.linkedin.com/jobs/view/3897167605/",
+							Date:             mustDate("2024-04-25"),
+						},
+					},
+				},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -2241,8 +2243,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "mongodb",
-				GoRepositoryCount: 33,
+				Login:    "mongodb",
+				Verified: false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-MongoDB-EI_IE433703.11,18.htm",
@@ -2257,19 +2259,18 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "MongoDB",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://app.otta.com/jobs/jWhHaFVW",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
+				domain.Go: {
+					GitHubRepositoriesCount: 36,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Staff Engineer, Cluster-to-Cluster Sync",
+							ShortDescription: "Identify, design, implement, test, and support new features in a relatively new and quickly evolving Go codebase",
+							URL:              "https://www.linkedin.com/jobs/view/4099667362/",
+							Date:             mustDate("2024-12-12"),
+						},
+					},
+				},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -2313,15 +2314,6 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "FerretDB",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    true,
-			Vacancies: domain.Vacancies{
-				domain.Go:      []string{},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
 				domain.Go:      {},
 				domain.Rust:    {},
@@ -2633,8 +2625,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "Kong",
-				GoRepositoryCount: 51,
+				Login:    "Kong",
+				Verified: true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Kong-EI_IE801963.11,15.htm",
@@ -2649,19 +2641,18 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "Kong",
 			YouTubeChannelURL: "https://www.youtube.com/@KongInc",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://app.otta.com/jobs/7-RRNkSk",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
+				domain.Go: {
+					GitHubRepositoriesCount: 66,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Software Engineer",
+							ShortDescription: "Expertise in designing and writing Restful and WebSocket APIs (in Golang)",
+							URL:              "https://www.linkedin.com/jobs/view/4062919998/",
+							Date:             mustDate("2024-12-12"),
+						},
+					},
+				},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -2694,8 +2685,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "exasol",
-				GoRepositoryCount: 7,
+				Login:    "exasol",
+				Verified: true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Exasol-EI_IE968677.11,17.htm",
@@ -2710,19 +2701,18 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "Exasol",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://app.otta.com/jobs/yfqng_As",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
+				domain.Go: {
+					GitHubRepositoriesCount: 7,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Software Engineer",
+							ShortDescription: "3+ years of professional software development experience with a strong foundation in the Go",
+							URL:              "https://app.welcometothejungle.com/jobs/yfqng_As",
+							Date:             mustDate("2024-09-17"), // Appropriate date
+						},
+					},
+				},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -2756,8 +2746,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "palantir",
-				GoRepositoryCount: 57,
+				Login:    "palantir",
+				Verified: true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Palantir-Technologies-EI_IE236375.11,32.htm",
@@ -2772,17 +2762,18 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "Palantir",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go:      []string{},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
+				domain.Go: {
+					GitHubRepositoriesCount: 64,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Software Engineer, Substrate",
+							ShortDescription: "Systems programming experience with strong proficiency in Golang, C/C++ or equivalent",
+							URL:              "https://www.linkedin.com/jobs/view/3840764882/",
+							Date:             mustDate("2024-12-12"),
+						},
+					},
+				},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -2817,8 +2808,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "bufbuild",
-				GoRepositoryCount: 25,
+				Login:    "bufbuild",
+				Verified: true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -2828,19 +2819,18 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "Buf",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://app.otta.com/jobs/9KLKULQr",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
+				domain.Go: {
+					GitHubRepositoriesCount: 26,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Software Engineer — Go",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4066312363/",
+							Date:             mustDate("2024-11-25"),
+						},
+					},
+				},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -2932,8 +2922,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "transferwise",
-				GoRepositoryCount: 35,
+				Login:    "transferwise",
+				Verified: true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Wise-EI_IE637715.11,15.htm",
@@ -2948,19 +2938,18 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "Wise",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://app.otta.com/jobs/UVRcHQhe",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
+				domain.Go: {
+					GitHubRepositoriesCount: 37,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Platform Engineer",
+							ShortDescription: "Experience coding in Golang and interacting/building API’s",
+							URL:              "https://app.otta.com/jobs/UVRcHQhe",
+							Date:             mustDate("2024-09-17"), // Appropriate date
+						},
+					},
+				},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -13125,7 +13114,7 @@ func companiesPart1() []domain.CompanyProfile {
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                5312885,
 				Alias:             "rhebo",
-				Name:              "Rhebo",
+				Name:              "Rhebo - a Landis+Gyr company",
 				Followers:         "4K",
 				Employees:         "10+",
 				AssociatedMembers: "32",
@@ -13144,20 +13133,19 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: nil,
-				domain.Rust: []string{
-					"https://www.linkedin.com/jobs/view/4050077229/",
-				},
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
-				domain.Rust:    {},
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Software Developer Rust — Focus Network",
+							ShortDescription: "You have 3+ years of experience in Rust",
+							URL:              "https://www.linkedin.com/jobs/view/4050077229/",
+							Date:             mustDate("2024-10-28"),
+						},
+					},
+				},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},
@@ -13185,9 +13173,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "",
-				GoRepositoryCount: 0,
-				Verified:          false,
+				Login:    "",
+				Verified: false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Bjak-EI_IE3055055.11,15.htm",
@@ -13196,20 +13183,19 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: nil,
-				domain.Rust: []string{
-					"https://www.linkedin.com/jobs/view/4046735639/",
-				},
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
-				domain.Rust:    {},
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Rust Engineer",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4046735639/",
+							Date:             mustDate("2024-10-28"),
+						},
+					},
+				},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},
@@ -13219,6 +13205,7 @@ func companiesPart1() []domain.CompanyProfile {
 			ShortDescription:          "",
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
+			Ignore:                    true, // Smart contracts and decentralized applications
 		},
 		{
 			ID:      0,  // system
@@ -13246,15 +13233,6 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go:      nil,
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
 				domain.Go: {},
 				domain.Rust: {
@@ -13410,21 +13388,21 @@ func companiesPart1() []domain.CompanyProfile {
 		{
 			ID:      0,                         // system
 			Type:    domain.CompanyTypeStartup, // system
-			Name:    "NewHomesMate",
-			Website: "https://newhomesmate.com/",
+			Name:    "Jome",
+			Website: "https://jome.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                86332598,
-				Alias:             "newhomesmate",
-				Name:              "NewHomesMate",
+				Alias:             "jomehq",
+				PreviousAliases:   []string{"newhomesmate"},
+				Name:              "Jome",
 				Followers:         "2K",
-				Employees:         "50+",
+				Employees:         "51-200",
 				AssociatedMembers: "104",
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "",
-				GoRepositoryCount: 0,
-				Verified:          false,
+				Login:    "",
+				Verified: false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-NewHomesMate-EI_IE8164563.11,23.htm",
@@ -13433,19 +13411,18 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://jobs.dou.ua/companies/propertymate/vacancies/264309/",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Backend Engineer",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/3887627093/",
+							Date:             mustDate("2024-04-25"),
+						},
+					},
+				},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -13487,19 +13464,18 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "Density",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://app.welcometothejungle.com/jobs/t7vxWHyI",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Fullstack Engineer",
+							ShortDescription: "Lead the development of fullstack web applications, writing clean, efficient, and scalable code in Go, React, and Python, with a focus on both frontend and API development",
+							URL:              "https://www.linkedin.com/jobs/view/4047223146/",
+							Date:             mustDate("2024-12-20"),
+						},
+					},
+				},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -13626,8 +13602,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "abnormal-security",
-				GoRepositoryCount: 0,
+				Login:    "abnormal-security",
+				Verified: true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Abnormal-Security-EI_IE3146005.11,28.htm",
@@ -13636,19 +13612,18 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "Abnormal-Security",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://app.welcometothejungle.com/jobs/pRJX4yTR",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
+				domain.Go: {
+					GitHubRepositoriesCount: 1,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Software Engineer — Platform Security Team",
+							ShortDescription: "Experience with Golang and Python programming languages",
+							URL:              "https://www.linkedin.com/jobs/view/4092851428/",
+							Date:             mustDate("2024-12-12"),
+						},
+					},
+				},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -13679,8 +13654,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "scope3data",
-				GoRepositoryCount: 0,
+				Login:    "scope3data",
+				Verified: true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -13690,19 +13665,18 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "Scope3",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://app.welcometothejungle.com/jobs/LhvHDkyc",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Lead Engineer, API & Real Time Systems",
+							ShortDescription: "The current tech stack focuses on running high throughput + low latency Golang services deployed to a Kubernetes engine running in Google Cloud Platform",
+							URL:              "https://www.linkedin.com/jobs/view/4099234574/",
+							Date:             mustDate("2024-12-12"),
+						},
+					},
+				},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -13729,8 +13703,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "apollographql",
-				GoRepositoryCount: 1,
+				Login:    "apollographql",
+				Verified: false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Apollo-GraphQL-EI_IE893757.11,25.htm",
@@ -13739,20 +13713,19 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "Apollo",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: nil,
-				domain.Rust: []string{
-					"https://www.linkedin.com/jobs/view/4043213870/",
-				},
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
-				domain.Rust:    {},
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 18,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Software Engineer, Rust",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4043213870/",
+							Date:             mustDate("2024-10-25"),
+						},
+					},
+				},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},
@@ -13775,15 +13748,15 @@ func companiesPart1() []domain.CompanyProfile {
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                409588,
 				Alias:             "paessler-gmbh",
-				Name:              "Paessler",
+				Name:              "Paessler GmbH",
 				Followers:         "15K",
 				Employees:         "200+",
 				AssociatedMembers: "367",
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "PaesslerAG",
-				GoRepositoryCount: 2,
+				Login:    "PaesslerAG",
+				Verified: false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Paessler-GmbH-EI_IE1430882.11,24.htm",
@@ -13792,20 +13765,19 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: nil,
-				domain.Rust: []string{
-					"https://www.linkedin.com/jobs/view/4039210719/",
-				},
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
-				domain.Rust:    {},
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Software Developer Rust",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4039210719/",
+							Date:             mustDate("2024-10-25"),
+						},
+					},
+				},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},
@@ -14008,8 +13980,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "starlingbank",
-				GoRepositoryCount: 0,
+				Login:    "starlingbank",
+				Verified: false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Starling-Bank-EI_IE1337967.11,24.htm",
@@ -14018,19 +13990,18 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "Starling-Bank",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://app.welcometothejungle.com/jobs/lfnyRzC0",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Software Engineer — Go / IaC (Security)",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4013536315/",
+							Date:             mustDate("2024-08-26"),
+						},
+					},
+				},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -14061,8 +14032,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "spiceai",
-				GoRepositoryCount: 6,
+				Login:    "spiceai",
+				Verified: true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -14072,24 +14043,29 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://app.welcometothejungle.com/jobs/WlVadVlu",
-					"https://app.welcometothejungle.com/jobs/emdLdWlp",
-				},
-				domain.Rust: []string{
-					"https://app.welcometothejungle.com/jobs/WlVadVlu",
-					"https://app.welcometothejungle.com/jobs/emdLdWlp",
-				},
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
-				domain.Rust:    {},
+				domain.Go: {
+					GitHubRepositoriesCount: 6,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Rust Software Engineer",
+							ShortDescription: "Design and implement big data, distributed, and machine learning systems using modern tech stacks in Rust, Golang, and Python",
+							URL:              "https://www.linkedin.com/jobs/view/4108994660/",
+							Date:             mustDate("2024-12-25"),
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 29,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Rust Software Engineer",
+							ShortDescription: "Design and implement big data, distributed, and machine learning systems using modern tech stacks in Rust, Golang, and Python",
+							URL:              "https://www.linkedin.com/jobs/view/4108994660/",
+							Date:             mustDate("2024-12-25"),
+						},
+					},
+				},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},
@@ -14115,8 +14091,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "algolia",
-				GoRepositoryCount: 14,
+				Login:    "algolia",
+				Verified: true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Algolia-EI_IE998983.11,18.htm",
@@ -14125,20 +14101,18 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "Algolia",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://app.welcometothejungle.com/jobs/tsBqRgc_",
-					"https://www.linkedin.com/jobs/view/3984452580/",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
+				domain.Go: {
+					GitHubRepositoriesCount: 14,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Software Engineer, Backend (Go)",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/3984452580/",
+							Date:             mustDate("2024-12-05"),
+						},
+					},
+				},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -14160,15 +14134,15 @@ func companiesPart1() []domain.CompanyProfile {
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                18796376,
 				Alias:             "observe-inc",
-				Name:              "Observe",
+				Name:              "Observe, Inc.",
 				Followers:         "10K",
 				Employees:         "200+",
 				AssociatedMembers: "227",
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "observeinc",
-				GoRepositoryCount: 21,
+				Login:    "observeinc",
+				Verified: false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Observe-CA-EI_IE4567528.11,21.htm",
@@ -14177,19 +14151,18 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://app.welcometothejungle.com/jobs/bjD5ZhEh",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
+				domain.Go: {
+					GitHubRepositoriesCount: 21,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Staff/Principal Software Engineer: Data Backend",
+							ShortDescription: "Experience with Go is a plus",
+							URL:              "https://www.linkedin.com/jobs/view/3840172575/",
+							Date:             mustDate("2024-02-26"),
+						},
+					},
+				},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -14218,9 +14191,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "",
-				GoRepositoryCount: 0,
-				Verified:          false,
+				Login:    "",
+				Verified: false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -14230,20 +14202,19 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "Chalk",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: nil,
-				domain.Rust: []string{
-					"https://app.welcometothejungle.com/jobs/2SMONxFZ",
-				},
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
-				domain.Rust:    {},
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Software Engineer",
+							ShortDescription: "Write Python and Rust",
+							URL:              "https://www.linkedin.com/jobs/view/4091287030/",
+							Date:             mustDate("2024-12-05"),
+						},
+					},
+				},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},
@@ -14262,15 +14233,15 @@ func companiesPart1() []domain.CompanyProfile {
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                670584,
 				Alias:             "enova-international",
-				Name:              "Enova",
+				Name:              "Enova International",
 				Followers:         "62K",
 				Employees:         "1K+",
 				AssociatedMembers: "1,401",
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "enova",
-				GoRepositoryCount: 7,
+				Login:    "enova",
+				Verified: false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Enova-EI_IE298072.11,16.htm",
@@ -14279,19 +14250,18 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "Enova",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://app.welcometothejungle.com/jobs/6TIHCD3L",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
+				domain.Go: {
+					GitHubRepositoriesCount: 7,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Software Engineer — Platform Accounting",
+							ShortDescription: "Write clean, maintainable, and efficient code using the Go and Ruby programming languages",
+							URL:              "https://www.linkedin.com/jobs/view/3977106723/",
+							Date:             mustDate("2024-10-25"),
+						},
+					},
+				},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -14320,8 +14290,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "justwatch",
-				GoRepositoryCount: 7,
+				Login:    "justwatch",
+				Verified: false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-JustWatch-EI_IE1348307.11,20.htm",
@@ -14330,19 +14300,18 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "JustWatch-1",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://app.welcometothejungle.com/jobs/2BshPA1c",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
+				domain.Go: {
+					GitHubRepositoriesCount: 7,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Junior Backend Developer",
+							ShortDescription: "As part of our team, you'll contribute by coding in Go",
+							URL:              "https://www.linkedin.com/jobs/view/4004164547/",
+							Date:             mustDate("2024-08-26"),
+						},
+					},
+				},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -14371,8 +14340,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "sourcegraph",
-				GoRepositoryCount: 190,
+				Login:    "sourcegraph",
+				Verified: true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Sourcegraph-EI_IE1356770.11,22.htm",
@@ -14381,19 +14350,18 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "Sourcegraph",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://app.welcometothejungle.com/jobs/wTAsZImo",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
+				domain.Go: {
+					GitHubRepositoriesCount: 190,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Software Engineer — Code Search [IC2]",
+							ShortDescription: "You are proficient in Go, with exposure to scaling and concurrency",
+							URL:              "https://www.linkedin.com/jobs/view/3987576655/",
+							Date:             mustDate("2024-12-05"),
+						},
+					},
+				},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -14420,8 +14388,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "plaid",
-				GoRepositoryCount: 9,
+				Login:    "plaid",
+				Verified: true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Plaid-EI_IE1156368.11,16.htm",
@@ -14430,19 +14398,18 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "Plaid",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://app.welcometothejungle.com/jobs/7_pckxdd",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
+				domain.Go: {
+					GitHubRepositoriesCount: 9,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Software Engineer — Scaled Access",
+							ShortDescription: "Experience with Golang",
+							URL:              "https://www.linkedin.com/jobs/view/3972591536/",
+							Date:             mustDate("2024-10-25"),
+						},
+					},
+				},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -14466,16 +14433,15 @@ func companiesPart1() []domain.CompanyProfile {
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                11193112,
 				Alias:             "coalitioninc",
-				Name:              "Coalition",
+				Name:              "Coalition, Inc.",
 				Followers:         "82K",
 				Employees:         "500+",
 				AssociatedMembers: "718",
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "",
-				GoRepositoryCount: 0,
-				Verified:          false,
+				Login:    "",
+				Verified: false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Coalition-EI_IE1717118.11,20.htm",
@@ -14484,19 +14450,18 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "Coalition",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://app.welcometothejungle.com/jobs/7o-foHYQ",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Software Engineer, Scanning Engine",
+							ShortDescription: "Experience with at least one of Python or Golang",
+							URL:              "https://www.linkedin.com/jobs/view/4079546853/",
+							Date:             mustDate("2024-12-12"),
+						},
+					},
+				},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -14504,8 +14469,10 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription:          "Cyber insurance and security for businesses",
-			Industries:                []domain.Industry{},
+			ShortDescription: "Cyber insurance and security for businesses",
+			Industries: []domain.Industry{
+				domain.IndustryCyberSecurity,
+			},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 		{
@@ -14523,8 +14490,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "mechanical-orchard",
-				GoRepositoryCount: 0, // Elixir 9
+				Login:    "mechanical-orchard",
+				Verified: true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -14534,28 +14501,26 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "Mechanical-Orchard",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go:    nil,
-				domain.Rust:  nil,
-				domain.Zig:   nil,
-				domain.Scala: nil,
-				domain.Elixir: []string{
-					"https://app.welcometothejungle.com/jobs/zLruxuAk",
-					"https://app.welcometothejungle.com/jobs/h2lbAL5a",
-				},
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
+				domain.Go:    {},
+				domain.Rust:  {},
+				domain.Zig:   {},
+				domain.Scala: {},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 12,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Software Engineer",
+							ShortDescription: "Mechanical Orchard using Elixir",
+							URL:              "https://app.welcometothejungle.com/jobs/h2lbAL5a",
+							Date:             mustDate("2024-12-27"), // Approximate date
+						},
+					},
+				},
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription:          "",
+			ShortDescription:          "AI testing to help modernize critical systems",
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
@@ -14622,8 +14587,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "emitwise",
-				GoRepositoryCount: 0,
+				Login:    "emitwise",
+				Verified: false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Emitwise-EI_IE3915102.11,19.htm",
@@ -14632,19 +14597,18 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "Emitwise",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://app.welcometothejungle.com/jobs/w8X1TqCu",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Lead Full-Stack Engineer",
+							ShortDescription: "The majority of our backend is written in Go",
+							URL:              "https://www.linkedin.com/jobs/view/4091187613/",
+							Date:             mustDate("2024-12-12"),
+						},
+					},
+				},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -14671,8 +14635,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "upvestco",
-				GoRepositoryCount: 3,
+				Login:    "upvestco",
+				Verified: true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Upvest-EI_IE2948356.11,17.htm",
@@ -14681,19 +14645,18 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "Upvest",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    true, // https://app.welcometothejungle.com/jobs/JTNWvpsj Work with cutting-edge technologies (Go is the primary language) without a legacy codebase
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://app.welcometothejungle.com/jobs/JTNWvpsj",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
+				domain.Go: {
+					GitHubRepositoriesCount: 3,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Product Engineer — Trading",
+							ShortDescription: "Go is the primary language",
+							URL:              "https://www.linkedin.com/jobs/view/4064898198/",
+							Date:             mustDate("2024-11-25"),
+						},
+					},
+				},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -14774,8 +14737,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "neo4j",
-				GoRepositoryCount: 3,
+				Login:    "neo4j",
+				Verified: true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Neo4j-EI_IE665767.11,16.htm",
@@ -14784,19 +14747,18 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "Neo4j",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://app.welcometothejungle.com/jobs/xOagXoE8",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
+				domain.Go: {
+					GitHubRepositoriesCount: 4,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Software Engineer — Infrastructure",
+							ShortDescription: "Experience using Go",
+							URL:              "https://www.linkedin.com/jobs/view/4102014529/",
+							Date:             mustDate("2024-12-20"),
+						},
+					},
+				},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -14900,8 +14862,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "gocardless",
-				GoRepositoryCount: 24,
+				Login:    "gocardless",
+				Verified: true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-GoCardless-EI_IE1001543.11,21.htm",
@@ -14910,19 +14872,18 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "GoCardless",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://app.welcometothejungle.com/jobs/xxfBLoSU",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
+				domain.Go: {
+					GitHubRepositoriesCount: 24,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Software Development Engineer — Billing & Revenue",
+							ShortDescription: "You'll work with Golang, Ruby on Rails, Postgres and Google Cloud Platform",
+							URL:              "https://www.linkedin.com/jobs/view/4066058946/",
+							Date:             mustDate("2024-11-25"),
+						},
+					},
+				},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
