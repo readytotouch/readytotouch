@@ -22,7 +22,6 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies:         domain.Vacancies{},
 			Languages: domain.Languages{
 				domain.Go:      {},
 				domain.Rust:    {},
@@ -2191,7 +2190,6 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies:         domain.Vacancies{},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -4484,7 +4482,6 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies:         domain.Vacancies{},
 			Languages: domain.Languages{
 				domain.Go:      {},
 				domain.Rust:    {},
@@ -5800,7 +5797,6 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "Audigent",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies:         domain.Vacancies{},
 			Languages: domain.Languages{
 				domain.Go:      {},
 				domain.Rust:    {},
