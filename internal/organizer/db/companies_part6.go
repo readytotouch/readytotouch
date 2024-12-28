@@ -196,18 +196,8 @@ func companiesPart6() []domain.CompanyProfile {
 				Verified: false,
 			},
 			Languages: domain.Languages{
-				domain.Go: {},
-				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:            "(Senior) Full Stack Developer",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4099924892/",
-							Date:             mustDate("2024-12-03"),
-						},
-					},
-				},
+				domain.Go:      {},
+				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},
@@ -215,6 +205,7 @@ func companiesPart6() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Germany's largest theme park and holiday resort",
+			Ignore:           true, // Rust is a municipality in the district of Ortenau in Baden-Württemberg in Germany
 		},
 
 		{
@@ -242,7 +233,7 @@ func companiesPart6() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Senior Software Engineer - RUST Backend",
+							Title:            "Senior Software Engineer — Rust Backend",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4094489606/",
 							Date:             mustDate("2024-12-20"),
@@ -285,7 +276,7 @@ func companiesPart6() []domain.CompanyProfile {
 					Vacancies: []domain.Vacancy{
 						{
 							Title:            "Senior Research Engineer – Rust Development and Formal Methods",
-							ShortDescription: "",
+							ShortDescription: "Design and implement software solutions using Rust, emphasizing security, performance, and maintainability",
 							URL:              "https://www.linkedin.com/jobs/view/4081194563/",
 							Date:             mustDate("2024-12-20"),
 						},

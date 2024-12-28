@@ -32,6 +32,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4097075408/":  273, // fastly
 		"https://www.linkedin.com/jobs/view/3996818515/":  7,   // crowdstrike
 		"https://www.linkedin.com/jobs/view/4040870810/":  8,   // crowdstrike
+		"https://www.linkedin.com/jobs/view/4110883947/":  392, // percona
 		"https://www.linkedin.com/jobs/view/4001888204/":  9,   // elastic-co
 		"https://www.linkedin.com/jobs/view/4021697979/":  10,  // redisinc
 		"https://www.linkedin.com/jobs/view/3963199017/":  11,  // redisinc
@@ -49,6 +50,7 @@ var (
 		"https://www.linkedin.com/jobs/view/3902607066/":  310, // namecheap-inc
 		"https://www.linkedin.com/jobs/view/4011177772/":  311, // godaddy
 		"https://www.linkedin.com/jobs/view/3905310871/":  312, // 1password
+		"https://www.linkedin.com/jobs/view/4108568196/":  393, // protonprivacy
 		"https://www.linkedin.com/jobs/view/3907970778/":  211, // fortinet
 		"https://www.linkedin.com/jobs/view/4104785473/":  212, // fortinet
 		"https://www.linkedin.com/jobs/view/4103717982/":  213, // siemens
@@ -395,6 +397,8 @@ var (
 		"https://www.linkedin.com/jobs/view/4110235695/":  298, // nutanix
 		"https://www.linkedin.com/jobs/view/4105560497/":  299, // umbraspace
 		"https://www.linkedin.com/jobs/view/4106227833/":  300, // cognitedata
+		"https://www.linkedin.com/jobs/view/4094489606/":  394, // ubisoft
+		"https://www.linkedin.com/jobs/view/4081194563/":  395, // twosixtechnologies
 
 	}
 )
