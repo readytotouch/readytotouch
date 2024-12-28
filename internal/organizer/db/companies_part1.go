@@ -3402,6 +3402,9 @@ func companiesPart1() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "Bitly",
 			Website: "https://bitly.com/",
+			Careers: "https://bitly.com/pages/careers",
+			About:   "https://bitly.com/pages/about",
+			Blog:    "https://bitly.com/blog/why-we-write-everything-in-go/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                552285,
 				Alias:             "bitly",
@@ -3412,8 +3415,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "bitly",
-				GoRepositoryCount: 11,
+				Login:    "bitly",
+				Verified: true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Bitly-EI_IE800313.11,16.htm",
@@ -3428,17 +3431,11 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "Bitly",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    true, // https://bitly.com/blog/why-we-write-everything-in-go/
-			Vacancies: domain.Vacancies{
-				domain.Go:      []string{},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
+				domain.Go: {
+					GitHubRepositoriesCount: 13,
+					Vacancies:               []domain.Vacancy{},
+				},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -3714,8 +3711,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "okta",
-				GoRepositoryCount: 5,
+				Login:    "okta",
+				Verified: true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Okta-EI_IE444756.11,15.htm",
@@ -3730,20 +3727,18 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "Okta",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://app.otta.com/jobs/FtbF4gpB",
-					"https://app.otta.com/jobs/QcMdOhR_",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
+				domain.Go: {
+					GitHubRepositoriesCount: 8,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Software Engineer (Go/Terraform)",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4090884682/",
+							Date:             mustDate("2024-12-05"),
+						},
+					},
+				},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
