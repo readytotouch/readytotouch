@@ -1448,7 +1448,7 @@ func companiesPart1() []domain.CompanyProfile {
 						{
 							Title:            "Staff Backend Engineer",
 							ShortDescription: "Experience developing production-level Golang",
-							URL:              "https://app.otta.com/jobs/qdIzdfOu",
+							URL:              "https://app.welcometothejungle.com/jobs/qdIzdfOu",
 							Date:             mustDate("2024-10-18"), // The date is approximate because it is missing on the job listing page
 						},
 					},
@@ -2945,7 +2945,7 @@ func companiesPart1() []domain.CompanyProfile {
 						{
 							Title:            "Senior Platform Engineer",
 							ShortDescription: "Experience coding in Golang and interacting/building API’s",
-							URL:              "https://app.otta.com/jobs/UVRcHQhe",
+							URL:              "https://app.welcometothejungle.com/jobs/UVRcHQhe",
 							Date:             mustDate("2024-09-17"), // Appropriate date
 						},
 					},
@@ -3187,7 +3187,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GoMainLanguage:    true,
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
-					"https://app.otta.com/jobs/ZwnXtENr",
+					"https://app.welcometothejungle.com/jobs/ZwnXtENr",
 				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
@@ -3952,8 +3952,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "Sentinel-One",
-				GoRepositoryCount: 2,
+				Login:    "Sentinel-One",
+				Verified: true,
 			},
 			BlindProfile:     domain.BlindProfile{},
 			LevelsFyiProfile: domain.LevelsFyiProfile{},
@@ -3971,19 +3971,18 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "SentinelOne",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://app.otta.com/jobs/RN0fzEWC",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
+				domain.Go: {
+					GitHubRepositoriesCount: 2,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Backend Software Engineer (Go)",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4096029115/",
+							Date:             mustDate("2024-12-12"),
+						},
+					},
+				},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -4024,8 +4023,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "uber",
-				GoRepositoryCount: 30,
+				Login:    "uber",
+				Verified: false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Uber-EI_IE575263.11,15.htm",
@@ -4040,17 +4039,18 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "Uber",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    true,
-			Vacancies: domain.Vacancies{
-				domain.Go:      []string{},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
+				domain.Go: {
+					GitHubRepositoriesCount: 33,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Software Engineer — UberEats Order Platform",
+							ShortDescription: "Highly efficient coding in Golang, Java or any similar languages",
+							URL:              "https://www.linkedin.com/jobs/view/4093231440/",
+							Date:             mustDate("2024-12-05"),
+						},
+					},
+				},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -4210,8 +4210,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:             "soundcloud",
-				GoRepositoryCount: 5,
+				Login:    "soundcloud",
+				Verified: true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-SoundCloud-EI_IE407066.11,21.htm",
@@ -4226,22 +4226,31 @@ func companiesPart1() []domain.CompanyProfile {
 			OttaProfileSlug:   "SoundCloud",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
-			Vacancies: domain.Vacancies{
-				domain.Go: []string{
-					"https://app.otta.com/jobs/Q8WY5QwP",
-				},
-				domain.Rust:    nil,
-				domain.Zig:     nil,
-				domain.Scala:   nil,
-				domain.Elixir:  nil,
-				domain.Clojure: nil,
-				domain.Haskell: nil,
-			},
 			Languages: domain.Languages{
-				domain.Go:      {},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
+				domain.Go: {
+					GitHubRepositoriesCount: 5,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Media Streaming Backend Engineer",
+							ShortDescription: "Proficiency in Go is essential, and experience with additional programming languages such as Scala is highly advantageous",
+							URL:              "https://app.welcometothejungle.com/jobs/Q8WY5QwP",
+							Date:             mustDate("2024-12-27"), // Appropriate date
+						},
+					},
+				},
+				domain.Rust: {},
+				domain.Zig:  {},
+				domain.Scala: {
+					GitHubRepositoriesCount: 6,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior Media Streaming Backend Engineer",
+							ShortDescription: "Proficiency in Go is essential, and experience with additional programming languages such as Scala is highly advantageous",
+							URL:              "https://app.welcometothejungle.com/jobs/Q8WY5QwP",
+							Date:             mustDate("2024-12-27"), // Appropriate date
+						},
+					},
+				},
 				domain.Elixir:  {},
 				domain.Clojure: {},
 				domain.Haskell: {},
@@ -4511,7 +4520,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
-					"https://app.otta.com/jobs/L8SSyDNH",
+					"https://app.welcometothejungle.com/jobs/L8SSyDNH",
 				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
@@ -6516,7 +6525,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
-					"https://app.otta.com/jobs/x-Xm2wSF",
+					"https://app.welcometothejungle.com/jobs/x-Xm2wSF",
 				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
@@ -8981,7 +8990,7 @@ func companiesPart1() []domain.CompanyProfile {
 				// Link unavailable
 				domain.Go: []string{
 					"https://www.linkedin.com/jobs/view/3908431251/",
-					"https://app.otta.com/jobs/4ajPfsAU",
+					"https://app.welcometothejungle.com/jobs/4ajPfsAU",
 				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
@@ -9397,7 +9406,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
-					"https://app.otta.com/jobs/pB_hGf0W",
+					"https://app.welcometothejungle.com/jobs/pB_hGf0W",
 				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
@@ -10532,7 +10541,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
-					"https://app.otta.com/jobs/P5a_50Xb",
+					"https://app.welcometothejungle.com/jobs/P5a_50Xb",
 				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
@@ -11022,7 +11031,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
-					"https://app.otta.com/jobs/P4ept_aQ",
+					"https://app.welcometothejungle.com/jobs/P4ept_aQ",
 				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
@@ -11077,7 +11086,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
-					"https://app.otta.com/jobs/nKhnfPzD",
+					"https://app.welcometothejungle.com/jobs/nKhnfPzD",
 				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
@@ -11180,7 +11189,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
-					"https://app.otta.com/jobs/xpGrXDnd",
+					"https://app.welcometothejungle.com/jobs/xpGrXDnd",
 				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
@@ -11233,7 +11242,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
-					"https://app.otta.com/jobs/EK9Av13p",
+					"https://app.welcometothejungle.com/jobs/EK9Av13p",
 				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
@@ -11294,7 +11303,7 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Clojure: nil,
 				domain.Haskell: []string{
 					"https://app.welcometothejungle.com/jobs/UzSGGV5V",
-					"https://app.otta.com/jobs/8o2_A2QN",
+					"https://app.welcometothejungle.com/jobs/8o2_A2QN",
 				},
 			},
 			Languages: domain.Languages{
@@ -11349,7 +11358,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
-					"https://app.otta.com/jobs/N2SJQvgM",
+					"https://app.welcometothejungle.com/jobs/N2SJQvgM",
 				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
@@ -11399,7 +11408,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
-					"https://app.otta.com/jobs/QaTOxLFC",
+					"https://app.welcometothejungle.com/jobs/QaTOxLFC",
 				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
@@ -11500,7 +11509,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
-					"https://app.otta.com/jobs/0g6xbMY_",
+					"https://app.welcometothejungle.com/jobs/0g6xbMY_",
 				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
@@ -11601,7 +11610,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
-					"https://app.otta.com/jobs/h0EkrVdy",
+					"https://app.welcometothejungle.com/jobs/h0EkrVdy",
 				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
@@ -11884,10 +11893,10 @@ func companiesPart1() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
-					"https://app.otta.com/jobs/k6ASPhV7",
+					"https://app.welcometothejungle.com/jobs/k6ASPhV7",
 				},
 				domain.Rust: []string{
-					"https://app.otta.com/jobs/k6ASPhV7",
+					"https://app.welcometothejungle.com/jobs/k6ASPhV7",
 				},
 				domain.Zig:     nil,
 				domain.Scala:   nil,
@@ -11940,7 +11949,7 @@ func companiesPart1() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Vacancies: domain.Vacancies{
 				domain.Go: []string{
-					"https://app.otta.com/jobs/DwReS2t8",
+					"https://app.welcometothejungle.com/jobs/DwReS2t8",
 				},
 				domain.Rust:    nil,
 				domain.Zig:     nil,
