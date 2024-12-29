@@ -137,13 +137,15 @@ func companiesPart2() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:            "",
-							ShortDescription: "",
-							URL:              "https://app.welcometothejungle.com/jobs/63inUEkF",
-							Date:             mustDate(""),
-						},
+					Vacancies:               []domain.Vacancy{
+						/*
+							{
+								Title:            "",
+								ShortDescription: "",
+								URL:              "https://app.welcometothejungle.com/jobs/63inUEkF",
+								Date:             mustDate(""),
+							},
+						*/
 					},
 				},
 				domain.Rust:    {},
@@ -185,13 +187,15 @@ func companiesPart2() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 23,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:            "",
-							ShortDescription: "",
-							URL:              "https://app.welcometothejungle.com/jobs/dFlIR1ow",
-							Date:             mustDate(""),
-						},
+					Vacancies:               []domain.Vacancy{
+						/*
+							{
+								Title:            "",
+								ShortDescription: "",
+								URL:              "https://app.welcometothejungle.com/jobs/dFlIR1ow",
+								Date:             mustDate(""),
+							},
+						*/
 					},
 				},
 				domain.Rust:    {},
@@ -282,13 +286,15 @@ func companiesPart2() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:            "",
-							ShortDescription: "",
-							URL:              "https://app.welcometothejungle.com/jobs/duQ9FWwK",
-							Date:             mustDate(""),
-						},
+					Vacancies:               []domain.Vacancy{
+						/*
+							{
+								Title:            "",
+								ShortDescription: "",
+								URL:              "https://app.welcometothejungle.com/jobs/duQ9FWwK",
+								Date:             mustDate(""),
+							},
+						*/
 					},
 				},
 				domain.Rust:    {},
@@ -433,13 +439,15 @@ func companiesPart2() []domain.CompanyProfile {
 				domain.Scala: {},
 				domain.Elixir: {
 					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:            "",
-							ShortDescription: "",
-							URL:              "https://app.welcometothejungle.com/jobs/srNX_4cO",
-							Date:             mustDate(""),
-						},
+					Vacancies:               []domain.Vacancy{
+						/*
+							{
+								Title:            "",
+								ShortDescription: "",
+								URL:              "https://app.welcometothejungle.com/jobs/srNX_4cO",
+								Date:             mustDate(""),
+							},
+						*/
 					},
 				},
 				domain.Clojure: {},
@@ -540,13 +548,15 @@ func companiesPart2() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:            "",
-							ShortDescription: "",
-							URL:              "https://app.welcometothejungle.com/jobs/EjVpa6gl",
-							Date:             mustDate(""),
-						},
+					Vacancies:               []domain.Vacancy{
+						/*
+							{
+								Title:            "",
+								ShortDescription: "",
+								URL:              "https://app.welcometothejungle.com/jobs/EjVpa6gl",
+								Date:             mustDate(""),
+							},
+						*/
 					},
 				},
 				domain.Rust:    {},
@@ -1006,10 +1016,10 @@ func companiesPart2() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 5,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "",
-							ShortDescription: "",
-							URL:              "https://app.welcometothejungle.com/jobs/wxzE8h5B",
-							Date:             mustDate(""),
+							Title:            "Senior Software Engineer, Analytics Team",
+							ShortDescription: "Using languages such as, Rust and Golang",
+							URL:              "https://www.linkedin.com/jobs/view/4082610714/",
+							Date:             mustDate("2024-12-05"),
 						},
 					},
 				},
@@ -1017,10 +1027,10 @@ func companiesPart2() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 32,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "",
-							ShortDescription: "",
-							URL:              "https://app.welcometothejungle.com/jobs/wxzE8h5B",
-							Date:             mustDate(""),
+							Title:            "Senior Software Engineer, Analytics Team",
+							ShortDescription: "Using languages such as, Rust and Golang",
+							URL:              "https://www.linkedin.com/jobs/view/4082610714/",
+							Date:             mustDate("2024-12-05"),
 						},
 					},
 				},
@@ -1069,10 +1079,10 @@ func companiesPart2() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 30,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "",
-							ShortDescription: "",
+							Title:            "Engineering Manager",
+							ShortDescription: "Strong technical background in one of: Clojure or Frontend (React + Typescript) ecosystems",
 							URL:              "https://app.welcometothejungle.com/jobs/K21IaTJ2",
-							Date:             mustDate(""),
+							Date:             mustDate("2024-12-27"), // Approximate date
 						},
 					},
 				},
@@ -1665,10 +1675,10 @@ func companiesPart2() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "",
-							ShortDescription: "",
-							URL:              "https://app.welcometothejungle.com/jobs/hnl2J9ws",
-							Date:             mustDate(""),
+							Title:            "Senior Software Engineer",
+							ShortDescription: "Strong background in software development in one or more general purpose programming languages including but not limited to: Go, Java, or C++",
+							URL:              "https://www.linkedin.com/jobs/view/3949883320/",
+							Date:             mustDate("2024-06-25"),
 						},
 					},
 				},
@@ -1713,13 +1723,15 @@ func companiesPart2() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 87,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:            "",
-							ShortDescription: "",
-							URL:              "https://app.welcometothejungle.com/jobs/vuvd0QAu",
-							Date:             mustDate(""),
-						},
+					Vacancies:               []domain.Vacancy{
+						/*
+							{
+								Title:            "",
+								ShortDescription: "",
+								URL:              "https://app.welcometothejungle.com/jobs/vuvd0QAu",
+								Date:             mustDate(""),
+							},
+						*/
 					},
 				},
 				domain.Rust:    {},
@@ -1766,13 +1778,15 @@ func companiesPart2() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:            "",
-							ShortDescription: "",
-							URL:              "https://app.welcometothejungle.com/jobs/A7daqq7I",
-							Date:             mustDate(""),
-						},
+					Vacancies:               []domain.Vacancy{
+						/*
+							{
+								Title:            "",
+								ShortDescription: "",
+								URL:              "https://app.welcometothejungle.com/jobs/A7daqq7I",
+								Date:             mustDate(""),
+							},
+						*/
 					},
 				},
 				domain.Rust:    {},
@@ -2226,13 +2240,15 @@ func companiesPart2() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:            "",
-							ShortDescription: "",
-							URL:              "https://app.welcometothejungle.com/jobs/UU1oL2xl",
-							Date:             mustDate(""),
-						},
+					Vacancies:               []domain.Vacancy{
+						/*
+							{
+								Title:            "",
+								ShortDescription: "",
+								URL:              "https://app.welcometothejungle.com/jobs/UU1oL2xl",
+								Date:             mustDate(""),
+							},
+						*/
 					},
 				},
 				domain.Rust:    {},
@@ -2276,13 +2292,15 @@ func companiesPart2() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:            "",
-							ShortDescription: "",
-							URL:              "https://app.welcometothejungle.com/jobs/whJEvleb",
-							Date:             mustDate(""),
-						},
+					Vacancies:               []domain.Vacancy{
+						/*
+							{
+								Title:            "",
+								ShortDescription: "",
+								URL:              "https://app.welcometothejungle.com/jobs/whJEvleb",
+								Date:             mustDate(""),
+							},
+						*/
 					},
 				},
 				domain.Rust:    {},
@@ -2327,13 +2345,15 @@ func companiesPart2() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 9,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:            "",
-							ShortDescription: "",
-							URL:              "",
-							Date:             mustDate(""),
-						},
+					Vacancies:               []domain.Vacancy{
+						/*
+							{
+								Title:            "",
+								ShortDescription: "",
+								URL:              "",
+								Date:             mustDate(""),
+							},
+						*/
 					},
 				},
 				domain.Rust:    {},
@@ -2378,13 +2398,15 @@ func companiesPart2() []domain.CompanyProfile {
 				domain.Zig:  {},
 				domain.Scala: {
 					GitHubRepositoriesCount: 2,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:            "",
-							ShortDescription: "",
-							URL:              "https://app.welcometothejungle.com/jobs/RmSslgyY",
-							Date:             mustDate(""),
-						},
+					Vacancies:               []domain.Vacancy{
+						/*
+							{
+								Title:            "",
+								ShortDescription: "",
+								URL:              "https://app.welcometothejungle.com/jobs/RmSslgyY",
+								Date:             mustDate(""),
+							},
+						*/
 					},
 				},
 				domain.Elixir:  {},
@@ -2430,10 +2452,10 @@ func companiesPart2() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "",
-							ShortDescription: "",
-							URL:              "https://app.welcometothejungle.com/jobs/YvpdZmyz",
-							Date:             mustDate(""),
+							Title:            "Senior Software Engineer",
+							ShortDescription: "Our stack consists of Ruby, Rust, TypeScript, and React. We use Postgres, Redis, and S3 for data storage.",
+							URL:              "https://www.linkedin.com/jobs/view/3969153699/",
+							Date:             mustDate("2024-07-26"),
 						},
 					},
 				},
@@ -5724,13 +5746,15 @@ func companiesPart2() []domain.CompanyProfile {
 				domain.Go: {},
 				domain.Rust: {
 					GitHubRepositoriesCount: 27,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:            "",
-							ShortDescription: "",
-							URL:              "https://www.ycombinator.com/companies/shuttle/jobs/pEYmbIL-senior-software-engineer",
-							Date:             mustDate(""),
-						},
+					Vacancies:               []domain.Vacancy{
+						/*
+							{
+								Title:            "",
+								ShortDescription: "",
+								URL:              "https://www.ycombinator.com/companies/shuttle/jobs/pEYmbIL-senior-software-engineer",
+								Date:             mustDate(""),
+							},
+						*/
 					},
 				},
 				domain.Zig:     {},
