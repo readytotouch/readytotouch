@@ -3253,7 +3253,7 @@ func companiesPart1() []domain.CompanyProfile {
 						{
 							Title:            "",
 							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/3917097524/",
+							URL:              "",
 							Date:             mustDate(""),
 						},
 					},
@@ -3310,7 +3310,7 @@ func companiesPart1() []domain.CompanyProfile {
 						{
 							Title:            "",
 							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/3921514553/",
+							URL:              "",
 							Date:             mustDate(""),
 						},
 					},
@@ -5568,10 +5568,10 @@ func companiesPart1() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 3,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "",
+							Title:            "Senior Backend Engineer (Golang)",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/3819771736/",
-							Date:             mustDate(""),
+							Date:             mustDate("2024-04-25"),
 						},
 					},
 				},
@@ -7103,7 +7103,7 @@ func companiesPart1() []domain.CompanyProfile {
 						{
 							Title:            "",
 							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/3887639999/",
+							URL:              "",
 							Date:             mustDate(""),
 						},
 					},
@@ -7254,7 +7254,7 @@ func companiesPart1() []domain.CompanyProfile {
 						{
 							Title:            "",
 							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/3885860612/",
+							URL:              "",
 							Date:             mustDate(""),
 						},
 					},
@@ -8676,7 +8676,7 @@ func companiesPart1() []domain.CompanyProfile {
 						{
 							Title:            "",
 							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/3897435235/",
+							URL:              "",
 							Date:             mustDate(""),
 						},
 					},
@@ -8823,7 +8823,7 @@ func companiesPart1() []domain.CompanyProfile {
 						{
 							Title:            "",
 							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/3910420916/",
+							URL:              "",
 							Date:             mustDate(""),
 						},
 					},
@@ -8922,7 +8922,7 @@ func companiesPart1() []domain.CompanyProfile {
 						{
 							Title:            "",
 							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/3910059830/",
+							URL:              "",
 							Date:             mustDate(""),
 						},
 					},
@@ -9124,7 +9124,7 @@ func companiesPart1() []domain.CompanyProfile {
 						{
 							Title:            "",
 							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/3913559527/",
+							URL:              "",
 							Date:             mustDate(""),
 						},
 					},
@@ -9333,7 +9333,7 @@ func companiesPart1() []domain.CompanyProfile {
 						{
 							Title:            "",
 							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/3912106948/",
+							URL:              "",
 							Date:             mustDate(""),
 						},
 					},
@@ -9588,7 +9588,7 @@ func companiesPart1() []domain.CompanyProfile {
 						{
 							Title:            "",
 							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/3913102407/",
+							URL:              "",
 							Date:             mustDate(""),
 						},
 					},
@@ -9637,7 +9637,7 @@ func companiesPart1() []domain.CompanyProfile {
 						{
 							Title:            "",
 							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/3912880597/",
+							URL:              "",
 							Date:             mustDate(""),
 						},
 					},
@@ -9686,7 +9686,7 @@ func companiesPart1() []domain.CompanyProfile {
 						{
 							Title:            "",
 							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/3915346698/",
+							URL:              "",
 							Date:             mustDate(""),
 						},
 					},
@@ -10143,7 +10143,7 @@ func companiesPart1() []domain.CompanyProfile {
 						{
 							Title:            "",
 							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/3912222258/",
+							URL:              "",
 							Date:             mustDate(""),
 						},
 					},
@@ -10241,7 +10241,7 @@ func companiesPart1() []domain.CompanyProfile {
 						{
 							Title:            "",
 							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/3914185384/",
+							URL:              "",
 							Date:             mustDate(""),
 						},
 					},
@@ -10882,7 +10882,7 @@ func companiesPart1() []domain.CompanyProfile {
 						{
 							Title:            "",
 							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/3916325061/",
+							URL:              "",
 							Date:             mustDate(""),
 						},
 					},
@@ -11996,10 +11996,10 @@ func companiesPart1() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "",
+							Title:            "Rust Software Engineer",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4023783229/",
-							Date:             mustDate(""),
+							Date:             mustDate("2024-09-25"),
 						},
 					},
 				},
@@ -12044,10 +12044,10 @@ func companiesPart1() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "",
+							Title:            "Senior Software Engineer (Rust)",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4023717146/",
-							Date:             mustDate(""),
+							Date:             mustDate("2024-09-25"),
 						},
 					},
 				},
@@ -12092,10 +12092,10 @@ func companiesPart1() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 14,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "",
+							Title:            "Rust Software Engineer (Data&Tools)",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4029289382/",
-							Date:             mustDate(""),
+							Date:             mustDate("2024-09-25"),
 						},
 					},
 				},
@@ -12149,10 +12149,10 @@ func companiesPart1() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "",
+							Title:            "(Senior) Software Engineer (Rust, Backend)",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4031949216/",
-							Date:             mustDate(""),
+							Date:             mustDate("2024-09-25"),
 						},
 					},
 				},
@@ -12177,7 +12177,7 @@ func companiesPart1() []domain.CompanyProfile {
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                10128253,
 				Alias:             "dronesense",
-				Name:              "DroneSense",
+				Name:              "DroneSense, Inc.",
 				Followers:         "10K",
 				Employees:         "10+",
 				AssociatedMembers: "53",
@@ -12200,10 +12200,10 @@ func companiesPart1() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "",
+							Title:            "Rust Developer",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4035121961/",
-							Date:             mustDate(""),
+							Date:             mustDate("2024-09-25"),
 						},
 					},
 				},
@@ -12248,10 +12248,10 @@ func companiesPart1() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "",
+							Title:            "Senior Software Engineer Quantum Computing (Python/Rust)",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4033619128/",
-							Date:             mustDate(""),
+							Date:             mustDate("2024-09-25"),
 						},
 					},
 				},
@@ -12351,7 +12351,7 @@ func companiesPart1() []domain.CompanyProfile {
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                22302976,
 				Alias:             "scitecinc",
-				Name:              "SciTec",
+				Name:              "SciTec, Inc.",
 				Followers:         "16K",
 				Employees:         "200+",
 				AssociatedMembers: "304",
@@ -12375,10 +12375,10 @@ func companiesPart1() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "",
+							Title:            "Rust Staff /Senior Software Engineer",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4018720987/",
-							Date:             mustDate(""),
+							Date:             mustDate("2024-11-25"),
 						},
 					},
 				},
@@ -12426,10 +12426,10 @@ func companiesPart1() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "",
+							Title:            "Senior Rust Developer",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4034993832/",
-							Date:             mustDate(""),
+							Date:             mustDate("2024-09-25"),
 						},
 					},
 				},
@@ -12677,10 +12677,10 @@ func companiesPart1() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "",
+							Title:            "Software Engineer, Backend (Rust)",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4038779132/",
-							Date:             mustDate(""),
+							Date:             mustDate("2024-10-25"),
 						},
 					},
 				},
@@ -12725,10 +12725,10 @@ func companiesPart1() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "",
+							Title:            "Senior Software Engineer (Rust, C++)",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4022259692/",
-							Date:             mustDate(""),
+							Date:             mustDate("2024-12-05"),
 						},
 					},
 				},
@@ -12899,10 +12899,10 @@ func companiesPart1() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 3,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "",
+							Title:            "Backend Software Engineer (Rust)",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/3992496369/",
-							Date:             mustDate(""),
+							Date:             mustDate("2024-08-26"),
 						},
 					},
 				},
@@ -12949,10 +12949,10 @@ func companiesPart1() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "",
+							Title:            "Rust Cloud Service Developer (US)",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4043996376/",
-							Date:             mustDate(""),
+							Date:             mustDate("2024-10-25"),
 						},
 					},
 				},
@@ -12998,10 +12998,10 @@ func companiesPart1() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "",
+							Title:            "Senior/Staff Systems Programmer (Rust)",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4047041896/",
-							Date:             mustDate(""),
+							Date:             mustDate("2024-10-25"),
 						},
 					},
 				},
