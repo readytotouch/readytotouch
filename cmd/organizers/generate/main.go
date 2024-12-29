@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"go/format"
 	"os"
+	"sort"
 
 	"github.com/readytotouch/readytotouch/internal/domain"
 	"github.com/readytotouch/readytotouch/internal/organizer/db"
@@ -19,6 +20,7 @@ func main() {
 
 	generateCompanies(companies)
 	generateVacancies(companies)
+	generateLogosSearch(companies)
 }
 
 func generateCompanies(companies []domain.CompanyProfile) {
@@ -136,4 +138,33 @@ func generateVacancies(companies []domain.CompanyProfile) {
 
 	fmt.Println("Vacancy code generated successfully")
 	fmt.Printf("Max ID: %d\n", maxID)
+}
+
+func generateLogosSearch(companies []domain.CompanyProfile) {
+	var (
+		pairs = make([]*dev.CompanyCodePair, 0, len(companies))
+	)
+
+	for _, company := range companies {
+		id := organizers.CompanyAliasMap[company.LinkedInProfile.Alias]
+
+		if id == 0 || !company.LinkedInProfile.Verified || company.Ignore {
+			continue
+		}
+
+		pairs = append(pairs, &dev.CompanyCodePair{
+			ID:    id,
+			Name:  company.LinkedInProfile.Name,
+			Alias: company.LinkedInProfile.Alias,
+		})
+	}
+
+	sort.Slice(pairs, func(i, j int) bool {
+		return pairs[i].Name < pairs[j].Name
+	})
+
+	err := os.WriteFile("./private/logos_search.md", []byte(dev.LogosSearch(pairs)), 0644)
+	if err != nil {
+		panic(err)
+	}
 }
