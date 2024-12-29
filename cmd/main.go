@@ -203,7 +203,7 @@ func main() {
 	r.GET("/organizers/scala/companies/:company_alias", organizerController.CompanyV2)
 	r.GET("/organizers/scala/companies/:company_alias/v1", organizerController.CompanyV1)
 	r.GET("/organizers/scala/companies/:company_alias/v2", organizerController.CompanyV2)
-	r.GET("/organizers/scala/vacancies", organizerController.Waitlist)
+	r.GET("/organizers/scala/vacancies", organizerController.Vacancies)
 	r.GET("/organizers/scala/communities", organizerController.ScalaCommunities)
 	r.GET("/organizers/elixir/companies", organizerController.CompaniesV2)
 	r.GET("/organizers/elixir/companies/v1", organizerController.CompaniesV1)
