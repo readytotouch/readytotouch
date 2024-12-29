@@ -63,9 +63,8 @@ type UnsafeCompanyResponse struct {
 }
 
 type GitHubProfile struct {
-	Login             string
-	GoRepositoryCount int // Deprecated
-	Verified          bool
+	Login    string
+	Verified bool
 }
 
 type GlassdoorProfile struct {
