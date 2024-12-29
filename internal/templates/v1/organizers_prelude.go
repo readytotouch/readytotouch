@@ -9,7 +9,7 @@ import (
 )
 
 const (
-	Go = 0
+	Go = domain.Go
 )
 
 const (
