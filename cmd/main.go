@@ -118,6 +118,7 @@ func main() {
 			vacancyViewStatsRepository,
 		)
 		cacController = pkgCAC.NewController(
+			userRepository,
 			userToLinkedInCompanyRepository,
 			pkgCAC.NewService(
 				userToLinkedInCompanyRepository,
