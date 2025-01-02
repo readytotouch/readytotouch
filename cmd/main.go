@@ -265,7 +265,7 @@ func main() {
 		StaticFile("/design/online", "./public/design/online.html").
 		StaticFile("/design/online-auth", "./public/design/online-auth.html").
 
-		// Design from OrganizerFeature
+		// Organizers
 		StaticFile("/design/organizers", "./public/design/organizer-main-page-auth.html").
 		StaticFile("/design/organizers-auth", "./public/design/organizer-main-page.html").
 		GET("/design/organizers/:language/welcome", s("./public/design/organizer-welcome.html")).
@@ -285,6 +285,11 @@ func main() {
 		GET("/design/organizers/elixir/communities", s("./public/design/organizer-elixir-communities.html")).
 		GET("/design/organizers/clojure/communities", s("./public/design/organizer-clojure-communities.html")).
 		GET("/design/organizers/:language/communities", s("./public/design/organizer-go-communities.html")).
+
+		// Companies and connections
+		StaticFile("/design/companies-and-connections", "./public/design/connections.html").
+		StaticFile("/design/companies-and-connections/ukraine", "./public/design/connections.html").
+		StaticFile("/design/companies-and-connections/brazil", "./public/design/connections.html").
 
 		// Design from ChatGPT
 		StaticFile("/design/wip/companies-and-connections", "./public/chatgpt-design/companies-and-connections.html").

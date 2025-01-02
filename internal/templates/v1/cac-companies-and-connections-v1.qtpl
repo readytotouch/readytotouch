@@ -1,3 +1,44 @@
-{%- func CompaniesAndConnectionsV1() -%}
+{%- func CompaniesAndConnectionsV1(
+  headerProfiles []SocialProviderUser,
+  authQueryParams string,
+) -%}
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <title>Companies and connections</title>
+    <meta name="description" content="Companies and connections">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="author" type="text/plain" href="https://readytotouch.com/humans.txt"/>
+    <meta property="og:image" content="/assets/images/og/organizers-light.jpg">
+
+    {%= favicon() %}
+    {%= organizersFonts() %}
+    {%= companiesAndConnectionsV1Styles() %}
+    {%= ga() %}
+</head>
+<body>
+<header class="header">
+	<div class="header__wrapper">
+		<a href="/" class="header__logo">
+			<img class="header__logo-img" src="/assets/images/pages/online/logo.svg" alt="ReadyToTouch logo">
+			<h3 class="header__logo-title">ReadyToTouch</h3>
+		</a>
+        {%= organizersHeaderStars() %}
+        {% if len(headerProfiles) > 0 %}
+        {%= organizersHeaderProfile(headerProfiles) %}
+        {% else %}
+        <a href="/organizers/golang/welcome{%s authQueryParams %}" class="button button--small-padding button--bordered-gray header__login-button">Log in</a>
+        {% endif %}
+    </div>
+</header>
+
+<main class="main-wrapper"></main>
+
+{%= organizersFooter() %}
+
+</body>
+</html>
 {%- endfunc -%}

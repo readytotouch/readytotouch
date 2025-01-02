@@ -14,20 +14,89 @@ var (
 	_ = qt422016.AcquireByteBuffer
 )
 
-func StreamCompaniesAndConnectionsV1(qw422016 *qt422016.Writer) {
+func StreamCompaniesAndConnectionsV1(qw422016 *qt422016.Writer,
+	headerProfiles []SocialProviderUser,
+	authQueryParams string,
+) {
+	qw422016.N().S(`<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Companies and connections</title>
+    <meta name="description" content="Companies and connections">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="author" type="text/plain" href="https://readytotouch.com/humans.txt"/>
+    <meta property="og:image" content="/assets/images/og/organizers-light.jpg">
+
+    `)
+	streamfavicon(qw422016)
 	qw422016.N().S(`
+    `)
+	streamorganizersFonts(qw422016)
+	qw422016.N().S(`
+    `)
+	streamcompaniesAndConnectionsV1Styles(qw422016)
+	qw422016.N().S(`
+    `)
+	streamga(qw422016)
+	qw422016.N().S(`
+</head>
+<body>
+<header class="header">
+	<div class="header__wrapper">
+		<a href="/" class="header__logo">
+			<img class="header__logo-img" src="/assets/images/pages/online/logo.svg" alt="ReadyToTouch logo">
+			<h3 class="header__logo-title">ReadyToTouch</h3>
+		</a>
+        `)
+	streamorganizersHeaderStars(qw422016)
+	qw422016.N().S(`
+        `)
+	if len(headerProfiles) > 0 {
+		qw422016.N().S(`
+        `)
+		streamorganizersHeaderProfile(qw422016, headerProfiles)
+		qw422016.N().S(`
+        `)
+	} else {
+		qw422016.N().S(`
+        <a href="/organizers/golang/welcome`)
+		qw422016.E().S(authQueryParams)
+		qw422016.N().S(`" class="button button--small-padding button--bordered-gray header__login-button">Log in</a>
+        `)
+	}
+	qw422016.N().S(`
+    </div>
+</header>
+
+<main class="main-wrapper"></main>
+
+`)
+	streamorganizersFooter(qw422016)
+	qw422016.N().S(`
+
+</body>
+</html>
 `)
 }
 
-func WriteCompaniesAndConnectionsV1(qq422016 qtio422016.Writer) {
+func WriteCompaniesAndConnectionsV1(qq422016 qtio422016.Writer,
+	headerProfiles []SocialProviderUser,
+	authQueryParams string,
+) {
 	qw422016 := qt422016.AcquireWriter(qq422016)
-	StreamCompaniesAndConnectionsV1(qw422016)
+	StreamCompaniesAndConnectionsV1(qw422016, headerProfiles, authQueryParams)
 	qt422016.ReleaseWriter(qw422016)
 }
 
-func CompaniesAndConnectionsV1() string {
+func CompaniesAndConnectionsV1(
+	headerProfiles []SocialProviderUser,
+	authQueryParams string,
+) string {
 	qb422016 := qt422016.AcquireByteBuffer()
-	WriteCompaniesAndConnectionsV1(qb422016)
+	WriteCompaniesAndConnectionsV1(qb422016, headerProfiles, authQueryParams)
 	qs422016 := string(qb422016.B)
 	qt422016.ReleaseByteBuffer(qb422016)
 	return qs422016
