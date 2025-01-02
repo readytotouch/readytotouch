@@ -71,7 +71,24 @@ func StreamCompaniesAndConnectionsV1(qw422016 *qt422016.Writer,
     </div>
 </header>
 
-<main class="main-wrapper"></main>
+<main class="main-wrapper">
+<div class="main-container main-container--connections">
+	<h1 class="connections__title">Companies & Connections</h1>
+
+	<section class="search">
+        <h3 class="search__group-title">Add company to your list</h3>
+        <div class="search__input-group-button">
+            <label class="search__label" for="company">Company LinkedIn profile URL</label>
+            <div class="search__input-button-group">
+                <input class="search__input" id="company" type="text" placeholder="Enter company LinkedIn profile URL"/>
+                <a href="#" class="button button--small-padding button--black">Add</a>
+            </div>
+        </div>
+    </section>
+
+
+</div>
+</main>
 
 `)
 	streamorganizersFooter(qw422016)
