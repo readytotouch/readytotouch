@@ -1,0 +1,3 @@
+{%- func CompaniesAndConnectionsV1() -%}
+
+{%- endfunc -%}

@@ -22,7 +22,7 @@ func NewController(userToLinkedInCompanyRepository *postgres.UserToLinkedInCompa
 }
 
 func (c *Controller) Index(ctx *gin.Context) {
-	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.WipCompaniesAndConnections()))
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.CompaniesAndConnectionsV0()))
 }
 
 func (c *Controller) Ukraine(ctx *gin.Context) {
