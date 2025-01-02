@@ -247,11 +247,13 @@ func main() {
 
 	r.
 		// WIP
-		// GET("/wip/companies-and-connections", cacController.Countries).
-		GET("/wip/companies-and-connections/ukraine", cacController.Ukraine).
-		GET("/wip/companies-and-connections/czechia", cacController.Czechia).
-		GET("/wip/companies-and-connections/poland", cacController.Poland).
-		GET("/wip/companies-and-connections/brazil", cacController.Brazil).
+		GET("/companies-and-connections", found("/companies-and-connections/worldwide")).
+		GET("/companies-and-connections/worldwide", cacController.Worldwide).
+		GET("/companies-and-connections/ukraine", cacController.Ukraine).
+		GET("/companies-and-connections/brazil", cacController.Brazil).
+		GET("/wip/companies-and-connections", found("/companies-and-connections/worldwide")).
+		GET("/wip/companies-and-connections/ukraine", found("/companies-and-connections/ukraine")).
+		GET("/wip/companies-and-connections/brazil", found("/companies-and-connections/brazil")).
 		GET("/api/v1/companies-and-connections/companies.json", cacController.Companies).
 		POST("/api/v1/companies-and-connections/companies.json", cacController.AddCompany).
 		DELETE("/api/v1/companies-and-connections/companies.json", cacController.DeleteCompany)
@@ -288,6 +290,7 @@ func main() {
 
 		// Companies and connections
 		StaticFile("/design/companies-and-connections", "./public/design/connections.html").
+		StaticFile("/design/companies-and-connections/worldwide", "./public/design/connections.html").
 		StaticFile("/design/companies-and-connections/ukraine", "./public/design/connections.html").
 		StaticFile("/design/companies-and-connections/brazil", "./public/design/connections.html").
 

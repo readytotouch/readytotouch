@@ -25,15 +25,11 @@ func (c *Controller) Index(ctx *gin.Context) {
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.CompaniesAndConnectionsV0()))
 }
 
+func (c *Controller) Worldwide(ctx *gin.Context) {
+	c.Index(ctx)
+}
+
 func (c *Controller) Ukraine(ctx *gin.Context) {
-	c.Index(ctx)
-}
-
-func (c *Controller) Czechia(ctx *gin.Context) {
-	c.Index(ctx)
-}
-
-func (c *Controller) Poland(ctx *gin.Context) {
 	c.Index(ctx)
 }
 
