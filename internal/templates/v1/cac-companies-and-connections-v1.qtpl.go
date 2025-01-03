@@ -22,8 +22,8 @@ func StreamCompaniesAndConnectionsV1(qw422016 *qt422016.Writer,
 <html lang="en">
 
 <head>
-    <title>Companies and connections</title>
-    <meta name="description" content="Companies and connections">
+    <title>Companies & Connections</title>
+    <meta name="description" content="Companies & Connections">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -78,22 +78,85 @@ func StreamCompaniesAndConnectionsV1(qw422016 *qt422016.Writer,
 	<section class="search">
         <h3 class="search__group-title">Add company to your list</h3>
         <div class="search__input-group-button">
-            <label class="search__label" for="company">Company LinkedIn profile URL</label>
+            <label class="search__label" for="company-url">Company LinkedIn profile URL</label>
             <div class="search__input-button-group">
-                <input class="search__input" id="company" type="text" placeholder="Enter company LinkedIn profile URL"/>
-                <a href="#" class="button button--small-padding button--black">Add</a>
+                <input class="search__input" id="company-url" type="text" placeholder="Enter company LinkedIn profile URL" list="company-url-list"/>
+                <datalist id="company-url-list">
+                    <option value="https://www.linkedin.com/company/google/">
+                    <option value="https://www.linkedin.com/company/microsoft/">
+                    <option value="https://www.linkedin.com/company/nvidia/">
+                </datalist>
+                <button id="add-company" class="button button--small-padding button--black">Add</button>
             </div>
         </div>
     </section>
 
+    <div class="search-result mt-32">
+        <div class="container">
+            <div class="search-result__wrapper">
+                <!-- filters -->
+                <aside class="search-result__filters">
+                    <div class="search-result__filter-group">
+                        <div class="search-result__filter-header">
+                            <h2 class="search-result__filter-headline">Connections settings</h2>
+                        </div>
 
+                        <div class="filters filters__with-footer">
+                            <div class="filters__group">
+                                <div class="filters__elements">
+                                    <div class="textarea">
+                                        <label for="keywords" class="textarea__label">
+                                            Keywords
+                                        </label>
+                                        <textarea id="keywords" class="textarea__item textarea__item--filter" placeholder="Position title, level, or other keywords..."></textarea>
+                                    </div>
+                                </div>
+                                <div class="filters__elements">
+                                    <label for="location" class="textarea__label">
+                                        Location
+                                    </label>
+                                    <select id="location" name="location" class="select select--filter">
+                                        <option value="">Worldwide</option>
+                                        <option value="105072130">Poland</option>
+                                        <option value="101282230">Germany</option>
+                                        <option value="106670623">Romania</option>
+                                        <option value="105646813">Spain</option>
+                                        <option value="104508036">Czechia</option>
+                                        <option value="102105699">Türkiye</option>
+                                        <option value="100364837">Portugal</option>
+                                        <option value="105333783">Bulgaria</option>
+                                        <option value="103350119">Italy</option>
+                                        <option value="106693272">Switzerland</option>
+                                        <option value="103644278">United States</option>
+                                        <option value="101165590">United Kingdom</option>
+                                        <option value="101174742">Canada</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <button id="update-connections" class="button button--bordered-universe button--full">Update connections</button>
+                    </div>
+                </aside>
+                <!-- /filters -->
+
+                <div class="search-result--group">
+                    <div id="search_result_list" class="search-result__list">
+                        <p class="search-result-found"><span id="js-companies-count" class="search-result-found__amount">0</span> companies</p>
+                        <div id="js-companies" class="search-result__cards row-gap-8 mt-24"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 </main>
 
 `)
 	streamorganizersFooter(qw422016)
 	qw422016.N().S(`
-
+<script src="/assets/js/companies-and-connections-app.js?`)
+	qw422016.N().D(appVersion)
+	qw422016.N().S(`"></script>
 </body>
 </html>
 `)
