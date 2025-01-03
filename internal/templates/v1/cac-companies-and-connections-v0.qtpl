@@ -1,4 +1,4 @@
-{%- func WipCompaniesAndConnections() -%}
+{%- func CompaniesAndConnectionsV0() -%}
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -6,7 +6,7 @@ require("esbuild").buildSync({
         "./src/organizers-vacancies-app.ts",
         "./src/organizers-communities-app.ts",
         "./src/organizers-company-app.ts",
-        "./src/wip-companies-and-connections-app.ts",
+        "./src/companies-and-connections-app.ts",
     ],
     bundle: true,
     minify: process.env.MINIFY === "true",
