@@ -96,12 +96,14 @@ type IndeedProfile struct {
 }
 
 type Vacancy struct {
-	Title            string
-	ShortDescription string // proof that the vacancy is for a particular technology
-	URL              string
-	Date             time.Time
-	WithSalary       bool // for future use
-	Remote           bool // for future use
+	Title                string
+	ShortDescription     string // proof that the vacancy is for a particular technology
+	SwitchingOpportunity string
+	URL                  string
+	Date                 time.Time
+	WithSalary           bool
+	Remote               bool
+	// @TODO There is an opportunity to apply without knowing the language, but with a willingness to learn it
 }
 
 type PreparedCompany struct {
