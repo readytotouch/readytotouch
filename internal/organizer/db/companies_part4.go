@@ -1999,10 +1999,12 @@ func companiesPart4() []domain.CompanyProfile {
 		//			GitHubRepositoriesCount: 0,
 		//			Vacancies: []domain.Vacancy{
 		//				{
-		//					Title:            "",
-		//					ShortDescription: "",
-		//					URL:              "",
-		//					Date:             mustDate(""),
+		//					Title:                "",
+		//					ShortDescription:     "",
+		//					SwitchingOpportunity: "",
+		//					URL:                  "",
+		//					Date:                 mustDate(""),
+		//					WithSalary:           false,
 		//				},
 		//			},
 		//		},
