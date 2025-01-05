@@ -111,12 +111,31 @@ func generateVacancies(companies []domain.CompanyProfile) {
 					panic(fmt.Sprintf("Vacancy URL is empty for company: %s", company.Name))
 				}
 
-				if len(urlCompanyLanguageExistsMap[vacancy.URL]) > 1 {
-					panic(fmt.Sprintf("Vacancy URL: %s is used in multiple companies", vacancy.URL))
+				companiesCount := len(urlCompanyLanguageExistsMap[vacancy.URL])
+
+				// Assert
+				{
+					if companiesCount > 1 {
+						panic(fmt.Sprintf("Vacancy URL: %s is used in multiple companies", vacancy.URL))
+					}
+
+					if urlCompanyLanguageExistsMap[vacancy.URL][company.LinkedInProfile.Alias][language] {
+						panic(fmt.Sprintf("Vacancy URL: %s is duplicated", vacancy.URL))
+					}
+
+					if urlCompanyLanguageExistsMap[vacancy.URL] == nil {
+						urlCompanyLanguageExistsMap[vacancy.URL] = make(map[string]map[int]bool, 1)
+					}
+
+					if urlCompanyLanguageExistsMap[vacancy.URL][company.LinkedInProfile.Alias] == nil {
+						urlCompanyLanguageExistsMap[vacancy.URL][company.LinkedInProfile.Alias] = make(map[int]bool, 1)
+					}
+
+					urlCompanyLanguageExistsMap[vacancy.URL][company.LinkedInProfile.Alias][language] = true
 				}
 
-				if urlCompanyLanguageExistsMap[vacancy.URL][company.LinkedInProfile.Alias][language] {
-					panic(fmt.Sprintf("Vacancy URL: %s is duplicated", vacancy.URL))
+				if companiesCount > 0 {
+					continue
 				}
 
 				vacancyID := organizers.VacancyUrlMap[vacancy.URL]
@@ -134,16 +153,6 @@ func generateVacancies(companies []domain.CompanyProfile) {
 
 				pairs = append(pairs, pair)
 				maxID = max(maxID, pair.ID)
-
-				if urlCompanyLanguageExistsMap[vacancy.URL] == nil {
-					urlCompanyLanguageExistsMap[vacancy.URL] = make(map[string]map[int]bool, 1)
-				}
-
-				if urlCompanyLanguageExistsMap[vacancy.URL][company.LinkedInProfile.Alias] == nil {
-					urlCompanyLanguageExistsMap[vacancy.URL][company.LinkedInProfile.Alias] = make(map[int]bool, 1)
-				}
-
-				urlCompanyLanguageExistsMap[vacancy.URL][company.LinkedInProfile.Alias][language] = true
 			}
 		}
 	}
