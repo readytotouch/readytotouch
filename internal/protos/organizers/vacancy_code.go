@@ -41,7 +41,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4040870810/":   8,   // crowdstrike
 		"https://www.linkedin.com/jobs/view/4062743637/":   403, // cockroach-labs
 		"https://www.linkedin.com/jobs/view/4024039384/":   404, // timescaledb
-		"https://www.linkedin.com/jobs/view/3897167605/":   405, // scylladb
+		"https://www.linkedin.com/jobs/view/4113720305/":   405, // scylladb
 		"https://www.linkedin.com/jobs/view/4110883947/":   392, // percona
 		"https://www.linkedin.com/jobs/view/4001888204/":   9,   // elastic-co
 		"https://www.linkedin.com/jobs/view/4099667362/":   406, // mongodbinc

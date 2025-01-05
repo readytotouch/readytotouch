@@ -38,6 +38,16 @@ func generateCompanies(companies []domain.CompanyProfile) {
 	}
 
 	for _, company := range companies {
+		if company.Name == "" {
+			panic("Company name is empty")
+		}
+		if company.LinkedInProfile.Alias == "" {
+			panic(fmt.Sprintf("Company LinkedIn alias is empty for company: %s", company.Name))
+		}
+		if company.LinkedInProfile.Name == "" {
+			panic(fmt.Sprintf("Company LinkedIn name is empty for company: %s", company.Name))
+		}
+
 		id := organizers.CompanyAliasMap[company.LinkedInProfile.Alias]
 
 		// If we added the ignored company before, then keep it
@@ -86,16 +96,27 @@ func generateVacancies(companies []domain.CompanyProfile) {
 	)
 
 	var (
-		maxID        = int64(0)
-		pairs        = make([]*dev.VacancyCodePair, 0, count)
-		urlExistsMap = make(map[string]bool, count)
+		maxID                       = int64(0)
+		pairs                       = make([]*dev.VacancyCodePair, 0, count)
+		urlCompanyLanguageExistsMap = make(map[string]map[string]map[int]bool, count)
 	)
 
 	for _, company := range companies {
-		for _, language := range company.Languages {
-			for _, vacancy := range language.Vacancies {
-				if urlExistsMap[vacancy.URL] {
-					continue
+		for language, languageProfile := range company.Languages {
+			for _, vacancy := range languageProfile.Vacancies {
+				if vacancy.Title == "" {
+					panic(fmt.Sprintf("Vacancy title is empty for company: %s", company.Name))
+				}
+				if vacancy.URL == "" {
+					panic(fmt.Sprintf("Vacancy URL is empty for company: %s", company.Name))
+				}
+
+				if len(urlCompanyLanguageExistsMap[vacancy.URL]) > 1 {
+					panic(fmt.Sprintf("Vacancy URL: %s is used in multiple companies", vacancy.URL))
+				}
+
+				if urlCompanyLanguageExistsMap[vacancy.URL][company.LinkedInProfile.Alias][language] {
+					panic(fmt.Sprintf("Vacancy URL: %s is duplicated", vacancy.URL))
 				}
 
 				vacancyID := organizers.VacancyUrlMap[vacancy.URL]
@@ -114,7 +135,15 @@ func generateVacancies(companies []domain.CompanyProfile) {
 				pairs = append(pairs, pair)
 				maxID = max(maxID, pair.ID)
 
-				urlExistsMap[vacancy.URL] = true
+				if urlCompanyLanguageExistsMap[vacancy.URL] == nil {
+					urlCompanyLanguageExistsMap[vacancy.URL] = make(map[string]map[int]bool, 1)
+				}
+
+				if urlCompanyLanguageExistsMap[vacancy.URL][company.LinkedInProfile.Alias] == nil {
+					urlCompanyLanguageExistsMap[vacancy.URL][company.LinkedInProfile.Alias] = make(map[int]bool, 1)
+				}
+
+				urlCompanyLanguageExistsMap[vacancy.URL][company.LinkedInProfile.Alias][language] = true
 			}
 		}
 	}
