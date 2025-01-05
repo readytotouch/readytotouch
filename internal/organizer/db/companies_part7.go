@@ -303,6 +303,55 @@ func companiesPart7() []domain.CompanyProfile {
 			HasEmployeesFromCountries: []domain.Country{},
 		},
 
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Green-Got",
+			Website: "https://green-got.com/",
+			Careers: "",
+			About:   "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                42124932,
+				Alias:             "greengot",
+				Name:              "Green-Got",
+				Followers:         "104K",
+				Employees:         "11-50",
+				AssociatedMembers: "481",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "green-got",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Backend Developer (Rust)",
+							ShortDescription:     "The stack is mostly Rust and PostgreSQL on AWS",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4115290108/",
+							Date:                 mustDate("2025-01-03"),
+							WithSalary:           true, // €50K/yr - €65K/yr
+							Remote:               true,
+						},
+					},
+				},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
+			HasEmployeesFromCountries: []domain.Country{},
+		},
+
 		// Template short
 		//{
 		//	ID:      0,  // system
@@ -335,6 +384,7 @@ func companiesPart7() []domain.CompanyProfile {
 		//					URL:                  "",
 		//					Date:                 mustDate(""),
 		//					WithSalary:           false,
+		//					Remote:               false,
 		//				},
 		//			},
 		//		},

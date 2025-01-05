@@ -2549,12 +2549,6 @@ func companiesPart1() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 123,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Golang Engineer",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/3736604544/",
-							Date:             mustDate("2024-11-01"),
-						},
-						{
 							Title:                "Golang Engineer",
 							ShortDescription:     "Golang is an essential language for our engineering teams, who build the systems that deliver Ubuntu to the world",
 							SwitchingOpportunity: "",
