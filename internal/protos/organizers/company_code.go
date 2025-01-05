@@ -558,6 +558,13 @@ var (
 		"cognitedata":                         554, // Cognite
 		"ubisoft":                             555, // Ubisoft
 		"twosixtechnologies":                  556, // Two Six Technologies
+		"checkmarx":                           558, // Checkmarx
+		"visa":                                559, // Visa
+		"datazipio":                           560, // Datazip
+		"bakerhughes":                         561, // Baker Hughes
+		"centrica":                            562, // Centrica
+		"muralhealth":                         563, // Mural Health
+		"greengot":                            564, // Green-Got
 
 	}
 )
