@@ -125,6 +125,7 @@ var (
 		"https://www.linkedin.com/jobs/view/3848461191/":   15,  // sumup
 		"https://www.linkedin.com/jobs/view/3903334014/":   548, // sumup
 		"https://www.linkedin.com/jobs/view/4056886705/":   16,  // sumup
+		"https://www.linkedin.com/jobs/view/4054449086/":   569, // sumup
 		"https://www.linkedin.com/jobs/view/3897014183/":   335, // levelhome
 		"https://www.linkedin.com/jobs/view/3875719837/":   215, // sonicwall
 		"https://www.linkedin.com/jobs/view/4034349867/":   216, // sonicwall
@@ -209,6 +210,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4034993832/":   439, // stack-x-me
 		"https://www.linkedin.com/jobs/view/4071554607/":   22,  // the-walt-disney-company
 		"https://www.linkedin.com/jobs/view/4088472435/":   290, // the-walt-disney-company
+		"https://www.linkedin.com/jobs/view/4118591892/":   570, // the-walt-disney-company
 		"https://www.linkedin.com/jobs/view/4063482617/":   23,  // the-walt-disney-company
 		"https://www.linkedin.com/jobs/view/3948655227/":   203, // materialise
 		"https://www.linkedin.com/jobs/view/3978294129/":   204, // influxdb
