@@ -5654,10 +5654,13 @@ func companiesPart2() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Senior Software Engineer (Elixir)",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4060816724/",
-							Date:             mustDate("2024-10-29"),
+							Title:                "Senior Software Engineer (Elixir)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4060816724/",
+							Date:                 mustDate("2024-12-31"), // mustDate("2024-10-29"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 					},
 				},

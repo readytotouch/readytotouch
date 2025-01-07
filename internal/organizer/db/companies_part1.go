@@ -12722,6 +12722,15 @@ func companiesPart1() []domain.CompanyProfile {
 							URL:              "https://www.linkedin.com/jobs/view/4088472435/",
 							Date:             mustDate("2024-12-05"),
 						},
+						{
+							Title:                "Lead Software Engineer, Scala",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4118591892/",
+							Date:                 mustDate("2025-01-07"),
+							WithSalary:           true, // The hiring range for this position in Seattle, Washington and New York NY is $159,500 to $213,900 per year and in Burbank, CA and Bristol CT is $152,200 to $204,100 per year.
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig: {},
