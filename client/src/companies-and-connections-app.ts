@@ -18,11 +18,7 @@ fetch('/api/v1/companies-and-connections/companies.json')
 
         return response.json();
     })
-    .then(function (companies: Array<ResponseCompany>) {
-        latestCompanies = companies;
-
-        renderCompanies(companies);
-    })
+    .then(updateAndRenderCompanies)
     .catch(console.error);
 
 function addCompany(companyUrl: string, companyVanityName: string, callback: () => void) {
@@ -41,9 +37,7 @@ function addCompany(companyUrl: string, companyVanityName: string, callback: () 
 
         return response.json();
     }).then(function (companies: Array<ResponseCompany>) {
-        latestCompanies = companies;
-
-        renderCompanies(companies);
+        updateAndRenderCompanies(companies);
 
         callback();
     }).catch(console.error);
@@ -157,12 +151,48 @@ function renderCompany(company: Company): string {
 </div>`;
 }
 
+function renderTotal(connections: Connections): string {
+    return `<div class="card card--attach">
+    <div class="card__header">
+        <a href="javascript:void(0);" class="button-link card__headline">Total</a>
+    </div>
+
+    <div class="card__group">
+        <div class="card__group-block">
+            <a class="card__group-item button-link" href="${connections.connections1stURL}">Connections 1st</a>
+            <a class="card__group-item button-link" href="${connections.connections2ndURL}">Connections 2nd</a>
+        </div>
+        <div class="card__group-block">
+            <a class="card__group-item button-link" href="${connections.connections1stXURL}">Connections 1st X</a>
+            <a class="card__group-item button-link" href="${connections.connections2ndXURL}">Connections 2nd X</a>
+        </div>
+    </div>
+</div>`;
+}
+
+function updateAndRenderCompanies(companies: Array<ResponseCompany>) {
+    latestCompanies = companies;
+
+    renderCompanies(companies);
+}
+
 function renderCompanies(companies: Array<ResponseCompany>) {
     $companies.innerHTML = '';
     $companiesCount.innerHTML = companies.length.toString();
 
+    if (companies.length > 1) {
+        const companyQueryParam = prepareCompanyQueryParam(companies);
+
+        const $total = htmlToNode(renderTotal(prepareConnections(
+            companyQueryParam,
+            companyQueryParam,
+        )));
+
+        $companies.appendChild($total);
+    }
+
     companies.forEach((company) => {
-        const prepared = prepareConnections(company, companies);
+        const prepared = prepareConnections(`["${company.id}"]`, preparePastCompanyQueryParam(companies, company));
 
         const $card = htmlToNode(renderCompany(new Company(
             company.id,
@@ -176,23 +206,16 @@ function renderCompanies(companies: Array<ResponseCompany>) {
         firstQuerySelector($card, "button").addEventListener("click", function () {
             deleteCompany(company.id);
 
-            latestCompanies = latestCompanies.filter(c => c.id !== company.id);
-
-            $companiesCount.innerHTML = latestCompanies.length.toString();
-
-            $card.remove();
+            updateAndRenderCompanies(latestCompanies.filter(c => c.id !== company.id));
         });
 
         $companies.appendChild($card);
     });
 }
 
-function prepareConnections(
-    currentCompany: ResponseCompany,
-    companies: Array<ResponseCompany>,
-): Connections {
-
+function preparePastCompanyQueryParam(companies: Array<ResponseCompany>, currentCompany: ResponseCompany): string {
     const pastCompanies = [];
+
     for (const company of companies) {
         if (currentCompany === company) {
             continue;
@@ -201,8 +224,27 @@ function prepareConnections(
         pastCompanies.push(company.id.toString());
     }
 
-    const currentCompanyQueryParam = `["${currentCompany.id}"]`;
+    if (pastCompanies.length === 0) {
+        return '';
+    }
 
+    return JSON.stringify(pastCompanies);
+}
+
+function prepareCompanyQueryParam(companies: Array<ResponseCompany>): string {
+    const result = [];
+
+    for (const company of companies) {
+        result.push(company.id.toString());
+    }
+
+    return JSON.stringify(result);
+}
+
+function prepareConnections(
+    currentCompanyQueryParam: string,
+    pastCompanyQueryParam: string,
+): Connections {
     let universitiesQueryParam = '';
     if (window.location.href.indexOf('ukraine') !== -1) {
         universitiesQueryParam = JSON.stringify(["818029", "850102", "364340", "496320", "1198954", "1257361", "15250306", "15251128", "15099424", "782774", "15101979", "15101061", "80424966", "6261241", "658198", "11443062", "15099425", "15099711", "15101057", "15102004", "18080249", "15143861", "15101046", "1599158", "15101060", "15100187", "9029417", "7991636", "15101074", "27066401", "18144134", "15101998", "15149751", "18691495", "15099038"]);
@@ -248,10 +290,9 @@ function prepareConnections(
         connections2ndXURL.searchParams.append('geoUrn', queryParam);
     }
 
-    if (pastCompanies.length > 0) {
-        const queryParam = JSON.stringify(pastCompanies);
-        connections1stXURL.searchParams.append('pastCompany', queryParam);
-        connections2ndXURL.searchParams.append('pastCompany', queryParam);
+    if (pastCompanyQueryParam !== "") {
+        connections1stXURL.searchParams.append('pastCompany', pastCompanyQueryParam);
+        connections2ndXURL.searchParams.append('pastCompany', pastCompanyQueryParam);
     }
 
     return new Connections(
