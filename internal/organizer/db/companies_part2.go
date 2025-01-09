@@ -6709,7 +6709,7 @@ func companiesPart2() []domain.CompanyProfile {
 							Title:            "Senior Golang Engineer",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4062165305/",
-							Date:             mustDate("2024-11-01"),
+							Date:             mustDate("2025-01-07"), // mustDate("2024-11-01")
 						},
 					},
 				},

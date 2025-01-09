@@ -7,6 +7,141 @@ import (
 func companiesPart8() []domain.CompanyProfile {
 	return []domain.CompanyProfile{
 
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Coherent Solutions",
+			Website: "https://www.coherentsolutions.com/",
+			Careers: "https://www.coherentsolutions.com/careers",
+			About:   "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                38745,
+				Alias:             "coherent-solutions",
+				Name:              "Coherent Solutions",
+				Followers:         "13K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "680",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "coherentsolutionsinc",
+				Verified: true,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Golang Developer (E-commerce platform)",
+							ShortDescription:     "Strong knowledge of Golang and AWS",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4120993368/",
+							Date:                 mustDate("2025-01-09"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Software development company",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "ATG (Auction Technology Group)",
+			Website: "https://www.auctiontechnologygroup.com/",
+			Careers: "https://www.auctiontechnologygroup.com/careers",
+			About:   "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                565927,
+				Alias:             "auctiontechnologygroup",
+				Name:              "ATG (Auction Technology Group)",
+				Followers:         "17K",
+				Employees:         "201-500",
+				AssociatedMembers: "509",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Golang Developer",
+							ShortDescription:     "5+ years of Software development experience, 3+ years with Goland",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4117172166/",
+							Date:                 mustDate("2025-01-08"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Online platform for auctions",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "gridX",
+			Website: "https://www.gridx.ai/",
+			Careers: "https://www.gridx.ai/careers",
+			About:   "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                10599040,
+				Alias:             "gridX",
+				Name:              "gridX",
+				Followers:         "21K",
+				Employees:         "51-200",
+				AssociatedMembers: "199",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "grid-x",
+				Verified: true,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Go / Golang Developer",
+							ShortDescription:     "Go / Golang for at least 2+ years and preferably have an understanding of IoT that you can apply",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4118507935/",
+							Date:                 mustDate("2025-01-07"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Developments in the energy industry",
+		},
+
 		// Template short
 		//{
 		//	ID:      0,  // system

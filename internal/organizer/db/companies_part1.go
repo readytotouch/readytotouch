@@ -4514,6 +4514,12 @@ func companiesPart1() []domain.CompanyProfile {
 							URL:              "https://www.linkedin.com/jobs/view/4039505901/",
 							Date:             mustDate("2024-10-25"),
 						},
+						{
+							Title:            "Senior Go Developer",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4117868597/",
+							Date:             mustDate("2025-01-09"),
+						},
 					},
 				},
 				domain.Rust:    {},
