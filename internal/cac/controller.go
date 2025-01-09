@@ -2,6 +2,7 @@ package cac
 
 import (
 	"net/http"
+	"net/url"
 	"strings"
 	"time"
 
@@ -13,27 +14,31 @@ import (
 )
 
 type Controller struct {
+	userRepository                  *postgres.UserRepository
 	userToLinkedInCompanyRepository *postgres.UserToLinkedInCompanyRepository
 	service                         *Service
 }
 
-func NewController(userToLinkedInCompanyRepository *postgres.UserToLinkedInCompanyRepository, service *Service) *Controller {
-	return &Controller{userToLinkedInCompanyRepository: userToLinkedInCompanyRepository, service: service}
+func NewController(userRepository *postgres.UserRepository, userToLinkedInCompanyRepository *postgres.UserToLinkedInCompanyRepository, service *Service) *Controller {
+	return &Controller{userRepository: userRepository, userToLinkedInCompanyRepository: userToLinkedInCompanyRepository, service: service}
 }
 
 func (c *Controller) Index(ctx *gin.Context) {
-	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.WipCompaniesAndConnections()))
+	headerProfiles, err := c.getHeaderProfiles(ctx, domain.ContextGetUserID(ctx))
+	if err != nil {
+		// @TODO logging
+
+		// NOP, continue
+	}
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.CompaniesAndConnectionsV1(headerProfiles, c.redirect(ctx.Request.URL.String()))))
+}
+
+func (c *Controller) Worldwide(ctx *gin.Context) {
+	c.Index(ctx)
 }
 
 func (c *Controller) Ukraine(ctx *gin.Context) {
-	c.Index(ctx)
-}
-
-func (c *Controller) Czechia(ctx *gin.Context) {
-	c.Index(ctx)
-}
-
-func (c *Controller) Poland(ctx *gin.Context) {
 	c.Index(ctx)
 }
 
@@ -175,4 +180,16 @@ func (c *Controller) companies(ctx *gin.Context, authUserID int64) {
 	}
 
 	ctx.JSON(http.StatusOK, companies)
+}
+
+func (c *Controller) getHeaderProfiles(ctx *gin.Context, userID int64) ([]domain.SocialProviderUser, error) {
+	if userID > 0 {
+		return c.userRepository.SocialUserProfilesByUser(ctx, userID)
+	}
+
+	return nil, nil
+}
+
+func (c *Controller) redirect(redirect string) string {
+	return "?" + url.Values{"redirect": []string{redirect}}.Encode()
 }

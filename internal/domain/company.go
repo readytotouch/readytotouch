@@ -33,6 +33,7 @@ const (
 	CompanyTypeStartup CompanyType = "startup"
 )
 
+// Deprecated
 type Vacancies = [7][]string
 type Languages = [7]LanguageProfile
 
@@ -40,6 +41,7 @@ type LinkedInProfile struct {
 	ID                int
 	IDs               []int
 	Alias             string
+	PreviousAliases   []string
 	Name              string
 	Followers         string
 	Employees         string
@@ -61,9 +63,8 @@ type UnsafeCompanyResponse struct {
 }
 
 type GitHubProfile struct {
-	Login             string
-	GoRepositoryCount int // Deprecated
-	Verified          bool
+	Login    string
+	Verified bool
 }
 
 type GlassdoorProfile struct {
@@ -95,12 +96,14 @@ type IndeedProfile struct {
 }
 
 type Vacancy struct {
-	Title            string
-	ShortDescription string // proof that the vacancy is for a particular technology
-	URL              string
-	Date             time.Time
-	WithSalary       bool // for future use
-	Remote           bool // for future use
+	Title                string
+	ShortDescription     string // proof that the vacancy is for a particular technology
+	SwitchingOpportunity string
+	URL                  string
+	Date                 time.Time
+	WithSalary           bool
+	Remote               bool
+	// @TODO There is an opportunity to apply without knowing the language, but with a willingness to learn it
 }
 
 type PreparedCompany struct {
@@ -144,8 +147,7 @@ type CompanyProfile struct {
 	IndeedProfile             IndeedProfile
 	OttaProfileSlug           string
 	YouTubeChannelURL         string
-	GoMainLanguage            bool      // Golang is the main language
-	Vacancies                 Vacancies // Deprecated
+	GoMainLanguage            bool // Golang is the main language
 	Languages                 Languages
 	ShortDescription          string // Only for understanding what the company does
 	DealroomURL               string // Investors, funding, etc.

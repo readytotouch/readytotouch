@@ -219,10 +219,10 @@ var (
 		"freeformfuture":                      201, // Freeform
 		"daedalean":                           202, // Daedalean AI
 		"statista":                            203, // Statista
-		"dronesense":                          204, // DroneSense
+		"dronesense":                          204, // DroneSense, Inc.
 		"zurich-instruments-ag":               205, // Zurich Instruments
 		"palo-alto-networks":                  206, // Palo Alto Networks
-		"scitecinc":                           207, // SciTec
+		"scitecinc":                           207, // SciTec, Inc.
 		"stack-x-me":                          208, // Stackx.me
 		"the-walt-disney-company":             209, // The Walt Disney Company
 		"materialise":                         210, // Materialise
@@ -234,32 +234,32 @@ var (
 		"windmill-dev":                        216, // Windmill
 		"fetcherr-ltd":                        217, // Fetcherr
 		"flok-health":                         218, // Flok Health
-		"rhebo":                               219, // Rhebo
+		"rhebo":                               219, // Rhebo - a Landis+Gyr company
 		"bjak":                                220, // Bjak
 		"evercharge":                          221, // EverCharge
 		"eburyfintech":                        222, // Ebury
 		"talon.one":                           223, // Talon.One
-		"newhomesmate":                        227, // NewHomesMate
+		"jomehq":                              557, // Jome
 		"density-inc-":                        228, // Density
 		"surfly":                              229, // Surfly
 		"cross-river-bank":                    230, // Cross River
 		"abnormalsecurity":                    231, // Abnormal Security
 		"scope3data":                          232, // Scope3
 		"apollo-graphql":                      233, // Apollo GraphQL
-		"paessler-gmbh":                       234, // Paessler
+		"paessler-gmbh":                       234, // Paessler GmbH
 		"hasura":                              235, // Hasura
 		"airahome":                            236, // Aira
 		"ddn":                                 386, // DDN
 		"starlingbank":                        238, // Starling Bank
 		"spice-ai":                            239, // Spice AI
 		"algolia":                             240, // Algolia
-		"observe-inc":                         241, // Observe
+		"observe-inc":                         241, // Observe, Inc.
 		"chalkai":                             242, // Chalk
-		"enova-international":                 243, // Enova
+		"enova-international":                 243, // Enova International
 		"justwatch":                           244, // JustWatch
 		"sourcegraph":                         245, // Sourcegraph
 		"plaid-":                              246, // Plaid
-		"coalitioninc":                        247, // Coalition
+		"coalitioninc":                        247, // Coalition, Inc.
 		"mechanical-orchard":                  248, // Mechanical Orchard
 		"moveworksai":                         249, // Moveworks
 		"emitwise":                            250, // Emitwise
@@ -558,6 +558,13 @@ var (
 		"cognitedata":                         554, // Cognite
 		"ubisoft":                             555, // Ubisoft
 		"twosixtechnologies":                  556, // Two Six Technologies
+		"checkmarx":                           558, // Checkmarx
+		"visa":                                559, // Visa
+		"datazipio":                           560, // Datazip
+		"bakerhughes":                         561, // Baker Hughes
+		"centrica":                            562, // Centrica
+		"muralhealth":                         563, // Mural Health
+		"greengot":                            564, // Green-Got
 
 	}
 )

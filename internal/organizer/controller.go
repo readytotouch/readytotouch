@@ -92,7 +92,7 @@ func (c *Controller) GolangCompaniesUkraine(ctx *gin.Context) {
 	)
 
 	for _, company := range source {
-		if len(company.Languages[domain.Go].Vacancies) == 0 && company.Vacancies[domain.Go] == nil {
+		if len(company.Languages[domain.Go].Vacancies) == 0 {
 			continue
 		}
 
@@ -123,7 +123,7 @@ func (c *Controller) CompaniesV1(ctx *gin.Context) {
 		// NOP, continue
 	}
 
-	companies := c.companies(organizerFeature, false)
+	companies := c.companies(organizerFeature)
 
 	userCompanyFavoriteMap, err := c.userFavoriteCompanyRepository.GetMap(ctx, authUserID, nil)
 	if err != nil {
@@ -164,7 +164,7 @@ func (c *Controller) CompaniesV2(ctx *gin.Context) {
 		// NOP, continue
 	}
 
-	companies := c.companies(organizerFeature, false)
+	companies := c.companies(organizerFeature)
 
 	userCompanyFavoriteMap, err := c.userFavoriteCompanyRepository.GetMap(ctx, authUserID, nil)
 	if err != nil {
@@ -212,9 +212,15 @@ func (c *Controller) CompanyV1(ctx *gin.Context) {
 		}
 	}
 
-	company, ok := c.findCompany(ctx, uri.CompanyAlias)
+	company, originalAlias, ok := c.findCompany(ctx, uri.CompanyAlias)
 	if !ok {
 		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Company not found"))
+
+		return
+	}
+
+	if originalAlias != "" {
+		ctx.Redirect(http.StatusFound, featurePath+"/"+originalAlias)
 
 		return
 	}
@@ -305,9 +311,15 @@ func (c *Controller) CompanyV2(ctx *gin.Context) {
 		}
 	}
 
-	company, ok := c.findCompany(ctx, uri.CompanyAlias)
+	company, originalAlias, ok := c.findCompany(ctx, uri.CompanyAlias)
 	if !ok {
 		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Company not found"))
+
+		return
+	}
+
+	if originalAlias != "" {
+		ctx.Redirect(http.StatusFound, featurePath+"/"+originalAlias)
 
 		return
 	}
@@ -438,7 +450,7 @@ func (c *Controller) Vacancies(ctx *gin.Context) {
 		// NOP, continue
 	}
 
-	companies := c.companies(organizerFeature, true)
+	companies := c.companies(organizerFeature)
 
 	var (
 		preparedVacancies = make([]domain.PreparedVacancy, 0, 1024)
@@ -1128,7 +1140,7 @@ func (c *Controller) getHeaderProfiles(ctx *gin.Context, userID int64) ([]domain
 	return nil, nil
 }
 
-func (c *Controller) companies(organizerFeature domain.OrganizerFeature, skip bool) []domain.CompanyProfile {
+func (c *Controller) companies(organizerFeature domain.OrganizerFeature) []domain.CompanyProfile {
 	var (
 		source    = db.Companies()
 		companies = make([]domain.CompanyProfile, 0, len(source))
@@ -1146,11 +1158,8 @@ func (c *Controller) companies(organizerFeature domain.OrganizerFeature, skip bo
 		}
 
 		language := organizerFeature.Organizer.Language
-		if len(company.Languages[language].Vacancies) == 0 && company.Vacancies[language] == nil {
-			continue
-		}
 
-		if len(company.Languages[language].Vacancies) == 0 && skip {
+		if len(company.Languages[language].Vacancies) == 0 {
 			continue
 		}
 
@@ -1159,16 +1168,27 @@ func (c *Controller) companies(organizerFeature domain.OrganizerFeature, skip bo
 	return companies
 }
 
-func (c *Controller) findCompany(ctx *gin.Context, alias string) (domain.CompanyProfile, bool) {
+func (c *Controller) findCompany(ctx *gin.Context, alias string) (domain.CompanyProfile, string, bool) {
+	companies := db.Companies()
+
 	// Yes, we are leaking the database implementation to the controller, it's fine for now
 	// Yes, we use linear search, it's fine for now
-	for _, company := range db.Companies() {
+
+	for _, company := range companies {
 		if company.LinkedInProfile.Alias == alias {
-			return company, true
+			return company, "", true
 		}
 	}
 
-	return domain.CompanyProfile{}, false
+	for _, company := range companies {
+		for _, previousAlias := range company.LinkedInProfile.PreviousAliases {
+			if previousAlias == alias {
+				return company, company.LinkedInProfile.Alias, true
+			}
+		}
+	}
+
+	return domain.CompanyProfile{}, "", false
 }
 
 func (c *Controller) toPrepareCompany(company domain.CompanyProfile) domain.PreparedCompany {

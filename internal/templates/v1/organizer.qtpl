@@ -145,8 +145,8 @@
                                 </td>
                                 <td>
                                     <div class="table__item">
-                                        {%- for i, vacancy := range company.Vacancies[Go] -%}
-                                            <a class="table__item-link vacancies" href="{%s vacancy %}">Vacancy #{%d i %}</a>
+                                        {%- for i, vacancy := range company.Languages[Go].Vacancies -%}
+                                            <a class="table__item-link vacancies" href="{%s vacancy.URL %}">Vacancy #{%d i %}</a>
                                         {%- endfor -%}
                                     </div>
                                 </td>
