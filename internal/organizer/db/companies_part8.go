@@ -190,35 +190,35 @@ func companiesPart8() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
-			Careers: "",
+			Name:    "StrangeBee",
+			Website: "https://strangebee.com/",
+			Careers: "https://strangebee.com/careers-at-strangebee/",
 			About:   "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                18993016,
+				Alias:             "strangebee",
+				Name:              "StrangeBee",
+				Followers:         "6K",
+				Employees:         "51-200",
+				AssociatedMembers: "43",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:    "StrangeBeeCorp",
+				Verified: true,
 			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
-							ShortDescription:     "",
+							Title:                "Golang Engineer",
+							ShortDescription:     "Minimum of 3/5 years of professional experience with Golang. ",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4121276014/",
+							Date:                 mustDate("2025-01-09"),
 							WithSalary:           false,
-							Remote:               false,
+							Remote:               true,
 						},
 					},
 				},
@@ -229,27 +229,27 @@ func companiesPart8() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "Cybersecurity software company",
 		},
 
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
-			Careers: "",
+			Name:    "thatgamecompany",
+			Website: "https://thatgamecompany.com/",
+			Careers: "https://thatgamecompany.com/careers/",
 			About:   "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
+				ID:                1637083,
+				Alias:             "thatgamecompany",
+				Name:              "thatgamecompany",
 				Followers:         "",
 				Employees:         "",
 				AssociatedMembers: "",
-				Verified:          false,
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
+				Login:    "thatgameco",
 				Verified: false,
 			},
 			Languages: domain.Languages{
@@ -257,12 +257,12 @@ func companiesPart8() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
-							ShortDescription:     "",
+							Title:                "Senior Software Engineer — Golang",
+							ShortDescription:     "Work with designers to help bring new gameplay systems to life",
 							SwitchingOpportunity: "",
-							URL:                  "",
+							URL:                  "https://www.linkedin.com/jobs/view/4120264764/",
 							Date:                 mustDate(""),
-							WithSalary:           false,
+							WithSalary:           true, // Salary range is $95,000 USD to $177,000 USD
 							Remote:               false,
 						},
 					},
@@ -274,7 +274,7 @@ func companiesPart8() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "American video game development company",
 		},
 		// Template short
 		//{

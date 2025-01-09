@@ -88,6 +88,15 @@ func companiesPart7() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Software Engineer (C++ / Golang)",
+							ShortDescription:     "3 or more years of work experience with a Bachelor’s Degree or more than 2 years of work experience with an Advanced Degree (e.g. Masters, MBA, JD, MD)",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4121157867/",
+							Date:                 mustDate("2025-01-09"),
+							WithSalary:           false,
+							Remote:               false, // This is a hybrid position.
+						},
 					},
 				},
 				domain.Rust:    {},
