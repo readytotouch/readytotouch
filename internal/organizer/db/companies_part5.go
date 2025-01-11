@@ -866,7 +866,7 @@ func companiesPart5() []domain.CompanyProfile {
 							Title:            "Software Engineer (Java/GO)",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4103938575/",
-							Date:             mustDate("2025-01-08"), // mustDate("2024-12-19")
+							Date:             mustDate("2025-01-08"), // mustDate("2024-12-19"),
 						},
 					},
 				},

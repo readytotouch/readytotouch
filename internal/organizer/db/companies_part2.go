@@ -979,7 +979,7 @@ func companiesPart2() []domain.CompanyProfile {
 							Title:            "Backend Developer — Go",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4007694502/",
-							Date:             mustDate("2025-01-08"), // mustDate("2024-12-20")
+							Date:             mustDate("2025-01-08"), // mustDate("2024-12-20"),
 						},
 					},
 				},
@@ -2465,7 +2465,7 @@ func companiesPart2() []domain.CompanyProfile {
 					Vacancies: []domain.Vacancy{
 						{
 							Title:            "Senior Software Engineer",
-							ShortDescription: "Our stack consists of Ruby, Rust, TypeScript, and React. We use Postgres, Redis, and S3 for data storage.",
+							ShortDescription: "Our stack consists of Ruby, Rust, TypeScript, and React. We use Postgres, Redis, and S3 for data storage",
 							URL:              "https://www.linkedin.com/jobs/view/3969153699/",
 							Date:             mustDate("2024-07-26"),
 						},
@@ -2786,7 +2786,7 @@ func companiesPart2() []domain.CompanyProfile {
 							Title:            "GO — Senior Developer",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/3968183921/",
-							Date:             mustDate("2025-01-06"), // mustDate("2024-12-20")
+							Date:             mustDate("2025-01-06"), // mustDate("2024-12-20"),
 						},
 					},
 				},
@@ -4198,7 +4198,7 @@ func companiesPart2() []domain.CompanyProfile {
 							Title:            "Senior Full Stack Engineer — Flows Team (GO & Angular)",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4102677424/",
-							Date:             mustDate("2025-01-10"), // mustDate("2024-12-19")
+							Date:             mustDate("2025-01-10"), // mustDate("2024-12-19"),
 						},
 					},
 				},
@@ -4518,15 +4518,6 @@ func companiesPart2() []domain.CompanyProfile {
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4076610998/",
 							Date:             mustDate("2024-11-14"),
-						},
-						{
-							Title:                "Software Engineer (Go/Golang)",
-							ShortDescription:     "Design and implement services and components utilizing Go for cloud-based platforms",
-							SwitchingOpportunity: "",
-							URL:                  "https://www.linkedin.com/jobs/view/4121157867/",
-							Date:                 mustDate("2025-01-10"),
-							WithSalary:           false,
-							Remote:               false,
 						},
 					},
 				},
@@ -6730,7 +6721,7 @@ func companiesPart2() []domain.CompanyProfile {
 							Title:            "Senior Golang Engineer",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4062165305/",
-							Date:             mustDate("2025-01-07"), // mustDate("2024-11-01")
+							Date:             mustDate("2025-01-07"), // mustDate("2024-11-01"),
 						},
 					},
 				},
