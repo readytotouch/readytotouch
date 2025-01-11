@@ -29,8 +29,9 @@ const (
 )
 
 const (
-	CompanyTypeProduct CompanyType = "product"
-	CompanyTypeStartup CompanyType = "startup"
+	CompanyTypeProduct   CompanyType = "product"
+	CompanyTypeStartup   CompanyType = "startup"
+	CompanyTypeOutsource CompanyType = "outsource"
 )
 
 // Deprecated

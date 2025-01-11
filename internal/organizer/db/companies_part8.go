@@ -8,12 +8,10 @@ func companiesPart8() []domain.CompanyProfile {
 	return []domain.CompanyProfile{
 
 		{
-			ID:      0,  // system
-			Type:    "", // system
+			ID:      0,                           // system
+			Type:    domain.CompanyTypeOutsource, // system
 			Name:    "Coherent Solutions",
 			Website: "https://www.coherentsolutions.com/",
-			Careers: "https://www.coherentsolutions.com/careers",
-			About:   "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                38745,
 				Alias:             "coherent-solutions",
@@ -23,33 +21,8 @@ func companiesPart8() []domain.CompanyProfile {
 				AssociatedMembers: "680",
 				Verified:          true,
 			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "coherentsolutionsinc",
-				Verified: true,
-			},
-			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "Golang Developer (E-commerce platform)",
-							ShortDescription:     "Strong knowledge of Golang and AWS",
-							SwitchingOpportunity: "",
-							URL:                  "https://www.linkedin.com/jobs/view/4120993368/",
-							Date:                 mustDate("2025-01-09"),
-							WithSalary:           false,
-							Remote:               false,
-						},
-					},
-				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
 			ShortDescription: "Software development company",
+			Ignore:           true, // The deleted outsource company was added by mistake
 		},
 
 		{
@@ -122,8 +95,8 @@ func companiesPart8() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Go / Golang Developer",
-							ShortDescription:     "Go / Golang for at least 2+ years and preferably have an understanding of IoT that you can apply",
+							Title:                "Golang Developer",
+							ShortDescription:     "Golang for at least 2+ years and preferably have an understanding of IoT that you can apply",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4118507935/",
 							Date:                 mustDate("2025-01-07"),
@@ -167,13 +140,13 @@ func companiesPart8() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Senior Software Engineer Go / GoLang",
+							Title:                "Senior Software Engineer Golang",
 							ShortDescription:     "5+ years of backend development experience building applications in Go, NodeJS, and integrations with 3rd Party tools, APIs, and other services",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4119005072/",
 							Date:                 mustDate("2025-01-07"),
 							WithSalary:           true, // salary range is $120,000 to $185,000
-							Remote:               false,
+							Remote:               true,
 						},
 					},
 				},
@@ -218,7 +191,7 @@ func companiesPart8() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4121276014/",
 							Date:                 mustDate("2025-01-09"),
 							WithSalary:           false,
-							Remote:               true,
+							Remote:               false,
 						},
 					},
 				},
@@ -229,7 +202,10 @@ func companiesPart8() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "Cybersecurity software company",
+			ShortDescription: "CyberSecurity software company",
+			Industries: []domain.Industry{
+				domain.IndustryCyberSecurity,
+			},
 		},
 
 		{
@@ -243,9 +219,9 @@ func companiesPart8() []domain.CompanyProfile {
 				ID:                1637083,
 				Alias:             "thatgamecompany",
 				Name:              "thatgamecompany",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
+				Followers:         "24K",
+				Employees:         "51-200",
+				AssociatedMembers: "197",
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -261,7 +237,7 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "Work with designers to help bring new gameplay systems to life",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4120264764/",
-							Date:                 mustDate(""),
+							Date:                 mustDate("2025-01-09"),
 							WithSalary:           true, // Salary range is $95,000 USD to $177,000 USD
 							Remote:               false,
 						},
@@ -348,7 +324,7 @@ func companiesPart8() []domain.CompanyProfile {
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Backend Developer — Golang",
-							ShortDescription:     "At least 3-4 years as a Golang Developer or 5 years as a Backend Developer.",
+							ShortDescription:     "At least 3-4 years as a Golang Developer or 5 years as a Backend Developer",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4120414743/",
 							Date:                 mustDate("2025-01-10"),
@@ -364,7 +340,10 @@ func companiesPart8() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "Indonesian fintech solution company",
+			ShortDescription: "Indonesian FinTech solution company",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
 		},
 
 		{
@@ -394,12 +373,12 @@ func companiesPart8() []domain.CompanyProfile {
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Rust Developer",
-							ShortDescription:     "5+ years of professional experience in backend development with a strong focus on real-time systems. ",
+							ShortDescription:     "5+ years of professional experience in backend development with a strong focus on real-time systems",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4119548956/",
 							Date:                 mustDate("2025-01-10"),
 							WithSalary:           false,
-							Remote:               false, // Mobile working
+							Remote:               false,
 						},
 					},
 				},
@@ -420,7 +399,7 @@ func companiesPart8() []domain.CompanyProfile {
 			Careers: "https://gdmissionsystems.com/careers",
 			About:   "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                17954388,
+				ID:                1908,
 				Alias:             "gdms",
 				Name:              "General Dynamics Mission Systems",
 				Followers:         "165K",
@@ -438,8 +417,8 @@ func companiesPart8() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "RUST Embedded Software Engineer",
-							ShortDescription:     "Long development lifecycle and product lifespans, requiring maintenance and regular technology refresh.",
+							Title:                "Rust Embedded Software Engineer",
+							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4118966168/",
 							Date:                 mustDate("2025-01-09"),
@@ -454,16 +433,14 @@ func companiesPart8() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "Integrates secure communication and information systems and technology.",
+			ShortDescription: "Integrates secure communication and information systems and technology",
 		},
 
 		{
-			ID:      0,  // system
-			Type:    "", // system
+			ID:      0,                           // system
+			Type:    domain.CompanyTypeOutsource, // system
 			Name:    "Antmicro",
 			Website: "https://antmicro.com/",
-			Careers: "https://careers.antmicro.com/index.html",
-			About:   "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                3267482,
 				Alias:             "antmicro-ltd",
@@ -473,33 +450,8 @@ func companiesPart8() []domain.CompanyProfile {
 				AssociatedMembers: "83",
 				Verified:          true,
 			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "antmicro",
-				Verified: true,
-			},
-			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "Open Source C / Rust Engineer",
-							ShortDescription:     "You will have to solve complex problems that might include working with assembly, code generation, code translation, interoperability between higher and lower level languages and portability between different OSes.",
-							SwitchingOpportunity: "",
-							URL:                  "https://www.linkedin.com/jobs/view/3706084909/",
-							Date:                 mustDate("2025-01-09"),
-							WithSalary:           false,
-							Remote:               false,
-						},
-					},
-				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
 			ShortDescription: "Sweden software-driven tech company",
+			Ignore:           true, // The deleted outsource company was added by mistake
 		},
 
 		// Template short
