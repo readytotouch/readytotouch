@@ -15,6 +15,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4036994106/":   1,   // ibm
 		"https://www.linkedin.com/jobs/view/4075807665/":   2,   // ibm
 		"https://www.linkedin.com/jobs/view/4115168875/":   540, // ibm
+		"https://www.linkedin.com/jobs/view/4095286825/":   571, // ibm
 		"https://www.linkedin.com/jobs/view/3998480636/":   3,   // ibm
 		"https://www.linkedin.com/jobs/view/4063746170/":   4,   // ibm
 		"https://www.linkedin.com/jobs/view/4072909509/":   258, // sap
@@ -78,6 +79,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4108568196/":   393, // protonprivacy
 		"https://www.linkedin.com/jobs/view/3907970778/":   211, // fortinet
 		"https://www.linkedin.com/jobs/view/4104785473/":   212, // fortinet
+		"https://www.linkedin.com/jobs/view/4122351024/":   572, // fortinet
 		"https://www.linkedin.com/jobs/view/4096029115/":   414, // sentinelone
 		"https://www.linkedin.com/jobs/view/4093231440/":   415, // uber-com
 		"https://www.linkedin.com/jobs/view/4103717982/":   213, // siemens
@@ -88,6 +90,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4035153021/":   417, // spotify
 		"https://www.linkedin.com/jobs/view/4081729069/":   418, // doordash
 		"https://www.linkedin.com/jobs/view/4039505901/":   314, // just-eat-takeaway-com
+		"https://www.linkedin.com/jobs/view/4117868597/":   573, // just-eat-takeaway-com
 		"https://www.linkedin.com/jobs/view/4085642905/":   419, // sixt
 		"https://www.linkedin.com/jobs/view/4082840850/":   420, // motorolasolutions
 		"https://www.linkedin.com/jobs/view/3919334242/":   315, // samsung-electronics
@@ -104,6 +107,7 @@ var (
 		"https://www.linkedin.com/jobs/view/3819771736/":   426, // viodotcom
 		"https://www.linkedin.com/jobs/view/4085466064/":   427, // runzero
 		"https://www.linkedin.com/jobs/view/4040512029/":   318, // lightspeedcommerce
+		"https://www.linkedin.com/jobs/view/4119051974/":   574, // lightspeedcommerce
 		"https://www.linkedin.com/jobs/view/4022342302/":   319, // squarespace
 		"https://www.linkedin.com/jobs/view/3872933701/":   320, // curve-ltd
 		"https://www.linkedin.com/jobs/view/3869628047/":   321, // woolsocks
@@ -267,12 +271,14 @@ var (
 		"https://www.linkedin.com/jobs/view/4026401818/":   30,  // geocomply
 		"https://www.linkedin.com/jobs/view/4092326507/":   146, // electronic-arts
 		"https://www.linkedin.com/jobs/view/4042510486/":   467, // trustingsocial
+		"https://www.linkedin.com/jobs/view/4118641348/":   575, // trustingsocial
 		"https://www.linkedin.com/jobs/view/4041686516/":   468, // mcafee
 		"https://www.linkedin.com/jobs/view/4056224841/":   469, // demandbase
 		"https://www.linkedin.com/jobs/view/4044732400/":   470, // bitfount
 		"https://www.linkedin.com/jobs/view/4043430809/":   471, // hinge-app
 		"https://www.linkedin.com/jobs/view/4052987616/":   31,  // breakroom
 		"https://www.linkedin.com/jobs/view/4048972208/":   472, // 1global
+		"https://www.linkedin.com/jobs/view/4117970233/":   576, // 1global
 		"https://www.linkedin.com/jobs/view/4046511967/":   473, // eco-movement-charge-point-data
 		"https://www.linkedin.com/jobs/view/4028418131/":   474, // network-optix
 		"https://www.linkedin.com/jobs/view/4050001754/":   227, // cinemo
@@ -451,11 +457,15 @@ var (
 		"https://www.linkedin.com/jobs/view/4072906267/":   118, // bestowtech
 		"https://www.linkedin.com/jobs/view/4103327636/":   237, // bestowtech
 		"https://www.linkedin.com/jobs/view/4037104078/":   119, // geico
+		"https://www.linkedin.com/jobs/view/4093859612/":   577, // geico
 		"https://www.linkedin.com/jobs/view/4025870710/":   120, // inviatravelgermany
 		"https://www.linkedin.com/jobs/view/4074166819/":   121, // airslate
 		"https://www.linkedin.com/jobs/view/4074141859/":   122, // embark-studios-ab
+		"https://www.linkedin.com/jobs/view/4120108595/":   578, // embark-studios-ab
 		"https://www.linkedin.com/jobs/view/4072292175/":   123, // centene-corporation
 		"https://www.linkedin.com/jobs/view/4061075359/":   124, // vestiaireco
+		"https://www.linkedin.com/jobs/view/4120700628/":   579, // vestiaireco
+		"https://www.linkedin.com/jobs/view/4119599970/":   580, // vestiaireco
 		"https://www.linkedin.com/jobs/view/4079760230/":   125, // check-point-software-technologies
 		"https://www.linkedin.com/jobs/view/4081420924/":   126, // qohash
 		"https://www.linkedin.com/jobs/view/4078815266/":   127, // kimiagroup
@@ -470,6 +480,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4112662552/":   554, // dtonesolution
 		"https://www.linkedin.com/jobs/view/4087164770/":   138, // social-discovery-group
 		"https://www.linkedin.com/jobs/view/4075012835/":   139, // sysdig
+		"https://www.linkedin.com/jobs/view/4075011909/":   581, // sysdig
 		"https://www.linkedin.com/jobs/view/4088212368/":   140, // arculus-a-jungheinrich-company
 		"https://www.linkedin.com/jobs/view/4112668264/":   568, // arculus-a-jungheinrich-company
 		"https://www.linkedin.com/jobs/view/4066364870/":   141, // ebay
@@ -569,11 +580,21 @@ var (
 		"https://www.linkedin.com/jobs/view/4081194563/":   395, // twosixtechnologies
 		"https://www.linkedin.com/jobs/view/4114108035/":   561, // checkmarx
 		"https://www.linkedin.com/jobs/view/4056869486/":   562, // visa
+		"https://www.linkedin.com/jobs/view/4121157867/":   582, // visa
 		"https://www.linkedin.com/jobs/view/4114492171/":   563, // datazipio
 		"https://www.linkedin.com/jobs/view/4106957208/":   564, // bakerhughes
 		"https://www.linkedin.com/jobs/view/4076005752/":   565, // centrica
 		"https://www.linkedin.com/jobs/view/4115784363/":   566, // muralhealth
 		"https://www.linkedin.com/jobs/view/4115290108/":   567, // greengot
+		"https://www.linkedin.com/jobs/view/4117172166/":   583, // auctiontechnologygroup
+		"https://www.linkedin.com/jobs/view/4118507935/":   584, // gridX
+		"https://www.linkedin.com/jobs/view/4119005072/":   585, // evolve-vacation-rental
+		"https://www.linkedin.com/jobs/view/4121276014/":   586, // strangebee
+		"https://www.linkedin.com/jobs/view/4120264764/":   587, // thatgamecompany
+		"https://www.linkedin.com/jobs/view/4121587727/":   588, // betterme-company
+		"https://www.linkedin.com/jobs/view/4120414743/":   589, // spe-solution
+		"https://www.linkedin.com/jobs/view/4119548956/":   590, // quantum-systems-gmbh
+		"https://www.linkedin.com/jobs/view/4118966168/":   591, // gdms
 
 	}
 )
