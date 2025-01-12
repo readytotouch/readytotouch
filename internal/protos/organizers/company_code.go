@@ -565,6 +565,15 @@ var (
 		"centrica":                            562, // Centrica
 		"muralhealth":                         563, // Mural Health
 		"greengot":                            564, // Green-Got
+		"auctiontechnologygroup":              565, // ATG (Auction Technology Group)
+		"gridX":                               566, // gridX
+		"evolve-vacation-rental":              567, // Evolve
+		"strangebee":                          568, // StrangeBee
+		"thatgamecompany":                     569, // thatgamecompany
+		"betterme-company":                    570, // BetterMe
+		"spe-solution":                        571, // SPE Solution
+		"quantum-systems-gmbh":                572, // Quantum Systems
+		"gdms":                                573, // General Dynamics Mission Systems
 
 	}
 )
