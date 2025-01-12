@@ -51,7 +51,7 @@ func companiesPart8() []domain.CompanyProfile {
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Golang Developer",
-							ShortDescription:     "5+ years of Software development experience, 3+ years with Goland",
+							ShortDescription:     "3+ years experience with Golang",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4117172166/",
 							Date:                 mustDate("2025-01-08"),
@@ -101,7 +101,7 @@ func companiesPart8() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4118507935/",
 							Date:                 mustDate("2025-01-07"),
 							WithSalary:           false,
-							Remote:               false,
+							Remote:               true,
 						},
 					},
 				},
@@ -186,7 +186,7 @@ func companiesPart8() []domain.CompanyProfile {
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Golang Engineer",
-							ShortDescription:     "Minimum of 3/5 years of professional experience with Golang. ",
+							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4121276014/",
 							Date:                 mustDate("2025-01-09"),
@@ -234,12 +234,12 @@ func companiesPart8() []domain.CompanyProfile {
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer — Golang",
-							ShortDescription:     "Work with designers to help bring new gameplay systems to life",
+							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4120264764/",
 							Date:                 mustDate("2025-01-09"),
 							WithSalary:           true, // Salary range is $95,000 USD to $177,000 USD
-							Remote:               false,
+							Remote:               true,
 						},
 					},
 				},
@@ -324,7 +324,7 @@ func companiesPart8() []domain.CompanyProfile {
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Backend Developer — Golang",
-							ShortDescription:     "At least 3-4 years as a Golang Developer or 5 years as a Backend Developer",
+							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4120414743/",
 							Date:                 mustDate("2025-01-10"),
@@ -422,7 +422,7 @@ func companiesPart8() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4118966168/",
 							Date:                 mustDate("2025-01-09"),
-							WithSalary:           false,
+							WithSalary:           true, // Starting at $108K/yr
 							Remote:               false,
 						},
 					},
