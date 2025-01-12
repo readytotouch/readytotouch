@@ -74,22 +74,37 @@ func review(dir string) {
 
 		_, ok := organizers.CompanyAliasMap[alias]
 		aliasFoundCountMap[ok] += 1
+		delete(organizers.CompanyAliasMap, alias)
 
 		if ok {
 			continue
 		}
 
-		fmt.Printf("Name: %s\n", fileName)
-		fmt.Printf("Size: %d bytes\n", fileSize)
-		fmt.Printf("Alias: %s (%t) \n", alias, ok)
-		fmt.Printf("Size: %dx%d pixels\n", width, height)
-		fmt.Println()
+		fmt.Println(fileName)
+
+		//fmt.Printf("Name: %s\n", fileName)
+		//fmt.Printf("Size: %d bytes\n", fileSize)
+		//fmt.Printf("Alias: %s (%t) \n", alias, ok)
+		//fmt.Printf("Size: %dx%d pixels\n", width, height)
+		//fmt.Println()
 
 		sizeCountMap[fmt.Sprintf("%dx%d", width, height)] += 1
 		totalSize += fileSize
 	}
 
-	fmt.Println(sizeCountMap)
-	fmt.Println(totalSize)
-	fmt.Println(aliasFoundCountMap)
+	//aliases := make([]string, 0, len(organizers.CompanyAliasMap))
+	//for alias := range organizers.CompanyAliasMap {
+	//	aliases = append(aliases, alias)
+	//}
+	//sort.Slice(aliases, func(i, j int) bool {
+	//	return aliases[i] < aliases[j]
+	//})
+	//
+	//for _, alias := range aliases {
+	//	fmt.Println(alias)
+	//}
+
+	//fmt.Println(sizeCountMap)
+	//fmt.Println(totalSize)
+	//fmt.Println(aliasFoundCountMap)
 }
