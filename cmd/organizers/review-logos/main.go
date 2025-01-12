@@ -25,6 +25,7 @@ func review(dir string) {
 
 	var (
 		sizeCountMap       = make(map[string]int)
+		extCountMap        = make(map[string]int)
 		totalSize          = int64(0)
 		aliasFoundCountMap = make(map[bool]int)
 	)
@@ -72,6 +73,8 @@ func review(dir string) {
 			height = img.Bounds().Dy()
 		}
 
+		extCountMap[ext] += 1
+
 		_, ok := organizers.CompanyAliasMap[alias]
 		aliasFoundCountMap[ok] += 1
 		delete(organizers.CompanyAliasMap, alias)
@@ -81,30 +84,32 @@ func review(dir string) {
 		}
 
 		fmt.Println(fileName)
-
-		//fmt.Printf("Name: %s\n", fileName)
-		//fmt.Printf("Size: %d bytes\n", fileSize)
-		//fmt.Printf("Alias: %s (%t) \n", alias, ok)
-		//fmt.Printf("Size: %dx%d pixels\n", width, height)
-		//fmt.Println()
-
+		/*
+			fmt.Printf("Name: %s\n", fileName)
+			fmt.Printf("Size: %d bytes\n", fileSize)
+			fmt.Printf("Alias: %s (%t) \n", alias, ok)
+			fmt.Printf("Size: %dx%d pixels\n", width, height)
+			fmt.Println()
+		*/
 		sizeCountMap[fmt.Sprintf("%dx%d", width, height)] += 1
 		totalSize += fileSize
 	}
+	/*
+		aliases := make([]string, 0, len(organizers.CompanyAliasMap))
+		for alias := range organizers.CompanyAliasMap {
+			aliases = append(aliases, alias)
+		}
+		sort.Slice(aliases, func(i, j int) bool {
+			return aliases[i] < aliases[j]
+		})
 
-	//aliases := make([]string, 0, len(organizers.CompanyAliasMap))
-	//for alias := range organizers.CompanyAliasMap {
-	//	aliases = append(aliases, alias)
-	//}
-	//sort.Slice(aliases, func(i, j int) bool {
-	//	return aliases[i] < aliases[j]
-	//})
-	//
-	//for _, alias := range aliases {
-	//	fmt.Println(alias)
-	//}
+		for _, alias := range aliases {
+			fmt.Println(alias)
+		}
 
-	//fmt.Println(sizeCountMap)
-	//fmt.Println(totalSize)
-	//fmt.Println(aliasFoundCountMap)
+		fmt.Println(sizeCountMap)
+		fmt.Println(totalSize)
+		fmt.Println(aliasFoundCountMap)
+		fmt.Println(extCountMap)
+	*/
 }
