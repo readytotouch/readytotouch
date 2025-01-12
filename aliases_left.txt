@@ -259,7 +259,6 @@ stairwell-inc
 starlingbank
 stratascale-llc
 sunasterisk
-superindo
 suse
 tabbypay
 talamobile
@@ -295,7 +294,6 @@ vestiaireco
 victoriametrics
 viodotcom
 visa
-vodeno
 voltus-inc.
 voodoo.io
 vustheenglishcenter

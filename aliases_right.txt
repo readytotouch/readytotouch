@@ -174,38 +174,36 @@ splashdamage.png
 starling-bank.png
 stratascale.png
 sun-vietnam.png
-super-indo.png
-swiss-marketplace-group.png
-tabby.png
-tala.png
-talon-one.png
-teachingstrategies.png
-textnow.png
-teya.png
-timescale.png
-topdoctors.png
-transition.png
-twosix-tech.png
-tyk-io.png
-uber.png
-ui.png
-umbra.png
-unlimit.png
-unnax.png
-uw-utility-warehouse.png
-vay-io.png
-venatus.png
-verve.png
-vestiaire-collective.png
-vio.png
-vodeno-bank.png
-voltus.png
-voodoo.png
-vus.png
-wargaming.png
-wex.png
-wise.png
-wolt.png
-xata-io.png
-zipline.png
-zurich-instruments.png
+smg-marketplace swiss-marketplace-group.png
+tabbypay tabby.png
+talamobile tala.png
+talon.one talon-one.png
+teaching-strategies-llc teachingstrategies.png
+enflick-inc- textnow.png
+teya-global teya.png
+timescaledb timescale.png
+top-doctors-europe topdoctors.png
+transition-technologies-psc transition.png
+twosixtechnologies twosix-tech.png
+tyk tyk-io.png
+uber-com uber.png
+ubiquiti- ui.png
+umbraspace umbra.png
+unlimit-com unlimit.png
+unnax-emi unnax.png
+utilitywarehouse uw-utility-warehouse.png
+vaytechnology vay-io.png
+we-are-venatus venatus.png
+verve-ad-solutions verve.png
+vestiaireco vestiaire-collective.png
+viodotcom vio.png
+voltus-inc. voltus.png
+voodoo.io voodoo.png
+vustheenglishcenter vus.png
+wargaming-net wargaming.png
+wexinc wex.png
+wiseaccount wise.png
+wolt-oy wolt.png
+xataio xata-io.png
+flyzipline zipline.png
+zurich-instruments-ag zurich-instruments.png
