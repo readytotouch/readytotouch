@@ -8,6 +8,8 @@ import (
 	"os"
 	"path/filepath"
 	"strings"
+
+	"github.com/readytotouch/readytotouch/internal/protos/organizers"
 )
 
 func main() {
@@ -22,8 +24,9 @@ func review(dir string) {
 	}
 
 	var (
-		sizeCountMap = make(map[string]int)
-		totalSize    = int64(0)
+		sizeCountMap       = make(map[string]int)
+		totalSize          = int64(0)
+		aliasFoundCountMap = make(map[bool]int)
 	)
 
 	for _, file := range files {
@@ -69,9 +72,16 @@ func review(dir string) {
 			height = img.Bounds().Dy()
 		}
 
+		_, ok := organizers.CompanyAliasMap[alias]
+		aliasFoundCountMap[ok] += 1
+
+		if ok {
+			continue
+		}
+
 		fmt.Printf("Name: %s\n", fileName)
 		fmt.Printf("Size: %d bytes\n", fileSize)
-		fmt.Printf("Alias: %s\n", alias)
+		fmt.Printf("Alias: %s (%t) \n", alias, ok)
 		fmt.Printf("Size: %dx%d pixels\n", width, height)
 		fmt.Println()
 
@@ -81,4 +91,5 @@ func review(dir string) {
 
 	fmt.Println(sizeCountMap)
 	fmt.Println(totalSize)
+	fmt.Println(aliasFoundCountMap)
 }
