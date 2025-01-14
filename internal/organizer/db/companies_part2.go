@@ -931,7 +931,7 @@ func companiesPart2() []domain.CompanyProfile {
 							Title:            "Software Developer —  Backend GO",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4079483983/",
-							Date:             mustDate("2024-12-11"),
+							Date:             mustDate("2024-12-13"), // mustDate("2024-12-11")
 						},
 					},
 				},

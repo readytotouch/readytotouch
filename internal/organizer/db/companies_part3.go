@@ -118,6 +118,15 @@ func companiesPart3() []domain.CompanyProfile {
 							URL:              "https://www.linkedin.com/jobs/view/3951768378/",
 							Date:             mustDate("2024-12-20"),
 						},
+						{
+							Title:                "Senior Go Developer",
+							ShortDescription:     "3+ years of experience with an object-oriented programming language, ideally Golang",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4104352080/",
+							Date:                 mustDate("2025-01-12"),
+							WithSalary:           true, // Minimum salary for this position, which is € 56,000 gross per year based on full-time employment. We offer a higher salary in line with qualifications and experience
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -1412,7 +1421,9 @@ func companiesPart3() []domain.CompanyProfile {
 							Title:            "C++/Go Developer",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4079760230/",
-							Date:             mustDate("2024-11-21"),
+							Date:             mustDate("2025-01-09"), // mustDate("2024-11-21")
+							WithSalary:       false,
+							Remote:           false,
 						},
 					},
 				},
