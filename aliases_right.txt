@@ -169,11 +169,11 @@ snap-inc.png
 solo-io.png
 sonatus-blogcard.png
 sony-interactive-entertainment.png
-sparq.png
-splashdamage.png
-starling-bank.png
-stratascale.png
-sun-vietnam.png
+teamsparq sparq.png
+splash-damage splashdamage.png
+starlingbank starling-bank.png
+stratascale-llc stratascale.png
+sunasterisk sun-vietnam.png
 smg-marketplace swiss-marketplace-group.png
 tabbypay tabby.png
 talamobile tala.png
