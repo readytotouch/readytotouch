@@ -498,17 +498,7 @@ func companiesPart1() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "Sr. Business Intelligence Engineer, GO-AI Technology & Development Team",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "https://www.linkedin.com/jobs/view/4106454283/",
-							Date:                 mustDate("2025-01-14"),
-							WithSalary:           true, // The base pay for this position ranges from $117,300/year in our lowest geographic market up to $202,800/year in our highest geographic market
-							Remote:               false,
-						},
-					},
+					Vacancies:               []domain.Vacancy{},
 				},
 				domain.Rust:    {},
 				domain.Zig:     {},
