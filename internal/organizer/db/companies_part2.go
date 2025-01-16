@@ -931,7 +931,7 @@ func companiesPart2() []domain.CompanyProfile {
 							Title:            "Software Developer —  Backend GO",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4079483983/",
-							Date:             mustDate("2024-12-11"),
+							Date:             mustDate("2024-12-13"), // mustDate("2024-12-11")
 						},
 					},
 				},
@@ -2304,15 +2304,16 @@ func companiesPart2() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{
-						/*
-							{
-								Title:            "",
-								ShortDescription: "",
-								URL:              "https://app.welcometothejungle.com/jobs/whJEvleb",
-								Date:             mustDate(""),
-							},
-						*/
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer — Golang backend",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4123164602/",
+							Date:                 mustDate("2025-01-15"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -4310,6 +4311,12 @@ func companiesPart2() []domain.CompanyProfile {
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4001594627/",
 							Date:             mustDate("2024-10-25"),
+						},
+						{
+							Title:            "Senior Software Engineer (Golang)",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4101753682/",
+							Date:             mustDate("2025-01-13"),
 						},
 					},
 				},
@@ -8666,7 +8673,7 @@ func companiesPart2() []domain.CompanyProfile {
 							Title:            "Backend Engineer — Golang (Senior)",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4059611387/",
-							Date:             mustDate("2024-10-25"),
+							Date:             mustDate("2025-01-13"), // mustDate("2024-10-25"),
 						},
 					},
 				},
@@ -9377,7 +9384,17 @@ func companiesPart2() []domain.CompanyProfile {
 							Title:            "Staff Software Engineer, Data Forwarding (Golang)",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4077097120/",
-							Date:             mustDate("2024-11-15"),
+							Date:             mustDate("2025-01-08"), // mustDate("2024-11-15"),
+							WithSalary:       true,                   // $147K — $210K per year
+							Remote:           true,
+						},
+						{
+							Title:            "Senior Staff Software Development Engineer",
+							ShortDescription: "Golang, Kubernetes, eBPF",
+							URL:              "https://www.linkedin.com/jobs/view/4023494848/",
+							Date:             mustDate("2025-01-13"),
+							WithSalary:       true, // $147K — $210K per year
+							Remote:           true,
 						},
 					},
 				},
