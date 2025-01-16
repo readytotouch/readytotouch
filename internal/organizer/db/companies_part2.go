@@ -2305,14 +2305,6 @@ func companiesPart2() []domain.CompanyProfile {
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
-						/*
-							{
-								Title:            "",
-								ShortDescription: "",
-								URL:              "https://app.welcometothejungle.com/jobs/whJEvleb",
-								Date:             mustDate(""),
-							},
-						*/
 						{
 							Title:                "Senior Software Engineer — Golang backend",
 							ShortDescription:     "",
@@ -8681,13 +8673,7 @@ func companiesPart2() []domain.CompanyProfile {
 							Title:            "Backend Engineer — Golang (Senior)",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4059611387/",
-							Date:             mustDate("2024-10-25"),
-						},
-						{
-							Title:            "Backend Engineer — Golang (Senior)",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4059611387/",
-							Date:             mustDate("2025-01-13"),
+							Date:             mustDate("2025-01-13"), // mustDate("2024-10-25"),
 						},
 					},
 				},
@@ -9398,13 +9384,13 @@ func companiesPart2() []domain.CompanyProfile {
 							Title:            "Staff Software Engineer, Data Forwarding (Golang)",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4077097120/",
-							Date:             mustDate("2024-11-15"),
-							WithSalary:       true, // $147K — $210K per year
+							Date:             mustDate("2025-01-08"), // mustDate("2024-11-15"),
+							WithSalary:       true,                   // $147K — $210K per year
 							Remote:           true,
 						},
 						{
-							Title:            "Senior Staff Software Development Engineer, New Product (Golang, Kubernetes,eBPF)",
-							ShortDescription: "",
+							Title:            "Senior Staff Software Development Engineer",
+							ShortDescription: "Golang, Kubernetes, eBPF",
 							URL:              "https://www.linkedin.com/jobs/view/4023494848/",
 							Date:             mustDate("2025-01-13"),
 							WithSalary:       true, // $147K — $210K per year

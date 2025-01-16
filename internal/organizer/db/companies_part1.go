@@ -496,10 +496,7 @@ func companiesPart1() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
-				},
+				domain.Go:      {},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -7910,13 +7907,13 @@ func companiesPart1() []domain.CompanyProfile {
 							Remote:               false,
 						},
 						{
-							Title:                "Middle level Golang Engineer — Content Platform team",
+							Title:                "Middle Golang Engineer — Content Platform team",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4093658841/",
 							Date:                 mustDate("2025-01-11"),
 							WithSalary:           false,
-							Remote:               true, // Up to 60 days of working from (m)anywhere
+							Remote:               false, // Up to 60 days of working from (m)anywhere
 						},
 					},
 				},
@@ -8383,12 +8380,12 @@ func companiesPart1() []domain.CompanyProfile {
 						},
 						{
 							Title:                "Senior PHP/Go Developer",
-							ShortDescription:     "3+ years of engineering and development experience (PHP/Goland)",
+							ShortDescription:     "3+ years of engineering and development experience (PHP/Golang)",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4122032404/",
 							Date:                 mustDate("2025-01-10"),
 							WithSalary:           false,
-							Remote:               true, // Hybrid format of work from our office (2 days a week from the office)
+							Remote:               false,
 						},
 					},
 				},
@@ -10871,10 +10868,13 @@ func companiesPart1() []domain.CompanyProfile {
 							Date:             mustDate("2024-12-25"),
 						},
 						{
-							Title:            "Senior Software Engineer — Golang",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4121841670/",
-							Date:             mustDate("2025-01-14"),
+							Title:                "Senior Software Engineer — Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4121841670/",
+							Date:                 mustDate("2025-01-14"),
+							WithSalary:           false,
+							Remote:               true,
 						},
 					},
 				},
