@@ -373,7 +373,7 @@ func companiesPart4() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4123639315/",
 							Date:                 mustDate("2025-01-14"),
 							WithSalary:           false,
-							Remote:               true, // Hybrid working model with 2 days office and 3 days remote
+							Remote:               false,
 						},
 					},
 				},
@@ -595,8 +595,8 @@ func companiesPart4() []domain.CompanyProfile {
 		},
 
 		{
-			ID:      0,  // system
-			Type:    "", // system
+			ID:      0,                           // system
+			Type:    domain.CompanyTypeOutsource, // system
 			Name:    "Sparq",
 			Website: "https://www.teamsparq.com/",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -616,9 +616,9 @@ func companiesPart4() []domain.CompanyProfile {
 							Title:            "Senior Golang Developer",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4049853199/",
-							Date:             mustDate("2024-12-03"), // mustDate("2024-12-03")
+							Date:             mustDate("2025-01-14"), // mustDate("2024-12-03")
 							WithSalary:       false,
-							Remote:           false,
+							Remote:           true,
 						},
 					},
 				},
@@ -629,6 +629,7 @@ func companiesPart4() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
+			Ignore: true,
 		},
 
 		{
@@ -1014,7 +1015,7 @@ func companiesPart4() []domain.CompanyProfile {
 							URL:              "https://www.linkedin.com/jobs/view/4093511115/",
 							Date:             mustDate("2025-01-14"), // mustDate("2024-12-11"),
 							WithSalary:       true,                   // $92,300.00 - $175,400.00
-							Remote:           true,                   // On-site
+							Remote:           false,
 						},
 					},
 				},
@@ -1196,7 +1197,7 @@ func companiesPart4() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4122199318/",
 							Date:                 mustDate("2025-01-14"),
 							WithSalary:           true, // from 2 600 EUR
-							Remote:               true, // Hybrid
+							Remote:               false,
 						},
 					},
 				},
@@ -1540,6 +1541,7 @@ func companiesPart4() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
+			Ignore: true, // https://gamedev.dou.ua/forums/topic/50138/
 		},
 
 		{
