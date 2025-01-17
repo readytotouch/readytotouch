@@ -376,7 +376,7 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "5+ years of professional experience in backend development with a strong focus on real-time systems",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4119548956/",
-							Date:                 mustDate("2025-01-10"),
+							Date:                 mustDate("2025-01-16"), // mustDate("2025-01-10"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -772,6 +772,462 @@ func companiesPart8() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Media measurement company revolutionizing advertising",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Broadcom",
+			Website: "https://www.broadcom.com/",
+			Careers: "https://www.broadcom.com/company/careers",
+			About:   "https://www.broadcom.com/company/about-us",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3072,
+				Alias:             "broadcom",
+				Name:              "Broadcom",
+				Followers:         "498K",
+				Employees:         "10K+",
+				AssociatedMembers: "60,347",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "broadcom",
+				Verified: true,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4127239750/",
+							Date:                 mustDate("2025-01-17"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American global technology company",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Toyota North America",
+			Website: "toyota.com",
+			Careers: "http://www.toyota.com/careers",
+			About:   "https://www.toyota.com/brand/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2107,
+				Alias:             "toyota-north-america",
+				Name:              "Toyota North America",
+				Followers:         "435K",
+				Employees:         "10K+",
+				AssociatedMembers: "19,741",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4125175696/",
+							Date:                 mustDate("2025-01-16"),
+							WithSalary:           true, // $60.00 - $77.00/ hr
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Manufacturing companies",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "ABOUT YOU",
+			Website: "aboutyou.de",
+			Careers: "https://corporate.aboutyou.de/en/career",
+			About:   "https://corporate.aboutyou.de/en/about-us",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                5214302,
+				Alias:             "about-you",
+				Name:              "ABOUT YOU",
+				Followers:         "102K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "1,529",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Golang Developer - SCAYLE Storefront Platform — onsite or remote within the EU",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4124350189/",
+							Date:                 mustDate("2025-01-16"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "German fashion online retailer",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Magicmotorsport",
+			Website: "https://www.magicmotorsport.com/",
+			Careers: "https://www.magicmotorsport.com/about-us/careers/",
+			About:   "https://www.magicmotorsport.com/about-us/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                10541609,
+				Alias:             "magicmotorsport",
+				Name:              "Magicmotorsport",
+				Followers:         "6K",
+				Employees:         "51-200",
+				AssociatedMembers: "128",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go:    {},
+				domain.Rust:  {},
+				domain.Zig:   {},
+				domain.Scala: {},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Ruby/Elixir Back-End Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4119784307/",
+							Date:                 mustDate("2025-01-10"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Development and production of equipment for chip tuning and diagnostics of electronic control units (ECU) of cars",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "STATION F",
+			Website: "https://stationf.co/",
+			Careers: "https://jobs.stationf.co/",
+			About:   "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                10776313,
+				Alias:             "stationf",
+				Name:              "STATION F",
+				Followers:         "171K",
+				Employees:         "11-50",
+				AssociatedMembers: "266",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "stationf",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go:    {},
+				domain.Rust:  {},
+				domain.Zig:   {},
+				domain.Scala: {},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "SENIOR FULL STACK ENGINEER (ELIXIR/REACT)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4124020794/",
+							Date:                 mustDate("2025-01-14"),
+							WithSalary:           true, // 55000€ — 69000€
+							Remote:               false,
+						},
+					},
+				},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "French startup campus",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Nordea",
+			Website: "https://www.nordea.com/",
+			Careers: "https://www.nordea.com/en/careers",
+			About:   "https://www.nordea.com/en/about-us",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2007,
+				Alias:             "nordea",
+				Name:              "Nordea",
+				Followers:         "283K",
+				Employees:         "10K+",
+				AssociatedMembers: "29,892",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go:   {},
+				domain.Rust: {},
+				domain.Zig:  {},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior IT Developer — Scala/Spark/Hadoop/Big Data",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4056511122/",
+							Date:                 mustDate("2025-01-17"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Nordic financial services group",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Deutsche Börse",
+			Website: "https://www.deutsche-boerse.com/dbg-en/",
+			Careers: "https://careers.deutsche-boerse.com/",
+			About:   "https://www.deutsche-boerse.com/dbg-en/about-us",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                163430,
+				Alias:             "deutscheboerse",
+				Name:              "Deutsche Börse",
+				Followers:         "97K",
+				Employees:         "10K+",
+				AssociatedMembers: "3,934",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go:   {},
+				domain.Rust: {},
+				domain.Zig:  {},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Big Data Developer / Engineer (Scala/Java)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4124323501/",
+							Date:                 mustDate("2025-01-15"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "German stock exchange",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Hootsuite",
+			Website: "https://www.hootsuite.com/",
+			Careers: "https://careers.hootsuite.com/",
+			About:   "https://www.hootsuite.com/about",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                288540,
+				Alias:             "hootsuite",
+				Name:              "Hootsuite",
+				Followers:         "511K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "1,668",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go:   {},
+				domain.Rust: {},
+				domain.Zig:  {},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Developer, Backend (Scala)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4123118327/",
+							Date:                 mustDate("2025-01-15"),
+							WithSalary:           true, // $98,400—$137,800 CAD
+							Remote:               false,
+						},
+					},
+				},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Social media management platform",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "HSBC",
+			Website: "https://www.hsbc.com/",
+			Careers: "https://www.hsbc.com/careers",
+			About:   "https://www.hsbc.com/who-we-are",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1241,
+				Alias:             "hsbc",
+				Name:              "HSBC",
+				Followers:         "4M",
+				Employees:         "10K+",
+				AssociatedMembers: "180,941",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "hsbc",
+				Verified: true,
+			},
+			Languages: domain.Languages{
+				domain.Go:   {},
+				domain.Rust: {},
+				domain.Zig:  {},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior React and Scala/JAVA Developer (Investment Banking Tech)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4122037400/",
+							Date:                 mustDate("2025-01-10"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "British fintech company",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "AffiniPay",
+			Website: "https://www.affinipay.com/",
+			Careers: "https://www.affinipay.com/careers/",
+			About:   "https://www.affinipay.com/company/about-us/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1276962,
+				Alias:             "affinipay",
+				Name:              "AffiniPay",
+				Followers:         "12K",
+				Employees:         "201-500",
+				AssociatedMembers: "651",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "affinipay",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go:   {},
+				domain.Rust: {},
+				domain.Zig:  {},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "CONTRACTOR - Senior Back End Developer (Scala) ",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4120259237/",
+							Date:                 mustDate("2025-01-10"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American fintech company",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
 		},
 
 		// Template short
