@@ -177,13 +177,16 @@ func companiesPart4() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Specialist Java/Golang Developer",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4048143482/",
-							Date:             mustDate("2024-12-14"),
+							Title:                "Java/Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4048143482/",
+							Date:                 mustDate("2025-01-10"), // mustDate("2024-12-14"),
+							WithSalary:           false,
+							Remote:               true,
 						},
 						{
-							Title:                "Specialist Golang Developer",
+							Title:                "Golang Developer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4085853366/",

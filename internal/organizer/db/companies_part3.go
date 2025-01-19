@@ -2884,7 +2884,7 @@ func companiesPart3() []domain.CompanyProfile {
 							Date:             mustDate("2024-12-12"),
 						},
 						{
-							Title:                "Senior Elixir Software Engineer — Energy Transition, Full Remote available for XP",
+							Title:                "Senior Elixir Software Engineer — Energy Transition",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4122919615/",

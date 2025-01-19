@@ -889,13 +889,13 @@ func companiesPart8() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Senior Golang Developer - SCAYLE Storefront Platform — onsite or remote within the EU",
+							Title:                "Senior Golang Developer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4124350189/",
 							Date:                 mustDate("2025-01-16"),
 							WithSalary:           false,
-							Remote:               false,
+							Remote:               true,
 						},
 					},
 				},
@@ -983,7 +983,7 @@ func companiesPart8() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "SENIOR FULL STACK ENGINEER (ELIXIR/REACT)",
+							Title:                "Senior Full Stack Engineer (Elixir/React)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4124020794/",
@@ -1162,7 +1162,7 @@ func companiesPart8() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Senior React and Scala/JAVA Developer (Investment Banking Tech)",
+							Title:                "Senior React and Scala/Java Developer (Investment Banking Tech)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4122037400/",
@@ -1176,7 +1176,7 @@ func companiesPart8() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "British fintech company",
+			ShortDescription: "British FinTech company",
 			Industries: []domain.Industry{
 				domain.IndustryFinTech,
 			},
@@ -1210,7 +1210,7 @@ func companiesPart8() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "CONTRACTOR - Senior Back End Developer (Scala) ",
+							Title:                "Contractor — Senior Back End Developer (Scala)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4120259237/",
@@ -1224,7 +1224,7 @@ func companiesPart8() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "American fintech company",
+			ShortDescription: "American FinTech company",
 			Industries: []domain.Industry{
 				domain.IndustryFinTech,
 			},
