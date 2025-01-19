@@ -56,7 +56,7 @@ func companiesPart2() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "AI fintech company revolutionizing credit scoring using big data technology",
+			ShortDescription: "AI FinTech company revolutionizing credit scoring using big data technology",
 			Industries: []domain.Industry{
 				domain.IndustryFinTech,
 			},
@@ -2784,7 +2784,7 @@ func companiesPart2() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 1,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "GO — Senior Developer",
+							Title:            "Go — Senior Developer",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/3968183921/",
 							Date:             mustDate("2025-01-06"), // mustDate("2024-12-20"),

@@ -172,7 +172,7 @@ func companiesPart6() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "Automates and scales industrial data contextualization ",
+			ShortDescription: "Automates and scales industrial data contextualization",
 		},
 
 		{
