@@ -737,7 +737,7 @@ func companiesPart5() []domain.CompanyProfile {
 							Title:            "Engineer/Sr Engineer, Kubernetes GO — Developer",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4092856552/",
-							Date:             mustDate("2024-12-10"),
+							Date:             mustDate("2025-01-17"), // mustDate("2024-12-10"),
 						},
 					},
 				},
