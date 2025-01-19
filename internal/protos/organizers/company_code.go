@@ -581,6 +581,16 @@ var (
 		"optimizely":                          578, // Optimizely
 		"opswat":                              579, // OPSWAT
 		"videoamp":                            580, // VideoAmp
+		"broadcom":                            581, // Broadcom
+		"toyota-north-america":                582, // Toyota North America
+		"about-you":                           583, // ABOUT YOU
+		"magicmotorsport":                     584, // Magicmotorsport
+		"stationf":                            585, // STATION F
+		"nordea":                              586, // Nordea
+		"deutscheboerse":                      587, // Deutsche Börse
+		"hootsuite":                           588, // Hootsuite
+		"hsbc":                                589, // HSBC
+		"affinipay":                           590, // AffiniPay
 
 	}
 )
