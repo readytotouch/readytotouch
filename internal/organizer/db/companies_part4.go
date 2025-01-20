@@ -604,9 +604,20 @@ func companiesPart4() []domain.CompanyProfile {
 						},
 					},
 				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
+				domain.Rust: {},
+				domain.Zig:  {},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Data Engineer",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4131047125/",
+							Date:             mustDate("2024-12-03"),
+							WithSalary:       true, // $65/hr - $67hr
+						},
+					},
+				},
 				domain.Elixir:  {},
 				domain.Clojure: {},
 				domain.Haskell: {},

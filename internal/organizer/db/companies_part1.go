@@ -10839,8 +10839,19 @@ func companiesPart1() []domain.CompanyProfile {
 						},
 					},
 				},
-				domain.Zig:     {},
-				domain.Scala:   {},
+				domain.Zig: {},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Data Engineer — AWS/Hive/Scala/Spark",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4124669157/",
+							Date:             mustDate("2025-01-15"),
+							WithSalary:       true, // $68K — $108K per year
+						},
+					},
+				},
 				domain.Elixir:  {},
 				domain.Clojure: {},
 				domain.Haskell: {},
@@ -15318,6 +15329,18 @@ func companiesPart1() []domain.CompanyProfile {
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4055507332/",
 							Date:             mustDate("2024-11-13"),
+						},
+						{
+							Title:            "Principal Software Engineer (Scala/Java)",
+							ShortDescription: "Inspiration & Entertainment",
+							URL:              "https://www.linkedin.com/jobs/view/4127911217/",
+							Date:             mustDate("2025-01-17"),
+						},
+						{
+							Title:            "Data Engineer — Scala/Java",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4126005258/",
+							Date:             mustDate("2025-01-14"),
 						},
 					},
 				},

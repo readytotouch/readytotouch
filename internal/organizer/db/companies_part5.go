@@ -471,9 +471,19 @@ func companiesPart5() []domain.CompanyProfile {
 						},
 					},
 				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
+				domain.Rust: {},
+				domain.Zig:  {},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior / Staff Software Engineer — Scala / Java",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4119919170/",
+							Date:             mustDate("2025-01-13"),
+						},
+					},
+				},
 				domain.Elixir:  {},
 				domain.Clojure: {},
 				domain.Haskell: {},
