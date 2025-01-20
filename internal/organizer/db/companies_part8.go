@@ -1230,6 +1230,141 @@ func companiesPart8() []domain.CompanyProfile {
 			},
 		},
 
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Vivid Money",
+			Website: "https://vivid.money/",
+			Careers: "https://careers.vivid.money/",
+			About:   "https://vivid.money/about-us/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                42385216,
+				Alias:             "vividmoney",
+				Name:              "Vivid Money",
+				Followers:         "42K",
+				Employees:         "201-500",
+				AssociatedMembers: "234",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "vivid-money",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Backend Developer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4127601895/",
+							Date:                 mustDate("2025-01-17"),
+							WithSalary:           false,
+							Remote:               true, // Hybrid or Remote
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Mobile banking",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "CIRCUTOR",
+			Website: "http://www.circutor.com/",
+			Careers: "https://circutor.com/en/company/employment/",
+			About:   "https://circutor.com/en/company/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                467879,
+				Alias:             "circutor",
+				Name:              "CIRCUTOR",
+				Followers:         "21K",
+				Employees:         "501-1K",
+				AssociatedMembers: "305",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "Circutor",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer (Golang o C++)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4126008852/",
+							Date:                 mustDate(""),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "",
+			Website: "",
+			Careers: "",
+			About:   "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                0,
+				Alias:             "",
+				Name:              "",
+				Followers:         "",
+				Employees:         "",
+				AssociatedMembers: "",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "",
+							Date:                 mustDate(""),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "",
+		},
+
 		// Template short
 		//{
 		//	ID:      0,  // system

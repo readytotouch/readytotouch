@@ -909,7 +909,13 @@ func companiesPart5() []domain.CompanyProfile {
 							Title:            "Sr Rust Developer",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4080571465/",
-							Date:             mustDate("2024-12-18"),
+							Date:             mustDate("2025-01-17"), // mustDate("2024-12-18"),
+						},
+						{
+							Title:            "Senior Rust Developer",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4127688019/",
+							Date:             mustDate("2025-01-18"),
 						},
 					},
 				},
@@ -966,5 +972,6 @@ func companiesPart5() []domain.CompanyProfile {
 		//	},
 		//	ShortDescription: "",
 		//},
+
 	}
 }
