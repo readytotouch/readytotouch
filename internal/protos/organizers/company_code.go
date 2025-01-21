@@ -591,6 +591,12 @@ var (
 		"hootsuite":                           588, // Hootsuite
 		"hsbc":                                589, // HSBC
 		"affinipay":                           590, // AffiniPay
+		"vividmoney":                          591, // Vivid Money
+		"idemiagroup":                         592, // IDEMIA
+		"ninjatrader-group-llc":               593, // NinjaTrader
+		"tikoafrica":                          594, // Tiko
+		"topgolf":                             595, // Topgolf
+		"hapag-lloyd-ag":                      596, // Hapag-Lloyd AG
 
 	}
 )

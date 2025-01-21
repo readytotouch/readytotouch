@@ -479,7 +479,7 @@ func companiesPart8() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Senior GoLang Engineer",
+							Title:                "Senior Golang Engineer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4121324436/",
@@ -1228,6 +1228,279 @@ func companiesPart8() []domain.CompanyProfile {
 			Industries: []domain.Industry{
 				domain.IndustryFinTech,
 			},
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Vivid Money",
+			Website: "https://vivid.money/",
+			Careers: "https://careers.vivid.money/",
+			About:   "https://vivid.money/about-us/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                42385216,
+				Alias:             "vividmoney",
+				Name:              "Vivid Money",
+				Followers:         "42K",
+				Employees:         "201-500",
+				AssociatedMembers: "234",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "vivid-money",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Backend Developer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4127601895/",
+							Date:                 mustDate("2025-01-17"),
+							WithSalary:           false,
+							Remote:               false, // Hybrid or Remote
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Mobile banking",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "IDEMIA",
+			Website: "https://www.idemia.com/",
+			Careers: "https://www.idemia.com/careers-idemia",
+			About:   "https://www.idemia.com/making-world-safer-place",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3488,
+				Alias:             "idemiagroup",
+				Name:              "IDEMIA",
+				Followers:         "560K",
+				Employees:         "10K+",
+				AssociatedMembers: "13,534",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "idemia",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go:   {},
+				domain.Rust: {},
+				domain.Zig:  {},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Scala Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4129086458/",
+							Date:                 mustDate("2025-01-19"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Digital identity solutions",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "NinjaTrader",
+			Website: "https://ninjatrader.com/",
+			Careers: "https://ninjatrader.com/careers/",
+			About:   "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2689269,
+				Alias:             "ninjatrader-group-llc",
+				Name:              "NinjaTrader",
+				Followers:         "8K",
+				Employees:         "201-500",
+				AssociatedMembers: "359",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go:   {},
+				domain.Rust: {},
+				domain.Zig:  {},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Staff Software Engineer — Scala",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4124923617/",
+							Date:                 mustDate("2025-01-15"),
+							WithSalary:           true, // $175K - $205K per year
+							Remote:               false,
+						},
+					},
+				},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Online trading platform",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Tiko",
+			Website: "https://tiko.org/",
+			Careers: "https://tiko.org/category/job-listings/",
+			About:   "https://tiko.org/about-us/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                5374111,
+				Alias:             "tikoafrica",
+				Name:              "Tiko",
+				Followers:         "15K",
+				Employees:         "51-200",
+				AssociatedMembers: "314",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "Triggerise",
+				Verified: true,
+			},
+			Languages: domain.Languages{
+				domain.Go:   {},
+				domain.Rust: {},
+				domain.Zig:  {},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Scala Backend Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4125716142/",
+							Date:                 mustDate("2025-01-14"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "HealthTech",
+			Industries: []domain.Industry{
+				domain.IndustryHealthTech,
+			},
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Topgolf",
+			Website: "https://topgolf.com/",
+			Careers: "https://careers.topgolf.com/",
+			About:   "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1339209,
+				Alias:             "topgolf",
+				Name:              "Topgolf",
+				Followers:         "126K",
+				Employees:         "10K+",
+				AssociatedMembers: "11,145",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "topgolf",
+				Verified: true,
+			},
+			Languages: domain.Languages{
+				domain.Go:   {},
+				domain.Rust: {},
+				domain.Zig:  {},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Scala Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4121847142/",
+							Date:                 mustDate("2025-01-13"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American multinational sports entertainment company",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Hapag-Lloyd AG",
+			Website: "https://www.hapag-lloyd.com/",
+			Careers: "https://www.hapag-lloyd.com/en/company/career/overview.html",
+			About:   "https://www.hapag-lloyd.com/en/company.html",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                133790,
+				Alias:             "hapag-lloyd-ag",
+				Name:              "Hapag-Lloyd AG",
+				Followers:         "735K",
+				Employees:         "10K+",
+				AssociatedMembers: "13,990",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "hapag-lloyd",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go:   {},
+				domain.Rust: {},
+				domain.Zig:  {},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer Interim (Scala/Java/Kotlin)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4121334590/",
+							Date:                 mustDate("2025-01-13"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "German international shipping and container transportation company",
 		},
 
 		// Template short

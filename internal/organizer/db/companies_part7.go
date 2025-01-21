@@ -346,6 +346,15 @@ func companiesPart7() []domain.CompanyProfile {
 							WithSalary:           true, // €50K/yr - €65K/yr
 							Remote:               true,
 						},
+						{
+							Title:                "Backend Developer (Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4120580858/",
+							Date:                 mustDate("2025-01-13"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Zig:     {},
