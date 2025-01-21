@@ -479,7 +479,7 @@ func companiesPart8() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Senior GoLang Engineer",
+							Title:                "Senior Golang Engineer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4121324436/",
@@ -1261,7 +1261,7 @@ func companiesPart8() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4127601895/",
 							Date:                 mustDate("2025-01-17"),
 							WithSalary:           false,
-							Remote:               true, // Hybrid or Remote
+							Remote:               false, // Hybrid or Remote
 						},
 					},
 				},
@@ -1399,7 +1399,7 @@ func companiesPart8() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4125716142/",
 							Date:                 mustDate("2025-01-14"),
 							WithSalary:           false,
-							Remote:               false,
+							Remote:               true,
 						},
 					},
 				},
@@ -1408,6 +1408,9 @@ func companiesPart8() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "HealthTech",
+			Industries: []domain.Industry{
+				domain.IndustryHealthTech,
+			},
 		},
 
 		{

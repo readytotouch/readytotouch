@@ -922,13 +922,13 @@ func companiesPart2() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 7,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Software Developer — Backend GO / PHP",
+							Title:            "Software Developer — Backend Go / PHP",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4049210489/",
 							Date:             mustDate("2024-10-25"),
 						},
 						{
-							Title:            "Software Developer —  Backend GO",
+							Title:            "Software Developer —  Backend Go",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4079483983/",
 							Date:             mustDate("2024-12-13"), // mustDate("2024-12-11")
@@ -4217,7 +4217,7 @@ func companiesPart2() []domain.CompanyProfile {
 							Date:             mustDate("2024-11-19"),
 						},
 						{
-							Title:            "Senior Full Stack Engineer — Flows Team (GO & Angular)",
+							Title:            "Senior Full Stack Engineer — Flows Team (Go & Angular)",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4102677424/",
 							Date:             mustDate("2025-01-10"), // mustDate("2024-12-19"),
@@ -4672,13 +4672,13 @@ func companiesPart2() []domain.CompanyProfile {
 							Date:             mustDate("2024-11-03"),
 						},
 						{
-							Title:            "Software Engineer II —  Core Engineering —  GO / Python",
+							Title:            "Software Engineer II —  Core Engineering —  Go / Python",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4105782609/",
 							Date:             mustDate("2024-12-19"),
 						},
 						{
-							Title:            "Software Engineer II —  Core Engineering —  GO / Python",
+							Title:            "Software Engineer II —  Core Engineering —  Go / Python",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4130260943/",
 							Date:             mustDate("2025-01-19"),
@@ -5511,7 +5511,7 @@ func companiesPart2() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 1,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Senior Software Engineer — GO",
+							Title:            "Senior Software Engineer — Go",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/3987632672/",
 							Date:             mustDate("2024-11-16"),
@@ -5961,17 +5961,7 @@ func companiesPart2() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:            "DevOps Engineer (Go & Python)",
-							ShortDescription: "Kubernete, Terraform & Scripting",
-							URL:              "https://www.linkedin.com/jobs/view/4130478145/",
-							Date:             mustDate("2025-01-20"),
-						},
-					},
-				},
+				domain.Go:   {},
 				domain.Rust: {},
 				domain.Zig:  {},
 				domain.Scala: {
@@ -9266,7 +9256,7 @@ func companiesPart2() []domain.CompanyProfile {
 							Date:             mustDate("2024-11-14"),
 						},
 						{
-							Title:            "Web Engineer (GO/React)",
+							Title:            "Web Engineer (Go/React)",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4020630528/",
 							Date:             mustDate("2025-01-20"), // mustDate("2024-12-18"),
@@ -9445,20 +9435,22 @@ func companiesPart2() []domain.CompanyProfile {
 							Remote:           true,
 						},
 						{
-							Title:            "Senior Staff Software Development Engineer",
-							ShortDescription: "Golang, Kubernetes, eBPF",
-							URL:              "https://www.linkedin.com/jobs/view/4023494848/",
-							Date:             mustDate("2025-01-13"),
-							WithSalary:       true, // $147K — $210K per year
-							Remote:           true,
+							Title:                "Senior Staff Software Development Engineer",
+							ShortDescription:     "Golang, Kubernetes, eBPF",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4023494848/",
+							Date:                 mustDate("2025-01-13"),
+							WithSalary:           true, // $147K — $210K per year
+							Remote:               true,
 						},
 						{
-							Title:            "Staff Software Engineer — Golang",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4128638661/",
-							Date:             mustDate("2025-01-13"),
-							WithSalary:       true, // $122.500 — $175K per year
-							Remote:           false,
+							Title:                "Staff Software Engineer — Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4128638661/",
+							Date:                 mustDate("2025-01-17"),
+							WithSalary:           true, // $122.500 — $175K per year
+							Remote:               false,
 						},
 					},
 				},
@@ -9603,7 +9595,7 @@ func companiesPart2() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Full-Stack Developer (GO)",
+							Title:            "Full-Stack Developer (Go)",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4075571548/",
 							Date:             mustDate("2025-01-16"), // mustDate("2024-11-14"),
