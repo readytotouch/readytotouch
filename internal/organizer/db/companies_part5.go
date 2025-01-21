@@ -471,9 +471,19 @@ func companiesPart5() []domain.CompanyProfile {
 						},
 					},
 				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
+				domain.Rust: {},
+				domain.Zig:  {},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:            "Senior / Staff Software Engineer — Scala / Java",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4119919170/",
+							Date:             mustDate("2025-01-13"),
+						},
+					},
+				},
 				domain.Elixir:  {},
 				domain.Clojure: {},
 				domain.Haskell: {},
@@ -909,7 +919,13 @@ func companiesPart5() []domain.CompanyProfile {
 							Title:            "Sr Rust Developer",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4080571465/",
-							Date:             mustDate("2024-12-18"),
+							Date:             mustDate("2025-01-17"), // mustDate("2024-12-18"),
+						},
+						{
+							Title:            "Senior Rust Developer",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4127688019/",
+							Date:             mustDate("2025-01-18"),
 						},
 					},
 				},
@@ -966,5 +982,6 @@ func companiesPart5() []domain.CompanyProfile {
 		//	},
 		//	ShortDescription: "",
 		//},
+
 	}
 }
