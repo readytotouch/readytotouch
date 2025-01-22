@@ -1,10 +1,8 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
-	"image"
-	_ "image/jpeg"
-	_ "image/png"
 	"os"
 	"path/filepath"
 	"strings"
@@ -23,13 +21,6 @@ func review(dir string) {
 		panic(err)
 	}
 
-	var (
-		sizeCountMap       = make(map[string]int)
-		extCountMap        = make(map[string]int)
-		totalSize          = int64(0)
-		aliasFoundCountMap = make(map[bool]int)
-	)
-
 	for _, file := range files {
 		if file.IsDir() {
 			panic("dir unexpected")
@@ -40,76 +31,59 @@ func review(dir string) {
 			continue
 		}
 
-		filePath := filepath.Join(dir, fileName)
-
-		fileInfo, err := os.Stat(filePath)
-		if err != nil {
-			panic(err)
-		}
-
-		fileSize := fileInfo.Size()
-
 		ext := filepath.Ext(file.Name())
 
 		alias := strings.TrimSuffix(fileName, ext)
 
-		var (
-			width  int
-			height int
-		)
-		if ext == ".png" || ext == ".jpg" || ext == ".jpeg" {
-			imgFile, err := os.Open(filePath)
-			if err != nil {
-				panic(err)
-			}
-			defer imgFile.Close()
-
-			img, _, err := image.Decode(imgFile)
-			if err != nil {
-				panic(err)
-			}
-
-			width = img.Bounds().Dx()
-			height = img.Bounds().Dy()
+		switch ext {
+		case ".png", ".jpg", ".jpeg":
+		default:
+			panic(fmt.Sprintf("unexpected ext: %s", ext))
 		}
 
-		extCountMap[ext] += 1
-
-		_, ok := organizers.CompanyAliasMap[alias]
-		aliasFoundCountMap[ok] += 1
-		delete(organizers.CompanyAliasMap, alias)
-
-		if ok {
-			continue
-		}
-
-		fmt.Println(fileName)
-		/*
-			fmt.Printf("Name: %s\n", fileName)
-			fmt.Printf("Size: %d bytes\n", fileSize)
-			fmt.Printf("Alias: %s (%t) \n", alias, ok)
-			fmt.Printf("Size: %dx%d pixels\n", width, height)
-			fmt.Println()
-		*/
-		sizeCountMap[fmt.Sprintf("%dx%d", width, height)] += 1
-		totalSize += fileSize
+		_ = organizers.CompanyAliasMap[alias]
 	}
-	/*
-		aliases := make([]string, 0, len(organizers.CompanyAliasMap))
-		for alias := range organizers.CompanyAliasMap {
-			aliases = append(aliases, alias)
-		}
-		sort.Slice(aliases, func(i, j int) bool {
-			return aliases[i] < aliases[j]
-		})
 
-		for _, alias := range aliases {
-			fmt.Println(alias)
+	aliasImageMap, err := fetchAliasImageMap("./aliases_right.txt")
+	if err != nil {
+		panic(err)
+	}
+	_ = aliasImageMap
+}
+
+func fetchAliasImageMap(filename string) (map[string]string, error) {
+	file, err := os.Open(filename)
+	if err != nil {
+		return nil, err
+	}
+	defer file.Close()
+
+	// Ініціалізація мапи
+	dataMap := make(map[string]string)
+
+	// Читання рядків з файлу
+	scanner := bufio.NewScanner(file)
+	for scanner.Scan() {
+		line := scanner.Text()
+		parts := strings.Split(line, " ")
+
+		if len(parts) != 2 {
+			return nil, fmt.Errorf("invalid line: %s", line)
 		}
 
-		fmt.Println(sizeCountMap)
-		fmt.Println(totalSize)
-		fmt.Println(aliasFoundCountMap)
-		fmt.Println(extCountMap)
-	*/
+		key := parts[0]
+		value := parts[1]
+
+		if _, ok := dataMap[key]; ok {
+			return nil, fmt.Errorf("duplicate key: %s", key)
+		}
+
+		dataMap[key] = value
+	}
+
+	if err := scanner.Err(); err != nil {
+		return nil, err
+	}
+
+	return dataMap, nil
 }

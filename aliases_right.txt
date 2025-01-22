@@ -8,7 +8,6 @@ abnormalsecurity abnormal.png
 ab-tasty abtasty.png
 airahome aira.png
 acronis acronics.png
-airahome aira.png
 altenar altenar.png
 amartha amartha.png
 amazon amazon.png
@@ -23,8 +22,8 @@ airslate airslate-workflow.png
 airspace-inc airspace.png
 algolia algolia-vector.png
 altair-engineering altair.png
-amoamoamo amo-co.png
-applied-systems applied-systems-canada applied.png
+applied-systems applied.png
+applied-systems-canada applied.png
 aquasecteam aqua-security.png
 arculus-a-jungheinrich-company arculus.png
 arenko-cleantech arenko.png
@@ -238,8 +237,8 @@ capital-one capital-one.png
 careem careem.png
 cast-ai cast-ai.png
 centene-corporation centene-corporation.png
-checkout - checkout.png
-cheesecake-labs - cheesecake-labs.png
+checkout checkout.png
+cheesecake-labs cheesecake-labs.png
 cj-express-group cj-express-group.png
 clearscore clearscore.png
 cloudflare cloudflare.png
