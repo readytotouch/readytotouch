@@ -327,13 +327,12 @@ func StreamOrganizersCompaniesV2(qw422016 *qt422016.Writer,
                 </a>
               </aside>
               <figure class="card__header">
-                <div class="card__image-overlay card__image-overlay--small">
-                  <img
-                    width="18"
-                    height="18"
-                    class="card__image card__image--preview"
+                <div class="card__image-overlay">
+                  <img class="card__image"
                     alt="card image preview icon"
-                    src="/assets/images/pages/common-images/unknown.svg"
+                    src="`)
+		qw422016.E().S(logo(company.Logo))
+		qw422016.N().S(`"
                   />
                 </div>
                 <figcaption class="card__header-caption">

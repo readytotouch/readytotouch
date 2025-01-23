@@ -273,6 +273,7 @@
 					 data-company-industries="{%s aliases(vacancy.Company.Industries) %}"
 					 data-company-has-employees-from-countries="{%s aliases(vacancy.Company.HasEmployeesFromCountries) %}"
 				>
+                    <div class="card__vacancy">
 					<aside class="card__action">
 						{% if userVacancyFavoriteMap[vacancy.ID] %}
 						  <button class="js-vacancy-favorite favorite card__action-button button-group__item in-favorite" title="Remove from favorites">
@@ -298,7 +299,7 @@
 						<div class="card__image-overlay">
 							<img class="card__image"
 								alt="card image preview icon"
-								src="/assets/images/pages/common-images/unknown.svg"
+								src="{%s logo(vacancy.Company.Logo) %}"
 							/>
 						</div>
 						<figcaption class="card__header-caption">
@@ -356,6 +357,7 @@
 							/>
 						</a>
 					</div>
+                    </div>
 				</div>
 			{% endfor %}
 		  </div>

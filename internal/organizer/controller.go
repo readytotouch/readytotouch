@@ -237,6 +237,7 @@ func (c *Controller) CompanyV1(ctx *gin.Context) {
 	if company.Type == "" {
 		company.Type = organizers.ToCompanyType(company.LinkedInProfile.Alias)
 	}
+	company.Logo = organizers.CompanyAliasToLogoMap[company.LinkedInProfile.Alias]
 
 	organizerFeature, ok := c.organizerFeature(featurePath)
 	if !ok {
@@ -336,6 +337,7 @@ func (c *Controller) CompanyV2(ctx *gin.Context) {
 	if company.Type == "" {
 		company.Type = organizers.ToCompanyType(company.LinkedInProfile.Alias)
 	}
+	company.Logo = organizers.CompanyAliasToLogoMap[company.LinkedInProfile.Alias]
 
 	organizerFeature, ok := c.organizerFeature(featurePath)
 	if !ok {
@@ -1156,6 +1158,7 @@ func (c *Controller) companies(organizerFeature domain.OrganizerFeature) []domai
 		if company.Type == "" {
 			company.Type = organizers.ToCompanyType(company.LinkedInProfile.Alias)
 		}
+		company.Logo = organizers.CompanyAliasToLogoMap[company.LinkedInProfile.Alias]
 
 		language := organizerFeature.Organizer.Language
 
@@ -1195,6 +1198,7 @@ func (c *Controller) toPrepareCompany(company domain.CompanyProfile) domain.Prep
 	return domain.PreparedCompany{
 		ID:                        company.ID,
 		Type:                      company.Type,
+		Logo:                      company.Logo,
 		Name:                      company.Name,
 		Alias:                     company.LinkedInProfile.Alias,
 		Industries:                company.Industries,

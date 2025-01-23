@@ -246,13 +246,10 @@
                 </a>
               </aside>
               <figure class="card__header">
-                <div class="card__image-overlay card__image-overlay--small">
-                  <img
-                    width="18"
-                    height="18"
-                    class="card__image card__image--preview"
+                <div class="card__image-overlay">
+                  <img class="card__image"
                     alt="card image preview icon"
-                    src="/assets/images/pages/common-images/unknown.svg"
+                    src="{%s logo(company.Logo) %}"
                   />
                 </div>
                 <figcaption class="card__header-caption">
