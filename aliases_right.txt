@@ -449,3 +449,6 @@ zeptolab zeptolab.png
 zoom zoom.png
 zscaler zscaler.png
 zubale zubale.png
+sas sas.png
+electronic-arts electronic-arts.png
+grafana-labs grafana-labs.png

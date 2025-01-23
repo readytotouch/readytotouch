@@ -64,6 +64,46 @@ func assertCorrectnessAliasImageMap(aliasImageMap map[string]string, aliasMap ma
 			panic(fmt.Sprintf("image not found: %s", image))
 		}
 	}
+
+	allowDuplicateMap := map[[2]string]struct{}{
+		{"applied-systems", "applied.png"}:        {},
+		{"applied-systems-canada", "applied.png"}: {},
+	}
+
+	duplicateImageMap := make(map[string][]string)
+	for alias, image := range aliasImageMap {
+		if _, ok := allowDuplicateMap[[2]string{alias, image}]; ok {
+			continue
+		}
+
+		duplicateImageMap[image] = append(duplicateImageMap[image], alias)
+	}
+
+	for image, aliases := range duplicateImageMap {
+		if len(aliases) > 1 {
+			panic(fmt.Sprintf("duplicate image: %s, aliases: %v", image, aliases))
+		}
+	}
+
+	assertAllImageMapped(imageExistsMap, aliasImageMap)
+}
+
+func assertAllImageMapped(imageExistsMap map[string]string, aliasImageMap map[string]string) {
+	mappedImageExistsMap := make(map[string]struct{})
+	for _, image := range aliasImageMap {
+		mappedImageExistsMap[image] = struct{}{}
+	}
+
+	count := 0
+	for image := range imageExistsMap {
+		if _, ok := mappedImageExistsMap[image]; !ok {
+			fmt.Println(image)
+			count++
+		}
+	}
+	if count > 0 {
+		panic(fmt.Sprintf("not all images mapped: %d", count))
+	}
 }
 
 func fetchAliasImageMap(filename string) (map[string]string, error) {
