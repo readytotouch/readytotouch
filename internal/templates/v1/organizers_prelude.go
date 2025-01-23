@@ -213,6 +213,14 @@ func isOttaVacancyURL(s string) bool {
 		strings.Contains(s, "https://app.otta.com/jobs/")
 }
 
+func logo(s string) string {
+	if s == "" {
+		return "/assets/images/pages/common-images/unknown.svg"
+	}
+
+	return "/assets/unstable/logos/" + s
+}
+
 var (
 	companyTypeName = map[domain.CompanyType]string{
 		CompanyTypeProduct: "Product",

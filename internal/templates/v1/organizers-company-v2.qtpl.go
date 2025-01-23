@@ -193,7 +193,9 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
       <img
         class="card__image"
         alt="card image preview icon"
-		src="/assets/images/pages/common-images/unknown.svg"
+		src="`)
+	qw422016.E().S(logo(company.Logo))
+	qw422016.N().S(`"
       />
     </div>
     <figcaption class="card__header-caption">
@@ -1019,6 +1021,9 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 		qw422016.N().DL(vacancy.ID)
 		qw422016.N().S(`"
 				>
+					`)
+		qw422016.N().S(`
+
 					<aside class="card__action">
 						`)
 		if userVacancyFavoriteMap[vacancy.ID] {
@@ -1050,7 +1055,9 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 						<div class="card__image-overlay">
 							<img class="card__image"
 								alt="card image preview icon"
-								src="/assets/images/pages/common-images/unknown.svg"
+								src="`)
+		qw422016.E().S(logo(company.Logo))
+		qw422016.N().S(`"
 							/>
 						</div>
 						<figcaption class="card__header-caption">
@@ -1134,6 +1141,9 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 							/>
 						</a>
 					</div>
+
+					`)
+		qw422016.N().S(`
 				</div>
 			`)
 	}
