@@ -1503,6 +1503,51 @@ func companiesPart8() []domain.CompanyProfile {
 			ShortDescription: "German international shipping and container transportation company",
 		},
 
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Tata Consultancy Services",
+			Website: "https://www.tcs.com/",
+			Careers: "https://www.tcs.com/careers",
+			About:   "https://www.tcs.com/who-we-are",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                133791,
+				Alias:             "tata-consultancy-services",
+				Name:              "Tata Consultancy Services",
+				Followers:         "17K",
+				Employees:         "10k",
+				AssociatedMembers: "657,261",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "https://github.com/tata-consultancy-services",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go:   {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "GOLANG Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4130444792",
+							Date:                 mustDate("2025-01-21"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust: {},
+				domain.Zig:  {},
+				domain.Scala: {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "German international shipping and container transportation company",
+		},
+
 		// Template short
 		//{
 		//	ID:      0,  // system
