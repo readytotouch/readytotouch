@@ -130,7 +130,7 @@
     </figcaption>
   </figure>
 	<div class="card__top-links">
-		<a href="{%s company.Website %}" class="card__top-link button-link">Website</a>
+		<a href="{%s company.Website %}" target="_blank" class="card__top-link button-link">Website</a>
 		{% if company.Careers == "" %}
 			<span class="card__top-link button-link disabled">Careers</span>
 		{% else %}
