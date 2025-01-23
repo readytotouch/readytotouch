@@ -9,8 +9,8 @@ import (
 
 	"github.com/readytotouch/readytotouch/internal/db/postgres"
 	"github.com/readytotouch/readytotouch/internal/domain"
+	"github.com/readytotouch/readytotouch/internal/generated/organizers"
 	"github.com/readytotouch/readytotouch/internal/organizer/db"
-	"github.com/readytotouch/readytotouch/internal/protos/organizers"
 	"github.com/readytotouch/readytotouch/internal/storage/postgres/dbs"
 	template "github.com/readytotouch/readytotouch/internal/templates/v1"
 
@@ -225,7 +225,7 @@ func (c *Controller) CompanyV1(ctx *gin.Context) {
 		return
 	}
 
-	company.ID = organizers.CompanyAliasMap[company.LinkedInProfile.Alias]
+	company.ID = organizers.CompanyAliasToCodeMap[company.LinkedInProfile.Alias]
 	if company.ID == 0 {
 		// make generate-organizers
 
@@ -324,7 +324,7 @@ func (c *Controller) CompanyV2(ctx *gin.Context) {
 		return
 	}
 
-	company.ID = organizers.CompanyAliasMap[company.LinkedInProfile.Alias]
+	company.ID = organizers.CompanyAliasToCodeMap[company.LinkedInProfile.Alias]
 	if company.ID == 0 {
 		// make generate-organizers
 
@@ -1146,7 +1146,7 @@ func (c *Controller) companies(organizerFeature domain.OrganizerFeature) []domai
 		companies = make([]domain.CompanyProfile, 0, len(source))
 	)
 	for _, company := range source {
-		company.ID = organizers.CompanyAliasMap[company.LinkedInProfile.Alias]
+		company.ID = organizers.CompanyAliasToCodeMap[company.LinkedInProfile.Alias]
 		if company.ID == 0 {
 			// make generate-organizers
 

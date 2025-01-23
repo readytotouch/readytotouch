@@ -1,15 +1,17 @@
 package main
 
 import (
+	"bufio"
 	"encoding/json"
 	"fmt"
 	"go/format"
 	"os"
 	"sort"
+	"strings"
 
 	"github.com/readytotouch/readytotouch/internal/domain"
+	"github.com/readytotouch/readytotouch/internal/generated/organizers"
 	"github.com/readytotouch/readytotouch/internal/organizer/db"
-	"github.com/readytotouch/readytotouch/internal/protos/organizers"
 	"github.com/readytotouch/readytotouch/internal/templates/dev"
 )
 
@@ -20,7 +22,11 @@ func main() {
 
 	generateCompanies(companies)
 	generateVacancies(companies)
-	generateLogosSearch(companies)
+	// Will be used in the future to generate missing logos
+	/*
+		generateLogosSearch(companies)
+	*/
+	generateLogos(companies)
 }
 
 func generateCompanies(companies []domain.CompanyProfile) {
@@ -32,7 +38,7 @@ func generateCompanies(companies []domain.CompanyProfile) {
 
 	// Assert that all company aliases are present in the map
 	for alias := range organizers.CompanyStartupMap {
-		if _, ok := organizers.CompanyAliasMap[alias]; !ok {
+		if _, ok := organizers.CompanyAliasToCodeMap[alias]; !ok {
 			panic(fmt.Sprintf("Company alias not found: %s", alias))
 		}
 	}
@@ -48,7 +54,7 @@ func generateCompanies(companies []domain.CompanyProfile) {
 			panic(fmt.Sprintf("Company LinkedIn name is empty for company: %s", company.Name))
 		}
 
-		id := organizers.CompanyAliasMap[company.LinkedInProfile.Alias]
+		id := organizers.CompanyAliasToCodeMap[company.LinkedInProfile.Alias]
 
 		// If we added the ignored company before, then keep it
 		if id == 0 && company.Ignore {
@@ -78,7 +84,7 @@ func generateCompanies(companies []domain.CompanyProfile) {
 		panic(err)
 	}
 
-	err = os.WriteFile("./internal/protos/organizers/company_code.go", output, 0644)
+	err = os.WriteFile("./internal/generated/organizers/company_code.go", output, 0644)
 	if err != nil {
 		panic(err)
 	}
@@ -169,7 +175,7 @@ func generateVacancies(companies []domain.CompanyProfile) {
 		panic(err)
 	}
 
-	err = os.WriteFile("./internal/protos/organizers/vacancy_code.go", output, 0644)
+	err = os.WriteFile("./internal/generated/organizers/vacancy_code.go", output, 0644)
 	if err != nil {
 		panic(err)
 	}
@@ -184,7 +190,7 @@ func generateLogosSearch(companies []domain.CompanyProfile) {
 	)
 
 	for _, company := range companies {
-		id := organizers.CompanyAliasMap[company.LinkedInProfile.Alias]
+		id := organizers.CompanyAliasToCodeMap[company.LinkedInProfile.Alias]
 
 		if id == 0 || !company.LinkedInProfile.Verified || company.Ignore {
 			continue
@@ -205,4 +211,64 @@ func generateLogosSearch(companies []domain.CompanyProfile) {
 	if err != nil {
 		panic(err)
 	}
+}
+
+func generateLogos(companies []domain.CompanyProfile) {
+	aliasImagePairs, err := fetchAliasImagePairs("./public/logos/mapping.txt")
+	if err != nil {
+		panic(err)
+	}
+
+	for _, aliasImagePair := range aliasImagePairs {
+		if _, ok := organizers.CompanyAliasToCodeMap[aliasImagePair.Alias]; !ok {
+			panic(fmt.Sprintf("Company alias not found: %s", aliasImagePair.Alias))
+		}
+	}
+
+	output, err := format.Source([]byte(dev.CompanyLogo(aliasImagePairs)))
+	if err != nil {
+		panic(err)
+	}
+
+	err = os.WriteFile("./internal/generated/organizers/company_logo.go", output, 0644)
+	if err != nil {
+		panic(err)
+	}
+
+	fmt.Println("Company logo generated successfully")
+}
+
+func fetchAliasImagePairs(filename string) ([]*dev.CompanyLogoPair, error) {
+	file, err := os.Open(filename)
+	if err != nil {
+		return nil, err
+	}
+	defer file.Close()
+
+	var result []*dev.CompanyLogoPair
+
+	scanner := bufio.NewScanner(file)
+	for scanner.Scan() {
+		line := scanner.Text()
+		parts := strings.Split(line, " ")
+
+		if len(parts) != 2 {
+			return nil, fmt.Errorf("invalid line: %s", line)
+		}
+
+		result = append(result, &dev.CompanyLogoPair{
+			Alias: parts[0],
+			Logo:  parts[1],
+		})
+	}
+
+	if err := scanner.Err(); err != nil {
+		return nil, err
+	}
+
+	sort.Slice(result, func(i, j int) bool {
+		return result[i].Alias < result[j].Alias
+	})
+
+	return result, nil
 }

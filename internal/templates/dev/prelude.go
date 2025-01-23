@@ -17,9 +17,14 @@ type VacancyCodePair struct {
 	CompanyAlias string
 }
 
+type CompanyLogoPair struct {
+	Alias string
+	Logo  string
+}
+
 func googleSearchLogos(companyName string) string {
 	values := url.Values{
-		"q": {fmt.Sprintf("%q logos", companyName)},
+		"q": {fmt.Sprintf("%q review-logos", companyName)},
 	}
 
 	return "https://www.google.com/search?" + values.Encode()
