@@ -8,7 +8,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/readytotouch/readytotouch/internal/protos/organizers"
+	"github.com/readytotouch/readytotouch/internal/generated/organizers"
 )
 
 func main() {
@@ -52,7 +52,7 @@ func review(dir string) {
 		panic(err)
 	}
 
-	assertCorrectnessAliasImageMap(aliasImageMap, organizers.CompanyAliasMap, imageExistsMap)
+	assertCorrectnessAliasImageMap(aliasImageMap, organizers.CompanyAliasToCodeMap, imageExistsMap)
 
 	// sortAndStoreAliasImageMap(aliasImageMap, "./public/logos/mapping_sorted.txt")
 }
@@ -97,15 +97,10 @@ func assertAllImageMapped(imageExistsMap map[string]string, aliasImageMap map[st
 		mappedImageExistsMap[image] = struct{}{}
 	}
 
-	count := 0
 	for image := range imageExistsMap {
 		if _, ok := mappedImageExistsMap[image]; !ok {
-			fmt.Println(image)
-			count++
+			panic(fmt.Sprintf("image not mapped: %s", image))
 		}
-	}
-	if count > 0 {
-		panic(fmt.Sprintf("not all images mapped: %d", count))
 	}
 }
 
@@ -116,10 +111,8 @@ func fetchAliasImageMap(filename string) (map[string]string, error) {
 	}
 	defer file.Close()
 
-	// Ініціалізація мапи
 	dataMap := make(map[string]string)
 
-	// Читання рядків з файлу
 	scanner := bufio.NewScanner(file)
 	for scanner.Scan() {
 		line := scanner.Text()
@@ -146,18 +139,17 @@ func fetchAliasImageMap(filename string) (map[string]string, error) {
 	return dataMap, nil
 }
 
-func sortAndStoreAliasImageMap(imageMap map[string]string, s string) {
+func sortAndStoreAliasImageMap(imageMap map[string]string, dst string) {
 	rows := make([][2]string, 0, len(imageMap))
 	for alias, image := range imageMap {
 		rows = append(rows, [2]string{alias, image})
 	}
 
-	// sort by alias
 	sort.Slice(rows, func(i, j int) bool {
 		return rows[i][0] < rows[j][0]
 	})
 
-	file, err := os.Create(s)
+	file, err := os.Create(dst)
 	if err != nil {
 		panic(err)
 	}
