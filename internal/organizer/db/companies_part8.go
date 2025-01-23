@@ -714,6 +714,15 @@ func companiesPart8() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Backend Developer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4130863951/",
+							Date:                 mustDate("2025-01-21"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -1501,6 +1510,186 @@ func companiesPart8() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "German international shipping and container transportation company",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "CV-Library",
+			Website: "https://www.cv-library.co.uk/",
+			Careers: "https://www.cv-library.co.uk/work-for-us",
+			About:   "https://www.cv-library.co.uk/about",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                298012,
+				Alias:             "cv-library",
+				Name:              "CV-Library",
+				Followers:         "136K",
+				Employees:         "201-500",
+				AssociatedMembers: "843",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "cv-library",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Go Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4131178111/",
+							Date:                 mustDate("2025-01-21"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "UK job board",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "r2p Group",
+			Website: "https://www.r2p.com/",
+			Careers: "https://www.r2p.com/career/",
+			About:   "https://www.r2p.com/about-r2p/company-info/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                11242428,
+				Alias:             "r2p-group",
+				Name:              "r2p Group",
+				Followers:         "2K",
+				Employees:         "201-500",
+				AssociatedMembers: "180",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Embedded Rust Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4129472012/",
+							Date:                 mustDate("2025-01-21"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Global provider of intelligent technology systems for public transport",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "nVent",
+			Website: "https://www.nvent.com/",
+			Careers: "https://www.nvent.com/about-nvent/overview",
+			About:   "https://www.nvent.com/careers",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                11418434,
+				Alias:             "nvent",
+				Name:              "nVent",
+				Followers:         "109K",
+				Employees:         "10K+",
+				AssociatedMembers: "2,972",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Embedded Rust/C++ Firmware Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4075185834/",
+							Date:                 mustDate("2025-01-20"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American global technology company",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Endress+Hauser Group",
+			Website: "https://www.endress.com",
+			Careers: "https://careers.endress.com/",
+			About:   "https://www.endress.com/en/endress-hauser-group",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                11708,
+				Alias:             "endress-hauser-group",
+				Name:              "Endress+Hauser Group",
+				Followers:         "308K",
+				Employees:         "10K+",
+				AssociatedMembers: "9,669",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Rust Automation & Controls — Outside Sales Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4131415073/",
+							Date:                 mustDate("2025-01-21"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Globally operating process and laboratory instrumentation and automation supplier.",
 		},
 
 		// Template short
