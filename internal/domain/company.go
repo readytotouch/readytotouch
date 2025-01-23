@@ -29,8 +29,9 @@ const (
 )
 
 const (
-	CompanyTypeProduct CompanyType = "product"
-	CompanyTypeStartup CompanyType = "startup"
+	CompanyTypeProduct   CompanyType = "product"
+	CompanyTypeStartup   CompanyType = "startup"
+	CompanyTypeOutsource CompanyType = "outsource"
 )
 
 // Deprecated
@@ -102,7 +103,7 @@ type Vacancy struct {
 	URL                  string
 	Date                 time.Time
 	WithSalary           bool
-	Remote               bool
+	Remote               bool // Fully remote available
 	// @TODO There is an opportunity to apply without knowing the language, but with a willingness to learn it
 }
 

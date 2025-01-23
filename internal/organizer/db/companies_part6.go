@@ -172,7 +172,7 @@ func companiesPart6() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "Automates and scales industrial data contextualization ",
+			ShortDescription: "Automates and scales industrial data contextualization",
 		},
 
 		{
@@ -237,6 +237,15 @@ func companiesPart6() []domain.CompanyProfile {
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4094489606/",
 							Date:             mustDate("2024-12-20"),
+						},
+						{
+							Title:                "Back-End Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4127761267/",
+							Date:                 mustDate("2025-01-16"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 					},
 				},

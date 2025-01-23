@@ -565,6 +565,38 @@ var (
 		"centrica":                            562, // Centrica
 		"muralhealth":                         563, // Mural Health
 		"greengot":                            564, // Green-Got
+		"auctiontechnologygroup":              565, // ATG (Auction Technology Group)
+		"gridX":                               566, // gridX
+		"evolve-vacation-rental":              567, // Evolve
+		"strangebee":                          568, // StrangeBee
+		"thatgamecompany":                     569, // thatgamecompany
+		"betterme-company":                    570, // BetterMe
+		"spe-solution":                        571, // SPE Solution
+		"quantum-systems-gmbh":                572, // Quantum Systems
+		"gdms":                                573, // General Dynamics Mission Systems
+		"mondu-ai":                            574, // Mondu
+		"money-forward":                       575, // 株式会社マネーフォワード — Money Forward
+		"prize-picks":                         576, // PrizePicks
+		"chep":                                577, // CHEP
+		"optimizely":                          578, // Optimizely
+		"opswat":                              579, // OPSWAT
+		"videoamp":                            580, // VideoAmp
+		"broadcom":                            581, // Broadcom
+		"toyota-north-america":                582, // Toyota North America
+		"about-you":                           583, // ABOUT YOU
+		"magicmotorsport":                     584, // Magicmotorsport
+		"stationf":                            585, // STATION F
+		"nordea":                              586, // Nordea
+		"deutscheboerse":                      587, // Deutsche Börse
+		"hootsuite":                           588, // Hootsuite
+		"hsbc":                                589, // HSBC
+		"affinipay":                           590, // AffiniPay
+		"vividmoney":                          591, // Vivid Money
+		"idemiagroup":                         592, // IDEMIA
+		"ninjatrader-group-llc":               593, // NinjaTrader
+		"tikoafrica":                          594, // Tiko
+		"topgolf":                             595, // Topgolf
+		"hapag-lloyd-ag":                      596, // Hapag-Lloyd AG
 
 	}
 )
