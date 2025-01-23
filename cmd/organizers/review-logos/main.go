@@ -21,6 +21,8 @@ func review(dir string) {
 		panic(err)
 	}
 
+	imageExistsMap := make(map[string]string)
+
 	for _, file := range files {
 		if file.IsDir() {
 			panic("dir unexpected")
@@ -33,22 +35,35 @@ func review(dir string) {
 
 		ext := filepath.Ext(file.Name())
 
-		alias := strings.TrimSuffix(fileName, ext)
-
 		switch ext {
 		case ".png", ".jpg", ".jpeg":
 		default:
 			panic(fmt.Sprintf("unexpected ext: %s", ext))
 		}
 
-		_ = organizers.CompanyAliasMap[alias]
+		alias := strings.TrimSuffix(fileName, ext)
+
+		imageExistsMap[fileName] = alias
 	}
 
 	aliasImageMap, err := fetchAliasImageMap("./aliases_right.txt")
 	if err != nil {
 		panic(err)
 	}
-	_ = aliasImageMap
+
+	assertCorrectnessAliasImageMap(aliasImageMap, organizers.CompanyAliasMap, imageExistsMap)
+}
+
+func assertCorrectnessAliasImageMap(aliasImageMap map[string]string, aliasMap map[string]int64, imageExistsMap map[string]string) {
+	for alias, image := range aliasImageMap {
+		if _, ok := aliasMap[alias]; !ok {
+			panic(fmt.Sprintf("alias not found: %s", alias))
+		}
+
+		if _, ok := imageExistsMap[image]; !ok {
+			panic(fmt.Sprintf("image not found: %s", image))
+		}
+	}
 }
 
 func fetchAliasImageMap(filename string) (map[string]string, error) {

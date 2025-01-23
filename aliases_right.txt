@@ -96,7 +96,7 @@ gitlab-com gitlab.png
 suse gold-suse.png
 gorillalogic gorilla-logic.png
 grasshopperasia grasshopper.png
-greenbone-ag greenbodeag.png
+greenbone-networks-gmbh greenbodeag.png
 happen-ing happening.png
 nico-lab header.png
 hearx-group hearx.png
@@ -113,11 +113,11 @@ just-eat-takeaway-com just-eat-takeaway.png
 kiteworkscgcp kiteworks.png
 kochinc koch.png
 lenskart-com lenskart.png
-levellock level-home.png
+levelhome level-home.png
 lightspeedcommerce lightspeed.png
 limango-gmbh limango-germany.png
 limango-sp-z-o-o- limango.png
-lowe's-home-improvement lowes.png
+4128 lowes.png
 lumentechnologies lumen-technologies.png
 lytxinc lytx-company.png
 macquariegroup macquarie.png
@@ -329,7 +329,7 @@ koho koho.png
 konghq konghq.png
 kroger kroger.png
 lantronix lantronix.png
-lexisnexis-risk-solutions lexis-risk-solutions.png
+lexisnexis-risk-solutions lexisnexis-risk-solutions.png
 liebherr liebherr.png
 linkedin linkedin.png
 littlelives littlelives.png
