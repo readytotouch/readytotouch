@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"os"
 	"path/filepath"
+	"sort"
 	"strings"
 
 	"github.com/readytotouch/readytotouch/internal/protos/organizers"
@@ -52,6 +53,8 @@ func review(dir string) {
 	}
 
 	assertCorrectnessAliasImageMap(aliasImageMap, organizers.CompanyAliasMap, imageExistsMap)
+
+	// sortAndStoreAliasImageMap(aliasImageMap, "./public/logos/mapping_sorted.txt")
 }
 
 func assertCorrectnessAliasImageMap(aliasImageMap map[string]string, aliasMap map[string]int64, imageExistsMap map[string]string) {
@@ -141,4 +144,29 @@ func fetchAliasImageMap(filename string) (map[string]string, error) {
 	}
 
 	return dataMap, nil
+}
+
+func sortAndStoreAliasImageMap(imageMap map[string]string, s string) {
+	rows := make([][2]string, 0, len(imageMap))
+	for alias, image := range imageMap {
+		rows = append(rows, [2]string{alias, image})
+	}
+
+	// sort by alias
+	sort.Slice(rows, func(i, j int) bool {
+		return rows[i][0] < rows[j][0]
+	})
+
+	file, err := os.Create(s)
+	if err != nil {
+		panic(err)
+	}
+	defer file.Close()
+
+	for _, row := range rows {
+		_, err := file.WriteString(fmt.Sprintf("%s %s\n", row[0], row[1]))
+		if err != nil {
+			panic(err)
+		}
+	}
 }
