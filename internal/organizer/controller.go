@@ -1198,6 +1198,7 @@ func (c *Controller) toPrepareCompany(company domain.CompanyProfile) domain.Prep
 	return domain.PreparedCompany{
 		ID:                        company.ID,
 		Type:                      company.Type,
+		Logo:                      company.Logo,
 		Name:                      company.Name,
 		Alias:                     company.LinkedInProfile.Alias,
 		Industries:                company.Industries,
