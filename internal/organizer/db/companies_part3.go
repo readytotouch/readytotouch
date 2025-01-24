@@ -69,6 +69,24 @@ func companiesPart3() []domain.CompanyProfile {
 							WithSalary:           true, // $193,400 - $220,700
 							Remote:               false,
 						},
+						{
+							Title:                "Lead Software Engineer, Back End (Python, Go, AWS)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4124919537/",
+							Date:                 mustDate("2025-01-23"),
+							WithSalary:           true, // $193,400 - $220,700
+							Remote:               false,
+						},
+						{
+							Title:                "Lead Software Engineer, Back End (Java or Go)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4124919539/",
+							Date:                 mustDate("2025-01-23"),
+							WithSalary:           true, // $175,800 - $200,700
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {},
@@ -81,6 +99,20 @@ func companiesPart3() []domain.CompanyProfile {
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4060428354/",
 							Date:             mustDate("2024-11-01"),
+						},
+						{
+							Title:            "Senior Lead Data Engineer (Python/Scala, Spark, AWS)",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4129780907/",
+							Date:             mustDate("2025-01-18"),
+							WithSalary:       true, // $225,400 — $257,200 per year
+						},
+						{
+							Title:            "Lead Data Engineer (Python/Scala, Spark, AWS)",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4129783447/",
+							Date:             mustDate("2025-01-18"),
+							WithSalary:       true, // $193,400 — $220,700 per year
 						},
 					},
 				},
@@ -1830,6 +1862,20 @@ func companiesPart3() []domain.CompanyProfile {
 							URL:              "https://www.linkedin.com/jobs/view/3946499898/",
 							Date:             mustDate("2024-11-21"),
 						},
+						{
+							Title:            "Software Engineer — Go",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4073760794/",
+							Date:             mustDate("2025-01-23"),
+							Remote:           true,
+						},
+						{
+							Title:            "Senior Software Engineer — Go",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4090994054/",
+							Date:             mustDate("2025-01-22"),
+							Remote:           true,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -2054,6 +2100,13 @@ func companiesPart3() []domain.CompanyProfile {
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4085817047/",
 							Date:             mustDate("2024-11-26"),
+						},
+						{
+							Title:            "Senior Golang Software Engineer",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4132275044/",
+							Date:             mustDate("2025-01-22"),
+							Remote:           true,
 						},
 					},
 				},
