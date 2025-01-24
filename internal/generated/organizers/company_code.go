@@ -597,6 +597,15 @@ var (
 		"tikoafrica":                          594, // Tiko
 		"topgolf":                             595, // Topgolf
 		"hapag-lloyd-ag":                      596, // Hapag-Lloyd AG
+		"cv-library":                          597, // CV-Library
+		"r2p-group":                           598, // r2p Group
+		"nvent":                               599, // nVent
+		"endress-hauser-group":                600, // Endress+Hauser Group
+		"pdf-solutions":                       601, // PDF Solutions
+		"quantexa":                            602, // Quantexa
+		"pagonxt":                             603, // PagoNxt (a Santander company)
+		"qad":                                 604, // QAD
+		"new-work-se":                         605, // New Work SE
 
 	}
 )
