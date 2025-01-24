@@ -271,10 +271,13 @@ func companiesPart4() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 2,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Senior Golang Developer",
-							ShortDescription: "Maroon Team",
-							URL:              "https://www.linkedin.com/jobs/view/4063404057/",
-							Date:             mustDate("2024-12-13"),
+							Title:                "Senior Golang Developer",
+							ShortDescription:     "Maroon Team",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4063404057/",
+							Date:                 mustDate("2024-12-13"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 						{
 							Title:                "Golang Developer",
@@ -289,7 +292,7 @@ func companiesPart4() []domain.CompanyProfile {
 							Title:                "Golang Developer",
 							ShortDescription:     "Enterprise Solutions Unit",
 							SwitchingOpportunity: "",
-							URL:                  "Senior Golang Developer",
+							URL:                  "https://www.linkedin.com/jobs/view/4132135610/",
 							Date:                 mustDate("2025-01-23"),
 							WithSalary:           false,
 							Remote:               true,

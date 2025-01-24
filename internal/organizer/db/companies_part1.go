@@ -3506,8 +3506,8 @@ func companiesPart1() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Senior Big Data Developer ",
-							ShortDescription:     "Hadoop/Spark/Scala/Python/Java",
+							Title:                "Senior Big Data Developer",
+							ShortDescription:     "Hadoop, Spark, Scala, Python, Java",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4131052408/",
 							Date:                 mustDate("2025-01-22"),
@@ -3968,7 +3968,7 @@ func companiesPart1() []domain.CompanyProfile {
 							Title:            "Mid-Senior Backend Engineer (Golang, AI)",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4132260341/",
-							Date:             mustDate("2024-11-25"),
+							Date:             mustDate("2025-01-22"),
 							WithSalary:       true, // 3500 — 7200 eur per month
 						},
 					},
@@ -6134,7 +6134,7 @@ func companiesPart1() []domain.CompanyProfile {
 							Title:            "Senior Software Engineer (Go)",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4131339080/",
-							Date:             mustDate("2024-11-25"),
+							Date:             mustDate("2025-01-21"),
 							Remote:           true,
 							WithSalary:       true, // $160K — $190K per year
 						},
@@ -7491,7 +7491,7 @@ func companiesPart1() []domain.CompanyProfile {
 							Date:             mustDate("2025-01-20"),
 						},
 						{
-							Title:            "C++/Golang System Developer ",
+							Title:            "C++/Golang System Developer",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4133051684/",
 							Date:             mustDate("2025-01-23"),
@@ -14055,8 +14055,8 @@ func companiesPart1() []domain.CompanyProfile {
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/3847871749/",
 							Date:             mustDate("2025-01-22"),
-							Remote:           true,
 							WithSalary:       true, // $150k — $180k per year
+							Remote:           true,
 						},
 					},
 				},

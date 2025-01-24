@@ -1644,7 +1644,7 @@ func companiesPart8() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "American global technology company",
+			ShortDescription: "nVent is a leader in enclosures, electric heat-tracing solutions, complete heat-management systems and electrical and fastening solutions",
 		},
 
 		{
@@ -1689,7 +1689,7 @@ func companiesPart8() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "Globally operating process and laboratory instrumentation and automation supplier.",
+			ShortDescription: "Globally operating process and laboratory instrumentation and automation supplier",
 		},
 
 		{
@@ -1734,7 +1734,8 @@ func companiesPart8() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "American multinational software and engineering services company",
+			// NASDAQ: PDFS
+			ShortDescription: "PDF Solutions offers an end-to-end analytics platform that empowers engineers and data scientists across the semiconductor ecosystem to rapidly improve the yield, quality, and profitability of their products",
 		},
 
 		{
@@ -1869,7 +1870,7 @@ func companiesPart8() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "Software company",
+			ShortDescription: "A provider of next-generation manufacturing and supply chain solutions in the cloud",
 		},
 
 		{
@@ -1905,7 +1906,7 @@ func companiesPart8() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4125983022/",
 							Date:                 mustDate("2025-01-16"),
-							WithSalary:           true, // 42.000-58.000 eur
+							WithSalary:           true, // 42.000-58.000 EUR
 							Remote:               false,
 						},
 					},
