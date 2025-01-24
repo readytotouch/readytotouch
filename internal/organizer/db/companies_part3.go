@@ -100,6 +100,20 @@ func companiesPart3() []domain.CompanyProfile {
 							URL:              "https://www.linkedin.com/jobs/view/4060428354/",
 							Date:             mustDate("2024-11-01"),
 						},
+						{
+							Title:            "Senior Lead Data Engineer (Python/Scala, Spark, AWS)",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4129780907/",
+							Date:             mustDate("2025-01-18"),
+							WithSalary:       true, // $225,400 — $257,200 per year
+						},
+						{
+							Title:            "Lead Data Engineer (Python/Scala, Spark, AWS)",
+							ShortDescription: "",
+							URL:              "https://www.linkedin.com/jobs/view/4129783447/",
+							Date:             mustDate("2025-01-18"),
+							WithSalary:       true, // $193,400 — $220,700 per year
+						},
 					},
 				},
 				domain.Elixir:  {},

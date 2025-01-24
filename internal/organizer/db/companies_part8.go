@@ -1692,6 +1692,231 @@ func companiesPart8() []domain.CompanyProfile {
 			ShortDescription: "Globally operating process and laboratory instrumentation and automation supplier.",
 		},
 
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "PDF Solutions",
+			Website: "https://www.pdf.com/",
+			Careers: "https://www.pdf.com/company/careers/",
+			About:   "https://www.pdf.com/company/overview/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                12658,
+				Alias:             "pdf-solutions",
+				Name:              "PDF Solutions",
+				Followers:         "14K",
+				Employees:         "201-500",
+				AssociatedMembers: "775",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go:   {},
+				domain.Rust: {},
+				domain.Zig:  {},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Scala/Spark Software Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4041068965/",
+							Date:                 mustDate("2025-01-23"),
+							WithSalary:           true, // CAD $100,000.00 — CAD $130,000.00 per year
+							Remote:               true,
+						},
+					},
+				},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American multinational software and engineering services company",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Quantexa",
+			Website: "https://www.quantexa.com/",
+			Careers: "https://www.quantexa.com/careers/",
+			About:   "https://www.quantexa.com/about/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                10607739,
+				Alias:             "quantexa",
+				Name:              "Quantexa",
+				Followers:         "80K",
+				Employees:         "501-1K",
+				AssociatedMembers: "794",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go:   {},
+				domain.Rust: {},
+				domain.Zig:  {},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Scala Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4131108929/",
+							Date:                 mustDate("2025-01-22"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Data and analytics software company",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "PagoNxt (a Santander company)",
+			Website: "https://www.pagonxt.com/",
+			Careers: "https://www.pagonxt.com/join-us",
+			About:   "https://www.pagonxt.com/who-we-are",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                71200791,
+				Alias:             "pagonxt",
+				Name:              "PagoNxt (a Santander company)",
+				Followers:         "106K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "1,071",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "pagonxt",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go:   {},
+				domain.Rust: {},
+				domain.Zig:  {},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer (Java/Scala)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4132333213/",
+							Date:                 mustDate("2025-01-23"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Global payment solution provider",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "QAD",
+			Website: "https://www.qad.com/",
+			Careers: "https://www.qad.com/about/careers",
+			About:   "https://www.qad.com/about",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                5099,
+				Alias:             "qad",
+				Name:              "QAD",
+				Followers:         "160K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "1,707",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go:   {},
+				domain.Rust: {},
+				domain.Zig:  {},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Scala Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4128235975/",
+							Date:                 mustDate("2025-01-17"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Software company",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "New Work SE",
+			Website: "https://new-work.se/",
+			Careers: "https://new-work.se/en/career",
+			About:   "https://new-work.se/en/about-new-work-se",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                28513290,
+				Alias:             "new-work-se",
+				Name:              "New Work SE",
+				Followers:         "25K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "559",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "new-work",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go:   {},
+				domain.Rust: {},
+				domain.Zig:  {},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Data Engineer — Scala",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4125983022/",
+							Date:                 mustDate("2025-01-16"),
+							WithSalary:           true, // 42.000-58.000 eur
+							Remote:               false,
+						},
+					},
+				},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Germany-based operator of a social network for business professionals",
+		},
+
 		// Template short
 		//{
 		//	ID:      0,  // system
