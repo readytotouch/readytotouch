@@ -1044,6 +1044,15 @@ func companiesPart8() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior IT Developer — Scala/Spark/Hadoop/Big Data",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "",
+							Date:                 mustDate("2025-01-24"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Elixir:  {},
@@ -1682,7 +1691,20 @@ func companiesPart8() []domain.CompanyProfile {
 						},
 					},
 				},
-				domain.Rust:    {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Rust Automation & Controls",
+							ShortDescription:     "Outside Sales Engineer",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4131415073/",
+							Date:                 mustDate("2025-01-21"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},
@@ -1966,46 +1988,91 @@ func companiesPart8() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
-			Careers: "",
-			About:   "",
+			Name:    "Walmart",
+			Website: "https://walmart.com/",
+			Careers: "https://careers.walmart.com/",
+			About:   "https://corporate.walmart.com/about",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                2646,
+				Alias:             "walmart",
+				Name:              "Walmart",
+				Followers:         "4M",
+				Employees:         "10K+",
+				AssociatedMembers: "498,289",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
 				Verified: false,
 			},
 			Languages: domain.Languages{
-				domain.Go: {
+				domain.Go:   {},
+				domain.Rust: {},
+				domain.Zig:  {},
+				domain.Scala: {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Data Engineer III (Scala/Spark)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
-							WithSalary:           false,
+							URL:                  "https://www.linkedin.com/jobs/view/4133956837/",
+							Date:                 mustDate("2025-01-25"),
+							WithSalary:           true, // $117.000 $234.000 per year
 							Remote:               false,
 						},
 					},
 				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
 				domain.Elixir:  {},
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "American multinational retail corporation",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Magnite",
+			Website: "https://www.magnite.com/",
+			Careers: "https://www.magnite.com/careers/",
+			About:   "https://www.magnite.com/about-us/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                67332446,
+				Alias:             "magnite",
+				Name:              "Magnite",
+				Followers:         "28K",
+				Employees:         "501-1K",
+				AssociatedMembers: "891",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "MagniteEngineering",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go:   {},
+				domain.Rust: {},
+				domain.Zig:  {},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Engineer II, Reporting and Insights, Scala/Spark",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4116388763/",
+							Date:                 mustDate("2025-01-24"),
+							WithSalary:           true, // $95.000 — $135.000 per year
+							Remote:               false,
+						},
+					},
+				},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American online advertising technology firm",
 		},
 
 		// Template short
