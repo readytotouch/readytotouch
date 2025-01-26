@@ -7141,7 +7141,7 @@ func companiesPart2() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4134262544/",
-							Date:                 mustDate(""),
+							Date:                 mustDate("2025-01-24"),
 							WithSalary:           false,
 							Remote:               false,
 						},
