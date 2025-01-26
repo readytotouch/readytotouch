@@ -1918,6 +1918,96 @@ func companiesPart8() []domain.CompanyProfile {
 			ShortDescription: "Germany-based operator of a social network for business professionals",
 		},
 
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "PT. Sarana Abadi Makmur Bersama",
+			Website: "https://samb.co.id/",
+			Careers: "https://samb.co.id/pages/career",
+			About:   "https://samb.co.id/pages/profile",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                66337745,
+				Alias:             "sambindonesia",
+				Name:              "PT. Sarana Abadi Makmur Bersama",
+				Followers:         "3K",
+				Employees:         "501-1K",
+				AssociatedMembers: "196",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4134786158/",
+							Date:                 mustDate("2025-01-25"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Distribution services, logistics and transportation solutions",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "",
+			Website: "",
+			Careers: "",
+			About:   "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                0,
+				Alias:             "",
+				Name:              "",
+				Followers:         "",
+				Employees:         "",
+				AssociatedMembers: "",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "",
+							Date:                 mustDate(""),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "",
+		},
+
 		// Template short
 		//{
 		//	ID:      0,  // system

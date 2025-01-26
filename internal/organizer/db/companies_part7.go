@@ -249,6 +249,15 @@ func companiesPart7() []domain.CompanyProfile {
 							WithSalary:           true, // Enjoy a generous market salary of up to £60,000
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Software Engineer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4132872793/",
+							Date:                 mustDate("2025-01-24"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust:    {},
