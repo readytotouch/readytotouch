@@ -1668,41 +1668,16 @@ func companiesPart8() []domain.CompanyProfile {
 				Verified: false,
 			},
 			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "Rust Automation & Controls — Outside Sales Engineer",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "https://www.linkedin.com/jobs/view/4131415073/",
-							Date:                 mustDate("2025-01-21"),
-							WithSalary:           false,
-							Remote:               false,
-						},
-					},
-				},
-				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "Rust Automation & Controls",
-							ShortDescription:     "Outside Sales Engineer",
-							SwitchingOpportunity: "",
-							URL:                  "https://www.linkedin.com/jobs/view/4131415073/",
-							Date:                 mustDate("2025-01-21"),
-							WithSalary:           false,
-							Remote:               false,
-						},
-					},
-				},
+				domain.Go:      {},
+				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "Globally operating process and laboratory instrumentation and automation supplier",
+			ShortDescription: "",
+			Ignore:           true, // Was added by mistake because of the name "Rust Automation & Controls" https://www.linkedin.com/jobs/view/4131415073/
 		},
 
 		{
