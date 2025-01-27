@@ -87,6 +87,15 @@ func companiesPart3() []domain.CompanyProfile {
 							WithSalary:           true, // $175,800 - $200,700
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Software Engineer, Back End, (Go, Java)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4135176317/",
+							Date:                 mustDate("2025-01-26"),
+							WithSalary:           true, // $158.600 — $181.000 per year
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {},
@@ -360,7 +369,7 @@ func companiesPart3() []domain.CompanyProfile {
 							Title:            "Embedded Engineer",
 							ShortDescription: "Rust is good to have",
 							URL:              "https://www.linkedin.com/jobs/view/4053645963/",
-							Date:             mustDate("2024-11-25"),
+							Date:             mustDate("2025-01-27"), // mustDate("2024-11-25"),
 						},
 					},
 				},

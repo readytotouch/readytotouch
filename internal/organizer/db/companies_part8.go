@@ -1044,15 +1044,6 @@ func companiesPart8() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
-						{
-							Title:                "Senior IT Developer — Scala/Spark/Hadoop/Big Data",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate("2025-01-24"),
-							WithSalary:           false,
-							Remote:               false,
-						},
 					},
 				},
 				domain.Elixir:  {},
@@ -2073,6 +2064,96 @@ func companiesPart8() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "American online advertising technology firm",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Prezi",
+			Website: "https://prezi.com/",
+			Careers: "https://prezi.com/jobs/",
+			About:   "https://prezi.com/about/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                216295,
+				Alias:             "prezi",
+				Name:              "Prezi",
+				Followers:         "65K",
+				Employees:         "201-500",
+				AssociatedMembers: "258",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "prezi",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go:   {},
+				domain.Rust: {},
+				domain.Zig:  {},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Scala Developer (AI Projects)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4135250887/",
+							Date:                 mustDate("2025-01-27"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Cloud-based presentation software that allows users to create dynamic and interactive presentations.",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "",
+			Website: "",
+			Careers: "",
+			About:   "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                0,
+				Alias:             "",
+				Name:              "",
+				Followers:         "",
+				Employees:         "",
+				AssociatedMembers: "",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "",
+							Date:                 mustDate(""),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "",
 		},
 
 		// Template short

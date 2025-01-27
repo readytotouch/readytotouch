@@ -181,7 +181,7 @@ func companiesPart4() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4048143482/",
-							Date:                 mustDate("2025-01-10"), // mustDate("2024-12-14"),
+							Date:                 mustDate("2025-01-27"), // mustDate("2025-01-10"), // mustDate("2024-12-14"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -1455,10 +1455,13 @@ func companiesPart4() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 18,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Golang Backend Developer",
-							ShortDescription: "Trust & Safety",
-							URL:              "https://www.linkedin.com/jobs/view/4096314146/",
-							Date:             mustDate("2024-12-11"),
+							Title:                "Golang Backend Developer",
+							ShortDescription:     "Trust & Safety",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4096314146/",
+							Date:                 mustDate("2025-01-27"), // mustDate("2024-12-11"),
+							WithSalary:           false,
+							Remote:               true,
 						},
 						{
 							Title:                "Golang Backend Developer",
