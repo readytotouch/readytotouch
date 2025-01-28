@@ -1,0 +1,34 @@
+{%- func DataPopulationCompaniesCareersAndAbout(companies []Company, title string) -%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>{%s title %}</title>
+    <meta name="description" content="{%s title %}">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="author" type="text/plain" href="https://readytotouch.com/humans.txt"/>
+    <meta property="og:image" content="/assets/images/og/organizers-light.jpg">
+
+    {%= favicon() %}
+    {%= ga() %}
+    {%= dataPopulationCompaniesStyles() %}
+</head>
+<body>
+<h1>{%s title %}</h1>
+
+<ul>
+    {% for _, company := range companies %}
+    <li>
+        <div class="company-name">{%s company.Name %}</div>
+        <div class="links">
+            <a href="javascript:void(0);" target="_blank">Search</a>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>
+{%- endfunc -%}

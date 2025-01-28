@@ -1148,6 +1148,10 @@ func (c *Controller) companies(organizerFeature domain.OrganizerFeature) []domai
 		companies = make([]domain.CompanyProfile, 0, len(source))
 	)
 	for _, company := range source {
+		if company.Ignore {
+			continue
+		}
+
 		company.ID = organizers.CompanyAliasToCodeMap[company.LinkedInProfile.Alias]
 		if company.ID == 0 {
 			// make generate-organizers
@@ -1209,4 +1213,60 @@ func (c *Controller) toPrepareCompany(company domain.CompanyProfile) domain.Prep
 // DataPopulationLists will be removed in the future.
 func (c *Controller) DataPopulationLists(ctx *gin.Context) {
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationLists()))
+}
+
+// DataPopulationListsCareersAndAbout will be removed in the future.
+func (c *Controller) DataPopulationListsCareersAndAbout(ctx *gin.Context) {
+	var (
+		companies = c.dataPopulationCompanies(func(company domain.CompanyProfile) bool {
+			return company.Careers == "" || company.About == ""
+		})
+	)
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationCompaniesCareersAndAbout(companies, "Populate Careers & About")))
+}
+
+func (c *Controller) dataPopulationCompanies(match func(company domain.CompanyProfile) bool) []domain.CompanyProfile {
+	var (
+		source    = db.Companies()
+		companies = make([]domain.CompanyProfile, 0, len(source))
+	)
+	for _, company := range source {
+		if company.Ignore {
+			continue
+		}
+
+		company.ID = organizers.CompanyAliasToCodeMap[company.LinkedInProfile.Alias]
+		if company.ID == 0 {
+			// make generate-organizers
+
+			continue
+		}
+
+		if !match(company) {
+			continue
+		}
+
+		if company.Type == "" {
+			company.Type = organizers.ToCompanyType(company.LinkedInProfile.Alias)
+		}
+		company.Logo = organizers.CompanyAliasToLogoMap[company.LinkedInProfile.Alias]
+
+		if c.hasVacancies(company) {
+			continue
+		}
+
+		companies = append(companies, company)
+	}
+	return companies
+}
+
+func (c *Controller) hasVacancies(company domain.CompanyProfile) bool {
+	for _, language := range company.Languages {
+		if len(language.Vacancies) > 0 {
+			return true
+		}
+	}
+
+	return false
 }
