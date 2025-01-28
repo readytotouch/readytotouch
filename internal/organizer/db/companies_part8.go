@@ -2039,6 +2039,9 @@ func companiesPart8() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "American online advertising technology firm",
+			Industries: []domain.Industry{
+				domain.IndustryAdTech,
+			},
 		},
 
 		{
