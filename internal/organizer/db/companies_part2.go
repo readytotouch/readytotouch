@@ -7952,7 +7952,7 @@ func companiesPart2() []domain.CompanyProfile {
 							Date:             mustDate("2025-01-20"), // mustDate("2024-11-14"),
 						},
 						{
-							Title:                "Software Developer (Rust, Go, Swift)",
+							Title:                "Software Developer (Rust)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4134499604/",
@@ -9536,7 +9536,7 @@ func companiesPart2() []domain.CompanyProfile {
 						},
 						{
 							Title:                "Staff Software Development Engineer",
-							ShortDescription:     "Golang, Kubernetes,eBPF",
+							ShortDescription:     "Golang, Kubernetes, eBPF",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4133963749/",
 							Date:                 mustDate("2025-01-25"),

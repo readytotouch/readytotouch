@@ -88,7 +88,7 @@ func companiesPart3() []domain.CompanyProfile {
 							Remote:               false,
 						},
 						{
-							Title:                "Senior Software Engineer, Back End, (Go, Java)",
+							Title:                "Senior Software Engineer, Back End (Go, Java)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4135176317/",
@@ -514,7 +514,7 @@ func companiesPart3() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Sr. Software Engineer (Golang)",
+							Title:            "Senior Software Engineer (Golang)",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4027419578/",
 							Date:             mustDate("2024-11-01"),
@@ -1364,7 +1364,7 @@ func companiesPart3() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Sr. Go Application Development Engineer",
+							Title:            "Senior Go Application Development Engineer",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4072292175/",
 							Date:             mustDate("2024-11-15"),

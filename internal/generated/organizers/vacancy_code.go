@@ -714,7 +714,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4131178111/":   708, // cv-library
 		"https://www.linkedin.com/jobs/view/4129472012/":   709, // r2p-group
 		"https://www.linkedin.com/jobs/view/4075185834/":   710, // nvent
-		"https://www.linkedin.com/jobs/view/4131415073/":   711, // endress-hauser-group
+		"https://www.linkedin.com/jobs/view/4134786158/":   711, // ...
 		"https://www.linkedin.com/jobs/view/4041068965/":   712, // pdf-solutions
 		"https://www.linkedin.com/jobs/view/4131108929/":   713, // quantexa
 		"https://www.linkedin.com/jobs/view/4132333213/":   714, // pagonxt

@@ -600,7 +600,7 @@ var (
 		"cv-library":                          597, // CV-Library
 		"r2p-group":                           598, // r2p Group
 		"nvent":                               599, // nVent
-		"endress-hauser-group":                600, // Endress+Hauser Group
+		"sambindonesia":                       600, // ...
 		"pdf-solutions":                       601, // PDF Solutions
 		"quantexa":                            602, // Quantexa
 		"pagonxt":                             603, // PagoNxt (a Santander company)
