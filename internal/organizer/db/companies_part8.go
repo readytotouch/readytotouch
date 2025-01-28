@@ -1668,20 +1668,7 @@ func companiesPart8() []domain.CompanyProfile {
 				Verified: false,
 			},
 			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "Rust Automation & Controls — Outside Sales Engineer",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "https://www.linkedin.com/jobs/view/4131415073/",
-							Date:                 mustDate("2025-01-21"),
-							WithSalary:           false,
-							Remote:               false,
-						},
-					},
-				},
+				domain.Go:      {},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -1689,7 +1676,8 @@ func companiesPart8() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "Globally operating process and laboratory instrumentation and automation supplier",
+			ShortDescription: "",
+			Ignore:           true, // Was added by mistake because of the name "Rust Automation & Controls" https://www.linkedin.com/jobs/view/4131415073/
 		},
 
 		{
@@ -1916,6 +1904,189 @@ func companiesPart8() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Germany-based operator of a social network for business professionals",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "PT. Sarana Abadi Makmur Bersama",
+			Website: "https://samb.co.id/",
+			Careers: "https://samb.co.id/pages/career",
+			About:   "https://samb.co.id/pages/profile",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                66337745,
+				Alias:             "sambindonesia",
+				Name:              "PT. Sarana Abadi Makmur Bersama",
+				Followers:         "3K",
+				Employees:         "501-1K",
+				AssociatedMembers: "196",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4134786158/",
+							Date:                 mustDate("2025-01-25"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Distribution services, logistics and transportation solutions",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Walmart",
+			Website: "https://walmart.com/",
+			Careers: "https://careers.walmart.com/",
+			About:   "https://corporate.walmart.com/about",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2646,
+				Alias:             "walmart",
+				Name:              "Walmart",
+				Followers:         "4M",
+				Employees:         "10K+",
+				AssociatedMembers: "498,289",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go:   {},
+				domain.Rust: {},
+				domain.Zig:  {},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Data Engineer III (Scala/Spark)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4133956837/",
+							Date:                 mustDate("2025-01-25"),
+							WithSalary:           true, // $117.000 $234.000 per year
+							Remote:               false,
+						},
+					},
+				},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American multinational retail corporation",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Magnite",
+			Website: "https://www.magnite.com/",
+			Careers: "https://www.magnite.com/careers/",
+			About:   "https://www.magnite.com/about-us/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                67332446,
+				Alias:             "magnite",
+				Name:              "Magnite",
+				Followers:         "28K",
+				Employees:         "501-1K",
+				AssociatedMembers: "891",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "MagniteEngineering",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go:   {},
+				domain.Rust: {},
+				domain.Zig:  {},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Engineer II, Reporting and Insights, Scala/Spark",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4116388763/",
+							Date:                 mustDate("2025-01-24"),
+							WithSalary:           true, // $95.000 — $135.000 per year
+							Remote:               false,
+						},
+					},
+				},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American online advertising technology firm",
+			Industries: []domain.Industry{
+				domain.IndustryAdTech,
+			},
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Prezi",
+			Website: "https://prezi.com/",
+			Careers: "https://prezi.com/jobs/",
+			About:   "https://prezi.com/about/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                216295,
+				Alias:             "prezi",
+				Name:              "Prezi",
+				Followers:         "65K",
+				Employees:         "201-500",
+				AssociatedMembers: "258",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "prezi",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go:   {},
+				domain.Rust: {},
+				domain.Zig:  {},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Scala Developer (AI Projects)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4135250887/",
+							Date:                 mustDate("2025-01-27"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Cloud-based presentation software that allows users to create dynamic and interactive presentations.",
 		},
 
 		// Template short

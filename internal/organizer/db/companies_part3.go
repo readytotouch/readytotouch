@@ -87,6 +87,15 @@ func companiesPart3() []domain.CompanyProfile {
 							WithSalary:           true, // $175,800 - $200,700
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Software Engineer, Back End (Go, Java)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4135176317/",
+							Date:                 mustDate("2025-01-26"),
+							WithSalary:           true, // $158.600 — $181.000 per year
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {},
@@ -182,7 +191,20 @@ func companiesPart3() []domain.CompanyProfile {
 						},
 					},
 				},
-				domain.Rust:    {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer — Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4103774978/",
+							Date:                 mustDate("2025-01-26"),
+							WithSalary:           true, // €56,000 gross per year based on full-time employment
+							Remote:               false,
+						},
+					},
+				},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},
@@ -347,7 +369,7 @@ func companiesPart3() []domain.CompanyProfile {
 							Title:            "Embedded Engineer",
 							ShortDescription: "Rust is good to have",
 							URL:              "https://www.linkedin.com/jobs/view/4053645963/",
-							Date:             mustDate("2024-11-25"),
+							Date:             mustDate("2025-01-27"), // mustDate("2024-11-25"),
 						},
 					},
 				},
@@ -416,6 +438,15 @@ func companiesPart3() []domain.CompanyProfile {
 							URL:              "https://www.linkedin.com/jobs/view/4068444754/",
 							Date:             mustDate("2024-11-04"),
 						},
+						{
+							Title:                "Senior Software Engineer (Golang/React)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4134067996/",
+							Date:                 mustDate("2025-01-25"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -483,7 +514,7 @@ func companiesPart3() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Sr. Software Engineer (Golang)",
+							Title:            "Senior Software Engineer (Golang)",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4027419578/",
 							Date:             mustDate("2024-11-01"),
@@ -1016,6 +1047,24 @@ func companiesPart3() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Staff Engineer — (GO, Python, FullStack/React)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4133418996/",
+							Date:                 mustDate("2025-01-25"),
+							WithSalary:           true, // $90.000 — $230.000 per year
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Software Engineer — (Go, Python, FullStack/React)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4133422642/",
+							Date:                 mustDate("2025-01-25"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -1315,7 +1364,7 @@ func companiesPart3() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Sr. Go Application Development Engineer",
+							Title:            "Senior Go Application Development Engineer",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4072292175/",
 							Date:             mustDate("2024-11-15"),
@@ -2719,6 +2768,15 @@ func companiesPart3() []domain.CompanyProfile {
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4075722584/",
 							Date:             mustDate("2024-12-06"),
+						},
+						{
+							Title:                "Senior Go Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4133982836/",
+							Date:                 mustDate("2025-01-25"),
+							WithSalary:           false,
+							Remote:               true,
 						},
 					},
 				},
