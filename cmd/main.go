@@ -231,6 +231,11 @@ func main() {
 	r.GET("/organizers/elixir", found("/organizers/elixir/companies"))
 	r.GET("/organizers/clojure", found("/organizers/clojure/companies"))
 
+	/*
+		Will be removed in the future.
+	*/
+	r.GET("/private/unstable/wip/organizers/data-population-lists", organizerController.DataPopulationLists)
+
 	r.GET("/api/v1/features/auto/waitlist/stats.json", organizerController.WaitlistStats)
 	r.POST("/api/v1/features/auto/waitlist/subscribe.json", organizerController.WaitlistSubscribe)
 	r.PATCH("/api/v1/companies/:company_id/favorite.json", organizerController.FavoriteCompany)

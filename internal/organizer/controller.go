@@ -1205,3 +1205,8 @@ func (c *Controller) toPrepareCompany(company domain.CompanyProfile) domain.Prep
 		HasEmployeesFromCountries: company.HasEmployeesFromCountries,
 	}
 }
+
+// DataPopulationLists will be removed in the future.
+func (c *Controller) DataPopulationLists(ctx *gin.Context) {
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationLists()))
+}
