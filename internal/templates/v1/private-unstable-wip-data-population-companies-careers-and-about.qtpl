@@ -23,7 +23,22 @@
     <li>
         <div class="company-name">{%s company.Name %}</div>
         <div class="links">
-            <a href="javascript:void(0);" target="_blank">Search</a>
+            {% if company.Careers == "" %}
+                <a href='{%s googleSearchOnSite(hostname(company.Website), "Careers") %}' target="_blank">
+                    <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> {%s hostname(company.Website) %} "Careers"
+                </a>
+                <a href='{%s googleSearch(company.Name + " " + "Careers") %}' target="_blank">
+                    <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> {%s company.Name %} "Careers"
+                </a>
+            {% endif %}
+            {% if company.About == "" %}
+                <a href='{%s googleSearchOnSite(hostname(company.Website), "About") %}' target="_blank">
+                    <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> {%s hostname(company.Website) %} "About"
+                </a>
+                <a href='{%s googleSearch(company.Name + " " + "About") %}' target="_blank">
+                    <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> {%s company.Name %} "About"
+                </a>
+            {% endif %}
         </div>
     </li>
     {% endfor %}
