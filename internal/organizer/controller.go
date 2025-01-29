@@ -1294,7 +1294,7 @@ func (c *Controller) DataPopulationCompaniesLevelsFyi(ctx *gin.Context) {
 		})
 	)
 
-	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationCompaniesIndeed(companies, "Populate Levels.fyi")))
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationCompaniesLevelsFyi(companies, "Populate Levels.fyi")))
 }
 
 func (c *Controller) dataPopulationCompanies(match func(company domain.CompanyProfile) bool) []domain.CompanyProfile {
