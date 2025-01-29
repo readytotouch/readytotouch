@@ -16,7 +16,7 @@
     {%= dataPopulationCompaniesStyles() %}
 </head>
 <body>
-<h1>{%s title %}</h1>
+<h1>{%s title %} ({%d len(companies) %})</h1>
 
 <ul>
     {% for _, company := range companies %}
@@ -25,7 +25,7 @@
         <div class="links">
             {% if company.Careers == "" %}
                 <a href='{%s googleSearchOnSite(hostname(company.Website), "Careers") %}' target="_blank">
-                    <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> {%s hostname(company.Website) %} "Careers"
+                    <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> site:{%s hostname(company.Website) %} "Careers"
                 </a>
                 <a href='{%s googleSearch(company.Name + " " + "Careers") %}' target="_blank">
                     <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> {%s company.Name %} "Careers"
@@ -33,7 +33,7 @@
             {% endif %}
             {% if company.About == "" %}
                 <a href='{%s googleSearchOnSite(hostname(company.Website), "About") %}' target="_blank">
-                    <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> {%s hostname(company.Website) %} "About"
+                    <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> site:{%s hostname(company.Website) %} "About"
                 </a>
                 <a href='{%s googleSearch(company.Name + " " + "About") %}' target="_blank">
                     <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> {%s company.Name %} "About"

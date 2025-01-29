@@ -44,7 +44,9 @@ func StreamDataPopulationCompaniesCareersAndAbout(qw422016 *qt422016.Writer, com
 <body>
 <h1>`)
 	qw422016.E().S(title)
-	qw422016.N().S(`</h1>
+	qw422016.N().S(` (`)
+	qw422016.N().D(len(companies))
+	qw422016.N().S(`)</h1>
 
 <ul>
     `)
@@ -61,7 +63,7 @@ func StreamDataPopulationCompaniesCareersAndAbout(qw422016 *qt422016.Writer, com
                 <a href='`)
 			qw422016.E().S(googleSearchOnSite(hostname(company.Website), "Careers"))
 			qw422016.N().S(`' target="_blank">
-                    <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> `)
+                    <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> site:`)
 			qw422016.E().S(hostname(company.Website))
 			qw422016.N().S(` "Careers"
                 </a>
@@ -81,7 +83,7 @@ func StreamDataPopulationCompaniesCareersAndAbout(qw422016 *qt422016.Writer, com
                 <a href='`)
 			qw422016.E().S(googleSearchOnSite(hostname(company.Website), "About"))
 			qw422016.N().S(`' target="_blank">
-                    <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> `)
+                    <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> site:`)
 			qw422016.E().S(hostname(company.Website))
 			qw422016.N().S(` "About"
                 </a>

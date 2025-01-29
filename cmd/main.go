@@ -236,6 +236,7 @@ func main() {
 	*/
 	r.GET("/private/unstable/wip/organizers/data-population-lists", organizerController.DataPopulationLists)
 	r.GET("/private/unstable/wip/organizers/data-population-lists/careers-and-about", organizerController.DataPopulationListsCareersAndAbout)
+	r.GET("/private/unstable/wip/organizers/data-population-lists/glassdoor", organizerController.DataPopulationListsGlassdoor)
 
 	r.GET("/api/v1/features/auto/waitlist/stats.json", organizerController.WaitlistStats)
 	r.POST("/api/v1/features/auto/waitlist/subscribe.json", organizerController.WaitlistSubscribe)
