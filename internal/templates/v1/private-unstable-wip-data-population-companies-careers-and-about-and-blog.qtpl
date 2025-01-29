@@ -45,12 +45,12 @@
                 <a href='{%s googleSearchOnSite(hostname(company.Website), "Development Blog") %}' target="_blank">
                     <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> site:{%s hostname(company.Website) %} "Development Blog"
                 </a>
-                <a href='{%s googleSearchOnSite(hostname(company.Website), "Tech Blog") %}' target="_blank">
-                    <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> site:{%s hostname(company.Website) %} "Tech Blog"
-                </a>
-                <br>
                 <a href='{%s googleSearch(company.Name + " " + "Development Blog") %}' target="_blank">
                     <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> {%s company.Name %} "Development Blog"
+                </a>
+                <br>
+                <a href='{%s googleSearchOnSite(hostname(company.Website), "Tech Blog") %}' target="_blank">
+                    <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> site:{%s hostname(company.Website) %} "Tech Blog"
                 </a>
                 <a href='{%s googleSearch(company.Name + " " + "Tech Blog") %}' target="_blank">
                     <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> {%s company.Name %} "Tech Blog"

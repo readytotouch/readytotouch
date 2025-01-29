@@ -110,19 +110,19 @@ func StreamDataPopulationCompaniesCareersAndAboutAndBlog(qw422016 *qt422016.Writ
 			qw422016.N().S(` "Development Blog"
                 </a>
                 <a href='`)
-			qw422016.E().S(googleSearchOnSite(hostname(company.Website), "Tech Blog"))
-			qw422016.N().S(`' target="_blank">
-                    <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> site:`)
-			qw422016.E().S(hostname(company.Website))
-			qw422016.N().S(` "Tech Blog"
-                </a>
-                <br>
-                <a href='`)
 			qw422016.E().S(googleSearch(company.Name + " " + "Development Blog"))
 			qw422016.N().S(`' target="_blank">
                     <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> `)
 			qw422016.E().S(company.Name)
 			qw422016.N().S(` "Development Blog"
+                </a>
+                <br>
+                <a href='`)
+			qw422016.E().S(googleSearchOnSite(hostname(company.Website), "Tech Blog"))
+			qw422016.N().S(`' target="_blank">
+                    <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> site:`)
+			qw422016.E().S(hostname(company.Website))
+			qw422016.N().S(` "Tech Blog"
                 </a>
                 <a href='`)
 			qw422016.E().S(googleSearch(company.Name + " " + "Tech Blog"))
