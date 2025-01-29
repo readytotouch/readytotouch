@@ -1,4 +1,4 @@
-{%- func DataPopulationCompaniesCareersAndAbout(companies []Company, title string) -%}
+{%- func DataPopulationCompaniesCareersAndAboutAndBlog(companies []Company, title string) -%}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,6 +30,7 @@
                 <a href='{%s googleSearch(company.Name + " " + "Careers") %}' target="_blank">
                     <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> {%s company.Name %} "Careers"
                 </a>
+                <hr>
             {% endif %}
             {% if company.About == "" %}
                 <a href='{%s googleSearchOnSite(hostname(company.Website), "About") %}' target="_blank">
@@ -37,6 +38,22 @@
                 </a>
                 <a href='{%s googleSearch(company.Name + " " + "About") %}' target="_blank">
                     <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> {%s company.Name %} "About"
+                </a>
+                <hr>
+            {% endif %}
+            {% if company.Blog == "" %}
+                <a href='{%s googleSearchOnSite(hostname(company.Website), "Development Blog") %}' target="_blank">
+                    <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> site:{%s hostname(company.Website) %} "Development Blog"
+                </a>
+                <a href='{%s googleSearchOnSite(hostname(company.Website), "Tech Blog") %}' target="_blank">
+                    <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> site:{%s hostname(company.Website) %} "Tech Blog"
+                </a>
+                <br>
+                <a href='{%s googleSearch(company.Name + " " + "Development Blog") %}' target="_blank">
+                    <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> {%s company.Name %} "Development Blog"
+                </a>
+                <a href='{%s googleSearch(company.Name + " " + "Tech Blog") %}' target="_blank">
+                    <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> {%s company.Name %} "Tech Blog"
                 </a>
             {% endif %}
         </div>

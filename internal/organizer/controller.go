@@ -1215,15 +1215,15 @@ func (c *Controller) DataPopulationLists(ctx *gin.Context) {
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationLists()))
 }
 
-// DataPopulationListsCareersAndAbout will be removed in the future.
-func (c *Controller) DataPopulationListsCareersAndAbout(ctx *gin.Context) {
+// DataPopulationCompaniesCareersAndAboutAndBlog will be removed in the future.
+func (c *Controller) DataPopulationCompaniesCareersAndAboutAndBlog(ctx *gin.Context) {
 	var (
 		companies = c.dataPopulationCompanies(func(company domain.CompanyProfile) bool {
-			return company.Careers == "" || company.About == ""
+			return company.Careers == "" || company.About == "" || company.Blog == ""
 		})
 	)
 
-	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationCompaniesCareersAndAbout(companies, "Populate Careers & About")))
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationCompaniesCareersAndAboutAndBlog(companies, "Populate Careers & About & Blog")))
 }
 
 // DataPopulationCompaniesLinkedIn will be removed in the future.
