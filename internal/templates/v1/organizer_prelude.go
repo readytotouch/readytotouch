@@ -119,6 +119,37 @@ func whoisURL(s string) string {
 	return fmt.Sprintf("https://www.whois.com/whois/%s", parsedURL.Hostname())
 }
 
+func hostname(s string) string {
+	if s == "" {
+		return ""
+	}
+
+	parsedURL, err := url.Parse(s)
+	if err != nil {
+		// panic allowed because HTML is pre-generated
+
+		panic(err)
+	}
+
+	return parsedURL.Hostname()
+}
+
+func googleSearch(q string) string {
+	values := url.Values{
+		"q": {q},
+	}
+
+	return "https://www.google.com/search?" + values.Encode()
+}
+
+func googleSearchOnSite(site string, what string) string {
+	values := url.Values{
+		"q": {"site:" + site + " " + what},
+	}
+
+	return "https://www.google.com/search?" + values.Encode()
+}
+
 func googleSearchGitHub(companyName string) string {
 	values := url.Values{
 		"q": {"site:github.com" + " " + companyName},

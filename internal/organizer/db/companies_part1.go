@@ -9,8 +9,12 @@ func companiesPart1() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
+			Logo:    "", // system
 			Name:    "ReadyToTouch",
 			Website: "https://readytotouch.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:    97909464,
 				IDs:   nil,
@@ -18,7 +22,10 @@ func companiesPart1() []domain.CompanyProfile {
 				Name:  "ReadyToTouch",
 			},
 			GitHubProfile:     domain.GitHubProfile{},
+			BlindProfile:      domain.BlindProfile{},
+			LevelsFyiProfile:  domain.LevelsFyiProfile{},
 			GlassdoorProfile:  domain.GlassdoorProfile{},
+			IndeedProfile:     domain.IndeedProfile{},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
@@ -32,18 +39,29 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Service for simplifying job search",
+			DealroomURL:      "",
+			CrunchbaseURL:    "",
+			PitchbookURL:     "",
+			YahooFinanceURL:  "",
+			GoogleFinanceURL: "",
+			YCombinatorURL:   "",
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
 			},
+			Ignore: false,
 		},
 
 		// Favorites | DocHQ
 		{
 			ID:      0,  // system
 			Type:    "", // system
+			Logo:    "", // system
 			Name:    "DocHQ",
 			Website: "https://dochq.co.uk/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                14136494,
 				Alias:             "dochq",
@@ -57,11 +75,14 @@ func companiesPart1() []domain.CompanyProfile {
 				Login:    "dochq",
 				Verified: true,
 			},
+			BlindProfile:     domain.BlindProfile{},
+			LevelsFyiProfile: domain.LevelsFyiProfile{},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
 				ReviewsURL:  "",
 				Verified:    false,
 			},
+			IndeedProfile:     domain.IndeedProfile{},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    true,
@@ -78,12 +99,19 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Health Tech company",
+			DealroomURL:      "",
+			CrunchbaseURL:    "",
+			PitchbookURL:     "",
+			YahooFinanceURL:  "",
+			GoogleFinanceURL: "",
+			YCombinatorURL:   "",
 			Industries: []domain.Industry{
 				domain.IndustryHealthTech,
 			},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
 			},
+			Ignore: false,
 		},
 
 		// BigTech
@@ -91,6 +119,7 @@ func companiesPart1() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
+			Logo:    "", // system
 			Name:    "Google",
 			Website: "https://www.google.com/",
 			Careers: "https://www.google.com/about/careers/",
@@ -192,6 +221,7 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Ukraine,
 				domain.Czechia,
 			},
+			Ignore: false,
 		},
 
 		// BigTech | Mozilla

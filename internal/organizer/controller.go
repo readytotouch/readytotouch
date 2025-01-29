@@ -1148,6 +1148,10 @@ func (c *Controller) companies(organizerFeature domain.OrganizerFeature) []domai
 		companies = make([]domain.CompanyProfile, 0, len(source))
 	)
 	for _, company := range source {
+		if company.Ignore {
+			continue
+		}
+
 		company.ID = organizers.CompanyAliasToCodeMap[company.LinkedInProfile.Alias]
 		if company.ID == 0 {
 			// make generate-organizers
@@ -1204,4 +1208,136 @@ func (c *Controller) toPrepareCompany(company domain.CompanyProfile) domain.Prep
 		Industries:                company.Industries,
 		HasEmployeesFromCountries: company.HasEmployeesFromCountries,
 	}
+}
+
+// DataPopulationLists will be removed in the future.
+func (c *Controller) DataPopulationLists(ctx *gin.Context) {
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationLists()))
+}
+
+// DataPopulationCompaniesCareersAndAboutAndBlog will be removed in the future.
+func (c *Controller) DataPopulationCompaniesCareersAndAboutAndBlog(ctx *gin.Context) {
+	var (
+		companies = c.dataPopulationCompanies(func(company domain.CompanyProfile) bool {
+			return company.Careers == "" || company.About == "" || company.Blog == ""
+		})
+	)
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationCompaniesCareersAndAboutAndBlog(companies, "Populate Careers & About & Blog")))
+}
+
+// DataPopulationCompaniesLinkedIn will be removed in the future.
+func (c *Controller) DataPopulationCompaniesLinkedIn(ctx *gin.Context) {
+	var (
+		companies = c.dataPopulationCompanies(func(company domain.CompanyProfile) bool {
+			return (company.LinkedInProfile.ID == 0 && len(company.LinkedInProfile.IDs) == 0) ||
+				company.LinkedInProfile.Alias == "" ||
+				company.LinkedInProfile.Name == "" ||
+				company.LinkedInProfile.Followers == "" ||
+				company.LinkedInProfile.Employees == "" ||
+				company.LinkedInProfile.AssociatedMembers == ""
+		})
+	)
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationCompaniesLinkedIn(companies, "Populate LinkedIn")))
+}
+
+// DataPopulationCompaniesGlassdoor will be removed in the future.
+func (c *Controller) DataPopulationCompaniesGlassdoor(ctx *gin.Context) {
+	var (
+		companies = c.dataPopulationCompanies(func(company domain.CompanyProfile) bool {
+			return company.GlassdoorProfile.OverviewURL == "" ||
+				company.GlassdoorProfile.ReviewsURL == "" ||
+				company.GlassdoorProfile.JobsURL == "" ||
+				company.GlassdoorProfile.Jobs == "" ||
+				company.GlassdoorProfile.Reviews == "" ||
+				company.GlassdoorProfile.Salaries == "" ||
+				company.GlassdoorProfile.ReviewsRate == ""
+		})
+	)
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationCompaniesGlassdoor(companies, "Populate Glassdoor")))
+}
+
+// DataPopulationCompaniesBlind will be removed in the future.
+func (c *Controller) DataPopulationCompaniesBlind(ctx *gin.Context) {
+	var (
+		companies = c.dataPopulationCompanies(func(company domain.CompanyProfile) bool {
+			return company.BlindProfile.Alias == "" ||
+				company.BlindProfile.Employees == "" ||
+				company.BlindProfile.Salary == "" ||
+				company.BlindProfile.Reviews == "" ||
+				company.BlindProfile.ReviewsRate == ""
+		})
+	)
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationCompaniesBlind(companies, "Populate Blind")))
+}
+
+// DataPopulationCompaniesIndeed will be removed in the future.
+func (c *Controller) DataPopulationCompaniesIndeed(ctx *gin.Context) {
+	var (
+		companies = c.dataPopulationCompanies(func(company domain.CompanyProfile) bool {
+			return company.IndeedProfile.Alias == ""
+		})
+	)
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationCompaniesIndeed(companies, "Populate Indeed")))
+}
+
+// DataPopulationCompaniesLevelsFyi will be removed in the future.
+func (c *Controller) DataPopulationCompaniesLevelsFyi(ctx *gin.Context) {
+	var (
+		companies = c.dataPopulationCompanies(func(company domain.CompanyProfile) bool {
+			return company.LevelsFyiProfile.Alias == "" ||
+				company.LevelsFyiProfile.Employees == ""
+		})
+	)
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationCompaniesLevelsFyi(companies, "Populate Levels.fyi")))
+}
+
+func (c *Controller) dataPopulationCompanies(match func(company domain.CompanyProfile) bool) []domain.CompanyProfile {
+	var (
+		source    = db.Companies()
+		companies = make([]domain.CompanyProfile, 0, len(source))
+	)
+	for _, company := range source {
+		if company.Ignore {
+			continue
+		}
+
+		company.ID = organizers.CompanyAliasToCodeMap[company.LinkedInProfile.Alias]
+		if company.ID == 0 {
+			// make generate-organizers
+
+			continue
+		}
+
+		if !match(company) {
+			continue
+		}
+
+		if company.Type == "" {
+			company.Type = organizers.ToCompanyType(company.LinkedInProfile.Alias)
+		}
+		company.Logo = organizers.CompanyAliasToLogoMap[company.LinkedInProfile.Alias]
+
+		if !c.hasVacancies(company) {
+			continue
+		}
+
+		companies = append(companies, company)
+	}
+	return companies
+}
+
+func (c *Controller) hasVacancies(company domain.CompanyProfile) bool {
+	for _, language := range company.Languages {
+		if len(language.Vacancies) > 0 {
+			return true
+		}
+	}
+
+	return false
 }
