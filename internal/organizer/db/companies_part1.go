@@ -60,7 +60,7 @@ func companiesPart1() []domain.CompanyProfile {
 			Name:    "DocHQ",
 			Website: "https://dochq.co.uk/",
 			Careers: "",
-			About:   "",
+			About:   "https://dochq.co.uk/about-us",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                14136494,
@@ -230,6 +230,9 @@ func companiesPart1() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "Mozilla",
 			Website: "https://www.mozilla.org/",
+			Careers: "https://www.mozilla.org/careers/",
+			About:   "https://www.mozilla.org/about/",
+			Blog:    "https://developer.mozilla.org/blog/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                13948,
 				Alias:             "mozilla-corporation",
@@ -298,6 +301,9 @@ func companiesPart1() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "Discord",
 			Website: "https://discord.com/",
+			Careers: "https://discord.com/careers",
+			About:   "https://discord.com/company",
+			Blog:    "https://discord.com/category/engineering",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                3765675,
 				Alias:             "discord",
@@ -364,6 +370,9 @@ func companiesPart1() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "Figma",
 			Website: "https://www.figma.com/",
+			Careers: "https://www.figma.com/careers/",
+			About:   "https://www.figma.com/about/",
+			Blog:    "https://www.figma.com/blog/engineering/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                3650502,
 				Alias:             "figma",
@@ -433,6 +442,9 @@ func companiesPart1() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "Microsoft",
 			Website: "https://www.microsoft.com/",
+			Careers: "https://careers.microsoft.com/v2/global/en/home.html",
+			About:   "https://www.microsoft.com/about",
+			Blog:    "https://devblogs.microsoft.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1035,
 				Alias:             "microsoft",
@@ -504,6 +516,9 @@ func companiesPart1() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "Amazon",
 			Website: "https://www.aboutamazon.com/",
+			Careers: "https://www.amazon.jobs/",
+			About:   "https://www.aboutamazon.com/about-us",
+			Blog:    "https://aws.amazon.com/blogs/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID: 0,
 				IDs: []int{
@@ -557,9 +572,9 @@ func companiesPart1() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "IBM",
 			Website: "https://www.ibm.com/",
-			Careers: "",
-			About:   "",
-			Blog:    "",
+			Careers: "https://www.ibm.com/careers",
+			About:   "https://www.ibm.com/about",
+			Blog:    "https://developer.ibm.com/blogs/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1009,
 				Alias:             "ibm",
@@ -676,6 +691,9 @@ func companiesPart1() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "SAP",
 			Website: "https://www.sap.com/",
+			Careers: "https://jobs.sap.com/",
+			About:   "https://www.sap.com/about/company.html",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1115,
 				IDs:               []int{1115, 2573558, 2818, 166185, 5822},
@@ -781,6 +799,9 @@ func companiesPart1() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "Oracle",
 			Website: "https://www.oracle.com/",
+			Careers: "https://www.oracle.com/careers/",
+			About:   "https://www.oracle.com/corporate/",
+			Blog:    "https://blogs.oracle.com/developers/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1028,
 				Alias:             "oracle",
@@ -853,6 +874,9 @@ func companiesPart1() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "GitHub",
 			Website: "https://github.com/",
+			Careers: "https://www.github.careers/careers-home",
+			About:   "https://github.com/about",
+			Blog:    "https://github.blog/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1418841,
 				Alias:             "github",
@@ -914,6 +938,9 @@ func companiesPart1() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "GitLab",
 			Website: "https://gitlab.com/",
+			Careers: "https://about.gitlab.com/jobs/all-jobs/",
+			About:   "https://about.gitlab.com/company/",
+			Blog:    "https://about.gitlab.com/blog/categories/engineering/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                5101804,
 				Alias:             "gitlab-com",
@@ -975,9 +1002,9 @@ func companiesPart1() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "LinkedIn",
 			Website: "https://www.linkedin.com/",
-			Careers: "",
-			About:   "",
-			Blog:    "",
+			Careers: "https://www.linkedin.com/jobs",
+			About:   "https://about.linkedin.com/",
+			Blog:    "https://www.linkedin.com/blog/engineering",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1337,
 				Alias:             "linkedin",
@@ -1073,6 +1100,9 @@ func companiesPart1() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "Reddit",
 			Website: "https://www.reddit.com/",
+			Careers: "https://redditinc.com/careers",
+			About:   "https://redditinc.com/",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                150573,
 				Alias:             "reddit-com",
@@ -1143,6 +1173,9 @@ func companiesPart1() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "Medium",
 			Website: "https://medium.com/",
+			Careers: "https://medium.pinpointhq.com/",
+			About:   "https://medium.com/about",
+			Blog:    "https://medium.com/tag/web-development",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                3039001,
 				Alias:             "medium-com",
@@ -1205,7 +1238,8 @@ func companiesPart1() []domain.CompanyProfile {
 			Name:    "Pinterest",
 			Website: "https://www.pinterest.com/",
 			Careers: "https://www.pinterestcareers.com/",
-			About:   "",
+			About:   "https://help.pinterest.com/en/guide/all-about-pinterest",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1124131,
 				Alias:             "pinterest",
@@ -1267,6 +1301,9 @@ func companiesPart1() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "Snap",
 			Website: "https://snap.com/",
+			Careers: "https://careers.snap.com/",
+			About:   "https://investor.snap.com/about-snap/",
+			Blog:    "https://eng.snap.com/blog",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                15191764,
 				Alias:             "snap-inc-co",
@@ -1328,6 +1365,9 @@ func companiesPart1() []domain.CompanyProfile {
 			Type:    "",
 			Name:    "BeReal.",
 			Website: "https://bereal.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                34731272,
 				Alias:             "bereal-app",
@@ -1367,6 +1407,9 @@ func companiesPart1() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "VictoriaMetrics",
 			Website: "https://victoriametrics.com/",
+			Careers: "",
+			About:   "https://victoriametrics.com/about-us/",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                30169914,
 				Alias:             "victoriametrics",
@@ -1420,6 +1463,9 @@ func companiesPart1() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "Grammarly",
 			Website: "https://www.grammarly.com/",
+			Careers: "https://www.grammarly.com/careers",
+			About:   "https://www.grammarly.com/about",
+			Blog:    "https://www.grammarly.com/blog/engineering/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1253671,
 				Alias:             "grammarly",
@@ -1479,6 +1525,9 @@ func companiesPart1() []domain.CompanyProfile {
 			Type:    domain.CompanyTypeStartup, // system
 			Name:    "Influ2",
 			Website: "https://www.influ2.com/",
+			Careers: "https://jobs.lever.co/influ2",
+			About:   "https://www.influ2.com/about-us",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                18119989,
 				Alias:             "influ2",
@@ -1540,6 +1589,9 @@ func companiesPart1() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "Netlify",
 			Website: "https://www.netlify.com/",
+			Careers: "https://www.netlify.com/careers/",
+			About:   "https://www.netlify.com/about/",
+			Blog:    "https://www.netlify.com/blog/tags/engineering/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                6392431,
 				Alias:             "netlify",
@@ -1600,6 +1652,9 @@ func companiesPart1() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "Vercel",
 			Website: "https://vercel.com/",
+			Careers: "https://vercel.com/careers",
+			About:   "https://vercel.com/about",
+			Blog:    "https://vercel.com/blog/category/engineering",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                16181286,
 				Alias:             "vercel",
@@ -1658,6 +1713,9 @@ func companiesPart1() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "Fastly",
 			Website: "https://www.fastly.com/",
+			Careers: "https://www.fastly.com/about/careers/current-openings",
+			About:   "https://www.fastly.com/company",
+			Blog:    "https://www.fastly.com/blog/category/engineering",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                2602522,
 				Alias:             "fastly",
@@ -1726,6 +1784,9 @@ func companiesPart1() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "Dropbox",
 			Website: "https://www.dropbox.com/",
+			Careers: "https://jobs.dropbox.com/all-jobs",
+			About:   "https://www.dropbox.com/about",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                167251,
 				Alias:             "dropbox",
@@ -1796,6 +1857,9 @@ func companiesPart1() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "Docker",
 			Website: "https://www.docker.com/",
+			Careers: "https://www.docker.com/careers/",
+			About:   "https://www.docker.com/company/",
+			Blog:    "https://www.docker.com/blog/category/engineering/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1301808,
 				Alias:             "docker",
@@ -1849,6 +1913,9 @@ func companiesPart1() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "Grafana Labs",
 			Website: "https://grafana.com/",
+			Careers: "https://grafana.com/about/careers/",
+			About:   "",
+			Blog:    "https://grafana.com/categories/engineering/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                11062162,
 				Alias:             "grafana-labs",
@@ -1909,6 +1976,9 @@ func companiesPart1() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "HashiCorp",
 			Website: "https://www.hashicorp.com/",
+			Careers: "https://www.hashicorp.com/careers",
+			About:   "https://www.hashicorp.com/about",
+			Blog:    "https://www.hashicorp.com/blog/tags/engineering",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                2830763,
 				Alias:             "hashicorp",
@@ -1970,9 +2040,9 @@ func companiesPart1() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "CrowdStrike",
 			Website: "https://www.crowdstrike.com/",
-			Careers: "",
-			About:   "",
-			Blog:    "",
+			Careers: "https://www.crowdstrike.com/careers/",
+			About:   "https://www.crowdstrike.com/about-us/",
+			Blog:    "https://www.crowdstrike.com/en-us/blog/category.engineering-and-technology/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                2497653,
 				Alias:             "crowdstrike",
@@ -2050,6 +2120,9 @@ func companiesPart1() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "Cockroach Labs",
 			Website: "https://www.cockroachlabs.com/",
+			Careers: "https://www.cockroachlabs.com/careers/",
+			About:   "https://www.cockroachlabs.com/about/",
+			Blog:    "https://www.cockroachlabs.com/blog/engineering/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                9309408,
 				Alias:             "cockroach-labs",
@@ -2107,6 +2180,9 @@ func companiesPart1() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "Timescale",
 			Website: "https://www.timescale.com/",
+			Careers: "https://www.timescale.com/careers",
+			About:   "https://www.timescale.com/about",
+			Blog:    "https://www.timescale.com/blog/tag/product",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                11065434,
 				Alias:             "timescaledb",
@@ -2164,6 +2240,9 @@ func companiesPart1() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "ScyllaDB",
 			Website: "https://www.scylladb.com/",
+			Careers: "https://www.scylladb.com/company/careers/",
+			About:   "https://www.scylladb.com/company/",
+			Blog:    "https://www.scylladb.com/category/engineering/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                10201068,
 				Alias:             "scylladb",
@@ -2228,6 +2307,9 @@ func companiesPart1() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "Percona",
 			Website: "https://www.percona.com/",
+			Careers: "https://www.percona.com/about/careers",
+			About:   "https://www.percona.com/about",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                421929,
 				Alias:             "percona",
@@ -2288,8 +2370,8 @@ func companiesPart1() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "Elastic",
 			Website: "https://www.elastic.co/",
-			Careers: "",
-			About:   "",
+			Careers: "https://www.elastic.co/careers",
+			About:   "https://www.elastic.co/about",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                814025,
@@ -2379,6 +2461,9 @@ func companiesPart1() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "MongoDB",
 			Website: "https://www.mongodb.com/",
+			Careers: "https://www.mongodb.com/company/careers",
+			About:   "https://www.mongodb.com/company",
+			Blog:    "https://www.mongodb.com/blog/channel/engineering-blog",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                783611,
 				Alias:             "mongodbinc",
