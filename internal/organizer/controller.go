@@ -1226,8 +1226,24 @@ func (c *Controller) DataPopulationListsCareersAndAbout(ctx *gin.Context) {
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationCompaniesCareersAndAbout(companies, "Populate Careers & About")))
 }
 
-// DataPopulationListsGlassdoor will be removed in the future.
-func (c *Controller) DataPopulationListsGlassdoor(ctx *gin.Context) {
+// DataPopulationCompaniesLinkedIn will be removed in the future.
+func (c *Controller) DataPopulationCompaniesLinkedIn(ctx *gin.Context) {
+	var (
+		companies = c.dataPopulationCompanies(func(company domain.CompanyProfile) bool {
+			return (company.LinkedInProfile.ID == 0 && len(company.LinkedInProfile.IDs) == 0) ||
+				company.LinkedInProfile.Alias == "" ||
+				company.LinkedInProfile.Name == "" ||
+				company.LinkedInProfile.Followers == "" ||
+				company.LinkedInProfile.Employees == "" ||
+				company.LinkedInProfile.AssociatedMembers == ""
+		})
+	)
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationCompaniesLinkedIn(companies, "Populate LinkedIn")))
+}
+
+// DataPopulationCompaniesGlassdoor will be removed in the future.
+func (c *Controller) DataPopulationCompaniesGlassdoor(ctx *gin.Context) {
 	var (
 		companies = c.dataPopulationCompanies(func(company domain.CompanyProfile) bool {
 			return company.GlassdoorProfile.OverviewURL == "" ||
@@ -1240,7 +1256,7 @@ func (c *Controller) DataPopulationListsGlassdoor(ctx *gin.Context) {
 		})
 	)
 
-	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationCompaniesGlassdoor(companies, "Glassdoor Careers & About")))
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationCompaniesGlassdoor(companies, "Populate Glassdoor")))
 }
 
 func (c *Controller) dataPopulationCompanies(match func(company domain.CompanyProfile) bool) []domain.CompanyProfile {
