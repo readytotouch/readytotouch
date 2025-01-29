@@ -1259,6 +1259,44 @@ func (c *Controller) DataPopulationCompaniesGlassdoor(ctx *gin.Context) {
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationCompaniesGlassdoor(companies, "Populate Glassdoor")))
 }
 
+// DataPopulationCompaniesBlind will be removed in the future.
+func (c *Controller) DataPopulationCompaniesBlind(ctx *gin.Context) {
+	var (
+		companies = c.dataPopulationCompanies(func(company domain.CompanyProfile) bool {
+			return company.BlindProfile.Alias == "" ||
+				company.BlindProfile.Employees == "" ||
+				company.BlindProfile.Salary == "" ||
+				company.BlindProfile.Reviews == "" ||
+				company.BlindProfile.ReviewsRate == ""
+		})
+	)
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationCompaniesBlind(companies, "Populate Blind")))
+}
+
+// DataPopulationCompaniesIndeed will be removed in the future.
+func (c *Controller) DataPopulationCompaniesIndeed(ctx *gin.Context) {
+	var (
+		companies = c.dataPopulationCompanies(func(company domain.CompanyProfile) bool {
+			return company.IndeedProfile.Alias == ""
+		})
+	)
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationCompaniesIndeed(companies, "Populate Indeed")))
+}
+
+// DataPopulationCompaniesLevelsFyi will be removed in the future.
+func (c *Controller) DataPopulationCompaniesLevelsFyi(ctx *gin.Context) {
+	var (
+		companies = c.dataPopulationCompanies(func(company domain.CompanyProfile) bool {
+			return company.LevelsFyiProfile.Alias == "" ||
+				company.LevelsFyiProfile.Employees == ""
+		})
+	)
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationCompaniesIndeed(companies, "Populate Levels.fyi")))
+}
+
 func (c *Controller) dataPopulationCompanies(match func(company domain.CompanyProfile) bool) []domain.CompanyProfile {
 	var (
 		source    = db.Companies()

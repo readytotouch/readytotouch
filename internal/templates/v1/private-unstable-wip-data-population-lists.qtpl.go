@@ -77,6 +77,9 @@ func StreamDataPopulationLists(qw422016 *qt422016.Writer) {
     <li><a href="/private/unstable/wip/organizers/data-population-lists/careers-and-about-and-blog" target="_blank">Populate Careers & About & Blog</a></li>
     <li><a href="/private/unstable/wip/organizers/data-population-lists/linkedin" target="_blank">Populate LinkedIn</a></li>
     <li><a href="/private/unstable/wip/organizers/data-population-lists/glassdoor" target="_blank">Populate Glassdoor</a></li>
+    <li><a href="/private/unstable/wip/organizers/data-population-lists/blind" target="_blank">Populate Blind</a></li>
+    <li><a href="/private/unstable/wip/organizers/data-population-lists/indeed" target="_blank">Populate Indeed</a></li>
+    <li><a href="/private/unstable/wip/organizers/data-population-lists/levels" target="_blank">Populate Levels.fyi</a></li>
 </ul>
 
 </body>

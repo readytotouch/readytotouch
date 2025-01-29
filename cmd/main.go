@@ -238,6 +238,9 @@ func main() {
 	r.GET("/private/unstable/wip/organizers/data-population-lists/careers-and-about-and-blog", organizerController.DataPopulationCompaniesCareersAndAboutAndBlog)
 	r.GET("/private/unstable/wip/organizers/data-population-lists/linkedin", organizerController.DataPopulationCompaniesLinkedIn)
 	r.GET("/private/unstable/wip/organizers/data-population-lists/glassdoor", organizerController.DataPopulationCompaniesGlassdoor)
+	r.GET("/private/unstable/wip/organizers/data-population-lists/blind", organizerController.DataPopulationCompaniesBlind)
+	r.GET("/private/unstable/wip/organizers/data-population-lists/indeed", organizerController.DataPopulationCompaniesIndeed)
+	r.GET("/private/unstable/wip/organizers/data-population-lists/levels", organizerController.DataPopulationCompaniesLevelsFyi)
 
 	r.GET("/api/v1/features/auto/waitlist/stats.json", organizerController.WaitlistStats)
 	r.POST("/api/v1/features/auto/waitlist/subscribe.json", organizerController.WaitlistSubscribe)
