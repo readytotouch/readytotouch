@@ -12,8 +12,8 @@ func companiesPart6() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "Hasaki.vn",
 			Website: "https://hasaki.vn/",
-			Careers: "",
-			About:   "",
+			Careers: "https://tuyendung.hasaki.vn/viec-lam",
+			About:   "https://hotro.hasaki.vn/gioi-thieu-hasaki.html",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                31033180,
 				Alias:             "hasaki-vn",
@@ -56,6 +56,7 @@ func companiesPart6() []domain.CompanyProfile {
 			Website: "https://www.nutanix.com/",
 			Careers: "https://www.nutanix.com/company/careers",
 			About:   "https://www.nutanix.com/company",
+			Blog:    "https://www.nutanix.dev/blog/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                735085,
 				Alias:             "nutanix",
@@ -140,6 +141,7 @@ func companiesPart6() []domain.CompanyProfile {
 			Website: "https://www.cognite.com",
 			Careers: "https://www.cognite.com/company/careers",
 			About:   "https://www.cognite.com/en/company/about-us-cognite",
+			Blog:    "https://www.cognite.com/en/blog/main",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                18045548,
 				Alias:             "cognitedata",
@@ -266,6 +268,7 @@ func companiesPart6() []domain.CompanyProfile {
 			Website: "https://twosixtech.com/",
 			Careers: "https://twosixtech.com/careers/",
 			About:   "https://twosixtech.com/about/",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                75453814,
 				Alias:             "twosixtechnologies",

@@ -14,6 +14,7 @@ func companiesPart7() []domain.CompanyProfile {
 			Website: "https://checkmarx.com/",
 			Careers: "https://checkmarx.com/company/careers/",
 			About:   "https://checkmarx.com/company/about-checkmarx/",
+			Blog:    "https://checkmarx.com/blog/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                223472,
 				Alias:             "checkmarx",
@@ -62,6 +63,7 @@ func companiesPart7() []domain.CompanyProfile {
 			Website: "https://visa.com/",
 			Careers: "https://corporate.visa.com/en/careers.html",
 			About:   "https://corporate.visa.com/en/about-visa.html",
+			Blog:    "https://community.developer.visa.com/t5/Blogs/bg-p/Developer_Blog",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                2190,
 				Alias:             "visa",
@@ -122,7 +124,7 @@ func companiesPart7() []domain.CompanyProfile {
 			Name:    "Datazip",
 			Website: "https://datazip.io/",
 			Careers: "",
-			About:   "",
+			About:   "https://datazip.io/about-us",
 			Blog:    "https://datazip.io/blog",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                80069364,
@@ -170,7 +172,7 @@ func companiesPart7() []domain.CompanyProfile {
 			Name:    "Baker Hughes",
 			Website: "https://www.bakerhughes.com/",
 			Careers: "https://careers.bakerhughes.com/",
-			About:   "",
+			About:   "https://www.bakerhughes.com/company/about-us",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                4334,
 				Alias:             "bakerhughes",
@@ -222,7 +224,7 @@ func companiesPart7() []domain.CompanyProfile {
 			Name:    "Centrica",
 			Website: "https://www.centrica.com/",
 			Careers: "https://www.lifeatcentrica.com/jobs/",
-			About:   "",
+			About:   "https://www.centrica.com/who-we-are/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                2766,
 				Alias:             "centrica",
@@ -326,7 +328,7 @@ func companiesPart7() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "Green-Got",
 			Website: "https://green-got.com/",
-			Careers: "",
+			Careers: "https://greengotteam.notion.site/On-recrute-dc1e9c1805e54db1ac1b2390a4ae00a8",
 			About:   "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                42124932,

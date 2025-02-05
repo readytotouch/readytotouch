@@ -98,6 +98,7 @@ func companiesPart5() []domain.CompanyProfile {
 			Website: "https://www.lumen.com",
 			Careers: "https://jobs.lumen.com/global/en",
 			About:   "https://www.lumen.com/en-us/about.html",
+			Blog:    "https://medium.com/lumen-engineering-blog",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                47664328,
 				Alias:             "lumentechnologies",
@@ -140,6 +141,7 @@ func companiesPart5() []domain.CompanyProfile {
 			Website: "https://www.sas.com/",
 			Careers: "https://www.sas.com/en_us/careers.html",
 			About:   "https://www.sas.com/en_us/company-information.html",
+			Blog:    "https://blogs.sas.com/content/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1491,
 				Alias:             "sas",
@@ -182,6 +184,7 @@ func companiesPart5() []domain.CompanyProfile {
 			Website: "https://www.miquido.com",
 			Careers: "https://careers.miquido.com/",
 			About:   "https://www.miquido.com/about-us/",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                2307119,
 				Alias:             "miquido",
@@ -446,6 +449,7 @@ func companiesPart5() []domain.CompanyProfile {
 			Website: "https://www.zendesk.com/",
 			Careers: "https://jobs.zendesk.com/us/en",
 			About:   "https://www.zendesk.com/about/",
+			Blog:    "https://zendesk.engineering/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                418095,
 				Alias:             "zendesk",
@@ -549,6 +553,7 @@ func companiesPart5() []domain.CompanyProfile {
 			Website: "https://www.enterprisedb.com/",
 			Careers: "https://www.enterprisedb.com/careers",
 			About:   "https://www.enterprisedb.com/company",
+			Blog:    "https://www.enterprisedb.com/blog",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                14958,
 				Alias:             "edbpostgres",
@@ -600,6 +605,7 @@ func companiesPart5() []domain.CompanyProfile {
 			Website: "https://altair.com/",
 			Careers: "https://altair.com/careers",
 			About:   "https://altair.com/company",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                8323,
 				Alias:             "altair-engineering",
@@ -651,6 +657,7 @@ func companiesPart5() []domain.CompanyProfile {
 			Website: "https://www.rewardgateway.com/",
 			Careers: "https://careers.rewardgateway.com/",
 			About:   "https://www.rewardgateway.com/company/overview",
+			Blog:    "https://rewardgateway.engineering/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                200327,
 				Alias:             "reward-gateway",
@@ -735,6 +742,7 @@ func companiesPart5() []domain.CompanyProfile {
 			Website: "https://www.americanairlines.com/",
 			Careers: "https://jobs.aa.com/",
 			About:   "https://www.aa.com/i18n/customer-service/about-us/history-of-american-airlines.jsp",
+			Blog:    "https://tech.aa.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                2640,
 				Alias:             "american-airlines",
@@ -776,7 +784,7 @@ func companiesPart5() []domain.CompanyProfile {
 			Name:    "Cake by VPBank — Digital Bank",
 			Website: "https://cake.vn/",
 			Careers: "https://cake.vn/recruitment",
-			About:   "",
+			About:   "https://cake.vn/about",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                76580235,
 				Alias:             "cake-by-vpbank",
@@ -819,6 +827,7 @@ func companiesPart5() []domain.CompanyProfile {
 			Website: "https://cheesecakelabs.com/",
 			Careers: "https://cheesecakelabs.com/careers/",
 			About:   "https://cheesecakelabs.com/about/",
+			Blog:    "https://cheesecakelabs.com/blog/category/engineering/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                5251039,
 				Alias:             "cheesecake-labs",
@@ -864,6 +873,7 @@ func companiesPart5() []domain.CompanyProfile {
 			Website: "https://www.maya.ph/",
 			Careers: "https://www.maya.ph/careers",
 			About:   "https://www.maya.ph/about-us",
+			Blog:    "https://developers.maya.ph/page/blog",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                80861757,
 				Alias:             "mayaph",
