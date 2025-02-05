@@ -626,7 +626,7 @@ func companiesPart3() []domain.CompanyProfile {
 			Website: "https://flyr.com/",
 			Careers: "https://flyr.com/careers/",
 			About:   "",
-			Blog:    "https://flyr.com/resource-hub/",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                2906214,
 				Alias:             "flyrinc",
@@ -2586,7 +2586,7 @@ func companiesPart3() []domain.CompanyProfile {
 			Website: "https://www.digiexam.com/",
 			Careers: "https://careers.digiexam.com/",
 			About:   "https://www.digiexam.com/about",
-			Blog:    "https://www.digiexam.com/blog",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                4992190,
 				Alias:             "digiexams",

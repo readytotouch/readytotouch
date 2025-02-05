@@ -227,7 +227,7 @@ func companiesPart4() []domain.CompanyProfile {
 			Website: "https://corporate.comcast.com/",
 			Careers: "https://corporate.comcast.com/careers",
 			About:   "https://corporate.comcast.com/company",
-			Blog:    "https://www.comcasttechnologysolutions.com/blog",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1703,
 				Alias:             "comcast",
@@ -418,7 +418,7 @@ func companiesPart4() []domain.CompanyProfile {
 			Website: "https://www.kiteworks.com/",
 			Careers: "https://www.kiteworks.com/company/careers/",
 			About:   "https://www.kiteworks.com/company/",
-			Blog:    "https://www.kiteworks.com/security-compliance-blog/",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                33337,
 				Alias:             "kiteworkscgcp",
@@ -465,7 +465,7 @@ func companiesPart4() []domain.CompanyProfile {
 			Website: "https://www.centripetal.ai/",
 			Careers: "https://www.centripetal.ai/careers/",
 			About:   "https://www.centripetal.ai/about/",
-			Blog:    "https://www.centripetal.ai/blog/",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1321511,
 				Alias:             "centripetal-ai",
@@ -651,9 +651,9 @@ func companiesPart4() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "Collabera",
 			Website: "https://www.collaberadigital.com/",
-			Careers: "https://ascendion.com/careers/",
-			About:   "https://ascendion.com/who-we-are/",
-			Blog:    "https://ascendion.com/insights/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                24440,
 				Alias:             "collabera",
@@ -770,7 +770,7 @@ func companiesPart4() []domain.CompanyProfile {
 			Website: "https://www.hornetsecurity.com/",
 			Careers: "https://www.hornetsecurity.com/career/",
 			About:   "https://www.hornetsecurity.com/company/",
-			Blog:    "https://www.hornetsecurity.com/en/blog/job-dep/product-development-center/",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                750470,
 				Alias:             "hornetsecurity",
@@ -1181,7 +1181,7 @@ func companiesPart4() []domain.CompanyProfile {
 			Website: "https://www.huntress.com/",
 			Careers: "https://www.huntress.com/company/careers",
 			About:   "https://www.huntress.com/company/our-company",
-			Blog:    "https://www.huntress.com/blog",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                10172550,
 				Alias:             "huntress-labs",
@@ -1767,7 +1767,7 @@ func companiesPart4() []domain.CompanyProfile {
 			Website: "https://www.emerchantpay.com/",
 			Careers: "https://www.emerchantpay.com/careers/",
 			About:   "https://www.emerchantpay.com/about-us/",
-			Blog:    "https://www.emerchantpay.com/insights/",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1432812,
 				Alias:             "emerchantpay-ltd",

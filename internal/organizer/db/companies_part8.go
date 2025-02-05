@@ -171,7 +171,7 @@ func companiesPart8() []domain.CompanyProfile {
 			Website: "https://strangebee.com/",
 			Careers: "https://strangebee.com/careers-at-strangebee/",
 			About:   "https://strangebee.com/about-strangebee/",
-			Blog:    "https://strangebee.com/blog/",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                18993016,
 				Alias:             "strangebee",
@@ -652,7 +652,7 @@ func companiesPart8() []domain.CompanyProfile {
 			Website: "https://www.optimizely.com/",
 			Careers: "https://careers.optimizely.com/",
 			About:   "https://www.optimizely.com/company/",
-			Blog:    "https://www.optimizely.com/insights/blog/",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1189697,
 				Alias:             "optimizely",

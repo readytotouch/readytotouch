@@ -268,7 +268,7 @@ func companiesPart6() []domain.CompanyProfile {
 			Website: "https://twosixtech.com/",
 			Careers: "https://twosixtech.com/careers/",
 			About:   "https://twosixtech.com/about/",
-			Blog:    "https://twosixtech.com/blog/",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                75453814,
 				Alias:             "twosixtechnologies",
