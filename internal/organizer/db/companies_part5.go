@@ -184,7 +184,7 @@ func companiesPart5() []domain.CompanyProfile {
 			Website: "https://www.miquido.com",
 			Careers: "https://careers.miquido.com/",
 			About:   "https://www.miquido.com/about-us/",
-			Blog:    "https://www.miquido.com/blog/",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                2307119,
 				Alias:             "miquido",
@@ -605,7 +605,7 @@ func companiesPart5() []domain.CompanyProfile {
 			Website: "https://altair.com/",
 			Careers: "https://altair.com/careers",
 			About:   "https://altair.com/company",
-			Blog:    "https://altair.com/blog/",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                8323,
 				Alias:             "altair-engineering",

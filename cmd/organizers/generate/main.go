@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"go/format"
+	"net/url"
 	"os"
 	"sort"
 	"strings"
@@ -52,6 +53,22 @@ func generateCompanies(companies []domain.CompanyProfile) {
 		}
 		if company.LinkedInProfile.Name == "" {
 			panic(fmt.Sprintf("Company LinkedIn name is empty for company: %s", company.Name))
+		}
+
+		if err := assertURL(company.Website); err != nil {
+			panic(fmt.Sprintf("Company website URL is invalid for company: %s", company.Name))
+		}
+
+		if err := assertURL(company.Careers); err != nil {
+			panic(fmt.Sprintf("Company careers URL is invalid for company: %s", company.Name))
+		}
+
+		if err := assertURL(company.About); err != nil {
+			panic(fmt.Sprintf("Company about URL is invalid for company: %s", company.Name))
+		}
+
+		if err := assertURL(company.Blog); err != nil {
+			panic(fmt.Sprintf("Company blog URL is invalid for company: %s", company.Name))
 		}
 
 		id := organizers.CompanyAliasToCodeMap[company.LinkedInProfile.Alias]
@@ -271,4 +288,14 @@ func fetchAliasImagePairs(filename string) ([]*dev.CompanyLogoPair, error) {
 	})
 
 	return result, nil
+}
+
+func assertURL(s string) error {
+	if s == "" {
+		return nil
+	}
+
+	_, err := url.Parse(s)
+
+	return err
 }

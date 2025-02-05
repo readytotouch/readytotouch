@@ -1175,7 +1175,7 @@ func companiesPart1() []domain.CompanyProfile {
 			Website: "https://medium.com/",
 			Careers: "https://medium.pinpointhq.com/",
 			About:   "https://medium.com/about",
-			Blog:    "https://medium.com/tag/web-development",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                3039001,
 				Alias:             "medium-com",
@@ -5001,7 +5001,7 @@ func companiesPart1() []domain.CompanyProfile {
 			Name:    "Motorola Solutions",
 			Website: "https://www.motorolasolutions.com/",
 			Careers: "https://www.motorolasolutions.com/en_us/about/careers.html",
-			About:   "https://www.motorolasolutions.com/en_xu/about.html",
+			About:   "https://www.motorolasolutions.com/en_us/about.html",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1771432,
@@ -5496,7 +5496,7 @@ func companiesPart1() []domain.CompanyProfile {
 			Website: "https://www.assertiveyield.com/",
 			Careers: "https://www.assertiveyield.com/careers/",
 			About:   "https://www.assertiveyield.com/about-us/",
-			Blog:    "https://www.assertiveyield.com/blog/",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                76806664,
 				Alias:             "assertive-yield",
@@ -6068,7 +6068,7 @@ func companiesPart1() []domain.CompanyProfile {
 			Website: "https://yassir.com/",
 			Careers: "https://yassir.com/career",
 			About:   "https://yassir.com/about-us",
-			Blog:    "https://yassir.com/blog",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                19069709,
 				Alias:             "yassir",
@@ -8984,7 +8984,7 @@ func companiesPart1() []domain.CompanyProfile {
 			Website: "https://www.apifonica.com/",
 			Careers: "https://www.apifonica.com/en/industries/hr-and-recruitment/",
 			About:   "https://www.apifonica.com/en/company/about/",
-			Blog:    "https://www.apifonica.com/en/blog/",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                10943475,
 				Alias:             "apifonica",
@@ -9356,7 +9356,7 @@ func companiesPart1() []domain.CompanyProfile {
 			Website: "https://www.sinch.com/",
 			Careers: "https://sinch.com/careers/",
 			About:   "https://sinch.com/about-us/",
-			Blog:    "https://sinch.com/blog/?blog_category=91",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                3726743,
 				Alias:             "sinch",
@@ -10624,7 +10624,7 @@ func companiesPart1() []domain.CompanyProfile {
 			Website: "https://markitech.ca/",
 			Careers: "https://markitech.ca/jobs/",
 			About:   "",
-			Blog:    "https://markitech.ca/blog/",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                9294422,
 				Alias:             "markitech-ai",
@@ -11112,7 +11112,7 @@ func companiesPart1() []domain.CompanyProfile {
 			Website: "https://mindera.com/",
 			Careers: "https://mindera.com/careers",
 			About:   "https://mindera.com/about",
-			Blog:    "https://mindera.com/blog",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                80044268,
 				Alias:             "mindera-world",
@@ -11273,7 +11273,7 @@ func companiesPart1() []domain.CompanyProfile {
 			Website: "https://saxon.ai/",
 			Careers: "https://saxon.ai/career/",
 			About:   "https://saxon.ai/about-us/",
-			Blog:    "https://saxon.ai/blogs/",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                224935,
 				Alias:             "saxonai",
@@ -11716,7 +11716,7 @@ func companiesPart1() []domain.CompanyProfile {
 			Website: "https://ttpsc.com/",
 			Careers: "https://kariera.ttpsc.com/en/job-offers/",
 			About:   "https://ttpsc.com/en/who-we-are/",
-			Blog:    "https://ttpsc.com/en/blog/",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                17880075,
 				Alias:             "transition-technologies-psc",
@@ -11823,7 +11823,7 @@ func companiesPart1() []domain.CompanyProfile {
 			Website: "https://www.precisely.com/",
 			Careers: "https://www.precisely.com/careers-and-culture",
 			About:   "https://www.precisely.com/about-us",
-			Blog:    "https://www.precisely.com/blog",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                64863146,
 				Alias:             "preciselydata",
@@ -12007,7 +12007,7 @@ func companiesPart1() []domain.CompanyProfile {
 			Website: "https://ascendion.com/",
 			Careers: "https://ascendion.com/careers/",
 			About:   "https://ascendion.com/who-we-are/",
-			Blog:    "https://ascendion.com/insights/",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                86694680,
 				Alias:             "ascendion",
@@ -12142,7 +12142,7 @@ func companiesPart1() []domain.CompanyProfile {
 			Website: "https://www.unlimit.com/",
 			Careers: "https://www.unlimit.com/careers/",
 			About:   "https://www.unlimit.com/about-company/",
-			Blog:    "https://www.unlimit.com/blog/",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                56459436,
 				Alias:             "unlimit-com",
@@ -15867,7 +15867,7 @@ func companiesPart1() []domain.CompanyProfile {
 			Website: "https://www.moveworks.com/",
 			Careers: "https://www.moveworks.com/us/en/company/careers",
 			About:   "https://www.moveworks.com/us/en/company/about",
-			Blog:    "https://www.moveworks.com/us/en/resources/blog",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                18311685,
 				Alias:             "moveworksai",

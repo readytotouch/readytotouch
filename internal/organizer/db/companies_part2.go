@@ -3293,7 +3293,7 @@ func companiesPart2() []domain.CompanyProfile {
 			Website: "https://appodeal.com/",
 			Careers: "https://appodeal.com/career/",
 			About:   "https://appodeal.com/about/",
-			Blog:    "https://appodeal.com/blog/",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                19139082,
 				Alias:             "appodeal",
@@ -3693,7 +3693,7 @@ func companiesPart2() []domain.CompanyProfile {
 			Name:    "Adverty",
 			Website: "https://adverty.com/",
 			Careers: "https://adverty.com/join-us/",
-			About:   "https://adverty.com/investors-press-releases?slug=adverty-accelerates-faster-than-expected-in-the-us-through-partnership-with-frameplay",
+			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                15233801,
@@ -3806,7 +3806,7 @@ func companiesPart2() []domain.CompanyProfile {
 			Website: "https://www.here.com/",
 			Careers: "https://www.here.com/about/careers",
 			About:   "https://www.here.com/company/about-us",
-			Blog:    "https://www.here.com/docs/search?q=engineering",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                3237134,
 				Alias:             "here",
@@ -3984,7 +3984,7 @@ func companiesPart2() []domain.CompanyProfile {
 			Website: "https://www.automox.com/",
 			Careers: "https://www.automox.com/careers",
 			About:   "https://www.automox.com/company",
-			Blog:    "https://www.automox.com/resources?type=Blog%20Post&topic=#resource-content",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                7941257,
 				Alias:             "automox",
@@ -4512,7 +4512,7 @@ func companiesPart2() []domain.CompanyProfile {
 			Website: "https://home.paynearme.com/",
 			Careers: "https://home.paynearme.com/about/careers/",
 			About:   "https://home.paynearme.com/about/",
-			Blog:    "https://home.paynearme.com/category/blog/",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1137260,
 				Alias:             "paynearme",
@@ -6552,7 +6552,7 @@ func companiesPart2() []domain.CompanyProfile {
 			Website: "https://mountain.com/",
 			Careers: "https://mountain.com/about/careers/",
 			About:   "https://mountain.com/about/",
-			Blog:    "https://mountain.com/blog/",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                480382,
 				Alias:             "wearemntn",
