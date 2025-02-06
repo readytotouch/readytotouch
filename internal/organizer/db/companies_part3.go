@@ -100,7 +100,7 @@ func companiesPart3() []domain.CompanyProfile {
 							Title:                "Senior Software Engineer, Back End (Java, Go, AWS)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
+							URL:                  "https://www.linkedin.com/jobs/view/4124919603/",
 							Date:                 mustDate("2025-02-06"),
 							WithSalary:           true, // $158,600 — $181,000 per year
 							Remote:               false,

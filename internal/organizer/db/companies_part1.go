@@ -2794,7 +2794,7 @@ func companiesPart1() []domain.CompanyProfile {
 							Title:                "C, Golang Software Engineer",
 							ShortDescription:     "Working on dqlite, a Raft extension for SQLite",
 							SwitchingOpportunity: "",
-							URL:                  "",
+							URL:                  "https://www.linkedin.com/jobs/view/4140337335/",
 							Date:                 mustDate("2025-02-01"),
 							WithSalary:           false,
 							Remote:               true,
@@ -16316,7 +16316,7 @@ func companiesPart1() []domain.CompanyProfile {
 						{
 							Title:                "Staff Software Engineer (Golang)",
 							ShortDescription:     "",
-							SwitchingOpportunity: "https://www.linkedin.com/jobs/view/4142268247/",
+							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4142268247/",
 							Date:                 mustDate("2025-02-03"),
 							WithSalary:           true, // $110.000 — $165.000 per year

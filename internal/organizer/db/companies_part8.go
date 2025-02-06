@@ -2286,7 +2286,7 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "Transactional Experience",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4139709944/",
-							Date:                 mustDate(""),
+							Date:                 mustDate("2025-02-04"),
 							WithSalary:           true, // The salary range for this position is €3,975 — €6,725 per month
 							Remote:               false,
 						},
