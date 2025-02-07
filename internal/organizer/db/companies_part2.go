@@ -4816,10 +4816,13 @@ func companiesPart2() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Senior Software Engineer, Cloud (Go/Golang)",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4076610998/",
-							Date:             mustDate("2024-11-14"),
+							Title:                "Senior Software Engineer, Cloud (Go/Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4076610998/",
+							Date:                 mustDate("2024-11-14"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 						{
 							Title:                "Senior Software Engineer, Cloud (Go/Golang)",
@@ -9875,10 +9878,13 @@ func companiesPart2() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Golang Engineer, FlashArray",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4072597478/",
-							Date:             mustDate("2024-11-13"),
+							Title:                "Golang Engineer, FlashArray",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4072597478/",
+							Date:                 mustDate("2024-11-13"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 						{
 							Title:                "Golang Engineer, Flash Array",
