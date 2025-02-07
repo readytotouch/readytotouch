@@ -675,7 +675,7 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4120974608/",
-							Date:                 mustDate("2025-01-15"),
+							Date:                 mustDate("2025-02-05"), // mustDate("2025-01-15"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -779,8 +779,8 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4122141025/",
-							Date:                 mustDate("2025-01-14"),
-							WithSalary:           true, // This position has a minimum salary of $150,000- $170,000
+							Date:                 mustDate("2025-02-04"), // mustDate("2025-01-14"),
+							WithSalary:           true,                   // This position has a minimum salary of $150,000- $170,000
 							Remote:               true,
 						},
 					},
@@ -1871,6 +1871,15 @@ func companiesPart8() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Golang Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4139628979/",
+							Date:                 mustDate("2025-01-31"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Elixir:  {},
@@ -2108,6 +2117,285 @@ func companiesPart8() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Cloud-based presentation software that allows users to create dynamic and interactive presentations.",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Yuno",
+			Website: "https://www.y.uno/",
+			Careers: "https://www.y.uno/careers",
+			About:   "https://www.y.uno/about",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                79990231,
+				Alias:             "yunopay",
+				Name:              "Yuno",
+				Followers:         "22K",
+				Employees:         "51-200",
+				AssociatedMembers: "548",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "yuno-payments",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Backend Go Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4139299697/",
+							Date:                 mustDate("2025-02-05"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Fintech company",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
+		},
+
+		{
+			ID:      0,                         // system
+			Type:    domain.CompanyTypeStartup, // system
+			Name:    "Qustodio (part of the Qoria family)",
+			Website: "https://www.qustodio.com/",
+			Careers: "https://www.qustodio.com/careers/",
+			About:   "https://www.qustodio.com/company/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                5229163,
+				Alias:             "qustodio",
+				Name:              "Qustodio (part of the Qoria family)",
+				Followers:         "4K",
+				Employees:         "51-200",
+				AssociatedMembers: "89",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "qustodio",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer (Go & Python)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4144099112/",
+							Date:                 mustDate("2025-02-05"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Is a parental control app for computers, tablets, and smartphones",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Pexip",
+			Website: "https://www.pexip.com/",
+			Careers: "https://www.pexip.com/careers",
+			About:   "https://www.pexip.com/about",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2914650,
+				Alias:             "pexip",
+				Name:              "Pexip",
+				Followers:         "25K",
+				Employees:         "201-500",
+				AssociatedMembers: "313",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "pexip",
+				Verified: true,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer, Go/Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4127825676/",
+							Date:                 mustDate("2025-02-04"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Is a video communications platform for organizations",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Vinted",
+			Website: "https://www.vinted.com/",
+			Careers: "https://careers.vinted.com/",
+			About:   "https://www.vinted.com/about",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2909062,
+				Alias:             "vinted",
+				Name:              "Vinted",
+				Followers:         "120K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "2,845",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "vinted",
+				Verified: true,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Middle/Senior Go Backend Engineer",
+							ShortDescription:     "Transactional Experience",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4139709944/",
+							Date:                 mustDate("2025-02-04"),
+							WithSalary:           true, // The salary range for this position is €3,975 — €6,725 per month
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Marketplace ecosystems",
+			Industries: []domain.Industry{
+				domain.IndustryECommerce,
+			},
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "BigCommerce",
+			Website: "https://www.bigcommerce.com/",
+			Careers: "https://careers.bigcommerce.com/",
+			About:   "https://www.bigcommerce.com/company/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                103315,
+				Alias:             "bigcommerce",
+				Name:              "BigCommerce",
+				Followers:         "144K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "1,268",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "bigcommerce",
+				Verified: true,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer — Python/Go",
+							ShortDescription:     "B2B",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4139297081/",
+							Date:                 mustDate("2025-01-31"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Is a eCommerce platform provides software to businesses that helps them set up and manage online and mobile stores",
+			Industries: []domain.Industry{
+				domain.IndustryECommerce,
+			},
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Grab",
+			Website: "https://www.grab.com/",
+			Careers: "https://www.grab.careers/",
+			About:   "https://www.grab.careers/about-us/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                5382086,
+				Alias:             "grabapp",
+				Name:              "Grab",
+				Followers:         "852K",
+				Employees:         "5K-10K",
+				AssociatedMembers: "48,818",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "grab",
+				Verified: true,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer, Backend (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4141112561/",
+							Date:                 mustDate("2025-02-03"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Developer of app for ride-hailing, food delivery, and digital payment services on mobile devices",
 		},
 
 		// Template short

@@ -609,6 +609,12 @@ var (
 		"walmart":                             606, // Walmart
 		"magnite":                             607, // Magnite
 		"prezi":                               608, // Prezi
+		"yunopay":                             609, // Yuno
+		"qustodio":                            610, // Qustodio (part of the Qoria family)
+		"pexip":                               611, // Pexip
+		"vinted":                              612, // Vinted
+		"bigcommerce":                         613, // BigCommerce
+		"grabapp":                             614, // Grab
 
 	}
 )
