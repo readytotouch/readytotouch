@@ -2168,8 +2168,8 @@ func companiesPart8() []domain.CompanyProfile {
 		},
 
 		{
-			ID:      0,  // system
-			Type:    "", // system
+			ID:      0,                         // system
+			Type:    domain.CompanyTypeStartup, // system
 			Name:    "Qustodio (part of the Qoria family)",
 			Website: "https://www.qustodio.com/",
 			Careers: "https://www.qustodio.com/careers/",
@@ -2282,7 +2282,7 @@ func companiesPart8() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Mid/Senior Go Backend Engineer",
+							Title:                "Middle/Senior Go Backend Engineer",
 							ShortDescription:     "Transactional Experience",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4139709944/",
@@ -2331,7 +2331,7 @@ func companiesPart8() []domain.CompanyProfile {
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer — Python/Go",
-							ShortDescription:     "",
+							ShortDescription:     "B2B",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4139297081/",
 							Date:                 mustDate("2025-01-31"),

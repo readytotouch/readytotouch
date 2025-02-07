@@ -747,14 +747,17 @@ func companiesPart4() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Senior Golang Engineer",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4016921964/",
-							Date:             mustDate("2025-01-16"), // mustDate("2024-12-03"),
+							Title:                "Senior Golang Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4016921964/",
+							Date:                 mustDate("2025-01-16"), // mustDate("2024-12-03"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 						{
 							Title:                "Senior Golang Engineer",
-							ShortDescription:     "Sophia-Antipolis",
+							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4145034904/",
 							Date:                 mustDate("2025-02-06"),
@@ -1166,12 +1169,13 @@ func companiesPart4() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Senior Software Engineer",
-							ShortDescription: "Mobile/Backend (Android, Go, Kotlin)",
-							URL:              "https://www.linkedin.com/jobs/view/4093511115/",
-							Date:             mustDate("2025-01-14"), // mustDate("2024-12-11"),
-							WithSalary:       true,                   // $92,300.00 — $175,400.00
-							Remote:           false,
+							Title:                "Senior Software Engineer",
+							ShortDescription:     "Mobile/Backend (Android, Go, Kotlin)",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4093511115/",
+							Date:                 mustDate("2025-01-14"), // mustDate("2024-12-11"),
+							WithSalary:           true,                   // $92,300.00 — $175,400.00
+							Remote:               false,
 						},
 						{
 							Title:                "Senior Software Engineer",
@@ -1547,10 +1551,13 @@ func companiesPart4() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 4,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Backend Developer (Golang)",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4100868953/",
-							Date:             mustDate("2025-01-17"), // mustDate("2024-12-16"),
+							Title:                "Backend Developer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4100868953/",
+							Date:                 mustDate("2025-01-17"), // mustDate("2024-12-16"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 						{
 							Title:                "Cloud Software Developer (Go)",
@@ -1622,7 +1629,7 @@ func companiesPart4() []domain.CompanyProfile {
 						},
 						{
 							Title:                "Golang Backend Developer",
-							ShortDescription:     "Platform ",
+							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4075845150/",
 							Date:                 mustDate("2025-02-05"),
@@ -2008,18 +2015,12 @@ func companiesPart4() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 9,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Senior Site Reliability Engineer I (Python/Golang), Agent Ops",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4100798671/",
-							Date:             mustDate("2024-12-14"),
-						},
-						{
 							Title:                "Senior Site Reliability Engineer I (Python/Golang)",
 							ShortDescription:     "Agent Ops",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4100798671/",
-							Date:                 mustDate("2025-02-04"),
-							WithSalary:           true, // $146.600 — $203.100 per year
+							Date:                 mustDate("2025-02-04"), // mustDate("2024-12-14"),
+							WithSalary:           true,                   // $146.600 — $203.100 per year
 							Remote:               false,
 						},
 					},

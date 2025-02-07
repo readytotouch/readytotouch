@@ -550,20 +550,7 @@ func companiesPart1() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "Senior Software Development Engineer, Go-AI Technology",
-							ShortDescription:     "Development Team",
-							SwitchingOpportunity: "",
-							URL:                  "https://www.linkedin.com/jobs/view/4144494292/",
-							Date:                 mustDate("2025-02-06"),
-							WithSalary:           false,
-							Remote:               false,
-						},
-					},
-				},
+				domain.Go:      {},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -648,15 +635,6 @@ func companiesPart1() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4095286825/",
 							Date:                 mustDate("2025-01-10"),
-							WithSalary:           false,
-							Remote:               false,
-						},
-						{
-							Title:                "Senior Compiler Developer",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "https://www.linkedin.com/jobs/view/4142552815/",
-							Date:                 mustDate("2025-02-05"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -5825,17 +5803,22 @@ func companiesPart1() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Software Developer Go",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/3757109938/",
-							Date:             mustDate("2025-01-07"), // mustDate("2024-12-12"),
+							Title:                "Software Developer Go",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/3757109938/",
+							Date:                 mustDate("2025-01-07"), // mustDate("2024-12-12"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 						{
-							Title:            "Senior Golang Developer",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4131277355/",
-							Date:             mustDate("2025-01-21"),
-							Remote:           true,
+							Title:                "Senior Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4131277355/",
+							Date:                 mustDate("2025-01-21"),
+							WithSalary:           false,
+							Remote:               true,
 						},
 						{
 							Title:                "Software Developer Go",
@@ -7976,7 +7959,7 @@ func companiesPart1() []domain.CompanyProfile {
 							Date:             mustDate("2025-01-23"),
 						},
 						{
-							Title:                "Senior Backend GoLang Developer",
+							Title:                "Senior Backend Golang Developer",
 							ShortDescription:     "Cybersecurity",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4139224092/",
@@ -8267,8 +8250,8 @@ func companiesPart1() []domain.CompanyProfile {
 						},
 						{
 							Title:                "Software Engineer (Golang)",
-							ShortDescription:     "",
-							SwitchingOpportunity: "Merchant Protect",
+							ShortDescription:     "Merchant Protect",
+							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4092325280/",
 							Date:                 mustDate("2025-02-05"),
 							WithSalary:           false,
@@ -8620,8 +8603,8 @@ func companiesPart1() []domain.CompanyProfile {
 							Remote:               false, // Up to 60 days of working from (m)anywhere
 						},
 						{
-							Title:                "Golang Engineer",
-							ShortDescription:     "Content Platform team",
+							Title:                "Golang Engineer — Content Platform team",
+							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4143253999/",
 							Date:                 mustDate("2025-02-06"),
@@ -9628,7 +9611,7 @@ func companiesPart1() []domain.CompanyProfile {
 							Date:             mustDate("2024-12-22"),
 						},
 						{
-							Title:                "Senior GoLang Software Engineer",
+							Title:                "Senior Golang Software Engineer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4077458993/",
@@ -13145,10 +13128,13 @@ func companiesPart1() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Senior Golang Engineer",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4062048996/",
-							Date:             mustDate("2024-11-01"),
+							Title:                "Senior Golang Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4062048996/",
+							Date:                 mustDate("2024-11-01"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 						{
 							Title:                "Senior Golang Engineer",
