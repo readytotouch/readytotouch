@@ -566,7 +566,7 @@ var (
 		"muralhealth":                         563, // Mural Health
 		"greengot":                            564, // Green-Got
 		"auctiontechnologygroup":              565, // ATG (Auction Technology Group)
-		"gridX":                               566, // gridX
+		"gridx":                               566, // gridX
 		"evolve-vacation-rental":              567, // Evolve
 		"strangebee":                          568, // StrangeBee
 		"thatgamecompany":                     569, // thatgamecompany

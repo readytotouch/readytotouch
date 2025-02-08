@@ -83,7 +83,7 @@ func companiesPart8() []domain.CompanyProfile {
 			Blog:    "https://www.gridx.ai/blog-category/tech",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                10599040,
-				Alias:             "gridX",
+				Alias:             "gridx",
 				Name:              "gridX",
 				Followers:         "21K",
 				Employees:         "51-200",

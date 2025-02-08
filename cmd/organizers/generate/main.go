@@ -28,6 +28,11 @@ func main() {
 		generateLogosSearch(companies)
 	*/
 	generateLogos(companies)
+
+	// Will be used in the future to inspect companies correctness
+	/*
+		inspectCompaniesCorrectness(companies)
+	*/
 }
 
 func generateCompanies(companies []domain.CompanyProfile) {
@@ -255,6 +260,57 @@ func generateLogos(companies []domain.CompanyProfile) {
 	fmt.Println("Company logo generated successfully")
 }
 
+func inspectCompaniesCorrectness(companies []domain.CompanyProfile) {
+	type LevelsFyiDiffAlias struct {
+		LinkedInAlias  string
+		LevelsFyiAlias string
+	}
+
+	var (
+		total               = 0
+		emptyLevelsFyiCount = 0
+		sameLevelsFyiCount  = 0
+		diffAliases         = make([]LevelsFyiDiffAlias, 0, len(companies))
+	)
+
+	for _, company := range companies {
+		if company.Ignore {
+			continue
+		}
+
+		total++
+
+		if company.LevelsFyiProfile.Alias == "" {
+			emptyLevelsFyiCount++
+
+			continue
+		}
+
+		if compareAliases(company.LinkedInProfile.Alias, company.LevelsFyiProfile.Alias) {
+			sameLevelsFyiCount++
+
+			continue
+		}
+
+		diffAliases = append(diffAliases, LevelsFyiDiffAlias{
+			LinkedInAlias:  company.LinkedInProfile.Alias,
+			LevelsFyiAlias: company.LevelsFyiProfile.Alias,
+		})
+	}
+
+	sort.Slice(diffAliases, func(i, j int) bool {
+		return diffAliases[i].LinkedInAlias < diffAliases[j].LinkedInAlias
+	})
+
+	fmt.Printf("Total: %d\n", total)
+	fmt.Printf("Empty Levels.fyi count: %d\n", emptyLevelsFyiCount)
+	fmt.Printf("Same Levels.fyi count: %d\n", sameLevelsFyiCount)
+	for _, diffAlias := range diffAliases {
+		fmt.Printf("%32s %s\n", diffAlias.LinkedInAlias, diffAlias.LevelsFyiAlias)
+	}
+	fmt.Printf("Diff aliases count: %d\n", len(diffAliases))
+}
+
 func fetchAliasImagePairs(filename string) ([]*dev.CompanyLogoPair, error) {
 	file, err := os.Open(filename)
 	if err != nil {
@@ -298,4 +354,47 @@ func assertURL(s string) error {
 	_, err := url.Parse(s)
 
 	return err
+}
+
+func compareAliases(l, r string) bool {
+	l = strings.ReplaceAll(l, "-", "")
+	l = strings.ReplaceAll(l, ".", "")
+	r = strings.ReplaceAll(r, "-", "")
+	r = strings.ReplaceAll(r, ".", "")
+
+	if l == r {
+		return true
+	}
+
+	var (
+		suffixes = []string{
+			"ai",
+			"io",
+			"co",
+			"inc",
+			"com",
+			"net",
+			"ltd",
+			"llc",
+			"app",
+			"labs",
+			"tech",
+			"group",
+			"space",
+			"global",
+			"network",
+			"systems",
+			"corporation",
+			"engineering",
+			"technologies",
+		}
+	)
+
+	for _, suffix := range suffixes {
+		if strings.TrimSuffix(l, suffix) == strings.TrimSuffix(r, suffix) {
+			return true
+		}
+	}
+
+	return false
 }
