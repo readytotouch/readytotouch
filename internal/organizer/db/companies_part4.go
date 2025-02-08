@@ -149,6 +149,10 @@ func companiesPart4() []domain.CompanyProfile {
 				AssociatedMembers: "572",
 				Verified:          true,
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "applied-systems",
+				Employees: "2,000",
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 11,

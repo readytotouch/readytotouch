@@ -86,6 +86,10 @@ func companiesPart2() []domain.CompanyProfile {
 				Login:    "mcafee",
 				Verified: true,
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "mcafee",
+				Employees: "7,000",
+			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-McAfee-EI_IE2244.11,17.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/McAfee-Reviews-E2244.htm",
@@ -247,6 +251,10 @@ func companiesPart2() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "Demandbase",
 				Verified: true,
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "demandbase",
+				Employees: "930",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Demandbase-EI_IE271272.11,21.htm",
@@ -415,6 +423,10 @@ func companiesPart2() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "Hinge",
 				Verified: false,
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "hinge",
+				Employees: "150",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Hinge-EI_IE871901.11,16.htm",
@@ -747,6 +759,10 @@ func companiesPart2() []domain.CompanyProfile {
 				Login:    "networkoptix",
 				Verified: false,
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "network-optix",
+				Employees: "157",
+			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Network-Optix-EI_IE1103945.11,24.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Network-Optix-Reviews-E1103945.htm",
@@ -861,6 +877,10 @@ func companiesPart2() []domain.CompanyProfile {
 				Login:    "readdle",
 				Verified: false,
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "readdle",
+				Employees: "190",
+			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Readdle-EI_IE613771.11,18.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Readdle-Reviews-E613771.htm",
@@ -913,6 +933,10 @@ func companiesPart2() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
 				Verified: false,
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "ipsos",
+				Employees: "14,170",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Ipsos-EI_IE13063.11,16.htm",
@@ -967,6 +991,10 @@ func companiesPart2() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "bedrockstreaming",
 				Verified: true,
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "bedrock-streaming",
+				Employees: "360",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Bedrock-Streaming-EI_IE5955934.11,28.htm",
@@ -1089,6 +1117,10 @@ func companiesPart2() []domain.CompanyProfile {
 				Login:    "OneSignal",
 				Verified: true,
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "onesignal",
+				Employees: "100",
+			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-OneSignal-EI_IE1952551.11,20.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/OneSignal-Reviews-E1952551.htm",
@@ -1150,6 +1182,10 @@ func companiesPart2() []domain.CompanyProfile {
 				Login:    "metabase",
 				Verified: true,
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "metabase",
+				Employees: "45",
+			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Metabase-CA-EI_IE6095700.11,22.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Metabase-CA-Reviews-E6095700.htm",
@@ -1202,6 +1238,10 @@ func companiesPart2() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "anjuna-security",
 				Verified: false,
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "anjuna",
+				Employees: "70",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Anjuna-Security-EI_IE3150191.11,26.htm",
@@ -1265,6 +1305,10 @@ func companiesPart2() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "aquasecurity",
 				Verified: true,
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "aqua-security",
+				Employees: "751",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Aqua-Security-Software-EI_IE1785939.11,33.htm",
@@ -1375,8 +1419,11 @@ func companiesPart2() []domain.CompanyProfile {
 				Login:    "wgnet",
 				Verified: false,
 			},
-			BlindProfile:     domain.BlindProfile{},
-			LevelsFyiProfile: domain.LevelsFyiProfile{},
+			BlindProfile: domain.BlindProfile{},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "wargaming",
+				Employees: "4,000",
+			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Wargaming-EI_IE381713.11,20.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Wargaming-Reviews-E381713.htm",
@@ -1450,6 +1497,10 @@ func companiesPart2() []domain.CompanyProfile {
 				Login:    "napier-ai",
 				Verified: true,
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "napier-technologies",
+				Employees: "180",
+			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Napier-Technologies-EI_IE4370088.11,30.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Napier-Technologies-Reviews-E4370088.htm",
@@ -1509,6 +1560,10 @@ func companiesPart2() []domain.CompanyProfile {
 				Login:    "kaseya",
 				Verified: false,
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "kaseya",
+				Employees: "1,500",
+			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Kaseya-EI_IE262966.11,17.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Kaseya-Reviews-E262966.htm",
@@ -1563,6 +1618,10 @@ func companiesPart2() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "omio-labs",
 				Verified: false,
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "omio",
+				Employees: "270",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Omio-EI_IE2855962.11,15.htm",
@@ -1627,6 +1686,10 @@ func companiesPart2() []domain.CompanyProfile {
 				Login:    "",
 				Verified: false,
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "liebherr-group",
+				Employees: "49,611",
+			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Liebherr-Group-EI_IE787369.11,25.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Liebherr-Group-Reviews-E787369.htm",
@@ -1680,6 +1743,10 @@ func companiesPart2() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "fiserv",
 				Verified: false,
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "fiserv",
+				Employees: "31,290",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Fiserv-EI_IE1384.11,17.htm",
@@ -1740,6 +1807,10 @@ func companiesPart2() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "GettEngineering",
 				Verified: true,
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "gett",
+				Employees: "930",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Gett-EI_IE810731.11,15.htm",
