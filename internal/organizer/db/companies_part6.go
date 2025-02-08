@@ -70,6 +70,10 @@ func companiesPart6() []domain.CompanyProfile {
 				Login:    "nutanix",
 				Verified: true,
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "nutanix",
+				Employees: "6,250",
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -111,6 +115,10 @@ func companiesPart6() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
 				Verified: false,
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "umbra",
+				Employees: "126",
 			},
 			Languages: domain.Languages{
 				domain.Go: {},
@@ -154,6 +162,10 @@ func companiesPart6() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "cognitedata",
 				Verified: true,
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "cognite",
+				Employees: "660",
 			},
 			Languages: domain.Languages{
 				domain.Go: {},
@@ -230,6 +242,10 @@ func companiesPart6() []domain.CompanyProfile {
 				Login:    "ubisoft",
 				Verified: true,
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "ubisoft",
+				Employees: "21,620",
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -281,6 +297,10 @@ func companiesPart6() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "twosixlabs",
 				Verified: false,
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "two-six-technologies",
+				Employees: "310",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
