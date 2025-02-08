@@ -28,6 +28,10 @@ func companiesPart7() []domain.CompanyProfile {
 				Login:    "checkmarx",
 				Verified: true,
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "checkmarx",
+				Employees: "820",
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 12,
@@ -76,6 +80,10 @@ func companiesPart7() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "visa",
 				Verified: false,
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "visa",
+				Employees: "21,000",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -186,6 +194,10 @@ func companiesPart7() []domain.CompanyProfile {
 				Login:    "BakerHughes",
 				Verified: false,
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "baker-hughes",
+				Employees: "57,510",
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -237,6 +249,10 @@ func companiesPart7() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
 				Verified: false,
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "centrica",
+				Employees: "20,406",
 			},
 			Languages: domain.Languages{
 				domain.Go: {

@@ -27,8 +27,11 @@ func companiesPart3() []domain.CompanyProfile {
 				Login:    "capitalone",
 				Verified: false,
 			},
-			BlindProfile:     domain.BlindProfile{},
-			LevelsFyiProfile: domain.LevelsFyiProfile{},
+			BlindProfile: domain.BlindProfile{},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "capital-one",
+				Employees: "55,080",
+			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Capital-One-EI_IE3736.11,22.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Capital-One-Reviews-E3736.htm",
@@ -179,6 +182,10 @@ func companiesPart3() []domain.CompanyProfile {
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Dynatrace-Reviews-E309684.htm",
 				Verified:    true,
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "dynatrace",
+				Employees: "3,500",
+			},
 			OttaProfileSlug:   "Dynatrace",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
@@ -251,6 +258,10 @@ func companiesPart3() []domain.CompanyProfile {
 				Login:    "emnify",
 				Verified: true,
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "emnify",
+				Employees: "180",
+			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-EMnify-EI_IE1356231.11,17.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/EMnify-Reviews-E1356231.htm",
@@ -314,8 +325,11 @@ func companiesPart3() []domain.CompanyProfile {
 				Login:    "",
 				Verified: false,
 			},
-			BlindProfile:     domain.BlindProfile{},
-			LevelsFyiProfile: domain.LevelsFyiProfile{},
+			BlindProfile: domain.BlindProfile{},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "moodys",
+				Employees: "12,000",
+			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Moody-s-EI_IE11303.11,18.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Moody-s-Reviews-E11303.htm",
@@ -379,6 +393,10 @@ func companiesPart3() []domain.CompanyProfile {
 				Login:    "lytx",
 				Verified: false,
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "lytx",
+				Employees: "840",
+			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Lytx-EI_IE813859.11,15.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Lytx-Reviews-E813859.htm",
@@ -441,8 +459,8 @@ func companiesPart3() []domain.CompanyProfile {
 				ReviewsRate: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias:     "",
-				Employees: "",
+				Alias:     "applied-systems",
+				Employees: "2,000",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -522,8 +540,8 @@ func companiesPart3() []domain.CompanyProfile {
 				ReviewsRate: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias:     "",
-				Employees: "",
+				Alias:     "yum-brands",
+				Employees: "4,750",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -594,8 +612,8 @@ func companiesPart3() []domain.CompanyProfile {
 				ReviewsRate: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias:     "",
-				Employees: "",
+				Alias:     "nokia",
+				Employees: "83,880",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -810,8 +828,8 @@ func companiesPart3() []domain.CompanyProfile {
 				ReviewsRate: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias:     "",
-				Employees: "",
+				Alias:     "rocket-lab",
+				Employees: "480",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -882,8 +900,8 @@ func companiesPart3() []domain.CompanyProfile {
 				ReviewsRate: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias:     "",
-				Employees: "",
+				Alias:     "sportradar",
+				Employees: "2,250",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -954,8 +972,8 @@ func companiesPart3() []domain.CompanyProfile {
 				ReviewsRate: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias:     "",
-				Employees: "",
+				Alias:     "bestow",
+				Employees: "180",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -1038,8 +1056,8 @@ func companiesPart3() []domain.CompanyProfile {
 				ReviewsRate: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias:     "",
-				Employees: "",
+				Alias:     "geico",
+				Employees: "25,030",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -1212,8 +1230,8 @@ func companiesPart3() []domain.CompanyProfile {
 				ReviewsRate: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias:     "",
-				Employees: "",
+				Alias:     "airslate",
+				Employees: "810",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -1286,8 +1304,8 @@ func companiesPart3() []domain.CompanyProfile {
 				ReviewsRate: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias:     "",
-				Employees: "",
+				Alias:     "embark-studios",
+				Employees: "210",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -1372,8 +1390,8 @@ func companiesPart3() []domain.CompanyProfile {
 				ReviewsRate: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias:     "",
-				Employees: "",
+				Alias:     "centene",
+				Employees: "71,000",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -1444,8 +1462,8 @@ func companiesPart3() []domain.CompanyProfile {
 				ReviewsRate: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias:     "",
-				Employees: "",
+				Alias:     "vestiaire-collective",
+				Employees: "900",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -1534,8 +1552,8 @@ func companiesPart3() []domain.CompanyProfile {
 				ReviewsRate: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias:     "",
-				Employees: "",
+				Alias:     "check-point-software-technologies",
+				Employees: "5,500",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -1610,8 +1628,8 @@ func companiesPart3() []domain.CompanyProfile {
 				ReviewsRate: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias:     "",
-				Employees: "",
+				Alias:     "qohash",
+				Employees: "126",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -1770,8 +1788,8 @@ func companiesPart3() []domain.CompanyProfile {
 				ReviewsRate: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias:     "",
-				Employees: "",
+				Alias:     "telestream",
+				Employees: "510",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -1842,8 +1860,8 @@ func companiesPart3() []domain.CompanyProfile {
 				ReviewsRate: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias:     "",
-				Employees: "",
+				Alias:     "mitratech",
+				Employees: "900",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -1914,8 +1932,8 @@ func companiesPart3() []domain.CompanyProfile {
 				ReviewsRate: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias:     "",
-				Employees: "",
+				Alias:     "paddle",
+				Employees: "180",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -2072,8 +2090,8 @@ func companiesPart3() []domain.CompanyProfile {
 				ReviewsRate: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias:     "",
-				Employees: "",
+				Alias:     "cohesity",
+				Employees: "2,000",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -2153,8 +2171,8 @@ func companiesPart3() []domain.CompanyProfile {
 				ReviewsRate: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias:     "",
-				Employees: "",
+				Alias:     "idt",
+				Employees: "1,650",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -2241,8 +2259,8 @@ func companiesPart3() []domain.CompanyProfile {
 				ReviewsRate: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias:     "",
-				Employees: "",
+				Alias:     "dt-one",
+				Employees: "270",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -2396,8 +2414,8 @@ func companiesPart3() []domain.CompanyProfile {
 				ReviewsRate: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias:     "",
-				Employees: "",
+				Alias:     "sysdig",
+				Employees: "470",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Sysdig-EI_IE956879.11,17.htm",
@@ -2563,8 +2581,8 @@ func companiesPart3() []domain.CompanyProfile {
 				ReviewsRate: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias:     "",
-				Employees: "",
+				Alias:     "ebay",
+				Employees: "13,300",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-eBay-EI_IE7853.11,15.htm",
@@ -2709,8 +2727,8 @@ func companiesPart3() []domain.CompanyProfile {
 				ReviewsRate: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias:     "",
-				Employees: "",
+				Alias:     "axis-security",
+				Employees: "126",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Axis-Communications-EI_IE199800.11,30.htm",
@@ -2781,8 +2799,8 @@ func companiesPart3() []domain.CompanyProfile {
 				ReviewsRate: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias:     "",
-				Employees: "",
+				Alias:     "palta",
+				Employees: "90",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Palta-EI_IE6042331.11,16.htm",
@@ -2864,7 +2882,7 @@ func companiesPart3() []domain.CompanyProfile {
 				ReviewsRate: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias:     "",
+				Alias:     "bol",
 				Employees: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
@@ -2949,6 +2967,10 @@ func companiesPart3() []domain.CompanyProfile {
 				Login:    "",
 				Verified: false,
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "drw",
+				Employees: "1,500",
+			},
 			Languages: domain.Languages{
 				domain.Go:    {},
 				domain.Rust:  {},
@@ -2997,6 +3019,10 @@ func companiesPart3() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
 				Verified: false,
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "nice",
+				Employees: "6,750",
 			},
 			Languages: domain.Languages{
 				domain.Go:    {},
@@ -3052,6 +3078,10 @@ func companiesPart3() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
 				Verified: false,
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "maersk",
+				Employees: "38,060",
 			},
 			Languages: domain.Languages{
 				domain.Go:    {},

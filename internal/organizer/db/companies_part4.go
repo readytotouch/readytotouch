@@ -61,6 +61,10 @@ func companiesPart4() []domain.CompanyProfile {
 				AssociatedMembers: "2,433",
 				Verified:          true,
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "varonis",
+				Employees: "2,250",
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -191,6 +195,10 @@ func companiesPart4() []domain.CompanyProfile {
 				AssociatedMembers: "4,872",
 				Verified:          true,
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "wex",
+				Employees: "3,500",
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -241,6 +249,10 @@ func companiesPart4() []domain.CompanyProfile {
 				AssociatedMembers: "59,631",
 				Verified:          true,
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "comcast",
+				Employees: "164,000",
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 48,
@@ -290,6 +302,10 @@ func companiesPart4() []domain.CompanyProfile {
 				Employees:         "1K-5K",
 				AssociatedMembers: "2,091",
 				Verified:          true,
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "semrush",
+				Employees: "990",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -432,6 +448,10 @@ func companiesPart4() []domain.CompanyProfile {
 				AssociatedMembers: "263",
 				Verified:          true,
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "kiteworks",
+				Employees: "351",
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -515,6 +535,10 @@ func companiesPart4() []domain.CompanyProfile {
 				Employees:         "1K-5K",
 				AssociatedMembers: "1,122",
 				Verified:          true,
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "technology-innovation-institute",
+				Employees: "690",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -629,6 +653,10 @@ func companiesPart4() []domain.CompanyProfile {
 				AssociatedMembers: "2,581",
 				Verified:          true,
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "miracle-software-systems",
+				Employees: "2,500",
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -666,6 +694,10 @@ func companiesPart4() []domain.CompanyProfile {
 				Employees:         "10K+",
 				AssociatedMembers: "6,048",
 				Verified:          true,
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "collabera",
+				Employees: "6,250",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -910,6 +942,10 @@ func companiesPart4() []domain.CompanyProfile {
 				AssociatedMembers: "6,610",
 				Verified:          true,
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "getir",
+				Employees: "27,520",
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -1093,6 +1129,10 @@ func companiesPart4() []domain.CompanyProfile {
 				AssociatedMembers: "440",
 				Verified:          true,
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "openx",
+				Employees: "210",
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 4,
@@ -1129,6 +1169,10 @@ func companiesPart4() []domain.CompanyProfile {
 				Employees:         "10K+",
 				AssociatedMembers: "10,127",
 				Verified:          true,
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "lenskart",
+				Employees: "500",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -1167,6 +1211,10 @@ func companiesPart4() []domain.CompanyProfile {
 				Employees:         "10K+",
 				AssociatedMembers: "118,402",
 				Verified:          true,
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "lowes",
+				Employees: "118,840",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -1216,6 +1264,10 @@ func companiesPart4() []domain.CompanyProfile {
 				Employees:         "201-500",
 				AssociatedMembers: "542",
 				Verified:          true,
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "huntress",
+				Employees: "150",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -1300,6 +1352,10 @@ func companiesPart4() []domain.CompanyProfile {
 				Employees:         "1K-5K",
 				AssociatedMembers: "1,457",
 				Verified:          true,
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "waystar",
+				Employees: "1,040",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -1389,6 +1445,10 @@ func companiesPart4() []domain.CompanyProfile {
 				AssociatedMembers: "1,838",
 				Verified:          true,
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "eset",
+				Employees: "1,750",
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 2,
@@ -1435,6 +1495,10 @@ func companiesPart4() []domain.CompanyProfile {
 				Employees:         "51-200",
 				AssociatedMembers: "116",
 				Verified:          true,
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "praxent",
+				Employees: "70",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -1550,6 +1614,10 @@ func companiesPart4() []domain.CompanyProfile {
 				AssociatedMembers: "1,320",
 				Verified:          true,
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "ubiquiti",
+				Employees: "930",
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 4,
@@ -1599,6 +1667,10 @@ func companiesPart4() []domain.CompanyProfile {
 				Employees:         "51-200",
 				AssociatedMembers: "249",
 				Verified:          true,
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "textnow",
+				Employees: "180",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -1751,6 +1823,10 @@ func companiesPart4() []domain.CompanyProfile {
 				AssociatedMembers: "4,664",
 				Verified:          true,
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "exness",
+				Employees: "3,000",
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -1862,6 +1938,10 @@ func companiesPart4() []domain.CompanyProfile {
 				AssociatedMembers: "586",
 				Verified:          true,
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "power-factors",
+				Employees: "751",
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -1899,6 +1979,10 @@ func companiesPart4() []domain.CompanyProfile {
 				Employees:         "201-500",
 				AssociatedMembers: "360",
 				Verified:          true,
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "airspace",
+				Employees: "351",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -2014,6 +2098,10 @@ func companiesPart4() []domain.CompanyProfile {
 				AssociatedMembers: "959",
 				Verified:          true,
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "thousandeyes",
+				Employees: "840",
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 9,
@@ -2055,6 +2143,10 @@ func companiesPart4() []domain.CompanyProfile {
 				AssociatedMembers: "75,830",
 				Verified:          true,
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "us-bank",
+				Employees: "64,510",
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -2092,6 +2184,10 @@ func companiesPart4() []domain.CompanyProfile {
 				Employees:         "10K+",
 				AssociatedMembers: "12,935",
 				Verified:          true,
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "netapp",
+				Employees: "11,000",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -2151,6 +2247,10 @@ func companiesPart4() []domain.CompanyProfile {
 				Employees:         "5K-10K",
 				AssociatedMembers: "7,565",
 				Verified:          true,
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "trend-micro",
+				Employees: "7,000",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -2237,6 +2337,10 @@ func companiesPart4() []domain.CompanyProfile {
 				AssociatedMembers: "980",
 				Verified:          true,
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "kargo",
+				Employees: "67",
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -2274,6 +2378,10 @@ func companiesPart4() []domain.CompanyProfile {
 				Employees:         "501-1K",
 				AssociatedMembers: "1,253",
 				Verified:          true,
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "salesloft",
+				Employees: "740",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -2350,6 +2458,10 @@ func companiesPart4() []domain.CompanyProfile {
 				Employees:         "10K+",
 				AssociatedMembers: "42,800",
 				Verified:          true,
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "h-e-b",
+				Employees: "23,870",
 			},
 			Languages: domain.Languages{
 				domain.Go: {

@@ -94,6 +94,10 @@ func companiesPart8() []domain.CompanyProfile {
 				Login:    "grid-x",
 				Verified: true,
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "gridx",
+				Employees: "126",
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -232,6 +236,10 @@ func companiesPart8() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "thatgameco",
 				Verified: false,
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "thatgamecompany",
+				Employees: "150",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -416,6 +424,10 @@ func companiesPart8() []domain.CompanyProfile {
 				Login:    "",
 				Verified: false,
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "general-dynamics-mission-systems",
+				Employees: "8,450",
+			},
 			Languages: domain.Languages{
 				domain.Go: {},
 				domain.Rust: {
@@ -482,6 +494,10 @@ func companiesPart8() []domain.CompanyProfile {
 				Login:    "mondu-ai",
 				Verified: true,
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "mondu",
+				Employees: "145",
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -527,6 +543,10 @@ func companiesPart8() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "moneyforward",
 				Verified: true,
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "money-forward",
+				Employees: "1,250",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -574,6 +594,10 @@ func companiesPart8() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
 				Verified: false,
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "prizepicks",
+				Employees: "60",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -666,6 +690,10 @@ func companiesPart8() []domain.CompanyProfile {
 				Login:    "optimizely",
 				Verified: false,
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "optimizely",
+				Employees: "840",
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -711,6 +739,10 @@ func companiesPart8() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "OPSWAT",
 				Verified: false,
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "opswat",
+				Employees: "490",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -770,6 +802,10 @@ func companiesPart8() []domain.CompanyProfile {
 				Login:    "",
 				Verified: false,
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "videoamp",
+				Employees: "420",
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -816,6 +852,10 @@ func companiesPart8() []domain.CompanyProfile {
 				Login:    "broadcom",
 				Verified: true,
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "broadcom",
+				Employees: "37,990",
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -860,6 +900,10 @@ func companiesPart8() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
 				Verified: false,
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "toyota-usa",
+				Employees: "30,860",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -906,6 +950,10 @@ func companiesPart8() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
 				Verified: false,
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "about-you",
+				Employees: "690",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -1042,6 +1090,10 @@ func companiesPart8() []domain.CompanyProfile {
 				Login:    "",
 				Verified: false,
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "nordea",
+				Employees: "27,000",
+			},
 			Languages: domain.Languages{
 				domain.Go:   {},
 				domain.Rust: {},
@@ -1086,6 +1138,10 @@ func companiesPart8() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
 				Verified: false,
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "deutsche-borse",
+				Employees: "10,200",
 			},
 			Languages: domain.Languages{
 				domain.Go:   {},
@@ -1133,6 +1189,10 @@ func companiesPart8() []domain.CompanyProfile {
 				Login:    "",
 				Verified: false,
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "hootsuite",
+				Employees: "1,500",
+			},
 			Languages: domain.Languages{
 				domain.Go:   {},
 				domain.Rust: {},
@@ -1177,6 +1237,10 @@ func companiesPart8() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "hsbc",
 				Verified: true,
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "hsbc",
+				Employees: "205,340",
 			},
 			Languages: domain.Languages{
 				domain.Go:   {},
@@ -1226,6 +1290,10 @@ func companiesPart8() []domain.CompanyProfile {
 				Login:    "affinipay",
 				Verified: false,
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "affinipay",
+				Employees: "210",
+			},
 			Languages: domain.Languages{
 				domain.Go:   {},
 				domain.Rust: {},
@@ -1274,6 +1342,10 @@ func companiesPart8() []domain.CompanyProfile {
 				Login:    "vivid-money",
 				Verified: false,
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "vivid-money",
+				Employees: "200",
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -1318,6 +1390,10 @@ func companiesPart8() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "idemia",
 				Verified: false,
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "idemia",
+				Employees: "15,000",
 			},
 			Languages: domain.Languages{
 				domain.Go:   {},
@@ -1364,6 +1440,10 @@ func companiesPart8() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
 				Verified: false,
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "ninjatrader",
+				Employees: "180",
 			},
 			Languages: domain.Languages{
 				domain.Go:   {},
@@ -1458,6 +1538,10 @@ func companiesPart8() []domain.CompanyProfile {
 				Login:    "topgolf",
 				Verified: true,
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "topgolf",
+				Employees: "8,250",
+			},
 			Languages: domain.Languages{
 				domain.Go:   {},
 				domain.Rust: {},
@@ -1502,6 +1586,10 @@ func companiesPart8() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "hapag-lloyd",
 				Verified: false,
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "hapag-lloyd",
+				Employees: "13,117",
 			},
 			Languages: domain.Languages{
 				domain.Go:   {},
@@ -1640,6 +1728,10 @@ func companiesPart8() []domain.CompanyProfile {
 				Login:    "",
 				Verified: false,
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "nvent",
+				Employees: "9,900",
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -1718,6 +1810,10 @@ func companiesPart8() []domain.CompanyProfile {
 				Login:    "",
 				Verified: false,
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "pdf-solutions",
+				Employees: "420",
+			},
 			Languages: domain.Languages{
 				domain.Go:   {},
 				domain.Rust: {},
@@ -1764,6 +1860,10 @@ func companiesPart8() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
 				Verified: false,
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "quantexa",
+				Employees: "450",
 			},
 			Languages: domain.Languages{
 				domain.Go:   {},
@@ -1855,6 +1955,10 @@ func companiesPart8() []domain.CompanyProfile {
 				Login:    "",
 				Verified: false,
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "qad",
+				Employees: "2,250",
+			},
 			Languages: domain.Languages{
 				domain.Go:   {},
 				domain.Rust: {},
@@ -1909,6 +2013,10 @@ func companiesPart8() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "new-work",
 				Verified: false,
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "new-work-se",
+				Employees: "550",
 			},
 			Languages: domain.Languages{
 				domain.Go:   {},
@@ -2001,6 +2109,10 @@ func companiesPart8() []domain.CompanyProfile {
 				Login:    "",
 				Verified: false,
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "walmart",
+				Employees: "",
+			},
 			Languages: domain.Languages{
 				domain.Go:   {},
 				domain.Rust: {},
@@ -2045,6 +2157,10 @@ func companiesPart8() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "MagniteEngineering",
 				Verified: false,
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "magnite",
+				Employees: "510",
 			},
 			Languages: domain.Languages{
 				domain.Go:   {},
@@ -2094,6 +2210,10 @@ func companiesPart8() []domain.CompanyProfile {
 				Login:    "prezi",
 				Verified: false,
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "prezi",
+				Employees: "420",
+			},
 			Languages: domain.Languages{
 				domain.Go:   {},
 				domain.Rust: {},
@@ -2138,6 +2258,10 @@ func companiesPart8() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "yuno-payments",
 				Verified: false,
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "yuno",
+				Employees: "420",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -2232,6 +2356,10 @@ func companiesPart8() []domain.CompanyProfile {
 				Login:    "pexip",
 				Verified: true,
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "pexip",
+				Employees: "600",
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -2276,6 +2404,10 @@ func companiesPart8() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "vinted",
 				Verified: true,
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "vinted",
+				Employees: "1,500",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -2325,6 +2457,10 @@ func companiesPart8() []domain.CompanyProfile {
 				Login:    "bigcommerce",
 				Verified: true,
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "bigcommerce",
+				Employees: "1,000",
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -2372,6 +2508,10 @@ func companiesPart8() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "grab",
 				Verified: true,
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "grab",
+				Employees: "36,080",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
