@@ -384,6 +384,7 @@ func compareAliases(l, r string) bool {
 			"global",
 			"network",
 			"systems",
+			"limited",
 			"corporation",
 			"engineering",
 			"technologies",
