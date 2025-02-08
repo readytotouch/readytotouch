@@ -735,7 +735,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4115290108/":   567, // greengot
 		"https://www.linkedin.com/jobs/view/4120580858/":   671, // greengot
 		"https://www.linkedin.com/jobs/view/4117172166/":   583, // auctiontechnologygroup
-		"https://www.linkedin.com/jobs/view/4118507935/":   584, // gridX
+		"https://www.linkedin.com/jobs/view/4118507935/":   584, // gridx
 		"https://www.linkedin.com/jobs/view/4119005072/":   585, // evolve-vacation-rental
 		"https://www.linkedin.com/jobs/view/4121276014/":   586, // strangebee
 		"https://www.linkedin.com/jobs/view/4120264764/":   587, // thatgamecompany

@@ -5410,8 +5410,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified: false,
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias:     "salesforce",
-				Employees: "65,800",
+				Alias:     "",
+				Employees: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -8011,8 +8011,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified: false,
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias:     "isovalent",
-				Employees: "126",
+				Alias:     "",
+				Employees: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Nine-Entertainment-EI_IE229827.11,29.htm",
@@ -8074,6 +8074,10 @@ func companiesPart1() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "isovalent",
 				Verified: true,
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "isovalent",
+				Employees: "126",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Isovalent-EI_IE3180689.11,20.htm",
