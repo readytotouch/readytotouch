@@ -90,3 +90,48 @@ function associatedMembers() {
 
     return "";
 }
+
+{
+    function getParentHierarchy(node) {
+        const hierarchy = [];
+        let current = node.parentNode;
+
+        console.log(current);
+
+        while (current && current.nodeType === Node.ELEMENT_NODE) {
+            hierarchy.push(current.tagName);
+            current = current.parentNode;
+        }
+
+        return hierarchy.reverse().join(" > ");
+    }
+
+    function searchTextInDOM(text) {
+        const matches = [];
+
+        function traverseNodes(node) {
+            if (node.nodeType === Node.TEXT_NODE && node.nodeValue.includes(text)) {
+                matches.push(node);
+            }
+
+            node.childNodes.forEach(traverseNodes);
+        }
+
+        traverseNodes(document.body);
+
+        if (matches.length > 0) {
+            console.log(`Знайдено ${matches.length} збігів для "${text}":`);
+            matches.forEach((node, index) => {
+                console.log(`${index + 1}: ${node.nodeValue.trim()}`);
+                console.log(`Батьківська структура: ${getParentHierarchy(node)}`);
+            });
+        } else {
+            console.log(`Текст "${text}" не знайдено.`);
+        }
+    }
+
+    // https://www.linkedin.com/company/google/
+    // 1441     Google
+    // 16140    YouTube
+    searchTextInDOM("16140");
+}
