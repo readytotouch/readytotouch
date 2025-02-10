@@ -6,11 +6,11 @@ document.body.addEventListener("keydown", (event) => {
         const goLinkedInProfileColumns = `
 				ID:                0,
 				Alias:             "${parseVanityName(window.location.href)}",
-				Name:              "${document.querySelector("h1").innerText}",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				Name:              "${document.querySelector("h1").innerText.trim()}",
+				Followers:         "${followers()}",
+				Employees:         "${employees()}",
+				AssociatedMembers: "${associatedMembers()}",
+				Verified:          ${document.querySelectorAll('a[aria-label="Verified"]').length > 0 ? "true" : "false"},
         `
 
         navigator.clipboard.writeText(goLinkedInProfileColumns)
@@ -47,4 +47,46 @@ function parseVanityName(url) {
     }
 
     return parsedUrl.pathname.substring(prefix.length, end);
+}
+
+function followers() {
+    const elements = document.querySelectorAll("div.org-top-card-summary-info-list__info-item");
+
+    for (const element of elements) {
+        const text = element.textContent.trim();
+
+        if (text.endsWith("followers")) {
+            return text.replace("followers", "").trim();
+        }
+    }
+
+    return "";
+}
+
+function employees() {
+    const elements = document.querySelectorAll("a.org-top-card-summary-info-list__info-item");
+
+    for (const element of elements) {
+        const text = element.textContent.trim();
+
+        if (text.endsWith("employees")) {
+            return text.replace("employees", "").trim();
+        }
+    }
+
+    return "";
+}
+
+function associatedMembers() {
+    const elements = document.querySelectorAll("h2");
+
+    for (const element of elements) {
+        const text = element.textContent.trim();
+
+        if (text.endsWith("associated members")) {
+            return text.replace("associated members", "").trim();
+        }
+    }
+
+    return "";
 }
