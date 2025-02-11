@@ -61,6 +61,15 @@ func companiesPart8() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4148683119/",
+							Date:                 mustDate("2025-02-10"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -2272,7 +2281,7 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4139299697/",
-							Date:                 mustDate("2025-02-05"),
+							Date:                 mustDate("2025-02-08"), // mustDate("2025-02-05"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -2474,6 +2483,15 @@ func companiesPart8() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Software Engineer — Python/Go",
+							ShortDescription:     "B2B",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4148659905/",
+							Date:                 mustDate("2025-02-10"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -2536,6 +2554,186 @@ func companiesPart8() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Developer of app for ride-hailing, food delivery, and digital payment services on mobile devices",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "A1 Bulgaria",
+			Website: "https://www.a1.bg/bg",
+			Careers: "https://jobs.a1.com/bg/",
+			About:   "https://www.a1.bg/a1-overview-en",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                18367062,
+				Alias:             "a1bulgaria",
+				Name:              "A1 Bulgaria",
+				Followers:         "27K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "2,073",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Go Developer",
+							ShortDescription:     "Business Process Automation",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4145776890/",
+							Date:                 mustDate("2025-02-07"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Is a telecommunications company",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Qlik",
+			Website: "https://www.qlik.com/",
+			Careers: "https://www.qlik.com/us/company/careers",
+			About:   "https://www.qlik.com/us/why-qlik-is-different",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                10162,
+				Alias:             "qlik",
+				Name:              "Qlik",
+				Followers:         "257K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "4,095",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "qlik-oss",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Junior Backend Developer (Java/Go)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4148284507/",
+							Date:                 mustDate("2025-02-10"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Company specializing in software development for data integration, analytics, and artificial intelligence.",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Ryanair — Europe's Favourite Airline",
+			Website: "https://www.ryanair.com/",
+			Careers: "https://careers.ryanair.com/",
+			About:   "https://corporate.ryanair.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                16584,
+				Alias:             "ryanair",
+				Name:              "Ryanair — Europe's Favourite Airline",
+				Followers:         "812K",
+				Employees:         "10K+",
+				AssociatedMembers: "19,454",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Graduate Cloud Software Developer (Java/Go)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4145691848/",
+							Date:                 mustDate("2025-02-06"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Europe's  largest low cost — airline company",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Jamf",
+			Website: "https://www.jamf.com/",
+			Careers: "https://www.jamf.com/about/careers/",
+			About:   "https://www.jamf.com/about/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                717074,
+				Alias:             "jamf-software",
+				Name:              "Jamf",
+				Followers:         "100K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "2,637",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer II (Java/Go)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4144388320/",
+							Date:                 mustDate("2025-02-06"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Software company specializing in the management and security of Apple devices",
 		},
 
 		// Template short
