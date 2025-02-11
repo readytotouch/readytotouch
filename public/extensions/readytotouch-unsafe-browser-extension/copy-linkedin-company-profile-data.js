@@ -2,9 +2,13 @@ console.log("LinkedIn company profile data copy extension loaded");
 
 // Ctrl + Shift + Y
 document.body.addEventListener("keydown", (event) => {
-    if (event.ctrlKey && event.shiftKey && event.key === "Y") {
+    // Y is for English, Н is for Ukrainian
+    if (event.ctrlKey && event.shiftKey && (event.key === "Y" || event.key === "Н")) {
+        const [companyId, companyIds] = id();
+
         const goLinkedInProfileColumns = `
-				ID:                0,
+				ID:                ${companyId},
+				IDs:               ${toGoInt64(companyIds)},
 				Alias:             "${parseVanityName(window.location.href)}",
 				Name:              "${document.querySelector("h1").innerText.trim()}",
 				Followers:         "${followers()}",
@@ -91,47 +95,61 @@ function associatedMembers() {
     return "";
 }
 
-{
-    function getParentHierarchy(node) {
-        const hierarchy = [];
-        let current = node.parentNode;
+function id() {
+    const $codes = document.querySelectorAll("code");
 
-        console.log(current);
+    for (const $code of $codes) {
+        const text = $code.textContent.trim();
 
-        while (current && current.nodeType === Node.ELEMENT_NODE) {
-            hierarchy.push(current.tagName);
-            current = current.parentNode;
-        }
+        try {
+            const json = JSON.parse(text);
+            const ids = json?.data?.data?.organizationDashCompaniesByUniversalName?.["*elements"];
 
-        return hierarchy.reverse().join(" > ");
-    }
+            if (Array.isArray(ids) && ids.length > 0) {
+                const id = parseInt(ids[0].replace("urn:li:fsd_company:", ""), 10);
 
-    function searchTextInDOM(text) {
-        const matches = [];
-
-        function traverseNodes(node) {
-            if (node.nodeType === Node.TEXT_NODE && node.nodeValue.includes(text)) {
-                matches.push(node);
+                return [id, affiliatedOrganizationsIds(id, json)];
             }
+        } catch (error) {
 
-            node.childNodes.forEach(traverseNodes);
-        }
-
-        traverseNodes(document.body);
-
-        if (matches.length > 0) {
-            console.log(`Знайдено ${matches.length} збігів для "${text}":`);
-            matches.forEach((node, index) => {
-                console.log(`${index + 1}: ${node.nodeValue.trim()}`);
-                console.log(`Батьківська структура: ${getParentHierarchy(node)}`);
-            });
-        } else {
-            console.log(`Текст "${text}" не знайдено.`);
         }
     }
 
-    // https://www.linkedin.com/company/google/
-    // 1441     Google
-    // 16140    YouTube
-    searchTextInDOM("16140");
+    return [0, []];
+}
+
+function affiliatedOrganizationsIds(id, json) {
+    const result = [];
+
+    const elements = json?.included;
+
+    if (Array.isArray(elements)) {
+        for (const element of elements) {
+            const ids = element?.affiliatedOrganizationsByJobs?.["*elements"];
+
+            if (Array.isArray(ids)) {
+                for (const id of ids) {
+                    result.push(parseInt(id.replace("urn:li:fsd_company:", ""), 10));
+                }
+            }
+        }
+    }
+
+    if (result.length === 0) {
+        return [id];
+    }
+
+    result.push(id);
+
+    result.sort((a, b) => a - b)
+
+    return result;
+}
+
+function toGoInt64(ids) {
+    if (ids.length === 0) {
+        return "nil";
+    }
+
+    return `[]int64{${ids.join(", ")}}`;
 }
