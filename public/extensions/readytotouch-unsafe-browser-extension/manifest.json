@@ -15,6 +15,10 @@
     {
       "matches": ["<all_urls>"],
       "js": ["content.js"]
+    },
+    {
+      "matches": ["https://www.linkedin.com/company/*"],
+      "js": ["copy-linkedin-company-profile-data.js"]
     }
   ]
 }
