@@ -2565,6 +2565,7 @@ func companiesPart8() []domain.CompanyProfile {
 			About:   "https://www.a1.bg/a1-overview-en",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                18367062,
+				IDs:               nil,
 				Alias:             "a1bulgaria",
 				Name:              "A1 Bulgaria",
 				Followers:         "27K",
@@ -2599,6 +2600,7 @@ func companiesPart8() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Is a telecommunications company",
+			Ignore:           true, // The company description should be in English
 		},
 
 		{
@@ -2610,11 +2612,12 @@ func companiesPart8() []domain.CompanyProfile {
 			About:   "https://www.qlik.com/us/why-qlik-is-different",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                10162,
+				IDs:               []int{10162, 65485, 18212129},
 				Alias:             "qlik",
 				Name:              "Qlik",
 				Followers:         "257K",
 				Employees:         "1K-5K",
-				AssociatedMembers: "4,095",
+				AssociatedMembers: "4,099",
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -2649,17 +2652,18 @@ func companiesPart8() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "Ryanair — Europe's Favourite Airline",
+			Name:    "Ryanair",
 			Website: "https://www.ryanair.com/",
 			Careers: "https://careers.ryanair.com/",
 			About:   "https://corporate.ryanair.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                16584,
+				IDs:               nil,
 				Alias:             "ryanair",
-				Name:              "Ryanair — Europe's Favourite Airline",
+				Name:              "Ryanair - Europe's Favourite Airline",
 				Followers:         "812K",
 				Employees:         "10K+",
-				AssociatedMembers: "19,454",
+				AssociatedMembers: "19,464",
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -2700,6 +2704,7 @@ func companiesPart8() []domain.CompanyProfile {
 			About:   "https://www.jamf.com/about/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                717074,
+				IDs:               nil,
 				Alias:             "jamf-software",
 				Name:              "Jamf",
 				Followers:         "100K",

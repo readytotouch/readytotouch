@@ -771,11 +771,12 @@ func companiesPart4() []domain.CompanyProfile {
 			Blog:    "https://swissmarketplace.group/tech-blog/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                76994292,
+				IDs:               []int{14415749, 76994292, 103188619},
 				Alias:             "smg-marketplace",
 				Name:              "SMG Swiss Marketplace Group",
-				Followers:         "23K",
+				Followers:         "24K",
 				Employees:         "501-1K",
-				AssociatedMembers: "620",
+				AssociatedMembers: "636",
 				Verified:          true,
 			},
 			Languages: domain.Languages{
@@ -830,11 +831,12 @@ func companiesPart4() []domain.CompanyProfile {
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                750470,
+				IDs:               nil,
 				Alias:             "hornetsecurity",
 				Name:              "Hornetsecurity",
-				Followers:         "18K",
+				Followers:         "20K",
 				Employees:         "501-1K",
-				AssociatedMembers: "398",
+				AssociatedMembers: "414",
 				Verified:          true,
 			},
 			Languages: domain.Languages{
@@ -842,10 +844,13 @@ func companiesPart4() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Golang Software Engineer",
-							ShortDescription: "Security Lab",
-							URL:              "https://www.linkedin.com/jobs/view/4089330917/",
-							Date:             mustDate("2024-12-03"),
+							Title:                "Golang Software Engineer",
+							ShortDescription:     "Security Lab",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4089330917/",
+							Date:                 mustDate("2024-12-03"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 						{
 							Title:                "Golang Software Engineer",
@@ -1011,7 +1016,7 @@ func companiesPart4() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4102013036/",
-							Date:                 mustDate("2025-02-007"), // mustDate("2025-02-05"), // mustDate("2025-01-20"), // mustDate("2024-12-16"),
+							Date:                 mustDate("2025-02-07"), // mustDate("2025-02-05"), // mustDate("2025-01-20"), // mustDate("2024-12-16"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -1797,11 +1802,12 @@ func companiesPart4() []domain.CompanyProfile {
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                33233160,
+				IDs:               nil,
 				Alias:             "vustheenglishcenter",
 				Name:              "VUS - The English Center",
-				Followers:         "13K",
+				Followers:         "14K",
 				Employees:         "1K-5K",
-				AssociatedMembers: "1,987",
+				AssociatedMembers: "1,992",
 				Verified:          true,
 			},
 			Languages: domain.Languages{
@@ -1809,13 +1815,16 @@ func companiesPart4() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Senior Backend Developer (Golang)",
-							ShortDescription: "3 years exp",
-							URL:              "https://www.linkedin.com/jobs/view/4089423781/",
-							Date:             mustDate("2024-12-10"),
+							Title:                "Senior Backend Developer (Golang)",
+							ShortDescription:     "3 years exp",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4089423781/",
+							Date:                 mustDate("2024-12-10"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 						{
-							Title:                "Senior Backend Developer — Goland",
+							Title:                "Senior Backend Developer — Golang",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4148839012/",

@@ -1437,10 +1437,13 @@ func companiesPart2() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 3,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Software Engineer (Python/Go)",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4077489876/",
-							Date:             mustDate("2024-11-17"),
+							Title:                "Software Engineer (Python/Go)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4077489876/",
+							Date:                 mustDate("2024-11-17"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 						{
 							Title:                "Software Engineer (Python/Go)",
