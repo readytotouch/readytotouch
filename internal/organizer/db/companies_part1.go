@@ -5654,15 +5654,6 @@ func companiesPart1() []domain.CompanyProfile {
 							WithSalary:           true,                   // €70,000 to €160,000 EUR
 							Remote:               false,
 						},
-						{
-							Title:                "Senior Full Stack Engineer (Go, Angular)",
-							ShortDescription:     "Flows Team",
-							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate("2025-02-07"),
-							WithSalary:           false,
-							Remote:               false,
-						},
 					},
 				},
 				domain.Rust:    {},
