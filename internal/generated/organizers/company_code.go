@@ -615,6 +615,9 @@ var (
 		"vinted":                              612, // Vinted
 		"bigcommerce":                         613, // BigCommerce
 		"grabapp":                             614, // Grab
+		"qlik":                                615, // Qlik
+		"ryanair":                             616, // Ryanair - Europe&#39;s Favourite Airline
+		"jamf-software":                       617, // Jamf
 
 	}
 )

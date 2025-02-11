@@ -4,18 +4,16 @@ console.log("LinkedIn company profile data copy extension loaded");
 document.body.addEventListener("keydown", (event) => {
     // Y is for English, Н is for Ukrainian
     if (event.ctrlKey && event.shiftKey && (event.key === "Y" || event.key === "Н")) {
-        const [companyId, companyIds] = id();
+        const [mainId, affiliatedIds] = ids();
 
-        const goLinkedInProfileColumns = `
-				ID:                ${companyId},
-				IDs:               ${toGoInt64(companyIds)},
+        const goLinkedInProfileColumns = `				ID:                ${mainId},
+				IDs:               ${toGoInts(affiliatedIds)},
 				Alias:             "${parseVanityName(window.location.href)}",
 				Name:              "${document.querySelector("h1").innerText.trim()}",
 				Followers:         "${followers()}",
 				Employees:         "${employees()}",
 				AssociatedMembers: "${associatedMembers()}",
-				Verified:          ${document.querySelectorAll('a[aria-label="Verified"]').length > 0 ? "true" : "false"},
-        `
+				Verified:          ${document.querySelectorAll('a[aria-label="Verified"]').length > 0 ? "true" : "false"},`
 
         navigator.clipboard.writeText(goLinkedInProfileColumns)
             .then(() => console.log("Page info copied to clipboard:", goLinkedInProfileColumns))
@@ -95,7 +93,7 @@ function associatedMembers() {
     return "";
 }
 
-function id() {
+function ids() {
     const $codes = document.querySelectorAll("code");
 
     for (const $code of $codes) {
@@ -118,7 +116,7 @@ function id() {
     return [0, []];
 }
 
-function affiliatedOrganizationsIds(id, json) {
+function affiliatedOrganizationsIds(mainId, json) {
     const result = [];
 
     const elements = json?.included;
@@ -129,27 +127,30 @@ function affiliatedOrganizationsIds(id, json) {
 
             if (Array.isArray(ids)) {
                 for (const id of ids) {
-                    result.push(parseInt(id.replace("urn:li:fsd_company:", ""), 10));
+                    const affiliatedId = parseInt(id.replace("urn:li:fsd_company:", ""), 10);
+                    if (affiliatedId !== mainId) {
+                        result.push(affiliatedId);
+                    }
                 }
             }
         }
     }
 
     if (result.length === 0) {
-        return [id];
+        return [];
     }
 
-    result.push(id);
+    result.push(mainId);
 
     result.sort((a, b) => a - b)
 
     return result;
 }
 
-function toGoInt64(ids) {
+function toGoInts(ids) {
     if (ids.length === 0) {
         return "nil";
     }
 
-    return `[]int64{${ids.join(", ")}}`;
+    return `[]int{${ids.join(", ")}}`;
 }
