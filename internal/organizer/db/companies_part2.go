@@ -3988,7 +3988,7 @@ func companiesPart2() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Principal / Lead Software Engineer - Rust",
+							Title:                "Principal / Lead Software Engineer — Rust",
 							ShortDescription:     "Algorithmic and Mathematics",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4119774316/",
@@ -4122,16 +4122,22 @@ func companiesPart2() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Software Engineer — Go",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4032752026/",
-							Date:             mustDate("2024-10-25"),
+							Title:                "Software Engineer — Go",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4032752026/",
+							Date:                 mustDate("2024-10-25"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 						{
-							Title:            "Go Backend Engineer",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4128907541/",
-							Date:             mustDate("2025-01-18"),
+							Title:                "Go Backend Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4128907541/",
+							Date:                 mustDate("2025-01-18"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 						{
 							Title:                "Full Stack Engineer — Golang",
@@ -4671,16 +4677,22 @@ func companiesPart2() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 22,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Senior Staff Software Engineer, Golang",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4077219379/",
-							Date:             mustDate("2024-11-19"),
+							Title:                "Senior Staff Software Engineer, Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4077219379/",
+							Date:                 mustDate("2024-11-19"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 						{
-							Title:            "Senior Full Stack Engineer — Flows Team (Go & Angular)",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4102677424/",
-							Date:             mustDate("2025-02-07"), // mustDate("2025-01-10"), // mustDate("2024-12-19"),
+							Title:                "Senior Full Stack Engineer — Flows Team (Go & Angular)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4102677424/",
+							Date:                 mustDate("2025-02-07"), // mustDate("2025-01-10"), // mustDate("2024-12-19"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 						{
 							Title:                "Software Engineer — Java/Golang",
@@ -6893,10 +6905,13 @@ func companiesPart2() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Senior Rust Engineer",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4064837533/",
-							Date:             mustDate("2024-11-04"),
+							Title:                "Senior Rust Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4064837533/",
+							Date:                 mustDate("2024-11-04"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 						{
 							Title:                "Rust Engineer",
