@@ -203,10 +203,13 @@ func companiesPart3() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 11,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Senior C++ / Go Software Engineer",
-							ShortDescription: "Experience with Go or a willingness to learn on the job",
-							URL:              "https://www.linkedin.com/jobs/view/3951768378/",
-							Date:             mustDate("2024-12-20"),
+							Title:                "Senior C++ / Go Software Engineer",
+							ShortDescription:     "Experience with Go or a willingness to learn on the job",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/3951768378/",
+							Date:                 mustDate("2024-12-20"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 						{
 							Title:                "Senior Go Developer",

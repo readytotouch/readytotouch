@@ -70,10 +70,13 @@ func companiesPart4() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Backend Developer (Python, Go)",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4093559031/",
-							Date:             mustDate("2024-12-10"),
+							Title:                "Backend Developer (Python, Go)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4093559031/",
+							Date:                 mustDate("2024-12-10"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 						{
 							Title:                "Senior Go Engineer",
@@ -82,6 +85,7 @@ func companiesPart4() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4081442058/",
 							Date:                 mustDate("2025-01-25"), // mustDate("2025-01-03"),
 							WithSalary:           false,
+							Remote:               false,
 						},
 						{
 							Title:                "Senior Go Engineer",
