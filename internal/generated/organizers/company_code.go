@@ -618,6 +618,9 @@ var (
 		"qlik":                                615, // Qlik
 		"ryanair":                             616, // Ryanair - Europe&#39;s Favourite Airline
 		"jamf-software":                       617, // Jamf
+		"legalzoom":                           618, // LegalZoom
+		"ncratleos":                           619, // NCR Atleos
+		"knowbe4":                             620, // KnowBe4
 
 	}
 )
