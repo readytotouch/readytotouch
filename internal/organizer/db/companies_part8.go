@@ -617,7 +617,7 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4124190818/",
-							Date:                 mustDate("2025-01-15"),
+							Date:                 mustDate("2025-02-12"), // mustDate("2025-01-15"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -826,6 +826,15 @@ func companiesPart8() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4122141025/",
 							Date:                 mustDate("2025-02-04"), // mustDate("2025-01-14"),
 							WithSalary:           true,                   // This position has a minimum salary of $150,000- $170,000
+							Remote:               true,
+						},
+						{
+							Title:                "Senior Full Stack Engineer — HTMX / Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4150889365/",
+							Date:                 mustDate("2025-02-12"),
+							WithSalary:           true, // This position has a minimum salary of $150,000- $170,000
 							Remote:               true,
 						},
 					},
@@ -2739,6 +2748,144 @@ func companiesPart8() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Software company specializing in the management and security of Apple devices",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "LegalZoom",
+			Website: "https://www.legalzoom.com/",
+			Careers: "https://www.legalzoom.com/careers",
+			About:   "https://www.legalzoom.com/about-us",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                164705,
+				Alias:             "legalzoom",
+				Name:              "LegalZoom",
+				Followers:         "71K",
+				Employees:         "501-1K",
+				AssociatedMembers: "1,365",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "legalzoom",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Principal Backend Engineer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4148714692/",
+							Date:                 mustDate("2025-02-12"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Is an American online legal technology and services company",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "NCR Atleos",
+			Website: "https://www.ncratleos.com/",
+			Careers: "https://www.ncratleos.com/careers",
+			About:   "https://www.ncratleos.com/about-us",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                96148266,
+				Alias:             "ncratleos",
+				Name:              "NCR Atleos",
+				Followers:         "72K",
+				Employees:         "10K+",
+				AssociatedMembers: "6,905",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer (C++ / Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4148124360/",
+							Date:                 mustDate("2025-02-12"),
+							WithSalary:           true, // Annual Incentive Base Range 48,000 - 60,000 - 72,000 GBP
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American FinTech company",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "KnowBe4",
+			Website: "https://www.knowbe4.com/",
+			Careers: "https://www.knowbe4.com/careers",
+			About:   "https://www.knowbe4.com/about-us",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2225282,
+				Alias:             "knowbe4",
+				Name:              "KnowBe4",
+				Followers:         "292K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "2,055",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "knowbe4",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer (Python, C#, Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4150365284/",
+							Date:                 mustDate("2025-02-11"),
+							WithSalary:           true, // for this position ranges from $130,000-$150,000
+							Remote:               true,
+						},
+					},
+				},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Cyber security awareness training platform",
 		},
 
 		// Template short

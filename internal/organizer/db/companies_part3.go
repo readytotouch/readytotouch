@@ -217,6 +217,15 @@ func companiesPart3() []domain.CompanyProfile {
 							WithSalary:           true, // Minimum salary for this position, which is € 56,000 gross per year based on full-time employment. We offer a higher salary in line with qualifications and experience
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Go Developer",
+							ShortDescription:     "Kubernetes",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4129464627/",
+							Date:                 mustDate("2025-02-12"),
+							WithSalary:           true, // 16.000 - 24.000 PLN gross per month
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
