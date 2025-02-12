@@ -203,10 +203,13 @@ func companiesPart3() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 11,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Senior C++ / Go Software Engineer",
-							ShortDescription: "Experience with Go or a willingness to learn on the job",
-							URL:              "https://www.linkedin.com/jobs/view/3951768378/",
-							Date:             mustDate("2024-12-20"),
+							Title:                "Senior C++ / Go Software Engineer",
+							ShortDescription:     "Experience with Go or a willingness to learn on the job",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/3951768378/",
+							Date:                 mustDate("2024-12-20"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 						{
 							Title:                "Senior Go Developer",
@@ -215,6 +218,15 @@ func companiesPart3() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4104352080/",
 							Date:                 mustDate("2025-01-12"),
 							WithSalary:           true, // Minimum salary for this position, which is € 56,000 gross per year based on full-time employment. We offer a higher salary in line with qualifications and experience
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Go Developer",
+							ShortDescription:     "Kubernetes",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4129464627/",
+							Date:                 mustDate("2025-02-12"),
+							WithSalary:           true, // 16.000 - 24.000 PLN gross per month
 							Remote:               false,
 						},
 					},
