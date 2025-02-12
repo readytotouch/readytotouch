@@ -72,7 +72,7 @@ func streamorganizersFooter(qw422016 *qt422016.Writer) {
         </div>
       </div>
       <div class="footer__copyrights">
-        &copy; 2024 Yaroslav Podorvanov
+        &copy; 2025 Yaroslav Podorvanov
         <img width="24"
              height="24"
              class="footer__flag-ua"
