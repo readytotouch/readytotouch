@@ -125,24 +125,31 @@ func companiesPart3() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Senior Software Engineer, Back End (Golang or Scala, AWS)",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4060428354/",
-							Date:             mustDate("2024-11-01"),
+							Title:                "Senior Software Engineer, Back End (Golang or Scala, AWS)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4060428354/",
+							Date:                 mustDate("2024-11-01"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 						{
-							Title:            "Senior Lead Data Engineer (Python/Scala, Spark, AWS)",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4129780907/",
-							Date:             mustDate("2025-01-18"),
-							WithSalary:       true, // $225,400 — $257,200 per year
+							Title:                "Senior Lead Data Engineer (Python/Scala, Spark, AWS)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4129780907/",
+							Date:                 mustDate("2025-01-18"),
+							WithSalary:           true, // $225,400 — $257,200 per year
+							Remote:               false,
 						},
 						{
-							Title:            "Lead Data Engineer (Python/Scala, Spark, AWS)",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4129783447/",
-							Date:             mustDate("2025-01-18"),
-							WithSalary:       true, // $193,400 — $220,700 per year
+							Title:                "Lead Data Engineer (Python/Scala, Spark, AWS)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4129783447/",
+							Date:                 mustDate("2025-01-18"),
+							WithSalary:           true, // $193,400 — $220,700 per year
+							Remote:               false,
 						},
 						{
 							Title:                "Senior Software Engineer, Back End (Golang or Scala, AWS)",
@@ -3137,10 +3144,13 @@ func companiesPart3() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Elixir Software Engineer",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4056139785/",
-							Date:             mustDate("2024-12-12"),
+							Title:                "Elixir Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4056139785/",
+							Date:                 mustDate("2024-12-12"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 						{
 							Title:                "Senior Elixir Software Engineer — Energy Transition",
