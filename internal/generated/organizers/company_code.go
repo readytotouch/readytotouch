@@ -621,6 +621,12 @@ var (
 		"legalzoom":                           618, // LegalZoom
 		"ncratleos":                           619, // NCR Atleos
 		"knowbe4":                             620, // KnowBe4
+		"seldon":                              621, // Seldon
+		"rockstar-games":                      622, // Rockstar Games
+		"kiwi.com":                            623, // Kiwi.com
+		"tenableinc":                          624, // Tenable
+		"ramp":                                625, // Ramp
+		"usehatchapp":                         626, // Hatch
 
 	}
 )
