@@ -1049,7 +1049,7 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4119784307/",
-							Date:                 mustDate("2025-01-10"),
+							Date:                 mustDate("2025-02-07"), // mustDate("2025-01-10"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3120,6 +3120,99 @@ func companiesPart8() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "American cybersecurity company",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Ramp",
+			Website: "https://ramp.com/",
+			Careers: "https://ramp.com/careers",
+			About:   "https://ramp.com/about-us",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1406226,
+				Alias:             "ramp",
+				Name:              "Ramp",
+				Followers:         "168K",
+				Employees:         "501-1K",
+				AssociatedMembers: "1,454",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go:    {},
+				domain.Rust:  {},
+				domain.Zig:   {},
+				domain.Scala: {},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer | Elixir",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4137064133/",
+							Date:                 mustDate("2025-01-30"),
+							WithSalary:           true, // $188.000 - $258.000 per year
+							Remote:               true,
+						},
+					},
+				},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American FinTech company",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Hatch",
+			Website: "https://www.usehatchapp.com/",
+			Careers: "https://www.usehatchapp.com/careers",
+			About:   "https://www.usehatchapp.com/why-hatch",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                11433680,
+				Alias:             "usehatchapp",
+				Name:              "Hatch",
+				Followers:         "10K",
+				Employees:         "11-50",
+				AssociatedMembers: "89",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "Hatch1fy",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go:    {},
+				domain.Rust:  {},
+				domain.Zig:   {},
+				domain.Scala: {},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Elixir Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4130659582/",
+							Date:                 mustDate("2025-01-23"),
+							WithSalary:           true, // $140.000 - $200.000 per year
+							Remote:               true,
+						},
+					},
+				},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Communication AI platform for businesses",
 		},
 
 		// Template short

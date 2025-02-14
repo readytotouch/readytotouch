@@ -1089,7 +1089,7 @@ func companiesPart4() []domain.CompanyProfile {
 							Title:            "Backend Engineer (Elixir)",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/3884244005/",
-							Date:             mustDate("2025-01-20"), // mustDate("2024-11-29"),
+							Date:             mustDate("2025-02-07"), // mustDate("2025-01-20"), // mustDate("2024-11-29"),
 						},
 						{
 							Title:                "Senior Backend Engineer (Elixir)",
