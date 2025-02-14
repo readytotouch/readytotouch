@@ -397,16 +397,22 @@ func companiesPart4() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Senior Golang Developer",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4098692466/",
-							Date:             mustDate("2024-12-13"),
+							Title:                "Senior Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4098692466/",
+							Date:                 mustDate("2024-12-13"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 						{
-							Title:            "Python Developer",
-							ShortDescription: "with Pen-testing & Golang experience",
-							URL:              "https://www.linkedin.com/jobs/view/4132052658/",
-							Date:             mustDate("2025-01-23"),
+							Title:                "Python Developer",
+							ShortDescription:     "with Pen-testing & Golang experience",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4132052658/",
+							Date:                 mustDate("2025-01-23"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 					},
 				},
@@ -496,10 +502,13 @@ func companiesPart4() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Golang Developer",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4096373782/",
-							Date:             mustDate("2024-12-11"),
+							Title:                "Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4096373782/",
+							Date:                 mustDate("2024-12-11"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 						{
 							Title:                "Golang Developer / Backend Developer (Golang)",
@@ -1310,12 +1319,12 @@ func companiesPart4() []domain.CompanyProfile {
 							Remote:               false,
 						},
 						{
-							Title:                "Senior Software Engineer - Mobile/Backend (Android, Go, Kotlin)",
-							ShortDescription:     "JR-01934794",
+							Title:                "Senior Software Engineer",
+							ShortDescription:     "Mobile/Backend (Android, Go, Kotlin)",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4151864804/",
 							Date:                 mustDate("2025-02-13"),
-							WithSalary:           true, // Pay Range: $95,100 - $180,700 per year
+							WithSalary:           true, // $95,100 - $180,700 per year
 							Remote:               false,
 						},
 					},
@@ -1534,10 +1543,13 @@ func companiesPart4() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 2,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Software Engineer",
-							ShortDescription: "Cloud Security Applications (.NET Core or Go)",
-							URL:              "https://www.linkedin.com/jobs/view/4084785751/",
-							Date:             mustDate("2024-12-03"),
+							Title:                "Software Engineer",
+							ShortDescription:     "Cloud Security Applications (.NET Core or Go)",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4084785751/",
+							Date:                 mustDate("2024-12-03"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 						{
 							Title:                "Software Engineer — Cloud Security Applications (.NET Core or Go)",

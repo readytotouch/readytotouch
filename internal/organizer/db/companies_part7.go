@@ -124,7 +124,7 @@ func companiesPart7() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Senior Software Engineer - Scala",
+							Title:                "Senior Software Engineer — Scala",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4103097753/",

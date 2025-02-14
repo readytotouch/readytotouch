@@ -452,7 +452,7 @@ func companiesPart8() []domain.CompanyProfile {
 							Remote:               false,
 						},
 						{
-							Title:                "RUST Embedded Software Engineer",
+							Title:                "Rust Embedded Software Engineer",
 							ShortDescription:     "Clearable",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4148907792/",
@@ -3012,7 +3012,7 @@ func companiesPart8() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Software Engineer (Go), FiveM (Mid/Senior)",
+							Title:                "Software Engineer (Go)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4152181957/",
@@ -3102,7 +3102,7 @@ func companiesPart8() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Staff Software Engineer - Golang",
+							Title:                "Staff Software Engineer — Golang",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4076914112/",
