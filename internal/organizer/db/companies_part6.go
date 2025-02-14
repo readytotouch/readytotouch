@@ -314,7 +314,20 @@ func companiesPart6() []domain.CompanyProfile {
 						},
 					},
 				},
-				domain.Rust:    {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Research Engineer – Rust Development and Formal Methods",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4151624125/",
+							Date:                 mustDate("2025-02-13"),
+							WithSalary:           true, // salary range $103,200 - $209,000
+							Remote:               false,
+						},
+					},
+				},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},

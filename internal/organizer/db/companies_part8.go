@@ -447,8 +447,17 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4118966168/",
-							Date:                 mustDate("2025-01-09"),
-							WithSalary:           true, // Starting at $108K/yr
+							Date:                 mustDate("2025-02-10"), // mustDate("2025-01-09"),
+							WithSalary:           true,                   // Starting at $108K/yr
+							Remote:               false,
+						},
+						{
+							Title:                "RUST Embedded Software Engineer",
+							ShortDescription:     "Clearable",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4148907792/",
+							Date:                 mustDate("2025-02-13"),
+							WithSalary:           true, // salary range $95.100 - $256.000 per year
 							Remote:               false,
 						},
 					},
@@ -771,7 +780,16 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4130863951/",
-							Date:                 mustDate("2025-01-21"),
+							Date:                 mustDate("2025-02-11"), // mustDate("2025-01-21"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Software Engineer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4152664916/",
+							Date:                 mustDate("2025-02-14"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -1031,7 +1049,7 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4119784307/",
-							Date:                 mustDate("2025-01-10"),
+							Date:                 mustDate("2025-02-07"), // mustDate("2025-01-10"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -1177,6 +1195,15 @@ func companiesPart8() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Big Data Developer (Scala/Spark)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4088735395/",
+							Date:                 mustDate("2025-01-30"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Elixir:  {},
@@ -1223,8 +1250,8 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4123118327/",
-							Date:                 mustDate("2025-01-15"),
-							WithSalary:           true, // $98,400—$137,800 CAD
+							Date:                 mustDate("2025-02-07"), // mustDate("2025-01-15"),
+							WithSalary:           true,                   // $98,400—$137,800 CAD
 							Remote:               false,
 						},
 					},
@@ -1572,7 +1599,7 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4121847142/",
-							Date:                 mustDate("2025-01-13"),
+							Date:                 mustDate("2025-02-14"), // mustDate("2025-01-13"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -1622,6 +1649,15 @@ func companiesPart8() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4121334590/",
 							Date:                 mustDate("2025-01-13"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Software Engineer Interim (Scala/Java/Kotlin)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4149473644/",
+							Date:                 mustDate("2025-02-13"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -1848,6 +1884,15 @@ func companiesPart8() []domain.CompanyProfile {
 							WithSalary:           true, // CAD $100,000.00 — CAD $130,000.00 per year
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Scala Software Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4147607601/",
+							Date:                 mustDate("2025-02-11"),
+							WithSalary:           true, // salary range CAD $100,000 - CAD $150,000
+							Remote:               true,
+						},
 					},
 				},
 				domain.Elixir:  {},
@@ -1989,7 +2034,7 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4128235975/",
-							Date:                 mustDate("2025-01-17"),
+							Date:                 mustDate("2025-02-08"), // mustDate("2025-01-17"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -2829,6 +2874,15 @@ func companiesPart8() []domain.CompanyProfile {
 							WithSalary:           true, // Annual Incentive Base Range 48,000 - 60,000 - 72,000 GBP
 							Remote:               false,
 						},
+						{
+							Title:                "Software Engineer (C++ / Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4148121704/",
+							Date:                 mustDate("2025-02-12"),
+							WithSalary:           true, // Annual Incentive Base Range 36,800 - 46,000 - 55,200 GBP
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig:     {},
@@ -2886,6 +2940,279 @@ func companiesPart8() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Cyber security awareness training platform",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Seldon",
+			Website: "https://www.seldon.io/",
+			Careers: "https://www.seldon.io/careers",
+			About:   "https://www.seldon.io/about",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2028462,
+				Alias:             "seldon",
+				Name:              "Seldon",
+				Followers:         "11K",
+				Employees:         "51-200",
+				AssociatedMembers: "99",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "SeldonIO",
+				Verified: true,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer (Go)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4149751377/",
+							Date:                 mustDate("2025-02-13"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "British open-source technology company",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Rockstar Games",
+			Website: "https://www.rockstargames.com/",
+			Careers: "https://www.rockstargames.com/careers",
+			About:   "https://www.rockstargames.com/corpinfo",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                6684,
+				Alias:             "rockstar-games",
+				Name:              "Rockstar Games",
+				Followers:         "694K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "6,036",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "RockstarGames",
+				Verified: true,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer (Go), FiveM (Mid/Senior)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4152181957/",
+							Date:                 mustDate("2025-02-13"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American game developer and publisher company",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Kiwi.com",
+			Website: "http://kiwi.com/",
+			Careers: "https://jobs.kiwi.com/",
+			About:   "https://jobs.kiwi.com/about-us/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3010943,
+				Alias:             "kiwi.com",
+				Name:              "Kiwi.com",
+				Followers:         "27K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "983",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "kiwicom",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4139671820/",
+							Date:                 mustDate("2025-02-14"),
+							WithSalary:           true, // Salary range starting from 2.640 EUR per month gross depending on relevant experience and skills
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Czech online travel agency",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Tenable",
+			Website: "https://www.tenable.com/",
+			Careers: "https://www.tenable.com/careers",
+			About:   "https://www.tenable.com/about-tenable/about-us",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                25452,
+				Alias:             "tenableinc",
+				Name:              "Tenable",
+				Followers:         "170K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "2,176",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "tenable",
+				Verified: true,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Staff Software Engineer - Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4076914112/",
+							Date:                 mustDate("2025-02-13"),
+							WithSalary:           true, // $161,500—$215,500 per year
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American cybersecurity company",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Ramp",
+			Website: "https://ramp.com/",
+			Careers: "https://ramp.com/careers",
+			About:   "https://ramp.com/about-us",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1406226,
+				Alias:             "ramp",
+				Name:              "Ramp",
+				Followers:         "168K",
+				Employees:         "501-1K",
+				AssociatedMembers: "1,454",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go:    {},
+				domain.Rust:  {},
+				domain.Zig:   {},
+				domain.Scala: {},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer | Elixir",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4137064133/",
+							Date:                 mustDate("2025-01-30"),
+							WithSalary:           true, // $188.000 - $258.000 per year
+							Remote:               true,
+						},
+					},
+				},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American FinTech company",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Hatch",
+			Website: "https://www.usehatchapp.com/",
+			Careers: "https://www.usehatchapp.com/careers",
+			About:   "https://www.usehatchapp.com/why-hatch",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                11433680,
+				Alias:             "usehatchapp",
+				Name:              "Hatch",
+				Followers:         "10K",
+				Employees:         "11-50",
+				AssociatedMembers: "89",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "Hatch1fy",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go:    {},
+				domain.Rust:  {},
+				domain.Zig:   {},
+				domain.Scala: {},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Elixir Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4130659582/",
+							Date:                 mustDate("2025-01-23"),
+							WithSalary:           true, // $140.000 - $200.000 per year
+							Remote:               true,
+						},
+					},
+				},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Communication AI platform for businesses",
 		},
 
 		// Template short
