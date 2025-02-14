@@ -1313,7 +1313,7 @@ func companiesPart4() []domain.CompanyProfile {
 							Title:                "Senior Software Engineer - Mobile/Backend (Android, Go, Kotlin)",
 							ShortDescription:     "JR-01934794",
 							SwitchingOpportunity: "",
-							URL:                  "",
+							URL:                  "https://www.linkedin.com/jobs/view/4151864804/",
 							Date:                 mustDate("2025-02-13"),
 							WithSalary:           true, // Pay Range: $95,100 - $180,700 per year
 							Remote:               false,
