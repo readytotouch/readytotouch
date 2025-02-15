@@ -23,6 +23,10 @@
     {
       "matches": ["https://www.linkedin.com/jobs/view/*"],
       "js": ["copy-linkedin-vacancy-data.js"]
+    },
+    {
+      "matches": ["https://www.glassdoor.com/Overview/*"],
+      "js": ["copy-glassdoor-company-profile-data.js"]
     }
   ]
 }
