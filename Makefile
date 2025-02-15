@@ -17,7 +17,7 @@ env-docker-compose-production:
 	cp .production.env .env
 
 env-up:
-	docker-compose -f docker-compose.yml --env-file .env up -d
+	docker compose -f docker-compose.yml --env-file .env up -d
 
 postgres-test-run:
 	docker exec readytotouch_postgres_db psql -U yaaws_user -d yaaws -c "SELECT VERSION();"
@@ -35,10 +35,10 @@ pg-users:
 	cat ./fixtures/postgres/users.sql | docker exec -i readytotouch_postgres_db psql -d yaaws -U yaaws_user
 
 env-down:
-	docker-compose -f docker-compose.yml --env-file .env down
+	docker compose -f docker-compose.yml --env-file .env down
 
 env-down-with-clear:
-	docker-compose -f docker-compose.yml --env-file .env down --remove-orphans -v # --rmi=all
+	docker compose -f docker-compose.yml --env-file .env down --remove-orphans -v # --rmi=all
 
 app-build:
 	docker exec readytotouch_go_app go build -o /bin/yaaws-server ./cmd/main.go
