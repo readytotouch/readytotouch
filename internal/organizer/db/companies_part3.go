@@ -3210,6 +3210,7 @@ func companiesPart3() []domain.CompanyProfile {
 		//					URL:                  "",
 		//					Date:                 mustDate(""),
 		//					WithSalary:           false,
+		//					Remote:               false,
 		//				},
 		//			},
 		//		},
