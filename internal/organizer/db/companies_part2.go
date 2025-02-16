@@ -93,7 +93,11 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified: true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "mcafee",
+				Employees:   "5,001 to 10,000",
+				Salary:      "$24K ~ $339K a year",
+				Reviews:     "85",
+				ReviewsRate: "3.2",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "mcafee",
@@ -268,7 +272,11 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified: true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Demandbase",
+				Employees:   "201 to 500",
+				Salary:      "$37K ~ $200K a year",
+				Reviews:     "23",
+				ReviewsRate: "4.4",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "demandbase",
