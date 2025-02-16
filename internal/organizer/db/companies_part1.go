@@ -9341,6 +9341,12 @@ func companiesPart1() []domain.CompanyProfile {
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Cimri-EI_IE2401296.11,16.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Cimri-Reviews-E2401296.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Cimri-Jobs-E2401296.htm",
+				Jobs:        "",
+				Reviews:     "2",
+				Salaries:    "20",
+				ReviewsRate: "4.0",
+				Verified:    false,
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "https://www.youtube.com/@cimri",
