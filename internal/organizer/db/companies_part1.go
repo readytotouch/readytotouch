@@ -1712,7 +1712,7 @@ func companiesPart1() []domain.CompanyProfile {
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Grammarly",
 				Employees:   "201 to 500",
-				Salary:      "-",
+				Salary:      "",
 				Reviews:     "147",
 				ReviewsRate: "3.6",
 			},
@@ -1856,7 +1856,7 @@ func companiesPart1() []domain.CompanyProfile {
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Netlify",
 				Employees:   "201 to 500",
-				Salary:      "-",
+				Salary:      "",
 				Reviews:     "12",
 				ReviewsRate: "3.3",
 			},
@@ -1930,7 +1930,7 @@ func companiesPart1() []domain.CompanyProfile {
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Vercel",
 				Employees:   "201 to 500",
-				Salary:      "-",
+				Salary:      "",
 				Reviews:     "23",
 				ReviewsRate: "3.8",
 			},
@@ -2226,7 +2226,7 @@ func companiesPart1() []domain.CompanyProfile {
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Grafana-Labs",
 				Employees:   "501 to 1,000",
-				Salary:      "-",
+				Salary:      "",
 				Reviews:     "21",
 				ReviewsRate: "4.4",
 			},
@@ -2535,7 +2535,7 @@ func companiesPart1() []domain.CompanyProfile {
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Timescale",
 				Employees:   "51 to 200",
-				Salary:      "-",
+				Salary:      "",
 				Reviews:     "",
 				ReviewsRate: "",
 			},
@@ -2680,7 +2680,7 @@ func companiesPart1() []domain.CompanyProfile {
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Percona",
 				Employees:   "201 to 500",
-				Salary:      "-",
+				Salary:      "",
 				Reviews:     "1",
 				ReviewsRate: "5.0",
 			},
@@ -2979,7 +2979,7 @@ func companiesPart1() []domain.CompanyProfile {
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Redis",
 				Employees:   "501 to 1,000",
-				Salary:      "-",
+				Salary:      "",
 				Reviews:     "16",
 				ReviewsRate: "3.6",
 			},
@@ -4498,7 +4498,7 @@ func companiesPart1() []domain.CompanyProfile {
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Namecheap",
 				Employees:   "1,001 to 5,000",
-				Salary:      "-",
+				Salary:      "",
 				Reviews:     "1",
 				ReviewsRate: "3.0",
 			},
@@ -4643,7 +4643,7 @@ func companiesPart1() []domain.CompanyProfile {
 			BlindProfile: domain.BlindProfile{
 				Alias:       "1Password",
 				Employees:   "1,001 to 5,000",
-				Salary:      "-",
+				Salary:      "",
 				Reviews:     "21",
 				ReviewsRate: "4.0",
 			},
@@ -4893,7 +4893,7 @@ func companiesPart1() []domain.CompanyProfile {
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Proton",
 				Employees:   "501 to 1,000",
-				Salary:      "-",
+				Salary:      "",
 				Reviews:     "3",
 				ReviewsRate: "3.7",
 			},
@@ -5659,7 +5659,7 @@ func companiesPart1() []domain.CompanyProfile {
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Just-Eat-Takeaway",
 				Employees:   "10,000+",
-				Salary:      "-",
+				Salary:      "",
 				Reviews:     "15",
 				ReviewsRate: "3.2",
 			},
@@ -6163,7 +6163,7 @@ func companiesPart1() []domain.CompanyProfile {
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Stream",
 				Employees:   "51-200",
-				Salary:      "-",
+				Salary:      "",
 				Reviews:     "2",
 				ReviewsRate: "3.5",
 			},
@@ -6304,7 +6304,7 @@ func companiesPart1() []domain.CompanyProfile {
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Form3",
 				Employees:   "501 to 1,000",
-				Salary:      "-",
+				Salary:      "",
 				Reviews:     "",
 				ReviewsRate: "",
 			},
@@ -6806,7 +6806,7 @@ func companiesPart1() []domain.CompanyProfile {
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Delivery-Hero",
 				Employees:   "10,000+",
-				Salary:      "-",
+				Salary:      "",
 				Reviews:     "287",
 				ReviewsRate: "3.3",
 			},
@@ -8053,7 +8053,11 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Applied-Systems",
+				Employees:   "1,001 to 5,000",
+				Salary:      "",
+				Reviews:     "1",
+				ReviewsRate: "4.0",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Applied-Systems-EI_IE8534.11,26.htm",
@@ -8135,7 +8139,11 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified: true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "autodesk",
+				Employees:   "5,001 to 10,000",
+				Salary:      "$63K ~ $300K a year",
+				Reviews:     "564",
+				ReviewsRate: "3.8",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "autodesk",
@@ -8205,7 +8213,11 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Vonage",
+				Employees:   "1,001 to 5,000",
+				Salary:      "$55K ~ $280K a year",
+				Reviews:     "45",
+				ReviewsRate: "3.4",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "vonage",
@@ -8805,7 +8817,11 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified: true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Isovalent",
+				Employees:   "51 to 200",
+				Salary:      "",
+				Reviews:     "",
+				ReviewsRate: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "isovalent",
@@ -8870,7 +8886,11 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "ABC-Fitness-Solutions",
+				Employees:   "1,001 to 5,000",
+				Salary:      "",
+				Reviews:     "1",
+				ReviewsRate: "4.0",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "abc-fitness",
@@ -8992,7 +9012,11 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified: true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Acronis",
+				Employees:   "1001-5000",
+				Salary:      "",
+				Reviews:     "10",
+				ReviewsRate: "3.8",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "acronis",
@@ -9216,7 +9240,11 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Gelato",
+				Employees:   "201 to 500",
+				Salary:      "",
+				Reviews:     "2",
+				ReviewsRate: "2.5",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "gelato-network",
@@ -9290,7 +9318,11 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified: true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "SumUp",
+				Employees:   "1,001 to 5,000",
+				Salary:      "",
+				Reviews:     "31",
+				ReviewsRate: "3.6",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "sumup",
@@ -9426,7 +9458,11 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified: true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Level",
+				Employees:   "51 to 200",
+				Salary:      "",
+				Reviews:     "3",
+				ReviewsRate: "2.7",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "level-home",
@@ -9562,7 +9598,11 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Pindrop",
+				Employees:   "201 to 500",
+				Salary:      "",
+				Reviews:     "10",
+				ReviewsRate: "3.9",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "pindrop",

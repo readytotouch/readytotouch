@@ -94,6 +94,10 @@ function getCompanyInfo() {
         }
         if ($child.textContent.trim() === "Salary") {
             salary = $child.nextElementSibling.textContent.trim();
+
+            if (salary === "-") {
+                salary = "";
+            }
         }
     }
 
