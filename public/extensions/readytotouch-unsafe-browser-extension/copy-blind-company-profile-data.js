@@ -58,7 +58,7 @@ function getEmployerRating() {
             if (json["@type"] === "EmployerAggregateRating") {
                 return {
                     ratingValue: json.ratingValue,
-                    ratingCount: json.ratingCount
+                    ratingCount: json.ratingCount.toLocaleString("en-US"),
                 };
             }
         } catch (error) {
