@@ -74,6 +74,16 @@ func companiesPart6() []domain.CompanyProfile {
 				Alias:     "nutanix",
 				Employees: "6,250",
 			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Nutanix-EI_IE429159.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Nutanix-Reviews-E429159.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Nutanix-Jobs-E429159.htm",
+				Jobs:        "239",
+				Reviews:     "2.5K",
+				Salaries:    "5K",
+				ReviewsRate: "4.0",
+				Verified:    true,
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -119,6 +129,16 @@ func companiesPart6() []domain.CompanyProfile {
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "umbra",
 				Employees: "126",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Umbra-Space-EI_IE4502080.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Umbra-Space-Reviews-E4502080.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Umbra-Space-Jobs-E4502080.htm",
+				Jobs:        "18",
+				Reviews:     "25",
+				Salaries:    "14",
+				ReviewsRate: "4.8",
+				Verified:    false,
 			},
 			Languages: domain.Languages{
 				domain.Go: {},
@@ -167,6 +187,16 @@ func companiesPart6() []domain.CompanyProfile {
 				Alias:     "cognite",
 				Employees: "660",
 			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Cognite-EI_IE2374321.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Cognite-Reviews-E2374321.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Cognite-Jobs-E2374321.htm",
+				Jobs:        "86",
+				Reviews:     "155",
+				Salaries:    "384",
+				ReviewsRate: "3.6",
+				Verified:    true,
+			},
 			Languages: domain.Languages{
 				domain.Go: {},
 				domain.Rust: {
@@ -209,6 +239,16 @@ func companiesPart6() []domain.CompanyProfile {
 				Login:    "",
 				Verified: false,
 			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+				JobsURL:     "",
+				Jobs:        "",
+				Reviews:     "",
+				Salaries:    "",
+				ReviewsRate: "",
+				Verified:    false,
+			},
 			Languages: domain.Languages{
 				domain.Go:      {},
 				domain.Rust:    {},
@@ -245,6 +285,16 @@ func companiesPart6() []domain.CompanyProfile {
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "ubisoft",
 				Employees: "21,620",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Ubisoft-EI_IE12717.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Ubisoft-Reviews-E12717.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Ubisoft-Jobs-E12717.htm",
+				Jobs:        "337",
+				Reviews:     "5.7K",
+				Salaries:    "11K",
+				ReviewsRate: "3.6",
+				Verified:    true,
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -301,6 +351,16 @@ func companiesPart6() []domain.CompanyProfile {
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "two-six-technologies",
 				Employees: "310",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Two-Six-Technologies-EI_IE4806671.11,31.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Two-Six-Technologies-Reviews-E4806671.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Two-Six-Technologies-Jobs-E4806671.htm",
+				Jobs:        "48",
+				Reviews:     "55",
+				Salaries:    "175",
+				ReviewsRate: "4.2",
+				Verified:    true,
 			},
 			Languages: domain.Languages{
 				domain.Go: {

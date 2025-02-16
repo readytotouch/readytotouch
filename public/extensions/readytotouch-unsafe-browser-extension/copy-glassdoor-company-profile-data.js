@@ -7,9 +7,9 @@ document.body.addEventListener("keydown", (event) => {
         const goGlassdoorProfileColumns = `				OverviewURL: "${document.querySelector("#overview > a").href}",
 				ReviewsURL:  "${document.querySelector("#reviews > a").href}",
 				JobsURL:     "${document.querySelector("#jobs > a").href}",
-				Jobs:        "${document.querySelector("#jobs div:first-of-type span:first-of-type").textContent.trim()}",
-				Reviews:     "${document.querySelector("#reviews div:first-of-type span:first-of-type").textContent.trim()}",
-				Salaries:    "${document.querySelector("#salaries div:first-of-type span:first-of-type").textContent.trim()}",
+				Jobs:        "${trim(document.querySelector("#jobs div:first-of-type span:first-of-type"))}",
+				Reviews:     "${trim(document.querySelector("#reviews div:first-of-type span:first-of-type"))}",
+				Salaries:    "${trim(document.querySelector("#salaries div:first-of-type span:first-of-type"))}",
 				ReviewsRate: "${getEmployerRating()}",
 				Verified:    ${isEngagedEmployer() ? "true" : "false"},`
 
@@ -19,6 +19,14 @@ document.body.addEventListener("keydown", (event) => {
     }
 });
 
+function trim($element) {
+    const value = $element.textContent.trim();
+    if (value === "--") {
+        return "";
+    }
+
+    return value;
+}
 
 function isEngagedEmployer() {
     const elements = document.querySelectorAll(`p[class^="employer-engagement-status_engementTrigger"]`);

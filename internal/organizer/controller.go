@@ -1248,11 +1248,7 @@ func (c *Controller) DataPopulationCompaniesGlassdoor(ctx *gin.Context) {
 		companies = c.dataPopulationCompanies(func(company domain.CompanyProfile) bool {
 			return company.GlassdoorProfile.OverviewURL == "" ||
 				company.GlassdoorProfile.ReviewsURL == "" ||
-				company.GlassdoorProfile.JobsURL == "" ||
-				company.GlassdoorProfile.Jobs == "" ||
-				company.GlassdoorProfile.Reviews == "" ||
-				company.GlassdoorProfile.Salaries == "" ||
-				company.GlassdoorProfile.ReviewsRate == ""
+				company.GlassdoorProfile.JobsURL == ""
 		})
 	)
 

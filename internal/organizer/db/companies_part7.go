@@ -32,6 +32,16 @@ func companiesPart7() []domain.CompanyProfile {
 				Alias:     "checkmarx",
 				Employees: "820",
 			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Checkmarx-EI_IE554001.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Checkmarx-Reviews-E554001.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Checkmarx-Jobs-E554001.htm",
+				Jobs:        "26",
+				Reviews:     "353",
+				Salaries:    "442",
+				ReviewsRate: "3.9",
+				Verified:    true,
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 12,
@@ -84,6 +94,16 @@ func companiesPart7() []domain.CompanyProfile {
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "visa",
 				Employees: "21,000",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Visa-Inc-EI_IE3035.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Visa-Inc-Reviews-E3035.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Visa-Inc-Jobs-E3035.htm",
+				Jobs:        "872",
+				Reviews:     "7.6K",
+				Salaries:    "19K",
+				ReviewsRate: "3.9",
+				Verified:    true,
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -169,6 +189,16 @@ func companiesPart7() []domain.CompanyProfile {
 				Login:    "datazip-inc",
 				Verified: false,
 			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+				JobsURL:     "",
+				Jobs:        "",
+				Reviews:     "",
+				Salaries:    "",
+				ReviewsRate: "",
+				Verified:    false,
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 3,
@@ -219,6 +249,16 @@ func companiesPart7() []domain.CompanyProfile {
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "baker-hughes",
 				Employees: "57,510",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Baker-Hughes-EI_IE1902699.11,23.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Baker-Hughes-Reviews-E1902699.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Baker-Hughes-Jobs-E1902699.htm",
+				Jobs:        "940",
+				Reviews:     "6.3K",
+				Salaries:    "9.7K",
+				ReviewsRate: "4.0",
+				Verified:    false,
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -276,6 +316,16 @@ func companiesPart7() []domain.CompanyProfile {
 				Alias:     "centrica",
 				Employees: "20,406",
 			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Centrica-EI_IE6731.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Centrica-Reviews-E6731.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Centrica-Jobs-E6731.htm",
+				Jobs:        "108",
+				Reviews:     "1.1K",
+				Salaries:    "2.4K",
+				ReviewsRate: "4.1",
+				Verified:    true,
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -332,6 +382,16 @@ func companiesPart7() []domain.CompanyProfile {
 				Login:    "MuralHealth",
 				Verified: false,
 			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+				JobsURL:     "",
+				Jobs:        "",
+				Reviews:     "",
+				Salaries:    "",
+				ReviewsRate: "",
+				Verified:    false,
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -380,6 +440,16 @@ func companiesPart7() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "green-got",
 				Verified: false,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+				JobsURL:     "",
+				Jobs:        "",
+				Reviews:     "",
+				Salaries:    "",
+				ReviewsRate: "",
+				Verified:    false,
 			},
 			Languages: domain.Languages{
 				domain.Go: {},
