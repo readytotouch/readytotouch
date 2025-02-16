@@ -9728,7 +9728,11 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Flixbus",
+				Employees:   "1,001-5,000",
+				Salary:      "",
+				Reviews:     "4",
+				ReviewsRate: "3.5",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "flix",
@@ -9831,7 +9835,11 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Press-Ganey",
+				Employees:   "1,001 to 5,000",
+				Salary:      "",
+				Reviews:     "10",
+				ReviewsRate: "2.9",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "press-ganey",
@@ -10248,7 +10256,11 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "BNP-Paribas",
+				Employees:   "10,000+",
+				Salary:      "$45K ~ $236K a year",
+				Reviews:     "43",
+				ReviewsRate: "2.9",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "bnp-paribas-securities",
@@ -10586,7 +10598,11 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "OLX",
+				Employees:   "1,001 to 5,000",
+				Salary:      "",
+				Reviews:     "11",
+				ReviewsRate: "3.7",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "olx-group",
@@ -10675,7 +10691,11 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified: true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Snyk",
+				Employees:   "1,001 to 5,000 Employees",
+				Salary:      "",
+				Reviews:     "83",
+				ReviewsRate: "3.6",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "snyk",
@@ -10757,7 +10777,11 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Sinch",
+				Employees:   "1,001 to 5,000",
+				Salary:      "",
+				Reviews:     "9",
+				ReviewsRate: "3.0",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "sinch",
@@ -10822,7 +10846,11 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Fox",
+				Employees:   "10,000+",
+				Salary:      "$66K ~ $318K a year",
+				Reviews:     "67",
+				ReviewsRate: "3.6",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "fox",
@@ -10887,7 +10915,11 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified: true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "SailPoint-Technologies",
+				Employees:   "1,001 to 5,000",
+				Salary:      "$60K ~ $250K a year",
+				Reviews:     "98",
+				ReviewsRate: "3.8",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "sailpoint",
@@ -11000,7 +11032,11 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Proofpoint",
+				Employees:   "1,001 to 5,000",
+				Salary:      "$62K ~ $324K a year",
+				Reviews:     "162",
+				ReviewsRate: "3.5",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "proofpoint",
