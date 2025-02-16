@@ -27,6 +27,16 @@ func companiesPart5() []domain.CompanyProfile {
 				Login:    "",
 				Verified: false,
 			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-ATOMIC-EI_IE1067018.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/ATOMIC-Reviews-E1067018.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/ATOMIC-Jobs-E1067018.htm",
+				Jobs:        "9",
+				Reviews:     "4",
+				Salaries:    "6",
+				ReviewsRate: "4.3",
+				Verified:    false,
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -68,6 +78,16 @@ func companiesPart5() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "outpost24",
 				Verified: false,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Outpost24-EI_IE676621.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Outpost24-Reviews-E676621.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Outpost24-Jobs-E676621.htm",
+				Jobs:        "24",
+				Reviews:     "25",
+				Salaries:    "41",
+				ReviewsRate: "3.9",
+				Verified:    true,
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -116,6 +136,16 @@ func companiesPart5() []domain.CompanyProfile {
 				Alias:     "lumen",
 				Employees: "54,000",
 			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Lumen-EI_IE248324.11,16.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Lumen-Reviews-E248324.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Lumen-Jobs-E248324.htm",
+				Jobs:        "335",
+				Reviews:     "8K",
+				Salaries:    "12K",
+				ReviewsRate: "3.4",
+				Verified:    true,
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -163,6 +193,16 @@ func companiesPart5() []domain.CompanyProfile {
 				Alias:     "sas-software",
 				Employees: "14,000",
 			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-SAS-EI_IE3807.11,14.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/SAS-Reviews-E3807.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/SAS-Jobs-E3807.htm",
+				Jobs:        "104",
+				Reviews:     "3.7K",
+				Salaries:    "6.5K",
+				ReviewsRate: "4.0",
+				Verified:    false,
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -206,6 +246,16 @@ func companiesPart5() []domain.CompanyProfile {
 				Login:    "miquido",
 				Verified: true,
 			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+				JobsURL:     "",
+				Jobs:        "",
+				Reviews:     "",
+				Salaries:    "",
+				ReviewsRate: "",
+				Verified:    false,
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -248,6 +298,16 @@ func companiesPart5() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
 				Verified: false,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+				JobsURL:     "",
+				Jobs:        "",
+				Reviews:     "",
+				Salaries:    "",
+				ReviewsRate: "",
+				Verified:    false,
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -296,6 +356,16 @@ func companiesPart5() []domain.CompanyProfile {
 				Alias:     "koch-industries",
 				Employees: "31,510",
 			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Koch-EI_IE2864.11,15.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Koch-Reviews-E2864.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Koch-Jobs-E2864.htm",
+				Jobs:        "688",
+				Reviews:     "1.9K",
+				Salaries:    "3.3K",
+				ReviewsRate: "3.8",
+				Verified:    true,
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -340,6 +410,16 @@ func companiesPart5() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "tradingview",
 				Verified: true,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+				JobsURL:     "",
+				Jobs:        "",
+				Reviews:     "",
+				Salaries:    "",
+				ReviewsRate: "",
+				Verified:    false,
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -388,6 +468,16 @@ func companiesPart5() []domain.CompanyProfile {
 				Alias:     "groq",
 				Employees: "150",
 			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Groq-EI_IE2473036.11,15.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Groq-Reviews-E2473036.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Groq-Jobs-E2473036.htm",
+				Jobs:        "2",
+				Reviews:     "27",
+				Salaries:    "72",
+				ReviewsRate: "2.6",
+				Verified:    true,
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -429,6 +519,16 @@ func companiesPart5() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
 				Verified: false,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-PayRetailers-EI_IE6481218.11,23.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/PayRetailers-Reviews-E6481218.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/PayRetailers-Jobs-E6481218.htm",
+				Jobs:        "",
+				Reviews:     "59",
+				Salaries:    "107",
+				ReviewsRate: "3.8",
+				Verified:    true,
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -485,6 +585,16 @@ func companiesPart5() []domain.CompanyProfile {
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "zendesk",
 				Employees: "3,500",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Zendesk-EI_IE360923.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Zendesk-Reviews-E360923.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Zendesk-Jobs-E360923.htm",
+				Jobs:        "193",
+				Reviews:     "2.1K",
+				Salaries:    "4.8K",
+				ReviewsRate: "3.6",
+				Verified:    false,
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -562,6 +672,16 @@ func companiesPart5() []domain.CompanyProfile {
 				Login:    "",
 				Verified: false,
 			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Mobica-EI_IE567096.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Mobica-Reviews-E567096.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Mobica-Jobs-E567096.htm",
+				Jobs:        "31",
+				Reviews:     "144",
+				Salaries:    "259",
+				ReviewsRate: "4.1",
+				Verified:    false,
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -608,6 +728,16 @@ func companiesPart5() []domain.CompanyProfile {
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "enterprisedb",
 				Employees: "990",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-EDB-EI_IE279139.11,14.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/EDB-Reviews-E279139.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/EDB-Jobs-E279139.htm",
+				Jobs:        "30",
+				Reviews:     "309",
+				Salaries:    "459",
+				ReviewsRate: "4.1",
+				Verified:    true,
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -665,6 +795,16 @@ func companiesPart5() []domain.CompanyProfile {
 				Alias:     "altair",
 				Employees: "3,500",
 			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Altair-Engineering-EI_IE20320.11,29.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Altair-Engineering-Reviews-E20320.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Altair-Engineering-Jobs-E20320.htm",
+				Jobs:        "174",
+				Reviews:     "1.1K",
+				Salaries:    "2.6K",
+				ReviewsRate: "4.2",
+				Verified:    true,
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -717,6 +857,16 @@ func companiesPart5() []domain.CompanyProfile {
 				Login:    "rewardgateway",
 				Verified: false,
 			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Reward-Gateway-EI_IE464051.11,25.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Reward-Gateway-Reviews-E464051.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Reward-Gateway-Jobs-E464051.htm",
+				Jobs:        "6",
+				Reviews:     "296",
+				Salaries:    "527",
+				ReviewsRate: "4.1",
+				Verified:    true,
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -762,6 +912,16 @@ func companiesPart5() []domain.CompanyProfile {
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "nn-group",
 				Employees: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-NN-Group-EI_IE982653.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/NN-Group-Reviews-E982653.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/NN-Group-Jobs-E982653.htm",
+				Jobs:        "388",
+				Reviews:     "378",
+				Salaries:    "772",
+				ReviewsRate: "4.2",
+				Verified:    true,
 			},
 			Languages: domain.Languages{
 				domain.Go: {},
@@ -810,6 +970,16 @@ func companiesPart5() []domain.CompanyProfile {
 				Alias:     "american-airlines",
 				Employees: "134,000",
 			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-American-Airlines-EI_IE8.11,28.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/American-Airlines-Reviews-E8.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/American-Airlines-Jobs-E8.htm",
+				Jobs:        "87",
+				Reviews:     "9.1K",
+				Salaries:    "17K",
+				ReviewsRate: "3.6",
+				Verified:    true,
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -851,6 +1021,16 @@ func companiesPart5() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
 				Verified: false,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+				JobsURL:     "",
+				Jobs:        "",
+				Reviews:     "",
+				Salaries:    "",
+				ReviewsRate: "",
+				Verified:    false,
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -894,6 +1074,16 @@ func companiesPart5() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "CheesecakeLabs",
 				Verified: true,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Cheesecake-Labs-EI_IE1486854.11,26.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Cheesecake-Labs-Reviews-E1486854.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Cheesecake-Labs-Jobs-E1486854.htm",
+				Jobs:        "7",
+				Reviews:     "79",
+				Salaries:    "201",
+				ReviewsRate: "3.7",
+				Verified:    true,
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -954,6 +1144,16 @@ func companiesPart5() []domain.CompanyProfile {
 				Alias:     "maya",
 				Employees: "960",
 			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Maya-EI_IE1314611.11,15.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Maya-Reviews-E1314611.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Maya-Jobs-E1314611.htm",
+				Jobs:        "1",
+				Reviews:     "245",
+				Salaries:    "338",
+				ReviewsRate: "4.0",
+				Verified:    false,
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -999,6 +1199,16 @@ func companiesPart5() []domain.CompanyProfile {
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "ashley-furniture-industries",
 				Employees: "4,250",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Ashley-Furniture-EI_IE7626.11,27.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Ashley-Furniture-Reviews-E7626.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Ashley-Furniture-Jobs-E7626.htm",
+				Jobs:        "9",
+				Reviews:     "2.2K",
+				Salaries:    "3.3K",
+				ReviewsRate: "3.2",
+				Verified:    false,
 			},
 			Languages: domain.Languages{
 				domain.Go: {},
