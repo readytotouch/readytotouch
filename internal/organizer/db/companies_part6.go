@@ -70,7 +70,9 @@ func companiesPart6() []domain.CompanyProfile {
 				Login:    "nutanix",
 				Verified: true,
 			},
-			BlindProfile: domain.BlindProfile{},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "nutanix",
 				Employees: "6,250",
@@ -127,7 +129,9 @@ func companiesPart6() []domain.CompanyProfile {
 				Login:    "",
 				Verified: false,
 			},
-			BlindProfile: domain.BlindProfile{},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "umbra",
 				Employees: "126",
@@ -185,7 +189,9 @@ func companiesPart6() []domain.CompanyProfile {
 				Login:    "cognitedata",
 				Verified: true,
 			},
-			BlindProfile: domain.BlindProfile{},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "cognite",
 				Employees: "660",
@@ -242,7 +248,9 @@ func companiesPart6() []domain.CompanyProfile {
 				Login:    "",
 				Verified: false,
 			},
-			BlindProfile: domain.BlindProfile{},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias: "",
 			},
@@ -289,7 +297,9 @@ func companiesPart6() []domain.CompanyProfile {
 				Login:    "ubisoft",
 				Verified: true,
 			},
-			BlindProfile: domain.BlindProfile{},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "ubisoft",
 				Employees: "21,620",
@@ -356,7 +366,9 @@ func companiesPart6() []domain.CompanyProfile {
 				Login:    "twosixlabs",
 				Verified: false,
 			},
-			BlindProfile: domain.BlindProfile{},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "two-six-technologies",
 				Employees: "310",

@@ -71,7 +71,9 @@ func companiesPart4() []domain.CompanyProfile {
 				AssociatedMembers: "2,433",
 				Verified:          true,
 			},
-			BlindProfile: domain.BlindProfile{},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "varonis",
 				Employees: "2,250",
@@ -197,7 +199,9 @@ func companiesPart4() []domain.CompanyProfile {
 				AssociatedMembers: "572",
 				Verified:          true,
 			},
-			BlindProfile: domain.BlindProfile{},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "",
 				Employees: "",
@@ -250,7 +254,9 @@ func companiesPart4() []domain.CompanyProfile {
 				AssociatedMembers: "4,872",
 				Verified:          true,
 			},
-			BlindProfile: domain.BlindProfile{},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "wex",
 				Employees: "3,500",
@@ -315,7 +321,9 @@ func companiesPart4() []domain.CompanyProfile {
 				AssociatedMembers: "59,631",
 				Verified:          true,
 			},
-			BlindProfile: domain.BlindProfile{},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "comcast",
 				Employees: "164,000",
@@ -380,7 +388,9 @@ func companiesPart4() []domain.CompanyProfile {
 				AssociatedMembers: "2,091",
 				Verified:          true,
 			},
-			BlindProfile: domain.BlindProfile{},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "semrush",
 				Employees: "990",
@@ -588,7 +598,9 @@ func companiesPart4() []domain.CompanyProfile {
 				AssociatedMembers: "263",
 				Verified:          true,
 			},
-			BlindProfile: domain.BlindProfile{},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "kiteworks",
 				Employees: "351",
@@ -709,7 +721,9 @@ func companiesPart4() []domain.CompanyProfile {
 				AssociatedMembers: "1,122",
 				Verified:          true,
 			},
-			BlindProfile: domain.BlindProfile{},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "technology-innovation-institute",
 				Employees: "690",
@@ -857,7 +871,9 @@ func companiesPart4() []domain.CompanyProfile {
 				AssociatedMembers: "2,581",
 				Verified:          true,
 			},
-			BlindProfile: domain.BlindProfile{},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "miracle-software-systems",
 				Employees: "2,500",
@@ -910,7 +926,9 @@ func companiesPart4() []domain.CompanyProfile {
 				AssociatedMembers: "6,048",
 				Verified:          true,
 			},
-			BlindProfile: domain.BlindProfile{},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "collabera",
 				Employees: "6,250",
@@ -1241,7 +1259,9 @@ func companiesPart4() []domain.CompanyProfile {
 				AssociatedMembers: "6,610",
 				Verified:          true,
 			},
-			BlindProfile: domain.BlindProfile{},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "getir",
 				Employees: "27,520",
@@ -1469,7 +1489,9 @@ func companiesPart4() []domain.CompanyProfile {
 				AssociatedMembers: "440",
 				Verified:          true,
 			},
-			BlindProfile: domain.BlindProfile{},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "openx",
 				Employees: "210",
@@ -1521,7 +1543,9 @@ func companiesPart4() []domain.CompanyProfile {
 				AssociatedMembers: "10,127",
 				Verified:          true,
 			},
-			BlindProfile: domain.BlindProfile{},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "lenskart",
 				Employees: "500",
@@ -1574,7 +1598,9 @@ func companiesPart4() []domain.CompanyProfile {
 				AssociatedMembers: "118,402",
 				Verified:          true,
 			},
-			BlindProfile: domain.BlindProfile{},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "lowes",
 				Employees: "118,840",
@@ -1647,7 +1673,9 @@ func companiesPart4() []domain.CompanyProfile {
 				AssociatedMembers: "542",
 				Verified:          true,
 			},
-			BlindProfile: domain.BlindProfile{},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "huntress",
 				Employees: "150",
@@ -1756,7 +1784,9 @@ func companiesPart4() []domain.CompanyProfile {
 				AssociatedMembers: "1,457",
 				Verified:          true,
 			},
-			BlindProfile: domain.BlindProfile{},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "waystar",
 				Employees: "1,040",
@@ -1869,7 +1899,9 @@ func companiesPart4() []domain.CompanyProfile {
 				AssociatedMembers: "1,838",
 				Verified:          true,
 			},
-			BlindProfile: domain.BlindProfile{},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "eset",
 				Employees: "1,750",
@@ -1943,7 +1975,9 @@ func companiesPart4() []domain.CompanyProfile {
 				AssociatedMembers: "116",
 				Verified:          true,
 			},
-			BlindProfile: domain.BlindProfile{},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "praxent",
 				Employees: "70",
@@ -2092,7 +2126,9 @@ func companiesPart4() []domain.CompanyProfile {
 				AssociatedMembers: "1,320",
 				Verified:          true,
 			},
-			BlindProfile: domain.BlindProfile{},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "ubiquiti",
 				Employees: "930",
@@ -2157,7 +2193,9 @@ func companiesPart4() []domain.CompanyProfile {
 				AssociatedMembers: "249",
 				Verified:          true,
 			},
-			BlindProfile: domain.BlindProfile{},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "textnow",
 				Employees: "180",
@@ -2356,7 +2394,9 @@ func companiesPart4() []domain.CompanyProfile {
 				AssociatedMembers: "4,664",
 				Verified:          true,
 			},
-			BlindProfile: domain.BlindProfile{},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "exness",
 				Employees: "3,000",
@@ -2503,7 +2543,9 @@ func companiesPart4() []domain.CompanyProfile {
 				AssociatedMembers: "586",
 				Verified:          true,
 			},
-			BlindProfile: domain.BlindProfile{},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "power-factors",
 				Employees: "751",
@@ -2556,7 +2598,9 @@ func companiesPart4() []domain.CompanyProfile {
 				AssociatedMembers: "360",
 				Verified:          true,
 			},
-			BlindProfile: domain.BlindProfile{},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "airspace",
 				Employees: "351",
@@ -2705,7 +2749,9 @@ func companiesPart4() []domain.CompanyProfile {
 				AssociatedMembers: "959",
 				Verified:          true,
 			},
-			BlindProfile: domain.BlindProfile{},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "thousandeyes",
 				Employees: "840",
@@ -2761,7 +2807,9 @@ func companiesPart4() []domain.CompanyProfile {
 				AssociatedMembers: "75,830",
 				Verified:          true,
 			},
-			BlindProfile: domain.BlindProfile{},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "us-bank",
 				Employees: "64,510",
@@ -2814,7 +2862,9 @@ func companiesPart4() []domain.CompanyProfile {
 				AssociatedMembers: "12,935",
 				Verified:          true,
 			},
-			BlindProfile: domain.BlindProfile{},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "netapp",
 				Employees: "11,000",
@@ -2888,7 +2938,9 @@ func companiesPart4() []domain.CompanyProfile {
 				AssociatedMembers: "7,565",
 				Verified:          true,
 			},
-			BlindProfile: domain.BlindProfile{},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "trend-micro",
 				Employees: "7,000",
@@ -2998,7 +3050,9 @@ func companiesPart4() []domain.CompanyProfile {
 				AssociatedMembers: "980",
 				Verified:          true,
 			},
-			BlindProfile: domain.BlindProfile{},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "kargo",
 				Employees: "67",
@@ -3051,7 +3105,9 @@ func companiesPart4() []domain.CompanyProfile {
 				AssociatedMembers: "1,253",
 				Verified:          true,
 			},
-			BlindProfile: domain.BlindProfile{},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "salesloft",
 				Employees: "740",
@@ -3152,7 +3208,9 @@ func companiesPart4() []domain.CompanyProfile {
 				AssociatedMembers: "42,800",
 				Verified:          true,
 			},
-			BlindProfile: domain.BlindProfile{},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "h-e-b",
 				Employees: "23,870",
