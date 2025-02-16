@@ -4,11 +4,12 @@ console.log("Blind company profile data copy extension loaded");
 document.body.addEventListener("keydown", (event) => {
     // Y is for English, Н is for Ukrainian
     if (event.ctrlKey && event.shiftKey && (event.key === "Y" || event.key === "Н")) {
-        const { ratingValue, ratingCount } = getEmployerRating();
+        const {ratingValue, ratingCount} = getEmployerRating();
+        const {employees, salary} = getCompanyInfo();
 
         const goBlindProfileColumns = `				Alias:       "${parseVanityName(window.location.href)}",
-				Employees:   "",
-				Salary:      "",
+				Employees:   "${employees}",
+				Salary:      "${salary}",
 				Reviews:     "${ratingCount}",
 				ReviewsRate: "${ratingValue}",`
 
@@ -71,4 +72,30 @@ function getEmployerRating() {
     };
 }
 
+function getCompanyInfo() {
+    const $overview = document.querySelector("h1");
 
+    if ($overview === null) {
+        return {
+            employees: "",
+            salary: "",
+        };
+    }
+
+    let employees = "";
+    let salary = "";
+
+    const $children = $overview.nextElementSibling.querySelectorAll("div.text-sm");
+    for (const $child of $children) {
+        if ($child.textContent.trim() === "Size") {
+            employees = $child.nextElementSibling.textContent.trim()
+                .replace("employees", "")
+                .trim();
+        }
+        if ($child.textContent.trim() === "Salary") {
+            salary = $child.nextElementSibling.textContent.trim();
+        }
+    }
+
+    return {employees, salary};
+}
