@@ -5657,7 +5657,11 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified: true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Just-Eat-Takeaway",
+				Employees:   "10,000+",
+				Salary:      "-",
+				Reviews:     "15",
+				ReviewsRate: "3.2",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "just-eat",
@@ -5741,7 +5745,11 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified: true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Sixt",
+				Employees:   "5,001 to 10,000",
+				Salary:      "$30K ~ $134K a year",
+				Reviews:     "50",
+				ReviewsRate: "3.2",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "sixt",
@@ -5806,7 +5814,11 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Motorola-Mobility",
+				Employees:   "1,001 to 5,000",
+				Salary:      "$37K ~ $216K a year",
+				Reviews:     "116",
+				ReviewsRate: "3.5",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "motorola-solutions",
@@ -5876,7 +5888,11 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Samsung",
+				Employees:   "10,000+",
+				Salary:      "$22K ~ $283K a year",
+				Reviews:     "868",
+				ReviewsRate: "3.1",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "samsung",
@@ -6145,7 +6161,11 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified: true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Stream",
+				Employees:   "51-200",
+				Salary:      "-",
+				Reviews:     "2",
+				ReviewsRate: "3.5",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "getstreamio",
@@ -6282,7 +6302,11 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified: true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Form3",
+				Employees:   "501 to 1,000",
+				Salary:      "-",
+				Reviews:     "",
+				ReviewsRate: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "form3",
@@ -6414,7 +6438,11 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "splunk",
+				Employees:   "5,001 to 10,000",
+				Salary:      "$78K ~ $340K a year",
+				Reviews:     "882",
+				ReviewsRate: "3.6",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "splunk",
@@ -6552,7 +6580,11 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "hellofresh",
+				Employees:   "5,001 to 10,000",
+				Salary:      "$65K ~ $185K a year",
+				Reviews:     "90",
+				ReviewsRate: "3.2",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "hellofresh",
@@ -6772,7 +6804,11 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified: true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Delivery-Hero",
+				Employees:   "10,000+",
+				Salary:      "-",
+				Reviews:     "287",
+				ReviewsRate: "3.3",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "delivery-hero",
@@ -6929,7 +6965,11 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "fuboTV",
+				Employees:   "201 to 500",
+				Salary:      "$115K ~ $245K a year",
+				Reviews:     "25",
+				ReviewsRate: "3.4",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "fubotv",
@@ -7652,7 +7692,11 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified: true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Lightspeed-POS",
+				Employees:   "1,001 to 5,000",
+				Salary:      "$62K ~ $250K a year",
+				Reviews:     "43",
+				ReviewsRate: "3.1",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "lightspeed-commerce",
@@ -7745,7 +7789,11 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified: true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "squarespace",
+				Employees:   "501 to 1,000",
+				Salary:      "$49K ~ $262K a year",
+				Reviews:     "195",
+				ReviewsRate: "3.7",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "squarespace",
