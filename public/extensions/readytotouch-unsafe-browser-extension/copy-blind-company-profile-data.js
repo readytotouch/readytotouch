@@ -4,11 +4,13 @@ console.log("Blind company profile data copy extension loaded");
 document.body.addEventListener("keydown", (event) => {
     // Y is for English, Н is for Ukrainian
     if (event.ctrlKey && event.shiftKey && (event.key === "Y" || event.key === "Н")) {
+        const { ratingValue, ratingCount } = getEmployerRating();
+
         const goBlindProfileColumns = `				Alias:       "${parseVanityName(window.location.href)}",
 				Employees:   "",
 				Salary:      "",
-				Reviews:     "",
-				ReviewsRate: "",`
+				Reviews:     "${ratingCount}",
+				ReviewsRate: "${ratingValue}",`
 
         navigator.clipboard.writeText(goBlindProfileColumns)
             .then(() => console.log("Page info copied to clipboard:", goBlindProfileColumns))
@@ -45,3 +47,28 @@ function parseVanityName(url) {
 
     return parsedUrl.pathname.substring(prefix.length, end);
 }
+
+function getEmployerRating() {
+    const $scripts = document.querySelectorAll('script[type="application/ld+json"]');
+
+    for (const $script of $scripts) {
+        try {
+            const json = JSON.parse($script.textContent.trim());
+            if (json["@type"] === "EmployerAggregateRating") {
+                return {
+                    ratingValue: json.ratingValue,
+                    ratingCount: json.ratingCount
+                };
+            }
+        } catch (error) {
+            console.error("Error parsing JSON-LD:", error);
+        }
+    }
+
+    return {
+        ratingValue: "",
+        ratingCount: ""
+    };
+}
+
+
