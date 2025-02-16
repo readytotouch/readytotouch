@@ -10657,6 +10657,16 @@ func companiesPart2() []domain.CompanyProfile {
 				Alias:     "shopee",
 				Employees: "34,130",
 			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Shopee-EI_IE1263091.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Shopee-Reviews-E1263091.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Shopee-Jobs-E1263091.htm",
+				Jobs:        "1.5K",
+				Reviews:     "11K",
+				Salaries:    "16K",
+				ReviewsRate: "3.7",
+				Verified:    true,
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -10698,6 +10708,31 @@ func companiesPart2() []domain.CompanyProfile {
 				Employees:         "51-200",
 				AssociatedMembers: "163",
 				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias:       "",
+				Employees:   "",
+				Salary:      "",
+				Reviews:     "",
+				ReviewsRate: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "",
+				Employees: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Guardsquare-EI_IE1480913.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Guardsquare-Reviews-E1480913.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Guardsquare-Jobs-E1480913.htm",
+				Jobs:        "17",
+				Reviews:     "27",
+				Salaries:    "57",
+				ReviewsRate: "3.5",
+				Verified:    true,
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -10755,6 +10790,16 @@ func companiesPart2() []domain.CompanyProfile {
 				Alias:     "jfrog",
 				Employees: "960",
 			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-JFrog-EI_IE553835.11,16.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/JFrog-Reviews-E553835.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/JFrog-Jobs-E553835.htm",
+				Jobs:        "83",
+				Reviews:     "434",
+				Salaries:    "640",
+				ReviewsRate: "4.1",
+				Verified:    true,
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -10798,6 +10843,16 @@ func companiesPart2() []domain.CompanyProfile {
 				Employees:         "10K+",
 				AssociatedMembers: "122,744",
 				Verified:          true,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-HP-Inc-EI_IE1093161.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/HP-Inc-Reviews-E1093161.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/HP-Inc-Jobs-E1093161.htm",
+				Jobs:        "902",
+				Reviews:     "12K",
+				Salaries:    "22K",
+				ReviewsRate: "4.1",
+				Verified:    true,
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -10847,6 +10902,16 @@ func companiesPart2() []domain.CompanyProfile {
 				Alias:     "mirantis",
 				Employees: "960",
 			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Mirantis-EI_IE30718.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Mirantis-Reviews-E30718.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Mirantis-Jobs-E30718.htm",
+				Jobs:        "1",
+				Reviews:     "215",
+				Salaries:    "362",
+				ReviewsRate: "3.2",
+				Verified:    true,
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -10895,6 +10960,16 @@ func companiesPart2() []domain.CompanyProfile {
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "zscaler",
 				Employees: "3,500",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Zscaler-EI_IE359434.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Zscaler-Reviews-E359434.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Zscaler-Jobs-E359434.htm",
+				Jobs:        "3",
+				Reviews:     "2.4K",
+				Salaries:    "2.9K",
+				ReviewsRate: "3.8",
+				Verified:    true,
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -10974,6 +11049,16 @@ func companiesPart2() []domain.CompanyProfile {
 				Alias:     "pure-storage",
 				Employees: "4,250",
 			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Pure-Storage-EI_IE364364.11,23.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Pure-Storage-Reviews-E364364.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Pure-Storage-Jobs-E364364.htm",
+				Jobs:        "104",
+				Reviews:     "1.1K",
+				Salaries:    "2.6K",
+				ReviewsRate: "3.9",
+				Verified:    true,
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -11042,6 +11127,16 @@ func companiesPart2() []domain.CompanyProfile {
 				Alias:     "teya",
 				Employees: "1,500",
 			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Teya-EI_IE4590631.11,15.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Teya-Reviews-E4590631.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Teya-Jobs-E4590631.htm",
+				Jobs:        "80",
+				Reviews:     "335",
+				Salaries:    "605",
+				ReviewsRate: "3.4",
+				Verified:    true,
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -11103,6 +11198,16 @@ func companiesPart2() []domain.CompanyProfile {
 				Alias:     "tomtom",
 				Employees: "5,500",
 			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-TomTom-EI_IE38808.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/TomTom-Reviews-E38808.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/TomTom-Jobs-E38808.htm",
+				Jobs:        "57",
+				Reviews:     "1.5K",
+				Salaries:    "2.6K",
+				ReviewsRate: "4.0",
+				Verified:    true,
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -11150,6 +11255,16 @@ func companiesPart2() []domain.CompanyProfile {
 				Alias:     "postscript",
 				Employees: "150",
 			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Postscript-EI_IE3275897.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Postscript-Reviews-E3275897.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Postscript-Jobs-E3275897.htm",
+				Jobs:        "7",
+				Reviews:     "64",
+				Salaries:    "156",
+				ReviewsRate: "4.1",
+				Verified:    true,
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -11189,6 +11304,16 @@ func companiesPart2() []domain.CompanyProfile {
 				Employees:         "51-200",
 				AssociatedMembers: "51",
 				Verified:          false,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Impossible-Cloud-EI_IE8848949.11,27.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Impossible-Cloud-Reviews-E8848949.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Impossible-Cloud-Jobs-E8848949.htm",
+				Jobs:        "16",
+				Reviews:     "5",
+				Salaries:    "5",
+				ReviewsRate: "4.8",
+				Verified:    true,
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -11236,6 +11361,16 @@ func companiesPart2() []domain.CompanyProfile {
 				Alias:     "arista-networks",
 				Employees: "3,000",
 			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Arista-Networks-EI_IE295128.11,26.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Arista-Networks-Reviews-E295128.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Arista-Networks-Jobs-E295128.htm",
+				Jobs:        "228",
+				Reviews:     "1.2K",
+				Salaries:    "2.7K",
+				ReviewsRate: "4.1",
+				Verified:    true,
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -11278,6 +11413,16 @@ func companiesPart2() []domain.CompanyProfile {
 				Employees:         "11-50",
 				AssociatedMembers: "15",
 				Verified:          false,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+				ReviewsURL:  "",
+				JobsURL:     "",
+				Jobs:        "",
+				Reviews:     "",
+				Salaries:    "",
+				ReviewsRate: "",
+				Verified:    false,
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -11322,6 +11467,16 @@ func companiesPart2() []domain.CompanyProfile {
 				Employees:         "11-50",
 				AssociatedMembers: "239",
 				Verified:          false,
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Lemfi-EI_IE9756661.11,16.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Lemfi-Reviews-E9756661.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Lemfi-Jobs-E9756661.htm",
+				Jobs:        "11",
+				Reviews:     "8",
+				Salaries:    "12",
+				ReviewsRate: "3.9",
+				Verified:    false,
 			},
 			Languages: domain.Languages{
 				domain.Go: {
