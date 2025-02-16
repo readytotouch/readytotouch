@@ -132,6 +132,7 @@ func companiesPart5() []domain.CompanyProfile {
 				Login:    "CenturyLink",
 				Verified: false,
 			},
+			BlindProfile: domain.BlindProfile{},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "lumen",
 				Employees: "54,000",
@@ -189,6 +190,7 @@ func companiesPart5() []domain.CompanyProfile {
 				Login:    "sassoftware",
 				Verified: true,
 			},
+			BlindProfile: domain.BlindProfile{},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "sas-software",
 				Employees: "14,000",
@@ -352,6 +354,7 @@ func companiesPart5() []domain.CompanyProfile {
 				Login:    "",
 				Verified: false,
 			},
+			BlindProfile: domain.BlindProfile{},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "koch-industries",
 				Employees: "31,510",
@@ -464,6 +467,7 @@ func companiesPart5() []domain.CompanyProfile {
 				Login:    "groq",
 				Verified: true,
 			},
+			BlindProfile: domain.BlindProfile{},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "groq",
 				Employees: "150",
@@ -582,6 +586,7 @@ func companiesPart5() []domain.CompanyProfile {
 				Login:    "zendesk",
 				Verified: true,
 			},
+			BlindProfile: domain.BlindProfile{},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "zendesk",
 				Employees: "3,500",
@@ -725,6 +730,7 @@ func companiesPart5() []domain.CompanyProfile {
 				Login:    "enterprisedb",
 				Verified: false,
 			},
+			BlindProfile: domain.BlindProfile{},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "enterprisedb",
 				Employees: "990",
@@ -791,6 +797,7 @@ func companiesPart5() []domain.CompanyProfile {
 				Login:    "altairengineering",
 				Verified: false,
 			},
+			BlindProfile: domain.BlindProfile{},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "altair",
 				Employees: "3,500",
@@ -909,6 +916,7 @@ func companiesPart5() []domain.CompanyProfile {
 				Login:    "",
 				Verified: false,
 			},
+			BlindProfile: domain.BlindProfile{},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "nn-group",
 				Employees: "",
@@ -966,6 +974,7 @@ func companiesPart5() []domain.CompanyProfile {
 				Login:    "americanairlines",
 				Verified: false,
 			},
+			BlindProfile: domain.BlindProfile{},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "american-airlines",
 				Employees: "134,000",
@@ -1140,6 +1149,7 @@ func companiesPart5() []domain.CompanyProfile {
 				Login:    "",
 				Verified: false,
 			},
+			BlindProfile: domain.BlindProfile{},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "maya",
 				Employees: "960",
@@ -1196,6 +1206,7 @@ func companiesPart5() []domain.CompanyProfile {
 				Login:    "",
 				Verified: false,
 			},
+			BlindProfile: domain.BlindProfile{},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "ashley-furniture-industries",
 				Employees: "4,250",
