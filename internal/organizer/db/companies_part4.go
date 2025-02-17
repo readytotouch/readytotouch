@@ -2806,7 +2806,11 @@ func companiesPart4() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "ThousandEyes",
+				Employees:   "201 to 500",
+				Salary:      "$140K ~ $205K a year",
+				Reviews:     "16",
+				ReviewsRate: "3.7",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "thousandeyes",
@@ -2864,7 +2868,11 @@ func companiesPart4() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "u.s.bank",
+				Employees:   "10,000+",
+				Salary:      "$37K ~ $192K a year",
+				Reviews:     "126",
+				ReviewsRate: "3.5",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "us-bank",
@@ -2919,7 +2927,11 @@ func companiesPart4() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "NetApp",
+				Employees:   "10,000+",
+				Salary:      "$71K ~ $250K a year",
+				Reviews:     "279",
+				ReviewsRate: "3.6",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "netapp",
@@ -2995,7 +3007,11 @@ func companiesPart4() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Trend-Micro",
+				Employees:   "5,001 to 10,000",
+				Salary:      "$60K ~ $175K a year",
+				Reviews:     "74",
+				ReviewsRate: "3.6",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "trend-micro",
