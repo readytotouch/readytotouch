@@ -72,7 +72,11 @@ func companiesPart4() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Varonis-Systems",
+				Employees:   "1,001 to 5,000",
+				Salary:      "",
+				Reviews:     "8",
+				ReviewsRate: "4.0",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "varonis",
@@ -255,7 +259,11 @@ func companiesPart4() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "WEX",
+				Employees:   "1,001 to 5,000",
+				Salary:      "$78K ~ $205K a year",
+				Reviews:     "23",
+				ReviewsRate: "3.5",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "wex",
@@ -322,7 +330,11 @@ func companiesPart4() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Comcast",
+				Employees:   "10,000+",
+				Salary:      "$40K ~ $255K a year",
+				Reviews:     "424",
+				ReviewsRate: "3.4",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "comcast",
@@ -389,7 +401,11 @@ func companiesPart4() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "SEMrush",
+				Employees:   "1,001 to 5,000",
+				Salary:      "",
+				Reviews:     "5",
+				ReviewsRate: "3.2",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "semrush",
@@ -872,7 +888,11 @@ func companiesPart4() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Miracle-Software-Systems",
+				Employees:   "1,001 to 5,000",
+				Salary:      "",
+				Reviews:     "10",
+				ReviewsRate: "3.4",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "miracle-software-systems",
@@ -1163,6 +1183,14 @@ func companiesPart4() []domain.CompanyProfile {
 				AssociatedMembers: "524",
 				Verified:          true,
 			},
+			BlindProfile: domain.BlindProfile{
+				Alias:       "Gorilla-Logic",
+				Employees:   "201 to 500",
+				Salary:      "",
+				Reviews:     "2",
+				ReviewsRate: "4.5",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Gorilla-Logic-EI_IE484381.11,24.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Gorilla-Logic-Reviews-E484381.htm",
@@ -1260,7 +1288,11 @@ func companiesPart4() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Getir",
+				Employees:   "1,001 to 5,000",
+				Salary:      "",
+				Reviews:     "12",
+				ReviewsRate: "2.4",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "getir",
@@ -1490,7 +1522,11 @@ func companiesPart4() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "OpenX",
+				Employees:   "201 to 500",
+				Salary:      "",
+				Reviews:     "8",
+				ReviewsRate: "3.1",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "openx",
@@ -1544,7 +1580,11 @@ func companiesPart4() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Lenskartcom",
+				Employees:   "10,000+",
+				Salary:      "",
+				Reviews:     "",
+				ReviewsRate: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "lenskart",
@@ -1599,7 +1639,11 @@ func companiesPart4() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Lowes",
+				Employees:   "10,000+",
+				Salary:      "$21K ~ $234K a year",
+				Reviews:     "185",
+				ReviewsRate: "3.5",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "lowes",
@@ -1674,7 +1718,11 @@ func companiesPart4() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Huntress",
+				Employees:   "201 to 500",
+				Salary:      "",
+				Reviews:     "12",
+				ReviewsRate: "3.3",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "huntress",
@@ -1785,7 +1833,11 @@ func companiesPart4() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Waystar",
+				Employees:   "1,001 to 5,000",
+				Salary:      "",
+				Reviews:     "6",
+				ReviewsRate: "3.2",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "waystar",
@@ -2194,7 +2246,11 @@ func companiesPart4() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Textnow",
+				Employees:   "51 to 200",
+				Salary:      "",
+				Reviews:     "16",
+				ReviewsRate: "4.3",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "textnow",

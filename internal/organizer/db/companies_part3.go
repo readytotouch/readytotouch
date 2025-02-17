@@ -3156,7 +3156,11 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "DRW",
+				Employees:   "1,001 to 5,000",
+				Salary:      "$80K ~ $200K a year",
+				Reviews:     "88",
+				ReviewsRate: "3.9",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "drw",
@@ -3222,7 +3226,11 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "NICE-Ltd",
+				Employees:   "5,001 to 10,000",
+				Salary:      "$90K ~ $200K a year",
+				Reviews:     "26",
+				ReviewsRate: "3.4",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "nice",
@@ -3294,7 +3302,11 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Maersk",
+				Employees:   "10,000+",
+				Salary:      "$26K ~ $105K a year",
+				Reviews:     "58",
+				ReviewsRate: "3.8",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "maersk",
