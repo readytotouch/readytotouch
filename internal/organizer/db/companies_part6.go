@@ -95,7 +95,9 @@ func companiesPart6() []domain.CompanyProfile {
 							Title:            "Software Engineer (C++/Golang/Systems Development)",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4110235695/",
-							Date:             mustDate("2024-12-26"),
+							Date:             mustDate("2025-02-15"), // mustDate("2024-12-26"),
+							WithSalary:       false,
+							Remote:           false,
 						},
 					},
 				},
@@ -156,6 +158,15 @@ func companiesPart6() []domain.CompanyProfile {
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4105560497/",
 							Date:             mustDate("2024-12-24"),
+						},
+						{
+							Title:                "Senior Engineer — Rust",
+							ShortDescription:     "Spacecraft Flight Software",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4145412132/",
+							Date:                 mustDate("2025-02-10"),
+							WithSalary:           true, // $150.000 - $200.000 per year
+							Remote:               false,
 						},
 					},
 				},
@@ -408,6 +419,15 @@ func companiesPart6() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4151624125/",
 							Date:                 mustDate("2025-02-13"),
 							WithSalary:           true, // salary range $103,200 - $209,000
+							Remote:               false,
+						},
+						{
+							Title:                "Lead Rust Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4081194563/",
+							Date:                 mustDate("2025-02-15"),
+							WithSalary:           true, // $114.800 - $232.600 per year
 							Remote:               false,
 						},
 					},

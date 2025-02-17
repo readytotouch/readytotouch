@@ -1183,8 +1183,8 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4125175696/",
-							Date:                 mustDate("2025-01-16"),
-							WithSalary:           true, // $60.00 - $77.00/ hr
+							Date:                 mustDate("2025-02-15"), // mustDate("2025-01-16"),
+							WithSalary:           true,                   // $60.00 - $77.00/ hr
 							Remote:               false,
 						},
 					},
@@ -2240,7 +2240,20 @@ func companiesPart8() []domain.CompanyProfile {
 						},
 					},
 				},
-				domain.Rust:    {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Embedded Software Engineer - Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4125038308/",
+							Date:                 mustDate("2025-02-15"),
+							WithSalary:           true, // $89.300 - 198.900 per year
+							Remote:               true,
+						},
+					},
+				},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},
@@ -2773,9 +2786,22 @@ func companiesPart8() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			Languages: domain.Languages{
-				domain.Go:   {},
-				domain.Rust: {},
-				domain.Zig:  {},
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Staff Engineer — Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4146988578/",
+							Date:                 mustDate("2025-02-10"),
+							WithSalary:           true, // $175.000 - $205.000 per year
+							Remote:               true,
+						},
+					},
+				},
+				domain.Zig: {},
 				domain.Scala: {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
@@ -3978,6 +4004,199 @@ func companiesPart8() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Communication AI platform for businesses",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Akamai Technologies",
+			Website: "https://www.akamai.com/",
+			Careers: "https://www.akamai.com/careers",
+			About:   "https://www.akamai.com/company",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3925,
+				Alias:             "akamai-technologies",
+				Name:              "Akamai Technologies",
+				Followers:         "406K",
+				Employees:         "5K-10K",
+				AssociatedMembers: "10,005",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Kubernetes Go Software Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4130238899/",
+							Date:                 mustDate("2025-02-15"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American global content delivery network (CDN), cloud services and a cyber-security company.",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Nasdaq",
+			Website: "https://www.nasdaq.com/",
+			Careers: "https://www.nasdaq.com/about/careers",
+			About:   "https://www.nasdaq.com/about",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                5128,
+				Alias:             "nasdaq",
+				Name:              "Nasdaq",
+				Followers:         "522K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "7,188",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "Nasdaq",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Go Backend Software Developer Senior Specialist",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4153154012/",
+							Date:                 mustDate("2025-02-15"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American stock market exchange",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Qualcomm",
+			Website: "https://www.qualcomm.com/",
+			Careers: "https://www.qualcomm.com/company/careers",
+			About:   "https://www.qualcomm.com/company#about",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2017,
+				Alias:             "qualcomm",
+				Name:              "Qualcomm",
+				Followers:         "2M",
+				Employees:         "10K+",
+				AssociatedMembers: "45,569",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "qualcomm",
+				Verified: false,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer (Python, Java, Golang)",
+							ShortDescription:     "Observability",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4043283281/",
+							Date:                 mustDate("2025-02-15"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American designs and develops wireless telecommunication products and services",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Tesla",
+			Website: "https://www.tesla.com/",
+			Careers: "https://www.tesla.com/careers",
+			About:   "https://www.tesla.com/about",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                15564,
+				Alias:             "tesla-motors",
+				Name:              "Tesla",
+				Followers:         "12M",
+				Employees:         "10K+",
+				AssociatedMembers: "68,627",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "teslamotors",
+				Verified: true,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer — Golang",
+							ShortDescription:     "Infrastructure",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4153462892/",
+							Date:                 mustDate("2025-02-15"),
+							WithSalary:           true, // $111,200 - $433,680 per year + cash and stock awards + benefits
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Rust Software Engineer",
+							ShortDescription:     "Vehicle Simulation",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4146191943/",
+							Date:                 mustDate("2025-02-10"),
+							WithSalary:           true, // $133,440 - $292,800 per year + cash and stock awards + benefits
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American multinational  electric vehicle manufacturer and clean energy company",
 		},
 
 		// Template short
