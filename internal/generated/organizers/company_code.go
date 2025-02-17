@@ -627,6 +627,10 @@ var (
 		"tenableinc":                          624, // Tenable
 		"ramp":                                625, // Ramp
 		"usehatchapp":                         626, // Hatch
+		"akamai-technologies":                 627, // Akamai Technologies
+		"nasdaq":                              628, // Nasdaq
+		"qualcomm":                            629, // Qualcomm
+		"tesla-motors":                        630, // Tesla
 
 	}
 )
