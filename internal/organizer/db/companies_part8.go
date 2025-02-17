@@ -2244,7 +2244,7 @@ func companiesPart8() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Senior Embedded Software Engineer - Rust",
+							Title:                "Senior Embedded Software Engineer — Rust",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4125038308/",
@@ -2885,7 +2885,7 @@ func companiesPart8() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "Cloud-based presentation software that allows users to create dynamic and interactive presentations.",
+			ShortDescription: "Cloud-based presentation software that allows users to create dynamic and interactive presentations",
 		},
 
 		{
@@ -3381,7 +3381,7 @@ func companiesPart8() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "Company specializing in software development for data integration, analytics, and artificial intelligence.",
+			ShortDescription: "Company specializing in software development for data integration, analytics, and artificial intelligence",
 		},
 
 		{
@@ -4015,6 +4015,7 @@ func companiesPart8() []domain.CompanyProfile {
 			About:   "https://www.akamai.com/company",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                3925,
+				IDs:               []int{3925, 10173600, 11072913},
 				Alias:             "akamai-technologies",
 				Name:              "Akamai Technologies",
 				Followers:         "406K",
@@ -4048,7 +4049,7 @@ func companiesPart8() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "American global content delivery network (CDN), cloud services and a cyber-security company.",
+			ShortDescription: "American global content delivery network (CDN), cloud services and a cyber-security company",
 		},
 
 		{
@@ -4060,6 +4061,7 @@ func companiesPart8() []domain.CompanyProfile {
 			About:   "https://www.nasdaq.com/about",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                5128,
+				IDs:               nil,
 				Alias:             "nasdaq",
 				Name:              "Nasdaq",
 				Followers:         "522K",
@@ -4076,11 +4078,11 @@ func companiesPart8() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Go Backend Software Developer Senior Specialist",
+							Title:                "Go Backend Software Developer Senior",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4153154012/",
-							Date:                 mustDate("2025-02-15"),
+							Date:                 mustDate("2025-02-14"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -4105,11 +4107,12 @@ func companiesPart8() []domain.CompanyProfile {
 			About:   "https://www.qualcomm.com/company#about",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                2017,
+				IDs:               []int{2017, 38387, 154985, 162572, 595224, 2923434, 75115234},
 				Alias:             "qualcomm",
 				Name:              "Qualcomm",
 				Followers:         "2M",
 				Employees:         "10K+",
-				AssociatedMembers: "45,569",
+				AssociatedMembers: "45,564",
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -4150,11 +4153,12 @@ func companiesPart8() []domain.CompanyProfile {
 			About:   "https://www.tesla.com/about",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                15564,
+				IDs:               []int{15564, 240767},
 				Alias:             "tesla-motors",
 				Name:              "Tesla",
 				Followers:         "12M",
 				Employees:         "10K+",
-				AssociatedMembers: "68,627",
+				AssociatedMembers: "68,584",
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -4196,7 +4200,7 @@ func companiesPart8() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "American multinational  electric vehicle manufacturer and clean energy company",
+			ShortDescription: "American multinational electric vehicle manufacturer and clean energy company",
 		},
 
 		// Template short

@@ -3486,10 +3486,13 @@ func companiesPart2() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 1,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Go — Senior Developer",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/3968183921/",
-							Date:             mustDate("2025-02-10"), // mustDate("2025-01-06"), // mustDate("2024-12-20"),
+							Title:                "Go — Senior Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/3968183921/",
+							Date:                 mustDate("2025-02-10"), // mustDate("2025-01-06"), // mustDate("2024-12-20"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 						{
 							Title:                "Senior Go Developer",
@@ -4558,7 +4561,7 @@ func companiesPart2() []domain.CompanyProfile {
 							ShortDescription:     "Research Scientist",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4119771556/",
-							Date:                 mustDate(""),
+							Date:                 mustDate("2025-02-15"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -5386,7 +5389,7 @@ func companiesPart2() []domain.CompanyProfile {
 							Remote:               false,
 						},
 						{
-							Title:                "Senior Backend Software Engineer, Java / Go",
+							Title:                "Senior Backend Software Engineer, Java/Go",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4156169083/",
@@ -10384,15 +10387,6 @@ func companiesPart2() []domain.CompanyProfile {
 							Date:                 mustDate("2024-11-17"),
 							WithSalary:           false,
 							Remote:               false,
-						},
-						{
-							Title:                "Software Engineer (Golang)",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "https://www.linkedin.com/jobs/view/4151347620/",
-							Date:                 mustDate("2025-02-13"),
-							WithSalary:           false,
-							Remote:               true,
 						},
 						{
 							Title:                "Software Engineer (Golang)",
