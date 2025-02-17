@@ -2240,7 +2240,20 @@ func companiesPart8() []domain.CompanyProfile {
 						},
 					},
 				},
-				domain.Rust:    {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Embedded Software Engineer - Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4125038308/",
+							Date:                 mustDate("2025-02-15"),
+							WithSalary:           true, // $89.300 - 198.900 per year
+							Remote:               true,
+						},
+					},
+				},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},
@@ -2773,9 +2786,22 @@ func companiesPart8() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			Languages: domain.Languages{
-				domain.Go:   {},
-				domain.Rust: {},
-				domain.Zig:  {},
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Staff Engineer — Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4146988578/",
+							Date:                 mustDate("2025-02-10"),
+							WithSalary:           true, // $175.000 - $205.000 per year
+							Remote:               true,
+						},
+					},
+				},
+				domain.Zig: {},
 				domain.Scala: {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
@@ -4150,7 +4176,20 @@ func companiesPart8() []domain.CompanyProfile {
 						},
 					},
 				},
-				domain.Rust:    {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Rust Software Engineer",
+							ShortDescription:     "Vehicle Simulation",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4146191943/",
+							Date:                 mustDate("2025-02-10"),
+							WithSalary:           true, // $133,440 - $292,800 per year + cash and stock awards + benefits
+							Remote:               false,
+						},
+					},
+				},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},
