@@ -987,7 +987,7 @@ func companiesPart3() []domain.CompanyProfile {
 							Title:                "Senior Software Engineer Goland",
 							ShortDescription:     "Operations Software",
 							SwitchingOpportunity: "",
-							URL:                  "",
+							URL:                  "https://www.linkedin.com/jobs/view/4025814866/",
 							Date:                 mustDate("2025-02-15"),
 							WithSalary:           false,
 							Remote:               false,
