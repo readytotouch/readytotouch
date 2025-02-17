@@ -5160,7 +5160,11 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified: true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Teachable",
+				Employees:   "51 to 200",
+				Salary:      "",
+				Reviews:     "17",
+				ReviewsRate: "3.5",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "teachable",
@@ -5226,7 +5230,11 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Lloyds-Bank",
+				Employees:   "10,000+",
+				Salary:      "",
+				Reviews:     "13",
+				ReviewsRate: "3.2",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "lloyds-banking-group",
@@ -5295,7 +5303,11 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "CyberArk",
+				Employees:   "1,001 to 5,000",
+				Salary:      "$110K ~ $228K a year",
+				Reviews:     "22",
+				ReviewsRate: "3.8",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "cyberark",
@@ -5750,7 +5762,11 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "abbott",
+				Employees:   "10,000+",
+				Salary:      "$47K ~ $240K a year",
+				Reviews:     "141",
+				ReviewsRate: "3.4",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "abbott",
@@ -5904,7 +5920,11 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "jpmorgan",
+				Employees:   "10,000+",
+				Salary:      "$42K ~ $250K a year",
+				Reviews:     "2,157",
+				ReviewsRate: "3.5",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "jpmorgan-chase",
@@ -6011,7 +6031,11 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified: true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Outreach",
+				Employees:   "501 to 1,000",
+				Salary:      "$60K ~ $270K a year",
+				Reviews:     "195",
+				ReviewsRate: "3.1",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "outreach",
@@ -6085,7 +6109,11 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Tucows",
+				Employees:   "501 to 1,000",
+				Salary:      "",
+				Reviews:     "8",
+				ReviewsRate: "3.0",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "tucows",
@@ -6152,7 +6180,11 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "ING-Group",
+				Employees:   "10,000+",
+				Salary:      "$70K ~ $170K a year",
+				Reviews:     "46",
+				ReviewsRate: "3.5",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "ing",
@@ -6221,7 +6253,11 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified: true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Remitly",
+				Employees:   "201 to 500",
+				Salary:      "$17K ~ $350K a year",
+				Reviews:     "122",
+				ReviewsRate: "4.0",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "remitly",
@@ -6405,7 +6441,11 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "bill.com",
+				Employees:   "501 to 1,000",
+				Salary:      "$70K ~ $1.4M a year",
+				Reviews:     "145",
+				ReviewsRate: "3.7",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "billcom",
@@ -6916,7 +6956,11 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "mimecast",
+				Employees:   "1,001 to 5,000",
+				Salary:      "",
+				Reviews:     "10",
+				ReviewsRate: "3.3",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "mimecast",
@@ -6992,7 +7036,11 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified: true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Sentry",
+				Employees:   "1,001 to 5,000",
+				Salary:      "",
+				Reviews:     "33",
+				ReviewsRate: "3.6",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "sentry",
@@ -7343,7 +7391,11 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Second-Spectrum-Inc",
+				Employees:   "51 to 200",
+				Salary:      "",
+				Reviews:     "4",
+				ReviewsRate: "4.0",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "second-spectrum",
@@ -7416,7 +7468,11 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Worldpay",
+				Employees:   "5,001 to 10,000",
+				Salary:      "",
+				Reviews:     "5",
+				ReviewsRate: "3.0",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "",
@@ -7512,7 +7568,11 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Exabeam",
+				Employees:   "501 to 1,000",
+				Salary:      "$50K ~ $290K a year",
+				Reviews:     "72",
+				ReviewsRate: "3.3",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "exabeam",
@@ -7589,7 +7649,11 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Selby-Jennings",
+				Employees:   "501 to 1,000",
+				Salary:      "",
+				Reviews:     "3",
+				ReviewsRate: "3.0",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "",
@@ -7662,7 +7726,11 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "DataBeacon",
+				Employees:   "1 to 50",
+				Salary:      "",
+				Reviews:     "",
+				ReviewsRate: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "",
@@ -7735,7 +7803,11 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Mntn",
+				Employees:   "201 to 500 Employees",
+				Salary:      "",
+				Reviews:     "7",
+				ReviewsRate: "4.1",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "mntn",
@@ -7815,7 +7887,11 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Writer",
+				Employees:   "51 to 200 Employees",
+				Salary:      "",
+				Reviews:     "3",
+				ReviewsRate: "3.0",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "writer",
@@ -8036,7 +8112,11 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Millennium-Management",
+				Employees:   "1,001 to 5,000",
+				Salary:      "$80K ~ $274K a year",
+				Reviews:     "89",
+				ReviewsRate: "3.5",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "millennium",
@@ -8255,7 +8335,11 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "bloomberg",
+				Employees:   "10,000+",
+				Salary:      "$66K ~ $360K a year",
+				Reviews:     "1,864",
+				ReviewsRate: "4.0",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "bloomberg",
@@ -8481,7 +8565,11 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Gartner",
+				Employees:   "10,000+",
+				Salary:      "$25K ~ $255K a year",
+				Reviews:     "178",
+				ReviewsRate: "3.6",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "gartner",
@@ -8557,7 +8645,11 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Extreme-Networks",
+				Employees:   "1,001 to 5,000",
+				Salary:      "$125K ~ $230K a year",
+				Reviews:     "21",
+				ReviewsRate: "2.8",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "extreme-networks",
@@ -8639,7 +8731,11 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Yalo",
+				Employees:   "51 to 200",
+				Salary:      "",
+				Reviews:     "1",
+				ReviewsRate: "5.0",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "yalo",
@@ -8777,7 +8873,11 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "synopsys",
+				Employees:   "10,000+ Employees",
+				Salary:      "$65K ~ $260K a year",
+				Reviews:     "384",
+				ReviewsRate: "3.5",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "synopsys",
@@ -8853,7 +8953,11 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "PubMatic",
+				Employees:   "501 to 1,000",
+				Salary:      "$48K ~ $202K a year",
+				Reviews:     "30",
+				ReviewsRate: "4.1",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "pubmatic",
@@ -8928,7 +9032,11 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Fanatics",
+				Employees:   "1,001 to 5,000",
+				Salary:      "$72K ~ $365K a year",
+				Reviews:     "76",
+				ReviewsRate: "3.3",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "fanatics",
