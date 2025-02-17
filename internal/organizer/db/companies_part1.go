@@ -75,7 +75,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Login:    "dochq",
 				Verified: true,
 			},
-			BlindProfile:     domain.BlindProfile{},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -2165,7 +2167,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Login:    "docker",
 				Verified: true,
 			},
-			BlindProfile:     domain.BlindProfile{},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Docker-EI_IE1089506.11,17.htm",
@@ -8350,7 +8354,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Login:    "arenko-group",
 				Verified: false,
 			},
-			BlindProfile:     domain.BlindProfile{},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Arenko-Group-EI_IE4554199.11,23.htm",
@@ -12454,7 +12460,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Login:    "",
 				Verified: false,
 			},
-			BlindProfile:     domain.BlindProfile{},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Top-Doctors-EI_IE1712721.11,22.htm",
@@ -14851,7 +14859,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Login:    "swisspost",
 				Verified: false,
 			},
-			BlindProfile:     domain.BlindProfile{},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Die-Schweizerische-Post-EI_IE12870.11,34.htm",
