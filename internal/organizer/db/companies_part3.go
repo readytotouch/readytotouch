@@ -28,7 +28,11 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "capital-one",
+				Employees:   "10,000+",
+				Salary:      "$71K ~ $268K a year",
+				Reviews:     "3,008",
+				ReviewsRate: "3.6",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "capital-one",
