@@ -154,10 +154,13 @@ func companiesPart6() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Senior Spacecraft Flight/Software Engineer (Rust)",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4105560497/",
-							Date:             mustDate("2024-12-24"),
+							Title:                "Senior Spacecraft Flight/Software Engineer (Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4105560497/",
+							Date:                 mustDate("2024-12-24"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 						{
 							Title:                "Senior Engineer — Rust",
@@ -395,20 +398,7 @@ func companiesPart6() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "Senior Research Engineer – Rust Development and Formal Methods",
-							ShortDescription:     "Design and implement software solutions using Rust, emphasizing security, performance, and maintainability",
-							SwitchingOpportunity: "",
-							URL:                  "https://www.linkedin.com/jobs/view/4081194563/",
-							Date:                 mustDate("2024-12-20"),
-							WithSalary:           false,
-							Remote:               false,
-						},
-					},
-				},
+				domain.Go: {},
 				domain.Rust: {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
@@ -423,11 +413,11 @@ func companiesPart6() []domain.CompanyProfile {
 						},
 						{
 							Title:                "Lead Rust Software Engineer",
-							ShortDescription:     "",
+							ShortDescription:     "Design and implement software solutions using Rust, emphasizing security, performance, and maintainability",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4081194563/",
-							Date:                 mustDate("2025-02-15"),
-							WithSalary:           true, // $114.800 - $232.600 per year
+							Date:                 mustDate("2025-02-15"), // mustDate("2024-12-20"),
+							WithSalary:           true,                   // $114.800 - $232.600 per year
 							Remote:               false,
 						},
 					},
