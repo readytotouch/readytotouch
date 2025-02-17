@@ -28,6 +28,9 @@ func companiesPart7() []domain.CompanyProfile {
 				Login:    "checkmarx",
 				Verified: true,
 			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "checkmarx",
 				Employees: "820",
@@ -90,6 +93,9 @@ func companiesPart7() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "visa",
 				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "visa",
@@ -246,6 +252,9 @@ func companiesPart7() []domain.CompanyProfile {
 				Login:    "BakerHughes",
 				Verified: false,
 			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "baker-hughes",
 				Employees: "57,510",
@@ -311,6 +320,9 @@ func companiesPart7() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
 				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "centrica",

@@ -27,6 +27,10 @@
     {
       "matches": ["https://www.glassdoor.com/*"],
       "js": ["copy-glassdoor-company-profile-data.js"]
+    },
+    {
+      "matches": ["https://www.teamblind.com/company/*"],
+      "js": ["copy-blind-company-profile-data.js"]
     }
   ]
 }

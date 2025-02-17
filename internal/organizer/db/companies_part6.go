@@ -70,6 +70,9 @@ func companiesPart6() []domain.CompanyProfile {
 				Login:    "nutanix",
 				Verified: true,
 			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "nutanix",
 				Employees: "6,250",
@@ -125,6 +128,9 @@ func companiesPart6() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
 				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "umbra",
@@ -183,6 +189,9 @@ func companiesPart6() []domain.CompanyProfile {
 				Login:    "cognitedata",
 				Verified: true,
 			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "cognite",
 				Employees: "660",
@@ -239,6 +248,12 @@ func companiesPart6() []domain.CompanyProfile {
 				Login:    "",
 				Verified: false,
 			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
 				ReviewsURL:  "",
@@ -281,6 +296,9 @@ func companiesPart6() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "ubisoft",
 				Verified: true,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "ubisoft",
@@ -347,6 +365,9 @@ func companiesPart6() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "twosixlabs",
 				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "two-six-technologies",

@@ -123,6 +123,9 @@ func companiesPart8() []domain.CompanyProfile {
 				Login:    "grid-x",
 				Verified: true,
 			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "gridx",
 				Employees: "126",
@@ -295,6 +298,9 @@ func companiesPart8() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "thatgameco",
 				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "thatgamecompany",
@@ -523,6 +529,9 @@ func companiesPart8() []domain.CompanyProfile {
 				Login:    "",
 				Verified: false,
 			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "general-dynamics-mission-systems",
 				Employees: "8,450",
@@ -622,6 +631,9 @@ func companiesPart8() []domain.CompanyProfile {
 				Login:    "mondu-ai",
 				Verified: true,
 			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "mondu",
 				Employees: "145",
@@ -681,6 +693,9 @@ func companiesPart8() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "moneyforward",
 				Verified: true,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "money-forward",
@@ -742,6 +757,9 @@ func companiesPart8() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
 				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "prizepicks",
@@ -858,6 +876,9 @@ func companiesPart8() []domain.CompanyProfile {
 				Login:    "optimizely",
 				Verified: false,
 			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "optimizely",
 				Employees: "840",
@@ -917,6 +938,9 @@ func companiesPart8() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "OPSWAT",
 				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "opswat",
@@ -999,6 +1023,9 @@ func companiesPart8() []domain.CompanyProfile {
 				Login:    "",
 				Verified: false,
 			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "videoamp",
 				Employees: "420",
@@ -1068,6 +1095,9 @@ func companiesPart8() []domain.CompanyProfile {
 				Login:    "broadcom",
 				Verified: true,
 			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "broadcom",
 				Employees: "37,990",
@@ -1126,6 +1156,9 @@ func companiesPart8() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
 				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "toyota-usa",
@@ -1186,6 +1219,9 @@ func companiesPart8() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
 				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "about-you",
@@ -1356,6 +1392,9 @@ func companiesPart8() []domain.CompanyProfile {
 				Login:    "",
 				Verified: false,
 			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "nordea",
 				Employees: "27,000",
@@ -1414,6 +1453,9 @@ func companiesPart8() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
 				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "deutsche-borse",
@@ -1484,6 +1526,9 @@ func companiesPart8() []domain.CompanyProfile {
 				Login:    "",
 				Verified: false,
 			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "hootsuite",
 				Employees: "1,500",
@@ -1542,6 +1587,9 @@ func companiesPart8() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "hsbc",
 				Verified: true,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "hsbc",
@@ -1605,6 +1653,9 @@ func companiesPart8() []domain.CompanyProfile {
 				Login:    "affinipay",
 				Verified: false,
 			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "affinipay",
 				Employees: "210",
@@ -1667,6 +1718,9 @@ func companiesPart8() []domain.CompanyProfile {
 				Login:    "vivid-money",
 				Verified: false,
 			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "vivid-money",
 				Employees: "200",
@@ -1725,6 +1779,9 @@ func companiesPart8() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "idemia",
 				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "idemia",
@@ -1785,6 +1842,9 @@ func companiesPart8() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
 				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "ninjatrader",
@@ -1903,6 +1963,9 @@ func companiesPart8() []domain.CompanyProfile {
 				Login:    "topgolf",
 				Verified: true,
 			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "topgolf",
 				Employees: "8,250",
@@ -1961,6 +2024,9 @@ func companiesPart8() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "hapag-lloyd",
 				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "hapag-lloyd",
@@ -2142,6 +2208,9 @@ func companiesPart8() []domain.CompanyProfile {
 				Login:    "",
 				Verified: false,
 			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "nvent",
 				Employees: "9,900",
@@ -2244,6 +2313,9 @@ func companiesPart8() []domain.CompanyProfile {
 				Login:    "",
 				Verified: false,
 			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "pdf-solutions",
 				Employees: "420",
@@ -2313,6 +2385,9 @@ func companiesPart8() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
 				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "quantexa",
@@ -2428,6 +2503,9 @@ func companiesPart8() []domain.CompanyProfile {
 				Login:    "",
 				Verified: false,
 			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "qad",
 				Employees: "2,250",
@@ -2496,6 +2574,9 @@ func companiesPart8() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "new-work",
 				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "new-work-se",
@@ -2612,6 +2693,9 @@ func companiesPart8() []domain.CompanyProfile {
 				Login:    "",
 				Verified: false,
 			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "walmart",
 				Employees: "",
@@ -2670,6 +2754,9 @@ func companiesPart8() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "MagniteEngineering",
 				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "magnite",
@@ -2733,6 +2820,9 @@ func companiesPart8() []domain.CompanyProfile {
 				Login:    "prezi",
 				Verified: false,
 			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "prezi",
 				Employees: "420",
@@ -2791,6 +2881,9 @@ func companiesPart8() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "yuno-payments",
 				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "yuno",
@@ -2909,6 +3002,9 @@ func companiesPart8() []domain.CompanyProfile {
 				Login:    "pexip",
 				Verified: true,
 			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "pexip",
 				Employees: "600",
@@ -2967,6 +3063,9 @@ func companiesPart8() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "vinted",
 				Verified: true,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "vinted",
@@ -3029,6 +3128,9 @@ func companiesPart8() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "bigcommerce",
 				Verified: true,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "bigcommerce",
@@ -3100,6 +3202,9 @@ func companiesPart8() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "grab",
 				Verified: true,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "grab",

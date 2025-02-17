@@ -27,7 +27,13 @@ func companiesPart3() []domain.CompanyProfile {
 				Login:    "capitalone",
 				Verified: false,
 			},
-			BlindProfile: domain.BlindProfile{},
+			BlindProfile: domain.BlindProfile{
+				Alias:       "capital-one",
+				Employees:   "10,000+",
+				Salary:      "$71K ~ $268K a year",
+				Reviews:     "3,008",
+				ReviewsRate: "3.6",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "capital-one",
 				Employees: "55,080",
@@ -217,6 +223,13 @@ func companiesPart3() []domain.CompanyProfile {
 				ReviewsRate: "4.1",
 				Verified:    true,
 			},
+			BlindProfile: domain.BlindProfile{
+				Alias:       "Dynatrace",
+				Employees:   "1,001 to 5,000 Employees",
+				Salary:      "$62K ~ $160K a year",
+				Reviews:     "37",
+				ReviewsRate: "3.6",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "dynatrace",
 				Employees: "3,500",
@@ -305,6 +318,9 @@ func companiesPart3() []domain.CompanyProfile {
 				Login:    "emnify",
 				Verified: true,
 			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "emnify",
 				Employees: "180",
@@ -377,7 +393,13 @@ func companiesPart3() []domain.CompanyProfile {
 				Login:    "",
 				Verified: false,
 			},
-			BlindProfile: domain.BlindProfile{},
+			BlindProfile: domain.BlindProfile{
+				Alias:       "Moody's-Investors-Service",
+				Employees:   "1,001 to 5,000",
+				Salary:      "$67K ~ $215K a year",
+				Reviews:     "103",
+				ReviewsRate: "3.6",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "moodys",
 				Employees: "12,000",
@@ -450,6 +472,13 @@ func companiesPart3() []domain.CompanyProfile {
 				Login:    "lytx",
 				Verified: false,
 			},
+			BlindProfile: domain.BlindProfile{
+				Alias:       "Lytx",
+				Employees:   "501 to 1,000",
+				Salary:      "",
+				Reviews:     "7",
+				ReviewsRate: "4.4",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "lytx",
 				Employees: "840",
@@ -514,11 +543,7 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias:       "",
-				Employees:   "",
-				Salary:      "",
-				Reviews:     "",
-				ReviewsRate: "",
+				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "applied-systems",
@@ -600,11 +625,11 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias:       "",
-				Employees:   "",
-				Salary:      "",
-				Reviews:     "",
-				ReviewsRate: "",
+				Alias:       "yum-brands",
+				Employees:   "10,000+",
+				Salary:      "$40K ~ $231K a year",
+				Reviews:     "30",
+				ReviewsRate: "4.1",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "yum-brands",
@@ -677,11 +702,11 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias:       "",
-				Employees:   "",
-				Salary:      "",
-				Reviews:     "",
-				ReviewsRate: "",
+				Alias:       "nokia",
+				Employees:   "10,000+",
+				Salary:      "$38K ~ $247K a year",
+				Reviews:     "243",
+				ReviewsRate: "3.6",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "nokia",
@@ -754,11 +779,11 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias:       "",
-				Employees:   "",
+				Alias:       "FLYR",
+				Employees:   "51 to 200",
 				Salary:      "",
-				Reviews:     "",
-				ReviewsRate: "",
+				Reviews:     "8",
+				ReviewsRate: "3.6",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "",
@@ -831,11 +856,7 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias:       "",
-				Employees:   "",
-				Salary:      "",
-				Reviews:     "",
-				ReviewsRate: "",
+				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "",
@@ -908,11 +929,11 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias:       "",
-				Employees:   "",
+				Alias:       "Rocket-Lab",
+				Employees:   "1,001 to 5,000",
 				Salary:      "",
-				Reviews:     "",
-				ReviewsRate: "",
+				Reviews:     "1",
+				ReviewsRate: "4.0",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "rocket-lab",
@@ -985,8 +1006,8 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified: true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias:       "",
-				Employees:   "",
+				Alias:       "Sportradar",
+				Employees:   "1,001 to 5,000",
 				Salary:      "",
 				Reviews:     "",
 				ReviewsRate: "",
@@ -1062,11 +1083,11 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified: true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias:       "",
-				Employees:   "",
+				Alias:       "Bestow",
+				Employees:   "51 to 200",
 				Salary:      "",
-				Reviews:     "",
-				ReviewsRate: "",
+				Reviews:     "5",
+				ReviewsRate: "3.8",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "bestow",
@@ -1151,11 +1172,7 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias:       "",
-				Employees:   "",
-				Salary:      "",
-				Reviews:     "",
-				ReviewsRate: "",
+				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "geico",
@@ -1258,11 +1275,7 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias:       "",
-				Employees:   "",
-				Salary:      "",
-				Reviews:     "",
-				ReviewsRate: "",
+				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "",
@@ -1330,11 +1343,7 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias:       "",
-				Employees:   "",
-				Salary:      "",
-				Reviews:     "",
-				ReviewsRate: "",
+				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "airslate",
@@ -1409,11 +1418,11 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified: true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias:       "",
-				Employees:   "",
+				Alias:       "Embark-Studios",
+				Employees:   "201 to 500",
 				Salary:      "",
-				Reviews:     "",
-				ReviewsRate: "",
+				Reviews:     "1",
+				ReviewsRate: "2.0",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "embark-studios",
@@ -1500,11 +1509,11 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias:       "",
-				Employees:   "",
-				Salary:      "",
-				Reviews:     "",
-				ReviewsRate: "",
+				Alias:       "Centene",
+				Employees:   "10,000+",
+				Salary:      "$37K ~ $220K a year",
+				Reviews:     "61",
+				ReviewsRate: "3.4",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "centene",
@@ -1577,11 +1586,7 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias:       "",
-				Employees:   "",
-				Salary:      "",
-				Reviews:     "",
-				ReviewsRate: "",
+				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "vestiaire-collective",
@@ -1672,11 +1677,11 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified: true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias:       "",
-				Employees:   "",
-				Salary:      "",
-				Reviews:     "",
-				ReviewsRate: "",
+				Alias:       "Check-Point-Software-Technologies-Ltd",
+				Employees:   "5,001 to 10,000",
+				Salary:      "$20K ~ $260K a year",
+				Reviews:     "16",
+				ReviewsRate: "3.7",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "check-point-software-technologies",
@@ -1753,11 +1758,7 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified: true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias:       "",
-				Employees:   "",
-				Salary:      "",
-				Reviews:     "",
-				ReviewsRate: "",
+				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "qohash",
@@ -1840,11 +1841,7 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias:       "",
-				Employees:   "",
-				Salary:      "",
-				Reviews:     "",
-				ReviewsRate: "",
+				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "",
@@ -1918,11 +1915,11 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias:       "",
-				Employees:   "",
+				Alias:       "Telestream",
+				Employees:   "201 to 500",
 				Salary:      "",
-				Reviews:     "",
-				ReviewsRate: "",
+				Reviews:     "1",
+				ReviewsRate: "2.0",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "telestream",
@@ -1995,11 +1992,7 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias:       "",
-				Employees:   "",
-				Salary:      "",
-				Reviews:     "",
-				ReviewsRate: "",
+				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "mitratech",
@@ -2072,11 +2065,7 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias:       "",
-				Employees:   "",
-				Salary:      "",
-				Reviews:     "",
-				ReviewsRate: "",
+				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "paddle",
@@ -2164,11 +2153,11 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified: true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias:       "",
-				Employees:   "",
-				Salary:      "",
-				Reviews:     "",
-				ReviewsRate: "",
+				Alias:       "bell",
+				Employees:   "10,000+",
+				Salary:      "$62K ~ $170K a year",
+				Reviews:     "83",
+				ReviewsRate: "3.3",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "",
@@ -2241,11 +2230,11 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias:       "",
-				Employees:   "",
-				Salary:      "",
-				Reviews:     "",
-				ReviewsRate: "",
+				Alias:       "Cohesity",
+				Employees:   "1,001 to 5,000",
+				Salary:      "$34K ~ $250K a year",
+				Reviews:     "418",
+				ReviewsRate: "3.3",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "cohesity",
@@ -2327,11 +2316,11 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified: true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias:       "",
-				Employees:   "",
+				Alias:       "IDT---Integrated-Device-Technology",
+				Employees:   "1,001 to 5,000",
 				Salary:      "",
-				Reviews:     "",
-				ReviewsRate: "",
+				Reviews:     "3",
+				ReviewsRate: "2.3",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "idt",
@@ -2434,11 +2423,7 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias:       "",
-				Employees:   "",
-				Salary:      "",
-				Reviews:     "",
-				ReviewsRate: "",
+				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "dt-one",
@@ -2522,11 +2507,7 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias:       "",
-				Employees:   "",
-				Salary:      "",
-				Reviews:     "",
-				ReviewsRate: "",
+				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "",
@@ -2599,11 +2580,11 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified: true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias:       "",
-				Employees:   "",
-				Salary:      "",
-				Reviews:     "",
-				ReviewsRate: "",
+				Alias:       "Sysdig",
+				Employees:   "201 to 500",
+				Salary:      "$74K ~ $320K a year",
+				Reviews:     "103",
+				ReviewsRate: "3.7",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "sysdig",
@@ -2690,11 +2671,7 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias:       "",
-				Employees:   "",
-				Salary:      "",
-				Reviews:     "",
-				ReviewsRate: "",
+				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "",
@@ -2776,11 +2753,11 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias:       "",
-				Employees:   "",
-				Salary:      "",
-				Reviews:     "",
-				ReviewsRate: "",
+				Alias:       "ebay",
+				Employees:   "10,000+",
+				Salary:      "$65K ~ $316K a year",
+				Reviews:     "764",
+				ReviewsRate: "3.7",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "ebay",
@@ -2853,11 +2830,7 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias:       "",
-				Employees:   "",
-				Salary:      "",
-				Reviews:     "",
-				ReviewsRate: "",
+				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "",
@@ -2932,11 +2905,7 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified: true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias:       "",
-				Employees:   "",
-				Salary:      "",
-				Reviews:     "",
-				ReviewsRate: "",
+				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "axis-security",
@@ -3009,11 +2978,7 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias:       "",
-				Employees:   "",
-				Salary:      "",
-				Reviews:     "",
-				ReviewsRate: "",
+				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "palta",
@@ -3097,11 +3062,7 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias:       "",
-				Employees:   "",
-				Salary:      "",
-				Reviews:     "",
-				ReviewsRate: "",
+				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "bol",
@@ -3194,6 +3155,13 @@ func companiesPart3() []domain.CompanyProfile {
 				Login:    "",
 				Verified: false,
 			},
+			BlindProfile: domain.BlindProfile{
+				Alias:       "DRW",
+				Employees:   "1,001 to 5,000",
+				Salary:      "$80K ~ $200K a year",
+				Reviews:     "88",
+				ReviewsRate: "3.9",
+			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "drw",
 				Employees: "1,500",
@@ -3256,6 +3224,13 @@ func companiesPart3() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
 				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias:       "NICE-Ltd",
+				Employees:   "5,001 to 10,000",
+				Salary:      "$90K ~ $200K a year",
+				Reviews:     "26",
+				ReviewsRate: "3.4",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "nice",
@@ -3325,6 +3300,13 @@ func companiesPart3() []domain.CompanyProfile {
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
 				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias:       "Maersk",
+				Employees:   "10,000+",
+				Salary:      "$26K ~ $105K a year",
+				Reviews:     "58",
+				ReviewsRate: "3.8",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "maersk",
