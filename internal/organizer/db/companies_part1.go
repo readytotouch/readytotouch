@@ -6801,7 +6801,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Splunk",
 			},
 			OttaProfileSlug:   "Splunk",
 			YouTubeChannelURL: "",
@@ -6949,7 +6949,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Hellofresh",
 			},
 			OttaProfileSlug:   "HelloFresh",
 			YouTubeChannelURL: "",
@@ -7017,7 +7017,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Autodoc",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -7182,7 +7182,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Delivery-Hero",
 			},
 			OttaProfileSlug:   "Delivery-Hero",
 			YouTubeChannelURL: "https://www.youtube.com/@DeliveryHeroDH",
@@ -7348,7 +7348,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Fubotv",
 			},
 			OttaProfileSlug:   "fubo",
 			YouTubeChannelURL: "",
@@ -8108,7 +8108,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Lightspeed-5",
 			},
 			OttaProfileSlug:   "Lightspeed",
 			YouTubeChannelURL: "https://www.youtube.com/channel/UCqOEKwLpolZBcj4LfU3R0Fg",
@@ -8208,7 +8208,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Squarespace",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "https://www.youtube.com/squarespace",
@@ -8279,7 +8279,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Curve-1",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -8481,7 +8481,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Applied-Systems-6",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -8583,7 +8583,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Autodesk",
 			},
 			OttaProfileSlug:   "Autodesk",
 			YouTubeChannelURL: "",
@@ -8660,7 +8660,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Vonage",
 			},
 			OttaProfileSlug:   "Vonage",
 			YouTubeChannelURL: "",
@@ -9078,7 +9078,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Ab-Tasty",
 			},
 			OttaProfileSlug:   "AB-Tasty",
 			YouTubeChannelURL: "https://www.youtube.com/@abtasty",
@@ -9364,7 +9364,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "ABC-Fitness-Solutions-1",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "https://www.youtube.com/@ABC-Fitness",
@@ -9502,7 +9502,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Acronis-International-Gmbh",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "https://www.youtube.com/@Acronis",
@@ -9825,7 +9825,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Sumup",
 			},
 			OttaProfileSlug:   "sumup",
 			YouTubeChannelURL: "https://www.youtube.com/@SumUpGlobal",
@@ -10047,7 +10047,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Sonicwall",
 			},
 			OttaProfileSlug:   "SonicWall",
 			YouTubeChannelURL: "https://www.youtube.com/@SonicWallInc",
@@ -10125,7 +10125,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Pindrop",
 			},
 			OttaProfileSlug:   "Pindrop",
 			YouTubeChannelURL: "https://www.youtube.com/@Pindropsecurity",
@@ -10189,7 +10189,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Seedtag",
 			},
 			OttaProfileSlug:   "Seedtag",
 			YouTubeChannelURL: "https://www.youtube.com/@seedtag.advertising",
@@ -10261,7 +10261,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Flix-Se-2",
 			},
 			OttaProfileSlug:   "FlixBus-1",
 			YouTubeChannelURL: "",
@@ -10370,7 +10370,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Press-Ganey-4",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "https://www.youtube.com/@PressGaney",
@@ -11180,7 +11180,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Olx-Group",
 			},
 			OttaProfileSlug:   "OLX-Group",
 			YouTubeChannelURL: "https://www.youtube.com/@OLXGroup",
@@ -11276,7 +11276,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Snyk",
 			},
 			OttaProfileSlug:   "Snyk",
 			YouTubeChannelURL: "https://www.youtube.com/@Snyksec",
@@ -11364,7 +11364,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Sinch",
 			},
 			OttaProfileSlug:   "sinch",
 			YouTubeChannelURL: "https://www.youtube.com/@WeAreSinch",
@@ -11436,7 +11436,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Fox-Corporation",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -11508,7 +11508,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Sailpoint-Technologies-2",
 			},
 			OttaProfileSlug:   "Sailpoint",
 			YouTubeChannelURL: "https://www.youtube.com/@SailPointTechnologies",
@@ -11819,7 +11819,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Rxbenefits,-Inc.-1",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -12670,7 +12670,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Stonebranch",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "https://www.youtube.com/@Stonebranch",
@@ -12748,7 +12748,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Rapid7",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "https://www.youtube.com/@GoRapid7",
@@ -13195,7 +13195,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Top-Doctors",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "https://www.youtube.com/@TopDoctorsUK",
@@ -13270,7 +13270,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Recurly",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "https://www.youtube.com/@Recurly",
@@ -13331,7 +13331,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Cynet-Systems",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "https://www.youtube.com/@cynetsystems2026",
@@ -13399,7 +13399,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Odyssey-Information-Services",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "https://www.youtube.com/@odysseyinformationservices1641",
@@ -13472,7 +13472,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Infomatics-Corp",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -13550,7 +13550,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Mindera",
 			},
 			OttaProfileSlug:   "Mindera",
 			YouTubeChannelURL: "https://www.youtube.com/@MinderaSoftware",
@@ -13790,7 +13790,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Dyninno-1",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "https://www.youtube.com/@dyninnogroup2702",
@@ -13993,7 +13993,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Cognizant-Technology-Solutions",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "https://www.youtube.com/@cognizant",
@@ -14345,7 +14345,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Kroger-54356a75",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "https://www.youtube.com/@KrogerCo",
@@ -14413,7 +14413,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Precisely-1",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "https://www.youtube.com/@PreciselyData",
@@ -14489,7 +14489,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "R-Systems-1",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "https://www.youtube.com/@RSystems_inc",
@@ -14574,7 +14574,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Consort-Group-5",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "https://www.youtube.com/@consortgroup",
@@ -14646,7 +14646,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Ascendion",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "https://www.youtube.com/@ascendioninc",
@@ -14733,7 +14733,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Checkout.com",
 			},
 			OttaProfileSlug:   "Checkout-com",
 			YouTubeChannelURL: "",
@@ -15115,7 +15115,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Mercury-Technologies",
 			},
 			OttaProfileSlug:   "Mercury",
 			YouTubeChannelURL: "",
@@ -15634,7 +15634,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Crowdriff",
 			},
 			OttaProfileSlug:   "CrowdRiff",
 			YouTubeChannelURL: "",
