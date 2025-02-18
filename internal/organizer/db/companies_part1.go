@@ -6283,10 +6283,13 @@ func companiesPart1() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 40,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Staff Backend Engineer (Golang)",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/3873637399/",
-							Date:             mustDate("2024-07-26"),
+							Title:                "Staff Backend Engineer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/3873637399/",
+							Date:                 mustDate("2024-07-26"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 						{
 							Title:                "Staff Software Engineer (Golang)",
@@ -9462,10 +9465,13 @@ func companiesPart1() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 23,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Senior Backend Software Engineer (Golang)",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/3848461191/",
-							Date:             mustDate("2024-05-14"),
+							Title:                "Senior Backend Software Engineer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/3848461191/",
+							Date:                 mustDate("2024-05-14"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 						{
 							Title:                "Senior Backend Software Engineer (Golang) — Online Payments",
