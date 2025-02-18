@@ -269,6 +269,9 @@ func companiesPart1() []domain.CompanyProfile {
 				ReviewsRate: "2.8",
 				Verified:    false,
 			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "Mozilla-Foundation",
+			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
@@ -351,6 +354,9 @@ func companiesPart1() []domain.CompanyProfile {
 				ReviewsRate: "3.5",
 				Verified:    true,
 			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
 			OttaProfileSlug:   "Discord",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
@@ -430,6 +436,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Salaries:    "463",
 				ReviewsRate: "4.4",
 				Verified:    true,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
 			},
 			OttaProfileSlug:   "Figma",
 			YouTubeChannelURL: "",
@@ -514,6 +523,9 @@ func companiesPart1() []domain.CompanyProfile {
 				ReviewsRate: "4.2",
 				Verified:    true,
 			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "https://www.youtube.com/@Microsoft",
 			GoMainLanguage:    false,
@@ -595,6 +607,9 @@ func companiesPart1() []domain.CompanyProfile {
 				ReviewsRate: "3.6",
 				Verified:    true,
 			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
 			OttaProfileSlug:   "Amazon",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
@@ -658,7 +673,9 @@ func companiesPart1() []domain.CompanyProfile {
 				ReviewsRate: "4.0",
 				Verified:    true,
 			},
-			IndeedProfile:     domain.IndeedProfile{},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "https://www.youtube.com/@IBMTechnology",
 			GoMainLanguage:    false,
