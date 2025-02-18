@@ -631,6 +631,9 @@ var (
 		"nasdaq":                              628, // Nasdaq
 		"qualcomm":                            629, // Qualcomm
 		"tesla-motors":                        630, // Tesla
+		"dhl":                                 631, // DHL
+		"moia_mobility":                       632, // MOIA
+		"t-mobile":                            633, // T-Mobile
 
 	}
 )
