@@ -2104,10 +2104,13 @@ func companiesPart2() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 8,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "https://www.linkedin.com/jobs/view/3819936157/",
-							ShortDescription: "We are looking for a talented Go developer",
-							URL:              "https://www.linkedin.com/jobs/view/3819936157/",
-							Date:             mustDate("2024-02-26"),
+							Title:                "Senior Backend Engineer",
+							ShortDescription:     "We are looking for a talented Go developer",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/3819936157/",
+							Date:                 mustDate("2024-02-26"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 					},
 				},
