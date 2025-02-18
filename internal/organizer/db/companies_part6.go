@@ -71,7 +71,11 @@ func companiesPart6() []domain.CompanyProfile {
 				Verified: true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "nutanix",
+				Employees:   "5,001 to 10,000",
+				Salary:      "$22K ~ $330K a year",
+				Reviews:     "672",
+				ReviewsRate: "3.6",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "nutanix",
@@ -204,7 +208,11 @@ func companiesPart6() []domain.CompanyProfile {
 				Verified: true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Cognite",
+				Employees:   "501 to 1,000",
+				Salary:      "",
+				Reviews:     "",
+				ReviewsRate: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "cognite",
@@ -312,7 +320,11 @@ func companiesPart6() []domain.CompanyProfile {
 				Verified: true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Ubisoft",
+				Employees:   "10,000+",
+				Salary:      "$50K ~ $206K a year",
+				Reviews:     "90",
+				ReviewsRate: "3.4",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "ubisoft",
@@ -381,7 +393,11 @@ func companiesPart6() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Two-Six-Technologies",
+				Employees:   "201 to 500",
+				Salary:      "",
+				Reviews:     "13",
+				ReviewsRate: "3.5",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "two-six-technologies",

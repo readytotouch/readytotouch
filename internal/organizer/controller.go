@@ -1259,11 +1259,7 @@ func (c *Controller) DataPopulationCompaniesGlassdoor(ctx *gin.Context) {
 func (c *Controller) DataPopulationCompaniesBlind(ctx *gin.Context) {
 	var (
 		companies = c.dataPopulationCompanies(func(company domain.CompanyProfile) bool {
-			return company.BlindProfile.Alias == "" ||
-				company.BlindProfile.Employees == "" ||
-				company.BlindProfile.Salary == "" ||
-				company.BlindProfile.Reviews == "" ||
-				company.BlindProfile.ReviewsRate == ""
+			return company.BlindProfile.Alias == ""
 		})
 	)
 

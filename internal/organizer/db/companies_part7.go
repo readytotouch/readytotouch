@@ -95,7 +95,11 @@ func companiesPart7() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "visa",
+				Employees:   "10,000+",
+				Salary:      "$45K ~ $253K a year",
+				Reviews:     "1,217",
+				ReviewsRate: "3.6",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "visa",
@@ -253,7 +257,11 @@ func companiesPart7() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Baker-Hughes",
+				Employees:   "10,000+",
+				Salary:      "$75K ~ $224K a year",
+				Reviews:     "30",
+				ReviewsRate: "3.4",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "baker-hughes",
@@ -322,7 +330,11 @@ func companiesPart7() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Centrica",
+				Employees:   "10,000+",
+				Salary:      "",
+				Reviews:     "2",
+				ReviewsRate: "4.5",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "centrica",
