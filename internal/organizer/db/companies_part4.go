@@ -3150,7 +3150,11 @@ func companiesPart4() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Kargo",
+				Employees:   "201 to 500",
+				Salary:      "",
+				Reviews:     "12",
+				ReviewsRate: "3.9",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "kargo",
@@ -3205,7 +3209,11 @@ func companiesPart4() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "SalesLoft",
+				Employees:   "201 to 500",
+				Salary:      "",
+				Reviews:     "7",
+				ReviewsRate: "3.7",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "salesloft",
@@ -3308,7 +3316,11 @@ func companiesPart4() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "H-E-B-Grocery",
+				Employees:   "10,000+",
+				Salary:      "$57K ~ $275K a year",
+				Reviews:     "80",
+				ReviewsRate: "3.9",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "h-e-b",

@@ -193,7 +193,11 @@ func companiesPart5() []domain.CompanyProfile {
 				Verified: true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "SAS",
+				Employees:   "10,000+",
+				Salary:      "$66K ~ $259K a year",
+				Reviews:     "142",
+				ReviewsRate: "3.5",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "sas-software",
@@ -474,7 +478,11 @@ func companiesPart5() []domain.CompanyProfile {
 				Verified: true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "groq",
+				Employees:   "51 to 200",
+				Salary:      "",
+				Reviews:     "48",
+				ReviewsRate: "4.4",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "groq",
@@ -595,7 +603,11 @@ func companiesPart5() []domain.CompanyProfile {
 				Verified: true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "zendesk",
+				Employees:   "1,001 to 5,000",
+				Salary:      "$57K ~ $287K a year",
+				Reviews:     "856",
+				ReviewsRate: "3.4",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "zendesk",
@@ -687,6 +699,13 @@ func companiesPart5() []domain.CompanyProfile {
 				Login:    "",
 				Verified: false,
 			},
+			BlindProfile: domain.BlindProfile{
+				Alias:       "Mobica",
+				Employees:   "501 to 1,000",
+				Salary:      "",
+				Reviews:     "",
+				ReviewsRate: "",
+			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Mobica-EI_IE567096.11,17.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Mobica-Reviews-E567096.htm",
@@ -741,7 +760,11 @@ func companiesPart5() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "EnterpriseDB",
+				Employees:   "501 to 1,000",
+				Salary:      "",
+				Reviews:     "5",
+				ReviewsRate: "4.0",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "enterprisedb",
@@ -810,7 +833,11 @@ func companiesPart5() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Altair-Engineering",
+				Employees:   "1,001 to 5,000",
+				Salary:      "$60K ~ $186K a year",
+				Reviews:     "25",
+				ReviewsRate: "3.8",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "altair",
@@ -991,7 +1018,11 @@ func companiesPart5() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "American-Airlines",
+				Employees:   "10,000+",
+				Salary:      "$47K ~ $211K a year",
+				Reviews:     "187",
+				ReviewsRate: "3.3",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "american-airlines",
