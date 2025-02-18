@@ -3926,8 +3926,7 @@ func companiesPart8() []domain.CompanyProfile {
 				ReviewsRate: "2.8",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias:     "take-two-interactive-software",
-				Employees: "760",
+				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Rockstar-Games-EI_IE20887.11,25.htm",
@@ -4487,20 +4486,7 @@ func companiesPart8() []domain.CompanyProfile {
 				Alias: "",
 			},
 			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "Junior Software Developer",
-							ShortDescription:     "Show Code Corp.",
-							SwitchingOpportunity: "",
-							URL:                  "https://www.linkedin.com/jobs/view/4157351721/",
-							Date:                 mustDate("2025-02-17"),
-							WithSalary:           true, // $80.000 - $90.000 per year
-							Remote:               true,
-						},
-					},
-				},
+				domain.Go:      {},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -4509,6 +4495,7 @@ func companiesPart8() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "German manufacturer of high-quality professional audio solutions",
+			Ignore:           true, // Added accidentally
 		},
 
 		{
@@ -4520,6 +4507,7 @@ func companiesPart8() []domain.CompanyProfile {
 			About:   "https://www.dhl.com/es-en/home/about-us.html",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1355,
+				IDs:               []int{1355, 3269, 5427, 2558717, 11135982, 13295672, 16239240},
 				Alias:             "dhl",
 				Name:              "DHL",
 				Followers:         "2M",
@@ -4572,6 +4560,7 @@ func companiesPart8() []domain.CompanyProfile {
 			About:   "https://www.moia.io/en/why-moia",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                22333228,
+				IDs:               nil,
 				Alias:             "moia_mobility",
 				Name:              "MOIA",
 				Followers:         "33K",
@@ -4595,7 +4584,7 @@ func companiesPart8() []domain.CompanyProfile {
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Scala Software Engineer",
-							ShortDescription:     "Offering",
+							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4157748397/",
 							Date:                 mustDate("2025-02-18"),
@@ -4663,7 +4652,7 @@ func companiesPart8() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "Germans provider of telecommunications services.",
+			ShortDescription: "Germans provider of telecommunications services",
 		},
 
 		// Template short
