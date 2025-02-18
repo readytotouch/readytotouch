@@ -4,7 +4,7 @@ console.log("Blind company profile data copy extension loaded");
 document.body.addEventListener("keydown", (event) => {
     // Y is for English, Н is for Ukrainian
     if (event.ctrlKey && event.shiftKey && (event.key === "Y" || event.key === "Н")) {
-        const goIndeedProfileColumns = `				Alias:       "${parseVanityName(window.location.href)}",`
+        const goIndeedProfileColumns = `				Alias: "${parseVanityName(window.location.href)}",`
 
         navigator.clipboard.writeText(goIndeedProfileColumns)
             .then(() => console.log("Page info copied to clipboard:", goIndeedProfileColumns))
