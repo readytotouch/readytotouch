@@ -277,6 +277,15 @@ func companiesPart3() []domain.CompanyProfile {
 							WithSalary:           true, // 16.000 - 24.000 PLN gross per month
 							Remote:               false,
 						},
+						{
+							Title:                "Senior C++ / Go Software Engineer",
+							ShortDescription:     "Go Agent team",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4113625344/",
+							Date:                 mustDate("2025-02-18"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
@@ -1648,17 +1657,20 @@ func companiesPart3() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Senior Software Engineer (PHP/Go)",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4061075359/",
-							Date:             mustDate("2024-11-18"),
+							Title:                "Senior Software Engineer (PHP/Go)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4061075359/",
+							Date:                 mustDate("2024-11-18"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 						{
 							Title:                "Senior Software Engineer TypeScript, PHP, Go",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4120700628/",
-							Date:                 mustDate("2025-02-10"), // mustDate("2025-01-10"),
+							Date:                 mustDate("2025-02-18"), // mustDate("2025-02-10"), // mustDate("2025-01-10"),
 							WithSalary:           false,
 							Remote:               false,
 						},

@@ -505,7 +505,7 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "5+ years of professional experience in backend development with a strong focus on real-time systems",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4119548956/",
-							Date:                 mustDate("2025-01-16"), // mustDate("2025-01-10"),
+							Date:                 mustDate("2025-02-18"), // mustDate("2025-01-16"), // mustDate("2025-01-10"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2054,7 +2054,7 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4121847142/",
-							Date:                 mustDate("2025-02-14"), // mustDate("2025-01-13"),
+							Date:                 mustDate("2025-02-18"), // mustDate("2025-02-14"), // mustDate("2025-01-13"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2505,6 +2505,15 @@ func companiesPart8() []domain.CompanyProfile {
 							Date:                 mustDate("2025-01-22"),
 							WithSalary:           false,
 							Remote:               false,
+						},
+						{
+							Title:                "Senior Scala Software Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4147607601/",
+							Date:                 mustDate("2025-02-10"),
+							WithSalary:           true, // $100.000 - $150.000 CAD per year
+							Remote:               true,
 						},
 					},
 				},
@@ -3455,7 +3464,8 @@ func companiesPart8() []domain.CompanyProfile {
 				ReviewsRate: "3.4",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "qlik",
+				Employees: "3,000",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Qlik-EI_IE354111.11,15.htm",
@@ -3517,7 +3527,8 @@ func companiesPart8() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "ryanair",
+				Employees: "18,000",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Ryanair-EI_IE6965.11,18.htm",
@@ -3583,7 +3594,8 @@ func companiesPart8() []domain.CompanyProfile {
 				ReviewsRate: "3.9",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "jamf",
+				Employees: "2,250",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Jamf-EI_IE636547.11,15.htm",
@@ -3648,7 +3660,8 @@ func companiesPart8() []domain.CompanyProfile {
 				ReviewsRate: "3.3",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "legalzoom",
+				Employees: "1,000",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-LegalZoom-EI_IE270834.11,20.htm",
@@ -3786,7 +3799,8 @@ func companiesPart8() []domain.CompanyProfile {
 				ReviewsRate: "3.7",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "knowbe4",
+				Employees: "1,250",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-KnowBe4-EI_IE969384.11,18.htm",
@@ -3912,7 +3926,8 @@ func companiesPart8() []domain.CompanyProfile {
 				ReviewsRate: "2.8",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "take-two-interactive-software",
+				Employees: "760",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Rockstar-Games-EI_IE20887.11,25.htm",
@@ -3973,7 +3988,8 @@ func companiesPart8() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "kiwicom",
+				Employees: "930",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Kiwi-com-EI_IE1162174.11,19.htm",
@@ -4038,7 +4054,8 @@ func companiesPart8() []domain.CompanyProfile {
 				ReviewsRate: "3.4",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "tenable",
+				Employees: "1,750",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Tenable-EI_IE17494.11,18.htm",
@@ -4099,7 +4116,8 @@ func companiesPart8() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "ramp",
+				Employees: "180",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Ramp-EI_IE4211228.11,15.htm",
@@ -4124,8 +4142,8 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4137064133/",
-							Date:                 mustDate("2025-01-30"),
-							WithSalary:           true, // $188.000 - $258.000 per year
+							Date:                 mustDate("2025-02-18"), // mustDate("2025-01-30"),
+							WithSalary:           true,                   // $188.000 - $258.000 per year
 							Remote:               true,
 						},
 					},
@@ -4163,7 +4181,8 @@ func companiesPart8() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "hatch",
+				Employees: "126",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Hatch-EI_IE2914673.11,16.htm",
@@ -4229,7 +4248,8 @@ func companiesPart8() []domain.CompanyProfile {
 				ReviewsRate: "3.8",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "akamai",
+				Employees: "8,000",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -4285,7 +4305,8 @@ func companiesPart8() []domain.CompanyProfile {
 				ReviewsRate: "4.0",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "nasdaq",
+				Employees: "3,750",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -4341,7 +4362,8 @@ func companiesPart8() []domain.CompanyProfile {
 				ReviewsRate: "3.6",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "qualcomm",
+				Employees: "41,000",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -4397,7 +4419,8 @@ func companiesPart8() []domain.CompanyProfile {
 				ReviewsRate: "3.3",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "tesla",
+				Employees: "48,820",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -4435,6 +4458,212 @@ func companiesPart8() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "American multinational electric vehicle manufacturer and clean energy company",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Sennheiser",
+			Website: "https://www.sennheiser.com/",
+			Careers: "https://www.sennheiser.com/en-de/jobs-and-careers",
+			About:   "https://www.sennheiser.com/en-de/about-us/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                945178,
+				Alias:             "sennheiser",
+				Name:              "Sennheiser",
+				Followers:         "186K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "1,850",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "sennheiserelectronic",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Junior Software Developer",
+							ShortDescription:     "Show Code Corp.",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4157351721/",
+							Date:                 mustDate("2025-02-17"),
+							WithSalary:           true, // $80.000 - $90.000 per year
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "German manufacturer of high-quality professional audio solutions",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "DHL",
+			Website: "https://www.dhl.com/",
+			Careers: "https://careers.dhl.com/eu/en",
+			About:   "https://www.dhl.com/es-en/home/about-us.html",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1355,
+				Alias:             "dhl",
+				Name:              "DHL",
+				Followers:         "2M",
+				Employees:         "10K+",
+				AssociatedMembers: "204,787",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "dhl",
+				Employees: "380.000",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Scala Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4080573355/",
+							Date:                 mustDate("2025-02-18"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "German multinational package delivery and supply chain management company",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "MOIA",
+			Website: "https://www.moia.io/",
+			Careers: "https://www.moia.io/career",
+			About:   "https://www.moia.io/en/why-moia",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                22333228,
+				Alias:             "moia_mobility",
+				Name:              "MOIA",
+				Followers:         "33K",
+				Employees:         "201-500",
+				AssociatedMembers: "593",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "moia-dev",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Scala Software Engineer",
+							ShortDescription:     "Offering",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4157748397/",
+							Date:                 mustDate("2025-02-18"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Technology company of the Volkswagen Group and runs a ride-sharing service",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "T-Mobile",
+			Website: "https://www.t-mobile.com/",
+			Careers: "https://careers.t-mobile.com/",
+			About:   "https://www.t-mobile.com/our-story",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1392,
+				Alias:             "t-mobile",
+				Name:              "T-Mobile",
+				Followers:         "577K",
+				Employees:         "10K+",
+				AssociatedMembers: "88,550",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "tmobile",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "t-mobile",
+				Employees: "83,520",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer — Spark/Scala",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4157443306/",
+							Date:                 mustDate("2025-02-18"),
+							WithSalary:           true, // $113.600 - $205.000 per year
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Germans provider of telecommunications services.",
 		},
 
 		// Template short
