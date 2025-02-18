@@ -48,7 +48,9 @@ func companiesPart3() []domain.CompanyProfile {
 				ReviewsRate: "3.8",
 				Verified:    true,
 			},
-			IndeedProfile:     domain.IndeedProfile{},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
@@ -204,6 +206,7 @@ func companiesPart3() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
+			Logo:    "",
 			Name:    "Dynatrace",
 			Website: "https://www.dynatrace.com/",
 			Careers: "https://careers.dynatrace.com/",
@@ -222,16 +225,6 @@ func companiesPart3() []domain.CompanyProfile {
 				Login:    "dynatrace",
 				Verified: true,
 			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Dynatrace-EI_IE309684.11,20.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/Dynatrace-Reviews-E309684.htm",
-				JobsURL:     "https://www.glassdoor.com/Jobs/Dynatrace-Jobs-E309684.htm",
-				Jobs:        "242",
-				Reviews:     "1.6K",
-				Salaries:    "2.8K",
-				ReviewsRate: "4.1",
-				Verified:    true,
-			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Dynatrace",
 				Employees:   "1,001 to 5,000 Employees",
@@ -242,6 +235,19 @@ func companiesPart3() []domain.CompanyProfile {
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "dynatrace",
 				Employees: "3,500",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Dynatrace-EI_IE309684.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Dynatrace-Reviews-E309684.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Dynatrace-Jobs-E309684.htm",
+				Jobs:        "242",
+				Reviews:     "1.6K",
+				Salaries:    "2.8K",
+				ReviewsRate: "4.1",
+				Verified:    true,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
 			},
 			OttaProfileSlug:   "Dynatrace",
 			YouTubeChannelURL: "",
@@ -309,11 +315,18 @@ func companiesPart3() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Digital and application performance monitoring",
+			DealroomURL:      "",
+			CrunchbaseURL:    "",
+			PitchbookURL:     "",
+			YahooFinanceURL:  "",
+			GoogleFinanceURL: "",
+			YCombinatorURL:   "",
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
 				domain.Czechia,
 			},
+			Ignore: false,
 		},
 		{
 			ID:      0,  // system
@@ -352,6 +365,9 @@ func companiesPart3() []domain.CompanyProfile {
 				Salaries:    "95",
 				ReviewsRate: "3.8",
 				Verified:    true,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
 			},
 			OttaProfileSlug:   "emnify-1",
 			YouTubeChannelURL: "",
@@ -432,7 +448,9 @@ func companiesPart3() []domain.CompanyProfile {
 				ReviewsRate: "3.9",
 				Verified:    true,
 			},
-			IndeedProfile:     domain.IndeedProfile{},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
@@ -510,6 +528,9 @@ func companiesPart3() []domain.CompanyProfile {
 				Salaries:    "683",
 				ReviewsRate: "3.9",
 				Verified:    true,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -3241,6 +3262,9 @@ func companiesPart3() []domain.CompanyProfile {
 				ReviewsRate: "4.2",
 				Verified:    true,
 			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
 			Languages: domain.Languages{
 				domain.Go:    {},
 				domain.Rust:  {},
@@ -3310,6 +3334,9 @@ func companiesPart3() []domain.CompanyProfile {
 				Salaries:    "3.5K",
 				ReviewsRate: "3.9",
 				Verified:    true,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go:    {},
@@ -3386,6 +3413,9 @@ func companiesPart3() []domain.CompanyProfile {
 				Salaries:    "9.8K",
 				ReviewsRate: "4.0",
 				Verified:    true,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go:    {},
