@@ -45,6 +45,9 @@ func companiesPart7() []domain.CompanyProfile {
 				ReviewsRate: "3.9",
 				Verified:    true,
 			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 12,
@@ -114,6 +117,9 @@ func companiesPart7() []domain.CompanyProfile {
 				Salaries:    "19K",
 				ReviewsRate: "3.9",
 				Verified:    true,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -209,6 +215,9 @@ func companiesPart7() []domain.CompanyProfile {
 				ReviewsRate: "",
 				Verified:    false,
 			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 3,
@@ -276,6 +285,9 @@ func companiesPart7() []domain.CompanyProfile {
 				Salaries:    "9.7K",
 				ReviewsRate: "4.0",
 				Verified:    false,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -350,6 +362,9 @@ func companiesPart7() []domain.CompanyProfile {
 				ReviewsRate: "4.1",
 				Verified:    true,
 			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -416,6 +431,9 @@ func companiesPart7() []domain.CompanyProfile {
 				ReviewsRate: "",
 				Verified:    false,
 			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -474,6 +492,9 @@ func companiesPart7() []domain.CompanyProfile {
 				Salaries:    "",
 				ReviewsRate: "",
 				Verified:    false,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {},

@@ -37,6 +37,9 @@ func companiesPart2() []domain.CompanyProfile {
 				ReviewsRate: "3.7",
 				Verified:    false,
 			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "Trusting-Social",
+			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
@@ -128,6 +131,9 @@ func companiesPart2() []domain.CompanyProfile {
 				ReviewsRate: "3.8",
 				Verified:    true,
 			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "Mcafee",
+			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
@@ -184,6 +190,9 @@ func companiesPart2() []domain.CompanyProfile {
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Hadrian-EI_IE5364733.11,18.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Hadrian-Reviews-E5364733.htm",
 			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
 			OttaProfileSlug:   "Hadrian-2",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
@@ -236,6 +245,9 @@ func companiesPart2() []domain.CompanyProfile {
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Scaleway-EI_IE1861876.11,19.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Scaleway-Reviews-E1861876.htm",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
 			},
 			OttaProfileSlug:   "Scaleway",
 			YouTubeChannelURL: "",
@@ -307,6 +319,9 @@ func companiesPart2() []domain.CompanyProfile {
 				ReviewsRate: "4.0",
 				Verified:    true,
 			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "Demandbase",
+			},
 			OttaProfileSlug:   "Demandbase",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
@@ -367,6 +382,9 @@ func companiesPart2() []domain.CompanyProfile {
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Overwolf-EI_IE1963582.11,19.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Overwolf-Reviews-E1963582.htm",
 			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
 			OttaProfileSlug:   "Overwolf",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
@@ -422,6 +440,9 @@ func companiesPart2() []domain.CompanyProfile {
 				OverviewURL: "",
 				ReviewsURL:  "",
 				Verified:    false,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
 			},
 			OttaProfileSlug:   "Bitfount",
 			YouTubeChannelURL: "",
@@ -491,6 +512,9 @@ func companiesPart2() []domain.CompanyProfile {
 				ReviewsRate: "3.2",
 				Verified:    true,
 			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
 			OttaProfileSlug:   "Hinge",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
@@ -541,6 +565,9 @@ func companiesPart2() []domain.CompanyProfile {
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Firework-EI_IE2300706.11,19.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Firework-Reviews-E2300706.htm",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
 			},
 			OttaProfileSlug:   "Firework",
 			YouTubeChannelURL: "",
@@ -607,7 +634,9 @@ func companiesPart2() []domain.CompanyProfile {
 				ReviewsRate: "4.6",
 				Verified:    false,
 			},
-			IndeedProfile:     domain.IndeedProfile{},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
 			OttaProfileSlug:   "Breakroom",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
@@ -1057,6 +1086,9 @@ func companiesPart2() []domain.CompanyProfile {
 				ReviewsRate: "3.4",
 				Verified:    true,
 			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "Ipsos",
+			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
@@ -1267,6 +1299,9 @@ func companiesPart2() []domain.CompanyProfile {
 				Salaries:    "67",
 				ReviewsRate: "4.1",
 				Verified:    true,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "Onesignal-1",
 			},
 			OttaProfileSlug:   "OneSignal",
 			YouTubeChannelURL: "",
@@ -1630,7 +1665,9 @@ func companiesPart2() []domain.CompanyProfile {
 				ReviewsRate: "4.3",
 				Verified:    true,
 			},
-			IndeedProfile:     domain.IndeedProfile{},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
@@ -1804,6 +1841,9 @@ func companiesPart2() []domain.CompanyProfile {
 				ReviewsRate: "4.3",
 				Verified:    true,
 			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "Kaseya",
+			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
@@ -1947,6 +1987,9 @@ func companiesPart2() []domain.CompanyProfile {
 				Salaries:    "2.1K",
 				ReviewsRate: "3.9",
 				Verified:    false,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "Liebherr-Group",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -2104,10 +2147,13 @@ func companiesPart2() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 8,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "https://www.linkedin.com/jobs/view/3819936157/",
-							ShortDescription: "We are looking for a talented Go developer",
-							URL:              "https://www.linkedin.com/jobs/view/3819936157/",
-							Date:             mustDate("2024-02-26"),
+							Title:                "Senior Backend Engineer",
+							ShortDescription:     "We are looking for a talented Go developer",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/3819936157/",
+							Date:                 mustDate("2024-02-26"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 					},
 				},
@@ -3360,7 +3406,9 @@ func companiesPart2() []domain.CompanyProfile {
 				ReviewsRate: "4.4",
 				Verified:    true,
 			},
-			IndeedProfile:     domain.IndeedProfile{},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
 			OttaProfileSlug:   "Cycloid",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
@@ -3836,7 +3884,9 @@ func companiesPart2() []domain.CompanyProfile {
 				ReviewsRate: "3.7",
 				Verified:    true,
 			},
-			IndeedProfile:     domain.IndeedProfile{},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
@@ -3912,7 +3962,9 @@ func companiesPart2() []domain.CompanyProfile {
 				ReviewsRate: "4.4",
 				Verified:    false,
 			},
-			IndeedProfile:     domain.IndeedProfile{},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
@@ -4794,7 +4846,9 @@ func companiesPart2() []domain.CompanyProfile {
 				ReviewsRate: "3.3",
 				Verified:    true,
 			},
-			IndeedProfile:     domain.IndeedProfile{},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
 			OttaProfileSlug:   "Automox",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
@@ -5359,7 +5413,9 @@ func companiesPart2() []domain.CompanyProfile {
 				ReviewsRate: "4.1",
 				Verified:    false,
 			},
-			IndeedProfile:     domain.IndeedProfile{},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
@@ -5836,7 +5892,9 @@ func companiesPart2() []domain.CompanyProfile {
 				ReviewsRate: "3.8",
 				Verified:    true,
 			},
-			IndeedProfile:     domain.IndeedProfile{},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
@@ -5994,7 +6052,9 @@ func companiesPart2() []domain.CompanyProfile {
 				ReviewsRate: "4.0",
 				Verified:    true,
 			},
-			IndeedProfile:     domain.IndeedProfile{},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
@@ -6105,7 +6165,9 @@ func companiesPart2() []domain.CompanyProfile {
 				ReviewsRate: "2.7",
 				Verified:    true,
 			},
-			IndeedProfile:     domain.IndeedProfile{},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
 			OttaProfileSlug:   "Outreach",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
@@ -6515,7 +6577,9 @@ func companiesPart2() []domain.CompanyProfile {
 				ReviewsRate: "3.6",
 				Verified:    true,
 			},
-			IndeedProfile:     domain.IndeedProfile{},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
@@ -6712,7 +6776,9 @@ func companiesPart2() []domain.CompanyProfile {
 				ReviewsRate: "4.9",
 				Verified:    false,
 			},
-			IndeedProfile:     domain.IndeedProfile{},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
@@ -7030,7 +7096,9 @@ func companiesPart2() []domain.CompanyProfile {
 				ReviewsRate: "3.9",
 				Verified:    true,
 			},
-			IndeedProfile:     domain.IndeedProfile{},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
 			OttaProfileSlug:   "Mimecast",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
@@ -7110,7 +7178,9 @@ func companiesPart2() []domain.CompanyProfile {
 				ReviewsRate: "4.3",
 				Verified:    true,
 			},
-			IndeedProfile:     domain.IndeedProfile{},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
 			OttaProfileSlug:   "Sentry",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
@@ -7265,7 +7335,9 @@ func companiesPart2() []domain.CompanyProfile {
 				ReviewsRate: "4.7",
 				Verified:    true,
 			},
-			IndeedProfile:     domain.IndeedProfile{},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
@@ -7341,6 +7413,9 @@ func companiesPart2() []domain.CompanyProfile {
 				ReviewsRate: "3.8",
 				Verified:    true,
 			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
 			OttaProfileSlug:   "ExpressVPN",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
@@ -7394,6 +7469,9 @@ func companiesPart2() []domain.CompanyProfile {
 				OverviewURL: "",
 				ReviewsURL:  "",
 				Verified:    false,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
 			},
 			OttaProfileSlug:   "shuttle",
 			YouTubeChannelURL: "",
@@ -11079,6 +11157,9 @@ func companiesPart2() []domain.CompanyProfile {
 				ReviewsRate: "3.5",
 				Verified:    true,
 			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -11281,6 +11362,9 @@ func companiesPart2() []domain.CompanyProfile {
 				ReviewsRate: "3.2",
 				Verified:    true,
 			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -11346,6 +11430,9 @@ func companiesPart2() []domain.CompanyProfile {
 				Salaries:    "2.9K",
 				ReviewsRate: "3.8",
 				Verified:    true,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -11442,6 +11529,9 @@ func companiesPart2() []domain.CompanyProfile {
 				ReviewsRate: "3.9",
 				Verified:    true,
 			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -11523,6 +11613,9 @@ func companiesPart2() []domain.CompanyProfile {
 				ReviewsRate: "3.4",
 				Verified:    true,
 			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -11601,6 +11694,9 @@ func companiesPart2() []domain.CompanyProfile {
 				ReviewsRate: "4.0",
 				Verified:    true,
 			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -11665,6 +11761,9 @@ func companiesPart2() []domain.CompanyProfile {
 				ReviewsRate: "4.1",
 				Verified:    true,
 			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -11714,6 +11813,9 @@ func companiesPart2() []domain.CompanyProfile {
 				Salaries:    "5",
 				ReviewsRate: "4.8",
 				Verified:    true,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -11778,6 +11880,9 @@ func companiesPart2() []domain.CompanyProfile {
 				ReviewsRate: "4.1",
 				Verified:    true,
 			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -11830,6 +11935,9 @@ func companiesPart2() []domain.CompanyProfile {
 				Salaries:    "",
 				ReviewsRate: "",
 				Verified:    false,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -11884,6 +11992,9 @@ func companiesPart2() []domain.CompanyProfile {
 				Salaries:    "12",
 				ReviewsRate: "3.9",
 				Verified:    false,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {

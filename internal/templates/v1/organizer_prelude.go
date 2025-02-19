@@ -184,7 +184,7 @@ func googleSearchLevelsFyi(companyName string) string {
 
 func googleSearchIndeed(companyName string) string {
 	values := url.Values{
-		"q": {"site:indeed.com" + " " + companyName},
+		"q": {"site:www.indeed.com/cmp/" + " " + companyName},
 	}
 
 	return "https://www.google.com/search?" + values.Encode()

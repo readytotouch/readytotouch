@@ -261,16 +261,16 @@ func generateLogos(companies []domain.CompanyProfile) {
 }
 
 func inspectCompaniesCorrectness(companies []domain.CompanyProfile) {
-	type LevelsFyiDiffAlias struct {
-		LinkedInAlias  string
-		LevelsFyiAlias string
+	type AliasPair struct {
+		LinkedInAlias string
+		AttemptAlias  string
 	}
 
 	var (
 		total               = 0
 		emptyLevelsFyiCount = 0
 		sameLevelsFyiCount  = 0
-		diffAliases         = make([]LevelsFyiDiffAlias, 0, len(companies))
+		diffAliases         = make([]AliasPair, 0, len(companies))
 	)
 
 	for _, company := range companies {
@@ -280,21 +280,21 @@ func inspectCompaniesCorrectness(companies []domain.CompanyProfile) {
 
 		total++
 
-		if company.LevelsFyiProfile.Alias == "" {
+		if company.IndeedProfile.Alias == "" {
 			emptyLevelsFyiCount++
 
 			continue
 		}
 
-		if compareAliases(company.LinkedInProfile.Alias, company.LevelsFyiProfile.Alias) {
+		if compareAliases(strings.ToLower(company.LinkedInProfile.Alias), strings.ToLower(company.IndeedProfile.Alias)) {
 			sameLevelsFyiCount++
 
 			continue
 		}
 
-		diffAliases = append(diffAliases, LevelsFyiDiffAlias{
-			LinkedInAlias:  company.LinkedInProfile.Alias,
-			LevelsFyiAlias: company.LevelsFyiProfile.Alias,
+		diffAliases = append(diffAliases, AliasPair{
+			LinkedInAlias: company.LinkedInProfile.Alias,
+			AttemptAlias:  company.IndeedProfile.Alias,
 		})
 	}
 
@@ -303,10 +303,10 @@ func inspectCompaniesCorrectness(companies []domain.CompanyProfile) {
 	})
 
 	fmt.Printf("Total: %d\n", total)
-	fmt.Printf("Empty Levels.fyi count: %d\n", emptyLevelsFyiCount)
-	fmt.Printf("Same Levels.fyi count: %d\n", sameLevelsFyiCount)
+	fmt.Printf("Empty count: %d\n", emptyLevelsFyiCount)
+	fmt.Printf("Same count: %d\n", sameLevelsFyiCount)
 	for _, diffAlias := range diffAliases {
-		fmt.Printf("%32s %s\n", diffAlias.LinkedInAlias, diffAlias.LevelsFyiAlias)
+		fmt.Printf("%32s %s\n", diffAlias.LinkedInAlias, diffAlias.AttemptAlias)
 	}
 	fmt.Printf("Diff aliases count: %d\n", len(diffAliases))
 }

@@ -23,12 +23,16 @@
     <li>
         <div class="company-name">{%s company.Name %}</div>
         <div class="links">
+            {% if company.IndeedProfile.Alias == "" %}
             <a href='{%s googleSearchIndeed(hostname(company.Website)) %}' target="_blank">
                 <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> site:indeed.com {%s hostname(company.Website) %}
             </a>
             <a href='{%s googleSearchIndeed(company.Name) %}' target="_blank">
                 <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> site:indeed.com {%s company.Name %}
             </a>
+            {% else %}
+            <a href="https://www.indeed.com/cmp/{%s company.IndeedProfile.Alias %}">Overview</a>
+            {% endif %}
         </div>
     </li>
     {% endfor %}
