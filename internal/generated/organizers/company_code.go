@@ -634,6 +634,8 @@ var (
 		"dhl":                                 631, // DHL
 		"moia_mobility":                       632, // MOIA
 		"t-mobile":                            633, // T-Mobile
+		"abb":                                 634, // ABB
+		"flock-safety":                        635, // Flock Safety
 
 	}
 )
