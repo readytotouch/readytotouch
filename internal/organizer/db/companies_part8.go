@@ -4964,7 +4964,8 @@ func companiesPart8() []domain.CompanyProfile {
 				Employees: "210",
 			},
 			Languages: domain.Languages{
-				domain.Go: {
+				domain.Go: {},
+				domain.Rust: {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
@@ -4987,7 +4988,6 @@ func companiesPart8() []domain.CompanyProfile {
 						},
 					},
 				},
-				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},
