@@ -1621,6 +1621,15 @@ func companiesPart8() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Big Data Developer (Scala/Spark)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4158727075/",
+							Date:                 mustDate("2025-02-19"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Elixir:  {},
@@ -2747,7 +2756,20 @@ func companiesPart8() []domain.CompanyProfile {
 				Alias: "",
 			},
 			Languages: domain.Languages{
-				domain.Go:   {},
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Golang Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4157834382/",
+							Date:                 mustDate("2025-02-18"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
 				domain.Rust: {},
 				domain.Zig:  {},
 				domain.Scala: {
@@ -4461,6 +4483,15 @@ func companiesPart8() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Kubernetes Go Software Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4158615510/",
+							Date:                 mustDate("2025-02-19"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -4829,7 +4860,10 @@ func companiesPart8() []domain.CompanyProfile {
 				Employees: "83,520",
 			},
 			Languages: domain.Languages{
-				domain.Go: {
+				domain.Go:   {},
+				domain.Rust: {},
+				domain.Zig:  {},
+				domain.Scala: {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
@@ -4843,6 +4877,55 @@ func companiesPart8() []domain.CompanyProfile {
 						},
 					},
 				},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Germans provider of telecommunications services",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "ABB",
+			Website: "https://global.abb/",
+			Careers: "https://careers.abb/global/en/home",
+			About:   "https://global.abb/group/en/about",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                277579,
+				Alias:             "abb",
+				Name:              "ABB",
+				Followers:         "4M",
+				Employees:         "10K+",
+				AssociatedMembers: "114,997",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "abb",
+				Employees: "97,250",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Full Stack / Golang / Quarkus Developer",
+							ShortDescription:     "B&R Automation",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4157846786/",
+							Date:                 mustDate("2025-02-18"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -4850,7 +4933,68 @@ func companiesPart8() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "Germans provider of telecommunications services",
+			ShortDescription: "Swedish-Swiss technology company that specializes in providing electrification and automation solutions.",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Flock Safety",
+			Website: "https://www.flocksafety.com/",
+			Careers: "https://www.flocksafety.com/careers",
+			About:   "https://www.flocksafety.com/about",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                18021229,
+				Alias:             "flock-safety",
+				Name:              "Flock Safety",
+				Followers:         "51K",
+				Employees:         "501-1K",
+				AssociatedMembers: "1,058",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "flock-safety",
+				Employees: "210",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer — Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4157420922/",
+							Date:                 mustDate("2025-02-18"),
+							WithSalary:           true, // $182.000 - $251.000 per year
+							Remote:               true,
+						},
+						{
+							Title:                "Staff Software Engineer — Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4157425565/",
+							Date:                 mustDate("2025-02-18"),
+							WithSalary:           true, // $218.000 - $300.000 per year
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Flock Safety is a public safety operating system",
 		},
 
 		// Template short

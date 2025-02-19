@@ -3904,10 +3904,13 @@ func companiesPart2() []domain.CompanyProfile {
 							Date:             mustDate("2025-01-12"), // mustDate("2024-11-08"),
 						},
 						{
-							Title:            "Scala Engineer",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4133037478/",
-							Date:             mustDate("2025-01-23"),
+							Title:                "Scala Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4137581403/",
+							Date:                 mustDate("2025-02-19"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 					},
 				},
@@ -5474,6 +5477,15 @@ func companiesPart2() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4154143117/",
 							Date:                 mustDate("2025-02-15"),
+							WithSalary:           true, // $101.000 - $160.000 per year
+							Remote:               false,
+						},
+						{
+							Title:                "Software Engineer Java/Golang",
+							ShortDescription:     "Machine Identity Security",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4157080986/",
+							Date:                 mustDate("2025-02-18"),
 							WithSalary:           true, // $101.000 - $160.000 per year
 							Remote:               false,
 						},
@@ -11460,8 +11472,8 @@ func companiesPart2() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4128638661/",
-							Date:                 mustDate("2025-01-17"),
-							WithSalary:           true, // $122.500 — $175K per year
+							Date:                 mustDate("2025-02-18"), // mustDate("2025-01-17"),
+							WithSalary:           true,                   // $122.500 — $175K per year
 							Remote:               false,
 						},
 						{
