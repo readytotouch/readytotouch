@@ -3898,10 +3898,13 @@ func companiesPart2() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 5,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Scala Developer",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4042171556/",
-							Date:             mustDate("2025-01-12"), // mustDate("2024-11-08"),
+							Title:                "Scala Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4042171556/",
+							Date:                 mustDate("2025-01-12"), // mustDate("2024-11-08"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 						{
 							Title:                "Scala Engineer",

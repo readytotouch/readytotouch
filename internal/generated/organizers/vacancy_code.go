@@ -445,7 +445,7 @@ var (
 		"https://www.linkedin.com/jobs/view/3872092645/":   499, // home24
 		"https://www.linkedin.com/jobs/view/4050919710/":   500, // australian-broadcasting-corporation
 		"https://www.linkedin.com/jobs/view/4042171556/":   35,  // go-nitro
-		"https://www.linkedin.com/jobs/view/4133037478/":   694, // go-nitro
+		"https://www.linkedin.com/jobs/view/4137581403/":   694, // go-nitro
 		"https://www.linkedin.com/jobs/view/4068403021/":   36,  // appodeal
 		"https://www.linkedin.com/jobs/view/4068296805/":   37,  // appodeal
 		"https://www.linkedin.com/jobs/view/4048262224/":   501, // talamobile
