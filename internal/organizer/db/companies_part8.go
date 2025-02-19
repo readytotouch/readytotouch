@@ -4933,7 +4933,7 @@ func companiesPart8() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "Swedish-Swiss technology company that specializes in providing electrification and automation solutions.",
+			ShortDescription: "Swedish-Swiss technology company that specializes in providing electrification and automation solutions",
 		},
 
 		{
@@ -4997,7 +4997,7 @@ func companiesPart8() []domain.CompanyProfile {
 			ShortDescription: "Flock Safety is a public safety operating system",
 		},
 
-		// Template short
+		// Template
 		//{
 		//	ID:      0,  // system
 		//	Type:    "", // system
@@ -5005,6 +5005,7 @@ func companiesPart8() []domain.CompanyProfile {
 		//	Website: "",
 		//	Careers: "",
 		//	About:   "",
+		//	Blog:    "",
 		//	LinkedInProfile: domain.LinkedInProfile{
 		//		ID:                0,
 		//		Alias:             "",
@@ -5022,6 +5023,12 @@ func companiesPart8() []domain.CompanyProfile {
 		//		Alias: "",
 		//	},
 		//	LevelsFyiProfile: domain.LevelsFyiProfile{
+		//		Alias: "",
+		//	},
+		//	GlassdoorProfile: domain.GlassdoorProfile{
+		//		OverviewURL: "",
+		//	},
+		//	IndeedProfile: domain.IndeedProfile{
 		//		Alias: "",
 		//	},
 		//	Languages: domain.Languages{
