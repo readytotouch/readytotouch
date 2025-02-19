@@ -107,7 +107,7 @@ func companiesPart4() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4093559031/",
-							Date:                 mustDate("2024-12-10"),
+							Date:                 mustDate("2025-02-19"), // mustDate("2024-12-10"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3174,6 +3174,15 @@ func companiesPart4() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4132416977/",
 							Date:                 mustDate("2025-01-23"),
 							WithSalary:           true, // $138.780 — $195.030 per year
+							Remote:               false,
+						},
+						{
+							Title:                "Cloud Software Engineer — Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4154587550/",
+							Date:                 mustDate("2025-02-19"),
+							WithSalary:           true, // $152.200 - $226.500 per year
 							Remote:               false,
 						},
 					},

@@ -838,6 +838,24 @@ func companiesPart5() []domain.CompanyProfile {
 							WithSalary:           true, // $125-150k
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Staff Software Engineer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4153895434/",
+							Date:                 mustDate("2025-02-19"),
+							WithSalary:           true, // 350-500k (BRL) annual base salary + annual variable bonus
+							Remote:               true,
+						},
+						{
+							Title:                "Software Engineer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4153891886/",
+							Date:                 mustDate("2025-02-18"),
+							WithSalary:           true, // 250-350k (BRL)annual base salary + annual variable bonus
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust:    {},
