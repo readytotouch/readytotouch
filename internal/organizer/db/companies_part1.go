@@ -16053,7 +16053,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Vector-Atomic",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -16254,7 +16254,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Statista-Ltd.",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -16460,7 +16460,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Palo-Alto-Networks",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -16559,7 +16559,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Scitec-1",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -16690,7 +16690,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "The-Walt-Disney-Company",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -16820,7 +16820,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Materialise",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -16894,7 +16894,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Influxdata",
 			},
 			OttaProfileSlug:   "InfluxData",
 			YouTubeChannelURL: "",
@@ -17100,7 +17100,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Datadog",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -17186,7 +17186,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Genius-Sports",
 			},
 			OttaProfileSlug:   "Genius-Sports",
 			YouTubeChannelURL: "",
@@ -17592,7 +17592,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Evercharge-1",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -17765,7 +17765,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Talon.one",
 			},
 			OttaProfileSlug:   "Talon-One",
 			YouTubeChannelURL: "",
@@ -18040,7 +18040,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Cross-River-Bank",
 			},
 			OttaProfileSlug:   "Cross-River",
 			YouTubeChannelURL: "",
@@ -18121,7 +18121,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Abnormal-Security",
 			},
 			OttaProfileSlug:   "Abnormal-Security",
 			YouTubeChannelURL: "",
@@ -18258,7 +18258,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Apollo-Graphql",
 			},
 			OttaProfileSlug:   "Apollo",
 			YouTubeChannelURL: "",
@@ -18555,7 +18555,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Ddn-7",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -18632,7 +18632,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Starling-Bank",
 			},
 			OttaProfileSlug:   "Starling-Bank",
 			YouTubeChannelURL: "",
@@ -18787,7 +18787,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Algolia",
 			},
 			OttaProfileSlug:   "Algolia",
 			YouTubeChannelURL: "",
@@ -18995,7 +18995,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Enova-International",
 			},
 			OttaProfileSlug:   "Enova",
 			YouTubeChannelURL: "",
@@ -19130,7 +19130,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Sourcegraph",
 			},
 			OttaProfileSlug:   "Sourcegraph",
 			YouTubeChannelURL: "",
@@ -19404,7 +19404,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Moveworks",
 			},
 			OttaProfileSlug:   "Moveworks",
 			YouTubeChannelURL: "",
@@ -19524,7 +19524,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Upvest",
 			},
 			OttaProfileSlug:   "Upvest",
 			YouTubeChannelURL: "",
@@ -19672,7 +19672,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Neo4j",
 			},
 			OttaProfileSlug:   "Neo4j",
 			YouTubeChannelURL: "",
@@ -19760,7 +19760,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Jack-Henry-&-Associates-7",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -19857,7 +19857,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Gocardless",
 			},
 			OttaProfileSlug:   "GoCardless",
 			YouTubeChannelURL: "",
@@ -19933,7 +19933,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Zalando",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -20067,7 +20067,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Freewheel-4",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -20161,7 +20161,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Geocomply",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",

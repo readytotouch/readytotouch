@@ -38,7 +38,7 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Trusting-Social",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -132,7 +132,7 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Mcafee",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -320,7 +320,7 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Demandbase",
 			},
 			OttaProfileSlug:   "Demandbase",
 			YouTubeChannelURL: "",
@@ -1086,6 +1086,9 @@ func companiesPart2() []domain.CompanyProfile {
 				ReviewsRate: "3.4",
 				Verified:    true,
 			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "Ipsos",
+			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
@@ -1296,6 +1299,9 @@ func companiesPart2() []domain.CompanyProfile {
 				Salaries:    "67",
 				ReviewsRate: "4.1",
 				Verified:    true,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "Onesignal-1",
 			},
 			OttaProfileSlug:   "OneSignal",
 			YouTubeChannelURL: "",
@@ -1835,6 +1841,9 @@ func companiesPart2() []domain.CompanyProfile {
 				ReviewsRate: "4.3",
 				Verified:    true,
 			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "Kaseya",
+			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
@@ -1978,6 +1987,9 @@ func companiesPart2() []domain.CompanyProfile {
 				Salaries:    "2.1K",
 				ReviewsRate: "3.9",
 				Verified:    false,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "Liebherr-Group",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
