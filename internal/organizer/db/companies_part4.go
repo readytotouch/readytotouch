@@ -1044,15 +1044,16 @@ func companiesPart4() []domain.CompanyProfile {
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Java Developer",
-							ShortDescription:     "",
+							ShortDescription:     "Strong experience with Golang (at least 3 years in recent), experience with Java would be great",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4087446589/",
 							Date:                 mustDate("2024-12-03"),
-							WithSalary:           false,
+							WithSalary:           true, // $60/hr - $68/hr
+							Remote:               false,
 						},
 						{
 							Title:                "Software Development Engineer",
-							ShortDescription:     "",
+							ShortDescription:     "Develop Windows solutions using Golang and Python",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4158842757/",
 							Date:                 mustDate("2025-02-19"),
@@ -2330,7 +2331,7 @@ func companiesPart4() []domain.CompanyProfile {
 							Remote:               false,
 						},
 						{
-							Title:                "Backend Developer (GoLang)",
+							Title:                "Backend Developer (Golang)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4159419521/",
