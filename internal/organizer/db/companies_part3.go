@@ -49,7 +49,7 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Capital-One",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -206,7 +206,6 @@ func companiesPart3() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Logo:    "",
 			Name:    "Dynatrace",
 			Website: "https://www.dynatrace.com/",
 			Careers: "https://careers.dynatrace.com/",
@@ -247,7 +246,7 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Dynatrace",
 			},
 			OttaProfileSlug:   "Dynatrace",
 			YouTubeChannelURL: "",
@@ -449,7 +448,7 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Moody's-9dbf4b88",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -530,7 +529,7 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Lytx",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -695,7 +694,7 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Yum!-Brands,-Inc.",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -772,7 +771,7 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Nokia",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -999,7 +998,7 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Rocket-Lab-USA",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -1079,7 +1078,7 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Sportradar",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -1241,7 +1240,7 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Geico",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -1595,7 +1594,7 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Centene",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -2077,7 +2076,7 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Mitratech-2",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -2319,7 +2318,7 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Cohesity",
 			},
 			OttaProfileSlug:   "Cohesity",
 			YouTubeChannelURL: "",
@@ -2405,7 +2404,7 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Idt-Corporation",
 			},
 			OttaProfileSlug:   "IDT",
 			YouTubeChannelURL: "",
@@ -2592,7 +2591,7 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Social-Discovery-Group-1",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -2669,7 +2668,7 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Sysdig",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -2860,7 +2859,7 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Ebay",
 			},
 			OttaProfileSlug:   "eBay",
 			YouTubeChannelURL: "",
@@ -3008,7 +3007,7 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Axis-Communications",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
