@@ -9,7 +9,6 @@ func companiesPart1() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Logo:    "", // system
 			Name:    "ReadyToTouch",
 			Website: "https://readytotouch.com/",
 			Careers: "",
@@ -58,7 +57,6 @@ func companiesPart1() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Logo:    "", // system
 			Name:    "DocHQ",
 			Website: "https://dochq.co.uk/",
 			Careers: "",
@@ -125,7 +123,6 @@ func companiesPart1() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Logo:    "", // system
 			Name:    "Google",
 			Website: "https://www.google.com/",
 			Careers: "https://www.google.com/about/careers/",
@@ -4895,7 +4892,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "1password",
 			},
 			OttaProfileSlug:   "1Password",
 			YouTubeChannelURL: "https://www.youtube.com/@1PasswordVideos",

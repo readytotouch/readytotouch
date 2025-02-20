@@ -206,7 +206,6 @@ func companiesPart3() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Logo:    "",
 			Name:    "Dynatrace",
 			Website: "https://www.dynatrace.com/",
 			Careers: "https://careers.dynatrace.com/",
