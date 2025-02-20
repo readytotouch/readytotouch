@@ -636,6 +636,9 @@ var (
 		"t-mobile":                            633, // T-Mobile
 		"abb":                                 634, // ABB
 		"flock-safety":                        635, // Flock Safety
+		"banquenationaleducanada":             636, // National Bank of Canada
+		"nbcuniversal-inc-":                   637, // NBCUniversal
+		"sendle":                              638, // Sendle
 
 	}
 )

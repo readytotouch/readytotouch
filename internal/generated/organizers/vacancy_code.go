@@ -159,6 +159,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4119051974/":   574, // lightspeedcommerce
 		"https://www.linkedin.com/jobs/view/4092327926/":   723, // lightspeedcommerce
 		"https://www.linkedin.com/jobs/view/4143662469/":   756, // lightspeedcommerce
+		"https://www.linkedin.com/jobs/view/4160162842/":   922, // lightspeedcommerce
 		"https://www.linkedin.com/jobs/view/4022342302/":   319, // squarespace
 		"https://www.linkedin.com/jobs/view/3872933701/":   320, // curve-ltd
 		"https://www.linkedin.com/jobs/view/3869628047/":   321, // woolsocks
@@ -234,6 +235,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4148940672/":   822, // sailpoint-technologies
 		"https://www.linkedin.com/jobs/view/4151653458/":   823, // sailpoint-technologies
 		"https://www.linkedin.com/jobs/view/4137755120/":   909, // sailpoint-technologies
+		"https://www.linkedin.com/jobs/view/4158963804/":   923, // sailpoint-technologies
 		"https://www.linkedin.com/jobs/view/3797062001/":   353, // proofpoint
 		"https://www.linkedin.com/jobs/view/3910221910/":   354, // rxbenefits-inc-
 		"https://www.linkedin.com/jobs/view/3912660665/":   355, // k-id
@@ -305,6 +307,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4033619128/":   437, // zurich-instruments-ag
 		"https://www.linkedin.com/jobs/view/4033692599/":   287, // palo-alto-networks
 		"https://www.linkedin.com/jobs/view/4081871661/":   863, // palo-alto-networks
+		"https://www.linkedin.com/jobs/view/4159521277/":   924, // palo-alto-networks
 		"https://www.linkedin.com/jobs/view/4035556879/":   288, // palo-alto-networks
 		"https://www.linkedin.com/jobs/view/4104811687/":   289, // palo-alto-networks
 		"https://www.linkedin.com/jobs/view/4104810631/":   652, // palo-alto-networks
@@ -334,6 +337,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4040225807/":   293, // evercharge
 		"https://www.linkedin.com/jobs/view/4081026868/":   294, // evercharge
 		"https://www.linkedin.com/jobs/view/4114584098/":   805, // evercharge
+		"https://www.linkedin.com/jobs/view/4158798582/":   925, // evercharge
 		"https://www.linkedin.com/jobs/view/3990418832/":   24,  // eburyfintech
 		"https://www.linkedin.com/jobs/view/4132372469/":   690, // eburyfintech
 		"https://www.linkedin.com/jobs/view/3945724263/":   223, // talon.one
@@ -531,6 +535,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4121195474/":   831, // worldpay
 		"https://www.linkedin.com/jobs/view/4048214298/":   52,  // exabeam
 		"https://www.linkedin.com/jobs/view/4059312901/":   53,  // selby-jennings
+		"https://www.linkedin.com/jobs/view/4160160432/":   926, // selby-jennings
 		"https://www.linkedin.com/jobs/view/4060807594/":   54,  // databeaconaero
 		"https://www.linkedin.com/jobs/view/4064837533/":   55,  // wearemntn
 		"https://www.linkedin.com/jobs/view/4150806532/":   809, // wearemntn
@@ -656,6 +661,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4081267104/":   607, // qohash
 		"https://www.linkedin.com/jobs/view/4078815266/":   127, // kimiagroup
 		"https://www.linkedin.com/jobs/view/4129169719/":   663, // kimiagroup
+		"https://www.linkedin.com/jobs/view/4157279395/":   927, // kimiagroup
 		"https://www.linkedin.com/jobs/view/4083629889/":   128, // telestream
 		"https://www.linkedin.com/jobs/view/4062327545/":   129, // mitratech
 		"https://www.linkedin.com/jobs/view/3946499898/":   130, // paddle
@@ -689,6 +695,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4056139785/":   209, // maersk-group
 		"https://www.linkedin.com/jobs/view/4122919615/":   627, // maersk-group
 		"https://www.linkedin.com/jobs/view/4151395653/":   835, // maersk-group
+		"https://www.linkedin.com/jobs/view/4160123502/":   928, // maersk-group
 		"https://www.linkedin.com/jobs/view/4096830999/":   147, // limango-gmbh
 		"https://www.linkedin.com/jobs/view/4093559031/":   148, // varonis
 		"https://www.linkedin.com/jobs/view/4081442058/":   555, // varonis
@@ -719,6 +726,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4090103893/":   160, // sunasterisk
 		"https://www.linkedin.com/jobs/view/4090375762/":   161, // miraclesoft
 		"https://www.linkedin.com/jobs/view/4087446589/":   162, // collabera
+		"https://www.linkedin.com/jobs/view/4158842757/":   929, // collabera
 		"https://www.linkedin.com/jobs/view/4049853199/":   163, // teamsparq
 		"https://www.linkedin.com/jobs/view/4016921964/":   164, // smg-marketplace
 		"https://www.linkedin.com/jobs/view/4145034904/":   771, // smg-marketplace
@@ -732,6 +740,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4050960562/":   168, // getir
 		"https://www.linkedin.com/jobs/view/4102013036/":   169, // happen-ing
 		"https://www.linkedin.com/jobs/view/4130508027/":   666, // happen-ing
+		"https://www.linkedin.com/jobs/view/4158727809/":   930, // happen-ing
 		"https://www.linkedin.com/jobs/view/3884244005/":   208, // happen-ing
 		"https://www.linkedin.com/jobs/view/4103278708/":   629, // happen-ing
 		"https://www.linkedin.com/jobs/view/4047579348/":   170, // zeller
@@ -753,6 +762,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4085449585/":   180, // praxent
 		"https://www.linkedin.com/jobs/view/4079391812/":   181, // stacklok
 		"https://www.linkedin.com/jobs/view/4102186636/":   182, // superindo
+		"https://www.linkedin.com/jobs/view/4159419521/":   931, // superindo
 		"https://www.linkedin.com/jobs/view/4100868953/":   183, // ubiquiti-
 		"https://www.linkedin.com/jobs/view/4144403457/":   773, // ubiquiti-
 		"https://www.linkedin.com/jobs/view/4096314146/":   184, // enflick-inc-
@@ -889,6 +899,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4139628979/":   776, // qad
 		"https://www.linkedin.com/jobs/view/4125983022/":   716, // new-work-se
 		"https://www.linkedin.com/jobs/view/4134786158/":   711, // sambindonesia
+		"https://www.linkedin.com/jobs/view/4138457629/":   932, // walmart
 		"https://www.linkedin.com/jobs/view/4133956837/":   749, // walmart
 		"https://www.linkedin.com/jobs/view/4146988578/":   884, // magnite
 		"https://www.linkedin.com/jobs/view/4116388763/":   750, // magnite
@@ -925,6 +936,8 @@ var (
 		"https://www.linkedin.com/jobs/view/4157846786/":   919, // abb
 		"https://www.linkedin.com/jobs/view/4157420922/":   920, // flock-safety
 		"https://www.linkedin.com/jobs/view/4157425565/":   921, // flock-safety
+		"https://www.linkedin.com/jobs/view/4136839875/":   933, // nbcuniversal-inc-
+		"https://www.linkedin.com/jobs/view/4157295270/":   934, // sendle
 
 	}
 )
