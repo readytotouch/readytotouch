@@ -8020,8 +8020,8 @@ func companiesPart2() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Rust Developer | Digital Asset Trading",
-							ShortDescription:     "",
+							Title:                "Rust Developer",
+							ShortDescription:     "Digital Asset Trading",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4059312901/",
 							Date:                 mustDate("2025-01-20"), // mustDate("2024-10-25"),

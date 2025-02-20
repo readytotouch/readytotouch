@@ -2976,7 +2976,7 @@ func companiesPart8() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Software Engineer — GoLang",
+							Title:                "Software Engineer — Golang",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4138457629/",
