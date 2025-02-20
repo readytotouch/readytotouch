@@ -6058,7 +6058,7 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Abbott",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -6150,7 +6150,7 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Dealer-Tire",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -6221,7 +6221,7 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Jpmorganchase-2",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -6334,7 +6334,7 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Outreach.io",
 			},
 			OttaProfileSlug:   "Outreach",
 			YouTubeChannelURL: "",
@@ -6414,7 +6414,7 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Tucows",
 			},
 			OttaProfileSlug:   "Tucows",
 			YouTubeChannelURL: "",
@@ -6488,7 +6488,7 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Ing",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -6564,7 +6564,7 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Remitly",
 			},
 			OttaProfileSlug:   "Remitly",
 			YouTubeChannelURL: "",
@@ -6761,7 +6761,7 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Bill-4650b035",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -7298,7 +7298,7 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Mimecast",
 			},
 			OttaProfileSlug:   "Mimecast",
 			YouTubeChannelURL: "",
@@ -7825,7 +7825,7 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Worldpay-5",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -8006,7 +8006,7 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Selby-Jennings",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -8692,7 +8692,7 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Bloomberg",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -8841,7 +8841,7 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Stratascale",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -8922,7 +8922,7 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Gartner",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -9002,7 +9002,7 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Extreme-Networks",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -9012,10 +9012,13 @@ func companiesPart2() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Senior Software Engineer — Golang — Cloud Networking Developer",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4055078837/",
-							Date:             mustDate("2024-10-25"),
+							Title:                "Senior Software Engineer — Golang — Cloud Networking Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4055078837/",
+							Date:                 mustDate("2024-10-25"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 						{
 							Title:                "Senior Back End Developer — Golang",
@@ -9230,7 +9233,7 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Synopsys",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -9310,7 +9313,7 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Pubmatic",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -9389,7 +9392,7 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Fanatics,-Inc",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -9543,7 +9546,7 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Smartrent-1",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -9848,7 +9851,7 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Priceline.com-1",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -9948,7 +9951,7 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "New-Relic",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -10028,7 +10031,7 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Riskified-3",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -10446,7 +10449,7 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Lexisnexis-Risk-Solutions",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -10606,7 +10609,7 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Singlestore",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -10991,7 +10994,7 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Sophos",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -11073,7 +11076,7 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Macquarie-Group",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -11151,7 +11154,7 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Ayoconnect",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -11226,7 +11229,7 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Camping-World",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
@@ -11299,7 +11302,7 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Shopee",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -11441,7 +11444,7 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Jfrog",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -11576,7 +11579,7 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Mirantis",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -11645,7 +11648,7 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Zscaler",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -11743,7 +11746,7 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Pure-Storage",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -11908,7 +11911,7 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Tomtom-1",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -12094,7 +12097,7 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Arista-Networks",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
