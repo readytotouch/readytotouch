@@ -1285,7 +1285,7 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4125175696/",
-							Date:                 mustDate("2025-02-15"), // mustDate("2025-01-16"),
+							Date:                 mustDate("2025-02-20"), // mustDate("2025-02-15"), // mustDate("2025-01-16"),
 							WithSalary:           true,                   // $60.00 - $77.00/ hr
 							Remote:               false,
 						},
@@ -2972,7 +2972,20 @@ func companiesPart8() []domain.CompanyProfile {
 				Alias: "",
 			},
 			Languages: domain.Languages{
-				domain.Go:   {},
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer — GoLang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4138457629/",
+							Date:                 mustDate("2025-02-20"),
+							WithSalary:           true, // $110.000 - $220.000 per year
+							Remote:               false,
+						},
+					},
+				},
 				domain.Rust: {},
 				domain.Zig:  {},
 				domain.Scala: {
@@ -3921,13 +3934,13 @@ func companiesPart8() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
-				JobsURL:     "",
-				Jobs:        "",
-				Reviews:     "",
-				Salaries:    "",
-				ReviewsRate: "",
+				OverviewURL: "https://www.glassdoor.ca/Overview/Working-at-NCR-Atleos-EI_IE10124065.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.ca/Reviews/NCR-Atleos-Reviews-E10124065.htm",
+				JobsURL:     "https://www.glassdoor.ca/Jobs/NCR-Atleos-Jobs-E10124065.htm",
+				Jobs:        "0",
+				Reviews:     "52",
+				Salaries:    "101",
+				ReviewsRate: "3.6",
 				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
@@ -4470,6 +4483,19 @@ func companiesPart8() []domain.CompanyProfile {
 				Alias:     "akamai",
 				Employees: "8,000",
 			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.ca/Overview/Working-at-Akamai-EI_IE9219.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.ca/Reviews/Akamai-Reviews-E9219.htm",
+				JobsURL:     "https://www.glassdoor.ca/Jobs/Akamai-Jobs-E9219.htm",
+				Jobs:        "153",
+				Reviews:     "3.5K",
+				Salaries:    "8.5K",
+				ReviewsRate: "4.4",
+				Verified:    true,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -4536,6 +4562,19 @@ func companiesPart8() []domain.CompanyProfile {
 				Alias:     "nasdaq",
 				Employees: "3,750",
 			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.ca/Overview/Working-at-Nasdaq-EI_IE12152.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.ca/Reviews/Nasdaq-Reviews-E12152.htm",
+				JobsURL:     "https://www.glassdoor.ca/Jobs/Nasdaq-Jobs-E12152.htm",
+				Jobs:        "239",
+				Reviews:     "1.4K",
+				Salaries:    "2.6K",
+				ReviewsRate: "4.1",
+				Verified:    true,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -4593,6 +4632,19 @@ func companiesPart8() []domain.CompanyProfile {
 				Alias:     "qualcomm",
 				Employees: "41,000",
 			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.ca/Overview/Working-at-Qualcomm-EI_IE640.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.ca/Reviews/Qualcomm-Reviews-E640.htm",
+				JobsURL:     "https://www.glassdoor.ca/Jobs/Qualcomm-Jobs-E640.htm",
+				Jobs:        "1.4K",
+				Reviews:     "11K",
+				Salaries:    "244K",
+				ReviewsRate: "3.9",
+				Verified:    true,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -4649,6 +4701,19 @@ func companiesPart8() []domain.CompanyProfile {
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "tesla",
 				Employees: "48,820",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.ca/Overview/Working-at-Tesla-EI_IE43129.11,16.htm",
+				ReviewsURL:  "https://www.glassdoor.ca/Reviews/Tesla-Reviews-E43129.htm",
+				JobsURL:     "https://www.glassdoor.ca/Jobs/Tesla-Jobs-E43129.htm",
+				Jobs:        "3.8K",
+				Reviews:     "14K",
+				Salaries:    "28K",
+				ReviewsRate: "3.5",
+				Verified:    true,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -4749,11 +4814,28 @@ func companiesPart8() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "DHL-Express",
+				Employees:   "10,000+",
+				Salary:      "$85K ~ $155K a year",
+				Reviews:     "24",
+				ReviewsRate: "4.0",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "dhl",
 				Employees: "380.000",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.ca/Overview/Working-at-DHL-EI_IE650250.11,14.htm",
+				ReviewsURL:  "https://www.glassdoor.ca/Reviews/DHL-Reviews-E650250.htm",
+				JobsURL:     "https://www.glassdoor.ca/Jobs/DHL-Jobs-E650250.htm",
+				Jobs:        "9.3K",
+				Reviews:     "5.9K",
+				Salaries:    "8.5K",
+				ReviewsRate: "3.9",
+				Verified:    true,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -4807,6 +4889,19 @@ func companiesPart8() []domain.CompanyProfile {
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias: "",
 			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.ca/Overview/Working-at-MOIA-EI_IE2855471.11,15.htm",
+				ReviewsURL:  "https://www.glassdoor.ca/Reviews/MOIA-Reviews-E2855471.htm",
+				JobsURL:     "https://www.glassdoor.ca/Jobs/MOIA-Jobs-E2855471.htm",
+				Jobs:        "28",
+				Reviews:     "55",
+				Salaries:    "126",
+				ReviewsRate: "4.0",
+				Verified:    true,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -4853,11 +4948,28 @@ func companiesPart8() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "T-Mobile",
+				Employees:   "10,000",
+				Salary:      "$120K ~ $213K a year",
+				Reviews:     "706",
+				ReviewsRate: "3.4",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "t-mobile",
 				Employees: "83,520",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.ca/Overview/Working-at-T-Mobile-EI_IE9302.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.ca/Reviews/T-Mobile-Reviews-E9302.htm",
+				JobsURL:     "https://www.glassdoor.ca/Jobs/T-Mobile-Jobs-E9302.htm",
+				Jobs:        "2.7K",
+				Reviews:     "23K",
+				Salaries:    "38K",
+				ReviewsRate: "3.7",
+				Verified:    true,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go:   {},
@@ -4905,11 +5017,28 @@ func companiesPart8() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "ABB",
+				Employees:   "10,000+",
+				Salary:      "$92K ~ $192K a year",
+				Reviews:     "35",
+				ReviewsRate: "3.5",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "abb",
 				Employees: "97,250",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.ca/Overview/Working-at-ABB-EI_IE3076.11,14.htm",
+				ReviewsURL:  "https://www.glassdoor.ca/Reviews/ABB-Reviews-E3076.htm",
+				JobsURL:     "https://www.glassdoor.ca/Jobs/ABB-Jobs-E3076.htm",
+				Jobs:        "2.7K",
+				Reviews:     "11K",
+				Salaries:    "16K",
+				ReviewsRate: "4.0",
+				Verified:    true,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -4957,11 +5086,28 @@ func companiesPart8() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Flock-Safety",
+				Employees:   "51 to 200",
+				Salary:      "$133K ~ $504K a year",
+				Reviews:     "15",
+				ReviewsRate: "4.5",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "flock-safety",
 				Employees: "210",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.ca/Overview/Working-at-Flock-Safety-EI_IE2121535.11,23.htm",
+				ReviewsURL:  "https://www.glassdoor.ca/Reviews/Flock-Safety-Reviews-E2121535.htm",
+				JobsURL:     "https://www.glassdoor.ca/Jobs/Flock-Safety-Jobs-E2121535.htm",
+				Jobs:        "0",
+				Reviews:     "133",
+				Salaries:    "261",
+				ReviewsRate: "3.9",
+				Verified:    true,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {},
@@ -4995,6 +5141,215 @@ func companiesPart8() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Flock Safety is a public safety operating system",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "National Bank of Canada",
+			Website: "https://www.nbc.ca/",
+			Careers: "https://emplois.bnc.ca/en_CA/careers/searchjobs",
+			About:   "https://www.nbc.ca/about-us.html",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                165099,
+				Alias:             "banquenationaleducanada",
+				Name:              "National Bank of Canada",
+				Followers:         "251K",
+				Employees:         "10K+",
+				AssociatedMembers: "17,117",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias:       "National-Bank-of-Canada",
+				Employees:   "10,000+",
+				Salary:      "",
+				Reviews:     "4",
+				ReviewsRate: "4.0",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "national-bank-of-canada",
+				Employees: "26,920",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.ca/Overview/Working-at-Banque-Nationale-du-Canada-National-Bank-of-Canada-EI_IE8010.11,61.htm",
+				ReviewsURL:  "https://www.glassdoor.ca/Reviews/Banque-Nationale-du-Canada-National-Bank-of-Canada-Reviews-E8010.htm",
+				JobsURL:     "https://www.glassdoor.ca/Jobs/Banque-Nationale-du-Canada-National-Bank-of-Canada-Jobs-E8010.htm",
+				Jobs:        "683",
+				Reviews:     "2.5K",
+				Salaries:    "3.9K",
+				ReviewsRate: "4.0",
+				Verified:    true,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Backend Developer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4159419521/",
+							Date:                 mustDate("2024-02-20"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Canadian commercial bank",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "NBCUniversal",
+			Website: "https://www.nbcuniversal.com/",
+			Careers: "https://www.nbcunicareers.com/",
+			About:   "https://www.nbcuniversal.com/about",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1828,
+				Alias:             "nbcuniversal-inc-",
+				Name:              "NBCUniversal",
+				Followers:         "1M",
+				Employees:         "10K+",
+				AssociatedMembers: "58,328",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "nbcu-ds",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias:       "NBCUniversal",
+				Employees:   "10,000+",
+				Salary:      "$67K ~ $276K a year",
+				Reviews:     "226",
+				ReviewsRate: "3.6",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "nbc",
+				Employees: "52,370",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.ca/Overview/Working-at-NBCUniversal-EI_IE32038.11,23.htm",
+				ReviewsURL:  "https://www.glassdoor.ca/Reviews/NBCUniversal-Reviews-E32038.htm",
+				JobsURL:     "https://www.glassdoor.ca/Jobs/NBCUniversal-Jobs-E32038.htm",
+				Jobs:        "464",
+				Reviews:     "6.9k",
+				Salaries:    "13K",
+				ReviewsRate: "4.0",
+				Verified:    false,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go:   {},
+				domain.Rust: {},
+				domain.Zig:  {},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Data Engineer (Scala/Spark)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4136839875/",
+							Date:                 mustDate("2025-02-20"),
+							WithSalary:           true, // $115.000 - $145.000 per year
+							Remote:               true,
+						},
+					},
+				},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American multinational mass media and entertainment conglomerate",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Sendle",
+			Website: "https://www.sendle.com/",
+			Careers: "https://try.sendle.com/careers",
+			About:   "https://try.sendle.com/en-au/about",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                4846518,
+				Alias:             "sendle",
+				Name:              "Sendle",
+				Followers:         "9K",
+				Employees:         "51-200",
+				AssociatedMembers: "130",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "sendle",
+				Verified: true,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "sendle",
+				Employees: "180",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.ca/Overview/Working-at-Sendle-EI_IE2860030.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.ca/Reviews/Sendle-Reviews-E2860030.htm",
+				JobsURL:     "https://www.glassdoor.ca/Jobs/Sendle-Jobs-E2860030.htm",
+				Jobs:        "0",
+				Reviews:     "71",
+				Salaries:    "82",
+				ReviewsRate: "3.8",
+				Verified:    true,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go:    {},
+				domain.Rust:  {},
+				domain.Zig:   {},
+				domain.Scala: {},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Product Engineer (React/Elixir)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4157295270/",
+							Date:                 mustDate("2025-02-20"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Australian virtual courier company which provides courier services",
 		},
 
 		// Template
