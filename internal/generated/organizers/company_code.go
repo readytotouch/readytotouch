@@ -639,6 +639,11 @@ var (
 		"banquenationaleducanada":             636, // National Bank of Canada
 		"nbcuniversal-inc-":                   637, // NBCUniversal
 		"sendle":                              638, // Sendle
+		"arfdlaw":                             639, // Aaronson Rappaport Feinstein &amp; Deutsch, LLP
+		"canva":                               640, // Canva
+		"adtran":                              641, // Adtran
+		"photoroom":                           642, // Photoroom
+		"etsy":                                643, // Etsy
 
 	}
 )
