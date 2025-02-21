@@ -1285,7 +1285,7 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4125175696/",
-							Date:                 mustDate("2025-02-20"), // mustDate("2025-02-15"), // mustDate("2025-01-16"),
+							Date:                 mustDate("2025-02-21"), // mustDate("2025-02-20"), // mustDate("2025-02-15"), // mustDate("2025-01-16"),
 							WithSalary:           true,                   // $60.00 - $77.00/ hr
 							Remote:               false,
 						},
@@ -2296,6 +2296,15 @@ func companiesPart8() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Go Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4158260772/",
+							Date:                 mustDate("2025-02-20"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -2636,13 +2645,13 @@ func companiesPart8() []domain.CompanyProfile {
 							Remote:               false,
 						},
 						{
-							Title:                "Senior Scala Software Developer",
+							Title:                "Scala Engineer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "https://www.linkedin.com/jobs/view/4147607601/",
-							Date:                 mustDate("2025-02-10"),
-							WithSalary:           true, // $100.000 - $150.000 CAD per year
-							Remote:               true,
+							URL:                  "https://www.linkedin.com/jobs/view/4139695620/",
+							Date:                 mustDate("2025-02-21"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 					},
 				},
@@ -5350,6 +5359,303 @@ func companiesPart8() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Australian virtual courier company which provides courier services",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Aaronson Rappaport Feinstein & Deutsch, LLP",
+			Website: "https://www.arfdlaw.com/",
+			Careers: "",
+			About:   "https://www.arfdlaw.com/our-firm/",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2436230,
+				Alias:             "arfdlaw",
+				Name:              "Aaronson Rappaport Feinstein & Deutsch, LLP",
+				Followers:         "3K",
+				Employees:         "51-200",
+				AssociatedMembers: "120",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Developer (Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4156586021/",
+							Date:                 mustDate("2025-02-20"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "It is an American law firm",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Canva",
+			Website: "https://www.canva.com/",
+			Careers: "https://www.lifeatcanva.com/en/jobs/",
+			About:   "https://www.canva.com/about/",
+			Blog:    "https://www.canva.dev/blog/engineering/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2850862,
+				Alias:             "canva",
+				Name:              "Canva",
+				Followers:         "2M",
+				Employees:         "1K-5K",
+				AssociatedMembers: "7,103",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "canva",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "canva",
+				Employees: "1,500",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Staff Frontend Engineer (Rust)",
+							ShortDescription:     "Editing Foundations",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4160846209/",
+							Date:                 mustDate("2025-02-21"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Australian multinational software company that provides a graphic design platform",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Adtran",
+			Website: "https://www.adtran.com/",
+			Careers: "https://www.adtran.com/en/about-us/careers",
+			About:   "https://www.adtran.com/en/about-us",
+			Blog:    "https://www.blog.adtran.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                8049,
+				Alias:             "adtran",
+				Name:              "Adtran",
+				Followers:         "49K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "2,408",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "adtran",
+				Employees: "2,000",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer (Rust and C++)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4160542551/",
+							Date:                 mustDate("2025-02-20"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American telecommunications networking equipment vendor.",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Photoroom",
+			Website: "https://www.photoroom.com/",
+			Careers: "https://www.photoroom.com/company#careers",
+			About:   "https://www.photoroom.com/company",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                26243215,
+				Alias:             "photoroom",
+				Name:              "Photoroom",
+				Followers:         "14K",
+				Employees:         "11-50",
+				AssociatedMembers: "471",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "photoroom",
+				Verified: true,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "photoroom",
+				Employees: "60",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Rust Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4159248269/",
+							Date:                 mustDate("2025-02-20"),
+							WithSalary:           true, // $90.000 - $110.000 per year + Stock-Options/BSPCE
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "AI-Photo editing software",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Etsy",
+			Website: "https://www.etsy.com/",
+			Careers: "https://careers.etsy.com/global/en",
+			About:   "https://www.etsy.com/about",
+			Blog:    "https://www.etsy.com/codeascraft",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                67849,
+				Alias:             "etsy",
+				Name:              "Etsy",
+				Followers:         "300K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "8,730",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "etsy",
+				Verified: true,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "etsy",
+				Employees: "6,120",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go:   {},
+				domain.Rust: {},
+				domain.Zig:  {},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer II, Scala",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4139270225/",
+							Date:                 mustDate("2025-02-21"),
+							WithSalary:           true, // $205.000 - $237.000 per year
+							Remote:               false,
+						},
+					},
+				},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American online e-commerce marketplace",
+			Industries: []domain.Industry{
+				domain.IndustryECommerce,
+			},
 		},
 
 		// Template
