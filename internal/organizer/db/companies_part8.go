@@ -1829,7 +1829,7 @@ func companiesPart8() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Contractor — Senior Back End Developer (Scala)",
+							Title:                "Contractor — Senior Back-End Developer (Scala)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4120259237/",
@@ -5534,7 +5534,7 @@ func companiesPart8() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "American telecommunications networking equipment vendor.",
+			ShortDescription: "American telecommunications networking equipment vendor",
 		},
 
 		{
@@ -5594,6 +5594,7 @@ func companiesPart8() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "AI-Photo editing software",
+			YahooFinanceURL:  "https://www.ycombinator.com/companies/photoroom",
 		},
 
 		{

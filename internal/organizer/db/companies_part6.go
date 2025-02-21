@@ -32,10 +32,13 @@ func companiesPart6() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Senior Back-end Developer (PHP/ Go)",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4109417330/",
-							Date:             mustDate("2024-12-25"),
+							Title:                "Senior Back-End Developer (PHP/ Go)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4109417330/",
+							Date:                 mustDate("2024-12-25"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 						{
 							Title:                "Middle Golang Developer",

@@ -59,7 +59,7 @@ func companiesPart3() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 5,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Senior Software Engineer, Back End (Golang or Scala, AWS)",
+							Title:                "Senior Software Engineer, Back-End (Golang or Scala, AWS)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4060428354/",
@@ -68,7 +68,7 @@ func companiesPart3() []domain.CompanyProfile {
 							Remote:               false,
 						},
 						{
-							Title:                "Senior Software Engineer, Back End (Go, Java)",
+							Title:                "Senior Software Engineer, Back-End (Go, Java)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4129783438/",
@@ -86,7 +86,7 @@ func companiesPart3() []domain.CompanyProfile {
 							Remote:               false,
 						},
 						{
-							Title:                "Lead Software Engineer, Back End (Python, Go, AWS)",
+							Title:                "Lead Software Engineer, Back-End (Python, Go, AWS)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4124919537/",
@@ -95,7 +95,7 @@ func companiesPart3() []domain.CompanyProfile {
 							Remote:               false,
 						},
 						{
-							Title:                "Lead Software Engineer, Back End (Java or Go)",
+							Title:                "Lead Software Engineer, Back-End (Java or Go)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4124919539/",
@@ -104,7 +104,7 @@ func companiesPart3() []domain.CompanyProfile {
 							Remote:               false,
 						},
 						{
-							Title:                "Senior Software Engineer, Back End (Go, Java)",
+							Title:                "Senior Software Engineer, Back-End (Go, Java)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4135176317/",
@@ -113,7 +113,7 @@ func companiesPart3() []domain.CompanyProfile {
 							Remote:               false,
 						},
 						{
-							Title:                "Senior Software Engineer, Back End (Java, Go, AWS)",
+							Title:                "Senior Software Engineer, Back-End (Java, Go, AWS)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4124919603/",
@@ -156,7 +156,7 @@ func companiesPart3() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Senior Software Engineer, Back End (Golang or Scala, AWS)",
+							Title:                "Senior Software Engineer, Back-End (Golang or Scala, AWS)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4060428354/",
@@ -183,7 +183,7 @@ func companiesPart3() []domain.CompanyProfile {
 							Remote:               false,
 						},
 						{
-							Title:                "Senior Software Engineer, Back End (Golang or Scala, AWS)",
+							Title:                "Senior Software Engineer, Back-End (Golang or Scala, AWS)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4125673101/",
@@ -622,10 +622,13 @@ func companiesPart3() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Software Engineer (Golang/React)",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4068444754/",
-							Date:             mustDate("2024-11-04"),
+							Title:                "Software Engineer (Golang/React)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4068444754/",
+							Date:                 mustDate("2024-11-04"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 						{
 							Title:                "Senior Software Engineer (Golang/React)",
