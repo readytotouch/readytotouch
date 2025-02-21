@@ -282,7 +282,7 @@ func companiesPart1() []domain.CompanyProfile {
 					Vacancies: []domain.Vacancy{
 						{
 							Title:            "Senior Staff Software Engineer, Ads",
-							ShortDescription: "Expertise in one of the following back-end technologies: Golang, Rust or Java",
+							ShortDescription: "Expertise in one of the following Back-End technologies: Golang, Rust or Java",
 							URL:              "https://www.linkedin.com/jobs/view/4068076458/",
 							Date:             mustDate("2024-11-25"),
 						},
@@ -293,7 +293,7 @@ func companiesPart1() []domain.CompanyProfile {
 					Vacancies: []domain.Vacancy{
 						{
 							Title:            "Senior Staff Software Engineer, Ads",
-							ShortDescription: "Expertise in one of the following back-end technologies: Golang, Rust or Java",
+							ShortDescription: "Expertise in one of the following Back-End technologies: Golang, Rust or Java",
 							URL:              "https://www.linkedin.com/jobs/view/4068076458/",
 							Date:             mustDate("2024-11-25"),
 						},
@@ -730,8 +730,8 @@ func companiesPart1() []domain.CompanyProfile {
 							Remote:               false,
 						},
 						{
-							Title:                "Junior Software Developer - Back End",
-							ShortDescription:     "",
+							Title:                "Junior Software Developer — Back-End",
+							ShortDescription:     "Knowledge of Golang/Python programming",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4161292030/",
 							Date:                 mustDate("2025-02-21"),
@@ -7225,10 +7225,13 @@ func companiesPart1() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 16,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "(Junior) Software Engineer (Golang) — Demand Domain (AdTech)",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4023882932/",
-							Date:             mustDate("2024-11-16"),
+							Title:                "(Junior) Software Engineer (Golang) — Demand Domain (AdTech)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4023882932/",
+							Date:                 mustDate("2024-11-16"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 						{
 							Title:                "Senior Software Engineer, Golang",
@@ -10361,13 +10364,16 @@ func companiesPart1() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 17,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Middle Golang Engineer — Content Platform team",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4101217107/",
-							Date:             mustDate("2024-12-16"),
+							Title:                "Middle Golang Engineer — Content Platform team",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4101217107/",
+							Date:                 mustDate("2024-12-16"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 						{
-							Title:                "Middle Back-end (Go) Engineer  — Content Platform team",
+							Title:                "Middle Back-End (Go) Engineer  — Content Platform team",
 							ShortDescription:     "Backend: Go, ArangoDB, MySQL, Confluent Kafka, Snowflake, GraphQL + different AWS services",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4091237831/",
@@ -10394,7 +10400,7 @@ func companiesPart1() []domain.CompanyProfile {
 							Remote:               false,
 						},
 						{
-							Title:                "Middle Back-end (Go) Engineer — Content Platform team",
+							Title:                "Middle Back-End (Go) Engineer — Content Platform team",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4138356213/",
@@ -10996,10 +11002,13 @@ func companiesPart1() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 4,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Lead Golang Developer",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/3909698518/",
-							Date:             mustDate("2024-04-25"),
+							Title:                "Lead Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/3909698518/",
+							Date:                 mustDate("2024-04-25"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 						{
 							Title:                "Senior PHP/Go Developer",
@@ -12355,7 +12364,7 @@ func companiesPart1() []domain.CompanyProfile {
 							Date:             mustDate("2024-05-24"),
 						},
 						{
-							Title:            "Back End Developer — Golang",
+							Title:            "Back-End Developer — Golang",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4105518392/",
 							Date:             mustDate("2024-12-19"),
@@ -12905,10 +12914,13 @@ func companiesPart1() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 13,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Senior Software Engineer — Golang",
-							ShortDescription: "Open-source platform — Velociraptor",
-							URL:              "https://www.linkedin.com/jobs/view/3915341496/",
-							Date:             mustDate("2024-09-25"),
+							Title:                "Senior Software Engineer — Golang",
+							ShortDescription:     "Open-source platform — Velociraptor",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/3915341496/",
+							Date:                 mustDate("2024-09-25"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 						{
 							Title:                "Senior Software Engineer — Golang",
@@ -13716,7 +13728,7 @@ func companiesPart1() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Back End Golang Senior Developer",
+							Title:            "Back-End Golang Senior Developer",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/3915092213/",
 							Date:             mustDate("2024-05-24"),
@@ -18521,7 +18533,7 @@ func companiesPart1() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Back End Developer Delphi / Go",
+							Title:                "Back-End Developer Delphi / Go",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4154723829/",
@@ -19972,7 +19984,7 @@ func companiesPart1() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Senior Software Engineer: Golang/Back End",
+							Title:            "Senior Software Engineer: Golang/Back-End",
 							ShortDescription: "",
 							URL:              "https://www.linkedin.com/jobs/view/4057290510/",
 							Date:             mustDate("2024-10-25"),
