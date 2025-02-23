@@ -161,6 +161,7 @@ type CompanyProfile struct {
 	YCombinatorURL            string // YC profile
 	Industries                []Industry
 	HasEmployeesFromCountries []Country
+	RustFoundationMember      bool // https://foundation.rust-lang.org/members/
 	Ignore                    bool
 }
 

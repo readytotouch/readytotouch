@@ -130,11 +130,12 @@ func companiesPart1() []domain.CompanyProfile {
 			Blog:    "https://blog.google/technology/developers/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1441,
+				IDs:               []int{1441, 16140, 791962, 10440912, 17876832, 89982912},
 				Alias:             "google",
 				Name:              "Google",
-				Followers:         "35M",
+				Followers:         "36M",
 				Employees:         "10K+",
-				AssociatedMembers: "303,309",
+				AssociatedMembers: "303,369",
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -224,7 +225,7 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Ukraine,
 				domain.Czechia,
 			},
-			Ignore: false,
+			RustFoundationMember: true,
 		},
 
 		// BigTech | Mozilla
@@ -310,6 +311,76 @@ func companiesPart1() []domain.CompanyProfile {
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Czechia,
 			},
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Meta",
+			Website: "http://www.facebook.com/",
+			Careers: "http://www.facebook.com/careers",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                10667,
+				IDs:               []int{10667, 23769, 289891, 2289109, 2763277, 16159097, 27046884, 27104390, 76987811},
+				Alias:             "meta",
+				Name:              "Meta",
+				Followers:         "11M",
+				Employees:         "10K+",
+				AssociatedMembers: "124,561",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "facebook",
+				Verified: true,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias:       "Meta",
+				Employees:   "10,000+",
+				Salary:      "$72K ~ $350K a year",
+				Reviews:     "9,766",
+				ReviewsRate: "3.8",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "facebook",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Meta-EI_IE40772.11,15.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Meta-Reviews-E40772.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Meta-Jobs-E40772.htm",
+				Jobs:        "3.4K",
+				Reviews:     "21K",
+				Salaries:    "84K",
+				ReviewsRate: "4.0",
+				Verified:    true,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "Meta-dd1502f2",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "",
+			GoMainLanguage:    false,
+			Languages: domain.Languages{
+				domain.Go:      {},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription:          "",
+			DealroomURL:               "",
+			CrunchbaseURL:             "",
+			PitchbookURL:              "",
+			YahooFinanceURL:           "",
+			GoogleFinanceURL:          "",
+			YCombinatorURL:            "",
+			Industries:                nil,
+			HasEmployeesFromCountries: nil,
+			RustFoundationMember:      true,
+			Ignore:                    false,
 		},
 
 		// BigTech | Discord
@@ -560,6 +631,12 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "American multinational technology company",
+			DealroomURL:      "",
+			CrunchbaseURL:    "",
+			PitchbookURL:     "",
+			YahooFinanceURL:  "",
+			GoogleFinanceURL: "",
+			YCombinatorURL:   "",
 			Industries:       []domain.Industry{
 				// Too many industries
 			},
@@ -567,6 +644,7 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Ukraine,
 				domain.Czechia,
 			},
+			RustFoundationMember: true,
 		},
 
 		// BigTech | Amazon
@@ -579,24 +657,29 @@ func companiesPart1() []domain.CompanyProfile {
 			About:   "https://www.aboutamazon.com/about-us",
 			Blog:    "https://aws.amazon.com/blogs/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID: 0,
-				IDs: []int{
-					1586,    // Amazon
-					2382910, // Amazon Web Services (AWS)
-				},
+				ID:                1586,
+				IDs:               []int{1586, 12227, 14951, 16551, 17411, 21433, 34924, 46825, 47157, 49318, 61712, 71099, 111446, 167364, 208137, 860467, 1379932, 2320329, 2382910, 2649984, 4787585, 11091426, 15218805, 78392228, 80073065},
 				Alias:             "amazon",
 				Name:              "Amazon",
-				Followers:         "33M",
+				Followers:         "34M",
 				Employees:         "10K+",
-				AssociatedMembers: "732,323",
+				AssociatedMembers: "727,302",
 				Verified:          true,
-			},
-			BlindProfile: domain.BlindProfile{
-				Alias: "",
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "aws", // "amzn",
 				Verified: true,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias:       "Amazon",
+				Employees:   "10,000+",
+				Salary:      "$46K ~ $300K a year",
+				Reviews:     "27,199",
+				ReviewsRate: "3.2",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "amazon",
+				Employees: "865,406",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Amazon-EI_IE6036.11,17.htm",
@@ -609,7 +692,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Amazon.com",
 			},
 			OttaProfileSlug:   "Amazon",
 			YouTubeChannelURL: "",
@@ -624,11 +707,18 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			DealroomURL:      "",
+			CrunchbaseURL:    "",
+			PitchbookURL:     "",
+			YahooFinanceURL:  "",
+			GoogleFinanceURL: "",
+			YCombinatorURL:   "",
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
 				domain.Czechia,
 			},
+			RustFoundationMember: true,
 		},
 
 		// BigTech | IBM
@@ -4870,6 +4960,7 @@ func companiesPart1() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
+			Logo:    "",
 			Name:    "1Password",
 			Website: "https://1password.com/",
 			Careers: "https://1password.com/careers",
@@ -4935,9 +5026,17 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Service for users to store various passwords",
+			DealroomURL:      "",
+			CrunchbaseURL:    "",
+			PitchbookURL:     "",
+			YahooFinanceURL:  "",
+			GoogleFinanceURL: "",
+			YCombinatorURL:   "",
 			Industries: []domain.Industry{
 				domain.IndustryCyberSecurity,
 			},
+			HasEmployeesFromCountries: nil,
+			RustFoundationMember:      true,
 		},
 
 		// Security Okta
