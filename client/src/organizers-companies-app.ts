@@ -312,7 +312,7 @@ function search() {
             }
         }
 
-        if (isRustFoundationMembers && $company.getAttribute("data-rust-foundation-members") !== "true") {
+        if (isRustFoundationMembers && $company.getAttribute("data-company-rust-foundation-members") !== "true") {
             return false;
         }
 

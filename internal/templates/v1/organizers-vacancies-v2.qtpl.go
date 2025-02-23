@@ -3,6 +3,8 @@
 
 package v1
 
+import "strconv"
+
 import (
 	qtio422016 "io"
 
@@ -256,6 +258,17 @@ func StreamOrganizersVacanciesV2(qw422016 *qt422016.Writer,
             Favorites
           </label>
           `)
+	if organizerFeature.Organizer.Alias == "rust" {
+		qw422016.N().S(`
+          <label class="checkbox filters__element">
+            <input id="js-criteria-rust-foundation-members" class="checkbox__input" type="checkbox" />
+            <span class="checkbox__element"></span>
+            Rust Foundation Members
+          </label>
+          `)
+	}
+	qw422016.N().S(`
+          `)
 	qw422016.N().S(`
         </div>
       </div>
@@ -319,6 +332,9 @@ func StreamOrganizersVacanciesV2(qw422016 *qt422016.Writer,
 		qw422016.N().S(`"
 					 data-company-has-employees-from-countries="`)
 		qw422016.E().S(aliases(vacancy.Company.HasEmployeesFromCountries))
+		qw422016.N().S(`"
+                     data-company-rust-foundation-members="`)
+		qw422016.E().S(strconv.FormatBool(vacancy.Company.RustFoundationMember))
 		qw422016.N().S(`"
 				>
                     <div class="card__vacancy">

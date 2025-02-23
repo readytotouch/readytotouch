@@ -1215,6 +1215,7 @@ func (c *Controller) toPrepareCompany(company domain.CompanyProfile) domain.Prep
 		Alias:                     company.LinkedInProfile.Alias,
 		Industries:                company.Industries,
 		HasEmployeesFromCountries: company.HasEmployeesFromCountries,
+		RustFoundationMember:      company.RustFoundationMember,
 	}
 }
 

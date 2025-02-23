@@ -305,7 +305,7 @@ func StreamOrganizersCompaniesV2(qw422016 *qt422016.Writer,
                  data-company-has-employees-from-countries="`)
 		qw422016.E().S(aliases(company.HasEmployeesFromCountries))
 		qw422016.N().S(`"
-                 data-rust-foundation-members="`)
+                 data-company-rust-foundation-members="`)
 		qw422016.E().S(strconv.FormatBool(company.RustFoundationMember))
 		qw422016.N().S(`"
             >
