@@ -99,12 +99,11 @@ type IndeedProfile struct {
 type Vacancy struct {
 	Title                string
 	ShortDescription     string // proof that the vacancy is for a particular technology
-	SwitchingOpportunity string
+	SwitchingOpportunity string // an opportunity to apply without knowing the language, but with a willingness to learn it
 	URL                  string
 	Date                 time.Time
 	WithSalary           bool
 	Remote               bool // Fully remote available
-	// @TODO There is an opportunity to apply without knowing the language, but with a willingness to learn it
 }
 
 type PreparedCompany struct {
@@ -115,6 +114,7 @@ type PreparedCompany struct {
 	Alias                     string // LinkedIn alias
 	Industries                []Industry
 	HasEmployeesFromCountries []Country
+	RustFoundationMember      bool // https://foundation.rust-lang.org/members/
 }
 
 type PreparedVacancy struct {
@@ -161,6 +161,7 @@ type CompanyProfile struct {
 	YCombinatorURL            string // YC profile
 	Industries                []Industry
 	HasEmployeesFromCountries []Country
+	RustFoundationMember      bool // https://foundation.rust-lang.org/members/
 	Ignore                    bool
 }
 
