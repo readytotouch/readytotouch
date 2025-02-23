@@ -307,10 +307,17 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Organization dedicated to making the web better",
+			DealroomURL:      "",
+			CrunchbaseURL:    "",
+			PitchbookURL:     "",
+			YahooFinanceURL:  "",
+			GoogleFinanceURL: "",
+			YCombinatorURL:   "",
 			Industries:       []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Czechia,
 			},
+			RustFoundationMember: true,
 		},
 
 		{
@@ -4968,7 +4975,6 @@ func companiesPart1() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Logo:    "",
 			Name:    "1Password",
 			Website: "https://1password.com/",
 			Careers: "https://1password.com/careers",

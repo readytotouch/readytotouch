@@ -7485,6 +7485,7 @@ func companiesPart2() []domain.CompanyProfile {
 				domain.Ukraine,
 				domain.Czechia,
 			},
+			RustFoundationMember: true,
 		},
 		{
 			ID:      0,  // system
