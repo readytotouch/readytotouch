@@ -3,6 +3,7 @@ package organizer
 import (
 	"net/http"
 	"net/url"
+	"slices"
 	"sort"
 	"strings"
 	"time"
@@ -125,6 +126,9 @@ func (c *Controller) CompaniesV1(ctx *gin.Context) {
 
 	companies := c.companies(organizerFeature)
 
+	// Never first
+	slices.Reverse(companies)
+
 	userCompanyFavoriteMap, err := c.userFavoriteCompanyRepository.GetMap(ctx, authUserID, nil)
 	if err != nil {
 		// @TODO logging
@@ -165,6 +169,9 @@ func (c *Controller) CompaniesV2(ctx *gin.Context) {
 	}
 
 	companies := c.companies(organizerFeature)
+
+	// Never first
+	slices.Reverse(companies)
 
 	userCompanyFavoriteMap, err := c.userFavoriteCompanyRepository.GetMap(ctx, authUserID, nil)
 	if err != nil {
@@ -1166,7 +1173,8 @@ func (c *Controller) companies(organizerFeature domain.OrganizerFeature) []domai
 
 		language := organizerFeature.Organizer.Language
 
-		if len(company.Languages[language].Vacancies) == 0 {
+		// Show companies only if they have vacancies or are Rust Foundation members
+		if len(company.Languages[language].Vacancies) == 0 && !(language == domain.Rust && company.RustFoundationMember) {
 			continue
 		}
 
