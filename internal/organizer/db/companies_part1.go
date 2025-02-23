@@ -2236,11 +2236,12 @@ func companiesPart1() []domain.CompanyProfile {
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                167251,
+				IDs:               nil,
 				Alias:             "dropbox",
 				Name:              "Dropbox",
-				Followers:         "468K",
+				Followers:         "475K",
 				Employees:         "1K-5K",
-				AssociatedMembers: "3,598",
+				AssociatedMembers: "3,551",
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -2251,7 +2252,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Alias:       "dropbox",
 				Employees:   "1,001 to 5,000",
 				Salary:      "$67K ~ $350K a year",
-				Reviews:     "883",
+				Reviews:     "887",
 				ReviewsRate: "3.6",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
@@ -2262,14 +2263,14 @@ func companiesPart1() []domain.CompanyProfile {
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Dropbox-EI_IE415350.11,18.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Dropbox-Reviews-E415350.htm",
 				JobsURL:     "https://www.glassdoor.com/Jobs/Dropbox-Jobs-E415350.htm",
-				Jobs:        "114",
+				Jobs:        "115",
 				Reviews:     "1.7K",
 				Salaries:    "3.5K",
 				ReviewsRate: "4.1",
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Dropbox-ab4b15a9",
 			},
 			OttaProfileSlug:   "Dropbox",
 			YouTubeChannelURL: "",
@@ -2304,12 +2305,19 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "File hosting service",
+			DealroomURL:      "",
+			CrunchbaseURL:    "",
+			PitchbookURL:     "",
+			YahooFinanceURL:  "https://finance.yahoo.com/quote/DBX/",
+			GoogleFinanceURL: "https://www.google.com/finance/quote/DBX:NASDAQ",
+			YCombinatorURL:   "https://www.ycombinator.com/companies/dropbox",
 			Industries: []domain.Industry{
 				domain.IndustryDevOps,
 			},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
 			},
+			RustFoundationMember: true,
 		},
 
 		// Tech | Docker

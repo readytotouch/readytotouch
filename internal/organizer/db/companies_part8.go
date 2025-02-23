@@ -5790,18 +5790,19 @@ func companiesPart8() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Devolutions",
+			Website: "https://devolutions.net/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
+				ID:                1533251,
+				IDs:               nil,
+				Alias:             "devolutions-inc-",
+				Name:              "Devolutions",
+				Followers:         "5K",
+				Employees:         "51-200",
+				AssociatedMembers: "195",
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
