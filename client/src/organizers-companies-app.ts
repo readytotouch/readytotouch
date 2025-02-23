@@ -7,6 +7,7 @@ import {
     COMPANY_INDUSTRY_CRITERIA_NAME,
     COMPANY_HAS_EMPLOYEES_FROM_COUNTRY_CRITERIA_NAME,
     COMPANY_IN_FAVORITES_CRITERIA_NAME,
+    COMPANY_RUST_FOUNDATION_MEMBERS_CRITERIA_NAME,
 } from "./framework/company_criteria_names";
 import {InputCheckboxes} from "./framework/checkboxes";
 import {companyTypes} from "./framework/company_types";
@@ -68,6 +69,7 @@ const $typeCheckboxes = new InputCheckboxes(document.querySelectorAll("input.js-
 const $industryCheckboxes = new InputCheckboxes(document.querySelectorAll("input.js-criteria-company-industry") as any as Array<HTMLInputElement>);
 const $hasEmployeesFromCountryCheckboxes = new InputCheckboxes(document.querySelectorAll("input.js-criteria-has-employees-from-country") as any as Array<HTMLInputElement>);
 const $inFavoritesCheckbox = document.getElementById("js-criteria-in-favorites") as HTMLInputElement;
+const $inRustFoundationMembersCheckbox = document.getElementById("js-criteria-rust-foundation-members") as HTMLInputElement;
 const $selectedCriteria = document.getElementById("js-company-selected-criteria");
 const $reset = document.getElementById("js-criteria-reset");
 
@@ -111,6 +113,18 @@ $inFavoritesCheckbox.addEventListener("change", function () {
     search();
 });
 
+if ($inRustFoundationMembersCheckbox) {
+    $inRustFoundationMembersCheckbox.addEventListener("change", function () {
+        urlStateContainer.setBoolCriteria(COMPANY_RUST_FOUNDATION_MEMBERS_CRITERIA_NAME, $inRustFoundationMembersCheckbox.checked);
+        urlStateContainer.setPage(1);
+        urlStateContainer.storeCurrentState();
+
+        renderSelectedCriteriaByURL();
+
+        search();
+    });
+}
+
 const {
     setInputStateByURL,
     setCheckboxesStateByURL,
@@ -125,6 +139,9 @@ function setStateByURL() {
     setCheckboxesStateByURL($hasEmployeesFromCountryCheckboxes, COMPANY_HAS_EMPLOYEES_FROM_COUNTRY_CRITERIA_NAME);
 
     setCheckboxStateByURL($inFavoritesCheckbox, COMPANY_IN_FAVORITES_CRITERIA_NAME);
+    if ($inRustFoundationMembersCheckbox) {
+        setCheckboxStateByURL($inRustFoundationMembersCheckbox, COMPANY_RUST_FOUNDATION_MEMBERS_CRITERIA_NAME);
+    }
 }
 
 function renderSelectedCriteriaByURL() {
@@ -134,6 +151,7 @@ function renderSelectedCriteriaByURL() {
     renderSelectedCheckboxes($views, COMPANY_INDUSTRY_CRITERIA_NAME, industries);
     renderSelectedCheckboxes($views, COMPANY_HAS_EMPLOYEES_FROM_COUNTRY_CRITERIA_NAME, hasEmployeesFromCountries);
     renderSelectedCheckbox($views, COMPANY_IN_FAVORITES_CRITERIA_NAME, "Favorites");
+    renderSelectedCheckbox($views, COMPANY_RUST_FOUNDATION_MEMBERS_CRITERIA_NAME, "Rust Foundation Members");
 
     $selectedCriteria.innerHTML = "";
     $selectedCriteria.append(...$views);
@@ -218,6 +236,7 @@ function search() {
     const industries = urlStateContainer.getCriteria(COMPANY_INDUSTRY_CRITERIA_NAME, []);
     const hasEmployeesFromCountries = urlStateContainer.getCriteria(COMPANY_HAS_EMPLOYEES_FROM_COUNTRY_CRITERIA_NAME, []);
     const inFavorites = urlStateContainer.getCriteria(COMPANY_IN_FAVORITES_CRITERIA_NAME, false);
+    const isRustFoundationMembers = urlStateContainer.getCriteria(COMPANY_RUST_FOUNDATION_MEMBERS_CRITERIA_NAME, false);
 
     const matchQuery = function ($company: HTMLElement): boolean {
         if (query.length === 0) {
@@ -291,6 +310,10 @@ function search() {
             if (!current) {
                 return false;
             }
+        }
+
+        if (isRustFoundationMembers && $company.getAttribute("data-rust-foundation-members") !== "true") {
+            return false;
         }
 
         return true;

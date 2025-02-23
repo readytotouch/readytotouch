@@ -1,3 +1,4 @@
+{% import "strconv" %}
 {%- func OrganizersCompaniesV2(
   organizerFeature OrganizerFeature,
   headerProfiles []SocialProviderUser,
@@ -176,6 +177,13 @@
             <span class="checkbox__element"></span>
             Favorites
           </label>
+          {% if organizerFeature.Organizer.Alias == "rust" %}
+          <label class="checkbox filters__element">
+            <input id="js-criteria-rust-foundation-members" class="checkbox__input" type="checkbox" />
+            <span class="checkbox__element"></span>
+            Rust Foundation Members
+          </label>
+          {% endif %}
           {% comment %}
           <div class="switch-wrapper filters__element">
             <label class="switch">
@@ -221,6 +229,7 @@
                  data-company-type="{%s string(company.Type) %}"
                  data-company-industries="{%s aliases(company.Industries) %}"
                  data-company-has-employees-from-countries="{%s aliases(company.HasEmployeesFromCountries) %}"
+                 data-rust-foundation-members="{%s strconv.FormatBool(company.RustFoundationMember) %}"
             >
               <aside class="card__action">
                 {% if userCompanyFavoriteMap[company.ID] %}
