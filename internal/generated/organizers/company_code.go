@@ -8,6 +8,7 @@ var (
 		"dochq":                               2,   // DocHQ
 		"google":                              3,   // Google
 		"mozilla-corporation":                 4,   // Mozilla
+		"meta":                                644, // Meta
 		"discord":                             260, // Discord
 		"figma":                               224, // Figma
 		"microsoft":                           5,   // Microsoft
@@ -644,6 +645,12 @@ var (
 		"adtran":                              641, // Adtran
 		"photoroom":                           642, // Photoroom
 		"etsy":                                643, // Etsy
+		"appflowy":                            645, // AppFlowy
+		"arm":                                 646, // Arm
+		"devolutions-inc-":                    647, // Devolutions
+		"embecosm":                            648, // Embecosm
+		"helsing":                             649, // Helsing
+		"jetbrains":                           650, // JetBrains
 
 	}
 )
