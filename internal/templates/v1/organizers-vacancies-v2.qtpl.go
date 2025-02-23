@@ -252,11 +252,6 @@ func StreamOrganizersVacanciesV2(qw422016 *qt422016.Writer,
               src="/assets/images/pages/online-new/cz_flag.svg"
             />
           </label>
-          <label class="checkbox filters__element">
-            <input id="js-criteria-in-favorites" class="checkbox__input" type="checkbox" />
-            <span class="checkbox__element"></span>
-            Favorites
-          </label>
           `)
 	if organizerFeature.Organizer.Alias == "rust" {
 		qw422016.N().S(`
@@ -264,6 +259,11 @@ func StreamOrganizersVacanciesV2(qw422016 *qt422016.Writer,
             <input id="js-criteria-rust-foundation-members" class="checkbox__input" type="checkbox" />
             <span class="checkbox__element"></span>
             Rust Foundation Members
+          </label>
+          <label class="checkbox filters__element">
+            <input id="js-criteria-in-favorites" class="checkbox__input" type="checkbox" />
+            <span class="checkbox__element"></span>
+            Favorites
           </label>
           `)
 	}

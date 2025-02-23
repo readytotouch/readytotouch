@@ -6,8 +6,8 @@ import {
     COMPANY_TYPE_CRITERIA_NAME,
     COMPANY_INDUSTRY_CRITERIA_NAME,
     COMPANY_HAS_EMPLOYEES_FROM_COUNTRY_CRITERIA_NAME,
-    COMPANY_IN_FAVORITES_CRITERIA_NAME,
     COMPANY_RUST_FOUNDATION_MEMBERS_CRITERIA_NAME,
+    COMPANY_IN_FAVORITES_CRITERIA_NAME,
 } from "./framework/company_criteria_names";
 import {InputCheckboxes} from "./framework/checkboxes";
 import {companyTypes} from "./framework/company_types";
@@ -103,16 +103,6 @@ $hasEmployeesFromCountryCheckboxes.onChange(function (state: Array<string>) {
     search();
 });
 
-$inFavoritesCheckbox.addEventListener("change", function () {
-    urlStateContainer.setBoolCriteria(COMPANY_IN_FAVORITES_CRITERIA_NAME, $inFavoritesCheckbox.checked);
-    urlStateContainer.setPage(1);
-    urlStateContainer.storeCurrentState();
-
-    renderSelectedCriteriaByURL();
-
-    search();
-});
-
 if ($inRustFoundationMembersCheckbox) {
     $inRustFoundationMembersCheckbox.addEventListener("change", function () {
         urlStateContainer.setBoolCriteria(COMPANY_RUST_FOUNDATION_MEMBERS_CRITERIA_NAME, $inRustFoundationMembersCheckbox.checked);
@@ -124,6 +114,16 @@ if ($inRustFoundationMembersCheckbox) {
         search();
     });
 }
+
+$inFavoritesCheckbox.addEventListener("change", function () {
+    urlStateContainer.setBoolCriteria(COMPANY_IN_FAVORITES_CRITERIA_NAME, $inFavoritesCheckbox.checked);
+    urlStateContainer.setPage(1);
+    urlStateContainer.storeCurrentState();
+
+    renderSelectedCriteriaByURL();
+
+    search();
+});
 
 const {
     setInputStateByURL,
@@ -138,10 +138,10 @@ function setStateByURL() {
     setCheckboxesStateByURL($industryCheckboxes, COMPANY_INDUSTRY_CRITERIA_NAME);
     setCheckboxesStateByURL($hasEmployeesFromCountryCheckboxes, COMPANY_HAS_EMPLOYEES_FROM_COUNTRY_CRITERIA_NAME);
 
-    setCheckboxStateByURL($inFavoritesCheckbox, COMPANY_IN_FAVORITES_CRITERIA_NAME);
     if ($inRustFoundationMembersCheckbox) {
         setCheckboxStateByURL($inRustFoundationMembersCheckbox, COMPANY_RUST_FOUNDATION_MEMBERS_CRITERIA_NAME);
     }
+    setCheckboxStateByURL($inFavoritesCheckbox, COMPANY_IN_FAVORITES_CRITERIA_NAME);
 }
 
 function renderSelectedCriteriaByURL() {
@@ -150,8 +150,8 @@ function renderSelectedCriteriaByURL() {
     renderSelectedCheckboxes($views, COMPANY_TYPE_CRITERIA_NAME, companyTypes);
     renderSelectedCheckboxes($views, COMPANY_INDUSTRY_CRITERIA_NAME, industries);
     renderSelectedCheckboxes($views, COMPANY_HAS_EMPLOYEES_FROM_COUNTRY_CRITERIA_NAME, hasEmployeesFromCountries);
-    renderSelectedCheckbox($views, COMPANY_IN_FAVORITES_CRITERIA_NAME, "Favorites");
     renderSelectedCheckbox($views, COMPANY_RUST_FOUNDATION_MEMBERS_CRITERIA_NAME, "Rust Foundation Members");
+    renderSelectedCheckbox($views, COMPANY_IN_FAVORITES_CRITERIA_NAME, "Favorites");
 
     $selectedCriteria.innerHTML = "";
     $selectedCriteria.append(...$views);
@@ -235,8 +235,8 @@ function search() {
     const types = urlStateContainer.getCriteria(COMPANY_TYPE_CRITERIA_NAME, []);
     const industries = urlStateContainer.getCriteria(COMPANY_INDUSTRY_CRITERIA_NAME, []);
     const hasEmployeesFromCountries = urlStateContainer.getCriteria(COMPANY_HAS_EMPLOYEES_FROM_COUNTRY_CRITERIA_NAME, []);
-    const inFavorites = urlStateContainer.getCriteria(COMPANY_IN_FAVORITES_CRITERIA_NAME, false);
     const isRustFoundationMembers = urlStateContainer.getCriteria(COMPANY_RUST_FOUNDATION_MEMBERS_CRITERIA_NAME, false);
+    const inFavorites = urlStateContainer.getCriteria(COMPANY_IN_FAVORITES_CRITERIA_NAME, false);
 
     const matchQuery = function ($company: HTMLElement): boolean {
         if (query.length === 0) {
@@ -303,6 +303,10 @@ function search() {
             return false;
         }
 
+        if (isRustFoundationMembers && $company.getAttribute("data-company-rust-foundation-members") !== "true") {
+            return false;
+        }
+
         if (inFavorites) {
             const $favorite = $company.querySelector(".js-company-favorite");
             const current = $favorite.classList.contains("in-favorite");
@@ -310,10 +314,6 @@ function search() {
             if (!current) {
                 return false;
             }
-        }
-
-        if (isRustFoundationMembers && $company.getAttribute("data-company-rust-foundation-members") !== "true") {
-            return false;
         }
 
         return true;
