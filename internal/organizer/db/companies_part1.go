@@ -3023,7 +3023,7 @@ func companiesPart1() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Senior Software Engineer - Scala, JVM, IAM",
+							Title:                "Senior Software Engineer — Scala, JVM, IAM",
 							ShortDescription:     "Control Plane",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4110414724/",
@@ -4112,7 +4112,7 @@ func companiesPart1() []domain.CompanyProfile {
 							Remote:               false,
 						},
 						{
-							Title:                "Senior Engineer - Java, JavaScript, Node, Go & Python",
+							Title:                "Senior Engineer — Java, JavaScript, Node, Go & Python",
 							ShortDescription:     "Global Tech",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4166983411/",
@@ -4624,7 +4624,7 @@ func companiesPart1() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4161097569/",
-							Date:                 mustDate("2025-02-22"),
+							Date:                 mustDate("2025-02-21"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -14601,10 +14601,13 @@ func companiesPart1() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Golang Developer",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/3886949034/",
-							Date:             mustDate("2024-05-24"),
+							Title:                "Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/3886949034/",
+							Date:                 mustDate("2024-05-24"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 						{
 							Title:                "Golang Developer",
@@ -19027,11 +19030,11 @@ func companiesPart1() []domain.CompanyProfile {
 							Remote:               false,
 						},
 						{
-							Title:                "Cloud Security Engineer - Go",
+							Title:                "Cloud Security Engineer — Go",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4159614481/",
-							Date:                 mustDate("2025-02-22"),
+							Date:                 mustDate("2025-02-21"),
 							WithSalary:           false,
 							Remote:               false,
 						},

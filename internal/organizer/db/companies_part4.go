@@ -1280,7 +1280,7 @@ func companiesPart4() []domain.CompanyProfile {
 						},
 						{
 							Title:                "Golang Software Engineer",
-							ShortDescription:     "Security Lab",
+							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4160455409/",
 							Date:                 mustDate("2025-02-22"),
@@ -3612,7 +3612,7 @@ func companiesPart4() []domain.CompanyProfile {
 							Remote:               false,
 						},
 						{
-							Title:                "Senior Software Engineer - Scala/Java",
+							Title:                "Senior Software Engineer — Scala/Java",
 							ShortDescription:     "Order Management System",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4160073965/",
