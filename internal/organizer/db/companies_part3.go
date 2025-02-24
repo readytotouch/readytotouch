@@ -155,10 +155,10 @@ func companiesPart3() []domain.CompanyProfile {
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Principal Software Engineer, Rust",
-							ShortDescription:     "Capital One Software",
+							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4141348448/",
-							Date:                 mustDate("2025-02-24"),
+							Date:                 mustDate("2025-02-23"),
 							WithSalary:           true, // $144,200 - $164,600 a year
 							Remote:               false,
 						},

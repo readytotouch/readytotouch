@@ -6207,10 +6207,11 @@ func companiesPart8() []domain.CompanyProfile {
 				Alias: "",
 			},
 			Languages: domain.Languages{
-				domain.Go:   {},
-				domain.Rust: {},
-				domain.Zig:  {},
-				domain.Scala: {
+				domain.Go:    {},
+				domain.Rust:  {},
+				domain.Zig:   {},
+				domain.Scala: {},
+				domain.Elixir: {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
@@ -6224,7 +6225,6 @@ func companiesPart8() []domain.CompanyProfile {
 						},
 					},
 				},
-				domain.Elixir:  {},
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
