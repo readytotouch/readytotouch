@@ -651,6 +651,9 @@ var (
 		"embecosm":                            648, // Embecosm
 		"helsing":                             649, // Helsing
 		"jetbrains":                           650, // JetBrains
+		"garena":                              651, // Garena
+		"moneylion":                           652, // MoneyLion
+		"loblaw-companies-limited":            653, // Loblaw Companies Limited
 
 	}
 )
