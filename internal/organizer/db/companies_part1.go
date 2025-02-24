@@ -3017,9 +3017,9 @@ func companiesPart1() []domain.CompanyProfile {
 						},
 					},
 				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {
+				domain.Rust: {},
+				domain.Zig:  {},
+				domain.Scala: {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
@@ -4115,7 +4115,7 @@ func companiesPart1() []domain.CompanyProfile {
 							Title:                "Senior Engineer - Java, JavaScript, Node, Go & Python",
 							ShortDescription:     "Global Tech",
 							SwitchingOpportunity: "",
-							URL:                  "",
+							URL:                  "https://www.linkedin.com/jobs/view/4166983411/",
 							Date:                 mustDate("2025-02-24"),
 							WithSalary:           true, // $110.000 - $190.000 per year + bonus + benefits
 							Remote:               false,
@@ -19018,13 +19018,13 @@ func companiesPart1() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            	  "Software Engineer — Go / IaC (Security)",
-							ShortDescription: 	  "",
+							Title:                "Software Engineer — Go / IaC (Security)",
+							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:              	  "https://www.linkedin.com/jobs/view/4013536315/",
-							Date:             	  mustDate("2024-08-26"),
-							WithSalary: 		  false,
-							Remote: 			  false,
+							URL:                  "https://www.linkedin.com/jobs/view/4013536315/",
+							Date:                 mustDate("2024-08-26"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 						{
 							Title:                "Cloud Security Engineer - Go",
@@ -20488,7 +20488,7 @@ func companiesPart1() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4122185632/",
 							Date:                 mustDate("2025-02-22"), // mustDate("2025-02-15"),
-							WithSalary:           true, // $96.600 - $226.400 per year
+							WithSalary:           true,                   // $96.600 - $226.400 per year
 							Remote:               true,
 						},
 					},

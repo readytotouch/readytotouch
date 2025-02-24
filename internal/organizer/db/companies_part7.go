@@ -532,7 +532,7 @@ func companiesPart7() []domain.CompanyProfile {
 							Title:                "Backend Developer (Rust)",
 							ShortDescription:     "In payments",
 							SwitchingOpportunity: "",
-							URL:                  "",
+							URL:                  "https://www.linkedin.com/jobs/view/4161923630/",
 							Date:                 mustDate("2025-02-24"),
 							WithSalary:           true, // €50.000 - €65.000 per year
 							Remote:               true,

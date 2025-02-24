@@ -6186,7 +6186,7 @@ func companiesPart8() []domain.CompanyProfile {
 				Name:              "Loblaw Companies Limited",
 				Followers:         "243K",
 				Employees:         "10K+",
-				AssociatedMembers: "",
+				AssociatedMembers: "23,193",
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
