@@ -257,6 +257,11 @@ func StreamOrganizersCompaniesV2(qw422016 *qt422016.Writer,
 	}
 	qw422016.N().S(`
           <label class="checkbox filters__element">
+            <input id="js-criteria-remote" class="checkbox__input" type="checkbox" />
+            <span class="checkbox__element"></span>
+            Remote
+          </label>
+          <label class="checkbox filters__element">
             <input id="js-criteria-in-favorites" class="checkbox__input" type="checkbox" />
             <span class="checkbox__element"></span>
             Favorites
@@ -307,6 +312,9 @@ func StreamOrganizersCompaniesV2(qw422016 *qt422016.Writer,
 		qw422016.N().S(`"
                  data-company-rust-foundation-members="`)
 		qw422016.E().S(strconv.FormatBool(company.RustFoundationMember))
+		qw422016.N().S(`"
+                 data-company-remote="`)
+		qw422016.E().S(strconv.FormatBool(company.Remote))
 		qw422016.N().S(`"
             >
               <aside class="card__action">

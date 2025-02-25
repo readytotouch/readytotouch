@@ -180,6 +180,11 @@
           </label>
           {% endif %}
           <label class="checkbox filters__element">
+            <input id="js-criteria-remote" class="checkbox__input" type="checkbox" />
+            <span class="checkbox__element"></span>
+            Remote
+          </label>
+          <label class="checkbox filters__element">
             <input id="js-criteria-in-favorites" class="checkbox__input" type="checkbox" />
             <span class="checkbox__element"></span>
             Favorites
@@ -230,6 +235,7 @@
                  data-company-industries="{%s aliases(company.Industries) %}"
                  data-company-has-employees-from-countries="{%s aliases(company.HasEmployeesFromCountries) %}"
                  data-company-rust-foundation-members="{%s strconv.FormatBool(company.RustFoundationMember) %}"
+                 data-company-remote="{%s strconv.FormatBool(company.Remote) %}"
             >
               <aside class="card__action">
                 {% if userCompanyFavoriteMap[company.ID] %}
