@@ -335,7 +335,7 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 			<li class="card__links-item">
 				<a href="`)
 	qw422016.E().S(linkedinConnectionsURL([]Company{company}, nil))
-	qw422016.N().S(`" class="button-link card__links-link">Connections</a>
+	qw422016.N().S(`" class="button-link card__links-link">Connections (current employees)</a>
 				<img
 					class="card__links-icon"
 					alt="language icon"
@@ -347,12 +347,17 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 			<li class="card__links-item">
 				<a href="`)
 	qw422016.E().S(linkedinConnectionsURL([]Company{company}, ukrainianUniversities))
-	qw422016.N().S(`" class="button-link card__links-link">Connections 🇺🇦</a>
+	qw422016.N().S(`" class="button-link card__links-link">Connections (current employees) 🇺🇦</a>
 			</li>
 			<li class="card__links-item">
 				<a href="`)
 	qw422016.E().S(linkedinConnectionsURL([]Company{company}, czechUniversities))
-	qw422016.N().S(`" class="button-link card__links-link">Connections 🇨🇿</a>
+	qw422016.N().S(`" class="button-link card__links-link">Connections (current employees) 🇨🇿</a>
+			</li>
+			<li class="card__links-item">
+				<a href="`)
+	qw422016.E().S(linkedinConnectionsFormerEmployeesURL([]Company{company}))
+	qw422016.N().S(`" class="button-link card__links-link">Connections (former employees)</a>
 			</li>
 			<li class="card__links-item">
 				<a href="`)

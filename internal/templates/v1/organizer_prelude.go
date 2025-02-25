@@ -39,6 +39,18 @@ func linkedinConnectionsURL(companies []Company, universities []University) stri
 	return "https://www.linkedin.com/search/results/PEOPLE/?" + values.Encode()
 }
 
+func linkedinConnectionsFormerEmployeesURL(companies []Company) string {
+	companyQueryParam, _ := json.Marshal(companiesToLinkedInIDs(companies))
+
+	values := url.Values{
+		"pastCompany": {string(companyQueryParam)},
+		"network":     {`["F","S"]`},
+		"keywords":    {keywordsCommon},
+	}
+
+	return "https://www.linkedin.com/search/results/PEOPLE/?" + values.Encode()
+}
+
 func linkedinJobsURL(companies []Company, keywords string) string {
 	values := url.Values{
 		"keywords": {keywords},

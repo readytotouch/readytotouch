@@ -206,7 +206,7 @@
 				<a href="https://www.linkedin.com/company/{%s company.LinkedInProfile.Alias %}/" class="button-link card__links-link">Overview</a>
 			</li>
 			<li class="card__links-item">
-				<a href="{%s linkedinConnectionsURL([]Company{company}, nil) %}" class="button-link card__links-link">Connections</a>
+				<a href="{%s linkedinConnectionsURL([]Company{company}, nil) %}" class="button-link card__links-link">Connections (current employees)</a>
 				<img
 					class="card__links-icon"
 					alt="language icon"
@@ -216,10 +216,13 @@
 				/>
 			</li>
 			<li class="card__links-item">
-				<a href="{%s linkedinConnectionsURL([]Company{company}, ukrainianUniversities) %}" class="button-link card__links-link">Connections 🇺🇦</a>
+				<a href="{%s linkedinConnectionsURL([]Company{company}, ukrainianUniversities) %}" class="button-link card__links-link">Connections (current employees) 🇺🇦</a>
 			</li>
 			<li class="card__links-item">
-				<a href="{%s linkedinConnectionsURL([]Company{company}, czechUniversities) %}" class="button-link card__links-link">Connections 🇨🇿</a>
+				<a href="{%s linkedinConnectionsURL([]Company{company}, czechUniversities) %}" class="button-link card__links-link">Connections (current employees) 🇨🇿</a>
+			</li>
+			<li class="card__links-item">
+				<a href="{%s linkedinConnectionsFormerEmployeesURL([]Company{company}) %}" class="button-link card__links-link">Connections (former employees)</a>
 			</li>
 			<li class="card__links-item">
 				<a href="{%s linkedinJobsURL([]Company{company}, string(organizerFeature.Organizer.LanguageTitleKeywords)) %}" class="button-link card__links-link">Jobs</a>
