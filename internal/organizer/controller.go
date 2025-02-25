@@ -1173,10 +1173,14 @@ func (c *Controller) companies(organizerFeature domain.OrganizerFeature) []domai
 
 		language := organizerFeature.Organizer.Language
 
+		vacancies := company.Languages[language].Vacancies
+
 		// Show companies only if they have vacancies or are Rust Foundation members
-		if len(company.Languages[language].Vacancies) == 0 && !(language == domain.Rust && company.RustFoundationMember) {
+		if len(vacancies) == 0 && !(language == domain.Rust && company.RustFoundationMember) {
 			continue
 		}
+
+		company.Remote = company.Remote || c.anyRemoteVacancy(vacancies)
 
 		companies = append(companies, company)
 	}
@@ -1336,6 +1340,16 @@ func (c *Controller) dataPopulationCompanies(match func(company domain.CompanyPr
 func (c *Controller) hasVacancies(company domain.CompanyProfile) bool {
 	for _, language := range company.Languages {
 		if len(language.Vacancies) > 0 {
+			return true
+		}
+	}
+
+	return false
+}
+
+func (c *Controller) anyRemoteVacancy(vacancies []domain.Vacancy) bool {
+	for _, vacancy := range vacancies {
+		if vacancy.Remote {
 			return true
 		}
 	}

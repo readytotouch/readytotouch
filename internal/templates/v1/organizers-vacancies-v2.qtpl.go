@@ -260,14 +260,19 @@ func StreamOrganizersVacanciesV2(qw422016 *qt422016.Writer,
             <span class="checkbox__element"></span>
             Rust Foundation Members
           </label>
+          `)
+	}
+	qw422016.N().S(`
+          <label class="checkbox filters__element">
+            <input id="js-criteria-remote" class="checkbox__input" type="checkbox" />
+            <span class="checkbox__element"></span>
+            Remote
+          </label>
           <label class="checkbox filters__element">
             <input id="js-criteria-in-favorites" class="checkbox__input" type="checkbox" />
             <span class="checkbox__element"></span>
             Favorites
           </label>
-          `)
-	}
-	qw422016.N().S(`
           `)
 	qw422016.N().S(`
         </div>
@@ -320,6 +325,9 @@ func StreamOrganizersVacanciesV2(qw422016 *qt422016.Writer,
 		qw422016.N().S(`"
 					 data-vacancy-title="`)
 		qw422016.E().S(vacancy.Title)
+		qw422016.N().S(`"
+                     data-vacancy-remote="`)
+		qw422016.E().S(strconv.FormatBool(vacancy.Remote))
 		qw422016.N().S(`"
 					 data-company-name="`)
 		qw422016.E().S(vacancy.Company.Name)

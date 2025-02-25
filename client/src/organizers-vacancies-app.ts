@@ -6,6 +6,7 @@ import {
     VACANCY_COMPANY_TYPE_CRITERIA_NAME,
     VACANCY_COMPANY_INDUSTRY_CRITERIA_NAME,
     VACANCY_COMPANY_RUST_FOUNDATION_MEMBERS_CRITERIA_NAME,
+    VACANCY_REMOTE_CRITERIA_NAME,
     VACANCY_IN_FAVORITES_CRITERIA_NAME,
     VACANCY_COMPANY_HAS_EMPLOYEES_FROM_COUNTRY_CRITERIA_NAME,
 } from "./framework/vacancy_criteria_names";
@@ -69,6 +70,7 @@ const $typeCheckboxes = new InputCheckboxes(document.querySelectorAll("input.js-
 const $industryCheckboxes = new InputCheckboxes(document.querySelectorAll("input.js-criteria-company-industry") as any as Array<HTMLInputElement>);
 const $hasEmployeesFromCountryCheckboxes = new InputCheckboxes(document.querySelectorAll("input.js-criteria-has-employees-from-country") as any as Array<HTMLInputElement>);
 const $inRustFoundationMembersCheckbox = document.getElementById("js-criteria-rust-foundation-members") as HTMLInputElement;
+const $remoteCheckbox = document.getElementById("js-criteria-remote") as HTMLInputElement;
 const $inFavoritesCheckbox = document.getElementById("js-criteria-in-favorites") as HTMLInputElement;
 const $selectedCriteria = document.getElementById("js-vacancy-selected-criteria");
 const $reset = document.getElementById("js-criteria-reset");
@@ -115,6 +117,16 @@ if ($inRustFoundationMembersCheckbox) {
     });
 }
 
+$remoteCheckbox.addEventListener("change", function () {
+    urlStateContainer.setBoolCriteria(VACANCY_REMOTE_CRITERIA_NAME, $remoteCheckbox.checked);
+    urlStateContainer.setPage(1);
+    urlStateContainer.storeCurrentState();
+
+    renderSelectedCriteriaByURL();
+
+    search();
+});
+
 $inFavoritesCheckbox.addEventListener("change", function () {
     urlStateContainer.setBoolCriteria(VACANCY_IN_FAVORITES_CRITERIA_NAME, $inFavoritesCheckbox.checked);
     urlStateContainer.setPage(1);
@@ -141,6 +153,7 @@ function setStateByURL() {
     if ($inRustFoundationMembersCheckbox) {
         setCheckboxStateByURL($inRustFoundationMembersCheckbox, VACANCY_COMPANY_RUST_FOUNDATION_MEMBERS_CRITERIA_NAME);
     }
+    setCheckboxStateByURL($remoteCheckbox, VACANCY_REMOTE_CRITERIA_NAME);
     setCheckboxStateByURL($inFavoritesCheckbox, VACANCY_IN_FAVORITES_CRITERIA_NAME);
 }
 
@@ -151,6 +164,7 @@ function renderSelectedCriteriaByURL() {
     renderSelectedCheckboxes($views, VACANCY_COMPANY_INDUSTRY_CRITERIA_NAME, industries);
     renderSelectedCheckboxes($views, VACANCY_COMPANY_HAS_EMPLOYEES_FROM_COUNTRY_CRITERIA_NAME, hasEmployeesFromCountries);
     renderSelectedCheckbox($views, VACANCY_COMPANY_RUST_FOUNDATION_MEMBERS_CRITERIA_NAME, "Rust Foundation Members");
+    renderSelectedCheckbox($views, VACANCY_REMOTE_CRITERIA_NAME, "Remote");
     renderSelectedCheckbox($views, VACANCY_IN_FAVORITES_CRITERIA_NAME, "Favorites");
 
     $selectedCriteria.innerHTML = "";
@@ -236,6 +250,7 @@ function search() {
     const industries = urlStateContainer.getCriteria(VACANCY_COMPANY_INDUSTRY_CRITERIA_NAME, []);
     const hasEmployeesFromCountries = urlStateContainer.getCriteria(VACANCY_COMPANY_HAS_EMPLOYEES_FROM_COUNTRY_CRITERIA_NAME, []);
     const isRustFoundationMembers = urlStateContainer.getCriteria(VACANCY_COMPANY_RUST_FOUNDATION_MEMBERS_CRITERIA_NAME, false);
+    const remote = urlStateContainer.getCriteria(VACANCY_REMOTE_CRITERIA_NAME, false);
     const inFavorites = urlStateContainer.getCriteria(VACANCY_IN_FAVORITES_CRITERIA_NAME, false);
 
     const matchQuery = function ($vacancy: HTMLElement): boolean {
@@ -308,6 +323,10 @@ function search() {
         }
 
         if (isRustFoundationMembers && $vacancy.getAttribute("data-company-rust-foundation-members") !== "true") {
+            return false;
+        }
+
+        if (remote && $vacancy.getAttribute("data-vacancy-remote") !== "true") {
             return false;
         }
 

@@ -219,12 +219,17 @@
             <span class="checkbox__element"></span>
             Rust Foundation Members
           </label>
+          {% endif %}
+          <label class="checkbox filters__element">
+            <input id="js-criteria-remote" class="checkbox__input" type="checkbox" />
+            <span class="checkbox__element"></span>
+            Remote
+          </label>
           <label class="checkbox filters__element">
             <input id="js-criteria-in-favorites" class="checkbox__input" type="checkbox" />
             <span class="checkbox__element"></span>
             Favorites
           </label>
-          {% endif %}
           {% comment %}
           <div class="switch-wrapper filters__element">
             <label class="switch">
@@ -276,6 +281,7 @@
 				<div class="js-vacancy card"
 					 data-vacancy-id="{%dl vacancy.ID %}"
 					 data-vacancy-title="{%s vacancy.Title %}"
+                     data-vacancy-remote="{%s strconv.FormatBool(vacancy.Remote) %}"
 					 data-company-name="{%s vacancy.Company.Name %}"
 					 data-company-type="{%s string(vacancy.Company.Type) %}"
 					 data-company-industries="{%s aliases(vacancy.Company.Industries) %}"
