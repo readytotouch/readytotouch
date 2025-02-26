@@ -3419,11 +3419,11 @@ func companiesPart3() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Software Engineer (AWS, C#, GO)",
+							Title:                "Software Engineer (AWS, C#, Go)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4162701643/",
-							Date:                 mustDate("2025-02-25"),
+							Date:                 mustDate("2025-02-24"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3436,10 +3436,13 @@ func companiesPart3() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Senior Software Engineer (Elixir)",
-							ShortDescription: "Proficiency in the Elixir programming language",
-							URL:              "https://www.linkedin.com/jobs/view/4099130926/",
-							Date:             mustDate("2024-12-12"),
+							Title:                "Senior Software Engineer (Elixir)",
+							ShortDescription:     "Proficiency in the Elixir programming language",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4099130926/",
+							Date:                 mustDate("2024-12-12"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 						{
 							Title:                "Senior Software Engineer (Elixir)",
