@@ -654,6 +654,10 @@ var (
 		"garena":                              651, // Garena
 		"moneylion":                           652, // MoneyLion
 		"loblaw-companies-limited":            653, // Loblaw Companies Limited
+		"qonto":                               654, // Qonto
+		"icapital-network-inc":                655, // iCapital
+		"expedia":                             656, // Expedia Group
+		"esri":                                657, // Esri
 
 	}
 )
