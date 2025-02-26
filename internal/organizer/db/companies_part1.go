@@ -174,12 +174,13 @@ func companiesPart1() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 227,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Software Engineer III, Google Kubernetes Engine",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4087466433/",
-							Date:             mustDate("2024-12-04"),
-							WithSalary:       false,
-							Remote:           false,
+							Title:                "Software Engineer III, Google Kubernetes Engine",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4087466433/",
+							Date:                 mustDate("2024-12-04"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 						{
 							Title:                "Senior Golang Developer Relations Engineer, AI Agents",
@@ -1050,7 +1051,7 @@ func companiesPart1() []domain.CompanyProfile {
 							Remote:               false,
 						},
 						{
-							Title:                "Software Developer with Java or Golan",
+							Title:                "Software Developer with Java or Golang",
 							ShortDescription:     "SAP iXP Intern",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4117406944/",
@@ -7318,14 +7319,6 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Go: {
 					GitHubRepositoriesCount: 3,
 					Vacancies: []domain.Vacancy{
-						/*
-							{
-								Title:            "",
-								ShortDescription: "",
-								URL:              "",
-								Date:             mustDate(""),
-							},
-						*/
 						{
 							Title:                "Backend Engineer (Golang)",
 							ShortDescription:     "",

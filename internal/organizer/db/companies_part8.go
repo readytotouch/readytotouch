@@ -3511,7 +3511,7 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "B2B",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4167157690/",
-							Date:                 mustDate("2025-02-25"),
+							Date:                 mustDate("2025-02-24"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -6346,7 +6346,7 @@ func companiesPart8() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Back Engineer, Scala",
+							Title:                "Back-End Engineer, Scala",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4168470393/",
@@ -6360,7 +6360,7 @@ func companiesPart8() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "American fintech company that provides platform solutions related to alternative investments in the private markets",
+			ShortDescription: "American FinTech company that provides platform solutions related to alternative investments in the private markets",
 			Industries: []domain.Industry{
 				domain.IndustryFinTech,
 			},
@@ -6408,7 +6408,7 @@ func companiesPart8() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Data Engineer III - Scala/Spark",
+							Title:                "Data Engineer III — Scala/Spark",
 							ShortDescription:     "Media Solutions",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4141235282/",
@@ -6423,6 +6423,8 @@ func companiesPart8() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "American travel technology company that owns and operates travel fare aggregators and travel metasearch engines",
+			YahooFinanceURL:  "https://finance.yahoo.com/quote/EXPE/",
+			GoogleFinanceURL: "https://www.google.com/finance/quote/EXPE:NASDAQ",
 		},
 
 		{
