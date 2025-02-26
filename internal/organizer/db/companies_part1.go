@@ -174,12 +174,13 @@ func companiesPart1() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 227,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Software Engineer III, Google Kubernetes Engine",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4087466433/",
-							Date:             mustDate("2024-12-04"),
-							WithSalary:       false,
-							Remote:           false,
+							Title:                "Software Engineer III, Google Kubernetes Engine",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4087466433/",
+							Date:                 mustDate("2024-12-04"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 						{
 							Title:                "Senior Golang Developer Relations Engineer, AI Agents",
@@ -198,6 +199,15 @@ func companiesPart1() []domain.CompanyProfile {
 							Date:                 mustDate("2025-01-27"),
 							WithSalary:           true, // $142K — $211K per year
 							Remote:               false,
+						},
+						{
+							Title:                "Golang Back-End Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4164764188/",
+							Date:                 mustDate("2025-02-25"),
+							WithSalary:           false,
+							Remote:               true,
 						},
 					},
 				},
@@ -1037,6 +1047,15 @@ func companiesPart1() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4151455339/",
 							Date:                 mustDate("2025-02-12"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Software Developer with Java or Golang",
+							ShortDescription:     "SAP iXP Intern",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4117406944/",
+							Date:                 mustDate("2025-02-26"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -5164,6 +5183,15 @@ func companiesPart1() []domain.CompanyProfile {
 							WithSalary:           true, // $118,000—$178,000 CAD per year
 							Remote:               true,
 						},
+						{
+							Title:                "Staff Golang Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4164184734/",
+							Date:                 mustDate("2025-02-26"),
+							WithSalary:           true, // $139,000—$209,000 CAD per year
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -7290,15 +7318,16 @@ func companiesPart1() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 3,
-					Vacancies:               []domain.Vacancy{
-						/*
-							{
-								Title:            "",
-								ShortDescription: "",
-								URL:              "",
-								Date:             mustDate(""),
-							},
-						*/
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Backend Engineer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4165424189/",
+							Date:                 mustDate("2025-02-26"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -8347,7 +8376,7 @@ func companiesPart1() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4143662469/",
-							Date:                 mustDate("2025-02-05"),
+							Date:                 mustDate("2025-02-26"), // mustDate("2025-02-05"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -9762,7 +9791,7 @@ func companiesPart1() []domain.CompanyProfile {
 							ShortDescription:     "Billing/CSA",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4143606852/",
-							Date:                 mustDate("2025-02-04"),
+							Date:                 mustDate("2025-02-26"), // mustDate("2025-02-04"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -11479,7 +11508,7 @@ func companiesPart1() []domain.CompanyProfile {
 							ShortDescription:     "Real Estate",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4142492503/",
-							Date:                 mustDate("2025-02-03"),
+							Date:                 mustDate("2025-02-25"), // mustDate("2025-02-03"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -12001,7 +12030,7 @@ func companiesPart1() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{
+					Vacancies: []domain.Vacancy{
 						/*
 							{
 								Title:            "",
@@ -12010,6 +12039,15 @@ func companiesPart1() []domain.CompanyProfile {
 								Date:             mustDate(""),
 							},
 						*/
+						{
+							Title:                "Senior Backend Engineer — Go",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4165243684/",
+							Date:                 mustDate("2025-02-25"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -13743,7 +13781,7 @@ func companiesPart1() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4152455199/",
-							Date:                 mustDate("2025-02-19"), // mustDate("2025-02-18"), // mustDate("2025-02-17"), // mustDate("2025-02-13"),
+							Date:                 mustDate("2025-02-26"), // mustDate("2025-02-19"), // mustDate("2025-02-18"), // mustDate("2025-02-17"), // mustDate("2025-02-13"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -15379,7 +15417,7 @@ func companiesPart1() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 10,
-					Vacancies:               []domain.Vacancy{
+					Vacancies: []domain.Vacancy{
 						/*
 							{
 								Title:            "",
@@ -15388,6 +15426,15 @@ func companiesPart1() []domain.CompanyProfile {
 								Date:             mustDate(""),
 							},
 						*/
+						{
+							Title:                "Golang Backend Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4162630665/",
+							Date:                 mustDate("2025-02-25"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -17979,8 +18026,8 @@ func companiesPart1() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4158798582/",
-							Date:                 mustDate("2025-02-19"),
-							WithSalary:           true, // $180.000 - $230.000 per year
+							Date:                 mustDate("2025-02-25"), // mustDate("2025-02-19"),
+							WithSalary:           true,                   // $180.000 - $230.000 per year
 							Remote:               false,
 						},
 					},
