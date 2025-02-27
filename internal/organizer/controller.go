@@ -110,6 +110,12 @@ func (c *Controller) CompaniesV1(ctx *gin.Context) {
 		authUserID = domain.ContextGetUserID(ctx)
 	)
 
+	if authUserID == 0 {
+		ctx.Redirect(http.StatusFound, "/organizers/golang/welcome"+c.redirect(ctx.Request.URL.Path))
+
+		return
+	}
+
 	organizerFeature, ok := c.organizerFeature(ctx.FullPath())
 	if !ok {
 		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Feature not found"))
@@ -154,6 +160,12 @@ func (c *Controller) CompaniesV2(ctx *gin.Context) {
 		authUserID = domain.ContextGetUserID(ctx)
 	)
 
+	if authUserID == 0 {
+		ctx.Redirect(http.StatusFound, "/organizers/golang/welcome"+c.redirect(ctx.Request.URL.Path))
+
+		return
+	}
+
 	organizerFeature, ok := c.organizerFeature(ctx.FullPath())
 	if !ok {
 		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Feature not found"))
@@ -195,6 +207,16 @@ func (c *Controller) CompaniesV2(ctx *gin.Context) {
 
 func (c *Controller) CompanyV1(ctx *gin.Context) {
 	var (
+		authUserID = domain.ContextGetUserID(ctx)
+	)
+
+	if authUserID == 0 {
+		ctx.Redirect(http.StatusFound, "/organizers/golang/welcome"+c.redirect(ctx.Request.URL.Path))
+
+		return
+	}
+
+	var (
 		uri companyAliasURI
 	)
 
@@ -254,9 +276,6 @@ func (c *Controller) CompanyV1(ctx *gin.Context) {
 		return
 	}
 
-	var (
-		authUserID = domain.ContextGetUserID(ctx)
-	)
 	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)
 	if err != nil {
 		// @TODO logging
@@ -295,6 +314,16 @@ func (c *Controller) CompanyV1(ctx *gin.Context) {
 
 func (c *Controller) CompanyV2(ctx *gin.Context) {
 	var (
+		authUserID = domain.ContextGetUserID(ctx)
+	)
+
+	if authUserID == 0 {
+		ctx.Redirect(http.StatusFound, "/organizers/golang/welcome"+c.redirect(ctx.Request.URL.Path))
+
+		return
+	}
+
+	var (
 		uri companyAliasURI
 	)
 
@@ -354,9 +383,6 @@ func (c *Controller) CompanyV2(ctx *gin.Context) {
 		return
 	}
 
-	var (
-		authUserID = domain.ContextGetUserID(ctx)
-	)
 	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)
 	if err != nil {
 		// @TODO logging
@@ -444,6 +470,12 @@ func (c *Controller) Vacancies(ctx *gin.Context) {
 	var (
 		authUserID = domain.ContextGetUserID(ctx)
 	)
+
+	if authUserID == 0 {
+		ctx.Redirect(http.StatusFound, "/organizers/golang/welcome"+c.redirect(ctx.Request.URL.Path))
+
+		return
+	}
 
 	organizerFeature, ok := c.organizerFeature(ctx.FullPath())
 	if !ok {
@@ -580,6 +612,12 @@ func (c *Controller) GolangCommunities(ctx *gin.Context) {
 	var (
 		authUserID = domain.ContextGetUserID(ctx)
 	)
+
+	if authUserID == 0 {
+		ctx.Redirect(http.StatusFound, "/organizers/golang/welcome"+c.redirect(ctx.Request.URL.Path))
+
+		return
+	}
 
 	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)
 	if err != nil {
