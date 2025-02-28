@@ -6406,7 +6406,7 @@ func companiesPart2() []domain.CompanyProfile {
 							Remote:               false,
 						},
 						{
-							Title:                "Software Engineer II - Golang / Python",
+							Title:                "Software Engineer II — Golang / Python",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4170827046/",

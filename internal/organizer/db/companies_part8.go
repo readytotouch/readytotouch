@@ -6518,7 +6518,7 @@ func companiesPart8() []domain.CompanyProfile {
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "CloudLinux",
-			Website: "http://www.cloudlinux.com/",
+			Website: "https://www.cloudlinux.com/",
 			Careers: "https://www.cloudlinux.com/about-us-company-jobs/",
 			About:   "https://www.cloudlinux.com/about-us/",
 			Blog:    "https://blog.cloudlinux.com/",
@@ -6571,14 +6571,14 @@ func companiesPart8() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "Is a linux based operating system designed to give shared hosting providers a more stable and secure OS",
+			ShortDescription: "Is a Linux based operating system designed to give shared hosting providers a more stable and secure OS",
 		},
 
 		{
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "Green Packet",
-			Website: "https://greenpacket.com/",
+			Website: "https://www.greenpacket.com/",
 			Careers: "https://www.greenpacket.com/careers",
 			About:   "https://www.greenpacket.com/company/about-us",
 			Blog:    "",
@@ -6677,7 +6677,7 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4168467917/",
-							Date:                 mustDate("2025-02-27"),
+							Date:                 mustDate("2025-02-26"),
 							WithSalary:           false,
 							Remote:               true,
 						},

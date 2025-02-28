@@ -1342,7 +1342,7 @@ func companiesPart3() []domain.CompanyProfile {
 							Remote:               true,
 						},
 						{
-							Title:                "Staff Engineer — (GO, Python, FullStack/React)",
+							Title:                "Staff Engineer — (Go, Python, FullStack/React)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4133418996/",
@@ -1857,7 +1857,7 @@ func companiesPart3() []domain.CompanyProfile {
 							Remote:           false,
 						},
 						{
-							Title:                "C++/GO Developer",
+							Title:                "C++/Go Developer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4169928348/",
@@ -2576,8 +2576,8 @@ func companiesPart3() []domain.CompanyProfile {
 							Remote:               true,
 						},
 						{
-							Title:                "Senior Golang Software Engineer (CAF)",
-							ShortDescription:     "",
+							Title:                "Senior Golang Software Engineer",
+							ShortDescription:     "CAF",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4168495099/",
 							Date:                 mustDate("2025-02-27"),
