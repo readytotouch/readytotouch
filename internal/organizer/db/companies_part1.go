@@ -4167,11 +4167,11 @@ func companiesPart1() []domain.CompanyProfile {
 							Remote:               false,
 						},
 						{
-							Title:                "Senior Engineer — Java/GoLang/CICD",
+							Title:                "Senior Engineer — Java/Golang",
 							ShortDescription:     "Cloud Engineering",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4168644032/",
-							Date:                 mustDate("2025-02-27"),
+							Date:                 mustDate("2025-02-26"),
 							WithSalary:           true, // $110.000 - $190.000 per year
 							Remote:               false,
 						},

@@ -1225,7 +1225,7 @@ func companiesPart4() []domain.CompanyProfile {
 						},
 						{
 							Title:                "Senior Golang Engineer",
-							ShortDescription:     "Sophia-Antipolis",
+							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4169760988/",
 							Date:                 mustDate("2025-02-27"),
