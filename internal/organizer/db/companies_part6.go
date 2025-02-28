@@ -199,8 +199,8 @@ func companiesPart6() []domain.CompanyProfile {
 							ShortDescription:     "Spacecraft Flight Software",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4145412132/",
-							Date:                 mustDate("2025-02-10"),
-							WithSalary:           true, // $150.000 - $200.000 per year
+							Date:                 mustDate("2025-02-28"), // mustDate("2025-02-10"),
+							WithSalary:           true,                   // $150.000 - $200.000 per year
 							Remote:               false,
 						},
 					},

@@ -110,15 +110,15 @@ func (c *Controller) CompaniesV1(ctx *gin.Context) {
 		authUserID = domain.ContextGetUserID(ctx)
 	)
 
-	if authUserID == 0 {
-		ctx.Redirect(http.StatusFound, "/organizers/golang/welcome"+c.redirect(ctx.Request.URL.Path))
+	organizerFeature, ok := c.organizerFeature(ctx.FullPath())
+	if !ok {
+		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Feature not found"))
 
 		return
 	}
 
-	organizerFeature, ok := c.organizerFeature(ctx.FullPath())
-	if !ok {
-		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Feature not found"))
+	if authUserID == 0 && organizerFeature.Organizer.Language == domain.Go {
+		ctx.Redirect(http.StatusFound, "/organizers/golang/welcome"+c.redirect(ctx.Request.URL.Path))
 
 		return
 	}
@@ -160,15 +160,15 @@ func (c *Controller) CompaniesV2(ctx *gin.Context) {
 		authUserID = domain.ContextGetUserID(ctx)
 	)
 
-	if authUserID == 0 {
-		ctx.Redirect(http.StatusFound, "/organizers/golang/welcome"+c.redirect(ctx.Request.URL.Path))
+	organizerFeature, ok := c.organizerFeature(ctx.FullPath())
+	if !ok {
+		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Feature not found"))
 
 		return
 	}
 
-	organizerFeature, ok := c.organizerFeature(ctx.FullPath())
-	if !ok {
-		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Feature not found"))
+	if authUserID == 0 && organizerFeature.Organizer.Language == domain.Go {
+		ctx.Redirect(http.StatusFound, "/organizers/golang/welcome"+c.redirect(ctx.Request.URL.Path))
 
 		return
 	}
@@ -209,12 +209,6 @@ func (c *Controller) CompanyV1(ctx *gin.Context) {
 	var (
 		authUserID = domain.ContextGetUserID(ctx)
 	)
-
-	if authUserID == 0 {
-		ctx.Redirect(http.StatusFound, "/organizers/golang/welcome"+c.redirect(ctx.Request.URL.Path))
-
-		return
-	}
 
 	var (
 		uri companyAliasURI
@@ -314,10 +308,19 @@ func (c *Controller) CompanyV1(ctx *gin.Context) {
 
 func (c *Controller) CompanyV2(ctx *gin.Context) {
 	var (
-		authUserID = domain.ContextGetUserID(ctx)
+		authUserID  = domain.ContextGetUserID(ctx)
+		featurePath = c.trimCompanyAlias(ctx)
 	)
 
-	if authUserID == 0 {
+	organizerFeature, ok := c.organizerFeature(featurePath)
+	if !ok {
+		// Should be unreachable
+		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Feature not found"))
+
+		return
+	}
+
+	if authUserID == 0 && organizerFeature.Organizer.Language == domain.Go {
 		ctx.Redirect(http.StatusFound, "/organizers/golang/welcome"+c.redirect(ctx.Request.URL.Path))
 
 		return
@@ -333,10 +336,6 @@ func (c *Controller) CompanyV2(ctx *gin.Context) {
 
 		return
 	}
-
-	var (
-		featurePath = c.trimCompanyAlias(ctx)
-	)
 
 	// Redirect to lowercase company alias
 	{
@@ -374,14 +373,6 @@ func (c *Controller) CompanyV2(ctx *gin.Context) {
 		company.Type = organizers.ToCompanyType(company.LinkedInProfile.Alias)
 	}
 	company.Logo = organizers.CompanyAliasToLogoMap[company.LinkedInProfile.Alias]
-
-	organizerFeature, ok := c.organizerFeature(featurePath)
-	if !ok {
-		// Should be unreachable
-		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Feature not found"))
-
-		return
-	}
 
 	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)
 	if err != nil {
@@ -471,15 +462,15 @@ func (c *Controller) Vacancies(ctx *gin.Context) {
 		authUserID = domain.ContextGetUserID(ctx)
 	)
 
-	if authUserID == 0 {
-		ctx.Redirect(http.StatusFound, "/organizers/golang/welcome"+c.redirect(ctx.Request.URL.Path))
+	organizerFeature, ok := c.organizerFeature(ctx.FullPath())
+	if !ok {
+		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Feature not found"))
 
 		return
 	}
 
-	organizerFeature, ok := c.organizerFeature(ctx.FullPath())
-	if !ok {
-		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Feature not found"))
+	if authUserID == 0 && organizerFeature.Organizer.Language == domain.Go {
+		ctx.Redirect(http.StatusFound, "/organizers/golang/welcome"+c.redirect(ctx.Request.URL.Path))
 
 		return
 	}
