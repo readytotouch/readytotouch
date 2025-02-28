@@ -202,7 +202,7 @@ func companiesPart5() []domain.CompanyProfile {
 							Title:                "Principal Golang Developer",
 							ShortDescription:     "Automation Systems",
 							SwitchingOpportunity: "",
-							URL:                  "",
+							URL:                  "https://www.linkedin.com/jobs/view/4169027114/",
 							Date:                 mustDate("2025-02-28"),
 							WithSalary:           true, // $149.084 - $198.779 per year
 							Remote:               true,
