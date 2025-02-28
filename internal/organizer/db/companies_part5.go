@@ -62,6 +62,15 @@ func companiesPart5() []domain.CompanyProfile {
 							WithSalary:           true, //  $4-7k USD per month + PTO depending on level and experience
 							Remote:               true,
 						},
+						{
+							Title:                "Backend Golang Software Engineer",
+							ShortDescription:     "US Fintech SaaS Platform",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4169980121/",
+							Date:                 mustDate("2025-02-27"),
+							WithSalary:           true, // $4-7k USD per month + PTO depending on level and experience
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -187,6 +196,15 @@ func companiesPart5() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4165781378/",
 							Date:                 mustDate("2025-02-26"),
 							WithSalary:           true, // $149.100 - $198.800 per year
+							Remote:               true,
+						},
+						{
+							Title:                "Principal Golang Developer",
+							ShortDescription:     "Automation Systems",
+							SwitchingOpportunity: "",
+							URL:                  "",
+							Date:                 mustDate("2025-02-28"),
+							WithSalary:           true, // $149.084 - $198.779 per year
 							Remote:               true,
 						},
 					},

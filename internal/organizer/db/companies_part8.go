@@ -1285,7 +1285,7 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4125175696/",
-							Date:                 mustDate("2025-02-26"), // mustDate("2025-02-21"), // mustDate("2025-02-20"), // mustDate("2025-02-15"), // mustDate("2025-01-16"),
+							Date:                 mustDate("2025-02-28"), // mustDate("2025-02-26"), // mustDate("2025-02-21"), // mustDate("2025-02-20"), // mustDate("2025-02-15"), // mustDate("2025-01-16"),
 							WithSalary:           true,                   // $60.00 - $77.00/ hr
 							Remote:               false,
 						},
@@ -1352,6 +1352,15 @@ func companiesPart8() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4124350189/",
 							Date:                 mustDate("2025-01-16"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+						{
+							Title:                "Senior Golang Engineer",
+							ShortDescription:     "Shop Back-End",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4168727191/",
+							Date:                 mustDate("2025-02-27"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -1696,7 +1705,7 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4123118327/",
-							Date:                 mustDate("2025-02-07"), // mustDate("2025-01-15"),
+							Date:                 mustDate("2025-02-27"), // mustDate("2025-02-07"), // mustDate("2025-01-15"),
 							WithSalary:           true,                   // $98,400—$137,800 CAD
 							Remote:               false,
 						},
@@ -2877,6 +2886,15 @@ func companiesPart8() []domain.CompanyProfile {
 							WithSalary:           true, // 42.000-58.000 EUR
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Data Engineer with Scala",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4168747840/",
+							Date:                 mustDate("2025-02-27"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Elixir:  {},
@@ -3084,6 +3102,15 @@ func companiesPart8() []domain.CompanyProfile {
 							Date:                 mustDate("2025-02-10"),
 							WithSalary:           true, // $175.000 - $205.000 per year
 							Remote:               true,
+						},
+						{
+							Title:                "Staff Engineer — Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4145249119/",
+							Date:                 mustDate("2025-02-27"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 					},
 				},
@@ -3779,7 +3806,7 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4145691848/",
-							Date:                 mustDate("2025-02-06"),
+							Date:                 mustDate("2025-02-27"), // mustDate("2025-02-06"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3849,7 +3876,7 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4144388320/",
-							Date:                 mustDate("2025-02-06"),
+							Date:                 mustDate("2025-02-27"), // mustDate("2025-02-06"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -6485,6 +6512,248 @@ func companiesPart8() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "American geographic information system (GIS) software",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "CloudLinux",
+			Website: "http://www.cloudlinux.com/",
+			Careers: "https://www.cloudlinux.com/about-us-company-jobs/",
+			About:   "https://www.cloudlinux.com/about-us/",
+			Blog:    "https://blog.cloudlinux.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                632769,
+				IDs:               nil,
+				Alias:             "cloudlinux",
+				Name:              "CloudLinux",
+				Followers:         "33K",
+				Employees:         "51-200",
+				AssociatedMembers: "245",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "cloudlinux",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "cloudlinux",
+				Employees: "150",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Python/Go Developer",
+							ShortDescription:     "Imunify360 team",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4170791654/",
+							Date:                 mustDate("2025-02-28"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Is a linux based operating system designed to give shared hosting providers a more stable and secure OS",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Green Packet",
+			Website: "https://greenpacket.com/",
+			Careers: "https://www.greenpacket.com/careers",
+			About:   "https://www.greenpacket.com/company/about-us",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                81702,
+				IDs:               nil,
+				Alias:             "greenpacket",
+				Name:              "Green Packet",
+				Followers:         "13K",
+				Employees:         "51-200",
+				AssociatedMembers: "172",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Full Stack Developer (PHP,Go)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4168191417/",
+							Date:                 mustDate("2025-02-28"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Malaysian Telecommunications, Internet Service Providers, Website Hosting & Internet-Related Services, and Mobile company",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Bloomreach",
+			Website: "https://www.bloomreach.com/",
+			Careers: "https://www.bloomreach.com/en/careers",
+			About:   "https://www.bloomreach.com/en/about-us",
+			Blog:    "https://dev.to/bloomreach",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                36076,
+				IDs:               nil,
+				Alias:             "bloomreach",
+				Name:              "Bloomreach",
+				Followers:         "70K",
+				Employees:         "501-1K",
+				AssociatedMembers: "1,072",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "bloomreach",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "bloomreach",
+				Employees: "850",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Go Platform Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4168467917/",
+							Date:                 mustDate("2025-02-27"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Is a digital marketing and website optimization company",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Fidelity Investments",
+			Website: "https://www.fidelity.com/",
+			Careers: "https://www.fidelity.com/about-fidelity/careers",
+			About:   "https://www.fidelity.com/about-fidelity/our-company",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1307,
+				IDs:               nil,
+				Alias:             "fidelity-investments",
+				Name:              "Fidelity Investments",
+				Followers:         "1M",
+				Employees:         "10K+",
+				AssociatedMembers: "80,034",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "fidelity",
+				Verified: true,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "fidelity-investments",
+				Employees: "60,570",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Principal Full Stack Engineer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4168166029/",
+							Date:                 mustDate("2025-02-28"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American multinational financial services corporation",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
 		},
 
 		// Template
