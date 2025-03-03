@@ -1285,7 +1285,7 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4125175696/",
-							Date:                 mustDate("2025-02-28"), // mustDate("2025-02-26"), // mustDate("2025-02-21"), // mustDate("2025-02-20"), // mustDate("2025-02-15"), // mustDate("2025-01-16"),
+							Date:                 mustDate("2025-03-01"), // mustDate("2025-02-28"), // mustDate("2025-02-26"), // mustDate("2025-02-21"), // mustDate("2025-02-20"), // mustDate("2025-02-15"), // mustDate("2025-01-16"),
 							WithSalary:           true,                   // $60.00 - $77.00/ hr
 							Remote:               false,
 						},
@@ -2791,7 +2791,7 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4157834382/",
-							Date:                 mustDate("2025-02-18"),
+							Date:                 mustDate("2025-03-01"), // mustDate("2025-02-18"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -2807,7 +2807,7 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4128235975/",
-							Date:                 mustDate("2025-02-08"), // mustDate("2025-01-17"),
+							Date:                 mustDate("2025-03-01"), // mustDate("2025-02-08"), // mustDate("2025-01-17"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -3099,8 +3099,8 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4146988578/",
-							Date:                 mustDate("2025-02-10"),
-							WithSalary:           true, // $175.000 - $205.000 per year
+							Date:                 mustDate("2025-03-01"), // mustDate("2025-02-10"),
+							WithSalary:           true,                   // $175.000 - $205.000 per year
 							Remote:               true,
 						},
 						{
@@ -5331,6 +5331,15 @@ func companiesPart8() []domain.CompanyProfile {
 							WithSalary:           true, // $115.000 - $145.000 per year
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Data Engineer (Scala/Spark)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4169604784/",
+							Date:                 mustDate("2025-03-01"),
+							WithSalary:           true, // $115.000 - $145.000 per year
+							Remote:               true,
+						},
 					},
 				},
 				domain.Elixir:  {},
@@ -6754,6 +6763,187 @@ func companiesPart8() []domain.CompanyProfile {
 			Industries: []domain.Industry{
 				domain.IndustryFinTech,
 			},
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Bread Financial",
+			Website: "https://www.breadfinancial.com/",
+			Careers: "https://www.breadfinancial.com/en/who-we-are/careers.html",
+			About:   "https://www.breadfinancial.com/en/who-we-are.html",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                84108929,
+				IDs:               nil,
+				Alias:             "bread-financial",
+				Name:              "Bread Financial",
+				Followers:         "118K",
+				Employees:         "5K-10K",
+				AssociatedMembers: "4,001",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "getbread", // redirect
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "bread-financial",
+				Employees: "1,190",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Golang Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4169628634/",
+							Date:                 mustDate("2025-03-01"),
+							WithSalary:           true, // $87.900 - $198.900 per year
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "FinTech financial services company providing simple, personalized payment, lending and saving solutions",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Prosus Group",
+			Website: "https://www.prosus.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                40677740,
+				IDs:               nil,
+				Alias:             "prosusgroup",
+				Name:              "Prosus Group",
+				Followers:         "88K",
+				Employees:         "10K+",
+				AssociatedMembers: "296",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "ProsusAI",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer (Go)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4146942038/",
+							Date:                 mustDate("2025-03-01"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Netherlands consumer internet group and technology investor company",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Appear",
+			Website: "https://www.appear.net/",
+			Careers: "https://careers.appear.net/jobs",
+			About:   "https://www.appear.net/company-overview/",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                99029,
+				IDs:               nil,
+				Alias:             "appear-net",
+				Name:              "Appear",
+				Followers:         "8K",
+				Employees:         "51-200",
+				AssociatedMembers: "228",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Rust Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4174424707/",
+							Date:                 mustDate("2025-03-03"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Software company, who specialize in high-capacity solutions for media processing and content delivery, catering to the ever-changing needs of the media, entertainment, and sports industries",
 		},
 
 		// Template
