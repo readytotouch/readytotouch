@@ -665,6 +665,7 @@ var (
 		"bread-financial":                     662, // Bread Financial
 		"prosusgroup":                         663, // Prosus Group
 		"appear-net":                          664, // Appear
+		"worldlineglobal":                     665, // Worldline
 
 	}
 )
