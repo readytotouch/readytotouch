@@ -95,6 +95,7 @@ var (
 		"https://www.linkedin.com/jobs/view/3926321626/":   304,  // american-express
 		"https://www.linkedin.com/jobs/view/4166983411/":   962,  // american-express
 		"https://www.linkedin.com/jobs/view/4168644032/":   1007, // american-express
+		"https://www.linkedin.com/jobs/view/4172355548/":   1061, // american-express
 		"https://www.linkedin.com/jobs/view/4170664476/":   1008, // american-express
 		"https://www.linkedin.com/jobs/view/3842471708/":   305,  // mastercard
 		"https://www.linkedin.com/jobs/view/4113621612/":   543,  // mastercard
@@ -310,6 +311,7 @@ var (
 		"https://www.linkedin.com/jobs/view/3917078597/":   285,  // cloudwalk-inc
 		"https://www.linkedin.com/jobs/view/4088770341/":   286,  // cloudwalk-inc
 		"https://www.linkedin.com/jobs/view/4121841670/":   601,  // cloudwalk-inc
+		"https://www.linkedin.com/jobs/view/4149153063/":   1062, // cloudwalk-inc
 		"https://www.linkedin.com/jobs/view/4129248449/":   650,  // cloudwalk-inc
 		"https://www.linkedin.com/jobs/view/3886949034/":   373,  // transition-technologies-psc
 		"https://www.linkedin.com/jobs/view/4167039797/":   965,  // transition-technologies-psc
@@ -576,6 +578,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4041216496/":   528,  // communitydotcom
 		"https://www.linkedin.com/jobs/view/4052948882/":   529,  // bigpayme
 		"https://www.linkedin.com/jobs/view/4041341979/":   45,   // rabbet
+		"https://www.linkedin.com/jobs/view/4172507517/":   1063, // rabbet
 		"https://www.linkedin.com/jobs/view/4050442624/":   530,  // agentero
 		"https://www.linkedin.com/jobs/view/4057281091/":   531,  // marbill-technologies
 		"https://www.linkedin.com/jobs/view/4053855198/":   532,  // bitaksi
@@ -664,6 +667,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4072597478/":   101,  // purestorage
 		"https://www.linkedin.com/jobs/view/4125984657/":   625,  // purestorage
 		"https://www.linkedin.com/jobs/view/4142328113/":   767,  // purestorage
+		"https://www.linkedin.com/jobs/view/4175114765/":   1064, // purestorage
 		"https://www.linkedin.com/jobs/view/4073753061/":   102,  // teya-global
 		"https://www.linkedin.com/jobs/view/4107304437/":   236,  // teya-global
 		"https://www.linkedin.com/jobs/view/4116504410/":   660,  // teya-global
@@ -903,6 +907,8 @@ var (
 		"https://www.linkedin.com/jobs/view/4115835388/":   559,  // edbpostgres
 		"https://www.linkedin.com/jobs/view/4153895434/":   914,  // edbpostgres
 		"https://www.linkedin.com/jobs/view/4153891886/":   915,  // edbpostgres
+		"https://www.linkedin.com/jobs/view/4172848163/":   1065, // edbpostgres
+		"https://www.linkedin.com/jobs/view/4172846371/":   1066, // edbpostgres
 		"https://www.linkedin.com/jobs/view/4103107908/":   248,  // altair-engineering
 		"https://www.linkedin.com/jobs/view/4116215019/":   560,  // altair-engineering
 		"https://www.linkedin.com/jobs/view/4103640949/":   249,  // reward-gateway
@@ -920,6 +926,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4109417330/":   297,  // hasaki-vn
 		"https://www.linkedin.com/jobs/view/4160627315/":   953,  // hasaki-vn
 		"https://www.linkedin.com/jobs/view/4164581568/":   996,  // hasaki-vn
+		"https://www.linkedin.com/jobs/view/4175030242/":   1067, // hasaki-vn
 		"https://www.linkedin.com/jobs/view/4110235695/":   298,  // nutanix
 		"https://www.linkedin.com/jobs/view/4105560497/":   299,  // umbraspace
 		"https://www.linkedin.com/jobs/view/4145412132/":   882,  // umbraspace
@@ -1064,6 +1071,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4169628634/":   1058, // bread-financial
 		"https://www.linkedin.com/jobs/view/4146942038/":   1059, // prosusgroup
 		"https://www.linkedin.com/jobs/view/4174424707/":   1060, // appear-net
+		"https://www.linkedin.com/jobs/view/4172652078/":   1068, // worldlineglobal
 
 	}
 )
