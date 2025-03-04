@@ -4199,6 +4199,15 @@ func companiesPart1() []domain.CompanyProfile {
 							WithSalary:           true, // $110.000 - $190.000 per year
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Engineer — C/C++, Java or Go",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4172355548/",
+							Date:                 mustDate("2025-03-03"),
+							WithSalary:           true, // Salary Range: $110,000.00 to $190,000.00 annually + bonus + benefits
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {},
@@ -5970,7 +5979,7 @@ func companiesPart1() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4149110859/",
-							Date:                 mustDate("2025-02-10"),
+							Date:                 mustDate("2025-03-04"), // mustDate("2025-02-10"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -14720,6 +14729,15 @@ func companiesPart1() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Senior AI-Driven Engineer — Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4149153063/",
+							Date:                 mustDate("2025-03-04"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust: {
@@ -17792,8 +17810,8 @@ func companiesPart1() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4075838872/",
-							Date:                 mustDate("2025-02-11"),
-							WithSalary:           true, // salary range for this role is $145,000 – $185,000
+							Date:                 mustDate("2025-03-04"), // mustDate("2025-02-11"),
+							WithSalary:           true,                   // salary range for this role is $145,000 – $185,000
 							Remote:               false,
 						},
 						{
@@ -19347,7 +19365,7 @@ func companiesPart1() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4108998246/",
-							Date:                 mustDate("2025-02-11"), // mustDate("2025-01-17"),
+							Date:                 mustDate("2025-03-04"), // mustDate("2025-02-11"), // mustDate("2025-01-17"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -20618,7 +20636,7 @@ func companiesPart1() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4148673191/",
-							Date:                 mustDate("2025-02-10"),
+							Date:                 mustDate("2025-03-04"), // mustDate("2025-02-10"),
 							WithSalary:           false,
 							Remote:               false,
 						},
