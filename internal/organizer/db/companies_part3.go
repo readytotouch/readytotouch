@@ -2835,7 +2835,7 @@ func companiesPart3() []domain.CompanyProfile {
 							ShortDescription:     "4+ years of experience in Java or Golang",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4075011909/",
-							Date:                 mustDate("2025-02-11"), // mustDate("2025-01-07"),
+							Date:                 mustDate("2025-03-04"), // mustDate("2025-02-11"), // mustDate("2025-01-07"),
 							WithSalary:           false,
 							Remote:               false,
 						},

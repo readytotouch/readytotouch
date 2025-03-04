@@ -915,7 +915,29 @@ func companiesPart5() []domain.CompanyProfile {
 						},
 					},
 				},
-				domain.Rust:    {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Staff Rust Engineer (AI)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4172848163/",
+							Date:                 mustDate("2025-03-04"),
+							WithSalary:           true, // 350k-500k BRL (DOE) + annual variable bonus
+							Remote:               true,
+						},
+						{
+							Title:                "Senior Staff Rust Engineer (AI)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4172846371/",
+							Date:                 mustDate("2025-03-04"),
+							WithSalary:           true, // 400k-600k BRL (DOE) + annual variable bonus
+							Remote:               true,
+						},
+					},
+				},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},

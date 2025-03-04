@@ -6946,6 +6946,69 @@ func companiesPart8() []domain.CompanyProfile {
 			ShortDescription: "Software company, who specialize in high-capacity solutions for media processing and content delivery, catering to the ever-changing needs of the media, entertainment, and sports industries",
 		},
 
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Worldline",
+			Website: "https://worldline.com/",
+			Careers: "https://jobs.worldline.com/",
+			About:   "https://worldline.com/en/home/top-navigation/about-worldline/who-we-are",
+			Blog:    "https://blog.worldline.tech/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2611817,
+				IDs:               []int{95402, 2611817},
+				Alias:             "worldlineglobal",
+				Name:              "Worldline",
+				Followers:         "349K",
+				Employees:         "10K+",
+				AssociatedMembers: "15,596",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "worldline",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "worldline",
+				Employees: "20,000",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Go Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4172652078/",
+							Date:                 mustDate("2025-03-04"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "French electronic payment services and banking",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
+		},
+
 		// Template
 		//{
 		//	ID:      0,  // system
