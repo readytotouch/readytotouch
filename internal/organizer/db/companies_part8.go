@@ -6802,7 +6802,7 @@ func companiesPart8() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 17,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Golang Engineer",
