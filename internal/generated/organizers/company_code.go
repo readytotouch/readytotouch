@@ -662,6 +662,9 @@ var (
 		"greenpacket":                         659, // Green Packet
 		"bloomreach":                          660, // Bloomreach
 		"fidelity-investments":                661, // Fidelity Investments
+		"bread-financial":                     662, // Bread Financial
+		"prosusgroup":                         663, // Prosus Group
+		"appear-net":                          664, // Appear
 
 	}
 )
