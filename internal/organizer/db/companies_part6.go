@@ -59,7 +59,7 @@ func companiesPart6() []domain.CompanyProfile {
 							Remote:               false,
 						},
 						{
-							Title:                "Mid / Senior Golang Developer",
+							Title:                "Middle / Senior Golang Developer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4175030242/",
