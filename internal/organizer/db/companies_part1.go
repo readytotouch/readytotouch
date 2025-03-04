@@ -4200,7 +4200,7 @@ func companiesPart1() []domain.CompanyProfile {
 							Remote:               false,
 						},
 						{
-							Title:                "Senior Engineer - C/C++, Java or Go",
+							Title:                "Senior Engineer — C/C++, Java or Go",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4172355548/",
