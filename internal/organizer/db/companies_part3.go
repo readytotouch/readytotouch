@@ -336,8 +336,8 @@ func companiesPart3() []domain.CompanyProfile {
 							ShortDescription:     "Kubernetes",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4129464627/",
-							Date:                 mustDate("2025-02-12"),
-							WithSalary:           true, // 16.000 - 24.000 PLN gross per month
+							Date:                 mustDate("2025-03-05"), // mustDate("2025-02-12"),
+							WithSalary:           true,                   // 16.000 - 24.000 PLN gross per month
 							Remote:               false,
 						},
 						{

@@ -936,6 +936,24 @@ func companiesPart5() []domain.CompanyProfile {
 							WithSalary:           true, // 400k-600k BRL (DOE) + annual variable bonus
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Staff Rust Engineer (AI)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4173688328/",
+							Date:                 mustDate("2025-03-05"),
+							WithSalary:           true, // 400k-600k BRL (DOE) + annual variable bonus
+							Remote:               true,
+						},
+						{
+							Title:                "Staff Rust Engineer (AI)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4173686573/",
+							Date:                 mustDate("2025-03-05"),
+							WithSalary:           true, // 350k-500k BRL (DOE) + annual variable bonus
+							Remote:               true,
+						},
 					},
 				},
 				domain.Zig:     {},
