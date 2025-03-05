@@ -14899,15 +14899,6 @@ func companiesPart1() []domain.CompanyProfile {
 							URL:              "https://www.linkedin.com/jobs/view/3917025739/",
 							Date:             mustDate("2024-05-24"),
 						},
-						{
-							Title:                "AI Detection Engineer", // Programming/scripting (Python, Go, Javascript, Bash, PowerShell)
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "https://www.linkedin.com/jobs/view/4172872324/",
-							Date:                 mustDate("2025-03-04"),
-							WithSalary:           false,
-							Remote:               false,
-						},
 					},
 				},
 				domain.Rust:    {},
