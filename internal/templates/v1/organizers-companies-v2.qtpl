@@ -272,21 +272,21 @@
                 </figcaption>
               </figure>
               <div class="card__top-links">
-                  <a href="{%s company.Website %}" class="card__top-link button-link">Website</a>
+                  <a href="{%s company.Website %}" target="_blank" class="card__top-link button-link">Website</a>
                   {% if company.Careers == "" %}
                       <span class="card__top-link button-link disabled">Careers</span>
                   {% else %}
-                      <a href="{%s company.Careers %}" class="card__top-link button-link">Careers</a>
+                      <a href="{%s company.Careers %}" target="_blank" class="card__top-link button-link">Careers</a>
                   {% endif %}
                   {% if company.About == "" %}
                       <span class="card__top-link button-link disabled">About</span>
                   {% else %}
-                      <a href="{%s company.About %}" class="card__top-link button-link">About</a>
+                      <a href="{%s company.About %}" target="_blank" class="card__top-link button-link">About</a>
                   {% endif %}
                   {% if company.Blog == "" %}
                       <span class="card__top-link button-link disabled">Dev Blog</span>
                   {% else %}
-                      <a href="{%s company.Blog %}" class="card__top-link button-link">Dev Blog</a>
+                      <a href="{%s company.Blog %}" target="_blank" class="card__top-link button-link">Dev Blog</a>
                   {% endif %}
               </div>
               <div class="card__info">
@@ -323,9 +323,9 @@
                                   height="32"
                                   src="/assets/images/pages/organizer/linkedin.svg"
                               />
-                              <a href="https://www.linkedin.com/company/{%s company.LinkedInProfile.Alias %}/" class="card__links-link">LinkedIn</a>
+                              <a href="https://www.linkedin.com/company/{%s company.LinkedInProfile.Alias %}/" target="_blank" class="card__links-link">LinkedIn</a>
                               {% if company.LinkedInProfile.Verified %}
-                              <a href="https://www.linkedin.com/company/{%s company.LinkedInProfile.Alias %}/about" class="card__links-link card__links-link--verify">
+                              <a href="https://www.linkedin.com/company/{%s company.LinkedInProfile.Alias %}/about" target="_blank" class="card__links-link card__links-link--verify">
                                   <img
                                       class="card__links-icon"
                                       alt="icon"
@@ -336,10 +336,10 @@
                           </div>
                       </li>
                       <li class="card__links-item">
-                          <a href="https://www.linkedin.com/company/{%s company.LinkedInProfile.Alias %}/" class="button-link card__links-link">Overview</a>
+                          <a href="https://www.linkedin.com/company/{%s company.LinkedInProfile.Alias %}/" target="_blank" class="button-link card__links-link">Overview</a>
                       </li>
                       <li class="card__links-item">
-                          <a href="{%s linkedinConnectionsURL([]Company{company}, nil) %}" class="button-link card__links-link">Connections</a>
+                          <a href="{%s linkedinConnectionsURL([]Company{company}, nil) %}" target="_blank" class="button-link card__links-link">Connections</a>
                           <img
                               class="card__links-icon"
                               alt="language icon"
@@ -349,13 +349,13 @@
                           />
                       </li>
                       <li class="card__links-item">
-                          <a href="{%s linkedinConnectionsURL([]Company{company}, ukrainianUniversities) %}" class="button-link card__links-link">Connections 🇺🇦</a>
+                          <a href="{%s linkedinConnectionsURL([]Company{company}, ukrainianUniversities) %}" target="_blank" class="button-link card__links-link">Connections 🇺🇦</a>
                       </li>
                       <li class="card__links-item">
-                          <a href="{%s linkedinConnectionsURL([]Company{company}, czechUniversities) %}" class="button-link card__links-link">Connections 🇨🇿</a>
+                          <a href="{%s linkedinConnectionsURL([]Company{company}, czechUniversities) %}" target="_blank" class="button-link card__links-link">Connections 🇨🇿</a>
                       </li>
                       <li class="card__links-item">
-                          <a href="{%s linkedinJobsURL([]Company{company}, string(organizerFeature.Organizer.LanguageTitleKeywords)) %}" class="button-link card__links-link">Jobs</a>
+                          <a href="{%s linkedinJobsURL([]Company{company}, string(organizerFeature.Organizer.LanguageTitleKeywords)) %}" target="_blank" class="button-link card__links-link">Jobs</a>
                       </li>
                   </ul>
                   <ul class="card__links-group">
@@ -374,7 +374,7 @@
                       </li>
                       <li class="card__links-item card__links-item--disabled">
                           <span class="button-link card__links-link">Overview</span>
-                          <a href="{%s googleSearchGitHub(company.Name) %}" class="card__links-link card__links-link--google">
+                          <a href="{%s googleSearchGitHub(company.Name) %}" target="_blank" class="card__links-link card__links-link--google">
                               <img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
                           </a>
                       </li>
@@ -400,14 +400,14 @@
                                   />
                               </span>
                               {% endif %}
-                              <a href="https://github.com/{%s company.GitHubProfile.Login %}" class="card__links-link">GitHub</a>
+                              <a href="https://github.com/{%s company.GitHubProfile.Login %}" target="_blank" class="card__links-link">GitHub</a>
                           </div>
                       </li>
                       <li class="card__links-item">
-                          <a href="https://github.com/{%s company.GitHubProfile.Login %}" class="button-link card__links-link">Overview</a>
+                          <a href="https://github.com/{%s company.GitHubProfile.Login %}" target="_blank" class="button-link card__links-link">Overview</a>
                       </li>
                       <li class="card__links-item">
-                          <a href="https://github.com/orgs/{%s company.GitHubProfile.Login %}/repositories?q=lang:{%s organizerFeature.Organizer.GitHubAlias %}" class="button-link card__links-link">Repositories ({%d fetchGitHubRepositoriesCount(company, organizerFeature.Organizer.Language) %})</a>
+                          <a href="https://github.com/orgs/{%s company.GitHubProfile.Login %}/repositories?q=lang:{%s organizerFeature.Organizer.GitHubAlias %}" target="_blank" class="button-link card__links-link">Repositories ({%d fetchGitHubRepositoriesCount(company, organizerFeature.Organizer.Language) %})</a>
                       </li>
                       {% endif %}
                   </ul>
@@ -427,7 +427,7 @@
                       </li>
                       <li class="card__links-item card__links-item--disabled">
                           <span class="button-link card__links-link">Overview</span>
-                          <a href="{%s googleSearchGlassdoor(company.Name) %}" class="card__links-link card__links-link--google">
+                          <a href="{%s googleSearchGlassdoor(company.Name) %}" target="_blank" class="card__links-link card__links-link--google">
                               <img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
                           </a>
                       </li>
@@ -445,7 +445,7 @@
                                   height="32"
                                   src="/assets/images/pages/organizer/glassdoor.svg"
                               />
-                              <a href="{%s company.GlassdoorProfile.OverviewURL %}" class="card__links-link">Glassdoor</a>
+                              <a href="{%s company.GlassdoorProfile.OverviewURL %}" target="_blank" class="card__links-link">Glassdoor</a>
                               {% if company.GlassdoorProfile.Verified %}
                               <span class="card__links-link card__links-link--verify">
                                   <img
@@ -458,10 +458,10 @@
                           </div>
                       </li>
                       <li class="card__links-item">
-                          <a href="{%s company.GlassdoorProfile.OverviewURL %}" class="button-link card__links-link">Overview</a>
+                          <a href="{%s company.GlassdoorProfile.OverviewURL %}" target="_blank" class="button-link card__links-link">Overview</a>
                       </li>
                       <li class="card__links-item">
-                          <a href="{%s company.GlassdoorProfile.ReviewsURL %}" class="button-link card__links-link">Reviews</a>
+                          <a href="{%s company.GlassdoorProfile.ReviewsURL %}" target="_blank" class="button-link card__links-link">Reviews</a>
                           <span class="card__links-link-star">{%s formatGlassdoorReviewsRate(company.GlassdoorProfile.ReviewsRate) %} ★</span>
                       </li>
                       {% endif %}

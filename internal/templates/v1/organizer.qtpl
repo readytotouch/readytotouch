@@ -80,22 +80,22 @@
                             <tr class="table__item">
                                 <td>
                                     <div class="table__item name">
-                                        <a class="table__item-link" href="{%s company.Website %}">{%s company.Name %}</a>
+                                        <a class="table__item-link" href="{%s company.Website %}" target="_blank">{%s company.Name %}</a>
                                     </div>
                                 </td>
                                 <td>
                                     <div class="table__item">
                                         <div class="table__link-group">
                                             <img src="/assets/images/pages/common/square.svg">
-                                            <a class="table__item-link" href="https://www.linkedin.com/company/{%s company.LinkedInProfile.Alias %}/" title="{%s company.LinkedInProfile.Name %}">Overview</a>
+                                            <a class="table__item-link" href="https://www.linkedin.com/company/{%s company.LinkedInProfile.Alias %}/" target="_blank" title="{%s company.LinkedInProfile.Name %}">Overview</a>
                                         </div>
                                         <div class="table__link-group">
                                             <img src="/assets/images/pages/common/response.svg">
-                                            <a class="table__item-link" href="{%s linkedinConnectionsURL([]Company{company}, universities) %}" title="{%s company.LinkedInProfile.Name %}">Connections</a>
+                                            <a class="table__item-link" href="{%s linkedinConnectionsURL([]Company{company}, universities) %}" target="_blank" title="{%s company.LinkedInProfile.Name %}">Connections</a>
                                         </div>
                                         <div class="table__link-group">
                                             <img src="/assets/images/pages/vacancy/briefcase.svg">
-                                            <a class="table__item-link" href="{%s linkedinJobsURL([]Company{company}, golangKeywordsTitles) %}" title="{%s company.LinkedInProfile.Name %}">Jobs</a>
+                                            <a class="table__item-link" href="{%s linkedinJobsURL([]Company{company}, golangKeywordsTitles) %}" target="_blank" title="{%s company.LinkedInProfile.Name %}">Jobs</a>
                                         </div>
                                     </div>
                                 </td>
@@ -104,11 +104,11 @@
                                         {%- if company.GitHubProfile.Login != "" -%}
                                         <div class="table__link-group">
                                             <img src="/assets/images/pages/common/square.svg">
-                                            <a class="table__item-link" href="https://github.com/{%s company.GitHubProfile.Login %}">Overview</a>
+                                            <a class="table__item-link" href="https://github.com/{%s company.GitHubProfile.Login %}" target="_blank">Overview</a>
                                         </div>
                                         <div class="table__link-group">
                                             <img src="/assets/images/pages/common/database.svg">
-                                            <a class="table__item-link" href="https://github.com/orgs/{%s company.GitHubProfile.Login %}/repositories?q=lang:go">Repositories</a>&nbsp;({%d fetchGitHubRepositoriesCount(company, Go) %})
+                                            <a class="table__item-link" href="https://github.com/orgs/{%s company.GitHubProfile.Login %}/repositories?q=lang:go" target="_blank">Repositories</a>&nbsp;({%d fetchGitHubRepositoriesCount(company, Go) %})
                                         </div>
                                         {%- endif -%}
                                     </div>
@@ -117,11 +117,11 @@
                                     <div class="table__item">
                                         <div class="table__link-group">
                                             <img src="/assets/images/pages/common/square.svg">
-                                            <a class="table__item-link" href="{%s company.GlassdoorProfile.OverviewURL %}">Overview</a>
+                                            <a class="table__item-link" href="{%s company.GlassdoorProfile.OverviewURL %}" target="_blank">Overview</a>
                                         </div>
                                         <div class="table__link-group">
                                             <img src="/assets/images/pages/common/message.svg">
-                                            <a class="table__item-link" href="{%s company.GlassdoorProfile.ReviewsURL %}">Reviews</a>
+                                            <a class="table__item-link" href="{%s company.GlassdoorProfile.ReviewsURL %}" target="_blank">Reviews</a>
                                         </div>
                                     </div>
                                 </td>
@@ -138,7 +138,7 @@
                                         {%- if company.OttaProfileSlug != "" -%}
                                             <div class="table__link-group">
                                                 <img src="/assets/images/pages/common/square.svg">
-                                                <a class="table__item-link" href="https://app.otta.com/companies/{%s company.OttaProfileSlug %}">Overview</a>
+                                                <a class="table__item-link" href="https://app.otta.com/companies/{%s company.OttaProfileSlug %}" target="_blank">Overview</a>
                                             </div>
                                         {%- endif -%}
                                     </div>
@@ -146,7 +146,7 @@
                                 <td>
                                     <div class="table__item">
                                         {%- for i, vacancy := range company.Languages[Go].Vacancies -%}
-                                            <a class="table__item-link vacancies" href="{%s vacancy.URL %}">Vacancy #{%d i %}</a>
+                                            <a class="table__item-link vacancies" href="{%s vacancy.URL %}" target="_blank">Vacancy #{%d i %}</a>
                                         {%- endfor -%}
                                     </div>
                                 </td>
@@ -158,12 +158,12 @@
                 <div class="organizer__linkedin">
                     <h2 class="headline headline--lvl1 organizer__block-title">LinkedIn</h2>
                     <div class="organizer__links">
-                        <a class="organizer__link" href="{%s linkedinConnectionsURL(companies, nil) %}">LinkedIn Connections [Companies]</a>
+                        <a class="organizer__link" href="{%s linkedinConnectionsURL(companies, nil) %}" target="_blank">LinkedIn Connections [Companies]</a>
                         {% if len(universities) > 0 %}
-                            <a class="organizer__link" href="{%s linkedinConnectionsURL(companies, universities)  %}">LinkedIn Connections [Companies] [Universities]</a>
+                            <a class="organizer__link" href="{%s linkedinConnectionsURL(companies, universities) %}" target="_blank">LinkedIn Connections [Companies] [Universities]</a>
                         {% endif %}
-                        <a class="organizer__link" href="{%s linkedinJobsURL(companies, golangKeywordsTitles) %}">LinkedIn Jobs [Companies] [Worldwide]</a>
-                        <a class="organizer__link" href="{%s linkedinJobsURL(nil, golangKeywordsTitles) %}">LinkedIn Jobs [Worldwide]</a>
+                        <a class="organizer__link" href="{%s linkedinJobsURL(companies, golangKeywordsTitles) %}" target="_blank">LinkedIn Jobs [Companies] [Worldwide]</a>
+                        <a class="organizer__link" href="{%s linkedinJobsURL(nil, golangKeywordsTitles) %}" target="_blank">LinkedIn Jobs [Worldwide]</a>
                     </div>
                 </div>
             </div>

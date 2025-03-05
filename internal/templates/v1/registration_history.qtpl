@@ -19,7 +19,7 @@
                          class="history__user-photo">
                     <span class="history__user-name">{%s SocialProviderUserName(profile) %}</span>
                 </div>
-                <a href="https://github.com/{%s profile.Username %}" class="history__user-link history__user-item">github.com/{%s profile.Username %}</a>
+                <a href="https://github.com/{%s profile.Username %}" target="_blank" class="history__user-link history__user-item">github.com/{%s profile.Username %}</a>
                 <span class="history__user-date history__user-item">{%s profile.CreatedAt.Format("January _2, 2006") %}</span>
             </li>
             {% case gitlab %}
@@ -36,7 +36,7 @@
                     </svg>
                     <span class="history__user-name">{%s SocialProviderUserName(profile) %}</span>
                 </div>
-                <a href="https://gitlab.com/{%s profile.Username %}" class="history__user-link history__user-item">gitlab.com/{%s profile.Username %}</a>
+                <a href="https://gitlab.com/{%s profile.Username %}" target="_blank" class="history__user-link history__user-item">gitlab.com/{%s profile.Username %}</a>
                 <span class="history__user-date history__user-item">{%s profile.CreatedAt.Format("January _2, 2006") %}</span>
             </li>
             {% case bitbucket %}
@@ -53,7 +53,7 @@
                     </svg>
                     <span class="history__user-name">{%s SocialProviderUserName(profile) %}</span>
                 </div>
-                <a href="https://bitbucket.org/{%s profile.Username %}" class="history__user-link history__user-item">bitbucket.org/{%s profile.Username %}</a>
+                <a href="https://bitbucket.org/{%s profile.Username %}" target="_blank" class="history__user-link history__user-item">bitbucket.org/{%s profile.Username %}</a>
                 <span class="history__user-date history__user-item">{%s profile.CreatedAt.Format("January _2, 2006") %}</span>
             </li>
             {% endswitch %}

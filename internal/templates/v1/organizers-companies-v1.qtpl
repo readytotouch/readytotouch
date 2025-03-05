@@ -291,10 +291,10 @@
                       height="20"
                       src="/assets/images/pages/organizer/linkedin.svg"
                     />
-                    <a href="https://www.linkedin.com/company/{%s company.LinkedInProfile.Alias %}/" class="button-link card__links-link">LinkedIn</a>
+                    <a href="https://www.linkedin.com/company/{%s company.LinkedInProfile.Alias %}/" target="_blank" class="button-link card__links-link">LinkedIn</a>
                   </li>
                   <li class="card__links-item">
-                    <a href="{%s linkedinConnectionsURL([]Company{company}, ukrainianUniversities) %}" class="button-link card__links-link">Connections             <img
+                    <a href="{%s linkedinConnectionsURL([]Company{company}, ukrainianUniversities) %}" target="_blank" class="button-link card__links-link">Connections             <img
                             class="checkbox__content-image"
                             alt="Flag of Ukraine with waves"
                             width="16"
@@ -303,7 +303,7 @@
                     /></a>
                   </li>
                   <li class="card__links-item">
-                    <a href="{%s linkedinConnectionsURL([]Company{company}, czechUniversities) %}" class="button-link card__links-link">Connections             <img
+                    <a href="{%s linkedinConnectionsURL([]Company{company}, czechUniversities) %}" target="_blank" class="button-link card__links-link">Connections             <img
                             class="checkbox__content-image"
                             alt="Flag of Czechia"
                             width="16"
@@ -312,10 +312,10 @@
                     /></a>
                   </li>
                   <li class="card__links-item">
-                    <a href="{%s linkedinConnectionsURL([]Company{company}, nil) %}" class="button-link card__links-link">Connections</a>
+                    <a href="{%s linkedinConnectionsURL([]Company{company}, nil) %}" target="_blank" class="button-link card__links-link">Connections</a>
                   </li>
                   <li class="card__links-item">
-                    <a href="{%s linkedinJobsURL([]Company{company}, string(organizerFeature.Organizer.LanguageTitleKeywords)) %}" class="button-link card__links-link">Jobs</a>
+                    <a href="{%s linkedinJobsURL([]Company{company}, string(organizerFeature.Organizer.LanguageTitleKeywords)) %}" target="_blank" class="button-link card__links-link">Jobs</a>
                   </li>
                 </ul>
                 {%- if company.GitHubProfile.Login == "" -%}
@@ -328,7 +328,7 @@
                         height="20"
                         src="/assets/images/pages/organizer/github.svg"
                       />
-                      <a href="{%s googleSearchGitHub(company.Name) %}" class="card__links-link card__links-link--google">
+                      <a href="{%s googleSearchGitHub(company.Name) %}" target="_blank" class="card__links-link card__links-link--google">
                         <img
                           class="card__links-icon card__links-icon--google"
                           alt="google icon"
@@ -350,10 +350,10 @@
                         height="20"
                         src="/assets/images/pages/organizer/github.svg"
                       />
-                      <a href="https://github.com/{%s company.GitHubProfile.Login %}" class="button-link card__links-link">GitHub</a>
+                      <a href="https://github.com/{%s company.GitHubProfile.Login %}" target="_blank" class="button-link card__links-link">GitHub</a>
                     </li>
                     <li class="card__links-item">
-                      <a href="https://github.com/orgs/{%s company.GitHubProfile.Login %}/repositories?q=lang:{%s organizerFeature.Organizer.GitHubAlias %}" class="button-link card__links-link" title="{%d fetchGitHubRepositoriesCount(company, organizerFeature.Organizer.Language) %} repositories">Repositories</a>
+                      <a href="https://github.com/orgs/{%s company.GitHubProfile.Login %}/repositories?q=lang:{%s organizerFeature.Organizer.GitHubAlias %}" target="_blank" class="button-link card__links-link" title="{%d fetchGitHubRepositoriesCount(company, organizerFeature.Organizer.Language) %} repositories">Repositories</a>
                     </li>
                   </ul>
                 {%- endif -%}
@@ -367,7 +367,7 @@
                         height="20"
                         src="/assets/images/pages/organizer/glassdoor.svg"
                       />
-                      <a href="{%s googleSearchGlassdoor(company.Name) %}" class="card__links-link card__links-link--google">
+                      <a href="{%s googleSearchGlassdoor(company.Name) %}" target="_blank" class="card__links-link card__links-link--google">
                         <img
                           class="card__links-icon card__links-icon--google"
                           alt="google icon"
@@ -389,10 +389,10 @@
                         height="20"
                         src="/assets/images/pages/organizer/glassdoor.svg"
                       />
-                      <a href="{%s company.GlassdoorProfile.OverviewURL %}" class="button-link card__links-link">Glassdoor</a>
+                      <a href="{%s company.GlassdoorProfile.OverviewURL %}" target="_blank" class="button-link card__links-link">Glassdoor</a>
                     </li>
                     <li class="card__links-item">
-                      <a href="{%s company.GlassdoorProfile.ReviewsURL %}" class="button-link card__links-link">Reviews</a>
+                      <a href="{%s company.GlassdoorProfile.ReviewsURL %}" target="_blank" class="button-link card__links-link">Reviews</a>
                     </li>
                   </ul>
                 {%- endif -%}
@@ -405,7 +405,7 @@
                       height="20"
                       src="/assets/images/pages/organizer/similarweb.svg"
                     />
-                    <a href="{%s similarwebURL(company.Website) %}" class="button-link card__links-link">SimilarWeb</a>
+                    <a href="{%s similarwebURL(company.Website) %}" target="_blank" class="button-link card__links-link">SimilarWeb</a>
                   </li>
                   <li class="card__links-item">
                     <img
@@ -415,7 +415,7 @@
                       height="20"
                       src="/assets/images/pages/organizer/whois.svg"
                     />
-                    <a href="{%s whoisURL(company.Website) %}" class="button-link card__links-link">Whois</a>
+                    <a href="{%s whoisURL(company.Website) %}" target="_blank" class="button-link card__links-link">Whois</a>
                   </li>
 
                   {% comment %}
@@ -429,7 +429,7 @@
                       height="20"
                       src="/assets/images/pages/organizer/xing.svg"
                     />
-                    <a href="{%s googleSearchXing(company.Name) %}" class="card__links-link card__links-link--google">
+                    <a href="{%s googleSearchXing(company.Name) %}" target="_blank" class="card__links-link card__links-link--google">
                       <img
                         class="card__links-icon card__links-icon--google"
                         alt="google icon"
@@ -450,7 +450,7 @@
                         height="20"
                         src="/assets/images/pages/organizer/otta.svg"
                       />
-                      <a href="{%s googleSearchOtta(company.Name) %}" class="card__links-link card__links-link--google">
+                      <a href="{%s googleSearchOtta(company.Name) %}" target="_blank" class="card__links-link card__links-link--google">
                         <img
                           class="card__links-icon card__links-icon--google"
                           alt="google icon"
@@ -470,7 +470,7 @@
                         height="20"
                         src="/assets/images/pages/organizer/otta.svg"
                       />
-                      <a href="https://app.otta.com/companies/{%s company.OttaProfileSlug %}" class="button-link card__links-link">Otta</a>
+                      <a href="https://app.otta.com/companies/{%s company.OttaProfileSlug %}" target="_blank" class="button-link card__links-link">Otta</a>
                     </li>
                   {%- endif -%}
                 </ul>
