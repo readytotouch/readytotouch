@@ -464,6 +464,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4147156645/":   789,  // wargaming-net
 		"https://www.linkedin.com/jobs/view/4169581919/":   1015, // wargaming-net
 		"https://www.linkedin.com/jobs/view/4171055995/":   1049, // wargaming-net
+		"https://www.linkedin.com/jobs/view/4174859282/":   1069, // wargaming-net
 		"https://www.linkedin.com/jobs/view/4077490300/":   33,   // wargaming-net
 		"https://www.linkedin.com/jobs/view/4044948110/":   231,  // napier
 		"https://www.linkedin.com/jobs/view/4106841758/":   232,  // napier
@@ -591,6 +592,8 @@ var (
 		"https://www.linkedin.com/jobs/view/4060816724/":   49,   // hiive
 		"https://www.linkedin.com/jobs/view/4119890288/":   988,  // hiive
 		"https://www.linkedin.com/jobs/view/4058715430/":   535,  // expressvpn
+		"https://www.linkedin.com/jobs/view/4173927131/":   1070, // expressvpn
+		"https://www.linkedin.com/jobs/view/4173921804/":   1071, // expressvpn
 		"https://www.linkedin.com/jobs/view/3930229478/":   50,   // second-spectrum
 		"https://www.linkedin.com/jobs/view/3982972845/":   51,   // worldpay
 		"https://www.linkedin.com/jobs/view/4130478145/":   695,  // worldpay
@@ -844,6 +847,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4084785751/":   179,  // eset
 		"https://www.linkedin.com/jobs/view/4122199318/":   609,  // eset
 		"https://www.linkedin.com/jobs/view/4150255730/":   840,  // eset
+		"https://www.linkedin.com/jobs/view/4174877579/":   1072, // eset
 		"https://www.linkedin.com/jobs/view/4085449585/":   180,  // praxent
 		"https://www.linkedin.com/jobs/view/4079391812/":   181,  // stacklok
 		"https://www.linkedin.com/jobs/view/4102186636/":   182,  // superindo
@@ -909,6 +913,8 @@ var (
 		"https://www.linkedin.com/jobs/view/4153891886/":   915,  // edbpostgres
 		"https://www.linkedin.com/jobs/view/4172848163/":   1065, // edbpostgres
 		"https://www.linkedin.com/jobs/view/4172846371/":   1066, // edbpostgres
+		"https://www.linkedin.com/jobs/view/4173688328/":   1073, // edbpostgres
+		"https://www.linkedin.com/jobs/view/4173686573/":   1074, // edbpostgres
 		"https://www.linkedin.com/jobs/view/4103107908/":   248,  // altair-engineering
 		"https://www.linkedin.com/jobs/view/4116215019/":   560,  // altair-engineering
 		"https://www.linkedin.com/jobs/view/4103640949/":   249,  // reward-gateway
@@ -1020,6 +1026,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4144099112/":   778,  // qustodio
 		"https://www.linkedin.com/jobs/view/4127825676/":   779,  // pexip
 		"https://www.linkedin.com/jobs/view/4139709944/":   780,  // vinted
+		"https://www.linkedin.com/jobs/view/4173982221/":   1075, // vinted
 		"https://www.linkedin.com/jobs/view/4139297081/":   781,  // bigcommerce
 		"https://www.linkedin.com/jobs/view/4148659905/":   797,  // bigcommerce
 		"https://www.linkedin.com/jobs/view/4167157690/":   999,  // bigcommerce
@@ -1030,6 +1037,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4148714692/":   814,  // legalzoom
 		"https://www.linkedin.com/jobs/view/4148124360/":   815,  // ncratleos
 		"https://www.linkedin.com/jobs/view/4148121704/":   849,  // ncratleos
+		"https://www.linkedin.com/jobs/view/4148118905/":   1076, // ncratleos
 		"https://www.linkedin.com/jobs/view/4150365284/":   816,  // knowbe4
 		"https://www.linkedin.com/jobs/view/4149751377/":   850,  // seldon
 		"https://www.linkedin.com/jobs/view/4152181957/":   851,  // rockstar-games

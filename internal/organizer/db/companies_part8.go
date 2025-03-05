@@ -1285,7 +1285,7 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4125175696/",
-							Date:                 mustDate("2025-03-01"), // mustDate("2025-02-28"), // mustDate("2025-02-26"), // mustDate("2025-02-21"), // mustDate("2025-02-20"), // mustDate("2025-02-15"), // mustDate("2025-01-16"),
+							Date:                 mustDate("2025-03-05"), // mustDate("2025-03-01"), // mustDate("2025-02-28"), // mustDate("2025-02-26"), // mustDate("2025-02-21"), // mustDate("2025-02-20"), // mustDate("2025-02-15"), // mustDate("2025-01-16"),
 							WithSalary:           true,                   // $60.00 - $77.00/ hr
 							Remote:               false,
 						},
@@ -2587,8 +2587,8 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4147607601/",
-							Date:                 mustDate("2025-02-11"),
-							WithSalary:           true, // salary range CAD $100,000 - CAD $150,000
+							Date:                 mustDate("2025-03-05"), // mustDate("2025-02-11"),
+							WithSalary:           true,                   // salary range CAD $100,000 - CAD $150,000
 							Remote:               true,
 						},
 					},
@@ -2791,7 +2791,7 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4157834382/",
-							Date:                 mustDate("2025-03-01"), // mustDate("2025-02-18"),
+							Date:                 mustDate("2025-03-05"), // mustDate("2025-03-01"), // mustDate("2025-02-18"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -3452,6 +3452,15 @@ func companiesPart8() []domain.CompanyProfile {
 							WithSalary:           true, // The salary range for this position is €3,975 — €6,725 per month
 							Remote:               false,
 						},
+						{
+							Title:                "Software Engineer — Go",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4173982221/",
+							Date:                 mustDate("2025-03-05"),
+							WithSalary:           true, // €3,558 - €4,808 gross per month
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -3610,7 +3619,7 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4141112561/",
-							Date:                 mustDate("2025-02-25"), // mustDate("2025-02-03"),
+							Date:                 mustDate("2025-03-05"), // mustDate("2025-02-25"), // mustDate("2025-02-03"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -4023,6 +4032,15 @@ func companiesPart8() []domain.CompanyProfile {
 							WithSalary:           true, // Annual Incentive Base Range 36,800 - 46,000 - 55,200 GBP
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Software Engineer (C++ / Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4148118905/",
+							Date:                 mustDate("2025-03-05"),
+							WithSalary:           true, // Annual Incentive Base Range 48,000.00 - 60,000.00 - 72,000.00 GBP Annual
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig:     {},
@@ -4091,8 +4109,8 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4150365284/",
-							Date:                 mustDate("2025-02-11"),
-							WithSalary:           true, // for this position ranges from $130,000-$150,000
+							Date:                 mustDate("2025-03-05"), // mustDate("2025-02-11"),
+							WithSalary:           true,                   // for this position ranges from $130,000-$150,000
 							Remote:               true,
 						},
 					},
@@ -6567,7 +6585,7 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "Imunify360 team",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4170791654/",
-							Date:                 mustDate("2025-02-28"),
+							Date:                 mustDate("2025-03-05"), // mustDate("2025-02-28"),
 							WithSalary:           false,
 							Remote:               true,
 						},
