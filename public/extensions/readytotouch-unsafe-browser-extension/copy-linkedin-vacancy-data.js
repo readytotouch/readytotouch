@@ -6,7 +6,8 @@ document.body.addEventListener("keydown", (event) => {
     if (event.ctrlKey && event.shiftKey && (event.key === "Y" || event.key === "Н")) {
 
         const title = document.querySelector("h1").innerText.trim()
-            .replace(" - ", " – ") // Replace hyphen with dash
+            .replaceAll(" - ", " – ") // Replace hyphen with dash
+            .replace("(m/f/x)", " ").trim()
             .replace("GoLang", "Golang")
             .replace("Goland", "Golang")
             .replace("Back End", "Back-End")
@@ -18,7 +19,7 @@ document.body.addEventListener("keydown", (event) => {
 						    SwitchingOpportunity: "",
 						    URL:                  "${window.location.origin + window.location.pathname}",
 						    Date:                 mustDate("${date()}"),
-						    WithSalary:           false,
+						    WithSalary:           ${salary() ? "true" : "false"},
 						    Remote:               ${remote() ? "true" : "false"},
 						},`
 
@@ -39,26 +40,66 @@ function remote() {
     return false;
 }
 
+function salary() {
+    const $elements = document.querySelectorAll(".job-details-preferences-and-skills span");
+    for (const $element of $elements) {
+        if ($element.textContent.trim().toLowerCase().includes("$")) {
+            return true;
+        }
+    }
+
+    return false;
+}
+
 function date() {
     const $elements = document.querySelectorAll('.job-details-jobs-unified-top-card__primary-description-container span');
 
     for (const $element of $elements) {
-        const text = $element.textContent.trim().toLowerCase();
+        const publishedAt = $element.textContent.trim().toLowerCase();
 
-        if (text.includes("hour ago") || text.includes("hours ago")) {
+        if (publishedAt.includes("hour ago") || publishedAt.includes("hours ago")) {
             return new Intl.DateTimeFormat("en-CA").format(new Date());
         }
 
-        if (text.includes("1 day ago")) {
+        if (publishedAt.includes("1 day ago")) {
             const yesterday = new Date();
             yesterday.setDate(yesterday.getDate() - 1);
 
             return new Intl.DateTimeFormat("en-CA").format(yesterday);
         }
 
-        if (text.includes("2 days ago")) {
+        const matchDays = publishedAt.match(/^(\d) days ago$/);
+        if (matchDays) {
             const past = new Date();
-            past.setDate(past.getDate() - 2);
+            past.setDate(past.getDate() - parseInt(matchDays[1], 10));
+            return new Intl.DateTimeFormat("en-CA").format(past);
+        }
+
+        if (publishedAt.includes("1 week ago")) {
+            const past = new Date();
+            past.setDate(past.getDate() - 7);
+
+            return new Intl.DateTimeFormat("en-CA").format(past);
+        }
+
+        const matchWeeks = publishedAt.match(/^(\d) weeks ago$/);
+        if (matchWeeks) {
+            const past = new Date();
+            past.setDate(past.getDate() - 7 * parseInt(matchWeeks[1], 10));
+            return new Intl.DateTimeFormat("en-CA").format(past);
+        }
+
+        if (publishedAt.includes("1 month ago")) {
+            const past = new Date();
+            past.setMonth(past.getMonth() - 1);
+
+            return new Intl.DateTimeFormat("en-CA").format(past);
+        }
+
+        const matchMonths = publishedAt.match(/^(\d) months ago$/);
+        if (matchMonths) {
+            const past = new Date();
+            past.setMonth(past.getMonth() - parseInt(matchMonths[1], 10));
 
             return new Intl.DateTimeFormat("en-CA").format(past);
         }

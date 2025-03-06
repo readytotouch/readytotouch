@@ -677,6 +677,14 @@ var (
 		"lotusretails":                        674, // Lotus&#39;s
 		"aescape":                             675, // Aescape
 		"smc":                                 676, // SMC
+		"depixen-sw":                          677, // Depixen
+		"climatiq":                            678, // Climatiq
+		"commercetools":                       679, // commercetools
+		"net-health-systems-inc-":             680, // Net Health
+		"dscout":                              681, // Dscout
+		"viasat":                              682, // Viasat
+		"pitchhq":                             683, // Pitch
+		"doccla":                              684, // Doccla
 
 	}
 )

@@ -129,6 +129,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4152273092/":   820,  // nordsecurity
 		"https://www.linkedin.com/jobs/view/4158335201/":   906,  // nordsecurity
 		"https://www.linkedin.com/jobs/view/4108568196/":   393,  // protonprivacy
+		"https://www.linkedin.com/jobs/view/4108564832/":   1093, // protonprivacy
 		"https://www.linkedin.com/jobs/view/3907970778/":   211,  // fortinet
 		"https://www.linkedin.com/jobs/view/4104785473/":   212,  // fortinet
 		"https://www.linkedin.com/jobs/view/4122351024/":   572,  // fortinet
@@ -139,6 +140,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4103717982/":   213,  // siemens
 		"https://www.linkedin.com/jobs/view/4044911988/":   621,  // siemens
 		"https://www.linkedin.com/jobs/view/4129459999/":   681,  // siemens
+		"https://www.linkedin.com/jobs/view/4129461691/":   1094, // siemens
 		"https://www.linkedin.com/jobs/view/4018413094/":   214,  // siemens
 		"https://www.linkedin.com/jobs/view/4038208151/":   313,  // ericsson
 		"https://www.linkedin.com/jobs/view/4098448765/":   546,  // ericsson
@@ -166,6 +168,7 @@ var (
 		"https://www.linkedin.com/jobs/view/3757109938/":   281,  // autodoc
 		"https://www.linkedin.com/jobs/view/4131277355/":   682,  // autodoc
 		"https://www.linkedin.com/jobs/view/4144895838/":   755,  // autodoc
+		"https://www.linkedin.com/jobs/view/4176957042/":   1095, // autodoc
 		"https://www.linkedin.com/jobs/view/4165424189/":   983,  // gymondo-gmbh
 		"https://www.linkedin.com/jobs/view/4023882932/":   13,   // delivery-hero-se
 		"https://www.linkedin.com/jobs/view/4148753946/":   802,  // delivery-hero-se
@@ -774,6 +777,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4133982836/":   743,  // paltafamily
 		"https://www.linkedin.com/jobs/view/4090264579/":   145,  // bol-com
 		"https://www.linkedin.com/jobs/view/4080206651/":   206,  // drw
+		"https://www.linkedin.com/jobs/view/4144714726/":   1096, // drw
 		"https://www.linkedin.com/jobs/view/4162701643/":   990,  // nice-systems
 		"https://www.linkedin.com/jobs/view/4099130926/":   207,  // nice-systems
 		"https://www.linkedin.com/jobs/view/4099138011/":   626,  // nice-systems
@@ -1096,6 +1100,14 @@ var (
 		"https://www.linkedin.com/jobs/view/4117492485/":   1090, // lotusretails
 		"https://www.linkedin.com/jobs/view/4172541606/":   1091, // aescape
 		"https://www.linkedin.com/jobs/view/4172507663/":   1092, // smc
+		"https://www.linkedin.com/jobs/view/4174831245/":   1097, // depixen-sw
+		"https://www.linkedin.com/jobs/view/4175571523/":   1098, // climatiq
+		"https://www.linkedin.com/jobs/view/4175367766/":   1099, // commercetools
+		"https://www.linkedin.com/jobs/view/4148903233/":   1100, // net-health-systems-inc-
+		"https://www.linkedin.com/jobs/view/4149944830/":   1101, // dscout
+		"https://www.linkedin.com/jobs/view/4166326665/":   1102, // viasat
+		"https://www.linkedin.com/jobs/view/4128083196/":   1103, // pitchhq
+		"https://www.linkedin.com/jobs/view/4068248164/":   1104, // doccla
 
 	}
 )
