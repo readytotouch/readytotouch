@@ -987,19 +987,20 @@ func companiesPart9() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Dscout",
+			Website: "https://dscout.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                2438748,
+				IDs:               nil,
+				Alias:             "dscout",
+				Name:              "Dscout",
+				Followers:         "25K",
+				Employees:         "201-500",
+				AssociatedMembers: "255",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -1018,28 +1019,28 @@ func companiesPart9() []domain.CompanyProfile {
 				Alias: "",
 			},
 			Languages: domain.Languages{
-				domain.Go: {
+				domain.Go:    {},
+				domain.Rust:  {},
+				domain.Zig:   {},
+				domain.Scala: {},
+				domain.Elixir: {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Lead Software Engineer – Elixir",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4149944830/",
+							Date:                 mustDate("2025-02-14"),
 							WithSalary:           false,
-							Remote:               false,
+							Remote:               true,
 						},
 					},
 				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "Experience Research Platform",
 		},
 		{
 			ID:      0,  // system
