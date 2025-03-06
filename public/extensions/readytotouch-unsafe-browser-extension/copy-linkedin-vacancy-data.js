@@ -19,7 +19,7 @@ document.body.addEventListener("keydown", (event) => {
 						    SwitchingOpportunity: "",
 						    URL:                  "${window.location.origin + window.location.pathname}",
 						    Date:                 mustDate("${date()}"),
-						    WithSalary:           false,
+						    WithSalary:           ${salary() ? "true" : "false"},
 						    Remote:               ${remote() ? "true" : "false"},
 						},`
 
@@ -33,6 +33,17 @@ function remote() {
     const $elements = document.querySelectorAll(".job-details-preferences-and-skills span");
     for (const $element of $elements) {
         if ($element.textContent.trim().toLowerCase() === "remote") {
+            return true;
+        }
+    }
+
+    return false;
+}
+
+function salary() {
+    const $elements = document.querySelectorAll(".job-details-preferences-and-skills span");
+    for (const $element of $elements) {
+        if ($element.textContent.trim().toLowerCase().includes("$")) {
             return true;
         }
     }
