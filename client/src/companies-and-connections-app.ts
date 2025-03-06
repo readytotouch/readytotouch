@@ -135,8 +135,8 @@ function renderCompany(company: Company, x: boolean): string {
     let xBlock = "";
     if (x) {
         xBlock = `<div class="card__group-block">
-            <a class="card__group-item button-link" href="${company.connections1stXURL}">Connections 1st X</a>
-            <a class="card__group-item button-link" href="${company.connections2ndXURL}">Connections 2nd X</a>
+            <a class="card__group-item button-link" href="${company.connections1stXURL}" target="_blank">Connections 1st X</a>
+            <a class="card__group-item button-link" href="${company.connections2ndXURL}" target="_blank">Connections 2nd X</a>
         </div>`;
     }
 
@@ -147,15 +147,15 @@ function renderCompany(company: Company, x: boolean): string {
         </button>
     </aside>
     <div class="card__header">
-        <a href="https://www.linkedin.com/company/${company.vanityName}" class="button-link card__headline">${company.name}</a>
+        <a href="https://www.linkedin.com/company/${company.vanityName}" target="_blank" class="button-link card__headline">${company.name}</a>
     </div>
 
     <div class="card__group">
         <div class="card__group-block">
-            <a class="card__group-item button-link" href="${company.connections1stURL}">Connections 1st</a>
-            <a class="card__group-item button-link" href="${company.connections2ndURL}">Connections 2nd</a>
-            <a class="card__group-item button-link" href="${company.formerEmployeesURL}">Former employees</a>
-            <a class="card__group-item button-link" href="${company.jobsURL}">Jobs</a>
+            <a class="card__group-item button-link" href="${company.connections1stURL}" target="_blank">Connections 1st</a>
+            <a class="card__group-item button-link" href="${company.connections2ndURL}" target="_blank">Connections 2nd</a>
+            <a class="card__group-item button-link" href="${company.formerEmployeesURL}" target="_blank">Former employees</a>
+            <a class="card__group-item button-link" href="${company.jobsURL}" target="_blank">Jobs</a>
         </div>
         ${xBlock}
     </div>
@@ -170,14 +170,14 @@ function renderTotal(connections: Connections): string {
 
     <div class="card__group">
         <div class="card__group-block">
-            <a class="card__group-item button-link" href="${connections.connections1stURL}">Connections 1st</a>
-            <a class="card__group-item button-link" href="${connections.connections2ndURL}">Connections 2nd</a>
-            <a class="card__group-item button-link" href="${connections.formerEmployeesURL}">Former employees</a>
-            <a class="card__group-item button-link" href="${connections.jobsURL}">Jobs</a>
+            <a class="card__group-item button-link" href="${connections.connections1stURL}" target="_blank">Connections 1st</a>
+            <a class="card__group-item button-link" href="${connections.connections2ndURL}" target="_blank">Connections 2nd</a>
+            <a class="card__group-item button-link" href="${connections.formerEmployeesURL}" target="_blank">Former employees</a>
+            <a class="card__group-item button-link" href="${connections.jobsURL}" target="_blank">Jobs</a>
         </div>
         <div class="card__group-block">
-            <a class="card__group-item button-link" href="${connections.connections1stXURL}">Connections 1st X</a>
-            <a class="card__group-item button-link" href="${connections.connections2ndXURL}">Connections 2nd X</a>
+            <a class="card__group-item button-link" href="${connections.connections1stXURL}" target="_blank">Connections 1st X</a>
+            <a class="card__group-item button-link" href="${connections.connections2ndXURL}" target="_blank">Connections 2nd X</a>
         </div>
     </div>
 </div>`;
