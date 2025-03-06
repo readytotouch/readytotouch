@@ -102,7 +102,7 @@ func StreamOrganizerStatic(qw422016 *qt422016.Writer, companies []Company, unive
                                     <div class="table__item name">
                                         <a class="table__item-link" href="`)
 		qw422016.E().S(company.Website)
-		qw422016.N().S(`">`)
+		qw422016.N().S(`" target="_blank">`)
 		qw422016.E().S(company.Name)
 		qw422016.N().S(`</a>
                                     </div>
@@ -113,7 +113,7 @@ func StreamOrganizerStatic(qw422016 *qt422016.Writer, companies []Company, unive
                                             <img src="/assets/images/pages/common/square.svg">
                                             <a class="table__item-link" href="https://www.linkedin.com/company/`)
 		qw422016.E().S(company.LinkedInProfile.Alias)
-		qw422016.N().S(`/" title="`)
+		qw422016.N().S(`/" target="_blank" title="`)
 		qw422016.E().S(company.LinkedInProfile.Name)
 		qw422016.N().S(`">Overview</a>
                                         </div>
@@ -121,7 +121,7 @@ func StreamOrganizerStatic(qw422016 *qt422016.Writer, companies []Company, unive
                                             <img src="/assets/images/pages/common/response.svg">
                                             <a class="table__item-link" href="`)
 		qw422016.E().S(linkedinConnectionsURL([]Company{company}, universities))
-		qw422016.N().S(`" title="`)
+		qw422016.N().S(`" target="_blank" title="`)
 		qw422016.E().S(company.LinkedInProfile.Name)
 		qw422016.N().S(`">Connections</a>
                                         </div>
@@ -129,7 +129,7 @@ func StreamOrganizerStatic(qw422016 *qt422016.Writer, companies []Company, unive
                                             <img src="/assets/images/pages/vacancy/briefcase.svg">
                                             <a class="table__item-link" href="`)
 		qw422016.E().S(linkedinJobsURL([]Company{company}, golangKeywordsTitles))
-		qw422016.N().S(`" title="`)
+		qw422016.N().S(`" target="_blank" title="`)
 		qw422016.E().S(company.LinkedInProfile.Name)
 		qw422016.N().S(`">Jobs</a>
                                         </div>
@@ -143,13 +143,13 @@ func StreamOrganizerStatic(qw422016 *qt422016.Writer, companies []Company, unive
                                             <img src="/assets/images/pages/common/square.svg">
                                             <a class="table__item-link" href="https://github.com/`)
 			qw422016.E().S(company.GitHubProfile.Login)
-			qw422016.N().S(`">Overview</a>
+			qw422016.N().S(`" target="_blank">Overview</a>
                                         </div>
                                         <div class="table__link-group">
                                             <img src="/assets/images/pages/common/database.svg">
                                             <a class="table__item-link" href="https://github.com/orgs/`)
 			qw422016.E().S(company.GitHubProfile.Login)
-			qw422016.N().S(`/repositories?q=lang:go">Repositories</a>&nbsp;(`)
+			qw422016.N().S(`/repositories?q=lang:go" target="_blank">Repositories</a>&nbsp;(`)
 			qw422016.N().D(fetchGitHubRepositoriesCount(company, Go))
 			qw422016.N().S(`)
                                         </div>
@@ -163,13 +163,13 @@ func StreamOrganizerStatic(qw422016 *qt422016.Writer, companies []Company, unive
                                             <img src="/assets/images/pages/common/square.svg">
                                             <a class="table__item-link" href="`)
 		qw422016.E().S(company.GlassdoorProfile.OverviewURL)
-		qw422016.N().S(`">Overview</a>
+		qw422016.N().S(`" target="_blank">Overview</a>
                                         </div>
                                         <div class="table__link-group">
                                             <img src="/assets/images/pages/common/message.svg">
                                             <a class="table__item-link" href="`)
 		qw422016.E().S(company.GlassdoorProfile.ReviewsURL)
-		qw422016.N().S(`">Reviews</a>
+		qw422016.N().S(`" target="_blank">Reviews</a>
                                         </div>
                                     </div>
                                 </td>
@@ -191,7 +191,7 @@ func StreamOrganizerStatic(qw422016 *qt422016.Writer, companies []Company, unive
                                                 <img src="/assets/images/pages/common/square.svg">
                                                 <a class="table__item-link" href="https://app.otta.com/companies/`)
 			qw422016.E().S(company.OttaProfileSlug)
-			qw422016.N().S(`">Overview</a>
+			qw422016.N().S(`" target="_blank">Overview</a>
                                             </div>
 `)
 		}
@@ -203,7 +203,7 @@ func StreamOrganizerStatic(qw422016 *qt422016.Writer, companies []Company, unive
 		for i, vacancy := range company.Languages[Go].Vacancies {
 			qw422016.N().S(`                                            <a class="table__item-link vacancies" href="`)
 			qw422016.E().S(vacancy.URL)
-			qw422016.N().S(`">Vacancy #`)
+			qw422016.N().S(`" target="_blank">Vacancy #`)
 			qw422016.N().D(i)
 			qw422016.N().S(`</a>
 `)
@@ -222,22 +222,22 @@ func StreamOrganizerStatic(qw422016 *qt422016.Writer, companies []Company, unive
                     <div class="organizer__links">
                         <a class="organizer__link" href="`)
 	qw422016.E().S(linkedinConnectionsURL(companies, nil))
-	qw422016.N().S(`">LinkedIn Connections [Companies]</a>
+	qw422016.N().S(`" target="_blank">LinkedIn Connections [Companies]</a>
                         `)
 	if len(universities) > 0 {
 		qw422016.N().S(`
                             <a class="organizer__link" href="`)
 		qw422016.E().S(linkedinConnectionsURL(companies, universities))
-		qw422016.N().S(`">LinkedIn Connections [Companies] [Universities]</a>
+		qw422016.N().S(`" target="_blank">LinkedIn Connections [Companies] [Universities]</a>
                         `)
 	}
 	qw422016.N().S(`
                         <a class="organizer__link" href="`)
 	qw422016.E().S(linkedinJobsURL(companies, golangKeywordsTitles))
-	qw422016.N().S(`">LinkedIn Jobs [Companies] [Worldwide]</a>
+	qw422016.N().S(`" target="_blank">LinkedIn Jobs [Companies] [Worldwide]</a>
                         <a class="organizer__link" href="`)
 	qw422016.E().S(linkedinJobsURL(nil, golangKeywordsTitles))
-	qw422016.N().S(`">LinkedIn Jobs [Worldwide]</a>
+	qw422016.N().S(`" target="_blank">LinkedIn Jobs [Worldwide]</a>
                     </div>
                 </div>
             </div>

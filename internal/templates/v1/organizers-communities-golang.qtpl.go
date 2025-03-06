@@ -146,9 +146,9 @@ func StreamOrganizersCommunitiesGolang(qw422016 *qt422016.Writer, organizer Orga
 						/>
 					</div>
 					<figcaption class="card__header-caption">
-						<a href="https://discord.com/invite/golang" class="card__headline vacancy__link">Discord Gophers</a>
+						<a href="https://discord.com/invite/golang" target="_blank" class="card__headline vacancy__link">Discord Gophers</a>
 					</figcaption>
-					<a href="https://discord.com/invite/golang" class="button button--small-padding button--black button--gap-images">
+					<a href="https://discord.com/invite/golang" target="_blank" class="button button--small-padding button--black button--gap-images">
 						Visit
 						<img width="18" height="18" alt="arrow top icon" src="/assets/images/pages/common/external-link-white.svg">
 					</a>
@@ -170,9 +170,9 @@ func StreamOrganizersCommunitiesGolang(qw422016 *qt422016.Writer, organizer Orga
 						/>
 					</div>
 					<figcaption class="card__header-caption">
-						<a href="https://www.reddit.com/r/golang/" class="card__headline vacancy__link">r/golang</a>
+						<a href="https://www.reddit.com/r/golang/" target="_blank" class="card__headline vacancy__link">r/golang</a>
 					</figcaption>
-					<a href="https://www.reddit.com/r/golang/" class="button button--small-padding button--black button--gap-images">
+					<a href="https://www.reddit.com/r/golang/" target="_blank" class="button button--small-padding button--black button--gap-images">
 						Visit
 						<img width="18" height="18" alt="arrow top icon" src="/assets/images/pages/common/external-link-white.svg">
 					</a>
@@ -190,7 +190,7 @@ func StreamOrganizersCommunitiesGolang(qw422016 *qt422016.Writer, organizer Orga
 		<div class="contact__empty">
 			<img class="contact__empty-logo" width="64" height="64" src="/assets/images/pages/organizer/share.png" alt="share">
 			<h2 class="contact__empty-title">Know a great community that should be added to this list?</h2>
-			<a class="button button--small-padding button--black" href="https://www.linkedin.com/in/yaroslav-podorvanov/">Contact me!</a>
+			<a class="button button--small-padding button--black" href="https://www.linkedin.com/in/yaroslav-podorvanov/" target="_blank">Contact me!</a>
 		</div>
 	</div>
 </section>

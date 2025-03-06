@@ -198,7 +198,7 @@ func StreamOrganizersCompanyV1(qw422016 *qt422016.Writer,
     <figcaption class="card__header-caption">
       <a href="`)
 	qw422016.E().S(company.Website)
-	qw422016.N().S(`" class="card__headline vacancy__link">`)
+	qw422016.N().S(`" target="_blank" class="card__headline vacancy__link">`)
 	qw422016.E().S(company.Name)
 	qw422016.N().S(`</a>
     </figcaption>
@@ -234,12 +234,12 @@ func StreamOrganizersCompanyV1(qw422016 *qt422016.Writer,
         />
         <a href="https://www.linkedin.com/company/`)
 	qw422016.E().S(company.LinkedInProfile.Alias)
-	qw422016.N().S(`/" class="button-link card__links-link">LinkedIn</a>
+	qw422016.N().S(`/" target="_blank" class="button-link card__links-link">LinkedIn</a>
       </li>
       <li class="card__links-item">
         <a href="`)
 	qw422016.E().S(linkedinConnectionsURL([]Company{company}, ukrainianUniversities))
-	qw422016.N().S(`" class="button-link card__links-link">Connections             <img
+	qw422016.N().S(`" target="_blank" class="button-link card__links-link">Connections             <img
                 class="checkbox__content-image"
                 alt="Flag of Ukraine with waves"
                 width="16"
@@ -250,7 +250,7 @@ func StreamOrganizersCompanyV1(qw422016 *qt422016.Writer,
       <li class="card__links-item">
         <a href="`)
 	qw422016.E().S(linkedinConnectionsURL([]Company{company}, czechUniversities))
-	qw422016.N().S(`" class="button-link card__links-link">Connections             <img
+	qw422016.N().S(`" target="_blank" class="button-link card__links-link">Connections             <img
                 class="checkbox__content-image"
                 alt="Flag of Czechia"
                 width="16"
@@ -261,12 +261,12 @@ func StreamOrganizersCompanyV1(qw422016 *qt422016.Writer,
       <li class="card__links-item">
         <a href="`)
 	qw422016.E().S(linkedinConnectionsURL([]Company{company}, nil))
-	qw422016.N().S(`" class="button-link card__links-link">Connections</a>
+	qw422016.N().S(`" target="_blank" class="button-link card__links-link">Connections</a>
       </li>
       <li class="card__links-item">
         <a href="`)
 	qw422016.E().S(linkedinJobsURL([]Company{company}, string(organizerFeature.Organizer.LanguageTitleKeywords)))
-	qw422016.N().S(`" class="button-link card__links-link">Jobs</a>
+	qw422016.N().S(`" target="_blank" class="button-link card__links-link">Jobs</a>
       </li>
     </ul>
 `)
@@ -282,7 +282,7 @@ func StreamOrganizersCompanyV1(qw422016 *qt422016.Writer,
           />
           <a href="`)
 		qw422016.E().S(googleSearchGitHub(company.Name))
-		qw422016.N().S(`" class="card__links-link card__links-link--google">
+		qw422016.N().S(`" target="_blank" class="card__links-link card__links-link--google">
             <img
               class="card__links-icon card__links-icon--google"
               alt="google icon"
@@ -308,14 +308,14 @@ func StreamOrganizersCompanyV1(qw422016 *qt422016.Writer,
           />
           <a href="https://github.com/`)
 		qw422016.E().S(company.GitHubProfile.Login)
-		qw422016.N().S(`" class="button-link card__links-link">GitHub</a>
+		qw422016.N().S(`" target="_blank" class="button-link card__links-link">GitHub</a>
         </li>
         <li class="card__links-item">
           <a href="https://github.com/orgs/`)
 		qw422016.E().S(company.GitHubProfile.Login)
 		qw422016.N().S(`/repositories?q=lang:`)
 		qw422016.E().S(organizerFeature.Organizer.GitHubAlias)
-		qw422016.N().S(`" class="button-link card__links-link" title="`)
+		qw422016.N().S(`" target="_blank" class="button-link card__links-link" title="`)
 		qw422016.N().D(fetchGitHubRepositoriesCount(company, organizerFeature.Organizer.Language))
 		qw422016.N().S(` repositories">Repositories</a>
         </li>
@@ -334,7 +334,7 @@ func StreamOrganizersCompanyV1(qw422016 *qt422016.Writer,
           />
           <a href="`)
 		qw422016.E().S(googleSearchGlassdoor(company.Name))
-		qw422016.N().S(`" class="card__links-link card__links-link--google">
+		qw422016.N().S(`" target="_blank" class="card__links-link card__links-link--google">
             <img
               class="card__links-icon card__links-icon--google"
               alt="google icon"
@@ -360,12 +360,12 @@ func StreamOrganizersCompanyV1(qw422016 *qt422016.Writer,
           />
           <a href="`)
 		qw422016.E().S(company.GlassdoorProfile.OverviewURL)
-		qw422016.N().S(`" class="button-link card__links-link">Glassdoor</a>
+		qw422016.N().S(`" target="_blank" class="button-link card__links-link">Glassdoor</a>
         </li>
         <li class="card__links-item">
           <a href="`)
 		qw422016.E().S(company.GlassdoorProfile.ReviewsURL)
-		qw422016.N().S(`" class="button-link card__links-link">Reviews</a>
+		qw422016.N().S(`" target="_blank" class="button-link card__links-link">Reviews</a>
         </li>
       </ul>
 `)
@@ -381,7 +381,7 @@ func StreamOrganizersCompanyV1(qw422016 *qt422016.Writer,
         />
         <a href="`)
 	qw422016.E().S(similarwebURL(company.Website))
-	qw422016.N().S(`" class="button-link card__links-link">SimilarWeb</a>
+	qw422016.N().S(`" target="_blank" class="button-link card__links-link">SimilarWeb</a>
       </li>
       <li class="card__links-item">
         <img
@@ -393,7 +393,7 @@ func StreamOrganizersCompanyV1(qw422016 *qt422016.Writer,
         />
         <a href="`)
 	qw422016.E().S(whoisURL(company.Website))
-	qw422016.N().S(`" class="button-link card__links-link">Whois</a>
+	qw422016.N().S(`" target="_blank" class="button-link card__links-link">Whois</a>
       </li>
 
       `)
@@ -408,7 +408,7 @@ func StreamOrganizersCompanyV1(qw422016 *qt422016.Writer,
         />
         <a href="`)
 	qw422016.E().S(googleSearchXing(company.Name))
-	qw422016.N().S(`" class="card__links-link card__links-link--google">
+	qw422016.N().S(`" target="_blank" class="card__links-link card__links-link--google">
           <img
             class="card__links-icon card__links-icon--google"
             alt="google icon"
@@ -432,7 +432,7 @@ func StreamOrganizersCompanyV1(qw422016 *qt422016.Writer,
           />
           <a href="`)
 		qw422016.E().S(googleSearchOtta(company.Name))
-		qw422016.N().S(`" class="card__links-link card__links-link--google">
+		qw422016.N().S(`" target="_blank" class="card__links-link card__links-link--google">
             <img
               class="card__links-icon card__links-icon--google"
               alt="google icon"
@@ -456,7 +456,7 @@ func StreamOrganizersCompanyV1(qw422016 *qt422016.Writer,
           />
           <a href="https://app.otta.com/companies/`)
 		qw422016.E().S(company.OttaProfileSlug)
-		qw422016.N().S(`" class="button-link card__links-link">Otta</a>
+		qw422016.N().S(`" target="_blank" class="button-link card__links-link">Otta</a>
         </li>
 `)
 	}
