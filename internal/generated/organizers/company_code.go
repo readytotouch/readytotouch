@@ -666,6 +666,17 @@ var (
 		"prosusgroup":                         663, // Prosus Group
 		"appear-net":                          664, // Appear
 		"worldlineglobal":                     665, // Worldline
+		"whatnot-inc":                         666, // Whatnot
+		"dnsfilter":                           667, // DNSFilter
+		"forcepoint":                          668, // Forcepoint
+		"thenu":                               669, // NU
+		"barracuda-networks":                  670, // Barracuda
+		"flatpeak":                            671, // FlatPeak
+		"teradata":                            672, // Teradata
+		"teramindco":                          673, // Teramind
+		"lotusretails":                        674, // Lotus&#39;s
+		"aescape":                             675, // Aescape
+		"smc":                                 676, // SMC
 
 	}
 )
