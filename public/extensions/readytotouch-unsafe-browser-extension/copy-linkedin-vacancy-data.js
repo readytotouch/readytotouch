@@ -7,9 +7,11 @@ document.body.addEventListener("keydown", (event) => {
 
         const title = document.querySelector("h1").innerText.trim()
             .replace(" - ", " – ") // Replace hyphen with dash
-            .replace("GoLang", "Golang") // Replace GoLang with Golang
-            .replace("Goland", "Golang") // Replace Goland with Golang
+            .replace("GoLang", "Golang")
+            .replace("Goland", "Golang")
+            .replace("Back End", "Back-End")
         ;
+
         const goLinkedInVacancyColumns = `{
 						    Title:                "${title}",
 						    ShortDescription:     "",
@@ -45,6 +47,20 @@ function date() {
 
         if (text.includes("hour ago") || text.includes("hours ago")) {
             return new Intl.DateTimeFormat("en-CA").format(new Date());
+        }
+
+        if (text.includes("1 day ago")) {
+            const yesterday = new Date();
+            yesterday.setDate(yesterday.getDate() - 1);
+
+            return new Intl.DateTimeFormat("en-CA").format(yesterday);
+        }
+
+        if (text.includes("2 days ago")) {
+            const past = new Date();
+            past.setDate(past.getDate() - 2);
+
+            return new Intl.DateTimeFormat("en-CA").format(past);
         }
     }
 
