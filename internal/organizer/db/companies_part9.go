@@ -1103,19 +1103,20 @@ func companiesPart9() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Pitch",
+			Website: "http://pitch.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                27222819,
+				IDs:               nil,
+				Alias:             "pitchhq",
+				Name:              "Pitch",
+				Followers:         "30K",
+				Employees:         "51-200",
+				AssociatedMembers: "64",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -1134,28 +1135,28 @@ func companiesPart9() []domain.CompanyProfile {
 				Alias: "",
 			},
 			Languages: domain.Languages{
-				domain.Go: {
+				domain.Go:     {},
+				domain.Rust:   {},
+				domain.Zig:    {},
+				domain.Scala:  {},
+				domain.Elixir: {},
+				domain.Clojure: {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Senior Backend Clojure Engineer (m/f/d)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4128083196/",
+							Date:                 mustDate("2025-02-07"),
 							WithSalary:           false,
-							Remote:               false,
+							Remote:               true,
 						},
 					},
 				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "The complete pitching platform",
 		},
 		{
 			ID:      0,  // system

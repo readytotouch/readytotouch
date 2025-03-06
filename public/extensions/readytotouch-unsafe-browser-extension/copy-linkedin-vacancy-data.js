@@ -88,6 +88,21 @@ function date() {
             past.setDate(past.getDate() - 7 * parseInt(matchWeeks[1], 10));
             return new Intl.DateTimeFormat("en-CA").format(past);
         }
+
+        if (publishedAt.includes("1 month ago")) {
+            const past = new Date();
+            past.setMonth(past.getMonth() - 1);
+
+            return new Intl.DateTimeFormat("en-CA").format(past);
+        }
+
+        const matchMonths = publishedAt.match(/^(\d) months ago$/);
+        if (matchMonths) {
+            const past = new Date();
+            past.setMonth(past.getMonth() - parseInt(matchMonths[1], 10));
+
+            return new Intl.DateTimeFormat("en-CA").format(past);
+        }
     }
 
     return new Intl.DateTimeFormat("en-CA").format(new Date());
