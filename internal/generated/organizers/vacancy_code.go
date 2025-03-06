@@ -693,6 +693,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4145162010/":   1024, // capital-one
 		"https://www.linkedin.com/jobs/view/4145161057/":   1025, // capital-one
 		"https://www.linkedin.com/jobs/view/4170687151/":   1026, // capital-one
+		"https://www.linkedin.com/jobs/view/4174587821/":   1077, // capital-one
 		"https://www.linkedin.com/jobs/view/4141348448/":   972,  // capital-one
 		"https://www.linkedin.com/jobs/view/4144041186/":   989,  // capital-one
 		"https://www.linkedin.com/jobs/view/4129780907/":   698,  // capital-one
@@ -726,6 +727,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4133422642/":   742,  // geico
 		"https://www.linkedin.com/jobs/view/4025870710/":   120,  // inviatravelgermany
 		"https://www.linkedin.com/jobs/view/4156154054/":   877,  // inviatravelgermany
+		"https://www.linkedin.com/jobs/view/4176950668/":   1078, // inviatravelgermany
 		"https://www.linkedin.com/jobs/view/4074166819/":   121,  // airslate
 		"https://www.linkedin.com/jobs/view/4074141859/":   122,  // embark-studios-ab
 		"https://www.linkedin.com/jobs/view/4120108595/":   578,  // embark-studios-ab
@@ -991,6 +993,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4158727075/":   916,  // deutscheboerse
 		"https://www.linkedin.com/jobs/view/4123118327/":   640,  // hootsuite
 		"https://www.linkedin.com/jobs/view/4122037400/":   641,  // hsbc
+		"https://www.linkedin.com/jobs/view/4176181217/":   1079, // hsbc
 		"https://www.linkedin.com/jobs/view/4120259237/":   642,  // affinipay
 		"https://www.linkedin.com/jobs/view/4127601895/":   672,  // vividmoney
 		"https://www.linkedin.com/jobs/view/4161969462/":   976,  // vividmoney
@@ -1024,6 +1027,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4135250887/":   751,  // prezi
 		"https://www.linkedin.com/jobs/view/4139299697/":   777,  // yunopay
 		"https://www.linkedin.com/jobs/view/4144099112/":   778,  // qustodio
+		"https://www.linkedin.com/jobs/view/4174523122/":   1080, // qustodio
 		"https://www.linkedin.com/jobs/view/4127825676/":   779,  // pexip
 		"https://www.linkedin.com/jobs/view/4139709944/":   780,  // vinted
 		"https://www.linkedin.com/jobs/view/4173982221/":   1075, // vinted
@@ -1080,6 +1084,18 @@ var (
 		"https://www.linkedin.com/jobs/view/4146942038/":   1059, // prosusgroup
 		"https://www.linkedin.com/jobs/view/4174424707/":   1060, // appear-net
 		"https://www.linkedin.com/jobs/view/4172652078/":   1068, // worldlineglobal
+		"https://www.linkedin.com/jobs/view/4169557069/":   1081, // whatnot-inc
+		"https://www.linkedin.com/jobs/view/4174530724/":   1082, // dnsfilter
+		"https://www.linkedin.com/jobs/view/4157762453/":   1083, // forcepoint
+		"https://www.linkedin.com/jobs/view/4174841291/":   1084, // thenu
+		"https://www.linkedin.com/jobs/view/4173786381/":   1085, // barracuda-networks
+		"https://www.linkedin.com/jobs/view/4172858065/":   1086, // flatpeak
+		"https://www.linkedin.com/jobs/view/4149196862/":   1087, // teradata
+		"https://www.linkedin.com/jobs/view/4172639728/":   1088, // teramindco
+		"https://www.linkedin.com/jobs/view/4172643376/":   1089, // teramindco
+		"https://www.linkedin.com/jobs/view/4117492485/":   1090, // lotusretails
+		"https://www.linkedin.com/jobs/view/4172541606/":   1091, // aescape
+		"https://www.linkedin.com/jobs/view/4172507663/":   1092, // smc
 
 	}
 )
