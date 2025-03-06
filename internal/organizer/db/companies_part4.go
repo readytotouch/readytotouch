@@ -1884,8 +1884,8 @@ func companiesPart4() []domain.CompanyProfile {
 							ShortDescription:     "Mobile/Backend (Android, Go, Kotlin)",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4151864804/",
-							Date:                 mustDate("2025-02-13"),
-							WithSalary:           true, // $95,100 - $180,700 per year
+							Date:                 mustDate("2025-03-06"), // mustDate("2025-02-13"),
+							WithSalary:           true,                   // $95,100 - $180,700 per year
 							Remote:               false,
 						},
 					},

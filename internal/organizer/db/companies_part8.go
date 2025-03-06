@@ -1778,6 +1778,15 @@ func companiesPart8() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior React and Scala/JAVA Developer",
+							ShortDescription:     "Investment Banking Tech",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4176181217/",
+							Date:                 mustDate("2025-03-06"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Elixir:  {},
@@ -2671,6 +2680,15 @@ func companiesPart8() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Scala Software Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4147607601/",
+							Date:                 mustDate("2025-03-05"),
+							WithSalary:           true, // $100.000 - 150.000 CAD per year
+							Remote:               true,
+						},
 					},
 				},
 				domain.Elixir:  {},
@@ -3319,6 +3337,15 @@ func companiesPart8() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4144099112/",
 							Date:                 mustDate("2025-02-05"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Software Engineer (Go)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4174523122/",
+							Date:                 mustDate("2025-03-06"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -4305,8 +4332,8 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4139671820/",
-							Date:                 mustDate("2025-02-14"),
-							WithSalary:           true, // Salary range starting from 2.640 EUR per month gross depending on relevant experience and skills
+							Date:                 mustDate("2025-03-06"), // mustDate("2025-02-14"),
+							WithSalary:           true,                   // Salary range starting from 2.640 EUR per month gross depending on relevant experience and skills
 							Remote:               false,
 						},
 					},
@@ -5421,7 +5448,7 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4157295270/",
-							Date:                 mustDate("2025-02-20"),
+							Date:                 mustDate("2025-03-05"), // mustDate("2025-02-20"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -6827,8 +6854,8 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4169628634/",
-							Date:                 mustDate("2025-03-01"),
-							WithSalary:           true, // $87.900 - $198.900 per year
+							Date:                 mustDate("2025-03-06"), // mustDate("2025-03-01"),
+							WithSalary:           true,                   // $87.900 - $198.900 per year
 							Remote:               false,
 						},
 					},
@@ -7025,6 +7052,66 @@ func companiesPart8() []domain.CompanyProfile {
 			Industries: []domain.Industry{
 				domain.IndustryFinTech,
 			},
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Whatnot",
+			Website: "https://www.whatnot.com/",
+			Careers: "https://careers.whatnot.com/",
+			About:   "https://www.whatnot.com/about-us",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                52160608,
+				IDs:               nil,
+				Alias:             "whatnot-inc",
+				Name:              "Whatnot",
+				Followers:         "58K",
+				Employees:         "501-1K",
+				AssociatedMembers: "1,058",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "Whatnot-Inc",
+				Verified: true,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "whatnot",
+				Employees: "270",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go:    {},
+				domain.Rust:  {},
+				domain.Zig:   {},
+				domain.Scala: {},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 9,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Elixir Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4169557069/",
+							Date:                 mustDate("2025-02-28"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "British community marketplace for buyers and sellers",
 		},
 
 		// Template
