@@ -702,61 +702,21 @@ func companiesPart9() []domain.CompanyProfile {
 			Ignore: true, // Outsourcing
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "",
-			Website: "",
-			Careers: "",
-			About:   "",
-			Blog:    "",
+			ID:      0,                           // system
+			Type:    domain.CompanyTypeOutsource, // system
+			Name:    "Skillspark",
+			Website: "http://www.skillspark.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
+				ID:                80284986,
+				IDs:               nil,
+				Alias:             "skillsparkab",
+				Name:              "Skillspark",
+				Followers:         "68K",
+				Employees:         "51-200",
+				AssociatedMembers: "33",
 				Verified:          false,
 			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
-			},
-			BlindProfile: domain.BlindProfile{
-				Alias: "",
-			},
-			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-			},
-			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
-			},
-			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
-							WithSalary:           false,
-							Remote:               false,
-						},
-					},
-				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-			ShortDescription: "",
+			Ignore: true, // Outsourcing
 		},
 		{
 			ID:      0,  // system
