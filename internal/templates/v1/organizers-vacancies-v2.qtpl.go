@@ -385,7 +385,7 @@ func StreamOrganizersVacanciesV2(qw422016 *qt422016.Writer,
 						<figcaption class="card__header-caption">
 							<a href="/organizers/v/`)
 		qw422016.N().DL(vacancy.ID)
-		qw422016.N().S(`" class="card__headline vacancy__link">`)
+		qw422016.N().S(`" target="_blank" class="card__headline vacancy__link">`)
 		qw422016.E().S(vacancy.Title)
 		qw422016.N().S(`</a>
 							<a href="/organizers/`)
@@ -429,7 +429,7 @@ func StreamOrganizersVacanciesV2(qw422016 *qt422016.Writer,
 						</div>
 						<a href="/organizers/v/`)
 		qw422016.N().DL(vacancy.ID)
-		qw422016.N().S(`" class="button button--bordered-gray button--gap-images">
+		qw422016.N().S(`" target="_blank" class="button button--bordered-gray button--gap-images">
 							`)
 		if isLinkedInVacancyURL(vacancy.URL) {
 			qw422016.N().S(`

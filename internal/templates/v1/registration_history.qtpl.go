@@ -48,7 +48,7 @@ func streamregistrationHistory(qw422016 *qt422016.Writer, socialProviderUsers []
                 </div>
                 <a href="https://github.com/`)
 				qw422016.E().S(profile.Username)
-				qw422016.N().S(`" class="history__user-link history__user-item">github.com/`)
+				qw422016.N().S(`" target="_blank" class="history__user-link history__user-item">github.com/`)
 				qw422016.E().S(profile.Username)
 				qw422016.N().S(`</a>
                 <span class="history__user-date history__user-item">`)
@@ -75,7 +75,7 @@ func streamregistrationHistory(qw422016 *qt422016.Writer, socialProviderUsers []
                 </div>
                 <a href="https://gitlab.com/`)
 				qw422016.E().S(profile.Username)
-				qw422016.N().S(`" class="history__user-link history__user-item">gitlab.com/`)
+				qw422016.N().S(`" target="_blank" class="history__user-link history__user-item">gitlab.com/`)
 				qw422016.E().S(profile.Username)
 				qw422016.N().S(`</a>
                 <span class="history__user-date history__user-item">`)
@@ -102,7 +102,7 @@ func streamregistrationHistory(qw422016 *qt422016.Writer, socialProviderUsers []
                 </div>
                 <a href="https://bitbucket.org/`)
 				qw422016.E().S(profile.Username)
-				qw422016.N().S(`" class="history__user-link history__user-item">bitbucket.org/`)
+				qw422016.N().S(`" target="_blank" class="history__user-link history__user-item">bitbucket.org/`)
 				qw422016.E().S(profile.Username)
 				qw422016.N().S(`</a>
                 <span class="history__user-date history__user-item">`)

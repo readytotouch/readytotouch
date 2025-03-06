@@ -67,6 +67,8 @@ class Connections {
         public readonly connections2ndURL: string,
         public readonly connections1stXURL: string,
         public readonly connections2ndXURL: string,
+        public readonly formerEmployeesURL: string,
+        public readonly jobsURL: string,
     ) {
     }
 }
@@ -80,6 +82,8 @@ class Company {
         public readonly connections2ndURL: string,
         public readonly connections1stXURL: string,
         public readonly connections2ndXURL: string,
+        public readonly formerEmployeesURL: string,
+        public readonly jobsURL: string,
     ) {
     }
 }
@@ -127,7 +131,15 @@ function submitCompany() {
     });
 }
 
-function renderCompany(company: Company): string {
+function renderCompany(company: Company, x: boolean): string {
+    let xBlock = "";
+    if (x) {
+        xBlock = `<div class="card__group-block">
+            <a class="card__group-item button-link" href="${company.connections1stXURL}">Connections 1st X</a>
+            <a class="card__group-item button-link" href="${company.connections2ndXURL}">Connections 2nd X</a>
+        </div>`;
+    }
+
     return `<div class="card">
     <aside class="card__action">
         <button class="button-group__item" title="Delete">
@@ -142,11 +154,10 @@ function renderCompany(company: Company): string {
         <div class="card__group-block">
             <a class="card__group-item button-link" href="${company.connections1stURL}">Connections 1st</a>
             <a class="card__group-item button-link" href="${company.connections2ndURL}">Connections 2nd</a>
+            <a class="card__group-item button-link" href="${company.formerEmployeesURL}">Former employees</a>
+            <a class="card__group-item button-link" href="${company.jobsURL}">Jobs</a>
         </div>
-        <div class="card__group-block">
-            <a class="card__group-item button-link" href="${company.connections1stXURL}">Connections 1st X</a>
-            <a class="card__group-item button-link" href="${company.connections2ndXURL}">Connections 2nd X</a>
-        </div>
+        ${xBlock}
     </div>
 </div>`;
 }
@@ -161,6 +172,8 @@ function renderTotal(connections: Connections): string {
         <div class="card__group-block">
             <a class="card__group-item button-link" href="${connections.connections1stURL}">Connections 1st</a>
             <a class="card__group-item button-link" href="${connections.connections2ndURL}">Connections 2nd</a>
+            <a class="card__group-item button-link" href="${connections.formerEmployeesURL}">Former employees</a>
+            <a class="card__group-item button-link" href="${connections.jobsURL}">Jobs</a>
         </div>
         <div class="card__group-block">
             <a class="card__group-item button-link" href="${connections.connections1stXURL}">Connections 1st X</a>
@@ -191,6 +204,8 @@ function renderCompanies(companies: Array<ResponseCompany>) {
         $companies.appendChild($total);
     }
 
+    const x = companies.length > 1;
+
     companies.forEach((company) => {
         const prepared = prepareConnections(`["${company.id}"]`, preparePastCompanyQueryParam(companies, company));
 
@@ -202,7 +217,9 @@ function renderCompanies(companies: Array<ResponseCompany>) {
             prepared.connections2ndURL,
             prepared.connections1stXURL,
             prepared.connections2ndXURL,
-        )));
+            prepared.formerEmployeesURL,
+            prepared.jobsURL,
+        ), x));
         firstQuerySelector($card, "button").addEventListener("click", function () {
             deleteCompany(company.id);
 
@@ -256,6 +273,8 @@ function prepareConnections(
     let connections2ndURL = new URL("https://www.linkedin.com/search/results/PEOPLE/");
     let connections1stXURL = new URL("https://www.linkedin.com/search/results/PEOPLE/");
     let connections2ndXURL = new URL("https://www.linkedin.com/search/results/PEOPLE/");
+    let formerEmployeesURL = new URL("https://www.linkedin.com/search/results/PEOPLE/");
+    let jobsURL = new URL("https://www.linkedin.com/jobs/search/");
 
     connections1stURL.searchParams.append("currentCompany", currentCompanyQueryParam);
     connections1stURL.searchParams.append("network", '["F"]');
@@ -275,11 +294,20 @@ function prepareConnections(
         connections2ndXURL.searchParams.append("schoolFilter", universitiesQueryParam);
     }
 
+    formerEmployeesURL.searchParams.append("pastCompany", currentCompanyQueryParam);
+
+    jobsURL.searchParams.append("location", "Worldwide");
+    jobsURL.searchParams.append("geoId", "92000000");               // Worldwide
+    jobsURL.searchParams.append("sortBy", "DD");                    // order by "Most recent
+    jobsURL.searchParams.append("f_TPR", "r2592000");               // filter "Past month"
+    jobsURL.searchParams.append("f_C", currentCompanyQueryParam);
+
     if (latestKeywords !== "") {
         connections1stURL.searchParams.append("keywords", latestKeywords);
         connections2ndURL.searchParams.append("keywords", latestKeywords);
         connections1stXURL.searchParams.append("keywords", latestKeywords);
         connections2ndXURL.searchParams.append("keywords", latestKeywords);
+        formerEmployeesURL.searchParams.append("keywords", latestKeywords);
     }
 
     if (latestLocation !== "") {
@@ -288,6 +316,7 @@ function prepareConnections(
         connections2ndURL.searchParams.append("geoUrn", queryParam);
         connections1stXURL.searchParams.append("geoUrn", queryParam);
         connections2ndXURL.searchParams.append("geoUrn", queryParam);
+        formerEmployeesURL.searchParams.append("geoUrn", queryParam);
     }
 
     if (pastCompanyQueryParam !== "") {
@@ -300,6 +329,8 @@ function prepareConnections(
         connections2ndURL.toString(),
         connections1stXURL.toString(),
         connections2ndXURL.toString(),
+        formerEmployeesURL.toString(),
+        jobsURL.toString(),
     );
 }
 
