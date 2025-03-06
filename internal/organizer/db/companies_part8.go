@@ -2680,15 +2680,6 @@ func companiesPart8() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
-						{
-							Title:                "Senior Scala Software Developer",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "https://www.linkedin.com/jobs/view/4147607601/",
-							Date:                 mustDate("2025-03-05"),
-							WithSalary:           true, // $100.000 - 150.000 CAD per year
-							Remote:               true,
-						},
 					},
 				},
 				domain.Elixir:  {},
