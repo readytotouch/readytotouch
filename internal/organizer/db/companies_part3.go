@@ -3447,7 +3447,7 @@ func companiesPart3() []domain.CompanyProfile {
 				},
 				domain.Clojure: {
 					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{
+					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer, Clojure",
 							ShortDescription:     "",
