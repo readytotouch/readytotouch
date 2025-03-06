@@ -175,6 +175,15 @@ func companiesPart3() []domain.CompanyProfile {
 							WithSalary:           true, // $144,200 - $164,600 per year
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Software Engineer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4174587821/",
+							Date:                 mustDate("2025-03-06"),
+							WithSalary:           true, // $144,200 - $164,600 per year
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
