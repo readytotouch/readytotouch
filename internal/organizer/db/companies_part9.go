@@ -738,75 +738,36 @@ func companiesPart9() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
-			Careers: "",
-			About:   "",
-			Blog:    "",
+			Name:    "Crypto",
+			Website: "https://www.crypto.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                13322447,
+				IDs:               nil,
+				Alias:             "cryptocom",
+				Name:              "Crypto.com",
+				Followers:         "590K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "6,502",
+				Verified:          true,
 			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
-			},
-			BlindProfile: domain.BlindProfile{
-				Alias: "",
-			},
-			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-			},
-			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
-			},
-			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
-							WithSalary:           false,
-							Remote:               false,
-						},
-					},
-				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-			ShortDescription: "",
+			Ignore: true, // Crypto
 		},
 		{
 			ID:      0,  // system
-			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Type:    domain.CompanyTypeStartup, // system
+			Name:    "Depixen",
+			Website: "http://www.depixen.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
+				ID:                19062020,
+				IDs:               nil,
+				Alias:             "depixen-sw",
+				Name:              "Depixen",
+				Followers:         "8K",
+				Employees:         "11-50",
+				AssociatedMembers: "33",
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -830,11 +791,11 @@ func companiesPart9() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Senior Backend Developer | Senior Go Developer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4174831245/",
+							Date:                 mustDate("2025-03-05"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -847,7 +808,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "AI-Powered Autonomous Product Management Systems, Ontology-Based Digital Transformation, RDF-Based Semantic Applications",
 		},
 		{
 			ID:      0,  // system
