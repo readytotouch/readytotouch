@@ -6,7 +6,7 @@ document.body.addEventListener("keydown", (event) => {
     if (event.ctrlKey && event.shiftKey && (event.key === "Y" || event.key === "Н")) {
 
         const title = document.querySelector("h1").innerText.trim()
-            .replace(" - ", " – ") // Replace hyphen with dash
+            .replaceAll(" - ", " – ") // Replace hyphen with dash
             .replace("GoLang", "Golang")
             .replace("Goland", "Golang")
             .replace("Back End", "Back-End")

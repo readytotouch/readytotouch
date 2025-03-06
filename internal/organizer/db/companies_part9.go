@@ -753,7 +753,7 @@ func companiesPart9() []domain.CompanyProfile {
 			Ignore: true, // Crypto
 		},
 		{
-			ID:      0,  // system
+			ID:      0,                         // system
 			Type:    domain.CompanyTypeStartup, // system
 			Name:    "Depixen",
 			Website: "http://www.depixen.com/",
@@ -813,18 +813,19 @@ func companiesPart9() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Climatiq",
+			Website: "https://www.climatiq.io/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
+				ID:                72159281,
+				IDs:               nil,
+				Alias:             "climatiq",
+				Name:              "Climatiq",
+				Followers:         "8K",
+				Employees:         "11-50",
+				AssociatedMembers: "30",
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -844,28 +845,28 @@ func companiesPart9() []domain.CompanyProfile {
 				Alias: "",
 			},
 			Languages: domain.Languages{
-				domain.Go: {
+				domain.Go: {},
+				domain.Rust: {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Senior Full Stack Engineer – Climate Tech – Rust & TypeScript",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4175571523/",
+							Date:                 mustDate("2025-03-07"),
 							WithSalary:           false,
-							Remote:               false,
+							Remote:               true,
 						},
 					},
 				},
-				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "The scope 1, 2, and 3 carbon calculation engine",
 		},
 		{
 			ID:      0,  // system
