@@ -719,61 +719,21 @@ func companiesPart9() []domain.CompanyProfile {
 			Ignore: true, // Outsourcing
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "",
-			Website: "",
-			Careers: "",
-			About:   "",
-			Blog:    "",
+			ID:      0,                           // system
+			Type:    domain.CompanyTypeOutsource, // system
+			Name:    "Qinshift",
+			Website: "https://qinshift.com/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                92778277,
+				IDs:               nil,
+				Alias:             "qinshift",
+				Name:              "Qinshift",
+				Followers:         "52K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "1,717",
+				Verified:          true,
 			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
-			},
-			BlindProfile: domain.BlindProfile{
-				Alias: "",
-			},
-			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-			},
-			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
-			},
-			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
-							WithSalary:           false,
-							Remote:               false,
-						},
-					},
-				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-			ShortDescription: "",
+			Ignore: true, // Outsourcing
 		},
 		{
 			ID:      0,  // system
