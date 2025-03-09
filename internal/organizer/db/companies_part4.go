@@ -390,6 +390,15 @@ func companiesPart4() []domain.CompanyProfile {
 							WithSalary:           true, // $132.800 - $208.300 per year
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Golang Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4175846907/",
+							Date:                 mustDate("2025-03-08"),
+							WithSalary:           true, //  $96,600.92 - $226,408.42 per year
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -469,7 +478,7 @@ func companiesPart4() []domain.CompanyProfile {
 							ShortDescription:     "Enterprise Solutions Unit",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4132135610/",
-							Date:                 mustDate("2025-02-15"), // mustDate("2025-01-23"),
+							Date:                 mustDate("2025-03-08"), // mustDate("2025-02-15"), // mustDate("2025-01-23"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -1486,6 +1495,15 @@ func companiesPart4() []domain.CompanyProfile {
 							URL:              "https://www.linkedin.com/jobs/view/4050960562/",
 							Date:             mustDate("2024-12-17"),
 						},
+						{
+							Title:                "Go Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4175785149/",
+							Date:                 mustDate("2025-03-07"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -2219,6 +2237,15 @@ func companiesPart4() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4174877579/",
 							Date:                 mustDate("2025-03-05"),
 							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Software Developer — Golang/Python/Java",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4175872656/",
+							Date:                 mustDate("2025-03-07"),
+							WithSalary:           true, // from 2500 EUR per month
 							Remote:               false,
 						},
 					},
@@ -3309,6 +3336,15 @@ func companiesPart4() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4170836210/",
 							Date:                 mustDate("2025-02-28"),
 							WithSalary:           true, // $152.150 - $226.490 per year
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Cloud Software Engineer — Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4176332105/",
+							Date:                 mustDate("2025-03-08"),
+							WithSalary:           true, // 152,150 - 226,490 USD per year
 							Remote:               false,
 						},
 					},

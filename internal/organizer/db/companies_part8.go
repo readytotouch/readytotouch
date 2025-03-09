@@ -1285,7 +1285,7 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4125175696/",
-							Date:                 mustDate("2025-03-05"), // mustDate("2025-03-01"), // mustDate("2025-02-28"), // mustDate("2025-02-26"), // mustDate("2025-02-21"), // mustDate("2025-02-20"), // mustDate("2025-02-15"), // mustDate("2025-01-16"),
+							Date:                 mustDate("2025-03-08"), // mustDate("2025-03-05"), // mustDate("2025-03-01"), // mustDate("2025-02-28"), // mustDate("2025-02-26"), // mustDate("2025-02-21"), // mustDate("2025-02-20"), // mustDate("2025-02-15"), // mustDate("2025-01-16"),
 							WithSalary:           true,                   // $60.00 - $77.00/ hr
 							Remote:               false,
 						},
@@ -4258,7 +4258,7 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4152181957/",
-							Date:                 mustDate("2025-02-13"),
+							Date:                 mustDate("2025-03-07"), // mustDate("2025-02-13"),
 							WithSalary:           false,
 							Remote:               false,
 						},
