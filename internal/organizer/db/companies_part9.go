@@ -1217,6 +1217,183 @@ func companiesPart9() []domain.CompanyProfile {
 			ShortDescription: "Supporting healthcare organisations deliver virtual ward services proven to reduce costs while improving outcomes",
 		},
 
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "University of Virginia",
+			Website: "https://www.virginia.edu/",
+			Careers: "https://jobs.virginia.edu/",
+			About:   "https://www.virginia.edu/aboutuva/",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                4298,
+				Alias:             "university-of-virginia",
+				Name:              "University of Virginia",
+				Followers:         "311K",
+				Employees:         "",
+				AssociatedMembers: "",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "university-of-virginia",
+				Employees: "8,397",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4177332766/",
+							Date:                 mustDate("2025-03-07"),
+							WithSalary:           true, // $110,000 - $130,000 per year
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American public institution of higher learning",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Phrase",
+			Website: "https://phrase.com/",
+			Careers: "https://phrase.com/careers/",
+			About:   "https://phrase.com/about/",
+			Blog:    "https://phrase.com/blog/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1344091,
+				IDs:               nil,
+				Alias:             "phraseplatform",
+				Name:              "Phrase",
+				Followers:         "36K",
+				Employees:         "201-500",
+				AssociatedMembers: "374",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "phrase",
+				Verified: true,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go:    {},
+				domain.Rust:  {},
+				domain.Zig:   {},
+				domain.Scala: {},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Full Stack (Elixir) Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4176875904/",
+							Date:                 mustDate("2025-03-09"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Czech AI-led translation technology",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Mr Price Group",
+			Website: "https://mrpricegroup.com/",
+			Careers: "https://mrpcareers.com/our-careers/",
+			About:   "https://mrpricegroup.com/about-us/",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                47016,
+				IDs:               []int{47016, 3110091},
+				Alias:             "mr-price-group",
+				Name:              "Mr Price Group",
+				Followers:         "622K",
+				Employees:         "10K+",
+				AssociatedMembers: "16,870",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go:     {},
+				domain.Rust:   {},
+				domain.Zig:    {},
+				domain.Scala:  {},
+				domain.Elixir: {},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Lead Clojure Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4173567999/",
+							Date:                 mustDate("2025-03-05"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Haskell: {},
+			},
+			ShortDescription: "SA omni-channel, fashion value retailer",
+		},
+
 		// Template
 		//{
 		//	ID:      0,  // system
