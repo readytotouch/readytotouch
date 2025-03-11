@@ -139,7 +139,7 @@ var (
 		"cimri":                               113, // Cimri
 		"quadcodecareer":                      114, // Quadcode
 		"fincompare":                          115, // FinCompare
-		"mellifera-operations-limited":        116, // Mellifera Operations Limited
+		"mellifera-operations-limited":        116, // Mellifera
 		"bnpparibassecuritiesservices":        117, // BNP Paribas - Securities Services
 		"apifonica":                           118, // Apifonica
 		"cybus":                               119, // Cybus
@@ -685,6 +685,20 @@ var (
 		"viasat":                              682, // Viasat
 		"pitchhq":                             683, // Pitch
 		"doccla":                              684, // Doccla
+		"university-of-virginia":              685, // University of Virginia
+		"phraseplatform":                      686, // Phrase
+		"mr-price-group":                      687, // Mr Price Group
+		"plentyone-ecommerce":                 688, // PlentyONE
+		"future-research-inc":                 689, // Future
+		"los-alamos-national-laboratory":      690, // Los Alamos National Laboratory
+		"volkswagen-digital-solutions":        691, // Volkswagen Digital Solutions
+		"optableco":                           692, // Optable
+		"scaleops-sh":                         693, // ScaleOps - Cloud-Native Optimization
+		"zenport":                             694, // Zenport Inc.
+		"firstbatchai":                        695, // FirstBatch
+		"nelly-solutions":                     696, // Nelly Solutions
+		"skyworks-solutions-inc":              697, // Skyworks Solutions, Inc.
+		"f5":                                  698, // F5
 
 	}
 )

@@ -170,6 +170,15 @@ func companiesPart7() []domain.CompanyProfile {
 							WithSalary:           true, // $105.800 - $149.600 per year
 							Remote:               false,
 						},
+						{
+							Title:                "Software Engineer (C++/Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4181775921/",
+							Date:                 mustDate("2025-03-11"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {},

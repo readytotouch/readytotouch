@@ -274,10 +274,13 @@ func companiesPart6() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Senior Software Engineer (Rust/Kotlin)",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4106227833/",
-							Date:             mustDate("2024-12-20"),
+							Title:                "Senior Software Engineer (Rust/Kotlin)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4106227833/",
+							Date:                 mustDate("2024-12-20"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 					},
 				},
@@ -391,12 +394,6 @@ func companiesPart6() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Senior Software Engineer — Rust Backend",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4094489606/",
-							Date:             mustDate("2024-12-20"),
-						},
-						{
 							Title:                "Back-End Golang Developer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
@@ -405,9 +402,31 @@ func companiesPart6() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Back-End Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4177892324/",
+							Date:                 mustDate("2025-03-11"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
-				domain.Rust:    {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer — Rust Backend",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4094489606/",
+							Date:                 mustDate("2024-12-20"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},
@@ -481,7 +500,7 @@ func companiesPart6() []domain.CompanyProfile {
 							ShortDescription:     "Design and implement software solutions using Rust, emphasizing security, performance, and maintainability",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4081194563/",
-							Date:                 mustDate("2025-02-15"), // mustDate("2024-12-20"),
+							Date:                 mustDate("2025-03-10"), // mustDate("2025-02-15"), // mustDate("2024-12-20"),
 							WithSalary:           true,                   // $114.800 - $232.600 per year
 							Remote:               false,
 						},
