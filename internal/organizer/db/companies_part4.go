@@ -505,7 +505,7 @@ func companiesPart4() []domain.CompanyProfile {
 							ShortDescription:     "Nexus Team",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4077466162/",
-							Date:                 mustDate("2025-02-15"),
+							Date:                 mustDate("2025-03-11"), // mustDate("2025-02-15"),
 							WithSalary:           false,
 							Remote:               true,
 						},
