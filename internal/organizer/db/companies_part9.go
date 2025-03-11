@@ -918,6 +918,15 @@ func companiesPart9() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Scala Engineer (Typelevel & Elasticsearch)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4172530640/",
+							Date:                 mustDate("2025-03-11"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Elixir:  {},
@@ -1392,6 +1401,184 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "SA omni-channel, fashion value retailer",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "PlentyONE",
+			Website: "https://www.plentyone.com/",
+			Careers: "https://www.plentyone.com/careers",
+			About:   "https://www.plentyone.com/about",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                5079248,
+				IDs:               nil,
+				Alias:             "plentyone-ecommerce",
+				Name:              "PlentyONE",
+				Followers:         "5K",
+				Employees:         "201-500",
+				AssociatedMembers: "237",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4177522085/",
+							Date:                 mustDate("2025-03-09"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "E-Commerce ERP system for online retailers, brands and manufacturers",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Future",
+			Website: "https://www.future.co/",
+			Careers: "https://www.future.co/careers",
+			About:   "https://www.future.co/about",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                33275761,
+				IDs:               nil,
+				Alias:             "future-research-inc",
+				Name:              "Future",
+				Followers:         "13K",
+				Employees:         "201-500",
+				AssociatedMembers: "654",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Backend Engineer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4179354991/",
+							Date:                 mustDate("2025-03-10"),
+							WithSalary:           true, // Salary range: $160,000 - 215,000 / year + equity
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Online fitness training platform",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Los Alamos National Laboratory",
+			Website: "https://www.lanl.gov/",
+			Careers: "https://www.lanl.gov/careers",
+			About:   "https://www.lanl.gov/about",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                5327,
+				IDs:               nil,
+				Alias:             "los-alamos-national-laboratory",
+				Name:              "Los Alamos National Laboratory",
+				Followers:         "157K",
+				Employees:         "10K+",
+				AssociatedMembers: "12,716",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "LANL",
+				Verified: true,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "los-alamos-national-laboratory",
+				Employees: "12,752",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "DevOps Python/Rust Developer (Scientist 1/2)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4181750667/",
+							Date:                 mustDate("2025-03-11"),
+							WithSalary:           true, // Scientist 1 ($94,5-$154,600), Scientist 2 ($104,100-$172,200)
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American laboratory's who provide scientific and engineering support to national security programs",
 		},
 
 		// Template
