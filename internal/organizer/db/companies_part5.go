@@ -269,10 +269,13 @@ func companiesPart5() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Software Developer (Golang / Kubernetes)",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4105023413/",
-							Date:             mustDate("2024-12-20"),
+							Title:                "Software Developer (Golang / Kubernetes)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4105023413/",
+							Date:                 mustDate("2024-12-20"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 						{
 							Title:                "Software Development Engineer in Test — (Go / Kubernetes)",

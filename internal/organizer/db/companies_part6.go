@@ -391,12 +391,6 @@ func companiesPart6() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Senior Software Engineer — Rust Backend",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4094489606/",
-							Date:             mustDate("2024-12-20"),
-						},
-						{
 							Title:                "Back-End Golang Developer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
@@ -416,7 +410,20 @@ func companiesPart6() []domain.CompanyProfile {
 						},
 					},
 				},
-				domain.Rust:    {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer — Rust Backend",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4094489606/",
+							Date:                 mustDate("2024-12-20"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},

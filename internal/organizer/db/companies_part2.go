@@ -4975,23 +4975,20 @@ func companiesPart2() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Data Engineer — Scala",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4034024007/",
-							Date:             mustDate("2024-10-25"),
-						},
-						{
-							Title:            "Data Engineer (Spark, Databricks, Azure, Scala & Java)",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4097642374/",
-							Date:             mustDate("2025-02-15"), // mustDate("2025-01-20"),
+							Title:                "Data Engineer — Scala",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4034024007/",
+							Date:                 mustDate("2024-10-25"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 						{
 							Title:                "Data Engineer (Spark, Databricks, Azure, Scala & Java)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4097642374/",
-							Date:                 mustDate("2025-03-10"),
+							Date:                 mustDate("2025-03-10"), // mustDate("2025-02-15"), // mustDate("2025-01-20"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -6533,10 +6530,13 @@ func companiesPart2() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Lead Software Engineer — Scala",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4055220537/",
-							Date:             mustDate("2024-10-25"),
+							Title:                "Lead Software Engineer — Scala",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4055220537/",
+							Date:                 mustDate("2024-10-25"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 						{
 							Title:                "Lead Software Engineer — Java Full Stack/Scala/React",
@@ -9766,10 +9766,13 @@ func companiesPart2() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Software Engineer III",
-							ShortDescription: "Our stack primarily uses Elixir with the Phoenix Framework",
-							URL:              "https://www.linkedin.com/jobs/view/4011218533/",
-							Date:             mustDate("2024-11-04"),
+							Title:                "Software Engineer III",
+							ShortDescription:     "Our stack primarily uses Elixir with the Phoenix Framework",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4011218533/",
+							Date:                 mustDate("2024-11-04"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 						{
 							Title:                "Senior Software Engineer — Elixir",
@@ -10258,8 +10261,8 @@ func companiesPart2() []domain.CompanyProfile {
 							Remote:               false,
 						},
 						{
-							Title:                "Senior Software Engineer (Rust, Functional Programming",
-							ShortDescription:     "",
+							Title:                "Senior Software Engineer (Rust)",
+							ShortDescription:     "Functional Programming",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4179812772/",
 							Date:                 mustDate("2025-03-11"),
@@ -11566,10 +11569,13 @@ func companiesPart2() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Junior Software Engineer (Golang)",
-							ShortDescription: "Design, develop, and maintain software applications using Golang",
-							URL:              "https://www.linkedin.com/jobs/view/4057794419/",
-							Date:             mustDate("2024-10-25"),
+							Title:                "Junior Software Engineer (Golang)",
+							ShortDescription:     "Design, develop, and maintain software applications using Golang",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4057794419/",
+							Date:                 mustDate("2024-10-25"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 						{
 							Title:                "Software Engineer (Golang)",
