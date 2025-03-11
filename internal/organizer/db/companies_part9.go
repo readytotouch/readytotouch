@@ -1805,18 +1805,19 @@ func companiesPart9() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "ScaleOps",
+			Website: "https://scaleops.com/?utm_source=linkedin&utm_medium=LIpage",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
+				ID:                79471518,
+				IDs:               nil,
+				Alias:             "scaleops-sh",
+				Name:              "ScaleOps - Cloud-Native Optimization",
+				Followers:         "9K",
+				Employees:         "51-200",
+				AssociatedMembers: "62",
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -1840,11 +1841,11 @@ func companiesPart9() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Senior Backend Engineer Go",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4181796179/",
+							Date:                 mustDate("2025-03-11"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -1857,7 +1858,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "Effortlessly reduce cloud costs by up to 80% by automatically optimizing and scaling Kubernetes resources in runtime",
 		},
 
 		// Template
