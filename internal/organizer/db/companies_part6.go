@@ -274,10 +274,13 @@ func companiesPart6() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Senior Software Engineer (Rust/Kotlin)",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4106227833/",
-							Date:             mustDate("2024-12-20"),
+							Title:                "Senior Software Engineer (Rust/Kotlin)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4106227833/",
+							Date:                 mustDate("2024-12-20"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 					},
 				},
