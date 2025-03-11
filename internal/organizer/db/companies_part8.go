@@ -4172,7 +4172,7 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4150365284/",
-							Date:                 mustDate("2025-03-05"), // mustDate("2025-02-11"),
+							Date:                 mustDate("2025-03-11"), // mustDate("2025-03-05"), // mustDate("2025-02-11"),
 							WithSalary:           true,                   // for this position ranges from $130,000-$150,000
 							Remote:               true,
 						},

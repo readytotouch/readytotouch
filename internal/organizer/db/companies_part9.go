@@ -1806,7 +1806,7 @@ func companiesPart9() []domain.CompanyProfile {
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "ScaleOps",
-			Website: "https://scaleops.com/?utm_source=linkedin&utm_medium=LIpage",
+			Website: "https://scaleops.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
@@ -1980,18 +1980,19 @@ func companiesPart9() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "FirstBatch",
+			Website: "https://www.firstbatch.xyz/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
+				ID:                80364972,
+				IDs:               nil,
+				Alias:             "firstbatchai",
+				Name:              "FirstBatch",
+				Followers:         "6K",
+				Employees:         "11-50",
+				AssociatedMembers: "19",
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -2011,21 +2012,21 @@ func companiesPart9() []domain.CompanyProfile {
 				Alias: "",
 			},
 			Languages: domain.Languages{
-				domain.Go: {
+				domain.Go: {},
+				domain.Rust: {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Rust Backend Engineer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4178518636/",
+							Date:                 mustDate("2025-03-11"),
 							WithSalary:           false,
-							Remote:               false,
+							Remote:               true,
 						},
 					},
 				},
-				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},
@@ -2037,18 +2038,19 @@ func companiesPart9() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Syndica",
+			Website: "https://www.syndica.io/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
+				ID:                76168224,
+				IDs:               nil,
+				Alias:             "syndica-io",
+				Name:              "Syndica",
+				Followers:         "2K",
+				Employees:         "11-50",
+				AssociatedMembers: "24",
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -2068,21 +2070,21 @@ func companiesPart9() []domain.CompanyProfile {
 				Alias: "",
 			},
 			Languages: domain.Languages{
-				domain.Go: {
+				domain.Go: {},
+				domain.Rust: {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Senior Rust Software Engineer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4179432496/",
+							Date:                 mustDate("2025-03-11"),
 							WithSalary:           false,
-							Remote:               false,
+							Remote:               true,
 						},
 					},
 				},
-				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},
@@ -2090,23 +2092,25 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			Ignore:           true, // Web3
 		},
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Nelly Solutions",
+			Website: "http://www.getnelly.de/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                74522753,
+				IDs:               nil,
+				Alias:             "nelly-solutions",
+				Name:              "Nelly Solutions",
+				Followers:         "6K",
+				Employees:         "51-200",
+				AssociatedMembers: "132",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -2125,28 +2129,28 @@ func companiesPart9() []domain.CompanyProfile {
 				Alias: "",
 			},
 			Languages: domain.Languages{
-				domain.Go: {
+				domain.Go: {},
+				domain.Rust: {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "(Senior) Software Engineer, Rust",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4125742838/",
+							Date:                 mustDate("2025-03-11"),
 							WithSalary:           false,
 							Remote:               false,
 						},
 					},
 				},
-				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "Nelly is a healthcare payments company",
 		},
 
 		// Template
