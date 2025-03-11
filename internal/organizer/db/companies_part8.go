@@ -5267,8 +5267,8 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4157420922/",
-							Date:                 mustDate("2025-02-18"),
-							WithSalary:           true, // $182.000 - $251.000 per year
+							Date:                 mustDate("2025-03-11"), // mustDate("2025-02-18"),
+							WithSalary:           true,                   // $182.000 - $251.000 per year
 							Remote:               true,
 						},
 						{
@@ -5276,8 +5276,8 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4157425565/",
-							Date:                 mustDate("2025-02-18"),
-							WithSalary:           true, // $218.000 - $300.000 per year
+							Date:                 mustDate("2025-03-11"), // mustDate("2025-02-18"),
+							WithSalary:           true,                   // $218.000 - $300.000 per year
 							Remote:               true,
 						},
 					},
@@ -5351,29 +5351,7 @@ func companiesPart8() []domain.CompanyProfile {
 						},
 					},
 				},
-				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "Senior Software Engineer, Rust",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "https://www.linkedin.com/jobs/view/4157420922/",
-							Date:                 mustDate("2025-03-11"),
-							WithSalary:           true, // $171.000 - $215.000 per year
-							Remote:               true,
-						},
-						{
-							Title:                "Staff Software Engineer — Rust",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "https://www.linkedin.com/jobs/view/4157425565/",
-							Date:                 mustDate("2025-03-11"),
-							WithSalary:           true, // $200.000 - $235.000 per year
-							Remote:               true,
-						},
-					},
-				},
+				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},

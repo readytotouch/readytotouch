@@ -919,8 +919,8 @@ func companiesPart9() []domain.CompanyProfile {
 							Remote:               true,
 						},
 						{
-							Title:                "Senior Scala Engineer (Typelevel & Elasticsearch)",
-							ShortDescription:     "",
+							Title:                "Senior Scala Engineer",
+							ShortDescription:     "Typelevel & Elasticsearch",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4172530640/",
 							Date:                 mustDate("2025-03-11"),
@@ -1236,6 +1236,7 @@ func companiesPart9() []domain.CompanyProfile {
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                4298,
+				IDs:               nil,
 				Alias:             "university-of-virginia",
 				Name:              "University of Virginia",
 				Followers:         "311K",

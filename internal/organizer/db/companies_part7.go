@@ -171,7 +171,7 @@ func companiesPart7() []domain.CompanyProfile {
 							Remote:               false,
 						},
 						{
-							Title:                "Software Engineer (C++/Golang, entry lvl)",
+							Title:                "Software Engineer (C++/Golang)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4181775921/",

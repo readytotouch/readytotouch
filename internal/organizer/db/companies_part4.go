@@ -1107,15 +1107,6 @@ func companiesPart4() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Big Data Developer",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "https://www.linkedin.com/jobs/view/4179836631/",
-							Date:                 mustDate("2025-03-11"),
-							WithSalary:           true, // $10 - $68 per hours
-							Remote:               false,
-						},
-						{
 							Title:                "Senior Spark/Scala Developer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
@@ -1524,10 +1515,13 @@ func companiesPart4() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Go Engineer",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4050960562/",
-							Date:             mustDate("2024-12-17"),
+							Title:                "Go Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4050960562/",
+							Date:                 mustDate("2024-12-17"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 						{
 							Title:                "Go Engineer",
@@ -2970,10 +2964,13 @@ func companiesPart4() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Senior Engineer, Back-End, Golang (Greece)",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4102953810/",
-							Date:             mustDate("2024-12-17"),
+							Title:                "Senior Engineer, Back-End, Golang (Greece)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4102953810/",
+							Date:                 mustDate("2024-12-17"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 						{
 							Title:                "Golang Back-End Developer",
