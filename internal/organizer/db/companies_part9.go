@@ -2936,19 +2936,20 @@ func companiesPart9() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Cisco",
+			Website: "http://www.cisco.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                1063,
+				IDs:               []int{1063, 3805, 11434, 92950, 687352, 2792574, 3517498, 72566046},
+				Alias:             "cisco",
+				Name:              "Cisco",
+				Followers:         "7M",
+				Employees:         "10K+",
+				AssociatedMembers: "95,120",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -2971,11 +2972,11 @@ func companiesPart9() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Software Engineer – FullStack | Golang | Java",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4183841211/",
+							Date:                 mustDate("2025-03-13"),
 							WithSalary:           false,
 							Remote:               false,
 						},
