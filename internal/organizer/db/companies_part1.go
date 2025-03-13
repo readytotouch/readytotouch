@@ -1503,11 +1503,11 @@ func companiesPart1() []domain.CompanyProfile {
 							Remote:               false,
 						},
 						{
-							Title:                "Senior Software Engineer, Languages (Rust, Go, & Python) Dev Infra",
-							ShortDescription:     "",
+							Title:                "Senior Software Engineer, Languages (Rust, Go, Python)",
+							ShortDescription:     "Dev Infra",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4127847711/",
-							Date:                 mustDate("2025-02-10"), // mustDate("2025-01-17"),
+							Date:                 mustDate("2025-03-12"), // mustDate("2025-02-10"), // mustDate("2025-01-17"),
 							WithSalary:           true,                   // The pay range for this role is $121,000 - $198,000.
 							Remote:               false,
 						},
@@ -1541,6 +1541,15 @@ func companiesPart1() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4143422101/",
 							Date:                 mustDate("2025-02-28"),
 							WithSalary:           true, // $128.000 - $210.000 per year
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Software Engineer, Languages (Rust, Go, Python)",
+							ShortDescription:     "Dev Infra",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4127847711/",
+							Date:                 mustDate("2025-03-12"), // mustDate("2025-02-10"), // mustDate("2025-01-17"),
+							WithSalary:           true,                   // The pay range for this role is $121,000 - $198,000.
 							Remote:               false,
 						},
 					},
