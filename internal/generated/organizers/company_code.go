@@ -699,6 +699,24 @@ var (
 		"nelly-solutions":                     696, // Nelly Solutions
 		"skyworks-solutions-inc":              697, // Skyworks Solutions, Inc.
 		"f5":                                  698, // F5
+		"megaport":                            699, // Megaport
+		"fairmoney":                           700, // FairMoney
+		"zalopay":                             701, // Zalopay
+		"td":                                  702, // TD
+		"airudder":                            703, // AI Rudder
+		"guidewire-software":                  704, // Guidewire Software
+		"makropro":                            705, // Makro PRO
+		"infoblox":                            706, // Infoblox
+		"ncrvoyix":                            707, // NCR Voyix
+		"cisco":                               708, // Cisco
+		"prioritysoftware":                    709, // Priority Software
+		"aspire-software":                     710, // Aspire Software
+		"valsoft-corporation":                 711, // Valsoft Corporation
+		"nielseniq":                           712, // NielsenIQ
+		"adform":                              713, // Adform
+		"avathonai":                           714, // Avathon
+		"ringcentral":                         715, // RingCentral
+		"qnx":                                 716, // QNX
 
 	}
 )
