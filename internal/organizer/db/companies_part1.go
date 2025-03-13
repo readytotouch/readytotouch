@@ -21292,7 +21292,7 @@ func companiesPart1() []domain.CompanyProfile {
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Data Engineer — Scala",
-							ShortDescription:     "Ad Tech —Flink",
+							ShortDescription:     "Ad Tech — Flink",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4180220520/",
 							Date:                 mustDate("2025-03-13"),
