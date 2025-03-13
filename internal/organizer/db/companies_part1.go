@@ -1403,6 +1403,15 @@ func companiesPart1() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Principal Engineer (Go)",
+							ShortDescription:     "Analytics",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4182917093/",
+							Date:                 mustDate("2025-03-12"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -3716,7 +3725,7 @@ func companiesPart1() []domain.CompanyProfile {
 							ShortDescription:     "Developer Tooling and Containers",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/3696926569/",
-							Date:                 mustDate("2025-02-19"),
+							Date:                 mustDate("2025-03-13"), // mustDate("2025-02-19"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -4915,7 +4924,7 @@ func companiesPart1() []domain.CompanyProfile {
 							ShortDescription:     "Golang, Kubernetes",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4132150228/",
-							Date:                 mustDate("2025-02-15"), // mustDate("2025-01-23"),
+							Date:                 mustDate("2025-03-12"), // mustDate("2025-02-15"), // mustDate("2025-01-23"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -5505,8 +5514,8 @@ func companiesPart1() []domain.CompanyProfile {
 							ShortDescription:     "PAM (Agents/Clients)",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4135551225/",
-							Date:                 mustDate("2025-02-18"),
-							WithSalary:           true, // $118,000—$178,000 CAD per year
+							Date:                 mustDate("2025-03-12"), // mustDate("2025-02-18"),
+							WithSalary:           true,                   // $118,000—$178,000 CAD per year
 							Remote:               true,
 						},
 						{
@@ -5914,6 +5923,15 @@ func companiesPart1() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4125792093/",
 							Date:                 mustDate("2025-02-11"),
 							WithSalary:           false,
+							Remote:               true,
+						},
+						{
+							Title:                "Senior Backend Software Engineer — Go",
+							ShortDescription:     "Endpoint / Platform",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4182387761/",
+							Date:                 mustDate("2025-03-12"),
+							WithSalary:           true, // $128,000—$150,000 per year
 							Remote:               true,
 						},
 					},
@@ -7124,7 +7142,7 @@ func companiesPart1() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4092129283/",
-							Date:                 mustDate("2025-02-18"),
+							Date:                 mustDate("2025-03-12"), // mustDate("2025-02-18"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -10689,7 +10707,7 @@ func companiesPart1() []domain.CompanyProfile {
 							ShortDescription:     "Global Bank",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/3641494844/",
-							Date:                 mustDate("2025-02-18"),
+							Date:                 mustDate("2025-03-12"), // mustDate("2025-02-18"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -17538,8 +17556,8 @@ func companiesPart1() []domain.CompanyProfile {
 							ShortDescription:     "Cloud Platform Management",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4159521277/",
-							Date:                 mustDate("2025-02-20"),
-							WithSalary:           true, // $147.000 - $203.500 per year
+							Date:                 mustDate("2025-03-13"), // mustDate("2025-02-20"),
+							WithSalary:           true,                   // $147.000 - $203.500 per year
 							Remote:               false,
 						},
 						{
@@ -18116,7 +18134,7 @@ func companiesPart1() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4022259692/",
-							Date:                 mustDate("2025-02-19"), // mustDate("2024-12-05"),
+							Date:                 mustDate("2025-03-13"), // mustDate("2025-02-19"), // mustDate("2024-12-05"),
 							WithSalary:           true,                   // $172.100 - $258.100 per year
 							Remote:               false,
 						},

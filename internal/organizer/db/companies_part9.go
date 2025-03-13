@@ -1451,6 +1451,15 @@ func companiesPart9() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Golang Developer — Plentychannel ",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4178761414/",
+							Date:                 mustDate("2025-03-13"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -2326,6 +2335,190 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "F5 is a multi-cloud application services and security company",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Megaport",
+			Website: "https://www.megaport.com/",
+			Careers: "https://www.megaport.com/careers/",
+			About:   "https://www.megaport.com/about-megaport/",
+			Blog:    "https://www.megaport.com/blog/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3225864,
+				IDs:               nil,
+				Alias:             "megaport",
+				Name:              "Megaport",
+				Followers:         "32K",
+				Employees:         "201-500",
+				AssociatedMembers: "377",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "megaport",
+				Verified: true,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer (Go)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4181511391/",
+							Date:                 mustDate("2025-03-13"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Australian AWS Direct Connect ecosystem",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "FairMoney",
+			Website: "https://fairmoney.io/",
+			Careers: "",
+			About:   "https://fairmoney.io/about/",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                11707115,
+				IDs:               nil,
+				Alias:             "fairmoney",
+				Name:              "FairMoney",
+				Followers:         "142K",
+				Employees:         "501-1K",
+				AssociatedMembers: "1,029",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "fairmoney",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "fairmoney",
+				Employees: "570",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer — Backend (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4178759491/",
+							Date:                 mustDate("2025-03-12"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Nigerian mobile banking for private and business borrowers",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Zalopay",
+			Website: "https://zalopay.vn/",
+			Careers: "",
+			About:   "",
+			Blog:    "https://engineering.zalopay.vn/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                31297705,
+				IDs:               nil,
+				Alias:             "zalopay",
+				Name:              "Zalopay",
+				Followers:         "44K",
+				Employees:         "501-1K",
+				AssociatedMembers: "406",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer — Golang",
+							ShortDescription:     "Merchant Platform",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4180086053/",
+							Date:                 mustDate("2025-03-12"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Vietnamese mobile wallet and payment platform associated with the Zalo messaging app",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
 		},
 
 		// Template
