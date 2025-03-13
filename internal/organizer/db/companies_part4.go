@@ -110,7 +110,7 @@ func companiesPart4() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4093559031/",
-							Date:                 mustDate("2025-02-19"), // mustDate("2024-12-10"),
+							Date:                 mustDate("2025-03-13"), // mustDate("2025-02-19"), // mustDate("2024-12-10"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -1135,8 +1135,17 @@ func companiesPart4() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4179832865/",
-							Date:                 mustDate("2025-03-11"),
-							WithSalary:           true, // $10 - $90 per hours
+							Date:                 mustDate("2025-03-13"), // mustDate("2025-03-11"),
+							WithSalary:           true,                   // $10 - $90 per hours
+							Remote:               false,
+						},
+						{
+							Title:                "Application developer (Scala and Spark)", // 1 yr contract
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4180546490/",
+							Date:                 mustDate("2025-03-12"),
+							WithSalary:           true, // $05 - $97 per hours
 							Remote:               false,
 						},
 					},
@@ -3280,6 +3289,15 @@ func companiesPart4() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4100798671/",
 							Date:                 mustDate("2025-02-04"), // mustDate("2024-12-14"),
 							WithSalary:           true,                   // $146.600 — $203.100 per year
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Software Engineer (Java/Go)",
+							ShortDescription:     "Traffic Insights",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4178793071/",
+							Date:                 mustDate("2025-03-12"),
+							WithSalary:           false,
 							Remote:               false,
 						},
 					},

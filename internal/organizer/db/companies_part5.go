@@ -939,8 +939,8 @@ func companiesPart5() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4153895434/",
-							Date:                 mustDate("2025-02-19"),
-							WithSalary:           true, // 350-500k (BRL) annual base salary + annual variable bonus
+							Date:                 mustDate("2025-03-12"), // mustDate("2025-02-19"),
+							WithSalary:           true,                   // 350-500k (BRL) annual base salary + annual variable bonus
 							Remote:               true,
 						},
 						{
@@ -948,8 +948,8 @@ func companiesPart5() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4153891886/",
-							Date:                 mustDate("2025-02-18"),
-							WithSalary:           true, // 250-350k (BRL)annual base salary + annual variable bonus
+							Date:                 mustDate("2025-03-12"), // mustDate("2025-02-18"),
+							WithSalary:           true,                   // 250-350k (BRL)annual base salary + annual variable bonus
 							Remote:               true,
 						},
 					},
