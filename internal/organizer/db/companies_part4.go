@@ -1135,8 +1135,17 @@ func companiesPart4() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4179832865/",
-							Date:                 mustDate("2025-03-11"),
-							WithSalary:           true, // $10 - $90 per hours
+							Date:                 mustDate("2025-03-13"), // mustDate("2025-03-11"),
+							WithSalary:           true,                   // $10 - $90 per hours
+							Remote:               false,
+						},
+						{
+							Title:                "Application developer (Scala and Spark)", // 1 yr contract
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4180546490/",
+							Date:                 mustDate("2025-03-12"),
+							WithSalary:           true, // $05 - $97 per hours
 							Remote:               false,
 						},
 					},

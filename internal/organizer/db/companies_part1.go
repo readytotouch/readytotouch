@@ -5721,7 +5721,7 @@ func companiesPart1() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4108568196/",
-							Date:                 mustDate("2025-03-08"), // mustDate("2025-02-28"), // mustDate("2025-02-11"), // mustDate("2024-01-16"), // mustDate("2024-12-23"),
+							Date:                 mustDate("2025-03-13"), // mustDate("2025-03-08"), // mustDate("2025-02-28"), // mustDate("2025-02-11"), // mustDate("2024-01-16"), // mustDate("2024-12-23"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -18723,8 +18723,8 @@ func companiesPart1() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4114584098/",
-							Date:                 mustDate("2025-02-11"),
-							WithSalary:           true, // The base salary range for this position is between $180,000 - $230,000
+							Date:                 mustDate("2025-03-13"), // mustDate("2025-02-11"),
+							WithSalary:           true,                   // The base salary range for this position is between $180,000 - $230,000
 							Remote:               false,
 						},
 						{
@@ -19880,6 +19880,33 @@ func companiesPart1() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4108998246/",
 							Date:                 mustDate("2025-03-04"), // mustDate("2025-02-11"), // mustDate("2025-01-17"),
 							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Rust Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4182380521/",
+							Date:                 mustDate("2025-03-12"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Principal Rust Software Engineer",
+							ShortDescription:     "Databases",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4182384236/",
+							Date:                 mustDate("2025-03-12"),
+							WithSalary:           true, // $225.000 - $300.000 per year
+							Remote:               false,
+						},
+						{
+							Title:                "Principal Rust Software Engineer",
+							ShortDescription:     "AI",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4182385164/",
+							Date:                 mustDate("2025-03-12"),
+							WithSalary:           true, // $225.000 - $300.000 per year
 							Remote:               false,
 						},
 					},
@@ -21258,9 +21285,22 @@ func companiesPart1() []domain.CompanyProfile {
 						},
 					},
 				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
+				domain.Rust: {},
+				domain.Zig:  {},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Data Engineer — Scala",
+							ShortDescription:     "Ad Tech —Flink",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4180220520/",
+							Date:                 mustDate("2025-03-13"),
+							WithSalary:           true, // $96,600.92 USD-$226,408.42 per year
+							Remote:               true,
+						},
+					},
+				},
 				domain.Elixir:  {},
 				domain.Clojure: {},
 				domain.Haskell: {},
