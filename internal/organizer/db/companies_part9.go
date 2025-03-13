@@ -3110,19 +3110,20 @@ func companiesPart9() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Valsoft Corporation",
+			Website: "http://www.valsoftcorp.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                10396649,
+				IDs:               nil,
+				Alias:             "valsoft-corporation",
+				Name:              "Valsoft Corporation",
+				Followers:         "60K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "336",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -3145,11 +3146,11 @@ func companiesPart9() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Senior Software Developer – Golang",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4182769280/",
+							Date:                 mustDate("2025-03-12"),
 							WithSalary:           false,
 							Remote:               false,
 						},
