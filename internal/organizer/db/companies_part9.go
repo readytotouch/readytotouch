@@ -1452,8 +1452,8 @@ func companiesPart9() []domain.CompanyProfile {
 							Remote:               false,
 						},
 						{
-							Title:                "Golang Developer — Plentychannel ",
-							ShortDescription:     "",
+							Title:                "Golang Developer",
+							ShortDescription:     "Plentychannel",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4178761414/",
 							Date:                 mustDate("2025-03-13"),
@@ -2393,7 +2393,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "Australian AWS Direct Connect ecosystem",
+			ShortDescription: "Australian AWS Direct Connect eco-system",
 		},
 
 		{
