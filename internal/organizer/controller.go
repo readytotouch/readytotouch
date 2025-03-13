@@ -117,7 +117,7 @@ func (c *Controller) CompaniesV1(ctx *gin.Context) {
 		return
 	}
 
-	if authUserID == 0 && organizerFeature.Organizer.Language == domain.Go {
+	if c.softAuth(authUserID, organizerFeature.Organizer.Language) {
 		ctx.Redirect(http.StatusFound, "/organizers/golang/welcome"+c.redirect(ctx.Request.URL.Path))
 
 		return
@@ -167,7 +167,7 @@ func (c *Controller) CompaniesV2(ctx *gin.Context) {
 		return
 	}
 
-	if authUserID == 0 && organizerFeature.Organizer.Language == domain.Go {
+	if c.softAuth(authUserID, organizerFeature.Organizer.Language) {
 		ctx.Redirect(http.StatusFound, "/organizers/golang/welcome"+c.redirect(ctx.Request.URL.Path))
 
 		return
@@ -320,7 +320,7 @@ func (c *Controller) CompanyV2(ctx *gin.Context) {
 		return
 	}
 
-	if authUserID == 0 && organizerFeature.Organizer.Language == domain.Go {
+	if c.softAuth(authUserID, organizerFeature.Organizer.Language) {
 		ctx.Redirect(http.StatusFound, "/organizers/golang/welcome"+c.redirect(ctx.Request.URL.Path))
 
 		return
@@ -469,7 +469,7 @@ func (c *Controller) Vacancies(ctx *gin.Context) {
 		return
 	}
 
-	if authUserID == 0 && organizerFeature.Organizer.Language == domain.Go {
+	if c.softAuth(authUserID, organizerFeature.Organizer.Language) {
 		ctx.Redirect(http.StatusFound, "/organizers/golang/welcome"+c.redirect(ctx.Request.URL.Path))
 
 		return
@@ -1381,6 +1381,33 @@ func (c *Controller) anyRemoteVacancy(vacancies []domain.Vacancy) bool {
 		if vacancy.Remote {
 			return true
 		}
+	}
+
+	return false
+}
+
+func (c *Controller) softAuth(authUserID int64, language domain.Language) bool {
+	if authUserID > 0 {
+		return false
+	}
+
+	minute := time.Now().Minute()
+
+	switch language {
+	case domain.Go:
+		return minute%2 == 0
+	case domain.Rust:
+		return minute%4 == 0
+	case domain.Zig:
+		return minute%16 == 0
+	case domain.Scala:
+		return minute%4 == 0
+	case domain.Elixir:
+		return minute%8 == 0
+	case domain.Clojure:
+		return minute%16 == 0
+	case domain.Haskell:
+		return minute%16 == 0
 	}
 
 	return false
