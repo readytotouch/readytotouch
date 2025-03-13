@@ -2878,18 +2878,19 @@ func companiesPart9() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "NCR Voyix",
+			Website: "https://www.ncrvoyix.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
+				ID:                96157938,
+				IDs:               nil,
+				Alias:             "ncrvoyix",
+				Name:              "NCR Voyix",
+				Followers:         "112K",
+				Employees:         "10K+",
+				AssociatedMembers: "6,668",
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -2913,11 +2914,11 @@ func companiesPart9() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Software Engineer II (Golang – Kubernetes)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4137578941/",
+							Date:                 mustDate("2025-03-13"),
 							WithSalary:           false,
 							Remote:               false,
 						},
