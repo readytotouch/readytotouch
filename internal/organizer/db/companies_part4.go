@@ -1145,7 +1145,7 @@ func companiesPart4() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4180546490/",
 							Date:                 mustDate("2025-03-12"),
-							WithSalary:           true, // $05 - $97 per hours
+							WithSalary:           true, // $95 - $97 per hours
 							Remote:               false,
 						},
 					},
