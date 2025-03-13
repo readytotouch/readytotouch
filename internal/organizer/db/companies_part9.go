@@ -3519,19 +3519,20 @@ func companiesPart9() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "RingCentral",
+			Website: "https://www.ringcentral.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                60868,
+				IDs:               nil,
+				Alias:             "ringcentral",
+				Name:              "RingCentral",
+				Followers:         "254K",
+				Employees:         "5K-10K",
+				AssociatedMembers: "6,328",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -3555,11 +3556,11 @@ func companiesPart9() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
-							ShortDescription:     "",
+							Title:                "Rust developer",
+							ShortDescription:     "Core Media AI",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4168118534/",
+							Date:                 mustDate("2025-03-13"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3576,19 +3577,20 @@ func companiesPart9() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "QNX",
+			Website: "https://blackberry.qnx.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                9889,
+				IDs:               nil,
+				Alias:             "qnx",
+				Name:              "QNX",
+				Followers:         "26K",
+				Employees:         "201-500",
+				AssociatedMembers: "704",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -3612,11 +3614,11 @@ func companiesPart9() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Rust Systems Software Developer II",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4151541268/",
+							Date:                 mustDate("2025-03-11"),
 							WithSalary:           false,
 							Remote:               false,
 						},
