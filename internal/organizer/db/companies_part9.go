@@ -3460,19 +3460,20 @@ func companiesPart9() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Cryptio",
+			Website: "https://cryptio.co/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                11423070,
+				IDs:               nil,
+				Alias:             "cryptio",
+				Name:              "Cryptio",
+				Followers:         "8K",
+				Employees:         "11-50",
+				AssociatedMembers: "97",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -3496,13 +3497,13 @@ func companiesPart9() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Senior Rust Engineer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4183189232/",
+							Date:                 mustDate("2025-03-13"),
 							WithSalary:           false,
-							Remote:               false,
+							Remote:               true,
 						},
 					},
 				},
@@ -3513,6 +3514,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			Ignore:           true, // Crypto
 		},
 		{
 			ID:      0,  // system
