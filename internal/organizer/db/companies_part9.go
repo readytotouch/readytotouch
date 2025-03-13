@@ -3401,19 +3401,20 @@ func companiesPart9() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Kraken Digital Asset Exchange",
+			Website: "https://kraken.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                3787845,
+				IDs:               []int{3787845, 69222723},
+				Alias:             "krakenfx",
+				Name:              "Kraken Digital Asset Exchange",
+				Followers:         "208K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "851",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -3437,13 +3438,13 @@ func companiesPart9() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Senior Software Engineer – Rust",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
-							WithSalary:           false,
-							Remote:               false,
+							URL:                  "https://www.linkedin.com/jobs/view/4137684962/",
+							Date:                 mustDate("2025-03-14"),
+							WithSalary:           true,
+							Remote:               true,
 						},
 					},
 				},
@@ -3454,6 +3455,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			Ignore:           true, // Crypto
 		},
 		{
 			ID:      0,  // system
