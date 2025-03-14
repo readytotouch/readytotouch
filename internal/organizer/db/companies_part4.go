@@ -186,9 +186,9 @@ func companiesPart4() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4101282630/",
-							Date:                 mustDate("2024-12-17"),
+							Date:                 mustDate("2025-03-14"), // mustDate("2024-12-17"),
 							WithSalary:           false,
-							Remote:               false,
+							Remote:               true,
 						},
 					},
 				},
@@ -1125,8 +1125,21 @@ func companiesPart4() []domain.CompanyProfile {
 						},
 					},
 				},
-				domain.Rust: {},
-				domain.Zig:  {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Rust Developer",
+							ShortDescription:     "1+ years experience with Rust",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4181584928/",
+							Date:                 mustDate("2025-03-13"),
+							WithSalary:           true, // $75 - $85 per hours
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig: {},
 				domain.Scala: {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
@@ -2590,8 +2603,8 @@ func companiesPart4() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4144403458/",
-							Date:                 mustDate("2025-02-27"),
-							WithSalary:           true, // starting from 3000 up to 6000 Euro gross monthly
+							Date:                 mustDate("2025-03-14"), // mustDate("2025-02-27"),
+							WithSalary:           true,                   // starting from 3000 up to 6000 Euro gross monthly
 							Remote:               false,
 						},
 					},
@@ -2692,6 +2705,15 @@ func companiesPart4() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4146287449/",
 							Date:                 mustDate("2025-02-28"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+						{
+							Title:                "Intermediate Backend Software Developer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4182635004/",
+							Date:                 mustDate("2025-03-14"),
 							WithSalary:           false,
 							Remote:               true,
 						},

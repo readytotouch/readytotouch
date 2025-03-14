@@ -2506,8 +2506,8 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4125038308/",
-							Date:                 mustDate("2025-02-15"),
-							WithSalary:           true, // $89.300 - 198.900 per year
+							Date:                 mustDate("2025-03-08"), // mustDate("2025-02-15"),
+							WithSalary:           true,                   // $89.300 - 198.900 per year
 							Remote:               true,
 						},
 					},
@@ -5629,7 +5629,7 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "Editing Foundations",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4160846209/",
-							Date:                 mustDate("2025-02-21"),
+							Date:                 mustDate("2025-03-14"), // mustDate("2025-02-21"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -5688,7 +5688,7 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4160542551/",
-							Date:                 mustDate("2025-02-20"),
+							Date:                 mustDate("2025-03-14"), // mustDate("2025-02-20"),
 							WithSalary:           false,
 							Remote:               false,
 						},
