@@ -4053,19 +4053,20 @@ func companiesPart9() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
-			Careers: "",
+			Name:    "Chợ Tốt",
+			Website: "https://chotot.com/",
+			Careers: "https://careers.chotot.com/",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                3780320,
+				IDs:               []int{3780320, 78359837},
+				Alias:             "cho-tot",
+				Name:              "Chợ Tốt",
+				Followers:         "28K",
+				Employees:         "201-500",
+				AssociatedMembers: "232",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -4088,11 +4089,11 @@ func companiesPart9() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Backend Engineer (Java, Golang, Python)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4178756795/",
+							Date:                 mustDate("2025-03-12"),
 							WithSalary:           false,
 							Remote:               false,
 						},
