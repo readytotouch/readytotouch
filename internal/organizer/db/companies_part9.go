@@ -3816,18 +3816,19 @@ func companiesPart9() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Kiln",
+			Website: "https://www.kiln.fi/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
+				ID:                28150174,
+				IDs:               nil,
+				Alias:             "kiln-fi",
+				Name:              "Kiln",
+				Followers:         "8K",
+				Employees:         "51-200",
+				AssociatedMembers: "124",
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -3851,13 +3852,13 @@ func companiesPart9() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Senior Backend Engineer – Golang",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4184623805/",
+							Date:                 mustDate("2025-03-14"),
 							WithSalary:           false,
-							Remote:               false,
+							Remote:               true,
 						},
 					},
 				},
@@ -3869,6 +3870,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			Ignore:           true, // Crypto
 		},
 		{
 			ID:      0,  // system
