@@ -4463,18 +4463,19 @@ func companiesPart9() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Clinia",
+			Website: "https://clinia.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
+				ID:                11160528,
+				IDs:               nil,
+				Alias:             "clinia",
+				Name:              "Clinia",
+				Followers:         "3K",
+				Employees:         "11-50",
+				AssociatedMembers: "41",
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -4498,13 +4499,13 @@ func companiesPart9() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Senior Go Developer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4183894600/",
+							Date:                 mustDate("2025-03-14"),
 							WithSalary:           false,
-							Remote:               false,
+							Remote:               true,
 						},
 					},
 				},
