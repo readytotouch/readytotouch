@@ -118,14 +118,15 @@ type PreparedCompany struct {
 }
 
 type PreparedVacancy struct {
-	ID               int64 // populates from the VacancyAliasMap
-	Company          PreparedCompany
-	Title            string
-	ShortDescription string // proof that the vacancy is for a particular technology
-	URL              string
-	Date             time.Time
-	WithSalary       bool // for future use
-	Remote           bool // for future use
+	ID                   int64 // populates from the VacancyAliasMap
+	Company              PreparedCompany
+	Title                string
+	ShortDescription     string // proof that the vacancy is for a particular technology
+	SwitchingOpportunity string // proof that the vacancy is for a particular technology
+	URL                  string
+	Date                 time.Time
+	WithSalary           bool // for future use
+	Remote               bool // for future use
 }
 
 type LanguageProfile struct {

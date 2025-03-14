@@ -223,10 +223,13 @@ func companiesPart2() []domain.CompanyProfile {
 					Vacancies:               []domain.Vacancy{
 						/*
 							{
-								Title:            "",
-								ShortDescription: "",
-								URL:              "https://app.welcometothejungle.com/jobs/63inUEkF",
-								Date:             mustDate(""),
+								Title:                "",
+								ShortDescription:     "",
+								SwitchingOpportunity: "",
+								URL:                  "",
+								Date:                 mustDate(""),
+								WithSalary:           false,
+								Remote:               false,
 							},
 						*/
 					},
@@ -3321,10 +3324,13 @@ func companiesPart2() []domain.CompanyProfile {
 					Vacancies:               []domain.Vacancy{
 						/*
 							{
-								Title:            "",
-								ShortDescription: "",
-								URL:              "",
-								Date:             mustDate(""),
+								Title:                "",
+								ShortDescription:     "",
+								SwitchingOpportunity: "",
+								URL:                  "",
+								Date:                 mustDate(""),
+								WithSalary:           false,
+								Remote:               false,
 							},
 						*/
 					},

@@ -408,14 +408,15 @@ func (c *Controller) CompanyV2(ctx *gin.Context) {
 
 		if ok {
 			preparedVacancies = append(preparedVacancies, domain.PreparedVacancy{
-				ID:               id,
-				Company:          preparedCompany,
-				Title:            vacancy.Title,
-				ShortDescription: vacancy.ShortDescription,
-				URL:              vacancy.URL,
-				Date:             vacancy.Date,
-				WithSalary:       vacancy.WithSalary,
-				Remote:           vacancy.Remote,
+				ID:                   id,
+				Company:              preparedCompany,
+				Title:                vacancy.Title,
+				ShortDescription:     vacancy.ShortDescription,
+				SwitchingOpportunity: vacancy.SwitchingOpportunity,
+				URL:                  vacancy.URL,
+				Date:                 vacancy.Date,
+				WithSalary:           vacancy.WithSalary,
+				Remote:               vacancy.Remote,
 			})
 			vacancyIDs = append(vacancyIDs, id)
 		}
@@ -500,14 +501,15 @@ func (c *Controller) Vacancies(ctx *gin.Context) {
 
 			if ok {
 				preparedVacancies = append(preparedVacancies, domain.PreparedVacancy{
-					ID:               id,
-					Company:          preparedCompany,
-					Title:            vacancy.Title,
-					ShortDescription: vacancy.ShortDescription,
-					URL:              vacancy.URL,
-					Date:             vacancy.Date,
-					WithSalary:       vacancy.WithSalary,
-					Remote:           vacancy.Remote,
+					ID:                   id,
+					Company:              preparedCompany,
+					Title:                vacancy.Title,
+					ShortDescription:     vacancy.ShortDescription,
+					SwitchingOpportunity: vacancy.SwitchingOpportunity,
+					URL:                  vacancy.URL,
+					Date:                 vacancy.Date,
+					WithSalary:           vacancy.WithSalary,
+					Remote:               vacancy.Remote,
 				})
 				vacancyIDs = append(vacancyIDs, id)
 			}
