@@ -4169,18 +4169,19 @@ func companiesPart9() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Mindrift",
+			Website: "https://mindrift.ai/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
+				ID:                101576014,
+				IDs:               nil,
+				Alias:             "mindrift-ai",
+				Name:              "Mindrift",
+				Followers:         "380K",
+				Employees:         "501-1K",
+				AssociatedMembers: "1,135",
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -4204,13 +4205,13 @@ func companiesPart9() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
-							ShortDescription:     "",
+							Title:                "Software Developer (Golang)",
+							ShortDescription:     "AI Tutor",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4182668629/",
+							Date:                 mustDate("2025-03-14"),
 							WithSalary:           false,
-							Remote:               false,
+							Remote:               true,
 						},
 					},
 				},
