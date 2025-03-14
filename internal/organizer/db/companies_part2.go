@@ -12363,11 +12363,12 @@ func companiesPart2() []domain.CompanyProfile {
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                5390798,
+				IDs:               nil,
 				Alias:             "hp",
 				Name:              "HP",
 				Followers:         "5M",
 				Employees:         "10K+",
-				AssociatedMembers: "122,744",
+				AssociatedMembers: "183,869",
 				Verified:          true,
 			},
 			BlindProfile: domain.BlindProfile{
