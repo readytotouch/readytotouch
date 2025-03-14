@@ -4111,19 +4111,20 @@ func companiesPart9() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Simulmedia",
+			Website: "https://www.simulmedia.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                237095,
+				IDs:               nil,
+				Alias:             "simulmedia",
+				Name:              "Simulmedia",
+				Followers:         "13K",
+				Employees:         "51-200",
+				AssociatedMembers: "89",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -4146,11 +4147,11 @@ func companiesPart9() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Senior Golang Engineer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4182751037/",
+							Date:                 mustDate("2025-03-12"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -4163,7 +4164,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "Simulmedia is a cross-channel TV advertising platform",
 		},
 		{
 			ID:      0,  // system
