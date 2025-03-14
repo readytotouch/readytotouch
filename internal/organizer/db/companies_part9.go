@@ -3696,19 +3696,20 @@ func companiesPart9() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
-			Careers: "",
+			Name:    "smava",
+			Website: "https://www.smava.de/",
+			Careers: "https://www.smava.de/jobs",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                643119,
+				IDs:               nil,
+				Alias:             "smava",
+				Name:              "smava",
+				Followers:         "7K",
+				Employees:         "501-1K",
+				AssociatedMembers: "299",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -3731,11 +3732,11 @@ func companiesPart9() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Senior Software Engineer – Golang & NodeJS",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4184824435/",
+							Date:                 mustDate("2025-03-14"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3749,6 +3750,9 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
 		},
 		{
 			ID:      0,  // system
