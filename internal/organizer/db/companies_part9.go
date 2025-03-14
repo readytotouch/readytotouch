@@ -4697,19 +4697,20 @@ func companiesPart9() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "FIS",
+			Website: "http://www.fisglobal.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                3128,
+				IDs:               []int{3128, 804638, 76916563},
+				Alias:             "fis",
+				Name:              "FIS",
+				Followers:         "756K",
+				Employees:         "10K+",
+				AssociatedMembers: "46,542",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -4735,11 +4736,11 @@ func companiesPart9() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Lead Engineer – Development (BigData, Scala)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4172072369/",
+							Date:                 mustDate("2025-03-12"),
 							WithSalary:           false,
 							Remote:               false,
 						},
