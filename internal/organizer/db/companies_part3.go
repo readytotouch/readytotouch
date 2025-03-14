@@ -184,6 +184,15 @@ func companiesPart3() []domain.CompanyProfile {
 							WithSalary:           true, // $144,200 - $164,600 per year
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Software Engineer, Full Stack (Python, Go, JavaScript)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4184355686/",
+							Date:                 mustDate("2025-03-14"),
+							WithSalary:           true, // $144,200 - $164,600 per year
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
@@ -2664,6 +2673,15 @@ func companiesPart3() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4168495099/",
 							Date:                 mustDate("2025-02-27"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+						{
+							Title:                "Senior Full-Stack Developer (Python/Go)",
+							ShortDescription:     "R&D team",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4184053290/",
+							Date:                 mustDate("2025-03-13"),
 							WithSalary:           false,
 							Remote:               true,
 						},

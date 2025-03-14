@@ -398,7 +398,7 @@ func StreamOrganizersVacanciesV2(qw422016 *qt422016.Writer,
 						</figcaption>
 					</figure>
 					<p class="js-vacancy-short-description card__text card__text--organizer">`)
-		qw422016.E().S(vacancy.ShortDescription)
+		qw422016.E().S(vacancyDescription(vacancy))
 		qw422016.N().S(`</p>
 					<div class="card__footer">
 						<div class="card__details">

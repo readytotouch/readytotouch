@@ -717,6 +717,19 @@ var (
 		"avathonai":                           714, // Avathon
 		"ringcentral":                         715, // RingCentral
 		"qnx":                                 716, // QNX
+		"solariscompany":                      717, // Solaris SE
+		"smava":                               718, // smava
+		"synitidata":                          719, // Syniti
+		"goldman-sachs":                       720, // Goldman Sachs
+		"cho-tot":                             721, // Chợ Tốt
+		"simulmedia":                          722, // Simulmedia
+		"mindrift-ai":                         723, // Mindrift
+		"hewlett-packard-enterprise":          724, // Hewlett Packard Enterprise
+		"ionos":                               725, // IONOS
+		"velmie":                              726, // Velmie
+		"clinia":                              727, // Clinia
+		"cloudwick":                           728, // Cloudwick
+		"fis":                                 729, // FIS
 
 	}
 )

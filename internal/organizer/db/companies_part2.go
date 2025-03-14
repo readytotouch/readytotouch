@@ -83,6 +83,15 @@ func companiesPart2() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Backend Engineer (Go/Java/Python)",
+							ShortDescription:     "eKYC",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4181371118/",
+							Date:                 mustDate("2025-03-14"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -214,10 +223,13 @@ func companiesPart2() []domain.CompanyProfile {
 					Vacancies:               []domain.Vacancy{
 						/*
 							{
-								Title:            "",
-								ShortDescription: "",
-								URL:              "https://app.welcometothejungle.com/jobs/63inUEkF",
-								Date:             mustDate(""),
+								Title:                "",
+								ShortDescription:     "",
+								SwitchingOpportunity: "",
+								URL:                  "",
+								Date:                 mustDate(""),
+								WithSalary:           false,
+								Remote:               false,
 							},
 						*/
 					},
@@ -1243,7 +1255,7 @@ func companiesPart2() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4079483983/",
-							Date:                 mustDate("2025-01-31"), // mustDate("2024-12-13"), // mustDate("2024-12-11")
+							Date:                 mustDate("2025-03-14"), // mustDate("2025-01-31"), // mustDate("2024-12-13"), // mustDate("2024-12-11")
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -1312,7 +1324,7 @@ func companiesPart2() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4132899360/",
-							Date:                 mustDate("2025-03-12"), // mustDate("2025-03-06"), // mustDate("2025-02-18"), // mustDate("2025-02-05"), // mustDate("2025-01-25"),
+							Date:                 mustDate("2025-03-14"), // mustDate("2025-03-12"), // mustDate("2025-03-06"), // mustDate("2025-02-18"), // mustDate("2025-02-05"), // mustDate("2025-01-25"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3312,10 +3324,13 @@ func companiesPart2() []domain.CompanyProfile {
 					Vacancies:               []domain.Vacancy{
 						/*
 							{
-								Title:            "",
-								ShortDescription: "",
-								URL:              "",
-								Date:             mustDate(""),
+								Title:                "",
+								ShortDescription:     "",
+								SwitchingOpportunity: "",
+								URL:                  "",
+								Date:                 mustDate(""),
+								WithSalary:           false,
+								Remote:               false,
 							},
 						*/
 					},
@@ -5169,6 +5184,15 @@ func companiesPart2() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Data Engineer in Azure using Databricks for Scala/Python",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4181826623/",
+							Date:                 mustDate("2025-03-13"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Elixir:  {},
@@ -6044,6 +6068,24 @@ func companiesPart2() []domain.CompanyProfile {
 							Date:                 mustDate("2025-03-12"),
 							WithSalary:           true, // $101,000 - $160,000 per year
 							Remote:               false,
+						},
+						{
+							Title:                "Staff Software Engineer — React, GraphQL, Go, Java",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4181802387/",
+							Date:                 mustDate("2025-03-13"),
+							WithSalary:           true, // $100,000 - $200,000 per year
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Software Engineer, Golang",
+							ShortDescription:     "Cloud Native",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4181805128/",
+							Date:                 mustDate("2025-03-13"),
+							WithSalary:           true, // $119,000 – $165,000 per year
+							Remote:               true,
 						},
 					},
 				},
@@ -11061,7 +11103,7 @@ func companiesPart2() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4102045400/",
-							Date:                 mustDate("2025-02-13"), // mustDate("2024-12-16"),
+							Date:                 mustDate("2025-03-14"), // mustDate("2025-02-13"), // mustDate("2024-12-16"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -12321,11 +12363,12 @@ func companiesPart2() []domain.CompanyProfile {
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                5390798,
+				IDs:               nil,
 				Alias:             "hp",
 				Name:              "HP",
 				Followers:         "5M",
 				Employees:         "10K+",
-				AssociatedMembers: "122,744",
+				AssociatedMembers: "183,869",
 				Verified:          true,
 			},
 			BlindProfile: domain.BlindProfile{
