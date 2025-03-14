@@ -86,6 +86,18 @@ func industryNames(source []Industry) string {
 	return strings.Join(result, ", ")
 }
 
+func vacancyDescription(vacancy domain.PreparedVacancy) string {
+	if vacancy.ShortDescription == "" {
+		return vacancy.SwitchingOpportunity
+	}
+
+	if vacancy.SwitchingOpportunity == "" {
+		return vacancy.ShortDescription
+	}
+
+	return vacancy.ShortDescription + ". " + vacancy.SwitchingOpportunity
+}
+
 func formatLinkedInFollowers(s string) string {
 	if s == "" {
 		return "???"

@@ -322,7 +322,7 @@
 							<a href="/organizers/{%s organizerFeature.Organizer.Alias %}/companies/{%s vacancy.Company.Alias %}" class="card__sub-headline vacancy__link">{%s vacancy.Company.Name %}</a>
 						</figcaption>
 					</figure>
-					<p class="js-vacancy-short-description card__text card__text--organizer">{%s vacancy.ShortDescription %}</p>
+					<p class="js-vacancy-short-description card__text card__text--organizer">{%s vacancyDescription(vacancy) %}</p>
 					<div class="card__footer">
 						<div class="card__details">
 							<figure class="card__figure" title="{%s formatVacancyDate(vacancy.Date) %}">

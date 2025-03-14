@@ -5659,7 +5659,7 @@ func companiesPart1() []domain.CompanyProfile {
 						{
 							Title:                "Senior Backend Engineer Go",
 							ShortDescription:     "Saily",
-							SwitchingOpportunity: "",
+							SwitchingOpportunity: "Senior Backend Developers interested in transitioning to Golang from other backend languages!",
 							URL:                  "https://www.linkedin.com/jobs/view/4184388612/",
 							Date:                 mustDate("2025-03-14"),
 							WithSalary:           true, // Gross Salary 4760-7200 EUR per month
