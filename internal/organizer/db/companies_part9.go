@@ -4639,19 +4639,20 @@ func companiesPart9() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Cloudwick",
+			Website: "https://cloudwick.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                2043823,
+				IDs:               nil,
+				Alias:             "cloudwick",
+				Name:              "Cloudwick",
+				Followers:         "13K",
+				Employees:         "201-500",
+				AssociatedMembers: "143",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -4677,11 +4678,11 @@ func companiesPart9() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
-							ShortDescription:     "",
+							Title:                "Data Engineer (Health Domain)",
+							ShortDescription:     "Design, develop, and maintain ETL processes and data pipelines with Scala/PySpark",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4182758670/",
+							Date:                 mustDate("2025-03-13"),
 							WithSalary:           false,
 							Remote:               false,
 						},
