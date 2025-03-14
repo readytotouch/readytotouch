@@ -6965,11 +6965,12 @@ func companiesPart1() []domain.CompanyProfile {
 			Blog:    "https://engineering.careem.com/tech/categories/engineering",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                2852511,
+				IDs:               nil,
 				Alias:             "careem",
 				Name:              "Careem",
-				Followers:         "500K",
+				Followers:         "513K",
 				Employees:         "1K-5K",
-				AssociatedMembers: "5,759",
+				AssociatedMembers: "5,898",
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -6999,17 +7000,15 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Go: {
 					GitHubRepositoriesCount: 1,
 					Vacancies:               []domain.Vacancy{
-						/*
-							{
-								Title:                "",
-								ShortDescription:     "",
-								SwitchingOpportunity: "",
-								URL:                  "",
-								Date:                 mustDate(""),
-								WithSalary:           false,
-								Remote:               false,
-							},
-						*/
+						{
+							Title:                "Senior Software Engineer I – Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4181395273/",
+							Date:                 mustDate("2025-03-14"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
