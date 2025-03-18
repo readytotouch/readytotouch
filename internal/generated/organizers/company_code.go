@@ -730,6 +730,8 @@ var (
 		"clinia":                              727, // Clinia
 		"cloudwick":                           728, // Cloudwick
 		"fis":                                 729, // FIS
+		"nike":                                730, // Nike
+		"aviatrix-systems":                    731, // Aviatrix
 
 	}
 )
