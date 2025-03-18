@@ -163,6 +163,15 @@ func companiesPart9() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Software Engineer – Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4169998476/",
+							Date:                 mustDate("2025-03-18"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -4933,19 +4942,20 @@ func companiesPart9() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
-			Careers: "",
+			Name:    "NatWest Group",
+			Website: "https://natwestgroup.com/",
+			Careers: "https://jobs.natwestgroup.com/",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                68360623,
+				IDs:               []int{4777, 163231, 12643959, 29024025, 68360623},
+				Alias:             "natwest-group",
+				Name:              "NatWest Group",
+				Followers:         "682K",
+				Employees:         "10K+",
+				AssociatedMembers: "41,426",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -4968,11 +4978,11 @@ func companiesPart9() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Back-End Engineer – Golang",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4188231036/",
+							Date:                 mustDate("2025-03-19"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -4986,6 +4996,9 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
 		},
 		{
 			ID:      0,  // system
