@@ -5003,19 +5003,20 @@ func companiesPart9() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Commonwealth Bank",
+			Website: "https://www.commbank.com.au/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                2848,
+				IDs:               []int{2848, 2850, 2851, 270126},
+				Alias:             "commonwealthbank",
+				Name:              "Commonwealth Bank",
+				Followers:         "600K",
+				Employees:         "10K+",
+				AssociatedMembers: "45,071",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -5038,11 +5039,11 @@ func companiesPart9() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Senior Platform Engineer (AWS, Python, Golang)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4183953062/",
+							Date:                 mustDate("2025-03-19"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -5056,6 +5057,9 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
 		},
 		{
 			ID:      0,  // system
