@@ -1240,9 +1240,9 @@ func companiesPart8() []domain.CompanyProfile {
 						},
 						{
 							Title:                "Software Engineer",
-							ShortDescription:     "",
+							ShortDescription:     "Golang is a plus",
 							SwitchingOpportunity: "",
-							URL:                  "https://www.indeed.com/viewjob?jk=1977f20ade74d891&",
+							URL:                  "https://www.indeed.com/viewjob?jk=1977f20ade74d891",
 							Date:                 mustDate("2025-03-18"),
 							WithSalary:           true, // $141,000 - $225,000 per year
 							Remote:               false,

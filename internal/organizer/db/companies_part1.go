@@ -748,20 +748,7 @@ func companiesPart1() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "System Development Engineer III",
-							ShortDescription:     "xperience programming with at least one modern language such as Python, Ruby, Golang, Java, C++, C#, Rust",
-							SwitchingOpportunity: "",
-							URL:                  "https://www.indeed.com/viewjob?jk=63e2ab9d651cba67&",
-							Date:                 mustDate("2025-03-18"),
-							WithSalary:           true, // $136,100 - $235,200 per year
-							Remote:               false,
-						},
-					},
-				},
+				domain.Go:      {},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -1229,10 +1216,10 @@ func companiesPart1() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Principal Software Engineer, Oracle Cloud Infrastructure",
+							Title:                "Principal Software Engineer",
 							ShortDescription:     "6+ years of full-time professional experience in software development",
-							SwitchingOpportunity: "",
-							URL:                  "https://www.indeed.com/viewjob?jk=a6ecca848079cb48&",
+							SwitchingOpportunity: "Demonstrated ability to write great code using Java, Golang, or similar languages",
+							URL:                  "https://www.indeed.com/viewjob?jk=a6ecca848079cb48",
 							Date:                 mustDate("2025-03-18"),
 							WithSalary:           false,
 							Remote:               false,
@@ -4440,9 +4427,9 @@ func companiesPart1() []domain.CompanyProfile {
 						},
 						{
 							Title:                "Senior Engineer",
-							ShortDescription:     "Global Loyalty and Benefits",
+							ShortDescription:     "Golang preferred",
 							SwitchingOpportunity: "",
-							URL:                  "https://www.indeed.com/viewjob?jk=17a7caac4cedc05d&",
+							URL:                  "https://www.indeed.com/viewjob?jk=17a7caac4cedc05d",
 							Date:                 mustDate("2025-03-18"),
 							WithSalary:           true, // $110,000 - $190,000 per year
 							Remote:               false,
@@ -6907,9 +6894,9 @@ func companiesPart1() []domain.CompanyProfile {
 						},
 						{
 							Title:                "Staff Software Engineer",
-							ShortDescription:     "",
+							ShortDescription:     "Strong software engineering skills with writing efficient, maintainable and testable C/C++/Golang coding is required",
 							SwitchingOpportunity: "",
-							URL:                  "https://www.indeed.com/viewjob?jk=23ac4903a9b46ad6&",
+							URL:                  "https://www.indeed.com/viewjob?jk=23ac4903a9b46ad6",
 							Date:                 mustDate("2025-03-18"),
 							WithSalary:           true, // $157,000 - $243,000 per year
 							Remote:               false,
