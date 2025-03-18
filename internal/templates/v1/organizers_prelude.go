@@ -225,6 +225,10 @@ func isOttaVacancyURL(s string) bool {
 		strings.Contains(s, "https://app.otta.com/jobs/")
 }
 
+func isIndeedVacancyURL(s string) bool {
+	return strings.Contains(s, "https://www.indeed.com/viewjob")
+}
+
 func logo(s string) string {
 	if s == "" {
 		return "/assets/images/pages/common-images/unknown.svg"

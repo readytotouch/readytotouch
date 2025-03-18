@@ -1134,6 +1134,16 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 									class="hero__button-icon"
 								/>
 							`)
+		} else if isIndeedVacancyURL(vacancy.URL) {
+			qw422016.N().S(`
+								<img
+									width="20"
+									height="20"
+									src="/assets/images/pages/organizer/indeed.png"
+									alt="indeed logo"
+									class="hero__button-icon"
+								/>
+							`)
 		}
 		qw422016.N().S(`
 							View source
