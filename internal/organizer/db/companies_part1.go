@@ -748,7 +748,20 @@ func companiesPart1() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
-				domain.Go:      {},
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "System Development Engineer III",
+							ShortDescription:     "xperience programming with at least one modern language such as Python, Ruby, Golang, Java, C++, C#, Rust",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=63e2ab9d651cba67&",
+							Date:                 mustDate("2025-03-18"),
+							WithSalary:           true, // $136,100 - $235,200 per year
+							Remote:               false,
+						},
+					},
+				},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -1212,7 +1225,20 @@ func companiesPart1() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
-				domain.Go:   {},
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Principal Software Engineer, Oracle Cloud Infrastructure",
+							ShortDescription:     "6+ years of full-time professional experience in software development",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=a6ecca848079cb48&",
+							Date:                 mustDate("2025-03-18"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
 				domain.Rust: {},
 				domain.Zig:  {},
 				domain.Scala: {
@@ -4412,6 +4438,15 @@ func companiesPart1() []domain.CompanyProfile {
 							WithSalary:           true, // Salary Range: $110,000.00 to $190,000.00 annually + bonus + benefits
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Engineer",
+							ShortDescription:     "Global Loyalty and Benefits",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=17a7caac4cedc05d&",
+							Date:                 mustDate("2025-03-18"),
+							WithSalary:           true, // $110,000 - $190,000 per year
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {},
@@ -6868,6 +6903,15 @@ func companiesPart1() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4139319243/",
 							Date:                 mustDate("2025-01-31"),
 							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Staff Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=23ac4903a9b46ad6&",
+							Date:                 mustDate("2025-03-18"),
+							WithSalary:           true, // $157,000 - $243,000 per year
 							Remote:               false,
 						},
 					},

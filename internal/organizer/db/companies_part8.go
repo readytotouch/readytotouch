@@ -1238,6 +1238,15 @@ func companiesPart8() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=1977f20ade74d891&",
+							Date:                 mustDate("2025-03-18"),
+							WithSalary:           true, // $141,000 - $225,000 per year
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},

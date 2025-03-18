@@ -4753,6 +4753,375 @@ func companiesPart9() []domain.CompanyProfile {
 			ShortDescription: "",
 		},
 
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Nike",
+			Website: "https://nike.com/",
+			Careers: "https://careers.nike.com/",
+			About:   "https://about.nike.com/",
+			Blog:    "https://engineering.nike.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2029,
+				IDs:               []int{2029, 10818},
+				Alias:             "nike",
+				Name:              "Nike",
+				Followers:         "6M",
+				Employees:         "10K+",
+				AssociatedMembers: "81,633",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "nike",
+				Employees: "99,580",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer II — Platform Engineering",
+							ShortDescription:     "3+ years of professional software development experience",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=6ea60544f1c6f982&",
+							Date:                 mustDate("2025-03-18"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American athletic footwear and apparel corporation",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "CVS Health",
+			Website: "https://www.cvshealth.com/",
+			Careers: "https://jobs.cvshealth.com/",
+			About:   "https://www.cvshealth.com/about.html",
+			Blog:    "https://medium.com/cvs-health-tech-blog",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                4680,
+				IDs:               []int{2807, 4680, 13059, 11098302},
+				Alias:             "cvshealth",
+				Name:              "CVS Health",
+				Followers:         "972K",
+				Employees:         "10K+",
+				AssociatedMembers: "123,272",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "cvs-health",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "cvs-health",
+				Employees: "300,000",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Development Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=b5208bb10cbb651b&",
+							Date:                 mustDate("2025-03-18"),
+							WithSalary:           true, // $72,100 - $144,200 per year
+							Remote:               false,
+						},
+						{
+							Title:                "Software Engineer III",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=eff1f9f3ed90066d&",
+							Date:                 mustDate("2025-03-18"),
+							WithSalary:           true, // $92,700 - $185,400 per year
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American healthcare/retail  corporation",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Airlines Reporting Corporation (ARC)",
+			Website: "https://www2.arccorp.com/",
+			Careers: "https://www2.arccorp.com/about-us/careers/?utm_source=Global_Navigation",
+			About:   "https://www2.arccorp.com/about-us/our-story/?utm_source=Global_Navigation",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                6509,
+				IDs:               nil,
+				Alias:             "arc",
+				Name:              "Airlines Reporting Corporation (ARC)",
+				Followers:         "19K",
+				Employees:         "201-500",
+				AssociatedMembers: "3,250",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "airlines-reporting",
+				Employees: "2,750",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Manager, Software Engineering",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=ff3ad58cfe2f8295&",
+							Date:                 mustDate("2025-03-18"),
+							WithSalary:           true, // $123,000 - $204,300 per year
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American intelligence behind air travel, connecting the industry ecosystem and powering commercial decisions for airlines and their partners",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Epsilon",
+			Website: "https://www.epsilon.com/",
+			Careers: "https://www.epsilon.com/emea/careers",
+			About:   "https://www.epsilon.com/emea/about-us/",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3776,
+				IDs:               []int{3776, 3648054},
+				Alias:             "epsilon",
+				Name:              "Epsilon",
+				Followers:         "464K",
+				Employees:         "5K-10K",
+				AssociatedMembers: "11,167",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "Epsilon",
+				Employees: "7,500",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Lead, System and Platform Operations",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=788c43c55093c166&",
+							Date:                 mustDate("2025-03-18"),
+							WithSalary:           true, // $115,000 - $130,000 per year
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American global data, technology and services company",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Travelers",
+			Website: "https://www.travelers.com/",
+			Careers: "https://www.travelers.com/careers",
+			About:   "https://www.travelers.com/about-travelers",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3088,
+				IDs:               nil,
+				Alias:             "travelers",
+				Name:              "Travelers",
+				Followers:         "426K",
+				Employees:         "10K+",
+				AssociatedMembers: "37,299",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "travelers",
+				Employees: "31,000",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Data Engineer I (AWS/Snowflake/Databricks/Abinitio)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=322ff7ac1003f649&",
+							Date:                 mustDate("2025-03-18"),
+							WithSalary:           true, // $106,300 - $175,400 per year
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American insurance and financial company",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Aviatrix",
+			Website: "https://aviatrix.com/",
+			Careers: "https://aviatrix.com/careers/",
+			About:   "https://aviatrix.com/about-us/",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                6440846,
+				IDs:               nil,
+				Alias:             "aviatrix-systems",
+				Name:              "Aviatrix",
+				Followers:         "38K",
+				Employees:         "201-500",
+				AssociatedMembers: "495",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "aviatrixsystems",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "aviatrix",
+				Employees: "10",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Principal Architect/Technical Lead Manager",
+							ShortDescription:     "Site Reliability Engineering",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=7843b69900f3a0ab&",
+							Date:                 mustDate("2025-03-18"),
+							WithSalary:           true, // $244,000 - $265,000 per year
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American multi-cloud networking software who provides connect, manage, and secure their connections between cloud providers",
+		},
+
 		// Template
 		//{
 		//	ID:      0,  // system
