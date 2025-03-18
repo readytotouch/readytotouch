@@ -6091,7 +6091,7 @@ func companiesPart2() []domain.CompanyProfile {
 							Title:                "Software Engineer — Backend/Java/Golang",
 							ShortDescription:     "2+ years of professional experience in software development",
 							SwitchingOpportunity: "",
-							URL:                  "https://www.indeed.com/viewjob?jk=f8b228eccd1fc073&",
+							URL:                  "https://www.indeed.com/viewjob?jk=f8b228eccd1fc073",
 							Date:                 mustDate("2025-03-18"),
 							WithSalary:           true, // $101,000 – $150,000 per year
 							Remote:               false,
@@ -7166,15 +7166,6 @@ func companiesPart2() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4050285116/",
 							Date:                 mustDate("2024-10-25"),
 							WithSalary:           false,
-							Remote:               false,
-						},
-						{
-							Title:                "Senior Software Development Engineer, Developer Experience",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "https://www.indeed.com/viewjob?jk=c0705ba1f48d5d3d&",
-							Date:                 mustDate("2025-03-18"),
-							WithSalary:           true, // $180,000 - $225,000 per year
 							Remote:               false,
 						},
 					},
