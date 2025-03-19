@@ -5591,6 +5591,487 @@ func companiesPart9() []domain.CompanyProfile {
 			ShortDescription: "",
 		},
 
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "CERESTI HEALTH",
+			Website: "http://ceresti.com/",
+			Careers: "https://www.ceresti.com/careers",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                15403042,
+				IDs:               nil,
+				Alias:             "ceresti-health-inc.",
+				Name:              "CERESTI HEALTH",
+				Followers:         "1K",
+				Employees:         "11-50",
+				AssociatedMembers: "24",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Golang Backend Developer",
+							ShortDescription:     "3+ years of experience with the Go",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=ed0f373654d5bce5",
+							Date:                 mustDate("2025-03-19"),
+							WithSalary:           true, // From $135,000 per year
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "A medical facility that helps clients with Alzheimer's",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Amuse",
+			Website: "https://www.amuse.io/",
+			Careers: "https://careers.amuse.io/jobs",
+			About:   "https://www.amuse.io/en/resources/about/",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                10607933,
+				IDs:               nil,
+				Alias:             "amuse.io",
+				Name:              "Amuse",
+				Followers:         "9K",
+				Employees:         "51-200",
+				AssociatedMembers: "279",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Full Stack Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=1aeebd1be05a4f6e",
+							Date:                 mustDate("2025-03-19"),
+							WithSalary:           true, // $90,000 - $115,000 per year
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Global distributed  music company",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Idaho National Laboratory",
+			Website: "https://inl.gov/",
+			Careers: "https://inl.gov/careers/",
+			About:   "https://inl.gov/about-inl/",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                12293,
+				IDs:               nil,
+				Alias:             "idaho-national-laboratory",
+				Name:              "Idaho National Laboratory",
+				Followers:         "81K",
+				Employees:         "5K-10K",
+				AssociatedMembers: "3,802",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "idaholab",
+				Verified: true,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "idaho-national-laboratory",
+				Employees: "3,500",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=070ba4b58a8a1ba3",
+							Date:                 mustDate("2025-03-19"),
+							WithSalary:           true, // $111,888 - $229,284 per year
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American national laboratories of the United States Department of Energy",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Lucid Motors",
+			Website: "https://lucidmotors.com/",
+			Careers: "https://lucidmotors.com/careers",
+			About:   "https://lucidmotors.com/company",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1684122,
+				IDs:               nil,
+				Alias:             "lucidmotors",
+				Name:              "Lucid Motors",
+				Followers:         "512K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "6,366",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "lucid-motors",
+				Employees: "2,250",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Full Stack Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=e35725dabddd890c",
+							Date:                 mustDate("2025-03-19"),
+							WithSalary:           true, // $154,000 - $211,750 per year
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American automotive and technology company that produces electric vehicles",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "The ODP Corporation",
+			Website: "https://www.theodpcorp.com/",
+			Careers: "https://careers.theodpcorp.com/",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                75753067,
+				IDs:               nil,
+				Alias:             "the-odp-corporation",
+				Name:              "The ODP Corporation",
+				Followers:         "11K",
+				Employees:         "10K+",
+				AssociatedMembers: "27,156",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "the-odp-corporation",
+				Employees: "120",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Backend Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=164ee8448e688865",
+							Date:                 mustDate("2025-03-19"),
+							WithSalary:           true, // $75,500 - $117,950 per year
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American company who provides business services and supplies, products, and digital workplace technology solutions for small, medium, and enterprise businesses",
+		},
+
+		// BigTech
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Apple",
+			Website: "https://www.apple.com/",
+			Careers: "https://www.apple.com/careers/",
+			About:   "",
+			Blog:    "https://developer.apple.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                162479,
+				IDs:               nil,
+				Alias:             "apple",
+				Name:              "Apple",
+				Followers:         "18M",
+				Employees:         "10K+",
+				AssociatedMembers: "169,282",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "APPLE",
+				Verified: true,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "apple",
+				Employees: "147,000",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Development Engineer — Front End",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=68e87a7d98959276",
+							Date:                 mustDate("2025-03-19"),
+							WithSalary:           true, // $166,600 - $250,600 per year
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American multinational technology company",
+		},
+
+		// BigTech
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Netflix",
+			Website: "https://netflix.com/",
+			Careers: "https://jobs.netflix.com/",
+			About:   "https://about.netflix.com/",
+			Blog:    "https://netflixtechblog.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                165158,
+				IDs:               nil,
+				Alias:             "netflix",
+				Name:              "Netflix",
+				Followers:         "11M",
+				Employees:         "10K+",
+				AssociatedMembers: "16,766",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "netflix",
+				Employees: "14,600",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer L5 — Linux Kernel Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=5a23d65371dc5435",
+							Date:                 mustDate("2025-03-19"),
+							WithSalary:           true, // $100,000 - $620,000 per year
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American online streaming service",
+		},
+
+		// BigTech
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Panasonic",
+			Website: "https://holdings.panasonic/",
+			Careers: "https://holdings.panasonic/global/corporate/careers.html",
+			About:   "https://holdings.panasonic/global/corporate/about.html",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3549587,
+				IDs:               nil,
+				Alias:             "panasonic",
+				Name:              "Panasonic",
+				Followers:         "302K",
+				Employees:         "10K+",
+				AssociatedMembers: "28,942",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "panasonic",
+				Employees: "259,000",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Golang Network Developer",
+							ShortDescription:     "Strong proven experience in Golang",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=858278a26965db1b",
+							Date:                 mustDate("2025-03-19"),
+							WithSalary:           true, // $93,000 - $157,000 per year
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Japanese multinational company who manufactures batteries, automotive and aviation systems, industrial systems, and home repair and construction",
+		},
+
 		// Template
 		//{
 		//	ID:      0,  // system
