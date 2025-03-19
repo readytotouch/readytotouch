@@ -7975,7 +7975,7 @@ func companiesPart1() []domain.CompanyProfile {
 							ShortDescription:     "Logistics, Global Service Tech",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4185604315/",
-							Date:                 mustDate("2025-03-19"),
+							Date:                 mustDate("2025-03-18"),
 							WithSalary:           false,
 							Remote:               false,
 						},
