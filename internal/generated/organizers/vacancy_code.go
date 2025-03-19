@@ -9,6 +9,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4115837092/":     717,  // google
 		"https://www.linkedin.com/jobs/view/4164764188/":     980,  // google
 		"https://www.linkedin.com/jobs/view/4179014118/":     1105, // google
+		"https://www.linkedin.com/jobs/view/4183951513/":     1231, // google
 		"https://www.linkedin.com/jobs/view/4068076458/":     396,  // mozilla-corporation
 		"https://www.linkedin.com/jobs/view/4082697010/":     397,  // discord
 		"https://www.linkedin.com/jobs/view/4102671396/":     398,  // discord
@@ -142,6 +143,7 @@ var (
 		"https://www.linkedin.com/jobs/view/3907970778/":     211,  // fortinet
 		"https://www.linkedin.com/jobs/view/4104785473/":     212,  // fortinet
 		"https://www.linkedin.com/jobs/view/4122351024/":     572,  // fortinet
+		"https://www.linkedin.com/jobs/view/4188226108/":     1232, // fortinet
 		"https://www.linkedin.com/jobs/view/4096029115/":     414,  // sentinelone
 		"https://www.linkedin.com/jobs/view/4125792094/":     593,  // sentinelone
 		"https://www.linkedin.com/jobs/view/4125792093/":     785,  // sentinelone
@@ -188,6 +190,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4136211696/":     907,  // delivery-hero-se
 		"https://www.linkedin.com/jobs/view/4139118740/":     937,  // delivery-hero-se
 		"https://www.linkedin.com/jobs/view/4178291497/":     1110, // delivery-hero-se
+		"https://www.linkedin.com/jobs/view/4185604315/":     1233, // delivery-hero-se
 		"https://www.linkedin.com/jobs/view/3935382943/":     424,  // fubotv
 		"https://www.linkedin.com/jobs/view/4110428412/":     425,  // yassir
 		"https://www.linkedin.com/jobs/view/3819771736/":     426,  // viodotcom
@@ -537,6 +540,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4004288743/":     870,  // ayloservices
 		"https://www.linkedin.com/jobs/view/4018413250/":     498,  // factset
 		"https://www.linkedin.com/jobs/view/3966903286/":     280,  // voodoo.io
+		"https://www.linkedin.com/jobs/view/4164795247/":     1234, // voodoo.io
 		"https://www.linkedin.com/jobs/view/3872092645/":     499,  // home24
 		"https://www.linkedin.com/jobs/view/4050919710/":     500,  // australian-broadcasting-corporation
 		"https://www.linkedin.com/jobs/view/4042171556/":     35,   // go-nitro
@@ -1168,6 +1172,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4169557069/":     1081, // whatnot-inc
 		"https://www.linkedin.com/jobs/view/4174530724/":     1082, // dnsfilter
 		"https://www.linkedin.com/jobs/view/4157762453/":     1083, // forcepoint
+		"https://www.linkedin.com/jobs/view/4169998476/":     1235, // forcepoint
 		"https://www.linkedin.com/jobs/view/4174841291/":     1084, // thenu
 		"https://www.linkedin.com/jobs/view/4173786381/":     1085, // barracuda-networks
 		"https://www.linkedin.com/jobs/view/4172858065/":     1086, // flatpeak
@@ -1234,6 +1239,17 @@ var (
 		"https://www.linkedin.com/jobs/view/4172072369/":     1222, // fis
 		"https://www.indeed.com/viewjob?jk=6ea60544f1c6f982": 1229, // nike
 		"https://www.indeed.com/viewjob?jk=7843b69900f3a0ab": 1230, // aviatrix-systems
+		"https://www.linkedin.com/jobs/view/4183968735/":     1236, // firstbase-io
+		"https://www.linkedin.com/jobs/view/4188231036/":     1237, // natwest-group
+		"https://www.linkedin.com/jobs/view/4183953062/":     1238, // commonwealthbank
+		"https://www.linkedin.com/jobs/view/4185204926/":     1239, // ikea
+		"https://www.linkedin.com/jobs/view/4188140675/":     1240, // nexos-ai
+		"https://www.linkedin.com/jobs/view/4183372178/":     1241, // wearegcash
+		"https://www.linkedin.com/jobs/view/4187272758/":     1242, // mail-step
+		"https://www.linkedin.com/jobs/view/4183950416/":     1243, // lexia-learning-systems
+		"https://www.linkedin.com/jobs/view/4087274629/":     1244, // holidaycheck-ag
+		"https://www.linkedin.com/jobs/view/4188226908/":     1245, // dyad-ai
+		"https://www.linkedin.com/jobs/view/4181907066/":     1246, // stylitics
 
 	}
 )
