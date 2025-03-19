@@ -5872,6 +5872,15 @@ func companiesPart1() []domain.CompanyProfile {
 							WithSalary:           false, // Canada base salary range for this full-time position is expected to be between $81,000 - $110,000 annually
 							Remote:               false,
 						},
+						{
+							Title:                "Software Developer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4188226108/",
+							Date:                 mustDate("2025-03-18"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
