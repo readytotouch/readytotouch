@@ -5241,18 +5241,19 @@ func companiesPart9() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "mailstep",
+			Website: "http://www.mailstep.cz/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
+				ID:                10554555,
+				IDs:               nil,
+				Alias:             "mail-step",
+				Name:              "mailstep",
+				Followers:         "2K",
+				Employees:         "201-500",
+				AssociatedMembers: "96",
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -5276,11 +5277,11 @@ func companiesPart9() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Software Engineer PHP/Go",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4187272758/",
+							Date:                 mustDate("2025-03-17"),
 							WithSalary:           false,
 							Remote:               false,
 						},
