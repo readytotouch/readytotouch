@@ -5360,19 +5360,20 @@ func companiesPart9() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "CertiK",
+			Website: "https://www.certik.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                11831043,
+				IDs:               nil,
+				Alias:             "certik",
+				Name:              "CertiK",
+				Followers:         "23K",
+				Employees:         "201-500",
+				AssociatedMembers: "184",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -5395,13 +5396,13 @@ func companiesPart9() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Blockchain Security Engineer – (Solidity / Rust / Golang – Senior Level)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
-							WithSalary:           false,
-							Remote:               false,
+							URL:                  "https://www.linkedin.com/jobs/view/4161545800/",
+							Date:                 mustDate("2025-03-16"),
+							WithSalary:           true,
+							Remote:               true,
 						},
 					},
 				},
@@ -5413,6 +5414,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			Ignore:           true, // Web3
 		},
 		{
 			ID:      0,  // system
