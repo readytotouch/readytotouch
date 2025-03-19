@@ -6069,7 +6069,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "Japanese multinational company who manufactures batteries, automotive and aviation systems, industrial systems, and home repair and construction. ",
+			ShortDescription: "Japanese multinational company who manufactures batteries, automotive and aviation systems, industrial systems, and home repair and construction",
 		},
 
 		// Template
