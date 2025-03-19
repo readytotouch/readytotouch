@@ -790,6 +790,14 @@
 									alt="otta logo"
 									class="hero__button-icon"
 								/>
+							{% elseif isIndeedVacancyURL(vacancy.URL) %}
+								<img
+									width="20"
+									height="20"
+									src="/assets/images/pages/organizer/indeed.png"
+									alt="indeed logo"
+									class="hero__button-icon"
+								/>
 							{% endif %}
 							View source
 							<img

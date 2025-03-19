@@ -4056,6 +4056,15 @@ func companiesPart2() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Backend Engineer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4164795247/",
+							Date:                 mustDate("2025-03-18"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -6086,6 +6095,15 @@ func companiesPart2() []domain.CompanyProfile {
 							Date:                 mustDate("2025-03-13"),
 							WithSalary:           true, // $119,000 – $165,000 per year
 							Remote:               true,
+						},
+						{
+							Title:                "Software Engineer — Backend/Java/Golang",
+							ShortDescription:     "2+ years of professional experience in software development",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=f8b228eccd1fc073",
+							Date:                 mustDate("2025-03-18"),
+							WithSalary:           true, // $101,000 – $150,000 per year
+							Remote:               false,
 						},
 					},
 				},

@@ -133,9 +133,9 @@ func companiesPart1() []domain.CompanyProfile {
 				IDs:               []int{1441, 16140, 791962, 10440912, 17876832, 89982912},
 				Alias:             "google",
 				Name:              "Google",
-				Followers:         "36M",
+				Followers:         "37M",
 				Employees:         "10K+",
-				AssociatedMembers: "303,369",
+				AssociatedMembers: "302,939",
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -217,6 +217,15 @@ func companiesPart1() []domain.CompanyProfile {
 							Date:                 mustDate("2025-03-09"),
 							WithSalary:           false,
 							Remote:               false,
+						},
+						{
+							Title:                "Golang Back-End Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4183951513/",
+							Date:                 mustDate("2025-03-18"),
+							WithSalary:           false,
+							Remote:               true,
 						},
 					},
 				},
@@ -1212,7 +1221,20 @@ func companiesPart1() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
-				domain.Go:   {},
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Principal Software Engineer",
+							ShortDescription:     "6+ years of full-time professional experience in software development",
+							SwitchingOpportunity: "Demonstrated ability to write great code using Java, Golang, or similar languages",
+							URL:                  "https://www.indeed.com/viewjob?jk=a6ecca848079cb48",
+							Date:                 mustDate("2025-03-18"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
 				domain.Rust: {},
 				domain.Zig:  {},
 				domain.Scala: {
@@ -4412,6 +4434,15 @@ func companiesPart1() []domain.CompanyProfile {
 							WithSalary:           true, // Salary Range: $110,000.00 to $190,000.00 annually + bonus + benefits
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Engineer",
+							ShortDescription:     "Golang preferred",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=17a7caac4cedc05d",
+							Date:                 mustDate("2025-03-18"),
+							WithSalary:           true, // $110,000 - $190,000 per year
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {},
@@ -5850,6 +5881,15 @@ func companiesPart1() []domain.CompanyProfile {
 							WithSalary:           false, // Canada base salary range for this full-time position is expected to be between $81,000 - $110,000 annually
 							Remote:               false,
 						},
+						{
+							Title:                "Software Developer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4188226108/",
+							Date:                 mustDate("2025-03-18"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -6868,6 +6908,15 @@ func companiesPart1() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4139319243/",
 							Date:                 mustDate("2025-01-31"),
 							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Staff Software Engineer",
+							ShortDescription:     "Strong software engineering skills with writing efficient, maintainable and testable C/C++/Golang coding is required",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=23ac4903a9b46ad6",
+							Date:                 mustDate("2025-03-18"),
+							WithSalary:           true, // $157,000 - $243,000 per year
 							Remote:               false,
 						},
 					},
@@ -7936,6 +7985,15 @@ func companiesPart1() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4178291497/",
 							Date:                 mustDate("2025-03-11"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Engineer III (Golang)",
+							ShortDescription:     "Logistics, Global Service Tech",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4185604315/",
+							Date:                 mustDate("2025-03-18"),
 							WithSalary:           false,
 							Remote:               false,
 						},

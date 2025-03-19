@@ -730,6 +730,19 @@ var (
 		"clinia":                              727, // Clinia
 		"cloudwick":                           728, // Cloudwick
 		"fis":                                 729, // FIS
+		"nike":                                730, // Nike
+		"aviatrix-systems":                    731, // Aviatrix
+		"firstbase-io":                        732, // Firstbase
+		"natwest-group":                       733, // NatWest Group
+		"commonwealthbank":                    734, // Commonwealth Bank
+		"ikea":                                735, // IKEA
+		"nexos-ai":                            736, // nexos.ai
+		"wearegcash":                          737, // GCash
+		"mail-step":                           738, // mailstep
+		"lexia-learning-systems":              739, // Lexia Learning
+		"holidaycheck-ag":                     740, // HolidayCheck AG
+		"dyad-ai":                             741, // Dyad
+		"stylitics":                           742, // Stylitics
 
 	}
 )

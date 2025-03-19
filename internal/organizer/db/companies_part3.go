@@ -193,6 +193,15 @@ func companiesPart3() []domain.CompanyProfile {
 							WithSalary:           true, // $144,200 - $164,600 per year
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Software Engineer, Back-End (Golang, Kafka)",
+							ShortDescription:     "5+ years of experience in at least one of the following: Go, Kafka, and Java",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=f5e52fbbba5b8f6f",
+							Date:                 mustDate("2025-03-18"),
+							WithSalary:           true, // $158,600 - $181,000 per year
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
