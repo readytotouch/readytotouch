@@ -5122,18 +5122,19 @@ func companiesPart9() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "nexos.ai",
+			Website: "http://www.nexos.ai/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
+				ID:                105703851,
+				IDs:               nil,
+				Alias:             "nexos-ai",
+				Name:              "nexos.ai",
+				Followers:         "4K",
+				Employees:         "11-50",
+				AssociatedMembers: "23",
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -5157,13 +5158,13 @@ func companiesPart9() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Back-End Engineer | Middle-Senior | Go",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4188140675/",
+							Date:                 mustDate("2025-03-18"),
 							WithSalary:           false,
-							Remote:               false,
+							Remote:               true,
 						},
 					},
 				},
