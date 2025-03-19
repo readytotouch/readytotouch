@@ -5623,7 +5623,7 @@ func companiesPart9() []domain.CompanyProfile {
 				OverviewURL: "",
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Ceresti-Health",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -5682,7 +5682,7 @@ func companiesPart9() []domain.CompanyProfile {
 				OverviewURL: "",
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Amuse",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -5690,7 +5690,7 @@ func companiesPart9() []domain.CompanyProfile {
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Full Stack Developer",
-							ShortDescription:     "",
+							ShortDescription:     "You have experience using Go or a strongly typed OO language",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.indeed.com/viewjob?jk=1aeebd1be05a4f6e",
 							Date:                 mustDate("2025-03-19"),
@@ -5707,66 +5707,6 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Global distributed  music company",
-		},
-
-		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Idaho National Laboratory",
-			Website: "https://inl.gov/",
-			Careers: "https://inl.gov/careers/",
-			About:   "https://inl.gov/about-inl/",
-			Blog:    "",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:                12293,
-				IDs:               nil,
-				Alias:             "idaho-national-laboratory",
-				Name:              "Idaho National Laboratory",
-				Followers:         "81K",
-				Employees:         "5K-10K",
-				AssociatedMembers: "3,802",
-				Verified:          true,
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "idaholab",
-				Verified: true,
-			},
-			BlindProfile: domain.BlindProfile{
-				Alias: "",
-			},
-			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias:     "idaho-national-laboratory",
-				Employees: "3,500",
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-			},
-			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
-			},
-			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "Software Developer",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "https://www.indeed.com/viewjob?jk=070ba4b58a8a1ba3",
-							Date:                 mustDate("2025-03-19"),
-							WithSalary:           true, // $111,888 - $229,284 per year
-							Remote:               false,
-						},
-					},
-				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-			ShortDescription: "American national laboratories of the United States Department of Energy",
 		},
 
 		{
@@ -5802,7 +5742,7 @@ func companiesPart9() []domain.CompanyProfile {
 				OverviewURL: "",
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Lucid-Motors",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -5810,7 +5750,7 @@ func companiesPart9() []domain.CompanyProfile {
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Full Stack Developer",
-							ShortDescription:     "",
+							ShortDescription:     "Design and develop full-stack web applications, microservices, and REST APIs using languages such as Golang, Python, Java, or similar",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.indeed.com/viewjob?jk=e35725dabddd890c",
 							Date:                 mustDate("2025-03-19"),
@@ -5862,7 +5802,7 @@ func companiesPart9() []domain.CompanyProfile {
 				OverviewURL: "",
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "The-Odp-Corporation",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -5870,7 +5810,7 @@ func companiesPart9() []domain.CompanyProfile {
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Backend Developer",
-							ShortDescription:     "",
+							ShortDescription:     "Architect and implement solutions primarily using Golang",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.indeed.com/viewjob?jk=164ee8448e688865",
 							Date:                 mustDate("2025-03-19"),
@@ -5887,67 +5827,6 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "American company who provides business services and supplies, products, and digital workplace technology solutions for small, medium, and enterprise businesses",
-		},
-
-		// BigTech
-		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Apple",
-			Website: "https://www.apple.com/",
-			Careers: "https://www.apple.com/careers/",
-			About:   "",
-			Blog:    "https://developer.apple.com/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:                162479,
-				IDs:               nil,
-				Alias:             "apple",
-				Name:              "Apple",
-				Followers:         "18M",
-				Employees:         "10K+",
-				AssociatedMembers: "169,282",
-				Verified:          true,
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "APPLE",
-				Verified: true,
-			},
-			BlindProfile: domain.BlindProfile{
-				Alias: "",
-			},
-			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias:     "apple",
-				Employees: "147,000",
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-			},
-			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
-			},
-			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "Software Development Engineer — Front End",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "https://www.indeed.com/viewjob?jk=68e87a7d98959276",
-							Date:                 mustDate("2025-03-19"),
-							WithSalary:           true, // $166,600 - $250,600 per year
-							Remote:               false,
-						},
-					},
-				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-			ShortDescription: "American multinational technology company",
 		},
 
 		// BigTech
@@ -5984,7 +5863,7 @@ func companiesPart9() []domain.CompanyProfile {
 				OverviewURL: "",
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Netflix",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -5992,7 +5871,7 @@ func companiesPart9() []domain.CompanyProfile {
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer L5 — Linux Kernel Developer",
-							ShortDescription:     "",
+							ShortDescription:     "Proficiency in Golang, Python",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.indeed.com/viewjob?jk=5a23d65371dc5435",
 							Date:                 mustDate("2025-03-19"),
@@ -6045,7 +5924,7 @@ func companiesPart9() []domain.CompanyProfile {
 				OverviewURL: "",
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Panasonic-a3e6d439",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
