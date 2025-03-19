@@ -6011,6 +6011,7 @@ func companiesPart9() []domain.CompanyProfile {
 			ShortDescription: "American online streaming service",
 		},
 
+		// BigTech
 		{
 			ID:      0,  // system
 			Type:    "", // system
