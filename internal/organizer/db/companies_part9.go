@@ -5299,19 +5299,20 @@ func companiesPart9() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Lexia Learning",
+			Website: "https://www.lexialearning.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                47092,
+				IDs:               nil,
+				Alias:             "lexia-learning-systems",
+				Name:              "Lexia Learning",
+				Followers:         "73K",
+				Employees:         "501-1K",
+				AssociatedMembers: "877",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -5330,21 +5331,21 @@ func companiesPart9() []domain.CompanyProfile {
 				Alias: "",
 			},
 			Languages: domain.Languages{
-				domain.Go: {
+				domain.Go: {},
+				domain.Rust: {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
-							ShortDescription:     "",
+							Title:                "Senior Fullstack Software Engineer, Rust Focused",
+							ShortDescription:     "Develop modular, intuitive and scalable components, services and APIs using Rust",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4183950416/",
+							Date:                 mustDate("2025-03-18"),
 							WithSalary:           false,
-							Remote:               false,
+							Remote:               true,
 						},
 					},
 				},
-				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},
@@ -5352,6 +5353,9 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			Industries: []domain.Industry{
+				domain.IndustryEdTech,
+			},
 		},
 		{
 			ID:      0,  // system
