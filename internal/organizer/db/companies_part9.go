@@ -6439,18 +6439,19 @@ func companiesPart9() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Walmart Data Ventures",
+			Website: "https://www.walmartdataventures.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
+				ID:                80427781,
+				IDs:               nil,
+				Alias:             "walmartdataventures",
+				Name:              "Walmart Data Ventures",
+				Followers:         "15K",
+				Employees:         "201-500",
+				AssociatedMembers: "244",
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -6470,23 +6471,23 @@ func companiesPart9() []domain.CompanyProfile {
 				Alias: "",
 			},
 			Languages: domain.Languages{
-				domain.Go: {
+				domain.Go:   {},
+				domain.Rust: {},
+				domain.Zig:  {},
+				domain.Scala: {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Senior, Data Engineer (Scala/Spark)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
-							WithSalary:           false,
+							URL:                  "https://www.linkedin.com/jobs/view/4189070192/",
+							Date:                 mustDate("2025-03-19"),
+							WithSalary:           true,
 							Remote:               false,
 						},
 					},
 				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
 				domain.Elixir:  {},
 				domain.Clojure: {},
 				domain.Haskell: {},
