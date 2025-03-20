@@ -8,6 +8,7 @@ document.body.addEventListener("keydown", (event) => {
         const title = document.querySelector("h1").innerText.trim()
             .replaceAll(" - ", " – ") // Replace hyphen with dash
             .replace("(m/f/x)", " ").trim()
+            .replace("Sr.", "Senior")
             .replace("GoLang", "Golang")
             .replace("Goland", "Golang")
             .replace("Back End", "Back-End")
