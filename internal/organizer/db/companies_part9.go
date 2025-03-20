@@ -6021,18 +6021,19 @@ func companiesPart9() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Gnosis",
+			Website: "http://gnosis.io/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
+				ID:                18098361,
+				IDs:               nil,
+				Alias:             "gnosis-limited",
+				Name:              "Gnosis",
+				Followers:         "8K",
+				Employees:         "51-200",
+				AssociatedMembers: "162",
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -6056,13 +6057,13 @@ func companiesPart9() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Senior Golang Engineer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4186509026/",
+							Date:                 mustDate("2025-03-20"),
 							WithSalary:           false,
-							Remote:               false,
+							Remote:               true,
 						},
 					},
 				},
@@ -6074,6 +6075,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			Ignore:           true, // Blockchain
 		},
 		{
 			ID:      0,  // system
