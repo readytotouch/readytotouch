@@ -6205,18 +6205,19 @@ func companiesPart9() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Gamingtec",
+			Website: "https://gamingtec.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
+				ID:                9276193,
+				IDs:               nil,
+				Alias:             "gamingtec",
+				Name:              "Gamingtec",
+				Followers:         "6K",
+				Employees:         "51-200",
+				AssociatedMembers: "145",
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -6240,13 +6241,13 @@ func companiesPart9() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Senior Golang Developer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4187105723/",
+							Date:                 mustDate("2025-03-20"),
 							WithSalary:           false,
-							Remote:               false,
+							Remote:               true,
 						},
 					},
 				},
@@ -6258,6 +6259,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			Ignore:           true, // Gambling
 		},
 		{
 			ID:      0,  // system
