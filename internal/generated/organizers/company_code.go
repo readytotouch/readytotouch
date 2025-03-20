@@ -743,6 +743,17 @@ var (
 		"holidaycheck-ag":                     740, // HolidayCheck AG
 		"dyad-ai":                             741, // Dyad
 		"stylitics":                           742, // Stylitics
+		"ceresti-health-inc.":                 743, // CERESTI HEALTH
+		"amuse.io":                            744, // Amuse
+		"lucidmotors":                         745, // Lucid Motors
+		"the-odp-corporation":                 746, // The ODP Corporation
+		"netflix":                             747, // Netflix
+		"panasonic":                           748, // Panasonic
+		"netscribes":                          749, // Netscribes
+		"warner-bros-discovery":               750, // Warner Bros. Discovery
+		"vois":                                751, // VOIS
+		"veact":                               752, // Veact GmbH
+		"walmartdataventures":                 753, // Walmart Data Ventures
 
 	}
 )
