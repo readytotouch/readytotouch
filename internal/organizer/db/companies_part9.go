@@ -6070,7 +6070,7 @@ func companiesPart9() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4186509026/",
-							Date:                 mustDate("2025-03-20"),
+							Date:                 mustDate("2025-03-19"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -6245,7 +6245,7 @@ func companiesPart9() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4187105723/",
-							Date:                 mustDate("2025-03-20"),
+							Date:                 mustDate("2025-03-19"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -6304,7 +6304,7 @@ func companiesPart9() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4180356164/",
-							Date:                 mustDate("2025-03-20"),
+							Date:                 mustDate("2025-03-19"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -6322,18 +6322,19 @@ func companiesPart9() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Spydra",
+			Website: "https://www.spydra.app/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
+				ID:                84968130,
+				IDs:               nil,
+				Alias:             "spydra",
+				Name:              "Spydra",
+				Followers:         "50K",
+				Employees:         "11-50",
+				AssociatedMembers: "36",
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -6357,11 +6358,11 @@ func companiesPart9() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Golang Developer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4184559478/",
+							Date:                 mustDate("2025-03-19"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -6375,6 +6376,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			Ignore:           true, // Blockchain
 		},
 		{
 			ID:      0,  // system
