@@ -2350,6 +2350,15 @@ func companiesPart4() []domain.CompanyProfile {
 							WithSalary:           true, // from 2500 EUR per month
 							Remote:               false,
 						},
+						{
+							Title:                "Cloud Software Engineer (Go)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4186530653/",
+							Date:                 mustDate("2025-03-19"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
