@@ -850,11 +850,12 @@ func companiesPart2() []domain.CompanyProfile {
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                15223273,
+				IDs:               nil,
 				Alias:             "eco-movement-charge-point-data",
 				Name:              "Eco-Movement",
 				Followers:         "3K",
 				Employees:         "11-50",
-				AssociatedMembers: "50",
+				AssociatedMembers: "53",
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
