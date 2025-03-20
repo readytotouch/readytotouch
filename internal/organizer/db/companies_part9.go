@@ -6147,19 +6147,20 @@ func companiesPart9() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
-			Careers: "",
+			Name:    "Warner Bros. Discovery",
+			Website: "https://wbd.com/",
+			Careers: "https://careers.wbd.com/",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                73234923,
+				IDs:               []int{2046, 2470, 4749, 9620, 167119, 200300, 1393227, 10538105, 26998697, 73234923},
+				Alias:             "warner-bros-discovery",
+				Name:              "Warner Bros. Discovery",
+				Followers:         "811K",
+				Employees:         "10K+",
+				AssociatedMembers: "39,992",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -6182,11 +6183,11 @@ func companiesPart9() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Staff Software Engineer – Golang",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4187284222/",
+							Date:                 mustDate("2025-03-17"),
 							WithSalary:           false,
 							Remote:               false,
 						},
