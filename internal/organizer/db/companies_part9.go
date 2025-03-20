@@ -2931,6 +2931,15 @@ func companiesPart9() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Sr. Software Engineer – Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4071755601/",
+							Date:                 mustDate("2025-03-19"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -4870,6 +4879,15 @@ func companiesPart9() []domain.CompanyProfile {
 							WithSalary:           true, // $244,000 - $265,000 per year
 							Remote:               true,
 						},
+						{
+							Title:                "Staff Software Engineer – Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4184984550/",
+							Date:                 mustDate("2025-03-19"),
+							WithSalary:           true, // $220,000-$226,000
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -5586,6 +5604,892 @@ func companiesPart9() []domain.CompanyProfile {
 						},
 					},
 				},
+				domain.Haskell: {},
+			},
+			ShortDescription: "",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "CERESTI HEALTH",
+			Website: "http://ceresti.com/",
+			Careers: "https://www.ceresti.com/careers",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                15403042,
+				IDs:               nil,
+				Alias:             "ceresti-health-inc.",
+				Name:              "CERESTI HEALTH",
+				Followers:         "1K",
+				Employees:         "11-50",
+				AssociatedMembers: "24",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "Ceresti-Health",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Golang Backend Developer",
+							ShortDescription:     "3+ years of experience with the Go",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=ed0f373654d5bce5",
+							Date:                 mustDate("2025-03-19"),
+							WithSalary:           true, // From $135,000 per year
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "A medical facility that helps clients with Alzheimer's",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Amuse",
+			Website: "https://www.amuse.io/",
+			Careers: "https://careers.amuse.io/jobs",
+			About:   "https://www.amuse.io/en/resources/about/",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                10607933,
+				IDs:               nil,
+				Alias:             "amuse.io",
+				Name:              "Amuse",
+				Followers:         "9K",
+				Employees:         "51-200",
+				AssociatedMembers: "279",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "Amuse",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Full Stack Developer",
+							ShortDescription:     "You have experience using Go or a strongly typed OO language",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=1aeebd1be05a4f6e",
+							Date:                 mustDate("2025-03-19"),
+							WithSalary:           true, // $90,000 - $115,000 per year
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Global distributed  music company",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Lucid Motors",
+			Website: "https://lucidmotors.com/",
+			Careers: "https://lucidmotors.com/careers",
+			About:   "https://lucidmotors.com/company",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1684122,
+				IDs:               nil,
+				Alias:             "lucidmotors",
+				Name:              "Lucid Motors",
+				Followers:         "512K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "6,366",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "lucid-motors",
+				Employees: "2,250",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "Lucid-Motors",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Full Stack Developer",
+							ShortDescription:     "Design and develop full-stack web applications, microservices, and REST APIs using languages such as Golang, Python, Java, or similar",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=e35725dabddd890c",
+							Date:                 mustDate("2025-03-19"),
+							WithSalary:           true, // $154,000 - $211,750 per year
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American automotive and technology company that produces electric vehicles",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "The ODP Corporation",
+			Website: "https://www.theodpcorp.com/",
+			Careers: "https://careers.theodpcorp.com/",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                75753067,
+				IDs:               nil,
+				Alias:             "the-odp-corporation",
+				Name:              "The ODP Corporation",
+				Followers:         "11K",
+				Employees:         "10K+",
+				AssociatedMembers: "27,156",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "the-odp-corporation",
+				Employees: "120",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "The-Odp-Corporation",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Backend Developer",
+							ShortDescription:     "Architect and implement solutions primarily using Golang",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=164ee8448e688865",
+							Date:                 mustDate("2025-03-19"),
+							WithSalary:           true, // $75,500 - $117,950 per year
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American company who provides business services and supplies, products, and digital workplace technology solutions for small, medium, and enterprise businesses",
+		},
+
+		// BigTech
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Netflix",
+			Website: "https://netflix.com/",
+			Careers: "https://jobs.netflix.com/",
+			About:   "https://about.netflix.com/",
+			Blog:    "https://netflixtechblog.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                165158,
+				IDs:               nil,
+				Alias:             "netflix",
+				Name:              "Netflix",
+				Followers:         "11M",
+				Employees:         "10K+",
+				AssociatedMembers: "16,766",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "netflix",
+				Employees: "14,600",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "Netflix",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer L5 — Linux Kernel Developer",
+							ShortDescription:     "Proficiency in Golang, Python",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=5a23d65371dc5435",
+							Date:                 mustDate("2025-03-19"),
+							WithSalary:           true, // $100,000 - $620,000 per year
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American online streaming service",
+		},
+
+		// BigTech
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Panasonic",
+			Website: "https://holdings.panasonic/",
+			Careers: "https://holdings.panasonic/global/corporate/careers.html",
+			About:   "https://holdings.panasonic/global/corporate/about.html",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3549587,
+				IDs:               nil,
+				Alias:             "panasonic",
+				Name:              "Panasonic",
+				Followers:         "302K",
+				Employees:         "10K+",
+				AssociatedMembers: "28,942",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "panasonic",
+				Employees: "259,000",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "Panasonic-a3e6d439",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Golang Network Developer",
+							ShortDescription:     "Strong proven experience in Golang",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=858278a26965db1b",
+							Date:                 mustDate("2025-03-19"),
+							WithSalary:           true, // $93,000 - $157,000 per year
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Japanese multinational company who manufactures batteries, automotive and aviation systems, industrial systems, and home repair and construction",
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "TRON DAO",
+			Website: "https://tron.network/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                18289948,
+				IDs:               []int{29722, 18289948},
+				Alias:             "trondao",
+				Name:              "TRON DAO",
+				Followers:         "54K",
+				Employees:         "201-500",
+				AssociatedMembers: "375",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Blockchain Systems Engineer Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4112783642/",
+							Date:                 mustDate("2025-03-19"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "",
+			Ignore:           true, // Blockchain | Crypto | Web3
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Gnosis",
+			Website: "http://gnosis.io/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                18098361,
+				IDs:               nil,
+				Alias:             "gnosis-limited",
+				Name:              "Gnosis",
+				Followers:         "8K",
+				Employees:         "51-200",
+				AssociatedMembers: "162",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Golang Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4186509026/",
+							Date:                 mustDate("2025-03-19"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "",
+			Ignore:           true, // Blockchain
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Netscribes",
+			Website: "http://www.netscribes.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                25974,
+				IDs:               nil,
+				Alias:             "netscribes",
+				Name:              "Netscribes",
+				Followers:         "103K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "1,401",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer – Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4184795681/",
+							Date:                 mustDate("2025-03-18"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "",
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Warner Bros. Discovery",
+			Website: "https://wbd.com/",
+			Careers: "https://careers.wbd.com/",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                73234923,
+				IDs:               []int{2046, 2470, 4749, 9620, 167119, 200300, 1393227, 10538105, 26998697, 73234923},
+				Alias:             "warner-bros-discovery",
+				Name:              "Warner Bros. Discovery",
+				Followers:         "811K",
+				Employees:         "10K+",
+				AssociatedMembers: "39,992",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Staff Software Engineer – Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4187284222/",
+							Date:                 mustDate("2025-03-17"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "",
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Gamingtec",
+			Website: "https://gamingtec.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                9276193,
+				IDs:               nil,
+				Alias:             "gamingtec",
+				Name:              "Gamingtec",
+				Followers:         "6K",
+				Employees:         "51-200",
+				AssociatedMembers: "145",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4187105723/",
+							Date:                 mustDate("2025-03-19"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "",
+			Ignore:           true, // Gambling
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "VOIS",
+			Website: "http://www.vodafone.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                167822,
+				IDs:               nil,
+				Alias:             "vois",
+				Name:              "VOIS",
+				Followers:         "345K",
+				Employees:         "10K+",
+				AssociatedMembers: "18,326",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Manager Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4180356164/",
+							Date:                 mustDate("2025-03-19"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "",
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Spydra",
+			Website: "https://www.spydra.app/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                84968130,
+				IDs:               nil,
+				Alias:             "spydra",
+				Name:              "Spydra",
+				Followers:         "50K",
+				Employees:         "11-50",
+				AssociatedMembers: "36",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4184559478/",
+							Date:                 mustDate("2025-03-19"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "",
+			Ignore:           true, // Blockchain
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Veact GmbH",
+			Website: "https://veact.net/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1412127,
+				IDs:               nil,
+				Alias:             "veact",
+				Name:              "Veact GmbH",
+				Followers:         "2K",
+				Employees:         "51-200",
+				AssociatedMembers: "111",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go:   {},
+				domain.Rust: {},
+				domain.Zig:  {},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Scala Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4182628362/",
+							Date:                 mustDate("2025-03-15"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Veact is developing applications, processes and products to improve sales success in the car trade market using data-based marketing",
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Walmart Data Ventures",
+			Website: "https://www.walmartdataventures.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                80427781,
+				IDs:               nil,
+				Alias:             "walmartdataventures",
+				Name:              "Walmart Data Ventures",
+				Followers:         "15K",
+				Employees:         "201-500",
+				AssociatedMembers: "244",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go:   {},
+				domain.Rust: {},
+				domain.Zig:  {},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior, Data Engineer (Scala/Spark)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4189070192/",
+							Date:                 mustDate("2025-03-19"),
+							WithSalary:           true,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Elixir:  {},
+				domain.Clojure: {},
 				domain.Haskell: {},
 			},
 			ShortDescription: "",

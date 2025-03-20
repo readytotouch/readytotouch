@@ -4131,6 +4131,15 @@ func companiesPart8() []domain.CompanyProfile {
 							WithSalary:           true, // Annual Incentive Base Range 48,000.00 - 60,000.00 - 72,000.00 GBP Annual
 							Remote:               false,
 						},
+						{
+							Title:                "Sr Software Engineer (C++ / Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4186548302/",
+							Date:                 mustDate("2025-03-19"),
+							WithSalary:           true,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig:     {},

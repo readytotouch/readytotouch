@@ -47,6 +47,7 @@ var (
 		"https://www.linkedin.com/jobs/view/3914880703/":     261,  // github
 		"https://www.linkedin.com/jobs/view/4018780627/":     262,  // gitlab-com
 		"https://www.linkedin.com/jobs/view/4182917093/":     1157, // gitlab-com
+		"https://www.linkedin.com/jobs/view/4188911111/":     1247, // gitlab-com
 		"https://www.linkedin.com/jobs/view/4023583351/":     5,    // linkedin
 		"https://www.linkedin.com/jobs/view/4103336471/":     210,  // linkedin
 		"https://www.linkedin.com/jobs/view/4127847711/":     620,  // linkedin
@@ -196,6 +197,7 @@ var (
 		"https://www.linkedin.com/jobs/view/3819771736/":     426,  // viodotcom
 		"https://www.linkedin.com/jobs/view/4085466064/":     427,  // runzero
 		"https://www.linkedin.com/jobs/view/4131339080/":     683,  // runzero
+		"https://www.linkedin.com/jobs/view/4185602939/":     1248, // tyk
 		"https://www.linkedin.com/jobs/view/4040512029/":     318,  // lightspeedcommerce
 		"https://www.linkedin.com/jobs/view/4119051974/":     574,  // lightspeedcommerce
 		"https://www.linkedin.com/jobs/view/4092327926/":     723,  // lightspeedcommerce
@@ -482,6 +484,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4117970233/":     576,  // 1global
 		"https://www.linkedin.com/jobs/view/4180579005/":     1164, // 1global
 		"https://www.linkedin.com/jobs/view/4046511967/":     473,  // eco-movement-charge-point-data
+		"https://www.linkedin.com/jobs/view/4186588322/":     1249, // eco-movement-charge-point-data
 		"https://www.linkedin.com/jobs/view/4028418131/":     474,  // network-optix
 		"https://www.linkedin.com/jobs/view/4050001754/":     227,  // cinemo
 		"https://www.linkedin.com/jobs/view/3921611198/":     228,  // cinemo
@@ -918,6 +921,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4150255730/":     840,  // eset
 		"https://www.linkedin.com/jobs/view/4174877579/":     1072, // eset
 		"https://www.linkedin.com/jobs/view/4175872656/":     1131, // eset
+		"https://www.linkedin.com/jobs/view/4186530653/":     1250, // eset
 		"https://www.linkedin.com/jobs/view/4085449585/":     180,  // praxent
 		"https://www.linkedin.com/jobs/view/4079391812/":     181,  // stacklok
 		"https://www.linkedin.com/jobs/view/4102186636/":     182,  // superindo
@@ -1127,6 +1131,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4148124360/":     815,  // ncratleos
 		"https://www.linkedin.com/jobs/view/4148121704/":     849,  // ncratleos
 		"https://www.linkedin.com/jobs/view/4148118905/":     1076, // ncratleos
+		"https://www.linkedin.com/jobs/view/4186548302/":     1251, // ncratleos
 		"https://www.linkedin.com/jobs/view/4150365284/":     816,  // knowbe4
 		"https://www.linkedin.com/jobs/view/4149751377/":     850,  // seldon
 		"https://www.linkedin.com/jobs/view/4152181957/":     851,  // rockstar-games
@@ -1215,6 +1220,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4138748551/":     1183, // makropro
 		"https://www.linkedin.com/jobs/view/4183852152/":     1184, // infoblox
 		"https://www.linkedin.com/jobs/view/4137578941/":     1185, // ncrvoyix
+		"https://www.linkedin.com/jobs/view/4071755601/":     1252, // ncrvoyix
 		"https://www.linkedin.com/jobs/view/4183841211/":     1186, // cisco
 		"https://www.linkedin.com/jobs/view/4178758249/":     1187, // prioritysoftware
 		"https://www.linkedin.com/jobs/view/4182723217/":     1188, // aspire-software
@@ -1239,6 +1245,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4172072369/":     1222, // fis
 		"https://www.indeed.com/viewjob?jk=6ea60544f1c6f982": 1229, // nike
 		"https://www.indeed.com/viewjob?jk=7843b69900f3a0ab": 1230, // aviatrix-systems
+		"https://www.linkedin.com/jobs/view/4184984550/":     1253, // aviatrix-systems
 		"https://www.linkedin.com/jobs/view/4183968735/":     1236, // firstbase-io
 		"https://www.linkedin.com/jobs/view/4188231036/":     1237, // natwest-group
 		"https://www.linkedin.com/jobs/view/4183953062/":     1238, // commonwealthbank
@@ -1250,6 +1257,17 @@ var (
 		"https://www.linkedin.com/jobs/view/4087274629/":     1244, // holidaycheck-ag
 		"https://www.linkedin.com/jobs/view/4188226908/":     1245, // dyad-ai
 		"https://www.linkedin.com/jobs/view/4181907066/":     1246, // stylitics
+		"https://www.indeed.com/viewjob?jk=ed0f373654d5bce5": 1254, // ceresti-health-inc.
+		"https://www.indeed.com/viewjob?jk=1aeebd1be05a4f6e": 1255, // amuse.io
+		"https://www.indeed.com/viewjob?jk=e35725dabddd890c": 1256, // lucidmotors
+		"https://www.indeed.com/viewjob?jk=164ee8448e688865": 1257, // the-odp-corporation
+		"https://www.indeed.com/viewjob?jk=5a23d65371dc5435": 1258, // netflix
+		"https://www.indeed.com/viewjob?jk=858278a26965db1b": 1259, // panasonic
+		"https://www.linkedin.com/jobs/view/4184795681/":     1260, // netscribes
+		"https://www.linkedin.com/jobs/view/4187284222/":     1261, // warner-bros-discovery
+		"https://www.linkedin.com/jobs/view/4180356164/":     1262, // vois
+		"https://www.linkedin.com/jobs/view/4182628362/":     1263, // veact
+		"https://www.linkedin.com/jobs/view/4189070192/":     1264, // walmartdataventures
 
 	}
 )

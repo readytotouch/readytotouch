@@ -850,11 +850,12 @@ func companiesPart2() []domain.CompanyProfile {
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                15223273,
+				IDs:               nil,
 				Alias:             "eco-movement-charge-point-data",
 				Name:              "Eco-Movement",
 				Followers:         "3K",
 				Employees:         "11-50",
-				AssociatedMembers: "50",
+				AssociatedMembers: "53",
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -884,6 +885,15 @@ func companiesPart2() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4046511967/",
 							Date:                 mustDate("2024-10-25"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "PHP & Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4186588322/",
+							Date:                 mustDate("2025-03-19"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -6038,8 +6048,8 @@ func companiesPart2() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4165789658/",
-							Date:                 mustDate("2025-02-26"),
-							WithSalary:           true, // $141.000 - $215.000 per year
+							Date:                 mustDate("2025-03-19"), // mustDate("2025-02-26"),
+							WithSalary:           true,                   // $141.000 - $215.000 per year
 							Remote:               false,
 						},
 						{

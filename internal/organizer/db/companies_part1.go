@@ -1434,6 +1434,15 @@ func companiesPart1() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Intermediate Backend (Go) Engineer",
+							ShortDescription:     "Gitaly",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4188911111/",
+							Date:                 mustDate("2025-03-19"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -8708,15 +8717,16 @@ func companiesPart1() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 86,
-					Vacancies:               []domain.Vacancy{
-						/*
-							{
-								Title:            "",
-								ShortDescription: "",
-								URL:              "https://app.welcometothejungle.com/jobs/CwkAD14C",
-								Date:             mustDate(""),
-							},
-						*/
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Go Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4185602939/",
+							Date:                 mustDate("2025-03-18"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -12270,7 +12280,7 @@ func companiesPart1() []domain.CompanyProfile {
 							ShortDescription:     "Real Estate",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4142492503/",
-							Date:                 mustDate("2025-02-25"), // mustDate("2025-02-03"),
+							Date:                 mustDate("2025-03-19"), // mustDate("2025-02-25"), // mustDate("2025-02-03"),
 							WithSalary:           false,
 							Remote:               true,
 						},
