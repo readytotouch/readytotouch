@@ -12270,7 +12270,7 @@ func companiesPart1() []domain.CompanyProfile {
 							ShortDescription:     "Real Estate",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4142492503/",
-							Date:                 mustDate("2025-02-25"), // mustDate("2025-02-03"),
+							Date:                 mustDate("2025-03-19"), // mustDate("2025-02-25"), // mustDate("2025-02-03"),
 							WithSalary:           false,
 							Remote:               true,
 						},

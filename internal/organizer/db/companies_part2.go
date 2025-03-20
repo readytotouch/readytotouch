@@ -6038,7 +6038,7 @@ func companiesPart2() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4165789658/",
-							Date:                 mustDate("2025-02-26"),
+							Date:                 mustDate("2025-03-19"), // mustDate("2025-02-26"),
 							WithSalary:           true, // $141.000 - $215.000 per year
 							Remote:               false,
 						},
