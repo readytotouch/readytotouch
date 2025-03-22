@@ -2335,6 +2335,15 @@ func companiesPart9() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Rust Developer",
+							ShortDescription:     "Proxy Solution",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4190616076/",
+							Date:                 mustDate("2025-03-21"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig:     {},
@@ -6730,23 +6739,24 @@ func companiesPart9() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
-			Careers: "",
+			Name:    "SurrealDB",
+			Website: "https://surrealdb.com/",
+			Careers: "https://surrealdb.com/careers",
 			About:   "",
-			Blog:    "",
+			Blog:    "https://surrealdb.com/blog",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
+				ID:                71534355,
+				IDs:               nil,
+				Alias:             "surrealdb",
+				Name:              "SurrealDB",
+				Followers:         "7K",
+				Employees:         "11-50",
+				AssociatedMembers: "43",
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:    "surrealdb",
+				Verified: true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -6761,9 +6771,12 @@ func companiesPart9() []domain.CompanyProfile {
 				Alias: "",
 			},
 			Languages: domain.Languages{
-				domain.Go: {},
+				domain.Go: {
+					GitHubRepositoriesCount: 11,
+					Vacancies:               []domain.Vacancy{},
+				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 25,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "",
@@ -6782,27 +6795,28 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "Serverless cloud database",
 		},
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Clockwork Labs",
+			Website: "https://clockworklabs.io/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
+				ID:                19088131,
+				IDs:               nil,
+				Alias:             "clockwork-labs",
+				Name:              "Clockwork Labs",
+				Followers:         "3K",
+				Employees:         "2-10",
+				AssociatedMembers: "31",
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
+				Login:    "clockworklabs",
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
@@ -6839,7 +6853,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "Computer Games",
 		},
 		{
 			ID:      0,  // system
