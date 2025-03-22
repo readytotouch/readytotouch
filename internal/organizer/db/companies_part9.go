@@ -6614,18 +6614,19 @@ func companiesPart9() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Lingopal",
+			Website: "https://lingopal.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
+				ID:                98079583,
+				IDs:               nil,
+				Alias:             "lingopal-ai",
+				Name:              "Lingopal",
+				Followers:         "50K",
+				Employees:         "51-200",
+				AssociatedMembers: "31",
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -6650,13 +6651,13 @@ func companiesPart9() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Senior Rust Engineer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4188980146/",
+							Date:                 mustDate("2025-03-20"),
 							WithSalary:           false,
-							Remote:               false,
+							Remote:               true,
 						},
 					},
 				},
@@ -6666,7 +6667,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "Translate LIVE speech into any language in real time",
 		},
 		{
 			ID:      0,  // system
