@@ -6672,18 +6672,19 @@ func companiesPart9() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Scanbo",
+			Website: "https://www.scanbo.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
+				ID:                13271827,
+				IDs:               nil,
+				Alias:             "scanbo",
+				Name:              "Scanbo",
+				Followers:         "2K",
+				Employees:         "2-10",
+				AssociatedMembers: "25",
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -6708,11 +6709,11 @@ func companiesPart9() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Rust Blockchain Developer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4185486374/",
+							Date:                 mustDate("2025-03-22"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -6724,7 +6725,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "SCANBO is a HealthCare platform dedicated to making medical diagnosis available at the point of care and at home",
 		},
 		{
 			ID:      0,  // system
