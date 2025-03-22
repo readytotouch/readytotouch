@@ -2156,7 +2156,7 @@ func companiesPart9() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4125742838/",
-							Date:                 mustDate("2025-03-11"),
+							Date:                 mustDate("2025-03-21"), // mustDate("2025-03-11"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -6497,19 +6497,20 @@ func companiesPart9() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Funnel",
+			Website: "https://funnel.io/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                9397630,
+				IDs:               nil,
+				Alias:             "funnel-io",
+				Name:              "Funnel",
+				Followers:         "54K",
+				Employees:         "201-500",
+				AssociatedMembers: "437",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -6533,11 +6534,11 @@ func companiesPart9() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Senior Data Platform Engineer – Rust",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4142024603/",
+							Date:                 mustDate("2025-03-20"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -6549,7 +6550,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "Marketing intelligence platform",
 		},
 		{
 			ID:      0,  // system
