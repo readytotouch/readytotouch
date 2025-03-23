@@ -754,6 +754,12 @@ var (
 		"vois":                                751, // VOIS
 		"veact":                               752, // Veact GmbH
 		"walmartdataventures":                 753, // Walmart Data Ventures
+		"funnel-io":                           754, // Funnel
+		"lingopal-ai":                         755, // Lingopal
+		"scanbo":                              756, // Scanbo
+		"surrealdb":                           757, // SurrealDB
+		"clockwork-labs":                      758, // Clockwork Labs
+		"pola-rs":                             759, // Polars
 
 	}
 )
