@@ -385,6 +385,7 @@ var (
 		"sunasterisk":                        "sun-vietnam.png",
 		"superindo":                          "superindo.png",
 		"surfly":                             "surfly.png",
+		"surrealdb":                          "surrealdb.png",
 		"suse":                               "gold-suse.png",
 		"swish-analytics":                    "swish-analytics.png",
 		"swiss-post":                         "swiss-post.png",

@@ -6742,7 +6742,7 @@ func companiesPart9() []domain.CompanyProfile {
 			Name:    "SurrealDB",
 			Website: "https://surrealdb.com/",
 			Careers: "https://surrealdb.com/careers",
-			About:   "",
+			About:   "https://medium.com/surrealdb/about",
 			Blog:    "https://surrealdb.com/blog",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                71534355,
@@ -6770,6 +6770,7 @@ func companiesPart9() []domain.CompanyProfile {
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
 			},
+			OttaProfileSlug: "SurrealDB",
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 11,
@@ -6779,11 +6780,11 @@ func companiesPart9() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 25,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
-							ShortDescription:     "",
+							Title:                "Senior Software Engineer",
+							ShortDescription:     "Proficient in programming languages including Rust, C, or Go",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://rustjobs.dev/featured-jobs/SurrealDB-Senior-Software-Engineer-Query-Language-QL-TcCVMEInkwcjBpupa3Ys",
+							Date:                 mustDate("2024-02-03"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -6796,6 +6797,9 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Serverless cloud database",
+			Industries: []domain.Industry{
+				domain.IndustryDevOps,
+			},
 		},
 		{
 			ID:      0,  // system
@@ -6834,18 +6838,8 @@ func companiesPart9() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
-							WithSalary:           false,
-							Remote:               false,
-						},
-					},
+					GitHubRepositoriesCount: 9,
+					Vacancies:               []domain.Vacancy{},
 				},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -6856,24 +6850,25 @@ func companiesPart9() []domain.CompanyProfile {
 			ShortDescription: "Computer Games",
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "",
-			Website: "",
+			ID:      0,        // system
+			Type:    "",       // system
+			Name:    "Polars", // Polars BV
+			Website: "https://pola.rs/",
 			Careers: "",
-			About:   "",
-			Blog:    "",
+			About:   "https://pola.rs/about-us/",
+			Blog:    "https://pola.rs/posts/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
+				ID:                98439348,
+				IDs:               nil,
+				Alias:             "pola-rs",
+				Name:              "Polars",
+				Followers:         "20K",
+				Employees:         "2-10",
+				AssociatedMembers: "14",
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
+				Login:    "pola-rs",
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
@@ -6891,18 +6886,8 @@ func companiesPart9() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
-							WithSalary:           false,
-							Remote:               false,
-						},
-					},
+					GitHubRepositoriesCount: 8,
+					Vacancies:               []domain.Vacancy{},
 				},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -6910,349 +6895,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
-		},
-		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "",
-			Website: "",
-			Careers: "",
-			About:   "",
-			Blog:    "",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
-			},
-			BlindProfile: domain.BlindProfile{
-				Alias: "",
-			},
-			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-			},
-			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
-			},
-			Languages: domain.Languages{
-				domain.Go: {},
-				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
-							WithSalary:           false,
-							Remote:               false,
-						},
-					},
-				},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-			ShortDescription: "",
-		},
-		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "",
-			Website: "",
-			Careers: "",
-			About:   "",
-			Blog:    "",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
-			},
-			BlindProfile: domain.BlindProfile{
-				Alias: "",
-			},
-			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-			},
-			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
-			},
-			Languages: domain.Languages{
-				domain.Go: {},
-				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
-							WithSalary:           false,
-							Remote:               false,
-						},
-					},
-				},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-			ShortDescription: "",
-		},
-		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "",
-			Website: "",
-			Careers: "",
-			About:   "",
-			Blog:    "",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
-			},
-			BlindProfile: domain.BlindProfile{
-				Alias: "",
-			},
-			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-			},
-			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
-			},
-			Languages: domain.Languages{
-				domain.Go: {},
-				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
-							WithSalary:           false,
-							Remote:               false,
-						},
-					},
-				},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-			ShortDescription: "",
-		},
-		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "",
-			Website: "",
-			Careers: "",
-			About:   "",
-			Blog:    "",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
-			},
-			BlindProfile: domain.BlindProfile{
-				Alias: "",
-			},
-			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-			},
-			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
-			},
-			Languages: domain.Languages{
-				domain.Go: {},
-				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
-							WithSalary:           false,
-							Remote:               false,
-						},
-					},
-				},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-			ShortDescription: "",
-		},
-		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "",
-			Website: "",
-			Careers: "",
-			About:   "",
-			Blog:    "",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
-			},
-			BlindProfile: domain.BlindProfile{
-				Alias: "",
-			},
-			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-			},
-			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
-			},
-			Languages: domain.Languages{
-				domain.Go: {},
-				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
-							WithSalary:           false,
-							Remote:               false,
-						},
-					},
-				},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-			ShortDescription: "",
-		},
-		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "",
-			Website: "",
-			Careers: "",
-			About:   "",
-			Blog:    "",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
-			},
-			BlindProfile: domain.BlindProfile{
-				Alias: "",
-			},
-			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-			},
-			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
-			},
-			Languages: domain.Languages{
-				domain.Go: {},
-				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
-							WithSalary:           false,
-							Remote:               false,
-						},
-					},
-				},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-			ShortDescription: "",
+			ShortDescription: "Lightning-fast DataFrame library for Rust and Python",
 		},
 
 		// Template
