@@ -1274,6 +1274,8 @@ var (
 		"https://www.linkedin.com/jobs/view/4188980146/":                                                               1268, // lingopal-ai
 		"https://www.linkedin.com/jobs/view/4185486374/":                                                               1269, // scanbo
 		"https://rustjobs.dev/featured-jobs/SurrealDB-Senior-Software-Engineer-Query-Language-QL-TcCVMEInkwcjBpupa3Ys": 1270, // surrealdb
+		"https://hiring.pola.rs/o/rust-backend-engineer":                                                               1271, // pola-rs
+		"https://hiring.pola.rs/o/database-engineer":                                                                   1272, // pola-rs
 
 	}
 )
