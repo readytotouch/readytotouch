@@ -43,6 +43,10 @@
     {
       "matches": ["https://www.indeed.com/viewjob*"],
       "js": ["copy-indeed-vacancy-data.js"]
+    },
+    {
+      "matches": ["https://app.welcometothejungle.com/jobs/*"],
+      "js": ["copy-welcometothejungle-vacancy-data.js"]
     }
   ]
 }

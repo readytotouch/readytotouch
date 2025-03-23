@@ -3389,7 +3389,20 @@ func companiesPart1() []domain.CompanyProfile {
 						},
 					},
 				},
-				domain.Rust:    {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{
+						{
+							Title:                "Software Engineer",
+							ShortDescription:     "Storage Layer Services",
+							SwitchingOpportunity: "",
+							URL:                  "https://app.welcometothejungle.com/jobs/BoykNJtU",
+							Date:                 mustDate("2025-03-21"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},
