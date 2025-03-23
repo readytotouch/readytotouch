@@ -3394,7 +3394,7 @@ func companiesPart1() []domain.CompanyProfile {
 					Vacancies:               []domain.Vacancy{
 						{
 							Title:                "Software Engineer",
-							ShortDescription:     "Storage Layer Services",
+							ShortDescription:     "Experience with large backend/compiled codebases, preferably in Rust",
 							SwitchingOpportunity: "",
 							URL:                  "https://app.welcometothejungle.com/jobs/BoykNJtU",
 							Date:                 mustDate("2025-03-21"),
