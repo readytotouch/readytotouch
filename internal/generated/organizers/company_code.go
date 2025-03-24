@@ -766,6 +766,15 @@ var (
 		"motive-inc":                          763, // Motive
 		"stoke-space":                         764, // Stoke Space
 		"greynoise":                           765, // GreyNoise Intelligence
+		"circles1":                            766, // Circles
+		"pulsepoint":                          767, // PulsePoint
+		"armadaai":                            768, // Armada
+		"hubble-pte.-ltd.":                    769, // Hubble.Build
+		"unity":                               770, // Unity
+		"adjoe":                               771, // adjoe
+		"docebo":                              772, // Docebo
+		"getsona":                             773, // Sona (getsona.com)
+		"activeprospect":                      774, // ActiveProspect
 
 	}
 )
