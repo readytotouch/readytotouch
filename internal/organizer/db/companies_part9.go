@@ -8060,19 +8060,20 @@ func companiesPart9() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Docebo",
+			Website: "https://www.docebo.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                210447,
+				IDs:               nil,
+				Alias:             "docebo",
+				Name:              "Docebo",
+				Followers:         "89K",
+				Employees:         "501-1K",
+				AssociatedMembers: "1,023",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -8095,11 +8096,11 @@ func companiesPart9() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Backend Developer – Go",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4192297683/",
+							Date:                 mustDate("2025-03-24"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -8112,7 +8113,10 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "Learning platform",
+			Industries: []domain.Industry{
+				domain.IndustryEdTech,
+			},
 		},
 		{
 			ID:      0,  // system
