@@ -7806,18 +7806,19 @@ func companiesPart9() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Hubble.Build",
+			Website: "https://hubble.build/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
+				ID:                13184745,
+				IDs:               nil,
+				Alias:             "hubble-pte.-ltd.",
+				Name:              "Hubble.Build",
+				Followers:         "34K",
+				Employees:         "51-200",
+				AssociatedMembers: "76",
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -7841,11 +7842,11 @@ func companiesPart9() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Software Engineer (Golang / Ruby on Rails)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4190270866/",
+							Date:                 mustDate("2025-03-21"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -7858,7 +7859,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "Hubble.Build is a construction management platform that seamlessly connects stakeholders across the entire value chain to build better, faster, safer, and more cost-effective projects",
 		},
 		{
 			ID:      0,  // system
