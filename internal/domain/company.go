@@ -98,6 +98,7 @@ type IndeedProfile struct {
 
 type Vacancy struct {
 	Title                string
+	SubTitle             string // @TODO, for future use, design
 	ShortDescription     string // proof that the vacancy is for a particular technology
 	SwitchingOpportunity string // an opportunity to apply without knowing the language, but with a willingness to learn it
 	URL                  string

@@ -1236,7 +1236,7 @@ func companiesPart1() []domain.CompanyProfile {
 						{
 							Title:                "Software Developer",
 							ShortDescription:     "6+ years of total experience in software development",
-							SwitchingOpportunity: "",
+							SwitchingOpportunity: "Demonstrated ability to write great code using Java, Golang, or similar languages",
 							URL:                  "https://www.indeed.com/viewjob?jk=389f6a7aabfbaf90",
 							Date:                 mustDate("2025-03-23"),
 							WithSalary:           false,

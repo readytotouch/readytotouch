@@ -4901,7 +4901,7 @@ func companiesPart8() []domain.CompanyProfile {
 						},
 						{
 							Title:                "Fullstack Software Engineer",
-							ShortDescription:     "Cyber Tooling Team",
+							ShortDescription:     "https://www.indeed.com/viewjob?jk=49493d2b5c6012d7",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.indeed.com/viewjob?jk=49493d2b5c6012d7",
 							Date:                 mustDate("2025-03-23"),
