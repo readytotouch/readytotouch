@@ -8179,18 +8179,19 @@ func companiesPart9() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "ActiveProspect",
+			Website: "https://activeprospect.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
+				ID:                523272,
+				IDs:               []int{523272, 10653877},
+				Alias:             "activeprospect",
+				Name:              "ActiveProspect",
+				Followers:         "21K",
+				Employees:         "51-200",
+				AssociatedMembers: "150",
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -8214,11 +8215,11 @@ func companiesPart9() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Senior Software Engineer (Elixir)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4190011323/",
+							Date:                 mustDate("2025-03-20"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -8231,7 +8232,10 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "Consent-based marketing platform",
+			Industries: []domain.Industry{
+				domain.IndustryMarTech,
+			},
 		},
 		{
 			ID:      0,  // system
