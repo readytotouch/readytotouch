@@ -1233,6 +1233,15 @@ func companiesPart1() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Software Developer",
+							ShortDescription:     "6+ years of total experience in software development",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=389f6a7aabfbaf90",
+							Date:                 mustDate("2025-03-23"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {},
@@ -2770,6 +2779,15 @@ func companiesPart1() []domain.CompanyProfile {
 							Date:                 mustDate("2024-12-20"),
 							WithSalary:           false,
 							Remote:               false,
+						},
+						{
+							Title:                "Staff Backend Engineer",
+							ShortDescription:     "Terraform Authorship",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=7af3879e19ecbbee",
+							Date:                 mustDate("2025-03-23"),
+							WithSalary:           true, // $225,600 - $289,600 per year
+							Remote:               true,
 						},
 					},
 				},
@@ -4608,6 +4626,15 @@ func companiesPart1() []domain.CompanyProfile {
 							WithSalary:           true, // $92.000 - $147.000 per year
 							Remote:               false,
 						},
+						{
+							Title:                "Lead Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=270ee4a38c450cae",
+							Date:                 mustDate("2025-03-23"),
+							WithSalary:           true, // $138,000 - $221,000 per year
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -6128,6 +6155,15 @@ func companiesPart1() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4093231440/",
 							Date:                 mustDate("2024-12-05"),
 							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Software Engineer — Delivery Platform",
+							ShortDescription:     "Highly efficient coding in Golang, Java or any similar languages",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=4a8e1837ebf1a386",
+							Date:                 mustDate("2025-03-23"),
+							WithSalary:           true, // $164,000 - $220,000 per year
 							Remote:               false,
 						},
 					},

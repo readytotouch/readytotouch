@@ -2302,6 +2302,15 @@ func companiesPart2() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Platform Engineering Architect (Kubernetes)",
+							ShortDescription:     "5+ years of experience with Linux systems, Windows systems as well as programming and scripting languages: Golang, Python, Bash",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=6b1b1c3b199aca14",
+							Date:                 mustDate("2025-03-23"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -2701,6 +2710,20 @@ func companiesPart2() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer",
+							ShortDescription:     "Experience Team",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=eefd9820284cf6b3",
+							Date:                 mustDate("2025-03-23"),
+							WithSalary:           true, // $175,000 - $210,000 per year
+							Remote:               false,
+						},
+					},
+				},
 				domain.Rust: {
 					GitHubRepositoriesCount: 9,
 					Vacancies: []domain.Vacancy{
@@ -10168,7 +10191,20 @@ func companiesPart2() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
-				domain.Go:    {},
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Staff Engineer — Backend",
+							ShortDescription:     "Highly effective with Kotlin, Java and/or Go",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=795dd7499246fa49",
+							Date:                 mustDate("2025-03-23"),
+							WithSalary:           true, // $144,000 - $282,000 per year
+							Remote:               true,
+						},
+					},
+				},
 				domain.Rust:  {},
 				domain.Zig:   {},
 				domain.Scala: {},
