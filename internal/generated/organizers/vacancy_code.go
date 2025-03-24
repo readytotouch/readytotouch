@@ -80,6 +80,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4133600886/":                                                               719,  // elastic-co
 		"https://www.linkedin.com/jobs/view/4110414724/":                                                               961,  // elastic-co
 		"https://www.linkedin.com/jobs/view/4099667362/":                                                               406,  // mongodbinc
+		"https://app.welcometothejungle.com/jobs/BoykNJtU":                                                             1273, // mongodbinc
 		"https://www.linkedin.com/jobs/view/4021697979/":                                                               10,   // redisinc
 		"https://www.linkedin.com/jobs/view/3963199017/":                                                               11,   // redisinc
 		"https://www.linkedin.com/jobs/view/4082647102/":                                                               856,  // redisinc
@@ -96,6 +97,7 @@ var (
 		"https://www.linkedin.com/jobs/view/3210061536/":                                                               274,  // canonical
 		"https://www.linkedin.com/jobs/view/4034618699/":                                                               302,  // suse
 		"https://www.linkedin.com/jobs/view/4062919998/":                                                               407,  // konghq
+		"https://app.welcometothejungle.com/jobs/l9x_fLDt":                                                             1274, // konghq
 		"https://app.welcometothejungle.com/jobs/yfqng_As":                                                             408,  // exasol-ag
 		"https://www.linkedin.com/jobs/view/3840764882/":                                                               409,  // palantir-technologies
 		"https://www.linkedin.com/jobs/view/4066312363/":                                                               410,  // bufbuild
@@ -1274,6 +1276,8 @@ var (
 		"https://www.linkedin.com/jobs/view/4188980146/":                                                               1268, // lingopal-ai
 		"https://www.linkedin.com/jobs/view/4185486374/":                                                               1269, // scanbo
 		"https://rustjobs.dev/featured-jobs/SurrealDB-Senior-Software-Engineer-Query-Language-QL-TcCVMEInkwcjBpupa3Ys": 1270, // surrealdb
+		"https://hiring.pola.rs/o/rust-backend-engineer":                                                               1271, // pola-rs
+		"https://hiring.pola.rs/o/database-engineer":                                                                   1272, // pola-rs
 
 	}
 )

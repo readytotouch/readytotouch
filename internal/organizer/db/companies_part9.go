@@ -6887,7 +6887,26 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Go: {},
 				domain.Rust: {
 					GitHubRepositoriesCount: 8,
-					Vacancies:               []domain.Vacancy{},
+					Vacancies:               []domain.Vacancy{
+						{
+							Title:                "Rust Backend Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://hiring.pola.rs/o/rust-backend-engineer",
+							Date:                 mustDate("2025-03-21"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Database Engineer",
+							ShortDescription:     "Experience in Rust",
+							SwitchingOpportunity: "",
+							URL:                  "https://hiring.pola.rs/o/database-engineer",
+							Date:                 mustDate("2025-03-21"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
 				},
 				domain.Zig:     {},
 				domain.Scala:   {},

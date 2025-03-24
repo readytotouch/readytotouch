@@ -3389,7 +3389,20 @@ func companiesPart1() []domain.CompanyProfile {
 						},
 					},
 				},
-				domain.Rust:    {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{
+						{
+							Title:                "Software Engineer",
+							ShortDescription:     "Experience with large backend/compiled codebases, preferably in Rust",
+							SwitchingOpportunity: "",
+							URL:                  "https://app.welcometothejungle.com/jobs/BoykNJtU",
+							Date:                 mustDate("2025-03-21"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},
@@ -3958,7 +3971,20 @@ func companiesPart1() []domain.CompanyProfile {
 						},
 					},
 				},
-				domain.Rust:    {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 13,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer",
+							ShortDescription:     "5+ years of programming, with demonstrable experience in Rust\n",
+							SwitchingOpportunity: "",
+							URL:                  "https://app.welcometothejungle.com/jobs/l9x_fLDt",
+							Date:                 mustDate("2025-03-21"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},

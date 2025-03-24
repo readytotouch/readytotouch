@@ -312,6 +312,7 @@ var (
 		"pinecone-io":                        "pinecone.png",
 		"pinterest":                          "pinterest.png",
 		"plaid-":                             "plaid.png",
+		"pola-rs":                            "pola-rs.jpeg",
 		"poppi-technologies":                 "poppi-technologies.png",
 		"postscriptio":                       "postscript.png",
 		"power-factors-inc":                  "powerfactors.png",
