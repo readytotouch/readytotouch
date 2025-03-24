@@ -366,6 +366,15 @@ func companiesPart9() []domain.CompanyProfile {
 							WithSalary:           true, // £65,000-£80,000 + bonus and stock options
 							Remote:               false,
 						},
+						{
+							Title:                "Software Engineer – Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4192226484/",
+							Date:                 mustDate("2025-03-24"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
