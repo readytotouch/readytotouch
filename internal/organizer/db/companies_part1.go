@@ -227,6 +227,15 @@ func companiesPart1() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Software Engineer, Go Language Ecosystem",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4188505691/",
+							Date:                 mustDate("2025-03-24"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
@@ -8747,6 +8756,15 @@ func companiesPart1() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4131339080/",
 							Date:                 mustDate("2025-03-04"), // mustDate("2025-01-21"),
 							WithSalary:           true,                   // $160K — $190K per year
+							Remote:               true,
+						},
+						{
+							Title:                "Principal Software Engineer (Go)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4190113275/",
+							Date:                 mustDate("2025-03-24"),
+							WithSalary:           false,
 							Remote:               true,
 						},
 					},
