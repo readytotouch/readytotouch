@@ -4899,6 +4899,15 @@ func companiesPart8() []domain.CompanyProfile {
 							WithSalary:           true, // $111,200 - $433,680 per year + cash and stock awards + benefits
 							Remote:               false,
 						},
+						{
+							Title:                "Fullstack Software Engineer",
+							ShortDescription:     "Cyber Tooling Team",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=49493d2b5c6012d7",
+							Date:                 mustDate("2025-03-23"),
+							WithSalary:           true, // $111,200 - $200,160 per year
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
