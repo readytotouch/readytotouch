@@ -3427,7 +3427,7 @@ func companiesPart1() []domain.CompanyProfile {
 				},
 				domain.Rust: {
 					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{
+					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer",
 							ShortDescription:     "Experience with large backend/compiled codebases, preferably in Rust",
@@ -18610,7 +18610,7 @@ func companiesPart1() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4121876234/",
 							Date:                 mustDate("2025-03-24"), // mustDate("2025-03-02"),
-							WithSalary:           true, // $156.400 - $234.600 per year
+							WithSalary:           true,                   // $156.400 - $234.600 per year
 							Remote:               false,
 						},
 					},
