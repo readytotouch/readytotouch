@@ -7748,19 +7748,20 @@ func companiesPart9() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Armada",
+			Website: "https://www.armada.ai/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                97187862,
+				IDs:               nil,
+				Alias:             "armadaai",
+				Name:              "Armada",
+				Followers:         "13K",
+				Employees:         "201-500",
+				AssociatedMembers: "245",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -7783,11 +7784,11 @@ func companiesPart9() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Software Engineer (Golang)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4190620206/",
+							Date:                 mustDate("2025-03-21"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -7800,7 +7801,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "Computing platform",
 		},
 		{
 			ID:      0,  // system
