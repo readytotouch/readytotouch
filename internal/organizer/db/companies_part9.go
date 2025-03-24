@@ -168,7 +168,7 @@ func companiesPart9() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4169998476/",
-							Date:                 mustDate("2025-03-18"),
+							Date:                 mustDate("2025-03-24"), // mustDate("2025-03-18"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -364,6 +364,15 @@ func companiesPart9() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4172858065/",
 							Date:                 mustDate("2025-03-04"),
 							WithSalary:           true, // £65,000-£80,000 + bonus and stock options
+							Remote:               false,
+						},
+						{
+							Title:                "Software Engineer – Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4192226484/",
+							Date:                 mustDate("2025-03-24"),
+							WithSalary:           false,
 							Remote:               false,
 						},
 					},
@@ -2949,6 +2958,15 @@ func companiesPart9() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Software Engineer II – Edge (Golang Kubernetes)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4145763846/",
+							Date:                 mustDate("2025-03-22"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -3698,11 +3716,20 @@ func companiesPart9() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Senior Engineer Golang (f/m/d) at Solaris",
+							Title:                "Senior Engineer Golang",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4181915311/",
 							Date:                 mustDate("2025-03-14"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Engineer Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4189553947/",
+							Date:                 mustDate("2025-03-24"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -4060,6 +4087,24 @@ func companiesPart9() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4180220865/",
 							Date:                 mustDate("2025-03-13"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=7922a4920a8d87b5",
+							Date:                 mustDate("2025-03-23"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Core Engineering, Golang Software Engineer, Analyst/ Associate",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4124674198/",
+							Date:                 mustDate("2025-03-22"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -5905,6 +5950,15 @@ func companiesPart9() []domain.CompanyProfile {
 							WithSalary:           true, // $100,000 - $620,000 per year
 							Remote:               true,
 						},
+						{
+							Title:                "Software Engineer 6 — Games Experience Engineering",
+							ShortDescription:     "Languages: JavaScript, Java, Python, Lua, Golang, Clojure",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=ba7e24381e243687",
+							Date:                 mustDate("2025-03-23"),
+							WithSalary:           true, // $230,000 - $960,000 per year
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -6887,7 +6941,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Go: {},
 				domain.Rust: {
 					GitHubRepositoriesCount: 8,
-					Vacancies:               []domain.Vacancy{
+					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Rust Backend Engineer",
 							ShortDescription:     "",
@@ -6915,6 +6969,1332 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Lightning-fast DataFrame library for Rust and Python",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Tsunami Tsolutions",
+			Website: "https://tsunamitsolutions.com/",
+			Careers: "https://tsunamitsolutions.com/index.php/careers/",
+			About:   "https://tsunamitsolutions.com/index.php/who-we-are/",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                983003,
+				IDs:               nil,
+				Alias:             "tsunami-tsolutions-llc.",
+				Name:              "Tsunami Tsolutions",
+				Followers:         "3K",
+				Employees:         "51-200",
+				AssociatedMembers: "127",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{
+						// Unclear if this is a Go position https://www.indeed.com/viewjob?jk=e5b01bd47b175b64
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American aviation & aerospace company that offers Engineering Support and Information Solutions",
+			Ignore:           true, // Unclear about the tech stack
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Draper",
+			Website: "https://www.draper.com/",
+			Careers: "https://www.draper.com/careers",
+			About:   "https://www.draper.com/about",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                163500,
+				IDs:               nil,
+				Alias:             "draper",
+				Name:              "Draper",
+				Followers:         "46K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "2,475",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "draper",
+				Employees: "1,750",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{
+						// Unclear if this is a Go position https://www.indeed.com/viewjob?jk=f77b58384382b852
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American nonprofit engineering innovation company",
+			Ignore:           true, // Unclear about the tech stack
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Mayo Clinic",
+			Website: "https://www.mayoclinic.org/",
+			Careers: "https://jobs.mayoclinic.org/",
+			About:   "https://www.mayoclinic.org/about-mayo-clinic",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                4725,
+				IDs:               nil,
+				Alias:             "mayo-clinic",
+				Name:              "Mayo Clinic",
+				Followers:         "1M",
+				Employees:         "10K+",
+				AssociatedMembers: "48,372",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "mayo-clinic",
+				Employees: "63,000",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{
+						// Unclear if this is a Go position https://www.indeed.com/viewjob?jk=4c3c7f291e1c965f
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American nonprofit academic medical center focused on integrated health care, education, and research",
+			Ignore:           true, // Unclear about the tech stack
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "University of Florida",
+			Website: "http://ufl.edu/",
+			Careers: "https://jobs.ufl.edu/",
+			About:   "https://www.ufl.edu/about/",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                4282,
+				IDs:               []int{4282, 7974417, 15101148, 15102044, 18869387},
+				Alias:             "uflorida",
+				Name:              "University of Florida",
+				Followers:         "606K",
+				Employees:         "",
+				AssociatedMembers: "",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "smartsystemslab-uf",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "university-of-florida",
+				Employees: "19,453",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{
+						// Unclear if this is a Go position https://www.indeed.com/viewjob?jk=630a513e4b7e6d8e
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American public land-grant research university",
+			Ignore:           true, // Unclear about the tech stack
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Storage Rentals of America",
+			Website: "https://www.sroa.com/",
+			Careers: "https://www.sroa.com/careers",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                33228180,
+				IDs:               nil,
+				Alias:             "storage-rentals-america",
+				Name:              "Storage Rentals of America",
+				Followers:         "5K",
+				Employees:         "501-1K",
+				AssociatedMembers: "200",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "DevOps Engineer",
+							ShortDescription:     "Experience in programming with TypeScript and Golang, with the ability to write SQL scripts for database management and operations",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=7195850460dbc38c",
+							Date:                 mustDate("2025-03-23"),
+							WithSalary:           true, // $75,000 - $95,000 per year
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American self-storage company who provides wide range of rentable storage properties",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Red Hat",
+			Website: "https://www.redhat.com/",
+			Careers: "https://www.redhat.com/en/jobs",
+			About:   "https://www.redhat.com/en/about",
+			Blog:    "https://www.redhat.com/en/blog",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3545,
+				IDs:               nil,
+				Alias:             "red-hat",
+				Name:              "Red Hat",
+				Followers:         "1M",
+				Employees:         "10K+",
+				AssociatedMembers: "19,585",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "redhatofficial",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "red-hat",
+				Employees: "18,600",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer",
+							ShortDescription:     "2+ years of experience working in a Linux environment with Golang or Python",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=974e99549d320db1",
+							Date:                 mustDate("2025-03-23"),
+							WithSalary:           true, // $94,550 - $151,170 per year
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American software company that provides open source software products to enterprises and is a subsidiary of IBM",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "OCC",
+			Website: "https://www.theocc.com/",
+			Careers: "https://www.theocc.com/careers",
+			About:   "https://www.theocc.com/company-information/what-is-occ",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                47420,
+				IDs:               nil,
+				Alias:             "occ",
+				Name:              "OCC",
+				Followers:         "31K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "2,568",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "occ",
+				Employees: "2,250",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineering: Java — Associate Principal",
+							ShortDescription:     "Experience with app development in Golang",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=0ce9ca11c038853d",
+							Date:                 mustDate("2025-03-23"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American clearing house who specializes in equity derivatives clearing",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Motive",
+			Website: "https://gomotive.com/",
+			Careers: "https://gomotive.com/company/careers/",
+			About:   "",
+			Blog:    "https://medium.com/motive-eng",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                0,
+				IDs:               nil,
+				Alias:             "motive-inc",
+				Name:              "Motive",
+				Followers:         "539K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "4,487",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "GoMotive",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "motive",
+				Employees: "4,024",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Staff System Software Engineer",
+							ShortDescription:     "Proficiency in Golang, Kotlin, and C++",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=8206a2447ac1e213",
+							Date:                 mustDate("2025-03-23"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American technology company that creates software used by truck",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Freddie Mac",
+			Website: "https://www.freddiemac.com/",
+			Careers: "https://careers.freddiemac.com/",
+			About:   "https://www.freddiemac.com/about",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3140,
+				IDs:               nil,
+				Alias:             "freddie-mac",
+				Name:              "Freddie Mac",
+				Followers:         "184K",
+				Employees:         "5K-10K",
+				AssociatedMembers: "11,147",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "freddie-mac",
+				Employees: "9,250",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{
+						// Unclear if this is a Rust position https://www.indeed.com/viewjob?jk=1ddd9df71b91cb71
+					},
+				},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American government-sponsored agency charged with keeping mortgage markets liquid",
+			Ignore:           true, // Unclear about the tech stack
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Stoke Space",
+			Website: "http://www.stokespace.com/",
+			Careers: "https://www.stokespace.com/careers/",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                53254054,
+				IDs:               nil,
+				Alias:             "stoke-space",
+				Name:              "Stoke Space",
+				Followers:         "45K",
+				Employees:         "201-500",
+				AssociatedMembers: "215",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "stoke-space",
+				Employees: "85",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Vehicle Software Rust Developer",
+							ShortDescription:     "Experience in Rust",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=e6442d48c3e89a90",
+							Date:                 mustDate("2025-03-23"),
+							WithSalary:           true, // $94,100 - $275,600 per year
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American space launch company who developing a fully and rapidly reusable space launch vehicle",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "GreyNoise Intelligence",
+			Website: "https://greynoise.io/",
+			Careers: "https://www.greynoise.io/careers",
+			About:   "https://www.greynoise.io/about",
+			Blog:    "https://www.greynoise.io/blog",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                11204989,
+				IDs:               nil,
+				Alias:             "greynoise",
+				Name:              "GreyNoise Intelligence",
+				Followers:         "11K",
+				Employees:         "11-50",
+				AssociatedMembers: "62",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "greynoise-intelligence",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "greynoise-intelligence",
+				Employees: "59",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer (Platform)",
+							ShortDescription:     "5+ years of production software engineering experience",
+							SwitchingOpportunity: "Working with Go (Golang) for backend development",
+							URL:                  "https://www.indeed.com/viewjob?jk=40120128f063af25",
+							Date:                 mustDate("2025-03-24"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American cybersecurity company",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Universal Music Group",
+			Website: "https://www.universalmusic.com/",
+			Careers: "https://www.umusiccareers.com/",
+			About:   "https://www.universalmusic.com/company/",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3007,
+				IDs:               nil,
+				Alias:             "universalmusicgroup",
+				Name:              "Universal Music Group",
+				Followers:         "951K",
+				Employees:         "5K-10K",
+				AssociatedMembers: "12,018",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "universal-music-group",
+				Employees: "8,250",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{
+						// Unclear if this is a Go position https://www.indeed.com/viewjob?jk=b9f6faf52fb64156
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "",
+			Ignore:           true, // Unclear about the tech stack
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Circles",
+			Website: "https://circles.co/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                6449768,
+				IDs:               nil,
+				Alias:             "circles1",
+				Name:              "Circles",
+				Followers:         "69K",
+				Employees:         "501-1K",
+				AssociatedMembers: "1,324",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Staff Software Engineer (Golang / Node.js)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4187988746/",
+							Date:                 mustDate("2025-03-21"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Circles is a technology company reimagining the telco industry with its SaaS platform, helping telco operators launch and operate successful digital brands",
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "PulsePoint",
+			Website: "https://www.pulsepoint.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2349382,
+				IDs:               nil,
+				Alias:             "pulsepoint",
+				Name:              "PulsePoint",
+				Followers:         "51K",
+				Employees:         "51-200",
+				AssociatedMembers: "",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior K8/Golang Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4188677602/",
+							Date:                 mustDate("2025-03-22"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "PulsePoint is a technology company using data to accelerate healthcare marketing",
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Armada",
+			Website: "https://www.armada.ai/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                97187862,
+				IDs:               nil,
+				Alias:             "armadaai",
+				Name:              "Armada",
+				Followers:         "13K",
+				Employees:         "201-500",
+				AssociatedMembers: "245",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4190620206/",
+							Date:                 mustDate("2025-03-21"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Computing platform",
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Hubble.Build",
+			Website: "https://hubble.build/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                13184745,
+				IDs:               nil,
+				Alias:             "hubble-pte.-ltd.",
+				Name:              "Hubble.Build",
+				Followers:         "34K",
+				Employees:         "51-200",
+				AssociatedMembers: "76",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer (Golang / Ruby on Rails)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4190270866/",
+							Date:                 mustDate("2025-03-21"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Hubble.Build is a construction management platform that seamlessly connects stakeholders across the entire value chain to build better, faster, safer, and more cost-effective projects",
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Skillz",
+			Website: "https://www.skillz.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3104354,
+				IDs:               nil,
+				Alias:             "skillz",
+				Name:              "Skillz",
+				Followers:         "20K",
+				Employees:         "51-200",
+				AssociatedMembers: "215",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Backend Engineer – Java / Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4192054490/",
+							Date:                 mustDate("2025-03-24"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "",
+			Ignore:           true, // Gambling
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Unity",
+			Website: "https://unity.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                212669,
+				IDs:               []int{5676, 212669, 1388753, 15091249, 18301696},
+				Alias:             "unity",
+				Name:              "Unity",
+				Followers:         "745K",
+				Employees:         "5K-10K",
+				AssociatedMembers: "6,927",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Golang Backend Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4191748355/",
+							Date:                 mustDate("2025-03-23"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Platform for creating and operating real-time 3D content",
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "adjoe",
+			Website: "https://adjoe.io/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                12601466,
+				IDs:               nil,
+				Alias:             "adjoe",
+				Name:              "adjoe",
+				Followers:         "11K",
+				Employees:         "51-200",
+				AssociatedMembers: "149",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Go Developer",
+							ShortDescription:     "Advertising Dashboard Team",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4190144087/",
+							Date:                 mustDate("2025-03-24"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "",
+			Industries: []domain.Industry{
+				domain.IndustryAdTech,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Docebo",
+			Website: "https://www.docebo.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                210447,
+				IDs:               nil,
+				Alias:             "docebo",
+				Name:              "Docebo",
+				Followers:         "89K",
+				Employees:         "501-1K",
+				AssociatedMembers: "1,023",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Backend Developer – Go",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4192297683/",
+							Date:                 mustDate("2025-03-24"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Learning platform",
+			Industries: []domain.Industry{
+				domain.IndustryEdTech,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Sona",
+			Website: "https://www.getsona.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                79810814,
+				IDs:               nil,
+				Alias:             "getsona",
+				Name:              "Sona (getsona.com)",
+				Followers:         "10K",
+				Employees:         "51-200",
+				AssociatedMembers: "137",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "AI Software Engineer (Elixir, LLMs)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4175895182/",
+							Date:                 mustDate("2025-03-22"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Workforce management solution",
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "ActiveProspect",
+			Website: "https://activeprospect.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                523272,
+				IDs:               []int{523272, 10653877},
+				Alias:             "activeprospect",
+				Name:              "ActiveProspect",
+				Followers:         "21K",
+				Employees:         "51-200",
+				AssociatedMembers: "150",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer (Elixir)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4190011323/",
+							Date:                 mustDate("2025-03-20"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Consent-based marketing platform",
+			Industries: []domain.Industry{
+				domain.IndustryMarTech,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Ledger",
+			Website: "https://www.ledger.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                5389345,
+				IDs:               nil,
+				Alias:             "ledgerhq",
+				Name:              "Ledger",
+				Followers:         "79K",
+				Employees:         "501-1K",
+				AssociatedMembers: "710",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go:   {},
+				domain.Rust: {},
+				domain.Zig:  {},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Scala Backend Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4192446500/",
+							Date:                 mustDate("2025-03-24"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "",
+			Ignore:           true, // Crypto
 		},
 
 		// Template

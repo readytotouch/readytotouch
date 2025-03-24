@@ -12,8 +12,8 @@
 <html lang="en">
 
 <head>
-	<title>{%s organizerFeature.Organizer.Title %} vacancies | ReadyToTouch</title>
-	<meta name="title" content="{%s organizerFeature.Organizer.Title %} vacancies | ReadyToTouch">
+	<title>{%s organizerFeature.Organizer.Title %} jobs | ReadyToTouch</title>
+	<meta name="title" content="{%s organizerFeature.Organizer.Title %} jobs | ReadyToTouch">
     {% comment %}
 	<meta name="description" content="{%s organizerFeature.Organizer.Description %}">
     <meta name="keywords" content="{%s organizerFeature.Organizer.Keywords %}">
@@ -48,7 +48,7 @@
         <a href="/organizers/{%s organizerFeature.Organizer.Alias %}/companies" class="header__nav-link">Companies</a>
       </li>
       <li class="header__nav-item">
-        <a href="/organizers/{%s organizerFeature.Organizer.Alias %}/vacancies" class="header__nav-link active">Vacancies</a>
+        <a href="/organizers/{%s organizerFeature.Organizer.Alias %}/jobs" class="header__nav-link active">Jobs</a>
       </li>
       <li class="header__nav-item">
         <a href="/organizers/{%s organizerFeature.Organizer.Alias %}/communities" class="header__nav-link">Communities</a>

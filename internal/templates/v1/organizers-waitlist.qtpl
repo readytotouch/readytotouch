@@ -39,7 +39,7 @@
         <a href="/organizers/{%s organizerFeature.Organizer.Alias %}/companies" class="header__nav-link {%s navigation.companiesActive %}">Companies</a>
       </li>
       <li class="header__nav-item">
-        <a href="/organizers/{%s organizerFeature.Organizer.Alias %}/vacancies" class="header__nav-link {%s navigation.vacanciesActive %}">Vacancies</a>
+        <a href="/organizers/{%s organizerFeature.Organizer.Alias %}/jobs" class="header__nav-link {%s navigation.vacanciesActive %}">Jobs</a>
       </li>
       <li class="header__nav-item">
         <a href="/organizers/{%s organizerFeature.Organizer.Alias %}/communities" class="header__nav-link">Communities</a>

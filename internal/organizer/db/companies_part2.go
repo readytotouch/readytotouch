@@ -2302,6 +2302,15 @@ func companiesPart2() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Platform Engineering Architect (Kubernetes)",
+							ShortDescription:     "5+ years of experience with Linux systems, Windows systems as well as programming and scripting languages: Golang, Python, Bash",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=6b1b1c3b199aca14",
+							Date:                 mustDate("2025-03-23"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -2701,6 +2710,20 @@ func companiesPart2() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer",
+							ShortDescription:     "Experience Team",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=eefd9820284cf6b3",
+							Date:                 mustDate("2025-03-23"),
+							WithSalary:           true, // $175,000 - $210,000 per year
+							Remote:               false,
+						},
+					},
+				},
 				domain.Rust: {
 					GitHubRepositoriesCount: 9,
 					Vacancies: []domain.Vacancy{
@@ -6115,6 +6138,15 @@ func companiesPart2() []domain.CompanyProfile {
 							WithSalary:           true, // $101,000 – $150,000 per year
 							Remote:               false,
 						},
+						{
+							Title:                "Staff Software Engineer, Full Stack, Golang or Java",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4185790931/",
+							Date:                 mustDate("2025-03-20"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -6285,6 +6317,15 @@ func companiesPart2() []domain.CompanyProfile {
 							Date:                 mustDate("2025-02-13"),
 							WithSalary:           false,
 							Remote:               true,
+						},
+						{
+							Title:                "Senior Backend Software Engineer (Golang)",
+							ShortDescription:     "Platform",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4189903563/",
+							Date:                 mustDate("2025-03-24"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 					},
 				},
@@ -6810,7 +6851,7 @@ func companiesPart2() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4026169602/",
-							Date:                 mustDate("2025-02-28"),
+							Date:                 mustDate("2025-03-22"), // mustDate("2025-02-28"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -9537,6 +9578,15 @@ func companiesPart2() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Fullstack Engineer – React & Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4188306161/",
+							Date:                 mustDate("2025-03-22"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -10168,7 +10218,20 @@ func companiesPart2() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
-				domain.Go:    {},
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Staff Engineer — Backend",
+							ShortDescription:     "Highly effective with Kotlin, Java and/or Go",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=795dd7499246fa49",
+							Date:                 mustDate("2025-03-23"),
+							WithSalary:           true, // $144,000 - $282,000 per year
+							Remote:               true,
+						},
+					},
+				},
 				domain.Rust:  {},
 				domain.Zig:   {},
 				domain.Scala: {},

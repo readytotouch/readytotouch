@@ -4899,6 +4899,15 @@ func companiesPart8() []domain.CompanyProfile {
 							WithSalary:           true, // $111,200 - $433,680 per year + cash and stock awards + benefits
 							Remote:               false,
 						},
+						{
+							Title:                "Fullstack Software Engineer",
+							ShortDescription:     "https://www.indeed.com/viewjob?jk=49493d2b5c6012d7",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=49493d2b5c6012d7",
+							Date:                 mustDate("2025-03-23"),
+							WithSalary:           true, // $111,200 - $200,160 per year
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
@@ -5375,17 +5384,7 @@ func companiesPart8() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "Backend Developer (Golang)",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "https://www.linkedin.com/jobs/view/4159419521/",
-							Date:                 mustDate("2024-02-20"),
-							WithSalary:           false,
-							Remote:               false,
-						},
-					},
+					Vacancies:               []domain.Vacancy{},
 				},
 				domain.Rust:    {},
 				domain.Zig:     {},
@@ -6876,7 +6875,7 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4168166029/",
-							Date:                 mustDate("2025-02-28"),
+							Date:                 mustDate("2025-03-21"), // mustDate("2025-02-28"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -7187,7 +7186,7 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4169557069/",
-							Date:                 mustDate("2025-02-28"),
+							Date:                 mustDate("2025-03-20"), // mustDate("2025-02-22"),
 							WithSalary:           false,
 							Remote:               false,
 						},

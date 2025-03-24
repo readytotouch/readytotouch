@@ -42,11 +42,15 @@ function getURL() {
 }
 
 function remote() {
-    return false;
+    const $elements = document.querySelectorAll('[class^="js-match-insights-provider-"]');
+
+    return Array.from($elements).some($element => $element.textContent.trim().toLowerCase() === "remote");
 }
 
 function salary() {
-    return false;
+    const $elements = document.querySelectorAll('[class^="js-match-insights-provider-"]');
+
+    return Array.from($elements).some($element => $element.textContent.trim().toLowerCase().includes("$"));
 }
 
 function date() {
