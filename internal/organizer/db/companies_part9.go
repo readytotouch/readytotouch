@@ -7999,18 +7999,19 @@ func companiesPart9() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "adjoe",
+			Website: "https://adjoe.io/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
+				ID:                12601466,
+				IDs:               nil,
+				Alias:             "adjoe",
+				Name:              "adjoe",
+				Followers:         "11K",
+				Employees:         "51-200",
+				AssociatedMembers: "149",
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -8034,11 +8035,11 @@ func companiesPart9() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
-							ShortDescription:     "",
+							Title:                "Senior Go Developer",
+							ShortDescription:     "Advertising Dashboard Team",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4190144087/",
+							Date:                 mustDate("2025-03-24"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -8052,6 +8053,9 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			Industries: []domain.Industry{
+				domain.IndustryAdTech,
+			},
 		},
 		{
 			ID:      0,  // system
