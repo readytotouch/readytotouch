@@ -57,7 +57,7 @@ func toFeatureNavigation(path string) featureNavigation {
 		}
 	}
 
-	if strings.HasSuffix(path, "/vacancies") {
+	if strings.HasSuffix(path, "/jobs") {
 		return featureNavigation{
 			companiesActive: "",
 			vacanciesActive: "active",

@@ -48,7 +48,7 @@
         <a href="/organizers/{%s organizerFeature.Organizer.Alias %}/companies" class="header__nav-link active">Companies</a>
       </li>
       <li class="header__nav-item">
-        <a href="/organizers/{%s organizerFeature.Organizer.Alias %}/vacancies" class="header__nav-link">Vacancies</a>
+        <a href="/organizers/{%s organizerFeature.Organizer.Alias %}/jobs" class="header__nav-link">Jobs</a>
       </li>
       <li class="header__nav-item">
         <a href="/organizers/{%s organizerFeature.Organizer.Alias %}/communities" class="header__nav-link">Communities</a>
@@ -699,12 +699,12 @@
 </section>
 <section class="company-vacancies">
 	<div class="container company-vacancies__container">
-		<h2 class="company-statistics__headline">Vacancies</h2>
+		<h2 class="company-statistics__headline">Jobs</h2>
 		{% comment %}
 		<div class="vacancies__empty d-none">
 			<img class="vacancies__empty-logo" width="64" height="64" src="/assets/images/pages/common-images/📂.png" alt="folder">
-			<h2 class="vacancies__empty-title">No vacancies yet</h2>
-			<p class="vacancies__empty-subtitle">This company currently has no vacancies, or we are unaware of them.</p>
+			<h2 class="vacancies__empty-title">No jobs yet</h2>
+			<p class="vacancies__empty-subtitle">This company currently has no jobs, or we are unaware of them.</p>
 		</div>
 		{% endcomment %}
 		<div class="vacancies__list">
