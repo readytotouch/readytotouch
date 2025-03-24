@@ -7941,19 +7941,20 @@ func companiesPart9() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Unity",
+			Website: "https://unity.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                212669,
+				IDs:               []int{5676, 212669, 1388753, 15091249, 18301696},
+				Alias:             "unity",
+				Name:              "Unity",
+				Followers:         "745K",
+				Employees:         "5K-10K",
+				AssociatedMembers: "6,927",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -7976,11 +7977,11 @@ func companiesPart9() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Golang Backend Engineer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4191748355/",
+							Date:                 mustDate("2025-03-23"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -7993,7 +7994,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "Platform for creating and operating real-time 3D content",
 		},
 		{
 			ID:      0,  // system
