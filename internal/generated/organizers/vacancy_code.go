@@ -41,6 +41,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4059368134/":                                                               259,  // sap
 		"https://www.linkedin.com/jobs/view/4117406944/":                                                               981,  // sap
 		"https://www.indeed.com/viewjob?jk=a6ecca848079cb48":                                                           1223, // oracle
+		"https://www.indeed.com/viewjob?jk=389f6a7aabfbaf90":                                                           1275, // oracle
 		"https://www.linkedin.com/jobs/view/4034901984/":                                                               260,  // oracle
 		"https://www.linkedin.com/jobs/view/4125824194/":                                                               643,  // oracle
 		"https://www.linkedin.com/jobs/view/4125825071/":                                                               644,  // oracle
@@ -68,6 +69,7 @@ var (
 		"https://www.linkedin.com/jobs/view/3983369109/":                                                               400,  // dropbox
 		"https://www.linkedin.com/jobs/view/4076482530/":                                                               401,  // grafana-labs
 		"https://www.linkedin.com/jobs/view/4102997754/":                                                               402,  // hashicorp
+		"https://www.indeed.com/viewjob?jk=7af3879e19ecbbee":                                                           1276, // hashicorp
 		"https://www.linkedin.com/jobs/view/3996818515/":                                                               7,    // crowdstrike
 		"https://www.linkedin.com/jobs/view/4174424253/":                                                               1044, // crowdstrike
 		"https://www.linkedin.com/jobs/view/4040870810/":                                                               8,    // crowdstrike
@@ -113,6 +115,7 @@ var (
 		"https://www.linkedin.com/jobs/view/3842471708/":                                                               305,  // mastercard
 		"https://www.linkedin.com/jobs/view/4113621612/":                                                               543,  // mastercard
 		"https://www.linkedin.com/jobs/view/4169383008/":                                                               1045, // mastercard
+		"https://www.indeed.com/viewjob?jk=270ee4a38c450cae":                                                           1277, // mastercard
 		"https://www.linkedin.com/jobs/view/3952881485/":                                                               306,  // morgan-stanley
 		"https://www.linkedin.com/jobs/view/4169037262/":                                                               1009, // morgan-stanley
 		"https://www.linkedin.com/jobs/view/3912849197/":                                                               307,  // citi
@@ -153,6 +156,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4125792093/":                                                               785,  // sentinelone
 		"https://www.linkedin.com/jobs/view/4182387761/":                                                               1158, // sentinelone
 		"https://www.linkedin.com/jobs/view/4093231440/":                                                               415,  // uber-com
+		"https://www.indeed.com/viewjob?jk=4a8e1837ebf1a386":                                                           1278, // uber-com
 		"https://www.linkedin.com/jobs/view/4103717982/":                                                               213,  // siemens
 		"https://www.linkedin.com/jobs/view/4044911988/":                                                               621,  // siemens
 		"https://www.linkedin.com/jobs/view/4129459999/":                                                               681,  // siemens
@@ -522,9 +526,11 @@ var (
 		"https://www.linkedin.com/jobs/view/3821037210/":                                                               485,  // liebherr
 		"https://www.linkedin.com/jobs/view/4026685486/":                                                               486,  // fiserv
 		"https://www.linkedin.com/jobs/view/4131803257/":                                                               693,  // fiserv
+		"https://www.indeed.com/viewjob?jk=6b1b1c3b199aca14":                                                           1279, // fiserv
 		"https://www.linkedin.com/jobs/view/3819936157/":                                                               487,  // gettaxi
 		"https://www.linkedin.com/jobs/view/3949883320/":                                                               488,  // stairwell-inc
 		"https://www.linkedin.com/jobs/view/4050904655/":                                                               489,  // dittolive
+		"https://www.indeed.com/viewjob?jk=eefd9820284cf6b3":                                                           1280, // pinecone-io
 		"https://www.linkedin.com/jobs/view/4002028518/":                                                               490,  // pinecone-io
 		"https://www.linkedin.com/jobs/view/4068292201/":                                                               275,  // beyond-identity-inc
 		"https://www.linkedin.com/jobs/view/4068295195/":                                                               276,  // nightfall-ai
@@ -679,6 +685,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4061088133/":                                                               68,   // remarkable-as
 		"https://www.linkedin.com/jobs/view/4027571222/":                                                               69,   // synopsys
 		"https://www.linkedin.com/jobs/view/4044830862/":                                                               70,   // pubmatic
+		"https://www.indeed.com/viewjob?jk=795dd7499246fa49":                                                           1281, // fanatics-inc-
 		"https://www.linkedin.com/jobs/view/4011218533/":                                                               71,   // fanatics-inc-
 		"https://www.linkedin.com/jobs/view/4175578542/":                                                               1122, // fanatics-inc-
 		"https://www.linkedin.com/jobs/view/4072221760/":                                                               72,   // kantox
@@ -778,6 +785,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4102559144/":                                                               948,  // applied-systems
 		"https://www.linkedin.com/jobs/view/4027419578/":                                                               112,  // yum-brands
 		"https://www.linkedin.com/jobs/view/4062804124/":                                                               113,  // nokia
+		"https://www.indeed.com/viewjob?jk=bbc415f81eb3e324":                                                           1282, // nokia
 		"https://www.linkedin.com/jobs/view/3992302026/":                                                               114,  // flyrinc
 		"https://www.linkedin.com/jobs/view/3993864259/":                                                               115,  // we-are-venatus
 		"https://www.linkedin.com/jobs/view/4025814866/":                                                               116,  // rocket-lab-limited
@@ -1147,6 +1155,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4153154012/":                                                               886,  // nasdaq
 		"https://www.linkedin.com/jobs/view/4043283281/":                                                               887,  // qualcomm
 		"https://www.linkedin.com/jobs/view/4153462892/":                                                               888,  // tesla-motors
+		"https://www.indeed.com/viewjob?jk=49493d2b5c6012d7":                                                           1283, // tesla-motors
 		"https://www.linkedin.com/jobs/view/4146191943/":                                                               889,  // tesla-motors
 		"https://www.linkedin.com/jobs/view/4080573355/":                                                               902,  // dhl
 		"https://www.linkedin.com/jobs/view/4157748397/":                                                               903,  // moia_mobility
@@ -1238,6 +1247,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4184824435/":                                                               1211, // smava
 		"https://www.linkedin.com/jobs/view/4181840665/":                                                               1212, // synitidata
 		"https://www.linkedin.com/jobs/view/4180220865/":                                                               1213, // goldman-sachs
+		"https://www.indeed.com/viewjob?jk=7922a4920a8d87b5":                                                           1284, // goldman-sachs
 		"https://www.linkedin.com/jobs/view/4178756795/":                                                               1214, // cho-tot
 		"https://www.linkedin.com/jobs/view/4182751037/":                                                               1215, // simulmedia
 		"https://www.linkedin.com/jobs/view/4182668629/":                                                               1216, // mindrift-ai
@@ -1266,6 +1276,7 @@ var (
 		"https://www.indeed.com/viewjob?jk=e35725dabddd890c":                                                           1256, // lucidmotors
 		"https://www.indeed.com/viewjob?jk=164ee8448e688865":                                                           1257, // the-odp-corporation
 		"https://www.indeed.com/viewjob?jk=5a23d65371dc5435":                                                           1258, // netflix
+		"https://www.indeed.com/viewjob?jk=ba7e24381e243687":                                                           1285, // netflix
 		"https://www.indeed.com/viewjob?jk=858278a26965db1b":                                                           1259, // panasonic
 		"https://www.linkedin.com/jobs/view/4184795681/":                                                               1260, // netscribes
 		"https://www.linkedin.com/jobs/view/4187284222/":                                                               1261, // warner-bros-discovery
@@ -1278,6 +1289,12 @@ var (
 		"https://rustjobs.dev/featured-jobs/SurrealDB-Senior-Software-Engineer-Query-Language-QL-TcCVMEInkwcjBpupa3Ys": 1270, // surrealdb
 		"https://hiring.pola.rs/o/rust-backend-engineer":                                                               1271, // pola-rs
 		"https://hiring.pola.rs/o/database-engineer":                                                                   1272, // pola-rs
+		"https://www.indeed.com/viewjob?jk=7195850460dbc38c":                                                           1286, // storage-rentals-america
+		"https://www.indeed.com/viewjob?jk=974e99549d320db1":                                                           1287, // red-hat
+		"https://www.indeed.com/viewjob?jk=0ce9ca11c038853d":                                                           1288, // occ
+		"https://www.indeed.com/viewjob?jk=8206a2447ac1e213":                                                           1289, // motive-inc
+		"https://www.indeed.com/viewjob?jk=e6442d48c3e89a90":                                                           1290, // stoke-space
+		"https://www.indeed.com/viewjob?jk=40120128f063af25":                                                           1291, // greynoise
 
 	}
 )
