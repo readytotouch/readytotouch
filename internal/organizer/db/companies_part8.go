@@ -4901,7 +4901,7 @@ func companiesPart8() []domain.CompanyProfile {
 						},
 						{
 							Title:                "Fullstack Software Engineer",
-							ShortDescription:     "Cyber Tooling Team",
+							ShortDescription:     "https://www.indeed.com/viewjob?jk=49493d2b5c6012d7",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.indeed.com/viewjob?jk=49493d2b5c6012d7",
 							Date:                 mustDate("2025-03-23"),
@@ -5384,17 +5384,7 @@ func companiesPart8() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "Backend Developer (Golang)",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "https://www.linkedin.com/jobs/view/4159419521/",
-							Date:                 mustDate("2024-02-20"),
-							WithSalary:           false,
-							Remote:               false,
-						},
-					},
+					Vacancies:               []domain.Vacancy{},
 				},
 				domain.Rust:    {},
 				domain.Zig:     {},

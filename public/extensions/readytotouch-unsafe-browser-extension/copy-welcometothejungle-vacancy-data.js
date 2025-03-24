@@ -1,11 +1,11 @@
-console.log("Indeed vacancy data copy extension loaded");
+console.log("Welcome to the Jungle vacancy data copy extension loaded");
 
 // Ctrl + Shift + Y
 document.body.addEventListener("keydown", (event) => {
     // Y is for English, Н is for Ukrainian
     if (event.ctrlKey && event.shiftKey && (event.key === "Y" || event.key === "Н")) {
 
-        const title = document.querySelector("h2").innerText.trim()
+        const title = document.querySelector("h1").innerText.trim()
             .replaceAll(" - ", " – ") // Replace hyphen with dash
             .replace("(m/f/x)", " ").trim()
             .replace("(m/f/d)", " ").trim()
@@ -17,9 +17,9 @@ document.body.addEventListener("keydown", (event) => {
 
         const goLinkedInVacancyColumns = `{
 						    Title:                "${title}",
-						    ShortDescription:     "",
+						    ShortDescription:     "${document.querySelector("h2").innerText.trim()}",
 						    SwitchingOpportunity: "",
-						    URL:                  "${getURL()}",
+						    URL:                  "${window.location.origin + window.location.pathname}",
 						    Date:                 mustDate("${date()}"),
 						    WithSalary:           ${salary() ? "true" : "false"},
 						    Remote:               ${remote() ? "true" : "false"},
@@ -31,26 +31,12 @@ document.body.addEventListener("keydown", (event) => {
     }
 });
 
-function getURL() {
-    const params = new URLSearchParams(window.location.search);
-    const jk = params.get("jk");
-    if (jk) {
-        return `${window.location.origin + window.location.pathname}?jk=${jk}`;
-    }
-
-    return "";
-}
-
 function remote() {
-    const $elements = document.querySelectorAll('[class^="js-match-insights-provider-"]');
-
-    return Array.from($elements).some($element => $element.textContent.trim().toLowerCase() === "remote");
+    return false;
 }
 
 function salary() {
-    const $elements = document.querySelectorAll('[class^="js-match-insights-provider-"]');
-
-    return Array.from($elements).some($element => $element.textContent.trim().toLowerCase().includes("$"));
+    return false;
 }
 
 function date() {

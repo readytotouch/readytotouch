@@ -2156,7 +2156,7 @@ func companiesPart9() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4125742838/",
-							Date:                 mustDate("2025-03-11"),
+							Date:                 mustDate("2025-03-21"), // mustDate("2025-03-11"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2332,6 +2332,15 @@ func companiesPart9() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4153485948/",
 							Date:                 mustDate("2025-03-09"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Rust Developer",
+							ShortDescription:     "Proxy Solution",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4190616076/",
+							Date:                 mustDate("2025-03-21"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -5907,7 +5916,7 @@ func companiesPart9() []domain.CompanyProfile {
 						},
 						{
 							Title:                "Software Engineer 6 — Games Experience Engineering",
-							ShortDescription:     "",
+							ShortDescription:     "Languages: JavaScript, Java, Python, Lua, Golang, Clojure",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.indeed.com/viewjob?jk=ba7e24381e243687",
 							Date:                 mustDate("2025-03-23"),
@@ -6512,6 +6521,419 @@ func companiesPart9() []domain.CompanyProfile {
 			},
 			ShortDescription: "",
 		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Funnel",
+			Website: "https://funnel.io/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                9397630,
+				IDs:               nil,
+				Alias:             "funnel-io",
+				Name:              "Funnel",
+				Followers:         "54K",
+				Employees:         "201-500",
+				AssociatedMembers: "437",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Data Platform Engineer – Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4142024603/",
+							Date:                 mustDate("2025-03-20"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Marketing intelligence platform",
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "OKX",
+			Website: "http://www.okx.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                13323120,
+				IDs:               nil,
+				Alias:             "okxofficial",
+				Name:              "OKX",
+				Followers:         "462K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "5,933",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Blockchain Engineer (Rust/Go)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4187130229/",
+							Date:                 mustDate("2025-03-20"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "",
+			Ignore:           true, // Crypto
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Lingopal",
+			Website: "https://lingopal.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                98079583,
+				IDs:               nil,
+				Alias:             "lingopal-ai",
+				Name:              "Lingopal",
+				Followers:         "50K",
+				Employees:         "51-200",
+				AssociatedMembers: "31",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Rust Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4188980146/",
+							Date:                 mustDate("2025-03-20"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Translate LIVE speech into any language in real time",
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Scanbo",
+			Website: "https://www.scanbo.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                13271827,
+				IDs:               nil,
+				Alias:             "scanbo",
+				Name:              "Scanbo",
+				Followers:         "2K",
+				Employees:         "2-10",
+				AssociatedMembers: "25",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Rust Blockchain Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4185486374/",
+							Date:                 mustDate("2025-03-22"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "SCANBO is a HealthCare platform dedicated to making medical diagnosis available at the point of care and at home",
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "SurrealDB",
+			Website: "https://surrealdb.com/",
+			Careers: "https://surrealdb.com/careers",
+			About:   "https://medium.com/surrealdb/about",
+			Blog:    "https://surrealdb.com/blog",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                71534355,
+				IDs:               nil,
+				Alias:             "surrealdb",
+				Name:              "SurrealDB",
+				Followers:         "7K",
+				Employees:         "11-50",
+				AssociatedMembers: "43",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "surrealdb",
+				Verified: true,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			OttaProfileSlug: "SurrealDB",
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 11,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 25,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer",
+							ShortDescription:     "Proficient in programming languages including Rust, C, or Go",
+							SwitchingOpportunity: "",
+							URL:                  "https://rustjobs.dev/featured-jobs/SurrealDB-Senior-Software-Engineer-Query-Language-QL-TcCVMEInkwcjBpupa3Ys",
+							Date:                 mustDate("2024-02-03"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Serverless cloud database",
+			Industries: []domain.Industry{
+				domain.IndustryDevOps,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Clockwork Labs",
+			Website: "https://clockworklabs.io/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                19088131,
+				IDs:               nil,
+				Alias:             "clockwork-labs",
+				Name:              "Clockwork Labs",
+				Followers:         "3K",
+				Employees:         "2-10",
+				AssociatedMembers: "31",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "clockworklabs",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 9,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Computer Games",
+		},
+		{
+			ID:      0,        // system
+			Type:    "",       // system
+			Name:    "Polars", // Polars BV
+			Website: "https://pola.rs/",
+			Careers: "",
+			About:   "https://pola.rs/about-us/",
+			Blog:    "https://pola.rs/posts/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                98439348,
+				IDs:               nil,
+				Alias:             "pola-rs",
+				Name:              "Polars",
+				Followers:         "20K",
+				Employees:         "2-10",
+				AssociatedMembers: "14",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "pola-rs",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 8,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Rust Backend Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://hiring.pola.rs/o/rust-backend-engineer",
+							Date:                 mustDate("2025-03-21"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Database Engineer",
+							ShortDescription:     "Experience in Rust",
+							SwitchingOpportunity: "",
+							URL:                  "https://hiring.pola.rs/o/database-engineer",
+							Date:                 mustDate("2025-03-21"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Lightning-fast DataFrame library for Rust and Python",
+		},
 
 		{
 			ID:      0,  // system
@@ -6550,16 +6972,8 @@ func companiesPart9() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "Staff Developer",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "https://www.indeed.com/viewjob?jk=e5b01bd47b175b64",
-							Date:                 mustDate("2025-03-23"),
-							WithSalary:           false,
-							Remote:               false,
-						},
+					Vacancies:               []domain.Vacancy{
+						// Unclear if this is a Go position https://www.indeed.com/viewjob?jk=e5b01bd47b175b64
 					},
 				},
 				domain.Rust:    {},
@@ -6570,13 +6984,14 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "American aviation & aerospace company that offers Engineering Support and Information Solutions",
+			Ignore:           true, // Unclear about the tech stack
 		},
 
 		{
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "Draper",
-			Website: "http://www.draper.com/",
+			Website: "https://www.draper.com/",
 			Careers: "https://www.draper.com/careers",
 			About:   "https://www.draper.com/about",
 			Blog:    "",
@@ -6610,16 +7025,8 @@ func companiesPart9() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "Cyber Tool and Capability Developer",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "https://www.indeed.com/viewjob?jk=f77b58384382b852",
-							Date:                 mustDate("2025-03-23"),
-							WithSalary:           false,
-							Remote:               false,
-						},
+					Vacancies:               []domain.Vacancy{
+						// Unclear if this is a Go position https://www.indeed.com/viewjob?jk=f77b58384382b852
 					},
 				},
 				domain.Rust:    {},
@@ -6630,6 +7037,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "American nonprofit engineering innovation company",
+			Ignore:           true, // Unclear about the tech stack
 		},
 
 		{
@@ -6670,16 +7078,8 @@ func companiesPart9() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "Senior Software Engineer",
-							ShortDescription:     "high-level language (C, C++, Golang, Java, C#)",
-							SwitchingOpportunity: "",
-							URL:                  "https://www.indeed.com/viewjob?jk=4c3c7f291e1c965f",
-							Date:                 mustDate("2025-03-23"),
-							WithSalary:           true, // $138,257 - $200,512 per year
-							Remote:               false,
-						},
+					Vacancies:               []domain.Vacancy{
+						// Unclear if this is a Go position https://www.indeed.com/viewjob?jk=4c3c7f291e1c965f
 					},
 				},
 				domain.Rust:    {},
@@ -6690,6 +7090,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "American nonprofit academic medical center focused on integrated health care, education, and research",
+			Ignore:           true, // Unclear about the tech stack
 		},
 
 		{
@@ -6730,16 +7131,8 @@ func companiesPart9() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "Fullstack Engineer",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "https://www.indeed.com/viewjob?jk=630a513e4b7e6d8e",
-							Date:                 mustDate("2025-03-23"),
-							WithSalary:           true, // $90,000 - $95,000 per year
-							Remote:               false,
-						},
+					Vacancies:               []domain.Vacancy{
+						// Unclear if this is a Go position https://www.indeed.com/viewjob?jk=630a513e4b7e6d8e
 					},
 				},
 				domain.Rust:    {},
@@ -6750,6 +7143,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "American public land-grant research university",
+			Ignore:           true, // Unclear about the tech stack
 		},
 
 		{
@@ -6792,7 +7186,7 @@ func companiesPart9() []domain.CompanyProfile {
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "DevOps Engineer",
-							ShortDescription:     "",
+							ShortDescription:     "Experience in programming with TypeScript and Golang, with the ability to write SQL scripts for database management and operations",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.indeed.com/viewjob?jk=7195850460dbc38c",
 							Date:                 mustDate("2025-03-23"),
@@ -7030,16 +7424,8 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Go: {},
 				domain.Rust: {
 					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "Senior Software Development Engineer",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "https://www.indeed.com/viewjob?jk=1ddd9df71b91cb71",
-							Date:                 mustDate("2025-03-23"),
-							WithSalary:           true, // $116,000 - $174,000 per year
-							Remote:               false,
-						},
+					Vacancies:               []domain.Vacancy{
+						// Unclear if this is a Rust position https://www.indeed.com/viewjob?jk=1ddd9df71b91cb71
 					},
 				},
 				domain.Zig:     {},
@@ -7049,6 +7435,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "American government-sponsored agency charged with keeping mortgage markets liquid",
+			Ignore:           true, // Unclear about the tech stack
 		},
 
 		{
@@ -7153,7 +7540,7 @@ func companiesPart9() []domain.CompanyProfile {
 						{
 							Title:                "Senior Software Engineer (Platform)",
 							ShortDescription:     "5+ years of production software engineering experience",
-							SwitchingOpportunity: "",
+							SwitchingOpportunity: "Working with Go (Golang) for backend development",
 							URL:                  "https://www.indeed.com/viewjob?jk=40120128f063af25",
 							Date:                 mustDate("2025-03-24"),
 							WithSalary:           false,
@@ -7209,16 +7596,8 @@ func companiesPart9() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "Software Developer",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "https://www.indeed.com/viewjob?jk=b9f6faf52fb64156",
-							Date:                 mustDate("2025-03-24"),
-							WithSalary:           true, // $100,051 - $140,025 per year
-							Remote:               false,
-						},
+					Vacancies:               []domain.Vacancy{
+						// Unclear if this is a Go position https://www.indeed.com/viewjob?jk=b9f6faf52fb64156
 					},
 				},
 				domain.Rust:    {},
@@ -7229,6 +7608,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			Ignore:           true, // Unclear about the tech stack
 		},
 
 		// Template
