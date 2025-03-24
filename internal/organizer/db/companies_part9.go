@@ -8121,19 +8121,20 @@ func companiesPart9() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Sona",
+			Website: "https://www.getsona.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                79810814,
+				IDs:               nil,
+				Alias:             "getsona",
+				Name:              "Sona (getsona.com)",
+				Followers:         "10K",
+				Employees:         "51-200",
+				AssociatedMembers: "137",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -8156,11 +8157,11 @@ func companiesPart9() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "AI Software Engineer (Elixir, LLMs)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4175895182/",
+							Date:                 mustDate("2025-03-22"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -8173,7 +8174,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "Workforce management solution",
 		},
 		{
 			ID:      0,  // system
