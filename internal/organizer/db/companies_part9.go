@@ -6673,7 +6673,7 @@ func companiesPart9() []domain.CompanyProfile {
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer",
-							ShortDescription:     "high-level language (C, C++, Golang, Java, C#",
+							ShortDescription:     "high-level language (C, C++, Golang, Java, C#)",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.indeed.com/viewjob?jk=4c3c7f291e1c965f",
 							Date:                 mustDate("2025-03-23"),
@@ -7027,7 +7027,8 @@ func companiesPart9() []domain.CompanyProfile {
 				Alias: "",
 			},
 			Languages: domain.Languages{
-				domain.Go: {
+				domain.Go: {},
+				domain.Rust: {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
@@ -7041,7 +7042,6 @@ func companiesPart9() []domain.CompanyProfile {
 						},
 					},
 				},
-				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},
@@ -7087,7 +7087,8 @@ func companiesPart9() []domain.CompanyProfile {
 				Alias: "",
 			},
 			Languages: domain.Languages{
-				domain.Go: {
+				domain.Go: {},
+				domain.Rust: {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
@@ -7101,7 +7102,6 @@ func companiesPart9() []domain.CompanyProfile {
 						},
 					},
 				},
-				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},
