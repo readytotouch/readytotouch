@@ -7614,19 +7614,20 @@ func companiesPart9() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Circles",
+			Website: "https://circles.co/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                6449768,
+				IDs:               nil,
+				Alias:             "circles1",
+				Name:              "Circles",
+				Followers:         "69K",
+				Employees:         "501-1K",
+				AssociatedMembers: "1,324",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -7649,11 +7650,11 @@ func companiesPart9() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Staff Software Engineer (Golang / Node.js)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4187988746/",
+							Date:                 mustDate("2025-03-22"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -7666,7 +7667,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "Circles is a technology company reimagining the telco industry with its SaaS platform, helping telco operators launch and operate successful digital brands",
 		},
 		{
 			ID:      0,  // system
