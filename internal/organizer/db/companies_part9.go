@@ -8240,19 +8240,20 @@ func companiesPart9() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Ledger",
+			Website: "https://www.ledger.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                5389345,
+				IDs:               nil,
+				Alias:             "ledgerhq",
+				Name:              "Ledger",
+				Followers:         "79K",
+				Employees:         "501-1K",
+				AssociatedMembers: "710",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -8271,28 +8272,29 @@ func companiesPart9() []domain.CompanyProfile {
 				Alias: "",
 			},
 			Languages: domain.Languages{
-				domain.Go: {
+				domain.Go:   {},
+				domain.Rust: {},
+				domain.Zig:  {},
+				domain.Scala: {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Senior Scala Backend Engineer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4192446500/",
+							Date:                 mustDate("2025-03-24"),
 							WithSalary:           false,
 							Remote:               false,
 						},
 					},
 				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
 				domain.Elixir:  {},
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			Ignore:           true, // Crypto
 		},
 		{
 			ID:      0,  // system
