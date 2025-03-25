@@ -2775,6 +2775,15 @@ func companiesPart9() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "API Engineer — Micro-Services",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=8d7ce4fc383b9eac",
+							Date:                 mustDate("2025-03-25"),
+							WithSalary:           true, // $134,000 - $247,000 per year
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -8295,6 +8304,385 @@ func companiesPart9() []domain.CompanyProfile {
 			},
 			ShortDescription: "",
 			Ignore:           true, // Crypto
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "TileDB",
+			Website: "https://tiledb.com/",
+			Careers: "https://ats.rippling.com/tiledb-careers/jobs",
+			About:   "https://tiledb.com/about/",
+			Blog:    "https://tiledb.com/blog",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                11301003,
+				IDs:               nil,
+				Alias:             "tiledb-inc",
+				Name:              "TileDB",
+				Followers:         "13K",
+				Employees:         "51-200",
+				AssociatedMembers: "75",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Frontend Engineer",
+							ShortDescription:     "Experience with Go (golang) programming language",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=e2b34be9d4b50769",
+							Date:                 mustDate("2025-03-25"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Embedded storage engine designed to support the storage and access of both dense and sparse multi-dimensional arrays",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Redpanda Data",
+			Website: "https://redpanda.com/",
+			Careers: "https://www.redpanda.com/careers",
+			About:   "https://www.redpanda.com/about-us",
+			Blog:    "https://www.redpanda.com/blog",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                35528665,
+				IDs:               nil,
+				Alias:             "redpanda-data",
+				Name:              "Redpanda Data",
+				Followers:         "19K",
+				Employees:         "51-200",
+				AssociatedMembers: "170",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "redpanda-data",
+				Verified: true,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "redpanda-data",
+				Employees: "183",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer",
+							ShortDescription:     "Strong understanding and experience of Go",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=5c8079196dde8330",
+							Date:                 mustDate("2025-03-25"),
+							WithSalary:           true, // $185,000 - $225,000 per year
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer — Core Enterprise",
+							ShortDescription:     "3+ years of substantial and relevant experience in software development",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=b057b3d7d5c320af",
+							Date:                 mustDate("2025-03-25"),
+							WithSalary:           true, // $185,000 - $218,000 per year
+							Remote:               true,
+						},
+					},
+				},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Modern streaming data platform for developers",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Quizlet",
+			Website: "https://quizlet.com/",
+			Careers: "https://quizlet.com/careers",
+			About:   "https://quizlet.com/mission",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                807920,
+				IDs:               nil,
+				Alias:             "quizlet",
+				Name:              "Quizlet",
+				Followers:         "47K",
+				Employees:         "201-500",
+				AssociatedMembers: "572",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "quizlet",
+				Verified: true,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "quizlet",
+				Employees: "100",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Fullstack Engineer — Activation & Retention",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=0fc7f5a0a82ac3fe",
+							Date:                 mustDate("2025-03-25"),
+							WithSalary:           true, // $160,000 - $210,000 per year
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American company that provides tools for studying and learning",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Svix",
+			Website: "https://www.svix.com/",
+			Careers: "https://www.svix.com/careers/",
+			About:   "https://www.svix.com/about/",
+			Blog:    "https://www.svix.com/blog/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                71559487,
+				IDs:               nil,
+				Alias:             "svix",
+				Name:              "Svix",
+				Followers:         "2K",
+				Employees:         "11-50",
+				AssociatedMembers: "10",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "svix",
+				Verified: true,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Rust Backend Engineer",
+							ShortDescription:     "Experience building production services with Rust",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=c5a456ba1962bc7e",
+							Date:                 mustDate("2025-03-25"),
+							WithSalary:           true, // $130,000 - $160,000 per year
+							Remote:               true,
+						},
+						{
+							Title:                "Tech lead",
+							ShortDescription:     "Experience with Rust, Postgres, and Redis",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=1f4022f006ac8456",
+							Date:                 mustDate("2025-03-25"),
+							WithSalary:           true, // $190,000 - $210,000 per year
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Webhooks-as-a-service platform that empowers companies of all sizes to send webhooks easily and reliably",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Anduril Industries",
+			Website: "https://www.anduril.com/",
+			Careers: "https://www.anduril.com/careers/",
+			About:   "https://www.anduril.com/mission/",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                18293159,
+				IDs:               nil,
+				Alias:             "andurilindustries",
+				Name:              "Anduril Industries",
+				Followers:         "256K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "4,143",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "anduril",
+				Verified: true,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "anduril-industries",
+				Employees: "530",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Game Developer — Sensor Simulation",
+							ShortDescription:     "Rust programming experience",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=1645f9d3eb114feb",
+							Date:                 mustDate("2025-03-25"),
+							WithSalary:           true, // $138,000 - $207,000 per year
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American defense technology company that specializes in autonomous systems",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "CORYS",
+			Website: "https://www.corys.com/",
+			Careers: "https://www.corys.com/en/home/career/",
+			About:   "https://www.corys.com/en/home/about-us/",
+			Blog:    "https://www.corys.com/en/category/blog-en/engineering-blog/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                48613,
+				IDs:               nil,
+				Alias:             "corys",
+				Name:              "CORYS",
+				Followers:         "8K",
+				Employees:         "201-500",
+				AssociatedMembers: "541",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Developer — Power Simulation",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=078b469307edba42",
+							Date:                 mustDate("2025-03-25"),
+							WithSalary:           true, // $85,000 - $120,000 per year
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "French engineering company who provides real time high-fidelity dynamic process simulation, engineering, and training for process industries",
 		},
 
 		// Template
