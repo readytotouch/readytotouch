@@ -65,6 +65,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4058445939/":                                                               269,  // influ2
 		"https://app.welcometothejungle.com/jobs/qdIzdfOu":                                                             270,  // netlify
 		"https://www.linkedin.com/jobs/view/4048326475/":                                                               271,  // vercel
+		"https://www.indeed.com/viewjob?jk=2e956ada0db590e2":                                                           1317, // vercel
 		"https://www.linkedin.com/jobs/view/4077452954/":                                                               272,  // fastly
 		"https://www.linkedin.com/jobs/view/4097075408/":                                                               273,  // fastly
 		"https://www.linkedin.com/jobs/view/3983369109/":                                                               400,  // dropbox
@@ -259,6 +260,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4056886705/":                                                               16,   // sumup
 		"https://www.linkedin.com/jobs/view/4054449086/":                                                               569,  // sumup
 		"https://www.linkedin.com/jobs/view/3897014183/":                                                               335,  // levelhome
+		"https://www.indeed.com/viewjob?jk=c62b2780a93edc98":                                                           1318, // levelhome
 		"https://www.linkedin.com/jobs/view/3875719837/":                                                               215,  // sonicwall
 		"https://www.linkedin.com/jobs/view/4034349867/":                                                               216,  // sonicwall
 		"https://www.linkedin.com/jobs/view/4145089084/":                                                               1012, // sonicwall
@@ -1243,6 +1245,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4182972537/":                                                               1180, // td
 		"https://www.linkedin.com/jobs/view/4184051342/":                                                               1181, // airudder
 		"https://www.linkedin.com/jobs/view/4184033707/":                                                               1182, // guidewire-software
+		"https://www.indeed.com/viewjob?jk=8d7ce4fc383b9eac":                                                           1319, // guidewire-software
 		"https://www.linkedin.com/jobs/view/4138748551/":                                                               1183, // makropro
 		"https://www.linkedin.com/jobs/view/4183852152/":                                                               1184, // infoblox
 		"https://www.linkedin.com/jobs/view/4137578941/":                                                               1185, // ncrvoyix
@@ -1320,6 +1323,11 @@ var (
 		"https://www.linkedin.com/jobs/view/4192297683/":                                                               1314, // docebo
 		"https://www.linkedin.com/jobs/view/4175895182/":                                                               1315, // getsona
 		"https://www.linkedin.com/jobs/view/4190011323/":                                                               1316, // activeprospect
+		"https://www.indeed.com/viewjob?jk=5c8079196dde8330":                                                           1320, // redpanda-data
+		"https://www.indeed.com/viewjob?jk=c5a456ba1962bc7e":                                                           1321, // svix
+		"https://www.indeed.com/viewjob?jk=1f4022f006ac8456":                                                           1322, // svix
+		"https://www.indeed.com/viewjob?jk=1645f9d3eb114feb":                                                           1323, // andurilindustries
+		"https://www.indeed.com/viewjob?jk=078b469307edba42":                                                           1324, // corys
 
 	}
 )

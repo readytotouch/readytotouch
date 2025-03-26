@@ -2378,7 +2378,20 @@ func companiesPart1() []domain.CompanyProfile {
 						},
 					},
 				},
-				domain.Rust:    {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer — Turbopack",
+							ShortDescription:     "5+ years of relevant experience and 1+ years writing production Rust code",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=2e956ada0db590e2",
+							Date:                 mustDate("2025-03-25"),
+							WithSalary:           true, // $192,000 - $288,000 per year
+							Remote:               true,
+						},
+					},
+				},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},
@@ -5473,7 +5486,12 @@ func companiesPart1() []domain.CompanyProfile {
 						},
 					},
 				},
-				domain.Rust:    {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{
+						// Waiting for Rust position
+					},
+				},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},
@@ -11078,6 +11096,15 @@ func companiesPart1() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/3897014183/",
 							Date:                 mustDate("2024-05-24"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Backend Software Engineer",
+							ShortDescription:     "Write, test, and maintain server software written in Go",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.indeed.com/viewjob?jk=c62b2780a93edc98",
+							Date:                 mustDate("2025-03-25"),
 							WithSalary:           false,
 							Remote:               false,
 						},

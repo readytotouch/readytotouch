@@ -117,7 +117,7 @@ func (c *Controller) CompaniesV1(ctx *gin.Context) {
 		return
 	}
 
-	if c.softAuth(authUserID, organizerFeature.Organizer.Language) {
+	if c.softAuth(ctx, authUserID, organizerFeature.Organizer.Language) {
 		ctx.Redirect(http.StatusFound, "/organizers/golang/welcome"+c.redirect(ctx.Request.URL.Path))
 
 		return
@@ -167,7 +167,7 @@ func (c *Controller) CompaniesV2(ctx *gin.Context) {
 		return
 	}
 
-	if c.softAuth(authUserID, organizerFeature.Organizer.Language) {
+	if c.softAuth(ctx, authUserID, organizerFeature.Organizer.Language) {
 		ctx.Redirect(http.StatusFound, "/organizers/golang/welcome"+c.redirect(ctx.Request.URL.Path))
 
 		return
@@ -320,7 +320,7 @@ func (c *Controller) CompanyV2(ctx *gin.Context) {
 		return
 	}
 
-	if c.softAuth(authUserID, organizerFeature.Organizer.Language) {
+	if c.softAuth(ctx, authUserID, organizerFeature.Organizer.Language) {
 		ctx.Redirect(http.StatusFound, "/organizers/golang/welcome"+c.redirect(ctx.Request.URL.Path))
 
 		return
@@ -470,7 +470,7 @@ func (c *Controller) Vacancies(ctx *gin.Context) {
 		return
 	}
 
-	if c.softAuth(authUserID, organizerFeature.Organizer.Language) {
+	if c.softAuth(ctx, authUserID, organizerFeature.Organizer.Language) {
 		ctx.Redirect(http.StatusFound, "/organizers/golang/welcome"+c.redirect(ctx.Request.URL.Path))
 
 		return
@@ -1388,11 +1388,23 @@ func (c *Controller) anyRemoteVacancy(vacancies []domain.Vacancy) bool {
 	return false
 }
 
-func (c *Controller) softAuth(authUserID int64, language domain.Language) bool {
+func (c *Controller) softAuth(ctx *gin.Context, authUserID int64, language domain.Language) bool {
 	if authUserID > 0 {
 		return false
 	}
 
+	if c.random(language) {
+		if strings.Contains(ctx.GetHeader("User-Agent"), "Googlebot") {
+			return false
+		}
+
+		return true
+	}
+
+	return false
+}
+
+func (c *Controller) random(language domain.Language) bool {
 	minute := time.Now().Minute()
 
 	switch language {
