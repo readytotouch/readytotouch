@@ -1,0 +1,37 @@
+Anduril Industries https://www.anduril.com/
+Appodeal https://appodeal.com/
+Axis Communications https://www.axis.com/
+Beyond Identity https://www.beyondidentity.com/
+Bitfount https://www.bitfount.com/
+Canonical https://canonical.com/
+Check Point Software https://www.checkpoint.com/
+Cognite https://www.cognite.com
+CrowdStrike https://www.crowdstrike.com/
+Daedalean AI https://daedalean.ai/
+Datadog https://www.datadoghq.com/
+Discord https://discord.com/
+Dropbox https://www.dropbox.com/
+Dynatrace https://www.dynatrace.com/
+ExpressVPN https://www.expressvpn.com/
+Hasura https://hasura.io/
+InfluxData https://www.influxdata.com/
+Kong https://konghq.com/
+LinkedIn https://www.linkedin.com/
+Los Alamos National Laboratory https://www.lanl.gov/
+Microsoft https://www.microsoft.com/
+OneSignal https://onesignal.com/
+Palo Alto Networks https://www.paloaltonetworks.com/
+Photoroom https://www.photoroom.com/
+Pinecone https://www.pinecone.io/
+Proton https://proton.me/
+Redis https://redis.io/
+SAP https://www.sap.com/
+Sentry https://sentry.io/
+Siemens https://www.siemens.com/
+Spice AI https://spice.ai/
+SurrealDB https://surrealdb.com/
+Svix https://www.svix.com/
+Tesla https://www.tesla.com/
+Ubisoft https://www.ubisoft.com/
+Vercel https://vercel.com/
+Zurich Instruments https://www.zhinst.com/
