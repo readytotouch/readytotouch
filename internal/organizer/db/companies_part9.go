@@ -2777,8 +2777,8 @@ func companiesPart9() []domain.CompanyProfile {
 						},
 						{
 							Title:                "API Engineer — Micro-Services",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
+							ShortDescription:     "Maintain existing codebases in languages like Go",
+							SwitchingOpportunity: "Knowledge of modern programming languages (specifically Go is a plus)",
 							URL:                  "https://www.indeed.com/viewjob?jk=8d7ce4fc383b9eac",
 							Date:                 mustDate("2025-03-25"),
 							WithSalary:           true, // $134,000 - $247,000 per year
@@ -8343,16 +8343,8 @@ func companiesPart9() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "Frontend Engineer",
-							ShortDescription:     "Experience with Go (golang) programming language",
-							SwitchingOpportunity: "",
-							URL:                  "https://www.indeed.com/viewjob?jk=e2b34be9d4b50769",
-							Date:                 mustDate("2025-03-25"),
-							WithSalary:           false,
-							Remote:               true,
-						},
+					Vacancies:               []domain.Vacancy{
+						// Waiting for Go position
 					},
 				},
 				domain.Rust:    {},
@@ -8417,16 +8409,8 @@ func companiesPart9() []domain.CompanyProfile {
 				},
 				domain.Rust: {
 					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "Software Engineer — Core Enterprise",
-							ShortDescription:     "3+ years of substantial and relevant experience in software development",
-							SwitchingOpportunity: "",
-							URL:                  "https://www.indeed.com/viewjob?jk=b057b3d7d5c320af",
-							Date:                 mustDate("2025-03-25"),
-							WithSalary:           true, // $185,000 - $218,000 per year
-							Remote:               true,
-						},
+					Vacancies:               []domain.Vacancy{
+						// Waiting for Rust position
 					},
 				},
 				domain.Zig:     {},
@@ -8476,16 +8460,8 @@ func companiesPart9() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "Senior Fullstack Engineer — Activation & Retention",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "https://www.indeed.com/viewjob?jk=0fc7f5a0a82ac3fe",
-							Date:                 mustDate("2025-03-25"),
-							WithSalary:           true, // $160,000 - $210,000 per year
-							Remote:               false,
-						},
+					Vacancies:               []domain.Vacancy{
+						// Waiting for Go position
 					},
 				},
 				domain.Rust:    {},
@@ -8533,7 +8509,8 @@ func companiesPart9() []domain.CompanyProfile {
 				Alias: "",
 			},
 			Languages: domain.Languages{
-				domain.Go: {
+				domain.Go: {},
+				domain.Rust: {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
@@ -8556,7 +8533,6 @@ func companiesPart9() []domain.CompanyProfile {
 						},
 					},
 				},
-				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},
@@ -8667,8 +8643,8 @@ func companiesPart9() []domain.CompanyProfile {
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Developer — Power Simulation",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
+							ShortDescription:     "Rust or C++",
+							SwitchingOpportunity: "Experience with Rust is strongly preferred",
 							URL:                  "https://www.indeed.com/viewjob?jk=078b469307edba42",
 							Date:                 mustDate("2025-03-25"),
 							WithSalary:           true, // $85,000 - $120,000 per year

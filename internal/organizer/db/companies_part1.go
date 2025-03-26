@@ -2378,7 +2378,7 @@ func companiesPart1() []domain.CompanyProfile {
 						},
 					},
 				},
-				domain.Rust:    {
+				domain.Rust: {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
@@ -3435,15 +3435,6 @@ func companiesPart1() []domain.CompanyProfile {
 							Date:                 mustDate("2024-12-12"),
 							WithSalary:           false,
 							Remote:               false,
-						},
-						{
-							Title:                "Software Engineer, Identity and Access Management",
-							ShortDescription:     "2+ years of professional experience building full-stack web applications",
-							SwitchingOpportunity: "",
-							URL:                  "https://www.indeed.com/viewjob?jk=361683ca8cc99d32",
-							Date:                 mustDate("2025-03-25"),
-							WithSalary:           true, // $101,000 - $198,000 per year
-							Remote:               true,
 						},
 					},
 				},
@@ -5495,18 +5486,10 @@ func companiesPart1() []domain.CompanyProfile {
 						},
 					},
 				},
-				domain.Rust:    {
+				domain.Rust: {
 					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "Senior Rust Developer",
-							ShortDescription:     "3+ years of experience in Rust development",
-							SwitchingOpportunity: "",
-							URL:                  "https://www.indeed.com/viewjob?jk=b8ae66b26a0c825f",
-							Date:                 mustDate("2025-03-25"),
-							WithSalary:           false,
-							Remote:               false,
-						},
+					Vacancies:               []domain.Vacancy{
+						// Waiting for Rust position
 					},
 				},
 				domain.Zig:     {},
@@ -11118,7 +11101,7 @@ func companiesPart1() []domain.CompanyProfile {
 						},
 						{
 							Title:                "Backend Software Engineer",
-							ShortDescription:     "",
+							ShortDescription:     "Write, test, and maintain server software written in Go",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.indeed.com/viewjob?jk=c62b2780a93edc98",
 							Date:                 mustDate("2025-03-25"),
