@@ -1,0 +1,37 @@
+Anduril Industries https://www.anduril.com/ https://github.com/anduril
+Appodeal https://appodeal.com/ https://github.com/appodeal
+Axis Communications https://www.axis.com/ https://github.com/AxisCommunications
+Beyond Identity https://www.beyondidentity.com/ https://github.com/gobeyondidentity
+Bitfount https://www.bitfount.com/ https://github.com/bitfount
+Canonical https://canonical.com/ https://github.com/canonical
+Check Point Software https://www.checkpoint.com/ https://github.com/checkpointsw
+Cognite https://www.cognite.com https://github.com/cognitedata
+CrowdStrike https://www.crowdstrike.com/ https://github.com/CrowdStrike
+Daedalean AI https://daedalean.ai/ https://github.com/daedaleanai
+Datadog https://www.datadoghq.com/ https://github.com/datadog
+Discord https://discord.com/ https://github.com/discord
+Dropbox https://www.dropbox.com/ https://github.com/dropbox
+Dynatrace https://www.dynatrace.com/ https://github.com/dynatrace
+ExpressVPN https://www.expressvpn.com/ https://github.com/expressvpn
+Hasura https://hasura.io/ https://github.com/hasura
+InfluxData https://www.influxdata.com/ https://github.com/influxdata
+Kong https://konghq.com/ https://github.com/Kong
+LinkedIn https://www.linkedin.com/ https://github.com/linkedin
+Los Alamos National Laboratory https://www.lanl.gov/ https://github.com/LANL
+Microsoft https://www.microsoft.com/ https://github.com/microsoft
+OneSignal https://onesignal.com/ https://github.com/OneSignal
+Palo Alto Networks https://www.paloaltonetworks.com/ https://github.com/paloaltonetworks
+Photoroom https://www.photoroom.com/ https://github.com/photoroom
+Pinecone https://www.pinecone.io/ https://github.com/pinecone-io
+Proton https://proton.me/ https://github.com/ProtonMail
+Redis https://redis.io/ https://github.com/redis
+SAP https://www.sap.com/ https://github.com/SAP
+Sentry https://sentry.io/ https://github.com/getsentry
+Siemens https://www.siemens.com/ https://github.com/siemens
+Spice AI https://spice.ai/ https://github.com/spiceai
+SurrealDB https://surrealdb.com/ https://github.com/surrealdb
+Svix https://www.svix.com/ https://github.com/svix
+Tesla https://www.tesla.com/ https://github.com/teslamotors
+Ubisoft https://www.ubisoft.com/ https://github.com/ubisoft
+Vercel https://vercel.com/ https://github.com/vercel
+Zurich Instruments https://www.zhinst.com/ https://github.com/zhinst

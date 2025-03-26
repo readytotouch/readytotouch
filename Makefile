@@ -130,6 +130,9 @@ generate-organizers:
 review-logos:
 	go run ./cmd/organizers/review-logos/main.go
 
+rust-companies:
+	VERIFIED=$(VERIFIED) GITHUB=$(GITHUB) go run ./cmd/organizers/rust-companies/main.go
+
 # POSTGRES_PASSWORD=$(echo "$RANDOM$RANDOM" | sha256sum | head -c 32; echo;) JWT_SECRET_KEY=$(echo "$RANDOM$RANDOM" | sha256sum | head -c 32; echo;) make generate-production-environment-file
 generate-production-environment-file:
 	touch .production.env
