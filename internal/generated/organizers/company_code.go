@@ -775,6 +775,12 @@ var (
 		"docebo":                              772, // Docebo
 		"getsona":                             773, // Sona (getsona.com)
 		"activeprospect":                      774, // ActiveProspect
+		"tiledb-inc":                          775, // TileDB
+		"redpanda-data":                       776, // Redpanda Data
+		"quizlet":                             777, // Quizlet
+		"svix":                                778, // Svix
+		"andurilindustries":                   779, // Anduril Industries
+		"corys":                               780, // CORYS
 
 	}
 )
