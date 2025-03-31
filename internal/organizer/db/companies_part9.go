@@ -8705,11 +8705,12 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "App for monitoring and enhancing WhatsApp performance in marketing campaigns",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
-			ID:      0,  // system
-			Type:    "", // system
+			ID:      0,                           // system
+			Type:    domain.CompanyTypeOutsource, // system
 			Name:    "49nord GmbH",
 			Website: "https://49nord.de/",
 			Careers: "",
@@ -8751,6 +8752,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -8797,6 +8799,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -8843,6 +8846,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -8889,6 +8893,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Norway newspaper publisher",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -8936,6 +8941,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Polish engineering company that specializes for the travel, tourism, and other industries",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -8982,6 +8988,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Error tracker and performance monitor service for Ruby, Node, JavaScript and Elixir",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -9029,6 +9036,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Australian software company that makes software development and collaboration tools targeted at software developers",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -9075,6 +9083,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -9122,7 +9131,8 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Full-service blockchain technology company",
-			Ignore:           true, // crypto
+			Ignore:           true, // Crypto
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -9170,6 +9180,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "American company that primarily deals in mobile and web payment systems for e-commerce companies",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -9217,6 +9228,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "American privacy-focused browser",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -9263,6 +9275,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Free and open-source software-defined storage platform",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -9310,6 +9323,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Configuration management tool is used to streamline the task of configuring and maintaining a company's servers",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -9356,6 +9370,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "IT Automation platform to manage all the ops work",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -9402,6 +9417,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Germans Rust consulting company",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -9448,6 +9464,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -9507,7 +9524,8 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Provider of blockchain technology for the cryptocurrency",
-			Ignore:           true, // crypto
+			Ignore:           true, // Crypto
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -9554,7 +9572,8 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
-			Ignore:           true, // crypto
+			Ignore:           true, // Crypto
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -9602,6 +9621,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "AI company specializing in advanced speech recognition and transcription technology",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -9649,6 +9669,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "American cyber security software and services company",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -9696,6 +9717,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Chinese fabless semiconductor company",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -9742,6 +9764,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Ukrainian developer of marketplace product",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -9789,6 +9812,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -9835,6 +9859,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -9881,6 +9906,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Rust consulting company",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -9927,6 +9953,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Cloud based platform providing automated project documentation",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -9973,6 +10000,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "New Zealand integrated fire and emergency services organisation",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -10019,6 +10047,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -10066,6 +10095,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -10125,6 +10155,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -10161,21 +10192,8 @@ func companiesPart9() []domain.CompanyProfile {
 				Alias: "",
 			},
 			Languages: domain.Languages{
-				domain.Go: {},
-				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "Developer Go/Rust",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "https://www.welcometothejungle.com/fr/companies/hove/jobs/developpeur-c-f-h_paris?q=10fb2392131cffa8ec644f44c105ee83&o=bffb0fbc-19a7-44f6-975a-e530b8d8b81a",
-							Date:                 mustDate("2025-03-26"),
-							WithSalary:           false,
-							Remote:               false,
-						},
-					},
-				},
+				domain.Go:      {},
+				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},
@@ -10183,6 +10201,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -10229,7 +10248,8 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Chinese multinational corporation and technology company",
-			Ignore:           true, // Chinese company
+			Ignore:           true, // Winnie
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -10289,6 +10309,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "American machine learning and data science platform",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -10335,6 +10356,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Payments Platform",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -10380,6 +10402,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -10425,6 +10448,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Software consulting company",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -10470,6 +10494,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -10515,6 +10540,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -10560,7 +10586,8 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
-			Ignore:           true, // blockchain
+			Ignore:           true, // Blockchain
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -10620,6 +10647,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Real-time data integration platform",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -10631,6 +10659,7 @@ func companiesPart9() []domain.CompanyProfile {
 			About:   "https://www.npmjs.com/about",
 			Blog:    "https://github.blog/tag/npm/",
 			LinkedInProfile: domain.LinkedInProfile{
+				// npm, Inc. was acquired by GitHub. To see what’s new, visit GitHub.
 				ID:                3585636,
 				Alias:             "npm-inc-",
 				Name:              "npm, Inc.",
@@ -10666,6 +10695,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Package manager for the JavaScript programming language",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -10725,6 +10755,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "French cloud computing company which offers VPS, dedicated servers, and other web services",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -10784,7 +10815,8 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
-			Ignore:           true, // blockchain
+			Ignore:           true, // Blockchain
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -10830,6 +10862,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -10889,6 +10922,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "American data storage company",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -10934,6 +10968,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "French software company",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -10980,6 +11015,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Global cybersecurity company",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -11025,6 +11061,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Delivery management software with an intelligent route optimization feature",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -11070,6 +11107,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -11115,6 +11153,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -11174,6 +11213,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -11219,6 +11259,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -11265,6 +11306,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "American home automation company",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -11310,6 +11352,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Artificial intelligence voice platform",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -11368,7 +11411,8 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
-			Ignore:           true, // crypto
+			Ignore:           true, // Crypto
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -11414,6 +11458,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "German-made open-source data platform",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -11459,6 +11504,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Company who development and productization of embedded security technologies for defense and commercial applications",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -11505,6 +11551,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "American internet provider company",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -11550,6 +11597,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "American computer manufacturer company",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -11595,6 +11643,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Open-source platform for building GraphQL APIs",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -11640,6 +11689,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -11685,6 +11735,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -11731,6 +11782,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "API and web application protection platform",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -11776,6 +11828,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -11821,6 +11874,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Rust engineering consultancy company",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -11866,6 +11920,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Cross-platform search engine and crowdsourcing app for open source libraries",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -11911,6 +11966,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Web Development and Consultancy company",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -11956,6 +12012,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "American internet provider company",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -12015,6 +12072,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Open source cryptography company",
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		// Template

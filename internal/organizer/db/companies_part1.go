@@ -263,6 +263,7 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Czechia,
 			},
 			RustFoundationMember: true,
+			SyncSources:          []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		// BigTech | Mozilla
@@ -431,6 +432,7 @@ func companiesPart1() []domain.CompanyProfile {
 			HasEmployeesFromCountries: nil,
 			RustFoundationMember:      true,
 			Ignore:                    false,
+			SyncSources:               []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		// BigTech | Discord
@@ -720,7 +722,7 @@ func companiesPart1() []domain.CompanyProfile {
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "Amazon",
-			Website: "https://www.aboutamazon.com/",
+			Website: "https://www.amazon.com/",
 			Careers: "https://www.amazon.jobs/",
 			About:   "https://www.aboutamazon.com/about-us",
 			Blog:    "https://aws.amazon.com/blogs/",
@@ -792,6 +794,7 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Czechia,
 			},
 			RustFoundationMember: true,
+			SyncSources:          []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		// BigTech | IBM
@@ -1316,11 +1319,12 @@ func companiesPart1() []domain.CompanyProfile {
 			Blog:    "https://github.blog/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1418841,
+				IDs:               []int{1418841, 3585636},
 				Alias:             "github",
 				Name:              "GitHub",
 				Followers:         "5M",
 				Employees:         "501-1K",
-				AssociatedMembers: "6,253",
+				AssociatedMembers: "5,286",
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -5575,7 +5579,20 @@ func companiesPart1() []domain.CompanyProfile {
 						},
 					},
 				},
-				domain.Rust:    {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 21,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Windows Developer (Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4070867168/",
+							Date:                 mustDate("2024-12-01"),
+							WithSalary:           true,
+							Remote:               true,
+						},
+					},
+				},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},
