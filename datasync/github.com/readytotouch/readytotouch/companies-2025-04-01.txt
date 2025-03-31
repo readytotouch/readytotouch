@@ -1,8 +1,6 @@
 1Password https://1password.com/
-1Password https://1password.com/
 360Dialog https://www.360dialog.com/
 49nord GmbH https://49nord.de/
-ANIXE https://www.anixe.pl/
 Aaronson Rappaport Feinstein & Deutsch, LLP https://www.arfdlaw.com/
 Actyx https://www.actyx.com/
 Adtran https://www.adtran.com/

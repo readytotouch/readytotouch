@@ -368,8 +368,8 @@ func companiesPart1() []domain.CompanyProfile {
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "Meta",
-			Website: "http://www.facebook.com/",
-			Careers: "http://www.facebook.com/careers",
+			Website: "https://www.facebook.com/",
+			Careers: "https://www.metacareers.com/",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
