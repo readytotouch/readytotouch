@@ -12,8 +12,8 @@ import (
 func main() {
 	var (
 		companies = db.Companies()
-		verified = os.Getenv("VERIFIED") == "true"
-		github = os.Getenv("GITHUB") == "true"
+		verified  = os.Getenv("VERIFIED") == "true"
+		github    = os.Getenv("GITHUB") == "true"
 	)
 
 	// filter with Rust vacancies and not ignore

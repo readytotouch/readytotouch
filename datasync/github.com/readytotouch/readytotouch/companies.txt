@@ -1,4 +1,3 @@
-
 1Password https://1password.com/
 360dialog http://www.360dialog.com/
 49nord https://49nord.de/rust

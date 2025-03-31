@@ -769,16 +769,8 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Go: {},
 				domain.Rust: {
 					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "Systems Development Engineer",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "https://www.indeed.com/viewjob?jk=219284d3bc680e45",
-							Date:                 mustDate("2025-03-27"),
-							WithSalary:           false,
-							Remote:               false,
-						},
+					Vacancies:               []domain.Vacancy{
+						// Waiting for Rust vacancies https://www.indeed.com/viewjob?jk=219284d3bc680e45
 					},
 				},
 				domain.Zig:     {},
