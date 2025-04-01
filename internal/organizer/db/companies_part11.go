@@ -187,18 +187,19 @@ func companiesPart11() []domain.CompanyProfile {
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "",
-			Website: "",
+			Website: "https://www.veeva.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                402048,
+				IDs:               []int{141456, 402048},
+				Alias:             "veeva-systems",
+				Name:              "Veeva Systems",
+				Followers:         "236K",
+				Employees:         "5K-10K",
+				AssociatedMembers: "8,910",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -222,13 +223,13 @@ func companiesPart11() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Principal Software Engineer – Rust",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
-							WithSalary:           false,
-							Remote:               false,
+							URL:                  "https://www.linkedin.com/jobs/view/4144651944/",
+							Date:                 mustDate("2025-03-31"),
+							WithSalary:           true,
+							Remote:               true,
 						},
 					},
 				},
@@ -238,7 +239,7 @@ func companiesPart11() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "Software for the global life sciences industry",
 		},
 		{
 			ID:      0,  // system
