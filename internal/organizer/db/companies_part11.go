@@ -127,19 +127,20 @@ func companiesPart11() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Dragonfly",
+			Website: "https://www.dragonfly.xyz/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                18845152,
+				IDs:               nil,
+				Alias:             "dragonfly-capital-partners",
+				Name:              "Dragonfly",
+				Followers:         "37K",
+				Employees:         "11-50",
+				AssociatedMembers: "109",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -163,13 +164,13 @@ func companiesPart11() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Rust Software Engineer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4181606878/",
+							Date:                 mustDate("2025-04-01"),
 							WithSalary:           false,
-							Remote:               false,
+							Remote:               true,
 						},
 					},
 				},
@@ -179,7 +180,8 @@ func companiesPart11() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "Crypto venture fund",
+			Ignore:           true, // Crypto
 		},
 		{
 			ID:      0,  // system
