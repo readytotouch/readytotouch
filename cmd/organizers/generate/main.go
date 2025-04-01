@@ -18,7 +18,7 @@ import (
 
 func main() {
 	var (
-		companies = db.Companies()
+		companies = db.CloneCompanies()
 	)
 
 	generateCompanies(companies)

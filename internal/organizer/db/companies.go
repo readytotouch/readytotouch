@@ -1,6 +1,14 @@
 package db
 
-import "github.com/readytotouch/readytotouch/internal/domain"
+import (
+	"slices"
+
+	"github.com/readytotouch/readytotouch/internal/domain"
+)
+
+var (
+	companies = Companies()
+)
 
 func Companies() []domain.CompanyProfile {
 	var (
@@ -44,4 +52,8 @@ func Companies() []domain.CompanyProfile {
 	result = append(result, part12...)
 
 	return result
+}
+
+func CloneCompanies() []domain.CompanyProfile {
+	return slices.Clone(companies)
 }
