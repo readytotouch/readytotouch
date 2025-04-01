@@ -8752,6 +8752,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			Ignore:           true, // Outsource
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -9180,7 +9181,10 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "American company that primarily deals in mobile and web payment systems for e-commerce companies",
-			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
+			SyncSources: []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -9374,8 +9378,8 @@ func companiesPart9() []domain.CompanyProfile {
 		},
 
 		{
-			ID:      0,  // system
-			Type:    "", // system
+			ID:      0,                           // system
+			Type:    domain.CompanyTypeOutsource, // system
 			Name:    "corrode",
 			Website: "https://corrode.dev/",
 			Careers: "",
@@ -9417,6 +9421,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Germans Rust consulting company",
+			Ignore:           true, // Outsource
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -9531,54 +9536,6 @@ func companiesPart9() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "Aptos Orbital",
-			Website: "https://www.cryptosat.io/",
-			Careers: "",
-			About:   "",
-			Blog:    "https://medium.com/cryptosatellite",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:                70417322,
-				IDs:               nil,
-				Alias:             "aptosorbital",
-				Name:              "Aptos Orbital",
-				Followers:         "933",
-				Employees:         "2-10",
-				AssociatedMembers: "11",
-				Verified:          false,
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "cryptosat",
-				Verified: false,
-			},
-			BlindProfile: domain.BlindProfile{
-				Alias: "",
-			},
-			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-			},
-			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
-			},
-			Languages: domain.Languages{
-				domain.Go:      {},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-			ShortDescription: "",
-			Ignore:           true, // Crypto
-			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
-		},
-
-		{
-			ID:      0,  // system
-			Type:    "", // system
 			Name:    "Deepgram",
 			Website: "https://deepgram.com/",
 			Careers: "https://deepgram.com/careers",
@@ -9669,7 +9626,10 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "American cyber security software and services company",
-			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
+			Industries: []domain.Industry{
+				domain.IndustryCyberSecurity,
+			},
+			SyncSources: []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -9717,6 +9677,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Chinese fabless semiconductor company",
+			Ignore:           true, // Wennie
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -9859,12 +9820,13 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			Ignore:           true, // Crypto
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
-			ID:      0,  // system
-			Type:    "", // system
+			ID:      0,                           // system
+			Type:    domain.CompanyTypeOutsource, // system
 			Name:    "Ferrous Systems GmbH",
 			Website: "https://ferrous-systems.com/",
 			Careers: "",
@@ -9906,6 +9868,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Rust consulting company",
+			Ignore:           true, // Outsource
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -9922,9 +9885,9 @@ func companiesPart9() []domain.CompanyProfile {
 				IDs:               nil,
 				Alias:             "fifthtry",
 				Name:              "FifthTry",
-				Followers:         "666",
+				Followers:         "667",
 				Employees:         "2-10",
-				AssociatedMembers: "6",
+				AssociatedMembers: "5",
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -10047,6 +10010,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			Ignore:           true, // Should be double-checked
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -10094,7 +10058,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "Hosting",
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -10316,17 +10280,18 @@ func companiesPart9() []domain.CompanyProfile {
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "JUSPAY",
-			Website: "https://hyperswitch.io/",
-			Careers: "https://hyperswitch.io/careers",
-			About:   "https://juspay.io/about",
-			Blog:    "https://hyperswitch.io/blog",
+			Website: "https://juspay.io/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                3590874,
+				IDs:               nil,
 				Alias:             "juspay-technologies",
 				Name:              "JUSPAY",
 				Followers:         "205K",
 				Employees:         "1K-5K",
-				AssociatedMembers: "1,623",
+				AssociatedMembers: "1,629",
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -10402,19 +10367,21 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			Ignore:           true, // Should be double-checked
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
-			ID:      0,  // system
-			Type:    "", // system
+			ID:      0,                           // system
+			Type:    domain.CompanyTypeOutsource, // system
 			Name:    "Immunant",
 			Website: "https://immunant.com/",
 			Careers: "https://immunant.com/jobs/",
 			About:   "",
 			Blog:    "https://immunant.com/blog/",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
+				ID:                27043749,
+				IDs:               nil,
 				Alias:             "immunant",
 				Name:              "Immunant",
 				Followers:         "167",
@@ -10448,19 +10415,21 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Software consulting company",
+			Ignore:           true, // Outsource
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
-			ID:      0,  // system
-			Type:    "", // system
+			ID:      0,                           // system
+			Type:    domain.CompanyTypeOutsource, // system
 			Name:    "Integer 32, LLC",
 			Website: "https://www.integer32.com/",
 			Careers: "",
 			About:   "https://www.integer32.com/about/",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
+				ID:                10822533,
+				IDs:               nil,
 				Alias:             "integer-32-llc",
 				Name:              "Integer 32, LLC",
 				Followers:         "126",
@@ -10494,6 +10463,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			Ignore:           true, // Outsource
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -10506,12 +10476,13 @@ func companiesPart9() []domain.CompanyProfile {
 			About:   "https://lechev.space/about-us/",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
+				ID:                82071520,
+				IDs:               nil,
 				Alias:             "lechev-space",
 				Name:              "Lechev.space",
 				Followers:         "143",
 				Employees:         "0-1",
-				AssociatedMembers: "1",
+				AssociatedMembers: "",
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -10540,6 +10511,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			Ignore:           true, // Should be double-checked
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -10548,7 +10520,7 @@ func companiesPart9() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "Diem Association",
 			Website: "https://www.diem.com/",
-			Careers: "https://silvergate.com/careers",
+			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -10631,7 +10603,7 @@ func companiesPart9() []domain.CompanyProfile {
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Full Stack Engineer — Cloud",
-							ShortDescription:     "",
+							ShortDescription:     "Familiarity with Python or Rust",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4177804070/",
 							Date:                 mustDate("2025-03-14"),
@@ -10739,7 +10711,7 @@ func companiesPart9() []domain.CompanyProfile {
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer", // Rust
-							ShortDescription:     "",
+							ShortDescription:     "Connaissance d'un langage de programmation (C, Rust, C++)",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4185781244/",
 							Date:                 mustDate("2025-03-21"),
@@ -10799,7 +10771,7 @@ func companiesPart9() []domain.CompanyProfile {
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Mobile Engineer",
-							ShortDescription:     "",
+							ShortDescription:     "Rust (for deeper blockchain integrations)",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4193420901/",
 							Date:                 mustDate("2025-03-28"),
@@ -10862,6 +10834,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			Ignore:           true, // Should be double-checked
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -10926,12 +10899,12 @@ func companiesPart9() []domain.CompanyProfile {
 		},
 
 		{
-			ID:      0,  // system
-			Type:    "", // system
+			ID:      0,                           // system
+			Type:    domain.CompanyTypeOutsource, // system
 			Name:    "Red Iron Team",
 			Website: "https://red-iron.eu/",
 			Careers: "",
-			About:   "https://red-iron.eu/#about",
+			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                0,
@@ -10968,6 +10941,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "French software company",
+			Ignore:           true, // Outsource, should be double-checked
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -11015,7 +10989,10 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Global cybersecurity company",
-			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
+			Industries: []domain.Industry{
+				domain.IndustryCyberSecurity,
+			},
+			SyncSources: []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
@@ -11065,8 +11042,8 @@ func companiesPart9() []domain.CompanyProfile {
 		},
 
 		{
-			ID:      0,  // system
-			Type:    "", // system
+			ID:      0,                           // system
+			Type:    domain.CompanyTypeOutsource, // system
 			Name:    "Rustunit",
 			Website: "https://rustunit.com/",
 			Careers: "",
@@ -11107,6 +11084,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			Ignore:           true, // Outsource, should be double-checked
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -11153,10 +11131,12 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			Ignore:           true, // Should be double-checked
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
 		{
+			// https://www.shiftleft.io/ redirects to https://qwiet.ai/
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "Qwiet AI",
@@ -11194,16 +11174,8 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Go: {},
 				domain.Rust: {
 					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "Security Research Engineer",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "https://qwiet.ai/careers/?gh_jid=6787364002",
-							Date:                 mustDate("2025-03-28"),
-							WithSalary:           false,
-							Remote:               true,
-						},
+					Vacancies:               []domain.Vacancy{
+						// Waiting for the Rust vacancy https://qwiet.ai/careers/?gh_jid=6787364002
 					},
 				},
 				domain.Zig:     {},

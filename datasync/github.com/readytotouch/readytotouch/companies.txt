@@ -16,7 +16,6 @@ Apollo GraphQL https://www.apollographql.com/
 Appear https://www.appear.net/
 Appodeal https://appodeal.com/
 AppSignal https://www.appsignal.com/
-Aptos Orbital https://www.cryptosat.io/
 arculus — a Jungheinrich company https://www.arculus.de/
 Ashley Furniture Industries https://www.ashleyfurnitureindustriesllc.com
 Atlassian https://www.atlassian.com/
