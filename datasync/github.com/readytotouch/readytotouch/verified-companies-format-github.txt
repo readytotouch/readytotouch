@@ -1,4 +1,3 @@
-VERIFIED=true GITHUB=true go run ./cmd/organizers/rust-companies/main.go
 1Password https://1password.com/ https://github.com/1Password
 Algorithmia https://www.datarobot.com/ https://github.com/algorithmiaio
 Amazon https://www.amazon.com/ https://github.com/aws

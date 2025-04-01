@@ -751,7 +751,7 @@ func companiesPart10() []domain.CompanyProfile {
 				Name:              "corrode",
 				Followers:         "156",
 				Employees:         "0-1",
-				AssociatedMembers: "",
+				AssociatedMembers: "0",
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -1439,7 +1439,7 @@ func companiesPart10() []domain.CompanyProfile {
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                17919967,
-				Alias:             "gremlin-inc.",
+				Alias:             "gremlin-inc.", // ADDED: 781
 				Name:              "Gremlin",
 				Followers:         "12K",
 				Employees:         "51-200",
@@ -1839,7 +1839,7 @@ func companiesPart10() []domain.CompanyProfile {
 				Name:              "Lechev.space",
 				Followers:         "143",
 				Employees:         "0-1",
-				AssociatedMembers: "",
+				AssociatedMembers: "0",
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -1929,7 +1929,7 @@ func companiesPart10() []domain.CompanyProfile {
 			Blog:    "https://materialize.com/blog/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                14059168,
-				Alias:             "materializeinc",
+				Alias:             "materializeinc", // ADDED: 782
 				Name:              "Materialize",
 				Followers:         "7K",
 				Employees:         "51-200",
@@ -2207,7 +2207,7 @@ func companiesPart10() []domain.CompanyProfile {
 			Blog:    "https://qumulo.com/blog/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                2533593,
-				Alias:             "qumulo",
+				Alias:             "qumulo", // ADDED: 783
 				Name:              "Qumulo",
 				Followers:         "35K",
 				Employees:         "201-500",
@@ -3375,7 +3375,7 @@ func companiesPart10() []domain.CompanyProfile {
 			Blog:    "https://www.zama.ai/category/engineering",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                34914422,
-				Alias:             "zama-ai",
+				Alias:             "zama-ai", // ADDED: 784
 				Name:              "Zama",
 				Followers:         "8K",
 				Employees:         "51-200",

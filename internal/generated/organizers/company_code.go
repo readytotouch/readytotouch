@@ -781,6 +781,10 @@ var (
 		"svix":                                778, // Svix
 		"andurilindustries":                   779, // Anduril Industries
 		"corys":                               780, // CORYS
+		"gremlin-inc.":                        781, // Gremlin
+		"materializeinc":                      782, // Materialize
+		"qumulo":                              783, // Qumulo
+		"zama-ai":                             784, // Zama
 
 	}
 )
