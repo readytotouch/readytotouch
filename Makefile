@@ -130,6 +130,9 @@ generate-organizers:
 review-logos:
 	go run ./cmd/organizers/review-logos/main.go
 
+# make rust-companies > ./datasync/github.com/readytotouch/readytotouch/companies.txt
+# VERIFIED=true make rust-companies > ./datasync/github.com/readytotouch/readytotouch/verified-companies.txt
+# VERIFIED=true GITHUB=true make rust-companies > ./datasync/github.com/readytotouch/readytotouch/verified-companies-format-github.txt
 rust-companies:
 	VERIFIED=$(VERIFIED) GITHUB=$(GITHUB) go run ./cmd/organizers/rust-companies/main.go
 

@@ -137,6 +137,7 @@ var (
 		"https://www.linkedin.com/jobs/view/3902607066/":                                                               310,  // namecheap-inc
 		"https://www.linkedin.com/jobs/view/4011177772/":                                                               311,  // godaddy
 		"https://www.linkedin.com/jobs/view/3905310871/":                                                               312,  // 1password
+		"https://www.linkedin.com/jobs/view/4070867168/":                                                               1325, // 1password
 		"https://www.linkedin.com/jobs/view/4090884682/":                                                               412,  // okta-inc-
 		"https://www.linkedin.com/jobs/view/4133471372/":                                                               859,  // okta-inc-
 		"https://www.linkedin.com/jobs/view/4135551225/":                                                               893,  // okta-inc-
@@ -1328,6 +1329,10 @@ var (
 		"https://www.indeed.com/viewjob?jk=1f4022f006ac8456":                                                           1322, // svix
 		"https://www.indeed.com/viewjob?jk=1645f9d3eb114feb":                                                           1323, // andurilindustries
 		"https://www.indeed.com/viewjob?jk=078b469307edba42":                                                           1324, // corys
+		"https://app.welcometothejungle.com/jobs/NU9vNkVF":                                                             1326, // gremlin-inc.
+		"https://www.linkedin.com/jobs/view/4177804070/":                                                               1327, // materializeinc
+		"https://www.linkedin.com/jobs/view/3895536895/":                                                               1328, // qumulo
+		"https://jobs.zama.ai/companies/zama/jobs/rust-engineer_paris":                                                 1329, // zama-ai
 
 	}
 )
