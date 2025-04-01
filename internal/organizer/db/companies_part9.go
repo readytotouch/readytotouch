@@ -8705,6 +8705,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "App for monitoring and enhancing WhatsApp performance in marketing campaigns",
+			Ignore:           true, // Waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -8723,7 +8724,7 @@ func companiesPart9() []domain.CompanyProfile {
 				Name:              "49nord GmbH",
 				Followers:         "18",
 				Employees:         "2-10",
-				AssociatedMembers: "",
+				AssociatedMembers: "1",
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -8752,7 +8753,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
-			Ignore:           true, // Outsource
+			Ignore:           true, // Outsource, waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -8800,6 +8801,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			Ignore:           true, // Waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -8847,6 +8849,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			Ignore:           true, // Waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -8894,6 +8897,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Norway newspaper publisher",
+			Ignore:           true, // Waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -8942,6 +8946,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Polish engineering company that specializes for the travel, tourism, and other industries",
+			Ignore:           true, // Waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -8989,6 +8994,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Error tracker and performance monitor service for Ruby, Node, JavaScript and Elixir",
+			Ignore:           true, // Waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -9037,6 +9043,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Australian software company that makes software development and collaboration tools targeted at software developers",
+			Ignore:           true, // Waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -9084,6 +9091,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			Ignore:           true, // Waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -9132,7 +9140,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Full-service blockchain technology company",
-			Ignore:           true, // Crypto
+			Ignore:           true, // Crypto, waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -9184,6 +9192,7 @@ func companiesPart9() []domain.CompanyProfile {
 			Industries: []domain.Industry{
 				domain.IndustryFinTech,
 			},
+			Ignore:      true, // Waiting for any vacancies
 			SyncSources: []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -9232,6 +9241,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "American privacy-focused browser",
+			Ignore:           true, // Waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -9279,6 +9289,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Free and open-source software-defined storage platform",
+			Ignore:           true, // Waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -9327,6 +9338,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Configuration management tool is used to streamline the task of configuring and maintaining a company's servers",
+			Ignore:           true, // Waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -9374,6 +9386,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "IT Automation platform to manage all the ops work",
+			Ignore:           true, // Waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -9421,7 +9434,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Germans Rust consulting company",
-			Ignore:           true, // Outsource
+			Ignore:           true, // Outsource, waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -9469,6 +9482,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			Ignore:           true, // Waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -9578,6 +9592,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "AI company specializing in advanced speech recognition and transcription technology",
+			Ignore:           true, // Waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -9629,6 +9644,7 @@ func companiesPart9() []domain.CompanyProfile {
 			Industries: []domain.Industry{
 				domain.IndustryCyberSecurity,
 			},
+			Ignore:      true, // Waiting for any vacancies
 			SyncSources: []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -9677,7 +9693,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Chinese fabless semiconductor company",
-			Ignore:           true, // Wennie
+			Ignore:           true, // Wennie, waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -9725,6 +9741,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Ukrainian developer of marketplace product",
+			Ignore:           true, // Skip for now as it's Ukrainian only, expected English, will be added later
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -9773,6 +9790,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			Ignore:           true, // Waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -9820,7 +9838,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
-			Ignore:           true, // Crypto
+			Ignore:           true, // Crypto, waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -9868,7 +9886,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Rust consulting company",
-			Ignore:           true, // Outsource
+			Ignore:           true, // Outsource, waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -9916,6 +9934,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Cloud based platform providing automated project documentation",
+			Ignore:           true, // Waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -9963,6 +9982,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "New Zealand integrated fire and emergency services organisation",
+			Ignore:           true, // Waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -10010,7 +10030,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
-			Ignore:           true, // Should be double-checked
+			Ignore:           true, // Should be double-checked, waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -10059,6 +10079,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Hosting",
+			Ignore:           true, // Waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -10118,7 +10139,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "Reliability Management Platform",
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -10165,6 +10186,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			Ignore:           true, // Waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -10251,20 +10273,7 @@ func companiesPart9() []domain.CompanyProfile {
 				Alias: "",
 			},
 			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "Cloud Machine Learning Engineer",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "https://www.linkedin.com/jobs/view/4053028203/",
-							Date:                 mustDate("2024-09-29"),
-							WithSalary:           false,
-							Remote:               true,
-						},
-					},
-				},
+				domain.Go:      {},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -10273,6 +10282,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "American machine learning and data science platform",
+			Ignore:           true, // Waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -10321,6 +10331,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Payments Platform",
+			Ignore:           true, // Waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -10367,7 +10378,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
-			Ignore:           true, // Should be double-checked
+			Ignore:           true, // Should be double-checked, waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -10511,7 +10522,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
-			Ignore:           true, // Should be double-checked
+			Ignore:           true, // Should be double-checked, waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -10667,6 +10678,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Package manager for the JavaScript programming language",
+			Ignore:           true, // Waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -10727,6 +10739,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "French cloud computing company which offers VPS, dedicated servers, and other web services",
+			Ignore:           true, // Skip for now as it's French only, expected English, will be added later
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -10834,7 +10847,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
-			Ignore:           true, // Should be double-checked
+			Ignore:           true, // Should be double-checked, waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -10879,7 +10892,7 @@ func companiesPart9() []domain.CompanyProfile {
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer — Core Data Services",
-							ShortDescription:     "",
+							ShortDescription:     "Contribute to feature development and testing using languages like C and Rust",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/3895536895/",
 							Date:                 mustDate("2025-03-28"),
@@ -10992,6 +11005,7 @@ func companiesPart9() []domain.CompanyProfile {
 			Industries: []domain.Industry{
 				domain.IndustryCyberSecurity,
 			},
+			Ignore:      true, // Waiting for any vacancies
 			SyncSources: []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -11038,6 +11052,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Delivery management software with an intelligent route optimization feature",
+			Ignore:           true, // Waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -11185,6 +11200,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			Ignore:           true, // Waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -11231,6 +11247,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			Ignore:           true, // Waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -11278,6 +11295,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "American home automation company",
+			Ignore:           true, // Waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -11324,6 +11342,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Artificial intelligence voice platform",
+			Ignore:           true, // Waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -11369,7 +11388,7 @@ func companiesPart9() []domain.CompanyProfile {
 							Title:                "Data Engineer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "https://jobs.solana.com/companies/solana-foundation-2/jobs/48071693-data-engineer#content",
+							URL:                  "https://jobs.solana.com/companies/solana-foundation-2/jobs/48071693-data-engineer",
 							Date:                 mustDate("2025-03-29"),
 							WithSalary:           false,
 							Remote:               false,
@@ -11430,6 +11449,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "German-made open-source data platform",
+			Ignore:           true, // Waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -11476,6 +11496,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Company who development and productization of embedded security technologies for defense and commercial applications",
+			Ignore:           true, // Waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -11523,6 +11544,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "American internet provider company",
+			Ignore:           true, // Waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -11569,6 +11591,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "American computer manufacturer company",
+			Ignore:           true, // Waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -11615,6 +11638,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Open-source platform for building GraphQL APIs",
+			Ignore:           true, // Waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -11661,6 +11685,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			Ignore:           true, // Waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -11707,6 +11732,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			Ignore:           true, // Waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -11754,6 +11780,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "API and web application protection platform",
+			Ignore:           true, // Waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -11800,6 +11827,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			Ignore:           true, // Waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -11846,6 +11874,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Rust engineering consultancy company",
+			Ignore:           true, // Waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -11892,6 +11921,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Cross-platform search engine and crowdsourcing app for open source libraries",
+			Ignore:           true, // Waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -11938,6 +11968,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Web Development and Consultancy company",
+			Ignore:           true, // Waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -11984,6 +12015,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "American internet provider company",
+			Ignore:           true, // Waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
