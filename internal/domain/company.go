@@ -6,6 +6,7 @@ type (
 	Language              int
 	LanguageTitleKeywords string
 	CompanyType           string
+	CompanySyncSource     int
 )
 
 const (
@@ -32,6 +33,10 @@ const (
 	CompanyTypeProduct   CompanyType = "product"
 	CompanyTypeStartup   CompanyType = "startup"
 	CompanyTypeOutsource CompanyType = "outsource"
+)
+
+const (
+	RustCompanies CompanySyncSource = 1 // https://github.com/omarabid/rust-companies
 )
 
 // Deprecated
@@ -166,6 +171,7 @@ type CompanyProfile struct {
 	HasEmployeesFromCountries []Country
 	RustFoundationMember      bool // https://foundation.rust-lang.org/members/
 	Ignore                    bool
+	SyncSources               []CompanySyncSource
 }
 
 type UnsafeCompaniesResponse struct {

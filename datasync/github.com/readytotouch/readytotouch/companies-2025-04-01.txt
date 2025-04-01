@@ -28,38 +28,46 @@ Bitfury https://bitfury.com/
 Bjak https://bjak.my/
 Booz Allen Hamilton https://www.boozallen.com/
 Braintree http://www.braintreepayments.com/
+Braun Embedded https://braun-embedded.com/ // no information, but main link in archive
 Brave https://brave.com/
+Calyptech http://calyptech.com/ // no LinkedInProfile
 Canonical https://canonical.com/
 Canva https://www.canva.com/
 Capital One https://www.capitalonecareers.com/
 Ceph https://ceph.io/
 Chalk https://chalk.ai/
 Check Point Software https://www.checkpoint.com/
+Chef https://www.chef.io/
 Clever Cloud https://www.clever-cloud.com/
 Climatiq https://www.climatiq.io/
 Cloudflare https://www.cloudflare.com/
+Cloudflare Workers https://workers.cloudflare.com/ // need more information form LinkedInProfile
 CloudWalk https://cloudwalk.io/
 Cognite https://www.cognite.com
 Cognizant https://www.cognizant.com/
 Collabera https://www.collaberadigital.com/
+CoreOS https://coreos.com/ // this is RedHat 
 corrode https://corrode.dev/
 CORYS https://www.corys.com/
 Craft AI https://www.craft.ai/
 CrowdStrike https://www.crowdstrike.com/
 Cryptape https://cryptape.com/
 Cryptio https://cryptio.co/
+Cryptosat.io https://cryptosat.io/
 Daedalean AI https://daedalean.ai/
 Darktrace https://darktrace.com/
 DataBeacon https://databeacon.aero/
 Datadog https://www.datadoghq.com/
 DDN https://www.ddn.com/
 Deepgram https://deepgram.com/
-Diem Association https://www.diem.com/
+Delimiter https://www.delimiter.com/ // site doesnt work
 Digiexam https://www.digiexam.com/
 Discord https://discord.com/
+Distil Networks https://www.distilnetworks.com/ // redirection to imperva (not Distil networks)
 Ditto https://ditto.live/
 DroneSense https://www.dronesense.com/
 Dropbox https://www.dropbox.com/
+DungeonFog https://www.dungeonfog.com/news/project-deios/ // without LinkedInProfile
 Dynatrace https://www.dynatrace.com/
 eBay https://www.ebayinc.com/
 EDB https://www.enterprisedb.com/
@@ -94,24 +102,26 @@ HERE Technologies https://www.here.com/
 Hove https://hove.com/
 Huawei https://www.huawei.com/
 Hugging Face https://huggingface.co/
+HyperSwitch https://hyperswitch.io/ // redirect to juspay.io
 IAMBOT Inc. https://iambot.ai/
 Immunant https://immunant.com/
-Imperva https://www.imperva.com/
 InfluxData https://www.influxdata.com/
 Integer 32, LLC https://www.integer32.com/
-JUSPAY https://hyperswitch.io/
 Keyrock https://keyrock.com/
 KnowBe4 https://www.knowbe4.com/
 Kong https://konghq.com/
 Kraken Digital Asset Exchange https://kraken.com/
+krypt.co https://krypt.co/ // krypt.co was acquired by Akamai Technologies
 Lazer Technologies https://www.lazertechnologies.com/
 Lechev.space https://lechev.space/
 Lexia Learning https://www.lexialearning.com/
+Libra https://libra.org/   // redirect to diem.com
 Lingopal https://lingopal.com/
 LinkedIn https://www.linkedin.com/
 Los Alamos National Laboratory https://www.lanl.gov/
 Lytx, Inc. https://www.lytx.com/
 Magnite https://www.magnite.com/
+MaidSafe http://www.maidsafe.net/ // without LinkedInProfile
 Materialise https://www.materialise.com/
 Materialize https://materialize.com/
 Meta https://www.facebook.com/
@@ -123,7 +133,7 @@ Mozilla https://www.mozilla.org/
 NCR Atleos https://www.ncratleos.com/
 Nelly Solutions http://www.getnelly.de/
 NN Group https://www.nn-group.com
-npm, Inc. https://www.npmjs.com/
+npm http://www.npmjs.com/ // npm, Inc. was acquired by GitHub
 nVent https://www.nvent.com/
 OKX http://www.okx.com/
 OneSchema https://www.oneschema.co/
@@ -139,12 +149,10 @@ Polygon Labs https://polygon.technology/
 Polysync Technologies https://www.polysync.io/
 Poppi Technologies https://www.poppitechnologies.com/
 Priceline https://www.priceline.com/
-Progress Chef https://www.chef.io/
 Proton https://proton.me/
 QNX https://blackberry.qnx.com/
 Quantum Systems https://quantum-systems.com/
 Qumulo https://qumulo.com/
-Qwiet AI https://qwiet.ai/
 Red Iron Team https://red-iron.eu/
 Red Sift https://redsift.com/
 Redis https://redis.io/
@@ -159,14 +167,16 @@ SciTec https://scitec.com/
 Second Spectrum https://www.secondspectrum.com/
 Selby Jennings https://www.selbyjennings.com/
 Sentry https://sentry.io/
+Shiftleft https://www.shiftleft.io/ // redirect to Qwiet.ai
 Siemens https://www.siemens.com/
 Skyworks Solutions http://www.skyworksinc.com/
-slowtec GmbH https://slowtec.de/
-SmartThings https://www.samsung.com/us/smartthings/
+slowtec http://www.slowtec.de/
+SmartThings http://www.smartthings.com/ // redirect to samsung
 Snips https://snips.ai/
 Solana Foundation https://solana.com/
 Sony Interactive Entertainment http://www.sonyinteractive.com/
 Spice AI https://spice.ai/
+Spoqa https://www.spoqa.com/ // site doesnt work
 Stackable https://stackable.tech/
 Stackx.me https://stackx.me/
 Star Lab, a Wind River Company https://www.starlab.io/
@@ -182,7 +192,7 @@ Tailcall https://tailcall.run/
 tCell https://www.tcell.io/
 TenX Technologies https://tenx.tech/
 Tesla https://www.tesla.com/
-ThreatX https://www.threatx.com/
+ThreatX https://threat-x.com/
 TreeScale https://treescale.com/
 Tweede golf https://tweedegolf.nl/
 Two Six Technologies https://twosixtech.com/

@@ -81,6 +81,7 @@ Spoqa https://www.spoqa.com/
 Stackable https://stackable.tech/
 Star Lab https://starlab.io/
 Starry https://starry.com/
+SurrealDB https://surrealdb.com/
 Svix https://www.svix.com/
 System76 https://system76.com/
 Tailcall https://tailcall.run/
@@ -89,6 +90,7 @@ TenX https://tenx.tech/
 ThreatX https://threat-x.com/
 TreeScale https://www.treescale.com/
 Tweede golf https://tweedegolf.nl/
+Vercel https://vercel.com/
 VersionEye https://www.versioneye.com/
 Wildfish https://wildfish.com/
 Yomura Fiber https://yomurafiber.com/
