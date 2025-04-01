@@ -60,6 +60,10 @@ function followers() {
         if (text.endsWith("followers")) {
             return text.replace("followers", "").trim();
         }
+
+        if (text.endsWith("follower")) {
+            return text.replace("follower", "").trim();
+        }
     }
 
     return "";
@@ -74,6 +78,10 @@ function employees() {
         if (text.endsWith("employees")) {
             return text.replace("employees", "").trim();
         }
+
+        if (text.endsWith("employee")) {
+            return text.replace("employee", "").trim();
+        }
     }
 
     return "";
@@ -87,6 +95,10 @@ function associatedMembers() {
 
         if (text.endsWith("associated members")) {
             return text.replace("associated members", "").trim();
+        }
+
+        if (text.endsWith("associated member")) {
+            return text.replace("associated member", "").trim();
         }
     }
 

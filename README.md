@@ -9,11 +9,10 @@ A platform for simplifying job search
 - [Companies using Clojure](https://readytotouch.com/organizers/clojure/companies)
 
 # Articles
-- [gRPC-автогенерація Front-end-у](https://dou.ua/lenta/articles/grpc-web-guide/)
-- [Go: ефективна робота з SQL](https://dou.ua/forums/topic/34806/)
-- [Дослідження швидкодії складеного первинного ключа в Postgres, MySQL та CockroachDB](https://dou.ua/forums/topic/40760/)
-- [Збереження стану онлайну користувача в Redis](https://dou.ua/forums/topic/35260/)
-- [Hash, Set чи Sorted set. Який тип даних вибрати для збереження стану онлайну користувача в Redis?](https://dou.ua/forums/topic/44655/)
+- Forum | [My list of companies that use Rust](https://users.rust-lang.org/t/my-list-of-companies-that-use-rust/127300)
+- Reddit | [My list of companies that use Rust](https://www.reddit.com/r/rust/comments/1jg4rrl/my_list_of_companies_that_use_rust/)
+- Reddit | [My list of companies that use Golang 2.0](https://www.reddit.com/r/golang/comments/1ixglek/my_list_of_companies_that_use_golang_20/)
+- Reddit | [My list of companies that use Golang](https://www.reddit.com/r/golang/comments/1fjbp1p/my_list_of_companies_that_use_golang/)
 
 # Research repositories:
 - https://github.com/doutivity/research-online-redis-go
