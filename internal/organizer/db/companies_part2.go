@@ -10754,6 +10754,15 @@ func companiesPart2() []domain.CompanyProfile {
 							WithSalary:           true, // $125,000- $160,000 per year
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Software Engineer (Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4195225385/",
+							Date:                 mustDate("2025-04-01"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig:     {},
