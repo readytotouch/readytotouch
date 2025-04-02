@@ -244,18 +244,19 @@ func companiesPart11() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Rivian and Volkswagen Group Technologies",
+			Website: "https://rivianvw.tech/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
+				ID:                105032955,
+				IDs:               nil,
+				Alias:             "rivian-and-vw-group-technologies",
+				Name:              "Rivian and Volkswagen Group Technologies",
+				Followers:         "9K",
+				Employees:         "501-1K",
+				AssociatedMembers: "640",
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -280,12 +281,12 @@ func companiesPart11() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
-							ShortDescription:     "",
+							Title:                "Connectivity Software Engineer – Rust",
+							ShortDescription:     "Design and implementation of embedded applications in Rust",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
-							WithSalary:           false,
+							URL:                  "https://www.linkedin.com/jobs/view/4094024474/",
+							Date:                 mustDate("2025-03-31"),
+							WithSalary:           true,
 							Remote:               false,
 						},
 					},
@@ -297,6 +298,9 @@ func companiesPart11() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			Industries: []domain.Industry{
+				domain.IndustryAutomotive,
+			},
 		},
 		{
 			ID:      0,  // system
