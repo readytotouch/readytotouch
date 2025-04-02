@@ -795,7 +795,7 @@ var (
 		"strongcompute":                       792, // Strong Compute
 		"tubi-tv":                             793, // Tubi
 		"samsungfoodofficial":                 794, // Samsung Food
-		"ace-&amp;-tate":                      797, // Ace &amp; Tate
+		"3085253":                             797, // Ace &amp; Tate
 		"axpo-group":                          796, // Axpo Group
 
 	}

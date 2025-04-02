@@ -518,7 +518,7 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "Teramind Tracker is an employee monitoring and insider threat detection software that records screenshots, audio/video, keystrokes, and other activities",
 		},
 		{
 			ID:      0,  // system
