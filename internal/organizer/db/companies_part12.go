@@ -47,7 +47,7 @@ func companiesPart12() []domain.CompanyProfile {
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer",
-							ShortDescription:     "",
+							ShortDescription:     "Developing software and robot infrastructure services. Go and Kubernetes in the cloud. Rust on the robot",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4174644239/",
 							Date:                 mustDate("2025-03-05"),
@@ -61,7 +61,7 @@ func companiesPart12() []domain.CompanyProfile {
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Computer Vision Lead",
-							ShortDescription:     "",
+							ShortDescription:     "Proficiency in C/C++/Rust, OpenCV, and Python",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4174437544/",
 							Date:                 mustDate("2025-03-02"),
@@ -300,6 +300,9 @@ func companiesPart12() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Creative technology engine powering mobile video ad creation to help global brands",
+			Industries: []domain.Industry{
+				domain.IndustryAdTech,
+			},
 		},
 
 		{
