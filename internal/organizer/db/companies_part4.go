@@ -691,7 +691,7 @@ func companiesPart4() []domain.CompanyProfile {
 						{
 							Title:                "Backend Developer (Associate Project Manager)",
 							ShortDescription:     "",
-							SwitchingOpportunity: "",
+							SwitchingOpportunity: "Having experience using Golang is a plus",
 							URL:                  "https://www.linkedin.com/jobs/view/4195172343/",
 							Date:                 mustDate("2025-03-28"),
 							WithSalary:           true, // IDR 10M/month - IDR 14M/month

@@ -6728,7 +6728,7 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "Imunify360 team",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4170791654/",
-							Date:                 mustDate("2025-03-28"), // mustDate("2025-03-13"), // mustDate("2025-03-05"), // mustDate("2025-02-28"),
+							Date:                 mustDate("2025-04-02"), // mustDate("2025-03-13"), // mustDate("2025-03-05"), // mustDate("2025-02-28"),
 							WithSalary:           false,
 							Remote:               true,
 						},
