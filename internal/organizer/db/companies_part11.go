@@ -837,7 +837,8 @@ func companiesPart11() []domain.CompanyProfile {
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                3085253,
 				IDs:               nil,
-				Alias:             "ace-&-tate",
+				Alias:             "3085253", // "ace-&-tate",
+				PreviousAliases:   []string{"ace-&-tate"},
 				Name:              "Ace & Tate",
 				Followers:         "41K",
 				Employees:         "501-1K",

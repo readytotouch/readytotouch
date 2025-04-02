@@ -1523,7 +1523,7 @@ func companiesPart3() []domain.CompanyProfile {
 							ShortDescription:     "eCommerce",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4176950668/",
-							Date:                 mustDate("2025-03-06"),
+							Date:                 mustDate("2025-04-01"), // mustDate("2025-03-06"),
 							WithSalary:           false,
 							Remote:               true,
 						},
