@@ -479,18 +479,19 @@ func companiesPart11() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "St. Jude Children's Research Hospital",
+			Website: "https://www.stjude.org/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
+				ID:                15223686,
+				IDs:               nil,
+				Alias:             "st-jude-childrens-research-hospital",
+				Name:              "St. Jude Children's Research Hospital",
+				Followers:         "90K",
+				Employees:         "5K-10K",
+				AssociatedMembers: "4,430",
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -515,12 +516,12 @@ func companiesPart11() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
-							ShortDescription:     "",
+							Title:                "Senior Staff / Principal Software Engineer, Rust Genomics",
+							ShortDescription:     "This position requires a deep understanding of the Rust programming language",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
-							WithSalary:           false,
+							URL:                  "https://www.linkedin.com/jobs/view/4081324333/",
+							Date:                 mustDate("2025-03-28"),
+							WithSalary:           true,
 							Remote:               false,
 						},
 					},
@@ -531,7 +532,7 @@ func companiesPart11() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "Pediatric cancer and other life-threatening diseases of childhood",
 		},
 		{
 			ID:      0,  // system
