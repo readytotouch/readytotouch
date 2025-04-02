@@ -305,18 +305,19 @@ func companiesPart11() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "PULT",
+			Website: "https://www.pult.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
+				ID:                20488600,
+				IDs:               nil,
+				Alias:             "joinpult",
+				Name:              "PULT",
+				Followers:         "1K",
+				Employees:         "11-50",
+				AssociatedMembers: "14",
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -341,13 +342,13 @@ func companiesPart11() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
-							ShortDescription:     "",
+							Title:                "Full-Stack Developer TypeScript / Rust",
+							ShortDescription:     "Hands-on experience with the Rust",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4194668550/",
+							Date:                 mustDate("2025-03-30"),
 							WithSalary:           false,
-							Remote:               false,
+							Remote:               true,
 						},
 					},
 				},
@@ -357,23 +358,24 @@ func companiesPart11() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "Enabling modern workplaces to go hybrid",
 		},
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Dria",
+			Website: "https://www.firstbatch.xyz/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
+				ID:                80364972,
+				IDs:               nil,
+				Alias:             "dria-ai",
+				Name:              "Dria",
+				Followers:         "7K",
+				Employees:         "11-50",
+				AssociatedMembers: "19",
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -398,13 +400,13 @@ func companiesPart11() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
-							ShortDescription:     "",
+							Title:                "Rust Backend Engineer",
+							ShortDescription:     "Design and develop high-performance backend services using Rust",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4192746950/",
+							Date:                 mustDate("2025-03-28"),
 							WithSalary:           false,
-							Remote:               false,
+							Remote:               true,
 						},
 					},
 				},
@@ -414,7 +416,7 @@ func companiesPart11() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "Democratizing access to synthetic data for AI/ML models",
 		},
 		{
 			ID:      0,  // system
