@@ -186,7 +186,7 @@ func companiesPart11() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
+			Name:    "Veeva Systems",
 			Website: "https://www.veeva.com/",
 			Careers: "",
 			About:   "",

@@ -785,6 +785,18 @@ var (
 		"materializeinc":                      782, // Materialize
 		"qumulo":                              783, // Qumulo
 		"zama-ai":                             784, // Zama
+		"fathom-io":                           785, // Fathom.io
+		"veeva-systems":                       786, // Veeva Systems
+		"rivian-and-vw-group-technologies":    787, // Rivian and Volkswagen Group Technologies
+		"joinpult":                            788, // PULT
+		"dria-ai":                             789, // Dria
+		"anaplan":                             790, // Anaplan
+		"st-jude-childrens-research-hospital": 791, // St. Jude Children&#39;s Research Hospital
+		"strongcompute":                       792, // Strong Compute
+		"tubi-tv":                             793, // Tubi
+		"samsungfoodofficial":                 794, // Samsung Food
+		"ace-&amp;-tate":                      797, // Ace &amp; Tate
+		"axpo-group":                          796, // Axpo Group
 
 	}
 )
