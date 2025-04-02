@@ -2,6 +2,7 @@ import {Alias} from "./alias";
 import {orderAliases} from "./order_aliases";
 
 const all = [
+    new Alias("automotive", "Automotive"),
     new Alias("cybersecurity", "CyberSecurity"),
     // new Alias("edtech", "EdTech"),
     // new Alias("e-commerce", "eCommerce"),

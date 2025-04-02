@@ -279,7 +279,8 @@ func main() {
 
 	r.
 		// Unsafe API endpoints that can be changed without any notice.
-		GET("/api/v1/unsafe/companies.json", organizerController.UnsafeCompanies)
+		GET("/api/v1/unsafe/companies.json", organizerController.UnsafeCompanies).
+		GET("/api/v1/unsafe/vacancies.json", organizerController.UnsafeVacancies)
 
 	r.
 		StaticFile("/design", "./public/design/online.html").

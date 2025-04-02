@@ -19,6 +19,7 @@ const (
 
 var (
 	industries = []Industry{
+		domain.IndustryAutomotive,
 		domain.IndustryCyberSecurity,
 		domain.IndustryHealthTech,
 		domain.IndustryFinTech,

@@ -88,7 +88,7 @@ func (c *Controller) Main(ctx *gin.Context) {
 
 func (c *Controller) GolangCompaniesUkraine(ctx *gin.Context) {
 	var (
-		source    = db.Companies()
+		source    = db.CloneCompanies()
 		companies = make([]domain.CompanyProfile, 0, len(source))
 	)
 
@@ -932,7 +932,7 @@ func (c *Controller) FavoriteVacancy(ctx *gin.Context) {
 }
 
 func (c *Controller) UnsafeCompanies(ctx *gin.Context) {
-	companies := db.Companies()
+	companies := db.CloneCompanies()
 
 	result := make([]domain.UnsafeCompanyResponse, len(companies))
 	for i, company := range companies {
@@ -946,6 +946,26 @@ func (c *Controller) UnsafeCompanies(ctx *gin.Context) {
 
 	ctx.JSON(http.StatusOK, &domain.UnsafeCompaniesResponse{
 		Companies: result,
+	})
+}
+
+func (c *Controller) UnsafeVacancies(ctx *gin.Context) {
+	companies := db.CloneCompanies()
+
+	result := make([]domain.UnsafeVacancyResponse, 0, 1024)
+	for _, company := range companies {
+		for _, language := range company.Languages {
+			for _, vacancy := range language.Vacancies {
+				result = append(result, domain.UnsafeVacancyResponse{
+					URL:  vacancy.URL,
+					Date: vacancy.Date,
+				})
+			}
+		}
+	}
+
+	ctx.JSON(http.StatusOK, &domain.UnsafeVacanciesResponse{
+		Vacancies: result,
 	})
 }
 
@@ -1182,7 +1202,7 @@ func (c *Controller) getHeaderProfiles(ctx *gin.Context, userID int64) ([]domain
 
 func (c *Controller) companies(organizerFeature domain.OrganizerFeature) []domain.CompanyProfile {
 	var (
-		source    = db.Companies()
+		source    = db.CloneCompanies()
 		companies = make([]domain.CompanyProfile, 0, len(source))
 	)
 	for _, company := range source {
@@ -1219,7 +1239,7 @@ func (c *Controller) companies(organizerFeature domain.OrganizerFeature) []domai
 }
 
 func (c *Controller) findCompany(ctx *gin.Context, alias string) (domain.CompanyProfile, string, bool) {
-	companies := db.Companies()
+	companies := db.CloneCompanies()
 
 	// Yes, we are leaking the database implementation to the controller, it's fine for now
 	// Yes, we use linear search, it's fine for now
@@ -1335,7 +1355,7 @@ func (c *Controller) DataPopulationCompaniesLevelsFyi(ctx *gin.Context) {
 
 func (c *Controller) dataPopulationCompanies(match func(company domain.CompanyProfile) bool) []domain.CompanyProfile {
 	var (
-		source    = db.Companies()
+		source    = db.CloneCompanies()
 		companies = make([]domain.CompanyProfile, 0, len(source))
 	)
 	for _, company := range source {

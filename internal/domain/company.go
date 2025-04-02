@@ -68,6 +68,11 @@ type UnsafeCompanyResponse struct {
 	Ignore bool   `json:"ignore"`
 }
 
+type UnsafeVacancyResponse struct {
+	URL  string    `json:"url"`
+	Date time.Time `json:"date"`
+}
+
 type GitHubProfile struct {
 	Login    string
 	Verified bool
@@ -176,4 +181,8 @@ type CompanyProfile struct {
 
 type UnsafeCompaniesResponse struct {
 	Companies []UnsafeCompanyResponse `json:"companies"`
+}
+
+type UnsafeVacanciesResponse struct {
+	Vacancies []UnsafeVacancyResponse `json:"vacancies"`
 }

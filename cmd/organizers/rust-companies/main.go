@@ -13,7 +13,7 @@ import (
 
 func main() {
 	var (
-		companies = db.Companies()
+		companies = db.CloneCompanies()
 		verified  = os.Getenv("VERIFIED") == "true"
 		github    = os.Getenv("GITHUB") == "true"
 	)

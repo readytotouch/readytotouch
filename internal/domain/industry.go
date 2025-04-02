@@ -3,6 +3,10 @@ package domain
 type Industry = AliasName
 
 var (
+	IndustryAutomotive = Industry{
+		Alias: "automotive",
+		Name:  "Automotive",
+	}
 	IndustryCyberSecurity = Industry{
 		Alias: "cybersecurity",
 		Name:  "CyberSecurity",
