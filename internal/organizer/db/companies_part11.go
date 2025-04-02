@@ -421,19 +421,20 @@ func companiesPart11() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Anaplan",
+			Website: "https://www.anaplan.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                658814,
+				IDs:               nil,
+				Alias:             "anaplan",
+				Name:              "Anaplan",
+				Followers:         "309K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "2,462",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -457,11 +458,11 @@ func companiesPart11() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Software Engineer (Rust)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4192707647/",
+							Date:                 mustDate("2025-03-28"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -473,7 +474,7 @@ func companiesPart11() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "Scenario planning and analysis platform designed to optimize decision-making",
 		},
 		{
 			ID:      0,  // system
