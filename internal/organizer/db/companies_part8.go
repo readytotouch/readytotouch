@@ -5054,20 +5054,7 @@ func companiesPart8() []domain.CompanyProfile {
 				Alias: "",
 			},
 			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "Senior Scala Developer",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "https://www.linkedin.com/jobs/view/4080573355/",
-							Date:                 mustDate("2025-02-18"),
-							WithSalary:           false,
-							Remote:               false,
-						},
-					},
-				},
+				domain.Go:   {},
 				domain.Rust: {},
 				domain.Zig:  {},
 				domain.Scala: {
@@ -5078,7 +5065,7 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4080573355/",
-							Date:                 mustDate("2025-03-11"),
+							Date:                 mustDate("2025-04-01"), // mustDate("2025-03-11"),
 							WithSalary:           false,
 							Remote:               false,
 						},
