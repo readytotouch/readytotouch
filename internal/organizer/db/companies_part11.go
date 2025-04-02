@@ -595,19 +595,20 @@ func companiesPart11() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Yolo Group",
+			Website: "https://yolo.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                18303220,
+				IDs:               nil,
+				Alias:             "yolo-group",
+				Name:              "Yolo Group",
+				Followers:         "23K",
+				Employees:         "501-1K",
+				AssociatedMembers: "813",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -634,11 +635,11 @@ func companiesPart11() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Senior Software Engineer (Elixir)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4194883244/",
+							Date:                 mustDate("2025-04-01"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -648,23 +649,25 @@ func companiesPart11() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			Ignore:           true, // Blockchain
 		},
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Hard Rock Digital",
+			Website: "https://www.hardrockdigital.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                70993771,
+				IDs:               nil,
+				Alias:             "hardrockdigital",
+				Name:              "Hard Rock Digital",
+				Followers:         "64K",
+				Employees:         "501-1K",
+				AssociatedMembers: "781",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -691,37 +694,39 @@ func companiesPart11() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Senior Elixir Engineer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4193232651/",
+							Date:                 mustDate("2025-03-31"),
 							WithSalary:           false,
-							Remote:               false,
+							Remote:               true,
 						},
 					},
 				},
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "Online sports betting",
+			Ignore:           true, // Betting
 		},
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Tubi",
+			Website: "http://tubitv.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                3650994,
+				IDs:               nil,
+				Alias:             "tubi-tv",
+				Name:              "Tubi",
+				Followers:         "113K",
+				Employees:         "501-1K",
+				AssociatedMembers: "788",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -748,11 +753,11 @@ func companiesPart11() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Staff Software Engineer (Elixir)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4195366164/",
+							Date:                 mustDate("2025-03-28"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -761,7 +766,7 @@ func companiesPart11() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "Free TV and movie streaming service",
 		},
 
 		// Template

@@ -11034,7 +11034,7 @@ func companiesPart1() []domain.CompanyProfile {
 							ShortDescription:     "Our tech stack includes: Elixir, OTP, Postgres, Redis, Docker",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4056886705/",
-							Date:                 mustDate("2025-03-10"), // mustDate("2025-02-15"), // mustDate("2025-01-12"), // mustDate("2024-12-06"), // mustDate("2024-11-14"),
+							Date:                 mustDate("2025-03-31"), // mustDate("2025-03-10"), // mustDate("2025-02-15"), // mustDate("2025-01-12"), // mustDate("2024-12-06"), // mustDate("2024-11-14"),
 							WithSalary:           false,
 							Remote:               false,
 						},
