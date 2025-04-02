@@ -797,6 +797,14 @@ var (
 		"samsungfoodofficial":                 794, // Samsung Food
 		"3085253":                             797, // Ace &amp; Tate
 		"axpo-group":                          796, // Axpo Group
+		"starshiptechnologies":                798, // Starship Technologies
+		"stan-entertainment":                  799, // Stan.
+		"skyroph":                             800, // Skyro
+		"vidsy":                               801, // Vidsy
+		"rbc":                                 802, // RBC
+		"hello-stake":                         803, // Stake
+		"drivenets":                           804, // DriveNets
+		"ifs":                                 805, // IFS
 
 	}
 )
