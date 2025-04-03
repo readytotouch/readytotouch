@@ -259,7 +259,7 @@ var (
 		"mobica":                             "mobica.png",
 		"mongodbinc":                         "mongodb.png",
 		"monzo-bank":                         "monzo.png",
-		"moodys-corporation":                 "moody&#39;s.png",
+		"moodys-corporation":                 "moodys.png",
 		"morgan-stanley":                     "morgan-stanley.png",
 		"motorolasolutions":                  "motorola-solutions.png",
 		"moveworksai":                        "moveworks.png",
