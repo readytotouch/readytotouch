@@ -1279,9 +1279,9 @@ func companiesPart9() []domain.CompanyProfile {
 				IDs:               nil,
 				Alias:             "university-of-virginia",
 				Name:              "University of Virginia",
-				Followers:         "311K",
-				Employees:         "",
-				AssociatedMembers: "",
+				Followers:         "312K",
+				Employees:         "10K+", // https://www.linkedin.com/search/results/people/?currentCompany=%5B%224298%22%5D
+				AssociatedMembers: "15,000",
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -7441,13 +7441,13 @@ func companiesPart9() []domain.CompanyProfile {
 			About:   "",
 			Blog:    "https://medium.com/motive-eng",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
+				ID:                3271606,
 				IDs:               nil,
 				Alias:             "motive-inc",
 				Name:              "Motive",
-				Followers:         "539K",
+				Followers:         "540K",
 				Employees:         "1K-5K",
-				AssociatedMembers: "4,487",
+				AssociatedMembers: "4,492",
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -7789,9 +7789,9 @@ func companiesPart9() []domain.CompanyProfile {
 				IDs:               nil,
 				Alias:             "pulsepoint",
 				Name:              "PulsePoint",
-				Followers:         "51K",
+				Followers:         "52K",
 				Employees:         "51-200",
-				AssociatedMembers: "",
+				AssociatedMembers: "255",
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
