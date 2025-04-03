@@ -1472,10 +1472,6 @@ func (c *Controller) random(language domain.Language) bool {
 }
 
 func (c *Controller) skipSmallCompany(company domain.CompanyProfile) bool {
-	if company.Ignore {
-		return true
-	}
-
 	if company.LinkedInProfile.Employees == "10K+" {
 		return false
 	}

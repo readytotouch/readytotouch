@@ -699,7 +699,14 @@ func companiesPart12() []domain.CompanyProfile {
 				Employees: "14,260",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Twitch-EI_IE639426.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Twitch-Reviews-E639426.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Twitch-Jobs-E639426.htm",
+				Jobs:        "2",
+				Reviews:     "968",
+				Salaries:    "3.7K",
+				ReviewsRate: "3.7",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",

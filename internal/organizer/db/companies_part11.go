@@ -212,7 +212,14 @@ func companiesPart11() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Veeva-Systems-EI_IE459351.11,24.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Veeva-Systems-Reviews-E459351.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Veeva-Systems-Jobs-E459351.htm",
+				Jobs:        "812",
+				Reviews:     "1.6K",
+				Salaries:    "3.6K",
+				ReviewsRate: "3.6",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -447,7 +454,14 @@ func companiesPart11() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Anaplan-EI_IE695685.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Anaplan-Reviews-E695685.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Anaplan-Jobs-E695685.htm",
+				Jobs:        "81",
+				Reviews:     "1.1K",
+				Salaries:    "1.8K",
+				ReviewsRate: "3.3",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -949,7 +963,7 @@ func companiesPart11() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "Axpo Group",
 			Website: "https://www.axpo.com/",
-			Careers: "",
+			Careers: "https://www.axpo.com/career",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -973,7 +987,14 @@ func companiesPart11() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Axpo-EI_IE755157.11,15.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Axpo-Reviews-E755157.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Axpo-Jobs-E755157.htm",
+				Jobs:        "194",
+				Reviews:     "171",
+				Salaries:    "356",
+				ReviewsRate: "4.1",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",

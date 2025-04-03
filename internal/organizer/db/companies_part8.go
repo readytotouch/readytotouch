@@ -5703,7 +5703,14 @@ func companiesPart8() []domain.CompanyProfile {
 				Employees: "1,500",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Canva-EI_IE1013251.11,16.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Canva-Reviews-E1013251.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Canva-Jobs-E1013251.htm",
+				Jobs:        "80",
+				Reviews:     "880",
+				Salaries:    "1.8K",
+				ReviewsRate: "4.1",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
