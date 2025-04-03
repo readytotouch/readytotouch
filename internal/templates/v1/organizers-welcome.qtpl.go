@@ -37,6 +37,9 @@ func StreamOrganizersWelcome(qw422016 *qt422016.Writer, organizer Organizer, aut
 	streamorganizersWelcomeStyles(qw422016)
 	qw422016.N().S(`
     `)
+	streamplausibleAnalytics(qw422016)
+	qw422016.N().S(`
+    `)
 	streamga(qw422016)
 	qw422016.N().S(`
 </head>

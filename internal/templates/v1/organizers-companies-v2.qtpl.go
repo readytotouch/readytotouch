@@ -57,6 +57,9 @@ func StreamOrganizersCompaniesV2(qw422016 *qt422016.Writer,
 	streamorganizersCompaniesV2Styles(qw422016)
 	qw422016.N().S(`
     `)
+	streamplausibleAnalytics(qw422016)
+	qw422016.N().S(`
+    `)
 	streamga(qw422016)
 	qw422016.N().S(`
 </head>

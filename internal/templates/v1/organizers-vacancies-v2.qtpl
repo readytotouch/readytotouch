@@ -27,6 +27,7 @@
     {%= favicon() %}
     {%= organizersFonts() %}
     {%= organizersVacanciesV2Styles() %}
+    {%= plausibleAnalytics() %}
     {%= ga() %}
 </head>
 

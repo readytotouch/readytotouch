@@ -24,6 +24,7 @@
     {%= favicon() %}
     {%= organizersFonts() %}
     {%= organizersCompaniesV1Styles() %}
+    {%= plausibleAnalytics() %}
     {%= ga() %}
 </head>
 

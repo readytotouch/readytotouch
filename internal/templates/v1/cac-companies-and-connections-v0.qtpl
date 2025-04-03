@@ -118,6 +118,7 @@
             background-color: #c0392b;
         }
     </style>
+    {%= plausibleAnalytics() %}
     {%= ga() %}
 </head>
 <body>

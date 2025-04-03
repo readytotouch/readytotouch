@@ -41,6 +41,9 @@ func StreamOrganizersOnline(qw422016 *qt422016.Writer,
 	qw422016.N().S(`
     <script src="https://cdn.jsdelivr.net/npm/apexcharts@3.52.0"></script>
     `)
+	streamplausibleAnalytics(qw422016)
+	qw422016.N().S(`
+    `)
 	streamga(qw422016)
 	qw422016.N().S(`
 </head>

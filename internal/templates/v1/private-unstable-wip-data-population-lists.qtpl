@@ -12,6 +12,7 @@
     <meta property="og:image" content="/assets/images/og/organizers-light.jpg">
 
     {%= favicon() %}
+    {%= plausibleAnalytics() %}
     {%= ga() %}
 
     <style>
