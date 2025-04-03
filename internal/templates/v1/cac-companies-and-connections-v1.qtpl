@@ -17,6 +17,7 @@
     {%= favicon() %}
     {%= organizersFonts() %}
     {%= companiesAndConnectionsV1Styles() %}
+    {%= plausibleAnalytics() %}
     {%= ga() %}
 </head>
 <body>

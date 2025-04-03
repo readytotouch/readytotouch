@@ -24,6 +24,7 @@
     {%= organizersFonts() %}
     {%= organizersCompanyV1Styles() %}
     <script src="https://cdn.jsdelivr.net/npm/apexcharts@3.52.0"></script>
+    {%= plausibleAnalytics() %}
     {%= ga() %}
 </head>
 

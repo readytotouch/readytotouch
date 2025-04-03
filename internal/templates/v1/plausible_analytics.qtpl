@@ -1,0 +1,3 @@
+{% func plausibleAnalytics() %}
+<script defer data-domain="readytotouch.com" src="https://plausible.io/js/script.js"></script>
+{% endfunc %}

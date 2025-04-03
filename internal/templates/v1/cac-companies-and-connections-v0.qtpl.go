@@ -137,6 +137,9 @@ func StreamCompaniesAndConnectionsV0(qw422016 *qt422016.Writer) {
         }
     </style>
     `)
+	streamplausibleAnalytics(qw422016)
+	qw422016.N().S(`
+    `)
 	streamga(qw422016)
 	qw422016.N().S(`
 </head>

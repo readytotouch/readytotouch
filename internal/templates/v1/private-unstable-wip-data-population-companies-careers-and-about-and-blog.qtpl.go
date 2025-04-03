@@ -35,6 +35,9 @@ func StreamDataPopulationCompaniesCareersAndAboutAndBlog(qw422016 *qt422016.Writ
 	streamfavicon(qw422016)
 	qw422016.N().S(`
     `)
+	streamplausibleAnalytics(qw422016)
+	qw422016.N().S(`
+    `)
 	streamga(qw422016)
 	qw422016.N().S(`
     `)
