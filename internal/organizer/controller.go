@@ -1283,6 +1283,10 @@ func (c *Controller) DataPopulationLists(ctx *gin.Context) {
 func (c *Controller) DataPopulationCompaniesCareersAndAboutAndBlog(ctx *gin.Context) {
 	var (
 		companies = c.dataPopulationCompanies(func(company domain.CompanyProfile) bool {
+			if c.skipSmallCompany(company) {
+				return false
+			}
+
 			return company.Careers == "" || company.About == "" || company.Blog == ""
 		})
 	)
@@ -1294,6 +1298,10 @@ func (c *Controller) DataPopulationCompaniesCareersAndAboutAndBlog(ctx *gin.Cont
 func (c *Controller) DataPopulationCompaniesLinkedIn(ctx *gin.Context) {
 	var (
 		companies = c.dataPopulationCompanies(func(company domain.CompanyProfile) bool {
+			if c.skipSmallCompany(company) {
+				return false
+			}
+
 			return (company.LinkedInProfile.ID == 0 && len(company.LinkedInProfile.IDs) == 0) ||
 				company.LinkedInProfile.Alias == "" ||
 				company.LinkedInProfile.Name == "" ||
@@ -1310,6 +1318,10 @@ func (c *Controller) DataPopulationCompaniesLinkedIn(ctx *gin.Context) {
 func (c *Controller) DataPopulationCompaniesGlassdoor(ctx *gin.Context) {
 	var (
 		companies = c.dataPopulationCompanies(func(company domain.CompanyProfile) bool {
+			if c.skipSmallCompany(company) {
+				return false
+			}
+
 			return company.GlassdoorProfile.OverviewURL == "" ||
 				company.GlassdoorProfile.ReviewsURL == "" ||
 				company.GlassdoorProfile.JobsURL == ""
@@ -1323,6 +1335,10 @@ func (c *Controller) DataPopulationCompaniesGlassdoor(ctx *gin.Context) {
 func (c *Controller) DataPopulationCompaniesBlind(ctx *gin.Context) {
 	var (
 		companies = c.dataPopulationCompanies(func(company domain.CompanyProfile) bool {
+			if c.skipSmallCompany(company) {
+				return false
+			}
+
 			return company.BlindProfile.Alias == ""
 		})
 	)
@@ -1334,6 +1350,10 @@ func (c *Controller) DataPopulationCompaniesBlind(ctx *gin.Context) {
 func (c *Controller) DataPopulationCompaniesIndeed(ctx *gin.Context) {
 	var (
 		companies = c.dataPopulationCompanies(func(company domain.CompanyProfile) bool {
+			if c.skipSmallCompany(company) {
+				return false
+			}
+
 			return company.IndeedProfile.Alias == ""
 		})
 	)
@@ -1345,6 +1365,10 @@ func (c *Controller) DataPopulationCompaniesIndeed(ctx *gin.Context) {
 func (c *Controller) DataPopulationCompaniesLevelsFyi(ctx *gin.Context) {
 	var (
 		companies = c.dataPopulationCompanies(func(company domain.CompanyProfile) bool {
+			if c.skipSmallCompany(company) {
+				return false
+			}
+
 			return company.LevelsFyiProfile.Alias == "" ||
 				company.LevelsFyiProfile.Employees == ""
 		})
@@ -1445,4 +1469,24 @@ func (c *Controller) random(language domain.Language) bool {
 	}
 
 	return false
+}
+
+func (c *Controller) skipSmallCompany(company domain.CompanyProfile) bool {
+	if company.Ignore {
+		return true
+	}
+
+	if company.LinkedInProfile.Employees == "10K+" {
+		return false
+	}
+
+	if company.LinkedInProfile.Employees == "5K-10K" {
+		return false
+	}
+
+	if company.LinkedInProfile.Employees == "1K-5K" {
+		return false
+	}
+
+	return true
 }
