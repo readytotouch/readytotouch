@@ -334,7 +334,14 @@ func companiesPart12() []domain.CompanyProfile {
 				Employees: "88,840",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-RBC-EI_IE3358.11,14.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/RBC-Reviews-E3358.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/RBC-Jobs-E3358.htm",
+				Jobs:        "2.1K",
+				Reviews:     "18K",
+				Salaries:    "30K",
+				ReviewsRate: "3.9",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -914,7 +921,14 @@ func companiesPart12() []domain.CompanyProfile {
 				Employees: "187,520",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Ford-Motor-Company-EI_IE263.11,29.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Ford-Motor-Company-Reviews-E263.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Ford-Motor-Company-Jobs-E263.htm",
+				Jobs:        "775",
+				Reviews:     "16K",
+				Salaries:    "28K",
+				ReviewsRate: "4.0",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",

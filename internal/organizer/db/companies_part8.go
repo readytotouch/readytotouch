@@ -6632,7 +6632,14 @@ func companiesPart8() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Expedia-Group-EI_IE9876.11,24.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Expedia-Group-Reviews-E9876.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Expedia-Group-Jobs-E9876.htm",
+				Jobs:        "172",
+				Reviews:     "8.2K",
+				Salaries:    "20K",
+				ReviewsRate: "3.8",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -6933,7 +6940,14 @@ func companiesPart8() []domain.CompanyProfile {
 				Employees: "60,570",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Fidelity-Investments-EI_IE2786.11,31.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Fidelity-Investments-Reviews-E2786.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Fidelity-Investments-Jobs-E2786.htm",
+				Jobs:        "1.1K",
+				Reviews:     "19K",
+				Salaries:    "37K",
+				ReviewsRate: "4.1",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -7177,7 +7191,14 @@ func companiesPart8() []domain.CompanyProfile {
 				Employees: "20,000",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Worldline-EI_IE2068593.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Worldline-Reviews-E2068593.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Worldline-Jobs-E2068593.htm",
+				Jobs:        "296",
+				Reviews:     "1.7K",
+				Salaries:    "3K",
+				ReviewsRate: "3.6",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
