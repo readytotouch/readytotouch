@@ -948,7 +948,7 @@ func companiesPart5() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4153891886/",
-							Date:                 mustDate("2025-03-12"), // mustDate("2025-02-18"),
+							Date:                 mustDate("2025-04-03"), // mustDate("2025-03-12"), // mustDate("2025-02-18"),
 							WithSalary:           true,                   // 250-350k (BRL)annual base salary + annual variable bonus
 							Remote:               true,
 						},
