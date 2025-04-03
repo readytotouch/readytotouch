@@ -7978,7 +7978,7 @@ func companiesPart2() []domain.CompanyProfile {
 							ShortDescription:     "5 years of experience with Golang",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4198303397/",
-							Date:                 mustDate(""),
+							Date:                 mustDate("2025-04-03"),
 							WithSalary:           false,
 							Remote:               false,
 						},

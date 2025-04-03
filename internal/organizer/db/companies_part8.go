@@ -750,18 +750,19 @@ func companiesPart8() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "株式会社マネーフォワード — Money Forward",
+			Name:    "Money Forward",
 			Website: "https://corp.moneyforward.com/en/",
 			Careers: "https://recruit.moneyforward.com/en/",
 			About:   "https://corp.moneyforward.com/en/aboutus/",
 			Blog:    "https://mfi.engineering/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                5775746,
+				IDs:               nil,
 				Alias:             "money-forward",
-				Name:              "株式会社マネーフォワード — Money Forward",
+				Name:              "Money Forward, Inc.",
 				Followers:         "9K",
 				Employees:         "1K-5K",
-				AssociatedMembers: "893",
+				AssociatedMembers: "932",
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -798,19 +799,23 @@ func companiesPart8() []domain.CompanyProfile {
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Backend Engineer (Go)",
+							SubTitle:             "",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4126118648/",
 							Date:                 mustDate("2025-01-15"),
 							WithSalary:           true, // 659,000 JPY — 〜834,000 JPY / month
+							Remote:               false,
 						},
 						{
 							Title:                "Senior Backend Engineer (Go)",
+							SubTitle:             "",
 							ShortDescription:     "6+ years in developing and operating medium to large-scale web services, with strong expertise in Golang",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4172009785/",
 							Date:                 mustDate("2025-04-03"),
 							WithSalary:           true, // Min 659,000 JPY - 〜834,000 JPY per month
+							Remote:               false,
 						},
 					},
 				},

@@ -1269,7 +1269,7 @@ func companiesPart1() []domain.CompanyProfile {
 							Remote:               false,
 						},
 						{
-							Title:                "Senior Software Engineer — GO / Kubernetes",
+							Title:                "Senior Software Engineer — Go / Kubernetes",
 							ShortDescription:     "3+ years experience working with or developing cloud native services",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4190973840/",
@@ -8226,7 +8226,7 @@ func companiesPart1() []domain.CompanyProfile {
 							Remote:               false,
 						},
 						{
-							Title:                "Senior Software Engineer, Golang (Logistics Deliveries, Global Service Tech)",
+							Title:                "Senior Software Engineer, Golang",
 							ShortDescription:     "Golang expert with 3+ years of experience, specialising in distributed systems and large-scale applications",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4197754346/",
@@ -8661,8 +8661,8 @@ func companiesPart1() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 106,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Software Engineer (Golang) — Insurance",
-							ShortDescription:     "",
+							Title:                "Software Engineer (Golang)",
+							ShortDescription:     "Insurance",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4196923404/",
 							Date:                 mustDate("2025-04-02"),

@@ -647,7 +647,7 @@ func companiesPart12() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4132287368/",
-							Date:                 mustDate(""),
+							Date:                 mustDate("2025-04-03"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -661,51 +661,6 @@ func companiesPart12() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Free and open-source data analytics, reporting and integration platform",
-		},
-
-		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Thema",
-			Website: "https://www.thema.ai/",
-			Careers: "",
-			About:   "",
-			Blog:    "",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:                85651783,
-				Alias:             "thema-ai",
-				Name:              "Thema",
-				Followers:         "585",
-				Employees:         "2-10",
-				AssociatedMembers: "11",
-				Verified:          false,
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
-			},
-			BlindProfile: domain.BlindProfile{
-				Alias: "",
-			},
-			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-			},
-			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
-			},
-			Languages: domain.Languages{
-				domain.Go:      {},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-			ShortDescription: "",
 		},
 
 		{
@@ -887,52 +842,6 @@ func companiesPart12() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "Snowplow",
-			Website: "https://snowplow.io/",
-			Careers: "https://snowplow.io/careers",
-			About:   "https://snowplow.io/about-us",
-			Blog:    "https://snowplow.io/blog",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:                3177331,
-				Alias:             "snowplow",
-				Name:              "Snowplow",
-				Followers:         "15K",
-				Employees:         "51-200",
-				AssociatedMembers: "161",
-				Verified:          true,
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
-			},
-			BlindProfile: domain.BlindProfile{
-				Alias: "",
-			},
-			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias:     "snowplow",
-				Employees: "150",
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-			},
-			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
-			},
-			Languages: domain.Languages{
-				domain.Go:      {},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-			ShortDescription: "",
-		},
-
-		{
-			ID:      0,  // system
-			Type:    "", // system
 			Name:    "Zelis",
 			Website: "https://www.zelis.com/",
 			Careers: "https://www.zelis.com/company/careers/",
@@ -974,52 +883,6 @@ func companiesPart12() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Healthcare technology company",
-		},
-
-		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "SuperAnnotate",
-			Website: "https://www.superannotate.com/",
-			Careers: "https://www.superannotate.com/careers",
-			About:   "https://www.superannotate.com/company",
-			Blog:    "https://www.superannotate.com/blog",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:                18999422,
-				Alias:             "superannotate",
-				Name:              "SuperAnnotate",
-				Followers:         "27K",
-				Employees:         "51-200",
-				AssociatedMembers: "290",
-				Verified:          true,
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
-			},
-			BlindProfile: domain.BlindProfile{
-				Alias: "",
-			},
-			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias:     "superannotate",
-				Employees: "150",
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-			},
-			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
-			},
-			Languages: domain.Languages{
-				domain.Go:      {},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-			ShortDescription: "",
 		},
 
 		{
@@ -1121,7 +984,7 @@ func companiesPart12() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Senior Software Engineer (BackEnd, Rust)",
+							Title:                "Senior Software Engineer (Back-End, Rust)",
 							ShortDescription:     "3+ years of experience working in a Rust environment, contributing to products where performance and portability are key",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4196474583/",
