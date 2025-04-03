@@ -576,7 +576,7 @@ var (
 		"quantum-systems-gmbh":                572, // Quantum Systems
 		"gdms":                                573, // General Dynamics Mission Systems
 		"mondu-ai":                            574, // Mondu
-		"money-forward":                       575, // 株式会社マネーフォワード — Money Forward
+		"money-forward":                       575, // Money Forward, Inc.
 		"prize-picks":                         576, // PrizePicks
 		"chep":                                577, // CHEP
 		"optimizely":                          578, // Optimizely
@@ -805,6 +805,14 @@ var (
 		"hello-stake":                         803, // Stake
 		"drivenets":                           804, // DriveNets
 		"ifs":                                 805, // IFS
+		"lightspeed-systems":                  806, // Lightspeed Systems
+		"knime":                               807, // KNIME
+		"twitch-tv":                           808, // Twitch
+		"assembledhq":                         809, // Assembled
+		"rundoo":                              810, // Rundoo
+		"zelis":                               811, // Zelis
+		"ford-motor-company":                  812, // Ford Motor Company
+		"gitguardian":                         813, // GitGuardian
 
 	}
 )
