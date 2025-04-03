@@ -145,7 +145,14 @@ func companiesPart9() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Forcepoint-EI_IE1262390.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Forcepoint-Reviews-E1262390.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Forcepoint-Jobs-E1262390.htm",
+				Jobs:        "27",
+				Reviews:     "1.3K",
+				Salaries:    "1.8K",
+				ReviewsRate: "3.7",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -1127,7 +1134,14 @@ func companiesPart9() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Viasat-EI_IE5500.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Viasat-Reviews-E5500.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Viasat-Jobs-E5500.htm",
+				Jobs:        "419",
+				Reviews:     "1.9K",
+				Salaries:    "3.6K",
+				ReviewsRate: "3.6",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",

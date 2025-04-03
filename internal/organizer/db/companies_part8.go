@@ -5769,7 +5769,14 @@ func companiesPart8() []domain.CompanyProfile {
 				Employees: "2,000",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-ADTRAN-EI_IE3056.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/ADTRAN-Reviews-E3056.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/ADTRAN-Jobs-E3056.htm",
+				Jobs:        "95",
+				Reviews:     "441",
+				Salaries:    "816",
+				ReviewsRate: "3.6",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -5888,7 +5895,14 @@ func companiesPart8() []domain.CompanyProfile {
 				Employees: "6,120",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Etsy-EI_IE42751.11,15.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Etsy-Reviews-E42751.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Etsy-Jobs-E42751.htm",
+				Jobs:        "67",
+				Reviews:     "640",
+				Salaries:    "1.7K",
+				ReviewsRate: "4.0",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -6514,7 +6528,14 @@ func companiesPart8() []domain.CompanyProfile {
 				Employees: "660",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Qonto-EI_IE1879266.11,16.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Qonto-Reviews-E1879266.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Qonto-Jobs-E1879266.htm",
+				Jobs:        "32",
+				Reviews:     "341",
+				Salaries:    "727",
+				ReviewsRate: "4.3",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
