@@ -12542,7 +12542,8 @@ func companiesPart2() []domain.CompanyProfile {
 				ReviewsRate: "3.6",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "hp",
+				Employees: "51,000",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-HP-Inc-EI_IE1093161.11,17.htm",

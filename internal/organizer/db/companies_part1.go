@@ -64,11 +64,12 @@ func companiesPart1() []domain.CompanyProfile {
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                14136494,
+				IDs:               nil,
 				Alias:             "dochq",
 				Name:              "DocHQ",
-				Followers:         "1.5k",
+				Followers:         "2K",
 				Employees:         "51-200",
-				AssociatedMembers: "20+",
+				AssociatedMembers: "29",
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -5932,9 +5933,14 @@ func companiesPart1() []domain.CompanyProfile {
 			About:   "https://proton.me/about",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    5241679,
-				Alias: "protonprivacy",
-				Name:  "Proton",
+				ID:                5241679,
+				IDs:               nil,
+				Alias:             "protonprivacy",
+				Name:              "Proton",
+				Followers:         "106K",
+				Employees:         "201-500",
+				AssociatedMembers: "671",
+				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "ProtonMail",
@@ -7255,7 +7261,15 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified: true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "careem",
+				Employees:   "1,001 to 5,000",
+				Salary:      "",
+				Reviews:     "239",
+				ReviewsRate: "3.1",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "careem",
+				Employees: "3,500",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Careem-EI_IE1438731.11,17.htm",
@@ -15355,9 +15369,14 @@ func companiesPart1() []domain.CompanyProfile {
 			About:   "https://www.hollandandbarrett.com/info/who-we-are/",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:    815488,
-				Alias: "815488",
-				Name:  "Holland & Barrett",
+				ID:                815488,
+				IDs:               nil,
+				Alias:             "815488",
+				Name:              "Holland & Barrett",
+				Followers:         "68K",
+				Employees:         "5K-10K",
+				AssociatedMembers: "4,282",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",

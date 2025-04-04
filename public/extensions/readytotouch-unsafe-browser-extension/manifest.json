@@ -37,6 +37,10 @@
       "js": ["copy-blind-company-profile-data.js"]
     },
     {
+      "matches": ["https://www.levels.fyi/companies/*"],
+      "js": ["copy-levels-company-profile-data.js"]
+    },
+    {
       "matches": ["https://www.indeed.com/cmp/*"],
       "js": ["copy-indeed-company-profile-data.js"]
     },

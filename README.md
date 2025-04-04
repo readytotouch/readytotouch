@@ -14,6 +14,9 @@ A platform for simplifying job search
 - Reddit | [My list of companies that use Golang 2.0](https://www.reddit.com/r/golang/comments/1ixglek/my_list_of_companies_that_use_golang_20/)
 - Reddit | [My list of companies that use Golang](https://www.reddit.com/r/golang/comments/1fjbp1p/my_list_of_companies_that_use_golang/)
 
+# Analytics
+- https://plausible.io/readytotouch.com
+
 # Research repositories:
 - https://github.com/doutivity/research-online-redis-go
 - https://github.com/doutivity/research-online-postgres-go
