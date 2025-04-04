@@ -4055,6 +4055,15 @@ func companiesPart8() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Software Engineer II (Java/Go)",
+							ShortDescription:     "Experience with development in Go/Java + Spring Boot",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4201003288/",
+							Date:                 mustDate("2025-04-04"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -4627,7 +4636,7 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4137064133/",
-							Date:                 mustDate("2025-03-12"), // mustDate("2025-02-18"), // mustDate("2025-01-30"),
+							Date:                 mustDate("2025-04-02"), // mustDate("2025-03-12"), // mustDate("2025-02-18"), // mustDate("2025-01-30"),
 							WithSalary:           true,                   // $188.000 - $258.000 per year
 							Remote:               true,
 						},
@@ -5856,6 +5865,15 @@ func companiesPart8() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4159248269/",
 							Date:                 mustDate("2025-02-20"),
 							WithSalary:           true, // $90.000 - $110.000 per year + Stock-Options/BSPCE
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Cross-Platform Engineer (Rust)",
+							ShortDescription:     "Experience developing software with Rust",
+							SwitchingOpportunity: "",
+							URL:                  "",
+							Date:                 mustDate("2025-04-02"),
+							WithSalary:           true, //  $90k - $110k + Stock-Options/BSPCE
 							Remote:               false,
 						},
 					},

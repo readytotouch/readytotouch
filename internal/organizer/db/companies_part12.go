@@ -1036,6 +1036,363 @@ func companiesPart12() []domain.CompanyProfile {
 			ShortDescription: "Global cybersecurity startup",
 		},
 
+		// BigTech
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Dell Technologies",
+			Website: "https://www.dell.com/",
+			Careers: "https://jobs.dell.com/",
+			About:   "https://www.dell.com/en-us/lp/dt/who-we-are",
+			Blog:    "https://www.dell.com/community/en/topics/developer-blogs",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                15088102,
+				Alias:             "delltechnologies",
+				Name:              "Dell Technologies",
+				Followers:         "5M",
+				Employees:         "10K+",
+				AssociatedMembers: "130,395",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "DELL",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "dell-technologies",
+				Employees: "165,000",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Principal Engineer — Kubernetes & Go",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4199734022/",
+							Date:                 mustDate("2025-04-04"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American BigTech company",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "DailyPay",
+			Website: "https://www.dailypay.com/",
+			Careers: "https://www.dailypay.com/careers/",
+			About:   "https://www.dailypay.com/about-us/",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                6654085,
+				Alias:             "dailypay",
+				Name:              "DailyPay",
+				Followers:         "24K",
+				Employees:         "501-1K",
+				AssociatedMembers: "929",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "dailypay",
+				Verified: true,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "dailypay",
+				Employees: "210",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer (Go/AWS)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4200514129/",
+							Date:                 mustDate("2025-04-04"),
+							WithSalary:           true, // £55,000—£73,000 GBP
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "American technology company which provides payroll services",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Shopware",
+			Website: "https://www.shopware.com/",
+			Careers: "https://www.shopware.com/en/jobs/",
+			About:   "https://www.shopware.com/en/company/",
+			Blog:    "https://www.shopware.com/en/news/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                5300057,
+				Alias:             "shopware-ag",
+				Name:              "Shopware",
+				Followers:         "22K",
+				Employees:         "201-500",
+				AssociatedMembers: "407",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "shopware",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Full Stack Developer — PHP/ Symfony/ Vue.js/ Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4200842385/",
+							Date:                 mustDate("2025-04-04"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Written in PHP open source e-commerce software",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "StarHub",
+			Website: "https://www.starhub.com/",
+			Careers: "https://careers.starhub.com/.html",
+			About:   "https://corporate.starhub.com/about-us.html",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                166131,
+				Alias:             "starhub",
+				Name:              "StarHub",
+				Followers:         "63K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "2,724",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Application Developer (Golang)",
+							ShortDescription:     "3+ years of professional experience with Go (Golang)",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4195690505/",
+							Date:                 mustDate("2025-04-04"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Singaporean multinational telecommunications conglomerate",
+		},
+
+		// BigTech
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Rakuten",
+			Website: "https://global.rakuten.com/",
+			Careers: "https://global.rakuten.com/corp/careers/",
+			About:   "https://global.rakuten.com/corp/about/",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                47584,
+				Alias:             "rakuten",
+				Name:              "Rakuten",
+				Followers:         "305K",
+				Employees:         "10K+",
+				AssociatedMembers: "10,340",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "rakutentech",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "rakuten",
+				Employees: "340",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Rust Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4199352625/",
+							Date:                 mustDate("2025-04-04"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Japanese technology conglomerate",
+		},
+
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Vital Bio",
+			Website: "https://vitalbio.com/",
+			Careers: "https://vitalbio.com/careers",
+			About:   "https://vitalbio.com/company",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                19033427,
+				Alias:             "vitalbio",
+				Name:              "Vital Bio",
+				Followers:         "8K",
+				Employees:         "51-200",
+				AssociatedMembers: "160",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "VitalBio",
+				Verified: true,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "vital-biosciences",
+				Employees: "76",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Rust Application Engineer",
+							ShortDescription:     "Strong proficiency in Rust programming with experience developing production-grade applications",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4199869768/",
+							Date:                 mustDate("2025-04-03"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Healthcare technology company who provide designing a new generation of tools to empower patients in monitoring health and managing the disease",
+		},
+
 		// Template
 		//{
 		//	ID:      0,  // system
