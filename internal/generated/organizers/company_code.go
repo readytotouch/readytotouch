@@ -813,6 +813,12 @@ var (
 		"zelis":                               811, // Zelis
 		"ford-motor-company":                  812, // Ford Motor Company
 		"gitguardian":                         813, // GitGuardian
+		"delltechnologies":                    814, // Dell Technologies
+		"dailypay":                            815, // DailyPay
+		"shopware-ag":                         816, // Shopware
+		"starhub":                             817, // StarHub
+		"rakuten":                             818, // Rakuten
+		"vitalbio":                            819, // Vital Bio
 
 	}
 )
