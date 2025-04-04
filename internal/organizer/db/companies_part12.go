@@ -327,7 +327,11 @@ func companiesPart12() []domain.CompanyProfile {
 				Verified: true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "RBC",
+				Employees:   "10,000+",
+				Salary:      "$44K ~ $250K a year",
+				Reviews:     "229",
+				ReviewsRate: "3.7",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "rbc",
@@ -692,7 +696,11 @@ func companiesPart12() []domain.CompanyProfile {
 				Verified: true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "twitch",
+				Employees:   "1,001 to 5,000",
+				Salary:      "$58K ~ $350K a year",
+				Reviews:     "342",
+				ReviewsRate: "3.8",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "twitch",
@@ -921,7 +929,11 @@ func companiesPart12() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Ford",
+				Employees:   "10,000+ Employees",
+				Salary:      "$64K ~ $200K a year",
+				Reviews:     "468",
+				ReviewsRate: "3.6",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "ford-motor",

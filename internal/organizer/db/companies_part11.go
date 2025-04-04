@@ -206,7 +206,11 @@ func companiesPart11() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Veeva",
+				Employees:   "1,001 to 5,000",
+				Salary:      "$65K ~ $283K a year",
+				Reviews:     "247",
+				ReviewsRate: "3.5",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias: "",
@@ -448,7 +452,11 @@ func companiesPart11() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "anaplan",
+				Employees:   "1,001 to 5,000",
+				Salary:      "$52K ~ $248K a year",
+				Reviews:     "199",
+				ReviewsRate: "2.9",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias: "",

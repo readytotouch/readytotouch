@@ -5696,7 +5696,11 @@ func companiesPart8() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "canva",
+				Employees:   "501 to 1,000",
+				Salary:      "",
+				Reviews:     "382",
+				ReviewsRate: "3.8",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "canva",

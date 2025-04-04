@@ -7261,7 +7261,11 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified: true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "careem",
+				Employees:   "1,001 to 5,000",
+				Salary:      "",
+				Reviews:     "239",
+				ReviewsRate: "3.1",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Careem-EI_IE1438731.11,17.htm",
