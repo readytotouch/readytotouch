@@ -5867,15 +5867,6 @@ func companiesPart8() []domain.CompanyProfile {
 							WithSalary:           true, // $90.000 - $110.000 per year + Stock-Options/BSPCE
 							Remote:               false,
 						},
-						{
-							Title:                "Senior Cross-Platform Engineer (Rust)",
-							ShortDescription:     "Experience developing software with Rust",
-							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate("2025-04-02"),
-							WithSalary:           true, //  $90k - $110k + Stock-Options/BSPCE
-							Remote:               false,
-						},
 					},
 				},
 				domain.Zig:     {},

@@ -363,7 +363,7 @@ func companiesPart11() []domain.CompanyProfile {
 							Remote:               true,
 						},
 						{
-							Title:                "Founding Full Stack Engineer Typescript / Rust",
+							Title:                "Founding Full Stack Engineer TypeScript / Rust",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4197407019/",

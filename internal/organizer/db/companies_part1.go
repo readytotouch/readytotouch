@@ -4634,15 +4634,6 @@ func companiesPart1() []domain.CompanyProfile {
 							WithSalary:           true, // $85,000.00 to $150,000.00 annually + bonus + benefits
 							Remote:               false,
 						},
-						{
-							Title:                "Engineer — Java, Kotlin, C#, Scala",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "https://www.linkedin.com/jobs/view/4198155898/",
-							Date:                 mustDate("2025-04-03"),
-							WithSalary:           false,
-							Remote:               false,
-						},
 					},
 				},
 				domain.Elixir:  {},
@@ -5934,7 +5925,7 @@ func companiesPart1() []domain.CompanyProfile {
 						{
 							Title:                "Senior Software Engineer",
 							ShortDescription:     "4+ years of backend development experience (Go, Python, Ruby preferred)",
-							SwitchingOpportunity: "",
+							SwitchingOpportunity: "Go Transition",
 							URL:                  "https://www.linkedin.com/jobs/view/4200883253/",
 							Date:                 mustDate("2025-04-04"),
 							WithSalary:           true, // Gross Salary 4750-7200 EUR/Month

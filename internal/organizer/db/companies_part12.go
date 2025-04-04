@@ -1047,11 +1047,12 @@ func companiesPart12() []domain.CompanyProfile {
 			Blog:    "https://www.dell.com/community/en/topics/developer-blogs",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                15088102,
+				IDs:               []int{9019, 13771, 472943, 15088102},
 				Alias:             "delltechnologies",
 				Name:              "Dell Technologies",
 				Followers:         "5M",
 				Employees:         "10K+",
-				AssociatedMembers: "130,395",
+				AssociatedMembers: "130,367",
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -1106,11 +1107,12 @@ func companiesPart12() []domain.CompanyProfile {
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                6654085,
+				IDs:               nil,
 				Alias:             "dailypay",
 				Name:              "DailyPay",
 				Followers:         "24K",
 				Employees:         "501-1K",
-				AssociatedMembers: "929",
+				AssociatedMembers: "927",
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -1168,11 +1170,12 @@ func companiesPart12() []domain.CompanyProfile {
 			Blog:    "https://www.shopware.com/en/news/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                5300057,
+				IDs:               nil,
 				Alias:             "shopware-ag",
 				Name:              "Shopware",
 				Followers:         "22K",
 				Employees:         "201-500",
-				AssociatedMembers: "407",
+				AssociatedMembers: "406",
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -1221,16 +1224,17 @@ func companiesPart12() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "StarHub",
 			Website: "https://www.starhub.com/",
-			Careers: "https://careers.starhub.com/.html",
+			Careers: "https://careers.starhub.com/",
 			About:   "https://corporate.starhub.com/about-us.html",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                166131,
+				IDs:               nil,
 				Alias:             "starhub",
 				Name:              "StarHub",
 				Followers:         "63K",
 				Employees:         "1K-5K",
-				AssociatedMembers: "2,724",
+				AssociatedMembers: "2,727",
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -1285,11 +1289,12 @@ func companiesPart12() []domain.CompanyProfile {
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                47584,
+				IDs:               []int{47584, 3729600, 8961866, 14556045, 24772538, 75640232, 102070393},
 				Alias:             "rakuten",
 				Name:              "Rakuten",
 				Followers:         "305K",
 				Employees:         "10K+",
-				AssociatedMembers: "10,340",
+				AssociatedMembers: "10,339",
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -1344,6 +1349,7 @@ func companiesPart12() []domain.CompanyProfile {
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                19033427,
+				IDs:               nil,
 				Alias:             "vitalbio",
 				Name:              "Vital Bio",
 				Followers:         "8K",
