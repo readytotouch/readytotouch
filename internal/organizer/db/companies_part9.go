@@ -146,7 +146,8 @@ func companiesPart9() []domain.CompanyProfile {
 				ReviewsRate: "3.0",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "forcepoint",
+				Employees: "2,250",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Forcepoint-EI_IE1262390.11,21.htm",
@@ -299,7 +300,8 @@ func companiesPart9() []domain.CompanyProfile {
 				ReviewsRate: "3.6",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "barracuda-networks",
+				Employees: "1,500",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -431,7 +433,8 @@ func companiesPart9() []domain.CompanyProfile {
 				ReviewsRate: "3.3",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "teradata",
+				Employees: "10,760",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Teradata-EI_IE14638.11,19.htm",
@@ -1147,7 +1150,8 @@ func companiesPart9() []domain.CompanyProfile {
 				ReviewsRate: "3.6",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "viasat",
+				Employees: "6,000",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Viasat-EI_IE5500.11,17.htm",
@@ -2406,7 +2410,8 @@ func companiesPart9() []domain.CompanyProfile {
 				ReviewsRate: "3.5",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "f5-networks",
+				Employees: "6,500",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-F5-EI_IE9222.11,13.htm",
@@ -3124,7 +3129,8 @@ func companiesPart9() []domain.CompanyProfile {
 				ReviewsRate: "3.6",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "cisco",
+				Employees: "98,110",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Cisco-EI_IE1425.11,16.htm",
@@ -3438,7 +3444,8 @@ func companiesPart9() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "nielseniq",
+				Employees: "14,430",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-NielsenIQ-EI_IE4796509.11,20.htm",
@@ -4122,7 +4129,8 @@ func companiesPart9() []domain.CompanyProfile {
 				ReviewsRate: "4.3",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "syniti",
+				Employees: "1,500",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -4243,7 +4251,8 @@ func companiesPart9() []domain.CompanyProfile {
 				ReviewsRate: "3.4",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "goldman-sachs",
+				Employees: "67,370",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Goldman-Sachs-EI_IE2800.11,24.htm",
@@ -5396,7 +5405,8 @@ func companiesPart9() []domain.CompanyProfile {
 				ReviewsRate: "3.8",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "ikea",
+				Employees: "87,550",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-IKEA-EI_IE3957.11,15.htm",
@@ -6451,7 +6461,8 @@ func companiesPart9() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "netscribes",
+				Employees: "2,000",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Netscribes-EI_IE218712.11,21.htm",
@@ -6520,7 +6531,8 @@ func companiesPart9() []domain.CompanyProfile {
 				ReviewsRate: "2.9",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "warner-bros-discovery",
+				Employees: "24,250",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Warner-Bros-Discovery-EI_IE12777.11,32.htm",
@@ -6648,7 +6660,8 @@ func companiesPart9() []domain.CompanyProfile {
 				ReviewsRate: "3.8",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "vodafone",
+				Employees: "165,610",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Vodafone-EI_IE5775.11,19.htm",
@@ -8291,7 +8304,8 @@ func companiesPart9() []domain.CompanyProfile {
 				ReviewsRate: "3.2",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "unity",
+				Employees: "5,440",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Unity-EI_IE455854.11,16.htm",

@@ -213,7 +213,8 @@ func companiesPart11() []domain.CompanyProfile {
 				ReviewsRate: "3.5",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "veeva-systems",
+				Employees: "4,500",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Veeva-Systems-EI_IE459351.11,24.htm",
@@ -459,7 +460,8 @@ func companiesPart11() []domain.CompanyProfile {
 				ReviewsRate: "2.9",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "anaplan",
+				Employees: "2,500",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Anaplan-EI_IE695685.11,18.htm",

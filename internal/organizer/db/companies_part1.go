@@ -7267,6 +7267,10 @@ func companiesPart1() []domain.CompanyProfile {
 				Reviews:     "239",
 				ReviewsRate: "3.1",
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "careem",
+				Employees: "3,500",
+			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Careem-EI_IE1438731.11,17.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Careem-Reviews-E1438731.htm",
