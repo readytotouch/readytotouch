@@ -18,6 +18,10 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+var (
+	testFullPublicUntil = time.Date(2025, time.April, 25, 0, 0, 0, 0, time.UTC)
+)
+
 type (
 	companyAliasURI struct {
 		CompanyAlias string `uri:"company_alias" binding:"required"`
@@ -699,9 +703,10 @@ func (c *Controller) ClojureCommunities(ctx *gin.Context) {
 func (c *Controller) VacancyRedirect(ctx *gin.Context) {
 	var (
 		authUserID = domain.ContextGetUserID(ctx)
+		now        = time.Now().UTC()
 	)
 
-	if authUserID == 0 {
+	if authUserID == 0 && now.After(testFullPublicUntil) {
 		ctx.Redirect(http.StatusFound, "/organizers/golang/welcome"+c.redirect(ctx.Request.URL.Path))
 
 		return
@@ -725,11 +730,13 @@ func (c *Controller) VacancyRedirect(ctx *gin.Context) {
 		return
 	}
 
-	err = c.vacancyViewStatsRepository.Upsert(ctx, uri.VacancyID, authUserID, time.Now().UTC())
-	if err != nil {
-		// @TODO logging
+	if authUserID > 0 {
+		err := c.vacancyViewStatsRepository.Upsert(ctx, uri.VacancyID, authUserID, now)
+		if err != nil {
+			// @TODO logging
 
-		// NOP, continue
+			// NOP, continue
+		}
 	}
 
 	ctx.Redirect(http.StatusFound, vacancyExternalURL)
@@ -1483,7 +1490,14 @@ func (c *Controller) softAuth(ctx *gin.Context, authUserID int64, language domai
 }
 
 func (c *Controller) random(language domain.Language) bool {
-	minute := time.Now().Minute()
+	var (
+		now    = time.Now()
+		minute = now.Minute()
+	)
+
+	if now.Before(testFullPublicUntil) {
+		return false
+	}
 
 	switch language {
 	case domain.Go:
