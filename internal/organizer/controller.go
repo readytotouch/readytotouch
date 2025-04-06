@@ -1377,6 +1377,26 @@ func (c *Controller) DataPopulationCompaniesLevelsFyi(ctx *gin.Context) {
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationCompaniesLevelsFyi(companies, "Populate Levels.fyi")))
 }
 
+// DataPopulationCompaniesLogo will be removed in the future.
+func (c *Controller) DataPopulationCompaniesLogo(ctx *gin.Context) {
+	var (
+		companies = c.dataPopulationCompanies(func(company domain.CompanyProfile) bool {
+			/*
+				if c.skipSmallCompany(company) {
+					return false
+				}
+			*/
+
+			return company.Logo == ""
+		})
+	)
+
+	// Never first
+	slices.Reverse(companies)
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationCompaniesLogo(companies, "Populate Logo")))
+}
+
 func (c *Controller) dataPopulationCompanies(match func(company domain.CompanyProfile) bool) []domain.CompanyProfile {
 	var (
 		source    = db.CloneCompanies()

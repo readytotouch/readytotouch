@@ -1,0 +1,103 @@
+{%- func DataPopulationCompaniesLogo(companies []Company, title string) -%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>{%s title %}</title>
+    <meta name="description" content="{%s title %}">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="author" type="text/plain" href="https://readytotouch.com/humans.txt"/>
+    <meta property="og:image" content="/assets/images/og/organizers-light.jpg">
+
+    {%= favicon() %}
+    {%= plausibleAnalytics() %}
+    {%= ga() %}
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            background: #ffffff;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo {
+            width: 112px;
+            height: 56px;
+            background-color: #ddd;
+            object-fit: contain;
+        }
+
+        .company-name {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .links {
+            margin-top: 5px;
+        }
+
+        .links a {
+            color: #0073e6;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        .actions a {
+            width: 21px;
+            height: 20px;
+            display: inline-block;
+            background-size: cover;
+            background-image: url('https://www.google.com/favicon.ico');
+        }
+    </style>
+</head>
+<body>
+<h1>{%s title %} ({%d len(companies) %})</h1>
+<ul>
+    {% for _, company := range companies %}
+    <li>
+        <img src="{%s logo(company.Logo) %}" class="logo" />
+        <div>
+            <div class="company-name">{%s company.Name %}</div>
+            <div class="links">
+                <a href="https://linkedin.com/company/{%s company.LinkedInProfile.Alias %}" target="_blank">LinkedIn</a>
+            </div>
+            <div class="actions">
+                <a target="_blank" href='{%s googleSearch(company.Name + " " + "logo") %}'></a>
+                <a target="_blank" href='{%s googleSearchOnSite(hostname(company.Website), "logo") %}'></a>
+            </div>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>
+{%- endfunc -%}
