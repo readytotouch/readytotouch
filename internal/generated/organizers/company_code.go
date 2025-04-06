@@ -819,6 +819,8 @@ var (
 		"starhub":                             817, // StarHub
 		"rakuten":                             818, // Rakuten
 		"vitalbio":                            819, // Vital Bio
+		"stord":                               820, // Stord
+		"luminovo":                            821, // Luminovo
 
 	}
 )
