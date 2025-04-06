@@ -4089,12 +4089,21 @@ func companiesPart1() []domain.CompanyProfile {
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer",
-							ShortDescription:     "5+ years of programming, with demonstrable experience in Rust\n",
+							ShortDescription:     "5+ years of programming, with demonstrable experience in Rust",
 							SwitchingOpportunity: "",
 							URL:                  "https://app.welcometothejungle.com/jobs/l9x_fLDt",
 							Date:                 mustDate("2025-03-21"),
 							WithSalary:           false,
 							Remote:               false,
+						},
+						{
+							Title:                "Senior Software Engineer",
+							ShortDescription:     "Runtime Interpreter (Scheme/Rust)",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4182238733/",
+							Date:                 mustDate("2025-04-05"),
+							WithSalary:           false,
+							Remote:               true,
 						},
 					},
 				},
