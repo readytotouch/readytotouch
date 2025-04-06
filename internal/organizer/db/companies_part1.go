@@ -19971,6 +19971,15 @@ func companiesPart1() []domain.CompanyProfile {
 							WithSalary:           true, // Salary Range: €55,000 - €70,000 per year
 							Remote:               false,
 						},
+						{
+							Title:                "Software Engineer – Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4184693514/",
+							Date:                 mustDate("2025-04-05"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
