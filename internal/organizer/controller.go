@@ -1379,22 +1379,36 @@ func (c *Controller) DataPopulationCompaniesLevelsFyi(ctx *gin.Context) {
 
 // DataPopulationCompaniesLogo will be removed in the future.
 func (c *Controller) DataPopulationCompaniesLogo(ctx *gin.Context) {
-	var (
-		companies = c.dataPopulationCompanies(func(company domain.CompanyProfile) bool {
-			/*
-				if c.skipSmallCompany(company) {
-					return false
-				}
-			*/
+	const (
+		keepLatest = 50
+	)
 
-			return company.Logo == ""
+	var (
+		source = c.dataPopulationCompanies(func(company domain.CompanyProfile) bool {
+			return true
 		})
+		result = make([]domain.CompanyProfile, 0, len(source))
 	)
 
 	// Never first
-	slices.Reverse(companies)
+	slices.Reverse(source)
 
-	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationCompaniesLogo(companies, "Populate Logo")))
+	for i, company := range source {
+		if i < keepLatest {
+			result = append(result, company)
+
+			continue
+		}
+
+		if c.skipSmallCompany(company) {
+			continue
+		}
+
+		// The existing logos must be re-checked
+		result = append(result, company)
+	}
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationCompaniesLogo(result, "Populate Logo")))
 }
 
 func (c *Controller) dataPopulationCompanies(match func(company domain.CompanyProfile) bool) []domain.CompanyProfile {
@@ -1492,15 +1506,8 @@ func (c *Controller) random(language domain.Language) bool {
 }
 
 func (c *Controller) skipSmallCompany(company domain.CompanyProfile) bool {
-	if company.LinkedInProfile.Employees == "10K+" {
-		return false
-	}
-
-	if company.LinkedInProfile.Employees == "5K-10K" {
-		return false
-	}
-
-	if company.LinkedInProfile.Employees == "1K-5K" {
+	switch company.LinkedInProfile.Employees {
+	case "10K+", "5K-10K", "1K-5K", "501-1K", "201-500", "51-200":
 		return false
 	}
 
