@@ -248,6 +248,7 @@ func main() {
 	r.GET("/private/unstable/wip/organizers/data-population-lists/blind", organizerController.DataPopulationCompaniesBlind)
 	r.GET("/private/unstable/wip/organizers/data-population-lists/indeed", organizerController.DataPopulationCompaniesIndeed)
 	r.GET("/private/unstable/wip/organizers/data-population-lists/levels", organizerController.DataPopulationCompaniesLevelsFyi)
+	r.GET("/private/unstable/wip/organizers/data-population-lists/logo", organizerController.DataPopulationCompaniesLogo)
 
 	r.GET("/api/v1/features/auto/waitlist/stats.json", organizerController.WaitlistStats)
 	r.POST("/api/v1/features/auto/waitlist/subscribe.json", organizerController.WaitlistSubscribe)
@@ -281,6 +282,10 @@ func main() {
 		// Unsafe API endpoints that can be changed without any notice.
 		GET("/api/v1/unsafe/companies.json", organizerController.UnsafeCompanies).
 		GET("/api/v1/unsafe/vacancies.json", organizerController.UnsafeVacancies)
+
+	r.GET("/analytics", found("https://plausible.io/readytotouch.com"))
+	r.GET("/plausible", found("https://plausible.io/readytotouch.com"))
+	r.GET("/similarweb", found("https://www.similarweb.com/website/readytotouch.com/"))
 
 	r.
 		StaticFile("/design", "./public/design/online.html").
