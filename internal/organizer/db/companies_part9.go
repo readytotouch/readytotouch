@@ -8727,8 +8727,16 @@ func companiesPart9() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{
-						// Waiting for Go position
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Staff Software Engineer – Golang (required)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4201033819/",
+							Date:                 mustDate("2025-04-04"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust:    {},
