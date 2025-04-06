@@ -821,6 +821,7 @@ var (
 		"vitalbio":                            819, // Vital Bio
 		"stord":                               820, // Stord
 		"luminovo":                            821, // Luminovo
+		"thought-machine":                     822, // Thought Machine
 
 	}
 )

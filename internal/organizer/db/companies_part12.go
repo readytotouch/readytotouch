@@ -1520,6 +1520,67 @@ func companiesPart12() []domain.CompanyProfile {
 				//
 			},
 		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Thought Machine",
+			Website: "https://www.thoughtmachine.net/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                5265217,
+				IDs:               nil,
+				Alias:             "thought-machine",
+				Name:              "Thought Machine",
+				Followers:         "69K",
+				Employees:         "501-1K",
+				AssociatedMembers: "530",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer",
+							ShortDescription:     "Experience with either Python or Golang",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4101150703/",
+							Date:                 mustDate("2025-03-31"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Cloud-native banking",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
+		},
 
 		// Template
 		//{

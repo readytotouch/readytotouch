@@ -764,6 +764,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4161076803/":                                                               971,  // nebius
 		"https://www.linkedin.com/jobs/view/4075517057/":                                                               83,   // zoom
 		"https://www.linkedin.com/jobs/view/4077459247/":                                                               84,   // lexisnexis-risk-solutions
+		"https://app.welcometothejungle.com/jobs/eIBDlEtH":                                                             1448, // lexisnexis-risk-solutions
 		"https://www.linkedin.com/jobs/view/4075801293/":                                                               85,   // skidos-games
 		"https://www.linkedin.com/jobs/view/4112778941/":                                                               552,  // skidos-games
 		"https://www.linkedin.com/jobs/view/4039359993/":                                                               86,   // singlestore
@@ -1451,6 +1452,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4199869768/":                                                               1429, // vitalbio
 		"https://www.linkedin.com/jobs/view/4199652107/":                                                               1446, // stord
 		"https://www.linkedin.com/jobs/view/4200736486/":                                                               1447, // luminovo
+		"https://www.linkedin.com/jobs/view/4101150703/":                                                               1449, // thought-machine
 
 	}
 )
