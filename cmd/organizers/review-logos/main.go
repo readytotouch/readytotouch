@@ -5,15 +5,26 @@ import (
 	"fmt"
 	"os"
 	"path/filepath"
+	"slices"
 	"sort"
 	"strings"
 
+	"github.com/readytotouch/readytotouch/internal/domain"
 	"github.com/readytotouch/readytotouch/internal/generated/organizers"
+	"github.com/readytotouch/readytotouch/internal/organizer/db"
 )
 
 func main() {
-	// review("./public/logos/original/")
-	review("./public/logos/adapted/")
+	var (
+		companies = db.CloneCompanies()
+	)
+
+	/*
+		review("./public/logos/original/")
+		review("./public/logos/adapted/")
+	*/
+
+	prepareLogosV1Mapping(companies)
 }
 
 func review(dir string) {
@@ -160,5 +171,18 @@ func sortAndStoreAliasImageMap(imageMap map[string]string, dst string) {
 		if err != nil {
 			panic(err)
 		}
+	}
+}
+
+func prepareLogosV1Mapping(companies []domain.CompanyProfile) {
+	aliases := make([]string, 0, len(companies))
+	for _, company := range companies {
+		aliases = append(aliases, company.LinkedInProfile.Alias)
+	}
+	slices.Sort(aliases)
+
+	err := os.WriteFile("./public/logos-v1/mapping.txt", []byte(strings.Join(aliases, " \n")), 0644)
+	if err != nil {
+		panic(err)
 	}
 }

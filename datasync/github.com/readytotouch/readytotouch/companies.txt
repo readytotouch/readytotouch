@@ -9,6 +9,7 @@ Algorithmia https://www.datarobot.com/
 Amazon https://www.amazon.com/
 Amedia https://www.amedia.no/
 amo https://amo.co/
+Anaplan https://www.anaplan.com/
 Anduril Industries https://www.anduril.com/
 ANIXE https://www.anixe.pl/
 Anjuna Security https://www.anjuna.io/
@@ -58,6 +59,8 @@ Diem Association https://www.diem.com/
 Digiexam https://www.digiexam.com/
 Discord https://discord.com/
 Ditto https://ditto.live/
+Dragonfly https://www.dragonfly.xyz/
+Dria https://www.firstbatch.xyz/
 DroneSense https://www.dronesense.com/
 Dropbox https://www.dropbox.com/
 Dynatrace https://www.dynatrace.com/
@@ -70,6 +73,7 @@ ExpressVPN https://www.expressvpn.com/
 F5 https://www.f5.com/
 Faraday https://faraday.ai/
 Fastly https://www.fastly.com/
+Fathom.io https://fathom.io/
 Fedi https://www.fedi.xyz/
 Ferrous Systems GmbH https://ferrous-systems.com/
 Fetcherr https://fetcherr.io
@@ -81,10 +85,12 @@ FirstBatch https://www.firstbatch.xyz/
 Flock Safety https://www.flocksafety.com/
 Flok Health https://flok.health/
 Fly.io https://fly.io/
+Ford Motor Company https://www.ford.com/
 Freeform https://freeform.co/
 Funnel https://funnel.io/
 General Dynamics Mission Systems https://gdmissionsystems.com/
 Genius Sports https://www.geniussports.com/
+GitGuardian https://www.gitguardian.com/
 Google https://www.google.com/
 Grasshopper https://grasshopperasia.com/
 Green-Got https://green-got.com/
@@ -99,7 +105,7 @@ Immunant https://immunant.com/
 Imperva https://www.imperva.com/
 InfluxData https://www.influxdata.com/
 Integer 32, LLC https://www.integer32.com/
-JUSPAY https://hyperswitch.io/
+JUSPAY https://juspay.io/
 Keyrock https://keyrock.com/
 KnowBe4 https://www.knowbe4.com/
 Kong https://konghq.com/
@@ -110,12 +116,14 @@ Lexia Learning https://www.lexialearning.com/
 Lingopal https://lingopal.com/
 LinkedIn https://www.linkedin.com/
 Los Alamos National Laboratory https://www.lanl.gov/
+Luminovo https://luminovo.com/
 Lytx, Inc. https://www.lytx.com/
 Magnite https://www.magnite.com/
 Materialise https://www.materialise.com/
 Materialize https://materialize.com/
 Meta https://www.facebook.com/
 Microsoft https://www.microsoft.com/
+Mindrift https://mindrift.ai/
 MNTN https://mountain.com/
 MongoDB https://www.mongodb.com/
 Moody's Corporation https://www.moodys.com/
@@ -132,6 +140,7 @@ OVHcloud https://www.ovhcloud.com/
 Paessler https://www.paessler.com/
 Palo Alto Networks https://www.paloaltonetworks.com/
 Parity Technologies https://www.parity.io/
+Photon https://photon.com/
 Photoroom https://www.photoroom.com/
 Pinecone https://www.pinecone.io/
 Polars https://pola.rs/
@@ -141,15 +150,18 @@ Poppi Technologies https://www.poppitechnologies.com/
 Priceline https://www.priceline.com/
 Progress Chef https://www.chef.io/
 Proton https://proton.me/
+PULT https://www.pult.com/
 QNX https://blackberry.qnx.com/
 Quantum Systems https://quantum-systems.com/
 Qumulo https://qumulo.com/
 Qwiet AI https://qwiet.ai/
+Rakuten https://global.rakuten.com/
 Red Iron Team https://red-iron.eu/
 Red Sift https://redsift.com/
 Redis https://redis.io/
 Rhebo https://rhebo.com/
 RingCentral https://www.ringcentral.com/
+Rivian and Volkswagen Group Technologies https://rivianvw.tech/
 Routific https://www.routific.com/
 Rustunit https://rustunit.com/
 Sandstorm.io https://sandstorm.io/
@@ -167,10 +179,12 @@ Snips https://snips.ai/
 Solana Foundation https://solana.com/
 Sony Interactive Entertainment http://www.sonyinteractive.com/
 Spice AI https://spice.ai/
+St. Jude Children's Research Hospital https://www.stjude.org/
 Stackable https://stackable.tech/
 Stackx.me https://stackx.me/
 Star Lab, a Wind River Company https://www.starlab.io/
 Starry, Inc. https://starry.com/
+Starship Technologies https://www.starship.xyz/
 Statista https://www.statista.com/
 Stoke Space http://www.stokespace.com/
 SurrealDB https://surrealdb.com/
@@ -189,9 +203,11 @@ Two Six Technologies https://twosixtech.com/
 Ubisoft https://www.ubisoft.com/
 Umbra https://umbra.space/
 Vector Atomic https://www.vectoratomic.com/
+Veeva Systems https://www.veeva.com/
 Vercel https://vercel.com/
 VersionEye https://www.versioneye.com/
 VisionAI https://www.visionai.co/
+Vital Bio https://vitalbio.com/
 Walt Disney https://thewaltdisneycompany.com/
 Wargaming https://wargaming.com/
 Wildfish Limited https://www.wildfish.com/
