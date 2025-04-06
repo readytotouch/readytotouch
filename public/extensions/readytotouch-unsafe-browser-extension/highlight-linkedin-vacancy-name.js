@@ -32,3 +32,8 @@ function highlightVacancyName() {
 }
 
 highlightVacancyName();
+
+/*
+    TODO:
+        1. Show if company has fresh vacancies for this language
+*/

@@ -1,6 +1,7 @@
 console.log("LinkedIn vacancy data copy extension loaded");
 
 // Ctrl + Shift + Y
+// Ctrl + Shift + U
 document.body.addEventListener("keydown", (event) => {
     // Y is for English, Н is for Ukrainian
     if (event.ctrlKey && event.shiftKey && (event.key === "Y" || event.key === "Н")) {
@@ -24,6 +25,15 @@ document.body.addEventListener("keydown", (event) => {
 						    WithSalary:           ${salary() ? "true" : "false"},
 						    Remote:               ${remote() ? "true" : "false"},
 						},`
+
+        navigator.clipboard.writeText(goLinkedInVacancyColumns)
+            .then(() => console.log("Page info copied to clipboard:", goLinkedInVacancyColumns))
+            .catch((err) => console.error("Failed to copy page info:", err));
+    }
+
+    // U is for English, Г is for Ukrainian
+    if (event.ctrlKey && event.shiftKey && (event.key === "U" || event.key === "Г")) {
+        const goLinkedInVacancyColumns = `mustDate("${date()}"), // `;
 
         navigator.clipboard.writeText(goLinkedInVacancyColumns)
             .then(() => console.log("Page info copied to clipboard:", goLinkedInVacancyColumns))
