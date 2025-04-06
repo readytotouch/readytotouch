@@ -64,6 +64,7 @@ npm http://www.npmjs.com/
 OneSignal https://onesignal.com/
 OVH https://www.ovh.com/
 Parity https://www.parity.io/
+Polars https://pola.rs/
 PolySync https://polysync.io/
 Qumulo https://qumulo.com/
 Red Iron https://red-iron.eu/
