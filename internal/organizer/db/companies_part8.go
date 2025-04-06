@@ -2568,6 +2568,15 @@ func companiesPart8() []domain.CompanyProfile {
 							WithSalary:           true,                   // $89.300 - 198.900 per year
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Embedded Software Engineer – Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4138449970/",
+							Date:                 mustDate("2025-04-04"),
+							WithSalary:           true,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Zig:     {},
