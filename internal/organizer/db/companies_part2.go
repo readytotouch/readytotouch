@@ -6170,8 +6170,8 @@ func companiesPart2() []domain.CompanyProfile {
 							ShortDescription:     "Cloud Native",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4181805128/",
-							Date:                 mustDate("2025-03-13"),
-							WithSalary:           true, // $119,000 – $165,000 per year
+							Date:                 mustDate("2025-04-04"), // mustDate("2025-03-13"),
+							WithSalary:           true,                   // $119,000 – $165,000 per year
 							Remote:               true,
 						},
 						{
@@ -12659,6 +12659,15 @@ func companiesPart2() []domain.CompanyProfile {
 							Date:                 mustDate("2024-11-14"),
 							WithSalary:           false,
 							Remote:               false,
+						},
+						{
+							Title:                "Senior Software Engineer (Golang, K8s)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4201029040/",
+							Date:                 mustDate("2025-04-05"),
+							WithSalary:           false,
+							Remote:               true,
 						},
 					},
 				},

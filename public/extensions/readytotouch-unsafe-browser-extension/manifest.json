@@ -14,7 +14,7 @@
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["content.js"]
+      "js": ["highlight-company-name.js"]
     },
     {
       "matches": ["https://www.linkedin.com/company/*"],
@@ -26,7 +26,7 @@
     },
     {
       "matches": ["https://www.linkedin.com/jobs/view/*"],
-      "js": ["copy-linkedin-vacancy-data.js"]
+      "js": ["copy-linkedin-vacancy-data.js", "highlight-linkedin-vacancy-name.js"]
     },
     {
       "matches": ["https://www.glassdoor.com/*"],
