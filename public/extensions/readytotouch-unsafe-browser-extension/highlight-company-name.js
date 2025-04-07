@@ -1,14 +1,14 @@
-const CACHE_DURATION = 5 * 60 * 1000;
+const COMPANY_CACHE_DURATION = 5 * 60 * 1000;
 
 let companiesCache = null;
-let cacheTimestamp = 0;
+let companiesCacheTimestamp = 0;
 
 function fetchCompanyList() {
     return fetch("https://readytotouch.com/api/v1/unsafe/companies.json")
         .then(response => response.json())
         .then(data => {
             companiesCache = data.companies;
-            cacheTimestamp = Date.now();
+            companiesCacheTimestamp = Date.now();
             console.log("Fetched and cached company list.");
         })
         .catch(error => {
@@ -79,13 +79,13 @@ function getCompanyNameElement() {
 }
 
 function initializeCompanyCache() {
-    if (companiesCache === null || Date.now() - cacheTimestamp > CACHE_DURATION) {
+    if (companiesCache === null || Date.now() - companiesCacheTimestamp > COMPANY_CACHE_DURATION) {
         fetchCompanyList();
     }
 }
 
 initializeCompanyCache();
 
-setInterval(initializeCompanyCache, CACHE_DURATION);
+setInterval(initializeCompanyCache, COMPANY_CACHE_DURATION);
 
 setInterval(monitorCompanyNameChange, 250);
