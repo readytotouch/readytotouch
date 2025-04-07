@@ -26,7 +26,7 @@
     },
     {
       "matches": ["https://www.linkedin.com/jobs/view/*"],
-      "js": ["copy-linkedin-vacancy-data.js", "highlight-linkedin-vacancy-name.js"]
+      "js": ["copy-linkedin-vacancy-data.js", "highlight-vacancy-title.js"]
     },
     {
       "matches": ["https://www.glassdoor.com/*"],
@@ -50,7 +50,7 @@
     },
     {
       "matches": ["https://app.welcometothejungle.com/jobs/*"],
-      "js": ["copy-welcometothejungle-vacancy-data.js"]
+      "js": ["copy-welcometothejungle-vacancy-data.js", "highlight-vacancy-title.js"]
     }
   ]
 }
