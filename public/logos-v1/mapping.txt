@@ -1,53 +1,53 @@
-1global 
-1nce 
-1password 
-3085253 
-360dialog 
-4128 
-49nord 
-815488 
-90poe 
-a1bulgaria 
-ab-tasty 
-abb 
-abbott- 
-abc-fitness 
-abnormalsecurity 
-about-you 
-acronis 
-activeprospect 
-actyx 
-adform 
-adjoe 
-adtran 
-adverty 
-aescape 
-affinipay 
-agentero 
-airahome 
-airslate 
-airspace-inc 
-airudder 
-akamai-technologies 
-akvelon 
-algolia 
-algorithmiaio 
-altair-engineering 
-altenar 
-amartha 
-amazon 
-amedia-as 
-american-airlines 
-american-express 
-amoamoamo 
-amuse.io 
-anaplan 
-andurilindustries 
-anixe-polska-sp--z-o-o- 
-anjuna-security 
-antmicro-ltd 
-apifonica 
-apollo-graphql 
+1global 1global.png
+1nce   # good logo
+1password # good logo
+3085253  ace_tate.png
+360dialog  360dialog
+4128   # lowe's good logo
+49nord 49nord.png
+815488 Holland_Barrett.png
+90poe 90poe.png
+a1bulgaria a1bulgaria.png
+ab-tasty # good logo
+abb abb.png
+abbott-  abbott.png
+abc-fitness # good logo
+abnormalsecurity  #good logo
+about-you about-you.png
+acronis acronics.png
+activeprospect  activeprospect.png
+actyx Actyx.png
+adform  adform.png
+adjoe adjoe.png
+adtran Adtran.png
+adverty Adverty.png
+aescape Aescape.png
+affinipay affinipay.png
+agentero agentero.png 
+airahome airahome.png
+airslate airslate.png
+airspace-inc  # good logo
+airudder airudder.png
+akamai-technologies akamai_technologies.png
+akvelon akvelon.png
+algolia algolia.png
+algorithmiaio algorithmiaio.png 
+altair-engineering altair-engineering.png
+altenar # good logo
+amartha amartha.png
+amazon amazon.png
+amedia-as amedia-as.png
+american-airlines american-airlines.png
+american-express american-express.png
+amoamoamo # good logo
+amuse.io amuseio.png
+anaplan anaplan.png
+andurilindustries andurilindustries.png
+anixe-polska-sp--z-o-o- anixe.png
+anjuna-security anjuna-security.png
+antmicro-ltd Antmicro.png
+apifonica Apifonica.png
+apollo-graphql apollo-graphql.png
 appear-net 
 appflowy 
 applied-research-solutions 
