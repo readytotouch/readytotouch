@@ -1,7 +1,7 @@
 1global 
 1nce 
 1password 
-3085253 
+3085253  ace_tate.png
 360dialog 
 4128 
 49nord 
@@ -15,10 +15,10 @@ abc-fitness
 abnormalsecurity 
 about-you 
 acronis 
-activeprospect 
+activeprospect ActiveProspect.png
 actyx 
 adform 
-adjoe 
+adjoe adjoe.png
 adtran 
 adverty 
 aescape 
@@ -41,8 +41,8 @@ american-airlines
 american-express 
 amoamoamo 
 amuse.io 
-anaplan 
-andurilindustries 
+anaplan anaplan.png
+andurilindustries  andurilindustries.png
 anixe-polska-sp--z-o-o- 
 anjuna-security 
 antmicro-ltd 
@@ -63,11 +63,11 @@ arfdlaw
 argela-technologies 
 arista-networks-inc 
 arm 
-armadaai 
+armadaai armadaai.png
 ascendion 
 ashley-furniture-industries 
 aspire-software 
-assembledhq 
+assembledhq assembledhq.png
 assertive-yield 
 asset-reality 
 atlassian 
@@ -151,7 +151,7 @@ chime-card
 cho-tot 
 cimri 
 cinemo 
-circles1 
+circles1 circles1.png
 circuitknowledge 
 cisco 
 citi 
@@ -185,7 +185,7 @@ compassinc
 consortgroup 
 coreweave 
 corrode 
-corys 
+corys corys.png
 craft-ai 
 creative-fabrica 
 creativesoftware 
@@ -206,7 +206,7 @@ cynergy-bank
 cynet-systems 
 daedalean 
 dailymotion 
-dailypay 
+dailypay  dailypay.png
 darktrace 
 databeaconaero 
 datadog 
@@ -217,7 +217,7 @@ ddn
 dealer-tire 
 deepgram 
 delivery-hero-se 
-delltechnologies 
+delltechnologies  delltechnologies.png
 demandbase 
 density-inc- 
 depixen-sw 
@@ -234,15 +234,15 @@ dittolive
 dlocal 
 dnsfilter 
 doccla 
-docebo 
+docebo docebo.png
 dochq 
 docker 
 dojo-tech 
 doordash 
 dragonfly-capital-partners 
 draper 
-dria-ai 
-drivenets 
+dria-ai dria-ai.png
+drivenets DriveNets.png
 dronesense 
 droneshield 
 dropbox 
@@ -289,7 +289,7 @@ fairmoney
 fanatics-inc- 
 faradayai 
 fastly 
-fathom-io 
+fathom-io fathom-io.png
 fedi 
 ferretdb 
 ferrous-systems 
@@ -321,7 +321,7 @@ flyrinc
 flyzipline 
 fonoa 
 forcepoint 
-ford-motor-company 
+ford-motor-company ford-motor-company.png
 form3-financial-cloud 
 fortinet 
 foxtechteam 
@@ -342,14 +342,14 @@ gelato
 geniussports 
 geocomply 
 getansa 
-getcruise 
+getcruise Ford 
 getir 
 getsentry 
-getsona 
+getsona getsona.png
 getstream 
 gettaxi 
 getwriter 
-gitguardian 
+gitguardian GitGuardian.png
 github 
 gitlab-com 
 gnosis-limited 
@@ -369,7 +369,7 @@ grasshopperasia
 greenbone-networks-gmbh 
 greengot 
 greenpacket 
-gremlin-inc. 
+gremlin-inc. gremlin-inc.png
 greynoise 
 gridx 
 groq 
@@ -387,7 +387,7 @@ hasura
 hays 
 hearx-group 
 heb 
-hello-stake 
+hello-stake hello-stake.png
 hellofresh 
 helsing 
 here 
@@ -402,7 +402,7 @@ hovedata
 hp 
 hsbc 
 huawei 
-hubble-pte.-ltd. 
+hubble-pte.-ltd. hubble.png
 huggingface 
 huntress-labs 
 iambot 
@@ -410,7 +410,7 @@ ibm
 icapital-network-inc 
 idemiagroup 
 idt 
-ifs 
+ifs IFS.png
 ikea 
 immunant 
 imperva 
@@ -432,7 +432,7 @@ jetbrains
 jfrog-ltd 
 jmawireless 
 join-denim 
-joinpult 
+joinpult joinpult.png
 jomehq 
 jpmorganchase 
 juspay-technologies 
@@ -447,7 +447,7 @@ kiln-fi
 kimiagroup 
 kiteworkscgcp 
 kiwi.com 
-knime 
+knime knime.png
 knowbe4 
 kochinc 
 koho 
@@ -466,7 +466,7 @@ levelhome
 lexia-learning-systems 
 lexisnexis-risk-solutions 
 liebherr 
-lightspeed-systems 
+lightspeed-systems lightspeed-systems.png
 lightspeedcommerce 
 limango-gmbh 
 limango-sp-z-o-o- 
@@ -479,7 +479,7 @@ los-alamos-national-laboratory
 lotusretails 
 lucidmotors 
 lumentechnologies 
-luminovo 
+luminovo  luminovo.png
 lytxinc 
 macquariegroup 
 macrohealth 
@@ -492,7 +492,7 @@ marbill-technologies
 markitech-ai 
 mastercard 
 materialise 
-materializeinc 
+materializeinc materializeinc.png
 mayaph 
 mayo-clinic 
 mcafee 
@@ -635,7 +635,7 @@ proofpoint
 prosusgroup 
 protonprivacy 
 pubmatic 
-pulsepoint 
+pulsepoint PulsePoint.png
 purestorage 
 qad 
 qinshift 
@@ -648,18 +648,18 @@ qualcomm
 quantexa 
 quantum-systems-gmbh 
 quizlet 
-qumulo 
+qumulo qumulo.png
 qumuluscloudplatform 
 qustodio 
 qwiet 
 r-systems 
 r2p-group 
 rabbet 
-rakuten 
+rakuten Rakuten.png
 rakuten-viber 
 ramp 
 rapid7 
-rbc 
+rbc RBC.png
 readdle 
 readytotouch 
 realcryptape 
@@ -669,7 +669,7 @@ red-iron-team
 red-sift 
 reddit-com 
 redisinc 
-redpanda-data 
+redpanda-data redpanda-data.png
 relai-app 
 remarkable-as 
 remitly 
@@ -679,12 +679,12 @@ rialtic-io
 ringcentral 
 ringover 
 riskified 
-rivian-and-vw-group-technologies 
+rivian-and-vw-group-technologies rivian_and_vw.png
 rocket-lab-limited 
 rockstar-games 
 rollee 
 routific 
-rundoo 
+rundoo Rundoo.png
 runzero 
 rustunit 
 rxbenefits-inc- 
@@ -695,7 +695,7 @@ salesforgeai
 salesloft 
 sambindonesia 
 samsung-electronics 
-samsungfoodofficial 
+samsungfoodofficial samsungfoodofficial.png
 sandstorm.io 
 sap 
 sas 
@@ -715,7 +715,7 @@ sendle
 sennheiser 
 sentinelone 
 shopee 
-shopware-ag 
+shopware-ag shopware-ag.png
 shuttle-yc 
 siemens 
 simulmedia 
@@ -725,7 +725,7 @@ sixt
 skidos-games 
 skillsparkab 
 skillz 
-skyroph 
+skyroph skyroph.png
 skyworks-solutions-inc 
 slowtec 
 smartrentdotcom 
@@ -755,28 +755,28 @@ sportradar
 spotify 
 spydra 
 squarespace 
-st-jude-childrens-research-hospital 
+st-jude-childrens-research-hospital st-jude.png
 stack-x-me 
 stackabletech 
 stacklok 
 stairwell-inc 
-stan-entertainment 
+stan-entertainment stan-entertainment.png
 star-lab 
-starhub 
+starhub StarHub.png
 starlingbank 
 starryinternet 
-starshiptechnologies 
+starshiptechnologies starshiptechnologies.png
 stationf 
 statista 
 stockbit 
-stoke-space 
+stoke-space stoke-space.png
 stonebranch 
 storage-rentals-america 
-stord 
+stord  stord.png
 strangebee 
 stratascale-llc 
 stripe 
-strongcompute 
+strongcompute strongcompute.png
 strongdm 
 stylitics 
 sumup 
@@ -785,7 +785,7 @@ superindo
 surfly 
 surrealdb 
 suse 
-svix 
+svix svix.png
 swish-analytics 
 swiss-post 
 swissborg 
@@ -824,7 +824,7 @@ threatx
 thryve-earth 
 tiiuae 
 tikoafrica 
-tiledb-inc 
+tiledb-inc TileDB.png
 timescaledb 
 toggle-ai 
 tomtom 
@@ -841,10 +841,10 @@ trend-micro
 trondao 
 trustingsocial 
 tsunami-tsolutions-llc. 
-tubi-tv 
+tubi-tv tubi-tv.png
 tucows 
 tweede-golf-software-engineering 
-twitch-tv 
+twitch-tv twitch-tv.png
 twosixtechnologies 
 tyk 
 uber-com 
@@ -854,7 +854,7 @@ ubisoft
 ubs 
 uflorida 
 umbraspace 
-unity 
+unity Unity.png
 universalmusicgroup 
 university-of-virginia 
 unlimit-com 
@@ -869,7 +869,7 @@ varonis
 vaytechnology 
 veact 
 vectoratomic 
-veeva-systems 
+veeva-systems veeva-systems.png
 velmie 
 veracitysoftwareinc 
 vercel 
@@ -879,11 +879,11 @@ vestiaireco
 viasat 
 victoriametrics 
 videoamp 
-vidsy 
+vidsy Vidsy.png
 vinted 
 viodotcom 
 visa 
-vitalbio 
+vitalbio  vitalbio.png
 vividmoney 
 vodeno 
 vois 
@@ -924,7 +924,7 @@ yum-brands
 yunopay 
 zalando 
 zalopay 
-zama-ai 
+zama-ai zama-ai.png
 zelis 
 zeller 
 zendesk 
@@ -935,3 +935,4 @@ zoom
 zscaler 
 zubale 
 zurich-instruments-ag
+thought-machine thought-machine.png
