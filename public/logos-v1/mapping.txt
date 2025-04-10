@@ -17,7 +17,7 @@ about-you
 acronis 
 activeprospect ActiveProspect.png
 actyx 
-adform 
+adform adform.png
 adjoe adjoe.png
 adtran 
 adverty 
@@ -40,7 +40,7 @@ amedia-as
 american-airlines 
 american-express 
 amoamoamo 
-amuse.io 
+amuse.io amuseio.png
 anaplan anaplan.png
 andurilindustries  andurilindustries.png
 anixe-polska-sp--z-o-o- 
@@ -66,7 +66,7 @@ arm
 armadaai armadaai.png
 ascendion 
 ashley-furniture-industries 
-aspire-software 
+aspire-software aspire-software.png
 assembledhq assembledhq.png
 assertive-yield 
 asset-reality 
@@ -80,9 +80,9 @@ australian-broadcasting-corporation
 autodesk 
 autodoc 
 automox 
-avathonai 
+avathonai avathonai.png
 avetta 
-aviatrix-systems 
+aviatrix-systems aviatrix-systems.png
 axis-communications 
 axpo-group 
 ayloservices 
@@ -148,12 +148,12 @@ cheesecake-labs
 chef-software 
 chep 
 chime-card 
-cho-tot 
+cho-tot cho-tot.png
 cimri 
 cinemo 
 circles1 circles1.png
 circuitknowledge 
-cisco 
+cisco cisco.png
 citi 
 cj-express-group 
 clearscore 
@@ -166,7 +166,7 @@ clockwork-labs
 cloudflare 
 cloudlinux 
 cloudwalk-inc 
-cloudwick 
+cloudwick cloudwick.png
 cmrad 
 coalitioninc 
 cockroach-labs 
@@ -179,7 +179,7 @@ coingate
 collabera 
 comcast 
 commercetools 
-commonwealthbank 
+commonwealthbank commonwealthbank.png
 communitydotcom 
 compassinc 
 consortgroup 
@@ -302,9 +302,9 @@ fireandemergencynz
 firebolt 
 fireworkhq 
 firo-solutions 
-firstbase-io 
+firstbase-io firstbase-io.png
 firstbatchai 
-fis 
+fis fis.png
 fiserv 
 fiskaly 
 flatpeak 
@@ -330,7 +330,7 @@ freeformfuture
 freewheel 
 fubotv 
 fullinfo 
-funnel-io 
+funnel-io funnel-io.png
 future-research-inc 
 g-core 
 gamingtec 
@@ -358,7 +358,7 @@ go-teleport
 gocardless 
 godaddy 
 goflink 
-goldman-sachs 
+goldman-sachs goldman-sachs.png
 google 
 gorillalogic 
 gr8-tech 
@@ -391,10 +391,10 @@ hello-stake hello-stake.png
 hellofresh 
 helsing 
 here 
-hewlett-packard-enterprise 
+hewlett-packard-enterprise hewlett.png
 hiive 
 hinge-app 
-holidaycheck-ag 
+holidaycheck-ag HolidayCheck.png
 home24 
 hootsuite 
 hornetsecurity 
@@ -411,19 +411,19 @@ icapital-network-inc
 idemiagroup 
 idt 
 ifs IFS.png
-ikea 
+ikea ikea.png
 immunant 
 imperva 
 impossiblecloud 
 influ2 
 influxdb 
-infoblox 
+infoblox infoblox.png
 infolob-global 
 infomatics-corp 
 ing 
 integer-32-llc 
 inviatravelgermany 
-ionos 
+ionos ionos.png
 ipsos 
 isovalent 
 jack-henry 
@@ -463,21 +463,21 @@ lemfi
 lenskart-com 
 level-all 
 levelhome 
-lexia-learning-systems 
+lexia-learning-systems lexia.png
 lexisnexis-risk-solutions 
 liebherr 
 lightspeed-systems lightspeed-systems.png
 lightspeedcommerce 
 limango-gmbh 
 limango-sp-z-o-o- 
-lingopal-ai 
+lingopal-ai Lingopal-ai.png
 linkedin 
 littlelives 
 lloyds-banking-group 
 loblaw-companies-limited 
 los-alamos-national-laboratory 
 lotusretails 
-lucidmotors 
+lucidmotors lucidmotors.png
 lumentechnologies 
 luminovo  luminovo.png
 lytxinc 
@@ -486,7 +486,7 @@ macrohealth
 maersk-group 
 magicmotorsport 
 magnite 
-mail-step 
+mail-step mailstep.png
 makropro 
 marbill-technologies 
 markitech-ai 
@@ -507,7 +507,7 @@ microsoft
 millennium-partners 
 mimecast 
 mindera-world 
-mindrift-ai 
+mindrift-ai Mindrift.png
 miquido 
 miraclesoft 
 mirantis 
@@ -522,7 +522,7 @@ mongodbinc
 monzo-bank 
 moodys-corporation 
 morgan-stanley 
-motive-inc 
+motive-inc motive.png
 motorolasolutions 
 moveworksai 
 mozilla-corporation 
@@ -533,28 +533,28 @@ mycafu
 namecheap-inc 
 napier 
 nasdaq 
-natwest-group 
+natwest-group natwest-group.png
 nbcuniversal-inc- 
 ncratleos 
-ncrvoyix 
+ncrvoyix ncrvoyix.png
 nebius 
 nelly-solutions 
 neo4j 
 net-health-systems-inc- 
 net2phone 
 netapp 
-netflix 
+netflix netflix.png
 netlify 
-netscribes 
+netscribes netscribes.png
 network-optix 
 new-relic-inc- 
 new-work-se 
 nexos-ai 
 nice-systems 
 nico-lab 
-nielseniq 
+nielseniq nielseniq.png
 nightfall-ai 
-nike 
+nike nike.png
 nine-entertainment-co. 
 ninjatrader-group-llc 
 nn-group 
@@ -598,7 +598,7 @@ pagonxt
 palantir-technologies 
 palo-alto-networks 
 paltafamily 
-panasonic 
+panasonic panasonic.png
 paritytech 
 pavenow 
 pay-retailers 
@@ -628,7 +628,7 @@ preciselydata
 press-ganey-associates 
 prezi 
 priceline-com 
-prioritysoftware 
+prioritysoftware prioritysoftware.png
 prisma-io 
 prize-picks 
 proofpoint 
@@ -640,7 +640,7 @@ purestorage
 qad 
 qinshift 
 qlik 
-qnx 
+qnx qnx.png
 qohash 
 qonto 
 quadcodecareer 
@@ -664,7 +664,7 @@ readdle
 readytotouch 
 realcryptape 
 recurly 
-red-hat 
+red-hat redhat.png
 red-iron-team 
 red-sift 
 reddit-com 
@@ -676,7 +676,7 @@ remitly
 reward-gateway 
 rhebo 
 rialtic-io 
-ringcentral 
+ringcentral ringcentral.png
 ringover 
 riskified 
 rivian-and-vw-group-technologies rivian_and_vw.png
@@ -718,7 +718,7 @@ shopee
 shopware-ag shopware-ag.png
 shuttle-yc 
 siemens 
-simulmedia 
+simulmedia Simulmedia.png
 sinch 
 singlestore 
 sixt 
@@ -730,7 +730,7 @@ skyworks-solutions-inc
 slowtec 
 smartrentdotcom 
 smartthings 
-smava 
+smava  smava.png
 smc 
 smg-marketplace 
 smithrx 
@@ -739,7 +739,7 @@ snips
 snyk 
 social-discovery-group 
 solana-foundation 
-solariscompany 
+solariscompany solariscompany.png
 solo.io 
 sonatus 
 sonicwall 
@@ -771,14 +771,14 @@ statista
 stockbit 
 stoke-space stoke-space.png
 stonebranch 
-storage-rentals-america 
+storage-rentals-america storage-rentals.png
 stord  stord.png
 strangebee 
 stratascale-llc 
 stripe 
 strongcompute strongcompute.png
 strongdm 
-stylitics 
+stylitics stylitics.png
 sumup 
 sunasterisk 
 superindo 
@@ -790,7 +790,7 @@ swish-analytics
 swiss-post 
 swissborg 
 syndica-io 
-synitidata 
+synitidata synitidata.png
 synopsys 
 sysdig 
 system76 
@@ -815,7 +815,7 @@ teramindco
 tesla-motors 
 teya-global 
 thatgamecompany 
-the-odp-corporation 
+the-odp-corporation the-odp.png
 the-walt-disney-company 
 thenu 
 theopentag 
@@ -864,13 +864,13 @@ upvest
 us-bank 
 usehatchapp 
 utilitywarehouse 
-valsoft-corporation 
+valsoft-corporation valsoft-corporation.png
 varonis 
 vaytechnology 
-veact 
+veact veact.png
 vectoratomic 
 veeva-systems veeva-systems.png
-velmie 
+velmie Velmie.png
 veracitysoftwareinc 
 vercel 
 versioneye 
@@ -886,19 +886,19 @@ visa
 vitalbio  vitalbio.png
 vividmoney 
 vodeno 
-vois 
+vois vois.png
 volkswagen-digital-solutions 
 voltus-inc. 
 vonage 
 voodoo.io 
 vustheenglishcenter 
 walmart 
-walmartdataventures 
+walmartdataventures walmartdataventures.png
 wargaming-net 
-warner-bros-discovery 
+warner-bros-discovery warner-bros.png
 waystar 
 we-are-venatus 
-wearegcash 
+wearegcash GCash.png
 wearemntn 
 wearevisionai 
 weaviate-io 
@@ -936,3 +936,4 @@ zscaler
 zubale 
 zurich-instruments-ag
 thought-machine thought-machine.png
+occ occ.png
