@@ -822,6 +822,12 @@ var (
 		"stord":                               820, // Stord
 		"luminovo":                            821, // Luminovo
 		"thought-machine":                     822, // Thought Machine
+		"kantar":                              823, // Kantar
+		"tubia":                               824, // Tubia
+		"verkada":                             825, // Verkada
+		"synthflowai":                         826, // Synthflow AI
+		"we-are-fyst":                         827, // FYST
+		"letgo":                               828, // letgo
 
 	}
 )

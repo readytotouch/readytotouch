@@ -1618,17 +1618,7 @@ func companiesPart12() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
-							WithSalary:           false,
-							Remote:               false,
-						},
-					},
+					Vacancies:               []domain.Vacancy{},
 				},
 				domain.Rust:    {},
 				domain.Zig:     {},
@@ -1761,7 +1751,7 @@ func companiesPart12() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Tubia is a platform that leverages a robust collection of over 19,000 games to enhance user engagement, attract new visitors, and increase profits for portals, websites, and media publishers",
-			Industries:       []domain.Industry{
+			Industries: []domain.Industry{
 				domain.IndustryEntertainment,
 			},
 		},
@@ -1944,7 +1934,7 @@ func companiesPart12() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Payment solution",
-			Industries:       []domain.Industry{
+			Industries: []domain.Industry{
 				domain.IndustryFinTech,
 			},
 		},
@@ -2005,248 +1995,8 @@ func companiesPart12() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Platform for buying and selling second-hand items",
-			Industries:       []domain.Industry{
+			Industries: []domain.Industry{
 				domain.IndustryECommerce,
-			},
-		},
-		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "",
-			Website: "",
-			Careers: "",
-			About:   "",
-			Blog:    "",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
-			},
-			BlindProfile: domain.BlindProfile{
-				Alias: "",
-			},
-			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-			},
-			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
-			},
-			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
-							WithSalary:           false,
-							Remote:               false,
-						},
-					},
-				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-			ShortDescription: "",
-			Industries:       []domain.Industry{
-				// NOP
-			},
-		},
-		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "",
-			Website: "",
-			Careers: "",
-			About:   "",
-			Blog:    "",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
-			},
-			BlindProfile: domain.BlindProfile{
-				Alias: "",
-			},
-			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-			},
-			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
-			},
-			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
-							WithSalary:           false,
-							Remote:               false,
-						},
-					},
-				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-			ShortDescription: "",
-			Industries:       []domain.Industry{
-				// NOP
-			},
-		},
-		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "",
-			Website: "",
-			Careers: "",
-			About:   "",
-			Blog:    "",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
-			},
-			BlindProfile: domain.BlindProfile{
-				Alias: "",
-			},
-			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-			},
-			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
-			},
-			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
-							WithSalary:           false,
-							Remote:               false,
-						},
-					},
-				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-			ShortDescription: "",
-			Industries:       []domain.Industry{
-				// NOP
-			},
-		},
-		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "",
-			Website: "",
-			Careers: "",
-			About:   "",
-			Blog:    "",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
-			},
-			BlindProfile: domain.BlindProfile{
-				Alias: "",
-			},
-			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-			},
-			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
-			},
-			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
-							WithSalary:           false,
-							Remote:               false,
-						},
-					},
-				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-			ShortDescription: "",
-			Industries:       []domain.Industry{
-				// NOP
 			},
 		},
 
