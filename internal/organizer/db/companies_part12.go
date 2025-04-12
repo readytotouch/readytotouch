@@ -2002,18 +2002,19 @@ func companiesPart12() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Daftcode",
+			Website: "https://daftcode.pl/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
+				ID:                5055428,
+				IDs:               nil,
+				Alias:             "daftcode-sp-z-o-o-",
+				Name:              "Daftcode",
+				Followers:         "8K",
+				Employees:         "51-200",
+				AssociatedMembers: "40",
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -2037,11 +2038,11 @@ func companiesPart12() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Middle/Senior Golang Developer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4204597545/",
+							Date:                 mustDate("2025-04-10"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2054,7 +2055,7 @@ func companiesPart12() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "Polish venture builder company",
 			Industries:       []domain.Industry{
 				// NOP
 			},
