@@ -1707,18 +1707,19 @@ func companiesPart12() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Tubia",
+			Website: "https://tubia.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
+				ID:                101248841,
+				IDs:               nil,
+				Alias:             "tubia",
+				Name:              "Tubia",
+				Followers:         "1K",
+				Employees:         "51-200",
+				AssociatedMembers: "17",
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -1742,13 +1743,13 @@ func companiesPart12() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Golang Developer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4206003029/",
+							Date:                 mustDate("2025-04-11"),
 							WithSalary:           false,
-							Remote:               false,
+							Remote:               true,
 						},
 					},
 				},
@@ -1759,9 +1760,9 @@ func companiesPart12() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "Tubia is a platform that leverages a robust collection of over 19,000 games to enhance user engagement, attract new visitors, and increase profits for portals, websites, and media publishers",
 			Industries:       []domain.Industry{
-				// NOP
+				domain.IndustryEntertainment,
 			},
 		},
 		{
