@@ -65,7 +65,7 @@ function salary() {
 }
 
 function date() {
-    const $elements = document.querySelectorAll('.job-details-jobs-unified-top-card__primary-description-container span');
+    const $elements = document.querySelectorAll(".job-details-jobs-unified-top-card__primary-description-container span");
 
     for (const $element of $elements) {
         const publishedAt = $element.textContent.trim().toLowerCase();
@@ -77,7 +77,7 @@ function date() {
             return new Intl.DateTimeFormat("en-CA").format(past);
         }
 
-        const matchHours = publishedAt.match(/^(\d) hours ago$/);
+        const matchHours = publishedAt.match(/^(\d+) hours ago$/);
         if (matchHours) {
             const past = new Date();
             past.setHours(past.getHours() - parseInt(matchHours[1], 10));
@@ -91,7 +91,7 @@ function date() {
             return new Intl.DateTimeFormat("en-CA").format(yesterday);
         }
 
-        const matchDays = publishedAt.match(/^(\d) days ago$/);
+        const matchDays = publishedAt.match(/^(\d+) days ago$/);
         if (matchDays) {
             const past = new Date();
             past.setDate(past.getDate() - parseInt(matchDays[1], 10));
@@ -105,7 +105,7 @@ function date() {
             return new Intl.DateTimeFormat("en-CA").format(past);
         }
 
-        const matchWeeks = publishedAt.match(/^(\d) weeks ago$/);
+        const matchWeeks = publishedAt.match(/^(\d+) weeks ago$/);
         if (matchWeeks) {
             const past = new Date();
             past.setDate(past.getDate() - 7 * parseInt(matchWeeks[1], 10));
@@ -119,7 +119,7 @@ function date() {
             return new Intl.DateTimeFormat("en-CA").format(past);
         }
 
-        const matchMonths = publishedAt.match(/^(\d) months ago$/);
+        const matchMonths = publishedAt.match(/^(\d+) months ago$/);
         if (matchMonths) {
             const past = new Date();
             past.setMonth(past.getMonth() - parseInt(matchMonths[1], 10));
