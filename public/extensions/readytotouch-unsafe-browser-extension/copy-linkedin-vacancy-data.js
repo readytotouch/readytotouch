@@ -70,8 +70,18 @@ function date() {
     for (const $element of $elements) {
         const publishedAt = $element.textContent.trim().toLowerCase();
 
-        if (publishedAt.includes("hour ago") || publishedAt.includes("hours ago")) {
-            return new Intl.DateTimeFormat("en-CA").format(new Date());
+        if (publishedAt.includes("hour ago")) {
+            const past = new Date();
+            past.setHours(past.getHours() - 1);
+
+            return new Intl.DateTimeFormat("en-CA").format(past);
+        }
+
+        const matchHours = publishedAt.match(/^(\d) hours ago$/);
+        if (matchHours) {
+            const past = new Date();
+            past.setHours(past.getHours() - parseInt(matchHours[1], 10));
+            return new Intl.DateTimeFormat("en-CA").format(past);
         }
 
         if (publishedAt.includes("1 day ago")) {
