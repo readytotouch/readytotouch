@@ -1380,6 +1380,15 @@ func companiesPart9() []domain.CompanyProfile {
 							WithSalary:           true,                   // $110,000 - $130,000 per year
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4205310300/",
+							Date:                 mustDate("2025-04-10"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},

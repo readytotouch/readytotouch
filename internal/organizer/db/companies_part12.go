@@ -1207,6 +1207,15 @@ func companiesPart12() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Full Stack Developer — PHP/ Symfony/ Vue.js/ Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4205329270/",
+							Date:                 mustDate("2025-04-10"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -2063,19 +2072,20 @@ func companiesPart12() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Scorebuddy",
+			Website: "https://www.scorebuddyqa.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                2587098,
+				IDs:               nil,
+				Alias:             "scorebuddy",
+				Name:              "Scorebuddy",
+				Followers:         "5K",
+				Employees:         "51-200",
+				AssociatedMembers: "48",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -2098,11 +2108,11 @@ func companiesPart12() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Senior Golang Developer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4205812062/",
+							Date:                 mustDate("2025-04-11"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2115,7 +2125,7 @@ func companiesPart12() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "Contact center quality assurance (QA) solution",
 			Industries:       []domain.Industry{
 				// NOP
 			},
