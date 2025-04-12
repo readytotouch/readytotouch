@@ -4299,7 +4299,6 @@ func companiesPart1() []domain.CompanyProfile {
 		},
 
 		// Tech | Buf
-		// Template
 		{
 			ID:      0,  // system
 			Type:    "", // system

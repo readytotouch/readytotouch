@@ -1168,6 +1168,9 @@ func companiesPart11() []domain.CompanyProfile {
 		//		domain.Haskell: {},
 		//	},
 		//	ShortDescription: "",
+		//	Industries:       []domain.Industry{
+		//		// NOP
+		//	},
 		//},
 	}
 }
