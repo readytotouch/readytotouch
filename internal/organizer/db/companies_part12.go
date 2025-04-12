@@ -1890,18 +1890,19 @@ func companiesPart12() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "FYST",
+			Website: "https://fyst.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
+				ID:                82992816,
+				IDs:               nil,
+				Alias:             "we-are-fyst",
+				Name:              "FYST",
+				Followers:         "28K",
+				Employees:         "51-200",
+				AssociatedMembers: "73",
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -1925,13 +1926,13 @@ func companiesPart12() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Senior Go Developer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4201048109/",
+							Date:                 mustDate("2025-04-05"),
 							WithSalary:           false,
-							Remote:               false,
+							Remote:               true,
 						},
 					},
 				},
@@ -1942,27 +1943,28 @@ func companiesPart12() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "Payment solution",
 			Industries:       []domain.Industry{
-				// NOP
+				domain.IndustryFinTech,
 			},
 		},
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "letgo",
+			Website: "https://www.letgo.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                10159884,
+				IDs:               nil,
+				Alias:             "letgo",
+				Name:              "letgo",
+				Followers:         "47K",
+				Employees:         "201-500",
+				AssociatedMembers: "306",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -1985,11 +1987,11 @@ func companiesPart12() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Senior Go Engineer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4204378000/",
+							Date:                 mustDate("2025-04-08"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2002,9 +2004,9 @@ func companiesPart12() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "Platform for buying and selling second-hand items",
 			Industries:       []domain.Industry{
-				// NOP
+				domain.IndustryECommerce,
 			},
 		},
 		{
