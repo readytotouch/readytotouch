@@ -20,8 +20,8 @@ func main() {
 	)
 
 	/*
-		review("./public/logos/original/")
-		review("./public/logos/adapted/")
+		review("./public/logos-v0/original/")
+		review("./public/logos-v0/adapted/")
 	*/
 
 	prepareLogosV1Mapping(companies)

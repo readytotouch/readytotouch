@@ -235,7 +235,7 @@ func logo(s string) string {
 		return "/assets/images/pages/common-images/unknown.svg"
 	}
 
-	return "/assets/unstable/logos/" + s
+	return "/assets/unstable/logos-v0/" + s
 }
 
 var (
