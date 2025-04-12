@@ -1768,19 +1768,20 @@ func companiesPart12() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
-			Careers: "",
+			Name:    "Verkada",
+			Website: "https://www.verkada.com/",
+			Careers: "https://www.verkada.com/careers/",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                12699415,
+				IDs:               nil,
+				Alias:             "verkada",
+				Name:              "Verkada",
+				Followers:         "165K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "2,421",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -1803,11 +1804,11 @@ func companiesPart12() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
-							ShortDescription:     "",
+							Title:                "Go Software Engineer",
+							ShortDescription:     "Develop and maintain Go firmware for embedded devices with focus on performance and security",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4205197888/",
+							Date:                 mustDate("2025-04-10"),
 							WithSalary:           false,
 							Remote:               false,
 						},
