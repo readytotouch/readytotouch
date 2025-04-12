@@ -1829,18 +1829,19 @@ func companiesPart12() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Synthflow AI",
+			Website: "https://synthflow.ai/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
+				ID:                98202322,
+				IDs:               nil,
+				Alias:             "synthflowai",
+				Name:              "Synthflow AI",
+				Followers:         "7K",
+				Employees:         "11-50",
+				AssociatedMembers: "43",
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -1864,13 +1865,13 @@ func companiesPart12() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Senior Go Software Engineer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4205747084/",
+							Date:                 mustDate("2025-04-10"),
 							WithSalary:           false,
-							Remote:               false,
+							Remote:               true,
 						},
 					},
 				},
@@ -1881,7 +1882,7 @@ func companiesPart12() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "AI Agents",
 			Industries:       []domain.Industry{
 				// NOP
 			},
