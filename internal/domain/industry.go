@@ -75,4 +75,8 @@ var (
 		Alias: "proptech",
 		Name:  "PropTech",
 	}
+	IndustryInsurTech = Industry{
+		Alias: "insurtech",
+		Name:  "InsurTech",
+	}
 )
