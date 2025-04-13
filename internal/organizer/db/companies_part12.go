@@ -2194,18 +2194,19 @@ func companiesPart12() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "uDelta",
+			Website: "https://udelta.io/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
+				ID:                101896582,
+				IDs:               nil,
+				Alias:             "udelta",
+				Name:              "uDelta",
+				Followers:         "7K",
+				Employees:         "11-50",
+				AssociatedMembers: "3",
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -2229,13 +2230,13 @@ func companiesPart12() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Senior Go Developer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4202973976/",
+							Date:                 mustDate("2025-04-08"),
 							WithSalary:           false,
-							Remote:               false,
+							Remote:               true,
 						},
 					},
 				},
@@ -2246,7 +2247,7 @@ func companiesPart12() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "Platform for compensation management",
 			Industries:       []domain.Industry{
 				// NOP
 			},
