@@ -2704,19 +2704,20 @@ func companiesPart12() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Corsearch",
+			Website: "https://corsearch.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                2593860,
+				IDs:               []int{2345334, 2593860, 3252922, 13196073, 15225899},
+				Alias:             "corsearchinc",
+				Name:              "Corsearch",
+				Followers:         "35K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "1,642",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -2742,11 +2743,11 @@ func companiesPart12() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Senior Scala Developer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4160578820/",
+							Date:                 mustDate("2025-04-11"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2756,7 +2757,7 @@ func companiesPart12() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "Intelligent Trademark & Brand Protection Solutions",
 			Industries:       []domain.Industry{
 				// NOP
 			},
