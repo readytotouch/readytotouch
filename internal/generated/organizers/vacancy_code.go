@@ -618,6 +618,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4050919710/":                                                               500,  // australian-broadcasting-corporation
 		"https://www.linkedin.com/jobs/view/4042171556/":                                                               35,   // go-nitro
 		"https://www.linkedin.com/jobs/view/4137581403/":                                                               694,  // go-nitro
+		"https://www.linkedin.com/jobs/view/4144416205/":                                                               1524, // go-nitro
 		"https://www.linkedin.com/jobs/view/4068403021/":                                                               36,   // appodeal
 		"https://www.linkedin.com/jobs/view/4068296805/":                                                               37,   // appodeal
 		"https://www.linkedin.com/jobs/view/4048262224/":                                                               501,  // talamobile
@@ -1527,6 +1528,11 @@ var (
 		"https://www.linkedin.com/jobs/view/4204229878/":                                                               1521, // beat81
 		"https://www.linkedin.com/jobs/view/4204059007/":                                                               1522, // cars-commerce
 		"https://www.linkedin.com/jobs/view/4205898506/":                                                               1523, // loblaw-digital
+		"https://www.linkedin.com/jobs/view/4169971174/":                                                               1525, // claritev
+		"https://www.linkedin.com/jobs/view/4204672355/":                                                               1526, // duffelhq
+		"https://www.linkedin.com/jobs/view/4190979349/":                                                               1527, // fossa
+		"https://www.linkedin.com/jobs/view/4144858808/":                                                               1528, // london-stock-exchange-group
+		"https://www.linkedin.com/jobs/view/4206647185/":                                                               1529, // getnetworld
 
 	}
 )
