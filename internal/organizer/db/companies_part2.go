@@ -8721,7 +8721,7 @@ func companiesPart2() []domain.CompanyProfile {
 							ShortDescription:     "TDD & AWS",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4121195474/",
-							Date:                 mustDate("2025-02-28"), // mustDate("2025-02-07"),
+							Date:                 mustDate("2025-04-13"), // mustDate("2025-02-28"), // mustDate("2025-02-07"),
 							WithSalary:           false,
 							Remote:               false,
 						},
