@@ -2521,18 +2521,19 @@ func companiesPart12() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Wasmer",
+			Website: "https://wasmer.io/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
+				ID:                18946055,
+				IDs:               nil,
+				Alias:             "wasmerio",
+				Name:              "Wasmer",
+				Followers:         "1K",
+				Employees:         "2-10",
+				AssociatedMembers: "9",
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -2557,11 +2558,11 @@ func companiesPart12() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Rust – Software Engineer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4204685114/",
+							Date:                 mustDate("2025-04-11"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2574,8 +2575,8 @@ func companiesPart12() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
-			Industries:       []domain.Industry{
-				// NOP
+			Industries: []domain.Industry{
+				domain.IndustryCloudComputing,
 			},
 		},
 		{
