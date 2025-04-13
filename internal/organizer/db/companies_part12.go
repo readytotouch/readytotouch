@@ -2900,19 +2900,20 @@ func companiesPart12() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "BEAT81",
+			Website: "https://www.beat81.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                18363575,
+				IDs:               nil,
+				Alias:             "beat81",
+				Name:              "BEAT81",
+				Followers:         "6K",
+				Employees:         "51-200",
+				AssociatedMembers: "251",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -2939,11 +2940,11 @@ func companiesPart12() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Senior Backend Engineer – Elixir",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4204229878/",
+							Date:                 mustDate("2025-04-09"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2952,7 +2953,7 @@ func companiesPart12() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "HIIT training",
 			Industries:       []domain.Industry{
 				// NOP
 			},
