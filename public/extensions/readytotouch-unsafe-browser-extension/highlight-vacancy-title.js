@@ -18,7 +18,7 @@ function fetchVacancyList() {
 
 function highlightVacancyTitle() {
     if (vacanciesCache === null) {
-        console.error("Vacancy list is not loaded yet.");
+        console.log("Vacancy list is not loaded yet.");
 
         return;
     }
@@ -26,10 +26,12 @@ function highlightVacancyTitle() {
     const $vacancyTitle = document.querySelector("h1");
 
     if ($vacancyTitle === null) {
-        console.error("Vacancy title element not found.");
+        console.log("Vacancy title element not found.");
 
         return;
     }
+
+    searchLinkedInCompanyProfile($vacancyTitle.querySelector("a"))
 
     const url = window.location.origin + window.location.pathname;
 
@@ -40,6 +42,14 @@ function highlightVacancyTitle() {
             return;
         }
     }
+}
+
+function searchLinkedInCompanyProfile($company) {
+    if ($company === null) {
+        return;
+    }
+
+    $company.href = `https://www.google.com/search?q=site:linkedin.com/company/ ${$company.textContent.trim()}`;
 }
 
 function initializeVacancyCache() {

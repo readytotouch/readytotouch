@@ -3144,19 +3144,20 @@ func companiesPart12() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Duffel",
+			Website: "https://duffel.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                27115109,
+				IDs:               nil,
+				Alias:             "duffelhq",
+				Name:              "Duffel",
+				Followers:         "8K",
+				Employees:         "51-200",
+				AssociatedMembers: "56",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -3175,28 +3176,28 @@ func companiesPart12() []domain.CompanyProfile {
 				Alias: "",
 			},
 			Languages: domain.Languages{
-				domain.Go:   {},
-				domain.Rust: {},
-				domain.Zig:  {},
-				domain.Scala: {
+				domain.Go:    {},
+				domain.Rust:  {},
+				domain.Zig:   {},
+				domain.Scala: {},
+				domain.Elixir: {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							Title:                "Software Engineer, Backend",
+							ShortDescription:     "The tools used on the team include Elixir, Phoenix, Kubernetes and Google Cloud Platform",
+							SwitchingOpportunity: "An interest in working with Elixir, this is what we mostly work with",
+							URL:                  "https://www.linkedin.com/jobs/view/4204672355/",
+							Date:                 mustDate("2025-04-10"),
 							WithSalary:           false,
 							Remote:               false,
 						},
 					},
 				},
-				domain.Elixir:  {},
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "The complete toolkit for selling travel online",
 			Industries:       []domain.Industry{
 				// NOP
 			},
@@ -3204,19 +3205,20 @@ func companiesPart12() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "FOSSA",
+			Website: "https://fossa.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                17957915,
+				IDs:               nil,
+				Alias:             "fossa",
+				Name:              "FOSSA",
+				Followers:         "7K",
+				Employees:         "51-200",
+				AssociatedMembers: "64",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -3235,28 +3237,28 @@ func companiesPart12() []domain.CompanyProfile {
 				Alias: "",
 			},
 			Languages: domain.Languages{
-				domain.Go:   {},
-				domain.Rust: {},
-				domain.Zig:  {},
-				domain.Scala: {
+				domain.Go: {},
+				domain.Rust: {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
-							ShortDescription:     "",
+							Title:                "Senior Software Engineer",
+							ShortDescription:     "Work in a variety of languages including Rust, Go, TypeScript, and Haskell",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4190979349/",
+							Date:                 mustDate("2025-03-30"),
 							WithSalary:           false,
-							Remote:               false,
+							Remote:               true,
 						},
 					},
 				},
+				domain.Zig:     {},
+				domain.Scala:   {},
 				domain.Elixir:  {},
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "SBOM and software supply chain risk management platform",
 			Industries:       []domain.Industry{
 				// NOP
 			},
