@@ -10400,6 +10400,15 @@ func companiesPart2() []domain.CompanyProfile {
 							WithSalary:           true,                   // $144.000 - $200.000 per year
 							Remote:               false,
 						},
+						{
+							Title:                "Elixir Staff Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4187506903/",
+							Date:                 mustDate("2025-04-12"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Clojure: {},
