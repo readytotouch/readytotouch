@@ -58,7 +58,7 @@ func review(dir string) {
 		imageExistsMap[fileName] = alias
 	}
 
-	aliasImageMap, err := fetchAliasImageMap("./public/logos/mapping.txt")
+	aliasImageMap, err := fetchAliasImageMap("./public/logos-v0/mapping.txt")
 	if err != nil {
 		panic(err)
 	}
