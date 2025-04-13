@@ -2338,19 +2338,20 @@ func companiesPart12() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Disney Entertainment",
+			Website: "https://www.dgepress.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                1299,
+				IDs:               nil,
+				Alias:             "disney-entertainment",
+				Name:              "Disney Entertainment",
+				Followers:         "483K",
+				Employees:         "5K-10K",
+				AssociatedMembers: "4,916",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -2374,11 +2375,11 @@ func companiesPart12() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Software Engineer II – C++/Rust",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4207804796/",
+							Date:                 mustDate("2025-04-12"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2391,8 +2392,8 @@ func companiesPart12() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
-			Industries:       []domain.Industry{
-				// NOP
+			Industries: []domain.Industry{
+				domain.IndustryEntertainment,
 			},
 		},
 		{
