@@ -2765,19 +2765,20 @@ func companiesPart12() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Peerspace",
+			Website: "https://www.peerspace.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                3542206,
+				IDs:               nil,
+				Alias:             "peerspace",
+				Name:              "Peerspace",
+				Followers:         "10K",
+				Employees:         "51-200",
+				AssociatedMembers: "105",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -2796,28 +2797,28 @@ func companiesPart12() []domain.CompanyProfile {
 				Alias: "",
 			},
 			Languages: domain.Languages{
-				domain.Go:   {},
-				domain.Rust: {},
-				domain.Zig:  {},
-				domain.Scala: {
+				domain.Go:     {},
+				domain.Rust:   {},
+				domain.Zig:    {},
+				domain.Scala:  {},
+				domain.Elixir: {},
+				domain.Clojure: {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Senior Clojure Back-End Engineer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4204502807/",
+							Date:                 mustDate("2025-04-12"),
 							WithSalary:           false,
-							Remote:               false,
+							Remote:               true,
 						},
 					},
 				},
-				domain.Elixir:  {},
-				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "Marketplace for hourly venue rentals for meetings, productions, and events",
 			Industries:       []domain.Industry{
 				// NOP
 			},
