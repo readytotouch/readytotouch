@@ -3327,18 +3327,19 @@ func companiesPart12() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Getnet",
+			Website: "https://www.getnetworld.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
+				ID:                76159171,
+				IDs:               nil,
+				Alias:             "getnetworld",
+				Name:              "Getnet",
+				Followers:         "372K",
+				Employees:         "5K-10K",
+				AssociatedMembers: "3,173",
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -3365,13 +3366,13 @@ func companiesPart12() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Software Engineer (Scala/Spark)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4206647185/",
+							Date:                 mustDate("2025-04-11"),
 							WithSalary:           false,
-							Remote:               false,
+							Remote:               true,
 						},
 					},
 				},
@@ -3379,9 +3380,9 @@ func companiesPart12() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
-			Industries:       []domain.Industry{
-				// NOP
+			ShortDescription: "Customised payment solutions for merchants",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
 			},
 		},
 		{
