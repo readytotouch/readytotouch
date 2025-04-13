@@ -2670,6 +2670,15 @@ func companiesPart4() []domain.CompanyProfile {
 							WithSalary:           true,                   // starting from 3000 up to 6000 Euro gross monthly
 							Remote:               false,
 						},
+						{
+							Title:                "Backend Developer (Go)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4206591970/",
+							Date:                 mustDate("2025-04-11"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},

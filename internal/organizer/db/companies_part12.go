@@ -2309,7 +2309,7 @@ func companiesPart12() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "We make virtual fences for easier livestock care, managed grazing, and effortless fencing",
-			Industries:       []domain.Industry{
+			Industries: []domain.Industry{
 				domain.IndustryAgroTech,
 			},
 		},
