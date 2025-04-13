@@ -2643,19 +2643,20 @@ func companiesPart12() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Maropost",
+			Website: "https://www.maropost.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                386756,
+				IDs:               []int{386756, 390673},
+				Alias:             "maropost",
+				Name:              "Maropost",
+				Followers:         "25K",
+				Employees:         "201-500",
+				AssociatedMembers: "356",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -2681,11 +2682,11 @@ func companiesPart12() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Software Engineer (Scala)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4207470731/",
+							Date:                 mustDate("2025-04-12"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2696,8 +2697,8 @@ func companiesPart12() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
-			Industries:       []domain.Industry{
-				// NOP
+			Industries: []domain.Industry{
+				domain.IndustryECommerce,
 			},
 		},
 		{
