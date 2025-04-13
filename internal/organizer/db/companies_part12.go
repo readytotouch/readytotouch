@@ -3022,19 +3022,20 @@ func companiesPart12() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Loblaw Digital",
+			Website: "https://loblawdigital.co/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                9450129,
+				IDs:               nil,
+				Alias:             "loblaw-digital",
+				Name:              "Loblaw Digital",
+				Followers:         "47K",
+				Employees:         "501-1K",
+				AssociatedMembers: "832",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -3061,11 +3062,11 @@ func companiesPart12() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Senior Developer (Elixir)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4205898506/",
+							Date:                 mustDate("2025-04-11"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3075,8 +3076,8 @@ func companiesPart12() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
-			Industries:       []domain.Industry{
-				// NOP
+			Industries: []domain.Industry{
+				domain.IndustryECommerce,
 			},
 		},
 		{
