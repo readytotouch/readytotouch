@@ -845,6 +845,11 @@ var (
 		"beat81":                              843, // BEAT81
 		"cars-commerce":                       844, // Cars Commerce
 		"loblaw-digital":                      845, // Loblaw Digital
+		"claritev":                            846, // Claritev
+		"duffelhq":                            847, // Duffel
+		"fossa":                               848, // FOSSA
+		"london-stock-exchange-group":         849, // LSEG (London Stock Exchange Group)
+		"getnetworld":                         850, // Getnet
 
 	}
 )
