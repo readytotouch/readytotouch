@@ -20,8 +20,8 @@ func main() {
 	)
 
 	/*
-		review("./public/logos/original/")
-		review("./public/logos/adapted/")
+		review("./public/logos-v0/original/")
+		review("./public/logos-v0/adapted/")
 	*/
 
 	prepareLogosV1Mapping(companies)
@@ -58,7 +58,7 @@ func review(dir string) {
 		imageExistsMap[fileName] = alias
 	}
 
-	aliasImageMap, err := fetchAliasImageMap("./public/logos/mapping.txt")
+	aliasImageMap, err := fetchAliasImageMap("./public/logos-v0/mapping.txt")
 	if err != nil {
 		panic(err)
 	}

@@ -394,6 +394,15 @@ func companiesPart3() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Kubernetes Developer (with Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4142503533/",
+							Date:                 mustDate("2025-04-12"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
@@ -3631,7 +3640,7 @@ func companiesPart3() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4144714726/",
-							Date:                 mustDate("2025-03-23"), // mustDate("2025-02-28"),
+							Date:                 mustDate("2025-04-12"), // mustDate("2025-03-23"), // mustDate("2025-02-28"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3841,6 +3850,15 @@ func companiesPart3() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Elixir Software Engineer",
+							ShortDescription:     "Energy Transition",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4209058466/",
+							Date:                 mustDate("2025-04-13"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Clojure: {},
@@ -3848,122 +3866,5 @@ func companiesPart3() []domain.CompanyProfile {
 			},
 			ShortDescription: "An integrated transport and logistics company",
 		},
-
-		// Template short
-		//{
-		//	ID:      0,  // system
-		//	Type:    "", // system
-		//	Name:    "",
-		//	Website: "",
-		//	Careers: "",
-		//	About:   "",
-		//	LinkedInProfile: domain.LinkedInProfile{
-		//		ID:                0,
-		//		Alias:             "",
-		//		Name:              "",
-		//		Followers:         "",
-		//		Employees:         "",
-		//		AssociatedMembers: "",
-		//		Verified:          false,
-		//	},
-		//	GitHubProfile: domain.GitHubProfile{
-		//		Login:    "",
-		//		Verified: false,
-		//	},
-		//	Languages: domain.Languages{
-		//		domain.Go: {
-		//			GitHubRepositoriesCount: 0,
-		//			Vacancies: []domain.Vacancy{
-		//				{
-		//					Title:                "",
-		//					ShortDescription:     "",
-		//					SwitchingOpportunity: "",
-		//					URL:                  "",
-		//					Date:                 mustDate(""),
-		//					WithSalary:           false,
-		//					Remote:               false,
-		//				},
-		//			},
-		//		},
-		//		domain.Rust:    {},
-		//		domain.Zig:     {},
-		//		domain.Scala:   {},
-		//		domain.Elixir:  {},
-		//		domain.Clojure: {},
-		//		domain.Haskell: {},
-		//	},
-		//	ShortDescription: "",
-		//},
-
-		// Template full
-		//{
-		//	ID:      0,  // system
-		//	Type:    "", // system
-		//	Name:    "",
-		//	Website: "",
-		//	Careers: "",
-		//	About:   "",
-		//	Blog:    "",
-		//	LinkedInProfile: domain.LinkedInProfile{
-		//		ID:       0,
-		//		Alias:    "",
-		//		Name:     "",
-		//		Verified: false,
-		//	},
-		//	GitHubProfile: domain.GitHubProfile{
-		//		Login:             "",
-		//		Verified:          false,
-		//	},
-		//	BlindProfile: domain.BlindProfile{
-		//		Alias:       "",
-		//		Employees:   "",
-		//		Salary:      "",
-		//		Reviews:     "",
-		//		ReviewsRate: "",
-		//	},
-		//	LevelsFyiProfile: domain.LevelsFyiProfile{
-		//		Alias:     "",
-		//		Employees: "",
-		//	},
-		//	GlassdoorProfile: domain.GlassdoorProfile{
-		//		OverviewURL: "",
-		//		ReviewsURL:  "",
-		//		Verified:    false,
-		//	},
-		//	IndeedProfile: domain.IndeedProfile{
-		//		Alias: "",
-		//	},
-		//	OttaProfileSlug:   "",
-		//	YouTubeChannelURL: "",
-		//	GoMainLanguage:    false,
-		//	Languages: domain.Languages{
-		//		domain.Go: {
-		//			GitHubRepositoriesCount: 0,
-		//			Vacancies:               []domain.Vacancy{
-		//				{
-		//					Title:            "",
-		//					ShortDescription: "",
-		//					URL:              "",
-		//					Date:             mustDate(""),
-		//				},
-		//			},
-		//		},
-		//		domain.Rust:    {},
-		//		domain.Zig:     {},
-		//		domain.Scala:   {},
-		//		domain.Elixir:  {},
-		//		domain.Clojure: {},
-		//		domain.Haskell: {},
-		//	},
-		//	ShortDescription:          "",
-		//	DealroomURL:               "",
-		//	CrunchbaseURL:             "",
-		//	PitchbookURL:              "",
-		//	YahooFinanceURL:           "",
-		//	GoogleFinanceURL:          "",
-		//	YCombinatorURL:            "",
-		//	Industries:                []domain.Industry{},
-		//	HasEmployeesFromCountries: []domain.Country{},
-		//},
 	}
 }

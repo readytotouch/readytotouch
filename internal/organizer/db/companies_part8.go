@@ -1706,6 +1706,15 @@ func companiesPart8() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Big Data Developer (Scala/Spark)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4185731167/",
+							Date:                 mustDate("2025-04-12"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Elixir:  {},
@@ -2124,9 +2133,22 @@ func companiesPart8() []domain.CompanyProfile {
 				Alias: "",
 			},
 			Languages: domain.Languages{
-				domain.Go:   {},
-				domain.Rust: {},
-				domain.Zig:  {},
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer II (Backend, Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4207846998/",
+							Date:                 mustDate("2025-04-12"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig: {},
 				domain.Scala: {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
@@ -2703,6 +2725,15 @@ func companiesPart8() []domain.CompanyProfile {
 							WithSalary:           true,                   // salary range CAD $100,000 - CAD $150,000
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Software Developer – Scala",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4206309343/",
+							Date:                 mustDate("2025-04-12"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Elixir:  {},
@@ -2780,6 +2811,15 @@ func companiesPart8() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4139695620/",
 							Date:                 mustDate("2025-02-21"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Scala Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4167002255/",
+							Date:                 mustDate("2025-04-09"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3249,13 +3289,22 @@ func companiesPart8() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Engineer II, Reporting and Insights, Scala/Spark",
-							ShortDescription:     "",
+							Title:                "Engineer II, Scala/Spark",
+							ShortDescription:     "Reporting and Insights",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4116388763/",
 							Date:                 mustDate("2025-01-24"),
 							WithSalary:           true, // $95.000 — $135.000 per year
 							Remote:               false,
+						},
+						{
+							Title:                "Senior Data Engineer, Scala",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4143148888/",
+							Date:                 mustDate("2025-04-10"),
+							WithSalary:           true,
+							Remote:               true,
 						},
 					},
 				},
@@ -5765,7 +5814,7 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "Editing Foundations",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4160846209/",
-							Date:                 mustDate("2025-04-05"), // mustDate("2025-03-14"), // mustDate("2025-02-21"),
+							Date:                 mustDate("2025-04-09"), // mustDate("2025-04-05"), // mustDate("2025-03-14"), // mustDate("2025-02-21"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -5837,8 +5886,21 @@ func companiesPart8() []domain.CompanyProfile {
 						},
 					},
 				},
-				domain.Zig:     {},
-				domain.Scala:   {},
+				domain.Zig: {},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer (Backend/ Scala)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4188798669/",
+							Date:                 mustDate("2025-04-10"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
 				domain.Elixir:  {},
 				domain.Clojure: {},
 				domain.Haskell: {},
@@ -6962,7 +7024,7 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4168467917/",
-							Date:                 mustDate("2025-03-27"), // mustDate("2025-02-26"),
+							Date:                 mustDate("2025-04-12"), // mustDate("2025-03-27"), // mustDate("2025-02-26"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -7347,7 +7409,7 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4169557069/",
-							Date:                 mustDate("2025-03-20"), // mustDate("2025-02-22"),
+							Date:                 mustDate("2025-04-12"), // mustDate("2025-03-20"), // mustDate("2025-02-22"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -7358,64 +7420,5 @@ func companiesPart8() []domain.CompanyProfile {
 			},
 			ShortDescription: "British community marketplace for buyers and sellers",
 		},
-
-		// Template
-		//{
-		//	ID:      0,  // system
-		//	Type:    "", // system
-		//	Name:    "",
-		//	Website: "",
-		//	Careers: "",
-		//	About:   "",
-		//	Blog:    "",
-		//	LinkedInProfile: domain.LinkedInProfile{
-		//		ID:                0,
-		//		Alias:             "",
-		//		Name:              "",
-		//		Followers:         "",
-		//		Employees:         "",
-		//		AssociatedMembers: "",
-		//		Verified:          false,
-		//	},
-		//	GitHubProfile: domain.GitHubProfile{
-		//		Login:    "",
-		//		Verified: false,
-		//	},
-		//	BlindProfile: domain.BlindProfile{
-		//		Alias: "",
-		//	},
-		//	LevelsFyiProfile: domain.LevelsFyiProfile{
-		//		Alias: "",
-		//	},
-		//	GlassdoorProfile: domain.GlassdoorProfile{
-		//		OverviewURL: "",
-		//	},
-		//	IndeedProfile: domain.IndeedProfile{
-		//		Alias: "",
-		//	},
-		//	Languages: domain.Languages{
-		//		domain.Go: {
-		//			GitHubRepositoriesCount: 0,
-		//			Vacancies: []domain.Vacancy{
-		//				{
-		//					Title:                "",
-		//					ShortDescription:     "",
-		//					SwitchingOpportunity: "",
-		//					URL:                  "",
-		//					Date:                 mustDate(""),
-		//					WithSalary:           false,
-		//					Remote:               false,
-		//				},
-		//			},
-		//		},
-		//		domain.Rust:    {},
-		//		domain.Zig:     {},
-		//		domain.Scala:   {},
-		//		domain.Elixir:  {},
-		//		domain.Clojure: {},
-		//		domain.Haskell: {},
-		//	},
-		//	ShortDescription: "",
-		//},
 	}
 }

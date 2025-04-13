@@ -828,6 +828,23 @@ var (
 		"synthflowai":                         826, // Synthflow AI
 		"we-are-fyst":                         827, // FYST
 		"letgo":                               828, // letgo
+		"daftcode-sp-z-o-o-":                  829, // Daftcode
+		"scorebuddy":                          830, // Scorebuddy
+		"criteo":                              831, // Criteo
+		"udelta":                              832, // uDelta
+		"monil-virtual-fences":                833, // Monil
+		"disney-entertainment":                834, // Disney Entertainment
+		"collins-aerospace":                   835, // Collins Aerospace
+		"prima-assicurazioni":                 836, // Prima
+		"wasmerio":                            837, // Wasmer
+		"takealot":                            838, // takealot.com
+		"maropost":                            839, // Maropost
+		"corsearchinc":                        840, // Corsearch
+		"peerspace":                           841, // Peerspace
+		"incharge-energy":                     842, // InCharge Energy
+		"beat81":                              843, // BEAT81
+		"cars-commerce":                       844, // Cars Commerce
+		"loblaw-digital":                      845, // Loblaw Digital
 
 	}
 )

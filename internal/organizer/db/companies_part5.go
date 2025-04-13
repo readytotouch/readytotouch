@@ -292,6 +292,15 @@ func companiesPart5() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Software Developer (Java / Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4207002141/",
+							Date:                 mustDate("2025-04-12"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -1578,50 +1587,5 @@ func companiesPart5() []domain.CompanyProfile {
 			},
 			ShortDescription: "American home furnishings manufacturer and retailer",
 		},
-
-		// Template short
-		//{
-		//	ID:      0,  // system
-		//	Type:    "", // system
-		//	Name:    "",
-		//	Website: "",
-		//	Careers: "",
-		//	About:   "",
-		//	LinkedInProfile: domain.LinkedInProfile{
-		//		ID:                0,
-		//		Alias:             "",
-		//		Name:              "",
-		//		Followers:         "",
-		//		Employees:         "",
-		//		AssociatedMembers: "",
-		//		Verified:          false,
-		//	},
-		//	GitHubProfile: domain.GitHubProfile{
-		//		Login:    "",
-		//		Verified: false,
-		//	},
-		//	Languages: domain.Languages{
-		//		domain.Go: {
-		//			GitHubRepositoriesCount: 0,
-		//			Vacancies: []domain.Vacancy{
-		//				{
-		//					Title:                "",
-		//					ShortDescription:     "",
-		//					SwitchingOpportunity: "",
-		//					URL:                  "",
-		//					Date:                 mustDate(""),
-		//					WithSalary:           false,
-		//				},
-		//			},
-		//		},
-		//		domain.Rust:    {},
-		//		domain.Zig:     {},
-		//		domain.Scala:   {},
-		//		domain.Elixir:  {},
-		//		domain.Clojure: {},
-		//		domain.Haskell: {},
-		//	},
-		//	ShortDescription: "",
-		//},
 	}
 }

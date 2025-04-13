@@ -30,6 +30,8 @@ var (
 		domain.IndustrySocialMedia,
 		domain.IndustryEntertainment,
 		domain.IndustryPropTech,
+		domain.IndustryAgroTech,
+		domain.IndustryInsurTech,
 	}
 )
 
@@ -235,7 +237,7 @@ func logo(s string) string {
 		return "/assets/images/pages/common-images/unknown.svg"
 	}
 
-	return "/assets/unstable/logos/" + s
+	return "/assets/unstable/logos-v0/" + s
 }
 
 var (

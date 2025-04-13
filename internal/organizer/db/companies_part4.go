@@ -2670,6 +2670,15 @@ func companiesPart4() []domain.CompanyProfile {
 							WithSalary:           true,                   // starting from 3000 up to 6000 Euro gross monthly
 							Remote:               false,
 						},
+						{
+							Title:                "Backend Developer (Go)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4206591970/",
+							Date:                 mustDate("2025-04-11"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -2795,6 +2804,15 @@ func companiesPart4() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4201773149/",
 							Date:                 mustDate("2025-04-05"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+						{
+							Title:                "Intermediate Backend Software Developer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4207165774/",
+							Date:                 mustDate("2025-04-12"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -4014,50 +4032,5 @@ func companiesPart4() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 		},
-
-		// Template short
-		//{
-		//	ID:      0,  // system
-		//	Type:    "", // system
-		//	Name:    "",
-		//	Website: "",
-		//	Careers: "",
-		//	About:   "",
-		//	LinkedInProfile: domain.LinkedInProfile{
-		//		ID:                0,
-		//		Alias:             "",
-		//		Name:              "",
-		//		Followers:         "",
-		//		Employees:         "",
-		//		AssociatedMembers: "",
-		//		Verified:          false,
-		//	},
-		//	GitHubProfile: domain.GitHubProfile{
-		//		Login:    "",
-		//		Verified: false,
-		//	},
-		//	Languages: domain.Languages{
-		//		domain.Go: {
-		//			GitHubRepositoriesCount: 0,
-		//			Vacancies: []domain.Vacancy{
-		//				{
-		//					Title:                "",
-		//					ShortDescription:     "",
-		//					SwitchingOpportunity: "",
-		//					URL:                  "",
-		//					Date:                 mustDate(""),
-		//					WithSalary:           false,
-		//				},
-		//			},
-		//		},
-		//		domain.Rust:    {},
-		//		domain.Zig:     {},
-		//		domain.Scala:   {},
-		//		domain.Elixir:  {},
-		//		domain.Clojure: {},
-		//		domain.Haskell: {},
-		//	},
-		//	ShortDescription: "",
-		//},
 	}
 }

@@ -213,6 +213,15 @@ func companiesPart7() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Software Engineer – Scala",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4204495928/",
+							Date:                 mustDate("2025-04-09"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Elixir:  {},
@@ -614,56 +623,5 @@ func companiesPart7() []domain.CompanyProfile {
 			},
 			HasEmployeesFromCountries: []domain.Country{},
 		},
-
-		// Template short
-		//{
-		//	ID:      0,  // system
-		//	Type:    "", // system
-		//	Name:    "",
-		//	Website: "",
-		//	Careers: "",
-		//	About:   "",
-		//	LinkedInProfile: domain.LinkedInProfile{
-		//		ID:                0,
-		//		Alias:             "",
-		//		Name:              "",
-		//		Followers:         "",
-		//		Employees:         "",
-		//		AssociatedMembers: "",
-		//		Verified:          false,
-		//	},
-		//	GitHubProfile: domain.GitHubProfile{
-		//		Login:    "",
-		//		Verified: false,
-		//	},
-		//	Languages: domain.Languages{
-		//		domain.Go: {
-		//			GitHubRepositoriesCount: 0,
-		//			Vacancies: []domain.Vacancy{
-		//				{
-		//					Title:                "",
-		//					ShortDescription:     "",
-		//					SwitchingOpportunity: "",
-		//					URL:                  "",
-		//					Date:                 mustDate(""),
-		//					WithSalary:           false,
-		//					Remote:               false,
-		//				},
-		//			},
-		//		},
-		//		domain.Rust:    {},
-		//		domain.Zig:     {},
-		//		domain.Scala:   {},
-		//		domain.Elixir:  {},
-		//		domain.Clojure: {},
-		//		domain.Haskell: {},
-		//	},
-		//	ShortDescription: "",
-		//	Industries:       []domain.Industry{},
-		//	HasEmployeesFromCountries: []domain.Country{
-		//		domain.Ukraine,
-		//		domain.Czechia,
-		//	},
-		//},
 	}
 }

@@ -236,7 +236,7 @@ func generateLogosSearch(companies []domain.CompanyProfile) {
 }
 
 func generateLogos(companies []domain.CompanyProfile) {
-	aliasImagePairs, err := fetchAliasImagePairs("./public/logos/mapping.txt")
+	aliasImagePairs, err := fetchAliasImagePairs("./public/logos-v0/mapping.txt")
 	if err != nil {
 		panic(err)
 	}
