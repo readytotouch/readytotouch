@@ -2124,9 +2124,22 @@ func companiesPart8() []domain.CompanyProfile {
 				Alias: "",
 			},
 			Languages: domain.Languages{
-				domain.Go:   {},
-				domain.Rust: {},
-				domain.Zig:  {},
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer II (Backend, Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4207846998/",
+							Date:                 mustDate("2025-04-12"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig: {},
 				domain.Scala: {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
@@ -5765,7 +5778,7 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "Editing Foundations",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4160846209/",
-							Date:                 mustDate("2025-04-05"), // mustDate("2025-03-14"), // mustDate("2025-02-21"),
+							Date:                 mustDate("2025-04-09"), // mustDate("2025-04-05"), // mustDate("2025-03-14"), // mustDate("2025-02-21"),
 							WithSalary:           false,
 							Remote:               false,
 						},
