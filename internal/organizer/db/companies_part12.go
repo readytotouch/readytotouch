@@ -2399,19 +2399,20 @@ func companiesPart12() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Collins Aerospace",
+			Website: "https://www.collinsaerospace.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                11695727,
+				IDs:               []int{3959, 2669459, 11695727},
+				Alias:             "collins-aerospace",
+				Name:              "Collins Aerospace",
+				Followers:         "957K",
+				Employees:         "10K+",
+				AssociatedMembers: "53,149",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -2435,11 +2436,11 @@ func companiesPart12() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Rust Software Engineer II",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4208524792/",
+							Date:                 mustDate("2025-04-12"),
 							WithSalary:           false,
 							Remote:               false,
 						},
