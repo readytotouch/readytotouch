@@ -2255,18 +2255,19 @@ func companiesPart12() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Monil",
+			Website: "https://monil.co.uk/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
+				ID:                86305917,
+				IDs:               nil,
+				Alias:             "monil-virtual-fences",
+				Name:              "Monil",
+				Followers:         "1K",
+				Employees:         "11-50",
+				AssociatedMembers: "29",
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -2290,11 +2291,11 @@ func companiesPart12() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
-							ShortDescription:     "",
+							Title:                "Senior Backend Developer (Go)",
+							ShortDescription:     "Powering the Future of Farming 🚜🐄",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4204790743/",
+							Date:                 mustDate("2025-04-10"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2307,9 +2308,9 @@ func companiesPart12() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "We make virtual fences for easier livestock care, managed grazing, and effortless fencing",
 			Industries:       []domain.Industry{
-				// NOP
+				domain.IndustryAgroTech,
 			},
 		},
 		{
