@@ -2133,19 +2133,20 @@ func companiesPart12() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Criteo",
+			Website: "https://www.criteo.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                37209,
+				IDs:               []int{37209, 206709, 3035209, 5041701},
+				Alias:             "criteo",
+				Name:              "Criteo",
+				Followers:         "235K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "3,711",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -2168,11 +2169,11 @@ func companiesPart12() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Software Development Engineer – Lua/Go",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4119745114/",
+							Date:                 mustDate("2025-04-12"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2186,8 +2187,8 @@ func companiesPart12() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
-			Industries:       []domain.Industry{
-				// NOP
+			Industries: []domain.Industry{
+				domain.IndustryAdTech,
 			},
 		},
 		{

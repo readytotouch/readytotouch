@@ -5984,6 +5984,15 @@ func companiesPart1() []domain.CompanyProfile {
 							WithSalary:           true, // Gross Salary 4750-7200 EUR/Month
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Software Engineer Go",
+							ShortDescription:     "Dark Web Monitoring",
+							SwitchingOpportunity: "transitioning to Golang from other backend languages",
+							URL:                  "https://www.linkedin.com/jobs/view/4206460200/",
+							Date:                 mustDate("2025-04-12"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -6283,6 +6292,15 @@ func companiesPart1() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4182387761/",
 							Date:                 mustDate("2025-04-02"), // mustDate("2025-03-12"),
 							WithSalary:           true,                   // $128,000—$150,000 per year
+							Remote:               true,
+						},
+						{
+							Title:                "Full Stack Engineer (Go, React/TypeScript)",
+							ShortDescription:     "Cloud Native Security",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4208229604/",
+							Date:                 mustDate("2025-04-12"),
+							WithSalary:           false,
 							Remote:               true,
 						},
 					},
@@ -9003,7 +9021,7 @@ func companiesPart1() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4131339080/",
-							Date:                 mustDate("2025-03-04"), // mustDate("2025-01-21"),
+							Date:                 mustDate("2025-04-12"), // mustDate("2025-03-04"), // mustDate("2025-01-21"),
 							WithSalary:           true,                   // $160K — $190K per year
 							Remote:               true,
 						},
