@@ -647,8 +647,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "microsoft",
-				Verified: true,
+				Login:     "microsoft",
+				Followers: "89.5k",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "microsoft",
@@ -828,8 +829,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "IBM",
-				Verified: true,
+				Login:     "IBM",
+				Followers: "5.9k",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "IBM",
@@ -1064,8 +1066,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "SAP",
-				Verified: true,
+				Login:     "SAP",
+				Followers: "3.3k",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "sap",
@@ -1246,8 +1249,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "oracle",
-				Verified: false,
+				Login:     "oracle",
+				Followers: "4.3k",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Oracle",
@@ -1574,8 +1578,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "linkedin",
-				Verified: true,
+				Login:     "linkedin",
+				Followers: "2k",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "linkedin",
@@ -1974,8 +1979,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "Snapchat",
-				Verified: true,
+				Login:     "Snapchat",
+				Followers: "664",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Snap",
@@ -2924,8 +2930,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "CrowdStrike",
-				Verified: true,
+				Login:     "CrowdStrike",
+				Followers: "1k",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "crowdstrike",
@@ -3495,8 +3502,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "mongodb",
-				Verified: false,
+				Login:     "mongodb",
+				Followers: "3.6k",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "MongoDB",
@@ -4576,8 +4584,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "americanexpress",
-				Verified: false,
+				Login:     "americanexpress",
+				Followers: "368",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "american-express",
@@ -4733,8 +4742,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "Mastercard",
-				Verified: true,
+				Login:     "Mastercard",
+				Followers: "389",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "mastercard",
@@ -4845,8 +4855,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "MorganStanley",
-				Verified: true,
+				Login:     "MorganStanley",
+				Followers: "361",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Morgan-Stanley",
@@ -5188,8 +5199,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "Citi",
-				Verified: true,
+				Login:     "Citi",
+				Followers: "176",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Citi",
@@ -5623,8 +5635,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "godaddy",
-				Verified: true,
+				Login:     "godaddy",
+				Followers: "179",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "godaddy",
@@ -5805,8 +5818,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "okta",
-				Verified: true,
+				Login:     "okta",
+				Followers: "538",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Okta",
@@ -6172,8 +6186,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "fortinet",
-				Verified: true,
+				Login:     "fortinet",
+				Followers: "453",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Fortinet",
@@ -6404,8 +6419,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "uber",
-				Verified: false,
+				Login:     "uber",
+				Followers: "3.2k",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Uber",
@@ -6493,8 +6509,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "siemens",
-				Verified: true,
+				Login:     "siemens",
+				Followers: "876",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Siemens",
@@ -6612,8 +6629,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "Ericsson",
-				Verified: false,
+				Login:     "Ericsson",
+				Followers: "249",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "ericsson",
