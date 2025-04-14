@@ -3581,18 +3581,19 @@ func companiesPart12() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "blp",
+			Website: "https://blp.digital/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
+				ID:                26561819,
+				IDs:               nil,
+				Alias:             "blp-digital",
+				Name:              "blp",
+				Followers:         "4K",
+				Employees:         "51-200",
+				AssociatedMembers: "69",
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -3616,11 +3617,11 @@ func companiesPart12() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Senior Backend Developer – Golang",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4209809848/",
+							Date:                 mustDate("2025-04-14"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3633,7 +3634,7 @@ func companiesPart12() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "ERP-Automation solution for Finance, Procurement, Logistics, Sales and many mor",
 			Industries:       []domain.Industry{
 				// NOP
 			},
