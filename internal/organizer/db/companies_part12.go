@@ -3519,18 +3519,19 @@ func companiesPart12() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Palisade, Inc",
+			Website: "https://www.palisade.co/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
+				ID:                80564954,
+				IDs:               nil,
+				Alias:             "palisade-inc",
+				Name:              "Palisade, Inc",
+				Followers:         "1K",
+				Employees:         "2-10",
+				AssociatedMembers: "15",
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -3554,13 +3555,13 @@ func companiesPart12() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Blockchain Integration Engineer, Golang",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4208444390/",
+							Date:                 mustDate("2025-04-14"),
 							WithSalary:           false,
-							Remote:               false,
+							Remote:               true,
 						},
 					},
 				},
@@ -3575,6 +3576,7 @@ func companiesPart12() []domain.CompanyProfile {
 			Industries:       []domain.Industry{
 				// NOP
 			},
+			Ignore: true, // Blockchain
 		},
 		{
 			ID:      0,  // system
