@@ -850,6 +850,9 @@ var (
 		"fossa":                               848, // FOSSA
 		"london-stock-exchange-group":         849, // LSEG (London Stock Exchange Group)
 		"getnetworld":                         850, // Getnet
+		"hunterio":                            851, // Hunter.io
+		"sawitpro":                            852, // SawitPRO
+		"blp-digital":                         853, // blp
 
 	}
 )
