@@ -7156,7 +7156,7 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
+				Login:    "motorolasolutions",
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
