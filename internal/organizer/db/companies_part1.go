@@ -6030,6 +6030,15 @@ func companiesPart1() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Software Engineer Go",
+							ShortDescription:     "Dark Web Monitoring",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4208078213/",
+							Date:                 mustDate("2025-04-14"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -7606,8 +7615,8 @@ func companiesPart1() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4126529846/",
-							Date:                 mustDate("2025-02-28"),
-							WithSalary:           true, // Salary Range: €100,000 to €160,000 EUR depending on Seniority level and location.
+							Date:                 mustDate("2025-04-14"), // mustDate("2025-02-28"),
+							WithSalary:           true,                   // Salary Range: €100,000 to €160,000 EUR depending on Seniority level and location.
 							Remote:               false,
 						},
 					},
