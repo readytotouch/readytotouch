@@ -1,0 +1,44 @@
+{%- func DataPopulationCompaniesGitHub(companies []Company, title string) -%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>{%s title %}</title>
+    <meta name="description" content="{%s title %}">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="author" type="text/plain" href="https://readytotouch.com/humans.txt"/>
+    <meta property="og:image" content="/assets/images/og/organizers-light.jpg">
+
+    {%= favicon() %}
+    {%= plausibleAnalytics() %}
+    {%= ga() %}
+    {%= dataPopulationCompaniesStyles() %}
+</head>
+<body>
+<h1>{%s title %} ({%d len(companies) %})</h1>
+
+<ul>
+    {% for _, company := range companies %}
+    <li>
+        <div class="company-name">{%s company.Name %}</div>
+        <div class="links">
+            {% if company.GitHubProfile.Login == "" %}
+            <a href='{%s googleSearchGitHub(hostname(company.Website)) %}' target="_blank">
+                <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> site:github.com {%s hostname(company.Website) %}
+            </a>
+            <a href='{%s googleSearchGitHub(company.Name) %}' target="_blank">
+                <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> site:github.com {%s company.Name %}
+            </a>
+            {% else %}
+            <a href="https://github.com/{%s company.GitHubProfile.Login %}">Overview</a>
+            {% endif %}
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>
+{%- endfunc -%}

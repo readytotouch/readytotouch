@@ -1321,6 +1321,21 @@ func (c *Controller) DataPopulationCompaniesLinkedIn(ctx *gin.Context) {
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationCompaniesLinkedIn(companies, "Populate LinkedIn")))
 }
 
+// DataPopulationCompaniesGitHub will be removed in the future.
+func (c *Controller) DataPopulationCompaniesGitHub(ctx *gin.Context) {
+	var (
+		companies = c.dataPopulationCompanies(func(company domain.CompanyProfile) bool {
+			if c.skipSmallCompany(company) {
+				return false
+			}
+
+			return company.GitHubProfile.Login == ""
+		})
+	)
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationCompaniesGitHub(companies, "Populate GitHub")))
+}
+
 // DataPopulationCompaniesGlassdoor will be removed in the future.
 func (c *Controller) DataPopulationCompaniesGlassdoor(ctx *gin.Context) {
 	var (
