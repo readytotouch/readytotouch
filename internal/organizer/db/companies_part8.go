@@ -3159,7 +3159,7 @@ func companiesPart8() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
+				Login:    "walmartlabs",
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
@@ -6761,7 +6761,7 @@ func companiesPart8() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
+				Login:    "expediagroup",
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{

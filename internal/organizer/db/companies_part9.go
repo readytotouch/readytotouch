@@ -422,7 +422,7 @@ func companiesPart9() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
+				Login:    "teradata",
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
@@ -1157,7 +1157,7 @@ func companiesPart9() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
+				Login:    "Viasat",
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
@@ -2435,7 +2435,7 @@ func companiesPart9() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
+				Login:    "f5networks",
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
@@ -5142,7 +5142,7 @@ func companiesPart9() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
+				Login:    "nike-inc",
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
@@ -5475,7 +5475,7 @@ func companiesPart9() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
+				Login:    "IKEA",
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
@@ -6270,7 +6270,7 @@ func companiesPart9() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
+				Login:    "netflix",
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
@@ -6730,7 +6730,7 @@ func companiesPart9() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
+				Login:    "vodafone",
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
@@ -8374,8 +8374,9 @@ func companiesPart9() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "unity-technologies",
+				Followers: "10.8k",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "unity%20technologies",

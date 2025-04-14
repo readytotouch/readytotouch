@@ -74,8 +74,9 @@ type UnsafeVacancyResponse struct {
 }
 
 type GitHubProfile struct {
-	Login    string
-	Verified bool
+	Login     string
+	Followers string
+	Verified  bool
 }
 
 type GlassdoorProfile struct {

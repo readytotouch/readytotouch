@@ -52,13 +52,13 @@ function parseVanityName(url) {
 }
 
 function followers() {
-    const elements = document.querySelectorAll("div.org-top-card-summary-info-list__info-item");
+    const $elements = document.querySelectorAll("div.org-top-card-summary-info-list__info-item");
 
-    for (const element of elements) {
-        const text = element.textContent.trim();
+    for (const $element of $elements) {
+        const $text = $element.textContent.trim();
 
-        if (text.endsWith("followers")) {
-            return text.replace("followers", "").trim();
+        if ($text.endsWith("followers")) {
+            return $text.replace("followers", "").trim();
         }
     }
 
@@ -66,13 +66,13 @@ function followers() {
 }
 
 function employees() {
-    const elements = document.querySelectorAll("a.org-top-card-summary-info-list__info-item");
+    const $elements = document.querySelectorAll("a.org-top-card-summary-info-list__info-item");
 
-    for (const element of elements) {
-        const text = element.textContent.trim();
+    for (const $element of $elements) {
+        const $text = $element.textContent.trim();
 
-        if (text.endsWith("employees")) {
-            return text.replace("employees", "").trim();
+        if ($text.endsWith("employees")) {
+            return $text.replace("employees", "").trim();
         }
     }
 
@@ -80,13 +80,13 @@ function employees() {
 }
 
 function associatedMembers() {
-    const elements = document.querySelectorAll("h2");
+    const $elements = document.querySelectorAll("h2");
 
-    for (const element of elements) {
-        const text = element.textContent.trim();
+    for (const $element of $elements) {
+        const $text = $element.textContent.trim();
 
-        if (text.endsWith("associated members")) {
-            return text.replace("associated members", "").trim();
+        if ($text.endsWith("associated members")) {
+            return $text.replace("associated members", "").trim();
         }
     }
 

@@ -4,8 +4,9 @@ console.log("GitHub company profile data copy extension loaded");
 document.body.addEventListener("keydown", (event) => {
     // Y is for English, Н is for Ukrainian
     if (event.ctrlKey && event.shiftKey && (event.key === "Y" || event.key === "Н")) {
-        const goLinkedInProfileColumns = `				Login:    "${parseVanityName(window.location.href)}",
-				Verified: ${document.querySelectorAll('a[aria-label="Verified"]').length > 0 ? "true" : "false"},`
+        const goLinkedInProfileColumns = `				Login:     "${parseVanityName(window.location.href)}",
+				Followers: "${followers()}",
+				Verified:  ${document.querySelectorAll('summary[title="Label: Verified"]').length > 0 ? "true" : "false"},`
 
         navigator.clipboard.writeText(goLinkedInProfileColumns)
             .then(() => console.log("Page info copied to clipboard:", goLinkedInProfileColumns))
@@ -41,4 +42,16 @@ function parseVanityName(url) {
     }
 
     return parsedUrl.pathname.substring(prefix.length, end);
+}
+
+function followers() {
+    const $elements = document.querySelectorAll("a.Link--primary");
+
+    for (const $element of $elements) {
+        if ($element.href.endsWith("/followers")) {
+            return $element.querySelector("span").textContent.trim();
+        }
+    }
+
+    return "";
 }
