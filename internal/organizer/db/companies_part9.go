@@ -422,8 +422,9 @@ func companiesPart9() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "teradata",
-				Verified: false,
+				Login:     "teradata",
+				Followers: "106",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "teradata",
@@ -1157,8 +1158,9 @@ func companiesPart9() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "Viasat",
-				Verified: false,
+				Login:     "Viasat",
+				Followers: "30",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Viasat",
@@ -2435,8 +2437,9 @@ func companiesPart9() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "f5networks",
-				Verified: false,
+				Login:     "f5networks",
+				Followers: "280",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "F5-Networks",
@@ -3172,8 +3175,9 @@ func companiesPart9() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "cisco",
+				Followers: "986",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "cisco",
@@ -4599,8 +4603,9 @@ func companiesPart9() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "HewlettPackard",
+				Followers: "352",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -5142,8 +5147,9 @@ func companiesPart9() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "nike-inc",
-				Verified: false,
+				Login:     "nike-inc",
+				Followers: "229",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Nike",
@@ -5475,8 +5481,9 @@ func companiesPart9() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "IKEA",
-				Verified: false,
+				Login:     "IKEA",
+				Followers: "40",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "IKEA",
@@ -6270,8 +6277,9 @@ func companiesPart9() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "netflix",
-				Verified: false,
+				Login:     "netflix",
+				Followers: "7.9k",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Netflix",
@@ -6730,8 +6738,9 @@ func companiesPart9() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "vodafone",
-				Verified: false,
+				Login:     "vodafone",
+				Followers: "75",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Vodafone",
@@ -7659,8 +7668,9 @@ func companiesPart9() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "redhatofficial",
-				Verified: false,
+				Login:     "redhatofficial",
+				Followers: "2.2k",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Red-Hat",

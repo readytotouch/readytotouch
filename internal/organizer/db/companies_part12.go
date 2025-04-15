@@ -323,8 +323,9 @@ func companiesPart12() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "rbc",
-				Verified: true,
+				Login:     "rbc",
+				Followers: "36",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "RBC",
@@ -925,8 +926,9 @@ func companiesPart12() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "ford",
-				Verified: false,
+				Login:     "ford",
+				Followers: "89",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Ford",
@@ -1065,8 +1067,9 @@ func companiesPart12() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "DELL",
-				Verified: false,
+				Login:     "DELL",
+				Followers: "676",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -1316,8 +1319,9 @@ func companiesPart12() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "rakutentech",
-				Verified: false,
+				Login:     "rakutentech",
+				Followers: "179",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
