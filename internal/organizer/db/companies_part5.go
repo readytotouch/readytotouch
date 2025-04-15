@@ -159,8 +159,9 @@ func companiesPart5() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "CenturyLink",
-				Verified: false,
+				Login:     "CenturyLink",
+				Followers: "1.1k",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -243,8 +244,9 @@ func companiesPart5() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "sassoftware",
-				Verified: true,
+				Login:     "sassoftware",
+				Followers: "719",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "SAS",
@@ -710,8 +712,9 @@ func companiesPart5() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "zendesk",
-				Verified: true,
+				Login:     "zendesk",
+				Followers: "557",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "zendesk",
@@ -739,7 +742,7 @@ func companiesPart5() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 77,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer II, Golang",
@@ -1252,8 +1255,9 @@ func companiesPart5() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "americanairlines",
-				Verified: false,
+				Login:     "americanairlines",
+				Followers: "45",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "American-Airlines",

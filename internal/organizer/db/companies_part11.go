@@ -202,8 +202,9 @@ func companiesPart11() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "veeva",
+				Followers: "71",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Veeva",
@@ -239,7 +240,7 @@ func companiesPart11() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4144651944/",
-							Date:                 mustDate("2025-04-08"), // mustDate("2025-03-31"),
+							Date:                 mustDate("2025-04-15"), // mustDate("2025-04-08"), // mustDate("2025-03-31"),
 							WithSalary:           true,
 							Remote:               true,
 						},

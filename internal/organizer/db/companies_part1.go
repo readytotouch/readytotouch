@@ -140,8 +140,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "google",
-				Verified: true,
+				Login:     "google",
+				Followers: "52.9k",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "google",
@@ -646,8 +647,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "microsoft",
-				Verified: true,
+				Login:     "microsoft",
+				Followers: "89.5k",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "microsoft",
@@ -827,8 +829,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "IBM",
-				Verified: true,
+				Login:     "IBM",
+				Followers: "5.9k",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "IBM",
@@ -1063,8 +1066,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "SAP",
-				Verified: true,
+				Login:     "SAP",
+				Followers: "3.3k",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "sap",
@@ -1245,8 +1249,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "oracle",
-				Verified: false,
+				Login:     "oracle",
+				Followers: "4.3k",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Oracle",
@@ -1573,8 +1578,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "linkedin",
-				Verified: true,
+				Login:     "linkedin",
+				Followers: "2k",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "linkedin",
@@ -1973,8 +1979,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "Snapchat",
-				Verified: true,
+				Login:     "Snapchat",
+				Followers: "664",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Snap",
@@ -2923,8 +2930,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "CrowdStrike",
-				Verified: true,
+				Login:     "CrowdStrike",
+				Followers: "1k",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "crowdstrike",
@@ -3428,6 +3436,15 @@ func companiesPart1() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Golang – Software Engineer I",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4208458963/",
+							Date:                 mustDate("2025-04-15"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust: {},
@@ -3485,8 +3502,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "mongodb",
-				Verified: false,
+				Login:     "mongodb",
+				Followers: "3.6k",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "MongoDB",
@@ -4566,8 +4584,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "americanexpress",
-				Verified: false,
+				Login:     "americanexpress",
+				Followers: "368",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "american-express",
@@ -4723,8 +4742,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "Mastercard",
-				Verified: true,
+				Login:     "Mastercard",
+				Followers: "389",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "mastercard",
@@ -4835,8 +4855,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "MorganStanley",
-				Verified: true,
+				Login:     "MorganStanley",
+				Followers: "361",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Morgan-Stanley",
@@ -4918,6 +4939,15 @@ func companiesPart1() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4206223003/",
 							Date:                 mustDate("2025-04-11"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Scala/Java Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4209627904/",
+							Date:                 mustDate("2025-04-14"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -5169,8 +5199,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "Citi",
-				Verified: true,
+				Login:     "Citi",
+				Followers: "176",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Citi",
@@ -5604,8 +5635,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "godaddy",
-				Verified: true,
+				Login:     "godaddy",
+				Followers: "179",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "godaddy",
@@ -5786,8 +5818,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "okta",
-				Verified: true,
+				Login:     "okta",
+				Followers: "538",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Okta",
@@ -6021,6 +6054,15 @@ func companiesPart1() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Software Engineer Go",
+							ShortDescription:     "Dark Web Monitoring",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4208078213/",
+							Date:                 mustDate("2025-04-14"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -6144,8 +6186,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "fortinet",
-				Verified: true,
+				Login:     "fortinet",
+				Followers: "453",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Fortinet",
@@ -6376,8 +6419,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "uber",
-				Verified: false,
+				Login:     "uber",
+				Followers: "3.2k",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Uber",
@@ -6465,8 +6509,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "siemens",
-				Verified: true,
+				Login:     "siemens",
+				Followers: "876",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Siemens",
@@ -6584,8 +6629,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "Ericsson",
-				Verified: false,
+				Login:     "Ericsson",
+				Followers: "249",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "ericsson",
@@ -6785,8 +6831,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "spotify",
-				Verified: false,
+				Login:     "spotify",
+				Followers: "4k",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "spotify",
@@ -6866,8 +6913,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "doordash",
-				Verified: true,
+				Login:     "doordash",
+				Followers: "621",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "doordash",
@@ -6948,8 +6996,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "justeattakeaway",
-				Verified: true,
+				Login:     "justeattakeaway",
+				Followers: "68",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Just-Eat-Takeaway",
@@ -7045,8 +7094,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "Sixt",
-				Verified: true,
+				Login:     "Sixt",
+				Followers: "150",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Sixt",
@@ -7129,8 +7179,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "motorolasolutions",
+				Followers: "23",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Motorola-Mobility",
@@ -7218,8 +7269,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "Samsung",
-				Verified: false,
+				Login:     "Samsung",
+				Followers: "",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Samsung",
@@ -7597,8 +7649,8 @@ func companiesPart1() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4126529846/",
-							Date:                 mustDate("2025-02-28"),
-							WithSalary:           true, // Salary Range: €100,000 to €160,000 EUR depending on Seniority level and location.
+							Date:                 mustDate("2025-04-14"), // mustDate("2025-02-28"),
+							WithSalary:           true,                   // Salary Range: €100,000 to €160,000 EUR depending on Seniority level and location.
 							Remote:               false,
 						},
 					},
@@ -7855,8 +7907,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "splunk",
-				Verified: false,
+				Login:     "splunk",
+				Followers: "1.2k",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "splunk",
@@ -8049,8 +8102,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "hellofresh",
-				Verified: false,
+				Login:     "hellofresh",
+				Followers: "539",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "hellofresh",
@@ -8295,8 +8349,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "deliveryhero",
-				Verified: true,
+				Login:     "deliveryhero",
+				Followers: "1.1k",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Delivery-Hero",
@@ -9803,8 +9858,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "Autodesk",
-				Verified: true,
+				Login:     "Autodesk",
+				Followers: "793",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "autodesk",
@@ -10903,6 +10959,15 @@ func companiesPart1() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4209688694/",
+							Date:                 mustDate("2025-04-14"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -11290,7 +11355,7 @@ func companiesPart1() []domain.CompanyProfile {
 							ShortDescription:     "Payments Platform",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4144168641/",
-							Date:                 mustDate("2025-03-01"),
+							Date:                 mustDate("2025-04-14"), // mustDate("2025-03-01"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -16110,8 +16175,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "Kroger-Technology",
-				Verified: false,
+				Login:     "Kroger-Technology",
+				Followers: "14",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Kroger",
@@ -17523,8 +17589,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "swisspost",
-				Verified: false,
+				Login:     "swisspost",
+				Followers: "90",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -18599,8 +18666,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "disney",
-				Verified: false,
+				Login:     "disney",
+				Followers: "258",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "the-walt-disney-company",
@@ -21929,8 +21997,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "jkhy",
-				Verified: false,
+				Login:     "jkhy",
+				Followers: "160",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Jack-Henry--Associates",
@@ -22129,8 +22198,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "zalando",
-				Verified: false,
+				Login:     "zalando",
+				Followers: "832",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Zalando",
@@ -22472,8 +22542,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "electronicarts",
-				Verified: true,
+				Login:     "electronicarts",
+				Followers: "5.9k",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "electronic-arts",

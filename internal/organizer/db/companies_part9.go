@@ -422,8 +422,9 @@ func companiesPart9() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "teradata",
+				Followers: "106",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "teradata",
@@ -1157,8 +1158,9 @@ func companiesPart9() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "Viasat",
+				Followers: "30",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Viasat",
@@ -1672,8 +1674,9 @@ func companiesPart9() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "LANL",
-				Verified: true,
+				Login:     "LANL",
+				Followers: "487",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -2285,7 +2288,7 @@ func companiesPart9() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4125742838/",
-							Date:                 mustDate("2025-04-04"), // mustDate("2025-03-21"), // mustDate("2025-03-11"),
+							Date:                 mustDate("2025-04-14"), // mustDate("2025-04-04"), // mustDate("2025-03-21"), // mustDate("2025-03-11"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2435,8 +2438,9 @@ func companiesPart9() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "f5networks",
+				Followers: "280",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "F5-Networks",
@@ -3172,8 +3176,9 @@ func companiesPart9() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "cisco",
+				Followers: "986",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "cisco",
@@ -3983,7 +3988,7 @@ func companiesPart9() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4189553947/",
-							Date:                 mustDate("2025-03-24"),
+							Date:                 mustDate("2025-04-14"), // mustDate("2025-03-24"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -4599,8 +4604,9 @@ func companiesPart9() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "HewlettPackard",
+				Followers: "352",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -5142,8 +5148,9 @@ func companiesPart9() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "nike-inc",
+				Followers: "229",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Nike",
@@ -5475,8 +5482,9 @@ func companiesPart9() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "IKEA",
+				Followers: "40",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "IKEA",
@@ -6270,8 +6278,9 @@ func companiesPart9() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "netflix",
+				Followers: "7.9k",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Netflix",
@@ -6730,8 +6739,9 @@ func companiesPart9() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "vodafone",
+				Followers: "75",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Vodafone",
@@ -7659,8 +7669,9 @@ func companiesPart9() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "redhatofficial",
-				Verified: false,
+				Login:     "redhatofficial",
+				Followers: "2.2k",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Red-Hat",
@@ -8374,8 +8385,9 @@ func companiesPart9() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "unity-technologies",
+				Followers: "10.8k",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "unity%20technologies",
@@ -8410,7 +8422,7 @@ func companiesPart9() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4191748355/",
-							Date:                 mustDate("2025-03-23"),
+							Date:                 mustDate("2025-04-14"), // mustDate("2025-03-23"),
 							WithSalary:           false,
 							Remote:               false,
 						},

@@ -24,8 +24,9 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "capitalone",
-				Verified: false,
+				Login:     "capitalone",
+				Followers: "323",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "capital-one",
@@ -217,6 +218,15 @@ func companiesPart3() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4190346674/",
 							Date:                 mustDate("2025-04-05"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Lead Software Engineer, Full Stack (Go, AWS)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4209208703/",
+							Date:                 mustDate("2025-04-14"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -886,8 +896,9 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "nokia",
+				Followers: "456",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "nokia",
@@ -918,7 +929,7 @@ func companiesPart3() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 117,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer — Golang developer",
@@ -1925,8 +1936,9 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "checkpointsw",
-				Verified: true,
+				Login:     "checkpointsw",
+				Followers: "377",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Check-Point-Software-Technologies-Ltd",
@@ -2495,8 +2507,9 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "BellCanada",
-				Verified: true,
+				Login:     "BellCanada",
+				Followers: "14",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "bell",
@@ -3031,6 +3044,15 @@ func companiesPart3() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Staff Software Engineer BackEnd (Java/Go)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4209899082/",
+							Date:                 mustDate("2025-04-14"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -3155,8 +3177,9 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "eBay",
-				Verified: false,
+				Login:     "eBay",
+				Followers: "506",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "ebay",

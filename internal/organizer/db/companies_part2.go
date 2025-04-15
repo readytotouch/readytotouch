@@ -851,6 +851,15 @@ func companiesPart2() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Software Engineer — .NET / Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4208031172/",
+							Date:                 mustDate("2025-04-14"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -1371,6 +1380,15 @@ func companiesPart2() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4182729917/",
 							Date:                 mustDate("2025-03-12"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Backend Developer – Go",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4209622730/",
+							Date:                 mustDate("2025-04-14"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2020,8 +2038,9 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "kaseya",
-				Verified: false,
+				Login:     "kaseya",
+				Followers: "7",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Kaseya",
@@ -2286,8 +2305,9 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "fiserv",
-				Verified: false,
+				Login:     "fiserv",
+				Followers: "79",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Fiserv",
@@ -4005,6 +4025,15 @@ func companiesPart2() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Go – Senior Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4162261165/",
+							Date:                 mustDate("2025-04-14"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -4041,8 +4070,9 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "factset",
-				Verified: true,
+				Login:     "factset",
+				Followers: "235",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "factset",
@@ -4662,8 +4692,9 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "woltapp",
-				Verified: true,
+				Login:     "woltapp",
+				Followers: "235",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "wolt",
@@ -4860,8 +4891,9 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "ovotech",
-				Verified: true,
+				Login:     "ovotech",
+				Followers: "344",
+				Verified:  true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-OVO-EI_IE767881.11,14.htm",
@@ -5135,8 +5167,9 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "heremaps",
-				Verified: false,
+				Login:     "heremaps",
+				Followers: "310",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "HERE-Technologies",
@@ -5218,6 +5251,15 @@ func companiesPart2() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4169532511/",
 							Date:                 mustDate("2025-02-28"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+						{
+							Title:                "Senior Software Engineer (Java/Scala)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4209688942/",
+							Date:                 mustDate("2025-04-14"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -5405,6 +5447,15 @@ func companiesPart2() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4199580780/",
 							Date:                 mustDate("2025-04-02"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Full Stack Engineer – Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4207912737/",
+							Date:                 mustDate("2025-04-14"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -5692,8 +5743,9 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "boozallen",
-				Verified: false,
+				Login:     "boozallen",
+				Followers: "86",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Booz-Allen-Hamilton",
@@ -6866,8 +6918,9 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "jpmorganchase",
-				Verified: false,
+				Login:     "jpmorganchase",
+				Followers: "2.3k",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "jpmorgan",
@@ -7223,8 +7276,9 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "ing-bank",
-				Verified: false,
+				Login:     "ing-bank",
+				Followers: "300",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "ING-Group",
@@ -8670,8 +8724,9 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "Worldpay",
+				Followers: "25",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Worldpay",
@@ -9609,8 +9664,9 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "bloomberg",
+				Followers: "1.5k",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "bloomberg",
@@ -10414,6 +10470,15 @@ func companiesPart2() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4187506903/",
+							Date:                 mustDate("2025-04-12"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Elixir Software Engineer III",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4187512182/",
 							Date:                 mustDate("2025-04-12"),
 							WithSalary:           false,
 							Remote:               false,
@@ -11365,7 +11430,7 @@ func companiesPart2() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4102045400/",
-							Date:                 mustDate("2025-03-14"), // mustDate("2025-02-13"), // mustDate("2024-12-16"),
+							Date:                 mustDate("2025-04-14"), // mustDate("2025-03-14"), // mustDate("2025-02-13"), // mustDate("2024-12-16"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -11417,8 +11482,9 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "zoom",
+				Followers: "693",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Zoom",
@@ -12607,6 +12673,15 @@ func companiesPart2() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4145081625/",
+							Date:                 mustDate("2025-04-14"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -12794,6 +12869,11 @@ func companiesPart2() []domain.CompanyProfile {
 				AssociatedMembers: "8,436",
 				Verified:          true,
 			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:     "zscaler",
+				Followers: "117",
+				Verified:  true,
+			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Zscaler",
 				Employees:   "1,001 to 5,000",
@@ -12902,6 +12982,11 @@ func companiesPart2() []domain.CompanyProfile {
 				AssociatedMembers: "6,341",
 				Verified:          true,
 			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:     "purestorage",
+				Followers: "40",
+				Verified:  false,
+			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Pure-Storage",
 				Employees:   "1,001 to 5,000 Employees",
@@ -12928,7 +13013,7 @@ func companiesPart2() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 6,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Golang Engineer, FlashArray",

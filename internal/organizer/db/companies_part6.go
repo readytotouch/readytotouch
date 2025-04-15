@@ -115,8 +115,9 @@ func companiesPart6() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "nutanix",
-				Verified: true,
+				Login:     "nutanix",
+				Followers: "235",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "nutanix",
@@ -380,8 +381,9 @@ func companiesPart6() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "ubisoft",
-				Verified: true,
+				Login:     "ubisoft",
+				Followers: "601",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Ubisoft",
