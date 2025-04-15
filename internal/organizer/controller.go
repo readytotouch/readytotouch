@@ -1329,7 +1329,7 @@ func (c *Controller) DataPopulationCompaniesGitHub(ctx *gin.Context) {
 				return false
 			}
 
-			return company.GitHubProfile.Login == ""
+			return company.GitHubProfile.Followers == ""
 		})
 	)
 
