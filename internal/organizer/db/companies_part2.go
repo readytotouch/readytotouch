@@ -2038,8 +2038,9 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "kaseya",
-				Verified: false,
+				Login:     "kaseya",
+				Followers: "7",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Kaseya",
@@ -2304,8 +2305,9 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "fiserv",
-				Verified: false,
+				Login:     "fiserv",
+				Followers: "79",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Fiserv",
@@ -4068,8 +4070,9 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "factset",
-				Verified: true,
+				Login:     "factset",
+				Followers: "235",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "factset",
@@ -4689,8 +4692,9 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "woltapp",
-				Verified: true,
+				Login:     "woltapp",
+				Followers: "235",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "wolt",
@@ -4887,8 +4891,9 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "ovotech",
-				Verified: true,
+				Login:     "ovotech",
+				Followers: "344",
+				Verified:  true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-OVO-EI_IE767881.11,14.htm",
@@ -5162,8 +5167,9 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "heremaps",
-				Verified: false,
+				Login:     "heremaps",
+				Followers: "310",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "HERE-Technologies",
@@ -5737,8 +5743,9 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "boozallen",
-				Verified: false,
+				Login:     "boozallen",
+				Followers: "86",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Booz-Allen-Hamilton",
@@ -6911,8 +6918,9 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "jpmorganchase",
-				Verified: false,
+				Login:     "jpmorganchase",
+				Followers: "2.3k",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "jpmorgan",
@@ -7268,8 +7276,9 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "ing-bank",
-				Verified: false,
+				Login:     "ing-bank",
+				Followers: "300",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "ING-Group",
@@ -8715,8 +8724,9 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "Worldpay",
+				Followers: "25",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Worldpay",
@@ -9654,8 +9664,9 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "bloomberg",
+				Followers: "1.5k",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "bloomberg",
@@ -11471,8 +11482,9 @@ func companiesPart2() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "zoom",
+				Followers: "693",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Zoom",
@@ -12857,6 +12869,11 @@ func companiesPart2() []domain.CompanyProfile {
 				AssociatedMembers: "8,436",
 				Verified:          true,
 			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:     "zscaler",
+				Followers: "117",
+				Verified:  true,
+			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Zscaler",
 				Employees:   "1,001 to 5,000",
@@ -12965,6 +12982,11 @@ func companiesPart2() []domain.CompanyProfile {
 				AssociatedMembers: "6,341",
 				Verified:          true,
 			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:     "purestorage",
+				Followers: "40",
+				Verified:  false,
+			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Pure-Storage",
 				Employees:   "1,001 to 5,000 Employees",
@@ -12991,7 +13013,7 @@ func companiesPart2() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 6,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Golang Engineer, FlashArray",

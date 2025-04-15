@@ -24,8 +24,9 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "capitalone",
-				Verified: false,
+				Login:     "capitalone",
+				Followers: "323",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "capital-one",
@@ -895,8 +896,9 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "nokia",
+				Followers: "456",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "nokia",
@@ -927,7 +929,7 @@ func companiesPart3() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 117,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer — Golang developer",
@@ -1934,8 +1936,9 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "checkpointsw",
-				Verified: true,
+				Login:     "checkpointsw",
+				Followers: "377",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Check-Point-Software-Technologies-Ltd",
@@ -2504,8 +2507,9 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "BellCanada",
-				Verified: true,
+				Login:     "BellCanada",
+				Followers: "14",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "bell",
@@ -3173,8 +3177,9 @@ func companiesPart3() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "eBay",
-				Verified: false,
+				Login:     "eBay",
+				Followers: "506",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "ebay",

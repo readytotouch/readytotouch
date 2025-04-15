@@ -21997,8 +21997,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "jkhy",
-				Verified: false,
+				Login:     "jkhy",
+				Followers: "160",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Jack-Henry--Associates",
@@ -22197,8 +22198,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "zalando",
-				Verified: false,
+				Login:     "zalando",
+				Followers: "832",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Zalando",
@@ -22540,8 +22542,9 @@ func companiesPart1() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "electronicarts",
-				Verified: true,
+				Login:     "electronicarts",
+				Followers: "5.9k",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "electronic-arts",

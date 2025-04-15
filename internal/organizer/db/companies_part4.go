@@ -353,6 +353,11 @@ func companiesPart4() []domain.CompanyProfile {
 				AssociatedMembers: "59,631",
 				Verified:          true,
 			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:     "comcast",
+				Followers: "158",
+				Verified:  false,
+			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Comcast",
 				Employees:   "10,000+",
@@ -3550,6 +3555,11 @@ func companiesPart4() []domain.CompanyProfile {
 				AssociatedMembers: "12,935",
 				Verified:          true,
 			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:     "netapp",
+				Followers: "201",
+				Verified:  true,
+			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "NetApp",
 				Employees:   "10,000+",
@@ -3576,7 +3586,7 @@ func companiesPart4() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 23,
+					GitHubRepositoriesCount: 8,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer — Golang",
@@ -3668,6 +3678,11 @@ func companiesPart4() []domain.CompanyProfile {
 				Employees:         "5K-10K",
 				AssociatedMembers: "7,565",
 				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:     "trendmicro",
+				Followers: "363",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Trend-Micro",

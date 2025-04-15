@@ -1674,8 +1674,9 @@ func companiesPart9() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "LANL",
-				Verified: true,
+				Login:     "LANL",
+				Followers: "487",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
