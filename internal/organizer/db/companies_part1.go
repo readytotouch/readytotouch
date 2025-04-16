@@ -1173,6 +1173,15 @@ func companiesPart1() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Software Developer with Java or Golang",
+							ShortDescription:     "SAP iXP Intern",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4117406944/",
+							Date:                 mustDate("2025-02-26"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
@@ -1202,15 +1211,6 @@ func companiesPart1() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4151455339/",
 							Date:                 mustDate("2025-02-12"),
-							WithSalary:           false,
-							Remote:               false,
-						},
-						{
-							Title:                "Software Developer with Java or Golang",
-							ShortDescription:     "SAP iXP Intern",
-							SwitchingOpportunity: "",
-							URL:                  "https://www.linkedin.com/jobs/view/4117406944/",
-							Date:                 mustDate("2025-02-26"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -1311,22 +1311,6 @@ func companiesPart1() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
-					},
-				},
-				domain.Rust: {},
-				domain.Zig:  {},
-				domain.Scala: {
-					GitHubRepositoriesCount: 14,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "Principal Software Engineer — Java/Scala",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "https://www.linkedin.com/jobs/view/4034901984/",
-							Date:                 mustDate("2024-10-25"),
-							WithSalary:           false,
-							Remote:               false,
-						},
 						{
 							Title:                "Principal Software Engineer — Golang",
 							ShortDescription:     "",
@@ -1342,6 +1326,22 @@ func companiesPart1() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4125825071/",
 							Date:                 mustDate("2025-01-16"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust: {},
+				domain.Zig:  {},
+				domain.Scala: {
+					GitHubRepositoriesCount: 14,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Principal Software Engineer — Java/Scala",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4034901984/",
+							Date:                 mustDate("2024-10-25"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -18757,12 +18757,12 @@ func companiesPart1() []domain.CompanyProfile {
 							Remote:               false,
 						},
 						{
-							Title:                "Lead Software Engineer, Scala",
+							Title:                "Senior Software Engineer (Front-End — Rust)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "https://www.linkedin.com/jobs/view/4118591892/",
-							Date:                 mustDate("2025-01-07"),
-							WithSalary:           true, // The hiring range for this position in Seattle, Washington and New York NY is $159,500 to $213,900 per year and in Burbank, CA and Bristol CT is $152,200 to $204,100 per year.
+							URL:                  "https://www.linkedin.com/jobs/view/4156260740/",
+							Date:                 mustDate("2025-02-15"),
+							WithSalary:           true, // $145.500 - $195.000 per year
 							Remote:               false,
 						},
 					},
@@ -18790,12 +18790,12 @@ func companiesPart1() []domain.CompanyProfile {
 							Remote:               false,
 						},
 						{
-							Title:                "Senior Software Engineer (Front-End — Rust)",
+							Title:                "Lead Software Engineer, Scala",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "https://www.linkedin.com/jobs/view/4156260740/",
-							Date:                 mustDate("2025-02-15"),
-							WithSalary:           true, // $145.500 - $195.000 per year
+							URL:                  "https://www.linkedin.com/jobs/view/4118591892/",
+							Date:                 mustDate("2025-01-07"),
+							WithSalary:           true, // The hiring range for this position in Seattle, Washington and New York NY is $159,500 to $213,900 per year and in Burbank, CA and Bristol CT is $152,200 to $204,100 per year.
 							Remote:               false,
 						},
 					},
