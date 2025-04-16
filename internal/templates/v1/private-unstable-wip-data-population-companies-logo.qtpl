@@ -83,7 +83,8 @@
 <ul>
     {% for _, company := range companies %}
     <li>
-        <img src="{%s logo(company.Logo) %}" class="logo" />
+        <img src="{%s logoV1(company.Logo) %}" class="logo" />
+        <img src="{%s logoV0(company.Logo) %}" class="logo" />
         <div>
             <div class="company-name">{%s company.Name %}</div>
             <div class="links">

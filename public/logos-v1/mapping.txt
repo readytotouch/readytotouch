@@ -1,7 +1,7 @@
 1global 
 1nce 
 1password 
-3085253  ace_tate.png
+3085253 ace_tate.png
 360dialog 
 4128 
 49nord 
@@ -42,7 +42,7 @@ american-express
 amoamoamo 
 amuse.io amuseio.png
 anaplan anaplan.png
-andurilindustries  andurilindustries.png
+andurilindustries andurilindustries.png
 anixe-polska-sp--z-o-o- 
 anjuna-security 
 antmicro-ltd 
@@ -206,7 +206,7 @@ cynergy-bank
 cynet-systems 
 daedalean 
 dailymotion 
-dailypay  dailypay.png
+dailypay dailypay.png
 darktrace 
 databeaconaero 
 datadog 
@@ -217,7 +217,7 @@ ddn
 dealer-tire 
 deepgram 
 delivery-hero-se 
-delltechnologies  delltechnologies.png
+delltechnologies delltechnologies.png
 demandbase 
 density-inc- 
 depixen-sw 
@@ -342,7 +342,7 @@ gelato
 geniussports 
 geocomply 
 getansa 
-getcruise Ford 
+getcruise
 getir 
 getsentry 
 getsona getsona.png
@@ -479,7 +479,7 @@ los-alamos-national-laboratory los-alamos.png
 lotusretails lotusretails.png
 lucidmotors lucidmotors.png
 lumentechnologies 
-luminovo  luminovo.png
+luminovo luminovo.png
 lytxinc 
 macquariegroup 
 macrohealth 
@@ -566,7 +566,7 @@ nuro-inc.
 nutanix 
 nvent nvent.png
 observe-inc 
-occ 
+occ occ.png
 oddingg 
 odyssey-information-services 
 okta-inc- 
@@ -730,7 +730,7 @@ skyworks-solutions-inc skyworks-solutions.png
 slowtec 
 smartrentdotcom 
 smartthings 
-smava  smava.png
+smava smava.png
 smc smc.png
 smg-marketplace 
 smithrx 
@@ -772,7 +772,7 @@ stockbit
 stoke-space stoke-space.png
 stonebranch 
 storage-rentals-america storage-rentals.png
-stord  stord.png
+stord stord.png
 strangebee strangebee.png
 stratascale-llc 
 stripe 
@@ -883,7 +883,7 @@ vidsy Vidsy.png
 vinted vinted.png
 viodotcom 
 visa visa.png
-vitalbio  vitalbio.png
+vitalbio vitalbio.png
 vividmoney vividmoney.png
 vodeno 
 vois vois.png
@@ -936,4 +936,3 @@ zscaler
 zubale 
 zurich-instruments-ag
 thought-machine thought-machine.png
-occ occ.png

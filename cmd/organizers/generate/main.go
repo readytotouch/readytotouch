@@ -236,7 +236,7 @@ func generateLogosSearch(companies []domain.CompanyProfile) {
 }
 
 func generateLogos(companies []domain.CompanyProfile) {
-	aliasImagePairs, err := fetchAliasImagePairs("./public/logos-v0/mapping.txt")
+	aliasImagePairs, err := fetchAliasImagePairs("./public/logos-v1/mapping.txt")
 	if err != nil {
 		panic(err)
 	}
@@ -247,12 +247,12 @@ func generateLogos(companies []domain.CompanyProfile) {
 		}
 	}
 
-	output, err := format.Source([]byte(dev.CompanyLogo(aliasImagePairs)))
+	output, err := format.Source([]byte(dev.CompanyLogo(aliasImagePairs, 1)))
 	if err != nil {
 		panic(err)
 	}
 
-	err = os.WriteFile("./internal/generated/organizers/company_logo.go", output, 0644)
+	err = os.WriteFile("./internal/generated/organizers/company_logo_v1.go", output, 0644)
 	if err != nil {
 		panic(err)
 	}

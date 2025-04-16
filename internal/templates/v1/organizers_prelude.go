@@ -232,12 +232,32 @@ func isIndeedVacancyURL(s string) bool {
 	return strings.Contains(s, "https://www.indeed.com/viewjob")
 }
 
-func logo(s string) string {
-	if s == "" {
-		return "/assets/images/pages/common-images/unknown.svg"
+func logo(l domain.CompanyLogo) string {
+	if l.V1 != "" {
+		return "/assets/unstable/logos-v1/" + l.V1
 	}
 
-	return "/assets/unstable/logos-v0/" + s
+	if l.V0 != "" {
+		return "/assets/unstable/logos-v0/" + l.V0
+	}
+
+	return "/assets/images/pages/common-images/unknown.svg"
+}
+
+func logoV1(l domain.CompanyLogo) string {
+	if l.V1 != "" {
+		return "/assets/unstable/logos-v1/" + l.V1
+	}
+
+	return "/assets/images/pages/common-images/unknown.svg"
+}
+
+func logoV0(l domain.CompanyLogo) string {
+	if l.V0 != "" {
+		return "/assets/unstable/logos-v1/" + l.V0
+	}
+
+	return "/assets/images/pages/common-images/unknown.svg"
 }
 
 var (
