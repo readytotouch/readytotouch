@@ -3788,7 +3788,7 @@ func companiesPart12() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Payment solution for businesses",
-			Industries:       []domain.Industry{
+			Industries: []domain.Industry{
 				domain.IndustryFinTech,
 			},
 		},
@@ -3849,25 +3849,26 @@ func companiesPart12() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
-			Industries:       []domain.Industry{
+			Industries: []domain.Industry{
 				domain.IndustryFinTech,
 			},
 		},
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Saber",
+			Website: "https://www.saber.app/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
+				ID:                101692321,
+				IDs:               nil,
+				Alias:             "saberapp",
+				Name:              "Saber",
+				Followers:         "393",
+				Employees:         "2-10",
+				AssociatedMembers: "10",
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -3891,11 +3892,11 @@ func companiesPart12() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Senior Software Engineer (Go)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4209319499/",
+							Date:                 mustDate("2025-04-15"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3908,7 +3909,7 @@ func companiesPart12() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "Helping sellers double meeting rates",
 			Industries:       []domain.Industry{
 				// NOP
 			},
@@ -3916,19 +3917,20 @@ func companiesPart12() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
+			Name:    "Care.com",
+			Website: "https://www.care.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                157258,
+				IDs:               []int{157258, 2824888},
+				Alias:             "caredotcom",
+				Name:              "Care.com",
+				Followers:         "93K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "12,213",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -3951,191 +3953,11 @@ func companiesPart12() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "",
+							Title:                "Senior Software Engineer (Java / Golang)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
-							WithSalary:           false,
-							Remote:               false,
-						},
-					},
-				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-			ShortDescription: "",
-			Industries:       []domain.Industry{
-				// NOP
-			},
-		},
-		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "",
-			Website: "",
-			Careers: "",
-			About:   "",
-			Blog:    "",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
-			},
-			BlindProfile: domain.BlindProfile{
-				Alias: "",
-			},
-			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-			},
-			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
-			},
-			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
-							WithSalary:           false,
-							Remote:               false,
-						},
-					},
-				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-			ShortDescription: "",
-			Industries:       []domain.Industry{
-				// NOP
-			},
-		},
-		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "",
-			Website: "",
-			Careers: "",
-			About:   "",
-			Blog:    "",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
-			},
-			BlindProfile: domain.BlindProfile{
-				Alias: "",
-			},
-			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-			},
-			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
-			},
-			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
-							WithSalary:           false,
-							Remote:               false,
-						},
-					},
-				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-			ShortDescription: "",
-			Industries:       []domain.Industry{
-				// NOP
-			},
-		},
-		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "",
-			Website: "",
-			Careers: "",
-			About:   "",
-			Blog:    "",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
-			},
-			BlindProfile: domain.BlindProfile{
-				Alias: "",
-			},
-			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-			},
-			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
-			},
-			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "",
-							Date:                 mustDate(""),
+							URL:                  "https://www.linkedin.com/jobs/view/4211003389/",
+							Date:                 mustDate("2025-04-16"),
 							WithSalary:           false,
 							Remote:               false,
 						},
