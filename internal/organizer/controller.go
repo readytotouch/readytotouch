@@ -264,7 +264,10 @@ func (c *Controller) CompanyV1(ctx *gin.Context) {
 	if company.Type == "" {
 		company.Type = organizers.ToCompanyType(company.LinkedInProfile.Alias)
 	}
-	company.Logo = organizers.CompanyAliasToLogoMap[company.LinkedInProfile.Alias]
+	company.Logo = domain.CompanyLogo{
+		V0: organizers.CompanyAliasToLogoMapV0[company.LinkedInProfile.Alias],
+		V1: organizers.CompanyAliasToLogoMapV1[company.LinkedInProfile.Alias],
+	}
 
 	organizerFeature, ok := c.organizerFeature(featurePath)
 	if !ok {
@@ -376,7 +379,10 @@ func (c *Controller) CompanyV2(ctx *gin.Context) {
 	if company.Type == "" {
 		company.Type = organizers.ToCompanyType(company.LinkedInProfile.Alias)
 	}
-	company.Logo = organizers.CompanyAliasToLogoMap[company.LinkedInProfile.Alias]
+	company.Logo = domain.CompanyLogo{
+		V0: organizers.CompanyAliasToLogoMapV0[company.LinkedInProfile.Alias],
+		V1: organizers.CompanyAliasToLogoMapV1[company.LinkedInProfile.Alias],
+	}
 
 	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)
 	if err != nil {
@@ -1019,7 +1025,7 @@ func (c *Controller) organizerFeature(path string) (domain.OrganizerFeature, boo
 			Organizer: domain.OrganizerGolang,
 			Feature:   dbs.FeatureWaitOrganizerGolangVacancies,
 			Path:      path,
-			Title:     "Vacancies",
+			Title:     "Jobs",
 		},
 		"/organizers/rust/companies": {
 			Organizer: domain.OrganizerRust,
@@ -1031,7 +1037,7 @@ func (c *Controller) organizerFeature(path string) (domain.OrganizerFeature, boo
 			Organizer: domain.OrganizerRust,
 			Feature:   dbs.FeatureWaitOrganizerRustVacancies,
 			Path:      path,
-			Title:     "Vacancies",
+			Title:     "Jobs",
 		},
 		"/organizers/zig/companies": {
 			Organizer: domain.OrganizerZig,
@@ -1043,7 +1049,7 @@ func (c *Controller) organizerFeature(path string) (domain.OrganizerFeature, boo
 			Organizer: domain.OrganizerZig,
 			Feature:   dbs.FeatureWaitOrganizerZigVacancies,
 			Path:      path,
-			Title:     "Vacancies",
+			Title:     "Jobs",
 		},
 		"/organizers/scala/companies": {
 			Organizer: domain.OrganizerScala,
@@ -1055,7 +1061,7 @@ func (c *Controller) organizerFeature(path string) (domain.OrganizerFeature, boo
 			Organizer: domain.OrganizerScala,
 			Feature:   dbs.FeatureWaitOrganizerScalaVacancies,
 			Path:      path,
-			Title:     "Vacancies",
+			Title:     "Jobs",
 		},
 		"/organizers/elixir/companies": {
 			Organizer: domain.OrganizerElixir,
@@ -1067,7 +1073,7 @@ func (c *Controller) organizerFeature(path string) (domain.OrganizerFeature, boo
 			Organizer: domain.OrganizerElixir,
 			Feature:   dbs.FeatureWaitOrganizerElixirVacancies,
 			Path:      path,
-			Title:     "Vacancies",
+			Title:     "Jobs",
 		},
 		"/organizers/clojure/companies": {
 			Organizer: domain.OrganizerClojure,
@@ -1079,7 +1085,7 @@ func (c *Controller) organizerFeature(path string) (domain.OrganizerFeature, boo
 			Organizer: domain.OrganizerClojure,
 			Feature:   dbs.FeatureWaitOrganizerClojureVacancies,
 			Path:      path,
-			Title:     "Vacancies",
+			Title:     "Jobs",
 		},
 	}
 
@@ -1227,7 +1233,10 @@ func (c *Controller) companies(organizerFeature domain.OrganizerFeature) []domai
 		if company.Type == "" {
 			company.Type = organizers.ToCompanyType(company.LinkedInProfile.Alias)
 		}
-		company.Logo = organizers.CompanyAliasToLogoMap[company.LinkedInProfile.Alias]
+		company.Logo = domain.CompanyLogo{
+			V0: organizers.CompanyAliasToLogoMapV0[company.LinkedInProfile.Alias],
+			V1: organizers.CompanyAliasToLogoMapV1[company.LinkedInProfile.Alias],
+		}
 
 		language := organizerFeature.Organizer.Language
 
@@ -1457,7 +1466,10 @@ func (c *Controller) dataPopulationCompanies(match func(company domain.CompanyPr
 		if company.Type == "" {
 			company.Type = organizers.ToCompanyType(company.LinkedInProfile.Alias)
 		}
-		company.Logo = organizers.CompanyAliasToLogoMap[company.LinkedInProfile.Alias]
+		company.Logo = domain.CompanyLogo{
+			V0: organizers.CompanyAliasToLogoMapV0[company.LinkedInProfile.Alias],
+			V1: organizers.CompanyAliasToLogoMapV1[company.LinkedInProfile.Alias],
+		}
 
 		if !c.hasVacancies(company) {
 			continue

@@ -1366,6 +1366,15 @@ func companiesPart8() []domain.CompanyProfile {
 							WithSalary:           true,                   // $60.00 - $77.00/ hr
 							Remote:               false,
 						},
+						{
+							Title:                "Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4210661164/",
+							Date:                 mustDate("2025-04-15"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -2745,6 +2754,15 @@ func companiesPart8() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4206309343/",
 							Date:                 mustDate("2025-04-12"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+						{
+							Title:                "Senior Software Developer – Scala",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4210601146/",
+							Date:                 mustDate("2025-04-15"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -6859,9 +6877,22 @@ func companiesPart8() []domain.CompanyProfile {
 				Alias: "",
 			},
 			Languages: domain.Languages{
-				domain.Go:   {},
-				domain.Rust: {},
-				domain.Zig:  {},
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Development Engineer II – Rust",
+							ShortDescription:     "Design and develop high-performance components for the ArcGIS API for Python using Rust and PyO3",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4190174086/",
+							Date:                 mustDate("2025-04-15"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig: {},
 				domain.Scala: {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{

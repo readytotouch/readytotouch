@@ -335,6 +335,7 @@ func main() {
 		Static("/assets/js", "./public/assets/js").
 		Static("/assets/unstable/logos/", "./public/logos-v0/adapted/").
 		Static("/assets/unstable/logos-v0/", "./public/logos-v0/adapted/").
+		Static("/assets/unstable/logos-v1/", "./public/logos-v1/adapted/").
 
 		// Favicons
 		StaticFile("/android-icon-144x144.png", "./public/android-icon-144x144.png").

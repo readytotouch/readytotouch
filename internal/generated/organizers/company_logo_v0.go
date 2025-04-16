@@ -3,7 +3,7 @@
 package organizers
 
 var (
-	CompanyAliasToLogoMap = map[string]string{
+	CompanyAliasToLogoMapV0 = map[string]string{
 		"1global":                            "1global.png",
 		"1nce":                               "1nce.png",
 		"1password":                          "1password.png",

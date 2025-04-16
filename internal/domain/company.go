@@ -121,7 +121,7 @@ type Vacancy struct {
 type PreparedCompany struct {
 	ID                        int64       // populates from the CompanyAliasToCodeMap
 	Type                      CompanyType // populates from the CompanyStartupMap
-	Logo                      string      // populates from the CompanyAliasToLogoMap
+	Logo                      CompanyLogo // populates from the CompanyAliasToLogoMap
 	Name                      string
 	Alias                     string // LinkedIn alias
 	Industries                []Industry
@@ -146,10 +146,15 @@ type LanguageProfile struct {
 	Vacancies               []Vacancy
 }
 
+type CompanyLogo struct {
+	V0 string
+	V1 string
+}
+
 type CompanyProfile struct {
 	ID                        int64       // populates from the CompanyAliasToCodeMap
 	Type                      CompanyType // populates from the CompanyStartupMap
-	Logo                      string      // populates from the CompanyAliasToLogoMap
+	Logo                      CompanyLogo // populates from the CompanyAliasToLogoMap
 	Remote                    bool        // Mark "remote" if the company has at least one remote job
 	Name                      string
 	Website                   string // Production website

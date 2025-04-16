@@ -236,23 +236,23 @@ func generateLogosSearch(companies []domain.CompanyProfile) {
 }
 
 func generateLogos(companies []domain.CompanyProfile) {
-	aliasImagePairs, err := fetchAliasImagePairs("./public/logos-v0/mapping.txt")
+	aliasImagePairs, err := fetchAliasImagePairs("./public/logos-v1/mapping.txt")
 	if err != nil {
 		panic(err)
 	}
-
-	for _, aliasImagePair := range aliasImagePairs {
-		if _, ok := organizers.CompanyAliasToCodeMap[aliasImagePair.Alias]; !ok {
-			panic(fmt.Sprintf("Company alias not found: %s", aliasImagePair.Alias))
+	/*
+		for _, aliasImagePair := range aliasImagePairs {
+			if _, ok := organizers.CompanyAliasToCodeMap[aliasImagePair.Alias]; !ok {
+				panic(fmt.Sprintf("Company alias not found: %s", aliasImagePair.Alias))
+			}
 		}
-	}
-
-	output, err := format.Source([]byte(dev.CompanyLogo(aliasImagePairs)))
+	*/
+	output, err := format.Source([]byte(dev.CompanyLogo(aliasImagePairs, 1)))
 	if err != nil {
 		panic(err)
 	}
 
-	err = os.WriteFile("./internal/generated/organizers/company_logo.go", output, 0644)
+	err = os.WriteFile("./internal/generated/organizers/company_logo_v1.go", output, 0644)
 	if err != nil {
 		panic(err)
 	}
@@ -326,7 +326,10 @@ func fetchAliasImagePairs(filename string) ([]*dev.CompanyLogoPair, error) {
 		parts := strings.Split(line, " ")
 
 		if len(parts) != 2 {
-			return nil, fmt.Errorf("invalid line: %s", line)
+			continue
+			/*
+				return nil, fmt.Errorf("invalid line: %s", line)
+			*/
 		}
 
 		result = append(result, &dev.CompanyLogoPair{

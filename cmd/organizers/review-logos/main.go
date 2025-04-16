@@ -19,12 +19,17 @@ func main() {
 		companies = db.CloneCompanies()
 	)
 
+	_ = companies
+
 	/*
 		review("./public/logos-v0/original/")
 		review("./public/logos-v0/adapted/")
 	*/
+	/*
+		prepareLogosV1Mapping(companies)
+	*/
 
-	prepareLogosV1Mapping(companies)
+	review("./public/logos-v1/adapted/")
 }
 
 func review(dir string) {
@@ -58,7 +63,7 @@ func review(dir string) {
 		imageExistsMap[fileName] = alias
 	}
 
-	aliasImageMap, err := fetchAliasImageMap("./public/logos-v0/mapping.txt")
+	aliasImageMap, err := fetchAliasImageMap("./public/logos-v1/mapping.txt")
 	if err != nil {
 		panic(err)
 	}
@@ -72,6 +77,12 @@ func assertCorrectnessAliasImageMap(aliasImageMap map[string]string, aliasMap ma
 	for alias, image := range aliasImageMap {
 		if _, ok := aliasMap[alias]; !ok {
 			panic(fmt.Sprintf("alias not found: %s", alias))
+		}
+
+		if image == "" {
+			// can be empty
+
+			continue
 		}
 
 		if _, ok := imageExistsMap[image]; !ok {
@@ -129,12 +140,20 @@ func fetchAliasImageMap(filename string) (map[string]string, error) {
 		line := scanner.Text()
 		parts := strings.Split(line, " ")
 
-		if len(parts) != 2 {
+		var (
+			key   string
+			value string
+		)
+
+		if len(parts) == 1 {
+			key = parts[0]
+			value = ""
+		} else if len(parts) == 2 {
+			key = parts[0]
+			value = parts[1]
+		} else {
 			return nil, fmt.Errorf("invalid line: %s", line)
 		}
-
-		key := parts[0]
-		value := parts[1]
 
 		if _, ok := dataMap[key]; ok {
 			return nil, fmt.Errorf("duplicate key: %s", key)
