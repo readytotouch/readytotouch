@@ -1019,7 +1019,7 @@ func (c *Controller) organizerFeature(path string) (domain.OrganizerFeature, boo
 			Organizer: domain.OrganizerGolang,
 			Feature:   dbs.FeatureWaitOrganizerGolangVacancies,
 			Path:      path,
-			Title:     "Vacancies",
+			Title:     "Jobs",
 		},
 		"/organizers/rust/companies": {
 			Organizer: domain.OrganizerRust,
@@ -1031,7 +1031,7 @@ func (c *Controller) organizerFeature(path string) (domain.OrganizerFeature, boo
 			Organizer: domain.OrganizerRust,
 			Feature:   dbs.FeatureWaitOrganizerRustVacancies,
 			Path:      path,
-			Title:     "Vacancies",
+			Title:     "Jobs",
 		},
 		"/organizers/zig/companies": {
 			Organizer: domain.OrganizerZig,
@@ -1043,7 +1043,7 @@ func (c *Controller) organizerFeature(path string) (domain.OrganizerFeature, boo
 			Organizer: domain.OrganizerZig,
 			Feature:   dbs.FeatureWaitOrganizerZigVacancies,
 			Path:      path,
-			Title:     "Vacancies",
+			Title:     "Jobs",
 		},
 		"/organizers/scala/companies": {
 			Organizer: domain.OrganizerScala,
@@ -1055,7 +1055,7 @@ func (c *Controller) organizerFeature(path string) (domain.OrganizerFeature, boo
 			Organizer: domain.OrganizerScala,
 			Feature:   dbs.FeatureWaitOrganizerScalaVacancies,
 			Path:      path,
-			Title:     "Vacancies",
+			Title:     "Jobs",
 		},
 		"/organizers/elixir/companies": {
 			Organizer: domain.OrganizerElixir,
@@ -1067,7 +1067,7 @@ func (c *Controller) organizerFeature(path string) (domain.OrganizerFeature, boo
 			Organizer: domain.OrganizerElixir,
 			Feature:   dbs.FeatureWaitOrganizerElixirVacancies,
 			Path:      path,
-			Title:     "Vacancies",
+			Title:     "Jobs",
 		},
 		"/organizers/clojure/companies": {
 			Organizer: domain.OrganizerClojure,
@@ -1079,7 +1079,7 @@ func (c *Controller) organizerFeature(path string) (domain.OrganizerFeature, boo
 			Organizer: domain.OrganizerClojure,
 			Feature:   dbs.FeatureWaitOrganizerClojureVacancies,
 			Path:      path,
-			Title:     "Vacancies",
+			Title:     "Jobs",
 		},
 	}
 

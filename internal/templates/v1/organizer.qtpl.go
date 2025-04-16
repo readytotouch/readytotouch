@@ -89,7 +89,7 @@ func StreamOrganizerStatic(qw422016 *qt422016.Writer, companies []Company, unive
                                 </th>
                                 <th>
                                     <img src="/assets/images/pages/common/link.svg" alt="link">
-                                    <span>Vacancies</span>
+                                    <span>Jobs</span>
                                 </th>
                             </tr>
                         </thead>
