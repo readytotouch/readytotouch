@@ -126,6 +126,13 @@ function date() {
 
             return new Intl.DateTimeFormat("en-CA").format(past);
         }
+
+        if (publishedAt.includes("1 year ago")) {
+            const past = new Date();
+            past.setMonth(past.getMonth() - 12);
+
+            return new Intl.DateTimeFormat("en-CA").format(past);
+        }
     }
 
     return new Intl.DateTimeFormat("en-CA").format(new Date());
