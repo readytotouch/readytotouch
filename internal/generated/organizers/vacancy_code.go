@@ -1570,6 +1570,18 @@ var (
 		"https://www.linkedin.com/jobs/view/4171670883/":                                                               1564, // eightcap-aufx
 		"https://www.linkedin.com/jobs/view/4209319499/":                                                               1565, // saberapp
 		"https://www.linkedin.com/jobs/view/4211003389/":                                                               1566, // caredotcom
+		"https://www.linkedin.com/jobs/view/4117821802/":                                                               1567, // accessowl
+		"https://www.linkedin.com/jobs/view/4056647024/":                                                               1568, // adobe
+		"https://www.linkedin.com/jobs/view/4140872032/":                                                               1569, // teller-inc
+		"https://www.linkedin.com/jobs/view/4152246608/":                                                               1570, // mux
+		"https://www.linkedin.com/jobs/view/4126340720/":                                                               1571, // cava-
+		"https://www.linkedin.com/jobs/view/4068277723/":                                                               1572, // cabify
+		"https://www.linkedin.com/jobs/view/4177515860/":                                                               1573, // togethercomputer
+		"https://www.linkedin.com/jobs/view/4211721655/":                                                               1574, // telnyx
+		"https://www.linkedin.com/jobs/view/4186581023/":                                                               1575, // eunasolutions
+		"https://www.linkedin.com/jobs/view/4188235715/":                                                               1576, // driftrock
+		"https://www.linkedin.com/jobs/view/3758901108/":                                                               1577, // greyscout
+		"https://www.linkedin.com/jobs/view/3860724318/":                                                               1578, // padlet
 
 	}
 )

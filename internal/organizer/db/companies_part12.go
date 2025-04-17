@@ -4467,7 +4467,7 @@ func companiesPart12() []domain.CompanyProfile {
 							Title:                "Elixir Backend Engineer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "https://www.linkedin.com/jobs/view/elixir-backend-engineer-amsterdam-at-together-ai-4177515860/",
+							URL:                  "https://www.linkedin.com/jobs/view/4177515860/",
 							Date:                 mustDate("2025-03-17"),
 							WithSalary:           false,
 							Remote:               false,

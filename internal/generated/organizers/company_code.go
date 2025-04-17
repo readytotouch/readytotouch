@@ -858,6 +858,19 @@ var (
 		"eightcap-aufx":                       856, // Eightcap
 		"saberapp":                            857, // Saber
 		"caredotcom":                          858, // Care.com
+		"accessowl":                           859, // AccessOwl
+		"adobe":                               860, // Adobe
+		"teller-inc":                          861, // Teller
+		"mux":                                 862, // Mux
+		"cava-":                               863, // CAVA
+		"cabify":                              864, // Cabify
+		"covermymeds":                         865, // CoverMyMeds
+		"togethercomputer":                    866, // Together AI
+		"telnyx":                              867, // Telnyx
+		"eunasolutions":                       868, // Euna Solutions
+		"driftrock":                           869, // Driftrock
+		"greyscout":                           870, // GreyScout
+		"padlet":                              871, // Padlet
 
 	}
 )
