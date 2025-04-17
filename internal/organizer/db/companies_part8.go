@@ -4815,6 +4815,15 @@ func companiesPart8() []domain.CompanyProfile {
 							WithSalary:           true, // $140.000 - $200.000 per year
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Elixir Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4187678076/",
+							Date:                 mustDate("2025-03-18"),
+							WithSalary:           true,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Clojure: {},
