@@ -33,7 +33,7 @@ function highlightVacancyTitle() {
 
     searchLinkedInCompanyProfile($vacancyTitle.querySelector("a"))
 
-    const url = window.location.origin + window.location.pathname;
+    const url = normalizeURL(window.location.origin + window.location.pathname);
 
     for (const vacancy of vacanciesCache) {
         if (vacancy.url === url) {
@@ -44,6 +44,19 @@ function highlightVacancyTitle() {
             return;
         }
     }
+}
+
+function normalizeURL(url) {
+    const prefix = "https://www.linkedin.com/jobs/view/";
+
+    if (url.startsWith(prefix)) {
+        const match = url.match(/\/jobs\/view\/.*?(\d{7,})/);
+        if (match && match[1]) {
+            return prefix + match[1] + "/";
+        }
+    }
+
+    return url;
 }
 
 function renderVacancyDate(date) {

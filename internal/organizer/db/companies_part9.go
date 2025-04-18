@@ -1303,11 +1303,24 @@ func companiesPart9() []domain.CompanyProfile {
 				Alias: "",
 			},
 			Languages: domain.Languages{
-				domain.Go:     {},
-				domain.Rust:   {},
-				domain.Zig:    {},
-				domain.Scala:  {},
-				domain.Elixir: {},
+				domain.Go:    {},
+				domain.Rust:  {},
+				domain.Zig:   {},
+				domain.Scala: {},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer – Elixir",
+							ShortDescription:     "Design and implementation of RESTful microservices in Elixir",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4008290372/",
+							Date:                 mustDate("2024-09-17"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
 				domain.Clojure: {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{

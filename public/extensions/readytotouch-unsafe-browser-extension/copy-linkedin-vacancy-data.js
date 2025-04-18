@@ -17,11 +17,13 @@ document.body.addEventListener("keydown", (event) => {
             .replace("Back End", "Back-End")
         ;
 
+        const url = normalizeURL(window.location.origin + window.location.pathname);
+
         const goLinkedInVacancyColumns = `{
 						    Title:                "${title}",
 						    ShortDescription:     "",
 						    SwitchingOpportunity: "",
-						    URL:                  "${window.location.origin + window.location.pathname}",
+						    URL:                  "${url}",
 						    Date:                 mustDate("${date()}"),
 						    WithSalary:           ${salary() ? "true" : "false"},
 						    Remote:               ${remote() ? "true" : "false"},
@@ -133,7 +135,28 @@ function date() {
 
             return new Intl.DateTimeFormat("en-CA").format(past);
         }
+
+        const matchYears = publishedAt.match(/^(\d+) years ago$/);
+        if (matchYears) {
+            const past = new Date();
+            past.setMonth(past.getMonth() - 12 * parseInt(matchYears[1], 10));
+
+            return new Intl.DateTimeFormat("en-CA").format(past);
+        }
     }
 
     return new Intl.DateTimeFormat("en-CA").format(new Date());
+}
+
+function normalizeURL(url) {
+    const prefix = "https://www.linkedin.com/jobs/view/";
+
+    if (url.startsWith(prefix)) {
+        const match = url.match(/\/jobs\/view\/.*?(\d{7,})/);
+        if (match && match[1]) {
+            return prefix + match[1] + "/";
+        }
+    }
+
+    return url;
 }
