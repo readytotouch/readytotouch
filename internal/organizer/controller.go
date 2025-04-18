@@ -949,11 +949,25 @@ func (c *Controller) UnsafeCompanies(ctx *gin.Context) {
 
 	result := make([]domain.UnsafeCompanyResponse, len(companies))
 	for i, company := range companies {
+		var languages []domain.UnsafeCompanyLanguageStats
+
+		for i, language := range company.Languages {
+			if len(language.Vacancies) == 0 {
+				continue
+			}
+
+			languages = append(languages, domain.UnsafeCompanyLanguageStats{
+				Language:       domain.Language(i).String(),
+				MaxVacancyDate: c.maxLanguageDate(language.Vacancies),
+			})
+		}
+
 		result[i] = domain.UnsafeCompanyResponse{
-			ID:     company.LinkedInProfile.ID,
-			Alias:  company.LinkedInProfile.Alias,
-			Name:   company.LinkedInProfile.Name,
-			Ignore: company.Ignore,
+			ID:        company.LinkedInProfile.ID,
+			Alias:     company.LinkedInProfile.Alias,
+			Name:      company.LinkedInProfile.Name,
+			Ignore:    company.Ignore,
+			Languages: languages,
 		}
 	}
 
@@ -980,6 +994,16 @@ func (c *Controller) UnsafeVacancies(ctx *gin.Context) {
 	ctx.JSON(http.StatusOK, &domain.UnsafeVacanciesResponse{
 		Vacancies: result,
 	})
+}
+
+func (c *Controller) maxLanguageDate(vacancies []domain.Vacancy) time.Time {
+	var maxLanguageDate time.Time
+	for _, vacancy := range vacancies {
+		if vacancy.Date.After(maxLanguageDate) {
+			maxLanguageDate = vacancy.Date
+		}
+	}
+	return maxLanguageDate
 }
 
 func (c *Controller) parseFeatureFromReferer(ctx *gin.Context) (dbs.FeatureWait, bool) {

@@ -12,19 +12,20 @@ var (
 
 func Companies() []domain.CompanyProfile {
 	var (
-		part1  = companiesPart1()
-		part2  = companiesPart2()
-		part3  = companiesPart3()
-		part4  = companiesPart4()
-		part5  = companiesPart5()
-		part6  = companiesPart6()
-		part7  = companiesPart7()
-		part8  = companiesPart8()
-		part9  = companiesPart9()
-		part10 = companiesPart10()
-		part11 = companiesPart11()
-		part12 = companiesPart12()
-		result = make([]domain.CompanyProfile, 0, len(part1)+
+		part1              = companiesPart1()
+		part2              = companiesPart2()
+		part3              = companiesPart3()
+		part4              = companiesPart4()
+		part5              = companiesPart5()
+		part6              = companiesPart6()
+		part7              = companiesPart7()
+		part8              = companiesPart8()
+		part9              = companiesPart9()
+		part10             = companiesPart10()
+		part11             = companiesPart11()
+		part12             = companiesPart12()
+		recruitingAgencies = companiesRecruitingAgencies()
+		result             = make([]domain.CompanyProfile, 0, len(part1)+
 			len(part2)+
 			len(part3)+
 			len(part4)+
@@ -35,7 +36,10 @@ func Companies() []domain.CompanyProfile {
 			len(part9)+
 			len(part10)+
 			len(part11)+
-			len(part12))
+			len(part12)+
+			len(recruitingAgencies) +
+			+0, // to speed up adding a new part
+		)
 	)
 
 	result = append(result, part1...)
@@ -50,6 +54,7 @@ func Companies() []domain.CompanyProfile {
 	result = append(result, part10...)
 	result = append(result, part11...)
 	result = append(result, part12...)
+	result = append(result, recruitingAgencies...)
 
 	return result
 }

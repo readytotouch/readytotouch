@@ -1536,7 +1536,7 @@ func companiesPart1() []domain.CompanyProfile {
 							ShortDescription:     "Runway",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4195326734/",
-							Date:                 mustDate("2025-03-27"),
+							Date:                 mustDate("2025-04-18"), // mustDate("2025-03-27"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -1546,6 +1546,15 @@ func companiesPart1() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4188909354/",
 							Date:                 mustDate("2025-04-10"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+						{
+							Title:                "Intermediate Backend (Go) Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4195324809/",
+							Date:                 mustDate("2025-04-18"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -1688,6 +1697,15 @@ func companiesPart1() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4127847711/",
 							Date:                 mustDate("2025-03-12"), // mustDate("2025-02-10"), // mustDate("2025-01-17"),
 							WithSalary:           true,                   // The pay range for this role is $121,000 - $198,000.
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Staff Software Engineer – Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4210109406/",
+							Date:                 mustDate("2025-04-17"),
+							WithSalary:           false,
 							Remote:               false,
 						},
 					},
@@ -5496,6 +5514,15 @@ func companiesPart1() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Software Engineer, Distributed Systems (Go and/or Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4147652357/",
+							Date:                 mustDate("2025-04-18"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
@@ -5535,6 +5562,15 @@ func companiesPart1() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4079142238/",
 							Date:                 mustDate("2025-02-17"),
 							WithSalary:           true, // $137.000 - $240.000 per year
+							Remote:               false,
+						},
+						{
+							Title:                "Software Engineer, Distributed Systems (Go and/or Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4147652357/",
+							Date:                 mustDate("2025-04-18"),
+							WithSalary:           false,
 							Remote:               false,
 						},
 					},
@@ -6410,6 +6446,15 @@ func companiesPart1() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Software Engineer (Go, Java)",
+							ShortDescription:     "Real-time Detection & Response",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4212558885/",
+							Date:                 mustDate("2025-04-18"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -6612,7 +6657,7 @@ func companiesPart1() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4129461691/",
-							Date:                 mustDate("2025-03-05"),
+							Date:                 mustDate("2025-04-17"), // mustDate("2025-03-05"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -15807,8 +15852,8 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Cognizant
 		{
-			ID:      0,  // system
-			Type:    "", // system
+			ID:      0,                           // system
+			Type:    domain.CompanyTypeOutsource, // system
 			Name:    "Cognizant",
 			Website: "https://www.cognizant.com/",
 			Careers: "https://careers.cognizant.com/global-en/",
@@ -15932,6 +15977,15 @@ func companiesPart1() []domain.CompanyProfile {
 							WithSalary:           true, // $68K — $108K per year
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Java Developer with Scala/Kafka Experience",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4210424636/",
+							Date:                 mustDate("2025-04-18"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Elixir:  {},
@@ -15950,6 +16004,7 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Ukraine,
 				domain.Czechia,
 			},
+			Ignore: true, // Outsource
 		},
 
 		// Some | Nuro
@@ -18130,6 +18185,15 @@ func companiesPart1() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4168179222/",
 							Date:                 mustDate("2025-04-02"), // mustDate("2025-02-28"),
 							WithSalary:           true,                   // $100.000 - $145.000 per year
+							Remote:               false,
+						},
+						{
+							Title:                "Software Engineer (Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4211120500/",
+							Date:                 mustDate("2025-04-18"),
+							WithSalary:           false,
 							Remote:               false,
 						},
 					},
@@ -21022,6 +21086,15 @@ func companiesPart1() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Principal Rust Software Engineer",
+							ShortDescription:     "Databases",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4212548005/",
+							Date:                 mustDate("2025-04-18"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig:     {},
@@ -22016,6 +22089,15 @@ func companiesPart1() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4100001937/",
 							Date:                 mustDate("2025-03-31"), // mustDate("2025-03-10"), // mustDate("2025-02-15"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Software Engineer (K8s & Go) – GraphQL",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4174170773/",
+							Date:                 mustDate("2025-04-18"),
 							WithSalary:           false,
 							Remote:               false,
 						},
