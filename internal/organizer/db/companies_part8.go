@@ -3253,6 +3253,15 @@ func companiesPart8() []domain.CompanyProfile {
 							WithSalary:           true, // $117.000 $234.000 per year
 							Remote:               false,
 						},
+						{
+							Title:                "Data Engineer III (Scala/Spark)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4208697441/",
+							Date:                 mustDate("2025-04-18"),
+							WithSalary:           true,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Elixir:  {},

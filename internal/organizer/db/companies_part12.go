@@ -2425,8 +2425,21 @@ func companiesPart12() []domain.CompanyProfile {
 						},
 					},
 				},
-				domain.Zig:     {},
-				domain.Scala:   {},
+				domain.Zig: {},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer – Scala",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4212933068/",
+							Date:                 mustDate("2025-04-18"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
 				domain.Elixir:  {},
 				domain.Clojure: {},
 				domain.Haskell: {},

@@ -15852,8 +15852,8 @@ func companiesPart1() []domain.CompanyProfile {
 
 		// Some | Cognizant
 		{
-			ID:      0,  // system
-			Type:    "", // system
+			ID:      0,                           // system
+			Type:    domain.CompanyTypeOutsource, // system
 			Name:    "Cognizant",
 			Website: "https://www.cognizant.com/",
 			Careers: "https://careers.cognizant.com/global-en/",
@@ -15977,6 +15977,15 @@ func companiesPart1() []domain.CompanyProfile {
 							WithSalary:           true, // $68K — $108K per year
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Java Developer with Scala/Kafka Experience",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4210424636/",
+							Date:                 mustDate("2025-04-18"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Elixir:  {},
@@ -15995,6 +16004,7 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Ukraine,
 				domain.Czechia,
 			},
+			Ignore: true, // Outsource
 		},
 
 		// Some | Nuro
