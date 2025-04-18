@@ -328,7 +328,7 @@ var (
 		"ayloservices":                        317, // Aylo
 		"factset":                             318, // FactSet
 		"voodoo.io":                           319, // Voodoo
-		"home24":                              320, // home24
+		"home24":                              320, // home24 SE
 		"australian-broadcasting-corporation": 321, // Australian Broadcasting Corporation
 		"go-nitro":                            322, // Nitro Software
 		"appodeal":                            323, // Appodeal
@@ -883,6 +883,16 @@ var (
 		"remote.com":                          881, // Remote
 		"heyfresha":                           882, // Fresha
 		"the-realreal":                        883, // The RealReal
+		"blackrock":                           884, // BlackRock
+		"diagrid-inc":                         885, // Diagrid
+		"foodji-marketplace-gmbh":             886, // Foodji
+		"inulti":                              887, // inulti
+		"bbraun-group":                        888, // B. Braun Group
+		"muzz":                                889, // Muzz
+		"oolio-au":                            890, // Oolio
+		"submer":                              891, // Submer
+		"prospect-33":                         892, // Prospect 33
+		"rockwell-automation":                 893, // Rockwell Automation
 
 	}
 )
