@@ -253,6 +253,15 @@ func companiesPart3() []domain.CompanyProfile {
 							WithSalary:           true, // $175,800 - $200,700
 							Remote:               false,
 						},
+						{
+							Title:                "Principal Software Engineer, Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4211721097/",
+							Date:                 mustDate("2025-04-17"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig: {},

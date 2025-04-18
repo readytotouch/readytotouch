@@ -184,5 +184,20 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Recruiting agency
 		},
+		{
+			Name:    "Radley James",
+			Website: "https://radleyjames.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1116353,
+				IDs:               nil,
+				Alias:             "radley-james",
+				Name:              "Radley James",
+				Followers:         "308K",
+				Employees:         "51-200",
+				AssociatedMembers: "38",
+				Verified:          false,
+			},
+			Ignore: true, // Recruiting agency
+		},
 	}
 }

@@ -1001,8 +1001,8 @@ func companiesPart5() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4173686573/",
-							Date:                 mustDate("2025-03-05"),
-							WithSalary:           true, // 350k-500k BRL (DOE) + annual variable bonus
+							Date:                 mustDate("2025-04-17"), // mustDate("2025-03-05"),
+							WithSalary:           true,                   // 350k-500k BRL (DOE) + annual variable bonus
 							Remote:               true,
 						},
 					},

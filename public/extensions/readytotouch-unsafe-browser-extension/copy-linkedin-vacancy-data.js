@@ -11,6 +11,7 @@ document.body.addEventListener("keydown", (event) => {
             .replace("(m/f/x)", " ").trim()
             .replace("(m/f/d)", " ").trim()
             .replace("(d/f/m)", " ").trim()
+            .replace("(f/m/d)", " ").trim()
             .replace("(all genders)", " ").trim()
             .replace("Sr.", "Senior")
             .replace("GoLang", "Golang")
