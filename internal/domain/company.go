@@ -19,6 +19,27 @@ const (
 	Haskell Language = 6
 )
 
+func (l Language) String() string {
+	switch l {
+	case Go:
+		return "Go"
+	case Rust:
+		return "Rust"
+	case Zig:
+		return "Zig"
+	case Scala:
+		return "Scala"
+	case Elixir:
+		return "Elixir"
+	case Clojure:
+		return "Clojure"
+	case Haskell:
+		return "Haskell"
+	default:
+		return ""
+	}
+}
+
 const (
 	GoTitleKeywords      LanguageTitleKeywords = `"Golang Engineer" OR "Golang Software Engineer" OR "Golang Developer" OR "Go Engineer" OR "Go Software Engineer" OR "Go Developer"`
 	RustTitleKeywords    LanguageTitleKeywords = `"Rust Engineer" OR "Rust Software Engineer" OR "Rust Developer"`
@@ -61,11 +82,17 @@ type LinkedInProfileResponse struct {
 	Name  string `json:"name"`
 }
 
+type UnsafeCompanyLanguageStats struct {
+	Language       string    `json:"language"`
+	MaxVacancyDate time.Time `json:"max_vacancy_date"`
+}
+
 type UnsafeCompanyResponse struct {
-	ID     int    `json:"id"`
-	Alias  string `json:"alias"`
-	Name   string `json:"name"`
-	Ignore bool   `json:"ignore"`
+	ID        int                          `json:"id"`
+	Alias     string                       `json:"alias"`
+	Name      string                       `json:"name"`
+	Ignore    bool                         `json:"ignore"`
+	Languages []UnsafeCompanyLanguageStats `json:"languages"`
 }
 
 type UnsafeVacancyResponse struct {
@@ -116,6 +143,8 @@ type Vacancy struct {
 	Date                 time.Time
 	WithSalary           bool
 	Remote               bool // Fully remote available
+	// @TODO: 401(k) match + equity
+	// @TODO: team "Payments & Checkout"
 }
 
 type PreparedCompany struct {
