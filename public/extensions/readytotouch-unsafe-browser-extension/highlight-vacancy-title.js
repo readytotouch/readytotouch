@@ -39,7 +39,7 @@ function highlightVacancyTitle() {
         if (vacancy.url === url) {
             $vacancyTitle.style.color = "#28a745";
 
-            renderVacancyDate(vacancy.date)
+            renderVacancyDate(vacancy.date, 0);
 
             return;
         }
@@ -59,13 +59,21 @@ function normalizeURL(url) {
     return url;
 }
 
-function renderVacancyDate(date) {
+let renderVacancyDateOnce = false;
+
+function renderVacancyDate(date, index) {
+    if (renderVacancyDateOnce) {
+        return;
+    }
+
+    renderVacancyDateOnce = true;
+
     const $date = document.createElement("div");
     $date.innerText = date;
 
     Object.assign($date.style, {
         position: "fixed",
-        bottom: "10px",
+        bottom: `${10 + index * 60}px`,
         right: "10px",
         backgroundColor: "rgba(0, 0, 0, 0.7)",
         color: "white",
