@@ -88,11 +88,13 @@ type UnsafeCompanyLanguageStats struct {
 }
 
 type UnsafeCompanyResponse struct {
-	ID        int                          `json:"id"`
-	Alias     string                       `json:"alias"`
-	Name      string                       `json:"name"`
-	Ignore    bool                         `json:"ignore"`
-	Languages []UnsafeCompanyLanguageStats `json:"languages"`
+	ID                 int                          `json:"id"`
+	Alias              string                       `json:"alias"`
+	Name               string                       `json:"name"`
+	GitHubProfileAlias string                       `json:"github_profile_alias"`
+	OttaProfileAlias   string                       `json:"otta_profile_alias"`
+	Ignore             bool                         `json:"ignore"`
+	Languages          []UnsafeCompanyLanguageStats `json:"languages"`
 }
 
 type UnsafeVacancyResponse struct {

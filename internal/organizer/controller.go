@@ -963,11 +963,13 @@ func (c *Controller) UnsafeCompanies(ctx *gin.Context) {
 		}
 
 		result[i] = domain.UnsafeCompanyResponse{
-			ID:        company.LinkedInProfile.ID,
-			Alias:     company.LinkedInProfile.Alias,
-			Name:      company.LinkedInProfile.Name,
-			Ignore:    company.Ignore,
-			Languages: languages,
+			ID:                 company.LinkedInProfile.ID,
+			Alias:              company.LinkedInProfile.Alias,
+			Name:               company.LinkedInProfile.Name,
+			GitHubProfileAlias: company.GitHubProfile.Login,
+			OttaProfileAlias:   company.OttaProfileSlug,
+			Ignore:             company.Ignore,
+			Languages:          languages,
 		}
 	}
 
