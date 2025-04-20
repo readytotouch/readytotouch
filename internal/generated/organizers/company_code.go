@@ -893,6 +893,11 @@ var (
 		"submer":                              891, // Submer
 		"prospect-33":                         892, // Prospect 33
 		"rockwell-automation":                 893, // Rockwell Automation
+		"wisehome":                            894, // Wise Home
+		"weedmaps":                            895, // Weedmaps
+		"versus-gaming-network":               896, // Versus Systems
+		"truely":                              897, // Truely Travel eSIM
+		"spreedly":                            898, // Spreedly
 
 	}
 )

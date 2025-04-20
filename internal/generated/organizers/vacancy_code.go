@@ -793,6 +793,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4187512182/":                                                               1539, // fanatics-inc-
 		"https://www.linkedin.com/jobs/view/4072221760/":                                                               72,   // kantox
 		"https://www.linkedin.com/jobs/view/4071960242/":                                                               73,   // smartrentdotcom
+		"https://www.linkedin.com/jobs/view/4130663803/":                                                               1640, // smartrentdotcom
 		"https://www.linkedin.com/jobs/view/4064330407/":                                                               74,   // join-denim
 		"https://www.linkedin.com/jobs/view/4058317241/":                                                               75,   // thryve-earth
 		"https://www.linkedin.com/jobs/view/4094392801/":                                                               832,  // thryve-earth
@@ -1643,6 +1644,11 @@ var (
 		"https://www.linkedin.com/jobs/view/4209740652/":                                                               1637, // submer
 		"https://www.linkedin.com/jobs/view/4211750274/":                                                               1638, // prospect-33
 		"https://www.linkedin.com/jobs/view/4212980639/":                                                               1639, // rockwell-automation
+		"https://www.linkedin.com/jobs/view/3992422571/":                                                               1641, // wisehome
+		"https://www.linkedin.com/jobs/view/4205786538/":                                                               1642, // weedmaps
+		"https://www.linkedin.com/jobs/view/4124935788/":                                                               1643, // versus-gaming-network
+		"https://www.linkedin.com/jobs/view/4152691095/":                                                               1644, // truely
+		"https://www.linkedin.com/jobs/view/4064317166/":                                                               1645, // spreedly
 
 	}
 )
