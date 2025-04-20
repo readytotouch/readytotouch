@@ -16,47 +16,64 @@ function fetchCompanyList() {
         });
 }
 
-function checkCompanyStatusFromCache(companyName) {
+function fetchCompany(companyName) {
     if (companiesCache === null) {
-        return "in_progress";
+        return null;
     }
 
-    const company = companiesCache.find(function (c) {
+    return companiesCache.find(function (c) {
         return c.name.toLowerCase() === companyName || c.id.toString() === companyName;
     });
-
-    if (company) {
-        if (company.ignore) {
-            return "ignore";
-        }
-
-        return "exists";
-    }
-
-    return "not_found";
 }
 
-function updateCompanyColor($companyName, status) {
-    if (status === "exists") {
-        $companyName.style.color = "#28a745";
-    } else if (status === "not_found") {
-        $companyName.style.color = "#007bff";
-    } else if (status === "in_progress") {
+function updateCompanyColor($companyName, company) {
+    if (companiesCache === null) {
         $companyName.style.color = "#ffc107";
-    } else if (status === "ignore") {
+    } else if (company === null) {
+        $companyName.style.color = "#007bff";
+    } else if (company.ignore) {
         $companyName.style.color = "#dc3545";
+    } else {
+        $companyName.style.color = "#28a745";
     }
 }
 
 function monitorCompanyNameChange() {
     const $companyName = getCompanyNameElement();
+    if ($companyName === null) {
+        return;
+    }
 
-    if ($companyName) {
-        const currentCompanyName = $companyName.textContent.trim().toLowerCase();
+    const currentCompanyName = $companyName.textContent.trim().toLowerCase();
 
-        const status = checkCompanyStatusFromCache(currentCompanyName);
+    const company = fetchCompany(currentCompanyName);
 
-        updateCompanyColor($companyName, status);
+    updateCompanyColor($companyName, company);
+
+    renderCompanyLanguages(company);
+}
+
+let renderCompanyLanguagesOnce = false;
+
+function renderCompanyLanguages(company) {
+    if (company === null || company.languages === null || company.languages.length === 0) {
+        return;
+    }
+
+    if (!window.location.href.startsWith("https://www.linkedin.com/jobs/view/")) {
+        return;
+    }
+
+    if (renderCompanyLanguagesOnce) {
+        return;
+    }
+
+    renderCompanyLanguagesOnce = true;
+
+    for (let i = 0; i < company.languages.length; i++) {
+        const language = company.languages[i];
+
+        renderLanguageMaxVacancyDate(language.language, language.max_vacancy_date, company.languages.length - i);
     }
 }
 
@@ -76,6 +93,27 @@ function getCompanyNameElement() {
     }
 
     return null;
+}
+
+function renderLanguageMaxVacancyDate(language, date, index) {
+    const $date = document.createElement("div");
+    $date.innerText = `${language}: ${date}`;
+
+    Object.assign($date.style, {
+        position: "fixed",
+        bottom: `${10 + index * 60}px`,
+        right: "10px",
+        backgroundColor: "rgba(0, 0, 0, 0.7)",
+        color: "white",
+        padding: "10px 15px",
+        borderRadius: "8px",
+        fontSize: "16px",
+        zIndex: "999999",
+        fontFamily: "sans-serif",
+        boxShadow: "0 4px 12px rgba(0, 0, 0, 0.3)",
+    });
+
+    document.body.appendChild($date);
 }
 
 function initializeCompanyCache() {

@@ -199,5 +199,80 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Recruiting agency
 		},
+		{
+			Name:    "Spectrum IT Recruitment",
+			Website: "https://www.spectrumit.co.uk/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                206206,
+				IDs:               nil,
+				Alias:             "spectrum-it-recruitment",
+				Name:              "Spectrum IT Recruitment",
+				Followers:         "149K",
+				Employees:         "11-50",
+				AssociatedMembers: "41",
+				Verified:          false,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "RJC Group",
+			Website: "https://www.rjcgroup.co.uk/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                10333877,
+				IDs:               nil,
+				Alias:             "rjc-group-ltd",
+				Name:              "RJC Group",
+				Followers:         "41K",
+				Employees:         "11-50",
+				AssociatedMembers: "29",
+				Verified:          false,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Identify Solutions",
+			Website: "https://identifysolutions.co.uk/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                19023795,
+				IDs:               nil,
+				Alias:             "identify-solutions-ltd",
+				Name:              "Identify Solutions",
+				Followers:         "44K",
+				Employees:         "11-50",
+				AssociatedMembers: "8",
+				Verified:          false,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "IDR, Inc.",
+			Website: "https://www.idr-inc.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                259589,
+				IDs:               nil,
+				Alias:             "idrinc",
+				Name:              "IDR, Inc.",
+				Followers:         "527K",
+				Employees:         "501-1K",
+				AssociatedMembers: "514",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Phaxis",
+			Website: "https://phaxis.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                106083,
+				IDs:               nil,
+				Alias:             "phaxis-consulting",
+				Name:              "Phaxis",
+				Followers:         "273K",
+				Employees:         "51-200",
+				AssociatedMembers: "201",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
 	}
 }
