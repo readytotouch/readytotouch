@@ -351,6 +351,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4151653458/":                                                               823,  // sailpoint-technologies
 		"https://www.linkedin.com/jobs/view/4137755120/":                                                               909,  // sailpoint-technologies
 		"https://www.linkedin.com/jobs/view/4158963804/":                                                               923,  // sailpoint-technologies
+		"https://www.linkedin.com/jobs/view/4213006840/":                                                               1646, // sailpoint-technologies
 		"https://www.linkedin.com/jobs/view/3797062001/":                                                               353,  // proofpoint
 		"https://www.linkedin.com/jobs/view/4165243684/":                                                               984,  // asset-reality
 		"https://www.linkedin.com/jobs/view/3910221910/":                                                               354,  // rxbenefits-inc-
@@ -446,6 +447,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4104811687/":                                                               289,  // palo-alto-networks
 		"https://www.linkedin.com/jobs/view/4104810631/":                                                               652,  // palo-alto-networks
 		"https://www.linkedin.com/jobs/view/4018720987/":                                                               438,  // scitecinc
+		"https://www.linkedin.com/jobs/view/4195925867/":                                                               1647, // scitecinc
 		"https://www.linkedin.com/jobs/view/4034993832/":                                                               439,  // stack-x-me
 		"https://www.linkedin.com/jobs/view/4071554607/":                                                               22,   // the-walt-disney-company
 		"https://www.linkedin.com/jobs/view/4088472435/":                                                               290,  // the-walt-disney-company
@@ -783,6 +785,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4055078837/":                                                               66,   // extreme-networks
 		"https://www.linkedin.com/jobs/view/4134262544/":                                                               735,  // extreme-networks
 		"https://www.linkedin.com/jobs/view/4037222694/":                                                               67,   // yalo
+		"https://www.linkedin.com/jobs/view/4195769149/":                                                               1648, // yalo
 		"https://www.linkedin.com/jobs/view/4061088133/":                                                               68,   // remarkable-as
 		"https://www.linkedin.com/jobs/view/4027571222/":                                                               69,   // synopsys
 		"https://www.linkedin.com/jobs/view/4044830862/":                                                               70,   // pubmatic
@@ -1649,6 +1652,8 @@ var (
 		"https://www.linkedin.com/jobs/view/4124935788/":                                                               1643, // versus-gaming-network
 		"https://www.linkedin.com/jobs/view/4152691095/":                                                               1644, // truely
 		"https://www.linkedin.com/jobs/view/4064317166/":                                                               1645, // spreedly
+		"https://www.linkedin.com/jobs/view/4208320140/":                                                               1649, // tabtechnology
+		"https://www.linkedin.com/jobs/view/4211532061/":                                                               1650, // rakuten-symphony
 
 	}
 )

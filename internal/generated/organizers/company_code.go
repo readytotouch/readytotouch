@@ -898,6 +898,8 @@ var (
 		"versus-gaming-network":               896, // Versus Systems
 		"truely":                              897, // Truely Travel eSIM
 		"spreedly":                            898, // Spreedly
+		"tabtechnology":                       899, // Tab
+		"rakuten-symphony":                    900, // Rakuten Symphony
 
 	}
 )
