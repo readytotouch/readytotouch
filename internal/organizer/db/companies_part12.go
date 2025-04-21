@@ -2628,7 +2628,7 @@ func companiesPart12() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4204685114/",
-							Date:                 mustDate("2025-04-11"),
+							Date:                 mustDate("2025-04-21"), // mustDate("2025-04-11"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -6930,6 +6930,129 @@ func companiesPart12() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Product management platform",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Paradigm",
+			Website: "https://www.paradigm.xyz/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                18995890,
+				IDs:               nil,
+				Alias:             "paradigm-xyz",
+				Name:              "Paradigm",
+				Followers:         "23K",
+				Employees:         "51-200",
+				AssociatedMembers: "116",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Rust Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4213274043/",
+							Date:                 mustDate("2025-04-20"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Crypto investment firm",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+			Ignore: true, // Cryptocurrency
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    ".txt",
+			Website: "https://dottxt.co/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                100259483,
+				IDs:               nil,
+				Alias:             "dottxt",
+				Name:              ".txt",
+				Followers:         "5K",
+				Employees:         "2-10",
+				AssociatedMembers: "24",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Staff Rust Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4212846266/",
+							Date:                 mustDate("2025-04-22"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Making AI speak computers",
 			Industries:       []domain.Industry{
 				// NOP
 			},
