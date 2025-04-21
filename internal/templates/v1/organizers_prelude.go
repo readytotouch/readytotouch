@@ -254,7 +254,7 @@ func logoV1(l domain.CompanyLogo) string {
 
 func logoV0(l domain.CompanyLogo) string {
 	if l.V0 != "" {
-		return "/assets/unstable/logos-v1/" + l.V0
+		return "/assets/unstable/logos-v0/" + l.V0
 	}
 
 	return "/assets/images/pages/common-images/unknown.svg"

@@ -409,7 +409,7 @@ func companiesPart4() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4175846907/",
-							Date:                 mustDate("2025-03-28"), // mustDate("2025-03-08"),
+							Date:                 mustDate("2025-04-20"), // mustDate("2025-03-28"), // mustDate("2025-03-08"),
 							WithSalary:           true,                   //  $96,600.92 - $226,408.42 per year
 							Remote:               true,
 						},
@@ -571,7 +571,7 @@ func companiesPart4() []domain.CompanyProfile {
 							ShortDescription:     "Ryte",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4151601136/",
-							Date:                 mustDate("2025-03-30"), // mustDate("2025-02-13"),
+							Date:                 mustDate("2025-04-20"), // mustDate("2025-03-30"), // mustDate("2025-02-13"),
 							WithSalary:           false,
 							Remote:               false,
 						},
