@@ -4799,7 +4799,7 @@ func companiesPart2() []domain.CompanyProfile {
 							ShortDescription:     "Self Delivery",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4179813140/",
-							Date:                 mustDate("2025-03-11"),
+							Date:                 mustDate("2025-04-19"), // mustDate("2025-03-11"),
 							WithSalary:           false,
 							Remote:               false,
 						},
