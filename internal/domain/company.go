@@ -214,6 +214,7 @@ type CompanyProfile struct {
 	RustFoundationMember      bool // https://foundation.rust-lang.org/members/
 	Ignore                    bool
 	SyncSources               []CompanySyncSource
+	PinnedUntil               time.Time
 }
 
 type UnsafeCompaniesResponse struct {

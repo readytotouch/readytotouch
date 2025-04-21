@@ -1,6 +1,10 @@
 package db
 
-import "github.com/readytotouch/readytotouch/internal/domain"
+import (
+	"time"
+
+	"github.com/readytotouch/readytotouch/internal/domain"
+)
 
 func companiesPart1() []domain.CompanyProfile {
 	return []domain.CompanyProfile{
@@ -2487,7 +2491,7 @@ func companiesPart1() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 2,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer — Turbopack",
@@ -2511,6 +2515,7 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.IndustryDevOps,
 			},
 			HasEmployeesFromCountries: []domain.Country{},
+			PinnedUntil:               time.Date(2025, time.April, 25, 23, 59, 59, 0, time.UTC), // Demo
 		},
 
 		// Tech | Fastly
