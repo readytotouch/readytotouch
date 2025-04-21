@@ -900,6 +900,9 @@ var (
 		"spreedly":                            898, // Spreedly
 		"tabtechnology":                       899, // Tab
 		"rakuten-symphony":                    900, // Rakuten Symphony
+		"airfocus":                            901, // airfocus by Lucid
+		"dottxt":                              902, // .txt
+		"omniful":                             903, // Omniful
 
 	}
 )

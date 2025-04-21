@@ -199,7 +199,7 @@ func (c *Controller) CompaniesV2(ctx *gin.Context) {
 	content := template.OrganizersCompaniesV2(
 		organizerFeature,
 		headerProfiles,
-		companies,
+		c.pinnedFirst(companies),
 		db.UkrainianUniversities(),
 		db.CzechUniversities(),
 		userCompanyFavoriteMap,
@@ -1570,6 +1570,23 @@ func (c *Controller) random(language domain.Language) bool {
 	}
 
 	return false
+}
+
+func (c *Controller) pinnedFirst(companies []domain.CompanyProfile) []domain.CompanyProfile {
+	var (
+		pinnedCompanies   = make([]domain.CompanyProfile, 0, len(companies))
+		unpinnedCompanies = make([]domain.CompanyProfile, 0, len(companies))
+		now               = time.Now()
+	)
+	for _, company := range companies {
+		if company.PinnedUntil.After(now) && company.LinkedInProfile.Verified {
+			pinnedCompanies = append(pinnedCompanies, company)
+		} else {
+			unpinnedCompanies = append(unpinnedCompanies, company)
+		}
+	}
+
+	return append(pinnedCompanies, unpinnedCompanies...)
 }
 
 func (c *Controller) skipSmallCompany(company domain.CompanyProfile) bool {

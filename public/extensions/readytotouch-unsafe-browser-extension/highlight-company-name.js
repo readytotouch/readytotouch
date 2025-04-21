@@ -27,9 +27,9 @@ function fetchCompany(companyName) {
 }
 
 function updateCompanyColor($companyName, company) {
-    if (companiesCache === null) {
+    if (!companiesCache) {
         $companyName.style.color = "#ffc107";
-    } else if (company === null) {
+    } else if (!company) {
         $companyName.style.color = "#007bff";
     } else if (company.ignore) {
         $companyName.style.color = "#dc3545";

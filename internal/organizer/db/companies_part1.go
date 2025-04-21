@@ -1,6 +1,10 @@
 package db
 
-import "github.com/readytotouch/readytotouch/internal/domain"
+import (
+	"time"
+
+	"github.com/readytotouch/readytotouch/internal/domain"
+)
 
 func companiesPart1() []domain.CompanyProfile {
 	return []domain.CompanyProfile{
@@ -2487,7 +2491,7 @@ func companiesPart1() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 2,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer — Turbopack",
@@ -2511,6 +2515,7 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.IndustryDevOps,
 			},
 			HasEmployeesFromCountries: []domain.Country{},
+			PinnedUntil:               time.Date(2025, time.April, 25, 23, 59, 59, 0, time.UTC), // Demo
 		},
 
 		// Tech | Fastly
@@ -5311,7 +5316,7 @@ func companiesPart1() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4134704785/",
-							Date:                 mustDate("2025-03-10"), // mustDate("2025-01-25"),
+							Date:                 mustDate("2025-04-21"), // mustDate("2025-03-10"), // mustDate("2025-01-25"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -5510,7 +5515,7 @@ func companiesPart1() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4038010253/",
-							Date:                 mustDate("2025-03-31"), // mustDate("2025-03-08"), // mustDate("2025-02-15"), // mustDate("2025-01-20"),
+							Date:                 mustDate("2025-04-21"), // mustDate("2025-03-31"), // mustDate("2025-03-08"), // mustDate("2025-02-15"), // mustDate("2025-01-20"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -5551,7 +5556,7 @@ func companiesPart1() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4038010253/",
-							Date:                 mustDate("2025-03-31"), // mustDate("2025-02-15"), // mustDate("2025-01-20"),
+							Date:                 mustDate("2025-04-21"), // mustDate("2025-03-31"), // mustDate("2025-02-15"), // mustDate("2025-01-20"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -7224,7 +7229,7 @@ func companiesPart1() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4196140624/",
-							Date:                 mustDate("2025-03-28"),
+							Date:                 mustDate("2025-04-20"), // mustDate("2025-03-28"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -19824,7 +19829,7 @@ func companiesPart1() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4114584098/",
-							Date:                 mustDate("2025-04-08"), // mustDate("2025-03-13"), // mustDate("2025-02-11"),
+							Date:                 mustDate("2025-04-21"), // mustDate("2025-04-08"), // mustDate("2025-03-13"), // mustDate("2025-02-11"),
 							WithSalary:           true,                   // The base salary range for this position is between $180,000 - $230,000
 							Remote:               false,
 						},
