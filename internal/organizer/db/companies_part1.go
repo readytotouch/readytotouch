@@ -17043,6 +17043,12 @@ func companiesPart1() []domain.CompanyProfile {
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Compass-EI_IE719025.11,18.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Compass-Reviews-E719025.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Compass-Jobs-E719025.htm",
+				Jobs:        "75",
+				Reviews:     "2.8K",
+				Salaries:    "4.4K",
+				ReviewsRate: "3.8",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",

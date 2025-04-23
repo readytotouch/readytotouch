@@ -1385,6 +1385,8 @@ func (c *Controller) DataPopulationCompaniesGlassdoor(ctx *gin.Context) {
 		})
 	)
 
+	slices.Reverse(companies)
+
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationCompaniesGlassdoor(companies, "Populate Glassdoor")))
 }
 

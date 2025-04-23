@@ -1458,7 +1458,14 @@ func companiesPart10() []domain.CompanyProfile {
 				Employees: "150",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Gremlin-EI_IE2056439.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Gremlin-Reviews-E2056439.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Gremlin-Jobs-E2056439.htm",
+				Jobs:        "",
+				Reviews:     "24",
+				Salaries:    "39",
+				ReviewsRate: "3.4",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -1948,7 +1955,14 @@ func companiesPart10() []domain.CompanyProfile {
 				Employees: "30",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Materialize-EI_IE2898477.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Materialize-Reviews-E2898477.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Materialize-Jobs-E2898477.htm",
+				Jobs:        "",
+				Reviews:     "8",
+				Salaries:    "17",
+				ReviewsRate: "4.2",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -2226,7 +2240,14 @@ func companiesPart10() []domain.CompanyProfile {
 				Employees: "480",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Qumulo-EI_IE678884.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Qumulo-Reviews-E678884.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Qumulo-Jobs-E678884.htm",
+				Jobs:        "8",
+				Reviews:     "188",
+				Salaries:    "291",
+				ReviewsRate: "3.7",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
