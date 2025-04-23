@@ -274,5 +274,35 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Recruiting agency
 		},
+		{
+			Name:    "Liberty Personnel Services, Inc.",
+			Website: "https://libertyjobs.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                40956,
+				IDs:               nil,
+				Alias:             "liberty-personnel-services-inc",
+				Name:              "Liberty Personnel Services, Inc.",
+				Followers:         "289K",
+				Employees:         "51-200",
+				AssociatedMembers: "71",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Robert Half",
+			Website: "https://www.roberthalf.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1681,
+				IDs:               nil,
+				Alias:             "robert-half-international",
+				Name:              "Robert Half",
+				Followers:         "4M",
+				Employees:         "10K+",
+				AssociatedMembers: "27,978",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
 	}
 }
