@@ -757,7 +757,7 @@ func companiesPart11() []domain.CompanyProfile {
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "Tubi",
-			Website: "http://tubitv.com/",
+			Website: "https://tubitv.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",

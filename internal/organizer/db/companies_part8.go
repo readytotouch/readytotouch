@@ -4641,7 +4641,7 @@ func companiesPart8() []domain.CompanyProfile {
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "Kiwi.com",
-			Website: "http://kiwi.com/",
+			Website: "https://kiwi.com/",
 			Careers: "https://jobs.kiwi.com/",
 			About:   "https://jobs.kiwi.com/about-us/",
 			LinkedInProfile: domain.LinkedInProfile{

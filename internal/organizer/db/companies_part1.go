@@ -19224,7 +19224,7 @@ func companiesPart1() []domain.CompanyProfile {
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "Sony Interactive Entertainment",
-			Website: "http://www.sonyinteractive.com/",
+			Website: "https://www.sonyinteractive.com/",
 			Careers: "https://sonyinteractive.com/careers/",
 			About:   "https://sonyinteractive.com/our-company/",
 			Blog:    "https://sonyinteractive.com/news/blog/category/engineering/",

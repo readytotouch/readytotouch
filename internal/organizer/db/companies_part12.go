@@ -1785,7 +1785,7 @@ func companiesPart12() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "Kantar",
 			Website: "https://www.kantar.com/",
-			Careers: "",
+			Careers: "https://www.kantar.com/careers",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2598,7 +2598,7 @@ func companiesPart12() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "Collins Aerospace",
 			Website: "https://www.collinsaerospace.com/",
-			Careers: "",
+			Careers: "https://www.collinsaerospace.com/careers/engineering",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3553,7 +3553,7 @@ func companiesPart12() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "LSEG (London Stock Exchange Group)",
 			Website: "https://www.lseg.com/",
-			Careers: "",
+			Careers: "https://www.lseg.com/careers",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4308,7 +4308,7 @@ func companiesPart12() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "Adobe",
 			Website: "https://www.adobe.com/",
-			Careers: "",
+			Careers: "https://www.adobe.com/careers.html",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -6716,7 +6716,7 @@ func companiesPart12() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "Rockwell Automation",
 			Website: "https://www.rockwellautomation.com/",
-			Careers: "",
+			Careers: "https://www.rockwellautomation.com/careers.html",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -8382,7 +8382,7 @@ func companiesPart12() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "Black Duck",
 			Website: "https://www.blackduck.com/",
-			Careers: "",
+			Careers: "https://www.blackduck.com/company/careers.html",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -8504,7 +8504,7 @@ func companiesPart12() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "Deutsche Telekom",
 			Website: "https://www.telekom.com/",
-			Careers: "",
+			Careers: "https://www.telekom.com/careers",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -8565,7 +8565,7 @@ func companiesPart12() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "ParshipMeet Group",
 			Website: "https://www.parshipmeet.com/",
-			Careers: "",
+			Careers: "https://www.parshipmeet.com/careers/",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
