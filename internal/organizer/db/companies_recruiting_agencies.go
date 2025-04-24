@@ -304,5 +304,20 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Recruiting agency
 		},
+		{
+			Name:    "Cpl",
+			Website: "https://www.cpl.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                163237,
+				IDs:               []int{163237, 333317, 486582, 830729, 868838, 1134057, 14831142, 15251866, 64752574, 69269271, 87085983, 94292973},
+				Alias:             "cpl",
+				Name:              "Cpl",
+				Followers:         "382K",
+				Employees:         "10K+",
+				AssociatedMembers: "4,654",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
 	}
 }
