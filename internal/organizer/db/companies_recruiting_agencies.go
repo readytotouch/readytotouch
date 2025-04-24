@@ -334,5 +334,50 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // https://www.linkedin.com/jobs/view/4211617362/ Rust robotaxi
 		},
+		{
+			Name:    "Solomon Page",
+			Website: "https://www.solomonpage.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                14352,
+				IDs:               nil,
+				Alias:             "solomon-page-group",
+				Name:              "Solomon Page",
+				Followers:         "641K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "760",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Seer",
+			Website: "https://www.seerrecruit.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                26560101,
+				IDs:               nil,
+				Alias:             "seerrecruit",
+				Name:              "Seer",
+				Followers:         "37K",
+				Employees:         "11-50",
+				AssociatedMembers: "24",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Robert Walters",
+			Website: "https://www.robertwalters.co.uk/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                165757,
+				IDs:               nil,
+				Alias:             "robert-walters",
+				Name:              "Robert Walters",
+				Followers:         "2M",
+				Employees:         "1K-5K",
+				AssociatedMembers: "",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
 	}
 }

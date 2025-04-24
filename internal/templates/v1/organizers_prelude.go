@@ -33,6 +33,7 @@ var (
 		domain.IndustryAgroTech,
 		domain.IndustryInsurTech,
 		domain.IndustryLogisticsTech,
+		domain.IndustryTelecom,
 	}
 )
 
