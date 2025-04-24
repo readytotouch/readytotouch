@@ -1368,6 +1368,8 @@ func (c *Controller) DataPopulationCompaniesGitHub(ctx *gin.Context) {
 		})
 	)
 
+	slices.Reverse(companies)
+
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationCompaniesGitHub(companies, "Populate GitHub")))
 }
 
