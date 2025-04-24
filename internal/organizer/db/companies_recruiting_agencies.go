@@ -319,5 +319,20 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Recruiting agency
 		},
+		{
+			Name:    "HireArt",
+			Website: "https://www.hireart.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2506549,
+				IDs:               nil,
+				Alias:             "hireart",
+				Name:              "HireArt",
+				Followers:         "20K",
+				Employees:         "51-200",
+				AssociatedMembers: "286",
+				Verified:          true,
+			},
+			Ignore: true, // https://www.linkedin.com/jobs/view/4211617362/ Rust robotaxi
+		},
 	}
 }

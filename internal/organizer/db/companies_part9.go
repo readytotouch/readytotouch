@@ -1781,7 +1781,7 @@ func companiesPart9() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4181750667/",
-							Date:                 mustDate("2025-04-01"), // mustDate("2025-03-11"),
+							Date:                 mustDate("2025-04-22"), // mustDate("2025-04-01"), // mustDate("2025-03-11"),
 							WithSalary:           true,                   // Scientist 1 ($94,5-$154,600), Scientist 2 ($104,100-$172,200)
 							Remote:               false,
 						},
@@ -4735,8 +4735,8 @@ func companiesPart9() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Software Developer (Rust) — AI Tutor",
-							ShortDescription:     "3 years of professional experience with Rust",
+							Title:                "Software Developer (Rust)",
+							ShortDescription:     "AI Tutor",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4182671096/",
 							Date:                 mustDate("2025-04-16"), // mustDate("2025-04-01"),
@@ -4744,11 +4744,20 @@ func companiesPart9() []domain.CompanyProfile {
 							Remote:               true,
 						},
 						{
-							Title:                "Software Developer (Rust) – AI Tutor",
-							ShortDescription:     "",
+							Title:                "Software Developer (Rust)",
+							ShortDescription:     "AI Tutor",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4211032583/",
 							Date:                 mustDate("2025-04-17"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+						{
+							Title:                "Software Developer (Rust)",
+							ShortDescription:     "AI Tutor",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4205583730/",
+							Date:                 mustDate("2025-04-22"),
 							WithSalary:           false,
 							Remote:               true,
 						},
