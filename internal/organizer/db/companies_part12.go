@@ -3312,7 +3312,7 @@ func companiesPart12() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4205898506/",
-							Date:                 mustDate("2025-04-11"),
+							Date:                 mustDate("2025-04-24"), // mustDate("2025-04-11"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -7855,6 +7855,67 @@ func companiesPart12() []domain.CompanyProfile {
 			Industries: []domain.Industry{
 				domain.IndustryHealthTech,
 				domain.IndustryMedTech,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Allocator One",
+			Website: "https://www.allocator.one/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                98395156,
+				IDs:               nil,
+				Alias:             "allocator-one",
+				Name:              "Allocator One",
+				Followers:         "3K",
+				Employees:         "11-50",
+				AssociatedMembers: "27",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go:    {},
+				domain.Rust:  {},
+				domain.Zig:   {},
+				domain.Scala: {},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Full Stack Developer | Elixir, Phoenix, LiveView",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4213116359/",
+							Date:                 mustDate("2025-04-24"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Platform for first-time venture capital funds",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
 			},
 		},
 
