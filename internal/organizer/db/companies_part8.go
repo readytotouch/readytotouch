@@ -7271,7 +7271,14 @@ func companiesPart8() []domain.CompanyProfile {
 				Employees: "1,190",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Bread-Financial-EI_IE11421.11,26.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Bread-Financial-Reviews-E11421.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Bread-Financial-Jobs-E11421.htm",
+				Jobs:        "24",
+				Reviews:     "1.8K",
+				Salaries:    "2.4K",
+				ReviewsRate: "4.5",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -7393,7 +7400,14 @@ func companiesPart8() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Appear-EI_IE5458916.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Appear-Reviews-E5458916.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Appear-Jobs-E5458916.htm",
+				Jobs:        "1",
+				Reviews:     "31",
+				Salaries:    "79",
+				ReviewsRate: "3.4",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -7524,7 +7538,14 @@ func companiesPart8() []domain.CompanyProfile {
 				Employees: "270",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Whatnot-EI_IE5065998.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Whatnot-Reviews-E5065998.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Whatnot-Jobs-E5065998.htm",
+				Jobs:        "30",
+				Reviews:     "182",
+				Salaries:    "225",
+				ReviewsRate: "4.2",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",

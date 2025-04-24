@@ -782,7 +782,14 @@ func companiesPart11() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Tubi-EI_IE1264931.11,15.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Tubi-Reviews-E1264931.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Tubi-Jobs-E1264931.htm",
+				Jobs:        "2",
+				Reviews:     "102",
+				Salaries:    "255",
+				ReviewsRate: "3.8",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -840,7 +847,14 @@ func companiesPart11() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Samsung-Food-EI_IE6824700.11,23.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Samsung-Food-Reviews-E6824700.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Samsung-Food-Jobs-E6824700.htm",
+				Jobs:        "",
+				Reviews:     "32",
+				Salaries:    "7",
+				ReviewsRate: "4.7",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -908,7 +922,14 @@ func companiesPart11() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Ace-and-Tate-EI_IE1736109.11,23.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Ace-and-Tate-Reviews-E1736109.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Ace-and-Tate-Jobs-E1736109.htm",
+				Jobs:        "60",
+				Reviews:     "139",
+				Salaries:    "258",
+				ReviewsRate: "4.1",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",

@@ -984,6 +984,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4160123502/":                                                               928,  // maersk-group
 		"https://www.linkedin.com/jobs/view/4197060156/":                                                               1337, // maersk-group
 		"https://www.linkedin.com/jobs/view/4209058466/":                                                               1486, // maersk-group
+		"https://www.linkedin.com/jobs/view/4215365103/":                                                               1662, // maersk-group
 		"https://www.linkedin.com/jobs/view/4096830999/":                                                               147,  // limango-gmbh
 		"https://www.linkedin.com/jobs/view/4093559031/":                                                               148,  // varonis
 		"https://www.linkedin.com/jobs/view/4081442058/":                                                               555,  // varonis
@@ -1399,6 +1400,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4148903233/":                                                               1100, // net-health-systems-inc-
 		"https://www.linkedin.com/jobs/view/4149944830/":                                                               1101, // dscout
 		"https://www.linkedin.com/jobs/view/4166326665/":                                                               1102, // viasat
+		"https://www.linkedin.com/jobs/view/4213829549/":                                                               1663, // viasat
 		"https://www.linkedin.com/jobs/view/4128083196/":                                                               1103, // pitchhq
 		"https://www.linkedin.com/jobs/view/4008290372/":                                                               1581, // doccla
 		"https://www.linkedin.com/jobs/view/4068248164/":                                                               1104, // doccla
@@ -1665,6 +1667,12 @@ var (
 		"https://www.linkedin.com/jobs/view/4210201874/":                                                               1659, // airfocus
 		"https://www.linkedin.com/jobs/view/4212846266/":                                                               1660, // dottxt
 		"https://www.linkedin.com/jobs/view/4212688691/":                                                               1661, // omniful
+		"https://www.linkedin.com/jobs/view/4212268324/":                                                               1664, // alterante
+		"https://www.linkedin.com/jobs/view/4215346791/":                                                               1665, // railsrglobal
+		"https://www.linkedin.com/jobs/view/4215347539/":                                                               1666, // railsrglobal
+		"https://www.linkedin.com/jobs/view/4214482668/":                                                               1667, // metric-app
+		"https://www.linkedin.com/jobs/view/4215017248/":                                                               1668, // prima-group-housing
+		"https://www.linkedin.com/jobs/view/4215023789/":                                                               1669, // parachute-health
 
 	}
 )
