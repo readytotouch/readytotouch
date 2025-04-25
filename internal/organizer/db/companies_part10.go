@@ -494,7 +494,7 @@ func companiesPart10() []domain.CompanyProfile {
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "Braintree",
-			Website: "http://www.braintreepayments.com/",
+			Website: "https://www.braintreepayments.com/",
 			Careers: "https://careers.pypl.com/",
 			About:   "https://about.pypl.com/about-us/",
 			Blog:    "https://braintree.github.io/",

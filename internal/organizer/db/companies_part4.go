@@ -312,7 +312,7 @@ func companiesPart4() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4048143482/",
-							Date:                 mustDate("2025-04-01"), // mustDate("2025-03-11"), // mustDate("2025-02-17"), // mustDate("2025-01-27"), // mustDate("2025-01-10"), // mustDate("2024-12-14"),
+							Date:                 mustDate("2025-04-23"), // mustDate("2025-04-01"), // mustDate("2025-03-11"), // mustDate("2025-02-17"), // mustDate("2025-01-27"), // mustDate("2025-01-10"), // mustDate("2024-12-14"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -1044,6 +1044,15 @@ func companiesPart4() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4164759829/",
 							Date:                 mustDate("2025-02-25"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4211324671/",
+							Date:                 mustDate("2025-04-24"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3403,7 +3412,7 @@ func companiesPart4() []domain.CompanyProfile {
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "Creative Software",
-			Website: "http://www.creativesoftware.com/",
+			Website: "https://www.creativesoftware.com/",
 			Careers: "https://www.creativesoftware.com/careers",
 			About:   "https://www.creativesoftware.com/aboutus",
 			Blog:    "https://www.creativesoftware.com/blog-categories/tech-insights",

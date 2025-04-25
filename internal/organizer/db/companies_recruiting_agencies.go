@@ -304,5 +304,80 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Recruiting agency
 		},
+		{
+			Name:    "Cpl",
+			Website: "https://www.cpl.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                163237,
+				IDs:               []int{163237, 333317, 486582, 830729, 868838, 1134057, 14831142, 15251866, 64752574, 69269271, 87085983, 94292973},
+				Alias:             "cpl",
+				Name:              "Cpl",
+				Followers:         "382K",
+				Employees:         "10K+",
+				AssociatedMembers: "4,654",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "HireArt",
+			Website: "https://www.hireart.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2506549,
+				IDs:               nil,
+				Alias:             "hireart",
+				Name:              "HireArt",
+				Followers:         "20K",
+				Employees:         "51-200",
+				AssociatedMembers: "286",
+				Verified:          true,
+			},
+			Ignore: true, // https://www.linkedin.com/jobs/view/4211617362/ Rust robotaxi
+		},
+		{
+			Name:    "Solomon Page",
+			Website: "https://www.solomonpage.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                14352,
+				IDs:               nil,
+				Alias:             "solomon-page-group",
+				Name:              "Solomon Page",
+				Followers:         "641K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "760",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Seer",
+			Website: "https://www.seerrecruit.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                26560101,
+				IDs:               nil,
+				Alias:             "seerrecruit",
+				Name:              "Seer",
+				Followers:         "37K",
+				Employees:         "11-50",
+				AssociatedMembers: "24",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Robert Walters",
+			Website: "https://www.robertwalters.co.uk/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                165757,
+				IDs:               nil,
+				Alias:             "robert-walters",
+				Name:              "Robert Walters",
+				Followers:         "2M",
+				Employees:         "1K-5K",
+				AssociatedMembers: "",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
 	}
 }

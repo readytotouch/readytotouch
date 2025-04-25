@@ -1333,6 +1333,8 @@ func (c *Controller) DataPopulationCompaniesCareersAndAboutAndBlog(ctx *gin.Cont
 		})
 	)
 
+	slices.Reverse(companies)
+
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationCompaniesCareersAndAboutAndBlog(companies, "Populate Careers & About & Blog")))
 }
 
@@ -1352,6 +1354,8 @@ func (c *Controller) DataPopulationCompaniesLinkedIn(ctx *gin.Context) {
 				company.LinkedInProfile.AssociatedMembers == ""
 		})
 	)
+
+	slices.Reverse(companies)
 
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationCompaniesLinkedIn(companies, "Populate LinkedIn")))
 }
@@ -1404,6 +1408,8 @@ func (c *Controller) DataPopulationCompaniesBlind(ctx *gin.Context) {
 		})
 	)
 
+	slices.Reverse(companies)
+
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationCompaniesBlind(companies, "Populate Blind")))
 }
 
@@ -1418,6 +1424,8 @@ func (c *Controller) DataPopulationCompaniesIndeed(ctx *gin.Context) {
 			return company.IndeedProfile.Alias == ""
 		})
 	)
+
+	slices.Reverse(companies)
 
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationCompaniesIndeed(companies, "Populate Indeed")))
 }
@@ -1434,6 +1442,8 @@ func (c *Controller) DataPopulationCompaniesLevelsFyi(ctx *gin.Context) {
 				company.LevelsFyiProfile.Employees == ""
 		})
 	)
+
+	slices.Reverse(companies)
 
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationCompaniesLevelsFyi(companies, "Populate Levels.fyi")))
 }

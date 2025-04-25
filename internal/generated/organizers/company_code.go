@@ -908,6 +908,20 @@ var (
 		"metric-app":                          906, // Metric: AI Powered Marketing
 		"prima-group-housing":                 907, // Prima Group
 		"parachute-health":                    908, // Parachute Health
+		"allocator-one":                       909, // Allocator One
+		"simacanbv":                           910, // Simacan
+		"impactdotcom":                        911, // impact.com
+		"symphonyai":                          912, // SymphonyAI
+		"volka":                               913, // Volka Games
+		"squarepoint-capital":                 914, // Squarepoint
+		"flow-traders":                        915, // Flow Traders
+		"black-duck-software":                 916, // Black Duck
+		"stemsmusic":                          917, // Stems Labs
+		"telekom":                             918, // Deutsche Telekom
+		"parshipmeet":                         919, // ParshipMeet Group
+		"harksys":                             920, // Hark
+		"softdrivecloud":                      921, // Softdrive
+		"command-zero":                        922, // Command Zero
 
 	}
 )

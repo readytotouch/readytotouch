@@ -112,6 +112,15 @@ func companiesPart9() []domain.CompanyProfile {
 							WithSalary:           true,
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Software Engineer – Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4214973364/",
+							Date:                 mustDate("2025-04-24"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -290,7 +299,7 @@ func companiesPart9() []domain.CompanyProfile {
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "Barracuda",
-			Website: "http://www.barracuda.com/",
+			Website: "https://www.barracuda.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
@@ -424,8 +433,8 @@ func companiesPart9() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "Teradata",
 			Website: "https://www.teradata.com/",
-			Careers: "",
-			About:   "",
+			Careers: "https://www.teradata.com/about-us/careers",
+			About:   "https://www.teradata.com/about-us",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1466,
@@ -570,7 +579,7 @@ func companiesPart9() []domain.CompanyProfile {
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "Lotus's",
-			Website: "http://www.lotuss.com/",
+			Website: "https://www.lotuss.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
@@ -645,7 +654,7 @@ func companiesPart9() []domain.CompanyProfile {
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "Aescape",
-			Website: "http://aescape.com/",
+			Website: "https://aescape.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
@@ -761,7 +770,7 @@ func companiesPart9() []domain.CompanyProfile {
 			ID:      0,                           // system
 			Type:    domain.CompanyTypeOutsource, // system
 			Name:    "Arcanys",
-			Website: "http://www.arcanys.com/",
+			Website: "https://www.arcanys.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1472152,
 				IDs:               nil,
@@ -778,7 +787,7 @@ func companiesPart9() []domain.CompanyProfile {
 			ID:      0,                           // system
 			Type:    domain.CompanyTypeOutsource, // system
 			Name:    "Skillspark",
-			Website: "http://www.skillspark.com/",
+			Website: "https://www.skillspark.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                80284986,
 				IDs:               nil,
@@ -829,7 +838,7 @@ func companiesPart9() []domain.CompanyProfile {
 			ID:      0,                         // system
 			Type:    domain.CompanyTypeStartup, // system
 			Name:    "Depixen",
-			Website: "http://www.depixen.com/",
+			Website: "https://www.depixen.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
@@ -1180,7 +1189,7 @@ func companiesPart9() []domain.CompanyProfile {
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "Viasat",
-			Website: "http://www.viasat.com/",
+			Website: "https://www.viasat.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
@@ -1260,7 +1269,7 @@ func companiesPart9() []domain.CompanyProfile {
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "Pitch",
-			Website: "http://pitch.com/",
+			Website: "https://pitch.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
@@ -1325,7 +1334,7 @@ func companiesPart9() []domain.CompanyProfile {
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "Doccla",
-			Website: "http://www.doccla.com/",
+			Website: "https://www.doccla.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
@@ -1781,7 +1790,7 @@ func companiesPart9() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4181750667/",
-							Date:                 mustDate("2025-04-01"), // mustDate("2025-03-11"),
+							Date:                 mustDate("2025-04-22"), // mustDate("2025-04-01"), // mustDate("2025-03-11"),
 							WithSalary:           true,                   // Scientist 1 ($94,5-$154,600), Scientist 2 ($104,100-$172,200)
 							Remote:               false,
 						},
@@ -1962,7 +1971,7 @@ func companiesPart9() []domain.CompanyProfile {
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "Optable",
-			Website: "http://optable.co/",
+			Website: "https://optable.co/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
@@ -2321,7 +2330,7 @@ func companiesPart9() []domain.CompanyProfile {
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "Nelly Solutions",
-			Website: "http://www.getnelly.de/",
+			Website: "https://www.getnelly.de/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
@@ -2438,7 +2447,7 @@ func companiesPart9() []domain.CompanyProfile {
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "Skyworks Solutions",
-			Website: "http://www.skyworksinc.com/",
+			Website: "https://www.skyworksinc.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
@@ -2699,7 +2708,7 @@ func companiesPart9() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4178759491/",
-							Date:                 mustDate("2025-04-02"), // mustDate("2025-03-12"),
+							Date:                 mustDate("2025-04-24"), // mustDate("2025-04-02"), // mustDate("2025-03-12"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -2762,6 +2771,15 @@ func companiesPart9() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4180086053/",
 							Date:                 mustDate("2025-03-12"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Software Engineer (Golang / Java)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4214926656/",
+							Date:                 mustDate("2025-04-24"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2978,7 +2996,7 @@ func companiesPart9() []domain.CompanyProfile {
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "Guidewire Software",
-			Website: "http://www.guidewire.com/",
+			Website: "https://www.guidewire.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
@@ -3128,7 +3146,7 @@ func companiesPart9() []domain.CompanyProfile {
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "Infoblox",
-			Website: "http://www.infoblox.com/",
+			Website: "https://www.infoblox.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
@@ -3271,7 +3289,7 @@ func companiesPart9() []domain.CompanyProfile {
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "Cisco",
-			Website: "http://www.cisco.com/",
+			Website: "https://www.cisco.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
@@ -3332,7 +3350,7 @@ func companiesPart9() []domain.CompanyProfile {
 							ShortDescription:     "3+ years of experience in Go",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4198239895/",
-							Date:                 mustDate("2025-04-01"),
+							Date:                 mustDate("2025-04-24"), // mustDate("2025-04-01"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3475,7 +3493,7 @@ func companiesPart9() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4182723217/",
-							Date:                 mustDate("2025-03-12"),
+							Date:                 mustDate("2025-04-24"), // mustDate("2025-03-12"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3494,7 +3512,7 @@ func companiesPart9() []domain.CompanyProfile {
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "Valsoft Corporation",
-			Website: "http://www.valsoftcorp.com/",
+			Website: "https://www.valsoftcorp.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
@@ -3559,7 +3577,7 @@ func companiesPart9() []domain.CompanyProfile {
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "Flutter Entertainment",
-			Website: "http://www.flutter.com/",
+			Website: "https://www.flutter.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
@@ -3758,7 +3776,7 @@ func companiesPart9() []domain.CompanyProfile {
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "Avathon",
-			Website: "http://www.avathon.com/",
+			Website: "https://www.avathon.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
@@ -3807,7 +3825,7 @@ func companiesPart9() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4053922033/",
-							Date:                 mustDate("2025-03-11"),
+							Date:                 mustDate("2025-04-22"), // mustDate("2025-03-11"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -4132,6 +4150,15 @@ func companiesPart9() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Professional Engineer Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4196521310/",
+							Date:                 mustDate("2025-04-24"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -4336,7 +4363,7 @@ func companiesPart9() []domain.CompanyProfile {
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "Syniti",
-			Website: "http://www.syniti.com/",
+			Website: "https://www.syniti.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
@@ -4465,8 +4492,8 @@ func companiesPart9() []domain.CompanyProfile {
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "Goldman Sach",
-			Website: "http://www.goldmansachs.com/",
-			Careers: "",
+			Website: "https://www.goldmansachs.com/",
+			Careers: "https://www.goldmansachs.com/careers",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4595,7 +4622,7 @@ func companiesPart9() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4178756795/",
-							Date:                 mustDate("2025-03-12"),
+							Date:                 mustDate("2025-04-24"), // mustDate("2025-03-12"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -4735,8 +4762,8 @@ func companiesPart9() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Software Developer (Rust) — AI Tutor",
-							ShortDescription:     "3 years of professional experience with Rust",
+							Title:                "Software Developer (Rust)",
+							ShortDescription:     "AI Tutor",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4182671096/",
 							Date:                 mustDate("2025-04-16"), // mustDate("2025-04-01"),
@@ -4744,11 +4771,20 @@ func companiesPart9() []domain.CompanyProfile {
 							Remote:               true,
 						},
 						{
-							Title:                "Software Developer (Rust) – AI Tutor",
-							ShortDescription:     "",
+							Title:                "Software Developer (Rust)",
+							ShortDescription:     "AI Tutor",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4211032583/",
 							Date:                 mustDate("2025-04-17"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+						{
+							Title:                "Software Developer (Rust)",
+							ShortDescription:     "AI Tutor",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4205583730/",
+							Date:                 mustDate("2025-04-22"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -4766,8 +4802,8 @@ func companiesPart9() []domain.CompanyProfile {
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "Hewlett Packard Enterprise",
-			Website: "http://hpe.com/",
-			Careers: "",
+			Website: "https://hpe.com/",
+			Careers: "https://careers.hpe.com/",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4874,13 +4910,22 @@ func companiesPart9() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "GO/Golang Developer (DNS)",
+							Title:                "Go/Golang Developer (DNS)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4182960038/",
 							Date:                 mustDate("2025-03-12"),
 							WithSalary:           false,
 							Remote:               true,
+						},
+						{
+							Title:                "Senior Software Engineer Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4212017777/",
+							Date:                 mustDate("2025-04-24"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 					},
 				},
@@ -5258,8 +5303,8 @@ func companiesPart9() []domain.CompanyProfile {
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "FIS",
-			Website: "http://www.fisglobal.com/",
-			Careers: "",
+			Website: "https://www.fisglobal.com/",
+			Careers: "https://www.fisglobal.com/careers",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5614,8 +5659,8 @@ func companiesPart9() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "Commonwealth Bank",
 			Website: "https://www.commbank.com.au/",
-			Careers: "",
-			About:   "",
+			Careers: "https://www.commbank.com.au/about-us/careers.html",
+			About:   "https://www.commbank.com.au/about-us.html",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                2848,
@@ -5752,7 +5797,7 @@ func companiesPart9() []domain.CompanyProfile {
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "nexos.ai",
-			Website: "http://www.nexos.ai/",
+			Website: "https://www.nexos.ai/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
@@ -5810,8 +5855,8 @@ func companiesPart9() []domain.CompanyProfile {
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "GCash",
-			Website: "http://wearegcash.com/",
-			Careers: "http://wearegcash.com/careers",
+			Website: "https://wearegcash.com/",
+			Careers: "https://wearegcash.com/careers",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -5871,7 +5916,7 @@ func companiesPart9() []domain.CompanyProfile {
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "mailstep",
-			Website: "http://www.mailstep.cz/",
+			Website: "https://www.mailstep.cz/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
@@ -6049,8 +6094,8 @@ func companiesPart9() []domain.CompanyProfile {
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "HolidayCheck",
-			Website: "http://holidaycheck.com/",
-			Careers: "http://careers.holidaycheck.com/",
+			Website: "https://holidaycheck.com/",
+			Careers: "https://careers.holidaycheck.com/",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -6165,7 +6210,7 @@ func companiesPart9() []domain.CompanyProfile {
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "Stylitics",
-			Website: "http://www.stylitics.com/",
+			Website: "https://www.stylitics.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
@@ -6231,7 +6276,7 @@ func companiesPart9() []domain.CompanyProfile {
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "CERESTI HEALTH",
-			Website: "http://ceresti.com/",
+			Website: "https://ceresti.com/",
 			Careers: "https://www.ceresti.com/careers",
 			About:   "",
 			Blog:    "",
@@ -6691,7 +6736,7 @@ func companiesPart9() []domain.CompanyProfile {
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "Gnosis",
-			Website: "http://gnosis.io/",
+			Website: "https://gnosis.io/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
@@ -6750,7 +6795,7 @@ func companiesPart9() []domain.CompanyProfile {
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "Netscribes",
-			Website: "http://www.netscribes.com/",
+			Website: "https://www.netscribes.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
@@ -6945,7 +6990,7 @@ func companiesPart9() []domain.CompanyProfile {
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "VOIS",
-			Website: "http://www.vodafone.com/",
+			Website: "https://www.vodafone.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
@@ -7256,7 +7301,7 @@ func companiesPart9() []domain.CompanyProfile {
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "OKX",
-			Website: "http://www.okx.com/",
+			Website: "https://www.okx.com/",
 			Careers: "",
 			About:   "",
 			Blog:    "",
@@ -7770,7 +7815,7 @@ func companiesPart9() []domain.CompanyProfile {
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "University of Florida",
-			Website: "http://ufl.edu/",
+			Website: "https://ufl.edu/",
 			Careers: "https://jobs.ufl.edu/",
 			About:   "https://www.ufl.edu/about/",
 			Blog:    "",
@@ -8148,7 +8193,7 @@ func companiesPart9() []domain.CompanyProfile {
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "Stoke Space",
-			Website: "http://www.stokespace.com/",
+			Website: "https://www.stokespace.com/",
 			Careers: "https://www.stokespace.com/careers/",
 			About:   "",
 			Blog:    "",
@@ -8559,6 +8604,15 @@ func companiesPart9() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Software Engineer (Golang / Ruby on Rails)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4216283297/",
+							Date:                 mustDate("2025-04-24"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -8837,6 +8891,15 @@ func companiesPart9() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4192297683/",
 							Date:                 mustDate("2025-03-24"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Software Engineer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4205969730/",
+							Date:                 mustDate("2025-04-24"),
 							WithSalary:           false,
 							Remote:               false,
 						},

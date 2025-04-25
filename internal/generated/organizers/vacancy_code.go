@@ -35,6 +35,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4181369448/":                                                               1330, // ibm
 		"https://www.linkedin.com/jobs/view/4150628225/":                                                               1430, // ibm
 		"https://www.linkedin.com/jobs/view/4204919420/":                                                               1471, // ibm
+		"https://www.linkedin.com/jobs/view/4178501322/":                                                               1670, // ibm
 		"https://www.linkedin.com/jobs/view/4072909509/":                                                               258,  // sap
 		"https://www.linkedin.com/jobs/view/4072911263/":                                                               541,  // sap
 		"https://www.linkedin.com/jobs/view/4073625824/":                                                               592,  // sap
@@ -104,6 +105,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4160394582/":                                                               936,  // redisinc
 		"https://www.linkedin.com/jobs/view/4189690272/":                                                               1265, // redisinc
 		"https://www.linkedin.com/jobs/view/4194291143/":                                                               1331, // redisinc
+		"https://www.linkedin.com/jobs/view/4194291142/":                                                               1671, // redisinc
 		"https://www.linkedin.com/jobs/view/4049491677/":                                                               301,  // digitalocean
 		"https://www.linkedin.com/jobs/view/3736604544/":                                                               12,   // canonical
 		"https://www.linkedin.com/jobs/view/4140337335/":                                                               753,  // canonical
@@ -142,6 +144,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4182664872/":                                                               1432, // morgan-stanley
 		"https://www.linkedin.com/jobs/view/4206223003/":                                                               1472, // morgan-stanley
 		"https://www.linkedin.com/jobs/view/4209627904/":                                                               1531, // morgan-stanley
+		"https://www.linkedin.com/jobs/view/4214557118/":                                                               1672, // morgan-stanley
 		"https://www.linkedin.com/jobs/view/3912849197/":                                                               307,  // citi
 		"https://www.linkedin.com/jobs/view/4089424578/":                                                               544,  // citi
 		"https://www.linkedin.com/jobs/view/4132150228/":                                                               678,  // citi
@@ -155,6 +158,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4077533479/":                                                               545,  // cloudflare
 		"https://www.linkedin.com/jobs/view/4038010253/":                                                               645,  // cloudflare
 		"https://www.linkedin.com/jobs/view/4147652357/":                                                               1597, // cloudflare
+		"https://www.linkedin.com/jobs/view/4038005634/":                                                               1673, // cloudflare
 		"https://www.linkedin.com/jobs/view/4041774900/":                                                               309,  // cloudflare
 		"https://www.linkedin.com/jobs/view/4079142238/":                                                               858,  // cloudflare
 		"https://www.linkedin.com/jobs/view/3902607066/":                                                               310,  // namecheap-inc
@@ -178,6 +182,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4200883253/":                                                               1413, // nordsecurity
 		"https://www.linkedin.com/jobs/view/4206460200/":                                                               1473, // nordsecurity
 		"https://www.linkedin.com/jobs/view/4208078213/":                                                               1532, // nordsecurity
+		"https://www.linkedin.com/jobs/view/4215325020/":                                                               1674, // nordsecurity
 		"https://www.linkedin.com/jobs/view/4108568196/":                                                               393,  // protonprivacy
 		"https://www.linkedin.com/jobs/view/4108564832/":                                                               1093, // protonprivacy
 		"https://www.linkedin.com/jobs/view/3907970778/":                                                               211,  // fortinet
@@ -267,6 +272,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4177805422/":                                                               1111, // vonage
 		"https://www.linkedin.com/jobs/view/4037978333/":                                                               14,   // arenko-cleantech
 		"https://www.linkedin.com/jobs/view/4118955695/":                                                               594,  // arenko-cleantech
+		"https://www.linkedin.com/jobs/view/4193744155/":                                                               1675, // arenko-cleantech
 		"https://www.linkedin.com/jobs/view/3887215661/":                                                               324,  // xataio
 		"https://www.linkedin.com/jobs/view/3926951138/":                                                               325,  // dojo-tech
 		"https://www.linkedin.com/jobs/view/4192441007/":                                                               1296, // dojo-tech
@@ -443,6 +449,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4159521277/":                                                               924,  // palo-alto-networks
 		"https://www.linkedin.com/jobs/view/4177839036/":                                                               1116, // palo-alto-networks
 		"https://www.linkedin.com/jobs/view/4199228504/":                                                               1363, // palo-alto-networks
+		"https://www.linkedin.com/jobs/view/4199224669/":                                                               1676, // palo-alto-networks
 		"https://www.linkedin.com/jobs/view/4035556879/":                                                               288,  // palo-alto-networks
 		"https://www.linkedin.com/jobs/view/4104811687/":                                                               289,  // palo-alto-networks
 		"https://www.linkedin.com/jobs/view/4104810631/":                                                               652,  // palo-alto-networks
@@ -736,6 +743,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4050285116/":                                                               526,  // remitly
 		"https://www.linkedin.com/jobs/view/4092211710/":                                                               205,  // level-all
 		"https://www.linkedin.com/jobs/view/4046403243/":                                                               527,  // littlelives
+		"https://www.linkedin.com/jobs/view/4197404839/":                                                               1677, // bill
 		"https://www.linkedin.com/jobs/view/3906024674/":                                                               44,   // bill
 		"https://www.linkedin.com/jobs/view/4041216496/":                                                               528,  // communitydotcom
 		"https://www.linkedin.com/jobs/view/4052948882/":                                                               529,  // bigpayme
@@ -764,9 +772,11 @@ var (
 		"https://www.linkedin.com/jobs/view/4059312901/":                                                               53,   // selby-jennings
 		"https://www.linkedin.com/jobs/view/4160160432/":                                                               926,  // selby-jennings
 		"https://www.linkedin.com/jobs/view/4195907743/":                                                               1334, // selby-jennings
+		"https://www.linkedin.com/jobs/view/4168233342/":                                                               1678, // selby-jennings
 		"https://www.linkedin.com/jobs/view/4060807594/":                                                               54,   // databeaconaero
 		"https://www.linkedin.com/jobs/view/4162415406/":                                                               970,  // databeaconaero
 		"https://www.linkedin.com/jobs/view/4211839702/":                                                               1606, // databeaconaero
+		"https://www.linkedin.com/jobs/view/4214817706/":                                                               1679, // databeaconaero
 		"https://www.linkedin.com/jobs/view/4064837533/":                                                               55,   // wearemntn
 		"https://www.linkedin.com/jobs/view/4150806532/":                                                               809,  // wearemntn
 		"https://www.linkedin.com/jobs/view/3972187342/":                                                               56,   // getwriter
@@ -782,6 +792,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4188306161/":                                                               1300, // sainsburys
 		"https://www.linkedin.com/jobs/view/4005692040/":                                                               64,   // stratascale-llc
 		"https://www.linkedin.com/jobs/view/4037373961/":                                                               65,   // gartner
+		"https://www.linkedin.com/jobs/view/4214405767/":                                                               1680, // gartner
 		"https://www.linkedin.com/jobs/view/4055078837/":                                                               66,   // extreme-networks
 		"https://www.linkedin.com/jobs/view/4134262544/":                                                               735,  // extreme-networks
 		"https://www.linkedin.com/jobs/view/4037222694/":                                                               67,   // yalo
@@ -789,6 +800,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4061088133/":                                                               68,   // remarkable-as
 		"https://www.linkedin.com/jobs/view/4027571222/":                                                               69,   // synopsys
 		"https://www.linkedin.com/jobs/view/4044830862/":                                                               70,   // pubmatic
+		"https://www.linkedin.com/jobs/view/4205321156/":                                                               1681, // pubmatic
 		"https://www.indeed.com/viewjob?jk=795dd7499246fa49":                                                           1281, // fanatics-inc-
 		"https://www.linkedin.com/jobs/view/4011218533/":                                                               71,   // fanatics-inc-
 		"https://www.linkedin.com/jobs/view/4175578542/":                                                               1122, // fanatics-inc-
@@ -882,9 +894,11 @@ var (
 		"https://www.linkedin.com/jobs/view/4190346674/":                                                               1439, // capital-one
 		"https://www.linkedin.com/jobs/view/4209208703/":                                                               1541, // capital-one
 		"https://www.linkedin.com/jobs/view/4213432732/":                                                               1651, // capital-one
+		"https://www.linkedin.com/jobs/view/4214871156/":                                                               1682, // capital-one
 		"https://www.linkedin.com/jobs/view/4141348448/":                                                               972,  // capital-one
 		"https://www.linkedin.com/jobs/view/4144041186/":                                                               989,  // capital-one
 		"https://www.linkedin.com/jobs/view/4211721097/":                                                               1608, // capital-one
+		"https://www.linkedin.com/jobs/view/4216580476/":                                                               1683, // capital-one
 		"https://www.linkedin.com/jobs/view/4129780907/":                                                               698,  // capital-one
 		"https://www.linkedin.com/jobs/view/4129783447/":                                                               699,  // capital-one
 		"https://www.linkedin.com/jobs/view/4125673101/":                                                               834,  // capital-one
@@ -1023,6 +1037,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4049064454/":                                                               159,  // bauhaus-deutschland
 		"https://www.linkedin.com/jobs/view/4090103893/":                                                               160,  // sunasterisk
 		"https://www.linkedin.com/jobs/view/4164759829/":                                                               991,  // sunasterisk
+		"https://www.linkedin.com/jobs/view/4211324671/":                                                               1684, // sunasterisk
 		"https://www.linkedin.com/jobs/view/4090375762/":                                                               161,  // miraclesoft
 		"https://www.linkedin.com/jobs/view/4087446589/":                                                               162,  // collabera
 		"https://www.linkedin.com/jobs/view/4158842757/":                                                               929,  // collabera
@@ -1225,6 +1240,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4148907792/":                                                               844,  // gdms
 		"https://www.linkedin.com/jobs/view/4179404017/":                                                               1137, // gdms
 		"https://www.linkedin.com/jobs/view/4191648082/":                                                               1341, // gdms
+		"https://www.linkedin.com/jobs/view/4213398473/":                                                               1685, // gdms
 		"https://www.linkedin.com/jobs/view/4121324436/":                                                               611,  // mondu-ai
 		"https://www.linkedin.com/jobs/view/4126118648/":                                                               612,  // money-forward
 		"https://www.linkedin.com/jobs/view/4172009785/":                                                               1398, // money-forward
@@ -1240,6 +1256,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4150889365/":                                                               813,  // videoamp
 		"https://www.linkedin.com/jobs/view/4127239750/":                                                               633,  // broadcom
 		"https://www.indeed.com/viewjob?jk=1977f20ade74d891":                                                           1228, // broadcom
+		"https://www.linkedin.com/jobs/view/4213324537/":                                                               1686, // broadcom
 		"https://www.linkedin.com/jobs/view/4125175696/":                                                               634,  // toyota-north-america
 		"https://www.linkedin.com/jobs/view/4210661164/":                                                               1558, // toyota-north-america
 		"https://www.linkedin.com/jobs/view/4124350189/":                                                               635,  // about-you
@@ -1285,6 +1302,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4157834382/":                                                               917,  // qad
 		"https://www.linkedin.com/jobs/view/4204531478/":                                                               1462, // qad
 		"https://www.linkedin.com/jobs/view/4139628979/":                                                               776,  // qad
+		"https://www.linkedin.com/jobs/view/4197389996/":                                                               1687, // qad
 		"https://www.linkedin.com/jobs/view/4128235975/":                                                               715,  // qad
 		"https://www.linkedin.com/jobs/view/4125983022/":                                                               716,  // new-work-se
 		"https://www.linkedin.com/jobs/view/4168747840/":                                                               1037, // new-work-se
@@ -1294,6 +1312,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4208697441/":                                                               1618, // walmart
 		"https://www.linkedin.com/jobs/view/4146988578/":                                                               884,  // magnite
 		"https://www.linkedin.com/jobs/view/4145249119/":                                                               1038, // magnite
+		"https://www.linkedin.com/jobs/view/4213608440/":                                                               1688, // magnite
 		"https://www.linkedin.com/jobs/view/4116388763/":                                                               750,  // magnite
 		"https://www.linkedin.com/jobs/view/4143148888/":                                                               1495, // magnite
 		"https://www.linkedin.com/jobs/view/4135250887/":                                                               751,  // prezi
@@ -1311,6 +1330,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4181497098/":                                                               1141, // bigcommerce
 		"https://www.linkedin.com/jobs/view/4195470894/":                                                               1371, // bigcommerce
 		"https://www.linkedin.com/jobs/view/4197946130/":                                                               1401, // bigcommerce
+		"https://www.linkedin.com/jobs/view/4197945163/":                                                               1689, // bigcommerce
 		"https://www.linkedin.com/jobs/view/4141112561/":                                                               782,  // grabapp
 		"https://www.linkedin.com/jobs/view/4148284507/":                                                               798,  // qlik
 		"https://www.linkedin.com/jobs/view/4145691848/":                                                               799,  // ryanair
@@ -1376,6 +1396,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4172652078/":                                                               1068, // worldlineglobal
 		"https://www.linkedin.com/jobs/view/4169557069/":                                                               1081, // whatnot-inc
 		"https://www.linkedin.com/jobs/view/4174530724/":                                                               1082, // dnsfilter
+		"https://www.linkedin.com/jobs/view/4214973364/":                                                               1690, // dnsfilter
 		"https://www.linkedin.com/jobs/view/4157762453/":                                                               1083, // forcepoint
 		"https://www.linkedin.com/jobs/view/4169998476/":                                                               1235, // forcepoint
 		"https://www.linkedin.com/jobs/view/4214032831/":                                                               1656, // forcepoint
@@ -1426,6 +1447,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4181511391/":                                                               1177, // megaport
 		"https://www.linkedin.com/jobs/view/4178759491/":                                                               1178, // fairmoney
 		"https://www.linkedin.com/jobs/view/4180086053/":                                                               1179, // zalopay
+		"https://www.linkedin.com/jobs/view/4214926656/":                                                               1691, // zalopay
 		"https://www.linkedin.com/jobs/view/4182972537/":                                                               1180, // td
 		"https://www.linkedin.com/jobs/view/4184051342/":                                                               1181, // airudder
 		"https://www.linkedin.com/jobs/view/4184033707/":                                                               1182, // guidewire-software
@@ -1455,6 +1477,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4151540281/":                                                               1501, // qnx
 		"https://www.linkedin.com/jobs/view/4181915311/":                                                               1210, // solariscompany
 		"https://www.linkedin.com/jobs/view/4189553947/":                                                               1306, // solariscompany
+		"https://www.linkedin.com/jobs/view/4196521310/":                                                               1692, // solariscompany
 		"https://www.linkedin.com/jobs/view/4184824435/":                                                               1211, // smava
 		"https://www.linkedin.com/jobs/view/4181840665/":                                                               1212, // synitidata
 		"https://www.linkedin.com/jobs/view/4180220865/":                                                               1213, // goldman-sachs
@@ -1465,8 +1488,10 @@ var (
 		"https://www.linkedin.com/jobs/view/4182668629/":                                                               1216, // mindrift-ai
 		"https://www.linkedin.com/jobs/view/4182671096/":                                                               1374, // mindrift-ai
 		"https://www.linkedin.com/jobs/view/4211032583/":                                                               1623, // mindrift-ai
+		"https://www.linkedin.com/jobs/view/4205583730/":                                                               1693, // mindrift-ai
 		"https://www.linkedin.com/jobs/view/4184377636/":                                                               1217, // hewlett-packard-enterprise
 		"https://www.linkedin.com/jobs/view/4182960038/":                                                               1218, // ionos
+		"https://www.linkedin.com/jobs/view/4212017777/":                                                               1694, // ionos
 		"https://www.linkedin.com/jobs/view/4184379493/":                                                               1219, // velmie
 		"https://www.linkedin.com/jobs/view/4183894600/":                                                               1220, // clinia
 		"https://www.linkedin.com/jobs/view/4182758670/":                                                               1221, // cloudwick
@@ -1514,11 +1539,13 @@ var (
 		"https://www.linkedin.com/jobs/view/4188677602/":                                                               1309, // pulsepoint
 		"https://www.linkedin.com/jobs/view/4190620206/":                                                               1310, // armadaai
 		"https://www.linkedin.com/jobs/view/4190270866/":                                                               1311, // hubble-pte.-ltd.
+		"https://www.linkedin.com/jobs/view/4216283297/":                                                               1695, // hubble-pte.-ltd.
 		"https://www.linkedin.com/jobs/view/4191748355/":                                                               1312, // unity
 		"https://www.linkedin.com/jobs/view/4190144087/":                                                               1313, // adjoe
 		"https://www.linkedin.com/jobs/view/4198154575/":                                                               1403, // adjoe
 		"https://www.linkedin.com/jobs/view/4207721435/":                                                               1502, // adjoe
 		"https://www.linkedin.com/jobs/view/4192297683/":                                                               1314, // docebo
+		"https://www.linkedin.com/jobs/view/4205969730/":                                                               1696, // docebo
 		"https://www.linkedin.com/jobs/view/4175895182/":                                                               1315, // getsona
 		"https://www.linkedin.com/jobs/view/4175892408/":                                                               1345, // getsona
 		"https://www.linkedin.com/jobs/view/4190011323/":                                                               1316, // activeprospect
@@ -1559,6 +1586,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4189008372/":                                                               1381, // hello-stake
 		"https://www.linkedin.com/jobs/view/4195065700/":                                                               1382, // drivenets
 		"https://www.linkedin.com/jobs/view/4195036459/":                                                               1383, // ifs
+		"https://www.linkedin.com/jobs/view/4214546493/":                                                               1697, // ifs
 		"https://www.linkedin.com/jobs/view/4174137347/":                                                               1404, // lightspeed-systems
 		"https://www.linkedin.com/jobs/view/4132287368/":                                                               1405, // knime
 		"https://app.welcometothejungle.com/jobs/Go06Evd5":                                                             1406, // twitch-tv
@@ -1629,6 +1657,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4152246608/":                                                               1570, // mux
 		"https://www.linkedin.com/jobs/view/4126340720/":                                                               1571, // cava-
 		"https://www.linkedin.com/jobs/view/4068277723/":                                                               1572, // cabify
+		"https://www.linkedin.com/jobs/view/4214931469/":                                                               1698, // togethercomputer
 		"https://www.linkedin.com/jobs/view/4177515860/":                                                               1573, // togethercomputer
 		"https://www.linkedin.com/jobs/view/4211721655/":                                                               1574, // telnyx
 		"https://www.linkedin.com/jobs/view/4186581023/":                                                               1575, // eunasolutions
@@ -1655,6 +1684,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4207580495/":                                                               1635, // muzz
 		"https://www.linkedin.com/jobs/view/4208614176/":                                                               1636, // oolio-au
 		"https://www.linkedin.com/jobs/view/4209740652/":                                                               1637, // submer
+		"https://www.linkedin.com/jobs/view/4214839336/":                                                               1699, // submer
 		"https://www.linkedin.com/jobs/view/4211750274/":                                                               1638, // prospect-33
 		"https://www.linkedin.com/jobs/view/4212980639/":                                                               1639, // rockwell-automation
 		"https://www.linkedin.com/jobs/view/3992422571/":                                                               1641, // wisehome
@@ -1673,6 +1703,20 @@ var (
 		"https://www.linkedin.com/jobs/view/4214482668/":                                                               1667, // metric-app
 		"https://www.linkedin.com/jobs/view/4215017248/":                                                               1668, // prima-group-housing
 		"https://www.linkedin.com/jobs/view/4215023789/":                                                               1669, // parachute-health
+		"https://www.linkedin.com/jobs/view/4213116359/":                                                               1700, // allocator-one
+		"https://www.linkedin.com/jobs/view/4194786604/":                                                               1701, // simacanbv
+		"https://www.linkedin.com/jobs/view/4209595207/":                                                               1702, // impactdotcom
+		"https://www.linkedin.com/jobs/view/4214511153/":                                                               1703, // symphonyai
+		"https://www.linkedin.com/jobs/view/4211302509/":                                                               1704, // volka
+		"https://www.linkedin.com/jobs/view/4213316323/":                                                               1705, // squarepoint-capital
+		"https://www.linkedin.com/jobs/view/4214447561/":                                                               1706, // flow-traders
+		"https://www.linkedin.com/jobs/view/4214495115/":                                                               1707, // black-duck-software
+		"https://www.linkedin.com/jobs/view/4215016329/":                                                               1708, // stemsmusic
+		"https://www.linkedin.com/jobs/view/4204905697/":                                                               1709, // telekom
+		"https://www.linkedin.com/jobs/view/4215387718/":                                                               1710, // parshipmeet
+		"https://www.linkedin.com/jobs/view/4216368076/":                                                               1711, // harksys
+		"https://www.linkedin.com/jobs/view/4216375542/":                                                               1712, // softdrivecloud
+		"https://www.linkedin.com/jobs/view/4213378861/":                                                               1713, // command-zero
 
 	}
 )
