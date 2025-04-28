@@ -331,6 +331,15 @@ func companiesPart3() []domain.CompanyProfile {
 							WithSalary:           true, // for this position $144,200 - $164,600
 							Remote:               false,
 						},
+						{
+							Title:                "Lead Data Engineer (Python/Scala, Spark, AWS)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4193813827/",
+							Date:                 mustDate("2025-04-27"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Elixir:  {},
