@@ -922,6 +922,17 @@ var (
 		"harksys":                             920, // Hark
 		"softdrivecloud":                      921, // Softdrive
 		"command-zero":                        922, // Command Zero
+		"carecarco":                           923, // CareCar
+		"evident-id-inc.":                     924, // Evident
+		"flextrade":                           925, // FlexTrade
+		"epic-games":                          926, // Epic Games
+		"notchupteam":                         927, // Notchup
+		"entro-security-non-human-identities": 928, // Entro Security
+		"kiddom":                              929, // Kiddom
+		"discern-io":                          930, // Discern
+		"peak":                                931, // Peak
+		"essity":                              932, // Essity
+		"pixellotltd":                         933, // Pixellot - AI-Automated Sports Video and Analytics
 
 	}
 )
