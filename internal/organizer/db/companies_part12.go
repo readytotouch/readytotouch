@@ -1457,7 +1457,7 @@ func companiesPart12() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4199352625/",
-							Date:                 mustDate("2025-04-04"),
+							Date:                 mustDate("2025-04-25"), // mustDate("2025-04-04"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -9158,6 +9158,129 @@ func companiesPart12() []domain.CompanyProfile {
 			ShortDescription: "Broker-neutral, execution and order management trading platforms for equities, foreign exchange, options, futures and fixed income",
 			Industries: []domain.Industry{
 				domain.IndustryFinTech,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Epic Games",
+			Website: "https://epicgames.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                19327,
+				IDs:               nil,
+				Alias:             "epic-games",
+				Name:              "Epic Games",
+				Followers:         "786K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "10,955",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Rust Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4181595042/",
+							Date:                 mustDate("2025-04-26"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Interactive entertainment company and provider of 3D engine technology",
+			Industries: []domain.Industry{
+				domain.IndustryEntertainment,
+				domain.IndustryGameDev,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Notchup",
+			Website: "https://www.notchup.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                67190926,
+				IDs:               nil,
+				Alias:             "notchupteam",
+				Name:              "Notchup",
+				Followers:         "166K",
+				Employees:         "11-50",
+				AssociatedMembers: "56",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Rust Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4214284221/",
+							Date:                 mustDate("2025-04-25"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "AI Co-Pilot for Engineering Managers & CTOs",
+			Industries:       []domain.Industry{
+				// NOP
 			},
 		},
 

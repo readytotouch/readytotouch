@@ -2592,7 +2592,7 @@ func companiesPart9() []domain.CompanyProfile {
 							ShortDescription:     "Proxy Solution",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4198709559/",
-							Date:                 mustDate("2025-04-06"),
+							Date:                 mustDate("2025-04-25"), // mustDate("2025-04-06"),
 							WithSalary:           false,
 							Remote:               false,
 						},
