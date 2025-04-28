@@ -4317,6 +4317,15 @@ func companiesPart12() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Software Engineer",
+							ShortDescription:     "Elixir Focus",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4214745238/",
+							Date:                 mustDate("2025-04-25"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Clojure: {},
@@ -8957,6 +8966,67 @@ func companiesPart12() []domain.CompanyProfile {
 			ShortDescription: "Autonomous and AI-assisted cyber investigations platform",
 			Industries: []domain.Industry{
 				domain.IndustryCyberSecurity,
+			},
+		},
+		{
+			ID:      0,                         // system
+			Type:    domain.CompanyTypeStartup, // system
+			Name:    "CareCar",
+			Website: "https://www.carecar.co/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                18311681,
+				IDs:               nil,
+				Alias:             "carecarco",
+				Name:              "CareCar",
+				Followers:         "654",
+				Employees:         "11-50",
+				AssociatedMembers: "49",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go:    {},
+				domain.Rust:  {},
+				domain.Zig:   {},
+				domain.Scala: {},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer",
+							ShortDescription:     "Platform & APIs",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4216110820/",
+							Date:                 mustDate("2025-04-28"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "",
+			Industries:       []domain.Industry{
+				// NOP
 			},
 		},
 
