@@ -1233,8 +1233,21 @@ func companiesPart9() []domain.CompanyProfile {
 				Alias: "",
 			},
 			Languages: domain.Languages{
-				domain.Go:     {},
-				domain.Rust:   {},
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Embedded Software Engineer – Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4207056896/",
+							Date:                 mustDate("2025-05-03"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
 				domain.Zig:    {},
 				domain.Scala:  {},
 				domain.Elixir: {},
@@ -7301,7 +7314,7 @@ func companiesPart9() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4142024603/",
-							Date:                 mustDate("2025-04-11"), // mustDate("2025-03-20"),
+							Date:                 mustDate("2025-05-03"), // mustDate("2025-04-11"), // mustDate("2025-03-20"),
 							WithSalary:           false,
 							Remote:               false,
 						},

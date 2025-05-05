@@ -264,7 +264,7 @@ func companiesPart1() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4206880649/",
-							Date:                 mustDate("2025-04-12"),
+							Date:                 mustDate("2025-05-04"), // mustDate("2025-04-12"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -19648,10 +19648,10 @@ func companiesPart1() []domain.CompanyProfile {
 						},
 						{
 							Title:                "Back-End Software Engineer (Rust)",
-							ShortDescription:     "",
+							ShortDescription:     "AdTech",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4204813057/",
-							Date:                 mustDate("2025-04-10"),
+							Date:                 mustDate("2025-05-02"), // mustDate("2025-04-10"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -19664,7 +19664,9 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
-			Industries:       []domain.Industry{},
+			Industries: []domain.Industry{
+				domain.IndustryAdTech,
+			},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
 				domain.Czechia,
