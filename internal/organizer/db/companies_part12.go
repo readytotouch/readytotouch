@@ -3017,7 +3017,7 @@ func companiesPart12() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4200184252/",
-							Date:                 mustDate("2025-04-25"),
+							Date:                 mustDate("2025-05-02"), // mustDate("2025-04-25"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3635,7 +3635,7 @@ func companiesPart12() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4144858808/",
-							Date:                 mustDate("2025-04-12"),
+							Date:                 mustDate("2025-05-03"), // mustDate("2025-04-12"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -10042,6 +10042,67 @@ func companiesPart12() []domain.CompanyProfile {
 			ShortDescription: "",
 			Industries:       []domain.Industry{
 				// SpaceTech
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Scania Group",
+			Website: "https://www.scania.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3941,
+				IDs:               []int{3941, 211779, 5351375, 5638270, 6040198, 6170020, 7197193, 9483639, 9630853, 10045357, 10057007, 10144562, 10304065, 10537576, 10538624, 10654301, 10853735, 10953382, 11099574, 11260008, 11535054, 11541089, 11683238, 11780674, 12615823, 14620963, 15081900, 15260433, 16241723, 18004389, 18307197, 18399387, 20487712, 24600913, 27122978, 27172150, 33184014, 36980195, 37854900, 70259502, 70411636, 71062516, 87224261, 90405534, 92822034, 92942981},
+				Alias:             "scania",
+				Name:              "Scania Group",
+				Followers:         "627K",
+				Employees:         "10K+",
+				AssociatedMembers: "37,088",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go:   {},
+				domain.Rust: {},
+				domain.Zig:  {},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Developer, Scala",
+							ShortDescription:     "Autonomous Trucks",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4221388268/",
+							Date:                 mustDate("2025-05-03"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Scania is a provider of transport solutions",
+			Industries: []domain.Industry{
+				domain.IndustryAutomotive,
 			},
 		},
 
