@@ -933,6 +933,12 @@ var (
 		"peak":                                931, // Peak
 		"essity":                              932, // Essity
 		"pixellotltd":                         933, // Pixellot - AI-Automated Sports Video and Analytics
+		"ladderlife":                          934, // Ladder
+		"complear":                            935, // Complear
+		"pdq-com":                             936, // PDQ
+		"true-anomaly":                        937, // True Anomaly
+		"scania":                              938, // Scania Group
+		"otiv":                                939, // OTIV
 
 	}
 )

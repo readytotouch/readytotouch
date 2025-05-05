@@ -1832,7 +1832,7 @@ func companiesPart12() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4144629838/",
-							Date:                 mustDate("2025-04-11"),
+							Date:                 mustDate("2025-05-04"), // mustDate("2025-04-11"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2159,7 +2159,7 @@ func companiesPart12() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4204378000/",
-							Date:                 mustDate("2025-04-23"), // mustDate("2025-04-08"),
+							Date:                 mustDate("2025-05-03"), // mustDate("2025-04-23"), // mustDate("2025-04-08"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2659,6 +2659,15 @@ func companiesPart12() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Rust Senior Principal Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4208228319/",
+							Date:                 mustDate("2025-05-04"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig:     {},
@@ -2716,7 +2725,7 @@ func companiesPart12() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4204211704/",
-							Date:                 mustDate("2025-04-09"),
+							Date:                 mustDate("2025-05-01"), // mustDate("2025-04-09"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -2733,6 +2742,15 @@ func companiesPart12() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4203425510/",
 							Date:                 mustDate("2025-04-08"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+						{
+							Title:                "Elixir Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4203423628/",
+							Date:                 mustDate("2025-04-29"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -3008,7 +3026,7 @@ func companiesPart12() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4200184252/",
-							Date:                 mustDate("2025-04-25"),
+							Date:                 mustDate("2025-05-02"), // mustDate("2025-04-25"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3626,7 +3644,7 @@ func companiesPart12() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4144858808/",
-							Date:                 mustDate("2025-04-12"),
+							Date:                 mustDate("2025-05-03"), // mustDate("2025-04-12"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -5951,6 +5969,15 @@ func companiesPart12() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Backend Engineer (Elixir)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4220171393/",
+							Date:                 mustDate("2025-05-01"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Clojure: {},
@@ -6487,6 +6514,15 @@ func companiesPart12() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4214257562/",
 							Date:                 mustDate("2025-04-26"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Go Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4221277098/",
+							Date:                 mustDate("2025-05-03"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -9217,6 +9253,15 @@ func companiesPart12() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Rust Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4169030739/",
+							Date:                 mustDate("2025-05-05"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig:     {},
@@ -9778,6 +9823,372 @@ func companiesPart12() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "AI-based automatic video and analytics solutions for the sports market",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Ladder",
+			Website: "https://www.ladderlife.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                6634049,
+				IDs:               nil,
+				Alias:             "ladderlife",
+				Name:              "Ladder",
+				Followers:         "7K",
+				Employees:         "51-200",
+				AssociatedMembers: "120",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go:     {},
+				domain.Rust:   {},
+				domain.Zig:    {},
+				domain.Scala:  {},
+				domain.Elixir: {},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer – Full Stack (Clojure)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4209496817/",
+							Date:                 mustDate("2025-05-05"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Ladder combines financial and insurance expertise to make life insurance easily accessible to everyone",
+			Industries: []domain.Industry{
+				domain.IndustryInsurTech,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Complear",
+			Website: "http://complear.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                75877122,
+				IDs:               nil,
+				Alias:             "complear",
+				Name:              "Complear",
+				Followers:         "3K",
+				Employees:         "11-50",
+				AssociatedMembers: "20",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go:    {},
+				domain.Rust:  {},
+				domain.Zig:   {},
+				domain.Scala: {},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Full Stack Engineer (Elixir/Liveview/React)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4219705060/",
+							Date:                 mustDate("2025-05-02"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "",
+			Industries: []domain.Industry{
+				domain.IndustryMedTech,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "PDQ",
+			Website: "https://www.pdq.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                17961724,
+				IDs:               nil,
+				Alias:             "pdq-com",
+				Name:              "PDQ",
+				Followers:         "6K",
+				Employees:         "201-500",
+				AssociatedMembers: "270",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go:    {},
+				domain.Rust:  {},
+				domain.Zig:   {},
+				domain.Scala: {},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer, Elixir",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4218978070/",
+							Date:                 mustDate("2025-05-01"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "PDQ is device management for sysadmins, by sysadmins, that's simple, secure, and quick",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "True Anomaly",
+			Website: "https://www.trueanomaly.space/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                80801253,
+				IDs:               nil,
+				Alias:             "true-anomaly",
+				Name:              "True Anomaly",
+				Followers:         "41K",
+				Employees:         "51-200",
+				AssociatedMembers: "173",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go:    {},
+				domain.Rust:  {},
+				domain.Zig:   {},
+				domain.Scala: {},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Elixir Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4219694154/",
+							Date:                 mustDate("2025-04-30"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "",
+			Industries:       []domain.Industry{
+				// SpaceTech
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Scania Group",
+			Website: "https://www.scania.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3941,
+				IDs:               []int{3941, 211779, 5351375, 5638270, 6040198, 6170020, 7197193, 9483639, 9630853, 10045357, 10057007, 10144562, 10304065, 10537576, 10538624, 10654301, 10853735, 10953382, 11099574, 11260008, 11535054, 11541089, 11683238, 11780674, 12615823, 14620963, 15081900, 15260433, 16241723, 18004389, 18307197, 18399387, 20487712, 24600913, 27122978, 27172150, 33184014, 36980195, 37854900, 70259502, 70411636, 71062516, 87224261, 90405534, 92822034, 92942981},
+				Alias:             "scania",
+				Name:              "Scania Group",
+				Followers:         "627K",
+				Employees:         "10K+",
+				AssociatedMembers: "37,088",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go:   {},
+				domain.Rust: {},
+				domain.Zig:  {},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Developer, Scala",
+							ShortDescription:     "Autonomous Trucks",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4221388268/",
+							Date:                 mustDate("2025-05-03"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Scania is a provider of transport solutions",
+			Industries: []domain.Industry{
+				domain.IndustryAutomotive,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "OTIV",
+			Website: "https://www.otiv.ai/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                23729264,
+				IDs:               nil,
+				Alias:             "otiv",
+				Name:              "OTIV",
+				Followers:         "6K",
+				Employees:         "11-50",
+				AssociatedMembers: "46",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Full Stack Developer Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4223904753/",
+							Date:                 mustDate("2025-05-05"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Remote and autonomous driving in rail",
 			Industries:       []domain.Industry{
 				// NOP
 			},
