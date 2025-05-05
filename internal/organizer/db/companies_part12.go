@@ -9782,6 +9782,67 @@ func companiesPart12() []domain.CompanyProfile {
 				// NOP
 			},
 		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Ladder",
+			Website: "https://www.ladderlife.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                6634049,
+				IDs:               nil,
+				Alias:             "ladderlife",
+				Name:              "Ladder",
+				Followers:         "7K",
+				Employees:         "51-200",
+				AssociatedMembers: "120",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go:     {},
+				domain.Rust:   {},
+				domain.Zig:    {},
+				domain.Scala:  {},
+				domain.Elixir: {},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer – Full Stack (Clojure)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4209496817/",
+							Date:                 mustDate("2025-05-05"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Ladder combines financial and insurance expertise to make life insurance easily accessible to everyone",
+			Industries: []domain.Industry{
+				domain.IndustryInsurTech,
+			},
+		},
 
 		// Template
 		//{
