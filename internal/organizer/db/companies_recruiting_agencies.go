@@ -469,5 +469,95 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Recruiting agency
 		},
+		{
+			Name:    "Uplers",
+			Website: "https://www.uplers.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                51692521,
+				IDs:               nil,
+				Alias:             "weareuplers",
+				Name:              "Uplers",
+				Followers:         "1M",
+				Employees:         "1K-5K",
+				AssociatedMembers: "1,068",
+				Verified:          true,
+			},
+			Ignore: true, // Freelance Platforms
+		},
+		{
+			Name:    "Coopers Group AG",
+			Website: "https://www.coopers.ch/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2282474,
+				IDs:               nil,
+				Alias:             "coopers-group-gmbh",
+				Name:              "Coopers Group AG",
+				Followers:         "61K",
+				Employees:         "51-200",
+				AssociatedMembers: "71",
+				Verified:          false,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "UMATR",
+			Website: "https://www.umatr.io/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                70926319,
+				IDs:               nil,
+				Alias:             "umatr",
+				Name:              "UMATR",
+				Followers:         "110K",
+				Employees:         "11-50",
+				AssociatedMembers: "18",
+				Verified:          false,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Edison Smart®",
+			Website: "https://edisonsmart.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                76357488,
+				IDs:               nil,
+				Alias:             "edisonsmart",
+				Name:              "Edison Smart®",
+				Followers:         "135K",
+				Employees:         "11-50",
+				AssociatedMembers: "47",
+				Verified:          false,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Ambition",
+			Website: "https://www.ambition.com.au/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3842697,
+				IDs:               nil,
+				Alias:             "ambitionrecruitment",
+				Name:              "Ambition",
+				Followers:         "240K",
+				Employees:         "201-500",
+				AssociatedMembers: "655",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Michael Page",
+			Website: "https://www.michaelpage.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3476,
+				IDs:               nil,
+				Alias:             "michael-page",
+				Name:              "Michael Page",
+				Followers:         "4M",
+				Employees:         "5K-10K",
+				AssociatedMembers: "11,527",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
 	}
 }

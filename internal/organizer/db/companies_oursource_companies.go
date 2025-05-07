@@ -68,5 +68,21 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Smart Consulting",
+			Website: "https://www.smartconsulting.pt/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                9356133,
+				IDs:               []int{9356133, 79396476},
+				Alias:             "thesmartwaytodoit",
+				Name:              "Smart Consulting",
+				Followers:         "121K",
+				Employees:         "201-500",
+				AssociatedMembers: "322",
+				Verified:          false,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }
