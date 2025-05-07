@@ -394,5 +394,80 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Recruiting agency
 		},
+		{
+			Name:    "RED Global",
+			Website: "https://www.redglobal.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                15014,
+				IDs:               nil,
+				Alias:             "red-commerce",
+				Name:              "RED Global",
+				Followers:         "566K",
+				Employees:         "201-500",
+				AssociatedMembers: "669",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Signify Technology",
+			Website: "https://www.signifytechnology.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                15087386,
+				IDs:               nil,
+				Alias:             "signify-technology",
+				Name:              "Signify Technology",
+				Followers:         "302K",
+				Employees:         "11-50",
+				AssociatedMembers: "61",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Finna Group",
+			Website: "https://www.finnagroup.io/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                67969725,
+				IDs:               nil,
+				Alias:             "finna-group",
+				Name:              "Finna Group",
+				Followers:         "3K",
+				Employees:         "2-10",
+				AssociatedMembers: "6",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Lensa",
+			Website: "https://lensa.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                5192530,
+				IDs:               nil,
+				Alias:             "lensa",
+				Name:              "Lensa",
+				Followers:         "34K",
+				Employees:         "51-200",
+				AssociatedMembers: "135",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "W3Global",
+			Website: "https://www.w3global.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1286891,
+				IDs:               nil,
+				Alias:             "w3global",
+				Name:              "W3Global",
+				Followers:         "106K",
+				Employees:         "501-1K",
+				AssociatedMembers: "1,010",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
 	}
 }
