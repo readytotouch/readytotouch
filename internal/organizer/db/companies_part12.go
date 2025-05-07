@@ -3176,6 +3176,15 @@ func companiesPart12() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Elixir Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4222875157/",
+							Date:                 mustDate("2025-05-06"),
+							WithSalary:           true,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Clojure: {},
@@ -4027,7 +4036,7 @@ func companiesPart12() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4211013843/",
-							Date:                 mustDate("2025-04-16"),
+							Date:                 mustDate("2025-05-07"), // mustDate("2025-04-16"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -10191,6 +10200,67 @@ func companiesPart12() []domain.CompanyProfile {
 			ShortDescription: "Remote and autonomous driving in rail",
 			Industries:       []domain.Industry{
 				// NOP
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "AlertMedia",
+			Website: "https://www.alertmedia.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3582832,
+				IDs:               nil,
+				Alias:             "alertmedia",
+				Name:              "AlertMedia",
+				Followers:         "13K",
+				Employees:         "201-500",
+				AssociatedMembers: "433",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go:    {},
+				domain.Rust:  {},
+				domain.Zig:   {},
+				domain.Scala: {},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer (Elixir)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4223001348/",
+							Date:                 mustDate("2025-05-07"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Helping companies protect their people during emergencies with fast, reliable communication and threat intelligence",
+			Industries: []domain.Industry{
+				domain.IndustryMedTech,
 			},
 		},
 

@@ -379,5 +379,20 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Recruiting agency
 		},
+		{
+			Name:    "Client Server",
+			Website: "https://www.client-server.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                99339,
+				IDs:               nil,
+				Alias:             "client-server",
+				Name:              "Client Server",
+				Followers:         "159K",
+				Employees:         "51-200",
+				AssociatedMembers: "114",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
 	}
 }
