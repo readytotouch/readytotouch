@@ -17,12 +17,16 @@
       "js": ["highlight-company-name.js"]
     },
     {
+      "matches": ["https://www.linkedin.com/jobs/search/*"],
+      "js": ["highlight-company-name.js", "highlight-vacancy-title.js"]
+    },
+    {
       "matches": ["https://github.com/*"],
       "js": ["copy-github-company-profile-data.js"]
     },
     {
       "matches": ["https://www.linkedin.com/company/*"],
-      "js": ["copy-linkedin-company-profile-data.js"]
+      "js": ["highlight-company-name.js", "copy-linkedin-company-profile-data.js"]
     },
     {
       "matches": ["https://www.linkedin.com/school/*"],
@@ -30,7 +34,7 @@
     },
     {
       "matches": ["https://www.linkedin.com/jobs/view/*"],
-      "js": ["copy-linkedin-vacancy-data.js", "highlight-vacancy-title.js"]
+      "js": ["copy-linkedin-vacancy-data.js", "highlight-company-name.js", "highlight-vacancy-title.js"]
     },
     {
       "matches": ["https://www.glassdoor.com/*"],
@@ -55,6 +59,10 @@
     {
       "matches": ["https://app.welcometothejungle.com/jobs/*"],
       "js": ["copy-welcometothejungle-vacancy-data.js", "highlight-vacancy-title.js"]
+    },
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["github-append-languages.js"]
     }
   ]
 }

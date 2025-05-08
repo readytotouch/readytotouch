@@ -939,6 +939,10 @@ var (
 		"true-anomaly":                        937, // True Anomaly
 		"scania":                              938, // Scania Group
 		"otiv":                                939, // OTIV
+		"alertmedia":                          940, // AlertMedia
+		"fujitsu":                             941, // Fujitsu
+		"onedoc.ch":                           942, // OneDoc
+		"wallee-group":                        943, // Wallee Group
 
 	}
 )

@@ -379,5 +379,200 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Recruiting agency
 		},
+		{
+			Name:    "Client Server",
+			Website: "https://www.client-server.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                99339,
+				IDs:               nil,
+				Alias:             "client-server",
+				Name:              "Client Server",
+				Followers:         "159K",
+				Employees:         "51-200",
+				AssociatedMembers: "114",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "RED Global",
+			Website: "https://www.redglobal.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                15014,
+				IDs:               nil,
+				Alias:             "red-commerce",
+				Name:              "RED Global",
+				Followers:         "566K",
+				Employees:         "201-500",
+				AssociatedMembers: "669",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Signify Technology",
+			Website: "https://www.signifytechnology.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                15087386,
+				IDs:               nil,
+				Alias:             "signify-technology",
+				Name:              "Signify Technology",
+				Followers:         "302K",
+				Employees:         "11-50",
+				AssociatedMembers: "61",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Finna Group",
+			Website: "https://www.finnagroup.io/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                67969725,
+				IDs:               nil,
+				Alias:             "finna-group",
+				Name:              "Finna Group",
+				Followers:         "3K",
+				Employees:         "2-10",
+				AssociatedMembers: "6",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Lensa",
+			Website: "https://lensa.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                5192530,
+				IDs:               nil,
+				Alias:             "lensa",
+				Name:              "Lensa",
+				Followers:         "34K",
+				Employees:         "51-200",
+				AssociatedMembers: "135",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "W3Global",
+			Website: "https://www.w3global.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1286891,
+				IDs:               nil,
+				Alias:             "w3global",
+				Name:              "W3Global",
+				Followers:         "106K",
+				Employees:         "501-1K",
+				AssociatedMembers: "1,010",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Uplers",
+			Website: "https://www.uplers.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                51692521,
+				IDs:               nil,
+				Alias:             "weareuplers",
+				Name:              "Uplers",
+				Followers:         "1M",
+				Employees:         "1K-5K",
+				AssociatedMembers: "1,068",
+				Verified:          true,
+			},
+			Ignore: true, // Freelance Platforms
+		},
+		{
+			Name:    "Coopers Group AG",
+			Website: "https://www.coopers.ch/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2282474,
+				IDs:               nil,
+				Alias:             "coopers-group-gmbh",
+				Name:              "Coopers Group AG",
+				Followers:         "61K",
+				Employees:         "51-200",
+				AssociatedMembers: "71",
+				Verified:          false,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "UMATR",
+			Website: "https://www.umatr.io/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                70926319,
+				IDs:               nil,
+				Alias:             "umatr",
+				Name:              "UMATR",
+				Followers:         "110K",
+				Employees:         "11-50",
+				AssociatedMembers: "18",
+				Verified:          false,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Edison Smart®",
+			Website: "https://edisonsmart.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                76357488,
+				IDs:               nil,
+				Alias:             "edisonsmart",
+				Name:              "Edison Smart®",
+				Followers:         "135K",
+				Employees:         "11-50",
+				AssociatedMembers: "47",
+				Verified:          false,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Ambition",
+			Website: "https://www.ambition.com.au/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3842697,
+				IDs:               nil,
+				Alias:             "ambitionrecruitment",
+				Name:              "Ambition",
+				Followers:         "240K",
+				Employees:         "201-500",
+				AssociatedMembers: "655",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Michael Page",
+			Website: "https://www.michaelpage.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3476,
+				IDs:               nil,
+				Alias:             "michael-page",
+				Name:              "Michael Page",
+				Followers:         "4M",
+				Employees:         "5K-10K",
+				AssociatedMembers: "11,527",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Morgan McKinley",
+			Website: "https://www.morganmckinley.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                16175,
+				IDs:               nil,
+				Alias:             "morgan-mckinley",
+				Name:              "Morgan McKinley",
+				Followers:         "826K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "1,359",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
 	}
 }

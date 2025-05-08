@@ -31,9 +31,21 @@ function highlightVacancyTitle() {
         return;
     }
 
-    searchLinkedInCompanyProfile($vacancyTitle.querySelector("a"))
+    if (window.location.href.startsWith("https://app.welcometothejungle.com/jobs/")) {
+        searchLinkedInCompanyProfile($vacancyTitle.querySelector("a"))
+    }
 
-    const url = normalizeURL(window.location.origin + window.location.pathname);
+    let url = "";
+
+    if (window.location.href.startsWith("https://www.linkedin.com/jobs/search/")) {
+        const params = new URLSearchParams(window.location.search);
+
+        const id = params.get("currentJobId");
+
+        url = normalizeURL(`https://www.linkedin.com/jobs/view/${id}/`);
+    } else {
+        url = normalizeURL(window.location.origin + window.location.pathname);
+    }
 
     for (const vacancy of vacanciesCache) {
         if (vacancy.url === url) {
