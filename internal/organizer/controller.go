@@ -19,8 +19,13 @@ import (
 )
 
 var (
-	testFullPublicUntil = time.Date(2025, time.April, 25, 0, 0, 0, 0, time.UTC)
+	testFullPublicSince = time.Date(2025, time.May, 11, 0, 0, 0, 0, time.UTC)
+	testFullPublicUntil = time.Date(2026, time.January, 25, 0, 0, 0, 0, time.UTC)
 )
+
+func testFullPublic(date time.Time) bool {
+	return date.After(testFullPublicSince) && date.Before(testFullPublicUntil)
+}
 
 type (
 	companyAliasURI struct {
@@ -712,7 +717,7 @@ func (c *Controller) VacancyRedirect(ctx *gin.Context) {
 		now        = time.Now().UTC()
 	)
 
-	if authUserID == 0 && now.After(testFullPublicUntil) {
+	if authUserID == 0 && !testFullPublic(now) {
 		ctx.Redirect(http.StatusFound, "/organizers/golang/welcome"+c.redirect(ctx.Request.URL.Path))
 
 		return
@@ -1562,7 +1567,7 @@ func (c *Controller) random(language domain.Language) bool {
 		minute = now.Minute()
 	)
 
-	if now.Before(testFullPublicUntil) {
+	if testFullPublic(now) {
 		return false
 	}
 
