@@ -59,6 +59,10 @@
     {
       "matches": ["https://app.welcometothejungle.com/jobs/*"],
       "js": ["copy-welcometothejungle-vacancy-data.js", "highlight-vacancy-title.js"]
+    },
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["github-append-languages.js"]
     }
   ]
 }

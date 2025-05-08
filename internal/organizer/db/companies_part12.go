@@ -4931,7 +4931,11 @@ func companiesPart12() []domain.CompanyProfile {
 				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Telnyx",
+				Employees:   "51 to 200",
+				Salary:      "",
+				Reviews:     "7",
+				ReviewsRate: "3.1",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias: "",
@@ -5979,10 +5983,15 @@ func companiesPart12() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Remote",
+				Employees:   "201 to 500",
+				Salary:      "",
+				Reviews:     "21",
+				ReviewsRate: "3.0",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "remote",
+				Employees: "2,000",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Remote-EI_IE3871683.11,17.htm",
@@ -6060,7 +6069,8 @@ func companiesPart12() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "fresha",
+				Employees: "330",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Fresha-EI_IE3506248.11,17.htm",
@@ -6198,7 +6208,8 @@ func companiesPart12() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "blackrock",
+				Employees: "22,090",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-BlackRock-EI_IE9331.11,20.htm",
@@ -6340,7 +6351,8 @@ func companiesPart12() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "foodji",
+				Employees: "60",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-foodji-marketplace-EI_IE4919054.11,29.htm",
@@ -6538,7 +6550,8 @@ func companiesPart12() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "muzz",
+				Employees: "30",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Muzz-EI_IE3256123.11,15.htm",
@@ -7042,10 +7055,15 @@ func companiesPart12() []domain.CompanyProfile {
 				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Weedmaps",
+				Employees:   "201 to 500",
+				Salary:      "$95K ~ $200K a year",
+				Reviews:     "83",
+				ReviewsRate: "2.9",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "weedmaps",
+				Employees: "700",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Weedmaps-EI_IE1013617.11,19.htm",
@@ -7235,10 +7253,15 @@ func companiesPart12() []domain.CompanyProfile {
 				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Spreedly",
+				Employees:   "51 to 200",
+				Salary:      "",
+				Reviews:     "5",
+				ReviewsRate: "4.4",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "spreedly",
+				Employees: "150",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Spreedly-EI_IE1362343.11,19.htm",
@@ -7691,7 +7714,7 @@ func companiesPart12() []domain.CompanyProfile {
 				Name:              "Omniful",
 				Followers:         "9K",
 				Employees:         "51-200",
-				AssociatedMembers: "",
+				AssociatedMembers: "94",
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -7834,7 +7857,14 @@ func companiesPart12() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Railsr-EI_IE2978897.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Railsr-Reviews-E2978897.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Railsr-Jobs-E2978897.htm",
+				Jobs:        "7",
+				Reviews:     "74",
+				Salaries:    "198",
+				ReviewsRate: "3.4",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -8215,7 +8245,8 @@ func companiesPart12() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "impactcom",
+				Employees: "1,090",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-impact-com-EI_IE319986.11,21.htm",
@@ -8409,7 +8440,11 @@ func companiesPart12() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Squarepoint-Capital",
+				Employees:   "501 to 1,000",
+				Salary:      "$85K ~ $202K a year",
+				Reviews:     "56",
+				ReviewsRate: "3.8",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias: "",
@@ -8477,10 +8512,15 @@ func companiesPart12() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Flow-Traders",
+				Employees:   "201 to 500",
+				Salary:      "",
+				Reviews:     "22",
+				ReviewsRate: "3.3",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "flow-traders",
+				Employees: "554",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Flow-Traders-EI_IE258344.11,23.htm",
@@ -8734,7 +8774,8 @@ func companiesPart12() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "deutsche-telekom",
+				Employees: "215,680",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Deutsche-Telekom-EI_IE4092.11,27.htm",
@@ -9179,7 +9220,14 @@ func companiesPart12() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Evident-ID-EI_IE1554019.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Evident-ID-Reviews-E1554019.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Evident-ID-Jobs-E1554019.htm",
+				Jobs:        "7",
+				Reviews:     "27",
+				Salaries:    "38",
+				ReviewsRate: "4.4",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -9237,10 +9285,18 @@ func companiesPart12() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "flextrade-systems",
+				Employees: "720",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-FlexTrade-Systems-Inc-EI_IE197820.11,32.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/FlexTrade-Systems-Inc-Reviews-E197820.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/FlexTrade-Systems-Inc-Jobs-E197820.htm",
+				Jobs:        "23",
+				Reviews:     "405",
+				Salaries:    "705",
+				ReviewsRate: "3.9",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -9291,17 +9347,30 @@ func companiesPart12() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "epicgames",
+				Followers: "41.9k",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "epic-games",
+				Employees:   "1,001 to 5,000",
+				Salary:      "$70K ~ $270K a year",
+				Reviews:     "79",
+				ReviewsRate: "4.2",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "epic-games",
+				Employees: "990",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Epic-Games-EI_IE266904.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Epic-Games-Reviews-E266904.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Epic-Games-Jobs-E266904.htm",
+				Jobs:        "190",
+				Reviews:     "620",
+				Salaries:    "1.5K",
+				ReviewsRate: "3.7",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -9484,24 +9553,36 @@ func companiesPart12() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "kiddom",
+				Followers: "14",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Kiddom",
+				Employees:   "51 to 200",
+				Salary:      "",
+				Reviews:     "5",
+				ReviewsRate: "3.6",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Kiddom-EI_IE1575311.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Kiddom-Reviews-E1575311.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Kiddom-Jobs-E1575311.htm",
+				Jobs:        "22",
+				Reviews:     "64",
+				Salaries:    "91",
+				ReviewsRate: "3.0",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 6,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Staff Software Engineer",
@@ -9730,8 +9811,9 @@ func companiesPart12() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "peak",
+				Followers: "26",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -9747,7 +9829,7 @@ func companiesPart12() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 27,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Big Data Platform Engineer – Java/Go",
@@ -9801,7 +9883,14 @@ func companiesPart12() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Essity-EI_IE1685428.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Essity-Reviews-E1685428.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Essity-Jobs-E1685428.htm",
+				Jobs:        "437",
+				Reviews:     "1.3K",
+				Salaries:    "2.1K",
+				ReviewsRate: "3.9",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -9862,7 +9951,14 @@ func companiesPart12() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Pixellot-EI_IE1885122.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Pixellot-Reviews-E1885122.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Pixellot-Jobs-E1885122.htm",
+				Jobs:        "14",
+				Reviews:     "38",
+				Salaries:    "47",
+				ReviewsRate: "4.0",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -9913,17 +10009,30 @@ func companiesPart12() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "ladderlife",
+				Followers: "15",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Ladder-Insurance",
+				Employees:   "51 to 200",
+				Salary:      "",
+				Reviews:     "15",
+				ReviewsRate: "3.7",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "ladder",
+				Employees: "150",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Ladder-EI_IE1405582.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Ladder-Reviews-E1405582.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Ladder-Jobs-E1405582.htm",
+				Jobs:        "",
+				Reviews:     "31",
+				Salaries:    "58",
+				ReviewsRate: "4.5",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -9935,7 +10044,7 @@ func companiesPart12() []domain.CompanyProfile {
 				domain.Scala:  {},
 				domain.Elixir: {},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 10,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer – Full Stack (Clojure)",
@@ -10035,17 +10144,26 @@ func companiesPart12() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "pdq",
+				Followers: "50",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "pdq",
+				Employees: "100",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-PDQ-com-EI_IE2113848.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/PDQ-com-Reviews-E2113848.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/PDQ-com-Jobs-E2113848.htm",
+				Jobs:        "",
+				Reviews:     "58",
+				Salaries:    "107",
+				ReviewsRate: "4.6",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -10106,7 +10224,14 @@ func companiesPart12() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-True-Anomaly-EI_IE7642233.11,23.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/True-Anomaly-Reviews-E7642233.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/True-Anomaly-Jobs-E7642233.htm",
+				Jobs:        "",
+				Reviews:     "17",
+				Salaries:    "22",
+				ReviewsRate: "3.1",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -10157,8 +10282,9 @@ func companiesPart12() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "scania",
+				Followers: "26",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -10167,7 +10293,14 @@ func companiesPart12() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Scania-EI_IE6131.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Scania-Reviews-E6131.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Scania-Jobs-E6131.htm",
+				Jobs:        "366",
+				Reviews:     "2.2K",
+				Salaries:    "3.6K",
+				ReviewsRate: "4.1",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -10286,10 +10419,18 @@ func companiesPart12() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "alertmedia",
+				Employees: "200",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-AlertMedia-EI_IE986631.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/AlertMedia-Reviews-E986631.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/AlertMedia-Jobs-E986631.htm",
+				Jobs:        "",
+				Reviews:     "164",
+				Salaries:    "303",
+				ReviewsRate: "4.1",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -10325,9 +10466,9 @@ func companiesPart12() []domain.CompanyProfile {
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "Fujitsu",
-			Website: "https://global.fujitsu/",
-			Careers: "",
-			About:   "",
+			Website: "https://www.fujitsu.com/",
+			Careers: "https://www.fujitsu.com/about/careers/",
+			About:   "https://www.fujitsu.com/about/",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1374,
@@ -10340,17 +10481,30 @@ func companiesPart12() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "fujitsu",
+				Followers: "106",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Fujitsu-Global",
+				Employees:   "10,000+",
+				Salary:      "$48K ~ $205K a year",
+				Reviews:     "37",
+				ReviewsRate: "3.1",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "fujitsu",
+				Employees: "47,180",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Fujitsu-EI_IE3524.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Fujitsu-Reviews-E3524.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Fujitsu-Jobs-E3524.htm",
+				Jobs:        "624",
+				Reviews:     "7.6K",
+				Salaries:    "25K",
+				ReviewsRate: "3.6",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
