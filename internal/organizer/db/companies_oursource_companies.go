@@ -84,5 +84,37 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Xoriant",
+			Website: "https://www.xoriant.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                166996,
+				IDs:               nil,
+				Alias:             "xoriant",
+				Name:              "Xoriant",
+				Followers:         "464K",
+				Employees:         "5K-10K",
+				AssociatedMembers: "4,548",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Trideca",
+			Website: "https://www.trideca.com.au/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2455945,
+				IDs:               nil,
+				Alias:             "tridecaptyltd",
+				Name:              "Trideca",
+				Followers:         "7K",
+				Employees:         "51-200",
+				AssociatedMembers: "97",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }

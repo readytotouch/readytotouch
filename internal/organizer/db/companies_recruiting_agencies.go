@@ -559,5 +559,20 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Recruiting agency
 		},
+		{
+			Name:    "Morgan McKinley",
+			Website: "https://www.morganmckinley.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                16175,
+				IDs:               nil,
+				Alias:             "morgan-mckinley",
+				Name:              "Morgan McKinley",
+				Followers:         "826K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "1,359",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
 	}
 }
