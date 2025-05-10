@@ -940,3 +940,4 @@ pixellotltd pixellot-112x56.png
 notchupteam notchup-112x56.png
 flextrade flextrade-112x56.png
 carecarco carecar-112x56.png
+tensorzero tensorzero-112x56.png

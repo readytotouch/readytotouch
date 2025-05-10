@@ -135,6 +135,7 @@ resize-logos:
 	go run ./cmd/organizers/resize-logos/main.go ./public/logos-v1/adapted/notchup-256x256.png ./public/logos-v1/adapted/notchup-112x56.png
 	go run ./cmd/organizers/resize-logos/main.go ./public/logos-v1/adapted/flextrade-192x192.png ./public/logos-v1/adapted/flextrade-112x56.png
 	go run ./cmd/organizers/resize-logos/main.go ./public/logos-v1/adapted/carecar-100x100.png ./public/logos-v1/adapted/carecar-112x56.png
+	go run ./cmd/organizers/resize-logos/main.go ./public/logos-v1/adapted/tensorzero-100x100.png ./public/logos-v1/adapted/tensorzero-112x56.png
 
 # make rust-companies > ./datasync/github.com/readytotouch/readytotouch/companies.txt
 # VERIFIED=true make rust-companies > ./datasync/github.com/readytotouch/readytotouch/verified-companies.txt

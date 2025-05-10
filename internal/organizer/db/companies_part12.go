@@ -10862,6 +10862,68 @@ func companiesPart12() []domain.CompanyProfile {
 			},
 			Ignore: true, // Casino
 		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "TensorZero",
+			Website: "https://www.tensorzero.com/",
+			Careers: "https://www.tensorzero.com/blog/",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                100773704,
+				IDs:               nil,
+				Alias:             "tensorzero",
+				Name:              "TensorZero",
+				Followers:         "493",
+				Employees:         "2-10",
+				AssociatedMembers: "3",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:     "tensorzero",
+				Followers: "119",
+				Verified:  false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 1,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Founding Member of Technical Staff — Back-end / Systems Engineering",
+							ShortDescription:     "Our model gateway, written in Rust, is the backbone of the project",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4051181311/",
+							Date:                 mustDate("2024-11-11"),
+							WithSalary:           true,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "TensorZero builds open-source infrastructure that creates a feedback loop for optimizing LLM applications — turning production data into smarter, faster, and cheaper models",
+			Industries: []domain.Industry{
+				domain.IndustryDevOps,
+			},
+		},
 
 		// Template
 		//{
