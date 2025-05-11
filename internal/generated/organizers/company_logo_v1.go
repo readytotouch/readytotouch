@@ -818,6 +818,7 @@ var (
 		"teamsparq":                           "",
 		"telestream":                          "",
 		"tenableinc":                          "tenableinc.png",
+		"tensorzero":                          "tensorzero-112x56.png",
 		"tenx-technologies":                   "",
 		"teradata":                            "teradata.png",
 		"teramindco":                          "teramindco.png",

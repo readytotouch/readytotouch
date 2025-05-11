@@ -600,6 +600,15 @@ func companiesPart12() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Software Engineer (Go)",
+							ShortDescription:     "R&D / Data Services",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4226690264/",
+							Date:                 mustDate("2025-05-10"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -1975,6 +1984,15 @@ func companiesPart12() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Go Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4227134333/",
+							Date:                 mustDate("2025-05-10"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -3328,7 +3346,7 @@ func companiesPart12() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4204059007/",
-							Date:                 mustDate("2025-04-16"), // mustDate("2025-04-11"),
+							Date:                 mustDate("2025-05-09"), // mustDate("2025-04-16"), // mustDate("2025-04-11"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -4970,6 +4988,15 @@ func companiesPart12() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Software Engineer, Elixir",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4226344237/",
+							Date:                 mustDate("2025-05-09"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Clojure: {},
@@ -6234,6 +6261,15 @@ func companiesPart12() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4193174525/",
 							Date:                 mustDate("2025-04-16"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Golang Software Engineer, Vice President",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4194420551/",
+							Date:                 mustDate("2025-05-09"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -8273,7 +8309,7 @@ func companiesPart12() []domain.CompanyProfile {
 							ShortDescription:     "Data Platform",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4209595207/",
-							Date:                 mustDate("2025-04-19"),
+							Date:                 mustDate("2025-05-10"), // mustDate("2025-04-19"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -10647,6 +10683,15 @@ func companiesPart12() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Scala Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4226130637/",
+							Date:                 mustDate("2025-05-09"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Elixir:  {},
@@ -10781,6 +10826,560 @@ func companiesPart12() []domain.CompanyProfile {
 				// NOP
 			},
 			Ignore: true, // Blockchain
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Caesars Entertainment",
+			Website: "https://www.caesars.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                4210,
+				IDs:               []int{4210, 11272, 114488, 676238, 803567, 883365, 946384, 2911245, 10168653, 54709651},
+				Alias:             "caesars-entertainment-inc",
+				Name:              "Caesars Entertainment",
+				Followers:         "156K",
+				Employees:         "10K+",
+				AssociatedMembers: "17,856",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go:   {},
+				domain.Rust: {},
+				domain.Zig:  {},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Scala/Java Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4226347126/",
+							Date:                 mustDate("2025-05-09"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+			Ignore: true, // Casino
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "TensorZero",
+			Website: "https://www.tensorzero.com/",
+			Careers: "https://www.tensorzero.com/blog/",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                100773704,
+				IDs:               nil,
+				Alias:             "tensorzero",
+				Name:              "TensorZero",
+				Followers:         "493",
+				Employees:         "2-10",
+				AssociatedMembers: "3",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:     "tensorzero",
+				Followers: "119",
+				Verified:  false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 1,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Founding Member of Technical Staff — Back-end / Systems Engineering",
+							ShortDescription:     "Our model gateway, written in Rust, is the backbone of the project",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4051181311/",
+							Date:                 mustDate("2024-11-11"),
+							WithSalary:           true,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "TensorZero builds open-source infrastructure that creates a feedback loop for optimizing LLM applications — turning production data into smarter, faster, and cheaper models",
+			Industries: []domain.Industry{
+				domain.IndustryDevOps,
+			},
+		},
+		{
+			ID:      0,                         // system
+			Type:    domain.CompanyTypeStartup, // system
+			Name:    "Riza",
+			Website: "https://riza.io/",
+			Careers: "https://jobs.ashbyhq.com/riza",
+			About:   "https://riza.io/company",
+			Blog:    "https://riza.io/blog",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                96086280,
+				IDs:               nil,
+				Alias:             "riza-inc",
+				Name:              "Riza",
+				Followers:         "227",
+				Employees:         "2-10",
+				AssociatedMembers: "8",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:     "riza-io",
+				Followers: "26",
+				Verified:  true,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 5,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Backend Engineer",
+							ShortDescription:     "You’ve been writing Go for at least three years",
+							SwitchingOpportunity: "",
+							URL:                  "https://jobs.ashbyhq.com/riza/0cd3a197-a25c-4145-b765-d6b8e518ea07",
+							Date:                 mustDate("2025-04-16"),
+							WithSalary:           true, // $150K – $225K • Offers Equity
+							Remote:               false,
+							// Google Cloud
+							// Comfortable writing TypeScript / Interest in learning Rust
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "AI writes code. Riza runs it.",
+			Industries: []domain.Industry{
+				domain.IndustryDevOps,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Birdie",
+			Website: "https://www.birdie.care/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                13441836,
+				IDs:               nil,
+				Alias:             "birdiecare",
+				Name:              "Birdie",
+				Followers:         "25K",
+				Employees:         "51-200",
+				AssociatedMembers: "160",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Golang Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4224237706/",
+							Date:                 mustDate("2025-05-10"),
+							WithSalary:           true,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "All-in-one platform connects care management, rostering, finance, auditing, and workforce planning, surfacing insights and automating admin",
+			Industries: []domain.Industry{
+				domain.IndustryMedTech,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Aikido Security",
+			Website: "https://www.aikido.dev/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                88890150,
+				IDs:               nil,
+				Alias:             "aikido-security",
+				Name:              "Aikido Security",
+				Followers:         "11K",
+				Employees:         "51-200",
+				AssociatedMembers: "83",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Golang Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4224288166/",
+							Date:                 mustDate("2025-05-10"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Aikido is the get-it-done security platform for developers",
+			Industries: []domain.Industry{
+				domain.IndustryCyberSecurity,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Notable Systems",
+			Website: "https://notablesystems.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                18360848,
+				IDs:               nil,
+				Alias:             "notablesystems",
+				Name:              "Notable Systems",
+				Followers:         "1K",
+				Employees:         "51-200",
+				AssociatedMembers: "43",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer – Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4225016951/",
+							Date:                 mustDate("2025-05-10"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "OCR",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "HAZA Foods, LLC",
+			Website: "https://hazagroup.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                58681959,
+				IDs:               nil,
+				Alias:             "haza-foods-llc",
+				Name:              "HAZA Foods, LLC",
+				Followers:         "3K",
+				Employees:         "10K+",
+				AssociatedMembers: "336",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer – Golang / Kubernetes / DevOps",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4227440633/",
+							Date:                 mustDate("2025-05-10"),
+							WithSalary:           true,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Wendy's franchise group",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Proxidize",
+			Website: "https://proxidize.com/",
+			Careers: "https://proxidize.com/careers/",
+			About:   "https://proxidize.com/about/",
+			Blog:    "https://proxidize.com/blog/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                68523797,
+				IDs:               nil,
+				Alias:             "proxidize",
+				Name:              "Proxidize",
+				Followers:         "23K",
+				Employees:         "11-50",
+				AssociatedMembers: "21",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4223570303/",
+							Date:                 mustDate("2025-05-09"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Proxy solutions",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Onfy",
+			Website: "https://onfy.de/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                76573663,
+				IDs:               nil,
+				Alias:             "onfy",
+				Name:              "Onfy",
+				Followers:         "1K",
+				Employees:         "11-50",
+				AssociatedMembers: "27",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Backend Developer (Go)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4227006777/",
+							Date:                 mustDate("2025-05-10"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "German pharmacy marketplace",
+			Industries: []domain.Industry{
+				domain.IndustryECommerce,
+			},
 		},
 
 		// Template

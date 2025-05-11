@@ -116,5 +116,21 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Excelia",
+			Website: "https://excelia.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                735796,
+				IDs:               nil,
+				Alias:             "excelia",
+				Name:              "Excelia",
+				Followers:         "109K",
+				Employees:         "201-500",
+				AssociatedMembers: "325",
+				Verified:          false,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }

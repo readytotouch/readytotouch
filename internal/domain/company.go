@@ -192,6 +192,7 @@ type CompanyProfile struct {
 	Careers                   string // Careers page URL
 	About                     string // About URL
 	Blog                      string // Development blog URL
+	Transparency              string // Transparency URL e.g. https://buffer.com/transparency
 	LinkedInProfile           LinkedInProfile
 	GitHubProfile             GitHubProfile
 	BlindProfile              BlindProfile
