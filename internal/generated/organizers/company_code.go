@@ -943,6 +943,14 @@ var (
 		"fujitsu":                             941, // Fujitsu
 		"onedoc.ch":                           942, // OneDoc
 		"wallee-group":                        943, // Wallee Group
+		"tensorzero":                          944, // TensorZero
+		"riza-inc":                            945, // Riza
+		"birdiecare":                          946, // Birdie
+		"aikido-security":                     947, // Aikido Security
+		"notablesystems":                      948, // Notable Systems
+		"haza-foods-llc":                      949, // HAZA Foods, LLC
+		"proxidize":                           950, // Proxidize
+		"onfy":                                951, // Onfy
 
 	}
 )
