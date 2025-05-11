@@ -4805,6 +4805,15 @@ func companiesPart9() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Software Developer (Golang)",
+							ShortDescription:     "AI Tutor",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4226665425/",
+							Date:                 mustDate("2025-05-10"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust: {
@@ -5573,8 +5582,8 @@ func companiesPart9() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4211120440/",
-							Date:                 mustDate("2025-04-17"),
-							WithSalary:           true, // $188,445 - $221,700 + benefits + 401(k) match + equity
+							Date:                 mustDate("2025-05-10"), // mustDate("2025-04-17"),
+							WithSalary:           true,                   // $188,445 - $221,700 + benefits + 401(k) match + equity
 							Remote:               true,
 						},
 					},
@@ -8636,7 +8645,7 @@ func companiesPart9() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4190620206/",
-							Date:                 mustDate("2025-04-18"), // mustDate("2025-03-21"),
+							Date:                 mustDate("2025-05-10"), // mustDate("2025-04-18"), // mustDate("2025-03-21"),
 							WithSalary:           false,
 							Remote:               false,
 						},

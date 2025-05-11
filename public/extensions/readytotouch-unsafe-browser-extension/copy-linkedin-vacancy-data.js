@@ -60,7 +60,9 @@ function remote() {
 function salary() {
     const $elements = document.querySelectorAll(".job-details-preferences-and-skills span");
     for (const $element of $elements) {
-        if ($element.textContent.trim().toLowerCase().includes("$")) {
+        const s = $element.textContent.trim().toLowerCase();
+
+        if (s.includes("$") || s.includes("€") || s.includes("£")) {
             return true;
         }
     }
