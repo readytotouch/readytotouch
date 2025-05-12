@@ -6583,11 +6583,12 @@ func companiesPart1() []domain.CompanyProfile {
 			Blog:    "https://www.sentinelone.com/blog/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                2886771,
+				IDs:               []int{2886771, 89652976, 89787084},
 				Alias:             "sentinelone",
 				Name:              "SentinelOne",
-				Followers:         "253K",
+				Followers:         "325K",
 				Employees:         "1K-5K",
-				AssociatedMembers: "2,799",
+				AssociatedMembers: "2,905",
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -6610,9 +6611,9 @@ func companiesPart1() []domain.CompanyProfile {
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-SentinelOne-EI_IE1361978.11,22.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/SentinelOne-Reviews-E1361978.htm",
 				JobsURL:     "https://www.glassdoor.com/Jobs/SentinelOne-Jobs-E1361978.htm",
-				Jobs:        "115",
-				Reviews:     "670",
-				Salaries:    "658",
+				Jobs:        "158",
+				Reviews:     "733",
+				Salaries:    "733",
 				ReviewsRate: "4.4",
 				Verified:    true,
 			},
@@ -6711,8 +6712,8 @@ func companiesPart1() []domain.CompanyProfile {
 			DealroomURL:      "",
 			CrunchbaseURL:    "",
 			PitchbookURL:     "",
-			YahooFinanceURL:  "",
-			GoogleFinanceURL: "",
+			YahooFinanceURL:  "https://finance.yahoo.com/quote/S/",
+			GoogleFinanceURL: "https://www.google.com/finance/quote/S:NYSE",
 			YCombinatorURL:   "",
 			Industries: []domain.Industry{
 				domain.IndustryCyberSecurity,
@@ -6721,6 +6722,7 @@ func companiesPart1() []domain.CompanyProfile {
 				domain.Ukraine,
 				domain.Czechia,
 			},
+			PinnedUntil: time.Date(2025, time.May, 20, 23, 59, 59, 0, time.UTC), // Demo
 		},
 
 		// Famous

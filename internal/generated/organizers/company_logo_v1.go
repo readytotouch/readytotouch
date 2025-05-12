@@ -722,7 +722,7 @@ var (
 		"semrush":                             "",
 		"sendle":                              "sendle.png",
 		"sennheiser":                          "",
-		"sentinelone":                         "",
+		"sentinelone":                         "sentinelone-112x56.png",
 		"shopee":                              "",
 		"shopware-ag":                         "shopware-ag.png",
 		"shuttle-yc":                          "",
