@@ -4788,7 +4788,20 @@ func companiesPart2() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
-				domain.Go:   {},
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer (Scala/Go)",
+							ShortDescription:     "Courier Group",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4227695940/",
+							Date:                 mustDate("2025-05-15"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
 				domain.Rust: {},
 				domain.Zig:  {},
 				domain.Scala: {
@@ -4854,6 +4867,15 @@ func companiesPart2() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4222062416/",
 							Date:                 mustDate("2025-05-05"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Software Engineer (Scala/Go)",
+							ShortDescription:     "Courier Group",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4227695940/",
+							Date:                 mustDate("2025-05-15"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -9429,7 +9451,7 @@ func companiesPart2() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/3972187342/",
-							Date:                 mustDate("2025-03-08"), // mustDate("2025-02-10"), // mustDate("2025-01-21"), // mustDate("2025-01-13"), // mustDate("2024-11-04"),
+							Date:                 mustDate("2025-05-14"), // mustDate("2025-03-08"), // mustDate("2025-02-10"), // mustDate("2025-01-21"), // mustDate("2025-01-13"), // mustDate("2024-11-04"),
 							WithSalary:           false,
 							Remote:               false,
 						},
