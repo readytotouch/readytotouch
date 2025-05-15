@@ -1,7 +1,7 @@
 function addLanguages() {
     const path = window.location.pathname;
 
-    const requiredLanguages = ['Go', 'Rust', 'Scala', 'Elixir', 'Clojure'];
+    const requiredLanguages = ['Go', 'Rust', 'Scala', 'Elixir', 'Clojure', 'Haskell'];
     const existingLanguages = Array.from(document.querySelectorAll('span[itemprop="programmingLanguage"]'))
         .map(span => span.textContent.trim());
 

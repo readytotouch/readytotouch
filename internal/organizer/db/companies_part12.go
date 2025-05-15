@@ -11381,6 +11381,67 @@ func companiesPart12() []domain.CompanyProfile {
 				domain.IndustryECommerce,
 			},
 		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Well",
+			Website: "https://www.well.co/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                35679376,
+				IDs:               nil,
+				Alias:             "wellrewarded",
+				Name:              "Well",
+				Followers:         "7K",
+				Employees:         "51-200",
+				AssociatedMembers: "381",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go:      {},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Haskell Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4214803492/",
+							Date:                 mustDate("2025-04-24"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+			},
+			ShortDescription: "A clinical-grade health partner, designed to fit any lifestyle",
+			Industries: []domain.Industry{
+				domain.IndustryHealthTech,
+			},
+		},
 
 		// Template
 		//{

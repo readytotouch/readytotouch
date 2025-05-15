@@ -9596,7 +9596,20 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Scala:   {},
 				domain.Elixir:  {},
 				domain.Clojure: {},
-				domain.Haskell: {},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Embedded Haskell Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/3988413256/",
+							Date:                 mustDate("2025-04-24"),
+							WithSalary:           true,
+							Remote:               false,
+						},
+					},
+				},
 			},
 			ShortDescription: "American defense technology company that specializes in autonomous systems",
 		},
