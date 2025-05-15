@@ -132,5 +132,21 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Xebia",
+			Website: "https://xebia.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                16903,
+				IDs:               []int{16903, 72738535},
+				Alias:             "xebia",
+				Name:              "Xebia",
+				Followers:         "378K",
+				Employees:         "5K-10K",
+				AssociatedMembers: "5,399",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }
