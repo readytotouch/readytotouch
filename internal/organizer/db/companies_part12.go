@@ -961,11 +961,12 @@ func companiesPart12() []domain.CompanyProfile {
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                10797668,
+				IDs:               []int{15879, 3544572, 10548546, 10797668},
 				Alias:             "zelis",
 				Name:              "Zelis",
-				Followers:         "70K",
+				Followers:         "74K",
 				Employees:         "1K-5K",
-				AssociatedMembers: "2,525",
+				AssociatedMembers: "2,555",
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -986,15 +987,31 @@ func companiesPart12() []domain.CompanyProfile {
 				Alias: "",
 			},
 			Languages: domain.Languages{
-				domain.Go:      {},
-				domain.Rust:    {},
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Staff Engineer – Backend Systems (C# / Rust / AWS)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4210761460/",
+							Date:                 mustDate("2025-05-14"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "Healthcare technology company",
+			ShortDescription: "Platform that bridges the gaps and aligns interests across payers, providers, and healthcare consumers",
+			Industries: []domain.Industry{
+				domain.IndustryHealthTech,
+			},
 		},
 
 		{
@@ -4904,7 +4921,7 @@ func companiesPart12() []domain.CompanyProfile {
 							ShortDescription:     "Inference",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4214931469/",
-							Date:                 mustDate("2025-04-24"),
+							Date:                 mustDate("2025-05-15"), // mustDate("2025-04-24"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -11517,6 +11534,190 @@ func companiesPart12() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Rewards Network is a fintech company providing marketing, loyalty rewards programs, and capital for the restaurant industry",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Qdrant",
+			Website: "https://qdrant.tech/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                77961893,
+				IDs:               nil,
+				Alias:             "qdrant",
+				Name:              "Qdrant",
+				Followers:         "37K",
+				Employees:         "51-200",
+				AssociatedMembers: "89",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Core Rust Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4229012568/",
+							Date:                 mustDate("2025-05-15"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Massive-Scale AI Search Engine & Vector Database",
+			Industries: []domain.Industry{
+				domain.IndustryDevOps,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Supra",
+			Website: "http://www.supra.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                71652981,
+				IDs:               nil,
+				Alias:             "supraofficial",
+				Name:              "Supra",
+				Followers:         "8K",
+				Employees:         "51-200",
+				AssociatedMembers: "259",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Rust Compiler Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4230759876/",
+							Date:                 mustDate("2025-05-15"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "MultiVM Layer 1 built for Super dApps",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+			Ignore: true, // Web3
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Swiss Life Asset Managers",
+			Website: "https://www.swisslife-am.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                6605,
+				IDs:               []int{6605, 610840, 1082449, 6842138, 10932185, 30126193, 66384503, 80740784},
+				Alias:             "swiss-life-asset-management",
+				Name:              "Swiss Life Asset Managers",
+				Followers:         "30K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Full Stack Engineer (Rust/Svelte)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4211351867/",
+							Date:                 mustDate("2025-05-15"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Asset Manager offering a broad range of investment solutions in real estate, infrastructure and securities",
 			Industries: []domain.Industry{
 				domain.IndustryFinTech,
 			},

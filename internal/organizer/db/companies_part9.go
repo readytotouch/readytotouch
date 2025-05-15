@@ -1848,7 +1848,7 @@ func companiesPart9() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4181750667/",
-							Date:                 mustDate("2025-04-22"), // mustDate("2025-04-01"), // mustDate("2025-03-11"),
+							Date:                 mustDate("2025-05-14"), // mustDate("2025-04-22"), // mustDate("2025-04-01"), // mustDate("2025-03-11"),
 							WithSalary:           true,                   // Scientist 1 ($94,5-$154,600), Scientist 2 ($104,100-$172,200)
 							Remote:               false,
 						},
@@ -2428,7 +2428,7 @@ func companiesPart9() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4125742838/",
-							Date:                 mustDate("2025-04-14"), // mustDate("2025-04-04"), // mustDate("2025-03-21"), // mustDate("2025-03-11"),
+							Date:                 mustDate("2025-05-13"), // mustDate("2025-04-14"), // mustDate("2025-04-04"), // mustDate("2025-03-21"), // mustDate("2025-03-11"),
 							WithSalary:           false,
 							Remote:               false,
 						},

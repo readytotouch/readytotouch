@@ -574,5 +574,20 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Recruiting agency
 		},
+		{
+			Name:    "Spectrum Search",
+			Website: "https://www.spectrum-search.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                12581649,
+				IDs:               nil,
+				Alias:             "spectrumsearch",
+				Name:              "Spectrum Search",
+				Followers:         "132K",
+				Employees:         "11-50",
+				AssociatedMembers: "11",
+				Verified:          false,
+			},
+			Ignore: true, // Recruiting agency
+		},
 	}
 }

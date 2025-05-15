@@ -56,6 +56,11 @@ function highlightVacancyTitle() {
             return;
         }
     }
+
+    const $date = document.getElementById("readytotouch-vacancy-date");
+    if ($date) {
+        $date.remove();
+    }
 }
 
 function normalizeURL(url) {
@@ -81,6 +86,7 @@ function renderVacancyDate(date, index) {
     renderVacancyDateOnce = true;
 
     const $date = document.createElement("div");
+    $date.id = "readytotouch-vacancy-date";
     $date.innerText = date;
 
     Object.assign($date.style, {
