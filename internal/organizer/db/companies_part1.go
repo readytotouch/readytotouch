@@ -6600,8 +6600,8 @@ func companiesPart1() []domain.CompanyProfile {
 				Alias:       "SentinelOne",
 				Employees:   "1,001 to 5,000",
 				Salary:      "$100K ~ $189K a year",
-				Reviews:     "27",
-				ReviewsRate: "3.7",
+				Reviews:     "40",
+				ReviewsRate: "3.9",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "sentinelone",
