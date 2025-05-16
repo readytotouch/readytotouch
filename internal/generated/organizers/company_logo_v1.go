@@ -133,7 +133,7 @@ var (
 		"bynder":                              "",
 		"cake-by-vpbank":                      "",
 		"campingworld":                        "",
-		"canonical":                           "",
+		"canonical":                           "canonical-112x56.png",
 		"canva":                               "canva.png",
 		"capital-one":                         "",
 		"carecarco":                           "carecar-112x56.png",

@@ -6378,7 +6378,7 @@ func companiesPart12() []domain.CompanyProfile {
 							ShortDescription:     "3+ years of experience with Go",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4092820547/",
-							Date:                 mustDate("2025-04-17"),
+							Date:                 mustDate("2025-05-15"), // mustDate("2025-04-17"),
 							WithSalary:           false,
 							Remote:               true,
 						},

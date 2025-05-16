@@ -23,7 +23,7 @@ function fetchCompany(companyName) {
 
     for (const c of companiesCache) {
         if (c.name.toLowerCase() === companyName || c.id.toString() === companyName) {
-            return company;
+            return c;
         }
     }
 
