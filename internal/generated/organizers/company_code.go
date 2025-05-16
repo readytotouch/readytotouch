@@ -951,6 +951,10 @@ var (
 		"haza-foods-llc":                      949, // HAZA Foods, LLC
 		"proxidize":                           950, // Proxidize
 		"onfy":                                951, // Onfy
+		"wellrewarded":                        952, // Well
+		"rewards-network":                     953, // Rewards Network
+		"qdrant":                              954, // Qdrant
+		"swiss-life-asset-management":         955, // Swiss Life Asset Managers
 
 	}
 )
