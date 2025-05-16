@@ -21,9 +21,13 @@ function fetchCompany(companyName) {
         return null;
     }
 
-    return companiesCache.find(function (c) {
-        return c.name.toLowerCase() === companyName || c.id.toString() === companyName;
-    });
+    for (const c of companiesCache) {
+        if (c.name.toLowerCase() === companyName || c.id.toString() === companyName) {
+            return c;
+        }
+    }
+
+    return null;
 }
 
 function updateCompanyColor($companyName, company) {

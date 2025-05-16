@@ -127,7 +127,7 @@ bufbuild
 bynder 
 cake-by-vpbank 
 campingworld 
-canonical 
+canonical canonical-112x56.png
 canva canva.png
 capital-one 
 careem 
@@ -713,7 +713,7 @@ seldon seldon.png
 semrush 
 sendle sendle.png
 sennheiser 
-sentinelone 
+sentinelone sentinelone-112x56.png
 shopee 
 shopware-ag shopware-ag.png
 shuttle-yc 
