@@ -115,6 +115,9 @@ design:
 
 	git add .
 
+design-copy-styles:
+	node ./scripts/design/copy-styles.js
+
 companies-and-connections:
 	firefox ./public/chatgpt-design/companies-and-connections.html
 
