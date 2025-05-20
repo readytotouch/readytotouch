@@ -294,8 +294,8 @@ func main() {
 		StaticFile("/design/online-auth", "./public/design/online-auth.html").
 
 		// Organizers
-		StaticFile("/design/organizers", "./public/design/organizer-main-page-auth.html").
-		StaticFile("/design/organizers-auth", "./public/design/organizer-main-page.html").
+		StaticFile("/design/organizers", "./public/design/organizer-main-page.html").
+		StaticFile("/design/organizers-auth", "./public/design/organizer-main-page-auth.html").
 		GET("/design/organizers/:language/welcome", s("./public/design/organizer-welcome.html")).
 		GET("/design/organizers/:language/companies/ukraine", s("./public/design/golang-companies-organizer.html")).
 		GET("/design/organizers/:language/companies/:company_alias", s("./public/design/organizer-statistics.html")).

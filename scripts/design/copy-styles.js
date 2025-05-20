@@ -44,6 +44,48 @@ const files = [
         destination: './internal/templates/v1/organizers-communities-styles.qtpl',
         qtpl_func_name: 'organizersCommunitiesStyles',
     },
+    {
+        source: './public/design/organizer-vacancies-subscribe.html',
+        destination: './internal/templates/v1/organizers-waitlist-styles.qtpl',
+        qtpl_func_name: 'organizersWaitlistStyles',
+    },
+    {
+        source: './public/design/organizer-companies.html',
+        destination: './internal/templates/v1/organizers-companies-v2-styles.qtpl',
+        qtpl_func_name: 'organizersCompaniesV2Styles',
+    },
+    {
+        source: './public/design/organizer-statistics.html',
+        destination: './internal/templates/v1/organizers-company-v2-styles.qtpl',
+        qtpl_func_name: 'organizersCompanyV2Styles',
+    },
+    {
+        source: './public/design/organizer-vacancies.html',
+        destination: './internal/templates/v1/organizers-vacancies-v2-styles.qtpl',
+        qtpl_func_name: 'organizersVacanciesV2Styles',
+    },
+    {
+        source: './public/design/organizer-welcome.html',
+        destination: './internal/templates/v1/organizers-welcome-styles.qtpl',
+        qtpl_func_name: 'organizersWelcomeStyles',
+    },
+    {
+        source: './public/design/organizer-main-page.html',
+        destination: './internal/templates/v1/organizers-main-styles.qtpl',
+        qtpl_func_name: 'organizersMainStyles',
+    },
+    {
+        source: './public/design/connections.html',
+        destination: './internal/templates/v1/cac-companies-and-connections-v1-styles.qtpl',
+        qtpl_func_name: 'companiesAndConnectionsV1Styles',
+    },
+    /*
+        {
+            source: './public/design/',
+            destination: './internal/templates/v1/',
+            qtpl_func_name: '',
+        },
+    */
 ];
 
 async function runScript() {
