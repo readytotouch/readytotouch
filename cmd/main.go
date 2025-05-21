@@ -172,6 +172,7 @@ func main() {
 	r.GET("/organizers/scala/welcome", organizerController.Welcome)
 	r.GET("/organizers/elixir/welcome", organizerController.Welcome)
 	r.GET("/organizers/clojure/welcome", organizerController.Welcome)
+	r.GET("/organizers/haskell/welcome", organizerController.Welcome)
 
 	r.GET("/organizers/golang/companies/ukraine", organizerController.GolangCompaniesUkraine)
 	r.GET("/organizers/golang/companies", organizerController.CompaniesV2)
@@ -222,6 +223,14 @@ func main() {
 	r.GET("/organizers/clojure/companies/:company_alias/v2", organizerController.CompanyV2)
 	r.GET("/organizers/clojure/jobs", organizerController.Vacancies)
 	r.GET("/organizers/clojure/communities", organizerController.ClojureCommunities)
+	r.GET("/organizers/haskell/companies", organizerController.Waitlist)
+	r.GET("/organizers/haskell/companies/v1", organizerController.Waitlist)
+	r.GET("/organizers/haskell/companies/v2", organizerController.Waitlist)
+	r.GET("/organizers/haskell/companies/:company_alias", organizerController.CompanyV2)
+	r.GET("/organizers/haskell/companies/:company_alias/v1", organizerController.CompanyV1)
+	r.GET("/organizers/haskell/companies/:company_alias/v2", organizerController.CompanyV2)
+	r.GET("/organizers/haskell/jobs", organizerController.Waitlist)
+	r.GET("/organizers/haskell/communities", organizerController.TODO)
 	r.GET("/organizers/v/:vacancy_id", organizerController.VacancyRedirect)
 
 	r.GET("/organizers/golang", found("/organizers/golang/companies"))
@@ -230,6 +239,7 @@ func main() {
 	r.GET("/organizers/scala", found("/organizers/scala/companies"))
 	r.GET("/organizers/elixir", found("/organizers/elixir/companies"))
 	r.GET("/organizers/clojure", found("/organizers/clojure/companies"))
+	r.GET("/organizers/haskell", found("/organizers/haskell/companies"))
 
 	r.GET("/organizers/golang/vacancies", found("/organizers/golang/jobs"))
 	r.GET("/organizers/rust/vacancies", found("/organizers/rust/jobs"))
@@ -289,13 +299,13 @@ func main() {
 	r.GET("/similarweb", found("https://www.similarweb.com/website/readytotouch.com/"))
 
 	r.
-		StaticFile("/design", "./public/design/online.html").
+		StaticFile("/design", "./public/design/online-new.html").
 		StaticFile("/design/online", "./public/design/online.html").
 		StaticFile("/design/online-auth", "./public/design/online-auth.html").
 
 		// Organizers
-		StaticFile("/design/organizers", "./public/design/organizer-main-page-auth.html").
-		StaticFile("/design/organizers-auth", "./public/design/organizer-main-page.html").
+		StaticFile("/design/organizers", "./public/design/organizer-main-page.html").
+		StaticFile("/design/organizers-auth", "./public/design/organizer-main-page-auth.html").
 		GET("/design/organizers/:language/welcome", s("./public/design/organizer-welcome.html")).
 		GET("/design/organizers/:language/companies/ukraine", s("./public/design/golang-companies-organizer.html")).
 		GET("/design/organizers/:language/companies/:company_alias", s("./public/design/organizer-statistics.html")).

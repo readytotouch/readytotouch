@@ -37,12 +37,13 @@
   <div class="header__wrapper">
     <a href="/organizers" class="header__logo">
       <img
-        width="129"
-        height="32"
+        width="30"
+        height="30"
         class="header__logo-img"
         src="/assets/images/pages/organizer/{%s organizerFeature.Organizer.Logo %}"
         alt="organizer logo"
       />
+      <span class="header__logo-label">Organizer</span>
     </a>
     <ul class="header__nav">
       <li class="header__nav-item">
@@ -713,12 +714,7 @@
 				<div class="js-vacancy card"
 					 data-vacancy-id="{%dl vacancy.ID %}"
 				>
-					{% comment %}
-					<!-- TODO https://github.com/readytotouch/readytotouch.github.io/issues/23 -->
-					<!-- https://netlify.readytotouch.com/organizer-statistics -->
-					<!-- <div class="card__vacancy"> -->
-					{% endcomment %}
-
+					<div class="card__vacancy">
 					<aside class="card__action">
 						{% if userVacancyFavoriteMap[vacancy.ID] %}
 						  <button class="js-vacancy-favorite favorite card__action-button button-group__item in-favorite" title="Remove from favorites">
@@ -810,12 +806,7 @@
 							/>
 						</a>
 					</div>
-
-					{% comment %}
-					<!-- TODO https://github.com/readytotouch/readytotouch.github.io/issues/23 -->
-					<!-- https://netlify.readytotouch.com/organizer-statistics -->
-					<!-- </div> -->
-					{% endcomment %}
+					</div>
 				</div>
 			{% endfor %}
 		</div>

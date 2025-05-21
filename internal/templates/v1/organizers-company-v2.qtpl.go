@@ -71,14 +71,15 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
   <div class="header__wrapper">
     <a href="/organizers" class="header__logo">
       <img
-        width="129"
-        height="32"
+        width="30"
+        height="30"
         class="header__logo-img"
         src="/assets/images/pages/organizer/`)
 	qw422016.E().S(organizerFeature.Organizer.Logo)
 	qw422016.N().S(`"
         alt="organizer logo"
       />
+      <span class="header__logo-label">Organizer</span>
     </a>
     <ul class="header__nav">
       <li class="header__nav-item">
@@ -1029,9 +1030,7 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 		qw422016.N().DL(vacancy.ID)
 		qw422016.N().S(`"
 				>
-					`)
-		qw422016.N().S(`
-
+					<div class="card__vacancy">
 					<aside class="card__action">
 						`)
 		if userVacancyFavoriteMap[vacancy.ID] {
@@ -1159,9 +1158,7 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 							/>
 						</a>
 					</div>
-
-					`)
-		qw422016.N().S(`
+					</div>
 				</div>
 			`)
 	}

@@ -50,12 +50,13 @@ func StreamOrganizersMain(qw422016 *qt422016.Writer, headerProfiles []SocialProv
   <div class="header__wrapper">
     <a href="/" class="header__logo">
       <img
-        width="129"
-        height="32"
+        width="30"
+        height="30"
         class="header__logo-img"
-        src="/assets/images/pages/organizer/golang-organizer.svg"
+        src="/assets/images/pages/organizer/rust.svg"
         alt="organizer logo"
       />
+      <span class="header__logo-label">Organizer</span>
     </a>
     `)
 	streamorganizersHeaderStars(qw422016)
@@ -179,6 +180,44 @@ func StreamOrganizersMain(qw422016 *qt422016.Writer, headerProfiles []SocialProv
             class="hero__button-icon"
           />
           Clojure Organizer
+          <div class="hero__buttons-icon-box">
+            <img
+              width="12"
+              height="12"
+              src="/assets/images/pages/common/arrow-small-top-black.svg"
+              alt="arrow black icon"
+              class="hero__button-icon"
+            />
+          </div>
+        </a>
+        <a href="/organizers/zig" class="button button--bordered-gray hero__button">
+          <img
+            width="20"
+            height="20"
+            src="/assets/images/pages/organizer/zig.svg"
+            alt="go original logo"
+            class="hero__button-icon"
+          />
+          Zig Organizer
+          <div class="hero__buttons-icon-box">
+            <img
+              width="12"
+              height="12"
+              src="/assets/images/pages/common/arrow-small-top-black.svg"
+              alt="arrow black icon"
+              class="hero__button-icon"
+            />
+          </div>
+        </a>
+        <a href="/organizers/haskell" class="button button--bordered-gray hero__button">
+          <img
+            width="20"
+            height="20"
+            src="/assets/images/pages/organizer/haskell.svg"
+            alt="go original logo"
+            class="hero__button-icon"
+          />
+          Haskell Organizer
           <div class="hero__buttons-icon-box">
             <img
               width="12"

@@ -13,8 +13,15 @@ CREATE TYPE FEATURE_WAIT AS ENUM (
     'organizer_elixir_companies',
     'organizer_elixir_vacancies',
     'organizer_clojure_companies',
-    'organizer_clojure_vacancies'
+    'organizer_clojure_vacancies',
+    'organizer_haskell_companies',
+    'organizer_haskell_vacancies'
     );
+
+/*
+    ALTER TYPE FEATURE_WAIT ADD VALUE 'organizer_haskell_companies';
+    ALTER TYPE FEATURE_WAIT ADD VALUE 'organizer_haskell_vacancies';
+*/
 
 CREATE TABLE user_feature_waitlist
 (

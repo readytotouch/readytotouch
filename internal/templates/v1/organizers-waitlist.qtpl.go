@@ -61,14 +61,15 @@ func StreamOrganizersWaitlist(qw422016 *qt422016.Writer, organizerFeature Organi
   <div class="header__wrapper">
     <a href="/organizers" class="header__logo">
       <img
-        width="129"
-        height="32"
+        width="30"
+        height="30"
         class="header__logo-img"
         src="/assets/images/pages/organizer/`)
 	qw422016.E().S(organizerFeature.Organizer.Logo)
 	qw422016.N().S(`"
         alt="organizer logo"
       />
+      <span class="header__logo-label">Organizer</span>
     </a>
     `)
 	var navigation = toFeatureNavigation(organizerFeature.Path)
