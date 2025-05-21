@@ -75,6 +75,11 @@ const files = [
         qtpl_func_name: 'organizersMainStyles',
     },
     {
+        source: './public/design/online-new.html',
+        destination: './internal/templates/v1/organizers-online-styles.qtpl',
+        qtpl_func_name: 'organizersOnlineStyles',
+    },
+    {
         source: './public/design/connections.html',
         destination: './internal/templates/v1/cac-companies-and-connections-v1-styles.qtpl',
         qtpl_func_name: 'companiesAndConnectionsV1Styles',

@@ -50,12 +50,13 @@ func StreamOrganizersMain(qw422016 *qt422016.Writer, headerProfiles []SocialProv
   <div class="header__wrapper">
     <a href="/" class="header__logo">
       <img
-        width="129"
-        height="32"
+        width="30"
+        height="30"
         class="header__logo-img"
-        src="/assets/images/pages/organizer/golang-organizer.svg"
+        src="/assets/images/pages/organizer/rust.svg"
         alt="organizer logo"
       />
+      <span class="header__logo-label">Organizer</span>
     </a>
     `)
 	streamorganizersHeaderStars(qw422016)

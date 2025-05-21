@@ -289,7 +289,7 @@ func main() {
 	r.GET("/similarweb", found("https://www.similarweb.com/website/readytotouch.com/"))
 
 	r.
-		StaticFile("/design", "./public/design/online.html").
+		StaticFile("/design", "./public/design/online-new.html").
 		StaticFile("/design/online", "./public/design/online.html").
 		StaticFile("/design/online-auth", "./public/design/online-auth.html").
 
