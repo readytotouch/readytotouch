@@ -81,4 +81,14 @@ var (
 		Keywords:              "Clojure, Companies using Clojure, Clojure companies, Clojure connections",
 		Description:           "ReadyToTouch helps you find companies that use Clojure. Improve your chances of getting a job by connecting with Clojure developers and receiving further recommendations.",
 	}
+	OrganizerHaskell = Organizer{
+		Language:              Haskell,
+		LanguageTitleKeywords: HaskellTitleKeywords,
+		Alias:                 "haskell",
+		GitHubAlias:           "haskell",
+		Title:                 "Haskell",
+		Logo:                  "haskell.svg",
+		Keywords:              "Haskell, Companies using Haskell, Haskell companies, Haskell connections",
+		Description:           "ReadyToTouch helps you find companies that use Haskell. Improve your chances of getting a job by connecting with Haskell developers and receiving further recommendations.",
+	}
 )

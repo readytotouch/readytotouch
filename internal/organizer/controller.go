@@ -1118,6 +1118,18 @@ func (c *Controller) organizerFeature(path string) (domain.OrganizerFeature, boo
 			Path:      path,
 			Title:     "Jobs",
 		},
+		"/organizers/haskell/companies": {
+			Organizer: domain.OrganizerHaskell,
+			Feature:   dbs.FeatureWaitOrganizerHaskellCompanies,
+			Path:      path,
+			Title:     "Companies",
+		},
+		"/organizers/haskell/jobs": {
+			Organizer: domain.OrganizerHaskell,
+			Feature:   dbs.FeatureWaitOrganizerHaskellVacancies,
+			Path:      path,
+			Title:     "Jobs",
+		},
 	}
 
 	feature, ok := featurePathMap[path]
@@ -1133,6 +1145,7 @@ func (c *Controller) organizer(path string) (domain.Organizer, bool) {
 		"/organizers/scala/welcome":   domain.OrganizerScala,
 		"/organizers/elixir/welcome":  domain.OrganizerElixir,
 		"/organizers/clojure/welcome": domain.OrganizerClojure,
+		"/organizers/haskell/welcome": domain.OrganizerHaskell,
 	}
 
 	feature, ok := organizerPathMap[path]
