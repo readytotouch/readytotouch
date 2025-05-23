@@ -955,6 +955,15 @@ var (
 		"rewards-network":                     953, // Rewards Network
 		"qdrant":                              954, // Qdrant
 		"swiss-life-asset-management":         955, // Swiss Life Asset Managers
+		"natuvion":                            956, // Natuvion
+		"oanda":                               957, // OANDA
+		"lego-group":                          958, // the LEGO Group
+		"deutsche-bank":                       959, // Deutsche Bank
+		"tenstorrent-inc.":                    960, // Tenstorrent
+		"promon-as":                           961, // Promon
+		"csidedev":                            962, // cside
+		"riot-games":                          963, // Riot Games
+		"zillow":                              964, // Zillow
 
 	}
 )
