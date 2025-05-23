@@ -4400,7 +4400,7 @@ func companiesPart1() []domain.CompanyProfile {
 							ShortDescription:     "Runtime Interpreter (Scheme/Rust)",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4182238733/",
-							Date:                 mustDate("2025-04-27"), // mustDate("2025-04-05"),
+							Date:                 mustDate("2025-05-19"), // mustDate("2025-04-27"), // mustDate("2025-04-05"),
 							WithSalary:           false,
 							Remote:               true,
 						},

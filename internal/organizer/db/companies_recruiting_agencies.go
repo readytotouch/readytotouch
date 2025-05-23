@@ -589,5 +589,35 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Recruiting agency
 		},
+		{
+			Name:    "LHH",
+			Website: "https://www.lhh.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                5235,
+				IDs:               nil,
+				Alias:             "lhhworldwide",
+				Name:              "LHH",
+				Followers:         "3M",
+				Employees:         "10K+",
+				AssociatedMembers: "18,119",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Swisslinx",
+			Website: "https://www.swisslinx.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                50444,
+				IDs:               nil,
+				Alias:             "swisslinx-ag",
+				Name:              "Swisslinx",
+				Followers:         "68K",
+				Employees:         "51-200",
+				AssociatedMembers: "60",
+				Verified:          false,
+			},
+			Ignore: true, // Recruiting agency
+		},
 	}
 }
