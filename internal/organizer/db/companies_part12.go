@@ -11926,7 +11926,7 @@ func companiesPart12() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
+			Name:    "Deutsche Bank",
 			Website: "https://db.com/",
 			Careers: "https://careers.db.com/",
 			About:   "",
