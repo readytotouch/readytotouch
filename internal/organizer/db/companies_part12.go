@@ -12167,6 +12167,128 @@ func companiesPart12() []domain.CompanyProfile {
 				domain.IndustryCyberSecurity,
 			},
 		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Riot Games",
+			Website: "https://www.riotgames.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                60870,
+				IDs:               nil,
+				Alias:             "riot-games",
+				Name:              "Riot Games",
+				Followers:         "1M",
+				Employees:         "1K-5K",
+				AssociatedMembers: "7,325",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Backend Software Engineer – (Golang/C++)",
+							ShortDescription:     "Metagame Features",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4226950943/",
+							Date:                 mustDate("2025-05-22"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Computer Games",
+			Industries: []domain.Industry{
+				domain.IndustryGameDev,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Zillow",
+			Website: "https://www.zillow.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                13990,
+				IDs:               []int{5693, 13990, 75801, 115652, 167785, 234303, 289839, 569792, 3776432, 19106063},
+				Alias:             "zillow",
+				Name:              "Zillow",
+				Followers:         "455K",
+				Employees:         "5K-10K",
+				AssociatedMembers: "9,032",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Development Engineer, Platform (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4204768990/",
+							Date:                 mustDate("2025-05-22"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Real Estate",
+			Industries: []domain.Industry{
+				domain.IndustryPropTech,
+			},
+		},
 
 		// Template
 		//{
