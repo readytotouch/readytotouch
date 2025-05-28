@@ -148,5 +148,21 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Coltech",
+			Website: "https://www.coltech.io/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                69762147,
+				IDs:               nil,
+				Alias:             "coltechglobal",
+				Name:              "Coltech",
+				Followers:         "57K",
+				Employees:         "11-50",
+				AssociatedMembers: "28",
+				Verified:          false,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }
