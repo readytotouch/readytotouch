@@ -941,3 +941,13 @@ notchupteam notchup-112x56.png
 flextrade flextrade-112x56.png
 carecarco carecar-112x56.png
 tensorzero tensorzero-112x56.png
+ladderlife ladderlife-112x56.png
+alertmedia alertmedia-112x56.png
+deutsche-bank deutsche-bank-112x56.png
+csidedev csidedev-112x56.jpeg
+promon-as promon-as-112x56.png
+glassflow-dev glassflow-dev-112x56.png
+teamwork-com teamwork-com-112x56.png
+zillow zillow-112x56.png
+riot-games riot-games-112x56.jpeg
+lego-group lego-group-112x56.png

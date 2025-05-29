@@ -12101,7 +12101,14 @@ func companiesPart12() []domain.CompanyProfile {
 				Employees: "68,370",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Deutsche-Bank-EI_IE3150.11,24.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Deutsche-Bank-Reviews-E3150.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Deutsche-Bank-Jobs-E3150.htm",
+				Jobs:        "1.9K",
+				Reviews:     "15K",
+				Salaries:    "29K",
+				ReviewsRate: "3.8",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
