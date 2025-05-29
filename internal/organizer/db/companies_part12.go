@@ -3560,7 +3560,8 @@ func companiesPart12() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "duffel",
+				Employees: "30",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Duffel-EI_IE2327865.11,17.htm",
@@ -4349,7 +4350,8 @@ func companiesPart12() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "carecom",
+				Employees: "515",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Care-com-EI_IE248084.11,19.htm",
@@ -4488,7 +4490,8 @@ func companiesPart12() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "adobe",
+				Employees: "21,250",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Adobe-EI_IE1090.11,16.htm",
@@ -9351,7 +9354,8 @@ func companiesPart12() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "evident",
+				Employees: "90",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Evident-ID-EI_IE1554019.11,21.htm",
@@ -9708,7 +9712,8 @@ func companiesPart12() []domain.CompanyProfile {
 				ReviewsRate: "3.6",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "kiddom",
+				Employees: "150",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Kiddom-EI_IE1575311.11,17.htm",
@@ -11609,7 +11614,14 @@ func companiesPart12() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Rewards-Network-EI_IE2216.11,26.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Rewards-Network-Reviews-E2216.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Rewards-Network-Jobs-E2216.htm",
+				Jobs:        "25",
+				Reviews:     "374",
+				Salaries:    "438",
+				ReviewsRate: "3.6",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -11667,10 +11679,18 @@ func companiesPart12() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "qdrant",
+				Employees: "30",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Qdrant-Solutions-EI_IE7897646.11,27.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Qdrant-Solutions-Reviews-E7897646.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Qdrant-Solutions-Jobs-E7897646.htm",
+				Jobs:        "8",
+				Reviews:     "5",
+				Salaries:    "10",
+				ReviewsRate: "3.5",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -11678,7 +11698,7 @@ func companiesPart12() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 20,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Core Rust Engineer",
@@ -11777,9 +11797,9 @@ func companiesPart12() []domain.CompanyProfile {
 				IDs:               []int{6605, 610840, 1082449, 6842138, 10932185, 30126193, 66384503, 80740784},
 				Alias:             "swiss-life-asset-management",
 				Name:              "Swiss Life Asset Managers",
-				Followers:         "30K",
+				Followers:         "31K",
 				Employees:         "1K-5K",
-				AssociatedMembers: "",
+				AssociatedMembers: "2,309",
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -11793,7 +11813,14 @@ func companiesPart12() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Swiss-Life-Asset-Management-EI_IE3015893.11,38.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Swiss-Life-Asset-Management-Reviews-E3015893.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Swiss-Life-Asset-Management-Jobs-E3015893.htm",
+				Jobs:        "",
+				Reviews:     "66",
+				Salaries:    "142",
+				ReviewsRate: "3.4",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -11854,7 +11881,14 @@ func companiesPart12() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Natuvion-EI_IE2303226.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Natuvion-Reviews-E2303226.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Natuvion-Jobs-E2303226.htm",
+				Jobs:        "100",
+				Reviews:     "18",
+				Salaries:    "38",
+				ReviewsRate: "4.0",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -11909,13 +11943,25 @@ func companiesPart12() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "OANDA",
+				Employees:   "201 to 500",
+				Salary:      "",
+				Reviews:     "12",
+				ReviewsRate: "3.6",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "oanda",
+				Employees: "630",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-OANDA-EI_IE100548.11,16.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/OANDA-Reviews-E100548.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/OANDA-Jobs-E100548.htm",
+				Jobs:        "20",
+				Reviews:     "235",
+				Salaries:    "392",
+				ReviewsRate: "3.6",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -11966,17 +12012,30 @@ func companiesPart12() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "LEGO",
+				Followers: "933",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "LEGO",
+				Employees:   "10,000+",
+				Salary:      "",
+				Reviews:     "7",
+				ReviewsRate: "4.0",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "lego",
+				Employees: "19,000",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-the-LEGO-Group-EI_IE3944.11,25.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/the-LEGO-Group-Reviews-E3944.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/the-LEGO-Group-Jobs-E3944.htm",
+				Jobs:        "474",
+				Reviews:     "3.2K",
+				Salaries:    "4.8K",
+				ReviewsRate: "4.4",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -11986,7 +12045,7 @@ func companiesPart12() []domain.CompanyProfile {
 				domain.Rust: {},
 				domain.Zig:  {},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 1,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Backend/Fullstack Engineer, Scala",
@@ -12031,10 +12090,15 @@ func companiesPart12() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Deutsche-Bank",
+				Employees:   "10,000+",
+				Salary:      "$33K ~ $294K a year",
+				Reviews:     "222",
+				ReviewsRate: "3.3",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "deutsche-bank",
+				Employees: "68,370",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -12088,14 +12152,20 @@ func companiesPart12() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "tenstorrent",
+				Followers: "873",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Tenstorrent",
+				Employees:   "201 to 500",
+				Salary:      "",
+				Reviews:     "21",
+				ReviewsRate: "4.2",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "tenstorrent",
+				Employees: "150",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -12106,7 +12176,7 @@ func companiesPart12() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 2,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Rust Developer",
@@ -12271,24 +12341,37 @@ func companiesPart12() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "riotgames",
+				Followers: "753",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Riot-Games",
+				Employees:   "1,001 to 5,000",
+				Salary:      "$72K ~ $299K a year",
+				Reviews:     "216",
+				ReviewsRate: "4.1",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "riot-games",
+				Employees: "3,500",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Riot-Games-EI_IE247538.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Riot-Games-Reviews-E247538.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Riot-Games-Jobs-E247538.htm",
+				Jobs:        "",
+				Reviews:     "1.4K",
+				Salaries:    "3.2K",
+				ReviewsRate: "4.0",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 2,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Backend Software Engineer – (Golang/C++)",
@@ -12318,7 +12401,7 @@ func companiesPart12() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "Zillow",
 			Website: "https://www.zillow.com/",
-			Careers: "",
+			Careers: "https://www.zillow.com/careers",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -12339,10 +12422,18 @@ func companiesPart12() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "zillow",
+				Employees: "8,070",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Zillow-EI_IE40802.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Zillow-Reviews-E40802.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Zillow-Jobs-E40802.htm",
+				Jobs:        "88",
+				Reviews:     "2.3K",
+				Salaries:    "5.8K",
+				ReviewsRate: "3.5",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -12393,24 +12484,33 @@ func companiesPart12() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "teamwork",
+				Followers: "56",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "teamwork",
+				Employees: "270",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Teamwork-EI_IE929006.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Teamwork-Reviews-E929006.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Teamwork-Jobs-E929006.htm",
+				Jobs:        "4",
+				Reviews:     "221",
+				Salaries:    "591",
+				ReviewsRate: "3.6",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 35,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer II (Golang)",

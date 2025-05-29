@@ -5801,7 +5801,8 @@ func companiesPart9() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "commonwealth-bank-of-australia",
+				Employees: "44,000",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Commonwealth-Bank-of-Australia-EI_IE7922.11,41.htm",
