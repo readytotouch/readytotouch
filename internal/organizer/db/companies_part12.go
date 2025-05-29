@@ -6326,6 +6326,15 @@ func companiesPart12() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Golang Software Engineer, Associate",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4219948079/",
+							Date:                 mustDate("2025-05-25"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
@@ -6695,6 +6704,15 @@ func companiesPart12() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Go Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4236557748/",
+							Date:                 mustDate("2025-05-28"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -6916,6 +6934,15 @@ func companiesPart12() []domain.CompanyProfile {
 							Date:                 mustDate("2025-04-24"),
 							WithSalary:           false,
 							Remote:               false,
+						},
+						{
+							Title:                "Backend Go Developer",
+							ShortDescription:     "Kubernetes infrastructure",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4214476626/",
+							Date:                 mustDate("2025-05-28"),
+							WithSalary:           false,
+							Remote:               true,
 						},
 					},
 				},
@@ -10024,6 +10051,15 @@ func companiesPart12() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Go Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4236895751/",
+							Date:                 mustDate("2025-05-28"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -12259,7 +12295,7 @@ func companiesPart12() []domain.CompanyProfile {
 							ShortDescription:     "Metagame Features",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4226950943/",
-							Date:                 mustDate("2025-05-22"),
+							Date:                 mustDate("2025-05-28"), // mustDate("2025-05-22"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -12336,6 +12372,128 @@ func companiesPart12() []domain.CompanyProfile {
 			ShortDescription: "Real Estate",
 			Industries: []domain.Industry{
 				domain.IndustryPropTech,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Teamwork.com",
+			Website: "https://www.teamwork.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1042291,
+				IDs:               nil,
+				Alias:             "teamwork-com",
+				Name:              "Teamwork.com",
+				Followers:         "53K",
+				Employees:         "201-500",
+				AssociatedMembers: "535",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer II (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4233902057/",
+							Date:                 mustDate("2025-05-24"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Platform built for managing client projects, profitably",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "GlassFlow",
+			Website: "https://www.glassflow.dev/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                100710256,
+				IDs:               nil,
+				Alias:             "glassflow-dev",
+				Name:              "GlassFlow",
+				Followers:         "1K",
+				Employees:         "2-10",
+				AssociatedMembers: "12",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Backend Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4235682115/",
+							Date:                 mustDate("2025-05-28"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Open-Source solution to deduplicate and join Kafka data streams for ClickHouse",
+			Industries: []domain.Industry{
+				domain.IndustryDevOps,
 			},
 		},
 

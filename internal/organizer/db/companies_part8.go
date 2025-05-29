@@ -3106,7 +3106,7 @@ func companiesPart8() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4139628979/",
-							Date:                 mustDate("2025-05-07"), // mustDate("2025-04-16"), // mustDate("2025-03-05"), // mustDate("2025-01-31"),
+							Date:                 mustDate("2025-05-28"), // mustDate("2025-05-07"), // mustDate("2025-04-16"), // mustDate("2025-03-05"), // mustDate("2025-01-31"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -6121,7 +6121,20 @@ func companiesPart8() []domain.CompanyProfile {
 				Alias: "",
 			},
 			Languages: domain.Languages{
-				domain.Go: {},
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Platform Engineer (Golang, Kubernetes)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4238207309/",
+							Date:                 mustDate("2025-05-28"),
+							WithSalary:           false,
+							Remote:               false, // open to remote across ANZ
+						},
+					},
+				},
 				domain.Rust: {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
@@ -6462,7 +6475,20 @@ func companiesPart8() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
-				domain.Go:      {},
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Fullstack Web Developer – Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4236800842/",
+							Date:                 mustDate("2025-05-28"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -7264,6 +7290,15 @@ func companiesPart8() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4213174081/",
 							Date:                 mustDate("2025-05-15"), // mustDate("2025-05-07"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+						{
+							Title:                "Senior Go Developer",
+							ShortDescription:     "Imunify360 team",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4227285156/",
+							Date:                 mustDate("2025-05-28"),
 							WithSalary:           false,
 							Remote:               true,
 						},
