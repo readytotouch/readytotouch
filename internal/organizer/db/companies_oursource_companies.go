@@ -164,5 +164,21 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Akkodis",
+			Website: "https://www.akkodis.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                79383535,
+				IDs:               []int{224006, 320456, 79383535},
+				Alias:             "akkodis",
+				Name:              "Akkodis",
+				Followers:         "3M",
+				Employees:         "10K+",
+				AssociatedMembers: "24,836",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }
