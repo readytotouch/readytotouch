@@ -11232,6 +11232,15 @@ func companiesPart12() []domain.CompanyProfile {
 							WithSalary:           true,
 							Remote:               false,
 						},
+						{
+							Title:                "Golang Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4242646467/",
+							Date:                 mustDate("2025-06-05"),
+							WithSalary:           true,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -12412,7 +12421,7 @@ func companiesPart12() []domain.CompanyProfile {
 							ShortDescription:     "Metagame Features",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4226950943/",
-							Date:                 mustDate("2025-05-28"), // mustDate("2025-05-22"),
+							Date:                 mustDate("2025-06-05"), // mustDate("2025-05-28"), // mustDate("2025-05-22"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -13300,6 +13309,67 @@ func companiesPart12() []domain.CompanyProfile {
 			ShortDescription: "Game technology studio",
 			Industries: []domain.Industry{
 				domain.IndustryGameDev,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "PayPal",
+			Website: "https://www.paypal.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1482,
+				IDs:               []int{1482, 13308, 150981, 552278, 1310825, 2202637, 2226655},
+				Alias:             "paypal",
+				Name:              "PayPal",
+				Followers:         "1M",
+				Employees:         "10K+",
+				AssociatedMembers: "34,302",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Golang Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4237498549/",
+							Date:                 mustDate("2025-06-06"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
 			},
 		},
 

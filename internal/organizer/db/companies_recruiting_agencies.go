@@ -664,5 +664,20 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Recruiting agency
 		},
+		{
+			Name:    "Soni",
+			Website: "https://www.soniresources.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                10599076,
+				IDs:               nil,
+				Alias:             "soni-resources-group",
+				Name:              "Soni",
+				Followers:         "101K",
+				Employees:         "201-500",
+				AssociatedMembers: "165",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
 	}
 }
