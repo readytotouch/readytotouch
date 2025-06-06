@@ -164,5 +164,37 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Akkodis",
+			Website: "https://www.akkodis.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                79383535,
+				IDs:               []int{224006, 320456, 79383535},
+				Alias:             "akkodis",
+				Name:              "Akkodis",
+				Followers:         "3M",
+				Employees:         "10K+",
+				AssociatedMembers: "24,836",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "The Select Group",
+			Website: "https://www.selectgroup.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                28526,
+				IDs:               []int{28526, 3056209},
+				Alias:             "the-select-group",
+				Name:              "The Select Group",
+				Followers:         "391K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "937",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }

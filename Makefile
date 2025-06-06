@@ -151,6 +151,9 @@ resize-logos:
 	go run ./cmd/organizers/resize-logos/main.go ./public/logos-v1/adapted/zillow-180x180.png ./public/logos-v1/adapted/zillow-112x56.png
 	go run ./cmd/organizers/resize-logos/main.go ./public/logos-v1/adapted/riot-games-200x200.jpeg ./public/logos-v1/adapted/riot-games-112x56.jpeg
 	go run ./cmd/organizers/resize-logos/main.go ./public/logos-v1/adapted/lego-group-192x192.png ./public/logos-v1/adapted/lego-group-112x56.png
+	go run ./cmd/organizers/resize-logos/main.go ./public/logos-v1/adapted/paypal-196x196.png ./public/logos-v1/adapted/paypal-112x56.png
+	go run ./cmd/organizers/resize-logos/main.go ./public/logos-v1/adapted/mythical-180x180.png ./public/logos-v1/adapted/mythical-112x56.png
+	go run ./cmd/organizers/resize-logos/main.go ./public/logos-v1/adapted/threatconnect-180x180.png ./public/logos-v1/adapted/threatconnect-112x56.png
 
 # make rust-companies > ./datasync/github.com/readytotouch/readytotouch/companies.txt
 # VERIFIED=true make rust-companies > ./datasync/github.com/readytotouch/readytotouch/verified-companies.txt

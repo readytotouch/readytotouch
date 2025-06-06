@@ -619,5 +619,65 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Recruiting agency
 		},
+		{
+			Name:    "Randstad Switzerland",
+			Website: "https://www.randstad.ch/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2127592,
+				IDs:               nil,
+				Alias:             "randstad-switzerland",
+				Name:              "Randstad Switzerland",
+				Followers:         "106K",
+				Employees:         "201-500",
+				AssociatedMembers: "285",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Durlston Partners",
+			Website: "https://durlstonpartners.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1113019,
+				IDs:               nil,
+				Alias:             "durlston-partners",
+				Name:              "Durlston Partners",
+				Followers:         "140K",
+				Employees:         "11-50",
+				AssociatedMembers: "27",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Anson McCade",
+			Website: "https://www.ansonmccade.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                31392,
+				IDs:               nil,
+				Alias:             "anson-mccade",
+				Name:              "Anson McCade",
+				Followers:         "276K",
+				Employees:         "11-50",
+				AssociatedMembers: "125",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Soni",
+			Website: "https://www.soniresources.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                10599076,
+				IDs:               nil,
+				Alias:             "soni-resources-group",
+				Name:              "Soni",
+				Followers:         "101K",
+				Employees:         "201-500",
+				AssociatedMembers: "165",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
 	}
 }

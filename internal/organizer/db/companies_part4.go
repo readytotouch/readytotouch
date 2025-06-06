@@ -128,7 +128,7 @@ func companiesPart4() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4150808874/",
-							Date:                 mustDate("2025-05-14"), // mustDate("2025-04-17"), // mustDate("2025-03-05"), // mustDate("2025-02-11"),
+							Date:                 mustDate("2025-06-05"), // mustDate("2025-05-14"), // mustDate("2025-04-17"), // mustDate("2025-03-05"), // mustDate("2025-02-11"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -1887,7 +1887,7 @@ func companiesPart4() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Senior Engineer (Go/Typescript + AWS)",
+							Title:                "Senior Engineer (Go/TypeScript + AWS)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4047579348/",
@@ -2819,7 +2819,7 @@ func companiesPart4() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4228283683/",
-							Date:                 mustDate("2025-05-13"),
+							Date:                 mustDate("2025-06-04"), // mustDate("2025-05-13"),
 							WithSalary:           false,
 							Remote:               false,
 						},
