@@ -180,6 +180,7 @@ type LanguageProfile struct {
 type CompanyLogo struct {
 	V0 string
 	V1 string
+	V2 string
 }
 
 type CompanyProfile struct {

@@ -272,6 +272,7 @@ func (c *Controller) CompanyV1(ctx *gin.Context) {
 	company.Logo = domain.CompanyLogo{
 		V0: organizers.CompanyAliasToLogoMapV0[company.LinkedInProfile.Alias],
 		V1: organizers.CompanyAliasToLogoMapV1[company.LinkedInProfile.Alias],
+		V2: organizers.CompanyAliasToLogoMapV2[company.LinkedInProfile.Alias],
 	}
 
 	organizerFeature, ok := c.organizerFeature(featurePath)
@@ -387,6 +388,7 @@ func (c *Controller) CompanyV2(ctx *gin.Context) {
 	company.Logo = domain.CompanyLogo{
 		V0: organizers.CompanyAliasToLogoMapV0[company.LinkedInProfile.Alias],
 		V1: organizers.CompanyAliasToLogoMapV1[company.LinkedInProfile.Alias],
+		V2: organizers.CompanyAliasToLogoMapV2[company.LinkedInProfile.Alias],
 	}
 
 	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)
@@ -1280,6 +1282,7 @@ func (c *Controller) companies(organizerFeature domain.OrganizerFeature) []domai
 		company.Logo = domain.CompanyLogo{
 			V0: organizers.CompanyAliasToLogoMapV0[company.LinkedInProfile.Alias],
 			V1: organizers.CompanyAliasToLogoMapV1[company.LinkedInProfile.Alias],
+			V2: organizers.CompanyAliasToLogoMapV2[company.LinkedInProfile.Alias],
 		}
 
 		language := organizerFeature.Organizer.Language
@@ -1527,6 +1530,7 @@ func (c *Controller) dataPopulationCompanies(match func(company domain.CompanyPr
 		company.Logo = domain.CompanyLogo{
 			V0: organizers.CompanyAliasToLogoMapV0[company.LinkedInProfile.Alias],
 			V1: organizers.CompanyAliasToLogoMapV1[company.LinkedInProfile.Alias],
+			V2: organizers.CompanyAliasToLogoMapV2[company.LinkedInProfile.Alias],
 		}
 
 		if !c.hasVacancies(company) {
