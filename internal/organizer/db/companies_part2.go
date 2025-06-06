@@ -1575,7 +1575,7 @@ func companiesPart2() []domain.CompanyProfile {
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Engineering Manager",
-							ShortDescription:     "Strong technical background in one of: Clojure or Frontend (React + Typescript) ecosystems",
+							ShortDescription:     "Strong technical background in one of: Clojure or Frontend (React + TypeScript) ecosystems",
 							SwitchingOpportunity: "",
 							URL:                  "https://app.welcometothejungle.com/jobs/K21IaTJ2",
 							Date:                 mustDate("2024-12-27"), // Approximate date
@@ -5361,6 +5361,15 @@ func companiesPart2() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Lead Rust Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4194212338/",
+							Date:                 mustDate("2025-06-05"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig: {},
@@ -8843,6 +8852,15 @@ func companiesPart2() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Principal Rust Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4243553237/",
+							Date:                 mustDate("2025-06-04"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig:     {},
@@ -11361,7 +11379,7 @@ func companiesPart2() []domain.CompanyProfile {
 							ShortDescription:     "Functional Programming",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4179812772/",
-							Date:                 mustDate("2025-04-23"), // mustDate("2025-03-11"),
+							Date:                 mustDate("2025-06-05"), // mustDate("2025-04-23"), // mustDate("2025-03-11"),
 							WithSalary:           true,                   // $125,000- $160,000 per year
 							Remote:               false,
 						},

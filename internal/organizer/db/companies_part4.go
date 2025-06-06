@@ -1887,7 +1887,7 @@ func companiesPart4() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Senior Engineer (Go/Typescript + AWS)",
+							Title:                "Senior Engineer (Go/TypeScript + AWS)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4047579348/",

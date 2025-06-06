@@ -180,5 +180,21 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "The Select Group",
+			Website: "https://www.selectgroup.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                28526,
+				IDs:               []int{28526, 3056209},
+				Alias:             "the-select-group",
+				Name:              "The Select Group",
+				Followers:         "391K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "937",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }
