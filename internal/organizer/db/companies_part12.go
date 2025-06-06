@@ -12603,6 +12603,67 @@ func companiesPart12() []domain.CompanyProfile {
 				domain.IndustryDevOps,
 			},
 		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Channable",
+			Website: "https://www.channable.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                5396383,
+				IDs:               []int{5353569, 5396383},
+				Alias:             "channable",
+				Name:              "Channable",
+				Followers:         "22K",
+				Employees:         "201-500",
+				AssociatedMembers: "284",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go:      {},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Haskell Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4242629004/",
+							Date:                 mustDate("2025-06-05"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+			},
+			ShortDescription: "Channable is the all-in-one platform that provides the solutions you need for greater visibility, smarter ad campaigns, and more personalized marketing",
+			Industries: []domain.Industry{
+				domain.IndustryAdTech,
+			},
+		},
 
 		// Template
 		//{
