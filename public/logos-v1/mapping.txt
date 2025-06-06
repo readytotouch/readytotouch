@@ -951,3 +951,6 @@ teamwork-com teamwork-com-112x56.png
 zillow zillow-112x56.png
 riot-games riot-games-112x56.jpeg
 lego-group lego-group-112x56.png
+paypal paypal-112x56.png
+mythical mythical-112x56.png
+threatconnect-inc threatconnect-112x56.png
