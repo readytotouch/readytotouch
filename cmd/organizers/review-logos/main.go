@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"encoding/json"
 	"fmt"
+	resize "github.com/readytotouch/readytotouch/internal/logo-resize"
 	"os"
 	"path/filepath"
 	"slices"
@@ -20,7 +21,9 @@ const (
 )
 
 type Logo struct {
-	Alias string `json:"alias"`
+	Alias       string `json:"alias"`
+	Source      string `json:"source"`
+	Destination string `json:"destination"`
 }
 
 func main() {
@@ -49,6 +52,10 @@ func syncLogos(companies []domain.CompanyProfile) {
 
 	logoMap := make(map[string]Logo, len(logos))
 	for _, logo := range logos {
+		if logo.Alias == "" {
+			panic("logo alias cannot be empty")
+		}
+
 		if _, ok := logoMap[logo.Alias]; ok {
 			panic(fmt.Sprintf("duplicate logo alias: %s", logo.Alias))
 		}
@@ -62,7 +69,32 @@ func syncLogos(companies []domain.CompanyProfile) {
 
 		logo := logoMap[company.LinkedInProfile.Alias]
 
-		logo.Alias = company.LinkedInProfile.Alias
+		if logo.Source == "" {
+			// Nothing to resize
+
+			continue
+		}
+
+		if logo.Destination != "" {
+			// Logo already resized
+
+			continue
+		}
+
+		ext := filepath.Ext(logo.Source)
+
+		switch ext {
+		case ".png", ".jpg", ".jpeg":
+		default:
+			panic(fmt.Sprintf("unexpected ext: %s for logo: %s", ext, logo.Source))
+		}
+
+		logo.Destination = logo.Alias+ext
+
+		err := resize.Resize("./public/logos/original/"+logo.Source, "./public/logos/112x56/"+logo.Destination)
+		if err != nil {
+			panic(fmt.Sprintf("failed to resize logo %s: %v", logo.Source, err))
+		}
 
 		logoMap[company.LinkedInProfile.Alias] = logo
 	}
