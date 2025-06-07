@@ -2,6 +2,7 @@ package main
 
 import (
 	"bufio"
+	"encoding/json"
 	"fmt"
 	"os"
 	"path/filepath"
@@ -13,6 +14,14 @@ import (
 	"github.com/readytotouch/readytotouch/internal/generated/organizers"
 	"github.com/readytotouch/readytotouch/internal/organizer/db"
 )
+
+const (
+	mapping = "./public/logos/mapping.json"
+)
+
+type Logo struct {
+	Alias string `json:"alias"`
+}
 
 func main() {
 	var (
@@ -28,8 +37,49 @@ func main() {
 	/*
 		prepareLogosV1Mapping(companies)
 	*/
+	/*
+		review("./public/logos-v1/adapted/")
+	*/
 
-	review("./public/logos-v1/adapted/")
+	syncLogos(companies)
+}
+
+func syncLogos(companies []domain.CompanyProfile) {
+	logos := assertFetchLogos()
+
+	assertStoreLogos(logos)
+}
+
+func assertFetchLogos() []Logo {
+	var (
+		logos []Logo
+	)
+
+	file, err := os.Open(mapping)
+	if err != nil {
+		panic(err)
+	}
+	defer file.Close()
+
+	err = json.NewDecoder(file).Decode(&logos)
+	if err != nil {
+		panic(err)
+	}
+
+	return logos
+}
+
+func assertStoreLogos(logos []Logo) {
+	file, err := os.Create(mapping)
+	if err != nil {
+		panic(err)
+	}
+	defer file.Close()
+
+	err = json.NewEncoder(file).Encode(logos)
+	if err != nil {
+		panic(err)
+	}
 }
 
 func review(dir string) {
