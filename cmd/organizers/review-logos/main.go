@@ -47,6 +47,34 @@ func main() {
 func syncLogos(companies []domain.CompanyProfile) {
 	logos := assertFetchLogos()
 
+	logoMap := make(map[string]Logo, len(logos))
+	for _, logo := range logos {
+		if _, ok := logoMap[logo.Alias]; ok {
+			panic(fmt.Sprintf("duplicate logo alias: %s", logo.Alias))
+		}
+		logoMap[logo.Alias] = logo
+	}
+
+	for _, company := range companies {
+		if company.Ignore {
+			continue
+		}
+
+		logo := logoMap[company.LinkedInProfile.Alias]
+
+		logo.Alias = company.LinkedInProfile.Alias
+
+		logoMap[company.LinkedInProfile.Alias] = logo
+	}
+
+	logos = make([]Logo, 0, len(logoMap))
+	for _, logo := range logoMap {
+		logos = append(logos, logo)
+	}
+	slices.SortFunc(logos, func(a, b Logo) int {
+		return strings.Compare(a.Alias, b.Alias)
+	})
+
 	assertStoreLogos(logos)
 }
 
@@ -76,7 +104,12 @@ func assertStoreLogos(logos []Logo) {
 	}
 	defer file.Close()
 
-	err = json.NewEncoder(file).Encode(logos)
+	data, err := json.MarshalIndent(logos, "", "  ")
+	if err != nil {
+		panic(err)
+	}
+
+	_, err = file.Write(data)
 	if err != nil {
 		panic(err)
 	}

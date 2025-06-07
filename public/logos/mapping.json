@@ -1,1 +1,2900 @@
-[]
+[
+  {
+    "alias": "1global"
+  },
+  {
+    "alias": "1nce"
+  },
+  {
+    "alias": "1password"
+  },
+  {
+    "alias": "3085253"
+  },
+  {
+    "alias": "4128"
+  },
+  {
+    "alias": "815488"
+  },
+  {
+    "alias": "90poe"
+  },
+  {
+    "alias": "ab-tasty"
+  },
+  {
+    "alias": "abb"
+  },
+  {
+    "alias": "abbott-"
+  },
+  {
+    "alias": "abc-fitness"
+  },
+  {
+    "alias": "abnormalsecurity"
+  },
+  {
+    "alias": "about-you"
+  },
+  {
+    "alias": "accessowl"
+  },
+  {
+    "alias": "acronis"
+  },
+  {
+    "alias": "activeprospect"
+  },
+  {
+    "alias": "adform"
+  },
+  {
+    "alias": "adjoe"
+  },
+  {
+    "alias": "adobe"
+  },
+  {
+    "alias": "adtran"
+  },
+  {
+    "alias": "adverty"
+  },
+  {
+    "alias": "aescape"
+  },
+  {
+    "alias": "affinipay"
+  },
+  {
+    "alias": "agentero"
+  },
+  {
+    "alias": "aikido-security"
+  },
+  {
+    "alias": "airahome"
+  },
+  {
+    "alias": "airfocus"
+  },
+  {
+    "alias": "airslate"
+  },
+  {
+    "alias": "airspace-inc"
+  },
+  {
+    "alias": "airudder"
+  },
+  {
+    "alias": "akamai-technologies"
+  },
+  {
+    "alias": "alertmedia"
+  },
+  {
+    "alias": "algolia"
+  },
+  {
+    "alias": "allocator-one"
+  },
+  {
+    "alias": "altair-engineering"
+  },
+  {
+    "alias": "altenar"
+  },
+  {
+    "alias": "alterante"
+  },
+  {
+    "alias": "amartha"
+  },
+  {
+    "alias": "amazon"
+  },
+  {
+    "alias": "american-airlines"
+  },
+  {
+    "alias": "american-express"
+  },
+  {
+    "alias": "amoamoamo"
+  },
+  {
+    "alias": "amuse.io"
+  },
+  {
+    "alias": "anaplan"
+  },
+  {
+    "alias": "andurilindustries"
+  },
+  {
+    "alias": "angel-studios-page"
+  },
+  {
+    "alias": "anjuna-security"
+  },
+  {
+    "alias": "apifonica"
+  },
+  {
+    "alias": "apollo-graphql"
+  },
+  {
+    "alias": "appear-net"
+  },
+  {
+    "alias": "appflowy"
+  },
+  {
+    "alias": "applied-research-solutions"
+  },
+  {
+    "alias": "applied-systems"
+  },
+  {
+    "alias": "applied-systems-canada"
+  },
+  {
+    "alias": "appodeal"
+  },
+  {
+    "alias": "appotapay"
+  },
+  {
+    "alias": "aquasecteam"
+  },
+  {
+    "alias": "arc-risk-analytics"
+  },
+  {
+    "alias": "arculus-a-jungheinrich-company"
+  },
+  {
+    "alias": "arenko-cleantech"
+  },
+  {
+    "alias": "arfdlaw"
+  },
+  {
+    "alias": "argela-technologies"
+  },
+  {
+    "alias": "arista-networks-inc"
+  },
+  {
+    "alias": "arm"
+  },
+  {
+    "alias": "armadaai"
+  },
+  {
+    "alias": "ascendion"
+  },
+  {
+    "alias": "ashley-furniture-industries"
+  },
+  {
+    "alias": "aspire-software"
+  },
+  {
+    "alias": "assembledhq"
+  },
+  {
+    "alias": "assertive-yield"
+  },
+  {
+    "alias": "asset-reality"
+  },
+  {
+    "alias": "atmail"
+  },
+  {
+    "alias": "atom-bank"
+  },
+  {
+    "alias": "atomicskiing"
+  },
+  {
+    "alias": "auctiontechnologygroup"
+  },
+  {
+    "alias": "audigent"
+  },
+  {
+    "alias": "australian-broadcasting-corporation"
+  },
+  {
+    "alias": "autodesk"
+  },
+  {
+    "alias": "autodoc"
+  },
+  {
+    "alias": "automox"
+  },
+  {
+    "alias": "avathonai"
+  },
+  {
+    "alias": "avetta"
+  },
+  {
+    "alias": "aviatrix-systems"
+  },
+  {
+    "alias": "axis-communications"
+  },
+  {
+    "alias": "axpo-group"
+  },
+  {
+    "alias": "ayloservices"
+  },
+  {
+    "alias": "ayoconnect"
+  },
+  {
+    "alias": "bakerhughes"
+  },
+  {
+    "alias": "banquenationaleducanada"
+  },
+  {
+    "alias": "barracuda-networks"
+  },
+  {
+    "alias": "bauhaus-deutschland"
+  },
+  {
+    "alias": "bbraun-group"
+  },
+  {
+    "alias": "beat81"
+  },
+  {
+    "alias": "bedrock-streaming"
+  },
+  {
+    "alias": "bell"
+  },
+  {
+    "alias": "bestowtech"
+  },
+  {
+    "alias": "betterme-company"
+  },
+  {
+    "alias": "beyond-identity-inc"
+  },
+  {
+    "alias": "bigblue-co"
+  },
+  {
+    "alias": "bigcommerce"
+  },
+  {
+    "alias": "bigpayme"
+  },
+  {
+    "alias": "bill"
+  },
+  {
+    "alias": "birdiecare"
+  },
+  {
+    "alias": "bitaksi"
+  },
+  {
+    "alias": "bitfount"
+  },
+  {
+    "alias": "bitly"
+  },
+  {
+    "alias": "black-duck-software"
+  },
+  {
+    "alias": "blackrock"
+  },
+  {
+    "alias": "bloomberg"
+  },
+  {
+    "alias": "bloomreach"
+  },
+  {
+    "alias": "blp-digital"
+  },
+  {
+    "alias": "bnpparibassecuritiesservices"
+  },
+  {
+    "alias": "bol-com"
+  },
+  {
+    "alias": "booz-allen-hamilton"
+  },
+  {
+    "alias": "bread-financial"
+  },
+  {
+    "alias": "breakroom"
+  },
+  {
+    "alias": "broadcom"
+  },
+  {
+    "alias": "bufbuild"
+  },
+  {
+    "alias": "bynder"
+  },
+  {
+    "alias": "cabify"
+  },
+  {
+    "alias": "cadmus-io"
+  },
+  {
+    "alias": "cake-by-vpbank"
+  },
+  {
+    "alias": "campingworld"
+  },
+  {
+    "alias": "canonical"
+  },
+  {
+    "alias": "canva"
+  },
+  {
+    "alias": "capital-one"
+  },
+  {
+    "alias": "carecarco"
+  },
+  {
+    "alias": "caredotcom"
+  },
+  {
+    "alias": "careem"
+  },
+  {
+    "alias": "cars-commerce"
+  },
+  {
+    "alias": "cast-ai"
+  },
+  {
+    "alias": "cava-"
+  },
+  {
+    "alias": "centene-corporation"
+  },
+  {
+    "alias": "centralretail"
+  },
+  {
+    "alias": "centrica"
+  },
+  {
+    "alias": "centripetal-ai"
+  },
+  {
+    "alias": "ceresti-health-inc."
+  },
+  {
+    "alias": "chalkai"
+  },
+  {
+    "alias": "channable"
+  },
+  {
+    "alias": "check-point-software-technologies"
+  },
+  {
+    "alias": "checkmarx"
+  },
+  {
+    "alias": "checkout"
+  },
+  {
+    "alias": "cheesecake-labs"
+  },
+  {
+    "alias": "chep"
+  },
+  {
+    "alias": "chime-card"
+  },
+  {
+    "alias": "cho-tot"
+  },
+  {
+    "alias": "cimri"
+  },
+  {
+    "alias": "cinemo"
+  },
+  {
+    "alias": "circles1"
+  },
+  {
+    "alias": "circuitknowledge"
+  },
+  {
+    "alias": "cisco"
+  },
+  {
+    "alias": "citi"
+  },
+  {
+    "alias": "cj-express-group"
+  },
+  {
+    "alias": "claritev"
+  },
+  {
+    "alias": "clearscore"
+  },
+  {
+    "alias": "clearstory-build"
+  },
+  {
+    "alias": "clerkinc"
+  },
+  {
+    "alias": "climatiq"
+  },
+  {
+    "alias": "clinia"
+  },
+  {
+    "alias": "clockwork-labs"
+  },
+  {
+    "alias": "cloudflare"
+  },
+  {
+    "alias": "cloudlinux"
+  },
+  {
+    "alias": "cloudwalk-inc"
+  },
+  {
+    "alias": "cloudwick"
+  },
+  {
+    "alias": "cmrad"
+  },
+  {
+    "alias": "coalitioninc"
+  },
+  {
+    "alias": "cockroach-labs"
+  },
+  {
+    "alias": "codenotary"
+  },
+  {
+    "alias": "cognitedata"
+  },
+  {
+    "alias": "cohesity"
+  },
+  {
+    "alias": "collabera"
+  },
+  {
+    "alias": "collins-aerospace"
+  },
+  {
+    "alias": "comcast"
+  },
+  {
+    "alias": "command-zero"
+  },
+  {
+    "alias": "commercetools"
+  },
+  {
+    "alias": "commonwealthbank"
+  },
+  {
+    "alias": "communitydotcom"
+  },
+  {
+    "alias": "compassinc"
+  },
+  {
+    "alias": "complear"
+  },
+  {
+    "alias": "consortgroup"
+  },
+  {
+    "alias": "coralogix"
+  },
+  {
+    "alias": "coreweave"
+  },
+  {
+    "alias": "corsearchinc"
+  },
+  {
+    "alias": "corys"
+  },
+  {
+    "alias": "covermymeds"
+  },
+  {
+    "alias": "creative-fabrica"
+  },
+  {
+    "alias": "creativesoftware"
+  },
+  {
+    "alias": "criteo"
+  },
+  {
+    "alias": "cross-river-bank"
+  },
+  {
+    "alias": "crowd-riff"
+  },
+  {
+    "alias": "crowdstrike"
+  },
+  {
+    "alias": "csidedev"
+  },
+  {
+    "alias": "curve-ltd"
+  },
+  {
+    "alias": "customer-io"
+  },
+  {
+    "alias": "cv-library"
+  },
+  {
+    "alias": "cyber-ark-software"
+  },
+  {
+    "alias": "cyberhaven"
+  },
+  {
+    "alias": "cybus"
+  },
+  {
+    "alias": "cycloid"
+  },
+  {
+    "alias": "cynergy-bank"
+  },
+  {
+    "alias": "cynet-systems"
+  },
+  {
+    "alias": "daedalean"
+  },
+  {
+    "alias": "daftcode-sp-z-o-o-"
+  },
+  {
+    "alias": "dailymotion"
+  },
+  {
+    "alias": "dailypay"
+  },
+  {
+    "alias": "darktrace"
+  },
+  {
+    "alias": "databeaconaero"
+  },
+  {
+    "alias": "datadog"
+  },
+  {
+    "alias": "dataoncorp"
+  },
+  {
+    "alias": "datazipio"
+  },
+  {
+    "alias": "ddn"
+  },
+  {
+    "alias": "dealer-tire"
+  },
+  {
+    "alias": "delivery-hero-se"
+  },
+  {
+    "alias": "delltechnologies"
+  },
+  {
+    "alias": "demandbase"
+  },
+  {
+    "alias": "density-inc-"
+  },
+  {
+    "alias": "depixen-sw"
+  },
+  {
+    "alias": "deutsche-bank"
+  },
+  {
+    "alias": "deutscheboerse"
+  },
+  {
+    "alias": "device42"
+  },
+  {
+    "alias": "devolutions-inc-"
+  },
+  {
+    "alias": "dhl"
+  },
+  {
+    "alias": "diabolocom"
+  },
+  {
+    "alias": "diagrid-inc"
+  },
+  {
+    "alias": "digiexams"
+  },
+  {
+    "alias": "digitalocean"
+  },
+  {
+    "alias": "discern-io"
+  },
+  {
+    "alias": "discord"
+  },
+  {
+    "alias": "disney-entertainment"
+  },
+  {
+    "alias": "dittolive"
+  },
+  {
+    "alias": "dlocal"
+  },
+  {
+    "alias": "dnsfilter"
+  },
+  {
+    "alias": "doccla"
+  },
+  {
+    "alias": "docebo"
+  },
+  {
+    "alias": "dochq"
+  },
+  {
+    "alias": "docker"
+  },
+  {
+    "alias": "dojo-tech"
+  },
+  {
+    "alias": "doordash"
+  },
+  {
+    "alias": "dottxt"
+  },
+  {
+    "alias": "dria-ai"
+  },
+  {
+    "alias": "driftrock"
+  },
+  {
+    "alias": "drivenets"
+  },
+  {
+    "alias": "dronesense"
+  },
+  {
+    "alias": "droneshield"
+  },
+  {
+    "alias": "dropbox"
+  },
+  {
+    "alias": "drw"
+  },
+  {
+    "alias": "dscout"
+  },
+  {
+    "alias": "dtonesolution"
+  },
+  {
+    "alias": "duffelhq"
+  },
+  {
+    "alias": "dusty-robotics"
+  },
+  {
+    "alias": "dyad-ai"
+  },
+  {
+    "alias": "dynatrace"
+  },
+  {
+    "alias": "dyninno-group"
+  },
+  {
+    "alias": "e-food-gr"
+  },
+  {
+    "alias": "ebay"
+  },
+  {
+    "alias": "eburyfintech"
+  },
+  {
+    "alias": "eco-movement-charge-point-data"
+  },
+  {
+    "alias": "edbpostgres"
+  },
+  {
+    "alias": "eightcap-aufx"
+  },
+  {
+    "alias": "elastic-co"
+  },
+  {
+    "alias": "electronic-arts"
+  },
+  {
+    "alias": "embark-studios-ab"
+  },
+  {
+    "alias": "embecosm"
+  },
+  {
+    "alias": "emerchantpay-ltd"
+  },
+  {
+    "alias": "emitwise"
+  },
+  {
+    "alias": "emnify"
+  },
+  {
+    "alias": "enflick-inc-"
+  },
+  {
+    "alias": "enova-international"
+  },
+  {
+    "alias": "entro-security-non-human-identities"
+  },
+  {
+    "alias": "epic-games"
+  },
+  {
+    "alias": "ericsson"
+  },
+  {
+    "alias": "eset"
+  },
+  {
+    "alias": "esri"
+  },
+  {
+    "alias": "essity"
+  },
+  {
+    "alias": "etsy"
+  },
+  {
+    "alias": "eunasolutions"
+  },
+  {
+    "alias": "evercharge"
+  },
+  {
+    "alias": "evident-id-inc."
+  },
+  {
+    "alias": "evolve-vacation-rental"
+  },
+  {
+    "alias": "exabeam"
+  },
+  {
+    "alias": "exasol-ag"
+  },
+  {
+    "alias": "expedia"
+  },
+  {
+    "alias": "expressvpn"
+  },
+  {
+    "alias": "extreme-networks"
+  },
+  {
+    "alias": "f5"
+  },
+  {
+    "alias": "factset"
+  },
+  {
+    "alias": "fairmoney"
+  },
+  {
+    "alias": "fanatics-inc-"
+  },
+  {
+    "alias": "fastly"
+  },
+  {
+    "alias": "fathom-io"
+  },
+  {
+    "alias": "ferretdb"
+  },
+  {
+    "alias": "fetcherr-ltd"
+  },
+  {
+    "alias": "fidelity-investments"
+  },
+  {
+    "alias": "figma"
+  },
+  {
+    "alias": "fincompare"
+  },
+  {
+    "alias": "firebolt"
+  },
+  {
+    "alias": "fireworkhq"
+  },
+  {
+    "alias": "firstbase-io"
+  },
+  {
+    "alias": "firstbatchai"
+  },
+  {
+    "alias": "fis"
+  },
+  {
+    "alias": "fiserv"
+  },
+  {
+    "alias": "fiskaly"
+  },
+  {
+    "alias": "flatpeak"
+  },
+  {
+    "alias": "flexaihq"
+  },
+  {
+    "alias": "flexera"
+  },
+  {
+    "alias": "flextrade"
+  },
+  {
+    "alias": "flip.id"
+  },
+  {
+    "alias": "flixbus"
+  },
+  {
+    "alias": "flock-safety"
+  },
+  {
+    "alias": "flok-health"
+  },
+  {
+    "alias": "flow-traders"
+  },
+  {
+    "alias": "flowhub"
+  },
+  {
+    "alias": "flyrinc"
+  },
+  {
+    "alias": "flyzipline"
+  },
+  {
+    "alias": "fonoa"
+  },
+  {
+    "alias": "foodji-marketplace-gmbh"
+  },
+  {
+    "alias": "forcepoint"
+  },
+  {
+    "alias": "ford-motor-company"
+  },
+  {
+    "alias": "form3-financial-cloud"
+  },
+  {
+    "alias": "fortinet"
+  },
+  {
+    "alias": "fossa"
+  },
+  {
+    "alias": "foxtechteam"
+  },
+  {
+    "alias": "freeformfuture"
+  },
+  {
+    "alias": "freewheel"
+  },
+  {
+    "alias": "fubotv"
+  },
+  {
+    "alias": "fujitsu"
+  },
+  {
+    "alias": "fullinfo"
+  },
+  {
+    "alias": "funnel-io"
+  },
+  {
+    "alias": "future-research-inc"
+  },
+  {
+    "alias": "g-core"
+  },
+  {
+    "alias": "garena"
+  },
+  {
+    "alias": "gartner"
+  },
+  {
+    "alias": "gdms"
+  },
+  {
+    "alias": "geico"
+  },
+  {
+    "alias": "gelato"
+  },
+  {
+    "alias": "geniussports"
+  },
+  {
+    "alias": "geocomply"
+  },
+  {
+    "alias": "getansa"
+  },
+  {
+    "alias": "getcruise"
+  },
+  {
+    "alias": "getir"
+  },
+  {
+    "alias": "getnetworld"
+  },
+  {
+    "alias": "getsentry"
+  },
+  {
+    "alias": "getsona"
+  },
+  {
+    "alias": "getstream"
+  },
+  {
+    "alias": "gettaxi"
+  },
+  {
+    "alias": "getwriter"
+  },
+  {
+    "alias": "gitguardian"
+  },
+  {
+    "alias": "github"
+  },
+  {
+    "alias": "gitlab-com"
+  },
+  {
+    "alias": "glassflow-dev"
+  },
+  {
+    "alias": "go-nitro"
+  },
+  {
+    "alias": "go-teleport"
+  },
+  {
+    "alias": "gocardless"
+  },
+  {
+    "alias": "godaddy"
+  },
+  {
+    "alias": "goflink"
+  },
+  {
+    "alias": "goldman-sachs"
+  },
+  {
+    "alias": "google"
+  },
+  {
+    "alias": "gorillalogic"
+  },
+  {
+    "alias": "grabapp"
+  },
+  {
+    "alias": "grafana-labs"
+  },
+  {
+    "alias": "grammarly"
+  },
+  {
+    "alias": "grasshopperasia"
+  },
+  {
+    "alias": "greenbone-networks-gmbh"
+  },
+  {
+    "alias": "greengot"
+  },
+  {
+    "alias": "greenpacket"
+  },
+  {
+    "alias": "gremlin-inc."
+  },
+  {
+    "alias": "greynoise"
+  },
+  {
+    "alias": "greyscout"
+  },
+  {
+    "alias": "gridx"
+  },
+  {
+    "alias": "groq"
+  },
+  {
+    "alias": "group-avows"
+  },
+  {
+    "alias": "guardsquare"
+  },
+  {
+    "alias": "guidewire-software"
+  },
+  {
+    "alias": "gymondo-gmbh"
+  },
+  {
+    "alias": "hadrianspace"
+  },
+  {
+    "alias": "hapag-lloyd-ag"
+  },
+  {
+    "alias": "happen-ing"
+  },
+  {
+    "alias": "harksys"
+  },
+  {
+    "alias": "hasaki-vn"
+  },
+  {
+    "alias": "hashicorp"
+  },
+  {
+    "alias": "hasura"
+  },
+  {
+    "alias": "haza-foods-llc"
+  },
+  {
+    "alias": "hearx-group"
+  },
+  {
+    "alias": "heb"
+  },
+  {
+    "alias": "hello-stake"
+  },
+  {
+    "alias": "hellofresh"
+  },
+  {
+    "alias": "helsing"
+  },
+  {
+    "alias": "here"
+  },
+  {
+    "alias": "hewlett-packard-enterprise"
+  },
+  {
+    "alias": "heyfresha"
+  },
+  {
+    "alias": "hiive"
+  },
+  {
+    "alias": "hinge-app"
+  },
+  {
+    "alias": "holidaycheck-ag"
+  },
+  {
+    "alias": "home24"
+  },
+  {
+    "alias": "hootsuite"
+  },
+  {
+    "alias": "hornetsecurity"
+  },
+  {
+    "alias": "hp"
+  },
+  {
+    "alias": "hsbc"
+  },
+  {
+    "alias": "hubble-pte.-ltd."
+  },
+  {
+    "alias": "hunterio"
+  },
+  {
+    "alias": "huntress-labs"
+  },
+  {
+    "alias": "ibm"
+  },
+  {
+    "alias": "icapital-network-inc"
+  },
+  {
+    "alias": "idemiagroup"
+  },
+  {
+    "alias": "idt"
+  },
+  {
+    "alias": "ifs"
+  },
+  {
+    "alias": "ikea"
+  },
+  {
+    "alias": "impactdotcom"
+  },
+  {
+    "alias": "impossiblecloud"
+  },
+  {
+    "alias": "incharge-energy"
+  },
+  {
+    "alias": "influ2"
+  },
+  {
+    "alias": "influxdb"
+  },
+  {
+    "alias": "infoblox"
+  },
+  {
+    "alias": "infolob-global"
+  },
+  {
+    "alias": "infomatics-corp"
+  },
+  {
+    "alias": "ing"
+  },
+  {
+    "alias": "instinct-science"
+  },
+  {
+    "alias": "inulti"
+  },
+  {
+    "alias": "inviatravelgermany"
+  },
+  {
+    "alias": "ionos"
+  },
+  {
+    "alias": "ipsos"
+  },
+  {
+    "alias": "isovalent"
+  },
+  {
+    "alias": "jack-henry"
+  },
+  {
+    "alias": "jamf-software"
+  },
+  {
+    "alias": "jetbrains"
+  },
+  {
+    "alias": "jfrog-ltd"
+  },
+  {
+    "alias": "jmawireless"
+  },
+  {
+    "alias": "join-denim"
+  },
+  {
+    "alias": "joinpult"
+  },
+  {
+    "alias": "jomehq"
+  },
+  {
+    "alias": "jpmorganchase"
+  },
+  {
+    "alias": "just-eat-takeaway-com"
+  },
+  {
+    "alias": "justwatch"
+  },
+  {
+    "alias": "k-id"
+  },
+  {
+    "alias": "kantar"
+  },
+  {
+    "alias": "kantox"
+  },
+  {
+    "alias": "kargo"
+  },
+  {
+    "alias": "kaseya"
+  },
+  {
+    "alias": "kiddom"
+  },
+  {
+    "alias": "kimiagroup"
+  },
+  {
+    "alias": "kiteworkscgcp"
+  },
+  {
+    "alias": "kiwi.com"
+  },
+  {
+    "alias": "knime"
+  },
+  {
+    "alias": "knowbe4"
+  },
+  {
+    "alias": "kochinc"
+  },
+  {
+    "alias": "koho"
+  },
+  {
+    "alias": "konghq"
+  },
+  {
+    "alias": "kroger"
+  },
+  {
+    "alias": "ladderlife"
+  },
+  {
+    "alias": "lantronix"
+  },
+  {
+    "alias": "legalzoom"
+  },
+  {
+    "alias": "lego-group"
+  },
+  {
+    "alias": "lemfi"
+  },
+  {
+    "alias": "lenskart-com"
+  },
+  {
+    "alias": "letgo"
+  },
+  {
+    "alias": "level-all"
+  },
+  {
+    "alias": "levelhome"
+  },
+  {
+    "alias": "lexia-learning-systems"
+  },
+  {
+    "alias": "lexisnexis-risk-solutions"
+  },
+  {
+    "alias": "liebherr"
+  },
+  {
+    "alias": "lightspeed-systems"
+  },
+  {
+    "alias": "lightspeedcommerce"
+  },
+  {
+    "alias": "limango-gmbh"
+  },
+  {
+    "alias": "limango-sp-z-o-o-"
+  },
+  {
+    "alias": "lingopal-ai"
+  },
+  {
+    "alias": "linkedin"
+  },
+  {
+    "alias": "littlelives"
+  },
+  {
+    "alias": "lloyds-banking-group"
+  },
+  {
+    "alias": "loblaw-companies-limited"
+  },
+  {
+    "alias": "loblaw-digital"
+  },
+  {
+    "alias": "london-stock-exchange-group"
+  },
+  {
+    "alias": "los-alamos-national-laboratory"
+  },
+  {
+    "alias": "lotusretails"
+  },
+  {
+    "alias": "lucidmotors"
+  },
+  {
+    "alias": "lumentechnologies"
+  },
+  {
+    "alias": "luminovo"
+  },
+  {
+    "alias": "lytxinc"
+  },
+  {
+    "alias": "macquariegroup"
+  },
+  {
+    "alias": "macrohealth"
+  },
+  {
+    "alias": "maersk-group"
+  },
+  {
+    "alias": "magicmotorsport"
+  },
+  {
+    "alias": "magnite"
+  },
+  {
+    "alias": "mail-step"
+  },
+  {
+    "alias": "makropro"
+  },
+  {
+    "alias": "mapbox"
+  },
+  {
+    "alias": "marbill-technologies"
+  },
+  {
+    "alias": "markitech-ai"
+  },
+  {
+    "alias": "maropost"
+  },
+  {
+    "alias": "mastercard"
+  },
+  {
+    "alias": "materialise"
+  },
+  {
+    "alias": "materializeinc"
+  },
+  {
+    "alias": "mayaph"
+  },
+  {
+    "alias": "mcafee"
+  },
+  {
+    "alias": "mechanical-orchard"
+  },
+  {
+    "alias": "medium-com"
+  },
+  {
+    "alias": "megaport"
+  },
+  {
+    "alias": "mellifera-operations-limited"
+  },
+  {
+    "alias": "mercuryhq"
+  },
+  {
+    "alias": "meta"
+  },
+  {
+    "alias": "metabase"
+  },
+  {
+    "alias": "metric-app"
+  },
+  {
+    "alias": "microsoft"
+  },
+  {
+    "alias": "millennium-partners"
+  },
+  {
+    "alias": "mimecast"
+  },
+  {
+    "alias": "mindera-world"
+  },
+  {
+    "alias": "mindrift-ai"
+  },
+  {
+    "alias": "miraclesoft"
+  },
+  {
+    "alias": "mirantis"
+  },
+  {
+    "alias": "mitratech"
+  },
+  {
+    "alias": "mobica"
+  },
+  {
+    "alias": "moia_mobility"
+  },
+  {
+    "alias": "mondoo"
+  },
+  {
+    "alias": "mondu-ai"
+  },
+  {
+    "alias": "money-forward"
+  },
+  {
+    "alias": "moneylion"
+  },
+  {
+    "alias": "mongodbinc"
+  },
+  {
+    "alias": "monil-virtual-fences"
+  },
+  {
+    "alias": "monzo-bank"
+  },
+  {
+    "alias": "moodys-corporation"
+  },
+  {
+    "alias": "morgan-stanley"
+  },
+  {
+    "alias": "motive-inc"
+  },
+  {
+    "alias": "motorolasolutions"
+  },
+  {
+    "alias": "moveworksai"
+  },
+  {
+    "alias": "mozilla-corporation"
+  },
+  {
+    "alias": "mr-price-group"
+  },
+  {
+    "alias": "muralhealth"
+  },
+  {
+    "alias": "mux"
+  },
+  {
+    "alias": "muzz"
+  },
+  {
+    "alias": "mycafu"
+  },
+  {
+    "alias": "mythical"
+  },
+  {
+    "alias": "namecheap-inc"
+  },
+  {
+    "alias": "napier"
+  },
+  {
+    "alias": "narrativeapp"
+  },
+  {
+    "alias": "nasdaq"
+  },
+  {
+    "alias": "natuvion"
+  },
+  {
+    "alias": "natwest-group"
+  },
+  {
+    "alias": "nbcuniversal-inc-"
+  },
+  {
+    "alias": "ncratleos"
+  },
+  {
+    "alias": "ncrvoyix"
+  },
+  {
+    "alias": "nebius"
+  },
+  {
+    "alias": "nelly-solutions"
+  },
+  {
+    "alias": "neo4j"
+  },
+  {
+    "alias": "net-health-systems-inc-"
+  },
+  {
+    "alias": "net2phone"
+  },
+  {
+    "alias": "netapp"
+  },
+  {
+    "alias": "netflix"
+  },
+  {
+    "alias": "netlify"
+  },
+  {
+    "alias": "netscribes"
+  },
+  {
+    "alias": "network-optix"
+  },
+  {
+    "alias": "new-relic-inc-"
+  },
+  {
+    "alias": "new-work-se"
+  },
+  {
+    "alias": "nexos-ai"
+  },
+  {
+    "alias": "nice-systems"
+  },
+  {
+    "alias": "nico-lab"
+  },
+  {
+    "alias": "nielseniq"
+  },
+  {
+    "alias": "nightfall-ai"
+  },
+  {
+    "alias": "nike"
+  },
+  {
+    "alias": "nine-entertainment-co."
+  },
+  {
+    "alias": "ninjatrader-group-llc"
+  },
+  {
+    "alias": "niov-labs"
+  },
+  {
+    "alias": "nn-group"
+  },
+  {
+    "alias": "nokia"
+  },
+  {
+    "alias": "nordea"
+  },
+  {
+    "alias": "nordsecurity"
+  },
+  {
+    "alias": "notablesystems"
+  },
+  {
+    "alias": "notchupteam"
+  },
+  {
+    "alias": "nuro-inc."
+  },
+  {
+    "alias": "nutanix"
+  },
+  {
+    "alias": "nvent"
+  },
+  {
+    "alias": "oanda"
+  },
+  {
+    "alias": "observe-inc"
+  },
+  {
+    "alias": "occ"
+  },
+  {
+    "alias": "oddingg"
+  },
+  {
+    "alias": "odyssey-information-services"
+  },
+  {
+    "alias": "okta-inc-"
+  },
+  {
+    "alias": "ola-chat"
+  },
+  {
+    "alias": "olx-group"
+  },
+  {
+    "alias": "omilia-ltd"
+  },
+  {
+    "alias": "omio"
+  },
+  {
+    "alias": "omniful"
+  },
+  {
+    "alias": "on2it-cybersecurity"
+  },
+  {
+    "alias": "onedoc.ch"
+  },
+  {
+    "alias": "oneschema"
+  },
+  {
+    "alias": "onesignal"
+  },
+  {
+    "alias": "onfy"
+  },
+  {
+    "alias": "oolio-au"
+  },
+  {
+    "alias": "openprovider"
+  },
+  {
+    "alias": "openwebhq"
+  },
+  {
+    "alias": "openx"
+  },
+  {
+    "alias": "operantai"
+  },
+  {
+    "alias": "opswat"
+  },
+  {
+    "alias": "optableco"
+  },
+  {
+    "alias": "optimizely"
+  },
+  {
+    "alias": "oracle"
+  },
+  {
+    "alias": "otiv"
+  },
+  {
+    "alias": "outpost24"
+  },
+  {
+    "alias": "outreach-saas"
+  },
+  {
+    "alias": "overwolf.com"
+  },
+  {
+    "alias": "ovoenergy"
+  },
+  {
+    "alias": "oxla"
+  },
+  {
+    "alias": "paddle"
+  },
+  {
+    "alias": "padlet"
+  },
+  {
+    "alias": "paessler-gmbh"
+  },
+  {
+    "alias": "pagonxt"
+  },
+  {
+    "alias": "palantir-technologies"
+  },
+  {
+    "alias": "palo-alto-networks"
+  },
+  {
+    "alias": "paltafamily"
+  },
+  {
+    "alias": "panasonic"
+  },
+  {
+    "alias": "parachute-health"
+  },
+  {
+    "alias": "parshipmeet"
+  },
+  {
+    "alias": "pavenow"
+  },
+  {
+    "alias": "pay-retailers"
+  },
+  {
+    "alias": "paynearme"
+  },
+  {
+    "alias": "paypal"
+  },
+  {
+    "alias": "payrails"
+  },
+  {
+    "alias": "pdf-solutions"
+  },
+  {
+    "alias": "pdq-com"
+  },
+  {
+    "alias": "peak"
+  },
+  {
+    "alias": "peek-com"
+  },
+  {
+    "alias": "peerspace"
+  },
+  {
+    "alias": "percona"
+  },
+  {
+    "alias": "pexip"
+  },
+  {
+    "alias": "photoroom"
+  },
+  {
+    "alias": "phraseplatform"
+  },
+  {
+    "alias": "pi-square-technology"
+  },
+  {
+    "alias": "pindrop"
+  },
+  {
+    "alias": "pinecone-io"
+  },
+  {
+    "alias": "pinterest"
+  },
+  {
+    "alias": "pitchhq"
+  },
+  {
+    "alias": "pixellotltd"
+  },
+  {
+    "alias": "plaid-"
+  },
+  {
+    "alias": "plentyone-ecommerce"
+  },
+  {
+    "alias": "pola-rs"
+  },
+  {
+    "alias": "poppi-technologies"
+  },
+  {
+    "alias": "postscriptio"
+  },
+  {
+    "alias": "power-factors-inc"
+  },
+  {
+    "alias": "praxent"
+  },
+  {
+    "alias": "preciselydata"
+  },
+  {
+    "alias": "press-ganey-associates"
+  },
+  {
+    "alias": "prezi"
+  },
+  {
+    "alias": "priceline-com"
+  },
+  {
+    "alias": "prima-assicurazioni"
+  },
+  {
+    "alias": "prima-group-housing"
+  },
+  {
+    "alias": "prioritysoftware"
+  },
+  {
+    "alias": "prisma-io"
+  },
+  {
+    "alias": "prize-picks"
+  },
+  {
+    "alias": "pro-football-focus"
+  },
+  {
+    "alias": "promon-as"
+  },
+  {
+    "alias": "proofpoint"
+  },
+  {
+    "alias": "prosapient"
+  },
+  {
+    "alias": "prospect-33"
+  },
+  {
+    "alias": "prosusgroup"
+  },
+  {
+    "alias": "protonprivacy"
+  },
+  {
+    "alias": "proxidize"
+  },
+  {
+    "alias": "pubmatic"
+  },
+  {
+    "alias": "pulsepoint"
+  },
+  {
+    "alias": "purestorage"
+  },
+  {
+    "alias": "qad"
+  },
+  {
+    "alias": "qdrant"
+  },
+  {
+    "alias": "qlik"
+  },
+  {
+    "alias": "qnx"
+  },
+  {
+    "alias": "qohash"
+  },
+  {
+    "alias": "qonto"
+  },
+  {
+    "alias": "quadcodecareer"
+  },
+  {
+    "alias": "qualcomm"
+  },
+  {
+    "alias": "quantexa"
+  },
+  {
+    "alias": "quantum-systems-gmbh"
+  },
+  {
+    "alias": "quizlet"
+  },
+  {
+    "alias": "qumulo"
+  },
+  {
+    "alias": "qumuluscloudplatform"
+  },
+  {
+    "alias": "qustodio"
+  },
+  {
+    "alias": "r-systems"
+  },
+  {
+    "alias": "r2p-group"
+  },
+  {
+    "alias": "rabbet"
+  },
+  {
+    "alias": "railsrglobal"
+  },
+  {
+    "alias": "rakuten"
+  },
+  {
+    "alias": "rakuten-symphony"
+  },
+  {
+    "alias": "rakuten-viber"
+  },
+  {
+    "alias": "ramp"
+  },
+  {
+    "alias": "rapid7"
+  },
+  {
+    "alias": "rbc"
+  },
+  {
+    "alias": "readdle"
+  },
+  {
+    "alias": "readytotouch"
+  },
+  {
+    "alias": "recurly"
+  },
+  {
+    "alias": "red-hat"
+  },
+  {
+    "alias": "reddit-com"
+  },
+  {
+    "alias": "redisinc"
+  },
+  {
+    "alias": "redpanda-data"
+  },
+  {
+    "alias": "remarkable-as"
+  },
+  {
+    "alias": "remitly"
+  },
+  {
+    "alias": "remote.com"
+  },
+  {
+    "alias": "reward-gateway"
+  },
+  {
+    "alias": "rewards-network"
+  },
+  {
+    "alias": "rhebo"
+  },
+  {
+    "alias": "rialtic-io"
+  },
+  {
+    "alias": "ringcentral"
+  },
+  {
+    "alias": "riot-games"
+  },
+  {
+    "alias": "riskified"
+  },
+  {
+    "alias": "rivian-and-vw-group-technologies"
+  },
+  {
+    "alias": "riza-inc"
+  },
+  {
+    "alias": "rocket-lab-limited"
+  },
+  {
+    "alias": "rockstar-games"
+  },
+  {
+    "alias": "rockwell-automation"
+  },
+  {
+    "alias": "rollee"
+  },
+  {
+    "alias": "rundoo"
+  },
+  {
+    "alias": "runzero"
+  },
+  {
+    "alias": "rxbenefits-inc-"
+  },
+  {
+    "alias": "ryanair"
+  },
+  {
+    "alias": "saberapp"
+  },
+  {
+    "alias": "sailpoint-technologies"
+  },
+  {
+    "alias": "sainsburys"
+  },
+  {
+    "alias": "salesforgeai"
+  },
+  {
+    "alias": "salesloft"
+  },
+  {
+    "alias": "sambindonesia"
+  },
+  {
+    "alias": "samsung-electronics"
+  },
+  {
+    "alias": "samsungfoodofficial"
+  },
+  {
+    "alias": "sap"
+  },
+  {
+    "alias": "sas"
+  },
+  {
+    "alias": "sawitpro"
+  },
+  {
+    "alias": "saxonai"
+  },
+  {
+    "alias": "scaleops-sh"
+  },
+  {
+    "alias": "scaleway"
+  },
+  {
+    "alias": "scanbo"
+  },
+  {
+    "alias": "scania"
+  },
+  {
+    "alias": "scitecinc"
+  },
+  {
+    "alias": "scope3data"
+  },
+  {
+    "alias": "scorebuddy"
+  },
+  {
+    "alias": "scylladb"
+  },
+  {
+    "alias": "second-spectrum"
+  },
+  {
+    "alias": "seedtag"
+  },
+  {
+    "alias": "selby-jennings"
+  },
+  {
+    "alias": "seldon"
+  },
+  {
+    "alias": "semrush"
+  },
+  {
+    "alias": "sendle"
+  },
+  {
+    "alias": "sentinelone"
+  },
+  {
+    "alias": "shopee"
+  },
+  {
+    "alias": "shopware-ag"
+  },
+  {
+    "alias": "shuttle-yc"
+  },
+  {
+    "alias": "siemens"
+  },
+  {
+    "alias": "simacanbv"
+  },
+  {
+    "alias": "simpli.fi"
+  },
+  {
+    "alias": "simulmedia"
+  },
+  {
+    "alias": "sinch"
+  },
+  {
+    "alias": "singlestore"
+  },
+  {
+    "alias": "sixt"
+  },
+  {
+    "alias": "skidos-games"
+  },
+  {
+    "alias": "skyroph"
+  },
+  {
+    "alias": "skyworks-solutions-inc"
+  },
+  {
+    "alias": "sleeperhq"
+  },
+  {
+    "alias": "smartrentdotcom"
+  },
+  {
+    "alias": "smava"
+  },
+  {
+    "alias": "smc"
+  },
+  {
+    "alias": "smg-marketplace"
+  },
+  {
+    "alias": "smithrx"
+  },
+  {
+    "alias": "snap-inc-co"
+  },
+  {
+    "alias": "snyk"
+  },
+  {
+    "alias": "social-discovery-group"
+  },
+  {
+    "alias": "softdrivecloud"
+  },
+  {
+    "alias": "solariscompany"
+  },
+  {
+    "alias": "solo.io"
+  },
+  {
+    "alias": "sonatus"
+  },
+  {
+    "alias": "sonicwall"
+  },
+  {
+    "alias": "sony-interactive-entertainment-llc"
+  },
+  {
+    "alias": "sophos"
+  },
+  {
+    "alias": "soundcloud"
+  },
+  {
+    "alias": "sourcegraph"
+  },
+  {
+    "alias": "spe-solution"
+  },
+  {
+    "alias": "spice-ai"
+  },
+  {
+    "alias": "splash-damage"
+  },
+  {
+    "alias": "splunk"
+  },
+  {
+    "alias": "sportradar"
+  },
+  {
+    "alias": "spotify"
+  },
+  {
+    "alias": "spreedly"
+  },
+  {
+    "alias": "squarepoint-capital"
+  },
+  {
+    "alias": "squarespace"
+  },
+  {
+    "alias": "st-jude-childrens-research-hospital"
+  },
+  {
+    "alias": "stack-x-me"
+  },
+  {
+    "alias": "stacklok"
+  },
+  {
+    "alias": "stairwell-inc"
+  },
+  {
+    "alias": "stan-entertainment"
+  },
+  {
+    "alias": "starhub"
+  },
+  {
+    "alias": "stark-defence"
+  },
+  {
+    "alias": "starlingbank"
+  },
+  {
+    "alias": "starshiptechnologies"
+  },
+  {
+    "alias": "stationf"
+  },
+  {
+    "alias": "statista"
+  },
+  {
+    "alias": "stemsmusic"
+  },
+  {
+    "alias": "stockbit"
+  },
+  {
+    "alias": "stoke-space"
+  },
+  {
+    "alias": "stonebranch"
+  },
+  {
+    "alias": "storage-rentals-america"
+  },
+  {
+    "alias": "stord"
+  },
+  {
+    "alias": "strangebee"
+  },
+  {
+    "alias": "stratascale-llc"
+  },
+  {
+    "alias": "stripe"
+  },
+  {
+    "alias": "strongcompute"
+  },
+  {
+    "alias": "strongdm"
+  },
+  {
+    "alias": "stylitics"
+  },
+  {
+    "alias": "submer"
+  },
+  {
+    "alias": "sumup"
+  },
+  {
+    "alias": "sunasterisk"
+  },
+  {
+    "alias": "superindo"
+  },
+  {
+    "alias": "surfly"
+  },
+  {
+    "alias": "surrealdb"
+  },
+  {
+    "alias": "suse"
+  },
+  {
+    "alias": "svix"
+  },
+  {
+    "alias": "swish-analytics"
+  },
+  {
+    "alias": "swiss-life-asset-management"
+  },
+  {
+    "alias": "swiss-post"
+  },
+  {
+    "alias": "symphonyai"
+  },
+  {
+    "alias": "synitidata"
+  },
+  {
+    "alias": "synopsys"
+  },
+  {
+    "alias": "synthflowai"
+  },
+  {
+    "alias": "sysdig"
+  },
+  {
+    "alias": "sytac"
+  },
+  {
+    "alias": "t-mobile"
+  },
+  {
+    "alias": "tabbypay"
+  },
+  {
+    "alias": "tabtechnology"
+  },
+  {
+    "alias": "tailscale"
+  },
+  {
+    "alias": "takealot"
+  },
+  {
+    "alias": "talamobile"
+  },
+  {
+    "alias": "talon.one"
+  },
+  {
+    "alias": "taxfix"
+  },
+  {
+    "alias": "td"
+  },
+  {
+    "alias": "teachable"
+  },
+  {
+    "alias": "teaching-strategies-llc"
+  },
+  {
+    "alias": "teamwork-com"
+  },
+  {
+    "alias": "telekom"
+  },
+  {
+    "alias": "telestream"
+  },
+  {
+    "alias": "teller-inc"
+  },
+  {
+    "alias": "telnyx"
+  },
+  {
+    "alias": "tenableinc"
+  },
+  {
+    "alias": "tensorzero"
+  },
+  {
+    "alias": "tenstorrent-inc."
+  },
+  {
+    "alias": "teradata"
+  },
+  {
+    "alias": "teramindco"
+  },
+  {
+    "alias": "tesla-motors"
+  },
+  {
+    "alias": "teya-global"
+  },
+  {
+    "alias": "thatgamecompany"
+  },
+  {
+    "alias": "the-odp-corporation"
+  },
+  {
+    "alias": "the-realreal"
+  },
+  {
+    "alias": "the-walt-disney-company"
+  },
+  {
+    "alias": "thefalconx"
+  },
+  {
+    "alias": "thenu"
+  },
+  {
+    "alias": "theopentag"
+  },
+  {
+    "alias": "thought-machine"
+  },
+  {
+    "alias": "thousandeyes"
+  },
+  {
+    "alias": "threatconnect-inc"
+  },
+  {
+    "alias": "thryve-earth"
+  },
+  {
+    "alias": "tiiuae"
+  },
+  {
+    "alias": "tikoafrica"
+  },
+  {
+    "alias": "tiledb-inc"
+  },
+  {
+    "alias": "timescaledb"
+  },
+  {
+    "alias": "togethercomputer"
+  },
+  {
+    "alias": "toggle-ai"
+  },
+  {
+    "alias": "tomtom"
+  },
+  {
+    "alias": "top-doctors-europe"
+  },
+  {
+    "alias": "topgolf"
+  },
+  {
+    "alias": "toyota-north-america"
+  },
+  {
+    "alias": "track24"
+  },
+  {
+    "alias": "tradevestgmbh"
+  },
+  {
+    "alias": "transition-technologies-psc"
+  },
+  {
+    "alias": "treecardapp"
+  },
+  {
+    "alias": "trend-micro"
+  },
+  {
+    "alias": "true-anomaly"
+  },
+  {
+    "alias": "truely"
+  },
+  {
+    "alias": "trustingsocial"
+  },
+  {
+    "alias": "tubi-tv"
+  },
+  {
+    "alias": "tubia"
+  },
+  {
+    "alias": "tucows"
+  },
+  {
+    "alias": "twitch-tv"
+  },
+  {
+    "alias": "twosixtechnologies"
+  },
+  {
+    "alias": "tyk"
+  },
+  {
+    "alias": "uber-com"
+  },
+  {
+    "alias": "ubiquiti-"
+  },
+  {
+    "alias": "ubisoft"
+  },
+  {
+    "alias": "ubs"
+  },
+  {
+    "alias": "udelta"
+  },
+  {
+    "alias": "umbraspace"
+  },
+  {
+    "alias": "unity"
+  },
+  {
+    "alias": "university-of-virginia"
+  },
+  {
+    "alias": "unlimit-com"
+  },
+  {
+    "alias": "unnax-emi"
+  },
+  {
+    "alias": "unzer"
+  },
+  {
+    "alias": "upvest"
+  },
+  {
+    "alias": "us-bank"
+  },
+  {
+    "alias": "usehatchapp"
+  },
+  {
+    "alias": "utilitywarehouse"
+  },
+  {
+    "alias": "valsoft-corporation"
+  },
+  {
+    "alias": "varonis"
+  },
+  {
+    "alias": "vaytechnology"
+  },
+  {
+    "alias": "veact"
+  },
+  {
+    "alias": "vectoratomic"
+  },
+  {
+    "alias": "veeva-systems"
+  },
+  {
+    "alias": "velmie"
+  },
+  {
+    "alias": "veracitysoftwareinc"
+  },
+  {
+    "alias": "vercel"
+  },
+  {
+    "alias": "verkada"
+  },
+  {
+    "alias": "versus-gaming-network"
+  },
+  {
+    "alias": "verve-ad-solutions"
+  },
+  {
+    "alias": "vestiaireco"
+  },
+  {
+    "alias": "viasat"
+  },
+  {
+    "alias": "victoriametrics"
+  },
+  {
+    "alias": "videoamp"
+  },
+  {
+    "alias": "vidsy"
+  },
+  {
+    "alias": "vinted"
+  },
+  {
+    "alias": "viodotcom"
+  },
+  {
+    "alias": "visa"
+  },
+  {
+    "alias": "vitalbio"
+  },
+  {
+    "alias": "vividmoney"
+  },
+  {
+    "alias": "vodeno"
+  },
+  {
+    "alias": "vois"
+  },
+  {
+    "alias": "volka"
+  },
+  {
+    "alias": "volkswagen-digital-solutions"
+  },
+  {
+    "alias": "voltus-inc."
+  },
+  {
+    "alias": "vonage"
+  },
+  {
+    "alias": "voodoo.io"
+  },
+  {
+    "alias": "vustheenglishcenter"
+  },
+  {
+    "alias": "wallee-group"
+  },
+  {
+    "alias": "walmart"
+  },
+  {
+    "alias": "walmartdataventures"
+  },
+  {
+    "alias": "wargaming-net"
+  },
+  {
+    "alias": "warner-bros-discovery"
+  },
+  {
+    "alias": "wasmerio"
+  },
+  {
+    "alias": "waystar"
+  },
+  {
+    "alias": "we-are-fyst"
+  },
+  {
+    "alias": "we-are-venatus"
+  },
+  {
+    "alias": "wearegcash"
+  },
+  {
+    "alias": "wearemntn"
+  },
+  {
+    "alias": "wearevisionai"
+  },
+  {
+    "alias": "weaviate-io"
+  },
+  {
+    "alias": "weedmaps"
+  },
+  {
+    "alias": "wellrewarded"
+  },
+  {
+    "alias": "wexinc"
+  },
+  {
+    "alias": "whaleboneio"
+  },
+  {
+    "alias": "whatnot-inc"
+  },
+  {
+    "alias": "windmill-dev"
+  },
+  {
+    "alias": "wiseaccount"
+  },
+  {
+    "alias": "wisehome"
+  },
+  {
+    "alias": "wolt-oy"
+  },
+  {
+    "alias": "wonderschool"
+  },
+  {
+    "alias": "woolsocks"
+  },
+  {
+    "alias": "workato"
+  },
+  {
+    "alias": "worldlineglobal"
+  },
+  {
+    "alias": "worldpay"
+  },
+  {
+    "alias": "worldtechit"
+  },
+  {
+    "alias": "xataio"
+  },
+  {
+    "alias": "yalo"
+  },
+  {
+    "alias": "yassir"
+  },
+  {
+    "alias": "youthincsports"
+  },
+  {
+    "alias": "yum-brands"
+  },
+  {
+    "alias": "yunopay"
+  },
+  {
+    "alias": "zalando"
+  },
+  {
+    "alias": "zalopay"
+  },
+  {
+    "alias": "zama-ai"
+  },
+  {
+    "alias": "zelis"
+  },
+  {
+    "alias": "zeller"
+  },
+  {
+    "alias": "zendesk"
+  },
+  {
+    "alias": "zenport"
+  },
+  {
+    "alias": "zep-ai"
+  },
+  {
+    "alias": "zeptolab"
+  },
+  {
+    "alias": "zillow"
+  },
+  {
+    "alias": "zoom"
+  },
+  {
+    "alias": "zscaler"
+  },
+  {
+    "alias": "zubale"
+  },
+  {
+    "alias": "zurich-instruments-ag"
+  }
+]
