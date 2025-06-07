@@ -233,20 +233,20 @@ func main() {
 	r.GET("/organizers/haskell/communities", organizerController.TODO)
 	r.GET("/organizers/v/:vacancy_id", organizerController.VacancyRedirect)
 
-	r.GET("/organizers/golang", found("/organizers/golang/companies"))
-	r.GET("/organizers/rust", found("/organizers/rust/companies"))
-	r.GET("/organizers/zig", found("/organizers/zig/companies"))
-	r.GET("/organizers/scala", found("/organizers/scala/companies"))
-	r.GET("/organizers/elixir", found("/organizers/elixir/companies"))
-	r.GET("/organizers/clojure", found("/organizers/clojure/companies"))
-	r.GET("/organizers/haskell", found("/organizers/haskell/companies"))
+	r.GET("/organizers/golang", found("/organizers/golang/companies", true))
+	r.GET("/organizers/rust", found("/organizers/rust/companies", true))
+	r.GET("/organizers/zig", found("/organizers/zig/companies", true))
+	r.GET("/organizers/scala", found("/organizers/scala/companies", true))
+	r.GET("/organizers/elixir", found("/organizers/elixir/companies", true))
+	r.GET("/organizers/clojure", found("/organizers/clojure/companies", true))
+	r.GET("/organizers/haskell", found("/organizers/haskell/companies", true))
 
-	r.GET("/organizers/golang/vacancies", found("/organizers/golang/jobs"))
-	r.GET("/organizers/rust/vacancies", found("/organizers/rust/jobs"))
-	r.GET("/organizers/zig/vacancies", found("/organizers/zig/jobs"))
-	r.GET("/organizers/scala/vacancies", found("/organizers/scala/jobs"))
-	r.GET("/organizers/elixir/vacancies", found("/organizers/elixir/jobs"))
-	r.GET("/organizers/clojure/vacancies", found("/organizers/clojure/jobs"))
+	r.GET("/organizers/golang/vacancies", found("/organizers/golang/jobs", true))
+	r.GET("/organizers/rust/vacancies", found("/organizers/rust/jobs", true))
+	r.GET("/organizers/zig/vacancies", found("/organizers/zig/jobs", true))
+	r.GET("/organizers/scala/vacancies", found("/organizers/scala/jobs", true))
+	r.GET("/organizers/elixir/vacancies", found("/organizers/elixir/jobs", true))
+	r.GET("/organizers/clojure/vacancies", found("/organizers/clojure/jobs", true))
 
 	/*
 		Will be removed in the future.
@@ -278,13 +278,13 @@ func main() {
 
 	r.
 		// WIP
-		GET("/companies-and-connections", found("/companies-and-connections/worldwide")).
+		GET("/companies-and-connections", found("/companies-and-connections/worldwide", true)).
 		GET("/companies-and-connections/worldwide", cacController.Worldwide).
 		GET("/companies-and-connections/ukraine", cacController.Ukraine).
 		GET("/companies-and-connections/brazil", cacController.Brazil).
-		GET("/wip/companies-and-connections", found("/companies-and-connections/worldwide")).
-		GET("/wip/companies-and-connections/ukraine", found("/companies-and-connections/ukraine")).
-		GET("/wip/companies-and-connections/brazil", found("/companies-and-connections/brazil")).
+		GET("/wip/companies-and-connections", found("/companies-and-connections/worldwide", true)).
+		GET("/wip/companies-and-connections/ukraine", found("/companies-and-connections/ukraine", true)).
+		GET("/wip/companies-and-connections/brazil", found("/companies-and-connections/brazil", true)).
 		GET("/api/v1/companies-and-connections/companies.json", cacController.Companies).
 		POST("/api/v1/companies-and-connections/companies.json", cacController.AddCompany).
 		DELETE("/api/v1/companies-and-connections/companies.json", cacController.DeleteCompany)
@@ -294,9 +294,9 @@ func main() {
 		GET("/api/v1/unsafe/companies.json", organizerController.UnsafeCompanies).
 		GET("/api/v1/unsafe/vacancies.json", organizerController.UnsafeVacancies)
 
-	r.GET("/analytics", found("https://plausible.io/readytotouch.com"))
-	r.GET("/plausible", found("https://plausible.io/readytotouch.com"))
-	r.GET("/similarweb", found("https://www.similarweb.com/website/readytotouch.com/"))
+	r.GET("/analytics", found("https://plausible.io/readytotouch.com", false))
+	r.GET("/plausible", found("https://plausible.io/readytotouch.com", false))
+	r.GET("/similarweb", found("https://www.similarweb.com/website/readytotouch.com/", false))
 
 	r.
 		StaticFile("/design", "./public/design/online-new.html").
@@ -429,9 +429,13 @@ func redirectFromWWW() gin.HandlerFunc {
 	}
 }
 
-func found(path string) gin.HandlerFunc {
+func found(path string, keepQueryParams bool) gin.HandlerFunc {
 	return func(c *gin.Context) {
-		c.Redirect(http.StatusFound, path)
+		if keepQueryParams && c.Request.URL.RawQuery != "" {
+			c.Redirect(http.StatusFound, path+"?"+c.Request.URL.RawQuery)
+		} else {
+			c.Redirect(http.StatusFound, path)
+		}
 	}
 }
 
