@@ -4,7 +4,7 @@ import (
 	"bufio"
 	"encoding/json"
 	"fmt"
-	resize "github.com/readytotouch/readytotouch/internal/logo-resize"
+	"go/format"
 	"os"
 	"path/filepath"
 	"slices"
@@ -13,7 +13,9 @@ import (
 
 	"github.com/readytotouch/readytotouch/internal/domain"
 	"github.com/readytotouch/readytotouch/internal/generated/organizers"
+	resize "github.com/readytotouch/readytotouch/internal/logo-resize"
 	"github.com/readytotouch/readytotouch/internal/organizer/db"
+	"github.com/readytotouch/readytotouch/internal/templates/dev"
 )
 
 const (
@@ -108,6 +110,28 @@ func syncLogos(companies []domain.CompanyProfile) {
 	})
 
 	assertStoreLogos(logos)
+
+	generateLogos(logos)
+}
+
+func generateLogos(logos []Logo) {
+	aliasImagePairs := make([]*dev.CompanyLogoPair, len(logos))
+	for i, logo := range logos {
+		aliasImagePairs[i] = &dev.CompanyLogoPair{
+			Alias: logo.Alias,
+			Logo:  logo.Destination,
+		}
+	}
+
+	output, err := format.Source([]byte(dev.CompanyLogo(aliasImagePairs, 2)))
+	if err != nil {
+		panic(err)
+	}
+
+	err = os.WriteFile("./internal/generated/organizers/company_logo_v2.go", output, 0644)
+	if err != nil {
+		panic(err)
+	}
 }
 
 func assertFetchLogos() []Logo {

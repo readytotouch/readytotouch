@@ -616,8 +616,8 @@
   },
   {
     "alias": "canonical",
-    "source": "",
-    "destination": ""
+    "source": "canonical-180x180.png",
+    "destination": "canonical.png"
   },
   {
     "alias": "canva",
