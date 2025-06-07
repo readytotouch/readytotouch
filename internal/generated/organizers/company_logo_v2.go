@@ -617,7 +617,7 @@ var (
 		"pavenow":                             "",
 		"pay-retailers":                       "",
 		"paynearme":                           "",
-		"paypal":                              "",
+		"paypal":                              "paypal.png",
 		"payrails":                            "",
 		"pdf-solutions":                       "",
 		"pdq-com":                             "",

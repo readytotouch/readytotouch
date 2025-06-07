@@ -3066,8 +3066,8 @@
   },
   {
     "alias": "paypal",
-    "source": "",
-    "destination": ""
+    "source": "paypal-196x196.png",
+    "destination": "paypal.png"
   },
   {
     "alias": "payrails",
