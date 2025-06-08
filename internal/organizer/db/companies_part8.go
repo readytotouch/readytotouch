@@ -3424,7 +3424,20 @@ func companiesPart8() []domain.CompanyProfile {
 				Alias: "",
 			},
 			Languages: domain.Languages{
-				domain.Go: {},
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Staff Engineer, Rust/Go",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4244761356/",
+							Date:                 mustDate("2025-06-08"),
+							WithSalary:           true,
+							Remote:               true,
+						},
+					},
+				},
 				domain.Rust: {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
@@ -3453,6 +3466,15 @@ func companiesPart8() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4213608440/",
 							Date:                 mustDate("2025-05-15"), //  mustDate("2025-04-22"),
 							WithSalary:           false,
+							Remote:               true,
+						},
+						{
+							Title:                "Staff Engineer, Rust/Go",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4244761356/",
+							Date:                 mustDate("2025-06-08"),
+							WithSalary:           true,
 							Remote:               true,
 						},
 					},
@@ -7518,7 +7540,20 @@ func companiesPart8() []domain.CompanyProfile {
 						},
 					},
 				},
-				domain.Rust:    {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer (RUST/Python)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4231780612/",
+							Date:                 mustDate("2025-06-08"),
+							WithSalary:           true,
+							Remote:               false,
+						},
+					},
+				},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},
