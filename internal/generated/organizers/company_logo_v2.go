@@ -686,7 +686,7 @@ var (
 		"rapid7":                              "",
 		"rbc":                                 "",
 		"readdle":                             "",
-		"readytotouch":                        "",
+		"readytotouch":                        "readytotouch.png",
 		"recurly":                             "",
 		"red-hat":                             "",
 		"reddit-com":                          "",
