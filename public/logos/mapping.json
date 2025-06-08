@@ -3411,8 +3411,8 @@
   },
   {
     "alias": "readytotouch",
-    "source": "",
-    "destination": ""
+    "source": "readytotouch-192x192.png",
+    "destination": "readytotouch.png"
   },
   {
     "alias": "recurly",
