@@ -235,6 +235,10 @@ func isIndeedVacancyURL(s string) bool {
 }
 
 func logo(l domain.CompanyLogo) string {
+	if l.V2 != "" {
+		return "/assets/unstable/logos/112x56/" + l.V2
+	}
+
 	if l.V1 != "" {
 		return "/assets/unstable/logos-v1/" + l.V1
 	}
@@ -249,6 +253,14 @@ func logo(l domain.CompanyLogo) string {
 func logoV1(l domain.CompanyLogo) string {
 	if l.V1 != "" {
 		return "/assets/unstable/logos-v1/" + l.V1
+	}
+
+	return "/assets/images/pages/common-images/unknown.svg"
+}
+
+func logoV2(l domain.CompanyLogo) string {
+	if l.V2 != "" {
+		return "/assets/unstable/logos/112x56/" + l.V2
 	}
 
 	return "/assets/images/pages/common-images/unknown.svg"
