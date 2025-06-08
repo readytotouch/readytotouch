@@ -228,5 +228,21 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "CDW",
+			Website: "https://www.cdw.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3334,
+				IDs:               []int{3334, 10951, 3646541, 10599950, 13250389, 15264947, 15911608},
+				Alias:             "cdw",
+				Name:              "CDW",
+				Followers:         "317K",
+				Employees:         "10K+",
+				AssociatedMembers: "17,976",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }
