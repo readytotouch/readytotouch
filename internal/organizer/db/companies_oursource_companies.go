@@ -196,5 +196,37 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Programmers.io",
+			Website: "https://programmers.io/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                13714336,
+				IDs:               nil,
+				Alias:             "programmers-io",
+				Name:              "Programmers.io",
+				Followers:         "538K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "1,155",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "ValueLabs",
+			Website: "https://www.valuelabs.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                13489,
+				IDs:               nil,
+				Alias:             "valuelabs",
+				Name:              "ValueLabs",
+				Followers:         "1M",
+				Employees:         "5K-10K",
+				AssociatedMembers: "8,506",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }
