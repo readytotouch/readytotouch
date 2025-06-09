@@ -706,6 +706,7 @@ var (
 		"https://www.linkedin.com/jobs/view/3969153699/":                                                               492,  // oneschema
 		"https://www.linkedin.com/jobs/view/3978025966/":                                                               493,  // strongdm
 		"https://www.linkedin.com/jobs/view/4048251309/":                                                               494,  // jmawireless
+		"https://www.linkedin.com/jobs/view/4231566483/":                                                               2028, // jmawireless
 		"https://www.linkedin.com/jobs/view/3513136315/":                                                               495,  // on2it-cybersecurity
 		"https://www.linkedin.com/jobs/view/4203261377/":                                                               1455, // on2it-cybersecurity
 		"https://www.linkedin.com/jobs/view/4075626268/":                                                               34,   // cycloid
@@ -2031,6 +2032,11 @@ var (
 		"https://www.linkedin.com/jobs/view/4229352263/":                                                               2025, // healthequity
 		"https://www.linkedin.com/jobs/view/4242927462/":                                                               2026, // foodpanda
 		"https://www.linkedin.com/jobs/view/4215964620/":                                                               2027, // opendoor-com
+		"https://www.linkedin.com/jobs/view/4145729615/":                                                               2029, // superannotate
+		"https://www.linkedin.com/jobs/view/4189936616/":                                                               2030, // snowplow
+		"https://www.linkedin.com/jobs/view/4245525591/":                                                               2031, // monumentalco
+		"https://www.linkedin.com/jobs/view/4226876078/":                                                               2032, // sides-dach
+		"https://www.linkedin.com/jobs/view/4230962545/":                                                               2033, // useinsider
 
 	}
 )

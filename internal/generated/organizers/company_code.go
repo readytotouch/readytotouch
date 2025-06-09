@@ -985,6 +985,11 @@ var (
 		"healthequity":                        983, // HealthEquity
 		"foodpanda":                           984, // foodpanda
 		"opendoor-com":                        985, // Opendoor
+		"superannotate":                       986, // SuperAnnotate
+		"snowplow":                            987, // Snowplow
+		"monumentalco":                        988, // Monumental
+		"sides-dach":                          989, // SIDES
+		"useinsider":                          990, // Insider.
 
 	}
 )
