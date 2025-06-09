@@ -244,5 +244,21 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Lumenalta",
+			Website: "https://lumenalta.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                719642,
+				IDs:               nil,
+				Alias:             "lumenalta",
+				Name:              "Lumenalta",
+				Followers:         "126K",
+				Employees:         "501-1K",
+				AssociatedMembers: "560",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }

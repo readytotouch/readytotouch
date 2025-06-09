@@ -679,5 +679,20 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Recruiting agency
 		},
+		{
+			Name:    "Oliver James",
+			Website: "https://www.oliverjames.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                212201,
+				IDs:               nil,
+				Alias:             "oliver-james-",
+				Name:              "Oliver James",
+				Followers:         "133K",
+				Employees:         "501-1K",
+				AssociatedMembers: "875",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
 	}
 }

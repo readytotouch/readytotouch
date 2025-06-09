@@ -521,7 +521,7 @@ func companiesPart12() []domain.CompanyProfile {
 							ShortDescription:     "6+ years of development experience",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4195065700/",
-							Date:                 mustDate("2025-04-24"), // mustDate("2025-04-02"),
+							Date:                 mustDate("2025-06-06"), // mustDate("2025-04-24"), // mustDate("2025-04-02"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -4377,6 +4377,15 @@ func companiesPart12() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4211003389/",
 							Date:                 mustDate("2025-04-16"),
 							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Software Engineer (Ruby / Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4244807687/",
+							Date:                 mustDate("2025-06-05"),
+							WithSalary:           true,
 							Remote:               false,
 						},
 					},
@@ -13627,6 +13636,250 @@ func companiesPart12() []domain.CompanyProfile {
 			ShortDescription: "Florida Blue is a subsidiary of a not-for-profit health solutions company dedicated to serving all Floridians in the pursuit of health",
 			Industries: []domain.Industry{
 				domain.IndustryInsurTech,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "GreyOrange",
+			Website: "https://www.greyorange.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3195463,
+				IDs:               nil,
+				Alias:             "gogreyorange",
+				Name:              "GreyOrange",
+				Followers:         "205K",
+				Employees:         "501-1K",
+				AssociatedMembers: "971",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Staff Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4210733413/",
+							Date:                 mustDate("2025-06-08"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Warehouse orchestration and store inventory management software",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "HealthEquity",
+			Website: "https://www.healthequity.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                26087,
+				IDs:               nil,
+				Alias:             "healthequity",
+				Name:              "HealthEquity",
+				Followers:         "43K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "2,299",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Golang Software Engineer",
+							ShortDescription:     "Cybersecurity",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4229352263/",
+							Date:                 mustDate("2025-06-05"),
+							WithSalary:           true,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "HealthEquity is a administrator of Health Savings Accounts (HSAs) and other consumer-directed benefits—FSA, HRA, COBRA, and Commuter",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "https://www.foodpanda.com/",
+			Website: "https://careers.foodpanda.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2569398,
+				IDs:               nil,
+				Alias:             "foodpanda",
+				Name:              "foodpanda",
+				Followers:         "472K",
+				Employees:         "5K-10K",
+				AssociatedMembers: "15,612",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Backend Engineer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4242927462/",
+							Date:                 mustDate("2025-06-06"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Delivery platform",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Opendoor",
+			Website: "https://www.opendoor.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                9398436,
+				IDs:               nil,
+				Alias:             "opendoor-com",
+				Name:              "Opendoor",
+				Followers:         "164K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "1,549",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer – Fullstack",
+							ShortDescription:     "TypesSript, React, Golang, SQL",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4215964620/",
+							Date:                 mustDate("2025-06-07"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "",
+			Industries: []domain.Industry{
+				domain.IndustryPropTech,
 			},
 		},
 
