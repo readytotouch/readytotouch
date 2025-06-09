@@ -977,6 +977,14 @@ var (
 		"thefalconx":                          975, // FalconX
 		"mythical":                            976, // Mythical Games
 		"paypal":                              977, // PayPal
+		"trainline":                           978, // Trainline
+		"samba-ai":                            979, // Samba.ai
+		"bankaktiebolaget-nordiska":           980, // Nordiska
+		"florida-blue":                        981, // Florida Blue
+		"gogreyorange":                        982, // GreyOrange
+		"healthequity":                        983, // HealthEquity
+		"foodpanda":                           984, // foodpanda
+		"opendoor-com":                        985, // Opendoor
 
 	}
 )
