@@ -260,5 +260,37 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Dualboot Partners",
+			Website: "https://dualbootpartners.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                28138288,
+				IDs:               nil,
+				Alias:             "dualbootpartners",
+				Name:              "Dualboot Partners",
+				Followers:         "13K",
+				Employees:         "201-500",
+				AssociatedMembers: "279",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "UKG",
+			Website: "https://www.ukg.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                67539665,
+				IDs:               nil,
+				Alias:             "ukg",
+				Name:              "UKG",
+				Followers:         "268K",
+				Employees:         "10K+",
+				AssociatedMembers: "15,144",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }

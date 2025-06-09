@@ -9541,7 +9541,7 @@ func companiesPart12() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4181595042/",
-							Date:                 mustDate("2025-05-19"), // mustDate("2025-04-26"),
+							Date:                 mustDate("2025-06-09"), // mustDate("2025-05-19"), // mustDate("2025-04-26"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -13882,6 +13882,359 @@ func companiesPart12() []domain.CompanyProfile {
 				domain.IndustryPropTech,
 			},
 		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "SuperAnnotate",
+			Website: "https://www.superannotate.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                18999422,
+				IDs:               nil,
+				Alias:             "superannotate",
+				Name:              "SuperAnnotate",
+				Followers:         "30K",
+				Employees:         "51-200",
+				AssociatedMembers: "",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Rust Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4145729615/",
+							Date:                 mustDate("2025-02-10"),
+							WithSalary:           true,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Platform for building, fine-tuning, iterating, and managing your AI models faster with the highest-quality training data",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Snowplow",
+			Website: "https://snowplow.io/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3177331,
+				IDs:               nil,
+				Alias:             "snowplow",
+				Name:              "Snowplow",
+				Followers:         "15K",
+				Employees:         "51-200",
+				AssociatedMembers: "162",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer",
+							ShortDescription:     "We are looking for a Senior Software Engineer with experience in Go development to join our Data Processing team",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4189936616/",
+							Date:                 mustDate("2025-04-10"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+				},
+			},
+			ShortDescription: "Customer data infrastructure for AI, enabling every organization to transform raw behavioral data into governed, high-fidelity fuel for AI-powered applications—including advanced analytics, real-time personalization engines, and AI agent",
+			Industries: []domain.Industry{
+				domain.IndustryDevOps,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Monumental",
+			Website: "https://www.monumental.co/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                74482238,
+				IDs:               nil,
+				Alias:             "monumentalco",
+				Name:              "Monumental",
+				Followers:         "6K",
+				Employees:         "11-50",
+				AssociatedMembers: "56",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer, Full Stack",
+							ShortDescription:     "Writing Rust and TypeScript code that controls the robot in real-time",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4245525591/",
+							Date:                 mustDate("2025-06-06"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+				},
+			},
+			ShortDescription: "Automating on-site construction with robotics and software",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "SIDES",
+			Website: "https://www.get-sides.de/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                10433986,
+				IDs:               nil,
+				Alias:             "sides-dach",
+				Name:              "SIDES",
+				Followers:         "3K",
+				Employees:         "51-200",
+				AssociatedMembers: "89",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4226876078/",
+							Date:                 mustDate("2025-05-20"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust: {
+					// NOP
+				},
+				domain.Zig: {
+					// NOP
+				},
+				domain.Scala: {
+					// NOP
+				},
+				domain.Elixir: {
+					// NOP
+				},
+				domain.Clojure: {
+					// NOP
+				},
+				domain.Haskell: {
+					// NOP
+				},
+			},
+			ShortDescription: "We have developed a cloud-based software package that is precisely tailored to the requirements of gastronomic delivery services",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Insider.",
+			Website: "https://useinsider.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2560882,
+				IDs:               []int{2560882, 41621219},
+				Alias:             "useinsider",
+				Name:              "Insider.",
+				Followers:         "127K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "1,425",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4230962545/",
+							Date:                 mustDate("2025-05-20"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust: {
+					// NOP
+				},
+				domain.Zig: {
+					// NOP
+				},
+				domain.Scala: {
+					// NOP
+				},
+				domain.Elixir: {
+					// NOP
+				},
+				domain.Clojure: {
+					// NOP
+				},
+				domain.Haskell: {
+					// NOP
+				},
+			},
+			ShortDescription: "Platform for individualized, cross-channel experiences—enables enterprise marketers to connect customer data across channels and systems, predict their future behavior with an AI intent engine and individualize customer experiences",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
 
 		// Template
 		//{
@@ -13932,12 +14285,24 @@ func companiesPart12() []domain.CompanyProfile {
 		//				},
 		//			},
 		//		},
-		//		domain.Rust:    {},
-		//		domain.Zig:     {},
-		//		domain.Scala:   {},
-		//		domain.Elixir:  {},
-		//		domain.Clojure: {},
-		//		domain.Haskell: {},
+		//		domain.Rust: {
+		//			// NOP
+		//		},
+		//		domain.Zig: {
+		//			// NOP
+		//		},
+		//		domain.Scala: {
+		//			// NOP
+		//		},
+		//		domain.Elixir: {
+		//			// NOP
+		//		},
+		//		domain.Clojure: {
+		//			// NOP
+		//		},
+		//		domain.Haskell: {
+		//			// NOP
+		//		},
 		//	},
 		//	ShortDescription: "",
 		//	Industries:       []domain.Industry{

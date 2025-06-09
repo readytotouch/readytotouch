@@ -694,5 +694,35 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Recruiting agency
 		},
+		{
+			Name:    "Concero",
+			Website: "https://concero.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2699082,
+				IDs:               nil,
+				Alias:             "get-concero",
+				Name:              "Concero",
+				Followers:         "118K",
+				Employees:         "51-200",
+				AssociatedMembers: "85",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "OFS",
+			Website: "https://weareofs.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                103150231,
+				IDs:               nil,
+				Alias:             "orbis-group-financial-services",
+				Name:              "OFS",
+				Followers:         "17K",
+				Employees:         "11-50",
+				AssociatedMembers: "11",
+				Verified:          false,
+			},
+			Ignore: true, // Recruiting agency
+		},
 	}
 }
