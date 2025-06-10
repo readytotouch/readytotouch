@@ -13666,8 +13666,9 @@ func companiesPart12() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "greyorange",
+				Followers: "80",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -13687,7 +13688,7 @@ func companiesPart12() []domain.CompanyProfile {
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Staff Software Engineer",
-							ShortDescription:     "",
+							ShortDescription:     "Preferably Java/Golang",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4210733413/",
 							Date:                 mustDate("2025-06-08"),
@@ -13696,12 +13697,17 @@ func companiesPart12() []domain.CompanyProfile {
 						},
 					},
 				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
+				domain.Rust:  {},
+				domain.Zig:   {},
+				domain.Scala: {},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 1,
+				},
 				domain.Clojure: {},
 				domain.Haskell: {},
+				domain.Erlang: {
+					GitHubRepositoriesCount: 29,
+				},
 			},
 			ShortDescription: "Warehouse orchestration and store inventory management software",
 			Industries:       []domain.Industry{
