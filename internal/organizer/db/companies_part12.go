@@ -14244,6 +14244,371 @@ func companiesPart12() []domain.CompanyProfile {
 				// NOP
 			},
 		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Lucanet",
+			Website: "https://www.lucanet.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1691101,
+				IDs:               nil,
+				Alias:             "lucanet-ag",
+				Name:              "Lucanet",
+				Followers:         "49K",
+				Employees:         "501-1K",
+				AssociatedMembers: "848",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Go Backend Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4245965954/",
+							Date:                 mustDate("2025-06-07"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust: {
+					// NOP
+				},
+				domain.Zig: {
+					// NOP
+				},
+				domain.Scala: {
+					// NOP
+				},
+				domain.Elixir: {
+					// NOP
+				},
+				domain.Clojure: {
+					// NOP
+				},
+				domain.Haskell: {
+					// NOP
+				},
+			},
+			ShortDescription: "Corporate Performance Management",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Uniphore",
+			Website: "https://www.uniphore.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1331150,
+				IDs:               nil,
+				Alias:             "uniphore",
+				Name:              "Uniphore",
+				Followers:         "70K",
+				Employees:         "501-1K",
+				AssociatedMembers: "861",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer (Java/Go+Looker)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4185030868/",
+							Date:                 mustDate("2025-06-09"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust: {
+					// NOP
+				},
+				domain.Zig: {
+					// NOP
+				},
+				domain.Scala: {
+					// NOP
+				},
+				domain.Elixir: {
+					// NOP
+				},
+				domain.Clojure: {
+					// NOP
+				},
+				domain.Haskell: {
+					// NOP
+				},
+			},
+			ShortDescription: "Our sovereign, composable, and secure AI platform connects enterprise data, fine-tunes AI models and deploys agentic AI across the enterprise",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "The Home Depot",
+			Website: "https://homedepot.com/",
+			Careers: "https://careers.homedepot.com/",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1534,
+				IDs:               []int{1534, 164209},
+				Alias:             "the-home-depot",
+				Name:              "The Home Depot",
+				Followers:         "961K",
+				Employees:         "10K+",
+				AssociatedMembers: "121,537",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Backend Software Engineer – Go",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4243288093/",
+							Date:                 mustDate("2025-06-09"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust: {
+					// NOP
+				},
+				domain.Zig: {
+					// NOP
+				},
+				domain.Scala: {
+					// NOP
+				},
+				domain.Elixir: {
+					// NOP
+				},
+				domain.Clojure: {
+					// NOP
+				},
+				domain.Haskell: {
+					// NOP
+				},
+			},
+			ShortDescription: "Home improvement specialty retailer",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Takt",
+			Website: "https://www.takt.io/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                74506126,
+				IDs:               nil,
+				Alias:             "takt-io",
+				Name:              "Takt",
+				Followers:         "2K",
+				Employees:         "11-50",
+				AssociatedMembers: "17",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Golang Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4247471344/",
+							Date:                 mustDate("2025-06-09"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust: {
+					// NOP
+				},
+				domain.Zig: {
+					// NOP
+				},
+				domain.Scala: {
+					// NOP
+				},
+				domain.Elixir: {
+					// NOP
+				},
+				domain.Clojure: {
+					// NOP
+				},
+				domain.Haskell: {
+					// NOP
+				},
+			},
+			ShortDescription: "Labor Management Systems",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Travelport",
+			Website: "https://www.travelport.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2124,
+				IDs:               nil,
+				Alias:             "travelport",
+				Name:              "Travelport",
+				Followers:         "219K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "3,769",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					// NOP
+				},
+				domain.Rust: {
+					// NOP
+				},
+				domain.Zig: {
+					// NOP
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Development Engineer Scala",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4247551737/",
+							Date:                 mustDate("2025-06-10"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Elixir: {
+					// NOP
+				},
+				domain.Clojure: {
+					// NOP
+				},
+				domain.Haskell: {
+					// NOP
+				},
+			},
+			ShortDescription: "Travel retail platform",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
 
 		// Template
 		//{

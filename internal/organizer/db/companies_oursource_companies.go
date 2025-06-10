@@ -292,5 +292,21 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Nagarro",
+			Website: "https://www.nagarro.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                11902,
+				IDs:               []int{11902, 59775},
+				Alias:             "nagarro",
+				Name:              "Nagarro",
+				Followers:         "2M",
+				Employees:         "10K+",
+				AssociatedMembers: "20,911",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }
