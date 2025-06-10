@@ -679,5 +679,65 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Recruiting agency
 		},
+		{
+			Name:    "Oliver James",
+			Website: "https://www.oliverjames.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                212201,
+				IDs:               nil,
+				Alias:             "oliver-james-",
+				Name:              "Oliver James",
+				Followers:         "133K",
+				Employees:         "501-1K",
+				AssociatedMembers: "875",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Concero",
+			Website: "https://concero.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2699082,
+				IDs:               nil,
+				Alias:             "get-concero",
+				Name:              "Concero",
+				Followers:         "118K",
+				Employees:         "51-200",
+				AssociatedMembers: "85",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "OFS",
+			Website: "https://weareofs.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                103150231,
+				IDs:               nil,
+				Alias:             "orbis-group-financial-services",
+				Name:              "OFS",
+				Followers:         "17K",
+				Employees:         "11-50",
+				AssociatedMembers: "11",
+				Verified:          false,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Oliver Bernard",
+			Website: "https://www.oliverbernard.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                798377,
+				IDs:               nil,
+				Alias:             "oliverbernard",
+				Name:              "Oliver Bernard",
+				Followers:         "432K",
+				Employees:         "11-50",
+				AssociatedMembers: "33",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
 	}
 }

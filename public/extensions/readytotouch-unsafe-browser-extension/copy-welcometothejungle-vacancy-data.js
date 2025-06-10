@@ -9,6 +9,10 @@ document.body.addEventListener("keydown", (event) => {
             .replaceAll(" - ", " – ") // Replace hyphen with dash
             .replace("(m/f/x)", " ").trim()
             .replace("(m/f/d)", " ").trim()
+            .replace("(d/f/m)", " ").trim()
+            .replace("(f/m/d)", " ").trim()
+            .replace("(m/w/d)", " ").trim()
+            .replace("(all genders)", " ").trim()
             .replace("Sr.", "Senior")
             .replace("GoLang", "Golang")
             .replace("Goland", "Golang")

@@ -196,5 +196,117 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Programmers.io",
+			Website: "https://programmers.io/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                13714336,
+				IDs:               nil,
+				Alias:             "programmers-io",
+				Name:              "Programmers.io",
+				Followers:         "538K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "1,155",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "ValueLabs",
+			Website: "https://www.valuelabs.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                13489,
+				IDs:               nil,
+				Alias:             "valuelabs",
+				Name:              "ValueLabs",
+				Followers:         "1M",
+				Employees:         "5K-10K",
+				AssociatedMembers: "8,506",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "CDW",
+			Website: "https://www.cdw.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3334,
+				IDs:               []int{3334, 10951, 3646541, 10599950, 13250389, 15264947, 15911608},
+				Alias:             "cdw",
+				Name:              "CDW",
+				Followers:         "317K",
+				Employees:         "10K+",
+				AssociatedMembers: "17,976",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Lumenalta",
+			Website: "https://lumenalta.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                719642,
+				IDs:               nil,
+				Alias:             "lumenalta",
+				Name:              "Lumenalta",
+				Followers:         "126K",
+				Employees:         "501-1K",
+				AssociatedMembers: "560",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Dualboot Partners",
+			Website: "https://dualbootpartners.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                28138288,
+				IDs:               nil,
+				Alias:             "dualbootpartners",
+				Name:              "Dualboot Partners",
+				Followers:         "13K",
+				Employees:         "201-500",
+				AssociatedMembers: "279",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "UKG",
+			Website: "https://www.ukg.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                67539665,
+				IDs:               nil,
+				Alias:             "ukg",
+				Name:              "UKG",
+				Followers:         "268K",
+				Employees:         "10K+",
+				AssociatedMembers: "15,144",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Nagarro",
+			Website: "https://www.nagarro.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                11902,
+				IDs:               []int{11902, 59775},
+				Alias:             "nagarro",
+				Name:              "Nagarro",
+				Followers:         "2M",
+				Employees:         "10K+",
+				AssociatedMembers: "20,911",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }

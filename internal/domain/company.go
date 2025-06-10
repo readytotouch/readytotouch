@@ -17,6 +17,7 @@ const (
 	Elixir  Language = 4
 	Clojure Language = 5
 	Haskell Language = 6
+	Erlang  Language = 7
 )
 
 func (l Language) String() string {
@@ -35,6 +36,8 @@ func (l Language) String() string {
 		return "Clojure"
 	case Haskell:
 		return "Haskell"
+	case Erlang:
+		return "Erlang"
 	default:
 		return ""
 	}
@@ -60,9 +63,7 @@ const (
 	RustCompanies CompanySyncSource = 1 // https://github.com/omarabid/rust-companies
 )
 
-// Deprecated
-type Vacancies = [7][]string
-type Languages = [7]LanguageProfile
+type Languages = [8]LanguageProfile
 
 type LinkedInProfile struct {
 	ID                int
