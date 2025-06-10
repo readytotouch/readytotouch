@@ -3,16 +3,30 @@ const COMPANY_CACHE_DURATION = 5 * 60 * 1000;
 let companiesCache = null;
 let companiesCacheTimestamp = 0;
 
-function fetchCompanyList() {
-    return fetch("https://readytotouch.com/api/v1/unsafe/companies.json")
-        .then(response => response.json())
-        .then(data => {
-            companiesCache = data.companies;
-            companiesCacheTimestamp = Date.now();
-            console.log("Fetched and cached company list.");
+function fetchSafeCompanyList(url) {
+    return fetch(url)
+        .then(response => {
+            if (response.ok) {
+                return response.json();
+            }
+
+            throw new Error(`HTTP error: ${response.status}`);
         })
         .catch(error => {
-            console.error("Error fetching company list:", error);
+            console.warn(`Fetch failed for ${url}:`, error);
+            return {companies: []};
+        });
+}
+
+function fetchCompanyList() {
+    return Promise.all([
+        fetchSafeCompanyList("http://localhost/api/v1/unsafe/companies.json"),
+        fetchSafeCompanyList("https://readytotouch.com/api/v1/unsafe/companies.json"),
+    ])
+        .then(([localData, remoteData]) => {
+            companiesCache = [...localData.companies, ...remoteData.companies];
+            companiesCacheTimestamp = Date.now();
+            console.log("Fetched and cached combined company list.");
         });
 }
 

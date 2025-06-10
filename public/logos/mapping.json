@@ -440,6 +440,11 @@
     "destination": ""
   },
   {
+    "alias": "bankaktiebolaget-nordiska",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "banquenationaleducanada",
     "source": "",
     "destination": ""
@@ -1550,6 +1555,11 @@
     "destination": ""
   },
   {
+    "alias": "florida-blue",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "flow-traders",
     "source": "",
     "destination": ""
@@ -1576,6 +1586,11 @@
   },
   {
     "alias": "foodji-marketplace-gmbh",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "foodpanda",
     "source": "",
     "destination": ""
   },
@@ -1775,6 +1790,11 @@
     "destination": ""
   },
   {
+    "alias": "gogreyorange",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "goldman-sachs",
     "source": "",
     "destination": ""
@@ -1906,6 +1926,11 @@
   },
   {
     "alias": "haza-foods-llc",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "healthequity",
     "source": "",
     "destination": ""
   },
@@ -2365,6 +2390,11 @@
     "destination": ""
   },
   {
+    "alias": "lucanet-ag",
+    "source": "lucanet-180x180.png",
+    "destination": "lucanet-ag.png"
+  },
+  {
     "alias": "lucidmotors",
     "source": "",
     "destination": ""
@@ -2583,6 +2613,11 @@
     "alias": "monil-virtual-fences",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "monumentalco",
+    "source": "monumentalco-256x256.png",
+    "destination": "monumentalco.png"
   },
   {
     "alias": "monzo-bank",
@@ -2926,6 +2961,11 @@
   },
   {
     "alias": "oolio-au",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "opendoor-com",
     "source": "",
     "destination": ""
   },
@@ -3565,6 +3605,11 @@
     "destination": ""
   },
   {
+    "alias": "samba-ai",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "sambindonesia",
     "source": "",
     "destination": ""
@@ -3690,6 +3735,11 @@
     "destination": ""
   },
   {
+    "alias": "sides-dach",
+    "source": "sides-dach-200x200.jpeg",
+    "destination": "sides-dach.jpeg"
+  },
+  {
     "alias": "siemens",
     "source": "",
     "destination": ""
@@ -3773,6 +3823,11 @@
     "alias": "snap-inc-co",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "snowplow",
+    "source": "snowplow-256x256.png",
+    "destination": "snowplow.png"
   },
   {
     "alias": "snyk",
@@ -4005,6 +4060,11 @@
     "destination": ""
   },
   {
+    "alias": "superannotate",
+    "source": "superannotate-256x256.png",
+    "destination": "superannotate.png"
+  },
+  {
     "alias": "superindo",
     "source": "",
     "destination": ""
@@ -4100,6 +4160,11 @@
     "destination": ""
   },
   {
+    "alias": "takt-io",
+    "source": "takt-io-200x200.jpeg",
+    "destination": "takt-io.jpeg"
+  },
+  {
     "alias": "talamobile",
     "source": "",
     "destination": ""
@@ -4193,6 +4258,11 @@
     "alias": "thatgamecompany",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "the-home-depot",
+    "source": "the-home-depot-200x200.jpeg",
+    "destination": "the-home-depot.jpeg"
   },
   {
     "alias": "the-odp-corporation",
@@ -4305,9 +4375,19 @@
     "destination": ""
   },
   {
+    "alias": "trainline",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "transition-technologies-psc",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "travelport",
+    "source": "travelport-130x130.png",
+    "destination": "travelport.png"
   },
   {
     "alias": "treecardapp",
@@ -4395,6 +4475,11 @@
     "destination": ""
   },
   {
+    "alias": "uniphore",
+    "source": "uniphore-200x200.jpeg",
+    "destination": "uniphore.jpeg"
+  },
+  {
     "alias": "unity",
     "source": "",
     "destination": ""
@@ -4433,6 +4518,11 @@
     "alias": "usehatchapp",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "useinsider",
+    "source": "useinsider-200x200.jpeg",
+    "destination": "useinsider.jpeg"
   },
   {
     "alias": "utilitywarehouse",

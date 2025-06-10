@@ -3,16 +3,30 @@ const VACANCY_CACHE_DURATION = 5 * 60 * 1000;
 let vacanciesCache = null;
 let vacanciesCacheTimestamp = 0;
 
-function fetchVacancyList() {
-    return fetch("https://readytotouch.com/api/v1/unsafe/vacancies.json")
-        .then(response => response.json())
-        .then(data => {
-            vacanciesCache = data.vacancies;
-            vacanciesCacheTimestamp = Date.now();
-            console.log("Fetched and cached vacancy list.");
+function fetchSafeVacancyList(url) {
+    return fetch(url)
+        .then(response => {
+            if (response.ok) {
+                return response.json();
+            }
+
+            throw new Error(`HTTP error: ${response.status}`);
         })
         .catch(error => {
-            console.error("Error fetching vacancy list:", error);
+            console.warn(`Fetch failed for ${url}:`, error);
+            return {vacancies: []};
+        });
+}
+
+function fetchVacancyList() {
+    return Promise.all([
+        fetchSafeVacancyList("http://localhost/api/v1/unsafe/vacancies.json"),
+        fetchSafeVacancyList("https://readytotouch.com/api/v1/unsafe/vacancies.json"),
+    ])
+        .then(([localData, remoteData]) => {
+            vacanciesCache = [...localData.vacancies, ...remoteData.vacancies];
+            vacanciesCacheTimestamp = Date.now();
+            console.log("Fetched and cached combined vacancy list.");
         });
 }
 

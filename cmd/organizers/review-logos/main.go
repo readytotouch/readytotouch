@@ -50,6 +50,8 @@ func syncLogos(companies []domain.CompanyProfile) {
 		}
 
 		logo := logoMap[company.LinkedInProfile.Alias]
+		logo.Alias = company.LinkedInProfile.Alias
+		logoMap[company.LinkedInProfile.Alias] = logo
 
 		if logo.Source == "" {
 			// Nothing to resize
