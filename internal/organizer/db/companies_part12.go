@@ -13601,7 +13601,7 @@ func companiesPart12() []domain.CompanyProfile {
 				Name:              "Florida Blue",
 				Followers:         "66K",
 				Employees:         "5K-10K",
-				AssociatedMembers: "",
+				AssociatedMembers: "8,396",
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -13772,9 +13772,9 @@ func companiesPart12() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "https://www.foodpanda.com/",
-			Website: "https://careers.foodpanda.com/",
-			Careers: "",
+			Name:    "foodpanda",
+			Website: "https://www.foodpanda.com/",
+			Careers: "https://careers.foodpanda.com/",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -13849,8 +13849,9 @@ func companiesPart12() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "opendoor-labs",
+				Followers: "73",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -13866,7 +13867,7 @@ func companiesPart12() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 40,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer – Fullstack",
@@ -13906,7 +13907,7 @@ func companiesPart12() []domain.CompanyProfile {
 				Name:              "SuperAnnotate",
 				Followers:         "30K",
 				Employees:         "51-200",
-				AssociatedMembers: "",
+				AssociatedMembers: "307",
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -13971,8 +13972,9 @@ func companiesPart12() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "snowplow",
+				Followers: "239",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -13988,7 +13990,7 @@ func companiesPart12() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 8,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer",
@@ -14008,7 +14010,7 @@ func companiesPart12() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 17,
 				},
 				domain.Elixir: {
 					GitHubRepositoriesCount: 0,
@@ -14190,8 +14192,9 @@ func companiesPart12() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "useinsider",
+				Followers: "209",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -14207,7 +14210,7 @@ func companiesPart12() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 3,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer (Golang)",
@@ -14409,8 +14412,9 @@ func companiesPart12() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "homedepot",
+				Followers: "56",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -14426,7 +14430,7 @@ func companiesPart12() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 28,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Backend Software Engineer – Go",
