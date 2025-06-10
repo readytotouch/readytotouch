@@ -116,6 +116,9 @@ func StreamDataPopulationCompaniesLogo(qw422016 *qt422016.Writer, companies []Co
 		qw422016.N().S(`
     <li>
         <img src="`)
+		qw422016.E().S(logoV2(company.Logo))
+		qw422016.N().S(`" class="logo" />
+        <img src="`)
 		qw422016.E().S(logoV1(company.Logo))
 		qw422016.N().S(`" class="logo" />
         <img src="`)
