@@ -724,5 +724,20 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Recruiting agency
 		},
+		{
+			Name:    "Oliver Bernard",
+			Website: "https://www.oliverbernard.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                798377,
+				IDs:               nil,
+				Alias:             "oliverbernard",
+				Name:              "Oliver Bernard",
+				Followers:         "432K",
+				Employees:         "11-50",
+				AssociatedMembers: "33",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
 	}
 }
