@@ -1108,6 +1108,18 @@ func (c *Controller) organizerFeature(path string) (domain.OrganizerFeature, boo
 			Path:      path,
 			Title:     "Jobs",
 		},
+		"/organizers/erlang/companies": {
+			Organizer: domain.OrganizerErlang,
+			Feature:   dbs.FeatureWaitOrganizerErlangCompanies,
+			Path:      path,
+			Title:     "Companies",
+		},
+		"/organizers/erlang/jobs": {
+			Organizer: domain.OrganizerErlang,
+			Feature:   dbs.FeatureWaitOrganizerErlangVacancies,
+			Path:      path,
+			Title:     "Jobs",
+		},
 		"/organizers/clojure/companies": {
 			Organizer: domain.OrganizerClojure,
 			Feature:   dbs.FeatureWaitOrganizerClojureCompanies,
@@ -1129,18 +1141,6 @@ func (c *Controller) organizerFeature(path string) (domain.OrganizerFeature, boo
 		"/organizers/haskell/jobs": {
 			Organizer: domain.OrganizerHaskell,
 			Feature:   dbs.FeatureWaitOrganizerHaskellVacancies,
-			Path:      path,
-			Title:     "Jobs",
-		},
-		"/organizers/erlang/companies": {
-			Organizer: domain.OrganizerErlang,
-			Feature:   dbs.FeatureWaitOrganizerErlangCompanies,
-			Path:      path,
-			Title:     "Companies",
-		},
-		"/organizers/erlang/jobs": {
-			Organizer: domain.OrganizerErlang,
-			Feature:   dbs.FeatureWaitOrganizerElixirVacancies,
 			Path:      path,
 			Title:     "Jobs",
 		},
@@ -1182,9 +1182,9 @@ func (c *Controller) organizer(path string) (domain.Organizer, bool) {
 		"/organizers/zig/welcome":     domain.OrganizerZig,
 		"/organizers/scala/welcome":   domain.OrganizerScala,
 		"/organizers/elixir/welcome":  domain.OrganizerElixir,
+		"/organizers/erlang/welcome":  domain.OrganizerErlang,
 		"/organizers/clojure/welcome": domain.OrganizerClojure,
 		"/organizers/haskell/welcome": domain.OrganizerHaskell,
-		"/organizers/erlang/welcome":  domain.OrganizerErlang,
 		"/organizers/fsharp/welcome":  domain.OrganizerFSharp,
 		"/organizers/ocaml/welcome":   domain.OrganizerOCaml,
 	}
