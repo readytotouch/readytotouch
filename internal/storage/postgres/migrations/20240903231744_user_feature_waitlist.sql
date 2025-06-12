@@ -17,14 +17,25 @@ CREATE TYPE FEATURE_WAIT AS ENUM (
     'organizer_haskell_companies',
     'organizer_haskell_vacancies',
     'organizer_erlang_companies',
-    'organizer_erlang_vacancies'
+    'organizer_erlang_vacancies',
+    'organizer_fsharp_companies',
+    'organizer_fsharp_vacancies',
+    'organizer_ocaml_companies',
+    'organizer_ocaml_vacancies'
     );
 
+/*
+* https://survey.stackoverflow.co/2024/technology#admired-and-desired
+*/
 /*
     ALTER TYPE FEATURE_WAIT ADD VALUE 'organizer_haskell_companies';
     ALTER TYPE FEATURE_WAIT ADD VALUE 'organizer_haskell_vacancies';
     ALTER TYPE FEATURE_WAIT ADD VALUE 'organizer_erlang_companies';
     ALTER TYPE FEATURE_WAIT ADD VALUE 'organizer_erlang_vacancies';
+    ALTER TYPE FEATURE_WAIT ADD VALUE 'organizer_fsharp_companies';
+    ALTER TYPE FEATURE_WAIT ADD VALUE 'organizer_fsharp_vacancies';
+    ALTER TYPE FEATURE_WAIT ADD VALUE 'organizer_ocaml_companies';
+    ALTER TYPE FEATURE_WAIT ADD VALUE 'organizer_ocaml_vacancies';
 */
 
 CREATE TABLE user_feature_waitlist

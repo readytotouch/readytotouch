@@ -91,4 +91,34 @@ var (
 		Keywords:              "Haskell, Companies using Haskell, Haskell companies, Haskell connections",
 		Description:           "ReadyToTouch helps you find companies that use Haskell. Improve your chances of getting a job by connecting with Haskell developers and receiving further recommendations.",
 	}
+	OrganizerErlang = Organizer{
+		Language:              Erlang,
+		LanguageTitleKeywords: ErlangTitleKeywords,
+		Alias:                 "erlang",
+		GitHubAlias:           "erlang",
+		Title:                 "Erlang",
+		Logo:                  "erlang.svg",
+		Keywords:              "Erlang, Companies using Erlang, Erlang companies, Erlang connections",
+		Description:           "ReadyToTouch helps you find companies that use Erlang. Improve your chances of getting a job by connecting with Erlang developers and receiving further recommendations.",
+	}
+	OrganizerFSharp = Organizer{
+		Language:              FSharp,
+		LanguageTitleKeywords: FSharpTitleKeywords,
+		Alias:                 "fsharp",
+		GitHubAlias:           "f#",
+		Title:                 "F#",
+		Logo:                  "fsharp.svg",
+		Keywords:              "F#, Companies using F#, F# companies, F# connections",
+		Description:           "ReadyToTouch helps you find companies that use F#. Improve your chances of getting a job by connecting with F# developers and receiving further recommendations.",
+	}
+	OrganizerOCaml = Organizer{
+		Language:              OCaml,
+		LanguageTitleKeywords: OCamlTitleKeywords,
+		Alias:                 "ocaml",
+		GitHubAlias:           "ocaml",
+		Title:                 "OCaml",
+		Logo:                  "ocaml.svg",
+		Keywords:              "OCaml, Companies using OCaml, OCaml companies, OCaml connections",
+		Description:           "ReadyToTouch helps you find companies that use OCaml. Improve your chances of getting a job by connecting with OCaml developers and receiving further recommendations.",
+	}
 )

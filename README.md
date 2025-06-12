@@ -6,9 +6,12 @@ A platform for simplifying job search
 - [Companies using Rust](https://readytotouch.com/organizers/rust/companies)
 - [Companies using Scala](https://readytotouch.com/organizers/scala/companies)
 - [Companies using Elixir](https://readytotouch.com/organizers/elixir/companies)
+- [Companies using Erlang](https://readytotouch.com/organizers/erlang/companies)
 - [Companies using Clojure](https://readytotouch.com/organizers/clojure/companies)
 - [Companies using Zig](https://readytotouch.com/organizers/zig/companies)
 - [Companies using Haskell](https://readytotouch.com/organizers/haskell/companies)
+- [Companies using F#](https://readytotouch.com/organizers/fsharp/companies)
+- [Companies using OCaml](https://readytotouch.com/organizers/ocaml/companies)
 
 ## Articles
 - Forum | [My list of companies that use Rust](https://users.rust-lang.org/t/my-list-of-companies-that-use-rust/127300)
@@ -17,7 +20,8 @@ A platform for simplifying job search
 - Reddit | [My list of companies that use Golang](https://www.reddit.com/r/golang/comments/1fjbp1p/my_list_of_companies_that_use_golang/)
 
 ## Analytics
-- https://plausible.io/readytotouch.com
+- https://readytotouch.com/plausible
+- https://readytotouch.com/similarweb
 
 ## Research repositories:
 - https://github.com/doutivity/research-online-redis-go
