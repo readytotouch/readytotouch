@@ -29,6 +29,12 @@ const (
 	FeatureWaitOrganizerClojureVacancies FeatureWait = "organizer_clojure_vacancies"
 	FeatureWaitOrganizerHaskellCompanies FeatureWait = "organizer_haskell_companies"
 	FeatureWaitOrganizerHaskellVacancies FeatureWait = "organizer_haskell_vacancies"
+	FeatureWaitOrganizerErlangCompanies  FeatureWait = "organizer_erlang_companies"
+	FeatureWaitOrganizerErlangVacancies  FeatureWait = "organizer_erlang_vacancies"
+	FeatureWaitOrganizerFsharpCompanies  FeatureWait = "organizer_fsharp_companies"
+	FeatureWaitOrganizerFsharpVacancies  FeatureWait = "organizer_fsharp_vacancies"
+	FeatureWaitOrganizerOcamlCompanies   FeatureWait = "organizer_ocaml_companies"
+	FeatureWaitOrganizerOcamlVacancies   FeatureWait = "organizer_ocaml_vacancies"
 )
 
 func (e *FeatureWait) Scan(src interface{}) error {

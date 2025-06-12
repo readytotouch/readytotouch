@@ -18,6 +18,8 @@ const (
 	Clojure Language = 5
 	Haskell Language = 6
 	Erlang  Language = 7
+	FSharp  Language = 8
+	OCaml   Language = 9
 )
 
 func (l Language) String() string {
@@ -38,6 +40,10 @@ func (l Language) String() string {
 		return "Haskell"
 	case Erlang:
 		return "Erlang"
+	case FSharp:
+		return "F#"
+	case OCaml:
+		return "OCaml"
 	default:
 		return ""
 	}
@@ -51,6 +57,9 @@ const (
 	ElixirTitleKeywords  LanguageTitleKeywords = `"Elixir Engineer" OR "Elixir Software Engineer" OR "Elixir Developer" OR "Erlang Engineer" OR "Erlang Software Engineer" OR "Erlang Developer"`
 	ClojureTitleKeywords LanguageTitleKeywords = `"Clojure Engineer" OR "Clojure Software Engineer" OR "Clojure Developer"`
 	HaskellTitleKeywords LanguageTitleKeywords = `"Haskell Engineer" OR "Haskell Software Engineer" OR "Haskell Developer"`
+	ErlangTitleKeywords  LanguageTitleKeywords = `"Erlang Engineer" OR "Erlang Software Engineer" OR "Erlang Developer"`
+	FSharpTitleKeywords  LanguageTitleKeywords = `"F# Engineer" OR "F# Software Engineer" OR "F# Developer"`
+	OCamlTitleKeywords   LanguageTitleKeywords = `"OCaml Engineer" OR "OCaml Software Engineer" OR "OCaml Developer"`
 )
 
 const (
@@ -63,7 +72,7 @@ const (
 	RustCompanies CompanySyncSource = 1 // https://github.com/omarabid/rust-companies
 )
 
-type Languages = [8]LanguageProfile
+type Languages = [10]LanguageProfile
 
 type LinkedInProfile struct {
 	ID                int

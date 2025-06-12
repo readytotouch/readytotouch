@@ -1132,6 +1132,42 @@ func (c *Controller) organizerFeature(path string) (domain.OrganizerFeature, boo
 			Path:      path,
 			Title:     "Jobs",
 		},
+		"/organizers/erlang/companies": {
+			Organizer: domain.OrganizerErlang,
+			Feature:   dbs.FeatureWaitOrganizerErlangCompanies,
+			Path:      path,
+			Title:     "Companies",
+		},
+		"/organizers/erlang/jobs": {
+			Organizer: domain.OrganizerErlang,
+			Feature:   dbs.FeatureWaitOrganizerElixirVacancies,
+			Path:      path,
+			Title:     "Jobs",
+		},
+		"/organizers/fsharp/companies": {
+			Organizer: domain.OrganizerFSharp,
+			Feature:   dbs.FeatureWaitOrganizerFsharpCompanies,
+			Path:      path,
+			Title:     "Companies",
+		},
+		"/organizers/fsharp/jobs": {
+			Organizer: domain.OrganizerFSharp,
+			Feature:   dbs.FeatureWaitOrganizerFsharpVacancies,
+			Path:      path,
+			Title:     "Jobs",
+		},
+		"/organizers/ocaml/companies": {
+			Organizer: domain.OrganizerOCaml,
+			Feature:   dbs.FeatureWaitOrganizerOcamlCompanies,
+			Path:      path,
+			Title:     "Companies",
+		},
+		"/organizers/ocaml/jobs": {
+			Organizer: domain.OrganizerOCaml,
+			Feature:   dbs.FeatureWaitOrganizerOcamlVacancies,
+			Path:      path,
+			Title:     "Jobs",
+		},
 	}
 
 	feature, ok := featurePathMap[path]
@@ -1148,6 +1184,9 @@ func (c *Controller) organizer(path string) (domain.Organizer, bool) {
 		"/organizers/elixir/welcome":  domain.OrganizerElixir,
 		"/organizers/clojure/welcome": domain.OrganizerClojure,
 		"/organizers/haskell/welcome": domain.OrganizerHaskell,
+		"/organizers/erlang/welcome":  domain.OrganizerErlang,
+		"/organizers/fsharp/welcome":  domain.OrganizerFSharp,
+		"/organizers/ocaml/welcome":   domain.OrganizerOCaml,
 	}
 
 	feature, ok := organizerPathMap[path]
