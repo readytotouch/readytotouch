@@ -8,57 +8,6 @@ func companiesPart9() []domain.CompanyProfile {
 	return []domain.CompanyProfile{
 
 		{
-			ID:      0,                           // system
-			Type:    domain.CompanyTypeOutsource, // system
-			Name:    "Brillio",
-			Website: "https://www.brillio.com/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:                5022712,
-				IDs:               nil,
-				Alias:             "brillio",
-				Name:              "Brillio",
-				Followers:         "475K",
-				Employees:         "5K-10K",
-				AssociatedMembers: "5,206",
-				Verified:          true,
-			},
-			Ignore: true, // Outsourcing
-		},
-		{
-			ID:      0,                           // system
-			Type:    domain.CompanyTypeOutsource, // system
-			Name:    "Akvelon",
-			Website: "https://akvelon.com/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:                309542,
-				IDs:               nil,
-				Alias:             "akvelon",
-				Name:              "Akvelon, Inc.",
-				Followers:         "20K",
-				Employees:         "1K-5K",
-				AssociatedMembers: "632",
-				Verified:          false,
-			},
-			Ignore: true, // Outsourcing
-		},
-		{
-			ID:      0,                           // system
-			Type:    domain.CompanyTypeOutsource, // system
-			Name:    "Multi Media",
-			Website: "https://multimediallc.com/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:                10496448,
-				IDs:               nil,
-				Alias:             "multimedia-llc",
-				Name:              "Multi Media, LLC",
-				Followers:         "33K",
-				Employees:         "201-500",
-				AssociatedMembers: "308",
-				Verified:          false,
-			},
-			Ignore: true, // Outsourcing
-		},
-		{
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "DNSFilter",
@@ -219,23 +168,6 @@ func companiesPart9() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
-		},
-		{
-			ID:      0,                           // system
-			Type:    domain.CompanyTypeOutsource, // system
-			Name:    "BairesDev",
-			Website: "https://www.bairesdev.com/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:                798671,
-				IDs:               nil,
-				Alias:             "bairesdev",
-				Name:              "BairesDev",
-				Followers:         "656K",
-				Employees:         "1K-5K",
-				AssociatedMembers: "3,011",
-				Verified:          true,
-			},
-			Ignore: true, // Outsourcing
 		},
 		{
 			ID:      0,  // system
@@ -633,23 +565,7 @@ func companiesPart9() []domain.CompanyProfile {
 			},
 			ShortDescription: "Lotus’s is an omni-channel retailer in Thailand",
 		},
-		{
-			ID:      0,                           // system
-			Type:    domain.CompanyTypeOutsource, // system
-			Name:    "Ubique Systems",
-			Website: "https://www.ubique-systems.com/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:                939675,
-				IDs:               nil,
-				Alias:             "ubique-systems",
-				Name:              "Ubique Systems",
-				Followers:         "229K",
-				Employees:         "501-1K",
-				AssociatedMembers: "307",
-				Verified:          true,
-			},
-			Ignore: true, // Outsourcing
-		},
+
 		{
 			ID:      0,  // system
 			Type:    "", // system
@@ -775,57 +691,7 @@ func companiesPart9() []domain.CompanyProfile {
 			},
 			ShortDescription: "",
 		},
-		{
-			ID:      0,                           // system
-			Type:    domain.CompanyTypeOutsource, // system
-			Name:    "Arcanys",
-			Website: "https://www.arcanys.com/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:                1472152,
-				IDs:               nil,
-				Alias:             "arcanys",
-				Name:              "Arcanys",
-				Followers:         "27K",
-				Employees:         "201-500",
-				AssociatedMembers: "273",
-				Verified:          true,
-			},
-			Ignore: true, // Outsourcing
-		},
-		{
-			ID:      0,                           // system
-			Type:    domain.CompanyTypeOutsource, // system
-			Name:    "Skillspark",
-			Website: "https://www.skillspark.com/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:                80284986,
-				IDs:               nil,
-				Alias:             "skillsparkab",
-				Name:              "Skillspark",
-				Followers:         "68K",
-				Employees:         "51-200",
-				AssociatedMembers: "33",
-				Verified:          false,
-			},
-			Ignore: true, // Outsourcing
-		},
-		{
-			ID:      0,                           // system
-			Type:    domain.CompanyTypeOutsource, // system
-			Name:    "Qinshift",
-			Website: "https://qinshift.com/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:                92778277,
-				IDs:               nil,
-				Alias:             "qinshift",
-				Name:              "Qinshift",
-				Followers:         "52K",
-				Employees:         "1K-5K",
-				AssociatedMembers: "1,717",
-				Verified:          true,
-			},
-			Ignore: true, // Outsourcing
-		},
+
 		{
 			ID:      0,  // system
 			Type:    "", // system

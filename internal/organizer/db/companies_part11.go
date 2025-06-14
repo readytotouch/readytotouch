@@ -65,65 +65,7 @@ func companiesPart11() []domain.CompanyProfile {
 			},
 			ShortDescription: "Enterprise AI-Driven Platform For Informed Decision-Making and Fast Execution",
 		},
-		{
-			ID:      0,                           // system
-			Type:    domain.CompanyTypeOutsource, // system
-			Name:    "Photon",
-			Website: "https://photon.com/",
-			Careers: "",
-			About:   "",
-			Blog:    "",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:                165464,
-				IDs:               nil,
-				Alias:             "photon-interactive",
-				Name:              "Photon",
-				Followers:         "526K",
-				Employees:         "5K-10K",
-				AssociatedMembers: "5,404",
-				Verified:          true,
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
-			},
-			BlindProfile: domain.BlindProfile{
-				Alias: "",
-			},
-			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-			},
-			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
-			},
-			Languages: domain.Languages{
-				domain.Go: {},
-				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "Rust Developer",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "https://www.linkedin.com/jobs/view/4195243048/",
-							Date:                 mustDate("2025-04-01"),
-							WithSalary:           false,
-							Remote:               false,
-						},
-					},
-				},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-			ShortDescription: "",
-			Ignore:           true, // Outsource
-		},
+
 		{
 			ID:      0,  // system
 			Type:    "", // system

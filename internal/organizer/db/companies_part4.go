@@ -1296,61 +1296,6 @@ func companiesPart4() []domain.CompanyProfile {
 		},
 
 		{
-			ID:      0,                           // system
-			Type:    domain.CompanyTypeOutsource, // system
-			Name:    "Sparq",
-			Website: "https://www.teamsparq.com/",
-			Careers: "https://www.teamsparq.com/careers/",
-			About:   "https://www.teamsparq.com/who-we-are/",
-			Blog:    "",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:                90679425,
-				Alias:             "teamsparq",
-				Name:              "Sparq",
-				Followers:         "13K",
-				Employees:         "501-1K",
-				AssociatedMembers: "790",
-				Verified:          true,
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
-				JobsURL:     "",
-				Jobs:        "",
-				Reviews:     "",
-				Salaries:    "",
-				ReviewsRate: "",
-				Verified:    false,
-			},
-			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
-			},
-			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies: []domain.Vacancy{
-						{
-							Title:                "Senior Golang Developer",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "https://www.linkedin.com/jobs/view/4049853199/",
-							Date:                 mustDate("2025-01-14"), // mustDate("2024-12-03")
-							WithSalary:           false,
-							Remote:               true,
-						},
-					},
-				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-			Ignore: true,
-		},
-
-		{
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "SMG Swiss Marketplace Group",

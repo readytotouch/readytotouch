@@ -6,41 +6,6 @@ import (
 
 func companiesPart8() []domain.CompanyProfile {
 	return []domain.CompanyProfile{
-
-		{
-			ID:      0,                           // system
-			Type:    domain.CompanyTypeOutsource, // system
-			Name:    "Coherent Solutions",
-			Website: "https://www.coherentsolutions.com/",
-			Careers: "https://www.coherentsolutions.com/careers",
-			About:   "https://www.coherentsolutions.com/about-us",
-			Blog:    "",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:                38745,
-				Alias:             "coherent-solutions",
-				Name:              "Coherent Solutions",
-				Followers:         "13K",
-				Employees:         "1K-5K",
-				AssociatedMembers: "680",
-				Verified:          true,
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
-				JobsURL:     "",
-				Jobs:        "",
-				Reviews:     "",
-				Salaries:    "",
-				ReviewsRate: "",
-				Verified:    false,
-			},
-			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
-			},
-			ShortDescription: "Software development company",
-			Ignore:           true, // The deleted outsource company was added by mistake
-		},
-
 		{
 			ID:      0,  // system
 			Type:    "", // system
@@ -709,40 +674,6 @@ func companiesPart8() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Integrates secure communication and information systems and technology",
-		},
-
-		{
-			ID:      0,                           // system
-			Type:    domain.CompanyTypeOutsource, // system
-			Name:    "Antmicro",
-			Website: "https://antmicro.com/",
-			Careers: "https://careers.antmicro.com/",
-			About:   "https://antmicro.com/about/company/",
-			Blog:    "https://antmicro.com/blog/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:                3267482,
-				Alias:             "antmicro-ltd",
-				Name:              "Antmicro",
-				Followers:         "6K",
-				Employees:         "51-200",
-				AssociatedMembers: "83",
-				Verified:          true,
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
-				JobsURL:     "",
-				Jobs:        "",
-				Reviews:     "",
-				Salaries:    "",
-				ReviewsRate: "",
-				Verified:    false,
-			},
-			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
-			},
-			ShortDescription: "Sweden software-driven tech company",
-			Ignore:           true, // The deleted outsource company was added by mistake
 		},
 
 		{

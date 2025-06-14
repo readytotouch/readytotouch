@@ -56,54 +56,6 @@ func companiesPart10() []domain.CompanyProfile {
 		},
 
 		{
-			ID:      0,                           // system
-			Type:    domain.CompanyTypeOutsource, // system
-			Name:    "49nord GmbH",
-			Website: "https://49nord.de/",
-			Careers: "",
-			About:   "https://49nord.de/en/company",
-			Blog:    "",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:                18586171,
-				IDs:               nil,
-				Alias:             "49nord",
-				Name:              "49nord GmbH",
-				Followers:         "18",
-				Employees:         "2-10",
-				AssociatedMembers: "1",
-				Verified:          false,
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "49nord",
-				Verified: false,
-			},
-			BlindProfile: domain.BlindProfile{
-				Alias: "",
-			},
-			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-			},
-			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
-			},
-			Languages: domain.Languages{
-				domain.Go:      {},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-			ShortDescription: "",
-			Ignore:           true, // Outsource, waiting for any vacancies
-			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
-		},
-
-		{
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "Actyx",
@@ -737,54 +689,6 @@ func companiesPart10() []domain.CompanyProfile {
 		},
 
 		{
-			ID:      0,                           // system
-			Type:    domain.CompanyTypeOutsource, // system
-			Name:    "corrode",
-			Website: "https://corrode.dev/",
-			Careers: "",
-			About:   "https://corrode.dev/about/",
-			Blog:    "https://corrode.dev/blog/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:                82209241,
-				IDs:               nil,
-				Alias:             "corrode",
-				Name:              "corrode",
-				Followers:         "156",
-				Employees:         "0-1",
-				AssociatedMembers: "0",
-				Verified:          false,
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "corrode",
-				Verified: false,
-			},
-			BlindProfile: domain.BlindProfile{
-				Alias: "",
-			},
-			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-			},
-			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
-			},
-			Languages: domain.Languages{
-				domain.Go:      {},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-			ShortDescription: "Germans Rust consulting company",
-			Ignore:           true, // Outsource, waiting for any vacancies
-			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
-		},
-
-		{
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "Craft AI",
@@ -1185,54 +1089,6 @@ func companiesPart10() []domain.CompanyProfile {
 			},
 			ShortDescription: "",
 			Ignore:           true, // Crypto, waiting for any vacancies
-			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
-		},
-
-		{
-			ID:      0,                           // system
-			Type:    domain.CompanyTypeOutsource, // system
-			Name:    "Ferrous Systems GmbH",
-			Website: "https://ferrous-systems.com/",
-			Careers: "",
-			About:   "",
-			Blog:    "https://ferrous-systems.com/blog/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:                11847446,
-				IDs:               nil,
-				Alias:             "ferrous-systems",
-				Name:              "Ferrous Systems GmbH",
-				Followers:         "3K",
-				Employees:         "11-50",
-				AssociatedMembers: "22",
-				Verified:          false,
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "ferrous-systems",
-				Verified: true,
-			},
-			BlindProfile: domain.BlindProfile{
-				Alias: "",
-			},
-			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-			},
-			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
-			},
-			Languages: domain.Languages{
-				domain.Go:      {},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-			ShortDescription: "Rust consulting company",
-			Ignore:           true, // Outsource, waiting for any vacancies
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
@@ -1736,102 +1592,6 @@ func companiesPart10() []domain.CompanyProfile {
 		},
 
 		{
-			ID:      0,                           // system
-			Type:    domain.CompanyTypeOutsource, // system
-			Name:    "Immunant",
-			Website: "https://immunant.com/",
-			Careers: "https://immunant.com/jobs/",
-			About:   "",
-			Blog:    "https://immunant.com/blog/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:                27043749,
-				IDs:               nil,
-				Alias:             "immunant",
-				Name:              "Immunant",
-				Followers:         "167",
-				Employees:         "2-10",
-				AssociatedMembers: "4",
-				Verified:          false,
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "immunant",
-				Verified: false,
-			},
-			BlindProfile: domain.BlindProfile{
-				Alias: "",
-			},
-			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-			},
-			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
-			},
-			Languages: domain.Languages{
-				domain.Go:      {},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-			ShortDescription: "Software consulting company",
-			Ignore:           true, // Outsource
-			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
-		},
-
-		{
-			ID:      0,                           // system
-			Type:    domain.CompanyTypeOutsource, // system
-			Name:    "Integer 32, LLC",
-			Website: "https://www.integer32.com/",
-			Careers: "",
-			About:   "https://www.integer32.com/about/",
-			Blog:    "",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:                10822533,
-				IDs:               nil,
-				Alias:             "integer-32-llc",
-				Name:              "Integer 32, LLC",
-				Followers:         "126",
-				Employees:         "2-10",
-				AssociatedMembers: "2",
-				Verified:          false,
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "integer32llc",
-				Verified: false,
-			},
-			BlindProfile: domain.BlindProfile{
-				Alias: "",
-			},
-			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-			},
-			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
-			},
-			Languages: domain.Languages{
-				domain.Go:      {},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-			ShortDescription: "",
-			Ignore:           true, // Outsource
-			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
-		},
-
-		{
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "Lechev.space",
@@ -2279,53 +2039,6 @@ func companiesPart10() []domain.CompanyProfile {
 		},
 
 		{
-			ID:      0,                           // system
-			Type:    domain.CompanyTypeOutsource, // system
-			Name:    "Red Iron Team",
-			Website: "https://red-iron.eu/",
-			Careers: "",
-			About:   "",
-			Blog:    "",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "red-iron-team",
-				Name:              "Red Iron Team",
-				Followers:         "195",
-				Employees:         "2-10",
-				AssociatedMembers: "0",
-				Verified:          false,
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
-			},
-			BlindProfile: domain.BlindProfile{
-				Alias: "",
-			},
-			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-			},
-			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
-			},
-			Languages: domain.Languages{
-				domain.Go:      {},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-			ShortDescription: "French software company",
-			Ignore:           true, // Outsource, should be double-checked
-			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
-		},
-
-		{
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "Red Sift",
@@ -2420,53 +2133,6 @@ func companiesPart10() []domain.CompanyProfile {
 			},
 			ShortDescription: "Delivery management software with an intelligent route optimization feature",
 			Ignore:           true, // Waiting for any vacancies
-			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
-		},
-
-		{
-			ID:      0,                           // system
-			Type:    domain.CompanyTypeOutsource, // system
-			Name:    "Rustunit",
-			Website: "https://rustunit.com/",
-			Careers: "",
-			About:   "",
-			Blog:    "https://rustunit.com/blog/",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:                100357404,
-				Alias:             "rustunit",
-				Name:              "Rustunit",
-				Followers:         "288",
-				Employees:         "2-10",
-				AssociatedMembers: "1",
-				Verified:          false,
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "rustunit",
-				Verified: true,
-			},
-			BlindProfile: domain.BlindProfile{
-				Alias: "",
-			},
-			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-			},
-			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
-			},
-			Languages: domain.Languages{
-				domain.Go:      {},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
-			},
-			ShortDescription: "",
-			Ignore:           true, // Outsource, should be double-checked
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 
