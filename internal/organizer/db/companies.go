@@ -60,7 +60,7 @@ func Companies() []domain.CompanyProfile {
 		)
 	)
 
-	const debug = false
+	const debug = true
 
 	if debug {
 		fmt.Println(
