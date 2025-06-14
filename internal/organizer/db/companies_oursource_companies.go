@@ -4,6 +4,772 @@ import "github.com/readytotouch/readytotouch/internal/domain"
 
 func companiesOutsourceCompanies() []domain.CompanyProfile {
 	return []domain.CompanyProfile{
+		// OLD
+		{
+			ID:      0,                           // system
+			Type:    domain.CompanyTypeOutsource, // system
+			Name:    "Cognizant",
+			Website: "https://www.cognizant.com/",
+			Careers: "https://careers.cognizant.com/global-en/",
+			About:   "https://www.cognizant.com/au/en/about-cognizant",
+			Blog:    "https://www.cognizant.com/se/en/insights/blog/home-page-se",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1680,
+				Alias:             "cognizant",
+				Name:              "Cognizant",
+				Followers:         "8M",
+				Employees:         "10K+",
+				AssociatedMembers: "326,260",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias:       "Cognizant",
+				Employees:   "10,000+",
+				Salary:      "$50K ~ $220K a year",
+				Reviews:     "612",
+				ReviewsRate: "3.1",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "cognizant",
+				Employees: "309,110",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Cognizant-Technology-Solutions-EI_IE8014.11,41.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Cognizant-Technology-Solutions-Reviews-E8014.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Cognizant-Technology-Solutions-Jobs-E8014.htm",
+				Jobs:        "2.8K",
+				Reviews:     "117K",
+				Salaries:    "226K",
+				ReviewsRate: "3.7",
+				Verified:    true,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "Cognizant-Technology-Solutions",
+			},
+			OttaProfileSlug:   "",
+			YouTubeChannelURL: "https://www.youtube.com/@cognizant",
+			GoMainLanguage:    false,
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/3914839625/",
+							Date:                 mustDate("2024-05-24"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4120737001/",
+							Date:                 mustDate("2025-01-24"), // mustDate("2025-01-11"),
+							WithSalary:           true,                   // The annual salary for this position is between $95K to 115K depending on experience and other qualifications of the successful candidate
+							Remote:               false,
+						},
+						{
+							Title:                "Senior AWS developer with Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4149258542/",
+							Date:                 mustDate("2025-02-10"),
+							WithSalary:           true, // $55.000 — $114.000 per year
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Full Stack Engineer (Golang/AWS)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4144963593/",
+							Date:                 mustDate("2025-02-14"),
+							WithSalary:           true, // salary for this position is between $68,000 – $114,000
+							Remote:               false,
+						},
+						{
+							Title:                "Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4181350285/",
+							Date:                 mustDate("2025-03-14"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Rust Developer (Remote)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4066607632/",
+							Date:                 mustDate("2024-11-07"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig: {},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Data Engineer — AWS/Hive/Scala/Spark",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4124669157/",
+							Date:                 mustDate("2025-01-15"),
+							WithSalary:           true, // $68K — $108K per year
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Java Developer with Scala/Kafka Experience",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4210424636/",
+							Date:                 mustDate("2025-04-18"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "",
+			DealroomURL:      "",
+			CrunchbaseURL:    "",
+			PitchbookURL:     "",
+			YahooFinanceURL:  "",
+			GoogleFinanceURL: "",
+			YCombinatorURL:   "",
+			Industries:       []domain.Industry{},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
+				domain.Czechia,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			ID:      0,                           // system
+			Type:    domain.CompanyTypeOutsource, // system
+			Name:    "Sparq",
+			Website: "https://www.teamsparq.com/",
+			Careers: "https://www.teamsparq.com/careers/",
+			About:   "https://www.teamsparq.com/who-we-are/",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                90679425,
+				Alias:             "teamsparq",
+				Name:              "Sparq",
+				Followers:         "13K",
+				Employees:         "501-1K",
+				AssociatedMembers: "790",
+				Verified:          true,
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4049853199/",
+							Date:                 mustDate("2025-01-14"), // mustDate("2024-12-03")
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			Ignore: true,
+		},
+		{
+			ID:      0,                           // system
+			Type:    domain.CompanyTypeOutsource, // system
+			Name:    "Coherent Solutions",
+			Website: "https://www.coherentsolutions.com/",
+			Careers: "https://www.coherentsolutions.com/careers",
+			About:   "https://www.coherentsolutions.com/about-us",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                38745,
+				Alias:             "coherent-solutions",
+				Name:              "Coherent Solutions",
+				Followers:         "13K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "680",
+				Verified:          true,
+			},
+			Ignore: true, // The deleted outsource company was added by mistake
+		},
+		{
+			ID:      0,                           // system
+			Type:    domain.CompanyTypeOutsource, // system
+			Name:    "Antmicro",
+			Website: "https://antmicro.com/",
+			Careers: "https://careers.antmicro.com/",
+			About:   "https://antmicro.com/about/company/",
+			Blog:    "https://antmicro.com/blog/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3267482,
+				Alias:             "antmicro-ltd",
+				Name:              "Antmicro",
+				Followers:         "6K",
+				Employees:         "51-200",
+				AssociatedMembers: "83",
+				Verified:          true,
+			},
+			ShortDescription: "Sweden software-driven tech company",
+			Ignore:           true, // The deleted outsource company was added by mistake
+		},
+		{
+			ID:      0,                           // system
+			Type:    domain.CompanyTypeOutsource, // system
+			Name:    "Arcanys",
+			Website: "https://www.arcanys.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1472152,
+				IDs:               nil,
+				Alias:             "arcanys",
+				Name:              "Arcanys",
+				Followers:         "27K",
+				Employees:         "201-500",
+				AssociatedMembers: "273",
+				Verified:          true,
+			},
+			Ignore: true, // Outsourcing
+		},
+		{
+			ID:      0,                           // system
+			Type:    domain.CompanyTypeOutsource, // system
+			Name:    "Skillspark",
+			Website: "https://www.skillspark.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                80284986,
+				IDs:               nil,
+				Alias:             "skillsparkab",
+				Name:              "Skillspark",
+				Followers:         "68K",
+				Employees:         "51-200",
+				AssociatedMembers: "33",
+				Verified:          false,
+			},
+			Ignore: true, // Outsourcing
+		},
+		{
+			ID:      0,                           // system
+			Type:    domain.CompanyTypeOutsource, // system
+			Name:    "Qinshift",
+			Website: "https://qinshift.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                92778277,
+				IDs:               nil,
+				Alias:             "qinshift",
+				Name:              "Qinshift",
+				Followers:         "52K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "1,717",
+				Verified:          true,
+			},
+			Ignore: true, // Outsourcing
+		},
+		{
+			ID:      0,                           // system
+			Type:    domain.CompanyTypeOutsource, // system
+			Name:    "Brillio",
+			Website: "https://www.brillio.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                5022712,
+				IDs:               nil,
+				Alias:             "brillio",
+				Name:              "Brillio",
+				Followers:         "475K",
+				Employees:         "5K-10K",
+				AssociatedMembers: "5,206",
+				Verified:          true,
+			},
+			Ignore: true, // Outsourcing
+		},
+		{
+			ID:      0,                           // system
+			Type:    domain.CompanyTypeOutsource, // system
+			Name:    "Akvelon",
+			Website: "https://akvelon.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                309542,
+				IDs:               nil,
+				Alias:             "akvelon",
+				Name:              "Akvelon, Inc.",
+				Followers:         "20K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "632",
+				Verified:          false,
+			},
+			Ignore: true, // Outsourcing
+		},
+		{
+			ID:      0,                           // system
+			Type:    domain.CompanyTypeOutsource, // system
+			Name:    "Multi Media",
+			Website: "https://multimediallc.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                10496448,
+				IDs:               nil,
+				Alias:             "multimedia-llc",
+				Name:              "Multi Media, LLC",
+				Followers:         "33K",
+				Employees:         "201-500",
+				AssociatedMembers: "308",
+				Verified:          false,
+			},
+			Ignore: true, // Outsourcing
+		},
+		{
+			ID:      0,                           // system
+			Type:    domain.CompanyTypeOutsource, // system
+			Name:    "BairesDev",
+			Website: "https://www.bairesdev.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                798671,
+				IDs:               nil,
+				Alias:             "bairesdev",
+				Name:              "BairesDev",
+				Followers:         "656K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "3,011",
+				Verified:          true,
+			},
+			Ignore: true, // Outsourcing
+		},
+		{
+			ID:      0,                           // system
+			Type:    domain.CompanyTypeOutsource, // system
+			Name:    "Ubique Systems",
+			Website: "https://www.ubique-systems.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                939675,
+				IDs:               nil,
+				Alias:             "ubique-systems",
+				Name:              "Ubique Systems",
+				Followers:         "229K",
+				Employees:         "501-1K",
+				AssociatedMembers: "307",
+				Verified:          true,
+			},
+			Ignore: true, // Outsourcing
+		},
+		{
+			ID:      0,                           // system
+			Type:    domain.CompanyTypeOutsource, // system
+			Name:    "Immunant",
+			Website: "https://immunant.com/",
+			Careers: "https://immunant.com/jobs/",
+			About:   "",
+			Blog:    "https://immunant.com/blog/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                27043749,
+				IDs:               nil,
+				Alias:             "immunant",
+				Name:              "Immunant",
+				Followers:         "167",
+				Employees:         "2-10",
+				AssociatedMembers: "4",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "immunant",
+				Verified: false,
+			},
+			ShortDescription: "Software consulting company",
+			Ignore:           true, // Outsource
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
+		},
+		{
+			ID:      0,                           // system
+			Type:    domain.CompanyTypeOutsource, // system
+			Name:    "Integer 32, LLC",
+			Website: "https://www.integer32.com/",
+			Careers: "",
+			About:   "https://www.integer32.com/about/",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                10822533,
+				IDs:               nil,
+				Alias:             "integer-32-llc",
+				Name:              "Integer 32, LLC",
+				Followers:         "126",
+				Employees:         "2-10",
+				AssociatedMembers: "2",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "integer32llc",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go:      {},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "",
+			Ignore:           true, // Outsource
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
+		},
+		{
+			ID:      0,                           // system
+			Type:    domain.CompanyTypeOutsource, // system
+			Name:    "Red Iron Team",
+			Website: "https://red-iron.eu/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                0,
+				Alias:             "red-iron-team",
+				Name:              "Red Iron Team",
+				Followers:         "195",
+				Employees:         "2-10",
+				AssociatedMembers: "0",
+				Verified:          false,
+			},
+			ShortDescription: "French software company",
+			Ignore:           true, // Outsource, should be double-checked
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
+		},
+		{
+			ID:      0,                           // system
+			Type:    domain.CompanyTypeOutsource, // system
+			Name:    "Rustunit",
+			Website: "https://rustunit.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "https://rustunit.com/blog/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                100357404,
+				Alias:             "rustunit",
+				Name:              "Rustunit",
+				Followers:         "288",
+				Employees:         "2-10",
+				AssociatedMembers: "1",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "rustunit",
+				Verified: true,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go:      {},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "",
+			Ignore:           true, // Outsource, should be double-checked
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
+		},
+		{
+			ID:      0,                           // system
+			Type:    domain.CompanyTypeOutsource, // system
+			Name:    "49nord GmbH",
+			Website: "https://49nord.de/",
+			Careers: "",
+			About:   "https://49nord.de/en/company",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                18586171,
+				IDs:               nil,
+				Alias:             "49nord",
+				Name:              "49nord GmbH",
+				Followers:         "18",
+				Employees:         "2-10",
+				AssociatedMembers: "1",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "49nord",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go:      {},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "",
+			Ignore:           true, // Outsource, waiting for any vacancies
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
+		},
+		{
+			ID:      0,                           // system
+			Type:    domain.CompanyTypeOutsource, // system
+			Name:    "corrode",
+			Website: "https://corrode.dev/",
+			Careers: "",
+			About:   "https://corrode.dev/about/",
+			Blog:    "https://corrode.dev/blog/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                82209241,
+				IDs:               nil,
+				Alias:             "corrode",
+				Name:              "corrode",
+				Followers:         "156",
+				Employees:         "0-1",
+				AssociatedMembers: "0",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "corrode",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go:      {},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Germans Rust consulting company",
+			Ignore:           true, // Outsource, waiting for any vacancies
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
+		},
+		{
+			ID:      0,                           // system
+			Type:    domain.CompanyTypeOutsource, // system
+			Name:    "Ferrous Systems GmbH",
+			Website: "https://ferrous-systems.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "https://ferrous-systems.com/blog/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                11847446,
+				IDs:               nil,
+				Alias:             "ferrous-systems",
+				Name:              "Ferrous Systems GmbH",
+				Followers:         "3K",
+				Employees:         "11-50",
+				AssociatedMembers: "22",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "ferrous-systems",
+				Verified: true,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go:      {},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "Rust consulting company",
+			Ignore:           true, // Outsource, waiting for any vacancies
+			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
+		},
+		{
+			ID:      0,                           // system
+			Type:    domain.CompanyTypeOutsource, // system
+			Name:    "Photon",
+			Website: "https://photon.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                165464,
+				IDs:               nil,
+				Alias:             "photon-interactive",
+				Name:              "Photon",
+				Followers:         "526K",
+				Employees:         "5K-10K",
+				AssociatedMembers: "5,404",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Rust Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4195243048/",
+							Date:                 mustDate("2025-04-01"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "",
+			Ignore:           true, // Outsource
+		},
+		{
+			ID:      0,                           // system
+			Type:    domain.CompanyTypeOutsource, // system
+			Name:    "Vinova",
+			Website: "https://vinova.sg/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1614934,
+				IDs:               nil,
+				Alias:             "vinova-sg",
+				Name:              "Vinova",
+				Followers:         "4K",
+				Employees:         "201-500",
+				AssociatedMembers: "",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Rust:    {},
+				domain.Zig:     {},
+				domain.Scala:   {},
+				domain.Elixir:  {},
+				domain.Clojure: {},
+				domain.Haskell: {},
+			},
+			ShortDescription: "",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+			Ignore: true,
+		},
+
+		// NEW
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Minsait",
