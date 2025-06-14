@@ -4,7 +4,7 @@ import (
 	"github.com/readytotouch/readytotouch/internal/domain"
 )
 
-func companiesPart11() []domain.CompanyProfile {
+func companies11Shard() []domain.CompanyProfile {
 	return []domain.CompanyProfile{
 
 		{
