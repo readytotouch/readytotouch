@@ -186,7 +186,6 @@ var (
 		"dyninno-group":                       160, // Dyninno Group
 		"815488":                              550, // Holland &amp; Barrett
 		"group-avows":                         161, // Group Avows
-		"cognizant":                           162, // Cognizant
 		"nuro-inc.":                           163, // Nuro
 		"cloudwalk-inc":                       164, // CloudWalk, Inc.
 		"transition-technologies-psc":         165, // Transition Technologies PSC
@@ -495,7 +494,6 @@ var (
 		"sunasterisk":                         485, // Sun* Vietnam
 		"miraclesoft":                         486, // Miracle Software Systems, Inc
 		"collabera":                           487, // Collabera
-		"teamsparq":                           488, // Sparq
 		"smg-marketplace":                     489, // SMG Swiss Marketplace Group
 		"hornetsecurity":                      490, // Hornetsecurity
 		"gorillalogic":                        491, // Gorilla Logic
@@ -995,6 +993,8 @@ var (
 		"the-home-depot":                      993, // The Home Depot
 		"takt-io":                             994, // Takt
 		"travelport":                          995, // Travelport
+		"cognizant":                           162, // Cognizant
+		"teamsparq":                           488, // Sparq
 
 	}
 )
