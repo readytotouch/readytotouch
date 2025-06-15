@@ -1370,6 +1370,79 @@ func companies18Shard() []domain.CompanyProfile {
 				domain.IndustryMarTech,
 			},
 		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "WPP Media",
+			Website: "https://www.wppmedia.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                106681730,
+				IDs:               []int{3764, 4703, 5935, 13602, 22070, 242315, 359382, 796114, 1519820, 1915522, 2527962, 2550970, 10528967, 11266049, 26058981, 72211530, 80676023, 91693237, 106681730},
+				Alias:             "wpp-media",
+				Name:              "WPP Media",
+				Followers:         "765K",
+				Employees:         "10K+",
+				AssociatedMembers: "25,858",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+				},
+				domain.Rust: {
+					// NOP
+				},
+				domain.Zig: {
+					// NOP
+				},
+				domain.Scala: {
+					// NOP
+				},
+				domain.Elixir: {
+					// NOP
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Clojure Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4248410642/",
+							Date:                 mustDate("2025-06-14"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Haskell: {
+					// NOP
+				},
+			},
+			ShortDescription: "",
+			Industries: []domain.Industry{
+				domain.IndustryAdTech,
+			},
+		},
 
 		// Template
 		//{
