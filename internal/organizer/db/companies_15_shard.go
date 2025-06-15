@@ -1968,7 +1968,14 @@ func companies15Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-DaftCode-EI_IE1788865.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/DaftCode-Reviews-E1788865.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/DaftCode-Jobs-E1788865.htm",
+				Jobs:        "",
+				Reviews:     "15",
+				Salaries:    "40",
+				ReviewsRate: "3.9",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -2581,8 +2588,9 @@ func companies15Shard() []domain.CompanyProfile {
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "wasmerio",
+				Followers: "824",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -2599,7 +2607,7 @@ func companies15Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 61,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Rust – Software Engineer",
@@ -3040,7 +3048,14 @@ func companies15Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-BEAT81-EI_IE2855598.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/BEAT81-Reviews-E2855598.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/BEAT81-Jobs-E2855598.htm",
+				Jobs:        "",
+				Reviews:     "32",
+				Salaries:    "59",
+				ReviewsRate: "3.2",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -3975,7 +3990,14 @@ func companies15Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Eightcap-EI_IE3828636.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Eightcap-Reviews-E3828636.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Eightcap-Jobs-E3828636.htm",
+				Jobs:        "21",
+				Reviews:     "22",
+				Salaries:    "45",
+				ReviewsRate: "3.2",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -4324,8 +4346,9 @@ func companies15Shard() []domain.CompanyProfile {
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "tellerhq",
+				Followers: "43",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",

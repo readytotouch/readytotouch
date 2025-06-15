@@ -223,7 +223,14 @@ func companies18Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Florida-Blue-EI_IE17308.11,23.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Florida-Blue-Reviews-E17308.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Florida-Blue-Jobs-E17308.htm",
+				Jobs:        "",
+				Reviews:     "1.5K",
+				Salaries:    "2.4K",
+				ReviewsRate: "3.7",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -358,7 +365,14 @@ func companies18Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-HealthEquity-Inc-EI_IE199470.11,27.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/HealthEquity-Inc-Reviews-E199470.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/HealthEquity-Inc-Jobs-E199470.htm",
+				Jobs:        "24",
+				Reviews:     "916",
+				Salaries:    "1.2K",
+				ReviewsRate: "3.9",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -1019,7 +1033,14 @@ func companies18Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Uniphore-Software-Systems-EI_IE924913.11,36.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Uniphore-Software-Systems-Reviews-E924913.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Uniphore-Software-Systems-Jobs-E924913.htm",
+				Jobs:        "39",
+				Reviews:     "431",
+				Salaries:    "486",
+				ReviewsRate: "3.6",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -1174,8 +1195,9 @@ func companies18Shard() []domain.CompanyProfile {
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "takt-corp",
+				Followers: "5",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -1191,7 +1213,7 @@ func companies18Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 6,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Golang Engineer",
@@ -1473,8 +1495,9 @@ func companies18Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "lonelyplanet",
+				Followers: "12",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -1483,7 +1506,14 @@ func companies18Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Lonely-Planet-EI_IE5746.11,24.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Lonely-Planet-Reviews-E5746.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Lonely-Planet-Jobs-E5746.htm",
+				Jobs:        "",
+				Reviews:     "149",
+				Salaries:    "219",
+				ReviewsRate: "3.7",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -1619,8 +1649,9 @@ func companies18Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "box",
+				Followers: "167",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -1629,14 +1660,21 @@ func companies18Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Box-EI_IE254092.11,14.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Box-Reviews-E254092.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Box-Jobs-E254092.htm",
+				Jobs:        "206",
+				Reviews:     "1.3K",
+				Salaries:    "3.3K",
+				ReviewsRate: "4.3",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 5,
 				},
 				domain.Rust: {
 					// NOP
@@ -1645,7 +1683,7 @@ func companies18Shard() []domain.CompanyProfile {
 					// NOP
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 1,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Scala Engineer",
@@ -1692,8 +1730,9 @@ func companies18Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "fortanix",
+				Followers: "45",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -1702,14 +1741,21 @@ func companies18Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Fortanix-EI_IE1977675.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Fortanix-Reviews-E1977675.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Fortanix-Jobs-E1977675.htm",
+				Jobs:        "13",
+				Reviews:     "155",
+				Salaries:    "226",
+				ReviewsRate: "2.8",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 7,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Staff Software Engineer – Rust, C/C++, Golang",
@@ -1723,7 +1769,7 @@ func companies18Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 50,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Staff Software Engineer – Rust, C/C++, Golang",
@@ -1786,7 +1832,14 @@ func companies18Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Take-Two-EI_IE7413.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Take-Two-Reviews-E7413.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Take-Two-Jobs-E7413.htm",
+				Jobs:        "122",
+				Reviews:     "195",
+				Salaries:    "519",
+				ReviewsRate: "3.8",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -1933,7 +1986,14 @@ func companies18Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Pizza-Hut-EI_IE10090.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Pizza-Hut-Reviews-E10090.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Pizza-Hut-Jobs-E10090.htm",
+				Jobs:        "23K",
+				Reviews:     "15K",
+				Salaries:    "16K",
+				ReviewsRate: "3.5",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -2006,7 +2066,14 @@ func companies18Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Further-EI_IE1316197.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Further-Reviews-E1316197.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Further-Jobs-E1316197.htm",
+				Jobs:        "",
+				Reviews:     "72",
+				Salaries:    "183",
+				ReviewsRate: "3.1",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",

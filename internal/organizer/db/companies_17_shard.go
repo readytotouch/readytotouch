@@ -155,7 +155,14 @@ func companies17Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-CareCar-EI_IE4156942.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/CareCar-Reviews-E4156942.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/CareCar-Jobs-E4156942.htm",
+				Jobs:        "128",
+				Reviews:     "32",
+				Salaries:    "31",
+				ReviewsRate: "2.7",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -438,7 +445,14 @@ func companies17Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Notchup-EI_IE5537415.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Notchup-Reviews-E5537415.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Notchup-Jobs-E5537415.htm",
+				Jobs:        "",
+				Reviews:     "31",
+				Salaries:    "13",
+				ReviewsRate: "4.6",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -1672,8 +1686,9 @@ func companies17Shard() []domain.CompanyProfile {
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "wallee-payment",
+				Followers: "15",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -1682,7 +1697,14 @@ func companies17Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Wallee-EI_IE4604933.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Wallee-Reviews-E4604933.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Wallee-Jobs-E4604933.htm",
+				Jobs:        "3",
+				Reviews:     "6",
+				Salaries:    "20",
+				ReviewsRate: "2.9",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -2073,7 +2095,14 @@ func companies17Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Birdie-United-Kingdom-EI_IE2424020.11,32.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Birdie-United-Kingdom-Reviews-E2424020.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Birdie-United-Kingdom-Jobs-E2424020.htm",
+				Jobs:        "4.8K",
+				Reviews:     "53",
+				Salaries:    "176",
+				ReviewsRate: "4.5",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -2583,8 +2612,9 @@ func companies17Shard() []domain.CompanyProfile {
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "qdrant",
+				Followers: "1.2k",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -2607,9 +2637,11 @@ func companies17Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			Languages: domain.Languages{
-				domain.Go: {},
+				domain.Go: {
+					GitHubRepositoriesCount: 10,
+				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 20,
+					GitHubRepositoriesCount: 21,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Core Rust Engineer",
@@ -3877,8 +3909,9 @@ func companies17Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "coralogix",
+				Followers: "96",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -3887,15 +3920,24 @@ func companies17Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Coralogix-EI_IE5272217.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Coralogix-Reviews-E5272217.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Coralogix-Jobs-E5272217.htm",
+				Jobs:        "61",
+				Reviews:     "71",
+				Salaries:    "84",
+				ReviewsRate: "4.3",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
 			},
 			Languages: domain.Languages{
-				domain.Go: {},
+				domain.Go: {
+					GitHubRepositoriesCount: 34,
+				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 15,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Backend Engineer – Rust",
@@ -4070,7 +4112,14 @@ func companies17Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-FalconX-EI_IE4615319.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/FalconX-Reviews-E4615319.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/FalconX-Jobs-E4615319.htm",
+				Jobs:        "",
+				Reviews:     "40",
+				Salaries:    "64",
+				ReviewsRate: "4.0",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -4183,8 +4232,9 @@ func companies17Shard() []domain.CompanyProfile {
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "MythicalGames",
+				Followers: "42",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -4193,15 +4243,24 @@ func companies17Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Mythical-Games-EI_IE2392684.11,25.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Mythical-Games-Reviews-E2392684.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Mythical-Games-Jobs-E2392684.htm",
+				Jobs:        "",
+				Reviews:     "75",
+				Salaries:    "110",
+				ReviewsRate: "3.3",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
 			},
 			Languages: domain.Languages{
-				domain.Go: {},
+				domain.Go: {
+					GitHubRepositoriesCount: 2,
+				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 1,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Rust Developer",
