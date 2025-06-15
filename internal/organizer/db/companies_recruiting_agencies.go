@@ -739,5 +739,20 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Recruiting agency
 		},
+		{
+			Name:    "Talent Groups",
+			Website: "https://www.talentgroups.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                51701268,
+				IDs:               nil,
+				Alias:             "talentgroups-connections",
+				Name:              "Talent Groups",
+				Followers:         "432K",
+				Employees:         "501-1K",
+				AssociatedMembers: "514",
+				Verified:          false,
+			},
+			Ignore: true, // Recruiting agency
+		},
 	}
 }

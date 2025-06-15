@@ -2149,7 +2149,7 @@ func companies12Shard() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "Goldman Sach",
+			Name:    "Goldman Sachs",
 			Website: "https://www.goldmansachs.com/",
 			Careers: "https://www.goldmansachs.com/careers",
 			About:   "",

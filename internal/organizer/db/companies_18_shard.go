@@ -1297,6 +1297,79 @@ func companies18Shard() []domain.CompanyProfile {
 				// NOP
 			},
 		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Marketer.com",
+			Website: "https://www.marketer.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                91317726,
+				IDs:               nil,
+				Alias:             "marketer-com",
+				Name:              "Marketer.com",
+				Followers:         "811",
+				Employees:         "11-50",
+				AssociatedMembers: "32",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+				},
+				domain.Rust: {
+					// NOP
+				},
+				domain.Zig: {
+					// NOP
+				},
+				domain.Scala: {
+					// NOP
+				},
+				domain.Elixir: {
+					// NOP
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Clojure Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4249821311/",
+							Date:                 mustDate("2025-06-13"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Haskell: {
+					// NOP
+				},
+			},
+			ShortDescription: "App for fully automated Shopify sales",
+			Industries: []domain.Industry{
+				domain.IndustryMarTech,
+			},
+		},
 
 		// Template
 		//{
