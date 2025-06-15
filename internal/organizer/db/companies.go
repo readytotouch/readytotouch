@@ -12,51 +12,74 @@ var (
 
 func Companies() []domain.CompanyProfile {
 	var (
-		part1              = companiesPart1()
-		part2              = companiesPart2()
-		part3              = companiesPart3()
-		part4              = companiesPart4()
-		part5              = companiesPart5()
-		part6              = companiesPart6()
-		part7              = companiesPart7()
-		part8              = companiesPart8()
-		part9              = companiesPart9()
-		part10             = companiesPart10()
-		part11             = companiesPart11()
-		part12             = companiesPart12()
-		putsourceCompanies = companiesOutsourceCompanies()
+		shard01            = companies01Shard()
+		shard02            = companies02Shard()
+		shard03            = companies03Shard()
+		shard04            = companies04Shard()
+		shard05            = companies05Shard()
+		shard06            = companies06Shard()
+		shard07            = companies07Shard()
+		shard08            = companies08Shard()
+		shard09            = companies09Shard()
+		shard10            = companies10Shard()
+		shard11            = companies11Shard()
+		shard12            = companies12Shard()
+		shard13            = companies13Shard()
+		shard14            = companies14Shard()
+		shard15            = companies15Shard()
+		shard16            = companies16Shard()
+		shard17            = companies17Shard()
+		shard18            = companies18Shard()
+		shard19            = companies19Shard()
+		shard20            = companies20Shard()
+		outsourceCompanies = companiesOutsourceCompanies()
 		recruitingAgencies = companiesRecruitingAgencies()
-		result             = make([]domain.CompanyProfile, 0, len(part1)+
-			len(part2)+
-			len(part3)+
-			len(part4)+
-			len(part5)+
-			len(part6)+
-			len(part7)+
-			len(part8)+
-			len(part9)+
-			len(part10)+
-			len(part11)+
-			len(part12)+
-			len(putsourceCompanies)+
-			len(recruitingAgencies) +
-			+0, // to speed up adding a new part
+		result             = make([]domain.CompanyProfile, 0, len(shard01)+
+			len(shard02)+
+			len(shard03)+
+			len(shard04)+
+			len(shard05)+
+			len(shard06)+
+			len(shard07)+
+			len(shard08)+
+			len(shard09)+
+			len(shard10)+
+			len(shard11)+
+			len(shard12)+
+			len(shard13)+
+			len(shard14)+
+			len(shard15)+
+			len(shard16)+
+			len(shard17)+
+			len(shard18)+
+			len(shard19)+
+			len(shard20)+
+			len(outsourceCompanies)+
+			len(recruitingAgencies),
 		)
 	)
 
-	result = append(result, part1...)
-	result = append(result, part2...)
-	result = append(result, part3...)
-	result = append(result, part4...)
-	result = append(result, part5...)
-	result = append(result, part6...)
-	result = append(result, part7...)
-	result = append(result, part8...)
-	result = append(result, part9...)
-	result = append(result, part10...)
-	result = append(result, part11...)
-	result = append(result, part12...)
-	result = append(result, putsourceCompanies...)
+	result = append(result, shard01...)
+	result = append(result, shard02...)
+	result = append(result, shard03...)
+	result = append(result, shard04...)
+	result = append(result, shard05...)
+	result = append(result, shard06...)
+	result = append(result, shard07...)
+	result = append(result, shard08...)
+	result = append(result, shard09...)
+	result = append(result, shard10...)
+	result = append(result, shard11...)
+	result = append(result, shard12...)
+	result = append(result, shard13...)
+	result = append(result, shard14...)
+	result = append(result, shard15...)
+	result = append(result, shard16...)
+	result = append(result, shard17...)
+	result = append(result, shard18...)
+	result = append(result, shard19...)
+	result = append(result, shard20...)
+	result = append(result, outsourceCompanies...)
 	result = append(result, recruitingAgencies...)
 
 	return result
