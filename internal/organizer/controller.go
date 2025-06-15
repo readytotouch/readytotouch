@@ -19,7 +19,7 @@ import (
 )
 
 var (
-	testFullPublicSince = time.Date(2025, time.May, 11, 0, 0, 0, 0, time.UTC)
+	testFullPublicSince = time.Date(2025, time.July, 11, 0, 0, 0, 0, time.UTC)
 	testFullPublicUntil = time.Date(2026, time.January, 25, 0, 0, 0, 0, time.UTC)
 )
 
@@ -1631,13 +1631,13 @@ func (c *Controller) random(language domain.Language) bool {
 	case domain.Go:
 		return minute%2 == 0
 	case domain.Rust:
-		return minute%4 == 0
+		return minute%2 == 0
 	case domain.Zig:
 		return minute%16 == 0
 	case domain.Scala:
-		return minute%4 == 0
-	case domain.Elixir:
 		return minute%8 == 0
+	case domain.Elixir:
+		return minute%4 == 0
 	case domain.Clojure:
 		return minute%16 == 0
 	case domain.Haskell:
