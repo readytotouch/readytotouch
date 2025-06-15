@@ -135,6 +135,24 @@ func companies02Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Software Engineer (Go, Java)",
+							ShortDescription:     "Real-time Detection & Response",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4235387214/",
+							Date:                 mustDate("2025-06-14"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+						{
+							Title:                "Senior Software Engineer (Python/Go)",
+							ShortDescription:     "Collection Engineering",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4235385381/",
+							Date:                 mustDate("2025-06-14"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -3598,15 +3616,16 @@ func companies02Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{
-						/*
-							{
-								Title:            "",
-								ShortDescription: "",
-								URL:              "https://justjoin.it/offers/tv-development-gmbh-senior-backend-developer",
-								Date:             mustDate(""),
-							},
-						*/
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer Intern (Golang)",
+							ShortDescription:     "Paid Summer Internship",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4247101229/",
+							Date:                 mustDate("2025-06-12"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -5622,6 +5641,15 @@ func companies02Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4145089084/",
 							Date:                 mustDate("2025-02-28"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+						{
+							Title:                "Backend Software Engineer",
+							ShortDescription:     "Golang experience is a must",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4220429654/",
+							Date:                 mustDate("2025-06-14"),
 							WithSalary:           false,
 							Remote:               true,
 						},

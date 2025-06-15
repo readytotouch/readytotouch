@@ -3312,7 +3312,7 @@ func companies17Shard() []domain.CompanyProfile {
 							ShortDescription:     "Metagame Features",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4226950943/",
-							Date:                 mustDate("2025-06-05"), // mustDate("2025-05-28"), // mustDate("2025-05-22"),
+							Date:                 mustDate("2025-06-12"), // mustDate("2025-06-05"), // mustDate("2025-05-28"), // mustDate("2025-05-22"),
 							WithSalary:           false,
 							Remote:               false,
 						},

@@ -1106,5 +1106,21 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Sage",
+			Website: "https://www.sage.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2802,
+				IDs:               []int{2802, 599552},
+				Alias:             "sage-software",
+				Name:              "Sage",
+				Followers:         "548K",
+				Employees:         "10K+",
+				AssociatedMembers: "14,427",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }

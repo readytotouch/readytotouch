@@ -1757,6 +1757,372 @@ func companies18Shard() []domain.CompanyProfile {
 				domain.IndustryCyberSecurity,
 			},
 		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Take-Two Interactive",
+			Website: "https://www.take2games.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                10205,
+				IDs:               []int{10205, 5037214},
+				Alias:             "take-2-interactive-software-inc-",
+				Name:              "Take-Two Interactive",
+				Followers:         "91K",
+				Employees:         "10K+",
+				AssociatedMembers: "1,146",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Go Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4203042089/",
+							Date:                 mustDate("2025-06-12"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust: {
+					// NOP
+				},
+				domain.Zig: {
+					// NOP
+				},
+				domain.Scala: {
+					// NOP
+				},
+				domain.Elixir: {
+					// NOP
+				},
+				domain.Clojure: {
+					// NOP
+				},
+				domain.Haskell: {
+					// NOP
+				},
+			},
+			ShortDescription: "Developer, publisher, and marketer of interactive entertainment for consumers",
+			Industries: []domain.Industry{
+				domain.IndustryGameDev,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Bullish",
+			Website: "https://bullish.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                75109083,
+				IDs:               nil,
+				Alias:             "bebullish",
+				Name:              "Bullish",
+				Followers:         "22K",
+				Employees:         "201-500",
+				AssociatedMembers: "303",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior/Lead Golang Backend Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4247818350/",
+							Date:                 mustDate("2025-06-11"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust: {
+					// NOP
+				},
+				domain.Zig: {
+					// NOP
+				},
+				domain.Scala: {
+					// NOP
+				},
+				domain.Elixir: {
+					// NOP
+				},
+				domain.Clojure: {
+					// NOP
+				},
+				domain.Haskell: {
+					// NOP
+				},
+			},
+			ShortDescription: "",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+			Ignore: true, // Crypto
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Pizza Hut",
+			Website: "https://www.pizzahut.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3406,
+				IDs:               nil,
+				Alias:             "pizza-hut",
+				Name:              "Pizza Hut",
+				Followers:         "346K",
+				Employees:         "10K+",
+				AssociatedMembers: "82,738",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Staff Software Engineer – Full Stack Engineer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4219890382/",
+							Date:                 mustDate("2025-06-14"),
+							WithSalary:           true,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust: {
+					// NOP
+				},
+				domain.Zig: {
+					// NOP
+				},
+				domain.Scala: {
+					// NOP
+				},
+				domain.Elixir: {
+					// NOP
+				},
+				domain.Clojure: {
+					// NOP
+				},
+				domain.Haskell: {
+					// NOP
+				},
+			},
+			ShortDescription: "",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Further",
+			Website: "https://www.gofurther.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                238000,
+				IDs:               nil,
+				Alias:             "further-worldwide",
+				Name:              "Further",
+				Followers:         "6K",
+				Employees:         "201-500",
+				AssociatedMembers: "168",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Full Stack Golang + Typescript Application Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4219327413/",
+							Date:                 mustDate("2025-06-10"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust: {
+					// NOP
+				},
+				domain.Zig: {
+					// NOP
+				},
+				domain.Scala: {
+					// NOP
+				},
+				domain.Elixir: {
+					// NOP
+				},
+				domain.Clojure: {
+					// NOP
+				},
+				domain.Haskell: {
+					// NOP
+				},
+			},
+			ShortDescription: "Further is a data, cloud, and AI company whose sole focus is helping you turn raw data into the right decisions",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Titan OS",
+			Website: "https://www.titanos.tv/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                91587657,
+				IDs:               nil,
+				Alias:             "titanos",
+				Name:              "Titan OS",
+				Followers:         "10K",
+				Employees:         "51-200",
+				AssociatedMembers: "111",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4249271541/",
+							Date:                 mustDate("2025-06-12"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust: {
+					// NOP
+				},
+				domain.Zig: {
+					// NOP
+				},
+				domain.Scala: {
+					// NOP
+				},
+				domain.Elixir: {
+					// NOP
+				},
+				domain.Clojure: {
+					// NOP
+				},
+				domain.Haskell: {
+					// NOP
+				},
+			},
+			ShortDescription: "The company specialises in developing software and solutions to unleash the full potential of Connected TV",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
 
 		// Template
 		//{
