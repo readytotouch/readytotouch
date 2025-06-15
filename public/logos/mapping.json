@@ -96,8 +96,8 @@
   },
   {
     "alias": "adtran",
-    "source": "",
-    "destination": ""
+    "source": "adtran-114x114.png",
+    "destination": "adtran.png"
   },
   {
     "alias": "adverty",
@@ -261,13 +261,13 @@
   },
   {
     "alias": "applied-systems",
-    "source": "",
-    "destination": ""
+    "source": "applied-systems-200x200.jpeg",
+    "destination": "applied-systems.jpeg"
   },
   {
     "alias": "applied-systems-canada",
-    "source": "",
-    "destination": ""
+    "source": "applied-systems-200x200.jpeg",
+    "destination": "applied-systems-canada.jpeg"
   },
   {
     "alias": "appodeal",
@@ -426,8 +426,8 @@
   },
   {
     "alias": "ayloservices",
-    "source": "",
-    "destination": ""
+    "source": "aylo-200x200.jpeg",
+    "destination": "ayloservices.jpeg"
   },
   {
     "alias": "ayoconnect",
@@ -571,6 +571,11 @@
   },
   {
     "alias": "booz-allen-hamilton",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "box",
     "source": "",
     "destination": ""
   },
@@ -761,8 +766,8 @@
   },
   {
     "alias": "citi",
-    "source": "",
-    "destination": ""
+    "source": "citi-200x200.jpeg",
+    "destination": "citi.jpeg"
   },
   {
     "alias": "cj-express-group",
@@ -1301,8 +1306,8 @@
   },
   {
     "alias": "elastic-co",
-    "source": "",
-    "destination": ""
+    "source": "elastic-192x192.png",
+    "destination": "elastic-co.png"
   },
   {
     "alias": "electronic-arts",
@@ -1383,6 +1388,11 @@
     "alias": "eunasolutions",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "event-inc",
+    "source": "event-inc-192x192.png",
+    "destination": "event-inc.png"
   },
   {
     "alias": "evercharge",
@@ -1610,6 +1620,11 @@
     "destination": ""
   },
   {
+    "alias": "fortanix",
+    "source": "fortanix-200x200.jpeg",
+    "destination": "fortanix.jpeg"
+  },
+  {
     "alias": "fortinet",
     "source": "",
     "destination": ""
@@ -1653,6 +1668,11 @@
     "alias": "funnel-io",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "further-worldwide",
+    "source": "further-worldwide-256x256.png",
+    "destination": "further-worldwide.png"
   },
   {
     "alias": "future-research-inc",
@@ -2031,8 +2051,8 @@
   },
   {
     "alias": "ibm",
-    "source": "",
-    "destination": ""
+    "source": "ibm-200x200.jpeg",
+    "destination": "ibm.jpeg"
   },
   {
     "alias": "icapital-network-inc",
@@ -2176,8 +2196,8 @@
   },
   {
     "alias": "jpmorganchase",
-    "source": "",
-    "destination": ""
+    "source": "jpmorganchase-152x152.png",
+    "destination": "jpmorganchase.png"
   },
   {
     "alias": "just-eat-takeaway-com",
@@ -2380,6 +2400,11 @@
     "destination": ""
   },
   {
+    "alias": "lonely-planet",
+    "source": "lonely-planet-200x200.jpeg",
+    "destination": "lonely-planet.jpeg"
+  },
+  {
     "alias": "los-alamos-national-laboratory",
     "source": "",
     "destination": ""
@@ -2456,6 +2481,11 @@
   },
   {
     "alias": "marbill-technologies",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "marketer-com",
     "source": "",
     "destination": ""
   },
@@ -3190,6 +3220,11 @@
     "destination": ""
   },
   {
+    "alias": "pizza-hut",
+    "source": "pizza-hut-200x200.jpeg",
+    "destination": "pizza-hut.jpeg"
+  },
+  {
     "alias": "plaid-",
     "source": "",
     "destination": ""
@@ -3706,8 +3741,8 @@
   },
   {
     "alias": "semrush",
-    "source": "",
-    "destination": ""
+    "source": "semrush-180x180.png",
+    "destination": "semrush.png"
   },
   {
     "alias": "sendle",
@@ -4155,6 +4190,11 @@
     "destination": ""
   },
   {
+    "alias": "take-2-interactive-software-inc-",
+    "source": "take-2-interactive-software-inc-200x200.jpeg",
+    "destination": "take-2-interactive-software-inc-.jpeg"
+  },
+  {
     "alias": "takealot",
     "source": "",
     "destination": ""
@@ -4335,6 +4375,11 @@
     "destination": ""
   },
   {
+    "alias": "titanos",
+    "source": "titanos-200x200.jpeg",
+    "destination": "titanos.jpeg"
+  },
+  {
     "alias": "togethercomputer",
     "source": "",
     "destination": ""
@@ -4401,8 +4446,8 @@
   },
   {
     "alias": "true-anomaly",
-    "source": "",
-    "destination": ""
+    "source": "true-anomaly-256x256.png",
+    "destination": "true-anomaly.png"
   },
   {
     "alias": "truely",
@@ -4816,6 +4861,11 @@
   },
   {
     "alias": "worldtechit",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "wpp-media",
     "source": "",
     "destination": ""
   },
