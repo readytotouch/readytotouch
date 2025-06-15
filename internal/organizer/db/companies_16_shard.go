@@ -295,6 +295,15 @@ func companies16Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Software Engineer, Elixir",
+							ShortDescription:     "Wireless",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4250479645/",
+							Date:                 mustDate("2025-06-14"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Clojure: {},
@@ -782,8 +791,9 @@ func companies16Shard() []domain.CompanyProfile {
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "Vericus",
+				Followers: "8",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -805,12 +815,14 @@ func companies16Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			Languages: domain.Languages{
-				domain.Go:    {},
-				domain.Rust:  {},
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 3,
+				},
 				domain.Zig:   {},
 				domain.Scala: {},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 5,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer",
@@ -1589,6 +1601,15 @@ func companies16Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Golang Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4236185509/",
+							Date:                 mustDate("2025-06-14"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
@@ -1653,8 +1674,9 @@ func companies16Shard() []domain.CompanyProfile {
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "diagrid-labs", // diagridio
+				Followers: "53",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -1663,7 +1685,14 @@ func companies16Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Diagrid-EI_IE8577874.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Diagrid-Reviews-E8577874.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Diagrid-Jobs-E8577874.htm",
+				Jobs:        "",
+				Reviews:     "9",
+				Salaries:    "3",
+				ReviewsRate: "4.1",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -1714,8 +1743,9 @@ func companies16Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "foodji",
+				Followers: "7",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -2009,8 +2039,9 @@ func companies16Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "oolio-group",
+				Followers: "16",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -2019,14 +2050,21 @@ func companies16Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Oolio-EI_IE8473361.11,16.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Oolio-Reviews-E8473361.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Oolio-Jobs-E8473361.htm",
+				Jobs:        "",
+				Reviews:     "9",
+				Salaries:    "24",
+				ReviewsRate: "3.0",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 7,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Full Stack Engineer (Golang & React.js)",
@@ -3106,8 +3144,9 @@ func companies16Shard() []domain.CompanyProfile {
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "omniful",
+				Followers: "12",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -4051,7 +4090,14 @@ func companies16Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Black-Duck-Software-EI_IE10393181.11,30.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Black-Duck-Software-Reviews-E10393181.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Black-Duck-Software-Jobs-E10393181.htm",
+				Jobs:        "",
+				Reviews:     "17",
+				Salaries:    "55",
+				ReviewsRate: "3.4",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",

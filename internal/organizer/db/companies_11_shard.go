@@ -354,11 +354,11 @@ func companies11Shard() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Senior Software Engineer (Backend/ Scala)",
+							Title:                "Senior Software Engineer (Backend/Scala)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4188798669/",
-							Date:                 mustDate("2025-05-22"), // mustDate("2025-04-30"), // mustDate("2025-04-10"),
+							Date:                 mustDate("2025-06-14"), // mustDate("2025-05-22"), // mustDate("2025-04-30"), // mustDate("2025-04-10"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -1436,6 +1436,15 @@ func companies11Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Python/Go Developer",
+							ShortDescription:     "Imunify360 team",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4245418480/",
+							Date:                 mustDate("2025-06-11"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -2021,8 +2030,9 @@ func companies11Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "dnsfilter",
+				Followers: "42",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -2241,8 +2251,9 @@ func companies11Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "barracudanetworks",
+				Followers: "21",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Barracuda",
@@ -2263,7 +2274,7 @@ func companies11Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 8,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer (React, Java Spring, Golang)",
@@ -2870,8 +2881,9 @@ func companies11Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "commercetools",
+				Followers: "269",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -3194,8 +3206,9 @@ func companies11Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "pitch-io",
+				Followers: "38",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -3223,7 +3236,7 @@ func companies11Shard() []domain.CompanyProfile {
 				domain.Scala:  {},
 				domain.Elixir: {},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 5,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Backend Clojure Engineer (m/f/d)",

@@ -739,5 +739,35 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Recruiting agency
 		},
+		{
+			Name:    "Talent Groups",
+			Website: "https://www.talentgroups.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                51701268,
+				IDs:               nil,
+				Alias:             "talentgroups-connections",
+				Name:              "Talent Groups",
+				Followers:         "432K",
+				Employees:         "501-1K",
+				AssociatedMembers: "514",
+				Verified:          false,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Workana",
+			Website: "https://www.workana.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2524324,
+				IDs:               nil,
+				Alias:             "workana",
+				Name:              "Workana",
+				Followers:         "128K",
+				Employees:         "51-200",
+				AssociatedMembers: "4,883",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
 	}
 }

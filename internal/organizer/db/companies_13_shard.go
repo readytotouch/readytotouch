@@ -243,7 +243,7 @@ func companies13Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4187284222/",
-							Date:                 mustDate("2025-05-22"), //  mustDate("2025-03-17"),
+							Date:                 mustDate("2025-06-12"), // mustDate("2025-05-22"), //  mustDate("2025-03-17"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -623,7 +623,7 @@ func companies13Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4142024603/",
-							Date:                 mustDate("2025-05-03"), // mustDate("2025-04-11"), // mustDate("2025-03-20"),
+							Date:                 mustDate("2025-06-14"), // mustDate("2025-05-03"), // mustDate("2025-04-11"), // mustDate("2025-03-20"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -1922,6 +1922,15 @@ func companies13Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Software Engineer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4233832043/",
+							Date:                 mustDate("2025-06-12"),
+							WithSalary:           true,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -2149,8 +2158,9 @@ func companies13Shard() []domain.CompanyProfile {
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "adjoeio",
+				Followers: "29",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -2173,7 +2183,7 @@ func companies13Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 7,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Go Developer",
@@ -2235,6 +2245,15 @@ func companies13Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4238684540/",
 							Date:                 mustDate("2025-06-03"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Go Backend Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4248017872/",
+							Date:                 mustDate("2025-06-11"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2577,8 +2596,9 @@ func companies13Shard() []domain.CompanyProfile {
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "TileDB-Inc",
+				Followers: "112",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -2601,7 +2621,7 @@ func companies13Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 4,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Staff Software Engineer – Golang (required)",

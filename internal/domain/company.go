@@ -201,6 +201,7 @@ type CompanyProfile struct {
 	Name                      string
 	Website                   string // Production website
 	Careers                   string // Careers page URL
+	ReferralProgram           string // Referral program URL
 	About                     string // About URL
 	Blog                      string // Development blog URL
 	Transparency              string // Transparency URL e.g. https://buffer.com/transparency

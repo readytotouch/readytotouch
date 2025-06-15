@@ -209,6 +209,15 @@ func companies12Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Rust Developer",
+							ShortDescription:     "Proxy Solution",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4250693044/",
+							Date:                 mustDate("2025-06-14"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig:     {},
@@ -368,8 +377,9 @@ func companies12Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "zalopay-oss",
+				Followers: "234",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -385,7 +395,7 @@ func companies12Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 7,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer — Golang",
@@ -1366,8 +1376,9 @@ func companies12Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "adform",
+				Followers: "9",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -1393,7 +1404,7 @@ func companies12Shard() []domain.CompanyProfile {
 				domain.Rust: {},
 				domain.Zig:  {},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 1,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer, Java/Scala",
@@ -1688,8 +1699,9 @@ func companies12Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "qnx",
+				Followers: "107",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -1755,8 +1767,9 @@ func companies12Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "solarisbank",
+				Followers: "21",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -2149,7 +2162,7 @@ func companies12Shard() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "Goldman Sach",
+			Name:    "Goldman Sachs",
 			Website: "https://www.goldmansachs.com/",
 			Careers: "https://www.goldmansachs.com/careers",
 			About:   "",
@@ -2165,8 +2178,9 @@ func companies12Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "goldmansachs",
+				Followers: "1.5k",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "goldman-sachs",
@@ -2194,7 +2208,7 @@ func companies12Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 8,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Golang Software Engineer",
@@ -2220,6 +2234,15 @@ func companies12Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4124674198/",
 							Date:                 mustDate("2025-05-05"), // mustDate("2025-04-12"), // mustDate("2025-03-22"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Golang Software Engineer",
+							ShortDescription:     "Core Engineering",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4247882590/",
+							Date:                 mustDate("2025-06-11"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2314,8 +2337,9 @@ func companies12Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "Simulmedia",
+				Followers: "5",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -2538,9 +2562,31 @@ func companies12Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Multilingual Expert Software Engineer (C, Go, Rust, Python)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4249256830/",
+							Date:                 mustDate("2025-06-13"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
-				domain.Rust:    {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Multilingual Expert Software Engineer (C, Go, Rust, Python)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4249256830/",
+							Date:                 mustDate("2025-06-13"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},
@@ -3804,8 +3850,9 @@ func companies12Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "holidaycheck",
+				Followers: "6",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -3824,14 +3871,14 @@ func companies12Shard() []domain.CompanyProfile {
 				domain.Rust: {},
 				domain.Zig:  {},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 3,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer – Scala",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4087274629/",
-							Date:                 mustDate("2025-05-20"), // mustDate("2025-04-27"), // mustDate("2025-03-16"),
+							Date:                 mustDate("2025-06-11"), // mustDate("2025-05-20"), // mustDate("2025-04-27"), // mustDate("2025-03-16"),
 							WithSalary:           false,
 							Remote:               false,
 						},

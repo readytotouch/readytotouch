@@ -57,6 +57,15 @@
                     <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> {%s company.Name %} "Tech Blog"
                 </a>
             {% endif %}
+            {% if company.ReferralProgram == "" %}
+                <a href='{%s googleSearchOnSite(hostname(company.Website), "Referral Program") %}' target="_blank">
+                    <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> site:{%s hostname(company.Website) %} "Referral Program"
+                </a>
+                <a href='{%s googleSearch(company.Name + " " + "Referral Program") %}' target="_blank">
+                    <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> {%s company.Name %} "Referral Program"
+                </a>
+                <hr>
+            {% endif %}
         </div>
     </li>
     {% endfor %}
