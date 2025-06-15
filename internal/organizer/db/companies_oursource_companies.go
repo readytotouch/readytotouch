@@ -1074,5 +1074,37 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "E-Solutions",
+			Website: "https://e-solutionsinc.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                750072,
+				IDs:               nil,
+				Alias:             "e-solutions-inc",
+				Name:              "E-Solutions",
+				Followers:         "336K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "1,771",
+				Verified:          false,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Talan",
+			Website: "https://www.talan.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                28542,
+				IDs:               []int{15432, 28542, 55444, 132835, 278066, 427360, 11202100, 17908204, 33298999},
+				Alias:             "talan",
+				Name:              "Talan",
+				Followers:         "350K",
+				Employees:         "5K-10K",
+				AssociatedMembers: "4,432",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }

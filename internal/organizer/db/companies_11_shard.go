@@ -354,11 +354,11 @@ func companies11Shard() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Senior Software Engineer (Backend/ Scala)",
+							Title:                "Senior Software Engineer (Backend/Scala)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4188798669/",
-							Date:                 mustDate("2025-05-22"), // mustDate("2025-04-30"), // mustDate("2025-04-10"),
+							Date:                 mustDate("2025-06-14"), // mustDate("2025-05-22"), // mustDate("2025-04-30"), // mustDate("2025-04-10"),
 							WithSalary:           false,
 							Remote:               false,
 						},

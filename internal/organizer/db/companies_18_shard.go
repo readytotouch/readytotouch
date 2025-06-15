@@ -1046,7 +1046,18 @@ func companies18Shard() []domain.CompanyProfile {
 					// NOP
 				},
 				domain.Scala: {
-					// NOP
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Scala Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4247302848/",
+							Date:                 mustDate("2025-06-12"),
+							WithSalary:           true,
+							Remote:               false,
+						},
+					},
 				},
 				domain.Elixir: {
 					// NOP
@@ -1585,6 +1596,79 @@ func companies18Shard() []domain.CompanyProfile {
 				},
 			},
 			ShortDescription: "Online marketplace for conference & event spaces",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Box",
+			Website: "https://www.box.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                54178,
+				IDs:               nil,
+				Alias:             "box",
+				Name:              "Box",
+				Followers:         "179K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "3,980",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+				},
+				domain.Rust: {
+					// NOP
+				},
+				domain.Zig: {
+					// NOP
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Scala Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4215392486/",
+							Date:                 mustDate("2025-06-12"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Elixir: {
+					// NOP
+				},
+				domain.Clojure: {
+					// NOP
+				},
+				domain.Haskell: {
+					// NOP
+				},
+			},
+			ShortDescription: "Intelligent Content Cloud, a single platform that enables organizations to fuel collaboration, manage the entire content lifecycle, secure critical content, and transform business workflows with enterprise AI",
 			Industries:       []domain.Industry{
 				// NOP
 			},
