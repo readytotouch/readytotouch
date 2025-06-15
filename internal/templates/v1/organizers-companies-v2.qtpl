@@ -290,6 +290,11 @@
                   {% else %}
                       <a href="{%s company.Blog %}" target="_blank" class="card__top-link button-link">Dev Blog</a>
                   {% endif %}
+                  {% if company.ReferralProgram == "" %}
+                      <span class="card__top-link button-link disabled">Referral program</span>
+                  {% else %}
+                      <a href="{%s company.ReferralProgram %}" target="_blank" class="card__top-link button-link">Referral program</a>
+                  {% endif %}
               </div>
               <div class="card__info">
                 <figure class="card__figure">

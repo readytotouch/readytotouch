@@ -1033,6 +1033,15 @@ func companies03Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Golang Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4249613510/",
+							Date:                 mustDate("2025-06-13"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -3940,6 +3949,15 @@ func companies03Shard() []domain.CompanyProfile {
 							WithSalary:           true, // salary range from 3.800 to 4.600 EUR per month
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4249876193/",
+							Date:                 mustDate("2025-06-13"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -3949,7 +3967,7 @@ func companies03Shard() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "We create and promote our own products in travel, finance, and entertech",
 			Industries:       []domain.Industry{},
 		},
 
@@ -4723,18 +4741,16 @@ func companies03Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{
-						/*
-							{
-								Title:                "",
-								ShortDescription:     "",
-								SwitchingOpportunity: "",
-								URL:                  "",
-								Date:                 mustDate(""),
-								WithSalary:           false,
-								Remote:               false,
-							},
-						*/
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4248770904/",
+							Date:                 mustDate("2025-06-14"),
+							WithSalary:           true,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust: {},

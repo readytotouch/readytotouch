@@ -416,6 +416,19 @@ func StreamOrganizersCompaniesV2(qw422016 *qt422016.Writer,
                   `)
 		}
 		qw422016.N().S(`
+                  `)
+		if company.ReferralProgram == "" {
+			qw422016.N().S(`
+                      <span class="card__top-link button-link disabled">Referral program</span>
+                  `)
+		} else {
+			qw422016.N().S(`
+                      <a href="`)
+			qw422016.E().S(company.ReferralProgram)
+			qw422016.N().S(`" target="_blank" class="card__top-link button-link">Referral program</a>
+                  `)
+		}
+		qw422016.N().S(`
               </div>
               <div class="card__info">
                 <figure class="card__figure">
