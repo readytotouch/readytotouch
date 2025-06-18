@@ -1,21 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://readytotouch.com/</loc>
+    </url>
+    <url>
         <loc>https://readytotouch.com/organizers</loc>
+    </url>
+    <url>
         <loc>https://readytotouch.com/organizers/golang/companies</loc>
+    </url>
+    <url>
         <loc>https://readytotouch.com/organizers/golang/jobs</loc>
+    </url>
+    <url>
         <loc>https://readytotouch.com/organizers/rust/companies</loc>
+    </url>
+    <url>
         <loc>https://readytotouch.com/organizers/rust/jobs</loc>
+    </url>
+    <url>
         <loc>https://readytotouch.com/organizers/zig/companies</loc>
+    </url>
+    <url>
         <loc>https://readytotouch.com/organizers/zig/jobs</loc>
+    </url>
+    <url>
         <loc>https://readytotouch.com/organizers/scala/companies</loc>
+    </url>
+    <url>
         <loc>https://readytotouch.com/organizers/scala/jobs</loc>
+    </url>
+    <url>
         <loc>https://readytotouch.com/organizers/elixir/companies</loc>
+    </url>
+    <url>
         <loc>https://readytotouch.com/organizers/elixir/jobs</loc>
+    </url>
+    <url>
+        <loc>https://readytotouch.com/organizers/erlang/companies</loc>
+    </url>
+    <url>
+        <loc>https://readytotouch.com/organizers/erlang/jobs</loc>
+    </url>
+    <url>
         <loc>https://readytotouch.com/organizers/clojure/companies</loc>
+    </url>
+    <url>
         <loc>https://readytotouch.com/organizers/clojure/jobs</loc>
+    </url>
+    <url>
         <loc>https://readytotouch.com/organizers/haskell/companies</loc>
+    </url>
+    <url>
         <loc>https://readytotouch.com/organizers/haskell/jobs</loc>
+    </url>
+    <url>
+        <loc>https://readytotouch.com/organizers/fsharp/companies</loc>
+    </url>
+    <url>
+        <loc>https://readytotouch.com/organizers/fsharp/jobs</loc>
+    </url>
+    <url>
+        <loc>https://readytotouch.com/organizers/ocaml/companies</loc>
+    </url>
+    <url>
+        <loc>https://readytotouch.com/organizers/ocaml/jobs</loc>
     </url>
 </urlset>

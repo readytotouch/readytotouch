@@ -1,6 +1,8 @@
 package organizer
 
 import (
+	"encoding/xml"
+	"fmt"
 	"net/http"
 	"net/url"
 	"slices"
@@ -139,7 +141,7 @@ func (c *Controller) CompaniesV1(ctx *gin.Context) {
 		// NOP, continue
 	}
 
-	companies := c.companies(organizerFeature)
+	companies := c.companies(organizerFeature.Organizer.Language)
 
 	// Never first
 	slices.Reverse(companies)
@@ -189,7 +191,7 @@ func (c *Controller) CompaniesV2(ctx *gin.Context) {
 		// NOP, continue
 	}
 
-	companies := c.companies(organizerFeature)
+	companies := c.companies(organizerFeature.Organizer.Language)
 
 	// Never first
 	slices.Reverse(companies)
@@ -500,7 +502,7 @@ func (c *Controller) Vacancies(ctx *gin.Context) {
 		// NOP, continue
 	}
 
-	companies := c.companies(organizerFeature)
+	companies := c.companies(organizerFeature.Organizer.Language)
 
 	var (
 		preparedVacancies = make([]domain.PreparedVacancy, 0, 1024)
@@ -808,6 +810,38 @@ func (c *Controller) WaitlistSubscribe(ctx *gin.Context) {
 	}
 
 	ctx.JSON(http.StatusOK, nil)
+}
+
+func (c *Controller) SitemapCompanies(organizer domain.Organizer) gin.HandlerFunc {
+	type Url struct {
+		Loc     string `xml:"loc"`
+		LastMod string `xml:"lastmod"`
+	}
+
+	type UrlSet struct {
+		XMLName xml.Name `xml:"urlset"`
+		Xmlns   string   `xml:"xmlns,attr"`
+		Urls    []Url    `xml:"url"`
+	}
+
+	return func(ctx *gin.Context) {
+		companies := c.companies(organizer.Language)
+
+		urls := make([]Url, len(companies))
+
+		for i, company := range companies {
+			urls[i] = Url{
+				Loc:     fmt.Sprintf("https://%s/organizers/%s/companies/%s", ctx.Request.Host, organizer.Alias, company.LinkedInProfile.Alias),
+				LastMod: c.sitemapCompanyLastModified(company.Languages[organizer.Language].Vacancies),
+			}
+		}
+
+		ctx.Header("Content-Type", "application/xml")
+		ctx.XML(http.StatusOK, UrlSet{
+			Xmlns: "http://www.sitemaps.org/schemas/sitemap/0.9",
+			Urls:  urls,
+		})
+	}
 }
 
 func (c *Controller) CompanyViewStats(ctx *gin.Context) {
@@ -1298,7 +1332,7 @@ func (c *Controller) getHeaderProfiles(ctx *gin.Context, userID int64) ([]domain
 	return nil, nil
 }
 
-func (c *Controller) companies(organizerFeature domain.OrganizerFeature) []domain.CompanyProfile {
+func (c *Controller) companies(language domain.Language) []domain.CompanyProfile {
 	var (
 		source    = db.CloneCompanies()
 		companies = make([]domain.CompanyProfile, 0, len(source))
@@ -1323,8 +1357,6 @@ func (c *Controller) companies(organizerFeature domain.OrganizerFeature) []domai
 			V1: organizers.CompanyAliasToLogoMapV1[company.LinkedInProfile.Alias],
 			V2: organizers.CompanyAliasToLogoMapV2[company.LinkedInProfile.Alias],
 		}
-
-		language := organizerFeature.Organizer.Language
 
 		vacancies := company.Languages[language].Vacancies
 
@@ -1671,4 +1703,20 @@ func (c *Controller) skipSmallCompany(company domain.CompanyProfile) bool {
 	}
 
 	return true
+}
+
+func (c *Controller) sitemapCompanyLastModified(vacancies []domain.Vacancy) string {
+	if len(vacancies) == 0 {
+		return "2025-01-01"
+	}
+
+	var maxVacancyDate time.Time
+
+	for _, vacancy := range vacancies {
+		if vacancy.Date.After(maxVacancyDate) {
+			maxVacancyDate = vacancy.Date
+		}
+	}
+
+	return maxVacancyDate.Format(time.DateOnly)
 }
