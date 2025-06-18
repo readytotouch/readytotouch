@@ -427,6 +427,18 @@ func main() {
 		// https://www.facebook.com/privacy/policy/
 		StaticFile("privacy-policy", "./public/privacy-policy.html")
 
+	r.
+		GET("/sitemap-golang-companies.xml", organizerController.SitemapCompanies(domain.OrganizerGolang)).
+		GET("/sitemap-rust-companies.xml", organizerController.SitemapCompanies(domain.OrganizerRust)).
+		GET("/sitemap-zig-companies.xml", organizerController.SitemapCompanies(domain.OrganizerZig)).
+		GET("/sitemap-scala-companies.xml", organizerController.SitemapCompanies(domain.OrganizerScala)).
+		GET("/sitemap-elixir-companies.xml", organizerController.SitemapCompanies(domain.OrganizerElixir)).
+		GET("/sitemap-erlang-companies.xml", organizerController.SitemapCompanies(domain.OrganizerErlang)).
+		GET("/sitemap-clojure-companies.xml", organizerController.SitemapCompanies(domain.OrganizerClojure)).
+		GET("/sitemap-haskell-companies.xml", organizerController.SitemapCompanies(domain.OrganizerHaskell)).
+		GET("/sitemap-fsharp-companies.xml", organizerController.SitemapCompanies(domain.OrganizerFSharp)).
+		GET("/sitemap-ocaml-companies.xml", organizerController.SitemapCompanies(domain.OrganizerOCaml))
+
 	{
 		// very fast solution
 		go func() {

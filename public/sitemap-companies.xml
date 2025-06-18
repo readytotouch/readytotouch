@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-    <url>
-        <loc>https://readytotouch.com/</loc>
-    </url>
-</urlset>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <sitemap>
+        <loc>https://readytotouch.com/sitemap-golang-companies.xml</loc>
+    </sitemap>
+    <sitemap>
+        <loc>https://readytotouch.com/sitemap-rust-companies.xml</loc>
+    </sitemap>
+    <sitemap>
+        <loc>https://readytotouch.com/sitemap-zig-companies.xml</loc>
+    </sitemap>
+    <sitemap>
+        <loc>https://readytotouch.com/sitemap-scala-companies.xml</loc>
+    </sitemap>
+    <sitemap>
+        <loc>https://readytotouch.com/sitemap-elixir-companies.xml</loc>
+    </sitemap>
+    <sitemap>
+        <loc>https://readytotouch.com/sitemap-erlang-companies.xml</loc>
+    </sitemap>
+    <sitemap>
+        <loc>https://readytotouch.com/sitemap-clojure-companies.xml</loc>
+    </sitemap>
+    <sitemap>
+        <loc>https://readytotouch.com/sitemap-haskell-companies.xml</loc>
+    </sitemap>
+    <sitemap>
+        <loc>https://readytotouch.com/sitemap-fsharp-companies.xml</loc>
+    </sitemap>
+    <sitemap>
+        <loc>https://readytotouch.com/sitemap-ocaml-companies.xml</loc>
+    </sitemap>
+</sitemapindex>
