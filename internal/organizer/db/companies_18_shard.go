@@ -499,7 +499,8 @@ func companies18Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "opendoor",
+				Employees: "1,500",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Opendoor-EI_IE1021515.11,19.htm",
@@ -567,7 +568,8 @@ func companies18Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "superannotate",
+				Employees: "150",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-SuperAnnotate-AI-EI_IE5649190.11,27.htm",
@@ -1122,7 +1124,8 @@ func companies18Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "the-home-depot",
+				Employees: "500,000",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-The-Home-Depot-EI_IE655.11,25.htm",
@@ -1276,7 +1279,8 @@ func companies18Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "travelport",
+				Employees: "4,250",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Travelport-EI_IE41925.11,21.htm",
@@ -1586,7 +1590,14 @@ func companies18Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Event-EI_IE1343788.11,16.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Event-Reviews-E1343788.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Event-Jobs-E1343788.htm",
+				Jobs:        "20",
+				Reviews:     "20",
+				Salaries:    "19",
+				ReviewsRate: "4.5",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -1657,7 +1668,8 @@ func companies18Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "box",
+				Employees: "3,500",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Box-EI_IE254092.11,14.htm",
@@ -1747,7 +1759,8 @@ func companies18Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "fortanix",
+				Employees: "150",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Fortanix-EI_IE1977675.11,19.htm",
@@ -1838,7 +1851,8 @@ func companies18Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "take-two-interactive-software",
+				Employees: "760",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Take-Two-EI_IE7413.11,19.htm",
@@ -1992,7 +2006,8 @@ func companies18Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "pizza-hut",
+				Employees: "54,201",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Pizza-Hut-EI_IE10090.11,20.htm",
@@ -2309,10 +2324,18 @@ func companies18Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "liveperson",
+				Employees: "2,000",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-LivePerson-EI_IE11463.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/LivePerson-Reviews-E11463.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/LivePerson-Jobs-E11463.htm",
+				Jobs:        "25",
+				Reviews:     "944",
+				Salaries:    "1.7K",
+				ReviewsRate: "2.7",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",

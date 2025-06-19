@@ -2294,7 +2294,14 @@ func companies17Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-HAZA-Foods-EI_IE2359119.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/HAZA-Foods-Reviews-E2359119.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/HAZA-Foods-Jobs-E2359119.htm",
+				Jobs:        "",
+				Reviews:     "51",
+				Salaries:    "80",
+				ReviewsRate: "2.7",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -4311,7 +4318,8 @@ func companies17Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "paypal",
+				Employees: "34,620",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-PayPal-EI_IE9848.11,17.htm",

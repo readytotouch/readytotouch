@@ -983,7 +983,14 @@ func companies11Shard() []domain.CompanyProfile {
 				Employees: "450",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-MoneyLion-EI_IE1053194.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/MoneyLion-Reviews-E1053194.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/MoneyLion-Jobs-E1053194.htm",
+				Jobs:        "37",
+				Reviews:     "261",
+				Salaries:    "432",
+				ReviewsRate: "3.7",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -1382,7 +1389,14 @@ func companies11Shard() []domain.CompanyProfile {
 				Employees: "150",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-CloudLinux-EI_IE1448501.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/CloudLinux-Reviews-E1448501.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/CloudLinux-Jobs-E1448501.htm",
+				Jobs:        "24",
+				Reviews:     "67",
+				Salaries:    "46",
+				ReviewsRate: "4.2",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",

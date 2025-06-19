@@ -806,8 +806,13 @@ func companies07Shard() []domain.CompanyProfile {
 				Employees: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-reMarkable-Norway-EI_IE4488192.11,28.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/reMarkable-Norway-Reviews-E4488192.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/reMarkable-Norway-Jobs-E4488192.htm",
+				Jobs:        "",
+				Reviews:     "9",
+				Salaries:    "17",
+				ReviewsRate: "4.5",
 				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{

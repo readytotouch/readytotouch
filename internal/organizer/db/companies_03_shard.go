@@ -3729,6 +3729,12 @@ func companies03Shard() []domain.CompanyProfile {
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Sytac-EI_IE1255983.11,16.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Sytac-Reviews-E1255983.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Sytac-Jobs-E1255983.htm",
+				Jobs:        "",
+				Reviews:     "55",
+				Salaries:    "92",
+				ReviewsRate: "4.0",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
