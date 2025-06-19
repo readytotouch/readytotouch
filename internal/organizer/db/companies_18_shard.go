@@ -2525,6 +2525,85 @@ func companies18Shard() []domain.CompanyProfile {
 				// NOP
 			},
 		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "audibene",
+			Website: "https://www.audibene.de/",
+			Careers: "https://karriere.audibene.de/",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3248758,
+				IDs:               nil,
+				Alias:             "audibene",
+				Name:              "audibene",
+				Followers:         "26K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "456",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Rust Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4253509850/",
+							Date:                 mustDate("2025-06-20"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Hearing care company",
+			Industries: []domain.Industry{
+				domain.IndustryHealthTech,
+			},
+		},
 
 		// Template
 		//{
@@ -2563,35 +2642,31 @@ func companies18Shard() []domain.CompanyProfile {
 		//	Languages: domain.Languages{
 		//		domain.Go: {
 		//			GitHubRepositoriesCount: 0,
-		//			Vacancies: []domain.Vacancy{
-		//				{
-		//					Title:                "",
-		//					ShortDescription:     "",
-		//					SwitchingOpportunity: "",
-		//					URL:                  "",
-		//					Date:                 mustDate(""),
-		//					WithSalary:           false,
-		//					Remote:               false,
-		//				},
-		//			},
+		//			Vacancies:               []domain.Vacancy{},
 		//		},
 		//		domain.Rust: {
-		//			// NOP
+		//			GitHubRepositoriesCount: 0,
+		//			Vacancies:               []domain.Vacancy{},
 		//		},
 		//		domain.Zig: {
-		//			// NOP
+		//			GitHubRepositoriesCount: 0,
+		//			Vacancies:               []domain.Vacancy{},
 		//		},
 		//		domain.Scala: {
-		//			// NOP
+		//			GitHubRepositoriesCount: 0,
+		//			Vacancies:               []domain.Vacancy{},
 		//		},
 		//		domain.Elixir: {
-		//			// NOP
+		//			GitHubRepositoriesCount: 0,
+		//			Vacancies:               []domain.Vacancy{},
 		//		},
 		//		domain.Clojure: {
-		//			// NOP
+		//			GitHubRepositoriesCount: 0,
+		//			Vacancies:               []domain.Vacancy{},
 		//		},
 		//		domain.Haskell: {
-		//			// NOP
+		//			GitHubRepositoriesCount: 0,
+		//			Vacancies:               []domain.Vacancy{},
 		//		},
 		//	},
 		//	ShortDescription: "",

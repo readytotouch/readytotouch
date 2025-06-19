@@ -380,6 +380,11 @@
     "destination": ""
   },
   {
+    "alias": "audibene",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "audigent",
     "source": "",
     "destination": ""
@@ -981,8 +986,8 @@
   },
   {
     "alias": "curve-ltd",
-    "source": "",
-    "destination": ""
+    "source": "curve-200x200.jpeg",
+    "destination": "curve-ltd.jpeg"
   },
   {
     "alias": "customer-io",
@@ -1081,8 +1086,8 @@
   },
   {
     "alias": "delivery-hero-se",
-    "source": "",
-    "destination": ""
+    "source": "delivery-hero-200x200.jpeg",
+    "destination": "delivery-hero-se.jpeg"
   },
   {
     "alias": "delltechnologies",
@@ -1761,8 +1766,8 @@
   },
   {
     "alias": "getstream",
-    "source": "",
-    "destination": ""
+    "source": "getstream-192x192.png",
+    "destination": "getstream.png"
   },
   {
     "alias": "gettaxi",
@@ -2691,8 +2696,8 @@
   },
   {
     "alias": "motorolasolutions",
-    "source": "",
-    "destination": ""
+    "source": "motorolasolutions-200x200.jpeg",
+    "destination": "motorolasolutions.jpeg"
   },
   {
     "alias": "moveworksai",
@@ -4841,8 +4846,8 @@
   },
   {
     "alias": "wiseaccount",
-    "source": "",
-    "destination": ""
+    "source": "wiseaccount-200x200.jpeg",
+    "destination": "wiseaccount.jpeg"
   },
   {
     "alias": "wisehome",
