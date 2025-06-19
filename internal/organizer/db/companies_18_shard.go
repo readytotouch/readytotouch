@@ -2429,6 +2429,152 @@ func companies18Shard() []domain.CompanyProfile {
 				// NOP
 			},
 		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "bunny.net",
+			Website: "https://bunny.net/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                10484043,
+				IDs:               nil,
+				Alias:             "bunnynet",
+				Name:              "bunny.net",
+				Followers:         "6K",
+				Employees:         "51-200",
+				AssociatedMembers: "86",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer (Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4248785636/",
+							Date:                 mustDate("2025-06-14"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Zig: {
+					// NOP
+				},
+				domain.Scala: {
+					// NOP
+				},
+				domain.Elixir: {
+					// NOP
+				},
+				domain.Clojure: {
+					// NOP
+				},
+				domain.Haskell: {
+					// NOP
+				},
+			},
+			ShortDescription: "bunny.net is the content delivery platform",
+			Industries: []domain.Industry{
+				domain.IndustryDevOps,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Lynk",
+			Website: "https://lynk.world/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                11024220,
+				IDs:               nil,
+				Alias:             "lynk-global-inc",
+				Name:              "Lynk",
+				Followers:         "10K",
+				Employees:         "11-50",
+				AssociatedMembers: "70",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Satellite Flight Software Engineer (Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4253168651/",
+							Date:                 mustDate("2025-06-18"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig: {
+					// NOP
+				},
+				domain.Scala: {
+					// NOP
+				},
+				domain.Elixir: {
+					// NOP
+				},
+				domain.Clojure: {
+					// NOP
+				},
+				domain.Haskell: {
+					// NOP
+				},
+			},
+			ShortDescription: "Lynk allows commercial subscribers to send and receive text messages to and from space",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
 
 		// Template
 		//{
