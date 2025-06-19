@@ -274,6 +274,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4092131109/":                                                               547,  // getstream
 		"https://www.linkedin.com/jobs/view/4092129283/":                                                               894,  // getstream
 		"https://www.linkedin.com/jobs/view/4126529846/":                                                               1010, // getstream
+		"https://www.linkedin.com/jobs/view/4252376326/":                                                               2122, // getstream
 		"https://www.linkedin.com/jobs/view/4081153248/":                                                               421,  // form3-financial-cloud
 		"https://www.linkedin.com/jobs/view/4056824974/":                                                               422,  // splunk
 		"https://www.linkedin.com/jobs/view/4198708227/":                                                               1414, // splunk
@@ -302,6 +303,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4197754346/":                                                               1386, // delivery-hero-se
 		"https://www.linkedin.com/jobs/view/4198576389/":                                                               1717, // delivery-hero-se
 		"https://www.linkedin.com/jobs/view/4236824432/":                                                               1931, // delivery-hero-se
+		"https://www.linkedin.com/jobs/view/4251381297/":                                                               2123, // delivery-hero-se
 		"https://www.linkedin.com/jobs/view/3935382943/":                                                               424,  // fubotv
 		"https://www.linkedin.com/jobs/view/4110428412/":                                                               425,  // yassir
 		"https://www.linkedin.com/jobs/view/3819771736/":                                                               426,  // viodotcom
@@ -317,6 +319,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4143662469/":                                                               756,  // lightspeedcommerce
 		"https://www.linkedin.com/jobs/view/4160162842/":                                                               922,  // lightspeedcommerce
 		"https://www.linkedin.com/jobs/view/4214699908/":                                                               1888, // lightspeedcommerce
+		"https://www.linkedin.com/jobs/view/4238266530/":                                                               2124, // lightspeedcommerce
 		"https://www.linkedin.com/jobs/view/4022342302/":                                                               319,  // squarespace
 		"https://www.linkedin.com/jobs/view/3872933701/":                                                               320,  // curve-ltd
 		"https://www.linkedin.com/jobs/view/4231828489/":                                                               1900, // curve-ltd
@@ -1460,6 +1463,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4123118327/":                                                               640,  // hootsuite
 		"https://www.linkedin.com/jobs/view/4122037400/":                                                               641,  // hsbc
 		"https://www.linkedin.com/jobs/view/4176181217/":                                                               1079, // hsbc
+		"https://www.linkedin.com/jobs/view/4253147232/":                                                               2125, // hsbc
 		"https://www.linkedin.com/jobs/view/4120259237/":                                                               642,  // affinipay
 		"https://www.linkedin.com/jobs/view/4221369074/":                                                               1769, // affinipay
 		"https://www.linkedin.com/jobs/view/4230136460/":                                                               1872, // affinipay
@@ -2117,6 +2121,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4250367265/":                                                               2119, // liveperson
 		"https://www.linkedin.com/jobs/view/4248785636/":                                                               2120, // bunnynet
 		"https://www.linkedin.com/jobs/view/4253168651/":                                                               2121, // lynk-global-inc
+		"https://www.linkedin.com/jobs/view/4253509850/":                                                               2126, // audibene
 		"https://www.linkedin.com/jobs/view/3914839625/":                                                               372,  // cognizant
 		"https://www.linkedin.com/jobs/view/4120737001/":                                                               600,  // cognizant
 		"https://www.linkedin.com/jobs/view/4149258542/":                                                               787,  // cognizant
