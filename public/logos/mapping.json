@@ -986,8 +986,8 @@
   },
   {
     "alias": "curve-ltd",
-    "source": "",
-    "destination": ""
+    "source": "curve-200x200.jpeg",
+    "destination": "curve-ltd.jpeg"
   },
   {
     "alias": "customer-io",
@@ -2696,8 +2696,8 @@
   },
   {
     "alias": "motorolasolutions",
-    "source": "",
-    "destination": ""
+    "source": "motorolasolutions-200x200.jpeg",
+    "destination": "motorolasolutions.jpeg"
   },
   {
     "alias": "moveworksai",
