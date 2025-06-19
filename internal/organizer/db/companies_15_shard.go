@@ -3444,7 +3444,7 @@ func companies15Shard() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "LSEG (London Stock Exchange Group)",
+			Name:    "LSEG",
 			Website: "https://www.lseg.com/",
 			Careers: "https://www.lseg.com/careers",
 			About:   "",
@@ -3453,10 +3453,10 @@ func companies15Shard() []domain.CompanyProfile {
 				ID:                1314683,
 				IDs:               []int{8388, 8916, 16619, 405895, 1314683, 2721642, 4986853, 5317799, 10426432, 14468558, 33186884},
 				Alias:             "london-stock-exchange-group",
-				Name:              "LSEG (London Stock Exchange Group)",
-				Followers:         "456K",
+				Name:              "LSEG",
+				Followers:         "478K",
 				Employees:         "10K+",
-				AssociatedMembers: "22,632",
+				AssociatedMembers: "22,736",
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -3498,13 +3498,22 @@ func companies15Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Lead Scala Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4144858801/",
+							Date:                 mustDate("2025-06-17"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Elixir:  {},
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
+			ShortDescription: "LSEG (London Stock Exchange Group)",
 			Industries: []domain.Industry{
 				domain.IndustryFinTech,
 			},
