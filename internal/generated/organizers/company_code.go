@@ -1003,6 +1003,11 @@ var (
 		"pizza-hut":                           1003, // Pizza Hut
 		"further-worldwide":                   1004, // Further
 		"titanos":                             1005, // Titan OS
+		"london-stock-exchange-group":         849,  // LSEG
+		"akka-io":                             1006, // Akka
+		"liveperson":                          1007, // LivePerson
+		"bunnynet":                            1008, // bunny.net
+		"lynk-global-inc":                     1009, // Lynk
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 
