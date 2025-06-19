@@ -128,7 +128,7 @@ func (c *Controller) CompaniesV1(ctx *gin.Context) {
 		return
 	}
 
-	if c.softAuth(ctx, authUserID, organizerFeature.Organizer.Language) {
+	if c.softAuthRedirect(ctx, authUserID, organizerFeature.Organizer.Language) {
 		ctx.Redirect(http.StatusFound, "/organizers/golang/welcome"+c.redirect(ctx.Request.URL.Path))
 
 		return
@@ -178,7 +178,7 @@ func (c *Controller) CompaniesV2(ctx *gin.Context) {
 		return
 	}
 
-	if c.softAuth(ctx, authUserID, organizerFeature.Organizer.Language) {
+	if c.softAuthRedirect(ctx, authUserID, organizerFeature.Organizer.Language) {
 		ctx.Redirect(http.StatusFound, "/organizers/golang/welcome"+c.redirect(ctx.Request.URL.Path))
 
 		return
@@ -335,7 +335,7 @@ func (c *Controller) CompanyV2(ctx *gin.Context) {
 		return
 	}
 
-	if c.softAuth(ctx, authUserID, organizerFeature.Organizer.Language) {
+	if c.softAuthRedirect(ctx, authUserID, organizerFeature.Organizer.Language) {
 		ctx.Redirect(http.StatusFound, "/organizers/golang/welcome"+c.redirect(ctx.Request.URL.Path))
 
 		return
@@ -489,7 +489,7 @@ func (c *Controller) Vacancies(ctx *gin.Context) {
 		return
 	}
 
-	if c.softAuth(ctx, authUserID, organizerFeature.Organizer.Language) {
+	if c.softAuthRedirect(ctx, authUserID, organizerFeature.Organizer.Language) {
 		ctx.Redirect(http.StatusFound, "/organizers/golang/welcome"+c.redirect(ctx.Request.URL.Path))
 
 		return
@@ -1633,8 +1633,12 @@ func (c *Controller) anyRemoteVacancy(vacancies []domain.Vacancy) bool {
 	return false
 }
 
-func (c *Controller) softAuth(ctx *gin.Context, authUserID int64, language domain.Language) bool {
+func (c *Controller) softAuthRedirect(ctx *gin.Context, authUserID int64, language domain.Language) bool {
 	if authUserID > 0 {
+		return false
+	}
+
+	if ctx.Request.Host == "localhost" {
 		return false
 	}
 

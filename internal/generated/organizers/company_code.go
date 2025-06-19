@@ -846,7 +846,7 @@ var (
 		"claritev":                            846,  // Claritev
 		"duffelhq":                            847,  // Duffel
 		"fossa":                               848,  // FOSSA
-		"london-stock-exchange-group":         849,  // LSEG (London Stock Exchange Group)
+		"london-stock-exchange-group":         849,  // LSEG
 		"getnetworld":                         850,  // Getnet
 		"hunterio":                            851,  // Hunter.io
 		"sawitpro":                            852,  // SawitPRO
@@ -1003,6 +1003,10 @@ var (
 		"pizza-hut":                           1003, // Pizza Hut
 		"further-worldwide":                   1004, // Further
 		"titanos":                             1005, // Titan OS
+		"akka-io":                             1006, // Akka
+		"liveperson":                          1007, // LivePerson
+		"bunnynet":                            1008, // bunny.net
+		"lynk-global-inc":                     1009, // Lynk
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

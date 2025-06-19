@@ -155,6 +155,11 @@
     "destination": ""
   },
   {
+    "alias": "akka-io",
+    "source": "akka-io-200x200.jpeg",
+    "destination": "akka-io.jpeg"
+  },
+  {
     "alias": "alertmedia",
     "source": "",
     "destination": ""
@@ -576,8 +581,8 @@
   },
   {
     "alias": "box",
-    "source": "",
-    "destination": ""
+    "source": "box-200x200.jpeg",
+    "destination": "box.jpeg"
   },
   {
     "alias": "bread-financial",
@@ -598,6 +603,11 @@
     "alias": "bufbuild",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "bunnynet",
+    "source": "bunnynet-200x200.jpeg",
+    "destination": "bunnynet.jpeg"
   },
   {
     "alias": "bynder",
@@ -1356,8 +1366,8 @@
   },
   {
     "alias": "epic-games",
-    "source": "",
-    "destination": ""
+    "source": "epic-games-200x200.jpeg",
+    "destination": "epic-games.jpeg"
   },
   {
     "alias": "ericsson",
@@ -2380,6 +2390,11 @@
     "destination": ""
   },
   {
+    "alias": "liveperson",
+    "source": "liveperson-200x200.jpeg",
+    "destination": "liveperson.jpeg"
+  },
+  {
     "alias": "lloyds-banking-group",
     "source": "",
     "destination": ""
@@ -2433,6 +2448,11 @@
     "alias": "luminovo",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "lynk-global-inc",
+    "source": "lynk-global-inc-50x50.png",
+    "destination": "lynk-global-inc.png"
   },
   {
     "alias": "lytxinc",
@@ -3371,8 +3391,8 @@
   },
   {
     "alias": "qlik",
-    "source": "",
-    "destination": ""
+    "source": "qlik-192x192.png",
+    "destination": "qlik.png"
   },
   {
     "alias": "qnx",
@@ -3546,8 +3566,8 @@
   },
   {
     "alias": "rialtic-io",
-    "source": "",
-    "destination": ""
+    "source": "rialtic-io-256x256.png",
+    "destination": "rialtic-io.png"
   },
   {
     "alias": "ringcentral",
@@ -3956,8 +3976,8 @@
   },
   {
     "alias": "squarepoint-capital",
-    "source": "",
-    "destination": ""
+    "source": "squarepoint-capital-200x200.jpeg",
+    "destination": "squarepoint-capital.jpeg"
   },
   {
     "alias": "squarespace",
@@ -4866,8 +4886,8 @@
   },
   {
     "alias": "wpp-media",
-    "source": "",
-    "destination": ""
+    "source": "wpp-media.svg",
+    "destination": "wpp-media.svg"
   },
   {
     "alias": "xataio",
