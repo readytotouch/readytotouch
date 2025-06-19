@@ -1122,5 +1122,53 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Wizeline",
+			Website: "https://www.wizeline.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3543771,
+				IDs:               nil,
+				Alias:             "wizeline",
+				Name:              "Wizeline",
+				Followers:         "76K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "1,544",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Vertex Agility",
+			Website: "https://www.vertexagility.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                694216,
+				IDs:               nil,
+				Alias:             "vertex-agility-ltd",
+				Name:              "Vertex Agility",
+				Followers:         "127K",
+				Employees:         "51-200",
+				AssociatedMembers: "254",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "EXL",
+			Website: "https://www.exlservice.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                163743,
+				IDs:               []int{28813, 163743},
+				Alias:             "exl-service",
+				Name:              "EXL",
+				Followers:         "1M",
+				Employees:         "10K+",
+				AssociatedMembers: "38,166",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }
