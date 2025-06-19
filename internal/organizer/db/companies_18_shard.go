@@ -2528,19 +2528,20 @@ func companies18Shard() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
-			Careers: "",
+			Name:    "audibene",
+			Website: "https://www.audibene.de/",
+			Careers: "https://karriere.audibene.de/",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                3248758,
+				IDs:               nil,
+				Alias:             "audibene",
+				Name:              "audibene",
+				Followers:         "26K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "456",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -2565,7 +2566,17 @@ func companies18Shard() []domain.CompanyProfile {
 				},
 				domain.Rust: {
 					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Rust Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4253509850/",
+							Date:                 mustDate("2025-06-20"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
 				},
 				domain.Zig: {
 					GitHubRepositoriesCount: 0,
@@ -2588,9 +2599,9 @@ func companies18Shard() []domain.CompanyProfile {
 					Vacancies:               []domain.Vacancy{},
 				},
 			},
-			ShortDescription: "",
-			Industries:       []domain.Industry{
-				// NOP
+			ShortDescription: "Hearing care company",
+			Industries: []domain.Industry{
+				domain.IndustryHealthTech,
 			},
 		},
 		{
