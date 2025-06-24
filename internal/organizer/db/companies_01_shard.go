@@ -4310,7 +4310,7 @@ func companies01Shard() []domain.CompanyProfile {
 							ShortDescription:     "We are building a new team to focus on the Rust programming language and its ecosystem on Ubuntu",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/3210061536/",
-							Date:                 mustDate("2025-05-07"), // mustDate("2025-04-15"), // mustDate("2025-03-02"), // mustDate("2024-12-04"),
+							Date:                 mustDate("2025-06-21"), // mustDate("2025-05-07"), // mustDate("2025-04-15"), // mustDate("2025-03-02"), // mustDate("2024-12-04"),
 							WithSalary:           false,
 							Remote:               false,
 						},

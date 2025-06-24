@@ -1963,6 +1963,15 @@ func companies06Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Rust Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4255302022/",
+							Date:                 mustDate("2025-06-24"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig:     {},
@@ -5392,6 +5401,7 @@ func companies06Shard() []domain.CompanyProfile {
 			YCombinatorURL:            "",
 			Industries:                []domain.Industry{},
 			HasEmployeesFromCountries: []domain.Country{},
+			Ignore:                    true, // Cryptocurrency
 		},
 		{
 			ID:      0,  // system

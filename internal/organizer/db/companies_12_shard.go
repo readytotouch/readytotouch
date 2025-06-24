@@ -187,7 +187,7 @@ func companies12Shard() []domain.CompanyProfile {
 							ShortDescription:     "Proxy Solution",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4153485948/",
-							Date:                 mustDate("2025-06-02"), // mustDate("2025-04-20"), // mustDate("2025-03-31"), // mustDate("2025-03-09"),
+							Date:                 mustDate("2025-06-24"), // mustDate("2025-06-02"), // mustDate("2025-04-20"), // mustDate("2025-03-31"), // mustDate("2025-03-09"),
 							WithSalary:           false,
 							Remote:               false,
 						},

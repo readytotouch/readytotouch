@@ -1202,5 +1202,21 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "ERNI",
+			Website: "https://www.betterask.erni/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                55018,
+				IDs:               []int{55018, 1414690},
+				Alias:             "erni",
+				Name:              "ERNI",
+				Followers:         "55K",
+				Employees:         "501-1K",
+				AssociatedMembers: "962",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }
