@@ -769,5 +769,20 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Recruiting agency
 		},
+		{
+			Name:    "Red Oak Technologies",
+			Website: "https://www.redoaktech.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                47475,
+				IDs:               nil,
+				Alias:             "red-oak-technologies",
+				Name:              "Red Oak Technologies",
+				Followers:         "129K",
+				Employees:         "501-1K",
+				AssociatedMembers: "220",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
 	}
 }
