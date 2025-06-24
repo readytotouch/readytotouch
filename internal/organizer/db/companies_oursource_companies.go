@@ -1170,5 +1170,37 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Viveris",
+			Website: "https://www.viveris.fr/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                35418,
+				IDs:               nil,
+				Alias:             "viveris",
+				Name:              "Viveris",
+				Followers:         "21K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "866",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Compunnel Inc.",
+			Website: "https://www.compunnel.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                16690,
+				IDs:               nil,
+				Alias:             "compunnel-software-group",
+				Name:              "Compunnel Inc.",
+				Followers:         "718K",
+				Employees:         "5K-10K",
+				AssociatedMembers: "2,620",
+				Verified:          false,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }
