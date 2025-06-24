@@ -3181,8 +3181,8 @@
   },
   {
     "alias": "peak",
-    "source": "",
-    "destination": ""
+    "source": "peak-144x144.png",
+    "destination": "peak.png"
   },
   {
     "alias": "peek-com",
@@ -3620,6 +3620,11 @@
     "destination": ""
   },
   {
+    "alias": "rumble-com",
+    "source": "rumble-180x180.png",
+    "destination": "rumble-com.png"
+  },
+  {
     "alias": "rundoo",
     "source": "",
     "destination": ""
@@ -3711,8 +3716,8 @@
   },
   {
     "alias": "scaleway",
-    "source": "",
-    "destination": ""
+    "source": "scaleway-180x180.png",
+    "destination": "scaleway.png"
   },
   {
     "alias": "scanbo",
@@ -3893,6 +3898,11 @@
     "alias": "snyk",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "soax-network",
+    "source": "soax-200x200.jpeg",
+    "destination": "soax-network.jpeg"
   },
   {
     "alias": "social-discovery-group",
@@ -4403,6 +4413,11 @@
     "alias": "titanos",
     "source": "titanos-200x200.jpeg",
     "destination": "titanos.jpeg"
+  },
+  {
+    "alias": "toast-inc",
+    "source": "toast-inc-200x200.jpeg",
+    "destination": "toast-inc.jpeg"
   },
   {
     "alias": "togethercomputer",

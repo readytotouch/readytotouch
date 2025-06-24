@@ -784,5 +784,35 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Recruiting agency
 		},
+		{
+			Name:    "iXceed Solutions",
+			Website: "https://ixceed-solutions.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1626442,
+				IDs:               nil,
+				Alias:             "ixceed-solutions",
+				Name:              "iXceed Solutions",
+				Followers:         "127K",
+				Employees:         "201-500",
+				AssociatedMembers: "121",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Vallum Associates",
+			Website: "https://vallumassociates.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                10348811,
+				IDs:               nil,
+				Alias:             "vallum-associates-limited",
+				Name:              "Vallum Associates",
+				Followers:         "196K",
+				Employees:         "11-50",
+				AssociatedMembers: "63",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
 	}
 }
