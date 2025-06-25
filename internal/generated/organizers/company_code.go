@@ -1008,6 +1008,9 @@ var (
 		"bunnynet":                            1008, // bunny.net
 		"lynk-global-inc":                     1009, // Lynk
 		"audibene":                            1010, // audibene
+		"toast-inc":                           1011, // Toast
+		"rumble-com":                          1012, // Rumble
+		"soax-network":                        1013, // SOAX
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

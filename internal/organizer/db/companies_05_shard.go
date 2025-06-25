@@ -1379,15 +1379,16 @@ func companies05Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 23,
-					Vacancies:               []domain.Vacancy{
-						/*
-							{
-								Title:            "",
-								ShortDescription: "",
-								URL:              "https://app.welcometothejungle.com/jobs/dFlIR1ow",
-								Date:             mustDate(""),
-							},
-						*/
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer – Go",
+							ShortDescription:     "Storage",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4253917560/",
+							Date:                 mustDate("2025-06-24"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -3303,7 +3304,7 @@ func companies05Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4169080251/",
-							Date:                 mustDate("2025-03-12"), // mustDate("2025-02-28"),
+							Date:                 mustDate("2025-06-24"), // mustDate("2025-03-12"), // mustDate("2025-02-28"),
 							WithSalary:           false,
 							Remote:               false,
 						},
