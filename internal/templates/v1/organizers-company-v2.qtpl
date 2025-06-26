@@ -232,6 +232,9 @@
 				<a href="{%s linkedinConnectionsFormerEmployeesURL([]Company{company}) %}" target="_blank" class="button-link card__links-link">Connections (former employees)</a>
 			</li>
 			<li class="card__links-item">
+				<a href="{%s linkedinEmployeesPostsURL([]Company{company}, organizerFeature.Organizer.Title) %}" target="_blank" class="button-link card__links-link">Employees' posts</a>
+			</li>
+			<li class="card__links-item">
 				<a href="{%s linkedinJobsURL([]Company{company}, string(organizerFeature.Organizer.LanguageTitleKeywords)) %}" target="_blank" class="button-link card__links-link">Jobs</a>
 			</li>
 		</ul>
@@ -260,6 +263,9 @@
 			<li class="card__links-item card__links-item--disabled">
 				<span class="button-link card__links-link">Repositories (?)</span>
 			</li>
+			<li class="card__links-item card__links-item--disabled">
+				<span class="button-link card__links-link">Followers (?)</span>
+			</li>
 			{% else %}
 			<li class="card__links-item card__links-item--title">
 				<div class="card__links-item-group">
@@ -287,6 +293,9 @@
 			</li>
 			<li class="card__links-item">
 				<a href="https://github.com/orgs/{%s company.GitHubProfile.Login %}/repositories?q=lang:{%s organizerFeature.Organizer.GitHubAlias %}" target="_blank" class="button-link card__links-link">Repositories ({%d fetchGitHubRepositoriesCount(company, organizerFeature.Organizer.Language) %})</a>
+			</li>
+			<li class="card__links-item">
+				<a href="https://github.com/orgs/{%s company.GitHubProfile.Login %}/followers" target="_blank" class="button-link card__links-link">Followers ({%s fetchGitHubFollowers(company) %})</a>
 			</li>
 			{% endif %}
 		</ul>

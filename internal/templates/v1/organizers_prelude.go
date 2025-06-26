@@ -131,6 +131,14 @@ func fetchGitHubRepositoriesCount(company domain.CompanyProfile, language domain
 	return company.Languages[language].GitHubRepositoriesCount
 }
 
+func fetchGitHubFollowers(company domain.CompanyProfile) string {
+	if company.GitHubProfile.Followers == "" {
+		return "?"
+	}
+
+	return company.GitHubProfile.Followers
+}
+
 func formatBlindEmployees(s string) string {
 	if s == "" {
 		return "???"
