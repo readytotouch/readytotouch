@@ -68,6 +68,7 @@ class Connections {
         public readonly connections1stXURL: string,
         public readonly connections2ndXURL: string,
         public readonly formerEmployeesURL: string,
+        public readonly postsURL: string,
         public readonly jobsURL: string,
     ) {
     }
@@ -83,6 +84,7 @@ class Company {
         public readonly connections1stXURL: string,
         public readonly connections2ndXURL: string,
         public readonly formerEmployeesURL: string,
+        public readonly postsURL: string,
         public readonly jobsURL: string,
     ) {
     }
@@ -155,6 +157,7 @@ function renderCompany(company: Company, x: boolean): string {
             <a class="card__group-item button-link" href="${company.connections1stURL}" target="_blank">Connections 1st</a>
             <a class="card__group-item button-link" href="${company.connections2ndURL}" target="_blank">Connections 2nd</a>
             <a class="card__group-item button-link" href="${company.formerEmployeesURL}" target="_blank">Former employees</a>
+            <a class="card__group-item button-link" href="${company.postsURL}" target="_blank">Employees' posts</a>
             <a class="card__group-item button-link" href="${company.jobsURL}" target="_blank">Jobs</a>
         </div>
         ${xBlock}
@@ -173,6 +176,7 @@ function renderTotal(connections: Connections): string {
             <a class="card__group-item button-link" href="${connections.connections1stURL}" target="_blank">Connections 1st</a>
             <a class="card__group-item button-link" href="${connections.connections2ndURL}" target="_blank">Connections 2nd</a>
             <a class="card__group-item button-link" href="${connections.formerEmployeesURL}" target="_blank">Former employees</a>
+            <a class="card__group-item button-link" href="${connections.postsURL}" target="_blank">Employees' posts</a>
             <a class="card__group-item button-link" href="${connections.jobsURL}" target="_blank">Jobs</a>
         </div>
         <div class="card__group-block">
@@ -218,6 +222,7 @@ function renderCompanies(companies: Array<ResponseCompany>) {
             prepared.connections1stXURL,
             prepared.connections2ndXURL,
             prepared.formerEmployeesURL,
+            prepared.postsURL,
             prepared.jobsURL,
         ), x));
         firstQuerySelector($card, "button").addEventListener("click", function () {
@@ -274,6 +279,7 @@ function prepareConnections(
     let connections1stXURL = new URL("https://www.linkedin.com/search/results/PEOPLE/");
     let connections2ndXURL = new URL("https://www.linkedin.com/search/results/PEOPLE/");
     let formerEmployeesURL = new URL("https://www.linkedin.com/search/results/PEOPLE/");
+    let postsURL = new URL("https://www.linkedin.com/search/results/content/");
     let jobsURL = new URL("https://www.linkedin.com/jobs/search/");
 
     connections1stURL.searchParams.append("currentCompany", currentCompanyQueryParam);
@@ -296,6 +302,10 @@ function prepareConnections(
 
     formerEmployeesURL.searchParams.append("pastCompany", currentCompanyQueryParam);
 
+    postsURL.searchParams.append("authorCompany", currentCompanyQueryParam);
+    postsURL.searchParams.append("datePosted", `"past-month"`);
+    postsURL.searchParams.append("sortBy", `"date_posted"`);
+
     jobsURL.searchParams.append("location", "Worldwide");
     jobsURL.searchParams.append("geoId", "92000000");               // Worldwide
     jobsURL.searchParams.append("sortBy", "DD");                    // order by "Most recent
@@ -308,6 +318,7 @@ function prepareConnections(
         connections1stXURL.searchParams.append("keywords", latestKeywords);
         connections2ndXURL.searchParams.append("keywords", latestKeywords);
         formerEmployeesURL.searchParams.append("keywords", latestKeywords);
+        postsURL.searchParams.append("keywords", latestKeywords);
     }
 
     if (latestLocation !== "") {
@@ -330,6 +341,7 @@ function prepareConnections(
         connections1stXURL.toString(),
         connections2ndXURL.toString(),
         formerEmployeesURL.toString(),
+        postsURL.toString(),
         jobsURL.toString(),
     );
 }

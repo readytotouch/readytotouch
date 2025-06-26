@@ -51,6 +51,23 @@ func linkedinConnectionsFormerEmployeesURL(companies []Company) string {
 	return "https://www.linkedin.com/search/results/PEOPLE/?" + values.Encode()
 }
 
+func linkedinEmployeesPostsURL(companies []Company, languageTitle string) string {
+	companyQueryParam, _ := json.Marshal(companiesToLinkedInIDs(companies))
+
+	values := url.Values{
+		"authorCompany": {string(companyQueryParam)},
+		"datePosted":    {`"past-month"`},
+		"sortBy":        {"RELEVANT", `"date_posted"`},
+		"keywords":      {`"Hiring" OR ` + `"` + languageTitle + `"`}, // "Hiring" OR "Golang"
+	}
+
+	if len(companies) > 0 {
+		values["f_C"] = []string{strings.Join(companiesToLinkedInIDs(companies), ",")}
+	}
+
+	return "https://www.linkedin.com/search/results/content/?" + values.Encode()
+}
+
 func linkedinJobsURL(companies []Company, keywords string) string {
 	values := url.Values{
 		"keywords": {keywords},
