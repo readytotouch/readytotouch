@@ -3098,6 +3098,560 @@ func companies18Shard() []domain.CompanyProfile {
 				domain.IndustryFinTech,
 			},
 		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "RELX",
+			Website: "https://www.relx.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3022,
+				IDs:               nil,
+				Alias:             "relx-group",
+				Name:              "RELX",
+				Followers:         "93K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "2,761",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Rust Senior Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4256117557/",
+							Date:                 mustDate("2025-06-26"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Provider of information-based analytics and decision tools for professional and business customers",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Castor",
+			Website: "https://www.castoredc.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3075405,
+				IDs:               nil,
+				Alias:             "castoredc",
+				Name:              "Castor",
+				Followers:         "23K",
+				Employees:         "201-500",
+				AssociatedMembers: "275",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer (Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4256124146/",
+							Date:                 mustDate("2025-06-26"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Modular clinical trial platform",
+			Industries: []domain.Industry{
+				domain.IndustryMedTech,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Symbolica AI",
+			Website: "https://www.symbolica.ai/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                82669556,
+				IDs:               nil,
+				Alias:             "symbolica-ai",
+				Name:              "Symbolica AI",
+				Followers:         "3K",
+				Employees:         "11-50",
+				AssociatedMembers: "18",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer (Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4255852068/",
+							Date:                 mustDate("2025-06-28"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "AI research lab",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Fern",
+			Website: "https://www.buildwithfern.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                88002225,
+				IDs:               nil,
+				Alias:             "buildwithfern",
+				Name:              "Fern",
+				Followers:         "5K",
+				Employees:         "11-50",
+				AssociatedMembers: "34",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer, Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4258500752/",
+							Date:                 mustDate("2025-06-28"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Generate SDKs in multiple languages and interactive API documentation",
+			Industries: []domain.Industry{
+				domain.IndustryDevOps,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Bullet",
+			Website: "https://www.bullet.xyz/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                83484451,
+				IDs:               nil,
+				Alias:             "bulletxyz",
+				Name:              "Bullet",
+				Followers:         "2K",
+				Employees:         "11-50",
+				AssociatedMembers: "13",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Rust Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4256368070/",
+							Date:                 mustDate("2025-06-27"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Solana's trading layer",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+			Ignore: true, // Cryptocurrency
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Famedly GmbH",
+			Website: "https://famedly.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                12976028,
+				IDs:               nil,
+				Alias:             "famedly",
+				Name:              "Famedly GmbH",
+				Followers:         "2K",
+				Employees:         "11-50",
+				AssociatedMembers: "36",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Python / Rust Developer",
+							ShortDescription:     "Matrix Synapse Homeserver",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4258947366/",
+							Date:                 mustDate("2025-06-29"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Medical collaboration platform",
+			Industries: []domain.Industry{
+				domain.IndustryMedTech,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "",
+			Website: "https://chapa.co/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                75151479,
+				IDs:               nil,
+				Alias:             "chapa-financial-technologies",
+				Name:              "Chapa",
+				Followers:         "25K",
+				Employees:         "11-50",
+				AssociatedMembers: "61",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Backend Developer (Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4258996962/",
+							Date:                 mustDate("2025-06-29"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Payment gateway",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
+		},
 
 		// Template
 		//{

@@ -36,7 +36,7 @@ func linkedinConnectionsURL(companies []Company, universities []University) stri
 		values["schoolFilter"] = []string{string(schoolQueryParam)}
 	}
 
-	return "https://www.linkedin.com/search/results/PEOPLE/?" + values.Encode()
+	return "https://www.linkedin.com/search/results/people/?" + values.Encode()
 }
 
 func linkedinConnectionsFormerEmployeesURL(companies []Company) string {
@@ -48,7 +48,7 @@ func linkedinConnectionsFormerEmployeesURL(companies []Company) string {
 		"keywords":    {keywordsCommon},
 	}
 
-	return "https://www.linkedin.com/search/results/PEOPLE/?" + values.Encode()
+	return "https://www.linkedin.com/search/results/people/?" + values.Encode()
 }
 
 func linkedinEmployeesPostsURL(companies []Company, languageTitle string) string {

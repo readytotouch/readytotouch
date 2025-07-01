@@ -3183,7 +3183,7 @@ func companies17Shard() []domain.CompanyProfile {
 							ShortDescription:     "Platform Software",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4229279528/",
-							Date:                 mustDate("2025-06-08"), // mustDate("2025-05-17"),
+							Date:                 mustDate("2025-06-29"), // mustDate("2025-06-08"), // mustDate("2025-05-17"),
 							WithSalary:           false,
 							Remote:               true,
 						},

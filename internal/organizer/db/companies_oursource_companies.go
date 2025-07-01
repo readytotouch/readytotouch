@@ -1234,5 +1234,37 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Schuberg Philis",
+			Website: "https://schubergphilis.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                16104,
+				IDs:               nil,
+				Alias:             "schuberg-philis",
+				Name:              "Schuberg Philis",
+				Followers:         "14K",
+				Employees:         "201-500",
+				AssociatedMembers: "471",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "RITS",
+			Website: "https://rits.center/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                5182288,
+				IDs:               nil,
+				Alias:             "ritscenter",
+				Name:              "RITS",
+				Followers:         "13K",
+				Employees:         "501-1K",
+				AssociatedMembers: "236",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }

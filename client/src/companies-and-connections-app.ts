@@ -274,11 +274,11 @@ function prepareConnections(
         universitiesQueryParam = JSON.stringify(["239895", "986104", "15171", "69715404", "10866", "28514", "17959", "312647", "1379596", "38307", "760298"]);
     }
 
-    let connections1stURL = new URL("https://www.linkedin.com/search/results/PEOPLE/");
-    let connections2ndURL = new URL("https://www.linkedin.com/search/results/PEOPLE/");
-    let connections1stXURL = new URL("https://www.linkedin.com/search/results/PEOPLE/");
-    let connections2ndXURL = new URL("https://www.linkedin.com/search/results/PEOPLE/");
-    let formerEmployeesURL = new URL("https://www.linkedin.com/search/results/PEOPLE/");
+    let connections1stURL = new URL("https://www.linkedin.com/search/results/people/");
+    let connections2ndURL = new URL("https://www.linkedin.com/search/results/people/");
+    let connections1stXURL = new URL("https://www.linkedin.com/search/results/people/");
+    let connections2ndXURL = new URL("https://www.linkedin.com/search/results/people/");
+    let formerEmployeesURL = new URL("https://www.linkedin.com/search/results/people/");
     let postsURL = new URL("https://www.linkedin.com/search/results/content/");
     let jobsURL = new URL("https://www.linkedin.com/jobs/search/");
 

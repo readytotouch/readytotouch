@@ -859,5 +859,20 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Recruiting agency
 		},
+		{
+			Name:    "Ocho",
+			Website: "https://www.ochopeople.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                89286373,
+				IDs:               nil,
+				Alias:             "ocho-people",
+				Name:              "Ocho",
+				Followers:         "36K",
+				Employees:         "2-10",
+				AssociatedMembers: "16",
+				Verified:          false,
+			},
+			Ignore: true, // Recruiting agency
+		},
 	}
 }
