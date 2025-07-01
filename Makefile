@@ -203,10 +203,11 @@ unsafe-browser-extension:
 		&& zip -r readytotouch-unsafe-browser-extension.zip readytotouch-unsafe-browser-extension \
 		&& chmod 777 readytotouch-unsafe-browser-extension.zip
 
+# make more-companies VERSION=64
 more-companies:
 ifndef VERSION
 	$(error VERSION is not set. Use `make more-companies VERSION=X`)
 endif
 	git checkout main && git pull
-	git checkout -b more-companies-linkedin-june-2025-v$(VERSION)
-	git commit -m "More companies LinkedIn June 2025 v$(VERSION)" --allow-empty
+	git checkout -b more-companies-linkedin-july-2025-v$(VERSION)
+	git commit -m "More companies LinkedIn July 2025 v$(VERSION)" --allow-empty
