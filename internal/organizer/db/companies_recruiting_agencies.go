@@ -814,5 +814,50 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Recruiting agency
 		},
+		{
+			Name:    "Russell Tobin",
+			Website: "https://russelltobin.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                827183,
+				IDs:               nil,
+				Alias:             "827183", // "russell-tobin-&-associates-llc",
+				Name:              "Russell Tobin",
+				Followers:         "1M",
+				Employees:         "201-500",
+				AssociatedMembers: "816",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Gazelle Global",
+			Website: "https://www.gazellegc.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                9312644,
+				IDs:               nil,
+				Alias:             "gazelle-global-consulting",
+				Name:              "Gazelle Global",
+				Followers:         "210K",
+				Employees:         "51-200",
+				AssociatedMembers: "28",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Harvey Nash",
+			Website: "https://www.harveynash.co.uk/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                164131,
+				IDs:               []int{26199, 28173, 164131, 2110112, 72217697},
+				Alias:             "harvey-nash",
+				Name:              "Harvey Nash",
+				Followers:         "701K",
+				Employees:         "5K-10K",
+				AssociatedMembers: "1,302",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
 	}
 }

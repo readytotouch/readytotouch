@@ -1218,5 +1218,21 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "emagine",
+			Website: "https://www.emagine.org/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                30899,
+				IDs:               []int{30899, 18487093, 18499941, 83005407},
+				Alias:             "emagine",
+				Name:              "emagine",
+				Followers:         "139K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "1,906",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }
