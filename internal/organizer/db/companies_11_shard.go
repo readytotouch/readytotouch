@@ -1661,12 +1661,21 @@ func companies11Shard() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Senior Software Engineer (RUST/Python)",
+							Title:                "Senior Software Engineer (Rust/Python)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4231780612/",
 							Date:                 mustDate("2025-06-08"),
 							WithSalary:           true,
+							Remote:               false,
+						},
+						{
+							Title:                "Principal Software Engineer (Rust/Python)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4231777846/",
+							Date:                 mustDate("2025-06-29"),
+							WithSalary:           false,
 							Remote:               false,
 						},
 					},
