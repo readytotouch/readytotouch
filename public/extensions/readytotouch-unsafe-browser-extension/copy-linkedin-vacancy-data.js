@@ -70,12 +70,25 @@ function remote() {
 }
 
 function salary() {
-    const $elements = document.querySelectorAll(".job-details-preferences-and-skills span");
-    for (const $element of $elements) {
-        const s = $element.textContent.trim().toLowerCase();
+    {
+        const $elements = document.querySelectorAll(".job-details-preferences-and-skills span");
+        for (const $element of $elements) {
+            const s = $element.textContent.trim().toLowerCase();
 
-        if (s.includes("$") || s.includes("€") || s.includes("£")) {
-            return true;
+            if (s.includes("$") || s.includes("€") || s.includes("£")) {
+                return true;
+            }
+        }
+    }
+
+    {
+        const $elements = document.querySelectorAll(".job-details-fit-level-preferences span");
+        for (const $element of $elements) {
+            const s = $element.textContent.trim().toLowerCase();
+
+            if (s.includes("$") || s.includes("€") || s.includes("£")) {
+                return true;
+            }
         }
     }
 

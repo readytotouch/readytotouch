@@ -3688,12 +3688,12 @@ func companies07Shard() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Principal Software Engineer (Rust, Networking)",
+							Title:                "Principal Rust Developer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4259762332/",
 							Date:                 mustDate("2025-07-01"),
-							WithSalary:           false,
+							WithSalary:           true,
 							Remote:               false,
 						},
 					},

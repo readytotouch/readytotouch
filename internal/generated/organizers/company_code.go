@@ -322,7 +322,7 @@ var (
 		"strongdm":                            311,  // StrongDM
 		"jmawireless":                         313,  // JMA Wireless
 		"on2it-cybersecurity":                 314,  // ON2IT Cybersecurity
-		"cycloid":                             315,  // Cycloid - Sustainable Platform Engineering
+		"cycloid":                             315,  // Cycloid
 		"circuitknowledge":                    316,  // Circuit
 		"ayloservices":                        317,  // Aylo
 		"factset":                             318,  // FactSet
@@ -1011,6 +1011,16 @@ var (
 		"toast-inc":                           1011, // Toast
 		"rumble-com":                          1012, // Rumble
 		"soax-network":                        1013, // SOAX
+		"artificiallabs":                      1014, // Artificial Labs
+		"quorum-software":                     1015, // Quorum Software
+		"state-street":                        1016, // State Street
+		"relx-group":                          1017, // RELX
+		"castoredc":                           1018, // Castor
+		"symbolica-ai":                        1019, // Symbolica AI
+		"buildwithfern":                       1020, // Fern
+		"famedly":                             1021, // Famedly GmbH
+		"chapa-financial-technologies":        1022, // Chapa
+		"webbeds":                             1023, // WebBeds
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

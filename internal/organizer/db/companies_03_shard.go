@@ -4344,7 +4344,7 @@ func companies03Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4255818917/",
 							Date:                 mustDate("2025-06-28"),
 							WithSalary:           false,
-							Remote:               false,
+							Remote:               true,
 						},
 					},
 				},
