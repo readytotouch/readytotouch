@@ -533,18 +533,19 @@ func companies06Shard() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "Appodeal",
+			Name:    "Appodeal, Inc.",
 			Website: "https://appodeal.com/",
 			Careers: "https://appodeal.com/career/",
 			About:   "https://appodeal.com/about/",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                19139082,
+				IDs:               nil,
 				Alias:             "appodeal",
-				Name:              "Appodeal",
-				Followers:         "7K",
+				Name:              "Appodeal, Inc.",
+				Followers:         "9K",
 				Employees:         "201-500",
-				AssociatedMembers: "199",
+				AssociatedMembers: "184",
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -602,8 +603,21 @@ func companies06Shard() []domain.CompanyProfile {
 						},
 					},
 				},
-				domain.Elixir:  {},
-				domain.Clojure: {},
+				domain.Elixir: {},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Clojure Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4260887118/",
+							Date:                 mustDate("2025-07-02"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
