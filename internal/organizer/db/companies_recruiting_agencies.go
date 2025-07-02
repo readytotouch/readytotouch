@@ -874,5 +874,20 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Recruiting agency
 		},
+		{
+			Name:    "Oscar",
+			Website: "https://www.oscar-tech.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                64981,
+				IDs:               nil,
+				Alias:             "oscar",
+				Name:              "Oscar",
+				Followers:         "253K",
+				Employees:         "51-200",
+				AssociatedMembers: "763",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
 	}
 }

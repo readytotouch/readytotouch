@@ -347,7 +347,7 @@ func companies06Shard() []domain.CompanyProfile {
 							ShortDescription:     "Payments & Checkout",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4212347204/",
-							Date:                 mustDate("2025-06-18"), // mustDate("2025-06-03"), // mustDate("2025-04-23"), // mustDate("2025-04-17"),
+							Date:                 mustDate("2025-06-26"), // mustDate("2025-06-18"), // mustDate("2025-06-03"), // mustDate("2025-04-23"), // mustDate("2025-04-17"),
 							WithSalary:           false,
 							Remote:               false,
 						},

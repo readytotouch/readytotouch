@@ -1266,5 +1266,37 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Revature",
+			Website: "https://www.revature.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                10510386,
+				IDs:               nil,
+				Alias:             "revature",
+				Name:              "Revature",
+				Followers:         "324K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "1,521",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "TEKsystems",
+			Website: "https://www.teksystems.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2152,
+				IDs:               []int{2152, 14785},
+				Alias:             "teksystems",
+				Name:              "TEKsystems",
+				Followers:         "1M",
+				Employees:         "10K+",
+				AssociatedMembers: "25,945",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }

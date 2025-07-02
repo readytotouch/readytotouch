@@ -2242,7 +2242,7 @@ func companies12Shard() []domain.CompanyProfile {
 							ShortDescription:     "Core Engineering",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4247882590/",
-							Date:                 mustDate("2025-06-11"),
+							Date:                 mustDate("2025-07-01"), // mustDate("2025-06-11"),
 							WithSalary:           false,
 							Remote:               false,
 						},

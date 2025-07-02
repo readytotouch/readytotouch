@@ -457,7 +457,7 @@ func companies03Shard() []domain.CompanyProfile {
 							ShortDescription:     "Trading Exchange",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4242631355/",
-							Date:                 mustDate("2025-06-06"),
+							Date:                 mustDate("2025-06-27"), // mustDate("2025-06-06"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -1498,7 +1498,7 @@ func companies03Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4149693865/",
-							Date:                 mustDate("2025-06-05"), // mustDate("2025-05-15"), // mustDate("2025-04-24"), // mustDate("2025-03-27"), // mustDate("2025-03-06"), // mustDate("2025-02-11"),
+							Date:                 mustDate("2025-06-27"), // mustDate("2025-06-05"), // mustDate("2025-05-15"), // mustDate("2025-04-24"), // mustDate("2025-03-27"), // mustDate("2025-03-06"), // mustDate("2025-02-11"),
 							WithSalary:           true,                   // $110,250 - $157,500 - $204,750 (min-mid-max)
 							Remote:               true,
 						},

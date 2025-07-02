@@ -48,10 +48,21 @@ document.body.addEventListener("keydown", (event) => {
 });
 
 function remote() {
-    const $elements = document.querySelectorAll(".job-details-preferences-and-skills span");
-    for (const $element of $elements) {
-        if ($element.textContent.trim().toLowerCase() === "remote") {
-            return true;
+    {
+        const $elements = document.querySelectorAll(".job-details-preferences-and-skills span");
+        for (const $element of $elements) {
+            if ($element.textContent.trim().toLowerCase() === "remote") {
+                return true;
+            }
+        }
+    }
+
+    {
+        const $elements = document.querySelectorAll(".job-details-fit-level-preferences span");
+        for (const $element of $elements) {
+            if ($element.textContent.trim().toLowerCase() === "remote") {
+                return true;
+            }
         }
     }
 
