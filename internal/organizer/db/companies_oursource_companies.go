@@ -1218,5 +1218,85 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "emagine",
+			Website: "https://www.emagine.org/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                30899,
+				IDs:               []int{30899, 18487093, 18499941, 83005407},
+				Alias:             "emagine",
+				Name:              "emagine",
+				Followers:         "139K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "1,906",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Schuberg Philis",
+			Website: "https://schubergphilis.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                16104,
+				IDs:               nil,
+				Alias:             "schuberg-philis",
+				Name:              "Schuberg Philis",
+				Followers:         "14K",
+				Employees:         "201-500",
+				AssociatedMembers: "471",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "RITS",
+			Website: "https://rits.center/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                5182288,
+				IDs:               nil,
+				Alias:             "ritscenter",
+				Name:              "RITS",
+				Followers:         "13K",
+				Employees:         "501-1K",
+				AssociatedMembers: "236",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Revature",
+			Website: "https://www.revature.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                10510386,
+				IDs:               nil,
+				Alias:             "revature",
+				Name:              "Revature",
+				Followers:         "324K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "1,521",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "TEKsystems",
+			Website: "https://www.teksystems.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2152,
+				IDs:               []int{2152, 14785},
+				Alias:             "teksystems",
+				Name:              "TEKsystems",
+				Followers:         "1M",
+				Employees:         "10K+",
+				AssociatedMembers: "25,945",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }
