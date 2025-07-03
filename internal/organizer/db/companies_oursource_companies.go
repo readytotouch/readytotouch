@@ -1330,5 +1330,53 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Parser",
+			Website: "https://parserdigital.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                11142678,
+				IDs:               nil,
+				Alias:             "parser",
+				Name:              "Parser",
+				Followers:         "32K",
+				Employees:         "201-500",
+				AssociatedMembers: "201",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Aderen",
+			Website: "https://aderen.es/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                5151361,
+				IDs:               nil,
+				Alias:             "aderen-consulting-sl",
+				Name:              "Aderen",
+				Followers:         "17K",
+				Employees:         "51-200",
+				AssociatedMembers: "20",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Devsu",
+			Website: "https://devsu.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1102330,
+				IDs:               nil,
+				Alias:             "devsu",
+				Name:              "Devsu",
+				Followers:         "46K",
+				Employees:         "201-500",
+				AssociatedMembers: "231",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }
