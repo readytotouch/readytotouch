@@ -1653,8 +1653,21 @@ func companies16Shard() []domain.CompanyProfile {
 						},
 					},
 				},
-				domain.Zig:     {},
-				domain.Scala:   {},
+				domain.Zig: {},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Data Engineer – Python and Scala, Associate",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4261039927/",
+							Date:                 mustDate("2025-07-02"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
 				domain.Elixir:  {},
 				domain.Clojure: {},
 				domain.Haskell: {},
