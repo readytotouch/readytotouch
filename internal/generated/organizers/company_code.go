@@ -330,7 +330,7 @@ var (
 		"home24":                              320,  // home24 SE
 		"australian-broadcasting-corporation": 321,  // Australian Broadcasting Corporation
 		"go-nitro":                            322,  // Nitro Software
-		"appodeal":                            323,  // Appodeal
+		"appodeal":                            323,  // Appodeal, Inc.
 		"talamobile":                          324,  // Tala
 		"macrohealth":                         325,  // MacroHealth
 		"wolt-oy":                             326,  // Wolt
@@ -1021,6 +1021,9 @@ var (
 		"famedly":                             1021, // Famedly GmbH
 		"chapa-financial-technologies":        1022, // Chapa
 		"webbeds":                             1023, // WebBeds
+		"chemelex":                            1024, // Chemelex
+		"wpengine":                            1025, // WP Engine
+		"bnp-paribas":                         1026, // BNP Paribas
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 
