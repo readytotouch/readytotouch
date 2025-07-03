@@ -330,6 +330,11 @@
     "destination": ""
   },
   {
+    "alias": "artificiallabs",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "ascendion",
     "source": "",
     "destination": ""
@@ -551,8 +556,8 @@
   },
   {
     "alias": "blackrock",
-    "source": "",
-    "destination": ""
+    "source": "blackrock-200x200.jpeg",
+    "destination": "blackrock.jpeg"
   },
   {
     "alias": "bloomberg",
@@ -568,6 +573,11 @@
     "alias": "blp-digital",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "bnp-paribas",
+    "source": "bnp-paribas-200x200.jpeg",
+    "destination": "bnp-paribas.jpeg"
   },
   {
     "alias": "bnpparibassecuritiesservices",
@@ -608,6 +618,11 @@
     "alias": "bufbuild",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "buildwithfern",
+    "source": "buildwithfern-256x256.png",
+    "destination": "buildwithfern.png"
   },
   {
     "alias": "bunnynet",
@@ -680,6 +695,11 @@
     "destination": ""
   },
   {
+    "alias": "castoredc",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "cava-",
     "source": "",
     "destination": ""
@@ -720,6 +740,11 @@
     "destination": ""
   },
   {
+    "alias": "chapa-financial-technologies",
+    "source": "chapa-financial-technologies-68x68.png",
+    "destination": "chapa-financial-technologies.png"
+  },
+  {
     "alias": "check-point-software-technologies",
     "source": "",
     "destination": ""
@@ -738,6 +763,11 @@
     "alias": "cheesecake-labs",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "chemelex",
+    "source": "chemelex-96x96.png",
+    "destination": "chemelex.png"
   },
   {
     "alias": "chep",
@@ -1465,6 +1495,11 @@
     "destination": ""
   },
   {
+    "alias": "famedly",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "fanatics-inc-",
     "source": "",
     "destination": ""
@@ -1491,8 +1526,8 @@
   },
   {
     "alias": "fidelity-investments",
-    "source": "",
-    "destination": ""
+    "source": "fidelity-investments-200x200.jpeg",
+    "destination": "fidelity-investments.jpeg"
   },
   {
     "alias": "figma",
@@ -2291,8 +2326,8 @@
   },
   {
     "alias": "konghq",
-    "source": "",
-    "destination": ""
+    "source": "konghq-200x200.jpeg",
+    "destination": "konghq.jpeg"
   },
   {
     "alias": "kroger",
@@ -3450,6 +3485,11 @@
     "destination": ""
   },
   {
+    "alias": "quorum-software",
+    "source": "quorum-software-200x200.jpeg",
+    "destination": "quorum-software.jpeg"
+  },
+  {
     "alias": "qustodio",
     "source": "",
     "destination": ""
@@ -3536,6 +3576,11 @@
   },
   {
     "alias": "redpanda-data",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "relx-group",
     "source": "",
     "destination": ""
   },
@@ -4045,6 +4090,11 @@
     "destination": ""
   },
   {
+    "alias": "state-street",
+    "source": "state-street-200x200.jpeg",
+    "destination": "state-street.jpeg"
+  },
+  {
     "alias": "stationf",
     "source": "",
     "destination": ""
@@ -4175,6 +4225,11 @@
     "destination": ""
   },
   {
+    "alias": "symbolica-ai",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "symphonyai",
     "source": "",
     "destination": ""
@@ -4291,8 +4346,8 @@
   },
   {
     "alias": "telnyx",
-    "source": "",
-    "destination": ""
+    "source": "telnyx-200x200.jpeg",
+    "destination": "telnyx.jpeg"
   },
   {
     "alias": "tenableinc",
@@ -4830,6 +4885,11 @@
     "destination": ""
   },
   {
+    "alias": "webbeds",
+    "source": "webbeds-200x200.jpeg",
+    "destination": "webbeds.jpeg"
+  },
+  {
     "alias": "weedmaps",
     "source": "",
     "destination": ""
@@ -4901,6 +4961,11 @@
   },
   {
     "alias": "worldtechit",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "wpengine",
     "source": "",
     "destination": ""
   },

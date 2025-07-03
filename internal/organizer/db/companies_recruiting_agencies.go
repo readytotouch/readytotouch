@@ -889,5 +889,35 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Recruiting agency
 		},
+		{
+			Name:    "Orbis Group",
+			Website: "https://weareorbis.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3522089,
+				IDs:               nil,
+				Alias:             "weareorbis",
+				Name:              "Orbis Group",
+				Followers:         "396K",
+				Employees:         "51-200",
+				AssociatedMembers: "272",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Sanderson",
+			Website: "https://www.sandersonplc.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                279271,
+				IDs:               []int{279271, 393988},
+				Alias:             "sandersonrecruitmentplc",
+				Name:              "Sanderson",
+				Followers:         "100K",
+				Employees:         "201-500",
+				AssociatedMembers: "441",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
 	}
 }

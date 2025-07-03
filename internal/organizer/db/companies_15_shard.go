@@ -1279,7 +1279,7 @@ func companies15Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4231523156/",
-							Date:                 mustDate("2025-06-12"),
+							Date:                 mustDate("2025-07-02"), // mustDate("2025-06-12"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2564,7 +2564,7 @@ func companies15Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4203425510/",
-							Date:                 mustDate("2025-04-08"),
+							Date:                 mustDate("2025-07-02"), // mustDate("2025-04-08"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -2799,7 +2799,7 @@ func companies15Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4207470731/",
-							Date:                 mustDate("2025-06-24"), // mustDate("2025-06-18"), // mustDate("2025-04-12"),
+							Date:                 mustDate("2025-07-02"), // mustDate("2025-06-24"), // mustDate("2025-06-18"), // mustDate("2025-04-12"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2857,7 +2857,20 @@ func companies15Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			Languages: domain.Languages{
-				domain.Go:   {},
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer – Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4260462701/",
+							Date:                 mustDate("2025-07-02"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
 				domain.Rust: {},
 				domain.Zig:  {},
 				domain.Scala: {

@@ -36,3 +36,11 @@ There are several reasons for that:
 3. Currently, there’s a task to rebuild half of the project: [ReadyToTouch v3 — Responsive web design — Epic](https://github.com/readytotouch/readytotouch/issues/157)
 
 Thank you for your interest and understanding!
+
+## FAQ | Why am I working on this project?
+
+I currently have a stable job in a MedTech project at DocHQ. But because there are many news about layoffs and many people say that finding a job is now harder, I thought about what I can do now, while I have time, to make my future job search easier and less stressful.
+
+So I started making a list of companies that use Golang and adding developers from these companies to my contacts with a message like:  "Hi, I also work with Golang and am interested in ExampleCompanyName for future opportunities".
+
+To improve the project, I organized it better and started collecting feedback from the Ukrainian Golang community. Later, I added support for Rust, Scala, and Elixir.
