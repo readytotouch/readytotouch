@@ -919,5 +919,20 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Recruiting agency
 		},
+		{
+			Name:    "Pro5.ai",
+			Website: "https://www.pro5.ai/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                71633800,
+				IDs:               nil,
+				Alias:             "pro5-ai",
+				Name:              "Pro5.ai",
+				Followers:         "112K",
+				Employees:         "11-50",
+				AssociatedMembers: "32",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
 	}
 }

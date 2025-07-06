@@ -2719,7 +2719,7 @@ func companies04Shard() []domain.CompanyProfile {
 							ShortDescription:     "AdTech",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4204813057/",
-							Date:                 mustDate("2025-06-14"), // mustDate("2025-05-24"), // mustDate("2025-05-02"), // mustDate("2025-04-10"),
+							Date:                 mustDate("2025-07-05"), // mustDate("2025-06-14"), // mustDate("2025-05-24"), // mustDate("2025-05-02"), // mustDate("2025-04-10"),
 							WithSalary:           false,
 							Remote:               false,
 						},
