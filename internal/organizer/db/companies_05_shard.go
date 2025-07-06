@@ -899,6 +899,15 @@ func companies05Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $96,600.92 USD-$226,408.42 per year
 							Remote:               true,
 						},
+						{
+							Title:                "Data Engineer — Scala",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4187971539/",
+							Date:                 mustDate("2025-07-04"),
+							WithSalary:           true,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Elixir:  {},

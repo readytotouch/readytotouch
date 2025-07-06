@@ -1378,5 +1378,69 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Next Engineering",
+			Website: "https://www.nextengineering.pt/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                18625468,
+				IDs:               nil,
+				Alias:             "yournextengineering",
+				Name:              "Next Engineering",
+				Followers:         "95K",
+				Employees:         "51-200",
+				AssociatedMembers: "51",
+				Verified:          false,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Synechron",
+			Website: "https://www.synechron.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                15506,
+				IDs:               []int{15506, 112082},
+				Alias:             "synechron",
+				Name:              "Synechron",
+				Followers:         "1M",
+				Employees:         "10K+",
+				AssociatedMembers: "13,753",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "mthree",
+			Website: "https://mthree.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1901582,
+				IDs:               nil,
+				Alias:             "mthree",
+				Name:              "mthree",
+				Followers:         "239K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "468",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Netcompany",
+			Website: "https://netcompany.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                215128,
+				IDs:               []int{215128, 1382635, 82960120},
+				Alias:             "netcompany-a-s",
+				Name:              "Netcompany",
+				Followers:         "149K",
+				Employees:         "5K-10K",
+				AssociatedMembers: "7,060",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }
