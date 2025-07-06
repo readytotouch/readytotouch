@@ -1442,5 +1442,133 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Mokka",
+			Website: "https://www.gomokka.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                104342736,
+				IDs:               nil,
+				Alias:             "go-mokka",
+				Name:              "Mokka",
+				Followers:         "338",
+				Employees:         "11-50",
+				AssociatedMembers: "17",
+				Verified:          false,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Nexttech",
+			Website: "https://www.nexttech.ro/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                10146892,
+				IDs:               nil,
+				Alias:             "nexttech-international",
+				Name:              "Nexttech",
+				Followers:         "3K",
+				Employees:         "51-200",
+				AssociatedMembers: "172",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Nomiso",
+			Website: "https://nomiso.io/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                73062780,
+				IDs:               nil,
+				Alias:             "nomiso-inc",
+				Name:              "Nomiso",
+				Followers:         "11K",
+				Employees:         "201-500",
+				AssociatedMembers: "79",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "HCLTech",
+			Website: "https://www.hcltech.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1756,
+				IDs:               nil,
+				Alias:             "hcltech",
+				Name:              "HCLTech",
+				Followers:         "8M",
+				Employees:         "10K+",
+				AssociatedMembers: "243,588",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "CI&T",
+			Website: "https://ciandt.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                203563,
+				IDs:               nil,
+				Alias:             "ciandt",
+				Name:              "CI&T",
+				Followers:         "476K",
+				Employees:         "5K-10K",
+				AssociatedMembers: "7,471",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "STAND 8 Technology Consulting",
+			Website: "https://www.stand8.io/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2579911,
+				IDs:               nil,
+				Alias:             "stand8",
+				Name:              "STAND 8 Technology Consulting",
+				Followers:         "285K",
+				Employees:         "201-500",
+				AssociatedMembers: "340",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Fimatix",
+			Website: "https://fimatix.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                11277809,
+				IDs:               nil,
+				Alias:             "fimatix",
+				Name:              "Fimatix",
+				Followers:         "12K",
+				Employees:         "11-50",
+				AssociatedMembers: "23",
+				Verified:          false,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Quantrics Enterprises Inc.",
+			Website: "https://www.quantrics.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                10821407,
+				IDs:               nil,
+				Alias:             "quantrics",
+				Name:              "Quantrics Enterprises Inc.",
+				Followers:         "26K",
+				Employees:         "5K-10K",
+				AssociatedMembers: "4,107",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }

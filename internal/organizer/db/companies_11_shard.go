@@ -267,6 +267,15 @@ func companies11Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false, // open to remote across ANZ
 						},
+						{
+							Title:                "Senior Platform Engineer (Golang, Kubernetes)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4262236624/",
+							Date:                 mustDate("2025-07-04"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
@@ -2459,6 +2468,15 @@ func companies11Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4149196862/",
 							Date:                 mustDate("2025-03-04"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Software Engineer (Java/Microservices, Kubernetes, AWS/Azure/GCP – Golang or Python)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4204722411/",
+							Date:                 mustDate("2025-07-04"),
 							WithSalary:           false,
 							Remote:               false,
 						},
