@@ -1570,5 +1570,37 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Bluebeam",
+			Website: "https://www.bluebeam.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                111265,
+				IDs:               nil,
+				Alias:             "bluebeam-software",
+				Name:              "Bluebeam",
+				Followers:         "90K",
+				Employees:         "501-1K",
+				AssociatedMembers: "699",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Zenitech",
+			Website: "https://zenitech.co.uk/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                10046178,
+				IDs:               nil,
+				Alias:             "zenitechteam",
+				Name:              "Zenitech",
+				Followers:         "9K",
+				Employees:         "201-500",
+				AssociatedMembers: "461",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }
