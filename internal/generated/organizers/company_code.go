@@ -1024,6 +1024,26 @@ var (
 		"chemelex":                            1024, // Chemelex
 		"wpengine":                            1025, // WP Engine
 		"bnp-paribas":                         1026, // BNP Paribas
+		"distribusion":                        1027, // Distribusion Technologies
+		"thales":                              1028, // Thales
+		"kissht":                              1029, // Kissht
+		"motadata":                            1030, // Motadata
+		"cloudbees":                           1031, // CloudBees
+		"secpod-technologies":                 1032, // SecPod
+		"cielara":                             1033, // Cielara AI
+		"solarwinds":                          1034, // SolarWinds
+		"blizzard-entertainment":              1035, // Blizzard Entertainment
+		"ninjaone":                            1036, // NinjaOne
+		"aviva-plc":                           1037, // Aviva
+		"sectigo":                             1038, // Sectigo
+		"tabeo":                               1039, // Tabeo
+		"valence-security":                    1040, // Valence Security
+		"claroty":                             1041, // Claroty
+		"aleph-alpha":                         1042, // Aleph Alpha
+		"perkbox":                             1043, // Perkbox
+		"underdogfantasy":                     1044, // Underdog
+		"glasskube":                           1045, // Glasskube
+		"litmus-automation":                   1046, // Litmus
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

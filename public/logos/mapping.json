@@ -160,6 +160,11 @@
     "destination": "akka-io.jpeg"
   },
   {
+    "alias": "aleph-alpha",
+    "source": "aleph-alpha-200x200.jpeg",
+    "destination": "aleph-alpha.jpeg"
+  },
+  {
     "alias": "alertmedia",
     "source": "",
     "destination": ""
@@ -430,6 +435,11 @@
     "destination": ""
   },
   {
+    "alias": "aviva-plc",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "axis-communications",
     "source": "",
     "destination": ""
@@ -558,6 +568,11 @@
     "alias": "blackrock",
     "source": "blackrock-200x200.jpeg",
     "destination": "blackrock.jpeg"
+  },
+  {
+    "alias": "blizzard-entertainment",
+    "source": "",
+    "destination": ""
   },
   {
     "alias": "bloomberg",
@@ -785,6 +800,11 @@
     "destination": ""
   },
   {
+    "alias": "cielara",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "cimri",
     "source": "",
     "destination": ""
@@ -825,6 +845,11 @@
     "destination": ""
   },
   {
+    "alias": "claroty",
+    "source": "claroty-180x180.png",
+    "destination": "claroty.png"
+  },
+  {
     "alias": "clearscore",
     "source": "",
     "destination": ""
@@ -851,6 +876,11 @@
   },
   {
     "alias": "clockwork-labs",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "cloudbees",
     "source": "",
     "destination": ""
   },
@@ -1198,6 +1228,11 @@
     "alias": "disney-entertainment",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "distribusion",
+    "source": "distribusion-192x192.png",
+    "destination": "distribusion.png"
   },
   {
     "alias": "dittolive",
@@ -1835,6 +1870,11 @@
     "destination": ""
   },
   {
+    "alias": "glasskube",
+    "source": "glasskube-64x64.png",
+    "destination": "glasskube.png"
+  },
+  {
     "alias": "go-nitro",
     "source": "",
     "destination": ""
@@ -2295,6 +2335,11 @@
     "destination": ""
   },
   {
+    "alias": "kissht",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "kiteworkscgcp",
     "source": "",
     "destination": ""
@@ -2423,6 +2468,11 @@
     "alias": "linkedin",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "litmus-automation",
+    "source": "litmus-automation-200x200.jpeg",
+    "destination": "litmus-automation.jpeg"
   },
   {
     "alias": "littlelives",
@@ -2725,6 +2775,11 @@
     "destination": ""
   },
   {
+    "alias": "motadata",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "motive-inc",
     "source": "",
     "destination": ""
@@ -2911,6 +2966,11 @@
   },
   {
     "alias": "nine-entertainment-co.",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "ninjaone",
     "source": "",
     "destination": ""
   },
@@ -3233,6 +3293,11 @@
     "alias": "percona",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "perkbox",
+    "source": "perkbox-192x192.png",
+    "destination": "perkbox.png"
   },
   {
     "alias": "pexip",
@@ -3800,6 +3865,16 @@
     "destination": ""
   },
   {
+    "alias": "secpod-technologies",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "sectigo",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "seedtag",
     "source": "",
     "destination": ""
@@ -3961,6 +4036,11 @@
   },
   {
     "alias": "solariscompany",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "solarwinds",
     "source": "",
     "destination": ""
   },
@@ -4270,6 +4350,11 @@
     "destination": ""
   },
   {
+    "alias": "tabeo",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "tabtechnology",
     "source": "",
     "destination": ""
@@ -4381,6 +4466,11 @@
   },
   {
     "alias": "teya-global",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "thales",
     "source": "",
     "destination": ""
   },
@@ -4615,6 +4705,11 @@
     "destination": ""
   },
   {
+    "alias": "underdogfantasy",
+    "source": "underdogfantasy-200x200.jpeg",
+    "destination": "underdogfantasy.jpeg"
+  },
+  {
     "alias": "uniphore",
     "source": "uniphore-200x200.jpeg",
     "destination": "uniphore.jpeg"
@@ -4666,6 +4761,11 @@
   },
   {
     "alias": "utilitywarehouse",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "valence-security",
     "source": "",
     "destination": ""
   },

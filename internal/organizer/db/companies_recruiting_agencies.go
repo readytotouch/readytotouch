@@ -919,5 +919,65 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Recruiting agency
 		},
+		{
+			Name:    "Pro5.ai",
+			Website: "https://www.pro5.ai/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                71633800,
+				IDs:               nil,
+				Alias:             "pro5-ai",
+				Name:              "Pro5.ai",
+				Followers:         "112K",
+				Employees:         "11-50",
+				AssociatedMembers: "32",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "ASK Consulting",
+			Website: "https://www.askconsulting.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                388480,
+				IDs:               nil,
+				Alias:             "ask-consulting-",
+				Name:              "ASK Consulting",
+				Followers:         "248K",
+				Employees:         "501-1K",
+				AssociatedMembers: "1,457",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Attis",
+			Website: "https://attisglobal.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                101159591,
+				IDs:               nil,
+				Alias:             "attisglobal",
+				Name:              "Attis",
+				Followers:         "23K",
+				Employees:         "2-10",
+				AssociatedMembers: "9",
+				Verified:          false,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Peoplebank",
+			Website: "https://www.peoplebank.com.au/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                27058,
+				IDs:               []int{27058, 3549674},
+				Alias:             "peoplebank",
+				Name:              "Peoplebank",
+				Followers:         "95K",
+				Employees:         "201-500",
+				AssociatedMembers: "485",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
 	}
 }
