@@ -1044,6 +1044,16 @@ var (
 		"underdogfantasy":                     1044, // Underdog
 		"glasskube":                           1045, // Glasskube
 		"litmus-automation":                   1046, // Litmus
+		"blockit":                             1047, // blockit
+		"experian":                            1048, // Experian
+		"thomson-reuters":                     1049, // Thomson Reuters
+		"aiven":                               1050, // Aiven
+		"manus-im":                            1051, // Manus AI
+		"stori-card":                          1052, // Stori
+		"testsigma":                           1053, // Testsigma
+		"wolters-kluwer":                      1054, // Wolters Kluwer
+		"engageware":                          1055, // Engageware
+		"parallel-wireless-inc":               1056, // Parallel Wireless
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 
