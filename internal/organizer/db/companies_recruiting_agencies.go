@@ -1054,5 +1054,20 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Recruiting agency
 		},
+		{
+			Name:    "Andiamo",
+			Website: "https://andiamogo.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                32309,
+				IDs:               nil,
+				Alias:             "andiamo-partners",
+				Name:              "Andiamo",
+				Followers:         "91K",
+				Employees:         "201-500",
+				AssociatedMembers: "169",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
 	}
 }
