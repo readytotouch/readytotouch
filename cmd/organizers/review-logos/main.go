@@ -69,6 +69,9 @@ func syncLogos(companies []domain.CompanyProfile) {
 
 		switch ext {
 		case ".png", ".jpg", ".jpeg":
+			// NOP
+		case ".webp":
+			ext = ".png" // Convert webp to png
 		default:
 			panic(fmt.Sprintf("unexpected ext: %s for logo: %s", ext, logo.Source))
 		}

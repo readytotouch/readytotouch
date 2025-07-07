@@ -6,9 +6,11 @@ import (
 	"image/jpeg"
 	"image/png"
 	"os"
+	"path/filepath"
 	"strings"
 
 	"golang.org/x/image/draw"
+	"golang.org/x/image/webp"
 )
 
 func Resize(inputPath string, outputPath string) error {
@@ -18,9 +20,18 @@ func Resize(inputPath string, outputPath string) error {
 	}
 	defer inFile.Close()
 
-	srcImg, _, err := image.Decode(inFile)
-	if err != nil {
-		panic(err)
+	var srcImg image.Image
+	switch strings.ToLower(filepath.Ext(inputPath)) {
+	case ".webp":
+		srcImg, err = webp.Decode(inFile)
+		if err != nil {
+			panic(err)
+		}
+	default:
+		srcImg, _, err = image.Decode(inFile)
+		if err != nil {
+			panic(err)
+		}
 	}
 
 	var (

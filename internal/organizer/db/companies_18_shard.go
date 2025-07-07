@@ -6030,8 +6030,9 @@ func companies18Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "aiven",
+				Followers: "295",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -6047,7 +6048,7 @@ func companies18Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 18,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer (Golang)",
