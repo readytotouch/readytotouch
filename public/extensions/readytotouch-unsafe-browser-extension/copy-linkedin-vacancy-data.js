@@ -22,13 +22,15 @@ document.body.addEventListener("keydown", (event) => {
 
         const url = normalizeURL(window.location.origin + window.location.pathname);
 
+        const [withSalary, salaryComment] = salary();
+
         const goLinkedInVacancyColumns = `{
 						    Title:                "${title}",
 						    ShortDescription:     "",
 						    SwitchingOpportunity: "",
 						    URL:                  "${url}",
 						    Date:                 mustDate("${date()}"),
-						    WithSalary:           ${salary() ? "true" : "false"},
+						    WithSalary:           ${withSalary ? "true" : "false"},${salaryComment}
 						    Remote:               ${remote() ? "true" : "false"},
 						},`
 
@@ -76,7 +78,7 @@ function salary() {
             const s = $element.textContent.trim().toLowerCase();
 
             if (s.includes("$") || s.includes("€") || s.includes("£")) {
-                return true;
+                return [true, ""];
             }
         }
     }
@@ -87,12 +89,12 @@ function salary() {
             const s = $element.textContent.trim().toLowerCase();
 
             if (s.includes("$") || s.includes("€") || s.includes("£")) {
-                return true;
+                return [true, " // " + s];
             }
         }
     }
 
-    return false;
+    return [false, ""];
 }
 
 function date() {

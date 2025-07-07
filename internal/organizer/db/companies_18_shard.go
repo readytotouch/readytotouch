@@ -5774,6 +5774,85 @@ func companies18Shard() []domain.CompanyProfile {
 				domain.IndustryDevOps,
 			},
 		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "blockit",
+			Website: "https://www.blockitnow.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                16188895,
+				IDs:               nil,
+				Alias:             "blockit",
+				Name:              "blockit",
+				Followers:         "2K",
+				Employees:         "51-200",
+				AssociatedMembers: "58",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer, Elixir",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4263488829/",
+							Date:                 mustDate("2025-07-07"),
+							WithSalary:           true, // $141k/yr - $165k/yr
+							Remote:               false,
+						},
+					},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "We eliminate barriers between providers and patients with our comprehensive platform featuring digital front door capabilities, patient self-scheduling, referral management, and care coordination tools",
+			Industries: []domain.Industry{
+				domain.IndustryMedTech,
+			},
+		},
 
 		// Template
 		//{
