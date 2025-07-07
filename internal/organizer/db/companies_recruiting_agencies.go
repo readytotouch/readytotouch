@@ -1024,5 +1024,35 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Recruiting agency
 		},
+		{
+			Name:    "CyberCoders",
+			Website: "https://www.cybercoders.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                21836,
+				IDs:               nil,
+				Alias:             "cybercoders",
+				Name:              "CyberCoders",
+				Followers:         "2M",
+				Employees:         "201-500",
+				AssociatedMembers: "495",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Albert Bow",
+			Website: "https://albertbow.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                18450531,
+				IDs:               nil,
+				Alias:             "albertbow",
+				Name:              "Albert Bow",
+				Followers:         "124K",
+				Employees:         "11-50",
+				AssociatedMembers: "23",
+				Verified:          false,
+			},
+			Ignore: true, // Recruiting agency
+		},
 	}
 }

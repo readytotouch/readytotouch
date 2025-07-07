@@ -1602,5 +1602,21 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Aluxion",
+			Website: "https://www.aluxion.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                5239783,
+				IDs:               nil,
+				Alias:             "aluxion",
+				Name:              "Aluxion",
+				Followers:         "24K",
+				Employees:         "11-50",
+				AssociatedMembers: "11",
+				Verified:          false,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }

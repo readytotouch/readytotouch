@@ -4078,8 +4078,8 @@ func companies08Shard() []domain.CompanyProfile {
 		},
 
 		{
-			ID:      0,  // system
-			Type:    "", // system
+			ID:      0,                           // system
+			Type:    domain.CompanyTypeOutsource, // system
 			Name:    "Gorilla Logic",
 			Website: "https://www.gorillalogic.com/",
 			Careers: "https://gorillalogic.com/careers",
@@ -4137,6 +4137,7 @@ func companies08Shard() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
+			Ignore: true, // Outsource
 		},
 
 		{
