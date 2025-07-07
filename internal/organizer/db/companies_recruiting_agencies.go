@@ -979,5 +979,50 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Recruiting agency
 		},
+		{
+			Name:    "Roc Search",
+			Website: "https://www.roc-search.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                200680,
+				IDs:               nil,
+				Alias:             "roc-search",
+				Name:              "Roc Search",
+				Followers:         "192K",
+				Employees:         "51-200",
+				AssociatedMembers: "172",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Reqroute, Inc",
+			Website: "https://reqroute.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                963739,
+				IDs:               nil,
+				Alias:             "reqroute",
+				Name:              "Reqroute, Inc",
+				Followers:         "66K",
+				Employees:         "201-500",
+				AssociatedMembers: "94",
+				Verified:          false,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "KTek Resourcing",
+			Website: "https://www.ktekresourcing.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1199482,
+				IDs:               nil,
+				Alias:             "ktekresourcing",
+				Name:              "KTek Resourcing",
+				Followers:         "242K",
+				Employees:         "201-500",
+				AssociatedMembers: "300",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
 	}
 }
