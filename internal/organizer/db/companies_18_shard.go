@@ -5793,8 +5793,9 @@ func companies18Shard() []domain.CompanyProfile {
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "blockit",
+				Followers: "9",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -5826,7 +5827,7 @@ func companies18Shard() []domain.CompanyProfile {
 					Vacancies:               []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 5,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer, Elixir",
@@ -5845,6 +5846,10 @@ func companies18Shard() []domain.CompanyProfile {
 				},
 				domain.Haskell: {
 					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoriesCount: 2,
 					Vacancies:               []domain.Vacancy{},
 				},
 			},
@@ -5872,11 +5877,16 @@ func companies18Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "experianplc",
+				Followers: "22",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Experian",
+				Employees:   "10,000+",
+				Salary:      "$50K ~ $240K a year",
+				Reviews:     "108",
+				ReviewsRate: "3.4",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias: "",
@@ -5951,17 +5961,29 @@ func companies18Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "thomsonreuters",
+				Followers: "58",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Thomson-Reuters",
+				Employees:   "10,000+",
+				Salary:      "$47K ~ $250K a year",
+				Reviews:     "149",
+				ReviewsRate: "3.7",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Thomson-Reuters-EI_IE100303.11,26.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Thomson-Reuters-Reviews-E100303.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Thomson-Reuters-Jobs-E100303.htm",
+				Jobs:        "1.3K",
+				Reviews:     "18K",
+				Salaries:    "24K",
+				ReviewsRate: "4.1",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -6035,13 +6057,24 @@ func companies18Shard() []domain.CompanyProfile {
 				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Aiven",
+				Employees:   "501 to 1,000",
+				Salary:      "",
+				Reviews:     "8",
+				ReviewsRate: "3.1",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Aiven-EI_IE2610934.11,16.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Aiven-Reviews-E2610934.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Aiven-Jobs-E2610934.htm",
+				Jobs:        "1",
+				Reviews:     "156",
+				Salaries:    "341",
+				ReviewsRate: "2.5",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -6199,7 +6232,14 @@ func companies18Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Stori-Card-EI_IE3357578.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Stori-Card-Reviews-E3357578.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Stori-Card-Jobs-E3357578.htm",
+				Jobs:        "",
+				Reviews:     "211",
+				Salaries:    "249",
+				ReviewsRate: "3.6",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -6268,8 +6308,9 @@ func companies18Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "testsigmahq",
+				Followers: "105",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -6278,7 +6319,14 @@ func companies18Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Testsigma-EI_IE2048845.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Testsigma-Reviews-E2048845.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Testsigma-Jobs-E2048845.htm",
+				Jobs:        "",
+				Reviews:     "76",
+				Salaries:    "91",
+				ReviewsRate: "4.1",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -6351,13 +6399,24 @@ func companies18Shard() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Wolters-Kluwer",
+				Employees:   "10,000+",
+				Salary:      "$34K ~ $240K a year",
+				Reviews:     "65",
+				ReviewsRate: "3.4",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Wolters-Kluwer-EI_IE10497.11,25.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Wolters-Kluwer-Reviews-E10497.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Wolters-Kluwer-Jobs-E10497.htm",
+				Jobs:        "372",
+				Reviews:     "4.7K",
+				Salaries:    "6.9K",
+				ReviewsRate: "3.6",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -6436,7 +6495,14 @@ func companies18Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Engageware-EI_IE6093728.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Engageware-Reviews-E6093728.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Engageware-Jobs-E6093728.htm",
+				Jobs:        "3",
+				Reviews:     "22",
+				Salaries:    "39",
+				ReviewsRate: "2.5",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -6589,13 +6655,24 @@ func companies18Shard() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Parallel-Wireless",
+				Employees:   "501 to 1,000",
+				Salary:      "",
+				Reviews:     "10",
+				ReviewsRate: "3.2",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Parallel-Wireless-EI_IE1369255.11,28.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Parallel-Wireless-Reviews-E1369255.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Parallel-Wireless-Jobs-E1369255.htm",
+				Jobs:        "53",
+				Reviews:     "219",
+				Salaries:    "328",
+				ReviewsRate: "3.4",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
