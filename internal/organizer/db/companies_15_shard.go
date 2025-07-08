@@ -4322,6 +4322,15 @@ func companies15Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Software Engineer",
+							ShortDescription:     "Elixir Focus",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4262844732/",
+							Date:                 mustDate("2025-07-08"),
+							WithSalary:           true, // €70k/yr - €95k/yr
+							Remote:               true,
+						},
 					},
 				},
 				domain.Clojure: {},
