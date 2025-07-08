@@ -2689,8 +2689,8 @@ func companies10Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4143148888/",
-							Date:                 mustDate("2025-06-30"), // mustDate("2025-06-24"), // mustDate("2025-06-17"), // mustDate("2025-06-14"), // mustDate("2025-05-01"), // mustDate("2025-04-10"),
-							WithSalary:           true,
+							Date:                 mustDate("2025-07-08"), // mustDate("2025-06-30"), // mustDate("2025-06-24"), // mustDate("2025-06-17"), // mustDate("2025-06-14"), // mustDate("2025-05-01"), // mustDate("2025-04-10"),
+							WithSalary:           true,                   // $150k/yr - $170k/yr
 							Remote:               true,
 						},
 					},
