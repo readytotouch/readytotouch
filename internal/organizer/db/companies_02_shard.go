@@ -1591,18 +1591,16 @@ func companies02Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 4,
-					Vacancies:               []domain.Vacancy{
-						/*
-							{
-								Title:                "",
-								ShortDescription:     "",
-								SwitchingOpportunity: "",
-								URL:                  "",
-								Date:                 mustDate(""),
-								WithSalary:           false,
-								Remote:               false,
-							},
-						*/
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4264206842/",
+							Date:                 mustDate("2025-07-08"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {

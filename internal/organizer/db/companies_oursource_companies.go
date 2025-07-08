@@ -1714,5 +1714,37 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Korn Ferry",
+			Website: "https://www.kornferry.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3741,
+				IDs:               []int{3741, 5417, 6488, 13131, 49291, 53013, 349389, 3863592},
+				Alias:             "kornferry",
+				Name:              "Korn Ferry",
+				Followers:         "2M",
+				Employees:         "10K+",
+				AssociatedMembers: "18,387",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Apex Systems",
+			Website: "https://www.apexsystems.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                4787,
+				IDs:               nil,
+				Alias:             "apex-systems",
+				Name:              "Apex Systems",
+				Followers:         "2M",
+				Employees:         "1K-5K",
+				AssociatedMembers: "13,540",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }
