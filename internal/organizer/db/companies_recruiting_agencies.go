@@ -1069,5 +1069,20 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Recruiting agency
 		},
+		{
+			Name:    "Glocomms",
+			Website: "https://www.glocomms.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3123217,
+				IDs:               nil,
+				Alias:             "glocomms",
+				Name:              "Glocomms",
+				Followers:         "365K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "94",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
 	}
 }

@@ -3480,6 +3480,15 @@ func companies09Shard() []domain.CompanyProfile {
 							WithSalary:           true,                   // $114.800 - $232.600 per year
 							Remote:               false,
 						},
+						{
+							Title:                "Lead Embedded Software Engineer – Rust Development",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4263672721/",
+							Date:                 mustDate("2025-07-08"),
+							WithSalary:           true, // $156.1k/yr - $234.1k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig:     {},

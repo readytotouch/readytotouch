@@ -19,6 +19,11 @@ const all = [
     new Alias("social-media", "Social Media"),
     new Alias("entertainment", "Entertainment"),
     new Alias("proptech", "PropTech"),
+    new Alias("agrotech", "AgroTech"),
+    new Alias("insurtech", "InsurTech"),
+    new Alias("logisticstech", "LogisticsTech"),
+    new Alias("telecom", "Telecom"),
+    new Alias("defensetech", "DefenseTech"),
 ];
 
 export function industries(aliases: Array<string>): Array<Alias> {
