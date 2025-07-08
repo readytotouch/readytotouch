@@ -5075,6 +5075,15 @@ func companies10Shard() []domain.CompanyProfile {
 							WithSalary:           true,                   // $218.000 - $300.000 per year
 							Remote:               true,
 						},
+						{
+							Title:                "Staff Software Engineer – Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4263601471/",
+							Date:                 mustDate("2025-07-07"),
+							WithSalary:           true, // $200k/yr - $235k/yr
+							Remote:               true,
+						},
 					},
 				},
 				domain.Zig:     {},

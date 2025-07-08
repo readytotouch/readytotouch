@@ -150,6 +150,11 @@
     "destination": ""
   },
   {
+    "alias": "aiven",
+    "source": "aiven-64x64.png",
+    "destination": "aiven.png"
+  },
+  {
     "alias": "akamai-technologies",
     "source": "",
     "destination": ""
@@ -571,8 +576,13 @@
   },
   {
     "alias": "blizzard-entertainment",
-    "source": "",
-    "destination": ""
+    "source": "blizzard-entertainment-114x114.webp",
+    "destination": "blizzard-entertainment.png"
+  },
+  {
+    "alias": "blockit",
+    "source": "blockit-180x180.png",
+    "destination": "blockit.png"
   },
   {
     "alias": "bloomberg",
@@ -1425,6 +1435,11 @@
     "destination": ""
   },
   {
+    "alias": "engageware",
+    "source": "engageware-180x180.webp",
+    "destination": "engageware.png"
+  },
+  {
     "alias": "enova-international",
     "source": "",
     "destination": ""
@@ -1503,6 +1518,11 @@
     "alias": "expedia",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "experian",
+    "source": "experian-200x200.jpeg",
+    "destination": "experian.jpeg"
   },
   {
     "alias": "expressvpn",
@@ -2585,6 +2605,11 @@
     "destination": ""
   },
   {
+    "alias": "manus-im",
+    "source": "manus-im-192x192.png",
+    "destination": "manus-im.png"
+  },
+  {
     "alias": "mapbox",
     "source": "",
     "destination": ""
@@ -3233,6 +3258,11 @@
     "alias": "parachute-health",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "parallel-wireless-inc",
+    "source": "parallel-wireless-inc-144x144.png",
+    "destination": "parallel-wireless-inc.png"
   },
   {
     "alias": "parshipmeet",
@@ -4215,6 +4245,11 @@
     "destination": ""
   },
   {
+    "alias": "stori-card",
+    "source": "stori-card-200x200.jpeg",
+    "destination": "stori-card.jpeg"
+  },
+  {
     "alias": "strangebee",
     "source": "",
     "destination": ""
@@ -4465,6 +4500,11 @@
     "destination": ""
   },
   {
+    "alias": "testsigma",
+    "source": "testsigma-180x180.png",
+    "destination": "testsigma.png"
+  },
+  {
     "alias": "teya-global",
     "source": "",
     "destination": ""
@@ -4513,6 +4553,11 @@
     "alias": "theopentag",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "thomson-reuters",
+    "source": "thomson-reuters-200x200.jpeg",
+    "destination": "thomson-reuters.jpeg"
   },
   {
     "alias": "thought-machine",
@@ -5031,6 +5076,11 @@
   },
   {
     "alias": "wolt-oy",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "wolters-kluwer",
     "source": "",
     "destination": ""
   },

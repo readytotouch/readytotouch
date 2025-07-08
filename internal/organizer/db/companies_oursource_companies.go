@@ -1602,5 +1602,69 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Aluxion",
+			Website: "https://www.aluxion.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                5239783,
+				IDs:               nil,
+				Alias:             "aluxion",
+				Name:              "Aluxion",
+				Followers:         "24K",
+				Employees:         "11-50",
+				AssociatedMembers: "11",
+				Verified:          false,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Proxify",
+			Website: "https://proxify.io/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                18548980,
+				IDs:               nil,
+				Alias:             "proxify-se",
+				Name:              "Proxify",
+				Followers:         "41K",
+				Employees:         "51-200",
+				AssociatedMembers: "462",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "VML Enterprise Solutions",
+			Website: "https://www.vml.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                13984234,
+				IDs:               nil,
+				Alias:             "vml-enterprise-solutions",
+				Name:              "VML Enterprise Solutions",
+				Followers:         "142K",
+				Employees:         "5K-10K",
+				AssociatedMembers: "756",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Inetum",
+			Website: "https://www.inetum.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                68841835,
+				IDs:               []int{201908, 68841835},
+				Alias:             "inetum",
+				Name:              "Inetum",
+				Followers:         "1M",
+				Employees:         "10K+",
+				AssociatedMembers: "20,157",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }

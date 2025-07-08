@@ -979,5 +979,95 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Recruiting agency
 		},
+		{
+			Name:    "Roc Search",
+			Website: "https://www.roc-search.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                200680,
+				IDs:               nil,
+				Alias:             "roc-search",
+				Name:              "Roc Search",
+				Followers:         "192K",
+				Employees:         "51-200",
+				AssociatedMembers: "172",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Reqroute, Inc",
+			Website: "https://reqroute.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                963739,
+				IDs:               nil,
+				Alias:             "reqroute",
+				Name:              "Reqroute, Inc",
+				Followers:         "66K",
+				Employees:         "201-500",
+				AssociatedMembers: "94",
+				Verified:          false,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "KTek Resourcing",
+			Website: "https://www.ktekresourcing.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1199482,
+				IDs:               nil,
+				Alias:             "ktekresourcing",
+				Name:              "KTek Resourcing",
+				Followers:         "242K",
+				Employees:         "201-500",
+				AssociatedMembers: "300",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "CyberCoders",
+			Website: "https://www.cybercoders.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                21836,
+				IDs:               nil,
+				Alias:             "cybercoders",
+				Name:              "CyberCoders",
+				Followers:         "2M",
+				Employees:         "201-500",
+				AssociatedMembers: "495",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Albert Bow",
+			Website: "https://albertbow.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                18450531,
+				IDs:               nil,
+				Alias:             "albertbow",
+				Name:              "Albert Bow",
+				Followers:         "124K",
+				Employees:         "11-50",
+				AssociatedMembers: "23",
+				Verified:          false,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Andiamo",
+			Website: "https://andiamogo.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                32309,
+				IDs:               nil,
+				Alias:             "andiamo-partners",
+				Name:              "Andiamo",
+				Followers:         "91K",
+				Employees:         "201-500",
+				AssociatedMembers: "169",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
 	}
 }
