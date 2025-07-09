@@ -206,8 +206,8 @@
   },
   {
     "alias": "amazon",
-    "source": "",
-    "destination": ""
+    "source": "amazon-200x200.jpeg",
+    "destination": "amazon.jpeg"
   },
   {
     "alias": "american-airlines",
@@ -1231,8 +1231,8 @@
   },
   {
     "alias": "discord",
-    "source": "",
-    "destination": ""
+    "source": "discord-200x200.jpeg",
+    "destination": "discord.jpeg"
   },
   {
     "alias": "disney-entertainment",
@@ -1321,8 +1321,8 @@
   },
   {
     "alias": "dropbox",
-    "source": "",
-    "destination": ""
+    "source": "dropbox-200x200.jpeg",
+    "destination": "dropbox.jpeg"
   },
   {
     "alias": "drw",
@@ -1403,6 +1403,11 @@
     "alias": "electronic-arts",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "eltropy",
+    "source": "eltropy-200x200.jpeg",
+    "destination": "eltropy.jpeg"
   },
   {
     "alias": "embark-studios-ab",
@@ -1561,8 +1566,8 @@
   },
   {
     "alias": "fastly",
-    "source": "",
-    "destination": ""
+    "source": "fastly-200x200.jpeg",
+    "destination": "fastly.jpeg"
   },
   {
     "alias": "fathom-io",
@@ -1586,8 +1591,8 @@
   },
   {
     "alias": "figma",
-    "source": "",
-    "destination": ""
+    "source": "figma-200x200.jpeg",
+    "destination": "figma.jpeg"
   },
   {
     "alias": "fincompare",
@@ -1876,13 +1881,13 @@
   },
   {
     "alias": "github",
-    "source": "",
-    "destination": ""
+    "source": "github-200x200.jpeg",
+    "destination": "github.jpeg"
   },
   {
     "alias": "gitlab-com",
-    "source": "",
-    "destination": ""
+    "source": "gitlab-192x192.png",
+    "destination": "gitlab-com.png"
   },
   {
     "alias": "glassflow-dev",
@@ -1931,8 +1936,8 @@
   },
   {
     "alias": "google",
-    "source": "",
-    "destination": ""
+    "source": "google-200x200.jpeg",
+    "destination": "google.jpeg"
   },
   {
     "alias": "gorillalogic",
@@ -1946,13 +1951,13 @@
   },
   {
     "alias": "grafana-labs",
-    "source": "",
-    "destination": ""
+    "source": "grafana-200x200.jpeg",
+    "destination": "grafana-labs.jpeg"
   },
   {
     "alias": "grammarly",
-    "source": "",
-    "destination": ""
+    "source": "grammarly-200x200.jpeg",
+    "destination": "grammarly.jpeg"
   },
   {
     "alias": "grasshopperasia",
@@ -2046,8 +2051,8 @@
   },
   {
     "alias": "hashicorp",
-    "source": "",
-    "destination": ""
+    "source": "hashicorp-200x200.jpeg",
+    "destination": "hashicorp.jpeg"
   },
   {
     "alias": "hasura",
@@ -2206,8 +2211,8 @@
   },
   {
     "alias": "influ2",
-    "source": "",
-    "destination": ""
+    "source": "influ2-180x180.png",
+    "destination": "influ2.png"
   },
   {
     "alias": "influxdb",
@@ -2486,8 +2491,8 @@
   },
   {
     "alias": "linkedin",
-    "source": "",
-    "destination": ""
+    "source": "linkedin-200x200.jpeg",
+    "destination": "linkedin.jpeg"
   },
   {
     "alias": "litmus-automation",
@@ -2620,6 +2625,11 @@
     "destination": ""
   },
   {
+    "alias": "marketeam-ai",
+    "source": "marketeam-ai-200x200.jpeg",
+    "destination": "marketeam-ai.jpeg"
+  },
+  {
     "alias": "marketer-com",
     "source": "",
     "destination": ""
@@ -2666,8 +2676,8 @@
   },
   {
     "alias": "medium-com",
-    "source": "",
-    "destination": ""
+    "source": "medium-200x200.jpeg",
+    "destination": "medium-com.jpeg"
   },
   {
     "alias": "megaport",
@@ -2701,8 +2711,13 @@
   },
   {
     "alias": "microsoft",
-    "source": "",
-    "destination": ""
+    "source": "microsoft-200x200.jpeg",
+    "destination": "microsoft.jpeg"
+  },
+  {
+    "alias": "milestone-systems",
+    "source": "milestone-systems-200x200.jpeg",
+    "destination": "milestone-systems.jpeg"
   },
   {
     "alias": "millennium-partners",
@@ -2738,6 +2753,11 @@
     "alias": "mitratech",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "mizzlecloud",
+    "source": "mizzlecloud-200x200.jpeg",
+    "destination": "mizzlecloud.jpeg"
   },
   {
     "alias": "mobica",
@@ -2821,8 +2841,8 @@
   },
   {
     "alias": "mozilla-corporation",
-    "source": "",
-    "destination": ""
+    "source": "mozilla-corporation-200x200.jpeg",
+    "destination": "mozilla-corporation.jpeg"
   },
   {
     "alias": "mr-price-group",
@@ -2936,8 +2956,8 @@
   },
   {
     "alias": "netlify",
-    "source": "",
-    "destination": ""
+    "source": "netlify-180x180.png",
+    "destination": "netlify.png"
   },
   {
     "alias": "netscribes",
@@ -2963,6 +2983,11 @@
     "alias": "nexos-ai",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "nfon",
+    "source": "nfon-200x200.jpeg",
+    "destination": "nfon.jpeg"
   },
   {
     "alias": "nice-systems",
@@ -3036,6 +3061,11 @@
   },
   {
     "alias": "notchupteam",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "nuitee",
     "source": "",
     "destination": ""
   },
@@ -3181,8 +3211,8 @@
   },
   {
     "alias": "oracle",
-    "source": "",
-    "destination": ""
+    "source": "oracle-200x200.jpeg",
+    "destination": "oracle.jpeg"
   },
   {
     "alias": "otiv",
@@ -3361,8 +3391,8 @@
   },
   {
     "alias": "pinterest",
-    "source": "",
-    "destination": ""
+    "source": "pinterest-200x200.jpeg",
+    "destination": "pinterest.jpeg"
   },
   {
     "alias": "pitchhq",
@@ -3661,8 +3691,8 @@
   },
   {
     "alias": "reddit-com",
-    "source": "",
-    "destination": ""
+    "source": "reddit-200x200.jpeg",
+    "destination": "reddit-com.jpeg"
   },
   {
     "alias": "redisinc",
@@ -3831,8 +3861,8 @@
   },
   {
     "alias": "sap",
-    "source": "",
-    "destination": ""
+    "source": "sap-180x180.png",
+    "destination": "sap.png"
   },
   {
     "alias": "sas",
@@ -4036,8 +4066,8 @@
   },
   {
     "alias": "snap-inc-co",
-    "source": "",
-    "destination": ""
+    "source": "snap-200x200.jpeg",
+    "destination": "snap-inc-co.jpeg"
   },
   {
     "alias": "snowplow",
@@ -4856,8 +4886,8 @@
   },
   {
     "alias": "vercel",
-    "source": "",
-    "destination": ""
+    "source": "vercel-57x57.png",
+    "destination": "vercel.png"
   },
   {
     "alias": "verkada",
@@ -5058,6 +5088,11 @@
     "alias": "whatnot-inc",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "whitefox-defense-technologies-inc.",
+    "source": "whitefox-defense-technologies-inc-256x256.png",
+    "destination": "whitefox-defense-technologies-inc..png"
   },
   {
     "alias": "windmill-dev",

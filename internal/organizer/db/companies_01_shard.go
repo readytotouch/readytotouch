@@ -5446,6 +5446,15 @@ func companies01Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Associate, Java/Scala Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4250832436/",
+							Date:                 mustDate("2025-07-08"),
+							WithSalary:           true, // $151.8k/yr - $176k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Elixir:  {},

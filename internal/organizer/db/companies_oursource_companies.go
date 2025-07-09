@@ -1666,5 +1666,85 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "TechieMinions",
+			Website: "https://techieminions.co/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                79898600,
+				IDs:               nil,
+				Alias:             "techieminions",
+				Name:              "TechieMinions",
+				Followers:         "8K",
+				Employees:         "11-50",
+				AssociatedMembers: "17",
+				Verified:          false,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Iris Software Inc.",
+			Website: "https://www.irissoftware.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                237658,
+				IDs:               nil,
+				Alias:             "iris-software-inc.",
+				Name:              "Iris Software Inc.",
+				Followers:         "541K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "3,512",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Wipro",
+			Website: "https://www.wipro.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1318,
+				IDs:               []int{1318, 9437247, 104966733},
+				Alias:             "wipro",
+				Name:              "Wipro",
+				Followers:         "11M",
+				Employees:         "10K+",
+				AssociatedMembers: "248,113",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Korn Ferry",
+			Website: "https://www.kornferry.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3741,
+				IDs:               []int{3741, 5417, 6488, 13131, 49291, 53013, 349389, 3863592},
+				Alias:             "kornferry",
+				Name:              "Korn Ferry",
+				Followers:         "2M",
+				Employees:         "10K+",
+				AssociatedMembers: "18,387",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Apex Systems",
+			Website: "https://www.apexsystems.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                4787,
+				IDs:               nil,
+				Alias:             "apex-systems",
+				Name:              "Apex Systems",
+				Followers:         "2M",
+				Employees:         "1K-5K",
+				AssociatedMembers: "13,540",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }

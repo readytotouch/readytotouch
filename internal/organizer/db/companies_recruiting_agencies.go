@@ -1069,5 +1069,50 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Recruiting agency
 		},
+		{
+			Name:    "Glocomms",
+			Website: "https://www.glocomms.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3123217,
+				IDs:               nil,
+				Alias:             "glocomms",
+				Name:              "Glocomms",
+				Followers:         "365K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "94",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Xcede",
+			Website: "https://www.xcede.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                79018,
+				IDs:               nil,
+				Alias:             "xcede",
+				Name:              "Xcede",
+				Followers:         "412K",
+				Employees:         "51-200",
+				AssociatedMembers: "209",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Somewhere",
+			Website: "https://somewhere.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1810488,
+				IDs:               nil,
+				Alias:             "somewhere",
+				Name:              "Somewhere",
+				Followers:         "293K",
+				Employees:         "51-200",
+				AssociatedMembers: "",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
 	}
 }

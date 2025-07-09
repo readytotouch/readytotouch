@@ -87,4 +87,8 @@ var (
 		Alias: "telecom",
 		Name:  "Telecom",
 	}
+	IndustryDefenseTech = Industry{
+		Alias: "defensetech",
+		Name:  "DefenseTech",
+	}
 )

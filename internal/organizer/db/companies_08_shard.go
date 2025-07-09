@@ -3184,7 +3184,7 @@ func companies08Shard() []domain.CompanyProfile {
 							ShortDescription:     "Ryte Crawler Team",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4250488459/",
-							Date:                 mustDate("2025-06-14"),
+							Date:                 mustDate("2025-07-08"), // mustDate("2025-06-14"),
 							WithSalary:           false,
 							Remote:               true,
 						},
