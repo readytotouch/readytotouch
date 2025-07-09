@@ -1778,5 +1778,21 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Affinity",
+			Website: "https://affinity.pt/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2701281,
+				IDs:               nil,
+				Alias:             "affinity-portugal",
+				Name:              "Affinity",
+				Followers:         "169K",
+				Employees:         "201-500",
+				AssociatedMembers: "373",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }
