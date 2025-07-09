@@ -1794,5 +1794,21 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Software Mind",
+			Website: "https://softwaremind.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                13480,
+				IDs:               nil,
+				Alias:             "software-mind",
+				Name:              "Software Mind",
+				Followers:         "67K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "1,279",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }

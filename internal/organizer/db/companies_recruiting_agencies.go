@@ -1144,5 +1144,20 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Recruiting agency
 		},
+		{
+			Name:    "Halian",
+			Website: "https://www.halian.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                26946,
+				IDs:               []int{26946, 82644349},
+				Alias:             "halian",
+				Name:              "Halian",
+				Followers:         "603K",
+				Employees:         "501-1K",
+				AssociatedMembers: "800",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
 	}
 }

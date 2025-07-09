@@ -533,6 +533,15 @@ func companies05Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Software Engineer",
+							ShortDescription:     "Experience with the Go (Golang)",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4263720063/",
+							Date:                 mustDate("2025-07-09"),
+							WithSalary:           true, // $78.4k/yr - $123.4k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
