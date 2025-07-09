@@ -1981,8 +1981,8 @@
   },
   {
     "alias": "greenbone-ag",
-    "source": "",
-    "destination": ""
+    "source": "greenbone-ag-200x200.jpeg",
+    "destination": "greenbone-ag.jpeg"
   },
   {
     "alias": "greengot",
@@ -3071,8 +3071,8 @@
   },
   {
     "alias": "nordsecurity",
-    "source": "",
-    "destination": ""
+    "source": "nordsecurity-200x200.jpeg",
+    "destination": "nordsecurity.jpeg"
   },
   {
     "alias": "notablesystems",
@@ -5201,8 +5201,8 @@
   },
   {
     "alias": "yassir",
-    "source": "",
-    "destination": ""
+    "source": "yassir-180x180.png",
+    "destination": "yassir.png"
   },
   {
     "alias": "youthincsports",
