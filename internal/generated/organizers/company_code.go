@@ -144,7 +144,7 @@ var (
 		"apifonica":                           118,  // Apifonica
 		"cybus":                               119,  // Cybus
 		"goflink":                             120,  // Flink
-		"greenbone-networks-gmbh":             121,  // Greenbone AG
+		"greenbone-ag":                        121,  // Greenbone AG
 		"olx-group":                           122,  // OLX
 		"snyk":                                123,  // Snyk
 		"sinch":                               124,  // Sinch

@@ -366,7 +366,7 @@ grabapp grabapp.png
 grafana-labs 
 grammarly 
 grasshopperasia 
-greenbone-networks-gmbh 
+greenbone-ag
 greengot 
 greenpacket greenpacket.png
 gremlin-inc. gremlin-inc.png

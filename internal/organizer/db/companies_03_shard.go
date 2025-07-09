@@ -1002,7 +1002,8 @@ func companies03Shard() []domain.CompanyProfile {
 			Blog:    "https://community.greenbone.net/blog/category/blog/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                697428,
-				Alias:             "greenbone-networks-gmbh",
+				Alias:             "greenbone-ag",
+				PreviousAliases:   []string{"greenbone-networks-gmbh"},
 				Name:              "Greenbone AG",
 				Followers:         "7K",
 				Employees:         "51-200",

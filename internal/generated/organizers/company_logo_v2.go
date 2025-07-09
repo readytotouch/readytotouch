@@ -400,7 +400,7 @@ var (
 		"grafana-labs":                        "grafana-labs.jpeg",
 		"grammarly":                           "grammarly.jpeg",
 		"grasshopperasia":                     "",
-		"greenbone-networks-gmbh":             "",
+		"greenbone-ag":                        "",
 		"greengot":                            "",
 		"greenpacket":                         "",
 		"gremlin-inc.":                        "",

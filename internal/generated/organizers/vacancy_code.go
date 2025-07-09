@@ -442,10 +442,10 @@ var (
 		"https://www.linkedin.com/jobs/view/4262447536/":                                                               2235, // apifonica
 		"https://www.linkedin.com/jobs/view/4054430926/":                                                               347,  // cybus
 		"https://www.linkedin.com/jobs/view/3906306472/":                                                               348,  // goflink
-		"https://www.linkedin.com/jobs/view/3892843872/":                                                               349,  // greenbone-networks-gmbh
-		"https://www.linkedin.com/jobs/view/4227038724/":                                                               1833, // greenbone-networks-gmbh
-		"https://www.linkedin.com/jobs/view/4249613510/":                                                               2058, // greenbone-networks-gmbh
-		"https://www.linkedin.com/jobs/view/4264589613/":                                                               2317, // greenbone-networks-gmbh
+		"https://www.linkedin.com/jobs/view/3892843872/":                                                               349,  // greenbone-ag
+		"https://www.linkedin.com/jobs/view/4227038724/":                                                               1833, // greenbone-ag
+		"https://www.linkedin.com/jobs/view/4249613510/":                                                               2058, // greenbone-ag
+		"https://www.linkedin.com/jobs/view/4264589613/":                                                               2317, // greenbone-ag
 		"https://www.linkedin.com/jobs/view/4055838812/":                                                               350,  // olx-group
 		"https://www.linkedin.com/jobs/view/4133389022/":                                                               725,  // olx-group
 		"https://www.linkedin.com/jobs/view/4142492503/":                                                               763,  // olx-group
