@@ -6910,7 +6910,14 @@ func companies18Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-WhiteFox-Defense-Technologies-EI_IE1831870.11,40.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/WhiteFox-Defense-Technologies-Reviews-E1831870.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/WhiteFox-Defense-Technologies-Jobs-E1831870.htm",
+				Jobs:        "",
+				Reviews:     "20",
+				Salaries:    "26",
+				ReviewsRate: "3.6",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -7147,7 +7154,14 @@ func companies18Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-NFON-EI_IE947578.11,15.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/NFON-Reviews-E947578.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/NFON-Jobs-E947578.htm",
+				Jobs:        "12",
+				Reviews:     "62",
+				Salaries:    "111",
+				ReviewsRate: "4.0",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -7216,8 +7230,9 @@ func companies18Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "milestonesys",
+				Followers: "99",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -7233,7 +7248,7 @@ func companies18Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 1,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Lead Golang Software Engineer",
@@ -7299,13 +7314,24 @@ func companies18Shard() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Eltropy",
+				Employees:   "51 to 200",
+				Salary:      "",
+				Reviews:     "5",
+				ReviewsRate: "3.2",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Eltropy-EI_IE1320280.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Eltropy-Reviews-E1320280.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Eltropy-Jobs-E1320280.htm",
+				Jobs:        "12",
+				Reviews:     "84",
+				Salaries:    "114",
+				ReviewsRate: "4.2",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
