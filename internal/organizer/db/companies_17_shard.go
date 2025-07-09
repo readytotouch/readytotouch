@@ -268,7 +268,7 @@ func companies17Shard() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "FlexTrade",
 			Website: "https://flextrade.com/",
-			Careers: "",
+			Careers: "https://careers.flextrade.com/",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{

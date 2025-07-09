@@ -185,14 +185,24 @@
     "destination": ""
   },
   {
+    "alias": "alpine-iq",
+    "source": "alpine-iq-256x256.png",
+    "destination": "alpine-iq.png"
+  },
+  {
     "alias": "altair-engineering",
     "source": "",
     "destination": ""
   },
   {
+    "alias": "altea-healthcare",
+    "source": "altea-healthcare-180x180.webp",
+    "destination": "altea-healthcare.png"
+  },
+  {
     "alias": "altenar",
-    "source": "",
-    "destination": ""
+    "source": "altenar-180x180.png",
+    "destination": "altenar.png"
   },
   {
     "alias": "alterante",
@@ -596,8 +606,8 @@
   },
   {
     "alias": "blp-digital",
-    "source": "",
-    "destination": ""
+    "source": "blp-digital-200x200.jpeg",
+    "destination": "blp-digital.jpeg"
   },
   {
     "alias": "bnp-paribas",
@@ -691,8 +701,8 @@
   },
   {
     "alias": "capital-one",
-    "source": "",
-    "destination": ""
+    "source": "capital-one-180x180.png",
+    "destination": "capital-one.png"
   },
   {
     "alias": "carecarco",
@@ -728,6 +738,11 @@
     "alias": "cava-",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "celonis",
+    "source": "celonis-180x180.png",
+    "destination": "celonis.png"
   },
   {
     "alias": "centene-corporation",
@@ -941,8 +956,8 @@
   },
   {
     "alias": "cohesity",
-    "source": "",
-    "destination": ""
+    "source": "cohesity-200x200.jpeg",
+    "destination": "cohesity.jpeg"
   },
   {
     "alias": "collabera",
@@ -1631,8 +1646,8 @@
   },
   {
     "alias": "fiskaly",
-    "source": "",
-    "destination": ""
+    "source": "fiskaly-200x200.jpeg",
+    "destination": "fiskaly.jpeg"
   },
   {
     "alias": "flatpeak",
@@ -1651,8 +1666,8 @@
   },
   {
     "alias": "flextrade",
-    "source": "",
-    "destination": ""
+    "source": "flextrade-180x180.png",
+    "destination": "flextrade.png"
   },
   {
     "alias": "flip.id",
@@ -2080,6 +2095,11 @@
     "destination": ""
   },
   {
+    "alias": "hello-health-group",
+    "source": "hello-health-group-200x200.jpeg",
+    "destination": "hello-health-group.jpeg"
+  },
+  {
     "alias": "hello-stake",
     "source": "",
     "destination": ""
@@ -2271,13 +2291,13 @@
   },
   {
     "alias": "jack-henry",
-    "source": "",
-    "destination": ""
+    "source": "jack-henry-200x200.jpeg",
+    "destination": "jack-henry.jpeg"
   },
   {
     "alias": "jamf-software",
-    "source": "",
-    "destination": ""
+    "source": "jamf-software-180x180.png",
+    "destination": "jamf-software.png"
   },
   {
     "alias": "jetbrains",
@@ -2771,8 +2791,8 @@
   },
   {
     "alias": "mondoo",
-    "source": "",
-    "destination": ""
+    "source": "mondoo-256x256.png",
+    "destination": "mondoo.png"
   },
   {
     "alias": "mondu-ai",
@@ -2981,8 +3001,8 @@
   },
   {
     "alias": "nexos-ai",
-    "source": "",
-    "destination": ""
+    "source": "nexos-ai-200x200.jpeg",
+    "destination": "nexos-ai.jpeg"
   },
   {
     "alias": "nfon",
@@ -2991,8 +3011,8 @@
   },
   {
     "alias": "nice-systems",
-    "source": "",
-    "destination": ""
+    "source": "nice-systems-64x64.png",
+    "destination": "nice-systems.png"
   },
   {
     "alias": "nico-lab",
@@ -3541,8 +3561,8 @@
   },
   {
     "alias": "purestorage",
-    "source": "",
-    "destination": ""
+    "source": "purestorage-200x200.jpeg",
+    "destination": "purestorage.jpeg"
   },
   {
     "alias": "qad",
@@ -3696,8 +3716,8 @@
   },
   {
     "alias": "redisinc",
-    "source": "",
-    "destination": ""
+    "source": "redisinc-180x180.png",
+    "destination": "redisinc.png"
   },
   {
     "alias": "redpanda-data",
@@ -4040,6 +4060,11 @@
     "destination": ""
   },
   {
+    "alias": "smartbear",
+    "source": "smartbear-52x52.webp",
+    "destination": "smartbear.png"
+  },
+  {
     "alias": "smartrentdotcom",
     "source": "",
     "destination": ""
@@ -4161,8 +4186,8 @@
   },
   {
     "alias": "sportradar",
-    "source": "",
-    "destination": ""
+    "source": "sportradar-200x200.png",
+    "destination": "sportradar.png"
   },
   {
     "alias": "spotify",
@@ -4756,8 +4781,8 @@
   },
   {
     "alias": "ubiquiti-",
-    "source": "",
-    "destination": ""
+    "source": "ubiquiti-256x256.png",
+    "destination": "ubiquiti-.png"
   },
   {
     "alias": "ubisoft",
@@ -4931,8 +4956,8 @@
   },
   {
     "alias": "vinted",
-    "source": "",
-    "destination": ""
+    "source": "vinted-192x192.png",
+    "destination": "vinted.png"
   },
   {
     "alias": "viodotcom",
@@ -5048,6 +5073,11 @@
     "alias": "wearemntn",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "weareuney",
+    "source": "weareuney-200x200.jpeg",
+    "destination": "weareuney.jpeg"
   },
   {
     "alias": "wearevisionai",
@@ -5216,8 +5246,8 @@
   },
   {
     "alias": "zendesk",
-    "source": "",
-    "destination": ""
+    "source": "zendesk-120x120.png",
+    "destination": "zendesk.png"
   },
   {
     "alias": "zenport",

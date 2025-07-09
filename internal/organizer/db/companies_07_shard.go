@@ -4389,7 +4389,7 @@ func companies07Shard() []domain.CompanyProfile {
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "Capital One",
-			Website: "https://www.capitalonecareers.com/",
+			Website: "https://www.capitalone.com/",
 			Careers: "https://www.capitalonecareers.com/",
 			About:   "https://www.capitalonecareers.com/strategy-about",
 			Blog:    "",
