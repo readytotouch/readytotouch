@@ -193,8 +193,7 @@ func (c *Controller) CompaniesV2(ctx *gin.Context) {
 
 	companies := c.companies(organizerFeature.Organizer.Language)
 
-	// Never first
-	slices.Reverse(companies)
+	c.sortCompanies(companies)
 
 	userCompanyFavoriteMap, err := c.userFavoriteCompanyRepository.GetMap(ctx, authUserID, nil)
 	if err != nil {
@@ -1366,10 +1365,25 @@ func (c *Controller) companies(language domain.Language) []domain.CompanyProfile
 		}
 
 		company.Remote = company.Remote || c.anyRemoteVacancy(vacancies)
+		company.LastVacancyDate = c.maxLanguageDate(vacancies)
 
 		companies = append(companies, company)
 	}
 	return companies
+}
+
+func (c *Controller) sortCompanies(companies []domain.CompanyProfile) {
+	slices.SortFunc(companies, func(a, b domain.CompanyProfile) int {
+		if a.LastVacancyDate.After(b.LastVacancyDate) {
+			return -1
+		}
+
+		if a.LastVacancyDate.Before(b.LastVacancyDate) {
+			return 1
+		}
+
+		return int(b.ID - a.ID) // Sort by ID descending
+	})
 }
 
 func (c *Controller) findCompany(ctx *gin.Context, alias string) (domain.CompanyProfile, string, bool) {
