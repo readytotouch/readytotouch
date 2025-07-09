@@ -1054,6 +1054,13 @@ var (
 		"wolters-kluwer":                      1054, // Wolters Kluwer
 		"engageware":                          1055, // Engageware
 		"parallel-wireless-inc":               1056, // Parallel Wireless
+		"marketeam-ai":                        1057, // MarkeTeam.ai
+		"whitefox-defense-technologies-inc.":  1058, // WhiteFox Defense Technologies, Inc.
+		"mizzlecloud":                         1059, // Mizzle
+		"nuitee":                              1060, // Nuitée
+		"nfon":                                1061, // NFON AG
+		"milestone-systems":                   1062, // Milestone Systems
+		"eltropy":                             1063, // Eltropy
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 
