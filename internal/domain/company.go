@@ -197,7 +197,6 @@ type CompanyProfile struct {
 	ID                        int64       // populates from the CompanyAliasToCodeMap
 	Type                      CompanyType // populates from the CompanyStartupMap
 	Logo                      CompanyLogo // populates from the CompanyAliasToLogoMap
-	Remote                    bool        // Mark "remote" if the company has at least one remote job
 	Name                      string
 	Website                   string // Production website
 	Careers                   string // Careers page URL
@@ -228,6 +227,8 @@ type CompanyProfile struct {
 	Ignore                    bool
 	SyncSources               []CompanySyncSource
 	PinnedUntil               time.Time
+	Remote                    bool      // Mark "remote" if the company has at least one remote job
+	LastVacancyDate           time.Time // Sort companies by latest vacancy date per technology
 }
 
 type UnsafeCompaniesResponse struct {
