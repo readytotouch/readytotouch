@@ -1746,5 +1746,37 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "ICF",
+			Website: "https://www.icf.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                5742,
+				IDs:               []int{5742, 1119042, 1594441, 3050322},
+				Alias:             "icf-international",
+				Name:              "ICF",
+				Followers:         "243K",
+				Employees:         "5K-10K",
+				AssociatedMembers: "10,781",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "NFQ",
+			Website: "https://www.nfq.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2999119,
+				IDs:               []int{2999119, 98675753},
+				Alias:             "nfqgroup",
+				Name:              "NFQ",
+				Followers:         "32K",
+				Employees:         "501-1K",
+				AssociatedMembers: "484",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }
