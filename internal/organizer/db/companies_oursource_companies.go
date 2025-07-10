@@ -1810,5 +1810,37 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Ampstek",
+			Website: "https://www.ampstek.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                13423341,
+				IDs:               nil,
+				Alias:             "ampstek",
+				Name:              "Ampstek",
+				Followers:         "585K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "275",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Devoteam",
+			Website: "https://www.devoteam.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                4160,
+				IDs:               []int{4159, 4160, 40249, 125060, 9938308, 11421155, 18510518, 26241374, 64507143, 66244640, 76179553},
+				Alias:             "devoteam",
+				Name:              "Devoteam",
+				Followers:         "753K",
+				Employees:         "10K+",
+				AssociatedMembers: "9,891",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }

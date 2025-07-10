@@ -1159,5 +1159,20 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Recruiting agency
 		},
+		{
+			Name:    "Harrington Starr",
+			Website: "https://www.harringtonstarr.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1032582,
+				IDs:               nil,
+				Alias:             "harrington-starr",
+				Name:              "Harrington Starr",
+				Followers:         "305K",
+				Employees:         "11-50",
+				AssociatedMembers: "59",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
 	}
 }
