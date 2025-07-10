@@ -2991,6 +2991,16 @@ func companies08Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Golang Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4263700889/",
+							Location:             "Philadelphia, PA",
+							Date:                 mustDate("2025-07-09"),
+							WithSalary:           true, // $112.6k/yr - $168.8k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -5385,11 +5395,22 @@ func companies08Shard() []domain.CompanyProfile {
 							Remote:               false,
 						},
 						{
-							Title:                "Backend Developer (Golang)",
+							Title:                "Backend Developer (Golang)", // F0007
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4205828616/",
+							Location:             "Taipei, Taipei City, Taiwan",
 							Date:                 mustDate("2025-07-02"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Backend Developer (Golang)", // F0146
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4225194858/",
+							Location:             "Taipei, Taipei City, Taiwan",
+							Date:                 mustDate("2025-07-10"),
 							WithSalary:           false,
 							Remote:               false,
 						},

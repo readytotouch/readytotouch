@@ -1137,7 +1137,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4233752094/":                                                               1943, // applied-systems
 		"https://www.linkedin.com/jobs/view/4027419578/":                                                               112,  // yum-brands
 		"https://www.linkedin.com/jobs/view/4247615618/":                                                               2071, // yum-brands
-		"https://www.linkedin.com/jobs/view/4258129908/":                                                               2240, // yum-brands
+		"https://www.linkedin.com/jobs/view/4261923552/":                                                               2240, // yum-brands
 		"https://www.linkedin.com/jobs/view/4062804124/":                                                               113,  // nokia
 		"https://www.indeed.com/viewjob?jk=bbc415f81eb3e324":                                                           1282, // nokia
 		"https://www.linkedin.com/jobs/view/3992302026/":                                                               114,  // flyrinc

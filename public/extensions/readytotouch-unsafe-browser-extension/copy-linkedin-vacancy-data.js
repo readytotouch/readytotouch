@@ -29,6 +29,7 @@ document.body.addEventListener("keydown", (event) => {
 						    ShortDescription:     "",
 						    SwitchingOpportunity: "",
 						    URL:                  "${url}",
+						    Location:             "${vacancyLocation()}",
 						    Date:                 mustDate("${date()}"),
 						    WithSalary:           ${withSalary ? "true" : "false"},${salaryComment}
 						    Remote:               ${remote() ? "true" : "false"},
@@ -95,6 +96,16 @@ function salary() {
     }
 
     return [false, ""];
+}
+
+function vacancyLocation() {
+    const $elements = document.querySelectorAll(".job-details-jobs-unified-top-card__primary-description-container span.tvm__text");
+
+    for (const $element of $elements) {
+        return $element.textContent.trim();
+    }
+
+    return "";
 }
 
 function date() {
