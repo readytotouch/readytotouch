@@ -226,7 +226,7 @@ func companies19Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4253172194/",
-							Date:                 mustDate("2025-06-23"),
+							Date:                 mustDate("2025-07-10"), // mustDate("2025-06-23"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2713,6 +2713,85 @@ func companies19Shard() []domain.CompanyProfile {
 			ShortDescription: "Hello Health is building Emerging Asia’s Digital Health Ecosystem",
 			Industries: []domain.Industry{
 				domain.IndustryMedTech,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "RIIICO",
+			Website: "https://riiico.com/",
+			Careers: "",
+			About:   "https://riiico.com/about/",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                69330782,
+				IDs:               nil,
+				Alias:             "riiico",
+				Name:              "RIIICO",
+				Followers:         "3K",
+				Employees:         "11-50",
+				AssociatedMembers: "",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Junior Systems Engineer",
+							ShortDescription:     "Maintain and extend our Rust data export pipeline",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4261919706/",
+							Date:                 mustDate("2025-07-10"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Synchronisation of physical factories with their digital counterparts",
+			Industries:       []domain.Industry{
+				// NOP
 			},
 		},
 

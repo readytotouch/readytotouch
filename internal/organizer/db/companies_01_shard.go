@@ -5243,8 +5243,21 @@ func companies01Shard() []domain.CompanyProfile {
 						},
 					},
 				},
-				domain.Rust: {},
-				domain.Zig:  {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Principal Rust Software Engineer", // R-252519
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4262536910/",
+							Date:                 mustDate("2025-07-10"),
+							WithSalary:           true, // $165k/yr - $264k/yr
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig: {},
 				domain.Scala: {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{

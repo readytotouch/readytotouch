@@ -1174,5 +1174,20 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Recruiting agency
 		},
+		{
+			Name:    "Franklin Bates",
+			Website: "https://www.franklinbates.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3226252,
+				IDs:               nil,
+				Alias:             "franklin-bates",
+				Name:              "Franklin Bates",
+				Followers:         "41K",
+				Employees:         "2-10",
+				AssociatedMembers: "8",
+				Verified:          false,
+			},
+			Ignore: true, // Recruiting agency
+		},
 	}
 }
