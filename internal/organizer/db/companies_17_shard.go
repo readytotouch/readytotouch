@@ -268,7 +268,7 @@ func companies17Shard() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "FlexTrade",
 			Website: "https://flextrade.com/",
-			Careers: "",
+			Careers: "https://careers.flextrade.com/",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -318,6 +318,15 @@ func companies17Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4216696150/",
 							Date:                 mustDate("2025-04-28"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Software Developer (Java/Scala)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4263362376/",
+							Date:                 mustDate("2025-07-09"),
 							WithSalary:           false,
 							Remote:               false,
 						},

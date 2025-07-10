@@ -144,7 +144,7 @@ var (
 		"apifonica":                           118,  // Apifonica
 		"cybus":                               119,  // Cybus
 		"goflink":                             120,  // Flink
-		"greenbone-networks-gmbh":             121,  // Greenbone AG
+		"greenbone-ag":                        121,  // Greenbone AG
 		"olx-group":                           122,  // OLX
 		"snyk":                                123,  // Snyk
 		"sinch":                               124,  // Sinch
@@ -1061,6 +1061,12 @@ var (
 		"nfon":                                1061, // NFON AG
 		"milestone-systems":                   1062, // Milestone Systems
 		"eltropy":                             1063, // Eltropy
+		"weareuney":                           1064, // UNEY
+		"alpine-iq":                           1065, // AIQ.com (Alpine IQ)
+		"celonis":                             1066, // Celonis
+		"altea-healthcare":                    1067, // Altea Healthcare
+		"smartbear":                           1068, // SmartBear
+		"hello-health-group":                  1069, // Hello Health Group
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

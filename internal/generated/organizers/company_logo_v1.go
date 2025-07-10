@@ -377,7 +377,6 @@ var (
 		"grafana-labs":                        "",
 		"grammarly":                           "",
 		"grasshopperasia":                     "",
-		"greenbone-networks-gmbh":             "",
 		"greengot":                            "",
 		"greenpacket":                         "greenpacket.png",
 		"gremlin-inc.":                        "gremlin-inc.png",

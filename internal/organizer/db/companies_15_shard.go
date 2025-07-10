@@ -3866,8 +3866,9 @@ func companies15Shard() []domain.CompanyProfile {
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "BLPDigital",
+				Followers: "14",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -3890,7 +3891,7 @@ func companies15Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 2,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Backend Developer – Golang",
@@ -3900,6 +3901,15 @@ func companies15Shard() []domain.CompanyProfile {
 							Date:                 mustDate("2025-04-14"),
 							WithSalary:           false,
 							Remote:               false,
+						},
+						{
+							Title:                "Senior Backend Engineer – Go",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4264255330/",
+							Date:                 mustDate("2025-07-09"),
+							WithSalary:           false,
+							Remote:               true,
 						},
 					},
 				},

@@ -374,7 +374,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 				Name:              "Robert Walters",
 				Followers:         "2M",
 				Employees:         "1K-5K",
-				AssociatedMembers: "",
+				AssociatedMembers: "5,111",
 				Verified:          true,
 			},
 			Ignore: true, // Recruiting agency
@@ -1107,9 +1107,54 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 				IDs:               nil,
 				Alias:             "somewhere",
 				Name:              "Somewhere",
-				Followers:         "293K",
+				Followers:         "294K",
 				Employees:         "51-200",
+				AssociatedMembers: "1,106",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Lawrence Harvey",
+			Website: "https://www.lawrenceharvey.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                144455,
+				IDs:               nil,
+				Alias:             "lawrence-harvey",
+				Name:              "Lawrence Harvey",
+				Followers:         "378K",
+				Employees:         "51-200",
+				AssociatedMembers: "176",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Calyptus",
+			Website: "https://www.calyptus.co/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                78996142,
+				IDs:               nil,
+				Alias:             "calyptus-web3",
+				Name:              "Calyptus",
+				Followers:         "120K",
+				Employees:         "",
 				AssociatedMembers: "",
+				Verified:          false,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Halian",
+			Website: "https://www.halian.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                26946,
+				IDs:               []int{26946, 82644349},
+				Alias:             "halian",
+				Name:              "Halian",
+				Followers:         "603K",
+				Employees:         "501-1K",
+				AssociatedMembers: "800",
 				Verified:          true,
 			},
 			Ignore: true, // Recruiting agency

@@ -143,8 +143,7 @@ func (c *Controller) CompaniesV1(ctx *gin.Context) {
 
 	companies := c.companies(organizerFeature.Organizer.Language)
 
-	// Never first
-	slices.Reverse(companies)
+	c.sortCompanies(companies)
 
 	userCompanyFavoriteMap, err := c.userFavoriteCompanyRepository.GetMap(ctx, authUserID, nil)
 	if err != nil {
@@ -1048,6 +1047,18 @@ func (c *Controller) maxLanguageDate(vacancies []domain.Vacancy) time.Time {
 	return maxLanguageDate
 }
 
+func (c *Controller) maxDate(languages domain.Languages) time.Time {
+	var maxLanguageDate time.Time
+	for _, language := range languages {
+		for _, vacancy := range language.Vacancies {
+			if vacancy.Date.After(maxLanguageDate) {
+				maxLanguageDate = vacancy.Date
+			}
+		}
+	}
+	return maxLanguageDate
+}
+
 func (c *Controller) parseFeatureFromReferer(ctx *gin.Context) (dbs.FeatureWait, bool) {
 	var referer = ctx.Request.Referer()
 	if referer == "" {
@@ -1439,8 +1450,6 @@ func (c *Controller) DataPopulationCompaniesCareersAndAboutAndBlog(ctx *gin.Cont
 		})
 	)
 
-	slices.Reverse(companies)
-
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationCompaniesCareersAndAboutAndBlog(companies, "Populate Careers & About & Blog")))
 }
 
@@ -1461,8 +1470,6 @@ func (c *Controller) DataPopulationCompaniesLinkedIn(ctx *gin.Context) {
 		})
 	)
 
-	slices.Reverse(companies)
-
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationCompaniesLinkedIn(companies, "Populate LinkedIn")))
 }
 
@@ -1477,8 +1484,6 @@ func (c *Controller) DataPopulationCompaniesGitHub(ctx *gin.Context) {
 			return company.GitHubProfile.Followers == ""
 		})
 	)
-
-	slices.Reverse(companies)
 
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationCompaniesGitHub(companies, "Populate GitHub")))
 }
@@ -1497,8 +1502,6 @@ func (c *Controller) DataPopulationCompaniesGlassdoor(ctx *gin.Context) {
 		})
 	)
 
-	slices.Reverse(companies)
-
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationCompaniesGlassdoor(companies, "Populate Glassdoor")))
 }
 
@@ -1514,8 +1517,6 @@ func (c *Controller) DataPopulationCompaniesBlind(ctx *gin.Context) {
 		})
 	)
 
-	slices.Reverse(companies)
-
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationCompaniesBlind(companies, "Populate Blind")))
 }
 
@@ -1530,8 +1531,6 @@ func (c *Controller) DataPopulationCompaniesIndeed(ctx *gin.Context) {
 			return company.IndeedProfile.Alias == ""
 		})
 	)
-
-	slices.Reverse(companies)
 
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationCompaniesIndeed(companies, "Populate Indeed")))
 }
@@ -1549,8 +1548,6 @@ func (c *Controller) DataPopulationCompaniesLevelsFyi(ctx *gin.Context) {
 		})
 	)
 
-	slices.Reverse(companies)
-
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationCompaniesLevelsFyi(companies, "Populate Levels.fyi")))
 }
 
@@ -1567,9 +1564,6 @@ func (c *Controller) DataPopulationCompaniesLogo(ctx *gin.Context) {
 		result = make([]domain.CompanyProfile, 0, len(source))
 	)
 
-	// Never first
-	slices.Reverse(source)
-
 	for i, company := range source {
 		if i < keepLatest {
 			result = append(result, company)
@@ -1581,9 +1575,13 @@ func (c *Controller) DataPopulationCompaniesLogo(ctx *gin.Context) {
 			continue
 		}
 
+		company.LastVacancyDate = c.maxDate(company.Languages)
+
 		// The existing logos must be re-checked
 		result = append(result, company)
 	}
+
+	c.sortCompanies(result)
 
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationCompaniesLogo(result, "Populate Logo")))
 }
@@ -1622,8 +1620,13 @@ func (c *Controller) dataPopulationCompanies(match func(company domain.CompanyPr
 			continue
 		}
 
+		company.LastVacancyDate = c.maxDate(company.Languages)
+
 		companies = append(companies, company)
 	}
+
+	c.sortCompanies(companies)
+
 	return companies
 }
 

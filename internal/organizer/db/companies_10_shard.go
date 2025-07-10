@@ -3009,8 +3009,9 @@ func companies10Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "vinted",
-				Verified: true,
+				Login:     "vinted",
+				Followers: "258",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -3034,7 +3035,7 @@ func companies10Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 23,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Middle/Senior Go Backend Engineer",
@@ -3061,6 +3062,15 @@ func companies10Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4199830909/",
 							Date:                 mustDate("2025-04-24"), // mustDate("2025-04-02"),
 							WithSalary:           true,                   //  € 64,500 - € 87,300 gross per year
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Backend Engineer (Go)",
+							ShortDescription:     "Purchase",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4264185699/",
+							Date:                 mustDate("2025-07-09"),
+							WithSalary:           false,
 							Remote:               false,
 						},
 					},
@@ -3606,6 +3616,15 @@ func companies10Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4138987658/",
 							Date:                 mustDate("2025-06-09"), // mustDate("2025-04-28"), // mustDate("2025-04-05"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Software Engineer II (Go/Java)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4264143306/",
+							Date:                 mustDate("2025-07-09"),
 							WithSalary:           false,
 							Remote:               false,
 						},

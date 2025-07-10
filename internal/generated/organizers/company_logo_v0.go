@@ -186,7 +186,7 @@ var (
 		"grafana-labs":                       "grafana-labs.png",
 		"grammarly":                          "grammarly.png",
 		"grasshopperasia":                    "grasshopper.png",
-		"greenbone-networks-gmbh":            "greenbodeag.png",
+		"greenbone-ag":                       "greenbodeag.png",
 		"groq":                               "groq.png",
 		"group-avows":                        "avowstech.png",
 		"guardsquare":                        "guardsquare.png",

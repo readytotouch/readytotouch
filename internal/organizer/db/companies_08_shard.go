@@ -1156,8 +1156,9 @@ func companies08Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "cohesity",
-				Verified: false,
+				Login:     "cohesity",
+				Followers: "75",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Cohesity",
@@ -1188,7 +1189,7 @@ func companies08Shard() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 6,
+					GitHubRepositoriesCount: 7,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer, Networking (Backend: C++, Go)",
@@ -1206,6 +1207,15 @@ func companies08Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4114599989/",
 							Date:                 mustDate("2025-01-03"),
 							WithSalary:           true, // US Pay Range $164,000—$205,000 USD
+							Remote:               false,
+						},
+						{
+							Title:                "Staff Software Engineer C++/Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4257979133/",
+							Date:                 mustDate("2025-07-09"),
+							WithSalary:           false,
 							Remote:               false,
 						},
 					},
@@ -2352,6 +2362,15 @@ func companies08Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4162701643/",
 							Date:                 mustDate("2025-02-24"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Middle Software Engineer (AWS, Go)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4249951048/",
+							Date:                 mustDate("2025-07-09"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -5264,6 +5283,11 @@ func companies08Shard() []domain.CompanyProfile {
 				AssociatedMembers: "1,320",
 				Verified:          true,
 			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:     "ubiquiti",
+				Followers: "203",
+				Verified:  true,
+			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
 			},
@@ -5329,7 +5353,7 @@ func companies08Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4209293778/",
-							Date:                 mustDate("2025-05-06"), // mustDate("2025-04-14"),
+							Date:                 mustDate("2025-07-09"), // mustDate("2025-05-06"), // mustDate("2025-04-14"),
 							WithSalary:           false,
 							Remote:               false,
 						},
