@@ -2799,7 +2799,7 @@ func companies19Shard() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
+			Name:    "Boozt",
 			Website: "https://www.boozt.com/",
 			Careers: "https://careers.booztgroup.com/",
 			About:   "",

@@ -315,6 +315,11 @@
     "destination": ""
   },
   {
+    "alias": "archieapp",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "arculus-a-jungheinrich-company",
     "source": "",
     "destination": ""
@@ -630,6 +635,11 @@
     "destination": ""
   },
   {
+    "alias": "boozt-fashion",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "box",
     "source": "box-200x200.jpeg",
     "destination": "box.jpeg"
@@ -681,6 +691,11 @@
   },
   {
     "alias": "cake-by-vpbank",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "calibersmart",
     "source": "",
     "destination": ""
   },
@@ -1761,6 +1776,11 @@
   },
   {
     "alias": "foxtechteam",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "frankieone",
     "source": "",
     "destination": ""
   },
@@ -3260,6 +3280,11 @@
     "destination": ""
   },
   {
+    "alias": "oxiocorp",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "oxla",
     "source": "",
     "destination": ""
@@ -3763,6 +3788,11 @@
     "alias": "rialtic-io",
     "source": "rialtic-io-256x256.png",
     "destination": "rialtic-io.png"
+  },
+  {
+    "alias": "riiico",
+    "source": "",
+    "destination": ""
   },
   {
     "alias": "ringcentral",
