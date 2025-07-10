@@ -5738,7 +5738,11 @@ func companies02Shard() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "SonicWall-Inc",
+				Employees:   "1,001 to 5,000",
+				Salary:      "$120K ~ $180K a year",
+				Reviews:     "17",
+				ReviewsRate: "3.1",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "sonicwall",

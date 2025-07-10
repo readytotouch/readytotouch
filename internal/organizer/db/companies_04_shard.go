@@ -558,7 +558,11 @@ func companies04Shard() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Tabby",
+				Employees:   "1,001 to 5,000",
+				Salary:      "",
+				Reviews:     "3",
+				ReviewsRate: "3",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "tabby",
@@ -4103,7 +4107,7 @@ func companies04Shard() []domain.CompanyProfile {
 			ID:      0,                         // system
 			Type:    domain.CompanyTypeStartup, // system
 			Name:    "Aira",
-			Website: "https://company.airahome.com/",
+			Website: "https://airahome.com/",
 			Careers: "https://company.airahome.com/careers",
 			About:   "https://company.airahome.com/about",
 			Blog:    "",

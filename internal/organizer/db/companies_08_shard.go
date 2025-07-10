@@ -882,7 +882,11 @@ func companies08Shard() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Mitratech",
+				Employees:   "501-1000",
+				Salary:      "",
+				Reviews:     "2",
+				ReviewsRate: "4",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "mitratech",

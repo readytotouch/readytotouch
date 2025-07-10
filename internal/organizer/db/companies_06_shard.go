@@ -1071,7 +1071,7 @@ func companies06Shard() []domain.CompanyProfile {
 			ID:      0,                         // system
 			Type:    domain.CompanyTypeStartup, // system
 			Name:    "OVO",
-			Website: "https://company.ovo.com/",
+			Website: "https://ovo.com/",
 			Careers: "https://careers.ovo.com/",
 			About:   "",
 			Blog:    "",

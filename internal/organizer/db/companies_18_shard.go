@@ -514,7 +514,11 @@ func companies18Shard() []domain.CompanyProfile {
 				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "OpenDoor",
+				Employees:   "501 to 1,000",
+				Salary:      "$77K ~ $300K a year",
+				Reviews:     "208",
+				ReviewsRate: "3.2",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "opendoor",
@@ -1692,7 +1696,11 @@ func companies18Shard() []domain.CompanyProfile {
 				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Box",
+				Employees:   "1,001 to 5,000",
+				Salary:      "$73K ~ $333K a year",
+				Reviews:     "414",
+				ReviewsRate: "3.9",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "box",
@@ -3024,7 +3032,11 @@ func companies18Shard() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Quorum-Software",
+				Employees:   "1,001 to 5,000",
+				Salary:      "",
+				Reviews:     "5",
+				ReviewsRate: "3.6",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias: "",
@@ -4432,7 +4444,11 @@ func companies18Shard() []domain.CompanyProfile {
 				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "CloudBees",
+				Employees:   "501 to 1,000",
+				Salary:      "",
+				Reviews:     "11",
+				ReviewsRate: "3.6",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "cloudbees",
@@ -4685,7 +4701,11 @@ func companies18Shard() []domain.CompanyProfile {
 				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "SolarWinds",
+				Employees:   "1,001 to 5,000",
+				Salary:      "$50K ~ $180K a year",
+				Reviews:     "26",
+				ReviewsRate: "3.3",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "solarwinds",
@@ -4773,7 +4793,11 @@ func companies18Shard() []domain.CompanyProfile {
 				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Activision-Blizzard",
+				Employees:   "5,001 to 10,000",
+				Salary:      "$49K ~ $315K a year",
+				Reviews:     "179",
+				ReviewsRate: "3.3",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "blizzard-entertainment",

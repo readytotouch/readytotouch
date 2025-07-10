@@ -2581,7 +2581,14 @@ func companies19Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-SmartBear-EI_IE410916.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/SmartBear-Reviews-E410916.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/SmartBear-Jobs-E410916.htm",
+				Jobs:        "29",
+				Reviews:     "386",
+				Salaries:    "664",
+				ReviewsRate: "3.6",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -2825,7 +2832,14 @@ func companies19Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Boozt-EI_IE2391881.11,16.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Boozt-Reviews-E2391881.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Boozt-Jobs-E2391881.htm",
+				Jobs:        "11",
+				Reviews:     "164",
+				Salaries:    "240",
+				ReviewsRate: "4.3",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -2904,7 +2918,14 @@ func companies19Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-FrankieOne-EI_IE6239581.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/FrankieOne-Reviews-E6239581.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/FrankieOne-Jobs-E6239581.htm",
+				Jobs:        "8",
+				Reviews:     "53",
+				Salaries:    "60",
+				ReviewsRate: "3.4",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -3144,7 +3165,14 @@ func companies19Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-OXIO-EI_IE2395820.11,15.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/OXIO-Reviews-E2395820.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/OXIO-Jobs-E2395820.htm",
+				Jobs:        "5",
+				Reviews:     "19",
+				Salaries:    "29",
+				ReviewsRate: "3.6",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",

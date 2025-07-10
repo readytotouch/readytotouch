@@ -1396,6 +1396,12 @@ func companies05Shard() []domain.CompanyProfile {
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Scaleway-EI_IE1861876.11,19.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Scaleway-Reviews-E1861876.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Scaleway-Jobs-E1861876.htm",
+				Jobs:        "134",
+				Reviews:     "215",
+				Salaries:    "528",
+				ReviewsRate: "2.8",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
