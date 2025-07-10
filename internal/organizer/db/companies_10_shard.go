@@ -1208,8 +1208,9 @@ func companies10Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "vivid-money",
-				Verified: false,
+				Login:     "vivid-money",
+				Followers: "6",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -1233,7 +1234,7 @@ func companies10Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 3,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Backend Developer (Golang)",
@@ -3114,8 +3115,9 @@ func companies10Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "bigcommerce",
-				Verified: true,
+				Login:     "bigcommerce",
+				Followers: "284",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "BigCommerce",
@@ -3143,7 +3145,7 @@ func companies10Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 26,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer — Python/Go",
@@ -3420,8 +3422,9 @@ func companies10Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "qlik-oss",
-				Verified: false,
+				Login:     "qlik-oss",
+				Followers: "134",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "qlik",
@@ -3449,7 +3452,7 @@ func companies10Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 17,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Junior Backend Developer (Java/Go)",

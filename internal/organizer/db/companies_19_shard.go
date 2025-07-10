@@ -2908,8 +2908,9 @@ func companies19Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "FrankieFinancial",
+				Followers: "5",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -2932,7 +2933,7 @@ func companies19Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 9,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Backend Engineer (Golang)",
