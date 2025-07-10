@@ -3854,7 +3854,11 @@ func companies17Shard() []domain.CompanyProfile {
 				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Mapbox",
+				Employees:   "201 to 500",
+				Salary:      "$77K ~ $238K a year",
+				Reviews:     "80",
+				ReviewsRate: "2.6",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias: "",

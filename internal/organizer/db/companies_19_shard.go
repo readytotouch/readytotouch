@@ -226,7 +226,7 @@ func companies19Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4253172194/",
-							Date:                 mustDate("2025-06-23"),
+							Date:                 mustDate("2025-07-10"), // mustDate("2025-06-23"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -564,8 +564,9 @@ func companies19Shard() []domain.CompanyProfile {
 							ShortDescription:     "Data Platform",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4250646664/",
-							Date:                 mustDate("2025-06-23"),
-							WithSalary:           true,
+							Location:             "San Jose, CA",
+							Date:                 mustDate("2025-07-10"), // mustDate("2025-06-23"),
+							WithSalary:           true,                   // $150k/yr - $175k/yr
 							Remote:               false,
 						},
 					},
@@ -1712,7 +1713,7 @@ func companies19Shard() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "WhiteFox Defense Technologies, Inc.",
 			Website: "https://www.whitefoxdefense.com/",
-			Careers: "",
+			Careers: "https://www.whitefoxdefense.com/careers",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2430,6 +2431,7 @@ func companies19Shard() []domain.CompanyProfile {
 							ShortDescription:     "Orchestration Engine",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4261148978/",
+							Location:             "Madrid, Community of Madrid, Spain",
 							Date:                 mustDate("2025-07-09"),
 							WithSalary:           false,
 							Remote:               false,
@@ -2550,7 +2552,7 @@ func companies19Shard() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "SmartBear",
 			Website: "https://smartbear.com/",
-			Careers: "",
+			Careers: "https://smartbear.com/company/careers/",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2579,7 +2581,14 @@ func companies19Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-SmartBear-EI_IE410916.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/SmartBear-Reviews-E410916.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/SmartBear-Jobs-E410916.htm",
+				Jobs:        "29",
+				Reviews:     "386",
+				Salaries:    "664",
+				ReviewsRate: "3.6",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -2634,7 +2643,7 @@ func companies19Shard() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "Hello Health Group",
 			Website: "https://hellohealthgroup.com/",
-			Careers: "",
+			Careers: "https://hellohealthgroup.com/careers/",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2713,6 +2722,506 @@ func companies19Shard() []domain.CompanyProfile {
 			ShortDescription: "Hello Health is building Emerging Asia’s Digital Health Ecosystem",
 			Industries: []domain.Industry{
 				domain.IndustryMedTech,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "RIIICO",
+			Website: "https://riiico.com/",
+			Careers: "",
+			About:   "https://riiico.com/about/",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                69330782,
+				IDs:               nil,
+				Alias:             "riiico",
+				Name:              "RIIICO",
+				Followers:         "3K",
+				Employees:         "11-50",
+				AssociatedMembers: "",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Junior Systems Engineer",
+							ShortDescription:     "Maintain and extend our Rust data export pipeline",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4261919706/",
+							Date:                 mustDate("2025-07-10"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Synchronisation of physical factories with their digital counterparts",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Boozt",
+			Website: "https://www.boozt.com/",
+			Careers: "https://careers.booztgroup.com/",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                478478,
+				IDs:               nil,
+				Alias:             "boozt-fashion",
+				Name:              "Boozt",
+				Followers:         "27K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "771",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Boozt-EI_IE2391881.11,16.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Boozt-Reviews-E2391881.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Boozt-Jobs-E2391881.htm",
+				Jobs:        "11",
+				Reviews:     "164",
+				Salaries:    "240",
+				ReviewsRate: "4.3",
+				Verified:    true,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer (Golang/PHP)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4222848827/",
+							Date:                 mustDate("2025-07-10"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Nordic department store selling curated Fashion, Kids, Sport, Home and Beauty online",
+			Industries: []domain.Industry{
+				domain.IndustryECommerce,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "FrankieOne",
+			Website: "https://frankieone.com/",
+			Careers: "https://careers.frankieone.com/",
+			About:   "https://frankieone.com/frankieone-about-us",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                35577295,
+				IDs:               nil,
+				Alias:             "frankieone",
+				Name:              "FrankieOne",
+				Followers:         "8K",
+				Employees:         "51-200",
+				AssociatedMembers: "90",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:     "FrankieFinancial",
+				Followers: "5",
+				Verified:  true,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-FrankieOne-EI_IE6239581.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/FrankieOne-Reviews-E6239581.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/FrankieOne-Jobs-E6239581.htm",
+				Jobs:        "8",
+				Reviews:     "53",
+				Salaries:    "60",
+				ReviewsRate: "3.4",
+				Verified:    true,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 9,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Backend Engineer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4264350447/",
+							Location:             "Melbourne, Victoria, Australia",
+							Date:                 mustDate("2025-07-10"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Identity verification and fraud detection",
+			Industries: []domain.Industry{
+				domain.IndustryCyberSecurity,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Caliber Smart",
+			Website: "https://caliberreps.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                18856651,
+				IDs:               nil,
+				Alias:             "calibersmart",
+				Name:              "Caliber Smart",
+				Followers:         "1K",
+				Employees:         "501-1K",
+				AssociatedMembers: "129",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Java developer with Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4262553994/",
+							Location:             "Los Angeles, CA",
+							Date:                 mustDate("2025-07-10"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Caliber specializes in direct to consumer sales",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Archie",
+			Website: "https://archieapp.co/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                11107334,
+				IDs:               nil,
+				Alias:             "archieapp",
+				Name:              "Archie",
+				Followers:         "4K",
+				Employees:         "51-200",
+				AssociatedMembers: "14",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Go Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4261955207/",
+							Location:             "Montreal, QC",
+							Date:                 mustDate("2025-07-10"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Archie provides 1000+ flexible & hybrid workspaces around the world with an all-in-one platform to manage flexible offices from an intuitive and elegant platform",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "OXIO",
+			Website: "https://oxio.com/",
+			Careers: "https://oxio.com/join-the-team/",
+			About:   "https://oxio.com/company/",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                28141767,
+				IDs:               nil,
+				Alias:             "oxiocorp",
+				Name:              "OXIO",
+				Followers:         "5K",
+				Employees:         "51-200",
+				AssociatedMembers: "108",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-OXIO-EI_IE2395820.11,15.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/OXIO-Reviews-E2395820.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/OXIO-Jobs-E2395820.htm",
+				Jobs:        "5",
+				Reviews:     "19",
+				Salaries:    "29",
+				ReviewsRate: "3.6",
+				Verified:    false,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Go Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4262532716/",
+							Location:             "New York City Metropolitan Area",
+							Date:                 mustDate("2025-07-10"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Telecom-as-a-Service (TaaS) platform",
+			Industries:       []domain.Industry{
+				// NOP
 			},
 		},
 

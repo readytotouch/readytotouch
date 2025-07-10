@@ -388,7 +388,14 @@ func companies12Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-ZaloPay-EI_IE4832300.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/ZaloPay-Reviews-E4832300.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/ZaloPay-Jobs-E4832300.htm",
+				Jobs:        "",
+				Reviews:     "36",
+				Salaries:    "41",
+				ReviewsRate: "4.0",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -888,7 +895,14 @@ func companies12Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-NCR-Voyix-EI_IE10016304.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/NCR-Voyix-Reviews-E10016304.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/NCR-Voyix-Jobs-E10016304.htm",
+				Jobs:        "",
+				Reviews:     "164",
+				Salaries:    "315",
+				ReviewsRate: "3.1",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -1835,7 +1849,7 @@ func companies12Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4189553947/",
-							Date:                 mustDate("2025-05-28"), // mustDate("2025-05-07"), // mustDate("2025-04-14"), // mustDate("2025-03-24"),
+							Date:                 mustDate("2025-07-10"), // mustDate("2025-05-28"), // mustDate("2025-05-07"), // mustDate("2025-04-14"), // mustDate("2025-03-24"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3036,7 +3050,8 @@ func companies12Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "cloudwick",
+				Employees: "180",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Cloudwick-EI_IE1181769.11,20.htm",
@@ -3883,7 +3898,7 @@ func companies12Shard() []domain.CompanyProfile {
 			Website: "https://holidaycheck.com/",
 			Careers: "https://careers.holidaycheck.com/",
 			About:   "",
-			Blog:    "",
+			Blog:    "https://techblog.holidaycheck.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                289231,
 				IDs:               nil,
@@ -3906,7 +3921,14 @@ func companies12Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-HolidayCheck-Group-EI_IE931668.11,29.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/HolidayCheck-Group-Reviews-E931668.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/HolidayCheck-Group-Jobs-E931668.htm",
+				Jobs:        "27",
+				Reviews:     "47",
+				Salaries:    "113",
+				ReviewsRate: "4.1",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",

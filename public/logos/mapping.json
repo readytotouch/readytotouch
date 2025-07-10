@@ -46,8 +46,8 @@
   },
   {
     "alias": "abbott-",
-    "source": "",
-    "destination": ""
+    "source": "abbott-180x180.png",
+    "destination": "abbott-.png"
   },
   {
     "alias": "abc-fitness",
@@ -71,8 +71,8 @@
   },
   {
     "alias": "acronis",
-    "source": "",
-    "destination": ""
+    "source": "acronis-180x180.png",
+    "destination": "acronis.png"
   },
   {
     "alias": "activeprospect",
@@ -315,6 +315,11 @@
     "destination": ""
   },
   {
+    "alias": "archieapp",
+    "source": "archieapp-96x96.png",
+    "destination": "archieapp.png"
+  },
+  {
     "alias": "arculus-a-jungheinrich-company",
     "source": "",
     "destination": ""
@@ -336,13 +341,13 @@
   },
   {
     "alias": "arista-networks-inc",
-    "source": "",
-    "destination": ""
+    "source": "arista-200x200.jpeg",
+    "destination": "arista-networks-inc.jpeg"
   },
   {
     "alias": "arm",
-    "source": "",
-    "destination": ""
+    "source": "arm-200x200.jpeg",
+    "destination": "arm.jpeg"
   },
   {
     "alias": "armadaai",
@@ -541,8 +546,8 @@
   },
   {
     "alias": "bigcommerce",
-    "source": "",
-    "destination": ""
+    "source": "bigcommerce-60x60.png",
+    "destination": "bigcommerce.png"
   },
   {
     "alias": "bigpayme",
@@ -576,8 +581,8 @@
   },
   {
     "alias": "black-duck-software",
-    "source": "",
-    "destination": ""
+    "source": "black-duck-software-200x200.jpeg",
+    "destination": "black-duck-software.jpeg"
   },
   {
     "alias": "blackrock",
@@ -628,6 +633,11 @@
     "alias": "booz-allen-hamilton",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "boozt-fashion",
+    "source": "boozt-fashion-192x192.png",
+    "destination": "boozt-fashion.png"
   },
   {
     "alias": "box",
@@ -683,6 +693,11 @@
     "alias": "cake-by-vpbank",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "calibersmart",
+    "source": "calibersmart-200x200.jpeg",
+    "destination": "calibersmart.jpeg"
   },
   {
     "alias": "campingworld",
@@ -981,8 +996,8 @@
   },
   {
     "alias": "commercetools",
-    "source": "",
-    "destination": ""
+    "source": "commercetools-180x180.png",
+    "destination": "commercetools.png"
   },
   {
     "alias": "commonwealthbank",
@@ -1551,8 +1566,8 @@
   },
   {
     "alias": "extreme-networks",
-    "source": "",
-    "destination": ""
+    "source": "extreme-networks-200x200.jpeg",
+    "destination": "extreme-networks.jpeg"
   },
   {
     "alias": "f5",
@@ -1641,8 +1656,8 @@
   },
   {
     "alias": "fiserv",
-    "source": "",
-    "destination": ""
+    "source": "fiserv-200x200.jpeg",
+    "destination": "fiserv.jpeg"
   },
   {
     "alias": "fiskaly",
@@ -1765,14 +1780,19 @@
     "destination": ""
   },
   {
+    "alias": "frankieone",
+    "source": "frankieone-256x256.png",
+    "destination": "frankieone.png"
+  },
+  {
     "alias": "freeformfuture",
     "source": "",
     "destination": ""
   },
   {
     "alias": "freewheel",
-    "source": "",
-    "destination": ""
+    "source": "freewheel-200x200.jpeg",
+    "destination": "freewheel.jpeg"
   },
   {
     "alias": "fubotv",
@@ -1786,8 +1806,8 @@
   },
   {
     "alias": "fullinfo",
-    "source": "",
-    "destination": ""
+    "source": "fullinfo-200x200.jpeg",
+    "destination": "fullinfo.jpeg"
   },
   {
     "alias": "funnel-io",
@@ -1916,8 +1936,8 @@
   },
   {
     "alias": "go-nitro",
-    "source": "",
-    "destination": ""
+    "source": "go-nitro-180x180.webp",
+    "destination": "go-nitro.png"
   },
   {
     "alias": "go-teleport",
@@ -2061,8 +2081,8 @@
   },
   {
     "alias": "hasaki-vn",
-    "source": "",
-    "destination": ""
+    "source": "hasaki-vn-200x200.jpeg",
+    "destination": "hasaki-vn.jpeg"
   },
   {
     "alias": "hashicorp",
@@ -2146,8 +2166,8 @@
   },
   {
     "alias": "home24",
-    "source": "",
-    "destination": ""
+    "source": "home24-180x180.png",
+    "destination": "home24.png"
   },
   {
     "alias": "hootsuite",
@@ -2311,8 +2331,8 @@
   },
   {
     "alias": "jmawireless",
-    "source": "",
-    "destination": ""
+    "source": "jmawireless-180x180.png",
+    "destination": "jmawireless.png"
   },
   {
     "alias": "join-denim",
@@ -2476,8 +2496,8 @@
   },
   {
     "alias": "lexisnexis-risk-solutions",
-    "source": "",
-    "destination": ""
+    "source": "lexisnexis-risk-solutions-200x200.jpeg",
+    "destination": "lexisnexis-risk-solutions.jpeg"
   },
   {
     "alias": "liebherr",
@@ -2491,8 +2511,8 @@
   },
   {
     "alias": "lightspeedcommerce",
-    "source": "",
-    "destination": ""
+    "source": "lightspeedcommerce-180x180.webp",
+    "destination": "lightspeedcommerce.png"
   },
   {
     "alias": "limango-gmbh",
@@ -2616,8 +2636,8 @@
   },
   {
     "alias": "magnite",
-    "source": "",
-    "destination": ""
+    "source": "magnite-180x180.png",
+    "destination": "magnite.png"
   },
   {
     "alias": "mail-step",
@@ -2666,8 +2686,8 @@
   },
   {
     "alias": "mastercard",
-    "source": "",
-    "destination": ""
+    "source": "mastercard-180x180.png",
+    "destination": "mastercard.png"
   },
   {
     "alias": "materialise",
@@ -2836,8 +2856,8 @@
   },
   {
     "alias": "morgan-stanley",
-    "source": "",
-    "destination": ""
+    "source": "morgan-stanley-128x128.png",
+    "destination": "morgan-stanley.png"
   },
   {
     "alias": "motadata",
@@ -2881,8 +2901,8 @@
   },
   {
     "alias": "muzz",
-    "source": "",
-    "destination": ""
+    "source": "muzz-200x200.jpeg",
+    "destination": "muzz.jpeg"
   },
   {
     "alias": "mycafu",
@@ -3121,8 +3141,8 @@
   },
   {
     "alias": "oddingg",
-    "source": "",
-    "destination": ""
+    "source": "oddingg-200x200.jpeg",
+    "destination": "oddingg.jpeg"
   },
   {
     "alias": "odyssey-information-services",
@@ -3131,8 +3151,8 @@
   },
   {
     "alias": "okta-inc-",
-    "source": "",
-    "destination": ""
+    "source": "okta-200x200.jpeg",
+    "destination": "okta-inc-.jpeg"
   },
   {
     "alias": "ola-chat",
@@ -3151,13 +3171,13 @@
   },
   {
     "alias": "omio",
-    "source": "",
-    "destination": ""
+    "source": "omio-180x180.webp",
+    "destination": "omio.png"
   },
   {
     "alias": "omniful",
-    "source": "",
-    "destination": ""
+    "source": "omniful-200x200.jpeg",
+    "destination": "omniful.jpeg"
   },
   {
     "alias": "on2it-cybersecurity",
@@ -3258,6 +3278,11 @@
     "alias": "ovoenergy",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "oxiocorp",
+    "source": "oxiocorp-200x200.jpeg",
+    "destination": "oxiocorp.jpeg"
   },
   {
     "alias": "oxla",
@@ -3551,8 +3576,8 @@
   },
   {
     "alias": "pubmatic",
-    "source": "",
-    "destination": ""
+    "source": "pubmatic-200x200.jpeg",
+    "destination": "pubmatic.jpeg"
   },
   {
     "alias": "pulsepoint",
@@ -3765,6 +3790,11 @@
     "destination": "rialtic-io.png"
   },
   {
+    "alias": "riiico",
+    "source": "riiico-200x200.jpeg",
+    "destination": "riiico.jpeg"
+  },
+  {
     "alias": "ringcentral",
     "source": "",
     "destination": ""
@@ -3931,8 +3961,8 @@
   },
   {
     "alias": "scorebuddy",
-    "source": "",
-    "destination": ""
+    "source": "scorebuddy-200x200.jpeg",
+    "destination": "scorebuddy.jpeg"
   },
   {
     "alias": "scylladb",
@@ -4121,8 +4151,8 @@
   },
   {
     "alias": "solariscompany",
-    "source": "",
-    "destination": ""
+    "source": "solariscompany-96x96.png",
+    "destination": "solariscompany.png"
   },
   {
     "alias": "solarwinds",
@@ -4151,8 +4181,8 @@
   },
   {
     "alias": "sophos",
-    "source": "",
-    "destination": ""
+    "source": "sophos-200x200.jpeg",
+    "destination": "sophos.jpeg"
   },
   {
     "alias": "soundcloud",
@@ -4766,8 +4796,8 @@
   },
   {
     "alias": "twosixtechnologies",
-    "source": "",
-    "destination": ""
+    "source": "twosixtechnologies-481x481.jpg",
+    "destination": "twosixtechnologies.jpg"
   },
   {
     "alias": "tyk",
@@ -4966,8 +4996,8 @@
   },
   {
     "alias": "visa",
-    "source": "",
-    "destination": ""
+    "source": "visa-200x200.jpeg",
+    "destination": "visa.jpeg"
   },
   {
     "alias": "vitalbio",
@@ -4976,8 +5006,8 @@
   },
   {
     "alias": "vividmoney",
-    "source": "",
-    "destination": ""
+    "source": "vividmoney-256x256.png",
+    "destination": "vividmoney.png"
   },
   {
     "alias": "vodeno",
@@ -5146,8 +5176,8 @@
   },
   {
     "alias": "wolters-kluwer",
-    "source": "",
-    "destination": ""
+    "source": "wolters-kluwer-200x200.jpeg",
+    "destination": "wolters-kluwer.jpeg"
   },
   {
     "alias": "wonderschool",
@@ -5161,13 +5191,13 @@
   },
   {
     "alias": "workato",
-    "source": "",
-    "destination": ""
+    "source": "workato-200x200.jpeg",
+    "destination": "workato.jpeg"
   },
   {
     "alias": "worldlineglobal",
-    "source": "",
-    "destination": ""
+    "source": "worldline-192x192.png",
+    "destination": "worldlineglobal.png"
   },
   {
     "alias": "worldpay",
@@ -5211,8 +5241,8 @@
   },
   {
     "alias": "yum-brands",
-    "source": "",
-    "destination": ""
+    "source": "yum-brands-200x200.jpeg",
+    "destination": "yum-brands.jpeg"
   },
   {
     "alias": "yunopay",
@@ -5226,8 +5256,8 @@
   },
   {
     "alias": "zalopay",
-    "source": "",
-    "destination": ""
+    "source": "zalopay-200x200.jpeg",
+    "destination": "zalopay.jpeg"
   },
   {
     "alias": "zama-ai",
@@ -5276,8 +5306,8 @@
   },
   {
     "alias": "zscaler",
-    "source": "",
-    "destination": ""
+    "source": "zscaler-180x180.png",
+    "destination": "zscaler.png"
   },
   {
     "alias": "zubale",
@@ -5286,7 +5316,7 @@
   },
   {
     "alias": "zurich-instruments-ag",
-    "source": "",
-    "destination": ""
+    "source": "zurich-instruments-ag-200x200.jpeg",
+    "destination": "zurich-instruments-ag.jpeg"
   }
 ]

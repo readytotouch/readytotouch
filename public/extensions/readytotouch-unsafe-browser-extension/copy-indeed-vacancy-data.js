@@ -23,6 +23,7 @@ document.body.addEventListener("keydown", (event) => {
 						    Title:                "${title}",
 						    ShortDescription:     "",
 						    SwitchingOpportunity: "",
+						    Location:             "",
 						    URL:                  "${getURL()}",
 						    Date:                 mustDate("${date()}"),
 						    WithSalary:           ${salary() ? "true" : "false"},

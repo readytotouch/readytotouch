@@ -3852,7 +3852,7 @@ func companies15Shard() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "blp",
 			Website: "https://blp.digital/",
-			Careers: "",
+			Careers: "https://blp.digital/careers",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4384,7 +4384,11 @@ func companies15Shard() []domain.CompanyProfile {
 				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Adobe",
+				Employees:   "10,000+",
+				Salary:      "$24K ~ $325K a year",
+				Reviews:     "1,876",
+				ReviewsRate: "4",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "adobe",

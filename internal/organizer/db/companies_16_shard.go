@@ -31,7 +31,8 @@ func companies16Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "cabify",
+				Employees: "2,500",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Cabify-EI_IE975202.11,17.htm",
@@ -1560,7 +1561,11 @@ func companies16Shard() []domain.CompanyProfile {
 				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "BlackRock",
+				Employees:   "10,000+",
+				Salary:      "$71K ~ $250K a year",
+				Reviews:     "430",
+				ReviewsRate: "3.6",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "blackrock",
@@ -1629,7 +1634,7 @@ func companies16Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4206654255/",
-							Date:                 mustDate("2025-06-19"), // mustDate("2025-05-07"),
+							Date:                 mustDate("2025-07-10"), // mustDate("2025-06-19"), // mustDate("2025-05-07"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3217,6 +3222,16 @@ func companies16Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4212688691/",
 							Date:                 mustDate("2025-04-21"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4264324374/",
+							Location:             "Gurugram, Haryana, India",
+							Date:                 mustDate("2025-07-10"),
 							WithSalary:           false,
 							Remote:               false,
 						},

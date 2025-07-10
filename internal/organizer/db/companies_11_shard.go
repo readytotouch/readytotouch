@@ -323,7 +323,11 @@ func companies11Shard() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "ADTRAN",
+				Employees:   "1,001 to 5,000",
+				Salary:      "",
+				Reviews:     "4",
+				ReviewsRate: "4",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "adtran",
@@ -588,8 +592,9 @@ func companies11Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "arm",
+				Followers: "74",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "arm",
@@ -626,7 +631,8 @@ func companies11Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4236800842/",
-							Date:                 mustDate("2025-05-28"),
+							Location:             "Bengaluru, Karnataka, India",
+							Date:                 mustDate("2025-07-10"), // mustDate("2025-05-28"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -985,7 +991,11 @@ func companies11Shard() []domain.CompanyProfile {
 				Verified: true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "MoneyLion",
+				Employees:   "201 to 500",
+				Salary:      "$67K ~ $275K a year",
+				Reviews:     "25",
+				ReviewsRate: "3.5",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "moneylion",
@@ -1391,7 +1401,11 @@ func companies11Shard() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "CloudLinux",
+				Employees:   "51 to 200",
+				Salary:      "",
+				Reviews:     "1",
+				ReviewsRate: "5",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "cloudlinux",
@@ -1632,7 +1646,11 @@ func companies11Shard() []domain.CompanyProfile {
 				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Fidelity-Investments",
+				Employees:   "10,000+",
+				Salary:      "$48K ~ $214K a year",
+				Reviews:     "496",
+				ReviewsRate: "3.9",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "fidelity-investments",
@@ -2967,7 +2985,11 @@ func companies11Shard() []domain.CompanyProfile {
 				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "commercetools",
+				Employees:   "201 to 500",
+				Salary:      "",
+				Reviews:     "9",
+				ReviewsRate: "4.1",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias: "",

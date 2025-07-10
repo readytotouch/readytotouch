@@ -1810,5 +1810,149 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Ampstek",
+			Website: "https://www.ampstek.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                13423341,
+				IDs:               nil,
+				Alias:             "ampstek",
+				Name:              "Ampstek",
+				Followers:         "585K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "275",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Devoteam",
+			Website: "https://www.devoteam.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                4160,
+				IDs:               []int{4159, 4160, 40249, 125060, 9938308, 11421155, 18510518, 26241374, 64507143, 66244640, 76179553},
+				Alias:             "devoteam",
+				Name:              "Devoteam",
+				Followers:         "753K",
+				Employees:         "10K+",
+				AssociatedMembers: "9,891",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "diconium",
+			Website: "https://diconium.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                5226787,
+				IDs:               []int{268681, 5226787},
+				Alias:             "diconium",
+				Name:              "diconium",
+				Followers:         "38K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "2,347",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Reply",
+			Website: "https://www.reply.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                4724,
+				IDs:               nil,
+				Alias:             "reply",
+				Name:              "Reply",
+				Followers:         "287K",
+				Employees:         "10K+",
+				AssociatedMembers: "16,487",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Avenue Code",
+			Website: "https://www.avenuecode.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                583166,
+				IDs:               nil,
+				Alias:             "avenuecode",
+				Name:              "Avenue Code",
+				Followers:         "527K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "762",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Techiebutler",
+			Website: "https://techiebutler.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                90230746,
+				IDs:               nil,
+				Alias:             "techiebutler",
+				Name:              "Techiebutler",
+				Followers:         "22K",
+				Employees:         "11-50",
+				AssociatedMembers: "48",
+				Verified:          false,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Catalyte",
+			Website: "https://www.catalyte.io/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                21007,
+				IDs:               nil,
+				Alias:             "catalyteio",
+				Name:              "Catalyte",
+				Followers:         "33K",
+				Employees:         "51-200",
+				AssociatedMembers: "311",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "SONDA",
+			Website: "https://www.sonda.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                9592,
+				IDs:               nil,
+				Alias:             "sonda",
+				Name:              "SONDA",
+				Followers:         "763K",
+				Employees:         "10K+",
+				AssociatedMembers: "14,603",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Blip.pt",
+			Website: "https://www.blip.pt/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                691223,
+				IDs:               nil,
+				Alias:             "blip-pt",
+				Name:              "Blip.pt",
+				Followers:         "68K",
+				Employees:         "501-1K",
+				AssociatedMembers: "933",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }

@@ -1159,5 +1159,35 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Recruiting agency
 		},
+		{
+			Name:    "Harrington Starr",
+			Website: "https://www.harringtonstarr.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1032582,
+				IDs:               nil,
+				Alias:             "harrington-starr",
+				Name:              "Harrington Starr",
+				Followers:         "305K",
+				Employees:         "11-50",
+				AssociatedMembers: "59",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Franklin Bates",
+			Website: "https://www.franklinbates.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3226252,
+				IDs:               nil,
+				Alias:             "franklin-bates",
+				Name:              "Franklin Bates",
+				Followers:         "41K",
+				Employees:         "2-10",
+				AssociatedMembers: "8",
+				Verified:          false,
+			},
+			Ignore: true, // Recruiting agency
+		},
 	}
 }

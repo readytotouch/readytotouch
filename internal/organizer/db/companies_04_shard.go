@@ -558,7 +558,11 @@ func companies04Shard() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Tabby",
+				Employees:   "1,001 to 5,000",
+				Salary:      "",
+				Reviews:     "3",
+				ReviewsRate: "3",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "tabby",
@@ -1762,6 +1766,15 @@ func companies04Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4033619128/",
 							Date:                 mustDate("2024-09-25"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Software Engineer Quantum Computing (Python/Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4261983022/",
+							Date:                 mustDate("2025-07-10"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -4094,7 +4107,7 @@ func companies04Shard() []domain.CompanyProfile {
 			ID:      0,                         // system
 			Type:    domain.CompanyTypeStartup, // system
 			Name:    "Aira",
-			Website: "https://company.airahome.com/",
+			Website: "https://airahome.com/",
 			Careers: "https://company.airahome.com/careers",
 			About:   "https://company.airahome.com/about",
 			Blog:    "",

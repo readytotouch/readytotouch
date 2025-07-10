@@ -1208,8 +1208,9 @@ func companies10Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "vivid-money",
-				Verified: false,
+				Login:     "vivid-money",
+				Followers: "6",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -1233,7 +1234,7 @@ func companies10Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 3,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Backend Developer (Golang)",
@@ -1261,6 +1262,15 @@ func companies10Shard() []domain.CompanyProfile {
 							Date:                 mustDate("2025-03-10"),
 							WithSalary:           false,
 							Remote:               true,
+						},
+						{
+							Title:                "Lead Golang Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4264390748/",
+							Date:                 mustDate("2025-07-10"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 					},
 				},
@@ -3105,8 +3115,9 @@ func companies10Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "bigcommerce",
-				Verified: true,
+				Login:     "bigcommerce",
+				Followers: "284",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "BigCommerce",
@@ -3134,7 +3145,7 @@ func companies10Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 26,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer — Python/Go",
@@ -3208,6 +3219,15 @@ func companies10Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Software Engineer II (PHP/Java/Scala/Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4236020844/",
+							Date:                 mustDate("2025-07-10"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust: {},
@@ -3230,6 +3250,15 @@ func companies10Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4217633516/",
 							Date:                 mustDate("2025-07-01"), // mustDate("2025-06-08"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+						{
+							Title:                "Software Engineer II (PHP/Java/Scala/Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4236020844/",
+							Date:                 mustDate("2025-07-10"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -3393,8 +3422,9 @@ func companies10Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "qlik-oss",
-				Verified: false,
+				Login:     "qlik-oss",
+				Followers: "134",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "qlik",
@@ -3422,7 +3452,7 @@ func companies10Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 17,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Junior Backend Developer (Java/Go)",
@@ -3456,7 +3486,7 @@ func companies10Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4238784810/",
-							Date:                 mustDate("2025-06-18"), // mustDate("2025-05-28"),
+							Date:                 mustDate("2025-07-10"), // mustDate("2025-06-18"), // mustDate("2025-05-28"),
 							WithSalary:           false,
 							Remote:               false,
 						},

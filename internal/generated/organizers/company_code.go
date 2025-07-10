@@ -1067,6 +1067,12 @@ var (
 		"altea-healthcare":                    1067, // Altea Healthcare
 		"smartbear":                           1068, // SmartBear
 		"hello-health-group":                  1069, // Hello Health Group
+		"riiico":                              1070, // RIIICO
+		"boozt-fashion":                       1071, // Boozt
+		"frankieone":                          1072, // FrankieOne
+		"calibersmart":                        1073, // Caliber Smart
+		"archieapp":                           1074, // Archie
+		"oxiocorp":                            1075, // OXIO
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 
