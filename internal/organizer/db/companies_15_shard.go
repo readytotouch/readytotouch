@@ -3852,7 +3852,7 @@ func companies15Shard() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "blp",
 			Website: "https://blp.digital/",
-			Careers: "",
+			Careers: "https://blp.digital/careers",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{

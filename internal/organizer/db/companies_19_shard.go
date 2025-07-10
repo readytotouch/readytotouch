@@ -1713,7 +1713,7 @@ func companies19Shard() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "WhiteFox Defense Technologies, Inc.",
 			Website: "https://www.whitefoxdefense.com/",
-			Careers: "",
+			Careers: "https://www.whitefoxdefense.com/careers",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2552,7 +2552,7 @@ func companies19Shard() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "SmartBear",
 			Website: "https://smartbear.com/",
-			Careers: "",
+			Careers: "https://smartbear.com/company/careers/",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -2643,7 +2643,7 @@ func companies19Shard() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "Hello Health Group",
 			Website: "https://hellohealthgroup.com/",
-			Careers: "",
+			Careers: "https://hellohealthgroup.com/careers/",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -3141,8 +3141,8 @@ func companies19Shard() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "OXIO",
 			Website: "https://oxio.com/",
-			Careers: "",
-			About:   "",
+			Careers: "https://oxio.com/join-the-team/",
+			About:   "https://oxio.com/company/",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                28141767,
