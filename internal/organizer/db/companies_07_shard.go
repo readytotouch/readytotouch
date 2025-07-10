@@ -5817,8 +5817,9 @@ func companies07Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "sportradar",
-				Verified: true,
+				Login:     "sportradar",
+				Followers: "46",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Sportradar",

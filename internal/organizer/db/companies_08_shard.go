@@ -1156,8 +1156,9 @@ func companies08Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "cohesity",
-				Verified: false,
+				Login:     "cohesity",
+				Followers: "75",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Cohesity",
@@ -1188,7 +1189,7 @@ func companies08Shard() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 6,
+					GitHubRepositoriesCount: 7,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer, Networking (Backend: C++, Go)",
@@ -5281,6 +5282,11 @@ func companies08Shard() []domain.CompanyProfile {
 				Employees:         "1K-5K",
 				AssociatedMembers: "1,320",
 				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:     "ubiquiti",
+				Followers: "203",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",

@@ -2236,7 +2236,14 @@ func companies19Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-UNEY-EI_IE9833439.11,15.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/UNEY-Reviews-E9833439.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/UNEY-Jobs-E9833439.htm",
+				Jobs:        "",
+				Reviews:     "11",
+				Salaries:    "9",
+				ReviewsRate: "3.5",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -2394,11 +2401,16 @@ func companies19Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "celonis",
+				Followers: "248",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Celonis",
+				Employees:   "1,001 to 5,000 Employees",
+				Salary:      "$70K ~ $235K a year",
+				Reviews:     "97",
+				ReviewsRate: "3.3",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias: "",
@@ -2411,7 +2423,7 @@ func companies19Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 1,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Golang – Staff Software Engineer",
@@ -2433,7 +2445,7 @@ func companies19Shard() []domain.CompanyProfile {
 					Vacancies:               []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 1,
 					Vacancies:               []domain.Vacancy{},
 				},
 				domain.Elixir: {
@@ -2552,11 +2564,16 @@ func companies19Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "smartbear",
+				Followers: "257",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "SmartBear-Software",
+				Employees:   "501 to 1,000",
+				Salary:      "",
+				Reviews:     "8",
+				ReviewsRate: "3.6",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias: "",
@@ -2569,7 +2586,7 @@ func companies19Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 3,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Go Software Engineer",
@@ -2641,7 +2658,14 @@ func companies19Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Hello-Health-Group-EI_IE1617422.11,29.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Hello-Health-Group-Reviews-E1617422.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Hello-Health-Group-Jobs-E1617422.htm",
+				Jobs:        "",
+				Reviews:     "79",
+				Salaries:    "58",
+				ReviewsRate: "3.3",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
