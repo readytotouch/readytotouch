@@ -3456,7 +3456,7 @@ func companies10Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4238784810/",
-							Date:                 mustDate("2025-06-18"), // mustDate("2025-05-28"),
+							Date:                 mustDate("2025-07-10"), // mustDate("2025-06-18"), // mustDate("2025-05-28"),
 							WithSalary:           false,
 							Remote:               false,
 						},
