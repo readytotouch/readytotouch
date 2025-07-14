@@ -909,8 +909,18 @@ func companies16Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4128427094/",
 							Date:                 mustDate("2025-02-18"),
-							WithSalary:           true,
+							WithSalary:           true, // $140k/yr - $160k/yr
 							Remote:               true,
+						},
+						{
+							Title:                "Elixir Software Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4265373102/",
+							Location:             "Fort Worth, TX",
+							Date:                 mustDate("2025-07-12"),
+							WithSalary:           true, // $140k/yr - $160k/yr
+							Remote:               false,
 						},
 					},
 				},
