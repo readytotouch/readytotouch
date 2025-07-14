@@ -3778,6 +3778,16 @@ func companies16Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Software Engineer I (Java, Scala)",
+							ShortDescription:     "Data Platform",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4264910255/",
+							Location:             "Columbus, OH",
+							Date:                 mustDate("2025-07-15"),
+							WithSalary:           true, // $95k/yr - $105k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Elixir:  {},

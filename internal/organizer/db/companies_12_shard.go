@@ -513,6 +513,16 @@ func companies12Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $76,800 - $115,200 CAD per year
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Data Engineer (Scala, Spark, Python, Hadoop)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4266360659/",
+							Location:             "Toronto, ON",
+							Date:                 mustDate("2025-07-14"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Elixir:  {},
