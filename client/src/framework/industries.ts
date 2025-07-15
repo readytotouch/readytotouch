@@ -14,7 +14,7 @@ const all = [
     new Alias("adtech", "AdTech"),
     new Alias("martech", "MarTech"),
     new Alias("devops", "DevOps"),
-    // new Alias("cloud-computing", "Cloud Computing"),
+    new Alias("cloud-computing", "Cloud Computing"),
     new Alias("big-data", "Big Data"),
     new Alias("social-media", "Social Media"),
     new Alias("entertainment", "Entertainment"),

@@ -71,8 +71,8 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4120737001/",
-							Date:                 mustDate("2025-01-24"), // mustDate("2025-01-11"),
-							WithSalary:           true,                   // The annual salary for this position is between $95K to 115K depending on experience and other qualifications of the successful candidate
+							Date:                 mustDate("2025-01-24", "2025-01-11"),
+							WithSalary:           true, // The annual salary for this position is between $95K to 115K depending on experience and other qualifications of the successful candidate
 							Remote:               false,
 						},
 						{
@@ -186,7 +186,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4049853199/",
-							Date:                 mustDate("2025-01-14"), // mustDate("2024-12-03")
+							Date:                 mustDate("2025-01-14", "2024-12-03"),
 							WithSalary:           false,
 							Remote:               true,
 						},

@@ -1452,8 +1452,8 @@ func companies04Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4168178339/",
-							Date:                 mustDate("2025-04-02"), // mustDate("2025-02-28"),
-							WithSalary:           true,                   // $140.000 - $250.000 per year
+							Date:                 mustDate("2025-04-02", "2025-02-28"),
+							WithSalary:           true, // $140.000 - $250.000 per year
 							Remote:               false,
 						},
 						{
@@ -1461,8 +1461,8 @@ func companies04Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4168179222/",
-							Date:                 mustDate("2025-04-02"), // mustDate("2025-02-28"),
-							WithSalary:           true,                   // $100.000 - $145.000 per year
+							Date:                 mustDate("2025-04-02", "2025-02-28"),
+							WithSalary:           true, // $100.000 - $145.000 per year
 							Remote:               false,
 						},
 						{
@@ -1892,8 +1892,8 @@ func companies04Shard() []domain.CompanyProfile {
 							ShortDescription:     "Cloud Platform Management",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4159521277/",
-							Date:                 mustDate("2025-03-13"), // mustDate("2025-02-20"),
-							WithSalary:           true,                   // $147.000 - $203.500 per year
+							Date:                 mustDate("2025-03-13", "2025-02-20"),
+							WithSalary:           true, // $147.000 - $203.500 per year
 							Remote:               false,
 						},
 						{
@@ -1910,7 +1910,7 @@ func companies04Shard() []domain.CompanyProfile {
 							ShortDescription:     "8+ years of software engineering experience",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4199228504/",
-							Date:                 mustDate("2025-06-05"), // mustDate("2025-05-15"), // mustDate("2025-04-02"),
+							Date:                 mustDate("2025-06-05", "2025-05-15", "2025-04-02"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -1928,7 +1928,7 @@ func companies04Shard() []domain.CompanyProfile {
 							ShortDescription:     "(Cortex)",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4224369068/",
-							Date:                 mustDate("2025-06-18"), // mustDate("2025-05-07"),
+							Date:                 mustDate("2025-06-18", "2025-05-07"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -1969,7 +1969,7 @@ func companies04Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4104810631/",
-							Date:                 mustDate("2025-02-11"), // mustDate("2025-01-17"),
+							Date:                 mustDate("2025-02-11", "2025-01-17"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2545,8 +2545,8 @@ func companies04Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4121876234/",
-							Date:                 mustDate("2025-03-24"), // mustDate("2025-03-02"),
-							WithSalary:           true,                   // $156.400 - $234.600 per year
+							Date:                 mustDate("2025-03-24", "2025-03-02"),
+							WithSalary:           true, // $156.400 - $234.600 per year
 							Remote:               false,
 						},
 					},
@@ -2559,8 +2559,8 @@ func companies04Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4022259692/",
-							Date:                 mustDate("2025-03-13"), // mustDate("2025-02-19"), // mustDate("2024-12-05"),
-							WithSalary:           true,                   // $172.100 - $258.100 per year
+							Date:                 mustDate("2025-03-13", "2025-02-19", "2024-12-05"),
+							WithSalary:           true, // $172.100 - $258.100 per year
 							Remote:               false,
 						},
 					},
@@ -2748,8 +2748,8 @@ func companies04Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4075838872/",
-							Date:                 mustDate("2025-03-04"), // mustDate("2025-02-11"),
-							WithSalary:           true,                   // salary range for this role is $145,000 – $185,000
+							Date:                 mustDate("2025-03-04", "2025-02-11"),
+							WithSalary:           true, // salary range for this role is $145,000 – $185,000
 							Remote:               false,
 						},
 						{
@@ -2757,8 +2757,8 @@ func companies04Shard() []domain.CompanyProfile {
 							ShortDescription:     "Realtime Systems",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4091331711/",
-							Date:                 mustDate("2025-03-10"), // mustDate("2025-02-15"),
-							WithSalary:           true,                   // $145.000 - $185.000 per year
+							Date:                 mustDate("2025-03-10", "2025-02-15"),
+							WithSalary:           true, // $145.000 - $185.000 per year
 							Remote:               false,
 						},
 						{
@@ -2766,7 +2766,7 @@ func companies04Shard() []domain.CompanyProfile {
 							ShortDescription:     "AdTech",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4204813057/",
-							Date:                 mustDate("2025-07-05"), // mustDate("2025-06-14"), // mustDate("2025-05-24"), // mustDate("2025-05-02"), // mustDate("2025-04-10"),
+							Date:                 mustDate("2025-07-05", "2025-06-14", "2025-05-24", "2025-05-02", "2025-04-10"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2775,7 +2775,7 @@ func companies04Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4242953597/",
-							Date:                 mustDate("2025-06-28"), // mustDate("2025-06-06"),
+							Date:                 mustDate("2025-06-28", "2025-06-06"),
 							WithSalary:           true,
 							Remote:               false,
 						},
@@ -3191,8 +3191,8 @@ func companies04Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4114584098/",
-							Date:                 mustDate("2025-04-21"), // mustDate("2025-04-08"), // mustDate("2025-03-13"), // mustDate("2025-02-11"),
-							WithSalary:           true,                   // The base salary range for this position is between $180,000 - $230,000
+							Date:                 mustDate("2025-04-21", "2025-04-08", "2025-03-13", "2025-02-11"),
+							WithSalary:           true, // The base salary range for this position is between $180,000 - $230,000
 							Remote:               false,
 						},
 						{
@@ -3200,8 +3200,8 @@ func companies04Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4158798582/",
-							Date:                 mustDate("2025-02-25"), // mustDate("2025-02-19"),
-							WithSalary:           true,                   // $180.000 - $230.000 per year
+							Date:                 mustDate("2025-02-25", "2025-02-19"),
+							WithSalary:           true, // $180.000 - $230.000 per year
 							Remote:               false,
 						},
 					},
@@ -3271,7 +3271,7 @@ func companies04Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/3990418832/",
-							Date:                 mustDate("2025-01-16"), // mustDate("2024-11-16"),
+							Date:                 mustDate("2025-01-16", "2024-11-16"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3369,7 +3369,7 @@ func companies04Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4092377724/",
-							Date:                 mustDate("2025-07-04"), //  mustDate("2025-06-07"), // mustDate("2025-03-08"), // mustDate("2025-02-15"), // mustDate("2024-12-18"),
+							Date:                 mustDate("2025-07-04"), //  mustDate("2025-06-07", "2025-03-08", "2025-02-15", "2024-12-18"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3659,8 +3659,8 @@ func companies04Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/3847871749/",
-							Date:                 mustDate("2025-03-06"), // mustDate("2025-02-13"), // mustDate("2025-01-22"),
-							WithSalary:           true,                   // $150k — $180k per year
+							Date:                 mustDate("2025-03-06", "2025-02-13", "2025-01-22"),
+							WithSalary:           true, // $150k — $180k per year
 							Remote:               true,
 						},
 						{
@@ -3668,8 +3668,8 @@ func companies04Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4184687991/",
-							Date:                 mustDate("2025-06-09"), // mustDate("2025-03-14"),
-							WithSalary:           true,                   // Salary Range: €55,000 - €70,000 per year
+							Date:                 mustDate("2025-06-09", "2025-03-14"),
+							WithSalary:           true, // Salary Range: €55,000 - €70,000 per year
 							Remote:               false,
 						},
 						{
@@ -3677,7 +3677,7 @@ func companies04Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4184693514/",
-							Date:                 mustDate("2025-04-28"), // mustDate("2025-04-05"),
+							Date:                 mustDate("2025-04-28", "2025-04-05"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -4449,7 +4449,7 @@ func companies04Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4108998246/",
-							Date:                 mustDate("2025-03-04"), // mustDate("2025-02-11"), // mustDate("2025-01-17"),
+							Date:                 mustDate("2025-03-04", "2025-02-11", "2025-01-17"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -4503,7 +4503,7 @@ func companies04Shard() []domain.CompanyProfile {
 							ShortDescription:     "Databases",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4212548005/",
-							Date:                 mustDate("2025-05-10"), // mustDate("2025-04-18"),
+							Date:                 mustDate("2025-05-10", "2025-04-18"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -4512,7 +4512,7 @@ func companies04Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4212552596/",
-							Date:                 mustDate("2025-07-14"), // mustDate("2025-06-22"), // mustDate("2025-06-01"), // mustDate("2025-05-10"),
+							Date:                 mustDate("2025-07-14", "2025-06-22", "2025-06-01", "2025-05-10"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -4594,7 +4594,7 @@ func companies04Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/3984452580/",
-							Date:                 mustDate("2025-04-23"), // mustDate("2025-03-31"), // mustDate("2025-03-10"), // mustDate("2025-02-15"), // mustDate("2024-12-05"),
+							Date:                 mustDate("2025-04-23", "2025-03-31", "2025-03-10", "2025-02-15", "2024-12-05"),
 							WithSalary:           false,
 							Remote:               false,
 						},
