@@ -4058,7 +4058,7 @@ func companies19Shard() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
+			Name:    "Adyen",
 			Website: "https://www.adyen.com/",
 			Careers: "https://careers.adyen.com/",
 			About:   "https://www.adyen.com/about",
