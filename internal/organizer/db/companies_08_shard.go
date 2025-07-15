@@ -3033,6 +3033,11 @@ func companies08Shard() []domain.CompanyProfile {
 				AssociatedMembers: "2,091",
 				Verified:          true,
 			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:     "semrush",
+				Followers: "49",
+				Verified:  false,
+			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "SEMrush",
 				Employees:   "1,001 to 5,000",
@@ -3059,7 +3064,7 @@ func companies08Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 2,
+					GitHubRepositoriesCount: 3,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Golang Developer",

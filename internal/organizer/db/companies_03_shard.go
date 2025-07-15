@@ -1452,8 +1452,9 @@ func companies03Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "sailpoint-oss",
-				Verified: true,
+				Login:     "sailpoint-oss",
+				Followers: "273",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "SailPoint-Technologies",

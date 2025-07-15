@@ -3908,8 +3908,9 @@ func companies10Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "knowbe4",
-				Verified: false,
+				Login:     "knowbe4",
+				Followers: "6",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "KnowBe4",

@@ -1234,8 +1234,9 @@ func companies05Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "mcafee",
-				Verified: true,
+				Login:     "mcafee",
+				Followers: "29",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "mcafee",
@@ -1400,8 +1401,16 @@ func companies05Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "scaleway",
-				Verified: true,
+				Login:     "scaleway",
+				Followers: "242",
+				Verified:  true,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "scaleway",
+				Employees: "350",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Scaleway-EI_IE1861876.11,19.htm",
@@ -1421,7 +1430,7 @@ func companies05Shard() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 23,
+					GitHubRepositoriesCount: 28,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer – Go",
@@ -2548,8 +2557,9 @@ func companies05Shard() []domain.CompanyProfile {
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "whalebone",
-				Verified: false,
+				Login:     "whalebone",
+				Followers: "11",
+				Verified:  false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Whalebone-EI_IE4889910.11,20.htm",
@@ -3339,8 +3349,9 @@ func companies05Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "omio-labs",
-				Verified: false,
+				Login:     "omio-labs",
+				Followers: "9",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",

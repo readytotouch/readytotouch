@@ -423,8 +423,9 @@ func companies04Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "tailscale",
-				Verified: true,
+				Login:     "tailscale",
+				Followers: "2.3k",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Tailscale",
@@ -455,7 +456,7 @@ func companies04Shard() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 73,
+					GitHubRepositoriesCount: 76,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Backend Engineer",

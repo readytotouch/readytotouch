@@ -2618,7 +2618,14 @@ func companies18Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-audibene-EI_IE1155737.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/audibene-Reviews-E1155737.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/audibene-Jobs-E1155737.htm",
+				Jobs:        "30",
+				Reviews:     "215",
+				Salaries:    "282",
+				ReviewsRate: "3.7",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",

@@ -329,8 +329,9 @@ func companies06Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "home24",
-				Verified: false,
+				Login:     "home24",
+				Followers: "12",
+				Verified:  false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-home24-SE-EI_IE3166011.11,20.htm",
@@ -2502,8 +2503,9 @@ func companies06Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "cyberark",
-				Verified: false,
+				Login:     "cyberark",
+				Followers: "629",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "CyberArk",
@@ -2534,7 +2536,7 @@ func companies06Shard() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 22,
+					GitHubRepositoriesCount: 24,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Staff Software Engineer, Golang",
@@ -4563,8 +4565,9 @@ func companies06Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "BiTaksi",
-				Verified: true,
+				Login:     "BiTaksi",
+				Followers: "12",
+				Verified:  true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-BiTaksi-EI_IE2994794.11,18.htm",

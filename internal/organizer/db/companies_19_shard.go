@@ -891,7 +891,8 @@ func companies19Shard() []domain.CompanyProfile {
 				ReviewsRate: "3.1",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "aiven",
+				Employees: "180",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Aiven-EI_IE2610934.11,16.htm",
@@ -3273,7 +3274,14 @@ func companies19Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Bellroy-EI_IE811984.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Bellroy-Reviews-E811984.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Bellroy-Jobs-E811984.htm",
+				Jobs:        "15",
+				Reviews:     "26",
+				Salaries:    "44",
+				ReviewsRate: "4.6",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -3343,17 +3351,26 @@ func companies19Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "aziontech",
+				Followers: "120",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "azion",
+				Employees: "351",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Azion-Technologies-EI_IE1525794.11,29.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Azion-Technologies-Reviews-E1525794.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Azion-Technologies-Jobs-E1525794.htm",
+				Jobs:        "19",
+				Reviews:     "157",
+				Salaries:    "283",
+				ReviewsRate: "3.9",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -3434,17 +3451,26 @@ func companies19Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "riversideresearch",
+				Followers: "7",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "riverside-research",
+				Employees: "630",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Riverside-Research-EI_IE193384.11,29.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Riverside-Research-Reviews-E193384.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Riverside-Research-Jobs-E193384.htm",
+				Jobs:        "31",
+				Reviews:     "135",
+				Salaries:    "257",
+				ReviewsRate: "4.0",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -3684,7 +3710,14 @@ func companies19Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Winnow-Solutions-EI_IE1857734.11,27.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Winnow-Solutions-Reviews-E1857734.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Winnow-Solutions-Jobs-E1857734.htm",
+				Jobs:        "",
+				Reviews:     "53",
+				Salaries:    "85",
+				ReviewsRate: "3.7",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -3761,10 +3794,18 @@ func companies19Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "gwi",
+				Employees: "760",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-GWI-EI_IE1333381.11,14.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/GWI-Reviews-E1333381.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/GWI-Jobs-E1333381.htm",
+				Jobs:        "21",
+				Reviews:     "236",
+				Salaries:    "589",
+				ReviewsRate: "3.8",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -3834,8 +3875,9 @@ func companies19Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "pepperstone",
+				Followers: "53",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -3844,14 +3886,21 @@ func companies19Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Pepperstone-Group-EI_IE1971578.11,28.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Pepperstone-Group-Reviews-E1971578.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Pepperstone-Group-Jobs-E1971578.htm",
+				Jobs:        "15",
+				Reviews:     "114",
+				Salaries:    "155",
+				ReviewsRate: "3.6",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 2,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Engineer — Go",
@@ -3921,7 +3970,8 @@ func companies19Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "fico",
+				Employees: "4,000",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -4001,10 +4051,18 @@ func companies19Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "allpay-limited",
+				Employees: "210",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-allpay-EI_IE213649.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/allpay-Reviews-E213649.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/allpay-Jobs-E213649.htm",
+				Jobs:        "11",
+				Reviews:     "95",
+				Salaries:    "212",
+				ReviewsRate: "3.5",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -4074,14 +4132,16 @@ func companies19Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "adyen",
+				Followers: "390",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "adyen",
+				Employees: "2,500",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -4091,7 +4151,7 @@ func companies19Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 2,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Infrastructure Developer (Go)",
