@@ -909,8 +909,18 @@ func companies16Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4128427094/",
 							Date:                 mustDate("2025-02-18"),
-							WithSalary:           true,
+							WithSalary:           true, // $140k/yr - $160k/yr
 							Remote:               true,
+						},
+						{
+							Title:                "Elixir Software Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4265373102/",
+							Location:             "Fort Worth, TX",
+							Date:                 mustDate("2025-07-12"),
+							WithSalary:           true, // $140k/yr - $160k/yr
+							Remote:               false,
 						},
 					},
 				},
@@ -3766,6 +3776,16 @@ func companies16Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4209595207/",
 							Date:                 mustDate("2025-06-01"), // mustDate("2025-05-10"), // mustDate("2025-04-19"),
 							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Software Engineer I (Java, Scala)",
+							ShortDescription:     "Data Platform",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4264910255/",
+							Location:             "Columbus, OH",
+							Date:                 mustDate("2025-07-15"),
+							WithSalary:           true, // $95k/yr - $105k/yr
 							Remote:               false,
 						},
 					},
