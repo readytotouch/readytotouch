@@ -1954,5 +1954,21 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Thoughtworks",
+			Website: "https://www.thoughtworks.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                157356,
+				IDs:               []int{157356, 5356627},
+				Alias:             "thoughtworks",
+				Name:              "Thoughtworks",
+				Followers:         "691K",
+				Employees:         "10K+",
+				AssociatedMembers: "11,801",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }

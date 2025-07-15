@@ -1189,5 +1189,20 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Recruiting agency
 		},
+		{
+			Name:    "Accuro",
+			Website: "https://accurogroup.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                251336,
+				IDs:               nil,
+				Alias:             "accurogroup",
+				Name:              "Accuro",
+				Followers:         "58K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "218",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
 	}
 }
