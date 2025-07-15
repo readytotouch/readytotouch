@@ -1073,6 +1073,8 @@ var (
 		"calibersmart":                        1073, // Caliber Smart
 		"archieapp":                           1074, // Archie
 		"oxiocorp":                            1075, // OXIO
+		"bellroy":                             1076, // Bellroy
+		"aziontech":                           1077, // Azion
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

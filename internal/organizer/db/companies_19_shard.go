@@ -3317,7 +3317,7 @@ func companies19Shard() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
+			Name:    "Azion",
 			Website: "https://www.azion.com/",
 			Careers: "https://www.azion.com/en/careers/",
 			About:   "https://www.azion.com/en/about-us/",
