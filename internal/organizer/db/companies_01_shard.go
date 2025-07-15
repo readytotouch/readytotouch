@@ -4052,6 +4052,16 @@ func companies01Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Python/Go Software Engineer",
+							ShortDescription:     "Cluster Interfaces",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4266330772/",
+							Location:             "Sofia Metropolitan Area",
+							Date:                 mustDate("2025-07-14"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
