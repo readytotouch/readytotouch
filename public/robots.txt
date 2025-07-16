@@ -2,12 +2,18 @@ User-agent: *
 Disallow: /auth/github
 Disallow: /auth/gitlab
 Disallow: /auth/bitbucket
-Disallow: /organizers/golang/welcome
-Disallow: /organizers/rust/welcome
-Disallow: /organizers/zig/welcome
-Disallow: /organizers/scala/welcome
-Disallow: /organizers/elixir/welcome
-Disallow: /organizers/clojure/welcome
+Disallow: /auth/google
+Disallow: /auth/linkedin
+Disallow: /golang/welcome
+Disallow: /rust/welcome
+Disallow: /zig/welcome
+Disallow: /scala/welcome
+Disallow: /elixir/welcome
+Disallow: /erlang/welcome
+Disallow: /clojure/welcome
+Disallow: /haskell/welcome
+Disallow: /fsharp/welcome
+Disallow: /ocaml/welcome
 Disallow: /v/
 
 Sitemap: https://readytotouch.com/sitemap.xml

@@ -84,7 +84,7 @@ func (c *Controller) Welcome(ctx *gin.Context) {
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
 }
 
-func (c *Controller) Main(ctx *gin.Context) {
+func (c *Controller) Organizers(ctx *gin.Context) {
 	headerProfiles, err := c.getHeaderProfiles(ctx, domain.ContextGetUserID(ctx))
 	if err != nil {
 		// @TODO logging
@@ -129,7 +129,7 @@ func (c *Controller) CompaniesV1(ctx *gin.Context) {
 	}
 
 	if c.softAuthRedirect(ctx, authUserID, organizerFeature.Organizer.Language) {
-		ctx.Redirect(http.StatusFound, "/organizers/golang/welcome"+c.redirect(ctx.Request.URL.Path))
+		ctx.Redirect(http.StatusFound, "/golang/welcome"+c.redirect(ctx.Request.URL.Path))
 
 		return
 	}
@@ -178,7 +178,7 @@ func (c *Controller) CompaniesV2(ctx *gin.Context) {
 	}
 
 	if c.softAuthRedirect(ctx, authUserID, organizerFeature.Organizer.Language) {
-		ctx.Redirect(http.StatusFound, "/organizers/golang/welcome"+c.redirect(ctx.Request.URL.Path))
+		ctx.Redirect(http.StatusFound, "/golang/welcome"+c.redirect(ctx.Request.URL.Path))
 
 		return
 	}
@@ -334,7 +334,7 @@ func (c *Controller) CompanyV2(ctx *gin.Context) {
 	}
 
 	if c.softAuthRedirect(ctx, authUserID, organizerFeature.Organizer.Language) {
-		ctx.Redirect(http.StatusFound, "/organizers/golang/welcome"+c.redirect(ctx.Request.URL.Path))
+		ctx.Redirect(http.StatusFound, "/" + organizerFeature.Organizer.Alias + "/welcome"+c.redirect(ctx.Request.URL.Path))
 
 		return
 	}
@@ -488,7 +488,7 @@ func (c *Controller) Vacancies(ctx *gin.Context) {
 	}
 
 	if c.softAuthRedirect(ctx, authUserID, organizerFeature.Organizer.Language) {
-		ctx.Redirect(http.StatusFound, "/organizers/golang/welcome"+c.redirect(ctx.Request.URL.Path))
+		ctx.Redirect(http.StatusFound, "/" + organizerFeature.Organizer.Alias + "/welcome"+c.redirect(ctx.Request.URL.Path))
 
 		return
 	}
@@ -623,12 +623,6 @@ func (c *Controller) GolangCommunities(ctx *gin.Context) {
 		authUserID = domain.ContextGetUserID(ctx)
 	)
 
-	if authUserID == 0 {
-		ctx.Redirect(http.StatusFound, "/organizers/golang/welcome"+c.redirect(ctx.Request.URL.Path))
-
-		return
-	}
-
 	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)
 	if err != nil {
 		// @TODO logging
@@ -720,7 +714,7 @@ func (c *Controller) VacancyRedirect(ctx *gin.Context) {
 	)
 
 	if authUserID == 0 && !testFullPublic(now) {
-		ctx.Redirect(http.StatusFound, "/organizers/golang/welcome"+c.redirect(ctx.Request.URL.Path))
+		ctx.Redirect(http.StatusFound, "/golang/welcome"+c.redirect(ctx.Request.URL.Path))
 
 		return
 	}
@@ -829,7 +823,7 @@ func (c *Controller) SitemapCompanies(organizer domain.Organizer) gin.HandlerFun
 
 		for i, company := range companies {
 			urls[i] = Url{
-				Loc:     fmt.Sprintf("https://%s/organizers/%s/companies/%s", ctx.Request.Host, organizer.Alias, company.LinkedInProfile.Alias),
+				Loc:     fmt.Sprintf("https://%s/%s/companies/%s", ctx.Request.Host, organizer.Alias, company.LinkedInProfile.Alias),
 				LastMod: c.sitemapCompanyLastModified(company.Languages[organizer.Language].Vacancies),
 			}
 		}
@@ -1092,121 +1086,121 @@ func (c *Controller) organizerFeature(path string) (domain.OrganizerFeature, boo
 	path = strings.TrimSuffix(path, "/v2")
 
 	featurePathMap := map[string]domain.OrganizerFeature{
-		"/organizers/golang/companies": {
+		"/golang/companies": {
 			Organizer: domain.OrganizerGolang,
 			Feature:   dbs.FeatureWaitOrganizerGolangCompanies,
 			Path:      path,
 			Title:     "Companies",
 		},
-		"/organizers/golang/jobs": {
+		"/golang/jobs": {
 			Organizer: domain.OrganizerGolang,
 			Feature:   dbs.FeatureWaitOrganizerGolangVacancies,
 			Path:      path,
 			Title:     "Jobs",
 		},
-		"/organizers/rust/companies": {
+		"/rust/companies": {
 			Organizer: domain.OrganizerRust,
 			Feature:   dbs.FeatureWaitOrganizerRustCompanies,
 			Path:      path,
 			Title:     "Companies",
 		},
-		"/organizers/rust/jobs": {
+		"/rust/jobs": {
 			Organizer: domain.OrganizerRust,
 			Feature:   dbs.FeatureWaitOrganizerRustVacancies,
 			Path:      path,
 			Title:     "Jobs",
 		},
-		"/organizers/zig/companies": {
+		"/zig/companies": {
 			Organizer: domain.OrganizerZig,
 			Feature:   dbs.FeatureWaitOrganizerZigCompanies,
 			Path:      path,
 			Title:     "Companies",
 		},
-		"/organizers/zig/jobs": {
+		"/zig/jobs": {
 			Organizer: domain.OrganizerZig,
 			Feature:   dbs.FeatureWaitOrganizerZigVacancies,
 			Path:      path,
 			Title:     "Jobs",
 		},
-		"/organizers/scala/companies": {
+		"/scala/companies": {
 			Organizer: domain.OrganizerScala,
 			Feature:   dbs.FeatureWaitOrganizerScalaCompanies,
 			Path:      path,
 			Title:     "Companies",
 		},
-		"/organizers/scala/jobs": {
+		"/scala/jobs": {
 			Organizer: domain.OrganizerScala,
 			Feature:   dbs.FeatureWaitOrganizerScalaVacancies,
 			Path:      path,
 			Title:     "Jobs",
 		},
-		"/organizers/elixir/companies": {
+		"/elixir/companies": {
 			Organizer: domain.OrganizerElixir,
 			Feature:   dbs.FeatureWaitOrganizerElixirCompanies,
 			Path:      path,
 			Title:     "Companies",
 		},
-		"/organizers/elixir/jobs": {
+		"/elixir/jobs": {
 			Organizer: domain.OrganizerElixir,
 			Feature:   dbs.FeatureWaitOrganizerElixirVacancies,
 			Path:      path,
 			Title:     "Jobs",
 		},
-		"/organizers/erlang/companies": {
+		"/erlang/companies": {
 			Organizer: domain.OrganizerErlang,
 			Feature:   dbs.FeatureWaitOrganizerErlangCompanies,
 			Path:      path,
 			Title:     "Companies",
 		},
-		"/organizers/erlang/jobs": {
+		"/erlang/jobs": {
 			Organizer: domain.OrganizerErlang,
 			Feature:   dbs.FeatureWaitOrganizerErlangVacancies,
 			Path:      path,
 			Title:     "Jobs",
 		},
-		"/organizers/clojure/companies": {
+		"/clojure/companies": {
 			Organizer: domain.OrganizerClojure,
 			Feature:   dbs.FeatureWaitOrganizerClojureCompanies,
 			Path:      path,
 			Title:     "Companies",
 		},
-		"/organizers/clojure/jobs": {
+		"/clojure/jobs": {
 			Organizer: domain.OrganizerClojure,
 			Feature:   dbs.FeatureWaitOrganizerClojureVacancies,
 			Path:      path,
 			Title:     "Jobs",
 		},
-		"/organizers/haskell/companies": {
+		"/haskell/companies": {
 			Organizer: domain.OrganizerHaskell,
 			Feature:   dbs.FeatureWaitOrganizerHaskellCompanies,
 			Path:      path,
 			Title:     "Companies",
 		},
-		"/organizers/haskell/jobs": {
+		"/haskell/jobs": {
 			Organizer: domain.OrganizerHaskell,
 			Feature:   dbs.FeatureWaitOrganizerHaskellVacancies,
 			Path:      path,
 			Title:     "Jobs",
 		},
-		"/organizers/fsharp/companies": {
+		"/fsharp/companies": {
 			Organizer: domain.OrganizerFSharp,
 			Feature:   dbs.FeatureWaitOrganizerFsharpCompanies,
 			Path:      path,
 			Title:     "Companies",
 		},
-		"/organizers/fsharp/jobs": {
+		"/fsharp/jobs": {
 			Organizer: domain.OrganizerFSharp,
 			Feature:   dbs.FeatureWaitOrganizerFsharpVacancies,
 			Path:      path,
 			Title:     "Jobs",
 		},
-		"/organizers/ocaml/companies": {
+		"/ocaml/companies": {
 			Organizer: domain.OrganizerOCaml,
 			Feature:   dbs.FeatureWaitOrganizerOcamlCompanies,
 			Path:      path,
 			Title:     "Companies",
 		},
-		"/organizers/ocaml/jobs": {
+		"/ocaml/jobs": {
 			Organizer: domain.OrganizerOCaml,
 			Feature:   dbs.FeatureWaitOrganizerOcamlVacancies,
 			Path:      path,
@@ -1221,16 +1215,16 @@ func (c *Controller) organizerFeature(path string) (domain.OrganizerFeature, boo
 
 func (c *Controller) organizer(path string) (domain.Organizer, bool) {
 	organizerPathMap := map[string]domain.Organizer{
-		"/organizers/golang/welcome":  domain.OrganizerGolang,
-		"/organizers/rust/welcome":    domain.OrganizerRust,
-		"/organizers/zig/welcome":     domain.OrganizerZig,
-		"/organizers/scala/welcome":   domain.OrganizerScala,
-		"/organizers/elixir/welcome":  domain.OrganizerElixir,
-		"/organizers/erlang/welcome":  domain.OrganizerErlang,
-		"/organizers/clojure/welcome": domain.OrganizerClojure,
-		"/organizers/haskell/welcome": domain.OrganizerHaskell,
-		"/organizers/fsharp/welcome":  domain.OrganizerFSharp,
-		"/organizers/ocaml/welcome":   domain.OrganizerOCaml,
+		"/golang/welcome":  domain.OrganizerGolang,
+		"/rust/welcome":    domain.OrganizerRust,
+		"/zig/welcome":     domain.OrganizerZig,
+		"/scala/welcome":   domain.OrganizerScala,
+		"/elixir/welcome":  domain.OrganizerElixir,
+		"/erlang/welcome":  domain.OrganizerErlang,
+		"/clojure/welcome": domain.OrganizerClojure,
+		"/haskell/welcome": domain.OrganizerHaskell,
+		"/fsharp/welcome":  domain.OrganizerFSharp,
+		"/ocaml/welcome":   domain.OrganizerOCaml,
 	}
 
 	feature, ok := organizerPathMap[path]

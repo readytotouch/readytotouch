@@ -70,7 +70,7 @@ func StreamOrganizersMain(qw422016 *qt422016.Writer, headerProfiles []SocialProv
     `)
 	} else {
 		qw422016.N().S(`
-    <a href="/organizers/golang/welcome`)
+    <a href="/golang/welcome`)
 		qw422016.E().S(authQueryParams)
 		qw422016.N().S(`" class="button button--small-padding button--black header__login-button">Log in</a>
     `)
@@ -95,7 +95,7 @@ func StreamOrganizersMain(qw422016 *qt422016.Writer, headerProfiles []SocialProv
         </p>
       </div>
       <div class="hero__buttons-group">
-        <a href="/organizers/golang" class="button button--bordered-gray hero__button">
+        <a href="/golang" class="button button--bordered-gray hero__button">
           <img
             width="20"
             height="20"
@@ -114,7 +114,7 @@ func StreamOrganizersMain(qw422016 *qt422016.Writer, headerProfiles []SocialProv
             />
           </div>
         </a>
-        <a href="/organizers/rust" class="button button--bordered-gray hero__button">
+        <a href="/rust" class="button button--bordered-gray hero__button">
           <img
             width="20"
             height="20"
@@ -133,7 +133,7 @@ func StreamOrganizersMain(qw422016 *qt422016.Writer, headerProfiles []SocialProv
             />
           </div>
         </a>
-        <a href="/organizers/scala" class="button button--bordered-gray hero__button">
+        <a href="/scala" class="button button--bordered-gray hero__button">
           <img
             width="20"
             height="20"
@@ -152,7 +152,7 @@ func StreamOrganizersMain(qw422016 *qt422016.Writer, headerProfiles []SocialProv
             />
           </div>
         </a>
-        <a href="/organizers/elixir" class="button button--bordered-gray hero__button">
+        <a href="/elixir" class="button button--bordered-gray hero__button">
           <img
             width="20"
             height="20"
@@ -171,7 +171,7 @@ func StreamOrganizersMain(qw422016 *qt422016.Writer, headerProfiles []SocialProv
             />
           </div>
         </a>
-        <a href="/organizers/erlang" class="button button--bordered-gray hero__button">
+        <a href="/erlang" class="button button--bordered-gray hero__button">
           <img
             width="20"
             height="20"
@@ -190,7 +190,7 @@ func StreamOrganizersMain(qw422016 *qt422016.Writer, headerProfiles []SocialProv
             />
           </div>
         </a>
-        <a href="/organizers/clojure" class="button button--bordered-gray hero__button">
+        <a href="/clojure" class="button button--bordered-gray hero__button">
           <img
             width="20"
             height="20"
@@ -209,7 +209,7 @@ func StreamOrganizersMain(qw422016 *qt422016.Writer, headerProfiles []SocialProv
             />
           </div>
         </a>
-        <a href="/organizers/zig" class="button button--bordered-gray hero__button">
+        <a href="/zig" class="button button--bordered-gray hero__button">
           <img
             width="20"
             height="20"
@@ -228,7 +228,7 @@ func StreamOrganizersMain(qw422016 *qt422016.Writer, headerProfiles []SocialProv
             />
           </div>
         </a>
-        <a href="/organizers/haskell" class="button button--bordered-gray hero__button">
+        <a href="/haskell" class="button button--bordered-gray hero__button">
           <img
             width="20"
             height="20"
@@ -247,7 +247,7 @@ func StreamOrganizersMain(qw422016 *qt422016.Writer, headerProfiles []SocialProv
             />
           </div>
         </a>
-        <a href="/organizers/fsharp" class="button button--bordered-gray hero__button">
+        <a href="/fsharp" class="button button--bordered-gray hero__button">
           <img
             width="20"
             height="20"
@@ -266,7 +266,7 @@ func StreamOrganizersMain(qw422016 *qt422016.Writer, headerProfiles []SocialProv
             />
           </div>
         </a>
-        <a href="/organizers/ocaml" class="button button--bordered-gray hero__button">
+        <a href="/ocaml" class="button button--bordered-gray hero__button">
           <img
             width="20"
             height="20"
@@ -361,7 +361,7 @@ func StreamOrganizersMain(qw422016 *qt422016.Writer, headerProfiles []SocialProv
         </a>
       </div>
       <div class="projects__group">
-        <a class="projects__link" target="_blank" href="/organizers/golang/companies">
+        <a class="projects__link" target="_blank" href="/golang/companies">
           <img
             class="projects__image"
             width="129"
@@ -370,7 +370,7 @@ func StreamOrganizersMain(qw422016 *qt422016.Writer, headerProfiles []SocialProv
             src="/assets/images/pages/organizer/golang-organizer.svg"
           />
         </a>
-        <a class="projects__link" target="_blank" href="/organizers/rust/companies">
+        <a class="projects__link" target="_blank" href="/rust/companies">
           <img
             class="projects__image"
             width="129"

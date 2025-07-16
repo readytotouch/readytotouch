@@ -31,7 +31,7 @@
         {% if len(headerProfiles) > 0 %}
         {%= organizersHeaderProfile(headerProfiles) %}
         {% else %}
-        <a href="/organizers/golang/welcome{%s authQueryParams %}" class="button button--small-padding button--bordered-gray header__login-button">Log in</a>
+        <a href="/golang/welcome{%s authQueryParams %}" class="button button--small-padding button--bordered-gray header__login-button">Log in</a>
         {% endif %}
     </div>
 </header>

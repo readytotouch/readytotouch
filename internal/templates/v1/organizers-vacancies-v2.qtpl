@@ -10,19 +10,31 @@
 ) -%}
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<title>{%s organizerFeature.Organizer.Title %} jobs | ReadyToTouch</title>
-	<meta name="title" content="{%s organizerFeature.Organizer.Title %} jobs | ReadyToTouch">
-    {% comment %}
-	<meta name="description" content="{%s organizerFeature.Organizer.Description %}">
-    <meta name="keywords" content="{%s organizerFeature.Organizer.Keywords %}">
-    {% endcomment %}
+    <title>{%s organizerFeature.Organizer.Title %} jobs – remote and onsite developer vacancies | ReadyToTouch</title>
+    <meta name="title" content="{%s organizerFeature.Organizer.Title %} jobs – remote and onsite developer vacancies | ReadyToTouch">
+    <meta name="description" content="Find top {%s organizerFeature.Organizer.Title %} jobs from companies actively using {%s organizerFeature.Organizer.Title %} in production. Explore remote and onsite developer positions updated weekly.">
 
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="author" type="text/plain" href="https://readytotouch.com/humans.txt"/>
-	<meta property="og:image" content="/assets/images/og/organizers-light.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="author" type="text/plain" href="https://readytotouch.com/humans.txt"/>
+
+    <meta property="og:title" content="{%s organizerFeature.Organizer.Title %} jobs – find companies hiring {%s organizerFeature.Organizer.Title %} developers">
+    <meta property="og:description" content="Discover {%s organizerFeature.Organizer.Title %} jobs in startups and product companies using {%s organizerFeature.Organizer.Title %} in production.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://readytotouch.com/assets/images/og/organizers-light.jpg">
+    <meta property="og:url" content="https://readytotouch.com/{%s organizerFeature.Organizer.Alias %}/jobs">
+
+    <!-- JSON-LD (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "{%s organizerFeature.Organizer.Title %} jobs",
+      "description": "Find {%s organizerFeature.Organizer.Title %} jobs in companies using {%s organizerFeature.Organizer.Alias %} in production. Remote and onsite opportunities for developers.",
+      "url": "https://readytotouch.com/organizers/{%s organizerFeature.Organizer.Alias %}/jobs"
+    }
+    </script>
 
     {%= favicon() %}
     {%= organizersFonts() %}
@@ -47,20 +59,20 @@
     </a>
     <ul class="header__nav">
       <li class="header__nav-item">
-        <a href="/organizers/{%s organizerFeature.Organizer.Alias %}/companies" class="header__nav-link">Companies</a>
+        <a href="/{%s organizerFeature.Organizer.Alias %}/companies" class="header__nav-link">Companies</a>
       </li>
       <li class="header__nav-item">
-        <a href="/organizers/{%s organizerFeature.Organizer.Alias %}/jobs" class="header__nav-link active">Jobs</a>
+        <a href="/{%s organizerFeature.Organizer.Alias %}/jobs" class="header__nav-link active">Jobs</a>
       </li>
       <li class="header__nav-item">
-        <a href="/organizers/{%s organizerFeature.Organizer.Alias %}/communities" class="header__nav-link">Communities</a>
+        <a href="/{%s organizerFeature.Organizer.Alias %}/communities" class="header__nav-link">Communities</a>
       </li>
     </ul>
     {%= organizersHeaderStars() %}
     {% if len(headerProfiles) > 0 %}
     {%= organizersHeaderProfile(headerProfiles) %}
     {% else %}
-    <a href="/organizers/{%s organizerFeature.Organizer.Alias %}/welcome{%s authQueryParams %}" class="button button--small-padding button--black header__login-button">Log in</a>
+    <a href="/{%s organizerFeature.Organizer.Alias %}/welcome{%s authQueryParams %}" class="button button--small-padding button--black header__login-button">Log in</a>
     {% endif %}
   </div>
 </header>
@@ -320,8 +332,8 @@
 							/>
 						</div>
 						<figcaption class="card__header-caption">
-							<a href="/organizers/v/{%dl vacancy.ID %}" target="_blank" class="card__headline vacancy__link">{%s vacancy.Title %}</a>
-							<a href="/organizers/{%s organizerFeature.Organizer.Alias %}/companies/{%s vacancy.Company.Alias %}" class="card__sub-headline vacancy__link">{%s vacancy.Company.Name %}</a>
+							<a href="/v/{%dl vacancy.ID %}" target="_blank" class="card__headline vacancy__link">{%s vacancy.Title %}</a>
+							<a href="/{%s organizerFeature.Organizer.Alias %}/companies/{%s vacancy.Company.Alias %}" class="card__sub-headline vacancy__link">{%s vacancy.Company.Name %}</a>
 						</figcaption>
 					</figure>
 					<p class="js-vacancy-short-description card__text card__text--organizer">{%s vacancyDescription(vacancy) %}</p>
@@ -346,7 +358,7 @@
 								<figcaption class="card__figcaption">Monthly views: {%dl vacancyMonthlyViewsMap[vacancy.ID] %}</figcaption>
 							</figure>
 						</div>
-						<a href="/organizers/v/{%dl vacancy.ID %}" target="_blank" class="button button--bordered-gray button--gap-images">
+						<a href="/v/{%dl vacancy.ID %}" target="_blank" class="button button--bordered-gray button--gap-images">
 							{% if isLinkedInVacancyURL(vacancy.URL) %}
 								<img
 									width="20"
@@ -395,6 +407,11 @@
 
 
 </main>
+<div style="font-size:14px;color:#777;margin:10px;line-height:1.5;">
+  <p>
+    Looking for <strong>{%s organizerFeature.Organizer.Title %} jobs</strong>? This page lists vacancies from companies actively using {%s organizerFeature.Organizer.Title %} in production. We regularly update this list to help every <strong>{%s organizerFeature.Organizer.Title %} developer</strong> find a great opportunity — remote or onsite. Whether you're just entering the {%s organizerFeature.Organizer.Title %} ecosystem or already an expert, you'll find roles worth applying to.
+  </p>
+</div>
 {%= organizersFooter() %}
 <script src="/assets/js/organizers-vacancies-app.js?{%d appVersion %}"></script>
 </body>

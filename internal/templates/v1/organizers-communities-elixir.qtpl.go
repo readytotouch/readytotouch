@@ -68,17 +68,17 @@ func StreamOrganizersCommunitiesElixir(qw422016 *qt422016.Writer, organizer Orga
     </a>
     <ul class="header__nav">
       <li class="header__nav-item">
-        <a href="/organizers/`)
+        <a href="/`)
 	qw422016.E().S(organizer.Alias)
 	qw422016.N().S(`/companies" class="header__nav-link">Companies</a>
       </li>
       <li class="header__nav-item">
-        <a href="/organizers/`)
+        <a href="/`)
 	qw422016.E().S(organizer.Alias)
 	qw422016.N().S(`/jobs" class="header__nav-link">Jobs</a>
       </li>
       <li class="header__nav-item">
-        <a href="/organizers/`)
+        <a href="/`)
 	qw422016.E().S(organizer.Alias)
 	qw422016.N().S(`/communities" class="header__nav-link active">Communities</a>
       </li>
@@ -96,7 +96,7 @@ func StreamOrganizersCommunitiesElixir(qw422016 *qt422016.Writer, organizer Orga
     `)
 	} else {
 		qw422016.N().S(`
-    <a href="/organizers/`)
+    <a href="/`)
 		qw422016.E().S(organizer.Alias)
 		qw422016.N().S(`/welcome" class="button button--small-padding button--black header__login-button">Log in</a>
     `)

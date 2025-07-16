@@ -7,63 +7,83 @@
         <loc>https://readytotouch.com/organizers</loc>
     </url>
     <url>
-        <loc>https://readytotouch.com/organizers/golang/companies</loc>
+        <loc>https://readytotouch.com/golang/companies</loc>
+        <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>https://readytotouch.com/organizers/golang/jobs</loc>
+        <loc>https://readytotouch.com/golang/jobs</loc>
+        <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>https://readytotouch.com/organizers/rust/companies</loc>
+        <loc>https://readytotouch.com/rust/companies</loc>
+        <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>https://readytotouch.com/organizers/rust/jobs</loc>
+        <loc>https://readytotouch.com/rust/jobs</loc>
+        <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>https://readytotouch.com/organizers/zig/companies</loc>
+        <loc>https://readytotouch.com/zig/companies</loc>
+        <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>https://readytotouch.com/organizers/zig/jobs</loc>
+        <loc>https://readytotouch.com/zig/jobs</loc>
+        <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>https://readytotouch.com/organizers/scala/companies</loc>
+        <loc>https://readytotouch.com/scala/companies</loc>
+        <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>https://readytotouch.com/organizers/scala/jobs</loc>
+        <loc>https://readytotouch.com/scala/jobs</loc>
+        <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>https://readytotouch.com/organizers/elixir/companies</loc>
+        <loc>https://readytotouch.com/elixir/companies</loc>
+        <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>https://readytotouch.com/organizers/elixir/jobs</loc>
+        <loc>https://readytotouch.com/elixir/jobs</loc>
+        <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>https://readytotouch.com/organizers/erlang/companies</loc>
+        <loc>https://readytotouch.com/erlang/companies</loc>
+        <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>https://readytotouch.com/organizers/erlang/jobs</loc>
+        <loc>https://readytotouch.com/erlang/jobs</loc>
+        <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>https://readytotouch.com/organizers/clojure/companies</loc>
+        <loc>https://readytotouch.com/clojure/companies</loc>
+        <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>https://readytotouch.com/organizers/clojure/jobs</loc>
+        <loc>https://readytotouch.com/clojure/jobs</loc>
+        <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>https://readytotouch.com/organizers/haskell/companies</loc>
+        <loc>https://readytotouch.com/haskell/companies</loc>
+        <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>https://readytotouch.com/organizers/haskell/jobs</loc>
+        <loc>https://readytotouch.com/haskell/jobs</loc>
+        <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>https://readytotouch.com/organizers/fsharp/companies</loc>
+        <loc>https://readytotouch.com/fsharp/companies</loc>
+        <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>https://readytotouch.com/organizers/fsharp/jobs</loc>
+        <loc>https://readytotouch.com/fsharp/jobs</loc>
+        <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>https://readytotouch.com/organizers/ocaml/companies</loc>
+        <loc>https://readytotouch.com/ocaml/companies</loc>
+        <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>https://readytotouch.com/organizers/ocaml/jobs</loc>
+        <loc>https://readytotouch.com/ocaml/jobs</loc>
+        <changefreq>weekly</changefreq>
     </url>
 </urlset>

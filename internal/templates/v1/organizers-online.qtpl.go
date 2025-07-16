@@ -135,7 +135,7 @@ func StreamOrganizersOnline(qw422016 *qt422016.Writer,
 <section class="top-projects">
   <div class="container top-projects__container">
     <div class="top-projects__group">
-      <a class="top-projects__link" href="/organizers/golang/companies">
+      <a class="top-projects__link" href="/golang/companies">
         <figure class="top-projects__figure">
           <img
             class="top-projects__image"
@@ -146,7 +146,7 @@ func StreamOrganizersOnline(qw422016 *qt422016.Writer,
           />
         </figure>
       </a>
-      <a class="top-projects__link" href="/organizers/rust/companies">
+      <a class="top-projects__link" href="/rust/companies">
         <figure class="top-projects__figure">
           <img
             class="top-projects__image"
