@@ -65,7 +65,7 @@ func StreamCompaniesAndConnectionsV1(qw422016 *qt422016.Writer,
         `)
 	} else {
 		qw422016.N().S(`
-        <a href="/organizers/golang/welcome`)
+        <a href="/golang/welcome`)
 		qw422016.E().S(authQueryParams)
 		qw422016.N().S(`" class="button button--small-padding button--bordered-gray header__login-button">Log in</a>
         `)

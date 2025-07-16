@@ -36,13 +36,13 @@
     </a>
     <ul class="header__nav">
       <li class="header__nav-item">
-        <a href="/organizers/{%s organizer.Alias %}/companies" class="header__nav-link">Companies</a>
+        <a href="/{%s organizer.Alias %}/companies" class="header__nav-link">Companies</a>
       </li>
       <li class="header__nav-item">
-        <a href="/organizers/{%s organizer.Alias %}/jobs" class="header__nav-link">Jobs</a>
+        <a href="/{%s organizer.Alias %}/jobs" class="header__nav-link">Jobs</a>
       </li>
       <li class="header__nav-item">
-        <a href="/organizers/{%s organizer.Alias %}/communities" class="header__nav-link active">Communities</a>
+        <a href="/{%s organizer.Alias %}/communities" class="header__nav-link active">Communities</a>
       </li>
     </ul>
 
@@ -50,7 +50,7 @@
     {% if len(headerProfiles) > 0 %}
     {%= organizersHeaderProfile(headerProfiles) %}
     {% else %}
-    <a href="/organizers/{%s organizer.Alias %}/welcome" class="button button--small-padding button--black header__login-button">Log in</a>
+    <a href="/{%s organizer.Alias %}/welcome" class="button button--small-padding button--black header__login-button">Log in</a>
     {% endif %}
   </div>
 </header>

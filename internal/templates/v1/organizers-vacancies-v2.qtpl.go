@@ -78,17 +78,17 @@ func StreamOrganizersVacanciesV2(qw422016 *qt422016.Writer,
     </a>
     <ul class="header__nav">
       <li class="header__nav-item">
-        <a href="/organizers/`)
+        <a href="/`)
 	qw422016.E().S(organizerFeature.Organizer.Alias)
 	qw422016.N().S(`/companies" class="header__nav-link">Companies</a>
       </li>
       <li class="header__nav-item">
-        <a href="/organizers/`)
+        <a href="/`)
 	qw422016.E().S(organizerFeature.Organizer.Alias)
 	qw422016.N().S(`/jobs" class="header__nav-link active">Jobs</a>
       </li>
       <li class="header__nav-item">
-        <a href="/organizers/`)
+        <a href="/`)
 	qw422016.E().S(organizerFeature.Organizer.Alias)
 	qw422016.N().S(`/communities" class="header__nav-link">Communities</a>
       </li>
@@ -105,7 +105,7 @@ func StreamOrganizersVacanciesV2(qw422016 *qt422016.Writer,
     `)
 	} else {
 		qw422016.N().S(`
-    <a href="/organizers/`)
+    <a href="/`)
 		qw422016.E().S(organizerFeature.Organizer.Alias)
 		qw422016.N().S(`/welcome`)
 		qw422016.E().S(authQueryParams)
@@ -387,12 +387,12 @@ func StreamOrganizersVacanciesV2(qw422016 *qt422016.Writer,
 							/>
 						</div>
 						<figcaption class="card__header-caption">
-							<a href="/organizers/v/`)
+							<a href="/v/`)
 		qw422016.N().DL(vacancy.ID)
 		qw422016.N().S(`" target="_blank" class="card__headline vacancy__link">`)
 		qw422016.E().S(vacancy.Title)
 		qw422016.N().S(`</a>
-							<a href="/organizers/`)
+							<a href="/`)
 		qw422016.E().S(organizerFeature.Organizer.Alias)
 		qw422016.N().S(`/companies/`)
 		qw422016.E().S(vacancy.Company.Alias)
@@ -431,7 +431,7 @@ func StreamOrganizersVacanciesV2(qw422016 *qt422016.Writer,
 		qw422016.N().S(`</figcaption>
 							</figure>
 						</div>
-						<a href="/organizers/v/`)
+						<a href="/v/`)
 		qw422016.N().DL(vacancy.ID)
 		qw422016.N().S(`" target="_blank" class="button button--bordered-gray button--gap-images">
 							`)

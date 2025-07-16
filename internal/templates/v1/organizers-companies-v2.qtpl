@@ -45,20 +45,20 @@
     </a>
     <ul class="header__nav">
       <li class="header__nav-item">
-        <a href="/organizers/{%s organizerFeature.Organizer.Alias %}/companies" class="header__nav-link active">Companies</a>
+        <a href="/{%s organizerFeature.Organizer.Alias %}/companies" class="header__nav-link active">Companies</a>
       </li>
       <li class="header__nav-item">
-        <a href="/organizers/{%s organizerFeature.Organizer.Alias %}/jobs" class="header__nav-link">Jobs</a>
+        <a href="/{%s organizerFeature.Organizer.Alias %}/jobs" class="header__nav-link">Jobs</a>
       </li>
       <li class="header__nav-item">
-        <a href="/organizers/{%s organizerFeature.Organizer.Alias %}/communities" class="header__nav-link">Communities</a>
+        <a href="/{%s organizerFeature.Organizer.Alias %}/communities" class="header__nav-link">Communities</a>
       </li>
     </ul>
     {%= organizersHeaderStars() %}
     {% if len(headerProfiles) > 0 %}
     {%= organizersHeaderProfile(headerProfiles) %}
     {% else %}
-    <a href="/organizers/{%s organizerFeature.Organizer.Alias %}/welcome{%s authQueryParams %}" class="button button--small-padding button--black header__login-button">Log in</a>
+    <a href="/{%s organizerFeature.Organizer.Alias %}/welcome{%s authQueryParams %}" class="button button--small-padding button--black header__login-button">Log in</a>
     {% endif %}
   </div>
 </header>

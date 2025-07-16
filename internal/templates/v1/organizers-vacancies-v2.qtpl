@@ -47,20 +47,20 @@
     </a>
     <ul class="header__nav">
       <li class="header__nav-item">
-        <a href="/organizers/{%s organizerFeature.Organizer.Alias %}/companies" class="header__nav-link">Companies</a>
+        <a href="/{%s organizerFeature.Organizer.Alias %}/companies" class="header__nav-link">Companies</a>
       </li>
       <li class="header__nav-item">
-        <a href="/organizers/{%s organizerFeature.Organizer.Alias %}/jobs" class="header__nav-link active">Jobs</a>
+        <a href="/{%s organizerFeature.Organizer.Alias %}/jobs" class="header__nav-link active">Jobs</a>
       </li>
       <li class="header__nav-item">
-        <a href="/organizers/{%s organizerFeature.Organizer.Alias %}/communities" class="header__nav-link">Communities</a>
+        <a href="/{%s organizerFeature.Organizer.Alias %}/communities" class="header__nav-link">Communities</a>
       </li>
     </ul>
     {%= organizersHeaderStars() %}
     {% if len(headerProfiles) > 0 %}
     {%= organizersHeaderProfile(headerProfiles) %}
     {% else %}
-    <a href="/organizers/{%s organizerFeature.Organizer.Alias %}/welcome{%s authQueryParams %}" class="button button--small-padding button--black header__login-button">Log in</a>
+    <a href="/{%s organizerFeature.Organizer.Alias %}/welcome{%s authQueryParams %}" class="button button--small-padding button--black header__login-button">Log in</a>
     {% endif %}
   </div>
 </header>
@@ -320,8 +320,8 @@
 							/>
 						</div>
 						<figcaption class="card__header-caption">
-							<a href="/organizers/v/{%dl vacancy.ID %}" target="_blank" class="card__headline vacancy__link">{%s vacancy.Title %}</a>
-							<a href="/organizers/{%s organizerFeature.Organizer.Alias %}/companies/{%s vacancy.Company.Alias %}" class="card__sub-headline vacancy__link">{%s vacancy.Company.Name %}</a>
+							<a href="/v/{%dl vacancy.ID %}" target="_blank" class="card__headline vacancy__link">{%s vacancy.Title %}</a>
+							<a href="/{%s organizerFeature.Organizer.Alias %}/companies/{%s vacancy.Company.Alias %}" class="card__sub-headline vacancy__link">{%s vacancy.Company.Name %}</a>
 						</figcaption>
 					</figure>
 					<p class="js-vacancy-short-description card__text card__text--organizer">{%s vacancyDescription(vacancy) %}</p>
@@ -346,7 +346,7 @@
 								<figcaption class="card__figcaption">Monthly views: {%dl vacancyMonthlyViewsMap[vacancy.ID] %}</figcaption>
 							</figure>
 						</div>
-						<a href="/organizers/v/{%dl vacancy.ID %}" target="_blank" class="button button--bordered-gray button--gap-images">
+						<a href="/v/{%dl vacancy.ID %}" target="_blank" class="button button--bordered-gray button--gap-images">
 							{% if isLinkedInVacancyURL(vacancy.URL) %}
 								<img
 									width="20"

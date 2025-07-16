@@ -2,16 +2,16 @@
 A platform for simplifying job search
 
 ## Organizers:
-- [Companies using Go](https://readytotouch.com/organizers/golang/companies)
-- [Companies using Rust](https://readytotouch.com/organizers/rust/companies)
-- [Companies using Scala](https://readytotouch.com/organizers/scala/companies)
-- [Companies using Elixir](https://readytotouch.com/organizers/elixir/companies)
-- [Companies using Erlang](https://readytotouch.com/organizers/erlang/companies)
-- [Companies using Clojure](https://readytotouch.com/organizers/clojure/companies)
-- [Companies using Zig](https://readytotouch.com/organizers/zig/companies)
-- [Companies using Haskell](https://readytotouch.com/organizers/haskell/companies)
-- [Companies using F#](https://readytotouch.com/organizers/fsharp/companies)
-- [Companies using OCaml](https://readytotouch.com/organizers/ocaml/companies)
+- [Companies using Go](https://readytotouch.com/golang/companies)
+- [Companies using Rust](https://readytotouch.com/rust/companies)
+- [Companies using Scala](https://readytotouch.com/scala/companies)
+- [Companies using Elixir](https://readytotouch.com/elixir/companies)
+- [Companies using Erlang](https://readytotouch.com/erlang/companies)
+- [Companies using Clojure](https://readytotouch.com/clojure/companies)
+- [Companies using Zig](https://readytotouch.com/zig/companies)
+- [Companies using Haskell](https://readytotouch.com/haskell/companies)
+- [Companies using F#](https://readytotouch.com/fsharp/companies)
+- [Companies using OCaml](https://readytotouch.com/ocaml/companies)
 
 ## Articles
 - Forum | [My list of companies that use Rust](https://users.rust-lang.org/t/my-list-of-companies-that-use-rust/127300)

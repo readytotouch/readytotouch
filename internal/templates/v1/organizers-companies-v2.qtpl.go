@@ -82,17 +82,17 @@ func StreamOrganizersCompaniesV2(qw422016 *qt422016.Writer,
     </a>
     <ul class="header__nav">
       <li class="header__nav-item">
-        <a href="/organizers/`)
+        <a href="/`)
 	qw422016.E().S(organizerFeature.Organizer.Alias)
 	qw422016.N().S(`/companies" class="header__nav-link active">Companies</a>
       </li>
       <li class="header__nav-item">
-        <a href="/organizers/`)
+        <a href="/`)
 	qw422016.E().S(organizerFeature.Organizer.Alias)
 	qw422016.N().S(`/jobs" class="header__nav-link">Jobs</a>
       </li>
       <li class="header__nav-item">
-        <a href="/organizers/`)
+        <a href="/`)
 	qw422016.E().S(organizerFeature.Organizer.Alias)
 	qw422016.N().S(`/communities" class="header__nav-link">Communities</a>
       </li>
@@ -109,7 +109,7 @@ func StreamOrganizersCompaniesV2(qw422016 *qt422016.Writer,
     `)
 	} else {
 		qw422016.N().S(`
-    <a href="/organizers/`)
+    <a href="/`)
 		qw422016.E().S(organizerFeature.Organizer.Alias)
 		qw422016.N().S(`/welcome`)
 		qw422016.E().S(authQueryParams)
