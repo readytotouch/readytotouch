@@ -334,7 +334,7 @@ func (c *Controller) CompanyV2(ctx *gin.Context) {
 	}
 
 	if c.softAuthRedirect(ctx, authUserID, organizerFeature.Organizer.Language) {
-		ctx.Redirect(http.StatusFound, "/" + organizerFeature.Organizer.Alias + "/welcome"+c.redirect(ctx.Request.URL.Path))
+		ctx.Redirect(http.StatusFound, "/"+organizerFeature.Organizer.Alias+"/welcome"+c.redirect(ctx.Request.URL.Path))
 
 		return
 	}
@@ -488,7 +488,7 @@ func (c *Controller) Vacancies(ctx *gin.Context) {
 	}
 
 	if c.softAuthRedirect(ctx, authUserID, organizerFeature.Organizer.Language) {
-		ctx.Redirect(http.StatusFound, "/" + organizerFeature.Organizer.Alias + "/welcome"+c.redirect(ctx.Request.URL.Path))
+		ctx.Redirect(http.StatusFound, "/"+organizerFeature.Organizer.Alias+"/welcome"+c.redirect(ctx.Request.URL.Path))
 
 		return
 	}
