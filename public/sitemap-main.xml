@@ -8,62 +8,82 @@
     </url>
     <url>
         <loc>https://readytotouch.com/golang/companies</loc>
+        <changefreq>weekly</changefreq>
     </url>
     <url>
         <loc>https://readytotouch.com/golang/jobs</loc>
+        <changefreq>weekly</changefreq>
     </url>
     <url>
         <loc>https://readytotouch.com/rust/companies</loc>
+        <changefreq>weekly</changefreq>
     </url>
     <url>
         <loc>https://readytotouch.com/rust/jobs</loc>
+        <changefreq>weekly</changefreq>
     </url>
     <url>
         <loc>https://readytotouch.com/zig/companies</loc>
+        <changefreq>weekly</changefreq>
     </url>
     <url>
         <loc>https://readytotouch.com/zig/jobs</loc>
+        <changefreq>weekly</changefreq>
     </url>
     <url>
         <loc>https://readytotouch.com/scala/companies</loc>
+        <changefreq>weekly</changefreq>
     </url>
     <url>
         <loc>https://readytotouch.com/scala/jobs</loc>
+        <changefreq>weekly</changefreq>
     </url>
     <url>
         <loc>https://readytotouch.com/elixir/companies</loc>
+        <changefreq>weekly</changefreq>
     </url>
     <url>
         <loc>https://readytotouch.com/elixir/jobs</loc>
+        <changefreq>weekly</changefreq>
     </url>
     <url>
         <loc>https://readytotouch.com/erlang/companies</loc>
+        <changefreq>weekly</changefreq>
     </url>
     <url>
         <loc>https://readytotouch.com/erlang/jobs</loc>
+        <changefreq>weekly</changefreq>
     </url>
     <url>
         <loc>https://readytotouch.com/clojure/companies</loc>
+        <changefreq>weekly</changefreq>
     </url>
     <url>
         <loc>https://readytotouch.com/clojure/jobs</loc>
+        <changefreq>weekly</changefreq>
     </url>
     <url>
         <loc>https://readytotouch.com/haskell/companies</loc>
+        <changefreq>weekly</changefreq>
     </url>
     <url>
         <loc>https://readytotouch.com/haskell/jobs</loc>
+        <changefreq>weekly</changefreq>
     </url>
     <url>
         <loc>https://readytotouch.com/fsharp/companies</loc>
+        <changefreq>weekly</changefreq>
     </url>
     <url>
         <loc>https://readytotouch.com/fsharp/jobs</loc>
+        <changefreq>weekly</changefreq>
     </url>
     <url>
         <loc>https://readytotouch.com/ocaml/companies</loc>
+        <changefreq>weekly</changefreq>
     </url>
     <url>
         <loc>https://readytotouch.com/ocaml/jobs</loc>
+        <changefreq>weekly</changefreq>
     </url>
 </urlset>
