@@ -478,10 +478,8 @@ func redirectFromWWW() gin.HandlerFunc {
 
 func redirectTrimPrefix(old, new string) gin.HandlerFunc {
 	return func(c *gin.Context) {
-		path := c.FullPath()
-		if strings.HasPrefix(path, old) {
-			found(new+strings.TrimPrefix(path, old), true)
-
+		if strings.HasPrefix(c.Request.URL.Path, old) {
+			found(new+strings.TrimPrefix(c.Request.URL.Path, old), true)(c)
 			return
 		}
 
