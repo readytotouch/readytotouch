@@ -490,6 +490,11 @@
     "destination": ""
   },
   {
+    "alias": "azberry-bv",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "aziontech",
     "source": "aziontech-200x200.jpeg",
     "destination": "aziontech.jpeg"
@@ -2275,6 +2280,11 @@
     "destination": ""
   },
   {
+    "alias": "immutable-1",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "impactdotcom",
     "source": "impact-180x180.webp",
     "destination": "impactdotcom.png"
@@ -3180,6 +3190,11 @@
     "destination": ""
   },
   {
+    "alias": "octopusmoney",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "oddingg",
     "source": "oddingg-200x200.jpeg",
     "destination": "oddingg.jpeg"
@@ -3838,6 +3853,11 @@
     "alias": "riiico",
     "source": "riiico-200x200.jpeg",
     "destination": "riiico.jpeg"
+  },
+  {
+    "alias": "rincon-research-corporation",
+    "source": "",
+    "destination": ""
   },
   {
     "alias": "ringcentral",
