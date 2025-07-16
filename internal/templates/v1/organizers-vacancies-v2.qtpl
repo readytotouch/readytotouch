@@ -10,19 +10,31 @@
 ) -%}
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<title>{%s organizerFeature.Organizer.Title %} jobs | ReadyToTouch</title>
-	<meta name="title" content="{%s organizerFeature.Organizer.Title %} jobs | ReadyToTouch">
-    {% comment %}
-	<meta name="description" content="{%s organizerFeature.Organizer.Description %}">
-    <meta name="keywords" content="{%s organizerFeature.Organizer.Keywords %}">
-    {% endcomment %}
+    <title>{%s organizerFeature.Organizer.Title %} jobs – remote and onsite developer vacancies | ReadyToTouch</title>
+    <meta name="title" content="{%s organizerFeature.Organizer.Title %} jobs – remote and onsite developer vacancies | ReadyToTouch">
+    <meta name="description" content="Find top {%s organizerFeature.Organizer.Title %} jobs from companies actively using {%s organizerFeature.Organizer.Title %} in production. Explore remote and onsite developer positions updated weekly.">
 
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="author" type="text/plain" href="https://readytotouch.com/humans.txt"/>
-	<meta property="og:image" content="/assets/images/og/organizers-light.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="author" type="text/plain" href="https://readytotouch.com/humans.txt"/>
+
+    <meta property="og:title" content="{%s organizerFeature.Organizer.Title %} jobs – find companies hiring {%s organizerFeature.Organizer.Title %} developers">
+    <meta property="og:description" content="Discover {%s organizerFeature.Organizer.Title %} jobs in startups and product companies using {%s organizerFeature.Organizer.Title %} in production.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://readytotouch.com/assets/images/og/organizers-light.jpg">
+    <meta property="og:url" content="https://readytotouch.com/{%s organizerFeature.Organizer.Alias %}/jobs">
+
+    <!-- JSON-LD (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "{%s organizerFeature.Organizer.Title %} jobs",
+      "description": "Find {%s organizerFeature.Organizer.Title %} jobs in companies using {%s organizerFeature.Organizer.Alias %} in production. Remote and onsite opportunities for developers.",
+      "url": "https://readytotouch.com/organizers/{%s organizerFeature.Organizer.Alias %}/jobs"
+    }
+    </script>
 
     {%= favicon() %}
     {%= organizersFonts() %}
@@ -395,6 +407,11 @@
 
 
 </main>
+<div style="font-size:14px;color:#777;margin:10px;line-height:1.5;">
+  <p>
+    Looking for <strong>{%s organizerFeature.Organizer.Title %} jobs</strong>? This page lists vacancies from companies actively using {%s organizerFeature.Organizer.Title %} in production. We regularly update this list to help every <strong>{%s organizerFeature.Organizer.Title %} developer</strong> find a great opportunity — remote or onsite. Whether you're just entering the {%s organizerFeature.Organizer.Title %} ecosystem or already an expert, you'll find roles worth applying to.
+  </p>
+</div>
 {%= organizersFooter() %}
 <script src="/assets/js/organizers-vacancies-app.js?{%d appVersion %}"></script>
 </body>

@@ -27,25 +27,57 @@ func StreamOrganizersCompaniesV2(qw422016 *qt422016.Writer,
 ) {
 	qw422016.N().S(`<!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<title>Companies using `)
+	<title>`)
+	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.N().S(` companies – product and startup teams using `)
 	qw422016.E().S(organizerFeature.Organizer.Title)
 	qw422016.N().S(` | ReadyToTouch</title>
-	<meta name="title" content="Companies using `)
+	<meta name="title" content="`)
+	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.N().S(` companies – product and startup teams using `)
 	qw422016.E().S(organizerFeature.Organizer.Title)
 	qw422016.N().S(` | ReadyToTouch">
-	<meta name="description" content="`)
-	qw422016.E().S(organizerFeature.Organizer.Description)
-	qw422016.N().S(`">
-    <meta name="keywords" content="`)
-	qw422016.E().S(organizerFeature.Organizer.Keywords)
-	qw422016.N().S(`">
+	<meta name="description" content="Discover companies using `)
+	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.N().S(` in production. This list features startups and product teams hiring `)
+	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.N().S(` developers or already working with `)
+	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.N().S(`.">
 
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="author" type="text/plain" href="https://readytotouch.com/humans.txt"/>
-	<meta property="og:image" content="/assets/images/og/organizers-light.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="author" type="text/plain" href="https://readytotouch.com/humans.txt"/>
+
+    <meta property="og:title" content="`)
+	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.N().S(` companies | ReadyToTouch">
+    <meta property="og:description" content="Discover startups and product teams using `)
+	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.N().S(` in production.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://readytotouch.com/assets/images/og/organizers-light.jpg">
+    <meta property="og:url" content="https://readytotouch.com/`)
+	qw422016.E().S(organizerFeature.Organizer.Alias)
+	qw422016.N().S(`/companies">
+
+    <!-- JSON-LD (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "`)
+	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.N().S(` companies",
+      "description": "List of companies using `)
+	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.N().S(` in production. Startups and product teams.",
+      "url": "https://readytotouch.com/`)
+	qw422016.E().S(organizerFeature.Organizer.Alias)
+	qw422016.N().S(`/companies"
+    }
+    </script>
 
     `)
 	streamfavicon(qw422016)
@@ -718,6 +750,17 @@ func StreamOrganizersCompaniesV2(qw422016 *qt422016.Writer,
 
 
 </main>
+<div style="font-size:14px;color:#777;margin:10px;line-height:1.5;">
+  <p>
+    This curated list includes <strong>`)
+	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.N().S(` companies</strong> that actively use the language in production. Whether you’re seeking companies hiring <strong>`)
+	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.N().S(` developers</strong> or exploring teams already committed to `)
+	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.N().S(`, this page helps you discover the most relevant product teams and startups.
+  </p>
+</div>
 `)
 	streamorganizersFooter(qw422016)
 	qw422016.N().S(`

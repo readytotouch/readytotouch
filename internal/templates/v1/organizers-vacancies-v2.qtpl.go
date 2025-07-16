@@ -27,21 +27,57 @@ func StreamOrganizersVacanciesV2(qw422016 *qt422016.Writer,
 ) {
 	qw422016.N().S(`<!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<title>`)
+    <title>`)
 	qw422016.E().S(organizerFeature.Organizer.Title)
-	qw422016.N().S(` jobs | ReadyToTouch</title>
-	<meta name="title" content="`)
+	qw422016.N().S(` jobs – remote and onsite developer vacancies | ReadyToTouch</title>
+    <meta name="title" content="`)
 	qw422016.E().S(organizerFeature.Organizer.Title)
-	qw422016.N().S(` jobs | ReadyToTouch">
-    `)
-	qw422016.N().S(`
+	qw422016.N().S(` jobs – remote and onsite developer vacancies | ReadyToTouch">
+    <meta name="description" content="Find top `)
+	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.N().S(` jobs from companies actively using `)
+	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.N().S(` in production. Explore remote and onsite developer positions updated weekly.">
 
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="author" type="text/plain" href="https://readytotouch.com/humans.txt"/>
-	<meta property="og:image" content="/assets/images/og/organizers-light.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="author" type="text/plain" href="https://readytotouch.com/humans.txt"/>
+
+    <meta property="og:title" content="`)
+	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.N().S(` jobs – find companies hiring `)
+	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.N().S(` developers">
+    <meta property="og:description" content="Discover `)
+	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.N().S(` jobs in startups and product companies using `)
+	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.N().S(` in production.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://readytotouch.com/assets/images/og/organizers-light.jpg">
+    <meta property="og:url" content="https://readytotouch.com/`)
+	qw422016.E().S(organizerFeature.Organizer.Alias)
+	qw422016.N().S(`/jobs">
+
+    <!-- JSON-LD (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "`)
+	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.N().S(` jobs",
+      "description": "Find `)
+	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.N().S(` jobs in companies using `)
+	qw422016.E().S(organizerFeature.Organizer.Alias)
+	qw422016.N().S(` in production. Remote and onsite opportunities for developers.",
+      "url": "https://readytotouch.com/organizers/`)
+	qw422016.E().S(organizerFeature.Organizer.Alias)
+	qw422016.N().S(`/jobs"
+    }
+    </script>
 
     `)
 	streamfavicon(qw422016)
@@ -492,6 +528,19 @@ func StreamOrganizersVacanciesV2(qw422016 *qt422016.Writer,
 
 
 </main>
+<div style="font-size:14px;color:#777;margin:10px;line-height:1.5;">
+  <p>
+    Looking for <strong>`)
+	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.N().S(` jobs</strong>? This page lists vacancies from companies actively using `)
+	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.N().S(` in production. We regularly update this list to help every <strong>`)
+	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.N().S(` developer</strong> find a great opportunity — remote or onsite. Whether you're just entering the `)
+	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.N().S(` ecosystem or already an expert, you'll find roles worth applying to.
+  </p>
+</div>
 `)
 	streamorganizersFooter(qw422016)
 	qw422016.N().S(`
