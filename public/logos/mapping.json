@@ -491,8 +491,8 @@
   },
   {
     "alias": "azberry-bv",
-    "source": "",
-    "destination": ""
+    "source": "azberry-200x200.jpeg",
+    "destination": "azberry-bv.jpeg"
   },
   {
     "alias": "aziontech",
@@ -961,8 +961,8 @@
   },
   {
     "alias": "cloudlinux",
-    "source": "",
-    "destination": ""
+    "source": "cloudlinux-180x180.png",
+    "destination": "cloudlinux.png"
   },
   {
     "alias": "cloudwalk-inc",
@@ -2281,8 +2281,8 @@
   },
   {
     "alias": "immutable-1",
-    "source": "",
-    "destination": ""
+    "source": "immutable-200x200.jpeg",
+    "destination": "immutable-1.jpeg"
   },
   {
     "alias": "impactdotcom",
@@ -2706,8 +2706,8 @@
   },
   {
     "alias": "mapbox",
-    "source": "",
-    "destination": ""
+    "source": "mapbox-256x256.png",
+    "destination": "mapbox.png"
   },
   {
     "alias": "marbill-technologies",
@@ -3191,8 +3191,8 @@
   },
   {
     "alias": "octopusmoney",
-    "source": "",
-    "destination": ""
+    "source": "octopusmoney-300x300.webp",
+    "destination": "octopusmoney.png"
   },
   {
     "alias": "oddingg",
@@ -3676,8 +3676,8 @@
   },
   {
     "alias": "qonto",
-    "source": "",
-    "destination": ""
+    "source": "qonto-180x180.png",
+    "destination": "qonto.png"
   },
   {
     "alias": "quadcodecareer",
@@ -4696,8 +4696,8 @@
   },
   {
     "alias": "thefalconx",
-    "source": "",
-    "destination": ""
+    "source": "thefalconx-256x256.png",
+    "destination": "thefalconx.png"
   },
   {
     "alias": "thenu",
