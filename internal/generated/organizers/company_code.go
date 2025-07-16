@@ -1075,6 +1075,15 @@ var (
 		"oxiocorp":                            1075, // OXIO
 		"bellroy":                             1076, // Bellroy
 		"aziontech":                           1077, // Azion
+		"riverside-research":                  1078, // Riverside Research
+		"ecosia":                              1079, // Ecosia
+		"breezesocial":                        1080, // Breeze
+		"winnow-ltd-":                         1081, // Winnow
+		"gwidotcom":                           1082, // GWI
+		"pepperstone":                         1083, // Pepperstone
+		"fico":                                1084, // FICO
+		"allpay-limited":                      1085, // allpay Limited
+		"adyen":                               1086, // Adyen
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

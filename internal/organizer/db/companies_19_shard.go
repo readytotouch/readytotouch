@@ -226,7 +226,7 @@ func companies19Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4253172194/",
-							Date:                 mustDate("2025-07-10"), // mustDate("2025-06-23"),
+							Date:                 mustDate("2025-07-10", "2025-06-23"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -565,8 +565,8 @@ func companies19Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4250646664/",
 							Location:             "San Jose, CA",
-							Date:                 mustDate("2025-07-10"), // mustDate("2025-06-23"),
-							WithSalary:           true,                   // $150k/yr - $175k/yr
+							Date:                 mustDate("2025-07-10", "2025-06-23"),
+							WithSalary:           true, // $150k/yr - $175k/yr
 							Remote:               false,
 						},
 					},
@@ -891,7 +891,8 @@ func companies19Shard() []domain.CompanyProfile {
 				ReviewsRate: "3.1",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "aiven",
+				Employees: "180",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Aiven-EI_IE2610934.11,16.htm",
@@ -916,6 +917,16 @@ func companies19Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4240055195/",
 							Date:                 mustDate("2025-07-07"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Software Engineer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4265470899/",
+							Location:             "Berlin, Berlin, Germany",
+							Date:                 mustDate("2025-07-15"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3263,7 +3274,14 @@ func companies19Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Bellroy-EI_IE811984.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Bellroy-Reviews-E811984.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Bellroy-Jobs-E811984.htm",
+				Jobs:        "15",
+				Reviews:     "26",
+				Salaries:    "44",
+				ReviewsRate: "4.6",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -3333,17 +3351,26 @@ func companies19Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "aziontech",
+				Followers: "120",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "azion",
+				Employees: "351",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Azion-Technologies-EI_IE1525794.11,29.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Azion-Technologies-Reviews-E1525794.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Azion-Technologies-Jobs-E1525794.htm",
+				Jobs:        "19",
+				Reviews:     "157",
+				Salaries:    "283",
+				ReviewsRate: "3.9",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -3351,7 +3378,18 @@ func companies19Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer (Go)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4266554424/",
+							Location:             "Greater Porto Alegre",
+							Date:                 mustDate("2025-07-15"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
 				},
 				domain.Rust: {
 					GitHubRepositoriesCount: 0,
@@ -3392,6 +3430,769 @@ func companies19Shard() []domain.CompanyProfile {
 			ShortDescription: "Azion is computing platform that simplifies how you build and run applications anywhere",
 			Industries: []domain.Industry{
 				domain.IndustryCloudComputing,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Riverside Research",
+			Website: "https://www.riversideresearch.org/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1945102,
+				IDs:               nil,
+				Alias:             "riverside-research",
+				Name:              "Riverside Research",
+				Followers:         "11K",
+				Employees:         "501-1K",
+				AssociatedMembers: "753",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:     "riversideresearch",
+				Followers: "7",
+				Verified:  false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "riverside-research",
+				Employees: "630",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Riverside-Research-EI_IE193384.11,29.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Riverside-Research-Reviews-E193384.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Riverside-Research-Jobs-E193384.htm",
+				Jobs:        "31",
+				Reviews:     "135",
+				Salaries:    "257",
+				ReviewsRate: "4.0",
+				Verified:    true,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer – Low-level Systems (C, C++, Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4249280373/",
+							Location:             "Lexington, MA",
+							Date:                 mustDate("2025-07-15"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Founded in 1967, Riverside Research is a nonprofit organization chartered to advance scientific research for the benefit of the US government and in the public interest",
+			Industries: []domain.Industry{
+				domain.IndustryCyberSecurity,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Ecosia",
+			Website: "https://www.ecosia.org/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1114590,
+				IDs:               nil,
+				Alias:             "ecosia",
+				Name:              "Ecosia",
+				Followers:         "154K",
+				Employees:         "51-200",
+				AssociatedMembers: "139",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer – Backend",
+							ShortDescription:     "Node.js, Golang, and Python services using REST and gRPC",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4253805508/",
+							Location:             "Berlin, Berlin, Germany",
+							Date:                 mustDate("2025-06-24"),
+							WithSalary:           true, // €64k/yr - €85k/yr
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Ecosia is the search engine that plants trees. 100% of our profits go to climate action.",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Breeze",
+			Website: "https://breeze.social/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                26560342,
+				IDs:               nil,
+				Alias:             "breezesocial",
+				Name:              "Breeze",
+				Followers:         "5K",
+				Employees:         "11-50",
+				AssociatedMembers: "59",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Backend Engineer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4264494875/",
+							Location:             "Rotterdam, South Holland, Netherlands",
+							Date:                 mustDate("2025-07-15"),
+							WithSalary:           true, // €4,500/month - €6,000/month
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "The app for offline dates",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Winnow",
+			Website: "https://www.winnowsolutions.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                5366082,
+				IDs:               nil,
+				Alias:             "winnow-ltd-",
+				Name:              "Winnow",
+				Followers:         "44K",
+				Employees:         "51-200",
+				AssociatedMembers: "156",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Winnow-Solutions-EI_IE1857734.11,27.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Winnow-Solutions-Reviews-E1857734.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Winnow-Solutions-Jobs-E1857734.htm",
+				Jobs:        "",
+				Reviews:     "53",
+				Salaries:    "85",
+				ReviewsRate: "3.7",
+				Verified:    true,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Golang (Polyglot) Software Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4266723296/",
+							Location:             "London, England, United Kingdom",
+							Date:                 mustDate("2025-07-15"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Winnow develops artificial intelligence tools to help chefs run more profitable and sustainable kitchens",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "gwidotcom",
+			Website: "https://www.gwi.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2515651,
+				IDs:               nil,
+				Alias:             "gwidotcom",
+				Name:              "GWI",
+				Followers:         "64K",
+				Employees:         "501-1K",
+				AssociatedMembers: "740",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "gwi",
+				Employees: "760",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-GWI-EI_IE1333381.11,14.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/GWI-Reviews-E1333381.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/GWI-Jobs-E1333381.htm",
+				Jobs:        "21",
+				Reviews:     "236",
+				Salaries:    "589",
+				ReviewsRate: "3.8",
+				Verified:    true,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Backend Engineer (Go)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4266237220/",
+							Location:             "Athens, Attiki, Greece",
+							Date:                 mustDate("2025-07-15"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Target audience company",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Pepperstone",
+			Website: "https://pepperstone.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1537446,
+				IDs:               nil,
+				Alias:             "pepperstone",
+				Name:              "Pepperstone",
+				Followers:         "53K",
+				Employees:         "201-500",
+				AssociatedMembers: "784",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:     "pepperstone",
+				Followers: "53",
+				Verified:  true,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Pepperstone-Group-EI_IE1971578.11,28.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Pepperstone-Group-Reviews-E1971578.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Pepperstone-Group-Jobs-E1971578.htm",
+				Jobs:        "15",
+				Reviews:     "114",
+				Salaries:    "155",
+				ReviewsRate: "3.6",
+				Verified:    true,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 2,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Engineer — Go",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4255303317/",
+							Location:             "Limassol, Limassol, Cyprus",
+							Date:                 mustDate("2025-07-15"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Pepperstone is an online Forex and CFD Broker",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "FICO",
+			Website: "https://www.fico.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3398,
+				IDs:               nil,
+				Alias:             "fico",
+				Name:              "FICO",
+				Followers:         "487K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "3,770",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "fico",
+				Employees: "4,000",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Full-Stack / Front-End Engineer — Angular JS | TypeScript | Go",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4255383137/",
+							Location:             "United States",
+							Date:                 mustDate("2025-07-15"),
+							WithSalary:           true, // $105k/yr - $165k/yr
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Analytics company",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "allpay Limited",
+			Website: "https://www.allpay.net/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                72115,
+				IDs:               nil,
+				Alias:             "allpay-limited",
+				Name:              "allpay Limited",
+				Followers:         "8K",
+				Employees:         "201-500",
+				AssociatedMembers: "279",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "allpay-limited",
+				Employees: "210",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-allpay-EI_IE213649.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/allpay-Reviews-E213649.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/allpay-Jobs-E213649.htm",
+				Jobs:        "11",
+				Reviews:     "95",
+				Salaries:    "212",
+				ReviewsRate: "3.5",
+				Verified:    true,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Go Backend developer",
+							ShortDescription:     "Flutter experience as a plus",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4266332868/",
+							Location:             "Hereford, England, United Kingdom",
+							Date:                 mustDate("2025-07-15"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Adyen",
+			Website: "https://www.adyen.com/",
+			Careers: "https://careers.adyen.com/",
+			About:   "https://www.adyen.com/about",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                279565,
+				IDs:               nil,
+				Alias:             "adyen",
+				Name:              "Adyen",
+				Followers:         "320K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "5,048",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:     "adyen",
+				Followers: "390",
+				Verified:  true,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "adyen",
+				Employees: "2,500",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 2,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Infrastructure Developer (Go)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4266555529/",
+							Location:             "Amsterdam, North Holland, Netherlands",
+							Date:                 mustDate("2025-07-15"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Financial technology platform",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
 			},
 		},
 

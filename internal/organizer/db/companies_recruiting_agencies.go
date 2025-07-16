@@ -1189,5 +1189,80 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Recruiting agency
 		},
+		{
+			Name:    "Accuro",
+			Website: "https://accurogroup.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                251336,
+				IDs:               nil,
+				Alias:             "accurogroup",
+				Name:              "Accuro",
+				Followers:         "58K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "218",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Salt",
+			Website: "https://welovesalt.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                970538,
+				IDs:               []int{970538, 2609142},
+				Alias:             "salt",
+				Name:              "Salt",
+				Followers:         "2M",
+				Employees:         "201-500",
+				AssociatedMembers: "526",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "The Adecco Group",
+			Website: "https://www.adeccogroup.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1929,
+				IDs:               []int{1929, 1104359, 2736403, 2807805},
+				Alias:             "theadeccogroup",
+				Name:              "The Adecco Group",
+				Followers:         "2M",
+				Employees:         "10K+",
+				AssociatedMembers: "22,333",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Optimus Search",
+			Website: "https://www.optimussearch.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1592017,
+				IDs:               nil,
+				Alias:             "optimus-search",
+				Name:              "Optimus Search",
+				Followers:         "419K",
+				Employees:         "51-200",
+				AssociatedMembers: "224",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Canvendor",
+			Website: "https://www.canvendor.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                7931934,
+				IDs:               nil,
+				Alias:             "canvendor",
+				Name:              "Canvendor",
+				Followers:         "75K",
+				Employees:         "51-200",
+				AssociatedMembers: "115",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
 	}
 }

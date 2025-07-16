@@ -26,6 +26,7 @@ var (
 		domain.IndustryAdTech,
 		domain.IndustryMarTech,
 		domain.IndustryDevOps,
+		domain.IndustryCloudComputing,
 		domain.IndustryBigData,
 		domain.IndustrySocialMedia,
 		domain.IndustryEntertainment,
