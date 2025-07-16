@@ -2002,5 +2002,21 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Kunai",
+			Website: "https://www.kunaico.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                18728254,
+				IDs:               nil,
+				Alias:             "kunai-consulting",
+				Name:              "Kunai",
+				Followers:         "12K",
+				Employees:         "201-500",
+				AssociatedMembers: "390",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }

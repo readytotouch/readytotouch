@@ -1264,5 +1264,35 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Recruiting agency
 		},
+		{
+			Name:    "Maze",
+			Website: "https://www.mazegroup.io/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                98753730,
+				IDs:               nil,
+				Alias:             "mazegroup.io",
+				Name:              "Maze",
+				Followers:         "9K",
+				Employees:         "2-10",
+				AssociatedMembers: "16",
+				Verified:          false,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "GCS",
+			Website: "https://www.gcstechtalent.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                163945,
+				IDs:               nil,
+				Alias:             "gcs-recruitment-specialists",
+				Name:              "GCS",
+				Followers:         "146K",
+				Employees:         "51-200",
+				AssociatedMembers: "1,743",
+				Verified:          false,
+			},
+			Ignore: true, // Recruiting agency
+		},
 	}
 }
