@@ -106,8 +106,8 @@
   },
   {
     "alias": "adyen",
-    "source": "",
-    "destination": ""
+    "source": "adyen-200x200.jpeg",
+    "destination": "adyen.jpeg"
   },
   {
     "alias": "aescape",
@@ -191,8 +191,8 @@
   },
   {
     "alias": "allpay-limited",
-    "source": "",
-    "destination": ""
+    "source": "allpay-limited-180x180.png",
+    "destination": "allpay-limited.png"
   },
   {
     "alias": "alpine-iq",
@@ -491,8 +491,8 @@
   },
   {
     "alias": "aziontech",
-    "source": "",
-    "destination": ""
+    "source": "aziontech-200x200.jpeg",
+    "destination": "aziontech.jpeg"
   },
   {
     "alias": "bakerhughes",
@@ -651,8 +651,8 @@
   },
   {
     "alias": "booz-allen-hamilton",
-    "source": "",
-    "destination": ""
+    "source": "booz-allen-hamilton-96x96.png",
+    "destination": "booz-allen-hamilton.png"
   },
   {
     "alias": "boozt-fashion",
@@ -676,8 +676,8 @@
   },
   {
     "alias": "breezesocial",
-    "source": "",
-    "destination": ""
+    "source": "breezesocial-200x200.jpeg",
+    "destination": "breezesocial.jpeg"
   },
   {
     "alias": "broadcom",
@@ -1126,8 +1126,8 @@
   },
   {
     "alias": "cyber-ark-software",
-    "source": "",
-    "destination": ""
+    "source": "cyber-ark-software-200x200.jpeg",
+    "destination": "cyber-ark-software.jpeg"
   },
   {
     "alias": "cyberhaven",
@@ -1321,8 +1321,8 @@
   },
   {
     "alias": "docebo",
-    "source": "",
-    "destination": ""
+    "source": "docebo-200x200.jpeg",
+    "destination": "docebo.jpeg"
   },
   {
     "alias": "dochq",
@@ -1646,8 +1646,8 @@
   },
   {
     "alias": "fico",
-    "source": "",
-    "destination": ""
+    "source": "fico-180x180.png",
+    "destination": "fico.png"
   },
   {
     "alias": "fidelity-investments",
@@ -1876,8 +1876,8 @@
   },
   {
     "alias": "gdms",
-    "source": "",
-    "destination": ""
+    "source": "gdms-180x180.png",
+    "destination": "gdms.png"
   },
   {
     "alias": "geico",
@@ -2091,8 +2091,8 @@
   },
   {
     "alias": "gwidotcom",
-    "source": "",
-    "destination": ""
+    "source": "gwidotcom-200x200.jpeg",
+    "destination": "gwidotcom.jpeg"
   },
   {
     "alias": "gymondo-gmbh",
@@ -2276,8 +2276,8 @@
   },
   {
     "alias": "impactdotcom",
-    "source": "",
-    "destination": ""
+    "source": "impact-180x180.webp",
+    "destination": "impactdotcom.png"
   },
   {
     "alias": "impossiblecloud",
@@ -2461,8 +2461,8 @@
   },
   {
     "alias": "knowbe4",
-    "source": "",
-    "destination": ""
+    "source": "knowbe4-114x114.webp",
+    "destination": "knowbe4.png"
   },
   {
     "alias": "kochinc",
@@ -2801,8 +2801,8 @@
   },
   {
     "alias": "millennium-partners",
-    "source": "",
-    "destination": ""
+    "source": "millennium-partners-180x180.png",
+    "destination": "millennium-partners.png"
   },
   {
     "alias": "mimecast",
@@ -2996,8 +2996,8 @@
   },
   {
     "alias": "ncrvoyix",
-    "source": "",
-    "destination": ""
+    "source": "ncrvoyix-256x256.png",
+    "destination": "ncrvoyix.png"
   },
   {
     "alias": "nebius",
@@ -3436,8 +3436,8 @@
   },
   {
     "alias": "pepperstone",
-    "source": "",
-    "destination": ""
+    "source": "pepperstone-200x200.jpeg",
+    "destination": "pepperstone.jpeg"
   },
   {
     "alias": "percona",
@@ -3856,8 +3856,8 @@
   },
   {
     "alias": "riverside-research",
-    "source": "",
-    "destination": ""
+    "source": "riverside-research-180x180.png",
+    "destination": "riverside-research.png"
   },
   {
     "alias": "rivian-and-vw-group-technologies",
@@ -3916,8 +3916,8 @@
   },
   {
     "alias": "saberapp",
-    "source": "",
-    "destination": ""
+    "source": "saberapp-200x200.jpeg",
+    "destination": "saberapp.jpeg"
   },
   {
     "alias": "sailpoint-technologies",
@@ -4426,8 +4426,8 @@
   },
   {
     "alias": "sunasterisk",
-    "source": "",
-    "destination": ""
+    "source": "sunasterisk-vn-200x200.jpeg",
+    "destination": "sunasterisk.jpeg"
   },
   {
     "alias": "superannotate",
@@ -4476,8 +4476,8 @@
   },
   {
     "alias": "symbolica-ai",
-    "source": "",
-    "destination": ""
+    "source": "symbolica-ai-200x200.jpeg",
+    "destination": "symbolica-ai.jpeg"
   },
   {
     "alias": "symphonyai",
@@ -4771,8 +4771,8 @@
   },
   {
     "alias": "toyota-north-america",
-    "source": "",
-    "destination": ""
+    "source": "toyota-200x200.jpeg",
+    "destination": "toyota-north-america.jpeg"
   },
   {
     "alias": "track24",
@@ -5191,8 +5191,8 @@
   },
   {
     "alias": "whaleboneio",
-    "source": "",
-    "destination": ""
+    "source": "whaleboneio-200x200.png",
+    "destination": "whaleboneio.png"
   },
   {
     "alias": "whatnot-inc",
@@ -5211,8 +5211,8 @@
   },
   {
     "alias": "winnow-ltd-",
-    "source": "",
-    "destination": ""
+    "source": "winnow-200x200.jpeg",
+    "destination": "winnow-ltd-.jpeg"
   },
   {
     "alias": "wiseaccount",
