@@ -1084,6 +1084,10 @@ var (
 		"fico":                                1084, // FICO
 		"allpay-limited":                      1085, // allpay Limited
 		"adyen":                               1086, // Adyen
+		"immutable-1":                         1087, // Immutable
+		"rincon-research-corporation":         1088, // Rincon Research Corporation
+		"azberry-bv":                          1089, // Azberry BV
+		"octopusmoney":                        1090, // Octopus Money
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

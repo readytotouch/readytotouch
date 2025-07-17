@@ -1970,5 +1970,53 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Affine",
+			Website: "https://affine.ai/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1827639,
+				IDs:               nil,
+				Alias:             "affine",
+				Name:              "Affine",
+				Followers:         "94K",
+				Employees:         "501-1K",
+				AssociatedMembers: "521",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "BIP",
+			Website: "https://www.bip-group.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                162842,
+				IDs:               []int{18147, 140165, 162842, 210520, 251763, 2566057, 5000452, 5361700, 17957777, 88034543, 102318955, 102405460, 106140919, 106302638},
+				Alias:             "bip-global",
+				Name:              "BIP",
+				Followers:         "222K",
+				Employees:         "5K-10K",
+				AssociatedMembers: "6,476",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Kunai",
+			Website: "https://www.kunaico.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                18728254,
+				IDs:               nil,
+				Alias:             "kunai-consulting",
+				Name:              "Kunai",
+				Followers:         "12K",
+				Employees:         "201-500",
+				AssociatedMembers: "390",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }
