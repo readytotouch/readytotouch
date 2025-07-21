@@ -745,6 +745,11 @@
     "destination": ""
   },
   {
+    "alias": "cap-rx",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "capital-one",
     "source": "capital-one-180x180.png",
     "destination": "capital-one.png"
@@ -2403,6 +2408,11 @@
     "alias": "jpmorganchase",
     "source": "jpmorganchase-152x152.png",
     "destination": "jpmorganchase.png"
+  },
+  {
+    "alias": "julius-baer",
+    "source": "",
+    "destination": ""
   },
   {
     "alias": "just-eat-takeaway-com",
@@ -4476,6 +4486,11 @@
   },
   {
     "alias": "svix",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "swan-embedded-banking",
     "source": "",
     "destination": ""
   },

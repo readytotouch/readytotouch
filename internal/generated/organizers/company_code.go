@@ -1088,6 +1088,9 @@ var (
 		"rincon-research-corporation":         1088, // Rincon Research Corporation
 		"azberry-bv":                          1089, // Azberry BV
 		"octopusmoney":                        1090, // Octopus Money
+		"swan-embedded-banking":               1091, // Swan
+		"julius-baer":                         1092, // Julius Baer
+		"cap-rx":                              1093, // Capital Rx
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

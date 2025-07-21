@@ -2945,8 +2945,9 @@ func companies13Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/3988413256/",
-							Date:                 mustDate("2025-06-28", "2025-06-08", "2025-05-17", "2025-04-24"),
-							WithSalary:           true,
+							Location:             "Costa Mesa, CA",
+							Date:                 mustDate("2025-07-20", "2025-06-28", "2025-06-08", "2025-05-17", "2025-04-24"),
+							WithSalary:           true, // $140k/yr - $252k/yr
 							Remote:               false,
 						},
 						{
@@ -2956,16 +2957,6 @@ func companies13Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4261799654/",
 							Date:                 mustDate("2025-07-04"),
 							WithSalary:           true,
-							Remote:               false,
-						},
-						{
-							Title:                "Embedded Haskell Developer",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "https://www.linkedin.com/jobs/view/3988413256/",
-							Location:             "Costa Mesa, CA",
-							Date:                 mustDate("2025-07-20"),
-							WithSalary:           true, // $140k/yr - $252k/yr
 							Remote:               false,
 						},
 					},
