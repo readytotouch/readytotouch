@@ -535,10 +535,11 @@ func companies06Shard() []domain.CompanyProfile {
 						},
 						{
 							Title:                "Scala Engineer",
-							ShortDescription:     "",
+							ShortDescription:     "Growth",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4137581403/",
-							Date:                 mustDate("2025-06-30", "2025-06-08", "2025-05-17", "2025-04-25", "2025-04-04", "2025-03-13", "2025-02-19"),
+							Location:             "Porto, Portugal",
+							Date:                 mustDate("2025-07-21", "2025-06-30", "2025-06-08", "2025-05-17", "2025-04-25", "2025-04-04", "2025-03-13", "2025-02-19"),
 							WithSalary:           false,
 							Remote:               false,
 						},
