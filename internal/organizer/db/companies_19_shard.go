@@ -4675,6 +4675,167 @@ func companies19Shard() []domain.CompanyProfile {
 				domain.IndustryFinTech,
 			},
 		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Capital Rx",
+			Website: "https://www.cap-rx.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                10008489,
+				IDs:               nil,
+				Alias:             "cap-rx",
+				Name:              "Capital Rx",
+				Followers:         "111K",
+				Employees:         "501-1K",
+				AssociatedMembers: "800",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Developer (Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4268126029/",
+							Location:             "Denver, CO",
+							Date:                 mustDate("2025-07-18"),
+							WithSalary:           true, // $150k/yr - $180k/yr
+							Remote:               true,
+						},
+					},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Capital Rx is an enterprise healthcare technology company advancing our nation’s electronic healthcare infrastructure to improve drug price visibility and patient outcomes",
+			Industries: []domain.Industry{
+				domain.IndustryMedTech,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "P2P.org",
+			Website: "https://www.p2p.org/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                37427350,
+				IDs:               nil,
+				Alias:             "p2p-org",
+				Name:              "P2P.org",
+				Followers:         "7K",
+				Employees:         "201-500",
+				AssociatedMembers: "181",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Blockchain Developer – Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4270628559/",
+							Location:             "Warsaw, Mazowieckie, Poland",
+							Date:                 mustDate("2025-07-21"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Staking-as-a-Business",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+			Ignore: true, // Blockchain
+		},
 
 		// Template
 		//{

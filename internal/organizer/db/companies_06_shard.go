@@ -3154,6 +3154,16 @@ func companies06Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Rust Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4268831327/",
+							Location:             "San Francisco, CA",
+							Date:                 mustDate("2025-07-19"),
+							WithSalary:           true, // $100k/yr - $175k/yr
+							Remote:               true,
+						},
 					},
 				},
 				domain.Zig:     {},
