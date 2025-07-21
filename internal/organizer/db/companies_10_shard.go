@@ -4340,9 +4340,10 @@ func companies10Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4137064133/",
-							Date:                 mustDate("2025-06-28", "2025-06-07", "2025-05-15"), //  mustDate("2025-04-24"), //  mustDate("2025-04-02", "2025-03-12", "2025-02-18", "2025-01-30"),
-							WithSalary:           true,                                               // $188.000 - $258.000 per year
-							Remote:               true,
+							Location:             "New York, United States",
+							Date:                 mustDate("2025-07-18", "2025-06-28", "2025-06-07", "2025-05-15", "2025-04-24", "2025-04-02", "2025-03-12", "2025-02-18", "2025-01-30"),
+							WithSalary:           true, // $188k/yr - $258k/yr
+							Remote:               false,
 						},
 					},
 				},
@@ -4422,12 +4423,13 @@ func companies10Shard() []domain.CompanyProfile {
 							Remote:               true,
 						},
 						{
-							Title:                "Senior Elixir Engineer",
+							Title:                "Senior/Staff Engineer (Elixir or Golang)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4224027061/",
-							Date:                 mustDate("2025-05-06"),
-							WithSalary:           true,
+							Location:             "United States",
+							Date:                 mustDate("2025-07-20", "2025-05-06"),
+							WithSalary:           true, // $140k/yr - $200k/yr
 							Remote:               true,
 						},
 					},
