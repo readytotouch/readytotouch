@@ -111,8 +111,8 @@
   },
   {
     "alias": "aescape",
-    "source": "",
-    "destination": ""
+    "source": "aescape-180x180.png",
+    "destination": "aescape.png"
   },
   {
     "alias": "affinipay",
@@ -745,6 +745,11 @@
     "destination": ""
   },
   {
+    "alias": "cap-rx",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "capital-one",
     "source": "capital-one-180x180.png",
     "destination": "capital-one.png"
@@ -1241,8 +1246,8 @@
   },
   {
     "alias": "deutsche-bank",
-    "source": "",
-    "destination": ""
+    "source": "deutsche-bank-180x180.png",
+    "destination": "deutsche-bank.png"
   },
   {
     "alias": "deutscheboerse",
@@ -1616,8 +1621,8 @@
   },
   {
     "alias": "fairmoney",
-    "source": "",
-    "destination": ""
+    "source": "fairmoney-256x256.png",
+    "destination": "fairmoney.png"
   },
   {
     "alias": "famedly",
@@ -2403,6 +2408,11 @@
     "alias": "jpmorganchase",
     "source": "jpmorganchase-152x152.png",
     "destination": "jpmorganchase.png"
+  },
+  {
+    "alias": "julius-baer",
+    "source": "",
+    "destination": ""
   },
   {
     "alias": "just-eat-takeaway-com",
@@ -4136,8 +4146,8 @@
   },
   {
     "alias": "sixt",
-    "source": "",
-    "destination": ""
+    "source": "sixt-200x200.jpeg",
+    "destination": "sixt.jpeg"
   },
   {
     "alias": "skidos-games",
@@ -4476,6 +4486,11 @@
   },
   {
     "alias": "svix",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "swan-embedded-banking",
     "source": "",
     "destination": ""
   },
@@ -5156,8 +5171,8 @@
   },
   {
     "alias": "we-are-fyst",
-    "source": "",
-    "destination": ""
+    "source": "fyst-180x180.png",
+    "destination": "we-are-fyst.png"
   },
   {
     "alias": "we-are-venatus",

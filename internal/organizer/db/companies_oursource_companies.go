@@ -2018,5 +2018,21 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Matlen Silver",
+			Website: "https://matlensilver.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                16127,
+				IDs:               nil,
+				Alias:             "matlen-silver",
+				Name:              "Matlen Silver",
+				Followers:         "213K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "333",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }

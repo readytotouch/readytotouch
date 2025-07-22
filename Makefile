@@ -133,28 +133,6 @@ generate-organizers:
 review-logos:
 	go run ./cmd/organizers/review-logos/main.go
 
-resize-logos:
-	go run ./cmd/organizers/resize-logos/main.go ./public/logos-v1/adapted/pixellot-192x192.png ./public/logos-v1/adapted/pixellot-112x56.png
-	go run ./cmd/organizers/resize-logos/main.go ./public/logos-v1/adapted/notchup-256x256.png ./public/logos-v1/adapted/notchup-112x56.png
-	go run ./cmd/organizers/resize-logos/main.go ./public/logos-v1/adapted/flextrade-192x192.png ./public/logos-v1/adapted/flextrade-112x56.png
-	go run ./cmd/organizers/resize-logos/main.go ./public/logos-v1/adapted/carecar-100x100.png ./public/logos-v1/adapted/carecar-112x56.png
-	go run ./cmd/organizers/resize-logos/main.go ./public/logos-v1/adapted/tensorzero-100x100.png ./public/logos-v1/adapted/tensorzero-112x56.png
-	go run ./cmd/organizers/resize-logos/main.go ./public/logos-v1/adapted/sentinelone-180x180.png ./public/logos-v1/adapted/sentinelone-112x56.png
-	go run ./cmd/organizers/resize-logos/main.go ./public/logos-v1/adapted/canonical-180x180.png ./public/logos-v1/adapted/canonical-112x56.png
-	go run ./cmd/organizers/resize-logos/main.go ./public/logos-v1/adapted/ladderlife-192x192.png ./public/logos-v1/adapted/ladderlife-112x56.png
-	go run ./cmd/organizers/resize-logos/main.go ./public/logos-v1/adapted/alertmedia-150x150.png ./public/logos-v1/adapted/alertmedia-112x56.png
-	go run ./cmd/organizers/resize-logos/main.go ./public/logos-v1/adapted/deutsche-bank-150x150.png ./public/logos-v1/adapted/deutsche-bank-112x56.png
-	go run ./cmd/organizers/resize-logos/main.go ./public/logos-v1/adapted/csidedev-200x200.jpeg ./public/logos-v1/adapted/csidedev-112x56.jpeg
-	go run ./cmd/organizers/resize-logos/main.go ./public/logos-v1/adapted/promon-as-192x192.png ./public/logos-v1/adapted/promon-as-112x56.png
-	go run ./cmd/organizers/resize-logos/main.go ./public/logos-v1/adapted/glassflow-dev-192x192.png ./public/logos-v1/adapted/glassflow-dev-112x56.png
-	go run ./cmd/organizers/resize-logos/main.go ./public/logos-v1/adapted/teamwork-com-192x192.png ./public/logos-v1/adapted/teamwork-com-112x56.png
-	go run ./cmd/organizers/resize-logos/main.go ./public/logos-v1/adapted/zillow-180x180.png ./public/logos-v1/adapted/zillow-112x56.png
-	go run ./cmd/organizers/resize-logos/main.go ./public/logos-v1/adapted/riot-games-200x200.jpeg ./public/logos-v1/adapted/riot-games-112x56.jpeg
-	go run ./cmd/organizers/resize-logos/main.go ./public/logos-v1/adapted/lego-group-192x192.png ./public/logos-v1/adapted/lego-group-112x56.png
-	go run ./cmd/organizers/resize-logos/main.go ./public/logos-v1/adapted/paypal-196x196.png ./public/logos-v1/adapted/paypal-112x56.png
-	go run ./cmd/organizers/resize-logos/main.go ./public/logos-v1/adapted/mythical-180x180.png ./public/logos-v1/adapted/mythical-112x56.png
-	go run ./cmd/organizers/resize-logos/main.go ./public/logos-v1/adapted/threatconnect-180x180.png ./public/logos-v1/adapted/threatconnect-112x56.png
-
 # make rust-companies > ./datasync/github.com/readytotouch/readytotouch/companies.txt
 # VERIFIED=true make rust-companies > ./datasync/github.com/readytotouch/readytotouch/verified-companies.txt
 # VERIFIED=true GITHUB=true make rust-companies > ./datasync/github.com/readytotouch/readytotouch/verified-companies-format-github.txt
@@ -203,7 +181,7 @@ unsafe-browser-extension:
 		&& zip -r readytotouch-unsafe-browser-extension.zip readytotouch-unsafe-browser-extension \
 		&& chmod 777 readytotouch-unsafe-browser-extension.zip
 
-# make more-companies VERSION=74
+# make more-companies VERSION=75
 more-companies:
 ifndef VERSION
 	$(error VERSION is not set. Use `make more-companies VERSION=X`)

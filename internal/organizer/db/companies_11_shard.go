@@ -2735,8 +2735,9 @@ func companies11Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4240542373/",
-							Date:                 mustDate("2025-06-09"),
-							WithSalary:           true,
+							Location:             "New York, NY",
+							Date:                 mustDate("2025-07-21", "2025-06-09"),
+							WithSalary:           true, // $185k/yr - $205k/yr
 							Remote:               false,
 						},
 						{
@@ -3088,6 +3089,16 @@ func companies11Shard() []domain.CompanyProfile {
 							Date:                 mustDate("2025-07-08"),
 							WithSalary:           false,
 							Remote:               true,
+						},
+						{
+							Title:                "Senior Scala Engineer – Search",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4269437576/",
+							Location:             "Ruhr Region",
+							Date:                 mustDate("2025-07-19"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 					},
 				},

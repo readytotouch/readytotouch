@@ -3,10 +3,15 @@
   hosts: "web"
   gather_facts: "no"
   vars:
-    - GO_VERSION: "1.22.6"
+    GO_VERSION: "1.24.5"
 
   tasks:
-    - name: "Download Go {{ GO_VERSION }} tarball"
+    - name: "Remove old Go"
+      file:
+        path: "/usr/local/go"
+        state: absent
+
+    - name: "Download Go {{ GO_VERSION }}"
       get_url:
         url: "https://go.dev/dl/go{{ GO_VERSION }}.linux-amd64.tar.gz"
         dest: "/tmp/go{{ GO_VERSION }}.linux-amd64.tar.gz"
@@ -16,7 +21,6 @@
         src: "/tmp/go{{ GO_VERSION }}.linux-amd64.tar.gz"
         dest: "/usr/local"
         remote_src: "yes"
-        creates: "/usr/local/go"
 
     - name: "Add Go binaries to PATH"
       lineinfile:
