@@ -1351,6 +1351,16 @@ func companies17Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Staff Elixir Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4273981223/",
+							Location:             "Greater Colorado Springs Area",
+							Date:                 mustDate("2025-07-23"),
+							WithSalary:           true, // $175k/yr - $255k/yr
+							Remote:               true,
+						},
 					},
 				},
 				domain.Clojure: {},
