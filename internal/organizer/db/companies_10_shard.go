@@ -3572,6 +3572,16 @@ func companies10Shard() []domain.CompanyProfile {
 							WithSalary:           true,
 							Remote:               true,
 						},
+						{
+							Title:                "Software Engineer (Clojure)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4233803693/",
+							Location:             "King of Prussia, PA",
+							Date:                 mustDate("2025-07-23"),
+							WithSalary:           true, // $135k/yr - $150k/yr
+							Remote:               true,
+						},
 					},
 				},
 				domain.Haskell: {},
