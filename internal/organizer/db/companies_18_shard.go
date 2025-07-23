@@ -2577,6 +2577,16 @@ func companies18Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Full Stack Developer (Rust)",
+							ShortDescription:     "CI/CD & Test Environments",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4274985946/",
+							Location:             "Headquarters, KY",
+							Date:                 mustDate("2025-07-23"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig: {

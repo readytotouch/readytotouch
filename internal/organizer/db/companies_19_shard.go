@@ -4926,6 +4926,87 @@ func companies19Shard() []domain.CompanyProfile {
 				domain.IndustryMedTech,
 			},
 		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Bitwarden",
+			Website: "https://bitwarden.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                24776937,
+				IDs:               nil,
+				Alias:             "bitwarden1",
+				Name:              "Bitwarden",
+				Followers:         "28K",
+				Employees:         "201-500",
+				AssociatedMembers: "208",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:     "bitwarden",
+				Followers: "7.9k",
+				Verified:  true,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 4,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 6,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Rust Software Engineer",
+							ShortDescription:     "Autofill",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4271123395/",
+							Location:             "Santa Barbara, CA",
+							Date:                 mustDate("2025-07-23"),
+							WithSalary:           true, // $140k/yr - $200k/yr
+							Remote:               true,
+						},
+					},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Open source password management solutions",
+			Industries: []domain.Industry{
+				domain.IndustryCyberSecurity,
+			},
+		},
 
 		// Template
 		//{
