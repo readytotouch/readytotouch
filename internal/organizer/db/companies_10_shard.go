@@ -3580,8 +3580,9 @@ func companies10Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4233802800/",
-							Date:                 mustDate("2025-07-02"),
-							WithSalary:           true,
+							Location:             "Waltham, MA",
+							Date:                 mustDate("2025-07-24", "2025-07-02"),
+							WithSalary:           true, // $135k/yr - $150k/yr
 							Remote:               true,
 						},
 						{
