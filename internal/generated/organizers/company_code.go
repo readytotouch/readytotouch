@@ -1093,6 +1093,7 @@ var (
 		"cap-rx":                              1093, // Capital Rx
 		"papainc":                             1094, // Papa
 		"bitwarden1":                          1095, // Bitwarden
+		"kyp":                                 1096, // KYP
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

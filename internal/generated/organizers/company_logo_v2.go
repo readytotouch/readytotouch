@@ -506,6 +506,7 @@ var (
 		"koho":                                "",
 		"konghq":                              "konghq.jpeg",
 		"kroger":                              "",
+		"kyp":                                 "",
 		"ladderlife":                          "",
 		"lantronix":                           "",
 		"legalzoom":                           "",
