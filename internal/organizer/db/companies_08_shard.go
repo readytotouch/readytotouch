@@ -2113,8 +2113,9 @@ func companies08Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "bolcom",
-				Verified: false,
+				Login:     "bolcom",
+				Followers: "43",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",

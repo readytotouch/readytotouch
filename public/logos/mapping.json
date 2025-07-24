@@ -606,8 +606,8 @@
   },
   {
     "alias": "bitwarden1",
-    "source": "",
-    "destination": ""
+    "source": "bitwarden1-200x200.jpeg",
+    "destination": "bitwarden1.jpeg"
   },
   {
     "alias": "black-duck-software",
@@ -831,8 +831,8 @@
   },
   {
     "alias": "channable",
-    "source": "",
-    "destination": ""
+    "source": "channable-200x200.jpeg",
+    "destination": "channable.jpeg"
   },
   {
     "alias": "chapa-financial-technologies",
@@ -1016,8 +1016,8 @@
   },
   {
     "alias": "collabera",
-    "source": "",
-    "destination": ""
+    "source": "collabera-200x200.jpeg",
+    "destination": "collabera.jpeg"
   },
   {
     "alias": "collins-aerospace",
@@ -1076,8 +1076,8 @@
   },
   {
     "alias": "corsearchinc",
-    "source": "",
-    "destination": ""
+    "source": "corsearch-200x200.jpeg",
+    "destination": "corsearchinc.jpeg"
   },
   {
     "alias": "corys",
@@ -3401,8 +3401,8 @@
   },
   {
     "alias": "papainc",
-    "source": "",
-    "destination": ""
+    "source": "papa-200x200.jpeg",
+    "destination": "papainc.jpeg"
   },
   {
     "alias": "parachute-health",
@@ -3591,8 +3591,8 @@
   },
   {
     "alias": "prima-assicurazioni",
-    "source": "",
-    "destination": ""
+    "source": "prima-assicurazioni-180x180.png",
+    "destination": "prima-assicurazioni.png"
   },
   {
     "alias": "prima-group-housing",
@@ -4691,8 +4691,8 @@
   },
   {
     "alias": "thales",
-    "source": "",
-    "destination": ""
+    "source": "thales-200x200.jpeg",
+    "destination": "thales.jpeg"
   },
   {
     "alias": "thatgamecompany",
