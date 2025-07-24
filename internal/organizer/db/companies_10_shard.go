@@ -2642,8 +2642,9 @@ func companies10Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "MagniteEngineering",
-				Verified: false,
+				Login:     "MagniteEngineering",
+				Followers: "4",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Magnite",
@@ -3580,8 +3581,9 @@ func companies10Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4233802800/",
-							Date:                 mustDate("2025-07-02"),
-							WithSalary:           true,
+							Location:             "Waltham, MA",
+							Date:                 mustDate("2025-07-24", "2025-07-02"),
+							WithSalary:           true, // $135k/yr - $150k/yr
 							Remote:               true,
 						},
 						{
@@ -4581,8 +4583,9 @@ func companies10Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "Nasdaq",
-				Verified: false,
+				Login:     "Nasdaq",
+				Followers: "143",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Nasdaq",
@@ -5240,6 +5243,16 @@ func companies10Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4263601471/",
 							Date:                 mustDate("2025-07-07"),
 							WithSalary:           true, // $200k/yr - $235k/yr
+							Remote:               true,
+						},
+						{
+							Title:                "Software Engineer – Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4275466013/",
+							Location:             "United States",
+							Date:                 mustDate("2025-07-25"),
+							WithSalary:           true, // $142k/yr - $165k/yr
 							Remote:               true,
 						},
 					},

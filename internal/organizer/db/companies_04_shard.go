@@ -1836,8 +1836,9 @@ func companies04Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "paloaltonetworks",
-				Verified: true,
+				Login:     "paloaltonetworks",
+				Followers: "1.1k",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "palo-alto-networks",
@@ -2692,8 +2693,9 @@ func companies04Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "geniussportsgroup",
+				Followers: "7",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Genius-Sports",
@@ -2723,9 +2725,12 @@ func companies04Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
-				domain.Go: {},
+				domain.Go: {
+					GitHubRepositoriesCount: 9,
+					Vacancies:               []domain.Vacancy{},
+				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 2,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer, Rust",

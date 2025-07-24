@@ -2509,7 +2509,8 @@ func companies02Shard() []domain.CompanyProfile {
 							ShortDescription:     "Configuration and Secrets Management,Tech Foundation",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4259999298/",
-							Date:                 mustDate("2025-07-03"),
+							Location:             "Berlin, Berlin, Germany",
+							Date:                 mustDate("2025-07-24", "2025-07-03"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -5569,8 +5570,9 @@ func companies02Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "sumup",
-				Verified: true,
+				Login:     "sumup",
+				Followers: "285",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "SumUp",

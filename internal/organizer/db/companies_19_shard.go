@@ -4851,8 +4851,8 @@ func companies19Shard() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "Papa",
 			Website: "https://www.papa.com/",
-			Careers: "",
-			About:   "",
+			Careers: "https://www.papa.com/careers",
+			About:   "https://www.papa.com/about",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                10879786,
@@ -4931,7 +4931,7 @@ func companies19Shard() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "Bitwarden",
 			Website: "https://bitwarden.com/",
-			Careers: "",
+			Careers: "https://bitwarden.com/careers/",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -4956,7 +4956,14 @@ func companies19Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Bitwarden-EI_IE4337610.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Bitwarden-Reviews-E4337610.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Bitwarden-Jobs-E4337610.htm",
+				Jobs:        "9",
+				Reviews:     "41",
+				Salaries:    "47",
+				ReviewsRate: "3.7",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -5005,6 +5012,86 @@ func companies19Shard() []domain.CompanyProfile {
 			ShortDescription: "Open source password management solutions",
 			Industries: []domain.Industry{
 				domain.IndustryCyberSecurity,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "KYP",
+			Website: "https://kyp.io/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                76490514,
+				IDs:               nil,
+				Alias:             "kyp",
+				Name:              "KYP",
+				Followers:         "1K",
+				Employees:         "2-10",
+				AssociatedMembers: "94",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Back-End Engineer Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4267262281/",
+							Location:             "United Kingdom",
+							Date:                 mustDate("2025-07-24"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "UK based Real-Time Third Party Enterprise Risk Intelligence Platform",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
 			},
 		},
 

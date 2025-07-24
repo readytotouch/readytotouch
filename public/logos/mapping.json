@@ -2510,6 +2510,11 @@
     "destination": ""
   },
   {
+    "alias": "kyp",
+    "source": "kyp-512x512.png",
+    "destination": "kyp.png"
+  },
+  {
     "alias": "ladderlife",
     "source": "",
     "destination": ""
@@ -4066,8 +4071,8 @@
   },
   {
     "alias": "secpod-technologies",
-    "source": "",
-    "destination": ""
+    "source": "secpod-200x200.jpeg",
+    "destination": "secpod-technologies.jpeg"
   },
   {
     "alias": "sectigo",
