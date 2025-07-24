@@ -1091,6 +1091,8 @@ var (
 		"swan-embedded-banking":               1091, // Swan
 		"julius-baer":                         1092, // Julius Baer
 		"cap-rx":                              1093, // Capital Rx
+		"papainc":                             1094, // Papa
+		"bitwarden1":                          1095, // Bitwarden
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

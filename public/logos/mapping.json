@@ -605,6 +605,11 @@
     "destination": ""
   },
   {
+    "alias": "bitwarden1",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "black-duck-software",
     "source": "black-duck-software-200x200.jpeg",
     "destination": "black-duck-software.jpeg"
@@ -3391,6 +3396,11 @@
   },
   {
     "alias": "panasonic",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "papainc",
     "source": "",
     "destination": ""
   },
