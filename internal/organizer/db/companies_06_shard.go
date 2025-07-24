@@ -501,8 +501,9 @@ func companies06Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "nitro",
-				Verified: true,
+				Login:     "nitro",
+				Followers: "32",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Nitro",
@@ -1923,8 +1924,9 @@ func companies06Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "darktrace",
-				Verified: false,
+				Login:     "darktrace",
+				Followers: "37",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Darktrace",
@@ -4020,8 +4022,9 @@ func companies06Shard() []domain.CompanyProfile {
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "Level-All",
-				Verified: false,
+				Login:     "Level-All",
+				Followers: "6",
+				Verified:  false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",

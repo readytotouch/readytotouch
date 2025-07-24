@@ -4313,8 +4313,9 @@ func companies03Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "cloudwalk",
-				Verified: false,
+				Login:     "cloudwalk",
+				Followers: "375",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",

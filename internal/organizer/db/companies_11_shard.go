@@ -1121,8 +1121,9 @@ func companies11Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "qonto",
-				Verified: false,
+				Login:     "qonto",
+				Followers: "93",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -1407,8 +1408,9 @@ func companies11Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "cloudlinux",
-				Verified: false,
+				Login:     "cloudlinux",
+				Followers: "36",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "CloudLinux",

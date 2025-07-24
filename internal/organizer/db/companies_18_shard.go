@@ -1043,8 +1043,8 @@ func companies18Shard() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "Uniphore",
 			Website: "https://www.uniphore.com/",
-			Careers: "",
-			About:   "",
+			Careers: "https://www.uniphore.com/careers/",
+			About:   "https://www.uniphore.com/about-us/",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1331150,
@@ -2860,8 +2860,8 @@ func companies18Shard() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "SOAX",
 			Website: "https://soax.com/",
-			Careers: "",
-			About:   "",
+			Careers: "https://soax.com/careers",
+			About:   "https://soax.com/about",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                34924582,
@@ -3813,7 +3813,7 @@ func companies18Shard() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "WebBeds",
 			Website: "https://www.webbeds.com/",
-			Careers: "",
+			Careers: "https://www.webbeds.com/careers/",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{

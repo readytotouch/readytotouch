@@ -1299,8 +1299,8 @@ func companies17Shard() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "True Anomaly",
 			Website: "https://www.trueanomaly.space/",
-			Careers: "",
-			About:   "",
+			Careers: "https://www.trueanomaly.space/careers",
+			About:   "https://www.trueanomaly.space/about-us",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                80801253,

@@ -2642,8 +2642,9 @@ func companies10Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "MagniteEngineering",
-				Verified: false,
+				Login:     "MagniteEngineering",
+				Followers: "4",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Magnite",
@@ -4582,8 +4583,9 @@ func companies10Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "Nasdaq",
-				Verified: false,
+				Login:     "Nasdaq",
+				Followers: "143",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Nasdaq",

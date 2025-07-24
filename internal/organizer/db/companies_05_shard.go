@@ -804,8 +804,9 @@ func companies05Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "freewheel",
-				Verified: true,
+				Login:     "freewheel",
+				Followers: "15",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "freewheel",
@@ -2492,8 +2493,9 @@ func companies05Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "bedrockstreaming",
-				Verified: true,
+				Login:     "bedrockstreaming",
+				Followers: "50",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -2909,8 +2911,9 @@ func companies05Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "aquasecurity",
-				Verified: true,
+				Login:     "aquasecurity",
+				Followers: "2k",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Aqua-Security",

@@ -221,7 +221,7 @@ func companies16Shard() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "Telnyx",
 			Website: "https://telnyx.com/",
-			Careers: "",
+			Careers: "https://telnyx.com/careers",
 			About:   "",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
@@ -1969,9 +1969,9 @@ func companies16Shard() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "Muzz",
 			Website: "https://muzz.com/",
-			Careers: "",
+			Careers: "https://muzz.com/careers/",
 			About:   "",
-			Blog:    "",
+			Blog:    "https://engineering.muzz.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                11089336,
 				IDs:               nil,
