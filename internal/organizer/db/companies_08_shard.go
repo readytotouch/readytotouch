@@ -2113,8 +2113,9 @@ func companies08Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "bolcom",
-				Verified: false,
+				Login:     "bolcom",
+				Followers: "43",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -2166,7 +2167,8 @@ func companies08Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4257429106/",
-							Date:                 mustDate("2025-07-02"),
+							Location:             "Utrecht, Utrecht, Netherlands",
+							Date:                 mustDate("2025-07-23", "2025-07-02"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2667,11 +2669,12 @@ func companies08Shard() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Backend Developer (Python, Go)",
+							Title:                "Backend Developer (Python, C#, Go)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4093559031/",
-							Date:                 mustDate("2025-06-09", "2025-04-04", "2025-03-13", "2025-02-19", "2024-12-10"),
+							Location:             "Herzliya, Tel Aviv District, Israel",
+							Date:                 mustDate("2025-07-23", "2025-06-09", "2025-04-04", "2025-03-13", "2025-02-19", "2024-12-10"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3893,6 +3896,16 @@ func companies08Shard() []domain.CompanyProfile {
 							Date:                 mustDate("2025-02-19"),
 							WithSalary:           true, // $55 - $58 per hour
 							Remote:               false,
+						},
+						{
+							Title:                "Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4271378762/",
+							Location:             "United States",
+							Date:                 mustDate("2025-07-24"),
+							WithSalary:           true, // $55/hr - $60/hr
+							Remote:               true,
 						},
 					},
 				},
@@ -5445,7 +5458,8 @@ func companies08Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4205828631/",
-							Date:                 mustDate("2025-07-02", "2025-06-11"),
+							Location:             "Prague, Prague, Czechia",
+							Date:                 mustDate("2025-07-23", "2025-07-02", "2025-06-11"),
 							WithSalary:           false,
 							Remote:               false,
 						},

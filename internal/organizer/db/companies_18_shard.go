@@ -1088,7 +1088,8 @@ func companies18Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4185030868/",
-							Date:                 mustDate("2025-06-09"),
+							Location:             "Bengaluru, Karnataka, India",
+							Date:                 mustDate("2025-07-23", "2025-06-09"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2577,6 +2578,16 @@ func companies18Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Full Stack Developer (Rust)",
+							ShortDescription:     "CI/CD & Test Environments",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4274985946/",
+							Location:             "Headquarters, KY",
+							Date:                 mustDate("2025-07-23"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig: {
@@ -3806,8 +3817,9 @@ func companies18Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "WebBeds",
+				Followers: "49",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -3830,7 +3842,7 @@ func companies18Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 3,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Golang Engineer",
@@ -3838,6 +3850,16 @@ func companies18Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4256478997/",
 							Date:                 mustDate("2025-07-01"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Backend Developer (.NET / Go / PHP)",
+							ShortDescription:     "High-Scale Systems | Cloud & Microservices",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4268595844/",
+							Location:             "London, England, United Kingdom",
+							Date:                 mustDate("2025-07-23"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -4216,8 +4238,9 @@ func companies18Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "thalesgroup",
+				Followers: "414",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -4241,14 +4264,15 @@ func companies18Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 37,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer – III (C++/Golang Developer)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4161416034/",
-							Date:                 mustDate("2025-07-01"),
+							Location:             "Noida, Uttar Pradesh, India",
+							Date:                 mustDate("2025-07-23", "2025-07-01"),
 							WithSalary:           false,
 							Remote:               false,
 						},
