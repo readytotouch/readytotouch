@@ -1294,5 +1294,20 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Recruiting agency
 		},
+		{
+			Name:    "Holistic Partners, Inc",
+			Website: "https://holistic-partners.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                9313657,
+				IDs:               nil,
+				Alias:             "holistic-partners",
+				Name:              "Holistic Partners, Inc",
+				Followers:         "40K",
+				Employees:         "51-200",
+				AssociatedMembers: "96",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
 	}
 }
