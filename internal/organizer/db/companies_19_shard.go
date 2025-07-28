@@ -927,7 +927,8 @@ func companies19Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4240055195/",
-							Date:                 mustDate("2025-07-07"),
+							Location:             "Helsinki, Uusimaa, Finland",
+							Date:                 mustDate("2025-07-28", "2025-07-07"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -1190,6 +1191,16 @@ func companies19Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4262157113/",
 							Date:                 mustDate("2025-07-07"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Lead Engineer – Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4276796401/",
+							Location:             "Bengaluru, Karnataka, India",
+							Date:                 mustDate("2025-07-28"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2458,6 +2469,16 @@ func companies19Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Golang – Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4270882682/",
+							Location:             "Madrid, Community of Madrid, Spain",
+							Date:                 mustDate("2025-07-27"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
@@ -2625,6 +2646,16 @@ func companies19Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4263312446/",
 							Date:                 mustDate("2025-07-09"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Go Software Engineer",
+							ShortDescription:     "BitBar",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4260683559/",
+							Location:             "Wrocław, Dolnośląskie, Poland",
+							Date:                 mustDate("2025-07-25"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2974,6 +3005,16 @@ func companies19Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4264350447/",
 							Location:             "Melbourne, Victoria, Australia",
 							Date:                 mustDate("2025-07-10"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Backend Engineer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4276108751/",
+							Location:             "Melbourne, Victoria, Australia",
+							Date:                 mustDate("2025-07-28"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -5174,6 +5215,87 @@ func companies19Shard() []domain.CompanyProfile {
 			ShortDescription: "Cloud Platform",
 			Industries: []domain.Industry{
 				domain.IndustryCloudComputing,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "NVIDIA",
+			Website: "https://www.nvidia.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3608,
+				IDs:               nil,
+				Alias:             "nvidia",
+				Name:              "NVIDIA",
+				Followers:         "4M",
+				Employees:         "10K+",
+				AssociatedMembers: "40,840",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:     "nvidia",
+				Followers: "17.9k",
+				Verified:  true,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 44,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Systems Software Engineer, Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4275852563/",
+							Location:             "United States",
+							Date:                 mustDate("2025-07-26"),
+							WithSalary:           true, // $148k/yr - $287.5k/yr
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 4,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "",
+			Industries:       []domain.Industry{
+				// NOP
 			},
 		},
 
