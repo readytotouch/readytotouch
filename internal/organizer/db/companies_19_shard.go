@@ -810,7 +810,8 @@ func companies19Shard() []domain.CompanyProfile {
 				ReviewsRate: "3.7",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "thomson-reuters",
+				Employees: "24,000",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Thomson-Reuters-EI_IE100303.11,26.htm",
@@ -846,7 +847,8 @@ func companies19Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4235994956/",
-							Date:                 mustDate("2025-07-07"),
+							Location:             "Bengaluru, Karnataka, India",
+							Date:                 mustDate("2025-07-28", "2025-07-07"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -926,7 +928,8 @@ func companies19Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4240055195/",
-							Date:                 mustDate("2025-07-07"),
+							Location:             "Helsinki, Uusimaa, Finland",
+							Date:                 mustDate("2025-07-28", "2025-07-07"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -1189,6 +1192,16 @@ func companies19Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4262157113/",
 							Date:                 mustDate("2025-07-07"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Lead Engineer – Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4276796401/",
+							Location:             "Bengaluru, Karnataka, India",
+							Date:                 mustDate("2025-07-28"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2435,10 +2448,18 @@ func companies19Shard() []domain.CompanyProfile {
 				ReviewsRate: "3.3",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "celonis",
+				Employees: "2,000",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Celonis-EI_IE1307503.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Celonis-Reviews-E1307503.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Celonis-Jobs-E1307503.htm",
+				Jobs:        "193",
+				Reviews:     "1.1K",
+				Salaries:    "2K",
+				ReviewsRate: "3.8",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -2454,6 +2475,16 @@ func companies19Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4261148978/",
 							Location:             "Madrid, Community of Madrid, Spain",
 							Date:                 mustDate("2025-07-09"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Golang – Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4270882682/",
+							Location:             "Madrid, Community of Madrid, Spain",
+							Date:                 mustDate("2025-07-27"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2599,7 +2630,8 @@ func companies19Shard() []domain.CompanyProfile {
 				ReviewsRate: "3.6",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "smartbear-software",
+				Employees: "780",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-SmartBear-EI_IE410916.11,20.htm",
@@ -2624,6 +2656,16 @@ func companies19Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4263312446/",
 							Date:                 mustDate("2025-07-09"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Go Software Engineer",
+							ShortDescription:     "BitBar",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4260683559/",
+							Location:             "Wrocław, Dolnośląskie, Poland",
+							Date:                 mustDate("2025-07-25"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2973,6 +3015,16 @@ func companies19Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4264350447/",
 							Location:             "Melbourne, Victoria, Australia",
 							Date:                 mustDate("2025-07-10"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Backend Engineer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4276108751/",
+							Location:             "Melbourne, Victoria, Australia",
+							Date:                 mustDate("2025-07-28"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -4634,7 +4686,14 @@ func companies19Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Julius-Baer-EI_IE12799.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Julius-Baer-Reviews-E12799.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Julius-Baer-Jobs-E12799.htm",
+				Jobs:        "106",
+				Reviews:     "1K",
+				Salaries:    "1.4K",
+				ReviewsRate: "4.0",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -4875,7 +4934,14 @@ func companies19Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Papa-EI_IE2525288.11,15.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Papa-Reviews-E2525288.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Papa-Jobs-E2525288.htm",
+				Jobs:        "8",
+				Reviews:     "194",
+				Salaries:    "224",
+				ReviewsRate: "3.4",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -5092,6 +5158,187 @@ func companies19Shard() []domain.CompanyProfile {
 			ShortDescription: "UK based Real-Time Third Party Enterprise Risk Intelligence Platform",
 			Industries: []domain.Industry{
 				domain.IndustryFinTech,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Virtuozzo",
+			Website: "https://www.virtuozzo.com/",
+			Careers: "",
+			About:   "https://www.virtuozzo.com/company/about/",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                10358578,
+				IDs:               []int{1068325, 2426564, 2868387, 10358578},
+				Alias:             "virtuozzo",
+				Name:              "Virtuozzo",
+				Followers:         "17K",
+				Employees:         "201-500",
+				AssociatedMembers: "252",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:     "virtuozzo",
+				Followers: "28",
+				Verified:  false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Virtuozzo-EI_IE1099190.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Virtuozzo-Reviews-E1099190.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Virtuozzo-Jobs-E1099190.htm",
+				Jobs:        "22",
+				Reviews:     "45",
+				Salaries:    "49",
+				ReviewsRate: "4.1",
+				Verified:    true,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 8,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Lead Rust Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4271713155/",
+							Location:             "Barcelona, Catalonia, Spain",
+							Date:                 mustDate("2025-07-28"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Cloud Platform",
+			Industries: []domain.Industry{
+				domain.IndustryCloudComputing,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "NVIDIA",
+			Website: "https://www.nvidia.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3608,
+				IDs:               nil,
+				Alias:             "nvidia",
+				Name:              "NVIDIA",
+				Followers:         "4M",
+				Employees:         "10K+",
+				AssociatedMembers: "40,840",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:     "nvidia",
+				Followers: "17.9k",
+				Verified:  true,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias:       "NVIDIA",
+				Employees:   "10,000+",
+				Salary:      "$29K ~ $317K a year",
+				Reviews:     "1,054",
+				ReviewsRate: "4.3",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "nvidia",
+				Employees: "22,810",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-NVIDIA-EI_IE7633.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/NVIDIA-Reviews-E7633.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/NVIDIA-Jobs-E7633.htm",
+				Jobs:        "1.5K",
+				Reviews:     "6.5K",
+				Salaries:    "65K",
+				ReviewsRate: "4.5",
+				Verified:    true,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 44,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Systems Software Engineer, Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4275852563/",
+							Location:             "United States",
+							Date:                 mustDate("2025-07-26"),
+							WithSalary:           true, // $148k/yr - $287.5k/yr
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 4,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "",
+			Industries:       []domain.Industry{
+				// NOP
 			},
 		},
 

@@ -1294,5 +1294,50 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Recruiting agency
 		},
+		{
+			Name:    "Holistic Partners, Inc",
+			Website: "https://holistic-partners.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                9313657,
+				IDs:               nil,
+				Alias:             "holistic-partners",
+				Name:              "Holistic Partners, Inc",
+				Followers:         "40K",
+				Employees:         "51-200",
+				AssociatedMembers: "96",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Adria Solutions Ltd",
+			Website: "https://www.adriasolutions.co.uk/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2510789,
+				IDs:               nil,
+				Alias:             "adria-solutions-ltd",
+				Name:              "Adria Solutions Ltd",
+				Followers:         "45K",
+				Employees:         "11-50",
+				AssociatedMembers: "13",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Searchability®",
+			Website: "https://searchability.co.uk/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2568439,
+				IDs:               []int{2568439, 73895128, 86641560},
+				Alias:             "searchability",
+				Name:              "Searchability®",
+				Followers:         "259K",
+				Employees:         "51-200",
+				AssociatedMembers: "97",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
 	}
 }

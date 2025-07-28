@@ -834,8 +834,9 @@ func companies07Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "remarkable",
+				Followers: "405",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -862,7 +863,7 @@ func companies07Shard() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 16,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Golang Developer",
@@ -887,7 +888,8 @@ func companies07Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4232561428/",
-							Date:                 mustDate("2025-07-03", "2025-06-13"),
+							Location:             "London, England, United Kingdom",
+							Date:                 mustDate("2025-07-25", "2025-07-25", "2025-07-25", "2025-07-03", "2025-06-13"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -1113,8 +1115,9 @@ func companies07Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "fanatics",
+				Followers: "13",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Fanatics",
@@ -1145,7 +1148,7 @@ func companies07Shard() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 11,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Staff Engineer — Backend",
@@ -1196,8 +1199,9 @@ func companies07Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4187506903/",
-							Date:                 mustDate("2025-07-07", "2025-06-16", "2025-05-26", "2025-05-03", "2025-04-12"),
-							WithSalary:           false,
+							Location:             "New York, NY",
+							Date:                 mustDate("2025-07-28", "2025-07-07", "2025-06-16", "2025-05-26", "2025-05-03", "2025-04-12"),
+							WithSalary:           true, // $172k/yr - $235k/yr
 							Remote:               false,
 						},
 						{
@@ -1765,8 +1769,9 @@ func companies07Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "newrelic",
+				Followers: "788",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "new-relic",
@@ -1797,7 +1802,7 @@ func companies07Shard() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 101,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Lead Software Engineer — Golang",
@@ -1820,10 +1825,24 @@ func companies07Shard() []domain.CompanyProfile {
 						},
 					},
 				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
+				domain.Rust:  {},
+				domain.Zig:   {},
+				domain.Scala: {},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 2,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer (Elixir/Java)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4275731873/",
+							Location:             "Portland, OR",
+							Date:                 mustDate("2025-07-25"),
+							WithSalary:           true, // $152k/yr - $190k/yr
+							Remote:               false,
+						},
+					},
+				},
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
@@ -3614,6 +3633,11 @@ func companies07Shard() []domain.CompanyProfile {
 				AssociatedMembers: "589",
 				Verified:          true,
 			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:     "mirantis",
+				Followers: "145",
+				Verified:  false,
+			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Mirantis",
 				Employees:   "501 to 1,000",
@@ -3640,7 +3664,7 @@ func companies07Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 42,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer (Golang/Kubernetes)",
@@ -3666,6 +3690,16 @@ func companies07Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4244877807/",
 							Date:                 mustDate("2025-06-05"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+						{
+							Title:                "Sustaining Engineer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4277211394/",
+							Location:             "Dhaka, Dhaka, Bangladesh",
+							Date:                 mustDate("2025-07-28"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -3792,8 +3826,9 @@ func companies07Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4259762332/",
-							Date:                 mustDate("2025-07-14", "2025-07-08", "2025-07-01"),
-							WithSalary:           true,
+							Location:             "San Jose, CA",
+							Date:                 mustDate("2025-07-25", "2025-07-14", "2025-07-08", "2025-07-01"),
+							WithSalary:           true, // $182k/yr - $260k/yr
 							Remote:               false,
 						},
 					},

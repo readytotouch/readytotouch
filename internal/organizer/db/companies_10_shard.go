@@ -2763,7 +2763,7 @@ func companies10Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4143148888/",
 							Location:             "United States",
-							Date:                 mustDate("2025-07-17", "2025-07-08", "2025-06-30", "2025-06-24", "2025-06-17", "2025-06-14", "2025-05-01", "2025-04-10"),
+							Date:                 mustDate("2025-07-28", "2025-07-17", "2025-07-08", "2025-06-30", "2025-06-24", "2025-06-17", "2025-06-14", "2025-05-01", "2025-04-10"),
 							WithSalary:           true, // $150k/yr - $170k/yr
 							Remote:               true,
 						},
@@ -3299,6 +3299,16 @@ func companies10Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4236020844/",
 							Date:                 mustDate("2025-07-10"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+						{
+							Title:                "Software Engineer II (PHP/Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4217631597/",
+							Location:             "Poland",
+							Date:                 mustDate("2025-07-25"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -4475,6 +4485,16 @@ func companies10Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4224027061/",
 							Location:             "United States",
 							Date:                 mustDate("2025-07-20", "2025-05-06"),
+							WithSalary:           true, // $140k/yr - $200k/yr
+							Remote:               true,
+						},
+						{
+							Title:                "Senior/Staff Engineer (Elixir or Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4273255688/",
+							Location:             "United States",
+							Date:                 mustDate("2025-07-28"),
 							WithSalary:           true, // $140k/yr - $200k/yr
 							Remote:               true,
 						},

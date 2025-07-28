@@ -1320,7 +1320,8 @@ func companies17Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "true-anomaly",
+				Employees: "126",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-True-Anomaly-EI_IE7642233.11,23.htm",
@@ -1344,13 +1345,14 @@ func companies17Shard() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Elixir Software Engineer",
+							Title:                "Senior Elixir Software Engineer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4219694154/",
-							Date:                 mustDate("2025-07-05", "2025-06-14", "2025-05-22", "2025-04-30"),
-							WithSalary:           false,
-							Remote:               false,
+							Location:             "Greater Colorado Springs Area",
+							Date:                 mustDate("2025-07-27", "2025-07-05", "2025-06-14", "2025-05-22", "2025-04-30"),
+							WithSalary:           true, // $155k/yr - $225k/yr
+							Remote:               true,
 						},
 						{
 							Title:                "Staff Elixir Software Engineer",
