@@ -19,6 +19,11 @@
     Profile: https://www.behance.net/AnastasiiaSihetii
     From: Ukraine
 
+    Name: Sofiia Kataryna
+    Role: Designer
+    Profile: https://www.linkedin.com/in/sofiia-kataryna/
+    From: Ukraine
+
     Name: Liliia Shpak
     Role: Designer
     Profile: https://dribbble.com/LiliiaShpak
