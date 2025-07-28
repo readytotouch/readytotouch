@@ -1094,6 +1094,8 @@ var (
 		"papainc":                             1094, // Papa
 		"bitwarden1":                          1095, // Bitwarden
 		"kyp":                                 1096, // KYP
+		"virtuozzo":                           1097, // Virtuozzo
+		"nvidia":                              1098, // NVIDIA
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 
