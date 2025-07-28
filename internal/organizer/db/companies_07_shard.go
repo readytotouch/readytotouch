@@ -834,8 +834,9 @@ func companies07Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "remarkable",
+				Followers: "405",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -862,7 +863,7 @@ func companies07Shard() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 16,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Golang Developer",
@@ -1114,8 +1115,9 @@ func companies07Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "fanatics",
+				Followers: "13",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Fanatics",
@@ -1146,7 +1148,7 @@ func companies07Shard() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 11,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Staff Engineer — Backend",
@@ -1767,8 +1769,9 @@ func companies07Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "newrelic",
+				Followers: "788",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "new-relic",
@@ -1799,7 +1802,7 @@ func companies07Shard() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 101,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Lead Software Engineer — Golang",
@@ -1826,7 +1829,7 @@ func companies07Shard() []domain.CompanyProfile {
 				domain.Zig:   {},
 				domain.Scala: {},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 2,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer (Elixir/Java)",
@@ -3630,6 +3633,11 @@ func companies07Shard() []domain.CompanyProfile {
 				AssociatedMembers: "589",
 				Verified:          true,
 			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:     "mirantis",
+				Followers: "145",
+				Verified:  false,
+			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Mirantis",
 				Employees:   "501 to 1,000",
@@ -3656,7 +3664,7 @@ func companies07Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 42,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer (Golang/Kubernetes)",

@@ -227,8 +227,9 @@ func companies11Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "canva",
-				Verified: false,
+				Login:     "canva",
+				Followers: "2.3k",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "canva",
@@ -256,7 +257,7 @@ func companies11Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 15,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Platform Engineer (Golang, Kubernetes)",
@@ -279,7 +280,7 @@ func companies11Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 2,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Staff Frontend Engineer (Rust)",
@@ -2726,7 +2727,14 @@ func companies11Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Aescape-EI_IE3148231.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Aescape-Reviews-E3148231.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Aescape-Jobs-E3148231.htm",
+				Jobs:        "13",
+				Reviews:     "22",
+				Salaries:    "33",
+				ReviewsRate: "3.8",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -4483,7 +4491,14 @@ func companies11Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Nelly-Solutions-EI_IE8824065.11,26.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Nelly-Solutions-Reviews-E8824065.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Nelly-Solutions-Jobs-E8824065.htm",
+				Jobs:        "30",
+				Reviews:     "2",
+				Salaries:    "4",
+				ReviewsRate: "5.0",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",

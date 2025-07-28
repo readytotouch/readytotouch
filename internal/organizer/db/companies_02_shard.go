@@ -5888,8 +5888,9 @@ func companies02Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "sonicwall",
-				Verified: false,
+				Login:     "sonicwall",
+				Followers: "19",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "SonicWall-Inc",

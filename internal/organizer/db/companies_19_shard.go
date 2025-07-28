@@ -810,7 +810,8 @@ func companies19Shard() []domain.CompanyProfile {
 				ReviewsRate: "3.7",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "thomson-reuters",
+				Employees: "24,000",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Thomson-Reuters-EI_IE100303.11,26.htm",
@@ -2447,10 +2448,18 @@ func companies19Shard() []domain.CompanyProfile {
 				ReviewsRate: "3.3",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "celonis",
+				Employees: "2,000",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Celonis-EI_IE1307503.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Celonis-Reviews-E1307503.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Celonis-Jobs-E1307503.htm",
+				Jobs:        "193",
+				Reviews:     "1.1K",
+				Salaries:    "2K",
+				ReviewsRate: "3.8",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -2621,7 +2630,8 @@ func companies19Shard() []domain.CompanyProfile {
 				ReviewsRate: "3.6",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "smartbear-software",
+				Employees: "780",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-SmartBear-EI_IE410916.11,20.htm",
@@ -4676,7 +4686,14 @@ func companies19Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Julius-Baer-EI_IE12799.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Julius-Baer-Reviews-E12799.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Julius-Baer-Jobs-E12799.htm",
+				Jobs:        "106",
+				Reviews:     "1K",
+				Salaries:    "1.4K",
+				ReviewsRate: "4.0",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -4917,7 +4934,14 @@ func companies19Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Papa-EI_IE2525288.11,15.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Papa-Reviews-E2525288.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Papa-Jobs-E2525288.htm",
+				Jobs:        "8",
+				Reviews:     "194",
+				Salaries:    "224",
+				ReviewsRate: "3.4",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -5166,7 +5190,14 @@ func companies19Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Virtuozzo-EI_IE1099190.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Virtuozzo-Reviews-E1099190.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Virtuozzo-Jobs-E1099190.htm",
+				Jobs:        "22",
+				Reviews:     "45",
+				Salaries:    "49",
+				ReviewsRate: "4.1",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -5241,13 +5272,25 @@ func companies19Shard() []domain.CompanyProfile {
 				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "NVIDIA",
+				Employees:   "10,000+",
+				Salary:      "$29K ~ $317K a year",
+				Reviews:     "1,054",
+				ReviewsRate: "4.3",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "nvidia",
+				Employees: "22,810",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-NVIDIA-EI_IE7633.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/NVIDIA-Reviews-E7633.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/NVIDIA-Jobs-E7633.htm",
+				Jobs:        "1.5K",
+				Reviews:     "6.5K",
+				Salaries:    "65K",
+				ReviewsRate: "4.5",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",

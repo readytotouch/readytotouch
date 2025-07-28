@@ -1320,7 +1320,8 @@ func companies17Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "true-anomaly",
+				Employees: "126",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-True-Anomaly-EI_IE7642233.11,23.htm",

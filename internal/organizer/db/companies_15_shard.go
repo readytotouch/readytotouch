@@ -2091,7 +2091,14 @@ func companies15Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Scorebuddy-EI_IE1098874.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Scorebuddy-Reviews-E1098874.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Scorebuddy-Jobs-E1098874.htm",
+				Jobs:        "",
+				Reviews:     "7",
+				Salaries:    "11",
+				ReviewsRate: "4.7",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",

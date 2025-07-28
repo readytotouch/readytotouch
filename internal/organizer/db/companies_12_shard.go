@@ -327,7 +327,14 @@ func companies12Shard() []domain.CompanyProfile {
 				Employees: "570",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-FairMoney-EI_IE3265012.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/FairMoney-Reviews-E3265012.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/FairMoney-Jobs-E3265012.htm",
+				Jobs:        "20",
+				Reviews:     "78",
+				Salaries:    "94",
+				ReviewsRate: "3.5",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
