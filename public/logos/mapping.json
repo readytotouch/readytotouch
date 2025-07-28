@@ -86,8 +86,8 @@
   },
   {
     "alias": "adjoe",
-    "source": "",
-    "destination": ""
+    "source": "adjoe-180x180.png",
+    "destination": "adjoe.png"
   },
   {
     "alias": "adobe",
@@ -256,8 +256,8 @@
   },
   {
     "alias": "andurilindustries",
-    "source": "",
-    "destination": ""
+    "source": "andurilindustries-200x200.jpeg",
+    "destination": "andurilindustries.jpeg"
   },
   {
     "alias": "angel-studios-page",
@@ -746,8 +746,8 @@
   },
   {
     "alias": "canva",
-    "source": "",
-    "destination": ""
+    "source": "canva-120x120.webp",
+    "destination": "canva.png"
   },
   {
     "alias": "cap-rx",
@@ -2751,8 +2751,8 @@
   },
   {
     "alias": "maropost",
-    "source": "",
-    "destination": ""
+    "source": "maropost-240x240.webp",
+    "destination": "maropost.png"
   },
   {
     "alias": "mastercard",
@@ -3195,6 +3195,11 @@
     "destination": ""
   },
   {
+    "alias": "nvidia",
+    "source": "nvidia-200x200.jpeg",
+    "destination": "nvidia.jpeg"
+  },
+  {
     "alias": "oanda",
     "source": "",
     "destination": ""
@@ -3286,8 +3291,8 @@
   },
   {
     "alias": "opendoor-com",
-    "source": "",
-    "destination": ""
+    "source": "opendoor-200x200.jpeg",
+    "destination": "opendoor-com.jpeg"
   },
   {
     "alias": "openprovider",
@@ -4946,8 +4951,8 @@
   },
   {
     "alias": "unity",
-    "source": "",
-    "destination": ""
+    "source": "unity-200x200.jpeg",
+    "destination": "unity.jpeg"
   },
   {
     "alias": "university-of-virginia",
@@ -4981,8 +4986,8 @@
   },
   {
     "alias": "usehatchapp",
-    "source": "",
-    "destination": ""
+    "source": "usehatchapp-200x200.jpeg",
+    "destination": "usehatchapp.jpeg"
   },
   {
     "alias": "useinsider",
@@ -5093,6 +5098,11 @@
     "alias": "viodotcom",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "virtuozzo",
+    "source": "virtuozzo-180x180.png",
+    "destination": "virtuozzo.png"
   },
   {
     "alias": "visa",
@@ -5386,8 +5396,8 @@
   },
   {
     "alias": "zenport",
-    "source": "",
-    "destination": ""
+    "source": "zenport-180x180.webp",
+    "destination": "zenport.png"
   },
   {
     "alias": "zep-ai",
