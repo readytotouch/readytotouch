@@ -4478,6 +4478,16 @@ func companies10Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $140k/yr - $200k/yr
 							Remote:               true,
 						},
+						{
+							Title:                "Senior/Staff Engineer (Elixir or Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4273255688/",
+							Location:             "United States",
+							Date:                 mustDate("2025-07-28"),
+							WithSalary:           true, // $140k/yr - $200k/yr
+							Remote:               true,
+						},
 					},
 				},
 				domain.Clojure: {},

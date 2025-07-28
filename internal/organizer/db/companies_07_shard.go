@@ -1196,8 +1196,9 @@ func companies07Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4187506903/",
-							Date:                 mustDate("2025-07-07", "2025-06-16", "2025-05-26", "2025-05-03", "2025-04-12"),
-							WithSalary:           false,
+							Location:             "New York, NY",
+							Date:                 mustDate("2025-07-28", "2025-07-07", "2025-06-16", "2025-05-26", "2025-05-03", "2025-04-12"),
+							WithSalary:           true, // $172k/yr - $235k/yr
 							Remote:               false,
 						},
 						{
@@ -1820,10 +1821,24 @@ func companies07Shard() []domain.CompanyProfile {
 						},
 					},
 				},
-				domain.Rust:    {},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
+				domain.Rust:  {},
+				domain.Zig:   {},
+				domain.Scala: {},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer (Elixir/Java)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4275731873/",
+							Location:             "Portland, OR",
+							Date:                 mustDate("2025-07-25"),
+							WithSalary:           true, // $152k/yr - $190k/yr
+							Remote:               false,
+						},
+					},
+				},
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
