@@ -2769,12 +2769,13 @@ func companies04Shard() []domain.CompanyProfile {
 							Remote:               false,
 						},
 						{
-							Title:                "Back-End Software Engineer (Rust)",
+							Title:                "Software Engineer (Backend, Rust)",
 							ShortDescription:     "AdTech",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4204813057/",
-							Date:                 mustDate("2025-07-05", "2025-06-14", "2025-05-24", "2025-05-02", "2025-04-10"),
-							WithSalary:           false,
+							Location:             "New York, United States",
+							Date:                 mustDate("2025-07-27", "2025-07-05", "2025-06-14", "2025-05-24", "2025-05-02", "2025-04-10"),
+							WithSalary:           true, // $145k/yr - $200k/yr
 							Remote:               false,
 						},
 						{
@@ -4051,6 +4052,16 @@ func companies04Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4266413357/",
 							Location:             "Czechia",
 							Date:                 mustDate("2025-07-16"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+						{
+							Title:                "Software Developer Rust/C++",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4270199013/",
+							Location:             "Czechia",
+							Date:                 mustDate("2025-07-25"),
 							WithSalary:           false,
 							Remote:               true,
 						},
