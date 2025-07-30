@@ -387,7 +387,7 @@ var (
 		"wearemntn":                           392,  // MNTN
 		"getwriter":                           393,  // Writer
 		"dlocal":                              394,  // dLocal
-		"clearstory-build":                    395,  // Clearstory.build
+		"clearstory-build":                    395,  // Clearstory
 		"millennium-partners":                 396,  // Millennium
 		"mondoo":                              397,  // Mondoo
 		"fullinfo":                            398,  // fullinfo
@@ -1096,6 +1096,11 @@ var (
 		"kyp":                                 1096, // KYP
 		"virtuozzo":                           1097, // Virtuozzo
 		"nvidia":                              1098, // NVIDIA
+		"klarna":                              1099, // Klarna
+		"xai":                                 1100, // xAI
+		"buenro":                              1101, // Buenro
+		"komerceid":                           1102, // Komerce
+		"mayflower-tech":                      1103, // Mayflower
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

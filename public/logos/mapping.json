@@ -695,6 +695,11 @@
     "destination": ""
   },
   {
+    "alias": "buenro",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "bufbuild",
     "source": "",
     "destination": ""
@@ -2480,6 +2485,11 @@
     "destination": ""
   },
   {
+    "alias": "klarna",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "knime",
     "source": "",
     "destination": ""
@@ -2496,6 +2506,11 @@
   },
   {
     "alias": "koho",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "komerceid",
     "source": "",
     "destination": ""
   },
@@ -2771,6 +2786,11 @@
   },
   {
     "alias": "mayaph",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "mayflower-tech",
     "source": "",
     "destination": ""
   },
@@ -5333,6 +5353,11 @@
     "alias": "wpp-media",
     "source": "wpp-media.svg",
     "destination": "wpp-media.svg"
+  },
+  {
+    "alias": "xai",
+    "source": "",
+    "destination": ""
   },
   {
     "alias": "xataio",
