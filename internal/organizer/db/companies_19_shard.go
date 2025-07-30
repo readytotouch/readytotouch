@@ -1377,7 +1377,8 @@ func companies19Shard() []domain.CompanyProfile {
 							ShortDescription:     "Aivo",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4243309060/",
-							Date:                 mustDate("2025-07-07"),
+							Location:             "Argentina",
+							Date:                 mustDate("2025-07-30", "2025-07-07"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -1547,7 +1548,8 @@ func companies19Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4262117247/",
-							Date:                 mustDate("2025-07-07"),
+							Location:             "Kfar Saba, Center District, Israel",
+							Date:                 mustDate("2025-07-30", "2025-07-07"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2665,7 +2667,8 @@ func companies19Shard() []domain.CompanyProfile {
 							ShortDescription:     "BitBar",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4263312446/",
-							Date:                 mustDate("2025-07-09"),
+							Location:             "Wrocław, Dolnośląskie, Poland",
+							Date:                 mustDate("2025-07-30", "2025-07-09"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -4311,7 +4314,7 @@ func companies19Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4267047562/",
 							Location:             "Sydney, New South Wales, Australia",
-							Date:                 mustDate("2025-07-16"),
+							Date:                 mustDate("2025-07-31", "2025-07-16"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -5519,79 +5522,5 @@ func companies19Shard() []domain.CompanyProfile {
 				// NOP
 			},
 		},
-
-		// Template
-		//{
-		//	ID:      0,  // system
-		//	Type:    "", // system
-		//	Name:    "",
-		//	Website: "",
-		//	Careers: "",
-		//	About:   "",
-		//	Blog:    "",
-		//	LinkedInProfile: domain.LinkedInProfile{
-		//		ID:                0,
-		//		Alias:             "",
-		//		Name:              "",
-		//		Followers:         "",
-		//		Employees:         "",
-		//		AssociatedMembers: "",
-		//		Verified:          false,
-		//	},
-		//	GitHubProfile: domain.GitHubProfile{
-		//		Login:    "",
-		//		Verified: false,
-		//	},
-		//	BlindProfile: domain.BlindProfile{
-		//		Alias: "",
-		//	},
-		//	LevelsFyiProfile: domain.LevelsFyiProfile{
-		//		Alias: "",
-		//	},
-		//	GlassdoorProfile: domain.GlassdoorProfile{
-		//		OverviewURL: "",
-		//	},
-		//	IndeedProfile: domain.IndeedProfile{
-		//		Alias: "",
-		//	},
-		//	Languages: domain.Languages{
-		//		domain.Go: {
-		//			GitHubRepositoriesCount: 0,
-		//			Vacancies:               []domain.Vacancy{},
-		//		},
-		//		domain.Rust: {
-		//			GitHubRepositoriesCount: 0,
-		//			Vacancies:               []domain.Vacancy{},
-		//		},
-		//		domain.Zig: {
-		//			GitHubRepositoriesCount: 0,
-		//			Vacancies:               []domain.Vacancy{},
-		//		},
-		//		domain.Scala: {
-		//			GitHubRepositoriesCount: 0,
-		//			Vacancies:               []domain.Vacancy{},
-		//		},
-		//		domain.Elixir: {
-		//			GitHubRepositoriesCount: 0,
-		//			Vacancies:               []domain.Vacancy{},
-		//		},
-		//		domain.Clojure: {
-		//			GitHubRepositoriesCount: 0,
-		//			Vacancies:               []domain.Vacancy{},
-		//		},
-		//		domain.Haskell: {
-		//			GitHubRepositoriesCount: 0,
-		//			Vacancies:               []domain.Vacancy{},
-		//		},
-		//		domain.Erlang: {
-		//			GitHubRepositoriesCount: 0,
-		//			Vacancies:               []domain.Vacancy{},
-		//		},
-		//	},
-		//	ShortDescription: "",
-		//	Industries:       []domain.Industry{
-		//		// NOP
-		//	},
-		//},
 	}
 }

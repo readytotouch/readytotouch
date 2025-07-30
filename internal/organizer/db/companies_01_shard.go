@@ -5208,6 +5208,16 @@ func companies01Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $85k/yr - $150k/yr
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Engineer – Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4277433527/",
+							Location:             "Phoenix, AZ",
+							Date:                 mustDate("2025-07-30"),
+							WithSalary:           true, // $110k/yr - $190k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {},
@@ -5355,6 +5365,16 @@ func companies01Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4254378644/",
 							Location:             "London, England, United Kingdom",
 							Date:                 mustDate("2025-07-18", "2025-06-26"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Lead Golang Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4272103626/",
+							Location:             "London, England, United Kingdom",
+							Date:                 mustDate("2025-07-30"),
 							WithSalary:           false,
 							Remote:               false,
 						},

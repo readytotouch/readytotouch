@@ -2050,5 +2050,53 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Codurance",
+			Website: "https://www.codurance.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                5389169,
+				IDs:               nil,
+				Alias:             "codurance",
+				Name:              "Codurance",
+				Followers:         "23K",
+				Employees:         "201-500",
+				AssociatedMembers: "164",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Appzlogic",
+			Website: "https://www.appzlogic.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                10267542,
+				IDs:               nil,
+				Alias:             "appzlogic",
+				Name:              "Appzlogic",
+				Followers:         "56K",
+				Employees:         "201-500",
+				AssociatedMembers: "226",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Concentrix",
+			Website: "https://www.concentrix.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                23213,
+				IDs:               []int{15667, 23213, 103722362, 105865169, 105878214},
+				Alias:             "concentrix",
+				Name:              "Concentrix",
+				Followers:         "3M",
+				Employees:         "10K+",
+				AssociatedMembers: "173,585",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }
