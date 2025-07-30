@@ -361,8 +361,8 @@
   },
   {
     "alias": "armadaai",
-    "source": "",
-    "destination": ""
+    "source": "armadaai-200x200.jpeg",
+    "destination": "armadaai.jpeg"
   },
   {
     "alias": "artificiallabs",
@@ -696,8 +696,8 @@
   },
   {
     "alias": "buenro",
-    "source": "",
-    "destination": ""
+    "source": "buenro-200x200.jpeg",
+    "destination": "buenro.jpeg"
   },
   {
     "alias": "bufbuild",
@@ -1206,8 +1206,8 @@
   },
   {
     "alias": "datadog",
-    "source": "",
-    "destination": ""
+    "source": "datadog-180x180.jpeg",
+    "destination": "datadog.jpeg"
   },
   {
     "alias": "dataoncorp",
@@ -2511,8 +2511,8 @@
   },
   {
     "alias": "komerceid",
-    "source": "",
-    "destination": ""
+    "source": "komerceid-200x200.jpeg",
+    "destination": "komerceid.jpeg"
   },
   {
     "alias": "konghq",
@@ -2791,8 +2791,8 @@
   },
   {
     "alias": "mayflower-tech",
-    "source": "",
-    "destination": ""
+    "source": "mayflower-tech-180x180.png",
+    "destination": "mayflower-tech.png"
   },
   {
     "alias": "mcafee",
@@ -3416,8 +3416,8 @@
   },
   {
     "alias": "palo-alto-networks",
-    "source": "",
-    "destination": ""
+    "source": "palo-alto-networks-180x180.webp",
+    "destination": "palo-alto-networks.png"
   },
   {
     "alias": "paltafamily",
@@ -4321,8 +4321,8 @@
   },
   {
     "alias": "spice-ai",
-    "source": "",
-    "destination": ""
+    "source": "spice-ai-200x200.jpeg",
+    "destination": "spice-ai.jpeg"
   },
   {
     "alias": "splash-damage",
@@ -4491,8 +4491,8 @@
   },
   {
     "alias": "sumup",
-    "source": "",
-    "destination": ""
+    "source": "sumup-200x200.jpeg",
+    "destination": "sumup.jpeg"
   },
   {
     "alias": "sunasterisk",
@@ -5106,8 +5106,8 @@
   },
   {
     "alias": "vidsy",
-    "source": "",
-    "destination": ""
+    "source": "vidsy-256x256.png",
+    "destination": "vidsy.png"
   },
   {
     "alias": "vinted",
@@ -5356,8 +5356,8 @@
   },
   {
     "alias": "xai",
-    "source": "",
-    "destination": ""
+    "source": "xai-200x200.jpeg",
+    "destination": "xai.jpeg"
   },
   {
     "alias": "xataio",
