@@ -1646,6 +1646,16 @@ func companies19Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Elixir Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4272135150/",
+							Location:             "Warsaw, Mazowieckie, Poland",
+							Date:                 mustDate("2025-07-30"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Clojure: {
