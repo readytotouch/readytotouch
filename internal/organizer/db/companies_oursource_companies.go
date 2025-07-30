@@ -2034,5 +2034,21 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Creospan Inc.",
+			Website: "https://creospan.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                503768,
+				IDs:               nil,
+				Alias:             "creospan",
+				Name:              "Creospan Inc.",
+				Followers:         "119K",
+				Employees:         "201-500",
+				AssociatedMembers: "186",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }
