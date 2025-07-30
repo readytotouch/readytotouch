@@ -5341,6 +5341,90 @@ func companies19Shard() []domain.CompanyProfile {
 				// NOP
 			},
 		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Klarna",
+			Website: "https://www.klarna.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                748731,
+				IDs:               nil,
+				Alias:             "klarna",
+				Name:              "Klarna",
+				Followers:         "370K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "4,718",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Erlang Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4257029469/",
+							Location:             "Warsaw, Mazowieckie, Poland",
+							Date:                 mustDate("2025-07-24"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+			},
+			ShortDescription: "Company that provides online financial services",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
+		},
 
 		// Template
 		//{
@@ -5402,6 +5486,10 @@ func companies19Shard() []domain.CompanyProfile {
 		//			Vacancies:               []domain.Vacancy{},
 		//		},
 		//		domain.Haskell: {
+		//			GitHubRepositoriesCount: 0,
+		//			Vacancies:               []domain.Vacancy{},
+		//		},
+		//		domain.Erlang: {
 		//			GitHubRepositoriesCount: 0,
 		//			Vacancies:               []domain.Vacancy{},
 		//		},
