@@ -4992,9 +4992,23 @@ func companies10Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			Languages: domain.Languages{
-				domain.Go:   {},
-				domain.Rust: {},
-				domain.Zig:  {},
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "(Junior) Rust Backend Engineer",
+							ShortDescription:     "Fleet Optimization",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4277849491/",
+							Location:             "Berlin, Germany",
+							Date:                 mustDate("2025-07-30"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig: {},
 				domain.Scala: {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
@@ -5275,6 +5289,16 @@ func companies10Shard() []domain.CompanyProfile {
 							Location:             "United States",
 							Date:                 mustDate("2025-07-25"),
 							WithSalary:           true, // $142k/yr - $165k/yr
+							Remote:               true,
+						},
+						{
+							Title:                "Staff Software Engineer – Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4264162670/",
+							Location:             "United States",
+							Date:                 mustDate("2025-07-30"),
+							WithSalary:           true, // $200k/yr - $270k/yr
 							Remote:               true,
 						},
 					},
