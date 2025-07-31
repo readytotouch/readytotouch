@@ -1524,7 +1524,8 @@ func companies19Shard() []domain.CompanyProfile {
 				ReviewsRate: "3.2",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "parallel-wireless",
+				Employees: "750",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Parallel-Wireless-EI_IE1369255.11,28.htm",
@@ -2656,7 +2657,7 @@ func companies19Shard() []domain.CompanyProfile {
 				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Smartbear",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -4289,24 +4290,33 @@ func companies19Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "immutable",
+				Followers: "205",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "immutable",
+				Employees: "150",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Immutable-EI_IE3253189.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Immutable-Reviews-E3253189.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Immutable-Jobs-E3253189.htm",
+				Jobs:        "15",
+				Reviews:     "168",
+				Salaries:    "246",
+				ReviewsRate: "4.2",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 5,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer (Golang, TypeScript)",
@@ -5380,7 +5390,8 @@ func companies19Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "klarna",
+				Employees: "4,000",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",

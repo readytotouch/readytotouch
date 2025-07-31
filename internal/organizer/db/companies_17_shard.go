@@ -386,7 +386,7 @@ func companies17Shard() []domain.CompanyProfile {
 				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Epic-Games",
 			},
 			Languages: domain.Languages{
 				domain.Go: {},

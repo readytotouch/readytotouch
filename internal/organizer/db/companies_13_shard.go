@@ -1911,7 +1911,8 @@ func companies13Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "armadaai",
+				Employees: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",

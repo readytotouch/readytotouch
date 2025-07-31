@@ -1505,8 +1505,9 @@ func companies10Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "Triggerise",
-				Verified: true,
+				Login:     "Triggerise",
+				Followers: "12",
+				Verified:  true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Tiko-EI_IE1300210.11,15.htm",
@@ -2313,7 +2314,7 @@ func companies10Shard() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Qad",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -2953,8 +2954,9 @@ func companies10Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "qustodio",
-				Verified: false,
+				Login:     "qustodio",
+				Followers: "15",
+				Verified:  false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Qustodio-EI_IE1604075.11,19.htm",
@@ -3126,7 +3128,7 @@ func companies10Shard() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Vinted",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -5001,8 +5003,9 @@ func companies10Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "moia-dev",
-				Verified: false,
+				Login:     "moia-dev",
+				Followers: "99",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -5279,7 +5282,7 @@ func companies10Shard() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Flock-Safety",
 			},
 			Languages: domain.Languages{
 				domain.Go: {},

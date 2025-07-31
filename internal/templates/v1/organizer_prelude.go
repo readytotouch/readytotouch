@@ -205,7 +205,7 @@ func googleSearchBlind(companyName string) string {
 
 func googleSearchLevelsFyi(companyName string) string {
 	values := url.Values{
-		"q": {"site:levels.fyi" + " " + companyName},
+		"q": {"site:levels.fyi/companies" + " " + companyName},
 	}
 
 	return "https://www.google.com/search?" + values.Encode()

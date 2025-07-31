@@ -117,7 +117,14 @@ func companies20Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Komerce-EI_IE6591742.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Komerce-Reviews-E6591742.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Komerce-Jobs-E6591742.htm",
+				Jobs:        "",
+				Reviews:     "7",
+				Salaries:    "20",
+				ReviewsRate: "3.6",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -201,7 +208,14 @@ func companies20Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Mayflower-EI_IE8288295.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Mayflower-Reviews-E8288295.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Mayflower-Jobs-E8288295.htm",
+				Jobs:        "",
+				Reviews:     "3",
+				Salaries:    "9",
+				ReviewsRate: "3.8",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
