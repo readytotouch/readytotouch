@@ -16,6 +16,8 @@ document.body.addEventListener("keydown", (event) => {
             .replace("Sr.", "Senior")
             .replace("GoLang", "Golang")
             .replace("Goland", "Golang")
+            .replace("Go / Golang", "Golang")
+            .replace("Go/Golang", "Golang")
             .replace("Back End", "Back-End")
         ;
 

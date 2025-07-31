@@ -1377,7 +1377,8 @@ func companies19Shard() []domain.CompanyProfile {
 							ShortDescription:     "Aivo",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4243309060/",
-							Date:                 mustDate("2025-07-07"),
+							Location:             "Argentina",
+							Date:                 mustDate("2025-07-30", "2025-07-07"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -1523,7 +1524,8 @@ func companies19Shard() []domain.CompanyProfile {
 				ReviewsRate: "3.2",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "parallel-wireless",
+				Employees: "750",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Parallel-Wireless-EI_IE1369255.11,28.htm",
@@ -1547,7 +1549,8 @@ func companies19Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4262117247/",
-							Date:                 mustDate("2025-07-07"),
+							Location:             "Kfar Saba, Center District, Israel",
+							Date:                 mustDate("2025-07-30", "2025-07-07"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -1643,6 +1646,16 @@ func companies19Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4260363542/",
 							Date:                 mustDate("2025-07-08"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+						{
+							Title:                "Senior Elixir Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4272135150/",
+							Location:             "Warsaw, Mazowieckie, Poland",
+							Date:                 mustDate("2025-07-30"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -2644,7 +2657,7 @@ func companies19Shard() []domain.CompanyProfile {
 				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Smartbear",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -2655,7 +2668,8 @@ func companies19Shard() []domain.CompanyProfile {
 							ShortDescription:     "BitBar",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4263312446/",
-							Date:                 mustDate("2025-07-09"),
+							Location:             "Wrocław, Dolnośląskie, Poland",
+							Date:                 mustDate("2025-07-30", "2025-07-09"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -4276,24 +4290,33 @@ func companies19Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "immutable",
+				Followers: "205",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "immutable",
+				Employees: "150",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Immutable-EI_IE3253189.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Immutable-Reviews-E3253189.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Immutable-Jobs-E3253189.htm",
+				Jobs:        "15",
+				Reviews:     "168",
+				Salaries:    "246",
+				ReviewsRate: "4.2",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 5,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer (Golang, TypeScript)",
@@ -4301,7 +4324,7 @@ func companies19Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4267047562/",
 							Location:             "Sydney, New South Wales, Australia",
-							Date:                 mustDate("2025-07-16"),
+							Date:                 mustDate("2025-07-31", "2025-07-16"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -5341,75 +5364,174 @@ func companies19Shard() []domain.CompanyProfile {
 				// NOP
 			},
 		},
-
-		// Template
-		//{
-		//	ID:      0,  // system
-		//	Type:    "", // system
-		//	Name:    "",
-		//	Website: "",
-		//	Careers: "",
-		//	About:   "",
-		//	Blog:    "",
-		//	LinkedInProfile: domain.LinkedInProfile{
-		//		ID:                0,
-		//		Alias:             "",
-		//		Name:              "",
-		//		Followers:         "",
-		//		Employees:         "",
-		//		AssociatedMembers: "",
-		//		Verified:          false,
-		//	},
-		//	GitHubProfile: domain.GitHubProfile{
-		//		Login:    "",
-		//		Verified: false,
-		//	},
-		//	BlindProfile: domain.BlindProfile{
-		//		Alias: "",
-		//	},
-		//	LevelsFyiProfile: domain.LevelsFyiProfile{
-		//		Alias: "",
-		//	},
-		//	GlassdoorProfile: domain.GlassdoorProfile{
-		//		OverviewURL: "",
-		//	},
-		//	IndeedProfile: domain.IndeedProfile{
-		//		Alias: "",
-		//	},
-		//	Languages: domain.Languages{
-		//		domain.Go: {
-		//			GitHubRepositoriesCount: 0,
-		//			Vacancies:               []domain.Vacancy{},
-		//		},
-		//		domain.Rust: {
-		//			GitHubRepositoriesCount: 0,
-		//			Vacancies:               []domain.Vacancy{},
-		//		},
-		//		domain.Zig: {
-		//			GitHubRepositoriesCount: 0,
-		//			Vacancies:               []domain.Vacancy{},
-		//		},
-		//		domain.Scala: {
-		//			GitHubRepositoriesCount: 0,
-		//			Vacancies:               []domain.Vacancy{},
-		//		},
-		//		domain.Elixir: {
-		//			GitHubRepositoriesCount: 0,
-		//			Vacancies:               []domain.Vacancy{},
-		//		},
-		//		domain.Clojure: {
-		//			GitHubRepositoriesCount: 0,
-		//			Vacancies:               []domain.Vacancy{},
-		//		},
-		//		domain.Haskell: {
-		//			GitHubRepositoriesCount: 0,
-		//			Vacancies:               []domain.Vacancy{},
-		//		},
-		//	},
-		//	ShortDescription: "",
-		//	Industries:       []domain.Industry{
-		//		// NOP
-		//	},
-		//},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Klarna",
+			Website: "https://www.klarna.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                748731,
+				IDs:               nil,
+				Alias:             "klarna",
+				Name:              "Klarna",
+				Followers:         "370K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "4,718",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "klarna",
+				Employees: "4,000",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Erlang Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4257029469/",
+							Location:             "Warsaw, Mazowieckie, Poland",
+							Date:                 mustDate("2025-07-24"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+			},
+			ShortDescription: "Company that provides online financial services",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "xAI",
+			Website: "https://x.ai/",
+			Careers: "https://x.ai/careers",
+			About:   "https://x.ai/company",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                96151950,
+				IDs:               nil,
+				Alias:             "xai",
+				Name:              "xAI",
+				Followers:         "84K",
+				Employees:         "11-50",
+				AssociatedMembers: "3,179",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Rust/C++ Backend Engineer",
+							ShortDescription:     "Enterprise Agent",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4278324635/",
+							Location:             "London, England, United Kingdom",
+							Date:                 mustDate("2025-07-30"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Company working on building artificial intelligence",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
 	}
 }

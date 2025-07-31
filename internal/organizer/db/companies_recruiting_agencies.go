@@ -1339,5 +1339,20 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Recruiting agency
 		},
+		{
+			Name:    "Harnham",
+			Website: "https://www.harnham.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                280603,
+				IDs:               nil,
+				Alias:             "harnham",
+				Name:              "Harnham",
+				Followers:         "957K",
+				Employees:         "201-500",
+				AssociatedMembers: "179",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
 	}
 }

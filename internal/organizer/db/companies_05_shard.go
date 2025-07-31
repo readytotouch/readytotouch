@@ -542,6 +542,16 @@ func companies05Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $78.4k/yr - $123.4k/yr
 							Remote:               false,
 						},
+						{
+							Title:                "Software Engineer III",
+							ShortDescription:     "Experience with Angular and/or jQuery, Go, SQL",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4277468693/",
+							Location:             "United States",
+							Date:                 mustDate("2025-07-30"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust:    {},

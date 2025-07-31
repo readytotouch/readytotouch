@@ -386,7 +386,7 @@ func companies17Shard() []domain.CompanyProfile {
 				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Epic-Games",
 			},
 			Languages: domain.Languages{
 				domain.Go: {},
@@ -408,7 +408,8 @@ func companies17Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4169030739/",
-							Date:                 mustDate("2025-07-07", "2025-06-17", "2025-05-26", "2025-05-05"),
+							Location:             "Cary, NC",
+							Date:                 mustDate("2025-07-30", "2025-07-07", "2025-06-17", "2025-05-26", "2025-05-05"),
 							WithSalary:           false,
 							Remote:               false,
 						},

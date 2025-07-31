@@ -1596,8 +1596,9 @@ func companies11Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "bloomreach",
-				Verified: false,
+				Login:     "bloomreach",
+				Followers: "47",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -1607,10 +1608,17 @@ func companies11Shard() []domain.CompanyProfile {
 				Employees: "850",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Bloomreach-EI_IE442167.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Bloomreach-Reviews-E442167.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Bloomreach-Jobs-E442167.htm",
+				Jobs:        "",
+				Reviews:     "467",
+				Salaries:    "713",
+				ReviewsRate: "4.5",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Bloomreach",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -1631,6 +1639,16 @@ func companies11Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4262149933/",
 							Date:                 mustDate("2025-07-07"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+						{
+							Title:                "Senior Software Engineer – Python, Go",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4171320737/",
+							Location:             "Czechia",
+							Date:                 mustDate("2025-07-30"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -3036,7 +3054,7 @@ func companies11Shard() []domain.CompanyProfile {
 				ReviewsRate: "4.1",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias: "Commercetools",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-commercetools-EI_IE1304424.11,24.htm",
@@ -3129,6 +3147,16 @@ func companies11Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4174162858/",
 							Location:             "Valencia, Valencian Community, Spain",
 							Date:                 mustDate("2025-07-24"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+						{
+							Title:                "Scala Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4263975120/",
+							Location:             "Cracow, Małopolskie, Poland",
+							Date:                 mustDate("2025-07-30"),
 							WithSalary:           false,
 							Remote:               true,
 						},

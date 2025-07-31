@@ -22,8 +22,9 @@ func companies15Shard() []domain.CompanyProfile {
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "vidsy",
-				Verified: false,
+				Login:     "vidsy",
+				Followers: "",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -81,6 +82,16 @@ func companies15Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4259604374/",
 							Date:                 mustDate("2025-07-01"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Go Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4268582045/",
+							Location:             "England, United Kingdom",
+							Date:                 mustDate("2025-07-30"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2167,7 +2178,8 @@ func companies15Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "criteo",
+				Employees: "3,500",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Criteo-EI_IE426672.11,17.htm",
@@ -2180,7 +2192,7 @@ func companies15Shard() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Criteo",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -2219,6 +2231,16 @@ func companies15Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4253644830/",
 							Date:                 mustDate("2025-06-21"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Junior Back-End Developer – Lua/Go",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4278085466/",
+							Location:             "Limassol Municipality, Limassol, Cyprus",
+							Date:                 mustDate("2025-07-30"),
 							WithSalary:           false,
 							Remote:               false,
 						},

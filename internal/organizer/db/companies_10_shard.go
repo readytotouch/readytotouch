@@ -1505,8 +1505,9 @@ func companies10Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "Triggerise",
-				Verified: true,
+				Login:     "Triggerise",
+				Followers: "12",
+				Verified:  true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Tiko-EI_IE1300210.11,15.htm",
@@ -1542,7 +1543,8 @@ func companies10Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4262232116/",
-							Date:                 mustDate("2025-07-04"),
+							Location:             "City of Cape Town, Western Cape, South Africa",
+							Date:                 mustDate("2025-07-30", "2025-07-04"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -2312,7 +2314,7 @@ func companies10Shard() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Qad",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -2371,6 +2373,16 @@ func companies10Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4244210259/",
 							Location:             "Munich, Bavaria, Germany",
 							Date:                 mustDate("2025-07-16"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+						{
+							Title:                "Senior Golang Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4278340946/",
+							Location:             "Barcelona, Catalonia, Spain",
+							Date:                 mustDate("2025-07-30"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -2942,8 +2954,9 @@ func companies10Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "qustodio",
-				Verified: false,
+				Login:     "qustodio",
+				Followers: "15",
+				Verified:  false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Qustodio-EI_IE1604075.11,19.htm",
@@ -2986,6 +2999,16 @@ func companies10Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4244542838/",
 							Date:                 mustDate("2025-06-05"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Software Engineer – Backend (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4278073390/",
+							Location:             "Colombo, Western Province, Sri Lanka",
+							Date:                 mustDate("2025-07-30"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3105,7 +3128,7 @@ func companies10Shard() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Vinted",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -3143,7 +3166,8 @@ func companies10Shard() []domain.CompanyProfile {
 							ShortDescription:     "Purchase",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4264185699/",
-							Date:                 mustDate("2025-07-09"),
+							Location:             "Vilnius, Vilniaus, Lithuania",
+							Date:                 mustDate("2025-07-30", "2025-07-09"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3154,6 +3178,16 @@ func companies10Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4247437517/",
 							Location:             "Vilnius, Vilniaus, Lithuania",
 							Date:                 mustDate("2025-07-23"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Backend Engineer (Go)",
+							ShortDescription:     "Purchase",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4264184735/",
+							Location:             "Kaunas, Kaunas, Lithuania",
+							Date:                 mustDate("2025-07-30"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3582,7 +3616,8 @@ func companies10Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4238784810/",
-							Date:                 mustDate("2025-07-10", "2025-06-18", "2025-05-28"),
+							Location:             "Ottawa, ON",
+							Date:                 mustDate("2025-07-29", "2025-07-10", "2025-06-18", "2025-05-28"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3761,7 +3796,8 @@ func companies10Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4264143306/",
-							Date:                 mustDate("2025-07-09"),
+							Location:             "Brno, South Moravia, Czechia",
+							Date:                 mustDate("2025-07-30", "2025-07-09"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -4967,8 +5003,9 @@ func companies10Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "moia-dev",
-				Verified: false,
+				Login:     "moia-dev",
+				Followers: "99",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -4990,9 +5027,23 @@ func companies10Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			Languages: domain.Languages{
-				domain.Go:   {},
-				domain.Rust: {},
-				domain.Zig:  {},
+				domain.Go: {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "(Junior) Rust Backend Engineer",
+							ShortDescription:     "Fleet Optimization",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4277849491/",
+							Location:             "Berlin, Germany",
+							Date:                 mustDate("2025-07-30"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig: {},
 				domain.Scala: {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
@@ -5231,7 +5282,7 @@ func companies10Shard() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Flock-Safety",
 			},
 			Languages: domain.Languages{
 				domain.Go: {},
@@ -5273,6 +5324,16 @@ func companies10Shard() []domain.CompanyProfile {
 							Location:             "United States",
 							Date:                 mustDate("2025-07-25"),
 							WithSalary:           true, // $142k/yr - $165k/yr
+							Remote:               true,
+						},
+						{
+							Title:                "Staff Software Engineer – Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4264162670/",
+							Location:             "United States",
+							Date:                 mustDate("2025-07-30"),
+							WithSalary:           true, // $200k/yr - $270k/yr
 							Remote:               true,
 						},
 					},
