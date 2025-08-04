@@ -16,8 +16,8 @@
   },
   {
     "alias": "1touch-io",
-    "source": "",
-    "destination": ""
+    "source": "1touch-io-200x200.jpeg",
+    "destination": "1touch-io.jpeg"
   },
   {
     "alias": "3085253",
@@ -551,8 +551,8 @@
   },
   {
     "alias": "bellroy",
-    "source": "",
-    "destination": ""
+    "source": "bellroy-180x180.png",
+    "destination": "bellroy.png"
   },
   {
     "alias": "bestowtech",
@@ -1231,8 +1231,8 @@
   },
   {
     "alias": "ddn",
-    "source": "",
-    "destination": ""
+    "source": "ddn-200x200.jpeg",
+    "destination": "ddn.jpeg"
   },
   {
     "alias": "dealer-tire",
@@ -1251,8 +1251,8 @@
   },
   {
     "alias": "deloitte",
-    "source": "",
-    "destination": ""
+    "source": "deloitte-200x200.jpeg",
+    "destination": "deloitte.jpeg"
   },
   {
     "alias": "demandbase",
@@ -1396,8 +1396,8 @@
   },
   {
     "alias": "drivenets",
-    "source": "",
-    "destination": ""
+    "source": "drivenets-200x200.jpeg",
+    "destination": "drivenets.jpeg"
   },
   {
     "alias": "dronesense",
@@ -1791,8 +1791,8 @@
   },
   {
     "alias": "flyrinc",
-    "source": "",
-    "destination": ""
+    "source": "flyr-200x200.jpeg",
+    "destination": "flyrinc.jpeg"
   },
   {
     "alias": "flyzipline",
@@ -2211,8 +2211,8 @@
   },
   {
     "alias": "here",
-    "source": "",
-    "destination": ""
+    "source": "here-192x192.png",
+    "destination": "here.png"
   },
   {
     "alias": "hewlett-packard-enterprise",
@@ -3126,8 +3126,8 @@
   },
   {
     "alias": "new-relic-inc-",
-    "source": "",
-    "destination": ""
+    "source": "newrelic-180x180.png",
+    "destination": "new-relic-inc-.png"
   },
   {
     "alias": "new-work-se",
@@ -3981,8 +3981,8 @@
   },
   {
     "alias": "rockwell-automation",
-    "source": "",
-    "destination": ""
+    "source": "rockwell-automation-180x180.png",
+    "destination": "rockwell-automation.png"
   },
   {
     "alias": "rollee",
@@ -4306,8 +4306,8 @@
   },
   {
     "alias": "solarwinds",
-    "source": "",
-    "destination": ""
+    "source": "solarwinds-200x200.jpeg",
+    "destination": "solarwinds.jpeg"
   },
   {
     "alias": "solo.io",
@@ -4866,8 +4866,8 @@
   },
   {
     "alias": "tontinetrust",
-    "source": "",
-    "destination": ""
+    "source": "tontinetrust-128x128.png",
+    "destination": "tontinetrust.png"
   },
   {
     "alias": "top-doctors-europe",
@@ -5106,8 +5106,8 @@
   },
   {
     "alias": "verkada",
-    "source": "",
-    "destination": ""
+    "source": "verkada-200x200.jpeg",
+    "destination": "verkada.jpeg"
   },
   {
     "alias": "versus-gaming-network",
@@ -5296,8 +5296,8 @@
   },
   {
     "alias": "wellrewarded",
-    "source": "",
-    "destination": ""
+    "source": "wellrewarded-200x200.jpeg",
+    "destination": "wellrewarded.jpeg"
   },
   {
     "alias": "wexinc",

@@ -2909,7 +2909,8 @@ func companies14Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "tubi",
+				Employees: "420",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Tubi-EI_IE1264931.11,15.htm",

@@ -2430,10 +2430,15 @@ func companies16Shard() []domain.CompanyProfile {
 				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Rockwell-Automation",
+				Employees:   "10,000+",
+				Salary:      "$56K ~ $160K a year",
+				Reviews:     "50",
+				ReviewsRate: "3.4",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "rockwell-automation",
+				Employees: "22,270",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Rockwell-Automation-EI_IE567.11,30.htm",
@@ -2446,7 +2451,7 @@ func companies16Shard() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Rockwell-Automation",
 			},
 			Languages: domain.Languages{
 				domain.Go: {},

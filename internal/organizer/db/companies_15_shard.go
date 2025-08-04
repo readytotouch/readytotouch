@@ -1752,7 +1752,11 @@ func companies15Shard() []domain.CompanyProfile {
 				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Verkada",
+				Employees:   "501 to 1,000",
+				Salary:      "$65K ~ $250K a year",
+				Reviews:     "192",
+				ReviewsRate: "3.7",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "verkada",
@@ -1769,7 +1773,7 @@ func companies15Shard() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Verkada",
 			},
 			Languages: domain.Languages{
 				domain.Go: {

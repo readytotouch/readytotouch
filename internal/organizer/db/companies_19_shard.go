@@ -3260,7 +3260,8 @@ func companies19Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "oxio",
+				Employees: "126",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-OXIO-EI_IE2395820.11,15.htm",
@@ -3340,8 +3341,9 @@ func companies19Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "bellroy",
+				Followers: "32",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -3388,7 +3390,7 @@ func companies19Shard() []domain.CompanyProfile {
 					Vacancies:               []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 24,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Haskell Developer",
@@ -5052,7 +5054,8 @@ func companies19Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "bitwarden",
+				Employees: "126",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Bitwarden-EI_IE4337610.11,20.htm",

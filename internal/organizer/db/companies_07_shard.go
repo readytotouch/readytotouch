@@ -5696,8 +5696,9 @@ func companies07Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "flyrinc",
+				Followers: "72",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "FLYR",
@@ -5707,8 +5708,8 @@ func companies07Shard() []domain.CompanyProfile {
 				ReviewsRate: "3.6",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias:     "",
-				Employees: "",
+				Alias:     "flyr-labs",
+				Employees: "150",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-FLYR-EI_IE1500905.11,15.htm",
@@ -5728,7 +5729,7 @@ func companies07Shard() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 2,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Staff Golang Engineer",

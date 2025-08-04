@@ -615,7 +615,8 @@ func companies11Shard() []domain.CompanyProfile {
 				ReviewsRate: "3.8",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "arm",
+				Alias:     "arm",
+				Employees: "6,500",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Arm-EI_IE7834.11,14.htm",
@@ -949,7 +950,14 @@ func companies11Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Garena-EI_IE532331.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Garena-Reviews-E532331.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Garena-Jobs-E532331.htm",
+				Jobs:        "80",
+				Reviews:     "887",
+				Salaries:    "1.1K",
+				ReviewsRate: "4.2",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",

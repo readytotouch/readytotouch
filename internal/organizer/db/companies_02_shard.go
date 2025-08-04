@@ -2976,6 +2976,10 @@ func companies02Shard() []domain.CompanyProfile {
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
 			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "utility-warehouse",
+				Employees: "3,500",
+			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Utility-Warehouse-EI_IE512935.11,28.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Utility-Warehouse-Reviews-E512935.htm",

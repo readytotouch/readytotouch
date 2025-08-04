@@ -380,10 +380,18 @@ func companies20Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "wooga",
+				Employees: "420",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Wooga-EI_IE421202.11,16.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Wooga-Reviews-E421202.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Wooga-Jobs-E421202.htm",
+				Jobs:        "7",
+				Reviews:     "229",
+				Salaries:    "366",
+				ReviewsRate: "3.9",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -635,7 +643,14 @@ func companies20Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-JustPark-EI_IE954923.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/JustPark-Reviews-E954923.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/JustPark-Jobs-E954923.htm",
+				Jobs:        "3",
+				Reviews:     "89",
+				Salaries:    "123",
+				ReviewsRate: "4.4",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -713,16 +728,28 @@ func companies20Shard() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Deloitte",
+				Employees:   "10,000+",
+				Salary:      "$45K ~ $261K a year",
+				Reviews:     "1,674",
+				ReviewsRate: "3.6",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "deloitte",
+				Employees: "335,000",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Deloitte-EI_IE2763.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Deloitte-Reviews-E2763.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Deloitte-Jobs-E2763.htm",
+				Jobs:        "23K",
+				Reviews:     "139K",
+				Salaries:    "391K",
+				ReviewsRate: "3.8",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Deloitte",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -887,7 +914,14 @@ func companies20Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-italki-EI_IE348674.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/italki-Reviews-E348674.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/italki-Jobs-E348674.htm",
+				Jobs:        "2",
+				Reviews:     "635",
+				Salaries:    "427",
+				ReviewsRate: "4.4",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",

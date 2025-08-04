@@ -4838,7 +4838,7 @@ func companies18Shard() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Solarwinds",
 			},
 			Languages: domain.Languages{
 				domain.Go: {

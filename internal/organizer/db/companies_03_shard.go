@@ -736,8 +736,9 @@ func companies03Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "apifonica",
-				Verified: false,
+				Login:     "apifonica",
+				Followers: "1",
+				Verified:  false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Apifonica-EI_IE1805118.11,20.htm",
@@ -757,7 +758,7 @@ func companies03Shard() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 4,
+					GitHubRepositoriesCount: 5,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Lead Golang Developer",
@@ -2899,8 +2900,9 @@ func companies03Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "rapid7",
-				Verified: true,
+				Login:     "rapid7",
+				Followers: "2.5k",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Rapid8",

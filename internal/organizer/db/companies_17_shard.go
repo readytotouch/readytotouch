@@ -2550,7 +2550,8 @@ func companies17Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "well",
+				Employees: "540",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Well-NC-EI_IE3142517.11,18.htm",
