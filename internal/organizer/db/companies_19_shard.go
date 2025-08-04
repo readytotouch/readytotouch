@@ -5085,6 +5085,16 @@ func companies19Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $140k/yr - $200k/yr
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Rust Software Engineer",
+							ShortDescription:     "Autofill",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4279522160/",
+							Location:             "Santa Barbara, CA",
+							Date:                 mustDate("2025-08-04"),
+							WithSalary:           true, // $140k/yr - $200k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig: {
