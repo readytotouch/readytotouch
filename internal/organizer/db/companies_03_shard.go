@@ -736,8 +736,9 @@ func companies03Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "apifonica",
-				Verified: false,
+				Login:     "apifonica",
+				Followers: "1",
+				Verified:  false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Apifonica-EI_IE1805118.11,20.htm",
@@ -757,7 +758,7 @@ func companies03Shard() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 4,
+					GitHubRepositoriesCount: 5,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Lead Golang Developer",
@@ -837,6 +838,16 @@ func companies03Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4262447536/",
 							Date:                 mustDate("2025-07-04"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Lead Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4279576339/",
+							Location:             "Riga, Latvia",
+							Date:                 mustDate("2025-08-04"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2889,8 +2900,9 @@ func companies03Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "rapid7",
-				Verified: true,
+				Login:     "rapid7",
+				Followers: "2.5k",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Rapid8",
@@ -2947,6 +2959,16 @@ func companies03Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4181500800/",
 							Date:                 mustDate("2025-04-27"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Software Engineer – Golang",
+							ShortDescription:     "Cloud Security",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4279259537/",
+							Location:             "Prague, Prague, Czechia",
+							Date:                 mustDate("2025-08-04"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -4443,9 +4465,23 @@ func companies03Shard() []domain.CompanyProfile {
 						},
 					},
 				},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
+				domain.Zig:   {},
+				domain.Scala: {},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Engineer – Elixir",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4274647631/",
+							Location:             "São Paulo, São Paulo, Brazil",
+							Date:                 mustDate("2025-08-02"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
@@ -4942,6 +4978,16 @@ func companies03Shard() []domain.CompanyProfile {
 							Location:             "Richmond, VA",
 							Date:                 mustDate("2025-07-28"),
 							WithSalary:           true, // $50/hr - $60/hr
+							Remote:               false,
+						},
+						{
+							Title:                "Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4279716195/",
+							Location:             "Plano, TX",
+							Date:                 mustDate("2025-08-04"),
+							WithSalary:           true, // $120k/yr - $130k/yr
 							Remote:               false,
 						},
 					},

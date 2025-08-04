@@ -314,6 +314,16 @@ func companies15Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Software Engineer Backend – Go (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4226202870/",
+							Location:             "Raanana, Center District, Israel",
+							Date:                 mustDate("2025-08-04"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -1742,7 +1752,11 @@ func companies15Shard() []domain.CompanyProfile {
 				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Verkada",
+				Employees:   "501 to 1,000",
+				Salary:      "$65K ~ $250K a year",
+				Reviews:     "192",
+				ReviewsRate: "3.7",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "verkada",
@@ -1759,7 +1773,7 @@ func companies15Shard() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Verkada",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -1780,7 +1794,7 @@ func companies15Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4227134333/",
 							Location:             "Krakowski, Małopolskie, Poland",
-							Date:                 mustDate("2025-07-13", "2025-06-22", "2025-05-10"),
+							Date:                 mustDate("2025-08-04"), // mustDate("2025-07-13", "2025-06-22", "2025-05-10"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2912,7 +2926,7 @@ func companies15Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4265322755/",
 							Location:             "Stockholm, Stockholm County, Sweden",
-							Date:                 mustDate("2025-07-12"),
+							Date:                 mustDate("2025-08-02", "2025-07-12"),
 							WithSalary:           false,
 							Remote:               false,
 						},

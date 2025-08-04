@@ -2590,11 +2590,11 @@ func companies09Shard() []domain.CompanyProfile {
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-NN-Group-EI_IE982653.11,19.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/NN-Group-Reviews-E982653.htm",
 				JobsURL:     "https://www.glassdoor.com/Jobs/NN-Group-Jobs-E982653.htm",
-				Jobs:        "388",
-				Reviews:     "378",
-				Salaries:    "772",
-				ReviewsRate: "4.2",
-				Verified:    true,
+				Jobs:        "288",
+				Reviews:     "392",
+				Salaries:    "818",
+				ReviewsRate: "4.3",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -4993,6 +4993,16 @@ func companies09Shard() []domain.CompanyProfile {
 							Location:             "Dedham, MA",
 							Date:                 mustDate("2025-07-15"),
 							WithSalary:           true, // $160.8k/yr - $170k/yr
+							Remote:               false,
+						},
+						{
+							Title:                "Rust Embedded Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4273373997/",
+							Location:             "Dedham, MA",
+							Date:                 mustDate("2025-08-01"),
+							WithSalary:           true, // $107.5k/yr - $115k/yr
 							Remote:               false,
 						},
 					},

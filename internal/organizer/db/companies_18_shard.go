@@ -943,6 +943,16 @@ func companies18Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Software Engineer – Golang",
+							ShortDescription:     "Email Team",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4278688430/",
+							Location:             "Istanbul, Istanbul, Türkiye",
+							Date:                 mustDate("2025-08-02"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust: {
@@ -4828,7 +4838,7 @@ func companies18Shard() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Solarwinds",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -4840,6 +4850,16 @@ func companies18Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4255188786/",
 							Date:                 mustDate("2025-07-03"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Software Engineer – Go Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4279380810/",
+							Location:             "Cracow, Małopolskie, Poland",
+							Date:                 mustDate("2025-08-04"),
 							WithSalary:           false,
 							Remote:               false,
 						},

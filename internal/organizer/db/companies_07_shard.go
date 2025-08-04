@@ -82,7 +82,7 @@ func companies07Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4254632356/",
 							Location:             "Tel Aviv-Yafo, Tel Aviv District, Israel",
-							Date:                 mustDate("2025-07-15"),
+							Date:                 mustDate("2025-08-04"), // mustDate("2025-07-15"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -1819,8 +1819,8 @@ func companies07Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4226339955/",
 							Location:             "Seattle, WA",
-							Date:                 mustDate("2025-07-14", "2025-06-22", "2025-05-09"),
-							WithSalary:           true, // $122k/yr - $153k/yr
+							Date:                 mustDate("2025-08-04"), // mustDate("2025-07-14", "2025-06-22", "2025-05-09"),
+							WithSalary:           true,                   // $122k/yr - $153k/yr
 							Remote:               false,
 						},
 					},
@@ -3968,7 +3968,7 @@ func companies07Shard() []domain.CompanyProfile {
 							ShortDescription:     "Portworx",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4263365263/",
-							Date:                 mustDate("2025-07-09"),
+							Date:                 mustDate("2025-08-01"), // mustDate("2025-07-09"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -4784,6 +4784,16 @@ func companies07Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Lead Software Engineer, Full Stack (Java, Go)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4227401483/",
+							Location:             "McLean, VA",
+							Date:                 mustDate("2025-08-04"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
@@ -5550,12 +5560,13 @@ func companies07Shard() []domain.CompanyProfile {
 							Remote:               true,
 						},
 						{
-							Title:                "Staff Full Stack Software Engineer (Golang)",
+							Title:                "Staff Golang Software Engineer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4261923552/", // "https://www.linkedin.com/jobs/view/4258129908/",
-							Date:                 mustDate("2025-07-10"),                           // mustDate("2025-07-03"),
-							WithSalary:           true,                                             // $134.5k/yr - $181.9k/yr
+							Location:             "Plano, TX",
+							Date:                 mustDate("2025-08-02", "2025-07-10", "2025-07-03"),
+							WithSalary:           true, // $134.5k/yr - $181.9k/yr
 							Remote:               false,
 						},
 					},
@@ -5685,8 +5696,9 @@ func companies07Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "flyrinc",
+				Followers: "72",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "FLYR",
@@ -5696,8 +5708,8 @@ func companies07Shard() []domain.CompanyProfile {
 				ReviewsRate: "3.6",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias:     "",
-				Employees: "",
+				Alias:     "flyr-labs",
+				Employees: "150",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-FLYR-EI_IE1500905.11,15.htm",
@@ -5717,7 +5729,7 @@ func companies07Shard() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 2,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Staff Golang Engineer",
@@ -5738,11 +5750,12 @@ func companies07Shard() []domain.CompanyProfile {
 							Remote:               false,
 						},
 						{
-							Title:                "Senior Java/Golang Engineer",
+							Title:                "Senior Golang Engineer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4190981879/",
-							Date:                 mustDate("2025-07-14", "2025-06-22", "2025-04-17"),
+							Location:             "Cracow, Małopolskie, Poland",
+							Date:                 mustDate("2025-08-04", "2025-07-14", "2025-06-22", "2025-04-17"),
 							WithSalary:           false,
 							Remote:               false,
 						},

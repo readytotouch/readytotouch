@@ -565,8 +565,8 @@ func companies19Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4250646664/",
 							Location:             "San Jose, CA",
-							Date:                 mustDate("2025-07-10", "2025-06-23"),
-							WithSalary:           true, // $150k/yr - $175k/yr
+							Date:                 mustDate("2025-08-02"), // mustDate("2025-07-10", "2025-06-23"),
+							WithSalary:           true,                   // $150k/yr - $175k/yr
 							Remote:               false,
 						},
 					},
@@ -3260,7 +3260,8 @@ func companies19Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "oxio",
+				Employees: "126",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-OXIO-EI_IE2395820.11,15.htm",
@@ -3285,7 +3286,7 @@ func companies19Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4262532716/",
 							Location:             "New York City Metropolitan Area",
-							Date:                 mustDate("2025-07-10"),
+							Date:                 mustDate("2025-08-02"), // mustDate("2025-07-10"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3340,8 +3341,9 @@ func companies19Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "bellroy",
+				Followers: "32",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -3388,7 +3390,7 @@ func companies19Shard() []domain.CompanyProfile {
 					Vacancies:               []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 24,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Haskell Developer",
@@ -3399,6 +3401,16 @@ func companies19Shard() []domain.CompanyProfile {
 							Date:                 mustDate("2025-07-12"),
 							WithSalary:           false,
 							Remote:               false,
+						},
+						{
+							Title:                "Haskell Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4278484490/",
+							Location:             "Australia and New Zealand",
+							Date:                 mustDate("2025-08-04"),
+							WithSalary:           false,
+							Remote:               true,
 						},
 					},
 				},
@@ -5042,7 +5054,8 @@ func companies19Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "bitwarden",
+				Employees: "126",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Bitwarden-EI_IE4337610.11,20.htm",
@@ -5074,6 +5087,16 @@ func companies19Shard() []domain.CompanyProfile {
 							Date:                 mustDate("2025-07-23"),
 							WithSalary:           true, // $140k/yr - $200k/yr
 							Remote:               true,
+						},
+						{
+							Title:                "Senior Rust Software Engineer",
+							ShortDescription:     "Autofill",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4279522160/",
+							Location:             "Santa Barbara, CA",
+							Date:                 mustDate("2025-08-04"),
+							WithSalary:           true, // $140k/yr - $200k/yr
+							Remote:               false,
 						},
 					},
 				},
