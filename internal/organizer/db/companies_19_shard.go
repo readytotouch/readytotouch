@@ -565,8 +565,8 @@ func companies19Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4250646664/",
 							Location:             "San Jose, CA",
-							Date:                 mustDate("2025-07-10", "2025-06-23"),
-							WithSalary:           true, // $150k/yr - $175k/yr
+							Date:                 mustDate("2025-08-02"), // mustDate("2025-07-10", "2025-06-23"),
+							WithSalary:           true,                   // $150k/yr - $175k/yr
 							Remote:               false,
 						},
 					},
@@ -3285,7 +3285,7 @@ func companies19Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4262532716/",
 							Location:             "New York City Metropolitan Area",
-							Date:                 mustDate("2025-07-10"),
+							Date:                 mustDate("2025-08-02"), // mustDate("2025-07-10"),
 							WithSalary:           false,
 							Remote:               false,
 						},
