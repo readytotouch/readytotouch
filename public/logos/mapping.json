@@ -15,6 +15,11 @@
     "destination": ""
   },
   {
+    "alias": "1touch-io",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "3085253",
     "source": "",
     "destination": ""
@@ -660,6 +665,11 @@
     "destination": ""
   },
   {
+    "alias": "boodleboxai",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "booz-allen-hamilton",
     "source": "booz-allen-hamilton-96x96.png",
     "destination": "booz-allen-hamilton.png"
@@ -1236,6 +1246,11 @@
   },
   {
     "alias": "delltechnologies",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "deloitte",
     "source": "",
     "destination": ""
   },
@@ -2375,6 +2390,11 @@
     "destination": ""
   },
   {
+    "alias": "italki",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "jack-henry",
     "source": "jack-henry-200x200.jpeg",
     "destination": "jack-henry.jpeg"
@@ -2426,6 +2446,11 @@
   },
   {
     "alias": "just-eat-takeaway-com",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "justpark",
     "source": "",
     "destination": ""
   },
@@ -3161,6 +3186,11 @@
   },
   {
     "alias": "niov-labs",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "nn",
     "source": "",
     "destination": ""
   },
@@ -4835,6 +4865,11 @@
     "destination": ""
   },
   {
+    "alias": "tontinetrust",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "top-doctors-europe",
     "source": "",
     "destination": ""
@@ -5316,6 +5351,11 @@
   },
   {
     "alias": "wonderschool",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "wooga",
     "source": "",
     "destination": ""
   },

@@ -1101,6 +1101,14 @@ var (
 		"buenro":                              1101, // Buenro
 		"komerceid":                           1102, // Komerce
 		"mayflower-tech":                      1103, // Mayflower
+		"tontinetrust":                        1104, // Tontine Trust
+		"wooga":                               1105, // Wooga
+		"boodleboxai":                         1106, // BoodleBox
+		"nn":                                  1107, // NN
+		"justpark":                            1108, // JustPark
+		"deloitte":                            1109, // Deloitte
+		"1touch-io":                           1110, // 1touch.io
+		"italki":                              1111, // italki
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 
