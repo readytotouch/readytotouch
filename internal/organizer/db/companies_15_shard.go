@@ -2912,7 +2912,7 @@ func companies15Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4265322755/",
 							Location:             "Stockholm, Stockholm County, Sweden",
-							Date:                 mustDate("2025-07-12"),
+							Date:                 mustDate("2025-08-02", "2025-07-12"),
 							WithSalary:           false,
 							Remote:               false,
 						},
