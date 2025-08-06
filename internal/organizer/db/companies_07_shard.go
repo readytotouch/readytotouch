@@ -5100,6 +5100,16 @@ func companies07Shard() []domain.CompanyProfile {
 							WithSalary:           true, // €56,000 gross per year based on full-time employment
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Software Engineer — Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4278242625/",
+							Location:             "Vienna, Vienna, Austria",
+							Date:                 mustDate("2025-08-06"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig:     {},

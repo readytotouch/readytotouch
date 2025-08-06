@@ -2740,6 +2740,16 @@ func companies17Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Rust Services Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4278807446/",
+							Location:             "Germany",
+							Date:                 mustDate("2025-08-06"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Zig:     {},
@@ -4270,8 +4280,8 @@ func companies17Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4239651257/",
 							Location:             "New York, NY",
-							Date:                 mustDate("2025-07-16", "2025-06-03"),
-							WithSalary:           true, // $179k/yr - $242k/yr
+							Date:                 mustDate("2025-08-06"), // mustDate("2025-07-16", "2025-06-03"),
+							WithSalary:           true,                   // $179k/yr - $242k/yr
 							Remote:               false,
 						},
 					},

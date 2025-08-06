@@ -478,7 +478,7 @@ func companies04Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4265441422/",
 							Location:             "Canada",
-							Date:                 mustDate("2025-07-15"),
+							Date:                 mustDate("2025-08-06"), // mustDate("2025-07-15"),
 							WithSalary:           false,
 							Remote:               true,
 						},
