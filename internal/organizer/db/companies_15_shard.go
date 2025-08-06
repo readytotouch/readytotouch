@@ -1286,7 +1286,14 @@ func companies15Shard() []domain.CompanyProfile {
 				Employees: "340",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Rakuten-EI_IE40197.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Rakuten-Reviews-E40197.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Rakuten-Jobs-E40197.htm",
+				Jobs:        "541",
+				Reviews:     "3.9K",
+				Salaries:    "5.8K",
+				ReviewsRate: "3.7",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",

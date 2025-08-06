@@ -919,7 +919,11 @@ func companies17Shard() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Essity",
+				Employees:   "10,000+",
+				Salary:      "",
+				Reviews:     "2",
+				ReviewsRate: "4",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias: "",
@@ -4261,7 +4265,11 @@ func companies17Shard() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Falconx",
+				Employees:   "51-200",
+				Salary:      "",
+				Reviews:     "5",
+				ReviewsRate: "4.6",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias: "",

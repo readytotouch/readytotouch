@@ -1175,7 +1175,11 @@ func companies18Shard() []domain.CompanyProfile {
 				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "The-Home-Depot",
+				Employees:   "10,000+",
+				Salary:      "$60K ~ $250K a year",
+				Reviews:     "368",
+				ReviewsRate: "3.7",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "the-home-depot",

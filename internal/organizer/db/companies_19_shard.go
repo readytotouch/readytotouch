@@ -3638,7 +3638,14 @@ func companies19Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Ecosia-EI_IE1627398.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Ecosia-Reviews-E1627398.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Ecosia-Jobs-E1627398.htm",
+				Jobs:        "",
+				Reviews:     "33",
+				Salaries:    "55",
+				ReviewsRate: "4.4",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -4055,7 +4062,11 @@ func companies19Shard() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "FICO",
+				Employees:   "1,001 to 5,000",
+				Salary:      "$57K ~ $215K a year",
+				Reviews:     "46",
+				ReviewsRate: "3.5",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "fico",
