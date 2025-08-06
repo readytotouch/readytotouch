@@ -4526,6 +4526,16 @@ func companies06Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $120.000 - $175.000 per year
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Full Stack Engineer (Elixir / React)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4279920342/",
+							Location:             "Colorado, United States",
+							Date:                 mustDate("2025-08-05"),
+							WithSalary:           true, // $120k/yr - $175k/yr
+							Remote:               true,
+						},
 					},
 				},
 				domain.Clojure: {},
