@@ -1109,6 +1109,13 @@ var (
 		"deloitte":                            1109, // Deloitte
 		"1touch-io":                           1110, // 1touch.io
 		"italki":                              1111, // italki
+		"revvity":                             1112, // Revvity
+		"seagate-technology":                  1113, // Seagate Technology
+		"batutaespm":                          1114, // Batuta
+		"nozomi-networks-sa":                  1115, // Nozomi Networks
+		"nasuni":                              1116, // Nasuni
+		"simplisales":                         1117, // Simplisales
+		"biocatch":                            1118, // BioCatch
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 
