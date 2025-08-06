@@ -3398,7 +3398,7 @@ func companies19Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4263012229/",
 							Location:             "Collingwood, Victoria, Australia",
-							Date:                 mustDate("2025-07-12"),
+							Date:                 mustDate("2025-08-05"), // mustDate("2025-07-12"),
 							WithSalary:           false,
 							Remote:               false,
 						},
