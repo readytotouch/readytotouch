@@ -2178,5 +2178,21 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Techversant",
+			Website: "https://techversantinfotech.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2371685,
+				IDs:               nil,
+				Alias:             "techversant-infotech-pvt-ltd",
+				Name:              "Techversant",
+				Followers:         "17K",
+				Employees:         "201-500",
+				AssociatedMembers: "361",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }

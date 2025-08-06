@@ -959,6 +959,16 @@ func companies17Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Graduate Go Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4280052927/",
+							Location:             "Rožňava, Kosice, Slovakia",
+							Date:                 mustDate("2025-08-06"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -4280,8 +4290,8 @@ func companies17Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4239651257/",
 							Location:             "New York, NY",
-							Date:                 mustDate("2025-08-06"), // mustDate("2025-07-16", "2025-06-03"),
-							WithSalary:           true,                   // $179k/yr - $242k/yr
+							Date:                 mustDate("2025-08-06", "2025-07-16", "2025-06-03"),
+							WithSalary:           true, // $179k/yr - $242k/yr
 							Remote:               false,
 						},
 					},
