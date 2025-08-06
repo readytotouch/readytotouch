@@ -4802,6 +4802,11 @@ func companies08Shard() []domain.CompanyProfile {
 				AssociatedMembers: "118,402",
 				Verified:          true,
 			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:     "lowes",
+				Followers: "49",
+				Verified:  false,
+			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Lowes",
 				Employees:   "10,000+",
