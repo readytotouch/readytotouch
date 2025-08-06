@@ -5034,6 +5034,16 @@ func companies03Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Scala Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4279766048/",
+							Location:             "New York, United States",
+							Date:                 mustDate("2025-08-05"),
+							WithSalary:           true, // $120k/yr - $130k/yr
+							Remote:               true,
+						},
 					},
 				},
 				domain.Elixir:  {},

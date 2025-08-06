@@ -976,6 +976,90 @@ func companies20Shard() []domain.CompanyProfile {
 				domain.IndustryEdTech,
 			},
 		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Revvity",
+			Website: "https://www.revvity.com/",
+			Careers: "https://jobs.revvity.com/",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                90499149,
+				IDs:               []int{90499149, 91410483},
+				Alias:             "revvity",
+				Name:              "Revvity",
+				Followers:         "217K",
+				Employees:         "10K+",
+				AssociatedMembers: "3,374",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer (Scala, Spark)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4254962827/",
+							Location:             "Boston, MA",
+							Date:                 mustDate("2025-08-06"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Revvity provides health science solutions, technologies, expertise and services that deliver complete workflows from discovery to development, and diagnosis to cure",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
 
 		// Template
 		//{

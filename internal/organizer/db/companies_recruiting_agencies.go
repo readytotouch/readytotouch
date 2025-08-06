@@ -1354,5 +1354,20 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Recruiting agency
 		},
+		{
+			Name:    "Huxley",
+			Website: "https://www.huxley.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                7355,
+				IDs:               nil,
+				Alias:             "huxley",
+				Name:              "Huxley",
+				Followers:         "556K",
+				Employees:         "201-500",
+				AssociatedMembers: "791",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
 	}
 }
