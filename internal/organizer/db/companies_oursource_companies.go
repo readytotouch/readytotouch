@@ -2098,5 +2098,101 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Optimissa",
+			Website: "https://optimissa.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                293379,
+				IDs:               nil,
+				Alias:             "optimissa",
+				Name:              "Optimissa",
+				Followers:         "112K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "576",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Lunatech",
+			Website: "https://lunatech.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                52358,
+				IDs:               nil,
+				Alias:             "lunatech-labs",
+				Name:              "Lunatech",
+				Followers:         "5K",
+				Employees:         "51-200",
+				AssociatedMembers: "98",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Astek",
+			Website: "https://astekgroup.fr/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                162561,
+				IDs:               []int{162561, 2599301, 5053798, 5102796, 85856801},
+				Alias:             "astek",
+				Name:              "Astek",
+				Followers:         "789K",
+				Employees:         "5K-10K",
+				AssociatedMembers: "5,254",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "MethodHub",
+			Website: "https://method-hub.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                79816265,
+				IDs:               nil,
+				Alias:             "methodhubsoftware",
+				Name:              "MethodHub",
+				Followers:         "118K",
+				Employees:         "501-1K",
+				AssociatedMembers: "245",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Dexian",
+			Website: "https://dexian.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                91447303,
+				IDs:               []int{9687, 69872, 470909, 2097099, 91447303, 103351397, 104801608},
+				Alias:             "dexiansolutions",
+				Name:              "Dexian",
+				Followers:         "1M",
+				Employees:         "1K-5K",
+				AssociatedMembers: "4,426",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Techversant",
+			Website: "https://techversantinfotech.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2371685,
+				IDs:               nil,
+				Alias:             "techversant-infotech-pvt-ltd",
+				Name:              "Techversant",
+				Followers:         "17K",
+				Employees:         "201-500",
+				AssociatedMembers: "361",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }

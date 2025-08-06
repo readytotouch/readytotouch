@@ -2192,7 +2192,7 @@ func companies10Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4266334252/",
 							Location:             "London, England, United Kingdom",
-							Date:                 mustDate("2025-07-14"),
+							Date:                 mustDate("2025-08-06", "2025-07-14"),
 							WithSalary:           true, // £80k/yr - £105k/yr
 							Remote:               false,
 						},
@@ -4509,7 +4509,21 @@ func companies10Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			Languages: domain.Languages{
-				domain.Go:    {},
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior/Staff Engineer (Elixir or Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4273757835/",
+							Location:             "United States",
+							Date:                 mustDate("2025-08-05"),
+							WithSalary:           true, // $140k/yr - $200k/yr
+							Remote:               true,
+						},
+					},
+				},
 				domain.Rust:  {},
 				domain.Zig:   {},
 				domain.Scala: {},
@@ -4551,6 +4565,16 @@ func companies10Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4273255688/",
 							Location:             "United States",
 							Date:                 mustDate("2025-07-28"),
+							WithSalary:           true, // $140k/yr - $200k/yr
+							Remote:               true,
+						},
+						{
+							Title:                "Senior/Staff Engineer (Elixir or Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4273757835/",
+							Location:             "United States",
+							Date:                 mustDate("2025-08-05"),
 							WithSalary:           true, // $140k/yr - $200k/yr
 							Remote:               true,
 						},
@@ -5415,7 +5439,18 @@ func companies10Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Back-end Developer",
+							ShortDescription:     "Proficiency in at least one programming language (Golang or Java)",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4277727164/",
+							Location:             "Montreal, QC",
+							Date:                 mustDate("2025-08-05"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
 				},
 				domain.Rust:    {},
 				domain.Zig:     {},

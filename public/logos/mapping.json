@@ -31,8 +31,8 @@
   },
   {
     "alias": "815488",
-    "source": "",
-    "destination": ""
+    "source": "hollandandbarrett-200x200.jpeg",
+    "destination": "815488.jpeg"
   },
   {
     "alias": "90poe",
@@ -525,6 +525,11 @@
     "destination": ""
   },
   {
+    "alias": "batutaespm",
+    "source": "batuta-200x200.jpeg",
+    "destination": "batutaespm.jpeg"
+  },
+  {
     "alias": "bauhaus-deutschland",
     "source": "",
     "destination": ""
@@ -586,6 +591,11 @@
   },
   {
     "alias": "bill",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "biocatch",
     "source": "",
     "destination": ""
   },
@@ -856,8 +866,8 @@
   },
   {
     "alias": "check-point-software-technologies",
-    "source": "",
-    "destination": ""
+    "source": "checkpoint-200x200.jpeg",
+    "destination": "check-point-software-technologies.jpeg"
   },
   {
     "alias": "checkmarx",
@@ -1446,8 +1456,8 @@
   },
   {
     "alias": "dynatrace",
-    "source": "",
-    "destination": ""
+    "source": "dynatrace-200x200.jpeg",
+    "destination": "dynatrace.jpeg"
   },
   {
     "alias": "dyninno-group",
@@ -1571,8 +1581,8 @@
   },
   {
     "alias": "essity",
-    "source": "",
-    "destination": ""
+    "source": "essity-200x200.jpeg",
+    "destination": "essity.jpeg"
   },
   {
     "alias": "etsy",
@@ -1636,8 +1646,8 @@
   },
   {
     "alias": "f5",
-    "source": "",
-    "destination": ""
+    "source": "f5-180x180.png",
+    "destination": "f5.png"
   },
   {
     "alias": "factset",
@@ -1976,8 +1986,8 @@
   },
   {
     "alias": "getwriter",
-    "source": "",
-    "destination": ""
+    "source": "writer-180x180.png",
+    "destination": "getwriter.png"
   },
   {
     "alias": "gitguardian",
@@ -2496,8 +2506,8 @@
   },
   {
     "alias": "kissht",
-    "source": "",
-    "destination": ""
+    "source": "kissht-200x200.jpeg",
+    "destination": "kissht.jpeg"
   },
   {
     "alias": "kiteworkscgcp",
@@ -2821,8 +2831,8 @@
   },
   {
     "alias": "mcafee",
-    "source": "",
-    "destination": ""
+    "source": "mcafee-200x200.jpeg",
+    "destination": "mcafee.jpeg"
   },
   {
     "alias": "mechanical-orchard",
@@ -3050,6 +3060,11 @@
     "destination": ""
   },
   {
+    "alias": "nasuni",
+    "source": "nasuni-200x200.jpeg",
+    "destination": "nasuni.jpeg"
+  },
+  {
     "alias": "natuvion",
     "source": "",
     "destination": ""
@@ -3223,6 +3238,11 @@
     "alias": "notchupteam",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "nozomi-networks-sa",
+    "source": "nozominetworks-256x256.png",
+    "destination": "nozomi-networks-sa.png"
   },
   {
     "alias": "nuitee",
@@ -3736,8 +3756,8 @@
   },
   {
     "alias": "qdrant",
-    "source": "",
-    "destination": ""
+    "source": "qdrant-200x200.jpeg",
+    "destination": "qdrant.jpeg"
   },
   {
     "alias": "qlik",
@@ -3771,8 +3791,8 @@
   },
   {
     "alias": "quantexa",
-    "source": "",
-    "destination": ""
+    "source": "quantexa-326x326.png",
+    "destination": "quantexa.png"
   },
   {
     "alias": "quantum-systems-gmbh",
@@ -3910,6 +3930,11 @@
     "destination": ""
   },
   {
+    "alias": "revvity",
+    "source": "revvity-200x200.jpeg",
+    "destination": "revvity.jpeg"
+  },
+  {
     "alias": "reward-gateway",
     "source": "",
     "destination": ""
@@ -4021,8 +4046,8 @@
   },
   {
     "alias": "sailpoint-technologies",
-    "source": "",
-    "destination": ""
+    "source": "sailpoint-200x200.jpeg",
+    "destination": "sailpoint-technologies.jpeg"
   },
   {
     "alias": "sainsburys",
@@ -4120,6 +4145,11 @@
     "destination": ""
   },
   {
+    "alias": "seagate-technology",
+    "source": "seagate-200x200.jpeg",
+    "destination": "seagate-technology.jpeg"
+  },
+  {
     "alias": "second-spectrum",
     "source": "",
     "destination": ""
@@ -4198,6 +4228,11 @@
     "alias": "simpli.fi",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "simplisales",
+    "source": "simplisales-200x200.jpeg",
+    "destination": "simplisales.jpeg"
   },
   {
     "alias": "simulmedia",
@@ -4636,8 +4671,8 @@
   },
   {
     "alias": "tailscale",
-    "source": "",
-    "destination": ""
+    "source": "tailscale-200x200.jpeg",
+    "destination": "tailscale.jpeg"
   },
   {
     "alias": "take-2-interactive-software-inc-",
@@ -4671,8 +4706,8 @@
   },
   {
     "alias": "td",
-    "source": "",
-    "destination": ""
+    "source": "td-200x200.jpeg",
+    "destination": "td.jpeg"
   },
   {
     "alias": "teachable",
@@ -5451,8 +5486,8 @@
   },
   {
     "alias": "zeller",
-    "source": "",
-    "destination": ""
+    "source": "zeller-200x200.jpeg",
+    "destination": "zeller.jpeg"
   },
   {
     "alias": "zendesk",

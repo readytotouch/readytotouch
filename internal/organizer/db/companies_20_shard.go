@@ -976,6 +976,626 @@ func companies20Shard() []domain.CompanyProfile {
 				domain.IndustryEdTech,
 			},
 		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Revvity",
+			Website: "https://www.revvity.com/",
+			Careers: "https://jobs.revvity.com/",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                90499149,
+				IDs:               []int{90499149, 91410483},
+				Alias:             "revvity",
+				Name:              "Revvity",
+				Followers:         "217K",
+				Employees:         "10K+",
+				AssociatedMembers: "3,374",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:     "Revvity",
+				Followers: "175",
+				Verified:  false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Revvity-EI_IE8682798.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Revvity-Reviews-E8682798.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Revvity-Jobs-E8682798.htm",
+				Jobs:        "108",
+				Reviews:     "182",
+				Salaries:    "421",
+				ReviewsRate: "3.7",
+				Verified:    true,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 4,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer (Scala, Spark)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4254962827/",
+							Location:             "Boston, MA",
+							Date:                 mustDate("2025-08-06"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Revvity provides health science solutions, technologies, expertise and services that deliver complete workflows from discovery to development, and diagnosis to cure",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Seagate Technology",
+			Website: "https://www.seagate.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2868,
+				IDs:               nil,
+				Alias:             "seagate-technology",
+				Name:              "Seagate Technology",
+				Followers:         "280K",
+				Employees:         "10K+",
+				AssociatedMembers: "16,389",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:     "seagate",
+				Followers: "240",
+				Verified:  true,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias:       "Seagate-Technology",
+				Employees:   "10,000+",
+				Salary:      "$16K ~ $315K a year",
+				Reviews:     "54",
+				ReviewsRate: "3.5",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "seagate",
+				Employees: "16,000",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Seagate-Technology-EI_IE1864.11,29.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Seagate-Technology-Reviews-E1864.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Seagate-Technology-Jobs-E1864.htm",
+				Jobs:        "79",
+				Reviews:     "3.3K",
+				Salaries:    "5.4K",
+				ReviewsRate: "3.7",
+				Verified:    false,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 15,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Cloud Software Engineer (Golang)",
+							ShortDescription:     "EC2, AWS S3",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4280834608/",
+							Location:             "Poland",
+							Date:                 mustDate("2025-08-06"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Computer Hardware Manufacturing",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Batuta",
+			Website: "https://batuta.com/",
+			Careers: "",
+			About:   "https://batuta.com/about/",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                18752548,
+				IDs:               nil,
+				Alias:             "batutaespm",
+				Name:              "Batuta",
+				Followers:         "16K",
+				Employees:         "51-200",
+				AssociatedMembers: "102",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Developer Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4280995720/",
+							Location:             "Argentina",
+							Date:                 mustDate("2025-08-07"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "By intelligently orchestrating every endpoint, the platform eliminates complexity and fragmentation, turning noise into actionable insights",
+			Industries: []domain.Industry{
+				domain.IndustryCyberSecurity,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Nozomi Networks",
+			Website: "https://www.nozominetworks.com/",
+			Careers: "https://www.nozominetworks.com/company/careers",
+			About:   "https://www.nozominetworks.com/company",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                5093151,
+				IDs:               nil,
+				Alias:             "nozomi-networks-sa",
+				Name:              "Nozomi Networks",
+				Followers:         "86K",
+				Employees:         "201-500",
+				AssociatedMembers: "365",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:     "NozomiNetworks",
+				Followers: "54",
+				Verified:  false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "nozomi-networks",
+				Employees: "351",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Nozomi-Networks-EI_IE2409639.11,26.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Nozomi-Networks-Reviews-E2409639.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Nozomi-Networks-Jobs-E2409639.htm",
+				Jobs:        "31",
+				Reviews:     "83",
+				Salaries:    "58",
+				ReviewsRate: "4.2",
+				Verified:    true,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 9,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer (Python/Go)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4280758824/",
+							Location:             "Switzerland",
+							Date:                 mustDate("2025-08-06"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "We protect the world’s critical infrastructure from cyber threats",
+			Industries: []domain.Industry{
+				domain.IndustryCyberSecurity,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Nasuni",
+			Website: "https://www.nasuni.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                580624,
+				IDs:               nil,
+				Alias:             "nasuni",
+				Name:              "Nasuni",
+				Followers:         "19K",
+				Employees:         "501-1K",
+				AssociatedMembers: "563",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias:       "Nasuni",
+				Employees:   "201 to 500",
+				Salary:      "",
+				Reviews:     "2",
+				ReviewsRate: "2.5",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Nasuni-EI_IE417222.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Nasuni-Reviews-E417222.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Nasuni-Jobs-E417222.htm",
+				Jobs:        "31",
+				Reviews:     "118",
+				Salaries:    "267",
+				ReviewsRate: "4.1",
+				Verified:    true,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Principal C++/Go/Linux Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4266776966/",
+							Location:             "Boston, MA",
+							Date:                 mustDate("2025-08-06"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Nasuni is a unified file data platform for enterprises facing an explosion of unstructured data",
+			Industries: []domain.Industry{
+				domain.IndustryCloudComputing,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Simplisales",
+			Website: "https://simplisales.com/",
+			Careers: "",
+			About:   "https://simplisales.com/about-us",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                84357358,
+				IDs:               nil,
+				Alias:             "simplisales",
+				Name:              "Simplisales",
+				Followers:         "602",
+				Employees:         "11-50",
+				AssociatedMembers: "12",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Go Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4278268730/",
+							Location:             "Istanbul, Türkiye",
+							Date:                 mustDate("2025-08-06"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "B2B commerce platform tailored for wholesalers, distributors, and manufacturers",
+			Industries: []domain.Industry{
+				domain.IndustryECommerce,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "BioCatch",
+			Website: "https://www.biocatch.com/",
+			Careers: "https://www.biocatch.com/company",
+			About:   "https://www.biocatch.com/cybersecurity-careers",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2689103,
+				IDs:               nil,
+				Alias:             "biocatch",
+				Name:              "BioCatch",
+				Followers:         "33K",
+				Employees:         "201-500",
+				AssociatedMembers: "413",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{
+						// Waiting for the next job to be posted
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "BioCatch prevents financial crime by recognizing patterns in human behavior",
+			Industries: []domain.Industry{
+				domain.IndustryCyberSecurity,
+			},
+		},
 
 		// Template
 		//{

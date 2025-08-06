@@ -82,7 +82,7 @@ func companies07Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4254632356/",
 							Location:             "Tel Aviv-Yafo, Tel Aviv District, Israel",
-							Date:                 mustDate("2025-08-04"), // mustDate("2025-07-15"),
+							Date:                 mustDate("2025-08-04", "2025-07-15"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -1819,8 +1819,8 @@ func companies07Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4226339955/",
 							Location:             "Seattle, WA",
-							Date:                 mustDate("2025-08-04"), // mustDate("2025-07-14", "2025-06-22", "2025-05-09"),
-							WithSalary:           true,                   // $122k/yr - $153k/yr
+							Date:                 mustDate("2025-08-04", "2025-07-14", "2025-06-22", "2025-05-09"),
+							WithSalary:           true, // $122k/yr - $153k/yr
 							Remote:               false,
 						},
 					},
@@ -3968,7 +3968,7 @@ func companies07Shard() []domain.CompanyProfile {
 							ShortDescription:     "Portworx",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4263365263/",
-							Date:                 mustDate("2025-08-01"), // mustDate("2025-07-09"),
+							Date:                 mustDate("2025-08-01", "2025-07-09"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -4760,7 +4760,7 @@ func companies07Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4266753423/",
 							Location:             "McLean, VA",
-							Date:                 mustDate("2025-07-15"),
+							Date:                 mustDate("2025-08-06", "2025-07-15"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -5007,8 +5007,9 @@ func companies07Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "dynatrace",
-				Verified: true,
+				Login:     "dynatrace",
+				Followers: "423",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Dynatrace",
@@ -5039,7 +5040,7 @@ func companies07Shard() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 11,
+					GitHubRepositoriesCount: 13,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior C++ / Go Software Engineer",
@@ -5098,6 +5099,16 @@ func companies07Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4103774978/",
 							Date:                 mustDate("2025-01-26"),
 							WithSalary:           true, // €56,000 gross per year based on full-time employment
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Software Engineer — Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4278242625/",
+							Location:             "Vienna, Vienna, Austria",
+							Date:                 mustDate("2025-08-06"),
+							WithSalary:           false,
 							Remote:               false,
 						},
 					},
@@ -5745,7 +5756,8 @@ func companies07Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4211583414/",
-							Date:                 mustDate("2025-07-14", "2025-06-23", "2025-04-18"),
+							Location:             "Cracow, Małopolskie, Poland",
+							Date:                 mustDate("2025-08-06", "2025-07-14", "2025-06-23", "2025-04-18"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -5764,7 +5776,8 @@ func companies07Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4224631061/",
-							Date:                 mustDate("2025-05-10"),
+							Location:             "Cracow, Małopolskie, Poland",
+							Date:                 mustDate("2025-08-05", "2025-05-10"),
 							WithSalary:           false,
 							Remote:               false,
 						},

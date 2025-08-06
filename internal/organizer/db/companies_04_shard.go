@@ -478,7 +478,7 @@ func companies04Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4265441422/",
 							Location:             "Canada",
-							Date:                 mustDate("2025-07-15"),
+							Date:                 mustDate("2025-08-06", "2025-07-15"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -1954,6 +1954,16 @@ func companies04Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Go Software Engineer",
+							ShortDescription:     "(Cortex)",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4279574578/",
+							Location:             "Tel Aviv-Yafo, Tel Aviv District, Israel",
+							Date:                 mustDate("2025-08-05"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
@@ -2524,8 +2534,9 @@ func companies04Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "sony",
+				Followers: "831",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",

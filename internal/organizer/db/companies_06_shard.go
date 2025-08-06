@@ -399,7 +399,7 @@ func companies06Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4265185640/",
 							Location:             "Berlin, Berlin, Germany",
-							Date:                 mustDate("2025-07-15"),
+							Date:                 mustDate("2025-08-06", "2025-07-15"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2223,7 +2223,7 @@ func companies06Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4242865746/",
 							Location:             "Chantilly, VA",
-							Date:                 mustDate("2025-07-15", "2025-06-24"),
+							Date:                 mustDate("2025-08-06", "2025-07-15", "2025-06-24"),
 							WithSalary:           true, // $86.8k/yr - $198k/yr
 							Remote:               false,
 						},
@@ -4526,6 +4526,16 @@ func companies06Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $120.000 - $175.000 per year
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Full Stack Engineer (Elixir / React)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4279920342/",
+							Location:             "Colorado, United States",
+							Date:                 mustDate("2025-08-05"),
+							WithSalary:           true, // $120k/yr - $175k/yr
+							Remote:               true,
+						},
 					},
 				},
 				domain.Clojure: {},
@@ -5972,8 +5982,9 @@ func companies06Shard() []domain.CompanyProfile {
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "writer",
+				Followers: "102",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Writer",
@@ -6007,16 +6018,17 @@ func companies06Shard() []domain.CompanyProfile {
 				domain.Rust: {},
 				domain.Zig:  {},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 1,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer, Backend (Scala)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/3972187342/",
-							Date:                 mustDate("2025-07-07", "2025-06-08", "2025-05-14", "2025-03-08", "2025-02-10", "2025-01-21", "2025-01-13", "2024-11-04"),
+							Location:             "San Francisco, CA",
+							Date:                 mustDate("2025-08-06", "2025-07-07", "2025-06-08", "2025-05-14", "2025-03-08", "2025-02-10", "2025-01-21", "2025-01-13", "2024-11-04"),
 							WithSalary:           false,
-							Remote:               true,
+							Remote:               false,
 						},
 						{
 							Title:                "Software Engineer, Backend (Scala)",
