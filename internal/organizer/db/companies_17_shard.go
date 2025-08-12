@@ -3787,7 +3787,7 @@ func companies17Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4268705870/",
 							Location:             "Utrecht, Utrecht, Netherlands",
-							Date:                 mustDate("2025-07-18"),
+							Date:                 mustDate("2025-08-09", "2025-07-18"),
 							WithSalary:           false,
 							Remote:               false,
 						},
