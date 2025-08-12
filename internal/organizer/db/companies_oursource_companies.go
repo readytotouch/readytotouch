@@ -2194,5 +2194,37 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Galent",
+			Website: "https://galent.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                105053560,
+				IDs:               nil,
+				Alias:             "galenthq",
+				Name:              "Galent",
+				Followers:         "244K",
+				Employees:         "501-1K",
+				AssociatedMembers: "254",
+				Verified:          false,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Cegeka",
+			Website: "https://www.cegeka.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                6521,
+				IDs:               nil,
+				Alias:             "cegeka",
+				Name:              "Cegeka",
+				Followers:         "160K",
+				Employees:         "5K-10K",
+				AssociatedMembers: "5,079",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }

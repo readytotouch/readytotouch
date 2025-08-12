@@ -3744,6 +3744,16 @@ func companies19Shard() []domain.CompanyProfile {
 							WithSalary:           true, // €4,500/month - €6,000/month
 							Remote:               false,
 						},
+						{
+							Title:                "Backend Engineer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4281160160/",
+							Location:             "Rotterdam, South Holland, Netherlands",
+							Date:                 mustDate("2025-08-08"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {

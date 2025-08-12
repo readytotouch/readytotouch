@@ -186,7 +186,7 @@ func companies16Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4214931469/",
 							Location:             "San Francisco, CA",
-							Date:                 mustDate("2025-07-20", "2025-06-28", "2025-06-05", "2025-05-15", "2025-04-24"),
+							Date:                 mustDate("2025-08-11", "2025-07-20", "2025-06-28", "2025-06-05", "2025-05-15", "2025-04-24"),
 							WithSalary:           true, // $160k/yr - $240k/yr
 							Remote:               false,
 						},
@@ -4237,7 +4237,21 @@ func companies16Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			Languages: domain.Languages{
-				domain.Go: {},
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Staff Software Engineer – Java, Golang & K8s",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4282310276/",
+							Location:             "Bengaluru, Karnataka, India",
+							Date:                 mustDate("2025-08-09"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
 				domain.Rust: {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{

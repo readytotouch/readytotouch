@@ -1470,6 +1470,11 @@
     "destination": ""
   },
   {
+    "alias": "eachlabs",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "ebay",
     "source": "",
     "destination": ""
@@ -1821,8 +1826,8 @@
   },
   {
     "alias": "foodpanda",
-    "source": "",
-    "destination": ""
+    "source": "foodpanda-200x200.jpeg",
+    "destination": "foodpanda.jpeg"
   },
   {
     "alias": "forcepoint",
@@ -2336,6 +2341,11 @@
   },
   {
     "alias": "incharge-energy",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "infactsystems",
     "source": "",
     "destination": ""
   },
@@ -3066,8 +3076,8 @@
   },
   {
     "alias": "natuvion",
-    "source": "",
-    "destination": ""
+    "source": "natuvion-463x463.webp",
+    "destination": "natuvion.png"
   },
   {
     "alias": "natwest-group",
@@ -3620,6 +3630,11 @@
     "destination": ""
   },
   {
+    "alias": "planet",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "plentyone-ecommerce",
     "source": "",
     "destination": ""
@@ -4015,6 +4030,11 @@
     "destination": ""
   },
   {
+    "alias": "roslinhq",
+    "source": "roslinhq-200x200.jpeg",
+    "destination": "roslinhq.jpeg"
+  },
+  {
     "alias": "rumble-com",
     "source": "rumble-180x180.png",
     "destination": "rumble-com.png"
@@ -4083,6 +4103,11 @@
     "alias": "samsungfoodofficial",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "sandboxaq",
+    "source": "sandboxaq-256x256.jpg",
+    "destination": "sandboxaq.jpg"
   },
   {
     "alias": "sap",
@@ -4596,6 +4621,11 @@
   },
   {
     "alias": "swan-embedded-banking",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "swapcard",
     "source": "",
     "destination": ""
   },

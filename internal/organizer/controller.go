@@ -21,7 +21,7 @@ import (
 )
 
 var (
-	testFullPublicSince = time.Date(2025, time.July, 11, 0, 0, 0, 0, time.UTC)
+	testFullPublicSince = time.Date(2025, time.August, 15, 0, 0, 0, 0, time.UTC)
 	testFullPublicUntil = time.Date(2026, time.January, 25, 0, 0, 0, 0, time.UTC)
 )
 

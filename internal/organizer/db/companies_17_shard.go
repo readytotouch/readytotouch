@@ -1379,6 +1379,16 @@ func companies17Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $175k/yr - $255k/yr
 							Remote:               true,
 						},
+						{
+							Title:                "Staff Elixir Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4281934098/",
+							Location:             "Greater Colorado Springs Area",
+							Date:                 mustDate("2025-08-08"),
+							WithSalary:           true, // $175k/yr - $255k/yr
+							Remote:               true,
+						},
 					},
 				},
 				domain.Clojure: {},
@@ -2949,7 +2959,21 @@ func companies17Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			Languages: domain.Languages{
-				domain.Go:      {},
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Go Developer",
+							ShortDescription:     "Focus on gRPC & Enterprise applications",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4281091636/",
+							Location:             "Berlin, Berlin, Germany",
+							Date:                 mustDate("2025-08-11"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
 				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -3763,7 +3787,7 @@ func companies17Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4268705870/",
 							Location:             "Utrecht, Utrecht, Netherlands",
-							Date:                 mustDate("2025-07-18"),
+							Date:                 mustDate("2025-08-09", "2025-07-18"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3961,7 +3985,7 @@ func companies17Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4230075544/",
 							Location:             "Helsinki, Uusimaa, Finland",
-							Date:                 mustDate("2025-07-20", "2025-06-28", "2025-06-05"),
+							Date:                 mustDate("2025-08-10", "2025-07-20", "2025-06-28", "2025-06-05"),
 							WithSalary:           false,
 							Remote:               true,
 						},
