@@ -186,7 +186,7 @@ func companies16Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4214931469/",
 							Location:             "San Francisco, CA",
-							Date:                 mustDate("2025-07-20", "2025-06-28", "2025-06-05", "2025-05-15", "2025-04-24"),
+							Date:                 mustDate("2025-08-11", "2025-07-20", "2025-06-28", "2025-06-05", "2025-05-15", "2025-04-24"),
 							WithSalary:           true, // $160k/yr - $240k/yr
 							Remote:               false,
 						},

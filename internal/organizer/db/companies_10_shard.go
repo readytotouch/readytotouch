@@ -4731,7 +4731,7 @@ func companies10Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4153154012/",
 							Location:             "Montreal, QC",
-							Date:                 mustDate("2025-08-09"), // mustDate("2025-07-19", "2025-06-05", "2025-05-14", "2025-04-21", "2025-03-30", "2025-02-14"),
+							Date:                 mustDate("2025-08-09", "2025-07-19", "2025-06-05", "2025-05-14", "2025-04-21", "2025-03-30", "2025-02-14"),
 							WithSalary:           false,
 							Remote:               false,
 						},

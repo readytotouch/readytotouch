@@ -1799,7 +1799,7 @@ func companies04Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4261983022/",
-							Date:                 mustDate("2025-07-10"),
+							Date:                 mustDate("2025-08-09", "2025-07-10"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2815,7 +2815,7 @@ func companies04Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4242953597/",
 							Location:             "Los Angeles, CA",
-							Date:                 mustDate("2025-07-19", "2025-06-28", "2025-06-06"),
+							Date:                 mustDate("2025-08-10", "2025-07-19", "2025-06-28", "2025-06-06"),
 							WithSalary:           true, // $125k/yr - $175k/yr
 							Remote:               false,
 						},
