@@ -1116,6 +1116,12 @@ var (
 		"nasuni":                              1116, // Nasuni
 		"simplisales":                         1117, // Simplisales
 		"biocatch":                            1118, // BioCatch
+		"infactsystems":                       1119, // Infact
+		"planet":                              1120, // Planet
+		"swapcard":                            1121, // Swapcard
+		"eachlabs":                            1122, // Eachlabs
+		"sandboxaq":                           1123, // SandboxAQ
+		"roslinhq":                            1124, // Roslin
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

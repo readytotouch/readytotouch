@@ -1470,6 +1470,11 @@
     "destination": ""
   },
   {
+    "alias": "eachlabs",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "ebay",
     "source": "",
     "destination": ""
@@ -2336,6 +2341,11 @@
   },
   {
     "alias": "incharge-energy",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "infactsystems",
     "source": "",
     "destination": ""
   },
@@ -3620,6 +3630,11 @@
     "destination": ""
   },
   {
+    "alias": "planet",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "plentyone-ecommerce",
     "source": "",
     "destination": ""
@@ -4015,6 +4030,11 @@
     "destination": ""
   },
   {
+    "alias": "roslinhq",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "rumble-com",
     "source": "rumble-180x180.png",
     "destination": "rumble-com.png"
@@ -4081,6 +4101,11 @@
   },
   {
     "alias": "samsungfoodofficial",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "sandboxaq",
     "source": "",
     "destination": ""
   },
@@ -4596,6 +4621,11 @@
   },
   {
     "alias": "swan-embedded-banking",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "swapcard",
     "source": "",
     "destination": ""
   },
