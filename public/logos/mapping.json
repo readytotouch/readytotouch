@@ -1826,8 +1826,8 @@
   },
   {
     "alias": "foodpanda",
-    "source": "",
-    "destination": ""
+    "source": "foodpanda-200x200.jpeg",
+    "destination": "foodpanda.jpeg"
   },
   {
     "alias": "forcepoint",
@@ -3076,8 +3076,8 @@
   },
   {
     "alias": "natuvion",
-    "source": "",
-    "destination": ""
+    "source": "natuvion-463x463.webp",
+    "destination": "natuvion.png"
   },
   {
     "alias": "natwest-group",
@@ -4031,8 +4031,8 @@
   },
   {
     "alias": "roslinhq",
-    "source": "",
-    "destination": ""
+    "source": "roslinhq-200x200.jpeg",
+    "destination": "roslinhq.jpeg"
   },
   {
     "alias": "rumble-com",
@@ -4106,8 +4106,8 @@
   },
   {
     "alias": "sandboxaq",
-    "source": "",
-    "destination": ""
+    "source": "sandboxaq-256x256.jpg",
+    "destination": "sandboxaq.jpg"
   },
   {
     "alias": "sap",
