@@ -2396,6 +2396,16 @@ func companies10Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Golang engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4283670207/",
+							Location:             "Atlanta, GA",
+							Date:                 mustDate("2025-08-17"),
+							WithSalary:           true, // $130k/yr - $160k/yr
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust: {},

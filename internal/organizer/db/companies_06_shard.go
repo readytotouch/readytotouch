@@ -198,7 +198,7 @@ func companies06Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4256930565/",
 							Location:             "London, England, United Kingdom",
-							Date:                 mustDate("2025-07-23", "2025-07-02"),
+							Date:                 mustDate("2025-08-15", "2025-07-23", "2025-07-02"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -304,7 +304,7 @@ func companies06Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4275397811/",
 							Location:             "Paris, Île-de-France, France",
-							Date:                 mustDate("2025-07-24"),
+							Date:                 mustDate("2025-08-16", "2025-07-24"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -4020,7 +4020,21 @@ func companies06Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
-				domain.Go:   {},
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "senior Golang Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4286478056/",
+							Location:             "Amsterdam, North Holland, Netherlands",
+							Date:                 mustDate("2025-08-16"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
 				domain.Rust: {},
 				domain.Zig:  {},
 				domain.Scala: {

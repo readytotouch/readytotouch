@@ -1967,6 +1967,16 @@ func companies19Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Golang Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4287085768/",
+							Location:             "United Kingdom",
+							Date:                 mustDate("2025-08-17"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust: {
@@ -5385,6 +5395,16 @@ func companies19Shard() []domain.CompanyProfile {
 							Date:                 mustDate("2025-07-26"),
 							WithSalary:           true, // $148k/yr - $287.5k/yr
 							Remote:               true,
+						},
+						{
+							Title:                "Senior Systems Software Engineer, Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4275848868/",
+							Location:             "Redmond, WA",
+							Date:                 mustDate("2025-08-17"),
+							WithSalary:           true, // $148k/yr - $287.5k/yr
+							Remote:               false,
 						},
 					},
 				},
