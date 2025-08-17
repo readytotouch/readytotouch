@@ -656,7 +656,7 @@ var (
 		"notablesystems":                      "",
 		"notchupteam":                         "",
 		"nozomi-networks-sa":                  "nozomi-networks-sa.png",
-		"nuitee":                              "",
+		"nuitee":                              "nuitee.png",
 		"nuro-inc.":                           "",
 		"nutanix":                             "",
 		"nvent":                               "",

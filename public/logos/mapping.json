@@ -3261,8 +3261,8 @@
   },
   {
     "alias": "nuitee",
-    "source": "",
-    "destination": ""
+    "source": "nuitee-125x125.png",
+    "destination": "nuitee.png"
   },
   {
     "alias": "nuro-inc.",
