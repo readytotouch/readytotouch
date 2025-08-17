@@ -1122,6 +1122,7 @@ var (
 		"eachlabs":                            1122, // Eachlabs
 		"sandboxaq":                           1123, // SandboxAQ
 		"roslinhq":                            1124, // Roslin
+		"lenovo":                              1125, // Lenovo
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

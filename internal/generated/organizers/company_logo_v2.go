@@ -524,6 +524,7 @@ var (
 		"legalzoom":                           "",
 		"lego-group":                          "",
 		"lemfi":                               "",
+		"lenovo":                              "",
 		"lenskart-com":                        "",
 		"letgo":                               "",
 		"level-all":                           "",
