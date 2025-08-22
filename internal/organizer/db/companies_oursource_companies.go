@@ -2226,5 +2226,53 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Dellent",
+			Website: "https://dellentconsulting.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                5388564,
+				IDs:               nil,
+				Alias:             "dellent-consulting",
+				Name:              "Dellent",
+				Followers:         "29K",
+				Employees:         "201-500",
+				AssociatedMembers: "195",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Atos",
+			Website: "https://atos.net/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1259,
+				IDs:               []int{1259, 53472064},
+				Alias:             "atos",
+				Name:              "Atos",
+				Followers:         "2M",
+				Employees:         "10K+",
+				AssociatedMembers: "84,096",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "CoffeeBeans",
+			Website: "https://coffeebeans.io/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                13251676,
+				IDs:               nil,
+				Alias:             "coffeebeans-brewinginnovations",
+				Name:              "CoffeeBeans",
+				Followers:         "53K",
+				Employees:         "201-500",
+				AssociatedMembers: "335",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }

@@ -1384,5 +1384,50 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Recruiting agency
 		},
+		{
+			Name:    "Spilberg",
+			Website: "https://spilberg.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                5025358,
+				IDs:               nil,
+				Alias:             "spilberg-development",
+				Name:              "Spilberg",
+				Followers:         "46K",
+				Employees:         "51-200",
+				AssociatedMembers: "140",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "Andela",
+			Website: "https://www.andela.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                5351527,
+				IDs:               nil,
+				Alias:             "andela",
+				Name:              "Andela",
+				Followers:         "467K",
+				Employees:         "201-500",
+				AssociatedMembers: "1,304",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
+		{
+			Name:    "HeartCentrix Solutions",
+			Website: "https://heartcentrix.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                82388444,
+				IDs:               nil,
+				Alias:             "heartcentrix",
+				Name:              "HeartCentrix Solutions",
+				Followers:         "56K",
+				Employees:         "51-200",
+				AssociatedMembers: "63",
+				Verified:          true,
+			},
+			Ignore: true, // Recruiting agency
+		},
 	}
 }
