@@ -283,7 +283,7 @@
           <!-- card list -->
           {% code var currentVacancyPeriods = newVacancyPeriods() %}
           <div class="search-result__cards row-gap-8 mt-24">
-			{% for _, vacancy := range vacancies %}
+			{% for _, vacancy := range latestVacancies(vacancies) %}
                 {% for _, periodName := range currentVacancyPeriods.over(vacancy.Date) %}
                 <div class="search-result__time-period">
                     <div class="search-result__time-period-line"></div>
