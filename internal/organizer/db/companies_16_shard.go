@@ -3237,6 +3237,16 @@ func companies16Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Staff Rust Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4289500880/",
+							Location:             "United States",
+							Date:                 mustDate("2025-08-22"),
+							WithSalary:           true, // $170k/yr - $200k/yr
+							Remote:               true,
+						},
 					},
 				},
 				domain.Zig:     {},

@@ -3455,6 +3455,90 @@ func companies20Shard() []domain.CompanyProfile {
 				// NOP
 			},
 		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Rublon",
+			Website: "https://rublon.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2772205,
+				IDs:               nil,
+				Alias:             "rublon",
+				Name:              "Rublon",
+				Followers:         "2K",
+				Employees:         "11-50",
+				AssociatedMembers: "21",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Rust/C++ Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4289132808/",
+							Location:             "Zielona Góra, Lubuskie, Poland",
+							Date:                 mustDate("2025-08-21"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Protect access to your networks, servers and applications using workforce multi-factor authentication ",
+			Industries: []domain.Industry{
+				domain.IndustryCyberSecurity,
+			},
+		},
 
 		// Template
 		//{

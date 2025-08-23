@@ -5595,6 +5595,16 @@ func companies19Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Rust/C++ Backend Engineer",
+							ShortDescription:     "Enterprise Agent",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4262573291/",
+							Location:             "Palo Alto, CA",
+							Date:                 mustDate("2025-08-22"),
+							WithSalary:           true, // $180k/yr - $440k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig: {
