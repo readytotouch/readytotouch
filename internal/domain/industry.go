@@ -91,4 +91,8 @@ var (
 		Alias: "defensetech",
 		Name:  "DefenseTech",
 	}
+	IndustryTravelTech = Industry{
+		Alias: "traveltech",
+		Name:  "TravelTech",
+	}
 )

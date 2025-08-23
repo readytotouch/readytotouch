@@ -568,6 +568,16 @@ func companies10Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $66/hr - $88/hr
 							Remote:               false,
 						},
+						{
+							Title:                "Junior Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4288625278/",
+							Location:             "Plano, TX",
+							Date:                 mustDate("2025-08-21"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -2206,6 +2216,16 @@ func companies10Shard() []domain.CompanyProfile {
 							WithSalary:           true, // £80k/yr - £105k/yr
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Scala Engineer",
+							ShortDescription:     "Decision Systems",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4288969179/",
+							Location:             "London, England, United Kingdom",
+							Date:                 mustDate("2025-08-21"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Elixir:  {},
@@ -2397,13 +2417,23 @@ func companies10Shard() []domain.CompanyProfile {
 							Remote:               true,
 						},
 						{
-							Title:                "Senior Golang engineer",
+							Title:                "Senior Golang Engineer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4283670207/",
 							Location:             "Atlanta, GA",
 							Date:                 mustDate("2025-08-17"),
 							WithSalary:           true, // $130k/yr - $160k/yr
+							Remote:               true,
+						},
+						{
+							Title:                "Senior Golang Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4277411372/",
+							Location:             "Toronto, ON",
+							Date:                 mustDate("2025-08-19"),
+							WithSalary:           false,
 							Remote:               true,
 						},
 					},
@@ -2809,6 +2839,16 @@ func companies10Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $150k/yr - $170k/yr
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Engineer – Demand Tech (Scala/Spark)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4287543629/",
+							Location:             "Boston, MA",
+							Date:                 mustDate("2025-08-19"),
+							WithSalary:           true, // $140k/yr - $160k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Elixir:  {},
@@ -3039,6 +3079,16 @@ func companies10Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4278073390/",
 							Location:             "Colombo, Western Province, Sri Lanka",
 							Date:                 mustDate("2025-07-30"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Software Engineer – Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4285509223/",
+							Location:             "Barcelona, Catalonia, Spain",
+							Date:                 mustDate("2025-08-19"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3837,7 +3887,7 @@ func companies10Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4264143306/",
 							Location:             "Brno, South Moravia, Czechia",
-							Date:                 mustDate("2025-07-30", "2025-07-09"),
+							Date:                 mustDate("2025-08-21", "2025-07-30", "2025-07-09"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -4624,8 +4674,9 @@ func companies10Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "akamai",
+				Followers: "462",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "akamai-technologies",
@@ -4653,7 +4704,7 @@ func companies10Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 23,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Kubernetes Go Software Developer",
@@ -4670,6 +4721,16 @@ func companies10Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4158615510/",
 							Date:                 mustDate("2025-02-19"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+						{
+							Title:                "Backend Engineer (Go)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4278536108/",
+							Location:             "Israel",
+							Date:                 mustDate("2025-08-22"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -5396,7 +5457,7 @@ func companies10Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4264162670/",
 							Location:             "United States",
-							Date:                 mustDate("2025-07-30"),
+							Date:                 mustDate("2025-08-22", "2025-07-30"),
 							WithSalary:           true, // $200k/yr - $270k/yr
 							Remote:               true,
 						},

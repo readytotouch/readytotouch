@@ -282,3 +282,11 @@ func googleSearchYCombinator(companyName string) string {
 
 	return "https://www.google.com/search?" + values.Encode()
 }
+
+func latestVacancies(vacancies []PreparedVacancy) []PreparedVacancy {
+	if len(vacancies) >= 256 {
+		return vacancies[:256]
+	}
+
+	return vacancies
+}

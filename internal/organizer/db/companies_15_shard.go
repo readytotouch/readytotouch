@@ -2174,7 +2174,7 @@ func companies15Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4251934373/",
 							Location:             "Dublin, County Dublin, Ireland",
-							Date:                 mustDate("2025-07-28", "2025-07-21", "2025-07-08"),
+							Date:                 mustDate("2025-08-20", "2025-07-28", "2025-07-21", "2025-07-08"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -4489,6 +4489,16 @@ func companies15Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4266510208/",
 							Location:             "Hungary",
 							Date:                 mustDate("2025-07-14"),
+							WithSalary:           true, // €70k/yr - €95k/yr
+							Remote:               true,
+						},
+						{
+							Title:                "Senior Software Engineer",
+							ShortDescription:     "Elixir Focus",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4289006848/",
+							Location:             "Georgia",
+							Date:                 mustDate("2025-08-22"),
 							WithSalary:           true, // €70k/yr - €95k/yr
 							Remote:               true,
 						},

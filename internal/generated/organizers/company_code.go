@@ -1123,6 +1123,22 @@ var (
 		"sandboxaq":                           1123, // SandboxAQ
 		"roslinhq":                            1124, // Roslin
 		"lenovo":                              1125, // Lenovo
+		"easypost":                            1126, // EasyPost
+		"n-able":                              1127, // N-able
+		"forestbikeapp":                       1128, // Forest
+		"postman-platform":                    1129, // Postman
+		"havas":                               1130, // Havas
+		"tietoevry":                           1131, // Tietoevry
+		"torqio":                              1132, // Torq
+		"unanet-technologies":                 1133, // Unanet
+		"entrust":                             1134, // Entrust
+		"yolcu-360":                           1135, // Yolcu360
+		"leaseweb":                            1136, // Leaseweb
+		"netcore-cloud":                       1137, // Netcore Cloud
+		"fluidcloud":                          1138, // FluidCloud
+		"ifood-":                              1139, // iFood
+		"amplifiloyalty":                      1140, // ampliFI Loyalty Solutions
+		"rublon":                              1141, // Rublon
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 
