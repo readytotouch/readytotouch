@@ -2216,6 +2216,16 @@ func companies10Shard() []domain.CompanyProfile {
 							WithSalary:           true, // £80k/yr - £105k/yr
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Scala Engineer",
+							ShortDescription:     "Decision Systems",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4288969179/",
+							Location:             "London, England, United Kingdom",
+							Date:                 mustDate("2025-08-21"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Elixir:  {},
@@ -2828,6 +2838,16 @@ func companies10Shard() []domain.CompanyProfile {
 							Date:                 mustDate("2025-07-28", "2025-07-17", "2025-07-08", "2025-06-30", "2025-06-24", "2025-06-17", "2025-06-14", "2025-05-01", "2025-04-10"),
 							WithSalary:           true, // $150k/yr - $170k/yr
 							Remote:               true,
+						},
+						{
+							Title:                "Senior Engineer – Demand Tech (Scala/Spark)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4287543629/",
+							Location:             "Boston, MA",
+							Date:                 mustDate("2025-08-19"),
+							WithSalary:           true, // $140k/yr - $160k/yr
+							Remote:               false,
 						},
 					},
 				},

@@ -1773,7 +1773,7 @@ func companies06Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4276855858/",
 							Location:             "Singapore, Singapore",
-							Date:                 mustDate("2025-07-31"),
+							Date:                 mustDate("2025-08-22", "2025-07-31"),
 							WithSalary:           false,
 							Remote:               false,
 						},
