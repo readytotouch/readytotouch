@@ -1267,7 +1267,8 @@ func companies19Shard() []domain.CompanyProfile {
 				ReviewsRate: "3.4",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "wolters-kluwer",
+				Employees: "19,000",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Wolters-Kluwer-EI_IE10497.11,25.htm",
@@ -1959,7 +1960,14 @@ func companies19Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Nuitee-Travel-EI_IE5318150.11,24.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Nuitee-Travel-Reviews-E5318150.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Nuitee-Travel-Jobs-E5318150.htm",
+				Jobs:        "",
+				Reviews:     "53",
+				Salaries:    "58",
+				ReviewsRate: "3.7",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",

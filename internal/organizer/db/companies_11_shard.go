@@ -896,7 +896,8 @@ func companies11Shard() []domain.CompanyProfile {
 				ReviewsRate: "4.2",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "jetbrains",
+				Alias:     "jetbrains",
+				Employees: "1,500",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-JetBrains-EI_IE222299.11,20.htm",
@@ -1050,8 +1051,9 @@ func companies11Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "MoneyLion",
-				Verified: true,
+				Login:     "MoneyLion",
+				Followers: "97",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "MoneyLion",
@@ -1663,7 +1665,11 @@ func companies11Shard() []domain.CompanyProfile {
 				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "BloomReach",
+				Employees:   "201 to 500",
+				Salary:      "",
+				Reviews:     "32",
+				ReviewsRate: "3.8",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "bloomreach",

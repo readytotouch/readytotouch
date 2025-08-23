@@ -71,8 +71,8 @@
   },
   {
     "alias": "accessowl",
-    "source": "",
-    "destination": ""
+    "source": "accessowl-180x180.png",
+    "destination": "accessowl.png"
   },
   {
     "alias": "acronis",
@@ -246,6 +246,11 @@
   },
   {
     "alias": "amoamoamo",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "amplifiloyalty",
     "source": "",
     "destination": ""
   },
@@ -1391,8 +1396,8 @@
   },
   {
     "alias": "dottxt",
-    "source": "",
-    "destination": ""
+    "source": "dottxt-180x180.png",
+    "destination": "dottxt.png"
   },
   {
     "alias": "dria-ai",
@@ -1471,6 +1476,11 @@
   },
   {
     "alias": "eachlabs",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "easypost",
     "source": "",
     "destination": ""
   },
@@ -1563,6 +1573,11 @@
     "alias": "entro-security-non-human-identities",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "entrust",
+    "source": "entrust-200x200.jpeg",
+    "destination": "entrust.jpeg"
   },
   {
     "alias": "epic-games",
@@ -1781,8 +1796,8 @@
   },
   {
     "alias": "flock-safety",
-    "source": "",
-    "destination": ""
+    "source": "flock-safety-256x256.png",
+    "destination": "flock-safety.png"
   },
   {
     "alias": "flok-health",
@@ -1801,6 +1816,11 @@
   },
   {
     "alias": "flowhub",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "fluidcloud",
     "source": "",
     "destination": ""
   },
@@ -1838,6 +1858,11 @@
     "alias": "ford-motor-company",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "forestbikeapp",
+    "source": "forestbikeapp-256x256.png",
+    "destination": "forestbikeapp.png"
   },
   {
     "alias": "form3-financial-cloud",
@@ -2185,6 +2210,11 @@
     "destination": ""
   },
   {
+    "alias": "havas",
+    "source": "havas-200x200.jpeg",
+    "destination": "havas.jpeg"
+  },
+  {
     "alias": "haza-foods-llc",
     "source": "",
     "destination": ""
@@ -2311,6 +2341,11 @@
   },
   {
     "alias": "idt",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "ifood-",
     "source": "",
     "destination": ""
   },
@@ -2583,6 +2618,11 @@
     "alias": "lantronix",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "leaseweb",
+    "source": "leaseweb-200x200.jpeg",
+    "destination": "leaseweb.jpeg"
   },
   {
     "alias": "legalzoom",
@@ -2966,8 +3006,8 @@
   },
   {
     "alias": "moneylion",
-    "source": "",
-    "destination": ""
+    "source": "moneylion-200x200.jpeg",
+    "destination": "moneylion.jpeg"
   },
   {
     "alias": "mongodbinc",
@@ -3055,6 +3095,11 @@
     "destination": ""
   },
   {
+    "alias": "n-able",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "namecheap-inc",
     "source": "",
     "destination": ""
@@ -3133,6 +3178,11 @@
     "alias": "netapp",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "netcore-cloud",
+    "source": "netcore-cloud-256x256.png",
+    "destination": "netcore-cloud.png"
   },
   {
     "alias": "netflix",
@@ -3655,6 +3705,11 @@
     "destination": ""
   },
   {
+    "alias": "postman-platform",
+    "source": "postman-200x200.jpeg",
+    "destination": "postman-platform.jpeg"
+  },
+  {
     "alias": "postscriptio",
     "source": "",
     "destination": ""
@@ -4038,6 +4093,11 @@
     "alias": "roslinhq",
     "source": "roslinhq-200x200.jpeg",
     "destination": "roslinhq.jpeg"
+  },
+  {
+    "alias": "rublon",
+    "source": "",
+    "destination": ""
   },
   {
     "alias": "rumble-com",
@@ -4890,6 +4950,11 @@
     "destination": ""
   },
   {
+    "alias": "tietoevry",
+    "source": "tietoevry-180x180.webp",
+    "destination": "tietoevry.png"
+  },
+  {
     "alias": "tiiuae",
     "source": "",
     "destination": ""
@@ -4948,6 +5013,11 @@
     "alias": "topgolf",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "torqio",
+    "source": "torqio-180x180.webp",
+    "destination": "torqio.png"
   },
   {
     "alias": "toyota-north-america",
@@ -5063,6 +5133,11 @@
     "alias": "umbraspace",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "unanet-technologies",
+    "source": "unanet-200x200.jpeg",
+    "destination": "unanet-technologies.jpeg"
   },
   {
     "alias": "underdogfantasy",
@@ -5483,6 +5558,11 @@
     "alias": "yassir",
     "source": "yassir-180x180.png",
     "destination": "yassir.png"
+  },
+  {
+    "alias": "yolcu-360",
+    "source": "yolcu-360-200x200.jpeg",
+    "destination": "yolcu-360.jpeg"
   },
   {
     "alias": "youthincsports",

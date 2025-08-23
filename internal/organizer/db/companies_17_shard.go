@@ -4506,7 +4506,11 @@ func companies17Shard() []domain.CompanyProfile {
 				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "PayPal",
+				Employees:   "10,000+",
+				Salary:      "$23K ~ $282K a year",
+				Reviews:     "2,170",
+				ReviewsRate: "3.5",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias:     "paypal",

@@ -4674,8 +4674,9 @@ func companies10Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "akamai",
+				Followers: "462",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "akamai-technologies",
@@ -4703,7 +4704,7 @@ func companies10Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 23,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Kubernetes Go Software Developer",

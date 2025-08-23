@@ -2124,10 +2124,15 @@ func companies20Shard() []domain.CompanyProfile {
 				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Lenovo",
+				Employees:   "10,000+",
+				Salary:      "$44K ~ $250K a year",
+				Reviews:     "93",
+				ReviewsRate: "3.6",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "lenovo",
+				Employees: "72,000",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -2221,10 +2226,18 @@ func companies20Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "easypost",
+				Employees: "210",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-EasyPost-EI_IE1300009.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/EasyPost-Reviews-E1300009.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/EasyPost-Jobs-E1300009.htm",
+				Jobs:        "3",
+				Reviews:     "238",
+				Salaries:    "340",
+				ReviewsRate: "3.0",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -2305,10 +2318,18 @@ func companies20Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "n-able-technologies",
+				Employees: "1,454",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-N-able-EI_IE5067371.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/N-able-Reviews-E5067371.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/N-able-Jobs-E5067371.htm",
+				Jobs:        "69",
+				Reviews:     "359",
+				Salaries:    "605",
+				ReviewsRate: "3.9",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -2466,24 +2487,37 @@ func companies20Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "postmanlabs",
+				Followers: "3.4k",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Postman",
+				Employees:   "201 to 500",
+				Salary:      "",
+				Reviews:     "188",
+				ReviewsRate: "3.4",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "postman",
+				Employees: "800",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Postman-EI_IE1926052.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Postman-Reviews-E1926052.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Postman-Jobs-E1926052.htm",
+				Jobs:        "4",
+				Reviews:     "245",
+				Salaries:    "510",
+				ReviewsRate: "3.5",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 13,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Backend Software Engineer, API Client (Node.js and/or Golang)",
@@ -2560,7 +2594,14 @@ func companies20Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Havas-Worldwide-EI_IE14455.11,26.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Havas-Worldwide-Reviews-E14455.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Havas-Worldwide-Jobs-E14455.htm",
+				Jobs:        "1",
+				Reviews:     "1.3K",
+				Salaries:    "2.3K",
+				ReviewsRate: "3.4",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -2638,13 +2679,25 @@ func companies20Shard() []domain.CompanyProfile {
 				Verified: false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "TietoEVRY",
+				Employees:   "10,000+",
+				Salary:      "",
+				Reviews:     "8",
+				ReviewsRate: "3.5",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "tietoevry",
+				Employees: "24,000",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Tietoevry-EI_IE315536.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Tietoevry-Reviews-E315536.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Tietoevry-Jobs-E315536.htm",
+				Jobs:        "317",
+				Reviews:     "4.3K",
+				Salaries:    "4.6K",
+				ReviewsRate: "4.0",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -2725,10 +2778,18 @@ func companies20Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "torq",
+				Employees: "90",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Torq-EI_IE7415271.11,15.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Torq-Reviews-E7415271.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Torq-Jobs-E7415271.htm",
+				Jobs:        "",
+				Reviews:     "17",
+				Salaries:    "25",
+				ReviewsRate: "4.7",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -2809,7 +2870,8 @@ func companies20Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "unanet",
+				Employees: "330",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
@@ -2886,24 +2948,37 @@ func companies20Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "EntrustCorporation",
+				Followers: "63",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Entrust",
+				Employees:   "1,001 to 5,000",
+				Salary:      "",
+				Reviews:     "11",
+				ReviewsRate: "3.5",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "entrust",
+				Employees: "3,000",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Entrust-EI_IE1104613.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Entrust-Reviews-E1104613.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Entrust-Jobs-E1104613.htm",
+				Jobs:        "59",
+				Reviews:     "483",
+				Salaries:    "938",
+				ReviewsRate: "3.6",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 7,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Developer II – C/Python/Go",
@@ -3054,24 +3129,33 @@ func companies20Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "Leaseweb",
+				Followers: "33",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "leaseweb",
+				Employees: "510",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Leaseweb-EI_IE697046.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Leaseweb-Reviews-E697046.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Leaseweb-Jobs-E697046.htm",
+				Jobs:        "18",
+				Reviews:     "213",
+				Salaries:    "329",
+				ReviewsRate: "3.4",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 7,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Golang Developer",
@@ -3148,7 +3232,14 @@ func companies20Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Netcore-Cloud-EI_IE519713.11,24.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Netcore-Cloud-Reviews-E519713.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Netcore-Cloud-Jobs-E519713.htm",
+				Jobs:        "",
+				Reviews:     "638",
+				Salaries:    "566",
+				ReviewsRate: "4.2",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -3400,7 +3491,14 @@ func companies20Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-AmpliFi-Loyalty-Solutions-EI_IE4449023.11,36.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/AmpliFi-Loyalty-Solutions-Reviews-E4449023.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/AmpliFi-Loyalty-Solutions-Jobs-E4449023.htm",
+				Jobs:        "5",
+				Reviews:     "11",
+				Salaries:    "34",
+				ReviewsRate: "4.1",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
