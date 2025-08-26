@@ -1139,6 +1139,12 @@ var (
 		"ifood-":                              1139, // iFood
 		"amplifiloyalty":                      1140, // ampliFI Loyalty Solutions
 		"rublon":                              1141, // Rublon
+		"bigabid":                             1142, // Bigabid
+		"permutive":                           1143, // Permutive
+		"innovatrics":                         1144, // Innovatrics
+		"spireglobal":                         1145, // Spire
+		"lgads":                               1146, // LG Ad Solutions
+		"brevo":                               1147, // Brevo
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

@@ -580,6 +580,11 @@
     "destination": ""
   },
   {
+    "alias": "bigabid",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "bigblue-co",
     "source": "",
     "destination": ""
@@ -713,6 +718,11 @@
     "alias": "breezesocial",
     "source": "breezesocial-200x200.jpeg",
     "destination": "breezesocial.jpeg"
+  },
+  {
+    "alias": "brevo",
+    "source": "",
+    "destination": ""
   },
   {
     "alias": "broadcom",
@@ -2415,6 +2425,11 @@
     "destination": ""
   },
   {
+    "alias": "innovatrics",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "instinct-science",
     "source": "",
     "destination": ""
@@ -2673,6 +2688,11 @@
     "alias": "lexisnexis-risk-solutions",
     "source": "lexisnexis-risk-solutions-200x200.jpeg",
     "destination": "lexisnexis-risk-solutions.jpeg"
+  },
+  {
+    "alias": "lgads",
+    "source": "",
+    "destination": ""
   },
   {
     "alias": "liebherr",
@@ -3630,6 +3650,11 @@
     "destination": "perkbox.png"
   },
   {
+    "alias": "permutive",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "pexip",
     "source": "",
     "destination": ""
@@ -4478,6 +4503,11 @@
     "alias": "spice-ai",
     "source": "spice-ai-200x200.jpeg",
     "destination": "spice-ai.jpeg"
+  },
+  {
+    "alias": "spireglobal",
+    "source": "",
+    "destination": ""
   },
   {
     "alias": "splash-damage",

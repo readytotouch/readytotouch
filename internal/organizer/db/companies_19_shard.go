@@ -565,8 +565,8 @@ func companies19Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4250646664/",
 							Location:             "San Jose, CA",
-							Date:                 mustDate("2025-08-23"), // mustDate("2025-08-02", "2025-07-10", "2025-06-23"),
-							WithSalary:           true,                   // $150k/yr - $175k/yr
+							Date:                 mustDate("2025-08-23", "2025-08-02", "2025-07-10", "2025-06-23"),
+							WithSalary:           true, // $150k/yr - $175k/yr
 							Remote:               false,
 						},
 						{
@@ -2989,7 +2989,7 @@ func companies19Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4222848827/",
 							Location:             "Malmo, Skåne County, Sweden",
-							Date:                 mustDate("2025-08-23"), // mustDate("2025-07-10"),
+							Date:                 mustDate("2025-08-23", "2025-07-10"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3087,7 +3087,7 @@ func companies19Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4276108751/",
 							Location:             "Melbourne, Victoria, Australia",
-							Date:                 mustDate("2025-08-26"), // mustDate("2025-07-28"),
+							Date:                 mustDate("2025-08-26", "2025-07-28"),
 							WithSalary:           false,
 							Remote:               false,
 						},
