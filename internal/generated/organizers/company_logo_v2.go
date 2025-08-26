@@ -377,7 +377,7 @@ var (
 		"foodji-marketplace-gmbh":             "",
 		"foodpanda":                           "foodpanda.jpeg",
 		"forcepoint":                          "",
-		"ford-motor-company":                  "ford-motor-company.jpeg",
+		"ford-motor-company":                  "",
 		"forestbikeapp":                       "forestbikeapp.png",
 		"form3-financial-cloud":               "",
 		"fortanix":                            "fortanix.jpeg",
