@@ -4824,7 +4824,7 @@ func companies10Shard() []domain.CompanyProfile {
 			Name:    "Qualcomm",
 			Website: "https://www.qualcomm.com/",
 			Careers: "https://www.qualcomm.com/company/careers",
-			About:   "https://www.qualcomm.com/company#about",
+			About:   "https://www.qualcomm.com/company",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                2017,
 				IDs:               []int{2017, 38387, 154985, 162572, 595224, 2923434, 75115234},
@@ -4832,7 +4832,7 @@ func companies10Shard() []domain.CompanyProfile {
 				Name:              "Qualcomm",
 				Followers:         "2M",
 				Employees:         "10K+",
-				AssociatedMembers: "45,564",
+				AssociatedMembers: "48,854",
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{

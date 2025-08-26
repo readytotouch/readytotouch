@@ -1776,7 +1776,7 @@ func companies08Shard() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "eBay",
 			Website: "https://www.ebayinc.com/",
-			Careers: "https://jobs.ebayinc.com/us/en",
+			Careers: "https://jobs.ebayinc.com/",
 			About:   "https://www.ebayinc.com/company/",
 			Blog:    "https://medium.com/@ebaytechblog",
 			LinkedInProfile: domain.LinkedInProfile{

@@ -96,8 +96,8 @@
   },
   {
     "alias": "adobe",
-    "source": "",
-    "destination": ""
+    "source": "adobe-200x200.jpeg",
+    "destination": "adobe.jpeg"
   },
   {
     "alias": "adtran",
@@ -556,8 +556,8 @@
   },
   {
     "alias": "bell",
-    "source": "",
-    "destination": ""
+    "source": "bell-200x200.jpeg",
+    "destination": "bell.jpeg"
   },
   {
     "alias": "bellroy",
@@ -581,8 +581,8 @@
   },
   {
     "alias": "bigabid",
-    "source": "",
-    "destination": ""
+    "source": "bigabid-180x180.png",
+    "destination": "bigabid.png"
   },
   {
     "alias": "bigblue-co",
@@ -656,8 +656,8 @@
   },
   {
     "alias": "bloomberg",
-    "source": "",
-    "destination": ""
+    "source": "bloomberg-200x200.jpeg",
+    "destination": "bloomberg.jpeg"
   },
   {
     "alias": "bloomreach",
@@ -721,8 +721,8 @@
   },
   {
     "alias": "brevo",
-    "source": "",
-    "destination": ""
+    "source": "brevo-200x200.jpeg",
+    "destination": "brevo.jpeg"
   },
   {
     "alias": "broadcom",
@@ -776,8 +776,8 @@
   },
   {
     "alias": "campingworld",
-    "source": "",
-    "destination": ""
+    "source": "campingworld-200x200.jpeg",
+    "destination": "campingworld.jpeg"
   },
   {
     "alias": "canonical",
@@ -841,8 +841,8 @@
   },
   {
     "alias": "centene-corporation",
-    "source": "",
-    "destination": ""
+    "source": "centene-200x200.jpeg",
+    "destination": "centene-corporation.jpeg"
   },
   {
     "alias": "centralretail",
@@ -1496,8 +1496,8 @@
   },
   {
     "alias": "ebay",
-    "source": "",
-    "destination": ""
+    "source": "ebay-200x200.jpeg",
+    "destination": "ebay.jpeg"
   },
   {
     "alias": "eburyfintech",
@@ -1531,8 +1531,8 @@
   },
   {
     "alias": "electronic-arts",
-    "source": "",
-    "destination": ""
+    "source": "electronic-arts-200x200.jpeg",
+    "destination": "electronic-arts.jpeg"
   },
   {
     "alias": "eltropy",
@@ -1886,8 +1886,8 @@
   },
   {
     "alias": "fortinet",
-    "source": "",
-    "destination": ""
+    "source": "fortinet-180x180.png",
+    "destination": "fortinet.png"
   },
   {
     "alias": "fossa",
@@ -2046,8 +2046,8 @@
   },
   {
     "alias": "glassflow-dev",
-    "source": "",
-    "destination": ""
+    "source": "glassflow-dev-463x463.png",
+    "destination": "glassflow-dev.png"
   },
   {
     "alias": "glasskube",
@@ -2311,8 +2311,8 @@
   },
   {
     "alias": "hp",
-    "source": "",
-    "destination": ""
+    "source": "hp-200x200.jpeg",
+    "destination": "hp.jpeg"
   },
   {
     "alias": "hsbc",
@@ -2426,8 +2426,8 @@
   },
   {
     "alias": "innovatrics",
-    "source": "",
-    "destination": ""
+    "source": "innovatrics-180x180.png",
+    "destination": "innovatrics.png"
   },
   {
     "alias": "instinct-science",
@@ -2451,8 +2451,8 @@
   },
   {
     "alias": "ipsos",
-    "source": "",
-    "destination": ""
+    "source": "ipsos-200x200.jpeg",
+    "destination": "ipsos.jpeg"
   },
   {
     "alias": "isovalent",
@@ -2616,8 +2616,8 @@
   },
   {
     "alias": "kroger",
-    "source": "",
-    "destination": ""
+    "source": "kroger-200x200.jpeg",
+    "destination": "kroger.jpeg"
   },
   {
     "alias": "kyp",
@@ -2696,8 +2696,8 @@
   },
   {
     "alias": "liebherr",
-    "source": "",
-    "destination": ""
+    "source": "liebherr-180x180.png",
+    "destination": "liebherr.png"
   },
   {
     "alias": "lightspeed-systems",
@@ -2896,8 +2896,8 @@
   },
   {
     "alias": "mayaph",
-    "source": "",
-    "destination": ""
+    "source": "mayaph-200x200.jpeg",
+    "destination": "mayaph.jpeg"
   },
   {
     "alias": "mayflower-tech",
@@ -3051,8 +3051,8 @@
   },
   {
     "alias": "moodys-corporation",
-    "source": "",
-    "destination": ""
+    "source": "moodys-200x200.jpeg",
+    "destination": "moodys-corporation.jpeg"
   },
   {
     "alias": "morgan-stanley",
@@ -3161,8 +3161,8 @@
   },
   {
     "alias": "ncratleos",
-    "source": "",
-    "destination": ""
+    "source": "ncratleos-200x200.jpeg",
+    "destination": "ncratleos.jpeg"
   },
   {
     "alias": "ncrvoyix",
@@ -3206,8 +3206,8 @@
   },
   {
     "alias": "netflix",
-    "source": "",
-    "destination": ""
+    "source": "netflix-64x64.png",
+    "destination": "netflix.png"
   },
   {
     "alias": "netlify",
@@ -3266,8 +3266,8 @@
   },
   {
     "alias": "nike",
-    "source": "",
-    "destination": ""
+    "source": "nike-152x152.png",
+    "destination": "nike.png"
   },
   {
     "alias": "nine-entertainment-co.",
@@ -3301,13 +3301,13 @@
   },
   {
     "alias": "nokia",
-    "source": "",
-    "destination": ""
+    "source": "nokia-180x180.png",
+    "destination": "nokia.png"
   },
   {
     "alias": "nordea",
-    "source": "",
-    "destination": ""
+    "source": "nordea-200x200.jpeg",
+    "destination": "nordea.jpeg"
   },
   {
     "alias": "nordsecurity",
@@ -3651,8 +3651,8 @@
   },
   {
     "alias": "permutive",
-    "source": "",
-    "destination": ""
+    "source": "permutive-180x180.webp",
+    "destination": "permutive.png"
   },
   {
     "alias": "pexip",
@@ -3886,8 +3886,8 @@
   },
   {
     "alias": "qualcomm",
-    "source": "",
-    "destination": ""
+    "source": "qualcomm-200x200.jpeg",
+    "destination": "qualcomm.jpeg"
   },
   {
     "alias": "quantexa",
@@ -4146,8 +4146,8 @@
   },
   {
     "alias": "ryanair",
-    "source": "",
-    "destination": ""
+    "source": "ryanair-96x96.png",
+    "destination": "ryanair.png"
   },
   {
     "alias": "saberapp",
@@ -4186,8 +4186,8 @@
   },
   {
     "alias": "samsung-electronics",
-    "source": "",
-    "destination": ""
+    "source": "samsung-144x144.png",
+    "destination": "samsung-electronics.png"
   },
   {
     "alias": "samsungfoodofficial",
@@ -4276,8 +4276,8 @@
   },
   {
     "alias": "sectigo",
-    "source": "",
-    "destination": ""
+    "source": "sectigo-180x180.png",
+    "destination": "sectigo.png"
   },
   {
     "alias": "seedtag",
@@ -4306,8 +4306,8 @@
   },
   {
     "alias": "sentinelone",
-    "source": "",
-    "destination": ""
+    "source": "sentinelone-180x180.webp",
+    "destination": "sentinelone.png"
   },
   {
     "alias": "shopee",
@@ -4506,8 +4506,8 @@
   },
   {
     "alias": "spireglobal",
-    "source": "",
-    "destination": ""
+    "source": "spire-200x200.jpeg",
+    "destination": "spireglobal.jpeg"
   },
   {
     "alias": "splash-damage",
@@ -4736,8 +4736,8 @@
   },
   {
     "alias": "swiss-post",
-    "source": "",
-    "destination": ""
+    "source": "swiss-post-200x200.jpeg",
+    "destination": "swiss-post.jpeg"
   },
   {
     "alias": "symbolica-ai",
@@ -4756,8 +4756,8 @@
   },
   {
     "alias": "synopsys",
-    "source": "",
-    "destination": ""
+    "source": "synopsys-200x200.jpeg",
+    "destination": "synopsys.jpeg"
   },
   {
     "alias": "synthflowai",
@@ -4776,8 +4776,8 @@
   },
   {
     "alias": "t-mobile",
-    "source": "",
-    "destination": ""
+    "source": "t-mobile-200x200.jpeg",
+    "destination": "t-mobile.jpeg"
   },
   {
     "alias": "tabbypay",
@@ -4936,8 +4936,8 @@
   },
   {
     "alias": "the-walt-disney-company",
-    "source": "",
-    "destination": ""
+    "source": "disney-200x200.png",
+    "destination": "the-walt-disney-company.png"
   },
   {
     "alias": "thefalconx",
@@ -5136,8 +5136,8 @@
   },
   {
     "alias": "uber-com",
-    "source": "",
-    "destination": ""
+    "source": "uber-200x200.jpeg",
+    "destination": "uber-com.jpeg"
   },
   {
     "alias": "ubiquiti-",
@@ -5226,8 +5226,8 @@
   },
   {
     "alias": "utilitywarehouse",
-    "source": "",
-    "destination": ""
+    "source": "utilitywarehouse-200x200.jpeg",
+    "destination": "utilitywarehouse.jpeg"
   },
   {
     "alias": "valence-security",
