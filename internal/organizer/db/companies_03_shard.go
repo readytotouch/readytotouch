@@ -4548,7 +4548,7 @@ func companies03Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4274647631/",
 							Location:             "São Paulo, São Paulo, Brazil",
-							Date:                 mustDate("2025-08-02"),
+							Date:                 mustDate("2025-08-23", "2025-08-02"),
 							WithSalary:           false,
 							Remote:               true,
 						},
