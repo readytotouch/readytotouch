@@ -1821,7 +1821,7 @@ func companies15Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4227134333/",
 							Location:             "Krakowski, Małopolskie, Poland",
-							Date:                 mustDate("2025-08-04", "2025-07-13", "2025-06-22", "2025-05-10"),
+							Date:                 mustDate("2025-08-24", "2025-08-04", "2025-07-13", "2025-06-22", "2025-05-10"),
 							WithSalary:           false,
 							Remote:               false,
 						},

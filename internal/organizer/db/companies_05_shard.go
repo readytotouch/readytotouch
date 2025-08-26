@@ -3729,7 +3729,7 @@ func companies05Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4262515881/",
 							Location:             "Jacksonville, FL",
-							Date:                 mustDate("2025-07-10"),
+							Date:                 mustDate("2025-08-23", "2025-07-10"),
 							WithSalary:           true, // $99.4k/yr - $177.6k/yr
 							Remote:               false,
 						},
