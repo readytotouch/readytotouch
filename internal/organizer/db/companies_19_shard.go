@@ -4825,7 +4825,7 @@ func companies19Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4214640651/",
 							Location:             "Zurich, Zurich, Switzerland",
-							Date:                 mustDate("2025-07-19"),
+							Date:                 mustDate("2025-09-02", "2025-07-19"),
 							WithSalary:           false,
 							Remote:               false,
 						},
