@@ -575,7 +575,7 @@ func companies19Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4289985968/",
 							Location:             "Toronto, ON",
-							Date:                 mustDate("2025-08-23"),
+							Date:                 mustDate("2025-08-31", "2025-08-23"),
 							WithSalary:           false,
 							Remote:               false,
 						},

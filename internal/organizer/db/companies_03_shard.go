@@ -1533,8 +1533,8 @@ func companies03Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4149693865/",
 							Location:             "United States",
-							Date:                 mustDate("2025-08-09", "2025-06-27", "2025-06-05", "2025-05-15", "2025-04-24", "2025-03-27", "2025-03-06", "2025-02-11"),
-							WithSalary:           true, // $110,250 - $157,500 - $204,750 (min-mid-max)
+							Date:                 mustDate("2025-08-31", "2025-08-09", "2025-06-27", "2025-06-05", "2025-05-15", "2025-04-24", "2025-03-27", "2025-03-06", "2025-02-11"),
+							WithSalary:           true,                   // $110,250 - $157,500 - $204,750 (min-mid-max)
 							Remote:               true,
 						},
 						{
@@ -2667,7 +2667,7 @@ func companies03Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4261152549/",
 							Location:             "Vienna, Vienna, Austria",
-							Date:                 mustDate("2025-07-21"),
+							Date:                 mustDate("2025-09-02", "2025-07-21"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -4470,6 +4470,16 @@ func companies03Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4255827006/",
 							Location:             "São Paulo, São Paulo, Brazil",
 							Date:                 mustDate("2025-08-11"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+						{
+							Title:                "Engineer – Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4255820817/",
+							Location:             "São Paulo, São Paulo, Brazil",
+							Date:                 mustDate("2025-09-01"),
 							WithSalary:           false,
 							Remote:               true,
 						},

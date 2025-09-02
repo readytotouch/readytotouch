@@ -935,7 +935,7 @@ func companies06Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4270290426/",
 							Location:             "Tallinn, Harjumaa, Estonia",
-							Date:                 mustDate("2025-07-21"),
+							Date:                 mustDate("2025-09-02", "2025-07-21"),
 							WithSalary:           false,
 							Remote:               false,
 						},

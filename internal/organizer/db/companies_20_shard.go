@@ -52,6 +52,16 @@ func companies20Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Golang Engineer (Data)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4278079889/",
+							Location:             "European Union",
+							Date:                 mustDate("2025-09-02"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust: {
@@ -2064,6 +2074,16 @@ func companies20Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Golang Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4291727451/",
+							Location:             "Iaşi, Iaşi, Romania",
+							Date:                 mustDate("2025-09-01"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
@@ -2889,8 +2909,8 @@ func companies20Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4289364017/",
 							Location:             "United States",
-							Date:                 mustDate("2025-08-22"),
-							WithSalary:           true, // $152k/yr - $170k/yr + bonus, stock options
+							Date:                 mustDate("2025-09-02", "2025-08-22"),
+							WithSalary:           true,                   // $152k/yr - $170k/yr + bonus, stock options
 							Remote:               true,
 						},
 					},
