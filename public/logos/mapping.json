@@ -2326,8 +2326,8 @@
   },
   {
     "alias": "hudl",
-    "source": "",
-    "destination": ""
+    "source": "hudl-180x180.png",
+    "destination": "hudl.png"
   },
   {
     "alias": "hunterio",
@@ -2516,8 +2516,8 @@
   },
   {
     "alias": "julius-baer",
-    "source": "",
-    "destination": ""
+    "source": "julius-baer-180x180.png",
+    "destination": "julius-baer.png"
   },
   {
     "alias": "just-eat-takeaway-com",
@@ -4896,8 +4896,8 @@
   },
   {
     "alias": "tenstorrent-inc.",
-    "source": "",
-    "destination": ""
+    "source": "tenstorrent-463x463.png",
+    "destination": "tenstorrent-inc..png"
   },
   {
     "alias": "teradata",
