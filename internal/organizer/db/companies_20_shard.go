@@ -4141,6 +4141,90 @@ func companies20Shard() []domain.CompanyProfile {
 				// NOP
 			},
 		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Hudl",
+			Website: "https://www.hudl.com/",
+			Careers: "https://www.hudl.com/jobs",
+			About:   "https://www.hudl.com/about",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2464624,
+				IDs:               nil,
+				Alias:             "hudl",
+				Name:              "Hudl",
+				Followers:         "94K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "3,836",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Engineer (Clojure)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4294245074/",
+							Location:             "London, England, United Kingdom",
+							Date:                 mustDate("2025-09-02"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Performance analysis for sports",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
 
 		// Template
 		//{
