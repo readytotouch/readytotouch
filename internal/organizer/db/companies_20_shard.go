@@ -2155,7 +2155,14 @@ func companies20Shard() []domain.CompanyProfile {
 				Employees: "72,000",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Lenovo-EI_IE8034.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Lenovo-Reviews-E8034.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Lenovo-Jobs-E8034.htm",
+				Jobs:        "",
+				Reviews:     "5K",
+				Salaries:    "7.5K",
+				ReviewsRate: "3.9",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -2894,7 +2901,14 @@ func companies20Shard() []domain.CompanyProfile {
 				Employees: "330",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Unanet-EI_IE355390.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Unanet-Reviews-E355390.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Unanet-Jobs-E355390.htm",
+				Jobs:        "",
+				Reviews:     "128",
+				Salaries:    "240",
+				ReviewsRate: "3.9",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -2910,7 +2924,7 @@ func companies20Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4289364017/",
 							Location:             "United States",
 							Date:                 mustDate("2025-09-02", "2025-08-22"),
-							WithSalary:           true,                   // $152k/yr - $170k/yr + bonus, stock options
+							WithSalary:           true, // $152k/yr - $170k/yr + bonus, stock options
 							Remote:               true,
 						},
 					},
@@ -3686,7 +3700,14 @@ func companies20Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-BigaBid-EI_IE3055132.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/BigaBid-Reviews-E3055132.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/BigaBid-Jobs-E3055132.htm",
+				Jobs:        "16",
+				Reviews:     "30",
+				Salaries:    "33",
+				ReviewsRate: "3.7",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -3760,8 +3781,9 @@ func companies20Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "permutive",
+				Followers: "23",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -3770,7 +3792,14 @@ func companies20Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Permutive-EI_IE2116966.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Permutive-Reviews-E2116966.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Permutive-Jobs-E2116966.htm",
+				Jobs:        "",
+				Reviews:     "60",
+				Salaries:    "164",
+				ReviewsRate: "3.7",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -3789,7 +3818,7 @@ func companies20Shard() []domain.CompanyProfile {
 					Vacancies:               []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 3,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Scala Engineer",
@@ -3854,7 +3883,14 @@ func companies20Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Innovatrics-EI_IE1862436.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Innovatrics-Reviews-E1862436.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Innovatrics-Jobs-E1862436.htm",
+				Jobs:        "2",
+				Reviews:     "22",
+				Salaries:    "47",
+				ReviewsRate: "3.4",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -3938,7 +3974,14 @@ func companies20Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Spire-Global-EI_IE794910.11,23.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Spire-Global-Reviews-E794910.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Spire-Global-Jobs-E794910.htm",
+				Jobs:        "66",
+				Reviews:     "141",
+				Salaries:    "281",
+				ReviewsRate: "2.7",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -4096,8 +4139,9 @@ func companies20Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "getbrevo",
+				Followers: "41",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -4106,14 +4150,21 @@ func companies20Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Brevo-EI_IE809418.11,16.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Brevo-Reviews-E809418.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Brevo-Jobs-E809418.htm",
+				Jobs:        "23",
+				Reviews:     "321",
+				Salaries:    "564",
+				ReviewsRate: "3.9",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 1,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Golang Developer",
@@ -4180,8 +4231,9 @@ func companies20Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "hudl",
+				Followers: "150",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -4190,14 +4242,21 @@ func companies20Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Hudl-EI_IE826705.11,15.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Hudl-Reviews-E826705.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Hudl-Jobs-E826705.htm",
+				Jobs:        "13",
+				Reviews:     "1.2K",
+				Salaries:    "1.9K",
+				ReviewsRate: "4.0",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 14,
 					Vacancies:               []domain.Vacancy{},
 				},
 				domain.Rust: {
@@ -4274,7 +4333,14 @@ func companies20Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Recorded-Future-EI_IE1322290.11,26.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Recorded-Future-Reviews-E1322290.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Recorded-Future-Jobs-E1322290.htm",
+				Jobs:        "70",
+				Reviews:     "233",
+				Salaries:    "454",
+				ReviewsRate: "3.7",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -4358,7 +4424,14 @@ func companies20Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Opensignal-EI_IE723974.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Opensignal-Reviews-E723974.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Opensignal-Jobs-E723974.htm",
+				Jobs:        "8",
+				Reviews:     "44",
+				Salaries:    "113",
+				ReviewsRate: "3.6",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
