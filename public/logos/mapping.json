@@ -2325,6 +2325,11 @@
     "destination": ""
   },
   {
+    "alias": "hudl",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "hunterio",
     "source": "",
     "destination": ""
@@ -3455,6 +3460,11 @@
     "destination": ""
   },
   {
+    "alias": "opensignal",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "openwebhq",
     "source": "",
     "destination": ""
@@ -3983,6 +3993,11 @@
     "alias": "readytotouch",
     "source": "readytotouch-192x192.png",
     "destination": "readytotouch.png"
+  },
+  {
+    "alias": "recorded-future",
+    "source": "",
+    "destination": ""
   },
   {
     "alias": "recurly",
