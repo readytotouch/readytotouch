@@ -2347,6 +2347,16 @@ func companies14Shard() []domain.CompanyProfile {
 							WithSalary:           true,
 							Remote:               true,
 						},
+						{
+							Title:                "Principal Software Engineer – Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4280891809/",
+							Location:             "United States",
+							Date:                 mustDate("2025-08-29"),
+							WithSalary:           true, // $150k/yr - $300k/yr
+							Remote:               true,
+						},
 					},
 				},
 				domain.Zig:     {},

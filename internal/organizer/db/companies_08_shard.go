@@ -2740,7 +2740,7 @@ func companies08Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4160534145/",
 							Location:             "Herzliya, Tel Aviv District, Israel",
-							Date:                 mustDate("2025-08-11", "2025-07-21", "2025-06-30", "2025-06-08", "2025-05-18"),
+							Date:                 mustDate("2025-09-02", "2025-08-11", "2025-07-21", "2025-06-30", "2025-06-08", "2025-05-18"),
 							WithSalary:           false,
 							Remote:               false,
 						},
