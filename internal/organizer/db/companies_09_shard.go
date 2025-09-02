@@ -914,6 +914,16 @@ func companies09Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Software Engineer – Go / C++",
+							ShortDescription:     "Vectorization / Model Creation",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4291167289/",
+							Location:             "San Jose, CA",
+							Date:                 mustDate("2025-08-30"),
+							WithSalary:           true, // $130.9k/yr - $194.7k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -1000,7 +1010,7 @@ func companies09Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4226881351/",
 							Location:             "Taipei, Taipei City, Taiwan",
-							Date:                 mustDate("2025-08-10", "2025-07-19"),
+							Date:                 mustDate("2025-08-31", "2025-08-10", "2025-07-19"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -5124,6 +5134,16 @@ func companies09Shard() []domain.CompanyProfile {
 							Location:             "Dedham, MA",
 							Date:                 mustDate("2025-08-01"),
 							WithSalary:           true, // $107.5k/yr - $115k/yr
+							Remote:               false,
+						},
+						{
+							Title:                "Rust Embedded Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4292645603/",
+							Location:             "Taunton, MA",
+							Date:                 mustDate("2025-09-02"),
+							WithSalary:           true, // $102.6k/yr - $108k/yr
 							Remote:               false,
 						},
 					},

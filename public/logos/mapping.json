@@ -2325,6 +2325,11 @@
     "destination": ""
   },
   {
+    "alias": "hudl",
+    "source": "hudl-180x180.png",
+    "destination": "hudl.png"
+  },
+  {
     "alias": "hunterio",
     "source": "",
     "destination": ""
@@ -2511,8 +2516,8 @@
   },
   {
     "alias": "julius-baer",
-    "source": "",
-    "destination": ""
+    "source": "julius-baer-180x180.png",
+    "destination": "julius-baer.png"
   },
   {
     "alias": "just-eat-takeaway-com",
@@ -3455,6 +3460,11 @@
     "destination": ""
   },
   {
+    "alias": "opensignal",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "openwebhq",
     "source": "",
     "destination": ""
@@ -3983,6 +3993,11 @@
     "alias": "readytotouch",
     "source": "readytotouch-192x192.png",
     "destination": "readytotouch.png"
+  },
+  {
+    "alias": "recorded-future",
+    "source": "",
+    "destination": ""
   },
   {
     "alias": "recurly",
@@ -4881,8 +4896,8 @@
   },
   {
     "alias": "tenstorrent-inc.",
-    "source": "",
-    "destination": ""
+    "source": "tenstorrent-463x463.png",
+    "destination": "tenstorrent-inc..png"
   },
   {
     "alias": "teradata",

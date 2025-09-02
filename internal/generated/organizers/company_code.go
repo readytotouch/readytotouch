@@ -1145,6 +1145,9 @@ var (
 		"spireglobal":                         1145, // Spire
 		"lgads":                               1146, // LG Ad Solutions
 		"brevo":                               1147, // Brevo
+		"hudl":                                1148, // Hudl
+		"recorded-future":                     1149, // Recorded Future
+		"opensignal":                          1150, // Opensignal
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

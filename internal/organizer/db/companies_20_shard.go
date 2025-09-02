@@ -52,6 +52,16 @@ func companies20Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Golang Engineer (Data)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4278079889/",
+							Location:             "European Union",
+							Date:                 mustDate("2025-09-02"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust: {
@@ -2064,6 +2074,16 @@ func companies20Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Golang Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4291727451/",
+							Location:             "Iaşi, Iaşi, Romania",
+							Date:                 mustDate("2025-09-01"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
@@ -2135,7 +2155,14 @@ func companies20Shard() []domain.CompanyProfile {
 				Employees: "72,000",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Lenovo-EI_IE8034.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Lenovo-Reviews-E8034.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Lenovo-Jobs-E8034.htm",
+				Jobs:        "",
+				Reviews:     "5K",
+				Salaries:    "7.5K",
+				ReviewsRate: "3.9",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -2874,7 +2901,14 @@ func companies20Shard() []domain.CompanyProfile {
 				Employees: "330",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Unanet-EI_IE355390.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Unanet-Reviews-E355390.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Unanet-Jobs-E355390.htm",
+				Jobs:        "",
+				Reviews:     "128",
+				Salaries:    "240",
+				ReviewsRate: "3.9",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -2889,7 +2923,7 @@ func companies20Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4289364017/",
 							Location:             "United States",
-							Date:                 mustDate("2025-08-22"),
+							Date:                 mustDate("2025-09-02", "2025-08-22"),
 							WithSalary:           true, // $152k/yr - $170k/yr + bonus, stock options
 							Remote:               true,
 						},
@@ -3666,7 +3700,14 @@ func companies20Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-BigaBid-EI_IE3055132.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/BigaBid-Reviews-E3055132.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/BigaBid-Jobs-E3055132.htm",
+				Jobs:        "16",
+				Reviews:     "30",
+				Salaries:    "33",
+				ReviewsRate: "3.7",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -3740,8 +3781,9 @@ func companies20Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "permutive",
+				Followers: "23",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -3750,7 +3792,14 @@ func companies20Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Permutive-EI_IE2116966.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Permutive-Reviews-E2116966.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Permutive-Jobs-E2116966.htm",
+				Jobs:        "",
+				Reviews:     "60",
+				Salaries:    "164",
+				ReviewsRate: "3.7",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -3769,7 +3818,7 @@ func companies20Shard() []domain.CompanyProfile {
 					Vacancies:               []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 3,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Scala Engineer",
@@ -3834,7 +3883,14 @@ func companies20Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Innovatrics-EI_IE1862436.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Innovatrics-Reviews-E1862436.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Innovatrics-Jobs-E1862436.htm",
+				Jobs:        "2",
+				Reviews:     "22",
+				Salaries:    "47",
+				ReviewsRate: "3.4",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -3918,7 +3974,14 @@ func companies20Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Spire-Global-EI_IE794910.11,23.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Spire-Global-Reviews-E794910.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Spire-Global-Jobs-E794910.htm",
+				Jobs:        "66",
+				Reviews:     "141",
+				Salaries:    "281",
+				ReviewsRate: "2.7",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -4076,8 +4139,9 @@ func companies20Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "getbrevo",
+				Followers: "41",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -4086,14 +4150,21 @@ func companies20Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Brevo-EI_IE809418.11,16.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Brevo-Reviews-E809418.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Brevo-Jobs-E809418.htm",
+				Jobs:        "23",
+				Reviews:     "321",
+				Salaries:    "564",
+				ReviewsRate: "3.9",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 1,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Golang Developer",
@@ -4140,6 +4211,365 @@ func companies20Shard() []domain.CompanyProfile {
 			Industries:       []domain.Industry{
 				// NOP
 			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Hudl",
+			Website: "https://www.hudl.com/",
+			Careers: "https://www.hudl.com/jobs",
+			About:   "https://www.hudl.com/about",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2464624,
+				IDs:               nil,
+				Alias:             "hudl",
+				Name:              "Hudl",
+				Followers:         "94K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "3,836",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:     "hudl",
+				Followers: "150",
+				Verified:  true,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Hudl-EI_IE826705.11,15.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Hudl-Reviews-E826705.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Hudl-Jobs-E826705.htm",
+				Jobs:        "13",
+				Reviews:     "1.2K",
+				Salaries:    "1.9K",
+				ReviewsRate: "4.0",
+				Verified:    false,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 14,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Engineer (Clojure)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4294245074/",
+							Location:             "London, England, United Kingdom",
+							Date:                 mustDate("2025-09-02"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Performance analysis for sports",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Recorded Future",
+			Website: "https://www.recordedfuture.com/",
+			Careers: "https://www.recordedfuture.com/work-with-us/jobs",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                678036,
+				IDs:               nil,
+				Alias:             "recorded-future",
+				Name:              "Recorded Future",
+				Followers:         "77K",
+				Employees:         "501-1K",
+				AssociatedMembers: "1,079",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Recorded-Future-EI_IE1322290.11,26.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Recorded-Future-Reviews-E1322290.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Recorded-Future-Jobs-E1322290.htm",
+				Jobs:        "70",
+				Reviews:     "233",
+				Salaries:    "454",
+				ReviewsRate: "3.7",
+				Verified:    false,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Backend Software Engineer (Elixir)",
+							ShortDescription:     "Attack Surface Intelligence",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4293000776/",
+							Location:             "Boston, VA",
+							Date:                 mustDate("2025-08-30"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Threat intelligence company",
+			Industries: []domain.Industry{
+				domain.IndustryCyberSecurity,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Opensignal",
+			Website: "https://www.opensignal.com/",
+			Careers: "https://www.opensignal.com/about/opensignal-careers",
+			About:   "https://www.opensignal.com/about-us",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1954386,
+				IDs:               nil,
+				Alias:             "opensignal",
+				Name:              "Opensignal",
+				Followers:         "37K",
+				Employees:         "201-500",
+				AssociatedMembers: "299",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Opensignal-EI_IE723974.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Opensignal-Reviews-E723974.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Opensignal-Jobs-E723974.htm",
+				Jobs:        "8",
+				Reviews:     "44",
+				Salaries:    "113",
+				ReviewsRate: "3.6",
+				Verified:    false,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Scala Data Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4258545583/",
+							Location:             "Warsaw, Mazowieckie, Poland",
+							Date:                 mustDate("2025-08-30"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "",
+			Industries: []domain.Industry{
+				domain.IndustryTelecom,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Football Radar",
+			Website: "https://www.footballradar.com/",
+			Careers: "https://www.footballradar.com/careers/",
+			About:   "https://www.footballradar.com/about/",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1697361,
+				IDs:               nil,
+				Alias:             "football-radar-ltd",
+				Name:              "Football Radar",
+				Followers:         "12K",
+				Employees:         "51-200",
+				AssociatedMembers: "109",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Scala Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4293313610/",
+							Location:             "London Area, United Kingdom",
+							Date:                 mustDate("2025-08-31"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Provider of football betting advice",
+			Industries:       []domain.Industry{
+				// Betting
+			},
+			Ignore: true, // Betting
 		},
 
 		// Template

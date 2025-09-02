@@ -2664,6 +2664,16 @@ func companies18Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Satellite Flight Software Engineer (Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4281438944/",
+							Location:             "Chantilly, VA",
+							Date:                 mustDate("2025-09-02"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig: {
