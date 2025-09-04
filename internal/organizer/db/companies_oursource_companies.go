@@ -2274,5 +2274,21 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "RE Partners",
+			Website: "https://www.re-partners.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                30099094,
+				IDs:               nil,
+				Alias:             "re-partners",
+				Name:              "RE Partners",
+				Followers:         "71K",
+				Employees:         "201-500",
+				AssociatedMembers: "95",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }

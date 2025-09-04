@@ -353,6 +353,16 @@ func companies12Shard() []domain.CompanyProfile {
 							WithSalary:           true, // €48k/yr - €54k/yr
 							Remote:               true,
 						},
+						{
+							Title:                "Software Engineer — Backend (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4283545481/",
+							Location:             "Istanbul, Istanbul, Türkiye",
+							Date:                 mustDate("2025-09-04"),
+							WithSalary:           true, // €48k/yr - €54k/yr
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -867,6 +877,16 @@ func companies12Shard() []domain.CompanyProfile {
 							Date:                 mustDate("2025-08-09"),
 							WithSalary:           false,
 							Remote:               true,
+						},
+						{
+							Title:                "Senior Software Engineer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4282248862/",
+							Location:             "Bangkok, Bangkok City, Thailand",
+							Date:                 mustDate("2025-09-04"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 					},
 				},
