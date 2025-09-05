@@ -156,8 +156,8 @@
   },
   {
     "alias": "airspacelink",
-    "source": "",
-    "destination": ""
+    "source": "airspacelink-200x200.jpeg",
+    "destination": "airspacelink.jpeg"
   },
   {
     "alias": "airudder",
@@ -651,8 +651,8 @@
   },
   {
     "alias": "blackpoint",
-    "source": "",
-    "destination": ""
+    "source": "blackpoint-180x180.webp",
+    "destination": "blackpoint.png"
   },
   {
     "alias": "blackrock",
@@ -696,8 +696,8 @@
   },
   {
     "alias": "bol-com",
-    "source": "",
-    "destination": ""
+    "source": "bol-200x200.jpeg",
+    "destination": "bol-com.jpeg"
   },
   {
     "alias": "boodleboxai",
@@ -746,8 +746,8 @@
   },
   {
     "alias": "btaskee",
-    "source": "",
-    "destination": ""
+    "source": "btaskee-200x200.jpeg",
+    "destination": "btaskee.jpeg"
   },
   {
     "alias": "buenro",
@@ -1166,8 +1166,8 @@
   },
   {
     "alias": "cross-river-bank",
-    "source": "",
-    "destination": ""
+    "source": "crossriver-256x256.png",
+    "destination": "cross-river-bank.png"
   },
   {
     "alias": "crowd-riff",
@@ -1506,8 +1506,8 @@
   },
   {
     "alias": "eachlabs",
-    "source": "",
-    "destination": ""
+    "source": "eachlabs-200x200.jpeg",
+    "destination": "eachlabs.jpeg"
   },
   {
     "alias": "easypost",
@@ -1536,8 +1536,8 @@
   },
   {
     "alias": "edbpostgres",
-    "source": "",
-    "destination": ""
+    "source": "edbpostgres-200x200.jpeg",
+    "destination": "edbpostgres.jpeg"
   },
   {
     "alias": "eightcap-aufx",
@@ -1646,8 +1646,8 @@
   },
   {
     "alias": "evana",
-    "source": "",
-    "destination": ""
+    "source": "evana-180x180.png",
+    "destination": "evana.png"
   },
   {
     "alias": "event-inc",
@@ -1721,8 +1721,8 @@
   },
   {
     "alias": "fanatics-inc-",
-    "source": "",
-    "destination": ""
+    "source": "fanaticsinc-200x200.jpeg",
+    "destination": "fanatics-inc-.jpeg"
   },
   {
     "alias": "fastly",
@@ -2526,8 +2526,8 @@
   },
   {
     "alias": "joincruit",
-    "source": "",
-    "destination": ""
+    "source": "joincruit-200x200.jpeg",
+    "destination": "joincruit.jpeg"
   },
   {
     "alias": "joinpult",
@@ -2726,8 +2726,8 @@
   },
   {
     "alias": "lgads",
-    "source": "",
-    "destination": ""
+    "source": "lgads-200x200.jpeg",
+    "destination": "lgads.jpeg"
   },
   {
     "alias": "liebherr",
@@ -3926,8 +3926,8 @@
   },
   {
     "alias": "quadcodecareer",
-    "source": "",
-    "destination": ""
+    "source": "quadcode-200x200.jpeg",
+    "destination": "quadcodecareer.jpeg"
   },
   {
     "alias": "qualcomm",
@@ -4146,8 +4146,8 @@
   },
   {
     "alias": "robomarkets",
-    "source": "",
-    "destination": ""
+    "source": "robomarkets-180x180.png",
+    "destination": "robomarkets.png"
   },
   {
     "alias": "rocket-lab-limited",
@@ -4516,8 +4516,8 @@
   },
   {
     "alias": "solo-funds",
-    "source": "",
-    "destination": ""
+    "source": "solofunds-180x180.webp",
+    "destination": "solo-funds.png"
   },
   {
     "alias": "solo.io",
@@ -5301,8 +5301,8 @@
   },
   {
     "alias": "varonis",
-    "source": "",
-    "destination": ""
+    "source": "varonis-200x200.jpeg",
+    "destination": "varonis.jpeg"
   },
   {
     "alias": "vaytechnology",
@@ -5576,8 +5576,8 @@
   },
   {
     "alias": "wolt-oy",
-    "source": "",
-    "destination": ""
+    "source": "wolt-200x200.jpeg",
+    "destination": "wolt-oy.jpeg"
   },
   {
     "alias": "wolters-kluwer",
