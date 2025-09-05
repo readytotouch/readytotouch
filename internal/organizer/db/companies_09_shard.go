@@ -2364,8 +2364,9 @@ func companies09Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "enterprisedb",
-				Verified: false,
+				Login:     "enterprisedb",
+				Followers: "319",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "EnterpriseDB",
@@ -2393,7 +2394,7 @@ func companies09Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 4,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Platform Engineer (Golang)",
