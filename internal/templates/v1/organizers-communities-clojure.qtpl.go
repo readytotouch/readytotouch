@@ -77,11 +77,8 @@ func StreamOrganizersCommunitiesClojure(qw422016 *qt422016.Writer, organizer Org
 	qw422016.E().S(organizer.Alias)
 	qw422016.N().S(`/jobs" class="header__nav-link">Jobs</a>
       </li>
-      <li class="header__nav-item">
-        <a href="/`)
-	qw422016.E().S(organizer.Alias)
-	qw422016.N().S(`/communities" class="header__nav-link active">Communities</a>
-      </li>
+      `)
+	qw422016.N().S(`
     </ul>
 
     `)
