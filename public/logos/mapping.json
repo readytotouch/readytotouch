@@ -155,6 +155,11 @@
     "destination": ""
   },
   {
+    "alias": "airspacelink",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "airudder",
     "source": "",
     "destination": ""
@@ -470,6 +475,11 @@
     "destination": ""
   },
   {
+    "alias": "avey-ai",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "aviatrix-systems",
     "source": "",
     "destination": ""
@@ -640,6 +650,11 @@
     "destination": "black-duck-software.jpeg"
   },
   {
+    "alias": "blackpoint",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "blackrock",
     "source": "blackrock-200x200.jpeg",
     "destination": "blackrock.jpeg"
@@ -726,6 +741,11 @@
   },
   {
     "alias": "broadcom",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "btaskee",
     "source": "",
     "destination": ""
   },
@@ -1625,6 +1645,11 @@
     "destination": ""
   },
   {
+    "alias": "evana",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "event-inc",
     "source": "event-inc-192x192.png",
     "destination": "event-inc.png"
@@ -2500,6 +2525,11 @@
     "destination": ""
   },
   {
+    "alias": "joincruit",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "joinpult",
     "source": "",
     "destination": ""
@@ -2791,6 +2821,11 @@
   },
   {
     "alias": "lucidmotors",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "lumeltech",
     "source": "",
     "destination": ""
   },
@@ -4110,6 +4145,11 @@
     "destination": ""
   },
   {
+    "alias": "robomarkets",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "rocket-lab-limited",
     "source": "",
     "destination": ""
@@ -4473,6 +4513,11 @@
     "alias": "solarwinds",
     "source": "solarwinds-200x200.jpeg",
     "destination": "solarwinds.jpeg"
+  },
+  {
+    "alias": "solo-funds",
+    "source": "",
+    "destination": ""
   },
   {
     "alias": "solo.io",
@@ -5608,6 +5653,11 @@
     "alias": "yolcu-360",
     "source": "yolcu-360-200x200.jpeg",
     "destination": "yolcu-360.jpeg"
+  },
+  {
+    "alias": "yoti-digital-identity",
+    "source": "",
+    "destination": ""
   },
   {
     "alias": "youthincsports",
