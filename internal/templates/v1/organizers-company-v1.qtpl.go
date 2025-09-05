@@ -89,11 +89,8 @@ func StreamOrganizersCompanyV1(qw422016 *qt422016.Writer,
 	qw422016.E().S(organizerFeature.Organizer.Alias)
 	qw422016.N().S(`/jobs" class="header__nav-link">Jobs</a>
       </li>
-      <li class="header__nav-item">
-        <a href="/`)
-	qw422016.E().S(organizerFeature.Organizer.Alias)
-	qw422016.N().S(`/communities" class="header__nav-link">Communities</a>
-      </li>
+      `)
+	qw422016.N().S(`
     </ul>
     `)
 	streamorganizersHeaderStars(qw422016)

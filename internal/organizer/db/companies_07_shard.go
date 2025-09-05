@@ -1164,7 +1164,7 @@ func companies07Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4140050472/",
-							Date:                 mustDate("2025-07-02"),
+							Date:                 mustDate("2025-09-04"), // mustDate("2025-07-02"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -5649,6 +5649,16 @@ func companies07Shard() []domain.CompanyProfile {
 							Date:                 mustDate("2025-08-23", "2025-08-02", "2025-07-10", "2025-07-03"),
 							WithSalary:           true, // $134.5k/yr - $181.9k/yr
 							Remote:               false,
+						},
+						{
+							Title:                "Staff Golang Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4293653125/",
+							Location:             "United States",
+							Date:                 mustDate("2025-09-04"),
+							WithSalary:           true, // $134.5k/yr - $181.9k/yr
+							Remote:               true,
 						},
 					},
 				},

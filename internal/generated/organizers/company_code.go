@@ -1148,6 +1148,16 @@ var (
 		"hudl":                                1148, // Hudl
 		"recorded-future":                     1149, // Recorded Future
 		"opensignal":                          1150, // Opensignal
+		"yoti-digital-identity":               1151, // Yoti
+		"solo-funds":                          1152, // SoLo Funds
+		"avey-ai":                             1153, // Avey
+		"evana":                               1154, // EVANA AG
+		"airspacelink":                        1155, // Airspace Link, Inc.
+		"lumeltech":                           1156, // Lumel
+		"robomarkets":                         1157, // RoboMarkets
+		"btaskee":                             1158, // bTaskee
+		"joincruit":                           1159, // Cruit
+		"blackpoint":                          1160, // Blackpoint Cyber
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

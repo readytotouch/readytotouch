@@ -41,9 +41,11 @@
       <li class="header__nav-item">
         <a href="/{%s organizer.Alias %}/jobs" class="header__nav-link">Jobs</a>
       </li>
+      {% comment %}
       <li class="header__nav-item">
         <a href="/{%s organizer.Alias %}/communities" class="header__nav-link active">Communities</a>
       </li>
+      {% endcomment %}
     </ul>
 
     {%= organizersHeaderStars() %}

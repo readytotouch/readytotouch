@@ -2227,6 +2227,16 @@ func companies09Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Staff DevOps Engineer (AWS/Go/Ruby)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4256491910/",
+							Location:             "Cracow, Małopolskie, Poland",
+							Date:                 mustDate("2025-09-04"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {},
@@ -2354,8 +2364,9 @@ func companies09Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "enterprisedb",
-				Verified: false,
+				Login:     "enterprisedb",
+				Followers: "319",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "EnterpriseDB",
@@ -2383,7 +2394,7 @@ func companies09Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 4,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Platform Engineer (Golang)",
@@ -2419,6 +2430,16 @@ func companies09Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4153891886/",
 							Date:                 mustDate("2025-04-03", "2025-03-12", "2025-02-18"),
 							WithSalary:           true, // 250-350k (BRL)annual base salary + annual variable bonus
+							Remote:               true,
+						},
+						{
+							Title:                "Senior Platform Engineer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4293936950/",
+							Location:             "EMEA",
+							Date:                 mustDate("2025-09-04"),
+							WithSalary:           false,
 							Remote:               true,
 						},
 					},
@@ -2745,7 +2766,7 @@ func companies09Shard() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Engineer/Sr Engineer, Kubernetes Go — Developer",
+							Title:                "Engineer/Senior Engineer, Kubernetes Go — Developer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4092856552/",

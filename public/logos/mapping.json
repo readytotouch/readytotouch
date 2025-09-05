@@ -155,6 +155,11 @@
     "destination": ""
   },
   {
+    "alias": "airspacelink",
+    "source": "airspacelink-200x200.jpeg",
+    "destination": "airspacelink.jpeg"
+  },
+  {
     "alias": "airudder",
     "source": "",
     "destination": ""
@@ -470,6 +475,11 @@
     "destination": ""
   },
   {
+    "alias": "avey-ai",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "aviatrix-systems",
     "source": "",
     "destination": ""
@@ -640,6 +650,11 @@
     "destination": "black-duck-software.jpeg"
   },
   {
+    "alias": "blackpoint",
+    "source": "blackpoint-180x180.webp",
+    "destination": "blackpoint.png"
+  },
+  {
     "alias": "blackrock",
     "source": "blackrock-200x200.jpeg",
     "destination": "blackrock.jpeg"
@@ -681,8 +696,8 @@
   },
   {
     "alias": "bol-com",
-    "source": "",
-    "destination": ""
+    "source": "bol-200x200.jpeg",
+    "destination": "bol-com.jpeg"
   },
   {
     "alias": "boodleboxai",
@@ -728,6 +743,11 @@
     "alias": "broadcom",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "btaskee",
+    "source": "btaskee-200x200.jpeg",
+    "destination": "btaskee.jpeg"
   },
   {
     "alias": "buenro",
@@ -1146,8 +1166,8 @@
   },
   {
     "alias": "cross-river-bank",
-    "source": "",
-    "destination": ""
+    "source": "crossriver-256x256.png",
+    "destination": "cross-river-bank.png"
   },
   {
     "alias": "crowd-riff",
@@ -1486,8 +1506,8 @@
   },
   {
     "alias": "eachlabs",
-    "source": "",
-    "destination": ""
+    "source": "eachlabs-200x200.jpeg",
+    "destination": "eachlabs.jpeg"
   },
   {
     "alias": "easypost",
@@ -1516,8 +1536,8 @@
   },
   {
     "alias": "edbpostgres",
-    "source": "",
-    "destination": ""
+    "source": "edbpostgres-200x200.jpeg",
+    "destination": "edbpostgres.jpeg"
   },
   {
     "alias": "eightcap-aufx",
@@ -1625,6 +1645,11 @@
     "destination": ""
   },
   {
+    "alias": "evana",
+    "source": "evana-180x180.png",
+    "destination": "evana.png"
+  },
+  {
     "alias": "event-inc",
     "source": "event-inc-192x192.png",
     "destination": "event-inc.png"
@@ -1696,8 +1721,8 @@
   },
   {
     "alias": "fanatics-inc-",
-    "source": "",
-    "destination": ""
+    "source": "fanaticsinc-200x200.jpeg",
+    "destination": "fanatics-inc-.jpeg"
   },
   {
     "alias": "fastly",
@@ -2500,6 +2525,11 @@
     "destination": ""
   },
   {
+    "alias": "joincruit",
+    "source": "joincruit-200x200.jpeg",
+    "destination": "joincruit.jpeg"
+  },
+  {
     "alias": "joinpult",
     "source": "",
     "destination": ""
@@ -2696,8 +2726,8 @@
   },
   {
     "alias": "lgads",
-    "source": "",
-    "destination": ""
+    "source": "lgads-200x200.jpeg",
+    "destination": "lgads.jpeg"
   },
   {
     "alias": "liebherr",
@@ -2791,6 +2821,11 @@
   },
   {
     "alias": "lucidmotors",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "lumeltech",
     "source": "",
     "destination": ""
   },
@@ -3891,8 +3926,8 @@
   },
   {
     "alias": "quadcodecareer",
-    "source": "",
-    "destination": ""
+    "source": "quadcode-200x200.jpeg",
+    "destination": "quadcodecareer.jpeg"
   },
   {
     "alias": "qualcomm",
@@ -4108,6 +4143,11 @@
     "alias": "riza-inc",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "robomarkets",
+    "source": "robomarkets-180x180.png",
+    "destination": "robomarkets.png"
   },
   {
     "alias": "rocket-lab-limited",
@@ -4473,6 +4513,11 @@
     "alias": "solarwinds",
     "source": "solarwinds-200x200.jpeg",
     "destination": "solarwinds.jpeg"
+  },
+  {
+    "alias": "solo-funds",
+    "source": "solofunds-180x180.webp",
+    "destination": "solo-funds.png"
   },
   {
     "alias": "solo.io",
@@ -5256,8 +5301,8 @@
   },
   {
     "alias": "varonis",
-    "source": "",
-    "destination": ""
+    "source": "varonis-200x200.jpeg",
+    "destination": "varonis.jpeg"
   },
   {
     "alias": "vaytechnology",
@@ -5531,8 +5576,8 @@
   },
   {
     "alias": "wolt-oy",
-    "source": "",
-    "destination": ""
+    "source": "wolt-200x200.jpeg",
+    "destination": "wolt-oy.jpeg"
   },
   {
     "alias": "wolters-kluwer",
@@ -5608,6 +5653,11 @@
     "alias": "yolcu-360",
     "source": "yolcu-360-200x200.jpeg",
     "destination": "yolcu-360.jpeg"
+  },
+  {
+    "alias": "yoti-digital-identity",
+    "source": "",
+    "destination": ""
   },
   {
     "alias": "youthincsports",

@@ -47,7 +47,7 @@ func companies15Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 9,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Go Software Engineer",
@@ -91,7 +91,7 @@ func companies15Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4268582045/",
 							Location:             "England, United Kingdom",
-							Date:                 mustDate("2025-08-16", "2025-07-30"),
+							Date:                 mustDate("2025-09-04"), // mustDate("2025-08-16", "2025-07-30"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -321,6 +321,16 @@ func companies15Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4226202870/",
 							Location:             "Raanana, Center District, Israel",
 							Date:                 mustDate("2025-08-04"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Software Engineer Backend – Go (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4283027506/",
+							Location:             "Raanana, Center District, Israel",
+							Date:                 mustDate("2025-09-01"),
 							WithSalary:           false,
 							Remote:               false,
 						},
