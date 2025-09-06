@@ -4300,7 +4300,7 @@ func companies18Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4261717421/",
 							Location:             "Berlin, Berlin, Germany",
-							Date:                 mustDate("2025-08-16", "2025-07-25", "2025-07-03"),
+							Date:                 mustDate("2025-09-06"), // mustDate("2025-08-16", "2025-07-25", "2025-07-03"),
 							WithSalary:           false,
 							Remote:               false,
 						},
