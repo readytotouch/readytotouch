@@ -203,8 +203,9 @@ func companies08Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "embarkstudios",
-				Verified: true,
+				Login:     "embarkstudios",
+				Followers: "1.3k",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Embark-Studios",
@@ -235,7 +236,7 @@ func companies08Shard() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 23,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Backend Engineer (Go)",
@@ -267,7 +268,9 @@ func companies08Shard() []domain.CompanyProfile {
 						},
 					},
 				},
-				domain.Rust:    {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 244,
+				},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},
@@ -819,8 +822,9 @@ func companies08Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "Telestream",
-				Verified: false,
+				Login:     "Telestream",
+				Followers: "11",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Telestream",
@@ -2910,6 +2914,11 @@ func companies08Shard() []domain.CompanyProfile {
 				Employees:         "5K-10K",
 				AssociatedMembers: "4,872",
 				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:     "wexinc",
+				Followers: "478",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "WEX",
@@ -5729,6 +5738,11 @@ func companies08Shard() []domain.CompanyProfile {
 				AssociatedMembers: "249",
 				Verified:          true,
 			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:     "textnow",
+				Followers: "26",
+				Verified:  false,
+			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Textnow",
 				Employees:   "51 to 200",
@@ -5755,7 +5769,7 @@ func companies08Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 18,
+					GitHubRepositoriesCount: 3,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Golang Backend Developer",

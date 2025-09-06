@@ -5515,7 +5515,14 @@ func companies20Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-RapidAI-EI_IE3241437.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/RapidAI-Reviews-E3241437.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/RapidAI-Jobs-E3241437.htm",
+				Jobs:        "10",
+				Reviews:     "51",
+				Salaries:    "102",
+				ReviewsRate: "3.7",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -5673,8 +5680,9 @@ func companies20Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "opentext",
+				Followers: "95",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -5683,7 +5691,14 @@ func companies20Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-OpenText-EI_IE5694.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/OpenText-Reviews-E5694.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/OpenText-Jobs-E5694.htm",
+				Jobs:        "579",
+				Reviews:     "5.9K",
+				Salaries:    "9.5K",
+				ReviewsRate: "3.3",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
