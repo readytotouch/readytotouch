@@ -4381,7 +4381,18 @@ func companies18Shard() []domain.CompanyProfile {
 				},
 				domain.Rust: {
 					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer (Rust, JavaScript)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4283913630/",
+							Location:             "Bengaluru, Karnataka, India",
+							Date:                 mustDate("2025-09-04"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
 				},
 				domain.Zig: {
 					GitHubRepositoriesCount: 0,

@@ -4031,6 +4031,16 @@ func companies20Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Spacecraft Embedded Software Engineer (Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4296629231/",
+							Location:             "Boulder, CO",
+							Date:                 mustDate("2025-09-06"),
+							WithSalary:           true, // $130.5k/yr - $171k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig: {
