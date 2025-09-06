@@ -1158,6 +1158,11 @@ var (
 		"btaskee":                             1158, // bTaskee
 		"joincruit":                           1159, // Cruit
 		"blackpoint":                          1160, // Blackpoint Cyber
+		"rapid-ai":                            1161, // RapidAI
+		"schmooze-dating":                     1162, // Schmooze
+		"opentext":                            1163, // OpenText
+		"cuju-app":                            1164, // CUJU
+		"autostoresystem":                     1165, // AutoStore™
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

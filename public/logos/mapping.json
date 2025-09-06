@@ -465,6 +465,11 @@
     "destination": ""
   },
   {
+    "alias": "autostoresystem",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "avathonai",
     "source": "",
     "destination": ""
@@ -1181,6 +1186,11 @@
   },
   {
     "alias": "csidedev",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "cuju-app",
     "source": "",
     "destination": ""
   },
@@ -3500,6 +3510,11 @@
     "destination": ""
   },
   {
+    "alias": "opentext",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "openwebhq",
     "source": "",
     "destination": ""
@@ -4010,6 +4025,11 @@
     "destination": ""
   },
   {
+    "alias": "rapid-ai",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "rapid7",
     "source": "",
     "destination": ""
@@ -4291,6 +4311,11 @@
   },
   {
     "alias": "scania",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "schmooze-dating",
     "source": "",
     "destination": ""
   },
