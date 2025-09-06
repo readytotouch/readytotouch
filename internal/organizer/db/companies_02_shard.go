@@ -217,7 +217,7 @@ func companies02Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4275597320/",
 							Location:             "Czechia",
-							Date:                 mustDate("2025-08-17"),
+							Date:                 mustDate("2025-09-06"), // mustDate("2025-08-17"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -1635,8 +1635,8 @@ func companies02Shard() []domain.CompanyProfile {
 							ShortDescription:     "In addition to Go we use CockroachDB/Postgres, RocksDB, Raft and Redis",
 							SwitchingOpportunity: "We are willing to train you on Go if you’re experienced on a different tech stack (we have a 10-week internal onboarding program focused on Go, scalability etc.)",
 							URL:                  "https://www.linkedin.com/jobs/view/4092131109/",
-							Date:                 mustDate("2025-08-16", "2025-06-05", "2025-05-22", "2025-05-09", "2025-04-24", "2025-03-10", "2025-02-16", "2025-01-26", "2025-01-03"),
-							WithSalary:           true, // €70,000 to €160,000 EUR
+							Date:                 mustDate("2025-09-06"), // mustDate("2025-08-16", "2025-06-05", "2025-05-22", "2025-05-09", "2025-04-24", "2025-03-10", "2025-02-16", "2025-01-26", "2025-01-03"),
+							WithSalary:           true,                   // €70,000 to €160,000 EUR
 							Remote:               false,
 						},
 						{
@@ -1662,8 +1662,9 @@ func companies02Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4252376326/",
-							Date:                 mustDate("2025-06-19"),
-							WithSalary:           true,
+							Location:             "Boulder, CO",
+							Date:                 mustDate("2025-09-06"), // mustDate("2025-06-19"),
+							WithSalary:           true,                   // $156.5k/yr - $205.3k/yr
 							Remote:               false,
 						},
 						{
@@ -2662,7 +2663,7 @@ func companies02Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4259999298/",
 							Location:             "Berlin, Berlin, Germany",
-							Date:                 mustDate("2025-08-15", "2025-07-24", "2025-07-03"),
+							Date:                 mustDate("2025-09-06"), // mustDate("2025-08-15", "2025-07-24", "2025-07-03"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3412,8 +3413,8 @@ func companies02Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4282872558/",
 							Location:             "United States",
-							Date:                 mustDate("2025-08-16"),
-							WithSalary:           true, // $160k/yr - $190k/yr
+							Date:                 mustDate("2025-09-06"), // mustDate("2025-08-16"),
+							WithSalary:           true,                   // $160k/yr - $190k/yr
 							Remote:               true,
 						},
 					},

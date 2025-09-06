@@ -32,6 +32,7 @@ func Companies() []domain.CompanyProfile {
 		shard18            = companies18Shard()
 		shard19            = companies19Shard()
 		shard20            = companies20Shard()
+		shard21            = companies21Shard()
 		outsourceCompanies = companiesOutsourceCompanies()
 		recruitingAgencies = companiesRecruitingAgencies()
 		result             = make([]domain.CompanyProfile, 0, len(shard01)+
@@ -54,6 +55,7 @@ func Companies() []domain.CompanyProfile {
 			len(shard18)+
 			len(shard19)+
 			len(shard20)+
+			len(shard21)+
 			len(outsourceCompanies)+
 			len(recruitingAgencies),
 		)
@@ -79,6 +81,7 @@ func Companies() []domain.CompanyProfile {
 	result = append(result, shard18...)
 	result = append(result, shard19...)
 	result = append(result, shard20...)
+	result = append(result, shard21...)
 	result = append(result, outsourceCompanies...)
 	result = append(result, recruitingAgencies...)
 

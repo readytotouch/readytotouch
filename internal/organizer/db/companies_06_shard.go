@@ -304,7 +304,7 @@ func companies06Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4275397811/",
 							Location:             "Paris, Île-de-France, France",
-							Date:                 mustDate("2025-08-16", "2025-07-24"),
+							Date:                 mustDate("2025-09-06"), // mustDate("2025-08-16", "2025-07-24"),
 							WithSalary:           false,
 							Remote:               false,
 						},
