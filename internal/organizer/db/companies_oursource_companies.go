@@ -2290,5 +2290,21 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Serokell",
+			Website: "https://serokell.io/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                10451691,
+				IDs:               nil,
+				Alias:             "serokell",
+				Name:              "Serokell",
+				Followers:         "3K",
+				Employees:         "51-200",
+				AssociatedMembers: "36",
+				Verified:          false,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }

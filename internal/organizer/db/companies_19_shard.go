@@ -699,9 +699,9 @@ func companies19Shard() []domain.CompanyProfile {
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "Experian",
-			Website: "https://www.experianplc.com/",
-			Careers: "",
-			About:   "",
+			Website: "https://www.experian.com/",
+			Careers: "https://www.experian.com/careers/",
+			About:   "https://www.experian.com/corporate/about-experian",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                2534,
@@ -729,7 +729,14 @@ func companies19Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Experian-EI_IE42406.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Experian-Reviews-E42406.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Experian-Jobs-E42406.htm",
+				Jobs:        "754",
+				Reviews:     "7.7K",
+				Salaries:    "11K",
+				ReviewsRate: "4.1",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -765,7 +772,7 @@ func companies19Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4274816427/",
 							Location:             "Hyderabad, Telangana, India",
-							Date:                 mustDate("2025-07-23"),
+							Date:                 mustDate("2025-09-06", "2025-07-23"),
 							WithSalary:           false,
 							Remote:               false,
 						},

@@ -1429,5 +1429,37 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Recruiting agency
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Nicoll Curtin",
+			Website: "https://www.nicollcurtin.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                36486,
+				IDs:               nil,
+				Alias:             "nicoll-curtin",
+				Name:              "Nicoll Curtin",
+				Followers:         "332K",
+				Employees:         "51-200",
+				AssociatedMembers: "114",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Realm",
+			Website: "https://www.realmgroup.io/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                86253160,
+				IDs:               nil,
+				Alias:             "the-realmgroup",
+				Name:              "Realm",
+				Followers:         "51K",
+				Employees:         "11-50",
+				AssociatedMembers: "19",
+				Verified:          false,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }
