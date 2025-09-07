@@ -276,7 +276,7 @@ var (
 		"emitwise":                            "",
 		"emnify":                              "",
 		"endress-hauser-group":                "",
-		"textnow":                             "",
+		"enflick-inc-":                        "",
 		"enova-international":                 "",
 		"ericsson":                            "",
 		"eset":                                "",
