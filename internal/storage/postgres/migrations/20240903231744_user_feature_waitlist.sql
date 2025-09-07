@@ -21,7 +21,11 @@ CREATE TYPE FEATURE_WAIT AS ENUM (
     'organizer_fsharp_companies',
     'organizer_fsharp_vacancies',
     'organizer_ocaml_companies',
-    'organizer_ocaml_vacancies'
+    'organizer_ocaml_vacancies',
+    'organizer_gleam_companies',
+    'organizer_gleam_vacancies',
+    'organizer_mojo_companies',
+    'organizer_mojo_vacancies'
     );
 
 /*
@@ -36,6 +40,10 @@ CREATE TYPE FEATURE_WAIT AS ENUM (
     ALTER TYPE FEATURE_WAIT ADD VALUE 'organizer_fsharp_vacancies';
     ALTER TYPE FEATURE_WAIT ADD VALUE 'organizer_ocaml_companies';
     ALTER TYPE FEATURE_WAIT ADD VALUE 'organizer_ocaml_vacancies';
+    ALTER TYPE FEATURE_WAIT ADD VALUE 'organizer_gleam_companies';
+    ALTER TYPE FEATURE_WAIT ADD VALUE 'organizer_gleam_vacancies';
+    ALTER TYPE FEATURE_WAIT ADD VALUE 'organizer_mojo_companies';
+    ALTER TYPE FEATURE_WAIT ADD VALUE 'organizer_mojo_vacancies';
 */
 
 CREATE TABLE user_feature_waitlist

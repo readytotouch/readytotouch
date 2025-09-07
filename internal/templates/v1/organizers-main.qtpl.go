@@ -285,6 +285,44 @@ func StreamOrganizersMain(qw422016 *qt422016.Writer, headerProfiles []SocialProv
             />
           </div>
         </a>
+        <a href="/gleam" class="button button--bordered-gray hero__button">
+          <img
+            width="20"
+            height="20"
+            src="/assets/images/pages/organizer/gleam.svg"
+            alt="Gleam original logo"
+            class="hero__button-icon"
+          />
+          Gleam Organizer
+          <div class="hero__buttons-icon-box">
+            <img
+              width="12"
+              height="12"
+              src="/assets/images/pages/common/arrow-small-top-black.svg"
+              alt="arrow black icon"
+              class="hero__button-icon"
+            />
+          </div>
+        </a>
+        <a href="/mojo" class="button button--bordered-gray hero__button">
+          <img
+            width="20"
+            height="20"
+            src="/assets/images/pages/organizer/mojo.svg"
+            alt="Mojo original logo"
+            class="hero__button-icon"
+          />
+          Mojo Organizer
+          <div class="hero__buttons-icon-box">
+            <img
+              width="12"
+              height="12"
+              src="/assets/images/pages/common/arrow-small-top-black.svg"
+              alt="arrow black icon"
+              class="hero__button-icon"
+            />
+          </div>
+        </a>
       </div>
     </div>
   </div>

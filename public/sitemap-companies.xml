@@ -30,4 +30,10 @@
     <sitemap>
         <loc>https://readytotouch.com/sitemap-ocaml-companies.xml</loc>
     </sitemap>
+    <sitemap>
+        <loc>https://readytotouch.com/sitemap-gleam-companies.xml</loc>
+    </sitemap>
+    <sitemap>
+        <loc>https://readytotouch.com/sitemap-mojo-companies.xml</loc>
+    </sitemap>
 </sitemapindex>

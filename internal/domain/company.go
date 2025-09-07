@@ -20,6 +20,8 @@ const (
 	Erlang  Language = 7
 	FSharp  Language = 8
 	OCaml   Language = 9
+	Gleam   Language = 10
+	Mojo    Language = 11
 )
 
 func (l Language) String() string {
@@ -44,6 +46,10 @@ func (l Language) String() string {
 		return "F#"
 	case OCaml:
 		return "OCaml"
+	case Gleam:
+		return "Gleam"
+	case Mojo:
+		return "Mojo"
 	default:
 		return ""
 	}
@@ -60,6 +66,8 @@ const (
 	ErlangTitleKeywords  LanguageTitleKeywords = `"Erlang Engineer" OR "Erlang Software Engineer" OR "Erlang Developer"`
 	FSharpTitleKeywords  LanguageTitleKeywords = `"F# Engineer" OR "F# Software Engineer" OR "F# Developer"`
 	OCamlTitleKeywords   LanguageTitleKeywords = `"OCaml Engineer" OR "OCaml Software Engineer" OR "OCaml Developer"`
+	GleamTitleKeywords   LanguageTitleKeywords = `"Gleam Engineer" OR "Gleam Software Engineer" OR "Gleam Developer"`
+	MojoTitleKeywords    LanguageTitleKeywords = `"Mojo Engineer" OR "Mojo Software Engineer" OR "Mojo Developer"`
 )
 
 const (
@@ -72,7 +80,7 @@ const (
 	RustCompanies CompanySyncSource = 1 // https://github.com/omarabid/rust-companies
 )
 
-type Languages = [10]LanguageProfile
+type Languages = [12]LanguageProfile
 
 type LinkedInProfile struct {
 	ID                int

@@ -1206,6 +1206,30 @@ func (c *Controller) organizerFeature(path string) (domain.OrganizerFeature, boo
 			Path:      path,
 			Title:     "Jobs",
 		},
+		"/gleam/companies": {
+			Organizer: domain.OrganizerGleam,
+			Feature:   dbs.FeatureWaitOrganizerGleamCompanies,
+			Path:      path,
+			Title:     "Companies",
+		},
+		"/gleam/jobs": {
+			Organizer: domain.OrganizerGleam,
+			Feature:   dbs.FeatureWaitOrganizerGleamVacancies,
+			Path:      path,
+			Title:     "Jobs",
+		},
+		"/mojo/companies": {
+			Organizer: domain.OrganizerMojo,
+			Feature:   dbs.FeatureWaitOrganizerMojoCompanies,
+			Path:      path,
+			Title:     "Companies",
+		},
+		"/mojo/jobs": {
+			Organizer: domain.OrganizerMojo,
+			Feature:   dbs.FeatureWaitOrganizerMojoVacancies,
+			Path:      path,
+			Title:     "Jobs",
+		},
 	}
 
 	feature, ok := featurePathMap[path]
@@ -1225,6 +1249,8 @@ func (c *Controller) organizer(path string) (domain.Organizer, bool) {
 		"/haskell/welcome": domain.OrganizerHaskell,
 		"/fsharp/welcome":  domain.OrganizerFSharp,
 		"/ocaml/welcome":   domain.OrganizerOCaml,
+		"/gleam/welcome":   domain.OrganizerGleam,
+		"/mojo/welcome":    domain.OrganizerMojo,
 	}
 
 	feature, ok := organizerPathMap[path]

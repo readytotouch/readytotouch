@@ -178,6 +178,8 @@ func main() {
 	r.GET("/haskell/welcome", organizerController.Welcome)
 	r.GET("/fsharp/welcome", organizerController.Welcome)
 	r.GET("/ocaml/welcome", organizerController.Welcome)
+	r.GET("/gleam/welcome", organizerController.Welcome)
+	r.GET("/mojo/welcome", organizerController.Welcome)
 
 	r.GET("/golang/companies/ukraine", organizerController.GolangCompaniesUkraine)
 	r.GET("/golang/companies", organizerController.CompaniesV2)
@@ -260,6 +262,22 @@ func main() {
 	r.GET("/ocaml/companies/:company_alias/v2", organizerController.CompanyV2)
 	r.GET("/ocaml/jobs", organizerController.Waitlist)
 	r.GET("/ocaml/communities", organizerController.TODO)
+	r.GET("/gleam/companies", organizerController.Waitlist)
+	r.GET("/gleam/companies/v1", organizerController.Waitlist)
+	r.GET("/gleam/companies/v2", organizerController.Waitlist)
+	r.GET("/gleam/companies/:company_alias", organizerController.CompanyV2)
+	r.GET("/gleam/companies/:company_alias/v1", organizerController.CompanyV1)
+	r.GET("/gleam/companies/:company_alias/v2", organizerController.CompanyV2)
+	r.GET("/gleam/jobs", organizerController.Waitlist)
+	r.GET("/gleam/communities", organizerController.TODO)
+	r.GET("/mojo/companies", organizerController.Waitlist)
+	r.GET("/mojo/companies/v1", organizerController.Waitlist)
+	r.GET("/mojo/companies/v2", organizerController.Waitlist)
+	r.GET("/mojo/companies/:company_alias", organizerController.CompanyV2)
+	r.GET("/mojo/companies/:company_alias/v1", organizerController.CompanyV1)
+	r.GET("/mojo/companies/:company_alias/v2", organizerController.CompanyV2)
+	r.GET("/mojo/jobs", organizerController.Waitlist)
+	r.GET("/mojo/communities", organizerController.TODO)
 	r.GET("/v/:vacancy_id", organizerController.VacancyRedirect)
 
 	r.GET("/golang", found("/golang/companies", true))
@@ -272,6 +290,8 @@ func main() {
 	r.GET("/haskell", found("/haskell/companies", true))
 	r.GET("/fsharp", found("/fsharp/companies", true))
 	r.GET("/ocaml", found("/ocaml/companies", true))
+	r.GET("/gleam", found("/gleam/companies", true))
+	r.GET("/mojo", found("/mojo/companies", true))
 
 	r.GET("/golang/vacancies", found("/golang/jobs", true))
 	r.GET("/rust/vacancies", found("/rust/jobs", true))
@@ -282,6 +302,8 @@ func main() {
 	r.GET("/erlang/vacancies", found("/erlang/jobs", true))
 	r.GET("/fsharp/vacancies", found("/fsharp/jobs", true))
 	r.GET("/ocaml/vacancies", found("/ocaml/jobs", true))
+	r.GET("/gleam/vacancies", found("/gleam/jobs", true))
+	r.GET("/mojo/vacancies", found("/mojo/jobs", true))
 
 	/*
 		Will be removed in the future.
@@ -439,7 +461,9 @@ func main() {
 		GET("/sitemap-clojure-companies.xml", organizerController.SitemapCompanies(domain.OrganizerClojure)).
 		GET("/sitemap-haskell-companies.xml", organizerController.SitemapCompanies(domain.OrganizerHaskell)).
 		GET("/sitemap-fsharp-companies.xml", organizerController.SitemapCompanies(domain.OrganizerFSharp)).
-		GET("/sitemap-ocaml-companies.xml", organizerController.SitemapCompanies(domain.OrganizerOCaml))
+		GET("/sitemap-ocaml-companies.xml", organizerController.SitemapCompanies(domain.OrganizerOCaml)).
+		GET("/sitemap-gleam-companies.xml", organizerController.SitemapCompanies(domain.OrganizerGleam)).
+		GET("/sitemap-mojo-companies.xml", organizerController.SitemapCompanies(domain.OrganizerMojo))
 
 	{
 		// very fast solution

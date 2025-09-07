@@ -86,4 +86,20 @@
         <loc>https://readytotouch.com/ocaml/jobs</loc>
         <changefreq>weekly</changefreq>
     </url>
+    <url>
+        <loc>https://readytotouch.com/gleam/companies</loc>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://readytotouch.com/gleam/jobs</loc>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://readytotouch.com/mojo/companies</loc>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://readytotouch.com/mojo/jobs</loc>
+        <changefreq>weekly</changefreq>
+    </url>
 </urlset>
