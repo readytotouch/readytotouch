@@ -957,6 +957,7 @@ var (
 		"submer":                              "",
 		"sumup":                               "sumup.jpeg",
 		"sunasterisk":                         "sunasterisk.jpeg",
+		"supabase":                            "supabase.jpeg",
 		"superannotate":                       "superannotate.png",
 		"superindo":                           "",
 		"surfly":                              "",

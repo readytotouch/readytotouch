@@ -4765,6 +4765,11 @@
     "destination": "sunasterisk.jpeg"
   },
   {
+    "alias": "supabase",
+    "source": "supabase-200x200.jpeg",
+    "destination": "supabase.jpeg"
+  },
+  {
     "alias": "superannotate",
     "source": "superannotate-256x256.png",
     "destination": "superannotate.png"

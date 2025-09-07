@@ -1579,20 +1579,20 @@ var (
 		"https://www.linkedin.com/jobs/view/4225194858/":                                                               2356, // ubiquiti-
 		"https://www.linkedin.com/jobs/view/4267083307/":                                                               2650, // ubiquiti-
 		"https://www.linkedin.com/jobs/view/4294609425/":                                                               2794, // ubiquiti-
-		"https://www.linkedin.com/jobs/view/4096314146/":                                                               184,  // enflick-inc-
-		"https://www.linkedin.com/jobs/view/4096309405/":                                                               557,  // enflick-inc-
-		"https://www.linkedin.com/jobs/view/4124814543/":                                                               610,  // enflick-inc-
-		"https://www.linkedin.com/jobs/view/4075845150/":                                                               774,  // enflick-inc-
-		"https://www.linkedin.com/jobs/view/4146287449/":                                                               1032, // enflick-inc-
-		"https://www.linkedin.com/jobs/view/4182635004/":                                                               1208, // enflick-inc-
-		"https://www.linkedin.com/jobs/view/4197732122/":                                                               1395, // enflick-inc-
-		"https://www.linkedin.com/jobs/view/4201773149/":                                                               1440, // enflick-inc-
-		"https://www.linkedin.com/jobs/view/4207165774/":                                                               1488, // enflick-inc-
-		"https://www.linkedin.com/jobs/view/4207918994/":                                                               1544, // enflick-inc-
-		"https://www.linkedin.com/jobs/view/4211192188/":                                                               1614, // enflick-inc-
-		"https://www.linkedin.com/jobs/view/4215814421/":                                                               1728, // enflick-inc-
-		"https://www.linkedin.com/jobs/view/4188809217/":                                                               2075, // enflick-inc-
-		"https://www.linkedin.com/jobs/view/4188803840/":                                                               2856, // enflick-inc-
+		"https://www.linkedin.com/jobs/view/4096314146/":                                                               184,  // textnow
+		"https://www.linkedin.com/jobs/view/4096309405/":                                                               557,  // textnow
+		"https://www.linkedin.com/jobs/view/4124814543/":                                                               610,  // textnow
+		"https://www.linkedin.com/jobs/view/4075845150/":                                                               774,  // textnow
+		"https://www.linkedin.com/jobs/view/4146287449/":                                                               1032, // textnow
+		"https://www.linkedin.com/jobs/view/4182635004/":                                                               1208, // textnow
+		"https://www.linkedin.com/jobs/view/4197732122/":                                                               1395, // textnow
+		"https://www.linkedin.com/jobs/view/4201773149/":                                                               1440, // textnow
+		"https://www.linkedin.com/jobs/view/4207165774/":                                                               1488, // textnow
+		"https://www.linkedin.com/jobs/view/4207918994/":                                                               1544, // textnow
+		"https://www.linkedin.com/jobs/view/4211192188/":                                                               1614, // textnow
+		"https://www.linkedin.com/jobs/view/4215814421/":                                                               1728, // textnow
+		"https://www.linkedin.com/jobs/view/4188809217/":                                                               2075, // textnow
+		"https://www.linkedin.com/jobs/view/4188803840/":                                                               2856, // textnow
 		"https://www.linkedin.com/jobs/view/4006862895/":                                                               185,  // altenar
 		"https://www.linkedin.com/jobs/view/4127518517/":                                                               631,  // altenar
 		"https://www.linkedin.com/jobs/view/4205131758/":                                                               1460, // altenar
@@ -2868,6 +2868,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4245104258/":                                                               2870, // opentext
 		"https://www.linkedin.com/jobs/view/4294445930/":                                                               2871, // cuju-app
 		"https://www.linkedin.com/jobs/view/4281833526/":                                                               2872, // autostoresystem
+		"https://jobs.ashbyhq.com/supabase/b7b2f679-c6d8-4f06-8c9e-05a6667bccfa":                                       2873, // supabase
 		"https://www.linkedin.com/jobs/view/3914839625/":                                                               372,  // cognizant
 		"https://www.linkedin.com/jobs/view/4120737001/":                                                               600,  // cognizant
 		"https://www.linkedin.com/jobs/view/4149258542/":                                                               787,  // cognizant

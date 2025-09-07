@@ -1163,6 +1163,7 @@ var (
 		"opentext":                            1163, // OpenText
 		"cuju-app":                            1164, // CUJU
 		"autostoresystem":                     1165, // AutoStore™
+		"supabase":                            1166, // Supabase
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

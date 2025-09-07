@@ -172,6 +172,100 @@ func companies21Shard() []domain.CompanyProfile {
 				// NOP
 			},
 		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Supabase",
+			Website: "https://supabase.com/",
+			Careers: "https://supabase.com/careers",
+			About:   "https://supabase.com/company",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                31546644,
+				IDs:               nil,
+				Alias:             "supabase",
+				Name:              "Supabase",
+				Followers:         "60K",
+				Employees:         "51-200",
+				AssociatedMembers: "178",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:     "supabase",
+				Followers: "7.2k",
+				Verified:  true,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "supabase",
+				Employees: "126",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Supabase-EI_IE7639911.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Supabase-Reviews-E7639911.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Supabase-Jobs-E7639911.htm",
+				Jobs:        "33",
+				Reviews:     "5",
+				Salaries:    "3",
+				ReviewsRate: "4.8",
+				Verified:    false,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 16,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "CLI Engineer",
+							SubTitle:             "",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							Location:             "",
+							URL:                  "https://jobs.ashbyhq.com/supabase/b7b2f679-c6d8-4f06-8c9e-05a6667bccfa",
+							Date:                 mustDate("2025-09-05"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 11,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Supabase is the Postgres development platform",
+			Industries: []domain.Industry{
+				domain.IndustryDevOps,
+			},
+		},
 
 		// Template
 		//{
