@@ -14,6 +14,12 @@ import (
 	"github.com/valyala/fasthttp"
 )
 
+var (
+	defaultClient = &fasthttp.Client{
+		ReadBufferSize: 16 * 1024,
+	}
+)
+
 type BitbucketOAuthProvider struct {
 	config *oauth2.Config
 }
@@ -92,7 +98,7 @@ func getUser(accessToken string) (*UserResponse, error) {
 	request.SetRequestURI(apiUserURI)
 	request.Header.Set("Authorization", "Bearer "+accessToken)
 
-	httpErr := fasthttp.Do(request, response)
+	httpErr := defaultClient.Do(request, response)
 	if httpErr != nil {
 		return nil, httpErr
 	}
@@ -122,7 +128,7 @@ func getUserEmail(accessToken string) (*UserEmailsResponse, error) {
 	request.SetRequestURI(apiUserEmailListURI)
 	request.Header.Set("Authorization", "Bearer "+accessToken)
 
-	httpErr := fasthttp.Do(request, response)
+	httpErr := defaultClient.Do(request, response)
 	if httpErr != nil {
 		return nil, httpErr
 	}

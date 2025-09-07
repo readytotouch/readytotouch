@@ -121,4 +121,24 @@ var (
 		Keywords:              "OCaml, Companies using OCaml, OCaml companies, OCaml connections",
 		Description:           "ReadyToTouch helps you find companies that use OCaml. Improve your chances of getting a job by connecting with OCaml developers and receiving further recommendations.",
 	}
+	OrganizerGleam = Organizer{
+		Language:              Gleam,
+		LanguageTitleKeywords: GleamTitleKeywords,
+		Alias:                 "gleam",
+		GitHubAlias:           "gleam",
+		Title:                 "Gleam",
+		Logo:                  "gleam.svg",
+		Keywords:              "Gleam, Companies using Gleam, Gleam companies, Gleam connections",
+		Description:           "ReadyToTouch helps you find companies that use Gleam. Improve your chances of getting a job by connecting with Gleam developers and receiving further recommendations.",
+	}
+	OrganizerMojo = Organizer{
+		Language:              Mojo,
+		LanguageTitleKeywords: MojoTitleKeywords,
+		Alias:                 "mojo",
+		GitHubAlias:           "mojo",
+		Title:                 "Mojo",
+		Logo:                  "mojo.svg",
+		Keywords:              "Mojo, Companies using Mojo, Mojo companies, Mojo connections",
+		Description:           "ReadyToTouch helps you find companies that use Mojo. Improve your chances of getting a job by connecting with Mojo developers and receiving further recommendations.",
+	}
 )

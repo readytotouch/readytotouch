@@ -15,6 +15,12 @@ import (
 	"github.com/valyala/fasthttp"
 )
 
+var (
+	defaultClient = &fasthttp.Client{
+		ReadBufferSize: 16 * 1024,
+	}
+)
+
 type GithubOAuthProvider struct {
 	config *oauth2.Config
 }
@@ -93,7 +99,7 @@ func getUser(accessToken string) (*UserResponse, error) {
 	request.SetRequestURI(apiUserURI)
 	request.Header.Set("Authorization", "token "+accessToken)
 
-	httpErr := fasthttp.Do(request, response)
+	httpErr := defaultClient.Do(request, response)
 	if httpErr != nil {
 		return nil, httpErr
 	}
@@ -123,7 +129,7 @@ func getUserEmail(accessToken string) ([]UserEmail, error) {
 	request.SetRequestURI(apiUserEmailListURI)
 	request.Header.Set("Authorization", "token "+accessToken)
 
-	httpErr := fasthttp.Do(request, response)
+	httpErr := defaultClient.Do(request, response)
 	if httpErr != nil {
 		return nil, httpErr
 	}
