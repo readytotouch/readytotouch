@@ -1582,7 +1582,7 @@ func companies12Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4285962926/",
 							Location:             "Mumbai, Maharashtra, India",
-							Date:                 mustDate("2025-09-06"), // mustDate("2025-08-15"),
+							Date:                 mustDate("2025-09-06", "2025-08-15"),
 							WithSalary:           false,
 							Remote:               false,
 						},

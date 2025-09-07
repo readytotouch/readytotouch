@@ -772,7 +772,7 @@ func companies19Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4274816427/",
 							Location:             "Hyderabad, Telangana, India",
-							Date:                 mustDate("2025-09-06"), // mustDate("2025-07-23"),
+							Date:                 mustDate("2025-09-06", "2025-07-23"),
 							WithSalary:           false,
 							Remote:               false,
 						},

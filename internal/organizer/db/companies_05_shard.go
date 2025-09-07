@@ -5121,7 +5121,7 @@ func companies05Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4231566483/",
 							Location:             "Milan, Lombardy, Italy",
-							Date:                 mustDate("2025-09-04"), // mustDate("2025-08-14", "2025-07-23", "2025-06-09"),
+							Date:                 mustDate("2025-09-04", "2025-08-14", "2025-07-23", "2025-06-09"),
 							WithSalary:           false,
 							Remote:               false,
 						},

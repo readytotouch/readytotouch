@@ -322,7 +322,7 @@ func companies16Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4286234802/",
 							Location:             "Cracow, Małopolskie, Poland",
-							Date:                 mustDate("2025-09-06"), // mustDate("2025-08-16"),
+							Date:                 mustDate("2025-09-06", "2025-08-16"),
 							WithSalary:           false,
 							Remote:               true,
 						},

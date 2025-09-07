@@ -3035,8 +3035,8 @@ func companies13Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4275736021/",
 							Location:             "Broomfield, CO",
-							Date:                 mustDate("2025-09-06"), // mustDate("2025-08-17", "2025-07-26"),
-							WithSalary:           true,                   // $142.8k/yr - $214.2k/yr
+							Date:                 mustDate("2025-09-06", "2025-08-17", "2025-07-26"),
+							WithSalary:           true, // $142.8k/yr - $214.2k/yr
 							Remote:               false,
 						},
 					},
