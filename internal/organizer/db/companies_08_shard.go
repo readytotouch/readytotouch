@@ -5731,7 +5731,8 @@ func companies08Shard() []domain.CompanyProfile {
 			Blog:    "https://medium.com/textnowengineering",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                529693,
-				Alias:             "enflick-inc-",
+				Alias:             "textnow",
+				PreviousAliases:   []string{"enflick-inc-"},
 				Name:              "TextNow",
 				Followers:         "21K",
 				Employees:         "51-200",

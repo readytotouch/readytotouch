@@ -136,7 +136,7 @@ var (
 		"embark-studios-ab":                  "embark-studios.png",
 		"emerchantpay-ltd":                   "emerchantpay.png",
 		"emnify":                             "emnify.png",
-		"enflick-inc-":                       "textnow.png",
+		"textnow":                            "textnow.png",
 		"enova-international":                "enova.png",
 		"ericsson":                           "ericsson-1.png",
 		"eset":                               "eset.png",

@@ -514,7 +514,7 @@ var (
 		"stacklok":                            506,  // Stacklok
 		"superindo":                           507,  // PT Lion Super Indo
 		"ubiquiti-":                           508,  // Ubiquiti Inc.
-		"enflick-inc-":                        509,  // TextNow
+		"textnow":                             509,  // TextNow
 		"altenar":                             510,  // Altenar
 		"vustheenglishcenter":                 511,  // VUS - The English Center
 		"exness":                              512,  // Exness
