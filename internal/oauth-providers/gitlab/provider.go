@@ -14,6 +14,12 @@ import (
 	"github.com/valyala/fasthttp"
 )
 
+var (
+	defaultClient = &fasthttp.Client{
+		ReadBufferSize: 16 * 1024,
+	}
+)
+
 type GitlabOAuthProvider struct {
 	config *oauth2.Config
 }
@@ -67,7 +73,7 @@ func getUser(accessToken string) (*UserResponse, error) {
 	request.SetRequestURI(apiUserURI)
 	request.URI().QueryArgs().Add("access_token", accessToken)
 
-	httpErr := fasthttp.Do(request, response)
+	httpErr := defaultClient.Do(request, response)
 	if httpErr != nil {
 		return nil, httpErr
 	}
