@@ -1365,8 +1365,8 @@ func companies17Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4219694154/",
 							Location:             "Greater Colorado Springs Area",
-							Date:                 mustDate("2025-08-19", "2025-07-27", "2025-07-05", "2025-06-14", "2025-05-22", "2025-04-30"),
-							WithSalary:           true, // $155k/yr - $225k/yr
+							Date:                 mustDate("2025-09-09"), // mustDate("2025-08-19", "2025-07-27", "2025-07-05", "2025-06-14", "2025-05-22", "2025-04-30"),
+							WithSalary:           true,                   // $155k/yr - $225k/yr
 							Remote:               true,
 						},
 						{

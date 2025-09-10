@@ -1737,6 +1737,16 @@ func companies18Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior DevOps Engineer – Elixir",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4294469302/",
+							Location:             "Hamburg, Hamburg, Germany",
+							Date:                 mustDate("2025-09-06"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Clojure: {

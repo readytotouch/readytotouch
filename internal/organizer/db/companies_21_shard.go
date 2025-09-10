@@ -350,6 +350,90 @@ func companies21Shard() []domain.CompanyProfile {
 				// NOP
 			},
 		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Multiverse",
+			Website: "https://www.multiverse.io/",
+			Careers: "https://www.multiverse.io/careers",
+			About:   "https://www.multiverse.io/about",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                10579146,
+				IDs:               nil,
+				Alias:             "joinmultiverse",
+				Name:              "Multiverse",
+				Followers:         "91K",
+				Employees:         "501-1K",
+				AssociatedMembers: "1,273",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer",
+							ShortDescription:     "Our stack includes Python, TypeScript, React, Elixir, AWS",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4285039642/",
+							Location:             "London, England, United Kingdom",
+							Date:                 mustDate("2025-09-10"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "The upskilling platform for AI and tech adoption",
+			Industries: []domain.Industry{
+				domain.IndustryEdTech,
+			},
+		},
 
 		// Template
 		//{
