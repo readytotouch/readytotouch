@@ -2565,7 +2565,7 @@ func companies11Shard() []domain.CompanyProfile {
 		{
 			ID:      0,                         // system
 			Type:    domain.CompanyTypeStartup, // system
-			Name:    "FlatPeak",
+			Name:    "Flatpeak",
 			Website: "https://flatpeak.com/",
 			Careers: "",
 			About:   "",
@@ -2574,7 +2574,7 @@ func companies11Shard() []domain.CompanyProfile {
 				ID:                82675445,
 				IDs:               nil,
 				Alias:             "flatpeak",
-				Name:              "FlatPeak",
+				Name:              "Flatpeak",
 				Followers:         "1K",
 				Employees:         "11-50",
 				AssociatedMembers: "6",
@@ -2615,6 +2615,16 @@ func companies11Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4192226484/",
 							Date:                 mustDate("2025-03-24"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Golang Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4296781265/",
+							Location:             "London Area, United Kingdom",
+							Date:                 mustDate("2025-09-10"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2695,7 +2705,7 @@ func companies11Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4204722411/",
 							Location:             "Hyderabad, Telangana, India",
-							Date:                 mustDate("2025-07-25", "2025-07-04"),
+							Date:                 mustDate("2025-09-07", "2025-07-25", "2025-07-04"),
 							WithSalary:           false,
 							Remote:               false,
 						},

@@ -1493,5 +1493,21 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "eTeam",
+			Website: "https://www.eteaminc.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                61677,
+				IDs:               nil,
+				Alias:             "eteam",
+				Name:              "eTeam",
+				Followers:         "933K",
+				Employees:         "501-1K",
+				AssociatedMembers: "3,204",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }

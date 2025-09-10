@@ -1150,11 +1150,21 @@ func companies08Shard() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Developer, Backend Software (Go and Rust), Bell Media",
-							ShortDescription:     "",
+							Title:                "Developer, Backend Software (Go and Rust)",
+							ShortDescription:     "Bell Media",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4085819915/",
 							Date:                 mustDate("2024-11-27"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Software Developer II, (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4298292169/",
+							Location:             "Toronto, ON",
+							Date:                 mustDate("2025-09-10"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3111,6 +3121,16 @@ func companies08Shard() []domain.CompanyProfile {
 							Location:             "Mount Laurel, NJ",
 							Date:                 mustDate("2025-08-17"),
 							WithSalary:           true, // $95.4k/yr - $149.6k/yr
+							Remote:               false,
+						},
+						{
+							Title:                "Golang Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4298390978/",
+							Location:             "Philadelphia, PA",
+							Date:                 mustDate("2025-09-10"),
+							WithSalary:           true, // $112.6k/yr - $168.8k/yr
 							Remote:               false,
 						},
 					},
