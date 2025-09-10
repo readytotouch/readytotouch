@@ -4041,6 +4041,16 @@ func companies20Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $130.5k/yr - $171k/yr
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Software Engineer (Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4297667474/",
+							Location:             "Luxembourg, Luxembourg, Luxembourg",
+							Date:                 mustDate("2025-09-09"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig: {
