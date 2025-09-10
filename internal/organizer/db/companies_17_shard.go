@@ -1365,8 +1365,8 @@ func companies17Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4219694154/",
 							Location:             "Greater Colorado Springs Area",
-							Date:                 mustDate("2025-09-09"), // mustDate("2025-08-19", "2025-07-27", "2025-07-05", "2025-06-14", "2025-05-22", "2025-04-30"),
-							WithSalary:           true,                   // $155k/yr - $225k/yr
+							Date:                 mustDate("2025-09-09", "2025-08-19", "2025-07-27", "2025-07-05", "2025-06-14", "2025-05-22", "2025-04-30"),
+							WithSalary:           true, // $155k/yr - $225k/yr
 							Remote:               true,
 						},
 						{
@@ -2074,7 +2074,7 @@ func companies17Shard() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 1,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Founding Member of Technical Staff — Back-end / Systems Engineering",
+							Title:                "Founding Member of Technical Staff — Back-End / Systems Engineering",
 							ShortDescription:     "Our model gateway, written in Rust, is the backbone of the project",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4051181311/",

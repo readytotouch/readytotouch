@@ -131,7 +131,7 @@ func companies21Shard() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Back-end Software Engineer – C++, Rust or C#",
+							Title:                "Back-End Software Engineer – C++, Rust or C#",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4281833526/",

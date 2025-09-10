@@ -1566,7 +1566,7 @@ func companies11Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4245418480/",
 							Location:             "Warsaw, Mazowieckie, Poland",
-							Date:                 mustDate("2025-08-22"), //  mustDate("2025-08-06", "2025-07-24", "2025-07-16", "2025-06-11"),
+							Date:                 mustDate("2025-08-22", "2025-08-06", "2025-07-24", "2025-07-16", "2025-06-11"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -4532,7 +4532,7 @@ func companies11Shard() []domain.CompanyProfile {
 							Remote:               true,
 						},
 						{
-							Title:                "Back-end Engineer (Go)",
+							Title:                "Back-End Engineer (Go)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4276976297/",

@@ -3176,7 +3176,7 @@ func companies09Shard() []domain.CompanyProfile {
 							Remote:               false,
 						},
 						{
-							Title:                "Middle / Senior / Lead Back-end Developer (Go/PHP)",
+							Title:                "Middle / Senior / Lead Back-End Developer (Go/PHP)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4221963147/",
@@ -3243,7 +3243,7 @@ func companies09Shard() []domain.CompanyProfile {
 							Remote:               false,
 						},
 						{
-							Title:                "Back-end Developer (Go)",
+							Title:                "Back-End Developer (Go)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4282548462/",
