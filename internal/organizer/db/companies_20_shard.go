@@ -2365,8 +2365,9 @@ func companies20Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "n-able",
+				Followers: "70",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -2398,7 +2399,7 @@ func companies20Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4272812123/",
 							Location:             "Ottawa, ON",
-							Date:                 mustDate("2025-08-21"),
+							Date:                 mustDate("2025-09-10", "2025-08-21"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2477,7 +2478,7 @@ func companies20Shard() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Back-end Engineer (Golang)",
+							Title:                "Back-End Engineer (Golang)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4288290559/",
@@ -2950,7 +2951,7 @@ func companies20Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4289364017/",
 							Location:             "United States",
-							Date:                 mustDate("2025-09-02", "2025-08-22"),
+							Date:                 mustDate("2025-09-10", "2025-09-02", "2025-08-22"),
 							WithSalary:           true, // $152k/yr - $170k/yr + bonus, stock options
 							Remote:               true,
 						},
@@ -3483,7 +3484,7 @@ func companies20Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4096799427/",
 							Location:             "Brazil",
-							Date:                 mustDate("2025-08-20"),
+							Date:                 mustDate("2025-09-10", "2025-08-20"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -4039,6 +4040,16 @@ func companies20Shard() []domain.CompanyProfile {
 							Location:             "Boulder, CO",
 							Date:                 mustDate("2025-09-06"),
 							WithSalary:           true, // $130.5k/yr - $171k/yr
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Software Engineer (Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4297667474/",
+							Location:             "Luxembourg, Luxembourg, Luxembourg",
+							Date:                 mustDate("2025-09-09"),
+							WithSalary:           false,
 							Remote:               false,
 						},
 					},

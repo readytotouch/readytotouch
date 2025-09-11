@@ -690,6 +690,11 @@
     "destination": "blp-digital.jpeg"
   },
   {
+    "alias": "bluerivertech",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "bnp-paribas",
     "source": "bnp-paribas-200x200.jpeg",
     "destination": "bnp-paribas.jpeg"
@@ -855,6 +860,11 @@
     "destination": ""
   },
   {
+    "alias": "catiotech",
+    "source": "catiotech-256x256.png",
+    "destination": "catiotech.png"
+  },
+  {
     "alias": "cava-",
     "source": "",
     "destination": ""
@@ -970,6 +980,11 @@
     "destination": ""
   },
   {
+    "alias": "cirrus-logic",
+    "source": "cirrus-logic-200x200.jpeg",
+    "destination": "cirrus-logic.jpeg"
+  },
+  {
     "alias": "cisco",
     "source": "",
     "destination": ""
@@ -1040,6 +1055,11 @@
     "destination": "cloudlinux.png"
   },
   {
+    "alias": "cloudnuro",
+    "source": "cloudnuro-200x200.jpeg",
+    "destination": "cloudnuro.jpeg"
+  },
+  {
     "alias": "cloudwalk-inc",
     "source": "",
     "destination": ""
@@ -1073,6 +1093,11 @@
     "alias": "cognitedata",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "cognyte",
+    "source": "cognyte-300x300.png",
+    "destination": "cognyte.png"
   },
   {
     "alias": "cohesity",
@@ -1770,6 +1795,11 @@
     "destination": ""
   },
   {
+    "alias": "fingerprintjs",
+    "source": "fingerprint-200x200.jpeg",
+    "destination": "fingerprintjs.jpeg"
+  },
+  {
     "alias": "firebolt",
     "source": "",
     "destination": ""
@@ -1806,8 +1836,8 @@
   },
   {
     "alias": "flatpeak",
-    "source": "",
-    "destination": ""
+    "source": "flatpeak-200x200.jpeg",
+    "destination": "flatpeak.jpeg"
   },
   {
     "alias": "flexaihq",
@@ -1913,6 +1943,11 @@
     "alias": "fortanix",
     "source": "fortanix-200x200.jpeg",
     "destination": "fortanix.jpeg"
+  },
+  {
+    "alias": "fortegroup",
+    "source": "",
+    "destination": ""
   },
   {
     "alias": "fortinet",
@@ -2170,6 +2205,11 @@
     "destination": ""
   },
   {
+    "alias": "greshamtech",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "greynoise",
     "source": "",
     "destination": ""
@@ -2340,6 +2380,11 @@
     "destination": ""
   },
   {
+    "alias": "hostaway",
+    "source": "hostaway-200x200.jpeg",
+    "destination": "hostaway.jpeg"
+  },
+  {
     "alias": "hp",
     "source": "hp-200x200.jpeg",
     "destination": "hp.jpeg"
@@ -2391,8 +2436,8 @@
   },
   {
     "alias": "ifood-",
-    "source": "",
-    "destination": ""
+    "source": "ifood-200x200.jpeg",
+    "destination": "ifood-.jpeg"
   },
   {
     "alias": "ifs",
@@ -2535,6 +2580,11 @@
     "destination": "joincruit.jpeg"
   },
   {
+    "alias": "joinmultiverse",
+    "source": "joinmultiverse-200x200.jpeg",
+    "destination": "joinmultiverse.jpeg"
+  },
+  {
     "alias": "joinpult",
     "source": "",
     "destination": ""
@@ -2556,8 +2606,8 @@
   },
   {
     "alias": "just-eat-takeaway-com",
-    "source": "",
-    "destination": ""
+    "source": "just-eat-takeaway-com-200x200.jpeg",
+    "destination": "just-eat-takeaway-com.jpeg"
   },
   {
     "alias": "justpark",
@@ -2591,6 +2641,11 @@
   },
   {
     "alias": "kaseya",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "kayrros",
     "source": "",
     "destination": ""
   },
@@ -3161,8 +3216,8 @@
   },
   {
     "alias": "n-able",
-    "source": "",
-    "destination": ""
+    "source": "n-able-180x180.png",
+    "destination": "n-able.png"
   },
   {
     "alias": "namecheap-inc",
@@ -3696,6 +3751,11 @@
   },
   {
     "alias": "percona",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "perion",
     "source": "",
     "destination": ""
   },
@@ -4785,6 +4845,11 @@
     "destination": ""
   },
   {
+    "alias": "surfshark",
+    "source": "surfshark-200x200.jpeg",
+    "destination": "surfshark.jpeg"
+  },
+  {
     "alias": "surrealdb",
     "source": "",
     "destination": ""
@@ -5070,6 +5135,11 @@
     "destination": ""
   },
   {
+    "alias": "thunespayments",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "tietoevry",
     "source": "tietoevry-180x180.webp",
     "destination": "tietoevry.png"
@@ -5250,6 +5320,11 @@
     "destination": ""
   },
   {
+    "alias": "ultra-ic",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "umbraspace",
     "source": "",
     "destination": ""
@@ -5293,6 +5368,11 @@
     "alias": "unzer",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "upfluence",
+    "source": "upfluence-200x200.jpeg",
+    "destination": "upfluence.jpeg"
   },
   {
     "alias": "upvest",

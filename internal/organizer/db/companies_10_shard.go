@@ -589,6 +589,16 @@ func companies10Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Middle Golang Developer",
+							ShortDescription:     "AWS",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4298290129/",
+							Location:             "Plano, TX",
+							Date:                 mustDate("2025-09-10"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -2866,7 +2876,7 @@ func companies10Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4287543629/",
 							Location:             "Boston, MA",
-							Date:                 mustDate("2025-08-19"),
+							Date:                 mustDate("2025-09-10", "2025-08-19"),
 							WithSalary:           true, // $140k/yr - $160k/yr
 							Remote:               false,
 						},
@@ -5543,7 +5553,7 @@ func companies10Shard() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Back-end Developer",
+							Title:                "Back-End Developer",
 							ShortDescription:     "Proficiency in at least one programming language (Golang or Java)",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4277727164/",

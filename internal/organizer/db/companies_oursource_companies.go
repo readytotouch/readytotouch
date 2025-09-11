@@ -2306,5 +2306,37 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Truelogic Software",
+			Website: "https://www.truelogic.io/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                108640,
+				IDs:               nil,
+				Alias:             "truelogicsoftware",
+				Name:              "Truelogic Software",
+				Followers:         "22K",
+				Employees:         "501-1K",
+				AssociatedMembers: "321",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Stateside",
+			Website: "https://stateside.agency/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                9448167,
+				IDs:               nil,
+				Alias:             "stateside-co-",
+				Name:              "Stateside",
+				Followers:         "40K",
+				Employees:         "51-200",
+				AssociatedMembers: "66",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }

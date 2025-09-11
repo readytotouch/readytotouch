@@ -1461,5 +1461,53 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Amicus",
+			Website: "https://www.amicusjobs.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                11058344,
+				IDs:               nil,
+				Alias:             "amicus-recruitment",
+				Name:              "Amicus",
+				Followers:         "138K",
+				Employees:         "11-50",
+				AssociatedMembers: "35",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Verigent",
+			Website: "https://verigent.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                127588,
+				IDs:               nil,
+				Alias:             "verigent",
+				Name:              "Verigent",
+				Followers:         "33K",
+				Employees:         "501-1K",
+				AssociatedMembers: "298",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "eTeam",
+			Website: "https://www.eteaminc.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                61677,
+				IDs:               nil,
+				Alias:             "eteam",
+				Name:              "eTeam",
+				Followers:         "933K",
+				Employees:         "501-1K",
+				AssociatedMembers: "3,204",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }

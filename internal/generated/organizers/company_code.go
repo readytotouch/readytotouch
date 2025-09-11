@@ -669,7 +669,7 @@ var (
 		"forcepoint":                          668,  // Forcepoint
 		"thenu":                               669,  // NU
 		"barracuda-networks":                  670,  // Barracuda
-		"flatpeak":                            671,  // FlatPeak
+		"flatpeak":                            671,  // Flatpeak
 		"teradata":                            672,  // Teradata
 		"teramindco":                          673,  // Teramind
 		"lotusretails":                        674,  // Lotus&#39;s
@@ -1164,6 +1164,22 @@ var (
 		"cuju-app":                            1164, // CUJU
 		"autostoresystem":                     1165, // AutoStore™
 		"supabase":                            1166, // Supabase
+		"greshamtech":                         1167, // Gresham
+		"joinmultiverse":                      1168, // Multiverse
+		"bluerivertech":                       1169, // Blue River Technology
+		"ultra-ic":                            1170, // Ultra Intelligence &amp; Communications
+		"cognyte":                             1171, // Cognyte
+		"catiotech":                           1172, // Catio
+		"cloudnuro":                           1173, // CloudNuro
+		"hostaway":                            1174, // Hostaway
+		"cirrus-logic":                        1175, // Cirrus Logic
+		"surfshark":                           1176, // Surfshark
+		"fortegroup":                          1177, // Forte Group
+		"thunespayments":                      1178, // Thunes
+		"kayrros":                             1179, // Kayrros
+		"fingerprintjs":                       1180, // Fingerprint
+		"perion":                              1181, // Perion
+		"upfluence":                           1182, // Upfluence
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 
