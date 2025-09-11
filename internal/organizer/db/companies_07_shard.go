@@ -3031,8 +3031,9 @@ func companies07Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "sophos",
+				Followers: "164",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Sophos",
@@ -3063,7 +3064,7 @@ func companies07Shard() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 4,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer — Golang Developer",
@@ -5301,8 +5302,9 @@ func companies07Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "emnify",
-				Verified: true,
+				Login:     "emnify",
+				Followers: "25",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -5329,7 +5331,7 @@ func companies07Shard() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 7,
+					GitHubRepositoriesCount: 6,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "(Senior) Software Engineer — Packet Gateway C/Go",

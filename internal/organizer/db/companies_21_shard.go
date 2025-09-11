@@ -295,7 +295,14 @@ func companies21Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Gresham-Tech-EI_IE26058.11,23.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Gresham-Tech-Reviews-E26058.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Gresham-Tech-Jobs-E26058.htm",
+				Jobs:        "",
+				Reviews:     "62",
+				Salaries:    "149",
+				ReviewsRate: "3.4",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -369,8 +376,9 @@ func companies21Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "Multiverse-io",
+				Followers: "24",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -379,7 +387,14 @@ func companies21Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Multiverse-EI_IE1676004.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Multiverse-Reviews-E1676004.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Multiverse-Jobs-E1676004.htm",
+				Jobs:        "34",
+				Reviews:     "351",
+				Salaries:    "1.1K",
+				ReviewsRate: "3.1",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -402,7 +417,7 @@ func companies21Shard() []domain.CompanyProfile {
 					Vacancies:               []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 19,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer",
@@ -463,7 +478,14 @@ func companies21Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Blue-River-Technology-EI_IE1175124.11,32.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Blue-River-Technology-Reviews-E1175124.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Blue-River-Technology-Jobs-E1175124.htm",
+				Jobs:        "7",
+				Reviews:     "80",
+				Salaries:    "160",
+				ReviewsRate: "3.6",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -631,7 +653,14 @@ func companies21Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Cognyte-EI_IE4430257.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Cognyte-Reviews-E4430257.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Cognyte-Jobs-E4430257.htm",
+				Jobs:        "27",
+				Reviews:     "314",
+				Salaries:    "397",
+				ReviewsRate: "4.2",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -958,8 +987,9 @@ func companies21Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "Hostaway",
+				Followers: "16",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -968,7 +998,14 @@ func companies21Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Hostaway-EI_IE1358830.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Hostaway-Reviews-E1358830.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Hostaway-Jobs-E1358830.htm",
+				Jobs:        "136",
+				Reviews:     "70",
+				Salaries:    "63",
+				ReviewsRate: "4.4",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -1052,7 +1089,14 @@ func companies21Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Cirrus-Logic-EI_IE1259.11,23.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Cirrus-Logic-Reviews-E1259.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Cirrus-Logic-Jobs-E1259.htm",
+				Jobs:        "76",
+				Reviews:     "419",
+				Salaries:    "1.3K",
+				ReviewsRate: "4.1",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -1136,7 +1180,14 @@ func companies21Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Surfshark-EI_IE6375899.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Surfshark-Reviews-E6375899.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Surfshark-Jobs-E6375899.htm",
+				Jobs:        "14",
+				Reviews:     "48",
+				Salaries:    "68",
+				ReviewsRate: "4.2",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -1220,7 +1271,14 @@ func companies21Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Forte-Group-EI_IE402276.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Forte-Group-Reviews-E402276.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Forte-Group-Jobs-E402276.htm",
+				Jobs:        "",
+				Reviews:     "163",
+				Salaries:    "159",
+				ReviewsRate: "4.1",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -1304,7 +1362,14 @@ func companies21Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Thunes-EI_IE2906161.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Thunes-Reviews-E2906161.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Thunes-Jobs-E2906161.htm",
+				Jobs:        "26",
+				Reviews:     "81",
+				Salaries:    "132",
+				ReviewsRate: "3.3",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -1388,7 +1453,14 @@ func companies21Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Kayrros-EI_IE2362521.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Kayrros-Reviews-E2362521.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Kayrros-Jobs-E2362521.htm",
+				Jobs:        "2",
+				Reviews:     "62",
+				Salaries:    "125",
+				ReviewsRate: "4.1",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -1462,8 +1534,9 @@ func companies21Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "fingerprintjs",
+				Followers: "462",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -1472,14 +1545,21 @@ func companies21Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Fingerprint-EI_IE4075078.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Fingerprint-Reviews-E4075078.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Fingerprint-Jobs-E4075078.htm",
+				Jobs:        "",
+				Reviews:     "24",
+				Salaries:    "29",
+				ReviewsRate: "4.8",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 1,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Backend Software Engineer – Golang",
@@ -1556,7 +1636,14 @@ func companies21Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Perion-Network-EI_IE561834.11,25.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Perion-Network-Reviews-E561834.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Perion-Network-Jobs-E561834.htm",
+				Jobs:        "",
+				Reviews:     "162",
+				Salaries:    "144",
+				ReviewsRate: "4.3",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -1630,8 +1717,9 @@ func companies21Shard() []domain.CompanyProfile {
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "upfluence",
+				Followers: "6",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -1640,14 +1728,21 @@ func companies21Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Upfluence-EI_IE803160.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Upfluence-Reviews-E803160.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Upfluence-Jobs-E803160.htm",
+				Jobs:        "5",
+				Reviews:     "50",
+				Salaries:    "127",
+				ReviewsRate: "3.1",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 30,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Golang Developer",
