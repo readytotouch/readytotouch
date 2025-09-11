@@ -861,8 +861,8 @@
   },
   {
     "alias": "catiotech",
-    "source": "",
-    "destination": ""
+    "source": "catiotech-256x256.png",
+    "destination": "catiotech.png"
   },
   {
     "alias": "cava-",
@@ -981,8 +981,8 @@
   },
   {
     "alias": "cirrus-logic",
-    "source": "",
-    "destination": ""
+    "source": "cirrus-logic-200x200.jpeg",
+    "destination": "cirrus-logic.jpeg"
   },
   {
     "alias": "cisco",
@@ -1056,8 +1056,8 @@
   },
   {
     "alias": "cloudnuro",
-    "source": "",
-    "destination": ""
+    "source": "cloudnuro-200x200.jpeg",
+    "destination": "cloudnuro.jpeg"
   },
   {
     "alias": "cloudwalk-inc",
@@ -1096,8 +1096,8 @@
   },
   {
     "alias": "cognyte",
-    "source": "",
-    "destination": ""
+    "source": "cognyte-300x300.png",
+    "destination": "cognyte.png"
   },
   {
     "alias": "cohesity",
@@ -1796,8 +1796,8 @@
   },
   {
     "alias": "fingerprintjs",
-    "source": "",
-    "destination": ""
+    "source": "fingerprint-200x200.jpeg",
+    "destination": "fingerprintjs.jpeg"
   },
   {
     "alias": "firebolt",
@@ -1836,8 +1836,8 @@
   },
   {
     "alias": "flatpeak",
-    "source": "",
-    "destination": ""
+    "source": "flatpeak-200x200.jpeg",
+    "destination": "flatpeak.jpeg"
   },
   {
     "alias": "flexaihq",
@@ -2381,8 +2381,8 @@
   },
   {
     "alias": "hostaway",
-    "source": "",
-    "destination": ""
+    "source": "hostaway-200x200.jpeg",
+    "destination": "hostaway.jpeg"
   },
   {
     "alias": "hp",
@@ -2436,8 +2436,8 @@
   },
   {
     "alias": "ifood-",
-    "source": "",
-    "destination": ""
+    "source": "ifood-200x200.jpeg",
+    "destination": "ifood-.jpeg"
   },
   {
     "alias": "ifs",
@@ -2581,8 +2581,8 @@
   },
   {
     "alias": "joinmultiverse",
-    "source": "",
-    "destination": ""
+    "source": "joinmultiverse-200x200.jpeg",
+    "destination": "joinmultiverse.jpeg"
   },
   {
     "alias": "joinpult",
@@ -2606,8 +2606,8 @@
   },
   {
     "alias": "just-eat-takeaway-com",
-    "source": "",
-    "destination": ""
+    "source": "just-eat-takeaway-com-200x200.jpeg",
+    "destination": "just-eat-takeaway-com.jpeg"
   },
   {
     "alias": "justpark",
@@ -3216,8 +3216,8 @@
   },
   {
     "alias": "n-able",
-    "source": "",
-    "destination": ""
+    "source": "n-able-180x180.png",
+    "destination": "n-able.png"
   },
   {
     "alias": "namecheap-inc",
@@ -4846,8 +4846,8 @@
   },
   {
     "alias": "surfshark",
-    "source": "",
-    "destination": ""
+    "source": "surfshark-200x200.jpeg",
+    "destination": "surfshark.jpeg"
   },
   {
     "alias": "surrealdb",
@@ -5371,8 +5371,8 @@
   },
   {
     "alias": "upfluence",
-    "source": "",
-    "destination": ""
+    "source": "upfluence-200x200.jpeg",
+    "destination": "upfluence.jpeg"
   },
   {
     "alias": "upvest",
