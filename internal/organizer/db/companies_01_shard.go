@@ -4762,7 +4762,7 @@ func companies01Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4289926834/",
 							Location:             "Madrid, Community of Madrid, Spain",
-							Date:                 mustDate("2025-08-22"),
+							Date:                 mustDate("2025-09-14", "2025-08-22"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -6749,6 +6749,26 @@ func companies01Shard() []domain.CompanyProfile {
 							WithSalary:           true,
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Developer (Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4300028184/",
+							Location:             "Canada",
+							Date:                 mustDate("2025-09-13"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+						{
+							Title:                "Senior Developer (Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4300017502/",
+							Location:             "United States",
+							Date:                 mustDate("2025-09-13"),
+							WithSalary:           true, // $143k/yr - $210k/yr
+							Remote:               true,
+						},
 					},
 				},
 				domain.Zig:     {},
@@ -7153,8 +7173,17 @@ func companies01Shard() []domain.CompanyProfile {
 				},
 				domain.Rust: {
 					GitHubRepositoriesCount: 26,
-					Vacancies:               []domain.Vacancy{
-						//
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Low level engineer (Rust) | Middle – Senior",
+							ShortDescription:     "VPN",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4300885460/",
+							Location:             "Warsaw, Mazowieckie, Poland",
+							Date:                 mustDate("2025-09-16"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig:     {},

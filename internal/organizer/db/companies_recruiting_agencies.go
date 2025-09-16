@@ -1574,5 +1574,21 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "AAA Global",
+			Website: "https://aaaglobal.co.uk/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                35445621,
+				IDs:               nil,
+				Alias:             "aaaglobal",
+				Name:              "AAA Global",
+				Followers:         "40K",
+				Employees:         "11-50",
+				AssociatedMembers: "65",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }

@@ -1241,18 +1241,23 @@ func companies04Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{
-						/*
-							{
-								Title:            "",
-								ShortDescription: "",
-								URL:              "https://app.welcometothejungle.com/jobs/DwReS2t8",
-								Date:             mustDate(""),
-							},
-						*/
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer",
+							ShortDescription:     "Rust Language Maintainer",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4300979715/",
+							Location:             "South San Francisco, CA",
+							Date:                 mustDate("2025-09-16"),
+							WithSalary:           true, // $170k/yr - $210k/yr
+							Remote:               false,
+						},
 					},
 				},
-				domain.Rust:    {},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},
@@ -2022,6 +2027,16 @@ func companies04Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4289247757/",
 							Location:             "Tel Aviv-Yafo, Tel Aviv District, Israel",
 							Date:                 mustDate("2025-08-22"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Principal Rust Software Engineer",
+							ShortDescription:     "Data Classification (Cortex Cloud)",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4289247753/",
+							Location:             "Tel Aviv-Yafo, Tel Aviv District, Israel",
+							Date:                 mustDate("2025-09-12"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -4624,7 +4639,7 @@ func companies04Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4212552596/",
-							Date:                 mustDate("2025-08-24", "2025-08-03", "2025-07-14", "2025-06-22", "2025-06-01", "2025-05-10"),
+							Date:                 mustDate("2025-09-16", "2025-08-24", "2025-08-03", "2025-07-14", "2025-06-22", "2025-06-01", "2025-05-10"),
 							WithSalary:           false,
 							Remote:               false,
 						},

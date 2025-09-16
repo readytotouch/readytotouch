@@ -2370,5 +2370,53 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Optomi",
+			Website: "https://www.optomi.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2684081,
+				IDs:               nil,
+				Alias:             "optomi",
+				Name:              "Optomi",
+				Followers:         "746K",
+				Employees:         "501-1K",
+				AssociatedMembers: "405",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "3Pillar",
+			Website: "https://www.3pillarglobal.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                684004,
+				IDs:               []int{65620, 684004},
+				Alias:             "3pillar",
+				Name:              "3Pillar",
+				Followers:         "121K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "1,781",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "TMC",
+			Website: "https://www.themembercompany.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                166459,
+				IDs:               []int{166459, 9189163, 91519275, 93352899},
+				Alias:             "tmc",
+				Name:              "TMC",
+				Followers:         "186K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "4,812",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }

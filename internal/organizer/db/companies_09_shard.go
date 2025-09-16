@@ -2278,7 +2278,7 @@ func companies09Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4273338527/",
 							Location:             "Pune, Maharashtra, India",
-							Date:                 mustDate("2025-09-11"), // mustDate("2025-08-22", "2025-07-30"),
+							Date:                 mustDate("2025-09-11", "2025-08-22", "2025-07-30"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -5195,6 +5195,16 @@ func companies09Shard() []domain.CompanyProfile {
 							Location:             "Taunton, MA",
 							Date:                 mustDate("2025-09-02"),
 							WithSalary:           true, // $102.6k/yr - $108k/yr
+							Remote:               false,
+						},
+						{
+							Title:                "Rust Embedded Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4300740798/",
+							Location:             "Dedham, MA",
+							Date:                 mustDate("2025-09-16"),
+							WithSalary:           true, // $107.5k/yr - $115k/yr
 							Remote:               false,
 						},
 					},

@@ -3049,6 +3049,16 @@ func companies13Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $142.8k/yr - $214.2k/yr
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Software Engineer, Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4301541466/",
+							Location:             "Fort Collins, CO",
+							Date:                 mustDate("2025-09-16"),
+							WithSalary:           true, // $142.8k/yr - $214.2k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig:     {},

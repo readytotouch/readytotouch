@@ -1060,7 +1060,7 @@ func companies20Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4254962827/",
 							Location:             "Boston, MA",
-							Date:                 mustDate("2025-09-16"), // mustDate("2025-08-06"),
+							Date:                 mustDate("2025-09-16", "2025-08-06"),
 							WithSalary:           false,
 							Remote:               false,
 						},
