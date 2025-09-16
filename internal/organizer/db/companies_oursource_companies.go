@@ -2338,5 +2338,21 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Lean Tech",
+			Website: "https://www.leangroup.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                19258959,
+				IDs:               nil,
+				Alias:             "lean-tech-io",
+				Name:              "Lean Tech",
+				Followers:         "44K",
+				Employees:         "501-1K",
+				AssociatedMembers: "443",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }

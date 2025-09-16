@@ -1525,5 +1525,21 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "X-Team",
+			Website: "https://x-team.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                837266,
+				IDs:               nil,
+				Alias:             "x-team",
+				Name:              "X-Team",
+				Followers:         "101K",
+				Employees:         "501-1K",
+				AssociatedMembers: "2,800",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }

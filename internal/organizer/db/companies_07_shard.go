@@ -1901,6 +1901,16 @@ func companies07Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $152k/yr - $190k/yr
 							Remote:               false,
 						},
+						{
+							Title:                "Software Engineer Elixir",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4301296222/",
+							Location:             "Hyderabad, Telangana, India",
+							Date:                 mustDate("2025-09-16"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Clojure: {},
