@@ -352,6 +352,16 @@ func companies20Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Haskell / Scala Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4300913262/",
+							Location:             "Serbia",
+							Date:                 mustDate("2025-09-15"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Erlang: {
