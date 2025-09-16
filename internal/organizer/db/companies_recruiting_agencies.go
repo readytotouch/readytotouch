@@ -1509,5 +1509,21 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Luflox",
+			Website: "https://www.luflox.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                76908805,
+				IDs:               nil,
+				Alias:             "luflox-llc",
+				Name:              "Luflox",
+				Followers:         "16K",
+				Employees:         "11-50",
+				AssociatedMembers: "10",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }
