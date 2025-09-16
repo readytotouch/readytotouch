@@ -1839,7 +1839,18 @@ func companies21Shard() []domain.CompanyProfile {
 				},
 				domain.Scala: {
 					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Middle/Senior Big Data Engineer (Scala)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4277567694/",
+							Location:             "Poland",
+							Date:                 mustDate("2025-09-13"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
 				},
 				domain.Elixir: {
 					GitHubRepositoriesCount: 0,
@@ -2045,18 +2056,19 @@ func companies21Shard() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
-			Careers: "",
-			About:   "",
+			Name:    "Commerce",
+			Website: "https://www.commerce.com/",
+			Careers: "https://www.commerce.com/careers/",
+			About:   "https://www.commerce.com/about/",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
+				ID:                108096657,
+				IDs:               nil,
+				Alias:             "poweredbycommerce",
+				Name:              "Commerce",
+				Followers:         "3K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "1,731",
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -2090,7 +2102,18 @@ func companies21Shard() []domain.CompanyProfile {
 				},
 				domain.Scala: {
 					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer II (Scala)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4299256946/",
+							Location:             "United Kingdom",
+							Date:                 mustDate("2025-09-16"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
 				},
 				domain.Elixir: {
 					GitHubRepositoriesCount: 0,
@@ -2109,27 +2132,30 @@ func companies21Shard() []domain.CompanyProfile {
 					Vacancies:               []domain.Vacancy{},
 				},
 			},
-			ShortDescription: "",
+			ShortDescription: "We help brands unlock the full potential of their data, connect systems, and deliver seamless, personalized experiences across every channel",
 			Industries:       []domain.Industry{
 				// NOP
 			},
+			YahooFinanceURL:  "https://finance.yahoo.com/quote/CMRC/",
+			GoogleFinanceURL: "https://www.google.com/finance/quote/CMRC:NASDAQ",
 		},
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
-			Careers: "",
-			About:   "",
+			Name:    "Ciena",
+			Website: "https://www.ciena.com/",
+			Careers: "https://www.ciena.com/careers",
+			About:   "https://www.ciena.com/about",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
+				ID:                3960,
+				IDs:               []int{3960, 115098, 2171992},
+				Alias:             "ciena",
+				Name:              "Ciena",
+				Followers:         "269K",
+				Employees:         "5K-10K",
+				AssociatedMembers: "10,128",
+				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -2162,7 +2188,18 @@ func companies21Shard() []domain.CompanyProfile {
 				},
 				domain.Scala: {
 					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Scala Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4301301751/",
+							Location:             "Gurugram, Haryana, India",
+							Date:                 mustDate("2025-09-16"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
 				},
 				domain.Elixir: {
 					GitHubRepositoriesCount: 0,
@@ -2181,10 +2218,12 @@ func companies21Shard() []domain.CompanyProfile {
 					Vacancies:               []domain.Vacancy{},
 				},
 			},
-			ShortDescription: "",
-			Industries:       []domain.Industry{
-				// NOP
+			ShortDescription: "Data transmission and network management",
+			Industries: []domain.Industry{
+				domain.IndustryTelecom,
 			},
+			YahooFinanceURL:  "https://finance.yahoo.com/quote/CIEN/",
+			GoogleFinanceURL: "https://www.google.com/finance/quote/CIEN:NYSE",
 		},
 		{
 			ID:      0,  // system

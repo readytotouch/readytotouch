@@ -2278,7 +2278,7 @@ func companies09Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4273338527/",
 							Location:             "Pune, Maharashtra, India",
-							Date:                 mustDate("2025-08-22", "2025-07-30"),
+							Date:                 mustDate("2025-09-11"), // mustDate("2025-08-22", "2025-07-30"),
 							WithSalary:           false,
 							Remote:               false,
 						},

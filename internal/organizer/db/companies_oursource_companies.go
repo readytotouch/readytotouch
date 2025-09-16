@@ -2354,5 +2354,21 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Simform",
+			Website: "https://www.simform.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                607800,
+				IDs:               nil,
+				Alias:             "simform",
+				Name:              "Simform",
+				Followers:         "106K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "1,204",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }

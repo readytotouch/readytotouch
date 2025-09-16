@@ -1541,5 +1541,38 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Snatch UP",
+			Website: "https://www.snatch-up.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                101896900,
+				IDs:               nil,
+				Alias:             "snatch-up",
+				Name:              "Snatch UP",
+				Followers:         "11K",
+				Employees:         "2-10",
+				AssociatedMembers: "3",
+				Verified:          false,
+			},
+			ShortDescription: "We are far beyond your typical recruitment agency",
+			Ignore:           true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Vaco by Highspring",
+			Website: "https://www.vaco.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                106804514,
+				IDs:               nil,
+				Alias:             "vaco-by-highspring",
+				Name:              "Vaco by Highspring",
+				Followers:         "1M",
+				Employees:         "5K-10K",
+				AssociatedMembers: "986",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }
