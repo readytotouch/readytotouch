@@ -1590,5 +1590,69 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Dataworks",
+			Website: "https://mydataworks.io/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                77873522,
+				IDs:               nil,
+				Alias:             "dataworks-io",
+				Name:              "Dataworks",
+				Followers:         "50K",
+				Employees:         "2-10",
+				AssociatedMembers: "25",
+				Verified:          false,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "TekRek",
+			Website: "https://tekrek.io/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                67558642,
+				IDs:               nil,
+				Alias:             "tekrek",
+				Name:              "TekRek",
+				Followers:         "36K",
+				Employees:         "2-10",
+				AssociatedMembers: "7",
+				Verified:          false,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Arc.dev",
+			Website: "https://arc.dev/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                20409460,
+				IDs:               nil,
+				Alias:             "arcdotdev",
+				Name:              "Arc.dev",
+				Followers:         "23K",
+				Employees:         "11-50",
+				AssociatedMembers: "92",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "EPITEC",
+			Website: "https://epitec.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                25461,
+				IDs:               nil,
+				Alias:             "epitec",
+				Name:              "EPITEC",
+				Followers:         "546K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "545",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }

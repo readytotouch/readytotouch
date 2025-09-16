@@ -2418,5 +2418,21 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "CODE.ID",
+			Website: "https://www.code.id/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                4841387,
+				IDs:               nil,
+				Alias:             "codedevelopmentindonesia",
+				Name:              "CODE.ID",
+				Followers:         "24K",
+				Employees:         "201-500",
+				AssociatedMembers: "322",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }
