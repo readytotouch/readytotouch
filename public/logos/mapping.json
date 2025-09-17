@@ -95,6 +95,11 @@
     "destination": "adjoe.png"
   },
   {
+    "alias": "admiral-money",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "adobe",
     "source": "adobe-200x200.jpeg",
     "destination": "adobe.jpeg"
@@ -343,6 +348,11 @@
     "alias": "archieapp",
     "source": "archieapp-96x96.png",
     "destination": "archieapp.png"
+  },
+  {
+    "alias": "arcticwolf",
+    "source": "",
+    "destination": ""
   },
   {
     "alias": "arculus-a-jungheinrich-company",
@@ -825,6 +835,11 @@
     "destination": ""
   },
   {
+    "alias": "capco",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "capital-one",
     "source": "capital-one-180x180.png",
     "destination": "capital-one.png"
@@ -956,6 +971,11 @@
   },
   {
     "alias": "cielara",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "ciena",
     "source": "",
     "destination": ""
   },
@@ -1298,6 +1318,11 @@
     "alias": "datadog",
     "source": "datadog-180x180.jpeg",
     "destination": "datadog.jpeg"
+  },
+  {
+    "alias": "datanimbusinc",
+    "source": "",
+    "destination": ""
   },
   {
     "alias": "dataoncorp",
@@ -1735,6 +1760,11 @@
     "destination": "f5.png"
   },
   {
+    "alias": "facilitapay",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "factset",
     "source": "",
     "destination": ""
@@ -2093,6 +2123,11 @@
     "alias": "getwriter",
     "source": "writer-180x180.png",
     "destination": "getwriter.png"
+  },
+  {
+    "alias": "gevernova",
+    "source": "",
+    "destination": ""
   },
   {
     "alias": "gitguardian",
@@ -2985,6 +3020,11 @@
     "destination": "mastercard.png"
   },
   {
+    "alias": "matchmove",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "materialise",
     "source": "",
     "destination": ""
@@ -3008,6 +3048,11 @@
     "alias": "mcafee",
     "source": "mcafee-200x200.jpeg",
     "destination": "mcafee.jpeg"
+  },
+  {
+    "alias": "mckesson",
+    "source": "",
+    "destination": ""
   },
   {
     "alias": "mechanical-orchard",
@@ -3690,6 +3735,11 @@
     "destination": "parallel-wireless-inc.png"
   },
   {
+    "alias": "parcelhero-com-limited",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "parshipmeet",
     "source": "",
     "destination": ""
@@ -3856,6 +3906,11 @@
   },
   {
     "alias": "power-factors-inc",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "poweredbycommerce",
     "source": "",
     "destination": ""
   },
@@ -5508,6 +5563,11 @@
     "alias": "visa",
     "source": "visa-200x200.jpeg",
     "destination": "visa.jpeg"
+  },
+  {
+    "alias": "visionxplus",
+    "source": "",
+    "destination": ""
   },
   {
     "alias": "vitalbio",
