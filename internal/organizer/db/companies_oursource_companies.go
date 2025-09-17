@@ -2338,5 +2338,101 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Lean Tech",
+			Website: "https://www.leangroup.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                19258959,
+				IDs:               nil,
+				Alias:             "lean-tech-io",
+				Name:              "Lean Tech",
+				Followers:         "44K",
+				Employees:         "501-1K",
+				AssociatedMembers: "443",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Simform",
+			Website: "https://www.simform.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                607800,
+				IDs:               nil,
+				Alias:             "simform",
+				Name:              "Simform",
+				Followers:         "106K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "1,204",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Optomi",
+			Website: "https://www.optomi.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2684081,
+				IDs:               nil,
+				Alias:             "optomi",
+				Name:              "Optomi",
+				Followers:         "746K",
+				Employees:         "501-1K",
+				AssociatedMembers: "405",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "3Pillar",
+			Website: "https://www.3pillarglobal.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                684004,
+				IDs:               []int{65620, 684004},
+				Alias:             "3pillar",
+				Name:              "3Pillar",
+				Followers:         "121K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "1,781",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "TMC",
+			Website: "https://www.themembercompany.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                166459,
+				IDs:               []int{166459, 9189163, 91519275, 93352899},
+				Alias:             "tmc",
+				Name:              "TMC",
+				Followers:         "186K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "4,812",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "CODE.ID",
+			Website: "https://www.code.id/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                4841387,
+				IDs:               nil,
+				Alias:             "codedevelopmentindonesia",
+				Name:              "CODE.ID",
+				Followers:         "24K",
+				Employees:         "201-500",
+				AssociatedMembers: "322",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }

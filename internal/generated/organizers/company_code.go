@@ -1180,6 +1180,19 @@ var (
 		"fingerprintjs":                       1180, // Fingerprint
 		"perion":                              1181, // Perion
 		"upfluence":                           1182, // Upfluence
+		"capco":                               1183, // Capco
+		"facilitapay":                         1184, // FacilitaPay
+		"mckesson":                            1185, // McKesson
+		"poweredbycommerce":                   1186, // Commerce
+		"ciena":                               1187, // Ciena
+		"parcelhero-com-limited":              1188, // Parcelhero
+		"admiral-money":                       1189, // Admiral Money
+		"matchmove":                           1190, // MatchMove
+		"arcticwolf":                          1191, // Arctic Wolf
+		"datanimbusinc":                       1192, // DataNimbus
+		"gevernova":                           1193, // GE Vernova
+		"visionxplus":                         1194, // VisionPlus
+		"teads":                               1195, // Teads
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

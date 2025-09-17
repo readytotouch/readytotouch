@@ -95,6 +95,11 @@
     "destination": "adjoe.png"
   },
   {
+    "alias": "admiral-money",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "adobe",
     "source": "adobe-200x200.jpeg",
     "destination": "adobe.jpeg"
@@ -345,6 +350,11 @@
     "destination": "archieapp.png"
   },
   {
+    "alias": "arcticwolf",
+    "source": "arcticwolf-200x200.png",
+    "destination": "arcticwolf.png"
+  },
+  {
     "alias": "arculus-a-jungheinrich-company",
     "source": "",
     "destination": ""
@@ -456,8 +466,8 @@
   },
   {
     "alias": "autodoc",
-    "source": "",
-    "destination": ""
+    "source": "autodoc-180x180.png",
+    "destination": "autodoc.png"
   },
   {
     "alias": "automox",
@@ -825,6 +835,11 @@
     "destination": ""
   },
   {
+    "alias": "capco",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "capital-one",
     "source": "capital-one-180x180.png",
     "destination": "capital-one.png"
@@ -958,6 +973,11 @@
     "alias": "cielara",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "ciena",
+    "source": "ciena-180x180.png",
+    "destination": "ciena.png"
   },
   {
     "alias": "cimri",
@@ -1298,6 +1318,11 @@
     "alias": "datadog",
     "source": "datadog-180x180.jpeg",
     "destination": "datadog.jpeg"
+  },
+  {
+    "alias": "datanimbusinc",
+    "source": "datanimbus-200x200.jpeg",
+    "destination": "datanimbusinc.jpeg"
   },
   {
     "alias": "dataoncorp",
@@ -1735,6 +1760,11 @@
     "destination": "f5.png"
   },
   {
+    "alias": "facilitapay",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "factset",
     "source": "",
     "destination": ""
@@ -2093,6 +2123,11 @@
     "alias": "getwriter",
     "source": "writer-180x180.png",
     "destination": "getwriter.png"
+  },
+  {
+    "alias": "gevernova",
+    "source": "",
+    "destination": ""
   },
   {
     "alias": "gitguardian",
@@ -2985,6 +3020,11 @@
     "destination": "mastercard.png"
   },
   {
+    "alias": "matchmove",
+    "source": "matchmove-200x200.jpeg",
+    "destination": "matchmove.jpeg"
+  },
+  {
     "alias": "materialise",
     "source": "",
     "destination": ""
@@ -3008,6 +3048,11 @@
     "alias": "mcafee",
     "source": "mcafee-200x200.jpeg",
     "destination": "mcafee.jpeg"
+  },
+  {
+    "alias": "mckesson",
+    "source": "",
+    "destination": ""
   },
   {
     "alias": "mechanical-orchard",
@@ -3296,8 +3341,8 @@
   },
   {
     "alias": "netapp",
-    "source": "",
-    "destination": ""
+    "source": "netapp-200x200.jpeg",
+    "destination": "netapp.jpeg"
   },
   {
     "alias": "netcore-cloud",
@@ -3690,6 +3735,11 @@
     "destination": "parallel-wireless-inc.png"
   },
   {
+    "alias": "parcelhero-com-limited",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "parshipmeet",
     "source": "",
     "destination": ""
@@ -3858,6 +3908,11 @@
     "alias": "power-factors-inc",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "poweredbycommerce",
+    "source": "commerce-200x200.jpeg",
+    "destination": "poweredbycommerce.jpeg"
   },
   {
     "alias": "praxent",
@@ -4781,8 +4836,8 @@
   },
   {
     "alias": "strangebee",
-    "source": "",
-    "destination": ""
+    "source": "strangebee-200x200.jpeg",
+    "destination": "strangebee.jpeg"
   },
   {
     "alias": "stratascale-llc",
@@ -4936,8 +4991,8 @@
   },
   {
     "alias": "tabeo",
-    "source": "",
-    "destination": ""
+    "source": "tabeo-200x200.jpeg",
+    "destination": "tabeo.jpeg"
   },
   {
     "alias": "tabtechnology",
@@ -4993,6 +5048,11 @@
     "alias": "teaching-strategies-llc",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "teads",
+    "source": "teads-180x180.png",
+    "destination": "teads.png"
   },
   {
     "alias": "teamwork-com",
@@ -5508,6 +5568,11 @@
     "alias": "visa",
     "source": "visa-200x200.jpeg",
     "destination": "visa.jpeg"
+  },
+  {
+    "alias": "visionxplus",
+    "source": "",
+    "destination": ""
   },
   {
     "alias": "vitalbio",

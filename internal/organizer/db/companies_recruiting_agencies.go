@@ -1509,5 +1509,150 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Luflox",
+			Website: "https://www.luflox.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                76908805,
+				IDs:               nil,
+				Alias:             "luflox-llc",
+				Name:              "Luflox",
+				Followers:         "16K",
+				Employees:         "11-50",
+				AssociatedMembers: "10",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "X-Team",
+			Website: "https://x-team.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                837266,
+				IDs:               nil,
+				Alias:             "x-team",
+				Name:              "X-Team",
+				Followers:         "101K",
+				Employees:         "501-1K",
+				AssociatedMembers: "2,800",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Snatch UP",
+			Website: "https://www.snatch-up.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                101896900,
+				IDs:               nil,
+				Alias:             "snatch-up",
+				Name:              "Snatch UP",
+				Followers:         "11K",
+				Employees:         "2-10",
+				AssociatedMembers: "3",
+				Verified:          false,
+			},
+			ShortDescription: "We are far beyond your typical recruitment agency",
+			Ignore:           true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Vaco by Highspring",
+			Website: "https://www.vaco.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                106804514,
+				IDs:               nil,
+				Alias:             "vaco-by-highspring",
+				Name:              "Vaco by Highspring",
+				Followers:         "1M",
+				Employees:         "5K-10K",
+				AssociatedMembers: "986",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "AAA Global",
+			Website: "https://aaaglobal.co.uk/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                35445621,
+				IDs:               nil,
+				Alias:             "aaaglobal",
+				Name:              "AAA Global",
+				Followers:         "40K",
+				Employees:         "11-50",
+				AssociatedMembers: "65",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Dataworks",
+			Website: "https://mydataworks.io/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                77873522,
+				IDs:               nil,
+				Alias:             "dataworks-io",
+				Name:              "Dataworks",
+				Followers:         "50K",
+				Employees:         "2-10",
+				AssociatedMembers: "25",
+				Verified:          false,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "TekRek",
+			Website: "https://tekrek.io/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                67558642,
+				IDs:               nil,
+				Alias:             "tekrek",
+				Name:              "TekRek",
+				Followers:         "36K",
+				Employees:         "2-10",
+				AssociatedMembers: "7",
+				Verified:          false,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Arc.dev",
+			Website: "https://arc.dev/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                20409460,
+				IDs:               nil,
+				Alias:             "arcdotdev",
+				Name:              "Arc.dev",
+				Followers:         "23K",
+				Employees:         "11-50",
+				AssociatedMembers: "92",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "EPITEC",
+			Website: "https://epitec.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                25461,
+				IDs:               nil,
+				Alias:             "epitec",
+				Name:              "EPITEC",
+				Followers:         "546K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "545",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }

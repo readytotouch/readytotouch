@@ -181,7 +181,7 @@ unsafe-browser-extension:
 		&& zip -r readytotouch-unsafe-browser-extension.zip readytotouch-unsafe-browser-extension \
 		&& chmod 777 readytotouch-unsafe-browser-extension.zip
 
-# make more-companies VERSION=89
+# make more-companies VERSION=90
 more-companies:
 ifndef VERSION
 	$(error VERSION is not set. Use `make more-companies VERSION=X`)
