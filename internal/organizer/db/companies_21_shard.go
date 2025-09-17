@@ -1829,7 +1829,14 @@ func companies21Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Capco-EI_IE400565.11,16.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Capco-Reviews-E400565.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Capco-Jobs-E400565.htm",
+				Jobs:        "572",
+				Reviews:     "3.9K",
+				Salaries:    "7.5K",
+				ReviewsRate: "3.8",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -2019,7 +2026,14 @@ func companies21Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-McKesson-EI_IE434.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/McKesson-Reviews-E434.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/McKesson-Jobs-E434.htm",
+				Jobs:        "760",
+				Reviews:     "6.5K",
+				Salaries:    "11K",
+				ReviewsRate: "3.6",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -2103,7 +2117,14 @@ func companies21Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Commerce-EI_IE10729914.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Commerce-Reviews-E10729914.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Commerce-Jobs-E10729914.htm",
+				Jobs:        "49",
+				Reviews:     "7",
+				Salaries:    "9",
+				ReviewsRate: "5.0",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -2190,8 +2211,9 @@ func companies21Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "ciena",
+				Followers: "28",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -2200,14 +2222,21 @@ func companies21Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Ciena-EI_IE6612.11,16.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Ciena-Reviews-E6612.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Ciena-Jobs-E6612.htm",
+				Jobs:        "138",
+				Reviews:     "2.5K",
+				Salaries:    "3.7K",
+				ReviewsRate: "4.2",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 8,
 					Vacancies:               []domain.Vacancy{},
 				},
 				domain.Rust: {
@@ -2539,7 +2568,14 @@ func companies21Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-MatchMovePay-EI_IE996396.11,23.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/MatchMovePay-Reviews-E996396.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/MatchMovePay-Jobs-E996396.htm",
+				Jobs:        "",
+				Reviews:     "141",
+				Salaries:    "94",
+				ReviewsRate: "4.0",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -2613,8 +2649,9 @@ func companies21Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "rtkwlf",
+				Followers: "374",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -2623,14 +2660,21 @@ func companies21Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Arctic-Wolf-EI_IE1393965.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Arctic-Wolf-Reviews-E1393965.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Arctic-Wolf-Jobs-E1393965.htm",
+				Jobs:        "",
+				Reviews:     "311",
+				Salaries:    "670",
+				ReviewsRate: "3.9",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 7,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Developer – Back-End (Golang)",
@@ -2697,8 +2741,9 @@ func companies21Shard() []domain.CompanyProfile {
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "datanimbus",
+				Followers: "6",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -2707,14 +2752,21 @@ func companies21Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-DataNimbus-EI_IE3265873.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/DataNimbus-Reviews-E3265873.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/DataNimbus-Jobs-E3265873.htm",
+				Jobs:        "",
+				Reviews:     "24",
+				Salaries:    "39",
+				ReviewsRate: "4.6",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 3,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Back-End Developer – Golang",
@@ -2791,7 +2843,14 @@ func companies21Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-GE-Vernova-EI_IE740889.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/GE-Vernova-Reviews-E740889.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/GE-Vernova-Jobs-E740889.htm",
+				Jobs:        "2.8K",
+				Reviews:     "3.1K",
+				Salaries:    "4.7K",
+				ReviewsRate: "3.9",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
