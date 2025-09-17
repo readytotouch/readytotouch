@@ -351,8 +351,8 @@
   },
   {
     "alias": "arcticwolf",
-    "source": "",
-    "destination": ""
+    "source": "arcticwolf-200x200.png",
+    "destination": "arcticwolf.png"
   },
   {
     "alias": "arculus-a-jungheinrich-company",
@@ -466,8 +466,8 @@
   },
   {
     "alias": "autodoc",
-    "source": "",
-    "destination": ""
+    "source": "autodoc-180x180.png",
+    "destination": "autodoc.png"
   },
   {
     "alias": "automox",
@@ -976,8 +976,8 @@
   },
   {
     "alias": "ciena",
-    "source": "",
-    "destination": ""
+    "source": "ciena-180x180.png",
+    "destination": "ciena.png"
   },
   {
     "alias": "cimri",
@@ -1321,8 +1321,8 @@
   },
   {
     "alias": "datanimbusinc",
-    "source": "",
-    "destination": ""
+    "source": "datanimbus-200x200.jpeg",
+    "destination": "datanimbusinc.jpeg"
   },
   {
     "alias": "dataoncorp",
@@ -3021,8 +3021,8 @@
   },
   {
     "alias": "matchmove",
-    "source": "",
-    "destination": ""
+    "source": "matchmove-200x200.jpeg",
+    "destination": "matchmove.jpeg"
   },
   {
     "alias": "materialise",
@@ -3341,8 +3341,8 @@
   },
   {
     "alias": "netapp",
-    "source": "",
-    "destination": ""
+    "source": "netapp-200x200.jpeg",
+    "destination": "netapp.jpeg"
   },
   {
     "alias": "netcore-cloud",
@@ -3911,8 +3911,8 @@
   },
   {
     "alias": "poweredbycommerce",
-    "source": "",
-    "destination": ""
+    "source": "commerce-200x200.jpeg",
+    "destination": "poweredbycommerce.jpeg"
   },
   {
     "alias": "praxent",
@@ -4991,8 +4991,8 @@
   },
   {
     "alias": "tabeo",
-    "source": "",
-    "destination": ""
+    "source": "tabeo-200x200.jpeg",
+    "destination": "tabeo.jpeg"
   },
   {
     "alias": "tabtechnology",
