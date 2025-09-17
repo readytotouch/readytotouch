@@ -4836,8 +4836,8 @@
   },
   {
     "alias": "strangebee",
-    "source": "",
-    "destination": ""
+    "source": "strangebee-200x200.jpeg",
+    "destination": "strangebee.jpeg"
   },
   {
     "alias": "stratascale-llc",
@@ -5048,6 +5048,11 @@
     "alias": "teaching-strategies-llc",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "teads",
+    "source": "teads-180x180.png",
+    "destination": "teads.png"
   },
   {
     "alias": "teamwork-com",

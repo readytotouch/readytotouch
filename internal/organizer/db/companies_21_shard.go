@@ -2989,6 +2989,92 @@ func companies21Shard() []domain.CompanyProfile {
 				domain.IndustryFinTech,
 			},
 		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Teads",
+			Website: "https://www.teads.com/",
+			Careers: "https://www.teads.com/about-teads/",
+			About:   "https://www.teads.com/teads-careers/",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2691523,
+				IDs:               []int{2691523, 70931947, 100988850},
+				Alias:             "teads",
+				Name:              "Teads",
+				Followers:         "153K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "1,825",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Full Stack – Backend Oriented",
+							ShortDescription:     "We use mostly Scala and TypeScript",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4293125191/",
+							Location:             "Netanya, Center District, Israel",
+							Date:                 mustDate("2025-09-10"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Omnichannel outcomes platform",
+			Industries: []domain.Industry{
+				domain.IndustryAdTech,
+			},
+			YahooFinanceURL:  "https://finance.yahoo.com/quote/TEAD/",
+			GoogleFinanceURL: "https://www.google.com/finance/quote/TEAD:NASDAQ",
+		},
 
 		// Template
 		//{

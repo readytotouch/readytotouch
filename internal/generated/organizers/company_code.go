@@ -1192,6 +1192,7 @@ var (
 		"datanimbusinc":                       1192, // DataNimbus
 		"gevernova":                           1193, // GE Vernova
 		"visionxplus":                         1194, // VisionPlus
+		"teads":                               1195, // Teads
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

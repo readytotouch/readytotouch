@@ -2992,6 +2992,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4299236251/":                                                               2994, // datanimbusinc
 		"https://www.linkedin.com/jobs/view/4265261756/":                                                               2995, // gevernova
 		"https://www.linkedin.com/jobs/view/4299119401/":                                                               2996, // visionxplus
+		"https://www.linkedin.com/jobs/view/4293125191/":                                                               2997, // teads
 		"https://www.linkedin.com/jobs/view/3914839625/":                                                               372,  // cognizant
 		"https://www.linkedin.com/jobs/view/4120737001/":                                                               600,  // cognizant
 		"https://www.linkedin.com/jobs/view/4149258542/":                                                               787,  // cognizant
