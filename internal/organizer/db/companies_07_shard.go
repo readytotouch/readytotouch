@@ -5298,7 +5298,7 @@ func companies07Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4278242625/",
 							Location:             "Vienna, Vienna, Austria",
-							Date:                 mustDate("2025-08-06"),
+							Date:                 mustDate("2025-09-19", "2025-08-06"),
 							WithSalary:           false,
 							Remote:               false,
 						},

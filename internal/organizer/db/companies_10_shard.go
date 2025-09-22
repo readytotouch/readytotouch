@@ -5237,6 +5237,16 @@ func companies10Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "(Junior) Rust Backend Engineer",
+							ShortDescription:     "Fleet Optimization",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4302824120/",
+							Location:             "Berlin, Germany",
+							Date:                 mustDate("2025-09-19"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig: {},
@@ -5540,6 +5550,16 @@ func companies10Shard() []domain.CompanyProfile {
 							Location:             "United States",
 							Date:                 mustDate("2025-09-12", "2025-08-22", "2025-07-30"),
 							WithSalary:           true, // $200k/yr - $270k/yr
+							Remote:               true,
+						},
+						{
+							Title:                "Senior Software Engineer – Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4293247082/",
+							Location:             "United States",
+							Date:                 mustDate("2025-09-21"),
+							WithSalary:           true, // $171k/yr - $190k/yr
 							Remote:               true,
 						},
 					},

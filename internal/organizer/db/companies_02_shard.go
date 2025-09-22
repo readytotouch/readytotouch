@@ -508,7 +508,7 @@ func companies02Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4292182409/",
 							Location:             "Brussels, Brussels Region, Belgium",
-							Date:                 mustDate("2025-08-30"),
+							Date:                 mustDate("2025-09-21", "2025-08-30"),
 							WithSalary:           false,
 							Remote:               false,
 						},

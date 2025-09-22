@@ -5217,6 +5217,16 @@ func companies09Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $107.5k/yr - $115k/yr
 							Remote:               false,
 						},
+						{
+							Title:                "Rust Embedded Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4301605199/",
+							Location:             "Dedham, MA",
+							Date:                 mustDate("2025-09-19"),
+							WithSalary:           true, // $160.8k/yr - $170k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig:     {},
