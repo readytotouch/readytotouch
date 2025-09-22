@@ -976,7 +976,7 @@ func companies19Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4265470899/",
 							Location:             "Berlin, Berlin, Germany",
-							Date:                 mustDate("2025-08-06", "2025-07-15"),
+							Date:                 mustDate("2025-09-20", "2025-08-06", "2025-07-15"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -5491,6 +5491,16 @@ func companies19Shard() []domain.CompanyProfile {
 							Date:                 mustDate("2025-08-17"),
 							WithSalary:           true, // $148k/yr - $287.5k/yr
 							Remote:               false,
+						},
+						{
+							Title:                "Senior Distributed Software Engineer, Golang",
+							ShortDescription:     "DGX Cloud",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4282100495/",
+							Location:             "United States",
+							Date:                 mustDate("2025-09-20"),
+							WithSalary:           true, // $148k/yr - $287.5k/yr
+							Remote:               true,
 						},
 					},
 				},

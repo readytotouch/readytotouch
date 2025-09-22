@@ -330,7 +330,7 @@ func companies15Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4283027506/",
 							Location:             "Raanana, Center District, Israel",
-							Date:                 mustDate("2025-09-01"),
+							Date:                 mustDate("2025-09-22", "2025-09-01"),
 							WithSalary:           false,
 							Remote:               false,
 						},
