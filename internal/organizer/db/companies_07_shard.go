@@ -1897,7 +1897,7 @@ func companies07Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4275731873/",
 							Location:             "Portland, OR",
-							Date:                 mustDate("2025-08-30", "2025-08-08", "2025-07-25"),
+							Date:                 mustDate("2025-09-20", "2025-08-30", "2025-08-08", "2025-07-25"),
 							WithSalary:           true, // $152k/yr - $190k/yr
 							Remote:               false,
 						},

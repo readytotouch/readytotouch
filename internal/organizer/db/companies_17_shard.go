@@ -1385,7 +1385,7 @@ func companies17Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4281934098/",
 							Location:             "Greater Colorado Springs Area",
-							Date:                 mustDate("2025-08-08"),
+							Date:                 mustDate("2025-09-20", "2025-08-08"),
 							WithSalary:           true, // $175k/yr - $255k/yr
 							Remote:               true,
 						},

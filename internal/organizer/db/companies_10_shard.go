@@ -4629,7 +4629,7 @@ func companies10Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4273757835/",
 							Location:             "United States",
-							Date:                 mustDate("2025-08-28", "2025-08-05"),
+							Date:                 mustDate("2025-09-18", "2025-08-28", "2025-08-05"),
 							WithSalary:           true, // $140k/yr - $200k/yr
 							Remote:               true,
 						},
@@ -4685,7 +4685,7 @@ func companies10Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4273757835/",
 							Location:             "United States",
-							Date:                 mustDate("2025-08-28", "2025-08-05"),
+							Date:                 mustDate("2025-09-18", "2025-08-28", "2025-08-05"),
 							WithSalary:           true, // $140k/yr - $200k/yr
 							Remote:               true,
 						},
