@@ -1111,7 +1111,7 @@ func companies11Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4289154877/",
 							Location:             "New York, NY",
-							Date:                 mustDate("2025-09-11", "2025-08-22"),
+							Date:                 mustDate("2025-09-19", "2025-09-11", "2025-08-22"),
 							WithSalary:           true, // $180k/yr - $200k/yr
 							Remote:               false,
 						},

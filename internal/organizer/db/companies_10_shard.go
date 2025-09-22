@@ -2233,7 +2233,7 @@ func companies10Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4266334252/",
 							Location:             "London, England, United Kingdom",
-							Date:                 mustDate("2025-08-28", "2025-08-06", "2025-07-14"),
+							Date:                 mustDate("2025-09-18", "2025-08-28", "2025-08-06", "2025-07-14"),
 							WithSalary:           true, // £80k/yr - £105k/yr
 							Remote:               false,
 						},
@@ -2244,6 +2244,16 @@ func companies10Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4288969179/",
 							Location:             "London, England, United Kingdom",
 							Date:                 mustDate("2025-08-21"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Scala Engineer",
+							ShortDescription:     "Decision Systems",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4303025040/",
+							Location:             "London, England, United Kingdom",
+							Date:                 mustDate("2025-09-20"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2888,6 +2898,16 @@ func companies10Shard() []domain.CompanyProfile {
 							Location:             "Boston, MA",
 							Date:                 mustDate("2025-09-10", "2025-08-19"),
 							WithSalary:           true, // $140k/yr - $160k/yr
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Data Engineer, Scala",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4291342584/",
+							Location:             "Los Angeles Metropolitan Area",
+							Date:                 mustDate("2025-09-18"),
+							WithSalary:           true, // $150k/yr - $170k/yr
 							Remote:               false,
 						},
 					},

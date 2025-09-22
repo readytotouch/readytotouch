@@ -3878,6 +3878,16 @@ func companies20Shard() []domain.CompanyProfile {
 							WithSalary:           true, // £70k/yr - £80k/yr
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Scala Engineer (Tech Lead)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4304163804/",
+							Location:             "London, England, United Kingdom",
+							Date:                 mustDate("2025-09-22"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Elixir: {
@@ -4537,6 +4547,16 @@ func companies20Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4258545583/",
 							Location:             "Warsaw, Mazowieckie, Poland",
 							Date:                 mustDate("2025-08-30"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+						{
+							Title:                "Lead Scala Data Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4258545583/",
+							Location:             "Warsaw, Mazowieckie, Poland",
+							Date:                 mustDate("2025-09-21"),
 							WithSalary:           false,
 							Remote:               true,
 						},
