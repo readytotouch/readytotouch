@@ -201,8 +201,8 @@
   },
   {
     "alias": "allocator-one",
-    "source": "",
-    "destination": ""
+    "source": "allocator-one-200x200.jpeg",
+    "destination": "allocator-one.jpeg"
   },
   {
     "alias": "allpay-limited",
@@ -333,6 +333,11 @@
     "alias": "appotapay",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "appzen",
+    "source": "appzen-200x200.jpeg",
+    "destination": "appzen.jpeg"
   },
   {
     "alias": "aquasecteam",
@@ -995,6 +1000,11 @@
     "destination": ""
   },
   {
+    "alias": "circuithub",
+    "source": "circuithub-200x200.jpeg",
+    "destination": "circuithub.jpeg"
+  },
+  {
     "alias": "circuitknowledge",
     "source": "",
     "destination": ""
@@ -1598,6 +1608,11 @@
     "alias": "edbpostgres",
     "source": "edbpostgres-200x200.jpeg",
     "destination": "edbpostgres.jpeg"
+  },
+  {
+    "alias": "edclub",
+    "source": "edclub-200x200.jpeg",
+    "destination": "edclub.jpeg"
   },
   {
     "alias": "eightcap-aufx",
@@ -3601,8 +3616,8 @@
   },
   {
     "alias": "opensignal",
-    "source": "",
-    "destination": ""
+    "source": "opensignal-192x192.png",
+    "destination": "opensignal.png"
   },
   {
     "alias": "opentext",
@@ -3876,8 +3891,8 @@
   },
   {
     "alias": "planet",
-    "source": "",
-    "destination": ""
+    "source": "planet-200x200.jpeg",
+    "destination": "planet.jpeg"
   },
   {
     "alias": "plentyone-ecommerce",
@@ -4161,8 +4176,8 @@
   },
   {
     "alias": "recorded-future",
-    "source": "",
-    "destination": ""
+    "source": "recorded-future-200x200.jpeg",
+    "destination": "recorded-future.jpeg"
   },
   {
     "alias": "recurly",
@@ -5851,8 +5866,8 @@
   },
   {
     "alias": "zalando",
-    "source": "",
-    "destination": ""
+    "source": "zalando-200x200.jpeg",
+    "destination": "zalando.jpeg"
   },
   {
     "alias": "zalopay",

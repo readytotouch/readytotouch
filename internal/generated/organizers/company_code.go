@@ -1193,6 +1193,9 @@ var (
 		"gevernova":                           1193, // GE Vernova
 		"visionxplus":                         1194, // VisionPlus
 		"teads":                               1195, // Teads
+		"circuithub":                          1196, // CircuitHub
+		"edclub":                              1197, // edclub
+		"appzen":                              1198, // AppZen
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

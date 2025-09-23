@@ -21,7 +21,7 @@ import (
 )
 
 var (
-	testFullPublicSince = time.Date(2025, time.September, 16, 0, 0, 0, 0, time.UTC)
+	testFullPublicSince = time.Date(2025, time.November, 1, 0, 0, 0, 0, time.UTC)
 	testFullPublicUntil = time.Date(2026, time.January, 25, 0, 0, 0, 0, time.UTC)
 )
 
@@ -1700,21 +1700,26 @@ func (c *Controller) random(language domain.Language) bool {
 		return false
 	}
 
+	const (
+		often = 8  // once in 8 minutes
+		rare  = 16 // once in 16 minutes
+	)
+
 	switch language {
 	case domain.Go:
-		return minute%2 == 0
+		return minute%often == 0
 	case domain.Rust:
-		return minute%2 == 0
+		return minute%often == 0
 	case domain.Zig:
-		return minute%16 == 0
+		return minute%rare == 0
 	case domain.Scala:
-		return minute%8 == 0
+		return minute%rare == 0
 	case domain.Elixir:
-		return minute%4 == 0
+		return minute%often == 0
 	case domain.Clojure:
-		return minute%16 == 0
+		return minute%rare == 0
 	case domain.Haskell:
-		return minute%16 == 0
+		return minute%rare == 0
 	}
 
 	return false
