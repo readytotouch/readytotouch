@@ -2612,6 +2612,16 @@ func companies18Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Software Engineer (Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4304078444/",
+							Location:             "Ljubljana, Ljubljana, Slovenia",
+							Date:                 mustDate("2025-09-23"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Zig: {
