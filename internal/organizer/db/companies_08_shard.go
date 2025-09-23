@@ -4887,6 +4887,11 @@ func companies08Shard() []domain.CompanyProfile {
 				AssociatedMembers: "440",
 				Verified:          true,
 			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:     "openx",
+				Followers: "43",
+				Verified:  false,
+			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "OpenX",
 				Employees:   "201 to 500",
@@ -4913,7 +4918,7 @@ func companies08Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 4,
+					GitHubRepositoriesCount: 5,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer IV (Java/Go)",

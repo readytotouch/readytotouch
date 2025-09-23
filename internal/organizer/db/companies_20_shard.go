@@ -1719,8 +1719,9 @@ func companies20Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "weareplanet",
+				Followers: "160",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -1736,7 +1737,7 @@ func companies20Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 1,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Backend Engineer – Golang",
@@ -4421,8 +4422,9 @@ func companies20Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "recordedfuture",
+				Followers: "21",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -4556,17 +4558,7 @@ func companies20Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4258545583/",
 							Location:             "Warsaw, Mazowieckie, Poland",
-							Date:                 mustDate("2025-08-30"),
-							WithSalary:           false,
-							Remote:               true,
-						},
-						{
-							Title:                "Lead Scala Data Engineer",
-							ShortDescription:     "",
-							SwitchingOpportunity: "",
-							URL:                  "https://www.linkedin.com/jobs/view/4258545583/",
-							Location:             "Warsaw, Mazowieckie, Poland",
-							Date:                 mustDate("2025-09-21"),
+							Date:                 mustDate("2025-09-21", "2025-08-30"),
 							WithSalary:           false,
 							Remote:               true,
 						},
