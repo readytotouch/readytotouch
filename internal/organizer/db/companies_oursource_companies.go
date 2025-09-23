@@ -2434,5 +2434,21 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "AMISEQ",
+			Website: "https://amiseq.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                17954837,
+				IDs:               nil,
+				Alias:             "amiseq-inc.",
+				Name:              "AMISEQ",
+				Followers:         "232K",
+				Employees:         "501-1K",
+				AssociatedMembers: "204",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }

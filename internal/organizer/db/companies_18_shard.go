@@ -1060,7 +1060,7 @@ func companies18Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4245965954/",
 							Location:             "Romania",
-							Date:                 mustDate("2025-09-02", "2025-06-07"),
+							Date:                 mustDate("2025-09-23"), // mustDate("2025-09-02", "2025-06-07"),
 							WithSalary:           false,
 							Remote:               true,
 						},
