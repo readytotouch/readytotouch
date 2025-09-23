@@ -326,8 +326,8 @@
   },
   {
     "alias": "appodeal",
-    "source": "",
-    "destination": ""
+    "source": "appodeal-200x200.jpeg",
+    "destination": "appodeal.jpeg"
   },
   {
     "alias": "appotapay",
@@ -466,8 +466,8 @@
   },
   {
     "alias": "autodesk",
-    "source": "",
-    "destination": ""
+    "source": "autodesk-180x180.png",
+    "destination": "autodesk.png"
   },
   {
     "alias": "autodoc",
@@ -546,8 +546,8 @@
   },
   {
     "alias": "bankaktiebolaget-nordiska",
-    "source": "",
-    "destination": ""
+    "source": "bankaktiebolaget-nordiska-180x180.png",
+    "destination": "bankaktiebolaget-nordiska.png"
   },
   {
     "alias": "banquenationaleducanada",
@@ -1326,8 +1326,8 @@
   },
   {
     "alias": "databento",
-    "source": "",
-    "destination": ""
+    "source": "databento-200x200.jpeg",
+    "destination": "databento.jpeg"
   },
   {
     "alias": "datadog",
@@ -1496,8 +1496,8 @@
   },
   {
     "alias": "doodle-ag",
-    "source": "",
-    "destination": ""
+    "source": "doodle-180x180.png",
+    "destination": "doodle-ag.png"
   },
   {
     "alias": "doordash",
@@ -1706,8 +1706,8 @@
   },
   {
     "alias": "eskimi",
-    "source": "",
-    "destination": ""
+    "source": "eskimi-200x200.jpeg",
+    "destination": "eskimi.jpeg"
   },
   {
     "alias": "esri",
@@ -2461,8 +2461,8 @@
   },
   {
     "alias": "hubble-pte.-ltd.",
-    "source": "",
-    "destination": ""
+    "source": "hubble-pte.-ltd.-192x192.png",
+    "destination": "hubble-pte.-ltd..png"
   },
   {
     "alias": "hudl",
@@ -3711,8 +3711,8 @@
   },
   {
     "alias": "oxylabs-io",
-    "source": "",
-    "destination": ""
+    "source": "oxylabs-io-200x200.jpeg",
+    "destination": "oxylabs-io.jpeg"
   },
   {
     "alias": "paddle",
@@ -3831,8 +3831,8 @@
   },
   {
     "alias": "pentaleaptech",
-    "source": "",
-    "destination": ""
+    "source": "pentaleap-256x256.png",
+    "destination": "pentaleaptech.png"
   },
   {
     "alias": "pepperstone",
@@ -4076,8 +4076,8 @@
   },
   {
     "alias": "qnx",
-    "source": "",
-    "destination": ""
+    "source": "qnx-200x200.jpeg",
+    "destination": "qnx.jpeg"
   },
   {
     "alias": "qohash",
@@ -4246,8 +4246,8 @@
   },
   {
     "alias": "remote.com",
-    "source": "",
-    "destination": ""
+    "source": "remote-200x200.jpeg",
+    "destination": "remote.com.jpeg"
   },
   {
     "alias": "revvity",
@@ -4561,8 +4561,8 @@
   },
   {
     "alias": "siemens",
-    "source": "",
-    "destination": ""
+    "source": "siemens-180x180.png",
+    "destination": "siemens.png"
   },
   {
     "alias": "simacanbv",
@@ -5871,8 +5871,8 @@
   },
   {
     "alias": "yondercard",
-    "source": "",
-    "destination": ""
+    "source": "yondercard-200x200.jpeg",
+    "destination": "yondercard.jpeg"
   },
   {
     "alias": "yoti-digital-identity",
@@ -5911,8 +5911,8 @@
   },
   {
     "alias": "zattoo",
-    "source": "",
-    "destination": ""
+    "source": "zattoo-200x200.jpeg",
+    "destination": "zattoo.jpeg"
   },
   {
     "alias": "zelis",
