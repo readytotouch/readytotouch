@@ -2042,7 +2042,14 @@ func companies13Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Hubble-Build-EI_IE2211505.11,23.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Hubble-Build-Reviews-E2211505.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Hubble-Build-Jobs-E2211505.htm",
+				Jobs:        "4",
+				Reviews:     "40",
+				Salaries:    "54",
+				ReviewsRate: "3.7",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",

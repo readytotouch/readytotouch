@@ -1224,8 +1224,9 @@ func companies03Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "snyk",
-				Verified: true,
+				Login:     "snyk",
+				Followers: "1.5k",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Snyk",
@@ -1256,7 +1257,7 @@ func companies03Shard() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 36,
+					GitHubRepositoriesCount: 38,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer (Go)",

@@ -2581,8 +2581,9 @@ func companies18Shard() []domain.CompanyProfile {
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "BunnyWay",
+				Followers: "76",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -2591,14 +2592,21 @@ func companies18Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-bunny-net-EI_IE5045467.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/bunny-net-Reviews-E5045467.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/bunny-net-Jobs-E5045467.htm",
+				Jobs:        "",
+				Reviews:     "15",
+				Salaries:    "15",
+				ReviewsRate: "4.5",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 3,
 				},
 				domain.Rust: {
 					GitHubRepositoriesCount: 0,

@@ -3283,7 +3283,14 @@ func companies21Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-AppZen-EI_IE1284188.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/AppZen-Reviews-E1284188.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/AppZen-Jobs-E1284188.htm",
+				Jobs:        "39",
+				Reviews:     "222",
+				Salaries:    "284",
+				ReviewsRate: "3.2",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -3441,8 +3448,9 @@ func companies21Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "eskimi",
+				Followers: "2",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -3451,7 +3459,14 @@ func companies21Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Eskimi-EI_IE1332996.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Eskimi-Reviews-E1332996.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Eskimi-Jobs-E1332996.htm",
+				Jobs:        "4",
+				Reviews:     "78",
+				Salaries:    "65",
+				ReviewsRate: "3.9",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -3609,8 +3624,9 @@ func companies21Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "zattoo",
+				Followers: "24",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -3619,14 +3635,21 @@ func companies21Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Zattoo-EI_IE278956.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Zattoo-Reviews-E278956.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Zattoo-Jobs-E278956.htm",
+				Jobs:        "15",
+				Reviews:     "60",
+				Salaries:    "137",
+				ReviewsRate: "3.7",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 5,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Backend Systems Engineer (C++, Golang)",
@@ -3693,8 +3716,9 @@ func companies21Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "oxylabs",
+				Followers: "587",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -3703,7 +3727,14 @@ func companies21Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Oxylabs-EI_IE3226058.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Oxylabs-Reviews-E3226058.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Oxylabs-Jobs-E3226058.htm",
+				Jobs:        "",
+				Reviews:     "55",
+				Salaries:    "90",
+				ReviewsRate: "4.2",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -3861,8 +3892,9 @@ func companies21Shard() []domain.CompanyProfile {
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "doodlescheduling",
+				Followers: "14",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -3871,14 +3903,21 @@ func companies21Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Doodle-EI_IE1835186.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Doodle-Reviews-E1835186.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Doodle-Jobs-E1835186.htm",
+				Jobs:        "7",
+				Reviews:     "53",
+				Salaries:    "97",
+				ReviewsRate: "3.7",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 31,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer, Backend (Go/Java, Reactive Systems)",

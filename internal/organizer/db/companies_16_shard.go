@@ -1379,8 +1379,9 @@ func companies16Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "remoteoss",
+				Followers: "88",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Remote",
@@ -1412,7 +1413,7 @@ func companies16Shard() []domain.CompanyProfile {
 				domain.Zig:   {},
 				domain.Scala: {},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 17,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Backend Engineer – Elixir",
