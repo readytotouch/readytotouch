@@ -1325,6 +1325,11 @@
     "destination": ""
   },
   {
+    "alias": "databento",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "datadog",
     "source": "datadog-180x180.jpeg",
     "destination": "datadog.jpeg"
@@ -1486,6 +1491,11 @@
   },
   {
     "alias": "dojo-tech",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "doodle-ag",
     "source": "",
     "destination": ""
   },
@@ -1691,6 +1701,11 @@
   },
   {
     "alias": "eset",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "eskimi",
     "source": "",
     "destination": ""
   },
@@ -3695,6 +3710,11 @@
     "destination": ""
   },
   {
+    "alias": "oxylabs-io",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "paddle",
     "source": "",
     "destination": ""
@@ -3806,6 +3826,11 @@
   },
   {
     "alias": "peerspace",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "pentaleaptech",
     "source": "",
     "destination": ""
   },
@@ -5845,6 +5870,11 @@
     "destination": "yolcu-360.jpeg"
   },
   {
+    "alias": "yondercard",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "yoti-digital-identity",
     "source": "",
     "destination": ""
@@ -5876,6 +5906,11 @@
   },
   {
     "alias": "zama-ai",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "zattoo",
     "source": "",
     "destination": ""
   },

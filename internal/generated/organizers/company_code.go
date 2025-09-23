@@ -1196,6 +1196,13 @@ var (
 		"circuithub":                          1196, // CircuitHub
 		"edclub":                              1197, // edclub
 		"appzen":                              1198, // AppZen
+		"yondercard":                          1199, // Yonder
+		"eskimi":                              1200, // Eskimi
+		"databento":                           1201, // Databento
+		"zattoo":                              1202, // Zattoo
+		"oxylabs-io":                          1203, // Oxylabs.io
+		"pentaleaptech":                       1204, // Pentaleap
+		"doodle-ag":                           1205, // Doodle
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 
