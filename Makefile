@@ -117,6 +117,26 @@ design:
 
 	git add .
 
+# make design-responsive-v3 DESIGN="~/go/src/github.com/readytotouch/readytotouch.github.io"
+design-responsive-v3:
+	$(eval DESIGN := ~/go/src/github.com/readytotouch/readytotouch.github.io)
+	rm -rf ./public/assets/images/pages
+	mkdir -p ./public/assets/images/pages
+
+	cp -r $(DESIGN)/public/assets/images/pages/* ./public/assets/images/pages
+
+	git restore ./public/assets/images/pages/online-new/cz_flag.svg
+	git restore ./public/assets/images/pages/organizer/zig.svg
+	git restore ./public/assets/images/pages/organizer/ocaml.svg
+	git restore ./public/assets/images/pages/organizer/mojo.svg
+	git restore ./public/assets/images/pages/organizer/haskell.svg
+	git restore ./public/assets/images/pages/organizer/ocaml.svg
+	git restore ./public/assets/images/pages/organizer/gleam.svg
+	git restore ./public/assets/images/pages/organizer/fsharp.svg
+	git restore ./public/assets/images/pages/organizer/erlang.svg
+
+	git add .
+
 design-copy-styles:
 	node ./scripts/design/copy-styles.js
 
