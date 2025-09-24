@@ -1224,8 +1224,9 @@ func companies03Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "snyk",
-				Verified: true,
+				Login:     "snyk",
+				Followers: "1.5k",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Snyk",
@@ -1256,7 +1257,7 @@ func companies03Shard() []domain.CompanyProfile {
 			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 36,
+					GitHubRepositoriesCount: 38,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer (Go)",
@@ -1273,6 +1274,16 @@ func companies03Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4024339260/",
 							Date:                 mustDate("2025-02-28", "2025-01-14"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Software Engineer – Platform, Go",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4294120650/",
+							Location:             "Greater London, England, United Kingdom",
+							Date:                 mustDate("2025-09-23"),
 							WithSalary:           false,
 							Remote:               false,
 						},

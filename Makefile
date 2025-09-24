@@ -31,8 +31,10 @@ app:
 pg:
 	docker exec -it readytotouch_postgres_db bash
 
-pg-users:
+pg-fixtures:
 	cat ./fixtures/postgres/users.sql | docker exec -i readytotouch_postgres_db psql -d yaaws -U yaaws_user
+	cat ./fixtures/postgres/companies.sql | docker exec -i readytotouch_postgres_db psql -d yaaws -U yaaws_user
+	cat ./fixtures/postgres/vacancies.sql | docker exec -i readytotouch_postgres_db psql -d yaaws -U yaaws_user
 
 env-down:
 	docker compose -f docker-compose.yml --env-file .env down
@@ -181,11 +183,11 @@ unsafe-browser-extension:
 		&& zip -r readytotouch-unsafe-browser-extension.zip readytotouch-unsafe-browser-extension \
 		&& chmod 777 readytotouch-unsafe-browser-extension.zip
 
-# make more-companies VERSION=91
+# make more-companies VERSION=92
 more-companies:
 ifndef VERSION
 	$(error VERSION is not set. Use `make more-companies VERSION=X`)
 endif
 	git checkout main && git pull
-	git checkout -b more-companies-linkedin-september-2025-v$(VERSION)
-	git commit -m "More companies LinkedIn September 2025 v$(VERSION)" --allow-empty
+	git checkout -b more-companies-linkedin-october-2025-v$(VERSION)
+	git commit -m "More companies LinkedIn October 2025 v$(VERSION)" --allow-empty

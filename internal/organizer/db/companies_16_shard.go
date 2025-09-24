@@ -961,7 +961,7 @@ func companies16Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4301948734/",
 							Location:             "Fort Worth, TX",
-							Date:                 mustDate("2025-09-18"),
+							Date:                 mustDate("2025-09-23", "2025-09-18"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -1379,8 +1379,9 @@ func companies16Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "remoteoss",
+				Followers: "88",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Remote",
@@ -1412,7 +1413,7 @@ func companies16Shard() []domain.CompanyProfile {
 				domain.Zig:   {},
 				domain.Scala: {},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 17,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Backend Engineer – Elixir",
@@ -1438,6 +1439,16 @@ func companies16Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4228998540/",
 							Date:                 mustDate("2025-05-13"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+						{
+							Title:                "Senior Backend Engineer (Elixir)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4304693089/",
+							Location:             "Portugal",
+							Date:                 mustDate("2025-09-23"),
 							WithSalary:           false,
 							Remote:               true,
 						},

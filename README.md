@@ -27,6 +27,14 @@ A platform for simplifying job search
 - https://github.com/doutivity/research-online-redis-go
 - https://github.com/doutivity/research-online-postgres-go
 
+## Local development:
+```bash
+make env-docker-compose-development
+make env-up
+make pg-fixtures
+make app-restart
+```
+
 ## Contributions
 **The project is not open for contributions for now.** 
 

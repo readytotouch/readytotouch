@@ -7,6 +7,7 @@ import (
 	"time"
 
 	"github.com/readytotouch/readytotouch/internal/db/postgres"
+	"github.com/readytotouch/readytotouch/internal/generated/organizers"
 	"github.com/readytotouch/readytotouch/internal/linkedin"
 )
 
@@ -44,7 +45,7 @@ func (s *Service) Load(ctx context.Context, companyVanityName string, userID int
 	}
 
 	// Minimize the number of requests to the LinkedIn API per user
-	{
+	if organizers.CompanyAliasToCodeMap[companyVanityName] == 0 {
 		previousRequestHistoryCount, err := s.userToLinkedInCompanyRepository.GetRequestHistoryCount(ctx, userID)
 		if err != nil {
 			return 0, err

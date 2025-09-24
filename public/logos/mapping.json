@@ -326,8 +326,8 @@
   },
   {
     "alias": "appodeal",
-    "source": "",
-    "destination": ""
+    "source": "appodeal-200x200.jpeg",
+    "destination": "appodeal.jpeg"
   },
   {
     "alias": "appotapay",
@@ -466,8 +466,8 @@
   },
   {
     "alias": "autodesk",
-    "source": "",
-    "destination": ""
+    "source": "autodesk-180x180.png",
+    "destination": "autodesk.png"
   },
   {
     "alias": "autodoc",
@@ -546,8 +546,8 @@
   },
   {
     "alias": "bankaktiebolaget-nordiska",
-    "source": "",
-    "destination": ""
+    "source": "bankaktiebolaget-nordiska-180x180.png",
+    "destination": "bankaktiebolaget-nordiska.png"
   },
   {
     "alias": "banquenationaleducanada",
@@ -1325,6 +1325,11 @@
     "destination": ""
   },
   {
+    "alias": "databento",
+    "source": "databento-200x200.jpeg",
+    "destination": "databento.jpeg"
+  },
+  {
     "alias": "datadog",
     "source": "datadog-180x180.jpeg",
     "destination": "datadog.jpeg"
@@ -1488,6 +1493,11 @@
     "alias": "dojo-tech",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "doodle-ag",
+    "source": "doodle-180x180.png",
+    "destination": "doodle-ag.png"
   },
   {
     "alias": "doordash",
@@ -1693,6 +1703,11 @@
     "alias": "eset",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "eskimi",
+    "source": "eskimi-200x200.jpeg",
+    "destination": "eskimi.jpeg"
   },
   {
     "alias": "esri",
@@ -2446,8 +2461,8 @@
   },
   {
     "alias": "hubble-pte.-ltd.",
-    "source": "",
-    "destination": ""
+    "source": "hubble-pte.-ltd.-192x192.png",
+    "destination": "hubble-pte.-ltd..png"
   },
   {
     "alias": "hudl",
@@ -3695,6 +3710,11 @@
     "destination": ""
   },
   {
+    "alias": "oxylabs-io",
+    "source": "oxylabs-io-200x200.jpeg",
+    "destination": "oxylabs-io.jpeg"
+  },
+  {
     "alias": "paddle",
     "source": "",
     "destination": ""
@@ -3808,6 +3828,11 @@
     "alias": "peerspace",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "pentaleaptech",
+    "source": "pentaleap-256x256.png",
+    "destination": "pentaleaptech.png"
   },
   {
     "alias": "pepperstone",
@@ -4051,8 +4076,8 @@
   },
   {
     "alias": "qnx",
-    "source": "",
-    "destination": ""
+    "source": "qnx-200x200.jpeg",
+    "destination": "qnx.jpeg"
   },
   {
     "alias": "qohash",
@@ -4221,8 +4246,8 @@
   },
   {
     "alias": "remote.com",
-    "source": "",
-    "destination": ""
+    "source": "remote-200x200.jpeg",
+    "destination": "remote.com.jpeg"
   },
   {
     "alias": "revvity",
@@ -4536,8 +4561,8 @@
   },
   {
     "alias": "siemens",
-    "source": "",
-    "destination": ""
+    "source": "siemens-180x180.png",
+    "destination": "siemens.png"
   },
   {
     "alias": "simacanbv",
@@ -5845,6 +5870,11 @@
     "destination": "yolcu-360.jpeg"
   },
   {
+    "alias": "yondercard",
+    "source": "yondercard-200x200.jpeg",
+    "destination": "yondercard.jpeg"
+  },
+  {
     "alias": "yoti-digital-identity",
     "source": "",
     "destination": ""
@@ -5878,6 +5908,11 @@
     "alias": "zama-ai",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "zattoo",
+    "source": "zattoo-200x200.jpeg",
+    "destination": "zattoo.jpeg"
   },
   {
     "alias": "zelis",
