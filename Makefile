@@ -125,6 +125,12 @@ design-responsive-v3:
 
 	cp -r $(DESIGN)/public/assets/images/pages/* ./public/assets/images/pages
 
+	cp -r $(DESIGN)/public/main-responsive-auth.html ./public/design-v3/main-responsive-auth.html
+	cp -r $(DESIGN)/public/main-responsive.html ./public/design-v3/main-responsive.html
+	# Scripts for main-responsive.html and main-responsive-auth.html
+	cp -r $(DESIGN)/public/assets/js/common_c0ddd1cbf1b9bec5f52a9c323b936e83.js ./public/assets/js
+	cp -r $(DESIGN)/public/assets/js/main-responsive_fec482dacc19ed7fa40d2d744752c20e.js ./public/assets/js
+
 	git restore ./public/assets/images/pages/online-new/cz_flag.svg
 	git restore ./public/assets/images/pages/organizer/zig.svg
 	git restore ./public/assets/images/pages/organizer/ocaml.svg
