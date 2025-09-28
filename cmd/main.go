@@ -163,7 +163,7 @@ func main() {
 		})
 	r.GET("/v1", organizerController.IndexV1)
 	r.GET("/v2", organizerController.IndexV2)
-	r.GET("/v3", organizerController.TODO)
+	r.GET("/v3", organizerController.IndexV3)
 	r.GET("/", organizerController.IndexV2)
 
 	r.GET("/api/v1/users/registration/stats/daily.json", userController.RegistrationDailyCountStats)

@@ -50,6 +50,10 @@ func StreamOrganizersIndexV3(qw422016 *qt422016.Writer,
 
 <body>
 <div class="main-wrapper">
+
+    `)
+	streamorganizersV3Footer(qw422016)
+	qw422016.N().S(`
 </div>
 <script src="/assets/js/online-stats-app.js?`)
 	qw422016.N().D(appVersion)

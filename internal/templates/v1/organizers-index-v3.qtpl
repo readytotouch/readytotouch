@@ -24,6 +24,8 @@
 
 <body>
 <div class="main-wrapper">
+
+    {%= organizersV3Footer() %}
 </div>
 <script src="/assets/js/online-stats-app.js?{%d appVersion %}"></script>
 </body>
