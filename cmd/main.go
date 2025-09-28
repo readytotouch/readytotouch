@@ -161,10 +161,10 @@ func main() {
 
 			ctx.Next()
 		})
-	r.GET("/v1", organizerController.Index)
-	r.GET("/v2", organizerController.Index)
+	r.GET("/v1", organizerController.IndexV1)
+	r.GET("/v2", organizerController.IndexV2)
 	r.GET("/v3", organizerController.TODO)
-	r.GET("/", organizerController.Index)
+	r.GET("/", organizerController.IndexV2)
 
 	r.GET("/api/v1/users/registration/stats/daily.json", userController.RegistrationDailyCountStats)
 	r.GET("/api/v1/users/online/stats/daily.json", onlineController.DailyCountStats)

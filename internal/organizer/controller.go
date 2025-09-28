@@ -53,7 +53,7 @@ func NewController(userRepository *postgres.UserRepository, userFeatureWaitlistR
 	return &Controller{userRepository: userRepository, userFeatureWaitlistRepository: userFeatureWaitlistRepository, featureViewStatsRepository: featureViewStatsRepository, userFavoriteCompanyRepository: userFavoriteCompanyRepository, userFavoriteVacancyRepository: userFavoriteVacancyRepository, companyViewDailyStatsRepository: companyViewDailyStatsRepository, vacancyViewStatsRepository: vacancyViewStatsRepository}
 }
 
-func (c *Controller) Index(ctx *gin.Context) {
+func (c *Controller) IndexV1(ctx *gin.Context) {
 	headerProfiles, err := c.getHeaderProfiles(ctx, domain.ContextGetUserID(ctx))
 	if err != nil {
 		// @TODO logging
@@ -68,7 +68,43 @@ func (c *Controller) Index(ctx *gin.Context) {
 		// NOP, continue
 	}
 
-	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.OrganizersOnline(headerProfiles, socialUserProfiles)))
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.IndexV1(headerProfiles, socialUserProfiles)))
+}
+
+func (c *Controller) IndexV2(ctx *gin.Context) {
+	headerProfiles, err := c.getHeaderProfiles(ctx, domain.ContextGetUserID(ctx))
+	if err != nil {
+		// @TODO logging
+
+		// NOP, continue
+	}
+
+	socialUserProfiles, err := c.userRepository.SocialUserProfiles(ctx, domain.RegistrationHistoryLimit)
+	if err != nil {
+		// @TODO logging
+
+		// NOP, continue
+	}
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.OrganizersIndexV2(headerProfiles, socialUserProfiles)))
+}
+
+func (c *Controller) IndexV3(ctx *gin.Context) {
+	headerProfiles, err := c.getHeaderProfiles(ctx, domain.ContextGetUserID(ctx))
+	if err != nil {
+		// @TODO logging
+
+		// NOP, continue
+	}
+
+	socialUserProfiles, err := c.userRepository.SocialUserProfiles(ctx, domain.RegistrationHistoryLimit)
+	if err != nil {
+		// @TODO logging
+
+		// NOP, continue
+	}
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.OrganizersIndexV3(headerProfiles, socialUserProfiles)))
 }
 
 func (c *Controller) Welcome(ctx *gin.Context) {

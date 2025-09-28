@@ -1,0 +1,6 @@
+{%- func OrganizersIndexV3(
+  headerProfiles []SocialProviderUser,
+  socialProviderUsers []SocialProviderUser,
+) -%}
+
+{%- endfunc -%}

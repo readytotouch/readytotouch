@@ -1,4 +1,4 @@
-{%- func OrganizersOnline(
+{%- func OrganizersIndexV2(
   headerProfiles []SocialProviderUser,
   socialProviderUsers []SocialProviderUser,
 ) -%}
@@ -16,7 +16,7 @@
 
     {%= favicon() %}
     {%= organizersFonts() %}
-    {%= organizersOnlineStyles() %}
+    {%= organizersIndexV2Styles() %}
     <script src="https://cdn.jsdelivr.net/npm/apexcharts@3.52.0"></script>
     {%= plausibleAnalytics() %}
     {%= ga() %}
