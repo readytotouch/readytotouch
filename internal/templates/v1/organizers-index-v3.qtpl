@@ -36,7 +36,7 @@
 <main class="main-content">
 </main>
 
-{%= organizersV3Footer() %}
+{%= organizersFooterV3() %}
 </div>
 <script src="/assets/js/online-stats-app.js?{%d appVersion %}"></script>
 </body>

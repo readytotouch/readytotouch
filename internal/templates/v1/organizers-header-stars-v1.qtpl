@@ -4,7 +4,10 @@
   ...
   150 for 5 digits
 -->
-{% func organizersHeaderStars() %}
+{% comment %}
+  This header stars version is used for both v1 and v2.
+{% endcomment %}
+{% func organizersHeaderStarsV1() %}
 <div class="header__stars">
   <iframe
     src="https://ghbtns.com/github-btn.html?user=readytotouch&repo=readytotouch&type=star&count=true&size=large"

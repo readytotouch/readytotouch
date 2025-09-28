@@ -50,14 +50,14 @@ func StreamOrganizersIndexV2(qw422016 *qt422016.Writer,
 
 <body>
 <main class="main-wrapper">
-	<header class="header">
+<header class="header">
   <div class="header__wrapper">
     <a href="/" class="header__logo">
       <img width="40" height="40" class="header__logo-img" src="/assets/images/pages/online/logo.svg" alt="logo" />
       <h3 class="header__logo-title">ReadyToTouch</h3>
     </a>
     `)
-	streamorganizersHeaderStars(qw422016)
+	streamorganizersHeaderStarsV1(qw422016)
 	qw422016.N().S(`
     `)
 	if len(headerProfiles) > 0 {
@@ -444,7 +444,7 @@ func StreamOrganizersIndexV2(qw422016 *qt422016.Writer,
 
 </main>
 `)
-	streamorganizersV1Footer(qw422016)
+	streamorganizersFooterV1(qw422016)
 	qw422016.N().S(`
 <script src="/assets/js/online-stats-app.js?`)
 	qw422016.N().D(appVersion)

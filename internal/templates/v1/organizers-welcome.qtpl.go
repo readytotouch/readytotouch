@@ -61,7 +61,7 @@ func StreamOrganizersWelcome(qw422016 *qt422016.Writer, organizer Organizer, aut
       <span class="header__logo-label">Organizer</span>
     </a>
     `)
-	streamorganizersHeaderStars(qw422016)
+	streamorganizersHeaderStarsV1(qw422016)
 	qw422016.N().S(`
   </div>
 </header>

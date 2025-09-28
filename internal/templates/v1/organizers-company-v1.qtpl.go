@@ -93,7 +93,7 @@ func StreamOrganizersCompanyV1(qw422016 *qt422016.Writer,
 	qw422016.N().S(`
     </ul>
     `)
-	streamorganizersHeaderStars(qw422016)
+	streamorganizersHeaderStarsV1(qw422016)
 	qw422016.N().S(`
     `)
 	if len(headerProfiles) > 0 {
@@ -521,7 +521,7 @@ func StreamOrganizersCompanyV1(qw422016 *qt422016.Writer,
 
 </main>
 `)
-	streamorganizersV1Footer(qw422016)
+	streamorganizersFooterV1(qw422016)
 	qw422016.N().S(`
 <script src="/assets/js/organizers-company-app.js?`)
 	qw422016.N().D(appVersion)

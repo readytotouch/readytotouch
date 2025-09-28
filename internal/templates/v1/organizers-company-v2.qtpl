@@ -58,7 +58,7 @@
       </li>
       {% endcomment %}
     </ul>
-    {%= organizersHeaderStars() %}
+    {%= organizersHeaderStarsV1() %}
     {% if len(headerProfiles) > 0 %}
     {%= organizersHeaderProfile(headerProfiles) %}
     {% else %}
@@ -874,7 +874,7 @@
 
 
 </main>
-{%= organizersV1Footer() %}
+{%= organizersFooterV1() %}
 <script src="/assets/js/organizers-company-app.js?{%d appVersion %}"></script>
 </body>
 </html>

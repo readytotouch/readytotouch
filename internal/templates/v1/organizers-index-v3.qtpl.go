@@ -50,9 +50,20 @@ func StreamOrganizersIndexV3(qw422016 *qt422016.Writer,
 
 <body>
 <div class="main-wrapper">
+<header class="header">
+  <div class="header__wrapper">
+    <a href="/" class="header__logo">
+      <img width="40" height="40" class="header__logo-img" src="/assets/images/pages/online/logo.svg" alt="logo" />
+      <h3 class="header__logo-title">ReadyToTouch</h3>
+    </a>
+  </div>
+</header>
 
-    `)
-	streamorganizersV3Footer(qw422016)
+<main class="main-content">
+</main>
+
+`)
+	streamorganizersFooterV3(qw422016)
 	qw422016.N().S(`
 </div>
 <script src="/assets/js/online-stats-app.js?`)
