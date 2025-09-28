@@ -107,7 +107,7 @@ func main() {
 			jwtService,
 		)
 		userController      = pkgUsers.NewController(userRepository)
-		onlineController    = pkgOnline.NewController(userRepository, onlineRepository)
+		onlineController    = pkgOnline.NewController(onlineRepository)
 		organizerController = pkgOrganizer.NewController(
 			userRepository,
 			userFeatureWaitlistRepository,
