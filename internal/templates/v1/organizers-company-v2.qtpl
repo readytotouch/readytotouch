@@ -60,7 +60,7 @@
     </ul>
     {%= organizersHeaderStarsV1() %}
     {% if len(headerProfiles) > 0 %}
-    {%= organizersHeaderProfile(headerProfiles) %}
+    {%= organizersHeaderProfileV1(headerProfiles) %}
     {% else %}
     <a href="/{%s organizerFeature.Organizer.Alias %}/welcome{%s authQueryParams %}" class="button button--small-padding button--black header__login-button">Log in</a>
     {% endif %}

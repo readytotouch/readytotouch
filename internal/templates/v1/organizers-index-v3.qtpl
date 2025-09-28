@@ -30,6 +30,11 @@
       <img width="40" height="40" class="header__logo-img" src="/assets/images/pages/online/logo.svg" alt="logo" />
       <h3 class="header__logo-title">ReadyToTouch</h3>
     </a>
+    {% if len(headerProfiles) > 0 %}
+
+    {% else %}
+    {%= organizersHeaderStarsV3() %}
+    {% endif %}
   </div>
 </header>
 

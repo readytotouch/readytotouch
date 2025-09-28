@@ -56,6 +56,19 @@ func StreamOrganizersIndexV3(qw422016 *qt422016.Writer,
       <img width="40" height="40" class="header__logo-img" src="/assets/images/pages/online/logo.svg" alt="logo" />
       <h3 class="header__logo-title">ReadyToTouch</h3>
     </a>
+    `)
+	if len(headerProfiles) > 0 {
+		qw422016.N().S(`
+
+    `)
+	} else {
+		qw422016.N().S(`
+    `)
+		streamorganizersHeaderStarsV3(qw422016)
+		qw422016.N().S(`
+    `)
+	}
+	qw422016.N().S(`
   </div>
 </header>
 

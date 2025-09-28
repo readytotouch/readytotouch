@@ -1,4 +1,7 @@
-{% func organizersHeaderProfile(profiles []SocialProviderUser) %}
+{% comment %}
+  This header profile is used for both v1 and v2.
+{% endcomment %}
+{% func organizersHeaderProfileV1(profiles []SocialProviderUser) %}
 <div class="header__profile">
   <button class="header__profile-button">
     <img src="{%s SocialProviderUserHeaderPhoto(profiles) %}" alt="photo-profile" />

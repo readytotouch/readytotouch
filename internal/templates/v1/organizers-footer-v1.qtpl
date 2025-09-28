@@ -1,5 +1,5 @@
 {% comment %}
-  This footer version is used for both v1 and v2.
+  This footer is used for both v1 and v2.
 {% endcomment %}
 {% func organizersFooterV1() %}
 <footer class="footer">

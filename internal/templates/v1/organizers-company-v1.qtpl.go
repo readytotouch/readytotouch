@@ -99,7 +99,7 @@ func StreamOrganizersCompanyV1(qw422016 *qt422016.Writer,
 	if len(headerProfiles) > 0 {
 		qw422016.N().S(`
     `)
-		streamorganizersHeaderProfile(qw422016, headerProfiles)
+		streamorganizersHeaderProfileV1(qw422016, headerProfiles)
 		qw422016.N().S(`
     `)
 	} else {

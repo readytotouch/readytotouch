@@ -32,8 +32,7 @@
     </a>
     {%= organizersHeaderStarsV1() %}
     {% if len(headerProfiles) > 0 %}
-    {%= organizersHeaderProfile(headerProfiles) %}
-    {% else %}
+    {%= organizersHeaderProfileV1(headerProfiles) %}
     {% endif %}
   </div>
 </header>

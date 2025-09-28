@@ -5,7 +5,7 @@
   150 for 5 digits
 -->
 {% comment %}
-  This header stars version is used for both v1 and v2.
+  This header stars is used for both v1 and v2.
 {% endcomment %}
 {% func organizersHeaderStarsV1() %}
 <div class="header__stars">
