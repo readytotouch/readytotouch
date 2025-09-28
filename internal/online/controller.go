@@ -6,7 +6,6 @@ import (
 
 	"github.com/readytotouch/readytotouch/internal/db/postgres"
 	"github.com/readytotouch/readytotouch/internal/domain"
-	template "github.com/readytotouch/readytotouch/internal/templates/v1"
 
 	"github.com/gin-gonic/gin"
 )
@@ -18,24 +17,6 @@ type Controller struct {
 
 func NewController(userRepository *postgres.UserRepository, onlineRepository *postgres.OnlineRepository) *Controller {
 	return &Controller{userRepository: userRepository, onlineRepository: onlineRepository}
-}
-
-func (c *Controller) Index(ctx *gin.Context) {
-	headerProfiles, err := c.getHeaderProfiles(ctx, domain.ContextGetUserID(ctx))
-	if err != nil {
-		// @TODO logging
-
-		// NOP, continue
-	}
-
-	socialUserProfiles, err := c.userRepository.SocialUserProfiles(ctx, domain.RegistrationHistoryLimit)
-	if err != nil {
-		// @TODO logging
-
-		// NOP, continue
-	}
-
-	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.Online(headerProfiles, socialUserProfiles)))
 }
 
 func (c *Controller) DailyCountStats(ctx *gin.Context) {
