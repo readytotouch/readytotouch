@@ -2,5 +2,28 @@
   headerProfiles []SocialProviderUser,
   socialProviderUsers []SocialProviderUser,
 ) -%}
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <title>ReadyToTouch — Simplify Job Searching by Connecting with Developers</title>
+    <meta name="description" content="ReadyToTouch is a platform that simplifies your job search. Connect directly with developers and boost your chances of getting hired through recommendations.">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="author" type="text/plain" href="https://readytotouch.com/humans.txt"/>
+    <meta property="og:image" content="/assets/images/og/organizers-light.jpg">
+
+    {%= favicon() %}
+    {%= organizersFonts() %}
+    {%= organizersIndexV3Styles() %}
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts@3.52.0"></script>
+    {%= plausibleAnalytics() %}
+    {%= ga() %}
+</head>
+
+<body>
+
+</body>
+</html>
 {%- endfunc -%}

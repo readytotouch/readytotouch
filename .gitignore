@@ -40,6 +40,7 @@ public/assets/js/
 
 # Temporary scripts
 private
+public/design-wip
 
 .env
 .production.env
