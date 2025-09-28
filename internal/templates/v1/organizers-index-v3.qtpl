@@ -24,8 +24,19 @@
 
 <body>
 <div class="main-wrapper">
+<header class="header">
+  <div class="header__wrapper">
+    <a href="/" class="header__logo">
+      <img width="40" height="40" class="header__logo-img" src="/assets/images/pages/online/logo.svg" alt="logo" />
+      <h3 class="header__logo-title">ReadyToTouch</h3>
+    </a>
+  </div>
+</header>
 
-    {%= organizersV3Footer() %}
+<main class="main-content">
+</main>
+
+{%= organizersV3Footer() %}
 </div>
 <script src="/assets/js/online-stats-app.js?{%d appVersion %}"></script>
 </body>

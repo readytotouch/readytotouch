@@ -24,7 +24,7 @@
 
 <body>
 <main class="main-wrapper">
-	<header class="header">
+<header class="header">
   <div class="header__wrapper">
     <a href="/" class="header__logo">
       <img width="40" height="40" class="header__logo-img" src="/assets/images/pages/online/logo.svg" alt="logo" />
