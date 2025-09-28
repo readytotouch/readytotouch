@@ -155,7 +155,7 @@ func StreamCompaniesAndConnectionsV1(qw422016 *qt422016.Writer,
 </main>
 
 `)
-	streamorganizersFooter(qw422016)
+	streamorganizersV1Footer(qw422016)
 	qw422016.N().S(`
 <script src="/assets/js/companies-and-connections-app.js?`)
 	qw422016.N().D(appVersion)

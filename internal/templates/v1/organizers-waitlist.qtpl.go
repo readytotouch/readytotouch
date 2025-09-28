@@ -235,7 +235,7 @@ func StreamOrganizersWaitlist(qw422016 *qt422016.Writer, organizerFeature Organi
 
 </main>
 `)
-	streamorganizersFooter(qw422016)
+	streamorganizersV1Footer(qw422016)
 	qw422016.N().S(`
 <script src="/assets/js/waitlist-stats-app.js?`)
 	qw422016.N().D(appVersion)

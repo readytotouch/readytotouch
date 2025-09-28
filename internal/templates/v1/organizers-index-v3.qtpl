@@ -23,7 +23,9 @@
 </head>
 
 <body>
-
+<div class="main-wrapper">
+</div>
+<script src="/assets/js/online-stats-app.js?{%d appVersion %}"></script>
 </body>
 </html>
 {%- endfunc -%}

@@ -413,7 +413,7 @@
 
 
 </main>
-{%= organizersFooter() %}
+{%= organizersV1Footer() %}
 
 </body>
 </html>

@@ -539,7 +539,7 @@ func StreamOrganizersVacanciesV2(qw422016 *qt422016.Writer,
   </p>
 </div>
 `)
-	streamorganizersFooter(qw422016)
+	streamorganizersV1Footer(qw422016)
 	qw422016.N().S(`
 <script src="/assets/js/organizers-vacancies-app.js?`)
 	qw422016.N().D(appVersion)

@@ -18,7 +18,44 @@ func StreamOrganizersIndexV3(qw422016 *qt422016.Writer,
 	headerProfiles []SocialProviderUser,
 	socialProviderUsers []SocialProviderUser,
 ) {
+	qw422016.N().S(`<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ReadyToTouch — Simplify Job Searching by Connecting with Developers</title>
+    <meta name="description" content="ReadyToTouch is a platform that simplifies your job search. Connect directly with developers and boost your chances of getting hired through recommendations.">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="author" type="text/plain" href="https://readytotouch.com/humans.txt"/>
+    <meta property="og:image" content="/assets/images/og/organizers-light.jpg">
+
+    `)
+	streamfavicon(qw422016)
 	qw422016.N().S(`
+    `)
+	streamorganizersFonts(qw422016)
+	qw422016.N().S(`
+    `)
+	streamorganizersIndexV3Styles(qw422016)
+	qw422016.N().S(`
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts@3.52.0"></script>
+    `)
+	streamplausibleAnalytics(qw422016)
+	qw422016.N().S(`
+    `)
+	streamga(qw422016)
+	qw422016.N().S(`
+</head>
+
+<body>
+<div class="main-wrapper">
+</div>
+<script src="/assets/js/online-stats-app.js?`)
+	qw422016.N().D(appVersion)
+	qw422016.N().S(`"></script>
+</body>
+</html>
 `)
 }
 

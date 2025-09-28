@@ -550,7 +550,7 @@
 
 
 </main>
-{%= organizersFooter() %}
+{%= organizersV1Footer() %}
 <script src="/assets/js/organizers-companies-app.js?{%d appVersion %}"></script>
 </body>
 </html>

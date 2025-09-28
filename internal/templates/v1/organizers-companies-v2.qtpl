@@ -586,7 +586,7 @@
     This curated list includes <strong>{%s organizerFeature.Organizer.Title %} companies</strong> that actively use the language in production. Whether you’re seeking companies hiring <strong>{%s organizerFeature.Organizer.Title %} developers</strong> or exploring teams already committed to {%s organizerFeature.Organizer.Title %}, this page helps you discover the most relevant product teams and startups.
   </p>
 </div>
-{%= organizersFooter() %}
+{%= organizersV1Footer() %}
 <script src="/assets/js/organizers-companies-app.js?{%d appVersion %}"></script>
 </body>
 </html>
