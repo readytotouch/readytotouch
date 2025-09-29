@@ -72,7 +72,7 @@ func streamorganizersHeaderProfileV1(qw422016 *qt422016.Writer, profiles []Socia
 			qw422016.E().S(profile.Username)
 			qw422016.N().S(`" target="_blank" class="modal-profile__link">
           <img src="/assets/images/pages/online-new/bitbucket.svg" width="20" height="20" alt="GitLab logo" />
-          <span class="modal-profile__profile-gitlab">bitbucket.org/`)
+          <span class="modal-profile__profile-bitbucket">bitbucket.org/`)
 			qw422016.E().S(profile.Username)
 			qw422016.N().S(`</span>
         </a>

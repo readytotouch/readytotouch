@@ -89,6 +89,218 @@ func StreamOrganizersIndexV3(qw422016 *qt422016.Writer,
 </header>
 
 <main class="main-content">
+<section class="hero">
+  <div class="hero__wrapper">
+    <img
+      class="hero__top-flag"
+      alt="Flag of Ukraine with waves"
+      width="24"
+      height="24"
+      src="/assets/images/pages/main-responsive/ua_flag_with_waves.svg"
+    />
+    <div class="hero__main">
+      <h1 class="hero__title">ReadyToTouch is a space to help you find jobs</h1>
+    </div>
+    `)
+	if len(headerProfiles) == 0 {
+		qw422016.N().S(`
+    <div class="hero__buttons-group">
+      `)
+		qw422016.N().S(`
+      <a href="/auth/github" class="button button--bordered-gray hero__button">
+        <img
+          width="20"
+          height="20"
+          src="/assets/images/pages/main-responsive/github-black.svg"
+          alt="GitHub logo"
+          class="button-icon"
+        />Log in with GitHub
+      </a>
+      <a href="/auth/gitlab" class="button button--bordered-gray hero__button">
+        <img
+          width="20"
+          height="20"
+          src="/assets/images/pages/main-responsive/gitlab.svg"
+          alt="GitLab logo"
+          class="hero__button-icon"
+        />Log in with GitLab
+      </a>
+      <a href="/auth/bitbucket" class="button button--bordered-gray hero__button">
+        <img
+          width="21"
+          height="20"
+          src="/assets/images/pages/main-responsive/bitbucket.svg"
+          alt="Bitbucket logo"
+          class="hero__button-icon"
+        />Log in with Bitbucket
+      </a>
+    </div>
+    `)
+	}
+	qw422016.N().S(`
+  </div>
+</section>
+
+<section class="explore-technologies">
+  <div class="container explore-technologies__container">
+    <header class="explore-technologies__header">
+      <h2 class="explore-technologies__headline">Explore Technologies</h2>
+    </header>
+    <div class="explore-technologies__list">
+      <div class="explore-technologies__item">
+        <figure class="explore-technologies__figure">
+          <img src="/assets/images/pages/main-responsive/go.svg"
+               alt="Golang logo"
+               class="explore-technologies__image"
+               width="40"
+               height="40"
+          >
+          <figcaption class="explore-technologies__caption">Golang</figcaption>
+        </figure>
+        <div class="explore-technologies__button-group">
+          <a href="/golang/companies" class="button button--bordered-gray explore-technologies__button">Companies</a>
+          <a href="/golang/jobs" class="button button--bordered-gray explore-technologies__button">Jobs</a>
+        </div>
+      </div>
+      <div class="explore-technologies__item">
+        <figure class="explore-technologies__figure">
+          <img src="/assets/images/pages/main-responsive/rust.svg"
+               alt="Rust logo"
+               class="explore-technologies__image"
+               width="40"
+               height="40"
+          >
+          <figcaption class="explore-technologies__caption">Rust</figcaption>
+        </figure>
+        <div class="explore-technologies__button-group">
+          <a href="/rust/companies" class="button button--bordered-gray explore-technologies__button">Companies</a>
+          <a href="/rust/jobs" class="button button--bordered-gray explore-technologies__button">Jobs</a>
+        </div>
+      </div>
+      <div class="explore-technologies__item">
+        <figure class="explore-technologies__figure">
+          <img src="/assets/images/pages/main-responsive/scala.svg"
+               alt="Scala logo"
+               class="explore-technologies__image"
+               width="40"
+               height="40"
+          >
+          <figcaption class="explore-technologies__caption">Scala</figcaption>
+        </figure>
+        <div class="explore-technologies__button-group">
+          <a href="/scala/companies" class="button button--bordered-gray explore-technologies__button">Companies</a>
+          <a href="/scala/jobs" class="button button--bordered-gray explore-technologies__button">Jobs</a>
+        </div>
+      </div>
+      <div class="explore-technologies__item">
+        <figure class="explore-technologies__figure">
+          <img src="/assets/images/pages/main-responsive/elixir.svg"
+               alt="Elixir logo"
+               class="explore-technologies__image"
+               width="40"
+               height="40"
+          >
+          <figcaption class="explore-technologies__caption">Elixir</figcaption>
+        </figure>
+        <div class="explore-technologies__button-group">
+          <a href="/elixir/companies" class="button button--bordered-gray explore-technologies__button">Companies</a>
+          <a href="/elixir/jobs" class="button button--bordered-gray explore-technologies__button">Jobs</a>
+        </div>
+      </div>
+      <div class="explore-technologies__item">
+        <figure class="explore-technologies__figure">
+          <img src="/assets/images/pages/main-responsive/erlang.svg"
+               alt="Erlang logo"
+               class="explore-technologies__image"
+               width="40"
+               height="40"
+          >
+          <figcaption class="explore-technologies__caption">Erlang</figcaption>
+        </figure>
+        <div class="explore-technologies__button-group">
+          <a href="/erlang/companies" class="button button--bordered-gray explore-technologies__button">Companies</a>
+          <a href="/erlang/jobs" class="button button--bordered-gray explore-technologies__button">Jobs</a>
+        </div>
+      </div>
+      <div class="explore-technologies__item">
+        <figure class="explore-technologies__figure">
+          <img src="/assets/images/pages/main-responsive/clojure.svg"
+               alt="Clojure logo"
+               class="explore-technologies__image"
+               width="40"
+               height="40"
+          >
+          <figcaption class="explore-technologies__caption">Clojure</figcaption>
+        </figure>
+        <div class="explore-technologies__button-group">
+          <a href="/clojure/companies" class="button button--bordered-gray explore-technologies__button">Companies</a>
+          <a href="/clojure/jobs" class="button button--bordered-gray explore-technologies__button">Jobs</a>
+        </div>
+      </div>
+      <div class="explore-technologies__item">
+        <figure class="explore-technologies__figure">
+          <img src="/assets/images/pages/main-responsive/zig.svg"
+               alt="Zig logo"
+               class="explore-technologies__image"
+               width="40"
+               height="40"
+          >
+          <figcaption class="explore-technologies__caption">Zig</figcaption>
+        </figure>
+        <div class="explore-technologies__button-group">
+          <a href="/zig/companies" class="button button--bordered-gray explore-technologies__button">Companies</a>
+          <a href="/zig/jobs" class="button button--bordered-gray explore-technologies__button">Jobs</a>
+        </div>
+      </div>
+      <div class="explore-technologies__item">
+        <figure class="explore-technologies__figure">
+          <img src="/assets/images/pages/main-responsive/haskell.svg"
+               alt="Haskell logo"
+               class="explore-technologies__image"
+               width="40"
+               height="40"
+          >
+          <figcaption class="explore-technologies__caption">Haskell</figcaption>
+        </figure>
+        <div class="explore-technologies__button-group">
+          <a href="/haskell/companies" class="button button--bordered-gray explore-technologies__button">Companies</a>
+          <a href="/haskell/jobs" class="button button--bordered-gray explore-technologies__button">Jobs</a>
+        </div>
+      </div>
+      <div class="explore-technologies__item">
+        <figure class="explore-technologies__figure">
+          <img src="/assets/images/pages/main-responsive/fsharp.svg"
+               alt="F# logo"
+               class="explore-technologies__image"
+               width="40"
+               height="40"
+          >
+          <figcaption class="explore-technologies__caption">F#</figcaption>
+        </figure>
+        <div class="explore-technologies__button-group">
+          <a href="/fsharp/companies" class="button button--bordered-gray explore-technologies__button">Companies</a>
+          <a href="/fsharp/jobs" class="button button--bordered-gray explore-technologies__button">Jobs</a>
+        </div>
+      </div>
+      <div class="explore-technologies__item">
+        <figure class="explore-technologies__figure">
+          <img src="/assets/images/pages/main-responsive/ocaml.svg"
+               alt="OCaml logo"
+               class="explore-technologies__image"
+               width="40"
+               height="40"
+          >
+          <figcaption class="explore-technologies__caption">OCaml</figcaption>
+        </figure>
+        <div class="explore-technologies__button-group">
+          <a href="/ocaml/companies" class="button button--bordered-gray explore-technologies__button">Companies</a>
+          <a href="/ocaml/jobs" class="button button--bordered-gray explore-technologies__button">Jobs</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 </main>
 
 `)
