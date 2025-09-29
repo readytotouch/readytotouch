@@ -59,7 +59,23 @@ func StreamOrganizersIndexV3(qw422016 *qt422016.Writer,
     `)
 	if len(headerProfiles) > 0 {
 		qw422016.N().S(`
-
+      <div class="header__nav-overlay js-header-nav">
+        `)
+		streamorganizersHeaderStarsV3(qw422016)
+		qw422016.N().S(`
+        `)
+		streamorganizersHeaderProfileV3(qw422016, headerProfiles)
+		qw422016.N().S(`
+      </div>
+      <button class="hamburger hamburger--spin header__hamburger js-hamburger"
+        type="button"
+        aria-expanded="false"
+        aria-label="Open the menu"
+      >
+        <span class="hamburger__box">
+          <span class="hamburger__inner"></span>
+        </span>
+      </button>
     `)
 	} else {
 		qw422016.N().S(`

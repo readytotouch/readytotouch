@@ -31,7 +31,19 @@
       <h3 class="header__logo-title">ReadyToTouch</h3>
     </a>
     {% if len(headerProfiles) > 0 %}
-
+      <div class="header__nav-overlay js-header-nav">
+        {%= organizersHeaderStarsV3() %}
+        {%= organizersHeaderProfileV3(headerProfiles) %}
+      </div>
+      <button class="hamburger hamburger--spin header__hamburger js-hamburger"
+        type="button"
+        aria-expanded="false"
+        aria-label="Open the menu"
+      >
+        <span class="hamburger__box">
+          <span class="hamburger__inner"></span>
+        </span>
+      </button>
     {% else %}
     {%= organizersHeaderStarsV3() %}
     {% endif %}

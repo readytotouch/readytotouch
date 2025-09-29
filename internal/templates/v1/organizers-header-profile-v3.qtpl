@@ -1,0 +1,3 @@
+{% func organizersHeaderProfileV3(profiles []SocialProviderUser) %}
+
+{% endfunc %}
