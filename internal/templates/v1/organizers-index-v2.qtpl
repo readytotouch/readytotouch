@@ -178,7 +178,7 @@
         </div>
       </div>
     </section>
-    {%= registrationHistory(socialProviderUsers) %}
+    {%= registrationHistoryV1(socialProviderUsers) %}
   </div>
 </section>
 

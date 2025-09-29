@@ -104,7 +104,7 @@ func StreamIndexV1(qw422016 *qt422016.Writer, headerProfiles []SocialProviderUse
 	streamstats(qw422016)
 	qw422016.N().S(`
     `)
-	streamregistrationHistory(qw422016, socialProviderUsers)
+	streamregistrationHistoryV1(qw422016, socialProviderUsers)
 	qw422016.N().S(`
     `)
 	streamprojects(qw422016)

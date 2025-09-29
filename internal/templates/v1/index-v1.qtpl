@@ -72,7 +72,7 @@
 {% endif %}
 <div class="container">
     {%= stats() %}
-    {%= registrationHistory(socialProviderUsers) %}
+    {%= registrationHistoryV1(socialProviderUsers) %}
     {%= projects() %}
     {%= articles() %}
 </div>

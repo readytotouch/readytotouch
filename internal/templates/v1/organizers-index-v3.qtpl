@@ -277,6 +277,37 @@
   </div>
 </section>
 
+<section class="project-statistics">
+  <div class="container project-statistics__container">
+    <header class="project-statistics__header">
+      <h2 class="project-statistics__headline">Project Statistics</h2>
+      <p class="project-statistics__description">
+        We like statistics and transparency, so we show users who logged in here to support our projects or found our
+        tools useful.
+      </p>
+    </header>
+    <section class="stats">
+      <div class="stats__item">
+        <div class="stats__header">
+          <h3 class="stats__title">Online users</h3>
+          <div class="stats__period">Last month</div>
+        </div>
+        <div class="stats__chart stats__chart--online-statistics js-chart-online-statistics"></div>
+      </div>
+      <div class="stats__item">
+        <div class="stats__header">
+          <h3 class="stats__title">User registrations</h3>
+          <div class="stats__period">Last month</div>
+        </div>
+        <div class="stats__chart">
+          <div class="stats__chart stats__chart--registration-statistics js-chart-registration-statistics"></div>
+        </div>
+      </div>
+    </section>
+    {%= registrationHistoryV1(socialProviderUsers) %}
+  </div>
+</section>
+
 </main>
 
 {%= organizersFooterV3() %}

@@ -1,4 +1,7 @@
-{% func registrationHistory(socialProviderUsers []SocialProviderUser) %}
+{% comment %}
+  This registration history is used for both v1 and v2.
+{% endcomment %}
+{% func registrationHistoryV1(socialProviderUsers []SocialProviderUser) %}
 {% if len(socialProviderUsers) > 0 %}
 <section class="history">
     <h2 class="history__title">Registration history</h2>
