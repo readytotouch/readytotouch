@@ -95,8 +95,12 @@ func (r *UserRepository) RegistrationDailyCountStats(
 	return result, nil
 }
 
-func (r *UserRepository) SocialUserProfiles(ctx context.Context, limit int32) ([]domain.SocialProviderUser, error) {
-	rows, err := r.db.Queries().SocialUserProfiles(ctx, limit)
+func (r *UserRepository) SocialUserProfiles(ctx context.Context, socialProviders []dbs.SocialProvider, limit int32) ([]domain.SocialProviderUser, error) {
+	rows, err := r.db.Queries().SocialUserProfiles(ctx, dbs.SocialUserProfilesParams{
+		SocialProviderFilterExists: len(socialProviders) > 0,
+		SocialProviders:            socialProviders,
+		Limit:                      limit,
+	})
 	if err != nil {
 		return nil, err
 	}

@@ -61,7 +61,7 @@ func (c *Controller) IndexV1(ctx *gin.Context) {
 		// NOP, continue
 	}
 
-	socialUserProfiles, err := c.userRepository.SocialUserProfiles(ctx, domain.RegistrationHistoryLimit)
+	socialUserProfiles, err := c.userRepository.SocialUserProfiles(ctx, nil, domain.RegistrationHistoryLimit)
 	if err != nil {
 		// @TODO logging
 
@@ -79,7 +79,7 @@ func (c *Controller) IndexV2(ctx *gin.Context) {
 		// NOP, continue
 	}
 
-	socialUserProfiles, err := c.userRepository.SocialUserProfiles(ctx, domain.RegistrationHistoryLimit)
+	socialUserProfiles, err := c.userRepository.SocialUserProfiles(ctx, nil, domain.RegistrationHistoryLimit)
 	if err != nil {
 		// @TODO logging
 
@@ -97,7 +97,11 @@ func (c *Controller) IndexV3(ctx *gin.Context) {
 		// NOP, continue
 	}
 
-	socialUserProfiles, err := c.userRepository.SocialUserProfiles(ctx, domain.RegistrationHistoryLimit)
+	socialUserProfiles, err := c.userRepository.SocialUserProfiles(
+		ctx,
+		[]dbs.SocialProvider{dbs.SocialProviderGithub},
+		domain.RegistrationHistoryLimit,
+	)
 	if err != nil {
 		// @TODO logging
 
