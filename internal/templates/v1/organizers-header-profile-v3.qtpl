@@ -15,7 +15,10 @@
     </button>
   </div>
   <div class="header__profile-list-mobile profile-list-mobile">
-    <a href="https://github.com/FirstnameLastname"
+    {% for _, profile := range profiles %}
+    {% switch profile.SocialProvider %}
+    {% case github %}
+    <a href="https://github.com/{%s profile.Username %}"
        target="_blank"
        class="profile-list-mobile__link"
     >
@@ -25,9 +28,10 @@
            height="20"
            alt="GitHub logo"
       />
-      <span class="profile-list-mobile__profile-text">github.com/FirstnameLastname</span>
+      <span class="profile-list-mobile__profile-text">github.com/{%s profile.Username %}</span>
     </a>
-    <a href="https://gitlab.com/FirstnameLastname"
+    {% case gitlab %}
+    <a href="https://gitlab.com/{%s profile.Username %}"
        target="_blank"
        class="profile-list-mobile__link"
     >
@@ -37,9 +41,10 @@
            height="20"
            alt="GitLab logo"
       />
-      <span class="profile-list-mobile__profile-text">gitlub.com/FirstnameLastname</span>
+      <span class="profile-list-mobile__profile-text">gitlab.com/{%s profile.Username %}</span>
     </a>
-    <a href="https://gitlab.com/FirstnameLastname"
+    {% case bitbucket %}
+    <a href="https://bitbucket.org/{%s profile.Username %}"
        target="_blank"
        class="profile-list-mobile__link"
     >
@@ -49,8 +54,10 @@
            height="20"
            alt="Bitbucket logo"
       />
-      <span class="profile-list-mobile__profile-text">bitbucket.com/FirstnameLastname</span>
+      <span class="profile-list-mobile__profile-text">bitbucket.org/{%s profile.Username %}</span>
     </a>
+    {% endswitch %}
+    {% endfor %}
   </div>
   <div class="header__modal modal-profile js-modal-profile">
     <div class="modal-profile__profile">
