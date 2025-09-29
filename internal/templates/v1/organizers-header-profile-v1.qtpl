@@ -34,7 +34,7 @@
         {% case bitbucket %}
         <a href="https://bitbucket.org/{%s profile.Username %}" target="_blank" class="modal-profile__link">
           <img src="/assets/images/pages/online-new/bitbucket.svg" width="20" height="20" alt="GitLab logo" />
-          <span class="modal-profile__profile-gitlab">bitbucket.org/{%s profile.Username %}</span>
+          <span class="modal-profile__profile-bitbucket">bitbucket.org/{%s profile.Username %}</span>
         </a>
         {% endswitch %}
         {% endfor %}
