@@ -1,0 +1,30 @@
+{% func registrationHistoryV3(socialProviderUsers []SocialProviderUser) %}
+{% if len(socialProviderUsers) > 0 %}
+<section class="history">
+  <h2 class="history__title">Registration history</h2>
+  <div class="history__table">
+    <div class="history__table-header">
+      <span class="history__name history__header-item">User name</span>
+      <span class="history__profile history__header-item">Registration date</span>
+    </div>
+    <ul class="history__table-list">
+      {% for _, profile := range socialProviderUsers %}
+      <li class="history__table-user">
+        <div class="history__user-group">
+          <img
+            src="https://avatars.githubusercontent.com/u/{%s profile.SocialProviderUserID %}?v=4&s=48"
+            width="32"
+            height="32"
+            alt="photo"
+            class="history__user-photo"
+          />
+          <span class="history__user-name">{%s SocialProviderUserName(profile) %}</span>
+        </div>
+        <span class="history__user-date history__user-item">{%s profile.CreatedAt.Format("January _2, 2006") %}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+{% endif %}
+{% endfunc %}

@@ -59,13 +59,13 @@ func StreamOrganizersMain(qw422016 *qt422016.Writer, headerProfiles []SocialProv
       <span class="header__logo-label">Organizer</span>
     </a>
     `)
-	streamorganizersHeaderStars(qw422016)
+	streamorganizersHeaderStarsV1(qw422016)
 	qw422016.N().S(`
     `)
 	if len(headerProfiles) > 0 {
 		qw422016.N().S(`
     `)
-		streamorganizersHeaderProfile(qw422016, headerProfiles)
+		streamorganizersHeaderProfileV1(qw422016, headerProfiles)
 		qw422016.N().S(`
     `)
 	} else {
@@ -452,7 +452,7 @@ func StreamOrganizersMain(qw422016 *qt422016.Writer, headerProfiles []SocialProv
 
 </main>
 `)
-	streamorganizersFooter(qw422016)
+	streamorganizersFooterV1(qw422016)
 	qw422016.N().S(`
 
 </body>

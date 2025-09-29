@@ -32,7 +32,7 @@
       />
       <span class="header__logo-label">Organizer</span>
     </a>
-    {%= organizersHeaderStars() %}
+    {%= organizersHeaderStarsV1() %}
   </div>
 </header>
 

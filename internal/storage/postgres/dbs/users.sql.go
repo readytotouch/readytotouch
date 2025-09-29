@@ -8,6 +8,8 @@ package dbs
 import (
 	"context"
 	"time"
+
+	"github.com/lib/pq"
 )
 
 const socialUserProfiles = `-- name: SocialUserProfiles :many
@@ -17,10 +19,20 @@ SELECT s.social_provider,
        s.name,
        s.created_at
 FROM user_social_profiles s
-WHERE s.deleted_at IS NULL
+WHERE (
+       $1::BOOLEAN = FALSE
+    OR s.social_provider = ANY ($2::SOCIAL_PROVIDER[])
+  )
+  AND s.deleted_at IS NULL
 ORDER BY s.id DESC
-LIMIT $1
+LIMIT $3
 `
+
+type SocialUserProfilesParams struct {
+	SocialProviderFilterExists bool
+	SocialProviders            []SocialProvider
+	Limit                      int32
+}
 
 type SocialUserProfilesRow struct {
 	SocialProvider       SocialProvider
@@ -30,8 +42,8 @@ type SocialUserProfilesRow struct {
 	CreatedAt            time.Time
 }
 
-func (q *Queries) SocialUserProfiles(ctx context.Context, limit int32) ([]SocialUserProfilesRow, error) {
-	rows, err := q.query(ctx, q.socialUserProfilesStmt, socialUserProfiles, limit)
+func (q *Queries) SocialUserProfiles(ctx context.Context, arg SocialUserProfilesParams) ([]SocialUserProfilesRow, error) {
+	rows, err := q.query(ctx, q.socialUserProfilesStmt, socialUserProfiles, arg.SocialProviderFilterExists, pq.Array(arg.SocialProviders), arg.Limit)
 	if err != nil {
 		return nil, err
 	}

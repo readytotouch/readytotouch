@@ -70,9 +70,9 @@
       </li>
       {% endcomment %}
     </ul>
-    {%= organizersHeaderStars() %}
+    {%= organizersHeaderStarsV1() %}
     {% if len(headerProfiles) > 0 %}
-    {%= organizersHeaderProfile(headerProfiles) %}
+    {%= organizersHeaderProfileV1(headerProfiles) %}
     {% else %}
     <a href="/{%s organizerFeature.Organizer.Alias %}/welcome{%s authQueryParams %}" class="button button--small-padding button--black header__login-button">Log in</a>
     {% endif %}
@@ -414,7 +414,7 @@
     Looking for <strong>{%s organizerFeature.Organizer.Title %} jobs</strong>? This page lists vacancies from companies actively using {%s organizerFeature.Organizer.Title %} in production. We regularly update this list to help every <strong>{%s organizerFeature.Organizer.Title %} developer</strong> find a great opportunity — remote or onsite. Whether you're just entering the {%s organizerFeature.Organizer.Title %} ecosystem or already an expert, you'll find roles worth applying to.
   </p>
 </div>
-{%= organizersFooter() %}
+{%= organizersFooterV1() %}
 <script src="/assets/js/organizers-vacancies-app.js?{%d appVersion %}"></script>
 </body>
 </html>

@@ -1,0 +1,82 @@
+{% func organizersFooterV3() %}
+<footer class="footer">
+  <div class="footer__overlay">
+    <div class="footer__wrapper">
+      <div class="footer__group">
+        <div class="footer__info">
+          <a href="/" class="footer__title">
+            <h3 class="footer__title-link">ReadyToTouch</h3>
+          </a>
+          <p class="footer__subtitle">Space to help you find jobs</p>
+          <img width="98"
+               height="64"
+               loading="lazy"
+               class="footer__ukraine-map"
+               src="/assets/images/pages/online-new/ukraine-map.svg"
+               alt="Map of Ukraine"
+          >
+        </div>
+        <div class="footer__right-side">
+          <span class="github-btn github-stargazers github-btn-large js-github-button">
+            <a class="gh-btn"
+               href="https://github.com/readytotouch/readytotouch"
+               rel="noopener noreferrer"
+               target="_blank"
+               aria-label="Star readytotouch/readytotouch on GitHub"
+            >
+              <span class="gh-ico" aria-hidden="true"></span>
+              <span class="gh-text">Star</span>
+            </a>
+            <a class="gh-count gh-count--is-hidden js-github-count"
+               href="https://github.com/readytotouch/readytotouch/stargazers"
+               rel="noopener noreferrer"
+               target="_blank"
+               aria-label="1000+ stargazers on GitHub"
+               aria-hidden="true"
+            >1000+</a>
+          </span>
+
+          <div class="footer__support">
+            <a href="https://savelife.in.ua/en/" target="_blank" class="button button--bordered-gray footer__link">
+              <figure class="footer__support-figure">
+                <img width="49"
+                     height="23"
+                     src="/assets/images/pages/common-images/come_back_alive.svg"
+                     alt="come back alive logo"
+                >
+                <figcaption class="footer__support-caption">Support</figcaption>
+              </figure>
+              <div class="footer__support-icon-box">
+                <img width="18"
+                     height="18"
+                     src="/assets/images/pages/common/external-link.svg"
+                     alt="external link icon"
+                >
+              </div>
+            </a>
+            <a href="https://war.ukraine.ua/" target="_blank" class="button button--bordered-gray footer__link footer__link--ukraine">
+              war.ukraine.ua
+              <div class="footer__support-icon-box">
+                <img width="18"
+                     height="18"
+                     src="/assets/images/pages/common/external-link.svg"
+                     alt="external link icon"
+                >
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copyrights">
+        &copy; 2025 Yaroslav Podorvanov
+        <img width="24"
+             height="24"
+             class="footer__flag-ua"
+             src="/assets/images/pages/online-new/ua_flag_with_waves.svg"
+             alt="Flag of Ukraine"
+        >
+      </div>
+    </div>
+  </div>
+</footer>
+{% endfunc %}

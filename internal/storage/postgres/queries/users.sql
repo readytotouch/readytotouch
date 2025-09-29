@@ -65,7 +65,11 @@ SELECT s.social_provider,
        s.name,
        s.created_at
 FROM user_social_profiles s
-WHERE s.deleted_at IS NULL
+WHERE (
+       @social_provider_filter_exists::BOOLEAN = FALSE
+    OR s.social_provider = ANY (@social_providers::SOCIAL_PROVIDER[])
+  )
+  AND s.deleted_at IS NULL
 ORDER BY s.id DESC
 LIMIT sqlc.arg('limit');
 

@@ -1,0 +1,22 @@
+{% func organizersHeaderStarsV3() %}
+<div class="header__stars">
+  <span class="github-btn github-stargazers github-btn-large js-github-button">
+    <a class="gh-btn"
+       href="https://github.com/readytotouch/readytotouch.github.io"
+       rel="noopener noreferrer"
+       target="_blank"
+       aria-label="Star readytotouch/readytotouch.github.io on GitHub"
+    >
+      <span class="gh-ico" aria-hidden="true"></span>
+      <span class="gh-text">Star</span>
+    </a>
+    <a class="gh-count gh-count--is-hidden js-github-count"
+       href="https://github.com/readytotouch/readytotouch.github.io/stargazers"
+       rel="noopener noreferrer"
+       target="_blank"
+       aria-label="1000+ stargazers on GitHub"
+       aria-hidden="true"
+    >1000+</a>
+  </span>
+</div>
+{% endfunc %}

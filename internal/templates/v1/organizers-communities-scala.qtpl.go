@@ -82,13 +82,13 @@ func StreamOrganizersCommunitiesScala(qw422016 *qt422016.Writer, organizer Organ
     </ul>
 
     `)
-	streamorganizersHeaderStars(qw422016)
+	streamorganizersHeaderStarsV1(qw422016)
 	qw422016.N().S(`
     `)
 	if len(headerProfiles) > 0 {
 		qw422016.N().S(`
     `)
-		streamorganizersHeaderProfile(qw422016, headerProfiles)
+		streamorganizersHeaderProfileV1(qw422016, headerProfiles)
 		qw422016.N().S(`
     `)
 	} else {
@@ -196,7 +196,7 @@ func StreamOrganizersCommunitiesScala(qw422016 *qt422016.Writer, organizer Organ
 
 </main>
 `)
-	streamorganizersFooter(qw422016)
+	streamorganizersFooterV1(qw422016)
 	qw422016.N().S(`
 <script src="/assets/js/organizers-communities-app.js?`)
 	qw422016.N().D(appVersion)

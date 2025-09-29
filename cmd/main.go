@@ -107,7 +107,7 @@ func main() {
 			jwtService,
 		)
 		userController      = pkgUsers.NewController(userRepository)
-		onlineController    = pkgOnline.NewController(userRepository, onlineRepository)
+		onlineController    = pkgOnline.NewController(onlineRepository)
 		organizerController = pkgOrganizer.NewController(
 			userRepository,
 			userFeatureWaitlistRepository,
@@ -161,7 +161,10 @@ func main() {
 
 			ctx.Next()
 		})
-	r.GET("/", organizerController.Index)
+	r.GET("/v1", organizerController.IndexV1)
+	r.GET("/v2", organizerController.IndexV2)
+	r.GET("/v3", organizerController.IndexV3)
+	r.GET("/", organizerController.IndexV2)
 
 	r.GET("/api/v1/users/registration/stats/daily.json", userController.RegistrationDailyCountStats)
 	r.GET("/api/v1/users/online/stats/daily.json", onlineController.DailyCountStats)
@@ -356,9 +359,13 @@ func main() {
 	r.GET("/similarweb", found("https://www.similarweb.com/website/readytotouch.com/", false))
 
 	r.
-		StaticFile("/design", "./public/design/online-new.html").
-		StaticFile("/design/online", "./public/design/online.html").
-		StaticFile("/design/online-auth", "./public/design/online-auth.html").
+		StaticFile("/design", "./public/design-v3/main-responsive.html").
+		StaticFile("/design/v1", "./public/design/online.html").
+		StaticFile("/design/v1/auth", "./public/design/online-auth.html").
+		StaticFile("/design/v2", "./public/design/online-new.html").
+		StaticFile("/design/v2/auth", "./public/design/online-new-auth.html").
+		StaticFile("/design/v3", "./public/design-v3/main-responsive.html").
+		StaticFile("/design/v3/auth", "./public/design-v3/main-responsive-auth.html").
 
 		// Organizers
 		StaticFile("/design/organizers", "./public/design/organizer-main-page.html").
