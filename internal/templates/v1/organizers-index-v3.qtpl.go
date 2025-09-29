@@ -329,7 +329,7 @@ func StreamOrganizersIndexV3(qw422016 *qt422016.Writer,
       </div>
     </section>
     `)
-	streamregistrationHistoryV1(qw422016, socialProviderUsers)
+	streamregistrationHistoryV3(qw422016, socialProviderUsers)
 	qw422016.N().S(`
   </div>
 </section>

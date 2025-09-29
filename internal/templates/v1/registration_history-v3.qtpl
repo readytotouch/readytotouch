@@ -1,4 +1,4 @@
-{% func registrationHistoryV2(socialProviderUsers []SocialProviderUser) %}
+{% func registrationHistoryV3(socialProviderUsers []SocialProviderUser) %}
 {% if len(socialProviderUsers) > 0 %}
 <section class="history">
   <h2 class="history__title">Registration history</h2>
