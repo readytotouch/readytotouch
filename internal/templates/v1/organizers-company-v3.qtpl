@@ -90,6 +90,13 @@
     </nav>
   </div>
 
+  <section class="company"></section>
+
+  <section class="company-vacancies"></section>
+
+  <section class="sources-evidence"></section>
+
+  <section class="company-statistics"></section>
 </main>
 
 {%= organizersFooterV3() %}
