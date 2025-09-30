@@ -141,7 +141,7 @@ design-responsive-v3:
 	cp -r $(DESIGN)/public/organizer-companies-responsive-auth.html ./public/design-v3
 	cp -r $(DESIGN)/public/organizer-companies-responsive.html ./public/design-v3
 	# Scripts for organizer-companies-responsive.html and organizer-companies-responsive-auth.html
-	cp -r $(DESIGN)/public/assets/js/organizer-company-responsive_425c2656a4c0cb23c3c7fc995558ebd1.js ./public/assets/js
+	cp -r $(DESIGN)/public/assets/js/organizer-companies-responsive_3436c6686c2da885de06b56d35bf08dc.js ./public/assets/js
 
 	git restore ./public/assets/images/pages/online-new/cz_flag.svg
 	git restore ./public/assets/images/pages/organizer/zig.svg

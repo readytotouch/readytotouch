@@ -360,6 +360,29 @@ func (c *Controller) CompanyV1(ctx *gin.Context) {
 }
 
 func (c *Controller) CompanyV2(ctx *gin.Context) {
+	c.company(ctx, template.OrganizersCompanyV2)
+}
+
+func (c *Controller) CompanyV3(ctx *gin.Context) {
+	c.company(ctx, template.OrganizersCompanyV2)
+}
+
+func (c *Controller) company(
+	ctx *gin.Context,
+	render func(
+		organizerFeature domain.OrganizerFeature,
+		headerProfiles []domain.SocialProviderUser,
+		company domain.CompanyProfile,
+		vacancies []domain.PreparedVacancy,
+		ukrainianUniversities []domain.University,
+		czechUniversities []domain.University,
+		favorite bool,
+		userVacancyFavoriteMap map[int64]bool,
+		vacancyMonthlyViewsMap map[int64]int64,
+		stats template.CompanyStats,
+		authQueryParams string,
+	) string,
+) {
 	var (
 		authUserID  = domain.ContextGetUserID(ctx)
 		featurePath = c.trimCompanyAlias(ctx)
@@ -498,7 +521,7 @@ func (c *Controller) CompanyV2(ctx *gin.Context) {
 		return preparedVacancies[i].Date.After(preparedVacancies[j].Date)
 	})
 
-	content := template.OrganizersCompanyV2(
+	content := render(
 		organizerFeature,
 		headerProfiles,
 		company,

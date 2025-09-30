@@ -1,0 +1,15 @@
+{%- func OrganizersCompanyV3(
+  organizerFeature OrganizerFeature,
+  headerProfiles []SocialProviderUser,
+  company Company,
+  vacancies []PreparedVacancy,
+  ukrainianUniversities []University,
+  czechUniversities []University,
+  favorite bool,
+  userVacancyFavoriteMap map[int64]bool,
+  vacancyMonthlyViewsMap map[int64]int64,
+  stats CompanyStats,
+  authQueryParams string,
+) -%}
+
+{%- endfunc -%}

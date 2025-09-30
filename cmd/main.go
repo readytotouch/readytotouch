@@ -191,6 +191,7 @@ func main() {
 	r.GET("/golang/companies/:company_alias", organizerController.CompanyV2)
 	r.GET("/golang/companies/:company_alias/v1", organizerController.CompanyV1)
 	r.GET("/golang/companies/:company_alias/v2", organizerController.CompanyV2)
+	r.GET("/golang/companies/:company_alias/v3", organizerController.CompanyV3)
 	r.GET("/golang/jobs", organizerController.Vacancies)
 	r.GET("/golang/communities", organizerController.GolangCommunities)
 	r.GET("/rust/companies", organizerController.CompaniesV2)
