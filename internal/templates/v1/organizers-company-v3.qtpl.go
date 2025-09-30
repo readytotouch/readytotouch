@@ -65,6 +65,17 @@ func StreamOrganizersCompanyV3(qw422016 *qt422016.Writer,
 	qw422016.N().S(`
 </head>
 
+<body>
+<div class="main-wrapper main-wrapper--organizer-inner">
+
+`)
+	streamorganizersFooterV3(qw422016)
+	qw422016.N().S(`
+</div>
+<script src="/assets/js/organizers-company-app.js?`)
+	qw422016.N().D(appVersion)
+	qw422016.N().S(`"></script>
+</body>
 </html>
 `)
 }

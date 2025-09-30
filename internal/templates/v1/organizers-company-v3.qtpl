@@ -31,5 +31,12 @@
     {%= ga() %}
 </head>
 
+<body>
+<div class="main-wrapper main-wrapper--organizer-inner">
+
+{%= organizersFooterV3() %}
+</div>
+<script src="/assets/js/organizers-company-app.js?{%d appVersion %}"></script>
+</body>
 </html>
 {%- endfunc -%}
