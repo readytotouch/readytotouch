@@ -67,6 +67,63 @@ func StreamOrganizersCompanyV3(qw422016 *qt422016.Writer,
 
 <body>
 <div class="main-wrapper main-wrapper--organizer-inner">
+<header class="header">
+  <div class="header__wrapper">
+    <a href="/`)
+	qw422016.E().S(organizerFeature.Organizer.Alias)
+	qw422016.N().S(`" class="header__logo">
+      <img
+        width="30"
+        height="30"
+        class="header__logo-img"
+        src="/assets/images/pages/organizer/`)
+	qw422016.E().S(organizerFeature.Organizer.Logo)
+	qw422016.N().S(`"
+        alt="organizer logo"
+      />
+      <span class="header__logo-label">Organizer</span>
+    </a>
+    <div class="header__nav-overlay js-header-nav">
+      <ul class="header__nav">
+        <li class="header__nav-item">
+          <a href="/`)
+	qw422016.E().S(organizerFeature.Organizer.Alias)
+	qw422016.N().S(`/companies" class="header__nav-link active">Companies</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="/`)
+	qw422016.E().S(organizerFeature.Organizer.Alias)
+	qw422016.N().S(`/jobs" class="header__nav-link">Jobs</a>
+        </li>
+        `)
+	qw422016.N().S(`
+      </ul>
+      `)
+	streamorganizersHeaderStarsV3(qw422016)
+	qw422016.N().S(`
+      `)
+	if len(headerProfiles) > 0 {
+		qw422016.N().S(`
+        `)
+		streamorganizersHeaderProfileV3(qw422016, headerProfiles)
+		qw422016.N().S(`
+      `)
+	} else {
+		qw422016.N().S(`
+        <a href="/`)
+		qw422016.E().S(organizerFeature.Organizer.Alias)
+		qw422016.N().S(`/welcome`)
+		qw422016.E().S(authQueryParams)
+		qw422016.N().S(`" class="button button--bordered-black button--small-padding header__login-button">Log in</a>
+      `)
+	}
+	qw422016.N().S(`
+    </div>
+    `)
+	streamorganizersHamburgerV3(qw422016)
+	qw422016.N().S(`
+  </div>
+</header>
 
 `)
 	streamorganizersFooterV3(qw422016)
