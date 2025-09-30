@@ -27,7 +27,45 @@ func StreamOrganizersCompanyV3(qw422016 *qt422016.Writer,
 	stats CompanyStats,
 	authQueryParams string,
 ) {
+	qw422016.N().S(`<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>`)
+	qw422016.E().S(company.Name)
+	qw422016.N().S(` – company using `)
+	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.N().S(` | ReadyToTouch</title>
+	<meta name="description" content="Improve your chances of getting a job by connecting with `)
+	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.N().S(` developers from `)
+	qw422016.E().S(company.Name)
+	qw422016.N().S(` and receiving further recommendations.">
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="author" type="text/plain" href="https://readytotouch.com/humans.txt"/>
+	<meta property="og:image" content="/assets/images/og/organizers-light.jpg">
+
+    `)
+	streamfavicon(qw422016)
 	qw422016.N().S(`
+    `)
+	streamorganizersFonts(qw422016)
+	qw422016.N().S(`
+    `)
+	streamorganizersCompanyV3Styles(qw422016)
+	qw422016.N().S(`
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts@3.52.0"></script>
+    `)
+	streamplausibleAnalytics(qw422016)
+	qw422016.N().S(`
+    `)
+	streamga(qw422016)
+	qw422016.N().S(`
+</head>
+
+</html>
 `)
 }
 

@@ -11,5 +11,25 @@
   stats CompanyStats,
   authQueryParams string,
 ) -%}
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+	<title>{%s company.Name %} – company using {%s organizerFeature.Organizer.Title %} | ReadyToTouch</title>
+	<meta name="description" content="Improve your chances of getting a job by connecting with {%s organizerFeature.Organizer.Title %} developers from {%s company.Name %} and receiving further recommendations.">
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="author" type="text/plain" href="https://readytotouch.com/humans.txt"/>
+	<meta property="og:image" content="/assets/images/og/organizers-light.jpg">
+
+    {%= favicon() %}
+    {%= organizersFonts() %}
+    {%= organizersCompanyV3Styles() %}
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts@3.52.0"></script>
+    {%= plausibleAnalytics() %}
+    {%= ga() %}
+</head>
+
+</html>
 {%- endfunc -%}
