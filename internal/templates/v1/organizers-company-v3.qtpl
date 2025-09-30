@@ -70,6 +70,28 @@
   </div>
 </header>
 
+<main class="main-content">
+  <div class="container">
+    <nav aria-label="breadcrumb" aria-labelledby="navigation through the bread crumbs" class="breadcrumb">
+      <ul class="breadcrumb__list">
+        <li class="breadcrumb__item">
+          <a class="breadcrumb__link" href="/">Main</a>
+        </li>
+        <li class="breadcrumb__item">
+          <a class="breadcrumb__link" href="/{%s organizerFeature.Organizer.Alias %}">{%s organizerFeature.Organizer.Title %}</a>
+        </li>
+        <li class="breadcrumb__item">
+          <a class="breadcrumb__link" href="{%s organizerFeature.Path %}">{%s organizerFeature.Title %}</a>
+        </li>
+        <li class="breadcrumb__item">
+          <span class="breadcrumb__page" aria-current="page">{%s company.Name %}</span>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+</main>
+
 {%= organizersFooterV3() %}
 </div>
 <script src="/assets/js/organizers-company-app.js?{%d appVersion %}"></script>
