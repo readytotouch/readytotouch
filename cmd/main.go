@@ -375,9 +375,12 @@ func main() {
 		GET("/design/:language/companies/:company_alias", s("./public/design/organizer-statistics.html")).
 		GET("/design/:language/companies/:company_alias/v1", s("./public/design-v1/organizer-statistics.html")).
 		GET("/design/:language/companies/:company_alias/v2", s("./public/design/organizer-statistics.html")).
+		GET("/design/:language/companies/:company_alias/v3", s("./public/design-v3/organizer-company-responsive-auth.html")).
 		GET("/design/:language/companies", s("./public/design/organizer-companies.html")).
 		GET("/design/:language/companies/v1", s("./public/design-v1/organizer-companies.html")).
 		GET("/design/:language/companies/v2", s("./public/design/organizer-companies.html")).
+		GET("/design/:language/companies/v3", s("./public/design-v3/organizer-companies-responsive.html")).
+		GET("/design/:language/companies/v3/auth", s("./public/design-v3/organizer-companies-responsive-auth.html")).
 		GET("/design/:language/jobs", s("./public/design/organizer-vacancies.html")).
 		GET("/design/:language/jobs/subscribe", s("./public/design/organizer-vacancies-subscribe.html")).
 		GET("/design/:language/jobs/unsubscribe", s("./public/design/organizer-vacancies-unsubscribe.html")).
