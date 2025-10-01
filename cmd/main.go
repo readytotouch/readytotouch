@@ -245,7 +245,6 @@ func main() {
 	r.GET("/clojure/companies/:company_alias", organizerController.CompanyV2)
 	r.GET("/clojure/companies/:company_alias/v1", organizerController.CompanyV1)
 	r.GET("/clojure/companies/:company_alias/v2", organizerController.CompanyV2)
-	r.GET("/clojure/companies/:company_alias/v3", organizerController.CompanyV2)
 	r.GET("/clojure/companies/:company_alias/v3", organizerController.CompanyV3)
 	r.GET("/clojure/jobs", organizerController.Vacancies)
 	r.GET("/clojure/communities", organizerController.ClojureCommunities)
