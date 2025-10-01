@@ -96,7 +96,48 @@
 
   <section class="sources-evidence"></section>
 
-  <section class="company-statistics"></section>
+  <section class="company-statistics">
+    <div class="container company-statistics__container">
+      <h2 class="company-statistics__headline">Statistics</h2>
+      <div class="stats">
+        <header class="stats-caption">
+          <div class="stats-caption__counters">
+            <h3 class="stats-caption__title">Views</h3>
+            <div class="stats-caption__counters-group">
+              <div class="stats-caption__counters-item">
+                <p class="stats-caption__counters-views">Total</p>
+                <p class="stats-caption__counters-item-number">{%dl stats.TotalViews %}</p>
+              </div>
+              <div class="stats-caption__counters-item">
+                <p class="stats-caption__counters-views">Last month</p>
+                <p class="stats-caption__counters-item-number">{%dl stats.LastMonthViews %}</p>
+              </div>
+            </div>
+          </div>
+          <div class="stats-caption__counters">
+            <h3 class="stats-caption__title">Added to favorites</h3>
+            <div class="stats-caption__counters-group">
+              <div class="stats-caption__counters-item">
+                <p class="stats-caption__counters-views">Total</p>
+                <p class="stats-caption__counters-item-number">{%dl stats.TotalFavorites %}</p>
+              </div>
+              <div class="stats-caption__counters-item">
+                <p class="stats-caption__counters-views">Last month</p>
+                <p class="stats-caption__counters-item-number">{%dl stats.LastMonthFavorites %}</p>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="stats__item">
+          <div class="stats__header">
+            <h3 class="stats__title">Company website views</h3>
+            <div class="stats__period">Last month</div>
+          </div>
+          <div class="stats__chart stats__chart--page-views-statistics js-chart-views-statistics"></div>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 
 {%= organizersFooterV3() %}

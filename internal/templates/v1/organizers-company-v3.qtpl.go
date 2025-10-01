@@ -155,6 +155,62 @@ func StreamOrganizersCompanyV3(qw422016 *qt422016.Writer,
     </nav>
   </div>
 
+  <section class="company"></section>
+
+  <section class="company-vacancies"></section>
+
+  <section class="sources-evidence"></section>
+
+  <section class="company-statistics">
+    <div class="container company-statistics__container">
+      <h2 class="company-statistics__headline">Statistics</h2>
+      <div class="stats">
+        <header class="stats-caption">
+          <div class="stats-caption__counters">
+            <h3 class="stats-caption__title">Views</h3>
+            <div class="stats-caption__counters-group">
+              <div class="stats-caption__counters-item">
+                <p class="stats-caption__counters-views">Total</p>
+                <p class="stats-caption__counters-item-number">`)
+	qw422016.N().DL(stats.TotalViews)
+	qw422016.N().S(`</p>
+              </div>
+              <div class="stats-caption__counters-item">
+                <p class="stats-caption__counters-views">Last month</p>
+                <p class="stats-caption__counters-item-number">`)
+	qw422016.N().DL(stats.LastMonthViews)
+	qw422016.N().S(`</p>
+              </div>
+            </div>
+          </div>
+          <div class="stats-caption__counters">
+            <h3 class="stats-caption__title">Added to favorites</h3>
+            <div class="stats-caption__counters-group">
+              <div class="stats-caption__counters-item">
+                <p class="stats-caption__counters-views">Total</p>
+                <p class="stats-caption__counters-item-number">`)
+	qw422016.N().DL(stats.TotalFavorites)
+	qw422016.N().S(`</p>
+              </div>
+              <div class="stats-caption__counters-item">
+                <p class="stats-caption__counters-views">Last month</p>
+                <p class="stats-caption__counters-item-number">`)
+	qw422016.N().DL(stats.LastMonthFavorites)
+	qw422016.N().S(`</p>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="stats__item">
+          <div class="stats__header">
+            <h3 class="stats__title">Company website views</h3>
+            <div class="stats__period">Last month</div>
+          </div>
+          <div class="stats__chart stats__chart--page-views-statistics js-chart-views-statistics"></div>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 
 `)
