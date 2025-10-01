@@ -56,8 +56,8 @@
   },
   {
     "alias": "abc-fitness",
-    "source": "",
-    "destination": ""
+    "source": "abc-fitness-463x463.webp",
+    "destination": "abc-fitness.png"
   },
   {
     "alias": "abnormalsecurity",
@@ -568,6 +568,11 @@
     "alias": "bauhaus-deutschland",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "bayer",
+    "source": "bayer-200x200.jpeg",
+    "destination": "bayer.jpeg"
   },
   {
     "alias": "bbraun-group",
@@ -1145,6 +1150,11 @@
     "destination": ""
   },
   {
+    "alias": "collx",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "comcast",
     "source": "",
     "destination": ""
@@ -1236,8 +1246,8 @@
   },
   {
     "alias": "crowdstrike",
-    "source": "",
-    "destination": ""
+    "source": "crowdstrike-200x200.jpeg",
+    "destination": "crowdstrike.jpeg"
   },
   {
     "alias": "csidedev",
@@ -1311,8 +1321,8 @@
   },
   {
     "alias": "dailypay",
-    "source": "",
-    "destination": ""
+    "source": "dailypay-200x200.jpeg",
+    "destination": "dailypay.jpeg"
   },
   {
     "alias": "darktrace",
@@ -1345,6 +1355,11 @@
     "destination": ""
   },
   {
+    "alias": "datatroniq",
+    "source": "datatroniq-152x152.png",
+    "destination": "datatroniq.png"
+  },
+  {
     "alias": "datazipio",
     "source": "",
     "destination": ""
@@ -1353,6 +1368,11 @@
     "alias": "ddn",
     "source": "ddn-200x200.jpeg",
     "destination": "ddn.jpeg"
+  },
+  {
+    "alias": "de-una",
+    "source": "deuna-200x200.jpeg",
+    "destination": "de-una.jpeg"
   },
   {
     "alias": "dealer-tire",
@@ -1831,8 +1851,8 @@
   },
   {
     "alias": "fetcherr-ltd",
-    "source": "",
-    "destination": ""
+    "source": "fetcherr-ltd-256x256.png",
+    "destination": "fetcherr-ltd.png"
   },
   {
     "alias": "fico",
@@ -2045,6 +2065,11 @@
     "destination": ""
   },
   {
+    "alias": "fudosecurity",
+    "source": "fudosecurity-200x200.jpeg",
+    "destination": "fudosecurity.jpeg"
+  },
+  {
     "alias": "fujitsu",
     "source": "",
     "destination": ""
@@ -2191,8 +2216,8 @@
   },
   {
     "alias": "go-teleport",
-    "source": "",
-    "destination": ""
+    "source": "go-teleport-180x180.png",
+    "destination": "go-teleport.png"
   },
   {
     "alias": "gocardless",
@@ -2201,8 +2226,8 @@
   },
   {
     "alias": "godaddy",
-    "source": "",
-    "destination": ""
+    "source": "godaddy-152x152.png",
+    "destination": "godaddy.png"
   },
   {
     "alias": "goflink",
@@ -2406,8 +2431,8 @@
   },
   {
     "alias": "hewlett-packard-enterprise",
-    "source": "",
-    "destination": ""
+    "source": "hewlett-packard-enterprise-200x200.jpeg",
+    "destination": "hewlett-packard-enterprise.jpeg"
   },
   {
     "alias": "heyfresha",
@@ -2680,6 +2705,11 @@
     "destination": ""
   },
   {
+    "alias": "justrelate-group",
+    "source": "justrelate-200x200.jpeg",
+    "destination": "justrelate-group.jpeg"
+  },
+  {
     "alias": "justwatch",
     "source": "",
     "destination": ""
@@ -2748,6 +2778,11 @@
     "alias": "knime",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "knorex",
+    "source": "knorex-200x200.jpeg",
+    "destination": "knorex.jpeg"
   },
   {
     "alias": "knowbe4",
@@ -3161,8 +3196,8 @@
   },
   {
     "alias": "mirantis",
-    "source": "",
-    "destination": ""
+    "source": "mirantis-200x200.jpeg",
+    "destination": "mirantis.jpeg"
   },
   {
     "alias": "mitratech",
@@ -3351,8 +3386,8 @@
   },
   {
     "alias": "nelly-solutions",
-    "source": "",
-    "destination": ""
+    "source": "nelly-solutions-200x200.jpeg",
+    "destination": "nelly-solutions.jpeg"
   },
   {
     "alias": "neo4j",
@@ -3811,8 +3846,8 @@
   },
   {
     "alias": "pdq-com",
-    "source": "",
-    "destination": ""
+    "source": "pdq-200x200.jpeg",
+    "destination": "pdq-com.jpeg"
   },
   {
     "alias": "peak",
@@ -4181,8 +4216,8 @@
   },
   {
     "alias": "rapid7",
-    "source": "",
-    "destination": ""
+    "source": "rapid7-200x200.jpeg",
+    "destination": "rapid7.jpeg"
   },
   {
     "alias": "rbc",
@@ -4510,6 +4545,11 @@
     "destination": "sectigo.png"
   },
   {
+    "alias": "secureco-usa",
+    "source": "secureco-180x180.webp",
+    "destination": "secureco-usa.png"
+  },
+  {
     "alias": "seedtag",
     "source": "",
     "destination": ""
@@ -4636,8 +4676,8 @@
   },
   {
     "alias": "smc",
-    "source": "",
-    "destination": ""
+    "source": "smc-200x200.jpeg",
+    "destination": "smc.jpeg"
   },
   {
     "alias": "smg-marketplace",
@@ -5136,8 +5176,8 @@
   },
   {
     "alias": "teradata",
-    "source": "",
-    "destination": ""
+    "source": "teradata-200x200.jpeg",
+    "destination": "teradata.jpeg"
   },
   {
     "alias": "teramindco",
@@ -5236,8 +5276,8 @@
   },
   {
     "alias": "thunespayments",
-    "source": "",
-    "destination": ""
+    "source": "thunes-180x180.png",
+    "destination": "thunespayments.png"
   },
   {
     "alias": "tietoevry",
@@ -5548,6 +5588,11 @@
     "alias": "vercel",
     "source": "vercel-57x57.png",
     "destination": "vercel.png"
+  },
+  {
+    "alias": "vereign",
+    "source": "vereign-200x200.jpeg",
+    "destination": "vereign.jpeg"
   },
   {
     "alias": "verkada",

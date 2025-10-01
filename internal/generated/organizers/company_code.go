@@ -1203,6 +1203,15 @@ var (
 		"oxylabs-io":                          1203, // Oxylabs.io
 		"pentaleaptech":                       1204, // Pentaleap
 		"doodle-ag":                           1205, // Doodle
+		"collx":                               1206, // CollX
+		"fudosecurity":                        1207, // Fudo Security
+		"bayer":                               1208, // Bayer
+		"vereign":                             1209, // Vereign AG
+		"knorex":                              1210, // KNOREX
+		"justrelate-group":                    1211, // JustRelate
+		"secureco-usa":                        1212, // SecureCo
+		"datatroniq":                          1213, // DATATRONiQ
+		"de-una":                              1214, // DEUNA
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

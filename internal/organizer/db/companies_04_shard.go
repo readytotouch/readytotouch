@@ -1241,6 +1241,12 @@ func companies04Shard() []domain.CompanyProfile {
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Zipline-EI_IE1394276.11,18.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Zipline-Reviews-E1394276.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Zipline-Jobs-E1394276.htm",
+				Jobs:        "37",
+				Reviews:     "260",
+				Salaries:    "506",
+				ReviewsRate: "3.0",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -3017,11 +3023,21 @@ func companies04Shard() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Rust Cloud Service Developer (US)",
+							Title:                "Rust Cloud Service Developer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4043996376/",
 							Date:                 mustDate("2024-10-25"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Cloud Services Developer – Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4307821532/",
+							Location:             "Warsaw, Mazowieckie, Poland",
+							Date:                 mustDate("2025-09-29"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -4101,6 +4117,16 @@ func companies04Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Back-End Developer Delphi / Go",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4303477070/",
+							Location:             "Germany",
+							Date:                 mustDate("2025-09-26"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust: {
@@ -4364,8 +4390,9 @@ func companies04Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "DDNStorage",
-				Verified: false,
+				Login:     "DDNStorage",
+				Followers: "53",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "DataDirect-Networks",
@@ -4433,7 +4460,7 @@ func companies04Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4294004540/",
 							Location:             "India",
-							Date:                 mustDate("2025-09-03"),
+							Date:                 mustDate("2025-09-30", "2025-09-03"),
 							WithSalary:           false,
 							Remote:               true,
 						},
