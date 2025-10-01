@@ -633,6 +633,7 @@ func (c *Controller) trimCompanyAlias(ctx *gin.Context) (result string) {
 	result = strings.TrimSuffix(result, "/:company_alias")
 	result = strings.TrimSuffix(result, "/:company_alias/v1")
 	result = strings.TrimSuffix(result, "/:company_alias/v2")
+	result = strings.TrimSuffix(result, "/:company_alias/v3")
 
 	return result
 }
