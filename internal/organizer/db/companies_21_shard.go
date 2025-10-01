@@ -3965,6 +3965,90 @@ func companies21Shard() []domain.CompanyProfile {
 				// NOP
 			},
 		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "CollX",
+			Website: "https://www.collx.app/",
+			Careers: "https://www.collx.app/career/job-openings",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                80130229,
+				IDs:               nil,
+				Alias:             "collx",
+				Name:              "CollX",
+				Followers:         "2K",
+				Employees:         "11-50",
+				AssociatedMembers: "27",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Elixir Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4306775477/",
+							Location:             "Greater Philadelphia",
+							Date:                 mustDate("2025-09-26"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Scan any trading card to get the value in seconds, and begin building your collection",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
 
 		// Template
 		//{
