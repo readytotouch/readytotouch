@@ -67,15 +67,9 @@ func StreamOrganizersIndexV3(qw422016 *qt422016.Writer,
 		streamorganizersHeaderProfileV3(qw422016, headerProfiles)
 		qw422016.N().S(`
       </div>
-      <button class="hamburger hamburger--spin header__hamburger js-hamburger"
-        type="button"
-        aria-expanded="false"
-        aria-label="Open the menu"
-      >
-        <span class="hamburger__box">
-          <span class="hamburger__inner"></span>
-        </span>
-      </button>
+      `)
+		streamorganizersHamburgerV3(qw422016)
+		qw422016.N().S(`
     `)
 	} else {
 		qw422016.N().S(`

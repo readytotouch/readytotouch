@@ -360,6 +360,29 @@ func (c *Controller) CompanyV1(ctx *gin.Context) {
 }
 
 func (c *Controller) CompanyV2(ctx *gin.Context) {
+	c.company(ctx, template.OrganizersCompanyV2)
+}
+
+func (c *Controller) CompanyV3(ctx *gin.Context) {
+	c.company(ctx, template.OrganizersCompanyV3)
+}
+
+func (c *Controller) company(
+	ctx *gin.Context,
+	render func(
+		organizerFeature domain.OrganizerFeature,
+		headerProfiles []domain.SocialProviderUser,
+		company domain.CompanyProfile,
+		vacancies []domain.PreparedVacancy,
+		ukrainianUniversities []domain.University,
+		czechUniversities []domain.University,
+		favorite bool,
+		userVacancyFavoriteMap map[int64]bool,
+		vacancyMonthlyViewsMap map[int64]int64,
+		stats template.CompanyStats,
+		authQueryParams string,
+	) string,
+) {
 	var (
 		authUserID  = domain.ContextGetUserID(ctx)
 		featurePath = c.trimCompanyAlias(ctx)
@@ -498,7 +521,7 @@ func (c *Controller) CompanyV2(ctx *gin.Context) {
 		return preparedVacancies[i].Date.After(preparedVacancies[j].Date)
 	})
 
-	content := template.OrganizersCompanyV2(
+	content := render(
 		organizerFeature,
 		headerProfiles,
 		company,
@@ -610,6 +633,7 @@ func (c *Controller) trimCompanyAlias(ctx *gin.Context) (result string) {
 	result = strings.TrimSuffix(result, "/:company_alias")
 	result = strings.TrimSuffix(result, "/:company_alias/v1")
 	result = strings.TrimSuffix(result, "/:company_alias/v2")
+	result = strings.TrimSuffix(result, "/:company_alias/v3")
 
 	return result
 }
@@ -1124,6 +1148,7 @@ func (c *Controller) parseFeatureFromReferer(ctx *gin.Context) (dbs.FeatureWait,
 func (c *Controller) organizerFeature(path string) (domain.OrganizerFeature, bool) {
 	path = strings.TrimSuffix(path, "/v1")
 	path = strings.TrimSuffix(path, "/v2")
+	path = strings.TrimSuffix(path, "/v3")
 
 	featurePathMap := map[string]domain.OrganizerFeature{
 		"/golang/companies": {
