@@ -364,7 +364,7 @@ func (c *Controller) CompanyV2(ctx *gin.Context) {
 }
 
 func (c *Controller) CompanyV3(ctx *gin.Context) {
-	c.company(ctx, template.OrganizersCompanyV2)
+	c.company(ctx, template.OrganizersCompanyV3)
 }
 
 func (c *Controller) company(
@@ -1147,6 +1147,7 @@ func (c *Controller) parseFeatureFromReferer(ctx *gin.Context) (dbs.FeatureWait,
 func (c *Controller) organizerFeature(path string) (domain.OrganizerFeature, bool) {
 	path = strings.TrimSuffix(path, "/v1")
 	path = strings.TrimSuffix(path, "/v2")
+	path = strings.TrimSuffix(path, "/v3")
 
 	featurePathMap := map[string]domain.OrganizerFeature{
 		"/golang/companies": {
