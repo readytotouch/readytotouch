@@ -1241,6 +1241,12 @@ func companies04Shard() []domain.CompanyProfile {
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Zipline-EI_IE1394276.11,18.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Zipline-Reviews-E1394276.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Zipline-Jobs-E1394276.htm",
+				Jobs:        "37",
+				Reviews:     "260",
+				Salaries:    "506",
+				ReviewsRate: "3.0",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -4384,8 +4390,9 @@ func companies04Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "DDNStorage",
-				Verified: false,
+				Login:     "DDNStorage",
+				Followers: "53",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "DataDirect-Networks",

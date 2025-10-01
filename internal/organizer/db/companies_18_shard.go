@@ -1545,7 +1545,14 @@ func companies18Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-WPP-Media-EI_IE318409.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/WPP-Media-Reviews-E318409.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/WPP-Media-Jobs-E318409.htm",
+				Jobs:        "1",
+				Reviews:     "3.5K",
+				Salaries:    "6.4K",
+				ReviewsRate: "3.6",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",

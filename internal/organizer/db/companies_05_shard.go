@@ -4655,8 +4655,9 @@ func companies05Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "gravitational",
-				Verified: true,
+				Login:     "gravitational",
+				Followers: "529",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Teleport",

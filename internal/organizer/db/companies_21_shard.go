@@ -4098,8 +4098,9 @@ func companies21Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "fudosecurity",
+				Followers: "5",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -4182,8 +4183,9 @@ func companies21Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "Bayer-Group",
+				Followers: "2.4k",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -4192,7 +4194,14 @@ func companies21Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Bayer-EI_IE4245.11,16.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Bayer-Reviews-E4245.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Bayer-Jobs-E4245.htm",
+				Jobs:        "570",
+				Reviews:     "12K",
+				Salaries:    "20K",
+				ReviewsRate: "3.9",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -4360,7 +4369,14 @@ func companies21Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Knorex-EI_IE653201.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Knorex-Reviews-E653201.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Knorex-Jobs-E653201.htm",
+				Jobs:        "7",
+				Reviews:     "115",
+				Salaries:    "121",
+				ReviewsRate: "3.8",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -4696,7 +4712,14 @@ func companies21Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-DEUNA-EI_IE6942865.11,16.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/DEUNA-Reviews-E6942865.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/DEUNA-Jobs-E6942865.htm",
+				Jobs:        "135",
+				Reviews:     "30",
+				Salaries:    "16",
+				ReviewsRate: "3.4",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
