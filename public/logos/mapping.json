@@ -570,6 +570,11 @@
     "destination": ""
   },
   {
+    "alias": "bayer",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "bbraun-group",
     "source": "",
     "destination": ""
@@ -1350,6 +1355,11 @@
     "destination": ""
   },
   {
+    "alias": "datatroniq",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "datazipio",
     "source": "",
     "destination": ""
@@ -1358,6 +1368,11 @@
     "alias": "ddn",
     "source": "ddn-200x200.jpeg",
     "destination": "ddn.jpeg"
+  },
+  {
+    "alias": "de-una",
+    "source": "",
+    "destination": ""
   },
   {
     "alias": "dealer-tire",
@@ -2690,6 +2705,11 @@
     "destination": ""
   },
   {
+    "alias": "justrelate-group",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "justwatch",
     "source": "",
     "destination": ""
@@ -2756,6 +2776,11 @@
   },
   {
     "alias": "knime",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "knorex",
     "source": "",
     "destination": ""
   },
@@ -4520,6 +4545,11 @@
     "destination": "sectigo.png"
   },
   {
+    "alias": "secureco-usa",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "seedtag",
     "source": "",
     "destination": ""
@@ -5558,6 +5588,11 @@
     "alias": "vercel",
     "source": "vercel-57x57.png",
     "destination": "vercel.png"
+  },
+  {
+    "alias": "vereign",
+    "source": "",
+    "destination": ""
   },
   {
     "alias": "verkada",
