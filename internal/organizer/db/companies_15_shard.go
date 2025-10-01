@@ -1134,6 +1134,16 @@ func companies15Shard() []domain.CompanyProfile {
 							WithSalary:           true, // £55,000—£73,000 GBP
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Software Engineer (Go/AWS)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4307313689/",
+							Location:             "Minneapolis, MN",
+							Date:                 mustDate("2025-10-01"),
+							WithSalary:           true, // $129k/yr - $200k/yr
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust:    {},

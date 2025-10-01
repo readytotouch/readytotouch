@@ -1145,6 +1145,11 @@
     "destination": ""
   },
   {
+    "alias": "collx",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "comcast",
     "source": "",
     "destination": ""
@@ -2045,6 +2050,11 @@
     "destination": ""
   },
   {
+    "alias": "fudosecurity",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "fujitsu",
     "source": "",
     "destination": ""
@@ -2191,8 +2201,8 @@
   },
   {
     "alias": "go-teleport",
-    "source": "",
-    "destination": ""
+    "source": "go-teleport-180x180.png",
+    "destination": "go-teleport.png"
   },
   {
     "alias": "gocardless",

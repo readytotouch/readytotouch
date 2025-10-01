@@ -4111,6 +4111,16 @@ func companies04Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Back-End Developer Delphi / Go",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4303477070/",
+							Location:             "Germany",
+							Date:                 mustDate("2025-09-26"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust: {
