@@ -5701,6 +5701,16 @@ func companies19Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $180k/yr - $440k/yr
 							Remote:               false,
 						},
+						{
+							Title:                "Systems Engineer – Rust/C++",
+							ShortDescription:     "Remote Sandbox Service",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4306851124/",
+							Location:             "Palo Alto, CA",
+							Date:                 mustDate("2025-09-28"),
+							WithSalary:           true, // $180k/yr - $440k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig: {

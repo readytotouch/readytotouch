@@ -2871,7 +2871,7 @@ func companies10Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4295707042/",
 							Location:             "Belfast, Northern Ireland, United Kingdom",
-							Date:                 mustDate("2025-09-05"),
+							Date:                 mustDate("2025-09-27", "2025-09-05"),
 							WithSalary:           false,
 							Remote:               false,
 						},
