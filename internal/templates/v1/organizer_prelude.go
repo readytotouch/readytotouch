@@ -51,6 +51,18 @@ func linkedinConnectionsFormerEmployeesURL(companies []Company) string {
 	return "https://www.linkedin.com/search/results/people/?" + values.Encode()
 }
 
+func linkedinConnectionsCEO(company Company) string {
+	companyQueryParam, _ := json.Marshal(companiesToLinkedInIDs([]Company{company}))
+
+	values := url.Values{
+		"currentCompany": {string(companyQueryParam)},
+		"network":        {`["F","S","O"]`},
+		"keywords":       {`"CEO" OR "Chief Executive Officer" OR "Founder" OR "Co-Founder"`},
+	}
+
+	return "https://www.linkedin.com/search/results/people/?" + values.Encode()
+}
+
 func linkedinEmployeesPostsURL(companies []Company, languageTitle string) string {
 	companyQueryParam, _ := json.Marshal(companiesToLinkedInIDs(companies))
 
@@ -166,6 +178,24 @@ func hostname(s string) string {
 func googleSearch(q string) string {
 	values := url.Values{
 		"q": {q},
+	}
+
+	return "https://www.google.com/search?" + values.Encode()
+}
+
+func googleSearchLayoffsMonth(companyName string) string {
+	values := url.Values{
+		"q":   {companyName + " " + "layoffs"},
+		"tbs": {"qdr:m"}, // month
+	}
+
+	return "https://www.google.com/search?" + values.Encode()
+}
+
+func googleSearchLayoffsYear(companyName string) string {
+	values := url.Values{
+		"q":   {companyName + " " + "layoffs"},
+		"tbs": {"qdr:y"}, // year
 	}
 
 	return "https://www.google.com/search?" + values.Encode()

@@ -90,7 +90,779 @@
     </nav>
   </div>
 
-  <section class="company"></section>
+  <section class="company">
+    <div class="container company__container">
+      <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+          <symbol id="icon-facebook" viewBox="0 0 32 32">
+            <path fill="#4d515c" style="fill: var(--color1, #4d515c)" d="M32 16c0-8.836-7.164-16-16-16s-16 7.164-16 16c0 7.987 5.851 14.605 13.5 15.805v-11.179h-4.063v-4.627h4.063v-3.525c0-4.009 2.389-6.224 6.044-6.224 1.749 0 3.581 0.312 3.581 0.312v3.937h-2.019c-1.988 0-2.608 1.233-2.608 2.5v3h4.437l-0.709 4.625h-3.728v11.18c7.651-1.2 13.501-7.819 13.501-15.805z"></path>
+            <path fill="#fff" style="fill: var(--color2, #fff)" d="M22.228 20.625l0.709-4.625h-4.437v-3c0-1.265 0.62-2.5 2.608-2.5h2.017v-3.937s-1.832-0.312-3.581-0.312c-3.655 0-6.044 2.213-6.044 6.224v3.525h-4.063v4.625h4.063v11.18c0.751 0.124 1.617 0.194 2.5 0.194s1.749-0.071 2.593-0.207l-0.093 0.012v-11.179h3.728z"></path>
+          </symbol>
+          <symbol id="icon-instagram" viewBox="0 0 32 32">
+            <path fill="#4d515c" style="fill: var(--color1, #4d515c)" d="M16 2.88c4.275 0 4.781 0.020 6.463 0.095 1.563 0.069 2.407 0.332 2.968 0.551 0.721 0.27 1.335 0.676 1.838 1.192l0.001 0.001c0.561 0.563 0.907 1.093 1.193 1.837 0.219 0.563 0.48 1.413 0.549 2.969 0.076 1.687 0.093 2.193 0.093 6.463 0 4.275-0.017 4.781-0.093 6.461-0.068 1.563-0.331 2.407-0.549 2.969-0.288 0.744-0.637 1.281-1.193 1.837-0.503 0.518-1.117 0.925-1.805 1.182l-0.034 0.011c-0.561 0.22-1.412 0.481-2.968 0.551-1.688 0.075-2.193 0.093-6.463 0.093-4.275 0-4.781-0.019-6.463-0.093-1.563-0.069-2.407-0.331-2.968-0.551-0.721-0.27-1.335-0.676-1.838-1.192l-0.001-0.001c-0.518-0.503-0.924-1.117-1.182-1.803l-0.011-0.034c-0.219-0.563-0.48-1.413-0.549-2.969-0.076-1.687-0.093-2.193-0.093-6.461 0-4.276 0.017-4.781 0.093-6.463 0.068-1.563 0.331-2.407 0.549-2.969 0.288-0.744 0.637-1.28 1.193-1.837 0.563-0.563 1.093-0.907 1.839-1.193 0.561-0.219 1.412-0.481 2.968-0.551 1.681-0.075 2.187-0.093 6.463-0.093zM16 0c-4.344 0-4.888 0.019-6.593 0.093-1.7 0.076-2.869 0.351-3.881 0.744-1.111 0.424-2.058 1.054-2.836 1.849l-0.001 0.001c-0.795 0.778-1.425 1.723-1.832 2.777l-0.018 0.054c-0.393 1.019-0.668 2.181-0.744 3.881-0.075 1.712-0.093 2.256-0.093 6.6s0.019 4.888 0.093 6.593c0.076 1.7 0.351 2.869 0.744 3.881 0.413 1.056 0.956 1.951 1.851 2.837 0.778 0.793 1.723 1.42 2.777 1.826l0.054 0.018c1.019 0.395 2.181 0.669 3.881 0.744 1.707 0.075 2.251 0.093 6.593 0.093 4.344 0 4.888-0.019 6.595-0.093 1.7-0.075 2.868-0.349 3.88-0.744 1.108-0.423 2.053-1.051 2.831-1.843l0.001-0.001c0.793-0.778 1.42-1.723 1.826-2.777l0.018-0.054c0.393-1.019 0.668-2.181 0.744-3.881 0.075-1.707 0.093-2.251 0.093-6.593 0-4.344-0.019-4.888-0.093-6.595-0.076-1.7-0.351-2.868-0.744-3.88-0.408-1.116-1.033-2.067-1.83-2.842l-0.002-0.002c-0.778-0.793-1.723-1.42-2.777-1.826l-0.054-0.018c-1.019-0.393-2.181-0.671-3.881-0.744-1.712-0.080-2.256-0.1-6.6-0.1z"></path>
+            <path fill="#4d515c" style="fill: var(--color1, #4d515c)" d="M16 7.781c-4.538 0.002-8.217 3.68-8.219 8.219v0c0.002 4.538 3.68 8.217 8.219 8.219h0c4.538-0.002 8.217-3.68 8.219-8.219v-0c-0.002-4.538-3.68-8.217-8.219-8.219h-0zM16 21.331c-2.944-0-5.331-2.387-5.331-5.332s2.387-5.332 5.332-5.332c0 0 0 0 0.001 0h-0c2.945 0 5.331 2.387 5.331 5.332s-2.387 5.332-5.332 5.332c-0 0-0 0-0.001 0h0zM26.463 7.456c0 0.015 0.001 0.033 0.001 0.051 0 1.060-0.86 1.92-1.92 1.92s-1.92-0.86-1.92-1.92c0-0.018 0-0.036 0.001-0.053l-0 0.003c0.028-1.038 0.877-1.869 1.919-1.869s1.891 0.831 1.919 1.867l0 0.003z"></path>
+          </symbol>
+          <symbol id="icon-reddit" viewBox="0 0 32 32">
+            <path fill="#4d515c" style="fill: var(--color1, #4d515c)" d="M16 32c8.836 0 16-7.164 16-16s-7.164-16-16-16-16 7.164-16 16 7.164 16 16 16z"></path>
+            <path fill="#fff" style="fill: var(--color2, #fff)" d="M26.667 16c0-1.291-1.048-2.339-2.339-2.339-0.637 0-1.199 0.243-1.609 0.653-1.591-1.14-3.8-1.889-6.232-1.983l1.067-4.996 3.461 0.729c0.037 0.892 0.768 1.601 1.665 1.601 0.92 0 1.667-0.746 1.667-1.667 0-0.003 0-0.006-0-0.009v0c0-0.917-0.749-1.667-1.667-1.667-0.653 0-1.216 0.376-1.477 0.937l-3.873-0.824c-0.025-0.005-0.055-0.008-0.085-0.008-0.087 0-0.168 0.024-0.238 0.065l0.002-0.001c-0.091 0.061-0.157 0.153-0.186 0.26l-0.001 0.003-1.179 5.576c-2.488 0.075-4.716 0.805-6.325 1.984-0.418-0.4-0.984-0.649-1.608-0.655h-0.001c-1.291 0-2.339 1.048-2.339 2.339 0 0.955 0.561 1.76 1.385 2.133-0.037 0.224-0.056 0.467-0.056 0.711 0 3.593 4.173 6.493 9.337 6.493 5.165 0 9.339-2.9 9.339-6.493 0-0.243-0.020-0.467-0.057-0.692 0.8-0.402 1.341-1.213 1.348-2.151v-0.001zM10.667 17.667c0-0.92 0.748-1.667 1.667-1.667 0.916 0 1.664 0.748 1.664 1.667 0 0.916-0.748 1.664-1.665 1.664s-1.665-0.748-1.665-1.665zM19.967 22.063c-1.141 1.143-3.312 1.217-3.948 1.217s-2.827-0.093-3.948-1.217c-0.078-0.079-0.126-0.188-0.126-0.309s0.048-0.229 0.127-0.309l-0 0c0.079-0.078 0.188-0.126 0.309-0.126s0.229 0.048 0.309 0.127l-0-0c0.711 0.712 2.245 0.973 3.349 0.973s2.62-0.263 3.349-0.973c0.079-0.079 0.189-0.127 0.309-0.127s0.23 0.049 0.309 0.127l-0-0c0.059 0.079 0.094 0.178 0.094 0.286 0 0.129-0.051 0.246-0.133 0.332l0-0zM19.668 19.331c-0.917 0-1.667-0.748-1.667-1.665s0.749-1.665 1.667-1.665 1.665 0.748 1.665 1.667c0 0.916-0.748 1.664-1.667 1.664z"></path>
+          </symbol>
+          <symbol id="icon-twitter_x" viewBox="0 0 32 32">
+            <path fill="#4d515c" style="fill: var(--color1, #4d515c)" d="M24.435 2.539h4.499l-9.827 11.231 11.56 15.284h-9.052l-7.089-9.269-8.112 9.269h-4.501l10.511-12.013-11.089-14.501h9.281l6.408 8.472 7.413-8.472zM22.856 26.36h2.493l-16.089-21.271h-2.673l16.269 21.271z"></path>
+          </symbol>
+        </defs>
+      </svg>
+
+      <div class="company-card">
+        <aside class="company-card__action">
+          {% if favorite %}
+            <button class="js-company-favorite favorite company-card__action-button button-group__item in-favorite" title="Remove from favorites">
+              <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" class="favorite__icon" viewBox="0 0 28 28">
+                <path
+                  d="m14.5 22.1-.5-.3-.5.3-6.8 4.2c-.5.3-1.1-.1-.9-.7L7.5 18l.1-.6-.4-.4-5.9-5.2c-.3-.3-.3-.6-.2-.8.1-.2.3-.4.5-.4l7.9-.7.6-.1.2-.6 2.9-7.4c.2-.5 1-.5 1.2 0l3.1 7.3.2.5.6.1 7.9.7c.2 0 .4.2.5.5.1.3 0 .6-.2.7l-5.9 5.2-.4.4.1.6 1.8 7.7c.1.3 0 .5-.2.6-.2.1-.5.2-.8 0l-6.6-4z"
+                />
+              </svg>
+            </button>
+          {% else %}
+            <button class="js-company-favorite favorite company-card__action-button button-group__item" title="Add to favorite">
+              <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" class="favorite__icon" viewBox="0 0 28 28">
+                <path
+                  d="m14.5 22.1-.5-.3-.5.3-6.8 4.2c-.5.3-1.1-.1-.9-.7L7.5 18l.1-.6-.4-.4-5.9-5.2c-.3-.3-.3-.6-.2-.8.1-.2.3-.4.5-.4l7.9-.7.6-.1.2-.6 2.9-7.4c.2-.5 1-.5 1.2 0l3.1 7.3.2.5.6.1 7.9.7c.2 0 .4.2.5.5.1.3 0 .6-.2.7l-5.9 5.2-.4.4.1.6 1.8 7.7c.1.3 0 .5-.2.6-.2.1-.5.2-.8 0l-6.6-4z"
+                />
+              </svg>
+            </button>
+          {% endif %}
+          {% comment %}
+            <a href="{%s organizerFeature.Path %}/{%s company.LinkedInProfile.Alias %}" class="button-group__item" title="View statistics">
+              <img width="20" height="20" alt="icon stats" src="/assets/images/pages/common/stats.svg" />
+            </a>
+          {% endcomment %}
+        </aside>
+        <figure class="company-card__header">
+          <div class="company-card__logo-overlay">
+            {% if false %}
+              <!-- TODO square logo -->
+              <img class="company-card__logo"
+                   alt="{%s company.LinkedInProfile.Alias %} logo"
+                   src="/assets/images/pages/organizer/logos/google.svg"
+              />
+            {% endif %}
+          </div>
+          <figcaption class="company-card__header-caption">
+            <h1 class="company-card__headline vacancy__link">{%s company.Name %}</h1>
+            <p class="company-card__header-caption-text">
+              <img class="company-card__header-caption-icon"
+                   alt="marker"
+                   width="12"
+                   height="12"
+                   src="/assets/images/pages/organizer/marker.svg"
+              >Country, City (Full Remote) <!-- TODO -->
+            </p>
+            <p class="company-card__header-caption-text">
+              <img class="company-card__header-caption-icon"
+                   alt="briefcase"
+                   width="12"
+                   height="12"
+                   src="/assets/images/pages/organizer/briefcase.svg"
+              >Latest job posting: 12/31/2024 <!-- TODO -->
+            </p>
+          </figcaption>
+        </figure>
+        <div class="company-card__top-links">
+          <a href="{%s company.Website %}" target="_blank" class="company-card__top-link button-link">Website</a>
+          {% if company.Careers == "" %}
+            <span class="company-card__top-link button-link disabled">Careers</span>
+          {% else %}
+            <a href="{%s company.Careers %}" target="_blank" class="company-card__top-link button-link">Careers</a>
+          {% endif %}
+          {% if company.About == "" %}
+            <span class="company-card__top-link button-link disabled">About</span>
+          {% else %}
+            <a href="{%s company.About %}" target="_blank" class="company-card__top-link button-link">About</a>
+          {% endif %}
+          {% if company.Blog == "" %}
+            <span class="company-card__top-link button-link disabled">Dev Blog</span>
+          {% else %}
+            <a href="{%s company.Blog %}" target="_blank" class="company-card__top-link button-link">Dev Blog</a>
+          {% endif %}
+          {% if company.ReferralProgram == "" %}
+            <span class="company-card__top-link button-link disabled">Referral program</span>
+          {% else %}
+            <a href="{%s company.ReferralProgram %}" target="_blank" class="company-card__top-link button-link">Referral program</a>
+          {% endif %}
+        </div>
+        <!-- TODO company-card__stacks -->
+        <div class="company-card__info">
+          <figure class="company-card__figure">
+            <img
+              class="company-card__icon"
+              alt="card type icon"
+              width="16"
+              height="16"
+              src="/assets/images/pages/vacancy/building.svg"
+            />
+            <figcaption class="company-card__figcaption">{%s companyTypeName[company.Type] %}</figcaption>
+          </figure>
+          <figure class="company-card__figure">
+            <img
+              class="company-card__icon"
+              alt="card type icon"
+              width="16"
+              height="16"
+              src="/assets/images/pages/vacancy/company-type.svg"
+            />
+            <figcaption class="company-card__figcaption">{%s industryNames(company.Industries) %}</figcaption>
+          </figure>
+          {% comment %}
+          <!-- TODO Clouds -->
+          <figure class="company-card__figure">
+            <img
+              class="company-card__icon"
+              alt="card hosting icon"
+              width="16"
+              height="16"
+              src="/assets/images/pages/organizer/clouds.svg"
+            />
+            <figcaption class="company-card__figcaption card__figcaption--images">
+              <img
+                alt="Azure icon"
+                width="20"
+                height="20"
+                src="/assets/images/pages/common/azure.svg"
+              />
+              <img
+                alt="AWS icon"
+                width="20"
+                height="20"
+                src="/assets/images/pages/common/amazon-web-services.svg"
+              />
+              <img
+                alt="GCP icon"
+                width="20"
+                height="20"
+                src="/assets/images/pages/common/googlecloud.svg"
+              />
+            </figcaption>
+          </figure>
+          {% endcomment %}
+        </div>
+        <div class="company-card__info-group">
+          <div class="company-card__info-group-content">
+            <p class="company-card__text">{%s company.ShortDescription %}</p>
+          </div>
+        </div>
+        <div class="company-card__social">
+          <p class="company-card__social-text">Social media:</p>
+          <div class="company-card__social-links">
+            <a href="javascript:void(0);"
+               class="company-card__social-link company-card__social-link--disabled"
+            >
+              <svg class="company-card__social-image">
+                <use xlink:href="#icon-instagram"></use>
+              </svg>
+            </a>
+            <a href="javascript:void(0);"
+               class="company-card__social-link company-card__social-link--disabled"
+            >
+              <svg class="company-card__social-image">
+                <use xlink:href="#icon-reddit"></use>
+              </svg>
+            </a>
+            <a href="javascript:void(0);"
+               class="company-card__social-link company-card__social-link--disabled"
+            >
+              <svg class="company-card__social-image">
+                <use xlink:href="#icon-twitter_x"></use>
+              </svg>
+            </a>
+            <a href="javascript:void(0);"
+               class="company-card__social-link company-card__social-link--disabled"
+            >
+              <svg class="company-card__social-image">
+                <use xlink:href="#icon-facebook"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="company-grid">
+        <div class="company-grid__item">
+          <ul class="company-grid__links-group">
+            <li class="company-grid__links-item company-grid__links-item--title">
+              <div class="company-grid__links-item-group">
+                <img
+                  class="company-grid__links-icon"
+                  alt="linkedin icon"
+                  width="32"
+                  height="32"
+                  src="/assets/images/pages/organizer/linkedin.svg"
+                />
+                <a href="https://www.linkedin.com/company/{%s company.LinkedInProfile.Alias %}/" target="_blank" class="company-grid__links-link">LinkedIn</a>
+                {% if company.LinkedInProfile.Verified %}
+                <a href="https://www.linkedin.com/company/{%s company.LinkedInProfile.Alias %}/about" target="_blank" class="company-grid__links-link company-grid__links-link--verify">
+                  <img
+                    class="company-grid__links-icon"
+                    alt="icon"
+                    src="/assets/images/pages/organizer/verified-icon.png"
+                  />
+                </a>
+                {% endif %}
+              </div>
+              <ul class="company-grid__links-item-info">
+                <li class="company-grid__link-stats-item">{%s formatLinkedInFollowers(company.LinkedInProfile.Followers) %} followers</li>
+                <li class="company-grid__link-stats-item">{%s formatLinkedInEmployees(company.LinkedInProfile.Employees) %} employees</li>
+                <li class="company-grid__link-stats-item">{%s formatLinkedInAssociatedMembers(company.LinkedInProfile.AssociatedMembers) %} associated members</li>
+              </ul>
+            </li>
+            <li class="company-grid__links-item">
+              <a href="https://www.linkedin.com/company/{%s company.LinkedInProfile.Alias %}/" target="_blank" class="button-link company-grid__links-link">Overview</a>
+            </li>
+            <li class="company-grid__links-item">
+              <a href="{%s linkedinConnectionsCEO(company) %}" target="_blank" class="button-link company-grid__links-link">CEO</a>
+            </li>
+            <li class="company-grid__links-item company-grid__links-item--inner">
+              <p class="company-grid__links-item-text">Connections (employees):</p>
+              <ul class="company-grid__links-group-inner">
+                <li class="company-grid__links-item">
+                  <a href="{%s linkedinConnectionsURL([]Company{company}, nil) %}" target="_blank" class="button-link company-grid__links-link">Global</a>
+                  <img
+                    class="company-grid__links-icon"
+                    alt="language icon"
+                    width="20"
+                    height="20"
+                    src="/assets/images/pages/organizer/language.svg"
+                  />
+                </li>
+                <li class="company-grid__links-item">
+                  <a href="{%s linkedinConnectionsURL([]Company{company}, ukrainianUniversities) %}" target="_blank" class="button-link company-grid__links-link">UA</a>
+                  <img
+                    class="company-grid__links-icon"
+                    alt="language icon"
+                    width="20"
+                    height="20"
+                    src="/assets/images/pages/common/flags/4x3/ua.svg"
+                  />
+                </li>
+                <li class="company-grid__links-item">
+                  <a href="{%s linkedinConnectionsURL([]Company{company}, czechUniversities) %}" target="_blank" class="button-link company-grid__links-link">CZ</a>
+                  <img
+                    class="company-grid__links-icon"
+                    alt="language icon"
+                    width="20"
+                    height="20"
+                    src="/assets/images/pages/common/flags/4x3/cz.svg"
+                  />
+                </li>
+                <li class="company-grid__links-item">
+                  <a href="{%s linkedinConnectionsFormerEmployeesURL([]Company{company}) %}" target="_blank" class="button-link company-grid__links-link">Former (All)</a>
+                </li>
+              </ul>
+            </li>
+            <li class="company-grid__links-item">
+              <a href="{%s linkedinEmployeesPostsURL([]Company{company}, organizerFeature.Organizer.Title) %}" target="_blank" class="button-link company-grid__links-link">Employees' posts</a>
+            </li>
+            <li class="company-grid__links-item">
+              <a href="{%s linkedinJobsURL([]Company{company}, string(organizerFeature.Organizer.LanguageTitleKeywords)) %}" target="_blank" class="button-link company-grid__links-link">Jobs</a>
+            </li>
+          </ul>
+        </div>
+        <div class="company-grid__item">
+          <ul class="company-grid__links-group">
+            {% if company.GitHubProfile.Login == "" %}
+            <li class="company-grid__links-item company-grid__links-item--title company-grid__links-item--disabled">
+              <div class="company-grid__links-item-group">
+                <img
+                  class="company-grid__links-icon"
+                  alt="GitHub icon"
+                  width="32"
+                  height="32"
+                  src="/assets/images/pages/organizer/github.svg"
+                />
+                <span class="company-grid__links-link">GitHub</span>
+              </div>
+            </li>
+            <li class="company-grid__links-item company-grid__links-item--disabled">
+              <span class="button-link company-grid__links-link">Overview</span>
+              <a href="{%s googleSearchGitHub(company.Name) %}" target="_blank" class="company-grid__links-link company-grid__links-link--google">
+                <img class="company-grid__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+              </a>
+            </li>
+            <li class="company-grid__links-item company-grid__links-item--disabled">
+              <span class="button-link company-grid__links-link">Repositories (?)</span>
+            </li>
+            <li class="company-grid__links-item company-grid__links-item--disabled">
+              <span class="button-link company-grid__links-link">Followers (?)</span>
+            </li>
+            {% else %}
+            <li class="company-grid__links-item company-grid__links-item--title">
+              <div class="company-grid__links-item-group">
+                <img
+                  class="company-grid__links-icon"
+                  alt="GitHub icon"
+                  width="32"
+                  height="32"
+                  src="/assets/images/pages/organizer/github.svg"
+                />
+                {% if company.GitHubProfile.Verified %}
+                <span class="company-grid__links-link company-grid__links-link--verify">
+                  <img
+                    class="company-grid__links-icon"
+                    alt="GitHub verified icon"
+                    src="/assets/images/pages/organizer/verified.png"
+                  />
+                </span>
+                {% endif %}
+                <a href="https://github.com/{%s company.GitHubProfile.Login %}" target="_blank" class="company-grid__links-link">GitHub</a>
+              </div>
+            </li>
+            <li class="company-grid__links-item">
+              <a href="https://github.com/{%s company.GitHubProfile.Login %}" target="_blank" class="button-link company-grid__links-link">Overview</a>
+            </li>
+            <li class="company-grid__links-item">
+              <a href="https://github.com/orgs/{%s company.GitHubProfile.Login %}/repositories?q=lang:{%s organizerFeature.Organizer.GitHubAlias %}" target="_blank" class="button-link company-grid__links-link">Repositories ({%d fetchGitHubRepositoriesCount(company, organizerFeature.Organizer.Language) %})</a>
+            </li>
+            <li class="company-grid__links-item">
+              <a href="https://github.com/orgs/{%s company.GitHubProfile.Login %}/followers" target="_blank" class="button-link company-grid__links-link">Followers ({%s fetchGitHubFollowers(company) %})</a>
+            </li>
+            {% endif %}
+          </ul>
+        </div>
+        <div class="company-grid__item">
+          <ul class="company-grid__links-group">
+            {% if company.BlindProfile.Alias == "" %}
+            <li class="company-grid__links-item company-grid__links-item--title company-grid__links-item--disabled">
+              <div class="company-grid__links-item-group">
+                <img
+                  class="company-grid__links-icon"
+                  alt="blind icon"
+                  width="32"
+                  height="32"
+                  src="/assets/images/pages/organizer/blind.png"
+                />
+                <span class="company-grid__links-link">Blind</span>
+              </div>
+              <ul class="company-grid__links-item-info">
+                <li class="company-grid__link-stats-item">??? employees</li>
+                <li class="company-grid__link-stats-item">$??K ~ $???K a year</li>
+                <li class="company-grid__link-stats-item">??? reviews</li>
+              </ul>
+            </li>
+            <li class="company-grid__links-item company-grid__links-item--disabled">
+              <span class="button-link company-grid__links-link">Overview</span>
+              <a href="{%s googleSearchBlind(company.Name) %}" target="_blank" class="company-grid__links-link company-grid__links-link--google">
+                <img class="company-grid__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+              </a>
+            </li>
+            <li class="company-grid__links-item company-grid__links-item--disabled">
+              <span class="button-link company-grid__links-link">Reviews</span>
+              <span class="company-grid__links-link-star">⭐ ?.?</span>
+            </li>
+            {% else %}
+            <li class="company-grid__links-item company-grid__links-item--title">
+              <div class="company-grid__links-item-group">
+                <img
+                  class="company-grid__links-icon"
+                  alt="blind icon"
+                  width="32"
+                  height="32"
+                  src="/assets/images/pages/organizer/blind.png"
+                />
+                <a href="https://www.teamblind.com/company/{%s company.BlindProfile.Alias %}" target="_blank" class="company-grid__links-link">Blind</a>
+              </div>
+              <ul class="company-grid__links-item-info">
+                <li class="company-grid__link-stats-item">{%s formatBlindEmployees(company.BlindProfile.Employees) %} employees</li>
+                <li class="company-grid__link-stats-item">{%s formatBlindSalary(company.BlindProfile.Salary) %}</li>
+                <li class="company-grid__link-stats-item">{%s formatBlindReviews(company.BlindProfile.Reviews) %} reviews</li>
+              </ul>
+            </li>
+            <li class="company-grid__links-item">
+              <a href="https://www.teamblind.com/company/{%s company.BlindProfile.Alias %}" target="_blank" class="button-link company-grid__links-link">Overview</a>
+            </li>
+            <li class="company-grid__links-item">
+              <a href="https://www.teamblind.com/company/{%s company.BlindProfile.Alias %}/reviews" target="_blank" class="button-link company-grid__links-link">Reviews</a>
+              <span class="company-grid__links-link-star">⭐ {%s company.BlindProfile.ReviewsRate %}</span>
+            </li>
+            {% endif %}
+          </ul>
+        </div>
+        <div class="company-grid__item">
+          <ul class="company-grid__links-group">
+            {% if company.LevelsFyiProfile.Alias == "" %}
+            <li class="company-grid__links-item company-grid__links-item--title company-grid__links-item--disabled">
+              <div class="company-grid__links-item-group">
+                <img
+                  class="company-grid__links-icon"
+                  alt="levels.fyi icon"
+                  width="32"
+                  height="32"
+                  src="/assets/images/pages/organizer/levels.png"
+                />
+                <span class="company-grid__links-link">Levels.fyi</span>
+              </div>
+              <ul class="company-grid__links-item-info">
+                <li class="company-grid__link-stats-item">??? employees</li>
+              </ul>
+            </li>
+            <li class="company-grid__links-item company-grid__links-item--disabled">
+              <span class="button-link company-grid__links-link">Overview</span>
+              <a href="{%s googleSearchLevelsFyi(company.Name) %}" target="_blank" class="company-grid__links-link company-grid__links-link--google">
+                <img class="company-grid__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+              </a>
+            </li>
+            <li class="company-grid__links-item company-grid__links-item--disabled">
+              <span class="button-link company-grid__links-link">Jobs</span>
+            </li>
+            {% else %}
+            <li class="company-grid__links-item company-grid__links-item--title">
+              <div class="company-grid__links-item-group">
+                <img
+                  class="company-grid__links-icon"
+                  alt="levels.fyi icon"
+                  width="32"
+                  height="32"
+                  src="/assets/images/pages/organizer/levels.png"
+                />
+                <a href="https://www.levels.fyi/companies/{%s company.LevelsFyiProfile.Alias %}" target="_blank" class="company-grid__links-link">Levels.fyi</a>
+              </div>
+              <ul class="company-grid__links-item-info">
+                <li class="company-grid__link-stats-item">{%s formatLevelsFyiEmployees(company.LevelsFyiProfile.Employees) %} employees</li>
+              </ul>
+            </li>
+            <li class="company-grid__links-item">
+              <a href="https://www.levels.fyi/companies/{%s company.LevelsFyiProfile.Alias %}" target="_blank" class="button-link company-grid__links-link">Overview</a>
+            </li>
+            <li class="company-grid__links-item">
+              <a href="https://www.levels.fyi/companies/{%s company.LevelsFyiProfile.Alias %}/jobs" target="_blank" class="button-link company-grid__links-link">Jobs</a>
+            </li>
+            {% endif %}
+          </ul>
+        </div>
+        <div class="company-grid__item">
+          <ul class="company-grid__links-group">
+            {% if company.GlassdoorProfile.OverviewURL == "" %}
+            <li class="company-grid__links-item company-grid__links-item--title company-grid__links-item--disabled">
+              <div class="company-grid__links-item-group">
+                <img
+                  class="company-grid__links-icon"
+                  alt="glassdoor icon"
+                  width="32"
+                  height="32"
+                  src="/assets/images/pages/organizer/glassdoor.svg"
+                />
+                <span class="company-grid__links-link">Glassdoor</span>
+              </div>
+              <ul class="company-grid__links-item-info">
+                <li class="company-grid__link-stats-item company-grid__link-stats-item--one-line">
+                  <span>
+                    <strong>???</strong> jobs
+                  </span>
+                  <span>
+                    <strong>???</strong> reviews
+                  </span>
+                  <span>
+                    <strong>???</strong> salaries
+                  </span>
+                </li>
+              </ul>
+            </li>
+            <li class="company-grid__links-item company-grid__links-item--disabled">
+              <span class="button-link company-grid__links-link">Overview</span>
+              <a href="{%s googleSearchGlassdoor(company.Name) %}" target="_blank" class="company-grid__links-link company-grid__links-link--google">
+                <img class="company-grid__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+              </a>
+            </li>
+            <li class="company-grid__links-item company-grid__links-item--disabled">
+              <span class="button-link company-grid__links-link">Reviews</span>
+              <span class="company-grid__links-link-star">?.? ★</span>
+            </li>
+            <li class="company-grid__links-item company-grid__links-item--disabled">
+              <span class="button-link company-grid__links-link">Jobs</span>
+            </li>
+            {% else %}
+            <li class="company-grid__links-item company-grid__links-item--title">
+              <div class="company-grid__links-item-group">
+                <img
+                  class="company-grid__links-icon"
+                  alt="glassdoor icon"
+                  width="32"
+                  height="32"
+                  src="/assets/images/pages/organizer/glassdoor.svg"
+                />
+                <a href="{%s company.GlassdoorProfile.OverviewURL %}" target="_blank" class="company-grid__links-link">Glassdoor</a>
+                {% if company.GlassdoorProfile.Verified %}
+                <span class="company-grid__links-link company-grid__links-link--verify">
+                  <img
+                    class="company-grid__links-icon"
+                    alt="icon"
+                    src="/assets/images/pages/organizer/verified-emp.png"
+                  />
+                </span>
+                {% endif %}
+              </div>
+              <ul class="company-grid__links-item-info">
+                <li class="company-grid__link-stats-item company-grid__link-stats-item--one-line">
+                  <span>
+                    <strong>{%s formatGlassdoorJobs(company.GlassdoorProfile.Jobs) %}</strong> jobs
+                  </span>
+                  <span>
+                    <strong>{%s formatGlassdoorReviews(company.GlassdoorProfile.Reviews) %}</strong> reviews
+                  </span>
+                  <span>
+                    <strong>{%s formatGlassdoorSalaries(company.GlassdoorProfile.Salaries) %}</strong> salaries
+                  </span>
+                </li>
+              </ul>
+            </li>
+            <li class="company-grid__links-item">
+              <a href="{%s company.GlassdoorProfile.OverviewURL %}" target="_blank" class="button-link company-grid__links-link">Overview</a>
+            </li>
+            <li class="company-grid__links-item">
+              <a href="{%s company.GlassdoorProfile.ReviewsURL %}" target="_blank" class="button-link company-grid__links-link">Reviews</a>
+              <span class="company-grid__links-link-star">{%s formatGlassdoorReviewsRate(company.GlassdoorProfile.ReviewsRate) %} ★</span>
+            </li>
+            <li class="company-grid__links-item">
+              <a href="{%s company.GlassdoorProfile.JobsURL %}" target="_blank" class="button-link company-grid__links-link">Jobs</a>
+            </li>
+            {% endif %}
+          </ul>
+        </div>
+        <div class="company-grid__item">
+          <ul class="company-grid__links-group">
+            {% if company.IndeedProfile.Alias == "" %}
+            <li class="company-grid__links-item company-grid__links-item--title company-grid__links-item--disabled">
+              <div class="company-grid__links-item-group">
+                <img
+                  class="company-grid__links-icon"
+                  alt="indeed icon"
+                  width="32"
+                  height="32"
+                  src="/assets/images/pages/organizer/indeed.png"
+                />
+                <span class="company-grid__links-link">Indeed</span>
+              </div>
+            </li>
+            <li class="company-grid__links-item company-grid__links-item--disabled">
+              <span class="button-link company-grid__links-link">Overview</span>
+              <a href="{%s googleSearchIndeed(company.Name) %}" target="_blank" class="company-grid__links-link company-grid__links-link--google">
+                <img class="company-grid__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+              </a>
+            </li>
+            <li class="company-grid__links-item company-grid__links-item--disabled">
+              <span class="button-link company-grid__links-link">Jobs</span>
+            </li>
+            {% else %}
+            <li class="company-grid__links-item company-grid__links-item--title">
+              <div class="company-grid__links-item-group">
+                <img
+                  class="company-grid__links-icon"
+                  alt="indeed icon"
+                  width="32"
+                  height="32"
+                  src="/assets/images/pages/organizer/indeed.png"
+                />
+                <a href="https://www.indeed.com/cmp/{%s company.IndeedProfile.Alias %}" target="_blank" class="company-grid__links-link">Indeed</a>
+              </div>
+            </li>
+            <li class="company-grid__links-item">
+              <a href="https://www.indeed.com/cmp/{%s company.IndeedProfile.Alias %}" target="_blank" class="button-link company-grid__links-link">Overview</a>
+            </li>
+            <li class="company-grid__links-item">
+              <a href="https://www.indeed.com/cmp/{%s company.IndeedProfile.Alias %}/jobs" target="_blank" class="button-link company-grid__links-link">Jobs</a>
+            </li>
+            {% endif %}
+          </ul>
+        </div>
+        <div class="company-grid__item">
+          <ul class="company-grid__links-group">
+            <li class="company-grid__links-item company-grid__links-item--title">
+              <div class="company-grid__links-item-group">
+                <img
+                  class="company-grid__links-icon"
+                  alt="investors icon"
+                  width="32"
+                  height="32"
+                  src="/assets/images/pages/organizer/investors.svg"
+                />
+                <span class="company-grid__links-link">Investors</span>
+              </div>
+            </li>
+            {% if company.DealroomURL == "" %}
+            <li class="company-grid__links-item company-grid__links-item--disabled">
+              <img class="company-grid__links-icon" alt="Dealroom icon" width="20" height="20" src="/assets/images/pages/organizer/dealroom.png" />
+              <span class="button-link company-grid__links-link">Dealroom</span>
+              <a href="{%s googleSearchDealroom(company.Name) %}" target="_blank" class="company-grid__links-link company-grid__links-link--google">
+                <img class="company-grid__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+              </a>
+            </li>
+            {% else %}
+            <li class="company-grid__links-item">
+              <img class="company-grid__links-icon" alt="Dealroom icon" width="20" height="20" src="/assets/images/pages/organizer/dealroom.png" />
+              <a href="{%s company.DealroomURL %}" target="_blank" class="button-link company-grid__links-link">Dealroom</a>
+            </li>
+            {% endif %}
+            {% if company.CrunchbaseURL == "" %}
+            <li class="company-grid__links-item company-grid__links-item--disabled">
+              <img class="company-grid__links-icon" alt="Crunchbase icon" width="20" height="20" src="/assets/images/pages/organizer/crunchbase.svg" />
+              <span class="button-link company-grid__links-link">Crunchbase</span>
+              <a href="{%s googleSearchCrunchbase(company.Name) %}" target="_blank" class="company-grid__links-link company-grid__links-link--google">
+                <img class="company-grid__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+              </a>
+            </li>
+            {% else %}
+            <li class="company-grid__links-item">
+              <img class="company-grid__links-icon" alt="Crunchbase icon" width="20" height="20" src="/assets/images/pages/organizer/crunchbase.svg" />
+              <a href="{%s company.CrunchbaseURL %}" target="_blank" class="button-link company-grid__links-link">Crunchbase</a>
+            </li>
+            {% endif %}
+            {% if company.PitchbookURL == "" %}
+            <li class="company-grid__links-item company-grid__links-item--disabled">
+              <img class="company-grid__links-icon" alt="Pitchbook icon" width="20" height="20" src="/assets/images/pages/organizer/pitchbook.png" />
+              <span class="button-link company-grid__links-link">Pitchbook</span>
+              <a href="{%s googleSearchPitchbook(company.Name) %}" target="_blank" class="company-grid__links-link company-grid__links-link--google">
+                <img class="company-grid__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+              </a>
+            </li>
+            {% else %}
+            <li class="company-grid__links-item">
+              <img class="company-grid__links-icon" alt="Pitchbook icon" width="20" height="20" src="/assets/images/pages/organizer/pitchbook.png" />
+              <a href="{%s company.PitchbookURL %}" target="_blank" class="button-link company-grid__links-link">Pitchbook</a>
+            </li>
+            {% endif %}
+          </ul>
+        </div>
+        <div class="company-grid__item">
+          <ul class="company-grid__links-group">
+            <li class="company-grid__links-item company-grid__links-item--title">
+              <div class="company-grid__links-item-group">
+                <img
+                  class="company-grid__links-icon"
+                  alt="market icon"
+                  width="32"
+                  height="32"
+                  src="/assets/images/pages/organizer/query_stats.svg"
+                />
+                <span class="company-grid__links-link">Market</span>
+              </div>
+            </li>
+            {% if company.YahooFinanceURL == "" %}
+            <li class="company-grid__links-item company-grid__links-item--disabled">
+              <img class="company-grid__links-icon" alt="Yahoo Finance icon" width="20" height="20" src="/assets/images/pages/organizer/yahoo.png" />
+              <span class="button-link company-grid__links-link">Yahoo Finance</span>
+              <a href="{%s googleSearchYahooFinance(company.Name) %}" target="_blank" class="company-grid__links-link company-grid__links-link--google">
+                <img class="company-grid__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+              </a>
+            </li>
+            {% else %}
+            <li class="company-grid__links-item">
+              <img class="company-grid__links-icon" alt="Yahoo Finance icon" width="20" height="20" src="/assets/images/pages/organizer/yahoo.png" />
+              <a href="{%s company.YahooFinanceURL %}" target="_blank" class="button-link company-grid__links-link">Yahoo Finance</a>
+            </li>
+            {% endif %}
+            {% if company.GoogleFinanceURL == "" %}
+            <li class="company-grid__links-item company-grid__links-item--disabled">
+              <img class="company-grid__links-icon" alt="Google Finance icon" width="20" height="20" src="/assets/images/pages/organizer/google-fin.png" />
+              <span class="button-link company-grid__links-link">Google Finance</span>
+              <a href="{%s googleSearchGoogleFinance(company.Name) %}" target="_blank" class="company-grid__links-link company-grid__links-link--google">
+                <img class="company-grid__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+              </a>
+            </li>
+            {% else %}
+            <li class="company-grid__links-item">
+              <img class="company-grid__links-icon" alt="Google Finance icon" width="20" height="20" src="/assets/images/pages/organizer/google-fin.png" />
+              <a href="{%s company.GoogleFinanceURL %}" target="_blank" class="button-link company-grid__links-link">Google Finance</a>
+            </li>
+            {% endif %}
+          </ul>
+        </div>
+        <div class="company-grid__item">
+          <ul class="company-grid__links-group company-grid__links-group--unbordered">
+            <li class="company-grid__links-item company-grid__links-item--title">
+              <div class="company-grid__links-item-group">
+                <span class="company-grid__links-link">Other links</span>
+              </div>
+            </li>
+            <li class="company-grid__links-item">
+              <img
+                class="company-grid__links-icon"
+                alt="whois icon"
+                width="20"
+                height="20"
+                src="/assets/images/pages/organizer/whois.svg"
+              />
+              <a href="{%s whoisURL(company.Website) %}" target="_blank" class="button-link company-grid__links-link">Whois</a>
+            </li>
+            <li class="company-grid__links-item">
+              <img
+                class="company-grid__links-icon"
+                alt="similarweb icon"
+                width="20"
+                height="20"
+                src="/assets/images/pages/organizer/similarweb.svg"
+              />
+              <a href="{%s similarwebURL(company.Website) %}" target="_blank" class="button-link company-grid__links-link">Similarweb</a>
+            </li>
+            {% if company.OttaProfileSlug == "" %}
+            <li class="company-grid__links-item company-grid__links-item--disabled">
+              <img class="company-grid__links-icon" alt="otta icon" width="20" height="20" src="/assets/images/pages/organizer/otta.svg" />
+              <span class="button-link company-grid__links-link">Otta</span>
+              <a href="{%s googleSearchOtta(company.Name) %}" target="_blank" class="company-grid__links-link company-grid__links-link--google">
+                <img class="company-grid__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+              </a>
+            </li>
+            {% else %}
+            <li class="company-grid__links-item">
+              <img class="company-grid__links-icon" alt="otta icon" width="20" height="20" src="/assets/images/pages/organizer/otta.svg" />
+              <a href="https://app.otta.com/companies/{%s company.OttaProfileSlug %}" target="_blank" class="button-link company-grid__links-link">Otta</a>
+            </li>
+            {% endif %}
+            {% if true %}
+            <li class="company-grid__links-item company-grid__links-item--disabled">
+              <img class="company-grid__links-icon" alt="xing icon" width="20" height="20" src="/assets/images/pages/organizer/xing.svg" />
+              <span class="button-link company-grid__links-link">XING</span>
+              <a href="{%s googleSearchXing(company.Name) %}" target="_blank" class="company-grid__links-link company-grid__links-link--google">
+                <img class="company-grid__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+              </a>
+            </li>
+            {% else %}
+            <li class="company-grid__links-item">
+              <img class="company-grid__links-icon" alt="xing icon" width="20" height="20" src="/assets/images/pages/organizer/xing.svg" />
+              <a href="javascript:void(0);" target="_blank" class="button-link company-grid__links-link">XING</a>
+            </li>
+            {% endif %}
+            {% if company.YCombinatorURL == "" %}
+            <li class="company-grid__links-item company-grid__links-item--disabled">
+              <img class="company-grid__links-icon" alt="ycombinator icon" width="20" height="20" src="/assets/images/pages/organizer/y-combinator.png" />
+              <span class="button-link company-grid__links-link">Y Combinator</span>
+              <a href="{%s googleSearchYCombinator(company.Name) %}" target="_blank" class="company-grid__links-link company-grid__links-link--google">
+                <img class="company-grid__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+              </a>
+            </li>
+            {% else %}
+            <li class="company-grid__links-item">
+              <img class="company-grid__links-icon" alt="ycombinator icon" width="20" height="20" src="/assets/images/pages/organizer/y-combinator.png" />
+              <a href="{%s company.YCombinatorURL %}" target="_blank" class="button-link company-grid__links-link">Y Combinator</a>
+            </li>
+            {% endif %}
+          </ul>
+        </div>
+        <div class="company-grid__item">
+          <ul class="company-grid__links-group company-grid__links-group--unbordered">
+            <li class="company-grid__links-item company-grid__links-item--title">
+              <div class="company-grid__links-item-group">
+                <span class="company-grid__links-link">Layoffs</span>
+              </div>
+            </li>
+            <li class="company-grid__links-item">
+              <a href="{%s googleSearchLayoffsMonth(company.Name) %}" target="_blank" class="button-link company-grid__links-link">In the past month</a>
+            </li>
+            <li class="company-grid__links-item">
+              <a href="{%s googleSearchLayoffsYear(company.Name) %}" target="_blank" class="button-link company-grid__links-link">This year</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section class="company-vacancies"></section>
 

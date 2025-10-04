@@ -394,7 +394,7 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 				<div class="card__links-item-group">
 					<img
 						class="card__links-icon"
-						alt="github icon"
+						alt="GitHub icon"
 						width="32"
 						height="32"
 						src="/assets/images/pages/organizer/github.svg"
@@ -423,7 +423,7 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 				<div class="card__links-item-group">
 					<img
 						class="card__links-icon"
-						alt="github icon"
+						alt="GitHub icon"
 						width="32"
 						height="32"
 						src="/assets/images/pages/organizer/github.svg"
@@ -434,7 +434,7 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 					<span class="card__links-link card__links-link--verify">
 						<img
 							class="card__links-icon"
-							alt="icon"
+							alt="GitHub verified icon"
 							src="/assets/images/pages/organizer/verified.png"
 						/>
 					</span>
@@ -481,7 +481,7 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 				<div class="card__links-item-group">
 					<img
 						class="card__links-icon"
-						alt="linkedin icon"
+						alt="blind icon"
 						width="32"
 						height="32"
 						src="/assets/images/pages/organizer/blind.png"
@@ -513,7 +513,7 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 				<div class="card__links-item-group">
 					<img
 						class="card__links-icon"
-						alt="linkedin icon"
+						alt="blind icon"
 						width="32"
 						height="32"
 						src="/assets/images/pages/organizer/blind.png"
@@ -561,7 +561,7 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 				<div class="card__links-item-group">
 					<img
 						class="card__links-icon"
-						alt="linkedin icon"
+						alt="levels.fyi icon"
 						width="32"
 						height="32"
 						src="/assets/images/pages/organizer/levels.png"
@@ -590,7 +590,7 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 				<div class="card__links-item-group">
 					<img
 						class="card__links-icon"
-						alt="linkedin icon"
+						alt="levels.fyi icon"
 						width="32"
 						height="32"
 						src="/assets/images/pages/organizer/levels.png"
@@ -746,7 +746,7 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 				<div class="card__links-item-group">
 					<img
 						class="card__links-icon"
-						alt="linkedin icon"
+						alt="indeed icon"
 						width="32"
 						height="32"
 						src="/assets/images/pages/organizer/indeed.png"
@@ -772,7 +772,7 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 				<div class="card__links-item-group">
 					<img
 						class="card__links-icon"
-						alt="linkedin icon"
+						alt="indeed icon"
 						width="32"
 						height="32"
 						src="/assets/images/pages/organizer/indeed.png"
@@ -803,7 +803,7 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 				<div class="card__links-item-group">
 					<img
 						class="card__links-icon"
-						alt="linkedin icon"
+						alt="investors icon"
 						width="32"
 						height="32"
 						src="/assets/images/pages/organizer/investors.svg"
@@ -891,7 +891,7 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 				<div class="card__links-item-group">
 					<img
 						class="card__links-icon"
-						alt="linkedin icon"
+						alt="market icon"
 						width="32"
 						height="32"
 						src="/assets/images/pages/organizer/query_stats.svg"
