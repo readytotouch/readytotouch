@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Yet another anonymous work search</title>
+	<meta name="description" content="Yet another anonymous work search">
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+
+	<link rel='preload'
+				href='/assets/fonts/montserrat/montserrat-latin-700.woff2'
+				as='font'
+				type='font/woff2'
+				crossorigin
+	>
+	<link rel='preload'
+				href='/assets/fonts/inter/inter-latin-regular.woff2'
+				as='font'
+				type='font/woff2'
+				crossorigin
+	>
+	<link rel='preload'
+				href='/assets/fonts/inter/inter-latin-500.woff2'
+				as='font'
+				type='font/woff2'
+				crossorigin
+	>
+
+	<style>.txt-ellipsis-2{display:block;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}.txt-ellipsis-3{display:block;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}@font-face{font-family:Inter;font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/inter/inter-latin-regular.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Inter;font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/inter/inter-latin-ext-regular.woff2) format("woff2");unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Inter;font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/inter/inter-latin-500.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Inter;font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/inter/inter-latin-ext-500.woff2) format("woff2");unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Montserrat;font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/montserrat/montserrat-latin-700.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Montserrat;font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/montserrat/montserrat-latin-ext-700.woff2) format("woff2");unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}.d-none{display:none!important}.mt-8{margin-top:8px!important}.pt-8{padding-top:8px!important}.mb-8{margin-bottom:8px!important}.pb-8{padding-bottom:8px!important}.ml-8{margin-left:8px!important}.pl-8{padding-left:8px!important}.mr-8{margin-right:8px!important}.pr-8{padding-right:8px!important}.mt-14{margin-top:14px!important}.pt-14{padding-top:14px!important}.mb-14{margin-bottom:14px!important}.pb-14{padding-bottom:14px!important}.ml-14{margin-left:14px!important}.pl-14{padding-left:14px!important}.mr-14{margin-right:14px!important}.pr-14{padding-right:14px!important}.mt-16{margin-top:16px!important}.pt-16{padding-top:16px!important}.mb-16{margin-bottom:16px!important}.pb-16{padding-bottom:16px!important}.ml-16{margin-left:16px!important}.pl-16{padding-left:16px!important}.mr-16{margin-right:16px!important}.pr-16{padding-right:16px!important}.mt-24{margin-top:24px!important}.pt-24{padding-top:24px!important}.mb-24{margin-bottom:24px!important}.pb-24{padding-bottom:24px!important}.ml-24{margin-left:24px!important}.pl-24{padding-left:24px!important}.mr-24{margin-right:24px!important}.pr-24{padding-right:24px!important}.mt-26{margin-top:26px!important}.pt-26{padding-top:26px!important}.mb-26{margin-bottom:26px!important}.pb-26{padding-bottom:26px!important}.ml-26{margin-left:26px!important}.pl-26{padding-left:26px!important}.mr-26{margin-right:26px!important}.pr-26{padding-right:26px!important}.mt-32{margin-top:32px!important}.pt-32{padding-top:32px!important}.mb-32{margin-bottom:32px!important}.pb-32{padding-bottom:32px!important}.ml-32{margin-left:32px!important}.pl-32{padding-left:32px!important}.mr-32{margin-right:32px!important}.pr-32{padding-right:32px!important}.column-gap-2{-webkit-column-gap:2px!important;-moz-column-gap:2px!important;column-gap:2px!important}.column-gap-4{-webkit-column-gap:4px!important;-moz-column-gap:4px!important;column-gap:4px!important}.column-gap-8{-webkit-column-gap:8px!important;-moz-column-gap:8px!important;column-gap:8px!important}.row-gap-2{row-gap:2px!important}.row-gap-4{row-gap:4px!important}.row-gap-8{row-gap:8px!important}html{box-sizing:border-box}*,:before,:after{box-sizing:inherit}html{-webkit-text-size-adjust:100%;-moz-text-size-adjust:100%;text-size-adjust:100%}body{-webkit-overflow-scrolling:touch}html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}a{background-color:transparent;color:#21212b}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}dfn{font-style:italic}mark{background-color:#ff0;color:#000}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace;font-size:1em}hr{box-sizing:content-box;height:0;overflow:visible}button,input,select,textarea{margin:0;font:inherit}button,input{overflow:visible}button,select{text-transform:none}button,[type=button],[type=reset],[type=submit]{-webkit-appearance:button;-moz-appearance:button;appearance:button}input,textarea,button,select,a{-webkit-tap-highlight-color:transparent}address{font-style:normal}a:focus:not(:focus-visible),select:focus:not(:focus-visible),input:focus:not(:focus-visible),textarea:focus:not(:focus-visible){outline:0}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{padding:0;border-style:none}button,input[type=reset],input[type=button],input[type=submit]{cursor:pointer}button[disabled],input[disabled]{cursor:default}button{padding:0;border:0;border-radius:0;background:0 0;line-height:1;-webkit-appearance:none;-moz-appearance:none;appearance:none}button:focus:not(:focus-visible){outline:0}a,a:hover{text-decoration:none}[href="javascript:void();"],[href="javascript:"]{cursor:default}ul,ol{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-spacing:0;border-collapse:collapse}input[type=text],input[type=password],input[type=date],input[type=datetime],input[type=datetime-local],input[type=email],input[type=month],input[type=number],input[type=search],input[type=tel],input[type=time],input[type=url],input[type=week],textarea{box-sizing:border-box}[type=checkbox],[type=radio]{box-sizing:border-box;margin:0;padding:0}input[type=search]{-webkit-appearance:textfield;-moz-appearance:textfield;appearance:textfield;outline-offset:-2px}input[type=search]::-webkit-search-decoration,input[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;appearance:none}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto;-webkit-appearance:none;appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;appearance:button;font:inherit}input[type=number]{-webkit-appearance:textfield;-moz-appearance:textfield;appearance:textfield}select{width:100%;height:20px;border:0;background:0 0}textarea{overflow:auto;border:0;resize:none}::-webkit-input-placeholder{color:#777;line-height:normal}::-moz-placeholder{color:#777;line-height:normal}::placeholder{color:#777;line-height:normal}[hidden]{display:none}.button{display:-webkit-inline-flex;display:inline-flex;-webkit-align-items:center;align-items:center;-webkit-justify-content:center;justify-content:center;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;height:48px;padding-right:32px;padding-left:32px;transition:background-color .225s ease,box-shadow .225s ease,border-color .225s ease,color .225s ease;border:1px solid transparent;border-radius:8px;font-family:"Inter",arial,helvetica neue,helvetica,sans-serif;font-size:18px;font-weight:500;cursor:pointer}.button:focus-visible{border-radius:4px;outline:0;box-shadow:0 0 0 2px #000,0 0 0 3px #fff}.button--black{border-width:2px;border-color:#1c1f29;background-color:#1c1f29;color:#fff}.button--black:hover{border-color:#303647;background-color:#303647}.button--black:active{border-color:#2f2c6d;background-color:#2f2c6d}.button--black:focus-visible{border-color:#b8b6e2;background-color:#3f3a92;box-shadow:none}.button--black:disabled{border-color:#ededf8;background-color:#ededf8;color:#9695a5}.button--secondary{padding:0 24px;border:2px solid #1c1f29;background-color:transparent}.button--secondary:hover{border-color:#3f3a92;color:#3f3a92}.button--secondary:active{border-color:#2f2c6d;color:#2f2c6d}.button--secondary:focus-visible{border-color:#b8b6e2;box-shadow:none;color:#111028}.button--secondary:disabled{border-color:#96969c;color:#96969c}.button--empty,.button--empty-icon{-webkit-column-gap:8px;-moz-column-gap:8px;column-gap:8px;border-width:2px;color:#1c1f29;font-weight:400}.button--empty:hover,.button--empty-icon:hover{background-color:#ebedf5;color:#3f3a92}.button--empty:hover svg,.button--empty-icon:hover svg{fill:#3f3a92}.button--empty:active,.button--empty-icon:active{background-color:transparent;color:#2f2c6d}.button--empty:active svg,.button--empty-icon:active svg{fill:#2f2c6d}.button--empty:focus-visible,.button--empty-icon:focus-visible{border-color:#b8b6e2;background-color:#ededf8;box-shadow:none;color:#3f3a92}.button--empty:focus-visible svg,.button--empty-icon:focus-visible svg{fill:#3f3a92}.button--empty:disabled,.button--empty.disabled,.button--empty-icon:disabled,.button--empty-icon.disabled{color:#9695a5}.button--empty:disabled svg,.button--empty.disabled svg,.button--empty-icon:disabled svg,.button--empty-icon.disabled svg{fill:#9695a5}.button--empty-icon{padding:0}.button--empty-icon svg{width:20px;height:20px}.button--outline-icon{padding:0;border:2px solid #dddde0;background-color:transparent}.button--outline-icon svg{width:20px;height:20px}.button--outline-icon:hover{border-color:#1c1f29;color:#1c1f29}.button--outline-icon:active{border-color:#dddde0;color:#1c1f29}.button--outline-icon:focus-visible{border-color:#b8b6e2;box-shadow:none;color:#111028}.button--outline-icon:disabled{border-color:#96969c;color:#96969c}.button--gray{border-width:2px;border-color:#ededf8;background-color:#ededf8;color:#111028}.button--gray:hover{color:#3f3a92}.button--gray:active{color:#2f2c6d}.button--gray:focus-visible{border-color:#b8b6e2;box-shadow:none;color:#3f3a92}.button--gray:disabled,.button--gray.disabled{color:#b5b5be}.button--gray2{padding-right:24px;padding-left:24px;border-width:2px;border-radius:4px;border-color:#ededf8;background-color:#ededf8;color:#111028}.button--gray2:hover{color:#3f3a92}.button--gray2:active{color:#2f2c6d}.button--gray2:focus-visible{border:2px solid #b8b6e2;box-shadow:none;color:#3f3a92}.button--gray2:disabled{background-color:#ededf8;color:#9695a5}.button--gray3{border-width:2px;border-radius:4px;border-color:#dcdbf0;background-color:#dcdbf0;color:#111028}.button--gray3:hover{color:#3f3a92}.button--gray3:active{color:#2f2c6d}.button--gray3:focus-visible{border:2px solid #b8b6e2;box-shadow:none;color:#3f3a92}.button--gray3:disabled{background-color:#ededf8;color:#9695a5}.button--white{border-color:#fff;background-color:#fff;box-shadow:0 0 40px rgba(0,0,0,.15);color:#000}.button--white:hover,.button--white:active{border-color:#f2f2f2;background-color:#f2f2f2}.button--white-shadow{border-color:#fff;background-color:#fff;color:#000}.button--white-shadow:hover,.button--white-shadow:active{box-shadow:0 6px 16px #e1e1e1}.button--bordered-black{border-width:3px;border-color:#000;background-color:#fff;color:#000}.button--bordered-black:hover,.button--bordered-black:active{background-color:#000;color:#fff}.button--bordered-black-transparent{border-width:3px;border-color:#000;background-color:transparent;color:#000}.button--bordered-black-transparent:hover,.button--bordered-black-transparent:active{background-color:#000;color:#fff}.button--bordered-light{border-width:2px;border-color:#1c1f29;color:#1c1f29}.button--bordered-light:hover,.button--bordered-light:active{background-color:#ebedf5;color:#1c1f29}.button--bordered-white{border-width:2px;border-color:#dddde0;color:#1c1f29}.button--bordered-white:hover,.button--bordered-white:active{border-color:#1c1f29;color:#1c1f29}.button--bordered-universe{border-width:2px;border-color:#c4c6d3;color:#1c1f29}.button--bordered-universe:hover,.button--bordered-universe:active{border-color:#1c1f29;color:#1c1f29}.button--bordered-black-blank{border-width:3px;border-color:#000;color:#000}.button--bordered-black-blank:hover,.button--bordered-black-blank:active{background-color:#000;color:#fff}.button--bordered-gray{padding-right:24px;padding-left:24px;border-width:2px;border-color:#c4c6d3;color:#1c1f29;color:#000}.button--bordered-gray:hover,.button--bordered-gray:active{border-color:#1c1f29}.button--bordered-gray:focus-visible{border-radius:8px;border-color:#b3c5ff;box-shadow:initial}.button--bordered-gray-disabled{border-color:#e8e8e8;color:#969696;cursor:default;pointer-events:none}.button.in-respond{border-color:#eeeff1;background-color:#eeeff1;color:#828282}.button--full{width:100%}.button--light-link{height:auto;padding:0;color:#96969c;font-weight:500}.button--light-link:hover,.button--light-link:active{color:#3f3a92}.button--gap-images{max-width:316px;-webkit-column-gap:8px;-moz-column-gap:8px;column-gap:8px}.button--small{height:40px;padding-right:24px;padding-left:24px}.button--medium{height:44px;padding-inline:20px}.button--small-padding{padding-inline:24px}.button--x-small-padding{padding-inline:20px}.button--xx-small-padding{padding-inline:16px}.favorite{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-justify-content:center;justify-content:center;width:48px;height:48px;cursor:pointer}.favorite .favorite__icon{pointer-events:none}.favorite .favorite__icon path{transition:fill .225s ease;stroke-width:2px;stroke:#000;fill:none}.favorite.in-favorite .favorite__icon path{fill:#000}.favorite__icon{width:20px;height:20px}.action{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-justify-content:center;justify-content:center;width:50px;height:50px;border:2px solid #000;border-radius:3px;cursor:pointer}.action__button-img{pointer-events:none}.custom-icon{display:inline-block;width:16px;height:16px;transition:color .225s ease,fill .225s ease;stroke-width:0;stroke:currentcolor;fill:currentcolor}.bold{font-weight:700}.badge{display:-webkit-inline-flex;display:inline-flex;-webkit-align-items:center;align-items:center;height:32px;padding-right:16px;padding-left:16px;border-radius:100px;font-size:16px}.badge--work-in-progress{background-color:#dbe1ff;color:#003ea6}.badge--new{background-color:#e7deff;color:#4c21bb}.hamburger{display:inline-block;transition-property:opacity,background-color,-webkit-filter;transition-property:opacity,filter,background-color;transition-property:opacity,filter,background-color,-webkit-filter;transition-duration:.15s;transition-timing-function:linear;background-color:transparent;color:inherit;font-size:0}.hamburger__box{display:-webkit-inline-flex;display:inline-flex;position:relative;-webkit-justify-content:center;justify-content:center;width:40px;height:40px}.hamburger__inner{display:block;top:50%;margin-top:-1px}.hamburger__inner:after,.hamburger__inner:before{content:"";display:block}.hamburger__inner:after{bottom:-6px}.hamburger__inner:before{top:-6px}.hamburger__inner,.hamburger__inner:after,.hamburger__inner:before{position:absolute;width:24px;height:2px;transition-property:-webkit-transform;transition-property:transform;transition-property:transform, -webkit-transform;transition-duration:.15s;transition-timing-function:ease;border-radius:4px;background-color:#7e8596}.hamburger--spin .hamburger__inner{transition-duration:.22s;transition-timing-function:cubic-bezier(.55,.055,.675,.19)}.hamburger--spin .hamburger__inner:before{transition:top .1s ease-in .25s,opacity .1s ease-in}.hamburger--spin .hamburger__inner:after{transition:bottom .1s ease-in .25s,-webkit-transform .22s cubic-bezier(.55,.055,.675,.19);transition:bottom .1s ease-in .25s,transform .22s cubic-bezier(.55,.055,.675,.19);transition:bottom .1s ease-in .25s,transform .22s cubic-bezier(.55,.055,.675,.19),-webkit-transform .22s cubic-bezier(.55,.055,.675,.19)}.hamburger--spin.is-active .hamburger__inner{-webkit-transform:rotate(225deg);transform:rotate(225deg);transition-timing-function:cubic-bezier(.215,.61,.355,1);transition-delay:.12s}.hamburger--spin.is-active .hamburger__inner:before{top:0;transition:top .1s ease-out,opacity .1s ease-out .12s;opacity:0}.hamburger--spin.is-active .hamburger__inner:after{bottom:0;-webkit-transform:rotate(-90deg);transform:rotate(-90deg);transition:bottom .1s ease-out,-webkit-transform .22s cubic-bezier(.215,.61,.355,1) .12s;transition:bottom .1s ease-out,transform .22s cubic-bezier(.215,.61,.355,1) .12s;transition:bottom .1s ease-out,transform .22s cubic-bezier(.215,.61,.355,1) .12s,-webkit-transform .22s cubic-bezier(.215,.61,.355,1) .12s}.github-btn{height:20px;overflow:hidden;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;font-size:11px;font-weight:700;line-height:14px}.gh-btn,.gh-count,.gh-ico{float:left}.gh-btn,.gh-count{padding:2px 5px 2px 4px;border-radius:3px;color:#333;text-decoration:none;white-space:nowrap;cursor:pointer}.gh-btn{border:1px solid #d5d5d5;background-color:#eee;background-image:linear-gradient(to bottom,#fcfcfc 0,#eee 100%);background-repeat:no-repeat}.gh-btn:focus,.gh-btn:hover{border-color:#ccc;background-color:#ddd;background-image:linear-gradient(to bottom,#eee 0,#ddd 100%);text-decoration:none}.gh-btn:active{border-color:#b5b5b5;background-color:#dcdcdc;background-image:none;box-shadow:inset 0 2px 4px rgba(0,0,0,.15)}.gh-ico{width:14px;height:14px;margin-right:4px;background:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='12 12 40 40'%3e%3cpath fill='%23333' d='M32 13.4c-10.5 0-19 8.5-19 19 0 8.4 5.5 15.5 13 18 1 .2 1.3-.4 1.3-.9v-3.2c-5.3 1.1-6.4-2.6-6.4-2.6-.9-2.1-2.1-2.7-2.1-2.7-1.7-1.2.1-1.1.1-1.1 1.9.1 2.9 2 2.9 2 1.7 2.9 4.5 2.1 5.5 1.6.2-1.2.7-2.1 1.2-2.6-4.2-.5-8.7-2.1-8.7-9.4 0-2.1.7-3.7 2-5.1-.2-.5-.8-2.4.2-5 0 0 1.6-.5 5.2 2 1.5-.4 3.1-.7 4.8-.7 1.6 0 3.3.2 4.7.7 3.6-2.4 5.2-2 5.2-2 1 2.6.4 4.6.2 5 1.2 1.3 2 3 2 5.1 0 7.3-4.5 8.9-8.7 9.4.7.6 1.3 1.7 1.3 3.5v5.2c0 .5.4 1.1 1.3.9 7.5-2.6 13-9.7 13-18.1 0-10.5-8.5-19-19-19z'/%3e%3c/svg%3e") 0 0/100% 100% no-repeat}.gh-count{display:block;position:relative;margin-left:4px;transition:opacity .225s ease;border:1px solid #d4d4d4;opacity:1;background-color:#fafafa}.gh-count:focus,.gh-count:hover{color:#0366d6}.gh-count:after,.gh-count:before{content:"";display:inline-block;position:absolute;width:0;height:0;border-style:solid;border-color:transparent}.gh-count:before{z-index:1;top:50%;left:-3px;margin-top:-4px;border-width:4px 4px 4px 0;border-right-color:#fafafa}.gh-count:after{top:50%;left:-4px;margin-top:-5px;border-width:5px 5px 5px 0;border-right-color:#d4d4d4}.gh-count--is-hidden{opacity:0;pointer-events:none}.github-btn-large{height:30px}.github-btn-large .gh-btn,.github-btn-large .gh-count{padding:3px 10px 3px 8px;border-radius:4px;font-size:16px;line-height:22px}.github-btn-large .gh-ico{width:20px;height:20px}.github-btn-large .gh-count{margin-left:6px}.github-btn-large .gh-count:before{left:-5px;margin-top:-5px;border-width:5px 5px 5px 0}.github-btn-large .gh-count:after{left:-6px;margin-top:-6px;border-width:6px 6px 6px 0}.no-text .gh-ico{margin-right:0}@media (prefers-reduced-motion:reduce){.gh-count{transition:none}}html,body{height:100%}body{color:#21212b;font-family:"Inter",arial,helvetica neue,helvetica,sans-serif;font-size:16px}.disabled-scroll{overflow:hidden}.main-wrapper{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;min-height:100%;background-color:#f5f5f9;background-image:url(/assets/images/pages/common/home_top_bg_mob.svg);background-repeat:no-repeat;background-position:center -180px}@media screen and (min-width:1170px){.main-wrapper{background-image:url(/assets/images/pages/common/home_top_bg.svg);background-position:center top;background-size:1440px 280px}}.main-wrapper--organizer-inner{background-image:initial;background-repeat:no-repeat;background-position:initial}.main-content{-webkit-flex:1;flex:1}.header{display:-webkit-flex;display:flex;position:-webkit-sticky;position:sticky;z-index:50;top:0;-webkit-align-items:center;align-items:center;height:64px;transition:background-color .225s ease;background-color:#fff}@media screen and (min-width:992px){.header{position:initial;background-color:transparent}}.header__wrapper{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-justify-content:space-between;justify-content:space-between;width:100%;max-width:1248px;margin:0 auto;padding-inline:16px}@media screen and (min-width:992px){.header__wrapper{position:relative}}.header__logo{display:-webkit-flex;display:flex;gap:8px;-webkit-align-items:center;align-items:center}.header__logo-label{font-family:montserrat,verdana,roboto,sans-serif;font-size:18px;font-weight:700}.header__nav-overlay{display:-webkit-flex;display:flex;row-gap:16px;position:fixed;top:64px;right:0;bottom:0;left:0;-webkit-flex-direction:column;flex-direction:column;padding:24px;transition:opacity .225s ease;opacity:0;background-color:#f5f5f9;pointer-events:none}@media screen and (min-width:992px){.header__nav-overlay{position:static;-webkit-flex-direction:row;flex-direction:row;-webkit-flex-grow:1;flex-grow:1;-webkit-flex-shrink:0;flex-shrink:0;row-gap:initial;-webkit-align-items:center;align-items:center;-webkit-justify-content:end;justify-content:end;padding:0;opacity:1;pointer-events:initial}}.header__nav-overlay.is-opened{opacity:1;pointer-events:initial}.header__nav-overlay .header__stars{margin-inline:auto}@media screen and (min-width:992px){.header__nav-overlay .header__stars{margin-inline:initial}}.header__nav-overlay .header__profile{padding-inline:16px}@media screen and (min-width:992px){.header__nav-overlay .header__profile{margin-top:0;padding-inline:0}}.header__nav-overlay .header__profile-button{margin-left:initial}@media screen and (min-width:992px){.header__nav-overlay .header__profile-button{margin-left:24px}}.header__nav-overlay .header__profile-avatar-text{display:inline-block;color:#1d1b1e;font-size:18px;font-weight:500;line-height:1.3333333333}@media screen and (min-width:992px){.header__nav-overlay .header__profile-avatar-text{display:none}}.header__nav-overlay .header__profile-arrow-button{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-justify-content:center;justify-content:center;width:24px;height:24px;margin-left:auto;transition:rotate .225s ease}@media screen and (min-width:992px){.header__nav-overlay .header__profile-arrow-button{display:none}}.header__nav-overlay .header__profile-avatar-arrow-img{display:block}.header__nav-overlay .header__profile-avatar{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;padding-block:8px;-webkit-column-gap:12px;-moz-column-gap:12px;column-gap:12px;cursor:pointer;-webkit-tap-highlight-color:transparent}.header__nav-overlay .header__profile-avatar.is-mobile-profile-opened .header__profile-arrow-button{rotate:90deg}.header__nav-overlay .header__profile-avatar.is-mobile-profile-opened+.header__profile-list-mobile{display:-webkit-flex;display:flex}.header__nav-overlay .header__profile-button-log-out{width:100%;margin-block:8px}@media screen and (min-width:992px){.header__nav-overlay .header__profile-button-log-out{display:none}}.header__nav-overlay .header__profile-list-mobile{display:none;position:relative;-webkit-flex-direction:column;flex-direction:column;padding-left:16px;transition:grid-template-rows .225s ease}@media screen and (min-width:992px){.header__nav-overlay .header__profile-list-mobile{display:none}}.header__nav-overlay .header__profile-list-mobile:before{content:"";position:absolute;top:-8px;left:0;width:100%;height:1px;background-color:#e3e5fc}.header__nav-overlay .profile-list-mobile__link{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;min-width:0;padding-block:8px;-webkit-column-gap:12px;-moz-column-gap:12px;column-gap:12px;transition:color .255s ease,background-color .255s ease;color:#4d515c;font-size:18px;line-height:1.5555555556}.header__nav-overlay .profile-list-mobile__profile-text{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.header__profile{display:-webkit-flex;display:flex;position:relative;-webkit-flex-direction:column;flex-direction:column;margin-top:16px;font-size:0;row-gap:16px}.header__nav{display:-webkit-flex;display:flex;gap:8px;-webkit-flex-direction:column;flex-direction:column;-webkit-align-items:center;align-items:center}@media screen and (min-width:992px){.header__nav{position:absolute;left:50%;-webkit-flex-direction:initial;flex-direction:initial;-webkit-align-items:initial;align-items:initial;translate:-50% 0}}.header__nav-link{display:-webkit-flex;display:flex;position:relative;min-height:40px;padding:6.5px 16px;transition:all .225s ease;border-radius:48px;color:#4d515c;font-size:18px;font-weight:500;line-height:150%}.header__nav-link:hover{color:#21212b}.header__nav-link.active{background-color:#e3e5fc;color:#21212b}.header__stars{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;margin-left:auto}.header__login-button{width:100%}@media screen and (min-width:992px){.header__login-button{width:initial;margin-left:24px}}.header__profile-button{width:40px;height:40px;margin-left:24px;overflow:hidden;border-radius:50%}.header__profile-button img{display:block;width:inherit;height:inherit}@media screen and (min-width:992px){.header__hamburger{display:none}}.modal-profile.active{display:none}@media screen and (min-width:992px){.modal-profile.active{display:-webkit-flex;display:flex;pointer-events:initial}}.modal-profile{display:none;position:absolute;top:48px;right:0;-webkit-flex-direction:column;flex-direction:column;width:400px;border-radius:8px;background:#fff;box-shadow:-1px 0 20px 0 rgba(28,24,34,.05),0 1px 5px 0 rgba(14,11,17,.15);pointer-events:none}.modal-profile__profile{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column}.modal-profile__profile-info{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;padding-top:24px;padding-right:24px;padding-left:24px;-webkit-column-gap:12px;-moz-column-gap:12px;column-gap:12px}.modal-profile__profile-name{width:100%;color:#1d1b1e;font-size:18px;font-weight:500;line-height:1.3333333333}.modal-profile__user-photo{width:40px;height:40px;border-radius:50%}.modal-profile__profile-list{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;margin:16px 0}.modal-profile__link{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;padding:8px 24px;-webkit-column-gap:12px;-moz-column-gap:12px;column-gap:12px;transition:color .255s ease,background-color .255s ease;color:#4d515c;font-size:18px;line-height:1.5555555556}.modal-profile__link:hover{background-color:#ebedf5;color:#1d1b1e}.modal-profile__log-out{padding-block:16px 24px;border-top:1px solid #e3e5fc}.modal-profile__button{display:block;padding:8px 24px;transition:background-color .255s ease;color:#4d515c;font-size:18px;line-height:1.5555555556}.modal-profile__button:hover{background-color:#ebedf5}.footer{display:-webkit-flex;display:flex;-webkit-align-items:stretch;align-items:stretch;background-color:#f5f5f9}@media screen and (min-width:992px){.footer{height:392px}}.footer__overlay{display:-webkit-flex;display:flex;-webkit-align-items:stretch;align-items:stretch;width:100%;padding-right:24px;padding-bottom:24px;padding-left:24px;border-radius:60px;background:#fff;background-clip:content-box}.footer__wrapper{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;width:100%;padding:32px 16px;row-gap:40px}@media screen and (min-width:992px){.footer__wrapper{padding:64px 88px 32px;row-gap:initial}}.footer__group{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;row-gap:40px}@media screen and (min-width:992px){.footer__group{-webkit-flex-direction:initial;flex-direction:initial;-webkit-justify-content:space-between;justify-content:space-between;row-gap:0}}.footer__info{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-justify-content:space-between;justify-content:space-between}@media screen and (min-width:992px){.footer__info{-webkit-flex-direction:column;flex-direction:column;-webkit-align-items:initial;align-items:initial;-webkit-justify-content:initial;justify-content:initial}}.footer__title-link{color:#1d1b1e;font-family:montserrat,verdana,roboto,sans-serif;font-size:24px;font-weight:700;letter-spacing:-.03em;line-height:1}@media screen and (min-width:992px){.footer__title-link{font-size:19px}}.footer__subtitle{display:none;margin-top:16px;color:#4d515c;font-size:18px;line-height:1.3333333333}@media screen and (min-width:992px){.footer__subtitle{display:block}}.footer__ukraine-map{display:block}@media screen and (min-width:992px){.footer__ukraine-map{margin-top:32px}}.footer__right-side{display:-webkit-flex;display:flex;-webkit-flex-direction:column-reverse;flex-direction:column-reverse;-webkit-align-items:center;align-items:center;row-gap:24px}@media screen and (min-width:992px){.footer__right-side{-webkit-flex-direction:initial;flex-direction:initial;row-gap:initial;-webkit-align-items:initial;align-items:initial}}.footer__support{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;width:210px;row-gap:16px}@media screen and (min-width:992px){.footer__support{margin-left:40px}}.footer__support-figure{display:-webkit-flex;display:flex;-webkit-column-gap:8px;-moz-column-gap:8px;column-gap:8px}.footer__link{width:100%;-webkit-column-gap:8px;-moz-column-gap:8px;column-gap:8px}.footer__link--ukraine{display:none}@media screen and (min-width:992px){.footer__link--ukraine{display:-webkit-inline-flex;display:inline-flex}}.footer__support-icon-box{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-justify-content:center;justify-content:center;width:24px;height:24px}.footer__copyrights{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-justify-content:center;justify-content:center;padding-top:24px;-webkit-column-gap:6px;-moz-column-gap:6px;column-gap:6px;border-top:1px solid #f5f5f9;color:#7e8596;font-size:16px;line-height:1.375}@media screen and (min-width:992px){.footer__copyrights{-webkit-justify-content:initial;justify-content:initial;margin-top:auto}}</style>
+	<style>.txt-ellipsis-2{display:block;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}.txt-ellipsis-3{display:block;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}.button-link{color:#003ea6;font-size:18px;font-weight:500;line-height:1.3333333333}.button-link:hover,.button-link:active{text-decoration:underline;text-underline-offset:3px}.button-link:focus-visible{outline:0;box-shadow:0 0 0 2px rgba(0,62,166,.5)}.button-link:disabled,.button-link--disabled{color:#969696}.button-link--disabled{pointer-events:none}.breadcrumb{margin-top:24px;margin-bottom:24px;color:#4d515c}.breadcrumb__list{display:-webkit-flex;display:flex;-webkit-flex-wrap:wrap;flex-wrap:wrap}.breadcrumb__item{font-size:0}.breadcrumb__item+.breadcrumb__item{position:relative}.breadcrumb__item+.breadcrumb__item:before{content:">";margin-right:8px;margin-left:8px;color:#4d515c;font-size:14px;line-height:130%}.breadcrumb__link{position:relative;cursor:pointer}.breadcrumb__link:after{content:"";position:absolute;right:0;bottom:0;width:100%;height:2px;transition:opacity .225s ease;opacity:0;background-color:#4d515c}.breadcrumb__link:hover{-webkit-text-decoration-skip-ink:none;text-decoration-skip-ink:none}.breadcrumb__link:hover:after{opacity:1}.breadcrumb__link,.breadcrumb__page{color:#4d515c;font-size:14px;font-weight:500;line-height:130%;white-space:nowrap}.breadcrumb__page{color:#96969c}.button-group{display:grid;grid-template-rows:repeat(auto-fit,40px);row-gap:8px}.button-group__item{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-justify-content:center;justify-content:center;width:40px;height:40px;transition:.225s ease}.button-group__item:hover{border-radius:4px;background-color:#eff2fa}.container{max-width:1248px;margin:0 auto;padding-inline:16px}.company__container{padding-bottom:32px;overflow:initial}@media screen and (min-width:768px){.company__container{padding-top:24px;padding-bottom:52px}}.company-card{position:relative;padding-block:16px 24px;padding-inline:16px;border-radius:16px;background-color:#fff}@media screen and (min-width:640px){.company-card{padding:24px}}.company-card__vacancy{display:grid;z-index:20;grid-template-rows:repeat(3,auto);max-width:1008px;-webkit-column-gap:26px;-moz-column-gap:26px;column-gap:26px}.company-card.hidden .company-card__vacancy{display:none}.company-card.hidden .card-hidden{display:block}.company-card__action{display:grid;position:absolute;top:16px;right:16px;grid-column:2;grid-row:1/-1;grid-template-rows:repeat(auto-fit,40px)}.company-card__header{display:-webkit-flex;display:flex;grid-column:1;margin-bottom:20px;padding-right:45px}.company-card__logo-overlay{display:-webkit-flex;display:flex;-webkit-flex-shrink:0;flex-shrink:0;-webkit-align-items:center;align-items:center;-webkit-justify-content:center;justify-content:center;width:48px;height:48px;padding:4px;overflow:hidden;border-radius:8px;background-color:#efeff5;background-image:url(/assets/images//pages/organizer/no-logo.svg);background-repeat:no-repeat;background-position:center}@media screen and (min-width:480px){.company-card__logo-overlay{width:72px;height:72px}}.company-card__logo-overlay:has(.company-card__logo){background-image:none}.company-card__logo-overlay--black{background-color:#000}.company-card__logo{max-width:100%;height:auto}.company-card__header-caption{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;-webkit-justify-content:center;justify-content:center;margin-left:8px}@media screen and (min-width:480px){.company-card__header-caption{margin-left:12px}}.company-card__header-caption--project{-webkit-flex-direction:row;flex-direction:row}.company-card__headline{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-align-self:start;align-self:start;min-height:48px;margin-bottom:8px;transition:border .225s ease,color .225s ease;border-bottom:1px solid transparent;color:#1c1b1c;font-size:26px;font-weight:500;line-height:1.2307692308;gap:8px}@media screen and (min-width:480px){.company-card__headline{min-height:initial;margin-bottom:initial}}.company-card__header-caption-text{display:-webkit-flex;display:flex;-webkit-align-items:start;align-items:start;margin-left:-56px;-webkit-column-gap:6px;-moz-column-gap:6px;column-gap:6px;color:#7e8596;font-size:16px;line-height:1.5}@media screen and (min-width:480px){.company-card__header-caption-text{-webkit-align-items:center;align-items:center;margin-left:initial}}.company-card__header-caption-icon{margin-top:6px}@media screen and (min-width:480px){.company-card__header-caption-icon{margin-top:initial}}.company-card__sub-headline{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-align-self:start;align-self:start;color:#4d515c;font-size:18px;line-height:25px;gap:8px}.company-card__top-links{display:-webkit-flex;display:flex;margin-bottom:20px;-webkit-column-gap:14px;-moz-column-gap:14px;column-gap:14px}@media screen and (min-width:480px){.company-card__top-links{-webkit-column-gap:24px;-moz-column-gap:24px;column-gap:24px}}.company-card__top-link.disabled{color:#969696;cursor:default;pointer-events:none}.company-card__stacks{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;margin-bottom:20px;gap:10px}@media screen and (min-width:992px){.company-card__stacks{-webkit-flex-direction:row;flex-direction:row;-webkit-align-items:center;align-items:center}}.company-card__stacks-text{color:#4d515c;font-size:18px;line-height:1.5555555556}.company-card__stacks-list{display:-webkit-flex;display:flex;-webkit-flex-wrap:wrap;flex-wrap:wrap;gap:16px 14px}.company-card__stacks-link{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-justify-content:center;justify-content:center;width:40px;height:40px;transition:border-color .225s ease;border:2px solid #c4c6d3;border-radius:8px;cursor:pointer}@media (hover:hover){.company-card__stacks-link:hover{border-color:#1c1f29}}.company-card__stacks-link--current{border-color:#b3c5ff;cursor:default;pointer-events:none}.company-card__stacks-link--disabled{cursor:default;pointer-events:none;-webkit-filter:brightness(0) saturate(100%) invert(99%) sepia(23%) saturate(2171%) hue-rotate(194deg) brightness(127%) contrast(82%);filter:brightness(0) saturate(100%) invert(99%) sepia(23%) saturate(2171%) hue-rotate(194deg) brightness(127%) contrast(82%)}.company-card__info-group{margin-top:20px}.company-card__text{position:relative;grid-column:1;color:#4d515c;font-size:18px;line-height:25px}.company-card__info{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;gap:8px}.company-card__figure{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center}.company-card__figcaption{margin-left:12px;color:#4d515c;font-size:18px;line-height:25px}.company-card__figcaption--images{display:-webkit-flex;display:flex;-webkit-column-gap:6px;-moz-column-gap:6px;column-gap:6px}.company-card__image{width:inherit;aspect-ratio:2/1}.company-card__image--preview{width:initial;aspect-ratio:initial}.company-card__social{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;margin-top:20px;-webkit-column-gap:10px;-moz-column-gap:10px;column-gap:10px}.company-card__social-text{color:#4d515c;font-size:18px;line-height:1.5555555556}.company-card__social-links{display:-webkit-flex;display:flex;-webkit-column-gap:16px;-moz-column-gap:16px;column-gap:16px}.company-card__social-link{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;cursor:pointer}.company-card__social-link--disabled{--color1:#969696;cursor:default;pointer-events:none}.company-card__social-image{display:inline-block;width:24px;height:24px;stroke-width:0;stroke:currentcolor;fill:currentcolor}.company-grid{display:grid;grid-gap:4px;margin-top:4px}@media screen and (min-width:768px){.company-grid{grid-template-columns:repeat(2,1fr)}}@media screen and (min-width:992px){.company-grid{grid-template-columns:repeat(3,1fr)}}.company-grid__item{position:relative;padding:24px;border-radius:16px;background-color:#fff}.company-grid__links-item-group{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center}.company-grid__links-item-group img{margin-right:8px}.company-grid__links-item-info{display:block;margin-top:20px}.company-grid__links-item-info li{padding-bottom:10px;color:#1d1b1e}.company-grid__links-item-info li:last-child{padding:0}.company-grid__link-stats-item--one-line span{margin-right:16px}.company-grid__links-group{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;border-radius:12px;row-gap:20px}.company-grid__links-group--unbordered{border-color:transparent}.company-grid__links-group-inner{display:-webkit-flex;display:flex;-webkit-flex-wrap:wrap;flex-wrap:wrap;-webkit-column-gap:16px;-moz-column-gap:16px;column-gap:16px;row-gap:8px}.company-grid__links-item{display:-webkit-flex;display:flex;position:relative;-webkit-align-items:center;align-items:center;-webkit-column-gap:4px;-moz-column-gap:4px;column-gap:4px}.company-grid__links-item--inner{-webkit-flex-direction:column;flex-direction:column;-webkit-align-items:start;align-items:start;row-gap:8px}.company-grid__links-item--disabled .company-grid__links-link:not(.company-grid__links-link--google),.company-grid__links-item--disabled .company-grid__links-icon:not(.company-grid__links-icon--google){color:#969696;pointer-events:none;-webkit-filter:grayscale(1) invert(.4);filter:grayscale(1) invert(.4)}.company-grid__links-link-star{margin-left:16px;font-weight:500}.company-grid__links-link--google{position:absolute;top:3px;right:0;margin-right:0!important}.company-grid__links-link--verify{position:absolute;top:8px;right:0;margin-right:0!important}.company-grid__links-link--verify img,.company-grid__links-link--google img{margin-right:0!important}.company-grid__links-item--title{-webkit-flex-direction:column;flex-direction:column;-webkit-align-items:start;align-items:start}.company-grid__links-item--title .company-grid__links-link{font-size:22px;font-weight:500}.company-grid__links-icon{display:block}.company-vacancies__container{padding-top:32px;padding-bottom:32px;overflow:initial}@media screen and (min-width:768px){.company-vacancies__container{padding-top:52px;padding-bottom:52px}}.company-vacancies__headline{margin-bottom:24px;color:#1d1b1e;font-size:32px;font-weight:500;line-height:1.25}@media screen and (min-width:768px){.company-vacancies__headline{font-size:44px;line-height:1.2}}.company-vacancies__list{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;row-gap:8px}@media screen and (min-width:768px){.company-vacancies__list{row-gap:16px}}.card{position:relative;padding:24px;border-radius:16px;background-color:#fff}.card__vacancy{display:grid;z-index:20;grid-template-rows:repeat(3,auto);-webkit-column-gap:26px;-moz-column-gap:26px;column-gap:26px}.card.hidden .card__vacancy{display:none}.card.hidden .card-hidden{display:block}.card__action{display:grid;position:absolute;top:16px;right:16px;grid-column:2;grid-row:1/-1;grid-template-rows:repeat(auto-fit,40px)}.card__header{display:-webkit-flex;display:flex;grid-column:1;-webkit-flex-direction:column;flex-direction:column;margin-bottom:16px;padding-right:52px}@media screen and (min-width:768px){.card__header{-webkit-flex-direction:initial;flex-direction:initial;-webkit-align-items:center;align-items:center}}.card__header--organizer{margin-bottom:0}.card__logo-overlay{display:-webkit-flex;display:flex;-webkit-flex-shrink:0;flex-shrink:0;-webkit-align-items:center;align-items:center;-webkit-justify-content:center;justify-content:center;width:48px;height:48px;padding:4px;overflow:hidden;border-radius:8px;background-color:#efeff5;background-image:url(/assets/images//pages/organizer/no-logo.svg);background-repeat:no-repeat;background-position:center}@media screen and (min-width:768px){.card__logo-overlay{width:72px;height:72px}}.card__logo-overlay:has(.card__logo){background-image:none}.card__logo-overlay--black{background-color:#000}.card__logo{max-width:100%;height:auto}.card__header-caption{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;-webkit-justify-content:center;justify-content:center;row-gap:4px;margin-bottom:8px}@media screen and (min-width:768px){.card__header-caption{margin-left:16px}}.card__header-caption--project{-webkit-flex-direction:row;flex-direction:row}.card__headline{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-align-self:start;align-self:start;-webkit-order:1;order:1;transition:border .225s ease,color .225s ease;border-bottom:1px solid transparent;color:#003ea6;font-size:26px;font-weight:500;line-height:1.2;cursor:pointer;gap:8px}@media screen and (min-width:768px){.card__headline{-webkit-order:initial;order:initial}}.card__headline--title{font-size:44px}.card__headline:hover{text-decoration:underline;-webkit-text-decoration-skip-ink:none;text-decoration-skip-ink:none}.card__sub-headline{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-align-self:start;align-self:start;-webkit-order:0;order:0;margin-top:-36px;margin-bottom:10px;margin-left:56px;color:#4d515c;font-size:22px;line-height:1.2727272727;cursor:pointer;gap:8px}@media screen and (min-width:768px){.card__sub-headline{-webkit-order:initial;order:initial;margin:initial}}.card__sub-headline:hover{text-decoration:underline;-webkit-text-decoration-skip-ink:none;text-decoration-skip-ink:none}.card__header-caption-text{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-order:2;order:2;-webkit-column-gap:6px;-moz-column-gap:6px;column-gap:6px;color:#7e8596;font-size:16px;line-height:1.5}@media screen and (min-width:768px){.card__header-caption-text{-webkit-order:initial;order:initial}}.card__header-label{-webkit-align-self:start;align-self:start}@media screen and (min-width:768px){.card__header-label{margin-left:auto}}.card__text{display:block;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;position:relative;grid-column:1;margin:16px 0;color:#4d515c;font-size:18px;line-height:25px}.card__text--organizer{margin-top:24px}.card__text--full-text{display:block;overflow:hidden;text-overflow:unset;white-space:wrap;margin-bottom:24px}.card__info{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;gap:8px}.card__figure{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center}.card__figcaption{margin-left:8px;color:#4d515c;font-size:18px;line-height:25px}.card__figure-salary .card__figcaption{color:#1c1f29;font-weight:500}.card__hidden-salary{margin-left:8px;padding:2px 12px;border-radius:8px;background-color:#f5f5f9;color:#4d515c;line-height:27px}.card--filled .card__image-overlay{background-color:transparent}.card__company-links{display:-webkit-flex;display:flex;border-top:2px solid #f2f2f8;color:#1c1f29;font-size:18px;line-height:25px}.card__link-item{display:-webkit-flex;display:flex;position:relative;margin:24px 24px 0 0;transition:border .225s ease;border-bottom:1px solid transparent;color:#0737b9;gap:8px}.card__link-item:hover{border-color:#0737b9}.card__image{width:112px;height:56px}.card__footer{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;margin-top:8px;row-gap:24px}@media screen and (min-width:768px){.card__footer{-webkit-flex-direction:initial;flex-direction:initial;-webkit-align-items:center;align-items:center;-webkit-justify-content:space-between;justify-content:space-between}}.card__details{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;row-gap:4px}@media screen and (min-width:768px){.card__details{-webkit-flex-direction:initial;flex-direction:initial;row-gap:initial;-webkit-column-gap:24px;-moz-column-gap:24px;column-gap:24px}}.card__details .card__figcaption{color:#6f727a}.card__footer-button{width:100%;max-width:275px;margin-inline:auto}@media screen and (min-width:768px){.card__footer-button{width:auto;max-width:initial;margin-inline:initial}}.card__action-button-sloth{transition:background-image .3s,background-color .3s;background-image:url(/assets/images/pages/vacancy/sloth.svg);background-repeat:no-repeat;background-position:center center}.card__action-button-sloth:hover{border-radius:4px;background-color:#ededf8;background-image:url(/assets/images/pages/vacancy/sloth-hide.svg)}.card__action-button-sloth:active{border-radius:0;background-color:transparent;background-image:url(/assets/images/pages/vacancy/sloth-hide.svg)}.card__action-button-sloth:focus-visible{border:2px solid #b8b6e2;border-radius:4px;outline:0;background-color:#ededf8}.card--transparent{background-color:transparent;box-shadow:inset 0 0 0 2px #dddde9}.card--sponsored{box-shadow:inset 0 0 0 1px #b3c5ff}.sources-evidence__container{padding-top:32px;padding-bottom:32px;overflow:initial}@media screen and (min-width:768px){.sources-evidence__container{padding-top:52px;padding-bottom:52px}}.sources-evidence__headline{margin-bottom:24px;color:#1d1b1e;font-size:32px;font-weight:500;line-height:1.25}@media screen and (min-width:768px){.sources-evidence__headline{font-size:44px;line-height:1.2}}.sources{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;-webkit-align-items:start;align-items:start;row-gap:16px;padding:16px;border-radius:16px;background-color:#fff}@media screen and (min-width:768px){.sources{padding:24px}}.sources__item{cursor:pointer}.sources__figure{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-column-gap:8px;-moz-column-gap:8px;column-gap:8px}.sources__text{color:#4d515c;font-size:16px;font-weight:500;line-height:1.25}.sources__image-wrapper{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-justify-content:center;justify-content:center;width:16px;height:16px}@media screen and (min-width:768px){.sources__image-wrapper{width:20px;height:20px}}@media screen and (min-width:768px){.sources__image{width:16px;height:16px}}.company-statistics__container{padding-top:32px;padding-bottom:40px;overflow:initial}@media screen and (min-width:768px){.company-statistics__container{padding-top:52px;padding-bottom:104px}}.company-statistics__headline{margin-bottom:24px;color:#1d1b1e;font-size:32px;font-weight:500;line-height:1.25}@media screen and (min-width:768px){.company-statistics__headline{font-size:44px;line-height:1.2}}.stats-caption{display:grid;grid-template-rows:repeat(2,auto);padding:24px 8px;gap:24px;border-radius:20px;background-color:#fff}@media screen and (min-width:768px){.stats-caption{grid-template-columns:repeat(2,1fr);grid-template-rows:initial;padding:24px 16px}}.stats-caption__counters{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;row-gap:16px}.stats-caption__title{font-size:22px;font-weight:500;line-height:1.2727272727}.stats-caption__counters-group{display:grid;grid-template-columns:repeat(2,1fr)}.stats-caption__counters-item{padding:6px 11px;border:1px solid #dddde9;border-radius:12px}.stats-caption__counters-item:nth-child(2){margin-left:-1px}.stats-caption__counters-views{color:#4d515c;font-size:12px;line-height:1.3333333333}@media screen and (min-width:768px){.stats-caption__counters-views{font-size:18px;line-height:1.5555555556}}.stats-caption__counters-item-number{color:#1d1b1e;font-size:24px;line-height:1.3333333333}@media screen and (min-width:768px){.stats-caption__counters-item-number{margin-top:8px;font-size:36px;line-height:1.2222222222}}.stats{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;gap:4px;overflow:hidden}@media screen and (min-width:768px){.stats{gap:16px}}.stats__item{padding:24px 0 16px;border-radius:20px;background:#fff}.stats__header{display:-webkit-flex;display:flex;-webkit-align-items:baseline;align-items:baseline;-webkit-justify-content:space-between;justify-content:space-between;padding-right:16px;padding-left:16px}@media screen and (min-width:768px){.stats__header{-webkit-align-items:end;align-items:end}}.stats__title{color:#1d1b1e;font-size:22px;font-weight:500;line-height:1.2727272727}.stats__period{-webkit-flex-shrink:0;flex-shrink:0}.stats__labels{color:#7e8596;font-family:"Inter",arial,helvetica neue,helvetica,sans-serif!important;font-size:12px;line-height:1.3333333333}</style>
+</head>
+
+<body>
+<div class="main-wrapper main-wrapper--organizer-inner">
+	<header class="header">
+  <div class="header__wrapper">
+    <a href="#" class="header__logo">
+      <img
+        width="30"
+        height="30"
+        class="header__logo-img"
+        src="/assets/images/pages/organizer/go-original.svg"
+        alt="organizer logo"
+      />
+      <span class="header__logo-label">Organizer</span>
+    </a>
+    <div class="header__nav-overlay js-header-nav">
+      <ul class="header__nav">
+        <li class="header__nav-item">
+          <a href="/companies" class="header__nav-link active">Companies</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="/vacancies" class="header__nav-link">Vacancies</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="/vacancies" class="header__nav-link">Communities</a>
+        </li>
+      </ul>
+      <div class="header__stars">
+        <span class="github-btn github-stargazers github-btn-large js-github-button">
+  <a class="gh-btn"
+     href="https://github.com/readytotouch/readytotouch.github.io"
+     rel="noopener noreferrer"
+     target="_blank"
+     aria-label="Star readytotouch/readytotouch.github.io on GitHub"
+  >
+    <span class="gh-ico" aria-hidden="true"></span>
+    <span class="gh-text">Star</span>
+  </a>
+  <a class="gh-count gh-count--is-hidden js-github-count"
+     href="https://github.com/readytotouch/readytotouch.github.io/stargazers"
+     rel="noopener noreferrer"
+     target="_blank"
+     aria-label="0 stargazers on GitHub"
+     aria-hidden="true"
+  >0</a>
+</span>
+
+      </div>
+      <div class="header__profile">
+        <div class="header__profile-avatar js-header-profile-avatar">
+          <button class="header__profile-button js-header-profile-button">
+            <img src="https://avatars.githubusercontent.com/u/63663261?v=4&s=48" alt="photo-profile" />
+          </button>
+          <p class="header__profile-avatar-text">Firstname Lastname</p>
+          <button class="header__profile-arrow-button">
+            <img class="header__profile-avatar-arrow-img"
+                 width="12"
+                 height="12"
+                 src="/assets/images/pages/common/chevron_right.svg"
+                 alt="arrow right icon"
+            />
+          </button>
+        </div>
+        <div class="header__profile-list-mobile profile-list-mobile">
+          <a href="https://github.com/FirstnameLastname"
+             target="_blank"
+             class="profile-list-mobile__link"
+          >
+            <img class="profile-list-mobile__profile-image"
+                 src="/assets/images/pages/online-new/github-black.svg"
+                 width="20"
+                 height="20"
+                 alt="GitHub logo"
+            />
+            <span class="profile-list-mobile__profile-text">github.com/FirstnameLastname</span>
+          </a>
+          <a href="https://gitlab.com/FirstnameLastname"
+             target="_blank"
+             class="profile-list-mobile__link"
+          >
+            <img class="profile-list-mobile__profile-image"
+                 src="/assets/images/pages/online-new/gitlab.svg"
+                 width="20"
+                 height="20"
+                 alt="GitLab logo"
+            />
+            <span class="profile-list-mobile__profile-text">gitlub.com/FirstnameLastname</span>
+          </a>
+          <a href="https://gitlab.com/FirstnameLastname"
+             target="_blank"
+             class="profile-list-mobile__link"
+          >
+            <img class="profile-list-mobile__profile-image"
+                 src="/assets/images/pages/online-new/bitbucket.svg"
+                 width="20"
+                 height="20"
+                 alt="Bitbucket logo"
+            />
+            <span class="profile-list-mobile__profile-text">bitbucket.com/FirstnameLastname</span>
+          </a>
+        </div>
+        <div class="header__modal modal-profile js-modal-profile">
+          <div class="modal-profile__profile">
+            <figure class="modal-profile__profile-info">
+              <img
+                src="https://avatars.githubusercontent.com/u/63663261?v=4&s=48"
+                class="modal-profile__user-photo"
+                width="48"
+                height="48"
+                alt="photo-profile"
+              />
+              <figcaption class="modal-profile__profile-name">Yaroslav Podorvanov</figcaption>
+            </figure>
+            <div class="modal-profile__profile-list">
+              <a href="https://github.com/FirstnameLastname" target="_blank" class="modal-profile__link">
+                <img src="/assets/images/pages/online-new/github-black.svg" width="20" height="20" alt="GitHub logo" />
+                <span class="modal-profile__profile-github">github.com/FirstnameLastname</span>
+              </a>
+              <a href="https://gitlab.com/FirstnameLastname" target="_blank" class="modal-profile__link">
+                <img src="/assets/images/pages/online-new/gitlab.svg" width="20" height="20" alt="GitLab logo" />
+                <span class="modal-profile__profile-gitlab">gitlab.com/FirstnameLastname</span>
+              </a>
+              <a href="https://gitlab.com/FirstnameLastname" target="_blank" class="modal-profile__link">
+                <img src="/assets/images/pages/online-new/bitbucket.svg" width="20" height="20" alt="Bitbucket logo" />
+                <span class="modal-profile__profile-bitbucket">bitbucket.com/FirstnameLastname</span>
+              </a>
+            </div>
+          </div>
+          <div class="modal-profile__log-out">
+            <a href="#" class="modal-profile__button">Log out</a>
+          </div>
+        </div>
+        <button type="button" class="button button--black header__profile-button-log-out">Log out</button>
+      </div>
+    </div>
+    <button class="hamburger hamburger--spin header__hamburger js-hamburger"
+            type="button"
+            aria-expanded="false"
+            aria-label="Open the menu"
+    >
+			<span class="hamburger__box">
+				<span class="hamburger__inner"></span>
+			</span>
+    </button>
+  </div>
+</header>
+
+
+
+<main class="main-content">
+  <div class="container">
+  <nav aria-label="breadcrumb" aria-labelledby="navigation through the bread crumbs" class="breadcrumb">
+    <ul class="breadcrumb__list">
+      <li class="breadcrumb__item">
+        <a class="breadcrumb__link" href="javascript:">Main</a>
+      </li>
+      <li class="breadcrumb__item">
+        <a class="breadcrumb__link" href="javascript:">Organizer</a>
+      </li>
+      <li class="breadcrumb__item">
+        <a class="breadcrumb__link" href="javascript:">Golang</a>
+      </li>
+      <li class="breadcrumb__item">
+        <span class="breadcrumb__page" aria-current="page">Google</span>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+  <section class="company">
+  <div class="container company__container">
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <symbol id="icon-facebook" viewBox="0 0 32 32">
+      <path fill="#4d515c" style="fill: var(--color1, #4d515c)" d="M32 16c0-8.836-7.164-16-16-16s-16 7.164-16 16c0 7.987 5.851 14.605 13.5 15.805v-11.179h-4.063v-4.627h4.063v-3.525c0-4.009 2.389-6.224 6.044-6.224 1.749 0 3.581 0.312 3.581 0.312v3.937h-2.019c-1.988 0-2.608 1.233-2.608 2.5v3h4.437l-0.709 4.625h-3.728v11.18c7.651-1.2 13.501-7.819 13.501-15.805z"></path>
+      <path fill="#fff" style="fill: var(--color2, #fff)" d="M22.228 20.625l0.709-4.625h-4.437v-3c0-1.265 0.62-2.5 2.608-2.5h2.017v-3.937s-1.832-0.312-3.581-0.312c-3.655 0-6.044 2.213-6.044 6.224v3.525h-4.063v4.625h4.063v11.18c0.751 0.124 1.617 0.194 2.5 0.194s1.749-0.071 2.593-0.207l-0.093 0.012v-11.179h3.728z"></path>
+    </symbol>
+    <symbol id="icon-instagram" viewBox="0 0 32 32">
+      <path fill="#4d515c" style="fill: var(--color1, #4d515c)" d="M16 2.88c4.275 0 4.781 0.020 6.463 0.095 1.563 0.069 2.407 0.332 2.968 0.551 0.721 0.27 1.335 0.676 1.838 1.192l0.001 0.001c0.561 0.563 0.907 1.093 1.193 1.837 0.219 0.563 0.48 1.413 0.549 2.969 0.076 1.687 0.093 2.193 0.093 6.463 0 4.275-0.017 4.781-0.093 6.461-0.068 1.563-0.331 2.407-0.549 2.969-0.288 0.744-0.637 1.281-1.193 1.837-0.503 0.518-1.117 0.925-1.805 1.182l-0.034 0.011c-0.561 0.22-1.412 0.481-2.968 0.551-1.688 0.075-2.193 0.093-6.463 0.093-4.275 0-4.781-0.019-6.463-0.093-1.563-0.069-2.407-0.331-2.968-0.551-0.721-0.27-1.335-0.676-1.838-1.192l-0.001-0.001c-0.518-0.503-0.924-1.117-1.182-1.803l-0.011-0.034c-0.219-0.563-0.48-1.413-0.549-2.969-0.076-1.687-0.093-2.193-0.093-6.461 0-4.276 0.017-4.781 0.093-6.463 0.068-1.563 0.331-2.407 0.549-2.969 0.288-0.744 0.637-1.28 1.193-1.837 0.563-0.563 1.093-0.907 1.839-1.193 0.561-0.219 1.412-0.481 2.968-0.551 1.681-0.075 2.187-0.093 6.463-0.093zM16 0c-4.344 0-4.888 0.019-6.593 0.093-1.7 0.076-2.869 0.351-3.881 0.744-1.111 0.424-2.058 1.054-2.836 1.849l-0.001 0.001c-0.795 0.778-1.425 1.723-1.832 2.777l-0.018 0.054c-0.393 1.019-0.668 2.181-0.744 3.881-0.075 1.712-0.093 2.256-0.093 6.6s0.019 4.888 0.093 6.593c0.076 1.7 0.351 2.869 0.744 3.881 0.413 1.056 0.956 1.951 1.851 2.837 0.778 0.793 1.723 1.42 2.777 1.826l0.054 0.018c1.019 0.395 2.181 0.669 3.881 0.744 1.707 0.075 2.251 0.093 6.593 0.093 4.344 0 4.888-0.019 6.595-0.093 1.7-0.075 2.868-0.349 3.88-0.744 1.108-0.423 2.053-1.051 2.831-1.843l0.001-0.001c0.793-0.778 1.42-1.723 1.826-2.777l0.018-0.054c0.393-1.019 0.668-2.181 0.744-3.881 0.075-1.707 0.093-2.251 0.093-6.593 0-4.344-0.019-4.888-0.093-6.595-0.076-1.7-0.351-2.868-0.744-3.88-0.408-1.116-1.033-2.067-1.83-2.842l-0.002-0.002c-0.778-0.793-1.723-1.42-2.777-1.826l-0.054-0.018c-1.019-0.393-2.181-0.671-3.881-0.744-1.712-0.080-2.256-0.1-6.6-0.1z"></path>
+      <path fill="#4d515c" style="fill: var(--color1, #4d515c)" d="M16 7.781c-4.538 0.002-8.217 3.68-8.219 8.219v0c0.002 4.538 3.68 8.217 8.219 8.219h0c4.538-0.002 8.217-3.68 8.219-8.219v-0c-0.002-4.538-3.68-8.217-8.219-8.219h-0zM16 21.331c-2.944-0-5.331-2.387-5.331-5.332s2.387-5.332 5.332-5.332c0 0 0 0 0.001 0h-0c2.945 0 5.331 2.387 5.331 5.332s-2.387 5.332-5.332 5.332c-0 0-0 0-0.001 0h0zM26.463 7.456c0 0.015 0.001 0.033 0.001 0.051 0 1.060-0.86 1.92-1.92 1.92s-1.92-0.86-1.92-1.92c0-0.018 0-0.036 0.001-0.053l-0 0.003c0.028-1.038 0.877-1.869 1.919-1.869s1.891 0.831 1.919 1.867l0 0.003z"></path>
+    </symbol>
+    <symbol id="icon-reddit" viewBox="0 0 32 32">
+      <path fill="#4d515c" style="fill: var(--color1, #4d515c)" d="M16 32c8.836 0 16-7.164 16-16s-7.164-16-16-16-16 7.164-16 16 7.164 16 16 16z"></path>
+      <path fill="#fff" style="fill: var(--color2, #fff)" d="M26.667 16c0-1.291-1.048-2.339-2.339-2.339-0.637 0-1.199 0.243-1.609 0.653-1.591-1.14-3.8-1.889-6.232-1.983l1.067-4.996 3.461 0.729c0.037 0.892 0.768 1.601 1.665 1.601 0.92 0 1.667-0.746 1.667-1.667 0-0.003 0-0.006-0-0.009v0c0-0.917-0.749-1.667-1.667-1.667-0.653 0-1.216 0.376-1.477 0.937l-3.873-0.824c-0.025-0.005-0.055-0.008-0.085-0.008-0.087 0-0.168 0.024-0.238 0.065l0.002-0.001c-0.091 0.061-0.157 0.153-0.186 0.26l-0.001 0.003-1.179 5.576c-2.488 0.075-4.716 0.805-6.325 1.984-0.418-0.4-0.984-0.649-1.608-0.655h-0.001c-1.291 0-2.339 1.048-2.339 2.339 0 0.955 0.561 1.76 1.385 2.133-0.037 0.224-0.056 0.467-0.056 0.711 0 3.593 4.173 6.493 9.337 6.493 5.165 0 9.339-2.9 9.339-6.493 0-0.243-0.020-0.467-0.057-0.692 0.8-0.402 1.341-1.213 1.348-2.151v-0.001zM10.667 17.667c0-0.92 0.748-1.667 1.667-1.667 0.916 0 1.664 0.748 1.664 1.667 0 0.916-0.748 1.664-1.665 1.664s-1.665-0.748-1.665-1.665zM19.967 22.063c-1.141 1.143-3.312 1.217-3.948 1.217s-2.827-0.093-3.948-1.217c-0.078-0.079-0.126-0.188-0.126-0.309s0.048-0.229 0.127-0.309l-0 0c0.079-0.078 0.188-0.126 0.309-0.126s0.229 0.048 0.309 0.127l-0-0c0.711 0.712 2.245 0.973 3.349 0.973s2.62-0.263 3.349-0.973c0.079-0.079 0.189-0.127 0.309-0.127s0.23 0.049 0.309 0.127l-0-0c0.059 0.079 0.094 0.178 0.094 0.286 0 0.129-0.051 0.246-0.133 0.332l0-0zM19.668 19.331c-0.917 0-1.667-0.748-1.667-1.665s0.749-1.665 1.667-1.665 1.665 0.748 1.665 1.667c0 0.916-0.748 1.664-1.667 1.664z"></path>
+    </symbol>
+    <symbol id="icon-twitter_x" viewBox="0 0 32 32">
+      <path fill="#4d515c" style="fill: var(--color1, #4d515c)" d="M24.435 2.539h4.499l-9.827 11.231 11.56 15.284h-9.052l-7.089-9.269-8.112 9.269h-4.501l10.511-12.013-11.089-14.501h9.281l6.408 8.472 7.413-8.472zM22.856 26.36h2.493l-16.089-21.271h-2.673l16.269 21.271z"></path>
+    </symbol>
+  </defs>
+</svg>
+
+    <div class="company-card">
+  <aside class="company-card__action">
+    <button class="favorite in-favorite company-card__action-button button-group__item" title="Remove from favorites">
+      <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" class="favorite__icon" viewBox="0 0 28 28">
+        <path
+          d="m14.5 22.1-.5-.3-.5.3-6.8 4.2c-.5.3-1.1-.1-.9-.7L7.5 18l.1-.6-.4-.4-5.9-5.2c-.3-.3-.3-.6-.2-.8.1-.2.3-.4.5-.4l7.9-.7.6-.1.2-.6 2.9-7.4c.2-.5 1-.5 1.2 0l3.1 7.3.2.5.6.1 7.9.7c.2 0 .4.2.5.5.1.3 0 .6-.2.7l-5.9 5.2-.4.4.1.6 1.8 7.7c.1.3 0 .5-.2.6-.2.1-.5.2-.8 0l-6.6-4z"
+        />
+      </svg>
+    </button>
+    <!--<button class="button-group__item" title="View statistics">
+      <img width="20" height="20" alt="icon stats" src="/assets/images/pages/common/stats.svg" />
+    </button>-->
+  </aside>
+  <figure class="company-card__header">
+    <div class="company-card__logo-overlay">
+      <img class="company-card__logo"
+           alt="Google logo"
+           src="/assets/images/pages/organizer/logos/google.svg"
+      />
+    </div>
+    <figcaption class="company-card__header-caption">
+      <h1 class="company-card__headline vacancy__link">Google</h1>
+      <p class="company-card__header-caption-text">
+        <img class="company-card__header-caption-icon"
+             alt="marker"
+             width="12"
+             height="12"
+             src="/assets/images/pages/organizer/marker.svg"
+        >Country, City (Full Remote)
+      </p>
+      <p class="company-card__header-caption-text">
+        <img class="company-card__header-caption-icon"
+             alt="briefcase"
+             width="12"
+             height="12"
+             src="/assets/images/pages/organizer/briefcase.svg"
+        >Latest job posting: 12/31/2024
+      </p>
+    </figcaption>
+  </figure>
+  <div class="company-card__top-links">
+    <a href="#" class="company-card__top-link button-link">Website</a>
+    <a href="#" class="company-card__top-link button-link">Careers</a>
+    <a href="#" class="company-card__top-link button-link">About</a>
+    <a href="#" class="company-card__top-link button-link">Dev Blog</a>
+  </div>
+  <div class="company-card__stacks">
+    <p class="company-card__stacks-text">Same company in other stacks:</p>
+    <ul class="company-card__stacks-list">
+      <li class="company-card__stacks-item">
+  <a class="company-card__stacks-link company-card__stacks-link--current" href="javascript:" title="go">
+    <img class="company-card__stacks-image"
+         width="20"
+         height="20"
+         src="/assets/images/pages/organizer/stacks/go.svg"
+         alt="go"
+    >
+  </a>
+</li><li class="company-card__stacks-item">
+  <a class="company-card__stacks-link " href="javascript:" title="rust">
+    <img class="company-card__stacks-image"
+         width="20"
+         height="20"
+         src="/assets/images/pages/organizer/stacks/rust.svg"
+         alt="rust"
+    >
+  </a>
+</li><li class="company-card__stacks-item">
+  <a class="company-card__stacks-link " href="javascript:" title="scala">
+    <img class="company-card__stacks-image"
+         width="20"
+         height="20"
+         src="/assets/images/pages/organizer/stacks/scala.svg"
+         alt="scala"
+    >
+  </a>
+</li><li class="company-card__stacks-item">
+  <a class="company-card__stacks-link " href="javascript:" title="elixir">
+    <img class="company-card__stacks-image"
+         width="20"
+         height="20"
+         src="/assets/images/pages/organizer/stacks/elixir.svg"
+         alt="elixir"
+    >
+  </a>
+</li><li class="company-card__stacks-item">
+  <a class="company-card__stacks-link " href="javascript:" title="erlang">
+    <img class="company-card__stacks-image"
+         width="20"
+         height="20"
+         src="/assets/images/pages/organizer/stacks/erlang.svg"
+         alt="erlang"
+    >
+  </a>
+</li><li class="company-card__stacks-item">
+  <a class="company-card__stacks-link " href="javascript:" title="clojure">
+    <img class="company-card__stacks-image"
+         width="20"
+         height="20"
+         src="/assets/images/pages/organizer/stacks/clojure.svg"
+         alt="clojure"
+    >
+  </a>
+</li><li class="company-card__stacks-item">
+  <a class="company-card__stacks-link company-card__stacks-link--disabled" href="javascript:" title="zig">
+    <img class="company-card__stacks-image"
+         width="20"
+         height="20"
+         src="/assets/images/pages/organizer/stacks/zig.svg"
+         alt="zig"
+    >
+  </a>
+</li><li class="company-card__stacks-item">
+  <a class="company-card__stacks-link company-card__stacks-link--disabled" href="javascript:" title="haskell">
+    <img class="company-card__stacks-image"
+         width="20"
+         height="20"
+         src="/assets/images/pages/organizer/stacks/haskell.svg"
+         alt="haskell"
+    >
+  </a>
+</li><li class="company-card__stacks-item">
+  <a class="company-card__stacks-link company-card__stacks-link--disabled" href="javascript:" title="fsharp">
+    <img class="company-card__stacks-image"
+         width="20"
+         height="20"
+         src="/assets/images/pages/organizer/stacks/fsharp.svg"
+         alt="fsharp"
+    >
+  </a>
+</li><li class="company-card__stacks-item">
+  <a class="company-card__stacks-link company-card__stacks-link--disabled" href="javascript:" title="ocaml">
+    <img class="company-card__stacks-image"
+         width="20"
+         height="20"
+         src="/assets/images/pages/organizer/stacks/ocaml.svg"
+         alt="ocaml"
+    >
+  </a>
+</li>
+    </ul>
+  </div>
+  <div class="company-card__info">
+    <figure class="company-card__figure">
+      <img
+        class="company-card__icon"
+        alt="card type icon"
+        width="16"
+        height="16"
+        src="/assets/images/pages/vacancy/building.svg"
+      />
+      <figcaption class="company-card__figcaption">Product</figcaption>
+    </figure>
+    <figure class="company-card__figure">
+      <img
+        class="company-card__icon"
+        alt="card type icon"
+        width="16"
+        height="16"
+        src="/assets/images/pages/vacancy/company-type.svg"
+      />
+      <figcaption class="company-card__figcaption">Direction name</figcaption>
+    </figure>
+    <figure class="company-card__figure">
+      <img
+        class="company-card__icon"
+        alt="card hosting icon"
+        width="16"
+        height="16"
+        src="/assets/images/pages/organizer/clouds.svg"
+      />
+      <figcaption class="company-card__figcaption card__figcaption--images">
+        <img
+          alt="Azure icon"
+          width="20"
+          height="20"
+          src="/assets/images/pages/common/azure.svg"
+        />
+        <img
+          alt="AWS icon"
+          width="20"
+          height="20"
+          src="/assets/images/pages/common/amazon-web-services.svg"
+        />
+        <img
+          alt="GCP icon"
+          width="20"
+          height="20"
+          src="/assets/images/pages/common/googlecloud.svg"
+        />
+      </figcaption>
+    </figure>
+  </div>
+  <div class="company-card__info-group">
+    <div class="company-card__info-group-content">
+      <p class="company-card__text">
+        DocHQ is your wellbeing partner. As a UK employee benefits provider, our vision is to enable people to make informed
+        health choices and inspire them to improve their quality of life. We are a specialist medical technology provider
+        aimed at enhancing employee wellbeing at work and home - connecting businesses, providers, and consumers through
+        technology.
+      </p>
+    </div>
+  </div>
+  <div class="company-card__social">
+    <p class="company-card__social-text">Social media:</p>
+    <div class="company-card__social-links">
+      <a href="javascript:"
+         class="company-card__social-link"
+      >
+        <svg class="company-card__social-image">
+          <use xlink:href="#icon-instagram"></use>
+        </svg>
+      </a>
+      <a href="javascript:"
+         class="company-card__social-link"
+      >
+        <svg class="company-card__social-image">
+          <use xlink:href="#icon-reddit"></use>
+        </svg>
+      </a>
+      <a href="javascript:"
+         class="company-card__social-link company-card__social-link--disabled"
+      >
+        <svg class="company-card__social-image">
+          <use xlink:href="#icon-twitter_x"></use>
+        </svg>
+      </a>
+      <a href="javascript:"
+         class="company-card__social-link company-card__social-link--disabled"
+      >
+        <svg class="company-card__social-image">
+          <use xlink:href="#icon-facebook"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+    <div class="company-grid">
+  <div class="company-grid__item">
+    <ul class="company-grid__links-group">
+      <li class="company-grid__links-item company-grid__links-item--title">
+        <div class="company-grid__links-item-group">
+          <img
+            class="company-grid__links-icon"
+            alt="linkedin icon"
+            width="32"
+            height="32"
+            src="/assets/images/pages/organizer/linkedin.svg"
+          />
+          <a href="#" class="company-grid__links-link">LinkedIn</a>
+          <a href="#" class="company-grid__links-link company-grid__links-link--verify">
+            <img
+              class="company-grid__links-icon"
+              alt="icon"
+              src="/assets/images/pages/organizer/verified-icon.png"
+            />
+          </a>
+        </div>
+        <ul class="company-grid__links-item-info">
+          <li class="company-grid__link-stats-item">35M followers</li>
+          <li class="company-grid__link-stats-item">10,001+ employees</li>
+          <li class="company-grid__link-stats-item">302,261 associated members</li>
+        </ul>
+      </li>
+      <li class="company-grid__links-item">
+        <a href="#" class="button-link company-grid__links-link">Overview</a>
+      </li>
+      <li class="company-grid__links-item">
+        <a href="#" class="button-link company-grid__links-link">CEO</a>
+      </li>
+      <li class="company-grid__links-item company-grid__links-item--inner">
+        <p class="company-grid__links-item-text">Connections (employees):</p>
+        <ul class="company-grid__links-group-inner">
+          <li class="company-grid__links-item">
+            <a href="javascript:" class="button-link company-grid__links-link">Global</a>
+            <img
+              class="company-grid__links-icon"
+              alt="language icon"
+              width="20"
+              height="20"
+              src="/assets/images/pages/organizer/language.svg"
+            />
+          </li>
+          <li class="company-grid__links-item">
+            <a href="javascript:" class="button-link company-grid__links-link">UA</a>
+            <img
+              class="company-grid__links-icon"
+              alt="language icon"
+              width="20"
+              height="20"
+              src="/assets/images/pages/common/flags/4x3/ua.svg"
+            />
+          </li>
+          <li class="company-grid__links-item">
+            <a href="javascript:" class="button-link company-grid__links-link">CZ</a>
+            <img
+              class="company-grid__links-icon"
+              alt="language icon"
+              width="20"
+              height="20"
+              src="/assets/images/pages/common/flags/4x3/cz.svg"
+            />
+          </li>
+          <li class="company-grid__links-item">
+            <a href="javascript:" class="button-link company-grid__links-link">Former (All)</a>
+          </li>
+        </ul>
+      </li>
+      <li class="company-grid__links-item">
+        <a href="#" class="button-link company-grid__links-link">Employees' posts</a>
+      </li>
+      <li class="company-grid__links-item">
+        <a href="#" class="button-link company-grid__links-link">Jobs</a>
+      </li>
+    </ul>
+  </div>
+  <div class="company-grid__item">
+    <ul class="company-grid__links-group">
+      <li class="company-grid__links-item company-grid__links-item--title">
+        <div class="company-grid__links-item-group">
+          <img
+            class="company-grid__links-icon"
+            alt="github icon"
+            width="32"
+            height="32"
+            src="/assets/images/pages/organizer/github.svg"
+          />
+          <a href="#" class="company-grid__links-link company-grid__links-link--verify">
+            <img
+              class="company-grid__links-icon"
+              alt="icon"
+              src="/assets/images/pages/organizer/verified.png"
+            />
+          </a>
+          <a href="#" class="company-grid__links-link">GitHub</a>
+        </div>
+      </li>
+      <li class="company-grid__links-item">
+        <a href="#" class="button-link company-grid__links-link">Overview</a>
+      </li>
+      <li class="company-grid__links-item">
+        <a href="#" class="button-link company-grid__links-link">Repositories (3)</a>
+      </li>
+    </ul>
+  </div>
+  <div class="company-grid__item">
+    <ul class="company-grid__links-group">
+      <li class="company-grid__links-item company-grid__links-item--title">
+        <div class="company-grid__links-item-group">
+          <img
+            class="company-grid__links-icon"
+            alt="blind icon"
+            width="32"
+            height="32"
+            src="/assets/images/pages/organizer/blind.png"
+          />
+          <a href="#" class="company-grid__links-link">LinkedIn</a>
+        </div>
+        <ul class="company-grid__links-item-info">
+          <li class="company-grid__link-stats-item">10,000+ employees</li>
+          <li class="company-grid__link-stats-item">$60K ~ $356K a year</li>
+          <li class="company-grid__link-stats-item">10 095 Reviews</li>
+        </ul>
+      </li>
+      <li class="company-grid__links-item">
+        <a href="#" class="button-link company-grid__links-link">Overview</a>
+      </li>
+      <li class="company-grid__links-item">
+        <a href="#" class="button-link company-grid__links-link">Reviews</a>
+        <span class="company-grid__links-link-star">⭐ 4.2</span>
+      </li>
+    </ul>
+  </div>
+  <div class="company-grid__item">
+    <ul class="company-grid__links-group">
+      <li class="company-grid__links-item company-grid__links-item--title">
+        <div class="company-grid__links-item-group">
+          <img
+            class="company-grid__links-icon"
+            alt="levels.fyi icon"
+            width="32"
+            height="32"
+            src="/assets/images/pages/organizer/levels.png"
+          />
+          <a href="#" class="company-grid__links-link">Levels.fyi</a>
+        </div>
+        <ul class="company-grid__links-item-info">
+          <li class="company-grid__link-stats-item">258 750 of Employees</li>
+        </ul>
+      </li>
+      <li class="company-grid__links-item">
+        <a href="#" class="button-link company-grid__links-link">Overview</a>
+      </li>
+      <li class="company-grid__links-item">
+        <a href="#" class="button-link company-grid__links-link">Jobs</a>
+      </li>
+    </ul>
+  </div>
+  <div class="company-grid__item">
+    <ul class="company-grid__links-group">
+      <li class="company-grid__links-item company-grid__links-item--title">
+        <div class="company-grid__links-item-group">
+          <img
+            class="company-grid__links-icon"
+            alt="glassdoor icon"
+            width="32"
+            height="32"
+            src="/assets/images/pages/organizer/glassdoor.svg"
+          />
+          <a href="#" class="company-grid__links-link">Glassdoor</a>
+          <a href="#" class="company-grid__links-link company-grid__links-link--verify">
+            <img
+              class="company-grid__links-icon"
+              alt="icon"
+              src="/assets/images/pages/organizer/verified-emp.png"
+            />
+          </a>
+        </div>
+        <ul class="company-grid__links-item-info">
+          <li class="company-grid__link-stats-item company-grid__link-stats-item--one-line">
+						<span>
+							<strong>4.8K</strong> jobs
+						</span>
+            <span>
+							<strong>58.2K</strong> reviews
+						</span>
+            <span>
+							<strong>166.1K</strong> salaries
+						</span>
+          </li>
+        </ul>
+      </li>
+      <li class="company-grid__links-item">
+        <a href="#" class="button-link company-grid__links-link">Overview</a>
+      </li>
+      <li class="company-grid__links-item">
+        <a href="#" class="button-link company-grid__links-link">Reviews</a>
+        <span class="company-grid__links-link-star">4.2 ★</span>
+      </li>
+      <li class="company-grid__links-item">
+        <a href="#" class="button-link company-grid__links-link">Jobs</a>
+      </li>
+    </ul>
+  </div>
+  <div class="company-grid__item">
+    <ul class="company-grid__links-group">
+      <li class="company-grid__links-item company-grid__links-item--title">
+        <div class="company-grid__links-item-group">
+          <img
+            class="company-grid__links-icon"
+            alt="indeed icon"
+            width="32"
+            height="32"
+            src="/assets/images/pages/organizer/indeed.png"
+          />
+          <a href="#" class="company-grid__links-link">Indeed</a>
+        </div>
+      </li>
+      <li class="company-grid__links-item">
+        <a href="#" class="button-link company-grid__links-link">Overview</a>
+      </li>
+      <li class="company-grid__links-item">
+        <a href="#" class="button-link company-grid__links-link">Jobs</a>
+      </li>
+    </ul>
+  </div>
+  <div class="company-grid__item">
+    <ul class="company-grid__links-group">
+      <li class="company-grid__links-item company-grid__links-item--title">
+        <div class="company-grid__links-item-group">
+          <img
+            class="company-grid__links-icon"
+            alt="investors icon"
+            width="32"
+            height="32"
+            src="/assets/images/pages/organizer/investors.svg"
+          />
+          <a href="#" class="company-grid__links-link">Investors</a>
+        </div>
+      </li>
+      <li class="company-grid__links-item">
+        <img class="company-grid__links-icon" alt="Dealroom icon" width="20" height="20" src="/assets/images/pages/organizer/dealroom.png" />
+        <a href="#" class="button-link company-grid__links-link">Dealroom</a>
+      </li>
+      <li class="company-grid__links-item">
+        <img class="company-grid__links-icon" alt="Crunchbase icon" width="20" height="20" src="/assets/images/pages/organizer/crunchbase.svg" />
+        <a href="#" class="button-link company-grid__links-link">Crunchbase</a>
+      </li>
+      <li class="company-grid__links-item">
+        <img class="company-grid__links-icon" alt="Pitchbook icon" width="20" height="20" src="/assets/images/pages/organizer/pitchbook.png" />
+        <a href="#" class="button-link company-grid__links-link">Pitchbook</a>
+      </li>
+    </ul>
+  </div>
+  <div class="company-grid__item">
+    <ul class="company-grid__links-group">
+      <li class="company-grid__links-item company-grid__links-item--title">
+        <div class="company-grid__links-item-group">
+          <img
+            class="company-grid__links-icon"
+            alt="market icon"
+            width="32"
+            height="32"
+            src="/assets/images/pages/organizer/query_stats.svg"
+          />
+          <a href="#" class="company-grid__links-link">Market</a>
+        </div>
+      </li>
+      <li class="company-grid__links-item">
+        <img class="company-grid__links-icon" alt="Yahoo Finance icon" width="20" height="20" src="/assets/images/pages/organizer/yahoo.png" />
+        <a href="#" class="button-link company-grid__links-link">Yahoo Finance</a>
+      </li>
+      <li class="company-grid__links-item">
+        <img class="company-grid__links-icon" alt="Google Finance icon" width="20" height="20" src="/assets/images/pages/organizer/google-fin.png" />
+        <a href="#" class="button-link company-grid__links-link">Google Finance</a>
+      </li>
+    </ul>
+  </div>
+  <div class="company-grid__item">
+    <ul class="company-grid__links-group company-grid__links-group--unbordered">
+      <li class="company-grid__links-item company-grid__links-item--title">
+        <div class="company-grid__links-item-group">
+          <a href="#" class="company-grid__links-link">Other links</a>
+        </div>
+      </li>
+      <li class="company-grid__links-item">
+        <img
+          class="company-grid__links-icon"
+          alt="whois icon"
+          width="20"
+          height="20"
+          src="/assets/images/pages/organizer/whois.svg"
+        />
+        <a href="#" class="button-link company-grid__links-link">Whois</a>
+      </li>
+      <li class="company-grid__links-item">
+        <img
+          class="company-grid__links-icon"
+          alt="similarweb icon"
+          width="20"
+          height="20"
+          src="/assets/images/pages/organizer/similarweb.svg"
+        />
+        <a href="#" class="button-link company-grid__links-link">Similarweb</a>
+      </li>
+      <li class="company-grid__links-item">
+        <img class="company-grid__links-icon" alt="otta icon" width="20" height="20" src="/assets/images/pages/organizer/otta.svg" />
+        <a href="#" class="button-link company-grid__links-link">Otta</a>
+      </li>
+      <li class="company-grid__links-item">
+        <img class="company-grid__links-icon" alt="xing icon" width="20" height="20" src="/assets/images/pages/organizer/xing.svg" />
+        <a href="#" class="button-link company-grid__links-link">XING</a>
+      </li>
+      <li class="company-grid__links-item">
+        <img class="company-grid__links-icon" alt="xing icon" width="20" height="20" src="/assets/images/pages/organizer/y-combinator.png" />
+        <a href="#" class="button-link company-grid__links-link">Y Combinator</a>
+      </li>
+    </ul>
+  </div>
+  <div class="company-grid__item">
+    <ul class="company-grid__links-group company-grid__links-group--unbordered">
+      <li class="company-grid__links-item company-grid__links-item--title">
+        <div class="company-grid__links-item-group">
+          <a href="#" class="company-grid__links-link">Layoffs</a>
+        </div>
+      </li>
+      <li class="company-grid__links-item">
+        <a href="#" class="button-link company-grid__links-link">In the past month</a>
+      </li>
+      <li class="company-grid__links-item">
+        <a href="#" class="button-link company-grid__links-link">This year</a>
+      </li>
+    </ul>
+  </div>
+</div>
+  </div>
+</section>
+  <section class="company-vacancies">
+	<div class="container company-vacancies__container">
+		<h2 class="company-vacancies__headline">Vacancies</h2>
+		<div class="vacancies__empty d-none">
+			<img class="vacancies__empty-logo" width="64" height="64" src="/assets/images/pages/common-images/📂.png" alt="folder">
+			<h2 class="vacancies__empty-title">No vacancies yet</h2>
+			<p class="vacancies__empty-subtitle">This company currently has no vacancies, or we are unaware of them.</p>
+		</div>
+		<div class="company-vacancies__list">
+			<div class="card ">
+	<div class="card__vacancy">
+		<aside class="card__action">
+			<button class="favorite card__action-button button-group__item" title="Add to favorite">
+				<svg class="favorite__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28"
+						 xml:space="preserve"><path d="m14.5 22.1-.5-.3-.5.3-6.8 4.2c-.5.3-1.1-.1-.9-.7L7.5 18l.1-.6-.4-.4-5.9-5.2c-.3-.3-.3-.6-.2-.8.1-.2.3-.4.5-.4l7.9-.7.6-.1.2-.6 2.9-7.4c.2-.5 1-.5 1.2 0l3.1 7.3.2.5.6.1 7.9.7c.2 0 .4.2.5.5.1.3 0 .6-.2.7l-5.9 5.2-.4.4.1.6 1.8 7.7c.1.3 0 .5-.2.6-.2.1-.5.2-.8 0l-6.6-4z"/></svg>
+			</button>
+			<button title="Hide vacancy"
+							class="button-group__item button-group__item-sloth card__action-button-sloth"></button>
+		</aside>
+		<figure class="card__header card__header--organizer">
+      <div class="card__logo-overlay card__logo-overlay--black">
+        <img class="card__logo"
+             alt="ReadyToTouch logo"
+             src="/assets/images/pages/vacancy/ready_to_touch_logo.svg"
+        />
+      </div>
+			<figcaption class="card__header-caption">
+				<a href="javascript:"
+					 class="card__headline"
+				>
+          Golang Engineer
+				</a>
+				<a href="javascript:"
+					 class="card__sub-headline">
+          ReadyToTouch
+				</a>
+        <p class="card__header-caption-text">
+          <img class="card__header-caption-icon"
+               alt="marker"
+               width="12"
+               height="12"
+               src="/assets/images/pages/organizer/marker.svg"
+          >Country, City (Full Remote)
+        </p>
+        <p class="card__header-caption-text">
+          <img class="card__header-caption-icon"
+               alt="briefcase"
+               width="12"
+               height="12"
+               src="/assets/images/pages/vacancy/credit-card.svg"
+          >$25/hour
+        </p>
+			</figcaption>
+      
+		</figure>
+		<p class="card__text card__text--organizer">
+      We are looking for a highly skilled Backend Engineer to join our team. The perfect candidate will have extensive experience in full-stack Go development and a strong understanding of Kubernetes and AWS deployment. This role requires someone who can build scalable backend systems and ensure seamless integration with our machine learning algorithms.
+		</p>
+		<div class="card__footer">
+			<div class="card__details">
+				<figure class="card__figure" title="09:05 29.02.2024">
+					<img class="card__icon"
+							 alt="card type icon"
+							 width="16"
+							 height="16"
+							 src="/assets/images/pages/online/calendar.svg"
+					/>
+					<figcaption class="card__figcaption">Yesterday</figcaption>
+				</figure>
+				<figure class="card__figure" title="Views last month: 164">
+					<img class="card__icon"
+							 alt="card type icon"
+							 width="16"
+							 height="16"
+							 src="/assets/images/pages/common/eye.svg"
+					/>
+					<figcaption class="card__figcaption">Views last month: 164</figcaption>
+				</figure>
+			</div>
+			<a target="_blank" href="javascript:" class="button button--bordered-gray button--gap-images card__footer-button">
+				<img
+					width="20"
+					height="20"
+					src="/assets/images/pages/organizer/linkedin.svg"
+					alt="go original logo"
+					class="hero__button-icon"
+				/>
+				View source
+				<img
+					width="18"
+					height="18"
+					src="/assets/images/pages/common/external-link.svg"
+					alt="arrow black icon"
+					class="hero__button-icon"
+				/>
+			</a>
+		</div>
+	</div>
+</div>
+
+			<div class="card">
+	<div class="card__vacancy">
+		<aside class="card__action">
+			<button class="favorite card__action-button button-group__item" title="Add to favorite">
+				<svg class="favorite__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28"
+						 xml:space="preserve"><path d="m14.5 22.1-.5-.3-.5.3-6.8 4.2c-.5.3-1.1-.1-.9-.7L7.5 18l.1-.6-.4-.4-5.9-5.2c-.3-.3-.3-.6-.2-.8.1-.2.3-.4.5-.4l7.9-.7.6-.1.2-.6 2.9-7.4c.2-.5 1-.5 1.2 0l3.1 7.3.2.5.6.1 7.9.7c.2 0 .4.2.5.5.1.3 0 .6-.2.7l-5.9 5.2-.4.4.1.6 1.8 7.7c.1.3 0 .5-.2.6-.2.1-.5.2-.8 0l-6.6-4z"/></svg>
+			</button>
+			<button title="Hide vacancy"
+							class="button-group__item button-group__item-sloth card__action-button-sloth"></button>
+		</aside>
+		<figure class="card__header card__header--organizer">
+      <div class="card__logo-overlay"></div>
+			<figcaption class="card__header-caption">
+				<a href="javascript:"
+					 class="card__headline"
+				>
+					Middle Golang Software Engineer
+				</a>
+				<a href="javascript:"
+					 class="card__sub-headline">
+					RoboSoft
+				</a>
+        <p class="card__header-caption-text">
+          <img class="card__header-caption-icon"
+               alt="marker"
+               width="12"
+               height="12"
+               src="/assets/images/pages/organizer/marker.svg"
+          >Country, City (Full Remote)
+        </p>
+        <p class="card__header-caption-text">
+          <img class="card__header-caption-icon"
+               alt="briefcase"
+               width="12"
+               height="12"
+               src="/assets/images/pages/vacancy/credit-card.svg"
+          >€2,500/month
+        </p>
+			</figcaption>
+		</figure>
+		<p class="card__text card__text--organizer">
+			We are looking for a Middle Golang Software Engineer to join our team helping us build our next-generation platform products BOSS Revolution.
+		</p>
+		<div class="card__footer">
+			<div class="card__details">
+				<figure class="card__figure" title="09:05 29.02.2024">
+					<img class="card__icon"
+							 alt="card type icon"
+							 width="16"
+							 height="16"
+							 src="/assets/images/pages/online/calendar.svg"
+					/>
+					<figcaption class="card__figcaption">Yesterday</figcaption>
+				</figure>
+				<figure class="card__figure" title="Views last month: 164">
+					<img class="card__icon"
+							 alt="card type icon"
+							 width="16"
+							 height="16"
+							 src="/assets/images/pages/common/eye.svg"
+					/>
+					<figcaption class="card__figcaption">Views last month: 164</figcaption>
+				</figure>
+			</div>
+			<button target="_blank" href="#" class="button button--bordered-gray button--gap-images">
+				<img
+					width="20"
+					height="20"
+					src="/assets/images/pages/organizer/otta.svg"
+					alt="go original logo"
+					class="hero__button-icon"
+				/>
+				View source
+				<img
+					width="18"
+					height="18"
+					src="/assets/images/pages/common/external-link.svg"
+					alt="arrow black icon"
+					class="hero__button-icon"
+				/>
+			</button>
+		</div>
+	</div>
+</div>
+
+			<div class="card">
+	<div class="card__vacancy">
+		<aside class="card__action">
+			<button class="favorite card__action-button button-group__item" title="Add to favorite">
+				<svg class="favorite__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28"
+						 xml:space="preserve"><path d="m14.5 22.1-.5-.3-.5.3-6.8 4.2c-.5.3-1.1-.1-.9-.7L7.5 18l.1-.6-.4-.4-5.9-5.2c-.3-.3-.3-.6-.2-.8.1-.2.3-.4.5-.4l7.9-.7.6-.1.2-.6 2.9-7.4c.2-.5 1-.5 1.2 0l3.1 7.3.2.5.6.1 7.9.7c.2 0 .4.2.5.5.1.3 0 .6-.2.7l-5.9 5.2-.4.4.1.6 1.8 7.7c.1.3 0 .5-.2.6-.2.1-.5.2-.8 0l-6.6-4z"/></svg>
+			</button>
+			<button title="Hide vacancy"
+							class="button-group__item button-group__item-sloth card__action-button-sloth"></button>
+		</aside>
+		<figure class="card__header card__header--organizer">
+      <div class="card__logo-overlay"></div>
+			<figcaption class="card__header-caption">
+				<a href="javascript:"
+					 class="card__headline"
+				>
+					Backend Developer
+				</a>
+				<a href="javascript:"
+					 class="card__sub-headline">
+					Ubisoft
+				</a>
+        <p class="card__header-caption-text">
+          <img class="card__header-caption-icon"
+               alt="marker"
+               width="12"
+               height="12"
+               src="/assets/images/pages/organizer/marker.svg"
+          >Country, City (Full Remote)
+        </p>
+        <p class="card__header-caption-text">
+          <img class="card__header-caption-icon"
+               alt="briefcase"
+               width="12"
+               height="12"
+               src="/assets/images/pages/vacancy/credit-card.svg"
+          >$25/hour
+        </p>
+			</figcaption>
+		</figure>
+		<p class="card__text card__text--organizer">
+			Ubisoft IT is looking for a Golang Developer to join the IT Engineering & Platform team. As a Golang Developer joining this team,
+			you will be responsible for designing and building a control plane that ensures the reliability, scalability, and security of
+			Ubisoft’s Kubernetes infrastructure.
+		</p>
+		<div class="card__footer">
+			<div class="card__details">
+				<figure class="card__figure" title="09:05 29.02.2024">
+					<img class="card__icon"
+							 alt="card type icon"
+							 width="16"
+							 height="16"
+							 src="/assets/images/pages/online/calendar.svg"
+					/>
+					<figcaption class="card__figcaption">Yesterday</figcaption>
+				</figure>
+				<figure class="card__figure" title="Views last month: 164">
+					<img class="card__icon"
+							 alt="card type icon"
+							 width="16"
+							 height="16"
+							 src="/assets/images/pages/common/eye.svg"
+					/>
+					<figcaption class="card__figcaption">Views last month: 164</figcaption>
+				</figure>
+			</div>
+			<button target="_blank" href="#" class="button button--bordered-gray button--gap-images">
+				<img
+					width="20"
+					height="20"
+					src="/assets/images/pages/organizer/xing.svg"
+					alt="go original logo"
+					class="hero__button-icon"
+				/>
+				View source
+				<img
+					width="18"
+					height="18"
+					src="/assets/images/pages/common/external-link.svg"
+					alt="arrow black icon"
+					class="hero__button-icon"
+				/>
+			</button>
+		</div>
+	</div>
+</div>
+
+		</div>
+	</div>
+</section>
+
+  <section class="sources-evidence">
+  <div class="container sources-evidence__container">
+    <h2 class="sources-evidence__headline">Sources & Evidence</h2>
+    <div class="sources">
+      <a href="javascript:" class="sources__item">
+        <figure class="sources__figure">
+          <p class="sources__text">Why We Write Everything in Go – Bitly, 2022</p>
+          <div class="sources__image-wrapper">
+            <img class="sources__image"
+                 alt="open new window"
+                 src="/assets/images/pages/organizer/open-new-window.svg"
+                 width="12"
+                 height="12"
+            >
+          </div>
+        </figure>
+      </a>
+      <a href="javascript:" class="sources__item">
+        <figure class="sources__figure">
+          <p class="sources__text">Why Use Golang for Web Development – Surf, 2022</p>
+          <div class="sources__image-wrapper">
+            <img class="sources__image"
+                 alt="open new window"
+                 src="/assets/images/pages/organizer/open-new-window.svg"
+                 width="12"
+                 height="12"
+            >
+          </div>
+        </figure>
+      </a>
+      <a href="javascript:" class="sources__item">
+        <figure class="sources__figure">
+          <p class="sources__text">What's so great about Go? – Stack Overflow Blog, 2020</p>
+          <div class="sources__image-wrapper">
+            <img class="sources__image"
+                 alt="open new window"
+                 src="/assets/images/pages/organizer/open-new-window.svg"
+                 width="12"
+                 height="12"
+            >
+          </div>
+        </figure>
+      </a>
+    </div>
+  </div>
+</section>
+  <section class="company-statistics">
+  <div class="container company-statistics__container">
+    <h2 class="company-statistics__headline">Statistics</h2>
+    <div class="stats">
+      <header class="stats-caption">
+        <div class="stats-caption__counters">
+          <h3 class="stats-caption__title">Views</h3>
+          <div class="stats-caption__counters-group">
+            <div class="stats-caption__counters-item">
+              <p class="stats-caption__counters-views">Total</p>
+              <p class="stats-caption__counters-item-number">846</p>
+            </div>
+            <div class="stats-caption__counters-item">
+              <p class="stats-caption__counters-views">Last month</p>
+              <p class="stats-caption__counters-item-number">146</p>
+            </div>
+          </div>
+        </div>
+        <div class="stats-caption__counters">
+          <h3 class="stats-caption__title">Added to favorites</h3>
+          <div class="stats-caption__counters-group">
+            <div class="stats-caption__counters-item">
+              <p class="stats-caption__counters-views">Total</p>
+              <p class="stats-caption__counters-item-number">68</p>
+            </div>
+            <div class="stats-caption__counters-item">
+              <p class="stats-caption__counters-views">Last month</p>
+              <p class="stats-caption__counters-item-number">13</p>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="stats__item">
+        <div class="stats__header">
+          <h3 class="stats__title">Company website views</h3>
+          <div class="stats__period">Last month</div>
+        </div>
+        <div class="stats__chart stats__chart--page-views-statistics js-page-views-statistics"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+  <footer class="footer">
+    <div class="footer__overlay">
+      <div class="footer__wrapper">
+        <div class="footer__group">
+          <div class="footer__info">
+            <a href="/" class="footer__title">
+              <h3 class="footer__title-link">ReadyToTouch</h3>
+            </a>
+            <p class="footer__subtitle">Space to help you find jobs</p>
+            <img width="98"
+                 height="64"
+                 loading="lazy"
+                 class="footer__ukraine-map"
+                 src="/assets/images/pages/online-new/ukraine-map.svg"
+                 alt="Map of Ukraine"
+            >
+          </div>
+          <div class="footer__right-side">
+            <span class="github-btn github-stargazers github-btn-large js-github-button">
+  <a class="gh-btn"
+     href="https://github.com/readytotouch/readytotouch.github.io"
+     rel="noopener noreferrer"
+     target="_blank"
+     aria-label="Star readytotouch/readytotouch.github.io on GitHub"
+  >
+    <span class="gh-ico" aria-hidden="true"></span>
+    <span class="gh-text">Star</span>
+  </a>
+  <a class="gh-count gh-count--is-hidden js-github-count"
+     href="https://github.com/readytotouch/readytotouch.github.io/stargazers"
+     rel="noopener noreferrer"
+     target="_blank"
+     aria-label="0 stargazers on GitHub"
+     aria-hidden="true"
+  >0</a>
+</span>
+
+            <div class="footer__support">
+              <a href="https://savelife.in.ua/en/" target="_blank" class="button button--bordered-gray footer__link">
+                <figure class="footer__support-figure">
+                  <img width="49"
+                       height="23"
+                       src="/assets/images/pages/common-images/come_back_alive.svg"
+                       alt="come back alive logo"
+                  >
+                  <figcaption class="footer__support-caption">Support</figcaption>
+                </figure>
+                <div class="footer__support-icon-box">
+                  <img width="18"
+                       height="18"
+                       src="/assets/images/pages/common/external-link.svg"
+                       alt="external link icon"
+                  >
+                </div>
+              </a>
+              <a href="https://war.ukraine.ua/" target="_blank" class="button button--bordered-gray footer__link footer__link--ukraine">
+                war.ukraine.ua
+                <div class="footer__support-icon-box">
+                  <img width="18"
+                       height="18"
+                       src="/assets/images/pages/common/external-link.svg"
+                       alt="external link icon"
+                  >
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__copyrights">
+          &copy; 2025 Yaroslav Podorvanov
+          <img width="24"
+               height="24"
+               class="footer__flag-ua"
+               src="/assets/images/pages/online-new/ua_flag_with_waves.svg"
+               alt="Flag of Ukraine"
+          >
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+<script src="/assets/js/common_c0ddd1cbf1b9bec5f52a9c323b936e83.js"></script>
+<script src="/assets/js/organizer-company-responsive_425c2656a4c0cb23c3c7fc995558ebd1.js"></script>
+</body>
+</html>
+

@@ -191,6 +191,7 @@ func main() {
 	r.GET("/golang/companies/:company_alias", organizerController.CompanyV2)
 	r.GET("/golang/companies/:company_alias/v1", organizerController.CompanyV1)
 	r.GET("/golang/companies/:company_alias/v2", organizerController.CompanyV2)
+	r.GET("/golang/companies/:company_alias/v3", organizerController.CompanyV3)
 	r.GET("/golang/jobs", organizerController.Vacancies)
 	r.GET("/golang/communities", organizerController.GolangCommunities)
 	r.GET("/rust/companies", organizerController.CompaniesV2)
@@ -199,6 +200,7 @@ func main() {
 	r.GET("/rust/companies/:company_alias", organizerController.CompanyV2)
 	r.GET("/rust/companies/:company_alias/v1", organizerController.CompanyV1)
 	r.GET("/rust/companies/:company_alias/v2", organizerController.CompanyV2)
+	r.GET("/rust/companies/:company_alias/v3", organizerController.CompanyV3)
 	r.GET("/rust/jobs", organizerController.Vacancies)
 	r.GET("/rust/communities", organizerController.RustCommunities)
 	r.GET("/zig/companies", organizerController.Waitlist)
@@ -207,6 +209,7 @@ func main() {
 	r.GET("/zig/companies/:company_alias", organizerController.CompanyV2)
 	r.GET("/zig/companies/:company_alias/v1", organizerController.CompanyV1)
 	r.GET("/zig/companies/:company_alias/v2", organizerController.CompanyV2)
+	r.GET("/zig/companies/:company_alias/v3", organizerController.CompanyV3)
 	r.GET("/zig/jobs", organizerController.Waitlist)
 	r.GET("/zig/communities", organizerController.ZigCommunities)
 	r.GET("/scala/companies", organizerController.CompaniesV2)
@@ -215,6 +218,7 @@ func main() {
 	r.GET("/scala/companies/:company_alias", organizerController.CompanyV2)
 	r.GET("/scala/companies/:company_alias/v1", organizerController.CompanyV1)
 	r.GET("/scala/companies/:company_alias/v2", organizerController.CompanyV2)
+	r.GET("/scala/companies/:company_alias/v3", organizerController.CompanyV3)
 	r.GET("/scala/jobs", organizerController.Vacancies)
 	r.GET("/scala/communities", organizerController.ScalaCommunities)
 	r.GET("/elixir/companies", organizerController.CompaniesV2)
@@ -223,6 +227,7 @@ func main() {
 	r.GET("/elixir/companies/:company_alias", organizerController.CompanyV2)
 	r.GET("/elixir/companies/:company_alias/v1", organizerController.CompanyV1)
 	r.GET("/elixir/companies/:company_alias/v2", organizerController.CompanyV2)
+	r.GET("/elixir/companies/:company_alias/v3", organizerController.CompanyV3)
 	r.GET("/elixir/jobs", organizerController.Vacancies)
 	r.GET("/elixir/communities", organizerController.ElixirCommunities)
 	r.GET("/erlang/companies", organizerController.Waitlist)
@@ -231,6 +236,7 @@ func main() {
 	r.GET("/erlang/companies/:company_alias", organizerController.CompanyV2)
 	r.GET("/erlang/companies/:company_alias/v1", organizerController.CompanyV1)
 	r.GET("/erlang/companies/:company_alias/v2", organizerController.CompanyV2)
+	r.GET("/erlang/companies/:company_alias/v3", organizerController.CompanyV3)
 	r.GET("/erlang/jobs", organizerController.Waitlist)
 	r.GET("/erlang/communities", organizerController.TODO)
 	r.GET("/clojure/companies", organizerController.CompaniesV2)
@@ -239,6 +245,7 @@ func main() {
 	r.GET("/clojure/companies/:company_alias", organizerController.CompanyV2)
 	r.GET("/clojure/companies/:company_alias/v1", organizerController.CompanyV1)
 	r.GET("/clojure/companies/:company_alias/v2", organizerController.CompanyV2)
+	r.GET("/clojure/companies/:company_alias/v3", organizerController.CompanyV3)
 	r.GET("/clojure/jobs", organizerController.Vacancies)
 	r.GET("/clojure/communities", organizerController.ClojureCommunities)
 	r.GET("/haskell/companies", organizerController.CompaniesV2)
@@ -247,6 +254,7 @@ func main() {
 	r.GET("/haskell/companies/:company_alias", organizerController.CompanyV2)
 	r.GET("/haskell/companies/:company_alias/v1", organizerController.CompanyV1)
 	r.GET("/haskell/companies/:company_alias/v2", organizerController.CompanyV2)
+	r.GET("/haskell/companies/:company_alias/v3", organizerController.CompanyV3)
 	r.GET("/haskell/jobs", organizerController.Vacancies)
 	r.GET("/haskell/communities", organizerController.TODO)
 	r.GET("/fsharp/companies", organizerController.Waitlist)
@@ -255,6 +263,7 @@ func main() {
 	r.GET("/fsharp/companies/:company_alias", organizerController.CompanyV2)
 	r.GET("/fsharp/companies/:company_alias/v1", organizerController.CompanyV1)
 	r.GET("/fsharp/companies/:company_alias/v2", organizerController.CompanyV2)
+	r.GET("/fsharp/companies/:company_alias/v3", organizerController.CompanyV3)
 	r.GET("/fsharp/jobs", organizerController.Waitlist)
 	r.GET("/fsharp/communities", organizerController.TODO)
 	r.GET("/ocaml/companies", organizerController.Waitlist)
@@ -263,6 +272,7 @@ func main() {
 	r.GET("/ocaml/companies/:company_alias", organizerController.CompanyV2)
 	r.GET("/ocaml/companies/:company_alias/v1", organizerController.CompanyV1)
 	r.GET("/ocaml/companies/:company_alias/v2", organizerController.CompanyV2)
+	r.GET("/ocaml/companies/:company_alias/v3", organizerController.CompanyV3)
 	r.GET("/ocaml/jobs", organizerController.Waitlist)
 	r.GET("/ocaml/communities", organizerController.TODO)
 	r.GET("/gleam/companies", organizerController.Waitlist)
@@ -271,6 +281,7 @@ func main() {
 	r.GET("/gleam/companies/:company_alias", organizerController.CompanyV2)
 	r.GET("/gleam/companies/:company_alias/v1", organizerController.CompanyV1)
 	r.GET("/gleam/companies/:company_alias/v2", organizerController.CompanyV2)
+	r.GET("/gleam/companies/:company_alias/v3", organizerController.CompanyV3)
 	r.GET("/gleam/jobs", organizerController.Waitlist)
 	r.GET("/gleam/communities", organizerController.TODO)
 	r.GET("/mojo/companies", organizerController.Waitlist)
@@ -279,6 +290,7 @@ func main() {
 	r.GET("/mojo/companies/:company_alias", organizerController.CompanyV2)
 	r.GET("/mojo/companies/:company_alias/v1", organizerController.CompanyV1)
 	r.GET("/mojo/companies/:company_alias/v2", organizerController.CompanyV2)
+	r.GET("/mojo/companies/:company_alias/v3", organizerController.CompanyV3)
 	r.GET("/mojo/jobs", organizerController.Waitlist)
 	r.GET("/mojo/communities", organizerController.TODO)
 	r.GET("/v/:vacancy_id", organizerController.VacancyRedirect)
@@ -375,9 +387,12 @@ func main() {
 		GET("/design/:language/companies/:company_alias", s("./public/design/organizer-statistics.html")).
 		GET("/design/:language/companies/:company_alias/v1", s("./public/design-v1/organizer-statistics.html")).
 		GET("/design/:language/companies/:company_alias/v2", s("./public/design/organizer-statistics.html")).
+		GET("/design/:language/companies/:company_alias/v3", s("./public/design-v3/organizer-company-responsive-auth.html")).
 		GET("/design/:language/companies", s("./public/design/organizer-companies.html")).
 		GET("/design/:language/companies/v1", s("./public/design-v1/organizer-companies.html")).
 		GET("/design/:language/companies/v2", s("./public/design/organizer-companies.html")).
+		GET("/design/:language/companies/v3", s("./public/design-v3/organizer-companies-responsive.html")).
+		GET("/design/:language/companies/v3/auth", s("./public/design-v3/organizer-companies-responsive-auth.html")).
 		GET("/design/:language/jobs", s("./public/design/organizer-vacancies.html")).
 		GET("/design/:language/jobs/subscribe", s("./public/design/organizer-vacancies-subscribe.html")).
 		GET("/design/:language/jobs/unsubscribe", s("./public/design/organizer-vacancies-unsubscribe.html")).
