@@ -177,7 +177,18 @@ func StreamOrganizersCompanyV3(qw422016 *qt422016.Writer,
         </defs>
       </svg>
 
-      <div class="company-card">
+      <div
+        class="js-company company-card"
+        data-company-id="`)
+	qw422016.N().DL(company.ID)
+	qw422016.N().S(`"
+        data-company-name="`)
+	qw422016.E().S(company.Name)
+	qw422016.N().S(`"
+        data-company-type="`)
+	qw422016.E().S(string(company.Type))
+	qw422016.N().S(`"
+      >
         <aside class="company-card__action">
           `)
 	if favorite {
@@ -1174,7 +1185,8 @@ func StreamOrganizersCompanyV3(qw422016 *qt422016.Writer,
 
   <section class="company-vacancies"></section>
 
-  <section class="sources-evidence"></section>
+  `)
+	qw422016.N().S(`
 
   <section class="company-statistics">
     <div class="container company-statistics__container">

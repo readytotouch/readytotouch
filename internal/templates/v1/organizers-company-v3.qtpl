@@ -112,7 +112,12 @@
         </defs>
       </svg>
 
-      <div class="company-card">
+      <div
+        class="js-company company-card"
+        data-company-id="{%dl company.ID %}"
+        data-company-name="{%s company.Name %}"
+        data-company-type="{%s string(company.Type) %}"
+      >
         <aside class="company-card__action">
           {% if favorite %}
             <button class="js-company-favorite favorite company-card__action-button button-group__item in-favorite" title="Remove from favorites">
@@ -866,7 +871,10 @@
 
   <section class="company-vacancies"></section>
 
+  {% comment %}
+  <!-- TODO evidence -->
   <section class="sources-evidence"></section>
+  {% endcomment %}
 
   <section class="company-statistics">
     <div class="container company-statistics__container">
