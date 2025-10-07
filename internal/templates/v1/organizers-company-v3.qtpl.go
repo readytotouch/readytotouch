@@ -1183,7 +1183,8 @@ func StreamOrganizersCompanyV3(qw422016 *qt422016.Writer,
     </div>
   </section>
 
-  <section class="company-vacancies"></section>
+  `)
+	qw422016.N().S(`
 
   `)
 	qw422016.N().S(`

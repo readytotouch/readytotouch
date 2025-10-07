@@ -869,7 +869,10 @@
     </div>
   </section>
 
+  {% comment %}
+  <!-- TODO vacancies -->
   <section class="company-vacancies"></section>
+  {% endcomment %}
 
   {% comment %}
   <!-- TODO evidence -->
