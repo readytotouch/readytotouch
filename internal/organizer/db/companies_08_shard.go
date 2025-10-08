@@ -2450,9 +2450,23 @@ func companies08Shard() []domain.CompanyProfile {
 						},
 					},
 				},
-				domain.Rust:  {},
-				domain.Zig:   {},
-				domain.Scala: {},
+				domain.Rust: {},
+				domain.Zig:  {},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer (Java, Scala)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4307544815/",
+							Location:             "Pune, Maharashtra, India",
+							Date:                 mustDate("2025-10-04"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
 				domain.Elixir: {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
