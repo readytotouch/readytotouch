@@ -3417,7 +3417,7 @@ func companies15Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4297469027/",
 							Location:             "United States",
-							Date:                 mustDate("2025-09-11"),
+							Date:                 mustDate("2025-10-04", "2025-09-11"),
 							WithSalary:           true, // $118.6k/yr - $148.2k/yr
 							Remote:               true,
 						},

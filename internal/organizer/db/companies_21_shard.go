@@ -2104,7 +2104,7 @@ func companies21Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4299028566/",
 							Location:             "Columbus, OH",
-							Date:                 mustDate("2025-09-11"),
+							Date:                 mustDate("2025-10-04", "2025-09-11"),
 							WithSalary:           true, // $106.9k/yr - $178.1k/yr
 							Remote:               false,
 						},
