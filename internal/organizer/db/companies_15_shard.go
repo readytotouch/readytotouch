@@ -908,7 +908,7 @@ func companies15Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4300101816/",
 							Location:             "Palo Alto, CA",
-							Date:                 mustDate("2025-09-14"),
+							Date:                 mustDate("2025-10-05", "2025-09-14"),
 							WithSalary:           false,
 							Remote:               false,
 						},
