@@ -595,7 +595,7 @@ func companies10Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4298290129/",
 							Location:             "Plano, TX",
-							Date:                 mustDate("2025-10-01", "2025-09-10"),
+							Date:                 mustDate("2025-10-08"), // mustDate("2025-10-01", "2025-09-10"),
 							WithSalary:           false,
 							Remote:               false,
 						},

@@ -293,7 +293,7 @@ func companies11Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4300803088/",
 							Location:             "Sydney, New South Wales, Australia",
-							Date:                 mustDate("2025-09-16"),
+							Date:                 mustDate("2025-10-07", "2025-09-16"),
 							WithSalary:           false,
 							Remote:               false,
 						},

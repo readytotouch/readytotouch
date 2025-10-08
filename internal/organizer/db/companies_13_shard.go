@@ -1958,7 +1958,7 @@ func companies13Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4203555647/",
 							Location:             "Thiruvananthapuram, Kerala, India",
-							Date:                 mustDate("2025-09-10", "2025-07-30", "2025-07-07"),
+							Date:                 mustDate("2025-10-03", "2025-09-10", "2025-07-30", "2025-07-07"),
 							WithSalary:           false,
 							Remote:               false,
 						},

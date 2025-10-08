@@ -1995,6 +1995,16 @@ func companies04Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Principal Go Software Engineer",
+							ShortDescription:     "(Cortex)",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4299170547/",
+							Location:             "Tel Aviv-Yafo, Tel Aviv District, Israel",
+							Date:                 mustDate("2025-10-04"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
