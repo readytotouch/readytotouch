@@ -1235,17 +1235,18 @@ func companies04Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "ZiplineTeam",
+				Followers: "126",
+				Verified:  true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Zipline-EI_IE1394276.11,18.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Zipline-Reviews-E1394276.htm",
 				JobsURL:     "https://www.glassdoor.com/Jobs/Zipline-Jobs-E1394276.htm",
 				Jobs:        "37",
-				Reviews:     "260",
+				Reviews:     "261",
 				Salaries:    "506",
-				ReviewsRate: "3.0",
+				ReviewsRate: "3.1",
 				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
@@ -1260,7 +1261,7 @@ func companies04Shard() []domain.CompanyProfile {
 					Vacancies:               []domain.Vacancy{},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 1,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer",
@@ -1886,10 +1887,10 @@ func companies04Shard() []domain.CompanyProfile {
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Palo-Alto-Networks-EI_IE115142.11,29.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Palo-Alto-Networks-Reviews-E115142.htm",
 				JobsURL:     "https://www.glassdoor.com/Jobs/Palo-Alto-Networks-Jobs-E115142.htm",
-				Jobs:        "761",
-				Reviews:     "2.7K",
-				Salaries:    "8.8K",
-				ReviewsRate: "4.0",
+				Jobs:        "1.2K",
+				Reviews:     "2.9K",
+				Salaries:    "9.3K",
+				ReviewsRate: "3.9",
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
