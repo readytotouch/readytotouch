@@ -4921,7 +4921,7 @@ func companies21Shard() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
+			Name:    "Kaluza",
 			Website: "https://www.kaluza.com/",
 			Careers: "https://careers.kaluza.com/",
 			About:   "https://www.kaluza.com/about",
@@ -5005,7 +5005,7 @@ func companies21Shard() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
+			Name:    "Zego",
 			Website: "https://www.zego.com/",
 			Careers: "https://www.zego.com/careers/",
 			About:   "https://www.zego.com/about-us/",
@@ -5509,78 +5509,6 @@ func companies21Shard() []domain.CompanyProfile {
 		{
 			ID:      0,  // system
 			Type:    "", // system
-			Name:    "",
-			Website: "",
-			Careers: "",
-			About:   "",
-			Blog:    "",
-			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
-				Alias:             "",
-				Name:              "",
-				Followers:         "",
-				Employees:         "",
-				AssociatedMembers: "",
-				Verified:          false,
-			},
-			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
-			},
-			BlindProfile: domain.BlindProfile{
-				Alias: "",
-			},
-			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
-			},
-			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-			},
-			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
-			},
-			Languages: domain.Languages{
-				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
-				},
-				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
-				},
-				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
-				},
-				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
-				},
-				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
-				},
-				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
-				},
-				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
-				},
-				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
-				},
-			},
-			ShortDescription: "",
-			Industries:       []domain.Industry{
-				// NOP
-			},
-		},
-		{
-			ID:      0,  // system
-			Type:    "", // system
 			Name:    "Tazapay",
 			Website: "https://tazapay.com/",
 			Careers: "https://tazapay.com/careers",
@@ -5742,6 +5670,90 @@ func companies21Shard() []domain.CompanyProfile {
 				},
 			},
 			ShortDescription: "Our intelligent platform enables consumers and dealers to complete a guided vehicle inspection that generates a comprehensive condition report in only minutes",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Roku",
+			Website: "https://www.roku.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                50076,
+				IDs:               []int{50076, 220799},
+				Alias:             "roku",
+				Name:              "Roku",
+				Followers:         "458K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "4,135",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer (Golang / Kubernetes)",
+							ShortDescription:     "Observability Platform",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4312301338/",
+							Location:             "Aarhus, Central Denmark Region, Denmark",
+							Date:                 mustDate("2025-10-08"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Platform for streaming television",
 			Industries:       []domain.Industry{
 				// NOP
 			},
