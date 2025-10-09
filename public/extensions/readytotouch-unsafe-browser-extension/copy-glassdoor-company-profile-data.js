@@ -29,7 +29,7 @@ function trim($element) {
 }
 
 function isEngagedEmployer() {
-    const elements = document.querySelectorAll(`p[class^="employer-engagement-status_engementTrigger"]`);
+    const elements = document.querySelectorAll(`p[class^="employer-engagement-status_engagement"]`);
 
     return Array.from(elements).some($element => $element.textContent.trim() === "Engaged Employer");
 }
