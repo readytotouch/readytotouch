@@ -656,8 +656,8 @@
   },
   {
     "alias": "birdiecare",
-    "source": "",
-    "destination": ""
+    "source": "birdiecare-200x200.jpeg",
+    "destination": "birdiecare.jpeg"
   },
   {
     "alias": "bitaksi",
@@ -916,8 +916,8 @@
   },
   {
     "alias": "centra-commerce",
-    "source": "",
-    "destination": ""
+    "source": "centra-200x200.png",
+    "destination": "centra-commerce.png"
   },
   {
     "alias": "centralretail",
@@ -2651,8 +2651,8 @@
   },
   {
     "alias": "italki",
-    "source": "",
-    "destination": ""
+    "source": "italki-200x200.jpeg",
+    "destination": "italki.jpeg"
   },
   {
     "alias": "jack-henry",
@@ -2921,8 +2921,8 @@
   },
   {
     "alias": "lifemote-networks",
-    "source": "",
-    "destination": ""
+    "source": "lifemote-256x256.png",
+    "destination": "lifemote-networks.png"
   },
   {
     "alias": "lightspeed-systems",
@@ -4411,8 +4411,8 @@
   },
   {
     "alias": "roku",
-    "source": "",
-    "destination": ""
+    "source": "roku-200x200.jpeg",
+    "destination": "roku.jpeg"
   },
   {
     "alias": "rollee",
@@ -4446,8 +4446,8 @@
   },
   {
     "alias": "rust-foundation",
-    "source": "",
-    "destination": ""
+    "source": "rust-foundation-200x200.jpeg",
+    "destination": "rust-foundation.jpeg"
   },
   {
     "alias": "rxbenefits-inc-",
@@ -6021,8 +6021,8 @@
   },
   {
     "alias": "zegocover",
-    "source": "",
-    "destination": ""
+    "source": "zego-200x200.jpeg",
+    "destination": "zegocover.jpeg"
   },
   {
     "alias": "zelis",
