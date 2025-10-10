@@ -27,6 +27,7 @@ func StreamOrganizersCompaniesV2(qw422016 *qt422016.Writer,
 ) {
 	qw422016.N().S(`<!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<title>`)
 	qw422016.E().S(organizerFeature.Organizer.Title)
@@ -98,7 +99,7 @@ func StreamOrganizersCompaniesV2(qw422016 *qt422016.Writer,
 
 <body class="organizer-companies-inner">
 <main class="main-wrapper">
-	<header class="header">
+<header class="header">
   <div class="header__wrapper">
     <a href="/organizers" class="header__logo">
       <img
@@ -765,6 +766,7 @@ func StreamOrganizersCompaniesV2(qw422016 *qt422016.Writer,
 	qw422016.N().D(appVersion)
 	qw422016.N().S(`"></script>
 </body>
+
 </html>
 `)
 }

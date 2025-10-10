@@ -3,8 +3,6 @@
 
 package v1
 
-import "strconv"
-
 import (
 	qtio422016 "io"
 
@@ -25,7 +23,181 @@ func StreamOrganizersCompaniesV3(qw422016 *qt422016.Writer,
 	userCompanyFavoriteMap map[int64]bool,
 	authQueryParams string,
 ) {
+	qw422016.N().S(`<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>`)
+	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.N().S(` companies – product and startup teams using `)
+	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.N().S(` | ReadyToTouch</title>
+	<meta name="title" content="`)
+	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.N().S(` companies – product and startup teams using `)
+	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.N().S(` | ReadyToTouch">
+	<meta name="description" content="Discover companies using `)
+	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.N().S(` in production. This list features startups and product teams hiring `)
+	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.N().S(` developers or already working with `)
+	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.N().S(`.">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="author" type="text/plain" href="https://readytotouch.com/humans.txt"/>
+
+    <meta property="og:title" content="`)
+	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.N().S(` companies | ReadyToTouch">
+    <meta property="og:description" content="Discover startups and product teams using `)
+	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.N().S(` in production.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://readytotouch.com/assets/images/og/organizers-light.jpg">
+    <meta property="og:url" content="https://readytotouch.com/`)
+	qw422016.E().S(organizerFeature.Organizer.Alias)
+	qw422016.N().S(`/companies">
+
+    <!-- JSON-LD (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "`)
+	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.N().S(` companies",
+      "description": "List of companies using `)
+	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.N().S(` in production. Startups and product teams.",
+      "url": "https://readytotouch.com/`)
+	qw422016.E().S(organizerFeature.Organizer.Alias)
+	qw422016.N().S(`/companies"
+    }
+    </script>
+
+    `)
+	streamfavicon(qw422016)
 	qw422016.N().S(`
+    `)
+	streamorganizersFonts(qw422016)
+	qw422016.N().S(`
+    `)
+	streamorganizersCompaniesV3Styles(qw422016)
+	qw422016.N().S(`
+    `)
+	streamplausibleAnalytics(qw422016)
+	qw422016.N().S(`
+    `)
+	streamga(qw422016)
+	qw422016.N().S(`
+</head>
+
+<body>
+<div class="main-wrapper main-wrapper--organizer-inner">
+<header class="header">
+  <div class="header__wrapper">
+    <a href="/`)
+	qw422016.E().S(organizerFeature.Organizer.Alias)
+	qw422016.N().S(`" class="header__logo">
+      <img
+        width="30"
+        height="30"
+        class="header__logo-img"
+        src="/assets/images/pages/organizer/`)
+	qw422016.E().S(organizerFeature.Organizer.Logo)
+	qw422016.N().S(`"
+        alt="organizer logo"
+      />
+      <span class="header__logo-label">Organizer</span>
+    </a>
+    <div class="header__nav-overlay js-header-nav">
+      <ul class="header__nav">
+        <li class="header__nav-item">
+          <a href="/`)
+	qw422016.E().S(organizerFeature.Organizer.Alias)
+	qw422016.N().S(`/companies" class="header__nav-link active">Companies</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="/`)
+	qw422016.E().S(organizerFeature.Organizer.Alias)
+	qw422016.N().S(`/jobs" class="header__nav-link">Jobs</a>
+        </li>
+        `)
+	qw422016.N().S(`
+      </ul>
+      `)
+	streamorganizersHeaderStarsV3(qw422016)
+	qw422016.N().S(`
+      `)
+	if len(headerProfiles) > 0 {
+		qw422016.N().S(`
+        `)
+		streamorganizersHeaderProfileV3(qw422016, headerProfiles)
+		qw422016.N().S(`
+      `)
+	} else {
+		qw422016.N().S(`
+        <a href="/`)
+		qw422016.E().S(organizerFeature.Organizer.Alias)
+		qw422016.N().S(`/welcome`)
+		qw422016.E().S(authQueryParams)
+		qw422016.N().S(`" class="button button--bordered-black button--small-padding header__login-button">Log in</a>
+      `)
+	}
+	qw422016.N().S(`
+    </div>
+    `)
+	streamorganizersHamburgerV3(qw422016)
+	qw422016.N().S(`
+  </div>
+</header>
+
+<main class="main-content">
+  <div class="container">
+    <nav aria-label="breadcrumb" aria-labelledby="navigation through the bread crumbs" class="breadcrumb">
+      <ul class="breadcrumb__list">
+        <li class="breadcrumb__item">
+          <a class="breadcrumb__link" href="/">Main</a>
+        </li>
+        <li class="breadcrumb__item">
+          <a class="breadcrumb__link" href="/`)
+	qw422016.E().S(organizerFeature.Organizer.Alias)
+	qw422016.N().S(`">`)
+	qw422016.E().S(organizerFeature.Organizer.Title)
+	qw422016.N().S(`</a>
+        </li>
+        <li class="breadcrumb__item">
+          <span class="breadcrumb__page" aria-current="page">`)
+	qw422016.E().S(organizerFeature.Title)
+	qw422016.N().S(`</span>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <section class="search-container container">
+
+  </section>
+
+  <div class="search-result mt-32">
+
+  </div>
+
+</main>
+
+`)
+	streamorganizersFooterV3(qw422016)
+	qw422016.N().S(`
+</div>
+<script src="/assets/js/organizers-companies-app.js?`)
+	qw422016.N().D(appVersion)
+	qw422016.N().S(`"></script>
+</body>
+
+</html>
 `)
 }
 

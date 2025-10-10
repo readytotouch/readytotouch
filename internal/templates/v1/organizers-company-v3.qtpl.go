@@ -1249,6 +1249,7 @@ func StreamOrganizersCompanyV3(qw422016 *qt422016.Writer,
 	qw422016.N().D(appVersion)
 	qw422016.N().S(`"></script>
 </body>
+
 </html>
 `)
 }
