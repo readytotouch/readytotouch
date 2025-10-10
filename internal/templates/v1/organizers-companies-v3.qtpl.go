@@ -179,7 +179,52 @@ func StreamOrganizersCompaniesV3(qw422016 *qt422016.Writer,
   </div>
 
   <section class="search-container container">
-
+    <div class="search search--projects search--organizer search--with-sort">
+      <div class="search__input-group">
+        <input class="search__input" id="js-company-query" type="text" placeholder="Search" list="js-company-query-datalist" />
+        <datalist id="js-company-query-datalist">
+          `)
+	for _, company := range companies {
+		qw422016.N().S(`
+            <option value="`)
+		qw422016.E().S(company.Name)
+		qw422016.N().S(`"></option>
+          `)
+	}
+	qw422016.N().S(`
+        </datalist>
+        <img class="search__icon" alt="Search icon" width="20" height="20" src="/assets/images/pages/common/search.svg" />
+      </div>
+      <button type="button" class="mobile-filter js-mobile-filter">
+        <img src="/assets/images/pages/common/filter.svg"
+             alt="Filter icon"
+             width="16"
+             height="16"
+        />
+        <span class="mobile-filter__counter">27</span>
+      </button>
+      <div class="sorter sorter--desktop js-sorter">
+        <button type="button" class="sorter__title js-sorter-toggle">
+          <span class="sorter__title-text js-sorter-title-text">Newest first</span>
+          <span class="sorter__icon-wrapper">
+            <img alt="caret-down icon"
+                 width="12"
+                 height="7"
+                 src="/assets/images/pages/organizer/caret-down.svg"
+            >
+          </span>
+        </button>
+        <ul class="sorter__list js-sorter-list">
+          <li class="sorter__item is-selected js-sorter-item">Newest first</li>
+          <li class="sorter__item js-sorter-item">Oldest first</li>
+          <li class="sorter__item js-sorter-item">By LinkedIn followers</li>
+          <li class="sorter__item js-sorter-item">By Glassdoor reviews</li>
+          <li class="sorter__item js-sorter-item">By Blind reviews</li>
+          <li class="sorter__item js-sorter-item">By Market Cap</li>
+          <li class="sorter__item js-sorter-item">By latest job posting</li>
+        </ul>
+      </div>
+    </div>
   </section>
 
   <div class="search-result mt-32">
