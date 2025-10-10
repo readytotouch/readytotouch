@@ -157,101 +157,15 @@ func (c *Controller) GolangCompaniesUkraine(ctx *gin.Context) {
 }
 
 func (c *Controller) CompaniesV1(ctx *gin.Context) {
-	var (
-		authUserID = domain.ContextGetUserID(ctx)
-	)
-
-	organizerFeature, ok := c.organizerFeature(ctx.FullPath())
-	if !ok {
-		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Feature not found"))
-
-		return
-	}
-
-	if c.softAuthRedirect(ctx, authUserID, organizerFeature.Organizer.Language) {
-		ctx.Redirect(http.StatusFound, "/golang/welcome"+c.redirect(ctx.Request.URL.Path))
-
-		return
-	}
-
-	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)
-	if err != nil {
-		// @TODO logging
-
-		// NOP, continue
-	}
-
-	companies := c.companies(organizerFeature.Organizer.Language)
-
-	c.sortCompanies(companies)
-
-	userCompanyFavoriteMap, err := c.userFavoriteCompanyRepository.GetMap(ctx, authUserID, nil)
-	if err != nil {
-		// @TODO logging
-
-		// NOP, continue
-	}
-
-	content := template.OrganizersCompaniesV1(
-		organizerFeature,
-		headerProfiles,
-		companies,
-		db.UkrainianUniversities(),
-		db.CzechUniversities(),
-		userCompanyFavoriteMap,
-		c.redirect(organizerFeature.Path),
-	)
-
-	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
+	c.companiesAction(ctx, template.OrganizersCompaniesV1)
 }
 
 func (c *Controller) CompaniesV2(ctx *gin.Context) {
-	var (
-		authUserID = domain.ContextGetUserID(ctx)
-	)
+	c.companiesAction(ctx, template.OrganizersCompaniesV2)
+}
 
-	organizerFeature, ok := c.organizerFeature(ctx.FullPath())
-	if !ok {
-		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Feature not found"))
-
-		return
-	}
-
-	if c.softAuthRedirect(ctx, authUserID, organizerFeature.Organizer.Language) {
-		ctx.Redirect(http.StatusFound, "/golang/welcome"+c.redirect(ctx.Request.URL.Path))
-
-		return
-	}
-
-	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)
-	if err != nil {
-		// @TODO logging
-
-		// NOP, continue
-	}
-
-	companies := c.companies(organizerFeature.Organizer.Language)
-
-	c.sortCompanies(companies)
-
-	userCompanyFavoriteMap, err := c.userFavoriteCompanyRepository.GetMap(ctx, authUserID, nil)
-	if err != nil {
-		// @TODO logging
-
-		// NOP, continue
-	}
-
-	content := template.OrganizersCompaniesV2(
-		organizerFeature,
-		headerProfiles,
-		c.pinnedFirst(companies),
-		db.UkrainianUniversities(),
-		db.CzechUniversities(),
-		userCompanyFavoriteMap,
-		c.redirect(organizerFeature.Path),
-	)
-
-	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
+func (c *Controller) CompaniesV3(ctx *gin.Context) {
+	c.companiesAction(ctx, template.OrganizersCompaniesV3)
 }
 
 func (c *Controller) CompanyV1(ctx *gin.Context) {
@@ -360,14 +274,74 @@ func (c *Controller) CompanyV1(ctx *gin.Context) {
 }
 
 func (c *Controller) CompanyV2(ctx *gin.Context) {
-	c.company(ctx, template.OrganizersCompanyV2)
+	c.companyAction(ctx, template.OrganizersCompanyV2)
 }
 
 func (c *Controller) CompanyV3(ctx *gin.Context) {
-	c.company(ctx, template.OrganizersCompanyV3)
+	c.companyAction(ctx, template.OrganizersCompanyV3)
 }
 
-func (c *Controller) company(
+func (c *Controller) companiesAction(
+	ctx *gin.Context,
+	render func(
+	organizerFeature domain.OrganizerFeature,
+	headerProfiles []domain.SocialProviderUser,
+	companies []domain.CompanyProfile,
+	ukrainianUniversities []domain.University,
+	czechUniversities []domain.University,
+	userCompanyFavoriteMap map[int64]bool,
+	authQueryParams string,
+) string,
+) {
+	var (
+		authUserID = domain.ContextGetUserID(ctx)
+	)
+
+	organizerFeature, ok := c.organizerFeature(ctx.FullPath())
+	if !ok {
+		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Feature not found"))
+
+		return
+	}
+
+	if c.softAuthRedirect(ctx, authUserID, organizerFeature.Organizer.Language) {
+		ctx.Redirect(http.StatusFound, "/" + organizerFeature.Organizer.Alias + "/welcome"+c.redirect(ctx.Request.URL.Path))
+
+		return
+	}
+
+	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)
+	if err != nil {
+		// @TODO logging
+
+		// NOP, continue
+	}
+
+	companies := c.companies(organizerFeature.Organizer.Language)
+
+	c.sortCompanies(companies)
+
+	userCompanyFavoriteMap, err := c.userFavoriteCompanyRepository.GetMap(ctx, authUserID, nil)
+	if err != nil {
+		// @TODO logging
+
+		// NOP, continue
+	}
+
+	content := render(
+		organizerFeature,
+		headerProfiles,
+		c.pinnedFirst(companies),
+		db.UkrainianUniversities(),
+		db.CzechUniversities(),
+		userCompanyFavoriteMap,
+		c.redirect(organizerFeature.Path),
+	)
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
+}
+
+func (c *Controller) companyAction(
 	ctx *gin.Context,
 	render func(
 		organizerFeature domain.OrganizerFeature,

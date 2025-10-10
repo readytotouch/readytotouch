@@ -10,6 +10,7 @@
 ) -%}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<title>{%s organizerFeature.Organizer.Title %} companies – product and startup teams using {%s organizerFeature.Organizer.Title %} | ReadyToTouch</title>
 	<meta name="title" content="{%s organizerFeature.Organizer.Title %} companies – product and startup teams using {%s organizerFeature.Organizer.Title %} | ReadyToTouch">
@@ -45,7 +46,7 @@
 
 <body class="organizer-companies-inner">
 <main class="main-wrapper">
-	<header class="header">
+<header class="header">
   <div class="header__wrapper">
     <a href="/organizers" class="header__logo">
       <img
@@ -589,5 +590,6 @@
 {%= organizersFooterV1() %}
 <script src="/assets/js/organizers-companies-app.js?{%d appVersion %}"></script>
 </body>
+
 </html>
 {%- endfunc -%}
