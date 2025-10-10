@@ -1212,6 +1212,19 @@ var (
 		"secureco-usa":                        1212, // SecureCo
 		"datatroniq":                          1213, // DATATRONiQ
 		"de-una":                              1214, // DEUNA
+		"avantstay":                           1215, // AvantStay
+		"kaluza":                              1216, // Kaluza
+		"zegocover":                           1217, // Zego
+		"lobster-robotics":                    1218, // Lobster Robotics
+		"affinidi":                            1219, // Affinidi
+		"tensordyne":                          1220, // Tensordyne
+		"rust-foundation":                     1221, // Rust Foundation
+		"redox-one":                           1222, // Redox One
+		"tazapay":                             1223, // Tazapay
+		"discovery-loft-inc":                  1224, // PAVE
+		"roku":                                1225, // Roku
+		"centra-commerce":                     1226, // Centra
+		"lifemote-networks":                   1227, // Lifemote
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

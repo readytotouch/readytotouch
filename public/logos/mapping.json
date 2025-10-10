@@ -125,6 +125,11 @@
     "destination": "aescape.png"
   },
   {
+    "alias": "affinidi",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "affinipay",
     "source": "",
     "destination": ""
@@ -485,6 +490,11 @@
     "destination": "autostoresystem.png"
   },
   {
+    "alias": "avantstay",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "avathonai",
     "source": "",
     "destination": ""
@@ -646,8 +656,8 @@
   },
   {
     "alias": "birdiecare",
-    "source": "",
-    "destination": ""
+    "source": "birdiecare-200x200.jpeg",
+    "destination": "birdiecare.jpeg"
   },
   {
     "alias": "bitaksi",
@@ -903,6 +913,11 @@
     "alias": "centene-corporation",
     "source": "centene-200x200.jpeg",
     "destination": "centene-corporation.jpeg"
+  },
+  {
+    "alias": "centra-commerce",
+    "source": "centra-200x200.png",
+    "destination": "centra-commerce.png"
   },
   {
     "alias": "centralretail",
@@ -1463,6 +1478,11 @@
     "alias": "discord",
     "source": "discord-200x200.jpeg",
     "destination": "discord.jpeg"
+  },
+  {
+    "alias": "discovery-loft-inc",
+    "source": "",
+    "destination": ""
   },
   {
     "alias": "disney-entertainment",
@@ -2631,8 +2651,8 @@
   },
   {
     "alias": "italki",
-    "source": "",
-    "destination": ""
+    "source": "italki-200x200.jpeg",
+    "destination": "italki.jpeg"
   },
   {
     "alias": "jack-henry",
@@ -2716,6 +2736,11 @@
   },
   {
     "alias": "k-id",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "kaluza",
     "source": "",
     "destination": ""
   },
@@ -2895,6 +2920,11 @@
     "destination": "liebherr.png"
   },
   {
+    "alias": "lifemote-networks",
+    "source": "lifemote-256x256.png",
+    "destination": "lifemote-networks.png"
+  },
+  {
     "alias": "lightspeed-systems",
     "source": "",
     "destination": ""
@@ -2951,6 +2981,11 @@
   },
   {
     "alias": "loblaw-digital",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "lobster-robotics",
     "source": "",
     "destination": ""
   },
@@ -4260,6 +4295,11 @@
     "destination": "redisinc.png"
   },
   {
+    "alias": "redox-one",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "redpanda-data",
     "source": "",
     "destination": ""
@@ -4370,6 +4410,11 @@
     "destination": "rockwell-automation.png"
   },
   {
+    "alias": "roku",
+    "source": "roku-200x200.jpeg",
+    "destination": "roku.jpeg"
+  },
+  {
     "alias": "rollee",
     "source": "",
     "destination": ""
@@ -4398,6 +4443,11 @@
     "alias": "runzero",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "rust-foundation",
+    "source": "rust-foundation-200x200.jpeg",
+    "destination": "rust-foundation.jpeg"
   },
   {
     "alias": "rxbenefits-inc-",
@@ -5115,6 +5165,11 @@
     "destination": ""
   },
   {
+    "alias": "tazapay",
+    "source": "",
+    "destination": ""
+  },
+  {
     "alias": "td",
     "source": "td-200x200.jpeg",
     "destination": "td.jpeg"
@@ -5161,6 +5216,11 @@
   },
   {
     "alias": "tenableinc",
+    "source": "",
+    "destination": ""
+  },
+  {
+    "alias": "tensordyne",
     "source": "",
     "destination": ""
   },
@@ -5958,6 +6018,11 @@
     "alias": "zattoo",
     "source": "zattoo-200x200.jpeg",
     "destination": "zattoo.jpeg"
+  },
+  {
+    "alias": "zegocover",
+    "source": "zego-200x200.jpeg",
+    "destination": "zegocover.jpeg"
   },
   {
     "alias": "zelis",
