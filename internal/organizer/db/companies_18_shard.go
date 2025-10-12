@@ -4256,7 +4256,14 @@ func companies18Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-BNP-Paribas-EI_IE10342.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/BNP-Paribas-Reviews-E10342.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/BNP-Paribas-Jobs-E10342.htm",
+				Jobs:        "3K",
+				Reviews:     "19K",
+				Salaries:    "30K",
+				ReviewsRate: "3.9",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",

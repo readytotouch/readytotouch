@@ -2787,8 +2787,9 @@ func companies05Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "OneSignal",
-				Verified: true,
+				Login:     "OneSignal",
+				Followers: "276",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "OneSignal",
