@@ -172,6 +172,101 @@ func companies22Shard() []domain.CompanyProfile {
 				// NOP
 			},
 		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Chili Piper",
+			Website: "https://www.chilipiper.com/",
+			Careers: "https://www.chilipiper.com/careers",
+			About:   "https://www.chilipiper.com/about",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2687110,
+				IDs:               nil,
+				Alias:             "chilipiper",
+				Name:              "Chili Piper",
+				Followers:         "81K",
+				Employees:         "51-200",
+				AssociatedMembers: "256",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:     "Chili-Piper",
+				Followers: "21",
+				Verified:  true,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "chili-piper",
+				Employees: "180",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Chili-Piper-EI_IE1835737.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Chili-Piper-Reviews-E1835737.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Chili-Piper-Jobs-E1835737.htm",
+				Jobs:        "",
+				Reviews:     "100",
+				Salaries:    "151",
+				ReviewsRate: "4.5",
+				Verified:    true,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "Chili-Piper",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 1,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 5,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Scala Engineer",
+							SubTitle:             "",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							Location:             "",
+							URL:                  "https://www.chilipiper.com/careers?ashby_jid=ab556557-83cf-467d-90fb-5119dabf146c#work",
+							Date:                 mustDate("2025-10-07"),
+							WithSalary:           true, // $87K – $138K
+							Remote:               true,
+						},
+					},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Demand Conversion Platform",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+			PinnedUntil: mustDate("2025-10-31"),
+		},
 
 		// Template
 		//{

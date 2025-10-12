@@ -196,6 +196,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4299421083/":                                                               2928, // american-express
 		"https://www.linkedin.com/jobs/view/4170664476/":                                                               1008, // american-express
 		"https://www.linkedin.com/jobs/view/4179162097/":                                                               1109, // american-express
+		"https://www.linkedin.com/jobs/view/4313405921/":                                                               3193, // american-express
 		"https://www.linkedin.com/jobs/view/3842471708/":                                                               305,  // mastercard
 		"https://www.linkedin.com/jobs/view/4113621612/":                                                               543,  // mastercard
 		"https://www.linkedin.com/jobs/view/4169383008/":                                                               1045, // mastercard
@@ -2908,6 +2909,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4173967092/":                                                               2227, // chemelex
 		"https://www.linkedin.com/jobs/view/4261099779/":                                                               2228, // wpengine
 		"https://www.linkedin.com/jobs/view/4261003515/":                                                               2229, // bnp-paribas
+		"https://www.linkedin.com/jobs/view/4313221564/":                                                               3194, // bnp-paribas
 		"https://www.linkedin.com/jobs/view/4261717421/":                                                               2256, // distribusion
 		"https://www.linkedin.com/jobs/view/4161416034/":                                                               2257, // thales
 		"https://www.linkedin.com/jobs/view/4299786439/":                                                               2973, // thales
@@ -3188,6 +3190,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4312301338/":                                                               3190, // roku
 		"https://www.linkedin.com/jobs/view/4310350066/":                                                               3191, // centra-commerce
 		"https://www.linkedin.com/jobs/view/4311254582/":                                                               3192, // lifemote-networks
+		"https://www.chilipiper.com/careers?ashby_jid=ab556557-83cf-467d-90fb-5119dabf146c#work":                       3195, // chilipiper
 		"https://www.linkedin.com/jobs/view/3914839625/":                                                               372,  // cognizant
 		"https://www.linkedin.com/jobs/view/4120737001/":                                                               600,  // cognizant
 		"https://www.linkedin.com/jobs/view/4149258542/":                                                               787,  // cognizant

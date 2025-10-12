@@ -5475,6 +5475,16 @@ func companies01Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $85,000.00 to $150,000.00 annually + bonus + benefits
 							Remote:               false,
 						},
+						{
+							Title:                "Software Engineer (Java/Scala, Python)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4313405921/",
+							Location:             "Phoenix, AZ",
+							Date:                 mustDate("2025-10-12"),
+							WithSalary:           true, // $78k/yr - $124.8k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Elixir:  {},

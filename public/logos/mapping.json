@@ -256,8 +256,8 @@
   },
   {
     "alias": "american-express",
-    "source": "",
-    "destination": ""
+    "source": "american-express-200x200.jpeg",
+    "destination": "american-express.jpeg"
   },
   {
     "alias": "amoamoamo",
@@ -983,6 +983,11 @@
     "alias": "chep",
     "source": "",
     "destination": ""
+  },
+  {
+    "alias": "chilipiper",
+    "source": "chilipiper-256x256.png",
+    "destination": "chilipiper.png"
   },
   {
     "alias": "chime-card",
@@ -4336,8 +4341,8 @@
   },
   {
     "alias": "rewards-network",
-    "source": "",
-    "destination": ""
+    "source": "rewards-network-192x192.webp",
+    "destination": "rewards-network.png"
   },
   {
     "alias": "rhebo",

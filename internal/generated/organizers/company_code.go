@@ -1225,6 +1225,7 @@ var (
 		"roku":                                1225, // Roku
 		"centra-commerce":                     1226, // Centra
 		"lifemote-networks":                   1227, // Lifemote
+		"chilipiper":                          1228, // Chili Piper
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 
