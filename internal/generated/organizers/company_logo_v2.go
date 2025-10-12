@@ -201,6 +201,7 @@ var (
 		"cheesecake-labs":                     "",
 		"chemelex":                            "chemelex.png",
 		"chep":                                "",
+		"chilipiper":                          "",
 		"chime-card":                          "",
 		"cho-tot":                             "",
 		"cielara":                             "",
