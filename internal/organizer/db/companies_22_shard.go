@@ -256,7 +256,7 @@ func companies22Shard() []domain.CompanyProfile {
 			Industries:       []domain.Industry{
 				// NOP
 			},
-			PinnedUntil: mustDate("2025-10-20"),
+			PinnedUntil: mustDate("2025-10-31"),
 		},
 
 		// Template
