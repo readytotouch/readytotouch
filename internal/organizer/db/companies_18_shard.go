@@ -4287,7 +4287,18 @@ func companies18Shard() []domain.CompanyProfile {
 				},
 				domain.Scala: {
 					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Spark/Scala Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4313221564/",
+							Location:             "Greater Chennai Area",
+							Date:                 mustDate("2025-10-11"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
 				},
 				domain.Elixir: {
 					GitHubRepositoriesCount: 0,

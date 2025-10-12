@@ -2731,7 +2731,7 @@ func companies17Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4230030958/",
 							Location:             "Chicago, IL",
-							Date:                 mustDate("2025-07-19", "2025-06-06", "2025-05-15"),
+							Date:                 mustDate("2025-10-12", "2025-07-19", "2025-06-06", "2025-05-15"),
 							WithSalary:           false,
 							Remote:               false,
 						},
