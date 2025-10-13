@@ -514,11 +514,12 @@
             </div>
             {% endfor %}
           </div>
+          <!-- /card list -->
 
           {% comment %}
           <!-- Pagination skipped for now -->
 
-          <!-- /card list -->
+
           <!-- search footer -->
           <footer class="search-result__footer">
             <button class="button button--bordered-black-transparent" type="button">More</button>
