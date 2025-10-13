@@ -274,6 +274,61 @@
                   {% endif %}
                 </div>
 
+                <div class="card__info">
+                  <figure class="card__figure">
+                    <img
+                      class="card__icon"
+                      alt="card type icon"
+                      width="16"
+                      height="16"
+                      src="/assets/images/pages/vacancy/building.svg"
+                    />
+                    <figcaption class="card__figcaption">{%s companyTypeName[company.Type] %}</figcaption>
+                  </figure>
+                  <figure class="card__figure">
+                    <img
+                      class="card__icon"
+                      alt="card type icon"
+                      width="16"
+                      height="16"
+                      src="/assets/images/pages/vacancy/company-type.svg"
+                    />
+                    <figcaption class="card__figcaption">{%s industryNames(company.Industries) %}</figcaption>
+                  </figure>
+                  {% comment %}
+                  <!-- TODO Clouds -->
+                  <figure class="card__figure">
+                    <img
+                      class="card__icon"
+                      alt="card hosting icon"
+                      width="16"
+                      height="16"
+                      src="/assets/images/pages/organizer/clouds.svg"
+                    />
+                    <figcaption class="card__figcaption card__figcaption--images">
+                      <img
+                        alt="Azure icon"
+                        width="20"
+                        height="20"
+                        src="/assets/images/pages/common/azure.svg"
+                      />
+                      <img
+                        alt="AWS icon"
+                        width="20"
+                        height="20"
+                        src="/assets/images/pages/common/amazon-web-services.svg"
+                      />
+                      <img
+                        alt="GCP icon"
+                        width="20"
+                        height="20"
+                        src="/assets/images/pages/common/googlecloud.svg"
+                      />
+                    </figcaption>
+                  </figure>
+                  {% endcomment %}
+                </div>
+
               </div>
               {% endfor %}
             </div>
