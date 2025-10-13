@@ -250,6 +250,30 @@
                   </figcaption>
                 </figure>
 
+                <div class="card__top-links">
+                  <a href="{%s company.Website %}" target="_blank" class="card__top-link button-link">Website</a>
+                  {% if company.Careers == "" %}
+                    <span class="card__top-link button-link disabled">Careers</span>
+                  {% else %}
+                    <a href="{%s company.Careers %}" target="_blank" class="card__top-link button-link">Careers</a>
+                  {% endif %}
+                  {% if company.About == "" %}
+                    <span class="card__top-link button-link disabled">About</span>
+                  {% else %}
+                    <a href="{%s company.About %}" target="_blank" class="card__top-link button-link">About</a>
+                  {% endif %}
+                  {% if company.Blog == "" %}
+                    <span class="card__top-link button-link disabled">Dev Blog</span>
+                  {% else %}
+                    <a href="{%s company.Blog %}" target="_blank" class="card__top-link button-link">Dev Blog</a>
+                  {% endif %}
+                  {% if company.ReferralProgram == "" %}
+                    <span class="card__top-link button-link disabled">Referral program</span>
+                  {% else %}
+                    <a href="{%s company.ReferralProgram %}" target="_blank" class="card__top-link button-link">Referral program</a>
+                  {% endif %}
+                </div>
+
               </div>
               {% endfor %}
             </div>
