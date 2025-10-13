@@ -219,6 +219,36 @@
                   </a>
                 </aside>
 
+                <figure class="card__header">
+                  <div class="card__logo-overlay">
+                    {% if false %}
+                    <!-- TODO square logo -->
+                    <img class="card__logo"
+                         alt="{%s company.Name %} logo"
+                         src="/assets/images/pages/organizer/logos/google.svg"
+                    />
+                    {% endif %}
+                  </div>
+                  <figcaption class="card__header-caption">
+                    <a href="{%s organizerFeature.Path %}/{%s company.LinkedInProfile.Alias %}" class="card__headline vacancy__link">{%s company.Name %}</a>
+                    <p class="card__header-caption-text">
+                      <img class="card__header-caption-icon"
+                           alt="marker"
+                           width="12"
+                           height="12"
+                           src="/assets/images/pages/organizer/marker.svg"
+                      >Country, City (Full Remote) <!-- TODO -->
+                    </p>
+                    <p class="card__header-caption-text">
+                      <img class="card__header-caption-icon"
+                           alt="briefcase"
+                           width="12"
+                           height="12"
+                           src="/assets/images/pages/organizer/briefcase.svg"
+                      >Latest job posting: 12/31/2024 <!-- TODO -->
+                    </p>
+                  </figcaption>
+                </figure>
 
               </div>
               {% endfor %}
