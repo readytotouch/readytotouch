@@ -144,7 +144,22 @@
   </section>
 
   <div class="search-result mt-32">
+    <div class="container">
+      <div class="search-result__wrapper">
+        <!-- filters -->
+        <!-- /filters -->
 
+        <div class="search-result--group">
+          <!-- selected filters -->
+          <div class="filter-used" style="visibility: hidden;">
+            <div class="filter-used__title">Applied filters:</div>
+            <ul id="js-company-selected-criteria" class="filter-used__list"></ul>
+          </div>
+          <!-- /selected filters -->
+
+        </div>
+      </div>
+    </div>
   </div>
 
 </main>
