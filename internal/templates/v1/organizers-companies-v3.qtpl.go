@@ -3,6 +3,8 @@
 
 package v1
 
+import "strconv"
+
 import (
 	qtio422016 "io"
 
@@ -228,7 +230,252 @@ func StreamOrganizersCompaniesV3(qw422016 *qt422016.Writer,
   </section>
 
   <div class="search-result mt-32">
+    <div class="container">
+      <div class="search-result__wrapper">
+        <!-- filters -->
+        <!-- /filters -->
 
+        <div class="search-result--group">
+          <!-- selected filters -->
+          <div class="filter-used" style="visibility: hidden;">
+            <div class="filter-used__title">Applied filters:</div>
+            <ul id="js-company-selected-criteria" class="filter-used__list"></ul>
+          </div>
+          <!-- /selected filters -->
+
+          <div class="search-result__list">
+            <div class="search-result__top-actions">
+              <p class="search-result-found"><span id="js-result-count" class="search-result-found__amount">`)
+	qw422016.N().D(len(companies))
+	qw422016.N().S(`</span> results</p>
+              <div class="sorter sorter--mobile">
+                <button type="button" class="sorter__title">
+                  <span class="sorter__title-text">Newest first</span>
+                  <span class="sorter__icon-wrapper">
+                    <img alt="caret-down icon"
+                         width="12"
+                         height="7"
+                         src="/assets/images/pages/organizer/caret-down.svg"
+                    >
+                  </span>
+                </button>
+                <ul class="sorter__list">
+                  <li class="sorter__item is-selected">Newest first</li>
+                  <li class="sorter__item">Oldest first</li>
+                  <li class="sorter__item">By LinkedIn followers</li>
+                  <li class="sorter__item">By Glassdoor reviews</li>
+                  <li class="sorter__item">By Blind reviews</li>
+                  <li class="sorter__item">By Market Cap</li>
+                  <li class="sorter__item">By latest job posting</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- card list -->
+            <div class="search-result__cards row-gap-8 mt-24">
+              `)
+	for _, company := range companies {
+		qw422016.N().S(`
+              <div class="js-company card"
+                   data-company-id="`)
+		qw422016.N().DL(company.ID)
+		qw422016.N().S(`"
+                   data-company-name="`)
+		qw422016.E().S(company.Name)
+		qw422016.N().S(`"
+                   data-company-type="`)
+		qw422016.E().S(string(company.Type))
+		qw422016.N().S(`"
+                   data-company-industries="`)
+		qw422016.E().S(aliases(company.Industries))
+		qw422016.N().S(`"
+                   data-company-has-employees-from-countries="`)
+		qw422016.E().S(aliases(company.HasEmployeesFromCountries))
+		qw422016.N().S(`"
+                   data-company-rust-foundation-members="`)
+		qw422016.E().S(strconv.FormatBool(company.RustFoundationMember))
+		qw422016.N().S(`"
+                   data-company-remote="`)
+		qw422016.E().S(strconv.FormatBool(company.Remote))
+		qw422016.N().S(`"
+              >
+                <aside class="card__action">
+                  `)
+		if userCompanyFavoriteMap[company.ID] {
+			qw422016.N().S(`
+                    <button class="js-company-favorite favorite card__action-button button-group__item in-favorite" title="Remove from favorites">
+                      <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" class="favorite__icon" viewBox="0 0 28 28">
+                        <path
+                          d="m14.5 22.1-.5-.3-.5.3-6.8 4.2c-.5.3-1.1-.1-.9-.7L7.5 18l.1-.6-.4-.4-5.9-5.2c-.3-.3-.3-.6-.2-.8.1-.2.3-.4.5-.4l7.9-.7.6-.1.2-.6 2.9-7.4c.2-.5 1-.5 1.2 0l3.1 7.3.2.5.6.1 7.9.7c.2 0 .4.2.5.5.1.3 0 .6-.2.7l-5.9 5.2-.4.4.1.6 1.8 7.7c.1.3 0 .5-.2.6-.2.1-.5.2-.8 0l-6.6-4z"
+                        />
+                      </svg>
+                    </button>
+                  `)
+		} else {
+			qw422016.N().S(`
+                    <button class="js-company-favorite favorite card__action-button button-group__item" title="Add to favorite">
+                      <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" class="favorite__icon" viewBox="0 0 28 28">
+                        <path
+                          d="m14.5 22.1-.5-.3-.5.3-6.8 4.2c-.5.3-1.1-.1-.9-.7L7.5 18l.1-.6-.4-.4-5.9-5.2c-.3-.3-.3-.6-.2-.8.1-.2.3-.4.5-.4l7.9-.7.6-.1.2-.6 2.9-7.4c.2-.5 1-.5 1.2 0l3.1 7.3.2.5.6.1 7.9.7c.2 0 .4.2.5.5.1.3 0 .6-.2.7l-5.9 5.2-.4.4.1.6 1.8 7.7c.1.3 0 .5-.2.6-.2.1-.5.2-.8 0l-6.6-4z"
+                        />
+                      </svg>
+                    </button>
+                  `)
+		}
+		qw422016.N().S(`
+
+                  <a href="`)
+		qw422016.E().S(organizerFeature.Path)
+		qw422016.N().S(`/`)
+		qw422016.E().S(company.LinkedInProfile.Alias)
+		qw422016.N().S(`" class="button-group__item" title="View statistics">
+                    <img width="20" height="20" alt="icon stats" src="/assets/images/pages/common/stats.svg" />
+                  </a>
+                </aside>
+
+                <figure class="card__header">
+                  <div class="card__logo-overlay">
+                    `)
+		if false {
+			qw422016.N().S(`
+                    <!-- TODO square logo -->
+                    <img class="card__logo"
+                         alt="`)
+			qw422016.E().S(company.Name)
+			qw422016.N().S(` logo"
+                         src="/assets/images/pages/organizer/logos/google.svg"
+                    />
+                    `)
+		}
+		qw422016.N().S(`
+                  </div>
+                  <figcaption class="card__header-caption">
+                    <a href="`)
+		qw422016.E().S(organizerFeature.Path)
+		qw422016.N().S(`/`)
+		qw422016.E().S(company.LinkedInProfile.Alias)
+		qw422016.N().S(`" class="card__headline vacancy__link">`)
+		qw422016.E().S(company.Name)
+		qw422016.N().S(`</a>
+                    <p class="card__header-caption-text">
+                      <img class="card__header-caption-icon"
+                           alt="marker"
+                           width="12"
+                           height="12"
+                           src="/assets/images/pages/organizer/marker.svg"
+                      >Country, City (Full Remote) <!-- TODO -->
+                    </p>
+                    <p class="card__header-caption-text">
+                      <img class="card__header-caption-icon"
+                           alt="briefcase"
+                           width="12"
+                           height="12"
+                           src="/assets/images/pages/organizer/briefcase.svg"
+                      >Latest job posting: 12/31/2024 <!-- TODO -->
+                    </p>
+                  </figcaption>
+                </figure>
+
+                <div class="card__top-links">
+                  <a href="`)
+		qw422016.E().S(company.Website)
+		qw422016.N().S(`" target="_blank" class="card__top-link button-link">Website</a>
+                  `)
+		if company.Careers == "" {
+			qw422016.N().S(`
+                    <span class="card__top-link button-link disabled">Careers</span>
+                  `)
+		} else {
+			qw422016.N().S(`
+                    <a href="`)
+			qw422016.E().S(company.Careers)
+			qw422016.N().S(`" target="_blank" class="card__top-link button-link">Careers</a>
+                  `)
+		}
+		qw422016.N().S(`
+                  `)
+		if company.About == "" {
+			qw422016.N().S(`
+                    <span class="card__top-link button-link disabled">About</span>
+                  `)
+		} else {
+			qw422016.N().S(`
+                    <a href="`)
+			qw422016.E().S(company.About)
+			qw422016.N().S(`" target="_blank" class="card__top-link button-link">About</a>
+                  `)
+		}
+		qw422016.N().S(`
+                  `)
+		if company.Blog == "" {
+			qw422016.N().S(`
+                    <span class="card__top-link button-link disabled">Dev Blog</span>
+                  `)
+		} else {
+			qw422016.N().S(`
+                    <a href="`)
+			qw422016.E().S(company.Blog)
+			qw422016.N().S(`" target="_blank" class="card__top-link button-link">Dev Blog</a>
+                  `)
+		}
+		qw422016.N().S(`
+                  `)
+		if company.ReferralProgram == "" {
+			qw422016.N().S(`
+                    <span class="card__top-link button-link disabled">Referral program</span>
+                  `)
+		} else {
+			qw422016.N().S(`
+                    <a href="`)
+			qw422016.E().S(company.ReferralProgram)
+			qw422016.N().S(`" target="_blank" class="card__top-link button-link">Referral program</a>
+                  `)
+		}
+		qw422016.N().S(`
+                </div>
+
+                <div class="card__info">
+                  <figure class="card__figure">
+                    <img
+                      class="card__icon"
+                      alt="card type icon"
+                      width="16"
+                      height="16"
+                      src="/assets/images/pages/vacancy/building.svg"
+                    />
+                    <figcaption class="card__figcaption">`)
+		qw422016.E().S(companyTypeName[company.Type])
+		qw422016.N().S(`</figcaption>
+                  </figure>
+                  <figure class="card__figure">
+                    <img
+                      class="card__icon"
+                      alt="card type icon"
+                      width="16"
+                      height="16"
+                      src="/assets/images/pages/vacancy/company-type.svg"
+                    />
+                    <figcaption class="card__figcaption">`)
+		qw422016.E().S(industryNames(company.Industries))
+		qw422016.N().S(`</figcaption>
+                  </figure>
+                  `)
+		qw422016.N().S(`
+                </div>
+
+              </div>
+              `)
+	}
+	qw422016.N().S(`
+            </div>
+            <!-- /card list -->
+
+            `)
+	qw422016.N().S(`
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
 </main>

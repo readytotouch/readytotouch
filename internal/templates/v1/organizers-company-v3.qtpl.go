@@ -224,7 +224,7 @@ func StreamOrganizersCompanyV3(qw422016 *qt422016.Writer,
               <!-- TODO square logo -->
               <img class="company-card__logo"
                    alt="`)
-		qw422016.E().S(company.LinkedInProfile.Alias)
+		qw422016.E().S(company.Name)
 		qw422016.N().S(` logo"
                    src="/assets/images/pages/organizer/logos/google.svg"
               />

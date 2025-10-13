@@ -737,6 +737,7 @@ func StreamOrganizersCompaniesV2(qw422016 *qt422016.Writer,
 	}
 	qw422016.N().S(`
           </div>
+          <!-- /card list -->
 
           `)
 	qw422016.N().S(`

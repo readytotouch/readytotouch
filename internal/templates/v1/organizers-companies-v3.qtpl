@@ -1,4 +1,4 @@
-
+{% import "strconv" %}
 {%- func OrganizersCompaniesV3(
   organizerFeature OrganizerFeature,
   headerProfiles []SocialProviderUser,
