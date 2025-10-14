@@ -794,7 +794,7 @@ func StreamOrganizersCompanyV3(qw422016 *qt422016.Writer,
                 <span class="company-grid__links-link company-grid__links-link--verify">
                   <img
                     class="company-grid__links-icon"
-                    alt="icon"
+                    alt="Glassdoor verified icon"
                     src="/assets/images/pages/organizer/verified-emp.png"
                   />
                 </span>

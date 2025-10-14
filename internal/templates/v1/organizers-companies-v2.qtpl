@@ -500,8 +500,8 @@
               <div class="card__footer">
                   <a href="{%s organizerFeature.Path %}/{%s company.LinkedInProfile.Alias %}" class="card__footer-button button button-link">
                       <div class="card__footer-images">
-                          <img class="card__footer-icon" alt="blind icon" width="32" height="32" src="/assets/images/pages/organizer/blind.png" />
-                          <img class="card__footer-icon" alt="levels icon" width="32" height="32" src="/assets/images/pages/organizer/levels.png" />
+                          <img class="card__footer-icon" alt="Blind icon" width="32" height="32" src="/assets/images/pages/organizer/blind.png" />
+                          <img class="card__footer-icon" alt="Levels.fyi icon" width="32" height="32" src="/assets/images/pages/organizer/levels.png" />
                           <img class="card__footer-icon" alt="Indeed icon" width="32" height="32" src="/assets/images/pages/organizer/indeed.png" />
                           <img class="card__footer-icon" alt="Y Combinator icon" width="32" height="32" src="/assets/images/pages/organizer/y-combinator.png" />
                       </div>

@@ -590,27 +590,27 @@ func StreamOrganizersCompaniesV2(qw422016 *qt422016.Writer,
                           <div class="card__links-item-group">
                               <img
                                   class="card__links-icon"
-                                  alt="github icon"
+                                  alt="GitHub icon"
                                   width="32"
                                   height="32"
                                   src="/assets/images/pages/organizer/github.svg"
                               />
+                              <a href="https://github.com/`)
+			qw422016.E().S(company.GitHubProfile.Login)
+			qw422016.N().S(`" target="_blank" class="card__links-link">GitHub</a>
                               `)
 			if company.GitHubProfile.Verified {
 				qw422016.N().S(`
                               <span class="card__links-link card__links-link--verify">
                                   <img
                                       class="card__links-icon"
-                                      alt="icon"
+                                      alt="GitHub verified icon"
                                       src="/assets/images/pages/organizer/verified.png"
                                   />
                               </span>
                               `)
 			}
 			qw422016.N().S(`
-                              <a href="https://github.com/`)
-			qw422016.E().S(company.GitHubProfile.Login)
-			qw422016.N().S(`" target="_blank" class="card__links-link">GitHub</a>
                           </div>
                       </li>
                       <li class="card__links-item">
@@ -646,7 +646,7 @@ func StreamOrganizersCompaniesV2(qw422016 *qt422016.Writer,
                           <div class="card__links-item-group">
                               <img
                                   class="card__links-icon"
-                                  alt="glassdoor icon"
+                                  alt="Glassdoor icon"
                                   width="32"
                                   height="32"
                                   src="/assets/images/pages/organizer/glassdoor.svg"
@@ -673,7 +673,7 @@ func StreamOrganizersCompaniesV2(qw422016 *qt422016.Writer,
                           <div class="card__links-item-group">
                               <img
                                   class="card__links-icon"
-                                  alt="glassdoor icon"
+                                  alt="Glassdoor icon"
                                   width="32"
                                   height="32"
                                   src="/assets/images/pages/organizer/glassdoor.svg"
@@ -687,7 +687,7 @@ func StreamOrganizersCompaniesV2(qw422016 *qt422016.Writer,
                               <span class="card__links-link card__links-link--verify">
                                   <img
                                       class="card__links-icon"
-                                      alt="icon"
+                                      alt="Glassdoor verified icon"
                                       src="/assets/images/pages/organizer/verified-icon-2.png"
                                   />
                               </span>
@@ -721,8 +721,8 @@ func StreamOrganizersCompaniesV2(qw422016 *qt422016.Writer,
 		qw422016.E().S(company.LinkedInProfile.Alias)
 		qw422016.N().S(`" class="card__footer-button button button-link">
                       <div class="card__footer-images">
-                          <img class="card__footer-icon" alt="blind icon" width="32" height="32" src="/assets/images/pages/organizer/blind.png" />
-                          <img class="card__footer-icon" alt="levels icon" width="32" height="32" src="/assets/images/pages/organizer/levels.png" />
+                          <img class="card__footer-icon" alt="Blind icon" width="32" height="32" src="/assets/images/pages/organizer/blind.png" />
+                          <img class="card__footer-icon" alt="Levels.fyi icon" width="32" height="32" src="/assets/images/pages/organizer/levels.png" />
                           <img class="card__footer-icon" alt="Indeed icon" width="32" height="32" src="/assets/images/pages/organizer/indeed.png" />
                           <img class="card__footer-icon" alt="Y Combinator icon" width="32" height="32" src="/assets/images/pages/organizer/y-combinator.png" />
                       </div>

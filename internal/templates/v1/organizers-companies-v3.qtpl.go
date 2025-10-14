@@ -198,10 +198,11 @@ func StreamOrganizersCompaniesV3(qw422016 *qt422016.Writer,
         <img class="search__icon" alt="Search icon" width="20" height="20" src="/assets/images/pages/common/search.svg" />
       </div>
       <button type="button" class="mobile-filter js-mobile-filter">
-        <img src="/assets/images/pages/common/filter.svg"
-             alt="Filter icon"
-             width="16"
-             height="16"
+        <img
+          src="/assets/images/pages/common/filter.svg"
+          alt="Filter icon"
+          width="16"
+          height="16"
         />
         <span class="mobile-filter__counter">27</span>
       </button>
@@ -209,11 +210,12 @@ func StreamOrganizersCompaniesV3(qw422016 *qt422016.Writer,
         <button type="button" class="sorter__title js-sorter-toggle">
           <span class="sorter__title-text js-sorter-title-text">Newest first</span>
           <span class="sorter__icon-wrapper">
-            <img alt="caret-down icon"
-                 width="12"
-                 height="7"
-                 src="/assets/images/pages/organizer/caret-down.svg"
-            >
+            <img
+              alt="caret-down icon"
+              width="12"
+              height="7"
+              src="/assets/images/pages/organizer/caret-down.svg"
+            />
           </span>
         </button>
         <ul class="sorter__list js-sorter-list">
@@ -252,11 +254,12 @@ func StreamOrganizersCompaniesV3(qw422016 *qt422016.Writer,
                 <button type="button" class="sorter__title">
                   <span class="sorter__title-text">Newest first</span>
                   <span class="sorter__icon-wrapper">
-                    <img alt="caret-down icon"
-                         width="12"
-                         height="7"
-                         src="/assets/images/pages/organizer/caret-down.svg"
-                    >
+                    <img
+                      alt="caret-down icon"
+                      width="12"
+                      height="7"
+                      src="/assets/images/pages/organizer/caret-down.svg"
+                    />
                   </span>
                 </button>
                 <ul class="sorter__list">
@@ -339,11 +342,12 @@ func StreamOrganizersCompaniesV3(qw422016 *qt422016.Writer,
 		if false {
 			qw422016.N().S(`
                     <!-- TODO square logo -->
-                    <img class="card__logo"
-                         alt="`)
+                    <img
+                      class="card__logo"
+                      alt="`)
 			qw422016.E().S(company.Name)
 			qw422016.N().S(` logo"
-                         src="/assets/images/pages/organizer/logos/google.svg"
+                      src="/assets/images/pages/organizer/logos/google.svg"
                     />
                     `)
 		}
@@ -358,20 +362,22 @@ func StreamOrganizersCompaniesV3(qw422016 *qt422016.Writer,
 		qw422016.E().S(company.Name)
 		qw422016.N().S(`</a>
                     <p class="card__header-caption-text">
-                      <img class="card__header-caption-icon"
-                           alt="marker"
-                           width="12"
-                           height="12"
-                           src="/assets/images/pages/organizer/marker.svg"
-                      >Country, City (Full Remote) <!-- TODO -->
+                      <img
+                        class="card__header-caption-icon"
+                        alt="marker"
+                        width="12"
+                        height="12"
+                        src="/assets/images/pages/organizer/marker.svg"
+                      />Country, City (Full Remote) <!-- TODO -->
                     </p>
                     <p class="card__header-caption-text">
-                      <img class="card__header-caption-icon"
-                           alt="briefcase"
-                           width="12"
-                           height="12"
-                           src="/assets/images/pages/organizer/briefcase.svg"
-                      >Latest job posting: 12/31/2024 <!-- TODO -->
+                      <img
+                        class="card__header-caption-icon"
+                        alt="briefcase"
+                        width="12"
+                        height="12"
+                        src="/assets/images/pages/organizer/briefcase.svg"
+                      />Latest job posting: 12/31/2024 <!-- TODO -->
                     </p>
                   </figcaption>
                 </figure>
@@ -463,6 +469,332 @@ func StreamOrganizersCompaniesV3(qw422016 *qt422016.Writer,
 		qw422016.N().S(`
                 </div>
 
+                <div class="card__info-group">
+                  <button type="button" class="button button--small button--black card__info-group-button">
+                    <span class="card__info-group-button-text">Show more info</span>
+                    <img
+                      class="card__info-group-button-image"
+                      src="/assets/images/pages/common/double-arrow-down.svg"
+                      width="13"
+                      height="14"
+                      alt="icon double-arrow-down"
+                    />
+                  </button>
+                  <div class="card__info-group-content">
+                    <p class="js-company-description card__text">`)
+		qw422016.E().S(company.ShortDescription)
+		qw422016.N().S(`</p>
+                    <div class="card__links">
+                      <ul class="card__links-group">
+                        <li class="card__links-item card__links-item--title">
+                          <div class="card__links-item-group">
+                            <img
+                              class="card__links-icon"
+                              alt="linkedin icon"
+                              width="32"
+                              height="32"
+                              src="/assets/images/pages/organizer/linkedin.svg"
+                            />
+                            <a href="https://www.linkedin.com/company/`)
+		qw422016.E().S(company.LinkedInProfile.Alias)
+		qw422016.N().S(`/" target="_blank" class="card__links-link">LinkedIn</a>
+                            `)
+		if company.LinkedInProfile.Verified {
+			qw422016.N().S(`
+                            <a href="https://www.linkedin.com/company/`)
+			qw422016.E().S(company.LinkedInProfile.Alias)
+			qw422016.N().S(`/about" target="_blank" class="card__links-link card__links-link--verify">
+                              <img
+                                class="card__links-icon"
+                                alt="icon"
+                                src="/assets/images/pages/organizer/verified-icon.png"
+                              />
+                            </a>
+                            `)
+		}
+		qw422016.N().S(`
+                          </div>
+                        </li>
+                        <li class="card__links-item">
+                          <a href="https://www.linkedin.com/company/`)
+		qw422016.E().S(company.LinkedInProfile.Alias)
+		qw422016.N().S(`/" target="_blank" class="button-link card__links-link">Overview</a>
+                        </li>
+                        <li class="card__links-item card__links-item--inner">
+                          <p class="card__links-item-text">Connections (employees):</p>
+                          <ul class="card__links-group-inner">
+                            <li class="card__links-item">
+                              <a href="`)
+		qw422016.E().S(linkedinConnectionsURL([]Company{company}, nil))
+		qw422016.N().S(`" target="_blank" class="button-link card__links-link">Global</a>
+                              <img
+                                class="card__links-icon"
+                                alt="language icon"
+                                width="20"
+                                height="20"
+                                src="/assets/images/pages/organizer/language.svg"
+                              />
+                            </li>
+                            <li class="card__links-item">
+                              <a href="`)
+		qw422016.E().S(linkedinConnectionsURL([]Company{company}, ukrainianUniversities))
+		qw422016.N().S(`" target="_blank" class="button-link card__links-link">UA</a>
+                              <img
+                                class="card__links-icon"
+                                alt="language icon"
+                                width="20"
+                                height="20"
+                                src="/assets/images/pages/common/flags/4x3/ua.svg"
+                              />
+                            </li>
+                            <li class="card__links-item">
+                              <a href="`)
+		qw422016.E().S(linkedinConnectionsURL([]Company{company}, czechUniversities))
+		qw422016.N().S(`" target="_blank" class="button-link card__links-link">CZ</a>
+                              <img
+                                class="card__links-icon"
+                                alt="language icon"
+                                width="20"
+                                height="20"
+                                src="/assets/images/pages/common/flags/4x3/cz.svg"
+                              />
+                            </li>
+                            <li class="card__links-item">
+                              <a href="`)
+		qw422016.E().S(linkedinConnectionsFormerEmployeesURL([]Company{company}))
+		qw422016.N().S(`" target="_blank" class="button-link card__links-link">Former (All)</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="card__links-item">
+                          <a href="`)
+		qw422016.E().S(linkedinEmployeesPostsURL([]Company{company}, organizerFeature.Organizer.Title))
+		qw422016.N().S(`" target="_blank" class="button-link card__links-link">Employees' posts</a>
+                        </li>
+                        <li class="card__links-item">
+                          <a href="`)
+		qw422016.E().S(linkedinJobsURL([]Company{company}, string(organizerFeature.Organizer.LanguageTitleKeywords)))
+		qw422016.N().S(`" target="_blank" class="button-link card__links-link">Jobs</a>
+                        </li>
+                      </ul>
+                      <ul class="card__links-group">
+                        `)
+		if company.GitHubProfile.Login == "" {
+			qw422016.N().S(`
+                        <li class="card__links-item card__links-item--title card__links-item--disabled">
+                          <div class="card__links-item-group">
+                            <img
+                              class="card__links-icon"
+                              alt="GitHub icon"
+                              width="32"
+                              height="32"
+                              src="/assets/images/pages/organizer/github.svg"
+                            />
+                            <span class="card__links-link">GitHub</span>
+                          </div>
+                        </li>
+                        <li class="card__links-item card__links-item--disabled">
+                          <span class="button-link card__links-link">Overview</span>
+                          <a href="`)
+			qw422016.E().S(googleSearchGitHub(company.Name))
+			qw422016.N().S(`" target="_blank" class="card__links-link card__links-link--google">
+                            <img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+                          </a>
+                        </li>
+                        <li class="card__links-item card__links-item--disabled">
+                          <span class="button-link card__links-link">Repositories (?)</span>
+                        </li>
+                        <li class="card__links-item card__links-item--disabled">
+                          <span class="button-link card__links-link">Followers (?)</span>
+                        </li>
+                        `)
+		} else {
+			qw422016.N().S(`
+                        <li class="card__links-item card__links-item--title">
+                          <div class="card__links-item-group">
+                            <img
+                              class="card__links-icon"
+                              alt="GitHub icon"
+                              width="32"
+                              height="32"
+                              src="/assets/images/pages/organizer/github.svg"
+                            />
+                            <a href="https://github.com/`)
+			qw422016.E().S(company.GitHubProfile.Login)
+			qw422016.N().S(`" target="_blank" class="card__links-link">GitHub</a>
+                            `)
+			if company.GitHubProfile.Verified {
+				qw422016.N().S(`
+                            <span class="card__links-link card__links-link--verify">
+                              <img
+                                class="card__links-icon"
+                                alt="GitHub verified icon"
+                                src="/assets/images/pages/organizer/verified.png"
+                              />
+                            </span>
+                            `)
+			}
+			qw422016.N().S(`
+                          </div>
+                        </li>
+                        <li class="card__links-item">
+                          <a href="https://github.com/`)
+			qw422016.E().S(company.GitHubProfile.Login)
+			qw422016.N().S(`" target="_blank" class="button-link card__links-link">Overview</a>
+                        </li>
+                        <li class="card__links-item">
+                          <a href="https://github.com/orgs/`)
+			qw422016.E().S(company.GitHubProfile.Login)
+			qw422016.N().S(`/repositories?q=lang:`)
+			qw422016.E().S(organizerFeature.Organizer.GitHubAlias)
+			qw422016.N().S(`" target="_blank" class="button-link card__links-link">Repositories (`)
+			qw422016.N().D(fetchGitHubRepositoriesCount(company, organizerFeature.Organizer.Language))
+			qw422016.N().S(`)</a>
+                        </li>
+                        <li class="card__links-item">
+                          <a href="https://github.com/orgs/`)
+			qw422016.E().S(company.GitHubProfile.Login)
+			qw422016.N().S(`/followers" target="_blank" class="button-link card__links-link">Followers (`)
+			qw422016.E().S(fetchGitHubFollowers(company))
+			qw422016.N().S(`)</a>
+                        </li>
+                        `)
+		}
+		qw422016.N().S(`
+                      </ul>
+                      <ul class="card__links-group">
+                        `)
+		if company.GlassdoorProfile.OverviewURL == "" {
+			qw422016.N().S(`
+                        <li class="card__links-item card__links-item--title card__links-item--disabled">
+                          <div class="card__links-item-group">
+                            <img
+                              class="card__links-icon"
+                              alt="Glassdoor icon"
+                              width="32"
+                              height="32"
+                              src="/assets/images/pages/organizer/glassdoor.svg"
+                            />
+                            <span class="card__links-link">Glassdoor</span>
+                          </div>
+                        </li>
+                        <li class="card__links-item card__links-item--disabled">
+                          <span class="button-link card__links-link">Overview</span>
+                          <a href="`)
+			qw422016.E().S(googleSearchGlassdoor(company.Name))
+			qw422016.N().S(`" target="_blank" class="card__links-link card__links-link--google">
+                            <img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+                          </a>
+                        </li>
+                        <li class="card__links-item card__links-item--disabled">
+                          <span class="button-link card__links-link">Reviews</span>
+                          <span class="card__links-link-star">?.? ★</span>
+                        </li>
+                        `)
+		} else {
+			qw422016.N().S(`
+                        <li class="card__links-item card__links-item--title">
+                          <div class="card__links-item-group">
+                            <img
+                              class="card__links-icon"
+                              alt="Glassdoor icon"
+                              width="32"
+                              height="32"
+                              src="/assets/images/pages/organizer/glassdoor.svg"
+                            />
+                            <a href="`)
+			qw422016.E().S(company.GlassdoorProfile.OverviewURL)
+			qw422016.N().S(`" target="_blank" class="card__links-link">Glassdoor</a>
+                            `)
+			if company.GlassdoorProfile.Verified {
+				qw422016.N().S(`
+                            <span class="card__links-link card__links-link--verify">
+                              <img
+                                class="card__links-icon"
+                                alt="Glassdoor verified icon"
+                                src="/assets/images/pages/organizer/verified-icon-2.png"
+                              />
+                            </span>
+                            `)
+			}
+			qw422016.N().S(`
+                          </div>
+                        </li>
+                        <li class="card__links-item">
+                          <a href="`)
+			qw422016.E().S(company.GlassdoorProfile.OverviewURL)
+			qw422016.N().S(`" target="_blank" class="button-link card__links-link">Overview</a>
+                        </li>
+                        <li class="card__links-item">
+                          <a href="`)
+			qw422016.E().S(company.GlassdoorProfile.ReviewsURL)
+			qw422016.N().S(`" target="_blank" class="button-link card__links-link">Reviews</a>
+                          <span class="card__links-link-star">`)
+			qw422016.E().S(formatGlassdoorReviewsRate(company.GlassdoorProfile.ReviewsRate))
+			qw422016.N().S(` ★</span>
+                        </li>
+                        `)
+		}
+		qw422016.N().S(`
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card__footer">
+                  <a href="`)
+		qw422016.E().S(organizerFeature.Path)
+		qw422016.N().S(`/`)
+		qw422016.E().S(company.LinkedInProfile.Alias)
+		qw422016.N().S(`" class="card__footer-button button button-link">
+                    <div class="card__footer-images">
+                      <figure class="card__footer-figure">
+                        <img
+                          class="card__footer-icon"
+                          alt="Blind icon"
+                          width="32"
+                          height="32"
+                          srcset="/assets/images/pages/organizer/footer/blind.png 2x"
+                          src="/assets/images/pages/organizer/footer/blind.png"
+                        />
+                      </figure>
+                      <figure class="card__footer-figure">
+                        <img
+                          class="card__footer-icon"
+                          alt="Levels.fyi icon"
+                          width="32"
+                          height="32"
+                          srcset="/assets/images/pages/organizer/footer/levels.png 2x"
+                          src="/assets/images/pages/organizer/footer/levels.png"
+                        />
+                      </figure>
+                      <figure class="card__footer-figure">
+                        <img
+                          class="card__footer-icon"
+                          alt="Indeed icon"
+                          width="32"
+                          height="32"
+                          srcset="/assets/images/pages/organizer/footer/indeed.png 2x"
+                          src="/assets/images/pages/organizer/footer/indeed.png"
+                        />
+                      </figure>
+                      <figure class="card__footer-figure">
+                        <img
+                          class="card__footer-icon"
+                          alt="Y Combinator icon"
+                          width="32"
+                          height="32"
+                          srcset="/assets/images/pages/organizer/footer/y-combinator.png 2x"
+                          src="/assets/images/pages/organizer/footer/y-combinator.png"
+                        />
+                      </figure>
+                    </div>
+                    More on the company page
+                    <svg width="20" height="20" viewBox="0 0 8 12" fill="003ea6" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.999531 0.710632C0.609531 1.10063 0.609531 1.73063 0.999531 2.12063L4.87953 6.00063L0.999531 9.88063C0.609531 10.2706 0.609531 10.9006 0.999531 11.2906C1.38953 11.6806 2.01953 11.6806 2.40953 11.2906L6.99953 6.70063C7.38953 6.31063 7.38953 5.68063 6.99953 5.29063L2.40953 0.700632C2.02953 0.320632 1.38953 0.320632 0.999531 0.710632Z" fill="#003ea6"/>
+                    </svg>
+                  </a>
+                </div>
               </div>
               `)
 	}
