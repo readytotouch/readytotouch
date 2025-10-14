@@ -224,7 +224,7 @@ func StreamOrganizersCompaniesV2(qw422016 *qt422016.Writer,
           </label>
         </div>
       </div>
-      <!-- /Company type  -->
+      <!-- /Company type -->
 
       <div class="filters__group">
         <header class="filters__header">

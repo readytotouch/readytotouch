@@ -235,7 +235,7 @@ func StreamOrganizersCompaniesV3(qw422016 *qt422016.Writer,
     <div class="container">
       <div class="search-result__wrapper">
         <!-- filters -->
-        <aside class="search-result__filters js-search-result-filters">
+        <aside class="search-result__filters">
           <div class="search-result__filter-group search-result__filter-group--wide">
             <div class="search-result__filter-header">
               <h2 class="search-result__filter-headline">Filters:</h2>
@@ -1537,12 +1537,12 @@ func StreamOrganizersCompaniesV3(qw422016 *qt422016.Writer,
                 </header>
                 <div class="filters__elements">
                   <label class="checkbox filters__element">
-                    <input checked class="checkbox__input" type="checkbox" />
+                    <input class="js-criteria-company-type checkbox__input" type="checkbox" data-alias="product" />
                     <span class="checkbox__element"></span>
                     <span class="filters__element-text filters__element-text--truncated">Product</span>
                   </label>
                   <label class="checkbox filters__element">
-                    <input class="checkbox__input" type="checkbox" />
+                    <input class="js-criteria-company-type checkbox__input" type="checkbox" data-alias="startup" />
                     <span class="checkbox__element"></span>
                     <span class="filters__element-text filters__element-text--truncated">Startup</span>
                   </label>
