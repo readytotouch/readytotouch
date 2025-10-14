@@ -1681,59 +1681,23 @@ func StreamOrganizersCompaniesV3(qw422016 *qt422016.Writer,
                     src="/assets/images/pages/common/info.svg"
                   />
                 </header>
-
                 <div class="filters__elements">
                   <div class="filters__elements-inner">
+                    `)
+	for _, industry := range industries {
+		qw422016.N().S(`
                     <label class="checkbox filters__element">
-                      <input class="checkbox__input" type="checkbox" />
+                      <input class="js-criteria-company-industry checkbox__input" type="checkbox" data-alias="`)
+		qw422016.E().S(industry.Alias)
+		qw422016.N().S(`" />
                       <span class="checkbox__element"></span>
-                      CyberSecurity
+                      <span class="filters__element-text filters__element-text--truncated">`)
+		qw422016.E().S(industry.Name)
+		qw422016.N().S(`</span>
                     </label>
-                    <label class="checkbox filters__element">
-                      <input class="checkbox__input" type="checkbox" />
-                      <span class="checkbox__element"></span>
-                      <span class="filters__element-text filters__element-text--truncated">Embedded</span>
-                    </label>
-                    <label class="checkbox filters__element">
-                      <input checked class="checkbox__input" type="checkbox" />
-                      <span class="checkbox__element"></span>
-                      <span class="filters__element-text filters__element-text--truncated">EdTech</span>
-                    </label>
-                    <label class="checkbox filters__element">
-                      <input class="checkbox__input" type="checkbox" />
-                      <span class="checkbox__element"></span>
-                      <span class="filters__element-text filters__element-text--truncated">eCommerce</span>
-                    </label>
-                    <label class="checkbox filters__element">
-                      <input class="checkbox__input" type="checkbox" />
-                      <span class="checkbox__element"></span>
-                      <span class="filters__element-text filters__element-text--truncated">HealthTech</span>
-                    </label>
-                    <label class="checkbox filters__element">
-                      <input class="checkbox__input" type="checkbox" />
-                      <span class="checkbox__element"></span>
-                      <span class="filters__element-text filters__element-text--truncated">CyberSecurity</span>
-                    </label>
-                    <label class="checkbox filters__element">
-                      <input class="checkbox__input" type="checkbox" />
-                      <span class="checkbox__element"></span>
-                      <span class="filters__element-text filters__element-text--truncated">Embedded</span>
-                    </label>
-                    <label class="checkbox filters__element">
-                      <input class="checkbox__input" type="checkbox" />
-                      <span class="checkbox__element"></span>
-                      <span class="filters__element-text filters__element-text--truncated">EdTech</span>
-                    </label>
-                    <label class="checkbox filters__element">
-                      <input class="checkbox__input" type="checkbox" />
-                      <span class="checkbox__element"></span>
-                      <span class="filters__element-text filters__element-text--truncated">eCommerce</span>
-                    </label>
-                    <label class="checkbox filters__element">
-                      <input class="checkbox__input" type="checkbox" />
-                      <span class="checkbox__element"></span>
-                      <span class="filters__element-text filters__element-text--truncated">HealthTech</span>
-                    </label>
+                    `)
+	}
+	qw422016.N().S(`
                   </div>
                 </div>
               </div>

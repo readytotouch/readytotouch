@@ -146,6 +146,7 @@
       </div>
       <!-- /Company type -->
 
+      <!-- Industry -->
       <div class="filters__group">
         <header class="filters__header">
           <h4 class="filters__headline">Industry</h4>
@@ -160,6 +161,7 @@
           {% endfor %}
         </div>
       </div>
+      <!-- /Industry -->
 
       <!-- Other -->
       <div class="filters__group">

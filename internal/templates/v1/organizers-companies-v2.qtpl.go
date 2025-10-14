@@ -226,6 +226,7 @@ func StreamOrganizersCompaniesV2(qw422016 *qt422016.Writer,
       </div>
       <!-- /Company type -->
 
+      <!-- Industry -->
       <div class="filters__group">
         <header class="filters__header">
           <h4 class="filters__headline">Industry</h4>
@@ -248,6 +249,7 @@ func StreamOrganizersCompaniesV2(qw422016 *qt422016.Writer,
 	qw422016.N().S(`
         </div>
       </div>
+      <!-- /Industry -->
 
       <!-- Other -->
       <div class="filters__group">
