@@ -112,10 +112,11 @@
         <img class="search__icon" alt="Search icon" width="20" height="20" src="/assets/images/pages/common/search.svg" />
       </div>
       <button type="button" class="mobile-filter js-mobile-filter">
-        <img src="/assets/images/pages/common/filter.svg"
-             alt="Filter icon"
-             width="16"
-             height="16"
+        <img
+          src="/assets/images/pages/common/filter.svg"
+          alt="Filter icon"
+          width="16"
+          height="16"
         />
         <span class="mobile-filter__counter">27</span>
       </button>
@@ -123,11 +124,12 @@
         <button type="button" class="sorter__title js-sorter-toggle">
           <span class="sorter__title-text js-sorter-title-text">Newest first</span>
           <span class="sorter__icon-wrapper">
-            <img alt="caret-down icon"
-                 width="12"
-                 height="7"
-                 src="/assets/images/pages/organizer/caret-down.svg"
-            >
+            <img
+              alt="caret-down icon"
+              width="12"
+              height="7"
+              src="/assets/images/pages/organizer/caret-down.svg"
+            />
           </span>
         </button>
         <ul class="sorter__list js-sorter-list">
@@ -164,11 +166,12 @@
                 <button type="button" class="sorter__title">
                   <span class="sorter__title-text">Newest first</span>
                   <span class="sorter__icon-wrapper">
-                    <img alt="caret-down icon"
-                         width="12"
-                         height="7"
-                         src="/assets/images/pages/organizer/caret-down.svg"
-                    >
+                    <img
+                      alt="caret-down icon"
+                      width="12"
+                      height="7"
+                      src="/assets/images/pages/organizer/caret-down.svg"
+                    />
                   </span>
                 </button>
                 <ul class="sorter__list">
@@ -223,29 +226,32 @@
                   <div class="card__logo-overlay">
                     {% if false %}
                     <!-- TODO square logo -->
-                    <img class="card__logo"
-                         alt="{%s company.Name %} logo"
-                         src="/assets/images/pages/organizer/logos/google.svg"
+                    <img
+                      class="card__logo"
+                      alt="{%s company.Name %} logo"
+                      src="/assets/images/pages/organizer/logos/google.svg"
                     />
                     {% endif %}
                   </div>
                   <figcaption class="card__header-caption">
                     <a href="{%s organizerFeature.Path %}/{%s company.LinkedInProfile.Alias %}" class="card__headline vacancy__link">{%s company.Name %}</a>
                     <p class="card__header-caption-text">
-                      <img class="card__header-caption-icon"
-                           alt="marker"
-                           width="12"
-                           height="12"
-                           src="/assets/images/pages/organizer/marker.svg"
-                      >Country, City (Full Remote) <!-- TODO -->
+                      <img
+                        class="card__header-caption-icon"
+                        alt="marker"
+                        width="12"
+                        height="12"
+                        src="/assets/images/pages/organizer/marker.svg"
+                      />Country, City (Full Remote) <!-- TODO -->
                     </p>
                     <p class="card__header-caption-text">
-                      <img class="card__header-caption-icon"
-                           alt="briefcase"
-                           width="12"
-                           height="12"
-                           src="/assets/images/pages/organizer/briefcase.svg"
-                      >Latest job posting: 12/31/2024 <!-- TODO -->
+                      <img
+                        class="card__header-caption-icon"
+                        alt="briefcase"
+                        width="12"
+                        height="12"
+                        src="/assets/images/pages/organizer/briefcase.svg"
+                      />Latest job posting: 12/31/2024 <!-- TODO -->
                     </p>
                   </figcaption>
                 </figure>
@@ -329,6 +335,208 @@
                   {% endcomment %}
                 </div>
 
+                <div class="card__info-group">
+                  <button type="button" class="button button--small button--black card__info-group-button">
+                    <span class="card__info-group-button-text">Show more info</span>
+                    <img
+                      class="card__info-group-button-image"
+                      src="/assets/images/pages/common/double-arrow-down.svg"
+                      width="13"
+                      height="14"
+                      alt="icon double-arrow-down"
+                    />
+                  </button>
+                  <div class="card__info-group-content">
+                    <p class="js-company-description card__text">{%s company.ShortDescription %}</p>
+                    <div class="card__links">
+                      <ul class="card__links-group">
+                        <li class="card__links-item card__links-item--title">
+                          <div class="card__links-item-group">
+                            <img
+                              class="card__links-icon"
+                              alt="linkedin icon"
+                              width="32"
+                              height="32"
+                              src="/assets/images/pages/organizer/linkedin.svg"
+                            />
+                            <a href="https://www.linkedin.com/company/{%s company.LinkedInProfile.Alias %}/" target="_blank" class="card__links-link">LinkedIn</a>
+                            {% if company.LinkedInProfile.Verified %}
+                            <a href="https://www.linkedin.com/company/{%s company.LinkedInProfile.Alias %}/about" target="_blank" class="card__links-link card__links-link--verify">
+                              <img
+                                class="card__links-icon"
+                                alt="icon"
+                                src="/assets/images/pages/organizer/verified-icon.png"
+                              />
+                            </a>
+                            {% endif %}
+                          </div>
+                        </li>
+                        <li class="card__links-item">
+                          <a href="https://www.linkedin.com/company/{%s company.LinkedInProfile.Alias %}/" target="_blank" class="button-link card__links-link">Overview</a>
+                        </li>
+                        <li class="card__links-item card__links-item--inner">
+                          <p class="card__links-item-text">Connections (employees):</p>
+                          <ul class="card__links-group-inner">
+                            <li class="card__links-item">
+                              <a href="{%s linkedinConnectionsURL([]Company{company}, nil) %}" target="_blank" class="button-link card__links-link">Global</a>
+                              <img
+                                class="card__links-icon"
+                                alt="language icon"
+                                width="20"
+                                height="20"
+                                src="/assets/images/pages/organizer/language.svg"
+                              />
+                            </li>
+                            <li class="card__links-item">
+                              <a href="{%s linkedinConnectionsURL([]Company{company}, ukrainianUniversities) %}" target="_blank" class="button-link card__links-link">UA</a>
+                              <img
+                                class="card__links-icon"
+                                alt="language icon"
+                                width="20"
+                                height="20"
+                                src="/assets/images/pages/common/flags/4x3/ua.svg"
+                              />
+                            </li>
+                            <li class="card__links-item">
+                              <a href="{%s linkedinConnectionsURL([]Company{company}, czechUniversities) %}" target="_blank" class="button-link card__links-link">CZ</a>
+                              <img
+                                class="card__links-icon"
+                                alt="language icon"
+                                width="20"
+                                height="20"
+                                src="/assets/images/pages/common/flags/4x3/cz.svg"
+                              />
+                            </li>
+                            <li class="card__links-item">
+                              <a href="{%s linkedinConnectionsFormerEmployeesURL([]Company{company}) %}" target="_blank" class="button-link card__links-link">Former (All)</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="card__links-item">
+                          <a href="{%s linkedinEmployeesPostsURL([]Company{company}, organizerFeature.Organizer.Title) %}" target="_blank" class="button-link card__links-link">Employees' posts</a>
+                        </li>
+                        <li class="card__links-item">
+                          <a href="{%s linkedinJobsURL([]Company{company}, string(organizerFeature.Organizer.LanguageTitleKeywords)) %}" target="_blank" class="button-link card__links-link">Jobs</a>
+                        </li>
+                      </ul>
+                      <ul class="card__links-group">
+                        {% if company.GitHubProfile.Login == "" %}
+                        <li class="card__links-item card__links-item--title card__links-item--disabled">
+                          <div class="card__links-item-group">
+                            <img
+                              class="card__links-icon"
+                              alt="GitHub icon"
+                              width="32"
+                              height="32"
+                              src="/assets/images/pages/organizer/github.svg"
+                            />
+                            <span class="card__links-link">GitHub</span>
+                          </div>
+                        </li>
+                        <li class="card__links-item card__links-item--disabled">
+                          <span class="button-link card__links-link">Overview</span>
+                          <a href="{%s googleSearchGitHub(company.Name) %}" target="_blank" class="card__links-link card__links-link--google">
+                            <img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+                          </a>
+                        </li>
+                        <li class="card__links-item card__links-item--disabled">
+                          <span class="button-link card__links-link">Repositories (?)</span>
+                        </li>
+                        <li class="card__links-item card__links-item--disabled">
+                          <span class="button-link card__links-link">Followers (?)</span>
+                        </li>
+                        {% else %}
+                        <li class="card__links-item card__links-item--title">
+                          <div class="card__links-item-group">
+                            <img
+                              class="card__links-icon"
+                              alt="GitHub icon"
+                              width="32"
+                              height="32"
+                              src="/assets/images/pages/organizer/github.svg"
+                            />
+                            <a href="https://github.com/{%s company.GitHubProfile.Login %}" target="_blank" class="card__links-link">GitHub</a>
+                            {% if company.GitHubProfile.Verified %}
+                            <span class="card__links-link card__links-link--verify">
+                              <img
+                                class="card__links-icon"
+                                alt="GitHub verified icon"
+                                src="/assets/images/pages/organizer/verified.png"
+                              />
+                            </span>
+                            {% endif %}
+                          </div>
+                        </li>
+                        <li class="card__links-item">
+                          <a href="https://github.com/{%s company.GitHubProfile.Login %}" target="_blank" class="button-link card__links-link">Overview</a>
+                        </li>
+                        <li class="card__links-item">
+                          <a href="https://github.com/orgs/{%s company.GitHubProfile.Login %}/repositories?q=lang:{%s organizerFeature.Organizer.GitHubAlias %}" target="_blank" class="button-link card__links-link">Repositories ({%d fetchGitHubRepositoriesCount(company, organizerFeature.Organizer.Language) %})</a>
+                        </li>
+                        <li class="card__links-item">
+                          <a href="https://github.com/orgs/{%s company.GitHubProfile.Login %}/followers" target="_blank" class="button-link card__links-link">Followers ({%s fetchGitHubFollowers(company) %})</a>
+                        </li>
+                        {% endif %}
+                      </ul>
+                      <ul class="card__links-group">
+                        {% if company.GlassdoorProfile.OverviewURL == "" %}
+                        <li class="card__links-item card__links-item--title card__links-item--disabled">
+                          <div class="card__links-item-group">
+                            <img
+                              class="card__links-icon"
+                              alt="Glassdoor icon"
+                              width="32"
+                              height="32"
+                              src="/assets/images/pages/organizer/glassdoor.svg"
+                            />
+                            <span class="card__links-link">Glassdoor</span>
+                          </div>
+                        </li>
+                        <li class="card__links-item card__links-item--disabled">
+                          <span class="button-link card__links-link">Overview</span>
+                          <a href="{%s googleSearchGlassdoor(company.Name) %}" target="_blank" class="card__links-link card__links-link--google">
+                            <img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+                          </a>
+                        </li>
+                        <li class="card__links-item card__links-item--disabled">
+                          <span class="button-link card__links-link">Reviews</span>
+                          <span class="card__links-link-star">?.? ★</span>
+                        </li>
+                        {% else %}
+                        <li class="card__links-item card__links-item--title">
+                          <div class="card__links-item-group">
+                            <img
+                              class="card__links-icon"
+                              alt="Glassdoor icon"
+                              width="32"
+                              height="32"
+                              src="/assets/images/pages/organizer/glassdoor.svg"
+                            />
+                            <a href="{%s company.GlassdoorProfile.OverviewURL %}" target="_blank" class="card__links-link">Glassdoor</a>
+                            {% if company.GlassdoorProfile.Verified %}
+                            <span class="card__links-link card__links-link--verify">
+                              <img
+                                class="card__links-icon"
+                                alt="Glassdoor verified icon"
+                                src="/assets/images/pages/organizer/verified-icon-2.png"
+                              />
+                            </span>
+                            {% endif %}
+                          </div>
+                        </li>
+                        <li class="card__links-item">
+                          <a href="{%s company.GlassdoorProfile.OverviewURL %}" target="_blank" class="button-link card__links-link">Overview</a>
+                        </li>
+                        <li class="card__links-item">
+                          <a href="{%s company.GlassdoorProfile.ReviewsURL %}" target="_blank" class="button-link card__links-link">Reviews</a>
+                          <span class="card__links-link-star">{%s formatGlassdoorReviewsRate(company.GlassdoorProfile.ReviewsRate) %} ★</span>
+                        </li>
+                        {% endif %}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
               </div>
               {% endfor %}
             </div>
@@ -348,20 +556,20 @@
               <nav class="pagination search-result__pagination">
                 <a class="pagination__button pagination__button--prev" href="javascript:" aria-label="arrow left">
                   <img
-                          class="pagination__icon pagination__icon--prev"
-                          width="12"
-                          height="12"
-                          src="/assets/images/pages/common/double-left.svg"
-                          alt="arrow left"
+                    class="pagination__icon pagination__icon--prev"
+                    width="12"
+                    height="12"
+                    src="/assets/images/pages/common/double-left.svg"
+                    alt="arrow left"
                   />
                 </a>
                 <a class="pagination__button pagination__button--prev" href="javascript:" aria-label="arrow left">
                   <img
-                          class="pagination__icon pagination__icon--prev"
-                          width="14"
-                          height="14"
-                          src="/assets/images/pages/common/left.svg"
-                          alt="arrow left"
+                    class="pagination__icon pagination__icon--prev"
+                    width="14"
+                    height="14"
+                    src="/assets/images/pages/common/left.svg"
+                    alt="arrow left"
                   />
                 </a>
                 <a class="pagination__item pagination__item--active" href="javascript:">1</a>
@@ -373,20 +581,20 @@
                 <a class="pagination__item pagination__item--hidden" href="javascript:">9</a>
                 <a class="pagination__button pagination__button--prev" href="javascript:" aria-label="arrow left">
                   <img
-                          class="pagination__icon pagination__icon--prev"
-                          width="14"
-                          height="14"
-                          src="/assets/images/pages/common/right.svg"
-                          alt="arrow left"
+                    class="pagination__icon pagination__icon--prev"
+                    width="14"
+                    height="14"
+                    src="/assets/images/pages/common/right.svg"
+                    alt="arrow left"
                   />
                 </a>
                 <a class="pagination__button pagination__button--next" href="javascript:" aria-label="arrow right">
                   <img
-                          class="pagination__icon pagination__icon--next"
-                          width="12"
-                          height="12"
-                          src="/assets/images/pages/common/double-left.svg"
-                          alt="arrow right"
+                    class="pagination__icon pagination__icon--next"
+                    width="12"
+                    height="12"
+                    src="/assets/images/pages/common/double-left.svg"
+                    alt="arrow right"
                   />
                 </a>
               </nav>

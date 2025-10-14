@@ -413,21 +413,21 @@
                           <div class="card__links-item-group">
                               <img
                                   class="card__links-icon"
-                                  alt="github icon"
+                                  alt="GitHub icon"
                                   width="32"
                                   height="32"
                                   src="/assets/images/pages/organizer/github.svg"
                               />
+                              <a href="https://github.com/{%s company.GitHubProfile.Login %}" target="_blank" class="card__links-link">GitHub</a>
                               {% if company.GitHubProfile.Verified %}
                               <span class="card__links-link card__links-link--verify">
                                   <img
                                       class="card__links-icon"
-                                      alt="icon"
+                                      alt="GitHub verified icon"
                                       src="/assets/images/pages/organizer/verified.png"
                                   />
                               </span>
                               {% endif %}
-                              <a href="https://github.com/{%s company.GitHubProfile.Login %}" target="_blank" class="card__links-link">GitHub</a>
                           </div>
                       </li>
                       <li class="card__links-item">
@@ -447,7 +447,7 @@
                           <div class="card__links-item-group">
                               <img
                                   class="card__links-icon"
-                                  alt="glassdoor icon"
+                                  alt="Glassdoor icon"
                                   width="32"
                                   height="32"
                                   src="/assets/images/pages/organizer/glassdoor.svg"
@@ -470,7 +470,7 @@
                           <div class="card__links-item-group">
                               <img
                                   class="card__links-icon"
-                                  alt="glassdoor icon"
+                                  alt="Glassdoor icon"
                                   width="32"
                                   height="32"
                                   src="/assets/images/pages/organizer/glassdoor.svg"
@@ -480,7 +480,7 @@
                               <span class="card__links-link card__links-link--verify">
                                   <img
                                       class="card__links-icon"
-                                      alt="icon"
+                                      alt="Glassdoor verified icon"
                                       src="/assets/images/pages/organizer/verified-icon-2.png"
                                   />
                               </span>
