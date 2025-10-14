@@ -235,6 +235,1694 @@ func StreamOrganizersCompaniesV3(qw422016 *qt422016.Writer,
     <div class="container">
       <div class="search-result__wrapper">
         <!-- filters -->
+        <aside class="search-result__filters js-search-result-filters">
+          <div class="search-result__filter-group search-result__filter-group--wide">
+            <div class="search-result__filter-header">
+              <h2 class="search-result__filter-headline">Filters:</h2>
+              <button type="button" class="button button--light-link search-result__filter-headline-reset">Reset all</button>
+              <button type="button" class="button button--light-link search-result__filter-headline-reset-mobile js-filter-headline-reset-mobile">
+                <img src="/assets/images/pages/common/cross-thin.svg" alt="cross icon" width="24" height="24">
+              </button>
+            </div>
+
+            <div class="filters search-result__filters-list">
+              <!-- Location -->
+              <div class="filters__group">
+                <header class="filters__header filters__header--with-info">
+                  <h4 class="filters__headline">Location</h4>
+                  <img
+                    class="ml-14"
+                    alt="info icon"
+                    width="14"
+                    height="14"
+                    title="info"
+                    src="/assets/images/pages/common/info.svg"
+                  />
+                </header>
+                <div class="filters__elements filters__elements--location">
+                  <div class="filters__elements-inner">
+                    <label class="checkbox filters__element">
+                      <input checked class="checkbox__input" type="checkbox" />
+                      <span class="checkbox__element"></span>
+                      All
+                    </label>
+                    <label class="checkbox filters__element filters__element--location">
+          <input name="ad" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-ad"></span>
+          <span class="filters__element-text filters__element-text--truncated">Andorra</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="ae" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-ae"></span>
+          <span class="filters__element-text filters__element-text--truncated">United Arab Emirates</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="af" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-af"></span>
+          <span class="filters__element-text filters__element-text--truncated">Afghanistan</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="ag" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-ag"></span>
+          <span class="filters__element-text filters__element-text--truncated">Antigua and Barbuda</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="ai" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-ai"></span>
+          <span class="filters__element-text filters__element-text--truncated">Anguilla</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="al" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-al"></span>
+          <span class="filters__element-text filters__element-text--truncated">Albania</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="am" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-am"></span>
+          <span class="filters__element-text filters__element-text--truncated">Armenia</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="ao" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-ao"></span>
+          <span class="filters__element-text filters__element-text--truncated">Angola</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="aq" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-aq"></span>
+          <span class="filters__element-text filters__element-text--truncated">Antarctica</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="ar" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-ar"></span>
+          <span class="filters__element-text filters__element-text--truncated">Argentina</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="as" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-as"></span>
+          <span class="filters__element-text filters__element-text--truncated">American Samoa</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="at" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-at"></span>
+          <span class="filters__element-text filters__element-text--truncated">Austria</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="au" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-au"></span>
+          <span class="filters__element-text filters__element-text--truncated">Australia</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="aw" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-aw"></span>
+          <span class="filters__element-text filters__element-text--truncated">Aruba</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="ax" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-ax"></span>
+          <span class="filters__element-text filters__element-text--truncated">Åland Islands</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="az" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-az"></span>
+          <span class="filters__element-text filters__element-text--truncated">Azerbaijan</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="ba" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-ba"></span>
+          <span class="filters__element-text filters__element-text--truncated">Bosnia and Herzegovina</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="bb" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-bb"></span>
+          <span class="filters__element-text filters__element-text--truncated">Barbados</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="bd" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-bd"></span>
+          <span class="filters__element-text filters__element-text--truncated">Bangladesh</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="be" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-be"></span>
+          <span class="filters__element-text filters__element-text--truncated">Belgium</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="bf" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-bf"></span>
+          <span class="filters__element-text filters__element-text--truncated">Burkina Faso</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="bg" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-bg"></span>
+          <span class="filters__element-text filters__element-text--truncated">Bulgaria</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="bh" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-bh"></span>
+          <span class="filters__element-text filters__element-text--truncated">Bahrain</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="bi" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-bi"></span>
+          <span class="filters__element-text filters__element-text--truncated">Burundi</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="bj" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-bj"></span>
+          <span class="filters__element-text filters__element-text--truncated">Benin</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="bl" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-bl"></span>
+          <span class="filters__element-text filters__element-text--truncated">Saint Barthélemy</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="bm" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-bm"></span>
+          <span class="filters__element-text filters__element-text--truncated">Bermuda</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="bn" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-bn"></span>
+          <span class="filters__element-text filters__element-text--truncated">Brunei Darussalam</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="bo" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-bo"></span>
+          <span class="filters__element-text filters__element-text--truncated">Bolivia (Plurinational State of)</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="bq" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-bq"></span>
+          <span class="filters__element-text filters__element-text--truncated">Bonaire, Sint Eustatius and Saba</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="br" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-br"></span>
+          <span class="filters__element-text filters__element-text--truncated">Brazil</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="bs" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-bs"></span>
+          <span class="filters__element-text filters__element-text--truncated">Bahamas</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="bt" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-bt"></span>
+          <span class="filters__element-text filters__element-text--truncated">Bhutan</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="bv" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-bv"></span>
+          <span class="filters__element-text filters__element-text--truncated">Bouvet Island</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="bw" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-bw"></span>
+          <span class="filters__element-text filters__element-text--truncated">Botswana</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="by" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-by"></span>
+          <span class="filters__element-text filters__element-text--truncated">Belarus</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="bz" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-bz"></span>
+          <span class="filters__element-text filters__element-text--truncated">Belize</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="ca" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-ca"></span>
+          <span class="filters__element-text filters__element-text--truncated">Canada</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="cc" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-cc"></span>
+          <span class="filters__element-text filters__element-text--truncated">Cocos (Keeling) Islands</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="cd" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-cd"></span>
+          <span class="filters__element-text filters__element-text--truncated">Congo (Democratic Republic of the)</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="cf" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-cf"></span>
+          <span class="filters__element-text filters__element-text--truncated">Central African Republic</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="cg" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-cg"></span>
+          <span class="filters__element-text filters__element-text--truncated">Congo</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="ch" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-ch"></span>
+          <span class="filters__element-text filters__element-text--truncated">Switzerland</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="ci" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-ci"></span>
+          <span class="filters__element-text filters__element-text--truncated">Côte d'Ivoire</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="ck" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-ck"></span>
+          <span class="filters__element-text filters__element-text--truncated">Cook Islands</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="cl" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-cl"></span>
+          <span class="filters__element-text filters__element-text--truncated">Chile</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="cm" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-cm"></span>
+          <span class="filters__element-text filters__element-text--truncated">Cameroon</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="cn" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-cn"></span>
+          <span class="filters__element-text filters__element-text--truncated">China</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="co" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-co"></span>
+          <span class="filters__element-text filters__element-text--truncated">Colombia</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="cr" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-cr"></span>
+          <span class="filters__element-text filters__element-text--truncated">Costa Rica</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="cu" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-cu"></span>
+          <span class="filters__element-text filters__element-text--truncated">Cuba</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="cv" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-cv"></span>
+          <span class="filters__element-text filters__element-text--truncated">Cabo Verde</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="cw" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-cw"></span>
+          <span class="filters__element-text filters__element-text--truncated">Curaçao</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="cx" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-cx"></span>
+          <span class="filters__element-text filters__element-text--truncated">Christmas Island</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="cy" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-cy"></span>
+          <span class="filters__element-text filters__element-text--truncated">Cyprus</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="cz" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-cz"></span>
+          <span class="filters__element-text filters__element-text--truncated">Czechia</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="de" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-de"></span>
+          <span class="filters__element-text filters__element-text--truncated">Germany</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="dj" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-dj"></span>
+          <span class="filters__element-text filters__element-text--truncated">Djibouti</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="dk" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-dk"></span>
+          <span class="filters__element-text filters__element-text--truncated">Denmark</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="dm" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-dm"></span>
+          <span class="filters__element-text filters__element-text--truncated">Dominica</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="do" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-do"></span>
+          <span class="filters__element-text filters__element-text--truncated">Dominican Republic</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="dz" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-dz"></span>
+          <span class="filters__element-text filters__element-text--truncated">Algeria</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="ec" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-ec"></span>
+          <span class="filters__element-text filters__element-text--truncated">Ecuador</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="ee" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-ee"></span>
+          <span class="filters__element-text filters__element-text--truncated">Estonia</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="eg" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-eg"></span>
+          <span class="filters__element-text filters__element-text--truncated">Egypt</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="eh" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-eh"></span>
+          <span class="filters__element-text filters__element-text--truncated">Western Sahara</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="er" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-er"></span>
+          <span class="filters__element-text filters__element-text--truncated">Eritrea</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="es" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-es"></span>
+          <span class="filters__element-text filters__element-text--truncated">Spain</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="et" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-et"></span>
+          <span class="filters__element-text filters__element-text--truncated">Ethiopia</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="fi" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-fi"></span>
+          <span class="filters__element-text filters__element-text--truncated">Finland</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="fj" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-fj"></span>
+          <span class="filters__element-text filters__element-text--truncated">Fiji</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="fk" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-fk"></span>
+          <span class="filters__element-text filters__element-text--truncated">Falkland Islands (Malvinas)</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="fm" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-fm"></span>
+          <span class="filters__element-text filters__element-text--truncated">Micronesia (Federated States of)</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="fo" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-fo"></span>
+          <span class="filters__element-text filters__element-text--truncated">Faroe Islands</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="fr" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-fr"></span>
+          <span class="filters__element-text filters__element-text--truncated">France</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="ga" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-ga"></span>
+          <span class="filters__element-text filters__element-text--truncated">Gabon</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="gb" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-gb"></span>
+          <span class="filters__element-text filters__element-text--truncated">United Kingdom of Great Britain and Northern Ireland</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="gd" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-gd"></span>
+          <span class="filters__element-text filters__element-text--truncated">Grenada</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="ge" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-ge"></span>
+          <span class="filters__element-text filters__element-text--truncated">Georgia</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="gf" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-gf"></span>
+          <span class="filters__element-text filters__element-text--truncated">French Guiana</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="gg" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-gg"></span>
+          <span class="filters__element-text filters__element-text--truncated">Guernsey</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="gh" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-gh"></span>
+          <span class="filters__element-text filters__element-text--truncated">Ghana</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="gi" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-gi"></span>
+          <span class="filters__element-text filters__element-text--truncated">Gibraltar</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="gl" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-gl"></span>
+          <span class="filters__element-text filters__element-text--truncated">Greenland</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="gm" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-gm"></span>
+          <span class="filters__element-text filters__element-text--truncated">Gambia</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="gn" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-gn"></span>
+          <span class="filters__element-text filters__element-text--truncated">Guinea</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="gp" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-gp"></span>
+          <span class="filters__element-text filters__element-text--truncated">Guadeloupe</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="gq" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-gq"></span>
+          <span class="filters__element-text filters__element-text--truncated">Equatorial Guinea</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="gr" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-gr"></span>
+          <span class="filters__element-text filters__element-text--truncated">Greece</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="gs" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-gs"></span>
+          <span class="filters__element-text filters__element-text--truncated">South Georgia and the South Sandwich Islands</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="gt" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-gt"></span>
+          <span class="filters__element-text filters__element-text--truncated">Guatemala</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="gu" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-gu"></span>
+          <span class="filters__element-text filters__element-text--truncated">Guam</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="gw" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-gw"></span>
+          <span class="filters__element-text filters__element-text--truncated">Guinea-Bissau</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="gy" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-gy"></span>
+          <span class="filters__element-text filters__element-text--truncated">Guyana</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="hk" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-hk"></span>
+          <span class="filters__element-text filters__element-text--truncated">Hong Kong</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="hm" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-hm"></span>
+          <span class="filters__element-text filters__element-text--truncated">Heard Island and McDonald Islands</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="hn" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-hn"></span>
+          <span class="filters__element-text filters__element-text--truncated">Honduras</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="hr" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-hr"></span>
+          <span class="filters__element-text filters__element-text--truncated">Croatia</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="ht" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-ht"></span>
+          <span class="filters__element-text filters__element-text--truncated">Haiti</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="hu" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-hu"></span>
+          <span class="filters__element-text filters__element-text--truncated">Hungary</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="id" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-id"></span>
+          <span class="filters__element-text filters__element-text--truncated">Indonesia</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="ie" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-ie"></span>
+          <span class="filters__element-text filters__element-text--truncated">Ireland</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="il" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-il"></span>
+          <span class="filters__element-text filters__element-text--truncated">Israel</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="im" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-im"></span>
+          <span class="filters__element-text filters__element-text--truncated">Isle of Man</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="in" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-in"></span>
+          <span class="filters__element-text filters__element-text--truncated">India</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="io" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-io"></span>
+          <span class="filters__element-text filters__element-text--truncated">British Indian Ocean Territory</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="iq" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-iq"></span>
+          <span class="filters__element-text filters__element-text--truncated">Iraq</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="ir" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-ir"></span>
+          <span class="filters__element-text filters__element-text--truncated">Iran (Islamic Republic of)</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="is" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-is"></span>
+          <span class="filters__element-text filters__element-text--truncated">Iceland</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="it" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-it"></span>
+          <span class="filters__element-text filters__element-text--truncated">Italy</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="je" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-je"></span>
+          <span class="filters__element-text filters__element-text--truncated">Jersey</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="jm" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-jm"></span>
+          <span class="filters__element-text filters__element-text--truncated">Jamaica</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="jo" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-jo"></span>
+          <span class="filters__element-text filters__element-text--truncated">Jordan</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="jp" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-jp"></span>
+          <span class="filters__element-text filters__element-text--truncated">Japan</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="ke" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-ke"></span>
+          <span class="filters__element-text filters__element-text--truncated">Kenya</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="kg" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-kg"></span>
+          <span class="filters__element-text filters__element-text--truncated">Kyrgyzstan</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="kh" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-kh"></span>
+          <span class="filters__element-text filters__element-text--truncated">Cambodia</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="ki" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-ki"></span>
+          <span class="filters__element-text filters__element-text--truncated">Kiribati</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="km" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-km"></span>
+          <span class="filters__element-text filters__element-text--truncated">Comoros</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="kn" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-kn"></span>
+          <span class="filters__element-text filters__element-text--truncated">Saint Kitts and Nevis</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="kp" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-kp"></span>
+          <span class="filters__element-text filters__element-text--truncated">Korea (Democratic People's Republic of)</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="kr" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-kr"></span>
+          <span class="filters__element-text filters__element-text--truncated">Korea (Republic of)</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="kw" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-kw"></span>
+          <span class="filters__element-text filters__element-text--truncated">Kuwait</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="ky" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-ky"></span>
+          <span class="filters__element-text filters__element-text--truncated">Cayman Islands</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="kz" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-kz"></span>
+          <span class="filters__element-text filters__element-text--truncated">Kazakhstan</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="la" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-la"></span>
+          <span class="filters__element-text filters__element-text--truncated">Lao People's Democratic Republic</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="lb" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-lb"></span>
+          <span class="filters__element-text filters__element-text--truncated">Lebanon</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="lc" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-lc"></span>
+          <span class="filters__element-text filters__element-text--truncated">Saint Lucia</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="li" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-li"></span>
+          <span class="filters__element-text filters__element-text--truncated">Liechtenstein</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="lk" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-lk"></span>
+          <span class="filters__element-text filters__element-text--truncated">Sri Lanka</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="lr" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-lr"></span>
+          <span class="filters__element-text filters__element-text--truncated">Liberia</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="ls" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-ls"></span>
+          <span class="filters__element-text filters__element-text--truncated">Lesotho</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="lt" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-lt"></span>
+          <span class="filters__element-text filters__element-text--truncated">Lithuania</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="lu" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-lu"></span>
+          <span class="filters__element-text filters__element-text--truncated">Luxembourg</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="lv" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-lv"></span>
+          <span class="filters__element-text filters__element-text--truncated">Latvia</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="ly" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-ly"></span>
+          <span class="filters__element-text filters__element-text--truncated">Libya</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="ma" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-ma"></span>
+          <span class="filters__element-text filters__element-text--truncated">Morocco</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="mc" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-mc"></span>
+          <span class="filters__element-text filters__element-text--truncated">Monaco</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="md" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-md"></span>
+          <span class="filters__element-text filters__element-text--truncated">Moldova (Republic of)</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="me" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-me"></span>
+          <span class="filters__element-text filters__element-text--truncated">Montenegro</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="mf" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-mf"></span>
+          <span class="filters__element-text filters__element-text--truncated">Saint Martin (French part)</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="mg" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-mg"></span>
+          <span class="filters__element-text filters__element-text--truncated">Madagascar</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="mh" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-mh"></span>
+          <span class="filters__element-text filters__element-text--truncated">Marshall Islands</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="mk" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-mk"></span>
+          <span class="filters__element-text filters__element-text--truncated">North Macedonia</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="ml" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-ml"></span>
+          <span class="filters__element-text filters__element-text--truncated">Mali</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="mm" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-mm"></span>
+          <span class="filters__element-text filters__element-text--truncated">Myanmar</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="mn" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-mn"></span>
+          <span class="filters__element-text filters__element-text--truncated">Mongolia</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="mo" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-mo"></span>
+          <span class="filters__element-text filters__element-text--truncated">Macao</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="mp" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-mp"></span>
+          <span class="filters__element-text filters__element-text--truncated">Northern Mariana Islands</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="mq" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-mq"></span>
+          <span class="filters__element-text filters__element-text--truncated">Martinique</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="mr" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-mr"></span>
+          <span class="filters__element-text filters__element-text--truncated">Mauritania</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="ms" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-ms"></span>
+          <span class="filters__element-text filters__element-text--truncated">Montserrat</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="mt" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-mt"></span>
+          <span class="filters__element-text filters__element-text--truncated">Malta</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="mu" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-mu"></span>
+          <span class="filters__element-text filters__element-text--truncated">Mauritius</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="mv" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-mv"></span>
+          <span class="filters__element-text filters__element-text--truncated">Maldives</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="mw" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-mw"></span>
+          <span class="filters__element-text filters__element-text--truncated">Malawi</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="mx" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-mx"></span>
+          <span class="filters__element-text filters__element-text--truncated">Mexico</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="my" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-my"></span>
+          <span class="filters__element-text filters__element-text--truncated">Malaysia</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="mz" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-mz"></span>
+          <span class="filters__element-text filters__element-text--truncated">Mozambique</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="na" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-na"></span>
+          <span class="filters__element-text filters__element-text--truncated">Namibia</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="nc" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-nc"></span>
+          <span class="filters__element-text filters__element-text--truncated">New Caledonia</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="ne" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-ne"></span>
+          <span class="filters__element-text filters__element-text--truncated">Niger</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="nf" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-nf"></span>
+          <span class="filters__element-text filters__element-text--truncated">Norfolk Island</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="ng" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-ng"></span>
+          <span class="filters__element-text filters__element-text--truncated">Nigeria</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="ni" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-ni"></span>
+          <span class="filters__element-text filters__element-text--truncated">Nicaragua</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="nl" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-nl"></span>
+          <span class="filters__element-text filters__element-text--truncated">Netherlands</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="no" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-no"></span>
+          <span class="filters__element-text filters__element-text--truncated">Norway</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="np" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-np"></span>
+          <span class="filters__element-text filters__element-text--truncated">Nepal</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="nr" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-nr"></span>
+          <span class="filters__element-text filters__element-text--truncated">Nauru</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="nu" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-nu"></span>
+          <span class="filters__element-text filters__element-text--truncated">Niue</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="nz" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-nz"></span>
+          <span class="filters__element-text filters__element-text--truncated">New Zealand</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="om" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-om"></span>
+          <span class="filters__element-text filters__element-text--truncated">Oman</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="pa" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-pa"></span>
+          <span class="filters__element-text filters__element-text--truncated">Panama</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="pe" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-pe"></span>
+          <span class="filters__element-text filters__element-text--truncated">Peru</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="pf" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-pf"></span>
+          <span class="filters__element-text filters__element-text--truncated">French Polynesia</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="pg" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-pg"></span>
+          <span class="filters__element-text filters__element-text--truncated">Papua New Guinea</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="ph" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-ph"></span>
+          <span class="filters__element-text filters__element-text--truncated">Philippines</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="pk" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-pk"></span>
+          <span class="filters__element-text filters__element-text--truncated">Pakistan</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="pl" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-pl"></span>
+          <span class="filters__element-text filters__element-text--truncated">Poland</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="pm" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-pm"></span>
+          <span class="filters__element-text filters__element-text--truncated">Saint Pierre and Miquelon</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="pn" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-pn"></span>
+          <span class="filters__element-text filters__element-text--truncated">Pitcairn</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="pr" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-pr"></span>
+          <span class="filters__element-text filters__element-text--truncated">Puerto Rico</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="ps" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-ps"></span>
+          <span class="filters__element-text filters__element-text--truncated">Palestine, State of</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="pt" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-pt"></span>
+          <span class="filters__element-text filters__element-text--truncated">Portugal</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="pw" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-pw"></span>
+          <span class="filters__element-text filters__element-text--truncated">Palau</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="py" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-py"></span>
+          <span class="filters__element-text filters__element-text--truncated">Paraguay</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="qa" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-qa"></span>
+          <span class="filters__element-text filters__element-text--truncated">Qatar</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="re" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-re"></span>
+          <span class="filters__element-text filters__element-text--truncated">Réunion</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="ro" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-ro"></span>
+          <span class="filters__element-text filters__element-text--truncated">Romania</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="rs" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-rs"></span>
+          <span class="filters__element-text filters__element-text--truncated">Serbia</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="ru" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-ru"></span>
+          <span class="filters__element-text filters__element-text--truncated">Russian Federation</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="rw" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-rw"></span>
+          <span class="filters__element-text filters__element-text--truncated">Rwanda</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="sa" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-sa"></span>
+          <span class="filters__element-text filters__element-text--truncated">Saudi Arabia</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="sb" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-sb"></span>
+          <span class="filters__element-text filters__element-text--truncated">Solomon Islands</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="sc" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-sc"></span>
+          <span class="filters__element-text filters__element-text--truncated">Seychelles</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="sd" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-sd"></span>
+          <span class="filters__element-text filters__element-text--truncated">Sudan</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="se" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-se"></span>
+          <span class="filters__element-text filters__element-text--truncated">Sweden</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="sg" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-sg"></span>
+          <span class="filters__element-text filters__element-text--truncated">Singapore</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="sh" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-sh"></span>
+          <span class="filters__element-text filters__element-text--truncated">Saint Helena, Ascension and Tristan da Cunha</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="si" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-si"></span>
+          <span class="filters__element-text filters__element-text--truncated">Slovenia</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="sj" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-sj"></span>
+          <span class="filters__element-text filters__element-text--truncated">Svalbard and Jan Mayen</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="sk" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-sk"></span>
+          <span class="filters__element-text filters__element-text--truncated">Slovakia</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="sl" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-sl"></span>
+          <span class="filters__element-text filters__element-text--truncated">Sierra Leone</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="sm" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-sm"></span>
+          <span class="filters__element-text filters__element-text--truncated">San Marino</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="sn" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-sn"></span>
+          <span class="filters__element-text filters__element-text--truncated">Senegal</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="so" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-so"></span>
+          <span class="filters__element-text filters__element-text--truncated">Somalia</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="sr" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-sr"></span>
+          <span class="filters__element-text filters__element-text--truncated">Suriname</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="ss" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-ss"></span>
+          <span class="filters__element-text filters__element-text--truncated">South Sudan</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="st" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-st"></span>
+          <span class="filters__element-text filters__element-text--truncated">Sao Tome and Principe</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="sv" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-sv"></span>
+          <span class="filters__element-text filters__element-text--truncated">El Salvador</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="sx" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-sx"></span>
+          <span class="filters__element-text filters__element-text--truncated">Sint Maarten (Dutch part)</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="sy" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-sy"></span>
+          <span class="filters__element-text filters__element-text--truncated">Syrian Arab Republic</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="sz" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-sz"></span>
+          <span class="filters__element-text filters__element-text--truncated">Eswatini</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="tc" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-tc"></span>
+          <span class="filters__element-text filters__element-text--truncated">Turks and Caicos Islands</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="td" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-td"></span>
+          <span class="filters__element-text filters__element-text--truncated">Chad</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="tf" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-tf"></span>
+          <span class="filters__element-text filters__element-text--truncated">French Southern Territories</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="tg" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-tg"></span>
+          <span class="filters__element-text filters__element-text--truncated">Togo</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="th" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-th"></span>
+          <span class="filters__element-text filters__element-text--truncated">Thailand</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="tj" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-tj"></span>
+          <span class="filters__element-text filters__element-text--truncated">Tajikistan</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="tk" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-tk"></span>
+          <span class="filters__element-text filters__element-text--truncated">Tokelau</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="tl" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-tl"></span>
+          <span class="filters__element-text filters__element-text--truncated">Timor-Leste</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="tm" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-tm"></span>
+          <span class="filters__element-text filters__element-text--truncated">Turkmenistan</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="tn" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-tn"></span>
+          <span class="filters__element-text filters__element-text--truncated">Tunisia</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="to" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-to"></span>
+          <span class="filters__element-text filters__element-text--truncated">Tonga</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="tr" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-tr"></span>
+          <span class="filters__element-text filters__element-text--truncated">Türkiye</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="tt" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-tt"></span>
+          <span class="filters__element-text filters__element-text--truncated">Trinidad and Tobago</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="tv" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-tv"></span>
+          <span class="filters__element-text filters__element-text--truncated">Tuvalu</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="tw" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-tw"></span>
+          <span class="filters__element-text filters__element-text--truncated">Taiwan, Province of China</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="tz" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-tz"></span>
+          <span class="filters__element-text filters__element-text--truncated">Tanzania, United Republic of</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="ua" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-ua"></span>
+          <span class="filters__element-text filters__element-text--truncated">Ukraine</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="ug" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-ug"></span>
+          <span class="filters__element-text filters__element-text--truncated">Uganda</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="um" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-um"></span>
+          <span class="filters__element-text filters__element-text--truncated">United States Minor Outlying Islands</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="us" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-us"></span>
+          <span class="filters__element-text filters__element-text--truncated">United States of America</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="uy" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-uy"></span>
+          <span class="filters__element-text filters__element-text--truncated">Uruguay</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="uz" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-uz"></span>
+          <span class="filters__element-text filters__element-text--truncated">Uzbekistan</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="va" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-va"></span>
+          <span class="filters__element-text filters__element-text--truncated">Holy See</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="vc" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-vc"></span>
+          <span class="filters__element-text filters__element-text--truncated">Saint Vincent and the Grenadines</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="ve" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-ve"></span>
+          <span class="filters__element-text filters__element-text--truncated">Venezuela (Bolivarian Republic of)</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="vg" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-vg"></span>
+          <span class="filters__element-text filters__element-text--truncated">Virgin Islands (British)</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="vi" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-vi"></span>
+          <span class="filters__element-text filters__element-text--truncated">Virgin Islands (U.S.)</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="vn" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-vn"></span>
+          <span class="filters__element-text filters__element-text--truncated">Viet Nam</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="vu" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-vu"></span>
+          <span class="filters__element-text filters__element-text--truncated">Vanuatu</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="wf" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-wf"></span>
+          <span class="filters__element-text filters__element-text--truncated">Wallis and Futuna</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="ws" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-ws"></span>
+          <span class="filters__element-text filters__element-text--truncated">Samoa</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="ye" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-ye"></span>
+          <span class="filters__element-text filters__element-text--truncated">Yemen</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="yt" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-yt"></span>
+          <span class="filters__element-text filters__element-text--truncated">Mayotte</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="za" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-za"></span>
+          <span class="filters__element-text filters__element-text--truncated">South Africa</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="zm" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-zm"></span>
+          <span class="filters__element-text filters__element-text--truncated">Zambia</span>
+        </label><label class="checkbox filters__element filters__element--location">
+          <input name="zw" class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="fi fi-zw"></span>
+          <span class="filters__element-text filters__element-text--truncated">Zimbabwe</span>
+        </label>
+                  </div>
+                  <label class="checkbox filters__element">
+                    <input class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__element"></span>
+                    <span class="filters__element-text filters__element-text--truncated">Full Remote available</span>
+                  </label>
+                </div>
+              </div>
+              <!-- /Location -->
+
+              <!-- Company type -->
+              <div class="filters__group">
+                <header class="filters__header filters__header--with-info">
+                  <h4 class="filters__headline">Company type</h4>
+                  <img
+                    class="ml-14"
+                    alt="info icon"
+                    width="14"
+                    height="14"
+                    title="info"
+                    src="/assets/images/pages/common/info.svg"
+                  />
+                </header>
+                <div class="filters__elements">
+                  <label class="checkbox filters__element">
+                    <input checked class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__element"></span>
+                    <span class="filters__element-text filters__element-text--truncated">Product</span>
+                  </label>
+                  <label class="checkbox filters__element">
+                    <input class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__element"></span>
+                    <span class="filters__element-text filters__element-text--truncated">Startup</span>
+                  </label>
+                </div>
+              </div>
+              <!-- /Company type -->
+
+              <!-- Company size -->
+              <div class="filters__group">
+                <header class="filters__header filters__header--with-info">
+                  <h4 class="filters__headline">Company size</h4>
+                  <img
+                    class="ml-8"
+                    alt="info icon"
+                    width="16"
+                    height="16"
+                    title="info"
+                    src="/assets/images/pages/common/linkedin-small.svg"
+                  />
+                  <img
+                    class="ml-14"
+                    alt="info icon"
+                    width="14"
+                    height="14"
+                    title="info"
+                    src="/assets/images/pages/common/info.svg"
+                  />
+                </header>
+                <div class="filters__elements filters__elements--full-height">
+                  <label class="checkbox filters__element">
+                    <input checked class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__element"></span>
+                    <span class="filters__element-text filters__element-text--truncated">1-50 employees</span>
+                  </label>
+                  <label class="checkbox filters__element">
+                    <input class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__element"></span>
+                    <span class="filters__element-text filters__element-text--truncated">51-200 employees</span>
+                  </label>
+                  <label class="checkbox filters__element">
+                    <input class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__element"></span>
+                    <span class="filters__element-text filters__element-text--truncated">201-500 employees</span>
+                  </label>
+                  <label class="checkbox filters__element">
+                    <input class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__element"></span>
+                    <span class="filters__element-text filters__element-text--truncated">501-1,000 employees</span>
+                  </label>
+                  <label class="checkbox filters__element">
+                    <input class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__element"></span>
+                    <span class="filters__element-text filters__element-text--truncated">1,000-5,000 employees</span>
+                  </label>
+                  <label class="checkbox filters__element">
+                    <input class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__element"></span>
+                    <span class="filters__element-text filters__element-text--truncated">1,000-5,000 employees</span>
+                  </label>
+                </div>
+              </div>
+              <!-- /Company size -->
+
+              <!-- Rating -->
+              <div class="filters__group">
+                <header class="filters__header filters__header--with-info">
+                  <h4 class="filters__headline">Rating</h4>
+                  <img
+                    class="ml-8"
+                    alt="info icon"
+                    width="16"
+                    height="16"
+                    title="info"
+                    src="/assets/images/pages/common/glassdoor.svg"
+                  />
+                  <img
+                    class="ml-14"
+                    alt="info icon"
+                    width="14"
+                    height="14"
+                    title="info"
+                    src="/assets/images/pages/common/info.svg"
+                  />
+                </header>
+                <div class="filters__elements filters__elements--full-height">
+                  <label class="checkbox filters__element">
+                    <input checked class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__element"></span>
+                    <img
+                      alt="star icon"
+                      width="22"
+                      height="22"
+                      title="info"
+                      src="/assets/images/pages/common/star.svg"
+                    />
+                    <span class="filters__element-text filters__element-text--truncated">4.5 stars and above</span>
+                  </label>
+                  <label class="checkbox filters__element">
+                    <input class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__element"></span>
+                    <img
+                      alt="star icon"
+                      width="22"
+                      height="22"
+                      title="info"
+                      src="/assets/images/pages/common/star.svg"
+                    />
+                    <span class="filters__element-text filters__element-text--truncated">4 stars and above</span>
+                  </label>
+                  <label class="checkbox filters__element">
+                    <input class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__element"></span>
+                    <img
+                      alt="star icon"
+                      width="22"
+                      height="22"
+                      title="info"
+                      src="/assets/images/pages/common/star.svg"
+                    />
+                    <span class="filters__element-text filters__element-text--truncated">3 stars and above</span>
+                  </label>
+                </div>
+              </div>
+              <!-- /Rating -->
+
+              <!-- Industry -->
+              <div class="filters__group">
+                <header class="filters__header filters__header--with-info">
+                  <h4 class="filters__headline">Industry</h4>
+                  <img
+                    class="ml-14"
+                    alt="info icon"
+                    width="14"
+                    height="14"
+                    title="info"
+                    src="/assets/images/pages/common/info.svg"
+                  />
+                </header>
+
+                <div class="filters__elements">
+                  <div class="filters__elements-inner">
+                    <label class="checkbox filters__element">
+                      <input class="checkbox__input" type="checkbox" />
+                      <span class="checkbox__element"></span>
+                      CyberSecurity
+                    </label>
+                    <label class="checkbox filters__element">
+                      <input class="checkbox__input" type="checkbox" />
+                      <span class="checkbox__element"></span>
+                      <span class="filters__element-text filters__element-text--truncated">Embedded</span>
+                    </label>
+                    <label class="checkbox filters__element">
+                      <input checked class="checkbox__input" type="checkbox" />
+                      <span class="checkbox__element"></span>
+                      <span class="filters__element-text filters__element-text--truncated">EdTech</span>
+                    </label>
+                    <label class="checkbox filters__element">
+                      <input class="checkbox__input" type="checkbox" />
+                      <span class="checkbox__element"></span>
+                      <span class="filters__element-text filters__element-text--truncated">eCommerce</span>
+                    </label>
+                    <label class="checkbox filters__element">
+                      <input class="checkbox__input" type="checkbox" />
+                      <span class="checkbox__element"></span>
+                      <span class="filters__element-text filters__element-text--truncated">HealthTech</span>
+                    </label>
+                    <label class="checkbox filters__element">
+                      <input class="checkbox__input" type="checkbox" />
+                      <span class="checkbox__element"></span>
+                      <span class="filters__element-text filters__element-text--truncated">CyberSecurity</span>
+                    </label>
+                    <label class="checkbox filters__element">
+                      <input class="checkbox__input" type="checkbox" />
+                      <span class="checkbox__element"></span>
+                      <span class="filters__element-text filters__element-text--truncated">Embedded</span>
+                    </label>
+                    <label class="checkbox filters__element">
+                      <input class="checkbox__input" type="checkbox" />
+                      <span class="checkbox__element"></span>
+                      <span class="filters__element-text filters__element-text--truncated">EdTech</span>
+                    </label>
+                    <label class="checkbox filters__element">
+                      <input class="checkbox__input" type="checkbox" />
+                      <span class="checkbox__element"></span>
+                      <span class="filters__element-text filters__element-text--truncated">eCommerce</span>
+                    </label>
+                    <label class="checkbox filters__element">
+                      <input class="checkbox__input" type="checkbox" />
+                      <span class="checkbox__element"></span>
+                      <span class="filters__element-text filters__element-text--truncated">HealthTech</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <!-- /Industry -->
+
+              <!-- Hosting -->
+              <div class="filters__group">
+                <header class="filters__header filters__header--with-info">
+                  <h4 class="filters__headline">Hosting</h4>
+                  <img
+                    class="ml-14"
+                    alt="info icon"
+                    width="14"
+                    height="14"
+                    title="info"
+                    src="/assets/images/pages/common/info.svg"
+                  />
+                </header>
+
+                <div class="filters__elements">
+                  <div class="filters__elements-inner">
+                    <label class="checkbox filters__element">
+                      <input class="checkbox__input" type="checkbox" />
+                      <span class="checkbox__element"></span>
+                      <img
+                        alt="AWS icon"
+                        width="24"
+                        height="24"
+                        title=""
+                        src="/assets/images/pages/common/amazon-web-services.svg"
+                      />
+                      <span class="filters__element-text filters__element-text--truncated">AWS</span>
+                    </label>
+                    <label class="checkbox filters__element">
+                      <input class="checkbox__input" type="checkbox" />
+                      <span class="checkbox__element"></span>
+                      <img
+                        alt="Azure icon"
+                        width="24"
+                        height="24"
+                        title=""
+                        src="/assets/images/pages/common/azure.svg"
+                      />
+                      <span class="filters__element-text filters__element-text--truncated">Azure</span>
+                    </label>
+                    <label class="checkbox filters__element">
+                      <input checked class="checkbox__input" type="checkbox" />
+                      <span class="checkbox__element"></span>
+                      <img
+                        alt="GCP icon"
+                        width="24"
+                        height="24"
+                        title=""
+                        src="/assets/images/pages/common/googlecloud.svg"
+                      />
+                      <span class="filters__element-text filters__element-text--truncated">GCP</span>
+                    </label>
+                    <label class="checkbox filters__element">
+                      <input class="checkbox__input" type="checkbox" />
+                      <span class="checkbox__element"></span>
+                      <img
+                        alt="Digital Ocean icon"
+                        width="24"
+                        height="24"
+                        title=""
+                        src="/assets/images/pages/common/digitalocean.svg"
+                      />
+                      <span class="filters__element-text filters__element-text--truncated">Digital Ocean</span>
+                    </label>
+                    <label class="checkbox filters__element">
+                      <input class="checkbox__input" type="checkbox" />
+                      <span class="checkbox__element"></span>
+                      <img
+                        alt="Vultr icon"
+                        width="24"
+                        height="24"
+                        title=""
+                        src="/assets/images/pages/common/vultr.svg"
+                      />
+                      <span class="filters__element-text filters__element-text--truncated">Vultr</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <!-- /Hosting -->
+
+              <!-- API Type -->
+              <div class="filters__group">
+                <header class="filters__header filters__header--with-info">
+                  <h4 class="filters__headline">API Type</h4>
+                  <img
+                    class="ml-14"
+                    alt="info icon"
+                    width="14"
+                    height="14"
+                    title="info"
+                    src="/assets/images/pages/common/info.svg"
+                  />
+                </header>
+
+                <div class="filters__elements">
+                  <div class="filters__elements-inner">
+                    <label class="checkbox filters__element">
+                      <input class="checkbox__input" type="checkbox" />
+                      <span class="checkbox__element"></span>
+                      <span class="filters__element-text filters__element-text--truncated">gRPC</span>
+                    </label>
+                    <label class="checkbox filters__element">
+                      <input class="checkbox__input" type="checkbox" />
+                      <span class="checkbox__element"></span>
+                      <span class="filters__element-text filters__element-text--truncated">REST</span>
+                    </label>
+                    <label class="checkbox filters__element">
+                      <input checked class="checkbox__input" type="checkbox" />
+                      <span class="checkbox__element"></span>
+                      <span class="filters__element-text filters__element-text--truncated">GraphQL</span>
+                    </label>
+                    <label class="checkbox filters__element">
+                      <input class="checkbox__input" type="checkbox" />
+                      <span class="checkbox__element"></span>
+                      <span class="filters__element-text filters__element-text--truncated">Swagger</span>
+                    </label>
+                    <label class="checkbox filters__element">
+                      <input class="checkbox__input" type="checkbox" />
+                      <span class="checkbox__element"></span>
+                      <span class="filters__element-text filters__element-text--truncated">OpenAPI</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <!-- /API Type -->
+
+              <!-- Company type -->
+              <div class="filters__group">
+                <header class="filters__header filters__header--with-info">
+                  <h4 class="filters__headline">Hosting</h4>
+                  <img
+                    class="ml-14"
+                    alt="info icon"
+                    width="14"
+                    height="14"
+                    title="info"
+                    src="/assets/images/pages/common/info.svg"
+                  />
+                </header>
+                <div class="filters__elements">
+                  <label class="checkbox filters__element">
+                    <input checked class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__element"></span>
+                    <span class="filters__element-text filters__element-text--truncated">Has Ukrainian employees</span>
+                    <img
+                      class="checkbox__content-image"
+                      alt="Flag of Ukraine"
+                      width="24"
+                      height="24"
+                      src="/assets/images/pages/common/flags/4x3/ua.svg"
+                    />
+                  </label>
+                  <label class="checkbox filters__element">
+                    <input class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__element"></span>
+                    <span class="filters__element-text filters__element-text--truncated">Has Czechs employees</span>
+                    <img
+                      class="checkbox__content-image"
+                      alt="Flag of CZ"
+                      width="24"
+                      height="24"
+                      src="/assets/images/pages/common/flags/4x3/cz.svg"
+                    />
+                  </label>
+                  <label class="checkbox filters__element">
+                    <input class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__element"></span>
+                    <span class="filters__element-text filters__element-text--truncated">Only with salary listed</span>
+                  </label>
+                  <label class="checkbox filters__element">
+                    <input class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__element"></span>
+                    <span class="filters__element-text filters__element-text--truncated">Favorites</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <footer class="search-result__filter-footer">
+              <button type="button" class="button button--light-link search-result__filter-footer-button">Reset all</button>
+              <button type="button" class="button button--black button--small">Apply</button>
+            </footer>
+          </div>
+        </aside>
         <!-- /filters -->
 
         <div class="search-result--group">
