@@ -1556,6 +1556,16 @@ func companies15Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Software Engineer – Elixir",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4314089339/",
+							Location:             "Latin America",
+							Date:                 mustDate("2025-10-14"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Clojure: {},
@@ -3449,6 +3459,16 @@ func companies15Shard() []domain.CompanyProfile {
 							Location:             "United States",
 							Date:                 mustDate("2025-10-04", "2025-09-11"),
 							WithSalary:           true, // $118.6k/yr - $148.2k/yr
+							Remote:               true,
+						},
+						{
+							Title:                "Software Engineer – Elixir",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4311912380/",
+							Location:             "United States",
+							Date:                 mustDate("2025-10-15"),
+							WithSalary:           true, // $104.1k/yr - $130.2k/yr
 							Remote:               true,
 						},
 					},

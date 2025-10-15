@@ -3974,7 +3974,7 @@ func companies07Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4308021859/",
 							Location:             "San Jose, CA",
-							Date:                 mustDate("2025-09-30"),
+							Date:                 mustDate("2025-10-15", "2025-09-30"),
 							WithSalary:           true, // $182k/yr - $260k/yr
 							Remote:               false,
 						},
@@ -5882,6 +5882,16 @@ func companies07Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $134.5k/yr - $181.9k/yr
 							Remote:               true,
 						},
+						{
+							Title:                "Lead Golang Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4302901805/",
+							Location:             "United States",
+							Date:                 mustDate("2025-10-15"),
+							WithSalary:           true, // $145.2k/yr - $181.9k/yr
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -6090,6 +6100,16 @@ func companies07Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4256549825/",
 							Location:             "Cracow, Małopolskie, Poland",
 							Date:                 mustDate("2025-09-09", "2025-08-31", "2025-08-10"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Staff Golang Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4314061093/",
+							Location:             "Cracow, Małopolskie, Poland",
+							Date:                 mustDate("2025-10-15"),
 							WithSalary:           false,
 							Remote:               false,
 						},
