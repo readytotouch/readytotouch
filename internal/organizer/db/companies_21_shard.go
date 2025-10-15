@@ -699,7 +699,7 @@ func companies21Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4298710314/",
 							Location:             "Limassol, Cyprus",
-							Date:                 mustDate("2025-09-22", "2025-09-10"),
+							Date:                 mustDate("2025-10-14", "2025-09-22", "2025-09-10"),
 							WithSalary:           false,
 							Remote:               false,
 						},

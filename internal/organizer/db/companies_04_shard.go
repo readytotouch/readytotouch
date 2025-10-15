@@ -4756,7 +4756,7 @@ func companies04Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4298523462/",
 							Location:             "San Francisco Bay Area",
-							Date:                 mustDate("2025-10-06"),
+							Date:                 mustDate("2025-10-15", "2025-10-06"),
 							WithSalary:           false,
 							Remote:               false,
 						},

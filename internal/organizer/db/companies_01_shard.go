@@ -789,7 +789,7 @@ func companies01Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4302520423/",
 							Location:             "Dominican Republic",
-							Date:                 mustDate("2025-09-19"),
+							Date:                 mustDate("2025-10-11", "2025-09-19"),
 							WithSalary:           false,
 							Remote:               false,
 						},
