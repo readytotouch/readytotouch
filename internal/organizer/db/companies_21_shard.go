@@ -1834,6 +1834,16 @@ func companies21Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4315332594/",
+							Location:             "Lyon, Auvergne-Rhône-Alpes, France",
+							Date:                 mustDate("2025-10-15"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {

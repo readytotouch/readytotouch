@@ -1945,7 +1945,7 @@ func companies04Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4199228504/",
 							Location:             "Tel Aviv-Yafo, Tel Aviv District, Israel",
-							Date:                 mustDate("2025-07-16", "2025-06-05", "2025-05-15", "2025-04-02"),
+							Date:                 mustDate("2025-10-11", "2025-07-16", "2025-06-05", "2025-05-15", "2025-04-02"),
 							WithSalary:           false,
 							Remote:               false,
 						},

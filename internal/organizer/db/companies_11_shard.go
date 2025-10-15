@@ -1606,7 +1606,7 @@ func companies11Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4289612600/",
 							Location:             "Warsaw, Mazowieckie, Poland",
-							Date:                 mustDate("2025-09-23"),
+							Date:                 mustDate("2025-10-15", "2025-09-23"),
 							WithSalary:           false,
 							Remote:               true,
 						},
