@@ -39,6 +39,7 @@ function markCompanyFavorite(companyId: number, favorite: boolean, callback: () 
     }).catch(console.error);
 }
 
+const $companiesContainer = document.getElementById("js-companies-container");
 const $companies = document.querySelectorAll(".js-company");
 const $resultCount = document.getElementById("js-result-count");
 
@@ -340,17 +341,30 @@ function search() {
 
     let total = 0;
 
-    $companies.forEach(function ($company: HTMLElement) {
-        if (match($company)) {
-            $company.style.display = "block";
+    // hide container to prevent multiple reflows
+    {
+        // debug time measurement
+        const start = performance.now();
 
-            total++;
+        // $companiesContainer.hidden = true;
+        $companies.forEach(function ($company: HTMLElement) {
+            if (match($company)) {
+                $company.hidden = false;
 
-            return;
-        }
+                total++;
 
-        $company.style.display = "none";
-    });
+                return;
+            }
+
+            $company.hidden = true;
+        });
+        // $companiesContainer.hidden = false;
+
+        // debug time measurement
+        const end = performance.now();
+
+        console.log(`Search took ${end - start} milliseconds.`);
+    }
 
     $resultCount.innerHTML = total.toString();
 }

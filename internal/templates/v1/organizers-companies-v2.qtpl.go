@@ -27,6 +27,7 @@ func StreamOrganizersCompaniesV2(qw422016 *qt422016.Writer,
 ) {
 	qw422016.N().S(`<!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<title>`)
 	qw422016.E().S(organizerFeature.Organizer.Title)
@@ -98,7 +99,7 @@ func StreamOrganizersCompaniesV2(qw422016 *qt422016.Writer,
 
 <body class="organizer-companies-inner">
 <main class="main-wrapper">
-	<header class="header">
+<header class="header">
   <div class="header__wrapper">
     <a href="/organizers" class="header__logo">
       <img
@@ -223,8 +224,9 @@ func StreamOrganizersCompaniesV2(qw422016 *qt422016.Writer,
           </label>
         </div>
       </div>
-      <!-- /Company type  -->
+      <!-- /Company type -->
 
+      <!-- Industry -->
       <div class="filters__group">
         <header class="filters__header">
           <h4 class="filters__headline">Industry</h4>
@@ -247,6 +249,7 @@ func StreamOrganizersCompaniesV2(qw422016 *qt422016.Writer,
 	qw422016.N().S(`
         </div>
       </div>
+      <!-- /Industry -->
 
       <!-- Other -->
       <div class="filters__group">
@@ -323,7 +326,7 @@ func StreamOrganizersCompaniesV2(qw422016 *qt422016.Writer,
 	qw422016.N().D(len(companies))
 	qw422016.N().S(`</span> results</p>
           <!-- card list -->
-          <div class="search-result__cards row-gap-8 mt-24">
+          <div id="js-companies-container" class="search-result__cards row-gap-8 mt-24">
             `)
 	for _, company := range companies {
 		qw422016.N().S(`
@@ -589,27 +592,27 @@ func StreamOrganizersCompaniesV2(qw422016 *qt422016.Writer,
                           <div class="card__links-item-group">
                               <img
                                   class="card__links-icon"
-                                  alt="github icon"
+                                  alt="GitHub icon"
                                   width="32"
                                   height="32"
                                   src="/assets/images/pages/organizer/github.svg"
                               />
+                              <a href="https://github.com/`)
+			qw422016.E().S(company.GitHubProfile.Login)
+			qw422016.N().S(`" target="_blank" class="card__links-link">GitHub</a>
                               `)
 			if company.GitHubProfile.Verified {
 				qw422016.N().S(`
                               <span class="card__links-link card__links-link--verify">
                                   <img
                                       class="card__links-icon"
-                                      alt="icon"
+                                      alt="GitHub verified icon"
                                       src="/assets/images/pages/organizer/verified.png"
                                   />
                               </span>
                               `)
 			}
 			qw422016.N().S(`
-                              <a href="https://github.com/`)
-			qw422016.E().S(company.GitHubProfile.Login)
-			qw422016.N().S(`" target="_blank" class="card__links-link">GitHub</a>
                           </div>
                       </li>
                       <li class="card__links-item">
@@ -645,7 +648,7 @@ func StreamOrganizersCompaniesV2(qw422016 *qt422016.Writer,
                           <div class="card__links-item-group">
                               <img
                                   class="card__links-icon"
-                                  alt="glassdoor icon"
+                                  alt="Glassdoor icon"
                                   width="32"
                                   height="32"
                                   src="/assets/images/pages/organizer/glassdoor.svg"
@@ -672,7 +675,7 @@ func StreamOrganizersCompaniesV2(qw422016 *qt422016.Writer,
                           <div class="card__links-item-group">
                               <img
                                   class="card__links-icon"
-                                  alt="glassdoor icon"
+                                  alt="Glassdoor icon"
                                   width="32"
                                   height="32"
                                   src="/assets/images/pages/organizer/glassdoor.svg"
@@ -686,7 +689,7 @@ func StreamOrganizersCompaniesV2(qw422016 *qt422016.Writer,
                               <span class="card__links-link card__links-link--verify">
                                   <img
                                       class="card__links-icon"
-                                      alt="icon"
+                                      alt="Glassdoor verified icon"
                                       src="/assets/images/pages/organizer/verified-icon-2.png"
                                   />
                               </span>
@@ -720,8 +723,8 @@ func StreamOrganizersCompaniesV2(qw422016 *qt422016.Writer,
 		qw422016.E().S(company.LinkedInProfile.Alias)
 		qw422016.N().S(`" class="card__footer-button button button-link">
                       <div class="card__footer-images">
-                          <img class="card__footer-icon" alt="blind icon" width="32" height="32" src="/assets/images/pages/organizer/blind.png" />
-                          <img class="card__footer-icon" alt="levels icon" width="32" height="32" src="/assets/images/pages/organizer/levels.png" />
+                          <img class="card__footer-icon" alt="Blind icon" width="32" height="32" src="/assets/images/pages/organizer/blind.png" />
+                          <img class="card__footer-icon" alt="Levels.fyi icon" width="32" height="32" src="/assets/images/pages/organizer/levels.png" />
                           <img class="card__footer-icon" alt="Indeed icon" width="32" height="32" src="/assets/images/pages/organizer/indeed.png" />
                           <img class="card__footer-icon" alt="Y Combinator icon" width="32" height="32" src="/assets/images/pages/organizer/y-combinator.png" />
                       </div>
@@ -736,6 +739,7 @@ func StreamOrganizersCompaniesV2(qw422016 *qt422016.Writer,
 	}
 	qw422016.N().S(`
           </div>
+          <!-- /card list -->
 
           `)
 	qw422016.N().S(`
@@ -765,6 +769,7 @@ func StreamOrganizersCompaniesV2(qw422016 *qt422016.Writer,
 	qw422016.N().D(appVersion)
 	qw422016.N().S(`"></script>
 </body>
+
 </html>
 `)
 }

@@ -224,7 +224,7 @@ func StreamOrganizersCompanyV3(qw422016 *qt422016.Writer,
               <!-- TODO square logo -->
               <img class="company-card__logo"
                    alt="`)
-		qw422016.E().S(company.LinkedInProfile.Alias)
+		qw422016.E().S(company.Name)
 		qw422016.N().S(` logo"
                    src="/assets/images/pages/organizer/logos/google.svg"
               />
@@ -794,7 +794,7 @@ func StreamOrganizersCompanyV3(qw422016 *qt422016.Writer,
                 <span class="company-grid__links-link company-grid__links-link--verify">
                   <img
                     class="company-grid__links-icon"
-                    alt="icon"
+                    alt="Glassdoor verified icon"
                     src="/assets/images/pages/organizer/verified-emp.png"
                   />
                 </span>
@@ -1249,6 +1249,7 @@ func StreamOrganizersCompanyV3(qw422016 *qt422016.Writer,
 	qw422016.N().D(appVersion)
 	qw422016.N().S(`"></script>
 </body>
+
 </html>
 `)
 }

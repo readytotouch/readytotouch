@@ -346,14 +346,14 @@ function search() {
 
     $vacancies.forEach(function ($vacancy: HTMLElement) {
         if (match($vacancy)) {
-            $vacancy.style.display = "block";
+            $vacancy.hidden = false;
 
             total++;
 
             return;
         }
 
-        $vacancy.style.display = "none";
+        $vacancy.hidden = true;
     });
 
     $resultCount.innerHTML = total.toString();

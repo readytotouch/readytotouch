@@ -147,7 +147,7 @@
             {% if false %}
               <!-- TODO square logo -->
               <img class="company-card__logo"
-                   alt="{%s company.LinkedInProfile.Alias %} logo"
+                   alt="{%s company.Name %} logo"
                    src="/assets/images/pages/organizer/logos/google.svg"
               />
             {% endif %}
@@ -598,7 +598,7 @@
                 <span class="company-grid__links-link company-grid__links-link--verify">
                   <img
                     class="company-grid__links-icon"
-                    alt="icon"
+                    alt="Glassdoor verified icon"
                     src="/assets/images/pages/organizer/verified-emp.png"
                   />
                 </span>
@@ -927,5 +927,6 @@
 </div>
 <script src="/assets/js/organizers-company-app.js?{%d appVersion %}"></script>
 </body>
+
 </html>
 {%- endfunc -%}
