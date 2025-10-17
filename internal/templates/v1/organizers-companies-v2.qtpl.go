@@ -326,7 +326,7 @@ func StreamOrganizersCompaniesV2(qw422016 *qt422016.Writer,
 	qw422016.N().D(len(companies))
 	qw422016.N().S(`</span> results</p>
           <!-- card list -->
-          <div class="search-result__cards row-gap-8 mt-24">
+          <div id="js-companies-container" class="search-result__cards row-gap-8 mt-24">
             `)
 	for _, company := range companies {
 		qw422016.N().S(`

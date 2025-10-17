@@ -93,13 +93,19 @@ generate-template:
 generate-sqlc:
 	sqlc generate
 
+DOCKER_NODE = docker run --rm \
+	-v $(PWD)/client:/app \
+	-v $(PWD)/public/assets/js:/public/assets/js \
+	-v $(PWD)/.cache/npm:/root/.npm \
+	-v $(PWD)/.cache/node_modules:/app/node_modules \
+	-w /app node:20-alpine
+
 esbuild-minify:
-	npm --prefix=client i
-	MINIFY=true npm run --prefix=client esbuild
+	$(DOCKER_NODE) sh -c "npm ci && MINIFY=true npm run esbuild"
 	tree -h ./public/assets/js
 
 esbuild:
-	MINIFY=false npm run --prefix=client esbuild
+	$(DOCKER_NODE) sh -c "npm ci && MINIFY=false npm run esbuild"
 	tree -h ./public/assets/js
 
 # make design DESIGN="~/go/src/github.com/readytotouch/readytotouch.github.io"

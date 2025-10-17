@@ -183,18 +183,9 @@ func StreamOrganizersCompaniesV3(qw422016 *qt422016.Writer,
   <section class="search-container container">
     <div class="search search--projects search--organizer search--with-sort">
       <div class="search__input-group">
-        <input class="search__input" id="js-company-query" type="text" placeholder="Search" list="js-company-query-datalist" />
-        <datalist id="js-company-query-datalist">
-          `)
-	for _, company := range companies {
-		qw422016.N().S(`
-            <option value="`)
-		qw422016.E().S(company.Name)
-		qw422016.N().S(`"></option>
-          `)
-	}
+        <input class="search__input" id="js-company-query" type="text" placeholder="Search" />
+        `)
 	qw422016.N().S(`
-        </datalist>
         <img class="search__icon" alt="Search icon" width="20" height="20" src="/assets/images/pages/common/search.svg" />
       </div>
       <button type="button" class="mobile-filter js-mobile-filter">
@@ -239,7 +230,7 @@ func StreamOrganizersCompaniesV3(qw422016 *qt422016.Writer,
           <div class="search-result__filter-group search-result__filter-group--wide">
             <div class="search-result__filter-header">
               <h2 class="search-result__filter-headline">Filters:</h2>
-              <button type="button" class="button button--light-link search-result__filter-headline-reset">Reset all</button>
+              <button id="js-criteria-reset" type="button" class="button button--light-link search-result__filter-headline-reset" style="visibility: hidden;">Reset all</button>
               <button type="button" class="button button--light-link search-result__filter-headline-reset-mobile js-filter-headline-reset-mobile">
                 <img src="/assets/images/pages/common/cross-thin.svg" alt="cross icon" width="24" height="24">
               </button>
@@ -436,7 +427,7 @@ func StreamOrganizersCompaniesV3(qw422016 *qt422016.Writer,
             </div>
 
             <!-- card list -->
-            <div class="search-result__cards row-gap-8 mt-24">
+            <div id="js-companies-container" class="search-result__cards row-gap-8 mt-24">
               `)
 	for _, company := range companies {
 		qw422016.N().S(`
