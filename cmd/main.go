@@ -406,6 +406,9 @@ func main() {
 		GET("/design/:language/companies/v3", s("./public/design-v3/organizer-companies-responsive.html")).
 		GET("/design/:language/companies/v3/auth", s("./public/design-v3/organizer-companies-responsive-auth.html")).
 		GET("/design/:language/jobs", s("./public/design/organizer-vacancies.html")).
+		GET("/design/:language/jobs/v1", s("./public/design/organizer-vacancies.html")).
+		GET("/design/:language/jobs/v2", s("./public/design/organizer-vacancies.html")).
+		GET("/design/:language/jobs/v3", s("./public/design-v3/organizer-vacancies-responsive-auth.html")).
 		GET("/design/:language/jobs/subscribe", s("./public/design/organizer-vacancies-subscribe.html")).
 		GET("/design/:language/jobs/unsubscribe", s("./public/design/organizer-vacancies-unsubscribe.html")).
 		GET("/design/:language/vacancies", s("./public/design/organizer-vacancies.html")).
