@@ -160,6 +160,7 @@
             </div>
 
             <div class="filters search-result__filters-list">
+              {% comment %}
               <!-- Location -->
               <div class="filters__group">
                 <header class="filters__header filters__header--with-info">
@@ -1435,6 +1436,7 @@
                 </div>
               </div>
               <!-- /Location -->
+              {% endcomment %}
 
               <!-- Company type -->
               <div class="filters__group">
@@ -1464,6 +1466,7 @@
               </div>
               <!-- /Company type -->
 
+              {% comment %}
               <!-- Company size -->
               <div class="filters__group">
                 <header class="filters__header filters__header--with-info">
@@ -1519,7 +1522,9 @@
                 </div>
               </div>
               <!-- /Company size -->
+              {% endcomment %}
 
+              {% comment %}
               <!-- Rating -->
               <div class="filters__group">
                 <header class="filters__header filters__header--with-info">
@@ -1581,6 +1586,7 @@
                 </div>
               </div>
               <!-- /Rating -->
+              {% endcomment %}
 
               <!-- Industry -->
               <div class="filters__group">
@@ -1609,6 +1615,7 @@
               </div>
               <!-- /Industry -->
 
+              {% comment %}
               <!-- Hosting -->
               <div class="filters__group">
                 <header class="filters__header filters__header--with-info">
@@ -1689,7 +1696,9 @@
                 </div>
               </div>
               <!-- /Hosting -->
+              {% endcomment %}
 
+              {% comment %}
               <!-- API Type -->
               <div class="filters__group">
                 <header class="filters__header filters__header--with-info">
@@ -1735,11 +1744,12 @@
                 </div>
               </div>
               <!-- /API Type -->
+              {% endcomment %}
 
-              <!-- Company type -->
+              <!-- Other -->
               <div class="filters__group">
                 <header class="filters__header filters__header--with-info">
-                  <h4 class="filters__headline">Hosting</h4>
+                  <h4 class="filters__headline">Other</h4>
                   <img
                     class="ml-14"
                     alt="info icon"
@@ -1751,7 +1761,7 @@
                 </header>
                 <div class="filters__elements">
                   <label class="checkbox filters__element">
-                    <input checked class="checkbox__input" type="checkbox" />
+                    <input class="js-criteria-has-employees-from-country checkbox__input" type="checkbox" data-alias="ukraine" />
                     <span class="checkbox__element"></span>
                     <span class="filters__element-text filters__element-text--truncated">Has Ukrainian employees</span>
                     <img
@@ -1763,29 +1773,45 @@
                     />
                   </label>
                   <label class="checkbox filters__element">
-                    <input class="checkbox__input" type="checkbox" />
+                    <input class="js-criteria-has-employees-from-country checkbox__input" type="checkbox" data-alias="czechia" />
                     <span class="checkbox__element"></span>
                     <span class="filters__element-text filters__element-text--truncated">Has Czechs employees</span>
                     <img
                       class="checkbox__content-image"
-                      alt="Flag of CZ"
+                      alt="Flag of Czechia"
                       width="24"
                       height="24"
                       src="/assets/images/pages/common/flags/4x3/cz.svg"
                     />
                   </label>
+                  {% comment %}
                   <label class="checkbox filters__element">
                     <input class="checkbox__input" type="checkbox" />
                     <span class="checkbox__element"></span>
                     <span class="filters__element-text filters__element-text--truncated">Only with salary listed</span>
                   </label>
+                  {% endcomment %}
+                  {% if organizerFeature.Organizer.Alias == "rust" %}
                   <label class="checkbox filters__element">
-                    <input class="checkbox__input" type="checkbox" />
+                    <input id="js-criteria-rust-foundation-members" class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__element"></span>
+                    <span class="filters__element-text filters__element-text--truncated">Rust Foundation Members</span>
+                  </label>
+                  {% endif %}
+                  <label class="checkbox filters__element">
+                    <input id="js-criteria-remote" class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__element"></span>
+                    <span class="filters__element-text filters__element-text--truncated">Remote</span>
+                  </label>
+                  <label class="checkbox filters__element">
+                    <input id="js-criteria-in-favorites" class="checkbox__input" type="checkbox" />
                     <span class="checkbox__element"></span>
                     <span class="filters__element-text filters__element-text--truncated">Favorites</span>
                   </label>
                 </div>
               </div>
+              <!-- /Other -->
+
             </div>
             <footer class="search-result__filter-footer">
               <button type="button" class="button button--light-link search-result__filter-footer-button">Reset all</button>
