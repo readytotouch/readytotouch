@@ -513,6 +513,25 @@ func (c *Controller) companyAction(
 }
 
 func (c *Controller) JobsV2(ctx *gin.Context) {
+	c.jobsAction(ctx, template.OrganizersVacanciesV2)
+}
+
+func (c *Controller) JobsV3(ctx *gin.Context) {
+	c.jobsAction(ctx, template.OrganizersVacanciesV3)
+}
+
+func (c *Controller) jobsAction(
+	ctx *gin.Context,
+	render func(
+		organizerFeature domain.OrganizerFeature,
+		headerProfiles []domain.SocialProviderUser,
+		companies []domain.CompanyProfile,
+		vacancies []domain.PreparedVacancy,
+		userVacancyFavoriteMap map[int64]bool,
+		vacancyMonthlyViewsMap map[int64]int64,
+		authQueryParams string,
+	) string,
+) {
 	var (
 		authUserID = domain.ContextGetUserID(ctx)
 	)
@@ -589,7 +608,7 @@ func (c *Controller) JobsV2(ctx *gin.Context) {
 		return preparedVacancies[i].Date.After(preparedVacancies[j].Date)
 	})
 
-	content := template.OrganizersVacanciesV2(
+	content := render(
 		organizerFeature,
 		headerProfiles,
 		companies,
@@ -601,8 +620,6 @@ func (c *Controller) JobsV2(ctx *gin.Context) {
 
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
 }
-
-func (c *Controller) JobsV3(ctx *gin.Context) {}
 
 func (c *Controller) trimCompanyAlias(ctx *gin.Context) (result string) {
 	result = ctx.FullPath()

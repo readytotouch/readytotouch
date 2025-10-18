@@ -27,6 +27,7 @@ func StreamOrganizersVacanciesV2(qw422016 *qt422016.Writer,
 ) {
 	qw422016.N().S(`<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>`)
 	qw422016.E().S(organizerFeature.Organizer.Title)

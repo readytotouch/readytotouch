@@ -1,0 +1,118 @@
+
+{%- func OrganizersVacanciesV3(
+  organizerFeature OrganizerFeature,
+  headerProfiles []SocialProviderUser,
+  companies []Company,
+  vacancies []PreparedVacancy,
+  userVacancyFavoriteMap map[int64]bool,
+  vacancyMonthlyViewsMap map[int64]int64,
+  authQueryParams string,
+) -%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>{%s organizerFeature.Organizer.Title %} jobs – remote and onsite developer vacancies | ReadyToTouch</title>
+    <meta name="title" content="{%s organizerFeature.Organizer.Title %} jobs – remote and onsite developer vacancies | ReadyToTouch">
+    <meta name="description" content="Find top {%s organizerFeature.Organizer.Title %} jobs from companies actively using {%s organizerFeature.Organizer.Title %} in production. Explore remote and onsite developer positions updated weekly.">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="author" type="text/plain" href="https://readytotouch.com/humans.txt"/>
+
+    <meta property="og:title" content="{%s organizerFeature.Organizer.Title %} jobs – find companies hiring {%s organizerFeature.Organizer.Title %} developers">
+    <meta property="og:description" content="Discover {%s organizerFeature.Organizer.Title %} jobs in startups and product companies using {%s organizerFeature.Organizer.Title %} in production.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://readytotouch.com/assets/images/og/organizers-light.jpg">
+    <meta property="og:url" content="https://readytotouch.com/{%s organizerFeature.Organizer.Alias %}/jobs">
+
+    <!-- JSON-LD (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "{%s organizerFeature.Organizer.Title %} jobs",
+      "description": "Find {%s organizerFeature.Organizer.Title %} jobs in companies using {%s organizerFeature.Organizer.Alias %} in production. Remote and onsite opportunities for developers.",
+      "url": "https://readytotouch.com/organizers/{%s organizerFeature.Organizer.Alias %}/jobs"
+    }
+    </script>
+
+    {%= favicon() %}
+    {%= organizersFonts() %}
+    {%= organizersVacanciesV3Styles() %}
+    {%= plausibleAnalytics() %}
+    {%= ga() %}
+</head>
+
+<body>
+<div class="main-wrapper main-wrapper--organizer-inner">
+<header class="header">
+  <div class="header__wrapper">
+    <a href="/{%s organizerFeature.Organizer.Alias %}" class="header__logo">
+      <img
+        width="30"
+        height="30"
+        class="header__logo-img"
+        src="/assets/images/pages/organizer/{%s organizerFeature.Organizer.Logo %}"
+        alt="organizer logo"
+      />
+      <span class="header__logo-label">Organizer</span>
+    </a>
+    <div class="header__nav-overlay js-header-nav">
+      <ul class="header__nav">
+        <li class="header__nav-item">
+          <a href="/{%s organizerFeature.Organizer.Alias %}/companies" class="header__nav-link">Companies</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="/{%s organizerFeature.Organizer.Alias %}/jobs" class="header__nav-link active">Jobs</a>
+        </li>
+        {% comment %}
+        <li class="header__nav-item">
+          <a href="/{%s organizerFeature.Organizer.Alias %}/communities" class="header__nav-link">Communities</a>
+        </li>
+        {% endcomment %}
+      </ul>
+      {%= organizersHeaderStarsV3() %}
+      {% if len(headerProfiles) > 0 %}
+        {%= organizersHeaderProfileV3(headerProfiles) %}
+      {% else %}
+        <a href="/{%s organizerFeature.Organizer.Alias %}/welcome{%s authQueryParams %}" class="button button--bordered-black button--small-padding header__login-button">Log in</a>
+      {% endif %}
+    </div>
+    {%= organizersHamburgerV3() %}
+  </div>
+</header>
+
+<main class="main-content">
+  <div class="container">
+    <nav aria-label="breadcrumb" aria-labelledby="navigation through the bread crumbs" class="breadcrumb">
+      <ul class="breadcrumb__list">
+        <li class="breadcrumb__item">
+          <a class="breadcrumb__link" href="/">Main</a>
+        </li>
+        <li class="breadcrumb__item">
+          <a class="breadcrumb__link" href="/{%s organizerFeature.Organizer.Alias %}">{%s organizerFeature.Organizer.Title %}</a>
+        </li>
+        <li class="breadcrumb__item">
+          <span class="breadcrumb__page" aria-current="page">{%s organizerFeature.Title %}</span>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <section class="search-container container">
+    <!-- TODO-->
+  </section>
+
+  <div class="search-result mt-32">
+      <!-- TODO-->
+  </div>
+
+</main>
+
+{%= organizersFooterV3() %}
+</div>
+</body>
+<script src="/assets/js/organizers-vacancies-app.js?{%d appVersion %}"></script>
+</html>
+{%- endfunc -%}

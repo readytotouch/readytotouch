@@ -10,6 +10,7 @@
 ) -%}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>{%s organizerFeature.Organizer.Title %} jobs – remote and onsite developer vacancies | ReadyToTouch</title>
     <meta name="title" content="{%s organizerFeature.Organizer.Title %} jobs – remote and onsite developer vacancies | ReadyToTouch">
