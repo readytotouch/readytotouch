@@ -512,7 +512,7 @@ func (c *Controller) companyAction(
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
 }
 
-func (c *Controller) Vacancies(ctx *gin.Context) {
+func (c *Controller) JobsV2(ctx *gin.Context) {
 	var (
 		authUserID = domain.ContextGetUserID(ctx)
 	)
@@ -601,6 +601,8 @@ func (c *Controller) Vacancies(ctx *gin.Context) {
 
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
 }
+
+func (c *Controller) JobsV3(ctx *gin.Context) {}
 
 func (c *Controller) trimCompanyAlias(ctx *gin.Context) (result string) {
 	result = ctx.FullPath()
