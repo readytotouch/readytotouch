@@ -1838,6 +1838,8 @@
           <!-- /selected filters -->
 
           <div class="search-result__list">
+            {% comment %}
+            <!-- TODO this section -->
             <div class="search-result__top-actions">
               <p class="search-result-found"><span id="js-result-count" class="search-result-found__amount">{%d len(companies) %}</span> results</p>
               <div class="sorter sorter--mobile">
@@ -1863,6 +1865,7 @@
                 </ul>
               </div>
             </div>
+            {% endcomment %}
 
             <!-- card list -->
             <div id="js-companies-container" class="search-result__cards row-gap-8 mt-24">

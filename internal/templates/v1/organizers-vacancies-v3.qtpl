@@ -1829,7 +1829,47 @@
         </aside>
         <!-- /filters -->
 
-         <!-- TODO-->
+        <div class="search-result--group">
+          <!-- selected filters -->
+          <div class="filter-used" style="visibility: hidden;">
+            <div class="filter-used__title">Applied filters:</div>
+            <ul id="js-company-selected-criteria" class="filter-used__list"></ul>
+          </div>
+          <!-- /selected filters -->
+
+          <div class="search-result__list">
+            {% comment %}
+            <!-- TODO this section -->
+            <div class="search-result__top-actions">
+              <p class="search-result-found"><span id="js-result-count" class="search-result-found__amount">{%d len(companies) %}</span> results</p>
+              <div class="sorter sorter--mobile">
+                <button type="button" class="sorter__title">
+                  <span class="sorter__title-text">Newest first</span>
+                  <span class="sorter__icon-wrapper">
+                    <img
+                      alt="caret-down icon"
+                      width="12"
+                      height="7"
+                      src="/assets/images/pages/organizer/caret-down.svg"
+                    />
+                  </span>
+                </button>
+                <ul class="sorter__list">
+                  <li class="sorter__item is-selected">Newest first</li>
+                  <li class="sorter__item">Oldest first</li>
+                  <li class="sorter__item">By LinkedIn followers</li>
+                  <li class="sorter__item">By Glassdoor reviews</li>
+                  <li class="sorter__item">By Blind reviews</li>
+                  <li class="sorter__item">By Market Cap</li>
+                  <li class="sorter__item">By latest job posting</li>
+                </ul>
+              </div>
+            </div>
+            {% endcomment %}
+
+            <!-- TODO -->
+          </div>
+        </div>
       </div>
     </div>
   </div>
