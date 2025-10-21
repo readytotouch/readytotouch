@@ -116,6 +116,8 @@
         {% endcomment %}
         <img class="search__icon" alt="Search icon" width="20" height="20" src="/assets/images/pages/common/search.svg" />
       </div>
+      {% comment %}
+      <!-- TODO this section -->
       <button type="button" class="mobile-filter js-mobile-filter">
         <img
           src="/assets/images/pages/common/filter.svg"
@@ -147,6 +149,7 @@
           <li class="sorter__item js-sorter-item">By latest job posting</li>
         </ul>
       </div>
+      {% endcomment %}
     </div>
   </section>
 
