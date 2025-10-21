@@ -27,6 +27,7 @@ func StreamOrganizersVacanciesV2(qw422016 *qt422016.Writer,
 ) {
 	qw422016.N().S(`<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>`)
 	qw422016.E().S(organizerFeature.Organizer.Title)
@@ -175,18 +176,9 @@ func StreamOrganizersVacanciesV2(qw422016 *qt422016.Writer,
 <section class="search-container container">
   <div class="search search--org-vacancies search--organizer">
     <div class="search__input-group">
-      <input class="search__input" id="js-vacancy-query" type="search" name="search" placeholder="Search" list="js-vacancy-query-datalist" />
-      <datalist id="js-vacancy-query-datalist">
-        `)
-	for _, company := range companies {
-		qw422016.N().S(`
-          <option value="`)
-		qw422016.E().S(company.Name)
-		qw422016.N().S(`"></option>
-        `)
-	}
+      <input class="search__input" id="js-vacancy-query" type="search" name="search" placeholder="Search" />
+      `)
 	qw422016.N().S(`
-      </datalist>
       <img class="search__icon" alt="Search icon" width="20" height="20" src="/assets/images/pages/common/search.svg" />
     </div>
     `)
@@ -329,7 +321,7 @@ func StreamOrganizersVacanciesV2(qw422016 *qt422016.Writer,
         </div>
         <!-- /selected filters -->
 
-        <div id="search_result_list" class="search-result__list">
+        <div class="search-result__list">
           <p class="search-result-found"><span id="js-result-count" class="search-result-found__amount">`)
 	qw422016.N().D(len(vacancies))
 	qw422016.N().S(`</span> results</p>
@@ -422,14 +414,14 @@ func StreamOrganizersVacanciesV2(qw422016 *qt422016.Writer,
 						<figcaption class="card__header-caption">
 							<a href="/v/`)
 		qw422016.N().DL(vacancy.ID)
-		qw422016.N().S(`" target="_blank" class="card__headline vacancy__link">`)
+		qw422016.N().S(`" target="_blank" class="card__headline">`)
 		qw422016.E().S(vacancy.Title)
 		qw422016.N().S(`</a>
 							<a href="/`)
 		qw422016.E().S(organizerFeature.Organizer.Alias)
 		qw422016.N().S(`/companies/`)
 		qw422016.E().S(vacancy.Company.Alias)
-		qw422016.N().S(`" class="card__sub-headline vacancy__link">`)
+		qw422016.N().S(`" target="_blank" class="card__sub-headline">`)
 		qw422016.E().S(vacancy.Company.Name)
 		qw422016.N().S(`</a>
 						</figcaption>
@@ -474,7 +466,7 @@ func StreamOrganizersVacanciesV2(qw422016 *qt422016.Writer,
 									width="20"
 									height="20"
 									src="/assets/images/pages/organizer/linkedin.svg"
-									alt="linkedin logo"
+									alt="LinkedIn logo"
 									class="hero__button-icon"
 								/>
 							`)
@@ -484,7 +476,7 @@ func StreamOrganizersVacanciesV2(qw422016 *qt422016.Writer,
 									width="20"
 									height="20"
 									src="/assets/images/pages/organizer/otta.svg"
-									alt="otta logo"
+									alt="Otta logo"
 									class="hero__button-icon"
 								/>
 							`)
@@ -494,7 +486,7 @@ func StreamOrganizersVacanciesV2(qw422016 *qt422016.Writer,
 									width="20"
 									height="20"
 									src="/assets/images/pages/organizer/indeed.png"
-									alt="indeed logo"
+									alt="Indeed logo"
 									class="hero__button-icon"
 								/>
 							`)

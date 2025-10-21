@@ -1,45 +1,45 @@
 {% import "strconv" %}
-{%- func OrganizersCompaniesV3(
+{%- func OrganizersVacanciesV3(
   organizerFeature OrganizerFeature,
   headerProfiles []SocialProviderUser,
   companies []Company,
-  ukrainianUniversities []University,
-  czechUniversities []University,
-  userCompanyFavoriteMap map[int64]bool,
+  vacancies []PreparedVacancy,
+  userVacancyFavoriteMap map[int64]bool,
+  vacancyMonthlyViewsMap map[int64]int64,
   authQueryParams string,
 ) -%}
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-	<title>{%s organizerFeature.Organizer.Title %} companies – product and startup teams using {%s organizerFeature.Organizer.Title %} | ReadyToTouch</title>
-	<meta name="title" content="{%s organizerFeature.Organizer.Title %} companies – product and startup teams using {%s organizerFeature.Organizer.Title %} | ReadyToTouch">
-	<meta name="description" content="Discover companies using {%s organizerFeature.Organizer.Title %} in production. This list features startups and product teams hiring {%s organizerFeature.Organizer.Title %} developers or already working with {%s organizerFeature.Organizer.Title %}.">
+    <title>{%s organizerFeature.Organizer.Title %} jobs – remote and onsite developer vacancies | ReadyToTouch</title>
+    <meta name="title" content="{%s organizerFeature.Organizer.Title %} jobs – remote and onsite developer vacancies | ReadyToTouch">
+    <meta name="description" content="Find top {%s organizerFeature.Organizer.Title %} jobs from companies actively using {%s organizerFeature.Organizer.Title %} in production. Explore remote and onsite developer positions updated weekly.">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="author" type="text/plain" href="https://readytotouch.com/humans.txt"/>
 
-    <meta property="og:title" content="{%s organizerFeature.Organizer.Title %} companies | ReadyToTouch">
-    <meta property="og:description" content="Discover startups and product teams using {%s organizerFeature.Organizer.Title %} in production.">
+    <meta property="og:title" content="{%s organizerFeature.Organizer.Title %} jobs – find companies hiring {%s organizerFeature.Organizer.Title %} developers">
+    <meta property="og:description" content="Discover {%s organizerFeature.Organizer.Title %} jobs in startups and product companies using {%s organizerFeature.Organizer.Title %} in production.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://readytotouch.com/assets/images/og/organizers-light.jpg">
-    <meta property="og:url" content="https://readytotouch.com/{%s organizerFeature.Organizer.Alias %}/companies">
+    <meta property="og:url" content="https://readytotouch.com/{%s organizerFeature.Organizer.Alias %}/jobs">
 
     <!-- JSON-LD (Schema.org) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      "name": "{%s organizerFeature.Organizer.Title %} companies",
-      "description": "List of companies using {%s organizerFeature.Organizer.Title %} in production. Startups and product teams.",
-      "url": "https://readytotouch.com/{%s organizerFeature.Organizer.Alias %}/companies"
+      "name": "{%s organizerFeature.Organizer.Title %} jobs",
+      "description": "Find {%s organizerFeature.Organizer.Title %} jobs in companies using {%s organizerFeature.Organizer.Alias %} in production. Remote and onsite opportunities for developers.",
+      "url": "https://readytotouch.com/organizers/{%s organizerFeature.Organizer.Alias %}/jobs"
     }
     </script>
 
     {%= favicon() %}
     {%= organizersFonts() %}
-    {%= organizersCompaniesV3Styles() %}
+    {%= organizersVacanciesV3Styles() %}
     {%= plausibleAnalytics() %}
     {%= ga() %}
 </head>
@@ -61,10 +61,10 @@
     <div class="header__nav-overlay js-header-nav">
       <ul class="header__nav">
         <li class="header__nav-item">
-          <a href="/{%s organizerFeature.Organizer.Alias %}/companies" class="header__nav-link active">Companies</a>
+          <a href="/{%s organizerFeature.Organizer.Alias %}/companies" class="header__nav-link">Companies</a>
         </li>
         <li class="header__nav-item">
-          <a href="/{%s organizerFeature.Organizer.Alias %}/jobs" class="header__nav-link">Jobs</a>
+          <a href="/{%s organizerFeature.Organizer.Alias %}/jobs" class="header__nav-link active">Jobs</a>
         </li>
         {% comment %}
         <li class="header__nav-item">
@@ -103,11 +103,11 @@
   <section class="search-container container">
     <div class="search search--projects search--organizer search--with-sort">
       <div class="search__input-group">
-        <input class="search__input" id="js-company-query" type="text" placeholder="Search" />
+        <input class="search__input" id="js-vacancy-query" type="text" placeholder="Search" />
         {% comment %}
         <!--
-          <input class="search__input" id="js-company-query" type="text" placeholder="Search" list="js-company-query-datalist" />
-          <datalist id="js-company-query-datalist">
+          <input class="search__input" id="js-vacancy-query" type="text" placeholder="Search" list="js-vacancy-query-datalist" />
+          <datalist id="js-vacancy-query-datalist">
             {% for _, company := range companies %}
               <option value="{%s company.Name %}"></option>
             {% endfor %}
@@ -1833,7 +1833,7 @@
           <!-- selected filters -->
           <div class="filter-used" style="visibility: hidden;">
             <div class="filter-used__title">Applied filters:</div>
-            <ul id="js-company-selected-criteria" class="filter-used__list"></ul>
+            <ul id="js-vacancy-selected-criteria" class="filter-used__list"></ul>
           </div>
           <!-- /selected filters -->
 
@@ -1868,410 +1868,133 @@
             </div>
 
             <!-- card list -->
-            <div id="js-companies-container" class="search-result__cards row-gap-8 mt-24">
-              {% for _, company := range companies %}
-              <div class="js-company card"
-                   data-company-id="{%dl company.ID %}"
-                   data-company-name="{%s company.Name %}"
-                   data-company-type="{%s string(company.Type) %}"
-                   data-company-industries="{%s aliases(company.Industries) %}"
-                   data-company-has-employees-from-countries="{%s aliases(company.HasEmployeesFromCountries) %}"
-                   data-company-rust-foundation-members="{%s strconv.FormatBool(company.RustFoundationMember) %}"
-                   data-company-remote="{%s strconv.FormatBool(company.Remote) %}"
-              >
-                <aside class="card__action">
-                  {% if userCompanyFavoriteMap[company.ID] %}
-                    <button class="js-company-favorite favorite card__action-button button-group__item in-favorite" title="Remove from favorites">
-                      <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" class="favorite__icon" viewBox="0 0 28 28">
-                        <path
-                          d="m14.5 22.1-.5-.3-.5.3-6.8 4.2c-.5.3-1.1-.1-.9-.7L7.5 18l.1-.6-.4-.4-5.9-5.2c-.3-.3-.3-.6-.2-.8.1-.2.3-.4.5-.4l7.9-.7.6-.1.2-.6 2.9-7.4c.2-.5 1-.5 1.2 0l3.1 7.3.2.5.6.1 7.9.7c.2 0 .4.2.5.5.1.3 0 .6-.2.7l-5.9 5.2-.4.4.1.6 1.8 7.7c.1.3 0 .5-.2.6-.2.1-.5.2-.8 0l-6.6-4z"
-                        />
-                      </svg>
-                    </button>
-                  {% else %}
-                    <button class="js-company-favorite favorite card__action-button button-group__item" title="Add to favorite">
-                      <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" class="favorite__icon" viewBox="0 0 28 28">
-                        <path
-                          d="m14.5 22.1-.5-.3-.5.3-6.8 4.2c-.5.3-1.1-.1-.9-.7L7.5 18l.1-.6-.4-.4-5.9-5.2c-.3-.3-.3-.6-.2-.8.1-.2.3-.4.5-.4l7.9-.7.6-.1.2-.6 2.9-7.4c.2-.5 1-.5 1.2 0l3.1 7.3.2.5.6.1 7.9.7c.2 0 .4.2.5.5.1.3 0 .6-.2.7l-5.9 5.2-.4.4.1.6 1.8 7.7c.1.3 0 .5-.2.6-.2.1-.5.2-.8 0l-6.6-4z"
-                        />
-                      </svg>
-                    </button>
-                  {% endif %}
-
-                  <a href="{%s organizerFeature.Path %}/{%s company.LinkedInProfile.Alias %}" class="button-group__item" title="View statistics">
-                    <img width="20" height="20" alt="icon stats" src="/assets/images/pages/common/stats.svg" />
-                  </a>
-                </aside>
-
-                <figure class="card__header">
-                  <div class="card__logo-overlay">
-                    {% comment %}
-                    <!-- TODO square logo -->
-                    <img
-                      class="card__logo"
-                      alt="{%s company.Name %} logo"
-                      src="/assets/images/pages/organizer/logos/google.svg"
-                    />
-                    {% endcomment %}
-                  </div>
-                  <figcaption class="card__header-caption">
-                    <a href="{%s organizerFeature.Path %}/{%s company.LinkedInProfile.Alias %}" class="card__headline vacancy__link">{%s company.Name %}</a>
-                    {% comment %}
-                    <p class="card__header-caption-text">
-                      <img
-                        class="card__header-caption-icon"
-                        alt="marker"
-                        width="12"
-                        height="12"
-                        src="/assets/images/pages/organizer/marker.svg"
-                      />Country, City (Full Remote) <!-- TODO -->
-                    </p>
-                    <p class="card__header-caption-text">
-                      <img
-                        class="card__header-caption-icon"
-                        alt="briefcase"
-                        width="12"
-                        height="12"
-                        src="/assets/images/pages/organizer/briefcase.svg"
-                      />Latest job posting: 12/31/2024 <!-- TODO -->
-                    </p>
-                    {% endcomment %}
-                  </figcaption>
-                </figure>
-
-                <div class="card__top-links">
-                  <a href="{%s company.Website %}" target="_blank" class="card__top-link button-link">Website</a>
-                  {% if company.Careers == "" %}
-                    <span class="card__top-link button-link disabled">Careers</span>
-                  {% else %}
-                    <a href="{%s company.Careers %}" target="_blank" class="card__top-link button-link">Careers</a>
-                  {% endif %}
-                  {% if company.About == "" %}
-                    <span class="card__top-link button-link disabled">About</span>
-                  {% else %}
-                    <a href="{%s company.About %}" target="_blank" class="card__top-link button-link">About</a>
-                  {% endif %}
-                  {% if company.Blog == "" %}
-                    <span class="card__top-link button-link disabled">Dev Blog</span>
-                  {% else %}
-                    <a href="{%s company.Blog %}" target="_blank" class="card__top-link button-link">Dev Blog</a>
-                  {% endif %}
-                  {% if company.ReferralProgram == "" %}
-                    <span class="card__top-link button-link disabled">Referral program</span>
-                  {% else %}
-                    <a href="{%s company.ReferralProgram %}" target="_blank" class="card__top-link button-link">Referral program</a>
-                  {% endif %}
-                </div>
-
-                <div class="card__info">
-                  <figure class="card__figure">
-                    <img
-                      class="card__icon"
-                      alt="card type icon"
-                      width="16"
-                      height="16"
-                      src="/assets/images/pages/vacancy/building.svg"
-                    />
-                    <figcaption class="card__figcaption">{%s companyTypeName[company.Type] %}</figcaption>
-                  </figure>
-                  <figure class="card__figure">
-                    <img
-                      class="card__icon"
-                      alt="card type icon"
-                      width="16"
-                      height="16"
-                      src="/assets/images/pages/vacancy/company-type.svg"
-                    />
-                    <figcaption class="card__figcaption">{%s industryNames(company.Industries) %}</figcaption>
-                  </figure>
-                  {% comment %}
-                  <!-- TODO Clouds -->
-                  <figure class="card__figure">
-                    <img
-                      class="card__icon"
-                      alt="card hosting icon"
-                      width="16"
-                      height="16"
-                      src="/assets/images/pages/organizer/clouds.svg"
-                    />
-                    <figcaption class="card__figcaption card__figcaption--images">
-                      <img
-                        alt="Azure icon"
-                        width="20"
-                        height="20"
-                        src="/assets/images/pages/common/azure.svg"
-                      />
-                      <img
-                        alt="AWS icon"
-                        width="20"
-                        height="20"
-                        src="/assets/images/pages/common/amazon-web-services.svg"
-                      />
-                      <img
-                        alt="GCP icon"
-                        width="20"
-                        height="20"
-                        src="/assets/images/pages/common/googlecloud.svg"
-                      />
-                    </figcaption>
-                  </figure>
-                  {% endcomment %}
-                </div>
-
-                <div class="card__info-group">
-                  <button type="button" class="button button--small button--black card__info-group-button">
-                    <span class="card__info-group-button-text">Show more info</span>
-                    <img
-                      class="card__info-group-button-image"
-                      src="/assets/images/pages/common/double-arrow-down.svg"
-                      width="13"
-                      height="14"
-                      alt="icon double-arrow-down"
-                    />
-                  </button>
-                  <div class="card__info-group-content">
-                    <p class="js-company-description card__text">{%s company.ShortDescription %}</p>
-                    <div class="card__links">
-                      <ul class="card__links-group">
-                        <li class="card__links-item card__links-item--title">
-                          <div class="card__links-item-group">
-                            <img
-                              class="card__links-icon"
-                              alt="linkedin icon"
-                              width="32"
-                              height="32"
-                              src="/assets/images/pages/organizer/linkedin.svg"
+            <div class="search-result__cards row-gap-8 mt-24">
+              {% for _, vacancy := range latestVacancies(vacancies) %}
+                <div
+                  class="js-vacancy card"
+                  data-vacancy-id="{%dl vacancy.ID %}"
+                  data-vacancy-title="{%s vacancy.Title %}"
+                  data-vacancy-remote="{%s strconv.FormatBool(vacancy.Remote) %}"
+                  data-company-name="{%s vacancy.Company.Name %}"
+                  data-company-type="{%s string(vacancy.Company.Type) %}"
+                  data-company-industries="{%s aliases(vacancy.Company.Industries) %}"
+                  data-company-has-employees-from-countries="{%s aliases(vacancy.Company.HasEmployeesFromCountries) %}"
+                  data-company-rust-foundation-members="{%s strconv.FormatBool(vacancy.Company.RustFoundationMember) %}"
+                >
+                  <div class="card__vacancy">
+					<aside class="card__action">
+                      {% if userVacancyFavoriteMap[vacancy.ID] %}
+                        <button class="js-vacancy-favorite favorite card__action-button button-group__item in-favorite" title="Remove from favorites">
+                          <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" class="favorite__icon" viewBox="0 0 28 28">
+                            <path
+                              d="m14.5 22.1-.5-.3-.5.3-6.8 4.2c-.5.3-1.1-.1-.9-.7L7.5 18l.1-.6-.4-.4-5.9-5.2c-.3-.3-.3-.6-.2-.8.1-.2.3-.4.5-.4l7.9-.7.6-.1.2-.6 2.9-7.4c.2-.5 1-.5 1.2 0l3.1 7.3.2.5.6.1 7.9.7c.2 0 .4.2.5.5.1.3 0 .6-.2.7l-5.9 5.2-.4.4.1.6 1.8 7.7c.1.3 0 .5-.2.6-.2.1-.5.2-.8 0l-6.6-4z"
                             />
-                            <a href="https://www.linkedin.com/company/{%s company.LinkedInProfile.Alias %}/" target="_blank" class="card__links-link">LinkedIn</a>
-                            {% if company.LinkedInProfile.Verified %}
-                            <a href="https://www.linkedin.com/company/{%s company.LinkedInProfile.Alias %}/about" target="_blank" class="card__links-link card__links-link--verify">
-                              <img
-                                class="card__links-icon"
-                                alt="icon"
-                                src="/assets/images/pages/organizer/verified-icon.png"
-                              />
-                            </a>
-                            {% endif %}
-                          </div>
-                        </li>
-                        <li class="card__links-item">
-                          <a href="https://www.linkedin.com/company/{%s company.LinkedInProfile.Alias %}/" target="_blank" class="button-link card__links-link">Overview</a>
-                        </li>
-                        <li class="card__links-item card__links-item--inner">
-                          <p class="card__links-item-text">Connections (employees):</p>
-                          <ul class="card__links-group-inner">
-                            <li class="card__links-item">
-                              <a href="{%s linkedinConnectionsURL([]Company{company}, nil) %}" target="_blank" class="button-link card__links-link">Global</a>
-                              <img
-                                class="card__links-icon"
-                                alt="language icon"
-                                width="20"
-                                height="20"
-                                src="/assets/images/pages/organizer/language.svg"
-                              />
-                            </li>
-                            <li class="card__links-item">
-                              <a href="{%s linkedinConnectionsURL([]Company{company}, ukrainianUniversities) %}" target="_blank" class="button-link card__links-link">UA</a>
-                              <img
-                                class="card__links-icon"
-                                alt="language icon"
-                                width="20"
-                                height="20"
-                                src="/assets/images/pages/common/flags/4x3/ua.svg"
-                              />
-                            </li>
-                            <li class="card__links-item">
-                              <a href="{%s linkedinConnectionsURL([]Company{company}, czechUniversities) %}" target="_blank" class="button-link card__links-link">CZ</a>
-                              <img
-                                class="card__links-icon"
-                                alt="language icon"
-                                width="20"
-                                height="20"
-                                src="/assets/images/pages/common/flags/4x3/cz.svg"
-                              />
-                            </li>
-                            <li class="card__links-item">
-                              <a href="{%s linkedinConnectionsFormerEmployeesURL([]Company{company}) %}" target="_blank" class="button-link card__links-link">Former (All)</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li class="card__links-item">
-                          <a href="{%s linkedinEmployeesPostsURL([]Company{company}, organizerFeature.Organizer.Title) %}" target="_blank" class="button-link card__links-link">Employees' posts</a>
-                        </li>
-                        <li class="card__links-item">
-                          <a href="{%s linkedinJobsURL([]Company{company}, string(organizerFeature.Organizer.LanguageTitleKeywords)) %}" target="_blank" class="button-link card__links-link">Jobs</a>
-                        </li>
-                      </ul>
-                      <ul class="card__links-group">
-                        {% if company.GitHubProfile.Login == "" %}
-                        <li class="card__links-item card__links-item--title card__links-item--disabled">
-                          <div class="card__links-item-group">
-                            <img
-                              class="card__links-icon"
-                              alt="GitHub icon"
-                              width="32"
-                              height="32"
-                              src="/assets/images/pages/organizer/github.svg"
+                          </svg>
+                        </button>
+                      {% else %}
+                        <button class="js-vacancy-favorite favorite card__action-button button-group__item" title="Add to favorite">
+                          <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" class="favorite__icon" viewBox="0 0 28 28">
+                            <path
+                              d="m14.5 22.1-.5-.3-.5.3-6.8 4.2c-.5.3-1.1-.1-.9-.7L7.5 18l.1-.6-.4-.4-5.9-5.2c-.3-.3-.3-.6-.2-.8.1-.2.3-.4.5-.4l7.9-.7.6-.1.2-.6 2.9-7.4c.2-.5 1-.5 1.2 0l3.1 7.3.2.5.6.1 7.9.7c.2 0 .4.2.5.5.1.3 0 .6-.2.7l-5.9 5.2-.4.4.1.6 1.8 7.7c.1.3 0 .5-.2.6-.2.1-.5.2-.8 0l-6.6-4z"
                             />
-                            <span class="card__links-link">GitHub</span>
-                          </div>
-                        </li>
-                        <li class="card__links-item card__links-item--disabled">
-                          <span class="button-link card__links-link">Overview</span>
-                          <a href="{%s googleSearchGitHub(company.Name) %}" target="_blank" class="card__links-link card__links-link--google">
-                            <img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
-                          </a>
-                        </li>
-                        <li class="card__links-item card__links-item--disabled">
-                          <span class="button-link card__links-link">Repositories (?)</span>
-                        </li>
-                        <li class="card__links-item card__links-item--disabled">
-                          <span class="button-link card__links-link">Followers (?)</span>
-                        </li>
-                        {% else %}
-                        <li class="card__links-item card__links-item--title">
-                          <div class="card__links-item-group">
-                            <img
-                              class="card__links-icon"
-                              alt="GitHub icon"
-                              width="32"
-                              height="32"
-                              src="/assets/images/pages/organizer/github.svg"
-                            />
-                            <a href="https://github.com/{%s company.GitHubProfile.Login %}" target="_blank" class="card__links-link">GitHub</a>
-                            {% if company.GitHubProfile.Verified %}
-                            <span class="card__links-link card__links-link--verify">
-                              <img
-                                class="card__links-icon"
-                                alt="GitHub verified icon"
-                                src="/assets/images/pages/organizer/verified.png"
-                              />
-                            </span>
-                            {% endif %}
-                          </div>
-                        </li>
-                        <li class="card__links-item">
-                          <a href="https://github.com/{%s company.GitHubProfile.Login %}" target="_blank" class="button-link card__links-link">Overview</a>
-                        </li>
-                        <li class="card__links-item">
-                          <a href="https://github.com/orgs/{%s company.GitHubProfile.Login %}/repositories?q=lang:{%s organizerFeature.Organizer.GitHubAlias %}" target="_blank" class="button-link card__links-link">Repositories ({%d fetchGitHubRepositoriesCount(company, organizerFeature.Organizer.Language) %})</a>
-                        </li>
-                        <li class="card__links-item">
-                          <a href="https://github.com/orgs/{%s company.GitHubProfile.Login %}/followers" target="_blank" class="button-link card__links-link">Followers ({%s fetchGitHubFollowers(company) %})</a>
-                        </li>
+                          </svg>
+                        </button>
+                      {% endif %}
+
+                      <button title="Hide vacancy" class="button-group__item button-group__item-sloth card__action-button-sloth"></button>
+					</aside>
+                    <figure class="card__header card__header--organizer">
+                      <div class="card__logo-overlay"></div>
+                      <figcaption class="card__header-caption">
+                        <a href="/v/{%dl vacancy.ID %}" target="_blank" class="card__headline">{%s vacancy.Title %}</a>
+                        <a href="/{%s organizerFeature.Organizer.Alias %}/companies/{%s vacancy.Company.Alias %}" target="_blank" class="card__sub-headline">{%s vacancy.Company.Name %}</a>
+                        {% comment %}
+                        <p class="card__header-caption-text">
+                          <img
+                            class="card__header-caption-icon"
+                            alt="marker"
+                            width="12"
+                            height="12"
+                            src="/assets/images/pages/organizer/marker.svg"
+                          >Country, City (Full Remote) <!-- TODO -->
+                        </p>
+                        <p class="card__header-caption-text">
+                          <img
+                            class="card__header-caption-icon"
+                            alt="briefcase"
+                            width="12"
+                            height="12"
+                            src="/assets/images/pages/vacancy/credit-card.svg"
+                          >€2,500/month <!-- TODO -->
+                        </p>
+                        {% endcomment %}
+                      </figcaption>
+                    </figure>
+                    <p class="js-vacancy-short-description card__text card__text--organizer">{%s vacancyDescription(vacancy) %}</p>
+                    <div class="card__footer">
+                      <div class="card__details">
+                        <figure class="card__figure" title="{%s formatVacancyDate(vacancy.Date) %}">
+                          <img
+                            class="card__icon"
+                            alt="calendar icon"
+                            width="16"
+                            height="16"
+                            src="/assets/images/pages/online/calendar.svg"
+                          />
+                          <figcaption class="card__figcaption">{%s formatVacancyDiffDate(vacancy.Date) %}</figcaption>
+                        </figure>
+                        <figure class="card__figure" title="Monthly views: {%dl vacancyMonthlyViewsMap[vacancy.ID] %}">
+                          <img
+                            class="card__icon"
+                            alt="eye icon"
+                            width="16"
+                            height="16"
+                            src="/assets/images/pages/common/eye.svg"
+                          />
+                          <figcaption class="card__figcaption">Monthly views: {%dl vacancyMonthlyViewsMap[vacancy.ID] %}</figcaption>
+                        </figure>
+                      </div>
+                      <a href="/v/{%dl vacancy.ID %}" target="_blank" class="button button--bordered-gray button--gap-images">
+                        {% if isLinkedInVacancyURL(vacancy.URL) %}
+                          <img
+                            width="20"
+                            height="20"
+                            src="/assets/images/pages/organizer/linkedin.svg"
+                            alt="LinkedIn logo"
+                            class="hero__button-icon"
+                          />
+                        {% elseif isOttaVacancyURL(vacancy.URL) %}
+                          <img
+                            width="20"
+                            height="20"
+                            src="/assets/images/pages/organizer/otta.svg"
+                            alt="Otta logo"
+                            class="hero__button-icon"
+                          />
+                        {% elseif isIndeedVacancyURL(vacancy.URL) %}
+                          <img
+                            width="20"
+                            height="20"
+                            src="/assets/images/pages/organizer/indeed.png"
+                            alt="Indeed logo"
+                            class="hero__button-icon"
+                          />
                         {% endif %}
-                      </ul>
-                      <ul class="card__links-group">
-                        {% if company.GlassdoorProfile.OverviewURL == "" %}
-                        <li class="card__links-item card__links-item--title card__links-item--disabled">
-                          <div class="card__links-item-group">
-                            <img
-                              class="card__links-icon"
-                              alt="Glassdoor icon"
-                              width="32"
-                              height="32"
-                              src="/assets/images/pages/organizer/glassdoor.svg"
-                            />
-                            <span class="card__links-link">Glassdoor</span>
-                          </div>
-                        </li>
-                        <li class="card__links-item card__links-item--disabled">
-                          <span class="button-link card__links-link">Overview</span>
-                          <a href="{%s googleSearchGlassdoor(company.Name) %}" target="_blank" class="card__links-link card__links-link--google">
-                            <img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
-                          </a>
-                        </li>
-                        <li class="card__links-item card__links-item--disabled">
-                          <span class="button-link card__links-link">Reviews</span>
-                          <span class="card__links-link-star">?.? ★</span>
-                        </li>
-                        {% else %}
-                        <li class="card__links-item card__links-item--title">
-                          <div class="card__links-item-group">
-                            <img
-                              class="card__links-icon"
-                              alt="Glassdoor icon"
-                              width="32"
-                              height="32"
-                              src="/assets/images/pages/organizer/glassdoor.svg"
-                            />
-                            <a href="{%s company.GlassdoorProfile.OverviewURL %}" target="_blank" class="card__links-link">Glassdoor</a>
-                            {% if company.GlassdoorProfile.Verified %}
-                            <span class="card__links-link card__links-link--verify">
-                              <img
-                                class="card__links-icon"
-                                alt="Glassdoor verified icon"
-                                src="/assets/images/pages/organizer/verified-icon-2.png"
-                              />
-                            </span>
-                            {% endif %}
-                          </div>
-                        </li>
-                        <li class="card__links-item">
-                          <a href="{%s company.GlassdoorProfile.OverviewURL %}" target="_blank" class="button-link card__links-link">Overview</a>
-                        </li>
-                        <li class="card__links-item">
-                          <a href="{%s company.GlassdoorProfile.ReviewsURL %}" target="_blank" class="button-link card__links-link">Reviews</a>
-                          <span class="card__links-link-star">{%s formatGlassdoorReviewsRate(company.GlassdoorProfile.ReviewsRate) %} ★</span>
-                        </li>
-                        {% endif %}
-                      </ul>
+                        View source
+                        <img
+                          width="18"
+                          height="18"
+                          src="/assets/images/pages/common/external-link.svg"
+                          alt="arrow black icon"
+                          class="hero__button-icon"
+                        />
+                      </a>
                     </div>
                   </div>
                 </div>
-
-                <div class="card__footer">
-                  <a href="{%s organizerFeature.Path %}/{%s company.LinkedInProfile.Alias %}" class="card__footer-button button button-link">
-                    <div class="card__footer-images">
-                      <figure class="card__footer-figure">
-                        <img
-                          class="card__footer-icon"
-                          alt="Blind icon"
-                          width="32"
-                          height="32"
-                          srcset="/assets/images/pages/organizer/footer/blind.png 2x"
-                          src="/assets/images/pages/organizer/footer/blind.png"
-                        />
-                      </figure>
-                      <figure class="card__footer-figure">
-                        <img
-                          class="card__footer-icon"
-                          alt="Levels.fyi icon"
-                          width="32"
-                          height="32"
-                          srcset="/assets/images/pages/organizer/footer/levels.png 2x"
-                          src="/assets/images/pages/organizer/footer/levels.png"
-                        />
-                      </figure>
-                      <figure class="card__footer-figure">
-                        <img
-                          class="card__footer-icon"
-                          alt="Indeed icon"
-                          width="32"
-                          height="32"
-                          srcset="/assets/images/pages/organizer/footer/indeed.png 2x"
-                          src="/assets/images/pages/organizer/footer/indeed.png"
-                        />
-                      </figure>
-                      <figure class="card__footer-figure">
-                        <img
-                          class="card__footer-icon"
-                          alt="Y Combinator icon"
-                          width="32"
-                          height="32"
-                          srcset="/assets/images/pages/organizer/footer/y-combinator.png 2x"
-                          src="/assets/images/pages/organizer/footer/y-combinator.png"
-                        />
-                      </figure>
-                    </div>
-                    More on the company page
-                    <svg width="20" height="20" viewBox="0 0 8 12" fill="003ea6" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0.999531 0.710632C0.609531 1.10063 0.609531 1.73063 0.999531 2.12063L4.87953 6.00063L0.999531 9.88063C0.609531 10.2706 0.609531 10.9006 0.999531 11.2906C1.38953 11.6806 2.01953 11.6806 2.40953 11.2906L6.99953 6.70063C7.38953 6.31063 7.38953 5.68063 6.99953 5.29063L2.40953 0.700632C2.02953 0.320632 1.38953 0.320632 0.999531 0.710632Z" fill="#003ea6"/>
-                    </svg>
-                  </a>
-                </div>
-              </div>
               {% endfor %}
+
+              <!-- TODO -->
             </div>
             <!-- /card list -->
 
@@ -2347,8 +2070,7 @@
 
 {%= organizersFooterV3() %}
 </div>
-<script src="/assets/js/organizers-companies-app.js?{%d appVersion %}"></script>
 </body>
-
+<script src="/assets/js/organizers-vacancies-app.js?{%d appVersion %}"></script>
 </html>
 {%- endfunc -%}

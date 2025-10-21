@@ -213,7 +213,7 @@
         </div>
         <!-- /selected filters -->
 
-        <div id="search_result_list" class="search-result__list">
+        <div class="search-result__list">
           <p class="search-result-found"><span id="js-result-count" class="search-result-found__amount">{%d len(companies) %}</span> results</p>
           <!-- card list -->
           <div class="search-result__cards row-gap-8 mt-24">

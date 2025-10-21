@@ -143,7 +143,7 @@ func StreamCompaniesAndConnectionsV1(qw422016 *qt422016.Writer,
                 <!-- /filters -->
 
                 <div class="search-result--group">
-                    <div id="search_result_list" class="search-result__list">
+                    <div class="search-result__list">
                         <p class="search-result-found"><span id="js-companies-count" class="search-result-found__amount">0</span> companies</p>
                         <div id="js-companies" class="search-result__cards row-gap-8 mt-24"></div>
                     </div>

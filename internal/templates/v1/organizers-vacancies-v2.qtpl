@@ -10,6 +10,7 @@
 ) -%}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>{%s organizerFeature.Organizer.Title %} jobs – remote and onsite developer vacancies | ReadyToTouch</title>
     <meta name="title" content="{%s organizerFeature.Organizer.Title %} jobs – remote and onsite developer vacancies | ReadyToTouch">
@@ -101,12 +102,17 @@
 <section class="search-container container">
   <div class="search search--org-vacancies search--organizer">
     <div class="search__input-group">
+      <input class="search__input" id="js-vacancy-query" type="search" name="search" placeholder="Search" />
+      {% comment %}
+      <!--
       <input class="search__input" id="js-vacancy-query" type="search" name="search" placeholder="Search" list="js-vacancy-query-datalist" />
       <datalist id="js-vacancy-query-datalist">
         {% for _, company := range companies %}
           <option value="{%s company.Name %}"></option>
         {% endfor %}
       </datalist>
+      -->
+      {% endcomment %}
       <img class="search__icon" alt="Search icon" width="20" height="20" src="/assets/images/pages/common/search.svg" />
     </div>
     {% comment %}
@@ -280,7 +286,7 @@
         </div>
         <!-- /selected filters -->
 
-        <div id="search_result_list" class="search-result__list">
+        <div class="search-result__list">
           <p class="search-result-found"><span id="js-result-count" class="search-result-found__amount">{%d len(vacancies) %}</span> results</p>
           <!-- card list -->
           {% code var currentVacancyPeriods = newVacancyPeriods() %}
@@ -334,8 +340,8 @@
 							/>
 						</div>
 						<figcaption class="card__header-caption">
-							<a href="/v/{%dl vacancy.ID %}" target="_blank" class="card__headline vacancy__link">{%s vacancy.Title %}</a>
-							<a href="/{%s organizerFeature.Organizer.Alias %}/companies/{%s vacancy.Company.Alias %}" class="card__sub-headline vacancy__link">{%s vacancy.Company.Name %}</a>
+							<a href="/v/{%dl vacancy.ID %}" target="_blank" class="card__headline">{%s vacancy.Title %}</a>
+							<a href="/{%s organizerFeature.Organizer.Alias %}/companies/{%s vacancy.Company.Alias %}" target="_blank" class="card__sub-headline">{%s vacancy.Company.Name %}</a>
 						</figcaption>
 					</figure>
 					<p class="js-vacancy-short-description card__text card__text--organizer">{%s vacancyDescription(vacancy) %}</p>
@@ -366,7 +372,7 @@
 									width="20"
 									height="20"
 									src="/assets/images/pages/organizer/linkedin.svg"
-									alt="linkedin logo"
+									alt="LinkedIn logo"
 									class="hero__button-icon"
 								/>
 							{% elseif isOttaVacancyURL(vacancy.URL) %}
@@ -374,7 +380,7 @@
 									width="20"
 									height="20"
 									src="/assets/images/pages/organizer/otta.svg"
-									alt="otta logo"
+									alt="Otta logo"
 									class="hero__button-icon"
 								/>
 							{% elseif isIndeedVacancyURL(vacancy.URL) %}
@@ -382,7 +388,7 @@
 									width="20"
 									height="20"
 									src="/assets/images/pages/organizer/indeed.png"
-									alt="indeed logo"
+									alt="Indeed logo"
 									class="hero__button-icon"
 								/>
 							{% endif %}
