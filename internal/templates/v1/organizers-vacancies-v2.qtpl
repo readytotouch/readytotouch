@@ -335,8 +335,8 @@
 							/>
 						</div>
 						<figcaption class="card__header-caption">
-							<a href="/v/{%dl vacancy.ID %}" target="_blank" class="card__headline vacancy__link">{%s vacancy.Title %}</a>
-							<a href="/{%s organizerFeature.Organizer.Alias %}/companies/{%s vacancy.Company.Alias %}" class="card__sub-headline vacancy__link">{%s vacancy.Company.Name %}</a>
+							<a href="/v/{%dl vacancy.ID %}" target="_blank" class="card__headline">{%s vacancy.Title %}</a>
+							<a href="/{%s organizerFeature.Organizer.Alias %}/companies/{%s vacancy.Company.Alias %}" target="_blank" class="card__sub-headline">{%s vacancy.Company.Name %}</a>
 						</figcaption>
 					</figure>
 					<p class="js-vacancy-short-description card__text card__text--organizer">{%s vacancyDescription(vacancy) %}</p>
@@ -367,7 +367,7 @@
 									width="20"
 									height="20"
 									src="/assets/images/pages/organizer/linkedin.svg"
-									alt="linkedin logo"
+									alt="LinkedIn logo"
 									class="hero__button-icon"
 								/>
 							{% elseif isOttaVacancyURL(vacancy.URL) %}
@@ -375,7 +375,7 @@
 									width="20"
 									height="20"
 									src="/assets/images/pages/organizer/otta.svg"
-									alt="otta logo"
+									alt="Otta logo"
 									class="hero__button-icon"
 								/>
 							{% elseif isIndeedVacancyURL(vacancy.URL) %}
@@ -383,7 +383,7 @@
 									width="20"
 									height="20"
 									src="/assets/images/pages/organizer/indeed.png"
-									alt="indeed logo"
+									alt="Indeed logo"
 									class="hero__button-icon"
 								/>
 							{% endif %}
