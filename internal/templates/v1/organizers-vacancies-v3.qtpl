@@ -1833,7 +1833,7 @@
           <!-- selected filters -->
           <div class="filter-used" style="visibility: hidden;">
             <div class="filter-used__title">Applied filters:</div>
-            <ul id="js-company-selected-criteria" class="filter-used__list"></ul>
+            <ul id="js-vacancy-selected-criteria" class="filter-used__list"></ul>
           </div>
           <!-- /selected filters -->
 
