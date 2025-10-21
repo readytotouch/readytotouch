@@ -176,18 +176,9 @@ func StreamOrganizersVacanciesV2(qw422016 *qt422016.Writer,
 <section class="search-container container">
   <div class="search search--org-vacancies search--organizer">
     <div class="search__input-group">
-      <input class="search__input" id="js-vacancy-query" type="search" name="search" placeholder="Search" list="js-vacancy-query-datalist" />
-      <datalist id="js-vacancy-query-datalist">
-        `)
-	for _, company := range companies {
-		qw422016.N().S(`
-          <option value="`)
-		qw422016.E().S(company.Name)
-		qw422016.N().S(`"></option>
-        `)
-	}
+      <input class="search__input" id="js-vacancy-query" type="search" name="search" placeholder="Search" />
+      `)
 	qw422016.N().S(`
-      </datalist>
       <img class="search__icon" alt="Search icon" width="20" height="20" src="/assets/images/pages/common/search.svg" />
     </div>
     `)
