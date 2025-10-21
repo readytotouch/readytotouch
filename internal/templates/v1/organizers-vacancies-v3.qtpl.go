@@ -3,6 +3,8 @@
 
 package v1
 
+import "strconv"
+
 import (
 	qtio422016 "io"
 
@@ -179,11 +181,377 @@ func StreamOrganizersVacanciesV3(qw422016 *qt422016.Writer,
   </div>
 
   <section class="search-container container">
-    <!-- TODO-->
+    <div class="search search--projects search--organizer search--with-sort">
+      <div class="search__input-group">
+        <input class="search__input" id="js-vacancy-query" type="text" placeholder="Search" />
+        `)
+	qw422016.N().S(`
+        <img class="search__icon" alt="Search icon" width="20" height="20" src="/assets/images/pages/common/search.svg" />
+      </div>
+      `)
+	qw422016.N().S(`
+    </div>
   </section>
 
   <div class="search-result mt-32">
-      <!-- TODO-->
+    <div class="container">
+      <div class="search-result__wrapper">
+        <!-- filters -->
+        <aside class="search-result__filters">
+          <div class="search-result__filter-group search-result__filter-group--wide">
+            <div class="search-result__filter-header">
+              <h2 class="search-result__filter-headline">Filters:</h2>
+              <button id="js-criteria-reset" type="button" class="button button--light-link search-result__filter-headline-reset" style="visibility: hidden;">Reset all</button>
+              <button type="button" class="button button--light-link search-result__filter-headline-reset-mobile js-filter-headline-reset-mobile">
+                <img src="/assets/images/pages/common/cross-thin.svg" alt="cross icon" width="24" height="24">
+              </button>
+            </div>
+
+            <div class="filters search-result__filters-list">
+              `)
+	qw422016.N().S(`
+
+              <!-- Company type -->
+              <div class="filters__group">
+                <header class="filters__header filters__header--with-info">
+                  <h4 class="filters__headline">Company type</h4>
+                  <img
+                    class="ml-14"
+                    alt="info icon"
+                    width="14"
+                    height="14"
+                    title="info"
+                    src="/assets/images/pages/common/info.svg"
+                  />
+                </header>
+                <div class="filters__elements">
+                  <label class="checkbox filters__element">
+                    <input class="js-criteria-company-type checkbox__input" type="checkbox" data-alias="product" />
+                    <span class="checkbox__element"></span>
+                    <span class="filters__element-text filters__element-text--truncated">Product</span>
+                  </label>
+                  <label class="checkbox filters__element">
+                    <input class="js-criteria-company-type checkbox__input" type="checkbox" data-alias="startup" />
+                    <span class="checkbox__element"></span>
+                    <span class="filters__element-text filters__element-text--truncated">Startup</span>
+                  </label>
+                </div>
+              </div>
+              <!-- /Company type -->
+
+              `)
+	qw422016.N().S(`
+
+              `)
+	qw422016.N().S(`
+
+              <!-- Industry -->
+              <div class="filters__group">
+                <header class="filters__header filters__header--with-info">
+                  <h4 class="filters__headline">Industry</h4>
+                  <img
+                    class="ml-14"
+                    alt="info icon"
+                    width="14"
+                    height="14"
+                    title="info"
+                    src="/assets/images/pages/common/info.svg"
+                  />
+                </header>
+                <div class="filters__elements">
+                  <div class="filters__elements-inner">
+                    `)
+	for _, industry := range industries {
+		qw422016.N().S(`
+                    <label class="checkbox filters__element">
+                      <input class="js-criteria-company-industry checkbox__input" type="checkbox" data-alias="`)
+		qw422016.E().S(industry.Alias)
+		qw422016.N().S(`" />
+                      <span class="checkbox__element"></span>
+                      <span class="filters__element-text filters__element-text--truncated">`)
+		qw422016.E().S(industry.Name)
+		qw422016.N().S(`</span>
+                    </label>
+                    `)
+	}
+	qw422016.N().S(`
+                  </div>
+                </div>
+              </div>
+              <!-- /Industry -->
+
+              `)
+	qw422016.N().S(`
+
+              `)
+	qw422016.N().S(`
+
+              <!-- Other -->
+              <div class="filters__group">
+                <header class="filters__header filters__header--with-info">
+                  <h4 class="filters__headline">Other</h4>
+                  <img
+                    class="ml-14"
+                    alt="info icon"
+                    width="14"
+                    height="14"
+                    title="info"
+                    src="/assets/images/pages/common/info.svg"
+                  />
+                </header>
+                <div class="filters__elements">
+                  <label class="checkbox filters__element">
+                    <input class="js-criteria-has-employees-from-country checkbox__input" type="checkbox" data-alias="ukraine" />
+                    <span class="checkbox__element"></span>
+                    <span class="filters__element-text filters__element-text--truncated">Has Ukrainian employees</span>
+                    <img
+                      class="checkbox__content-image"
+                      alt="Flag of Ukraine"
+                      width="24"
+                      height="24"
+                      src="/assets/images/pages/common/flags/4x3/ua.svg"
+                    />
+                  </label>
+                  <label class="checkbox filters__element">
+                    <input class="js-criteria-has-employees-from-country checkbox__input" type="checkbox" data-alias="czechia" />
+                    <span class="checkbox__element"></span>
+                    <span class="filters__element-text filters__element-text--truncated">Has Czechs employees</span>
+                    <img
+                      class="checkbox__content-image"
+                      alt="Flag of Czechia"
+                      width="24"
+                      height="24"
+                      src="/assets/images/pages/common/flags/4x3/cz.svg"
+                    />
+                  </label>
+                  `)
+	qw422016.N().S(`
+                  `)
+	if organizerFeature.Organizer.Alias == "rust" {
+		qw422016.N().S(`
+                  <label class="checkbox filters__element">
+                    <input id="js-criteria-rust-foundation-members" class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__element"></span>
+                    <span class="filters__element-text filters__element-text--truncated">Rust Foundation Members</span>
+                  </label>
+                  `)
+	}
+	qw422016.N().S(`
+                  <label class="checkbox filters__element">
+                    <input id="js-criteria-remote" class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__element"></span>
+                    <span class="filters__element-text filters__element-text--truncated">Remote</span>
+                  </label>
+                  <label class="checkbox filters__element">
+                    <input id="js-criteria-in-favorites" class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__element"></span>
+                    <span class="filters__element-text filters__element-text--truncated">Favorites</span>
+                  </label>
+                </div>
+              </div>
+              <!-- /Other -->
+
+            </div>
+            <footer class="search-result__filter-footer">
+              <button type="button" class="button button--light-link search-result__filter-footer-button">Reset all</button>
+              <button type="button" class="button button--black button--small">Apply</button>
+            </footer>
+          </div>
+        </aside>
+        <!-- /filters -->
+
+        <div class="search-result--group">
+          <!-- selected filters -->
+          <div class="filter-used" style="visibility: hidden;">
+            <div class="filter-used__title">Applied filters:</div>
+            <ul id="js-company-selected-criteria" class="filter-used__list"></ul>
+          </div>
+          <!-- /selected filters -->
+
+          <div class="search-result__list">
+            <div class="search-result__top-actions">
+              <p class="search-result-found"><span id="js-result-count" class="search-result-found__amount">`)
+	qw422016.N().D(len(companies))
+	qw422016.N().S(`</span> results</p>
+              `)
+	qw422016.N().S(`
+            </div>
+
+            <!-- card list -->
+            <div class="search-result__cards row-gap-8 mt-24">
+              `)
+	for _, vacancy := range latestVacancies(vacancies) {
+		qw422016.N().S(`
+                <div
+                  class="js-vacancy card"
+                  data-vacancy-id="`)
+		qw422016.N().DL(vacancy.ID)
+		qw422016.N().S(`"
+                  data-vacancy-title="`)
+		qw422016.E().S(vacancy.Title)
+		qw422016.N().S(`"
+                  data-vacancy-remote="`)
+		qw422016.E().S(strconv.FormatBool(vacancy.Remote))
+		qw422016.N().S(`"
+                  data-company-name="`)
+		qw422016.E().S(vacancy.Company.Name)
+		qw422016.N().S(`"
+                  data-company-type="`)
+		qw422016.E().S(string(vacancy.Company.Type))
+		qw422016.N().S(`"
+                  data-company-industries="`)
+		qw422016.E().S(aliases(vacancy.Company.Industries))
+		qw422016.N().S(`"
+                  data-company-has-employees-from-countries="`)
+		qw422016.E().S(aliases(vacancy.Company.HasEmployeesFromCountries))
+		qw422016.N().S(`"
+                  data-company-rust-foundation-members="`)
+		qw422016.E().S(strconv.FormatBool(vacancy.Company.RustFoundationMember))
+		qw422016.N().S(`"
+                >
+                  <div class="card__vacancy">
+					<aside class="card__action">
+                      `)
+		if userVacancyFavoriteMap[vacancy.ID] {
+			qw422016.N().S(`
+                        <button class="js-vacancy-favorite favorite card__action-button button-group__item in-favorite" title="Remove from favorites">
+                          <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" class="favorite__icon" viewBox="0 0 28 28">
+                            <path
+                              d="m14.5 22.1-.5-.3-.5.3-6.8 4.2c-.5.3-1.1-.1-.9-.7L7.5 18l.1-.6-.4-.4-5.9-5.2c-.3-.3-.3-.6-.2-.8.1-.2.3-.4.5-.4l7.9-.7.6-.1.2-.6 2.9-7.4c.2-.5 1-.5 1.2 0l3.1 7.3.2.5.6.1 7.9.7c.2 0 .4.2.5.5.1.3 0 .6-.2.7l-5.9 5.2-.4.4.1.6 1.8 7.7c.1.3 0 .5-.2.6-.2.1-.5.2-.8 0l-6.6-4z"
+                            />
+                          </svg>
+                        </button>
+                      `)
+		} else {
+			qw422016.N().S(`
+                        <button class="js-vacancy-favorite favorite card__action-button button-group__item" title="Add to favorite">
+                          <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" class="favorite__icon" viewBox="0 0 28 28">
+                            <path
+                              d="m14.5 22.1-.5-.3-.5.3-6.8 4.2c-.5.3-1.1-.1-.9-.7L7.5 18l.1-.6-.4-.4-5.9-5.2c-.3-.3-.3-.6-.2-.8.1-.2.3-.4.5-.4l7.9-.7.6-.1.2-.6 2.9-7.4c.2-.5 1-.5 1.2 0l3.1 7.3.2.5.6.1 7.9.7c.2 0 .4.2.5.5.1.3 0 .6-.2.7l-5.9 5.2-.4.4.1.6 1.8 7.7c.1.3 0 .5-.2.6-.2.1-.5.2-.8 0l-6.6-4z"
+                            />
+                          </svg>
+                        </button>
+                      `)
+		}
+		qw422016.N().S(`
+
+                      <button title="Hide vacancy" class="button-group__item button-group__item-sloth card__action-button-sloth"></button>
+					</aside>
+                    <figure class="card__header card__header--organizer">
+                      <div class="card__logo-overlay"></div>
+                      <figcaption class="card__header-caption">
+                        <a href="/v/`)
+		qw422016.N().DL(vacancy.ID)
+		qw422016.N().S(`" target="_blank" class="card__headline">`)
+		qw422016.E().S(vacancy.Title)
+		qw422016.N().S(`</a>
+                        <a href="/`)
+		qw422016.E().S(organizerFeature.Organizer.Alias)
+		qw422016.N().S(`/companies/`)
+		qw422016.E().S(vacancy.Company.Alias)
+		qw422016.N().S(`" target="_blank" class="card__sub-headline">`)
+		qw422016.E().S(vacancy.Company.Name)
+		qw422016.N().S(`</a>
+                        `)
+		qw422016.N().S(`
+                      </figcaption>
+                    </figure>
+                    <p class="js-vacancy-short-description card__text card__text--organizer">`)
+		qw422016.E().S(vacancyDescription(vacancy))
+		qw422016.N().S(`</p>
+                    <div class="card__footer">
+                      <div class="card__details">
+                        <figure class="card__figure" title="`)
+		qw422016.E().S(formatVacancyDate(vacancy.Date))
+		qw422016.N().S(`">
+                          <img
+                            class="card__icon"
+                            alt="calendar icon"
+                            width="16"
+                            height="16"
+                            src="/assets/images/pages/online/calendar.svg"
+                          />
+                          <figcaption class="card__figcaption">`)
+		qw422016.E().S(formatVacancyDiffDate(vacancy.Date))
+		qw422016.N().S(`</figcaption>
+                        </figure>
+                        <figure class="card__figure" title="Monthly views: `)
+		qw422016.N().DL(vacancyMonthlyViewsMap[vacancy.ID])
+		qw422016.N().S(`">
+                          <img
+                            class="card__icon"
+                            alt="eye icon"
+                            width="16"
+                            height="16"
+                            src="/assets/images/pages/common/eye.svg"
+                          />
+                          <figcaption class="card__figcaption">Monthly views: `)
+		qw422016.N().DL(vacancyMonthlyViewsMap[vacancy.ID])
+		qw422016.N().S(`</figcaption>
+                        </figure>
+                      </div>
+                      <a href="/v/`)
+		qw422016.N().DL(vacancy.ID)
+		qw422016.N().S(`" target="_blank" class="button button--bordered-gray button--gap-images">
+                        `)
+		if isLinkedInVacancyURL(vacancy.URL) {
+			qw422016.N().S(`
+                          <img
+                            width="20"
+                            height="20"
+                            src="/assets/images/pages/organizer/linkedin.svg"
+                            alt="LinkedIn logo"
+                            class="hero__button-icon"
+                          />
+                        `)
+		} else if isOttaVacancyURL(vacancy.URL) {
+			qw422016.N().S(`
+                          <img
+                            width="20"
+                            height="20"
+                            src="/assets/images/pages/organizer/otta.svg"
+                            alt="Otta logo"
+                            class="hero__button-icon"
+                          />
+                        `)
+		} else if isIndeedVacancyURL(vacancy.URL) {
+			qw422016.N().S(`
+                          <img
+                            width="20"
+                            height="20"
+                            src="/assets/images/pages/organizer/indeed.png"
+                            alt="Indeed logo"
+                            class="hero__button-icon"
+                          />
+                        `)
+		}
+		qw422016.N().S(`
+                        View source
+                        <img
+                          width="18"
+                          height="18"
+                          src="/assets/images/pages/common/external-link.svg"
+                          alt="arrow black icon"
+                          class="hero__button-icon"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              `)
+	}
+	qw422016.N().S(`
+
+              <!-- TODO -->
+            </div>
+            <!-- /card list -->
+
+            `)
+	qw422016.N().S(`
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
 </main>

@@ -188,37 +188,8 @@ func StreamOrganizersCompaniesV3(qw422016 *qt422016.Writer,
 	qw422016.N().S(`
         <img class="search__icon" alt="Search icon" width="20" height="20" src="/assets/images/pages/common/search.svg" />
       </div>
-      <button type="button" class="mobile-filter js-mobile-filter">
-        <img
-          src="/assets/images/pages/common/filter.svg"
-          alt="Filter icon"
-          width="16"
-          height="16"
-        />
-        <span class="mobile-filter__counter">27</span>
-      </button>
-      <div class="sorter sorter--desktop js-sorter">
-        <button type="button" class="sorter__title js-sorter-toggle">
-          <span class="sorter__title-text js-sorter-title-text">Newest first</span>
-          <span class="sorter__icon-wrapper">
-            <img
-              alt="caret-down icon"
-              width="12"
-              height="7"
-              src="/assets/images/pages/organizer/caret-down.svg"
-            />
-          </span>
-        </button>
-        <ul class="sorter__list js-sorter-list">
-          <li class="sorter__item is-selected js-sorter-item">Newest first</li>
-          <li class="sorter__item js-sorter-item">Oldest first</li>
-          <li class="sorter__item js-sorter-item">By LinkedIn followers</li>
-          <li class="sorter__item js-sorter-item">By Glassdoor reviews</li>
-          <li class="sorter__item js-sorter-item">By Blind reviews</li>
-          <li class="sorter__item js-sorter-item">By Market Cap</li>
-          <li class="sorter__item js-sorter-item">By latest job posting</li>
-        </ul>
-      </div>
+      `)
+	qw422016.N().S(`
     </div>
   </section>
 
@@ -402,28 +373,8 @@ func StreamOrganizersCompaniesV3(qw422016 *qt422016.Writer,
               <p class="search-result-found"><span id="js-result-count" class="search-result-found__amount">`)
 	qw422016.N().D(len(companies))
 	qw422016.N().S(`</span> results</p>
-              <div class="sorter sorter--mobile">
-                <button type="button" class="sorter__title">
-                  <span class="sorter__title-text">Newest first</span>
-                  <span class="sorter__icon-wrapper">
-                    <img
-                      alt="caret-down icon"
-                      width="12"
-                      height="7"
-                      src="/assets/images/pages/organizer/caret-down.svg"
-                    />
-                  </span>
-                </button>
-                <ul class="sorter__list">
-                  <li class="sorter__item is-selected">Newest first</li>
-                  <li class="sorter__item">Oldest first</li>
-                  <li class="sorter__item">By LinkedIn followers</li>
-                  <li class="sorter__item">By Glassdoor reviews</li>
-                  <li class="sorter__item">By Blind reviews</li>
-                  <li class="sorter__item">By Market Cap</li>
-                  <li class="sorter__item">By latest job posting</li>
-                </ul>
-              </div>
+              `)
+	qw422016.N().S(`
             </div>
 
             <!-- card list -->
@@ -491,18 +442,6 @@ func StreamOrganizersCompaniesV3(qw422016 *qt422016.Writer,
                 <figure class="card__header">
                   <div class="card__logo-overlay">
                     `)
-		if false {
-			qw422016.N().S(`
-                    <!-- TODO square logo -->
-                    <img
-                      class="card__logo"
-                      alt="`)
-			qw422016.E().S(company.Name)
-			qw422016.N().S(` logo"
-                      src="/assets/images/pages/organizer/logos/google.svg"
-                    />
-                    `)
-		}
 		qw422016.N().S(`
                   </div>
                   <figcaption class="card__header-caption">
@@ -513,24 +452,8 @@ func StreamOrganizersCompaniesV3(qw422016 *qt422016.Writer,
 		qw422016.N().S(`" class="card__headline vacancy__link">`)
 		qw422016.E().S(company.Name)
 		qw422016.N().S(`</a>
-                    <p class="card__header-caption-text">
-                      <img
-                        class="card__header-caption-icon"
-                        alt="marker"
-                        width="12"
-                        height="12"
-                        src="/assets/images/pages/organizer/marker.svg"
-                      />Country, City (Full Remote) <!-- TODO -->
-                    </p>
-                    <p class="card__header-caption-text">
-                      <img
-                        class="card__header-caption-icon"
-                        alt="briefcase"
-                        width="12"
-                        height="12"
-                        src="/assets/images/pages/organizer/briefcase.svg"
-                      />Latest job posting: 12/31/2024 <!-- TODO -->
-                    </p>
+                    `)
+		qw422016.N().S(`
                   </figcaption>
                 </figure>
 
