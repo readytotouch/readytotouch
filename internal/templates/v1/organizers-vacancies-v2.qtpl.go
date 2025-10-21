@@ -330,7 +330,7 @@ func StreamOrganizersVacanciesV2(qw422016 *qt422016.Writer,
         </div>
         <!-- /selected filters -->
 
-        <div id="search_result_list" class="search-result__list">
+        <div class="search-result__list">
           <p class="search-result-found"><span id="js-result-count" class="search-result-found__amount">`)
 	qw422016.N().D(len(vacancies))
 	qw422016.N().S(`</span> results</p>
