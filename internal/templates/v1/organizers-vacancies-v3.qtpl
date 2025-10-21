@@ -1867,7 +1867,72 @@
             </div>
             {% endcomment %}
 
+            <!-- card list -->
             <!-- TODO -->
+            <!-- /card list -->
+
+            {% comment %}
+            <!-- Pagination skipped for now -->
+
+            <!-- search footer -->
+            <footer class="search-result__footer">
+              <div class="search-result__footer-action-list">
+                <button class="button button--bordered-black-transparent" type="button">More</button>
+                <button class="button button--bordered-gray" type="button">Show all (+196)</button>
+              </div>
+
+              <!-- pagination -->
+              <nav class="pagination search-result__pagination">
+                <a class="pagination__button pagination__button--prev" href="javascript:" aria-label="arrow left">
+                  <img
+                    class="pagination__icon pagination__icon--prev"
+                    width="12"
+                    height="12"
+                    src="/assets/images/pages/common/double-left.svg"
+                    alt="arrow left"
+                  />
+                </a>
+                <a class="pagination__button pagination__button--prev" href="javascript:" aria-label="arrow left">
+                  <img
+                    class="pagination__icon pagination__icon--prev"
+                    width="14"
+                    height="14"
+                    src="/assets/images/pages/common/left.svg"
+                    alt="arrow left"
+                  />
+                </a>
+                <a class="pagination__item pagination__item--active" href="javascript:">1</a>
+                <a class="pagination__item" href="javascript:">2</a>
+                <a class="pagination__item" href="javascript:">3</a>
+                <a class="pagination__item" href="javascript:">4</a>
+                <a class="pagination__item pagination__item--hidden" href="javascript:">5</a>
+                <span class="pagination__item pagination__item--hidden">...</span>
+                <a class="pagination__item pagination__item--hidden" href="javascript:">9</a>
+                <a class="pagination__button pagination__button--prev" href="javascript:" aria-label="arrow left">
+                  <img
+                    class="pagination__icon pagination__icon--prev"
+                    width="14"
+                    height="14"
+                    src="/assets/images/pages/common/right.svg"
+                    alt="arrow left"
+                  />
+                </a>
+                <a class="pagination__button pagination__button--next" href="javascript:" aria-label="arrow right">
+                  <img
+                    class="pagination__icon pagination__icon--next"
+                    width="12"
+                    height="12"
+                    src="/assets/images/pages/common/double-left.svg"
+                    alt="arrow right"
+                  />
+                </a>
+              </nav>
+              <!-- /pagination -->
+
+            </footer>
+            <!-- /search footer -->
+
+            {% endcomment %}
           </div>
         </div>
       </div>
