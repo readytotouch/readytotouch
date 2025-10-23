@@ -5827,7 +5827,7 @@ func companies19Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4306851124/",
 							Location:             "Palo Alto, CA",
-							Date:                 mustDate("2025-09-28"),
+							Date:                 mustDate("2025-10-19", "2025-09-28"),
 							WithSalary:           true, // $180k/yr - $440k/yr
 							Remote:               false,
 						},

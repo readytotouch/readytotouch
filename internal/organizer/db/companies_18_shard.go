@@ -1984,6 +1984,16 @@ func companies18Shard() []domain.CompanyProfile {
 							WithSalary:           true,
 							Remote:               false,
 						},
+						{
+							Title:                "Software Engineer III – Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4317329718/",
+							Location:             "Bengaluru, Karnataka, India",
+							Date:                 mustDate("2025-10-21"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig: {
