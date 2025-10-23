@@ -2160,6 +2160,16 @@ func companies20Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Middle Golang Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4313386241/",
+							Location:             "Chişinău, Chișinău, Moldova",
+							Date:                 mustDate("2025-10-18"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
@@ -2466,7 +2476,18 @@ func companies20Shard() []domain.CompanyProfile {
 				},
 				domain.Rust: {
 					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Staff Software Engineer (Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4312455087/",
+							Location:             "Warsaw, Mazowieckie, Poland",
+							Date:                 mustDate("2025-10-17"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
 				},
 				domain.Zig: {
 					GitHubRepositoriesCount: 0,
@@ -4119,6 +4140,16 @@ func companies20Shard() []domain.CompanyProfile {
 							Location:             "Luxembourg, Luxembourg, Luxembourg",
 							Date:                 mustDate("2025-10-01", "2025-09-09"),
 							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Software Engineer (Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4297662626/",
+							Location:             "Boulder, CO",
+							Date:                 mustDate("2025-10-22"),
+							WithSalary:           true, // $130.5k/yr - $171k/yr
 							Remote:               false,
 						},
 					},

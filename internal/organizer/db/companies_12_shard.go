@@ -894,7 +894,7 @@ func companies12Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4282248862/",
 							Location:             "Bangkok, Bangkok City, Thailand",
-							Date:                 mustDate("2025-09-04"),
+							Date:                 mustDate("2025-10-18", "2025-09-04"),
 							WithSalary:           false,
 							Remote:               false,
 						},

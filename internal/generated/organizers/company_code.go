@@ -1226,6 +1226,7 @@ var (
 		"centra-commerce":                     1226, // Centra
 		"lifemote-networks":                   1227, // Lifemote
 		"chilipiper":                          1228, // Chili Piper
+		"openvpn":                             1229, // OpenVPN Inc.
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 
