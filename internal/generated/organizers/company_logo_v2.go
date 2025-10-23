@@ -747,6 +747,7 @@ var (
 		"openprovider":                        "",
 		"opensignal":                          "opensignal.png",
 		"opentext":                            "opentext.jpeg",
+		"openvpn":                             "",
 		"openwebhq":                           "",
 		"openx":                               "",
 		"operantai":                           "",
