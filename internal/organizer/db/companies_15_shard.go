@@ -2793,7 +2793,7 @@ func companies15Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4203428166/",
 							Location:             "London, England, United Kingdom",
-							Date:                 mustDate("2025-09-27", "2025-09-06", "2025-08-15", "2025-07-24", "2025-07-03", "2025-06-13"),
+							Date:                 mustDate("2025-10-19", "2025-09-27", "2025-09-06", "2025-08-15", "2025-07-24", "2025-07-03", "2025-06-13"),
 							WithSalary:           false,
 							Remote:               true,
 						},

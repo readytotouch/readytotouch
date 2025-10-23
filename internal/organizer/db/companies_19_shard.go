@@ -5258,6 +5258,16 @@ func companies19Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Back-End Software Engineer (Elixir)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4315504772/",
+							Location:             "United States",
+							Date:                 mustDate("2025-10-17"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Clojure: {
