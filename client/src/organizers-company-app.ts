@@ -71,7 +71,7 @@ $companies.forEach(function ($company: HTMLElement) {
 });
 
 function renderViewsStats(data: Array<TimeCountStats>) {
-    render(document.querySelector(".js-chart-views-statistics"), 'Views', "#5484FF", data);
+    render(document.querySelector(".js-chart-views-statistics"), "Views", "#5484FF", data);
 }
 
 function render($element: Element, name, color: string, data: Array<TimeCountStats>) {
