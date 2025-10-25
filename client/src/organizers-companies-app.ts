@@ -20,6 +20,7 @@ import {renderSelected} from "./framework/selected_criteria";
 import {firstQuerySelector} from "./framework/query_selector";
 import {setStateByURLMapper} from "./framework/set_state_by_url";
 import {toEnter} from "./framework/enter";
+import {responsiveHeaderProfileWidget} from "./responsive-header-profile-widget";
 
 function markCompanyFavorite(companyId: number, favorite: boolean, callback: () => void) {
     fetch(`/api/v1/companies/${companyId}/favorite.json`, {
@@ -370,3 +371,5 @@ function search() {
 }
 
 updatePageState();
+
+responsiveHeaderProfileWidget();

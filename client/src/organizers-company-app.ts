@@ -2,6 +2,7 @@ import {organizersWelcome} from "./welcome";
 import {TimeCountStats} from "./domain";
 import apexchartsCommonOptions from "./apexcharts-common-options";
 import {formatDay} from "./format";
+import {responsiveHeaderProfileWidget} from "./responsive-header-profile-widget";
 
 function markCompanyFavorite(companyId: number, favorite: boolean, callback: () => void) {
     fetch(`/api/v1/companies/${companyId}/favorite.json`, {
@@ -113,3 +114,5 @@ $vacancies.forEach(function ($vacancy: HTMLElement) {
         });
     });
 });
+
+responsiveHeaderProfileWidget();
