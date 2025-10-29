@@ -21,6 +21,7 @@ import {firstQuerySelector} from "./framework/query_selector";
 import {setStateByURLMapper} from "./framework/set_state_by_url";
 import {toEnter} from "./framework/enter";
 import {responsiveHeaderProfileWidget} from "./responsive-header-profile-widget";
+import {githubStarsWidget} from "./github-stars-widget";
 
 function markVacancyFavorite(vacancyId: number, favorite: boolean, callback: () => void) {
     fetch(`/api/v1/vacancies/${vacancyId}/favorite.json`, {
@@ -363,3 +364,5 @@ function search() {
 updatePageState();
 
 responsiveHeaderProfileWidget();
+
+githubStarsWidget();

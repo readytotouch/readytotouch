@@ -154,22 +154,28 @@
           </div>
           <figcaption class="company-card__header-caption">
             <h1 class="company-card__headline vacancy__link">{%s company.Name %}</h1>
+            {% comment %}
+            <!-- TODO Location -->
             <p class="company-card__header-caption-text">
-              <img class="company-card__header-caption-icon"
-                   alt="marker"
-                   width="12"
-                   height="12"
-                   src="/assets/images/pages/organizer/marker.svg"
-              >Country, City (Full Remote) <!-- TODO -->
+              <img
+                class="company-card__header-caption-icon"
+                alt="marker"
+                width="12"
+                height="12"
+                src="/assets/images/pages/organizer/marker.svg"
+              />Country, City (Full Remote)
             </p>
+            <!-- TODO Date -->
             <p class="company-card__header-caption-text">
-              <img class="company-card__header-caption-icon"
-                   alt="briefcase"
-                   width="12"
-                   height="12"
-                   src="/assets/images/pages/organizer/briefcase.svg"
-              >Latest job posting: 12/31/2024 <!-- TODO -->
+              <img
+                class="company-card__header-caption-icon"
+                alt="briefcase"
+                width="12"
+                height="12"
+                src="/assets/images/pages/organizer/briefcase.svg"
+              />Latest job posting: 12/31/2024
             </p>
+            {% endcomment %}
           </figcaption>
         </figure>
         <div class="company-card__top-links">
@@ -908,6 +914,45 @@
 
               <button title="Hide vacancy" class="button-group__item button-group__item-sloth card__action-button-sloth"></button>
             </aside>
+
+            <figure class="card__header card__header--organizer">
+              <div class="card__logo-overlay">
+                {% comment %}
+                <!-- TODO logo -->
+                <img
+                  class="card__logo"
+                  alt="ReadyToTouch logo"
+                  src="/assets/images/pages/vacancy/ready_to_touch_logo.svg"
+                />
+                {% endcomment %}
+              </div>
+              <figcaption class="card__header-caption">
+                <a href="/v/{%dl vacancy.ID %}" target="_blank" class="card__headline">{%s vacancy.Title %}</a>
+                <a href="/{%s organizerFeature.Organizer.Alias %}/companies/{%s vacancy.Company.Alias %}" class="card__sub-headline">{%s vacancy.Company.Name %}</a>
+                {% comment %}
+                <!-- TODO Location -->
+                <p class="card__header-caption-text">
+                  <img
+                    class="card__header-caption-icon"
+                    alt="marker"
+                    width="12"
+                    height="12"
+                    src="/assets/images/pages/organizer/marker.svg"
+                  />Country, City (Full Remote)
+                </p>
+                <!-- TODO Salary -->
+                <p class="card__header-caption-text">
+                  <img
+                    class="card__header-caption-icon"
+                    alt="briefcase"
+                    width="12"
+                    height="12"
+                    src="/assets/images/pages/vacancy/credit-card.svg"
+                  />$25/hour
+                </p>
+                {% endcomment %}
+              </figcaption>
+            </figure>
 
             <p class="card__text card__text--organizer">{%s vacancy.ShortDescription %}</p>
 
