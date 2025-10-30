@@ -2935,8 +2935,8 @@ func companies09Shard() []domain.CompanyProfile {
 		},
 
 		{
-			ID:      0,  // system
-			Type:    "", // system
+			ID:      0,                           // system
+			Type:    domain.CompanyTypeOutsource, // system
 			Name:    "Cheesecake Labs",
 			Website: "https://cheesecakelabs.com/",
 			Careers: "https://cheesecakelabs.com/careers/",
@@ -2992,7 +2992,21 @@ func companies09Shard() []domain.CompanyProfile {
 						},
 					},
 				},
-				domain.Rust:    {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer Backend (Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4332315503/",
+							Location:             "Brazil",
+							Date:                 mustDate("2025-10-28"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},
@@ -3000,6 +3014,7 @@ func companies09Shard() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			Ignore:           true, // Outsource
 		},
 
 		{

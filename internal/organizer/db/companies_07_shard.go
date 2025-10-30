@@ -4003,6 +4003,16 @@ func companies07Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $182k/yr - $260k/yr
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Staff Rust Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4332901018/",
+							Location:             "San Jose, CA",
+							Date:                 mustDate("2025-10-29"),
+							WithSalary:           true, // $154k/yr - $220k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig:     {},
