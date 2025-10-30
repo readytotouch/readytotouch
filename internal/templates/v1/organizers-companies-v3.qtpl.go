@@ -568,8 +568,8 @@ func StreamOrganizersCompaniesV3(qw422016 *qt422016.Writer,
                 </div>
 
                 <div class="card__info-group">
-                  <button type="button" class="button button--small button--black card__info-group-button">
-                    <span class="card__info-group-button-text">Show more info</span>
+                  <button type="button" class="button button--small button--black card__info-group-button js-mobile-company-show-more-info-button">
+                    <span class="card__info-group-button-text js-toggle-text">Show more info</span>
                     <img
                       class="card__info-group-button-image"
                       src="/assets/images/pages/common/double-arrow-down.svg"
