@@ -2246,6 +2246,16 @@ func companies16Shard() []domain.CompanyProfile {
 							WithSalary:           true, // £60k/yr - £80k/yr
 							Remote:               false,
 						},
+						{
+							Title:                "Go Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4319259257/",
+							Location:             "London Area, United Kingdom",
+							Date:                 mustDate("2025-10-29"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -4307,7 +4317,21 @@ func companies16Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			Languages: domain.Languages{
-				domain.Go: {},
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Go Engineer",
+							ShortDescription:     "Digital Assets",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4318022178/",
+							Location:             "Amsterdam, North Holland, Netherlands",
+							Date:                 mustDate("2025-10-28"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
 				domain.Rust: {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
