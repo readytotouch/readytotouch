@@ -3874,6 +3874,16 @@ func companies18Shard() []domain.CompanyProfile {
 							WithSalary:           true,
 							Remote:               true,
 						},
+						{
+							Title:                "Rust Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4331456289/",
+							Location:             "Germany",
+							Date:                 mustDate("2025-10-30"),
+							WithSalary:           true, // €50k/yr - €70k/yr
+							Remote:               true,
+						},
 					},
 				},
 				domain.Zig: {

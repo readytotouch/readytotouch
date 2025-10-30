@@ -3102,7 +3102,7 @@ func companies13Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4301541466/",
 							Location:             "Fort Collins, CO",
-							Date:                 mustDate("2025-10-08", "2025-09-16"),
+							Date:                 mustDate("2025-10-30", "2025-10-08", "2025-09-16"),
 							WithSalary:           true, // $142.8k/yr - $214.2k/yr
 							Remote:               false,
 						},

@@ -3036,7 +3036,7 @@ func companies08Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4275258984/",
 							Location:             "São Paulo, Brazil",
-							Date:                 mustDate("2025-10-08", "2025-09-06", "2025-08-15"),
+							Date:                 mustDate("2025-10-30", "2025-10-08", "2025-09-06", "2025-08-15"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -3450,7 +3450,7 @@ func companies08Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4299392791/",
 							Location:             "Cyprus",
-							Date:                 mustDate("2025-10-05"),
+							Date:                 mustDate("2025-10-27", "2025-10-05"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -4207,6 +4207,26 @@ func companies08Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $60/hr - $75/hr
 							Remote:               false,
 						},
+						{
+							Title:                "Embedded Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "Go, Rust",
+							URL:                  "https://www.linkedin.com/jobs/view/4319864041/",
+							Location:             "Palo Alto, CA",
+							Date:                 mustDate("2025-10-30"),
+							WithSalary:           true, // $85/hr - $90/hr
+							Remote:               false,
+						},
+						{
+							Title:                "Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4318923793/",
+							Location:             "Palo Alto, CA",
+							Date:                 mustDate("2025-10-29"),
+							WithSalary:           true, // $85/hr - $90/hr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
@@ -4219,6 +4239,16 @@ func companies08Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4181584928/",
 							Date:                 mustDate("2025-03-13"),
 							WithSalary:           true, // $75 - $85 per hours
+							Remote:               false,
+						},
+						{
+							Title:                "Embedded Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "Go, Rust",
+							URL:                  "https://www.linkedin.com/jobs/view/4319864041/",
+							Location:             "Palo Alto, CA",
+							Date:                 mustDate("2025-10-30"),
+							WithSalary:           true, // $85/hr - $90/hr
 							Remote:               false,
 						},
 					},
