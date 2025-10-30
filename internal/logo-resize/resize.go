@@ -159,4 +159,3 @@ func Resize72x72(inputPath string, outputPath string) error {
 
 	return nil
 }
-
