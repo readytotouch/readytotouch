@@ -116,17 +116,20 @@
         {% endcomment %}
         <img class="search__icon" alt="Search icon" width="20" height="20" src="/assets/images/pages/common/search.svg" />
       </div>
-      {% comment %}
-      <!-- TODO this section -->
-      <button type="button" class="mobile-filter js-mobile-filter">
+      <button type="button" class="mobile-filter js-mobile-open-filter-container-button">
         <img
           src="/assets/images/pages/common/filter.svg"
           alt="Filter icon"
           width="16"
           height="16"
         />
+        {% comment %}
+        <!-- TODO count -->
         <span class="mobile-filter__counter">27</span>
+        {% endcomment %}
       </button>
+      {% comment %}
+      <!-- TODO sorter -->
       <div class="sorter sorter--desktop js-sorter">
         <button type="button" class="sorter__title js-sorter-toggle">
           <span class="sorter__title-text js-sorter-title-text">Newest first</span>
@@ -157,12 +160,12 @@
     <div class="container">
       <div class="search-result__wrapper">
         <!-- filters -->
-        <aside class="search-result__filters">
+        <aside class="search-result__filters js-filter-container">
           <div class="search-result__filter-group search-result__filter-group--wide">
             <div class="search-result__filter-header">
               <h2 class="search-result__filter-headline">Filters:</h2>
-              <button id="js-criteria-reset" type="button" class="button button--light-link search-result__filter-headline-reset" style="visibility: hidden;">Reset all</button>
-              <button type="button" class="button button--light-link search-result__filter-headline-reset-mobile js-filter-headline-reset-mobile">
+              <button id="js-criteria-reset" type="button" class="button button--light-link search-result__filter-headline-reset js-criteria-reset" style="visibility: hidden;">Reset all</button>
+              <button type="button" class="button button--light-link search-result__filter-headline-reset-mobile js-mobile-close-filter-container-button">
                 <img src="/assets/images/pages/common/cross-thin.svg" alt="cross icon" width="24" height="24">
               </button>
             </div>
@@ -1822,8 +1825,8 @@
 
             </div>
             <footer class="search-result__filter-footer">
-              <button type="button" class="button button--light-link search-result__filter-footer-button">Reset all</button>
-              <button type="button" class="button button--black button--small">Apply</button>
+              <button type="button" class="button button--light-link search-result__filter-footer-button js-criteria-reset">Reset all</button>
+              <button type="button" class="button button--black button--small js-mobile-close-filter-container-button">Apply</button>
             </footer>
           </div>
         </aside>
@@ -1905,14 +1908,13 @@
 
                 <figure class="card__header">
                   <div class="card__logo-overlay">
-                    {% comment %}
-                    <!-- TODO square logo -->
+                    {% if company.Logo.V2 != "" %}
                     <img
                       class="card__logo"
                       alt="{%s company.Name %} logo"
-                      src="/assets/images/pages/organizer/logos/google.svg"
+                      src="{%s logo72x72(company.Logo) %}"
                     />
-                    {% endcomment %}
+                    {% endif %}
                   </div>
                   <figcaption class="card__header-caption">
                     <a href="{%s organizerFeature.Path %}/{%s company.LinkedInProfile.Alias %}" class="card__headline vacancy__link">{%s company.Name %}</a>

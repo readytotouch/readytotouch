@@ -170,7 +170,7 @@ func streamorganizersHeaderProfileV3(qw422016 *qt422016.Writer, profiles []Socia
       <a href="/logout" class="modal-profile__button">Log out</a>
     </div>
   </div>
-  <button type="button" class="button button--black header__profile-button-log-out">Log out</button>
+  <a href="/logout" class="button button--black header__profile-button-log-out">Log out</a>
 </div>
 `)
 }

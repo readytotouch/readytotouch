@@ -2,6091 +2,7309 @@
   {
     "alias": "1global",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "1nce",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "1password",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "1touch-io",
     "source": "1touch-io-200x200.jpeg",
-    "destination": "1touch-io.jpeg"
+    "destination": "1touch-io.jpeg",
+    "destination_72x72": "1touch-io.jpeg"
   },
   {
     "alias": "3085253",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "4128",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "815488",
     "source": "hollandandbarrett-200x200.jpeg",
-    "destination": "815488.jpeg"
+    "destination": "815488.jpeg",
+    "destination_72x72": "815488.jpeg"
   },
   {
     "alias": "90poe",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "ab-tasty",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "abb",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "abbott-",
     "source": "abbott-180x180.png",
-    "destination": "abbott-.png"
+    "destination": "abbott-.png",
+    "destination_72x72": "abbott-.png"
   },
   {
     "alias": "abc-fitness",
     "source": "abc-fitness-463x463.webp",
-    "destination": "abc-fitness.png"
+    "destination": "abc-fitness.png",
+    "destination_72x72": "abc-fitness.png"
   },
   {
     "alias": "abnormalsecurity",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "about-you",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "accessowl",
     "source": "accessowl-180x180.png",
-    "destination": "accessowl.png"
+    "destination": "accessowl.png",
+    "destination_72x72": "accessowl.png"
   },
   {
     "alias": "acronis",
     "source": "acronis-180x180.png",
-    "destination": "acronis.png"
+    "destination": "acronis.png",
+    "destination_72x72": "acronis.png"
   },
   {
     "alias": "activeprospect",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "adform",
     "source": "adform-180x180.png",
-    "destination": "adform.png"
+    "destination": "adform.png",
+    "destination_72x72": "adform.png"
   },
   {
     "alias": "adjoe",
     "source": "adjoe-180x180.png",
-    "destination": "adjoe.png"
+    "destination": "adjoe.png",
+    "destination_72x72": "adjoe.png"
   },
   {
     "alias": "admiral-money",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "adobe",
     "source": "adobe-200x200.jpeg",
-    "destination": "adobe.jpeg"
+    "destination": "adobe.jpeg",
+    "destination_72x72": "adobe.jpeg"
   },
   {
     "alias": "adtran",
     "source": "adtran-114x114.png",
-    "destination": "adtran.png"
+    "destination": "adtran.png",
+    "destination_72x72": "adtran.png"
   },
   {
     "alias": "adverty",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "adyen",
     "source": "adyen-200x200.jpeg",
-    "destination": "adyen.jpeg"
+    "destination": "adyen.jpeg",
+    "destination_72x72": "adyen.jpeg"
   },
   {
     "alias": "aescape",
     "source": "aescape-180x180.png",
-    "destination": "aescape.png"
+    "destination": "aescape.png",
+    "destination_72x72": "aescape.png"
   },
   {
     "alias": "affinidi",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "affinipay",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "agentero",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "aikido-security",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "airahome",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "airfocus",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "airslate",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "airspace-inc",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "airspacelink",
     "source": "airspacelink-200x200.jpeg",
-    "destination": "airspacelink.jpeg"
+    "destination": "airspacelink.jpeg",
+    "destination_72x72": "airspacelink.jpeg"
   },
   {
     "alias": "airudder",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "aiven",
     "source": "aiven-64x64.png",
-    "destination": "aiven.png"
+    "destination": "aiven.png",
+    "destination_72x72": "aiven.png"
   },
   {
     "alias": "akamai-technologies",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "akka-io",
     "source": "akka-io-200x200.jpeg",
-    "destination": "akka-io.jpeg"
+    "destination": "akka-io.jpeg",
+    "destination_72x72": "akka-io.jpeg"
   },
   {
     "alias": "aleph-alpha",
     "source": "aleph-alpha-200x200.jpeg",
-    "destination": "aleph-alpha.jpeg"
+    "destination": "aleph-alpha.jpeg",
+    "destination_72x72": "aleph-alpha.jpeg"
   },
   {
     "alias": "alertmedia",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "algolia",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "allocator-one",
     "source": "allocator-one-200x200.jpeg",
-    "destination": "allocator-one.jpeg"
+    "destination": "allocator-one.jpeg",
+    "destination_72x72": "allocator-one.jpeg"
   },
   {
     "alias": "allpay-limited",
     "source": "allpay-limited-180x180.png",
-    "destination": "allpay-limited.png"
+    "destination": "allpay-limited.png",
+    "destination_72x72": "allpay-limited.png"
   },
   {
     "alias": "alpine-iq",
     "source": "alpine-iq-256x256.png",
-    "destination": "alpine-iq.png"
+    "destination": "alpine-iq.png",
+    "destination_72x72": "alpine-iq.png"
   },
   {
     "alias": "altair-engineering",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "altea-healthcare",
     "source": "altea-healthcare-180x180.webp",
-    "destination": "altea-healthcare.png"
+    "destination": "altea-healthcare.png",
+    "destination_72x72": "altea-healthcare.png"
   },
   {
     "alias": "altenar",
     "source": "altenar-180x180.png",
-    "destination": "altenar.png"
+    "destination": "altenar.png",
+    "destination_72x72": "altenar.png"
   },
   {
     "alias": "alterante",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "amartha",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "amazon",
     "source": "amazon-200x200.jpeg",
-    "destination": "amazon.jpeg"
+    "destination": "amazon.jpeg",
+    "destination_72x72": "amazon.jpeg"
   },
   {
     "alias": "american-airlines",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "american-express",
     "source": "american-express-200x200.jpeg",
-    "destination": "american-express.jpeg"
+    "destination": "american-express.jpeg",
+    "destination_72x72": "american-express.jpeg"
   },
   {
     "alias": "amoamoamo",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "amplifiloyalty",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "amuse.io",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "anaplan",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "andurilindustries",
     "source": "andurilindustries-200x200.jpeg",
-    "destination": "andurilindustries.jpeg"
+    "destination": "andurilindustries.jpeg",
+    "destination_72x72": "andurilindustries.jpeg"
   },
   {
     "alias": "angel-studios-page",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "anjuna-security",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "apifonica",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "apollo-graphql",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "appear-net",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "appflowy",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "applied-research-solutions",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "applied-systems",
     "source": "applied-systems-200x200.jpeg",
-    "destination": "applied-systems.jpeg"
+    "destination": "applied-systems.jpeg",
+    "destination_72x72": "applied-systems.jpeg"
   },
   {
     "alias": "applied-systems-canada",
     "source": "applied-systems-200x200.jpeg",
-    "destination": "applied-systems-canada.jpeg"
+    "destination": "applied-systems-canada.jpeg",
+    "destination_72x72": "applied-systems-canada.jpeg"
   },
   {
     "alias": "appodeal",
     "source": "appodeal-200x200.jpeg",
-    "destination": "appodeal.jpeg"
+    "destination": "appodeal.jpeg",
+    "destination_72x72": "appodeal.jpeg"
   },
   {
     "alias": "appotapay",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "appzen",
     "source": "appzen-200x200.jpeg",
-    "destination": "appzen.jpeg"
+    "destination": "appzen.jpeg",
+    "destination_72x72": "appzen.jpeg"
   },
   {
     "alias": "aquasecteam",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "arc-risk-analytics",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "archieapp",
     "source": "archieapp-96x96.png",
-    "destination": "archieapp.png"
+    "destination": "archieapp.png",
+    "destination_72x72": "archieapp.png"
   },
   {
     "alias": "arcticwolf",
     "source": "arcticwolf-200x200.png",
-    "destination": "arcticwolf.png"
+    "destination": "arcticwolf.png",
+    "destination_72x72": "arcticwolf.png"
   },
   {
     "alias": "arculus-a-jungheinrich-company",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "arenko-cleantech",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "arfdlaw",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "argela-technologies",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "arista-networks-inc",
     "source": "arista-200x200.jpeg",
-    "destination": "arista-networks-inc.jpeg"
+    "destination": "arista-networks-inc.jpeg",
+    "destination_72x72": "arista-networks-inc.jpeg"
   },
   {
     "alias": "arm",
     "source": "arm-200x200.jpeg",
-    "destination": "arm.jpeg"
+    "destination": "arm.jpeg",
+    "destination_72x72": "arm.jpeg"
   },
   {
     "alias": "armadaai",
     "source": "armadaai-200x200.jpeg",
-    "destination": "armadaai.jpeg"
+    "destination": "armadaai.jpeg",
+    "destination_72x72": "armadaai.jpeg"
   },
   {
     "alias": "artificiallabs",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "ascendion",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "ashley-furniture-industries",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "aspire-software",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "assembledhq",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "assertive-yield",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "asset-reality",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "atmail",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "atom-bank",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "atomicskiing",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "auctiontechnologygroup",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "audibene",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "audigent",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "australian-broadcasting-corporation",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "autodesk",
     "source": "autodesk-180x180.png",
-    "destination": "autodesk.png"
+    "destination": "autodesk.png",
+    "destination_72x72": "autodesk.png"
   },
   {
     "alias": "autodoc",
     "source": "autodoc-180x180.png",
-    "destination": "autodoc.png"
+    "destination": "autodoc.png",
+    "destination_72x72": "autodoc.png"
   },
   {
     "alias": "automox",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "autostoresystem",
     "source": "autostoresystem-256x256.png",
-    "destination": "autostoresystem.png"
+    "destination": "autostoresystem.png",
+    "destination_72x72": "autostoresystem.png"
   },
   {
     "alias": "avantstay",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "avathonai",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "avetta",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "avey-ai",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "aviatrix-systems",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "aviva-plc",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "axis-communications",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "axpo-group",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "ayloservices",
     "source": "aylo-200x200.jpeg",
-    "destination": "ayloservices.jpeg"
+    "destination": "ayloservices.jpeg",
+    "destination_72x72": "ayloservices.jpeg"
   },
   {
     "alias": "ayoconnect",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "azberry-bv",
     "source": "azberry-200x200.jpeg",
-    "destination": "azberry-bv.jpeg"
+    "destination": "azberry-bv.jpeg",
+    "destination_72x72": "azberry-bv.jpeg"
   },
   {
     "alias": "aziontech",
     "source": "aziontech-200x200.jpeg",
-    "destination": "aziontech.jpeg"
+    "destination": "aziontech.jpeg",
+    "destination_72x72": "aziontech.jpeg"
   },
   {
     "alias": "bakerhughes",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "bankaktiebolaget-nordiska",
     "source": "bankaktiebolaget-nordiska-180x180.png",
-    "destination": "bankaktiebolaget-nordiska.png"
+    "destination": "bankaktiebolaget-nordiska.png",
+    "destination_72x72": "bankaktiebolaget-nordiska.png"
   },
   {
     "alias": "banquenationaleducanada",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "barracuda-networks",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "batutaespm",
     "source": "batuta-200x200.jpeg",
-    "destination": "batutaespm.jpeg"
+    "destination": "batutaespm.jpeg",
+    "destination_72x72": "batutaespm.jpeg"
   },
   {
     "alias": "bauhaus-deutschland",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "bayer",
     "source": "bayer-200x200.jpeg",
-    "destination": "bayer.jpeg"
+    "destination": "bayer.jpeg",
+    "destination_72x72": "bayer.jpeg"
   },
   {
     "alias": "bbraun-group",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "beat81",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "bedrock-streaming",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "bell",
     "source": "bell-200x200.jpeg",
-    "destination": "bell.jpeg"
+    "destination": "bell.jpeg",
+    "destination_72x72": "bell.jpeg"
   },
   {
     "alias": "bellroy",
     "source": "bellroy-180x180.png",
-    "destination": "bellroy.png"
+    "destination": "bellroy.png",
+    "destination_72x72": "bellroy.png"
   },
   {
     "alias": "bestowtech",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "betterme-company",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "beyond-identity-inc",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "bigabid",
     "source": "bigabid-180x180.png",
-    "destination": "bigabid.png"
+    "destination": "bigabid.png",
+    "destination_72x72": "bigabid.png"
   },
   {
     "alias": "bigblue-co",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "bigcommerce",
     "source": "bigcommerce-60x60.png",
-    "destination": "bigcommerce.png"
+    "destination": "bigcommerce.png",
+    "destination_72x72": "bigcommerce.png"
   },
   {
     "alias": "bigpayme",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "bill",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "biocatch",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "birdiecare",
     "source": "birdiecare-200x200.jpeg",
-    "destination": "birdiecare.jpeg"
+    "destination": "birdiecare.jpeg",
+    "destination_72x72": "birdiecare.jpeg"
   },
   {
     "alias": "bitaksi",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "bitfount",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "bitly",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "bitwarden1",
     "source": "bitwarden1-200x200.jpeg",
-    "destination": "bitwarden1.jpeg"
+    "destination": "bitwarden1.jpeg",
+    "destination_72x72": "bitwarden1.jpeg"
   },
   {
     "alias": "black-duck-software",
     "source": "black-duck-software-200x200.jpeg",
-    "destination": "black-duck-software.jpeg"
+    "destination": "black-duck-software.jpeg",
+    "destination_72x72": "black-duck-software.jpeg"
   },
   {
     "alias": "blackpoint",
     "source": "blackpoint-180x180.webp",
-    "destination": "blackpoint.png"
+    "destination": "blackpoint.png",
+    "destination_72x72": "blackpoint.png"
   },
   {
     "alias": "blackrock",
     "source": "blackrock-200x200.jpeg",
-    "destination": "blackrock.jpeg"
+    "destination": "blackrock.jpeg",
+    "destination_72x72": "blackrock.jpeg"
   },
   {
     "alias": "blizzard-entertainment",
     "source": "blizzard-entertainment-114x114.webp",
-    "destination": "blizzard-entertainment.png"
+    "destination": "blizzard-entertainment.png",
+    "destination_72x72": "blizzard-entertainment.png"
   },
   {
     "alias": "blockit",
     "source": "blockit-180x180.png",
-    "destination": "blockit.png"
+    "destination": "blockit.png",
+    "destination_72x72": "blockit.png"
   },
   {
     "alias": "bloomberg",
     "source": "bloomberg-200x200.jpeg",
-    "destination": "bloomberg.jpeg"
+    "destination": "bloomberg.jpeg",
+    "destination_72x72": "bloomberg.jpeg"
   },
   {
     "alias": "bloomreach",
     "source": "bloomreach-200x200.jpeg",
-    "destination": "bloomreach.jpeg"
+    "destination": "bloomreach.jpeg",
+    "destination_72x72": "bloomreach.jpeg"
   },
   {
     "alias": "blp-digital",
     "source": "blp-digital-200x200.jpeg",
-    "destination": "blp-digital.jpeg"
+    "destination": "blp-digital.jpeg",
+    "destination_72x72": "blp-digital.jpeg"
   },
   {
     "alias": "bluerivertech",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "bnp-paribas",
     "source": "bnp-paribas-200x200.jpeg",
-    "destination": "bnp-paribas.jpeg"
+    "destination": "bnp-paribas.jpeg",
+    "destination_72x72": "bnp-paribas.jpeg"
   },
   {
     "alias": "bnpparibassecuritiesservices",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "bol-com",
     "source": "bol-200x200.jpeg",
-    "destination": "bol-com.jpeg"
+    "destination": "bol-com.jpeg",
+    "destination_72x72": "bol-com.jpeg"
   },
   {
     "alias": "boodleboxai",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "booz-allen-hamilton",
     "source": "booz-allen-hamilton-96x96.png",
-    "destination": "booz-allen-hamilton.png"
+    "destination": "booz-allen-hamilton.png",
+    "destination_72x72": "booz-allen-hamilton.png"
   },
   {
     "alias": "boozt-fashion",
     "source": "boozt-fashion-192x192.png",
-    "destination": "boozt-fashion.png"
+    "destination": "boozt-fashion.png",
+    "destination_72x72": "boozt-fashion.png"
   },
   {
     "alias": "box",
     "source": "box-200x200.jpeg",
-    "destination": "box.jpeg"
+    "destination": "box.jpeg",
+    "destination_72x72": "box.jpeg"
   },
   {
     "alias": "bread-financial",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "breakroom",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "breezesocial",
     "source": "breezesocial-200x200.jpeg",
-    "destination": "breezesocial.jpeg"
+    "destination": "breezesocial.jpeg",
+    "destination_72x72": "breezesocial.jpeg"
   },
   {
     "alias": "brevo",
     "source": "brevo-200x200.jpeg",
-    "destination": "brevo.jpeg"
+    "destination": "brevo.jpeg",
+    "destination_72x72": "brevo.jpeg"
   },
   {
     "alias": "broadcom",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "btaskee",
     "source": "btaskee-200x200.jpeg",
-    "destination": "btaskee.jpeg"
+    "destination": "btaskee.jpeg",
+    "destination_72x72": "btaskee.jpeg"
   },
   {
     "alias": "buenro",
     "source": "buenro-200x200.jpeg",
-    "destination": "buenro.jpeg"
+    "destination": "buenro.jpeg",
+    "destination_72x72": "buenro.jpeg"
   },
   {
     "alias": "bufbuild",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "buildwithfern",
     "source": "buildwithfern-256x256.png",
-    "destination": "buildwithfern.png"
+    "destination": "buildwithfern.png",
+    "destination_72x72": "buildwithfern.png"
   },
   {
     "alias": "bunnynet",
     "source": "bunnynet-200x200.jpeg",
-    "destination": "bunnynet.jpeg"
+    "destination": "bunnynet.jpeg",
+    "destination_72x72": "bunnynet.jpeg"
   },
   {
     "alias": "bynder",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "cabify",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "cadmus-io",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "cake-by-vpbank",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "calibersmart",
     "source": "calibersmart-200x200.jpeg",
-    "destination": "calibersmart.jpeg"
+    "destination": "calibersmart.jpeg",
+    "destination_72x72": "calibersmart.jpeg"
   },
   {
     "alias": "campingworld",
     "source": "campingworld-200x200.jpeg",
-    "destination": "campingworld.jpeg"
+    "destination": "campingworld.jpeg",
+    "destination_72x72": "campingworld.jpeg"
   },
   {
     "alias": "canonical",
     "source": "canonical-180x180.png",
-    "destination": "canonical.png"
+    "destination": "canonical.png",
+    "destination_72x72": "canonical.png"
   },
   {
     "alias": "canva",
     "source": "canva-120x120.webp",
-    "destination": "canva.png"
+    "destination": "canva.png",
+    "destination_72x72": "canva.png"
   },
   {
     "alias": "cap-rx",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "capco",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "capital-one",
     "source": "capital-one-180x180.png",
-    "destination": "capital-one.png"
+    "destination": "capital-one.png",
+    "destination_72x72": "capital-one.png"
   },
   {
     "alias": "carecarco",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "caredotcom",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "careem",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "cars-commerce",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "cast-ai",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "castoredc",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "catiotech",
     "source": "catiotech-256x256.png",
-    "destination": "catiotech.png"
+    "destination": "catiotech.png",
+    "destination_72x72": "catiotech.png"
   },
   {
     "alias": "cava-",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "celonis",
     "source": "celonis-180x180.png",
-    "destination": "celonis.png"
+    "destination": "celonis.png",
+    "destination_72x72": "celonis.png"
   },
   {
     "alias": "centene-corporation",
     "source": "centene-200x200.jpeg",
-    "destination": "centene-corporation.jpeg"
+    "destination": "centene-corporation.jpeg",
+    "destination_72x72": "centene-corporation.jpeg"
   },
   {
     "alias": "centra-commerce",
     "source": "centra-200x200.png",
-    "destination": "centra-commerce.png"
+    "destination": "centra-commerce.png",
+    "destination_72x72": "centra-commerce.png"
   },
   {
     "alias": "centralretail",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "centrica",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "centripetal-ai",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "ceresti-health-inc.",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "chalkai",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "channable",
     "source": "channable-200x200.jpeg",
-    "destination": "channable.jpeg"
+    "destination": "channable.jpeg",
+    "destination_72x72": "channable.jpeg"
   },
   {
     "alias": "chapa-financial-technologies",
     "source": "chapa-financial-technologies-68x68.png",
-    "destination": "chapa-financial-technologies.png"
+    "destination": "chapa-financial-technologies.png",
+    "destination_72x72": "chapa-financial-technologies.png"
   },
   {
     "alias": "check-point-software-technologies",
     "source": "checkpoint-200x200.jpeg",
-    "destination": "check-point-software-technologies.jpeg"
+    "destination": "check-point-software-technologies.jpeg",
+    "destination_72x72": "check-point-software-technologies.jpeg"
   },
   {
     "alias": "checkmarx",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "checkout",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "cheesecake-labs",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "chemelex",
     "source": "chemelex-96x96.png",
-    "destination": "chemelex.png"
+    "destination": "chemelex.png",
+    "destination_72x72": "chemelex.png"
   },
   {
     "alias": "chep",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "chilipiper",
     "source": "chilipiper-256x256.png",
-    "destination": "chilipiper.png"
+    "destination": "chilipiper.png",
+    "destination_72x72": "chilipiper.png"
   },
   {
     "alias": "chime-card",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "cho-tot",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "cielara",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "ciena",
     "source": "ciena-180x180.png",
-    "destination": "ciena.png"
+    "destination": "ciena.png",
+    "destination_72x72": "ciena.png"
   },
   {
     "alias": "cimri",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "cinemo",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "circles1",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "circuithub",
     "source": "circuithub-200x200.jpeg",
-    "destination": "circuithub.jpeg"
+    "destination": "circuithub.jpeg",
+    "destination_72x72": "circuithub.jpeg"
   },
   {
     "alias": "circuitknowledge",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "cirrus-logic",
     "source": "cirrus-logic-200x200.jpeg",
-    "destination": "cirrus-logic.jpeg"
+    "destination": "cirrus-logic.jpeg",
+    "destination_72x72": "cirrus-logic.jpeg"
   },
   {
     "alias": "cisco",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "citi",
     "source": "citi-200x200.jpeg",
-    "destination": "citi.jpeg"
+    "destination": "citi.jpeg",
+    "destination_72x72": "citi.jpeg"
   },
   {
     "alias": "cj-express-group",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "claritev",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "claroty",
     "source": "claroty-180x180.png",
-    "destination": "claroty.png"
+    "destination": "claroty.png",
+    "destination_72x72": "claroty.png"
   },
   {
     "alias": "clearscore",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "clearstory-build",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "clerkinc",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "climatiq",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "clinia",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "clockwork-labs",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "cloudbees",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "cloudflare",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "cloudlinux",
     "source": "cloudlinux-180x180.png",
-    "destination": "cloudlinux.png"
+    "destination": "cloudlinux.png",
+    "destination_72x72": "cloudlinux.png"
   },
   {
     "alias": "cloudnuro",
     "source": "cloudnuro-200x200.jpeg",
-    "destination": "cloudnuro.jpeg"
+    "destination": "cloudnuro.jpeg",
+    "destination_72x72": "cloudnuro.jpeg"
   },
   {
     "alias": "cloudwalk-inc",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "cloudwick",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "cmrad",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "coalitioninc",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "cockroach-labs",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "codenotary",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "cognitedata",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "cognyte",
     "source": "cognyte-300x300.png",
-    "destination": "cognyte.png"
+    "destination": "cognyte.png",
+    "destination_72x72": "cognyte.png"
   },
   {
     "alias": "cohesity",
     "source": "cohesity-200x200.jpeg",
-    "destination": "cohesity.jpeg"
+    "destination": "cohesity.jpeg",
+    "destination_72x72": "cohesity.jpeg"
   },
   {
     "alias": "collabera",
     "source": "collabera-200x200.jpeg",
-    "destination": "collabera.jpeg"
+    "destination": "collabera.jpeg",
+    "destination_72x72": "collabera.jpeg"
   },
   {
     "alias": "collins-aerospace",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "collx",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "comcast",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "command-zero",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "commercetools",
     "source": "commercetools-180x180.png",
-    "destination": "commercetools.png"
+    "destination": "commercetools.png",
+    "destination_72x72": "commercetools.png"
   },
   {
     "alias": "commonwealthbank",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "communitydotcom",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "compassinc",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "complear",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "consortgroup",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "coralogix",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "coreweave",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "corsearchinc",
     "source": "corsearch-200x200.jpeg",
-    "destination": "corsearchinc.jpeg"
+    "destination": "corsearchinc.jpeg",
+    "destination_72x72": "corsearchinc.jpeg"
   },
   {
     "alias": "corys",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "covermymeds",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "creative-fabrica",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "creativesoftware",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "criteo",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "cross-river-bank",
     "source": "crossriver-256x256.png",
-    "destination": "cross-river-bank.png"
+    "destination": "cross-river-bank.png",
+    "destination_72x72": "cross-river-bank.png"
   },
   {
     "alias": "crowd-riff",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "crowdstrike",
     "source": "crowdstrike-200x200.jpeg",
-    "destination": "crowdstrike.jpeg"
+    "destination": "crowdstrike.jpeg",
+    "destination_72x72": "crowdstrike.jpeg"
   },
   {
     "alias": "csidedev",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "cuju-app",
     "source": "cuju-app-200x200.jpeg",
-    "destination": "cuju-app.jpeg"
+    "destination": "cuju-app.jpeg",
+    "destination_72x72": "cuju-app.jpeg"
   },
   {
     "alias": "curve-ltd",
     "source": "curve-200x200.jpeg",
-    "destination": "curve-ltd.jpeg"
+    "destination": "curve-ltd.jpeg",
+    "destination_72x72": "curve-ltd.jpeg"
   },
   {
     "alias": "customer-io",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "cv-library",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "cyber-ark-software",
     "source": "cyber-ark-software-200x200.jpeg",
-    "destination": "cyber-ark-software.jpeg"
+    "destination": "cyber-ark-software.jpeg",
+    "destination_72x72": "cyber-ark-software.jpeg"
   },
   {
     "alias": "cyberhaven",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "cybus",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "cycloid",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "cynergy-bank",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "cynet-systems",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "daedalean",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "daftcode-sp-z-o-o-",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "dailymotion",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "dailypay",
     "source": "dailypay-200x200.jpeg",
-    "destination": "dailypay.jpeg"
+    "destination": "dailypay.jpeg",
+    "destination_72x72": "dailypay.jpeg"
   },
   {
     "alias": "darktrace",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "databeaconaero",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "databento",
     "source": "databento-200x200.jpeg",
-    "destination": "databento.jpeg"
+    "destination": "databento.jpeg",
+    "destination_72x72": "databento.jpeg"
   },
   {
     "alias": "datadog",
     "source": "datadog-180x180.jpeg",
-    "destination": "datadog.jpeg"
+    "destination": "datadog.jpeg",
+    "destination_72x72": "datadog.jpeg"
   },
   {
     "alias": "datanimbusinc",
     "source": "datanimbus-200x200.jpeg",
-    "destination": "datanimbusinc.jpeg"
+    "destination": "datanimbusinc.jpeg",
+    "destination_72x72": "datanimbusinc.jpeg"
   },
   {
     "alias": "dataoncorp",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "datatroniq",
     "source": "datatroniq-152x152.png",
-    "destination": "datatroniq.png"
+    "destination": "datatroniq.png",
+    "destination_72x72": "datatroniq.png"
   },
   {
     "alias": "datazipio",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "ddn",
     "source": "ddn-200x200.jpeg",
-    "destination": "ddn.jpeg"
+    "destination": "ddn.jpeg",
+    "destination_72x72": "ddn.jpeg"
   },
   {
     "alias": "de-una",
     "source": "deuna-200x200.jpeg",
-    "destination": "de-una.jpeg"
+    "destination": "de-una.jpeg",
+    "destination_72x72": "de-una.jpeg"
   },
   {
     "alias": "dealer-tire",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "delivery-hero-se",
     "source": "delivery-hero-200x200.jpeg",
-    "destination": "delivery-hero-se.jpeg"
+    "destination": "delivery-hero-se.jpeg",
+    "destination_72x72": "delivery-hero-se.jpeg"
   },
   {
     "alias": "delltechnologies",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "deloitte",
     "source": "deloitte-200x200.jpeg",
-    "destination": "deloitte.jpeg"
+    "destination": "deloitte.jpeg",
+    "destination_72x72": "deloitte.jpeg"
   },
   {
     "alias": "demandbase",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "density-inc-",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "depixen-sw",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "deutsche-bank",
     "source": "deutsche-bank-180x180.png",
-    "destination": "deutsche-bank.png"
+    "destination": "deutsche-bank.png",
+    "destination_72x72": "deutsche-bank.png"
   },
   {
     "alias": "deutscheboerse",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "device42",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "devolutions-inc-",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "dhl",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "diabolocom",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "diagrid-inc",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "digiexams",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "digitalocean",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "discern-io",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "discord",
     "source": "discord-200x200.jpeg",
-    "destination": "discord.jpeg"
+    "destination": "discord.jpeg",
+    "destination_72x72": "discord.jpeg"
   },
   {
     "alias": "discovery-loft-inc",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "disney-entertainment",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "distribusion",
     "source": "distribusion-192x192.png",
-    "destination": "distribusion.png"
+    "destination": "distribusion.png",
+    "destination_72x72": "distribusion.png"
   },
   {
     "alias": "dittolive",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "dlocal",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "dnsfilter",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "doccla",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "docebo",
     "source": "docebo-200x200.jpeg",
-    "destination": "docebo.jpeg"
+    "destination": "docebo.jpeg",
+    "destination_72x72": "docebo.jpeg"
   },
   {
     "alias": "dochq",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "docker",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "dojo-tech",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "doodle-ag",
     "source": "doodle-180x180.png",
-    "destination": "doodle-ag.png"
+    "destination": "doodle-ag.png",
+    "destination_72x72": "doodle-ag.png"
   },
   {
     "alias": "doordash",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "dottxt",
     "source": "dottxt-180x180.png",
-    "destination": "dottxt.png"
+    "destination": "dottxt.png",
+    "destination_72x72": "dottxt.png"
   },
   {
     "alias": "dria-ai",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "driftrock",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "drivenets",
     "source": "drivenets-200x200.jpeg",
-    "destination": "drivenets.jpeg"
+    "destination": "drivenets.jpeg",
+    "destination_72x72": "drivenets.jpeg"
   },
   {
     "alias": "dronesense",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "droneshield",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "dropbox",
     "source": "dropbox-200x200.jpeg",
-    "destination": "dropbox.jpeg"
+    "destination": "dropbox.jpeg",
+    "destination_72x72": "dropbox.jpeg"
   },
   {
     "alias": "drw",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "dscout",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "dtonesolution",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "duffelhq",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "dusty-robotics",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "dyad-ai",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "dynatrace",
     "source": "dynatrace-200x200.jpeg",
-    "destination": "dynatrace.jpeg"
+    "destination": "dynatrace.jpeg",
+    "destination_72x72": "dynatrace.jpeg"
   },
   {
     "alias": "dyninno-group",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "e-food-gr",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "eachlabs",
     "source": "eachlabs-200x200.jpeg",
-    "destination": "eachlabs.jpeg"
+    "destination": "eachlabs.jpeg",
+    "destination_72x72": "eachlabs.jpeg"
   },
   {
     "alias": "easypost",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "ebay",
     "source": "ebay-200x200.jpeg",
-    "destination": "ebay.jpeg"
+    "destination": "ebay.jpeg",
+    "destination_72x72": "ebay.jpeg"
   },
   {
     "alias": "eburyfintech",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "eco-movement-charge-point-data",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "ecosia",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "edbpostgres",
     "source": "edbpostgres-200x200.jpeg",
-    "destination": "edbpostgres.jpeg"
+    "destination": "edbpostgres.jpeg",
+    "destination_72x72": "edbpostgres.jpeg"
   },
   {
     "alias": "edclub",
     "source": "edclub-200x200.jpeg",
-    "destination": "edclub.jpeg"
+    "destination": "edclub.jpeg",
+    "destination_72x72": "edclub.jpeg"
   },
   {
     "alias": "eightcap-aufx",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "elastic-co",
     "source": "elastic-192x192.png",
-    "destination": "elastic-co.png"
+    "destination": "elastic-co.png",
+    "destination_72x72": "elastic-co.png"
   },
   {
     "alias": "electronic-arts",
     "source": "electronic-arts-200x200.jpeg",
-    "destination": "electronic-arts.jpeg"
+    "destination": "electronic-arts.jpeg",
+    "destination_72x72": "electronic-arts.jpeg"
   },
   {
     "alias": "eltropy",
     "source": "eltropy-200x200.jpeg",
-    "destination": "eltropy.jpeg"
+    "destination": "eltropy.jpeg",
+    "destination_72x72": "eltropy.jpeg"
   },
   {
     "alias": "embark-studios-ab",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "embecosm",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "emerchantpay-ltd",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "emitwise",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "emnify",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "engageware",
     "source": "engageware-180x180.webp",
-    "destination": "engageware.png"
+    "destination": "engageware.png",
+    "destination_72x72": "engageware.png"
   },
   {
     "alias": "enova-international",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "entro-security-non-human-identities",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "entrust",
     "source": "entrust-200x200.jpeg",
-    "destination": "entrust.jpeg"
+    "destination": "entrust.jpeg",
+    "destination_72x72": "entrust.jpeg"
   },
   {
     "alias": "epic-games",
     "source": "epic-games-200x200.jpeg",
-    "destination": "epic-games.jpeg"
+    "destination": "epic-games.jpeg",
+    "destination_72x72": "epic-games.jpeg"
   },
   {
     "alias": "ericsson",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "eset",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "eskimi",
     "source": "eskimi-200x200.jpeg",
-    "destination": "eskimi.jpeg"
+    "destination": "eskimi.jpeg",
+    "destination_72x72": "eskimi.jpeg"
   },
   {
     "alias": "esri",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "essity",
     "source": "essity-200x200.jpeg",
-    "destination": "essity.jpeg"
+    "destination": "essity.jpeg",
+    "destination_72x72": "essity.jpeg"
   },
   {
     "alias": "etsy",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "eunasolutions",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "evana",
     "source": "evana-180x180.png",
-    "destination": "evana.png"
+    "destination": "evana.png",
+    "destination_72x72": "evana.png"
   },
   {
     "alias": "event-inc",
     "source": "event-inc-192x192.png",
-    "destination": "event-inc.png"
+    "destination": "event-inc.png",
+    "destination_72x72": "event-inc.png"
   },
   {
     "alias": "evercharge",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "evident-id-inc.",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "evolve-vacation-rental",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "exabeam",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "exasol-ag",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "expedia",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "experian",
     "source": "experian-200x200.jpeg",
-    "destination": "experian.jpeg"
+    "destination": "experian.jpeg",
+    "destination_72x72": "experian.jpeg"
   },
   {
     "alias": "expressvpn",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "extreme-networks",
     "source": "extreme-networks-200x200.jpeg",
-    "destination": "extreme-networks.jpeg"
+    "destination": "extreme-networks.jpeg",
+    "destination_72x72": "extreme-networks.jpeg"
   },
   {
     "alias": "f5",
     "source": "f5-180x180.png",
-    "destination": "f5.png"
+    "destination": "f5.png",
+    "destination_72x72": "f5.png"
   },
   {
     "alias": "facilitapay",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "factset",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "fairmoney",
     "source": "fairmoney-256x256.png",
-    "destination": "fairmoney.png"
+    "destination": "fairmoney.png",
+    "destination_72x72": "fairmoney.png"
   },
   {
     "alias": "famedly",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "fanatics-inc-",
     "source": "fanaticsinc-200x200.jpeg",
-    "destination": "fanatics-inc-.jpeg"
+    "destination": "fanatics-inc-.jpeg",
+    "destination_72x72": "fanatics-inc-.jpeg"
   },
   {
     "alias": "fastly",
     "source": "fastly-200x200.jpeg",
-    "destination": "fastly.jpeg"
+    "destination": "fastly.jpeg",
+    "destination_72x72": "fastly.jpeg"
   },
   {
     "alias": "fathom-io",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "ferretdb",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "fetcherr-ltd",
     "source": "fetcherr-ltd-256x256.png",
-    "destination": "fetcherr-ltd.png"
+    "destination": "fetcherr-ltd.png",
+    "destination_72x72": "fetcherr-ltd.png"
   },
   {
     "alias": "fico",
     "source": "fico-180x180.png",
-    "destination": "fico.png"
+    "destination": "fico.png",
+    "destination_72x72": "fico.png"
   },
   {
     "alias": "fidelity-investments",
     "source": "fidelity-investments-200x200.jpeg",
-    "destination": "fidelity-investments.jpeg"
+    "destination": "fidelity-investments.jpeg",
+    "destination_72x72": "fidelity-investments.jpeg"
   },
   {
     "alias": "figma",
     "source": "figma-200x200.jpeg",
-    "destination": "figma.jpeg"
+    "destination": "figma.jpeg",
+    "destination_72x72": "figma.jpeg"
   },
   {
     "alias": "fincompare",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "fingerprintjs",
     "source": "fingerprint-200x200.jpeg",
-    "destination": "fingerprintjs.jpeg"
+    "destination": "fingerprintjs.jpeg",
+    "destination_72x72": "fingerprintjs.jpeg"
   },
   {
     "alias": "firebolt",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "fireworkhq",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "firstbase-io",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "firstbatchai",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "fis",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "fiserv",
     "source": "fiserv-200x200.jpeg",
-    "destination": "fiserv.jpeg"
+    "destination": "fiserv.jpeg",
+    "destination_72x72": "fiserv.jpeg"
   },
   {
     "alias": "fiskaly",
     "source": "fiskaly-200x200.jpeg",
-    "destination": "fiskaly.jpeg"
+    "destination": "fiskaly.jpeg",
+    "destination_72x72": "fiskaly.jpeg"
   },
   {
     "alias": "flatpeak",
     "source": "flatpeak-200x200.jpeg",
-    "destination": "flatpeak.jpeg"
+    "destination": "flatpeak.jpeg",
+    "destination_72x72": "flatpeak.jpeg"
   },
   {
     "alias": "flexaihq",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "flexera",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "flextrade",
     "source": "flextrade-180x180.png",
-    "destination": "flextrade.png"
+    "destination": "flextrade.png",
+    "destination_72x72": "flextrade.png"
   },
   {
     "alias": "flip.id",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "flixbus",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "flock-safety",
     "source": "flock-safety-256x256.png",
-    "destination": "flock-safety.png"
+    "destination": "flock-safety.png",
+    "destination_72x72": "flock-safety.png"
   },
   {
     "alias": "flok-health",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "florida-blue",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "flow-traders",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "flowhub",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "fluidcloud",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "flyrinc",
     "source": "flyr-200x200.jpeg",
-    "destination": "flyrinc.jpeg"
+    "destination": "flyrinc.jpeg",
+    "destination_72x72": "flyrinc.jpeg"
   },
   {
     "alias": "flyzipline",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "fonoa",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "foodji-marketplace-gmbh",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "foodpanda",
     "source": "foodpanda-200x200.jpeg",
-    "destination": "foodpanda.jpeg"
+    "destination": "foodpanda.jpeg",
+    "destination_72x72": "foodpanda.jpeg"
   },
   {
     "alias": "forcepoint",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "ford-motor-company",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "forestbikeapp",
     "source": "forestbikeapp-256x256.png",
-    "destination": "forestbikeapp.png"
+    "destination": "forestbikeapp.png",
+    "destination_72x72": "forestbikeapp.png"
   },
   {
     "alias": "form3-financial-cloud",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "fortanix",
     "source": "fortanix-200x200.jpeg",
-    "destination": "fortanix.jpeg"
+    "destination": "fortanix.jpeg",
+    "destination_72x72": "fortanix.jpeg"
   },
   {
     "alias": "fortegroup",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "fortinet",
     "source": "fortinet-180x180.png",
-    "destination": "fortinet.png"
+    "destination": "fortinet.png",
+    "destination_72x72": "fortinet.png"
   },
   {
     "alias": "fossa",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "foxtechteam",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "frankieone",
     "source": "frankieone-256x256.png",
-    "destination": "frankieone.png"
+    "destination": "frankieone.png",
+    "destination_72x72": "frankieone.png"
   },
   {
     "alias": "freeformfuture",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "freewheel",
     "source": "freewheel-200x200.jpeg",
-    "destination": "freewheel.jpeg"
+    "destination": "freewheel.jpeg",
+    "destination_72x72": "freewheel.jpeg"
   },
   {
     "alias": "fubotv",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "fudosecurity",
     "source": "fudosecurity-200x200.jpeg",
-    "destination": "fudosecurity.jpeg"
+    "destination": "fudosecurity.jpeg",
+    "destination_72x72": "fudosecurity.jpeg"
   },
   {
     "alias": "fujitsu",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "fullinfo",
     "source": "fullinfo-200x200.jpeg",
-    "destination": "fullinfo.jpeg"
+    "destination": "fullinfo.jpeg",
+    "destination_72x72": "fullinfo.jpeg"
   },
   {
     "alias": "funnel-io",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "further-worldwide",
     "source": "further-worldwide-256x256.png",
-    "destination": "further-worldwide.png"
+    "destination": "further-worldwide.png",
+    "destination_72x72": "further-worldwide.png"
   },
   {
     "alias": "future-research-inc",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "g-core",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "garena",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "gartner",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "gdms",
     "source": "gdms-180x180.png",
-    "destination": "gdms.png"
+    "destination": "gdms.png",
+    "destination_72x72": "gdms.png"
   },
   {
     "alias": "geico",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "gelato",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "geniussports",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "geocomply",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "getansa",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "getcruise",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "getir",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "getnetworld",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "getsentry",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "getsona",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "getstream",
     "source": "getstream-192x192.png",
-    "destination": "getstream.png"
+    "destination": "getstream.png",
+    "destination_72x72": "getstream.png"
   },
   {
     "alias": "gettaxi",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "getwriter",
     "source": "writer-180x180.png",
-    "destination": "getwriter.png"
+    "destination": "getwriter.png",
+    "destination_72x72": "getwriter.png"
   },
   {
     "alias": "gevernova",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "gitguardian",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "github",
     "source": "github-200x200.jpeg",
-    "destination": "github.jpeg"
+    "destination": "github.jpeg",
+    "destination_72x72": "github.jpeg"
   },
   {
     "alias": "gitlab-com",
     "source": "gitlab-192x192.png",
-    "destination": "gitlab-com.png"
+    "destination": "gitlab-com.png",
+    "destination_72x72": "gitlab-com.png"
   },
   {
     "alias": "glassflow-dev",
     "source": "glassflow-dev-463x463.png",
-    "destination": "glassflow-dev.png"
+    "destination": "glassflow-dev.png",
+    "destination_72x72": "glassflow-dev.png"
   },
   {
     "alias": "glasskube",
     "source": "glasskube-64x64.png",
-    "destination": "glasskube.png"
+    "destination": "glasskube.png",
+    "destination_72x72": "glasskube.png"
   },
   {
     "alias": "go-nitro",
     "source": "go-nitro-180x180.webp",
-    "destination": "go-nitro.png"
+    "destination": "go-nitro.png",
+    "destination_72x72": "go-nitro.png"
   },
   {
     "alias": "go-teleport",
     "source": "go-teleport-180x180.png",
-    "destination": "go-teleport.png"
+    "destination": "go-teleport.png",
+    "destination_72x72": "go-teleport.png"
   },
   {
     "alias": "gocardless",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "godaddy",
     "source": "godaddy-152x152.png",
-    "destination": "godaddy.png"
+    "destination": "godaddy.png",
+    "destination_72x72": "godaddy.png"
   },
   {
     "alias": "goflink",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "gogreyorange",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "goldman-sachs",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "google",
     "source": "google-200x200.jpeg",
-    "destination": "google.jpeg"
+    "destination": "google.jpeg",
+    "destination_72x72": "google.jpeg"
   },
   {
     "alias": "gorillalogic",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "grabapp",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "grafana-labs",
     "source": "grafana-200x200.jpeg",
-    "destination": "grafana-labs.jpeg"
+    "destination": "grafana-labs.jpeg",
+    "destination_72x72": "grafana-labs.jpeg"
   },
   {
     "alias": "grammarly",
     "source": "grammarly-200x200.jpeg",
-    "destination": "grammarly.jpeg"
+    "destination": "grammarly.jpeg",
+    "destination_72x72": "grammarly.jpeg"
   },
   {
     "alias": "grasshopperasia",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "greenbone-ag",
     "source": "greenbone-ag-200x200.jpeg",
-    "destination": "greenbone-ag.jpeg"
+    "destination": "greenbone-ag.jpeg",
+    "destination_72x72": "greenbone-ag.jpeg"
   },
   {
     "alias": "greengot",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "greenpacket",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "gremlin-inc.",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "greshamtech",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "greynoise",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "greyscout",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "gridx",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "groq",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "group-avows",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "guardsquare",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "guidewire-software",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "gwidotcom",
     "source": "gwidotcom-200x200.jpeg",
-    "destination": "gwidotcom.jpeg"
+    "destination": "gwidotcom.jpeg",
+    "destination_72x72": "gwidotcom.jpeg"
   },
   {
     "alias": "gymondo-gmbh",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "hadrianspace",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "hapag-lloyd-ag",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "happen-ing",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "harksys",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "hasaki-vn",
     "source": "hasaki-vn-200x200.jpeg",
-    "destination": "hasaki-vn.jpeg"
+    "destination": "hasaki-vn.jpeg",
+    "destination_72x72": "hasaki-vn.jpeg"
   },
   {
     "alias": "hashicorp",
     "source": "hashicorp-200x200.jpeg",
-    "destination": "hashicorp.jpeg"
+    "destination": "hashicorp.jpeg",
+    "destination_72x72": "hashicorp.jpeg"
   },
   {
     "alias": "hasura",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "havas",
     "source": "havas-200x200.jpeg",
-    "destination": "havas.jpeg"
+    "destination": "havas.jpeg",
+    "destination_72x72": "havas.jpeg"
   },
   {
     "alias": "haza-foods-llc",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "healthequity",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "hearx-group",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "heb",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "hello-health-group",
     "source": "hello-health-group-200x200.jpeg",
-    "destination": "hello-health-group.jpeg"
+    "destination": "hello-health-group.jpeg",
+    "destination_72x72": "hello-health-group.jpeg"
   },
   {
     "alias": "hello-stake",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "hellofresh",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "helsing",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "here",
     "source": "here-192x192.png",
-    "destination": "here.png"
+    "destination": "here.png",
+    "destination_72x72": "here.png"
   },
   {
     "alias": "hewlett-packard-enterprise",
     "source": "hewlett-packard-enterprise-200x200.jpeg",
-    "destination": "hewlett-packard-enterprise.jpeg"
+    "destination": "hewlett-packard-enterprise.jpeg",
+    "destination_72x72": "hewlett-packard-enterprise.jpeg"
   },
   {
     "alias": "heyfresha",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "hiive",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "hinge-app",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "holidaycheck-ag",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "home24",
     "source": "home24-180x180.png",
-    "destination": "home24.png"
+    "destination": "home24.png",
+    "destination_72x72": "home24.png"
   },
   {
     "alias": "hootsuite",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "hornetsecurity",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "hostaway",
     "source": "hostaway-200x200.jpeg",
-    "destination": "hostaway.jpeg"
+    "destination": "hostaway.jpeg",
+    "destination_72x72": "hostaway.jpeg"
   },
   {
     "alias": "hp",
     "source": "hp-200x200.jpeg",
-    "destination": "hp.jpeg"
+    "destination": "hp.jpeg",
+    "destination_72x72": "hp.jpeg"
   },
   {
     "alias": "hsbc",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "hubble-pte.-ltd.",
     "source": "hubble-pte.-ltd.-192x192.png",
-    "destination": "hubble-pte.-ltd..png"
+    "destination": "hubble-pte.-ltd..png",
+    "destination_72x72": "hubble-pte.-ltd..png"
   },
   {
     "alias": "hudl",
     "source": "hudl-180x180.png",
-    "destination": "hudl.png"
+    "destination": "hudl.png",
+    "destination_72x72": "hudl.png"
   },
   {
     "alias": "hunterio",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "huntress-labs",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "ibm",
     "source": "ibm-200x200.jpeg",
-    "destination": "ibm.jpeg"
+    "destination": "ibm.jpeg",
+    "destination_72x72": "ibm.jpeg"
   },
   {
     "alias": "icapital-network-inc",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "idemiagroup",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "idt",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "ifood-",
     "source": "ifood-200x200.jpeg",
-    "destination": "ifood-.jpeg"
+    "destination": "ifood-.jpeg",
+    "destination_72x72": "ifood-.jpeg"
   },
   {
     "alias": "ifs",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "ikea",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "immutable-1",
     "source": "immutable-200x200.jpeg",
-    "destination": "immutable-1.jpeg"
+    "destination": "immutable-1.jpeg",
+    "destination_72x72": "immutable-1.jpeg"
   },
   {
     "alias": "impactdotcom",
     "source": "impact-180x180.webp",
-    "destination": "impactdotcom.png"
+    "destination": "impactdotcom.png",
+    "destination_72x72": "impactdotcom.png"
   },
   {
     "alias": "impossiblecloud",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "incharge-energy",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "infactsystems",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "influ2",
     "source": "influ2-180x180.png",
-    "destination": "influ2.png"
+    "destination": "influ2.png",
+    "destination_72x72": "influ2.png"
   },
   {
     "alias": "influxdb",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "infoblox",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "infolob-global",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "infomatics-corp",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "ing",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "innovatrics",
     "source": "innovatrics-180x180.png",
-    "destination": "innovatrics.png"
+    "destination": "innovatrics.png",
+    "destination_72x72": "innovatrics.png"
   },
   {
     "alias": "instinct-science",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "inulti",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "inviatravelgermany",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "ionos",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "ipsos",
     "source": "ipsos-200x200.jpeg",
-    "destination": "ipsos.jpeg"
+    "destination": "ipsos.jpeg",
+    "destination_72x72": "ipsos.jpeg"
   },
   {
     "alias": "isovalent",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "italki",
     "source": "italki-200x200.jpeg",
-    "destination": "italki.jpeg"
+    "destination": "italki.jpeg",
+    "destination_72x72": "italki.jpeg"
   },
   {
     "alias": "jack-henry",
     "source": "jack-henry-200x200.jpeg",
-    "destination": "jack-henry.jpeg"
+    "destination": "jack-henry.jpeg",
+    "destination_72x72": "jack-henry.jpeg"
   },
   {
     "alias": "jamf-software",
     "source": "jamf-software-180x180.png",
-    "destination": "jamf-software.png"
+    "destination": "jamf-software.png",
+    "destination_72x72": "jamf-software.png"
   },
   {
     "alias": "jetbrains",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "jfrog-ltd",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "jmawireless",
     "source": "jmawireless-180x180.png",
-    "destination": "jmawireless.png"
+    "destination": "jmawireless.png",
+    "destination_72x72": "jmawireless.png"
   },
   {
     "alias": "join-denim",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "joincruit",
     "source": "joincruit-200x200.jpeg",
-    "destination": "joincruit.jpeg"
+    "destination": "joincruit.jpeg",
+    "destination_72x72": "joincruit.jpeg"
   },
   {
     "alias": "joinmultiverse",
     "source": "joinmultiverse-200x200.jpeg",
-    "destination": "joinmultiverse.jpeg"
+    "destination": "joinmultiverse.jpeg",
+    "destination_72x72": "joinmultiverse.jpeg"
   },
   {
     "alias": "joinpult",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "jomehq",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "jpmorganchase",
     "source": "jpmorganchase-152x152.png",
-    "destination": "jpmorganchase.png"
+    "destination": "jpmorganchase.png",
+    "destination_72x72": "jpmorganchase.png"
   },
   {
     "alias": "julius-baer",
     "source": "julius-baer-180x180.png",
-    "destination": "julius-baer.png"
+    "destination": "julius-baer.png",
+    "destination_72x72": "julius-baer.png"
   },
   {
     "alias": "just-eat-takeaway-com",
     "source": "just-eat-takeaway-com-200x200.jpeg",
-    "destination": "just-eat-takeaway-com.jpeg"
+    "destination": "just-eat-takeaway-com.jpeg",
+    "destination_72x72": "just-eat-takeaway-com.jpeg"
   },
   {
     "alias": "justpark",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "justrelate-group",
     "source": "justrelate-200x200.jpeg",
-    "destination": "justrelate-group.jpeg"
+    "destination": "justrelate-group.jpeg",
+    "destination_72x72": "justrelate-group.jpeg"
   },
   {
     "alias": "justwatch",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "k-id",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "kaluza",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "kantar",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "kantox",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "kargo",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "kaseya",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "kayrros",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "kiddom",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "kimiagroup",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "kissht",
     "source": "kissht-200x200.jpeg",
-    "destination": "kissht.jpeg"
+    "destination": "kissht.jpeg",
+    "destination_72x72": "kissht.jpeg"
   },
   {
     "alias": "kiteworkscgcp",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "kiwi.com",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "klarna",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "knime",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "knorex",
     "source": "knorex-200x200.jpeg",
-    "destination": "knorex.jpeg"
+    "destination": "knorex.jpeg",
+    "destination_72x72": "knorex.jpeg"
   },
   {
     "alias": "knowbe4",
     "source": "knowbe4-114x114.webp",
-    "destination": "knowbe4.png"
+    "destination": "knowbe4.png",
+    "destination_72x72": "knowbe4.png"
   },
   {
     "alias": "kochinc",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "koho",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "komerceid",
     "source": "komerceid-200x200.jpeg",
-    "destination": "komerceid.jpeg"
+    "destination": "komerceid.jpeg",
+    "destination_72x72": "komerceid.jpeg"
   },
   {
     "alias": "konghq",
     "source": "konghq-200x200.jpeg",
-    "destination": "konghq.jpeg"
+    "destination": "konghq.jpeg",
+    "destination_72x72": "konghq.jpeg"
   },
   {
     "alias": "kroger",
     "source": "kroger-200x200.jpeg",
-    "destination": "kroger.jpeg"
+    "destination": "kroger.jpeg",
+    "destination_72x72": "kroger.jpeg"
   },
   {
     "alias": "kyp",
     "source": "kyp-512x512.png",
-    "destination": "kyp.png"
+    "destination": "kyp.png",
+    "destination_72x72": "kyp.png"
   },
   {
     "alias": "ladderlife",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "lantronix",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "leaseweb",
     "source": "leaseweb-200x200.jpeg",
-    "destination": "leaseweb.jpeg"
+    "destination": "leaseweb.jpeg",
+    "destination_72x72": "leaseweb.jpeg"
   },
   {
     "alias": "legalzoom",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "lego-group",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "lemfi",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "lenovo",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "lenskart-com",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "letgo",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "level-all",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "levelhome",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "lexia-learning-systems",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "lexisnexis-risk-solutions",
     "source": "lexisnexis-risk-solutions-200x200.jpeg",
-    "destination": "lexisnexis-risk-solutions.jpeg"
+    "destination": "lexisnexis-risk-solutions.jpeg",
+    "destination_72x72": "lexisnexis-risk-solutions.jpeg"
   },
   {
     "alias": "lgads",
     "source": "lgads-200x200.jpeg",
-    "destination": "lgads.jpeg"
+    "destination": "lgads.jpeg",
+    "destination_72x72": "lgads.jpeg"
   },
   {
     "alias": "liebherr",
     "source": "liebherr-180x180.png",
-    "destination": "liebherr.png"
+    "destination": "liebherr.png",
+    "destination_72x72": "liebherr.png"
   },
   {
     "alias": "lifemote-networks",
     "source": "lifemote-256x256.png",
-    "destination": "lifemote-networks.png"
+    "destination": "lifemote-networks.png",
+    "destination_72x72": "lifemote-networks.png"
   },
   {
     "alias": "lightspeed-systems",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "lightspeedcommerce",
     "source": "lightspeedcommerce-180x180.webp",
-    "destination": "lightspeedcommerce.png"
+    "destination": "lightspeedcommerce.png",
+    "destination_72x72": "lightspeedcommerce.png"
   },
   {
     "alias": "limango-gmbh",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "limango-sp-z-o-o-",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "lingopal-ai",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "linkedin",
     "source": "linkedin-200x200.jpeg",
-    "destination": "linkedin.jpeg"
+    "destination": "linkedin.jpeg",
+    "destination_72x72": "linkedin.jpeg"
   },
   {
     "alias": "litmus-automation",
     "source": "litmus-automation-200x200.jpeg",
-    "destination": "litmus-automation.jpeg"
+    "destination": "litmus-automation.jpeg",
+    "destination_72x72": "litmus-automation.jpeg"
   },
   {
     "alias": "littlelives",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "liveperson",
     "source": "liveperson-200x200.jpeg",
-    "destination": "liveperson.jpeg"
+    "destination": "liveperson.jpeg",
+    "destination_72x72": "liveperson.jpeg"
   },
   {
     "alias": "lloyds-banking-group",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "loblaw-companies-limited",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "loblaw-digital",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "lobster-robotics",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "london-stock-exchange-group",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "lonely-planet",
     "source": "lonely-planet-200x200.jpeg",
-    "destination": "lonely-planet.jpeg"
+    "destination": "lonely-planet.jpeg",
+    "destination_72x72": "lonely-planet.jpeg"
   },
   {
     "alias": "los-alamos-national-laboratory",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "lotusretails",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "lucanet-ag",
     "source": "lucanet-180x180.png",
-    "destination": "lucanet-ag.png"
+    "destination": "lucanet-ag.png",
+    "destination_72x72": "lucanet-ag.png"
   },
   {
     "alias": "lucidmotors",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "lumeltech",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "lumentechnologies",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "luminovo",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "lynk-global-inc",
     "source": "lynk-global-inc-50x50.png",
-    "destination": "lynk-global-inc.png"
+    "destination": "lynk-global-inc.png",
+    "destination_72x72": "lynk-global-inc.png"
   },
   {
     "alias": "lytxinc",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "macquariegroup",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "macrohealth",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "maersk-group",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "magicmotorsport",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "magnite",
     "source": "magnite-180x180.png",
-    "destination": "magnite.png"
+    "destination": "magnite.png",
+    "destination_72x72": "magnite.png"
   },
   {
     "alias": "mail-step",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "makropro",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "manus-im",
     "source": "manus-im-192x192.png",
-    "destination": "manus-im.png"
+    "destination": "manus-im.png",
+    "destination_72x72": "manus-im.png"
   },
   {
     "alias": "mapbox",
     "source": "mapbox-256x256.png",
-    "destination": "mapbox.png"
+    "destination": "mapbox.png",
+    "destination_72x72": "mapbox.png"
   },
   {
     "alias": "marbill-technologies",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "marketeam-ai",
     "source": "marketeam-ai-200x200.jpeg",
-    "destination": "marketeam-ai.jpeg"
+    "destination": "marketeam-ai.jpeg",
+    "destination_72x72": "marketeam-ai.jpeg"
   },
   {
     "alias": "marketer-com",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "markitech-ai",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "maropost",
     "source": "maropost-240x240.webp",
-    "destination": "maropost.png"
+    "destination": "maropost.png",
+    "destination_72x72": "maropost.png"
   },
   {
     "alias": "mastercard",
     "source": "mastercard-180x180.png",
-    "destination": "mastercard.png"
+    "destination": "mastercard.png",
+    "destination_72x72": "mastercard.png"
   },
   {
     "alias": "matchmove",
     "source": "matchmove-200x200.jpeg",
-    "destination": "matchmove.jpeg"
+    "destination": "matchmove.jpeg",
+    "destination_72x72": "matchmove.jpeg"
   },
   {
     "alias": "materialise",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "materializeinc",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "mayaph",
     "source": "mayaph-200x200.jpeg",
-    "destination": "mayaph.jpeg"
+    "destination": "mayaph.jpeg",
+    "destination_72x72": "mayaph.jpeg"
   },
   {
     "alias": "mayflower-tech",
     "source": "mayflower-tech-180x180.png",
-    "destination": "mayflower-tech.png"
+    "destination": "mayflower-tech.png",
+    "destination_72x72": "mayflower-tech.png"
   },
   {
     "alias": "mcafee",
     "source": "mcafee-200x200.jpeg",
-    "destination": "mcafee.jpeg"
+    "destination": "mcafee.jpeg",
+    "destination_72x72": "mcafee.jpeg"
   },
   {
     "alias": "mckesson",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "mechanical-orchard",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "medium-com",
     "source": "medium-200x200.jpeg",
-    "destination": "medium-com.jpeg"
+    "destination": "medium-com.jpeg",
+    "destination_72x72": "medium-com.jpeg"
   },
   {
     "alias": "megaport",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "mellifera-operations-limited",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "mercuryhq",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "meta",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "metabase",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "metric-app",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "microsoft",
     "source": "microsoft-200x200.jpeg",
-    "destination": "microsoft.jpeg"
+    "destination": "microsoft.jpeg",
+    "destination_72x72": "microsoft.jpeg"
   },
   {
     "alias": "milestone-systems",
     "source": "milestone-systems-200x200.jpeg",
-    "destination": "milestone-systems.jpeg"
+    "destination": "milestone-systems.jpeg",
+    "destination_72x72": "milestone-systems.jpeg"
   },
   {
     "alias": "millennium-partners",
     "source": "millennium-partners-180x180.png",
-    "destination": "millennium-partners.png"
+    "destination": "millennium-partners.png",
+    "destination_72x72": "millennium-partners.png"
   },
   {
     "alias": "mimecast",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "mindera-world",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "mindrift-ai",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "miraclesoft",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "mirantis",
     "source": "mirantis-200x200.jpeg",
-    "destination": "mirantis.jpeg"
+    "destination": "mirantis.jpeg",
+    "destination_72x72": "mirantis.jpeg"
   },
   {
     "alias": "mitratech",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "mizzlecloud",
     "source": "mizzlecloud-200x200.jpeg",
-    "destination": "mizzlecloud.jpeg"
+    "destination": "mizzlecloud.jpeg",
+    "destination_72x72": "mizzlecloud.jpeg"
   },
   {
     "alias": "mobica",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "moia_mobility",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "mondoo",
     "source": "mondoo-256x256.png",
-    "destination": "mondoo.png"
+    "destination": "mondoo.png",
+    "destination_72x72": "mondoo.png"
   },
   {
     "alias": "mondu-ai",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "money-forward",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "moneylion",
     "source": "moneylion-200x200.jpeg",
-    "destination": "moneylion.jpeg"
+    "destination": "moneylion.jpeg",
+    "destination_72x72": "moneylion.jpeg"
   },
   {
     "alias": "mongodbinc",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "monil-virtual-fences",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "monumentalco",
     "source": "monumentalco-256x256.png",
-    "destination": "monumentalco.png"
+    "destination": "monumentalco.png",
+    "destination_72x72": "monumentalco.png"
   },
   {
     "alias": "monzo-bank",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "moodys-corporation",
     "source": "moodys-200x200.jpeg",
-    "destination": "moodys-corporation.jpeg"
+    "destination": "moodys-corporation.jpeg",
+    "destination_72x72": "moodys-corporation.jpeg"
   },
   {
     "alias": "morgan-stanley",
     "source": "morgan-stanley-128x128.png",
-    "destination": "morgan-stanley.png"
+    "destination": "morgan-stanley.png",
+    "destination_72x72": "morgan-stanley.png"
   },
   {
     "alias": "motadata",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "motive-inc",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "motorolasolutions",
     "source": "motorolasolutions-200x200.jpeg",
-    "destination": "motorolasolutions.jpeg"
+    "destination": "motorolasolutions.jpeg",
+    "destination_72x72": "motorolasolutions.jpeg"
   },
   {
     "alias": "moveworksai",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "mozilla-corporation",
     "source": "mozilla-corporation-200x200.jpeg",
-    "destination": "mozilla-corporation.jpeg"
+    "destination": "mozilla-corporation.jpeg",
+    "destination_72x72": "mozilla-corporation.jpeg"
   },
   {
     "alias": "mr-price-group",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "muralhealth",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "mux",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "muzz",
     "source": "muzz-200x200.jpeg",
-    "destination": "muzz.jpeg"
+    "destination": "muzz.jpeg",
+    "destination_72x72": "muzz.jpeg"
   },
   {
     "alias": "mycafu",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "mythical",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "n-able",
     "source": "n-able-180x180.png",
-    "destination": "n-able.png"
+    "destination": "n-able.png",
+    "destination_72x72": "n-able.png"
   },
   {
     "alias": "namecheap-inc",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "napier",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "narrativeapp",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "nasdaq",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "nasuni",
     "source": "nasuni-200x200.jpeg",
-    "destination": "nasuni.jpeg"
+    "destination": "nasuni.jpeg",
+    "destination_72x72": "nasuni.jpeg"
   },
   {
     "alias": "natuvion",
     "source": "natuvion-463x463.webp",
-    "destination": "natuvion.png"
+    "destination": "natuvion.png",
+    "destination_72x72": "natuvion.png"
   },
   {
     "alias": "natwest-group",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "nbcuniversal-inc-",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "ncratleos",
     "source": "ncratleos-200x200.jpeg",
-    "destination": "ncratleos.jpeg"
+    "destination": "ncratleos.jpeg",
+    "destination_72x72": "ncratleos.jpeg"
   },
   {
     "alias": "ncrvoyix",
     "source": "ncrvoyix-256x256.png",
-    "destination": "ncrvoyix.png"
+    "destination": "ncrvoyix.png",
+    "destination_72x72": "ncrvoyix.png"
   },
   {
     "alias": "nebius",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "nelly-solutions",
     "source": "nelly-solutions-200x200.jpeg",
-    "destination": "nelly-solutions.jpeg"
+    "destination": "nelly-solutions.jpeg",
+    "destination_72x72": "nelly-solutions.jpeg"
   },
   {
     "alias": "neo4j",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "net-health-systems-inc-",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "net2phone",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "netapp",
     "source": "netapp-200x200.jpeg",
-    "destination": "netapp.jpeg"
+    "destination": "netapp.jpeg",
+    "destination_72x72": "netapp.jpeg"
   },
   {
     "alias": "netcore-cloud",
     "source": "netcore-cloud-256x256.png",
-    "destination": "netcore-cloud.png"
+    "destination": "netcore-cloud.png",
+    "destination_72x72": "netcore-cloud.png"
   },
   {
     "alias": "netflix",
     "source": "netflix-64x64.png",
-    "destination": "netflix.png"
+    "destination": "netflix.png",
+    "destination_72x72": "netflix.png"
   },
   {
     "alias": "netlify",
     "source": "netlify-180x180.png",
-    "destination": "netlify.png"
+    "destination": "netlify.png",
+    "destination_72x72": "netlify.png"
   },
   {
     "alias": "netscribes",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "network-optix",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "new-relic-inc-",
     "source": "newrelic-180x180.png",
-    "destination": "new-relic-inc-.png"
+    "destination": "new-relic-inc-.png",
+    "destination_72x72": "new-relic-inc-.png"
   },
   {
     "alias": "new-work-se",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "nexos-ai",
     "source": "nexos-ai-200x200.jpeg",
-    "destination": "nexos-ai.jpeg"
+    "destination": "nexos-ai.jpeg",
+    "destination_72x72": "nexos-ai.jpeg"
   },
   {
     "alias": "nfon",
     "source": "nfon-200x200.jpeg",
-    "destination": "nfon.jpeg"
+    "destination": "nfon.jpeg",
+    "destination_72x72": "nfon.jpeg"
   },
   {
     "alias": "nice-systems",
     "source": "nice-systems-64x64.png",
-    "destination": "nice-systems.png"
+    "destination": "nice-systems.png",
+    "destination_72x72": "nice-systems.png"
   },
   {
     "alias": "nico-lab",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "nielseniq",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "nightfall-ai",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "nike",
     "source": "nike-152x152.png",
-    "destination": "nike.png"
+    "destination": "nike.png",
+    "destination_72x72": "nike.png"
   },
   {
     "alias": "nine-entertainment-co.",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "ninjaone",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "ninjatrader-group-llc",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "niov-labs",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "nn",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "nn-group",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "nokia",
     "source": "nokia-180x180.png",
-    "destination": "nokia.png"
+    "destination": "nokia.png",
+    "destination_72x72": "nokia.png"
   },
   {
     "alias": "nordea",
     "source": "nordea-200x200.jpeg",
-    "destination": "nordea.jpeg"
+    "destination": "nordea.jpeg",
+    "destination_72x72": "nordea.jpeg"
   },
   {
     "alias": "nordsecurity",
     "source": "nordsecurity-200x200.jpeg",
-    "destination": "nordsecurity.jpeg"
+    "destination": "nordsecurity.jpeg",
+    "destination_72x72": "nordsecurity.jpeg"
   },
   {
     "alias": "notablesystems",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "notchupteam",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "nozomi-networks-sa",
     "source": "nozominetworks-256x256.png",
-    "destination": "nozomi-networks-sa.png"
+    "destination": "nozomi-networks-sa.png",
+    "destination_72x72": "nozomi-networks-sa.png"
   },
   {
     "alias": "nuitee",
     "source": "nuitee-125x125.png",
-    "destination": "nuitee.png"
+    "destination": "nuitee.png",
+    "destination_72x72": "nuitee.png"
   },
   {
     "alias": "nuro-inc.",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "nutanix",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "nvent",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "nvidia",
     "source": "nvidia-200x200.jpeg",
-    "destination": "nvidia.jpeg"
+    "destination": "nvidia.jpeg",
+    "destination_72x72": "nvidia.jpeg"
   },
   {
     "alias": "oanda",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "observe-inc",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "occ",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "octopusmoney",
     "source": "octopusmoney-300x300.webp",
-    "destination": "octopusmoney.png"
+    "destination": "octopusmoney.png",
+    "destination_72x72": "octopusmoney.png"
   },
   {
     "alias": "oddingg",
     "source": "oddingg-200x200.jpeg",
-    "destination": "oddingg.jpeg"
+    "destination": "oddingg.jpeg",
+    "destination_72x72": "oddingg.jpeg"
   },
   {
     "alias": "odyssey-information-services",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "okta-inc-",
     "source": "okta-200x200.jpeg",
-    "destination": "okta-inc-.jpeg"
+    "destination": "okta-inc-.jpeg",
+    "destination_72x72": "okta-inc-.jpeg"
   },
   {
     "alias": "ola-chat",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "olx-group",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "omilia-ltd",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "omio",
     "source": "omio-180x180.webp",
-    "destination": "omio.png"
+    "destination": "omio.png",
+    "destination_72x72": "omio.png"
   },
   {
     "alias": "omniful",
     "source": "omniful-200x200.jpeg",
-    "destination": "omniful.jpeg"
+    "destination": "omniful.jpeg",
+    "destination_72x72": "omniful.jpeg"
   },
   {
     "alias": "on2it-cybersecurity",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "onedoc.ch",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "oneschema",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "onesignal",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "onfy",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "oolio-au",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "opendoor-com",
     "source": "opendoor-200x200.jpeg",
-    "destination": "opendoor-com.jpeg"
+    "destination": "opendoor-com.jpeg",
+    "destination_72x72": "opendoor-com.jpeg"
   },
   {
     "alias": "openprovider",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "opensignal",
     "source": "opensignal-192x192.png",
-    "destination": "opensignal.png"
+    "destination": "opensignal.png",
+    "destination_72x72": "opensignal.png"
   },
   {
     "alias": "opentext",
     "source": "opentext-200x200.jpeg",
-    "destination": "opentext.jpeg"
+    "destination": "opentext.jpeg",
+    "destination_72x72": "opentext.jpeg"
   },
   {
     "alias": "openvpn",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "openwebhq",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "openx",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "operantai",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "opswat",
     "source": "opswat-200x200.jpeg",
-    "destination": "opswat.jpeg"
+    "destination": "opswat.jpeg",
+    "destination_72x72": "opswat.jpeg"
   },
   {
     "alias": "optableco",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "optimizely",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "oracle",
     "source": "oracle-200x200.jpeg",
-    "destination": "oracle.jpeg"
+    "destination": "oracle.jpeg",
+    "destination_72x72": "oracle.jpeg"
   },
   {
     "alias": "otiv",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "outpost24",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "outreach-saas",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "overwolf.com",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "ovoenergy",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "oxiocorp",
     "source": "oxiocorp-200x200.jpeg",
-    "destination": "oxiocorp.jpeg"
+    "destination": "oxiocorp.jpeg",
+    "destination_72x72": "oxiocorp.jpeg"
   },
   {
     "alias": "oxla",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "oxylabs-io",
     "source": "oxylabs-io-200x200.jpeg",
-    "destination": "oxylabs-io.jpeg"
+    "destination": "oxylabs-io.jpeg",
+    "destination_72x72": "oxylabs-io.jpeg"
   },
   {
     "alias": "paddle",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "padlet",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "paessler-gmbh",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "pagonxt",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "palantir-technologies",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "palo-alto-networks",
     "source": "palo-alto-networks-180x180.webp",
-    "destination": "palo-alto-networks.png"
+    "destination": "palo-alto-networks.png",
+    "destination_72x72": "palo-alto-networks.png"
   },
   {
     "alias": "paltafamily",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "panasonic",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "papainc",
     "source": "papa-200x200.jpeg",
-    "destination": "papainc.jpeg"
+    "destination": "papainc.jpeg",
+    "destination_72x72": "papainc.jpeg"
   },
   {
     "alias": "parachute-health",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "parallel-wireless-inc",
     "source": "parallel-wireless-inc-144x144.png",
-    "destination": "parallel-wireless-inc.png"
+    "destination": "parallel-wireless-inc.png",
+    "destination_72x72": "parallel-wireless-inc.png"
   },
   {
     "alias": "parcelhero-com-limited",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "parshipmeet",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "pavenow",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "pay-retailers",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "paynearme",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "paypal",
     "source": "paypal-196x196.png",
-    "destination": "paypal.png"
+    "destination": "paypal.png",
+    "destination_72x72": "paypal.png"
   },
   {
     "alias": "payrails",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "pdf-solutions",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "pdq-com",
     "source": "pdq-200x200.jpeg",
-    "destination": "pdq-com.jpeg"
+    "destination": "pdq-com.jpeg",
+    "destination_72x72": "pdq-com.jpeg"
   },
   {
     "alias": "peak",
     "source": "peak-144x144.png",
-    "destination": "peak.png"
+    "destination": "peak.png",
+    "destination_72x72": "peak.png"
   },
   {
     "alias": "peek-com",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "peerspace",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "pentaleaptech",
     "source": "pentaleap-256x256.png",
-    "destination": "pentaleaptech.png"
+    "destination": "pentaleaptech.png",
+    "destination_72x72": "pentaleaptech.png"
   },
   {
     "alias": "pepperstone",
     "source": "pepperstone-200x200.jpeg",
-    "destination": "pepperstone.jpeg"
+    "destination": "pepperstone.jpeg",
+    "destination_72x72": "pepperstone.jpeg"
   },
   {
     "alias": "percona",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "perion",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "perkbox",
     "source": "perkbox-192x192.png",
-    "destination": "perkbox.png"
+    "destination": "perkbox.png",
+    "destination_72x72": "perkbox.png"
   },
   {
     "alias": "permutive",
     "source": "permutive-180x180.webp",
-    "destination": "permutive.png"
+    "destination": "permutive.png",
+    "destination_72x72": "permutive.png"
   },
   {
     "alias": "pexip",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "photoroom",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "phraseplatform",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "pi-square-technology",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "pindrop",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "pinecone-io",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "pinterest",
     "source": "pinterest-200x200.jpeg",
-    "destination": "pinterest.jpeg"
+    "destination": "pinterest.jpeg",
+    "destination_72x72": "pinterest.jpeg"
   },
   {
     "alias": "pitchhq",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "pixellotltd",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "pizza-hut",
     "source": "pizza-hut-200x200.jpeg",
-    "destination": "pizza-hut.jpeg"
+    "destination": "pizza-hut.jpeg",
+    "destination_72x72": "pizza-hut.jpeg"
   },
   {
     "alias": "plaid-",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "planet",
     "source": "planet-200x200.jpeg",
-    "destination": "planet.jpeg"
+    "destination": "planet.jpeg",
+    "destination_72x72": "planet.jpeg"
   },
   {
     "alias": "plentyone-ecommerce",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "pola-rs",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "poppi-technologies",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "postman-platform",
     "source": "postman-200x200.jpeg",
-    "destination": "postman-platform.jpeg"
+    "destination": "postman-platform.jpeg",
+    "destination_72x72": "postman-platform.jpeg"
   },
   {
     "alias": "postscriptio",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "power-factors-inc",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "poweredbycommerce",
     "source": "commerce-200x200.jpeg",
-    "destination": "poweredbycommerce.jpeg"
+    "destination": "poweredbycommerce.jpeg",
+    "destination_72x72": "poweredbycommerce.jpeg"
   },
   {
     "alias": "praxent",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "preciselydata",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "press-ganey-associates",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "prezi",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "priceline-com",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "prima-assicurazioni",
     "source": "prima-assicurazioni-180x180.png",
-    "destination": "prima-assicurazioni.png"
+    "destination": "prima-assicurazioni.png",
+    "destination_72x72": "prima-assicurazioni.png"
   },
   {
     "alias": "prima-group-housing",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "prioritysoftware",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "prisma-io",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "prize-picks",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "pro-football-focus",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "promon-as",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "proofpoint",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "prosapient",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "prospect-33",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "prosusgroup",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "protonprivacy",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "proxidize",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "pubmatic",
     "source": "pubmatic-200x200.jpeg",
-    "destination": "pubmatic.jpeg"
+    "destination": "pubmatic.jpeg",
+    "destination_72x72": "pubmatic.jpeg"
   },
   {
     "alias": "pulsepoint",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "purestorage",
     "source": "purestorage-200x200.jpeg",
-    "destination": "purestorage.jpeg"
+    "destination": "purestorage.jpeg",
+    "destination_72x72": "purestorage.jpeg"
   },
   {
     "alias": "qad",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "qdrant",
     "source": "qdrant-200x200.jpeg",
-    "destination": "qdrant.jpeg"
+    "destination": "qdrant.jpeg",
+    "destination_72x72": "qdrant.jpeg"
   },
   {
     "alias": "qlik",
     "source": "qlik-192x192.png",
-    "destination": "qlik.png"
+    "destination": "qlik.png",
+    "destination_72x72": "qlik.png"
   },
   {
     "alias": "qnx",
     "source": "qnx-200x200.jpeg",
-    "destination": "qnx.jpeg"
+    "destination": "qnx.jpeg",
+    "destination_72x72": "qnx.jpeg"
   },
   {
     "alias": "qohash",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "qonto",
     "source": "qonto-180x180.png",
-    "destination": "qonto.png"
+    "destination": "qonto.png",
+    "destination_72x72": "qonto.png"
   },
   {
     "alias": "quadcodecareer",
     "source": "quadcode-200x200.jpeg",
-    "destination": "quadcodecareer.jpeg"
+    "destination": "quadcodecareer.jpeg",
+    "destination_72x72": "quadcodecareer.jpeg"
   },
   {
     "alias": "qualcomm",
     "source": "qualcomm-200x200.jpeg",
-    "destination": "qualcomm.jpeg"
+    "destination": "qualcomm.jpeg",
+    "destination_72x72": "qualcomm.jpeg"
   },
   {
     "alias": "quantexa",
     "source": "quantexa-326x326.png",
-    "destination": "quantexa.png"
+    "destination": "quantexa.png",
+    "destination_72x72": "quantexa.png"
   },
   {
     "alias": "quantum-systems-gmbh",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "quizlet",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "qumulo",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "qumuluscloudplatform",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "quorum-software",
     "source": "quorum-software-200x200.jpeg",
-    "destination": "quorum-software.jpeg"
+    "destination": "quorum-software.jpeg",
+    "destination_72x72": "quorum-software.jpeg"
   },
   {
     "alias": "qustodio",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "r-systems",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "r2p-group",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "rabbet",
     "source": "rabbet-256x256.png",
-    "destination": "rabbet.png"
+    "destination": "rabbet.png",
+    "destination_72x72": "rabbet.png"
   },
   {
     "alias": "railsrglobal",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "rakuten",
     "source": "rakuten-200x200.jpeg",
-    "destination": "rakuten.jpeg"
+    "destination": "rakuten.jpeg",
+    "destination_72x72": "rakuten.jpeg"
   },
   {
     "alias": "rakuten-symphony",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "rakuten-viber",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "ramp",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "rapid-ai",
     "source": "rapid-ai-200x200.jpeg",
-    "destination": "rapid-ai.jpeg"
+    "destination": "rapid-ai.jpeg",
+    "destination_72x72": "rapid-ai.jpeg"
   },
   {
     "alias": "rapid7",
     "source": "rapid7-200x200.jpeg",
-    "destination": "rapid7.jpeg"
+    "destination": "rapid7.jpeg",
+    "destination_72x72": "rapid7.jpeg"
   },
   {
     "alias": "rbc",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "readdle",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "readytotouch",
     "source": "readytotouch-192x192.png",
-    "destination": "readytotouch.png"
+    "destination": "readytotouch.png",
+    "destination_72x72": "readytotouch.png"
   },
   {
     "alias": "recorded-future",
     "source": "recorded-future-200x200.jpeg",
-    "destination": "recorded-future.jpeg"
+    "destination": "recorded-future.jpeg",
+    "destination_72x72": "recorded-future.jpeg"
   },
   {
     "alias": "recurly",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "red-hat",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "reddit-com",
     "source": "reddit-200x200.jpeg",
-    "destination": "reddit-com.jpeg"
+    "destination": "reddit-com.jpeg",
+    "destination_72x72": "reddit-com.jpeg"
   },
   {
     "alias": "redisinc",
     "source": "redisinc-180x180.png",
-    "destination": "redisinc.png"
+    "destination": "redisinc.png",
+    "destination_72x72": "redisinc.png"
   },
   {
     "alias": "redox-one",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "redpanda-data",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "relx-group",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "remarkable-as",
     "source": "remarkable-192x192.png",
-    "destination": "remarkable-as.png"
+    "destination": "remarkable-as.png",
+    "destination_72x72": "remarkable-as.png"
   },
   {
     "alias": "remitly",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "remote.com",
     "source": "remote-200x200.jpeg",
-    "destination": "remote.com.jpeg"
+    "destination": "remote.com.jpeg",
+    "destination_72x72": "remote.com.jpeg"
   },
   {
     "alias": "revvity",
     "source": "revvity-200x200.jpeg",
-    "destination": "revvity.jpeg"
+    "destination": "revvity.jpeg",
+    "destination_72x72": "revvity.jpeg"
   },
   {
     "alias": "reward-gateway",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "rewards-network",
     "source": "rewards-network-192x192.webp",
-    "destination": "rewards-network.png"
+    "destination": "rewards-network.png",
+    "destination_72x72": "rewards-network.png"
   },
   {
     "alias": "rhebo",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "rialtic-io",
     "source": "rialtic-io-256x256.png",
-    "destination": "rialtic-io.png"
+    "destination": "rialtic-io.png",
+    "destination_72x72": "rialtic-io.png"
   },
   {
     "alias": "riiico",
     "source": "riiico-200x200.jpeg",
-    "destination": "riiico.jpeg"
+    "destination": "riiico.jpeg",
+    "destination_72x72": "riiico.jpeg"
   },
   {
     "alias": "rincon-research-corporation",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "ringcentral",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "riot-games",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "riskified",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "riverside-research",
     "source": "riverside-research-180x180.png",
-    "destination": "riverside-research.png"
+    "destination": "riverside-research.png",
+    "destination_72x72": "riverside-research.png"
   },
   {
     "alias": "rivian-and-vw-group-technologies",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "riza-inc",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "robomarkets",
     "source": "robomarkets-180x180.png",
-    "destination": "robomarkets.png"
+    "destination": "robomarkets.png",
+    "destination_72x72": "robomarkets.png"
   },
   {
     "alias": "rocket-lab-limited",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "rockstar-games",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "rockwell-automation",
     "source": "rockwell-automation-180x180.png",
-    "destination": "rockwell-automation.png"
+    "destination": "rockwell-automation.png",
+    "destination_72x72": "rockwell-automation.png"
   },
   {
     "alias": "roku",
     "source": "roku-200x200.jpeg",
-    "destination": "roku.jpeg"
+    "destination": "roku.jpeg",
+    "destination_72x72": "roku.jpeg"
   },
   {
     "alias": "rollee",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "roslinhq",
     "source": "roslinhq-200x200.jpeg",
-    "destination": "roslinhq.jpeg"
+    "destination": "roslinhq.jpeg",
+    "destination_72x72": "roslinhq.jpeg"
   },
   {
     "alias": "rublon",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "rumble-com",
     "source": "rumble-180x180.png",
-    "destination": "rumble-com.png"
+    "destination": "rumble-com.png",
+    "destination_72x72": "rumble-com.png"
   },
   {
     "alias": "rundoo",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "runzero",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "rust-foundation",
     "source": "rust-foundation-200x200.jpeg",
-    "destination": "rust-foundation.jpeg"
+    "destination": "rust-foundation.jpeg",
+    "destination_72x72": "rust-foundation.jpeg"
   },
   {
     "alias": "rxbenefits-inc-",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "ryanair",
     "source": "ryanair-96x96.png",
-    "destination": "ryanair.png"
+    "destination": "ryanair.png",
+    "destination_72x72": "ryanair.png"
   },
   {
     "alias": "saberapp",
     "source": "saberapp-200x200.jpeg",
-    "destination": "saberapp.jpeg"
+    "destination": "saberapp.jpeg",
+    "destination_72x72": "saberapp.jpeg"
   },
   {
     "alias": "sailpoint-technologies",
     "source": "sailpoint-200x200.jpeg",
-    "destination": "sailpoint-technologies.jpeg"
+    "destination": "sailpoint-technologies.jpeg",
+    "destination_72x72": "sailpoint-technologies.jpeg"
   },
   {
     "alias": "sainsburys",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "salesforgeai",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "salesloft",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "samba-ai",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "sambindonesia",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "samsung-electronics",
     "source": "samsung-144x144.png",
-    "destination": "samsung-electronics.png"
+    "destination": "samsung-electronics.png",
+    "destination_72x72": "samsung-electronics.png"
   },
   {
     "alias": "samsungfoodofficial",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "sandboxaq",
     "source": "sandboxaq-256x256.jpg",
-    "destination": "sandboxaq.jpg"
+    "destination": "sandboxaq.jpg",
+    "destination_72x72": "sandboxaq.jpg"
   },
   {
     "alias": "sap",
     "source": "sap-180x180.png",
-    "destination": "sap.png"
+    "destination": "sap.png",
+    "destination_72x72": "sap.png"
   },
   {
     "alias": "sas",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "sawitpro",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "saxonai",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "scaleops-sh",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "scaleway",
     "source": "scaleway-180x180.png",
-    "destination": "scaleway.png"
+    "destination": "scaleway.png",
+    "destination_72x72": "scaleway.png"
   },
   {
     "alias": "scanbo",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "scania",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "schmooze-dating",
     "source": "schmooze-dating-96x96.png",
-    "destination": "schmooze-dating.png"
+    "destination": "schmooze-dating.png",
+    "destination_72x72": "schmooze-dating.png"
   },
   {
     "alias": "scitecinc",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "scope3data",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "scorebuddy",
     "source": "scorebuddy-200x200.jpeg",
-    "destination": "scorebuddy.jpeg"
+    "destination": "scorebuddy.jpeg",
+    "destination_72x72": "scorebuddy.jpeg"
   },
   {
     "alias": "scylladb",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "seagate-technology",
     "source": "seagate-200x200.jpeg",
-    "destination": "seagate-technology.jpeg"
+    "destination": "seagate-technology.jpeg",
+    "destination_72x72": "seagate-technology.jpeg"
   },
   {
     "alias": "second-spectrum",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "secpod-technologies",
     "source": "secpod-200x200.jpeg",
-    "destination": "secpod-technologies.jpeg"
+    "destination": "secpod-technologies.jpeg",
+    "destination_72x72": "secpod-technologies.jpeg"
   },
   {
     "alias": "sectigo",
     "source": "sectigo-180x180.png",
-    "destination": "sectigo.png"
+    "destination": "sectigo.png",
+    "destination_72x72": "sectigo.png"
   },
   {
     "alias": "secureco-usa",
     "source": "secureco-180x180.webp",
-    "destination": "secureco-usa.png"
+    "destination": "secureco-usa.png",
+    "destination_72x72": "secureco-usa.png"
   },
   {
     "alias": "seedtag",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "selby-jennings",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "seldon",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "semrush",
     "source": "semrush-180x180.png",
-    "destination": "semrush.png"
+    "destination": "semrush.png",
+    "destination_72x72": "semrush.png"
   },
   {
     "alias": "sendle",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "sentinelone",
     "source": "sentinelone-180x180.webp",
-    "destination": "sentinelone.png"
+    "destination": "sentinelone.png",
+    "destination_72x72": "sentinelone.png"
   },
   {
     "alias": "shopee",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "shopware-ag",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "shuttle-yc",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "sides-dach",
     "source": "sides-dach-200x200.jpeg",
-    "destination": "sides-dach.jpeg"
+    "destination": "sides-dach.jpeg",
+    "destination_72x72": "sides-dach.jpeg"
   },
   {
     "alias": "siemens",
     "source": "siemens-180x180.png",
-    "destination": "siemens.png"
+    "destination": "siemens.png",
+    "destination_72x72": "siemens.png"
   },
   {
     "alias": "simacanbv",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "simpli.fi",
     "source": "simpli.fi-200x200.jpeg",
-    "destination": "simpli.fi.jpeg"
+    "destination": "simpli.fi.jpeg",
+    "destination_72x72": "simpli.fi.jpeg"
   },
   {
     "alias": "simplisales",
     "source": "simplisales-200x200.jpeg",
-    "destination": "simplisales.jpeg"
+    "destination": "simplisales.jpeg",
+    "destination_72x72": "simplisales.jpeg"
   },
   {
     "alias": "simulmedia",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "sinch",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "singlestore",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "sixt",
     "source": "sixt-200x200.jpeg",
-    "destination": "sixt.jpeg"
+    "destination": "sixt.jpeg",
+    "destination_72x72": "sixt.jpeg"
   },
   {
     "alias": "skidos-games",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "skyroph",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "skyworks-solutions-inc",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "sleeperhq",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "smartbear",
     "source": "smartbear-52x52.webp",
-    "destination": "smartbear.png"
+    "destination": "smartbear.png",
+    "destination_72x72": "smartbear.png"
   },
   {
     "alias": "smartrentdotcom",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "smava",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "smc",
     "source": "smc-200x200.jpeg",
-    "destination": "smc.jpeg"
+    "destination": "smc.jpeg",
+    "destination_72x72": "smc.jpeg"
   },
   {
     "alias": "smg-marketplace",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "smithrx",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "snap-inc-co",
     "source": "snap-200x200.jpeg",
-    "destination": "snap-inc-co.jpeg"
+    "destination": "snap-inc-co.jpeg",
+    "destination_72x72": "snap-inc-co.jpeg"
   },
   {
     "alias": "snowplow",
     "source": "snowplow-256x256.png",
-    "destination": "snowplow.png"
+    "destination": "snowplow.png",
+    "destination_72x72": "snowplow.png"
   },
   {
     "alias": "snyk",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "soax-network",
     "source": "soax-200x200.jpeg",
-    "destination": "soax-network.jpeg"
+    "destination": "soax-network.jpeg",
+    "destination_72x72": "soax-network.jpeg"
   },
   {
     "alias": "social-discovery-group",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "softdrivecloud",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "solariscompany",
     "source": "solariscompany-96x96.png",
-    "destination": "solariscompany.png"
+    "destination": "solariscompany.png",
+    "destination_72x72": "solariscompany.png"
   },
   {
     "alias": "solarwinds",
     "source": "solarwinds-200x200.jpeg",
-    "destination": "solarwinds.jpeg"
+    "destination": "solarwinds.jpeg",
+    "destination_72x72": "solarwinds.jpeg"
   },
   {
     "alias": "solo-funds",
     "source": "solofunds-180x180.webp",
-    "destination": "solo-funds.png"
+    "destination": "solo-funds.png",
+    "destination_72x72": "solo-funds.png"
   },
   {
     "alias": "solo.io",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "sonatus",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "sonicwall",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "sony-interactive-entertainment-llc",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "sophos",
     "source": "sophos-200x200.jpeg",
-    "destination": "sophos.jpeg"
+    "destination": "sophos.jpeg",
+    "destination_72x72": "sophos.jpeg"
   },
   {
     "alias": "soundcloud",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "sourcegraph",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "spe-solution",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "spice-ai",
     "source": "spice-ai-200x200.jpeg",
-    "destination": "spice-ai.jpeg"
+    "destination": "spice-ai.jpeg",
+    "destination_72x72": "spice-ai.jpeg"
   },
   {
     "alias": "spireglobal",
     "source": "spire-200x200.jpeg",
-    "destination": "spireglobal.jpeg"
+    "destination": "spireglobal.jpeg",
+    "destination_72x72": "spireglobal.jpeg"
   },
   {
     "alias": "splash-damage",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "splunk",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "sportradar",
     "source": "sportradar-200x200.png",
-    "destination": "sportradar.png"
+    "destination": "sportradar.png",
+    "destination_72x72": "sportradar.png"
   },
   {
     "alias": "spotify",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "spreedly",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "squarepoint-capital",
     "source": "squarepoint-capital-200x200.jpeg",
-    "destination": "squarepoint-capital.jpeg"
+    "destination": "squarepoint-capital.jpeg",
+    "destination_72x72": "squarepoint-capital.jpeg"
   },
   {
     "alias": "squarespace",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "st-jude-childrens-research-hospital",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "stack-x-me",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "stacklok",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "stairwell-inc",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "stan-entertainment",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "starhub",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "stark-defence",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "starlingbank",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "starshiptechnologies",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "state-street",
     "source": "state-street-200x200.jpeg",
-    "destination": "state-street.jpeg"
+    "destination": "state-street.jpeg",
+    "destination_72x72": "state-street.jpeg"
   },
   {
     "alias": "stationf",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "statista",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "stemsmusic",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "stockbit",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "stoke-space",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "stonebranch",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "storage-rentals-america",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "stord",
     "source": "stord-180x180.png",
-    "destination": "stord.png"
+    "destination": "stord.png",
+    "destination_72x72": "stord.png"
   },
   {
     "alias": "stori-card",
     "source": "stori-card-200x200.jpeg",
-    "destination": "stori-card.jpeg"
+    "destination": "stori-card.jpeg",
+    "destination_72x72": "stori-card.jpeg"
   },
   {
     "alias": "strangebee",
     "source": "strangebee-200x200.jpeg",
-    "destination": "strangebee.jpeg"
+    "destination": "strangebee.jpeg",
+    "destination_72x72": "strangebee.jpeg"
   },
   {
     "alias": "stratascale-llc",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "stripe",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "strongcompute",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "strongdm",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "stylitics",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "submer",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "sumup",
     "source": "sumup-200x200.jpeg",
-    "destination": "sumup.jpeg"
+    "destination": "sumup.jpeg",
+    "destination_72x72": "sumup.jpeg"
   },
   {
     "alias": "sunasterisk",
     "source": "sunasterisk-vn-200x200.jpeg",
-    "destination": "sunasterisk.jpeg"
+    "destination": "sunasterisk.jpeg",
+    "destination_72x72": "sunasterisk.jpeg"
   },
   {
     "alias": "supabase",
     "source": "supabase-200x200.jpeg",
-    "destination": "supabase.jpeg"
+    "destination": "supabase.jpeg",
+    "destination_72x72": "supabase.jpeg"
   },
   {
     "alias": "superannotate",
     "source": "superannotate-256x256.png",
-    "destination": "superannotate.png"
+    "destination": "superannotate.png",
+    "destination_72x72": "superannotate.png"
   },
   {
     "alias": "superindo",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "surfly",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "surfshark",
     "source": "surfshark-200x200.jpeg",
-    "destination": "surfshark.jpeg"
+    "destination": "surfshark.jpeg",
+    "destination_72x72": "surfshark.jpeg"
   },
   {
     "alias": "surrealdb",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "suse",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "svix",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "swan-embedded-banking",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "swapcard",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "swish-analytics",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "swiss-life-asset-management",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "swiss-post",
     "source": "swiss-post-200x200.jpeg",
-    "destination": "swiss-post.jpeg"
+    "destination": "swiss-post.jpeg",
+    "destination_72x72": "swiss-post.jpeg"
   },
   {
     "alias": "symbolica-ai",
     "source": "symbolica-ai-200x200.jpeg",
-    "destination": "symbolica-ai.jpeg"
+    "destination": "symbolica-ai.jpeg",
+    "destination_72x72": "symbolica-ai.jpeg"
   },
   {
     "alias": "symphonyai",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "synitidata",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "synopsys",
     "source": "synopsys-200x200.jpeg",
-    "destination": "synopsys.jpeg"
+    "destination": "synopsys.jpeg",
+    "destination_72x72": "synopsys.jpeg"
   },
   {
     "alias": "synthflowai",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "sysdig",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "sytac",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "t-mobile",
     "source": "t-mobile-200x200.jpeg",
-    "destination": "t-mobile.jpeg"
+    "destination": "t-mobile.jpeg",
+    "destination_72x72": "t-mobile.jpeg"
   },
   {
     "alias": "tabbypay",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "tabeo",
     "source": "tabeo-200x200.jpeg",
-    "destination": "tabeo.jpeg"
+    "destination": "tabeo.jpeg",
+    "destination_72x72": "tabeo.jpeg"
   },
   {
     "alias": "tabtechnology",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "tailscale",
     "source": "tailscale-200x200.jpeg",
-    "destination": "tailscale.jpeg"
+    "destination": "tailscale.jpeg",
+    "destination_72x72": "tailscale.jpeg"
   },
   {
     "alias": "take-2-interactive-software-inc-",
     "source": "take-2-interactive-software-inc-200x200.jpeg",
-    "destination": "take-2-interactive-software-inc-.jpeg"
+    "destination": "take-2-interactive-software-inc-.jpeg",
+    "destination_72x72": "take-2-interactive-software-inc-.jpeg"
   },
   {
     "alias": "takealot",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "takt-io",
     "source": "takt-io-200x200.jpeg",
-    "destination": "takt-io.jpeg"
+    "destination": "takt-io.jpeg",
+    "destination_72x72": "takt-io.jpeg"
   },
   {
     "alias": "talamobile",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "talon.one",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "taxfix",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "tazapay",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "td",
     "source": "td-200x200.jpeg",
-    "destination": "td.jpeg"
+    "destination": "td.jpeg",
+    "destination_72x72": "td.jpeg"
   },
   {
     "alias": "teachable",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "teaching-strategies-llc",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "teads",
     "source": "teads-180x180.png",
-    "destination": "teads.png"
+    "destination": "teads.png",
+    "destination_72x72": "teads.png"
   },
   {
     "alias": "teamwork-com",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "telekom",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "telestream",
     "source": "telestream-200x200.jpeg",
-    "destination": "telestream.jpeg"
+    "destination": "telestream.jpeg",
+    "destination_72x72": "telestream.jpeg"
   },
   {
     "alias": "teller-inc",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "telnyx",
     "source": "telnyx-200x200.jpeg",
-    "destination": "telnyx.jpeg"
+    "destination": "telnyx.jpeg",
+    "destination_72x72": "telnyx.jpeg"
   },
   {
     "alias": "tenableinc",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "tensordyne",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "tensorzero",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "tenstorrent-inc.",
     "source": "tenstorrent-463x463.png",
-    "destination": "tenstorrent-inc..png"
+    "destination": "tenstorrent-inc..png",
+    "destination_72x72": "tenstorrent-inc..png"
   },
   {
     "alias": "teradata",
     "source": "teradata-200x200.jpeg",
-    "destination": "teradata.jpeg"
+    "destination": "teradata.jpeg",
+    "destination_72x72": "teradata.jpeg"
   },
   {
     "alias": "teramindco",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "tesla-motors",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "testsigma",
     "source": "testsigma-180x180.png",
-    "destination": "testsigma.png"
+    "destination": "testsigma.png",
+    "destination_72x72": "testsigma.png"
   },
   {
     "alias": "textnow",
     "source": "textnow-256x256.webp",
-    "destination": "textnow.png"
+    "destination": "textnow.png",
+    "destination_72x72": "textnow.png"
   },
   {
     "alias": "teya-global",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "thales",
     "source": "thales-200x200.jpeg",
-    "destination": "thales.jpeg"
+    "destination": "thales.jpeg",
+    "destination_72x72": "thales.jpeg"
   },
   {
     "alias": "thatgamecompany",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "the-home-depot",
     "source": "the-home-depot-200x200.jpeg",
-    "destination": "the-home-depot.jpeg"
+    "destination": "the-home-depot.jpeg",
+    "destination_72x72": "the-home-depot.jpeg"
   },
   {
     "alias": "the-odp-corporation",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "the-realreal",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "the-walt-disney-company",
     "source": "disney-200x200.png",
-    "destination": "the-walt-disney-company.png"
+    "destination": "the-walt-disney-company.png",
+    "destination_72x72": "the-walt-disney-company.png"
   },
   {
     "alias": "thefalconx",
     "source": "thefalconx-256x256.png",
-    "destination": "thefalconx.png"
+    "destination": "thefalconx.png",
+    "destination_72x72": "thefalconx.png"
   },
   {
     "alias": "thenu",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "theopentag",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "thomson-reuters",
     "source": "thomson-reuters-200x200.jpeg",
-    "destination": "thomson-reuters.jpeg"
+    "destination": "thomson-reuters.jpeg",
+    "destination_72x72": "thomson-reuters.jpeg"
   },
   {
     "alias": "thought-machine",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "thousandeyes",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "threatconnect-inc",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "thryve-earth",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "thunespayments",
     "source": "thunes-180x180.png",
-    "destination": "thunespayments.png"
+    "destination": "thunespayments.png",
+    "destination_72x72": "thunespayments.png"
   },
   {
     "alias": "tietoevry",
     "source": "tietoevry-180x180.webp",
-    "destination": "tietoevry.png"
+    "destination": "tietoevry.png",
+    "destination_72x72": "tietoevry.png"
   },
   {
     "alias": "tiiuae",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "tikoafrica",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "tiledb-inc",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "timescaledb",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "titanos",
     "source": "titanos-200x200.jpeg",
-    "destination": "titanos.jpeg"
+    "destination": "titanos.jpeg",
+    "destination_72x72": "titanos.jpeg"
   },
   {
     "alias": "toast-inc",
     "source": "toast-inc-200x200.jpeg",
-    "destination": "toast-inc.jpeg"
+    "destination": "toast-inc.jpeg",
+    "destination_72x72": "toast-inc.jpeg"
   },
   {
     "alias": "togethercomputer",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "toggle-ai",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "tomtom",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "tontinetrust",
     "source": "tontinetrust-128x128.png",
-    "destination": "tontinetrust.png"
+    "destination": "tontinetrust.png",
+    "destination_72x72": "tontinetrust.png"
   },
   {
     "alias": "top-doctors-europe",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "topgolf",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "torqio",
     "source": "torqio-180x180.webp",
-    "destination": "torqio.png"
+    "destination": "torqio.png",
+    "destination_72x72": "torqio.png"
   },
   {
     "alias": "toyota-north-america",
     "source": "toyota-200x200.jpeg",
-    "destination": "toyota-north-america.jpeg"
+    "destination": "toyota-north-america.jpeg",
+    "destination_72x72": "toyota-north-america.jpeg"
   },
   {
     "alias": "track24",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "tradevestgmbh",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "trainline",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "transition-technologies-psc",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "travelport",
     "source": "travelport-130x130.png",
-    "destination": "travelport.png"
+    "destination": "travelport.png",
+    "destination_72x72": "travelport.png"
   },
   {
     "alias": "treecardapp",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "trend-micro",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "true-anomaly",
     "source": "true-anomaly-256x256.png",
-    "destination": "true-anomaly.png"
+    "destination": "true-anomaly.png",
+    "destination_72x72": "true-anomaly.png"
   },
   {
     "alias": "truely",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "trustingsocial",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "tubi-tv",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "tubia",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "tucows",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "twitch-tv",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "twosixtechnologies",
     "source": "twosixtechnologies-481x481.jpg",
-    "destination": "twosixtechnologies.jpg"
+    "destination": "twosixtechnologies.jpg",
+    "destination_72x72": "twosixtechnologies.jpg"
   },
   {
     "alias": "tyk",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "uber-com",
     "source": "uber-200x200.jpeg",
-    "destination": "uber-com.jpeg"
+    "destination": "uber-com.jpeg",
+    "destination_72x72": "uber-com.jpeg"
   },
   {
     "alias": "ubiquiti-",
     "source": "ubiquiti-256x256.png",
-    "destination": "ubiquiti-.png"
+    "destination": "ubiquiti-.png",
+    "destination_72x72": "ubiquiti-.png"
   },
   {
     "alias": "ubisoft",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "ubs",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "udelta",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "ultra-ic",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "umbraspace",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "unanet-technologies",
     "source": "unanet-200x200.jpeg",
-    "destination": "unanet-technologies.jpeg"
+    "destination": "unanet-technologies.jpeg",
+    "destination_72x72": "unanet-technologies.jpeg"
   },
   {
     "alias": "underdogfantasy",
     "source": "underdogfantasy-200x200.jpeg",
-    "destination": "underdogfantasy.jpeg"
+    "destination": "underdogfantasy.jpeg",
+    "destination_72x72": "underdogfantasy.jpeg"
   },
   {
     "alias": "uniphore",
     "source": "uniphore-200x200.jpeg",
-    "destination": "uniphore.jpeg"
+    "destination": "uniphore.jpeg",
+    "destination_72x72": "uniphore.jpeg"
   },
   {
     "alias": "unity",
     "source": "unity-200x200.jpeg",
-    "destination": "unity.jpeg"
+    "destination": "unity.jpeg",
+    "destination_72x72": "unity.jpeg"
   },
   {
     "alias": "university-of-virginia",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "unlimit-com",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "unnax-emi",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "unzer",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "upfluence",
     "source": "upfluence-200x200.jpeg",
-    "destination": "upfluence.jpeg"
+    "destination": "upfluence.jpeg",
+    "destination_72x72": "upfluence.jpeg"
   },
   {
     "alias": "upvest",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "us-bank",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "usehatchapp",
     "source": "usehatchapp-200x200.jpeg",
-    "destination": "usehatchapp.jpeg"
+    "destination": "usehatchapp.jpeg",
+    "destination_72x72": "usehatchapp.jpeg"
   },
   {
     "alias": "useinsider",
     "source": "useinsider-200x200.jpeg",
-    "destination": "useinsider.jpeg"
+    "destination": "useinsider.jpeg",
+    "destination_72x72": "useinsider.jpeg"
   },
   {
     "alias": "utilitywarehouse",
     "source": "utilitywarehouse-200x200.jpeg",
-    "destination": "utilitywarehouse.jpeg"
+    "destination": "utilitywarehouse.jpeg",
+    "destination_72x72": "utilitywarehouse.jpeg"
   },
   {
     "alias": "valence-security",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "valsoft-corporation",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "varonis",
     "source": "varonis-200x200.jpeg",
-    "destination": "varonis.jpeg"
+    "destination": "varonis.jpeg",
+    "destination_72x72": "varonis.jpeg"
   },
   {
     "alias": "vaytechnology",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "veact",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "vectoratomic",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "veeva-systems",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "velmie",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "veracitysoftwareinc",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "vercel",
     "source": "vercel-57x57.png",
-    "destination": "vercel.png"
+    "destination": "vercel.png",
+    "destination_72x72": "vercel.png"
   },
   {
     "alias": "vereign",
     "source": "vereign-200x200.jpeg",
-    "destination": "vereign.jpeg"
+    "destination": "vereign.jpeg",
+    "destination_72x72": "vereign.jpeg"
   },
   {
     "alias": "verkada",
     "source": "verkada-200x200.jpeg",
-    "destination": "verkada.jpeg"
+    "destination": "verkada.jpeg",
+    "destination_72x72": "verkada.jpeg"
   },
   {
     "alias": "versus-gaming-network",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "verve-ad-solutions",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "vestiaireco",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "viasat",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "victoriametrics",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "videoamp",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "vidsy",
     "source": "vidsy-256x256.png",
-    "destination": "vidsy.png"
+    "destination": "vidsy.png",
+    "destination_72x72": "vidsy.png"
   },
   {
     "alias": "vinted",
     "source": "vinted-192x192.png",
-    "destination": "vinted.png"
+    "destination": "vinted.png",
+    "destination_72x72": "vinted.png"
   },
   {
     "alias": "viodotcom",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "virtuozzo",
     "source": "virtuozzo-180x180.png",
-    "destination": "virtuozzo.png"
+    "destination": "virtuozzo.png",
+    "destination_72x72": "virtuozzo.png"
   },
   {
     "alias": "visa",
     "source": "visa-200x200.jpeg",
-    "destination": "visa.jpeg"
+    "destination": "visa.jpeg",
+    "destination_72x72": "visa.jpeg"
   },
   {
     "alias": "visionxplus",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "vitalbio",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "vividmoney",
     "source": "vividmoney-256x256.png",
-    "destination": "vividmoney.png"
+    "destination": "vividmoney.png",
+    "destination_72x72": "vividmoney.png"
   },
   {
     "alias": "vodeno",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "vois",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "volka",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "volkswagen-digital-solutions",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "voltus-inc.",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "vonage",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "voodoo.io",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "vustheenglishcenter",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "wallee-group",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "walmart",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "walmartdataventures",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "wargaming-net",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "warner-bros-discovery",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "wasmerio",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "waystar",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "we-are-fyst",
     "source": "fyst-180x180.png",
-    "destination": "we-are-fyst.png"
+    "destination": "we-are-fyst.png",
+    "destination_72x72": "we-are-fyst.png"
   },
   {
     "alias": "we-are-venatus",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "wearegcash",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "wearemntn",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "weareuney",
     "source": "weareuney-200x200.jpeg",
-    "destination": "weareuney.jpeg"
+    "destination": "weareuney.jpeg",
+    "destination_72x72": "weareuney.jpeg"
   },
   {
     "alias": "wearevisionai",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "weaviate-io",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "webbeds",
     "source": "webbeds-200x200.jpeg",
-    "destination": "webbeds.jpeg"
+    "destination": "webbeds.jpeg",
+    "destination_72x72": "webbeds.jpeg"
   },
   {
     "alias": "weedmaps",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "wellrewarded",
     "source": "wellrewarded-200x200.jpeg",
-    "destination": "wellrewarded.jpeg"
+    "destination": "wellrewarded.jpeg",
+    "destination_72x72": "wellrewarded.jpeg"
   },
   {
     "alias": "wexinc",
     "source": "wexinc-200x200.jpeg",
-    "destination": "wexinc.jpeg"
+    "destination": "wexinc.jpeg",
+    "destination_72x72": "wexinc.jpeg"
   },
   {
     "alias": "whaleboneio",
     "source": "whaleboneio-200x200.png",
-    "destination": "whaleboneio.png"
+    "destination": "whaleboneio.png",
+    "destination_72x72": "whaleboneio.png"
   },
   {
     "alias": "whatnot-inc",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "whitefox-defense-technologies-inc.",
     "source": "whitefox-defense-technologies-inc-256x256.png",
-    "destination": "whitefox-defense-technologies-inc..png"
+    "destination": "whitefox-defense-technologies-inc..png",
+    "destination_72x72": "whitefox-defense-technologies-inc..png"
   },
   {
     "alias": "windmill-dev",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "winnow-ltd-",
     "source": "winnow-200x200.jpeg",
-    "destination": "winnow-ltd-.jpeg"
+    "destination": "winnow-ltd-.jpeg",
+    "destination_72x72": "winnow-ltd-.jpeg"
   },
   {
     "alias": "wiseaccount",
     "source": "wiseaccount-200x200.jpeg",
-    "destination": "wiseaccount.jpeg"
+    "destination": "wiseaccount.jpeg",
+    "destination_72x72": "wiseaccount.jpeg"
   },
   {
     "alias": "wisehome",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "wolt-oy",
     "source": "wolt-200x200.jpeg",
-    "destination": "wolt-oy.jpeg"
+    "destination": "wolt-oy.jpeg",
+    "destination_72x72": "wolt-oy.jpeg"
   },
   {
     "alias": "wolters-kluwer",
     "source": "wolters-kluwer-200x200.jpeg",
-    "destination": "wolters-kluwer.jpeg"
+    "destination": "wolters-kluwer.jpeg",
+    "destination_72x72": "wolters-kluwer.jpeg"
   },
   {
     "alias": "wonderschool",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "wooga",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "woolsocks",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "workato",
     "source": "workato-200x200.jpeg",
-    "destination": "workato.jpeg"
+    "destination": "workato.jpeg",
+    "destination_72x72": "workato.jpeg"
   },
   {
     "alias": "worldlineglobal",
     "source": "worldline-192x192.png",
-    "destination": "worldlineglobal.png"
+    "destination": "worldlineglobal.png",
+    "destination_72x72": "worldlineglobal.png"
   },
   {
     "alias": "worldpay",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "worldtechit",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "wpengine",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "wpp-media",
     "source": "wpp-media.svg",
-    "destination": "wpp-media.svg"
+    "destination": "wpp-media.svg",
+    "destination_72x72": "wpp-media.svg"
   },
   {
     "alias": "xai",
     "source": "xai-200x200.jpeg",
-    "destination": "xai.jpeg"
+    "destination": "xai.jpeg",
+    "destination_72x72": "xai.jpeg"
   },
   {
     "alias": "xataio",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "yalo",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "yassir",
     "source": "yassir-180x180.png",
-    "destination": "yassir.png"
+    "destination": "yassir.png",
+    "destination_72x72": "yassir.png"
   },
   {
     "alias": "yolcu-360",
     "source": "yolcu-360-200x200.jpeg",
-    "destination": "yolcu-360.jpeg"
+    "destination": "yolcu-360.jpeg",
+    "destination_72x72": "yolcu-360.jpeg"
   },
   {
     "alias": "yondercard",
     "source": "yondercard-200x200.jpeg",
-    "destination": "yondercard.jpeg"
+    "destination": "yondercard.jpeg",
+    "destination_72x72": "yondercard.jpeg"
   },
   {
     "alias": "yoti-digital-identity",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "youthincsports",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "yum-brands",
     "source": "yum-brands-200x200.jpeg",
-    "destination": "yum-brands.jpeg"
+    "destination": "yum-brands.jpeg",
+    "destination_72x72": "yum-brands.jpeg"
   },
   {
     "alias": "yunopay",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "zalando",
     "source": "zalando-200x200.jpeg",
-    "destination": "zalando.jpeg"
+    "destination": "zalando.jpeg",
+    "destination_72x72": "zalando.jpeg"
   },
   {
     "alias": "zalopay",
     "source": "zalopay-200x200.jpeg",
-    "destination": "zalopay.jpeg"
+    "destination": "zalopay.jpeg",
+    "destination_72x72": "zalopay.jpeg"
   },
   {
     "alias": "zama-ai",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "zattoo",
     "source": "zattoo-200x200.jpeg",
-    "destination": "zattoo.jpeg"
+    "destination": "zattoo.jpeg",
+    "destination_72x72": "zattoo.jpeg"
   },
   {
     "alias": "zegocover",
     "source": "zego-200x200.jpeg",
-    "destination": "zegocover.jpeg"
+    "destination": "zegocover.jpeg",
+    "destination_72x72": "zegocover.jpeg"
   },
   {
     "alias": "zelis",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "zeller",
     "source": "zeller-200x200.jpeg",
-    "destination": "zeller.jpeg"
+    "destination": "zeller.jpeg",
+    "destination_72x72": "zeller.jpeg"
   },
   {
     "alias": "zendesk",
     "source": "zendesk-120x120.png",
-    "destination": "zendesk.png"
+    "destination": "zendesk.png",
+    "destination_72x72": "zendesk.png"
   },
   {
     "alias": "zenport",
     "source": "zenport-180x180.webp",
-    "destination": "zenport.png"
+    "destination": "zenport.png",
+    "destination_72x72": "zenport.png"
   },
   {
     "alias": "zep-ai",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "zeptolab",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "zillow",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "zoom",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "zscaler",
     "source": "zscaler-180x180.png",
-    "destination": "zscaler.png"
+    "destination": "zscaler.png",
+    "destination_72x72": "zscaler.png"
   },
   {
     "alias": "zubale",
     "source": "",
-    "destination": ""
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "zurich-instruments-ag",
     "source": "zurich-instruments-ag-200x200.jpeg",
-    "destination": "zurich-instruments-ag.jpeg"
+    "destination": "zurich-instruments-ag.jpeg",
+    "destination_72x72": "zurich-instruments-ag.jpeg"
   }
 ]

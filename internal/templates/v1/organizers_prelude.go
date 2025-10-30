@@ -245,6 +245,10 @@ func isIndeedVacancyURL(s string) bool {
 	return strings.Contains(s, "https://www.indeed.com/viewjob")
 }
 
+func isXingVacancyURL(s string) bool {
+	return strings.Contains(s, "https://www.xing.com/jobs/")
+}
+
 func logo(l domain.CompanyLogo) string {
 	if l.V2 != "" {
 		return "/assets/unstable/logos/112x56/" + l.V2
@@ -256,6 +260,14 @@ func logo(l domain.CompanyLogo) string {
 
 	if l.V0 != "" {
 		return "/assets/unstable/logos-v0/" + l.V0
+	}
+
+	return "/assets/images/pages/common-images/unknown.svg"
+}
+
+func logo72x72(l domain.CompanyLogo) string {
+	if l.V2 != "" {
+		return "/assets/unstable/logos/72x72/" + l.V2
 	}
 
 	return "/assets/images/pages/common-images/unknown.svg"

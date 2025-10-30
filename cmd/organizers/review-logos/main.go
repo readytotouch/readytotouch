@@ -20,9 +20,10 @@ const (
 )
 
 type Logo struct {
-	Alias       string `json:"alias"`
-	Source      string `json:"source"`
-	Destination string `json:"destination"`
+	Alias            string `json:"alias"`
+	Source           string `json:"source"`
+	Destination      string `json:"destination"`
+	Destination72x72 string `json:"destination_72x72"`
 }
 
 func main() {
@@ -59,7 +60,7 @@ func syncLogos(companies []domain.CompanyProfile) {
 			continue
 		}
 
-		if logo.Destination != "" {
+		if logo.Destination != "" && logo.Destination72x72 != "" {
 			// Logo already resized
 
 			continue
@@ -77,10 +78,20 @@ func syncLogos(companies []domain.CompanyProfile) {
 		}
 
 		logo.Destination = logo.Alias + ext
+		logo.Destination72x72 = logo.Destination
 
-		err := resize.Resize("./public/logos/original/"+logo.Source, "./public/logos/112x56/"+logo.Destination)
-		if err != nil {
-			panic(fmt.Sprintf("failed to resize logo %s: %v", logo.Source, err))
+		{
+			err := resize.Resize112x56("./public/logos/original/"+logo.Source, "./public/logos/112x56/"+logo.Destination)
+			if err != nil {
+				panic(fmt.Sprintf("failed to resize logo %s: %v", logo.Source, err))
+			}
+		}
+
+		{
+			err := resize.Resize72x72("./public/logos/original/"+logo.Source, "./public/logos/72x72/"+logo.Destination)
+			if err != nil {
+				panic(fmt.Sprintf("failed to resize logo %s: %v", logo.Source, err))
+			}
 		}
 
 		logoMap[company.LinkedInProfile.Alias] = logo

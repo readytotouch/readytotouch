@@ -164,7 +164,7 @@ func main() {
 	r.GET("/v1", organizerController.IndexV1)
 	r.GET("/v2", organizerController.IndexV2)
 	r.GET("/v3", organizerController.IndexV3)
-	r.GET("/", organizerController.IndexV2)
+	r.GET("/", organizerController.IndexV3)
 
 	r.GET("/api/v1/users/registration/stats/daily.json", userController.RegistrationDailyCountStats)
 	r.GET("/api/v1/users/online/stats/daily.json", onlineController.DailyCountStats)
@@ -185,27 +185,27 @@ func main() {
 	r.GET("/mojo/welcome", organizerController.Welcome)
 
 	r.GET("/golang/companies/ukraine", organizerController.GolangCompaniesUkraine)
-	r.GET("/golang/companies", organizerController.CompaniesV2)
+	r.GET("/golang/companies", organizerController.CompaniesV3)
 	r.GET("/golang/companies/v1", organizerController.CompaniesV1)
 	r.GET("/golang/companies/v2", organizerController.CompaniesV2)
 	r.GET("/golang/companies/v3", organizerController.CompaniesV3)
-	r.GET("/golang/companies/:company_alias", organizerController.CompanyV2)
+	r.GET("/golang/companies/:company_alias", organizerController.CompanyV3)
 	r.GET("/golang/companies/:company_alias/v1", organizerController.CompanyV1)
 	r.GET("/golang/companies/:company_alias/v2", organizerController.CompanyV2)
 	r.GET("/golang/companies/:company_alias/v3", organizerController.CompanyV3)
-	r.GET("/golang/jobs", organizerController.JobsV2)
+	r.GET("/golang/jobs", organizerController.JobsV3)
 	r.GET("/golang/jobs/v2", organizerController.JobsV2)
 	r.GET("/golang/jobs/v3", organizerController.JobsV3)
 	r.GET("/golang/communities", organizerController.GolangCommunities)
-	r.GET("/rust/companies", organizerController.CompaniesV2)
+	r.GET("/rust/companies", organizerController.CompaniesV3)
 	r.GET("/rust/companies/v1", organizerController.CompaniesV1)
 	r.GET("/rust/companies/v2", organizerController.CompaniesV2)
 	r.GET("/rust/companies/v3", organizerController.CompaniesV3)
-	r.GET("/rust/companies/:company_alias", organizerController.CompanyV2)
+	r.GET("/rust/companies/:company_alias", organizerController.CompanyV3)
 	r.GET("/rust/companies/:company_alias/v1", organizerController.CompanyV1)
 	r.GET("/rust/companies/:company_alias/v2", organizerController.CompanyV2)
 	r.GET("/rust/companies/:company_alias/v3", organizerController.CompanyV3)
-	r.GET("/rust/jobs", organizerController.JobsV2)
+	r.GET("/rust/jobs", organizerController.JobsV3)
 	r.GET("/rust/jobs/v2", organizerController.JobsV2)
 	r.GET("/rust/jobs/v3", organizerController.JobsV3)
 	r.GET("/rust/communities", organizerController.RustCommunities)
@@ -213,7 +213,7 @@ func main() {
 	r.GET("/zig/companies/v1", organizerController.Waitlist)
 	r.GET("/zig/companies/v2", organizerController.Waitlist)
 	r.GET("/zig/companies/v3", organizerController.Waitlist)
-	r.GET("/zig/companies/:company_alias", organizerController.CompanyV2)
+	r.GET("/zig/companies/:company_alias", organizerController.CompanyV3)
 	r.GET("/zig/companies/:company_alias/v1", organizerController.CompanyV1)
 	r.GET("/zig/companies/:company_alias/v2", organizerController.CompanyV2)
 	r.GET("/zig/companies/:company_alias/v3", organizerController.CompanyV3)
@@ -221,27 +221,27 @@ func main() {
 	r.GET("/zig/jobs/v2", organizerController.Waitlist)
 	r.GET("/zig/jobs/v3", organizerController.Waitlist)
 	r.GET("/zig/communities", organizerController.ZigCommunities)
-	r.GET("/scala/companies", organizerController.CompaniesV2)
+	r.GET("/scala/companies", organizerController.CompaniesV3)
 	r.GET("/scala/companies/v1", organizerController.CompaniesV1)
 	r.GET("/scala/companies/v2", organizerController.CompaniesV2)
 	r.GET("/scala/companies/v3", organizerController.CompaniesV3)
-	r.GET("/scala/companies/:company_alias", organizerController.CompanyV2)
+	r.GET("/scala/companies/:company_alias", organizerController.CompanyV3)
 	r.GET("/scala/companies/:company_alias/v1", organizerController.CompanyV1)
 	r.GET("/scala/companies/:company_alias/v2", organizerController.CompanyV2)
 	r.GET("/scala/companies/:company_alias/v3", organizerController.CompanyV3)
-	r.GET("/scala/jobs", organizerController.JobsV2)
+	r.GET("/scala/jobs", organizerController.JobsV3)
 	r.GET("/scala/jobs/v2", organizerController.JobsV2)
 	r.GET("/scala/jobs/v3", organizerController.JobsV3)
 	r.GET("/scala/communities", organizerController.ScalaCommunities)
-	r.GET("/elixir/companies", organizerController.CompaniesV2)
+	r.GET("/elixir/companies", organizerController.CompaniesV3)
 	r.GET("/elixir/companies/v1", organizerController.CompaniesV1)
 	r.GET("/elixir/companies/v2", organizerController.CompaniesV2)
 	r.GET("/elixir/companies/v3", organizerController.CompaniesV3)
-	r.GET("/elixir/companies/:company_alias", organizerController.CompanyV2)
+	r.GET("/elixir/companies/:company_alias", organizerController.CompanyV3)
 	r.GET("/elixir/companies/:company_alias/v1", organizerController.CompanyV1)
 	r.GET("/elixir/companies/:company_alias/v2", organizerController.CompanyV2)
 	r.GET("/elixir/companies/:company_alias/v3", organizerController.CompanyV3)
-	r.GET("/elixir/jobs", organizerController.JobsV2)
+	r.GET("/elixir/jobs", organizerController.JobsV3)
 	r.GET("/elixir/jobs/v2", organizerController.JobsV2)
 	r.GET("/elixir/jobs/v3", organizerController.JobsV3)
 	r.GET("/elixir/communities", organizerController.ElixirCommunities)
@@ -249,7 +249,7 @@ func main() {
 	r.GET("/erlang/companies/v1", organizerController.Waitlist)
 	r.GET("/erlang/companies/v2", organizerController.Waitlist)
 	r.GET("/erlang/companies/v3", organizerController.Waitlist)
-	r.GET("/erlang/companies/:company_alias", organizerController.CompanyV2)
+	r.GET("/erlang/companies/:company_alias", organizerController.CompanyV3)
 	r.GET("/erlang/companies/:company_alias/v1", organizerController.CompanyV1)
 	r.GET("/erlang/companies/:company_alias/v2", organizerController.CompanyV2)
 	r.GET("/erlang/companies/:company_alias/v3", organizerController.CompanyV3)
@@ -257,27 +257,27 @@ func main() {
 	r.GET("/erlang/jobs/v2", organizerController.JobsV2)
 	r.GET("/erlang/jobs/v3", organizerController.JobsV3)
 	r.GET("/erlang/communities", organizerController.TODO)
-	r.GET("/clojure/companies", organizerController.CompaniesV2)
+	r.GET("/clojure/companies", organizerController.CompaniesV3)
 	r.GET("/clojure/companies/v1", organizerController.CompaniesV1)
 	r.GET("/clojure/companies/v2", organizerController.CompaniesV2)
 	r.GET("/clojure/companies/v3", organizerController.CompaniesV3)
-	r.GET("/clojure/companies/:company_alias", organizerController.CompanyV2)
+	r.GET("/clojure/companies/:company_alias", organizerController.CompanyV3)
 	r.GET("/clojure/companies/:company_alias/v1", organizerController.CompanyV1)
 	r.GET("/clojure/companies/:company_alias/v2", organizerController.CompanyV2)
 	r.GET("/clojure/companies/:company_alias/v3", organizerController.CompanyV3)
-	r.GET("/clojure/jobs", organizerController.JobsV2)
+	r.GET("/clojure/jobs", organizerController.JobsV3)
 	r.GET("/clojure/jobs/v2", organizerController.JobsV2)
 	r.GET("/clojure/jobs/v3", organizerController.JobsV3)
 	r.GET("/clojure/communities", organizerController.ClojureCommunities)
-	r.GET("/haskell/companies", organizerController.CompaniesV2)
+	r.GET("/haskell/companies", organizerController.CompaniesV3)
 	r.GET("/haskell/companies/v1", organizerController.CompaniesV1)
 	r.GET("/haskell/companies/v2", organizerController.CompaniesV2)
 	r.GET("/haskell/companies/v3", organizerController.CompaniesV3)
-	r.GET("/haskell/companies/:company_alias", organizerController.CompanyV2)
+	r.GET("/haskell/companies/:company_alias", organizerController.CompanyV3)
 	r.GET("/haskell/companies/:company_alias/v1", organizerController.CompanyV1)
 	r.GET("/haskell/companies/:company_alias/v2", organizerController.CompanyV2)
 	r.GET("/haskell/companies/:company_alias/v3", organizerController.CompanyV3)
-	r.GET("/haskell/jobs", organizerController.JobsV2)
+	r.GET("/haskell/jobs", organizerController.JobsV3)
 	r.GET("/haskell/jobs/v2", organizerController.JobsV2)
 	r.GET("/haskell/jobs/v3", organizerController.JobsV3)
 	r.GET("/haskell/communities", organizerController.TODO)
@@ -285,7 +285,7 @@ func main() {
 	r.GET("/fsharp/companies/v1", organizerController.Waitlist)
 	r.GET("/fsharp/companies/v2", organizerController.Waitlist)
 	r.GET("/fsharp/companies/v3", organizerController.Waitlist)
-	r.GET("/fsharp/companies/:company_alias", organizerController.CompanyV2)
+	r.GET("/fsharp/companies/:company_alias", organizerController.CompanyV3)
 	r.GET("/fsharp/companies/:company_alias/v1", organizerController.CompanyV1)
 	r.GET("/fsharp/companies/:company_alias/v2", organizerController.CompanyV2)
 	r.GET("/fsharp/companies/:company_alias/v3", organizerController.CompanyV3)
@@ -297,7 +297,7 @@ func main() {
 	r.GET("/ocaml/companies/v1", organizerController.Waitlist)
 	r.GET("/ocaml/companies/v2", organizerController.Waitlist)
 	r.GET("/ocaml/companies/v3", organizerController.Waitlist)
-	r.GET("/ocaml/companies/:company_alias", organizerController.CompanyV2)
+	r.GET("/ocaml/companies/:company_alias", organizerController.CompanyV3)
 	r.GET("/ocaml/companies/:company_alias/v1", organizerController.CompanyV1)
 	r.GET("/ocaml/companies/:company_alias/v2", organizerController.CompanyV2)
 	r.GET("/ocaml/companies/:company_alias/v3", organizerController.CompanyV3)
@@ -309,7 +309,7 @@ func main() {
 	r.GET("/gleam/companies/v1", organizerController.Waitlist)
 	r.GET("/gleam/companies/v2", organizerController.Waitlist)
 	r.GET("/gleam/companies/v3", organizerController.Waitlist)
-	r.GET("/gleam/companies/:company_alias", organizerController.CompanyV2)
+	r.GET("/gleam/companies/:company_alias", organizerController.CompanyV3)
 	r.GET("/gleam/companies/:company_alias/v1", organizerController.CompanyV1)
 	r.GET("/gleam/companies/:company_alias/v2", organizerController.CompanyV2)
 	r.GET("/gleam/companies/:company_alias/v3", organizerController.CompanyV3)
@@ -321,7 +321,7 @@ func main() {
 	r.GET("/mojo/companies/v1", organizerController.Waitlist)
 	r.GET("/mojo/companies/v2", organizerController.Waitlist)
 	r.GET("/mojo/companies/v3", organizerController.Waitlist)
-	r.GET("/mojo/companies/:company_alias", organizerController.CompanyV2)
+	r.GET("/mojo/companies/:company_alias", organizerController.CompanyV3)
 	r.GET("/mojo/companies/:company_alias/v1", organizerController.CompanyV1)
 	r.GET("/mojo/companies/:company_alias/v2", organizerController.CompanyV2)
 	r.GET("/mojo/companies/:company_alias/v3", organizerController.CompanyV3)
@@ -420,23 +420,23 @@ func main() {
 		StaticFile("/design/organizers-auth", "./public/design/organizer-main-page-auth.html").
 		GET("/design/:language/welcome", s("./public/design/organizer-welcome.html")).
 		GET("/design/:language/companies/ukraine", s("./public/design/golang-companies-organizer.html")).
-		GET("/design/:language/companies/:company_alias", s("./public/design/organizer-statistics.html")).
+		GET("/design/:language/companies/:company_alias", s("./public/design-v3/organizer-company-responsive-auth.html")).
 		GET("/design/:language/companies/:company_alias/v1", s("./public/design-v1/organizer-statistics.html")).
 		GET("/design/:language/companies/:company_alias/v2", s("./public/design/organizer-statistics.html")).
 		GET("/design/:language/companies/:company_alias/v3", s("./public/design-v3/organizer-company-responsive-auth.html")).
-		GET("/design/:language/companies", s("./public/design/organizer-companies.html")).
+		GET("/design/:language/companies", s("./public/design-v3/organizer-companies-responsive.html")).
 		GET("/design/:language/companies/v1", s("./public/design-v1/organizer-companies.html")).
 		GET("/design/:language/companies/v2", s("./public/design/organizer-companies.html")).
 		GET("/design/:language/companies/v3", s("./public/design-v3/organizer-companies-responsive.html")).
 		GET("/design/:language/companies/v3/auth", s("./public/design-v3/organizer-companies-responsive-auth.html")).
-		GET("/design/:language/jobs", s("./public/design/organizer-vacancies.html")).
+		GET("/design/:language/jobs", s("./public/design-v3/organizer-vacancies-responsive-auth.html")).
 		// v1 has never existed for the jobs page
 		// GET("/design/:language/jobs/v1", s("./public/design/organizer-vacancies.html")).
 		GET("/design/:language/jobs/v2", s("./public/design/organizer-vacancies.html")).
 		GET("/design/:language/jobs/v3", s("./public/design-v3/organizer-vacancies-responsive-auth.html")).
 		GET("/design/:language/jobs/subscribe", s("./public/design/organizer-vacancies-subscribe.html")).
 		GET("/design/:language/jobs/unsubscribe", s("./public/design/organizer-vacancies-unsubscribe.html")).
-		GET("/design/:language/vacancies", s("./public/design/organizer-vacancies.html")).
+		GET("/design/:language/vacancies", s("./public/design-v3/organizer-vacancies-responsive-auth.html")).
 		GET("/design/:language/vacancies/subscribe", s("./public/design/organizer-vacancies-subscribe.html")).
 		GET("/design/:language/vacancies/unsubscribe", s("./public/design/organizer-vacancies-unsubscribe.html")).
 		GET("/design/golang/communities", s("./public/design/organizer-go-communities.html")).
@@ -463,6 +463,7 @@ func main() {
 		Static("/assets/fonts", "./public/assets/fonts").
 		Static("/assets/js", "./public/assets/js").
 		Static("/assets/unstable/logos/112x56/", "./public/logos/112x56/").
+		Static("/assets/unstable/logos/72x72/", "./public/logos/72x72/").
 		Static("/assets/unstable/logos-v0/", "./public/logos-v0/adapted/").
 		Static("/assets/unstable/logos-v1/", "./public/logos-v1/adapted/").
 

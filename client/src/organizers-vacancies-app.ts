@@ -20,6 +20,9 @@ import {renderSelected} from "./framework/selected_criteria";
 import {firstQuerySelector} from "./framework/query_selector";
 import {setStateByURLMapper} from "./framework/set_state_by_url";
 import {toEnter} from "./framework/enter";
+import {responsiveHeaderProfileWidget} from "./responsive-header-profile-widget";
+import {githubStarsWidget} from "./github-stars-widget";
+import {responsiveFilterWidget} from "./responsive-filter-widget";
 
 function markVacancyFavorite(vacancyId: number, favorite: boolean, callback: () => void) {
     fetch(`/api/v1/vacancies/${vacancyId}/favorite.json`, {
@@ -73,7 +76,8 @@ const $inRustFoundationMembersCheckbox = document.getElementById("js-criteria-ru
 const $remoteCheckbox = document.getElementById("js-criteria-remote") as HTMLInputElement;
 const $inFavoritesCheckbox = document.getElementById("js-criteria-in-favorites") as HTMLInputElement;
 const $selectedCriteria = document.getElementById("js-vacancy-selected-criteria");
-const $reset = document.getElementById("js-criteria-reset");
+// "#js-criteria-reset" for backward compatibility
+const $resetButtons = document.querySelectorAll("#js-criteria-reset, .js-criteria-reset") as any as Array<HTMLElement>;
 
 $typeCheckboxes.onChange(function (state: Array<string>) {
     urlStateContainer.setArrayCriteria(VACANCY_COMPANY_TYPE_CRITERIA_NAME, state);
@@ -171,7 +175,9 @@ function renderSelectedCriteriaByURL() {
     $selectedCriteria.append(...$views);
 
     const visibility = $views.length === 0 ? "hidden" : "";
-    $reset.style.visibility = visibility;
+    for (const $resetButton of $resetButtons) {
+        $resetButton.style.visibility = visibility;
+    }
     $selectedCriteria.parentElement.style.visibility = visibility;
 }
 
@@ -228,13 +234,15 @@ $search.addEventListener("change", function () {
 });
 $search.addEventListener("search", handleSearch);
 
-$reset.addEventListener("click", function () {
-    urlStateContainer.keep(VACANCY_SEARCH_QUERY);
-    urlStateContainer.setPage(1);
-    urlStateContainer.storeCurrentState();
+for (const $resetButton of $resetButtons) {
+    $resetButton.addEventListener("click", function () {
+        urlStateContainer.keep(VACANCY_SEARCH_QUERY);
+        urlStateContainer.setPage(1);
+        urlStateContainer.storeCurrentState();
 
-    updatePageState();
-});
+        updatePageState();
+    });
+}
 
 function updatePageState() {
     setStateByURL();
@@ -360,3 +368,9 @@ function search() {
 }
 
 updatePageState();
+
+responsiveHeaderProfileWidget();
+
+responsiveFilterWidget();
+
+githubStarsWidget();
