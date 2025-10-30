@@ -1907,7 +1907,15 @@
                       <button title="Hide vacancy" class="button-group__item button-group__item-sloth card__action-button-sloth"></button>
 					</aside>
                     <figure class="card__header card__header--organizer">
-                      <div class="card__logo-overlay"></div>
+                      <div class="card__logo-overlay">
+                        {% if vacancy.Company.Logo.V2 != "" %}
+                        <img
+                          class="card__logo"
+                          alt="{%s vacancy.Company.Name %} logo"
+                          src="{%s logo72x72(vacancy.Company.Logo) %}"
+                        />
+                        {% endif %}
+                      </div>
                       <figcaption class="card__header-caption">
                         <a href="/v/{%dl vacancy.ID %}" target="_blank" class="card__headline">{%s vacancy.Title %}</a>
                         <a href="/{%s organizerFeature.Organizer.Alias %}/companies/{%s vacancy.Company.Alias %}" target="_blank" class="card__sub-headline">{%s vacancy.Company.Name %}</a>

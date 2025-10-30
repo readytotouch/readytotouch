@@ -144,11 +144,11 @@
         </aside>
         <figure class="company-card__header">
           <div class="company-card__logo-overlay">
-            {% if false %}
-              <!-- TODO square logo -->
-              <img class="company-card__logo"
-                   alt="{%s company.Name %} logo"
-                   src="/assets/images/pages/organizer/logos/google.svg"
+            {% if company.Logo.V2 != "" %}
+              <img
+                class="company-card__logo"
+                alt="{%s company.Name %} logo"
+                src="{%s logo72x72(company.Logo) %}"
               />
             {% endif %}
           </div>
@@ -917,14 +917,13 @@
 
             <figure class="card__header card__header--organizer">
               <div class="card__logo-overlay">
-                {% comment %}
-                <!-- TODO logo -->
+                {% if vacancy.Company.Logo.V2 != "" %}
                 <img
                   class="card__logo"
-                  alt="ReadyToTouch logo"
-                  src="/assets/images/pages/vacancy/ready_to_touch_logo.svg"
+                  alt="{%s vacancy.Company.Name %} logo"
+                  src="{%s logo72x72(vacancy.Company.Logo) %}"
                 />
-                {% endcomment %}
+                {% endif %}
               </div>
               <figcaption class="card__header-caption">
                 <a href="/v/{%dl vacancy.ID %}" target="_blank" class="card__headline">{%s vacancy.Title %}</a>

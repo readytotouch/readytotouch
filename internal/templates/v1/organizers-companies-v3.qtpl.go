@@ -452,6 +452,19 @@ func StreamOrganizersCompaniesV3(qw422016 *qt422016.Writer,
                 <figure class="card__header">
                   <div class="card__logo-overlay">
                     `)
+		if company.Logo.V2 != "" {
+			qw422016.N().S(`
+                    <img
+                      class="card__logo"
+                      alt="`)
+			qw422016.E().S(company.Name)
+			qw422016.N().S(` logo"
+                      src="`)
+			qw422016.E().S(logo72x72(company.Logo))
+			qw422016.N().S(`"
+                    />
+                    `)
+		}
 		qw422016.N().S(`
                   </div>
                   <figcaption class="card__header-caption">

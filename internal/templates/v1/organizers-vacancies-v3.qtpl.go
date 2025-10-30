@@ -448,7 +448,23 @@ func StreamOrganizersVacanciesV3(qw422016 *qt422016.Writer,
                       <button title="Hide vacancy" class="button-group__item button-group__item-sloth card__action-button-sloth"></button>
 					</aside>
                     <figure class="card__header card__header--organizer">
-                      <div class="card__logo-overlay"></div>
+                      <div class="card__logo-overlay">
+                        `)
+		if vacancy.Company.Logo.V2 != "" {
+			qw422016.N().S(`
+                        <img
+                          class="card__logo"
+                          alt="`)
+			qw422016.E().S(vacancy.Company.Name)
+			qw422016.N().S(` logo"
+                          src="`)
+			qw422016.E().S(logo72x72(vacancy.Company.Logo))
+			qw422016.N().S(`"
+                        />
+                        `)
+		}
+		qw422016.N().S(`
+                      </div>
                       <figcaption class="card__header-caption">
                         <a href="/v/`)
 		qw422016.N().DL(vacancy.ID)

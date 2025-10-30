@@ -1908,14 +1908,13 @@
 
                 <figure class="card__header">
                   <div class="card__logo-overlay">
-                    {% comment %}
-                    <!-- TODO square logo -->
+                    {% if company.Logo.V2 != "" %}
                     <img
                       class="card__logo"
                       alt="{%s company.Name %} logo"
-                      src="/assets/images/pages/organizer/logos/google.svg"
+                      src="{%s logo72x72(company.Logo) %}"
                     />
-                    {% endcomment %}
+                    {% endif %}
                   </div>
                   <figcaption class="card__header-caption">
                     <a href="{%s organizerFeature.Path %}/{%s company.LinkedInProfile.Alias %}" class="card__headline vacancy__link">{%s company.Name %}</a>
