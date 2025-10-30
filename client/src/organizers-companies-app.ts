@@ -23,6 +23,7 @@ import {toEnter} from "./framework/enter";
 import {responsiveHeaderProfileWidget} from "./responsive-header-profile-widget";
 import {githubStarsWidget} from "./github-stars-widget";
 import {responsiveFilterWidget} from "./responsive-filter-widget";
+import {responsiveCompanyShowMoreWidget} from "./responsive-company-show-more-widget";
 
 function markCompanyFavorite(companyId: number, favorite: boolean, callback: () => void) {
     fetch(`/api/v1/companies/${companyId}/favorite.json`, {
@@ -382,5 +383,7 @@ updatePageState();
 responsiveHeaderProfileWidget();
 
 responsiveFilterWidget();
+
+responsiveCompanyShowMoreWidget();
 
 githubStarsWidget();
