@@ -188,6 +188,16 @@ func StreamOrganizersVacanciesV3(qw422016 *qt422016.Writer,
 	qw422016.N().S(`
         <img class="search__icon" alt="Search icon" width="20" height="20" src="/assets/images/pages/common/search.svg" />
       </div>
+      <button type="button" class="mobile-filter js-mobile-open-filter-container-button">
+        <img
+          src="/assets/images/pages/common/filter.svg"
+          alt="Filter icon"
+          width="16"
+          height="16"
+        />
+        `)
+	qw422016.N().S(`
+      </button>
       `)
 	qw422016.N().S(`
     </div>
@@ -197,12 +207,12 @@ func StreamOrganizersVacanciesV3(qw422016 *qt422016.Writer,
     <div class="container">
       <div class="search-result__wrapper">
         <!-- filters -->
-        <aside class="search-result__filters">
+        <aside class="search-result__filters js-filter-container">
           <div class="search-result__filter-group search-result__filter-group--wide">
             <div class="search-result__filter-header">
               <h2 class="search-result__filter-headline">Filters:</h2>
-              <button id="js-criteria-reset" type="button" class="button button--light-link search-result__filter-headline-reset" style="visibility: hidden;">Reset all</button>
-              <button type="button" class="button button--light-link search-result__filter-headline-reset-mobile js-filter-headline-reset-mobile">
+              <button id="js-criteria-reset" type="button" class="button button--light-link search-result__filter-headline-reset js-criteria-reset" style="visibility: hidden;">Reset all</button>
+              <button type="button" class="button button--light-link search-result__filter-headline-reset-mobile js-mobile-close-filter-container-button">
                 <img src="/assets/images/pages/common/cross-thin.svg" alt="cross icon" width="24" height="24">
               </button>
             </div>
@@ -353,8 +363,8 @@ func StreamOrganizersVacanciesV3(qw422016 *qt422016.Writer,
 
             </div>
             <footer class="search-result__filter-footer">
-              <button type="button" class="button button--light-link search-result__filter-footer-button">Reset all</button>
-              <button type="button" class="button button--black button--small">Apply</button>
+              <button type="button" class="button button--light-link search-result__filter-footer-button js-criteria-reset">Reset all</button>
+              <button type="button" class="button button--black button--small js-mobile-close-filter-container-button">Apply</button>
             </footer>
           </div>
         </aside>

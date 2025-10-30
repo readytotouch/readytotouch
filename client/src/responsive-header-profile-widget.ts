@@ -1,20 +1,5 @@
 import {maxWidth, minWidth} from "./responsive-constants";
-
-function debounce(handler: () => void, wait: number) {
-    let timeout
-
-    const later = function () {
-        timeout = null;
-
-        handler();
-    };
-
-    return function () {
-        clearTimeout(timeout)
-
-        timeout = setTimeout(later, wait)
-    }
-}
+import {debounce} from "./debounce";
 
 function hamburgerToggle($hamburger, $body, $mainHeaderNav) {
     const changeVisible = function (active) {
@@ -33,7 +18,6 @@ function hamburgerToggle($hamburger, $body, $mainHeaderNav) {
         }
     }
 
-    // hamburger menu action for mobile
     $hamburger.addEventListener("click", function () {
         changeVisible($hamburger.classList.contains("is-active"));
     });
@@ -77,7 +61,6 @@ export function responsiveHeaderProfileWidget() {
     const $modalProfile = document.querySelector(".js-modal-profile");
     const $headerProfileAvatar = document.querySelector(".js-header-profile-avatar");
 
-    // call hamburger menu show/hide module
     if ($hamburger !== null) {
         hamburgerToggle($hamburger, $body, $mainHeaderNav)
     }
