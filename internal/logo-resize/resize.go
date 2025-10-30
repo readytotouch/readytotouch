@@ -13,7 +13,7 @@ import (
 	"golang.org/x/image/webp"
 )
 
-func Resize(inputPath string, outputPath string) error {
+func Resize112x56(inputPath string, outputPath string) error {
 	inFile, err := os.Open(inputPath)
 	if err != nil {
 		panic(err)
@@ -66,7 +66,6 @@ func Resize(inputPath string, outputPath string) error {
 		draw.Draw(finalImg, image.Rect(offsetX, offsetY, offsetX+56, offsetY+56), dstSmall, image.Point{}, draw.Over)
 
 	case width == 2*height:
-		// прямокутник 2x1
 		dstFull := image.NewRGBA(image.Rect(0, 0, 112, 56))
 		draw.CatmullRom.Scale(dstFull, dstFull.Bounds(), srcImg, bounds, draw.Over, nil)
 
@@ -76,7 +75,6 @@ func Resize(inputPath string, outputPath string) error {
 		return errors.New("unsupported image aspect ratio, only square and 2:1 aspect ratios are supported")
 	}
 
-	// Зберігаємо результат
 	outFile, err := os.Create(outputPath)
 	if err != nil {
 		panic(err)
@@ -99,3 +97,66 @@ func Resize(inputPath string, outputPath string) error {
 
 	return nil
 }
+
+func Resize72x72(inputPath string, outputPath string) error {
+	inFile, err := os.Open(inputPath)
+	if err != nil {
+		panic(err)
+	}
+	defer inFile.Close()
+
+	var srcImg image.Image
+	switch strings.ToLower(filepath.Ext(inputPath)) {
+	case ".webp":
+		srcImg, err = webp.Decode(inFile)
+		if err != nil {
+			panic(err)
+		}
+	default:
+		srcImg, _, err = image.Decode(inFile)
+		if err != nil {
+			panic(err)
+		}
+	}
+
+	var (
+		bounds   = srcImg.Bounds()
+		width    = bounds.Dx()
+		height   = bounds.Dy()
+		finalImg = image.NewRGBA(image.Rect(0, 0, 72, 72))
+	)
+
+	switch {
+	case width == height:
+		dstFull := image.NewRGBA(image.Rect(0, 0, 72, 72))
+		draw.CatmullRom.Scale(dstFull, dstFull.Bounds(), srcImg, bounds, draw.Over, nil)
+
+		draw.Draw(finalImg, dstFull.Bounds(), dstFull, image.Point{}, draw.Over)
+
+	default:
+		return errors.New("unsupported image aspect ratio, only square and 2:1 aspect ratios are supported")
+	}
+
+	outFile, err := os.Create(outputPath)
+	if err != nil {
+		panic(err)
+	}
+	defer outFile.Close()
+
+	if strings.HasSuffix(strings.ToLower(outputPath), ".png") {
+		err = png.Encode(outFile, finalImg)
+		if err != nil {
+			return err
+		}
+
+		return nil
+	}
+
+	err = jpeg.Encode(outFile, finalImg, &jpeg.Options{Quality: 90})
+	if err != nil {
+		return err
+	}
+
+	return nil
+}
+
