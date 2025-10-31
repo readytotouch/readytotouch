@@ -1842,7 +1842,7 @@
 
           <div class="search-result__list">
             <div class="search-result__top-actions">
-              <p class="search-result-found"><span id="js-result-count" class="search-result-found__amount">{%d len(companies) %}</span> results</p>
+              <p class="search-result-found"><span id="js-result-count" class="search-result-found__amount">{%d len(vacancies) %}</span> results</p>
               {% comment %}
               <!-- TODO this section -->
               <div class="sorter sorter--mobile">
