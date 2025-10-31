@@ -1958,11 +1958,13 @@
                   {% else %}
                     <a href="{%s company.Blog %}" target="_blank" class="card__top-link button-link">Dev Blog</a>
                   {% endif %}
+                  {% comment %}
                   {% if company.ReferralProgram == "" %}
                     <span class="card__top-link button-link disabled">Referral program</span>
                   {% else %}
                     <a href="{%s company.ReferralProgram %}" target="_blank" class="card__top-link button-link">Referral program</a>
                   {% endif %}
+                  {% endcomment %}
                 </div>
 
                 <div class="card__info">
