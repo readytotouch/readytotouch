@@ -518,7 +518,7 @@ func StreamOrganizersVacanciesV3(qw422016 *qt422016.Writer,
                       </div>
                       <a href="/v/`)
 		qw422016.N().DL(vacancy.ID)
-		qw422016.N().S(`" target="_blank" class="button button--bordered-gray button--gap-images">
+		qw422016.N().S(`" target="_blank" class="button button--bordered-gray button--gap-images card__footer-button">
                         `)
 		if isLinkedInVacancyURL(vacancy.URL) {
 			qw422016.N().S(`
@@ -547,6 +547,16 @@ func StreamOrganizersVacanciesV3(qw422016 *qt422016.Writer,
                             height="20"
                             src="/assets/images/pages/organizer/indeed.png"
                             alt="Indeed logo"
+                            class="hero__button-icon"
+                          />
+                        `)
+		} else if isXingVacancyURL(vacancy.URL) {
+			qw422016.N().S(`
+                          <img
+                            width="20"
+                            height="20"
+                            src="/assets/images/pages/organizer/xing.svg"
+                            alt="XING logo"
                             class="hero__button-icon"
                           />
                         `)

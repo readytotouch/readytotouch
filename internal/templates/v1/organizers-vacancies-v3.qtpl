@@ -1965,7 +1965,7 @@
                           <figcaption class="card__figcaption">Monthly views: {%dl vacancyMonthlyViewsMap[vacancy.ID] %}</figcaption>
                         </figure>
                       </div>
-                      <a href="/v/{%dl vacancy.ID %}" target="_blank" class="button button--bordered-gray button--gap-images">
+                      <a href="/v/{%dl vacancy.ID %}" target="_blank" class="button button--bordered-gray button--gap-images card__footer-button">
                         {% if isLinkedInVacancyURL(vacancy.URL) %}
                           <img
                             width="20"
@@ -1988,6 +1988,14 @@
                             height="20"
                             src="/assets/images/pages/organizer/indeed.png"
                             alt="Indeed logo"
+                            class="hero__button-icon"
+                          />
+                        {% elseif isXingVacancyURL(vacancy.URL) %}
+                          <img
+                            width="20"
+                            height="20"
+                            src="/assets/images/pages/organizer/xing.svg"
+                            alt="XING logo"
                             class="hero__button-icon"
                           />
                         {% endif %}
