@@ -2863,7 +2863,18 @@ func companies20Shard() []domain.CompanyProfile {
 				},
 				domain.Scala: {
 					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Fullstack Java/Scala developer",
+							ShortDescription:     "Banking",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4314013932/",
+							Location:             "Trondheim, Trøndelag, Norway",
+							Date:                 mustDate("2025-11-05"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
 				},
 				domain.Elixir: {
 					GitHubRepositoriesCount: 0,
