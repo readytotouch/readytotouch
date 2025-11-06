@@ -123,10 +123,7 @@
           width="16"
           height="16"
         />
-        {% comment %}
-        <!-- TODO count -->
-        <span class="mobile-filter__counter">27</span>
-        {% endcomment %}
+        <span id="js-mobile-selected-criteria-count" class="mobile-filter__counter" style="visibility: hidden;">0</span>
       </button>
       {% comment %}
       <!-- TODO sorter -->

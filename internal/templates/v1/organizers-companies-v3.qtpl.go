@@ -195,8 +195,7 @@ func StreamOrganizersCompaniesV3(qw422016 *qt422016.Writer,
           width="16"
           height="16"
         />
-        `)
-	qw422016.N().S(`
+        <span id="js-mobile-selected-criteria-count" class="mobile-filter__counter" style="visibility: hidden;">0</span>
       </button>
       `)
 	qw422016.N().S(`
