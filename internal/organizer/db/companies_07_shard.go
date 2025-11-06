@@ -1253,6 +1253,16 @@ func companies07Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $160k/yr - $200k/yr
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Full Stack Software Engineer – Elixir",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4331732844/",
+							Location:             "New York, NY",
+							Date:                 mustDate("2025-11-01"),
+							WithSalary:           true, // $160k/yr - $200k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Clojure: {},
