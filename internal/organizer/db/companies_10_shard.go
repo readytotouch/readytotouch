@@ -2956,8 +2956,8 @@ func companies10Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4291342584/",
 							Location:             "Los Angeles Metropolitan Area",
-							Date:                 mustDate("2025-10-31"), // mustDate("2025-10-08", "2025-09-18"),
-							WithSalary:           true,                   // $150k/yr - $170k/yr
+							Date:                 mustDate("2025-10-31", "2025-10-08", "2025-09-18"),
+							WithSalary:           true, // $150k/yr - $170k/yr
 							Remote:               false,
 						},
 					},

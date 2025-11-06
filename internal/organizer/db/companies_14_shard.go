@@ -2357,6 +2357,16 @@ func companies14Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $150k/yr - $300k/yr
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Software Engineer – Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4280890834/",
+							Location:             "United States",
+							Date:                 mustDate("2025-11-01"),
+							WithSalary:           true, // $110k/yr - $270k/yr
+							Remote:               true,
+						},
 					},
 				},
 				domain.Zig:     {},
@@ -2678,6 +2688,16 @@ func companies14Shard() []domain.CompanyProfile {
 							Date:                 mustDate("2025-10-06"),
 							WithSalary:           false,
 							Remote:               true,
+						},
+						{
+							Title:                "Software Engineer – Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4311988455/",
+							Location:             "Manchester, England, United Kingdom",
+							Date:                 mustDate("2025-11-06"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 					},
 				},

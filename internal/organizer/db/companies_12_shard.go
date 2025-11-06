@@ -219,6 +219,16 @@ func companies12Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Principal Software Engineer (Rust)",
+							ShortDescription:     "Distributed Cloud",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4283983721/",
+							Location:             "Greater Seattle Area",
+							Date:                 mustDate("2025-11-06"),
+							WithSalary:           true, // $186.4k/yr - $279.6k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig:     {},

@@ -4577,7 +4577,7 @@ func companies03Shard() []domain.CompanyProfile {
 							Remote:               true,
 						},
 						{
-							Title:                "AI-Driven Engineer – Rust (PWD/PCD)",
+							Title:                "AI-Driven Engineer – Rust",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4255818917/",
@@ -4597,12 +4597,12 @@ func companies03Shard() []domain.CompanyProfile {
 							Remote:               true,
 						},
 						{
-							Title:                "AI-Driven Engineer – Rust",
+							Title:                "Engineer – Rust",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4255821793/",
 							Location:             "São Paulo, São Paulo, Brazil",
-							Date:                 mustDate("2025-10-14", "2025-09-22", "2025-09-01", "2025-08-11"),
+							Date:                 mustDate("2025-11-05", "2025-10-14", "2025-09-22", "2025-09-01", "2025-08-11"),
 							WithSalary:           false,
 							Remote:               true,
 						},
