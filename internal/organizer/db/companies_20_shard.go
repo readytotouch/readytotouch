@@ -3679,6 +3679,16 @@ func companies20Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $110k/yr - $120k/yr
 							Remote:               false,
 						},
+						{
+							Title:                "Clojure / Java Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4320054232/",
+							Location:             "Naperville, IL",
+							Date:                 mustDate("2025-10-31"),
+							WithSalary:           true, // $110k/yr - $120k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Haskell: {

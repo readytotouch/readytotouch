@@ -4366,6 +4366,16 @@ func companies12Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Clojure/ClojureScript Engineer",
+							ShortDescription:     "Fashion AI Automation",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4331755523/",
+							Location:             "New York, NY",
+							Date:                 mustDate("2025-11-02"),
+							WithSalary:           true, // $135k/yr - $155k/yr
+							Remote:               true,
+						},
 					},
 				},
 				domain.Haskell: {},
