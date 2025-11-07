@@ -785,6 +785,16 @@ func companies20Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4331739119/",
+							Location:             "Budapest, Budapest, Hungary",
+							Date:                 mustDate("2025-11-01"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
@@ -2007,7 +2017,8 @@ func companies20Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "sandboxaq",
+				Employees: "126",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-SandboxAQ-EI_IE7881847.11,20.htm",
@@ -2060,7 +2071,18 @@ func companies20Shard() []domain.CompanyProfile {
 				},
 				domain.Rust: {
 					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Staff Rust Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4319834867/",
+							Location:             "Canada",
+							Date:                 mustDate("2025-10-31"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
 				},
 				domain.Zig: {
 					GitHubRepositoriesCount: 0,
@@ -2483,7 +2505,7 @@ func companies20Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4312455087/",
 							Location:             "Warsaw, Mazowieckie, Poland",
-							Date:                 mustDate("2025-10-17"),
+							Date:                 mustDate("2025-11-06", "2025-10-17"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2842,7 +2864,7 @@ func companies20Shard() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Senior Golang Developer – Tietoevry Create",
+							Title:                "Senior Golang Developer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4289016402/",
@@ -2850,6 +2872,16 @@ func companies20Shard() []domain.CompanyProfile {
 							Date:                 mustDate("2025-08-22"),
 							WithSalary:           false,
 							Remote:               true,
+						},
+						{
+							Title:                "Golang Developer",
+							ShortDescription:     "Telecom",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4294098298/",
+							Location:             "Bengaluru, Karnataka, India",
+							Date:                 mustDate("2025-11-06"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 					},
 				},
@@ -2863,7 +2895,18 @@ func companies20Shard() []domain.CompanyProfile {
 				},
 				domain.Scala: {
 					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Fullstack Java/Scala developer",
+							ShortDescription:     "Banking",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4314013932/",
+							Location:             "Trondheim, Trøndelag, Norway",
+							Date:                 mustDate("2025-11-05"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
 				},
 				domain.Elixir: {
 					GitHubRepositoriesCount: 0,
@@ -3679,6 +3722,16 @@ func companies20Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $110k/yr - $120k/yr
 							Remote:               false,
 						},
+						{
+							Title:                "Clojure / Java Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4320054232/",
+							Location:             "Naperville, IL",
+							Date:                 mustDate("2025-10-31"),
+							WithSalary:           true, // $110k/yr - $120k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Haskell: {
@@ -4089,7 +4142,8 @@ func companies20Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "spire-global",
+				Employees: "411",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Spire-Global-EI_IE794910.11,23.htm",

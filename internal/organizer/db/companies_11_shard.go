@@ -1925,6 +1925,16 @@ func companies11Shard() []domain.CompanyProfile {
 							WithSalary:           true,
 							Remote:               false,
 						},
+						{
+							Title:                "Principal Rust Engineer",
+							ShortDescription:     "DeFi Trading",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4313441005/",
+							Location:             "Jersey City, NJ",
+							Date:                 mustDate("2025-11-02"),
+							WithSalary:           true, // $107k/yr - $216k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig: {},

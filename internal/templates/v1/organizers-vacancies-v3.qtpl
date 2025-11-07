@@ -123,10 +123,7 @@
           width="16"
           height="16"
         />
-        {% comment %}
-        <!-- TODO count -->
-        <span class="mobile-filter__counter">27</span>
-        {% endcomment %}
+        <span id="js-mobile-selected-criteria-count" class="mobile-filter__counter" style="visibility: hidden;">0</span>
       </button>
       {% comment %}
       <!-- TODO sorter -->
@@ -1842,7 +1839,7 @@
 
           <div class="search-result__list">
             <div class="search-result__top-actions">
-              <p class="search-result-found"><span id="js-result-count" class="search-result-found__amount">{%d len(companies) %}</span> results</p>
+              <p class="search-result-found"><span id="js-result-count" class="search-result-found__amount">{%d len(vacancies) %}</span> results</p>
               {% comment %}
               <!-- TODO this section -->
               <div class="sorter sorter--mobile">

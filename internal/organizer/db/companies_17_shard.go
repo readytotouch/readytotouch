@@ -330,6 +330,16 @@ func companies17Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Software Engineer (Java/Scala)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4334468004/",
+							Location:             "City Of London, England, United Kingdom",
+							Date:                 mustDate("2025-11-06"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Elixir:  {},
@@ -1418,6 +1428,16 @@ func companies17Shard() []domain.CompanyProfile {
 							Date:                 mustDate("2025-10-11"),
 							WithSalary:           true, // $110k/yr - $175k/yr
 							Remote:               true,
+						},
+						{
+							Title:                "Elixir Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4334670217/",
+							Location:             "Long Beach, CA",
+							Date:                 mustDate("2025-11-06"),
+							WithSalary:           true, // $90k/yr - $125k/yr
+							Remote:               false,
 						},
 					},
 				},

@@ -195,8 +195,7 @@ func StreamOrganizersVacanciesV3(qw422016 *qt422016.Writer,
           width="16"
           height="16"
         />
-        `)
-	qw422016.N().S(`
+        <span id="js-mobile-selected-criteria-count" class="mobile-filter__counter" style="visibility: hidden;">0</span>
       </button>
       `)
 	qw422016.N().S(`
@@ -381,7 +380,7 @@ func StreamOrganizersVacanciesV3(qw422016 *qt422016.Writer,
           <div class="search-result__list">
             <div class="search-result__top-actions">
               <p class="search-result-found"><span id="js-result-count" class="search-result-found__amount">`)
-	qw422016.N().D(len(companies))
+	qw422016.N().D(len(vacancies))
 	qw422016.N().S(`</span> results</p>
               `)
 	qw422016.N().S(`

@@ -219,6 +219,16 @@ func companies12Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Principal Software Engineer (Rust)",
+							ShortDescription:     "Distributed Cloud",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4283983721/",
+							Location:             "Greater Seattle Area",
+							Date:                 mustDate("2025-11-06"),
+							WithSalary:           true, // $186.4k/yr - $279.6k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig:     {},
@@ -2596,7 +2606,8 @@ func companies12Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "simulmedia",
+				Employees: "126",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Simulmedia-EI_IE722501.11,21.htm",
@@ -2630,7 +2641,7 @@ func companies12Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4314614526/",
 							Location:             "Greater Drohobych Area",
-							Date:                 mustDate("2025-10-15"),
+							Date:                 mustDate("2025-11-05", "2025-10-15"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -4333,7 +4344,8 @@ func companies12Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "stylitics",
+				Employees: "126",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Stylitics-EI_IE1873109.11,20.htm",
@@ -4365,6 +4377,16 @@ func companies12Shard() []domain.CompanyProfile {
 							Date:                 mustDate("2025-03-15"),
 							WithSalary:           false,
 							Remote:               false,
+						},
+						{
+							Title:                "Clojure/ClojureScript Engineer",
+							ShortDescription:     "Fashion AI Automation",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4331755523/",
+							Location:             "New York, NY",
+							Date:                 mustDate("2025-11-02"),
+							WithSalary:           true, // $135k/yr - $155k/yr
+							Remote:               true,
 						},
 					},
 				},
