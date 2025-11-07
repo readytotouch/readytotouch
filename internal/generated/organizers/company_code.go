@@ -1227,6 +1227,15 @@ var (
 		"lifemote-networks":                   1227, // Lifemote
 		"chilipiper":                          1228, // Chili Piper
 		"openvpn":                             1229, // OpenVPN Inc.
+		"wyndlabs":                            1230, // Wynd Labs
+		"webai-official":                      1231, // webAI
+		"perplexity-ai":                       1232, // Perplexity
+		"livekitco":                           1233, // LiveKit
+		"watergenics":                         1234, // Watergenics
+		"versedotinc":                         1235, // Verse
+		"lowrisc":                             1236, // lowRISC CIC
+		"polygon-io":                          1237, // Polygon.io
+		"reveniq":                             1238, // ReveniQ
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

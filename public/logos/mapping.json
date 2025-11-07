@@ -3564,6 +3564,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "livekitco",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
+  },
+  {
     "alias": "liveperson",
     "source": "liveperson-200x200.jpeg",
     "destination": "liveperson.jpeg",
@@ -3613,6 +3619,12 @@
   },
   {
     "alias": "lotusretails",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
+  },
+  {
+    "alias": "lowrisc",
     "source": "",
     "destination": "",
     "destination_72x72": ""
@@ -4728,6 +4740,12 @@
     "destination_72x72": "permutive.png"
   },
   {
+    "alias": "perplexity-ai",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
+  },
+  {
     "alias": "pexip",
     "source": "",
     "destination": "",
@@ -4807,6 +4825,12 @@
   },
   {
     "alias": "pola-rs",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
+  },
+  {
+    "alias": "polygon-io",
     "source": "",
     "destination": "",
     "destination_72x72": ""
@@ -5200,6 +5224,12 @@
     "source": "remote-200x200.jpeg",
     "destination": "remote.com.jpeg",
     "destination_72x72": "remote.com.jpeg"
+  },
+  {
+    "alias": "reveniq",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "revvity",
@@ -6804,6 +6834,12 @@
     "destination_72x72": "verkada.jpeg"
   },
   {
+    "alias": "versedotinc",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
+  },
+  {
     "alias": "versus-gaming-network",
     "source": "",
     "destination": "",
@@ -6972,6 +7008,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "watergenics",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
+  },
+  {
     "alias": "waystar",
     "source": "",
     "destination": "",
@@ -7015,6 +7057,12 @@
   },
   {
     "alias": "weaviate-io",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
+  },
+  {
+    "alias": "webai-official",
     "source": "",
     "destination": "",
     "destination_72x72": ""
@@ -7150,6 +7198,12 @@
     "source": "wpp-media.svg",
     "destination": "wpp-media.svg",
     "destination_72x72": "wpp-media.svg"
+  },
+  {
+    "alias": "wyndlabs",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "xai",
