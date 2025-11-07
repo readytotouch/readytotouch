@@ -1,9 +1,9 @@
 [
   {
     "alias": "1global",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "1global-200x200.jpeg",
+    "destination": "1global.jpeg",
+    "destination_72x72": "1global.jpeg"
   },
   {
     "alias": "1nce",
@@ -13,9 +13,9 @@
   },
   {
     "alias": "1password",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "1password-200x200.jpeg",
+    "destination": "1password.jpeg",
+    "destination_72x72": "1password.jpeg"
   },
   {
     "alias": "1touch-io",
@@ -313,15 +313,15 @@
   },
   {
     "alias": "amoamoamo",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "amoamoamo-200x200.jpeg",
+    "destination": "amoamoamo.jpeg",
+    "destination_72x72": "amoamoamo.jpeg"
   },
   {
     "alias": "amplifiloyalty",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "amplifiloyalty-192x192.webp",
+    "destination": "amplifiloyalty.png",
+    "destination_72x72": "amplifiloyalty.png"
   },
   {
     "alias": "amuse.io",
@@ -331,9 +331,9 @@
   },
   {
     "alias": "anaplan",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "anaplan-200x200.jpeg",
+    "destination": "anaplan.jpeg",
+    "destination_72x72": "anaplan.jpeg"
   },
   {
     "alias": "andurilindustries",
@@ -1159,9 +1159,9 @@
   },
   {
     "alias": "checkout",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "checkout-256x256.png",
+    "destination": "checkout.png",
+    "destination_72x72": "checkout.png"
   },
   {
     "alias": "cheesecake-labs",
@@ -1315,9 +1315,9 @@
   },
   {
     "alias": "cloudbees",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "cloudbees-180x180.png",
+    "destination": "cloudbees.png",
+    "destination_72x72": "cloudbees.png"
   },
   {
     "alias": "cloudflare",
@@ -1339,9 +1339,9 @@
   },
   {
     "alias": "cloudwalk-inc",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "cloudwalk-256x256.png",
+    "destination": "cloudwalk-inc.png",
+    "destination_72x72": "cloudwalk-inc.png"
   },
   {
     "alias": "cloudwick",
@@ -1891,9 +1891,9 @@
   },
   {
     "alias": "droneshield",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "droneshield-200x200.jpeg",
+    "destination": "droneshield.jpeg",
+    "destination_72x72": "droneshield.jpeg"
   },
   {
     "alias": "dropbox",
@@ -2185,9 +2185,9 @@
   },
   {
     "alias": "expressvpn",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "expressvpn-200x200.jpeg",
+    "destination": "expressvpn.jpeg",
+    "destination_72x72": "expressvpn.jpeg"
   },
   {
     "alias": "extreme-networks",
@@ -2407,9 +2407,9 @@
   },
   {
     "alias": "flyzipline",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "flyzipline-200x200.jpeg",
+    "destination": "flyzipline.jpeg",
+    "destination_72x72": "flyzipline.jpeg"
   },
   {
     "alias": "fonoa",
@@ -2545,9 +2545,9 @@
   },
   {
     "alias": "g-core",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "gcore-180x180.png",
+    "destination": "g-core.png",
+    "destination_72x72": "g-core.png"
   },
   {
     "alias": "garena",
@@ -2719,9 +2719,9 @@
   },
   {
     "alias": "goldman-sachs",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "goldman-sachs-200x200.jpeg",
+    "destination": "goldman-sachs.jpeg",
+    "destination_72x72": "goldman-sachs.jpeg"
   },
   {
     "alias": "google",
@@ -3049,9 +3049,9 @@
   },
   {
     "alias": "idemiagroup",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "idemia-180x180.png",
+    "destination": "idemiagroup.png",
+    "destination_72x72": "idemiagroup.png"
   },
   {
     "alias": "idt",
@@ -3565,9 +3565,9 @@
   },
   {
     "alias": "livekitco",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "livekitco-180x180.png",
+    "destination": "livekitco.png",
+    "destination_72x72": "livekitco.png"
   },
   {
     "alias": "liveperson",
@@ -3625,9 +3625,9 @@
   },
   {
     "alias": "lowrisc",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "lowrisc-192x192.webp",
+    "destination": "lowrisc.png",
+    "destination_72x72": "lowrisc.png"
   },
   {
     "alias": "lucanet-ag",
@@ -3673,9 +3673,9 @@
   },
   {
     "alias": "macquariegroup",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "macquariegroup-200x200.jpeg",
+    "destination": "macquariegroup.jpeg",
+    "destination_72x72": "macquariegroup.jpeg"
   },
   {
     "alias": "macrohealth",
@@ -4177,9 +4177,9 @@
   },
   {
     "alias": "network-optix",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "network-optix-200x200.jpeg",
+    "destination": "network-optix.jpeg",
+    "destination_72x72": "network-optix.jpeg"
   },
   {
     "alias": "new-relic-inc-",
@@ -4471,9 +4471,9 @@
   },
   {
     "alias": "openvpn",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "openvpn-200x200.jpeg",
+    "destination": "openvpn.jpeg",
+    "destination_72x72": "openvpn.jpeg"
   },
   {
     "alias": "openwebhq",
@@ -4741,9 +4741,9 @@
   },
   {
     "alias": "perplexity-ai",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "perplexity-ai-200x200.jpeg",
+    "destination": "perplexity-ai.jpeg",
+    "destination_72x72": "perplexity-ai.jpeg"
   },
   {
     "alias": "pexip",
@@ -4831,9 +4831,9 @@
   },
   {
     "alias": "polygon-io",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "polygon-io-200x200.jpeg",
+    "destination": "polygon-io.jpeg",
+    "destination_72x72": "polygon-io.jpeg"
   },
   {
     "alias": "poppi-technologies",
@@ -4963,9 +4963,9 @@
   },
   {
     "alias": "protonprivacy",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "protonprivacy-180x180.png",
+    "destination": "protonprivacy.png",
+    "destination_72x72": "protonprivacy.png"
   },
   {
     "alias": "proxidize",
@@ -5227,9 +5227,9 @@
   },
   {
     "alias": "reveniq",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "reveniq-200x200.jpeg",
+    "destination": "reveniq.jpeg",
+    "destination_72x72": "reveniq.jpeg"
   },
   {
     "alias": "revvity",
@@ -5647,9 +5647,9 @@
   },
   {
     "alias": "simulmedia",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "simulmedia-180x180.png",
+    "destination": "simulmedia.png",
+    "destination_72x72": "simulmedia.png"
   },
   {
     "alias": "sinch",
@@ -6031,9 +6031,9 @@
   },
   {
     "alias": "stylitics",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "stylitics-200x200.jpeg",
+    "destination": "stylitics.jpeg",
+    "destination_72x72": "stylitics.jpeg"
   },
   {
     "alias": "submer",
@@ -6799,9 +6799,9 @@
   },
   {
     "alias": "veeva-systems",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "veeva-systems-200x200.jpeg",
+    "destination": "veeva-systems.jpeg",
+    "destination_72x72": "veeva-systems.jpeg"
   },
   {
     "alias": "velmie",
@@ -6835,9 +6835,9 @@
   },
   {
     "alias": "versedotinc",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "versedotinc-200x200.jpeg",
+    "destination": "versedotinc.jpeg",
+    "destination_72x72": "versedotinc.jpeg"
   },
   {
     "alias": "versus-gaming-network",
@@ -6913,9 +6913,9 @@
   },
   {
     "alias": "vitalbio",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "vitalbio-180x180.png",
+    "destination": "vitalbio.png",
+    "destination_72x72": "vitalbio.png"
   },
   {
     "alias": "vividmoney",
@@ -7009,9 +7009,9 @@
   },
   {
     "alias": "watergenics",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "watergenics-200x200.jpeg",
+    "destination": "watergenics.jpeg",
+    "destination_72x72": "watergenics.jpeg"
   },
   {
     "alias": "waystar",
@@ -7039,9 +7039,9 @@
   },
   {
     "alias": "wearemntn",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "wearemntn-180x180.webp",
+    "destination": "wearemntn.png",
+    "destination_72x72": "wearemntn.png"
   },
   {
     "alias": "weareuney",
@@ -7201,9 +7201,9 @@
   },
   {
     "alias": "wyndlabs",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "wyndlabs-180x180.png",
+    "destination": "wyndlabs.png",
+    "destination_72x72": "wyndlabs.png"
   },
   {
     "alias": "xai",
