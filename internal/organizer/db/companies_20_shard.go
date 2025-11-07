@@ -785,6 +785,16 @@ func companies20Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4331739119/",
+							Location:             "Budapest, Budapest, Hungary",
+							Date:                 mustDate("2025-11-01"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
@@ -2853,7 +2863,7 @@ func companies20Shard() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Senior Golang Developer – Tietoevry Create",
+							Title:                "Senior Golang Developer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4289016402/",
@@ -2861,6 +2871,16 @@ func companies20Shard() []domain.CompanyProfile {
 							Date:                 mustDate("2025-08-22"),
 							WithSalary:           false,
 							Remote:               true,
+						},
+						{
+							Title:                "Golang Developer",
+							ShortDescription:     "Telecom",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4294098298/",
+							Location:             "Bengaluru, Karnataka, India",
+							Date:                 mustDate("2025-11-06"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 					},
 				},

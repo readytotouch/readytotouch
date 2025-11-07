@@ -2640,7 +2640,7 @@ func companies12Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4314614526/",
 							Location:             "Greater Drohobych Area",
-							Date:                 mustDate("2025-10-15"),
+							Date:                 mustDate("2025-11-05", "2025-10-15"),
 							WithSalary:           false,
 							Remote:               false,
 						},
