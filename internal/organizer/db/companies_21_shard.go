@@ -2359,7 +2359,8 @@ func companies21Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "ciena",
+				Employees: "6,250",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Ciena-EI_IE6612.11,16.htm",
@@ -4597,10 +4598,18 @@ func companies21Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "justrelate-group",
+				Employees: "150",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-JustRelate-EI_IE4712417.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/JustRelate-Reviews-E4712417.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/JustRelate-Jobs-E4712417.htm",
+				Jobs:        "4",
+				Reviews:     "6",
+				Salaries:    "15",
+				ReviewsRate: "4.4",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",

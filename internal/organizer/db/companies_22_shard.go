@@ -286,8 +286,9 @@ func companies22Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "openvpn",
+				Followers: "1.5k",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -296,14 +297,21 @@ func companies22Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-OpenVPN-Technologies-EI_IE1607550.11,31.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/OpenVPN-Technologies-Reviews-E1607550.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/OpenVPN-Technologies-Jobs-E1607550.htm",
+				Jobs:        "30",
+				Reviews:     "39",
+				Salaries:    "20",
+				ReviewsRate: "4.4",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 4,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer (Golang)",
@@ -549,7 +557,14 @@ func companies22Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-webAI-EI_IE7431732.11,16.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/webAI-Reviews-E7431732.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/webAI-Jobs-E7431732.htm",
+				Jobs:        "",
+				Reviews:     "12",
+				Salaries:    "15",
+				ReviewsRate: "4.2",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -630,10 +645,18 @@ func companies22Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "perplexity-ai",
+				Employees: "10",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Perplexity-AI-EI_IE8515634.11,24.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Perplexity-AI-Reviews-E8515634.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Perplexity-AI-Jobs-E8515634.htm",
+				Jobs:        "",
+				Reviews:     "41",
+				Salaries:    "34",
+				ReviewsRate: "4.6",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -714,7 +737,8 @@ func companies22Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "livekit",
+				Employees: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",

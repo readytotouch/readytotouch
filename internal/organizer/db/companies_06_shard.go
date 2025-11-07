@@ -6304,9 +6304,14 @@ func companies06Shard() []domain.CompanyProfile {
 				Employees: "420",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
-				Verified:    false,
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-MNTN-EI_IE5360845.11,15.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/MNTN-Reviews-E5360845.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/MNTN-Jobs-E5360845.htm",
+				Jobs:        "5",
+				Reviews:     "103",
+				Salaries:    "252",
+				ReviewsRate: "3.3",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
