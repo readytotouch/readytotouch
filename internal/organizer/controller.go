@@ -495,6 +495,8 @@ func (c *Controller) companyAction(
 		return preparedVacancies[i].Date.After(preparedVacancies[j].Date)
 	})
 
+	company.LatestVacancyDate = c.maxLanguageDate(vacancies)
+
 	content := render(
 		organizerFeature,
 		headerProfiles,
@@ -1454,7 +1456,7 @@ func (c *Controller) companies(language domain.Language) []domain.CompanyProfile
 		}
 
 		company.Remote = company.Remote || c.anyRemoteVacancy(vacancies)
-		company.LastVacancyDate = c.maxLanguageDate(vacancies)
+		company.LatestVacancyDate = c.maxLanguageDate(vacancies)
 
 		companies = append(companies, company)
 	}
@@ -1463,11 +1465,11 @@ func (c *Controller) companies(language domain.Language) []domain.CompanyProfile
 
 func (c *Controller) sortCompanies(companies []domain.CompanyProfile) {
 	slices.SortFunc(companies, func(a, b domain.CompanyProfile) int {
-		if a.LastVacancyDate.After(b.LastVacancyDate) {
+		if a.LatestVacancyDate.After(b.LatestVacancyDate) {
 			return -1
 		}
 
-		if a.LastVacancyDate.Before(b.LastVacancyDate) {
+		if a.LatestVacancyDate.Before(b.LatestVacancyDate) {
 			return 1
 		}
 
@@ -1653,7 +1655,7 @@ func (c *Controller) DataPopulationCompaniesLogo(ctx *gin.Context) {
 			continue
 		}
 
-		company.LastVacancyDate = c.maxDate(company.Languages)
+		company.LatestVacancyDate = c.maxDate(company.Languages)
 
 		// The existing logos must be re-checked
 		result = append(result, company)
@@ -1698,7 +1700,7 @@ func (c *Controller) dataPopulationCompanies(match func(company domain.CompanyPr
 			continue
 		}
 
-		company.LastVacancyDate = c.maxDate(company.Languages)
+		company.LatestVacancyDate = c.maxDate(company.Languages)
 
 		companies = append(companies, company)
 	}

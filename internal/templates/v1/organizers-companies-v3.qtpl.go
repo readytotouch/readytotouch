@@ -476,6 +476,25 @@ func StreamOrganizersCompaniesV3(qw422016 *qt422016.Writer,
 		qw422016.N().S(`</a>
                     `)
 		qw422016.N().S(`
+                    `)
+		if !company.LatestVacancyDate.IsZero() {
+			qw422016.N().S(`
+                    <p class="card__header-caption-text">
+                      <img
+                        class="card__header-caption-icon"
+                        alt="briefcase"
+                        width="12"
+                        height="12"
+                        src="/assets/images/pages/organizer/briefcase.svg"
+                      />Latest job posting: <time datetime="`)
+			qw422016.E().S(company.LatestVacancyDate.Format(`2006-01-02`))
+			qw422016.N().S(`">`)
+			qw422016.E().S(company.LatestVacancyDate.Format("02 Jan 2006"))
+			qw422016.N().S(`</time>
+                      `)
+		}
+		qw422016.N().S(`
+                    </p>
                   </figcaption>
                 </figure>
 
