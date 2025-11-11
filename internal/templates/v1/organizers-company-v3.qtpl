@@ -165,7 +165,8 @@
                 src="/assets/images/pages/organizer/marker.svg"
               />Country, City (Full Remote)
             </p>
-            <!-- TODO Date -->
+            {% endcomment %}
+            {% if !company.LatestVacancyDate.IsZero() %}
             <p class="company-card__header-caption-text">
               <img
                 class="company-card__header-caption-icon"
@@ -173,9 +174,9 @@
                 width="12"
                 height="12"
                 src="/assets/images/pages/organizer/briefcase.svg"
-              />Latest job posting: 12/31/2024
+              />Latest job posting: <time datetime="{%s company.LatestVacancyDate.Format(`2006-01-02`) %}">{%s company.LatestVacancyDate.Format("02 Jan 2006") %}</time>
             </p>
-            {% endcomment %}
+            {% endif %}
           </figcaption>
         </figure>
         <div class="company-card__top-links">

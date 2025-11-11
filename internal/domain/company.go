@@ -237,7 +237,7 @@ type CompanyProfile struct {
 	SyncSources               []CompanySyncSource
 	PinnedUntil               time.Time
 	Remote                    bool      // Mark "remote" if the company has at least one remote job
-	LastVacancyDate           time.Time // Sort companies by latest vacancy date per technology
+	LatestVacancyDate         time.Time // Sort companies by latest vacancy date per technology
 }
 
 type UnsafeCompaniesResponse struct {
