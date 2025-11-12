@@ -1368,7 +1368,7 @@ func companies15Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4298156404/",
 							Location:             "Tokyo, Japan",
-							Date:                 mustDate("2025-10-22", "2025-09-10"),
+							Date:                 mustDate("2025-11-12", "2025-10-22", "2025-09-10"),
 							WithSalary:           false,
 							Remote:               false,
 						},

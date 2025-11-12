@@ -816,6 +816,16 @@ func companies19Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Software Engineer – Go",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4315346445/",
+							Location:             "London, England, United Kingdom",
+							Date:                 mustDate("2025-11-07"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Elixir: {
@@ -5638,7 +5648,7 @@ func companies19Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4316039489/",
 							Location:             "Santa Clara, CA",
-							Date:                 mustDate("2025-10-18"),
+							Date:                 mustDate("2025-11-08", "2025-10-18"),
 							WithSalary:           true, // $168k/yr - $322k/yr
 							Remote:               false,
 						},

@@ -1717,15 +1717,17 @@ func companies05Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{
-						/*
-							{
-								Title:            "",
-								ShortDescription: "",
-								URL:              "https://app.welcometothejungle.com/jobs/duQ9FWwK",
-								Date:             mustDate(""),
-							},
-						*/
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Backend Engineer (Go)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4335786068/",
+							Location:             "Ramat Gan, Tel Aviv District, Israel",
+							Date:                 mustDate("2025-11-13"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -3662,6 +3664,16 @@ func companies05Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4257400788/",
 							Location:             "Prague, Prague, Czechia",
 							Date:                 mustDate("2025-09-20"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Software Engineer (Go)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4306241785/",
+							Location:             "Prague, Prague, Czechia",
+							Date:                 mustDate("2025-11-08"),
 							WithSalary:           false,
 							Remote:               false,
 						},
