@@ -1252,7 +1252,7 @@ func companies22Shard() []domain.CompanyProfile {
 			ID:      0,  // system
 			Type:    "", // system
 			Name:    "The Weather Company",
-			Website: "https://www.weathercompany.com/",
+			Website: "https://www.weather.com/",
 			Careers: "https://www.weathercompany.com/careers/",
 			About:   "https://www.weathercompany.com/about-us/",
 			Blog:    "",
@@ -1267,8 +1267,9 @@ func companies22Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "TheWeatherCompany",
+				Followers: "86",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -1277,14 +1278,21 @@ func companies22Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-The-Weather-Company-EI_IE9457786.11,30.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/The-Weather-Company-Reviews-E9457786.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/The-Weather-Company-Jobs-E9457786.htm",
+				Jobs:        "",
+				Reviews:     "27",
+				Salaries:    "63",
+				ReviewsRate: "3.0",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 14,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Full-Stack Software Engineer (Golang)",
@@ -1361,7 +1369,14 @@ func companies22Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Bibit-id-EI_IE3341391.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Bibit-id-Reviews-E3341391.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Bibit-id-Jobs-E3341391.htm",
+				Jobs:        "",
+				Reviews:     "87",
+				Salaries:    "178",
+				ReviewsRate: "4.3",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -1435,8 +1450,9 @@ func companies22Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "Perceptyx",
+				Followers: "2",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -1445,7 +1461,14 @@ func companies22Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Perceptyx-EI_IE1397735.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Perceptyx-Reviews-E1397735.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Perceptyx-Jobs-E1397735.htm",
+				Jobs:        "",
+				Reviews:     "159",
+				Salaries:    "275",
+				ReviewsRate: "3.9",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -1529,7 +1552,14 @@ func companies22Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Threecolts-EI_IE5755608.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Threecolts-Reviews-E5755608.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Threecolts-Jobs-E5755608.htm",
+				Jobs:        "8",
+				Reviews:     "68",
+				Salaries:    "54",
+				ReviewsRate: "4.1",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -1613,7 +1643,14 @@ func companies22Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Spendbase-EI_IE9355753.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Spendbase-Reviews-E9355753.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Spendbase-Jobs-E9355753.htm",
+				Jobs:        "",
+				Reviews:     "28",
+				Salaries:    "6",
+				ReviewsRate: "4.5",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -1697,7 +1734,14 @@ func companies22Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Aonic-EI_IE2977044.11,16.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Aonic-Reviews-E2977044.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Aonic-Jobs-E2977044.htm",
+				Jobs:        "48",
+				Reviews:     "57",
+				Salaries:    "65",
+				ReviewsRate: "3.6",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -1771,8 +1815,9 @@ func companies22Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "thisisbud",
+				Followers: "13",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -1781,14 +1826,21 @@ func companies22Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Bud-EI_IE1907066.11,14.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Bud-Reviews-E1907066.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Bud-Jobs-E1907066.htm",
+				Jobs:        "35",
+				Reviews:     "54",
+				Salaries:    "103",
+				ReviewsRate: "4.1",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 6,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer Go",
@@ -1949,7 +2001,14 @@ func companies22Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Jabil-EI_IE2330.11,16.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Jabil-Reviews-E2330.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Jabil-Jobs-E2330.htm",
+				Jobs:        "1.1K",
+				Reviews:     "5.1K",
+				Salaries:    "7.9K",
+				ReviewsRate: "3.7",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -2275,8 +2334,9 @@ func companies22Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "shopify",
+				Followers: "7.3k",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -2285,14 +2345,21 @@ func companies22Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Shopify-EI_IE675933.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Shopify-Reviews-E675933.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Shopify-Jobs-E675933.htm",
+				Jobs:        "53",
+				Reviews:     "4K",
+				Salaries:    "9.2K",
+				ReviewsRate: "3.3",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 123,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer – Rust",
@@ -2453,7 +2520,14 @@ func companies22Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Cybereason-EI_IE1077181.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Cybereason-Reviews-E1077181.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Cybereason-Jobs-E1077181.htm",
+				Jobs:        "1",
+				Reviews:     "486",
+				Salaries:    "592",
+				ReviewsRate: "2.7",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -2537,7 +2611,14 @@ func companies22Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Axonius-EI_IE2193939.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Axonius-Reviews-E2193939.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Axonius-Jobs-E2193939.htm",
+				Jobs:        "11",
+				Reviews:     "228",
+				Salaries:    "335",
+				ReviewsRate: "4.1",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -2611,8 +2692,9 @@ func companies22Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "hubspot",
+				Followers: "666",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -2621,14 +2703,21 @@ func companies22Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-HubSpot-EI_IE227605.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/HubSpot-Reviews-E227605.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/HubSpot-Jobs-E227605.htm",
+				Jobs:        "106",
+				Reviews:     "4.4K",
+				Salaries:    "9.5K",
+				ReviewsRate: "3.5",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 20,
 					Vacancies:               []domain.Vacancy{},
 				},
 				domain.Rust: {

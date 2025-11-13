@@ -1701,12 +1701,19 @@ func companies05Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "overwolf",
-				Verified: true,
+				Login:     "overwolf",
+				Followers: "174",
+				Verified:  true,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Overwolf-EI_IE1963582.11,19.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Overwolf-Reviews-E1963582.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Overwolf-Jobs-E1963582.htm",
+				Jobs:        "24",
+				Reviews:     "70",
+				Salaries:    "62",
+				ReviewsRate: "4.6",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
