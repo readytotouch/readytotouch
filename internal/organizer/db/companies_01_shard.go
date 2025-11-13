@@ -1143,8 +1143,22 @@ func companies01Shard() []domain.CompanyProfile {
 						},
 					},
 				},
-				domain.Rust: {},
-				domain.Zig:  {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Developer – Lead Rust Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4339503585/",
+							Location:             "Mulhuddart, Fingal, Ireland",
+							Date:                 mustDate("2025-11-08"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig: {},
 				domain.Scala: {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{

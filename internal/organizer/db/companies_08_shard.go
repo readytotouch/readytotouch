@@ -4281,6 +4281,16 @@ func companies08Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $85/hr - $90/hr
 							Remote:               false,
 						},
+						{
+							Title:                "Software Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4321870783/",
+							Location:             "Palo Alto, CA",
+							Date:                 mustDate("2025-11-11"),
+							WithSalary:           true, // $80/hr - $90/hr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig: {},
