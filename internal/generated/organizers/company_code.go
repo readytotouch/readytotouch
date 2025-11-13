@@ -1236,6 +1236,23 @@ var (
 		"lowrisc":                             1236, // lowRISC CIC
 		"polygon-io":                          1237, // Polygon.io
 		"reveniq":                             1238, // ReveniQ
+		"weather-company":                     1239, // The Weather Company
+		"bibit":                               1240, // Bibit.id
+		"perceptyx":                           1241, // Perceptyx
+		"threecolts":                          1242, // Threecolts
+		"spendbase":                           1243, // Spendbase
+		"aonicgroup":                          1244, // Aonic
+		"bud-financial":                       1245, // Bud
+		"zixflow":                             1246, // Zixflow
+		"jabil":                               1247, // Jabil
+		"severalnines":                        1248, // Severalnines
+		"plannatech":                          1249, // Plannatech
+		"tryprofound":                         1250, // Profound
+		"shopify":                             1251, // Shopify
+		"exein":                               1252, // Exein
+		"cybereason":                          1253, // Cybereason
+		"axonius":                             1254, // Axonius
+		"hubspot":                             1255, // HubSpot
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 
