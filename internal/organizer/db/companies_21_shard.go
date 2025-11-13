@@ -5610,7 +5610,7 @@ func companies21Shard() []domain.CompanyProfile {
 			About:   "https://redoxone.com/company/",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID:                0,
+				ID:                91554046,
 				IDs:               nil,
 				Alias:             "redox-one",
 				Name:              "Redox One",

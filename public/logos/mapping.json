@@ -637,9 +637,9 @@
   },
   {
     "alias": "axonius",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "axonius-200x200.jpeg",
+    "destination": "axonius.jpeg",
+    "destination_72x72": "axonius.jpeg"
   },
   {
     "alias": "axpo-group",
@@ -1585,9 +1585,9 @@
   },
   {
     "alias": "cybereason",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "cybereason-200x200.jpeg",
+    "destination": "cybereason.jpeg",
+    "destination_72x72": "cybereason.jpeg"
   },
   {
     "alias": "cyberhaven",
@@ -3055,9 +3055,9 @@
   },
   {
     "alias": "hubspot",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "hubspot-200x200.jpeg",
+    "destination": "hubspot.jpeg",
+    "destination_72x72": "hubspot.jpeg"
   },
   {
     "alias": "hudl",
@@ -4585,9 +4585,9 @@
   },
   {
     "alias": "overwolf.com",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "overwolf-200x200.jpeg",
+    "destination": "overwolf.com.jpeg",
+    "destination_72x72": "overwolf.com.jpeg"
   },
   {
     "alias": "ovoenergy",
