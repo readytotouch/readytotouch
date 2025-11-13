@@ -354,6 +354,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "aonicgroup",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
+  },
+  {
     "alias": "apifonica",
     "source": "",
     "destination": "",
@@ -630,6 +636,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "axonius",
+    "source": "axonius-200x200.jpeg",
+    "destination": "axonius.jpeg",
+    "destination_72x72": "axonius.jpeg"
+  },
+  {
     "alias": "axpo-group",
     "source": "",
     "destination": "",
@@ -745,6 +757,12 @@
   },
   {
     "alias": "beyond-identity-inc",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
+  },
+  {
+    "alias": "bibit",
     "source": "",
     "destination": "",
     "destination_72x72": ""
@@ -946,6 +964,12 @@
     "source": "btaskee-200x200.jpeg",
     "destination": "btaskee.jpeg",
     "destination_72x72": "btaskee.jpeg"
+  },
+  {
+    "alias": "bud-financial",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "buenro",
@@ -1560,6 +1584,12 @@
     "destination_72x72": "cyber-ark-software.jpeg"
   },
   {
+    "alias": "cybereason",
+    "source": "cybereason-200x200.jpeg",
+    "destination": "cybereason.jpeg",
+    "destination_72x72": "cybereason.jpeg"
+  },
+  {
     "alias": "cyberhaven",
     "source": "",
     "destination": "",
@@ -2170,6 +2200,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "exein",
+    "source": "exein-256x256.png",
+    "destination": "exein.png",
+    "destination_72x72": "exein.png"
   },
   {
     "alias": "expedia",
@@ -3018,6 +3054,12 @@
     "destination_72x72": "hubble-pte.-ltd..png"
   },
   {
+    "alias": "hubspot",
+    "source": "hubspot-200x200.jpeg",
+    "destination": "hubspot.jpeg",
+    "destination_72x72": "hubspot.jpeg"
+  },
+  {
     "alias": "hudl",
     "source": "hudl-180x180.png",
     "destination": "hudl.png",
@@ -3190,6 +3232,12 @@
     "source": "italki-200x200.jpeg",
     "destination": "italki.jpeg",
     "destination_72x72": "italki.jpeg"
+  },
+  {
+    "alias": "jabil",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "jack-henry",
@@ -4537,9 +4585,9 @@
   },
   {
     "alias": "overwolf.com",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "overwolf-200x200.jpeg",
+    "destination": "overwolf.com.jpeg",
+    "destination_72x72": "overwolf.com.jpeg"
   },
   {
     "alias": "ovoenergy",
@@ -4716,6 +4764,12 @@
     "destination_72x72": "pepperstone.jpeg"
   },
   {
+    "alias": "perceptyx",
+    "source": "perceptyx-200x200.jpeg",
+    "destination": "perceptyx.jpeg",
+    "destination_72x72": "perceptyx.jpeg"
+  },
+  {
     "alias": "percona",
     "source": "",
     "destination": "",
@@ -4816,6 +4870,12 @@
     "source": "planet-200x200.jpeg",
     "destination": "planet.jpeg",
     "destination_72x72": "planet.jpeg"
+  },
+  {
+    "alias": "plannatech",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "plentyone-ecommerce",
@@ -5598,10 +5658,22 @@
     "destination_72x72": "sentinelone.png"
   },
   {
+    "alias": "severalnines",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
+  },
+  {
     "alias": "shopee",
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "shopify",
+    "source": "shopify-120x120.png",
+    "destination": "shopify.png",
+    "destination_72x72": "shopify.png"
   },
   {
     "alias": "shopware-ag",
@@ -5827,6 +5899,12 @@
   },
   {
     "alias": "spe-solution",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
+  },
+  {
+    "alias": "spendbase",
     "source": "",
     "destination": "",
     "destination_72x72": ""
@@ -6438,6 +6516,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "threecolts",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
+  },
+  {
     "alias": "thryve-earth",
     "source": "",
     "destination": "",
@@ -6595,6 +6679,12 @@
   },
   {
     "alias": "trustingsocial",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
+  },
+  {
+    "alias": "tryprofound",
     "source": "",
     "destination": "",
     "destination_72x72": ""
@@ -7056,6 +7146,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "weather-company",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
+  },
+  {
     "alias": "weaviate-io",
     "source": "",
     "destination": "",
@@ -7333,6 +7429,12 @@
   },
   {
     "alias": "zillow",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
+  },
+  {
+    "alias": "zixflow",
     "source": "",
     "destination": "",
     "destination_72x72": ""

@@ -2008,7 +2008,7 @@ func companies13Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4308497799/",
 							Location:             "Bellevue, WA",
-							Date:                 mustDate("2025-10-22", "2025-10-01"),
+							Date:                 mustDate("2025-11-12", "2025-10-22", "2025-10-01"),
 							WithSalary:           true, // $144k/yr - $180k/yr
 							Remote:               false,
 						},
@@ -2092,7 +2092,7 @@ func companies13Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4304601709/",
 							Location:             "Ho Chi Minh City, Vietnam",
-							Date:                 mustDate("2025-09-27", "2025-09-23"),
+							Date:                 mustDate("2025-11-08", "2025-09-27", "2025-09-23"),
 							WithSalary:           false,
 							Remote:               false,
 						},

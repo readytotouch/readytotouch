@@ -816,6 +816,16 @@ func companies19Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Software Engineer – Go",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4315346445/",
+							Location:             "London, England, United Kingdom",
+							Date:                 mustDate("2025-11-07"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Elixir: {
@@ -5264,7 +5274,7 @@ func companies19Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4315504772/",
 							Location:             "United States",
-							Date:                 mustDate("2025-10-17"),
+							Date:                 mustDate("2025-11-08", "2025-10-17"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -5638,7 +5648,7 @@ func companies19Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4316039489/",
 							Location:             "Santa Clara, CA",
-							Date:                 mustDate("2025-10-18"),
+							Date:                 mustDate("2025-11-08", "2025-10-18"),
 							WithSalary:           true, // $168k/yr - $322k/yr
 							Remote:               false,
 						},
@@ -5827,7 +5837,7 @@ func companies19Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4306851124/",
 							Location:             "Palo Alto, CA",
-							Date:                 mustDate("2025-10-19", "2025-09-28"),
+							Date:                 mustDate("2025-11-09", "2025-10-19", "2025-09-28"),
 							WithSalary:           true, // $180k/yr - $440k/yr
 							Remote:               false,
 						},

@@ -4216,6 +4216,16 @@ func companies20Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $90k/yr - $130.5k/yr
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Software Engineer (Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4297659747/",
+							Location:             "Harwell, England, United Kingdom",
+							Date:                 mustDate("2025-11-12"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig: {

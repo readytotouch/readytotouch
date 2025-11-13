@@ -591,6 +591,16 @@ func companies18Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $143.4k/yr - $196.9k/yr
 							Remote:               true,
 						},
+						{
+							Title:                "Software Engineer – Fullstack (Go, SQL, TypeScript)",
+							ShortDescription:     "Pricing",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4308121465/",
+							Location:             "Seattle, WA",
+							Date:                 mustDate("2025-11-12"),
+							WithSalary:           true, // $143.4k/yr - $196.9k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -3117,6 +3127,16 @@ func companies18Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4318273888/",
 							Location:             "Cyprus",
 							Date:                 mustDate("2025-10-22"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+						{
+							Title:                "Golang Software Engineer (Proxy)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4335403626/",
+							Location:             "Serbia",
+							Date:                 mustDate("2025-11-12"),
 							WithSalary:           false,
 							Remote:               true,
 						},
