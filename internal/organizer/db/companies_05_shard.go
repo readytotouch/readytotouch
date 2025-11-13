@@ -1747,6 +1747,7 @@ func companies05Shard() []domain.CompanyProfile {
 			ShortDescription: "Gaming app & mod development framework",
 			Industries: []domain.Industry{
 				domain.IndustryGameDev,
+				domain.IndustryAdTech,
 			},
 			HasEmployeesFromCountries: []domain.Country{},
 		},

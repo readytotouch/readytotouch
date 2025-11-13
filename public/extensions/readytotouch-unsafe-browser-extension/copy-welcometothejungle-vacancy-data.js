@@ -24,7 +24,7 @@ document.body.addEventListener("keydown", (event) => {
 
         const goLinkedInVacancyColumns = `{
 						    Title:                "${title}",
-						    ShortDescription:     "${document.querySelector("h2").innerText.trim()}",
+						    ShortDescription:     "",
 						    SwitchingOpportunity: "",
 						    URL:                  "${window.location.origin + window.location.pathname}",
 						    Date:                 mustDate("${date()}"),

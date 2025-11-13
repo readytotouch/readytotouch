@@ -266,6 +266,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4147652357/":                                                               1597, // cloudflare
 		"https://www.linkedin.com/jobs/view/4038005634/":                                                               1673, // cloudflare
 		"https://www.linkedin.com/jobs/view/4232574566/":                                                               1929, // cloudflare
+		"https://app.welcometothejungle.com/jobs/zQGeY5gq":                                                             3399, // cloudflare
 		"https://www.linkedin.com/jobs/view/4041774900/":                                                               309,  // cloudflare
 		"https://www.linkedin.com/jobs/view/4079142238/":                                                               858,  // cloudflare
 		"https://www.linkedin.com/jobs/view/3902607066/":                                                               310,  // namecheap-inc
@@ -724,6 +725,7 @@ var (
 		"https://www.linkedin.com/jobs/view/3920739722/":                                                               378,  // checkout
 		"https://www.linkedin.com/jobs/view/4125751681/":                                                               651,  // checkout
 		"https://www.linkedin.com/jobs/view/4318291110/":                                                               3219, // checkout
+		"https://app.welcometothejungle.com/jobs/AO0pWzl7":                                                             3400, // checkout
 		"https://www.linkedin.com/jobs/view/4162630665/":                                                               985,  // compassinc
 		"https://www.linkedin.com/jobs/view/4017721524/":                                                               429,  // mercuryhq
 		"https://www.linkedin.com/jobs/view/4039096196/":                                                               430,  // tailscale
@@ -1291,6 +1293,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4204880893/":                                                               1483, // getwriter
 		"https://www.linkedin.com/jobs/view/4070887973/":                                                               57,   // dlocal
 		"https://www.linkedin.com/jobs/view/4246693029/":                                                               2009, // dlocal
+		"https://app.welcometothejungle.com/jobs/OabuTRK9":                                                             3401, // dlocal
 		"https://www.linkedin.com/jobs/view/4034614195/":                                                               58,   // clearstory-build
 		"https://www.linkedin.com/jobs/view/4272801080/":                                                               2542, // clearstory-build
 		"https://www.linkedin.com/jobs/view/3943478838/":                                                               59,   // millennium-partners
@@ -1776,6 +1779,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4079391812/":                                                               181,  // stacklok
 		"https://www.linkedin.com/jobs/view/4315982422/":                                                               3232, // stacklok
 		"https://www.linkedin.com/jobs/view/4338090243/":                                                               3360, // stacklok
+		"https://app.welcometothejungle.com/jobs/-k8RxQxa":                                                             3402, // stacklok
 		"https://www.linkedin.com/jobs/view/4102186636/":                                                               182,  // superindo
 		"https://www.linkedin.com/jobs/view/4159419521/":                                                               931,  // superindo
 		"https://www.linkedin.com/jobs/view/4208874979/":                                                               1844, // superindo
@@ -3165,6 +3169,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4244085841/":                                                               2438, // rincon-research-corporation
 		"https://www.linkedin.com/jobs/view/4266412740/":                                                               2439, // azberry-bv
 		"https://www.linkedin.com/jobs/view/4267971361/":                                                               2440, // octopusmoney
+		"https://app.welcometothejungle.com/jobs/FBaRkiuG":                                                             3403, // octopusmoney
 		"https://www.linkedin.com/jobs/view/4268438536/":                                                               2465, // swan-embedded-banking
 		"https://www.linkedin.com/jobs/view/4214640651/":                                                               2466, // julius-baer
 		"https://www.linkedin.com/jobs/view/4268126029/":                                                               2467, // cap-rx
@@ -3352,6 +3357,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4335497407/":                                                               3378, // de-una
 		"https://www.linkedin.com/jobs/view/4308983560/":                                                               3180, // avantstay
 		"https://www.linkedin.com/jobs/view/4307236421/":                                                               3181, // kaluza
+		"https://app.welcometothejungle.com/jobs/SyvliXfm":                                                             3404, // kaluza
 		"https://www.linkedin.com/jobs/view/4308245274/":                                                               3182, // zegocover
 		"https://www.linkedin.com/jobs/view/4309608120/":                                                               3183, // lobster-robotics
 		"https://www.linkedin.com/jobs/view/4308288567/":                                                               3184, // affinidi
@@ -3394,6 +3400,15 @@ var (
 		"https://www.linkedin.com/jobs/view/4321915810/":                                                               3396, // cybereason
 		"https://www.linkedin.com/jobs/view/4315928124/":                                                               3397, // axonius
 		"https://www.linkedin.com/jobs/view/4308484530/":                                                               3398, // hubspot
+		"https://www.linkedin.com/jobs/view/4280933839/":                                                               3405, // loveholidays
+		"https://app.welcometothejungle.com/jobs/K4rT3xXa":                                                             3406, // loveholidays
+		"https://app.welcometothejungle.com/jobs/GBw_kEIb":                                                             3407, // nominal-inc
+		"https://www.linkedin.com/jobs/view/4315845952/":                                                               3408, // upsundotcom
+		"https://app.welcometothejungle.com/jobs/a89BBmyB":                                                             3409, // upsundotcom
+		"https://app.welcometothejungle.com/jobs/ZE2xDHam":                                                             3410, // motherduck
+		"https://www.linkedin.com/jobs/view/4315779307/":                                                               3411, // honeycomb.io
+		"https://app.welcometothejungle.com/jobs/pWV5kzG8":                                                             3412, // honeycomb.io
+		"https://app.welcometothejungle.com/jobs/O2Ko2bd8":                                                             3413, // meilisearch
 		"https://www.linkedin.com/jobs/view/3914839625/":                                                               372,  // cognizant
 		"https://www.linkedin.com/jobs/view/4120737001/":                                                               600,  // cognizant
 		"https://www.linkedin.com/jobs/view/4149258542/":                                                               787,  // cognizant

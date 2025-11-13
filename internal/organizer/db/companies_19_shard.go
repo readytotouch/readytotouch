@@ -4827,6 +4827,15 @@ func companies19Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Backend Engineer",
+							ShortDescription:     "Golang",
+							SwitchingOpportunity: "",
+							URL:                  "https://app.welcometothejungle.com/jobs/FBaRkiuG",
+							Date:                 mustDate("2025-11-14"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {

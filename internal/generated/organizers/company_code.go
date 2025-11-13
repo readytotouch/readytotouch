@@ -1253,6 +1253,12 @@ var (
 		"cybereason":                          1253, // Cybereason
 		"axonius":                             1254, // Axonius
 		"hubspot":                             1255, // HubSpot
+		"loveholidays":                        1256, // loveholidays
+		"nominal-inc":                         1257, // Nominal
+		"upsundotcom":                         1258, // Upsun (formerly Platform.sh)
+		"motherduck":                          1259, // MotherDuck
+		"honeycomb.io":                        1260, // honeycomb.io
+		"meilisearch":                         1261, // Meilisearch
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 
