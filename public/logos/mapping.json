@@ -2203,9 +2203,9 @@
   },
   {
     "alias": "exein",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "exein-256x256.png",
+    "destination": "exein.png",
+    "destination_72x72": "exein.png"
   },
   {
     "alias": "expedia",
@@ -4765,9 +4765,9 @@
   },
   {
     "alias": "perceptyx",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "perceptyx-200x200.jpeg",
+    "destination": "perceptyx.jpeg",
+    "destination_72x72": "perceptyx.jpeg"
   },
   {
     "alias": "percona",
@@ -5671,9 +5671,9 @@
   },
   {
     "alias": "shopify",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "shopify-120x120.png",
+    "destination": "shopify.png",
+    "destination_72x72": "shopify.png"
   },
   {
     "alias": "shopware-ag",
