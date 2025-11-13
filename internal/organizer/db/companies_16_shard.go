@@ -4584,7 +4584,7 @@ func companies16Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4315723560/",
 							Location:             "Calgary, AB",
-							Date:                 mustDate("2025-11-09"), // mustDate("2025-10-19"),
+							Date:                 mustDate("2025-11-09", "2025-10-19"),
 							WithSalary:           false,
 							Remote:               false,
 						},
