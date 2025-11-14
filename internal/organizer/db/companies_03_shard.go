@@ -5236,8 +5236,9 @@ func companies03Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "checkout",
-				Verified: false,
+				Login:     "checkout",
+				Followers: "86",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Checkoutcom",
@@ -5295,6 +5296,15 @@ func companies03Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4318291110/",
 							Location:             "London, England, United Kingdom",
 							Date:                 mustDate("2025-10-22"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Golang Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://app.welcometothejungle.com/jobs/AO0pWzl7",
+							Date:                 mustDate("2025-11-14"),
 							WithSalary:           false,
 							Remote:               false,
 						},

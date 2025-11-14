@@ -6589,7 +6589,21 @@ func companies06Shard() []domain.CompanyProfile {
 						},
 					},
 				},
-				domain.Rust:    {},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer, dLocal",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://app.welcometothejungle.com/jobs/OabuTRK9",
+							Location:             "Spain",
+							Date:                 mustDate("2025-11-14"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},

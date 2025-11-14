@@ -355,9 +355,9 @@
   },
   {
     "alias": "aonicgroup",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "aonic-180x180.png",
+    "destination": "aonicgroup.png",
+    "destination_72x72": "aonicgroup.png"
   },
   {
     "alias": "apifonica",
@@ -685,9 +685,9 @@
   },
   {
     "alias": "banquenationaleducanada",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "banquenationaleducanada-180x180.png",
+    "destination": "banquenationaleducanada.png",
+    "destination_72x72": "banquenationaleducanada.png"
   },
   {
     "alias": "barracuda-networks",
@@ -967,9 +967,9 @@
   },
   {
     "alias": "bud-financial",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "bud-financial-256x256.png",
+    "destination": "bud-financial.png",
+    "destination_72x72": "bud-financial.png"
   },
   {
     "alias": "buenro",
@@ -1345,9 +1345,9 @@
   },
   {
     "alias": "cloudflare",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "cloudflare-200x200.jpeg",
+    "destination": "cloudflare.jpeg",
+    "destination_72x72": "cloudflare.jpeg"
   },
   {
     "alias": "cloudlinux",
@@ -1837,9 +1837,9 @@
   },
   {
     "alias": "dlocal",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "dlocal-200x200.jpeg",
+    "destination": "dlocal.jpeg",
+    "destination_72x72": "dlocal.jpeg"
   },
   {
     "alias": "dnsfilter",
@@ -3018,6 +3018,12 @@
     "destination_72x72": "home24.png"
   },
   {
+    "alias": "honeycomb.io",
+    "source": "honeycomb.io-200x200.jpeg",
+    "destination": "honeycomb.io.jpeg",
+    "destination_72x72": "honeycomb.io.jpeg"
+  },
+  {
     "alias": "hootsuite",
     "source": "",
     "destination": "",
@@ -3343,9 +3349,9 @@
   },
   {
     "alias": "kaluza",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "kaluza-200x200.jpeg",
+    "destination": "kaluza.jpeg",
+    "destination_72x72": "kaluza.jpeg"
   },
   {
     "alias": "kantar",
@@ -3672,6 +3678,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "loveholidays",
+    "source": "loveholidays-180x180.png",
+    "destination": "loveholidays.png",
+    "destination_72x72": "loveholidays.png"
+  },
+  {
     "alias": "lowrisc",
     "source": "lowrisc-192x192.webp",
     "destination": "lowrisc.png",
@@ -3870,6 +3882,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "meilisearch",
+    "source": "meilisearch-152x152.png",
+    "destination": "meilisearch.png",
+    "destination_72x72": "meilisearch.png"
+  },
+  {
     "alias": "mellifera-operations-limited",
     "source": "",
     "destination": "",
@@ -4036,6 +4054,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "motherduck",
+    "source": "motherduck-200x200.jpeg",
+    "destination": "motherduck.jpeg",
+    "destination_72x72": "motherduck.jpeg"
   },
   {
     "alias": "motive-inc",
@@ -4324,6 +4348,12 @@
     "source": "nokia-180x180.png",
     "destination": "nokia.png",
     "destination_72x72": "nokia.png"
+  },
+  {
+    "alias": "nominal-inc",
+    "source": "nominal-inc-200x200.jpeg",
+    "destination": "nominal-inc.jpeg",
+    "destination_72x72": "nominal-inc.jpeg"
   },
   {
     "alias": "nordea",
@@ -5005,9 +5035,9 @@
   },
   {
     "alias": "prosapient",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "prosapient-200x200.jpeg",
+    "destination": "prosapient.jpeg",
+    "destination_72x72": "prosapient.jpeg"
   },
   {
     "alias": "prospect-33",
@@ -5659,9 +5689,9 @@
   },
   {
     "alias": "severalnines",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "severalnines-100x100.png",
+    "destination": "severalnines.png",
+    "destination_72x72": "severalnines.png"
   },
   {
     "alias": "shopee",
@@ -5905,9 +5935,9 @@
   },
   {
     "alias": "spendbase",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "spendbase-300x300.png",
+    "destination": "spendbase.png",
+    "destination_72x72": "spendbase.png"
   },
   {
     "alias": "spice-ai",
@@ -5977,9 +6007,9 @@
   },
   {
     "alias": "stacklok",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "stacklok-200x200.jpeg",
+    "destination": "stacklok.jpeg",
+    "destination_72x72": "stacklok.jpeg"
   },
   {
     "alias": "stairwell-inc",
@@ -6169,9 +6199,9 @@
   },
   {
     "alias": "suse",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "suse-200x200.jpeg",
+    "destination": "suse.jpeg",
+    "destination_72x72": "suse.jpeg"
   },
   {
     "alias": "svix",
@@ -6517,9 +6547,9 @@
   },
   {
     "alias": "threecolts",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "threecolts-200x200.jpeg",
+    "destination": "threecolts.jpeg",
+    "destination_72x72": "threecolts.jpeg"
   },
   {
     "alias": "thryve-earth",
@@ -6820,6 +6850,12 @@
     "source": "upfluence-200x200.jpeg",
     "destination": "upfluence.jpeg",
     "destination_72x72": "upfluence.jpeg"
+  },
+  {
+    "alias": "upsundotcom",
+    "source": "upsun-256x256.png",
+    "destination": "upsundotcom.png",
+    "destination_72x72": "upsundotcom.png"
   },
   {
     "alias": "upvest",

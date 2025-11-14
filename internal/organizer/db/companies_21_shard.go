@@ -1812,10 +1812,15 @@ func companies21Shard() []domain.CompanyProfile {
 				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Upfluence",
+				Employees:   "",
+				Salary:      "",
+				Reviews:     "",
+				ReviewsRate: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "upfluence",
+				Employees: "150",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Upfluence-EI_IE803160.11,20.htm",
@@ -4899,7 +4904,8 @@ func companies21Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "deuna",
+				Employees: "126",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-DEUNA-EI_IE6942865.11,16.htm",
@@ -5101,7 +5107,8 @@ func companies21Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "kaluza",
+				Employees: "270",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Kaluza-EI_IE3218974.11,17.htm",
@@ -5139,6 +5146,16 @@ func companies21Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4307236421/",
 							Location:             "Bristol, England, United Kingdom",
 							Date:                 mustDate("2025-10-03"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Scala Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://app.welcometothejungle.com/jobs/SyvliXfm",
+							Location:             "Bristol, England, United Kingdom",
+							Date:                 mustDate("2025-11-14"),
 							WithSalary:           false,
 							Remote:               false,
 						},
