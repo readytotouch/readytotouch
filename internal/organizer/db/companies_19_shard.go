@@ -4805,10 +4805,18 @@ func companies19Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "octopus-money",
+				Employees: "151",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Octopus-Money-EI_IE1948876.11,24.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Octopus-Money-Reviews-E1948876.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Octopus-Money-Jobs-E1948876.htm",
+				Jobs:        "6",
+				Reviews:     "13",
+				Salaries:    "53",
+				ReviewsRate: "4.7",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",

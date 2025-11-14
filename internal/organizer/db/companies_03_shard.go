@@ -5236,8 +5236,9 @@ func companies03Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "checkout",
-				Verified: false,
+				Login:     "checkout",
+				Followers: "86",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Checkoutcom",
