@@ -762,8 +762,9 @@ func companies22Shard() []domain.CompanyProfile {
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "livekit",
+				Followers: "2.3k",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -773,18 +774,25 @@ func companies22Shard() []domain.CompanyProfile {
 				Employees: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-LiveKit-EI_IE10388730.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/LiveKit-Reviews-E10388730.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/LiveKit-Jobs-E10388730.htm",
+				Jobs:        "17",
+				Reviews:     "1",
+				Salaries:    "1",
+				ReviewsRate: "5.0",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 32,
 					Vacancies:               []domain.Vacancy{},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 2,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Staff Rust SDK Engineer",
@@ -847,8 +855,9 @@ func companies22Shard() []domain.CompanyProfile {
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "watergenics",
+				Followers: "7",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -1635,8 +1644,9 @@ func companies22Shard() []domain.CompanyProfile {
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "Spendbase",
+				Followers: "7",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -2085,8 +2095,9 @@ func companies22Shard() []domain.CompanyProfile {
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "severalnines",
+				Followers: "22",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -2102,7 +2113,7 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 10,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Go Developer",
@@ -2434,8 +2445,9 @@ func companies22Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "exein-io",
+				Followers: "116",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -2444,7 +2456,14 @@ func companies22Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Exein-EI_IE2895315.11,16.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Exein-Reviews-E2895315.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Exein-Jobs-E2895315.htm",
+				Jobs:        "",
+				Reviews:     "22",
+				Salaries:    "11",
+				ReviewsRate: "4.7",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -2455,7 +2474,7 @@ func companies22Shard() []domain.CompanyProfile {
 					Vacancies:               []domain.Vacancy{},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 4,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer (Rust)",
@@ -3020,7 +3039,14 @@ func companies22Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Upsun-EI_IE1963948.11,16.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Upsun-Reviews-E1963948.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Upsun-Jobs-E1963948.htm",
+				Jobs:        "8",
+				Reviews:     "122",
+				Salaries:    "238",
+				ReviewsRate: "3.5",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",

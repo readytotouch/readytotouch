@@ -5719,6 +5719,11 @@ func companies08Shard() []domain.CompanyProfile {
 				AssociatedMembers: "39",
 				Verified:          true,
 			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:     "stacklok",
+				Followers: "151",
+				Verified:  true,
+			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "",
 				ReviewsURL:  "",

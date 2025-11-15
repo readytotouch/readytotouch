@@ -2321,8 +2321,9 @@ func companies05Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "networkoptix",
-				Verified: false,
+				Login:     "networkoptix",
+				Followers: "62",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",

@@ -1761,7 +1761,7 @@ func companies16Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 1,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Rust, AI Platform Engineer, Director",
@@ -4315,8 +4315,8 @@ func companies16Shard() []domain.CompanyProfile {
 			Type:    "", // system
 			Name:    "Flow Traders",
 			Website: "https://www.flowtraders.com/",
-			Careers: "",
-			About:   "",
+			Careers: "https://www.flowtraders.com/careers/",
+			About:   "https://www.flowtraders.com/about/",
 			Blog:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                63592,
