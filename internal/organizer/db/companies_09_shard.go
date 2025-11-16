@@ -3602,8 +3602,9 @@ func companies09Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "cognitedata",
-				Verified: true,
+				Login:     "cognitedata",
+				Followers: "262",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Cognite",
@@ -3630,9 +3631,11 @@ func companies09Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			Languages: domain.Languages{
-				domain.Go: {},
+				domain.Go: {
+					GitHubRepositoriesCount: 27,
+				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 29,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer (Rust/Kotlin)",

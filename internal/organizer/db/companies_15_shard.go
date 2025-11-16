@@ -1350,7 +1350,7 @@ func companies15Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 39,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Golang and C++ Developer",

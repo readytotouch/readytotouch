@@ -3604,8 +3604,9 @@ func companies18Shard() []domain.CompanyProfile {
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "symbolica-ai",
+				Followers: "201",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -3614,7 +3615,14 @@ func companies18Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Symbolica-AI-EI_IE10326705.11,23.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Symbolica-AI-Reviews-E10326705.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Symbolica-AI-Jobs-E10326705.htm",
+				Jobs:        "",
+				Reviews:     "14",
+				Salaries:    "13",
+				ReviewsRate: "4.4",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -3625,7 +3633,7 @@ func companies18Shard() []domain.CompanyProfile {
 					Vacancies:               []domain.Vacancy{},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 1,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer (Rust)",
@@ -3862,8 +3870,9 @@ func companies18Shard() []domain.CompanyProfile {
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "famedly",
+				Followers: "58",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",

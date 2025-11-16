@@ -5236,10 +5236,10 @@ func companies19Shard() []domain.CompanyProfile {
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Papa-EI_IE2525288.11,15.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Papa-Reviews-E2525288.htm",
 				JobsURL:     "https://www.glassdoor.com/Jobs/Papa-Jobs-E2525288.htm",
-				Jobs:        "8",
-				Reviews:     "194",
-				Salaries:    "224",
-				ReviewsRate: "3.4",
+				Jobs:        "17",
+				Reviews:     "196",
+				Salaries:    "231",
+				ReviewsRate: "3.5",
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
@@ -5805,8 +5805,9 @@ func companies19Shard() []domain.CompanyProfile {
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "xai-org",
+				Followers: "6.3k",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -5815,7 +5816,14 @@ func companies19Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-xAI-EI_IE10404667.11,14.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/xAI-Reviews-E10404667.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/xAI-Jobs-E10404667.htm",
+				Jobs:        "",
+				Reviews:     "31",
+				Salaries:    "62",
+				ReviewsRate: "3.9",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
