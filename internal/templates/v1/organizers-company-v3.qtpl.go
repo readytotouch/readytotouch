@@ -307,7 +307,84 @@ func StreamOrganizersCompanyV3(qw422016 *qt422016.Writer,
           `)
 	qw422016.N().S(`
         </div>
-        <!-- TODO company-card__stacks -->
+        <div class="company-card__stacks">
+          <p class="company-card__stacks-text">Other tech stacks for this company:</p>
+            <ul class="company-card__stacks-list">
+              `)
+	for _, state := range companyOrganizers(company) {
+		qw422016.N().S(`
+              <li class="company-card__stacks-item">
+                `)
+		if state.Organizer.Alias == organizerFeature.Organizer.Alias {
+			qw422016.N().S(`
+                <a class="company-card__stacks-link company-card__stacks-link--current" href="/`)
+			qw422016.E().S(state.Organizer.Alias)
+			qw422016.N().S(`/companies/`)
+			qw422016.E().S(company.LinkedInProfile.Alias)
+			qw422016.N().S(`" title="`)
+			qw422016.E().S(state.Organizer.Title)
+			qw422016.N().S(`">
+                  <img
+                    class="company-card__stacks-image"
+                    width="20"
+                    height="20"
+                    src="/assets/images/pages/organizer/stacks/`)
+			qw422016.E().S(state.Organizer.Logo)
+			qw422016.N().S(`"
+                    alt="`)
+			qw422016.E().S(state.Organizer.Title)
+			qw422016.N().S(`"
+                  />
+                </a>
+                `)
+		} else if state.Available {
+			qw422016.N().S(`
+                <a class="company-card__stacks-link" href="/`)
+			qw422016.E().S(state.Organizer.Alias)
+			qw422016.N().S(`/companies/`)
+			qw422016.E().S(company.LinkedInProfile.Alias)
+			qw422016.N().S(`" title="`)
+			qw422016.E().S(state.Organizer.Title)
+			qw422016.N().S(`">
+                  <img
+                    class="company-card__stacks-image"
+                    width="20"
+                    height="20"
+                    src="/assets/images/pages/organizer/stacks/`)
+			qw422016.E().S(state.Organizer.Logo)
+			qw422016.N().S(`"
+                    alt="`)
+			qw422016.E().S(state.Organizer.Title)
+			qw422016.N().S(`"
+                  />
+                </a>
+                `)
+		} else {
+			qw422016.N().S(`
+                <a class="company-card__stacks-link company-card__stacks-link--disabled" href="javascript:void(0);" title="`)
+			qw422016.E().S(state.Organizer.Title)
+			qw422016.N().S(`">
+                  <img
+                    class="company-card__stacks-image"
+                    width="20"
+                    height="20"
+                    src="/assets/images/pages/organizer/stacks/`)
+			qw422016.E().S(state.Organizer.Logo)
+			qw422016.N().S(`"
+                    alt="`)
+			qw422016.E().S(state.Organizer.Title)
+			qw422016.N().S(`"
+                  />
+                </a>
+                `)
+		}
+		qw422016.N().S(`
+              </li>
+              `)
+	}
+	qw422016.N().S(`
+            </ul>
+        </div>
         <div class="company-card__info">
           <figure class="company-card__figure">
             <img

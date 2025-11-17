@@ -27,7 +27,7 @@ var (
 		Alias:                 "golang",
 		GitHubAlias:           "go",
 		Title:                 "Golang",
-		Logo:                  "go-original.svg",
+		Logo:                  "go.svg", // go-original.svg
 		Keywords:              "Go, Golang, GoLand, Companies using Go, Companies using Golang, Companies using GoLand, Go companies, Golang companies, GoLand companies, Go connections, Golang connections, GoLand connections",
 		Description:           "ReadyToTouch helps you find companies that use Golang. Improve your chances of getting a job by connecting with Go developers and receiving further recommendations.",
 	}
@@ -47,7 +47,7 @@ var (
 		Alias:                 "zig",
 		GitHubAlias:           "zig",
 		Title:                 "Zig",
-		Logo:                  "zig.svg", // @TODO
+		Logo:                  "zig.svg",
 		Keywords:              "Zig, Companies using Zig, Zig companies, Zig connections",
 		Description:           "ReadyToTouch helps you find companies that use Zig. Improve your chances of getting a job by connecting with Zig developers and receiving further recommendations.",
 	}

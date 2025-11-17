@@ -14,12 +14,45 @@ type (
 	Company         = domain.CompanyProfile
 	University      = domain.University
 	PreparedVacancy = domain.PreparedVacancy
+
+	OrganizerState struct {
+		Organizer domain.Organizer
+		Available bool
+	}
 )
 
 const (
 	golangKeywordsTitles = string(domain.GoTitleKeywords)
 	keywordsCommon       = `"Developer" OR "Engineer" OR "DevOps"`
 )
+
+func companyOrganizers(company Company) []OrganizerState {
+	var (
+		source = []domain.Organizer{
+			domain.OrganizerGolang,
+			domain.OrganizerRust,
+			domain.OrganizerScala,
+			domain.OrganizerElixir,
+			domain.OrganizerErlang,
+			domain.OrganizerClojure,
+			domain.OrganizerZig,
+			domain.OrganizerHaskell,
+			domain.OrganizerFSharp,
+			domain.OrganizerOCaml,
+		}
+		result = make([]OrganizerState, len(source))
+	)
+
+	for i, organizer := range source {
+		// Show companies only if they have vacancies or are Rust Foundation members
+		result[i] = OrganizerState{
+			Organizer: organizer,
+			Available: len(company.Languages[organizer.Language].Vacancies) > 0 || (organizer.Language == domain.Rust && company.RustFoundationMember),
+		}
+	}
+
+	return result
+}
 
 func linkedinConnectionsURL(companies []Company, universities []University) string {
 	companyQueryParam, _ := json.Marshal(companiesToLinkedInIDs(companies))
