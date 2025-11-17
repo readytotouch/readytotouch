@@ -174,116 +174,57 @@ func (c *Controller) CompaniesV3(ctx *gin.Context) {
 }
 
 func (c *Controller) CompanyV1(ctx *gin.Context) {
-	var (
-		authUserID = domain.ContextGetUserID(ctx)
-	)
-
-	var (
-		uri companyAliasURI
-	)
-
-	err := ctx.ShouldBindUri(&uri)
-	if err != nil {
-		ctx.Data(http.StatusBadRequest, "text/html; charset=utf-8", []byte("Company alias is required"))
-
-		return
-	}
-
-	var (
-		featurePath = c.trimCompanyAlias(ctx)
-	)
-
-	// Redirect to lowercase company alias
-	{
-		redirectAlias := strings.ToLower(uri.CompanyAlias)
-		if uri.CompanyAlias != redirectAlias {
-			ctx.Redirect(http.StatusFound, featurePath+"/"+redirectAlias)
-
-			return
-		}
-	}
-
-	company, originalAlias, ok := c.findCompany(ctx, uri.CompanyAlias)
-	if !ok {
-		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Company not found"))
-
-		return
-	}
-
-	if originalAlias != "" {
-		ctx.Redirect(http.StatusFound, featurePath+"/"+originalAlias)
-
-		return
-	}
-
-	company.ID = organizers.CompanyAliasToCodeMap[company.LinkedInProfile.Alias]
-	if company.ID == 0 {
-		// make generate-organizers
-
-		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Company not found"))
-
-		return
-	}
-
-	if company.Type == "" {
-		company.Type = organizers.ToCompanyType(company.LinkedInProfile.Alias)
-	}
-	company.Logo = domain.CompanyLogo{
-		V0: organizers.CompanyAliasToLogoMapV0[company.LinkedInProfile.Alias],
-		V1: organizers.CompanyAliasToLogoMapV1[company.LinkedInProfile.Alias],
-		V2: organizers.CompanyAliasToLogoMapV2[company.LinkedInProfile.Alias],
-	}
-
-	organizerFeature, ok := c.organizerFeature(featurePath)
-	if !ok {
-		// Should be unreachable
-		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Feature not found"))
-
-		return
-	}
-
-	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)
-	if err != nil {
-		// @TODO logging
-
-		// NOP, continue
-	}
-
-	// Should be optimized
-	userCompanyFavoriteMap, err := c.userFavoriteCompanyRepository.GetMap(ctx, authUserID, []int64{company.ID})
-	if err != nil {
-		// @TODO logging
-
-		// NOP, continue
-	}
-
-	err = c.companyViewDailyStatsRepository.Upsert(ctx, company.ID, time.Now().UTC())
-	if err != nil {
-		// @TODO logging
-
-		// NOP, continue
-	}
-
-	content := template.OrganizersCompanyV1(
-		organizerFeature,
-		headerProfiles,
-		company,
-		db.UkrainianUniversities(),
-		db.CzechUniversities(),
-		userCompanyFavoriteMap[company.ID],
-		c.companyStats(ctx, company.ID),
-		c.redirect(organizerFeature.Path+"/"+uri.CompanyAlias),
-	)
-
-	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
+	c.companyAction(ctx, func(organizerFeature domain.OrganizerFeature, headerProfiles []domain.SocialProviderUser, company domain.CompanyProfile, vacancies []domain.PreparedVacancy, ukrainianUniversities []domain.University, czechUniversities []domain.University, favorite bool, userVacancyFavoriteMap map[int64]bool, vacancyMonthlyViewsMap map[int64]int64, stats template.CompanyStats, authQueryParams string) string {
+		return template.OrganizersCompanyV1(
+			organizerFeature,
+			headerProfiles,
+			company,
+			// vacancies,
+			ukrainianUniversities,
+			czechUniversities,
+			favorite,
+			// userVacancyFavoriteMap,
+			// vacancyMonthlyViewsMap,
+			stats,
+			authQueryParams,
+		)
+	})
 }
 
 func (c *Controller) CompanyV2(ctx *gin.Context) {
-	c.companyAction(ctx, template.OrganizersCompanyV2)
+	c.companyAction(ctx, func(organizerFeature domain.OrganizerFeature, headerProfiles []domain.SocialProviderUser, company domain.CompanyProfile, vacancies []domain.PreparedVacancy, ukrainianUniversities []domain.University, czechUniversities []domain.University, favorite bool, userVacancyFavoriteMap map[int64]bool, vacancyMonthlyViewsMap map[int64]int64, stats template.CompanyStats, authQueryParams string) string {
+		return template.OrganizersCompanyV2(
+			organizerFeature,
+			headerProfiles,
+			company,
+			vacancies,
+			ukrainianUniversities,
+			czechUniversities,
+			favorite,
+			userVacancyFavoriteMap,
+			vacancyMonthlyViewsMap,
+			stats,
+			authQueryParams,
+		)
+	})
 }
 
 func (c *Controller) CompanyV3(ctx *gin.Context) {
-	c.companyAction(ctx, template.OrganizersCompanyV3)
+	c.companyAction(ctx, func(organizerFeature domain.OrganizerFeature, headerProfiles []domain.SocialProviderUser, company domain.CompanyProfile, vacancies []domain.PreparedVacancy, ukrainianUniversities []domain.University, czechUniversities []domain.University, favorite bool, userVacancyFavoriteMap map[int64]bool, vacancyMonthlyViewsMap map[int64]int64, stats template.CompanyStats, authQueryParams string) string {
+		return template.OrganizersCompanyV3(
+			organizerFeature,
+			headerProfiles,
+			company,
+			vacancies,
+			ukrainianUniversities,
+			czechUniversities,
+			favorite,
+			userVacancyFavoriteMap,
+			vacancyMonthlyViewsMap,
+			stats,
+			authQueryParams,
+		)
+	})
 }
 
 func (c *Controller) companiesAction(

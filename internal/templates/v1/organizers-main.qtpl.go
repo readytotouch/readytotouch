@@ -99,7 +99,7 @@ func StreamOrganizersMain(qw422016 *qt422016.Writer, headerProfiles []SocialProv
           <img
             width="20"
             height="20"
-            src="/assets/images/pages/organizer/go-original.svg"
+            src="/assets/images/pages/organizer/go.svg"
             alt="Go original logo"
             class="hero__button-icon"
           />

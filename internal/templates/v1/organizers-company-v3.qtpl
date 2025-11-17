@@ -204,7 +204,46 @@
           {% endif %}
           {% endcomment %}
         </div>
-        <!-- TODO company-card__stacks -->
+        <div class="company-card__stacks">
+          <p class="company-card__stacks-text">Other tech stacks for this company:</p>
+            <ul class="company-card__stacks-list">
+              {% for _, state := range companyOrganizers(company) %}
+              <li class="company-card__stacks-item">
+                {% if state.Organizer.Alias == organizerFeature.Organizer.Alias %}
+                <a class="company-card__stacks-link company-card__stacks-link--current" href="/{%s state.Organizer.Alias %}/companies/{%s company.LinkedInProfile.Alias %}" title="{%s state.Organizer.Title %}">
+                  <img
+                    class="company-card__stacks-image"
+                    width="20"
+                    height="20"
+                    src="/assets/images/pages/organizer/stacks/{%s state.Organizer.Logo %}"
+                    alt="{%s state.Organizer.Title %}"
+                  />
+                </a>
+                {% elseif state.Available %}
+                <a class="company-card__stacks-link" href="/{%s state.Organizer.Alias %}/companies/{%s company.LinkedInProfile.Alias %}" title="{%s state.Organizer.Title %}">
+                  <img
+                    class="company-card__stacks-image"
+                    width="20"
+                    height="20"
+                    src="/assets/images/pages/organizer/stacks/{%s state.Organizer.Logo %}"
+                    alt="{%s state.Organizer.Title %}"
+                  />
+                </a>
+                {% else %}
+                <a class="company-card__stacks-link company-card__stacks-link--disabled" href="javascript:void(0);" title="{%s state.Organizer.Title %}">
+                  <img
+                    class="company-card__stacks-image"
+                    width="20"
+                    height="20"
+                    src="/assets/images/pages/organizer/stacks/{%s state.Organizer.Logo %}"
+                    alt="{%s state.Organizer.Title %}"
+                  />
+                </a>
+                {% endif %}
+              </li>
+              {% endfor %}
+            </ul>
+        </div>
         <div class="company-card__info">
           <figure class="company-card__figure">
             <img
