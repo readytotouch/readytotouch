@@ -1490,11 +1490,21 @@ func companies22Shard() []domain.CompanyProfile {
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer – Golang",
-							ShortDescription:     "Montevideo",
+							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4335474716/",
 							Location:             "Montevideo, Montevideo, Uruguay",
 							Date:                 mustDate("2025-11-12"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Software Engineer – Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4336253707/",
+							Location:             "Montevideo, Montevideo, Uruguay",
+							Date:                 mustDate("2025-11-15"),
 							WithSalary:           false,
 							Remote:               false,
 						},

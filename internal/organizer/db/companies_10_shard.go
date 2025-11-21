@@ -5088,6 +5088,16 @@ func companies10Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Staff Software Engineer, Golang and React",
+							ShortDescription:     "Gigafactory",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4336574561/",
+							Location:             "Grünheide, Brandenburg, Germany",
+							Date:                 mustDate("2025-11-18"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
