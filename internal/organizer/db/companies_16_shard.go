@@ -1522,6 +1522,16 @@ func companies16Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Backend Engineer (Elixir)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4336651004/",
+							Location:             "Brazil",
+							Date:                 mustDate("2025-11-20"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Clojure: {},
@@ -3946,6 +3956,16 @@ func companies16Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4314927536/",
 							Location:             "Philippines",
 							Date:                 mustDate("2025-10-22"),
+							WithSalary:           true, // $30k/yr - $45k/yr
+							Remote:               true,
+						},
+						{
+							Title:                "Senior Full Stack Developer | Elixir, Phoenix, LiveView",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4341961080/",
+							Location:             "Philippines",
+							Date:                 mustDate("2025-11-20"),
 							WithSalary:           true, // $30k/yr - $45k/yr
 							Remote:               true,
 						},

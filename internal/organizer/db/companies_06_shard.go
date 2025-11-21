@@ -4699,7 +4699,7 @@ func companies06Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4309698116/",
 							Location:             "Draper, UT",
-							Date:                 mustDate("2025-10-03"),
+							Date:                 mustDate("2025-11-15", "2025-10-03"),
 							WithSalary:           true, // $126.5k/yr - $151.7k/yr
 							Remote:               false,
 						},
