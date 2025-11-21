@@ -1260,6 +1260,8 @@ var (
 		"honeycomb.io":                        1260, // honeycomb.io
 		"meilisearch":                         1261, // Meilisearch
 		"cloudera":                            1262, // Cloudera
+		"twilio-inc-":                         1263, // Twilio
+		"albatross-ai":                        1264, // Albatross AI
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

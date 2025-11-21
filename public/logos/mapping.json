@@ -228,6 +228,12 @@
     "destination_72x72": "akka-io.jpeg"
   },
   {
+    "alias": "albatross-ai",
+    "source": "albatross-ai-200x200.jpeg",
+    "destination": "albatross-ai.jpeg",
+    "destination_72x72": "albatross-ai.jpeg"
+  },
+  {
     "alias": "aleph-alpha",
     "source": "aleph-alpha-200x200.jpeg",
     "destination": "aleph-alpha.jpeg",
@@ -6742,6 +6748,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "twilio-inc-",
+    "source": "twilio-200x200.jpeg",
+    "destination": "twilio-inc-.jpeg",
+    "destination_72x72": "twilio-inc-.jpeg"
   },
   {
     "alias": "twitch-tv",

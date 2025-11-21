@@ -4212,7 +4212,7 @@ func companies20Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4291616085/",
 							Location:             "Boulder, CO",
-							Date:                 mustDate("2025-10-30"),
+							Date:                 mustDate("2025-11-20", "2025-10-30"),
 							WithSalary:           true, // $90k/yr - $130.5k/yr
 							Remote:               false,
 						},

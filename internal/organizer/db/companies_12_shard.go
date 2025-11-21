@@ -229,6 +229,16 @@ func companies12Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $186.4k/yr - $279.6k/yr
 							Remote:               false,
 						},
+						{
+							Title:                "Principal Rust Developer",
+							ShortDescription:     "Gateway Solutions",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4341814563/",
+							Location:             "Greater Seattle Area",
+							Date:                 mustDate("2025-11-20"),
+							WithSalary:           true, // $186.4k/yr - $279.6k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig:     {},
