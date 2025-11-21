@@ -185,6 +185,7 @@ type PreparedVacancy struct {
 	Title                string
 	ShortDescription     string // proof that the vacancy is for a particular technology
 	SwitchingOpportunity string // proof that the vacancy is for a particular technology
+	Location             string
 	URL                  string
 	Date                 time.Time
 	WithSalary           bool // for future use

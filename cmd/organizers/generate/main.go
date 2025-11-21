@@ -127,6 +127,7 @@ func generateVacancies(companies []domain.CompanyProfile) {
 		maxID                       = int64(0)
 		pairs                       = make([]*dev.VacancyCodePair, 0, count)
 		urlCompanyLanguageExistsMap = make(map[string]map[string]map[int]bool, count)
+		locationCountMap            = make(map[string]int)
 	)
 
 	for _, company := range companies {
@@ -137,6 +138,10 @@ func generateVacancies(companies []domain.CompanyProfile) {
 				}
 				if vacancy.URL == "" {
 					panic(fmt.Sprintf("Vacancy URL is empty for company: %s", company.Name))
+				}
+
+				if vacancy.Location != "" {
+					locationCountMap[vacancy.Location]++
 				}
 
 				companiesCount := len(urlCompanyLanguageExistsMap[vacancy.URL])
@@ -204,6 +209,36 @@ func generateVacancies(companies []domain.CompanyProfile) {
 
 	fmt.Println("Vacancy code generated successfully")
 	fmt.Printf("Max ID: %d\n", maxID)
+
+	fmt.Printf("Location count: %d\n", len(locationCountMap))
+
+	/*
+		type LocationCount struct {
+			Location string
+			Count    int
+		}
+
+		var (
+			locations = make([]LocationCount, 0, len(locationCountMap))
+		)
+
+		for location, count := range locationCountMap {
+			if count >= 3 {
+				locations = append(locations, LocationCount{
+					Location: location,
+					Count:    count,
+				})
+			}
+		}
+
+		sort.Slice(locations, func(i, j int) bool {
+			return locations[i].Count > locations[j].Count
+		})
+
+		for _, location := range locations {
+			fmt.Printf("%q: true, // %d\n", location.Location, location.Count)
+		}
+	*/
 }
 
 func generateLogosSearch(companies []domain.CompanyProfile) {

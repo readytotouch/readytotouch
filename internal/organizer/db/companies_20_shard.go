@@ -2782,7 +2782,7 @@ func companies20Shard() []domain.CompanyProfile {
 							ShortDescription:     "Azure, DevOps",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4285626267/",
-							Location:             "Ho Chi Minh City, Ho Chi Minh City, Vietnam",
+							Location:             "Ho Chi Minh City, Vietnam",
 							Date:                 mustDate("2025-10-25", "2025-08-22"),
 							WithSalary:           false,
 							Remote:               false,

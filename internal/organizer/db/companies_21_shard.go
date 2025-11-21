@@ -4608,7 +4608,7 @@ func companies21Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4306348703/",
-							Location:             "Ho Chi Minh City, Ho Chi Minh City, Vietnam",
+							Location:             "Ho Chi Minh City, Vietnam",
 							Date:                 mustDate("2025-09-30"),
 							WithSalary:           false,
 							Remote:               false,
