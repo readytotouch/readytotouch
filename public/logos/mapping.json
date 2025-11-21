@@ -1344,6 +1344,12 @@
     "destination_72x72": "cloudbees.png"
   },
   {
+    "alias": "cloudera",
+    "source": "cloudera-180x180.png",
+    "destination": "cloudera.png",
+    "destination_72x72": "cloudera.png"
+  },
+  {
     "alias": "cloudflare",
     "source": "cloudflare-200x200.jpeg",
     "destination": "cloudflare.jpeg",

@@ -3387,6 +3387,103 @@ func companies22Shard() []domain.CompanyProfile {
 				domain.IndustryDevOps,
 			},
 		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Cloudera",
+			Website: "https://www.cloudera.com/",
+			Careers: "https://www.cloudera.com/careers",
+			About:   "https://www.cloudera.com/about",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                229433,
+				IDs:               nil,
+				Alias:             "cloudera",
+				Name:              "Cloudera",
+				Followers:         "286K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "3,293",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:     "CLOUDERA",
+				Followers: "309",
+				Verified:  false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias:       "Cloudera",
+				Employees:   "",
+				Salary:      "",
+				Reviews:     "455",
+				ReviewsRate: "3.4",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "cloudera",
+				Employees: "3,500",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Cloudera-EI_IE360671.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Cloudera-Reviews-E360671.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Cloudera-Jobs-E360671.htm",
+				Jobs:        "80",
+				Reviews:     "1.4K",
+				Salaries:    "2.3K",
+				ReviewsRate: "4.0",
+				Verified:    true,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "Cloudera",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Staff Software Engineer (Java/Scala)",
+							ShortDescription:     "Iceberg",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4317466938/",
+							Location:             "Budapest Metropolitan Area",
+							Date:                 mustDate("2025-11-15"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Data and AI platform",
+			Industries: []domain.Industry{
+				domain.IndustryDevOps,
+			},
+		},
 
 		// Template
 		//{

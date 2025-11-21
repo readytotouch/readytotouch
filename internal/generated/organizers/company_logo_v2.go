@@ -228,6 +228,7 @@ var (
 		"clinia":                              "",
 		"clockwork-labs":                      "",
 		"cloudbees":                           "cloudbees.png",
+		"cloudera":                            "cloudera.png",
 		"cloudflare":                          "cloudflare.jpeg",
 		"cloudlinux":                          "cloudlinux.png",
 		"cloudnuro":                           "cloudnuro.jpeg",

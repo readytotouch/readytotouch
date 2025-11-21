@@ -76,6 +76,16 @@ func companies11Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $115.000 - $145.000 per year
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Data Engineer (Scala/Spark)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4337182112/",
+							Location:             "Englewood Cliffs, NJ",
+							Date:                 mustDate("2025-11-20"),
+							WithSalary:           true, // $115k/yr - $145k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Elixir:  {},
@@ -1483,6 +1493,16 @@ func companies11Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4075632689/",
 							Date:                 mustDate("2025-02-25"),
 							WithSalary:           true, // $97.344 - $162.240 per year
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Software Development Engineer – Scala",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4319499383/",
+							Location:             "Redlands, CA",
+							Date:                 mustDate("2025-11-20"),
+							WithSalary:           true, // $119k/yr - $197.6k/yr
 							Remote:               false,
 						},
 					},

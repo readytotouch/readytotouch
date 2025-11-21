@@ -1811,7 +1811,7 @@ func companies06Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4299400997/",
 							Location:             "Cracow Metropolitan Area",
-							Date:                 mustDate("2025-10-04"),
+							Date:                 mustDate("2025-11-20", "2025-10-04"),
 							WithSalary:           false,
 							Remote:               true,
 						},

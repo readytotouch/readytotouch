@@ -2393,6 +2393,16 @@ func companies04Shard() []domain.CompanyProfile {
 							WithSalary:           true, // The hiring range for this position in Seattle, Washington and New York NY is $159,500 to $213,900 per year and in Burbank, CA and Bristol CT is $152,200 to $204,100 per year.
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Software Engineer – Scala",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4323316661/",
+							Location:             "Glendale, CA",
+							Date:                 mustDate("2025-11-20"),
+							WithSalary:           true, // $138.9k/yr - $203.9k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Elixir:  {},

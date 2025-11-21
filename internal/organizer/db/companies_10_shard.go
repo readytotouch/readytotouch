@@ -1550,6 +1550,16 @@ func companies10Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $140k/yr - $168k/yr
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Software Engineer II (Backend, Scala or C++)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4337081482/",
+							Location:             "Chicago, IL",
+							Date:                 mustDate("2025-11-20"),
+							WithSalary:           true, // $165k/yr - $190k/yr + bonus
+							Remote:               false,
+						},
 					},
 				},
 				domain.Elixir:  {},
@@ -2956,7 +2966,7 @@ func companies10Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4291342584/",
 							Location:             "Los Angeles Metropolitan Area",
-							Date:                 mustDate("2025-10-31", "2025-10-08", "2025-09-18"),
+							Date:                 mustDate("2025-11-20", "2025-10-31", "2025-10-08", "2025-09-18"),
 							WithSalary:           true, // $150k/yr - $170k/yr
 							Remote:               false,
 						},

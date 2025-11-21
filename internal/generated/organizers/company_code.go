@@ -1259,6 +1259,7 @@ var (
 		"motherduck":                          1259, // MotherDuck
 		"honeycomb.io":                        1260, // honeycomb.io
 		"meilisearch":                         1261, // Meilisearch
+		"cloudera":                            1262, // Cloudera
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

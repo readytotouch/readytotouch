@@ -3202,7 +3202,18 @@ func companies21Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Backend Engineer (Java/Scala/Go)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4316278689/",
+							Location:             "Netanya, Center District, Israel",
+							Date:                 mustDate("2025-11-15"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
 				},
 				domain.Rust: {
 					GitHubRepositoriesCount: 0,
@@ -3222,6 +3233,16 @@ func companies21Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4293125191/",
 							Location:             "Netanya, Center District, Israel",
 							Date:                 mustDate("2025-09-10"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Backend Engineer (Java/Scala/Go)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4316278689/",
+							Location:             "Netanya, Center District, Israel",
+							Date:                 mustDate("2025-11-15"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -5246,7 +5267,7 @@ func companies21Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4308245274/",
 							Location:             "United Kingdom",
-							Date:                 mustDate("2025-10-08"),
+							Date:                 mustDate("2025-11-19", "2025-10-08"),
 							WithSalary:           false,
 							Remote:               true,
 						},
