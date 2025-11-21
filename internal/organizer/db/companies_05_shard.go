@@ -1271,7 +1271,7 @@ func companies05Shard() []domain.CompanyProfile {
 							ShortDescription:     "DOP",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4293604810/",
-							Location:             "Ho Chi Minh City, Ho Chi Minh City, Vietnam",
+							Location:             "Ho Chi Minh City, Vietnam",
 							Date:                 mustDate("2025-09-03"),
 							WithSalary:           false,
 							Remote:               false,

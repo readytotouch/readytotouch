@@ -228,6 +228,12 @@
     "destination_72x72": "akka-io.jpeg"
   },
   {
+    "alias": "albatross-ai",
+    "source": "albatross-ai-200x200.jpeg",
+    "destination": "albatross-ai.jpeg",
+    "destination_72x72": "albatross-ai.jpeg"
+  },
+  {
     "alias": "aleph-alpha",
     "source": "aleph-alpha-200x200.jpeg",
     "destination": "aleph-alpha.jpeg",
@@ -1342,6 +1348,12 @@
     "source": "cloudbees-180x180.png",
     "destination": "cloudbees.png",
     "destination_72x72": "cloudbees.png"
+  },
+  {
+    "alias": "cloudera",
+    "source": "cloudera-180x180.png",
+    "destination": "cloudera.png",
+    "destination_72x72": "cloudera.png"
   },
   {
     "alias": "cloudflare",
@@ -6736,6 +6748,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "twilio-inc-",
+    "source": "twilio-200x200.jpeg",
+    "destination": "twilio-inc-.jpeg",
+    "destination_72x72": "twilio-inc-.jpeg"
   },
   {
     "alias": "twitch-tv",

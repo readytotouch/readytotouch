@@ -595,8 +595,8 @@ func companies19Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4250646664/",
 							Location:             "San Jose, CA",
-							Date:                 mustDate("2025-10-27", "2025-10-06", "2025-09-14", "2025-08-23", "2025-08-02", "2025-07-10", "2025-06-23"),
-							WithSalary:           true, // $150k/yr - $175k/yr
+							Date:                 mustDate("2025-11-17"), // mustDate("2025-10-27", "2025-10-06", "2025-09-14", "2025-08-23", "2025-08-02", "2025-07-10", "2025-06-23"),
+							WithSalary:           true,                   // $150k/yr - $175k/yr
 							Remote:               false,
 						},
 						{
@@ -1766,6 +1766,16 @@ func companies19Shard() []domain.CompanyProfile {
 							Date:                 mustDate("2025-07-30"),
 							WithSalary:           false,
 							Remote:               true,
+						},
+						{
+							Title:                "Elixir Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4341941098/",
+							Location:             "Tel Aviv-Yafo, Tel Aviv District, Israel",
+							Date:                 mustDate("2025-11-20"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 					},
 				},
@@ -4844,6 +4854,16 @@ func companies19Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Backend Engineer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4316935978/",
+							Location:             "London, England, United Kingdom",
+							Date:                 mustDate("2025-11-20"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
@@ -5852,7 +5872,7 @@ func companies19Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4262573291/",
 							Location:             "Palo Alto, CA",
-							Date:                 mustDate("2025-10-27", "2025-10-05", "2025-09-13", "2025-08-22"),
+							Date:                 mustDate("2025-11-17", "2025-10-27", "2025-10-05", "2025-09-13", "2025-08-22"),
 							WithSalary:           true, // $180k/yr - $440k/yr
 							Remote:               false,
 						},

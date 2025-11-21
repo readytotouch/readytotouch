@@ -1490,11 +1490,21 @@ func companies22Shard() []domain.CompanyProfile {
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer – Golang",
-							ShortDescription:     "Montevideo",
+							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4335474716/",
 							Location:             "Montevideo, Montevideo, Uruguay",
 							Date:                 mustDate("2025-11-12"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Software Engineer – Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4336253707/",
+							Location:             "Montevideo, Montevideo, Uruguay",
+							Date:                 mustDate("2025-11-15"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2297,6 +2307,16 @@ func companies22Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $140k/yr - $230k/yr
 							Remote:               false,
 						},
+						{
+							Title:                "Senior System Engineer, Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4323603760/",
+							Location:             "New York City Metropolitan Area",
+							Date:                 mustDate("2025-11-20"),
+							WithSalary:           true, // $140k/yr - $230k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig: {
@@ -2578,7 +2598,7 @@ func companies22Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4321915810/",
 							Location:             "Tokyo, Tokyo, Japan",
-							Date:                 mustDate("2025-11-12"),
+							Date:                 mustDate("2025-11-20", "2025-11-12"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3385,6 +3405,287 @@ func companies22Shard() []domain.CompanyProfile {
 			ShortDescription: "Search solution",
 			Industries: []domain.Industry{
 				domain.IndustryDevOps,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Cloudera",
+			Website: "https://www.cloudera.com/",
+			Careers: "https://www.cloudera.com/careers",
+			About:   "https://www.cloudera.com/about",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                229433,
+				IDs:               nil,
+				Alias:             "cloudera",
+				Name:              "Cloudera",
+				Followers:         "286K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "3,293",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:     "CLOUDERA",
+				Followers: "309",
+				Verified:  false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias:       "Cloudera",
+				Employees:   "",
+				Salary:      "",
+				Reviews:     "455",
+				ReviewsRate: "3.4",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "cloudera",
+				Employees: "3,500",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Cloudera-EI_IE360671.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Cloudera-Reviews-E360671.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Cloudera-Jobs-E360671.htm",
+				Jobs:        "80",
+				Reviews:     "1.4K",
+				Salaries:    "2.3K",
+				ReviewsRate: "4.0",
+				Verified:    true,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "Cloudera",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Staff Software Engineer (Java/Scala)",
+							ShortDescription:     "Iceberg",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4317466938/",
+							Location:             "Budapest Metropolitan Area",
+							Date:                 mustDate("2025-11-15"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Data and AI platform",
+			Industries: []domain.Industry{
+				domain.IndustryDevOps,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Twilio",
+			Website: "https://www.twilio.com/",
+			Careers: "https://www.twilio.com/company/jobs",
+			About:   "https://www.twilio.com/company",
+			Blog:    "https://www.twilio.com/blog/developers",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                400528,
+				IDs:               []int{400528, 2425698},
+				Alias:             "twilio-inc-",
+				Name:              "Twilio",
+				Followers:         "427K",
+				Employees:         "5K-10K",
+				AssociatedMembers: "6,590",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:     "twilio",
+				Followers: "862",
+				Verified:  true,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias:       "Twilio",
+				Employees:   "",
+				Salary:      "",
+				Reviews:     "1,228",
+				ReviewsRate: "3.5",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias:     "twilio",
+				Employees: "7,140",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Twilio-EI_IE410790.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Twilio-Reviews-E410790.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Twilio-Jobs-E410790.htm",
+				Jobs:        "57",
+				Reviews:     "2.2K",
+				Salaries:    "5.8K",
+				ReviewsRate: "3.9",
+				Verified:    false,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "Twilio",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer (Java and Rust)",
+							ShortDescription:     "Video Signalling",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4336250122/",
+							Location:             "Ireland",
+							Date:                 mustDate("2025-11-15"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Customer Engagement Platform",
+			YahooFinanceURL:  "https://finance.yahoo.com/quote/TWLO/",
+			GoogleFinanceURL: "https://www.google.com/finance/quote/TWLO:NYSE",
+			YCombinatorURL:   "",
+			Industries: []domain.Industry{
+				domain.IndustryDevOps,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Albatross AI",
+			Website: "https://usealbatross.ai/",
+			Careers: "https://apply.workable.com/usealbatross/",
+			About:   "https://usealbatross.ai/about-us",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                104747602,
+				IDs:               nil,
+				Alias:             "albatross-ai",
+				Name:              "Albatross AI",
+				Followers:         "2K",
+				Employees:         "11-50",
+				AssociatedMembers: "20",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Rust Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4336878749/",
+							Location:             "France",
+							Date:                 mustDate("2025-11-19"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "AI platform for real-time discovery",
+			Industries:       []domain.Industry{
+				// NOP
 			},
 		},
 

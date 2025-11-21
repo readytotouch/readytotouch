@@ -3144,6 +3144,16 @@ func companies13Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $168k/yr - $275k/yr
 							Remote:               false,
 						},
+						{
+							Title:                "Intern Embedded Haskell Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4311329988/",
+							Location:             "Costa Mesa, CA",
+							Date:                 mustDate("2025-11-19"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 			},

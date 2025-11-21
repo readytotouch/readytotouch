@@ -478,6 +478,27 @@ func StreamOrganizersVacanciesV3(qw422016 *qt422016.Writer,
 		qw422016.E().S(vacancy.Company.Name)
 		qw422016.N().S(`</a>
                         `)
+		if showLocation(vacancy.Location) {
+			qw422016.N().S(`
+                        <p class="card__header-caption-text">
+                          <img
+                            class="card__header-caption-icon"
+                            alt="marker"
+                            width="12"
+                            height="12"
+                            src="/assets/images/pages/organizer/marker.svg"
+                          />`)
+			qw422016.E().S(vacancy.Location)
+			qw422016.N().S(`&nbsp;`)
+			if vacancy.Remote {
+				qw422016.N().S(`(Remote)`)
+			}
+			qw422016.N().S(`
+                        </p>
+                        `)
+		}
+		qw422016.N().S(`
+                        `)
 		qw422016.N().S(`
                       </figcaption>
                     </figure>

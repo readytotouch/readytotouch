@@ -1916,7 +1916,7 @@
                       <figcaption class="card__header-caption">
                         <a href="/v/{%dl vacancy.ID %}" target="_blank" class="card__headline">{%s vacancy.Title %}</a>
                         <a href="/{%s organizerFeature.Organizer.Alias %}/companies/{%s vacancy.Company.Alias %}" target="_blank" class="card__sub-headline">{%s vacancy.Company.Name %}</a>
-                        {% comment %}
+                        {% if showLocation(vacancy.Location) %}
                         <p class="card__header-caption-text">
                           <img
                             class="card__header-caption-icon"
@@ -1924,8 +1924,10 @@
                             width="12"
                             height="12"
                             src="/assets/images/pages/organizer/marker.svg"
-                          >Country, City (Full Remote) <!-- TODO -->
+                          />{%s vacancy.Location %}&nbsp;{% if vacancy.Remote %}(Remote){% endif %}
                         </p>
+                        {% endif %}
+                        {% comment %}
                         <p class="card__header-caption-text">
                           <img
                             class="card__header-caption-icon"
@@ -1933,7 +1935,7 @@
                             width="12"
                             height="12"
                             src="/assets/images/pages/vacancy/credit-card.svg"
-                          >€2,500/month <!-- TODO -->
+                          />€2,500/month <!-- TODO -->
                         </p>
                         {% endcomment %}
                       </figcaption>
