@@ -1,0 +1,3 @@
+{%- func OrganizersWelcomeV3(organizer Organizer, authQueryParams string) -%}
+
+{%- endfunc -%}
