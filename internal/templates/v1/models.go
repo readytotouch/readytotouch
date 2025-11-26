@@ -7,7 +7,7 @@ import (
 )
 
 const (
-	appVersion = 27
+	appVersion = 28
 )
 
 const (
