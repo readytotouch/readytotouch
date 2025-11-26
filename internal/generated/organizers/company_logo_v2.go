@@ -310,6 +310,7 @@ var (
 		"discord":                             "discord.jpeg",
 		"discovery-loft-inc":                  "",
 		"disney-entertainment":                "",
+		"disqo":                               "disqo.jpeg",
 		"distribusion":                        "distribusion.png",
 		"dittolive":                           "",
 		"dlocal":                              "dlocal.jpeg",

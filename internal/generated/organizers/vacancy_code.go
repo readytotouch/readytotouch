@@ -2043,6 +2043,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4310318335/":                                                               3152, // quantum-systems-gmbh
 		"https://www.linkedin.com/jobs/view/4332100707/":                                                               3304, // quantum-systems-gmbh
 		"https://www.linkedin.com/jobs/view/4333363703/":                                                               3421, // quantum-systems-gmbh
+		"https://www.linkedin.com/jobs/view/4324109909/":                                                               3478, // quantum-systems-gmbh
 		"https://www.linkedin.com/jobs/view/4118966168/":                                                               591,  // gdms
 		"https://www.linkedin.com/jobs/view/4148907792/":                                                               844,  // gdms
 		"https://www.linkedin.com/jobs/view/4179404017/":                                                               1137, // gdms
@@ -2409,6 +2410,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4125742838/":                                                               1154, // nelly-solutions
 		"https://www.linkedin.com/jobs/view/4270749805/":                                                               2477, // nelly-solutions
 		"https://www.linkedin.com/jobs/view/4308617858/":                                                               3094, // nelly-solutions
+		"https://www.linkedin.com/jobs/view/4338693835/":                                                               3479, // nelly-solutions
 		"https://www.linkedin.com/jobs/view/4027089913/":                                                               1155, // skyworks-solutions-inc
 		"https://www.linkedin.com/jobs/view/4153485948/":                                                               1156, // f5
 		"https://www.linkedin.com/jobs/view/4190616076/":                                                               1266, // f5
@@ -3395,6 +3397,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4304081084/":                                                               3058, // eskimi
 		"https://www.linkedin.com/jobs/view/4320326842/":                                                               3324, // eskimi
 		"https://www.linkedin.com/jobs/view/4304492468/":                                                               3059, // databento
+		"https://www.linkedin.com/jobs/view/4347516514/":                                                               3480, // databento
 		"https://www.linkedin.com/jobs/view/4302636216/":                                                               3060, // zattoo
 		"https://www.linkedin.com/jobs/view/4304189615/":                                                               3061, // oxylabs-io
 		"https://www.linkedin.com/jobs/view/4302637338/":                                                               3062, // pentaleaptech
@@ -3473,6 +3476,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4317466938/":                                                               3435, // cloudera
 		"https://www.linkedin.com/jobs/view/4336250122/":                                                               3436, // twilio-inc-
 		"https://www.linkedin.com/jobs/view/4336878749/":                                                               3437, // albatross-ai
+		"https://www.linkedin.com/jobs/view/4324341674/":                                                               3481, // disqo
 		"https://www.linkedin.com/jobs/view/3914839625/":                                                               372,  // cognizant
 		"https://www.linkedin.com/jobs/view/4120737001/":                                                               600,  // cognizant
 		"https://www.linkedin.com/jobs/view/4149258542/":                                                               787,  // cognizant

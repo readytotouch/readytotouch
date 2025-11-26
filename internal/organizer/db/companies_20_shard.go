@@ -5919,7 +5919,7 @@ func companies20Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4245104258/",
 							Location:             "Cluj-Napoca, Cluj, Romania",
-							Date:                 mustDate("2025-11-19"), // mustDate("2025-10-29", "2025-10-08", "2025-09-16", "2025-09-06"),
+							Date:                 mustDate("2025-11-19", "2025-10-29", "2025-10-08", "2025-09-16", "2025-09-06"),
 							WithSalary:           false,
 							Remote:               false,
 						},

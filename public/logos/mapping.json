@@ -1836,6 +1836,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "disqo",
+    "source": "disqo-200x200.jpeg",
+    "destination": "disqo.jpeg",
+    "destination_72x72": "disqo.jpeg"
+  },
+  {
     "alias": "distribusion",
     "source": "distribusion-192x192.png",
     "destination": "distribusion.png",

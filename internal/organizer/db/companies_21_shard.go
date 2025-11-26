@@ -2889,7 +2889,7 @@ func companies21Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4290540051/",
 							Location:             "Bengaluru, Karnataka, India",
-							Date:                 mustDate("2025-11-20"), // mustDate("2025-10-08", "2025-09-16"),
+							Date:                 mustDate("2025-11-20", "2025-10-08", "2025-09-16"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3811,6 +3811,16 @@ func companies21Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Software Engineer (C++/Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4347516514/",
+							Location:             "Chicago, IL",
+							Date:                 mustDate("2025-11-26"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Zig: {
@@ -4424,8 +4434,8 @@ func companies21Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4292978839/",
 							Location:             "United States",
-							Date:                 mustDate("2025-11-20"), // mustDate("2025-09-27"),
-							WithSalary:           true,                   // $119.1k/yr - $178.6k/yr
+							Date:                 mustDate("2025-11-20", "2025-09-27"),
+							WithSalary:           true, // $119.1k/yr - $178.6k/yr
 							Remote:               true,
 						},
 						{
@@ -5992,7 +6002,7 @@ func companies21Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4312301338/",
 							Location:             "Aarhus, Central Denmark Region, Denmark",
-							Date:                 mustDate("2025-11-20"), // mustDate("2025-10-08"),
+							Date:                 mustDate("2025-11-20", "2025-10-08"),
 							WithSalary:           false,
 							Remote:               false,
 						},

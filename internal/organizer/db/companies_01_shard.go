@@ -4032,7 +4032,7 @@ func companies01Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4332481767/",
 							Location:             "Canada",
-							Date:                 mustDate("2025-11-20"), // mustDate("2025-10-29"),
+							Date:                 mustDate("2025-11-20", "2025-10-29"),
 							WithSalary:           false,
 							Remote:               true,
 						},

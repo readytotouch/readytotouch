@@ -2598,7 +2598,7 @@ func companies22Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4321915810/",
 							Location:             "Tokyo, Tokyo, Japan",
-							Date:                 mustDate("2025-11-20", "2025-11-12"),
+							Date:                 mustDate("2025-11-24", "2025-11-20", "2025-11-12"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3686,6 +3686,97 @@ func companies22Shard() []domain.CompanyProfile {
 			ShortDescription: "AI platform for real-time discovery",
 			Industries:       []domain.Industry{
 				// NOP
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "DISQO",
+			Website: "https://www.disqo.com/",
+			Careers: "https://www.disqo.com/careers/",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                12178400,
+				IDs:               nil,
+				Alias:             "disqo",
+				Name:              "DISQO",
+				Followers:         "35K",
+				Employees:         "201-500",
+				AssociatedMembers: "302",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-DISQO-EI_IE2266003.11,16.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/DISQO-Reviews-E2266003.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/DISQO-Jobs-E2266003.htm",
+				Jobs:        "6",
+				Reviews:     "136",
+				Salaries:    "241",
+				ReviewsRate: "4.1",
+				Verified:    false,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Staff Software Engineer – Rust",
+							ShortDescription:     "Analytics Platform",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4324341674/",
+							Location:             "Los Angeles, CA",
+							Date:                 mustDate("2025-11-25"),
+							WithSalary:           true, // $200k/yr - $240k/yr
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Platform for measuring how advertising works",
+			Industries: []domain.Industry{
+				domain.IndustryAdTech,
 			},
 		},
 
