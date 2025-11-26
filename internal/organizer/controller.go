@@ -116,7 +116,7 @@ func (c *Controller) IndexV3(ctx *gin.Context) {
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.OrganizersIndexV3(headerProfiles, socialUserProfiles)))
 }
 
-func (c *Controller) Welcome(ctx *gin.Context) {
+func (c *Controller) WelcomeV1(ctx *gin.Context) {
 	organizer, ok := c.organizer(ctx.FullPath())
 	if !ok {
 		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Organizer not found"))
@@ -124,7 +124,20 @@ func (c *Controller) Welcome(ctx *gin.Context) {
 		return
 	}
 
-	content := template.OrganizersWelcome(organizer, c.authQueryParams(ctx))
+	content := template.OrganizersWelcomeV1(organizer, c.authQueryParams(ctx))
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
+}
+
+func (c *Controller) WelcomeV3(ctx *gin.Context) {
+	organizer, ok := c.organizer(ctx.FullPath())
+	if !ok {
+		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Organizer not found"))
+
+		return
+	}
+
+	content := template.OrganizersWelcomeV3(organizer, c.authQueryParams(ctx))
 
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
 }
