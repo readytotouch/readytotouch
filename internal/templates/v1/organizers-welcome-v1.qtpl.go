@@ -19,13 +19,13 @@ func StreamOrganizersWelcomeV1(qw422016 *qt422016.Writer, organizer Organizer, a
 <html lang="en">
 
 <head>
-	<title>Yet another anonymous work search</title>
-	<meta name="description" content="Yet another anonymous work search">
+    <title>Welcome</title>
+    <meta name="description" content="Welcome">
 
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="author" type="text/plain" href="https://readytotouch.com/humans.txt"/>
-	<meta property="og:image" content="/assets/images/og/organizers-light.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="author" type="text/plain" href="https://readytotouch.com/humans.txt"/>
+    <meta property="og:image" content="/assets/images/og/organizers-light.jpg">
 
     `)
 	streamfavicon(qw422016)
@@ -56,7 +56,9 @@ func StreamOrganizersWelcomeV1(qw422016 *qt422016.Writer, organizer Organizer, a
         src="/assets/images/pages/organizer/`)
 	qw422016.E().S(organizer.Logo)
 	qw422016.N().S(`"
-        alt="organizer logo"
+        alt="`)
+	qw422016.E().S(organizer.Title)
+	qw422016.N().S(` logo"
       />
       <span class="header__logo-label">Organizer</span>
     </a>

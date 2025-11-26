@@ -1,3 +1,106 @@
 {%- func OrganizersWelcomeV3(organizer Organizer, authQueryParams string) -%}
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <title>Welcome</title>
+    <meta name="description" content="Welcome">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="author" type="text/plain" href="https://readytotouch.com/humans.txt"/>
+    <meta property="og:image" content="/assets/images/og/organizers-light.jpg">
+
+    {%= favicon() %}
+    {%= organizersFonts() %}
+    {%= organizersIndexV3Styles() %}
+    {%= plausibleAnalytics() %}
+    {%= ga() %}
+</head>
+<body>
+
+<div class="main-wrapper">
+
+<header class="header">
+  <div class="header__wrapper">
+    <a href="/" class="header__logo">
+      <img width="40" height="40" class="header__logo-img" src="/assets/images/pages/organizer/{%s organizer.Logo %}" alt="{%s organizer.Title %} logo" />
+      <h3 class="header__logo-title">Organizer</h3>
+    </a>
+    {%= organizersHeaderStarsV3() %}
+  </div>
+</header>
+
+<main class="main-content">
+<section class="hero">
+  <div class="hero__wrapper">
+    <img
+      class="hero__top-flag"
+      alt="Flag of Ukraine with waves"
+      width="24"
+      height="24"
+      src="/assets/images/pages/main-responsive/ua_flag_with_waves.svg"
+    />
+    <div class="hero__main">
+      <h1 class="hero__title">Welcome</h1>
+    </div>
+    <div class="hero__buttons-group">
+      {% comment %}
+      <a href="/auth/linkedin{%s authQueryParams %}" class="button button--bordered-gray hero__button">
+        <img
+          width="20"
+          height="20"
+          src="/assets/images/pages/main-responsive/linkedin.svg"
+          alt="Linkedin logo"
+          class="button-icon"
+        />Log in with LinkedIn
+      </a>
+      <a href="/auth/google{%s authQueryParams %}" class="button button--bordered-gray hero__button">
+        <img
+          width="20"
+          height="20"
+          src="/assets/images/pages/main-responsive/google.svg"
+          alt="Google logo"
+          class="button-icon"
+        />Log in with Google
+      </a>
+      {% endcomment %}
+      <a href="/auth/github{%s authQueryParams %}" class="button button--bordered-gray hero__button">
+        <img
+          width="20"
+          height="20"
+          src="/assets/images/pages/main-responsive/github-black.svg"
+          alt="GitHub logo"
+          class="button-icon"
+        />Log in with GitHub
+      </a>
+      <a href="/auth/gitlab{%s authQueryParams %}" class="button button--bordered-gray hero__button">
+        <img
+          width="20"
+          height="20"
+          src="/assets/images/pages/main-responsive/gitlab.svg"
+          alt="GitLab logo"
+          class="hero__button-icon"
+        />Log in with GitLab
+      </a>
+      <a href="/auth/bitbucket{%s authQueryParams %}" class="button button--bordered-gray hero__button">
+        <img
+          width="21"
+          height="20"
+          src="/assets/images/pages/main-responsive/bitbucket.svg"
+          alt="Bitbucket logo"
+          class="hero__button-icon"
+        />Log in with Bitbucket
+      </a>
+    </div>
+  </div>
+</section>
+</main>
+
+{%= organizersFooterV3() %}
+
+</div>
+
+</body>
+</html>
 {%- endfunc -%}

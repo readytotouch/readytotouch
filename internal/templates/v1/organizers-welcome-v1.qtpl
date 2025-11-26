@@ -3,13 +3,13 @@
 <html lang="en">
 
 <head>
-	<title>Yet another anonymous work search</title>
-	<meta name="description" content="Yet another anonymous work search">
+    <title>Welcome</title>
+    <meta name="description" content="Welcome">
 
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="author" type="text/plain" href="https://readytotouch.com/humans.txt"/>
-	<meta property="og:image" content="/assets/images/og/organizers-light.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="author" type="text/plain" href="https://readytotouch.com/humans.txt"/>
+    <meta property="og:image" content="/assets/images/og/organizers-light.jpg">
 
     {%= favicon() %}
     {%= organizersFonts() %}
@@ -28,7 +28,7 @@
         height="30"
         class="header__logo-img"
         src="/assets/images/pages/organizer/{%s organizer.Logo %}"
-        alt="organizer logo"
+        alt="{%s organizer.Title %} logo"
       />
       <span class="header__logo-label">Organizer</span>
     </a>
