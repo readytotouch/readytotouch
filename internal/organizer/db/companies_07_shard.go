@@ -82,7 +82,7 @@ func companies07Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4254632356/",
 							Location:             "Tel Aviv-Yafo, Tel Aviv District, Israel",
-							Date:                 mustDate("2025-09-16", "2025-08-25", "2025-08-04", "2025-07-15"),
+							Date:                 mustDate("2025-11-22", "2025-09-16", "2025-08-25", "2025-08-04", "2025-07-15"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -1102,7 +1102,7 @@ func companies07Shard() []domain.CompanyProfile {
 							ShortDescription:     "Linux",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4224373718/",
-							Date:                 mustDate("2025-11-15"), // mustDate("2025-09-14", "2025-08-23", "2025-07-10"),
+							Date:                 mustDate("2025-11-15", "2025-09-14", "2025-08-23", "2025-07-10"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -1217,6 +1217,16 @@ func companies07Shard() []domain.CompanyProfile {
 							Date:                 mustDate("2025-09-13", "2025-08-21"),
 							WithSalary:           true, // $172k/yr - $258k/yr
 							Remote:               false,
+						},
+						{
+							Title:                "Senior Software Engineer (SDE III) – Backend",
+							ShortDescription:     "Java | Golang | AWS",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4337315046/",
+							Location:             "United States",
+							Date:                 mustDate("2025-11-26"),
+							WithSalary:           true, // $121k/yr - $200k/yr
+							Remote:               true,
 						},
 					},
 				},
@@ -3305,7 +3315,7 @@ func companies07Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4337485233/",
 							Location:             "Gurugram, Haryana, India",
-							Date:                 mustDate("2025-11-05"),
+							Date:                 mustDate("2025-11-26", "2025-11-05"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -4044,8 +4054,8 @@ func companies07Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4308021859/",
 							Location:             "San Jose, CA",
-							Date:                 mustDate("2025-11-20"), // mustDate("2025-10-15", "2025-09-30"),
-							WithSalary:           true,                   // $182k/yr - $260k/yr
+							Date:                 mustDate("2025-11-20", "2025-10-15", "2025-09-30"),
+							WithSalary:           true, // $182k/yr - $260k/yr
 							Remote:               false,
 						},
 						{
@@ -4089,7 +4099,7 @@ func companies07Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4332901018/",
 							Location:             "San Jose, CA",
-							Date:                 mustDate("2025-11-20", "2025-10-29"),
+							Date:                 mustDate("2025-11-26", "2025-11-20", "2025-10-29"),
 							WithSalary:           true, // $154k/yr - $220k/yr
 							Remote:               false,
 						},
@@ -5131,7 +5141,7 @@ func companies07Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4296939290/",
 							Location:             "New York, NY",
-							Date:                 mustDate("2025-11-20"), // mustDate("2025-09-06"),
+							Date:                 mustDate("2025-11-20", "2025-09-06"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -6062,7 +6072,7 @@ func companies07Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4302901805/",
 							Location:             "United States",
-							Date:                 mustDate("2025-11-06", "2025-10-15"),
+							Date:                 mustDate("2025-11-26", "2025-11-06", "2025-10-15"),
 							WithSalary:           true, // $145.2k/yr - $181.9k/yr
 							Remote:               true,
 						},
@@ -6802,6 +6812,16 @@ func companies07Shard() []domain.CompanyProfile {
 							Date:                 mustDate("2025-02-11", "2025-01-25"),
 							WithSalary:           false,
 							Remote:               true,
+						},
+						{
+							Title:                "Senior Software Engineer",
+							ShortDescription:     "Golang/Kubernetes/Object Storage",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4324461000/",
+							Location:             "Seattle, WA",
+							Date:                 mustDate("2025-11-25"),
+							WithSalary:           true, // $80k/yr - $215k/yr
+							Remote:               false,
 						},
 					},
 				},

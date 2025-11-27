@@ -1262,6 +1262,10 @@ var (
 		"cloudera":                            1262, // Cloudera
 		"twilio-inc-":                         1263, // Twilio
 		"albatross-ai":                        1264, // Albatross AI
+		"disqo":                               1265, // DISQO
+		"spoton":                              1266, // SpotOn
+		"nebul":                               1267, // Nebul
+		"botify":                              1268, // Botify
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

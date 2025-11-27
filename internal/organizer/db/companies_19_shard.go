@@ -595,8 +595,8 @@ func companies19Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4250646664/",
 							Location:             "San Jose, CA",
-							Date:                 mustDate("2025-11-17"), // mustDate("2025-10-27", "2025-10-06", "2025-09-14", "2025-08-23", "2025-08-02", "2025-07-10", "2025-06-23"),
-							WithSalary:           true,                   // $150k/yr - $175k/yr
+							Date:                 mustDate("2025-11-17", "2025-10-27", "2025-10-06", "2025-09-14", "2025-08-23", "2025-08-02", "2025-07-10", "2025-06-23"),
+							WithSalary:           true, // $150k/yr - $175k/yr
 							Remote:               false,
 						},
 						{

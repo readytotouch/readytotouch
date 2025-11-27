@@ -499,9 +499,9 @@
   },
   {
     "alias": "ascendion",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "ascendion-180x180.png",
+    "destination": "ascendion.png",
+    "destination_72x72": "ascendion.png"
   },
   {
     "alias": "ashley-furniture-industries",
@@ -928,6 +928,12 @@
     "source": "boozt-fashion-192x192.png",
     "destination": "boozt-fashion.png",
     "destination_72x72": "boozt-fashion.png"
+  },
+  {
+    "alias": "botify",
+    "source": "botify-256x256.png",
+    "destination": "botify.png",
+    "destination_72x72": "botify.png"
   },
   {
     "alias": "box",
@@ -1834,6 +1840,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "disqo",
+    "source": "disqo-200x200.jpeg",
+    "destination": "disqo.jpeg",
+    "destination_72x72": "disqo.jpeg"
   },
   {
     "alias": "distribusion",
@@ -3889,9 +3901,9 @@
   },
   {
     "alias": "megaport",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "megaport-144x144.png",
+    "destination": "megaport.png",
+    "destination_72x72": "megaport.png"
   },
   {
     "alias": "meilisearch",
@@ -4204,6 +4216,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "nebul",
+    "source": "nebul-180x180.png",
+    "destination": "nebul.png",
+    "destination_72x72": "nebul.png"
   },
   {
     "alias": "nelly-solutions",
@@ -5275,9 +5293,9 @@
   },
   {
     "alias": "red-hat",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "red-hat-200x200.jpeg",
+    "destination": "red-hat.jpeg",
+    "destination_72x72": "red-hat.jpeg"
   },
   {
     "alias": "reddit-com",
@@ -5986,6 +6004,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "spoton",
+    "source": "spoton-200x200.jpeg",
+    "destination": "spoton.jpeg",
+    "destination_72x72": "spoton.jpeg"
   },
   {
     "alias": "spreedly",
