@@ -3518,6 +3518,16 @@ func companies09Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Software Engineer 4 – NDB (Distributed System, Golang/Python)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4335977584/",
+							Location:             "San Jose, CA",
+							Date:                 mustDate("2025-11-26"),
+							WithSalary:           true, // $143.2k/yr - $285.6k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},

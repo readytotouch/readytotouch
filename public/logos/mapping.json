@@ -930,6 +930,12 @@
     "destination_72x72": "boozt-fashion.png"
   },
   {
+    "alias": "botify",
+    "source": "botify-256x256.png",
+    "destination": "botify.png",
+    "destination_72x72": "botify.png"
+  },
+  {
     "alias": "box",
     "source": "box-200x200.jpeg",
     "destination": "box.jpeg",
@@ -4212,6 +4218,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "nebul",
+    "source": "nebul-180x180.png",
+    "destination": "nebul.png",
+    "destination_72x72": "nebul.png"
+  },
+  {
     "alias": "nelly-solutions",
     "source": "nelly-solutions-200x200.jpeg",
     "destination": "nelly-solutions.jpeg",
@@ -5992,6 +6004,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "spoton",
+    "source": "spoton-200x200.jpeg",
+    "destination": "spoton.jpeg",
+    "destination_72x72": "spoton.jpeg"
   },
   {
     "alias": "spreedly",

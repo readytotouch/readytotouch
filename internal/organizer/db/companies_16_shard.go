@@ -4400,6 +4400,16 @@ func companies16Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Go Engineer",
+							ShortDescription:     "Digital Assets",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4324821055/",
+							Location:             "Amsterdam, North Holland, Netherlands",
+							Date:                 mustDate("2025-11-26"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
