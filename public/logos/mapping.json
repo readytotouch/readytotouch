@@ -6942,6 +6942,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "vara-ai",
+    "source": "vara-ai-180x180.png",
+    "destination": "vara-ai.png",
+    "destination_72x72": "vara-ai.png"
+  },
+  {
     "alias": "varonis",
     "source": "varonis-200x200.jpeg",
     "destination": "varonis.jpeg",

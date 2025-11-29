@@ -4042,6 +4042,91 @@ func companies22Shard() []domain.CompanyProfile {
 				// NOP
 			},
 		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Vara",
+			Website: "https://www.vara.ai/",
+			Careers: "https://www.vara.ai/careers",
+			About:   "https://www.vara.ai/about-us",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                30122341,
+				IDs:               nil,
+				Alias:             "vara-ai",
+				Name:              "Vara",
+				Followers:         "11K",
+				Employees:         "11-50",
+				AssociatedMembers: "54",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Clojure(Script) Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4338701346/",
+							Location:             "Berlin, Germany",
+							Date:                 mustDate("2025-11-25"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Making data-driven breast cancer screening accessible",
+			Industries: []domain.Industry{
+				domain.IndustryMedTech,
+				domain.IndustryHealthTech,
+			},
+		},
 
 		// Template
 		//{

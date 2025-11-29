@@ -3494,6 +3494,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4321915810/":                                                               3396, // cybereason
 		"https://www.linkedin.com/jobs/view/4315928124/":                                                               3397, // axonius
 		"https://www.linkedin.com/jobs/view/4308484530/":                                                               3398, // hubspot
+		"https://www.linkedin.com/jobs/view/4306246217/":                                                               3515, // hubspot
 		"https://www.linkedin.com/jobs/view/4280933839/":                                                               3405, // loveholidays
 		"https://app.welcometothejungle.com/jobs/K4rT3xXa":                                                             3406, // loveholidays
 		"https://app.welcometothejungle.com/jobs/GBw_kEIb":                                                             3407, // nominal-inc
@@ -3510,6 +3511,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4324396276/":                                                               3499, // spoton
 		"https://www.linkedin.com/jobs/view/4336898660/":                                                               3500, // nebul
 		"https://www.linkedin.com/jobs/view/4323860548/":                                                               3501, // botify
+		"https://www.linkedin.com/jobs/view/4338701346/":                                                               3516, // vara-ai
 		"https://www.linkedin.com/jobs/view/3914839625/":                                                               372,  // cognizant
 		"https://www.linkedin.com/jobs/view/4120737001/":                                                               600,  // cognizant
 		"https://www.linkedin.com/jobs/view/4149258542/":                                                               787,  // cognizant

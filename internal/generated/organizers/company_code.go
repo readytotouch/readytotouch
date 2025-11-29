@@ -1266,6 +1266,7 @@ var (
 		"spoton":                              1266, // SpotOn
 		"nebul":                               1267, // Nebul
 		"botify":                              1268, // Botify
+		"vara-ai":                             1269, // Vara
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

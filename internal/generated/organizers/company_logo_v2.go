@@ -1161,6 +1161,7 @@ var (
 		"utilitywarehouse":                    "utilitywarehouse.jpeg",
 		"valence-security":                    "",
 		"valsoft-corporation":                 "",
+		"vara-ai":                             "vara-ai.png",
 		"varonis":                             "varonis.jpeg",
 		"vaytechnology":                       "",
 		"veact":                               "",
