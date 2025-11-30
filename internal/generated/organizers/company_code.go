@@ -1266,6 +1266,21 @@ var (
 		"spoton":                              1266, // SpotOn
 		"nebul":                               1267, // Nebul
 		"botify":                              1268, // Botify
+		"vara-ai":                             1269, // Vara
+		"loopme":                              1270, // LoopMe
+		"smartclip":                           1271, // smartclip
+		"jump-app-ai":                         1272, // Jump - Advisor AI
+		"fresh-clinics":                       1273, // Fresh Clinics
+		"the-modern-milkman":                  1274, // Modern Milkman
+		"cynet-security":                      1275, // Cynet Security
+		"ankorstore":                          1276, // Ankorstore
+		"peaktew":                             1277, // PeakTew
+		"cloudtalk.io":                        1278, // CloudTalk
+		"back-market":                         1279, // Back Market
+		"zestyco":                             1280, // Zesty
+		"loyal-guru":                          1281, // Loyal Guru
+		"vyro-ai":                             1282, // Vyro
+		"foxglovedev":                         1283, // Foxglove
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

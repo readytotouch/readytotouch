@@ -79,9 +79,9 @@
   },
   {
     "alias": "about-you",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "about-you-200x200.jpeg",
+    "destination": "about-you.jpeg",
+    "destination_72x72": "about-you.jpeg"
   },
   {
     "alias": "accessowl",
@@ -193,9 +193,9 @@
   },
   {
     "alias": "airspace-inc",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "airspace-201x201.webp",
+    "destination": "airspace-inc.png",
+    "destination_72x72": "airspace-inc.png"
   },
   {
     "alias": "airspacelink",
@@ -358,6 +358,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "ankorstore",
+    "source": "ankorstore-180x180.png",
+    "destination": "ankorstore.png",
+    "destination_72x72": "ankorstore.png"
   },
   {
     "alias": "aonicgroup",
@@ -678,6 +684,12 @@
     "destination_72x72": "aziontech.jpeg"
   },
   {
+    "alias": "back-market",
+    "source": "back-market-200x200.jpeg",
+    "destination": "back-market.jpeg",
+    "destination_72x72": "back-market.jpeg"
+  },
+  {
     "alias": "bakerhughes",
     "source": "",
     "destination": "",
@@ -769,9 +781,9 @@
   },
   {
     "alias": "bibit",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "bibit-152x152.png",
+    "destination": "bibit.png",
+    "destination_72x72": "bibit.png"
   },
   {
     "alias": "bigabid",
@@ -1380,6 +1392,12 @@
     "destination_72x72": "cloudnuro.jpeg"
   },
   {
+    "alias": "cloudtalk.io",
+    "source": "cloudtalk.io-200x200.jpeg",
+    "destination": "cloudtalk.io.jpeg",
+    "destination_72x72": "cloudtalk.io.jpeg"
+  },
+  {
     "alias": "cloudwalk-inc",
     "source": "cloudwalk-256x256.png",
     "destination": "cloudwalk-inc.png",
@@ -1630,6 +1648,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "cynet-security",
+    "source": "cynet-security-180x180.webp",
+    "destination": "cynet-security.png",
+    "destination_72x72": "cynet-security.png"
   },
   {
     "alias": "cynet-systems",
@@ -2035,9 +2059,9 @@
   },
   {
     "alias": "eco-movement-charge-point-data",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "eco-movement-180x180.png",
+    "destination": "eco-movement-charge-point-data.png",
+    "destination_72x72": "eco-movement-charge-point-data.png"
   },
   {
     "alias": "ecosia",
@@ -2538,6 +2562,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "foxglovedev",
+    "source": "foxglovedev-200x200.jpeg",
+    "destination": "foxglovedev.jpeg",
+    "destination_72x72": "foxglovedev.jpeg"
+  },
+  {
     "alias": "foxtechteam",
     "source": "",
     "destination": "",
@@ -2560,6 +2590,12 @@
     "source": "freewheel-200x200.jpeg",
     "destination": "freewheel.jpeg",
     "destination_72x72": "freewheel.jpeg"
+  },
+  {
+    "alias": "fresh-clinics",
+    "source": "fresh-clinics-200x200.jpeg",
+    "destination": "fresh-clinics.jpeg",
+    "destination_72x72": "fresh-clinics.jpeg"
   },
   {
     "alias": "fubotv",
@@ -2629,9 +2665,9 @@
   },
   {
     "alias": "geico",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "geico-200x200.jpeg",
+    "destination": "geico.jpeg",
+    "destination_72x72": "geico.jpeg"
   },
   {
     "alias": "gelato",
@@ -2647,9 +2683,9 @@
   },
   {
     "alias": "geocomply",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "geocomply-180x180.webp",
+    "destination": "geocomply.png",
+    "destination_72x72": "geocomply.png"
   },
   {
     "alias": "getansa",
@@ -3342,6 +3378,12 @@
     "destination_72x72": "julius-baer.png"
   },
   {
+    "alias": "jump-app-ai",
+    "source": "jump-app-ai-200x200.jpeg",
+    "destination": "jump-app-ai.jpeg",
+    "destination_72x72": "jump-app-ai.jpeg"
+  },
+  {
     "alias": "just-eat-takeaway-com",
     "source": "just-eat-takeaway-com-200x200.jpeg",
     "destination": "just-eat-takeaway-com.jpeg",
@@ -3595,9 +3637,9 @@
   },
   {
     "alias": "lightspeed-systems",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "lightspeed-systems-180x180.webp",
+    "destination": "lightspeed-systems.png",
+    "destination_72x72": "lightspeed-systems.png"
   },
   {
     "alias": "lightspeedcommerce",
@@ -3690,6 +3732,12 @@
     "destination_72x72": "lonely-planet.jpeg"
   },
   {
+    "alias": "loopme",
+    "source": "loopme-180x180.webp",
+    "destination": "loopme.png",
+    "destination_72x72": "loopme.png"
+  },
+  {
     "alias": "los-alamos-national-laboratory",
     "source": "",
     "destination": "",
@@ -3712,6 +3760,12 @@
     "source": "lowrisc-192x192.webp",
     "destination": "lowrisc.png",
     "destination_72x72": "lowrisc.png"
+  },
+  {
+    "alias": "loyal-guru",
+    "source": "loyal-guru-200x200.jpeg",
+    "destination": "loyal-guru.jpeg",
+    "destination_72x72": "loyal-guru.jpeg"
   },
   {
     "alias": "lucanet-ag",
@@ -4429,9 +4483,9 @@
   },
   {
     "alias": "nutanix",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "nutanix-180x180.png",
+    "destination": "nutanix.png",
+    "destination_72x72": "nutanix.png"
   },
   {
     "alias": "nvent",
@@ -4639,9 +4693,9 @@
   },
   {
     "alias": "outreach-saas",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "outreach-saas-200x200.jpeg",
+    "destination": "outreach-saas.jpeg",
+    "destination_72x72": "outreach-saas.jpeg"
   },
   {
     "alias": "overwolf.com",
@@ -4798,6 +4852,12 @@
     "source": "peak-144x144.png",
     "destination": "peak.png",
     "destination_72x72": "peak.png"
+  },
+  {
+    "alias": "peaktew",
+    "source": "peaktew-200x200.jpeg",
+    "destination": "peaktew.jpeg",
+    "destination_72x72": "peaktew.jpeg"
   },
   {
     "alias": "peek-com",
@@ -5832,6 +5892,12 @@
     "destination_72x72": "smartbear.png"
   },
   {
+    "alias": "smartclip",
+    "source": "smartclip-180x180.webp",
+    "destination": "smartclip.png",
+    "destination_72x72": "smartclip.png"
+  },
+  {
     "alias": "smartrentdotcom",
     "source": "",
     "destination": "",
@@ -6522,6 +6588,12 @@
     "destination_72x72": "the-home-depot.jpeg"
   },
   {
+    "alias": "the-modern-milkman",
+    "source": "the-modern-milkman-200x200.jpeg",
+    "destination": "the-modern-milkman.jpeg",
+    "destination_72x72": "the-modern-milkman.jpeg"
+  },
+  {
     "alias": "the-odp-corporation",
     "source": "",
     "destination": "",
@@ -6942,6 +7014,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "vara-ai",
+    "source": "vara-ai-180x180.png",
+    "destination": "vara-ai.png",
+    "destination_72x72": "vara-ai.png"
+  },
+  {
     "alias": "varonis",
     "source": "varonis-200x200.jpeg",
     "destination": "varonis.jpeg",
@@ -7140,6 +7218,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "vyro-ai",
+    "source": "vyro-ai-200x200.jpeg",
+    "destination": "vyro-ai.jpeg",
+    "destination_72x72": "vyro-ai.jpeg"
+  },
+  {
     "alias": "wallee-group",
     "source": "",
     "destination": "",
@@ -7225,9 +7309,9 @@
   },
   {
     "alias": "weather-company",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "weather-company-180x180.webp",
+    "destination": "weather-company.png",
+    "destination_72x72": "weather-company.png"
   },
   {
     "alias": "weaviate-io",
@@ -7504,6 +7588,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "zestyco",
+    "source": "zestyco-300x300.png",
+    "destination": "zestyco.png",
+    "destination_72x72": "zestyco.png"
   },
   {
     "alias": "zillow",
