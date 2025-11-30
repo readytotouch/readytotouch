@@ -2562,6 +2562,12 @@
     "destination_72x72": "freewheel.jpeg"
   },
   {
+    "alias": "fresh-clinics",
+    "source": "fresh-clinics-200x200.jpeg",
+    "destination": "fresh-clinics.jpeg",
+    "destination_72x72": "fresh-clinics.jpeg"
+  },
+  {
     "alias": "fubotv",
     "source": "",
     "destination": "",
@@ -3340,6 +3346,12 @@
     "source": "julius-baer-180x180.png",
     "destination": "julius-baer.png",
     "destination_72x72": "julius-baer.png"
+  },
+  {
+    "alias": "jump-app-ai",
+    "source": "jump-app-ai-200x200.jpeg",
+    "destination": "jump-app-ai.jpeg",
+    "destination_72x72": "jump-app-ai.jpeg"
   },
   {
     "alias": "just-eat-takeaway-com",

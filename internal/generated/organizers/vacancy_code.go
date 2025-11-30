@@ -1380,6 +1380,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4123623753/":                                                               874,  // priceline-com
 		"https://www.linkedin.com/jobs/view/4179812772/":                                                               1123, // priceline-com
 		"https://www.linkedin.com/jobs/view/4195225385/":                                                               1335, // priceline-com
+		"https://www.linkedin.com/jobs/view/4321257321/":                                                               3520, // priceline-com
 		"https://www.linkedin.com/jobs/view/4058040204/":                                                               78,   // new-relic-inc-
 		"https://www.linkedin.com/jobs/view/4226339955/":                                                               1840, // new-relic-inc-
 		"https://www.linkedin.com/jobs/view/4336676117/":                                                               3453, // new-relic-inc-
@@ -2725,6 +2726,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4295396868/":                                                               2862, // stord
 		"https://www.linkedin.com/jobs/view/4314089339/":                                                               3202, // stord
 		"https://www.linkedin.com/jobs/view/4321911327/":                                                               3368, // stord
+		"https://www.linkedin.com/jobs/view/4347366946/":                                                               3521, // stord
 		"https://www.linkedin.com/jobs/view/4200736486/":                                                               1447, // luminovo
 		"https://www.linkedin.com/jobs/view/4101150703/":                                                               1449, // thought-machine
 		"https://www.linkedin.com/jobs/view/4144629838/":                                                               1464, // kantar
@@ -3515,6 +3517,8 @@ var (
 		"https://www.linkedin.com/jobs/view/4338701346/":                                                               3516, // vara-ai
 		"https://www.linkedin.com/jobs/view/4320575418/":                                                               3518, // loopme
 		"https://www.linkedin.com/jobs/view/4339118450/":                                                               3519, // smartclip
+		"https://www.linkedin.com/jobs/view/4338746366/":                                                               3522, // jump-app-ai
+		"https://www.linkedin.com/jobs/view/4324393869/":                                                               3523, // fresh-clinics
 		"https://www.linkedin.com/jobs/view/3914839625/":                                                               372,  // cognizant
 		"https://www.linkedin.com/jobs/view/4120737001/":                                                               600,  // cognizant
 		"https://www.linkedin.com/jobs/view/4149258542/":                                                               787,  // cognizant

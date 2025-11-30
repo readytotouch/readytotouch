@@ -1269,6 +1269,8 @@ var (
 		"vara-ai":                             1269, // Vara
 		"loopme":                              1270, // LoopMe
 		"smartclip":                           1271, // smartclip
+		"jump-app-ai":                         1272, // Jump - Advisor AI
+		"fresh-clinics":                       1273, // Fresh Clinics
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 
