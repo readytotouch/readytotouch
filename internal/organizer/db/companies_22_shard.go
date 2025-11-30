@@ -2439,6 +2439,10 @@ func companies22Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 123,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 18,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer – Rust",
@@ -2451,10 +2455,6 @@ func companies22Shard() []domain.CompanyProfile {
 							Remote:               true,
 						},
 					},
-				},
-				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
 				},
 				domain.Zig: {
 					GitHubRepositoriesCount: 0,
