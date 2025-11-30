@@ -3690,6 +3690,12 @@
     "destination_72x72": "lonely-planet.jpeg"
   },
   {
+    "alias": "loopme",
+    "source": "loopme-180x180.webp",
+    "destination": "loopme.png",
+    "destination_72x72": "loopme.png"
+  },
+  {
     "alias": "los-alamos-national-laboratory",
     "source": "",
     "destination": "",
@@ -5830,6 +5836,12 @@
     "source": "smartbear-52x52.webp",
     "destination": "smartbear.png",
     "destination_72x72": "smartbear.png"
+  },
+  {
+    "alias": "smartclip",
+    "source": "smartclip-180x180.webp",
+    "destination": "smartclip.png",
+    "destination_72x72": "smartclip.png"
   },
   {
     "alias": "smartrentdotcom",

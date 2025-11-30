@@ -1267,6 +1267,8 @@ var (
 		"nebul":                               1267, // Nebul
 		"botify":                              1268, // Botify
 		"vara-ai":                             1269, // Vara
+		"loopme":                              1270, // LoopMe
+		"smartclip":                           1271, // smartclip
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 
