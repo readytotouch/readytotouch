@@ -3544,6 +3544,8 @@ var (
 		"https://www.linkedin.com/jobs/view/4339801157/":                                                               3546, // back-market
 		"https://www.linkedin.com/jobs/view/4339955174/":                                                               3547, // zestyco
 		"https://www.linkedin.com/jobs/view/4347642829/":                                                               3548, // loyal-guru
+		"https://www.linkedin.com/jobs/view/4339012184/":                                                               3549, // vyro-ai
+		"https://www.linkedin.com/jobs/view/4285040837/":                                                               3550, // foxglovedev
 		"https://www.linkedin.com/jobs/view/3914839625/":                                                               372,  // cognizant
 		"https://www.linkedin.com/jobs/view/4120737001/":                                                               600,  // cognizant
 		"https://www.linkedin.com/jobs/view/4149258542/":                                                               787,  // cognizant

@@ -1279,6 +1279,8 @@ var (
 		"back-market":                         1279, // Back Market
 		"zestyco":                             1280, // Zesty
 		"loyal-guru":                          1281, // Loyal Guru
+		"vyro-ai":                             1282, // Vyro
+		"foxglovedev":                         1283, // Foxglove
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

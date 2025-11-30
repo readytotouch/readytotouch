@@ -2562,6 +2562,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "foxglovedev",
+    "source": "foxglovedev-200x200.jpeg",
+    "destination": "foxglovedev.jpeg",
+    "destination_72x72": "foxglovedev.jpeg"
+  },
+  {
     "alias": "foxtechteam",
     "source": "",
     "destination": "",
@@ -7210,6 +7216,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "vyro-ai",
+    "source": "vyro-ai-200x200.jpeg",
+    "destination": "vyro-ai.jpeg",
+    "destination_72x72": "vyro-ai.jpeg"
   },
   {
     "alias": "wallee-group",
