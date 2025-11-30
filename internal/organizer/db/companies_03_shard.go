@@ -458,7 +458,7 @@ func companies03Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4242631355/",
 							Location:             "Georgia",
-							Date:                 mustDate("2025-11-06", "2025-10-17", "2025-09-25", "2025-09-04", "2025-07-23", "2025-06-27", "2025-06-06"),
+							Date:                 mustDate("2025-11-29", "2025-11-06", "2025-10-17", "2025-09-25", "2025-09-04", "2025-07-23", "2025-06-27", "2025-06-06"),
 							WithSalary:           false,
 							Remote:               true,
 						},

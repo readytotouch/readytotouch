@@ -3891,7 +3891,7 @@ func companies04Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4184687991/",
 							Location:             "Barcelona, Catalonia, Spain",
-							Date:                 mustDate("2025-11-07", "2025-09-04", "2025-07-23", "2025-06-09", "2025-03-14"),
+							Date:                 mustDate("2025-11-28", "2025-11-07", "2025-09-04", "2025-07-23", "2025-06-09", "2025-03-14"),
 							WithSalary:           true, // Salary Range: €55,000 - €70,000 per year
 							Remote:               false,
 						},

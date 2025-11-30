@@ -360,6 +360,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "ankorstore",
+    "source": "ankorstore-180x180.png",
+    "destination": "ankorstore.png",
+    "destination_72x72": "ankorstore.png"
+  },
+  {
     "alias": "aonicgroup",
     "source": "aonic-180x180.png",
     "destination": "aonicgroup.png",
@@ -676,6 +682,12 @@
     "source": "aziontech-200x200.jpeg",
     "destination": "aziontech.jpeg",
     "destination_72x72": "aziontech.jpeg"
+  },
+  {
+    "alias": "back-market",
+    "source": "back-market-200x200.jpeg",
+    "destination": "back-market.jpeg",
+    "destination_72x72": "back-market.jpeg"
   },
   {
     "alias": "bakerhughes",
@@ -1380,6 +1392,12 @@
     "destination_72x72": "cloudnuro.jpeg"
   },
   {
+    "alias": "cloudtalk.io",
+    "source": "cloudtalk.io-200x200.jpeg",
+    "destination": "cloudtalk.io.jpeg",
+    "destination_72x72": "cloudtalk.io.jpeg"
+  },
+  {
     "alias": "cloudwalk-inc",
     "source": "cloudwalk-256x256.png",
     "destination": "cloudwalk-inc.png",
@@ -1630,6 +1648,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "cynet-security",
+    "source": "cynet-security-180x180.webp",
+    "destination": "cynet-security.png",
+    "destination_72x72": "cynet-security.png"
   },
   {
     "alias": "cynet-systems",
@@ -3732,6 +3756,12 @@
     "destination_72x72": "lowrisc.png"
   },
   {
+    "alias": "loyal-guru",
+    "source": "loyal-guru-200x200.jpeg",
+    "destination": "loyal-guru.jpeg",
+    "destination_72x72": "loyal-guru.jpeg"
+  },
+  {
     "alias": "lucanet-ag",
     "source": "lucanet-180x180.png",
     "destination": "lucanet-ag.png",
@@ -4816,6 +4846,12 @@
     "source": "peak-144x144.png",
     "destination": "peak.png",
     "destination_72x72": "peak.png"
+  },
+  {
+    "alias": "peaktew",
+    "source": "peaktew-200x200.jpeg",
+    "destination": "peaktew.jpeg",
+    "destination_72x72": "peaktew.jpeg"
   },
   {
     "alias": "peek-com",
@@ -7540,6 +7576,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "zestyco",
+    "source": "zestyco-300x300.png",
+    "destination": "zestyco.png",
+    "destination_72x72": "zestyco.png"
   },
   {
     "alias": "zillow",

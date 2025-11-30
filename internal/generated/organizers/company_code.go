@@ -1272,6 +1272,13 @@ var (
 		"jump-app-ai":                         1272, // Jump - Advisor AI
 		"fresh-clinics":                       1273, // Fresh Clinics
 		"the-modern-milkman":                  1274, // Modern Milkman
+		"cynet-security":                      1275, // Cynet Security
+		"ankorstore":                          1276, // Ankorstore
+		"peaktew":                             1277, // PeakTew
+		"cloudtalk.io":                        1278, // CloudTalk
+		"back-market":                         1279, // Back Market
+		"zestyco":                             1280, // Zesty
+		"loyal-guru":                          1281, // Loyal Guru
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 
