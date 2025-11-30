@@ -6546,6 +6546,12 @@
     "destination_72x72": "the-home-depot.jpeg"
   },
   {
+    "alias": "the-modern-milkman",
+    "source": "the-modern-milkman-200x200.jpeg",
+    "destination": "the-modern-milkman.jpeg",
+    "destination_72x72": "the-modern-milkman.jpeg"
+  },
+  {
     "alias": "the-odp-corporation",
     "source": "",
     "destination": "",

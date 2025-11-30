@@ -4610,7 +4610,7 @@ func companies18Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4334557414/",
 							Location:             "Bengaluru, Karnataka, India",
-							Date:                 mustDate("2025-11-06"),
+							Date:                 mustDate("2025-11-29", "2025-11-06"),
 							WithSalary:           false,
 							Remote:               false,
 						},

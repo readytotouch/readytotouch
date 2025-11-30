@@ -1095,6 +1095,7 @@ var (
 		"thales":                              "thales.jpeg",
 		"thatgamecompany":                     "",
 		"the-home-depot":                      "the-home-depot.jpeg",
+		"the-modern-milkman":                  "the-modern-milkman.jpeg",
 		"the-odp-corporation":                 "",
 		"the-realreal":                        "",
 		"the-walt-disney-company":             "the-walt-disney-company.png",

@@ -804,6 +804,16 @@ func companies22Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $120k/yr - $250k/yr
 							Remote:               true,
 						},
+						{
+							Title:                "Staff Rust SDK Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4339420067/",
+							Location:             "Canada",
+							Date:                 mustDate("2025-11-29"),
+							WithSalary:           true, // $120k/yr - $250k/yr
+							Remote:               true,
+						},
 					},
 				},
 				domain.Zig: {
@@ -2317,6 +2327,16 @@ func companies22Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $140k/yr - $230k/yr
 							Remote:               false,
 						},
+						{
+							Title:                "Senior System Engineer, Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4324691416/",
+							Location:             "New York City Metropolitan Area",
+							Date:                 mustDate("2025-11-27"),
+							WithSalary:           true, // $140k/yr - $230k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig: {
@@ -2406,7 +2426,7 @@ func companies22Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4315099000/",
 							Location:             "NAMER",
-							Date:                 mustDate("2025-11-12"),
+							Date:                 mustDate("2025-11-29", "2025-11-12"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -4461,6 +4481,90 @@ func companies22Shard() []domain.CompanyProfile {
 			ShortDescription: "Fresh Clinics is a medical technology company on a mission to elevate care across the aesthetics and proactive healthcare space",
 			Industries: []domain.Industry{
 				domain.IndustryMedTech,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Modern Milkman",
+			Website: "https://themodernmilkman.co.uk/",
+			Careers: "https://careers.themodernmilkman.co.uk/",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                18846815,
+				IDs:               nil,
+				Alias:             "the-modern-milkman",
+				Name:              "Modern Milkman",
+				Followers:         "14K",
+				Employees:         "51-200",
+				AssociatedMembers: "141",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{
+						{
+							Title:                "Senior Backend Engineer – Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4340102154/",
+							Location:             "London, England, United Kingdom",
+							Date:                 mustDate("2025-11-29"),
+							WithSalary:           true, // £70k/yr - £100k/yr
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "At Modern Milkman, we deliver high-quality, farm-fresh essentials to your door",
+			Industries:       []domain.Industry{
+				// NOP
 			},
 		},
 

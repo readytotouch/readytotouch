@@ -1271,6 +1271,7 @@ var (
 		"smartclip":                           1271, // smartclip
 		"jump-app-ai":                         1272, // Jump - Advisor AI
 		"fresh-clinics":                       1273, // Fresh Clinics
+		"the-modern-milkman":                  1274, // Modern Milkman
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

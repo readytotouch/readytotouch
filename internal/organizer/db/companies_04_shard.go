@@ -4571,7 +4571,7 @@ func companies04Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4314714395/",
 							Location:             "India",
-							Date:                 mustDate("2025-11-12", "2025-10-16"),
+							Date:                 mustDate("2025-11-29", "2025-11-12", "2025-10-16"),
 							WithSalary:           false,
 							Remote:               true,
 						},

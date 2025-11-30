@@ -281,6 +281,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4300017502/":                                                               2931, // 1password
 		"https://www.linkedin.com/jobs/view/4334378336/":                                                               3284, // 1password
 		"https://www.linkedin.com/jobs/view/4338291235/":                                                               3415, // 1password
+		"https://www.linkedin.com/jobs/view/4334289440/":                                                               3524, // 1password
 		"https://www.linkedin.com/jobs/view/4090884682/":                                                               412,  // okta-inc-
 		"https://www.linkedin.com/jobs/view/4133471372/":                                                               859,  // okta-inc-
 		"https://www.linkedin.com/jobs/view/4135551225/":                                                               893,  // okta-inc-
@@ -3473,6 +3474,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4320745357/":                                                               3328, // perplexity-ai
 		"https://www.linkedin.com/jobs/view/4322043806/":                                                               3381, // perplexity-ai
 		"https://www.linkedin.com/jobs/view/4334381558/":                                                               3329, // livekitco
+		"https://www.linkedin.com/jobs/view/4339420067/":                                                               3525, // livekitco
 		"https://www.linkedin.com/jobs/view/4315680232/":                                                               3330, // watergenics
 		"https://www.linkedin.com/jobs/view/4334348860/":                                                               3331, // versedotinc
 		"https://www.linkedin.com/jobs/view/4334630561/":                                                               3332, // lowrisc
@@ -3492,6 +3494,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4335797154/":                                                               3392, // plannatech
 		"https://www.linkedin.com/jobs/view/4321715155/":                                                               3393, // tryprofound
 		"https://www.linkedin.com/jobs/view/4323603760/":                                                               3434, // tryprofound
+		"https://www.linkedin.com/jobs/view/4324691416/":                                                               3526, // tryprofound
 		"https://www.linkedin.com/jobs/view/4315099000/":                                                               3394, // shopify
 		"https://www.linkedin.com/jobs/view/4321874435/":                                                               3395, // exein
 		"https://www.linkedin.com/jobs/view/4321915810/":                                                               3396, // cybereason
@@ -3519,6 +3522,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4339118450/":                                                               3519, // smartclip
 		"https://www.linkedin.com/jobs/view/4338746366/":                                                               3522, // jump-app-ai
 		"https://www.linkedin.com/jobs/view/4324393869/":                                                               3523, // fresh-clinics
+		"https://www.linkedin.com/jobs/view/4340102154/":                                                               3527, // the-modern-milkman
 		"https://www.linkedin.com/jobs/view/3914839625/":                                                               372,  // cognizant
 		"https://www.linkedin.com/jobs/view/4120737001/":                                                               600,  // cognizant
 		"https://www.linkedin.com/jobs/view/4149258542/":                                                               787,  // cognizant
