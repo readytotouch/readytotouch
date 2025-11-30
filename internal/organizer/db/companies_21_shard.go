@@ -3818,8 +3818,9 @@ func companies21Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "databento",
+				Followers: "293",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -3828,7 +3829,14 @@ func companies21Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Databento-EI_IE5650624.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Databento-Reviews-E5650624.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Databento-Jobs-E5650624.htm",
+				Jobs:        "2",
+				Reviews:     "2",
+				Salaries:    "4",
+				ReviewsRate: "5.0",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -3839,7 +3847,7 @@ func companies21Shard() []domain.CompanyProfile {
 					Vacancies:               []domain.Vacancy{},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 3,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer (C++/Rust)",

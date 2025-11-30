@@ -4532,7 +4532,14 @@ func companies22Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Modern-Milkman-EI_IE4066814.11,25.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Modern-Milkman-Reviews-E4066814.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Modern-Milkman-Jobs-E4066814.htm",
+				Jobs:        "3",
+				Reviews:     "83",
+				Salaries:    "161",
+				ReviewsRate: "3.0",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -4858,8 +4865,9 @@ func companies22Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "CloudTalk-io",
+				Followers: "12",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -4868,14 +4876,21 @@ func companies22Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Cloudtalk-EI_IE509172.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Cloudtalk-Reviews-E509172.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Cloudtalk-Jobs-E509172.htm",
+				Jobs:        "18",
+				Reviews:     "178",
+				Salaries:    "154",
+				ReviewsRate: "4.3",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 2,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer (Go)",
@@ -4942,8 +4957,9 @@ func companies22Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "backmarket-oss",
+				Followers: "26",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -4952,14 +4968,21 @@ func companies22Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Back-Market-EI_IE1780208.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Back-Market-Reviews-E1780208.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Back-Market-Jobs-E1780208.htm",
+				Jobs:        "50",
+				Reviews:     "338",
+				Salaries:    "667",
+				ReviewsRate: "4.1",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 13,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Staff Backend Engineer – Go",
@@ -5278,8 +5301,9 @@ func companies22Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "foxglove",
+				Followers: "558",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -5299,7 +5323,7 @@ func companies22Shard() []domain.CompanyProfile {
 					Vacancies:               []domain.Vacancy{},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 3,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Rust Engineer, Frontend",

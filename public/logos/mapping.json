@@ -79,9 +79,9 @@
   },
   {
     "alias": "about-you",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "about-you-200x200.jpeg",
+    "destination": "about-you.jpeg",
+    "destination_72x72": "about-you.jpeg"
   },
   {
     "alias": "accessowl",
@@ -193,9 +193,9 @@
   },
   {
     "alias": "airspace-inc",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "airspace-201x201.webp",
+    "destination": "airspace-inc.png",
+    "destination_72x72": "airspace-inc.png"
   },
   {
     "alias": "airspacelink",
@@ -781,9 +781,9 @@
   },
   {
     "alias": "bibit",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "bibit-152x152.png",
+    "destination": "bibit.png",
+    "destination_72x72": "bibit.png"
   },
   {
     "alias": "bigabid",
@@ -2059,9 +2059,9 @@
   },
   {
     "alias": "eco-movement-charge-point-data",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "eco-movement-180x180.png",
+    "destination": "eco-movement-charge-point-data.png",
+    "destination_72x72": "eco-movement-charge-point-data.png"
   },
   {
     "alias": "ecosia",
@@ -2665,9 +2665,9 @@
   },
   {
     "alias": "geico",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "geico-200x200.jpeg",
+    "destination": "geico.jpeg",
+    "destination_72x72": "geico.jpeg"
   },
   {
     "alias": "gelato",
@@ -2683,9 +2683,9 @@
   },
   {
     "alias": "geocomply",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "geocomply-180x180.webp",
+    "destination": "geocomply.png",
+    "destination_72x72": "geocomply.png"
   },
   {
     "alias": "getansa",
@@ -3637,9 +3637,9 @@
   },
   {
     "alias": "lightspeed-systems",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "lightspeed-systems-180x180.webp",
+    "destination": "lightspeed-systems.png",
+    "destination_72x72": "lightspeed-systems.png"
   },
   {
     "alias": "lightspeedcommerce",
@@ -4483,9 +4483,9 @@
   },
   {
     "alias": "nutanix",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "nutanix-180x180.png",
+    "destination": "nutanix.png",
+    "destination_72x72": "nutanix.png"
   },
   {
     "alias": "nvent",
@@ -4693,9 +4693,9 @@
   },
   {
     "alias": "outreach-saas",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "outreach-saas-200x200.jpeg",
+    "destination": "outreach-saas.jpeg",
+    "destination_72x72": "outreach-saas.jpeg"
   },
   {
     "alias": "overwolf.com",
@@ -7309,9 +7309,9 @@
   },
   {
     "alias": "weather-company",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "weather-company-180x180.webp",
+    "destination": "weather-company.png",
+    "destination_72x72": "weather-company.png"
   },
   {
     "alias": "weaviate-io",
