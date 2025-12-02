@@ -563,6 +563,16 @@ func companies08Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "C++/Go Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4340784975/",
+							Location:             "Tel Aviv-Yafo, Tel Aviv District, Israel",
+							Date:                 mustDate("2025-12-02"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {

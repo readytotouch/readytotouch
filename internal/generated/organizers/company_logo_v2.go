@@ -901,6 +901,7 @@ var (
 		"redisinc":                            "redisinc.png",
 		"redox-one":                           "",
 		"redpanda-data":                       "",
+		"reducate":                            "reducate.png",
 		"relx-group":                          "",
 		"remarkable-as":                       "remarkable-as.png",
 		"remitly":                             "",

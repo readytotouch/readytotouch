@@ -3672,6 +3672,16 @@ func companies12Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $188,445 - $221,700 + benefits + 401(k) match + equity
 							Remote:               true,
 						},
+						{
+							Title:                "Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4340395018/",
+							Location:             "Warsaw, Mazowieckie, Poland",
+							Date:                 mustDate("2025-12-02"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},

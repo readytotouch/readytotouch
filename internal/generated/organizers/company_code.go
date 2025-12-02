@@ -1282,6 +1282,7 @@ var (
 		"vyro-ai":                             1282, // Vyro
 		"foxglovedev":                         1283, // Foxglove
 		"sky":                                 1284, // Sky
+		"reducate":                            1285, // Reducate
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

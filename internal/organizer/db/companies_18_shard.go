@@ -607,7 +607,7 @@ func companies18Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4308121465/",
 							Location:             "Seattle, WA",
-							Date:                 mustDate("2025-11-12"),
+							Date:                 mustDate("2025-12-02", "2025-11-12"),
 							WithSalary:           true, // $143.4k/yr - $196.9k/yr
 							Remote:               false,
 						},

@@ -5382,6 +5382,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "reducate",
+    "source": "reducate-152x152.png",
+    "destination": "reducate.png",
+    "destination_72x72": "reducate.png"
+  },
+  {
     "alias": "relx-group",
     "source": "",
     "destination": "",

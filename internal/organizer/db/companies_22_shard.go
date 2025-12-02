@@ -3507,7 +3507,18 @@ func companies22Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Staff Software Engineer (Go)",
+							ShortDescription:     "Infrastructure Tooling",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4316427285/",
+							Location:             "Prague, Czechia",
+							Date:                 mustDate("2025-12-02"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
 				},
 				domain.Rust: {
 					GitHubRepositoriesCount: 0,
@@ -5449,6 +5460,90 @@ func companies22Shard() []domain.CompanyProfile {
 			ShortDescription: "TV",
 			Industries: []domain.Industry{
 				domain.IndustryEntertainment,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Reducate",
+			Website: "https://www.reducate.com/",
+			Careers: "https://www.reducate.com/careers/",
+			About:   "https://www.reducate.com/about-us/",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                85115348,
+				IDs:               nil,
+				Alias:             "reducate",
+				Name:              "Reducate",
+				Followers:         "2K",
+				Employees:         "51-200",
+				AssociatedMembers: "27",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{
+						{
+							Title:                "Software Engineer (Python, Go, Node)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4325399277/",
+							Location:             "The Randstad, Netherlands",
+							Date:                 mustDate("2025-12-03"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "",
+			Industries:       []domain.Industry{
+				domain.IndustryEdTech,
 			},
 		},
 
