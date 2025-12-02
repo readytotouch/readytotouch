@@ -5868,6 +5868,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "sky",
+    "source": "sky-180x180.png",
+    "destination": "sky.png",
+    "destination_72x72": "sky.png"
+  },
+  {
     "alias": "skyroph",
     "source": "",
     "destination": "",

@@ -982,6 +982,7 @@ var (
 		"singlestore":                         "",
 		"sixt":                                "sixt.jpeg",
 		"skidos-games":                        "",
+		"sky":                                 "sky.png",
 		"skyroph":                             "",
 		"skyworks-solutions-inc":              "",
 		"sleeperhq":                           "",

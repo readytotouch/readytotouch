@@ -1091,6 +1091,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4144416205/":                                                               1524, // go-nitro
 		"https://www.linkedin.com/jobs/view/4304674098/":                                                               3045, // go-nitro
 		"https://www.linkedin.com/jobs/view/4308456908/":                                                               3348, // go-nitro
+		"https://www.linkedin.com/jobs/view/4335383838/":                                                               3551, // go-nitro
 		"https://www.linkedin.com/jobs/view/4068403021/":                                                               36,   // appodeal
 		"https://www.linkedin.com/jobs/view/4265268365/":                                                               2373, // appodeal
 		"https://www.linkedin.com/jobs/view/4305145067/":                                                               3046, // appodeal
@@ -2498,6 +2499,7 @@ var (
 		"https://www.linkedin.com/jobs/view/3885026236/":                                                               1191, // adform
 		"https://www.linkedin.com/jobs/view/4120994368/":                                                               1344, // adform
 		"https://www.linkedin.com/jobs/view/4285962926/":                                                               2695, // adform
+		"https://www.linkedin.com/jobs/view/4316070713/":                                                               3552, // adform
 		"https://www.linkedin.com/jobs/view/4053922033/":                                                               1192, // avathonai
 		"https://www.linkedin.com/jobs/view/4168118534/":                                                               1193, // ringcentral
 		"https://www.linkedin.com/jobs/view/4151541268/":                                                               1194, // qnx
@@ -3141,6 +3143,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4318534106/":                                                               3246, // bnp-paribas
 		"https://www.linkedin.com/jobs/view/4339050924/":                                                               3510, // bnp-paribas
 		"https://www.linkedin.com/jobs/view/4313221564/":                                                               3194, // bnp-paribas
+		"https://www.linkedin.com/jobs/view/4335431028/":                                                               3553, // bnp-paribas
 		"https://www.linkedin.com/jobs/view/4261717421/":                                                               2256, // distribusion
 		"https://www.linkedin.com/jobs/view/4161416034/":                                                               2257, // thales
 		"https://www.linkedin.com/jobs/view/4299786439/":                                                               2973, // thales
@@ -3546,6 +3549,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4347642829/":                                                               3548, // loyal-guru
 		"https://www.linkedin.com/jobs/view/4339012184/":                                                               3549, // vyro-ai
 		"https://www.linkedin.com/jobs/view/4285040837/":                                                               3550, // foxglovedev
+		"https://www.linkedin.com/jobs/view/4341524010/":                                                               3554, // sky
 		"https://www.linkedin.com/jobs/view/3914839625/":                                                               372,  // cognizant
 		"https://www.linkedin.com/jobs/view/4120737001/":                                                               600,  // cognizant
 		"https://www.linkedin.com/jobs/view/4149258542/":                                                               787,  // cognizant

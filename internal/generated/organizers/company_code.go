@@ -1281,6 +1281,7 @@ var (
 		"loyal-guru":                          1281, // Loyal Guru
 		"vyro-ai":                             1282, // Vyro
 		"foxglovedev":                         1283, // Foxglove
+		"sky":                                 1284, // Sky
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 
