@@ -507,7 +507,7 @@ func companies08Shard() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Check-Point-Software-Technologies-2",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",

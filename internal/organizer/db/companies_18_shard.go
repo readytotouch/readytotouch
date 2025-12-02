@@ -576,7 +576,7 @@ func companies18Shard() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Opendoor-2",
 			},
 			Languages: domain.Languages{
 				domain.Go: {

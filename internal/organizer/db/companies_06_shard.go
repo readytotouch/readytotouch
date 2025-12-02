@@ -4155,8 +4155,9 @@ func companies06Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "getoutreach",
-				Verified: true,
+				Login:     "getoutreach",
+				Followers: "86",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "Outreach",

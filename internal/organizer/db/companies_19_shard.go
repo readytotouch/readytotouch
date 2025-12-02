@@ -766,7 +766,7 @@ func companies19Shard() []domain.CompanyProfile {
 				ReviewsRate: "3.4",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias: "Experian",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Experian-EI_IE42406.11,19.htm",
@@ -5250,7 +5250,7 @@ func companies19Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias: "Papa-8",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Papa-EI_IE2525288.11,15.htm",
@@ -5643,7 +5643,7 @@ func companies19Shard() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Nvidia",
 			},
 			Languages: domain.Languages{
 				domain.Go: {

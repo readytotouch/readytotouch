@@ -151,9 +151,9 @@
   },
   {
     "alias": "affinidi",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "affinidi-200x200.jpeg",
+    "destination": "affinidi.jpeg",
+    "destination_72x72": "affinidi.jpeg"
   },
   {
     "alias": "affinipay",
@@ -631,9 +631,9 @@
   },
   {
     "alias": "aviatrix-systems",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "aviatrix-systems-200x200.jpeg",
+    "destination": "aviatrix-systems.jpeg",
+    "destination_72x72": "aviatrix-systems.jpeg"
   },
   {
     "alias": "aviva-plc",
@@ -2653,9 +2653,9 @@
   },
   {
     "alias": "gartner",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "gartner-64x64.png",
+    "destination": "gartner.png",
+    "destination_72x72": "gartner.png"
   },
   {
     "alias": "gdms",
@@ -3067,9 +3067,9 @@
   },
   {
     "alias": "holidaycheck-ag",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "holidaycheck-200x200.jpeg",
+    "destination": "holidaycheck-ag.jpeg",
+    "destination_72x72": "holidaycheck-ag.jpeg"
   },
   {
     "alias": "home24",
@@ -4897,9 +4897,9 @@
   },
   {
     "alias": "perion",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "perion-180x180.webp",
+    "destination": "perion.png",
+    "destination_72x72": "perion.png"
   },
   {
     "alias": "perkbox",
@@ -5071,9 +5071,9 @@
   },
   {
     "alias": "priceline-com",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "priceline-192x192.png",
+    "destination": "priceline-com.png",
+    "destination_72x72": "priceline-com.png"
   },
   {
     "alias": "prima-assicurazioni",
@@ -5557,9 +5557,9 @@
   },
   {
     "alias": "runzero",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "runzero-200x200.jpeg",
+    "destination": "runzero.jpeg",
+    "destination_72x72": "runzero.jpeg"
   },
   {
     "alias": "rust-foundation",

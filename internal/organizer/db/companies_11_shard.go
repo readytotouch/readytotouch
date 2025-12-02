@@ -1481,7 +1481,14 @@ func companies11Shard() []domain.CompanyProfile {
 				Employees: "5,750",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Esri-EI_IE4043.11,15.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Esri-Reviews-E4043.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Esri-Jobs-E4043.htm",
+				Jobs:        "388",
+				Reviews:     "1.7K",
+				Salaries:    "4.7K",
+				ReviewsRate: "3.9",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -1908,7 +1915,7 @@ func companies11Shard() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Fidelity-Investments",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -2889,7 +2896,14 @@ func companies11Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Teramind-EI_IE1185532.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Teramind-Reviews-E1185532.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Teramind-Jobs-E1185532.htm",
+				Jobs:        "106",
+				Reviews:     "51",
+				Salaries:    "40",
+				ReviewsRate: "3.9",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",

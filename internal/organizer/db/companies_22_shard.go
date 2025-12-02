@@ -2434,7 +2434,7 @@ func companies22Shard() []domain.CompanyProfile {
 				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Shopify",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -2622,7 +2622,7 @@ func companies22Shard() []domain.CompanyProfile {
 				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Cybereason",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -2812,7 +2812,7 @@ func companies22Shard() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Hubspot",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -3869,7 +3869,14 @@ func companies22Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-SpotOn-EI_IE504721.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/SpotOn-Reviews-E504721.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/SpotOn-Jobs-E504721.htm",
+				Jobs:        "108",
+				Reviews:     "1K",
+				Salaries:    "1.4K",
+				ReviewsRate: "3.5",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -4038,7 +4045,14 @@ func companies22Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Botify-EI_IE1466856.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Botify-Reviews-E1466856.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Botify-Jobs-E1466856.htm",
+				Jobs:        "14",
+				Reviews:     "118",
+				Salaries:    "235",
+				ReviewsRate: "3.5",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -4207,7 +4221,14 @@ func companies22Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-LoopMe-EI_IE911164.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/LoopMe-Reviews-E911164.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/LoopMe-Jobs-E911164.htm",
+				Jobs:        "23",
+				Reviews:     "133",
+				Salaries:    "186",
+				ReviewsRate: "3.5",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -4291,7 +4312,14 @@ func companies22Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-smartclip-EI_IE765378.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/smartclip-Reviews-E765378.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/smartclip-Jobs-E765378.htm",
+				Jobs:        "9",
+				Reviews:     "17",
+				Salaries:    "30",
+				ReviewsRate: "4.3",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -4459,7 +4487,14 @@ func companies22Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Fresh-Clinics-EI_IE6821496.11,24.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Fresh-Clinics-Reviews-E6821496.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Fresh-Clinics-Jobs-E6821496.htm",
+				Jobs:        "",
+				Reviews:     "1",
+				Salaries:    "4",
+				ReviewsRate: "5.0",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -4708,8 +4743,9 @@ func companies22Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "ankorstore",
+				Followers: "50",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -4718,14 +4754,21 @@ func companies22Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Ankorstore-EI_IE4090028.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Ankorstore-Reviews-E4090028.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Ankorstore-Jobs-E4090028.htm",
+				Jobs:        "10",
+				Reviews:     "239",
+				Salaries:    "529",
+				ReviewsRate: "4.0",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 14,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Staff Engineer – Golang / PHP",
@@ -5070,7 +5113,14 @@ func companies22Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Zesty-EI_IE5284749.11,16.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Zesty-Reviews-E5284749.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Zesty-Jobs-E5284749.htm",
+				Jobs:        "",
+				Reviews:     "91",
+				Salaries:    "85",
+				ReviewsRate: "4.2",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -5407,7 +5457,14 @@ func companies22Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Sky-EI_IE3903.11,14.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Sky-Reviews-E3903.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Sky-Jobs-E3903.htm",
+				Jobs:        "190",
+				Reviews:     "7K",
+				Salaries:    "14K",
+				ReviewsRate: "3.5",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -5499,7 +5556,7 @@ func companies22Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{
+					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer (Python, Go, Node)",
 							ShortDescription:     "",
@@ -5542,7 +5599,7 @@ func companies22Shard() []domain.CompanyProfile {
 				},
 			},
 			ShortDescription: "",
-			Industries:       []domain.Industry{
+			Industries: []domain.Industry{
 				domain.IndustryEdTech,
 			},
 		},

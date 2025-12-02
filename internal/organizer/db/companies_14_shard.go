@@ -2331,7 +2331,7 @@ func companies14Shard() []domain.CompanyProfile {
 				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Veeva-Systems",
 			},
 			Languages: domain.Languages{
 				domain.Go: {},
