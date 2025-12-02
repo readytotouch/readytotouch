@@ -2434,11 +2434,15 @@ func companies22Shard() []domain.CompanyProfile {
 				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Shopify",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 123,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 18,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer – Rust",
@@ -2451,10 +2455,6 @@ func companies22Shard() []domain.CompanyProfile {
 							Remote:               true,
 						},
 					},
-				},
-				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
 				},
 				domain.Zig: {
 					GitHubRepositoriesCount: 0,
@@ -2622,7 +2622,7 @@ func companies22Shard() []domain.CompanyProfile {
 				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Cybereason",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -2638,7 +2638,7 @@ func companies22Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4321915810/",
 							Location:             "Tokyo, Tokyo, Japan",
-							Date:                 mustDate("2025-11-24", "2025-11-20", "2025-11-12"),
+							Date:                 mustDate("2025-12-01", "2025-11-24", "2025-11-20", "2025-11-12"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2812,7 +2812,7 @@ func companies22Shard() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Hubspot",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -3507,7 +3507,18 @@ func companies22Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Staff Software Engineer (Go)",
+							ShortDescription:     "Infrastructure Tooling",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4316427285/",
+							Location:             "Prague, Czechia",
+							Date:                 mustDate("2025-12-02"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
 				},
 				domain.Rust: {
 					GitHubRepositoriesCount: 0,
@@ -3858,7 +3869,14 @@ func companies22Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-SpotOn-EI_IE504721.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/SpotOn-Reviews-E504721.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/SpotOn-Jobs-E504721.htm",
+				Jobs:        "108",
+				Reviews:     "1K",
+				Salaries:    "1.4K",
+				ReviewsRate: "3.5",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -4027,7 +4045,14 @@ func companies22Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Botify-EI_IE1466856.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Botify-Reviews-E1466856.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Botify-Jobs-E1466856.htm",
+				Jobs:        "14",
+				Reviews:     "118",
+				Salaries:    "235",
+				ReviewsRate: "3.5",
+				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -4196,7 +4221,14 @@ func companies22Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-LoopMe-EI_IE911164.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/LoopMe-Reviews-E911164.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/LoopMe-Jobs-E911164.htm",
+				Jobs:        "23",
+				Reviews:     "133",
+				Salaries:    "186",
+				ReviewsRate: "3.5",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -4280,7 +4312,14 @@ func companies22Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-smartclip-EI_IE765378.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/smartclip-Reviews-E765378.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/smartclip-Jobs-E765378.htm",
+				Jobs:        "9",
+				Reviews:     "17",
+				Salaries:    "30",
+				ReviewsRate: "4.3",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -4448,7 +4487,14 @@ func companies22Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Fresh-Clinics-EI_IE6821496.11,24.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Fresh-Clinics-Reviews-E6821496.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Fresh-Clinics-Jobs-E6821496.htm",
+				Jobs:        "",
+				Reviews:     "1",
+				Salaries:    "4",
+				ReviewsRate: "5.0",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -4697,8 +4743,9 @@ func companies22Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "ankorstore",
+				Followers: "50",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -4707,14 +4754,21 @@ func companies22Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Ankorstore-EI_IE4090028.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Ankorstore-Reviews-E4090028.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Ankorstore-Jobs-E4090028.htm",
+				Jobs:        "10",
+				Reviews:     "239",
+				Salaries:    "529",
+				ReviewsRate: "4.0",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 14,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Staff Engineer – Golang / PHP",
@@ -5059,7 +5113,14 @@ func companies22Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Zesty-EI_IE5284749.11,16.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Zesty-Reviews-E5284749.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Zesty-Jobs-E5284749.htm",
+				Jobs:        "",
+				Reviews:     "91",
+				Salaries:    "85",
+				ReviewsRate: "4.2",
+				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -5365,6 +5426,181 @@ func companies22Shard() []domain.CompanyProfile {
 			ShortDescription: "Visualize, debug, and manage multimodal data in one purpose-built platform for robotics and embodied AI development",
 			Industries: []domain.Industry{
 				domain.IndustryDevOps,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Sky",
+			Website: "https://www.sky.com/",
+			Careers: "https://careers.sky.com/",
+			About:   "https://careers.sky.com/about",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3318,
+				IDs:               []int{3318, 10983400},
+				Alias:             "sky",
+				Name:              "Sky",
+				Followers:         "567K",
+				Employees:         "10K+",
+				AssociatedMembers: "35,523",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Sky-EI_IE3903.11,14.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Sky-Reviews-E3903.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Sky-Jobs-E3903.htm",
+				Jobs:        "190",
+				Reviews:     "7K",
+				Salaries:    "14K",
+				ReviewsRate: "3.5",
+				Verified:    false,
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Scala Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4341524010/",
+							Location:             "Isleworth, England, United Kingdom",
+							Date:                 mustDate("2025-12-02"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "TV",
+			Industries: []domain.Industry{
+				domain.IndustryEntertainment,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Reducate",
+			Website: "https://www.reducate.com/",
+			Careers: "https://www.reducate.com/careers/",
+			About:   "https://www.reducate.com/about-us/",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                85115348,
+				IDs:               nil,
+				Alias:             "reducate",
+				Name:              "Reducate",
+				Followers:         "2K",
+				Employees:         "51-200",
+				AssociatedMembers: "27",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer (Python, Go, Node)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4325399277/",
+							Location:             "The Randstad, Netherlands",
+							Date:                 mustDate("2025-12-03"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "",
+			Industries: []domain.Industry{
+				domain.IndustryEdTech,
 			},
 		},
 

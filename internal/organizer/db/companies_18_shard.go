@@ -576,7 +576,7 @@ func companies18Shard() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Opendoor-2",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
@@ -607,7 +607,7 @@ func companies18Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4308121465/",
 							Location:             "Seattle, WA",
-							Date:                 mustDate("2025-11-12"),
+							Date:                 mustDate("2025-12-02", "2025-11-12"),
 							WithSalary:           true, // $143.4k/yr - $196.9k/yr
 							Remote:               false,
 						},
@@ -4401,6 +4401,16 @@ func companies18Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4313221564/",
 							Location:             "Greater Chennai Area",
 							Date:                 mustDate("2025-10-11"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Spark/Scala Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4335431028/",
+							Location:             "Chennai, Tamil Nadu, India",
+							Date:                 mustDate("2025-12-02"),
 							WithSalary:           false,
 							Remote:               false,
 						},

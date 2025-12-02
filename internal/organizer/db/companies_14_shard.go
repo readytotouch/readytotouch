@@ -2331,7 +2331,7 @@ func companies14Shard() []domain.CompanyProfile {
 				Verified:    false,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Veeva-Systems",
 			},
 			Languages: domain.Languages{
 				domain.Go: {},
@@ -2353,7 +2353,7 @@ func companies14Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4280891809/",
 							Location:             "United States",
-							Date:                 mustDate("2025-10-11", "2025-08-29"),
+							Date:                 mustDate("2025-12-02", "2025-10-11", "2025-08-29"),
 							WithSalary:           true, // $150k/yr - $300k/yr
 							Remote:               true,
 						},

@@ -434,7 +434,7 @@ func companies03Shard() []domain.CompanyProfile {
 				Verified:    true,
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Quadcode",
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",

@@ -1674,7 +1674,7 @@ func companies12Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias: "Adform",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Adform-EI_IE373601.11,17.htm",
@@ -1721,6 +1721,16 @@ func companies12Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4285962926/",
 							Location:             "Mumbai, Maharashtra, India",
 							Date:                 mustDate("2025-09-06", "2025-08-15"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Java/Scala Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4316070713/",
+							Location:             "Mumbai, Maharashtra, India",
+							Date:                 mustDate("2025-11-30"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3608,8 +3618,9 @@ func companies12Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "aviatrixsystems",
-				Verified: false,
+				Login:     "aviatrixsystems",
+				Followers: "56",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -3661,6 +3672,16 @@ func companies12Shard() []domain.CompanyProfile {
 							Date:                 mustDate("2025-05-10", "2025-04-17"),
 							WithSalary:           true, // $188,445 - $221,700 + benefits + 401(k) match + equity
 							Remote:               true,
+						},
+						{
+							Title:                "Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4340395018/",
+							Location:             "Warsaw, Mazowieckie, Poland",
+							Date:                 mustDate("2025-12-02"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 					},
 				},
@@ -4348,7 +4369,7 @@ func companies12Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4271201559/",
 							Location:             "Munich, Bavaria, Germany",
-							Date:                 mustDate("2025-11-12", "2025-09-09", "2025-08-19", "2025-07-28"),
+							Date:                 mustDate("2025-12-02", "2025-11-12", "2025-09-09", "2025-08-19", "2025-07-28"),
 							WithSalary:           false,
 							Remote:               false,
 						},

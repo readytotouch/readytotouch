@@ -2450,5 +2450,53 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Qodea",
+			Website: "https://www.qodea.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1109178,
+				IDs:               nil,
+				Alias:             "qodea",
+				Name:              "Qodea",
+				Followers:         "32K",
+				Employees:         "201-500",
+				AssociatedMembers: "279",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "FlairX",
+			Website: "https://www.flairx.ai/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                104110324,
+				IDs:               nil,
+				Alias:             "flairx",
+				Name:              "FlairX",
+				Followers:         "20K",
+				Employees:         "11-50",
+				AssociatedMembers: "17",
+				Verified:          false,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Ziverge",
+			Website: "https://www.ziverge.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                34919838,
+				IDs:               nil,
+				Alias:             "ziverge",
+				Name:              "Ziverge",
+				Followers:         "3K",
+				Employees:         "11-50",
+				AssociatedMembers: "34",
+				Verified:          false,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }

@@ -1022,8 +1022,9 @@ func companies05Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "GeoComply",
-				Verified: false,
+				Login:     "GeoComply",
+				Followers: "100",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "GeoComply",

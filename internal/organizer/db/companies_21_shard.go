@@ -1494,7 +1494,7 @@ func companies21Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4156638094/",
 							Location:             "Barcelona, Catalonia, Spain",
-							Date:                 mustDate("2025-11-11", "2025-10-21", "2025-09-09"),
+							Date:                 mustDate("2025-12-02", "2025-11-11", "2025-10-21", "2025-09-09"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -1789,6 +1789,16 @@ func companies21Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4295267899/",
 							Location:             "Tel Aviv-Yafo, Tel Aviv District, Israel",
 							Date:                 mustDate("2025-09-08"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Back-End Developer – Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4348076228/",
+							Location:             "Tel Aviv-Yafo, Tel Aviv District, Israel",
+							Date:                 mustDate("2025-12-02"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -4736,8 +4746,9 @@ func companies21Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "infopark",
+				Followers: "9",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -4761,7 +4772,7 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 2,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Golang Engineer",
@@ -5517,8 +5528,9 @@ func companies21Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "affinidi",
+				Followers: "51",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -5545,7 +5557,7 @@ func companies21Shard() []domain.CompanyProfile {
 					Vacancies:               []domain.Vacancy{},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 5,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Staff Backend Engineer with Rust",
@@ -5556,6 +5568,16 @@ func companies21Shard() []domain.CompanyProfile {
 							Date:                 mustDate("2025-10-03"),
 							WithSalary:           false,
 							Remote:               false,
+						},
+						{
+							Title:                "Staff Rust Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4321884203/",
+							Location:             "Dublin, County Dublin, Ireland",
+							Date:                 mustDate("2025-12-02"),
+							WithSalary:           false,
+							Remote:               true,
 						},
 					},
 				},

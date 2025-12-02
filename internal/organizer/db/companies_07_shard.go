@@ -1122,7 +1122,7 @@ func companies07Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4282145230/",
 							Location:             "Pune, Maharashtra, India",
-							Date:                 mustDate("2025-11-11"),
+							Date:                 mustDate("2025-12-02", "2025-11-11"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -1771,8 +1771,9 @@ func companies07Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "priceline",
+				Followers: "15",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "priceline",
