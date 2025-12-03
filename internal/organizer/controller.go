@@ -42,6 +42,10 @@ type (
 	vacancyURI struct {
 		VacancyID int64 `uri:"vacancy_id" binding:"required"`
 	}
+
+	languageURI struct {
+		Language string `uri:"language" binding:"required"`
+	}
 )
 
 type Controller struct {
@@ -1031,10 +1035,45 @@ func (c *Controller) UnsafeCompanies(ctx *gin.Context) {
 	})
 }
 
+func (c *Controller) UnsafeCompaniesV3(ctx *gin.Context) {
+	var (
+		uri languageURI
+	)
+
+	err := ctx.ShouldBindUri(&uri)
+	if err != nil {
+		ctx.JSON(http.StatusInternalServerError, &domain.ErrorResponse{
+			ErrorMessage: err.Error(), // Yes, we are leaking the error message to the client, it's fine for now
+		})
+		return
+	}
+
+	organizer := domain.FindOrganizer(uri.Language)
+	if organizer.Empty() {
+		ctx.JSON(http.StatusInternalServerError, &domain.ErrorResponse{
+			ErrorMessage: fmt.Sprintf("unknown organizer for language: %s", uri.Language),
+		})
+		return
+	}
+
+	companies := c.companies(organizer.Language)
+
+	result := make([]domain.CompanyResponse, len(companies))
+	for i, company := range companies {
+		result[i] = domain.CompanyResponse{
+			ID: company.ID,
+		}
+	}
+
+	ctx.JSON(http.StatusOK, &domain.CompaniesResponse{
+		Companies: result,
+	})
+}
+
 func (c *Controller) UnsafeVacancies(ctx *gin.Context) {
 	companies := db.CloneCompanies()
 
-	result := make([]domain.UnsafeVacancyResponse, 0, 1024)
+	result := make([]domain.UnsafeVacancyResponse, 0, 4096)
 	for _, company := range companies {
 		for _, language := range company.Languages {
 			for _, vacancy := range language.Vacancies {
@@ -1047,6 +1086,46 @@ func (c *Controller) UnsafeVacancies(ctx *gin.Context) {
 	}
 
 	ctx.JSON(http.StatusOK, &domain.UnsafeVacanciesResponse{
+		Vacancies: result,
+	})
+}
+
+func (c *Controller) UnsafeVacanciesV3(ctx *gin.Context) {
+	var (
+		uri languageURI
+	)
+
+	err := ctx.ShouldBindUri(&uri)
+	if err != nil {
+		ctx.JSON(http.StatusInternalServerError, &domain.ErrorResponse{
+			ErrorMessage: err.Error(), // Yes, we are leaking the error message to the client, it's fine for now
+		})
+		return
+	}
+
+	organizer := domain.FindOrganizer(uri.Language)
+	if organizer.Empty() {
+		ctx.JSON(http.StatusInternalServerError, &domain.ErrorResponse{
+			ErrorMessage: fmt.Sprintf("unknown organizer for language: %s", uri.Language),
+		})
+		return
+	}
+
+	companies := c.companies(organizer.Language)
+
+	result := make([]domain.VacancyResponse, 0, 4096)
+	for _, company := range companies {
+		for _, vacancy := range company.Languages[organizer.Language].Vacancies {
+			id, ok := organizers.VacancyUrlMap[vacancy.URL]
+			if ok {
+				result = append(result, domain.VacancyResponse{
+					ID: id,
+				})
+			}
+		}
+	}
+
+	ctx.JSON(http.StatusOK, &domain.VacanciesResponse{
 		Vacancies: result,
 	})
 }

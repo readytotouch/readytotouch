@@ -115,9 +115,17 @@ type UnsafeCompanyResponse struct {
 	Languages          []UnsafeCompanyLanguageStats `json:"languages"`
 }
 
+type CompanyResponse struct {
+	ID int64 `json:"id"`
+}
+
 type UnsafeVacancyResponse struct {
 	URL  string    `json:"url"`
 	Date time.Time `json:"date"`
+}
+
+type VacancyResponse struct {
+	ID int64 `json:"id"`
 }
 
 type GitHubProfile struct {
@@ -247,4 +255,12 @@ type UnsafeCompaniesResponse struct {
 
 type UnsafeVacanciesResponse struct {
 	Vacancies []UnsafeVacancyResponse `json:"vacancies"`
+}
+
+type CompaniesResponse struct {
+	Companies []CompanyResponse `json:"companies"`
+}
+
+type VacanciesResponse struct {
+	Vacancies []VacancyResponse `json:"vacancies"`
 }
