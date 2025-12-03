@@ -94,7 +94,7 @@ type LinkedInProfile struct {
 	Verified          bool
 }
 
-type LinkedInProfileResponse struct {
+type LinkedInProfileShortResponse struct {
 	ID    int64  `json:"id"`
 	Alias string `json:"alias"`
 	Name  string `json:"name"`
@@ -115,8 +115,55 @@ type UnsafeCompanyResponse struct {
 	Languages          []UnsafeCompanyLanguageStats `json:"languages"`
 }
 
+type CompanyLogoResponse struct {
+	MainSize string `json:"72x72"`
+}
+
+type LinkedInProfileResponse struct {
+	Alias             string `json:"alias"` // vanity name
+	Name              string `json:"name"`
+	Followers         string `json:"followers"`
+	Employees         string `json:"employees"`
+	AssociatedMembers string `json:"associated_members"`
+	Verified          bool   `json:"verified"`
+}
+
+type GitHubProfileResponse struct {
+	Login     string `json:"login"`
+	Followers string `json:"followers"`
+	Verified  bool   `json:"verified"`
+}
+
+type GlassdoorProfileResponse struct {
+	OverviewURL string `json:"overview_url"`
+	ReviewsURL  string `json:"reviews_url"`
+	JobsURL     string `json:"jobs_url"`
+	Jobs        string `json:"jobs"`
+	Reviews     string `json:"reviews"`
+	Salaries    string `json:"salaries"`
+	ReviewsRate string `json:"reviews_rate"`
+	Verified    bool   `json:"verified"`
+}
+
 type CompanyResponse struct {
-	ID int64 `json:"id"`
+	ID                        int64
+	Type                      CompanyType
+	Logo                      CompanyLogoResponse
+	Name                      string
+	BaseURL                   string
+	CareersURL                string
+	AboutURL                  string
+	BlogURL                   string
+	LinkedInProfile           LinkedInProfileResponse
+	GitHubProfile             GitHubProfileResponse
+	GlassdoorProfile          GlassdoorProfileResponse
+	ShortDescription          string
+	Industries                []Industry
+	HasEmployeesFromCountries []Country
+	RustFoundationMember      bool
+	PinnedUntil               time.Time
+	Remote                    bool
+	LatestVacancyDate         time.Time
 }
 
 type UnsafeVacancyResponse struct {
@@ -143,6 +190,7 @@ type GlassdoorProfile struct {
 	Salaries    string
 	ReviewsRate string
 	Verified    bool
+	Date        time.Time
 }
 
 type BlindProfile struct {
@@ -216,12 +264,12 @@ type CompanyProfile struct {
 	Type                      CompanyType // populates from the CompanyStartupMap
 	Logo                      CompanyLogo // populates from the CompanyAliasToLogoMap
 	Name                      string
-	Website                   string // Production website
-	Careers                   string // Careers page URL
-	ReferralProgram           string // Referral program URL
-	About                     string // About URL
-	Blog                      string // Development blog URL
-	Transparency              string // Transparency URL e.g. https://buffer.com/transparency
+	BaseURL                   string // Production website
+	CareersURL                string // Careers page URL
+	AboutURL                  string // About URL
+	BlogURL                   string // Development blog URL
+	ReferralProgramURL        string // Referral program URL
+	TransparencyURL           string // Transparency URL e.g. https://buffer.com/transparency
 	LinkedInProfile           LinkedInProfile
 	GitHubProfile             GitHubProfile
 	BlindProfile              BlindProfile

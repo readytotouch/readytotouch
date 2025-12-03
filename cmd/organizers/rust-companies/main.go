@@ -37,9 +37,9 @@ func main() {
 		}
 
 		if github {
-			ss = append(ss, fmt.Sprintf("%s %s https://github.com/%s", company.Name, company.Website, company.GitHubProfile.Login))
+			ss = append(ss, fmt.Sprintf("%s %s https://github.com/%s", company.Name, company.BaseURL, company.GitHubProfile.Login))
 		} else {
-			ss = append(ss, fmt.Sprintf("%s %s", company.Name, company.Website))
+			ss = append(ss, fmt.Sprintf("%s %s", company.Name, company.BaseURL))
 		}
 
 	}

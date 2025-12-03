@@ -1061,7 +1061,26 @@ func (c *Controller) UnsafeCompaniesV3(ctx *gin.Context) {
 	result := make([]domain.CompanyResponse, len(companies))
 	for i, company := range companies {
 		result[i] = domain.CompanyResponse{
-			ID: company.ID,
+			ID:   company.ID,
+			Type: company.Type,
+			Logo: domain.CompanyLogoResponse{
+				MainSize: company.Logo.V2,
+			},
+			Name:                      company.Name,
+			BaseURL:                   company.BaseURL,
+			CareersURL:                "",
+			AboutURL:                  "",
+			BlogURL:                   "",
+			LinkedInProfile:           domain.LinkedInProfileResponse{},
+			GitHubProfile:             domain.GitHubProfileResponse{},
+			GlassdoorProfile:          domain.GlassdoorProfileResponse{},
+			ShortDescription:          "",
+			Industries:                nil,
+			HasEmployeesFromCountries: nil,
+			RustFoundationMember:      false,
+			PinnedUntil:               time.Time{},
+			Remote:                    false,
+			LatestVacancyDate:         time.Time{},
 		}
 	}
 
@@ -1566,7 +1585,7 @@ func (c *Controller) DataPopulationCompaniesCareersAndAboutAndBlog(ctx *gin.Cont
 				return false
 			}
 
-			return company.Careers == "" || company.About == "" || company.Blog == ""
+			return company.CareersURL == "" || company.AboutURL == "" || company.BlogURL == ""
 		})
 	)
 

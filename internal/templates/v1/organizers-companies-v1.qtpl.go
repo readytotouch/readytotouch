@@ -533,7 +533,7 @@ func StreamOrganizersCompaniesV1(qw422016 *qt422016.Writer,
                       src="/assets/images/pages/organizer/similarweb.svg"
                     />
                     <a href="`)
-		qw422016.E().S(similarwebURL(company.Website))
+		qw422016.E().S(similarwebURL(company.BaseURL))
 		qw422016.N().S(`" target="_blank" class="button-link card__links-link">SimilarWeb</a>
                   </li>
                   <li class="card__links-item">
@@ -545,7 +545,7 @@ func StreamOrganizersCompaniesV1(qw422016 *qt422016.Writer,
                       src="/assets/images/pages/organizer/whois.svg"
                     />
                     <a href="`)
-		qw422016.E().S(whoisURL(company.Website))
+		qw422016.E().S(whoisURL(company.BaseURL))
 		qw422016.N().S(`" target="_blank" class="button-link card__links-link">Whois</a>
                   </li>
 

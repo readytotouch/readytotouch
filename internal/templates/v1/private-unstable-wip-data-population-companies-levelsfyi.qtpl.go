@@ -61,10 +61,10 @@ func StreamDataPopulationCompaniesLevelsFyi(qw422016 *qt422016.Writer, companies
 		qw422016.N().S(`</div>
         <div class="links">
             <a href='`)
-		qw422016.E().S(googleSearchLevelsFyi(hostname(company.Website)))
+		qw422016.E().S(googleSearchLevelsFyi(hostname(company.BaseURL)))
 		qw422016.N().S(`' target="_blank">
                 <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> site:levels.fyi `)
-		qw422016.E().S(hostname(company.Website))
+		qw422016.E().S(hostname(company.BaseURL))
 		qw422016.N().S(`
             </a>
             <a href='`)

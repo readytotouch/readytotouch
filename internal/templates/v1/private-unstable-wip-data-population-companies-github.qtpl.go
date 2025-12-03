@@ -64,10 +64,10 @@ func StreamDataPopulationCompaniesGitHub(qw422016 *qt422016.Writer, companies []
 		if company.GitHubProfile.Login == "" {
 			qw422016.N().S(`
             <a href='`)
-			qw422016.E().S(googleSearchGitHub(hostname(company.Website)))
+			qw422016.E().S(googleSearchGitHub(hostname(company.BaseURL)))
 			qw422016.N().S(`' target="_blank">
                 <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> site:github.com `)
-			qw422016.E().S(hostname(company.Website))
+			qw422016.E().S(hostname(company.BaseURL))
 			qw422016.N().S(`
             </a>
             <a href='`)
