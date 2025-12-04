@@ -5,13 +5,13 @@ import "github.com/readytotouch/readytotouch/internal/domain"
 func companies22Shard() []domain.CompanyProfile {
 	return []domain.CompanyProfile{
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Centra",
-			Website: "https://centra.com/",
-			Careers: "https://centra.teamtailor.com/",
-			About:   "",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Centra",
+			BaseURL:    "https://centra.com/",
+			CareersURL: "https://centra.teamtailor.com/",
+			AboutURL:   "",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                10813841,
 				IDs:               nil,
@@ -89,13 +89,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Lifemote",
-			Website: "https://www.lifemote.com/",
-			Careers: "",
-			About:   "",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Lifemote",
+			BaseURL:    "https://www.lifemote.com/",
+			CareersURL: "",
+			AboutURL:   "",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                15143129,
 				IDs:               nil,
@@ -173,13 +173,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Chili Piper",
-			Website: "https://www.chilipiper.com/",
-			Careers: "https://www.chilipiper.com/careers",
-			About:   "https://www.chilipiper.com/about",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Chili Piper",
+			BaseURL:    "https://www.chilipiper.com/",
+			CareersURL: "https://www.chilipiper.com/careers",
+			AboutURL:   "https://www.chilipiper.com/about",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                2687110,
 				IDs:               nil,
@@ -268,13 +268,13 @@ func companies22Shard() []domain.CompanyProfile {
 			PinnedUntil: mustDate("2025-10-31"),
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "OpenVPN Inc.",
-			Website: "https://openvpn.net/",
-			Careers: "https://careers.openvpn.net/",
-			About:   "https://openvpn.net/about/",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "OpenVPN Inc.",
+			BaseURL:    "https://openvpn.net/",
+			CareersURL: "https://careers.openvpn.net/",
+			AboutURL:   "https://openvpn.net/about/",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                15353748,
 				IDs:               nil,
@@ -380,13 +380,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Wynd Labs",
-			Website: "https://www.wyndlabs.ai/",
-			Careers: "",
-			About:   "",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Wynd Labs",
+			BaseURL:    "https://www.wyndlabs.ai/",
+			CareersURL: "",
+			AboutURL:   "",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                92612409,
 				IDs:               nil,
@@ -464,13 +464,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Phantom",
-			Website: "https://phantom.com/",
-			Careers: "https://phantom.com/careers",
-			About:   "https://phantom.com/about",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Phantom",
+			BaseURL:    "https://phantom.com/",
+			CareersURL: "https://phantom.com/careers",
+			AboutURL:   "https://phantom.com/about",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                72352899,
 				IDs:               nil,
@@ -549,13 +549,13 @@ func companies22Shard() []domain.CompanyProfile {
 			Ignore: true, // Cryptocurrency
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "webAI",
-			Website: "https://www.webai.com/",
-			Careers: "https://www.webai.com/careers",
-			About:   "https://www.webai.com/about",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "webAI",
+			BaseURL:    "https://www.webai.com/",
+			CareersURL: "https://www.webai.com/careers",
+			AboutURL:   "https://www.webai.com/about",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                30756874,
 				IDs:               nil,
@@ -640,13 +640,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Perplexity",
-			Website: "https://www.perplexity.ai/",
-			Careers: "https://www.perplexity.ai/careers",
-			About:   "https://www.perplexity.ai/about",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Perplexity",
+			BaseURL:    "https://www.perplexity.ai/",
+			CareersURL: "https://www.perplexity.ai/careers",
+			AboutURL:   "https://www.perplexity.ai/about",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                88007673,
 				IDs:               nil,
@@ -754,13 +754,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "LiveKit",
-			Website: "https://livekit.io/",
-			Careers: "https://livekit.io/careers",
-			About:   "https://livekit.io/about",
-			Blog:    "https://blog.livekit.io/",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "LiveKit",
+			BaseURL:    "https://livekit.io/",
+			CareersURL: "https://livekit.io/careers",
+			AboutURL:   "https://livekit.io/about",
+			BlogURL:    "https://blog.livekit.io/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                74724401,
 				IDs:               nil,
@@ -857,13 +857,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Watergenics",
-			Website: "https://www.watergenics.tech/",
-			Careers: "https://www.watergenics.tech/career",
-			About:   "https://www.watergenics.tech/about-us",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Watergenics",
+			BaseURL:    "https://www.watergenics.tech/",
+			CareersURL: "https://www.watergenics.tech/career",
+			AboutURL:   "https://www.watergenics.tech/about-us",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                20534349,
 				IDs:               nil,
@@ -942,13 +942,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Verse",
-			Website: "https://verse.inc/",
-			Careers: "https://verse.inc/careers/",
-			About:   "https://verse.inc/about-verse/",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Verse",
+			BaseURL:    "https://verse.inc/",
+			CareersURL: "https://verse.inc/careers/",
+			AboutURL:   "https://verse.inc/about-verse/",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                89737076,
 				IDs:               nil,
@@ -1026,13 +1026,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "lowRISC CIC",
-			Website: "https://lowrisc.org/",
-			Careers: "https://lowrisc.org/jobs/",
-			About:   "https://lowrisc.org/about-us/",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "lowRISC CIC",
+			BaseURL:    "https://lowrisc.org/",
+			CareersURL: "https://lowrisc.org/jobs/",
+			AboutURL:   "https://lowrisc.org/about-us/",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                25176997,
 				IDs:               nil,
@@ -1111,13 +1111,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Polygon.io",
-			Website: "https://massive.com/",
-			Careers: "https://massive.com/careers",
-			About:   "https://massive.com/about",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Polygon.io",
+			BaseURL:    "https://massive.com/",
+			CareersURL: "https://massive.com/careers",
+			AboutURL:   "https://massive.com/about",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                11871081,
 				IDs:               nil,
@@ -1195,13 +1195,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "ReveniQ",
-			Website: "https://reveniq.com/",
-			Careers: "",
-			About:   "https://reveniq.com/about-us/",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "ReveniQ",
+			BaseURL:    "https://reveniq.com/",
+			CareersURL: "",
+			AboutURL:   "https://reveniq.com/about-us/",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                93815400,
 				IDs:               nil,
@@ -1279,13 +1279,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "The Weather Company",
-			Website: "https://www.weather.com/",
-			Careers: "https://www.weathercompany.com/careers/",
-			About:   "https://www.weathercompany.com/about-us/",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "The Weather Company",
+			BaseURL:    "https://www.weather.com/",
+			CareersURL: "https://www.weathercompany.com/careers/",
+			AboutURL:   "https://www.weathercompany.com/about-us/",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                3634137,
 				IDs:               nil,
@@ -1371,13 +1371,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Bibit.id",
-			Website: "https://bibit.id/",
-			Careers: "https://careers.stockbit.com/jobs",
-			About:   "",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Bibit.id",
+			BaseURL:    "https://bibit.id/",
+			CareersURL: "https://careers.stockbit.com/jobs",
+			AboutURL:   "",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                14476124,
 				IDs:               nil,
@@ -1472,13 +1472,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Perceptyx",
-			Website: "https://www.perceptyx.com/",
-			Careers: "https://go.perceptyx.com/careers",
-			About:   "",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Perceptyx",
+			BaseURL:    "https://www.perceptyx.com/",
+			CareersURL: "https://go.perceptyx.com/careers",
+			AboutURL:   "",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                2150008,
 				IDs:               nil,
@@ -1575,13 +1575,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Threecolts",
-			Website: "https://www.threecolts.com/",
-			Careers: "https://www.threecolts.com/careers",
-			About:   "https://www.threecolts.com/about-us",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Threecolts",
+			BaseURL:    "https://www.threecolts.com/",
+			CareersURL: "https://www.threecolts.com/careers",
+			AboutURL:   "https://www.threecolts.com/about-us",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                71701124,
 				IDs:               []int{15872062, 68321800, 71701124},
@@ -1666,13 +1666,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Spendbase",
-			Website: "https://www.spendbase.co/",
-			Careers: "https://spendbase.peopleforce.io/careers",
-			About:   "",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Spendbase",
+			BaseURL:    "https://www.spendbase.co/",
+			CareersURL: "https://spendbase.peopleforce.io/careers",
+			AboutURL:   "",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                88402031,
 				IDs:               nil,
@@ -1758,13 +1758,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Aonic",
-			Website: "https://aonic.com/",
-			Careers: "https://careers.aonic.com/",
-			About:   "",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Aonic",
+			BaseURL:    "https://aonic.com/",
+			CareersURL: "https://careers.aonic.com/",
+			AboutURL:   "",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                7803337,
 				IDs:               nil,
@@ -1849,13 +1849,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Bud",
-			Website: "https://www.thisisbud.com/",
-			Careers: "https://www.thisisbud.com/company/careers",
-			About:   "https://www.thisisbud.com/company/about",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Bud",
+			BaseURL:    "https://www.thisisbud.com/",
+			CareersURL: "https://www.thisisbud.com/company/careers",
+			AboutURL:   "https://www.thisisbud.com/company/about",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                10051647,
 				IDs:               nil,
@@ -1941,13 +1941,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Zixflow",
-			Website: "https://zixflow.com/",
-			Careers: "https://zixflow.com/careers",
-			About:   "https://zixflow.com/about-us",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Zixflow",
+			BaseURL:    "https://zixflow.com/",
+			CareersURL: "https://zixflow.com/careers",
+			AboutURL:   "https://zixflow.com/about-us",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                72446145,
 				IDs:               nil,
@@ -2025,13 +2025,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Jabil",
-			Website: "https://www.jabil.com/",
-			Careers: "https://careers.jabil.com/",
-			About:   "https://jabil.com/about-us.html",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Jabil",
+			BaseURL:    "https://www.jabil.com/",
+			CareersURL: "https://careers.jabil.com/",
+			AboutURL:   "https://jabil.com/about-us.html",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                4852,
 				IDs:               []int{4852, 10512},
@@ -2117,13 +2117,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Severalnines",
-			Website: "https://severalnines.com/",
-			Careers: "https://severalnines.com/career/",
-			About:   "https://severalnines.com/about-us/",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Severalnines",
+			BaseURL:    "https://severalnines.com/",
+			CareersURL: "https://severalnines.com/career/",
+			AboutURL:   "https://severalnines.com/about-us/",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1685836,
 				IDs:               nil,
@@ -2202,13 +2202,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Plannatech",
-			Website: "https://www.plannatech.com/",
-			Careers: "",
-			About:   "",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Plannatech",
+			BaseURL:    "https://www.plannatech.com/",
+			CareersURL: "",
+			AboutURL:   "",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                65515903,
 				IDs:               nil,
@@ -2286,13 +2286,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Profound",
-			Website: "https://www.tryprofound.com/",
-			Careers: "https://www.tryprofound.com/careers",
-			About:   "",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Profound",
+			BaseURL:    "https://www.tryprofound.com/",
+			CareersURL: "https://www.tryprofound.com/careers",
+			AboutURL:   "",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                104065246,
 				IDs:               nil,
@@ -2390,13 +2390,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Shopify",
-			Website: "https://www.shopify.com/",
-			Careers: "",
-			About:   "",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Shopify",
+			BaseURL:    "https://www.shopify.com/",
+			CareersURL: "",
+			AboutURL:   "",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                784652,
 				IDs:               []int{784652, 10462386},
@@ -2487,13 +2487,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Exein",
-			Website: "https://www.exein.io/",
-			Careers: "https://www.exein.io/careers",
-			About:   "https://www.exein.io/about",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Exein",
+			BaseURL:    "https://www.exein.io/",
+			CareersURL: "https://www.exein.io/careers",
+			AboutURL:   "https://www.exein.io/about",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                18793584,
 				IDs:               nil,
@@ -2579,13 +2579,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Cybereason",
-			Website: "https://www.cybereason.com/",
-			Careers: "https://www.cybereason.com/company",
-			About:   "https://www.cybereason.com/company/careers",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Cybereason",
+			BaseURL:    "https://www.cybereason.com/",
+			CareersURL: "https://www.cybereason.com/company",
+			AboutURL:   "https://www.cybereason.com/company/careers",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                3173675,
 				IDs:               nil,
@@ -2675,13 +2675,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Axonius",
-			Website: "https://www.axonius.com/",
-			Careers: "https://www.axonius.com/company/careers",
-			About:   "https://www.axonius.com/company",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Axonius",
+			BaseURL:    "https://www.axonius.com/",
+			CareersURL: "https://www.axonius.com/company/careers",
+			AboutURL:   "https://www.axonius.com/company",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                18226665,
 				IDs:               nil,
@@ -2768,13 +2768,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "HubSpot",
-			Website: "https://www.hubspot.com/",
-			Careers: "https://www.hubspot.com/careers",
-			About:   "https://www.hubspot.com/our-story",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "HubSpot",
+			BaseURL:    "https://www.hubspot.com/",
+			CareersURL: "https://www.hubspot.com/careers",
+			AboutURL:   "https://www.hubspot.com/our-story",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                68529,
 				IDs:               nil,
@@ -2875,13 +2875,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "loveholidays",
-			Website: "https://www.loveholidays.com/",
-			Careers: "",
-			About:   "",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "loveholidays",
+			BaseURL:    "https://www.loveholidays.com/",
+			CareersURL: "",
+			AboutURL:   "",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                2519454,
 				IDs:               nil,
@@ -2996,13 +2996,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Nominal",
-			Website: "https://nominal.io/",
-			Careers: "https://nominal.io/careers",
-			About:   "https://nominal.io/about-us",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Nominal",
+			BaseURL:    "https://nominal.io/",
+			CareersURL: "https://nominal.io/careers",
+			AboutURL:   "https://nominal.io/about-us",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                92924343,
 				IDs:               nil,
@@ -3080,13 +3080,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Upsun (formerly Platform.sh)",
-			Website: "https://upsun.com/",
-			Careers: "https://upsun.com/jobs/",
-			About:   "https://upsun.com/about-us/",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Upsun (formerly Platform.sh)",
+			BaseURL:    "https://upsun.com/",
+			CareersURL: "https://upsun.com/jobs/",
+			AboutURL:   "https://upsun.com/about-us/",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                10304431,
 				IDs:               nil,
@@ -3181,13 +3181,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "MotherDuck",
-			Website: "https://motherduck.com/",
-			Careers: "https://motherduck.com/careers/",
-			About:   "https://motherduck.com/about-us/",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "MotherDuck",
+			BaseURL:    "https://motherduck.com/",
+			CareersURL: "https://motherduck.com/careers/",
+			AboutURL:   "https://motherduck.com/about-us/",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                81922043,
 				IDs:               nil,
@@ -3266,13 +3266,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "honeycomb.io",
-			Website: "https://www.honeycomb.io/",
-			Careers: "https://www.honeycomb.io/careers",
-			About:   "https://www.honeycomb.io/about",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "honeycomb.io",
+			BaseURL:    "https://www.honeycomb.io/",
+			CareersURL: "https://www.honeycomb.io/careers",
+			AboutURL:   "https://www.honeycomb.io/about",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                12957659,
 				IDs:               nil,
@@ -3373,13 +3373,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Meilisearch",
-			Website: "https://www.meilisearch.com/",
-			Careers: "https://www.meilisearch.com/careers",
-			About:   "https://www.meilisearch.com/blog",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Meilisearch",
+			BaseURL:    "https://www.meilisearch.com/",
+			CareersURL: "https://www.meilisearch.com/careers",
+			AboutURL:   "https://www.meilisearch.com/blog",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                13016868,
 				IDs:               nil,
@@ -3458,13 +3458,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Cloudera",
-			Website: "https://www.cloudera.com/",
-			Careers: "https://www.cloudera.com/careers",
-			About:   "https://www.cloudera.com/about",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Cloudera",
+			BaseURL:    "https://www.cloudera.com/",
+			CareersURL: "https://www.cloudera.com/careers",
+			AboutURL:   "https://www.cloudera.com/about",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                229433,
 				IDs:               nil,
@@ -3566,13 +3566,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Twilio",
-			Website: "https://www.twilio.com/",
-			Careers: "https://www.twilio.com/company/jobs",
-			About:   "https://www.twilio.com/company",
-			Blog:    "https://www.twilio.com/blog/developers",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Twilio",
+			BaseURL:    "https://www.twilio.com/",
+			CareersURL: "https://www.twilio.com/company/jobs",
+			AboutURL:   "https://www.twilio.com/company",
+			BlogURL:    "https://www.twilio.com/blog/developers",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                400528,
 				IDs:               []int{400528, 2425698},
@@ -3666,13 +3666,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Albatross AI",
-			Website: "https://usealbatross.ai/",
-			Careers: "https://apply.workable.com/usealbatross/",
-			About:   "https://usealbatross.ai/about-us",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Albatross AI",
+			BaseURL:    "https://usealbatross.ai/",
+			CareersURL: "https://apply.workable.com/usealbatross/",
+			AboutURL:   "https://usealbatross.ai/about-us",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                104747602,
 				IDs:               nil,
@@ -3750,13 +3750,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "DISQO",
-			Website: "https://www.disqo.com/",
-			Careers: "https://www.disqo.com/careers/",
-			About:   "",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "DISQO",
+			BaseURL:    "https://www.disqo.com/",
+			CareersURL: "https://www.disqo.com/careers/",
+			AboutURL:   "",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                12178400,
 				IDs:               nil,
@@ -3841,13 +3841,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "SpotOn",
-			Website: "https://www.spoton.com/",
-			Careers: "https://www.spoton.com/careers/",
-			About:   "",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "SpotOn",
+			BaseURL:    "https://www.spoton.com/",
+			CareersURL: "https://www.spoton.com/careers/",
+			AboutURL:   "",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1206743,
 				IDs:               nil,
@@ -3932,13 +3932,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Nebul",
-			Website: "https://nebul.com/",
-			Careers: "",
-			About:   "https://nebul.com/about/",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Nebul",
+			BaseURL:    "https://nebul.com/",
+			CareersURL: "",
+			AboutURL:   "https://nebul.com/about/",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                98627236,
 				IDs:               nil,
@@ -4017,13 +4017,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Botify",
-			Website: "https://www.botify.com/",
-			Careers: "https://www.botify.com/careers",
-			About:   "https://www.botify.com/about",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Botify",
+			BaseURL:    "https://www.botify.com/",
+			CareersURL: "https://www.botify.com/careers",
+			AboutURL:   "https://www.botify.com/about",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                2793570,
 				IDs:               nil,
@@ -4108,13 +4108,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Vara",
-			Website: "https://www.vara.ai/",
-			Careers: "https://www.vara.ai/careers",
-			About:   "https://www.vara.ai/about-us",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Vara",
+			BaseURL:    "https://www.vara.ai/",
+			CareersURL: "https://www.vara.ai/careers",
+			AboutURL:   "https://www.vara.ai/about-us",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                30122341,
 				IDs:               nil,
@@ -4193,13 +4193,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "LoopMe",
-			Website: "https://loopme.com/",
-			Careers: "https://loopme.com/careers/",
-			About:   "https://loopme.com/company/",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "LoopMe",
+			BaseURL:    "https://loopme.com/",
+			CareersURL: "https://loopme.com/careers/",
+			AboutURL:   "https://loopme.com/company/",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                2746023,
 				IDs:               nil,
@@ -4284,13 +4284,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "smartclip",
-			Website: "https://smartclip.tv/",
-			Careers: "https://smartclip.tv/jobs/",
-			About:   "https://smartclip.tv/about/",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "smartclip",
+			BaseURL:    "https://smartclip.tv/",
+			CareersURL: "https://smartclip.tv/jobs/",
+			AboutURL:   "https://smartclip.tv/about/",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                386206,
 				IDs:               nil,
@@ -4375,13 +4375,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Jump - Advisor AI",
-			Website: "https://jump.ai/",
-			Careers: "https://jump.ai/careers",
-			About:   "https://jump.ai/about",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Jump - Advisor AI",
+			BaseURL:    "https://jump.ai/",
+			CareersURL: "https://jump.ai/careers",
+			AboutURL:   "https://jump.ai/about",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                99834287,
 				IDs:               nil,
@@ -4459,13 +4459,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Fresh Clinics",
-			Website: "https://www.freshclinics.com/",
-			Careers: "https://www.freshclinics.com/careers",
-			About:   "https://www.freshclinics.com/about-us",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Fresh Clinics",
+			BaseURL:    "https://www.freshclinics.com/",
+			CareersURL: "https://www.freshclinics.com/careers",
+			AboutURL:   "https://www.freshclinics.com/about-us",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                67767012,
 				IDs:               nil,
@@ -4550,13 +4550,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Modern Milkman",
-			Website: "https://themodernmilkman.co.uk/",
-			Careers: "https://careers.themodernmilkman.co.uk/",
-			About:   "",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Modern Milkman",
+			BaseURL:    "https://themodernmilkman.co.uk/",
+			CareersURL: "https://careers.themodernmilkman.co.uk/",
+			AboutURL:   "",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                18846815,
 				IDs:               nil,
@@ -4641,13 +4641,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Cynet Security",
-			Website: "https://www.cynet.com/",
-			Careers: "https://www.cynet.com/careers/",
-			About:   "https://www.cynet.com/about-us/",
-			Blog:    "https://www.cynet.com/blog/",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Cynet Security",
+			BaseURL:    "https://www.cynet.com/",
+			CareersURL: "https://www.cynet.com/careers/",
+			AboutURL:   "https://www.cynet.com/about-us/",
+			BlogURL:    "https://www.cynet.com/blog/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                9363621,
 				IDs:               nil,
@@ -4725,13 +4725,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Ankorstore",
-			Website: "https://www.ankorstore.com/",
-			Careers: "https://company.ankorstore.com/",
-			About:   "https://company.ankorstore.com/about-us",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Ankorstore",
+			BaseURL:    "https://www.ankorstore.com/",
+			CareersURL: "https://company.ankorstore.com/",
+			AboutURL:   "https://company.ankorstore.com/about-us",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                46903379,
 				IDs:               nil,
@@ -4817,13 +4817,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "PeakTew",
-			Website: "https://www.peaktew.com/",
-			Careers: "",
-			About:   "https://www.peaktew.com/about-us",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "PeakTew",
+			BaseURL:    "https://www.peaktew.com/",
+			CareersURL: "",
+			AboutURL:   "https://www.peaktew.com/about-us",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                101096804,
 				IDs:               nil,
@@ -4901,13 +4901,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "CloudTalk",
-			Website: "https://www.cloudtalk.io/",
-			Careers: "https://www.cloudtalk.io/careers/",
-			About:   "",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "CloudTalk",
+			BaseURL:    "https://www.cloudtalk.io/",
+			CareersURL: "https://www.cloudtalk.io/careers/",
+			AboutURL:   "",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                17944841,
 				IDs:               nil,
@@ -4993,13 +4993,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Back Market",
-			Website: "https://www.backmarket.com/",
-			Careers: "",
-			About:   "https://www.backmarket.com/about-us",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Back Market",
+			BaseURL:    "https://www.backmarket.com/",
+			CareersURL: "",
+			AboutURL:   "https://www.backmarket.com/about-us",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                4793443,
 				IDs:               nil,
@@ -5085,13 +5085,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Zesty",
-			Website: "https://zesty.co/",
-			Careers: "https://zesty.co/careers/",
-			About:   "https://zesty.co/about-us/",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Zesty",
+			BaseURL:    "https://zesty.co/",
+			CareersURL: "https://zesty.co/careers/",
+			AboutURL:   "https://zesty.co/about-us/",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                19106475,
 				IDs:               nil,
@@ -5176,13 +5176,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Loyal Guru",
-			Website: "https://www.loyal.guru/",
-			Careers: "https://www.loyal.guru/about-us/",
-			About:   "https://jobs.loyal.guru/",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Loyal Guru",
+			BaseURL:    "https://www.loyal.guru/",
+			CareersURL: "https://www.loyal.guru/about-us/",
+			AboutURL:   "https://jobs.loyal.guru/",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                5222128,
 				IDs:               nil,
@@ -5260,13 +5260,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Vyro",
-			Website: "https://vyro.ai/",
-			Careers: "https://vyro.ai/careers",
-			About:   "https://vyro.ai/about",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Vyro",
+			BaseURL:    "https://vyro.ai/",
+			CareersURL: "https://vyro.ai/careers",
+			AboutURL:   "https://vyro.ai/about",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                64501680,
 				IDs:               nil,
@@ -5344,13 +5344,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Foxglove",
-			Website: "https://foxglove.dev/",
-			Careers: "https://foxglove.dev/careers",
-			About:   "https://foxglove.dev/about",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Foxglove",
+			BaseURL:    "https://foxglove.dev/",
+			CareersURL: "https://foxglove.dev/careers",
+			AboutURL:   "https://foxglove.dev/about",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                72660627,
 				IDs:               nil,
@@ -5429,13 +5429,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Sky",
-			Website: "https://www.sky.com/",
-			Careers: "https://careers.sky.com/",
-			About:   "https://careers.sky.com/about",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Sky",
+			BaseURL:    "https://www.sky.com/",
+			CareersURL: "https://careers.sky.com/",
+			AboutURL:   "https://careers.sky.com/about",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                3318,
 				IDs:               []int{3318, 10983400},
@@ -5520,13 +5520,13 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 		},
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Reducate",
-			Website: "https://www.reducate.com/",
-			Careers: "https://www.reducate.com/careers/",
-			About:   "https://www.reducate.com/about-us/",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Reducate",
+			BaseURL:    "https://www.reducate.com/",
+			CareersURL: "https://www.reducate.com/careers/",
+			AboutURL:   "https://www.reducate.com/about-us/",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                85115348,
 				IDs:               nil,
@@ -5609,10 +5609,10 @@ func companies22Shard() []domain.CompanyProfile {
 		//	ID:      0,  // system
 		//	Type:    "", // system
 		//	Name:    "",
-		//	Website: "",
-		//	Careers: "",
-		//	About:   "",
-		//	Blog:    "",
+		//	BaseURL: "",
+		//	CareersURL: "",
+		//	AboutURL:   "",
+		//	BlogURL:    "",
 		//	LinkedInProfile: domain.LinkedInProfile{
 		//		ID:                0,
 		//		Alias:             "",

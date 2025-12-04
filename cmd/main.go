@@ -398,9 +398,14 @@ func main() {
 		DELETE("/api/v1/companies-and-connections/companies.json", cacController.DeleteCompany)
 
 	r.
-		// Unsafe API endpoints that can be changed without any notice.
+		// Unsafe API endpoints for the browser extension that can be changed without any notice.
 		GET("/api/v1/unsafe/companies.json", organizerController.UnsafeCompanies).
 		GET("/api/v1/unsafe/vacancies.json", organizerController.UnsafeVacancies)
+
+	r.
+		// Unsafe API endpoints for the new v3 functionality that can be changed without any notice.
+		GET("/api/v1/unsafe/:language/companies.json", organizerController.UnsafeCompaniesV3).
+		GET("/api/v1/unsafe/:language/vacancies.json", organizerController.UnsafeVacanciesV3)
 
 	r.GET("/analytics", found("https://plausible.io/readytotouch.com", false))
 	r.GET("/plausible", found("https://plausible.io/readytotouch.com", false))

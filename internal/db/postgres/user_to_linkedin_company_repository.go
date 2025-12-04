@@ -17,15 +17,15 @@ func NewUserToLinkedInCompanyRepository(db *Database) *UserToLinkedInCompanyRepo
 	return &UserToLinkedInCompanyRepository{db: db}
 }
 
-func (r *UserToLinkedInCompanyRepository) List(ctx context.Context, userID int64) ([]domain.LinkedInProfileResponse, error) {
+func (r *UserToLinkedInCompanyRepository) List(ctx context.Context, userID int64) ([]domain.LinkedInProfileShortResponse, error) {
 	rows, err := r.db.Queries().WipUserLinkedInCompanies(ctx, userID)
 	if err != nil {
 		return nil, err
 	}
 
-	result := make([]domain.LinkedInProfileResponse, len(rows))
+	result := make([]domain.LinkedInProfileShortResponse, len(rows))
 	for i, row := range rows {
-		result[i] = domain.LinkedInProfileResponse{
+		result[i] = domain.LinkedInProfileShortResponse{
 			ID:    row.ID,
 			Alias: row.VanityName,
 			Name:  row.Name,

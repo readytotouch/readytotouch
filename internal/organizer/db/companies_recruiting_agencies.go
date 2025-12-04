@@ -6,7 +6,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 	return []domain.CompanyProfile{
 		{
 			Name:    "La Fosse",
-			Website: "https://www.lafosse.com/",
+			BaseURL: "https://www.lafosse.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                103069,
 				IDs:               nil,
@@ -21,7 +21,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Zeektek",
-			Website: "https://www.zeektek.com/",
+			BaseURL: "https://www.zeektek.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                15205156,
 				IDs:               nil,
@@ -36,7 +36,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Propel",
-			Website: "https://www.propel-together.com/",
+			BaseURL: "https://www.propel-together.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                41226,
 				IDs:               nil,
@@ -51,7 +51,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Undelucram.ro",
-			Website: "https://www.undelucram.ro/",
+			BaseURL: "https://www.undelucram.ro/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                18046146,
 				IDs:               nil,
@@ -66,7 +66,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Adecco",
-			Website: "https://www.adecco.com/",
+			BaseURL: "https://www.adecco.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1104359,
 				IDs:               []int{598768, 1104359},
@@ -81,7 +81,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Fruition Group",
-			Website: "https://www.fruitiongroup.com/",
+			BaseURL: "https://www.fruitiongroup.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1403805,
 				IDs:               nil,
@@ -96,7 +96,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "micro1",
-			Website: "https://www.micro1.ai/",
+			BaseURL: "https://www.micro1.ai/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                81490090,
 				IDs:               nil,
@@ -111,7 +111,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "PrincePerelson and Associates",
-			Website: "https://perelson.com/",
+			BaseURL: "https://perelson.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                70603,
 				IDs:               nil,
@@ -126,7 +126,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Fynity",
-			Website: "https://www.fynitytalent.io/",
+			BaseURL: "https://www.fynitytalent.io/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                963360,
 				IDs:               nil,
@@ -141,7 +141,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "TieTalent",
-			Website: "https://tietalent.com/",
+			BaseURL: "https://tietalent.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                11010661,
 				IDs:               nil,
@@ -156,7 +156,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Akraya, Inc.",
-			Website: "https://www.akraya.com/",
+			BaseURL: "https://www.akraya.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                41771,
 				IDs:               nil,
@@ -171,7 +171,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Burns Sheehan",
-			Website: "https://www.burnssheehan.co.uk/",
+			BaseURL: "https://www.burnssheehan.co.uk/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                103683,
 				IDs:               nil,
@@ -186,7 +186,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Radley James",
-			Website: "https://radleyjames.com/",
+			BaseURL: "https://radleyjames.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1116353,
 				IDs:               nil,
@@ -201,7 +201,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Spectrum IT Recruitment",
-			Website: "https://www.spectrumit.co.uk/",
+			BaseURL: "https://www.spectrumit.co.uk/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                206206,
 				IDs:               nil,
@@ -216,7 +216,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "RJC Group",
-			Website: "https://www.rjcgroup.co.uk/",
+			BaseURL: "https://www.rjcgroup.co.uk/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                10333877,
 				IDs:               nil,
@@ -231,7 +231,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Identify Solutions",
-			Website: "https://identifysolutions.co.uk/",
+			BaseURL: "https://identifysolutions.co.uk/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                19023795,
 				IDs:               nil,
@@ -246,7 +246,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "IDR, Inc.",
-			Website: "https://www.idr-inc.com/",
+			BaseURL: "https://www.idr-inc.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                259589,
 				IDs:               nil,
@@ -261,7 +261,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Phaxis",
-			Website: "https://phaxis.com/",
+			BaseURL: "https://phaxis.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                106083,
 				IDs:               nil,
@@ -276,7 +276,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Liberty Personnel Services, Inc.",
-			Website: "https://libertyjobs.com/",
+			BaseURL: "https://libertyjobs.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                40956,
 				IDs:               nil,
@@ -291,7 +291,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Robert Half",
-			Website: "https://www.roberthalf.com/",
+			BaseURL: "https://www.roberthalf.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1681,
 				IDs:               nil,
@@ -306,7 +306,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Cpl",
-			Website: "https://www.cpl.com/",
+			BaseURL: "https://www.cpl.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                163237,
 				IDs:               []int{163237, 333317, 486582, 830729, 868838, 1134057, 14831142, 15251866, 64752574, 69269271, 87085983, 94292973},
@@ -321,7 +321,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "HireArt",
-			Website: "https://www.hireart.com/",
+			BaseURL: "https://www.hireart.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                2506549,
 				IDs:               nil,
@@ -336,7 +336,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Solomon Page",
-			Website: "https://www.solomonpage.com/",
+			BaseURL: "https://www.solomonpage.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                14352,
 				IDs:               nil,
@@ -351,7 +351,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Seer",
-			Website: "https://www.seerrecruit.com/",
+			BaseURL: "https://www.seerrecruit.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                26560101,
 				IDs:               nil,
@@ -366,7 +366,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Robert Walters",
-			Website: "https://www.robertwalters.co.uk/",
+			BaseURL: "https://www.robertwalters.co.uk/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                165757,
 				IDs:               nil,
@@ -381,7 +381,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Client Server",
-			Website: "https://www.client-server.com/",
+			BaseURL: "https://www.client-server.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                99339,
 				IDs:               nil,
@@ -396,7 +396,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "RED Global",
-			Website: "https://www.redglobal.com/",
+			BaseURL: "https://www.redglobal.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                15014,
 				IDs:               nil,
@@ -411,7 +411,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Signify Technology",
-			Website: "https://www.signifytechnology.com/",
+			BaseURL: "https://www.signifytechnology.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                15087386,
 				IDs:               nil,
@@ -426,7 +426,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Finna Group",
-			Website: "https://www.finnagroup.io/",
+			BaseURL: "https://www.finnagroup.io/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                67969725,
 				IDs:               nil,
@@ -441,7 +441,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Lensa",
-			Website: "https://lensa.com/",
+			BaseURL: "https://lensa.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                5192530,
 				IDs:               nil,
@@ -456,7 +456,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "W3Global",
-			Website: "https://www.w3global.com/",
+			BaseURL: "https://www.w3global.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1286891,
 				IDs:               nil,
@@ -471,7 +471,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Uplers",
-			Website: "https://www.uplers.com/",
+			BaseURL: "https://www.uplers.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                51692521,
 				IDs:               nil,
@@ -486,7 +486,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Coopers Group AG",
-			Website: "https://www.coopers.ch/",
+			BaseURL: "https://www.coopers.ch/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                2282474,
 				IDs:               nil,
@@ -501,7 +501,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "UMATR",
-			Website: "https://www.umatr.io/",
+			BaseURL: "https://www.umatr.io/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                70926319,
 				IDs:               nil,
@@ -516,7 +516,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Edison Smart®",
-			Website: "https://edisonsmart.com/",
+			BaseURL: "https://edisonsmart.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                76357488,
 				IDs:               nil,
@@ -531,7 +531,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Ambition",
-			Website: "https://www.ambition.com.au/",
+			BaseURL: "https://www.ambition.com.au/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                3842697,
 				IDs:               nil,
@@ -546,7 +546,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Michael Page",
-			Website: "https://www.michaelpage.com/",
+			BaseURL: "https://www.michaelpage.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                3476,
 				IDs:               nil,
@@ -561,7 +561,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Morgan McKinley",
-			Website: "https://www.morganmckinley.com/",
+			BaseURL: "https://www.morganmckinley.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                16175,
 				IDs:               nil,
@@ -576,7 +576,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Spectrum Search",
-			Website: "https://www.spectrum-search.com/",
+			BaseURL: "https://www.spectrum-search.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                12581649,
 				IDs:               nil,
@@ -591,7 +591,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "LHH",
-			Website: "https://www.lhh.com/",
+			BaseURL: "https://www.lhh.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                5235,
 				IDs:               nil,
@@ -606,7 +606,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Swisslinx",
-			Website: "https://www.swisslinx.com/",
+			BaseURL: "https://www.swisslinx.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                50444,
 				IDs:               nil,
@@ -621,7 +621,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Randstad Switzerland",
-			Website: "https://www.randstad.ch/",
+			BaseURL: "https://www.randstad.ch/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                2127592,
 				IDs:               nil,
@@ -636,7 +636,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Durlston Partners",
-			Website: "https://durlstonpartners.com/",
+			BaseURL: "https://durlstonpartners.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1113019,
 				IDs:               nil,
@@ -651,7 +651,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Anson McCade",
-			Website: "https://www.ansonmccade.com/",
+			BaseURL: "https://www.ansonmccade.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                31392,
 				IDs:               nil,
@@ -666,7 +666,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Soni",
-			Website: "https://www.soniresources.com/",
+			BaseURL: "https://www.soniresources.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                10599076,
 				IDs:               nil,
@@ -681,7 +681,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Oliver James",
-			Website: "https://www.oliverjames.com/",
+			BaseURL: "https://www.oliverjames.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                212201,
 				IDs:               nil,
@@ -696,7 +696,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Concero",
-			Website: "https://concero.com/",
+			BaseURL: "https://concero.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                2699082,
 				IDs:               nil,
@@ -711,7 +711,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "OFS",
-			Website: "https://weareofs.com/",
+			BaseURL: "https://weareofs.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                103150231,
 				IDs:               nil,
@@ -726,7 +726,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Oliver Bernard",
-			Website: "https://www.oliverbernard.com/",
+			BaseURL: "https://www.oliverbernard.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                798377,
 				IDs:               nil,
@@ -741,7 +741,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Talent Groups",
-			Website: "https://www.talentgroups.com/",
+			BaseURL: "https://www.talentgroups.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                51701268,
 				IDs:               nil,
@@ -756,7 +756,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Workana",
-			Website: "https://www.workana.com/",
+			BaseURL: "https://www.workana.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                2524324,
 				IDs:               nil,
@@ -771,7 +771,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Red Oak Technologies",
-			Website: "https://www.redoaktech.com/",
+			BaseURL: "https://www.redoaktech.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                47475,
 				IDs:               nil,
@@ -786,7 +786,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "iXceed Solutions",
-			Website: "https://ixceed-solutions.com/",
+			BaseURL: "https://ixceed-solutions.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1626442,
 				IDs:               nil,
@@ -801,7 +801,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Vallum Associates",
-			Website: "https://vallumassociates.com/",
+			BaseURL: "https://vallumassociates.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                10348811,
 				IDs:               nil,
@@ -816,7 +816,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Russell Tobin",
-			Website: "https://russelltobin.com/",
+			BaseURL: "https://russelltobin.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                827183,
 				IDs:               nil,
@@ -831,7 +831,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Gazelle Global",
-			Website: "https://www.gazellegc.com/",
+			BaseURL: "https://www.gazellegc.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                9312644,
 				IDs:               nil,
@@ -846,7 +846,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Harvey Nash",
-			Website: "https://www.harveynash.co.uk/",
+			BaseURL: "https://www.harveynash.co.uk/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                164131,
 				IDs:               []int{26199, 28173, 164131, 2110112, 72217697},
@@ -861,7 +861,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Ocho",
-			Website: "https://www.ochopeople.com/",
+			BaseURL: "https://www.ochopeople.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                89286373,
 				IDs:               nil,
@@ -876,7 +876,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Oscar",
-			Website: "https://www.oscar-tech.com/",
+			BaseURL: "https://www.oscar-tech.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                64981,
 				IDs:               nil,
@@ -891,7 +891,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Orbis Group",
-			Website: "https://weareorbis.com/",
+			BaseURL: "https://weareorbis.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                3522089,
 				IDs:               nil,
@@ -906,7 +906,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Sanderson",
-			Website: "https://www.sandersonplc.com/",
+			BaseURL: "https://www.sandersonplc.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                279271,
 				IDs:               []int{279271, 393988},
@@ -921,7 +921,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Pro5.ai",
-			Website: "https://www.pro5.ai/",
+			BaseURL: "https://www.pro5.ai/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                71633800,
 				IDs:               nil,
@@ -936,7 +936,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "ASK Consulting",
-			Website: "https://www.askconsulting.com/",
+			BaseURL: "https://www.askconsulting.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                388480,
 				IDs:               nil,
@@ -951,7 +951,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Attis",
-			Website: "https://attisglobal.com/",
+			BaseURL: "https://attisglobal.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                101159591,
 				IDs:               nil,
@@ -966,7 +966,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Peoplebank",
-			Website: "https://www.peoplebank.com.au/",
+			BaseURL: "https://www.peoplebank.com.au/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                27058,
 				IDs:               []int{27058, 3549674},
@@ -981,7 +981,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Roc Search",
-			Website: "https://www.roc-search.com/",
+			BaseURL: "https://www.roc-search.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                200680,
 				IDs:               nil,
@@ -996,7 +996,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Reqroute, Inc",
-			Website: "https://reqroute.com/",
+			BaseURL: "https://reqroute.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                963739,
 				IDs:               nil,
@@ -1011,7 +1011,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "KTek Resourcing",
-			Website: "https://www.ktekresourcing.com/",
+			BaseURL: "https://www.ktekresourcing.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1199482,
 				IDs:               nil,
@@ -1026,7 +1026,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "CyberCoders",
-			Website: "https://www.cybercoders.com/",
+			BaseURL: "https://www.cybercoders.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                21836,
 				IDs:               nil,
@@ -1041,7 +1041,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Albert Bow",
-			Website: "https://albertbow.com/",
+			BaseURL: "https://albertbow.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                18450531,
 				IDs:               nil,
@@ -1056,7 +1056,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Andiamo",
-			Website: "https://andiamogo.com/",
+			BaseURL: "https://andiamogo.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                32309,
 				IDs:               nil,
@@ -1071,7 +1071,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Glocomms",
-			Website: "https://www.glocomms.com/",
+			BaseURL: "https://www.glocomms.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                3123217,
 				IDs:               nil,
@@ -1086,7 +1086,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Xcede",
-			Website: "https://www.xcede.com/",
+			BaseURL: "https://www.xcede.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                79018,
 				IDs:               nil,
@@ -1101,7 +1101,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Somewhere",
-			Website: "https://somewhere.com/",
+			BaseURL: "https://somewhere.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1810488,
 				IDs:               nil,
@@ -1116,7 +1116,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Lawrence Harvey",
-			Website: "https://www.lawrenceharvey.com/",
+			BaseURL: "https://www.lawrenceharvey.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                144455,
 				IDs:               nil,
@@ -1131,7 +1131,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Calyptus",
-			Website: "https://www.calyptus.co/",
+			BaseURL: "https://www.calyptus.co/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                78996142,
 				IDs:               nil,
@@ -1146,7 +1146,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Halian",
-			Website: "https://www.halian.com/",
+			BaseURL: "https://www.halian.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                26946,
 				IDs:               []int{26946, 82644349},
@@ -1161,7 +1161,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Harrington Starr",
-			Website: "https://www.harringtonstarr.com/",
+			BaseURL: "https://www.harringtonstarr.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1032582,
 				IDs:               nil,
@@ -1176,7 +1176,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Franklin Bates",
-			Website: "https://www.franklinbates.com/",
+			BaseURL: "https://www.franklinbates.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                3226252,
 				IDs:               nil,
@@ -1191,7 +1191,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Accuro",
-			Website: "https://accurogroup.com/",
+			BaseURL: "https://accurogroup.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                251336,
 				IDs:               nil,
@@ -1206,7 +1206,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Salt",
-			Website: "https://welovesalt.com/",
+			BaseURL: "https://welovesalt.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                970538,
 				IDs:               []int{970538, 2609142},
@@ -1221,7 +1221,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "The Adecco Group",
-			Website: "https://www.adeccogroup.com/",
+			BaseURL: "https://www.adeccogroup.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1929,
 				IDs:               []int{1929, 1104359, 2736403, 2807805},
@@ -1236,7 +1236,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Optimus Search",
-			Website: "https://www.optimussearch.com/",
+			BaseURL: "https://www.optimussearch.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1592017,
 				IDs:               nil,
@@ -1251,7 +1251,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Canvendor",
-			Website: "https://www.canvendor.com/",
+			BaseURL: "https://www.canvendor.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                7931934,
 				IDs:               nil,
@@ -1266,7 +1266,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Maze",
-			Website: "https://www.mazegroup.io/",
+			BaseURL: "https://www.mazegroup.io/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                98753730,
 				IDs:               nil,
@@ -1281,7 +1281,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "GCS",
-			Website: "https://www.gcstechtalent.com/",
+			BaseURL: "https://www.gcstechtalent.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                163945,
 				IDs:               nil,
@@ -1296,7 +1296,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Holistic Partners, Inc",
-			Website: "https://holistic-partners.com/",
+			BaseURL: "https://holistic-partners.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                9313657,
 				IDs:               nil,
@@ -1311,7 +1311,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Adria Solutions Ltd",
-			Website: "https://www.adriasolutions.co.uk/",
+			BaseURL: "https://www.adriasolutions.co.uk/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                2510789,
 				IDs:               nil,
@@ -1326,7 +1326,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Searchability®",
-			Website: "https://searchability.co.uk/",
+			BaseURL: "https://searchability.co.uk/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                2568439,
 				IDs:               []int{2568439, 73895128, 86641560},
@@ -1341,7 +1341,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Harnham",
-			Website: "https://www.harnham.com/",
+			BaseURL: "https://www.harnham.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                280603,
 				IDs:               nil,
@@ -1356,7 +1356,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Huxley",
-			Website: "https://www.huxley.com/",
+			BaseURL: "https://www.huxley.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                7355,
 				IDs:               nil,
@@ -1371,7 +1371,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Airswift",
-			Website: "https://www.airswift.com/",
+			BaseURL: "https://www.airswift.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1227813,
 				IDs:               []int{1227813, 10403813, 10773971},
@@ -1386,7 +1386,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Spilberg",
-			Website: "https://spilberg.com/",
+			BaseURL: "https://spilberg.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                5025358,
 				IDs:               nil,
@@ -1401,7 +1401,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "Andela",
-			Website: "https://www.andela.com/",
+			BaseURL: "https://www.andela.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                5351527,
 				IDs:               nil,
@@ -1416,7 +1416,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		},
 		{
 			Name:    "HeartCentrix Solutions",
-			Website: "https://heartcentrix.com/",
+			BaseURL: "https://heartcentrix.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                82388444,
 				IDs:               nil,
@@ -1432,7 +1432,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Nicoll Curtin",
-			Website: "https://www.nicollcurtin.com/",
+			BaseURL: "https://www.nicollcurtin.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                36486,
 				IDs:               nil,
@@ -1448,7 +1448,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Realm",
-			Website: "https://www.realmgroup.io/",
+			BaseURL: "https://www.realmgroup.io/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                86253160,
 				IDs:               nil,
@@ -1464,7 +1464,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Amicus",
-			Website: "https://www.amicusjobs.com/",
+			BaseURL: "https://www.amicusjobs.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                11058344,
 				IDs:               nil,
@@ -1480,7 +1480,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Verigent",
-			Website: "https://verigent.com/",
+			BaseURL: "https://verigent.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                127588,
 				IDs:               nil,
@@ -1496,7 +1496,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "eTeam",
-			Website: "https://www.eteaminc.com/",
+			BaseURL: "https://www.eteaminc.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                61677,
 				IDs:               nil,
@@ -1512,7 +1512,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Luflox",
-			Website: "https://www.luflox.com/",
+			BaseURL: "https://www.luflox.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                76908805,
 				IDs:               nil,
@@ -1528,7 +1528,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "X-Team",
-			Website: "https://x-team.com/",
+			BaseURL: "https://x-team.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                837266,
 				IDs:               nil,
@@ -1544,7 +1544,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Snatch UP",
-			Website: "https://www.snatch-up.com/",
+			BaseURL: "https://www.snatch-up.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                101896900,
 				IDs:               nil,
@@ -1561,7 +1561,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Vaco by Highspring",
-			Website: "https://www.vaco.com/",
+			BaseURL: "https://www.vaco.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                106804514,
 				IDs:               nil,
@@ -1577,7 +1577,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "AAA Global",
-			Website: "https://aaaglobal.co.uk/",
+			BaseURL: "https://aaaglobal.co.uk/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                35445621,
 				IDs:               nil,
@@ -1593,7 +1593,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Dataworks",
-			Website: "https://mydataworks.io/",
+			BaseURL: "https://mydataworks.io/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                77873522,
 				IDs:               nil,
@@ -1609,7 +1609,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "TekRek",
-			Website: "https://tekrek.io/",
+			BaseURL: "https://tekrek.io/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                67558642,
 				IDs:               nil,
@@ -1625,7 +1625,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Arc.dev",
-			Website: "https://arc.dev/",
+			BaseURL: "https://arc.dev/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                20409460,
 				IDs:               nil,
@@ -1641,7 +1641,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "EPITEC",
-			Website: "https://epitec.com/",
+			BaseURL: "https://epitec.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                25461,
 				IDs:               nil,

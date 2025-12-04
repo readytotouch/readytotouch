@@ -24,42 +24,42 @@
     <li>
         <div class="company-name">{%s company.Name %}</div>
         <div class="links">
-            {% if company.Careers == "" %}
-                <a href='{%s googleSearchOnSite(hostname(company.Website), "Careers") %}' target="_blank">
-                    <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> site:{%s hostname(company.Website) %} "Careers"
+            {% if company.CareersURL == "" %}
+                <a href='{%s googleSearchOnSite(hostname(company.BaseURL), "Careers") %}' target="_blank">
+                    <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> site:{%s hostname(company.BaseURL) %} "Careers"
                 </a>
                 <a href='{%s googleSearch(company.Name + " " + "Careers") %}' target="_blank">
                     <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> {%s company.Name %} "Careers"
                 </a>
                 <hr>
             {% endif %}
-            {% if company.About == "" %}
-                <a href='{%s googleSearchOnSite(hostname(company.Website), "About") %}' target="_blank">
-                    <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> site:{%s hostname(company.Website) %} "About"
+            {% if company.AboutURL == "" %}
+                <a href='{%s googleSearchOnSite(hostname(company.BaseURL), "About") %}' target="_blank">
+                    <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> site:{%s hostname(company.BaseURL) %} "About"
                 </a>
                 <a href='{%s googleSearch(company.Name + " " + "About") %}' target="_blank">
                     <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> {%s company.Name %} "About"
                 </a>
                 <hr>
             {% endif %}
-            {% if company.Blog == "" %}
-                <a href='{%s googleSearchOnSite(hostname(company.Website), "Development Blog") %}' target="_blank">
-                    <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> site:{%s hostname(company.Website) %} "Development Blog"
+            {% if company.BlogURL == "" %}
+                <a href='{%s googleSearchOnSite(hostname(company.BaseURL), "Development Blog") %}' target="_blank">
+                    <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> site:{%s hostname(company.BaseURL) %} "Development Blog"
                 </a>
                 <a href='{%s googleSearch(company.Name + " " + "Development Blog") %}' target="_blank">
                     <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> {%s company.Name %} "Development Blog"
                 </a>
                 <br>
-                <a href='{%s googleSearchOnSite(hostname(company.Website), "Tech Blog") %}' target="_blank">
-                    <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> site:{%s hostname(company.Website) %} "Tech Blog"
+                <a href='{%s googleSearchOnSite(hostname(company.BaseURL), "Tech Blog") %}' target="_blank">
+                    <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> site:{%s hostname(company.BaseURL) %} "Tech Blog"
                 </a>
                 <a href='{%s googleSearch(company.Name + " " + "Tech Blog") %}' target="_blank">
                     <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> {%s company.Name %} "Tech Blog"
                 </a>
             {% endif %}
-            {% if company.ReferralProgram == "" %}
-                <a href='{%s googleSearchOnSite(hostname(company.Website), "Referral Program") %}' target="_blank">
-                    <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> site:{%s hostname(company.Website) %} "Referral Program"
+            {% if company.ReferralProgramURL == "" %}
+                <a href='{%s googleSearchOnSite(hostname(company.BaseURL), "Referral Program") %}' target="_blank">
+                    <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> site:{%s hostname(company.BaseURL) %} "Referral Program"
                 </a>
                 <a href='{%s googleSearch(company.Name + " " + "Referral Program") %}' target="_blank">
                     <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> {%s company.Name %} "Referral Program"

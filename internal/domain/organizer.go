@@ -142,3 +142,38 @@ var (
 		Description:           "ReadyToTouch helps you find companies that use Mojo. Improve your chances of getting a job by connecting with Mojo developers and receiving further recommendations.",
 	}
 )
+
+func (o Organizer) Empty() bool {
+	return o.Alias == ""
+}
+
+func FindOrganizer(s string) Organizer {
+	switch s {
+	case OrganizerGolang.Alias:
+		return OrganizerGolang
+	case OrganizerRust.Alias:
+		return OrganizerRust
+	case OrganizerZig.Alias:
+		return OrganizerZig
+	case OrganizerScala.Alias:
+		return OrganizerScala
+	case OrganizerElixir.Alias:
+		return OrganizerElixir
+	case OrganizerClojure.Alias:
+		return OrganizerClojure
+	case OrganizerHaskell.Alias:
+		return OrganizerHaskell
+	case OrganizerErlang.Alias:
+		return OrganizerErlang
+	case OrganizerFSharp.Alias:
+		return OrganizerFSharp
+	case OrganizerOCaml.Alias:
+		return OrganizerOCaml
+	case OrganizerGleam.Alias:
+		return OrganizerGleam
+	case OrganizerMojo.Alias:
+		return OrganizerMojo
+	default:
+		return Organizer{}
+	}
+}

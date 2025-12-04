@@ -134,26 +134,26 @@
     </figcaption>
   </figure>
 	<div class="card__top-links">
-		<a href="{%s company.Website %}" target="_blank" class="card__top-link button-link">Website</a>
-		{% if company.Careers == "" %}
+		<a href="{%s company.BaseURL %}" target="_blank" class="card__top-link button-link">Website</a>
+		{% if company.CareersURL == "" %}
 			<span class="card__top-link button-link disabled">Careers</span>
 		{% else %}
-			<a href="{%s company.Careers %}" target="_blank" class="card__top-link button-link">Careers</a>
+			<a href="{%s company.CareersURL %}" target="_blank" class="card__top-link button-link">Careers</a>
 		{% endif %}
-		{% if company.About == "" %}
+		{% if company.AboutURL == "" %}
 			<span class="card__top-link button-link disabled">About</span>
 		{% else %}
-			<a href="{%s company.About %}" target="_blank" class="card__top-link button-link">About</a>
+			<a href="{%s company.AboutURL %}" target="_blank" class="card__top-link button-link">About</a>
 		{% endif %}
-		{% if company.Blog == "" %}
+		{% if company.BlogURL == "" %}
 			<span class="card__top-link button-link disabled">Dev Blog</span>
 		{% else %}
-			<a href="{%s company.Blog %}" target="_blank" class="card__top-link button-link">Dev Blog</a>
+			<a href="{%s company.BlogURL %}" target="_blank" class="card__top-link button-link">Dev Blog</a>
 		{% endif %}
-		{% if company.ReferralProgram == "" %}
+		{% if company.ReferralProgramURL == "" %}
 		    <span class="card__top-link button-link disabled">Referral program</span>
 		{% else %}
-		    <a href="{%s company.ReferralProgram %}" target="_blank" class="card__top-link button-link">Referral program</a>
+		    <a href="{%s company.ReferralProgramURL %}" target="_blank" class="card__top-link button-link">Referral program</a>
 		{% endif %}
 	</div>
   <div class="card__info">
@@ -664,7 +664,7 @@
 					height="20"
 					src="/assets/images/pages/organizer/whois.svg"
 				/>
-				<a href="{%s whoisURL(company.Website) %}" target="_blank" class="button-link card__links-link">Whois</a>
+				<a href="{%s whoisURL(company.BaseURL) %}" target="_blank" class="button-link card__links-link">Whois</a>
 			</li>
 			<li class="card__links-item">
 				<img
@@ -674,7 +674,7 @@
 					height="20"
 					src="/assets/images/pages/organizer/similarweb.svg"
 				/>
-				<a href="{%s similarwebURL(company.Website) %}" target="_blank" class="button-link card__links-link">SimilarWeb</a>
+				<a href="{%s similarwebURL(company.BaseURL) %}" target="_blank" class="button-link card__links-link">SimilarWeb</a>
 			</li>
 			{% if company.OttaProfileSlug == "" %}
 			<li class="card__links-item card__links-item--disabled">

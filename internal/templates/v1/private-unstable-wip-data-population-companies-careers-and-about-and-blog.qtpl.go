@@ -61,13 +61,13 @@ func StreamDataPopulationCompaniesCareersAndAboutAndBlog(qw422016 *qt422016.Writ
 		qw422016.N().S(`</div>
         <div class="links">
             `)
-		if company.Careers == "" {
+		if company.CareersURL == "" {
 			qw422016.N().S(`
                 <a href='`)
-			qw422016.E().S(googleSearchOnSite(hostname(company.Website), "Careers"))
+			qw422016.E().S(googleSearchOnSite(hostname(company.BaseURL), "Careers"))
 			qw422016.N().S(`' target="_blank">
                     <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> site:`)
-			qw422016.E().S(hostname(company.Website))
+			qw422016.E().S(hostname(company.BaseURL))
 			qw422016.N().S(` "Careers"
                 </a>
                 <a href='`)
@@ -82,13 +82,13 @@ func StreamDataPopulationCompaniesCareersAndAboutAndBlog(qw422016 *qt422016.Writ
 		}
 		qw422016.N().S(`
             `)
-		if company.About == "" {
+		if company.AboutURL == "" {
 			qw422016.N().S(`
                 <a href='`)
-			qw422016.E().S(googleSearchOnSite(hostname(company.Website), "About"))
+			qw422016.E().S(googleSearchOnSite(hostname(company.BaseURL), "About"))
 			qw422016.N().S(`' target="_blank">
                     <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> site:`)
-			qw422016.E().S(hostname(company.Website))
+			qw422016.E().S(hostname(company.BaseURL))
 			qw422016.N().S(` "About"
                 </a>
                 <a href='`)
@@ -103,13 +103,13 @@ func StreamDataPopulationCompaniesCareersAndAboutAndBlog(qw422016 *qt422016.Writ
 		}
 		qw422016.N().S(`
             `)
-		if company.Blog == "" {
+		if company.BlogURL == "" {
 			qw422016.N().S(`
                 <a href='`)
-			qw422016.E().S(googleSearchOnSite(hostname(company.Website), "Development Blog"))
+			qw422016.E().S(googleSearchOnSite(hostname(company.BaseURL), "Development Blog"))
 			qw422016.N().S(`' target="_blank">
                     <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> site:`)
-			qw422016.E().S(hostname(company.Website))
+			qw422016.E().S(hostname(company.BaseURL))
 			qw422016.N().S(` "Development Blog"
                 </a>
                 <a href='`)
@@ -121,10 +121,10 @@ func StreamDataPopulationCompaniesCareersAndAboutAndBlog(qw422016 *qt422016.Writ
                 </a>
                 <br>
                 <a href='`)
-			qw422016.E().S(googleSearchOnSite(hostname(company.Website), "Tech Blog"))
+			qw422016.E().S(googleSearchOnSite(hostname(company.BaseURL), "Tech Blog"))
 			qw422016.N().S(`' target="_blank">
                     <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> site:`)
-			qw422016.E().S(hostname(company.Website))
+			qw422016.E().S(hostname(company.BaseURL))
 			qw422016.N().S(` "Tech Blog"
                 </a>
                 <a href='`)
@@ -138,13 +138,13 @@ func StreamDataPopulationCompaniesCareersAndAboutAndBlog(qw422016 *qt422016.Writ
 		}
 		qw422016.N().S(`
             `)
-		if company.ReferralProgram == "" {
+		if company.ReferralProgramURL == "" {
 			qw422016.N().S(`
                 <a href='`)
-			qw422016.E().S(googleSearchOnSite(hostname(company.Website), "Referral Program"))
+			qw422016.E().S(googleSearchOnSite(hostname(company.BaseURL), "Referral Program"))
 			qw422016.N().S(`' target="_blank">
                     <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> site:`)
-			qw422016.E().S(hostname(company.Website))
+			qw422016.E().S(hostname(company.BaseURL))
 			qw422016.N().S(` "Referral Program"
                 </a>
                 <a href='`)

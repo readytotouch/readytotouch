@@ -64,10 +64,10 @@ func StreamDataPopulationCompaniesIndeed(qw422016 *qt422016.Writer, companies []
 		if company.IndeedProfile.Alias == "" {
 			qw422016.N().S(`
             <a href='`)
-			qw422016.E().S(googleSearchIndeed(hostname(company.Website)))
+			qw422016.E().S(googleSearchIndeed(hostname(company.BaseURL)))
 			qw422016.N().S(`' target="_blank">
                 <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> site:indeed.com `)
-			qw422016.E().S(hostname(company.Website))
+			qw422016.E().S(hostname(company.BaseURL))
 			qw422016.N().S(`
             </a>
             <a href='`)

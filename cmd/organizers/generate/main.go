@@ -60,19 +60,19 @@ func generateCompanies(companies []domain.CompanyProfile) {
 			panic(fmt.Sprintf("Company LinkedIn name is empty for company: %s", company.Name))
 		}
 
-		if err := assertURL(company.Website); err != nil {
-			panic(fmt.Sprintf("Company website URL is invalid for company: %s", company.Name))
+		if err := assertURL(company.BaseURL); err != nil {
+			panic(fmt.Sprintf("Company base URL is invalid for company: %s", company.Name))
 		}
 
-		if err := assertURL(company.Careers); err != nil {
+		if err := assertURL(company.CareersURL); err != nil {
 			panic(fmt.Sprintf("Company careers URL is invalid for company: %s", company.Name))
 		}
 
-		if err := assertURL(company.About); err != nil {
+		if err := assertURL(company.AboutURL); err != nil {
 			panic(fmt.Sprintf("Company about URL is invalid for company: %s", company.Name))
 		}
 
-		if err := assertURL(company.Blog); err != nil {
+		if err := assertURL(company.BlogURL); err != nil {
 			panic(fmt.Sprintf("Company blog URL is invalid for company: %s", company.Name))
 		}
 

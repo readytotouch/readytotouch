@@ -263,43 +263,43 @@ func StreamOrganizersCompanyV3(qw422016 *qt422016.Writer,
         </figure>
         <div class="company-card__top-links">
           <a href="`)
-	qw422016.E().S(company.Website)
+	qw422016.E().S(company.BaseURL)
 	qw422016.N().S(`" target="_blank" class="company-card__top-link button-link">Website</a>
           `)
-	if company.Careers == "" {
+	if company.CareersURL == "" {
 		qw422016.N().S(`
             <span class="company-card__top-link button-link disabled">Careers</span>
           `)
 	} else {
 		qw422016.N().S(`
             <a href="`)
-		qw422016.E().S(company.Careers)
+		qw422016.E().S(company.CareersURL)
 		qw422016.N().S(`" target="_blank" class="company-card__top-link button-link">Careers</a>
           `)
 	}
 	qw422016.N().S(`
           `)
-	if company.About == "" {
+	if company.AboutURL == "" {
 		qw422016.N().S(`
             <span class="company-card__top-link button-link disabled">About</span>
           `)
 	} else {
 		qw422016.N().S(`
             <a href="`)
-		qw422016.E().S(company.About)
+		qw422016.E().S(company.AboutURL)
 		qw422016.N().S(`" target="_blank" class="company-card__top-link button-link">About</a>
           `)
 	}
 	qw422016.N().S(`
           `)
-	if company.Blog == "" {
+	if company.BlogURL == "" {
 		qw422016.N().S(`
             <span class="company-card__top-link button-link disabled">Dev Blog</span>
           `)
 	} else {
 		qw422016.N().S(`
             <a href="`)
-		qw422016.E().S(company.Blog)
+		qw422016.E().S(company.BlogURL)
 		qw422016.N().S(`" target="_blank" class="company-card__top-link button-link">Dev Blog</a>
           `)
 	}
@@ -1146,7 +1146,7 @@ func StreamOrganizersCompanyV3(qw422016 *qt422016.Writer,
                 src="/assets/images/pages/organizer/whois.svg"
               />
               <a href="`)
-	qw422016.E().S(whoisURL(company.Website))
+	qw422016.E().S(whoisURL(company.BaseURL))
 	qw422016.N().S(`" target="_blank" class="button-link company-grid__links-link">Whois</a>
             </li>
             <li class="company-grid__links-item">
@@ -1158,7 +1158,7 @@ func StreamOrganizersCompanyV3(qw422016 *qt422016.Writer,
                 src="/assets/images/pages/organizer/similarweb.svg"
               />
               <a href="`)
-	qw422016.E().S(similarwebURL(company.Website))
+	qw422016.E().S(similarwebURL(company.BaseURL))
 	qw422016.N().S(`" target="_blank" class="button-link company-grid__links-link">Similarweb</a>
             </li>
             `)

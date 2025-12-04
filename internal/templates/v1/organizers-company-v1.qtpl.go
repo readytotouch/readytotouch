@@ -198,7 +198,7 @@ func StreamOrganizersCompanyV1(qw422016 *qt422016.Writer,
     </div>
     <figcaption class="card__header-caption">
       <a href="`)
-	qw422016.E().S(company.Website)
+	qw422016.E().S(company.BaseURL)
 	qw422016.N().S(`" target="_blank" class="card__headline vacancy__link">`)
 	qw422016.E().S(company.Name)
 	qw422016.N().S(`</a>
@@ -381,7 +381,7 @@ func StreamOrganizersCompanyV1(qw422016 *qt422016.Writer,
           src="/assets/images/pages/organizer/similarweb.svg"
         />
         <a href="`)
-	qw422016.E().S(similarwebURL(company.Website))
+	qw422016.E().S(similarwebURL(company.BaseURL))
 	qw422016.N().S(`" target="_blank" class="button-link card__links-link">SimilarWeb</a>
       </li>
       <li class="card__links-item">
@@ -393,7 +393,7 @@ func StreamOrganizersCompanyV1(qw422016 *qt422016.Writer,
           src="/assets/images/pages/organizer/whois.svg"
         />
         <a href="`)
-	qw422016.E().S(whoisURL(company.Website))
+	qw422016.E().S(whoisURL(company.BaseURL))
 	qw422016.N().S(`" target="_blank" class="button-link card__links-link">Whois</a>
       </li>
 

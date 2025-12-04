@@ -93,7 +93,7 @@
             </div>
             <div class="actions">
                 <a target="_blank" href='{%s googleSearch(company.Name + " " + "logo") %}'></a>
-                <a target="_blank" href='{%s googleSearchOnSite(hostname(company.Website), "logo") %}'></a>
+                <a target="_blank" href='{%s googleSearchOnSite(hostname(company.BaseURL), "logo") %}'></a>
             </div>
         </div>
     </li>
