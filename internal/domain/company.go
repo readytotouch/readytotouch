@@ -120,12 +120,11 @@ type CompanyLogoResponse struct {
 }
 
 type LinkedInProfileResponse struct {
-	Alias             string `json:"alias"` // vanity name
-	Name              string `json:"name"`
-	Followers         string `json:"followers"`
-	Employees         string `json:"employees"`
-	AssociatedMembers string `json:"associated_members"`
-	Verified          bool   `json:"verified"`
+	ID       int    `json:"id"`
+	IDs      []int  `json:"ids"`
+	Alias    string `json:"alias"` // vanity name
+	Name     string `json:"name"`
+	Verified bool   `json:"verified"`
 }
 
 type GitHubProfileResponse struct {
@@ -137,10 +136,6 @@ type GitHubProfileResponse struct {
 type GlassdoorProfileResponse struct {
 	OverviewURL string `json:"overview_url"`
 	ReviewsURL  string `json:"reviews_url"`
-	JobsURL     string `json:"jobs_url"`
-	Jobs        string `json:"jobs"`
-	Reviews     string `json:"reviews"`
-	Salaries    string `json:"salaries"`
 	ReviewsRate string `json:"reviews_rate"`
 	Verified    bool   `json:"verified"`
 }
@@ -159,6 +154,7 @@ type CompanyResponse struct {
 	GlassdoorProfile          GlassdoorProfileResponse
 	ShortDescription          string
 	Industries                []Industry
+	CloudProviders            []CloudProvider
 	HasEmployeesFromCountries []Country
 	RustFoundationMember      bool
 	PinnedUntil               time.Time
@@ -288,6 +284,7 @@ type CompanyProfile struct {
 	GoogleFinanceURL          string // Market cap, etc.
 	YCombinatorURL            string // YC profile
 	Industries                []Industry
+	CloudProviders            []CloudProvider
 	HasEmployeesFromCountries []Country
 	RustFoundationMember      bool // https://foundation.rust-lang.org/members/
 	Ignore                    bool
