@@ -703,6 +703,7 @@ var (
 		"mux":                                 "",
 		"muzz":                                "muzz.jpeg",
 		"mycafu":                              "",
+		"myo-healthcare":                      "myo-healthcare.png",
 		"mythical":                            "",
 		"n-able":                              "n-able.png",
 		"namecheap-inc":                       "",

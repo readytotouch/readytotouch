@@ -1272,6 +1272,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4092211710/":                                                               205,  // level-all
 		"https://www.linkedin.com/jobs/view/4242216761/":                                                               1971, // level-all
 		"https://www.linkedin.com/jobs/view/4261784244/":                                                               2239, // level-all
+		"https://www.linkedin.com/jobs/view/4342749584/":                                                               3571, // level-all
 		"https://www.linkedin.com/jobs/view/4046403243/":                                                               527,  // littlelives
 		"https://www.linkedin.com/jobs/view/4197404839/":                                                               1677, // bill
 		"https://www.linkedin.com/jobs/view/3906024674/":                                                               44,   // bill
@@ -2845,6 +2846,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4286234802/":                                                               2698, // telnyx
 		"https://www.linkedin.com/jobs/view/4301511792/":                                                               2967, // telnyx
 		"https://www.linkedin.com/jobs/view/4304194138/":                                                               3204, // telnyx
+		"https://www.linkedin.com/jobs/view/4343031500/":                                                               3572, // telnyx
 		"https://www.linkedin.com/jobs/view/4186581023/":                                                               1575, // eunasolutions
 		"https://www.linkedin.com/jobs/view/4188235715/":                                                               1576, // driftrock
 		"https://www.linkedin.com/jobs/view/3758901108/":                                                               1577, // greyscout
@@ -2994,6 +2996,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4281934098/":                                                               2664, // true-anomaly
 		"https://www.linkedin.com/jobs/view/4312933268/":                                                               3206, // true-anomaly
 		"https://www.linkedin.com/jobs/view/4334670217/":                                                               3315, // true-anomaly
+		"https://www.linkedin.com/jobs/view/4342567607/":                                                               3573, // true-anomaly
 		"https://www.linkedin.com/jobs/view/4221388268/":                                                               1785, // scania
 		"https://www.linkedin.com/jobs/view/4223904753/":                                                               1786, // otiv
 		"https://www.linkedin.com/jobs/view/4223001348/":                                                               1826, // alertmedia
@@ -3566,6 +3569,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4285040837/":                                                               3550, // foxglovedev
 		"https://www.linkedin.com/jobs/view/4341524010/":                                                               3554, // sky
 		"https://www.linkedin.com/jobs/view/4325399277/":                                                               3563, // reducate
+		"https://www.linkedin.com/jobs/view/4348395855/":                                                               3574, // myo-healthcare
 		"https://www.linkedin.com/jobs/view/3914839625/":                                                               372,  // cognizant
 		"https://www.linkedin.com/jobs/view/4120737001/":                                                               600,  // cognizant
 		"https://www.linkedin.com/jobs/view/4149258542/":                                                               787,  // cognizant

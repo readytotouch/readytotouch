@@ -4194,6 +4194,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "myo-healthcare",
+    "source": "myo-healthcare-192x192.png",
+    "destination": "myo-healthcare.png",
+    "destination_72x72": "myo-healthcare.png"
+  },
+  {
     "alias": "mythical",
     "source": "",
     "destination": "",
