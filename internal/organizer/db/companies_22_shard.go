@@ -52,6 +52,16 @@ func companies22Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Go Staff Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4326037685/",
+							Location:             "Stockholm, Stockholm County, Sweden",
+							Date:                 mustDate("2025-12-09"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
@@ -692,7 +702,7 @@ func companies22Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4322153707/",
 							Location:             "Belgrade, Serbia",
-							Date:                 mustDate("2025-11-13"),
+							Date:                 mustDate("2025-12-05", "2025-11-13"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -1904,6 +1914,16 @@ func companies22Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Software Engineer Go",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4343250515/",
+							Location:             "United Kingdom",
+							Date:                 mustDate("2025-12-10"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust: {
@@ -2079,6 +2099,16 @@ func companies22Shard() []domain.CompanyProfile {
 							Date:                 mustDate("2025-11-13"),
 							WithSalary:           false,
 							Remote:               false,
+						},
+						{
+							Title:                "Senior Backend Engineer (Go)",
+							ShortDescription:     "Distributed Systems",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4325638466/",
+							Location:             "European Union",
+							Date:                 mustDate("2025-12-05"),
+							WithSalary:           false,
+							Remote:               true,
 						},
 					},
 				},
@@ -3528,6 +3558,16 @@ func companies22Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Software Engineer (Go)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4326565099/",
+							Location:             "Budapest Metropolitan Area",
+							Date:                 mustDate("2025-12-10"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust: {
@@ -3905,6 +3945,16 @@ func companies22Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $145k/yr - $190k/yr
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Software Engineer II (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4326711280/",
+							Location:             "Detroit, MI",
+							Date:                 mustDate("2025-12-10"),
+							WithSalary:           true, // $145k/yr - $190k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
@@ -3987,6 +4037,16 @@ func companies22Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4336898660/",
 							Location:             "Leiden, South Holland, Netherlands",
 							Date:                 mustDate("2025-11-26"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Backend Engineer (Golang + Python)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4342869486/",
+							Location:             "Leiden, South Holland, Netherlands",
+							Date:                 mustDate("2025-12-10"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -5058,6 +5118,16 @@ func companies22Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Staff Backend Engineer – Go",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4318543641/",
+							Location:             "Paris, Île-de-France, France",
+							Date:                 mustDate("2025-12-06"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
@@ -5833,7 +5903,7 @@ func companies22Shard() []domain.CompanyProfile {
 				},
 				domain.Rust: {
 					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{
+					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Embedded Software Engineer IV – Rust",
 							ShortDescription:     "",
@@ -5872,83 +5942,9 @@ func companies22Shard() []domain.CompanyProfile {
 				},
 			},
 			ShortDescription: "",
-			Industries:       []domain.Industry{
+			Industries: []domain.Industry{
 				domain.IndustryCyberSecurity,
 			},
 		},
-
-		// Template
-		//{
-		//	ID:      0,  // system
-		//	Type:    "", // system
-		//	Name:    "",
-		//	Website: "",
-		//	Careers: "",
-		//	About:   "",
-		//	Blog:    "",
-		//	LinkedInProfile: domain.LinkedInProfile{
-		//		ID:                0,
-		//		Alias:             "",
-		//		Name:              "",
-		//		Followers:         "",
-		//		Employees:         "",
-		//		AssociatedMembers: "",
-		//		Verified:          false,
-		//	},
-		//	GitHubProfile: domain.GitHubProfile{
-		//		Login:    "",
-		//		Verified: false,
-		//	},
-		//	BlindProfile: domain.BlindProfile{
-		//		Alias: "",
-		//	},
-		//	LevelsFyiProfile: domain.LevelsFyiProfile{
-		//		Alias: "",
-		//	},
-		//	GlassdoorProfile: domain.GlassdoorProfile{
-		//		OverviewURL: "",
-		//	},
-		//	IndeedProfile: domain.IndeedProfile{
-		//		Alias: "",
-		//	},
-		//	Languages: domain.Languages{
-		//		domain.Go: {
-		//			GitHubRepositoriesCount: 0,
-		//			Vacancies:               []domain.Vacancy{},
-		//		},
-		//		domain.Rust: {
-		//			GitHubRepositoriesCount: 0,
-		//			Vacancies:               []domain.Vacancy{},
-		//		},
-		//		domain.Zig: {
-		//			GitHubRepositoriesCount: 0,
-		//			Vacancies:               []domain.Vacancy{},
-		//		},
-		//		domain.Scala: {
-		//			GitHubRepositoriesCount: 0,
-		//			Vacancies:               []domain.Vacancy{},
-		//		},
-		//		domain.Elixir: {
-		//			GitHubRepositoriesCount: 0,
-		//			Vacancies:               []domain.Vacancy{},
-		//		},
-		//		domain.Clojure: {
-		//			GitHubRepositoriesCount: 0,
-		//			Vacancies:               []domain.Vacancy{},
-		//		},
-		//		domain.Haskell: {
-		//			GitHubRepositoriesCount: 0,
-		//			Vacancies:               []domain.Vacancy{},
-		//		},
-		//		domain.Erlang: {
-		//			GitHubRepositoriesCount: 0,
-		//			Vacancies:               []domain.Vacancy{},
-		//		},
-		//	},
-		//	ShortDescription: "",
-		//	Industries:       []domain.Industry{
-		//		// NOP
-		//	},
-		//},
 	}
 }

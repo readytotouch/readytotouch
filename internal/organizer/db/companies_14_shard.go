@@ -3114,6 +3114,7 @@ func companies14Shard() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
+			Ignore:           true, // https://dou.ua/forums/topic/56908/
 		},
 		{
 			ID:      0,  // system
