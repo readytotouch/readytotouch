@@ -1016,6 +1016,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4182729917/":                                                               1165, // whaleboneio
 		"https://www.linkedin.com/jobs/view/4209622730/":                                                               1535, // whaleboneio
 		"https://www.linkedin.com/jobs/view/4301296312/":                                                               2942, // whaleboneio
+		"https://www.linkedin.com/jobs/view/4342489246/":                                                               3625, // whaleboneio
 		"https://www.linkedin.com/jobs/view/4082610714/":                                                               478,  // onesignal
 		"https://app.welcometothejungle.com/jobs/K21IaTJ2":                                                             479,  // metabase
 		"https://www.linkedin.com/jobs/view/4052028718/":                                                               480,  // anjuna-security
@@ -1090,6 +1091,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4162261165/":                                                               1536, // ayloservices
 		"https://www.linkedin.com/jobs/view/4004290596/":                                                               1759, // ayloservices
 		"https://www.linkedin.com/jobs/view/4250430497/":                                                               2399, // ayloservices
+		"https://www.linkedin.com/jobs/view/4336632478/":                                                               3626, // ayloservices
 		"https://www.linkedin.com/jobs/view/4018413250/":                                                               498,  // factset
 		"https://www.linkedin.com/jobs/view/4232211406/":                                                               2063, // factset
 		"https://www.linkedin.com/jobs/view/4256930565/":                                                               2204, // factset
@@ -1614,6 +1616,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4103327636/":                                                               237,  // bestowtech
 		"https://www.linkedin.com/jobs/view/4123834720/":                                                               606,  // bestowtech
 		"https://www.linkedin.com/jobs/view/4332724105/":                                                               3468, // bestowtech
+		"https://www.linkedin.com/jobs/view/4317894033/":                                                               3627, // bestowtech
 		"https://www.linkedin.com/jobs/view/4037104078/":                                                               119,  // geico
 		"https://www.linkedin.com/jobs/view/4093859612/":                                                               577,  // geico
 		"https://www.linkedin.com/jobs/view/4133418996/":                                                               741,  // geico
@@ -2300,6 +2303,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4158615510/":                                                               918,  // akamai-technologies
 		"https://www.linkedin.com/jobs/view/4278536108/":                                                               2732, // akamai-technologies
 		"https://www.linkedin.com/jobs/view/4153154012/":                                                               886,  // nasdaq
+		"https://www.linkedin.com/jobs/view/4343008440/":                                                               3628, // nasdaq
 		"https://www.linkedin.com/jobs/view/4043283281/":                                                               887,  // qualcomm
 		"https://www.linkedin.com/jobs/view/4314270928/":                                                               3492, // qualcomm
 		"https://www.linkedin.com/jobs/view/4153462892/":                                                               888,  // tesla-motors
@@ -2664,6 +2668,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4291790681/":                                                               2798, // adjoe
 		"https://www.linkedin.com/jobs/view/4306523613/":                                                               3097, // adjoe
 		"https://www.linkedin.com/jobs/view/4347936773/":                                                               3534, // adjoe
+		"https://www.linkedin.com/jobs/view/4348521903/":                                                               3629, // adjoe
 		"https://www.linkedin.com/jobs/view/4192297683/":                                                               1314, // docebo
 		"https://www.linkedin.com/jobs/view/4205969730/":                                                               1696, // docebo
 		"https://www.linkedin.com/jobs/view/4205975145/":                                                               1816, // docebo
@@ -3567,6 +3572,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4343250515/":                                                               3622, // bud-financial
 		"https://www.linkedin.com/jobs/view/4322232069/":                                                               3389, // zixflow
 		"https://www.linkedin.com/jobs/view/4322062869/":                                                               3390, // jabil
+		"https://www.linkedin.com/jobs/view/4325638466/":                                                               3630, // jabil
 		"https://www.linkedin.com/jobs/view/4335435441/":                                                               3391, // severalnines
 		"https://www.linkedin.com/jobs/view/4335797154/":                                                               3392, // plannatech
 		"https://www.linkedin.com/jobs/view/4321715155/":                                                               3393, // tryprofound

@@ -1519,9 +1519,9 @@
   },
   {
     "alias": "coralogix",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "coralogix-180x180.png",
+    "destination": "coralogix.png",
+    "destination_72x72": "coralogix.png"
   },
   {
     "alias": "coreweave",
@@ -4237,9 +4237,9 @@
   },
   {
     "alias": "nasdaq",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "nasdaq-180x180.png",
+    "destination": "nasdaq.png",
+    "destination_72x72": "nasdaq.png"
   },
   {
     "alias": "nasuni",
@@ -6565,9 +6565,9 @@
   },
   {
     "alias": "teramindco",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "teramindco-200x200.jpeg",
+    "destination": "teramindco.jpeg",
+    "destination_72x72": "teramindco.jpeg"
   },
   {
     "alias": "tesla-motors",
