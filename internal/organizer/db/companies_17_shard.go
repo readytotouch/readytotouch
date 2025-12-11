@@ -1439,6 +1439,16 @@ func companies17Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $90k/yr - $125k/yr
 							Remote:               false,
 						},
+						{
+							Title:                "Software Engineer II, Elixir",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4342567607/",
+							Location:             "Long Beach, CA",
+							Date:                 mustDate("2025-12-10"),
+							WithSalary:           true, // $110k/yr - $160k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Clojure: {},
@@ -4264,7 +4274,7 @@ func companies17Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4336403577/",
 							Location:             "Berlin, Berlin, Germany",
-							Date:                 mustDate("2025-11-18"),
+							Date:                 mustDate("2025-12-09", "2025-11-18"),
 							WithSalary:           false,
 							Remote:               false,
 						},

@@ -430,6 +430,16 @@ func companies19Shard() []domain.CompanyProfile {
 							WithSalary:           true,
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Backend Engineer – Go",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4342904107/",
+							Location:             "United States",
+							Date:                 mustDate("2025-12-10"),
+							WithSalary:           true, // $160k/yr - $240k/yr
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust: {
@@ -595,8 +605,8 @@ func companies19Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4250646664/",
 							Location:             "San Jose, CA",
-							Date:                 mustDate("2025-11-17", "2025-10-27", "2025-10-06", "2025-09-14", "2025-08-23", "2025-08-02", "2025-07-10", "2025-06-23"),
-							WithSalary:           true, // $150k/yr - $175k/yr
+							Date:                 mustDate("2025-12-08"), // mustDate("2025-11-17", "2025-10-27", "2025-10-06", "2025-09-14", "2025-08-23", "2025-08-02", "2025-07-10", "2025-06-23"),
+							WithSalary:           true,                   // $150k/yr - $175k/yr
 							Remote:               false,
 						},
 						{
@@ -2151,6 +2161,16 @@ func companies19Shard() []domain.CompanyProfile {
 							Date:                 mustDate("2025-10-01"),
 							WithSalary:           false,
 							Remote:               true,
+						},
+						{
+							Title:                "Senior Backend (Golang) Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4326630654/",
+							Location:             "Barcelona, Catalonia, Spain",
+							Date:                 mustDate("2025-12-10"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 					},
 				},
@@ -5689,6 +5709,16 @@ func companies19Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $168k/yr - $322k/yr
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Software Engineer – Kubernetes and Golang",
+							ShortDescription:     "DGX Cloud",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4342275619/",
+							Location:             "Santa Clara, CA",
+							Date:                 mustDate("2025-12-06"),
+							WithSalary:           true, // $184k/yr - $356.5k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
@@ -5872,7 +5902,7 @@ func companies19Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4262573291/",
 							Location:             "Palo Alto, CA",
-							Date:                 mustDate("2025-11-17", "2025-10-27", "2025-10-05", "2025-09-13", "2025-08-22"),
+							Date:                 mustDate("2025-12-09", "2025-11-17", "2025-10-27", "2025-10-05", "2025-09-13", "2025-08-22"),
 							WithSalary:           true, // $180k/yr - $440k/yr
 							Remote:               false,
 						},

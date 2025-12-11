@@ -1654,5 +1654,21 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Venture Search",
+			Website: "https://www.venturesearch.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                52186828,
+				IDs:               nil,
+				Alias:             "venture-search",
+				Name:              "Venture Search",
+				Followers:         "229K",
+				Employees:         "11-50",
+				AssociatedMembers: "40",
+				Verified:          false,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }

@@ -13,7 +13,7 @@ export function githubStarsWidget() {
         return;
     }
 
-    setStarsCount($stars, 1215); // Initial static count
+    setStarsCount($stars, 1250); // Initial static count
 
     // @TODO: Uncomment after a successful migration to v3, before starting the article series on Reddit, Hacker News, and forums
     /*
