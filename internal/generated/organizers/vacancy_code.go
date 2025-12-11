@@ -61,6 +61,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4233770271/":                                                               2048, // ibm
 		"https://www.linkedin.com/jobs/view/4252167022/":                                                               2367, // ibm
 		"https://www.linkedin.com/jobs/view/4282845350/":                                                               2843, // ibm
+		"https://www.linkedin.com/jobs/view/4348824912/":                                                               3564, // ibm
 		"https://www.linkedin.com/jobs/view/4072909509/":                                                               258,  // sap
 		"https://www.linkedin.com/jobs/view/4072911263/":                                                               541,  // sap
 		"https://www.linkedin.com/jobs/view/4073625824/":                                                               592,  // sap
@@ -119,6 +120,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4077452954/":                                                               272,  // fastly
 		"https://www.linkedin.com/jobs/view/4097075408/":                                                               273,  // fastly
 		"https://www.linkedin.com/jobs/view/3983369109/":                                                               400,  // dropbox
+		"https://www.linkedin.com/jobs/view/4342344055/":                                                               3565, // docker
 		"https://www.linkedin.com/jobs/view/4076482530/":                                                               401,  // grafana-labs
 		"https://www.linkedin.com/jobs/view/4102997754/":                                                               402,  // hashicorp
 		"https://www.indeed.com/viewjob?jk=7af3879e19ecbbee":                                                           1276, // hashicorp
@@ -1113,6 +1115,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4315242315/":                                                               3224, // wolt-oy
 		"https://www.linkedin.com/jobs/view/4315228577/":                                                               3349, // wolt-oy
 		"https://www.linkedin.com/jobs/view/4319526288/":                                                               3465, // wolt-oy
+		"https://www.linkedin.com/jobs/view/4304094632/":                                                               3568, // wolt-oy
 		"https://www.linkedin.com/jobs/view/4008937766/":                                                               503,  // wolt-oy
 		"https://www.linkedin.com/jobs/view/4161483703/":                                                               945,  // wolt-oy
 		"https://www.linkedin.com/jobs/view/4167045862/":                                                               969,  // wolt-oy
@@ -1540,6 +1543,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4269465025/":                                                               2452, // capital-one
 		"https://www.linkedin.com/jobs/view/4287840612/":                                                               3012, // capital-one
 		"https://www.linkedin.com/jobs/view/4304673155/":                                                               3299, // capital-one
+		"https://www.linkedin.com/jobs/view/4342812069/":                                                               3570, // capital-one
 		"https://www.linkedin.com/jobs/view/3951768378/":                                                               536,  // dynatrace
 		"https://www.linkedin.com/jobs/view/4104352080/":                                                               605,  // dynatrace
 		"https://www.linkedin.com/jobs/view/4129464627/":                                                               810,  // dynatrace
@@ -2331,6 +2335,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4190174086/":                                                               1560, // esri
 		"https://www.linkedin.com/jobs/view/4075632689/":                                                               1003, // esri
 		"https://www.linkedin.com/jobs/view/4319499383/":                                                               3424, // esri
+		"https://www.linkedin.com/jobs/view/4326006779/":                                                               3569, // esri
 		"https://www.linkedin.com/jobs/view/4170791654/":                                                               1039, // cloudlinux
 		"https://www.linkedin.com/jobs/view/4197920577/":                                                               1546, // cloudlinux
 		"https://www.linkedin.com/jobs/view/4208666795/":                                                               1621, // cloudlinux
@@ -2789,6 +2794,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4160578820/":                                                               1518, // corsearchinc
 		"https://www.linkedin.com/jobs/view/4200184252/":                                                               1736, // corsearchinc
 		"https://www.linkedin.com/jobs/view/4204502807/":                                                               1519, // peerspace
+		"https://www.linkedin.com/jobs/view/4324540820/":                                                               3566, // peerspace
 		"https://www.linkedin.com/jobs/view/4187189707/":                                                               1520, // incharge-energy
 		"https://www.linkedin.com/jobs/view/4208458029/":                                                               1548, // incharge-energy
 		"https://www.linkedin.com/jobs/view/4222875157/":                                                               1821, // incharge-energy
@@ -3363,6 +3369,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4324641696/":                                                               3497, // lgads
 		"https://www.linkedin.com/jobs/view/4289604251/":                                                               2785, // brevo
 		"https://www.linkedin.com/jobs/view/4294245074/":                                                               2806, // hudl
+		"https://www.linkedin.com/jobs/view/4326520542/":                                                               3567, // hudl
 		"https://www.linkedin.com/jobs/view/4293000776/":                                                               2807, // recorded-future
 		"https://www.linkedin.com/jobs/view/4258545583/":                                                               2808, // opensignal
 		"https://www.linkedin.com/jobs/view/4294137065/":                                                               2832, // yoti-digital-identity

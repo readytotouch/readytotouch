@@ -3537,7 +3537,7 @@ func companies22Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4317466938/",
 							Location:             "Budapest Metropolitan Area",
-							Date:                 mustDate("2025-11-15"),
+							Date:                 mustDate("2025-12-06", "2025-11-15"),
 							WithSalary:           false,
 							Remote:               true,
 						},
