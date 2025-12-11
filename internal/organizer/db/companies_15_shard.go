@@ -2828,7 +2828,7 @@ func companies15Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4204214285/",
 							Location:             "Madrid, Community of Madrid, Spain",
-							Date:                 mustDate("2025-11-12", "2025-10-22", "2025-09-30", "2025-09-08", "2025-08-17", "2025-07-26", "2025-07-04", "2025-06-14"),
+							Date:                 mustDate("2025-12-04", "2025-11-12", "2025-10-22", "2025-09-30", "2025-09-08", "2025-08-17", "2025-07-26", "2025-07-04", "2025-06-14"),
 							WithSalary:           false,
 							Remote:               true,
 						},

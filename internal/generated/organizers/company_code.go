@@ -1284,6 +1284,7 @@ var (
 		"sky":                                 1284, // Sky
 		"reducate":                            1285, // Reducate
 		"myo-healthcare":                      1286, // myo
+		"innoflight-llc":                      1287, // Innoflight
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

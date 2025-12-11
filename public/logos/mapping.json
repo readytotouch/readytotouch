@@ -3252,6 +3252,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "innoflight-llc",
+    "source": "innoflight-192x192.png",
+    "destination": "innoflight-llc.png",
+    "destination_72x72": "innoflight-llc.png"
+  },
+  {
     "alias": "innovatrics",
     "source": "innovatrics-180x180.png",
     "destination": "innovatrics.png",

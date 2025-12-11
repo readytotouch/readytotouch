@@ -1988,7 +1988,7 @@ func companies11Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4313441005/",
 							Location:             "Jersey City, NJ",
-							Date:                 mustDate("2025-12-02", "2025-11-23", "2025-11-02"),
+							Date:                 mustDate("2025-12-10", "2025-12-02", "2025-11-23", "2025-11-02"),
 							WithSalary:           true, // $107k/yr - $216k/yr
 							Remote:               false,
 						},

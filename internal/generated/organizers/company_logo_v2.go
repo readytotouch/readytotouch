@@ -546,6 +546,7 @@ var (
 		"infolob-global":                      "",
 		"infomatics-corp":                     "",
 		"ing":                                 "",
+		"innoflight-llc":                      "innoflight-llc.png",
 		"innovatrics":                         "innovatrics.png",
 		"instinct-science":                    "",
 		"inulti":                              "",

@@ -2542,7 +2542,7 @@ func companies22Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4321874435/",
 							Location:             "Rome, Latium, Italy",
-							Date:                 mustDate("2025-11-12"),
+							Date:                 mustDate("2025-12-10", "2025-11-12"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2638,7 +2638,7 @@ func companies22Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4321915810/",
 							Location:             "Tokyo, Tokyo, Japan",
-							Date:                 mustDate("2025-12-01", "2025-11-24", "2025-11-20", "2025-11-12"),
+							Date:                 mustDate("2025-12-10", "2025-12-01", "2025-11-24", "2025-11-20", "2025-11-12"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3045,6 +3045,16 @@ func companies22Shard() []domain.CompanyProfile {
 							URL:                  "https://app.welcometothejungle.com/jobs/GBw_kEIb",
 							Date:                 mustDate("2025-11-14"),
 							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Software Engineer",
+							ShortDescription:     "Rust, Bevy, WebGPU",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4348528670/",
+							Location:             "New York, NY",
+							Date:                 mustDate("2025-12-06"),
+							WithSalary:           true, // $130k/yr - $230k/yr
 							Remote:               false,
 						},
 					},
@@ -3626,7 +3636,7 @@ func companies22Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4336250122/",
 							Location:             "Ireland",
-							Date:                 mustDate("2025-11-15"),
+							Date:                 mustDate("2025-12-06", "2025-11-15"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -3804,7 +3814,7 @@ func companies22Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4324341674/",
 							Location:             "Los Angeles, CA",
-							Date:                 mustDate("2025-11-25"),
+							Date:                 mustDate("2025-12-09", "2025-11-25"),
 							WithSalary:           true, // $200k/yr - $240k/yr
 							Remote:               false,
 						},
@@ -5396,6 +5406,16 @@ func companies22Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $165k/yr - $200k/yr
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Software Engineer, Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4285041821/",
+							Location:             "New South Wales, Australia",
+							Date:                 mustDate("2025-12-06"),
+							WithSalary:           true, // $180k/yr - $220k/yr
+							Remote:               true,
+						},
 					},
 				},
 				domain.Zig: {
@@ -5656,7 +5676,7 @@ func companies22Shard() []domain.CompanyProfile {
 				},
 				domain.Elixir: {
 					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{
+					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Fullstack Engineer (Elixir/Phoenix)",
 							ShortDescription:     "",
@@ -5683,8 +5703,177 @@ func companies22Shard() []domain.CompanyProfile {
 				},
 			},
 			ShortDescription: "Communication service for the care sector",
-			Industries:       []domain.Industry{
+			Industries: []domain.Industry{
 				domain.IndustryHealthTech,
+			},
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Ripple",
+			Website: "https://ripple.com/",
+			Careers: "",
+			About:   "",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3249443,
+				IDs:               nil,
+				Alias:             "ripple",
+				Name:              "Ripple",
+				Followers:         "424K",
+				Employees:         "501-1K",
+				AssociatedMembers: "1,459",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer, C++ / Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4318356923/",
+							Location:             "New York, NY",
+							Date:                 mustDate("2025-12-08"),
+							WithSalary:           true, // $152k/yr - $190k/yr
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+			Ignore: true, // Cryptocurrency
+		},
+		{
+			ID:      0,  // system
+			Type:    "", // system
+			Name:    "Innoflight",
+			Website: "https://innoflight.com/",
+			Careers: "https://innoflight.com/careers/",
+			About:   "https://innoflight.com/about-us/",
+			Blog:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3028857,
+				IDs:               nil,
+				Alias:             "innoflight-llc",
+				Name:              "Innoflight",
+				Followers:         "14K",
+				Employees:         "51-200",
+				AssociatedMembers: "162",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{
+						{
+							Title:                "Embedded Software Engineer IV – Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4343181290/",
+							Location:             "San Diego, CA",
+							Date:                 mustDate("2025-12-11"),
+							WithSalary:           true, // $150k/yr - $170k/yr
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoriesCount: 0,
+					Vacancies:               []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "",
+			Industries:       []domain.Industry{
+				domain.IndustryCyberSecurity,
 			},
 		},
 

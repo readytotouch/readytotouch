@@ -23,7 +23,7 @@ import (
 var (
 	testFullPublicSince = time.Date(2025, time.November, 1, 0, 0, 0, 0, time.UTC)
 	testFullPublicUntil = time.Date(2026, time.January, 25, 0, 0, 0, 0, time.UTC)
-	testStrictAuthUntil = time.Date(2025, time.December, 1, 0, 0, 0, 0, time.UTC)
+	testStrictAuthUntil = time.Date(2025, time.December, 15, 0, 0, 0, 0, time.UTC)
 )
 
 func testStrictAuth(date time.Time) bool {
