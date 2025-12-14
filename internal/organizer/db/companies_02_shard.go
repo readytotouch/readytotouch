@@ -10,13 +10,13 @@ func companies02Shard() []domain.CompanyProfile {
 	return []domain.CompanyProfile{
 		// Security SentinelOne
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "SentinelOne",
-			Website: "https://www.sentinelone.com/",
-			Careers: "https://www.sentinelone.com/careers/",
-			About:   "https://sentinelone.com/company/",
-			Blog:    "https://www.sentinelone.com/blog/",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "SentinelOne",
+			BaseURL:    "https://www.sentinelone.com/",
+			CareersURL: "https://www.sentinelone.com/careers/",
+			AboutURL:   "https://sentinelone.com/company/",
+			BlogURL:    "https://www.sentinelone.com/blog/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                2886771,
 				IDs:               []int{2886771, 89652976, 89787084},
@@ -58,7 +58,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "SentinelOne",
 			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 3,
@@ -330,13 +329,13 @@ func companies02Shard() []domain.CompanyProfile {
 		// Famous
 		// Famous Uber
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Uber",
-			Website: "https://www.uber.com/",
-			Careers: "https://www.uber.com//careers/",
-			About:   "https://www.uber.com/about/",
-			Blog:    "https://www.uber.com/blog/engineering/",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Uber",
+			BaseURL:    "https://www.uber.com/",
+			CareersURL: "https://www.uber.com//careers/",
+			AboutURL:   "https://www.uber.com/about/",
+			BlogURL:    "https://www.uber.com/blog/engineering/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1815218,
 				Alias:             "uber-com",
@@ -419,13 +418,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Famous Siemens
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Siemens",
-			Website: "https://www.siemens.com/",
-			Careers: "https://www.siemens.com/global/en/company/jobs.html",
-			About:   "https://www.siemens.com/global/en/company/about.html",
-			Blog:    "https://blogs.sw.siemens.com/",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Siemens",
+			BaseURL:    "https://www.siemens.com/",
+			CareersURL: "https://www.siemens.com/global/en/company/jobs.html",
+			AboutURL:   "https://www.siemens.com/global/en/company/about.html",
+			BlogURL:    "https://blogs.sw.siemens.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                0,
 				IDs:               []int{1043, 157241},
@@ -467,7 +466,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "https://www.youtube.com/@SiemensKnowledgeHub",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 19,
@@ -610,13 +608,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Famous Ericsson
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Ericsson",
-			Website: "https://www.ericsson.com/",
-			Careers: "https://www.ericsson.com/careers",
-			About:   "https://www.ericsson.com/about-us",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Ericsson",
+			BaseURL:    "https://www.ericsson.com/",
+			CareersURL: "https://www.ericsson.com/careers",
+			AboutURL:   "https://www.ericsson.com/about-us",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1060,
 				Alias:             "ericsson",
@@ -657,7 +655,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 4,
@@ -792,13 +789,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Famous SoundCloud
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "SoundCloud",
-			Website: "https://soundcloud.com/",
-			Careers: "https://careers.soundcloud.com/",
-			About:   "https://press.soundcloud.com/about/",
-			Blog:    "https://developers.soundcloud.com/blog/",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "SoundCloud",
+			BaseURL:    "https://soundcloud.com/",
+			CareersURL: "https://careers.soundcloud.com/",
+			AboutURL:   "https://press.soundcloud.com/about/",
+			BlogURL:    "https://developers.soundcloud.com/blog/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                200200,
 				Alias:             "soundcloud",
@@ -839,7 +836,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "SoundCloud",
 			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 5,
@@ -885,13 +881,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Famous Spotify
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Spotify",
-			Website: "https://www.lifeatspotify.com/",
-			Careers: "https://www.lifeatspotify.com/jobs",
-			About:   "https://newsroom.spotify.com/company-info/",
-			Blog:    "https://engineering.atspotify.com/",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Spotify",
+			BaseURL:    "https://www.lifeatspotify.com/",
+			CareersURL: "https://www.lifeatspotify.com/jobs",
+			AboutURL:   "https://newsroom.spotify.com/company-info/",
+			BlogURL:    "https://engineering.atspotify.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                207470,
 				Alias:             "spotify",
@@ -932,7 +928,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "Spotify",
 			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 12,
@@ -967,13 +962,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Famous DoorDash
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "DoorDash",
-			Website: "https://doordash.com/",
-			Careers: "https://careersatdoordash.com/",
-			About:   "https://about.doordash.com/en-us/company",
-			Blog:    "https://doordash.engineering/blog/",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "DoorDash",
+			BaseURL:    "https://doordash.com/",
+			CareersURL: "https://careersatdoordash.com/",
+			AboutURL:   "https://about.doordash.com/en-us/company",
+			BlogURL:    "https://doordash.engineering/blog/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                3205573,
 				Alias:             "doordash",
@@ -1014,7 +1009,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "DoorDash",
 			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 7,
@@ -1055,13 +1049,13 @@ func companies02Shard() []domain.CompanyProfile {
 		},
 
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Just Eat Takeaway.com",
-			Website: "https://www.justeattakeaway.com/",
-			Careers: "https://careers.justeattakeaway.com/global/en",
-			About:   "https://www.justeattakeaway.com/about/our-story/default.aspx",
-			Blog:    "https://medium.com/justeattakeaway-tech",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Just Eat Takeaway.com",
+			BaseURL:    "https://www.justeattakeaway.com/",
+			CareersURL: "https://careers.justeattakeaway.com/global/en",
+			AboutURL:   "https://www.justeattakeaway.com/about/our-story/default.aspx",
+			BlogURL:    "https://medium.com/justeattakeaway-tech",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID: 0,
 				IDs: []int{
@@ -1106,7 +1100,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "Just-Eat",
 			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -1185,13 +1178,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Famous Sixt
 		{
-			ID:      0,
-			Type:    "",
-			Name:    "Sixt",
-			Website: "https://www.sixt.com/",
-			Careers: "https://www.sixt.jobs/",
-			About:   "https://about.sixt.com/",
-			Blog:    "https://www.sixt.tech/",
+			ID:         0,
+			Type:       "",
+			Name:       "Sixt",
+			BaseURL:    "https://www.sixt.com/",
+			CareersURL: "https://www.sixt.jobs/",
+			AboutURL:   "https://about.sixt.com/",
+			BlogURL:    "https://www.sixt.tech/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                17120,
 				Alias:             "sixt",
@@ -1233,7 +1226,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 4,
@@ -1301,13 +1293,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Famous Motorola Solutions
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Motorola Solutions",
-			Website: "https://www.motorolasolutions.com/",
-			Careers: "https://www.motorolasolutions.com/en_us/about/careers.html",
-			About:   "https://www.motorolasolutions.com/en_us/about.html",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Motorola Solutions",
+			BaseURL:    "https://www.motorolasolutions.com/",
+			CareersURL: "https://www.motorolasolutions.com/en_us/about/careers.html",
+			AboutURL:   "https://www.motorolasolutions.com/en_us/about.html",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1771432,
 				Alias:             "motorolasolutions",
@@ -1348,7 +1340,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "Motorola-Solutions",
 			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -1423,13 +1414,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Famous Samsung
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Samsung",
-			Website: "https://www.samsung.com/",
-			Careers: "https://www.samsung.com/us/careers/",
-			About:   "https://www.samsung.com/us/about-us/our-business/",
-			Blog:    "https://developer.samsung.com/blog/en",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Samsung",
+			BaseURL:    "https://www.samsung.com/",
+			CareersURL: "https://www.samsung.com/us/careers/",
+			AboutURL:   "https://www.samsung.com/us/about-us/our-business/",
+			BlogURL:    "https://developer.samsung.com/blog/en",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                0,
 				IDs:               []int{1753, 13749561, 3270132, 77752302, 3812597, 3220515, 10633911, 1447520, 3238801, 2711168, 10261221, 87464967, 5089912, 9500165, 10218505, 895705, 78467539, 10332849, 10660176, 79815984, 3290134, 76958044, 85881048, 27127559, 9278177, 37470202, 22316801, 81590082, 11229641, 15213487, 68478415, 5552815, 14472582},
@@ -1471,7 +1462,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "https://www.youtube.com/@Samsung",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -1533,13 +1523,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Famous Salesforge
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Salesforge",
-			Website: "https://www.salesforge.ai/",
-			Careers: "",
-			About:   "https://www.salesforge.ai/about",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Salesforge",
+			BaseURL:    "https://www.salesforge.ai/",
+			CareersURL: "",
+			AboutURL:   "https://www.salesforge.ai/about",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                91706116,
 				Alias:             "salesforgeai",
@@ -1570,7 +1560,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "https://www.youtube.com/@salesforge",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -1600,13 +1589,13 @@ func companies02Shard() []domain.CompanyProfile {
 		// Some
 		// Some | Careem
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Careem",
-			Website: "https://www.careem.com/",
-			Careers: "https://jobs.careem.com/",
-			About:   "https://www.careem.com/en-AE/about-us/",
-			Blog:    "https://engineering.careem.com/tech/categories/engineering",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Careem",
+			BaseURL:    "https://www.careem.com/",
+			CareersURL: "https://jobs.careem.com/",
+			AboutURL:   "https://www.careem.com/en-AE/about-us/",
+			BlogURL:    "https://engineering.careem.com/tech/categories/engineering",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                2852511,
 				IDs:               nil,
@@ -1701,13 +1690,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | Dailymotion
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Dailymotion",
-			Website: "https://www.dailymotion.com/",
-			Careers: "https://careers.dailymotion.com/jobs/",
-			About:   "https://about.dailymotion.com/",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Dailymotion",
+			BaseURL:    "https://www.dailymotion.com/",
+			CareersURL: "https://careers.dailymotion.com/jobs/",
+			AboutURL:   "https://about.dailymotion.com/",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                24411,
 				Alias:             "dailymotion",
@@ -1739,7 +1728,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "Dailymotion",
 			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 18,
@@ -1770,13 +1758,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | Stream
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Stream",
-			Website: "https://getstream.io/",
-			Careers: "https://getstream.io/team/#jobs",
-			About:   "https://getstream.io/team/",
-			Blog:    "https://getstream.io/blog/topic/engineering/",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Stream",
+			BaseURL:    "https://getstream.io/",
+			CareersURL: "https://getstream.io/team/#jobs",
+			AboutURL:   "https://getstream.io/team/",
+			BlogURL:    "https://getstream.io/blog/topic/engineering/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                5338728,
 				Alias:             "getstream",
@@ -1817,7 +1805,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "Stream",
 			YouTubeChannelURL: "https://www.youtube.com/@streamdevelopers",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 41,
@@ -1903,13 +1890,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | Workato
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Workato",
-			Website: "https://www.workato.com/",
-			Careers: "https://www.workato.com/careers",
-			About:   "https://www.workato.com/about_us",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Workato",
+			BaseURL:    "https://www.workato.com/",
+			CareersURL: "https://www.workato.com/careers",
+			AboutURL:   "https://www.workato.com/about_us",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                3675685,
 				Alias:             "workato",
@@ -1942,7 +1929,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "Workato",
 			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 4,
@@ -2004,13 +1990,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | Form3
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Form3",
-			Website: "https://www.form3.tech/",
-			Careers: "https://www.form3.tech/careers",
-			About:   "https://www.form3.tech/about/our-story",
-			Blog:    "https://www.form3.tech/blog/engineering",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Form3",
+			BaseURL:    "https://www.form3.tech/",
+			CareersURL: "https://www.form3.tech/careers",
+			AboutURL:   "https://www.form3.tech/about/our-story",
+			BlogURL:    "https://www.form3.tech/blog/engineering",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                15156804,
 				Alias:             "form3-financial-cloud",
@@ -2051,7 +2037,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "Form3",
 			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 82,
@@ -2106,13 +2091,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | Assertive Yield
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Assertive Yield",
-			Website: "https://www.assertiveyield.com/",
-			Careers: "https://www.assertiveyield.com/careers/",
-			About:   "https://www.assertiveyield.com/about-us/",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Assertive Yield",
+			BaseURL:    "https://www.assertiveyield.com/",
+			CareersURL: "https://www.assertiveyield.com/careers/",
+			AboutURL:   "https://www.assertiveyield.com/about-us/",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                76806664,
 				Alias:             "assertive-yield",
@@ -2178,13 +2163,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | Splunk
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Splunk",
-			Website: "https://www.splunk.com/",
-			Careers: "https://www.splunk.com/en_us/careers.html",
-			About:   "https://www.splunk.com/en_us/about-splunk.html",
-			Blog:    "https://www.splunk.com/en_us/blog/learn.html",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Splunk",
+			BaseURL:    "https://www.splunk.com/",
+			CareersURL: "https://www.splunk.com/en_us/careers.html",
+			AboutURL:   "https://www.splunk.com/en_us/about-splunk.html",
+			BlogURL:    "https://www.splunk.com/en_us/blog/learn.html",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                20226,
 				Alias:             "splunk",
@@ -2225,7 +2210,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "Splunk",
 			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 49,
@@ -2377,13 +2361,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | 90POE
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "90POE",
-			Website: "https://www.90poe.io/",
-			Careers: "",
-			About:   "https://www.90poe.io/about-us",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "90POE",
+			BaseURL:    "https://www.90poe.io/",
+			CareersURL: "",
+			AboutURL:   "https://www.90poe.io/about-us",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                18466590,
 				Alias:             "90poe",
@@ -2450,13 +2434,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | HelloFresh
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "HelloFresh",
-			Website: "https://www.hellofresh.com/",
-			Careers: "https://careers.hellofresh.com/global/en",
-			About:   "https://www.hellofresh.com/about/about-us",
-			Blog:    "https://engineering.hellofresh.com/",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "HelloFresh",
+			BaseURL:    "https://www.hellofresh.com/",
+			CareersURL: "https://careers.hellofresh.com/global/en",
+			AboutURL:   "https://www.hellofresh.com/about/about-us",
+			BlogURL:    "https://engineering.hellofresh.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                2454643,
 				Alias:             "hellofresh",
@@ -2497,7 +2481,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "HelloFresh",
 			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 32,
@@ -2530,13 +2513,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | AUTODOC
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "AUTODOC",
-			Website: "https://autodoc.group/",
-			Careers: "https://autodoc.group/en/career",
-			About:   "https://autodoc.group/en/about-us",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "AUTODOC",
+			BaseURL:    "https://autodoc.group/",
+			CareersURL: "https://autodoc.group/en/career",
+			AboutURL:   "https://autodoc.group/en/about-us",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                7703911,
 				Alias:             "autodoc",
@@ -2568,7 +2551,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -2647,13 +2629,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | Gymondo
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Gymondo",
-			Website: "https://www.gymondo.com/",
-			Careers: "https://gymondo-gmbh.jobs.personio.com/",
-			About:   "https://www.gymondo.com/en/press/",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Gymondo",
+			BaseURL:    "https://www.gymondo.com/",
+			CareersURL: "https://gymondo-gmbh.jobs.personio.com/",
+			AboutURL:   "https://www.gymondo.com/en/press/",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                5233814,
 				Alias:             "gymondo-gmbh",
@@ -2686,7 +2668,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "Gymondo",
 			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 3,
@@ -2736,13 +2717,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | Delivery Hero
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Delivery Hero",
-			Website: "https://www.deliveryhero.com/",
-			Careers: "https://careers.deliveryhero.com/",
-			About:   "https://www.deliveryhero.com/about/",
-			Blog:    "https://tech.deliveryhero.com/",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Delivery Hero",
+			BaseURL:    "https://www.deliveryhero.com/",
+			CareersURL: "https://careers.deliveryhero.com/",
+			AboutURL:   "https://www.deliveryhero.com/about/",
+			BlogURL:    "https://tech.deliveryhero.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                2393200,
 				Alias:             "delivery-hero-se",
@@ -2783,7 +2764,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "Delivery-Hero",
 			YouTubeChannelURL: "https://www.youtube.com/@DeliveryHeroDH",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 16,
@@ -3025,13 +3005,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | Weaviate
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Weaviate",
-			Website: "https://weaviate.io/",
-			Careers: "https://weaviate.io/company/careers",
-			About:   "https://weaviate.io/company/about-us",
-			Blog:    "https://weaviate.io/blog/tags/engineering",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Weaviate",
+			BaseURL:    "https://weaviate.io/",
+			CareersURL: "https://weaviate.io/company/careers",
+			AboutURL:   "https://weaviate.io/company/about-us",
+			BlogURL:    "https://weaviate.io/blog/tags/engineering",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                11702022,
 				Alias:             "weaviate-io",
@@ -3094,13 +3074,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | Fubo
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Fubo",
-			Website: "https://www.fubo.tv/",
-			Careers: "https://careers.fubo.tv/",
-			About:   "https://corporate.fubo.tv/",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Fubo",
+			BaseURL:    "https://www.fubo.tv/",
+			CareersURL: "https://careers.fubo.tv/",
+			AboutURL:   "https://corporate.fubo.tv/",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                5316737,
 				Alias:             "fubotv",
@@ -3141,7 +3121,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "fubo",
 			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 8,
@@ -3173,13 +3152,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | Yassir
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Yassir",
-			Website: "https://yassir.com/",
-			Careers: "https://yassir.com/career",
-			About:   "https://yassir.com/about-us",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Yassir",
+			BaseURL:    "https://yassir.com/",
+			CareersURL: "https://yassir.com/career",
+			AboutURL:   "https://yassir.com/about-us",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                19069709,
 				Alias:             "yassir",
@@ -3216,7 +3195,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "Yassir",
 			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -3264,13 +3242,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | Vio.com
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Vio.com",
-			Website: "https://www.vio.com/",
-			Careers: "https://www.vio.com/careers",
-			About:   "https://www.vio.com/about",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Vio.com",
+			BaseURL:    "https://www.vio.com/",
+			CareersURL: "https://www.vio.com/careers",
+			AboutURL:   "https://www.vio.com/about",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1192098,
 				Alias:             "viodotcom",
@@ -3303,7 +3281,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "Vio-com",
 			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 4,
@@ -3350,13 +3327,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | Vodeno
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Vodeno",
-			Website: "https://vodeno.com/",
-			Careers: "https://vodeno.com/careers/",
-			About:   "https://vodeno.com/company/",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Vodeno",
+			BaseURL:    "https://vodeno.com/",
+			CareersURL: "https://vodeno.com/careers/",
+			AboutURL:   "https://vodeno.com/company/",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                19016391,
 				Alias:             "vodeno",
@@ -3388,7 +3365,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -3419,13 +3395,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | Utility Warehouse
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Utility Warehouse",
-			Website: "https://uw.co.uk/",
-			Careers: "https://uw.co.uk/careers",
-			About:   "https://uw.co.uk/about-us",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Utility Warehouse",
+			BaseURL:    "https://uw.co.uk/",
+			CareersURL: "https://uw.co.uk/careers",
+			AboutURL:   "https://uw.co.uk/about-us",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                457903,
 				Alias:             "utilitywarehouse",
@@ -3462,7 +3438,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "Utility-Warehouse",
 			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 110,
@@ -3537,13 +3512,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | Codenotary
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Codenotary",
-			Website: "https://codenotary.com/",
-			Careers: "https://codenotary.com/job",
-			About:   "",
-			Blog:    "https://codenotary.com/blog",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Codenotary",
+			BaseURL:    "https://codenotary.com/",
+			CareersURL: "https://codenotary.com/job",
+			AboutURL:   "",
+			BlogURL:    "https://codenotary.com/blog",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                35523736,
 				Alias:             "codenotary",
@@ -3606,13 +3581,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | Audigent
 		{
-			ID:      0,
-			Type:    "",
-			Name:    "Audigent",
-			Website: "https://audigent.com/",
-			Careers: "https://audigent.com/careers",
-			About:   "https://audigent.com/about-us",
-			Blog:    "",
+			ID:         0,
+			Type:       "",
+			Name:       "Audigent",
+			BaseURL:    "https://audigent.com/",
+			CareersURL: "https://audigent.com/careers",
+			AboutURL:   "https://audigent.com/about-us",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:    10642467,
 				Alias: "audigent",
@@ -3640,7 +3615,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "Audigent",
 			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 3,
@@ -3671,13 +3645,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | runZero
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "runZero",
-			Website: "https://www.runzero.com/",
-			Careers: "https://www.runzero.com/about/careers/",
-			About:   "https://www.runzero.com/about/",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "runZero",
+			BaseURL:    "https://www.runzero.com/",
+			CareersURL: "https://www.runzero.com/about/careers/",
+			AboutURL:   "https://www.runzero.com/about/",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                33274038,
 				Alias:             "runzero",
@@ -3714,7 +3688,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "runZero",
 			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 9,
@@ -3771,13 +3744,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | Tyk
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Tyk",
-			Website: "https://tyk.io/",
-			Careers: "https://tyk.io/current-vacancies/",
-			About:   "https://tyk.io/company/",
-			Blog:    "https://tyk.io/blog/",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Tyk",
+			BaseURL:    "https://tyk.io/",
+			CareersURL: "https://tyk.io/current-vacancies/",
+			AboutURL:   "https://tyk.io/company/",
+			BlogURL:    "https://tyk.io/blog/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                10775050,
 				Alias:             "tyk",
@@ -3863,13 +3836,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | OpenTag
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "OpenTag",
-			Website: "https://theopentag.com/",
-			Careers: "https://theopentag.com/careers/",
-			About:   "https://theopentag.com/about-us/",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "OpenTag",
+			BaseURL:    "https://theopentag.com/",
+			CareersURL: "https://theopentag.com/careers/",
+			AboutURL:   "https://theopentag.com/about-us/",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                20565935,
 				Alias:             "theopentag",
@@ -3901,7 +3874,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 3,
@@ -3935,13 +3907,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | Oxla
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Oxla",
-			Website: "https://oxla.com/",
-			Careers: "https://www.oxla.com/careers",
-			About:   "",
-			Blog:    "https://blog.oxla.com/",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Oxla",
+			BaseURL:    "https://oxla.com/",
+			CareersURL: "https://www.oxla.com/careers",
+			AboutURL:   "",
+			BlogURL:    "https://blog.oxla.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                79378182,
 				Alias:             "oxla",
@@ -3973,7 +3945,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -4001,13 +3972,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | Lightspeed
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Lightspeed",
-			Website: "https://www.lightspeedhq.com/",
-			Careers: "https://www.lightspeedhq.com/careers/",
-			About:   "https://www.lightspeedhq.com/about/",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Lightspeed",
+			BaseURL:    "https://www.lightspeedhq.com/",
+			CareersURL: "https://www.lightspeedhq.com/careers/",
+			AboutURL:   "https://www.lightspeedhq.com/about/",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1557218,
 				Alias:             "lightspeedcommerce",
@@ -4048,7 +4019,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "Lightspeed",
 			YouTubeChannelURL: "https://www.youtube.com/channel/UCqOEKwLpolZBcj4LfU3R0Fg",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -4176,13 +4146,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | Squarespace
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Squarespace",
-			Website: "https://www.squarespace.com/",
-			Careers: "https://www.squarespace.com/about/careers",
-			About:   "https://www.squarespace.com/about/company",
-			Blog:    "https://engineering.squarespace.com/",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Squarespace",
+			BaseURL:    "https://www.squarespace.com/",
+			CareersURL: "https://www.squarespace.com/about/careers",
+			AboutURL:   "https://www.squarespace.com/about/company",
+			BlogURL:    "https://engineering.squarespace.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                265314,
 				Alias:             "squarespace",
@@ -4223,7 +4193,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "https://www.youtube.com/squarespace",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 2,
@@ -4255,13 +4224,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | Curve
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Curve",
-			Website: "https://curve.com/",
-			Careers: "https://www.curve.com/en/careers",
-			About:   "",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Curve",
+			BaseURL:    "https://curve.com/",
+			CareersURL: "https://www.curve.com/en/careers",
+			AboutURL:   "",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                10023464,
 				Alias:             "curve-ltd",
@@ -4297,7 +4266,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -4387,13 +4355,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | Tradevest
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Tradevest",
-			Website: "https://www.tradevest.ai/",
-			Careers: "https://tradevest.ai/careers",
-			About:   "https://tradevest.ai/company",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Tradevest",
+			BaseURL:    "https://www.tradevest.ai/",
+			CareersURL: "https://tradevest.ai/careers",
+			AboutURL:   "https://tradevest.ai/company",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                92827682,
 				Alias:             "tradevestgmbh",
@@ -4425,7 +4393,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -4454,13 +4421,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | Woolsocks
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Woolsocks",
-			Website: "https://woolsocks.eu/",
-			Careers: "",
-			About:   "",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Woolsocks",
+			BaseURL:    "https://woolsocks.eu/",
+			CareersURL: "",
+			AboutURL:   "",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                79728837,
 				Alias:             "woolsocks",
@@ -4492,7 +4459,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 3,
@@ -4521,13 +4487,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | Applied Systems Canada
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Applied Systems Canada",
-			Website: "https://www.appliedsystems.com/",
-			Careers: "https://www1.appliedsystems.com/en-uk/about-us/jobs/",
-			About:   "https://www1.appliedsystems.com/en-uk/about-us/about-applied/",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Applied Systems Canada",
+			BaseURL:    "https://www.appliedsystems.com/",
+			CareersURL: "https://www1.appliedsystems.com/en-uk/about-us/jobs/",
+			AboutURL:   "https://www1.appliedsystems.com/en-uk/about-us/about-applied/",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                908801,
 				IDs:               nil,
@@ -4564,7 +4530,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -4649,13 +4614,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | Autodesk
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Autodesk",
-			Website: "https://www.autodesk.com/",
-			Careers: "https://www.autodesk.com/careers/overview",
-			About:   "https://www.autodesk.com/company",
-			Blog:    "https://aps.autodesk.com/blog",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Autodesk",
+			BaseURL:    "https://www.autodesk.com/",
+			CareersURL: "https://www.autodesk.com/careers/overview",
+			AboutURL:   "https://www.autodesk.com/company",
+			BlogURL:    "https://aps.autodesk.com/blog",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1879,
 				Alias:             "autodesk",
@@ -4696,7 +4661,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "Autodesk",
 			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 5,
@@ -4759,13 +4723,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | Vonage
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Vonage",
-			Website: "https://www.vonage.com/",
-			Careers: "https://www.vonage.com/careers/",
-			About:   "https://www.vonage.com/about-us/",
-			Blog:    "https://developer.vonage.com/en/blog",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Vonage",
+			BaseURL:    "https://www.vonage.com/",
+			CareersURL: "https://www.vonage.com/careers/",
+			AboutURL:   "https://www.vonage.com/about-us/",
+			BlogURL:    "https://developer.vonage.com/en/blog",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                5028,
 				IDs:               []int{2102, 5028, 66428, 76778, 1345545},
@@ -4807,7 +4771,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "Vonage",
 			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 5,
@@ -4907,13 +4870,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | OpenWeb
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "OpenWeb",
-			Website: "https://www.openweb.com/",
-			Careers: "https://www.openweb.com/jobs/",
-			About:   "https://www.openweb.com/who-we-are/",
-			Blog:    "https://www.openweb.com/blog/category/tech/",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "OpenWeb",
+			BaseURL:    "https://www.openweb.com/",
+			CareersURL: "https://www.openweb.com/jobs/",
+			AboutURL:   "https://www.openweb.com/who-we-are/",
+			BlogURL:    "https://www.openweb.com/blog/category/tech/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                2506872,
 				Alias:             "openwebhq",
@@ -4945,7 +4908,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "OpenWeb",
 			YouTubeChannelURL: "https://www.youtube.com/@openwebhq",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -4976,13 +4938,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | Arenko
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Arenko",
-			Website: "https://arenko.group/",
-			Careers: "https://arenko.group/careers/",
-			About:   "https://arenko.group/vision/",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Arenko",
+			BaseURL:    "https://arenko.group/",
+			CareersURL: "https://arenko.group/careers/",
+			AboutURL:   "https://arenko.group/vision/",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                10288973,
 				Alias:             "arenko-cleantech",
@@ -5016,7 +4978,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "Arenko-Group",
 			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 4,
@@ -5080,13 +5041,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | Xata
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Xata",
-			Website: "https://xata.io/",
-			Careers: "https://xata.io/careers",
-			About:   "https://xata.io/about",
-			Blog:    "https://xata.io/blog",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Xata",
+			BaseURL:    "https://xata.io/",
+			CareersURL: "https://xata.io/careers",
+			AboutURL:   "https://xata.io/about",
+			BlogURL:    "https://xata.io/blog",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                69560619,
 				Alias:             "xataio",
@@ -5122,7 +5083,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "Xata",
 			YouTubeChannelURL: "https://www.youtube.com/@xataio",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 4,
@@ -5151,13 +5111,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | Dojo
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Dojo",
-			Website: "https://dojo.tech/",
-			Careers: "https://dojo.careers/",
-			About:   "https://dojo.tech/about/",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Dojo",
+			BaseURL:    "https://dojo.tech/",
+			CareersURL: "https://dojo.careers/",
+			AboutURL:   "https://dojo.tech/about/",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                42391390,
 				Alias:             "dojo-tech",
@@ -5193,7 +5153,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "Dojo",
 			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -5251,13 +5210,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | Unnax
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Unnax",
-			Website: "https://www.unnax.com/",
-			Careers: "",
-			About:   "https://www.unnax.com/about/",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Unnax",
+			BaseURL:    "https://www.unnax.com/",
+			CareersURL: "",
+			AboutURL:   "https://www.unnax.com/about/",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                10295665,
 				Alias:             "unnax-emi",
@@ -5290,7 +5249,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "https://www.youtube.com/@unnax-emi",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 1,
@@ -5319,13 +5277,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | AB Tasty
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "AB Tasty",
-			Website: "https://www.abtasty.com/",
-			Careers: "https://careers.abtasty.com/",
-			About:   "https://www.abtasty.com/about-us/",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "AB Tasty",
+			BaseURL:    "https://www.abtasty.com/",
+			CareersURL: "https://careers.abtasty.com/",
+			AboutURL:   "https://www.abtasty.com/about-us/",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1885711,
 				Alias:             "ab-tasty",
@@ -5361,7 +5319,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "AB-Tasty",
 			YouTubeChannelURL: "https://www.youtube.com/@abtasty",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -5390,13 +5347,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | Firebolt
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Firebolt",
-			Website: "https://www.firebolt.io/",
-			Careers: "https://www.firebolt.io/careers",
-			About:   "https://www.firebolt.io/about-us",
-			Blog:    "https://www.firebolt.io/knowledge-center/blog",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Firebolt",
+			BaseURL:    "https://www.firebolt.io/",
+			CareersURL: "https://www.firebolt.io/careers",
+			AboutURL:   "https://www.firebolt.io/about-us",
+			BlogURL:    "https://www.firebolt.io/knowledge-center/blog",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                40719957,
 				Alias:             "firebolt",
@@ -5433,7 +5390,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "firebolt",
 			YouTubeChannelURL: "https://www.youtube.com/@FireboltHQ",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 6,
@@ -5465,13 +5421,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | Nine
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Nine",
-			Website: "https://www.nineforbrands.com.au/",
-			Careers: "https://ninecareers.com.au/",
-			About:   "https://www.nineforbrands.com.au/about/",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Nine",
+			BaseURL:    "https://www.nineforbrands.com.au/",
+			CareersURL: "https://ninecareers.com.au/",
+			AboutURL:   "https://www.nineforbrands.com.au/about/",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                14933,
 				Alias:             "nine-entertainment-co.",
@@ -5507,7 +5463,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -5539,13 +5494,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | Isovalent
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Isovalent",
-			Website: "https://isovalent.com/",
-			Careers: "https://isovalent.com/careers/",
-			About:   "https://isovalent.com/about-us/",
-			Blog:    "https://isovalent.com/resource-library/blogs/",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Isovalent",
+			BaseURL:    "https://isovalent.com/",
+			CareersURL: "https://isovalent.com/careers/",
+			AboutURL:   "https://isovalent.com/about-us/",
+			BlogURL:    "https://isovalent.com/resource-library/blogs/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                34714411,
 				Alias:             "isovalent",
@@ -5585,7 +5540,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "Isovalent",
 			YouTubeChannelURL: "https://www.youtube.com/@isovalent",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 19,
@@ -5614,13 +5568,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | ABC Fitness
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "ABC Fitness",
-			Website: "https://abcfitness.com/",
-			Careers: "https://abcfitness.com/careers/",
-			About:   "https://abcfitness.com/about/",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "ABC Fitness",
+			BaseURL:    "https://abcfitness.com/",
+			CareersURL: "https://abcfitness.com/careers/",
+			AboutURL:   "https://abcfitness.com/about/",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                110372,
 				Alias:             "abc-fitness",
@@ -5660,7 +5614,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "https://www.youtube.com/@ABC-Fitness",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -5699,13 +5652,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | Device42
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Device42",
-			Website: "https://www.device42.com/",
-			Careers: "https://jobs.lever.co/device42",
-			About:   "https://www.device42.com/company/",
-			Blog:    "https://www.device42.com/blog/category/engineering-2/",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Device42",
+			BaseURL:    "https://www.device42.com/",
+			CareersURL: "https://jobs.lever.co/device42",
+			AboutURL:   "https://www.device42.com/company/",
+			BlogURL:    "https://www.device42.com/blog/category/engineering-2/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                2345405,
 				Alias:             "device42",
@@ -5737,7 +5690,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "https://www.youtube.com/@Device42",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -5768,13 +5720,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | Acronis
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Acronis",
-			Website: "https://www.acronis.com/",
-			Careers: "https://www.acronis.com/careers/",
-			About:   "https://www.acronis.com/company/",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Acronis",
+			BaseURL:    "https://www.acronis.com/",
+			CareersURL: "https://www.acronis.com/careers/",
+			AboutURL:   "https://www.acronis.com/company/",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                13179,
 				Alias:             "acronis",
@@ -5815,7 +5767,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "https://www.youtube.com/@Acronis",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 9,
@@ -6087,13 +6038,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | Gcore
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Gcore",
-			Website: "https://gcore.com/",
-			Careers: "https://gcore.com/careers",
-			About:   "https://gcore.com/about",
-			Blog:    "https://gcore.com/blog/",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Gcore",
+			BaseURL:    "https://gcore.com/",
+			CareersURL: "https://gcore.com/careers",
+			AboutURL:   "https://gcore.com/about",
+			BlogURL:    "https://gcore.com/blog/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                10351246,
 				Alias:             "g-core",
@@ -6125,7 +6076,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "Gcore",
 			YouTubeChannelURL: "https://www.youtube.com/@GCoreOfficial",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 13,
@@ -6228,13 +6178,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | Zep AI
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Zep AI",
-			Website: "https://www.getzep.com/",
-			Careers: "https://www.getzep.com/careers",
-			About:   "",
-			Blog:    "https://blog.getzep.com/",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Zep AI",
+			BaseURL:    "https://www.getzep.com/",
+			CareersURL: "https://www.getzep.com/careers",
+			AboutURL:   "",
+			BlogURL:    "https://blog.getzep.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                97181599,
 				Alias:             "zep-ai",
@@ -6266,7 +6216,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -6297,13 +6246,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | Gelato
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Gelato",
-			Website: "https://www.gelato.com/",
-			Careers: "https://www.gelato.com/careers/careers-home",
-			About:   "https://www.gelato.com/about-gelato",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Gelato",
+			BaseURL:    "https://www.gelato.com/",
+			CareersURL: "https://www.gelato.com/careers/careers-home",
+			AboutURL:   "https://www.gelato.com/about-gelato",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                5037871,
 				Alias:             "gelato",
@@ -6343,7 +6292,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "Gelato",
 			YouTubeChannelURL: "https://www.youtube.com/@GelatoConnects",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -6404,13 +6352,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | SumUp
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "SumUp",
-			Website: "https://www.sumup.com/",
-			Careers: "https://www.sumup.com/careers/",
-			About:   "https://www.sumup.com/about/",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "SumUp",
+			BaseURL:    "https://www.sumup.com/",
+			CareersURL: "https://www.sumup.com/careers/",
+			AboutURL:   "https://www.sumup.com/about/",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                2619512,
 				Alias:             "sumup",
@@ -6451,7 +6399,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "sumup",
 			YouTubeChannelURL: "https://www.youtube.com/@SumUpGlobal",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 23,
@@ -6647,13 +6594,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | Level Home
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Level Home",
-			Website: "https://level.co/",
-			Careers: "https://level.co/about-us/careers/",
-			About:   "https://level.co/about-us/people/",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Level Home",
+			BaseURL:    "https://level.co/",
+			CareersURL: "https://level.co/about-us/careers/",
+			AboutURL:   "https://level.co/about-us/people/",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                28779237,
 				Alias:             "levelhome",
@@ -6693,7 +6640,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "Level-Home",
 			YouTubeChannelURL: "https://www.youtube.com/@LevelHome",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 1,
@@ -6731,13 +6677,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | SonicWall
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "SonicWall",
-			Website: "https://www.sonicwall.com/",
-			Careers: "https://www.sonicwall.com/about-sonicwall/careers",
-			About:   "https://www.sonicwall.com/about-sonicwall/30-year-anniversary",
-			Blog:    "https://www.sonicwall.com/blog",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "SonicWall",
+			BaseURL:    "https://www.sonicwall.com/",
+			CareersURL: "https://www.sonicwall.com/about-sonicwall/careers",
+			AboutURL:   "https://www.sonicwall.com/about-sonicwall/30-year-anniversary",
+			BlogURL:    "https://www.sonicwall.com/blog",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                4926,
 				Alias:             "sonicwall",
@@ -6778,7 +6724,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "SonicWall",
 			YouTubeChannelURL: "https://www.youtube.com/@SonicWallInc",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -6835,13 +6780,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | Pindrop
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Pindrop",
-			Website: "https://www.pindrop.com/",
-			Careers: "https://www.pindrop.com/company/careers/",
-			About:   "https://www.pindrop.com/company/",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Pindrop",
+			BaseURL:    "https://www.pindrop.com/",
+			CareersURL: "https://www.pindrop.com/company/careers/",
+			AboutURL:   "https://www.pindrop.com/company/",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                2326557,
 				Alias:             "pindrop",
@@ -6881,7 +6826,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "Pindrop",
 			YouTubeChannelURL: "https://www.youtube.com/@Pindropsecurity",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -6910,13 +6854,13 @@ func companies02Shard() []domain.CompanyProfile {
 
 		// Some | Seedtag
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Seedtag",
-			Website: "https://www.seedtag.com/",
-			Careers: "https://jobs.seedtag.com/",
-			About:   "https://www.seedtag.com/about-us/",
-			Blog:    "",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Seedtag",
+			BaseURL:    "https://www.seedtag.com/",
+			CareersURL: "https://jobs.seedtag.com/",
+			AboutURL:   "https://www.seedtag.com/about-us/",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                5171806,
 				Alias:             "seedtag",
@@ -6948,7 +6892,6 @@ func companies02Shard() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "Seedtag",
 			YouTubeChannelURL: "https://www.youtube.com/@seedtag.advertising",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 1,

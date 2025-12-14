@@ -138,7 +138,7 @@ func StreamDataPopulationCompaniesLogo(qw422016 *qt422016.Writer, companies []Co
 		qw422016.E().S(googleSearch(company.Name + " " + "logo"))
 		qw422016.N().S(`'></a>
                 <a target="_blank" href='`)
-		qw422016.E().S(googleSearchOnSite(hostname(company.Website), "logo"))
+		qw422016.E().S(googleSearchOnSite(hostname(company.BaseURL), "logo"))
 		qw422016.N().S(`'></a>
             </div>
         </div>

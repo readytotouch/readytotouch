@@ -24,8 +24,8 @@
     <li>
         <div class="company-name">{%s company.Name %}</div>
         <div class="links">
-            <a href='{%s googleSearchLevelsFyi(hostname(company.Website)) %}' target="_blank">
-                <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> site:levels.fyi {%s hostname(company.Website) %}
+            <a href='{%s googleSearchLevelsFyi(hostname(company.BaseURL)) %}' target="_blank">
+                <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> site:levels.fyi {%s hostname(company.BaseURL) %}
             </a>
             <a href='{%s googleSearchLevelsFyi(company.Name) %}' target="_blank">
                 <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> site:levels.fyi {%s company.Name %}

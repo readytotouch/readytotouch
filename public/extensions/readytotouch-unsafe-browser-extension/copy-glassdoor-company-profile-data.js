@@ -11,7 +11,8 @@ document.body.addEventListener("keydown", (event) => {
 				Reviews:     "${trim(document.querySelector("#reviews div:first-of-type span:first-of-type"))}",
 				Salaries:    "${trim(document.querySelector("#salaries div:first-of-type span:first-of-type"))}",
 				ReviewsRate: "${getEmployerRating()}",
-				Verified:    ${isEngagedEmployer() ? "true" : "false"},`
+				Verified:    ${isEngagedEmployer() ? "true" : "false"},
+				Date:        mustDate("${date()}"),`
 
         navigator.clipboard.writeText(goGlassdoorProfileColumns)
             .then(() => console.log("Page info copied to clipboard:", goGlassdoorProfileColumns))
@@ -41,4 +42,8 @@ function getEmployerRating() {
     }
 
     return "";
+}
+
+function date() {
+    return new Intl.DateTimeFormat("en-CA").format(new Date());
 }
