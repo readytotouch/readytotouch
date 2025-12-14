@@ -52,7 +52,7 @@ func (c *Controller) Companies(ctx *gin.Context) {
 	)
 	if authUserID == 0 {
 		// For the sake of the demo, we're going to return a list of companies
-		ctx.JSON(http.StatusOK, []domain.LinkedInProfileResponse{
+		ctx.JSON(http.StatusOK, []domain.LinkedInProfileShortResponse{
 			{
 				ID:    14136494,
 				Alias: "dochq",

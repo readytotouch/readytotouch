@@ -25,8 +25,8 @@
         <div class="company-name">{%s company.Name %}</div>
         <div class="links">
             {% if company.GlassdoorProfile.OverviewURL == "" %}
-            <a href='{%s googleSearchGlassdoor(hostname(company.Website)) %}' target="_blank">
-                <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> site:glassdoor.com {%s hostname(company.Website) %}
+            <a href='{%s googleSearchGlassdoor(hostname(company.BaseURL)) %}' target="_blank">
+                <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> site:glassdoor.com {%s hostname(company.BaseURL) %}
             </a>
             <a href='{%s googleSearchGlassdoor(company.Name) %}' target="_blank">
                 <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> site:glassdoor.com {%s company.Name %}
