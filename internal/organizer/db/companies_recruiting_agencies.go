@@ -1657,7 +1657,7 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Venture Search",
-			Website: "https://www.venturesearch.com/",
+			BaseURL: "https://www.venturesearch.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                52186828,
 				IDs:               nil,
