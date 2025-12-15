@@ -1285,6 +1285,10 @@ var (
 		"reducate":                            1285, // Reducate
 		"myo-healthcare":                      1286, // myo
 		"innoflight-llc":                      1287, // Innoflight
+		"alma-security":                       1288, // Alma Security
+		"scoreplay":                           1289, // ScorePlay
+		"opencosmos":                          1290, // Open Cosmos
+		"axiomhq":                             1291, // Axiom
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

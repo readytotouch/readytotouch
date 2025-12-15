@@ -264,6 +264,12 @@
     "destination_72x72": "allpay-limited.png"
   },
   {
+    "alias": "alma-security",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
+  },
+  {
     "alias": "alpine-iq",
     "source": "alpine-iq-256x256.png",
     "destination": "alpine-iq.png",
@@ -637,6 +643,12 @@
   },
   {
     "alias": "aviva-plc",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
+  },
+  {
+    "alias": "axiomhq",
     "source": "",
     "destination": "",
     "destination_72x72": ""
@@ -4620,6 +4632,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "opencosmos",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
+  },
+  {
     "alias": "opendoor-com",
     "source": "opendoor-200x200.jpeg",
     "destination": "opendoor-com.jpeg",
@@ -5722,6 +5740,12 @@
     "source": "scorebuddy-200x200.jpeg",
     "destination": "scorebuddy.jpeg",
     "destination_72x72": "scorebuddy.jpeg"
+  },
+  {
+    "alias": "scoreplay",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "scylladb",

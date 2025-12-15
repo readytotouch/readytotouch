@@ -2338,11 +2338,21 @@ func companies18Shard() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Full Stack Golang + Typescript Application Developer",
+							Title:                "Full Stack Golang + TypeScript Application Developer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4219327413/",
 							Date:                 mustDate("2025-06-10"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Full Stack Application Developer (Golang + TypeScript)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4337071140/",
+							Location:             "Cleveland, OH",
+							Date:                 mustDate("2025-12-12"),
 							WithSalary:           false,
 							Remote:               false,
 						},
