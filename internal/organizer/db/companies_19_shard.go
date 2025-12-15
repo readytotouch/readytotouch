@@ -605,8 +605,8 @@ func companies19Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4250646664/",
 							Location:             "San Jose, CA",
-							Date:                 mustDate("2025-12-08"), // mustDate("2025-11-17", "2025-10-27", "2025-10-06", "2025-09-14", "2025-08-23", "2025-08-02", "2025-07-10", "2025-06-23"),
-							WithSalary:           true,                   // $150k/yr - $175k/yr
+							Date:                 mustDate("2025-12-08", "2025-11-17", "2025-10-27", "2025-10-06", "2025-09-14", "2025-08-23", "2025-08-02", "2025-07-10", "2025-06-23"),
+							WithSalary:           true, // $150k/yr - $175k/yr
 							Remote:               false,
 						},
 						{
@@ -4693,7 +4693,7 @@ func companies19Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4244085841/",
 							Location:             "Tucson, AZ",
-							Date:                 mustDate("2025-07-16"),
+							Date:                 mustDate("2025-12-15", "2025-07-16"),
 							WithSalary:           true, // $135k/yr - $165k/yr
 							Remote:               false,
 						},
@@ -4881,6 +4881,16 @@ func companies19Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4316935978/",
 							Location:             "London, England, United Kingdom",
 							Date:                 mustDate("2025-11-20"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Middle Backend Engineer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4326815570/",
+							Location:             "London, England, United Kingdom",
+							Date:                 mustDate("2025-12-12"),
 							WithSalary:           false,
 							Remote:               false,
 						},

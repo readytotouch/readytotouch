@@ -213,6 +213,7 @@ type Vacancy struct {
 	SwitchingOpportunity string // an opportunity to apply without knowing the language, but with a willingness to learn it
 	Location             string
 	URL                  string
+	CloudProviders       []CloudProvider
 	Date                 time.Time
 	WithSalary           bool
 	Remote               bool // Fully remote available

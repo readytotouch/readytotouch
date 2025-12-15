@@ -264,6 +264,12 @@
     "destination_72x72": "allpay-limited.png"
   },
   {
+    "alias": "alma-security",
+    "source": "alma-security-200x200.jpeg",
+    "destination": "alma-security.jpeg",
+    "destination_72x72": "alma-security.jpeg"
+  },
+  {
     "alias": "alpine-iq",
     "source": "alpine-iq-256x256.png",
     "destination": "alpine-iq.png",
@@ -640,6 +646,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "axiomhq",
+    "source": "axiomhq-200x200.jpeg",
+    "destination": "axiomhq.jpeg",
+    "destination_72x72": "axiomhq.jpeg"
   },
   {
     "alias": "axis-communications",
@@ -2881,9 +2893,9 @@
   },
   {
     "alias": "greshamtech",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "greshamtech-200x200.jpeg",
+    "destination": "greshamtech.jpeg",
+    "destination_72x72": "greshamtech.jpeg"
   },
   {
     "alias": "greynoise",
@@ -4620,6 +4632,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "opencosmos",
+    "source": "opencosmos-256x256.png",
+    "destination": "opencosmos.png",
+    "destination_72x72": "opencosmos.png"
+  },
+  {
     "alias": "opendoor-com",
     "source": "opendoor-200x200.jpeg",
     "destination": "opendoor-com.jpeg",
@@ -5722,6 +5740,12 @@
     "source": "scorebuddy-200x200.jpeg",
     "destination": "scorebuddy.jpeg",
     "destination_72x72": "scorebuddy.jpeg"
+  },
+  {
+    "alias": "scoreplay",
+    "source": "scoreplay.svg",
+    "destination": "scoreplay.svg",
+    "destination_72x72": "scoreplay.svg"
   },
   {
     "alias": "scylladb",

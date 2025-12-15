@@ -305,8 +305,9 @@ func companies21Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "gresham-computing",
+				Followers: "14",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -349,7 +350,7 @@ func companies21Shard() []domain.CompanyProfile {
 					Vacancies:               []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 3,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer Clojure",
@@ -358,6 +359,16 @@ func companies21Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4294972674/",
 							Location:             "City Of Bristol, England, United Kingdom",
 							Date:                 mustDate("2025-09-03"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Clojure Backend Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4343575058/",
+							Location:             "Bangalore Urban, Karnataka, India",
+							Date:                 mustDate("2025-12-15"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -1060,7 +1071,7 @@ func companies21Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4336730403/",
 							Location:             "European Union",
-							Date:                 mustDate("2025-12-09"), // mustDate("2025-11-18"),
+							Date:                 mustDate("2025-12-09", "2025-11-18"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -3795,6 +3806,16 @@ func companies21Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Junior Software Engineer (Java/Scala)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4327605030/",
+							Location:             "Dhaka, Dhaka, Bangladesh",
+							Date:                 mustDate("2025-12-15"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Elixir: {
@@ -4512,7 +4533,7 @@ func companies21Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4292978839/",
 							Location:             "United States",
-							Date:                 mustDate("2025-11-20", "2025-09-27"),
+							Date:                 mustDate("2025-12-12", "2025-11-20", "2025-09-27"),
 							WithSalary:           true, // $119.1k/yr - $178.6k/yr
 							Remote:               true,
 						},
@@ -6102,7 +6123,7 @@ func companies21Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4312301338/",
 							Location:             "Aarhus, Central Denmark Region, Denmark",
-							Date:                 mustDate("2025-11-20", "2025-10-08"),
+							Date:                 mustDate("2025-12-13", "2025-11-20", "2025-10-08"),
 							WithSalary:           false,
 							Remote:               false,
 						},

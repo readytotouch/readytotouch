@@ -2765,6 +2765,16 @@ func companies22Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Software Engineer (Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4349645249/",
+							Location:             "Tel Aviv-Yafo, Tel Aviv District, Israel",
+							Date:                 mustDate("2025-12-12"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig: {
@@ -4675,6 +4685,16 @@ func companies22Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4340102154/",
 							Location:             "London, England, United Kingdom",
 							Date:                 mustDate("2025-11-29"),
+							WithSalary:           true, // £70k/yr - £100k/yr
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Backend Engineer – Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4343394584/",
+							Location:             "London, England, United Kingdom",
+							Date:                 mustDate("2025-12-13"),
 							WithSalary:           true, // £70k/yr - £100k/yr
 							Remote:               false,
 						},

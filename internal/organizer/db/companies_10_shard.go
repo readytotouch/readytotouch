@@ -1566,7 +1566,7 @@ func companies10Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4337081482/",
 							Location:             "Chicago, IL",
-							Date:                 mustDate("2025-11-20"),
+							Date:                 mustDate("2025-12-11", "2025-11-20"),
 							WithSalary:           true, // $165k/yr - $190k/yr + bonus
 							Remote:               false,
 						},
@@ -2303,7 +2303,7 @@ func companies10Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4303025040/",
 							Location:             "London, England, United Kingdom",
-							Date:                 mustDate("2025-11-23", "2025-10-11", "2025-09-20"),
+							Date:                 mustDate("2025-12-14", "2025-11-23", "2025-10-11", "2025-09-20"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2976,7 +2976,7 @@ func companies10Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4291342584/",
 							Location:             "Los Angeles Metropolitan Area",
-							Date:                 mustDate("2025-11-20", "2025-10-31", "2025-10-08", "2025-09-18"),
+							Date:                 mustDate("2025-12-12", "2025-11-20", "2025-10-31", "2025-10-08", "2025-09-18"),
 							WithSalary:           true, // $150k/yr - $170k/yr
 							Remote:               false,
 						},

@@ -1868,7 +1868,7 @@ func companies11Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4302532150/",
 							Location:             "Slovakia",
-							Date:                 mustDate("2025-11-23", "2025-09-19"),
+							Date:                 mustDate("2025-12-15", "2025-11-23", "2025-09-19"),
 							WithSalary:           false,
 							Remote:               true,
 						},
