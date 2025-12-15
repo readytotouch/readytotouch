@@ -2380,7 +2380,7 @@ func companies04Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4323316661/",
 							Location:             "Glendale, CA",
-							Date:                 mustDate("2025-11-20"),
+							Date:                 mustDate("2025-12-11", "2025-11-20"),
 							WithSalary:           true, // $138.9k/yr - $203.9k/yr
 							Remote:               false,
 						},

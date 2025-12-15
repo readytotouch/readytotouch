@@ -6055,7 +6055,7 @@ func companies01Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4236233809/",
 							Location:             "Budapest, Budapest, Hungary",
-							Date:                 mustDate("2025-11-29", "2025-11-06", "2025-09-04", "2025-08-14", "2025-07-23", "2025-06-18", "2025-05-28"),
+							Date:                 mustDate("2025-12-15", "2025-11-29", "2025-11-06", "2025-09-04", "2025-08-14", "2025-07-23", "2025-06-18", "2025-05-28"),
 							WithSalary:           false,
 							Remote:               false,
 						},

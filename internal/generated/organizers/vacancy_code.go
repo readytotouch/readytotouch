@@ -3506,6 +3506,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4304070735/":                                                               3057, // yondercard
 		"https://www.linkedin.com/jobs/view/4304081084/":                                                               3058, // eskimi
 		"https://www.linkedin.com/jobs/view/4320326842/":                                                               3324, // eskimi
+		"https://www.linkedin.com/jobs/view/4327605030/":                                                               3632, // eskimi
 		"https://www.linkedin.com/jobs/view/4304492468/":                                                               3059, // databento
 		"https://www.linkedin.com/jobs/view/4347516514/":                                                               3480, // databento
 		"https://www.linkedin.com/jobs/view/4302636216/":                                                               3060, // zattoo
