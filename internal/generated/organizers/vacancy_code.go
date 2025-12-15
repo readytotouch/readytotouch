@@ -3441,6 +3441,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4281830966/":                                                               3175, // autostoresystem
 		"https://jobs.ashbyhq.com/supabase/b7b2f679-c6d8-4f06-8c9e-05a6667bccfa":                                       2873, // supabase
 		"https://www.linkedin.com/jobs/view/4294972674/":                                                               2912, // greshamtech
+		"https://www.linkedin.com/jobs/view/4343575058/":                                                               3631, // greshamtech
 		"https://www.linkedin.com/jobs/view/4285039642/":                                                               2913, // joinmultiverse
 		"https://www.linkedin.com/jobs/view/4275796783/":                                                               2914, // bluerivertech
 		"https://www.linkedin.com/jobs/view/4283637769/":                                                               2915, // ultra-ic

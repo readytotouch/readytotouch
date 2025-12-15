@@ -226,8 +226,8 @@ func companies02Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4291258309/",
 							Location:             "United States",
-							Date:                 mustDate("2025-12-10"), // mustDate("2025-11-20", "2025-10-08", "2025-08-26"),
-							WithSalary:           true,                   // $180k/yr - $225k/yr
+							Date:                 mustDate("2025-12-10", "2025-11-20", "2025-10-08", "2025-08-26"),
+							WithSalary:           true, // $180k/yr - $225k/yr
 							Remote:               true,
 						},
 						{
@@ -246,7 +246,7 @@ func companies02Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4298779335/",
 							Location:             "Brno, South Moravia, Czechia",
-							Date:                 mustDate("2025-12-06"), // mustDate("2025-09-10"),
+							Date:                 mustDate("2025-12-06", "2025-09-10"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -276,7 +276,7 @@ func companies02Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4299412495/",
 							Location:             "Czechia",
-							Date:                 mustDate("2025-12-08"), // mustDate("2025-10-04"),
+							Date:                 mustDate("2025-12-08", "2025-10-04"),
 							WithSalary:           false,
 							Remote:               true,
 						},

@@ -3204,7 +3204,7 @@ func companies01Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4342344055/",
 							Location:             "United States",
-							Date:                 mustDate("2025-12-07"),
+							Date:                 mustDate("2025-12-12", "2025-12-07"),
 							WithSalary:           true, // $200.4k/yr - $275.6k/yr
 							Remote:               true,
 						},
@@ -4685,7 +4685,7 @@ func companies01Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/3696926569/",
 							Location:             "Sydney, New South Wales, Australia",
-							Date:                 mustDate("2025-12-05"), // mustDate("2025-11-12", "2025-09-09", "2025-07-23", "2025-07-01", "2025-06-08", "2025-04-26", "2025-04-05", "2025-03-13", "2025-02-19"),
+							Date:                 mustDate("2025-12-05", "2025-11-12", "2025-09-09", "2025-07-23", "2025-07-01", "2025-06-08", "2025-04-26", "2025-04-05", "2025-03-13", "2025-02-19"),
 							WithSalary:           false,
 							Remote:               true,
 						},
