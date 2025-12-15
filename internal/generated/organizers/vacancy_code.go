@@ -2875,6 +2875,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4068277723/":                                                               1572, // cabify
 		"https://www.linkedin.com/jobs/view/4214931469/":                                                               1698, // togethercomputer
 		"https://www.linkedin.com/jobs/view/4177515860/":                                                               1573, // togethercomputer
+		"https://www.linkedin.com/jobs/view/4327666626/":                                                               3633, // togethercomputer
 		"https://www.linkedin.com/jobs/view/4211721655/":                                                               1574, // telnyx
 		"https://www.linkedin.com/jobs/view/4226344237/":                                                               1854, // telnyx
 		"https://www.linkedin.com/jobs/view/4233635680/":                                                               1914, // telnyx
@@ -2890,6 +2891,7 @@ var (
 		"https://www.linkedin.com/jobs/view/3860724318/":                                                               1578, // padlet
 		"https://www.linkedin.com/jobs/view/4178411182/":                                                               1583, // prosapient
 		"https://www.linkedin.com/jobs/view/4321865679/":                                                               3369, // prosapient
+		"https://www.linkedin.com/jobs/view/4326508713/":                                                               3634, // prosapient
 		"https://www.linkedin.com/jobs/view/4075796424/":                                                               1584, // angel-studios-page
 		"https://www.linkedin.com/jobs/view/4130988748/":                                                               1585, // sleeperhq
 		"https://www.linkedin.com/jobs/view/4108509122/":                                                               1586, // cadmus-io
