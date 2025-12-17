@@ -141,25 +141,25 @@ type GlassdoorProfileResponse struct {
 }
 
 type CompanyResponse struct {
-	ID                        int64
-	Type                      CompanyType
-	Logo                      CompanyLogoResponse
-	Name                      string
-	BaseURL                   string
-	CareersURL                string
-	AboutURL                  string
-	BlogURL                   string
-	LinkedInProfile           LinkedInProfileResponse
-	GitHubProfile             GitHubProfileResponse
-	GlassdoorProfile          GlassdoorProfileResponse
-	ShortDescription          string
-	Industries                []Industry
-	CloudProviders            []CloudProvider
-	HasEmployeesFromCountries []Country
-	RustFoundationMember      bool
-	PinnedUntil               time.Time
-	Remote                    bool
-	LatestVacancyDate         time.Time
+	ID                        int64                    `json:"id"`
+	Type                      CompanyType              `json:"type"`
+	Logo                      CompanyLogoResponse      `json:"logo"`
+	Name                      string                   `json:"name"`
+	BaseURL                   string                   `json:"base_url"`
+	CareersURL                string                   `json:"careers_url"`
+	AboutURL                  string                   `json:"about_url"`
+	BlogURL                   string                   `json:"blog_url"`
+	LinkedInProfile           LinkedInProfileResponse  `json:"linkedin_profile"`
+	GitHubProfile             GitHubProfileResponse    `json:"github_profile"`
+	GlassdoorProfile          GlassdoorProfileResponse `json:"glassdoor_profile"`
+	ShortDescription          string                   `json:"short_description"`
+	Industries                []Industry               `json:"industries"`
+	CloudProviders            []CloudProvider          `json:"cloud_providers"`
+	HasEmployeesFromCountries []Country                `json:"has_employees_from_countries"`
+	RustFoundationMember      bool                     `json:"rust_foundation_member"`
+	PinnedUntil               *time.Time               `json:"pinned_until"`
+	Remote                    bool                     `json:"remote"`
+	LatestVacancyDate         *time.Time               `json:"latest_vacancy_date"`
 }
 
 type UnsafeVacancyResponse struct {
