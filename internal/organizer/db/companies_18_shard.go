@@ -3680,7 +3680,7 @@ func companies18Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4265460789/",
 							Location:             "San Francisco, CA",
-							Date:                 mustDate("2025-11-25", "2025-11-03", "2025-07-15"),
+							Date:                 mustDate("2025-12-17", "2025-11-25", "2025-11-03", "2025-07-15"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3941,6 +3941,16 @@ func companies18Shard() []domain.CompanyProfile {
 							Location:             "Germany",
 							Date:                 mustDate("2025-10-30"),
 							WithSalary:           true, // €50k/yr - €70k/yr
+							Remote:               true,
+						},
+						{
+							Title:                "Rust Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4344422351/",
+							Location:             "Germany",
+							Date:                 mustDate("2025-12-17"),
+							WithSalary:           true, // €50k/yr - €85k/yr
 							Remote:               true,
 						},
 					},
