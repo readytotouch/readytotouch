@@ -2497,5 +2497,85 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Noblesoft Technologies",
+			BaseURL: "https://www.noblesoft.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                20505073,
+				IDs:               nil,
+				Alias:             "noblesoftusa",
+				Name:              "Noblesoft Technologies",
+				Followers:         "86K",
+				Employees:         "51-200",
+				AssociatedMembers: "66",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Nearsure",
+			BaseURL: "https://nortal.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                33202229,
+				IDs:               nil,
+				Alias:             "nearsure",
+				Name:              "Nearsure",
+				Followers:         "132K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "333",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Robosoft Technologies",
+			BaseURL: "https://www.robosoftin.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                35244,
+				IDs:               nil,
+				Alias:             "robosoft-technologies",
+				Name:              "Robosoft Technologies",
+				Followers:         "97K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "1,078",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Accord Innovations",
+			BaseURL: "https://www.accordinnovations.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                10372244,
+				IDs:               nil,
+				Alias:             "accordinnovations",
+				Name:              "Accord Innovations",
+				Followers:         "66K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "358",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "OpenResearch",
+			BaseURL: "https://openresearch.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                565082,
+				IDs:               nil,
+				Alias:             "openresearch",
+				Name:              "OpenResearch",
+				Followers:         "7K",
+				Employees:         "11-50",
+				AssociatedMembers: "28",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }

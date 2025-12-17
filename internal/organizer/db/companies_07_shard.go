@@ -3306,7 +3306,7 @@ func companies07Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4337485233/",
 							Location:             "Gurugram, Haryana, India",
-							Date:                 mustDate("2025-11-26", "2025-11-05"),
+							Date:                 mustDate("2025-12-17", "2025-11-26", "2025-11-05"),
 							WithSalary:           false,
 							Remote:               false,
 						},
