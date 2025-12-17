@@ -672,6 +672,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "axxonsoft",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
+  },
+  {
     "alias": "ayloservices",
     "source": "aylo-200x200.jpeg",
     "destination": "ayloservices.jpeg",
@@ -1111,6 +1117,12 @@
   },
   {
     "alias": "careem",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
+  },
+  {
+    "alias": "careeros",
     "source": "",
     "destination": "",
     "destination_72x72": ""
@@ -1597,6 +1609,12 @@
   },
   {
     "alias": "csidedev",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
+  },
+  {
+    "alias": "cubicasa",
     "source": "",
     "destination": "",
     "destination_72x72": ""
@@ -6162,6 +6180,12 @@
     "destination_72x72": "stacklok.jpeg"
   },
   {
+    "alias": "staffbase",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
+  },
+  {
     "alias": "stairwell-inc",
     "source": "",
     "destination": "",
@@ -6534,6 +6558,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "tele2",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
+  },
+  {
     "alias": "telekom",
     "source": "",
     "destination": "",
@@ -6745,6 +6775,12 @@
   },
   {
     "alias": "timescaledb",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
+  },
+  {
+    "alias": "tipalti",
     "source": "",
     "destination": "",
     "destination_72x72": ""
@@ -6964,6 +7000,12 @@
     "source": "unanet-200x200.jpeg",
     "destination": "unanet-technologies.jpeg",
     "destination_72x72": "unanet-technologies.jpeg"
+  },
+  {
+    "alias": "unbabel",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "underdogfantasy",
