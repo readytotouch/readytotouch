@@ -673,9 +673,9 @@
   },
   {
     "alias": "axxonsoft",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "axxonsoft-200x200.jpeg",
+    "destination": "axxonsoft.jpeg",
+    "destination_72x72": "axxonsoft.jpeg"
   },
   {
     "alias": "ayloservices",
@@ -1123,9 +1123,9 @@
   },
   {
     "alias": "careeros",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "careeros-256x256.png",
+    "destination": "careeros.png",
+    "destination_72x72": "careeros.png"
   },
   {
     "alias": "cars-commerce",
@@ -1321,9 +1321,9 @@
   },
   {
     "alias": "cisco",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "cisco-200x200.jpeg",
+    "destination": "cisco.jpeg",
+    "destination_72x72": "cisco.jpeg"
   },
   {
     "alias": "citi",
@@ -1495,9 +1495,9 @@
   },
   {
     "alias": "comcast",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "comcast-200x200.jpeg",
+    "destination": "comcast.jpeg",
+    "destination_72x72": "comcast.jpeg"
   },
   {
     "alias": "command-zero",
@@ -1615,9 +1615,9 @@
   },
   {
     "alias": "cubicasa",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "cubicasa-200x200.jpeg",
+    "destination": "cubicasa.jpeg",
+    "destination_72x72": "cubicasa.jpeg"
   },
   {
     "alias": "cuju-app",
@@ -3355,9 +3355,9 @@
   },
   {
     "alias": "jetbrains",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "jetbrains-180x180.webp",
+    "destination": "jetbrains.png",
+    "destination_72x72": "jetbrains.png"
   },
   {
     "alias": "jfrog-ltd",
@@ -4165,9 +4165,9 @@
   },
   {
     "alias": "motadata",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "motadata-180x180.png",
+    "destination": "motadata.png",
+    "destination_72x72": "motadata.png"
   },
   {
     "alias": "motherduck",
@@ -4543,9 +4543,9 @@
   },
   {
     "alias": "oanda",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "oanda-180x180.png",
+    "destination": "oanda.png",
+    "destination_72x72": "oanda.png"
   },
   {
     "alias": "observe-inc",
@@ -4777,9 +4777,9 @@
   },
   {
     "alias": "paddle",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "paddle-200x200.jpeg",
+    "destination": "paddle.jpeg",
+    "destination_72x72": "paddle.jpeg"
   },
   {
     "alias": "padlet",
@@ -6181,9 +6181,9 @@
   },
   {
     "alias": "staffbase",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "staffbase-180x180.png",
+    "destination": "staffbase.png",
+    "destination_72x72": "staffbase.png"
   },
   {
     "alias": "stairwell-inc",
@@ -6559,9 +6559,9 @@
   },
   {
     "alias": "tele2",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "tele2-180x180.png",
+    "destination": "tele2.png",
+    "destination_72x72": "tele2.png"
   },
   {
     "alias": "telekom",
@@ -6781,9 +6781,9 @@
   },
   {
     "alias": "tipalti",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "tipalti-200x200.jpeg",
+    "destination": "tipalti.jpeg",
+    "destination_72x72": "tipalti.jpeg"
   },
   {
     "alias": "titanos",
@@ -7003,9 +7003,9 @@
   },
   {
     "alias": "unbabel",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "unbabel-192x192.png",
+    "destination": "unbabel.png",
+    "destination_72x72": "unbabel.png"
   },
   {
     "alias": "underdogfantasy",
