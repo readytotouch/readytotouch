@@ -1886,6 +1886,8 @@ func (c *Controller) skipSmallCompany(company domain.CompanyProfile) bool {
 	switch company.LinkedInProfile.Employees {
 	case "10K+", "5K-10K", "1K-5K", "501-1K", "201-500", "51-200":
 		return false
+	default:
+		return false
 	}
 
 	return true

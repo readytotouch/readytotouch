@@ -3129,8 +3129,9 @@ func companies17Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "oanda",
+				Followers: "101",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "OANDA",

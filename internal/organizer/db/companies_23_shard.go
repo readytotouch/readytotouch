@@ -359,8 +359,9 @@ func companies23Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "staffbase",
+				Followers: "125",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -376,7 +377,7 @@ func companies23Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 16,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Backend Engineer – Golang",
@@ -779,8 +780,9 @@ func companies23Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "tipalti",
+				Followers: "26",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -863,8 +865,9 @@ func companies23Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "Unbabel",
+				Followers: "",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -880,7 +883,7 @@ func companies23Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 3,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer (Python or Go)",
