@@ -3081,7 +3081,7 @@ func companies19Shard() []domain.CompanyProfile {
 				Name:              "RIIICO",
 				Followers:         "3K",
 				Employees:         "11-50",
-				AssociatedMembers: "",
+				AssociatedMembers: "39",
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{

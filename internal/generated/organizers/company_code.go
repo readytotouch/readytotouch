@@ -1289,6 +1289,13 @@ var (
 		"scoreplay":                           1289, // ScorePlay
 		"opencosmos":                          1290, // Open Cosmos
 		"axiomhq":                             1291, // Axiom
+		"staffbase":                           1292, // Staffbase
+		"cubicasa":                            1293, // CubiCasa
+		"axxonsoft":                           1294, // AxxonSoft
+		"careeros":                            1295, // CareerOS
+		"tele2":                               1296, // Tele2
+		"tipalti":                             1297, // Tipalti
+		"unbabel":                             1298, // Unbabel
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

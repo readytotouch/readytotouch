@@ -490,16 +490,22 @@ func companies05Shard() []domain.CompanyProfile {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:            "Senior Software Engineer: Golang/Back-End",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4057290510/",
-							Date:             mustDate("2024-10-25"),
+							Title:                "Senior Software Engineer: Golang/Back-End",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4057290510/",
+							Date:                 mustDate("2024-10-25"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 						{
-							Title:            "Staff Engineer: Golang/GCP Infrastructure",
-							ShortDescription: "",
-							URL:              "https://www.linkedin.com/jobs/view/4075815840//",
-							Date:             mustDate("2024-11-16"),
+							Title:                "Staff Engineer: Golang/GCP Infrastructure",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4075815840//",
+							Date:                 mustDate("2024-11-16"),
+							WithSalary:           false,
+							Remote:               false,
 						},
 						{
 							Title:                "Staff Software Engineer (Golang)",
@@ -564,6 +570,16 @@ func companies05Shard() []domain.CompanyProfile {
 							Location:             "Allen, TX",
 							Date:                 mustDate("2025-10-05"),
 							WithSalary:           true, // $80k/yr - $115k/yr
+							Remote:               false,
+						},
+						{
+							Title:                "Software Engineer III – Golang/C#/HTML",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4344229055/",
+							Location:             "Texas, United States",
+							Date:                 mustDate("2025-12-17"),
+							WithSalary:           true, // $78.4k/yr - $123.4k/yr
 							Remote:               false,
 						},
 					},

@@ -2720,6 +2720,16 @@ func companies03Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Backend Engineer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4344043401/",
+							Location:             "Madrid, Community of Madrid, Spain",
+							Date:                 mustDate("2025-12-17"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -5218,6 +5228,16 @@ func companies03Shard() []domain.CompanyProfile {
 							Date:                 mustDate("2025-08-16"),
 							WithSalary:           true, // $130k/yr - $140k/yr
 							Remote:               true,
+						},
+						{
+							Title:                "Scala Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4328001277/",
+							Location:             "Jersey City, NJ",
+							Date:                 mustDate("2025-12-17"),
+							WithSalary:           true, // $110k/yr - $120k/yr
+							Remote:               false,
 						},
 					},
 				},

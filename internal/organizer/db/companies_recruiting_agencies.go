@@ -1670,5 +1670,69 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Mission.dev",
+			BaseURL: "https://mission.dev/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                11433068,
+				IDs:               nil,
+				Alias:             "mission-dev",
+				Name:              "Mission.dev",
+				Followers:         "13K",
+				Employees:         "51-200",
+				AssociatedMembers: "61",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "RSight®",
+			BaseURL: "https://www.rsight.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                82153566,
+				IDs:               nil,
+				Alias:             "rsight",
+				Name:              "RSight®",
+				Followers:         "62K",
+				Employees:         "11-50",
+				AssociatedMembers: "27",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "The Planet Group",
+			BaseURL: "https://www.theplanetgroup.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                12651721,
+				IDs:               []int{3364772, 3504797, 12651721},
+				Alias:             "the-planet-group",
+				Name:              "The Planet Group",
+				Followers:         "1M",
+				Employees:         "1K-5K",
+				AssociatedMembers: "1,469",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Instaffo",
+			BaseURL: "https://www.instaffo.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                10348996,
+				IDs:               nil,
+				Alias:             "instaffo-gmbh",
+				Name:              "Instaffo",
+				Followers:         "21K",
+				Employees:         "51-200",
+				AssociatedMembers: "96",
+				Verified:          false,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }

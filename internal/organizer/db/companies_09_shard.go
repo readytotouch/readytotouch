@@ -4242,7 +4242,7 @@ func companies09Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4326256238/",
 							Location:             "Austin, TX",
-							Date:                 mustDate("2025-12-09"),
+							Date:                 mustDate("2025-12-17", "2025-12-09"),
 							WithSalary:           true, // $143.2k/yr - $207.8k/yr
 							Remote:               false,
 						},

@@ -1013,8 +1013,9 @@ func companies08Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "paddlehq",
+				Followers: "145",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -1040,7 +1041,7 @@ func companies08Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 11,
+					GitHubRepositoriesCount: 13,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer — Go",
@@ -1093,6 +1094,16 @@ func companies08Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4223016878/",
 							Date:                 mustDate("2025-05-07"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+						{
+							Title:                "Software Engineer – Go",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4344483381/",
+							Location:             "Portugal",
+							Date:                 mustDate("2025-12-17"),
 							WithSalary:           false,
 							Remote:               true,
 						},

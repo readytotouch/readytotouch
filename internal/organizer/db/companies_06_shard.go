@@ -1066,7 +1066,7 @@ func companies06Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4315242315/",
 							Location:             "Helsinki, Uusimaa, Finland",
-							Date:                 mustDate("2025-10-17"),
+							Date:                 mustDate("2025-12-17", "2025-10-17"),
 							WithSalary:           false,
 							Remote:               false,
 						},
