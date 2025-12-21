@@ -2898,7 +2898,7 @@ func companies22Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4306246217/",
 							Location:             "Ghent, Flemish Region, Belgium",
-							Date:                 mustDate("2025-11-29"),
+							Date:                 mustDate("2025-12-21", "2025-11-29"),
 							WithSalary:           false,
 							Remote:               false,
 						},
