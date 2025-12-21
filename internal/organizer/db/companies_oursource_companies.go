@@ -2593,5 +2593,21 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Pontis Technology",
+			BaseURL: "https://pontistechnology.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                80232643,
+				IDs:               nil,
+				Alias:             "pontis-technology",
+				Name:              "Pontis Technology",
+				Followers:         "5K",
+				Employees:         "51-200",
+				AssociatedMembers: "108",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }

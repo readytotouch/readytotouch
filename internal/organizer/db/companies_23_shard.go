@@ -980,7 +980,7 @@ func companies23Shard() []domain.CompanyProfile {
 				},
 				domain.Scala: {
 					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{
+					Vacancies: []domain.Vacancy{
 						{
 							Title:                "(Senior) Cloud Scala Engineer",
 							ShortDescription:     "AI Platform",
@@ -1011,7 +1011,7 @@ func companies23Shard() []domain.CompanyProfile {
 				},
 			},
 			ShortDescription: "CARIAD is the automotive software company of the Volkswagen Group",
-			Industries:       []domain.Industry{
+			Industries: []domain.Industry{
 				domain.IndustryAutomotive,
 			},
 		},

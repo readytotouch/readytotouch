@@ -4019,6 +4019,16 @@ func companies16Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $30k/yr - $45k/yr
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Full Stack Developer | Elixir, Phoenix, LiveView",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4345561102/",
+							Location:             "Philippines",
+							Date:                 mustDate("2025-12-21"),
+							WithSalary:           true, // $30k/yr - $45k/yr
+							Remote:               true,
+						},
 					},
 				},
 				domain.Clojure: {},
