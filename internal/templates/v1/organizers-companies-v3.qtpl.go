@@ -98,7 +98,7 @@ func StreamOrganizersCompaniesV3(qw422016 *qt422016.Writer,
 </head>
 
 <body>
-<div class="main-wrapper main-wrapper--organizer-inner">
+<div class="main-wrapper main-wrapper--organizer-inner" data-companies-page-version="3">
 <header class="header">
   <div class="header__wrapper">
     <a href="/`)

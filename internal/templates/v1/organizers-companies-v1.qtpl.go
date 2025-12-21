@@ -62,7 +62,7 @@ func StreamOrganizersCompaniesV1(qw422016 *qt422016.Writer,
 	qw422016.N().S(`
 </head>
 
-<body class="organizer-companies-inner">
+<body class="organizer-companies-inner" data-companies-page-version="1">
 <main class="main-wrapper">
 	<header class="header">
   <div class="header__wrapper">
