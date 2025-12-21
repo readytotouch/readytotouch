@@ -232,7 +232,7 @@ unsafe-browser-extension:
 		&& zip -r readytotouch-unsafe-browser-extension.zip readytotouch-unsafe-browser-extension \
 		&& chmod 777 readytotouch-unsafe-browser-extension.zip
 
-# make more-companies-linkedin VERSION=108
+# make more-companies-linkedin VERSION=109
 more-companies-linkedin:
 ifndef VERSION
 	$(error VERSION is not set. Use `make more-companies-linkedin VERSION=X`)
@@ -241,7 +241,7 @@ endif
 	git checkout -b more-companies-linkedin-december-2025-v$(VERSION)
 	git commit -m "More companies LinkedIn December 2025 v$(VERSION)" --allow-empty
 
-# make more-companies-welcome-to-the-jungle VERSION=108
+# make more-companies-welcome-to-the-jungle VERSION=109
 more-companies-welcome-to-the-jungle:
 ifndef VERSION
 	$(error VERSION is not set. Use `make more-companies-welcome-to-the-jungle VERSION=X`)
@@ -250,7 +250,7 @@ endif
 	git checkout -b more-companies-welcome-to-the-jungle-december-2025-v$(VERSION)
 	git commit -m "More companies Welcome to the Jungle December 2025 v$(VERSION)" --allow-empty
 
-# make more-companies-indeed VERSION=108
+# make more-companies-indeed VERSION=109
 more-companies-indeed:
 ifndef VERSION
 	$(error VERSION is not set. Use `make more-companies-indeed VERSION=X`)
