@@ -19,7 +19,6 @@ import {Alias} from "./framework/alias";
 import {renderSelected} from "./framework/selected_criteria";
 import {firstQuerySelector} from "./framework/query_selector";
 import {setStateByURLMapper} from "./framework/set_state_by_url";
-import {toEnter} from "./framework/enter";
 import {responsiveHeaderProfileWidget} from "./responsive-header-profile-widget";
 import {githubStarsWidget} from "./github-stars-widget";
 import {responsiveFilterWidget} from "./responsive-filter-widget";
@@ -69,7 +68,7 @@ $companies.forEach(function ($company: HTMLElement) {
     });
 });
 
-
+const $form = document.getElementById("js-company-search-form");
 const $search = document.getElementById("js-company-query") as HTMLInputElement;
 const $typeCheckboxes = new InputCheckboxes(document.querySelectorAll("input.js-criteria-company-type") as any as Array<HTMLInputElement>);
 const $industryCheckboxes = new InputCheckboxes(document.querySelectorAll("input.js-criteria-company-industry") as any as Array<HTMLInputElement>);
@@ -235,11 +234,13 @@ const handleSearch = function () {
     search();
 }
 
-$search.addEventListener("keyup", toEnter(handleSearch));
-$search.addEventListener("change", function () {
+$form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
     urlStateContainer.setStringCriteria(COMPANY_SEARCH_QUERY, $search.value);
+
+    handleSearch();
 });
-$search.addEventListener("search", handleSearch);
 
 for (const $resetButton of $resetButtons) {
     $resetButton.addEventListener("click", function () {

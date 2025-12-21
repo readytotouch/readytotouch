@@ -103,18 +103,27 @@
   <section class="search-container container">
     <div class="search search--projects search--organizer search--with-sort">
       <div class="search__input-group">
-        <input class="search__input" id="js-vacancy-query" type="text" placeholder="Search" />
-        {% comment %}
-        <!--
-          <input class="search__input" id="js-vacancy-query" type="text" placeholder="Search" list="js-vacancy-query-datalist" />
-          <datalist id="js-vacancy-query-datalist">
-            {% for _, company := range companies %}
-              <option value="{%s company.Name %}"></option>
-            {% endfor %}
-          </datalist>
-        -->
-        {% endcomment %}
-        <img class="search__icon" alt="Search icon" width="20" height="20" src="/assets/images/pages/common/search.svg" />
+        <form id="js-vacancy-search-form">
+          <input
+            class="search__input"
+            id="js-vacancy-query"
+            type="search"
+            name="search"
+            placeholder="Search"
+          />
+          {% comment %}
+          <!-- Commented out because this autocomplete shifts to the right when viewing  -->
+          <!--
+            <input class="search__input" id="js-vacancy-query" type="search" name="search" placeholder="Search" list="js-vacancy-query-datalist" />
+            <datalist id="js-vacancy-query-datalist">
+              {% for _, company := range companies %}
+                <option value="{%s company.Name %}"></option>
+              {% endfor %}
+            </datalist>
+          -->
+          {% endcomment %}
+          <img class="search__icon" alt="Search icon" width="20" height="20" src="/assets/images/pages/common/search.svg" />
+        </form>
       </div>
       <button type="button" class="mobile-filter js-mobile-open-filter-container-button">
         <img

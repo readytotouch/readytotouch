@@ -176,19 +176,28 @@ func StreamOrganizersCompaniesV2(qw422016 *qt422016.Writer,
 <section class="search-container container">
   <div class="search search--projects search--organizer">
     <div class="search__input-group">
-      <input class="search__input" id="js-company-query" type="search" name="search" placeholder="Search" list="js-company-query-datalist" />
-      <datalist id="js-company-query-datalist">
-        `)
+      <form id="js-company-search-form">
+        <input
+          class="search__input"
+          id="js-company-query"
+          type="search"
+          name="search"
+          placeholder="Search"
+          list="js-company-query-datalist"
+        />
+        <datalist id="js-company-query-datalist">
+          `)
 	for _, company := range companies {
 		qw422016.N().S(`
-          <option value="`)
+            <option value="`)
 		qw422016.E().S(company.Name)
 		qw422016.N().S(`"></option>
-        `)
+          `)
 	}
 	qw422016.N().S(`
-      </datalist>
-      <img class="search__icon" alt="Search icon" width="20" height="20" src="/assets/images/pages/common/search.svg" />
+        </datalist>
+        <img class="search__icon" alt="Search icon" width="20" height="20" src="/assets/images/pages/common/search.svg" />
+      </form>
     </div>
   </div>
 </section>
