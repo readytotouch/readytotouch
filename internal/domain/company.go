@@ -211,8 +211,8 @@ type Vacancy struct {
 	SubTitle             string // @TODO, for future use, design
 	ShortDescription     string // proof that the vacancy is for a particular technology
 	SwitchingOpportunity string // an opportunity to apply without knowing the language, but with a willingness to learn it
-	Location             string
 	URL                  string
+	Location             string
 	CloudProviders       []CloudProvider
 	Date                 time.Time
 	WithSalary           bool

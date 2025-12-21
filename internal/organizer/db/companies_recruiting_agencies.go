@@ -1734,5 +1734,21 @@ func companiesRecruitingAgencies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Methodius Ltd",
+			BaseURL: "https://www.methodius.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1573653,
+				IDs:               nil,
+				Alias:             "methodius-ltd",
+				Name:              "Methodius Ltd",
+				Followers:         "43K",
+				Employees:         "2-10",
+				AssociatedMembers: "",
+				Verified:          false,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }

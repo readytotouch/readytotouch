@@ -1296,6 +1296,7 @@ var (
 		"tele2":                               1296, // Tele2
 		"tipalti":                             1297, // Tipalti
 		"unbabel":                             1298, // Unbabel
+		"cariad-tech":                         1299, // CARIAD
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

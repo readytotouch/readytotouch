@@ -2340,6 +2340,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4234091866/":                                                               2114, // moia_mobility
 		"https://www.linkedin.com/jobs/view/4299194364/":                                                               2957, // moia_mobility
 		"https://www.linkedin.com/jobs/view/4335652535/":                                                               3363, // moia_mobility
+		"https://www.linkedin.com/jobs/view/4344861215/":                                                               3682, // moia_mobility
 		"https://www.linkedin.com/jobs/view/4157443306/":                                                               904,  // t-mobile
 		"https://www.linkedin.com/jobs/view/4157846786/":                                                               919,  // abb
 		"https://www.linkedin.com/jobs/view/4202619723/":                                                               1847, // abb
@@ -2848,6 +2849,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4280216814/":                                                               2662, // wasmerio
 		"https://www.linkedin.com/jobs/view/4207708792/":                                                               1516, // takealot
 		"https://www.linkedin.com/jobs/view/4248316240/":                                                               2090, // takealot
+		"https://www.linkedin.com/jobs/view/4344017731/":                                                               3683, // takealot
 		"https://www.linkedin.com/jobs/view/4260914833/":                                                               2248, // maropost
 		"https://www.linkedin.com/jobs/view/4309796286/":                                                               3161, // maropost
 		"https://www.linkedin.com/jobs/view/4207470731/":                                                               1517, // maropost
@@ -3329,6 +3331,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4262532716/":                                                               2366, // oxiocorp
 		"https://www.linkedin.com/jobs/view/4263012229/":                                                               2385, // bellroy
 		"https://www.linkedin.com/jobs/view/4278484490/":                                                               2590, // bellroy
+		"https://www.linkedin.com/jobs/view/4344944525/":                                                               3684, // bellroy
 		"https://www.linkedin.com/jobs/view/4266554424/":                                                               2415, // aziontech
 		"https://www.linkedin.com/jobs/view/4266549864/":                                                               2386, // aziontech
 		"https://www.linkedin.com/jobs/view/4249280373/":                                                               2416, // riverside-research
@@ -3646,6 +3649,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4323860548/":                                                               3501, // botify
 		"https://www.linkedin.com/jobs/view/4338701346/":                                                               3516, // vara-ai
 		"https://www.linkedin.com/jobs/view/4320575418/":                                                               3518, // loopme
+		"https://www.linkedin.com/jobs/view/4320792285/":                                                               3685, // loopme
 		"https://www.linkedin.com/jobs/view/4339118450/":                                                               3519, // smartclip
 		"https://www.linkedin.com/jobs/view/4338746366/":                                                               3522, // jump-app-ai
 		"https://www.linkedin.com/jobs/view/4324393869/":                                                               3523, // fresh-clinics
@@ -3663,6 +3667,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4285040837/":                                                               3550, // foxglovedev
 		"https://www.linkedin.com/jobs/view/4285041821/":                                                               3583, // foxglovedev
 		"https://www.linkedin.com/jobs/view/4341524010/":                                                               3554, // sky
+		"https://www.linkedin.com/jobs/view/4327994781/":                                                               3686, // sky
 		"https://www.linkedin.com/jobs/view/4325399277/":                                                               3563, // reducate
 		"https://www.linkedin.com/jobs/view/4348395855/":                                                               3574, // myo-healthcare
 		"https://www.linkedin.com/jobs/view/4343181290/":                                                               3584, // innoflight-llc
@@ -3677,6 +3682,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4344015925/":                                                               3679, // tele2
 		"https://www.linkedin.com/jobs/view/4338655342/":                                                               3680, // tipalti
 		"https://www.linkedin.com/jobs/view/4314026533/":                                                               3681, // unbabel
+		"https://www.linkedin.com/jobs/view/4344599600/":                                                               3687, // cariad-tech
 		"https://www.linkedin.com/jobs/view/3914839625/":                                                               372,  // cognizant
 		"https://www.linkedin.com/jobs/view/4120737001/":                                                               600,  // cognizant
 		"https://www.linkedin.com/jobs/view/4149258542/":                                                               787,  // cognizant

@@ -192,6 +192,7 @@ var (
 		"caredotcom":                          "",
 		"careem":                              "",
 		"careeros":                            "careeros.png",
+		"cariad-tech":                         "cariad-tech.png",
 		"cars-commerce":                       "cars-commerce.jpeg",
 		"cast-ai":                             "",
 		"castoredc":                           "",

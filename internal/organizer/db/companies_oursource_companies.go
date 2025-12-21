@@ -2577,5 +2577,21 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Comarch",
+			BaseURL: "https://www.comarch.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3529,
+				IDs:               []int{3529, 341100, 9488817},
+				Alias:             "comarch",
+				Name:              "Comarch",
+				Followers:         "88K",
+				Employees:         "5K-10K",
+				AssociatedMembers: "5,248",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }

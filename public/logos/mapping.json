@@ -1128,6 +1128,12 @@
     "destination_72x72": "careeros.png"
   },
   {
+    "alias": "cariad-tech",
+    "source": "cariad-tech-180x180.png",
+    "destination": "cariad-tech.png",
+    "destination_72x72": "cariad-tech.png"
+  },
+  {
     "alias": "cars-commerce",
     "source": "cars-commerce-200x200.jpeg",
     "destination": "cars-commerce.jpeg",
