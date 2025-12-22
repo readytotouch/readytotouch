@@ -493,7 +493,7 @@ func companies09Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4334507022/",
 							Location:             "Carlsbad, CA",
-							Date:                 mustDate("2025-11-28", "2025-11-07"),
+							Date:                 mustDate("2025-12-20", "2025-11-28", "2025-11-07"),
 							WithSalary:           true, // $140k/yr - $180k/yr
 							Remote:               false,
 						},

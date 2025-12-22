@@ -97,7 +97,7 @@ func StreamOrganizersVacanciesV2(qw422016 *qt422016.Writer,
 	qw422016.N().S(`
 </head>
 
-<body class="organizer-companies-inner">
+<body class="organizer-companies-inner" data-vacancies-page-version="2">
 <main class="main-wrapper">
 	<header class="header">
   <div class="header__wrapper">
@@ -176,10 +176,18 @@ func StreamOrganizersVacanciesV2(qw422016 *qt422016.Writer,
 <section class="search-container container">
   <div class="search search--org-vacancies search--organizer">
     <div class="search__input-group">
-      <input class="search__input" id="js-vacancy-query" type="search" name="search" placeholder="Search" />
-      `)
+      <form id="js-vacancy-search-form">
+        <input
+          class="search__input"
+          id="js-vacancy-query"
+          type="search"
+          name="search"
+          placeholder="Search"
+        />
+        `)
 	qw422016.N().S(`
-      <img class="search__icon" alt="Search icon" width="20" height="20" src="/assets/images/pages/common/search.svg" />
+        <img class="search__icon" alt="Search icon" width="20" height="20" src="/assets/images/pages/common/search.svg" />
+      </form>
     </div>
     `)
 	qw422016.N().S(`

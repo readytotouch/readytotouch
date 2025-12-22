@@ -1445,7 +1445,7 @@ func companies17Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4334670217/",
 							Location:             "Long Beach, CA",
-							Date:                 mustDate("2025-11-29", "2025-11-06"),
+							Date:                 mustDate("2025-12-21", "2025-11-29", "2025-11-06"),
 							WithSalary:           true, // $90k/yr - $125k/yr
 							Remote:               false,
 						},
