@@ -426,7 +426,7 @@ func companies06Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4333787149/",
 							Location:             "Berlin, Berlin, Germany",
-							Date:                 mustDate("2025-11-28", "2025-11-06"),
+							Date:                 mustDate("2025-12-20", "2025-11-28", "2025-11-06"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -682,7 +682,21 @@ func companies06Shard() []domain.CompanyProfile {
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
-				domain.Go: {},
+				domain.Go: {
+					GitHubRepositoriesCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Backend Engineer (Ruby/Go)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4344788323/",
+							Location:             "Barcelona, Catalonia, Spain",
+							Date:                 mustDate("2025-12-19"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
 				domain.Rust: {
 					GitHubRepositoriesCount: 0,
 					Vacancies: []domain.Vacancy{
@@ -4239,7 +4253,7 @@ func companies06Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4304549313/",
 							Location:             "Prague, Prague, Czechia",
-							Date:                 mustDate("2025-11-29"),
+							Date:                 mustDate("2025-12-20", "2025-11-29"),
 							WithSalary:           false,
 							Remote:               false,
 						},

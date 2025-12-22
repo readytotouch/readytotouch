@@ -615,6 +615,16 @@ func companies07Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $128k/yr - $186k/yr
 							Remote:               false,
 						},
+						{
+							Title:                "Principal Software Engineer (React/Golang)",
+							ShortDescription:     "Peer Communities",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4321299626/",
+							Location:             "Stamford, CT",
+							Date:                 mustDate("2025-12-21"),
+							WithSalary:           true, // $128k/yr - $186k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -4053,7 +4063,7 @@ func companies07Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4308021859/",
 							Location:             "San Jose, CA",
-							Date:                 mustDate("2025-11-20", "2025-10-15", "2025-09-30"),
+							Date:                 mustDate("2025-12-19", "2025-11-20", "2025-10-15", "2025-09-30"),
 							WithSalary:           true, // $182k/yr - $260k/yr
 							Remote:               false,
 						},
@@ -4086,6 +4096,16 @@ func companies07Shard() []domain.CompanyProfile {
 							Date:                 mustDate("2025-12-12"),
 							WithSalary:           false,
 							Remote:               false,
+						},
+						{
+							Title:                "Senior Staff Software Engineer – Golang, JavaScript",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4344827414/",
+							Location:             "United States",
+							Date:                 mustDate("2025-12-20"),
+							WithSalary:           true, // $154k/yr - $220k/yr
+							Remote:               true,
 						},
 					},
 				},
@@ -6368,7 +6388,7 @@ func companies07Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4302403574/",
 							Location:             "Cracow, Małopolskie, Poland",
-							Date:                 mustDate("2025-11-29"),
+							Date:                 mustDate("2025-12-21", "2025-11-29"),
 							WithSalary:           false,
 							Remote:               false,
 						},

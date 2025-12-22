@@ -3458,6 +3458,16 @@ func companies19Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Lead Go Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4350205847/",
+							Location:             "Montreal, QC",
+							Date:                 mustDate("2025-12-20"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust: {
@@ -4904,6 +4914,16 @@ func companies19Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Backend Engineer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4326738236/",
+							Location:             "London, England, United Kingdom",
+							Date:                 mustDate("2025-12-20"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
@@ -5737,6 +5757,16 @@ func companies19Shard() []domain.CompanyProfile {
 							Location:             "Santa Clara, CA",
 							Date:                 mustDate("2025-12-06"),
 							WithSalary:           true, // $184k/yr - $356.5k/yr
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Systems Software Engineer, Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4334602023/",
+							Location:             "Santa Clara, CA",
+							Date:                 mustDate("2025-12-20"),
+							WithSalary:           true, // $148k/yr - $287.5k/yr
 							Remote:               false,
 						},
 					},
