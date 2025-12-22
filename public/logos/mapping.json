@@ -763,9 +763,9 @@
   },
   {
     "alias": "bedrock-streaming",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "bedrock-streaming-200x200.jpeg",
+    "destination": "bedrock-streaming.jpeg",
+    "destination_72x72": "bedrock-streaming.jpeg"
   },
   {
     "alias": "bell",
@@ -4105,9 +4105,9 @@
   },
   {
     "alias": "moia_mobility",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "moia_mobility-200x200.jpeg",
+    "destination": "moia_mobility.jpeg",
+    "destination_72x72": "moia_mobility.jpeg"
   },
   {
     "alias": "mondoo",
@@ -6499,9 +6499,9 @@
   },
   {
     "alias": "takealot",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "takealot-180x180.png",
+    "destination": "takealot.png",
+    "destination_72x72": "takealot.png"
   },
   {
     "alias": "takt-io",
@@ -6529,9 +6529,9 @@
   },
   {
     "alias": "tazapay",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "tazapay-256x256.png",
+    "destination": "tazapay.png",
+    "destination_72x72": "tazapay.png"
   },
   {
     "alias": "td",
