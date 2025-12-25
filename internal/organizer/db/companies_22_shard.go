@@ -2576,6 +2576,16 @@ func companies22Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Software Engineer (Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4328546895/",
+							Location:             "Rome, Latium, Italy",
+							Date:                 mustDate("2025-12-23"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig: {
@@ -5524,6 +5534,16 @@ func companies22Shard() []domain.CompanyProfile {
 							Location:             "New South Wales, Australia",
 							Date:                 mustDate("2025-12-06"),
 							WithSalary:           true, // $180k/yr - $220k/yr
+							Remote:               true,
+						},
+						{
+							Title:                "Frontend Engineer (JavaScript, Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/search/",
+							Location:             "United States",
+							Date:                 mustDate("2025-12-25"),
+							WithSalary:           false,
 							Remote:               true,
 						},
 					},

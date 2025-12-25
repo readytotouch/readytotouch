@@ -23,15 +23,13 @@ document.body.addEventListener("keydown", (event) => {
             .replace("Back End", "Back-End")
         ;
 
-        const url = normalizeURL(window.location.origin + window.location.pathname);
-
         const [withSalary, salaryComment] = salary();
 
         const goLinkedInVacancyColumns = `{
 						    Title:                "${title}",
 						    ShortDescription:     "",
 						    SwitchingOpportunity: "",
-						    URL:                  "${url}",
+						    URL:                  "${normalizeVacancyURL()}",
 						    Location:             "${vacancyLocation()}",
 						    Date:                 mustDate("${date()}"),
 						    WithSalary:           ${withSalary ? "true" : "false"},${salaryComment}
@@ -191,6 +189,18 @@ function date() {
     }
 
     return new Intl.DateTimeFormat("en-CA").format(new Date());
+}
+
+function normalizeVacancyURL() {
+    if (window.location.href.startsWith("https://www.linkedin.com/jobs/search/")) {
+        const params = new URLSearchParams(window.location.search);
+
+        const id = params.get("currentJobId");
+
+        return normalizeURL(`https://www.linkedin.com/jobs/view/${id}/`);
+    }
+
+    return normalizeURL(window.location.origin + window.location.pathname);
 }
 
 function normalizeURL(url) {

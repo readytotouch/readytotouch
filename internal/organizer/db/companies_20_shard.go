@@ -4283,7 +4283,7 @@ func companies20Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4297667474/",
 							Location:             "Luxembourg, Luxembourg, Luxembourg",
-							Date:                 mustDate("2025-10-01", "2025-09-09"),
+							Date:                 mustDate("2025-12-25", "2025-10-01", "2025-09-09"),
 							WithSalary:           false,
 							Remote:               false,
 						},

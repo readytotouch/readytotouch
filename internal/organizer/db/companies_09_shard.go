@@ -5535,6 +5535,16 @@ func companies09Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Junior Rust Embedded Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4345863795/",
+							Location:             "Taunton, MA",
+							Date:                 mustDate("2025-12-23"),
+							WithSalary:           true, // $102.6k/yr - $108k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig:     {},
