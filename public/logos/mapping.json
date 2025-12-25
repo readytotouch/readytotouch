@@ -4656,6 +4656,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "openai",
+    "source": "openai-180x180.png",
+    "destination": "openai.png",
+    "destination_72x72": "openai.png"
+  },
+  {
     "alias": "opencosmos",
     "source": "opencosmos-256x256.png",
     "destination": "opencosmos.png",

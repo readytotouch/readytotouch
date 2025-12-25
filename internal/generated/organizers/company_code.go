@@ -1297,6 +1297,7 @@ var (
 		"tipalti":                             1297, // Tipalti
 		"unbabel":                             1298, // Unbabel
 		"cariad-tech":                         1299, // CARIAD
+		"openai":                              1300, // OpenAI
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

@@ -780,6 +780,7 @@ var (
 		"onesignal":                           "",
 		"onfy":                                "",
 		"oolio-au":                            "",
+		"openai":                              "openai.png",
 		"opencosmos":                          "opencosmos.png",
 		"opendoor-com":                        "opendoor-com.jpeg",
 		"openprovider":                        "",
