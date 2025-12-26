@@ -7512,6 +7512,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "wix-com",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
+  },
+  {
     "alias": "wolt-oy",
     "source": "wolt-200x200.jpeg",
     "destination": "wolt-oy.jpeg",
@@ -7729,6 +7735,12 @@
   },
   {
     "alias": "zoom",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
+  },
+  {
+    "alias": "zorgdomein",
     "source": "",
     "destination": "",
     "destination_72x72": ""

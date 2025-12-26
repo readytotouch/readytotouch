@@ -1301,6 +1301,8 @@ var (
 		"cargill":                             1301, // Cargill
 		"sardineai":                           1302, // Sardine
 		"appdirect":                           1303, // AppDirect
+		"wix-com":                             1304, // Wix
+		"zorgdomein":                          1305, // ZorgDomein
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 
