@@ -1298,6 +1298,9 @@ var (
 		"unbabel":                             1298, // Unbabel
 		"cariad-tech":                         1299, // CARIAD
 		"openai":                              1300, // OpenAI
+		"cargill":                             1301, // Cargill
+		"sardineai":                           1302, // Sardine
+		"appdirect":                           1303, // AppDirect
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

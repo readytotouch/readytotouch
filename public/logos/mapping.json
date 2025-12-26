@@ -390,6 +390,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "appdirect",
+    "source": "appdirect-200x200.jpeg",
+    "destination": "appdirect.jpeg",
+    "destination_72x72": "appdirect.jpeg"
+  },
+  {
     "alias": "appear-net",
     "source": "",
     "destination": "",
@@ -1126,6 +1132,12 @@
     "source": "careeros-256x256.png",
     "destination": "careeros.png",
     "destination_72x72": "careeros.png"
+  },
+  {
+    "alias": "cargill",
+    "source": "cargill-200x200.jpeg",
+    "destination": "cargill.jpeg",
+    "destination_72x72": "cargill.jpeg"
   },
   {
     "alias": "cariad-tech",
@@ -5704,6 +5716,12 @@
     "source": "sap-180x180.png",
     "destination": "sap.png",
     "destination_72x72": "sap.png"
+  },
+  {
+    "alias": "sardineai",
+    "source": "sardineai-256x256.png",
+    "destination": "sardineai.png",
+    "destination_72x72": "sardineai.png"
   },
   {
     "alias": "sas",
