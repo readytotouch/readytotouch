@@ -702,7 +702,7 @@ func companies22Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4322153707/",
 							Location:             "Belgrade, Serbia",
-							Date:                 mustDate("2025-12-05", "2025-11-13"),
+							Date:                 mustDate("2025-12-26", "2025-12-05", "2025-11-13"),
 							WithSalary:           false,
 							Remote:               false,
 						},

@@ -3508,7 +3508,7 @@ func companies08Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4322082598/",
 							Location:             "Vietnam",
-							Date:                 mustDate("2025-12-05", "2025-11-12"),
+							Date:                 mustDate("2025-12-26", "2025-12-05", "2025-11-12"),
 							WithSalary:           false,
 							Remote:               false,
 						},
