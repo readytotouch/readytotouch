@@ -1505,7 +1505,7 @@ func companies21Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4156638094/",
 							Location:             "Barcelona, Catalonia, Spain",
-							Date:                 mustDate("2025-12-02", "2025-11-11", "2025-10-21", "2025-09-09"),
+							Date:                 mustDate("2025-12-25", "2025-12-02", "2025-11-11", "2025-10-21", "2025-09-09"),
 							WithSalary:           false,
 							Remote:               false,
 						},

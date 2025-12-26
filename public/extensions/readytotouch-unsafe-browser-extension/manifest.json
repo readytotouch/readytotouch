@@ -18,7 +18,7 @@
     },
     {
       "matches": ["https://www.linkedin.com/jobs/search/*"],
-      "js": ["highlight-company-name.js", "highlight-vacancy-title.js"]
+      "js": ["highlight-company-name.js", "highlight-vacancy-title.js", "copy-linkedin-vacancy-data.js"]
     },
     {
       "matches": ["https://github.com/*"],
