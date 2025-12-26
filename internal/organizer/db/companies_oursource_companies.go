@@ -2609,5 +2609,21 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			Ignore: true, // Outsource
 		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Beyond",
+			BaseURL: "https://www.bynd.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1207800,
+				IDs:               nil,
+				Alias:             "beyond-technology-consultancy",
+				Name:              "Beyond",
+				Followers:         "23K",
+				Employees:         "51-200",
+				AssociatedMembers: "450",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
 	}
 }
