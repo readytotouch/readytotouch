@@ -1352,7 +1352,7 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 1,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Go Software Engineer",

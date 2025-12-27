@@ -1062,7 +1062,7 @@ func companies23Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 7,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer (Python, Golang)",
@@ -1129,8 +1129,9 @@ func companies23Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "cargill",
+				Followers: "19",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -1146,7 +1147,7 @@ func companies23Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 8,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer (Golang)",
@@ -1161,7 +1162,7 @@ func companies23Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 10,
 					Vacancies:               []domain.Vacancy{},
 				},
 				domain.Zig: {
@@ -1213,8 +1214,9 @@ func companies23Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "sardine-ai",
+				Followers: "33",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -1230,7 +1232,7 @@ func companies23Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 8,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Go Backend Engineer",
@@ -1297,8 +1299,9 @@ func companies23Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "appdirect",
+				Followers: "73",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",

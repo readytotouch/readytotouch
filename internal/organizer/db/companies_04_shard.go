@@ -3516,8 +3516,9 @@ func companies04Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "talon-one",
-				Verified: false,
+				Login:     "talon-one",
+				Followers: "35",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -3543,7 +3544,7 @@ func companies04Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 18,
+					GitHubRepositoriesCount: 19,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "(Senior) Backend Engineer — Go",
