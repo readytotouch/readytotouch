@@ -115,9 +115,9 @@
   },
   {
     "alias": "admiral-money",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "admiral-money-200x200.jpeg",
+    "destination": "admiral-money.jpeg",
+    "destination_72x72": "admiral-money.jpeg"
   },
   {
     "alias": "adobe",
@@ -2293,9 +2293,9 @@
   },
   {
     "alias": "exasol-ag",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "exasol-300x300.webp",
+    "destination": "exasol-ag.png",
+    "destination_72x72": "exasol-ag.png"
   },
   {
     "alias": "exein",
@@ -2719,9 +2719,9 @@
   },
   {
     "alias": "gelato",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "gelato.svg",
+    "destination": "gelato.svg",
+    "destination_72x72": "gelato.svg"
   },
   {
     "alias": "geniussports",
@@ -3001,9 +3001,9 @@
   },
   {
     "alias": "happen-ing",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "happen-ing-200x200.jpeg",
+    "destination": "happen-ing.jpeg",
+    "destination_72x72": "happen-ing.jpeg"
   },
   {
     "alias": "harksys",
@@ -3355,9 +3355,9 @@
   },
   {
     "alias": "jabil",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "jabil-200x200.jpeg",
+    "destination": "jabil.jpeg",
+    "destination_72x72": "jabil.jpeg"
   },
   {
     "alias": "jack-henry",
@@ -4345,9 +4345,9 @@
   },
   {
     "alias": "neo4j",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "neo4j-180x180.png",
+    "destination": "neo4j.png",
+    "destination_72x72": "neo4j.png"
   },
   {
     "alias": "net-health-systems-inc-",
@@ -6829,9 +6829,9 @@
   },
   {
     "alias": "togethercomputer",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "togethercomputer-200x200.jpeg",
+    "destination": "togethercomputer.jpeg",
+    "destination_72x72": "togethercomputer.jpeg"
   },
   {
     "alias": "toggle-ai",
@@ -7099,9 +7099,9 @@
   },
   {
     "alias": "us-bank",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "us-bank-200x200.jpeg",
+    "destination": "us-bank.jpeg",
+    "destination_72x72": "us-bank.jpeg"
   },
   {
     "alias": "usehatchapp",
@@ -7213,9 +7213,9 @@
   },
   {
     "alias": "verve-ad-solutions",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "verve-180x180.webp",
+    "destination": "verve-ad-solutions.png",
+    "destination_72x72": "verve-ad-solutions.png"
   },
   {
     "alias": "vestiaireco",
@@ -7321,15 +7321,15 @@
   },
   {
     "alias": "vonage",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "vonage-200x200.jpeg",
+    "destination": "vonage.jpeg",
+    "destination_72x72": "vonage.jpeg"
   },
   {
     "alias": "voodoo.io",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "voodoo.io-200x200.png",
+    "destination": "voodoo.io.png",
+    "destination_72x72": "voodoo.io.png"
   },
   {
     "alias": "vustheenglishcenter",
@@ -7441,9 +7441,9 @@
   },
   {
     "alias": "webai-official",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "webai-200x200.jpeg",
+    "destination": "webai-official.jpeg",
+    "destination_72x72": "webai-official.jpeg"
   },
   {
     "alias": "webbeds",
