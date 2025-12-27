@@ -619,9 +619,9 @@
   },
   {
     "alias": "avantstay",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "avantstay-180x180.png",
+    "destination": "avantstay.png",
+    "destination_72x72": "avantstay.png"
   },
   {
     "alias": "avathonai",
@@ -2179,9 +2179,9 @@
   },
   {
     "alias": "emnify",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "emnify-200x200.jpeg",
+    "destination": "emnify.jpeg",
+    "destination_72x72": "emnify.jpeg"
   },
   {
     "alias": "engageware",
@@ -2233,9 +2233,9 @@
   },
   {
     "alias": "esri",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "esri-180x180.png",
+    "destination": "esri.png",
+    "destination_72x72": "esri.png"
   },
   {
     "alias": "essity",
@@ -4273,9 +4273,9 @@
   },
   {
     "alias": "napier",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "napier-256x256.png",
+    "destination": "napier.png",
+    "destination_72x72": "napier.png"
   },
   {
     "alias": "narrativeapp",
@@ -4309,9 +4309,9 @@
   },
   {
     "alias": "nbcuniversal-inc-",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "nbcuniversal-200x200.jpeg",
+    "destination": "nbcuniversal-inc-.jpeg",
+    "destination_72x72": "nbcuniversal-inc-.jpeg"
   },
   {
     "alias": "ncratleos",
@@ -4435,9 +4435,9 @@
   },
   {
     "alias": "nielseniq",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "nielseniq-200x200.jpeg",
+    "destination": "nielseniq.jpeg",
+    "destination_72x72": "nielseniq.jpeg"
   },
   {
     "alias": "nightfall-ai",
@@ -4465,9 +4465,9 @@
   },
   {
     "alias": "ninjatrader-group-llc",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "ninjatrader-180x180.webp",
+    "destination": "ninjatrader-group-llc.png",
+    "destination_72x72": "ninjatrader-group-llc.png"
   },
   {
     "alias": "niov-labs",
@@ -7003,9 +7003,9 @@
   },
   {
     "alias": "ubs",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "ubs-200x200.jpeg",
+    "destination": "ubs.jpeg",
+    "destination_72x72": "ubs.jpeg"
   },
   {
     "alias": "udelta",
@@ -7513,9 +7513,9 @@
   },
   {
     "alias": "wix-com",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "wix-200x200.jpeg",
+    "destination": "wix-com.jpeg",
+    "destination_72x72": "wix-com.jpeg"
   },
   {
     "alias": "wolt-oy",
@@ -7741,9 +7741,9 @@
   },
   {
     "alias": "zorgdomein",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "zorgdomein-180x180.png",
+    "destination": "zorgdomein.png",
+    "destination_72x72": "zorgdomein.png"
   },
   {
     "alias": "zscaler",
