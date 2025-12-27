@@ -871,9 +871,9 @@ var (
 		"https://www.linkedin.com/jobs/view/4158798582/":                                                               925,  // evercharge
 		"https://www.linkedin.com/jobs/view/3990418832/":                                                               24,   // eburyfintech
 		"https://www.linkedin.com/jobs/view/4132372469/":                                                               690,  // eburyfintech
-		"https://www.linkedin.com/jobs/view/3945724263/":                                                               223,  // talon.one
-		"https://www.linkedin.com/jobs/view/4092377724/":                                                               224,  // talon.one
-		"https://www.linkedin.com/jobs/view/4328926389/":                                                               3708, // talon.one
+		"https://www.linkedin.com/jobs/view/3945724263/":                                                               223,  // talononeloyalty
+		"https://www.linkedin.com/jobs/view/4092377724/":                                                               224,  // talononeloyalty
+		"https://www.linkedin.com/jobs/view/4328926389/":                                                               3708, // talononeloyalty
 		"https://www.linkedin.com/jobs/view/3887627093/":                                                               446,  // jomehq
 		"https://www.linkedin.com/jobs/view/4047223146/":                                                               447,  // density-inc-
 		"https://www.linkedin.com/jobs/view/3931538747/":                                                               385,  // surfly

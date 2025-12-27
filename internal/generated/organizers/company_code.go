@@ -238,7 +238,7 @@ var (
 		"bjak":                                220,  // Bjak
 		"evercharge":                          221,  // EverCharge
 		"eburyfintech":                        222,  // Ebury
-		"talon.one":                           223,  // Talon.One
+		"talononeloyalty":                     223,  // Talon.One
 		"jomehq":                              557,  // Jome
 		"density-inc-":                        228,  // Density
 		"surfly":                              229,  // Surfly

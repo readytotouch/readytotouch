@@ -3507,7 +3507,8 @@ func companies04Shard() []domain.CompanyProfile {
 			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                10393857,
-				Alias:             "talon.one",
+				Alias:             "talononeloyalty",
+				PreviousAliases:   []string{"talon.one"},
 				Name:              "Talon.One",
 				Followers:         "13K",
 				Employees:         "51-200",

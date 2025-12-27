@@ -2187,6 +2187,7 @@ func companies08Shard() []domain.CompanyProfile {
 				domain.IndustryHealthTech,
 			},
 			HasEmployeesFromCountries: []domain.Country{},
+			Ignore:                    true, // Too many e
 		},
 		{
 			ID:         0,  // system

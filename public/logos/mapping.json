@@ -475,9 +475,9 @@
   },
   {
     "alias": "arenko-cleantech",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "arenko-cleantech-200x200.jpeg",
+    "destination": "arenko-cleantech.jpeg",
+    "destination_72x72": "arenko-cleantech.jpeg"
   },
   {
     "alias": "arfdlaw",
@@ -787,9 +787,9 @@
   },
   {
     "alias": "bestowtech",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "bestowtech-200x200.jpeg",
+    "destination": "bestowtech.jpeg",
+    "destination_72x72": "bestowtech.jpeg"
   },
   {
     "alias": "betterme-company",
@@ -1867,9 +1867,9 @@
   },
   {
     "alias": "diabolocom",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "diabolocom-200x200.jpeg",
+    "destination": "diabolocom.jpeg",
+    "destination_72x72": "diabolocom.jpeg"
   },
   {
     "alias": "diagrid-inc",
@@ -2071,9 +2071,9 @@
   },
   {
     "alias": "dyninno-group",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "dyninno-group-180x180.png",
+    "destination": "dyninno-group.png",
+    "destination_72x72": "dyninno-group.png"
   },
   {
     "alias": "e-food-gr",
@@ -5527,9 +5527,9 @@
   },
   {
     "alias": "rincon-research-corporation",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "rincon-research-corporation-200x200.jpeg",
+    "destination": "rincon-research-corporation.jpeg",
+    "destination_72x72": "rincon-research-corporation.jpeg"
   },
   {
     "alias": "ringcentral",
@@ -6540,10 +6540,10 @@
     "destination_72x72": ""
   },
   {
-    "alias": "talon.one",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "alias": "talononeloyalty",
+    "source": "talononeloyalty-200x200.jpeg",
+    "destination": "talononeloyalty.jpeg",
+    "destination_72x72": "talononeloyalty.jpeg"
   },
   {
     "alias": "taxfix",
@@ -6913,9 +6913,9 @@
   },
   {
     "alias": "trend-micro",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "trend-micro-200x200.jpeg",
+    "destination": "trend-micro.jpeg",
+    "destination_72x72": "trend-micro.jpeg"
   },
   {
     "alias": "true-anomaly",
@@ -7369,9 +7369,9 @@
   },
   {
     "alias": "warner-bros-discovery",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "warner-bros-discovery-200x200.jpeg",
+    "destination": "warner-bros-discovery.jpeg",
+    "destination_72x72": "warner-bros-discovery.jpeg"
   },
   {
     "alias": "wasmerio",
