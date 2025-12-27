@@ -1787,6 +1787,16 @@ func companies19Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "Transition from Go, Rust, and Ruby to Elixir",
+							URL:                  "https://www.linkedin.com/jobs/view/4346209101/",
+							Location:             "Tel Aviv-Yafo, Tel Aviv District, Israel",
+							Date:                 mustDate("2025-12-26"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Clojure: {

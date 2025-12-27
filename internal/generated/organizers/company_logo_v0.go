@@ -396,7 +396,7 @@ var (
 		"tabbypay":                           "tabby.png",
 		"tailscale":                          "tailscale.png",
 		"talamobile":                         "tala.png",
-		"talon.one":                          "talon-one.png",
+		"talononeloyalty":                    "talon-one.png",
 		"taxfix":                             "taxfix.png",
 		"teaching-strategies-llc":            "teachingstrategies.png",
 		"teamsparq":                          "sparq.png",

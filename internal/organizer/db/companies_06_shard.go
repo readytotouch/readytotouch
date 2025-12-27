@@ -617,7 +617,7 @@ func companies06Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4335383838/",
 							Location:             "Dublin, County Dublin, Ireland",
-							Date:                 mustDate("2025-12-02"),
+							Date:                 mustDate("2025-12-25", "2025-12-02"),
 							WithSalary:           false,
 							Remote:               false,
 						},

@@ -613,7 +613,7 @@ func companies22Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4333249443/",
 							Location:             "Austin, Texas Metropolitan Area",
-							Date:                 mustDate("2025-11-02"),
+							Date:                 mustDate("2025-12-26", "2025-11-02"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -702,7 +702,7 @@ func companies22Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4322153707/",
 							Location:             "Belgrade, Serbia",
-							Date:                 mustDate("2025-12-05", "2025-11-13"),
+							Date:                 mustDate("2025-12-26", "2025-12-05", "2025-11-13"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -727,7 +727,7 @@ func companies22Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4322043806/",
 							Location:             "Belgrade, Serbia",
-							Date:                 mustDate("2025-11-13"),
+							Date:                 mustDate("2025-12-26", "2025-11-13"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2898,7 +2898,7 @@ func companies22Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4308484530/",
 							Location:             "Belgium",
-							Date:                 mustDate("2025-11-12"),
+							Date:                 mustDate("2025-12-26", "2025-11-12"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -3566,7 +3566,7 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 2,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Staff Software Engineer (Go)",
@@ -4725,6 +4725,16 @@ func companies22Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4343394584/",
 							Location:             "London, England, United Kingdom",
 							Date:                 mustDate("2025-12-13"),
+							WithSalary:           true, // £70k/yr - £100k/yr
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Backend Engineer – Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4346411724/",
+							Location:             "London, England, United Kingdom",
+							Date:                 mustDate("2025-12-27"),
 							WithSalary:           true, // £70k/yr - £100k/yr
 							Remote:               false,
 						},

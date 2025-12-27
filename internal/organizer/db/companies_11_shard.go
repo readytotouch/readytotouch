@@ -1276,7 +1276,7 @@ func companies11Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoriesCount: 15,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Go Backend Engineer",

@@ -115,9 +115,9 @@
   },
   {
     "alias": "admiral-money",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "admiral-money-200x200.jpeg",
+    "destination": "admiral-money.jpeg",
+    "destination_72x72": "admiral-money.jpeg"
   },
   {
     "alias": "adobe",
@@ -475,9 +475,9 @@
   },
   {
     "alias": "arenko-cleantech",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "arenko-cleantech-200x200.jpeg",
+    "destination": "arenko-cleantech.jpeg",
+    "destination_72x72": "arenko-cleantech.jpeg"
   },
   {
     "alias": "arfdlaw",
@@ -619,9 +619,9 @@
   },
   {
     "alias": "avantstay",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "avantstay-180x180.png",
+    "destination": "avantstay.png",
+    "destination_72x72": "avantstay.png"
   },
   {
     "alias": "avathonai",
@@ -787,9 +787,9 @@
   },
   {
     "alias": "bestowtech",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "bestowtech-200x200.jpeg",
+    "destination": "bestowtech.jpeg",
+    "destination_72x72": "bestowtech.jpeg"
   },
   {
     "alias": "betterme-company",
@@ -1867,9 +1867,9 @@
   },
   {
     "alias": "diabolocom",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "diabolocom-200x200.jpeg",
+    "destination": "diabolocom.jpeg",
+    "destination_72x72": "diabolocom.jpeg"
   },
   {
     "alias": "diagrid-inc",
@@ -2071,9 +2071,9 @@
   },
   {
     "alias": "dyninno-group",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "dyninno-group-180x180.png",
+    "destination": "dyninno-group.png",
+    "destination_72x72": "dyninno-group.png"
   },
   {
     "alias": "e-food-gr",
@@ -2179,9 +2179,9 @@
   },
   {
     "alias": "emnify",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "emnify-200x200.jpeg",
+    "destination": "emnify.jpeg",
+    "destination_72x72": "emnify.jpeg"
   },
   {
     "alias": "engageware",
@@ -2233,9 +2233,9 @@
   },
   {
     "alias": "esri",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "esri-180x180.png",
+    "destination": "esri.png",
+    "destination_72x72": "esri.png"
   },
   {
     "alias": "essity",
@@ -2293,9 +2293,9 @@
   },
   {
     "alias": "exasol-ag",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "exasol-300x300.webp",
+    "destination": "exasol-ag.png",
+    "destination_72x72": "exasol-ag.png"
   },
   {
     "alias": "exein",
@@ -2719,9 +2719,9 @@
   },
   {
     "alias": "gelato",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "gelato.svg",
+    "destination": "gelato.svg",
+    "destination_72x72": "gelato.svg"
   },
   {
     "alias": "geniussports",
@@ -3001,9 +3001,9 @@
   },
   {
     "alias": "happen-ing",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "happen-ing-200x200.jpeg",
+    "destination": "happen-ing.jpeg",
+    "destination_72x72": "happen-ing.jpeg"
   },
   {
     "alias": "harksys",
@@ -3355,9 +3355,9 @@
   },
   {
     "alias": "jabil",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "jabil-200x200.jpeg",
+    "destination": "jabil.jpeg",
+    "destination_72x72": "jabil.jpeg"
   },
   {
     "alias": "jack-henry",
@@ -4273,9 +4273,9 @@
   },
   {
     "alias": "napier",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "napier-256x256.png",
+    "destination": "napier.png",
+    "destination_72x72": "napier.png"
   },
   {
     "alias": "narrativeapp",
@@ -4309,9 +4309,9 @@
   },
   {
     "alias": "nbcuniversal-inc-",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "nbcuniversal-200x200.jpeg",
+    "destination": "nbcuniversal-inc-.jpeg",
+    "destination_72x72": "nbcuniversal-inc-.jpeg"
   },
   {
     "alias": "ncratleos",
@@ -4345,9 +4345,9 @@
   },
   {
     "alias": "neo4j",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "neo4j-180x180.png",
+    "destination": "neo4j.png",
+    "destination_72x72": "neo4j.png"
   },
   {
     "alias": "net-health-systems-inc-",
@@ -4435,9 +4435,9 @@
   },
   {
     "alias": "nielseniq",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "nielseniq-200x200.jpeg",
+    "destination": "nielseniq.jpeg",
+    "destination_72x72": "nielseniq.jpeg"
   },
   {
     "alias": "nightfall-ai",
@@ -4465,9 +4465,9 @@
   },
   {
     "alias": "ninjatrader-group-llc",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "ninjatrader-180x180.webp",
+    "destination": "ninjatrader-group-llc.png",
+    "destination_72x72": "ninjatrader-group-llc.png"
   },
   {
     "alias": "niov-labs",
@@ -5527,9 +5527,9 @@
   },
   {
     "alias": "rincon-research-corporation",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "rincon-research-corporation-200x200.jpeg",
+    "destination": "rincon-research-corporation.jpeg",
+    "destination_72x72": "rincon-research-corporation.jpeg"
   },
   {
     "alias": "ringcentral",
@@ -6540,10 +6540,10 @@
     "destination_72x72": ""
   },
   {
-    "alias": "talon.one",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "alias": "talononeloyalty",
+    "source": "talononeloyalty-200x200.jpeg",
+    "destination": "talononeloyalty.jpeg",
+    "destination_72x72": "talononeloyalty.jpeg"
   },
   {
     "alias": "taxfix",
@@ -6829,9 +6829,9 @@
   },
   {
     "alias": "togethercomputer",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "togethercomputer-200x200.jpeg",
+    "destination": "togethercomputer.jpeg",
+    "destination_72x72": "togethercomputer.jpeg"
   },
   {
     "alias": "toggle-ai",
@@ -6913,9 +6913,9 @@
   },
   {
     "alias": "trend-micro",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "trend-micro-200x200.jpeg",
+    "destination": "trend-micro.jpeg",
+    "destination_72x72": "trend-micro.jpeg"
   },
   {
     "alias": "true-anomaly",
@@ -7003,9 +7003,9 @@
   },
   {
     "alias": "ubs",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "ubs-200x200.jpeg",
+    "destination": "ubs.jpeg",
+    "destination_72x72": "ubs.jpeg"
   },
   {
     "alias": "udelta",
@@ -7099,9 +7099,9 @@
   },
   {
     "alias": "us-bank",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "us-bank-200x200.jpeg",
+    "destination": "us-bank.jpeg",
+    "destination_72x72": "us-bank.jpeg"
   },
   {
     "alias": "usehatchapp",
@@ -7213,9 +7213,9 @@
   },
   {
     "alias": "verve-ad-solutions",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "verve-180x180.webp",
+    "destination": "verve-ad-solutions.png",
+    "destination_72x72": "verve-ad-solutions.png"
   },
   {
     "alias": "vestiaireco",
@@ -7321,15 +7321,15 @@
   },
   {
     "alias": "vonage",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "vonage-200x200.jpeg",
+    "destination": "vonage.jpeg",
+    "destination_72x72": "vonage.jpeg"
   },
   {
     "alias": "voodoo.io",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "voodoo.io-200x200.png",
+    "destination": "voodoo.io.png",
+    "destination_72x72": "voodoo.io.png"
   },
   {
     "alias": "vustheenglishcenter",
@@ -7369,9 +7369,9 @@
   },
   {
     "alias": "warner-bros-discovery",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "warner-bros-discovery-200x200.jpeg",
+    "destination": "warner-bros-discovery.jpeg",
+    "destination_72x72": "warner-bros-discovery.jpeg"
   },
   {
     "alias": "wasmerio",
@@ -7441,9 +7441,9 @@
   },
   {
     "alias": "webai-official",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "webai-200x200.jpeg",
+    "destination": "webai-official.jpeg",
+    "destination_72x72": "webai-official.jpeg"
   },
   {
     "alias": "webbeds",
@@ -7510,6 +7510,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "wix-com",
+    "source": "wix-200x200.jpeg",
+    "destination": "wix-com.jpeg",
+    "destination_72x72": "wix-com.jpeg"
   },
   {
     "alias": "wolt-oy",
@@ -7732,6 +7738,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "zorgdomein",
+    "source": "zorgdomein-180x180.png",
+    "destination": "zorgdomein.png",
+    "destination_72x72": "zorgdomein.png"
   },
   {
     "alias": "zscaler",
