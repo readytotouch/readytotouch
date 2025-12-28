@@ -1,3 +1,4 @@
+{% import "strconv" %}
 {%- func OrganizersCompaniesV1(
   organizerFeature OrganizerFeature,
   headerProfiles []SocialProviderUser,
@@ -28,7 +29,7 @@
     {%= ga() %}
 </head>
 
-<body class="organizer-companies-inner">
+<body class="organizer-companies-inner" data-companies-page-version="1">
 <main class="main-wrapper">
 	<header class="header">
   <div class="header__wrapper">
@@ -86,13 +87,22 @@
 <section class="search-container container">
   <div class="search search--projects search--organizer">
     <div class="search__input-group">
-      <input class="search__input" id="js-company-query" type="search" name="search" placeholder="Search" list="js-company-query-datalist" />
-      <datalist id="js-company-query-datalist">
-        {% for _, company := range companies %}
-          <option value="{%s company.Name %}"></option>
-        {% endfor %}
-      </datalist>
-      <img class="search__icon" alt="Search icon" width="20" height="20" src="/assets/images/pages/common/search.svg" />
+      <form id="js-company-search-form">
+        <input
+          class="search__input"
+          id="js-company-query"
+          type="search"
+          name="search"
+          placeholder="Search"
+          list="js-company-query-datalist"
+        />
+        <datalist id="js-company-query-datalist">
+          {% for _, company := range companies %}
+            <option value="{%s company.Name %}"></option>
+          {% endfor %}
+        </datalist>
+        <img class="search__icon" alt="Search icon" width="20" height="20" src="/assets/images/pages/common/search.svg" />
+      </form>
     </div>
   </div>
 </section>
@@ -173,6 +183,18 @@
               src="/assets/images/pages/online-new/cz_flag.svg"
             />
           </label>
+          {% if organizerFeature.Organizer.Alias == "rust" %}
+          <label class="checkbox filters__element">
+            <input id="js-criteria-rust-foundation-members" class="checkbox__input" type="checkbox" />
+            <span class="checkbox__element"></span>
+            Rust Foundation Members
+          </label>
+          {% endif %}
+          <label class="checkbox filters__element">
+            <input id="js-criteria-remote" class="checkbox__input" type="checkbox" />
+            <span class="checkbox__element"></span>
+            Remote
+          </label>
           <label class="checkbox filters__element">
             <input id="js-criteria-in-favorites" class="checkbox__input" type="checkbox" />
             <span class="checkbox__element"></span>
@@ -224,6 +246,8 @@
                  data-company-type="{%s string(company.Type) %}"
                  data-company-industries="{%s aliases(company.Industries) %}"
                  data-company-has-employees-from-countries="{%s aliases(company.HasEmployeesFromCountries) %}"
+                 data-company-rust-foundation-members="{%s strconv.FormatBool(company.RustFoundationMember) %}"
+                 data-company-remote="{%s strconv.FormatBool(company.Remote) %}"
             >
               <aside class="card__action">
                 {% if userCompanyFavoriteMap[company.ID] %}
@@ -409,7 +433,7 @@
                       height="20"
                       src="/assets/images/pages/organizer/similarweb.svg"
                     />
-                    <a href="{%s similarwebURL(company.Website) %}" target="_blank" class="button-link card__links-link">SimilarWeb</a>
+                    <a href="{%s similarwebURL(company.BaseURL) %}" target="_blank" class="button-link card__links-link">SimilarWeb</a>
                   </li>
                   <li class="card__links-item">
                     <img
@@ -419,7 +443,7 @@
                       height="20"
                       src="/assets/images/pages/organizer/whois.svg"
                     />
-                    <a href="{%s whoisURL(company.Website) %}" target="_blank" class="button-link card__links-link">Whois</a>
+                    <a href="{%s whoisURL(company.BaseURL) %}" target="_blank" class="button-link card__links-link">Whois</a>
                   </li>
 
                   {% comment %}

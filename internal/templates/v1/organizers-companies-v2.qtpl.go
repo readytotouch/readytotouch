@@ -97,7 +97,7 @@ func StreamOrganizersCompaniesV2(qw422016 *qt422016.Writer,
 	qw422016.N().S(`
 </head>
 
-<body class="organizer-companies-inner">
+<body class="organizer-companies-inner" data-companies-page-version="2">
 <main class="main-wrapper">
 <header class="header">
   <div class="header__wrapper">
@@ -176,19 +176,28 @@ func StreamOrganizersCompaniesV2(qw422016 *qt422016.Writer,
 <section class="search-container container">
   <div class="search search--projects search--organizer">
     <div class="search__input-group">
-      <input class="search__input" id="js-company-query" type="search" name="search" placeholder="Search" list="js-company-query-datalist" />
-      <datalist id="js-company-query-datalist">
-        `)
+      <form id="js-company-search-form">
+        <input
+          class="search__input"
+          id="js-company-query"
+          type="search"
+          name="search"
+          placeholder="Search"
+          list="js-company-query-datalist"
+        />
+        <datalist id="js-company-query-datalist">
+          `)
 	for _, company := range companies {
 		qw422016.N().S(`
-          <option value="`)
+            <option value="`)
 		qw422016.E().S(company.Name)
 		qw422016.N().S(`"></option>
-        `)
+          `)
 	}
 	qw422016.N().S(`
-      </datalist>
-      <img class="search__icon" alt="Search icon" width="20" height="20" src="/assets/images/pages/common/search.svg" />
+        </datalist>
+        <img class="search__icon" alt="Search icon" width="20" height="20" src="/assets/images/pages/common/search.svg" />
+      </form>
     </div>
   </div>
 </section>
@@ -407,56 +416,56 @@ func StreamOrganizersCompaniesV2(qw422016 *qt422016.Writer,
               </figure>
               <div class="card__top-links">
                   <a href="`)
-		qw422016.E().S(company.Website)
+		qw422016.E().S(company.BaseURL)
 		qw422016.N().S(`" target="_blank" class="card__top-link button-link">Website</a>
                   `)
-		if company.Careers == "" {
+		if company.CareersURL == "" {
 			qw422016.N().S(`
                       <span class="card__top-link button-link disabled">Careers</span>
                   `)
 		} else {
 			qw422016.N().S(`
                       <a href="`)
-			qw422016.E().S(company.Careers)
+			qw422016.E().S(company.CareersURL)
 			qw422016.N().S(`" target="_blank" class="card__top-link button-link">Careers</a>
                   `)
 		}
 		qw422016.N().S(`
                   `)
-		if company.About == "" {
+		if company.AboutURL == "" {
 			qw422016.N().S(`
                       <span class="card__top-link button-link disabled">About</span>
                   `)
 		} else {
 			qw422016.N().S(`
                       <a href="`)
-			qw422016.E().S(company.About)
+			qw422016.E().S(company.AboutURL)
 			qw422016.N().S(`" target="_blank" class="card__top-link button-link">About</a>
                   `)
 		}
 		qw422016.N().S(`
                   `)
-		if company.Blog == "" {
+		if company.BlogURL == "" {
 			qw422016.N().S(`
                       <span class="card__top-link button-link disabled">Dev Blog</span>
                   `)
 		} else {
 			qw422016.N().S(`
                       <a href="`)
-			qw422016.E().S(company.Blog)
+			qw422016.E().S(company.BlogURL)
 			qw422016.N().S(`" target="_blank" class="card__top-link button-link">Dev Blog</a>
                   `)
 		}
 		qw422016.N().S(`
                   `)
-		if company.ReferralProgram == "" {
+		if company.ReferralProgramURL == "" {
 			qw422016.N().S(`
                       <span class="card__top-link button-link disabled">Referral program</span>
                   `)
 		} else {
 			qw422016.N().S(`
                       <a href="`)
-			qw422016.E().S(company.ReferralProgram)
+			qw422016.E().S(company.ReferralProgramURL)
 			qw422016.N().S(`" target="_blank" class="card__top-link button-link">Referral program</a>
                   `)
 		}

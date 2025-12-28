@@ -94,7 +94,7 @@ type LinkedInProfile struct {
 	Verified          bool
 }
 
-type LinkedInProfileResponse struct {
+type LinkedInProfileShortResponse struct {
 	ID    int64  `json:"id"`
 	Alias string `json:"alias"`
 	Name  string `json:"name"`
@@ -115,9 +115,60 @@ type UnsafeCompanyResponse struct {
 	Languages          []UnsafeCompanyLanguageStats `json:"languages"`
 }
 
+type CompanyLogoResponse struct {
+	MainSize string `json:"72x72"`
+}
+
+type LinkedInProfileResponse struct {
+	ID       int    `json:"id"`
+	IDs      []int  `json:"ids"`
+	Alias    string `json:"alias"` // vanity name
+	Name     string `json:"name"`
+	Verified bool   `json:"verified"`
+}
+
+type GitHubProfileResponse struct {
+	Login     string `json:"login"`
+	Followers string `json:"followers"`
+	Verified  bool   `json:"verified"`
+}
+
+type GlassdoorProfileResponse struct {
+	OverviewURL string `json:"overview_url"`
+	ReviewsURL  string `json:"reviews_url"`
+	ReviewsRate string `json:"reviews_rate"`
+	Verified    bool   `json:"verified"`
+}
+
+type CompanyResponse struct {
+	ID                        int64                    `json:"id"`
+	Type                      CompanyType              `json:"type"`
+	Logo                      CompanyLogoResponse      `json:"logo"`
+	Name                      string                   `json:"name"`
+	BaseURL                   string                   `json:"base_url"`
+	CareersURL                string                   `json:"careers_url"`
+	AboutURL                  string                   `json:"about_url"`
+	BlogURL                   string                   `json:"blog_url"`
+	LinkedInProfile           LinkedInProfileResponse  `json:"linkedin_profile"`
+	GitHubProfile             GitHubProfileResponse    `json:"github_profile"`
+	GlassdoorProfile          GlassdoorProfileResponse `json:"glassdoor_profile"`
+	ShortDescription          string                   `json:"short_description"`
+	Industries                []Industry               `json:"industries"`
+	CloudProviders            []CloudProvider          `json:"cloud_providers"`
+	HasEmployeesFromCountries []Country                `json:"has_employees_from_countries"`
+	RustFoundationMember      bool                     `json:"rust_foundation_member"`
+	PinnedUntil               *time.Time               `json:"pinned_until"`
+	Remote                    bool                     `json:"remote"`
+	LatestVacancyDate         *time.Time               `json:"latest_vacancy_date"`
+}
+
 type UnsafeVacancyResponse struct {
 	URL  string    `json:"url"`
 	Date time.Time `json:"date"`
+}
+
+type VacancyResponse struct {
+	ID int64 `json:"id"`
 }
 
 type GitHubProfile struct {
@@ -135,6 +186,7 @@ type GlassdoorProfile struct {
 	Salaries    string
 	ReviewsRate string
 	Verified    bool
+	Date        time.Time
 }
 
 type BlindProfile struct {
@@ -159,8 +211,9 @@ type Vacancy struct {
 	SubTitle             string // @TODO, for future use, design
 	ShortDescription     string // proof that the vacancy is for a particular technology
 	SwitchingOpportunity string // an opportunity to apply without knowing the language, but with a willingness to learn it
-	Location             string
 	URL                  string
+	Location             string
+	CloudProviders       []CloudProvider
 	Date                 time.Time
 	WithSalary           bool
 	Remote               bool // Fully remote available
@@ -208,12 +261,12 @@ type CompanyProfile struct {
 	Type                      CompanyType // populates from the CompanyStartupMap
 	Logo                      CompanyLogo // populates from the CompanyAliasToLogoMap
 	Name                      string
-	Website                   string // Production website
-	Careers                   string // Careers page URL
-	ReferralProgram           string // Referral program URL
-	About                     string // About URL
-	Blog                      string // Development blog URL
-	Transparency              string // Transparency URL e.g. https://buffer.com/transparency
+	BaseURL                   string // Production website
+	CareersURL                string // Careers page URL
+	AboutURL                  string // About URL
+	BlogURL                   string // Development blog URL
+	ReferralProgramURL        string // Referral program URL
+	TransparencyURL           string // Transparency URL e.g. https://buffer.com/transparency
 	LinkedInProfile           LinkedInProfile
 	GitHubProfile             GitHubProfile
 	BlindProfile              BlindProfile
@@ -232,6 +285,7 @@ type CompanyProfile struct {
 	GoogleFinanceURL          string // Market cap, etc.
 	YCombinatorURL            string // YC profile
 	Industries                []Industry
+	CloudProviders            []CloudProvider
 	HasEmployeesFromCountries []Country
 	RustFoundationMember      bool // https://foundation.rust-lang.org/members/
 	Ignore                    bool
@@ -247,4 +301,12 @@ type UnsafeCompaniesResponse struct {
 
 type UnsafeVacanciesResponse struct {
 	Vacancies []UnsafeVacancyResponse `json:"vacancies"`
+}
+
+type CompaniesResponse struct {
+	Companies []CompanyResponse `json:"companies"`
+}
+
+type VacanciesResponse struct {
+	Vacancies []VacancyResponse `json:"vacancies"`
 }

@@ -44,7 +44,7 @@
     {%= ga() %}
 </head>
 
-<body class="organizer-companies-inner">
+<body class="organizer-companies-inner" data-companies-page-version="2">
 <main class="main-wrapper">
 <header class="header">
   <div class="header__wrapper">
@@ -102,13 +102,22 @@
 <section class="search-container container">
   <div class="search search--projects search--organizer">
     <div class="search__input-group">
-      <input class="search__input" id="js-company-query" type="search" name="search" placeholder="Search" list="js-company-query-datalist" />
-      <datalist id="js-company-query-datalist">
-        {% for _, company := range companies %}
-          <option value="{%s company.Name %}"></option>
-        {% endfor %}
-      </datalist>
-      <img class="search__icon" alt="Search icon" width="20" height="20" src="/assets/images/pages/common/search.svg" />
+      <form id="js-company-search-form">
+        <input
+          class="search__input"
+          id="js-company-query"
+          type="search"
+          name="search"
+          placeholder="Search"
+          list="js-company-query-datalist"
+        />
+        <datalist id="js-company-query-datalist">
+          {% for _, company := range companies %}
+            <option value="{%s company.Name %}"></option>
+          {% endfor %}
+        </datalist>
+        <img class="search__icon" alt="Search icon" width="20" height="20" src="/assets/images/pages/common/search.svg" />
+      </form>
     </div>
   </div>
 </section>
@@ -293,26 +302,26 @@
                 </figcaption>
               </figure>
               <div class="card__top-links">
-                  <a href="{%s company.Website %}" target="_blank" class="card__top-link button-link">Website</a>
-                  {% if company.Careers == "" %}
+                  <a href="{%s company.BaseURL %}" target="_blank" class="card__top-link button-link">Website</a>
+                  {% if company.CareersURL == "" %}
                       <span class="card__top-link button-link disabled">Careers</span>
                   {% else %}
-                      <a href="{%s company.Careers %}" target="_blank" class="card__top-link button-link">Careers</a>
+                      <a href="{%s company.CareersURL %}" target="_blank" class="card__top-link button-link">Careers</a>
                   {% endif %}
-                  {% if company.About == "" %}
+                  {% if company.AboutURL == "" %}
                       <span class="card__top-link button-link disabled">About</span>
                   {% else %}
-                      <a href="{%s company.About %}" target="_blank" class="card__top-link button-link">About</a>
+                      <a href="{%s company.AboutURL %}" target="_blank" class="card__top-link button-link">About</a>
                   {% endif %}
-                  {% if company.Blog == "" %}
+                  {% if company.BlogURL == "" %}
                       <span class="card__top-link button-link disabled">Dev Blog</span>
                   {% else %}
-                      <a href="{%s company.Blog %}" target="_blank" class="card__top-link button-link">Dev Blog</a>
+                      <a href="{%s company.BlogURL %}" target="_blank" class="card__top-link button-link">Dev Blog</a>
                   {% endif %}
-                  {% if company.ReferralProgram == "" %}
+                  {% if company.ReferralProgramURL == "" %}
                       <span class="card__top-link button-link disabled">Referral program</span>
                   {% else %}
-                      <a href="{%s company.ReferralProgram %}" target="_blank" class="card__top-link button-link">Referral program</a>
+                      <a href="{%s company.ReferralProgramURL %}" target="_blank" class="card__top-link button-link">Referral program</a>
                   {% endif %}
               </div>
               <div class="card__info">

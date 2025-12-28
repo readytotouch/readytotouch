@@ -6,13 +6,13 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 	return []domain.CompanyProfile{
 		// OLD
 		{
-			ID:      0,                           // system
-			Type:    domain.CompanyTypeOutsource, // system
-			Name:    "Cognizant",
-			Website: "https://www.cognizant.com/",
-			Careers: "https://careers.cognizant.com/global-en/",
-			About:   "https://www.cognizant.com/au/en/about-cognizant",
-			Blog:    "https://www.cognizant.com/se/en/insights/blog/home-page-se",
+			ID:         0,                           // system
+			Type:       domain.CompanyTypeOutsource, // system
+			Name:       "Cognizant",
+			BaseURL:    "https://www.cognizant.com/",
+			CareersURL: "https://careers.cognizant.com/global-en/",
+			AboutURL:   "https://www.cognizant.com/au/en/about-cognizant",
+			BlogURL:    "https://www.cognizant.com/se/en/insights/blog/home-page-se",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1680,
 				Alias:             "cognizant",
@@ -52,7 +52,6 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			},
 			OttaProfileSlug:   "",
 			YouTubeChannelURL: "https://www.youtube.com/@cognizant",
-			GoMainLanguage:    false,
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoriesCount: 0,
@@ -161,13 +160,13 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			Ignore: true, // Outsource
 		},
 		{
-			ID:      0,                           // system
-			Type:    domain.CompanyTypeOutsource, // system
-			Name:    "Sparq",
-			Website: "https://www.teamsparq.com/",
-			Careers: "https://www.teamsparq.com/careers/",
-			About:   "https://www.teamsparq.com/who-we-are/",
-			Blog:    "",
+			ID:         0,                           // system
+			Type:       domain.CompanyTypeOutsource, // system
+			Name:       "Sparq",
+			BaseURL:    "https://www.teamsparq.com/",
+			CareersURL: "https://www.teamsparq.com/careers/",
+			AboutURL:   "https://www.teamsparq.com/who-we-are/",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                90679425,
 				Alias:             "teamsparq",
@@ -202,13 +201,13 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			Ignore: true,
 		},
 		{
-			ID:      0,                           // system
-			Type:    domain.CompanyTypeOutsource, // system
-			Name:    "Coherent Solutions",
-			Website: "https://www.coherentsolutions.com/",
-			Careers: "https://www.coherentsolutions.com/careers",
-			About:   "https://www.coherentsolutions.com/about-us",
-			Blog:    "",
+			ID:         0,                           // system
+			Type:       domain.CompanyTypeOutsource, // system
+			Name:       "Coherent Solutions",
+			BaseURL:    "https://www.coherentsolutions.com/",
+			CareersURL: "https://www.coherentsolutions.com/careers",
+			AboutURL:   "https://www.coherentsolutions.com/about-us",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                38745,
 				Alias:             "coherent-solutions",
@@ -221,13 +220,13 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			Ignore: true, // The deleted outsource company was added by mistake
 		},
 		{
-			ID:      0,                           // system
-			Type:    domain.CompanyTypeOutsource, // system
-			Name:    "Antmicro",
-			Website: "https://antmicro.com/",
-			Careers: "https://careers.antmicro.com/",
-			About:   "https://antmicro.com/about/company/",
-			Blog:    "https://antmicro.com/blog/",
+			ID:         0,                           // system
+			Type:       domain.CompanyTypeOutsource, // system
+			Name:       "Antmicro",
+			BaseURL:    "https://antmicro.com/",
+			CareersURL: "https://careers.antmicro.com/",
+			AboutURL:   "https://antmicro.com/about/company/",
+			BlogURL:    "https://antmicro.com/blog/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                3267482,
 				Alias:             "antmicro-ltd",
@@ -244,7 +243,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			ID:      0,                           // system
 			Type:    domain.CompanyTypeOutsource, // system
 			Name:    "Arcanys",
-			Website: "https://www.arcanys.com/",
+			BaseURL: "https://www.arcanys.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1472152,
 				IDs:               nil,
@@ -261,7 +260,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			ID:      0,                           // system
 			Type:    domain.CompanyTypeOutsource, // system
 			Name:    "Skillspark",
-			Website: "https://www.skillspark.com/",
+			BaseURL: "https://www.skillspark.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                80284986,
 				IDs:               nil,
@@ -278,7 +277,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			ID:      0,                           // system
 			Type:    domain.CompanyTypeOutsource, // system
 			Name:    "Qinshift",
-			Website: "https://qinshift.com/",
+			BaseURL: "https://qinshift.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                92778277,
 				IDs:               nil,
@@ -295,7 +294,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			ID:      0,                           // system
 			Type:    domain.CompanyTypeOutsource, // system
 			Name:    "Brillio",
-			Website: "https://www.brillio.com/",
+			BaseURL: "https://www.brillio.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                5022712,
 				IDs:               nil,
@@ -312,7 +311,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			ID:      0,                           // system
 			Type:    domain.CompanyTypeOutsource, // system
 			Name:    "Akvelon",
-			Website: "https://akvelon.com/",
+			BaseURL: "https://akvelon.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                309542,
 				IDs:               nil,
@@ -329,7 +328,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			ID:      0,                           // system
 			Type:    domain.CompanyTypeOutsource, // system
 			Name:    "Multi Media",
-			Website: "https://multimediallc.com/",
+			BaseURL: "https://multimediallc.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                10496448,
 				IDs:               nil,
@@ -346,7 +345,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			ID:      0,                           // system
 			Type:    domain.CompanyTypeOutsource, // system
 			Name:    "BairesDev",
-			Website: "https://www.bairesdev.com/",
+			BaseURL: "https://www.bairesdev.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                798671,
 				IDs:               nil,
@@ -363,7 +362,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			ID:      0,                           // system
 			Type:    domain.CompanyTypeOutsource, // system
 			Name:    "Ubique Systems",
-			Website: "https://www.ubique-systems.com/",
+			BaseURL: "https://www.ubique-systems.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                939675,
 				IDs:               nil,
@@ -377,13 +376,13 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			Ignore: true, // Outsourcing
 		},
 		{
-			ID:      0,                           // system
-			Type:    domain.CompanyTypeOutsource, // system
-			Name:    "Immunant",
-			Website: "https://immunant.com/",
-			Careers: "https://immunant.com/jobs/",
-			About:   "",
-			Blog:    "https://immunant.com/blog/",
+			ID:         0,                           // system
+			Type:       domain.CompanyTypeOutsource, // system
+			Name:       "Immunant",
+			BaseURL:    "https://immunant.com/",
+			CareersURL: "https://immunant.com/jobs/",
+			AboutURL:   "",
+			BlogURL:    "https://immunant.com/blog/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                27043749,
 				IDs:               nil,
@@ -403,13 +402,13 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 		{
-			ID:      0,                           // system
-			Type:    domain.CompanyTypeOutsource, // system
-			Name:    "Integer 32, LLC",
-			Website: "https://www.integer32.com/",
-			Careers: "",
-			About:   "https://www.integer32.com/about/",
-			Blog:    "",
+			ID:         0,                           // system
+			Type:       domain.CompanyTypeOutsource, // system
+			Name:       "Integer 32, LLC",
+			BaseURL:    "https://www.integer32.com/",
+			CareersURL: "",
+			AboutURL:   "https://www.integer32.com/about/",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                10822533,
 				IDs:               nil,
@@ -450,13 +449,13 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 		{
-			ID:      0,                           // system
-			Type:    domain.CompanyTypeOutsource, // system
-			Name:    "Red Iron Team",
-			Website: "https://red-iron.eu/",
-			Careers: "",
-			About:   "",
-			Blog:    "",
+			ID:         0,                           // system
+			Type:       domain.CompanyTypeOutsource, // system
+			Name:       "Red Iron Team",
+			BaseURL:    "https://red-iron.eu/",
+			CareersURL: "",
+			AboutURL:   "",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                0,
 				Alias:             "red-iron-team",
@@ -471,13 +470,13 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 		{
-			ID:      0,                           // system
-			Type:    domain.CompanyTypeOutsource, // system
-			Name:    "Rustunit",
-			Website: "https://rustunit.com/",
-			Careers: "",
-			About:   "",
-			Blog:    "https://rustunit.com/blog/",
+			ID:         0,                           // system
+			Type:       domain.CompanyTypeOutsource, // system
+			Name:       "Rustunit",
+			BaseURL:    "https://rustunit.com/",
+			CareersURL: "",
+			AboutURL:   "",
+			BlogURL:    "https://rustunit.com/blog/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                100357404,
 				Alias:             "rustunit",
@@ -517,13 +516,13 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 		{
-			ID:      0,                           // system
-			Type:    domain.CompanyTypeOutsource, // system
-			Name:    "49nord GmbH",
-			Website: "https://49nord.de/",
-			Careers: "",
-			About:   "https://49nord.de/en/company",
-			Blog:    "",
+			ID:         0,                           // system
+			Type:       domain.CompanyTypeOutsource, // system
+			Name:       "49nord GmbH",
+			BaseURL:    "https://49nord.de/",
+			CareersURL: "",
+			AboutURL:   "https://49nord.de/en/company",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                18586171,
 				IDs:               nil,
@@ -564,13 +563,13 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 		{
-			ID:      0,                           // system
-			Type:    domain.CompanyTypeOutsource, // system
-			Name:    "corrode",
-			Website: "https://corrode.dev/",
-			Careers: "",
-			About:   "https://corrode.dev/about/",
-			Blog:    "https://corrode.dev/blog/",
+			ID:         0,                           // system
+			Type:       domain.CompanyTypeOutsource, // system
+			Name:       "corrode",
+			BaseURL:    "https://corrode.dev/",
+			CareersURL: "",
+			AboutURL:   "https://corrode.dev/about/",
+			BlogURL:    "https://corrode.dev/blog/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                82209241,
 				IDs:               nil,
@@ -611,13 +610,13 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 		{
-			ID:      0,                           // system
-			Type:    domain.CompanyTypeOutsource, // system
-			Name:    "Ferrous Systems GmbH",
-			Website: "https://ferrous-systems.com/",
-			Careers: "",
-			About:   "",
-			Blog:    "https://ferrous-systems.com/blog/",
+			ID:         0,                           // system
+			Type:       domain.CompanyTypeOutsource, // system
+			Name:       "Ferrous Systems GmbH",
+			BaseURL:    "https://ferrous-systems.com/",
+			CareersURL: "",
+			AboutURL:   "",
+			BlogURL:    "https://ferrous-systems.com/blog/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                11847446,
 				IDs:               nil,
@@ -658,13 +657,13 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			SyncSources:      []domain.CompanySyncSource{domain.RustCompanies},
 		},
 		{
-			ID:      0,                           // system
-			Type:    domain.CompanyTypeOutsource, // system
-			Name:    "Photon",
-			Website: "https://photon.com/",
-			Careers: "",
-			About:   "",
-			Blog:    "",
+			ID:         0,                           // system
+			Type:       domain.CompanyTypeOutsource, // system
+			Name:       "Photon",
+			BaseURL:    "https://photon.com/",
+			CareersURL: "",
+			AboutURL:   "",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                165464,
 				IDs:               nil,
@@ -717,13 +716,13 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 			Ignore:           true, // Outsource
 		},
 		{
-			ID:      0,                           // system
-			Type:    domain.CompanyTypeOutsource, // system
-			Name:    "Vinova",
-			Website: "https://vinova.sg/",
-			Careers: "",
-			About:   "",
-			Blog:    "",
+			ID:         0,                           // system
+			Type:       domain.CompanyTypeOutsource, // system
+			Name:       "Vinova",
+			BaseURL:    "https://vinova.sg/",
+			CareersURL: "",
+			AboutURL:   "",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1614934,
 				IDs:               nil,
@@ -773,7 +772,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Minsait",
-			Website: "https://www.minsait.com/",
+			BaseURL: "https://www.minsait.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                10963,
 				IDs:               nil,
@@ -789,7 +788,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Virtusa",
-			Website: "https://www.virtusa.com/",
+			BaseURL: "https://www.virtusa.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                5140,
 				IDs:               nil,
@@ -805,7 +804,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Qubika",
-			Website: "https://qubika.com/",
+			BaseURL: "https://qubika.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                201026,
 				IDs:               nil,
@@ -821,7 +820,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Zartis",
-			Website: "https://www.zartis.com/",
+			BaseURL: "https://www.zartis.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                2274396,
 				IDs:               nil,
@@ -837,7 +836,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Smart Consulting",
-			Website: "https://www.smartconsulting.pt/",
+			BaseURL: "https://www.smartconsulting.pt/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                9356133,
 				IDs:               []int{9356133, 79396476},
@@ -853,7 +852,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Xoriant",
-			Website: "https://www.xoriant.com/",
+			BaseURL: "https://www.xoriant.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                166996,
 				IDs:               nil,
@@ -869,7 +868,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Trideca",
-			Website: "https://www.trideca.com.au/",
+			BaseURL: "https://www.trideca.com.au/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                2455945,
 				IDs:               nil,
@@ -885,7 +884,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Excelia",
-			Website: "https://excelia.com/",
+			BaseURL: "https://excelia.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                735796,
 				IDs:               nil,
@@ -901,7 +900,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Xebia",
-			Website: "https://xebia.com/",
+			BaseURL: "https://xebia.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                16903,
 				IDs:               []int{16903, 72738535},
@@ -917,7 +916,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Coltech",
-			Website: "https://www.coltech.io/",
+			BaseURL: "https://www.coltech.io/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                69762147,
 				IDs:               nil,
@@ -933,7 +932,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Akkodis",
-			Website: "https://www.akkodis.com/",
+			BaseURL: "https://www.akkodis.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                79383535,
 				IDs:               []int{224006, 320456, 79383535},
@@ -949,7 +948,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "The Select Group",
-			Website: "https://www.selectgroup.com/",
+			BaseURL: "https://www.selectgroup.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                28526,
 				IDs:               []int{28526, 3056209},
@@ -965,7 +964,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Programmers.io",
-			Website: "https://programmers.io/",
+			BaseURL: "https://programmers.io/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                13714336,
 				IDs:               nil,
@@ -981,7 +980,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "ValueLabs",
-			Website: "https://www.valuelabs.com/",
+			BaseURL: "https://www.valuelabs.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                13489,
 				IDs:               nil,
@@ -997,7 +996,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "CDW",
-			Website: "https://www.cdw.com/",
+			BaseURL: "https://www.cdw.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                3334,
 				IDs:               []int{3334, 10951, 3646541, 10599950, 13250389, 15264947, 15911608},
@@ -1013,7 +1012,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Lumenalta",
-			Website: "https://lumenalta.com/",
+			BaseURL: "https://lumenalta.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                719642,
 				IDs:               nil,
@@ -1029,7 +1028,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Dualboot Partners",
-			Website: "https://dualbootpartners.com/",
+			BaseURL: "https://dualbootpartners.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                28138288,
 				IDs:               nil,
@@ -1045,7 +1044,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "UKG",
-			Website: "https://www.ukg.com/",
+			BaseURL: "https://www.ukg.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                67539665,
 				IDs:               nil,
@@ -1061,7 +1060,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Nagarro",
-			Website: "https://www.nagarro.com/",
+			BaseURL: "https://www.nagarro.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                11902,
 				IDs:               []int{11902, 59775},
@@ -1077,7 +1076,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "E-Solutions",
-			Website: "https://e-solutionsinc.com/",
+			BaseURL: "https://e-solutionsinc.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                750072,
 				IDs:               nil,
@@ -1093,7 +1092,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Talan",
-			Website: "https://www.talan.com/",
+			BaseURL: "https://www.talan.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                28542,
 				IDs:               []int{15432, 28542, 55444, 132835, 278066, 427360, 11202100, 17908204, 33298999},
@@ -1109,7 +1108,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Sage",
-			Website: "https://www.sage.com/",
+			BaseURL: "https://www.sage.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                2802,
 				IDs:               []int{2802, 599552},
@@ -1125,7 +1124,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Wizeline",
-			Website: "https://www.wizeline.com/",
+			BaseURL: "https://www.wizeline.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                3543771,
 				IDs:               nil,
@@ -1141,7 +1140,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Vertex Agility",
-			Website: "https://www.vertexagility.com/",
+			BaseURL: "https://www.vertexagility.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                694216,
 				IDs:               nil,
@@ -1157,7 +1156,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "EXL",
-			Website: "https://www.exlservice.com/",
+			BaseURL: "https://www.exlservice.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                163743,
 				IDs:               []int{28813, 163743},
@@ -1173,7 +1172,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Viveris",
-			Website: "https://www.viveris.fr/",
+			BaseURL: "https://www.viveris.fr/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                35418,
 				IDs:               nil,
@@ -1189,7 +1188,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Compunnel Inc.",
-			Website: "https://www.compunnel.com/",
+			BaseURL: "https://www.compunnel.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                16690,
 				IDs:               nil,
@@ -1205,7 +1204,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "ERNI",
-			Website: "https://www.betterask.erni/",
+			BaseURL: "https://www.betterask.erni/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                55018,
 				IDs:               []int{55018, 1414690},
@@ -1221,7 +1220,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "emagine",
-			Website: "https://www.emagine.org/",
+			BaseURL: "https://www.emagine.org/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                30899,
 				IDs:               []int{30899, 18487093, 18499941, 83005407},
@@ -1237,7 +1236,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Schuberg Philis",
-			Website: "https://schubergphilis.com/",
+			BaseURL: "https://schubergphilis.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                16104,
 				IDs:               nil,
@@ -1253,7 +1252,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "RITS",
-			Website: "https://rits.center/",
+			BaseURL: "https://rits.center/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                5182288,
 				IDs:               nil,
@@ -1269,7 +1268,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Revature",
-			Website: "https://www.revature.com/",
+			BaseURL: "https://www.revature.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                10510386,
 				IDs:               nil,
@@ -1285,7 +1284,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "TEKsystems",
-			Website: "https://www.teksystems.com/",
+			BaseURL: "https://www.teksystems.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                2152,
 				IDs:               []int{2152, 14785},
@@ -1301,7 +1300,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Centraprise",
-			Website: "https://centraprise.com/",
+			BaseURL: "https://centraprise.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                13345578,
 				IDs:               nil,
@@ -1317,7 +1316,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Tata Consultancy Services",
-			Website: "https://www.tcs.com/",
+			BaseURL: "https://www.tcs.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1353,
 				IDs:               nil,
@@ -1333,7 +1332,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Parser",
-			Website: "https://parserdigital.com/",
+			BaseURL: "https://parserdigital.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                11142678,
 				IDs:               nil,
@@ -1349,7 +1348,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Aderen",
-			Website: "https://aderen.es/",
+			BaseURL: "https://aderen.es/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                5151361,
 				IDs:               nil,
@@ -1365,7 +1364,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Devsu",
-			Website: "https://devsu.com/",
+			BaseURL: "https://devsu.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1102330,
 				IDs:               nil,
@@ -1381,7 +1380,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Next Engineering",
-			Website: "https://www.nextengineering.pt/",
+			BaseURL: "https://www.nextengineering.pt/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                18625468,
 				IDs:               nil,
@@ -1397,7 +1396,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Synechron",
-			Website: "https://www.synechron.com/",
+			BaseURL: "https://www.synechron.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                15506,
 				IDs:               []int{15506, 112082},
@@ -1413,7 +1412,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "mthree",
-			Website: "https://mthree.com/",
+			BaseURL: "https://mthree.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1901582,
 				IDs:               nil,
@@ -1429,7 +1428,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Netcompany",
-			Website: "https://netcompany.com/",
+			BaseURL: "https://netcompany.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                215128,
 				IDs:               []int{215128, 1382635, 82960120},
@@ -1445,7 +1444,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Mokka",
-			Website: "https://www.gomokka.com/",
+			BaseURL: "https://www.gomokka.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                104342736,
 				IDs:               nil,
@@ -1461,7 +1460,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Nexttech",
-			Website: "https://www.nexttech.ro/",
+			BaseURL: "https://www.nexttech.ro/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                10146892,
 				IDs:               nil,
@@ -1477,7 +1476,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Nomiso",
-			Website: "https://nomiso.io/",
+			BaseURL: "https://nomiso.io/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                73062780,
 				IDs:               nil,
@@ -1493,7 +1492,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "HCLTech",
-			Website: "https://www.hcltech.com/",
+			BaseURL: "https://www.hcltech.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1756,
 				IDs:               nil,
@@ -1509,7 +1508,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "CI&T",
-			Website: "https://ciandt.com/",
+			BaseURL: "https://ciandt.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                203563,
 				IDs:               nil,
@@ -1525,7 +1524,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "STAND 8 Technology Consulting",
-			Website: "https://www.stand8.io/",
+			BaseURL: "https://www.stand8.io/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                2579911,
 				IDs:               nil,
@@ -1541,7 +1540,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Fimatix",
-			Website: "https://fimatix.com/",
+			BaseURL: "https://fimatix.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                11277809,
 				IDs:               nil,
@@ -1557,7 +1556,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Quantrics Enterprises Inc.",
-			Website: "https://www.quantrics.com/",
+			BaseURL: "https://www.quantrics.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                10821407,
 				IDs:               nil,
@@ -1573,7 +1572,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Bluebeam",
-			Website: "https://www.bluebeam.com/",
+			BaseURL: "https://www.bluebeam.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                111265,
 				IDs:               nil,
@@ -1589,7 +1588,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Zenitech",
-			Website: "https://zenitech.co.uk/",
+			BaseURL: "https://zenitech.co.uk/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                10046178,
 				IDs:               nil,
@@ -1605,7 +1604,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Aluxion",
-			Website: "https://www.aluxion.com/",
+			BaseURL: "https://www.aluxion.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                5239783,
 				IDs:               nil,
@@ -1621,7 +1620,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Proxify",
-			Website: "https://proxify.io/",
+			BaseURL: "https://proxify.io/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                18548980,
 				IDs:               nil,
@@ -1637,7 +1636,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "VML Enterprise Solutions",
-			Website: "https://www.vml.com/",
+			BaseURL: "https://www.vml.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                13984234,
 				IDs:               nil,
@@ -1653,7 +1652,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Inetum",
-			Website: "https://www.inetum.com/",
+			BaseURL: "https://www.inetum.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                68841835,
 				IDs:               []int{201908, 68841835},
@@ -1669,7 +1668,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "TechieMinions",
-			Website: "https://techieminions.co/",
+			BaseURL: "https://techieminions.co/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                79898600,
 				IDs:               nil,
@@ -1685,7 +1684,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Iris Software Inc.",
-			Website: "https://www.irissoftware.com/",
+			BaseURL: "https://www.irissoftware.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                237658,
 				IDs:               nil,
@@ -1701,7 +1700,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Wipro",
-			Website: "https://www.wipro.com/",
+			BaseURL: "https://www.wipro.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1318,
 				IDs:               []int{1318, 9437247, 104966733},
@@ -1717,7 +1716,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Korn Ferry",
-			Website: "https://www.kornferry.com/",
+			BaseURL: "https://www.kornferry.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                3741,
 				IDs:               []int{3741, 5417, 6488, 13131, 49291, 53013, 349389, 3863592},
@@ -1733,7 +1732,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Apex Systems",
-			Website: "https://www.apexsystems.com/",
+			BaseURL: "https://www.apexsystems.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                4787,
 				IDs:               nil,
@@ -1749,7 +1748,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "ICF",
-			Website: "https://www.icf.com/",
+			BaseURL: "https://www.icf.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                5742,
 				IDs:               []int{5742, 1119042, 1594441, 3050322},
@@ -1765,7 +1764,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "NFQ",
-			Website: "https://www.nfq.com/",
+			BaseURL: "https://www.nfq.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                2999119,
 				IDs:               []int{2999119, 98675753},
@@ -1781,7 +1780,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Affinity",
-			Website: "https://affinity.pt/",
+			BaseURL: "https://affinity.pt/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                2701281,
 				IDs:               nil,
@@ -1797,7 +1796,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Software Mind",
-			Website: "https://softwaremind.com/",
+			BaseURL: "https://softwaremind.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                13480,
 				IDs:               nil,
@@ -1813,7 +1812,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Ampstek",
-			Website: "https://www.ampstek.com/",
+			BaseURL: "https://www.ampstek.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                13423341,
 				IDs:               nil,
@@ -1829,7 +1828,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Devoteam",
-			Website: "https://www.devoteam.com/",
+			BaseURL: "https://www.devoteam.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                4160,
 				IDs:               []int{4159, 4160, 40249, 125060, 9938308, 11421155, 18510518, 26241374, 64507143, 66244640, 76179553},
@@ -1845,7 +1844,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "diconium",
-			Website: "https://diconium.com/",
+			BaseURL: "https://diconium.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                5226787,
 				IDs:               []int{268681, 5226787},
@@ -1861,7 +1860,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Reply",
-			Website: "https://www.reply.com/",
+			BaseURL: "https://www.reply.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                4724,
 				IDs:               nil,
@@ -1877,7 +1876,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Avenue Code",
-			Website: "https://www.avenuecode.com/",
+			BaseURL: "https://www.avenuecode.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                583166,
 				IDs:               nil,
@@ -1893,7 +1892,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Techiebutler",
-			Website: "https://techiebutler.com/",
+			BaseURL: "https://techiebutler.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                90230746,
 				IDs:               nil,
@@ -1909,7 +1908,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Catalyte",
-			Website: "https://www.catalyte.io/",
+			BaseURL: "https://www.catalyte.io/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                21007,
 				IDs:               nil,
@@ -1925,7 +1924,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "SONDA",
-			Website: "https://www.sonda.com/",
+			BaseURL: "https://www.sonda.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                9592,
 				IDs:               nil,
@@ -1941,7 +1940,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Blip.pt",
-			Website: "https://www.blip.pt/",
+			BaseURL: "https://www.blip.pt/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                691223,
 				IDs:               nil,
@@ -1957,7 +1956,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Thoughtworks",
-			Website: "https://www.thoughtworks.com/",
+			BaseURL: "https://www.thoughtworks.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                157356,
 				IDs:               []int{157356, 5356627},
@@ -1973,7 +1972,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Affine",
-			Website: "https://affine.ai/",
+			BaseURL: "https://affine.ai/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1827639,
 				IDs:               nil,
@@ -1989,7 +1988,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "BIP",
-			Website: "https://www.bip-group.com/",
+			BaseURL: "https://www.bip-group.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                162842,
 				IDs:               []int{18147, 140165, 162842, 210520, 251763, 2566057, 5000452, 5361700, 17957777, 88034543, 102318955, 102405460, 106140919, 106302638},
@@ -2005,7 +2004,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Kunai",
-			Website: "https://www.kunaico.com/",
+			BaseURL: "https://www.kunaico.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                18728254,
 				IDs:               nil,
@@ -2021,7 +2020,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Matlen Silver",
-			Website: "https://matlensilver.com/",
+			BaseURL: "https://matlensilver.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                16127,
 				IDs:               nil,
@@ -2037,7 +2036,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Creospan Inc.",
-			Website: "https://creospan.com/",
+			BaseURL: "https://creospan.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                503768,
 				IDs:               nil,
@@ -2053,7 +2052,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Codurance",
-			Website: "https://www.codurance.com/",
+			BaseURL: "https://www.codurance.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                5389169,
 				IDs:               nil,
@@ -2069,7 +2068,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Appzlogic",
-			Website: "https://www.appzlogic.com/",
+			BaseURL: "https://www.appzlogic.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                10267542,
 				IDs:               nil,
@@ -2085,7 +2084,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Concentrix",
-			Website: "https://www.concentrix.com/",
+			BaseURL: "https://www.concentrix.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                23213,
 				IDs:               []int{15667, 23213, 103722362, 105865169, 105878214},
@@ -2101,7 +2100,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Optimissa",
-			Website: "https://optimissa.com/",
+			BaseURL: "https://optimissa.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                293379,
 				IDs:               nil,
@@ -2117,7 +2116,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Lunatech",
-			Website: "https://lunatech.com/",
+			BaseURL: "https://lunatech.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                52358,
 				IDs:               nil,
@@ -2133,7 +2132,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Astek",
-			Website: "https://astekgroup.fr/",
+			BaseURL: "https://astekgroup.fr/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                162561,
 				IDs:               []int{162561, 2599301, 5053798, 5102796, 85856801},
@@ -2149,7 +2148,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "MethodHub",
-			Website: "https://method-hub.com/",
+			BaseURL: "https://method-hub.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                79816265,
 				IDs:               nil,
@@ -2165,7 +2164,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Dexian",
-			Website: "https://dexian.com/",
+			BaseURL: "https://dexian.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                91447303,
 				IDs:               []int{9687, 69872, 470909, 2097099, 91447303, 103351397, 104801608},
@@ -2181,7 +2180,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Techversant",
-			Website: "https://techversantinfotech.com/",
+			BaseURL: "https://techversantinfotech.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                2371685,
 				IDs:               nil,
@@ -2197,7 +2196,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Galent",
-			Website: "https://galent.com/",
+			BaseURL: "https://galent.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                105053560,
 				IDs:               nil,
@@ -2213,7 +2212,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Cegeka",
-			Website: "https://www.cegeka.com/",
+			BaseURL: "https://www.cegeka.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                6521,
 				IDs:               nil,
@@ -2229,7 +2228,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Dellent",
-			Website: "https://dellentconsulting.com/",
+			BaseURL: "https://dellentconsulting.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                5388564,
 				IDs:               nil,
@@ -2245,7 +2244,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Atos",
-			Website: "https://atos.net/",
+			BaseURL: "https://atos.net/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1259,
 				IDs:               []int{1259, 53472064},
@@ -2261,7 +2260,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "CoffeeBeans",
-			Website: "https://coffeebeans.io/",
+			BaseURL: "https://coffeebeans.io/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                13251676,
 				IDs:               nil,
@@ -2277,7 +2276,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "RE Partners",
-			Website: "https://www.re-partners.com/",
+			BaseURL: "https://www.re-partners.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                30099094,
 				IDs:               nil,
@@ -2293,7 +2292,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Serokell",
-			Website: "https://serokell.io/",
+			BaseURL: "https://serokell.io/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                10451691,
 				IDs:               nil,
@@ -2309,7 +2308,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Truelogic Software",
-			Website: "https://www.truelogic.io/",
+			BaseURL: "https://www.truelogic.io/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                108640,
 				IDs:               nil,
@@ -2325,7 +2324,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Stateside",
-			Website: "https://stateside.agency/",
+			BaseURL: "https://stateside.agency/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                9448167,
 				IDs:               nil,
@@ -2341,7 +2340,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Lean Tech",
-			Website: "https://www.leangroup.com/",
+			BaseURL: "https://www.leangroup.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                19258959,
 				IDs:               nil,
@@ -2357,7 +2356,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Simform",
-			Website: "https://www.simform.com/",
+			BaseURL: "https://www.simform.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                607800,
 				IDs:               nil,
@@ -2373,7 +2372,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Optomi",
-			Website: "https://www.optomi.com/",
+			BaseURL: "https://www.optomi.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                2684081,
 				IDs:               nil,
@@ -2389,7 +2388,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "3Pillar",
-			Website: "https://www.3pillarglobal.com/",
+			BaseURL: "https://www.3pillarglobal.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                684004,
 				IDs:               []int{65620, 684004},
@@ -2405,7 +2404,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "TMC",
-			Website: "https://www.themembercompany.com/",
+			BaseURL: "https://www.themembercompany.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                166459,
 				IDs:               []int{166459, 9189163, 91519275, 93352899},
@@ -2421,7 +2420,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "CODE.ID",
-			Website: "https://www.code.id/",
+			BaseURL: "https://www.code.id/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                4841387,
 				IDs:               nil,
@@ -2437,7 +2436,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "AMISEQ",
-			Website: "https://amiseq.com/",
+			BaseURL: "https://amiseq.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                17954837,
 				IDs:               nil,
@@ -2453,7 +2452,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Qodea",
-			Website: "https://www.qodea.com/",
+			BaseURL: "https://www.qodea.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1109178,
 				IDs:               nil,
@@ -2469,7 +2468,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "FlairX",
-			Website: "https://www.flairx.ai/",
+			BaseURL: "https://www.flairx.ai/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                104110324,
 				IDs:               nil,
@@ -2485,7 +2484,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 		{
 			Type:    domain.CompanyTypeOutsource,
 			Name:    "Ziverge",
-			Website: "https://www.ziverge.com/",
+			BaseURL: "https://www.ziverge.com/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                34919838,
 				IDs:               nil,
@@ -2495,6 +2494,134 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 				Employees:         "11-50",
 				AssociatedMembers: "34",
 				Verified:          false,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Noblesoft Technologies",
+			BaseURL: "https://www.noblesoft.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                20505073,
+				IDs:               nil,
+				Alias:             "noblesoftusa",
+				Name:              "Noblesoft Technologies",
+				Followers:         "86K",
+				Employees:         "51-200",
+				AssociatedMembers: "66",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Nearsure",
+			BaseURL: "https://nortal.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                33202229,
+				IDs:               nil,
+				Alias:             "nearsure",
+				Name:              "Nearsure",
+				Followers:         "132K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "333",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Robosoft Technologies",
+			BaseURL: "https://www.robosoftin.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                35244,
+				IDs:               nil,
+				Alias:             "robosoft-technologies",
+				Name:              "Robosoft Technologies",
+				Followers:         "97K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "1,078",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Accord Innovations",
+			BaseURL: "https://www.accordinnovations.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                10372244,
+				IDs:               nil,
+				Alias:             "accordinnovations",
+				Name:              "Accord Innovations",
+				Followers:         "66K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "358",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "OpenResearch",
+			BaseURL: "https://openresearch.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                565082,
+				IDs:               nil,
+				Alias:             "openresearch",
+				Name:              "OpenResearch",
+				Followers:         "7K",
+				Employees:         "11-50",
+				AssociatedMembers: "28",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Comarch",
+			BaseURL: "https://www.comarch.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3529,
+				IDs:               []int{3529, 341100, 9488817},
+				Alias:             "comarch",
+				Name:              "Comarch",
+				Followers:         "88K",
+				Employees:         "5K-10K",
+				AssociatedMembers: "5,248",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Pontis Technology",
+			BaseURL: "https://pontistechnology.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                80232643,
+				IDs:               nil,
+				Alias:             "pontis-technology",
+				Name:              "Pontis Technology",
+				Followers:         "5K",
+				Employees:         "51-200",
+				AssociatedMembers: "108",
+				Verified:          true,
+			},
+			Ignore: true, // Outsource
+		},
+		{
+			Type:    domain.CompanyTypeOutsource,
+			Name:    "Beyond",
+			BaseURL: "https://www.bynd.com/",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1207800,
+				IDs:               nil,
+				Alias:             "beyond-technology-consultancy",
+				Name:              "Beyond",
+				Followers:         "23K",
+				Employees:         "51-200",
+				AssociatedMembers: "450",
+				Verified:          true,
 			},
 			Ignore: true, // Outsource
 		},

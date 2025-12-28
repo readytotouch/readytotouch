@@ -16,6 +16,7 @@ import (
 	"github.com/readytotouch/readytotouch/internal/organizer/db"
 	"github.com/readytotouch/readytotouch/internal/storage/postgres/dbs"
 	template "github.com/readytotouch/readytotouch/internal/templates/v1"
+	"github.com/readytotouch/readytotouch/internal/utils"
 
 	"github.com/gin-gonic/gin"
 )
@@ -23,7 +24,7 @@ import (
 var (
 	testFullPublicSince = time.Date(2025, time.November, 1, 0, 0, 0, 0, time.UTC)
 	testFullPublicUntil = time.Date(2026, time.January, 25, 0, 0, 0, 0, time.UTC)
-	testStrictAuthUntil = time.Date(2025, time.December, 1, 0, 0, 0, 0, time.UTC)
+	testStrictAuthUntil = time.Date(2025, time.December, 30, 0, 0, 0, 0, time.UTC)
 )
 
 func testStrictAuth(date time.Time) bool {
@@ -41,6 +42,10 @@ type (
 
 	vacancyURI struct {
 		VacancyID int64 `uri:"vacancy_id" binding:"required"`
+	}
+
+	languageURI struct {
+		Language string `uri:"language" binding:"required"`
 	}
 )
 
@@ -1031,10 +1036,80 @@ func (c *Controller) UnsafeCompanies(ctx *gin.Context) {
 	})
 }
 
+func (c *Controller) UnsafeCompaniesV3(ctx *gin.Context) {
+	var (
+		uri languageURI
+	)
+
+	err := ctx.ShouldBindUri(&uri)
+	if err != nil {
+		ctx.JSON(http.StatusInternalServerError, &domain.ErrorResponse{
+			ErrorMessage: err.Error(), // Yes, we are leaking the error message to the client, it's fine for now
+		})
+		return
+	}
+
+	organizer := domain.FindOrganizer(uri.Language)
+	if organizer.Empty() {
+		ctx.JSON(http.StatusInternalServerError, &domain.ErrorResponse{
+			ErrorMessage: fmt.Sprintf("unknown organizer for language: %s", uri.Language),
+		})
+		return
+	}
+
+	companies := c.companies(organizer.Language)
+
+	result := make([]domain.CompanyResponse, len(companies))
+	for i, company := range companies {
+		result[i] = domain.CompanyResponse{
+			ID:   company.ID,
+			Type: company.Type,
+			Logo: domain.CompanyLogoResponse{
+				MainSize: company.Logo.V2,
+			},
+			Name:       company.Name,
+			BaseURL:    company.BaseURL,
+			CareersURL: company.CareersURL,
+			AboutURL:   company.AboutURL,
+			BlogURL:    company.BlogURL,
+			LinkedInProfile: domain.LinkedInProfileResponse{
+				ID:       company.LinkedInProfile.ID,
+				IDs:      company.LinkedInProfile.IDs,
+				Alias:    company.LinkedInProfile.Alias,
+				Name:     company.LinkedInProfile.Name,
+				Verified: company.LinkedInProfile.Verified,
+			},
+			GitHubProfile: domain.GitHubProfileResponse{
+				Login:     company.GitHubProfile.Login,
+				Followers: company.GitHubProfile.Followers,
+				Verified:  company.GitHubProfile.Verified,
+			},
+			GlassdoorProfile: domain.GlassdoorProfileResponse{
+				OverviewURL: company.GlassdoorProfile.OverviewURL,
+				ReviewsURL:  company.GlassdoorProfile.ReviewsURL,
+				ReviewsRate: company.GlassdoorProfile.ReviewsRate,
+				Verified:    company.GlassdoorProfile.Verified,
+			},
+			ShortDescription:          company.ShortDescription,
+			Industries:                company.Industries,
+			CloudProviders:            company.CloudProviders,
+			HasEmployeesFromCountries: company.HasEmployeesFromCountries,
+			RustFoundationMember:      company.RustFoundationMember,
+			PinnedUntil:               utils.TimePointerOrNil(company.PinnedUntil),
+			Remote:                    company.Remote,
+			LatestVacancyDate:         utils.TimePointerOrNil(company.LatestVacancyDate),
+		}
+	}
+
+	ctx.JSON(http.StatusOK, &domain.CompaniesResponse{
+		Companies: result,
+	})
+}
+
 func (c *Controller) UnsafeVacancies(ctx *gin.Context) {
 	companies := db.CloneCompanies()
 
-	result := make([]domain.UnsafeVacancyResponse, 0, 1024)
+	result := make([]domain.UnsafeVacancyResponse, 0, 4096)
 	for _, company := range companies {
 		for _, language := range company.Languages {
 			for _, vacancy := range language.Vacancies {
@@ -1047,6 +1122,46 @@ func (c *Controller) UnsafeVacancies(ctx *gin.Context) {
 	}
 
 	ctx.JSON(http.StatusOK, &domain.UnsafeVacanciesResponse{
+		Vacancies: result,
+	})
+}
+
+func (c *Controller) UnsafeVacanciesV3(ctx *gin.Context) {
+	var (
+		uri languageURI
+	)
+
+	err := ctx.ShouldBindUri(&uri)
+	if err != nil {
+		ctx.JSON(http.StatusInternalServerError, &domain.ErrorResponse{
+			ErrorMessage: err.Error(), // Yes, we are leaking the error message to the client, it's fine for now
+		})
+		return
+	}
+
+	organizer := domain.FindOrganizer(uri.Language)
+	if organizer.Empty() {
+		ctx.JSON(http.StatusInternalServerError, &domain.ErrorResponse{
+			ErrorMessage: fmt.Sprintf("unknown organizer for language: %s", uri.Language),
+		})
+		return
+	}
+
+	companies := c.companies(organizer.Language)
+
+	result := make([]domain.VacancyResponse, 0, 4096)
+	for _, company := range companies {
+		for _, vacancy := range company.Languages[organizer.Language].Vacancies {
+			id, ok := organizers.VacancyUrlMap[vacancy.URL]
+			if ok {
+				result = append(result, domain.VacancyResponse{
+					ID: id,
+				})
+			}
+		}
+	}
+
+	ctx.JSON(http.StatusOK, &domain.VacanciesResponse{
 		Vacancies: result,
 	})
 }
@@ -1487,7 +1602,7 @@ func (c *Controller) DataPopulationCompaniesCareersAndAboutAndBlog(ctx *gin.Cont
 				return false
 			}
 
-			return company.Careers == "" || company.About == "" || company.Blog == ""
+			return company.CareersURL == "" || company.AboutURL == "" || company.BlogURL == ""
 		})
 	)
 

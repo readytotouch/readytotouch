@@ -44,7 +44,7 @@
     {%= ga() %}
 </head>
 
-<body class="organizer-companies-inner">
+<body class="organizer-companies-inner" data-vacancies-page-version="2">
 <main class="main-wrapper">
 	<header class="header">
   <div class="header__wrapper">
@@ -102,18 +102,27 @@
 <section class="search-container container">
   <div class="search search--org-vacancies search--organizer">
     <div class="search__input-group">
-      <input class="search__input" id="js-vacancy-query" type="search" name="search" placeholder="Search" />
-      {% comment %}
-      <!--
-      <input class="search__input" id="js-vacancy-query" type="search" name="search" placeholder="Search" list="js-vacancy-query-datalist" />
-      <datalist id="js-vacancy-query-datalist">
-        {% for _, company := range companies %}
-          <option value="{%s company.Name %}"></option>
-        {% endfor %}
-      </datalist>
-      -->
-      {% endcomment %}
-      <img class="search__icon" alt="Search icon" width="20" height="20" src="/assets/images/pages/common/search.svg" />
+      <form id="js-vacancy-search-form">
+        <input
+          class="search__input"
+          id="js-vacancy-query"
+          type="search"
+          name="search"
+          placeholder="Search"
+        />
+        {% comment %}
+        <!-- Commented out because this autocomplete shifts to the right when viewing  -->
+        <!--
+          <input class="search__input" id="js-vacancy-query" type="search" name="search" placeholder="Search" list="js-vacancy-query-datalist" />
+          <datalist id="js-vacancy-query-datalist">
+            {% for _, company := range companies %}
+              <option value="{%s company.Name %}"></option>
+            {% endfor %}
+          </datalist>
+        -->
+        {% endcomment %}
+        <img class="search__icon" alt="Search icon" width="20" height="20" src="/assets/images/pages/common/search.svg" />
+      </form>
     </div>
     {% comment %}
 		<select class="search__select search__common-select" name="sort">

@@ -25,8 +25,8 @@
         <div class="company-name">{%s company.Name %}</div>
         <div class="links">
             {% if company.BlindProfile.Alias == "" %}
-            <a href='{%s googleSearchBlind(hostname(company.Website)) %}' target="_blank">
-                <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> site:teamblind.com {%s hostname(company.Website) %}
+            <a href='{%s googleSearchBlind(hostname(company.BaseURL)) %}' target="_blank">
+                <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> site:teamblind.com {%s hostname(company.BaseURL) %}
             </a>
             <a href='{%s googleSearchBlind(company.Name) %}' target="_blank">
                 <img alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg"> site:teamblind.com {%s company.Name %}

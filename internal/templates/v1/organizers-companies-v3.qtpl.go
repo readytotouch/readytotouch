@@ -98,7 +98,7 @@ func StreamOrganizersCompaniesV3(qw422016 *qt422016.Writer,
 </head>
 
 <body>
-<div class="main-wrapper main-wrapper--organizer-inner">
+<div class="main-wrapper main-wrapper--organizer-inner" data-companies-page-version="3">
 <header class="header">
   <div class="header__wrapper">
     <a href="/`)
@@ -183,10 +183,18 @@ func StreamOrganizersCompaniesV3(qw422016 *qt422016.Writer,
   <section class="search-container container">
     <div class="search search--projects search--organizer search--with-sort">
       <div class="search__input-group">
-        <input class="search__input" id="js-company-query" type="text" placeholder="Search" />
-        `)
+        <form id="js-company-search-form">
+          <input
+            class="search__input"
+            id="js-company-query"
+            type="search"
+            name="search"
+            placeholder="Search"
+          />
+          `)
 	qw422016.N().S(`
-        <img class="search__icon" alt="Search icon" width="20" height="20" src="/assets/images/pages/common/search.svg" />
+          <img class="search__icon" alt="Search icon" width="20" height="20" src="/assets/images/pages/common/search.svg" />
+        </form>
       </div>
       <button type="button" class="mobile-filter js-mobile-open-filter-container-button">
         <img
@@ -500,43 +508,43 @@ func StreamOrganizersCompaniesV3(qw422016 *qt422016.Writer,
 
                 <div class="card__top-links">
                   <a href="`)
-		qw422016.E().S(company.Website)
+		qw422016.E().S(company.BaseURL)
 		qw422016.N().S(`" target="_blank" class="card__top-link button-link">Website</a>
                   `)
-		if company.Careers == "" {
+		if company.CareersURL == "" {
 			qw422016.N().S(`
                     <span class="card__top-link button-link disabled">Careers</span>
                   `)
 		} else {
 			qw422016.N().S(`
                     <a href="`)
-			qw422016.E().S(company.Careers)
+			qw422016.E().S(company.CareersURL)
 			qw422016.N().S(`" target="_blank" class="card__top-link button-link">Careers</a>
                   `)
 		}
 		qw422016.N().S(`
                   `)
-		if company.About == "" {
+		if company.AboutURL == "" {
 			qw422016.N().S(`
                     <span class="card__top-link button-link disabled">About</span>
                   `)
 		} else {
 			qw422016.N().S(`
                     <a href="`)
-			qw422016.E().S(company.About)
+			qw422016.E().S(company.AboutURL)
 			qw422016.N().S(`" target="_blank" class="card__top-link button-link">About</a>
                   `)
 		}
 		qw422016.N().S(`
                   `)
-		if company.Blog == "" {
+		if company.BlogURL == "" {
 			qw422016.N().S(`
                     <span class="card__top-link button-link disabled">Dev Blog</span>
                   `)
 		} else {
 			qw422016.N().S(`
                     <a href="`)
-			qw422016.E().S(company.Blog)
+			qw422016.E().S(company.BlogURL)
 			qw422016.N().S(`" target="_blank" class="card__top-link button-link">Dev Blog</a>
                   `)
 		}

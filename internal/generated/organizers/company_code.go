@@ -238,7 +238,7 @@ var (
 		"bjak":                                220,  // Bjak
 		"evercharge":                          221,  // EverCharge
 		"eburyfintech":                        222,  // Ebury
-		"talon.one":                           223,  // Talon.One
+		"talononeloyalty":                     223,  // Talon.One
 		"jomehq":                              557,  // Jome
 		"density-inc-":                        228,  // Density
 		"surfly":                              229,  // Surfly
@@ -590,7 +590,7 @@ var (
 		"hootsuite":                           588,  // Hootsuite
 		"hsbc":                                589,  // HSBC
 		"affinipay":                           590,  // AffiniPay
-		"vividmoney":                          591,  // Vivid Money
+		"vividmoney":                          591,  // Vivid
 		"idemiagroup":                         592,  // IDEMIA
 		"ninjatrader-group-llc":               593,  // NinjaTrader
 		"tikoafrica":                          594,  // Tiko
@@ -1283,6 +1283,26 @@ var (
 		"foxglovedev":                         1283, // Foxglove
 		"sky":                                 1284, // Sky
 		"reducate":                            1285, // Reducate
+		"myo-healthcare":                      1286, // myo
+		"innoflight-llc":                      1287, // Innoflight
+		"alma-security":                       1288, // Alma Security
+		"scoreplay":                           1289, // ScorePlay
+		"opencosmos":                          1290, // Open Cosmos
+		"axiomhq":                             1291, // Axiom
+		"staffbase":                           1292, // Staffbase
+		"cubicasa":                            1293, // CubiCasa
+		"axxonsoft":                           1294, // AxxonSoft
+		"careeros":                            1295, // CareerOS
+		"tele2":                               1296, // Tele2
+		"tipalti":                             1297, // Tipalti
+		"unbabel":                             1298, // Unbabel
+		"cariad-tech":                         1299, // CARIAD
+		"openai":                              1300, // OpenAI
+		"cargill":                             1301, // Cargill
+		"sardineai":                           1302, // Sardine
+		"appdirect":                           1303, // AppDirect
+		"wix-com":                             1304, // Wix
+		"zorgdomein":                          1305, // ZorgDomein
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

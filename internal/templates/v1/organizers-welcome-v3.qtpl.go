@@ -122,7 +122,9 @@ func StreamOrganizersWelcomeV3(qw422016 *qt422016.Writer, organizer Organizer, a
 	qw422016.N().S(`
 
 </div>
-
+<script src="/assets/js/welcome-app.js?`)
+	qw422016.N().D(appVersion)
+	qw422016.N().S(`"></script>
 </body>
 </html>
 `)
