@@ -377,7 +377,7 @@
 
             <!-- card list -->
             <div id="js-companies-container" class="search-result__cards row-gap-8 mt-24">
-              {% for _, company := range companies %}
+              {% for _, company := range companies[:0] %}
               <div class="js-company card"
                    data-company-id="{%dl company.ID %}"
                    data-company-name="{%s company.Name %}"

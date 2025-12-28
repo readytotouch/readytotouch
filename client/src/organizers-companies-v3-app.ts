@@ -1,9 +1,12 @@
 import {parseCurrentProgrammingLanguage} from "./pl";
 import {organizersWelcome} from "./welcome";
+import {CompanyResponse} from "./organizers-companies-v3-models";
+import {htmlToNode} from "./framework/html";
+import {renderCompany} from "./organizers-companies-v3-render-company";
 
 const currentProgrammingLanguage = parseCurrentProgrammingLanguage(window.location.pathname);
 
-function fetchCompanies(callback: () => void) {
+function fetchCompanies(callback: (companies: Array<CompanyResponse>) => void) {
     fetch(`/api/v1/unsafe/${currentProgrammingLanguage}/companies.json`, {
         method: "GET",
     }).then(function (response) {
@@ -14,7 +17,26 @@ function fetchCompanies(callback: () => void) {
             return;
         }
 
-        callback();
+        return response.json();
+    }).then(function (data) {
+        callback(data.companies);
     }).catch(console.error);
 }
 
+const $companiesContainer = document.getElementById("js-companies-container");
+
+function renderCompanies(companies: Array<CompanyResponse>) {
+    const length = Math.min(companies.length, 10);
+
+    const $companies = new Array<HTMLElement>(length);
+
+    for (let i = 0; i < length; i++) {
+        const $company = htmlToNode(renderCompany(companies[i], false));
+
+        $companies[i] = $company;
+    }
+
+    $companiesContainer.append(...$companies);
+}
+
+fetchCompanies(renderCompanies);

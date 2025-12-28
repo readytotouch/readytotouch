@@ -397,7 +397,7 @@ func StreamOrganizersCompaniesV3Beta(qw422016 *qt422016.Writer,
             <!-- card list -->
             <div id="js-companies-container" class="search-result__cards row-gap-8 mt-24">
               `)
-	for _, company := range companies {
+	for _, company := range companies[:0] {
 		qw422016.N().S(`
               <div class="js-company card"
                    data-company-id="`)

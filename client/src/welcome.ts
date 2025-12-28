@@ -3,7 +3,7 @@ import {parseCurrentProgrammingLanguage} from "./pl";
 export function organizersWelcome() {
     const pathname = window.location.pathname;
 
-    return `${parseCurrentProgrammingLanguage(pathname)}/welcome?redirect=${encodeURIComponent(pathname)}`;
+    return `/${parseCurrentProgrammingLanguage(pathname)}/welcome?redirect=${encodeURIComponent(pathname)}`;
 }
 
 export function welcome(companyUrl: string = "") {

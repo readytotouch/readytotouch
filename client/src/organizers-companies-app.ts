@@ -42,7 +42,6 @@ function markCompanyFavorite(companyId: number, favorite: boolean, callback: () 
     }).catch(console.error);
 }
 
-const $companiesContainer = document.getElementById("js-companies-container");
 const $companies = document.querySelectorAll(".js-company");
 const $resultCount = document.getElementById("js-result-count");
 
@@ -361,7 +360,6 @@ function search() {
         // debug time measurement
         const start = performance.now();
 
-        // $companiesContainer.hidden = true;
         $companies.forEach(function ($company: HTMLElement) {
             if (match($company)) {
                 $company.hidden = false;
@@ -373,7 +371,6 @@ function search() {
 
             $company.hidden = true;
         });
-        // $companiesContainer.hidden = false;
 
         // debug time measurement
         const end = performance.now();
