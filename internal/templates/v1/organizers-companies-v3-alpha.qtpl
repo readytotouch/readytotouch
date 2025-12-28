@@ -1,5 +1,5 @@
 {% import "strconv" %}
-{%- func OrganizersCompaniesV3(
+{%- func OrganizersCompaniesV3Alpha(
   organizerFeature OrganizerFeature,
   headerProfiles []SocialProviderUser,
   companies []Company,
@@ -45,7 +45,7 @@
 </head>
 
 <body>
-<div class="main-wrapper main-wrapper--organizer-inner" data-companies-page-version="3">
+<div class="main-wrapper main-wrapper--organizer-inner" data-companies-page-version="3-alpha">
 <header class="header">
   <div class="header__wrapper">
     <a href="/{%s organizerFeature.Organizer.Alias %}" class="header__logo">

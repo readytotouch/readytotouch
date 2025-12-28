@@ -1,5 +1,5 @@
 {% import "strconv" %}
-{%- func OrganizersVacanciesV3(
+{%- func OrganizersVacanciesV3Beta(
   organizerFeature OrganizerFeature,
   headerProfiles []SocialProviderUser,
   companies []Company,
@@ -45,7 +45,7 @@
 </head>
 
 <body>
-<div class="main-wrapper main-wrapper--organizer-inner" data-vacancies-page-version="3">
+<div class="main-wrapper main-wrapper--organizer-inner" data-vacancies-page-version="3-beta">
 <header class="header">
   <div class="header__wrapper">
     <a href="/{%s organizerFeature.Organizer.Alias %}" class="header__logo">
@@ -2098,6 +2098,6 @@
 {%= organizersFooterV3() %}
 </div>
 </body>
-<script src="/assets/js/organizers-vacancies-app.js?{%d appVersion %}"></script>
+<script src="/assets/js/organizers-vacancies-v3-app.js?{%d appVersion %}"></script>
 </html>
 {%- endfunc -%}
