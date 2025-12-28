@@ -127,8 +127,6 @@ func StreamOrganizersCompaniesV3Alpha(qw422016 *qt422016.Writer,
 	qw422016.E().S(organizerFeature.Organizer.Alias)
 	qw422016.N().S(`/jobs" class="header__nav-link">Jobs</a>
         </li>
-        `)
-	qw422016.N().S(`
       </ul>
       `)
 	streamorganizersHeaderStarsV3(qw422016)
@@ -191,8 +189,6 @@ func StreamOrganizersCompaniesV3Alpha(qw422016 *qt422016.Writer,
             name="search"
             placeholder="Search"
           />
-          `)
-	qw422016.N().S(`
           <img class="search__icon" alt="Search icon" width="20" height="20" src="/assets/images/pages/common/search.svg" />
         </form>
       </div>
@@ -205,8 +201,6 @@ func StreamOrganizersCompaniesV3Alpha(qw422016 *qt422016.Writer,
         />
         <span id="js-mobile-selected-criteria-count" class="mobile-filter__counter" style="visibility: hidden;">0</span>
       </button>
-      `)
-	qw422016.N().S(`
     </div>
   </section>
 
@@ -225,9 +219,6 @@ func StreamOrganizersCompaniesV3Alpha(qw422016 *qt422016.Writer,
             </div>
 
             <div class="filters search-result__filters-list">
-              `)
-	qw422016.N().S(`
-
               <!-- Company type -->
               <div class="filters__group">
                 <header class="filters__header filters__header--with-info">
@@ -255,12 +246,6 @@ func StreamOrganizersCompaniesV3Alpha(qw422016 *qt422016.Writer,
                 </div>
               </div>
               <!-- /Company type -->
-
-              `)
-	qw422016.N().S(`
-
-              `)
-	qw422016.N().S(`
 
               <!-- Industry -->
               <div class="filters__group">
@@ -296,12 +281,6 @@ func StreamOrganizersCompaniesV3Alpha(qw422016 *qt422016.Writer,
                 </div>
               </div>
               <!-- /Industry -->
-
-              `)
-	qw422016.N().S(`
-
-              `)
-	qw422016.N().S(`
 
               <!-- Other -->
               <div class="filters__group">
@@ -341,8 +320,6 @@ func StreamOrganizersCompaniesV3Alpha(qw422016 *qt422016.Writer,
                       src="/assets/images/pages/common/flags/4x3/cz.svg"
                     />
                   </label>
-                  `)
-	qw422016.N().S(`
                   `)
 	if organizerFeature.Organizer.Alias == "rust" {
 		qw422016.N().S(`
@@ -390,8 +367,6 @@ func StreamOrganizersCompaniesV3Alpha(qw422016 *qt422016.Writer,
               <p class="search-result-found"><span id="js-result-count" class="search-result-found__amount">`)
 	qw422016.N().D(len(companies))
 	qw422016.N().S(`</span> results</p>
-              `)
-	qw422016.N().S(`
             </div>
 
             <!-- card list -->
@@ -483,8 +458,6 @@ func StreamOrganizersCompaniesV3Alpha(qw422016 *qt422016.Writer,
 		qw422016.E().S(company.Name)
 		qw422016.N().S(`</a>
                     `)
-		qw422016.N().S(`
-                    `)
 		if !company.LatestVacancyDate.IsZero() {
 			qw422016.N().S(`
                     <p class="card__header-caption-text">
@@ -549,8 +522,6 @@ func StreamOrganizersCompaniesV3Alpha(qw422016 *qt422016.Writer,
                   `)
 		}
 		qw422016.N().S(`
-                  `)
-		qw422016.N().S(`
                 </div>
 
                 <div class="card__info">
@@ -578,8 +549,6 @@ func StreamOrganizersCompaniesV3Alpha(qw422016 *qt422016.Writer,
 		qw422016.E().S(industryNames(company.Industries))
 		qw422016.N().S(`</figcaption>
                   </figure>
-                  `)
-		qw422016.N().S(`
                 </div>
 
                 <div class="card__info-group">
@@ -914,9 +883,6 @@ func StreamOrganizersCompaniesV3Alpha(qw422016 *qt422016.Writer,
 	qw422016.N().S(`
             </div>
             <!-- /card list -->
-
-            `)
-	qw422016.N().S(`
           </div>
         </div>
       </div>

@@ -625,7 +625,7 @@ func StreamOrganizersVacanciesV3Beta(qw422016 *qt422016.Writer,
 	qw422016.N().S(`
 </div>
 </body>
-<script src="/assets/js/organizers-vacancies-app.js?`)
+<script src="/assets/js/organizers-vacancies-v3-app.js?`)
 	qw422016.N().D(appVersion)
 	qw422016.N().S(`"></script>
 </html>
