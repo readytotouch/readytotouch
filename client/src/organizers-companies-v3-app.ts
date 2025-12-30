@@ -3,6 +3,7 @@ import {organizersWelcome} from "./welcome";
 import {CompanyResponse} from "./organizers-companies-v3-models";
 import {htmlToNode} from "./framework/html";
 import {renderCompany} from "./organizers-companies-v3-render-company";
+import {addCompanyFavoriteEvent} from "./organizers-companies-favorite";
 
 const currentProgrammingLanguage = parseCurrentProgrammingLanguage(window.location.pathname);
 
@@ -32,6 +33,8 @@ function renderCompanies(companies: Array<CompanyResponse>) {
 
     for (let i = 0; i < length; i++) {
         const $company = htmlToNode(renderCompany(companies[i], false));
+
+        addCompanyFavoriteEvent($company);
 
         $companies[i] = $company;
     }

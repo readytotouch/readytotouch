@@ -23,6 +23,7 @@ import {responsiveHeaderProfileWidget} from "./responsive-header-profile-widget"
 import {githubStarsWidget} from "./github-stars-widget";
 import {responsiveFilterWidget} from "./responsive-filter-widget";
 import {responsiveCompanyShowMoreWidget} from "./responsive-company-show-more-widget";
+import {addCompanyFavoriteEvent} from "./organizers-companies-favorite";
 
 function markCompanyFavorite(companyId: number, favorite: boolean, callback: () => void) {
     fetch(`/api/v1/companies/${companyId}/favorite.json`, {
@@ -45,27 +46,7 @@ function markCompanyFavorite(companyId: number, favorite: boolean, callback: () 
 const $companies = document.querySelectorAll(".js-company");
 const $resultCount = document.getElementById("js-result-count");
 
-$companies.forEach(function ($company: HTMLElement) {
-    const companyId = parseInt($company.getAttribute("data-company-id"));
-
-    const $favorite = $company.querySelector(".js-company-favorite");
-    $favorite.addEventListener("click", function () {
-        const current = $favorite.classList.contains("in-favorite");
-        const next = !current;
-
-        markCompanyFavorite(companyId, next, function () {
-            if (next) {
-                $favorite.classList.add("in-favorite");
-
-                $favorite.setAttribute("title", "Remove from favorites")
-            } else {
-                $favorite.classList.remove("in-favorite");
-
-                $favorite.setAttribute("title", "Add to favorites")
-            }
-        });
-    });
-});
+$companies.forEach(addCompanyFavoriteEvent);
 
 const $form = document.getElementById("js-company-search-form");
 const $search = document.getElementById("js-company-query") as HTMLInputElement;
