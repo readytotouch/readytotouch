@@ -338,7 +338,7 @@ function search() {
         console.log(`Search took ${end - start} milliseconds.`);
     }
 
-    renderCompanies(currentStateCompanies);
+    renderCompanies(currentStateCompanies, true);
     $resultCount.innerHTML = currentStateCompanies.length.toString();
 }
 
@@ -361,7 +361,7 @@ function fetchCompanies(callback: (companies: Array<CompanyResponse>) => void) {
 
 const $companiesContainer = document.getElementById("js-companies-container");
 
-function renderCompanies(companies: Array<CompanyResponse>) {
+function renderCompanies(companies: Array<CompanyResponse>, clear: boolean = true) {
     const length = Math.min(companies.length, 10);
 
     const $companies = new Array<HTMLElement>(length);
@@ -374,6 +374,9 @@ function renderCompanies(companies: Array<CompanyResponse>) {
         $companies[i] = $company;
     }
 
+    if (clear) {
+        $companiesContainer.innerHTML = "";
+    }
     $companiesContainer.append(...$companies);
 }
 
