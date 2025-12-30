@@ -203,7 +203,7 @@ func StreamOrganizersVacanciesV2Alpha(qw422016 *qt422016.Writer,
   <div class="search-result__filter-group search-result__filter-group--wide">
     <div class="search-result__filter-header">
       <h2 class="search-result__filter-headline">Filters:</h2>
-      <button id="js-criteria-reset" class="button button--light-link search-result__filter-headline-reset" style="visibility: hidden;">Reset all</button>
+      <button class="button button--light-link search-result__filter-headline-reset js-criteria-reset" style="visibility: hidden;">Reset all</button>
     </div>
 
     <div class="filters">

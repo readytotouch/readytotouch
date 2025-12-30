@@ -218,7 +218,7 @@ func StreamOrganizersVacanciesV3Beta(qw422016 *qt422016.Writer,
           <div class="search-result__filter-group search-result__filter-group--wide">
             <div class="search-result__filter-header">
               <h2 class="search-result__filter-headline">Filters:</h2>
-              <button id="js-criteria-reset" type="button" class="button button--light-link search-result__filter-headline-reset js-criteria-reset" style="visibility: hidden;">Reset all</button>
+              <button type="button" class="button button--light-link search-result__filter-headline-reset js-criteria-reset" style="visibility: hidden;">Reset all</button>
               <button type="button" class="button button--light-link search-result__filter-headline-reset-mobile js-mobile-close-filter-container-button">
                 <img src="/assets/images/pages/common/cross-thin.svg" alt="cross icon" width="24" height="24">
               </button>

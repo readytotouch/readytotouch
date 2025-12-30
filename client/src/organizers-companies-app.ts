@@ -1,5 +1,3 @@
-import {organizersWelcome} from "./welcome";
-
 import urlStateContainer from "./framework/company_url_state_container";
 import {
     COMPANY_SEARCH_QUERY,
@@ -24,24 +22,6 @@ import {githubStarsWidget} from "./github-stars-widget";
 import {responsiveFilterWidget} from "./responsive-filter-widget";
 import {responsiveCompanyShowMoreWidget} from "./responsive-company-show-more-widget";
 import {addCompanyFavoriteEvent} from "./organizers-companies-favorite";
-
-function markCompanyFavorite(companyId: number, favorite: boolean, callback: () => void) {
-    fetch(`/api/v1/companies/${companyId}/favorite.json`, {
-        method: "PATCH",
-        body: JSON.stringify({
-            favorite: favorite,
-        }),
-    }).then(function (response) {
-        // Unauthorized
-        if (response.status === 401) {
-            window.location.href = organizersWelcome();
-
-            return;
-        }
-
-        callback();
-    }).catch(console.error);
-}
 
 const $companies = document.querySelectorAll(".js-company");
 const $resultCount = document.getElementById("js-result-count");
