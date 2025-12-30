@@ -4,7 +4,6 @@ const organizerGitHubAlias = "go";
 
 export function renderCompany(company: CompanyResponse, favorite: boolean): string {
     const companyURL = `/golang/companies/${company.linkedin_profile.alias}`;
-    const linkedinURL = `https://www.linkedin.com/company/${company.linkedin_profile.alias}/`;
 
     return `<div class="js-company card" data-company-id="{%dl company.ID %}">
     <aside class="card__action">
@@ -70,69 +69,9 @@ export function renderCompany(company: CompanyResponse, favorite: boolean): stri
         <div class="card__info-group-content">
             <p class="card__text">${company.short_description}</p>
             <div class="card__links">
-                <ul class="card__links-group">
-                    <li class="card__links-item card__links-item--title">
-                        <div class="card__links-item-group">
-                            <img
-                                class="card__links-icon"
-                                alt="linkedin icon"
-                                width="32"
-                                height="32"
-                                src="/assets/images/pages/organizer/linkedin.svg"
-                            />
-                            <a href="${linkedinURL}" target="_blank" class="card__links-link">LinkedIn</a>
-                            ${renderLinkedInVerified(company)}
-                        </div>
-                    </li>
-                    <li class="card__links-item">
-                        <a href="${linkedinURL}" target="_blank" class="button-link card__links-link">Overview</a>
-                    </li>
-                    <li class="card__links-item card__links-item--inner">
-                        <p class="card__links-item-text">Connections (employees):</p>
-                        <ul class="card__links-group-inner">
-                            <li class="card__links-item">
-                                <a href="javascript:void(0);" target="_blank" class="button-link card__links-link">Global</a>
-                                <img
-                                    class="card__links-icon"
-                                    alt="language icon"
-                                    width="20"
-                                    height="20"
-                                    src="/assets/images/pages/organizer/language.svg"
-                                />
-                            </li>
-                            <li class="card__links-item">
-                                <a href="javascript:void(0);" target="_blank" class="button-link card__links-link">UA</a>
-                                <img
-                                    class="card__links-icon"
-                                    alt="language icon"
-                                    width="20"
-                                    height="20"
-                                    src="/assets/images/pages/common/flags/4x3/ua.svg"
-                                />
-                            </li>
-                            <li class="card__links-item">
-                                <a href="javascript:void(0);" target="_blank" class="button-link card__links-link">CZ</a>
-                                <img
-                                    class="card__links-icon"
-                                    alt="language icon"
-                                    width="20"
-                                    height="20"
-                                    src="/assets/images/pages/common/flags/4x3/cz.svg"
-                                />
-                            </li>
-                            <li class="card__links-item">
-                                <a href="javascript:void(0);" target="_blank" class="button-link card__links-link">Former (All)</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="card__links-item">
-                        <a href="javascript:void(0);" target="_blank" class="button-link card__links-link">Employees' posts</a>
-                    </li>
-                    <li class="card__links-item">
-                        <a href="javascript:void(0);" target="_blank" class="button-link card__links-link">Jobs</a>
-                    </li>
-                </ul>
+                ${renderLinkedIn(company)}
                 ${renderGitHub(company)}
+                ${renderGlassdoor(company)}
                 <ul class="card__links-group">
                 {% if company.GlassdoorProfile.OverviewURL == "" %}
                 <li class="card__links-item card__links-item--title card__links-item--disabled">
@@ -311,6 +250,73 @@ function renderCloudProviders(company: CompanyResponse): string {
 </figure>`;
 
     // @TODO: implement cloud providers rendering when data is available
+}
+
+function renderLinkedIn(company: CompanyResponse): string {
+    const linkedinURL = `https://www.linkedin.com/company/${company.linkedin_profile.alias}/`;
+
+    return `<ul class="card__links-group">
+    <li class="card__links-item card__links-item--title">
+        <div class="card__links-item-group">
+            <img
+                class="card__links-icon"
+                alt="linkedin icon"
+                width="32"
+                height="32"
+                src="/assets/images/pages/organizer/linkedin.svg"
+            />
+            <a href="${linkedinURL}" target="_blank" class="card__links-link">LinkedIn</a>
+            ${renderLinkedInVerified(company)}
+        </div>
+    </li>
+    <li class="card__links-item">
+        <a href="${linkedinURL}" target="_blank" class="button-link card__links-link">Overview</a>
+    </li>
+    <li class="card__links-item card__links-item--inner">
+        <p class="card__links-item-text">Connections (employees):</p>
+        <ul class="card__links-group-inner">
+            <li class="card__links-item">
+                <a href="javascript:void(0);" target="_blank" class="button-link card__links-link">Global</a>
+                <img
+                    class="card__links-icon"
+                    alt="language icon"
+                    width="20"
+                    height="20"
+                    src="/assets/images/pages/organizer/language.svg"
+                />
+            </li>
+            <li class="card__links-item">
+                <a href="javascript:void(0);" target="_blank" class="button-link card__links-link">UA</a>
+                <img
+                    class="card__links-icon"
+                    alt="language icon"
+                    width="20"
+                    height="20"
+                    src="/assets/images/pages/common/flags/4x3/ua.svg"
+                />
+            </li>
+            <li class="card__links-item">
+                <a href="javascript:void(0);" target="_blank" class="button-link card__links-link">CZ</a>
+                <img
+                    class="card__links-icon"
+                    alt="language icon"
+                    width="20"
+                    height="20"
+                    src="/assets/images/pages/common/flags/4x3/cz.svg"
+                />
+            </li>
+            <li class="card__links-item">
+                <a href="javascript:void(0);" target="_blank" class="button-link card__links-link">Former (All)</a>
+            </li>
+        </ul>
+    </li>
+    <li class="card__links-item">
+        <a href="javascript:void(0);" target="_blank" class="button-link card__links-link">Employees' posts</a>
+    </li>
+    <li class="card__links-item">
+        <a href="javascript:void(0);" target="_blank" class="button-link card__links-link">Jobs</a>
+    </li>
+</ul>`;
 }
 
 function renderLinkedInVerified(company: CompanyResponse): string {
