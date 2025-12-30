@@ -1,5 +1,5 @@
 {% import "strconv" %}
-{%- func OrganizersCompaniesV1(
+{%- func OrganizersCompaniesV1Alpha(
   organizerFeature OrganizerFeature,
   headerProfiles []SocialProviderUser,
   companies []Company,
@@ -29,7 +29,7 @@
     {%= ga() %}
 </head>
 
-<body class="organizer-companies-inner" data-companies-page-version="1">
+<body class="organizer-companies-inner" data-companies-page-version="1-alpha">
 <main class="main-wrapper">
 	<header class="header">
   <div class="header__wrapper">

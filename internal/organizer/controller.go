@@ -179,12 +179,12 @@ func (c *Controller) GolangCompaniesUkraine(ctx *gin.Context) {
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
 }
 
-func (c *Controller) CompaniesV1(ctx *gin.Context) {
-	c.companiesAction(ctx, template.OrganizersCompaniesV1)
+func (c *Controller) CompaniesV1Alpha(ctx *gin.Context) {
+	c.companiesAction(ctx, template.OrganizersCompaniesV1Alpha)
 }
 
-func (c *Controller) CompaniesV2(ctx *gin.Context) {
-	c.companiesAction(ctx, template.OrganizersCompaniesV2)
+func (c *Controller) CompaniesV2Alpha(ctx *gin.Context) {
+	c.companiesAction(ctx, template.OrganizersCompaniesV2Alpha)
 }
 
 func (c *Controller) CompaniesV3Alpha(ctx *gin.Context) {
@@ -483,8 +483,8 @@ func (c *Controller) companyAction(
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
 }
 
-func (c *Controller) JobsV2(ctx *gin.Context) {
-	c.jobsAction(ctx, template.OrganizersVacanciesV2)
+func (c *Controller) JobsV2Alpha(ctx *gin.Context) {
+	c.jobsAction(ctx, template.OrganizersVacanciesV2Alpha)
 }
 
 func (c *Controller) JobsV3Alpha(ctx *gin.Context) {
