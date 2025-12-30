@@ -362,7 +362,7 @@ function fetchCompanies(callback: (companies: Array<CompanyResponse>) => void) {
 const $companiesContainer = document.getElementById("js-companies-container");
 
 function renderCompanies(companies: Array<CompanyResponse>, clear: boolean = true) {
-    const length = Math.min(companies.length, 1000);
+    const length = Math.min(companies.length, 10);
 
     const $companies = new Array<HTMLElement>(length);
 
