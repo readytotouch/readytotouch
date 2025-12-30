@@ -72,61 +72,6 @@ export function renderCompany(company: CompanyResponse, favorite: boolean): stri
                 ${renderLinkedIn(company)}
                 ${renderGitHub(company)}
                 ${renderGlassdoor(company)}
-                <ul class="card__links-group">
-                {% if company.GlassdoorProfile.OverviewURL == "" %}
-                <li class="card__links-item card__links-item--title card__links-item--disabled">
-                  <div class="card__links-item-group">
-                    <img
-                      class="card__links-icon"
-                      alt="Glassdoor icon"
-                      width="32"
-                      height="32"
-                      src="/assets/images/pages/organizer/glassdoor.svg"
-                    />
-                    <span class="card__links-link">Glassdoor</span>
-                  </div>
-                </li>
-                <li class="card__links-item card__links-item--disabled">
-                  <span class="button-link card__links-link">Overview</span>
-                  <a href="{%s googleSearchGlassdoor(company.Name) %}" target="_blank" class="card__links-link card__links-link--google">
-                    <img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
-                  </a>
-                </li>
-                <li class="card__links-item card__links-item--disabled">
-                  <span class="button-link card__links-link">Reviews</span>
-                  <span class="card__links-link-star">?.? ★</span>
-                </li>
-                {% else %}
-                <li class="card__links-item card__links-item--title">
-                  <div class="card__links-item-group">
-                    <img
-                      class="card__links-icon"
-                      alt="Glassdoor icon"
-                      width="32"
-                      height="32"
-                      src="/assets/images/pages/organizer/glassdoor.svg"
-                    />
-                    <a href="{%s company.GlassdoorProfile.OverviewURL %}" target="_blank" class="card__links-link">Glassdoor</a>
-                    {% if company.GlassdoorProfile.Verified %}
-                    <span class="card__links-link card__links-link--verify">
-                      <img
-                        class="card__links-icon"
-                        alt="Glassdoor verified icon"
-                        src="/assets/images/pages/organizer/verified-icon-2.png"
-                      />
-                    </span>
-                    {% endif %}
-                  </div>
-                </li>
-                <li class="card__links-item">
-                  <a href="{%s company.GlassdoorProfile.OverviewURL %}" target="_blank" class="button-link card__links-link">Overview</a>
-                </li>
-                <li class="card__links-item">
-                  <a href="{%s company.GlassdoorProfile.ReviewsURL %}" target="_blank" class="button-link card__links-link">Reviews</a>
-                  <span class="card__links-link-star">{%s formatGlassdoorReviewsRate(company.GlassdoorProfile.ReviewsRate) %} ★</span>
-                </li>
-                {% endif %}
-                </ul>
             </div>
         </div>
     </div>
@@ -414,15 +359,77 @@ function renderGlassdoor(company: CompanyResponse): string {
         return renderGlassdoorEmpty(company);
     }
 
-    return ``;
+    return `<ul class="card__links-group">
+    <li class="card__links-item card__links-item--title">
+        <div class="card__links-item-group">
+            <img
+                class="card__links-icon"
+                alt="Glassdoor icon"
+                width="32"
+                height="32"
+                src="/assets/images/pages/organizer/glassdoor.svg"
+            />
+            <a href="${company.glassdoor_profile.overview_url}" target="_blank" class="card__links-link">Glassdoor</a>
+            ${renderGlassdoorVerified(company)}
+        </div>
+    </li>
+    <li class="card__links-item">
+        <a href="${company.glassdoor_profile.overview_url}" target="_blank" class="button-link card__links-link">Overview</a>
+    </li>
+    <li class="card__links-item">
+        <a href="${company.glassdoor_profile.reviews_url}" target="_blank" class="button-link card__links-link">Reviews</a>
+        <span class="card__links-link-star">${formatGlassdoorReviewsRate(company.glassdoor_profile.reviews_rate)} ★</span>
+    </li>
+</ul>`;
 }
 
 function renderGlassdoorEmpty(company: CompanyResponse): string {
-    return ``;
+    return `<ul class="card__links-group">
+    <li class="card__links-item card__links-item--title card__links-item--disabled">
+        <div class="card__links-item-group">
+            <img
+                class="card__links-icon"
+                alt="Glassdoor icon"
+                width="32"
+                height="32"
+                src="/assets/images/pages/organizer/glassdoor.svg"
+            />
+            <span class="card__links-link">Glassdoor</span>
+        </div>
+    </li>
+    <li class="card__links-item card__links-item--disabled">
+        <span class="button-link card__links-link">Overview</span>
+        <a href="${googleSearchGlassdoor(company.name)}" target="_blank" class="card__links-link card__links-link--google">
+            <img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+        </a>
+    </li>
+    <li class="card__links-item card__links-item--disabled">
+        <span class="button-link card__links-link">Reviews</span>
+        <span class="card__links-link-star">?.? ★</span>
+    </li>
+</ul>`;
 }
 
 function renderGlassdoorVerified(company: CompanyResponse): string {
-    return ``;
+    if (company.glassdoor_profile.verified === false) {
+        return "";
+    }
+
+    return `<span class="card__links-link card__links-link--verify">
+    <img
+        class="card__links-icon"
+        alt="Glassdoor verified icon"
+        src="/assets/images/pages/organizer/verified-icon-2.png"
+    />
+</span>`;
+}
+
+function formatGlassdoorReviewsRate(rate: string): string {
+   if (rate === "") {
+       return "?.?";
+   }
+
+    return rate
 }
 
 function googleSearchGitHub(companyName: string): string {
