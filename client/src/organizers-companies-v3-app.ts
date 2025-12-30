@@ -30,6 +30,310 @@ import {renderCompany} from "./organizers-companies-v3-render-company";
 
 const currentProgrammingLanguage = parseCurrentProgrammingLanguage(window.location.pathname);
 
+let sourceCompanies: Array<CompanyResponse> = [];
+let currentStateCompanies: Array<CompanyResponse> = [];
+
+const $resultCount = document.getElementById("js-result-count");
+
+const $form = document.getElementById("js-company-search-form");
+const $search = document.getElementById("js-company-query") as HTMLInputElement;
+const $typeCheckboxes = new InputCheckboxes(document.querySelectorAll("input.js-criteria-company-type") as any as Array<HTMLInputElement>);
+const $industryCheckboxes = new InputCheckboxes(document.querySelectorAll("input.js-criteria-company-industry") as any as Array<HTMLInputElement>);
+const $hasEmployeesFromCountryCheckboxes = new InputCheckboxes(document.querySelectorAll("input.js-criteria-has-employees-from-country") as any as Array<HTMLInputElement>);
+const $remoteCheckbox = document.getElementById("js-criteria-remote") as HTMLInputElement;
+const $inFavoritesCheckbox = document.getElementById("js-criteria-in-favorites") as HTMLInputElement;
+const $inRustFoundationMembersCheckbox = document.getElementById("js-criteria-rust-foundation-members") as HTMLInputElement;
+const $selectedCriteria = document.getElementById("js-company-selected-criteria");
+const $optionalMobileSelectedCriteriaCount = document.getElementById("js-mobile-selected-criteria-count");
+// "#js-criteria-reset" for backward compatibility
+const $resetButtons = document.querySelectorAll("#js-criteria-reset, .js-criteria-reset") as any as Array<HTMLElement>;
+
+$typeCheckboxes.onChange(function (state: Array<string>) {
+    urlStateContainer.setArrayCriteria(COMPANY_TYPE_CRITERIA_NAME, state);
+    urlStateContainer.setPage(1);
+    urlStateContainer.storeCurrentState();
+
+    renderSelectedCriteriaByURL();
+
+    search();
+});
+
+$industryCheckboxes.onChange(function (state: Array<string>) {
+    urlStateContainer.setArrayCriteria(COMPANY_INDUSTRY_CRITERIA_NAME, state);
+    urlStateContainer.setPage(1);
+    urlStateContainer.storeCurrentState();
+
+    renderSelectedCriteriaByURL();
+
+    search();
+});
+
+$hasEmployeesFromCountryCheckboxes.onChange(function (state: Array<string>) {
+    urlStateContainer.setArrayCriteria(COMPANY_HAS_EMPLOYEES_FROM_COUNTRY_CRITERIA_NAME, state);
+    urlStateContainer.setPage(1);
+    urlStateContainer.storeCurrentState();
+
+    renderSelectedCriteriaByURL();
+
+    search();
+});
+
+if ($inRustFoundationMembersCheckbox) {
+    $inRustFoundationMembersCheckbox.addEventListener("change", function () {
+        urlStateContainer.setBoolCriteria(COMPANY_RUST_FOUNDATION_MEMBERS_CRITERIA_NAME, $inRustFoundationMembersCheckbox.checked);
+        urlStateContainer.setPage(1);
+        urlStateContainer.storeCurrentState();
+
+        renderSelectedCriteriaByURL();
+
+        search();
+    });
+}
+
+$remoteCheckbox.addEventListener("change", function () {
+    urlStateContainer.setBoolCriteria(COMPANY_REMOTE_CRITERIA_NAME, $remoteCheckbox.checked);
+    urlStateContainer.setPage(1);
+    urlStateContainer.storeCurrentState();
+
+    renderSelectedCriteriaByURL();
+
+    search();
+});
+
+$inFavoritesCheckbox.addEventListener("change", function () {
+    urlStateContainer.setBoolCriteria(COMPANY_IN_FAVORITES_CRITERIA_NAME, $inFavoritesCheckbox.checked);
+    urlStateContainer.setPage(1);
+    urlStateContainer.storeCurrentState();
+
+    renderSelectedCriteriaByURL();
+
+    search();
+});
+
+const {
+    setInputStateByURL,
+    setCheckboxesStateByURL,
+    setCheckboxStateByURL,
+} = setStateByURLMapper(urlStateContainer);
+
+function setStateByURL() {
+    setInputStateByURL($search, COMPANY_SEARCH_QUERY);
+
+    setCheckboxesStateByURL($typeCheckboxes, COMPANY_TYPE_CRITERIA_NAME);
+    setCheckboxesStateByURL($industryCheckboxes, COMPANY_INDUSTRY_CRITERIA_NAME);
+    setCheckboxesStateByURL($hasEmployeesFromCountryCheckboxes, COMPANY_HAS_EMPLOYEES_FROM_COUNTRY_CRITERIA_NAME);
+
+    if ($inRustFoundationMembersCheckbox) {
+        setCheckboxStateByURL($inRustFoundationMembersCheckbox, COMPANY_RUST_FOUNDATION_MEMBERS_CRITERIA_NAME);
+    }
+    setCheckboxStateByURL($remoteCheckbox, COMPANY_REMOTE_CRITERIA_NAME);
+    setCheckboxStateByURL($inFavoritesCheckbox, COMPANY_IN_FAVORITES_CRITERIA_NAME);
+}
+
+function renderSelectedCriteriaByURL() {
+    const $views: Array<HTMLElement> = [];
+
+    renderSelectedCheckboxes($views, COMPANY_TYPE_CRITERIA_NAME, companyTypes);
+    renderSelectedCheckboxes($views, COMPANY_INDUSTRY_CRITERIA_NAME, industries);
+    renderSelectedCheckboxes($views, COMPANY_HAS_EMPLOYEES_FROM_COUNTRY_CRITERIA_NAME, hasEmployeesFromCountries);
+    renderSelectedCheckbox($views, COMPANY_RUST_FOUNDATION_MEMBERS_CRITERIA_NAME, "Rust Foundation Members");
+    renderSelectedCheckbox($views, COMPANY_REMOTE_CRITERIA_NAME, "Remote");
+    renderSelectedCheckbox($views, COMPANY_IN_FAVORITES_CRITERIA_NAME, "Favorites");
+
+    $selectedCriteria.innerHTML = "";
+    $selectedCriteria.append(...$views);
+
+    const visibility = $views.length === 0 ? "hidden" : "";
+    for (const $resetButton of $resetButtons) {
+        $resetButton.style.visibility = visibility;
+    }
+    $selectedCriteria.parentElement.style.visibility = visibility;
+    if ($optionalMobileSelectedCriteriaCount) {
+        $optionalMobileSelectedCriteriaCount.innerHTML = $views.length.toString();
+        $optionalMobileSelectedCriteriaCount.style.visibility = visibility;
+    }
+}
+
+function renderSelectedCheckboxes(
+    $views: Array<HTMLElement>,
+    criteriaName: string,
+    toAliases: (aliases: Array<string>) => Array<Alias>,
+) {
+    const aliases = urlStateContainer.getCriteria(criteriaName, []);
+
+    toAliases(aliases).forEach(function (alias: Alias) {
+        const $view = htmlToNode(renderSelected(alias.name, alias.image));
+
+        firstQuerySelector($view, "button").addEventListener("click", function () {
+            urlStateContainer.removeAlias(criteriaName, alias.alias);
+            urlStateContainer.setPage(1);
+            urlStateContainer.storeCurrentState();
+
+            updatePageState();
+        });
+
+        $views.push($view);
+    });
+}
+
+function renderSelectedCheckbox($views: Array<HTMLElement>, criteriaName: string, title: string) {
+    const checked = urlStateContainer.getCriteria(criteriaName, false);
+
+    if (checked) {
+        const $view = htmlToNode(renderSelected(title));
+
+        firstQuerySelector($view, "button").addEventListener("click", function () {
+            urlStateContainer.remove(criteriaName);
+            urlStateContainer.setPage(1);
+            urlStateContainer.storeCurrentState();
+
+            updatePageState();
+        });
+
+        $views.push($view);
+    }
+}
+
+const handleSearch = function () {
+    urlStateContainer.setPage(1);
+    urlStateContainer.storeCurrentState();
+
+    search();
+}
+
+$form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    urlStateContainer.setStringCriteria(COMPANY_SEARCH_QUERY, $search.value);
+
+    handleSearch();
+});
+
+for (const $resetButton of $resetButtons) {
+    $resetButton.addEventListener("click", function () {
+        urlStateContainer.keep(COMPANY_SEARCH_QUERY);
+        urlStateContainer.setPage(1);
+        urlStateContainer.storeCurrentState();
+
+        updatePageState();
+    });
+}
+
+function updatePageState() {
+    setStateByURL();
+
+    renderSelectedCriteriaByURL();
+
+    search();
+}
+
+function search() {
+    const query = $search.value.trim().toLowerCase();
+    const types = urlStateContainer.getCriteria(COMPANY_TYPE_CRITERIA_NAME, []);
+    const industries = urlStateContainer.getCriteria(COMPANY_INDUSTRY_CRITERIA_NAME, []);
+    const hasEmployeesFromCountries = urlStateContainer.getCriteria(COMPANY_HAS_EMPLOYEES_FROM_COUNTRY_CRITERIA_NAME, []);
+    const isRustFoundationMembers = urlStateContainer.getCriteria(COMPANY_RUST_FOUNDATION_MEMBERS_CRITERIA_NAME, false);
+    const remote = urlStateContainer.getCriteria(COMPANY_REMOTE_CRITERIA_NAME, false);
+    const inFavorites = urlStateContainer.getCriteria(COMPANY_IN_FAVORITES_CRITERIA_NAME, false);
+
+    const matchQuery = function (company: CompanyResponse): boolean {
+        if (query.length === 0) {
+            return true;
+        }
+
+        if (company.name.toLowerCase().indexOf(query) !== -1) {
+            return true;
+        }
+
+        if (company.short_description.toLowerCase().indexOf(query) !== -1) {
+            return true;
+        }
+
+        return false;
+    }
+
+    const matchIndustry = function (company: CompanyResponse): boolean {
+        if (industries.length === 0) {
+            return true;
+        }
+
+        for (const industry of industries) {
+            for (const companyIndustry of company.industries) {
+                if (companyIndustry.alias === industry) {
+                    return true;
+                }
+            }
+        }
+
+        return false;
+    }
+
+    const matchHasEmployeesFromCountry = function (company: CompanyResponse): boolean {
+        if (hasEmployeesFromCountries.length === 0) {
+            return true;
+        }
+
+        for (const country of hasEmployeesFromCountries) {
+            for (const companyCountry of company.has_employees_from_countries) {
+                if (companyCountry.alias === country) {
+                    return true;
+                }
+            }
+        }
+
+        return false;
+    }
+
+    const match = function (company: CompanyResponse): boolean {
+        if (!matchQuery(company)) {
+            return false;
+        }
+
+        if (types.length > 0 && types.indexOf(company.type) === -1) {
+            return false;
+        }
+
+        if (!matchIndustry(company)) {
+            return false;
+        }
+
+        if (!matchHasEmployeesFromCountry(company)) {
+            return false;
+        }
+
+        if (isRustFoundationMembers && !company.rust_foundation_member) {
+            return false;
+        }
+
+        if (remote && !company.remote) {
+            return false;
+        }
+
+        if (inFavorites) {
+            // @TODO: replace with real favorites check
+            return false;
+        }
+
+        return true;
+    }
+
+    // hide container to prevent multiple reflows
+    {
+        // debug time measurement
+        const start = performance.now();
+
+        currentStateCompanies = sourceCompanies.filter(match)
+
+        // debug time measurement
+        const end = performance.now();
+
+        console.log(`Search took ${end - start} milliseconds.`);
+    }
+
+    renderCompanies(currentStateCompanies);
+    $resultCount.innerHTML = currentStateCompanies.length.toString();
+}
+
 function fetchCompanies(callback: (companies: Array<CompanyResponse>) => void) {
     fetch(`/api/v1/unsafe/${currentProgrammingLanguage}/companies.json`, {
         method: "GET",
@@ -65,7 +369,17 @@ function renderCompanies(companies: Array<CompanyResponse>) {
     $companiesContainer.append(...$companies);
 }
 
-fetchCompanies(renderCompanies);
+function init(companies: Array<CompanyResponse>) {
+    sourceCompanies = companies;
+
+    search();
+}
+
+fetchCompanies(init);
+
+setStateByURL();
+
+renderSelectedCriteriaByURL();
 
 responsiveHeaderProfileWidget();
 
