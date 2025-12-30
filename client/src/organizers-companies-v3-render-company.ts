@@ -403,6 +403,22 @@ function renderGitHubVerified(company: CompanyResponse): string {
 </span>`;
 }
 
+function renderGlassdoor(company: CompanyResponse): string {
+    if (company.glassdoor_profile.overview_url === "") {
+        return renderGlassdoorEmpty(company);
+    }
+
+    return ``;
+}
+
+function renderGlassdoorEmpty(company: CompanyResponse): string {
+    return ``;
+}
+
+function renderGlassdoorVerified(company: CompanyResponse): string {
+    return ``;
+}
+
 function googleSearchGitHub(companyName: string): string {
     const params = new URLSearchParams({
         q: `site:github.com ${companyName}`,
