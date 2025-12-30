@@ -2,6 +2,7 @@ import {CompanyResponse, Industry} from "./organizers-companies-v3-models";
 
 export function renderCompany(company: CompanyResponse, favorite: boolean): string {
     const companyURL = `/golang/companies/${company.linkedin_profile.alias}`;
+    const linkedinURL = `https://www.linkedin.com/company/${company.linkedin_profile.alias}/`;
 
     return `<div class="js-company card" data-company-id="{%dl company.ID %}">
     <aside class="card__action">
@@ -52,6 +53,201 @@ export function renderCompany(company: CompanyResponse, favorite: boolean): stri
         </figure>
         ${renderCloudProviders(company)}
     </div>
+
+    <div class="card__info-group">
+        <button type="button" class="button button--small button--black card__info-group-button js-mobile-company-show-more-info-button">
+            <span class="card__info-group-button-text js-toggle-text">Show more info</span>
+            <img
+                class="card__info-group-button-image"
+                src="/assets/images/pages/common/double-arrow-down.svg"
+                width="13"
+                height="14"
+                alt="icon double-arrow-down"
+            />
+        </button>
+        <div class="card__info-group-content">
+            <p class="card__text">${company.short_description}</p>
+            <div class="card__links">
+                <ul class="card__links-group">
+                    <li class="card__links-item card__links-item--title">
+                        <div class="card__links-item-group">
+                            <img
+                                class="card__links-icon"
+                                alt="linkedin icon"
+                                width="32"
+                                height="32"
+                                src="/assets/images/pages/organizer/linkedin.svg"
+                            />
+                            <a href="${linkedinURL}" target="_blank" class="card__links-link">LinkedIn</a>
+                            ${renderLinkedInVerified(company)}
+                        </div>
+                    </li>
+                    <li class="card__links-item">
+                        <a href="${linkedinURL}" target="_blank" class="button-link card__links-link">Overview</a>
+                    </li>
+                    <li class="card__links-item card__links-item--inner">
+                        <p class="card__links-item-text">Connections (employees):</p>
+                        <ul class="card__links-group-inner">
+                            <li class="card__links-item">
+                                <a href="javascript:void(0);" target="_blank" class="button-link card__links-link">Global</a>
+                                <img
+                                    class="card__links-icon"
+                                    alt="language icon"
+                                    width="20"
+                                    height="20"
+                                    src="/assets/images/pages/organizer/language.svg"
+                                />
+                            </li>
+                            <li class="card__links-item">
+                                <a href="javascript:void(0);" target="_blank" class="button-link card__links-link">UA</a>
+                                <img
+                                    class="card__links-icon"
+                                    alt="language icon"
+                                    width="20"
+                                    height="20"
+                                    src="/assets/images/pages/common/flags/4x3/ua.svg"
+                                />
+                            </li>
+                            <li class="card__links-item">
+                                <a href="javascript:void(0);" target="_blank" class="button-link card__links-link">CZ</a>
+                                <img
+                                    class="card__links-icon"
+                                    alt="language icon"
+                                    width="20"
+                                    height="20"
+                                    src="/assets/images/pages/common/flags/4x3/cz.svg"
+                                />
+                            </li>
+                            <li class="card__links-item">
+                                <a href="javascript:void(0);" target="_blank" class="button-link card__links-link">Former (All)</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="card__links-item">
+                        <a href="javascript:void(0);" target="_blank" class="button-link card__links-link">Employees' posts</a>
+                    </li>
+                    <li class="card__links-item">
+                        <a href="javascript:void(0);" target="_blank" class="button-link card__links-link">Jobs</a>
+                    </li>
+                </ul>
+                <ul class="card__links-group">
+                {% if company.GitHubProfile.Login == "" %}
+                <li class="card__links-item card__links-item--title card__links-item--disabled">
+                  <div class="card__links-item-group">
+                    <img
+                      class="card__links-icon"
+                      alt="GitHub icon"
+                      width="32"
+                      height="32"
+                      src="/assets/images/pages/organizer/github.svg"
+                    />
+                    <span class="card__links-link">GitHub</span>
+                  </div>
+                </li>
+                <li class="card__links-item card__links-item--disabled">
+                  <span class="button-link card__links-link">Overview</span>
+                  <a href="{%s googleSearchGitHub(company.Name) %}" target="_blank" class="card__links-link card__links-link--google">
+                    <img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+                  </a>
+                </li>
+                <li class="card__links-item card__links-item--disabled">
+                  <span class="button-link card__links-link">Repositories (?)</span>
+                </li>
+                <li class="card__links-item card__links-item--disabled">
+                  <span class="button-link card__links-link">Followers (?)</span>
+                </li>
+                {% else %}
+                <li class="card__links-item card__links-item--title">
+                  <div class="card__links-item-group">
+                    <img
+                      class="card__links-icon"
+                      alt="GitHub icon"
+                      width="32"
+                      height="32"
+                      src="/assets/images/pages/organizer/github.svg"
+                    />
+                    <a href="https://github.com/{%s company.GitHubProfile.Login %}" target="_blank" class="card__links-link">GitHub</a>
+                    {% if company.GitHubProfile.Verified %}
+                    <span class="card__links-link card__links-link--verify">
+                      <img
+                        class="card__links-icon"
+                        alt="GitHub verified icon"
+                        src="/assets/images/pages/organizer/verified.png"
+                      />
+                    </span>
+                    {% endif %}
+                  </div>
+                </li>
+                <li class="card__links-item">
+                  <a href="https://github.com/{%s company.GitHubProfile.Login %}" target="_blank" class="button-link card__links-link">Overview</a>
+                </li>
+                <li class="card__links-item">
+                  <a href="https://github.com/orgs/{%s company.GitHubProfile.Login %}/repositories?q=lang:{%s organizerFeature.Organizer.GitHubAlias %}" target="_blank" class="button-link card__links-link">Repositories ({%d fetchGitHubRepositoriesCount(company, organizerFeature.Organizer.Language) %})</a>
+                </li>
+                <li class="card__links-item">
+                  <a href="https://github.com/orgs/{%s company.GitHubProfile.Login %}/followers" target="_blank" class="button-link card__links-link">Followers ({%s fetchGitHubFollowers(company) %})</a>
+                </li>
+                {% endif %}
+                </ul>
+                <ul class="card__links-group">
+                {% if company.GlassdoorProfile.OverviewURL == "" %}
+                <li class="card__links-item card__links-item--title card__links-item--disabled">
+                  <div class="card__links-item-group">
+                    <img
+                      class="card__links-icon"
+                      alt="Glassdoor icon"
+                      width="32"
+                      height="32"
+                      src="/assets/images/pages/organizer/glassdoor.svg"
+                    />
+                    <span class="card__links-link">Glassdoor</span>
+                  </div>
+                </li>
+                <li class="card__links-item card__links-item--disabled">
+                  <span class="button-link card__links-link">Overview</span>
+                  <a href="{%s googleSearchGlassdoor(company.Name) %}" target="_blank" class="card__links-link card__links-link--google">
+                    <img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+                  </a>
+                </li>
+                <li class="card__links-item card__links-item--disabled">
+                  <span class="button-link card__links-link">Reviews</span>
+                  <span class="card__links-link-star">?.? ★</span>
+                </li>
+                {% else %}
+                <li class="card__links-item card__links-item--title">
+                  <div class="card__links-item-group">
+                    <img
+                      class="card__links-icon"
+                      alt="Glassdoor icon"
+                      width="32"
+                      height="32"
+                      src="/assets/images/pages/organizer/glassdoor.svg"
+                    />
+                    <a href="{%s company.GlassdoorProfile.OverviewURL %}" target="_blank" class="card__links-link">Glassdoor</a>
+                    {% if company.GlassdoorProfile.Verified %}
+                    <span class="card__links-link card__links-link--verify">
+                      <img
+                        class="card__links-icon"
+                        alt="Glassdoor verified icon"
+                        src="/assets/images/pages/organizer/verified-icon-2.png"
+                      />
+                    </span>
+                    {% endif %}
+                  </div>
+                </li>
+                <li class="card__links-item">
+                  <a href="{%s company.GlassdoorProfile.OverviewURL %}" target="_blank" class="button-link card__links-link">Overview</a>
+                </li>
+                <li class="card__links-item">
+                  <a href="{%s company.GlassdoorProfile.ReviewsURL %}" target="_blank" class="button-link card__links-link">Reviews</a>
+                  <span class="card__links-link-star">{%s formatGlassdoorReviewsRate(company.GlassdoorProfile.ReviewsRate) %} ★</span>
+                </li>
+                {% endif %}
+                </ul>
+            </div>
+        </div>
+    </div>
+
 </div>`;
 }
 
@@ -172,3 +368,18 @@ function renderCloudProviders(company: CompanyResponse): string {
 
     // @TODO: implement cloud providers rendering when data is available
 }
+
+function renderLinkedInVerified(company: CompanyResponse): string {
+    if (company.linkedin_profile.verified === false) {
+        return "";
+    }
+
+    return `<a href="https://www.linkedin.com/company/${company.linkedin_profile.alias}/about" target="_blank" class="card__links-link card__links-link--verify">
+    <img
+        class="card__links-icon"
+        alt="LinkedIn verified icon"
+        src="/assets/images/pages/organizer/verified-icon.png"
+    />
+</a>`;
+}
+
