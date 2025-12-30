@@ -221,7 +221,7 @@ const companyTypeNameMap: Record<string, string> = {
 }
 
 function industryNames(industries: Industry[]): string {
-    if (!industries.length) {
+    if (!industries) {
         return "Unknown industry";
     }
 
