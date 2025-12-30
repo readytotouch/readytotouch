@@ -27,6 +27,7 @@ export class CompanyResponse {
         public readonly pinned_until: string | null,
         public readonly remote: boolean,
         public readonly latest_vacancy_date: string | null,
+        public readonly github_repository_count: number,
     ) {}
 }
 

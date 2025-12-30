@@ -60,7 +60,7 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 3,
+					GitHubRepositoryCount: 3,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Backend Software Engineer (Go)",
@@ -379,7 +379,7 @@ func companies02Shard() []domain.CompanyProfile {
 			GoMainLanguage:    true,
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 33,
+					GitHubRepositoryCount: 33,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer — UberEats Order Platform",
@@ -468,7 +468,7 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "https://www.youtube.com/@SiemensKnowledgeHub",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 19,
+					GitHubRepositoryCount: 19,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Backend Developer — Golang",
@@ -569,7 +569,7 @@ func companies02Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 1,
+					GitHubRepositoryCount: 1,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Rust Developer",
@@ -667,7 +667,7 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 4,
+					GitHubRepositoryCount: 4,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Developer",
@@ -760,7 +760,7 @@ func companies02Shard() []domain.CompanyProfile {
 				domain.Rust: {},
 				domain.Zig:  {},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Developer- Spark Scala",
@@ -774,7 +774,7 @@ func companies02Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Erlang/Elixir Software Developer",
@@ -848,7 +848,7 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 5,
+					GitHubRepositoryCount: 5,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Media Streaming Backend Engineer",
@@ -864,7 +864,7 @@ func companies02Shard() []domain.CompanyProfile {
 				domain.Rust: {},
 				domain.Zig:  {},
 				domain.Scala: {
-					GitHubRepositoriesCount: 5,
+					GitHubRepositoryCount: 5,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Media Streaming Backend Engineer",
@@ -940,7 +940,7 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 12,
+					GitHubRepositoryCount: 12,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Backend Engineer — Advertising",
@@ -1021,7 +1021,7 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 7,
+					GitHubRepositoryCount: 7,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer, Observability",
@@ -1112,7 +1112,7 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Junior Go Engineer",
@@ -1238,7 +1238,7 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 4,
+					GitHubRepositoryCount: 4,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Development Engineer III (Golang)",
@@ -1352,7 +1352,7 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 1,
+					GitHubRepositoryCount: 1,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Go Software Engineer",
@@ -1408,7 +1408,7 @@ func companies02Shard() []domain.CompanyProfile {
 				domain.Zig:   {},
 				domain.Scala: {},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer",
@@ -1484,7 +1484,7 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "https://www.youtube.com/@Samsung",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Staff Engineer, Ad Serving — Golang",
@@ -1582,7 +1582,7 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "https://www.youtube.com/@salesforge",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Golang Backend Engineer",
@@ -1660,7 +1660,7 @@ func companies02Shard() []domain.CompanyProfile {
 			GoMainLanguage:    true,
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 1,
+					GitHubRepositoryCount: 1,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer I – Golang",
@@ -1750,8 +1750,8 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 18,
-					Vacancies:               []domain.Vacancy{
+					GitHubRepositoryCount: 18,
+					Vacancies:             []domain.Vacancy{
 						/*
 							{
 								Title:                "",
@@ -1827,7 +1827,7 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "https://www.youtube.com/@streamdevelopers",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 41,
+					GitHubRepositoryCount: 41,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Staff Backend Engineer (Golang)",
@@ -1951,7 +1951,7 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 4,
+					GitHubRepositoryCount: 4,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer (Golang)",
@@ -1995,7 +1995,7 @@ func companies02Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer (Rust)",
@@ -2069,7 +2069,7 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 82,
+					GitHubRepositoryCount: 82,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer (Go)",
@@ -2162,8 +2162,8 @@ func companies02Shard() []domain.CompanyProfile {
 			GoMainLanguage:    true,
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 1,
-					Vacancies:               []domain.Vacancy{
+					GitHubRepositoryCount: 1,
+					Vacancies:             []domain.Vacancy{
 						/*
 							{
 								Title:                "",
@@ -2242,7 +2242,7 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 49,
+					GitHubRepositoryCount: 49,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Junior Software Engineer — Backend (Go)",
@@ -2323,7 +2323,7 @@ func companies02Shard() []domain.CompanyProfile {
 				domain.Rust: {},
 				domain.Zig:  {},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer (Java or Scala)",
@@ -2432,8 +2432,8 @@ func companies02Shard() []domain.CompanyProfile {
 			GoMainLanguage:    true,
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 31,
-					Vacancies:               []domain.Vacancy{
+					GitHubRepositoryCount: 31,
+					Vacancies:             []domain.Vacancy{
 						/*
 							{
 								Title:                "",
@@ -2513,7 +2513,7 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 32,
+					GitHubRepositoryCount: 32,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Staff Engineer",
@@ -2583,7 +2583,7 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Developer Go",
@@ -2700,7 +2700,7 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 3,
+					GitHubRepositoryCount: 3,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Backend Engineer (Golang)",
@@ -2796,7 +2796,7 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "https://www.youtube.com/@DeliveryHeroDH",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 16,
+					GitHubRepositoryCount: 16,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "(Junior) Software Engineer (Golang) — Demand Domain (AdTech)",
@@ -3076,8 +3076,8 @@ func companies02Shard() []domain.CompanyProfile {
 			GoMainLanguage:    true,
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 18,
-					Vacancies:               []domain.Vacancy{
+					GitHubRepositoryCount: 18,
+					Vacancies:             []domain.Vacancy{
 						/*
 							{
 								Title:                "",
@@ -3153,7 +3153,7 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 8,
+					GitHubRepositoryCount: 8,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer, Backend — Ad Engineering",
@@ -3227,7 +3227,7 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Staff Backend Engineer",
@@ -3313,7 +3313,7 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 4,
+					GitHubRepositoryCount: 4,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Backend Engineer (Golang)",
@@ -3330,7 +3330,7 @@ func companies02Shard() []domain.CompanyProfile {
 				domain.Zig:   {},
 				domain.Scala: {},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Backend Engineer (Elixir)",
@@ -3397,8 +3397,8 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{
 						/*
 							{
 								Title:            "",
@@ -3470,7 +3470,7 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 110,
+					GitHubRepositoryCount: 110,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer (Golang)",
@@ -3513,7 +3513,7 @@ func companies02Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer (Golang & Rust)",
@@ -3583,8 +3583,8 @@ func companies02Shard() []domain.CompanyProfile {
 			GoMainLanguage:    true,
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 23,
-					Vacancies:               []domain.Vacancy{
+					GitHubRepositoryCount: 23,
+					Vacancies:             []domain.Vacancy{
 						/*
 							{
 								Title:                "",
@@ -3647,8 +3647,8 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 3,
-					Vacancies:               []domain.Vacancy{
+					GitHubRepositoryCount: 3,
+					Vacancies:             []domain.Vacancy{
 						/*
 							{
 								Title:                "",
@@ -3720,7 +3720,7 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 9,
+					GitHubRepositoryCount: 9,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer (Go)",
@@ -3816,7 +3816,7 @@ func companies02Shard() []domain.CompanyProfile {
 			GoMainLanguage:    true,
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 92,
+					GitHubRepositoryCount: 92,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Go Developer",
@@ -3906,8 +3906,8 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 3,
-					Vacancies:               []domain.Vacancy{
+					GitHubRepositoryCount: 3,
+					Vacancies:             []domain.Vacancy{
 						/*
 							{
 								Title:                "",
@@ -3977,8 +3977,8 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{
 						/*
 							{
 								Title:            "",
@@ -4051,7 +4051,7 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "https://www.youtube.com/channel/UCqOEKwLpolZBcj4LfU3R0Fg",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Fullstack Software Developer (Golang & React)",
@@ -4225,7 +4225,7 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "https://www.youtube.com/squarespace",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 2,
+					GitHubRepositoryCount: 2,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer, Go — Social",
@@ -4298,7 +4298,7 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Backend Software Engineer (PHP)",
@@ -4425,7 +4425,7 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer Intern (Golang)",
@@ -4491,7 +4491,7 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 3,
+					GitHubRepositoryCount: 3,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Golang developer",
@@ -4562,7 +4562,7 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Staff Software Engineer (Platform, Reliability, Golang)",
@@ -4693,7 +4693,7 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 5,
+					GitHubRepositoryCount: 5,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer (Golang)",
@@ -4803,7 +4803,7 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 5,
+					GitHubRepositoryCount: 5,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Golang Developer",
@@ -4940,8 +4940,8 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "https://www.youtube.com/@openwebhq",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{
 						/*
 							{
 								Title:            "",
@@ -5010,7 +5010,7 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 4,
+					GitHubRepositoryCount: 4,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer (Golang)",
@@ -5115,7 +5115,7 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "https://www.youtube.com/@xataio",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 4,
+					GitHubRepositoryCount: 4,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Staff Golang Backend Engineer",
@@ -5185,7 +5185,7 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer, Golang",
@@ -5281,7 +5281,7 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "https://www.youtube.com/@unnax-emi",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 1,
+					GitHubRepositoryCount: 1,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Golang Software Engineer",
@@ -5351,7 +5351,7 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "https://www.youtube.com/@abtasty",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Golang Engineer",
@@ -5422,7 +5422,7 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "https://www.youtube.com/@FireboltHQ",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 6,
+					GitHubRepositoryCount: 6,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Go Software Engineer",
@@ -5495,7 +5495,7 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer (Golang) — Core Publishing",
@@ -5572,7 +5572,7 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "https://www.youtube.com/@isovalent",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 19,
+					GitHubRepositoryCount: 19,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Go Software Engineer — Hubble",
@@ -5646,7 +5646,7 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "https://www.youtube.com/@ABC-Fitness",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer — Golang",
@@ -5722,8 +5722,8 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "https://www.youtube.com/@Device42",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{
 						/*
 							{
 								Title:                "",
@@ -5799,7 +5799,7 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "https://www.youtube.com/@Acronis",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 9,
+					GitHubRepositoryCount: 9,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Developer (Golang)",
@@ -6108,7 +6108,7 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "https://www.youtube.com/@GCoreOfficial",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 13,
+					GitHubRepositoryCount: 13,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Golang Software Engineer (CDN)",
@@ -6258,8 +6258,8 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{
 						/*
 							{
 								Title:                "",
@@ -6334,7 +6334,7 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "https://www.youtube.com/@GelatoConnects",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Backend Engineer (Golang)",
@@ -6451,7 +6451,7 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "https://www.youtube.com/@SumUpGlobal",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 23,
+					GitHubRepositoryCount: 23,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Backend Software Engineer (Golang)",
@@ -6601,7 +6601,7 @@ func companies02Shard() []domain.CompanyProfile {
 				domain.Zig:   {},
 				domain.Scala: {},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "(Senior) Backend Engineer — Elixir",
@@ -6692,7 +6692,7 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "https://www.youtube.com/@LevelHome",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 1,
+					GitHubRepositoryCount: 1,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Backend Engineer (Golang)",
@@ -6776,7 +6776,7 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "https://www.youtube.com/@SonicWallInc",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Principal API Engineer",
@@ -6878,7 +6878,7 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "https://www.youtube.com/@Pindropsecurity",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Staff Software Engineer (Backend Golang)",
@@ -6944,7 +6944,7 @@ func companies02Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "https://www.youtube.com/@seedtag.advertising",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 1,
+					GitHubRepositoryCount: 1,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Backend Engineer (Performance AdTech)",

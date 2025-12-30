@@ -1106,6 +1106,7 @@ func (c *Controller) UnsafeCompaniesV3(ctx *gin.Context) {
 			PinnedUntil:               utils.TimePointerOrNil(company.PinnedUntil),
 			Remote:                    company.Remote,
 			LatestVacancyDate:         utils.TimePointerOrNil(company.LatestVacancyDate),
+			GitHubRepositoryCount:     company.Languages[organizer.Language].GitHubRepositoryCount,
 		}
 	}
 

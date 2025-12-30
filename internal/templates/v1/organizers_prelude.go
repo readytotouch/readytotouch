@@ -130,11 +130,11 @@ func formatLinkedInAssociatedMembers(s string) string {
 	return s
 }
 
-func fetchGitHubRepositoriesCount(company domain.CompanyProfile, language domain.Language) int {
-	return company.Languages[language].GitHubRepositoriesCount
+func formatGitHubRepositoryCount(company domain.CompanyProfile, language domain.Language) int {
+	return company.Languages[language].GitHubRepositoryCount
 }
 
-func fetchGitHubFollowers(company domain.CompanyProfile) string {
+func formatGitHubFollowers(company domain.CompanyProfile) string {
 	if company.GitHubProfile.Followers == "" {
 		return "?"
 	}

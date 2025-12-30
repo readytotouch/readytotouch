@@ -43,7 +43,7 @@ func companies12Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Rust Engineer",
@@ -109,7 +109,7 @@ func companies12Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Rust Software Engineer",
@@ -180,7 +180,7 @@ func companies12Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Rust Developer",
@@ -293,7 +293,7 @@ func companies12Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer (Go)",
@@ -371,7 +371,7 @@ func companies12Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer — Backend (Golang)",
@@ -472,7 +472,7 @@ func companies12Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 7,
+					GitHubRepositoryCount: 7,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer — Golang",
@@ -632,7 +632,7 @@ func companies12Shard() []domain.CompanyProfile {
 				domain.Rust: {},
 				domain.Zig:  {},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer II (Scala/Spark)",
@@ -708,7 +708,7 @@ func companies12Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer (Go/Golang)",
@@ -766,7 +766,7 @@ func companies12Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer, Golang (Digital Asset Infrastructure)",
@@ -832,7 +832,7 @@ func companies12Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer III (Golang)",
@@ -899,7 +899,7 @@ func companies12Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer (Golang)",
@@ -1023,7 +1023,7 @@ func companies12Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 67,
+					GitHubRepositoryCount: 67,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer (Golang)",
@@ -1098,7 +1098,7 @@ func companies12Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer II (Golang – Kubernetes)",
@@ -1245,7 +1245,7 @@ func companies12Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer – FullStack | Golang | Java",
@@ -1369,7 +1369,7 @@ func companies12Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Golang Senior Developer",
@@ -1436,7 +1436,7 @@ func companies12Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Developer – Golang",
@@ -1501,7 +1501,7 @@ func companies12Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Developer – Golang",
@@ -1562,7 +1562,7 @@ func companies12Shard() []domain.CompanyProfile {
 				domain.Rust: {},
 				domain.Zig:  {},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer (Scala)",
@@ -1629,7 +1629,7 @@ func companies12Shard() []domain.CompanyProfile {
 				domain.Rust: {},
 				domain.Zig:  {},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Data Engineer (Python, Scala, Azure)",
@@ -1714,7 +1714,7 @@ func companies12Shard() []domain.CompanyProfile {
 				domain.Rust: {},
 				domain.Zig:  {},
 				domain.Scala: {
-					GitHubRepositoriesCount: 1,
+					GitHubRepositoryCount: 1,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer, Java/Scala",
@@ -1808,7 +1808,7 @@ func companies12Shard() []domain.CompanyProfile {
 				domain.Rust: {},
 				domain.Zig:  {},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer (Scala Back-End)",
@@ -1864,7 +1864,7 @@ func companies12Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer – Rust",
@@ -1923,7 +1923,7 @@ func companies12Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Rust Engineer",
@@ -1989,7 +1989,7 @@ func companies12Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Rust developer",
@@ -2048,7 +2048,7 @@ func companies12Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Rust Systems Software Developer II",
@@ -2142,7 +2142,7 @@ func companies12Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Engineer Golang",
@@ -2239,7 +2239,7 @@ func companies12Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer – Golang & NodeJS",
@@ -2300,7 +2300,7 @@ func companies12Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Golang Engineer",
@@ -2359,7 +2359,7 @@ func companies12Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Backend Engineer – Golang",
@@ -2430,7 +2430,7 @@ func companies12Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer ll (Golang)",
@@ -2497,7 +2497,7 @@ func companies12Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer Golang (Senior)",
@@ -2569,7 +2569,7 @@ func companies12Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 8,
+					GitHubRepositoryCount: 8,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Golang Software Engineer",
@@ -2667,7 +2667,7 @@ func companies12Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Backend Engineer (Java, Golang, Python)",
@@ -2734,7 +2734,7 @@ func companies12Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Golang Engineer",
@@ -2809,7 +2809,7 @@ func companies12Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Developer (Golang)",
@@ -2832,7 +2832,7 @@ func companies12Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Developer (Rust)",
@@ -2933,7 +2933,7 @@ func companies12Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Cloud Developer (Golang)",
@@ -3005,7 +3005,7 @@ func companies12Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Multilingual Expert Software Engineer (C, Go, Rust, Python)",
@@ -3069,7 +3069,7 @@ func companies12Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Go/Golang Developer (DNS)",
@@ -3155,7 +3155,7 @@ func companies12Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Go Developer",
@@ -3214,7 +3214,7 @@ func companies12Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Go Developer",
@@ -3275,7 +3275,7 @@ func companies12Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Go Developer",
@@ -3344,7 +3344,7 @@ func companies12Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer – High Frequency Trading (C++ OR Rust)",
@@ -3403,7 +3403,7 @@ func companies12Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Full Stack Rust Engineer",
@@ -3472,7 +3472,7 @@ func companies12Shard() []domain.CompanyProfile {
 				domain.Rust: {},
 				domain.Zig:  {},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Data Engineer (Health Domain)",
@@ -3537,7 +3537,7 @@ func companies12Shard() []domain.CompanyProfile {
 				domain.Rust: {},
 				domain.Zig:  {},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Lead Engineer – Development (BigData, Scala)",
@@ -3606,7 +3606,7 @@ func companies12Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer II — Platform Engineering",
@@ -3674,7 +3674,7 @@ func companies12Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Principal Architect/Technical Lead Manager",
@@ -3767,7 +3767,7 @@ func companies12Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Full-Stack Engineer – Golang",
@@ -3832,7 +3832,7 @@ func companies12Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Back-End Engineer – Golang",
@@ -3901,7 +3901,7 @@ func companies12Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Platform Engineer (AWS, Python, Golang)",
@@ -3975,7 +3975,7 @@ func companies12Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Junior Software Engineer — (Java/Golang) & GCP",
@@ -4063,7 +4063,7 @@ func companies12Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Back-End Engineer | Middle-Senior | Go",
@@ -4130,7 +4130,7 @@ func companies12Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer (Golang)",
@@ -4192,7 +4192,7 @@ func companies12Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer PHP/Go",
@@ -4251,7 +4251,7 @@ func companies12Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Fullstack Software Engineer, Rust Focused",
@@ -4311,7 +4311,7 @@ func companies12Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Blockchain Security Engineer – (Solidity / Rust / Golang – Senior Level)",
@@ -4381,7 +4381,7 @@ func companies12Shard() []domain.CompanyProfile {
 				domain.Rust: {},
 				domain.Zig:  {},
 				domain.Scala: {
-					GitHubRepositoriesCount: 3,
+					GitHubRepositoryCount: 3,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer – Scala",
@@ -4451,7 +4451,7 @@ func companies12Shard() []domain.CompanyProfile {
 				domain.Zig:   {},
 				domain.Scala: {},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Elixir Product Engineer",
@@ -4518,7 +4518,7 @@ func companies12Shard() []domain.CompanyProfile {
 				domain.Scala:  {},
 				domain.Elixir: {},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Clojure Backend Engineer",
@@ -4582,7 +4582,7 @@ func companies12Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Golang Backend Developer",
@@ -4641,7 +4641,7 @@ func companies12Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Full Stack Developer",
@@ -4708,7 +4708,7 @@ func companies12Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Full Stack Developer",
@@ -4775,7 +4775,7 @@ func companies12Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Backend Developer",
@@ -4848,7 +4848,7 @@ func companies12Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer L5 — Linux Kernel Developer",
@@ -4925,7 +4925,7 @@ func companies12Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Golang Network Developer",

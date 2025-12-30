@@ -5,7 +5,7 @@ const organizerGitHubAlias = "go";
 export function renderCompany(company: CompanyResponse, favorite: boolean): string {
     const companyURL = `/golang/companies/${company.linkedin_profile.alias}`;
 
-    return `<div class="js-company card" data-company-id="{%dl company.ID %}">
+    return `<div class="js-company card" data-company-id="${company.id}">
     <aside class="card__action">
         ${renderFavorite(favorite)}
         <a href="${companyURL}" class="button-group__item" title="View statistics">
@@ -353,10 +353,10 @@ function renderGitHub(company: CompanyResponse): string {
         <a href="${githubProfileURL}" target="_blank" class="button-link card__links-link">Overview</a>
     </li>
     <li class="card__links-item">
-        <a href="https://github.com/orgs/${company.github_profile.login}/repositories?q=lang:${organizerGitHubAlias}" target="_blank" class="button-link card__links-link">Repositories ({%d fetchGitHubRepositoriesCount(company, organizerFeature.Organizer.Language) %})</a>
+        <a href="https://github.com/orgs/${company.github_profile.login}/repositories?q=lang:${organizerGitHubAlias}" target="_blank" class="button-link card__links-link">Repositories (${company.github_repository_count})</a>
     </li>
     <li class="card__links-item">
-        <a href="https://github.com/orgs/${company.github_profile.login}/followers" target="_blank" class="button-link card__links-link">Followers ({%s fetchGitHubFollowers(company) %})</a>
+        <a href="https://github.com/orgs/${company.github_profile.login}/followers" target="_blank" class="button-link card__links-link">Followers (${formatGitHubFollowers(company)})</a>
     </li>
 </ul>`;
 }
@@ -402,6 +402,14 @@ function renderGitHubVerified(company: CompanyResponse): string {
         src="/assets/images/pages/organizer/verified.png"
     />
 </span>`;
+}
+
+function formatGitHubFollowers(company: CompanyResponse): string {
+    if (company.github_profile.followers === "") {
+        return "?"
+    }
+
+    return company.github_profile.followers;
 }
 
 function renderGlassdoor(company: CompanyResponse): string {

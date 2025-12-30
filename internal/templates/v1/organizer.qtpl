@@ -108,7 +108,7 @@
                                         </div>
                                         <div class="table__link-group">
                                             <img src="/assets/images/pages/common/database.svg">
-                                            <a class="table__item-link" href="https://github.com/orgs/{%s company.GitHubProfile.Login %}/repositories?q=lang:go" target="_blank">Repositories</a>&nbsp;({%d fetchGitHubRepositoriesCount(company, Go) %})
+                                            <a class="table__item-link" href="https://github.com/orgs/{%s company.GitHubProfile.Login %}/repositories?q=lang:go" target="_blank">Repositories</a>&nbsp;({%d formatGitHubRepositoryCount(company, Go) %})
                                         </div>
                                         {%- endif -%}
                                     </div>

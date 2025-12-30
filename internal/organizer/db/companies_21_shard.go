@@ -40,7 +40,7 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Go Engineer",
@@ -55,32 +55,32 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "An AI based technology which gives football talents the chance to improve their skills, compete against friends and the global CUJU community and get scouted by a record-proven network of international senior scouts and specialists",
@@ -124,11 +124,11 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Back-End Software Engineer – C++, Rust or C#",
@@ -163,28 +163,28 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "",
@@ -237,7 +237,7 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 16,
+					GitHubRepositoryCount: 16,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "CLI Engineer",
@@ -253,32 +253,32 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 11,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 11,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "Supabase is the Postgres development platform",
@@ -330,27 +330,27 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 3,
+					GitHubRepositoryCount: 3,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer Clojure",
@@ -375,12 +375,12 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "Enterprise data automation solutions",
@@ -432,23 +432,23 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 19,
+					GitHubRepositoryCount: 19,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer",
@@ -463,16 +463,16 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "The upskilling platform for AI and tech adoption",
@@ -523,11 +523,11 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Embedded Software Engineer (C++, Rust)",
@@ -542,28 +542,28 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "We empower our customers – farmers",
@@ -607,11 +607,11 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Embedded Rust Software Engineer",
@@ -626,28 +626,28 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "Defense and Space Manufacturing",
@@ -698,11 +698,11 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Rust Software Engineer",
@@ -717,28 +717,28 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "Data processing and investigative analytics solutions",
@@ -782,7 +782,7 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Backend Engineer, Go",
@@ -807,32 +807,32 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "Copilot for Tech Architecture – equipping companies with a data-driven and AI-powered platform to excel with evaluating, planning and evolving their tech stacks",
@@ -876,7 +876,7 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Backend Engineer (Go + Python)",
@@ -891,32 +891,32 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "Intelligent SaaS Management Platform",
@@ -960,7 +960,7 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Backend Engineer (C# / Go)",
@@ -975,32 +975,32 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "",
@@ -1053,7 +1053,7 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Backend Engineer, PHP/Go",
@@ -1088,32 +1088,32 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "Vacation rental management software",
@@ -1164,7 +1164,7 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Full Stack Software Engineer – Go/Python ",
@@ -1179,32 +1179,32 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "Low-Power Audio and High-Performance Mixed-Signal Processing",
@@ -1255,7 +1255,7 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Lead Backend Software Engineer (Go)",
@@ -1270,32 +1270,32 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "VPN",
@@ -1346,7 +1346,7 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior C#/Golang Engineer",
@@ -1421,32 +1421,32 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "Managed Engineering Solutions in Software Development and Data Engineering",
@@ -1497,7 +1497,7 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Golang Software Engineer",
@@ -1522,32 +1522,32 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "",
@@ -1598,7 +1598,7 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Golang Software Engineer",
@@ -1613,32 +1613,32 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "We use AI and geoanalytics to turn raw satellite data into actionable insights on energy, supply chains, physical risks, nature",
@@ -1690,7 +1690,7 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 1,
+					GitHubRepositoryCount: 1,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Backend Software Engineer – Golang",
@@ -1715,32 +1715,32 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "Identify visitors you can trust",
@@ -1791,7 +1791,7 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Back-End Developer – Golang",
@@ -1816,32 +1816,32 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "Perion is helping agencies, brands and retailers get better results with their marketing investments by providing advanced technology across all major digital channels",
@@ -1898,7 +1898,7 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 30,
+					GitHubRepositoryCount: 30,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Golang Developer",
@@ -1963,32 +1963,32 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "Influencer marketing platform",
@@ -2039,7 +2039,7 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Golang developer",
@@ -2064,15 +2064,15 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Middle/Senior Big Data Engineer (Scala)",
@@ -2087,15 +2087,15 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Haskell Developer",
@@ -2110,8 +2110,8 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "Driving digital transformation in the financial services industry",
@@ -2155,23 +2155,23 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer Specialist – Elixir | Phoenix",
@@ -2186,16 +2186,16 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "FacilitaPay transforms payments between developed and emerging markets",
@@ -2246,23 +2246,23 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer (JavaScript / Ruby / Elixir)",
@@ -2277,16 +2277,16 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "Healthcare company",
@@ -2337,7 +2337,7 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer (Golang)",
@@ -2372,15 +2372,15 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer II (Scala)",
@@ -2405,20 +2405,20 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "We help brands unlock the full potential of their data, connect systems, and deliver seamless, personalized experiences across every channel",
@@ -2473,7 +2473,7 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 8,
+					GitHubRepositoryCount: 8,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Golang Developer",
@@ -2498,15 +2498,15 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Scala Developer",
@@ -2531,20 +2531,20 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "Data transmission and network management",
@@ -2590,11 +2590,11 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer (Go, Rust)",
@@ -2609,28 +2609,28 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "",
@@ -2675,11 +2675,11 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer Rust/Shopify",
@@ -2694,28 +2694,28 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "Parcel delivery service",
@@ -2759,7 +2759,7 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer – Java or Golang",
@@ -2784,32 +2784,32 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "",
@@ -2860,7 +2860,7 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer – Golang",
@@ -2875,32 +2875,32 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "Banking-as-a-Service (BaaS)",
@@ -2952,7 +2952,7 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 7,
+					GitHubRepositoryCount: 7,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Developer – Back-End (Golang)",
@@ -2977,32 +2977,32 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "We help organizations end cyber risk by providing security operations as a concierge service",
@@ -3054,7 +3054,7 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 3,
+					GitHubRepositoryCount: 3,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Back-End Developer – Golang",
@@ -3079,32 +3079,32 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "Cloud-native AI-powered intelligent automation platform",
@@ -3155,7 +3155,7 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Platform Engineer – Python/Go",
@@ -3170,32 +3170,32 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "GE Vernova is a purpose-built energy technology company on a mission to electrify to thrive and decarbonize the world",
@@ -3239,7 +3239,7 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Go Developer",
@@ -3254,32 +3254,32 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "",
@@ -3323,7 +3323,7 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Backend Engineer (Java/Scala/Go)",
@@ -3338,15 +3338,15 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Full Stack – Backend Oriented",
@@ -3371,20 +3371,20 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "Omnichannel outcomes platform",
@@ -3430,31 +3430,31 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Haskell Engineer",
@@ -3469,8 +3469,8 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "CircuitHub is on a mission to fix rapid electronics prototyping",
@@ -3514,7 +3514,7 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Lead Software Developer – Go & Python",
@@ -3529,32 +3529,32 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "Learning platform",
@@ -3606,7 +3606,7 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 1,
+					GitHubRepositoryCount: 1,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Golang Developer",
@@ -3631,32 +3631,32 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "AppZen delivers autonomous spend management for expenses, invoices, and cards",
@@ -3700,19 +3700,19 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Product Engineer (Scala)",
@@ -3727,20 +3727,20 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "",
@@ -3792,19 +3792,19 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer (Java/Scala)",
@@ -3839,20 +3839,20 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "Creative and media tech platform",
@@ -3904,11 +3904,11 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 3,
+					GitHubRepositoryCount: 3,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer (C++/Rust)",
@@ -3933,28 +3933,28 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "Databento makes it simpler and faster to get market data",
@@ -4006,7 +4006,7 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 5,
+					GitHubRepositoryCount: 5,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Backend Systems Engineer (C++, Golang)",
@@ -4041,32 +4041,32 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "TV streaming platform",
@@ -4118,7 +4118,7 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "PHP Developer (Golang)",
@@ -4143,32 +4143,32 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "We offer web scraping solutions",
@@ -4212,7 +4212,7 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Backend Engineer (Go)",
@@ -4227,32 +4227,32 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "Retail Media Platform",
@@ -4304,7 +4304,7 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 31,
+					GitHubRepositoryCount: 31,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer, Backend (Go/Java, Reactive Systems)",
@@ -4319,32 +4319,32 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "Schedule meetings and events",
@@ -4388,23 +4388,23 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Elixir Engineer",
@@ -4419,16 +4419,16 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "Scan any trading card to get the value in seconds, and begin building your collection",
@@ -4473,11 +4473,11 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Rust Developer",
@@ -4492,28 +4492,28 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "Fudo Security delivers advanced Privileged Access Management (PAM)",
@@ -4565,7 +4565,7 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Staff Data Engineer (Golang)",
@@ -4590,32 +4590,32 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "",
@@ -4659,7 +4659,7 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer (Golang)",
@@ -4674,32 +4674,32 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "Secure communication, data exchange and enterprise edge applications",
@@ -4750,7 +4750,7 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer (C++/ Golang)",
@@ -4765,32 +4765,32 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "Knorex is a technology company that provides programmatic advertising solutions",
@@ -4843,7 +4843,7 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 2,
+					GitHubRepositoryCount: 2,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Golang Engineer",
@@ -4898,32 +4898,32 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "Customer engagement platforms for companies with complex offerings",
@@ -4967,7 +4967,7 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer – Golang",
@@ -4982,32 +4982,32 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "Data transport and API protection made secure and resilient via obfuscation, shielding data and network assets",
@@ -5051,7 +5051,7 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "(Senior) Developer Backend (Golang)",
@@ -5066,32 +5066,32 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "The Industrial Internet of Things (IIoT) with its connected always-on devices emits massive data streams and information",
@@ -5144,7 +5144,7 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Golang Backend Developer",
@@ -5179,32 +5179,32 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "The unified platform to simplify global payments",
@@ -5255,19 +5255,19 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Backend Engineer (Scala)",
@@ -5282,20 +5282,20 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "Hospitality platform",
@@ -5347,19 +5347,19 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Scala Engineer II",
@@ -5384,20 +5384,20 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "Energy Intelligence Platform",
@@ -5448,19 +5448,19 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Scala Engineer",
@@ -5475,20 +5475,20 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "Zego is a motor insurance provider",
@@ -5532,11 +5532,11 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Rust Software Engineer",
@@ -5551,28 +5551,28 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "We design, manufacture, and rent out fully integrated underwater drones",
@@ -5624,11 +5624,11 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 5,
+					GitHubRepositoryCount: 5,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Staff Backend Engineer with Rust",
@@ -5663,28 +5663,28 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "Identity management",
@@ -5728,11 +5728,11 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer – Rust",
@@ -5747,28 +5747,28 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "Math, Chips, and Systems for AI Inference",
@@ -5812,11 +5812,11 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Rust Infrastructure Engineer",
@@ -5831,28 +5831,28 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "The nonprofit steward of the Rust programming language and its global community",
@@ -5897,11 +5897,11 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Rust Full-Stack Developer",
@@ -5916,28 +5916,28 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "Redox One manufactures iron-chromium flow batteries for the large-scale energy storage requirements of businesses, industry and electricity networks",
@@ -5989,7 +5989,7 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 3,
+					GitHubRepositoryCount: 3,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer – Golang/Python/Ruby",
@@ -6014,32 +6014,32 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "",
@@ -6083,7 +6083,7 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Golang Engineer",
@@ -6098,32 +6098,32 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "Our intelligent platform enables consumers and dealers to complete a guided vehicle inspection that generates a comprehensive condition report in only minutes",
@@ -6175,7 +6175,7 @@ func companies21Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer (Golang / Kubernetes)",
@@ -6190,32 +6190,32 @@ func companies21Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "Platform for streaming television",
