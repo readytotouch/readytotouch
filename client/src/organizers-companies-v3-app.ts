@@ -4,6 +4,10 @@ import {CompanyResponse} from "./organizers-companies-v3-models";
 import {htmlToNode} from "./framework/html";
 import {renderCompany} from "./organizers-companies-v3-render-company";
 import {addCompanyFavoriteEvent} from "./organizers-companies-favorite";
+import {responsiveHeaderProfileWidget} from "./responsive-header-profile-widget";
+import {responsiveFilterWidget} from "./responsive-filter-widget";
+import {responsiveCompanyShowMoreWidget} from "./responsive-company-show-more-widget";
+import {githubStarsWidget} from "./github-stars-widget";
 
 const currentProgrammingLanguage = parseCurrentProgrammingLanguage(window.location.pathname);
 
@@ -43,3 +47,11 @@ function renderCompanies(companies: Array<CompanyResponse>) {
 }
 
 fetchCompanies(renderCompanies);
+
+responsiveHeaderProfileWidget();
+
+responsiveFilterWidget();
+
+responsiveCompanyShowMoreWidget();
+
+githubStarsWidget();
