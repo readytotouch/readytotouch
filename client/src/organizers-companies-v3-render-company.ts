@@ -1,5 +1,7 @@
 import {CompanyResponse, Industry} from "./organizers-companies-v3-models";
 
+const organizerGitHubAlias = "go";
+
 export function renderCompany(company: CompanyResponse, favorite: boolean): string {
     const companyURL = `/golang/companies/${company.linkedin_profile.alias}`;
     const linkedinURL = `https://www.linkedin.com/company/${company.linkedin_profile.alias}/`;
@@ -130,65 +132,7 @@ export function renderCompany(company: CompanyResponse, favorite: boolean): stri
                         <a href="javascript:void(0);" target="_blank" class="button-link card__links-link">Jobs</a>
                     </li>
                 </ul>
-                <ul class="card__links-group">
-                {% if company.GitHubProfile.Login == "" %}
-                <li class="card__links-item card__links-item--title card__links-item--disabled">
-                  <div class="card__links-item-group">
-                    <img
-                      class="card__links-icon"
-                      alt="GitHub icon"
-                      width="32"
-                      height="32"
-                      src="/assets/images/pages/organizer/github.svg"
-                    />
-                    <span class="card__links-link">GitHub</span>
-                  </div>
-                </li>
-                <li class="card__links-item card__links-item--disabled">
-                  <span class="button-link card__links-link">Overview</span>
-                  <a href="{%s googleSearchGitHub(company.Name) %}" target="_blank" class="card__links-link card__links-link--google">
-                    <img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
-                  </a>
-                </li>
-                <li class="card__links-item card__links-item--disabled">
-                  <span class="button-link card__links-link">Repositories (?)</span>
-                </li>
-                <li class="card__links-item card__links-item--disabled">
-                  <span class="button-link card__links-link">Followers (?)</span>
-                </li>
-                {% else %}
-                <li class="card__links-item card__links-item--title">
-                  <div class="card__links-item-group">
-                    <img
-                      class="card__links-icon"
-                      alt="GitHub icon"
-                      width="32"
-                      height="32"
-                      src="/assets/images/pages/organizer/github.svg"
-                    />
-                    <a href="https://github.com/{%s company.GitHubProfile.Login %}" target="_blank" class="card__links-link">GitHub</a>
-                    {% if company.GitHubProfile.Verified %}
-                    <span class="card__links-link card__links-link--verify">
-                      <img
-                        class="card__links-icon"
-                        alt="GitHub verified icon"
-                        src="/assets/images/pages/organizer/verified.png"
-                      />
-                    </span>
-                    {% endif %}
-                  </div>
-                </li>
-                <li class="card__links-item">
-                  <a href="https://github.com/{%s company.GitHubProfile.Login %}" target="_blank" class="button-link card__links-link">Overview</a>
-                </li>
-                <li class="card__links-item">
-                  <a href="https://github.com/orgs/{%s company.GitHubProfile.Login %}/repositories?q=lang:{%s organizerFeature.Organizer.GitHubAlias %}" target="_blank" class="button-link card__links-link">Repositories ({%d fetchGitHubRepositoriesCount(company, organizerFeature.Organizer.Language) %})</a>
-                </li>
-                <li class="card__links-item">
-                  <a href="https://github.com/orgs/{%s company.GitHubProfile.Login %}/followers" target="_blank" class="button-link card__links-link">Followers ({%s fetchGitHubFollowers(company) %})</a>
-                </li>
-                {% endif %}
-                </ul>
+                ${renderGitHub(company)}
                 <ul class="card__links-group">
                 {% if company.GlassdoorProfile.OverviewURL == "" %}
                 <li class="card__links-item card__links-item--title card__links-item--disabled">
@@ -383,3 +327,94 @@ function renderLinkedInVerified(company: CompanyResponse): string {
 </a>`;
 }
 
+function renderGitHub(company: CompanyResponse): string {
+    if (company.github_profile.login === "") {
+        return renderGitHubEmpty(company);
+    }
+
+    const githubProfileURL = `https://github.com/${company.github_profile.login}`;
+
+    return `<ul class="card__links-group">
+    <li class="card__links-item card__links-item--title">
+        <div class="card__links-item-group">
+            <img
+                class="card__links-icon"
+                alt="GitHub icon"
+                width="32"
+                height="32"
+                src="/assets/images/pages/organizer/github.svg"
+            />
+            <a href="${githubProfileURL}" target="_blank" class="card__links-link">GitHub</a>
+            ${renderGitHubVerified(company)}
+        </div>
+    </li>
+    <li class="card__links-item">
+        <a href="${githubProfileURL}" target="_blank" class="button-link card__links-link">Overview</a>
+    </li>
+    <li class="card__links-item">
+        <a href="https://github.com/orgs/${company.github_profile.login}/repositories?q=lang:${organizerGitHubAlias}" target="_blank" class="button-link card__links-link">Repositories ({%d fetchGitHubRepositoriesCount(company, organizerFeature.Organizer.Language) %})</a>
+    </li>
+    <li class="card__links-item">
+        <a href="https://github.com/orgs/${company.github_profile.login}/followers" target="_blank" class="button-link card__links-link">Followers ({%s fetchGitHubFollowers(company) %})</a>
+    </li>
+</ul>`;
+}
+
+function renderGitHubEmpty(company: CompanyResponse): string {
+    return `<ul class="card__links-group">
+    <li class="card__links-item card__links-item--title card__links-item--disabled">
+        <div class="card__links-item-group">
+            <img
+                class="card__links-icon"
+                alt="GitHub icon"
+                width="32"
+                height="32"
+                src="/assets/images/pages/organizer/github.svg"
+            />
+            <span class="card__links-link">GitHub</span>
+        </div>
+    </li>
+    <li class="card__links-item card__links-item--disabled">
+        <span class="button-link card__links-link">Overview</span>
+        <a href="${googleSearchGitHub(company.name)}" target="_blank" class="card__links-link card__links-link--google">
+            <img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
+        </a>
+    </li>
+    <li class="card__links-item card__links-item--disabled">
+        <span class="button-link card__links-link">Repositories (?)</span>
+    </li>
+    <li class="card__links-item card__links-item--disabled">
+        <span class="button-link card__links-link">Followers (?)</span>
+    </li>
+</ul>`;
+}
+
+function renderGitHubVerified(company: CompanyResponse): string {
+    if (company.github_profile.verified === false) {
+        return "";
+    }
+
+    return `<span class="card__links-link card__links-link--verify">
+    <img
+        class="card__links-icon"
+        alt="GitHub verified icon"
+        src="/assets/images/pages/organizer/verified.png"
+    />
+</span>`;
+}
+
+function googleSearchGitHub(companyName: string): string {
+    const params = new URLSearchParams({
+        q: `site:github.com ${companyName}`,
+    });
+
+    return `https://www.google.com/search?${params.toString()}`;
+}
+
+function googleSearchGlassdoor(companyName: string): string {
+    const params = new URLSearchParams({
+        q: `site:glassdoor.com ${companyName}`,
+    });
+
+    return `https://www.google.com/search?${params.toString()}`;
+}
