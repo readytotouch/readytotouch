@@ -257,6 +257,10 @@ function search() {
             return true;
         }
 
+        if (!company.industries) {
+            return false;
+        }
+
         for (const industry of industries) {
             for (const companyIndustry of company.industries) {
                 if (companyIndustry.alias === industry) {
@@ -271,6 +275,10 @@ function search() {
     const matchHasEmployeesFromCountry = function (company: CompanyResponse): boolean {
         if (hasEmployeesFromCountries.length === 0) {
             return true;
+        }
+
+        if (!company.has_employees_from_countries) {
+            return false;
         }
 
         for (const country of hasEmployeesFromCountries) {
