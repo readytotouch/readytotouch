@@ -31,12 +31,10 @@ const example = `<a class="pagination__button pagination__button--prev" href="ja
  **/
 
 export default class Pagination {
-    private readonly $element: HTMLElement;
-    private readonly setPageHandler: (page: number) => void;
-
-    constructor(setPageHandler: (page: number) => void) {
-        this.$element = document.getElementById("js-pagination");
-        this.setPageHandler = setPageHandler;
+    constructor(
+        private readonly $element: HTMLElement,
+        private readonly setPageHandler: (page: number) => void,
+    ) {
     }
 
     public render(currentPage: number, totalPages: number, urlByPageBuilder: (page: number) => string): void {

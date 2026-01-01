@@ -915,8 +915,18 @@ func StreamOrganizersCompaniesV3Beta(qw422016 *qt422016.Writer,
             </div>
             <!-- /card list -->
 
-            `)
+            <!-- search footer -->
+            <footer class="search-result__footer">
+              `)
 	qw422016.N().S(`
+
+              <!-- pagination -->
+              <nav class="pagination search-result__pagination js-companies-pagination"></nav>
+              <!-- /pagination -->
+
+            </footer>
+            <!-- /search footer -->
+
           </div>
         </div>
       </div>

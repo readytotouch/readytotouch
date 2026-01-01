@@ -37,6 +37,8 @@ const currentProgrammingLanguage = parseCurrentProgrammingLanguage(window.locati
 let sourceCompanies: Array<CompanyResponse> = [];
 let currentStateCompanies: Array<CompanyResponse> = [];
 
+const $companiesContainer = document.getElementById("js-companies-container");
+const $companiesPagination = document.getElementById("js-companies-pagination");
 const $resultCount = document.getElementById("js-result-count");
 
 const $form = document.getElementById("js-company-search-form");
@@ -53,7 +55,7 @@ const $optionalMobileSelectedCriteriaCount = document.getElementById("js-mobile-
 const $resetButtons = document.querySelectorAll("#js-criteria-reset, .js-criteria-reset") as any as Array<HTMLElement>;
 
 const pager = new Pager(LIMIT);
-const pagination = new Pagination(setPage);
+const pagination = new Pagination($companiesPagination, setPage);
 
 $typeCheckboxes.onChange(function (state: Array<string>) {
     urlStateContainer.setArrayCriteria(COMPANY_TYPE_CRITERIA_NAME, state);
@@ -241,7 +243,15 @@ function setPage(page: number) {
 
     urlStateContainer.storeCurrentState();
 
-    search(true, false);
+    // Faster to just render from current state than re-searching
+    {
+        const offset = pager.getOffset();
+        const nextPage = pager.getPage();
+        const urlByPageBuilder = urlStateContainer.createUrlByPageBuilder();
+
+        renderCompanies(currentStateCompanies.slice(offset, offset + LIMIT), true);
+        pagination.render(nextPage, TotalPages(currentStateCompanies.length, LIMIT), urlByPageBuilder);
+    }
 }
 
 function search(replaceHTML: boolean, resetPager: boolean) {
@@ -384,8 +394,6 @@ function fetchCompanies(callback: (companies: Array<CompanyResponse>) => void) {
         callback(data.companies);
     }).catch(console.error);
 }
-
-const $companiesContainer = document.getElementById("js-companies-container");
 
 function renderCompanies(companies: Array<CompanyResponse>, clear: boolean = true) {
     const length = Math.min(companies.length, 10);
