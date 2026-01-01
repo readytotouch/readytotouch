@@ -2,45 +2,41 @@ import {htmlToNode} from "./html";
 
 // language=HTML
 const example = `<a class="pagination__button pagination__button--prev" href="javascript:void(0);" aria-label="arrow left">
-    <img class="pagination__icon pagination__icon--prev"
-         width="14"
-         height="14"
-         src="/assets/images/pages/vacancies2/arrow-left.svg"
-         alt="arrow left"
-    >
+  <img
+    class="pagination__icon pagination__icon--prev"
+    width="14"
+    height="14"
+    src="/assets/images/pages/common/left.svg"
+    alt="arrow left"
+  />
 </a>
-
 <a class="pagination__item pagination__item--active" href="javascript:void(0);">1</a>
 <a class="pagination__item" href="javascript:void(0);">2</a>
 <a class="pagination__item" href="javascript:void(0);">3</a>
-<span class="pagination__item">…</span>
-<a class="pagination__item" href="javascript:void(0);">55</a>
-<a class="pagination__item" href="javascript:void(0);">56</a>
-<a class="pagination__item" href="javascript:void(0);">57</a>
-<span class="pagination__item">…</span>
-<a class="pagination__item" href="javascript:void(0);">98</a>
-<a class="pagination__item" href="javascript:void(0);">99</a>
-<a class="pagination__item" href="javascript:void(0);">100</a>
-
-<a class="pagination__button pagination__button--next" href="javascript:void(0);" aria-label="arrow right"
->
-    <img class="pagination__icon pagination__icon--next"
-         width="14"
-         height="14"
-         src="/assets/images/pages/vacancies2/arrow-left.svg"
-         alt="arrow right"
-    >
+<a class="pagination__item" href="javascript:void(0);">4</a>
+<a class="pagination__item pagination__item--hidden" href="javascript:void(0);">5</a>
+<span class="pagination__item pagination__item--hidden">...</span>
+<a class="pagination__item pagination__item--hidden" href="javascript:void(0);">9</a>
+<a class="pagination__button pagination__button--prev" href="javascript:void(0);" aria-label="arrow right">
+  <img
+    class="pagination__icon pagination__icon--prev"
+    width="14"
+    height="14"
+    src="/assets/images/pages/common/right.svg"
+    alt="arrow left"
+  />
 </a>`;
+/**
+ * The pagination component has a typo in the class name of the next button, but it was left as is because fixing it broke the design.
+ **/
 
 export default class Pagination {
     private readonly $element: HTMLElement;
     private readonly setPageHandler: (page: number) => void;
-    private readonly appVersion: number;
 
-    constructor(setPageHandler: (page: number) => void, appVersion: number) {
+    constructor(setPageHandler: (page: number) => void) {
         this.$element = document.getElementById("js-pagination");
         this.setPageHandler = setPageHandler;
-        this.appVersion = appVersion;
     }
 
     public render(currentPage: number, totalPages: number, urlByPageBuilder: (page: number) => string): void {
@@ -50,7 +46,7 @@ export default class Pagination {
 
         // prev arrow
         {
-            const $prevPage = htmlToNode(prev(prevPage, urlByPageBuilder, this.appVersion));
+            const $prevPage = htmlToNode(prev(prevPage, urlByPageBuilder));
 
             this.addEventListener($prevPage, prevPage);
 
@@ -137,7 +133,7 @@ export default class Pagination {
 
         // next arrow
         {
-            const $nextPage = htmlToNode(next(nextPage, urlByPageBuilder, this.appVersion));
+            const $nextPage = htmlToNode(next(nextPage, urlByPageBuilder));
 
             this.addEventListener($nextPage, nextPage);
 
@@ -161,58 +157,40 @@ export default class Pagination {
     }
 }
 
-function prev(page: number, urlByPageBuilder: (page: number) => string, appVersion: number): string {
+function prev(page: number, urlByPageBuilder: (page: number) => string): string {
     const url = page > 0 ? urlByPageBuilder(page) : "javascript:void(0);";
 
-    return `<a class="pagination__button pagination__button--prev"
-   href="${url}"
-   aria-label="arrow left"
+    return `<a
+    class="pagination__button pagination__button--prev"
+    href="${url}"
+    aria-label="arrow left"
 >
-	<img class="pagination__icon pagination__icon--prev"
-		 width="14"
-		 height="14"
-		 src="${prevArrowSrc(appVersion)}"
-		 alt="arrow left"
-	>
+	<img
+        class="pagination__icon pagination__icon--prev"
+        width="14"
+        height="14"
+        src="/assets/images/pages/common/left.svg"
+        alt="arrow left"
+	/>
 </a>`;
 }
 
-function prevArrowSrc(appVersion: number): string {
-    switch (appVersion) {
-        case 1:
-            return "/assets/images/pages/vacancies/arrow-left.svg";
-        case 2:
-            return "/assets/images/pages/vacancies2/arrow-left.svg";
-    }
-
-    return "";
-}
-
-function next(page: number, urlByPageBuilder: (page: number) => string, appVersion: number): string {
+function next(page: number, urlByPageBuilder: (page: number) => string): string {
     const url = page > 0 ? urlByPageBuilder(page) : "javascript:void(0);";
 
-    return `<a class="pagination__button pagination__button--next"
-   href="${url}"
-   aria-label="arrow right"
+    return `<a
+    class="pagination__button pagination__button--prev"
+    href="${url}"
+    aria-label="arrow right"
 >
-	<img class="pagination__icon pagination__icon--next"
-		 width="14"
-		 height="14"
-		 src="${nextArrowSrc(appVersion)}"
-		 alt="arrow right"
-	>
+    <img
+        class="pagination__icon pagination__icon--prev"
+        width="14"
+        height="14"
+        src="/assets/images/pages/common/right.svg"
+        alt="arrow left"
+    />
 </a>`;
-}
-
-function nextArrowSrc(appVersion: number): string {
-    switch (appVersion) {
-        case 1:
-            return "/assets/images/pages/vacancies/arrow-right.svg";
-        case 2:
-            return "/assets/images/pages/vacancies2/arrow-left.svg";
-    }
-
-    return "";
 }
 
 function findNextPage(currentPage: number, totalPages: number) {

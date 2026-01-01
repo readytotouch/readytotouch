@@ -27,6 +27,10 @@ import {parseCurrentProgrammingLanguage} from "./pl";
 import {organizersWelcome} from "./welcome";
 import {CompanyResponse} from "./organizers-companies-v3-models";
 import {renderCompany} from "./organizers-companies-v3-render-company";
+import {Pager, TotalPages} from "./framework/pager";
+import Pagination from "./framework/pagination";
+
+const LIMIT = 10;
 
 const currentProgrammingLanguage = parseCurrentProgrammingLanguage(window.location.pathname);
 
@@ -48,6 +52,9 @@ const $optionalMobileSelectedCriteriaCount = document.getElementById("js-mobile-
 // "#js-criteria-reset" for backward compatibility
 const $resetButtons = document.querySelectorAll("#js-criteria-reset, .js-criteria-reset") as any as Array<HTMLElement>;
 
+const pager = new Pager(LIMIT);
+const pagination = new Pagination(setPage);
+
 $typeCheckboxes.onChange(function (state: Array<string>) {
     urlStateContainer.setArrayCriteria(COMPANY_TYPE_CRITERIA_NAME, state);
     urlStateContainer.setPage(1);
@@ -55,7 +62,7 @@ $typeCheckboxes.onChange(function (state: Array<string>) {
 
     renderSelectedCriteriaByURL();
 
-    search();
+    search(true, true);
 });
 
 $industryCheckboxes.onChange(function (state: Array<string>) {
@@ -65,7 +72,7 @@ $industryCheckboxes.onChange(function (state: Array<string>) {
 
     renderSelectedCriteriaByURL();
 
-    search();
+    search(true, true);
 });
 
 $hasEmployeesFromCountryCheckboxes.onChange(function (state: Array<string>) {
@@ -75,7 +82,7 @@ $hasEmployeesFromCountryCheckboxes.onChange(function (state: Array<string>) {
 
     renderSelectedCriteriaByURL();
 
-    search();
+    search(true, true);
 });
 
 if ($inRustFoundationMembersCheckbox) {
@@ -86,7 +93,7 @@ if ($inRustFoundationMembersCheckbox) {
 
         renderSelectedCriteriaByURL();
 
-        search();
+        search(true, true);
     });
 }
 
@@ -97,7 +104,7 @@ $remoteCheckbox.addEventListener("change", function () {
 
     renderSelectedCriteriaByURL();
 
-    search();
+    search(true, true);
 });
 
 $inFavoritesCheckbox.addEventListener("change", function () {
@@ -107,7 +114,7 @@ $inFavoritesCheckbox.addEventListener("change", function () {
 
     renderSelectedCriteriaByURL();
 
-    search();
+    search(true, true);
 });
 
 const {
@@ -198,7 +205,7 @@ const handleSearch = function () {
     urlStateContainer.setPage(1);
     urlStateContainer.storeCurrentState();
 
-    search();
+    search(true, true);
 }
 
 $form.addEventListener("submit", function (event) {
@@ -224,10 +231,24 @@ function updatePageState() {
 
     renderSelectedCriteriaByURL();
 
-    search();
+    search(true, true);
 }
 
-function search() {
+function setPage(page: number) {
+    pager.setPage(page);
+
+    urlStateContainer.setPage(page);
+
+    urlStateContainer.storeCurrentState();
+
+    search(true, false);
+}
+
+function search(replaceHTML: boolean, resetPager: boolean) {
+    if (resetPager) {
+        pager.reset();
+    }
+
     const query = $search.value.trim().toLowerCase();
     const types = urlStateContainer.getCriteria(COMPANY_TYPE_CRITERIA_NAME, []);
     const industries = urlStateContainer.getCriteria(COMPANY_INDUSTRY_CRITERIA_NAME, []);
@@ -325,12 +346,16 @@ function search() {
         return true;
     }
 
+    const offset = pager.getOffset();
+    const nextPage = pager.getPage();
+    const urlByPageBuilder = urlStateContainer.createUrlByPageBuilder();
+
     // hide container to prevent multiple reflows
     {
         // debug time measurement
         const start = performance.now();
 
-        currentStateCompanies = sourceCompanies.filter(match)
+        currentStateCompanies = sourceCompanies.filter(match);
 
         // debug time measurement
         const end = performance.now();
@@ -338,7 +363,8 @@ function search() {
         console.log(`Search took ${end - start} milliseconds.`);
     }
 
-    renderCompanies(currentStateCompanies, true);
+    renderCompanies(currentStateCompanies.slice(offset, offset + LIMIT), replaceHTML);
+    pagination.render(nextPage, TotalPages(currentStateCompanies.length, LIMIT), urlByPageBuilder);
     $resultCount.innerHTML = currentStateCompanies.length.toString();
 }
 
@@ -383,8 +409,10 @@ function renderCompanies(companies: Array<CompanyResponse>, clear: boolean = tru
 function init(companies: Array<CompanyResponse>) {
     sourceCompanies = companies;
 
-    search();
+    search(true, false);
 }
+
+pager.setPage(urlStateContainer.getPage());
 
 fetchCompanies(init);
 
