@@ -921,7 +921,7 @@ func StreamOrganizersCompaniesV3Beta(qw422016 *qt422016.Writer,
 	qw422016.N().S(`
 
               <!-- pagination -->
-              <nav class="pagination search-result__pagination js-companies-pagination"></nav>
+              <nav id="js-companies-pagination" class="pagination search-result__pagination"></nav>
               <!-- /pagination -->
 
             </footer>

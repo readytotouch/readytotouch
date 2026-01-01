@@ -796,7 +796,7 @@
               {% endcomment %}
 
               <!-- pagination -->
-              <nav class="pagination search-result__pagination js-companies-pagination"></nav>
+              <nav id="js-companies-pagination" class="pagination search-result__pagination"></nav>
               <!-- /pagination -->
 
             </footer>
