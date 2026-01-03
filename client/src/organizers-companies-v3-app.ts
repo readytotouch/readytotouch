@@ -243,8 +243,6 @@ function updateMoreButtonsVisibility() {
     const moreCount = currentStateCompanies.length - (pager.getOffset() + LIMIT);
     const hide = pager.getPage() > 1 || moreCount <= 0;
 
-    console.log(`More buttons hide: ${hide}, moreCount: ${moreCount}, currentPage: ${pager.getPage()}`);
-
     $paginationShowMoreButton.classList.toggle("d-none", hide);
     $paginationShowAllButton.classList.toggle("d-none", hide);
 
@@ -273,6 +271,11 @@ function setPage(page: number) {
 
         updateMoreButtonsVisibility();
     }
+
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+    });
 }
 
 $paginationShowMoreButton.addEventListener("click", function () {
