@@ -272,9 +272,11 @@ function setPage(page: number) {
         updateMoreButtonsVisibility();
     }
 
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth',
+    requestAnimationFrame(function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
     });
 }
 
