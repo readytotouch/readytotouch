@@ -917,11 +917,13 @@ func StreamOrganizersCompaniesV3Beta(qw422016 *qt422016.Writer,
 
             <!-- search footer -->
             <footer class="search-result__footer">
-              `)
-	qw422016.N().S(`
+              <div class="search-result__footer-action-list">
+                <button id="js-pagination-show-more-button" class="button button--bordered-black-transparent" type="button">More</button>
+                <button id="js-pagination-show-all-button" class="button button--bordered-gray" type="button">Show all (+<span id="js-pagination-show-all-count">0</span>)</button>
+              </div>
 
               <!-- pagination -->
-              <nav id="js-companies-pagination" class="pagination search-result__pagination"></nav>
+              <nav id="js-pagination-pages" class="pagination search-result__pagination"></nav>
               <!-- /pagination -->
 
             </footer>

@@ -38,8 +38,11 @@ let sourceCompanies: Array<CompanyResponse> = [];
 let currentStateCompanies: Array<CompanyResponse> = [];
 
 const $companiesContainer = document.getElementById("js-companies-container");
-const $companiesPagination = document.getElementById("js-companies-pagination");
+const $pagination = document.getElementById("js-pagination-pages");
 const $resultCount = document.getElementById("js-result-count");
+const $paginationShowMoreButton = document.getElementById("js-pagination-show-more-button") as HTMLButtonElement;
+const $paginationShowAllButton = document.getElementById("js-pagination-show-all-button") as HTMLButtonElement;
+const $paginationShowAllCount = document.getElementById("js-pagination-show-all-count") as HTMLElement;
 
 const $form = document.getElementById("js-company-search-form");
 const $search = document.getElementById("js-company-query") as HTMLInputElement;
@@ -55,7 +58,7 @@ const $optionalMobileSelectedCriteriaCount = document.getElementById("js-mobile-
 const $resetButtons = document.querySelectorAll("#js-criteria-reset, .js-criteria-reset") as any as Array<HTMLElement>;
 
 const pager = new Pager(LIMIT);
-const pagination = new Pagination($companiesPagination, setPage);
+const pagination = new Pagination($pagination, setPage);
 
 $typeCheckboxes.onChange(function (state: Array<string>) {
     urlStateContainer.setArrayCriteria(COMPANY_TYPE_CRITERIA_NAME, state);
@@ -236,6 +239,19 @@ function updatePageState() {
     search(true, true);
 }
 
+function updateMoreButtonsVisibility() {
+    const hide = pager.getPage() > 1 || (pager.getOffset() + LIMIT >= currentStateCompanies.length);
+
+    $paginationShowMoreButton.hidden = hide;
+    $paginationShowAllButton.hidden = hide;
+
+    if (hide) {
+        return;
+    }
+
+    $paginationShowAllCount.innerHTML = (currentStateCompanies.length - (pager.getOffset() + LIMIT)).toString();
+}
+
 function setPage(page: number) {
     pager.setPage(page);
 
@@ -251,8 +267,47 @@ function setPage(page: number) {
 
         renderCompanies(currentStateCompanies.slice(offset, offset + LIMIT), true);
         pagination.render(nextPage, TotalPages(currentStateCompanies.length, LIMIT), urlByPageBuilder);
+
+        updateMoreButtonsVisibility();
     }
 }
+
+$paginationShowMoreButton.addEventListener("click", function () {
+    $paginationShowAllButton.disabled = true;
+    $paginationShowMoreButton.disabled = true;
+
+    pager.increment();
+
+    // Faster to just render from current state than re-searching
+    {
+        const offset = pager.getOffset();
+
+        renderCompanies(currentStateCompanies.slice(offset), false);
+        pagination.reset();
+
+        $paginationShowMoreButton.hidden = true;
+        $paginationShowAllButton.hidden = true;
+    }
+
+    $paginationShowAllButton.disabled = false;
+    $paginationShowMoreButton.disabled = false;
+});
+
+$paginationShowAllButton.addEventListener("click", function () {
+    $paginationShowAllButton.disabled = true;
+    $paginationShowMoreButton.disabled = true;
+
+    {
+        renderCompanies(currentStateCompanies.slice(pager.getOffset() + LIMIT), false);
+        pagination.reset();
+
+        $paginationShowMoreButton.hidden = true;
+        $paginationShowAllButton.hidden = true;
+    }
+
+    $paginationShowAllButton.disabled = false;
+    $paginationShowMoreButton.disabled = false;
+});
 
 function search(replaceHTML: boolean, resetPager: boolean) {
     if (resetPager) {
@@ -376,6 +431,8 @@ function search(replaceHTML: boolean, resetPager: boolean) {
     renderCompanies(currentStateCompanies.slice(offset, offset + LIMIT), replaceHTML);
     pagination.render(nextPage, TotalPages(currentStateCompanies.length, LIMIT), urlByPageBuilder);
     $resultCount.innerHTML = currentStateCompanies.length.toString();
+
+    updateMoreButtonsVisibility();
 }
 
 function fetchCompanies(callback: (companies: Array<CompanyResponse>) => void) {

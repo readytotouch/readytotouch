@@ -142,6 +142,10 @@ export default class Pagination {
         this.$element.append(...$elements);
     }
 
+    public reset(): void {
+        this.$element.innerHTML = "";
+    }
+
     private addEventListener($page: HTMLElement, page: number) {
         const setPageHandler = this.setPageHandler;
 

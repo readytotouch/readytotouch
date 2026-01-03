@@ -788,15 +788,13 @@
 
             <!-- search footer -->
             <footer class="search-result__footer">
-              {% comment %}
               <div class="search-result__footer-action-list">
-                <button class="button button--bordered-black-transparent" type="button">More</button>
-                <button class="button button--bordered-gray" type="button">Show all (+196)</button>
+                <button id="js-pagination-show-more-button" class="button button--bordered-black-transparent" type="button">More</button>
+                <button id="js-pagination-show-all-button" class="button button--bordered-gray" type="button">Show all (+<span id="js-pagination-show-all-count">0</span>)</button>
               </div>
-              {% endcomment %}
 
               <!-- pagination -->
-              <nav id="js-companies-pagination" class="pagination search-result__pagination"></nav>
+              <nav id="js-pagination-pages" class="pagination search-result__pagination"></nav>
               <!-- /pagination -->
 
             </footer>
