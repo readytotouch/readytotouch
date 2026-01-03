@@ -27,6 +27,10 @@ export class Pager {
         this.page += 1;
     }
 
+    public incrementOffsetOnly() {
+        this.offset += this.limit;
+    }
+
     public reset() {
         this.offset = 0;
         this.page = 1;

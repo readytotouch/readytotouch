@@ -245,8 +245,8 @@ function updateMoreButtonsVisibility() {
 
     console.log(`More buttons hide: ${hide}, moreCount: ${moreCount}, currentPage: ${pager.getPage()}`);
 
-    $paginationShowMoreButton.hidden = hide;
-    $paginationShowAllButton.hidden = hide;
+    $paginationShowMoreButton.classList.toggle("d-none", hide);
+    $paginationShowAllButton.classList.toggle("d-none", hide);
 
     if (hide) {
         return;
@@ -279,17 +279,16 @@ $paginationShowMoreButton.addEventListener("click", function () {
     $paginationShowAllButton.disabled = true;
     $paginationShowMoreButton.disabled = true;
 
-    pager.increment();
+    pager.incrementOffsetOnly();
 
     // Faster to just render from current state than re-searching
     {
         const offset = pager.getOffset();
 
-        renderCompanies(currentStateCompanies.slice(offset), false);
+        renderCompanies(currentStateCompanies.slice(offset, offset + LIMIT), false);
         pagination.reset();
 
-        $paginationShowMoreButton.hidden = true;
-        $paginationShowAllButton.hidden = true;
+        updateMoreButtonsVisibility();
     }
 
     $paginationShowAllButton.disabled = false;
@@ -300,14 +299,14 @@ $paginationShowAllButton.addEventListener("click", function () {
     $paginationShowAllButton.disabled = true;
     $paginationShowMoreButton.disabled = true;
 
-    pager.increment();
+    pager.incrementOffsetOnly();
 
     {
         renderCompanies(currentStateCompanies.slice(pager.getOffset()), false);
         pagination.reset();
 
-        $paginationShowMoreButton.hidden = true;
-        $paginationShowAllButton.hidden = true;
+        $paginationShowMoreButton.classList.toggle("d-none", true);
+        $paginationShowAllButton.classList.toggle("d-none", true);
     }
 
     $paginationShowAllButton.disabled = false;
