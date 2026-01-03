@@ -38,6 +38,12 @@ export default class Pagination {
     }
 
     public render(currentPage: number, totalPages: number, urlByPageBuilder: (page: number) => string): void {
+        if (totalPages <= 1) {
+            this.reset();
+
+            return;
+        }
+
         const $elements = new Array<HTMLElement>();
 
         const prevPage = currentPage - 1;
