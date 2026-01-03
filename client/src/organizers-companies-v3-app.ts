@@ -240,7 +240,8 @@ function updatePageState() {
 }
 
 function updateMoreButtonsVisibility() {
-    const hide = pager.getPage() > 1 || (pager.getOffset() + LIMIT >= currentStateCompanies.length);
+    const moreCount = currentStateCompanies.length - (pager.getOffset() + LIMIT);
+    const hide = pager.getPage() > 1 || moreCount <= 0;
 
     $paginationShowMoreButton.hidden = hide;
     $paginationShowAllButton.hidden = hide;
@@ -249,7 +250,7 @@ function updateMoreButtonsVisibility() {
         return;
     }
 
-    $paginationShowAllCount.innerHTML = (currentStateCompanies.length - (pager.getOffset() + LIMIT)).toString();
+    $paginationShowAllCount.innerHTML = moreCount.toString();
 }
 
 function setPage(page: number) {
