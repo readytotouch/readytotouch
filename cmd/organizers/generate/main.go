@@ -37,9 +37,10 @@ func main() {
 
 func generateCompanies(companies []domain.CompanyProfile) {
 	var (
-		maxID = int64(0)
-		pairs = make([]*dev.CompanyCodePair, 0, len(companies))
-		names = make([]string, 0, len(companies))
+		maxID        = int64(0)
+		pairs        = make([]*dev.CompanyCodePair, 0, len(companies))
+		names        = make([]string, 0, len(companies))
+		employeesMap = make(map[string]int)
 	)
 
 	// Assert that all company aliases are present in the map
@@ -92,6 +93,7 @@ func generateCompanies(companies []domain.CompanyProfile) {
 		pairs = append(pairs, pair)
 		names = append(names, company.LinkedInProfile.Name)
 		maxID = max(maxID, id)
+		employeesMap[company.LinkedInProfile.Employees]++
 	}
 
 	for _, pair := range pairs {
@@ -115,7 +117,8 @@ func generateCompanies(companies []domain.CompanyProfile) {
 	fmt.Printf("Max ID: %d\n", maxID)
 
 	// json.NewEncoder(os.Stdout).Encode(pairs)
-	json.NewEncoder(os.Stdout).Encode(names) // hide
+	json.NewEncoder(os.Stdout).Encode(names)        // hide
+	json.NewEncoder(os.Stdout).Encode(employeesMap) // hide
 }
 
 func generateVacancies(companies []domain.CompanyProfile) {

@@ -1081,11 +1081,12 @@ func (c *Controller) UnsafeCompaniesV3(ctx *gin.Context) {
 			AboutURL:   company.AboutURL,
 			BlogURL:    company.BlogURL,
 			LinkedInProfile: domain.LinkedInProfileResponse{
-				ID:       company.LinkedInProfile.ID,
-				IDs:      company.LinkedInProfile.IDs,
-				Alias:    company.LinkedInProfile.Alias,
-				Name:     company.LinkedInProfile.Name,
-				Verified: company.LinkedInProfile.Verified,
+				ID:        company.LinkedInProfile.ID,
+				IDs:       company.LinkedInProfile.IDs,
+				Alias:     company.LinkedInProfile.Alias,
+				Name:      company.LinkedInProfile.Name,
+				Employees: company.LinkedInProfile.Employees,
+				Verified:  company.LinkedInProfile.Verified,
 			},
 			GitHubProfile: domain.GitHubProfileResponse{
 				Login:     company.GitHubProfile.Login,

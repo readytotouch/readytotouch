@@ -37,6 +37,7 @@ export class LinkedInProfileResponse {
         public readonly ids: number[],
         public readonly alias: string,
         public readonly name: string,
+        public readonly employees: string,
         public readonly verified: boolean,
     ) {}
 }

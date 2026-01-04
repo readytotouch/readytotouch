@@ -5367,11 +5367,12 @@ func companies09Shard() []domain.CompanyProfile {
 			AboutURL:   "https://gdmissionsystems.com/about-us",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                1908,
+				IDs:               nil,
 				Alias:             "gdms",
 				Name:              "General Dynamics Mission Systems",
-				Followers:         "165K",
-				Employees:         "10K",
-				AssociatedMembers: "8,822",
+				Followers:         "223K",
+				Employees:         "10K+",
+				AssociatedMembers: "9,240",
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{

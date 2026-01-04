@@ -4,6 +4,7 @@ import {
     COMPANY_TYPE_CRITERIA_NAME,
     COMPANY_INDUSTRY_CRITERIA_NAME,
     COMPANY_GLASSDOOR_RATING_RATE_CRITERIA_NAME,
+    COMPANY_LINKEDIN_COMPANY_SIZE_CRITERIA_NAME,
     COMPANY_HAS_EMPLOYEES_FROM_COUNTRY_CRITERIA_NAME,
     COMPANY_RUST_FOUNDATION_MEMBERS_CRITERIA_NAME,
     COMPANY_REMOTE_CRITERIA_NAME,
@@ -13,6 +14,7 @@ import {InputCheckboxes, RadioCheckboxes} from "./framework/checkboxes";
 import {companyTypes} from "./framework/company_types";
 import {industries} from "./framework/industries";
 import {ratingRatesAliases} from "./framework/rating_rates";
+import {linkedinCompanySizes} from "./framework/linkedin_company_sizes";
 import {hasEmployeesFromCountries} from "./framework/has_employees_from_countries";
 import {htmlToNode} from "./framework/html";
 import {Alias} from "./framework/alias";
@@ -51,6 +53,7 @@ const $search = document.getElementById("js-company-query") as HTMLInputElement;
 const $typeCheckboxes = new InputCheckboxes(document.querySelectorAll("input.js-criteria-company-type") as any as Array<HTMLInputElement>);
 const $industryCheckboxes = new InputCheckboxes(document.querySelectorAll("input.js-criteria-company-industry") as any as Array<HTMLInputElement>);
 const $glassdoorRatingRateCheckboxes = new RadioCheckboxes(document.querySelectorAll("input.js-criteria-glassdoor-rating-rate") as any as Array<HTMLInputElement>);
+const $linkedinCompanySizeCheckboxes = new InputCheckboxes(document.querySelectorAll("input.js-criteria-linkedin-company-size") as any as Array<HTMLInputElement>);
 const $hasEmployeesFromCountryCheckboxes = new InputCheckboxes(document.querySelectorAll("input.js-criteria-has-employees-from-country") as any as Array<HTMLInputElement>);
 const $remoteCheckbox = document.getElementById("js-criteria-remote") as HTMLInputElement;
 const $inFavoritesCheckbox = document.getElementById("js-criteria-in-favorites") as HTMLInputElement;
@@ -85,6 +88,16 @@ $industryCheckboxes.onChange(function (state: Array<string>) {
 
 $glassdoorRatingRateCheckboxes.onChange(function (state: Array<string>) {
     urlStateContainer.setArrayCriteria(COMPANY_GLASSDOOR_RATING_RATE_CRITERIA_NAME, state);
+    urlStateContainer.setPage(1);
+    urlStateContainer.storeCurrentState();
+
+    renderSelectedCriteriaByURL();
+
+    search(true, true);
+});
+
+$linkedinCompanySizeCheckboxes.onChange(function (state: Array<string>) {
+    urlStateContainer.setArrayCriteria(COMPANY_LINKEDIN_COMPANY_SIZE_CRITERIA_NAME, state);
     urlStateContainer.setPage(1);
     urlStateContainer.storeCurrentState();
 
@@ -147,6 +160,7 @@ function setStateByURL() {
     setCheckboxesStateByURL($typeCheckboxes, COMPANY_TYPE_CRITERIA_NAME);
     setCheckboxesStateByURL($industryCheckboxes, COMPANY_INDUSTRY_CRITERIA_NAME);
     setCheckboxesStateByURL($glassdoorRatingRateCheckboxes, COMPANY_GLASSDOOR_RATING_RATE_CRITERIA_NAME);
+    setCheckboxesStateByURL($linkedinCompanySizeCheckboxes, COMPANY_LINKEDIN_COMPANY_SIZE_CRITERIA_NAME);
     setCheckboxesStateByURL($hasEmployeesFromCountryCheckboxes, COMPANY_HAS_EMPLOYEES_FROM_COUNTRY_CRITERIA_NAME);
 
     if ($inRustFoundationMembersCheckbox) {
@@ -162,6 +176,7 @@ function renderSelectedCriteriaByURL() {
     renderSelectedCheckboxes($views, COMPANY_TYPE_CRITERIA_NAME, companyTypes);
     renderSelectedCheckboxes($views, COMPANY_INDUSTRY_CRITERIA_NAME, industries);
     renderSelectedCheckboxes($views, COMPANY_GLASSDOOR_RATING_RATE_CRITERIA_NAME, ratingRatesAliases);
+    renderSelectedCheckboxes($views, COMPANY_LINKEDIN_COMPANY_SIZE_CRITERIA_NAME, linkedinCompanySizes);
     renderSelectedCheckboxes($views, COMPANY_HAS_EMPLOYEES_FROM_COUNTRY_CRITERIA_NAME, hasEmployeesFromCountries);
     renderSelectedCheckbox($views, COMPANY_RUST_FOUNDATION_MEMBERS_CRITERIA_NAME, "Rust Foundation Members");
     renderSelectedCheckbox($views, COMPANY_REMOTE_CRITERIA_NAME, "Remote");
@@ -342,6 +357,7 @@ function search(replaceHTML: boolean, resetPager: boolean) {
     const types = urlStateContainer.getCriteria(COMPANY_TYPE_CRITERIA_NAME, []);
     const industries = urlStateContainer.getCriteria(COMPANY_INDUSTRY_CRITERIA_NAME, []);
     const glassdoorRatingRates = urlStateContainer.getCriteria(COMPANY_GLASSDOOR_RATING_RATE_CRITERIA_NAME, []);
+    const linkedinCompanySizes = urlStateContainer.getCriteria(COMPANY_LINKEDIN_COMPANY_SIZE_CRITERIA_NAME, []);
     const hasEmployeesFromCountries = urlStateContainer.getCriteria(COMPANY_HAS_EMPLOYEES_FROM_COUNTRY_CRITERIA_NAME, []);
     const isRustFoundationMembers = urlStateContainer.getCriteria(COMPANY_RUST_FOUNDATION_MEMBERS_CRITERIA_NAME, false);
     const remote = urlStateContainer.getCriteria(COMPANY_REMOTE_CRITERIA_NAME, false);
@@ -361,7 +377,7 @@ function search(replaceHTML: boolean, resetPager: boolean) {
         }
 
         return false;
-    }
+    };
 
     const matchIndustry = function (company: CompanyResponse): boolean {
         if (industries.length === 0) {
@@ -381,7 +397,7 @@ function search(replaceHTML: boolean, resetPager: boolean) {
         }
 
         return false;
-    }
+    };
 
     const matchGlassdoorRatingRate = function (company: CompanyResponse): boolean {
         if (glassdoorRatingRates.length === 0) {
@@ -398,6 +414,14 @@ function search(replaceHTML: boolean, resetPager: boolean) {
 
         return company.glassdoor_profile.reviews_rate >= glassdoorRatingRates[0];
     }
+
+    const matchLinkedinCompanySize = function (company: CompanyResponse): boolean {
+        if (linkedinCompanySizes.length === 0) {
+            return true;
+        }
+
+        return linkedinCompanySizes.indexOf(company.linkedin_profile.employees) !== -1;
+    };
 
     const matchHasEmployeesFromCountry = function (company: CompanyResponse): boolean {
         if (hasEmployeesFromCountries.length === 0) {
@@ -417,7 +441,7 @@ function search(replaceHTML: boolean, resetPager: boolean) {
         }
 
         return false;
-    }
+    };
 
     const match = function (company: CompanyResponse): boolean {
         if (!matchQuery(company)) {
@@ -433,6 +457,10 @@ function search(replaceHTML: boolean, resetPager: boolean) {
         }
 
         if (!matchGlassdoorRatingRate(company)) {
+            return false;
+        }
+
+        if (!matchLinkedinCompanySize(company)) {
             return false;
         }
 
@@ -454,7 +482,7 @@ function search(replaceHTML: boolean, resetPager: boolean) {
         }
 
         return true;
-    }
+    };
 
     const offset = pager.getOffset();
     const nextPage = pager.getPage();

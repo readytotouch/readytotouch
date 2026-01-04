@@ -120,11 +120,12 @@ type CompanyLogoResponse struct {
 }
 
 type LinkedInProfileResponse struct {
-	ID       int    `json:"id"`
-	IDs      []int  `json:"ids"`
-	Alias    string `json:"alias"` // vanity name
-	Name     string `json:"name"`
-	Verified bool   `json:"verified"`
+	ID        int    `json:"id"`
+	IDs       []int  `json:"ids"`
+	Alias     string `json:"alias"` // vanity name
+	Name      string `json:"name"`
+	Employees string `json:"employees"`
+	Verified  bool   `json:"verified"`
 }
 
 type GitHubProfileResponse struct {

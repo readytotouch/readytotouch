@@ -250,8 +250,34 @@ func StreamOrganizersCompaniesV3Beta(qw422016 *qt422016.Writer,
               </div>
               <!-- /Company type -->
 
-              `)
+              <!-- Industry -->
+              <div class="filters__group">
+                <header class="filters__header filters__header--with-info">
+                  <h4 class="filters__headline">Industry</h4>
+                  `)
 	qw422016.N().S(`
+                </header>
+                <div class="filters__elements">
+                  <div class="filters__elements-inner">
+                    `)
+	for _, industry := range industries {
+		qw422016.N().S(`
+                    <label class="checkbox filters__element">
+                      <input class="js-criteria-company-industry checkbox__input" type="checkbox" data-alias="`)
+		qw422016.E().S(industry.Alias)
+		qw422016.N().S(`" />
+                      <span class="checkbox__element"></span>
+                      <span class="filters__element-text filters__element-text--truncated">`)
+		qw422016.E().S(industry.Name)
+		qw422016.N().S(`</span>
+                    </label>
+                    `)
+	}
+	qw422016.N().S(`
+                  </div>
+                </div>
+              </div>
+              <!-- /Industry -->
 
               <!-- Rating -->
               <div class="filters__group">
@@ -321,34 +347,49 @@ func StreamOrganizersCompaniesV3Beta(qw422016 *qt422016.Writer,
               </div>
               <!-- /Rating -->
 
-              <!-- Industry -->
+              <!-- Company size -->
               <div class="filters__group">
                 <header class="filters__header filters__header--with-info">
-                  <h4 class="filters__headline">Industry</h4>
+                  <h4 class="filters__headline">Company size</h4>
+                  <img
+                    class="ml-8"
+                    alt="LinkedIn icon"
+                    width="16"
+                    height="16"
+                    title="info"
+                    src="/assets/images/pages/common/linkedin-small.svg"
+                  />
                   `)
 	qw422016.N().S(`
                 </header>
-                <div class="filters__elements">
-                  <div class="filters__elements-inner">
-                    `)
-	for _, industry := range industries {
+                <div class="filters__elements filters__elements--full-height">
+                  `)
+	for _, size := range []string{
+		"2-10",    // 31
+		"11-50",   // 161
+		"51-200",  // 295
+		"201-500", // 207
+		"501-1K",  // 157
+		"1K-5K",   // 214
+		"5K-10K",  // 62
+		"10K+",    // 173
+	} {
 		qw422016.N().S(`
                     <label class="checkbox filters__element">
-                      <input class="js-criteria-company-industry checkbox__input" type="checkbox" data-alias="`)
-		qw422016.E().S(industry.Alias)
+                      <input class="js-criteria-linkedin-company-size checkbox__input" type="checkbox" data-alias="`)
+		qw422016.E().S(size)
 		qw422016.N().S(`" />
                       <span class="checkbox__element"></span>
                       <span class="filters__element-text filters__element-text--truncated">`)
-		qw422016.E().S(industry.Name)
-		qw422016.N().S(`</span>
+		qw422016.E().S(size)
+		qw422016.N().S(` employees</span>
                     </label>
-                    `)
+                  `)
 	}
 	qw422016.N().S(`
-                  </div>
                 </div>
               </div>
-              <!-- /Industry -->
+              <!-- /Company size -->
 
               `)
 	qw422016.N().S(`
