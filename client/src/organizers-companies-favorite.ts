@@ -1,4 +1,5 @@
 import {organizersWelcome} from "./welcome";
+import {CompanyResponse} from "./organizers-companies-v3-models";
 
 function markCompanyFavorite(companyId: number, favorite: boolean, callback: () => void) {
     fetch(`/api/v1/companies/${companyId}/favorite.json`, {
@@ -18,23 +19,23 @@ function markCompanyFavorite(companyId: number, favorite: boolean, callback: () 
     }).catch(console.error);
 }
 
-export function addCompanyFavoriteEvent($company: HTMLElement) {
-    const companyId = parseInt($company.getAttribute("data-company-id"));
-
+export function addCompanyFavoriteEvent($company: HTMLElement, company: CompanyResponse) {
     const $favorite = $company.querySelector(".js-company-favorite");
     $favorite.addEventListener("click", function () {
         const current = $favorite.classList.contains("in-favorite");
         const next = !current;
 
-        markCompanyFavorite(companyId, next, function () {
+        markCompanyFavorite(company.id, next, function () {
+            company.favorite = next;
+
             if (next) {
                 $favorite.classList.add("in-favorite");
 
-                $favorite.setAttribute("title", "Remove from favorites")
+                $favorite.setAttribute("title", "Remove from favorites");
             } else {
                 $favorite.classList.remove("in-favorite");
 
-                $favorite.setAttribute("title", "Add to favorites")
+                $favorite.setAttribute("title", "Add to favorites");
             }
         });
     });

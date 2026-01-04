@@ -2,12 +2,12 @@ import {CompanyResponse, Industry} from "./organizers-companies-v3-models";
 
 const organizerGitHubAlias = "go";
 
-export function renderCompany(company: CompanyResponse, favorite: boolean): string {
+export function renderCompany(company: CompanyResponse): string {
     const companyURL = `/golang/companies/${company.linkedin_profile.alias}`;
 
     return `<div class="js-company card" data-company-id="${company.id}">
     <aside class="card__action">
-        ${renderFavorite(favorite)}
+        ${renderFavorite(company.favorite)}
         <a href="${companyURL}" class="button-group__item" title="View statistics">
             <img width="20" height="20" alt="icon stats" src="/assets/images/pages/common/stats.svg" />
         </a>

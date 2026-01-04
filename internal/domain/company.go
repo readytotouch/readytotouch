@@ -162,6 +162,7 @@ type CompanyResponse struct {
 	Remote                    bool                     `json:"remote"`
 	LatestVacancyDate         *time.Time               `json:"latest_vacancy_date"`
 	GitHubRepositoryCount     int                      `json:"github_repository_count"`
+	Favorite                  bool                     `json:"favorite"`
 }
 
 type UnsafeVacancyResponse struct {
@@ -170,7 +171,8 @@ type UnsafeVacancyResponse struct {
 }
 
 type VacancyResponse struct {
-	ID int64 `json:"id"`
+	ID       int64 `json:"id"`
+	Favorite bool  `json:"favorite"`
 }
 
 type GitHubProfile struct {

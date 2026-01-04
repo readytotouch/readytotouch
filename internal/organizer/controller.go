@@ -1046,7 +1046,8 @@ func (c *Controller) UnsafeCompanies(ctx *gin.Context) {
 
 func (c *Controller) UnsafeCompaniesV3(ctx *gin.Context) {
 	var (
-		uri languageURI
+		authUserID = domain.ContextGetUserID(ctx)
+		uri        languageURI
 	)
 
 	err := ctx.ShouldBindUri(&uri)
@@ -1066,6 +1067,15 @@ func (c *Controller) UnsafeCompaniesV3(ctx *gin.Context) {
 	}
 
 	companies := c.companies(organizer.Language)
+
+	c.sortCompanies(companies)
+
+	userCompanyFavoriteMap, err := c.userFavoriteCompanyRepository.GetMap(ctx, authUserID, nil)
+	if err != nil {
+		// @TODO logging
+
+		// NOP, continue
+	}
 
 	result := make([]domain.CompanyResponse, len(companies))
 	for i, company := range companies {
@@ -1108,6 +1118,7 @@ func (c *Controller) UnsafeCompaniesV3(ctx *gin.Context) {
 			Remote:                    company.Remote,
 			LatestVacancyDate:         utils.TimePointerOrNil(company.LatestVacancyDate),
 			GitHubRepositoryCount:     company.Languages[organizer.Language].GitHubRepositoryCount,
+			Favorite:                  userCompanyFavoriteMap[company.ID],
 		}
 	}
 
@@ -1138,7 +1149,8 @@ func (c *Controller) UnsafeVacancies(ctx *gin.Context) {
 
 func (c *Controller) UnsafeVacanciesV3(ctx *gin.Context) {
 	var (
-		uri languageURI
+		authUserID = domain.ContextGetUserID(ctx)
+		uri        languageURI
 	)
 
 	err := ctx.ShouldBindUri(&uri)
@@ -1159,13 +1171,21 @@ func (c *Controller) UnsafeVacanciesV3(ctx *gin.Context) {
 
 	companies := c.companies(organizer.Language)
 
+	userVacancyFavoriteMap, err := c.userFavoriteVacancyRepository.GetMap(ctx, authUserID, nil)
+	if err != nil {
+		// @TODO logging
+
+		// NOP, continue
+	}
+
 	result := make([]domain.VacancyResponse, 0, 4096)
 	for _, company := range companies {
 		for _, vacancy := range company.Languages[organizer.Language].Vacancies {
 			id, ok := organizers.VacancyUrlMap[vacancy.URL]
 			if ok {
 				result = append(result, domain.VacancyResponse{
-					ID: id,
+					ID:       id,
+					Favorite: userVacancyFavoriteMap[id],
 				})
 			}
 		}

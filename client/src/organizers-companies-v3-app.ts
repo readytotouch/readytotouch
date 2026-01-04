@@ -476,8 +476,7 @@ function search(replaceHTML: boolean, resetPager: boolean) {
             return false;
         }
 
-        if (inFavorites) {
-            // @TODO: replace with real favorites check
+        if (inFavorites && !company.favorite) {
             return false;
         }
 
@@ -531,9 +530,10 @@ function renderCompanies(companies: Array<CompanyResponse>, clear: boolean = tru
     const $companies = new Array<HTMLElement>(length);
 
     for (let i = 0; i < length; i++) {
-        const $company = htmlToNode(renderCompany(companies[i], false));
+        const company = companies[i];
+        const $company = htmlToNode(renderCompany(company));
 
-        addCompanyFavoriteEvent($company);
+        addCompanyFavoriteEvent($company, company);
 
         $companies[i] = $company;
     }
