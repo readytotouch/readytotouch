@@ -40,8 +40,8 @@ func companies04Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{
 						/*
 							{
 								Title:            "",
@@ -100,8 +100,8 @@ func companies04Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{
 						/*
 							{
 								Title:            "",
@@ -160,8 +160,8 @@ func companies04Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{
 						/*
 							{
 								Title:                "",
@@ -219,8 +219,8 @@ func companies04Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 6,
-					Vacancies:               []domain.Vacancy{
+					GitHubRepositoryCount: 6,
+					Vacancies:             []domain.Vacancy{
 						/*
 							{
 								Title:            "",
@@ -284,7 +284,7 @@ func companies04Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 10,
+					GitHubRepositoryCount: 10,
 					Vacancies: []domain.Vacancy{
 						/*
 							{
@@ -375,7 +375,7 @@ func companies04Shard() []domain.CompanyProfile {
 				domain.Elixir:  {},
 				domain.Clojure: {},
 				domain.Haskell: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer — Risk Intelligence",
@@ -449,7 +449,7 @@ func companies04Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 76,
+					GitHubRepositoryCount: 76,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Backend Engineer",
@@ -463,7 +463,7 @@ func companies04Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer, Networking (Rust)",
@@ -530,8 +530,8 @@ func companies04Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 22,
-					Vacancies:               []domain.Vacancy{
+					GitHubRepositoryCount: 22,
+					Vacancies:             []domain.Vacancy{
 						/*
 							{
 								Title:            "",
@@ -602,7 +602,7 @@ func companies04Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Backend Engineer (Merchant Activation)",
@@ -660,8 +660,8 @@ func companies04Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{
 						/*
 							{
 								Title:            "",
@@ -728,7 +728,7 @@ func companies04Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 4,
+					GitHubRepositoryCount: 4,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Developer II (Backend)",
@@ -787,8 +787,8 @@ func companies04Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{
 						/*
 							{
 								Title:            "",
@@ -853,7 +853,7 @@ func companies04Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 1,
+					GitHubRepositoryCount: 1,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer — Backend",
@@ -924,7 +924,7 @@ func companies04Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 10,
+					GitHubRepositoryCount: 10,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Developer",
@@ -993,7 +993,7 @@ func companies04Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 5,
+					GitHubRepositoryCount: 5,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Go Developer",
@@ -1070,7 +1070,7 @@ func companies04Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Golang Engineer",
@@ -1161,8 +1161,8 @@ func companies04Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 3,
-					Vacancies:               []domain.Vacancy{
+					GitHubRepositoryCount: 3,
+					Vacancies:             []domain.Vacancy{
 						/*
 							{
 								Title:            "",
@@ -1174,8 +1174,8 @@ func companies04Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{
 						/*
 							{
 								Title:            "",
@@ -1239,11 +1239,11 @@ func companies04Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 1,
+					GitHubRepositoryCount: 1,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer",
@@ -1307,7 +1307,7 @@ func companies04Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "(Senior) Rust Backend-Engineer",
@@ -1369,7 +1369,7 @@ func companies04Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Rust Software Engineer",
@@ -1438,7 +1438,7 @@ func companies04Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer (Rust)",
@@ -1545,7 +1545,7 @@ func companies04Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Full Stack Engineer (Angular & Go)",
@@ -1559,7 +1559,7 @@ func companies04Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 14,
+					GitHubRepositoryCount: 14,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Rust Software Engineer (Data&Tools)",
@@ -1635,7 +1635,7 @@ func companies04Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "(Senior) Software Engineer (Rust, Backend)",
@@ -1718,7 +1718,7 @@ func companies04Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Rust Developer",
@@ -1790,7 +1790,7 @@ func companies04Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer Quantum Computing (Python/Rust)",
@@ -1875,7 +1875,7 @@ func companies04Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 46,
+					GitHubRepositoryCount: 46,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer, Backend (Shared Services)",
@@ -1993,7 +1993,7 @@ func companies04Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Principal Rust Engineer — Data Classification (Prisma Cloud)",
@@ -2147,7 +2147,7 @@ func companies04Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Rust Staff /Senior Software Engineer",
@@ -2215,7 +2215,7 @@ func companies04Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Rust Developer",
@@ -2292,7 +2292,7 @@ func companies04Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer (Rust Developer)",
@@ -2345,7 +2345,7 @@ func companies04Shard() []domain.CompanyProfile {
 				},
 				domain.Zig: {},
 				domain.Scala: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer (Scala)",
@@ -2451,7 +2451,7 @@ func companies04Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Rust Software Development Engineer",
@@ -2547,7 +2547,7 @@ func companies04Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {},
 				domain.Rust: {
-					GitHubRepositoriesCount: 16,
+					GitHubRepositoryCount: 16,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer, Rust",
@@ -2613,7 +2613,7 @@ func companies04Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer, Backend (Rust)",
@@ -2691,7 +2691,7 @@ func companies04Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Full Stack Software Engineer — Golang",
@@ -2705,7 +2705,7 @@ func companies04Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer (Rust, C++)",
@@ -2782,7 +2782,7 @@ func companies04Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 259,
+					GitHubRepositoryCount: 259,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Library Software Engineer — Go",
@@ -2796,7 +2796,7 @@ func companies04Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer — Static Analysis Engine (Rust)",
@@ -2904,11 +2904,11 @@ func companies04Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 9,
-					Vacancies:               []domain.Vacancy{},
+					GitHubRepositoryCount: 9,
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 2,
+					GitHubRepositoryCount: 2,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer, Rust",
@@ -3024,7 +3024,7 @@ func companies04Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {},
 				domain.Rust: {
-					GitHubRepositoriesCount: 3,
+					GitHubRepositoryCount: 3,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Backend Software Engineer (Rust)",
@@ -3094,7 +3094,7 @@ func companies04Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Rust Cloud Service Developer",
@@ -3161,7 +3161,7 @@ func companies04Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior/Staff Systems Programmer (Rust)",
@@ -3220,7 +3220,7 @@ func companies04Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Developer Rust — Focus Network",
@@ -3287,7 +3287,7 @@ func companies04Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Rust Engineer",
@@ -3357,7 +3357,7 @@ func companies04Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Rust Engineer",
@@ -3454,7 +3454,7 @@ func companies04Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Golang Developer",
@@ -3544,7 +3544,7 @@ func companies04Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 19,
+					GitHubRepositoryCount: 19,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "(Senior) Backend Engineer — Go",
@@ -3628,7 +3628,7 @@ func companies04Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Backend Engineer",
@@ -3705,7 +3705,7 @@ func companies04Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Fullstack Engineer",
@@ -3767,7 +3767,7 @@ func companies04Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 3,
+					GitHubRepositoryCount: 3,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer",
@@ -3840,7 +3840,7 @@ func companies04Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Staff Software Engineer — Golang",
@@ -3952,7 +3952,7 @@ func companies04Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 1,
+					GitHubRepositoryCount: 1,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer — Platform Security Team",
@@ -4020,7 +4020,7 @@ func companies04Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Lead Engineer, API & Real Time Systems",
@@ -4094,7 +4094,7 @@ func companies04Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {},
 				domain.Rust: {
-					GitHubRepositoriesCount: 18,
+					GitHubRepositoryCount: 18,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer, Rust",
@@ -4169,7 +4169,7 @@ func companies04Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 2,
+					GitHubRepositoryCount: 2,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Back-End Developer Delphi / Go",
@@ -4202,7 +4202,7 @@ func companies04Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Developer Rust",
@@ -4332,7 +4332,7 @@ func companies04Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 34,
+					GitHubRepositoryCount: 34,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior/Staff Software Engineer — Go Backend",
@@ -4346,7 +4346,7 @@ func companies04Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 18,
+					GitHubRepositoryCount: 18,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior/Staff Software Engineer (Rust)",
@@ -4410,7 +4410,7 @@ func companies04Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Rust Developer",
@@ -4493,7 +4493,7 @@ func companies04Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Development Engineer — Rust",
@@ -4610,7 +4610,7 @@ func companies04Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer — Go / IaC (Security)",
@@ -4680,7 +4680,7 @@ func companies04Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 6,
+					GitHubRepositoryCount: 6,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Rust Software Engineer",
@@ -4694,7 +4694,7 @@ func companies04Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoriesCount: 29,
+					GitHubRepositoryCount: 29,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Rust Software Engineer",
@@ -4907,7 +4907,7 @@ func companies04Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 14,
+					GitHubRepositoryCount: 14,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer, Backend (Go)",
@@ -4982,7 +4982,7 @@ func companies04Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 21,
+					GitHubRepositoryCount: 21,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Staff/Principal Software Engineer: Data Backend",
@@ -5049,7 +5049,7 @@ func companies04Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {},
 				domain.Rust: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer",
@@ -5121,7 +5121,7 @@ func companies04Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 7,
+					GitHubRepositoryCount: 7,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer — Platform Accounting",
@@ -5185,7 +5185,7 @@ func companies04Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 7,
+					GitHubRepositoryCount: 7,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Junior Backend Developer",
@@ -5260,7 +5260,7 @@ func companies04Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 190,
+					GitHubRepositoryCount: 190,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer — Code Search [IC2]",
@@ -5333,7 +5333,7 @@ func companies04Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 9,
+					GitHubRepositoryCount: 9,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer — Scaled Access",
@@ -5410,7 +5410,7 @@ func companies04Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoriesCount: 0,
+					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Software Engineer, Scanning Engine",

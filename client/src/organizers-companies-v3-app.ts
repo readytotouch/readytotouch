@@ -3,14 +3,16 @@ import {
     COMPANY_SEARCH_QUERY,
     COMPANY_TYPE_CRITERIA_NAME,
     COMPANY_INDUSTRY_CRITERIA_NAME,
+    COMPANY_GLASSDOOR_RATING_RATE_CRITERIA_NAME,
     COMPANY_HAS_EMPLOYEES_FROM_COUNTRY_CRITERIA_NAME,
     COMPANY_RUST_FOUNDATION_MEMBERS_CRITERIA_NAME,
     COMPANY_REMOTE_CRITERIA_NAME,
     COMPANY_IN_FAVORITES_CRITERIA_NAME,
 } from "./framework/company_criteria_names";
-import {InputCheckboxes} from "./framework/checkboxes";
+import {InputCheckboxes, RadioCheckboxes} from "./framework/checkboxes";
 import {companyTypes} from "./framework/company_types";
 import {industries} from "./framework/industries";
+import {ratingRatesAliases} from "./framework/rating_rates";
 import {hasEmployeesFromCountries} from "./framework/has_employees_from_countries";
 import {htmlToNode} from "./framework/html";
 import {Alias} from "./framework/alias";
@@ -23,15 +25,32 @@ import {responsiveFilterWidget} from "./responsive-filter-widget";
 import {responsiveCompanyShowMoreWidget} from "./responsive-company-show-more-widget";
 import {addCompanyFavoriteEvent} from "./organizers-companies-favorite";
 
-const $companies = document.querySelectorAll(".js-company");
-const $resultCount = document.getElementById("js-result-count");
+import {parseCurrentProgrammingLanguage} from "./pl";
+import {organizersWelcome} from "./welcome";
+import {CompanyResponse} from "./organizers-companies-v3-models";
+import {renderCompany} from "./organizers-companies-v3-render-company";
+import {Pager, TotalPages} from "./framework/pager";
+import Pagination from "./framework/pagination";
 
-$companies.forEach(addCompanyFavoriteEvent);
+const LIMIT = 10;
+
+const currentProgrammingLanguage = parseCurrentProgrammingLanguage(window.location.pathname);
+
+let sourceCompanies: Array<CompanyResponse> = [];
+let currentStateCompanies: Array<CompanyResponse> = [];
+
+const $companiesContainer = document.getElementById("js-companies-container");
+const $pagination = document.getElementById("js-pagination-pages");
+const $resultCount = document.getElementById("js-result-count");
+const $paginationShowMoreButton = document.getElementById("js-pagination-show-more-button") as HTMLButtonElement;
+const $paginationShowAllButton = document.getElementById("js-pagination-show-all-button") as HTMLButtonElement;
+const $paginationShowAllCount = document.getElementById("js-pagination-show-all-count") as HTMLElement;
 
 const $form = document.getElementById("js-company-search-form");
 const $search = document.getElementById("js-company-query") as HTMLInputElement;
 const $typeCheckboxes = new InputCheckboxes(document.querySelectorAll("input.js-criteria-company-type") as any as Array<HTMLInputElement>);
 const $industryCheckboxes = new InputCheckboxes(document.querySelectorAll("input.js-criteria-company-industry") as any as Array<HTMLInputElement>);
+const $glassdoorRatingRateCheckboxes = new RadioCheckboxes(document.querySelectorAll("input.js-criteria-glassdoor-rating-rate") as any as Array<HTMLInputElement>);
 const $hasEmployeesFromCountryCheckboxes = new InputCheckboxes(document.querySelectorAll("input.js-criteria-has-employees-from-country") as any as Array<HTMLInputElement>);
 const $remoteCheckbox = document.getElementById("js-criteria-remote") as HTMLInputElement;
 const $inFavoritesCheckbox = document.getElementById("js-criteria-in-favorites") as HTMLInputElement;
@@ -41,6 +60,9 @@ const $optionalMobileSelectedCriteriaCount = document.getElementById("js-mobile-
 // "#js-criteria-reset" for backward compatibility
 const $resetButtons = document.querySelectorAll("#js-criteria-reset, .js-criteria-reset") as any as Array<HTMLElement>;
 
+const pager = new Pager(LIMIT);
+const pagination = new Pagination($pagination, setPage);
+
 $typeCheckboxes.onChange(function (state: Array<string>) {
     urlStateContainer.setArrayCriteria(COMPANY_TYPE_CRITERIA_NAME, state);
     urlStateContainer.setPage(1);
@@ -48,7 +70,7 @@ $typeCheckboxes.onChange(function (state: Array<string>) {
 
     renderSelectedCriteriaByURL();
 
-    search();
+    search(true, true);
 });
 
 $industryCheckboxes.onChange(function (state: Array<string>) {
@@ -58,7 +80,17 @@ $industryCheckboxes.onChange(function (state: Array<string>) {
 
     renderSelectedCriteriaByURL();
 
-    search();
+    search(true, true);
+});
+
+$glassdoorRatingRateCheckboxes.onChange(function (state: Array<string>) {
+    urlStateContainer.setArrayCriteria(COMPANY_GLASSDOOR_RATING_RATE_CRITERIA_NAME, state);
+    urlStateContainer.setPage(1);
+    urlStateContainer.storeCurrentState();
+
+    renderSelectedCriteriaByURL();
+
+    search(true, true);
 });
 
 $hasEmployeesFromCountryCheckboxes.onChange(function (state: Array<string>) {
@@ -68,7 +100,7 @@ $hasEmployeesFromCountryCheckboxes.onChange(function (state: Array<string>) {
 
     renderSelectedCriteriaByURL();
 
-    search();
+    search(true, true);
 });
 
 if ($inRustFoundationMembersCheckbox) {
@@ -79,7 +111,7 @@ if ($inRustFoundationMembersCheckbox) {
 
         renderSelectedCriteriaByURL();
 
-        search();
+        search(true, true);
     });
 }
 
@@ -90,7 +122,7 @@ $remoteCheckbox.addEventListener("change", function () {
 
     renderSelectedCriteriaByURL();
 
-    search();
+    search(true, true);
 });
 
 $inFavoritesCheckbox.addEventListener("change", function () {
@@ -100,7 +132,7 @@ $inFavoritesCheckbox.addEventListener("change", function () {
 
     renderSelectedCriteriaByURL();
 
-    search();
+    search(true, true);
 });
 
 const {
@@ -114,6 +146,7 @@ function setStateByURL() {
 
     setCheckboxesStateByURL($typeCheckboxes, COMPANY_TYPE_CRITERIA_NAME);
     setCheckboxesStateByURL($industryCheckboxes, COMPANY_INDUSTRY_CRITERIA_NAME);
+    setCheckboxesStateByURL($glassdoorRatingRateCheckboxes, COMPANY_GLASSDOOR_RATING_RATE_CRITERIA_NAME);
     setCheckboxesStateByURL($hasEmployeesFromCountryCheckboxes, COMPANY_HAS_EMPLOYEES_FROM_COUNTRY_CRITERIA_NAME);
 
     if ($inRustFoundationMembersCheckbox) {
@@ -128,6 +161,7 @@ function renderSelectedCriteriaByURL() {
 
     renderSelectedCheckboxes($views, COMPANY_TYPE_CRITERIA_NAME, companyTypes);
     renderSelectedCheckboxes($views, COMPANY_INDUSTRY_CRITERIA_NAME, industries);
+    renderSelectedCheckboxes($views, COMPANY_GLASSDOOR_RATING_RATE_CRITERIA_NAME, ratingRatesAliases);
     renderSelectedCheckboxes($views, COMPANY_HAS_EMPLOYEES_FROM_COUNTRY_CRITERIA_NAME, hasEmployeesFromCountries);
     renderSelectedCheckbox($views, COMPANY_RUST_FOUNDATION_MEMBERS_CRITERIA_NAME, "Rust Foundation Members");
     renderSelectedCheckbox($views, COMPANY_REMOTE_CRITERIA_NAME, "Remote");
@@ -191,7 +225,7 @@ const handleSearch = function () {
     urlStateContainer.setPage(1);
     urlStateContainer.storeCurrentState();
 
-    search();
+    search(true, true);
 }
 
 $form.addEventListener("submit", function (event) {
@@ -217,121 +251,221 @@ function updatePageState() {
 
     renderSelectedCriteriaByURL();
 
-    search();
+    search(true, true);
 }
 
-function search() {
+function updateMoreButtonsVisibility() {
+    const moreCount = currentStateCompanies.length - (pager.getOffset() + LIMIT);
+    const hide = pager.getPage() > 1 || moreCount <= 0;
+
+    $paginationShowMoreButton.classList.toggle("d-none", hide);
+    $paginationShowAllButton.classList.toggle("d-none", hide);
+
+    if (hide) {
+        return;
+    }
+
+    $paginationShowAllCount.innerHTML = moreCount.toString();
+}
+
+function setPage(page: number) {
+    pager.setPage(page);
+
+    urlStateContainer.setPage(page);
+
+    urlStateContainer.storeCurrentState();
+
+    // Faster to just render from current state than re-searching
+    {
+        const offset = pager.getOffset();
+        const nextPage = pager.getPage();
+        const urlByPageBuilder = urlStateContainer.createUrlByPageBuilder();
+
+        renderCompanies(currentStateCompanies.slice(offset, offset + LIMIT), true);
+        pagination.render(nextPage, TotalPages(currentStateCompanies.length, LIMIT), urlByPageBuilder);
+
+        updateMoreButtonsVisibility();
+    }
+
+    requestAnimationFrame(function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    });
+}
+
+$paginationShowMoreButton.addEventListener("click", function () {
+    $paginationShowAllButton.disabled = true;
+    $paginationShowMoreButton.disabled = true;
+
+    pager.incrementOffsetOnly();
+
+    // Faster to just render from current state than re-searching
+    {
+        const offset = pager.getOffset();
+
+        renderCompanies(currentStateCompanies.slice(offset, offset + LIMIT), false);
+        pagination.reset();
+
+        updateMoreButtonsVisibility();
+    }
+
+    $paginationShowAllButton.disabled = false;
+    $paginationShowMoreButton.disabled = false;
+});
+
+$paginationShowAllButton.addEventListener("click", function () {
+    $paginationShowAllButton.disabled = true;
+    $paginationShowMoreButton.disabled = true;
+
+    pager.incrementOffsetOnly();
+
+    {
+        renderCompanies(currentStateCompanies.slice(pager.getOffset()), false);
+        pagination.reset();
+
+        $paginationShowMoreButton.classList.toggle("d-none", true);
+        $paginationShowAllButton.classList.toggle("d-none", true);
+    }
+
+    $paginationShowAllButton.disabled = false;
+    $paginationShowMoreButton.disabled = false;
+});
+
+function search(replaceHTML: boolean, resetPager: boolean) {
+    if (resetPager) {
+        pager.reset();
+    }
+
     const query = $search.value.trim().toLowerCase();
     const types = urlStateContainer.getCriteria(COMPANY_TYPE_CRITERIA_NAME, []);
     const industries = urlStateContainer.getCriteria(COMPANY_INDUSTRY_CRITERIA_NAME, []);
+    const glassdoorRatingRates = urlStateContainer.getCriteria(COMPANY_GLASSDOOR_RATING_RATE_CRITERIA_NAME, []);
     const hasEmployeesFromCountries = urlStateContainer.getCriteria(COMPANY_HAS_EMPLOYEES_FROM_COUNTRY_CRITERIA_NAME, []);
     const isRustFoundationMembers = urlStateContainer.getCriteria(COMPANY_RUST_FOUNDATION_MEMBERS_CRITERIA_NAME, false);
     const remote = urlStateContainer.getCriteria(COMPANY_REMOTE_CRITERIA_NAME, false);
     const inFavorites = urlStateContainer.getCriteria(COMPANY_IN_FAVORITES_CRITERIA_NAME, false);
 
-    const matchQuery = function ($company: HTMLElement): boolean {
+    const matchQuery = function (company: CompanyResponse): boolean {
         if (query.length === 0) {
             return true;
         }
 
-        if ($company.getAttribute("data-company-name").toLowerCase().indexOf(query) !== -1) {
+        if (company.name.toLowerCase().indexOf(query) !== -1) {
             return true;
         }
 
-        if ($company.querySelector(".js-company-description").textContent.toLowerCase().indexOf(query) !== -1) {
+        if (company.short_description.toLowerCase().indexOf(query) !== -1) {
             return true;
         }
 
         return false;
     }
 
-    const matchIndustry = function ($company: HTMLElement): boolean {
+    const matchIndustry = function (company: CompanyResponse): boolean {
         if (industries.length === 0) {
             return true;
         }
 
-        const companyIndustries = $company.getAttribute("data-company-industries").split(",");
+        if (!company.industries) {
+            return false;
+        }
 
         for (const industry of industries) {
-            if (companyIndustries.indexOf(industry) !== -1) {
-                return true;
+            for (const companyIndustry of company.industries) {
+                if (companyIndustry.alias === industry) {
+                    return true;
+                }
             }
         }
 
         return false;
     }
 
-    const matchHasEmployeesFromCountry = function ($company: HTMLElement): boolean {
+    const matchGlassdoorRatingRate = function (company: CompanyResponse): boolean {
+        if (glassdoorRatingRates.length === 0) {
+            return true;
+        }
+
+        if (!company.glassdoor_profile) {
+            return false;
+        }
+
+        if (!company.glassdoor_profile.reviews_rate) {
+            return false;
+        }
+
+        return company.glassdoor_profile.reviews_rate >= glassdoorRatingRates[0];
+    }
+
+    const matchHasEmployeesFromCountry = function (company: CompanyResponse): boolean {
         if (hasEmployeesFromCountries.length === 0) {
             return true;
         }
 
-        const companyHasEmployeesFromCountries = $company.getAttribute("data-company-has-employees-from-countries").split(",");
+        if (!company.has_employees_from_countries) {
+            return false;
+        }
 
         for (const country of hasEmployeesFromCountries) {
-            if (companyHasEmployeesFromCountries.indexOf(country) !== -1) {
-                return true;
+            for (const companyCountry of company.has_employees_from_countries) {
+                if (companyCountry.alias === country) {
+                    return true;
+                }
             }
         }
 
         return false;
     }
 
-    const match = function ($company: HTMLElement): boolean {
-        if (!matchQuery($company)) {
+    const match = function (company: CompanyResponse): boolean {
+        if (!matchQuery(company)) {
             return false;
         }
 
-        if (types.length > 0 && types.indexOf($company.getAttribute("data-company-type")) === -1) {
+        if (types.length > 0 && types.indexOf(company.type) === -1) {
             return false;
         }
 
-        if (!matchIndustry($company)) {
+        if (!matchIndustry(company)) {
             return false;
         }
 
-        if (!matchHasEmployeesFromCountry($company)) {
+        if (!matchGlassdoorRatingRate(company)) {
             return false;
         }
 
-        if (isRustFoundationMembers && $company.getAttribute("data-company-rust-foundation-members") !== "true") {
+        if (!matchHasEmployeesFromCountry(company)) {
             return false;
         }
 
-        if (remote && $company.getAttribute("data-company-remote") !== "true") {
+        if (isRustFoundationMembers && !company.rust_foundation_member) {
+            return false;
+        }
+
+        if (remote && !company.remote) {
             return false;
         }
 
         if (inFavorites) {
-            const $favorite = $company.querySelector(".js-company-favorite");
-            const current = $favorite.classList.contains("in-favorite");
-
-            if (!current) {
-                return false;
-            }
+            // @TODO: replace with real favorites check
+            return false;
         }
 
         return true;
     }
 
-    let total = 0;
+    const offset = pager.getOffset();
+    const nextPage = pager.getPage();
+    const urlByPageBuilder = urlStateContainer.createUrlByPageBuilder();
 
     // hide container to prevent multiple reflows
     {
         // debug time measurement
         const start = performance.now();
 
-        $companies.forEach(function ($company: HTMLElement) {
-            if (match($company)) {
-                $company.hidden = false;
-
-                total++;
-
-                return;
-            }
-
-            $company.hidden = true;
-        });
+        currentStateCompanies = sourceCompanies.filter(match);
 
         // debug time measurement
         const end = performance.now();
@@ -339,10 +473,62 @@ function search() {
         console.log(`Search took ${end - start} milliseconds.`);
     }
 
-    $resultCount.innerHTML = total.toString();
+    renderCompanies(currentStateCompanies.slice(offset, offset + LIMIT), replaceHTML);
+    pagination.render(nextPage, TotalPages(currentStateCompanies.length, LIMIT), urlByPageBuilder);
+    $resultCount.innerHTML = currentStateCompanies.length.toString();
+
+    updateMoreButtonsVisibility();
 }
 
-updatePageState();
+function fetchCompanies(callback: (companies: Array<CompanyResponse>) => void) {
+    fetch(`/api/v1/unsafe/${currentProgrammingLanguage}/companies.json`, {
+        method: "GET",
+    }).then(function (response) {
+        // Unauthorized
+        if (response.status === 401) {
+            window.location.href = organizersWelcome();
+
+            return;
+        }
+
+        return response.json();
+    }).then(function (data) {
+        callback(data.companies);
+    }).catch(console.error);
+}
+
+function renderCompanies(companies: Array<CompanyResponse>, clear: boolean = true) {
+    const length = Math.min(companies.length, 10);
+
+    const $companies = new Array<HTMLElement>(length);
+
+    for (let i = 0; i < length; i++) {
+        const $company = htmlToNode(renderCompany(companies[i], false));
+
+        addCompanyFavoriteEvent($company);
+
+        $companies[i] = $company;
+    }
+
+    if (clear) {
+        $companiesContainer.innerHTML = "";
+    }
+    $companiesContainer.append(...$companies);
+}
+
+function init(companies: Array<CompanyResponse>) {
+    sourceCompanies = companies;
+
+    search(true, false);
+}
+
+pager.setPage(urlStateContainer.getPage());
+
+fetchCompanies(init);
+
+setStateByURL();
+
+renderSelectedCriteriaByURL();
 
 responsiveHeaderProfileWidget();
 

@@ -24,7 +24,7 @@ import (
 var (
 	testFullPublicSince = time.Date(2025, time.November, 1, 0, 0, 0, 0, time.UTC)
 	testFullPublicUntil = time.Date(2026, time.January, 25, 0, 0, 0, 0, time.UTC)
-	testStrictAuthUntil = time.Date(2025, time.December, 30, 0, 0, 0, 0, time.UTC)
+	testStrictAuthUntil = time.Date(2026, time.January, 8, 0, 0, 0, 0, time.UTC)
 )
 
 func testStrictAuth(date time.Time) bool {
@@ -179,16 +179,20 @@ func (c *Controller) GolangCompaniesUkraine(ctx *gin.Context) {
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
 }
 
-func (c *Controller) CompaniesV1(ctx *gin.Context) {
-	c.companiesAction(ctx, template.OrganizersCompaniesV1)
+func (c *Controller) CompaniesV1Alpha(ctx *gin.Context) {
+	c.companiesAction(ctx, template.OrganizersCompaniesV1Alpha)
 }
 
-func (c *Controller) CompaniesV2(ctx *gin.Context) {
-	c.companiesAction(ctx, template.OrganizersCompaniesV2)
+func (c *Controller) CompaniesV2Alpha(ctx *gin.Context) {
+	c.companiesAction(ctx, template.OrganizersCompaniesV2Alpha)
 }
 
-func (c *Controller) CompaniesV3(ctx *gin.Context) {
-	c.companiesAction(ctx, template.OrganizersCompaniesV3)
+func (c *Controller) CompaniesV3Alpha(ctx *gin.Context) {
+	c.companiesAction(ctx, template.OrganizersCompaniesV3Alpha)
+}
+
+func (c *Controller) CompaniesV3Beta(ctx *gin.Context) {
+	c.companiesAction(ctx, template.OrganizersCompaniesV3Beta)
 }
 
 func (c *Controller) CompanyV1(ctx *gin.Context) {
@@ -479,12 +483,16 @@ func (c *Controller) companyAction(
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
 }
 
-func (c *Controller) JobsV2(ctx *gin.Context) {
-	c.jobsAction(ctx, template.OrganizersVacanciesV2)
+func (c *Controller) JobsV2Alpha(ctx *gin.Context) {
+	c.jobsAction(ctx, template.OrganizersVacanciesV2Alpha)
 }
 
-func (c *Controller) JobsV3(ctx *gin.Context) {
-	c.jobsAction(ctx, template.OrganizersVacanciesV3)
+func (c *Controller) JobsV3Alpha(ctx *gin.Context) {
+	c.jobsAction(ctx, template.OrganizersVacanciesV3Alpha)
+}
+
+func (c *Controller) JobsV3Beta(ctx *gin.Context) {
+	c.jobsAction(ctx, template.OrganizersVacanciesV3Beta)
 }
 
 func (c *Controller) jobsAction(
@@ -1098,6 +1106,7 @@ func (c *Controller) UnsafeCompaniesV3(ctx *gin.Context) {
 			PinnedUntil:               utils.TimePointerOrNil(company.PinnedUntil),
 			Remote:                    company.Remote,
 			LatestVacancyDate:         utils.TimePointerOrNil(company.LatestVacancyDate),
+			GitHubRepositoryCount:     company.Languages[organizer.Language].GitHubRepositoryCount,
 		}
 	}
 

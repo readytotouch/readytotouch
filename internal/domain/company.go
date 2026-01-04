@@ -160,6 +160,7 @@ type CompanyResponse struct {
 	PinnedUntil               *time.Time               `json:"pinned_until"`
 	Remote                    bool                     `json:"remote"`
 	LatestVacancyDate         *time.Time               `json:"latest_vacancy_date"`
+	GitHubRepositoryCount     int                      `json:"github_repository_count"`
 }
 
 type UnsafeVacancyResponse struct {
@@ -246,8 +247,8 @@ type PreparedVacancy struct {
 }
 
 type LanguageProfile struct {
-	GitHubRepositoriesCount int
-	Vacancies               []Vacancy
+	GitHubRepositoryCount int
+	Vacancies             []Vacancy
 }
 
 type CompanyLogo struct {

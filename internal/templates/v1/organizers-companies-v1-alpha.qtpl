@@ -1,5 +1,5 @@
 {% import "strconv" %}
-{%- func OrganizersCompaniesV1(
+{%- func OrganizersCompaniesV1Alpha(
   organizerFeature OrganizerFeature,
   headerProfiles []SocialProviderUser,
   companies []Company,
@@ -29,7 +29,7 @@
     {%= ga() %}
 </head>
 
-<body class="organizer-companies-inner" data-companies-page-version="1">
+<body class="organizer-companies-inner" data-companies-page-version="1-alpha">
 <main class="main-wrapper">
 	<header class="header">
   <div class="header__wrapper">
@@ -115,7 +115,7 @@
   <div class="search-result__filter-group search-result__filter-group--wide">
     <div class="search-result__filter-header">
       <h2 class="search-result__filter-headline">Filters:</h2>
-      <button id="js-criteria-reset" class="button button--light-link search-result__filter-headline-reset" style="visibility: hidden;">Reset all</button>
+      <button class="button button--light-link search-result__filter-headline-reset js-criteria-reset" style="visibility: hidden;">Reset all</button>
     </div>
 
     <div class="filters">
@@ -381,7 +381,7 @@
                       <a href="https://github.com/{%s company.GitHubProfile.Login %}" target="_blank" class="button-link card__links-link">GitHub</a>
                     </li>
                     <li class="card__links-item">
-                      <a href="https://github.com/orgs/{%s company.GitHubProfile.Login %}/repositories?q=lang:{%s organizerFeature.Organizer.GitHubAlias %}" target="_blank" class="button-link card__links-link" title="{%d fetchGitHubRepositoriesCount(company, organizerFeature.Organizer.Language) %} repositories">Repositories</a>
+                      <a href="https://github.com/orgs/{%s company.GitHubProfile.Login %}/repositories?q=lang:{%s organizerFeature.Organizer.GitHubAlias %}" target="_blank" class="button-link card__links-link" title="{%d formatGitHubRepositoryCount(company, organizerFeature.Organizer.Language) %} repositories">Repositories</a>
                     </li>
                   </ul>
                 {%- endif -%}
