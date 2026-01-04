@@ -232,14 +232,8 @@ func StreamOrganizersCompaniesV3Beta(qw422016 *qt422016.Writer,
               <div class="filters__group">
                 <header class="filters__header filters__header--with-info">
                   <h4 class="filters__headline">Company type</h4>
-                  <img
-                    class="ml-14"
-                    alt="info icon"
-                    width="14"
-                    height="14"
-                    title="info"
-                    src="/assets/images/pages/common/info.svg"
-                  />
+                  `)
+	qw422016.N().S(`
                 </header>
                 <div class="filters__elements">
                   <label class="checkbox filters__element">
@@ -259,21 +253,80 @@ func StreamOrganizersCompaniesV3Beta(qw422016 *qt422016.Writer,
               `)
 	qw422016.N().S(`
 
-              `)
+              <!-- Rating -->
+              <div class="filters__group">
+                <header class="filters__header filters__header--with-info">
+                  <h4 class="filters__headline">Rating</h4>
+                  <img
+                    class="ml-8"
+                    alt="Info icon"
+                    width="16"
+                    height="16"
+                    title="info"
+                    src="/assets/images/pages/common/glassdoor.svg"
+                  />
+                  `)
 	qw422016.N().S(`
+                </header>
+                <div class="filters__elements filters__elements--full-height">
+                  <label class="checkbox filters__element">
+                    <input class="js-criteria-glassdoor-rating-rate checkbox__input" type="checkbox" data-alias="4.5" />
+                    <span class="checkbox__element"></span>
+                    <img
+                      alt="Star icon"
+                      width="22"
+                      height="22"
+                      title="info"
+                      src="/assets/images/pages/common/star.svg"
+                    />
+                    <span class="filters__element-text filters__element-text--truncated">4.5 stars and above</span>
+                  </label>
+                  <label class="checkbox filters__element">
+                    <input class="js-criteria-glassdoor-rating-rate checkbox__input" type="checkbox" data-alias="4.0" />
+                    <span class="checkbox__element"></span>
+                    <img
+                      alt="Star icon"
+                      width="22"
+                      height="22"
+                      title="info"
+                      src="/assets/images/pages/common/star.svg"
+                    />
+                    <span class="filters__element-text filters__element-text--truncated">4 stars and above</span>
+                  </label>
+                  <label class="checkbox filters__element">
+                    <input class="js-criteria-glassdoor-rating-rate checkbox__input" type="checkbox" data-alias="3.5" />
+                    <span class="checkbox__element"></span>
+                    <img
+                      alt="Star icon"
+                      width="22"
+                      height="22"
+                      title="info"
+                      src="/assets/images/pages/common/star.svg"
+                    />
+                    <span class="filters__element-text filters__element-text--truncated">3.5 stars and above</span>
+                  </label>
+                  <label class="checkbox filters__element">
+                    <input class="js-criteria-glassdoor-rating-rate checkbox__input" type="checkbox" data-alias="3.0" />
+                    <span class="checkbox__element"></span>
+                    <img
+                      alt="Star icon"
+                      width="22"
+                      height="22"
+                      title="info"
+                      src="/assets/images/pages/common/star.svg"
+                    />
+                    <span class="filters__element-text filters__element-text--truncated">3 stars and above</span>
+                  </label>
+                </div>
+              </div>
+              <!-- /Rating -->
 
               <!-- Industry -->
               <div class="filters__group">
                 <header class="filters__header filters__header--with-info">
                   <h4 class="filters__headline">Industry</h4>
-                  <img
-                    class="ml-14"
-                    alt="info icon"
-                    width="14"
-                    height="14"
-                    title="info"
-                    src="/assets/images/pages/common/info.svg"
-                  />
+                  `)
+	qw422016.N().S(`
                 </header>
                 <div class="filters__elements">
                   <div class="filters__elements-inner">
@@ -307,14 +360,8 @@ func StreamOrganizersCompaniesV3Beta(qw422016 *qt422016.Writer,
               <div class="filters__group">
                 <header class="filters__header filters__header--with-info">
                   <h4 class="filters__headline">Other</h4>
-                  <img
-                    class="ml-14"
-                    alt="info icon"
-                    width="14"
-                    height="14"
-                    title="info"
-                    src="/assets/images/pages/common/info.svg"
-                  />
+                  `)
+	qw422016.N().S(`
                 </header>
                 <div class="filters__elements">
                   <label class="checkbox filters__element">
