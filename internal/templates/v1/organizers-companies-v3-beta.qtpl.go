@@ -291,7 +291,7 @@ func StreamOrganizersCompaniesV3Beta(qw422016 *qt422016.Writer,
                       title="info"
                       src="/assets/images/pages/common/star.svg"
                     />
-                    <span class="filters__element-text filters__element-text--truncated">4 stars and above</span>
+                    <span class="filters__element-text filters__element-text--truncated">4.0 stars and above</span>
                   </label>
                   <label class="checkbox filters__element">
                     <input class="js-criteria-glassdoor-rating-rate checkbox__input" type="checkbox" data-alias="3.5" />
@@ -315,7 +315,7 @@ func StreamOrganizersCompaniesV3Beta(qw422016 *qt422016.Writer,
                       title="info"
                       src="/assets/images/pages/common/star.svg"
                     />
-                    <span class="filters__element-text filters__element-text--truncated">3 stars and above</span>
+                    <span class="filters__element-text filters__element-text--truncated">3.0 stars and above</span>
                   </label>
                 </div>
               </div>
