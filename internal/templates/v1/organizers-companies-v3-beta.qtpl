@@ -133,11 +133,11 @@
         />
         <span id="js-mobile-selected-criteria-count" class="mobile-filter__counter" style="visibility: hidden;">0</span>
       </button>
-      {% comment %}
-      <!-- TODO sorter -->
-      <div class="sorter sorter--desktop js-sorter">
-        <button type="button" class="sorter__title js-sorter-toggle">
-          <span class="sorter__title-text js-sorter-title-text">Newest first</span>
+
+      <div class="sorter sorter--desktop">
+        <button type="button" class="sorter__title">
+          <span class="sorter__title-text">By latest job posting</span>
+          {% comment %}
           <span class="sorter__icon-wrapper">
             <img
               alt="caret-down icon"
@@ -146,7 +146,10 @@
               src="/assets/images/pages/organizer/caret-down.svg"
             />
           </span>
+          {% endcomment %}
         </button>
+        {% comment %}
+        <!-- TODO sorter -->
         <ul class="sorter__list js-sorter-list">
           <li class="sorter__item is-selected js-sorter-item">Newest first</li>
           <li class="sorter__item js-sorter-item">Oldest first</li>
@@ -156,8 +159,8 @@
           <li class="sorter__item js-sorter-item">By Market Cap</li>
           <li class="sorter__item js-sorter-item">By latest job posting</li>
         </ul>
+        {% endcomment %}
       </div>
-      {% endcomment %}
     </div>
   </section>
 

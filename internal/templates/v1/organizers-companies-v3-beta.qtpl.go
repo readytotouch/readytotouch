@@ -203,8 +203,16 @@ func StreamOrganizersCompaniesV3Beta(qw422016 *qt422016.Writer,
         />
         <span id="js-mobile-selected-criteria-count" class="mobile-filter__counter" style="visibility: hidden;">0</span>
       </button>
-      `)
+
+      <div class="sorter sorter--desktop">
+        <button type="button" class="sorter__title">
+          <span class="sorter__title-text">By latest job posting</span>
+          `)
 	qw422016.N().S(`
+        </button>
+        `)
+	qw422016.N().S(`
+      </div>
     </div>
   </section>
 

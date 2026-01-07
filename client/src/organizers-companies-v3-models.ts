@@ -21,6 +21,7 @@ export class CompanyResponse {
         public readonly glassdoor_profile: GlassdoorProfileResponse,
         public readonly short_description: string,
         public readonly industries: Industry[],
+        public readonly cloud_providers: CloudProvider[],
         public readonly has_employees_from_countries: Country[],
         public readonly rust_foundation_member: boolean,
         public readonly pinned_until: string | null,
