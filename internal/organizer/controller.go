@@ -1247,6 +1247,8 @@ func (c *Controller) parseFeatureFromReferer(ctx *gin.Context) (dbs.FeatureWait,
 }
 
 func (c *Controller) organizerFeature(path string) (domain.OrganizerFeature, bool) {
+	path = strings.TrimSuffix(path, "/alpha")
+	path = strings.TrimSuffix(path, "/beta")
 	path = strings.TrimSuffix(path, "/v1")
 	path = strings.TrimSuffix(path, "/v2")
 	path = strings.TrimSuffix(path, "/v3")
