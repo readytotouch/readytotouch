@@ -1,6 +1,8 @@
 import {CompanyResponse, Industry} from "./organizers-companies-v3-models";
+import {findOrganizer, parseCurrentOrganizerAlias} from "./organizer";
+import {UkraineUniversities, CzechiaUniversities} from "./universities";
 
-const organizerGitHubAlias = "go";
+const currentOrganizer = findOrganizer(parseCurrentOrganizerAlias(window.location.pathname));
 
 export function renderCompany(company: CompanyResponse): string {
     const companyURL = `/golang/companies/${company.linkedin_profile.alias}`;
@@ -271,7 +273,7 @@ function renderLinkedIn(company: CompanyResponse): string {
         <p class="card__links-item-text">Connections (employees):</p>
         <ul class="card__links-group-inner">
             <li class="card__links-item">
-                <a href="javascript:void(0);" target="_blank" class="button-link card__links-link">Global</a>
+                <a href="${linkedinConnectionsURL(company, "")}" target="_blank" class="button-link card__links-link">Global</a>
                 <img
                     class="card__links-icon"
                     alt="language icon"
@@ -281,35 +283,35 @@ function renderLinkedIn(company: CompanyResponse): string {
                 />
             </li>
             <li class="card__links-item">
-                <a href="javascript:void(0);" target="_blank" class="button-link card__links-link">UA</a>
+                <a href="${linkedinConnectionsURL(company, UkraineUniversities)}" target="_blank" class="button-link card__links-link">UA</a>
                 <img
                     class="card__links-icon"
-                    alt="language icon"
+                    alt="Ukraine flag icon"
                     width="20"
                     height="20"
                     src="/assets/images/pages/common/flags/4x3/ua.svg"
                 />
             </li>
             <li class="card__links-item">
-                <a href="javascript:void(0);" target="_blank" class="button-link card__links-link">CZ</a>
+                <a href="${linkedinConnectionsURL(company, CzechiaUniversities)}" target="_blank" class="button-link card__links-link">CZ</a>
                 <img
                     class="card__links-icon"
-                    alt="language icon"
+                    alt="Czechia flag icon"
                     width="20"
                     height="20"
                     src="/assets/images/pages/common/flags/4x3/cz.svg"
                 />
             </li>
             <li class="card__links-item">
-                <a href="javascript:void(0);" target="_blank" class="button-link card__links-link">Former (All)</a>
+                <a href="${linkedinConnectionsFormerEmployeesURL(company)}" target="_blank" class="button-link card__links-link">Former (All)</a>
             </li>
         </ul>
     </li>
     <li class="card__links-item">
-        <a href="javascript:void(0);" target="_blank" class="button-link card__links-link">Employees' posts</a>
+        <a href="${linkedinEmployeesPostsURL(company, currentOrganizer.title)}" target="_blank" class="button-link card__links-link">Employees' posts</a>
     </li>
     <li class="card__links-item">
-        <a href="javascript:void(0);" target="_blank" class="button-link card__links-link">Jobs</a>
+        <a href="${linkedinJobsURL(company, currentOrganizer.language_title_keywords)}" target="_blank" class="button-link card__links-link">Jobs</a>
     </li>
 </ul>`;
 }
@@ -353,7 +355,7 @@ function renderGitHub(company: CompanyResponse): string {
         <a href="${githubProfileURL}" target="_blank" class="button-link card__links-link">Overview</a>
     </li>
     <li class="card__links-item">
-        <a href="https://github.com/orgs/${company.github_profile.login}/repositories?q=lang:${organizerGitHubAlias}" target="_blank" class="button-link card__links-link">Repositories (${company.github_repository_count})</a>
+        <a href="https://github.com/orgs/${company.github_profile.login}/repositories?q=lang:${currentOrganizer.github_alias}" target="_blank" class="button-link card__links-link">Repositories (${company.github_repository_count})</a>
     </li>
     <li class="card__links-item">
         <a href="https://github.com/orgs/${company.github_profile.login}/followers" target="_blank" class="button-link card__links-link">Followers (${formatGitHubFollowers(company)})</a>
@@ -483,9 +485,9 @@ function renderGlassdoorVerified(company: CompanyResponse): string {
 }
 
 function formatGlassdoorReviewsRate(rate: string): string {
-   if (rate === "") {
-       return "?.?";
-   }
+    if (rate === "") {
+        return "?.?";
+    }
 
     return rate
 }
@@ -504,4 +506,70 @@ function googleSearchGlassdoor(companyName: string): string {
     });
 
     return `https://www.google.com/search?${params.toString()}`;
+}
+
+function linkedinConnectionsURL(company: CompanyResponse, universities: string): string {
+    const params = new URLSearchParams({
+        "currentCompany": JSON.stringify(toLinkedInIds(company)),
+        "network": `["F","S"]`,
+        "keywords": `"Developer" OR "Engineer" OR "DevOps"`,
+    });
+
+    if (universities) {
+        params.set("schoolFilter", universities);
+    }
+
+    return `https://www.linkedin.com/search/results/people/?${params.toString()}`;
+}
+
+function linkedinConnectionsFormerEmployeesURL(company: CompanyResponse): string {
+    const params = new URLSearchParams({
+        "pastCompany": JSON.stringify(toLinkedInIds(company)),
+        "network": `["F","S"]`,
+        "keywords": `"Developer" OR "Engineer" OR "DevOps"`,
+    });
+
+    return `https://www.linkedin.com/search/results/people/?${params.toString()}`;
+}
+
+function linkedinEmployeesPostsURL(company: CompanyResponse, languageTitle: string): string {
+    const params = new URLSearchParams({
+        "authorCompany": JSON.stringify(toLinkedInIds(company)),
+        "datePosted": `"past-month"`,
+        "sortBy": `"date_posted"`,
+        "keywords": `"Hiring" OR "${languageTitle}"`,
+    });
+
+    return `https://www.linkedin.com/search/results/content/?${params.toString()}`;
+}
+
+function linkedinJobsURL(company: CompanyResponse, keywords: string): string {
+    const params = new URLSearchParams({
+        "keywords": keywords,
+        "location": "Worldwide",
+        "geoId": "92000000",    // Worldwide
+        "sortBy": "DD",         // order by "Most recent
+        "f_TPR": "r2592000",    // filter "Past month"
+        "f_C": toLinkedInIds(company).join(","),
+        // Remote
+        // f_WT => 2
+    });
+
+    return `https://www.linkedin.com/jobs/search/?${params.toString()}`;
+}
+
+function toLinkedInIds(company: CompanyResponse): Array<string> {
+    const result: Array<string> = [];
+
+    if (company.linkedin_profile.id) {
+        result.push(company.linkedin_profile.id.toString());
+    }
+
+    if (company.linkedin_profile.ids) {
+        for (const id of company.linkedin_profile.ids) {
+            result.push(id.toString());
+        }
+    }
+
+    return result;
 }

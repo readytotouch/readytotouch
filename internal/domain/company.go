@@ -289,7 +289,6 @@ type CompanyProfile struct {
 	GoogleFinanceURL          string // Market cap, etc.
 	YCombinatorURL            string // YC profile
 	Industries                []Industry
-	CloudProviders            []CloudProvider
 	HasEmployeesFromCountries []Country
 	RustFoundationMember      bool // https://foundation.rust-lang.org/members/
 	Ignore                    bool

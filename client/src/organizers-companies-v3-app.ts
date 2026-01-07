@@ -27,7 +27,7 @@ import {responsiveFilterWidget} from "./responsive-filter-widget";
 import {responsiveCompanyShowMoreWidget} from "./responsive-company-show-more-widget";
 import {addCompanyFavoriteEvent} from "./organizers-companies-favorite";
 
-import {parseCurrentProgrammingLanguage} from "./pl";
+import {parseCurrentOrganizerAlias} from "./organizer";
 import {organizersWelcome} from "./welcome";
 import {CompanyResponse} from "./organizers-companies-v3-models";
 import {renderCompany} from "./organizers-companies-v3-render-company";
@@ -36,7 +36,7 @@ import Pagination from "./framework/pagination";
 
 const LIMIT = 10;
 
-const currentProgrammingLanguage = parseCurrentProgrammingLanguage(window.location.pathname);
+const currentOrganizerAlias = parseCurrentOrganizerAlias(window.location.pathname);
 
 let sourceCompanies: Array<CompanyResponse> = [];
 let currentStateCompanies: Array<CompanyResponse> = [];
@@ -508,7 +508,7 @@ function search(replaceHTML: boolean, resetPager: boolean) {
 }
 
 function fetchCompanies(callback: (companies: Array<CompanyResponse>) => void) {
-    fetch(`/api/v1/unsafe/${currentProgrammingLanguage}/companies.json`, {
+    fetch(`/api/v1/unsafe/${currentOrganizerAlias}/companies.json`, {
         method: "GET",
     }).then(function (response) {
         // Unauthorized

@@ -1,9 +1,9 @@
-import {parseCurrentProgrammingLanguage} from "./pl";
+import {parseCurrentOrganizerAlias} from "./organizer";
 
 export function organizersWelcome() {
     const pathname = window.location.pathname;
 
-    return `/${parseCurrentProgrammingLanguage(pathname)}/welcome?redirect=${encodeURIComponent(pathname)}`;
+    return `/${parseCurrentOrganizerAlias(pathname)}/welcome?redirect=${encodeURIComponent(pathname)}`;
 }
 
 export function welcome(companyUrl: string = "") {

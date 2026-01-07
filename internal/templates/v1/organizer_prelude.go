@@ -236,12 +236,8 @@ func linkedinEmployeesPostsURL(companies []Company, languageTitle string) string
 	values := url.Values{
 		"authorCompany": {string(companyQueryParam)},
 		"datePosted":    {`"past-month"`},
-		"sortBy":        {"RELEVANT", `"date_posted"`},
+		"sortBy":        {`"date_posted"`},
 		"keywords":      {`"Hiring" OR ` + `"` + languageTitle + `"`}, // "Hiring" OR "Golang"
-	}
-
-	if len(companies) > 0 {
-		values["f_C"] = []string{strings.Join(companiesToLinkedInIDs(companies), ",")}
 	}
 
 	return "https://www.linkedin.com/search/results/content/?" + values.Encode()

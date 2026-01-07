@@ -1111,7 +1111,6 @@ func (c *Controller) UnsafeCompaniesV3(ctx *gin.Context) {
 			},
 			ShortDescription:          company.ShortDescription,
 			Industries:                company.Industries,
-			CloudProviders:            company.CloudProviders,
 			HasEmployeesFromCountries: company.HasEmployeesFromCountries,
 			RustFoundationMember:      company.RustFoundationMember,
 			PinnedUntil:               utils.TimePointerOrNil(company.PinnedUntil),
