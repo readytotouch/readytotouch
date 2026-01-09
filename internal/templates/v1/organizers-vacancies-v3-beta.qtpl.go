@@ -3,8 +3,6 @@
 
 package v1
 
-import "strconv"
-
 import (
 	qtio422016 "io"
 
@@ -387,231 +385,29 @@ func StreamOrganizersVacanciesV3Beta(qw422016 *qt422016.Writer,
 
           <div class="search-result__list">
             <div class="search-result__top-actions">
-              <p class="search-result-found"><span id="js-result-count" class="search-result-found__amount">`)
-	qw422016.N().D(len(vacancies))
-	qw422016.N().S(`</span> results</p>
+              <p class="search-result-found"><span id="js-result-count" class="search-result-found__amount"></span> results</p>
               `)
 	qw422016.N().S(`
             </div>
 
             <!-- card list -->
-            <div class="search-result__cards row-gap-8 mt-24">
-              `)
-	for _, vacancy := range latestVacancies(vacancies) {
-		qw422016.N().S(`
-                <div
-                  class="js-vacancy card"
-                  data-vacancy-id="`)
-		qw422016.N().DL(vacancy.ID)
-		qw422016.N().S(`"
-                  data-vacancy-title="`)
-		qw422016.E().S(vacancy.Title)
-		qw422016.N().S(`"
-                  data-vacancy-remote="`)
-		qw422016.E().S(strconv.FormatBool(vacancy.Remote))
-		qw422016.N().S(`"
-                  data-company-name="`)
-		qw422016.E().S(vacancy.Company.Name)
-		qw422016.N().S(`"
-                  data-company-type="`)
-		qw422016.E().S(string(vacancy.Company.Type))
-		qw422016.N().S(`"
-                  data-company-industries="`)
-		qw422016.E().S(aliases(vacancy.Company.Industries))
-		qw422016.N().S(`"
-                  data-company-has-employees-from-countries="`)
-		qw422016.E().S(aliases(vacancy.Company.HasEmployeesFromCountries))
-		qw422016.N().S(`"
-                  data-company-rust-foundation-members="`)
-		qw422016.E().S(strconv.FormatBool(vacancy.Company.RustFoundationMember))
-		qw422016.N().S(`"
-                >
-                  <div class="card__vacancy">
-					<aside class="card__action">
-                      `)
-		if userVacancyFavoriteMap[vacancy.ID] {
-			qw422016.N().S(`
-                        <button class="js-vacancy-favorite favorite card__action-button button-group__item in-favorite" title="Remove from favorites">
-                          <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" class="favorite__icon" viewBox="0 0 28 28">
-                            <path
-                              d="m14.5 22.1-.5-.3-.5.3-6.8 4.2c-.5.3-1.1-.1-.9-.7L7.5 18l.1-.6-.4-.4-5.9-5.2c-.3-.3-.3-.6-.2-.8.1-.2.3-.4.5-.4l7.9-.7.6-.1.2-.6 2.9-7.4c.2-.5 1-.5 1.2 0l3.1 7.3.2.5.6.1 7.9.7c.2 0 .4.2.5.5.1.3 0 .6-.2.7l-5.9 5.2-.4.4.1.6 1.8 7.7c.1.3 0 .5-.2.6-.2.1-.5.2-.8 0l-6.6-4z"
-                            />
-                          </svg>
-                        </button>
-                      `)
-		} else {
-			qw422016.N().S(`
-                        <button class="js-vacancy-favorite favorite card__action-button button-group__item" title="Add to favorite">
-                          <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" class="favorite__icon" viewBox="0 0 28 28">
-                            <path
-                              d="m14.5 22.1-.5-.3-.5.3-6.8 4.2c-.5.3-1.1-.1-.9-.7L7.5 18l.1-.6-.4-.4-5.9-5.2c-.3-.3-.3-.6-.2-.8.1-.2.3-.4.5-.4l7.9-.7.6-.1.2-.6 2.9-7.4c.2-.5 1-.5 1.2 0l3.1 7.3.2.5.6.1 7.9.7c.2 0 .4.2.5.5.1.3 0 .6-.2.7l-5.9 5.2-.4.4.1.6 1.8 7.7c.1.3 0 .5-.2.6-.2.1-.5.2-.8 0l-6.6-4z"
-                            />
-                          </svg>
-                        </button>
-                      `)
-		}
-		qw422016.N().S(`
-
-                      <button title="Hide vacancy" class="button-group__item button-group__item-sloth card__action-button-sloth"></button>
-					</aside>
-                    <figure class="card__header card__header--organizer">
-                      <div class="card__logo-overlay">
-                        `)
-		if vacancy.Company.Logo.V2 != "" {
-			qw422016.N().S(`
-                        <img
-                          class="card__logo"
-                          alt="`)
-			qw422016.E().S(vacancy.Company.Name)
-			qw422016.N().S(` logo"
-                          src="`)
-			qw422016.E().S(logo72x72(vacancy.Company.Logo))
-			qw422016.N().S(`"
-                        />
-                        `)
-		}
-		qw422016.N().S(`
-                      </div>
-                      <figcaption class="card__header-caption">
-                        <a href="/v/`)
-		qw422016.N().DL(vacancy.ID)
-		qw422016.N().S(`" target="_blank" class="card__headline">`)
-		qw422016.E().S(vacancy.Title)
-		qw422016.N().S(`</a>
-                        <a href="/`)
-		qw422016.E().S(organizerFeature.Organizer.Alias)
-		qw422016.N().S(`/companies/`)
-		qw422016.E().S(vacancy.Company.Alias)
-		qw422016.N().S(`" target="_blank" class="card__sub-headline">`)
-		qw422016.E().S(vacancy.Company.Name)
-		qw422016.N().S(`</a>
-                        `)
-		if showLocation(vacancy.Location) {
-			qw422016.N().S(`
-                        <p class="card__header-caption-text">
-                          <img
-                            class="card__header-caption-icon"
-                            alt="marker"
-                            width="12"
-                            height="12"
-                            src="/assets/images/pages/organizer/marker.svg"
-                          />`)
-			qw422016.E().S(vacancy.Location)
-			qw422016.N().S(`&nbsp;`)
-			if vacancy.Remote {
-				qw422016.N().S(`(Remote)`)
-			}
-			qw422016.N().S(`
-                        </p>
-                        `)
-		}
-		qw422016.N().S(`
-                        `)
-		qw422016.N().S(`
-                      </figcaption>
-                    </figure>
-                    <p class="js-vacancy-short-description card__text card__text--organizer">`)
-		qw422016.E().S(vacancyDescription(vacancy))
-		qw422016.N().S(`</p>
-                    <div class="card__footer">
-                      <div class="card__details">
-                        <figure class="card__figure" title="`)
-		qw422016.E().S(formatVacancyDate(vacancy.Date))
-		qw422016.N().S(`">
-                          <img
-                            class="card__icon"
-                            alt="calendar icon"
-                            width="16"
-                            height="16"
-                            src="/assets/images/pages/online/calendar.svg"
-                          />
-                          <figcaption class="card__figcaption">`)
-		qw422016.E().S(formatVacancyDiffDate(vacancy.Date))
-		qw422016.N().S(`</figcaption>
-                        </figure>
-                        <figure class="card__figure" title="Monthly views: `)
-		qw422016.N().DL(vacancyMonthlyViewsMap[vacancy.ID])
-		qw422016.N().S(`">
-                          <img
-                            class="card__icon"
-                            alt="eye icon"
-                            width="16"
-                            height="16"
-                            src="/assets/images/pages/common/eye.svg"
-                          />
-                          <figcaption class="card__figcaption">Monthly views: `)
-		qw422016.N().DL(vacancyMonthlyViewsMap[vacancy.ID])
-		qw422016.N().S(`</figcaption>
-                        </figure>
-                      </div>
-                      <a href="/v/`)
-		qw422016.N().DL(vacancy.ID)
-		qw422016.N().S(`" target="_blank" class="button button--bordered-gray button--gap-images card__footer-button">
-                        `)
-		if isLinkedInVacancyURL(vacancy.URL) {
-			qw422016.N().S(`
-                          <img
-                            width="20"
-                            height="20"
-                            src="/assets/images/pages/organizer/linkedin.svg"
-                            alt="LinkedIn logo"
-                            class="hero__button-icon"
-                          />
-                        `)
-		} else if isOttaVacancyURL(vacancy.URL) {
-			qw422016.N().S(`
-                          <img
-                            width="20"
-                            height="20"
-                            src="/assets/images/pages/organizer/otta.svg"
-                            alt="Otta logo"
-                            class="hero__button-icon"
-                          />
-                        `)
-		} else if isIndeedVacancyURL(vacancy.URL) {
-			qw422016.N().S(`
-                          <img
-                            width="20"
-                            height="20"
-                            src="/assets/images/pages/organizer/indeed.png"
-                            alt="Indeed logo"
-                            class="hero__button-icon"
-                          />
-                        `)
-		} else if isXingVacancyURL(vacancy.URL) {
-			qw422016.N().S(`
-                          <img
-                            width="20"
-                            height="20"
-                            src="/assets/images/pages/organizer/xing.svg"
-                            alt="XING logo"
-                            class="hero__button-icon"
-                          />
-                        `)
-		}
-		qw422016.N().S(`
-                        View source
-                        <img
-                          width="18"
-                          height="18"
-                          src="/assets/images/pages/common/external-link.svg"
-                          alt="arrow black icon"
-                          class="hero__button-icon"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              `)
-	}
-	qw422016.N().S(`
-
-              <!-- TODO -->
-            </div>
+            <div id="js-vacancies-container" class="search-result__cards row-gap-8 mt-24"></div>
             <!-- /card list -->
 
-            `)
-	qw422016.N().S(`
+            <!-- search footer -->
+            <footer class="search-result__footer">
+              <div class="search-result__footer-action-list">
+                <button id="js-pagination-show-more-button" class="button button--bordered-black-transparent d-none" type="button">Show more</button>
+                <button id="js-pagination-show-all-button" class="button button--bordered-gray d-none" type="button">Show all (+0)</button>
+              </div>
+
+              <!-- pagination -->
+              <nav id="js-pagination-pages" class="pagination search-result__pagination"></nav>
+              <!-- /pagination -->
+
+            </footer>
+            <!-- /search footer -->
+
           </div>
         </div>
       </div>
