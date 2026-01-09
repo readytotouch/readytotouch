@@ -1169,7 +1169,7 @@ func (c *Controller) UnsafeVacanciesV3(ctx *gin.Context) {
 		return
 	}
 
-	companies := c.companies(organizer.Language)
+	sourceCompanies := c.companies(organizer.Language)
 
 	userVacancyFavoriteMap, err := c.userFavoriteVacancyRepository.GetMap(ctx, authUserID, nil)
 	if err != nil {
@@ -1178,21 +1178,87 @@ func (c *Controller) UnsafeVacanciesV3(ctx *gin.Context) {
 		// NOP, continue
 	}
 
-	result := make([]domain.VacancyResponse, 0, 4096)
-	for _, company := range companies {
+	var (
+		companies  = make([]*domain.VacancyCompanyResponse, 0, len(sourceCompanies))
+		vacancies  = make([]*domain.VacancyResponse, 0, 4096)
+		vacancyIDs = make([]int64, 0, 4096)
+	)
+
+	for _, company := range sourceCompanies {
+		var (
+			addCompany = false
+		)
+
 		for _, vacancy := range company.Languages[organizer.Language].Vacancies {
 			id, ok := organizers.VacancyUrlMap[vacancy.URL]
 			if ok {
-				result = append(result, domain.VacancyResponse{
-					ID:       id,
+				vacancies = append(vacancies, &domain.VacancyResponse{
+					ID:           id,
+					Title:        vacancy.Title,
+					Location:     vacancy.Location,
+					Source:       utils.DetectVacancySource(vacancy.URL),
+					CloudProviders: company.CloudProviders,
+					Remote:       vacancy.Remote,
+					Date:         vacancy.Date,
+					PinnedUntil:  nil,
+					MonthlyViews: 0,
+					Company: domain.CompanyReferenceResponse{
+						ID: company.ID,
+					},
 					Favorite: userVacancyFavoriteMap[id],
 				})
+
+				vacancyIDs = append(vacancyIDs, id)
+
+				addCompany = true
 			}
+		}
+
+		if addCompany {
+			companies = append(companies, &domain.VacancyCompanyResponse{
+				ID:   company.ID,
+				Type: company.Type,
+				Logo: domain.CompanyLogoResponse{
+					MainSize: company.Logo.V2,
+				},
+				Name: company.Name,
+				LinkedInProfile: domain.VacancyCompanyLinkedInProfileResponse{
+					Alias:     company.LinkedInProfile.Alias,
+					Employees: company.LinkedInProfile.Employees,
+				},
+				GlassdoorProfile: domain.VacancyCompanyGlassdoorProfileResponse{
+					ReviewsRate: company.GlassdoorProfile.ReviewsRate,
+				},
+				Industries:                company.Industries,
+				HasEmployeesFromCountries: company.HasEmployeesFromCountries,
+				RustFoundationMember:      company.RustFoundationMember,
+			})
 		}
 	}
 
+	month := time.Now().UTC().Truncate(time.Hour*24).AddDate(0, -1, 0)
+	vacancyMonthlyViewsMap, err := c.vacancyViewStatsRepository.Stats(ctx, vacancyIDs, month)
+	if err != nil {
+		// @TODO logging
+
+		// NOP, continue
+	}
+
+	for _, vacancy := range vacancies {
+		vacancy.MonthlyViews = vacancyMonthlyViewsMap[vacancy.ID]
+	}
+
+	sort.Slice(companies, func(i, j int) bool {
+		return companies[i].ID < companies[j].ID
+	})
+
+	sort.Slice(vacancies, func(i, j int) bool {
+		return vacancies[i].Date.After(vacancies[j].Date)
+	})
+
 	ctx.JSON(http.StatusOK, &domain.VacanciesResponse{
-		Vacancies: result,
+		Companies: companies,
+		Vacancies: vacancies,
 	})
 }
 

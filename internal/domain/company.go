@@ -165,14 +165,48 @@ type CompanyResponse struct {
 	Favorite                  bool                     `json:"favorite"`
 }
 
+type VacancyCompanyLinkedInProfileResponse struct {
+	Alias     string `json:"alias"` // vanity name
+	Employees string `json:"employees"`
+}
+
+type VacancyCompanyGlassdoorProfileResponse struct {
+	ReviewsRate string `json:"reviews_rate"`
+}
+
+type VacancyCompanyResponse struct {
+	ID                        int64                                  `json:"id"`
+	Type                      CompanyType                            `json:"type"`
+	Logo                      CompanyLogoResponse                    `json:"logo"`
+	Name                      string                                 `json:"name"`
+	LinkedInProfile           VacancyCompanyLinkedInProfileResponse  `json:"linkedin_profile"`
+	GlassdoorProfile          VacancyCompanyGlassdoorProfileResponse `json:"glassdoor_profile"`
+	Industries                []Industry                             `json:"industries"`
+	HasEmployeesFromCountries []Country                              `json:"has_employees_from_countries"`
+	RustFoundationMember      bool                                   `json:"rust_foundation_member"`
+}
+
 type UnsafeVacancyResponse struct {
 	URL  string    `json:"url"`
 	Date time.Time `json:"date"`
 }
 
+type CompanyReferenceResponse struct {
+	ID int64 `json:"id"`
+}
+
 type VacancyResponse struct {
-	ID       int64 `json:"id"`
-	Favorite bool  `json:"favorite"`
+	ID             int64                    `json:"id"`
+	Title          string                   `json:"title"`
+	Location       string                   `json:"location"`
+	Source         VacancySource            `json:"source"`
+	CloudProviders []CloudProvider          `json:"cloud_providers"`
+	Remote         bool                     `json:"remote"`
+	Date           time.Time                `json:"date"`
+	PinnedUntil    *time.Time               `json:"pinned_until"`
+	MonthlyViews   int64                    `json:"monthly_views"`
+	Company        CompanyReferenceResponse `json:"company"`
+	Favorite       bool                     `json:"favorite"`
 }
 
 type GitHubProfile struct {
@@ -312,5 +346,6 @@ type CompaniesResponse struct {
 }
 
 type VacanciesResponse struct {
-	Vacancies []VacancyResponse `json:"vacancies"`
+	Companies []*VacancyCompanyResponse `json:"companies"`
+	Vacancies []*VacancyResponse        `json:"vacancies"`
 }

@@ -5,6 +5,7 @@ import (
 	"strings"
 	"time"
 
+	"github.com/readytotouch/readytotouch/internal/utils"
 	"github.com/readytotouch/readytotouch/internal/domain"
 )
 
@@ -233,20 +234,19 @@ func formatVacancyDiffDate(t time.Time) string {
 }
 
 func isLinkedInVacancyURL(s string) bool {
-	return strings.Contains(s, "https://www.linkedin.com/jobs/view/")
+	return utils.IsLinkedInVacancyURL(s)
 }
 
 func isOttaVacancyURL(s string) bool {
-	return strings.Contains(s, "https://app.welcometothejungle.com/jobs/") ||
-		strings.Contains(s, "https://app.otta.com/jobs/")
+	return utils.IsOttaVacancyURL(s)
 }
 
 func isIndeedVacancyURL(s string) bool {
-	return strings.Contains(s, "https://www.indeed.com/viewjob")
+	return utils.IsIndeedVacancyURL(s)
 }
 
 func isXingVacancyURL(s string) bool {
-	return strings.Contains(s, "https://www.xing.com/jobs/")
+	return utils.IsXingVacancyURL(s)
 }
 
 func logo(l domain.CompanyLogo) string {
