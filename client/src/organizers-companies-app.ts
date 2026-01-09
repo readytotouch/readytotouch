@@ -26,7 +26,15 @@ import {addCompanyFavoriteEvent} from "./organizers-companies-favorite";
 const $companies = document.querySelectorAll(".js-company");
 const $resultCount = document.getElementById("js-result-count");
 
-$companies.forEach(addCompanyFavoriteEvent);
+$companies.forEach(function ($company) {
+    addCompanyFavoriteEvent(
+        $company as HTMLElement,
+        {
+            id: parseInt($company.getAttribute("data-company-id")),
+            favorite: $company.querySelector(".js-company-favorite").classList.contains("in-favorite"),
+        } as any,
+    );
+});
 
 const $form = document.getElementById("js-company-search-form");
 const $search = document.getElementById("js-company-query") as HTMLInputElement;
