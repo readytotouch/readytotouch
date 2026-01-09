@@ -24,7 +24,7 @@ import {setStateByURLMapper} from "./framework/set_state_by_url";
 import {responsiveHeaderProfileWidget} from "./responsive-header-profile-widget";
 import {githubStarsWidget} from "./github-stars-widget";
 import {responsiveFilterWidget} from "./responsive-filter-widget";
-import {responsiveCompanyShowMoreWidget} from "./responsive-company-show-more-widget";
+import {addCompanyShowMoreEvent} from "./responsive-company-show-more-widget";
 import {addCompanyFavoriteEvent} from "./organizers-companies-favorite";
 
 import {parseCurrentOrganizerAlias} from "./organizer";
@@ -533,6 +533,7 @@ function renderCompanies(companies: Array<CompanyResponse>, clear: boolean = tru
         const $company = htmlToNode(renderCompany(company));
 
         addCompanyFavoriteEvent($company, company);
+        addCompanyShowMoreEvent($company)
 
         $companies[i] = $company;
     }
@@ -560,7 +561,5 @@ renderSelectedCriteriaByURL();
 responsiveHeaderProfileWidget();
 
 responsiveFilterWidget();
-
-responsiveCompanyShowMoreWidget();
 
 githubStarsWidget();
