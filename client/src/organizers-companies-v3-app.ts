@@ -46,7 +46,6 @@ const $pagination = document.getElementById("js-pagination-pages");
 const $resultCount = document.getElementById("js-result-count");
 const $paginationShowMoreButton = document.getElementById("js-pagination-show-more-button") as HTMLButtonElement;
 const $paginationShowAllButton = document.getElementById("js-pagination-show-all-button") as HTMLButtonElement;
-const $paginationShowAllCount = document.getElementById("js-pagination-show-all-count") as HTMLElement;
 
 const $form = document.getElementById("js-company-search-form");
 const $search = document.getElementById("js-company-query") as HTMLInputElement;
@@ -280,7 +279,7 @@ function updateMoreButtonsVisibility() {
         return;
     }
 
-    $paginationShowAllCount.innerHTML = moreCount.toString();
+    $paginationShowAllButton.innerHTML = `Show All (+${moreCount})`;
 }
 
 function setPage(page: number) {

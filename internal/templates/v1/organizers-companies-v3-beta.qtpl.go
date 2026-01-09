@@ -487,7 +487,7 @@ func StreamOrganizersCompaniesV3Beta(qw422016 *qt422016.Writer,
             <footer class="search-result__footer">
               <div class="search-result__footer-action-list">
                 <button id="js-pagination-show-more-button" class="button button--bordered-black-transparent d-none" type="button">Show more</button>
-                <button id="js-pagination-show-all-button" class="button button--bordered-gray d-none" type="button">Show all (+<span id="js-pagination-show-all-count">0</span>)</button>
+                <button id="js-pagination-show-all-button" class="button button--bordered-gray d-none" type="button">Show all (+0)</button>
               </div>
 
               <!-- pagination -->
