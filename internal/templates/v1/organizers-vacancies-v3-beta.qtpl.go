@@ -72,7 +72,7 @@ func StreamOrganizersVacanciesV3Beta(qw422016 *qt422016.Writer,
 	qw422016.N().S(` jobs in companies using `)
 	qw422016.E().S(organizerFeature.Organizer.Alias)
 	qw422016.N().S(` in production. Remote and onsite opportunities for developers.",
-      "url": "https://readytotouch.com/organizers/`)
+      "url": "https://readytotouch.com/`)
 	qw422016.E().S(organizerFeature.Organizer.Alias)
 	qw422016.N().S(`/jobs"
     }
@@ -230,14 +230,8 @@ func StreamOrganizersVacanciesV3Beta(qw422016 *qt422016.Writer,
               <div class="filters__group">
                 <header class="filters__header filters__header--with-info">
                   <h4 class="filters__headline">Company type</h4>
-                  <img
-                    class="ml-14"
-                    alt="info icon"
-                    width="14"
-                    height="14"
-                    title="info"
-                    src="/assets/images/pages/common/info.svg"
-                  />
+                  `)
+	qw422016.N().S(`
                 </header>
                 <div class="filters__elements">
                   <label class="checkbox filters__element">
@@ -254,24 +248,12 @@ func StreamOrganizersVacanciesV3Beta(qw422016 *qt422016.Writer,
               </div>
               <!-- /Company type -->
 
-              `)
-	qw422016.N().S(`
-
-              `)
-	qw422016.N().S(`
-
               <!-- Industry -->
               <div class="filters__group">
                 <header class="filters__header filters__header--with-info">
                   <h4 class="filters__headline">Industry</h4>
-                  <img
-                    class="ml-14"
-                    alt="info icon"
-                    width="14"
-                    height="14"
-                    title="info"
-                    src="/assets/images/pages/common/info.svg"
-                  />
+                  `)
+	qw422016.N().S(`
                 </header>
                 <div class="filters__elements">
                   <div class="filters__elements-inner">
@@ -295,6 +277,118 @@ func StreamOrganizersVacanciesV3Beta(qw422016 *qt422016.Writer,
               </div>
               <!-- /Industry -->
 
+              <!-- Rating -->
+              <div class="filters__group">
+                <header class="filters__header filters__header--with-info">
+                  <h4 class="filters__headline">Rating</h4>
+                  <img
+                    class="ml-8"
+                    alt="Info icon"
+                    width="16"
+                    height="16"
+                    title="info"
+                    src="/assets/images/pages/common/glassdoor.svg"
+                  />
+                  `)
+	qw422016.N().S(`
+                </header>
+                <div class="filters__elements filters__elements--full-height">
+                  <label class="checkbox filters__element">
+                    <input class="js-criteria-glassdoor-rating-rate checkbox__input" type="checkbox" data-alias="4.5" />
+                    <span class="checkbox__element"></span>
+                    <img
+                      alt="Star icon"
+                      width="22"
+                      height="22"
+                      title="info"
+                      src="/assets/images/pages/common/star.svg"
+                    />
+                    <span class="filters__element-text filters__element-text--truncated">4.5 stars and above</span>
+                  </label>
+                  <label class="checkbox filters__element">
+                    <input class="js-criteria-glassdoor-rating-rate checkbox__input" type="checkbox" data-alias="4.0" />
+                    <span class="checkbox__element"></span>
+                    <img
+                      alt="Star icon"
+                      width="22"
+                      height="22"
+                      title="info"
+                      src="/assets/images/pages/common/star.svg"
+                    />
+                    <span class="filters__element-text filters__element-text--truncated">4.0 stars and above</span>
+                  </label>
+                  <label class="checkbox filters__element">
+                    <input class="js-criteria-glassdoor-rating-rate checkbox__input" type="checkbox" data-alias="3.5" />
+                    <span class="checkbox__element"></span>
+                    <img
+                      alt="Star icon"
+                      width="22"
+                      height="22"
+                      title="info"
+                      src="/assets/images/pages/common/star.svg"
+                    />
+                    <span class="filters__element-text filters__element-text--truncated">3.5 stars and above</span>
+                  </label>
+                  <label class="checkbox filters__element">
+                    <input class="js-criteria-glassdoor-rating-rate checkbox__input" type="checkbox" data-alias="3.0" />
+                    <span class="checkbox__element"></span>
+                    <img
+                      alt="Star icon"
+                      width="22"
+                      height="22"
+                      title="info"
+                      src="/assets/images/pages/common/star.svg"
+                    />
+                    <span class="filters__element-text filters__element-text--truncated">3.0 stars and above</span>
+                  </label>
+                </div>
+              </div>
+              <!-- /Rating -->
+
+              <!-- Company size -->
+              <div class="filters__group">
+                <header class="filters__header filters__header--with-info">
+                  <h4 class="filters__headline">Company size</h4>
+                  <img
+                    class="ml-8"
+                    alt="LinkedIn icon"
+                    width="16"
+                    height="16"
+                    title="info"
+                    src="/assets/images/pages/common/linkedin-small.svg"
+                  />
+                  `)
+	qw422016.N().S(`
+                </header>
+                <div class="filters__elements filters__elements--full-height">
+                  `)
+	for _, size := range []string{
+		"2-10",    // 31
+		"11-50",   // 161
+		"51-200",  // 295
+		"201-500", // 207
+		"501-1K",  // 157
+		"1K-5K",   // 214
+		"5K-10K",  // 62
+		"10K+",    // 173
+	} {
+		qw422016.N().S(`
+                    <label class="checkbox filters__element">
+                      <input class="js-criteria-linkedin-company-size checkbox__input" type="checkbox" data-alias="`)
+		qw422016.E().S(size)
+		qw422016.N().S(`" />
+                      <span class="checkbox__element"></span>
+                      <span class="filters__element-text filters__element-text--truncated">`)
+		qw422016.E().S(size)
+		qw422016.N().S(` employees</span>
+                    </label>
+                  `)
+	}
+	qw422016.N().S(`
+                </div>
+              </div>
+              <!-- /Company size -->
+
               `)
 	qw422016.N().S(`
 
@@ -305,14 +399,8 @@ func StreamOrganizersVacanciesV3Beta(qw422016 *qt422016.Writer,
               <div class="filters__group">
                 <header class="filters__header filters__header--with-info">
                   <h4 class="filters__headline">Other</h4>
-                  <img
-                    class="ml-14"
-                    alt="info icon"
-                    width="14"
-                    height="14"
-                    title="info"
-                    src="/assets/images/pages/common/info.svg"
-                  />
+                  `)
+	qw422016.N().S(`
                 </header>
                 <div class="filters__elements">
                   <label class="checkbox filters__element">
@@ -420,10 +508,11 @@ func StreamOrganizersVacanciesV3Beta(qw422016 *qt422016.Writer,
 	streamorganizersFooterV3(qw422016)
 	qw422016.N().S(`
 </div>
-</body>
 <script src="/assets/js/organizers-vacancies-v3-app.js?`)
 	qw422016.N().D(appVersion)
 	qw422016.N().S(`"></script>
+</body>
+
 </html>
 `)
 }

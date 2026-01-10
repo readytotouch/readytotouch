@@ -74,7 +74,7 @@ func StreamOrganizersVacanciesV3Alpha(qw422016 *qt422016.Writer,
 	qw422016.N().S(` jobs in companies using `)
 	qw422016.E().S(organizerFeature.Organizer.Alias)
 	qw422016.N().S(` in production. Remote and onsite opportunities for developers.",
-      "url": "https://readytotouch.com/organizers/`)
+      "url": "https://readytotouch.com/`)
 	qw422016.E().S(organizerFeature.Organizer.Alias)
 	qw422016.N().S(`/jobs"
     }

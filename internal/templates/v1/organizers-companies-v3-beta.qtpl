@@ -133,7 +133,6 @@
         />
         <span id="js-mobile-selected-criteria-count" class="mobile-filter__counter" style="visibility: hidden;">0</span>
       </button>
-
       {% comment %}
       <!-- TODO sorter -->
       <div class="sorter sorter--desktop">

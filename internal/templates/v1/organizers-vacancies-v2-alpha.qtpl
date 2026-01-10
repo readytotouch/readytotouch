@@ -33,7 +33,7 @@
       "@type": "WebPage",
       "name": "{%s organizerFeature.Organizer.Title %} jobs",
       "description": "Find {%s organizerFeature.Organizer.Title %} jobs in companies using {%s organizerFeature.Organizer.Alias %} in production. Remote and onsite opportunities for developers.",
-      "url": "https://readytotouch.com/organizers/{%s organizerFeature.Organizer.Alias %}/jobs"
+      "url": "https://readytotouch.com/{%s organizerFeature.Organizer.Alias %}/jobs"
     }
     </script>
 
