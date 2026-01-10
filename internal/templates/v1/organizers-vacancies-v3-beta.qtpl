@@ -181,14 +181,16 @@
               <div class="filters__group">
                 <header class="filters__header filters__header--with-info">
                   <h4 class="filters__headline">Location</h4>
+                  {% comment %}
                   <img
                     class="ml-14"
-                    alt="info icon"
+                    alt="Info icon"
                     width="14"
                     height="14"
                     title="info"
                     src="/assets/images/pages/common/info.svg"
                   />
+                  {% endcomment %}
                 </header>
                 <div class="filters__elements filters__elements--location">
                   <div class="filters__elements-inner">
@@ -1458,14 +1460,16 @@
               <div class="filters__group">
                 <header class="filters__header filters__header--with-info">
                   <h4 class="filters__headline">Company type</h4>
+                  {% comment %}
                   <img
                     class="ml-14"
-                    alt="info icon"
+                    alt="Info icon"
                     width="14"
                     height="14"
                     title="info"
                     src="/assets/images/pages/common/info.svg"
                   />
+                  {% endcomment %}
                 </header>
                 <div class="filters__elements">
                   <label class="checkbox filters__element">
@@ -1495,14 +1499,16 @@
                     title="info"
                     src="/assets/images/pages/common/linkedin-small.svg"
                   />
+                  {% comment %}
                   <img
                     class="ml-14"
-                    alt="info icon"
+                    alt="Info icon"
                     width="14"
                     height="14"
                     title="info"
                     src="/assets/images/pages/common/info.svg"
                   />
+                  {% endcomment %}
                 </header>
                 <div class="filters__elements filters__elements--full-height">
                   <label class="checkbox filters__element">
@@ -1553,14 +1559,16 @@
                     title="info"
                     src="/assets/images/pages/common/glassdoor.svg"
                   />
+                  {% comment %}
                   <img
                     class="ml-14"
-                    alt="info icon"
+                    alt="Info icon"
                     width="14"
                     height="14"
                     title="info"
                     src="/assets/images/pages/common/info.svg"
                   />
+                  {% endcomment %}
                 </header>
                 <div class="filters__elements filters__elements--full-height">
                   <label class="checkbox filters__element">
@@ -1608,14 +1616,16 @@
               <div class="filters__group">
                 <header class="filters__header filters__header--with-info">
                   <h4 class="filters__headline">Industry</h4>
+                  {% comment %}
                   <img
                     class="ml-14"
-                    alt="info icon"
+                    alt="Info icon"
                     width="14"
                     height="14"
                     title="info"
                     src="/assets/images/pages/common/info.svg"
                   />
+                  {% endcomment %}
                 </header>
                 <div class="filters__elements">
                   <div class="filters__elements-inner">
@@ -1636,14 +1646,16 @@
               <div class="filters__group">
                 <header class="filters__header filters__header--with-info">
                   <h4 class="filters__headline">Hosting</h4>
+                  {% comment %}
                   <img
                     class="ml-14"
-                    alt="info icon"
+                    alt="Info icon"
                     width="14"
                     height="14"
                     title="info"
                     src="/assets/images/pages/common/info.svg"
                   />
+                  {% endcomment %}
                 </header>
 
                 <div class="filters__elements">
@@ -1714,66 +1726,20 @@
               <!-- /Hosting -->
               {% endcomment %}
 
-              {% comment %}
-              <!-- API Type -->
-              <div class="filters__group">
-                <header class="filters__header filters__header--with-info">
-                  <h4 class="filters__headline">API Type</h4>
-                  <img
-                    class="ml-14"
-                    alt="info icon"
-                    width="14"
-                    height="14"
-                    title="info"
-                    src="/assets/images/pages/common/info.svg"
-                  />
-                </header>
-
-                <div class="filters__elements">
-                  <div class="filters__elements-inner">
-                    <label class="checkbox filters__element">
-                      <input class="checkbox__input" type="checkbox" />
-                      <span class="checkbox__element"></span>
-                      <span class="filters__element-text filters__element-text--truncated">gRPC</span>
-                    </label>
-                    <label class="checkbox filters__element">
-                      <input class="checkbox__input" type="checkbox" />
-                      <span class="checkbox__element"></span>
-                      <span class="filters__element-text filters__element-text--truncated">REST</span>
-                    </label>
-                    <label class="checkbox filters__element">
-                      <input checked class="checkbox__input" type="checkbox" />
-                      <span class="checkbox__element"></span>
-                      <span class="filters__element-text filters__element-text--truncated">GraphQL</span>
-                    </label>
-                    <label class="checkbox filters__element">
-                      <input class="checkbox__input" type="checkbox" />
-                      <span class="checkbox__element"></span>
-                      <span class="filters__element-text filters__element-text--truncated">Swagger</span>
-                    </label>
-                    <label class="checkbox filters__element">
-                      <input class="checkbox__input" type="checkbox" />
-                      <span class="checkbox__element"></span>
-                      <span class="filters__element-text filters__element-text--truncated">OpenAPI</span>
-                    </label>
-                  </div>
-                </div>
-              </div>
-              <!-- /API Type -->
-              {% endcomment %}
-
               <!-- Other -->
               <div class="filters__group">
                 <header class="filters__header filters__header--with-info">
                   <h4 class="filters__headline">Other</h4>
+                  {% comment %}
                   <img
                     class="ml-14"
-                    alt="info icon"
+                    alt="Info icon"
                     width="14"
                     height="14"
                     title="info"
                     src="/assets/images/pages/common/info.svg"
                   />
+                  {% endcomment %}
                 </header>
                 <div class="filters__elements">
                   <label class="checkbox filters__element">
@@ -1903,7 +1869,8 @@
 
 {%= organizersFooterV3() %}
 </div>
-</body>
 <script src="/assets/js/organizers-vacancies-v3-app.js?{%d appVersion %}"></script>
+</body>
+
 </html>
 {%- endfunc -%}
