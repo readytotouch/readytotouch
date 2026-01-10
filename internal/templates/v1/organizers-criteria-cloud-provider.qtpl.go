@@ -15,6 +15,78 @@ var (
 )
 
 func streamorganizersCriteriaCloudProvider(qw422016 *qt422016.Writer) {
+	qw422016.N().S(`  <div class="filters__group">
+    <header class="filters__header filters__header--with-info">
+      <h4 class="filters__headline">Cloud provider</h4>
+      `)
+	qw422016.N().S(`
+    </header>
+    <div class="filters__elements">
+      <div class="filters__elements-inner">
+        <label class="checkbox filters__element">
+          <input class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <img
+            alt="AWS icon"
+            width="24"
+            height="24"
+            title=""
+            src="/assets/images/pages/common/amazon-web-services.svg"
+          />
+          <span class="filters__element-text filters__element-text--truncated">AWS</span>
+        </label>
+        <label class="checkbox filters__element">
+          <input class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <img
+            alt="Azure icon"
+            width="24"
+            height="24"
+            title=""
+            src="/assets/images/pages/common/azure.svg"
+          />
+          <span class="filters__element-text filters__element-text--truncated">Azure</span>
+        </label>
+        <label class="checkbox filters__element">
+          <input checked class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <img
+            alt="GCP icon"
+            width="24"
+            height="24"
+            title=""
+            src="/assets/images/pages/common/googlecloud.svg"
+          />
+          <span class="filters__element-text filters__element-text--truncated">GCP</span>
+        </label>
+        <label class="checkbox filters__element">
+          <input class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <img
+            alt="Digital Ocean icon"
+            width="24"
+            height="24"
+            title=""
+            src="/assets/images/pages/common/digitalocean.svg"
+          />
+          <span class="filters__element-text filters__element-text--truncated">Digital Ocean</span>
+        </label>
+        <label class="checkbox filters__element">
+          <input class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <img
+            alt="Vultr icon"
+            width="24"
+            height="24"
+            title=""
+            src="/assets/images/pages/common/vultr.svg"
+          />
+          <span class="filters__element-text filters__element-text--truncated">Vultr</span>
+        </label>
+      </div>
+    </div>
+  </div>
+`)
 }
 
 func writeorganizersCriteriaCloudProvider(qq422016 qtio422016.Writer) {
