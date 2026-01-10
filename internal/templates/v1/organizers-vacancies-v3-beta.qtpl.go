@@ -223,8 +223,11 @@ func StreamOrganizersVacanciesV3Beta(qw422016 *qt422016.Writer,
             </div>
 
             <div class="filters search-result__filters-list">
+              <!-- Location -->
               `)
+	streamorganizersCriteriaLocation(qw422016)
 	qw422016.N().S(`
+              <!-- /Location -->
 
               <!-- Company type -->
               `)
@@ -257,62 +260,9 @@ func StreamOrganizersVacanciesV3Beta(qw422016 *qt422016.Writer,
 	qw422016.N().S(`
 
               <!-- Other -->
-              <div class="filters__group">
-                <header class="filters__header filters__header--with-info">
-                  <h4 class="filters__headline">Other</h4>
-                  `)
+              `)
+	streamorganizersCriteriaOther(qw422016, organizerFeature)
 	qw422016.N().S(`
-                </header>
-                <div class="filters__elements">
-                  <label class="checkbox filters__element">
-                    <input class="js-criteria-has-employees-from-country checkbox__input" type="checkbox" data-alias="ukraine" />
-                    <span class="checkbox__element"></span>
-                    <span class="filters__element-text filters__element-text--truncated">Has Ukrainian employees</span>
-                    <img
-                      class="checkbox__content-image"
-                      alt="Flag of Ukraine"
-                      width="24"
-                      height="24"
-                      src="/assets/images/pages/common/flags/4x3/ua.svg"
-                    />
-                  </label>
-                  <label class="checkbox filters__element">
-                    <input class="js-criteria-has-employees-from-country checkbox__input" type="checkbox" data-alias="czechia" />
-                    <span class="checkbox__element"></span>
-                    <span class="filters__element-text filters__element-text--truncated">Has Czechs employees</span>
-                    <img
-                      class="checkbox__content-image"
-                      alt="Flag of Czechia"
-                      width="24"
-                      height="24"
-                      src="/assets/images/pages/common/flags/4x3/cz.svg"
-                    />
-                  </label>
-                  `)
-	qw422016.N().S(`
-                  `)
-	if organizerFeature.Organizer.Alias == "rust" {
-		qw422016.N().S(`
-                  <label class="checkbox filters__element">
-                    <input id="js-criteria-rust-foundation-members" class="checkbox__input" type="checkbox" />
-                    <span class="checkbox__element"></span>
-                    <span class="filters__element-text filters__element-text--truncated">Rust Foundation Members</span>
-                  </label>
-                  `)
-	}
-	qw422016.N().S(`
-                  <label class="checkbox filters__element">
-                    <input id="js-criteria-remote" class="checkbox__input" type="checkbox" />
-                    <span class="checkbox__element"></span>
-                    <span class="filters__element-text filters__element-text--truncated">Remote</span>
-                  </label>
-                  <label class="checkbox filters__element">
-                    <input id="js-criteria-in-favorites" class="checkbox__input" type="checkbox" />
-                    <span class="checkbox__element"></span>
-                    <span class="filters__element-text filters__element-text--truncated">Favorites</span>
-                  </label>
-                </div>
-              </div>
               <!-- /Other -->
 
             </div>
