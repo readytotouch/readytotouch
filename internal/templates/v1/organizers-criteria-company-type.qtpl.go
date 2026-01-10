@@ -15,6 +15,26 @@ var (
 )
 
 func streamorganizersCriteriaCompanyType(qw422016 *qt422016.Writer) {
+	qw422016.N().S(`  <div class="filters__group">
+    <header class="filters__header filters__header--with-info">
+      <h4 class="filters__headline">Company type</h4>
+      `)
+	qw422016.N().S(`
+    </header>
+    <div class="filters__elements">
+      <label class="checkbox filters__element">
+        <input class="js-criteria-company-type checkbox__input" type="checkbox" data-alias="product" />
+        <span class="checkbox__element"></span>
+        <span class="filters__element-text filters__element-text--truncated">Product</span>
+      </label>
+      <label class="checkbox filters__element">
+        <input class="js-criteria-company-type checkbox__input" type="checkbox" data-alias="startup" />
+        <span class="checkbox__element"></span>
+        <span class="filters__element-text filters__element-text--truncated">Startup</span>
+      </label>
+    </div>
+  </div>
+`)
 }
 
 func writeorganizersCriteriaCompanyType(qq422016 qtio422016.Writer) {

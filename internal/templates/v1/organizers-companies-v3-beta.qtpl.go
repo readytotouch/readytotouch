@@ -227,166 +227,27 @@ func StreamOrganizersCompaniesV3Beta(qw422016 *qt422016.Writer,
 	qw422016.N().S(`
 
               <!-- Company type -->
-              <div class="filters__group">
-                <header class="filters__header filters__header--with-info">
-                  <h4 class="filters__headline">Company type</h4>
-                  `)
+              `)
+	streamorganizersCriteriaCompanyType(qw422016)
 	qw422016.N().S(`
-                </header>
-                <div class="filters__elements">
-                  <label class="checkbox filters__element">
-                    <input class="js-criteria-company-type checkbox__input" type="checkbox" data-alias="product" />
-                    <span class="checkbox__element"></span>
-                    <span class="filters__element-text filters__element-text--truncated">Product</span>
-                  </label>
-                  <label class="checkbox filters__element">
-                    <input class="js-criteria-company-type checkbox__input" type="checkbox" data-alias="startup" />
-                    <span class="checkbox__element"></span>
-                    <span class="filters__element-text filters__element-text--truncated">Startup</span>
-                  </label>
-                </div>
-              </div>
               <!-- /Company type -->
 
               <!-- Industry -->
-              <div class="filters__group">
-                <header class="filters__header filters__header--with-info">
-                  <h4 class="filters__headline">Industry</h4>
-                  `)
+              `)
+	streamorganizersCriteriaIndustry(qw422016)
 	qw422016.N().S(`
-                </header>
-                <div class="filters__elements">
-                  <div class="filters__elements-inner">
-                    `)
-	for _, industry := range industries {
-		qw422016.N().S(`
-                    <label class="checkbox filters__element">
-                      <input class="js-criteria-company-industry checkbox__input" type="checkbox" data-alias="`)
-		qw422016.E().S(industry.Alias)
-		qw422016.N().S(`" />
-                      <span class="checkbox__element"></span>
-                      <span class="filters__element-text filters__element-text--truncated">`)
-		qw422016.E().S(industry.Name)
-		qw422016.N().S(`</span>
-                    </label>
-                    `)
-	}
-	qw422016.N().S(`
-                  </div>
-                </div>
-              </div>
               <!-- /Industry -->
 
               <!-- Rating -->
-              <div class="filters__group">
-                <header class="filters__header filters__header--with-info">
-                  <h4 class="filters__headline">Rating</h4>
-                  <img
-                    class="ml-8"
-                    alt="Info icon"
-                    width="16"
-                    height="16"
-                    title="info"
-                    src="/assets/images/pages/common/glassdoor.svg"
-                  />
-                  `)
+              `)
+	streamorganizersCriteriaGlassdoorReviewsRate(qw422016)
 	qw422016.N().S(`
-                </header>
-                <div class="filters__elements filters__elements--full-height">
-                  <label class="checkbox filters__element">
-                    <input class="js-criteria-glassdoor-reviews-rate checkbox__input" type="checkbox" data-alias="4.5" />
-                    <span class="checkbox__element"></span>
-                    <img
-                      alt="Star icon"
-                      width="22"
-                      height="22"
-                      title="info"
-                      src="/assets/images/pages/common/star.svg"
-                    />
-                    <span class="filters__element-text filters__element-text--truncated">4.5 stars and above</span>
-                  </label>
-                  <label class="checkbox filters__element">
-                    <input class="js-criteria-glassdoor-reviews-rate checkbox__input" type="checkbox" data-alias="4.0" />
-                    <span class="checkbox__element"></span>
-                    <img
-                      alt="Star icon"
-                      width="22"
-                      height="22"
-                      title="info"
-                      src="/assets/images/pages/common/star.svg"
-                    />
-                    <span class="filters__element-text filters__element-text--truncated">4.0 stars and above</span>
-                  </label>
-                  <label class="checkbox filters__element">
-                    <input class="js-criteria-glassdoor-reviews-rate checkbox__input" type="checkbox" data-alias="3.5" />
-                    <span class="checkbox__element"></span>
-                    <img
-                      alt="Star icon"
-                      width="22"
-                      height="22"
-                      title="info"
-                      src="/assets/images/pages/common/star.svg"
-                    />
-                    <span class="filters__element-text filters__element-text--truncated">3.5 stars and above</span>
-                  </label>
-                  <label class="checkbox filters__element">
-                    <input class="js-criteria-glassdoor-reviews-rate checkbox__input" type="checkbox" data-alias="3.0" />
-                    <span class="checkbox__element"></span>
-                    <img
-                      alt="Star icon"
-                      width="22"
-                      height="22"
-                      title="info"
-                      src="/assets/images/pages/common/star.svg"
-                    />
-                    <span class="filters__element-text filters__element-text--truncated">3.0 stars and above</span>
-                  </label>
-                </div>
-              </div>
               <!-- /Rating -->
 
               <!-- Company size -->
-              <div class="filters__group">
-                <header class="filters__header filters__header--with-info">
-                  <h4 class="filters__headline">Company size</h4>
-                  <img
-                    class="ml-8"
-                    alt="LinkedIn icon"
-                    width="16"
-                    height="16"
-                    title="info"
-                    src="/assets/images/pages/common/linkedin-small.svg"
-                  />
-                  `)
+              `)
+	streamorganizersCriteriaLinkedInCompanySize(qw422016)
 	qw422016.N().S(`
-                </header>
-                <div class="filters__elements filters__elements--full-height">
-                  `)
-	for _, size := range []string{
-		"2-10",    // 31
-		"11-50",   // 161
-		"51-200",  // 295
-		"201-500", // 207
-		"501-1K",  // 157
-		"1K-5K",   // 214
-		"5K-10K",  // 62
-		"10K+",    // 173
-	} {
-		qw422016.N().S(`
-                    <label class="checkbox filters__element">
-                      <input class="js-criteria-linkedin-company-size checkbox__input" type="checkbox" data-alias="`)
-		qw422016.E().S(size)
-		qw422016.N().S(`" />
-                      <span class="checkbox__element"></span>
-                      <span class="filters__element-text filters__element-text--truncated">`)
-		qw422016.E().S(size)
-		qw422016.N().S(` employees</span>
-                    </label>
-                  `)
-	}
-	qw422016.N().S(`
-                </div>
-              </div>
               <!-- /Company size -->
 
               `)

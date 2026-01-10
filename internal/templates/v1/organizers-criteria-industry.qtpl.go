@@ -15,6 +15,33 @@ var (
 )
 
 func streamorganizersCriteriaIndustry(qw422016 *qt422016.Writer) {
+	qw422016.N().S(`  <div class="filters__group">
+    <header class="filters__header filters__header--with-info">
+      <h4 class="filters__headline">Industry</h4>
+      `)
+	qw422016.N().S(`
+    </header>
+    <div class="filters__elements">
+      <div class="filters__elements-inner">
+        `)
+	for _, industry := range industries {
+		qw422016.N().S(`
+        <label class="checkbox filters__element">
+          <input class="js-criteria-company-industry checkbox__input" type="checkbox" data-alias="`)
+		qw422016.E().S(industry.Alias)
+		qw422016.N().S(`" />
+          <span class="checkbox__element"></span>
+          <span class="filters__element-text filters__element-text--truncated">`)
+		qw422016.E().S(industry.Name)
+		qw422016.N().S(`</span>
+        </label>
+        `)
+	}
+	qw422016.N().S(`
+      </div>
+    </div>
+  </div>
+`)
 }
 
 func writeorganizersCriteriaIndustry(qq422016 qtio422016.Writer) {

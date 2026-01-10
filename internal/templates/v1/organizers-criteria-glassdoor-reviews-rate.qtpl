@@ -4,7 +4,7 @@
       <h4 class="filters__headline">Rating</h4>
       <img
         class="ml-8"
-        alt="Info icon"
+        alt="Glassdoor icon"
         width="16"
         height="16"
         title="info"
@@ -22,8 +22,14 @@
       {% endcomment %}
     </header>
     <div class="filters__elements filters__elements--full-height">
+      {% for _, rating := range []string{
+        "4.5",
+        "4.0",
+        "3.5",
+        "3.0",
+      } %}
       <label class="checkbox filters__element">
-        <input class="js-criteria-glassdoor-reviews-rate checkbox__input" type="checkbox" data-alias="4.5" />
+        <input class="js-criteria-glassdoor-rating checkbox__input" type="checkbox" data-alias="{%s rating %}" />
         <span class="checkbox__element"></span>
         <img
           alt="Star icon"
@@ -32,44 +38,9 @@
           title="info"
           src="/assets/images/pages/common/star.svg"
         />
-        <span class="filters__element-text filters__element-text--truncated">4.5 stars and above</span>
+        <span class="filters__element-text filters__element-text--truncated">{%s rating %} stars and above</span>
       </label>
-      <label class="checkbox filters__element">
-        <input class="js-criteria-glassdoor-reviews-rate checkbox__input" type="checkbox" data-alias="4.0" />
-        <span class="checkbox__element"></span>
-        <img
-          alt="Star icon"
-          width="22"
-          height="22"
-          title="info"
-          src="/assets/images/pages/common/star.svg"
-        />
-        <span class="filters__element-text filters__element-text--truncated">4.0 stars and above</span>
-      </label>
-      <label class="checkbox filters__element">
-        <input class="js-criteria-glassdoor-reviews-rate checkbox__input" type="checkbox" data-alias="3.5" />
-        <span class="checkbox__element"></span>
-        <img
-          alt="Star icon"
-          width="22"
-          height="22"
-          title="info"
-          src="/assets/images/pages/common/star.svg"
-        />
-        <span class="filters__element-text filters__element-text--truncated">3.5 stars and above</span>
-      </label>
-      <label class="checkbox filters__element">
-        <input class="js-criteria-glassdoor-reviews-rate checkbox__input" type="checkbox" data-alias="3.0" />
-        <span class="checkbox__element"></span>
-        <img
-          alt="Star icon"
-          width="22"
-          height="22"
-          title="info"
-          src="/assets/images/pages/common/star.svg"
-        />
-        <span class="filters__element-text filters__element-text--truncated">3.0 stars and above</span>
-      </label>
+      {% endfor %}
     </div>
   </div>
 {%- endfunc -%}

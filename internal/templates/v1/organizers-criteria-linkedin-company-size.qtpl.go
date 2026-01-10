@@ -15,6 +15,48 @@ var (
 )
 
 func streamorganizersCriteriaLinkedInCompanySize(qw422016 *qt422016.Writer) {
+	qw422016.N().S(`  <div class="filters__group">
+    <header class="filters__header filters__header--with-info">
+      <h4 class="filters__headline">Company size</h4>
+      <img
+        class="ml-8"
+        alt="LinkedIn icon"
+        width="16"
+        height="16"
+        title="info"
+        src="/assets/images/pages/common/linkedin-small.svg"
+      />
+      `)
+	qw422016.N().S(`
+    </header>
+    <div class="filters__elements filters__elements--full-height">
+      `)
+	for _, size := range []string{
+		"2-10",    // 31
+		"11-50",   // 161
+		"51-200",  // 295
+		"201-500", // 207
+		"501-1K",  // 157
+		"1K-5K",   // 214
+		"5K-10K",  // 62
+		"10K+",    // 173
+	} {
+		qw422016.N().S(`
+        <label class="checkbox filters__element">
+          <input class="js-criteria-linkedin-company-size checkbox__input" type="checkbox" data-alias="`)
+		qw422016.E().S(size)
+		qw422016.N().S(`" />
+          <span class="checkbox__element"></span>
+          <span class="filters__element-text filters__element-text--truncated">`)
+		qw422016.E().S(size)
+		qw422016.N().S(` employees</span>
+        </label>
+      `)
+	}
+	qw422016.N().S(`
+    </div>
+  </div>
+`)
 }
 
 func writeorganizersCriteriaLinkedInCompanySize(qq422016 qtio422016.Writer) {

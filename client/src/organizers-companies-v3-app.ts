@@ -3,7 +3,7 @@ import {
     COMPANY_SEARCH_QUERY,
     COMPANY_TYPE_CRITERIA_NAME,
     COMPANY_INDUSTRY_CRITERIA_NAME,
-    COMPANY_GLASSDOOR_REVIEWS_RATE_CRITERIA_NAME,
+    COMPANY_GLASSDOOR_RATING_CRITERIA_NAME,
     COMPANY_LINKEDIN_COMPANY_SIZE_CRITERIA_NAME,
     COMPANY_HAS_EMPLOYEES_FROM_COUNTRY_CRITERIA_NAME,
     COMPANY_RUST_FOUNDATION_MEMBERS_CRITERIA_NAME,
@@ -51,7 +51,7 @@ const $form = document.getElementById("js-company-search-form");
 const $search = document.getElementById("js-company-query") as HTMLInputElement;
 const $typeCheckboxes = new InputCheckboxes(document.querySelectorAll("input.js-criteria-company-type") as any as Array<HTMLInputElement>);
 const $industryCheckboxes = new InputCheckboxes(document.querySelectorAll("input.js-criteria-company-industry") as any as Array<HTMLInputElement>);
-const $glassdoorReviewsRateCheckboxes = new RadioCheckboxes(document.querySelectorAll("input.js-criteria-glassdoor-reviews-rate") as any as Array<HTMLInputElement>);
+const $glassdoorRatingCheckboxes = new RadioCheckboxes(document.querySelectorAll("input.js-criteria-glassdoor-rating") as any as Array<HTMLInputElement>);
 const $linkedinCompanySizeCheckboxes = new InputCheckboxes(document.querySelectorAll("input.js-criteria-linkedin-company-size") as any as Array<HTMLInputElement>);
 const $hasEmployeesFromCountryCheckboxes = new InputCheckboxes(document.querySelectorAll("input.js-criteria-has-employees-from-country") as any as Array<HTMLInputElement>);
 const $remoteCheckbox = document.getElementById("js-criteria-remote") as HTMLInputElement;
@@ -85,8 +85,8 @@ $industryCheckboxes.onChange(function (state: Array<string>) {
     search(true, true);
 });
 
-$glassdoorReviewsRateCheckboxes.onChange(function (state: Array<string>) {
-    urlStateContainer.setArrayCriteria(COMPANY_GLASSDOOR_REVIEWS_RATE_CRITERIA_NAME, state);
+$glassdoorRatingCheckboxes.onChange(function (state: Array<string>) {
+    urlStateContainer.setArrayCriteria(COMPANY_GLASSDOOR_RATING_CRITERIA_NAME, state);
     urlStateContainer.setPage(1);
     urlStateContainer.storeCurrentState();
 
@@ -158,7 +158,7 @@ function setStateByURL() {
 
     setCheckboxesStateByURL($typeCheckboxes, COMPANY_TYPE_CRITERIA_NAME);
     setCheckboxesStateByURL($industryCheckboxes, COMPANY_INDUSTRY_CRITERIA_NAME);
-    setCheckboxesStateByURL($glassdoorReviewsRateCheckboxes, COMPANY_GLASSDOOR_REVIEWS_RATE_CRITERIA_NAME);
+    setCheckboxesStateByURL($glassdoorRatingCheckboxes, COMPANY_GLASSDOOR_RATING_CRITERIA_NAME);
     setCheckboxesStateByURL($linkedinCompanySizeCheckboxes, COMPANY_LINKEDIN_COMPANY_SIZE_CRITERIA_NAME);
     setCheckboxesStateByURL($hasEmployeesFromCountryCheckboxes, COMPANY_HAS_EMPLOYEES_FROM_COUNTRY_CRITERIA_NAME);
 
@@ -174,7 +174,7 @@ function renderSelectedCriteriaByURL() {
 
     renderSelectedCheckboxes($views, COMPANY_TYPE_CRITERIA_NAME, companyTypes);
     renderSelectedCheckboxes($views, COMPANY_INDUSTRY_CRITERIA_NAME, industries);
-    renderSelectedCheckboxes($views, COMPANY_GLASSDOOR_REVIEWS_RATE_CRITERIA_NAME, ratingRatesAliases);
+    renderSelectedCheckboxes($views, COMPANY_GLASSDOOR_RATING_CRITERIA_NAME, ratingRatesAliases);
     renderSelectedCheckboxes($views, COMPANY_LINKEDIN_COMPANY_SIZE_CRITERIA_NAME, linkedinCompanySizes);
     renderSelectedCheckboxes($views, COMPANY_HAS_EMPLOYEES_FROM_COUNTRY_CRITERIA_NAME, hasEmployeesFromCountries);
     renderSelectedCheckbox($views, COMPANY_RUST_FOUNDATION_MEMBERS_CRITERIA_NAME, "Rust Foundation Members");
@@ -355,7 +355,7 @@ function search(replaceHTML: boolean, resetPager: boolean) {
     const query = $search.value.trim().toLowerCase();
     const types = urlStateContainer.getCriteria(COMPANY_TYPE_CRITERIA_NAME, []);
     const industries = urlStateContainer.getCriteria(COMPANY_INDUSTRY_CRITERIA_NAME, []);
-    const glassdoorReviewsRates = urlStateContainer.getCriteria(COMPANY_GLASSDOOR_REVIEWS_RATE_CRITERIA_NAME, []);
+    const glassdoorReviewsRates = urlStateContainer.getCriteria(COMPANY_GLASSDOOR_RATING_CRITERIA_NAME, []);
     const linkedinCompanySizes = urlStateContainer.getCriteria(COMPANY_LINKEDIN_COMPANY_SIZE_CRITERIA_NAME, []);
     const hasEmployeesFromCountries = urlStateContainer.getCriteria(COMPANY_HAS_EMPLOYEES_FROM_COUNTRY_CRITERIA_NAME, []);
     const isRustFoundationMembers = urlStateContainer.getCriteria(COMPANY_RUST_FOUNDATION_MEMBERS_CRITERIA_NAME, false);

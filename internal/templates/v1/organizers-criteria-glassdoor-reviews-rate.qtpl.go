@@ -15,6 +15,51 @@ var (
 )
 
 func streamorganizersCriteriaGlassdoorReviewsRate(qw422016 *qt422016.Writer) {
+	qw422016.N().S(`  <div class="filters__group">
+    <header class="filters__header filters__header--with-info">
+      <h4 class="filters__headline">Rating</h4>
+      <img
+        class="ml-8"
+        alt="Glassdoor icon"
+        width="16"
+        height="16"
+        title="info"
+        src="/assets/images/pages/common/glassdoor.svg"
+      />
+      `)
+	qw422016.N().S(`
+    </header>
+    <div class="filters__elements filters__elements--full-height">
+      `)
+	for _, rating := range []string{
+		"4.5",
+		"4.0",
+		"3.5",
+		"3.0",
+	} {
+		qw422016.N().S(`
+      <label class="checkbox filters__element">
+        <input class="js-criteria-glassdoor-rating checkbox__input" type="checkbox" data-alias="`)
+		qw422016.E().S(rating)
+		qw422016.N().S(`" />
+        <span class="checkbox__element"></span>
+        <img
+          alt="Star icon"
+          width="22"
+          height="22"
+          title="info"
+          src="/assets/images/pages/common/star.svg"
+        />
+        <span class="filters__element-text filters__element-text--truncated">`)
+		qw422016.E().S(rating)
+		qw422016.N().S(` stars and above</span>
+      </label>
+      `)
+	}
+	qw422016.N().S(`
+    </div>
+  </div>
+`)
 }
 
 func writeorganizersCriteriaGlassdoorReviewsRate(qq422016 qtio422016.Writer) {
