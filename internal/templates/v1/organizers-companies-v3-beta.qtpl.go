@@ -294,7 +294,7 @@ func StreamOrganizersCompaniesV3Beta(qw422016 *qt422016.Writer,
                 </header>
                 <div class="filters__elements filters__elements--full-height">
                   <label class="checkbox filters__element">
-                    <input class="js-criteria-glassdoor-rating-rate checkbox__input" type="checkbox" data-alias="4.5" />
+                    <input class="js-criteria-glassdoor-reviews-rate checkbox__input" type="checkbox" data-alias="4.5" />
                     <span class="checkbox__element"></span>
                     <img
                       alt="Star icon"
@@ -306,7 +306,7 @@ func StreamOrganizersCompaniesV3Beta(qw422016 *qt422016.Writer,
                     <span class="filters__element-text filters__element-text--truncated">4.5 stars and above</span>
                   </label>
                   <label class="checkbox filters__element">
-                    <input class="js-criteria-glassdoor-rating-rate checkbox__input" type="checkbox" data-alias="4.0" />
+                    <input class="js-criteria-glassdoor-reviews-rate checkbox__input" type="checkbox" data-alias="4.0" />
                     <span class="checkbox__element"></span>
                     <img
                       alt="Star icon"
@@ -318,7 +318,7 @@ func StreamOrganizersCompaniesV3Beta(qw422016 *qt422016.Writer,
                     <span class="filters__element-text filters__element-text--truncated">4.0 stars and above</span>
                   </label>
                   <label class="checkbox filters__element">
-                    <input class="js-criteria-glassdoor-rating-rate checkbox__input" type="checkbox" data-alias="3.5" />
+                    <input class="js-criteria-glassdoor-reviews-rate checkbox__input" type="checkbox" data-alias="3.5" />
                     <span class="checkbox__element"></span>
                     <img
                       alt="Star icon"
@@ -330,7 +330,7 @@ func StreamOrganizersCompaniesV3Beta(qw422016 *qt422016.Writer,
                     <span class="filters__element-text filters__element-text--truncated">3.5 stars and above</span>
                   </label>
                   <label class="checkbox filters__element">
-                    <input class="js-criteria-glassdoor-rating-rate checkbox__input" type="checkbox" data-alias="3.0" />
+                    <input class="js-criteria-glassdoor-reviews-rate checkbox__input" type="checkbox" data-alias="3.0" />
                     <span class="checkbox__element"></span>
                     <img
                       alt="Star icon"
