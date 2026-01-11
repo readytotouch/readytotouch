@@ -19,7 +19,7 @@ export class VacancyResponse {
         public readonly pinned_until: string | null,
         public readonly monthly_views: number,
         public company: VacancyCompanyResponse, // to be filled later
-        public readonly favorite: boolean,
+        public favorite: boolean,
     ) {
     }
 }

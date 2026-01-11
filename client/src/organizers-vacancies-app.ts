@@ -22,50 +22,20 @@ import {setStateByURLMapper} from "./framework/set_state_by_url";
 import {responsiveHeaderProfileWidget} from "./responsive-header-profile-widget";
 import {githubStarsWidget} from "./github-stars-widget";
 import {responsiveFilterWidget} from "./responsive-filter-widget";
-
-function markVacancyFavorite(vacancyId: number, favorite: boolean, callback: () => void) {
-    fetch(`/api/v1/vacancies/${vacancyId}/favorite.json`, {
-        method: "PATCH",
-        body: JSON.stringify({
-            favorite: favorite,
-        }),
-    }).then(function (response) {
-        // Unauthorized
-        if (response.status === 401) {
-            window.location.href = organizersWelcome();
-
-            return;
-        }
-
-        callback();
-    }).catch(console.error);
-}
+import {addVacancyFavoriteEvent} from "./organizers-vacancies-favorite";
 
 const $vacancies = document.querySelectorAll(".js-vacancy");
 const $resultCount = document.getElementById("js-result-count");
 
 $vacancies.forEach(function ($vacancy: HTMLElement) {
-    const vacancyId = parseInt($vacancy.getAttribute("data-vacancy-id"));
-
-    const $favorite = $vacancy.querySelector(".js-vacancy-favorite");
-    $favorite.addEventListener("click", function () {
-        const current = $favorite.classList.contains("in-favorite");
-        const next = !current;
-
-        markVacancyFavorite(vacancyId, next, function () {
-            if (next) {
-                $favorite.classList.add("in-favorite");
-
-                $favorite.setAttribute("title", "Remove from favorites")
-            } else {
-                $favorite.classList.remove("in-favorite");
-
-                $favorite.setAttribute("title", "Add to favorites")
-            }
-        });
-    });
+    addVacancyFavoriteEvent(
+        $vacancy as HTMLElement,
+        {
+            id: parseInt($vacancy.getAttribute("data-vacancy-id")),
+            favorite: $vacancy.querySelector(".js-vacancy-favorite").classList.contains("in-favorite"),
+        } as any,
+    );
 });
-
 
 const $form = document.getElementById("js-vacancy-search-form");
 const $search = document.getElementById("js-vacancy-query") as HTMLInputElement;
