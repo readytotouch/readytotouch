@@ -1,5 +1,3 @@
-import {organizersWelcome} from "./welcome";
-
 import urlStateContainer from "./framework/vacancy_url_state_container";
 import {
     VACANCY_SEARCH_QUERY,
@@ -42,13 +40,12 @@ const $search = document.getElementById("js-vacancy-query") as HTMLInputElement;
 const $typeCheckboxes = new InputCheckboxes(document.querySelectorAll("input.js-criteria-company-type") as any as Array<HTMLInputElement>);
 const $industryCheckboxes = new InputCheckboxes(document.querySelectorAll("input.js-criteria-company-industry") as any as Array<HTMLInputElement>);
 const $hasEmployeesFromCountryCheckboxes = new InputCheckboxes(document.querySelectorAll("input.js-criteria-has-employees-from-country") as any as Array<HTMLInputElement>);
-const $inRustFoundationMembersCheckbox = document.getElementById("js-criteria-rust-foundation-members") as HTMLInputElement;
 const $remoteCheckbox = document.getElementById("js-criteria-remote") as HTMLInputElement;
 const $inFavoritesCheckbox = document.getElementById("js-criteria-in-favorites") as HTMLInputElement;
+const $inRustFoundationMembersCheckbox = document.getElementById("js-criteria-rust-foundation-members") as HTMLInputElement;
 const $selectedCriteria = document.getElementById("js-vacancy-selected-criteria");
 const $optionalMobileSelectedCriteriaCount = document.getElementById("js-mobile-selected-criteria-count");
-// "#js-criteria-reset" for backward compatibility
-const $resetButtons = document.querySelectorAll("#js-criteria-reset, .js-criteria-reset") as any as Array<HTMLElement>;
+const $resetButtons = document.querySelectorAll(".js-criteria-reset") as any as Array<HTMLElement>;
 
 $typeCheckboxes.onChange(function (state: Array<string>) {
     urlStateContainer.setArrayCriteria(VACANCY_COMPANY_TYPE_CRITERIA_NAME, state);

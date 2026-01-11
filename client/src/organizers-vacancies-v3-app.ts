@@ -1,5 +1,3 @@
-import {organizersWelcome} from "./welcome";
-
 import urlStateContainer from "./framework/vacancy_url_state_container";
 import {
     VACANCY_SEARCH_QUERY,
@@ -14,7 +12,7 @@ import {
     VACANCY_IN_FAVORITES_CRITERIA_NAME,
     VACANCY_COMPANY_HAS_EMPLOYEES_FROM_COUNTRY_CRITERIA_NAME,
 } from "./framework/vacancy_criteria_names";
-import {InputCheckboxes} from "./framework/checkboxes";
+import {InputCheckboxes, RadioCheckboxes} from "./framework/checkboxes";
 import {companyTypes} from "./framework/company_types";
 import {industries} from "./framework/industries";
 import {hasEmployeesFromCountries} from "./framework/has_employees_from_countries";
@@ -27,62 +25,44 @@ import {responsiveHeaderProfileWidget} from "./responsive-header-profile-widget"
 import {githubStarsWidget} from "./github-stars-widget";
 import {responsiveFilterWidget} from "./responsive-filter-widget";
 
-function markVacancyFavorite(vacancyId: number, favorite: boolean, callback: () => void) {
-    fetch(`/api/v1/vacancies/${vacancyId}/favorite.json`, {
-        method: "PATCH",
-        body: JSON.stringify({
-            favorite: favorite,
-        }),
-    }).then(function (response) {
-        // Unauthorized
-        if (response.status === 401) {
-            window.location.href = organizersWelcome();
+import {parseCurrentOrganizerAlias} from "./organizer";
+import {organizersWelcome} from "./welcome";
+import {VacancyResponse} from "./organizers-vacancies-v3-models
+import {renderVacancy} from "./organizers-vacancies-v3-render-vacancy";
+import {Pager, TotalPages} from "./framework/pager";
+import Pagination from "./framework/pagination";
+import {addVacancyFavoriteEvent} from "./organizers-vacancies-favorite";
 
-            return;
-        }
+const LIMIT = 20;
 
-        callback();
-    }).catch(console.error);
-}
+const currentOrganizerAlias = parseCurrentOrganizerAlias(window.location.pathname);
 
-const $vacancies = document.querySelectorAll(".js-vacancy");
+let sourceVacancies: Array<VacancyResponse> = [];
+let currentStateVacancies: Array<VacancyResponse> = [];
+
+const $vacanciesContainer = document.getElementById("js-vacancies-container");
+const $pagination = document.getElementById("js-pagination-pages");
 const $resultCount = document.getElementById("js-result-count");
-
-$vacancies.forEach(function ($vacancy: HTMLElement) {
-    const vacancyId = parseInt($vacancy.getAttribute("data-vacancy-id"));
-
-    const $favorite = $vacancy.querySelector(".js-vacancy-favorite");
-    $favorite.addEventListener("click", function () {
-        const current = $favorite.classList.contains("in-favorite");
-        const next = !current;
-
-        markVacancyFavorite(vacancyId, next, function () {
-            if (next) {
-                $favorite.classList.add("in-favorite");
-
-                $favorite.setAttribute("title", "Remove from favorites")
-            } else {
-                $favorite.classList.remove("in-favorite");
-
-                $favorite.setAttribute("title", "Add to favorites")
-            }
-        });
-    });
-});
-
+const $paginationShowMoreButton = document.getElementById("js-pagination-show-more-button") as HTMLButtonElement;
+const $paginationShowAllButton = document.getElementById("js-pagination-show-all-button") as HTMLButtonElement;
 
 const $form = document.getElementById("js-vacancy-search-form");
 const $search = document.getElementById("js-vacancy-query") as HTMLInputElement;
+const $locationCheckboxes = new InputCheckboxes(document.querySelectorAll("input.js-criteria-location") as any as Array<HTMLInputElement>);
 const $typeCheckboxes = new InputCheckboxes(document.querySelectorAll("input.js-criteria-company-type") as any as Array<HTMLInputElement>);
 const $industryCheckboxes = new InputCheckboxes(document.querySelectorAll("input.js-criteria-company-industry") as any as Array<HTMLInputElement>);
+const $glassdoorRatingCheckboxes = new RadioCheckboxes(document.querySelectorAll("input.js-criteria-glassdoor-rating") as any as Array<HTMLInputElement>);
+const $linkedinCompanySizeCheckboxes = new InputCheckboxes(document.querySelectorAll("input.js-criteria-linkedin-company-size") as any as Array<HTMLInputElement>);
 const $hasEmployeesFromCountryCheckboxes = new InputCheckboxes(document.querySelectorAll("input.js-criteria-has-employees-from-country") as any as Array<HTMLInputElement>);
-const $inRustFoundationMembersCheckbox = document.getElementById("js-criteria-rust-foundation-members") as HTMLInputElement;
 const $remoteCheckbox = document.getElementById("js-criteria-remote") as HTMLInputElement;
 const $inFavoritesCheckbox = document.getElementById("js-criteria-in-favorites") as HTMLInputElement;
+const $inRustFoundationMembersCheckbox = document.getElementById("js-criteria-rust-foundation-members") as HTMLInputElement;
 const $selectedCriteria = document.getElementById("js-vacancy-selected-criteria");
 const $optionalMobileSelectedCriteriaCount = document.getElementById("js-mobile-selected-criteria-count");
-// "#js-criteria-reset" for backward compatibility
-const $resetButtons = document.querySelectorAll("#js-criteria-reset, .js-criteria-reset") as any as Array<HTMLElement>;
+const $resetButtons = document.querySelectorAll(".js-criteria-reset") as any as Array<HTMLElement>;
+
+const pager = new Pager(LIMIT);
+const pagination = new Pagination($pagination, setPage);
 
 $typeCheckboxes.onChange(function (state: Array<string>) {
     urlStateContainer.setArrayCriteria(VACANCY_COMPANY_TYPE_CRITERIA_NAME, state);
@@ -91,7 +71,7 @@ $typeCheckboxes.onChange(function (state: Array<string>) {
 
     renderSelectedCriteriaByURL();
 
-    search();
+    search(true, true);
 });
 
 $industryCheckboxes.onChange(function (state: Array<string>) {
@@ -101,7 +81,7 @@ $industryCheckboxes.onChange(function (state: Array<string>) {
 
     renderSelectedCriteriaByURL();
 
-    search();
+    search(true, true);
 });
 
 $hasEmployeesFromCountryCheckboxes.onChange(function (state: Array<string>) {
@@ -111,7 +91,7 @@ $hasEmployeesFromCountryCheckboxes.onChange(function (state: Array<string>) {
 
     renderSelectedCriteriaByURL();
 
-    search();
+    search(true, true);
 });
 
 if ($inRustFoundationMembersCheckbox) {
@@ -122,7 +102,7 @@ if ($inRustFoundationMembersCheckbox) {
 
         renderSelectedCriteriaByURL();
 
-        search();
+        search(true, true);
     });
 }
 
@@ -133,7 +113,7 @@ $remoteCheckbox.addEventListener("change", function () {
 
     renderSelectedCriteriaByURL();
 
-    search();
+    search(true, true);
 });
 
 $inFavoritesCheckbox.addEventListener("change", function () {
@@ -143,7 +123,7 @@ $inFavoritesCheckbox.addEventListener("change", function () {
 
     renderSelectedCriteriaByURL();
 
-    search();
+    search(true, true);
 });
 
 const {
@@ -234,7 +214,7 @@ const handleSearch = function () {
     urlStateContainer.setPage(1);
     urlStateContainer.storeCurrentState();
 
-    search();
+    search(true, true);
 }
 
 $form.addEventListener("submit", function (event) {
@@ -260,10 +240,93 @@ function updatePageState() {
 
     renderSelectedCriteriaByURL();
 
-    search();
+    search(true, true);
 }
 
-function search() {
+function updateMoreButtonsVisibility() {
+    const moreCount = currentStateVacancies.length - (pager.getOffset() + LIMIT);
+    const hide = pager.getPage() > 1 || moreCount <= 0;
+
+    $paginationShowMoreButton.classList.toggle("d-none", hide);
+    $paginationShowAllButton.classList.toggle("d-none", hide);
+
+    if (hide) {
+        return;
+    }
+
+    $paginationShowAllButton.innerHTML = `Show All (+${moreCount})`;
+}
+
+function setPage(page: number) {
+    pager.setPage(page);
+
+    urlStateContainer.setPage(page);
+
+    urlStateContainer.storeCurrentState();
+
+    // Faster to just render from current state than re-searching
+    {
+        const offset = pager.getOffset();
+        const nextPage = pager.getPage();
+        const urlByPageBuilder = urlStateContainer.createUrlByPageBuilder();
+
+        renderVacancies(currentStateVacancies.slice(offset, offset + LIMIT), true);
+        pagination.render(nextPage, TotalPages(currentStateVacancies.length, LIMIT), urlByPageBuilder);
+
+        updateMoreButtonsVisibility();
+    }
+
+    requestAnimationFrame(function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    });
+}
+
+$paginationShowMoreButton.addEventListener("click", function () {
+    $paginationShowAllButton.disabled = true;
+    $paginationShowMoreButton.disabled = true;
+
+    pager.incrementOffsetOnly();
+
+    // Faster to just render from current state than re-searching
+    {
+        const offset = pager.getOffset();
+
+        renderVacancies(currentStateVacancies.slice(offset, offset + LIMIT), false);
+        pagination.reset();
+
+        updateMoreButtonsVisibility();
+    }
+
+    $paginationShowAllButton.disabled = false;
+    $paginationShowMoreButton.disabled = false;
+});
+
+$paginationShowAllButton.addEventListener("click", function () {
+    $paginationShowAllButton.disabled = true;
+    $paginationShowMoreButton.disabled = true;
+
+    pager.incrementOffsetOnly();
+
+    {
+        renderVacancies(currentStateVacancies.slice(pager.getOffset()), false);
+        pagination.reset();
+
+        $paginationShowMoreButton.classList.toggle("d-none", true);
+        $paginationShowAllButton.classList.toggle("d-none", true);
+    }
+
+    $paginationShowAllButton.disabled = false;
+    $paginationShowMoreButton.disabled = false;
+});
+
+function search(replaceHTML: boolean, resetPager: boolean) {
+    if (resetPager) {
+        pager.reset();
+    }
+
     const query = $search.value.trim().toLowerCase();
     const types = urlStateContainer.getCriteria(VACANCY_COMPANY_TYPE_CRITERIA_NAME, []);
     const industries = urlStateContainer.getCriteria(VACANCY_COMPANY_INDUSTRY_CRITERIA_NAME, []);
@@ -378,7 +441,56 @@ function search() {
     $resultCount.innerHTML = total.toString();
 }
 
-updatePageState();
+function fetchVacancies(callback: (vacancies: Array<VacancyResponse>) => void) {
+    fetch(`/api/v1/unsafe/${currentOrganizerAlias}/vacancies.json`, {
+        method: "GET",
+    }).then(function (response) {
+        // Unauthorized
+        if (response.status === 401) {
+            window.location.href = organizersWelcome();
+
+            return;
+        }
+
+        return response.json();
+    }).then(function (data) {
+        callback(data.vacancies);
+    }).catch(console.error);
+}
+
+function renderVacancies(vacancies: Array<VacancyResponse>, clear: boolean = true) {
+    const length = Math.min(vacancies.length, 10);
+
+    const $vacancies = new Array<HTMLElement>(length);
+
+    for (let i = 0; i < length; i++) {
+        const vacancy = vacancies[i];
+        const $vacancy = htmlToNode(renderVacancy(vacancy));
+
+        addVacancyFavoriteEvent($vacancy, vacancy);
+
+        $vacancies[i] = $vacancy;
+    }
+
+    if (clear) {
+        $vacanciesContainer.innerHTML = "";
+    }
+    $vacanciesContainer.append(...$vacancies);
+}
+
+function init(vacancies: Array<VacancyResponse>) {
+    sourceVacancies = vacancies;
+
+    search(true, false);
+}
+
+pager.setPage(urlStateContainer.getPage());
+
+fetchVacancies(init);
+
+setStateByURL();
+
+renderSelectedCriteriaByURL();
 
 responsiveHeaderProfileWidget();
 

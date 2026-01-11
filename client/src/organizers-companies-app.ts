@@ -46,8 +46,7 @@ const $inFavoritesCheckbox = document.getElementById("js-criteria-in-favorites")
 const $inRustFoundationMembersCheckbox = document.getElementById("js-criteria-rust-foundation-members") as HTMLInputElement;
 const $selectedCriteria = document.getElementById("js-company-selected-criteria");
 const $optionalMobileSelectedCriteriaCount = document.getElementById("js-mobile-selected-criteria-count");
-// "#js-criteria-reset" for backward compatibility
-const $resetButtons = document.querySelectorAll("#js-criteria-reset, .js-criteria-reset") as any as Array<HTMLElement>;
+const $resetButtons = document.querySelectorAll(".js-criteria-reset") as any as Array<HTMLElement>;
 
 $typeCheckboxes.onChange(function (state: Array<string>) {
     urlStateContainer.setArrayCriteria(COMPANY_TYPE_CRITERIA_NAME, state);
