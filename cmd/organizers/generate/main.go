@@ -239,7 +239,7 @@ func generateVacancies(companies []domain.CompanyProfile) {
 		})
 
 		for _, location := range locations {
-			fmt.Printf("%q: true, // %d\n", location.Location, location.Count)
+			fmt.Printf("%q: %q, // %d\n", location.Location, organizers.LocationCodeMap[location.Location], location.Count)
 		}
 	*/
 }
