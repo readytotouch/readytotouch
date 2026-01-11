@@ -196,11 +196,9 @@
               {%= organizersCriteriaLinkedInCompanySize() %}
               <!-- /Company size -->
 
-              {% comment %}
               <!-- Hosting -->
               {%= organizersCriteriaCloudProvider() %}
               <!-- /Hosting -->
-              {% endcomment %}
 
               {% comment %}
               <!-- API Type -->

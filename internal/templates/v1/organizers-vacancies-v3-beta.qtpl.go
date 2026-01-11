@@ -253,8 +253,11 @@ func StreamOrganizersVacanciesV3Beta(qw422016 *qt422016.Writer,
 	qw422016.N().S(`
               <!-- /Company size -->
 
+              <!-- Hosting -->
               `)
+	streamorganizersCriteriaCloudProvider(qw422016)
 	qw422016.N().S(`
+              <!-- /Hosting -->
 
               `)
 	qw422016.N().S(`

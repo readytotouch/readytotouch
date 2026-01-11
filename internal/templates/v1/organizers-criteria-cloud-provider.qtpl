@@ -16,61 +16,56 @@
     <div class="filters__elements">
       <div class="filters__elements-inner">
         <label class="checkbox filters__element">
-          <input class="checkbox__input" type="checkbox" />
+          <input class="js-criteria-cloud-provider checkbox__input" type="checkbox" data-alias="aws" />
           <span class="checkbox__element"></span>
           <img
-            alt="AWS icon"
+            alt="Amazon Web Services icon"
             width="24"
             height="24"
-            title=""
             src="/assets/images/pages/common/amazon-web-services.svg"
           />
           <span class="filters__element-text filters__element-text--truncated">AWS</span>
         </label>
         <label class="checkbox filters__element">
-          <input class="checkbox__input" type="checkbox" />
+          <input class="js-criteria-cloud-provider checkbox__input" type="checkbox" data-alias="gcp" />
           <span class="checkbox__element"></span>
           <img
-            alt="Azure icon"
+            alt="Google Cloud Platform icon"
             width="24"
             height="24"
-            title=""
-            src="/assets/images/pages/common/azure.svg"
-          />
-          <span class="filters__element-text filters__element-text--truncated">Azure</span>
-        </label>
-        <label class="checkbox filters__element">
-          <input checked class="checkbox__input" type="checkbox" />
-          <span class="checkbox__element"></span>
-          <img
-            alt="GCP icon"
-            width="24"
-            height="24"
-            title=""
             src="/assets/images/pages/common/googlecloud.svg"
           />
           <span class="filters__element-text filters__element-text--truncated">GCP</span>
         </label>
         <label class="checkbox filters__element">
-          <input class="checkbox__input" type="checkbox" />
+          <input class="js-criteria-cloud-provider checkbox__input" type="checkbox" data-alias="azure" />
+          <span class="checkbox__element"></span>
+          <img
+            alt="Microsoft Azure icon"
+            width="24"
+            height="24"
+            src="/assets/images/pages/common/azure.svg"
+          />
+          <span class="filters__element-text filters__element-text--truncated">Azure</span>
+        </label>
+        <label class="checkbox filters__element">
+          <input class="js-criteria-cloud-provider checkbox__input" type="checkbox" data-alias="digital-ocean" />
           <span class="checkbox__element"></span>
           <img
             alt="Digital Ocean icon"
             width="24"
             height="24"
-            title=""
             src="/assets/images/pages/common/digitalocean.svg"
           />
           <span class="filters__element-text filters__element-text--truncated">Digital Ocean</span>
         </label>
         <label class="checkbox filters__element">
-          <input class="checkbox__input" type="checkbox" />
+          <input class="js-criteria-cloud-provider checkbox__input" type="checkbox" data-alias="vultr" />
           <span class="checkbox__element"></span>
           <img
             alt="Vultr icon"
             width="24"
             height="24"
-            title=""
             src="/assets/images/pages/common/vultr.svg"
           />
           <span class="filters__element-text filters__element-text--truncated">Vultr</span>
