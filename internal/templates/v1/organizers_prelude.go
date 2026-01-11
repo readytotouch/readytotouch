@@ -5,8 +5,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/readytotouch/readytotouch/internal/utils"
 	"github.com/readytotouch/readytotouch/internal/domain"
+	"github.com/readytotouch/readytotouch/internal/utils"
 )
 
 const (

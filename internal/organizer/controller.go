@@ -1193,15 +1193,15 @@ func (c *Controller) UnsafeVacanciesV3(ctx *gin.Context) {
 			id, ok := organizers.VacancyUrlMap[vacancy.URL]
 			if ok {
 				vacancies = append(vacancies, &domain.VacancyResponse{
-					ID:           id,
-					Title:        vacancy.Title,
-					Location:     vacancy.Location,
-					Source:       utils.DetectVacancySource(vacancy.URL),
+					ID:             id,
+					Title:          vacancy.Title,
+					Location:       vacancy.Location,
+					Source:         utils.DetectVacancySource(vacancy.URL),
 					CloudProviders: company.CloudProviders,
-					Remote:       vacancy.Remote,
-					Date:         vacancy.Date,
-					PinnedUntil:  nil,
-					MonthlyViews: 0,
+					Remote:         vacancy.Remote,
+					Date:           vacancy.Date,
+					PinnedUntil:    nil,
+					MonthlyViews:   0,
 					Company: domain.CompanyReferenceResponse{
 						ID: company.ID,
 					},
