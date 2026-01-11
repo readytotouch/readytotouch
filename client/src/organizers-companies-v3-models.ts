@@ -1,16 +1,19 @@
-export type CompanyType = string;
+import {
+    CompanyType,
+    CloudProvider,
+    Country,
+    Industry,
+} from "./organizers-v3-common-models";
 
 export class CompanyResponse {
     constructor(
         public readonly id: number,
         public readonly type: CompanyType,
-
         /**
          * key: size (e.g. "72x72", "144x144")
          * value: image URL
          */
         public readonly logo: Record<string, string>,
-
         public readonly name: string,
         public readonly base_url: string,
         public readonly careers_url: string,
@@ -29,7 +32,8 @@ export class CompanyResponse {
         public readonly latest_vacancy_date: string | null,
         public readonly github_repository_count: number,
         public favorite: boolean,
-    ) {}
+    ) {
+    }
 }
 
 export class LinkedInProfileResponse {
@@ -40,7 +44,8 @@ export class LinkedInProfileResponse {
         public readonly name: string,
         public readonly employees: string,
         public readonly verified: boolean,
-    ) {}
+    ) {
+    }
 }
 
 export class GitHubProfileResponse {
@@ -48,7 +53,8 @@ export class GitHubProfileResponse {
         public readonly login: string,
         public readonly followers: string,
         public readonly verified: boolean,
-    ) {}
+    ) {
+    }
 }
 
 export class GlassdoorProfileResponse {
@@ -57,26 +63,6 @@ export class GlassdoorProfileResponse {
         public readonly reviews_url: string,
         public readonly reviews_rate: string,
         public readonly verified: boolean,
-    ) {}
-}
-
-export class Industry {
-    constructor(
-        public readonly alias: string,
-        public readonly name: string,
-    ) {}
-}
-
-export class CloudProvider {
-    constructor(
-        public readonly alias: string,
-        public readonly name: string,
-    ) {}
-}
-
-export class Country {
-    constructor(
-        public readonly alias: string,
-        public readonly name: string,
-    ) {}
+    ) {
+    }
 }
