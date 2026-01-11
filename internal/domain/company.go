@@ -195,10 +195,19 @@ type CompanyReferenceResponse struct {
 	ID int64 `json:"id"`
 }
 
+type LocationCountryResponse struct {
+	Code string `json:"code"`
+}
+
+type LocationResponse struct {
+	Raw     string                  `json:"raw"`
+	Country LocationCountryResponse `json:"country"`
+}
+
 type VacancyResponse struct {
 	ID             int64                    `json:"id"`
 	Title          string                   `json:"title"`
-	Location       string                   `json:"location"`
+	Location       LocationResponse         `json:"location"`
 	Source         VacancySource            `json:"source"`
 	CloudProviders []CloudProvider          `json:"cloud_providers"`
 	Remote         bool                     `json:"remote"`

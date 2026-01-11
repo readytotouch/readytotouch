@@ -1193,9 +1193,14 @@ func (c *Controller) UnsafeVacanciesV3(ctx *gin.Context) {
 			id, ok := organizers.VacancyUrlMap[vacancy.URL]
 			if ok {
 				vacancies = append(vacancies, &domain.VacancyResponse{
-					ID:             id,
-					Title:          vacancy.Title,
-					Location:       vacancy.Location,
+					ID:    id,
+					Title: vacancy.Title,
+					Location: domain.LocationResponse{
+						Raw: vacancy.Location,
+						Country: domain.LocationCountryResponse{
+							Code: organizers.LocationCodeMap[vacancy.Location],
+						},
+					},
 					Source:         utils.DetectVacancySource(vacancy.URL),
 					CloudProviders: company.CloudProviders,
 					Remote:         vacancy.Remote,
