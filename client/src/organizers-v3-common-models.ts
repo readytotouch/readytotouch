@@ -20,3 +20,18 @@ export class Country {
         public readonly name: string,
     ) {}
 }
+
+export class LocationCountryResponse {
+    constructor(
+        public readonly code: string,
+    ) {
+    }
+}
+
+export class LocationResponse {
+    constructor(
+        public readonly raw: string,
+        public readonly country: LocationCountryResponse,
+    ) {
+    }
+}
