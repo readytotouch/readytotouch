@@ -1,4 +1,7 @@
 import {VacancyCompanyResponse, VacancyResponse} from "./organizers-vacancies-v3-models";
+import {findOrganizer, parseCurrentOrganizerAlias} from "./organizer";
+
+const currentOrganizer = findOrganizer(parseCurrentOrganizerAlias(window.location.pathname));
 
 export function renderVacancy(vacancy: VacancyResponse): string {
     return `<div class="card">
@@ -13,8 +16,14 @@ export function renderVacancy(vacancy: VacancyResponse): string {
             </div>
             <figcaption class="card__header-caption">
                 <a href="/v/${vacancy.id}" target="_blank" class="card__headline">${vacancy.title}</a>
+                <a href="/${currentOrganizer.alias}/companies/${vacancy.company.linkedin_profile.alias}" target="_blank" class="card__sub-headline">${vacancy.company.name}</a>
+                ${renderLocation(vacancy)}
             </figcaption>
         </figure>
+        <p class="card__text card__text--organizer">${vacancy.short_description}</p>
+        <div class="card__footer">
+            
+        </div>
     </div>
 </div>`;
 }
@@ -48,4 +57,20 @@ function logo72x72(company: VacancyCompanyResponse): string {
     alt="${company.name} logo"
     src="/assets/unstable/logos/72x72/${logo}"
 />`;
+}
+
+function renderLocation(vacancy: VacancyResponse): string {
+    if (vacancy.location.country.code === "") {
+        return "";
+    }
+
+    return `<p class="card__header-caption-text">
+    <img
+        class="card__header-caption-icon"
+        alt="marker"
+        width="12"
+        height="12"
+        src="/assets/images/pages/organizer/marker.svg"
+    />${vacancy.location.raw}&nbsp;${vacancy.remote ? "(Remote)" : ""}
+</p>`;
 }

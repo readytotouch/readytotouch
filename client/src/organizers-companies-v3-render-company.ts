@@ -1,4 +1,5 @@
-import {CompanyResponse, Industry} from "./organizers-companies-v3-models";
+import {Industry} from "./organizers-v3-common-models";
+import {CompanyResponse} from "./organizers-companies-v3-models";
 import {findOrganizer, parseCurrentOrganizerAlias} from "./organizer";
 import {UkraineUniversities, CzechiaUniversities} from "./universities";
 
