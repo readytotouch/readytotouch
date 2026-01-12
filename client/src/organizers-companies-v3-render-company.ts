@@ -2,6 +2,7 @@ import {Industry} from "./organizers-v3-common-models";
 import {CompanyResponse} from "./organizers-companies-v3-models";
 import {findOrganizer, parseCurrentOrganizerAlias} from "./organizer";
 import {UkraineUniversities, CzechiaUniversities} from "./universities";
+import {defaultDateFormatter, prettyDateFormatter} from "./organizers-date";
 
 const currentOrganizer = findOrganizer(parseCurrentOrganizerAlias(window.location.pathname));
 
@@ -166,18 +167,6 @@ function renderLocation(company: CompanyResponse): string {
         </p>
     */
 }
-
-const defaultDateFormatter = new Intl.DateTimeFormat("en-CA", {
-    day: "2-digit",
-    month: "2-digit",
-    year: "numeric",
-});
-
-const prettyDateFormatter = new Intl.DateTimeFormat("en-GB", {
-    day: "2-digit",
-    month: "short",
-    year: "numeric",
-});
 
 function renderLatestVacancyDate(company: CompanyResponse): string {
     if (company.latest_vacancy_date === null) {
