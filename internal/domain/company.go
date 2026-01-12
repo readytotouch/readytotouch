@@ -205,17 +205,18 @@ type LocationResponse struct {
 }
 
 type VacancyResponse struct {
-	ID             int64                    `json:"id"`
-	Title          string                   `json:"title"`
-	Location       LocationResponse         `json:"location"`
-	Source         VacancySource            `json:"source"`
-	CloudProviders []CloudProvider          `json:"cloud_providers"`
-	Remote         bool                     `json:"remote"`
-	Date           time.Time                `json:"date"`
-	PinnedUntil    *time.Time               `json:"pinned_until"`
-	MonthlyViews   int64                    `json:"monthly_views"`
-	Company        CompanyReferenceResponse `json:"company"`
-	Favorite       bool                     `json:"favorite"`
+	ID               int64                    `json:"id"`
+	Title            string                   `json:"title"`
+	ShortDescription string                   `json:"short_description"`
+	Location         LocationResponse         `json:"location"`
+	Source           VacancySource            `json:"source"`
+	CloudProviders   []CloudProvider          `json:"cloud_providers"`
+	Remote           bool                     `json:"remote"`
+	Date             time.Time                `json:"date"`
+	PinnedUntil      *time.Time               `json:"pinned_until"`
+	MonthlyViews     int64                    `json:"monthly_views"`
+	Company          CompanyReferenceResponse `json:"company"`
+	Favorite         bool                     `json:"favorite"`
 }
 
 type GitHubProfile struct {

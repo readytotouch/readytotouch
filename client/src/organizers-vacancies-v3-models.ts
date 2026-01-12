@@ -11,6 +11,7 @@ export class VacancyResponse {
     constructor(
         public readonly id: number,
         public readonly title: string,
+        public readonly short_description: string,
         public readonly location: LocationResponse,
         public readonly source: VacancySource,
         public readonly cloud_providers: CloudProvider[],

@@ -1193,8 +1193,9 @@ func (c *Controller) UnsafeVacanciesV3(ctx *gin.Context) {
 			id, ok := organizers.VacancyUrlMap[vacancy.URL]
 			if ok {
 				vacancies = append(vacancies, &domain.VacancyResponse{
-					ID:    id,
-					Title: vacancy.Title,
+					ID:               id,
+					Title:            vacancy.Title,
+					ShortDescription: vacancy.ShortDescription,
 					Location: domain.LocationResponse{
 						Raw: vacancy.Location,
 						Country: domain.LocationCountryResponse{

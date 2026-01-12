@@ -4,7 +4,7 @@ import {
     VACANCY_LOCATION_CRITERIA_NAME,
     VACANCY_COMPANY_TYPE_CRITERIA_NAME,
     VACANCY_COMPANY_INDUSTRY_CRITERIA_NAME,
-    VACANCY_GLASSDOOR_RATING_CRITERIA_NAME,
+    VACANCY_COMPANY_GLASSDOOR_RATING_CRITERIA_NAME,
     VACANCY_LINKEDIN_COMPANY_SIZE_CRITERIA_NAME,
     VACANCY_CLOUD_PROVIDER_CRITERIA_NAME,
     VACANCY_COMPANY_RUST_FOUNDATION_MEMBERS_CRITERIA_NAME,
@@ -15,6 +15,10 @@ import {
 import {InputCheckboxes, RadioCheckboxes} from "./framework/checkboxes";
 import {companyTypes} from "./framework/company_types";
 import {industries} from "./framework/industries";
+import {ratingRatesAliases} from "./framework/rating_rates";
+import {linkedinCompanySizes} from "./framework/linkedin_company_sizes";
+import {cloudProviders} from "./framework/cloud_providers";
+import {locations} from "./framework/locations";
 import {hasEmployeesFromCountries} from "./framework/has_employees_from_countries";
 import {htmlToNode} from "./framework/html";
 import {Alias} from "./framework/alias";
@@ -27,7 +31,7 @@ import {responsiveFilterWidget} from "./responsive-filter-widget";
 
 import {parseCurrentOrganizerAlias} from "./organizer";
 import {organizersWelcome} from "./welcome";
-import {VacancyResponse} from "./organizers-vacancies-v3-models
+import {VacancyResponse, VacancyCompanyResponse} from "./organizers-vacancies-v3-models";
 import {renderVacancy} from "./organizers-vacancies-v3-render-vacancy";
 import {Pager, TotalPages} from "./framework/pager";
 import Pagination from "./framework/pagination";
@@ -53,6 +57,7 @@ const $typeCheckboxes = new InputCheckboxes(document.querySelectorAll("input.js-
 const $industryCheckboxes = new InputCheckboxes(document.querySelectorAll("input.js-criteria-company-industry") as any as Array<HTMLInputElement>);
 const $glassdoorRatingCheckboxes = new RadioCheckboxes(document.querySelectorAll("input.js-criteria-glassdoor-rating") as any as Array<HTMLInputElement>);
 const $linkedinCompanySizeCheckboxes = new InputCheckboxes(document.querySelectorAll("input.js-criteria-linkedin-company-size") as any as Array<HTMLInputElement>);
+const $cloudProviderCheckboxes = new InputCheckboxes(document.querySelectorAll("input.js-criteria-cloud-provider") as any as Array<HTMLInputElement>);
 const $hasEmployeesFromCountryCheckboxes = new InputCheckboxes(document.querySelectorAll("input.js-criteria-has-employees-from-country") as any as Array<HTMLInputElement>);
 const $remoteCheckbox = document.getElementById("js-criteria-remote") as HTMLInputElement;
 const $inFavoritesCheckbox = document.getElementById("js-criteria-in-favorites") as HTMLInputElement;
@@ -63,6 +68,16 @@ const $resetButtons = document.querySelectorAll(".js-criteria-reset") as any as 
 
 const pager = new Pager(LIMIT);
 const pagination = new Pagination($pagination, setPage);
+
+$locationCheckboxes.onChange(function (state: Array<string>) {
+    urlStateContainer.setArrayCriteria(VACANCY_LOCATION_CRITERIA_NAME, state);
+    urlStateContainer.setPage(1);
+    urlStateContainer.storeCurrentState();
+
+    renderSelectedCriteriaByURL();
+
+    search(true, true);
+});
 
 $typeCheckboxes.onChange(function (state: Array<string>) {
     urlStateContainer.setArrayCriteria(VACANCY_COMPANY_TYPE_CRITERIA_NAME, state);
@@ -76,6 +91,36 @@ $typeCheckboxes.onChange(function (state: Array<string>) {
 
 $industryCheckboxes.onChange(function (state: Array<string>) {
     urlStateContainer.setArrayCriteria(VACANCY_COMPANY_INDUSTRY_CRITERIA_NAME, state);
+    urlStateContainer.setPage(1);
+    urlStateContainer.storeCurrentState();
+
+    renderSelectedCriteriaByURL();
+
+    search(true, true);
+});
+
+$glassdoorRatingCheckboxes.onChange(function (state: Array<string>) {
+    urlStateContainer.setArrayCriteria(VACANCY_COMPANY_GLASSDOOR_RATING_CRITERIA_NAME, state);
+    urlStateContainer.setPage(1);
+    urlStateContainer.storeCurrentState();
+
+    renderSelectedCriteriaByURL();
+
+    search(true, true);
+});
+
+$linkedinCompanySizeCheckboxes.onChange(function (state: Array<string>) {
+    urlStateContainer.setArrayCriteria(VACANCY_LINKEDIN_COMPANY_SIZE_CRITERIA_NAME, state);
+    urlStateContainer.setPage(1);
+    urlStateContainer.storeCurrentState();
+
+    renderSelectedCriteriaByURL();
+
+    search(true, true);
+});
+
+$cloudProviderCheckboxes.onChange(function (state: Array<string>) {
+    urlStateContainer.setArrayCriteria(VACANCY_CLOUD_PROVIDER_CRITERIA_NAME, state);
     urlStateContainer.setPage(1);
     urlStateContainer.storeCurrentState();
 
@@ -135,8 +180,12 @@ const {
 function setStateByURL() {
     setInputStateByURL($search, VACANCY_SEARCH_QUERY);
 
+    setCheckboxesStateByURL($locationCheckboxes, VACANCY_LOCATION_CRITERIA_NAME);
     setCheckboxesStateByURL($typeCheckboxes, VACANCY_COMPANY_TYPE_CRITERIA_NAME);
     setCheckboxesStateByURL($industryCheckboxes, VACANCY_COMPANY_INDUSTRY_CRITERIA_NAME);
+    setCheckboxesStateByURL($glassdoorRatingCheckboxes, VACANCY_COMPANY_GLASSDOOR_RATING_CRITERIA_NAME);
+    setCheckboxesStateByURL($linkedinCompanySizeCheckboxes, VACANCY_LINKEDIN_COMPANY_SIZE_CRITERIA_NAME);
+    setCheckboxesStateByURL($cloudProviderCheckboxes, VACANCY_CLOUD_PROVIDER_CRITERIA_NAME);
     setCheckboxesStateByURL($hasEmployeesFromCountryCheckboxes, VACANCY_COMPANY_HAS_EMPLOYEES_FROM_COUNTRY_CRITERIA_NAME);
 
     if ($inRustFoundationMembersCheckbox) {
@@ -149,8 +198,12 @@ function setStateByURL() {
 function renderSelectedCriteriaByURL() {
     const $views: Array<HTMLElement> = [];
 
+    renderSelectedCheckboxes($views, VACANCY_LOCATION_CRITERIA_NAME, locations);
     renderSelectedCheckboxes($views, VACANCY_COMPANY_TYPE_CRITERIA_NAME, companyTypes);
     renderSelectedCheckboxes($views, VACANCY_COMPANY_INDUSTRY_CRITERIA_NAME, industries);
+    renderSelectedCheckboxes($views, VACANCY_COMPANY_GLASSDOOR_RATING_CRITERIA_NAME, ratingRatesAliases);
+    renderSelectedCheckboxes($views, VACANCY_LINKEDIN_COMPANY_SIZE_CRITERIA_NAME, linkedinCompanySizes);
+    renderSelectedCheckboxes($views, VACANCY_CLOUD_PROVIDER_CRITERIA_NAME, cloudProviders);
     renderSelectedCheckboxes($views, VACANCY_COMPANY_HAS_EMPLOYEES_FROM_COUNTRY_CRITERIA_NAME, hasEmployeesFromCountries);
     renderSelectedCheckbox($views, VACANCY_COMPANY_RUST_FOUNDATION_MEMBERS_CRITERIA_NAME, "Rust Foundation Members");
     renderSelectedCheckbox($views, VACANCY_REMOTE_CRITERIA_NAME, "Remote");
@@ -328,120 +381,194 @@ function search(replaceHTML: boolean, resetPager: boolean) {
     }
 
     const query = $search.value.trim().toLowerCase();
+    const locations = urlStateContainer.getCriteria(VACANCY_LOCATION_CRITERIA_NAME, []);
     const types = urlStateContainer.getCriteria(VACANCY_COMPANY_TYPE_CRITERIA_NAME, []);
     const industries = urlStateContainer.getCriteria(VACANCY_COMPANY_INDUSTRY_CRITERIA_NAME, []);
+    const glassdoorReviewsRates = urlStateContainer.getCriteria(VACANCY_COMPANY_GLASSDOOR_RATING_CRITERIA_NAME, []);
+    const linkedinCompanySizes = urlStateContainer.getCriteria(VACANCY_LINKEDIN_COMPANY_SIZE_CRITERIA_NAME, []);
+    const cloudProviders = urlStateContainer.getCriteria(VACANCY_CLOUD_PROVIDER_CRITERIA_NAME, []);
     const hasEmployeesFromCountries = urlStateContainer.getCriteria(VACANCY_COMPANY_HAS_EMPLOYEES_FROM_COUNTRY_CRITERIA_NAME, []);
     const isRustFoundationMembers = urlStateContainer.getCriteria(VACANCY_COMPANY_RUST_FOUNDATION_MEMBERS_CRITERIA_NAME, false);
     const remote = urlStateContainer.getCriteria(VACANCY_REMOTE_CRITERIA_NAME, false);
     const inFavorites = urlStateContainer.getCriteria(VACANCY_IN_FAVORITES_CRITERIA_NAME, false);
 
-    const matchQuery = function ($vacancy: HTMLElement): boolean {
-        if (query.length === 0) {
+    const matchQuery = function (vacancy: VacancyResponse): boolean {
+        return query.length === 0 ||
+            vacancy.title.toLowerCase().indexOf(query) !== -1 ||
+            vacancy.company.name.toLowerCase().indexOf(query) !== -1 ||
+            vacancy.short_description.toLowerCase().indexOf(query) !== -1;
+    };
+
+    const matchLocation = function (vacancy: VacancyResponse): boolean {
+        if (locations.length === 0) {
             return true;
         }
 
-        if ($vacancy.getAttribute("data-vacancy-title").toLowerCase().indexOf(query) !== -1) {
-            return true;
-        }
-
-        if ($vacancy.getAttribute("data-company-name").toLowerCase().indexOf(query) !== -1) {
-            return true;
-        }
-
-        if ($vacancy.querySelector(".js-vacancy-short-description").textContent.toLowerCase().indexOf(query) !== -1) {
-            return true;
+        for (const location of locations) {
+            if (vacancy.location.country.code === location) {
+                return true;
+            }
         }
 
         return false;
-    }
+    };
 
-    const matchIndustry = function ($vacancy: HTMLElement): boolean {
+    const matchIndustry = function (vacancy: VacancyResponse): boolean {
         if (industries.length === 0) {
             return true;
         }
 
-        const companyIndustries = $vacancy.getAttribute("data-company-industries").split(",");
+        if (!vacancy.company.industries) {
+            return false;
+        }
 
         for (const industry of industries) {
-            if (companyIndustries.indexOf(industry) !== -1) {
-                return true;
+            for (const companyIndustry of vacancy.company.industries) {
+                if (companyIndustry.alias === industry) {
+                    return true;
+                }
             }
         }
 
         return false;
-    }
+    };
 
-    const matchHasEmployeesFromCountry = function ($vacancy: HTMLElement): boolean {
+    const matchGlassdoorReviewsRate = function (vacancy: VacancyResponse): boolean {
+        if (glassdoorReviewsRates.length === 0) {
+            return true;
+        }
+
+        if (!vacancy.company.glassdoor_profile) {
+            return false;
+        }
+
+        if (!vacancy.company.glassdoor_profile.reviews_rate) {
+            return false;
+        }
+
+        return vacancy.company.glassdoor_profile.reviews_rate >= glassdoorReviewsRates[0];
+    };
+
+    const matchLinkedinCompanySize = function (vacancy: VacancyResponse): boolean {
+        if (linkedinCompanySizes.length === 0) {
+            return true;
+        }
+
+        return linkedinCompanySizes.indexOf(vacancy.company.linkedin_profile.employees) !== -1;
+    };
+
+    const matchCloudProvider = function (vacancy: VacancyResponse): boolean {
+        if (cloudProviders.length === 0) {
+            return true;
+        }
+
+        if (!vacancy.cloud_providers) {
+            return false;
+        }
+
+        for (const provider of cloudProviders) {
+            for (const vacancyProvider of vacancy.cloud_providers) {
+                if (vacancyProvider.alias === provider) {
+                    return true;
+                }
+            }
+        }
+
+        return false;
+    };
+
+    const matchHasEmployeesFromCountry = function (vacancy: VacancyResponse): boolean {
         if (hasEmployeesFromCountries.length === 0) {
             return true;
         }
 
-        const companyHasEmployeesFromCountries = $vacancy.getAttribute("data-company-has-employees-from-countries").split(",");
+        if (!vacancy.company.has_employees_from_countries) {
+            return false;
+        }
 
         for (const country of hasEmployeesFromCountries) {
-            if (companyHasEmployeesFromCountries.indexOf(country) !== -1) {
-                return true;
+            for (const vacancyCountry of vacancy.company.has_employees_from_countries) {
+                if (vacancyCountry.alias === country) {
+                    return true;
+                }
             }
         }
 
         return false;
-    }
+    };
 
-    const match = function ($vacancy: HTMLElement): boolean {
-        if (!matchQuery($vacancy)) {
+    const match = function (vacancy: VacancyResponse): boolean {
+        if (!matchQuery(vacancy)) {
             return false;
         }
 
-        if (types.length > 0 && types.indexOf($vacancy.getAttribute("data-company-type")) === -1) {
+        if (!matchLocation(vacancy)) {
             return false;
         }
 
-        if (!matchIndustry($vacancy)) {
+        if (types.length > 0 && types.indexOf(vacancy.company.type) === -1) {
             return false;
         }
 
-        if (!matchHasEmployeesFromCountry($vacancy)) {
+        if (!matchIndustry(vacancy)) {
             return false;
         }
 
-        if (isRustFoundationMembers && $vacancy.getAttribute("data-company-rust-foundation-members") !== "true") {
+        if (!matchGlassdoorReviewsRate(vacancy)) {
             return false;
         }
 
-        if (remote && $vacancy.getAttribute("data-vacancy-remote") !== "true") {
+        if (!matchLinkedinCompanySize(vacancy)) {
             return false;
         }
 
-        if (inFavorites) {
-            const $favorite = $vacancy.querySelector(".js-vacancy-favorite");
-            const current = $favorite.classList.contains("in-favorite");
+        if (!matchHasEmployeesFromCountry(vacancy)) {
+            return false;
+        }
 
-            if (!current) {
-                return false;
-            }
+        if (!matchCloudProvider(vacancy)) {
+            return false;
+        }
+
+        if (isRustFoundationMembers && !vacancy.company.rust_foundation_member) {
+            return false;
+        }
+
+        if (remote && !vacancy.remote) {
+            return false;
+        }
+
+        if (inFavorites && !vacancy.favorite) {
+            return false;
         }
 
         return true;
+    };
+
+    const offset = pager.getOffset();
+    const nextPage = pager.getPage();
+    const urlByPageBuilder = urlStateContainer.createUrlByPageBuilder();
+
+    {
+        // debug time measurement
+        const start = performance.now();
+
+        currentStateVacancies = sourceVacancies.filter(match);
+
+        // debug time measurement
+        const end = performance.now();
+
+        console.log(`Search took ${end - start} milliseconds.`);
     }
 
-    let total = 0;
+    renderVacancies(currentStateVacancies.slice(offset, offset + LIMIT), replaceHTML);
+    pagination.render(nextPage, TotalPages(currentStateVacancies.length, LIMIT), urlByPageBuilder);
+    $resultCount.innerHTML = currentStateVacancies.length.toString();
 
-    $vacancies.forEach(function ($vacancy: HTMLElement) {
-        if (match($vacancy)) {
-            $vacancy.hidden = false;
-
-            total++;
-
-            return;
-        }
-
-        $vacancy.hidden = true;
-    });
-
-    $resultCount.innerHTML = total.toString();
+    updateMoreButtonsVisibility();
 }
 
-function fetchVacancies(callback: (vacancies: Array<VacancyResponse>) => void) {
+function fetchVacancies(callback: (vacancies: Array<VacancyResponse>, companies: Array<VacancyCompanyResponse>) => void) {
     fetch(`/api/v1/unsafe/${currentOrganizerAlias}/vacancies.json`, {
         method: "GET",
     }).then(function (response) {
@@ -454,7 +581,7 @@ function fetchVacancies(callback: (vacancies: Array<VacancyResponse>) => void) {
 
         return response.json();
     }).then(function (data) {
-        callback(data.vacancies);
+        callback(data.vacancies, data.companies);
     }).catch(console.error);
 }
 
@@ -478,7 +605,16 @@ function renderVacancies(vacancies: Array<VacancyResponse>, clear: boolean = tru
     $vacanciesContainer.append(...$vacancies);
 }
 
-function init(vacancies: Array<VacancyResponse>) {
+function init(vacancies: Array<VacancyResponse>, companies: Array<VacancyCompanyResponse>) {
+    const companyMap = {};
+    for (const company of companies) {
+        companyMap[company.id] = company;
+    }
+
+    for (const vacancy of vacancies) {
+        vacancy.company = companyMap[vacancy.company.id];
+    }
+
     sourceVacancies = vacancies;
 
     search(true, false);

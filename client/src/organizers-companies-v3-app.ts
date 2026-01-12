@@ -411,7 +411,7 @@ function search(replaceHTML: boolean, resetPager: boolean) {
         }
 
         return company.glassdoor_profile.reviews_rate >= glassdoorReviewsRates[0];
-    }
+    };
 
     const matchLinkedinCompanySize = function (company: CompanyResponse): boolean {
         if (linkedinCompanySizes.length === 0) {
@@ -485,7 +485,6 @@ function search(replaceHTML: boolean, resetPager: boolean) {
     const nextPage = pager.getPage();
     const urlByPageBuilder = urlStateContainer.createUrlByPageBuilder();
 
-    // hide container to prevent multiple reflows
     {
         // debug time measurement
         const start = performance.now();
