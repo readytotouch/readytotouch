@@ -7,7 +7,7 @@ const currentOrganizer = findOrganizer(parseCurrentOrganizerAlias(window.locatio
 export function renderCompany(company: CompanyResponse): string {
     const companyURL = `/golang/companies/${company.linkedin_profile.alias}`;
 
-    return `<div class="js-company card" data-company-id="${company.id}">
+    return `<div class="card">
     <aside class="card__action">
         ${renderFavorite(company.favorite)}
         <a href="${companyURL}" class="button-group__item" title="View statistics">
