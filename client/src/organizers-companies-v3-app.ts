@@ -533,7 +533,7 @@ function renderCompanies(
 
     for (let i = 0; i < length; i++) {
         const company = companies[i];
-        const sponsored = i === 0 && showSponsored && sponsoredAvailable(company.pinned_until);
+        const sponsored = i === 0 && showSponsored && sponsoredAvailable(company.pinned_until, company.linkedin_profile.verified);
         const $company = htmlToNode(renderCompany(company, sponsored));
 
         addCompanyFavoriteEvent($company, company);

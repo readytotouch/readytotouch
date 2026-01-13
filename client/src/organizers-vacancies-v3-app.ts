@@ -607,7 +607,7 @@ function renderVacancies(
 
     for (let i = 0; i < length; i++) {
         const vacancy = vacancies[i];
-        const sponsored = i === 0 && showSponsored && sponsoredAvailable(vacancy.pinned_until);
+        const sponsored = i === 0 && showSponsored && sponsoredAvailable(vacancy.pinned_until, vacancy.company.linkedin_profile.verified);
         const $vacancy = htmlToNode(renderVacancy(vacancy, sponsored));
 
         addVacancyFavoriteEvent($vacancy, vacancy);

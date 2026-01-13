@@ -48,6 +48,7 @@ export class VacancyCompanyLinkedInProfileResponse {
     constructor(
         public readonly alias: string, // vanity name
         public readonly employees: string,
+        public readonly verified: boolean,
     ) {
     }
 }

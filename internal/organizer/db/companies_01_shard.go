@@ -2969,7 +2969,6 @@ func companies01Shard() []domain.CompanyProfile {
 				domain.IndustryDevOps,
 			},
 			HasEmployeesFromCountries: []domain.Country{},
-			PinnedUntil:               time.Date(2025, time.April, 25, 23, 59, 59, 0, time.UTC), // Demo
 		},
 
 		// Tech | Fastly

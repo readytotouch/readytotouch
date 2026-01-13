@@ -168,6 +168,7 @@ type CompanyResponse struct {
 type VacancyCompanyLinkedInProfileResponse struct {
 	Alias     string `json:"alias"` // vanity name
 	Employees string `json:"employees"`
+	Verified  bool   `json:"verified"`
 }
 
 type VacancyCompanyGlassdoorProfileResponse struct {
@@ -265,7 +266,7 @@ type Vacancy struct {
 	Date                 time.Time
 	WithSalary           bool
 	PinnedUntil          time.Time
-	Remote               bool       // Fully remote available
+	Remote               bool // Fully remote available
 	// @TODO: 401(k) match + equity
 	// @TODO: team "Payments & Checkout"
 }

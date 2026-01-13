@@ -1,5 +1,5 @@
-export function sponsoredAvailable(optionalPinnedUntil): boolean {
-    if (optionalPinnedUntil === null) {
+export function sponsoredAvailable(optionalPinnedUntil, verified: boolean): boolean {
+    if (optionalPinnedUntil === null || !verified) {
         return false;
     }
 

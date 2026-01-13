@@ -323,7 +323,6 @@ func companies02Shard() []domain.CompanyProfile {
 				domain.Ukraine,
 				domain.Czechia,
 			},
-			PinnedUntil: time.Date(2025, time.May, 20, 23, 59, 59, 0, time.UTC), // Demo
 		},
 
 		// Famous

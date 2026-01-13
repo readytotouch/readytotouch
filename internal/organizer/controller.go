@@ -299,7 +299,7 @@ func (c *Controller) companiesAction(
 	content := render(
 		organizerFeature,
 		headerProfiles,
-		c.pinnedFirst(companies),
+		companies,
 		db.UkrainianUniversities(),
 		db.CzechUniversities(),
 		userCompanyFavoriteMap,
@@ -1231,6 +1231,7 @@ func (c *Controller) UnsafeVacanciesV3(ctx *gin.Context) {
 				LinkedInProfile: domain.VacancyCompanyLinkedInProfileResponse{
 					Alias:     company.LinkedInProfile.Alias,
 					Employees: company.LinkedInProfile.Employees,
+					Verified:  company.LinkedInProfile.Verified,
 				},
 				GlassdoorProfile: domain.VacancyCompanyGlassdoorProfileResponse{
 					ReviewsRate: company.GlassdoorProfile.ReviewsRate,
@@ -1644,7 +1645,23 @@ func (c *Controller) companies(language domain.Language) []domain.CompanyProfile
 }
 
 func (c *Controller) sortCompanies(companies []domain.CompanyProfile) {
+	var (
+		maxPinnedUntilCompanyID = int64(0)
+		maxPinnedUntil          = time.Now()
+	)
+
+	for _, company := range companies {
+		if company.PinnedUntil.After(maxPinnedUntil) && company.LinkedInProfile.Verified {
+			maxPinnedUntilCompanyID = company.ID
+			maxPinnedUntil = company.PinnedUntil
+		}
+	}
+
 	slices.SortFunc(companies, func(a, b domain.CompanyProfile) int {
+		if a.ID == maxPinnedUntilCompanyID {
+			return -1
+		}
+
 		if a.LatestVacancyDate.After(b.LatestVacancyDate) {
 			return -1
 		}
@@ -1967,23 +1984,6 @@ func (c *Controller) random(language domain.Language) bool {
 	}
 
 	return false
-}
-
-func (c *Controller) pinnedFirst(companies []domain.CompanyProfile) []domain.CompanyProfile {
-	var (
-		pinnedCompanies   = make([]domain.CompanyProfile, 0, len(companies))
-		unpinnedCompanies = make([]domain.CompanyProfile, 0, len(companies))
-		now               = time.Now()
-	)
-	for _, company := range companies {
-		if company.PinnedUntil.After(now) && company.LinkedInProfile.Verified {
-			pinnedCompanies = append(pinnedCompanies, company)
-		} else {
-			unpinnedCompanies = append(unpinnedCompanies, company)
-		}
-	}
-
-	return append(pinnedCompanies, unpinnedCompanies...)
 }
 
 func (c *Controller) skipSmallCompany(company domain.CompanyProfile) bool {

@@ -5859,7 +5859,6 @@ func companies21Shard() []domain.CompanyProfile {
 			Industries:       []domain.Industry{
 				// NOP
 			},
-			PinnedUntil: mustDate("2025-10-31"),
 		},
 		{
 			ID:         0,  // system
