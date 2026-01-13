@@ -5061,7 +5061,7 @@ func companies10Shard() []domain.CompanyProfile {
 							Date:                 mustDate("2026-01-10", "2025-12-19", "2025-11-26"),
 							WithSalary:           false,
 							Remote:               false,
-							PinnedUntil:          mustDate("2026-01-13"),
+							PinnedUntil:          mustDate("2026-01-12"),
 						},
 					},
 				},
