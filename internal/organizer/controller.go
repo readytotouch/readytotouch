@@ -1271,6 +1271,10 @@ func (c *Controller) UnsafeVacanciesV3(ctx *gin.Context) {
 			return true
 		}
 
+		if vacancies[j].ID == maxPinnedUntilVacancyID {
+			return false
+		}
+
 		return vacancies[i].Date.After(vacancies[j].Date)
 	})
 
@@ -1671,6 +1675,10 @@ func (c *Controller) sortCompanies(companies []domain.CompanyProfile) {
 	slices.SortFunc(companies, func(a, b domain.CompanyProfile) int {
 		if a.ID == maxPinnedUntilCompanyID {
 			return -1
+		}
+
+		if b.ID == maxPinnedUntilCompanyID {
+			return 1
 		}
 
 		if a.LatestVacancyDate.After(b.LatestVacancyDate) {
