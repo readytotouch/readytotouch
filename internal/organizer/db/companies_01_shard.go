@@ -1,8 +1,6 @@
 package db
 
 import (
-	"time"
-
 	"github.com/readytotouch/readytotouch/internal/domain"
 )
 
