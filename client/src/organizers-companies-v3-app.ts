@@ -33,6 +33,7 @@ import {CompanyResponse} from "./organizers-companies-v3-models";
 import {renderCompany} from "./organizers-companies-v3-render-company";
 import {Pager, TotalPages} from "./framework/pager";
 import Pagination from "./framework/pagination";
+import {renderSponsored, sponsoredAvailable} from "./organizers-sponsored";
 
 const LIMIT = 10;
 
@@ -294,7 +295,7 @@ function setPage(page: number) {
         const nextPage = pager.getPage();
         const urlByPageBuilder = urlStateContainer.createUrlByPageBuilder();
 
-        renderCompanies(currentStateCompanies.slice(offset, offset + LIMIT), true);
+        renderCompanies(currentStateCompanies.slice(offset, offset + LIMIT), true, pager.getPage() === 1);
         pagination.render(nextPage, TotalPages(currentStateCompanies.length, LIMIT), urlByPageBuilder);
 
         updateMoreButtonsVisibility();
@@ -318,7 +319,7 @@ $paginationShowMoreButton.addEventListener("click", function () {
     {
         const offset = pager.getOffset();
 
-        renderCompanies(currentStateCompanies.slice(offset, offset + LIMIT), false);
+        renderCompanies(currentStateCompanies.slice(offset, offset + LIMIT), false, false);
         pagination.reset();
 
         updateMoreButtonsVisibility();
@@ -335,7 +336,7 @@ $paginationShowAllButton.addEventListener("click", function () {
     pager.incrementOffsetOnly();
 
     {
-        renderCompanies(currentStateCompanies.slice(pager.getOffset()), false);
+        renderCompanies(currentStateCompanies.slice(pager.getOffset()), false, false);
         pagination.reset();
 
         $paginationShowMoreButton.classList.toggle("d-none", true);
@@ -497,7 +498,7 @@ function search(replaceHTML: boolean, resetPager: boolean) {
         console.log(`Search took ${end - start} milliseconds.`);
     }
 
-    renderCompanies(currentStateCompanies.slice(offset, offset + LIMIT), replaceHTML);
+    renderCompanies(currentStateCompanies.slice(offset, offset + LIMIT), replaceHTML, pager.getPage() === 1);
     pagination.render(nextPage, TotalPages(currentStateCompanies.length, LIMIT), urlByPageBuilder);
     $resultCount.innerHTML = currentStateCompanies.length.toString();
 
@@ -521,25 +522,33 @@ function fetchCompanies(callback: (companies: Array<CompanyResponse>) => void) {
     }).catch(console.error);
 }
 
-function renderCompanies(companies: Array<CompanyResponse>, clear: boolean = true) {
+function renderCompanies(
+    companies: Array<CompanyResponse>,
+    clear: boolean = true,
+    showSponsored: boolean,
+) {
     const length = Math.min(companies.length, 10);
 
-    const $companies = new Array<HTMLElement>(length);
+    const $elements = [];
 
     for (let i = 0; i < length; i++) {
         const company = companies[i];
-        const $company = htmlToNode(renderCompany(company));
+        const sponsored = i === 0 && showSponsored && sponsoredAvailable(company.pinned_until);
+        const $company = htmlToNode(renderCompany(company, sponsored));
 
         addCompanyFavoriteEvent($company, company);
         addCompanyShowMoreEvent($company)
 
-        $companies[i] = $company;
+        $elements.push($company);
+        if (sponsored) {
+            $elements.push(htmlToNode(renderSponsored("company")))
+        }
     }
 
     if (clear) {
         $companiesContainer.innerHTML = "";
     }
-    $companiesContainer.append(...$companies);
+    $companiesContainer.append(...$elements);
 }
 
 function init(companies: Array<CompanyResponse>) {

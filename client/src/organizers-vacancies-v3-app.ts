@@ -37,6 +37,7 @@ import {Pager, TotalPages} from "./framework/pager";
 import Pagination from "./framework/pagination";
 import {addVacancyFavoriteEvent} from "./organizers-vacancies-favorite";
 import {VacancyPeriodContainer} from "./organizers-vacancy-period";
+import {renderSponsored, sponsoredAvailable} from "./organizers-sponsored";
 
 const LIMIT = 20;
 
@@ -325,7 +326,8 @@ function setPage(page: number) {
         const nextPage = pager.getPage();
         const urlByPageBuilder = urlStateContainer.createUrlByPageBuilder();
 
-        renderVacancies(currentStateVacancies.slice(offset, offset + LIMIT), true, pager.getPage() === 1);
+        const firstPage = pager.getPage() === 1;
+        renderVacancies(currentStateVacancies.slice(offset, offset + LIMIT), true, firstPage, firstPage);
         pagination.render(nextPage, TotalPages(currentStateVacancies.length, LIMIT), urlByPageBuilder);
 
         updateMoreButtonsVisibility();
@@ -349,7 +351,7 @@ $paginationShowMoreButton.addEventListener("click", function () {
     {
         const offset = pager.getOffset();
 
-        renderVacancies(currentStateVacancies.slice(offset, offset + LIMIT), false, true);
+        renderVacancies(currentStateVacancies.slice(offset, offset + LIMIT), false, true, false);
         pagination.reset();
 
         updateMoreButtonsVisibility();
@@ -366,7 +368,7 @@ $paginationShowAllButton.addEventListener("click", function () {
     pager.incrementOffsetOnly();
 
     {
-        renderVacancies(currentStateVacancies.slice(pager.getOffset()), false, true);
+        renderVacancies(currentStateVacancies.slice(pager.getOffset()), false, true, false);
         pagination.reset();
 
         $paginationShowMoreButton.classList.toggle("d-none", true);
@@ -563,7 +565,8 @@ function search(replaceHTML: boolean, resetPager: boolean) {
         console.log(`Search took ${end - start} milliseconds.`);
     }
 
-    renderVacancies(currentStateVacancies.slice(offset, offset + LIMIT), replaceHTML, pager.getPage() === 1);
+    const firstPage = pager.getPage() === 1;
+    renderVacancies(currentStateVacancies.slice(offset, offset + LIMIT), replaceHTML, firstPage, firstPage);
     pagination.render(nextPage, TotalPages(currentStateVacancies.length, LIMIT), urlByPageBuilder);
     $resultCount.innerHTML = currentStateVacancies.length.toString();
 
@@ -587,7 +590,12 @@ function fetchVacancies(callback: (vacancies: Array<VacancyResponse>, companies:
     }).catch(console.error);
 }
 
-function renderVacancies(vacancies: Array<VacancyResponse>, clear: boolean, showPeriods: boolean) {
+function renderVacancies(
+    vacancies: Array<VacancyResponse>,
+    clear: boolean,
+    showPeriods: boolean,
+    showSponsored: boolean,
+) {
     const length = Math.min(vacancies.length, LIMIT);
     const $elements = [];
 
@@ -599,7 +607,8 @@ function renderVacancies(vacancies: Array<VacancyResponse>, clear: boolean, show
 
     for (let i = 0; i < length; i++) {
         const vacancy = vacancies[i];
-        const $vacancy = htmlToNode(renderVacancy(vacancy));
+        const sponsored = i === 0 && showSponsored && sponsoredAvailable(vacancy.pinned_until);
+        const $vacancy = htmlToNode(renderVacancy(vacancy, sponsored));
 
         addVacancyFavoriteEvent($vacancy, vacancy);
 
@@ -611,6 +620,9 @@ function renderVacancies(vacancies: Array<VacancyResponse>, clear: boolean, show
         }
 
         $elements.push($vacancy);
+        if (sponsored) {
+            $elements.push(htmlToNode(renderSponsored("job")))
+        }
     }
 
     if (clear) {

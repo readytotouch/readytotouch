@@ -6,10 +6,10 @@ import {defaultDateFormatter, prettyDateFormatter} from "./organizers-date";
 
 const currentOrganizer = findOrganizer(parseCurrentOrganizerAlias(window.location.pathname));
 
-export function renderCompany(company: CompanyResponse): string {
+export function renderCompany(company: CompanyResponse, sponsored: boolean): string {
     const companyURL = `/golang/companies/${company.linkedin_profile.alias}`;
 
-    return `<div class="card">
+    return `<div class="card ${sponsored ? "card--sponsored" : ""}">
     <aside class="card__action">
         ${renderFavorite(company.favorite)}
         <a href="${companyURL}" class="button-group__item" title="View statistics">
@@ -81,6 +81,7 @@ export function renderCompany(company: CompanyResponse): string {
     </div>
 
     <div class="card__footer">
+        ${sponsored ? renderSponsored() : ""}
         <a href="${companyURL}" class="card__footer-button button button-link">
             <div class="card__footer-images">
                 <figure class="card__footer-figure">
@@ -480,6 +481,17 @@ function formatGlassdoorReviewsRate(rate: string): string {
     }
 
     return rate
+}
+
+function renderSponsored(): string {
+    return `<div class="label">
+    <img
+        alt="Thumbtack icon"
+        width="20"
+        height="20"
+        src="/assets/images/pages/organizer/thumbtack.svg"
+    />Sponsored
+</div>`;
 }
 
 function googleSearchGitHub(companyName: string): string {

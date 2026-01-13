@@ -5,9 +5,8 @@ import {VacancySource} from "./vacancy-source";
 
 const currentOrganizer = findOrganizer(parseCurrentOrganizerAlias(window.location.pathname));
 
-export function renderVacancy(vacancy: VacancyResponse): string {
+export function renderVacancy(vacancy: VacancyResponse, sponsored: boolean): string {
     const date = new Date(vacancy.date);
-    const sponsored = renderSponsored(vacancy);
 
     return `<div class="card ${sponsored ? "card--sponsored" : ""}">
     <div class="card__vacancy">
@@ -24,7 +23,7 @@ export function renderVacancy(vacancy: VacancyResponse): string {
                 <a href="/${currentOrganizer.alias}/companies/${vacancy.company.linkedin_profile.alias}" target="_blank" class="card__sub-headline">${vacancy.company.name}</a>
                 ${renderLocation(vacancy)}
             </figcaption>
-            ${sponsored}
+            ${sponsored ? renderSponsored() : ""}
         </figure>
         <p class="card__text card__text--organizer">${vacancy.short_description}</p>
         <div class="card__footer">
@@ -121,24 +120,13 @@ function renderLocation(vacancy: VacancyResponse): string {
 </p>`;
 }
 
-function renderSponsored(vacancy: VacancyResponse): string {
-    if (vacancy.pinned_until === null) {
-        return "";
-    }
-
-    const pinnedUntil = new Date(vacancy.pinned_until);
-    const today = new Date();
-    today.setUTCHours(0, 0, 0, 0);
-
-    if (pinnedUntil < today) {
-        return "";
-    }
-
+function renderSponsored(): string {
     return `<div class="label card__header-label">
-    <img alt="thumbtack icon"
-       width="20"
-       height="20"
-       src="/assets/images/pages/organizer/thumbtack.svg"
+    <img
+        alt="Thumbtack icon"
+        width="20"
+        height="20"
+        src="/assets/images/pages/organizer/thumbtack.svg"
     />Sponsored
 </div>`;
 }
