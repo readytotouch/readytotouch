@@ -127,8 +127,10 @@ function renderSponsored(vacancy: VacancyResponse): string {
     }
 
     const pinnedUntil = new Date(vacancy.pinned_until);
-    const now = new Date();
-    if (pinnedUntil < now) {
+    const today = new Date();
+    today.setUTCHours(0, 0, 0, 0);
+
+    if (pinnedUntil < today) {
         return "";
     }
 
