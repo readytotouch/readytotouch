@@ -325,7 +325,7 @@ function setPage(page: number) {
         const nextPage = pager.getPage();
         const urlByPageBuilder = urlStateContainer.createUrlByPageBuilder();
 
-        renderVacancies(currentStateVacancies.slice(offset, offset + LIMIT), true);
+        renderVacancies(currentStateVacancies.slice(offset, offset + LIMIT), true, pager.getPage() === 1);
         pagination.render(nextPage, TotalPages(currentStateVacancies.length, LIMIT), urlByPageBuilder);
 
         updateMoreButtonsVisibility();
@@ -349,7 +349,7 @@ $paginationShowMoreButton.addEventListener("click", function () {
     {
         const offset = pager.getOffset();
 
-        renderVacancies(currentStateVacancies.slice(offset, offset + LIMIT), false);
+        renderVacancies(currentStateVacancies.slice(offset, offset + LIMIT), false, true);
         pagination.reset();
 
         updateMoreButtonsVisibility();
@@ -366,7 +366,7 @@ $paginationShowAllButton.addEventListener("click", function () {
     pager.incrementOffsetOnly();
 
     {
-        renderVacancies(currentStateVacancies.slice(pager.getOffset()), false);
+        renderVacancies(currentStateVacancies.slice(pager.getOffset()), false, true);
         pagination.reset();
 
         $paginationShowMoreButton.classList.toggle("d-none", true);
@@ -563,7 +563,7 @@ function search(replaceHTML: boolean, resetPager: boolean) {
         console.log(`Search took ${end - start} milliseconds.`);
     }
 
-    renderVacancies(currentStateVacancies.slice(offset, offset + LIMIT), replaceHTML);
+    renderVacancies(currentStateVacancies.slice(offset, offset + LIMIT), replaceHTML, pager.getPage() === 1);
     pagination.render(nextPage, TotalPages(currentStateVacancies.length, LIMIT), urlByPageBuilder);
     $resultCount.innerHTML = currentStateVacancies.length.toString();
 
@@ -587,12 +587,14 @@ function fetchVacancies(callback: (vacancies: Array<VacancyResponse>, companies:
     }).catch(console.error);
 }
 
-function renderVacancies(vacancies: Array<VacancyResponse>, clear: boolean = true) {
+function renderVacancies(vacancies: Array<VacancyResponse>, clear: boolean, showPeriods: boolean) {
     const length = Math.min(vacancies.length, LIMIT);
     const $elements = [];
 
-    if (vacancyPeriodContainer === null || clear) {
-        vacancyPeriodContainer = new VacancyPeriodContainer();
+    if (showPeriods) {
+        if (vacancyPeriodContainer === null || clear) {
+            vacancyPeriodContainer = new VacancyPeriodContainer();
+        }
     }
 
     for (let i = 0; i < length; i++) {
@@ -601,9 +603,11 @@ function renderVacancies(vacancies: Array<VacancyResponse>, clear: boolean = tru
 
         addVacancyFavoriteEvent($vacancy, vacancy);
 
-        const periodNames = vacancyPeriodContainer.over(new Date(vacancy.date));
-        for (const periodName of periodNames) {
-            $elements.push(htmlToNode(renderVacancyPeriod(periodName)));
+        if (showPeriods) {
+            const periodNames = vacancyPeriodContainer.over(new Date(vacancy.date));
+            for (const periodName of periodNames) {
+                $elements.push(htmlToNode(renderVacancyPeriod(periodName)));
+            }
         }
 
         $elements.push($vacancy);
