@@ -1179,9 +1179,11 @@ func (c *Controller) UnsafeVacanciesV3(ctx *gin.Context) {
 	}
 
 	var (
-		companies  = make([]*domain.VacancyCompanyResponse, 0, len(sourceCompanies))
-		vacancies  = make([]*domain.VacancyResponse, 0, 4096)
-		vacancyIDs = make([]int64, 0, 4096)
+		companies               = make([]*domain.VacancyCompanyResponse, 0, len(sourceCompanies))
+		vacancies               = make([]*domain.VacancyResponse, 0, 4096)
+		vacancyIDs              = make([]int64, 0, 4096)
+		maxPinnedUntilVacancyID = int64(0)
+		maxPinnedUntil          = time.Now()
 	)
 
 	for _, company := range sourceCompanies {
@@ -1192,6 +1194,11 @@ func (c *Controller) UnsafeVacanciesV3(ctx *gin.Context) {
 		for _, vacancy := range company.Languages[organizer.Language].Vacancies {
 			id, ok := organizers.VacancyUrlMap[vacancy.URL]
 			if ok {
+				if company.LinkedInProfile.Verified && vacancy.PinnedUntil.After(maxPinnedUntil) {
+					maxPinnedUntilVacancyID = id
+					maxPinnedUntil = vacancy.PinnedUntil
+				}
+
 				vacancies = append(vacancies, &domain.VacancyResponse{
 					ID:               id,
 					Title:            vacancy.Title,
@@ -1260,6 +1267,10 @@ func (c *Controller) UnsafeVacanciesV3(ctx *gin.Context) {
 	})
 
 	sort.Slice(vacancies, func(i, j int) bool {
+		if vacancies[i].ID == maxPinnedUntilVacancyID {
+			return true
+		}
+
 		return vacancies[i].Date.After(vacancies[j].Date)
 	})
 
@@ -1651,7 +1662,7 @@ func (c *Controller) sortCompanies(companies []domain.CompanyProfile) {
 	)
 
 	for _, company := range companies {
-		if company.PinnedUntil.After(maxPinnedUntil) && company.LinkedInProfile.Verified {
+		if company.LinkedInProfile.Verified && company.PinnedUntil.After(maxPinnedUntil) {
 			maxPinnedUntilCompanyID = company.ID
 			maxPinnedUntil = company.PinnedUntil
 		}
