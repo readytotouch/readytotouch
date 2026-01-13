@@ -7,8 +7,9 @@ const currentOrganizer = findOrganizer(parseCurrentOrganizerAlias(window.locatio
 
 export function renderVacancy(vacancy: VacancyResponse): string {
     const date = new Date(vacancy.date);
+    const sponsored = renderSponsored(vacancy);
 
-    return `<div class="card">
+    return `<div class="card ${sponsored ? "card--sponsored" : ""}">
     <div class="card__vacancy">
         <aside class="card__action">
             ${renderFavorite(vacancy.favorite)}
@@ -23,6 +24,7 @@ export function renderVacancy(vacancy: VacancyResponse): string {
                 <a href="/${currentOrganizer.alias}/companies/${vacancy.company.linkedin_profile.alias}" target="_blank" class="card__sub-headline">${vacancy.company.name}</a>
                 ${renderLocation(vacancy)}
             </figcaption>
+            ${sponsored}
         </figure>
         <p class="card__text card__text--organizer">${vacancy.short_description}</p>
         <div class="card__footer">
@@ -117,6 +119,26 @@ function renderLocation(vacancy: VacancyResponse): string {
         src="/assets/images/pages/organizer/marker.svg"
     />${vacancy.location.raw}&nbsp;${vacancy.remote ? "(Remote)" : ""}
 </p>`;
+}
+
+function renderSponsored(vacancy: VacancyResponse): string {
+    if (vacancy.pinned_until === null) {
+        return "";
+    }
+
+    const pinnedUntil = new Date(vacancy.pinned_until);
+    const now = new Date();
+    if (pinnedUntil < now) {
+        return "";
+    }
+
+    return `<div class="label card__header-label">
+    <img alt="thumbtack icon"
+       width="20"
+       height="20"
+       src="/assets/images/pages/organizer/thumbtack.svg"
+    />Sponsored
+</div>`;
 }
 
 function renderVacancySource(vacancy: VacancyResponse): string {

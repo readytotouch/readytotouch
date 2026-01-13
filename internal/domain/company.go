@@ -264,7 +264,8 @@ type Vacancy struct {
 	CloudProviders       []CloudProvider
 	Date                 time.Time
 	WithSalary           bool
-	Remote               bool // Fully remote available
+	PinnedUntil          time.Time
+	Remote               bool       // Fully remote available
 	// @TODO: 401(k) match + equity
 	// @TODO: team "Payments & Checkout"
 }
