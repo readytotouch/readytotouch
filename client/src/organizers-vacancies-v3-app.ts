@@ -32,10 +32,11 @@ import {responsiveFilterWidget} from "./responsive-filter-widget";
 import {parseCurrentOrganizerAlias} from "./organizer";
 import {organizersWelcome} from "./welcome";
 import {VacancyResponse, VacancyCompanyResponse} from "./organizers-vacancies-v3-models";
-import {renderVacancy} from "./organizers-vacancies-v3-render-vacancy";
+import {renderVacancy, renderVacancyPeriod} from "./organizers-vacancies-v3-render-vacancy";
 import {Pager, TotalPages} from "./framework/pager";
 import Pagination from "./framework/pagination";
 import {addVacancyFavoriteEvent} from "./organizers-vacancies-favorite";
+import {VacancyPeriodContainer} from "./organizers-vacancy-period";
 
 const LIMIT = 20;
 
@@ -43,6 +44,7 @@ const currentOrganizerAlias = parseCurrentOrganizerAlias(window.location.pathnam
 
 let sourceVacancies: Array<VacancyResponse> = [];
 let currentStateVacancies: Array<VacancyResponse> = [];
+let vacancyPeriodContainer: VacancyPeriodContainer = null;
 
 const $vacanciesContainer = document.getElementById("js-vacancies-container");
 const $pagination = document.getElementById("js-pagination-pages");
@@ -586,9 +588,12 @@ function fetchVacancies(callback: (vacancies: Array<VacancyResponse>, companies:
 }
 
 function renderVacancies(vacancies: Array<VacancyResponse>, clear: boolean = true) {
-    const length = Math.min(vacancies.length, 10);
+    const length = Math.min(vacancies.length, LIMIT);
+    const $elements = [];
 
-    const $vacancies = new Array<HTMLElement>(length);
+    if (vacancyPeriodContainer === null || clear) {
+        vacancyPeriodContainer = new VacancyPeriodContainer();
+    }
 
     for (let i = 0; i < length; i++) {
         const vacancy = vacancies[i];
@@ -596,13 +601,18 @@ function renderVacancies(vacancies: Array<VacancyResponse>, clear: boolean = tru
 
         addVacancyFavoriteEvent($vacancy, vacancy);
 
-        $vacancies[i] = $vacancy;
+        const periodNames = vacancyPeriodContainer.over(new Date(vacancy.date));
+        for (const periodName of periodNames) {
+            $elements.push(htmlToNode(renderVacancyPeriod(periodName)));
+        }
+
+        $elements.push($vacancy);
     }
 
     if (clear) {
         $vacanciesContainer.innerHTML = "";
     }
-    $vacanciesContainer.append(...$vacancies);
+    $vacanciesContainer.append(...$elements);
 }
 
 function init(vacancies: Array<VacancyResponse>, companies: Array<VacancyCompanyResponse>) {

@@ -64,6 +64,14 @@ export function renderVacancy(vacancy: VacancyResponse): string {
 </div>`;
 }
 
+export function renderVacancyPeriod(periodName: string): string {
+    return `<div class="search-result__time-period">
+    <div class="search-result__time-period-line"></div>
+    <div class="search-result__time-period-content">${periodName}</div>
+    <div class="search-result__time-period-line"></div>
+</div>`;
+}
+
 function renderFavorite(favorite: boolean): string {
     const star = `<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" class="favorite__icon" viewBox="0 0 28 28">
     <path
