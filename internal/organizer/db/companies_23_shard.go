@@ -1073,7 +1073,7 @@ func companies23Shard() []domain.CompanyProfile {
 							Date:                 mustDate("2025-12-25"),
 							WithSalary:           true, // $255k/yr - $325k/yr
 							Remote:               true,
-							PinnedUntil:          mustDate("2026-01-12"),
+							PinnedUntil:          mustDate("2026-01-14"),
 						},
 					},
 				},
@@ -1110,7 +1110,7 @@ func companies23Shard() []domain.CompanyProfile {
 			Industries:       []domain.Industry{
 				// NOP
 			},
-			PinnedUntil: mustDate("2026-01-12"),
+			PinnedUntil: mustDate("2026-01-14"),
 		},
 		{
 			ID:         0,  // system
