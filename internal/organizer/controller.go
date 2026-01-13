@@ -1206,7 +1206,7 @@ func (c *Controller) UnsafeVacanciesV3(ctx *gin.Context) {
 					CloudProviders: company.CloudProviders,
 					Remote:         vacancy.Remote,
 					Date:           vacancy.Date,
-					PinnedUntil:    nil,
+					PinnedUntil:    utils.TimePointerOrNil(vacancy.PinnedUntil),
 					MonthlyViews:   0,
 					Company: domain.CompanyReferenceResponse{
 						ID: company.ID,
