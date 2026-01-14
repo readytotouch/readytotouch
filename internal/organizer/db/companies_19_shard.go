@@ -4934,6 +4934,16 @@ func companies19Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Middle Backend Engineer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4345355121/",
+							Location:             "London Area, United Kingdom",
+							Date:                 mustDate("2026-01-12"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
@@ -5777,6 +5787,16 @@ func companies19Shard() []domain.CompanyProfile {
 							Location:             "Santa Clara, CA",
 							Date:                 mustDate("2025-12-20"),
 							WithSalary:           true, // $148k/yr - $287.5k/yr
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Systems Software Engineer, Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4358933477/",
+							Location:             "Santa Clara, CA",
+							Date:                 mustDate("2026-01-09"),
+							WithSalary:           true, // $152k/yr - $287.5k/yr
 							Remote:               false,
 						},
 					},
