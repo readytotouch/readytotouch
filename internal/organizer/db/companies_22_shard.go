@@ -2677,7 +2677,7 @@ func companies22Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4321915810/",
 							Location:             "Tokyo, Tokyo, Japan",
-							Date:                 mustDate("2025-12-21", "2025-12-17", "2025-12-10", "2025-12-01", "2025-11-24", "2025-11-20", "2025-11-12"),
+							Date:                 mustDate("2026-01-09", "2025-12-21", "2025-12-17", "2025-12-10", "2025-12-01", "2025-11-24", "2025-11-20", "2025-11-12"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3709,6 +3709,16 @@ func companies22Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Software Engineer (Java and Rust)",
+							ShortDescription:     "Video Signalling",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4361396242/",
+							Location:             "Ireland",
+							Date:                 mustDate("2026-01-14"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Zig: {
@@ -3883,7 +3893,7 @@ func companies22Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4324341674/",
 							Location:             "Los Angeles, CA",
-							Date:                 mustDate("2025-12-09", "2025-11-25"),
+							Date:                 mustDate("2026-01-09", "2025-12-09", "2025-11-25"),
 							WithSalary:           true, // $200k/yr - $240k/yr
 							Remote:               false,
 						},
@@ -4737,6 +4747,16 @@ func companies22Shard() []domain.CompanyProfile {
 							WithSalary:           true, // £70k/yr - £100k/yr
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Backend Engineer – Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4359609180/",
+							Location:             "London, England, United Kingdom",
+							Date:                 mustDate("2026-01-10"),
+							WithSalary:           true, // £70k/yr - £100k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig: {
@@ -5564,6 +5584,16 @@ func companies22Shard() []domain.CompanyProfile {
 							Date:                 mustDate("2025-12-25"),
 							WithSalary:           false,
 							Remote:               true,
+						},
+						{
+							Title:                "Senior Software Engineer, Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4351981488/",
+							Location:             "San Francisco Bay Area",
+							Date:                 mustDate("2026-01-09"),
+							WithSalary:           true, // $175k/yr - $215k/yr
+							Remote:               false,
 						},
 					},
 				},
