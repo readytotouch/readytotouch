@@ -527,11 +527,9 @@ function renderCompanies(
     clear: boolean = true,
     showSponsored: boolean,
 ) {
-    const length = Math.min(companies.length, 10);
-
     const $elements = [];
 
-    for (let i = 0; i < length; i++) {
+    for (let i = 0; i < companies.length; i++) {
         const company = companies[i];
         const sponsored = i === 0 && showSponsored && sponsoredAvailable(company.pinned_until, company.linkedin_profile.verified);
         const $company = htmlToNode(renderCompany(company, sponsored));
