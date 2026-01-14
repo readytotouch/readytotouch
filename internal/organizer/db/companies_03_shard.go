@@ -72,6 +72,8 @@ func companies03Shard() []domain.CompanyProfile {
 							ShortDescription:     "Backend: Go, ArangoDB, MySQL, Confluent Kafka, Snowflake, GraphQL + different AWS services",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4091237831/",
+							Location:             "Munich, Bavaria, Germany",
+							CloudProviders:       []domain.CloudProvider{domain.AWS},
 							Date:                 mustDate("2025-01-03"),
 							WithSalary:           false,
 							Remote:               false,
@@ -3443,10 +3445,12 @@ func companies03Shard() []domain.CompanyProfile {
 					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Senior Python AWS Developer / Golang Developer",
+							Title:                "Senior Python Developer / Golang Developer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/3914415181/",
+							Location:             "Dallas, TX",
+							CloudProviders:       []domain.CloudProvider{domain.AWS},
 							Date:                 mustDate("2024-05-24"),
 							WithSalary:           false,
 							Remote:               false,

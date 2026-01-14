@@ -759,6 +759,7 @@ func companies09Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4288608884/",
 							Location:             "Charlotte, NC",
+							CloudProviders:       []domain.CloudProvider{domain.AWS},
 							Date:                 mustDate("2025-08-20"),
 							WithSalary:           true, // $111.6k/yr - $131.3k/yr
 							Remote:               false,
@@ -769,6 +770,7 @@ func companies09Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4302065033/",
 							Location:             "Brookfield, WI",
+							CloudProviders:       []domain.CloudProvider{domain.AWS},
 							Date:                 mustDate("2025-09-18"),
 							WithSalary:           true, // $111.6k/yr - $131.3k/yr
 							Remote:               false,
@@ -2383,6 +2385,7 @@ func companies09Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4256491910/",
 							Location:             "Cracow, Małopolskie, Poland",
+							CloudProviders:       []domain.CloudProvider{domain.AWS},
 							Date:                 mustDate("2025-09-04"),
 							WithSalary:           false,
 							Remote:               false,
@@ -2988,6 +2991,8 @@ func companies09Shard() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4108779705/",
+							Location:             "Ho Chi Minh City, Vietnam",
+							CloudProviders:       []domain.CloudProvider{domain.GCP},
 							Date:                 mustDate("2024-12-24"),
 							WithSalary:           false,
 							Remote:               false,
@@ -4684,6 +4689,7 @@ func companies09Shard() []domain.CompanyProfile {
 							ShortDescription:     "The stack is mostly Rust and PostgreSQL on AWS",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4115290108/",
+							CloudProviders:       []domain.CloudProvider{domain.AWS},
 							Date:                 mustDate("2025-01-03"),
 							WithSalary:           true, // €50K/yr - €65K/yr
 							Remote:               true,

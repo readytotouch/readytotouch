@@ -88,6 +88,8 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4144963593/",
+							Location:             "Troy, MI",
+							CloudProviders:       []domain.CloudProvider{domain.AWS},
 							Date:                 mustDate("2025-02-14"),
 							WithSalary:           true, // salary for this position is between $68,000 – $114,000
 							Remote:               false,
@@ -97,6 +99,7 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4181350285/",
+							Location:             "Romania",
 							Date:                 mustDate("2025-03-14"),
 							WithSalary:           false,
 							Remote:               true,
@@ -126,6 +129,8 @@ func companiesOutsourceCompanies() []domain.CompanyProfile {
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4124669157/",
+							Location:             "Missouri, United States",
+							CloudProviders:       []domain.CloudProvider{domain.AWS},
 							Date:                 mustDate("2025-01-15"),
 							WithSalary:           true, // $68K — $108K per year
 							Remote:               false,

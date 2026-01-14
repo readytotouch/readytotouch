@@ -1210,7 +1210,7 @@ func (c *Controller) UnsafeVacanciesV3(ctx *gin.Context) {
 						},
 					},
 					Source:         utils.DetectVacancySource(vacancy.URL),
-					CloudProviders: company.CloudProviders,
+					CloudProviders: vacancy.CloudProviders,
 					Remote:         vacancy.Remote,
 					Date:           vacancy.Date,
 					PinnedUntil:    utils.TimePointerOrNil(vacancy.PinnedUntil),
