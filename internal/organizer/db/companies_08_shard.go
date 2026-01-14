@@ -3246,6 +3246,16 @@ func companies08Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $126.8k/yr - $199.2k/yr
 							Remote:               false,
 						},
+						{
+							Title:                "C++ or Golang Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4354792574/",
+							Location:             "Chicago, IL",
+							Date:                 mustDate("2026-01-13"),
+							WithSalary:           true, // $107.4k/yr - $168.8k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -5666,6 +5676,16 @@ func companies08Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4186530653/",
 							Date:                 mustDate("2025-03-19"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Software Engineer – Golang/Java/C#",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4352281972/",
+							Location:             "Bratislava, Bratislava, Slovakia",
+							Date:                 mustDate("2026-01-10"),
 							WithSalary:           false,
 							Remote:               false,
 						},
