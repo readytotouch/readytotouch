@@ -596,7 +596,6 @@ function renderVacancies(
     showPeriods: boolean,
     showSponsored: boolean,
 ) {
-    const length = Math.min(vacancies.length, LIMIT);
     const $elements = [];
 
     if (showPeriods) {
@@ -605,7 +604,7 @@ function renderVacancies(
         }
     }
 
-    for (let i = 0; i < length; i++) {
+    for (let i = 0; i < vacancies.length; i++) {
         const vacancy = vacancies[i];
         const sponsored = i === 0 && showSponsored && sponsoredAvailable(vacancy.pinned_until, vacancy.company.linkedin_profile.verified);
         const $vacancy = htmlToNode(renderVacancy(vacancy, sponsored));

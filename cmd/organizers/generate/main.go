@@ -226,7 +226,7 @@ func generateVacancies(companies []domain.CompanyProfile) {
 		)
 
 		for location, count := range locationCountMap {
-			if count >= 3 {
+			if count >= 2 {
 				locations = append(locations, LocationCount{
 					Location: location,
 					Count:    count,
@@ -235,6 +235,10 @@ func generateVacancies(companies []domain.CompanyProfile) {
 		}
 
 		sort.Slice(locations, func(i, j int) bool {
+			if locations[i].Count == locations[j].Count {
+				return locations[i].Location < locations[j].Location
+			}
+
 			return locations[i].Count > locations[j].Count
 		})
 
