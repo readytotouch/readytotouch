@@ -950,7 +950,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4174170773/":                                                               1601, // neo4j
 		"https://www.linkedin.com/jobs/view/4336241737/":                                                               3617, // neo4j
 		"https://www.linkedin.com/jobs/view/4057290510/":                                                               26,   // jack-henry
-		"https://www.linkedin.com/jobs/view/4075815840//":                                                              27,   // jack-henry
+		"https://www.linkedin.com/jobs/view/4075815840/":                                                               27,   // jack-henry
 		"https://www.linkedin.com/jobs/view/4142268247/":                                                               765,  // jack-henry
 		"https://www.linkedin.com/jobs/view/4196594213/":                                                               1366, // jack-henry
 		"https://www.linkedin.com/jobs/view/4200018606/":                                                               1437, // jack-henry

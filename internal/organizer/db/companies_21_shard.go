@@ -456,6 +456,7 @@ func companies21Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4285039642/",
 							Location:             "London, England, United Kingdom",
+							CloudProviders:       []domain.CloudProvider{domain.AWS},
 							Date:                 mustDate("2025-09-10"),
 							WithSalary:           false,
 							Remote:               false,

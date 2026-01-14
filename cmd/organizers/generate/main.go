@@ -131,6 +131,7 @@ func generateVacancies(companies []domain.CompanyProfile) {
 		pairs                       = make([]*dev.VacancyCodePair, 0, count)
 		urlCompanyLanguageExistsMap = make(map[string]map[string]map[int]bool, count)
 		locationCountMap            = make(map[string]int)
+		missingCloudProviders       []string
 	)
 
 	for _, company := range companies {
@@ -189,6 +190,15 @@ func generateVacancies(companies []domain.CompanyProfile) {
 
 				pairs = append(pairs, pair)
 				maxID = max(maxID, pair.ID)
+
+				if company.Ignore {
+					continue
+				}
+
+				// Detect missing cloud provider entries
+				if vacancyContainsCloudProvider(vacancy) {
+					missingCloudProviders = append(missingCloudProviders, vacancy.URL)
+				}
 			}
 		}
 	}
@@ -246,6 +256,11 @@ func generateVacancies(companies []domain.CompanyProfile) {
 			fmt.Printf("%q: %q, // %d\n", location.Location, organizers.LocationCodeMap[location.Location], location.Count)
 		}
 	*/
+
+	fmt.Printf("Missing cloud providers in vacancies: %d\n", len(missingCloudProviders))
+	for _, vacancyURL := range missingCloudProviders {
+		fmt.Println(vacancyURL)
+	}
 }
 
 func generateLogosSearch(companies []domain.CompanyProfile) {
@@ -442,6 +457,30 @@ func compareAliases(l, r string) bool {
 
 	for _, suffix := range suffixes {
 		if strings.TrimSuffix(l, suffix) == strings.TrimSuffix(r, suffix) {
+			return true
+		}
+	}
+
+	return false
+}
+
+func vacancyContainsCloudProvider(vacancy domain.Vacancy) bool {
+	// If cloud providers are already specified, then skip
+	if len(vacancy.CloudProviders) > 0 {
+		return false
+	}
+
+	cloudProviderKeywords := []string{
+		"AWS", "Amazon Web Services",
+		"GCP", "Google Cloud",
+		"Azure",
+		"DigitalOcean", "Digital Ocean",
+		"Vultr",
+	}
+
+	content := strings.ToLower(vacancy.Title + " " + vacancy.SubTitle + " " + vacancy.ShortDescription + " " + vacancy.SwitchingOpportunity)
+	for _, keyword := range cloudProviderKeywords {
+		if strings.Contains(content, strings.ToLower(keyword)) {
 			return true
 		}
 	}

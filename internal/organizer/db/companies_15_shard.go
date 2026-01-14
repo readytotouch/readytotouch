@@ -821,10 +821,12 @@ func companies15Shard() []domain.CompanyProfile {
 					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Staff Engineer – Backend Systems (C# / Rust / AWS)",
+							Title:                "Staff Engineer – Backend Systems (C# / Rust)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4210761460/",
+							Location:             "Boston, MA",
+							CloudProviders:       []domain.CloudProvider{domain.AWS},
 							Date:                 mustDate("2025-06-26", "2025-06-05", "2025-05-14"),
 							WithSalary:           false,
 							Remote:               true,
@@ -1136,20 +1138,23 @@ func companies15Shard() []domain.CompanyProfile {
 					GitHubRepositoryCount: 1,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Senior Software Engineer (Go/AWS)",
+							Title:                "Senior Software Engineer (Go)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4200514129/",
+							Location:             "Belfast, Northern Ireland, United Kingdom",
+							CloudProviders:       []domain.CloudProvider{domain.AWS},
 							Date:                 mustDate("2025-04-04"),
 							WithSalary:           true, // £55,000—£73,000 GBP
 							Remote:               false,
 						},
 						{
-							Title:                "Senior Software Engineer (Go/AWS)",
+							Title:                "Senior Software Engineer (Go)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4307313689/",
 							Location:             "Minneapolis, MN",
+							CloudProviders:       []domain.CloudProvider{domain.AWS},
 							Date:                 mustDate("2025-10-01"),
 							WithSalary:           true, // $129k/yr - $200k/yr
 							Remote:               true,
@@ -1393,11 +1398,12 @@ func companies15Shard() []domain.CompanyProfile {
 							Remote:               false,
 						},
 						{
-							Title:                "GCP/Go Software Engineer (Backend)",
+							Title:                "Go Software Engineer (Backend)",
 							ShortDescription:     "Ad Platform",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4298156404/",
 							Location:             "Tokyo, Japan",
+							CloudProviders:       []domain.CloudProvider{domain.GCP},
 							Date:                 mustDate("2025-11-12", "2025-10-22", "2025-09-10"),
 							WithSalary:           false,
 							Remote:               false,
@@ -3805,6 +3811,7 @@ func companies15Shard() []domain.CompanyProfile {
 							ShortDescription:     "The tools used on the team include Elixir, Phoenix, Kubernetes and Google Cloud Platform",
 							SwitchingOpportunity: "An interest in working with Elixir, this is what we mostly work with",
 							URL:                  "https://www.linkedin.com/jobs/view/4204672355/",
+							CloudProviders:       []domain.CloudProvider{domain.GCP},
 							Date:                 mustDate("2025-04-10"),
 							WithSalary:           false,
 							Remote:               false,
