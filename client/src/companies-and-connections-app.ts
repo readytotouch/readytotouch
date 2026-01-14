@@ -2,6 +2,7 @@ import {toEnter} from "./framework/enter";
 import {welcome} from "./welcome";
 import {htmlToNode} from "./framework/html";
 import {firstQuerySelector} from "./framework/query_selector";
+import {UkraineUniversities, BrazilUniversities, CzechiaUniversities} from "./universities";
 
 let latestKeywords = "";
 let latestLocation = "";
@@ -269,9 +270,11 @@ function prepareConnections(
 ): Connections {
     let universitiesQueryParam = "";
     if (window.location.href.indexOf("ukraine") !== -1) {
-        universitiesQueryParam = JSON.stringify(["818029", "850102", "364340", "496320", "1198954", "1257361", "15250306", "15251128", "15099424", "782774", "15101979", "15101061", "80424966", "6261241", "658198", "11443062", "15099425", "15099711", "15101057", "15102004", "18080249", "15143861", "15101046", "1599158", "15101060", "15100187", "9029417", "7991636", "15101074", "27066401", "18144134", "15101998", "15149751", "18691495", "15099038"]);
+        universitiesQueryParam = UkraineUniversities;
     } else if (window.location.href.indexOf("brazil") !== -1) {
-        universitiesQueryParam = JSON.stringify(["239895", "986104", "15171", "69715404", "10866", "28514", "17959", "312647", "1379596", "38307", "760298"]);
+        universitiesQueryParam = BrazilUniversities;
+    } else if (window.location.href.indexOf("czechia") !== -1) {
+        universitiesQueryParam = CzechiaUniversities;
     }
 
     let connections1stURL = new URL("https://www.linkedin.com/search/results/people/");

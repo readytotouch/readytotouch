@@ -1,5 +1,5 @@
 {% import "strconv" %}
-{%- func OrganizersCompaniesV2(
+{%- func OrganizersCompaniesV2Alpha(
   organizerFeature OrganizerFeature,
   headerProfiles []SocialProviderUser,
   companies []Company,
@@ -44,7 +44,7 @@
     {%= ga() %}
 </head>
 
-<body class="organizer-companies-inner" data-companies-page-version="2">
+<body class="organizer-companies-inner" data-companies-page-version="2-alpha">
 <main class="main-wrapper">
 <header class="header">
   <div class="header__wrapper">
@@ -131,7 +131,7 @@
   <div class="search-result__filter-group search-result__filter-group--wide">
     <div class="search-result__filter-header">
       <h2 class="search-result__filter-headline">Filters:</h2>
-      <button id="js-criteria-reset" class="button button--light-link search-result__filter-headline-reset" style="visibility: hidden;">Reset all</button>
+      <button class="button button--light-link search-result__filter-headline-reset js-criteria-reset" style="visibility: hidden;">Reset all</button>
     </div>
 
     <div class="filters">
@@ -445,10 +445,10 @@
                           <a href="https://github.com/{%s company.GitHubProfile.Login %}" target="_blank" class="button-link card__links-link">Overview</a>
                       </li>
                       <li class="card__links-item">
-                          <a href="https://github.com/orgs/{%s company.GitHubProfile.Login %}/repositories?q=lang:{%s organizerFeature.Organizer.GitHubAlias %}" target="_blank" class="button-link card__links-link">Repositories ({%d fetchGitHubRepositoriesCount(company, organizerFeature.Organizer.Language) %})</a>
+                          <a href="https://github.com/orgs/{%s company.GitHubProfile.Login %}/repositories?q=lang:{%s organizerFeature.Organizer.GitHubAlias %}" target="_blank" class="button-link card__links-link">Repositories ({%d formatGitHubRepositoryCount(company, organizerFeature.Organizer.Language) %})</a>
                       </li>
                       <li class="card__links-item">
-                          <a href="https://github.com/orgs/{%s company.GitHubProfile.Login %}/followers" target="_blank" class="button-link card__links-link">Followers ({%s fetchGitHubFollowers(company) %})</a>
+                          <a href="https://github.com/orgs/{%s company.GitHubProfile.Login %}/followers" target="_blank" class="button-link card__links-link">Followers ({%s formatGitHubFollowers(company) %})</a>
                       </li>
                       {% endif %}
                   </ul>

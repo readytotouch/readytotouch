@@ -1,5 +1,3 @@
-import {organizersWelcome} from "./welcome";
-
 import urlStateContainer from "./framework/company_url_state_container";
 import {
     COMPANY_SEARCH_QUERY,
@@ -23,49 +21,19 @@ import {responsiveHeaderProfileWidget} from "./responsive-header-profile-widget"
 import {githubStarsWidget} from "./github-stars-widget";
 import {responsiveFilterWidget} from "./responsive-filter-widget";
 import {responsiveCompanyShowMoreWidget} from "./responsive-company-show-more-widget";
+import {addCompanyFavoriteEvent} from "./organizers-companies-favorite";
 
-function markCompanyFavorite(companyId: number, favorite: boolean, callback: () => void) {
-    fetch(`/api/v1/companies/${companyId}/favorite.json`, {
-        method: "PATCH",
-        body: JSON.stringify({
-            favorite: favorite,
-        }),
-    }).then(function (response) {
-        // Unauthorized
-        if (response.status === 401) {
-            window.location.href = organizersWelcome();
-
-            return;
-        }
-
-        callback();
-    }).catch(console.error);
-}
-
-const $companiesContainer = document.getElementById("js-companies-container");
 const $companies = document.querySelectorAll(".js-company");
 const $resultCount = document.getElementById("js-result-count");
 
-$companies.forEach(function ($company: HTMLElement) {
-    const companyId = parseInt($company.getAttribute("data-company-id"));
-
-    const $favorite = $company.querySelector(".js-company-favorite");
-    $favorite.addEventListener("click", function () {
-        const current = $favorite.classList.contains("in-favorite");
-        const next = !current;
-
-        markCompanyFavorite(companyId, next, function () {
-            if (next) {
-                $favorite.classList.add("in-favorite");
-
-                $favorite.setAttribute("title", "Remove from favorites")
-            } else {
-                $favorite.classList.remove("in-favorite");
-
-                $favorite.setAttribute("title", "Add to favorites")
-            }
-        });
-    });
+$companies.forEach(function ($company) {
+    addCompanyFavoriteEvent(
+        $company as HTMLElement,
+        {
+            id: parseInt($company.getAttribute("data-company-id")),
+            favorite: $company.querySelector(".js-company-favorite").classList.contains("in-favorite"),
+        } as any,
+    );
 });
 
 const $form = document.getElementById("js-company-search-form");
@@ -78,8 +46,7 @@ const $inFavoritesCheckbox = document.getElementById("js-criteria-in-favorites")
 const $inRustFoundationMembersCheckbox = document.getElementById("js-criteria-rust-foundation-members") as HTMLInputElement;
 const $selectedCriteria = document.getElementById("js-company-selected-criteria");
 const $optionalMobileSelectedCriteriaCount = document.getElementById("js-mobile-selected-criteria-count");
-// "#js-criteria-reset" for backward compatibility
-const $resetButtons = document.querySelectorAll("#js-criteria-reset, .js-criteria-reset") as any as Array<HTMLElement>;
+const $resetButtons = document.querySelectorAll(".js-criteria-reset") as any as Array<HTMLElement>;
 
 $typeCheckboxes.onChange(function (state: Array<string>) {
     urlStateContainer.setArrayCriteria(COMPANY_TYPE_CRITERIA_NAME, state);
@@ -361,7 +328,6 @@ function search() {
         // debug time measurement
         const start = performance.now();
 
-        // $companiesContainer.hidden = true;
         $companies.forEach(function ($company: HTMLElement) {
             if (match($company)) {
                 $company.hidden = false;
@@ -373,7 +339,6 @@ function search() {
 
             $company.hidden = true;
         });
-        // $companiesContainer.hidden = false;
 
         // debug time measurement
         const end = performance.now();

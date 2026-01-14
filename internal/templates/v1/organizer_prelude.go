@@ -26,132 +26,6 @@ const (
 	keywordsCommon       = `"Developer" OR "Engineer" OR "DevOps"`
 )
 
-var (
-	showLocationMap = map[string]bool{
-		"United States":                            true, // 62
-		"Bengaluru, Karnataka, India":              true, // 57
-		"London, England, United Kingdom":          true, // 49
-		"Berlin, Berlin, Germany":                  true, // 40
-		"Ho Chi Minh City, Vietnam":                true, // 23
-		"Warsaw, Mazowieckie, Poland":              true, // 23
-		"Cracow, Małopolskie, Poland":              true, // 23
-		"London Area, United Kingdom":              true, // 21
-		"Poland":                                   true, // 19
-		"United Kingdom":                           true, // 19
-		"Prague, Prague, Czechia":                  true, // 18
-		"Paris, Île-de-France, France":             true, // 18
-		"Pune, Maharashtra, India":                 true, // 18
-		"Tel Aviv-Yafo, Tel Aviv District, Israel": true, // 18
-		"Spain":                                     true, // 17
-		"New York, NY":                              true, // 15
-		"Toronto, ON":                               true, // 14
-		"Barcelona, Catalonia, Spain":               true, // 13
-		"Germany":                                   true, // 13
-		"Chicago, IL":                               true, // 13
-		"Canada":                                    true, // 11
-		"São Paulo, São Paulo, Brazil":              true, // 11
-		"Hyderabad, Telangana, India":               true, // 10
-		"San Francisco, CA":                         true, // 9
-		"Czechia":                                   true, // 9
-		"Richmond, VA":                              true, // 9
-		"Hamburg, Hamburg, Germany":                 true, // 9
-		"Budapest, Budapest, Hungary":               true, // 9
-		"Sofia, Sofia City, Bulgaria":               true, // 9
-		"Sydney, New South Wales, Australia":        true, // 9
-		"Plano, TX":                                 true, // 9
-		"San Jose, CA":                              true, // 8
-		"Munich, Bavaria, Germany":                  true, // 8
-		"Madrid, Community of Madrid, Spain":        true, // 8
-		"Belgrade, Serbia":                          true, // 8
-		"Montreal, QC":                              true, // 8
-		"Amsterdam, North Holland, Netherlands":     true, // 8
-		"Brno, South Moravia, Czechia":              true, // 8
-		"Ho Chi Minh City Metropolitan Area":        true, // 7
-		"Taipei, Taipei City, Taiwan":               true, // 7
-		"Istanbul, Türkiye":                         true, // 7
-		"Vienna, Vienna, Austria":                   true, // 7
-		"Palo Alto, CA":                             true, // 7
-		"Austin, TX":                                true, // 7
-		"Berlin, Germany":                           true, // 7
-		"Singapore, Singapore":                      true, // 7
-		"Tallinn, Harjumaa, Estonia":                true, // 7
-		"Gurugram, Haryana, India":                  true, // 7
-		"Stockholm, Stockholm County, Sweden":       true, // 7
-		"India":                                     true, // 7
-		"Chennai, Tamil Nadu, India":                true, // 7
-		"McLean, VA":                                true, // 6
-		"Slovakia":                                  true, // 6
-		"Milan, Lombardy, Italy":                    true, // 6
-		"Brazil":                                    true, // 6
-		"Istanbul, Istanbul, Türkiye":               true, // 6
-		"Seattle, WA":                               true, // 6
-		"Lyon, Auvergne-Rhône-Alpes, France":        true, // 6
-		"Vilnius, Vilniaus, Lithuania":              true, // 6
-		"Dublin, County Dublin, Ireland":            true, // 6
-		"Jersey City, NJ":                           true, // 5
-		"Leicester, England, United Kingdom":        true, // 5
-		"Atlanta, GA":                               true, // 5
-		"Noida, Uttar Pradesh, India":               true, // 5
-		"Philippines":                               true, // 5
-		"Türkiye":                                   true, // 5
-		"Ottawa, ON":                                true, // 5
-		"Wrocław, Dolnośląskie, Poland":             true, // 5
-		"Belfast, Northern Ireland, United Kingdom": true, // 5
-		"EMEA":                                true, // 5
-		"New York, United States":             true, // 4
-		"Fort Worth, TX":                      true, // 4
-		"Dhaka, Dhaka, Bangladesh":            true, // 4
-		"Cyprus":                              true, // 4
-		"Los Angeles, CA":                     true, // 4
-		"Mexico City, Mexico":                 true, // 4
-		"Ukraine":                             true, // 4
-		"Bengaluru East, Karnataka, India":    true, // 4
-		"Herzliya, Tel Aviv District, Israel": true, // 4
-		"Valbonne, Provence-Alpes-Côte d'Azur, France": true, // 4
-		"Utrecht, Utrecht, Netherlands":                true, // 4
-		"European Union":                               true, // 4
-		"Mumbai, Maharashtra, India":                   true, // 4
-		"Helsinki, Uusimaa, Finland":                   true, // 4
-		"Singapore":                                    true, // 4
-		"Ireland":                                      true, // 4
-		"Greater Colorado Springs Area":                true, // 4
-		"Dedham, MA":                                   true, // 4
-		"Jacksonville, FL":                             true, // 4
-		"Boulder, CO":                                  true, // 4
-		"Thiruvananthapuram, Kerala, India":            true, // 4
-		"Lithuania":                                    true, // 3
-		"Sweden":                                       true, // 3
-		"Alpharetta, GA":                               true, // 3
-		"Delhi, Delhi, India":                          true, // 3
-		"Netanya, Center District, Israel":             true, // 3
-		"Sofia Metropolitan Area":                      true, // 3
-		"Finland":                                      true, // 3
-		"Boston, MA":                                   true, // 3
-		"Greater Barcelona Metropolitan Area":          true, // 3
-		"Bristol, England, United Kingdom":             true, // 3
-		"Phoenix, AZ":                                  true, // 3
-		"Petaling Jaya, Selangor, Malaysia":            true, // 3
-		"Oslo, Oslo, Norway":                           true, // 3
-		"Greater Munich Metropolitan Area":             true, // 3
-		"Kaunas, Kaunas, Lithuania":                    true, // 3
-		"Porto, Porto, Portugal":                       true, // 3
-		"Georgia":                                      true, // 3
-		"Mulhuddart, Fingal, Ireland":                  true, // 3
-		"Tel Aviv District, Israel":                    true, // 3
-		"Glendale, CA":                                 true, // 3
-		"New York City Metropolitan Area":              true, // 3
-		"Bellevue, WA":                                 true, // 3
-		"Portugal":                                     true, // 3
-		"Estonia":                                      true, // 3
-		"Argentina":                                    true, // 3
-		"Mumbai Metropolitan Region":                   true, // 3
-		"Tokyo, Japan":                                 true, // 3
-		"Manchester, England, United Kingdom":          true, // 3
-		"Costa Mesa, CA":                               true, // 3
-		"Cary, NC":                                     true, // 3
-	}
-)
-
 func companyOrganizers(company Company) []OrganizerState {
 	var (
 		source = []domain.Organizer{
@@ -178,14 +52,6 @@ func companyOrganizers(company Company) []OrganizerState {
 	}
 
 	return result
-}
-
-func showLocation(s string) bool {
-	if s == "" {
-		return false
-	}
-
-	return showLocationMap[s]
 }
 
 func linkedinConnectionsURL(companies []Company, universities []University) string {
@@ -236,12 +102,8 @@ func linkedinEmployeesPostsURL(companies []Company, languageTitle string) string
 	values := url.Values{
 		"authorCompany": {string(companyQueryParam)},
 		"datePosted":    {`"past-month"`},
-		"sortBy":        {"RELEVANT", `"date_posted"`},
+		"sortBy":        {`"date_posted"`},
 		"keywords":      {`"Hiring" OR ` + `"` + languageTitle + `"`}, // "Hiring" OR "Golang"
-	}
-
-	if len(companies) > 0 {
-		values["f_C"] = []string{strings.Join(companiesToLinkedInIDs(companies), ",")}
 	}
 
 	return "https://www.linkedin.com/search/results/content/?" + values.Encode()

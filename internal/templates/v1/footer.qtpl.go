@@ -54,7 +54,7 @@ func streamfooter(qw422016 *qt422016.Writer) {
             </div>
         </div>
         <div class="footer__copyrights">
-            <span>© 2025 Yaroslav Podorvanov</span>
+            <span>© 2026 Yaroslav Podorvanov</span>
             <img class="footer__flag-UA" src="/assets/images/pages/online/flag-of-Ukraine.svg" alt="Flag of Ukraine">
         </div>
     </div>

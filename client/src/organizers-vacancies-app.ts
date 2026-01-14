@@ -1,5 +1,3 @@
-import {organizersWelcome} from "./welcome";
-
 import urlStateContainer from "./framework/vacancy_url_state_container";
 import {
     VACANCY_SEARCH_QUERY,
@@ -22,63 +20,32 @@ import {setStateByURLMapper} from "./framework/set_state_by_url";
 import {responsiveHeaderProfileWidget} from "./responsive-header-profile-widget";
 import {githubStarsWidget} from "./github-stars-widget";
 import {responsiveFilterWidget} from "./responsive-filter-widget";
-
-function markVacancyFavorite(vacancyId: number, favorite: boolean, callback: () => void) {
-    fetch(`/api/v1/vacancies/${vacancyId}/favorite.json`, {
-        method: "PATCH",
-        body: JSON.stringify({
-            favorite: favorite,
-        }),
-    }).then(function (response) {
-        // Unauthorized
-        if (response.status === 401) {
-            window.location.href = organizersWelcome();
-
-            return;
-        }
-
-        callback();
-    }).catch(console.error);
-}
+import {addVacancyFavoriteEvent} from "./organizers-vacancies-favorite";
 
 const $vacancies = document.querySelectorAll(".js-vacancy");
 const $resultCount = document.getElementById("js-result-count");
 
 $vacancies.forEach(function ($vacancy: HTMLElement) {
-    const vacancyId = parseInt($vacancy.getAttribute("data-vacancy-id"));
-
-    const $favorite = $vacancy.querySelector(".js-vacancy-favorite");
-    $favorite.addEventListener("click", function () {
-        const current = $favorite.classList.contains("in-favorite");
-        const next = !current;
-
-        markVacancyFavorite(vacancyId, next, function () {
-            if (next) {
-                $favorite.classList.add("in-favorite");
-
-                $favorite.setAttribute("title", "Remove from favorites")
-            } else {
-                $favorite.classList.remove("in-favorite");
-
-                $favorite.setAttribute("title", "Add to favorites")
-            }
-        });
-    });
+    addVacancyFavoriteEvent(
+        $vacancy as HTMLElement,
+        {
+            id: parseInt($vacancy.getAttribute("data-vacancy-id")),
+            favorite: $vacancy.querySelector(".js-vacancy-favorite").classList.contains("in-favorite"),
+        } as any,
+    );
 });
-
 
 const $form = document.getElementById("js-vacancy-search-form");
 const $search = document.getElementById("js-vacancy-query") as HTMLInputElement;
 const $typeCheckboxes = new InputCheckboxes(document.querySelectorAll("input.js-criteria-company-type") as any as Array<HTMLInputElement>);
 const $industryCheckboxes = new InputCheckboxes(document.querySelectorAll("input.js-criteria-company-industry") as any as Array<HTMLInputElement>);
 const $hasEmployeesFromCountryCheckboxes = new InputCheckboxes(document.querySelectorAll("input.js-criteria-has-employees-from-country") as any as Array<HTMLInputElement>);
-const $inRustFoundationMembersCheckbox = document.getElementById("js-criteria-rust-foundation-members") as HTMLInputElement;
 const $remoteCheckbox = document.getElementById("js-criteria-remote") as HTMLInputElement;
 const $inFavoritesCheckbox = document.getElementById("js-criteria-in-favorites") as HTMLInputElement;
+const $inRustFoundationMembersCheckbox = document.getElementById("js-criteria-rust-foundation-members") as HTMLInputElement;
 const $selectedCriteria = document.getElementById("js-vacancy-selected-criteria");
 const $optionalMobileSelectedCriteriaCount = document.getElementById("js-mobile-selected-criteria-count");
-// "#js-criteria-reset" for backward compatibility
-const $resetButtons = document.querySelectorAll("#js-criteria-reset, .js-criteria-reset") as any as Array<HTMLElement>;
+const $resetButtons = document.querySelectorAll(".js-criteria-reset") as any as Array<HTMLElement>;
 
 $typeCheckboxes.onChange(function (state: Array<string>) {
     urlStateContainer.setArrayCriteria(VACANCY_COMPANY_TYPE_CRITERIA_NAME, state);

@@ -1,0 +1,43 @@
+{%- func organizersCriteriaLocation() -%}
+  <div class="filters__group">
+    <header class="filters__header filters__header--with-info">
+      <h4 class="filters__headline">Location</h4>
+      {% comment %}
+      <img
+        class="ml-14"
+        alt="Info icon"
+        width="14"
+        height="14"
+        title="info"
+        src="/assets/images/pages/common/info.svg"
+      />
+      {% endcomment %}
+    </header>
+    <div class="filters__elements filters__elements--location">
+      <div class="filters__elements-inner">
+        {% comment %}
+          <label class="checkbox filters__element">
+            <input checked class="checkbox__input" type="checkbox" />
+            <span class="checkbox__element"></span>
+            All
+          </label>
+        {% endcomment %}
+        {% for _, location := range criteriaLocations() %}
+          <label class="checkbox filters__element filters__element--location">
+            <input class="js-criteria-location checkbox__input" type="checkbox" data-alias="{%s location.Code %}" />
+            <span class="checkbox__element"></span>
+            <span class="fi fi-{%s location.Code %}"></span>
+            <span class="filters__element-text filters__element-text--truncated">{%s location.Name %}</span>
+          </label>
+        {% endfor %}
+      </div>
+      {% comment %}
+        <label class="checkbox filters__element">
+          <input class="checkbox__input" type="checkbox" />
+          <span class="checkbox__element"></span>
+          <span class="filters__element-text filters__element-text--truncated">Full Remote available</span>
+        </label>
+      {% endcomment %}
+    </div>
+  </div>
+{%- endfunc -%}

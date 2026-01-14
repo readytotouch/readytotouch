@@ -1,0 +1,296 @@
+{%- func OrganizersCompaniesV3Beta(
+  organizerFeature OrganizerFeature,
+  headerProfiles []SocialProviderUser,
+  companies []Company,
+  ukrainianUniversities []University,
+  czechUniversities []University,
+  userCompanyFavoriteMap map[int64]bool,
+  authQueryParams string,
+) -%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>{%s organizerFeature.Organizer.Title %} companies – product and startup teams using {%s organizerFeature.Organizer.Title %} | ReadyToTouch</title>
+	<meta name="title" content="{%s organizerFeature.Organizer.Title %} companies – product and startup teams using {%s organizerFeature.Organizer.Title %} | ReadyToTouch">
+	<meta name="description" content="Discover companies using {%s organizerFeature.Organizer.Title %} in production. This list features startups and product teams hiring {%s organizerFeature.Organizer.Title %} developers or already working with {%s organizerFeature.Organizer.Title %}.">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="author" type="text/plain" href="https://readytotouch.com/humans.txt"/>
+
+    <meta property="og:title" content="{%s organizerFeature.Organizer.Title %} companies | ReadyToTouch">
+    <meta property="og:description" content="Discover startups and product teams using {%s organizerFeature.Organizer.Title %} in production.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://readytotouch.com/assets/images/og/organizers-light.jpg">
+    <meta property="og:url" content="https://readytotouch.com/{%s organizerFeature.Organizer.Alias %}/companies">
+
+    <!-- JSON-LD (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "{%s organizerFeature.Organizer.Title %} companies",
+      "description": "List of companies using {%s organizerFeature.Organizer.Title %} in production. Startups and product teams.",
+      "url": "https://readytotouch.com/{%s organizerFeature.Organizer.Alias %}/companies"
+    }
+    </script>
+
+    {%= favicon() %}
+    {%= organizersFonts() %}
+    {%= organizersCompaniesV3Styles() %}
+    {%= plausibleAnalytics() %}
+    {%= ga() %}
+</head>
+
+<body>
+<div class="main-wrapper main-wrapper--organizer-inner" data-companies-page-version="3-beta">
+<header class="header">
+  <div class="header__wrapper">
+    <a href="/{%s organizerFeature.Organizer.Alias %}" class="header__logo">
+      <img
+        width="30"
+        height="30"
+        class="header__logo-img"
+        src="/assets/images/pages/organizer/{%s organizerFeature.Organizer.Logo %}"
+        alt="organizer logo"
+      />
+      <span class="header__logo-label">Organizer</span>
+    </a>
+    <div class="header__nav-overlay js-header-nav">
+      <ul class="header__nav">
+        <li class="header__nav-item">
+          <a href="/{%s organizerFeature.Organizer.Alias %}/companies" class="header__nav-link active">Companies</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="/{%s organizerFeature.Organizer.Alias %}/jobs" class="header__nav-link">Jobs</a>
+        </li>
+        {% comment %}
+        <li class="header__nav-item">
+          <a href="/{%s organizerFeature.Organizer.Alias %}/communities" class="header__nav-link">Communities</a>
+        </li>
+        {% endcomment %}
+      </ul>
+      {%= organizersHeaderStarsV3() %}
+      {% if len(headerProfiles) > 0 %}
+        {%= organizersHeaderProfileV3(headerProfiles) %}
+      {% else %}
+        <a href="/{%s organizerFeature.Organizer.Alias %}/welcome{%s authQueryParams %}" class="button button--bordered-black button--small-padding header__login-button">Log in</a>
+      {% endif %}
+    </div>
+    {%= organizersHamburgerV3() %}
+  </div>
+</header>
+
+<main class="main-content">
+  <div class="container">
+    <nav aria-label="breadcrumb" aria-labelledby="navigation through the bread crumbs" class="breadcrumb">
+      <ul class="breadcrumb__list">
+        <li class="breadcrumb__item">
+          <a class="breadcrumb__link" href="/">Main</a>
+        </li>
+        <li class="breadcrumb__item">
+          <a class="breadcrumb__link" href="/{%s organizerFeature.Organizer.Alias %}">{%s organizerFeature.Organizer.Title %}</a>
+        </li>
+        <li class="breadcrumb__item">
+          <span class="breadcrumb__page" aria-current="page">{%s organizerFeature.Title %}</span>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <section class="search-container container">
+    <div class="search search--projects search--organizer search--with-sort">
+      <div class="search__input-group">
+        <form id="js-company-search-form">
+          <input
+            class="search__input"
+            id="js-company-query"
+            type="search"
+            name="search"
+            placeholder="Search"
+          />
+          {% comment %}
+          <!-- Commented out because this autocomplete shifts to the right when viewing  -->
+          <!--
+            <input class="search__input" id="js-company-query" type="search" name="search" placeholder="Search" list="js-company-query-datalist" />
+            <datalist id="js-company-query-datalist">
+              {% for _, company := range companies %}
+                <option value="{%s company.Name %}"></option>
+              {% endfor %}
+            </datalist>
+          -->
+          {% endcomment %}
+          <img class="search__icon" alt="Search icon" width="20" height="20" src="/assets/images/pages/common/search.svg" />
+        </form>
+      </div>
+      <button type="button" class="mobile-filter js-mobile-open-filter-container-button">
+        <img
+          src="/assets/images/pages/common/filter.svg"
+          alt="Filter icon"
+          width="16"
+          height="16"
+        />
+        <span id="js-mobile-selected-criteria-count" class="mobile-filter__counter" style="visibility: hidden;">0</span>
+      </button>
+      {% comment %}
+      <!-- TODO sorter -->
+      <div class="sorter sorter--desktop">
+        <button type="button" class="sorter__title">
+          <span class="sorter__title-text">By latest job posting</span>
+          <span class="sorter__icon-wrapper">
+            <img
+              alt="caret-down icon"
+              width="12"
+              height="7"
+              src="/assets/images/pages/organizer/caret-down.svg"
+            />
+          </span>
+        </button>
+        <ul class="sorter__list js-sorter-list">
+          <li class="sorter__item is-selected js-sorter-item">Newest first</li>
+          <li class="sorter__item js-sorter-item">Oldest first</li>
+          <li class="sorter__item js-sorter-item">By LinkedIn followers</li>
+          <li class="sorter__item js-sorter-item">By Glassdoor reviews</li>
+          <li class="sorter__item js-sorter-item">By Blind reviews</li>
+          <li class="sorter__item js-sorter-item">By Market Cap</li>
+          <li class="sorter__item js-sorter-item">By latest job posting</li>
+        </ul>
+      </div>
+      {% endcomment %}
+    </div>
+  </section>
+
+  <div class="search-result mt-32">
+    <div class="container">
+      <div class="search-result__wrapper">
+        <!-- filters -->
+        <aside class="search-result__filters js-filter-container">
+          <div class="search-result__filter-group search-result__filter-group--wide">
+            <div class="search-result__filter-header">
+              <h2 class="search-result__filter-headline">Filters:</h2>
+              <button type="button" class="button button--light-link search-result__filter-headline-reset js-criteria-reset" style="visibility: hidden;">Reset all</button>
+              <button type="button" class="button button--light-link search-result__filter-headline-reset-mobile js-mobile-close-filter-container-button">
+                <img src="/assets/images/pages/common/cross-thin.svg" alt="cross icon" width="24" height="24">
+              </button>
+            </div>
+
+            <div class="filters search-result__filters-list">
+              {% comment %}
+              <!-- Location -->
+              {%= organizersCriteriaLocation() %}
+              <!-- /Location -->
+              {% endcomment %}
+
+              <!-- Company type -->
+              {%= organizersCriteriaCompanyType() %}
+              <!-- /Company type -->
+
+              <!-- Industry -->
+              {%= organizersCriteriaIndustry() %}
+              <!-- /Industry -->
+
+              <!-- Rating -->
+              {%= organizersCriteriaGlassdoorReviewsRate() %}
+              <!-- /Rating -->
+
+              <!-- Company size -->
+              {%= organizersCriteriaLinkedInCompanySize() %}
+              <!-- /Company size -->
+
+              {% comment %}
+              <!-- Hosting -->
+              <!-- @TODO -->
+              <!-- /Hosting -->
+              {% endcomment %}
+
+              {% comment %}
+              <!-- API Type -->
+              <!-- @TODO -->
+              <!-- /API Type -->
+              {% endcomment %}
+
+              <!-- Other -->
+              {%= organizersCriteriaOther(organizerFeature) %}
+              <!-- /Other -->
+
+            </div>
+            <footer class="search-result__filter-footer">
+              <button type="button" class="button button--light-link search-result__filter-footer-button js-criteria-reset">Reset all</button>
+              <button type="button" class="button button--black button--small js-mobile-close-filter-container-button">Apply</button>
+            </footer>
+          </div>
+        </aside>
+        <!-- /filters -->
+
+        <div class="search-result--group">
+          <!-- selected filters -->
+          <div class="filter-used" style="visibility: hidden;">
+            <div class="filter-used__title">Applied filters:</div>
+            <ul id="js-company-selected-criteria" class="filter-used__list"></ul>
+          </div>
+          <!-- /selected filters -->
+
+          <div class="search-result__list">
+            <div class="search-result__top-actions">
+              <p class="search-result-found"><span id="js-result-count" class="search-result-found__amount"></span> results</p>
+              {% comment %}
+              <!-- TODO this section -->
+              <div class="sorter sorter--mobile">
+                <button type="button" class="sorter__title">
+                  <span class="sorter__title-text">Newest first</span>
+                  <span class="sorter__icon-wrapper">
+                    <img
+                      alt="caret-down icon"
+                      width="12"
+                      height="7"
+                      src="/assets/images/pages/organizer/caret-down.svg"
+                    />
+                  </span>
+                </button>
+                <ul class="sorter__list">
+                  <li class="sorter__item is-selected">Newest first</li>
+                  <li class="sorter__item">Oldest first</li>
+                  <li class="sorter__item">By LinkedIn followers</li>
+                  <li class="sorter__item">By Glassdoor reviews</li>
+                  <li class="sorter__item">By Blind reviews</li>
+                  <li class="sorter__item">By Market Cap</li>
+                  <li class="sorter__item">By latest job posting</li>
+                </ul>
+              </div>
+              {% endcomment %}
+            </div>
+
+            <!-- card list -->
+            <div id="js-companies-container" class="search-result__cards row-gap-8 mt-24"></div>
+            <!-- /card list -->
+
+            <!-- search footer -->
+            <footer class="search-result__footer">
+              <div class="search-result__footer-action-list">
+                <button id="js-pagination-show-more-button" class="button button--bordered-black-transparent d-none" type="button">Show more</button>
+                <button id="js-pagination-show-all-button" class="button button--bordered-gray d-none" type="button">Show all (+0)</button>
+              </div>
+
+              <!-- pagination -->
+              <nav id="js-pagination-pages" class="pagination search-result__pagination"></nav>
+              <!-- /pagination -->
+
+            </footer>
+            <!-- /search footer -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+{%= organizersFooterV3() %}
+</div>
+<script src="/assets/js/organizers-companies-v3-app.js?{%d appVersion %}"></script>
+</body>
+
+</html>
+{%- endfunc -%}

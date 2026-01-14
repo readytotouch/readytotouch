@@ -1,5 +1,5 @@
 {% import "strconv" %}
-{%- func OrganizersVacanciesV2(
+{%- func OrganizersVacanciesV2Alpha(
   organizerFeature OrganizerFeature,
   headerProfiles []SocialProviderUser,
   companies []Company,
@@ -33,7 +33,7 @@
       "@type": "WebPage",
       "name": "{%s organizerFeature.Organizer.Title %} jobs",
       "description": "Find {%s organizerFeature.Organizer.Title %} jobs in companies using {%s organizerFeature.Organizer.Alias %} in production. Remote and onsite opportunities for developers.",
-      "url": "https://readytotouch.com/organizers/{%s organizerFeature.Organizer.Alias %}/jobs"
+      "url": "https://readytotouch.com/{%s organizerFeature.Organizer.Alias %}/jobs"
     }
     </script>
 
@@ -44,7 +44,7 @@
     {%= ga() %}
 </head>
 
-<body class="organizer-companies-inner" data-vacancies-page-version="2">
+<body class="organizer-companies-inner" data-vacancies-page-version="2-alpha">
 <main class="main-wrapper">
 	<header class="header">
   <div class="header__wrapper">
@@ -144,7 +144,7 @@
   <div class="search-result__filter-group search-result__filter-group--wide">
     <div class="search-result__filter-header">
       <h2 class="search-result__filter-headline">Filters:</h2>
-      <button id="js-criteria-reset" class="button button--light-link search-result__filter-headline-reset" style="visibility: hidden;">Reset all</button>
+      <button class="button button--light-link search-result__filter-headline-reset js-criteria-reset" style="visibility: hidden;">Reset all</button>
     </div>
 
     <div class="filters">

@@ -42,35 +42,35 @@ func companies24Shard() []domain.CompanyProfile {
 				},
 				Languages: domain.Languages{
 					domain.Go: {
-						GitHubRepositoriesCount: 0,
+						GitHubRepositoryCount: 0,
 						Vacancies:               []domain.Vacancy{},
 					},
 					domain.Rust: {
-						GitHubRepositoriesCount: 0,
+						GitHubRepositoryCount: 0,
 						Vacancies:               []domain.Vacancy{},
 					},
 					domain.Zig: {
-						GitHubRepositoriesCount: 0,
+						GitHubRepositoryCount: 0,
 						Vacancies:               []domain.Vacancy{},
 					},
 					domain.Scala: {
-						GitHubRepositoriesCount: 0,
+						GitHubRepositoryCount: 0,
 						Vacancies:               []domain.Vacancy{},
 					},
 					domain.Elixir: {
-						GitHubRepositoriesCount: 0,
+						GitHubRepositoryCount: 0,
 						Vacancies:               []domain.Vacancy{},
 					},
 					domain.Clojure: {
-						GitHubRepositoriesCount: 0,
+						GitHubRepositoryCount: 0,
 						Vacancies:               []domain.Vacancy{},
 					},
 					domain.Haskell: {
-						GitHubRepositoriesCount: 0,
+						GitHubRepositoryCount: 0,
 						Vacancies:               []domain.Vacancy{},
 					},
 					domain.Erlang: {
-						GitHubRepositoriesCount: 0,
+						GitHubRepositoryCount: 0,
 						Vacancies:               []domain.Vacancy{},
 					},
 				},

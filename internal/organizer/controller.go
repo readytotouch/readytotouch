@@ -24,7 +24,7 @@ import (
 var (
 	testFullPublicSince = time.Date(2025, time.November, 1, 0, 0, 0, 0, time.UTC)
 	testFullPublicUntil = time.Date(2026, time.January, 25, 0, 0, 0, 0, time.UTC)
-	testStrictAuthUntil = time.Date(2025, time.December, 30, 0, 0, 0, 0, time.UTC)
+	testStrictAuthUntil = time.Date(2026, time.January, 8, 0, 0, 0, 0, time.UTC)
 )
 
 func testStrictAuth(date time.Time) bool {
@@ -179,16 +179,20 @@ func (c *Controller) GolangCompaniesUkraine(ctx *gin.Context) {
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
 }
 
-func (c *Controller) CompaniesV1(ctx *gin.Context) {
-	c.companiesAction(ctx, template.OrganizersCompaniesV1)
+func (c *Controller) CompaniesV1Alpha(ctx *gin.Context) {
+	c.companiesAction(ctx, template.OrganizersCompaniesV1Alpha)
 }
 
-func (c *Controller) CompaniesV2(ctx *gin.Context) {
-	c.companiesAction(ctx, template.OrganizersCompaniesV2)
+func (c *Controller) CompaniesV2Alpha(ctx *gin.Context) {
+	c.companiesAction(ctx, template.OrganizersCompaniesV2Alpha)
 }
 
-func (c *Controller) CompaniesV3(ctx *gin.Context) {
-	c.companiesAction(ctx, template.OrganizersCompaniesV3)
+func (c *Controller) CompaniesV3Alpha(ctx *gin.Context) {
+	c.companiesAction(ctx, template.OrganizersCompaniesV3Alpha)
+}
+
+func (c *Controller) CompaniesV3Beta(ctx *gin.Context) {
+	c.companiesAction(ctx, template.OrganizersCompaniesV3Beta)
 }
 
 func (c *Controller) CompanyV1(ctx *gin.Context) {
@@ -295,7 +299,7 @@ func (c *Controller) companiesAction(
 	content := render(
 		organizerFeature,
 		headerProfiles,
-		c.pinnedFirst(companies),
+		companies,
 		db.UkrainianUniversities(),
 		db.CzechUniversities(),
 		userCompanyFavoriteMap,
@@ -479,12 +483,16 @@ func (c *Controller) companyAction(
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
 }
 
-func (c *Controller) JobsV2(ctx *gin.Context) {
-	c.jobsAction(ctx, template.OrganizersVacanciesV2)
+func (c *Controller) JobsV2Alpha(ctx *gin.Context) {
+	c.jobsAction(ctx, template.OrganizersVacanciesV2Alpha)
 }
 
-func (c *Controller) JobsV3(ctx *gin.Context) {
-	c.jobsAction(ctx, template.OrganizersVacanciesV3)
+func (c *Controller) JobsV3Alpha(ctx *gin.Context) {
+	c.jobsAction(ctx, template.OrganizersVacanciesV3Alpha)
+}
+
+func (c *Controller) JobsV3Beta(ctx *gin.Context) {
+	c.jobsAction(ctx, template.OrganizersVacanciesV3Beta)
 }
 
 func (c *Controller) jobsAction(
@@ -1038,7 +1046,8 @@ func (c *Controller) UnsafeCompanies(ctx *gin.Context) {
 
 func (c *Controller) UnsafeCompaniesV3(ctx *gin.Context) {
 	var (
-		uri languageURI
+		authUserID = domain.ContextGetUserID(ctx)
+		uri        languageURI
 	)
 
 	err := ctx.ShouldBindUri(&uri)
@@ -1059,6 +1068,15 @@ func (c *Controller) UnsafeCompaniesV3(ctx *gin.Context) {
 
 	companies := c.companies(organizer.Language)
 
+	c.sortCompanies(companies)
+
+	userCompanyFavoriteMap, err := c.userFavoriteCompanyRepository.GetMap(ctx, authUserID, nil)
+	if err != nil {
+		// @TODO logging
+
+		// NOP, continue
+	}
+
 	result := make([]domain.CompanyResponse, len(companies))
 	for i, company := range companies {
 		result[i] = domain.CompanyResponse{
@@ -1073,11 +1091,12 @@ func (c *Controller) UnsafeCompaniesV3(ctx *gin.Context) {
 			AboutURL:   company.AboutURL,
 			BlogURL:    company.BlogURL,
 			LinkedInProfile: domain.LinkedInProfileResponse{
-				ID:       company.LinkedInProfile.ID,
-				IDs:      company.LinkedInProfile.IDs,
-				Alias:    company.LinkedInProfile.Alias,
-				Name:     company.LinkedInProfile.Name,
-				Verified: company.LinkedInProfile.Verified,
+				ID:        company.LinkedInProfile.ID,
+				IDs:       company.LinkedInProfile.IDs,
+				Alias:     company.LinkedInProfile.Alias,
+				Name:      company.LinkedInProfile.Name,
+				Employees: company.LinkedInProfile.Employees,
+				Verified:  company.LinkedInProfile.Verified,
 			},
 			GitHubProfile: domain.GitHubProfileResponse{
 				Login:     company.GitHubProfile.Login,
@@ -1098,6 +1117,8 @@ func (c *Controller) UnsafeCompaniesV3(ctx *gin.Context) {
 			PinnedUntil:               utils.TimePointerOrNil(company.PinnedUntil),
 			Remote:                    company.Remote,
 			LatestVacancyDate:         utils.TimePointerOrNil(company.LatestVacancyDate),
+			GitHubRepositoryCount:     company.Languages[organizer.Language].GitHubRepositoryCount,
+			Favorite:                  userCompanyFavoriteMap[company.ID],
 		}
 	}
 
@@ -1128,7 +1149,8 @@ func (c *Controller) UnsafeVacancies(ctx *gin.Context) {
 
 func (c *Controller) UnsafeVacanciesV3(ctx *gin.Context) {
 	var (
-		uri languageURI
+		authUserID = domain.ContextGetUserID(ctx)
+		uri        languageURI
 	)
 
 	err := ctx.ShouldBindUri(&uri)
@@ -1147,22 +1169,118 @@ func (c *Controller) UnsafeVacanciesV3(ctx *gin.Context) {
 		return
 	}
 
-	companies := c.companies(organizer.Language)
+	sourceCompanies := c.companies(organizer.Language)
 
-	result := make([]domain.VacancyResponse, 0, 4096)
-	for _, company := range companies {
+	userVacancyFavoriteMap, err := c.userFavoriteVacancyRepository.GetMap(ctx, authUserID, nil)
+	if err != nil {
+		// @TODO logging
+
+		// NOP, continue
+	}
+
+	var (
+		companies               = make([]*domain.VacancyCompanyResponse, 0, len(sourceCompanies))
+		vacancies               = make([]*domain.VacancyResponse, 0, 4096)
+		vacancyIDs              = make([]int64, 0, 4096)
+		maxPinnedUntilVacancyID = int64(0)
+		maxPinnedUntil          = time.Now()
+	)
+
+	for _, company := range sourceCompanies {
+		var (
+			addCompany = false
+		)
+
 		for _, vacancy := range company.Languages[organizer.Language].Vacancies {
 			id, ok := organizers.VacancyUrlMap[vacancy.URL]
 			if ok {
-				result = append(result, domain.VacancyResponse{
-					ID: id,
+				if company.LinkedInProfile.Verified && vacancy.PinnedUntil.After(maxPinnedUntil) {
+					maxPinnedUntilVacancyID = id
+					maxPinnedUntil = vacancy.PinnedUntil
+				}
+
+				vacancies = append(vacancies, &domain.VacancyResponse{
+					ID:               id,
+					Title:            vacancy.Title,
+					ShortDescription: vacancy.ShortDescription,
+					Location: domain.LocationResponse{
+						Raw: vacancy.Location,
+						Country: domain.LocationCountryResponse{
+							Code: organizers.LocationCodeMap[vacancy.Location],
+						},
+					},
+					Source:         utils.DetectVacancySource(vacancy.URL),
+					CloudProviders: company.CloudProviders,
+					Remote:         vacancy.Remote,
+					Date:           vacancy.Date,
+					PinnedUntil:    utils.TimePointerOrNil(vacancy.PinnedUntil),
+					MonthlyViews:   0,
+					Company: domain.CompanyReferenceResponse{
+						ID: company.ID,
+					},
+					Favorite: userVacancyFavoriteMap[id],
 				})
+
+				vacancyIDs = append(vacancyIDs, id)
+
+				addCompany = true
 			}
+		}
+
+		if addCompany {
+			companies = append(companies, &domain.VacancyCompanyResponse{
+				ID:   company.ID,
+				Type: company.Type,
+				Logo: domain.CompanyLogoResponse{
+					MainSize: company.Logo.V2,
+				},
+				Name: company.Name,
+				LinkedInProfile: domain.VacancyCompanyLinkedInProfileResponse{
+					Alias:     company.LinkedInProfile.Alias,
+					Employees: company.LinkedInProfile.Employees,
+					Verified:  company.LinkedInProfile.Verified,
+				},
+				GlassdoorProfile: domain.VacancyCompanyGlassdoorProfileResponse{
+					ReviewsRate: company.GlassdoorProfile.ReviewsRate,
+				},
+				Industries:                company.Industries,
+				HasEmployeesFromCountries: company.HasEmployeesFromCountries,
+				RustFoundationMember:      company.RustFoundationMember,
+			})
 		}
 	}
 
+	month := time.Now().UTC().Truncate(time.Hour*24).AddDate(0, -1, 0)
+	vacancyMonthlyViewsMap, err := c.vacancyViewStatsRepository.Stats(ctx, vacancyIDs, month)
+	if err != nil {
+		// @TODO logging
+
+		// NOP, continue
+	}
+
+	for _, vacancy := range vacancies {
+		vacancy.MonthlyViews = vacancyMonthlyViewsMap[vacancy.ID]
+	}
+
+	sort.Slice(companies, func(i, j int) bool {
+		return companies[i].ID < companies[j].ID
+	})
+
+	sort.Slice(vacancies, func(i, j int) bool {
+		if vacancies[i].ID == maxPinnedUntilVacancyID {
+			return true
+		}
+
+		if vacancies[j].ID == maxPinnedUntilVacancyID {
+			return false
+		}
+
+		return vacancies[i].Date.After(vacancies[j].Date)
+	})
+
 	ctx.JSON(http.StatusOK, &domain.VacanciesResponse{
-		Vacancies: result,
+		Companies: companies,
+		Vacancies: vacancies,
 	})
 }
 
@@ -1217,6 +1335,8 @@ func (c *Controller) parseFeatureFromReferer(ctx *gin.Context) (dbs.FeatureWait,
 }
 
 func (c *Controller) organizerFeature(path string) (domain.OrganizerFeature, bool) {
+	path = strings.TrimSuffix(path, "/alpha")
+	path = strings.TrimSuffix(path, "/beta")
 	path = strings.TrimSuffix(path, "/v1")
 	path = strings.TrimSuffix(path, "/v2")
 	path = strings.TrimSuffix(path, "/v3")
@@ -1540,7 +1660,27 @@ func (c *Controller) companies(language domain.Language) []domain.CompanyProfile
 }
 
 func (c *Controller) sortCompanies(companies []domain.CompanyProfile) {
+	var (
+		maxPinnedUntilCompanyID = int64(0)
+		maxPinnedUntil          = time.Now()
+	)
+
+	for _, company := range companies {
+		if company.LinkedInProfile.Verified && company.PinnedUntil.After(maxPinnedUntil) {
+			maxPinnedUntilCompanyID = company.ID
+			maxPinnedUntil = company.PinnedUntil
+		}
+	}
+
 	slices.SortFunc(companies, func(a, b domain.CompanyProfile) int {
+		if a.ID == maxPinnedUntilCompanyID {
+			return -1
+		}
+
+		if b.ID == maxPinnedUntilCompanyID {
+			return 1
+		}
+
 		if a.LatestVacancyDate.After(b.LatestVacancyDate) {
 			return -1
 		}
@@ -1863,23 +2003,6 @@ func (c *Controller) random(language domain.Language) bool {
 	}
 
 	return false
-}
-
-func (c *Controller) pinnedFirst(companies []domain.CompanyProfile) []domain.CompanyProfile {
-	var (
-		pinnedCompanies   = make([]domain.CompanyProfile, 0, len(companies))
-		unpinnedCompanies = make([]domain.CompanyProfile, 0, len(companies))
-		now               = time.Now()
-	)
-	for _, company := range companies {
-		if company.PinnedUntil.After(now) && company.LinkedInProfile.Verified {
-			pinnedCompanies = append(pinnedCompanies, company)
-		} else {
-			unpinnedCompanies = append(unpinnedCompanies, company)
-		}
-	}
-
-	return append(pinnedCompanies, unpinnedCompanies...)
 }
 
 func (c *Controller) skipSmallCompany(company domain.CompanyProfile) bool {
