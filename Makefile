@@ -241,7 +241,7 @@ endif
 	git checkout -b more-companies-linkedin-january-2026-v$(VERSION)
 	git commit -m "More companies LinkedIn January 2026 v$(VERSION)" --allow-empty
 
-# make more-companies-welcome-to-the-jungle VERSION=111
+# make more-companies-welcome-to-the-jungle VERSION=112
 more-companies-welcome-to-the-jungle:
 ifndef VERSION
 	$(error VERSION is not set. Use `make more-companies-welcome-to-the-jungle VERSION=X`)
@@ -250,7 +250,7 @@ endif
 	git checkout -b more-companies-welcome-to-the-jungle-january-2026-v$(VERSION)
 	git commit -m "More companies Welcome to the Jungle January 2026 v$(VERSION)" --allow-empty
 
-# make more-companies-indeed VERSION=111
+# make more-companies-indeed VERSION=112
 more-companies-indeed:
 ifndef VERSION
 	$(error VERSION is not set. Use `make more-companies-indeed VERSION=X`)
