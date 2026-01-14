@@ -291,7 +291,7 @@ const (
   { "code": "tr", "name": "Türkiye" },
   { "code": "tt", "name": "Trinidad and Tobago" },
   { "code": "tv", "name": "Tuvalu" },
-  { "code": "tw", "name": "Taiwan, Province of China" },
+  { "code": "tw", "name": "Taiwan" },
   { "code": "tz", "name": "Tanzania, United Republic of" },
   { "code": "ua", "name": "Ukraine" },
   { "code": "ug", "name": "Uganda" },
