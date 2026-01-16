@@ -107,7 +107,7 @@ func StreamOrganizersIndexV3(qw422016 *qt422016.Writer,
           height="20"
           src="/assets/images/pages/main-responsive/github-black.svg"
           alt="GitHub logo"
-          class="button-icon"
+          class="hero__button-icon"
         />Log in with GitHub
       </a>
       <a href="/auth/gitlab" class="button button--bordered-gray hero__button">
@@ -127,6 +127,15 @@ func StreamOrganizersIndexV3(qw422016 *qt422016.Writer,
           alt="Bitbucket logo"
           class="hero__button-icon"
         />Log in with Bitbucket
+      </a>
+      <a href="/auth/google" class="button button--bordered-gray hero__button">
+        <img
+          width="20"
+          height="20"
+          src="/assets/images/pages/main-responsive/google.svg"
+          alt="Google logo"
+          class="hero__button-icon"
+        />Log in with Google
       </a>
     </div>
     `)
