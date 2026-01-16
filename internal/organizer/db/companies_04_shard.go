@@ -2386,6 +2386,17 @@ func companies04Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $138.9k/yr - $203.9k/yr
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Software Engineer – Scala",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4323095936/",
+							Location:             "New York, NY",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-01-11"),
+							WithSalary:           true, // $145.4k/yr - $195k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Elixir:  {},
