@@ -5273,6 +5273,17 @@ func companies03Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $110k/yr - $120k/yr
 							Remote:               false,
 						},
+						{
+							Title:                "Backend Developer (Scala/Spark)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4360761438/",
+							Location:             "Warsaw, Mazowieckie, Poland",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-01-13"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Elixir:  {},
