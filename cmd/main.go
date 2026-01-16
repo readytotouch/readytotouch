@@ -11,6 +11,7 @@ import (
 	"golang.org/x/oauth2/bitbucket"
 	"golang.org/x/oauth2/github"
 	"golang.org/x/oauth2/gitlab"
+	"golang.org/x/oauth2/google"
 
 	"github.com/readytotouch/readytotouch/internal/auth"
 	"github.com/readytotouch/readytotouch/internal/db/postgres"
@@ -25,6 +26,7 @@ import (
 	pkgBitbucket "github.com/readytotouch/readytotouch/internal/oauth-providers/bitbucket"
 	pkgGitHub "github.com/readytotouch/readytotouch/internal/oauth-providers/github"
 	pkgGitLab "github.com/readytotouch/readytotouch/internal/oauth-providers/gitlab"
+	pkgGoogle "github.com/readytotouch/readytotouch/internal/oauth-providers/google"
 	pkgOnline "github.com/readytotouch/readytotouch/internal/online"
 	pkgOrganizer "github.com/readytotouch/readytotouch/internal/organizer"
 	pkgUsers "github.com/readytotouch/readytotouch/internal/users"
@@ -92,6 +94,14 @@ func main() {
 			Endpoint:     bitbucket.Endpoint,
 			Scopes:       nil, // Scopes are defined on the client/consumer instance.
 		})
+
+		googleOAuthProvider = pkgGoogle.NewGoogleOAuthProvider(&oauth2.Config{
+			ClientID:     os.Getenv("GOOGLE_CLIENT_ID"),
+			ClientSecret: os.Getenv("GOOGLE_CLIENT_SECRET"),
+			RedirectURL:  os.Getenv("GOOGLE_REDIRECT_URL"),
+			Endpoint:     google.Endpoint,
+			Scopes:       []string{"email profile"},
+		})
 	)
 
 	var (
@@ -104,6 +114,7 @@ func main() {
 			githubOAuthProvider,
 			gitlabOAuthProvider,
 			bitbucketOAuthProvider,
+			googleOAuthProvider,
 			jwtService,
 		)
 		userController      = pkgUsers.NewController(userRepository)
@@ -391,9 +402,11 @@ func main() {
 		GET("/auth/github", authController.GithubRedirect).
 		GET("/auth/gitlab", authController.GitlabRedirect).
 		GET("/auth/bitbucket", authController.BitbucketRedirect).
+		GET("/auth/google", authController.GoogleRedirect).
 		GET("/auth/github/callback", authController.GithubCallback).
 		GET("/auth/gitlab/callback", authController.GitlabCallback).
 		GET("/auth/bitbucket/callback", authController.BitbucketCallback).
+		GET("/auth/google/callback", authController.GoogleCallback).
 		GET("/logout", authController.Logout)
 
 	r.

@@ -7,5 +7,6 @@ var (
 	ErrAbsentEmail              = errors.New("absent email")
 	ErrUnverifiedEmail          = errors.New("unverified email")
 	ErrAbsentID                 = errors.New("absent id")
+	ErrAbsentName               = errors.New("absent name")
 	ErrAbsentUsername           = errors.New("absent username")
 )

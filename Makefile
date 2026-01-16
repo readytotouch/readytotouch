@@ -214,6 +214,9 @@ generate-production-environment-file:
 	grep -qF 'BITBUCKET_CLIENT_ID=' .production.env || echo 'BITBUCKET_CLIENT_ID="PY4qXGrqgvCS34DuqT"' >> .production.env
 	grep -qF 'BITBUCKET_CLIENT_SECRET=' .production.env || echo 'BITBUCKET_CLIENT_SECRET=""' >> .production.env
 	grep -qF 'BITBUCKET_REDIRECT_URL=' .production.env || echo 'BITBUCKET_REDIRECT_URL="https://readytotouch.com/auth/bitbucket/callback"' >> .production.env
+	grep -qF 'GOOGLE_CLIENT_ID=' .production.env || echo 'GOOGLE_CLIENT_ID="919021173091-eu1073cp19r6ljnauc5at425o6d3keh8.apps.googleusercontent.com"' >> .production.env
+	grep -qF 'GOOGLE_CLIENT_SECRET=' .production.env || echo 'GOOGLE_CLIENT_SECRET=""' >> .production.env
+	grep -qF 'GOOGLE_REDIRECT_URL=' .production.env || echo 'GOOGLE_REDIRECT_URL="https://readytotouch.com/auth/google/callback"' >> .production.env
 	grep -qF 'LINKEDIN_OAUTH2_TOKEN=' .production.env || echo 'LINKEDIN_OAUTH2_TOKEN=""' >> .production.env
 
 	cat .production.env
