@@ -87,7 +87,7 @@ func StreamOrganizersWelcomeV3(qw422016 *qt422016.Writer, organizer Organizer, a
           height="20"
           src="/assets/images/pages/main-responsive/github-black.svg"
           alt="GitHub logo"
-          class="button-icon"
+          class="hero__button-icon"
         />Log in with GitHub
       </a>
       <a href="/auth/gitlab`)
@@ -111,6 +111,17 @@ func StreamOrganizersWelcomeV3(qw422016 *qt422016.Writer, organizer Organizer, a
           alt="Bitbucket logo"
           class="hero__button-icon"
         />Log in with Bitbucket
+      </a>
+      <a href="/auth/google`)
+	qw422016.E().S(authQueryParams)
+	qw422016.N().S(`" class="button button--bordered-gray hero__button">
+        <img
+          width="20"
+          height="20"
+          src="/assets/images/pages/main-responsive/google.svg"
+          alt="Google logo"
+          class="hero__button-icon"
+        />Log in with Google
       </a>
     </div>
   </div>

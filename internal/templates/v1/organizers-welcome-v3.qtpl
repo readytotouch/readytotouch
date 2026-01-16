@@ -55,15 +55,6 @@
           class="button-icon"
         />Log in with LinkedIn
       </a>
-      <a href="/auth/google{%s authQueryParams %}" class="button button--bordered-gray hero__button">
-        <img
-          width="20"
-          height="20"
-          src="/assets/images/pages/main-responsive/google.svg"
-          alt="Google logo"
-          class="button-icon"
-        />Log in with Google
-      </a>
       {% endcomment %}
       <a href="/auth/github{%s authQueryParams %}" class="button button--bordered-gray hero__button">
         <img
@@ -71,7 +62,7 @@
           height="20"
           src="/assets/images/pages/main-responsive/github-black.svg"
           alt="GitHub logo"
-          class="button-icon"
+          class="hero__button-icon"
         />Log in with GitHub
       </a>
       <a href="/auth/gitlab{%s authQueryParams %}" class="button button--bordered-gray hero__button">
@@ -91,6 +82,15 @@
           alt="Bitbucket logo"
           class="hero__button-icon"
         />Log in with Bitbucket
+      </a>
+      <a href="/auth/google{%s authQueryParams %}" class="button button--bordered-gray hero__button">
+        <img
+          width="20"
+          height="20"
+          src="/assets/images/pages/main-responsive/google.svg"
+          alt="Google logo"
+          class="hero__button-icon"
+        />Log in with Google
       </a>
     </div>
   </div>

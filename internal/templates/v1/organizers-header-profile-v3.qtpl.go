@@ -89,12 +89,29 @@ func streamorganizersHeaderProfileV3(qw422016 *qt422016.Writer, profiles []Socia
     >
       <img class="profile-list-mobile__profile-image"
            src="/assets/images/pages/online-new/bitbucket.svg"
-           width="20"
+           width="21"
            height="20"
            alt="Bitbucket logo"
       />
       <span class="profile-list-mobile__profile-text">bitbucket.org/`)
 			qw422016.E().S(profile.Username)
+			qw422016.N().S(`</span>
+    </a>
+    `)
+		case google:
+			qw422016.N().S(`
+    <a href="javascript:void(0);"
+       target="_blank"
+       class="profile-list-mobile__link"
+    >
+      <img class="profile-list-mobile__profile-image"
+           src="/assets/images/pages/main-responsive/google.svg"
+           width="20"
+           height="20"
+           alt="Google logo"
+      />
+      <span class="profile-list-mobile__profile-text">`)
+			qw422016.E().S(profile.Name)
 			qw422016.N().S(`</span>
     </a>
     `)
@@ -153,9 +170,18 @@ func streamorganizersHeaderProfileV3(qw422016 *qt422016.Writer, profiles []Socia
         <a href="https://bitbucket.org/`)
 			qw422016.E().S(profile.Username)
 			qw422016.N().S(`" target="_blank" class="modal-profile__link">
-          <img src="/assets/images/pages/online-new/bitbucket.svg" width="20" height="20" alt="GitLab logo" />
+          <img src="/assets/images/pages/online-new/bitbucket.svg" width="20" height="20" alt="Bitbucket logo" />
           <span class="modal-profile__profile-bitbucket">bitbucket.org/`)
 			qw422016.E().S(profile.Username)
+			qw422016.N().S(`</span>
+        </a>
+        `)
+		case google:
+			qw422016.N().S(`
+        <a href="javascript:void(0);" target="_blank" class="modal-profile__link">
+          <img src="/assets/images/pages/main-responsive/google.svg" width="20" height="20" alt="Google logo" />
+          <span class="modal-profile__profile-google">`)
+			qw422016.E().S(profile.Name)
 			qw422016.N().S(`</span>
         </a>
         `)

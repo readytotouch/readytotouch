@@ -50,11 +50,24 @@
     >
       <img class="profile-list-mobile__profile-image"
            src="/assets/images/pages/online-new/bitbucket.svg"
-           width="20"
+           width="21"
            height="20"
            alt="Bitbucket logo"
       />
       <span class="profile-list-mobile__profile-text">bitbucket.org/{%s profile.Username %}</span>
+    </a>
+    {% case google %}
+    <a href="javascript:void(0);"
+       target="_blank"
+       class="profile-list-mobile__link"
+    >
+      <img class="profile-list-mobile__profile-image"
+           src="/assets/images/pages/main-responsive/google.svg"
+           width="20"
+           height="20"
+           alt="Google logo"
+      />
+      <span class="profile-list-mobile__profile-text">{%s profile.Name %}</span>
     </a>
     {% endswitch %}
     {% endfor %}
@@ -86,8 +99,13 @@
         </a>
         {% case bitbucket %}
         <a href="https://bitbucket.org/{%s profile.Username %}" target="_blank" class="modal-profile__link">
-          <img src="/assets/images/pages/online-new/bitbucket.svg" width="20" height="20" alt="GitLab logo" />
+          <img src="/assets/images/pages/online-new/bitbucket.svg" width="20" height="20" alt="Bitbucket logo" />
           <span class="modal-profile__profile-bitbucket">bitbucket.org/{%s profile.Username %}</span>
+        </a>
+        {% case google %}
+        <a href="javascript:void(0);" target="_blank" class="modal-profile__link">
+          <img src="/assets/images/pages/main-responsive/google.svg" width="20" height="20" alt="Google logo" />
+          <span class="modal-profile__profile-google">{%s profile.Name %}</span>
         </a>
         {% endswitch %}
         {% endfor %}

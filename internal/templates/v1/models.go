@@ -14,6 +14,7 @@ const (
 	github    = domain.SocialProviderGithub
 	gitlab    = domain.SocialProviderGitlab
 	bitbucket = domain.SocialProviderBitbucket
+	google    = domain.SocialProviderGoogle
 )
 
 // SocialProviderUser reference
@@ -39,8 +40,11 @@ func SocialProviderUserHeaderPhoto(vs []SocialProviderUser) string {
 
 		case bitbucket:
 			// Unknown
+
+		case google:
+			// Unknown
 		}
 	}
 
-	return ""
+	return "https://github.com/identicons/guest.png"
 }
