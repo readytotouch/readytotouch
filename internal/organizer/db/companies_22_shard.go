@@ -4664,7 +4664,7 @@ func companies22Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4324393869/",
 							Location:             "Surry Hills, New South Wales, Australia",
-							Date:                 mustDate("2025-12-17", "2025-11-26"),
+							Date:                 mustDate("2026-01-10", "2025-12-17", "2025-11-26"),
 							WithSalary:           false,
 							Remote:               true,
 						},

@@ -72,6 +72,7 @@ var (
 		"appdirect":                           "appdirect.jpeg",
 		"appear-net":                          "",
 		"appflowy":                            "",
+		"apple":                               "apple.jpeg",
 		"applied-research-solutions":          "",
 		"applied-systems":                     "applied-systems.jpeg",
 		"applied-systems-canada":              "applied-systems-canada.jpeg",
