@@ -31,6 +31,7 @@ document.body.addEventListener("keydown", (event) => {
 						    SwitchingOpportunity: "",
 						    URL:                  "${normalizeVacancyURL()}",
 						    Location:             "${vacancyLocation()}",
+						    CloudProviders:       []domain.CloudProvider{${cloudProviders(title).join(", ")}},
 						    Date:                 mustDate("${date()}"),
 						    WithSalary:           ${withSalary ? "true" : "false"},${salaryComment}
 						    Remote:               ${remote() ? "true" : "false"},
@@ -214,4 +215,35 @@ function normalizeURL(url) {
     }
 
     return url;
+}
+
+function cloudProviders(title) {
+    const t = title.toLowerCase();
+
+    const map = {
+        aws: t.includes("aws") || t.includes("amazon web services"),
+        gcp: t.includes("gcp") || t.includes("google cloud"),
+        azure: t.includes("azure") || t.includes("microsoft cloud"),
+    };
+
+    const $description = document.querySelector("h2.text-heading-large + div.mt4");
+    if ($description) {
+        const d = $description.innerText.toLowerCase();
+
+        map.aws = map.aws || d.includes("aws") || d.includes("amazon web services");
+        map.gcp = map.gcp || d.includes("gcp") || d.includes("google cloud");
+        map.azure = map.azure || d.includes("azure") || d.includes("microsoft cloud");
+    }
+
+    const result = [];
+    if (map.aws) {
+        result.push("domain.AWS");
+    }
+    if (map.gcp) {
+        result.push("domain.GCP");
+    }
+    if (map.azure) {
+        result.push("domain.Azure");
+    }
+    return result;
 }

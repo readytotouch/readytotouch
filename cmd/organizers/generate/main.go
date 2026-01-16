@@ -473,7 +473,7 @@ func vacancyContainsCloudProvider(vacancy domain.Vacancy) bool {
 	cloudProviderKeywords := []string{
 		"AWS", "Amazon Web Services",
 		"GCP", "Google Cloud",
-		"Azure",
+		"Azure", "Microsoft Cloud",
 		"DigitalOcean", "Digital Ocean",
 		"Vultr",
 	}
