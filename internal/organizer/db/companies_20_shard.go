@@ -4663,6 +4663,17 @@ func companies20Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Software Engineer (Clojure)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4353544085/",
+							Location:             "London Area, United Kingdom",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-01-16"),
+							WithSalary:           true, // £66k/yr - £111k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Haskell: {

@@ -3357,6 +3357,17 @@ func companies15Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $170k/yr - $180k/yr
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Full Stack Engineer, Clojure",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4329994517/",
+							Location:             "United States",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-01-16"),
+							WithSalary:           true, // $170k/yr - $180k/yr
+							Remote:               true,
+						},
 					},
 				},
 				domain.Haskell: {},
