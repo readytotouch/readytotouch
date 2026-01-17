@@ -48,6 +48,11 @@ services:
       - "5432:5432"
     volumes:
       - ./.docker/volumes/postgresql/data/:/var/lib/postgresql/data/
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
 
   redis:
     container_name: "readytotouch_redis"
@@ -64,4 +69,5 @@ services:
       GOOSE_DRIVER: "postgres"
       GOOSE_DBSTRING: ${POSTGRES_DSN}
     depends_on:
-      - postgres
+      postgres:
+        condition: service_healthy

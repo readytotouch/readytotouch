@@ -45,11 +45,17 @@ func Prepare(ctx context.Context, db DBTX) (*Queries, error) {
 	if q.featureViewStatsUpsertStmt, err = db.PrepareContext(ctx, featureViewStatsUpsert); err != nil {
 		return nil, fmt.Errorf("error preparing query FeatureViewStatsUpsert: %w", err)
 	}
+	if q.getGithubRepositoryStarsStmt, err = db.PrepareContext(ctx, getGithubRepositoryStars); err != nil {
+		return nil, fmt.Errorf("error preparing query GetGithubRepositoryStars: %w", err)
+	}
 	if q.socialUserProfilesStmt, err = db.PrepareContext(ctx, socialUserProfiles); err != nil {
 		return nil, fmt.Errorf("error preparing query SocialUserProfiles: %w", err)
 	}
 	if q.socialUserProfilesByUserStmt, err = db.PrepareContext(ctx, socialUserProfilesByUser); err != nil {
 		return nil, fmt.Errorf("error preparing query SocialUserProfilesByUser: %w", err)
+	}
+	if q.upsertGithubRepositoryStarsStmt, err = db.PrepareContext(ctx, upsertGithubRepositoryStars); err != nil {
+		return nil, fmt.Errorf("error preparing query UpsertGithubRepositoryStars: %w", err)
 	}
 	if q.userFavoriteCompaniesStmt, err = db.PrepareContext(ctx, userFavoriteCompanies); err != nil {
 		return nil, fmt.Errorf("error preparing query UserFavoriteCompanies: %w", err)
@@ -196,6 +202,11 @@ func (q *Queries) Close() error {
 			err = fmt.Errorf("error closing featureViewStatsUpsertStmt: %w", cerr)
 		}
 	}
+	if q.getGithubRepositoryStarsStmt != nil {
+		if cerr := q.getGithubRepositoryStarsStmt.Close(); cerr != nil {
+			err = fmt.Errorf("error closing getGithubRepositoryStarsStmt: %w", cerr)
+		}
+	}
 	if q.socialUserProfilesStmt != nil {
 		if cerr := q.socialUserProfilesStmt.Close(); cerr != nil {
 			err = fmt.Errorf("error closing socialUserProfilesStmt: %w", cerr)
@@ -204,6 +215,11 @@ func (q *Queries) Close() error {
 	if q.socialUserProfilesByUserStmt != nil {
 		if cerr := q.socialUserProfilesByUserStmt.Close(); cerr != nil {
 			err = fmt.Errorf("error closing socialUserProfilesByUserStmt: %w", cerr)
+		}
+	}
+	if q.upsertGithubRepositoryStarsStmt != nil {
+		if cerr := q.upsertGithubRepositoryStarsStmt.Close(); cerr != nil {
+			err = fmt.Errorf("error closing upsertGithubRepositoryStarsStmt: %w", cerr)
 		}
 	}
 	if q.userFavoriteCompaniesStmt != nil {
@@ -427,8 +443,10 @@ type Queries struct {
 	featureViewDailyStatsUpsertStmt                      *sql.Stmt
 	featureViewStatsStmt                                 *sql.Stmt
 	featureViewStatsUpsertStmt                           *sql.Stmt
+	getGithubRepositoryStarsStmt                         *sql.Stmt
 	socialUserProfilesStmt                               *sql.Stmt
 	socialUserProfilesByUserStmt                         *sql.Stmt
+	upsertGithubRepositoryStarsStmt                      *sql.Stmt
 	userFavoriteCompaniesStmt                            *sql.Stmt
 	userFavoriteCompaniesStatsStmt                       *sql.Stmt
 	userFavoriteCompaniesUpsertStmt                      *sql.Stmt
@@ -477,8 +495,10 @@ func (q *Queries) WithTx(tx *sql.Tx) *Queries {
 		featureViewDailyStatsUpsertStmt:                      q.featureViewDailyStatsUpsertStmt,
 		featureViewStatsStmt:                                 q.featureViewStatsStmt,
 		featureViewStatsUpsertStmt:                           q.featureViewStatsUpsertStmt,
+		getGithubRepositoryStarsStmt:                         q.getGithubRepositoryStarsStmt,
 		socialUserProfilesStmt:                               q.socialUserProfilesStmt,
 		socialUserProfilesByUserStmt:                         q.socialUserProfilesByUserStmt,
+		upsertGithubRepositoryStarsStmt:                      q.upsertGithubRepositoryStarsStmt,
 		userFavoriteCompaniesStmt:                            q.userFavoriteCompaniesStmt,
 		userFavoriteCompaniesStatsStmt:                       q.userFavoriteCompaniesStatsStmt,
 		userFavoriteCompaniesUpsertStmt:                      q.userFavoriteCompaniesUpsertStmt,

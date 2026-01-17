@@ -35,6 +35,7 @@ pg-fixtures:
 	cat ./fixtures/postgres/users.sql | docker exec -i readytotouch_postgres_db psql -d yaaws -U yaaws_user
 	cat ./fixtures/postgres/companies.sql | docker exec -i readytotouch_postgres_db psql -d yaaws -U yaaws_user
 	cat ./fixtures/postgres/vacancies.sql | docker exec -i readytotouch_postgres_db psql -d yaaws -U yaaws_user
+	cat ./fixtures/postgres/github_repository_stars.sql | docker exec -i readytotouch_postgres_db psql -d yaaws -U yaaws_user
 
 env-down:
 	docker compose -f docker-compose.yml --env-file .env down

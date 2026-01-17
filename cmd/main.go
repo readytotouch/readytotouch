@@ -21,6 +21,7 @@ import (
 	"github.com/readytotouch/readytotouch/internal/server"
 
 	pkgCAC "github.com/readytotouch/readytotouch/internal/cac"
+	pkgGitHubStars "github.com/readytotouch/readytotouch/internal/githubstars"
 	pkgJWT "github.com/readytotouch/readytotouch/internal/jwt"
 	pkgLinkedIn "github.com/readytotouch/readytotouch/internal/linkedin"
 	pkgBitbucket "github.com/readytotouch/readytotouch/internal/oauth-providers/bitbucket"
@@ -36,6 +37,10 @@ import (
 	"github.com/gin-gonic/gin"
 
 	_ "github.com/lib/pq"
+)
+
+const (
+	GithubStarsSyncInterval = 24 * time.Hour
 )
 
 func main() {
@@ -63,6 +68,7 @@ func main() {
 		companyViewDailyStatsRepository = postgres.NewCompanyViewDailyStatsRepository(database)
 		vacancyViewStatsRepository      = postgres.NewVacancyViewStatsRepository(database)
 		userToLinkedInCompanyRepository = postgres.NewUserToLinkedInCompanyRepository(database)
+		githubRepositoryStarsRepository = postgres.NewGithubRepositoryStarsRepository(database)
 	)
 
 	var (
@@ -105,7 +111,8 @@ func main() {
 	)
 
 	var (
-		jwtService = pkgJWT.NewService(jwtSecretKey, 2*30*24*3600)
+		jwtService        = pkgJWT.NewService(jwtSecretKey, 2*30*24*3600)
+		githubStarsClient = pkgGitHubStars.NewClient()
 	)
 
 	var (
@@ -574,6 +581,28 @@ func main() {
 					// NOP
 
 					continue
+				}
+			}
+		}()
+	}
+
+	{
+		// github stars sync
+		go func() {
+			for range time.Tick(GithubStarsSyncInterval) {
+				ctx := context.Background()
+				repos, err := githubRepositoryStarsRepository.ListAll(ctx)
+				if err != nil {
+					continue
+				}
+
+				for _, repo := range repos {
+					count, err := githubStarsClient.GetStargazersCount(ctx, repo.Owner, repo.Repo)
+					if err != nil {
+						continue
+					}
+
+					_ = githubRepositoryStarsRepository.Upsert(ctx, repo.Owner, repo.Repo, count, time.Now())
 				}
 			}
 		}()
