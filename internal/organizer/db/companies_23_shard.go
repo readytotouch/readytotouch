@@ -1157,7 +1157,7 @@ func companies23Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4346184199/",
 							Location:             "Atlanta, GA",
-							Date:                 mustDate("2025-12-25"),
+							Date:                 mustDate("2026-01-16", "2025-12-25"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -1582,8 +1582,20 @@ func companies23Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoryCount: 0,
-					Vacancies:             []domain.Vacancy{},
+					GitHubRepositoryCount: 6,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Distributed Systems Software Engineer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4359295380/",
+							Location:             "San Diego, CA",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-01-16"),
+							WithSalary:           true, // $171.6k/yr - $302.2k/yr
+							Remote:               false,
+						},
+					},
 				},
 				domain.Rust: {
 					GitHubRepositoryCount: 0,
@@ -1629,6 +1641,95 @@ func companies23Shard() []domain.CompanyProfile {
 			ShortDescription: "",
 			Industries:       []domain.Industry{
 				// NOP
+			},
+		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Dragonfly",
+			BaseURL:    "https://www.dragonflydb.io/",
+			CareersURL: "https://www.dragonflydb.io/careers",
+			AboutURL:   "https://www.dragonflydb.io/about",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                82089379,
+				IDs:               nil,
+				Alias:             "dragonflydb",
+				Name:              "Dragonfly",
+				Followers:         "8K",
+				Employees:         "11-50",
+				AssociatedMembers: "33",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:     "dragonflydb",
+				Followers: "414",
+				Verified:  true,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 6,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Control Plane Backend Engineer (Golang)",
+							SubTitle:             "",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.dragonflydb.io/careers/senior-control-plane-backend-engineer-golang",
+							Location:             "Israel",
+							Date:                 mustDate("2025-08-10"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Key-value database",
+			Industries: []domain.Industry{
+				domain.IndustryDevOps,
+			},
+			HasEmployeesFromCountries: []domain.Country{
+				domain.Ukraine,
 			},
 		},
 

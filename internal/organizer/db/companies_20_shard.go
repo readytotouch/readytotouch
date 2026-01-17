@@ -2562,7 +2562,7 @@ func companies20Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4346107985/",
 							Location:             "Edinburgh, Scotland, United Kingdom",
-							Date:                 mustDate("2025-12-25"),
+							Date:                 mustDate("2026-01-16", "2025-12-25"),
 							WithSalary:           false,
 							Remote:               false,
 						},

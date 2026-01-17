@@ -337,6 +337,7 @@ var (
 		"doodle-ag":                           "doodle-ag.png",
 		"doordash":                            "",
 		"dottxt":                              "dottxt.png",
+		"dragonflydb":                         "dragonflydb.jpeg",
 		"dria-ai":                             "",
 		"driftrock":                           "",
 		"drivenets":                           "drivenets.jpeg",
