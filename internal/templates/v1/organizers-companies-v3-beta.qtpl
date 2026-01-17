@@ -5,6 +5,7 @@
   ukrainianUniversities []University,
   czechUniversities []University,
   userCompanyFavoriteMap map[int64]bool,
+  stars int32,
   authQueryParams string,
 ) -%}
 <!DOCTYPE html>
@@ -71,7 +72,7 @@
         </li>
         {% endcomment %}
       </ul>
-      {%= organizersHeaderStarsV3() %}
+      {%= organizersHeaderStarsV3(stars) %}
       {% if len(headerProfiles) > 0 %}
         {%= organizersHeaderProfileV3(headerProfiles) %}
       {% else %}
@@ -287,7 +288,7 @@
 
 </main>
 
-{%= organizersFooterV3() %}
+{%= organizersFooterV3(stars) %}
 </div>
 <script src="/assets/js/organizers-companies-v3-app.js?{%d appVersion %}"></script>
 </body>

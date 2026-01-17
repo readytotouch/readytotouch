@@ -7,26 +7,17 @@ import (
 	"net/http"
 )
 
-type Client struct {
-}
-
-func NewClient() *Client {
-	return &Client{}
-}
-
 type repositoryResponse struct {
-	StargazersCount int `json:"stargazers_count"`
+	StargazersCount int32 `json:"stargazers_count"`
 }
 
-func (c *Client) GetStargazersCount(ctx context.Context, owner, repo string) (int, error) {
+func GetStargazersCount(ctx context.Context, owner, repo string) (int32, error) {
 	url := fmt.Sprintf("https://api.github.com/repos/%s/%s", owner, repo)
 
 	request, err := http.NewRequestWithContext(ctx, "GET", url, nil)
 	if err != nil {
 		return 0, err
 	}
-
-	request.Header.Set("User-Agent", "readytotouch-app")
 
 	response, err := http.DefaultClient.Do(request)
 	if err != nil {
@@ -38,10 +29,10 @@ func (c *Client) GetStargazersCount(ctx context.Context, owner, repo string) (in
 		return 0, fmt.Errorf("unexpected status code: %d", response.StatusCode)
 	}
 
-	var parsedResponse repositoryResponse
-	if err := json.NewDecoder(response.Body).Decode(&parsedResponse); err != nil {
+	var body repositoryResponse
+	if err := json.NewDecoder(response.Body).Decode(&body); err != nil {
 		return 0, fmt.Errorf("failed to decode response: %w", err)
 	}
 
-	return parsedResponse.StargazersCount, nil
+	return body.StargazersCount, nil
 }

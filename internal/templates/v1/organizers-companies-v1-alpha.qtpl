@@ -6,6 +6,7 @@
   ukrainianUniversities []University,
   czechUniversities []University,
   userCompanyFavoriteMap map[int64]bool,
+  stars int32,
   authQueryParams string,
 ) -%}
 <!DOCTYPE html>

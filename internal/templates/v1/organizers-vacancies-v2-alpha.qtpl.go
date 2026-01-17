@@ -23,6 +23,7 @@ func StreamOrganizersVacanciesV2Alpha(qw422016 *qt422016.Writer,
 	vacancies []PreparedVacancy,
 	userVacancyFavoriteMap map[int64]bool,
 	vacancyMonthlyViewsMap map[int64]int64,
+	stars int32,
 	authQueryParams string,
 ) {
 	qw422016.N().S(`<!DOCTYPE html>
@@ -556,10 +557,11 @@ func WriteOrganizersVacanciesV2Alpha(qq422016 qtio422016.Writer,
 	vacancies []PreparedVacancy,
 	userVacancyFavoriteMap map[int64]bool,
 	vacancyMonthlyViewsMap map[int64]int64,
+	stars int32,
 	authQueryParams string,
 ) {
 	qw422016 := qt422016.AcquireWriter(qq422016)
-	StreamOrganizersVacanciesV2Alpha(qw422016, organizerFeature, headerProfiles, companies, vacancies, userVacancyFavoriteMap, vacancyMonthlyViewsMap, authQueryParams)
+	StreamOrganizersVacanciesV2Alpha(qw422016, organizerFeature, headerProfiles, companies, vacancies, userVacancyFavoriteMap, vacancyMonthlyViewsMap, stars, authQueryParams)
 	qt422016.ReleaseWriter(qw422016)
 }
 
@@ -570,10 +572,11 @@ func OrganizersVacanciesV2Alpha(
 	vacancies []PreparedVacancy,
 	userVacancyFavoriteMap map[int64]bool,
 	vacancyMonthlyViewsMap map[int64]int64,
+	stars int32,
 	authQueryParams string,
 ) string {
 	qb422016 := qt422016.AcquireByteBuffer()
-	WriteOrganizersVacanciesV2Alpha(qb422016, organizerFeature, headerProfiles, companies, vacancies, userVacancyFavoriteMap, vacancyMonthlyViewsMap, authQueryParams)
+	WriteOrganizersVacanciesV2Alpha(qb422016, organizerFeature, headerProfiles, companies, vacancies, userVacancyFavoriteMap, vacancyMonthlyViewsMap, stars, authQueryParams)
 	qs422016 := string(qb422016.B)
 	qt422016.ReleaseByteBuffer(qb422016)
 	return qs422016

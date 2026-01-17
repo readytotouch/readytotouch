@@ -13,6 +13,7 @@ import (
 	"github.com/readytotouch/readytotouch/internal/db/postgres"
 	"github.com/readytotouch/readytotouch/internal/domain"
 	"github.com/readytotouch/readytotouch/internal/generated/organizers"
+	"github.com/readytotouch/readytotouch/internal/logger"
 	"github.com/readytotouch/readytotouch/internal/organizer/db"
 	"github.com/readytotouch/readytotouch/internal/storage/postgres/dbs"
 	template "github.com/readytotouch/readytotouch/internal/templates/v1"
@@ -57,23 +58,24 @@ type Controller struct {
 	userFavoriteVacancyRepository   *postgres.UserFavoriteVacancyRepository
 	companyViewDailyStatsRepository *postgres.CompanyViewDailyStatsRepository
 	vacancyViewStatsRepository      *postgres.VacancyViewStatsRepository
+	githubRepositoryStarsRepository *postgres.GithubRepositoryStarsRepository
 }
 
-func NewController(userRepository *postgres.UserRepository, userFeatureWaitlistRepository *postgres.UserFeatureWaitlistRepository, featureViewStatsRepository *postgres.FeatureViewStatsRepository, userFavoriteCompanyRepository *postgres.UserFavoriteCompanyRepository, userFavoriteVacancyRepository *postgres.UserFavoriteVacancyRepository, companyViewDailyStatsRepository *postgres.CompanyViewDailyStatsRepository, vacancyViewStatsRepository *postgres.VacancyViewStatsRepository) *Controller {
-	return &Controller{userRepository: userRepository, userFeatureWaitlistRepository: userFeatureWaitlistRepository, featureViewStatsRepository: featureViewStatsRepository, userFavoriteCompanyRepository: userFavoriteCompanyRepository, userFavoriteVacancyRepository: userFavoriteVacancyRepository, companyViewDailyStatsRepository: companyViewDailyStatsRepository, vacancyViewStatsRepository: vacancyViewStatsRepository}
+func NewController(userRepository *postgres.UserRepository, userFeatureWaitlistRepository *postgres.UserFeatureWaitlistRepository, featureViewStatsRepository *postgres.FeatureViewStatsRepository, userFavoriteCompanyRepository *postgres.UserFavoriteCompanyRepository, userFavoriteVacancyRepository *postgres.UserFavoriteVacancyRepository, companyViewDailyStatsRepository *postgres.CompanyViewDailyStatsRepository, vacancyViewStatsRepository *postgres.VacancyViewStatsRepository, githubRepositoryStarsRepository *postgres.GithubRepositoryStarsRepository) *Controller {
+	return &Controller{userRepository: userRepository, userFeatureWaitlistRepository: userFeatureWaitlistRepository, featureViewStatsRepository: featureViewStatsRepository, userFavoriteCompanyRepository: userFavoriteCompanyRepository, userFavoriteVacancyRepository: userFavoriteVacancyRepository, companyViewDailyStatsRepository: companyViewDailyStatsRepository, vacancyViewStatsRepository: vacancyViewStatsRepository, githubRepositoryStarsRepository: githubRepositoryStarsRepository}
 }
 
 func (c *Controller) IndexV1(ctx *gin.Context) {
 	headerProfiles, err := c.getHeaderProfiles(ctx, domain.ContextGetUserID(ctx))
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}
 
 	socialUserProfiles, err := c.userRepository.SocialUserProfiles(ctx, nil, domain.RegistrationHistoryLimit)
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}
@@ -84,14 +86,14 @@ func (c *Controller) IndexV1(ctx *gin.Context) {
 func (c *Controller) IndexV2(ctx *gin.Context) {
 	headerProfiles, err := c.getHeaderProfiles(ctx, domain.ContextGetUserID(ctx))
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}
 
 	socialUserProfiles, err := c.userRepository.SocialUserProfiles(ctx, nil, domain.RegistrationHistoryLimit)
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}
@@ -102,7 +104,7 @@ func (c *Controller) IndexV2(ctx *gin.Context) {
 func (c *Controller) IndexV3(ctx *gin.Context) {
 	headerProfiles, err := c.getHeaderProfiles(ctx, domain.ContextGetUserID(ctx))
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}
@@ -113,12 +115,19 @@ func (c *Controller) IndexV3(ctx *gin.Context) {
 		domain.RegistrationHistoryLimit,
 	)
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}
 
-	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.OrganizersIndexV3(headerProfiles, socialUserProfiles)))
+	stars, err := c.githubRepositoryStarsRepository.Default(ctx)
+	if err != nil {
+		logger.Error(err)
+
+		// NOP, continue
+	}
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.OrganizersIndexV3(headerProfiles, socialUserProfiles, stars)))
 }
 
 func (c *Controller) WelcomeV1(ctx *gin.Context) {
@@ -142,7 +151,14 @@ func (c *Controller) WelcomeV3(ctx *gin.Context) {
 		return
 	}
 
-	content := template.OrganizersWelcomeV3(organizer, c.authQueryParams(ctx))
+	stars, err := c.githubRepositoryStarsRepository.Default(ctx)
+	if err != nil {
+		logger.Error(err)
+
+		// NOP, continue
+	}
+
+	content := template.OrganizersWelcomeV3(organizer, stars, c.authQueryParams(ctx))
 
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
 }
@@ -150,7 +166,7 @@ func (c *Controller) WelcomeV3(ctx *gin.Context) {
 func (c *Controller) Organizers(ctx *gin.Context) {
 	headerProfiles, err := c.getHeaderProfiles(ctx, domain.ContextGetUserID(ctx))
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}
@@ -196,7 +212,7 @@ func (c *Controller) CompaniesV3Beta(ctx *gin.Context) {
 }
 
 func (c *Controller) CompanyV1(ctx *gin.Context) {
-	c.companyAction(ctx, func(organizerFeature domain.OrganizerFeature, headerProfiles []domain.SocialProviderUser, company domain.CompanyProfile, vacancies []domain.PreparedVacancy, ukrainianUniversities []domain.University, czechUniversities []domain.University, favorite bool, userVacancyFavoriteMap map[int64]bool, vacancyMonthlyViewsMap map[int64]int64, stats template.CompanyStats, authQueryParams string) string {
+	c.companyAction(ctx, func(organizerFeature domain.OrganizerFeature, headerProfiles []domain.SocialProviderUser, company domain.CompanyProfile, vacancies []domain.PreparedVacancy, ukrainianUniversities []domain.University, czechUniversities []domain.University, favorite bool, userVacancyFavoriteMap map[int64]bool, vacancyMonthlyViewsMap map[int64]int64, stats template.CompanyStats, stars int32, authQueryParams string) string {
 		return template.OrganizersCompanyV1(
 			organizerFeature,
 			headerProfiles,
@@ -214,7 +230,7 @@ func (c *Controller) CompanyV1(ctx *gin.Context) {
 }
 
 func (c *Controller) CompanyV2(ctx *gin.Context) {
-	c.companyAction(ctx, func(organizerFeature domain.OrganizerFeature, headerProfiles []domain.SocialProviderUser, company domain.CompanyProfile, vacancies []domain.PreparedVacancy, ukrainianUniversities []domain.University, czechUniversities []domain.University, favorite bool, userVacancyFavoriteMap map[int64]bool, vacancyMonthlyViewsMap map[int64]int64, stats template.CompanyStats, authQueryParams string) string {
+	c.companyAction(ctx, func(organizerFeature domain.OrganizerFeature, headerProfiles []domain.SocialProviderUser, company domain.CompanyProfile, vacancies []domain.PreparedVacancy, ukrainianUniversities []domain.University, czechUniversities []domain.University, favorite bool, userVacancyFavoriteMap map[int64]bool, vacancyMonthlyViewsMap map[int64]int64, stats template.CompanyStats, stars int32, authQueryParams string) string {
 		return template.OrganizersCompanyV2(
 			organizerFeature,
 			headerProfiles,
@@ -232,7 +248,7 @@ func (c *Controller) CompanyV2(ctx *gin.Context) {
 }
 
 func (c *Controller) CompanyV3(ctx *gin.Context) {
-	c.companyAction(ctx, func(organizerFeature domain.OrganizerFeature, headerProfiles []domain.SocialProviderUser, company domain.CompanyProfile, vacancies []domain.PreparedVacancy, ukrainianUniversities []domain.University, czechUniversities []domain.University, favorite bool, userVacancyFavoriteMap map[int64]bool, vacancyMonthlyViewsMap map[int64]int64, stats template.CompanyStats, authQueryParams string) string {
+	c.companyAction(ctx, func(organizerFeature domain.OrganizerFeature, headerProfiles []domain.SocialProviderUser, company domain.CompanyProfile, vacancies []domain.PreparedVacancy, ukrainianUniversities []domain.University, czechUniversities []domain.University, favorite bool, userVacancyFavoriteMap map[int64]bool, vacancyMonthlyViewsMap map[int64]int64, stats template.CompanyStats, stars int32, authQueryParams string) string {
 		return template.OrganizersCompanyV3(
 			organizerFeature,
 			headerProfiles,
@@ -244,6 +260,7 @@ func (c *Controller) CompanyV3(ctx *gin.Context) {
 			userVacancyFavoriteMap,
 			vacancyMonthlyViewsMap,
 			stats,
+			stars,
 			authQueryParams,
 		)
 	})
@@ -258,6 +275,7 @@ func (c *Controller) companiesAction(
 		ukrainianUniversities []domain.University,
 		czechUniversities []domain.University,
 		userCompanyFavoriteMap map[int64]bool,
+		stars int32,
 		authQueryParams string,
 	) string,
 ) {
@@ -280,7 +298,7 @@ func (c *Controller) companiesAction(
 
 	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}
@@ -291,7 +309,14 @@ func (c *Controller) companiesAction(
 
 	userCompanyFavoriteMap, err := c.userFavoriteCompanyRepository.GetMap(ctx, authUserID, nil)
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
+
+		// NOP, continue
+	}
+
+	stars, err := c.githubRepositoryStarsRepository.Default(ctx)
+	if err != nil {
+		logger.Error(err)
 
 		// NOP, continue
 	}
@@ -303,6 +328,7 @@ func (c *Controller) companiesAction(
 		db.UkrainianUniversities(),
 		db.CzechUniversities(),
 		userCompanyFavoriteMap,
+		stars,
 		c.redirect(organizerFeature.Path),
 	)
 
@@ -322,6 +348,7 @@ func (c *Controller) companyAction(
 		userVacancyFavoriteMap map[int64]bool,
 		vacancyMonthlyViewsMap map[int64]int64,
 		stats template.CompanyStats,
+		stars int32,
 		authQueryParams string,
 	) string,
 ) {
@@ -398,7 +425,7 @@ func (c *Controller) companyAction(
 
 	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}
@@ -406,14 +433,14 @@ func (c *Controller) companyAction(
 	// Should be optimized
 	userCompanyFavoriteMap, err := c.userFavoriteCompanyRepository.GetMap(ctx, authUserID, []int64{company.ID})
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}
 
 	err = c.companyViewDailyStatsRepository.Upsert(ctx, company.ID, time.Now().UTC())
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}
@@ -447,7 +474,7 @@ func (c *Controller) companyAction(
 
 	userVacancyFavoriteMap, err := c.userFavoriteVacancyRepository.GetMap(ctx, authUserID, vacancyIDs)
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}
@@ -455,7 +482,7 @@ func (c *Controller) companyAction(
 	month := time.Now().UTC().Truncate(time.Hour*24).AddDate(0, -1, 0)
 	vacancyMonthlyViewsMap, err := c.vacancyViewStatsRepository.Stats(ctx, vacancyIDs, month)
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}
@@ -465,6 +492,13 @@ func (c *Controller) companyAction(
 	})
 
 	company.LatestVacancyDate = c.maxLanguageDate(vacancies)
+
+	stars, err := c.githubRepositoryStarsRepository.Default(ctx)
+	if err != nil {
+		logger.Error(err)
+
+		// NOP, continue
+	}
 
 	content := render(
 		organizerFeature,
@@ -477,6 +511,7 @@ func (c *Controller) companyAction(
 		userVacancyFavoriteMap,
 		vacancyMonthlyViewsMap,
 		c.companyStats(ctx, company.ID),
+		stars,
 		c.redirect(organizerFeature.Path+"/"+uri.CompanyAlias),
 	)
 
@@ -504,6 +539,7 @@ func (c *Controller) jobsAction(
 		vacancies []domain.PreparedVacancy,
 		userVacancyFavoriteMap map[int64]bool,
 		vacancyMonthlyViewsMap map[int64]int64,
+		stars int32,
 		authQueryParams string,
 	) string,
 ) {
@@ -526,7 +562,7 @@ func (c *Controller) jobsAction(
 
 	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}
@@ -567,7 +603,7 @@ func (c *Controller) jobsAction(
 
 	userVacancyFavoriteMap, err := c.userFavoriteVacancyRepository.GetMap(ctx, authUserID, vacancyIDs)
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}
@@ -575,7 +611,7 @@ func (c *Controller) jobsAction(
 	month := time.Now().UTC().Truncate(time.Hour*24).AddDate(0, -1, 0)
 	vacancyMonthlyViewsMap, err := c.vacancyViewStatsRepository.Stats(ctx, vacancyIDs, month)
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}
@@ -584,6 +620,13 @@ func (c *Controller) jobsAction(
 		return preparedVacancies[i].Date.After(preparedVacancies[j].Date)
 	})
 
+	stars, err := c.githubRepositoryStarsRepository.Default(ctx)
+	if err != nil {
+		logger.Error(err)
+
+		// NOP, continue
+	}
+
 	content := render(
 		organizerFeature,
 		headerProfiles,
@@ -591,6 +634,7 @@ func (c *Controller) jobsAction(
 		preparedVacancies,
 		userVacancyFavoriteMap,
 		vacancyMonthlyViewsMap,
+		stars,
 		c.redirect(organizerFeature.Path),
 	)
 
@@ -622,7 +666,7 @@ func (c *Controller) Waitlist(ctx *gin.Context) {
 
 	err := c.featureViewStatsRepository.Upsert(ctx, organizerFeature.Feature, time.Now().UTC())
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}
@@ -641,7 +685,7 @@ func (c *Controller) Waitlist(ctx *gin.Context) {
 
 	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}
@@ -658,7 +702,7 @@ func (c *Controller) GolangCommunities(ctx *gin.Context) {
 
 	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}
@@ -675,7 +719,7 @@ func (c *Controller) RustCommunities(ctx *gin.Context) {
 
 	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}
@@ -696,7 +740,7 @@ func (c *Controller) ScalaCommunities(ctx *gin.Context) {
 
 	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}
@@ -713,7 +757,7 @@ func (c *Controller) ElixirCommunities(ctx *gin.Context) {
 
 	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}
@@ -730,7 +774,7 @@ func (c *Controller) ClojureCommunities(ctx *gin.Context) {
 
 	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}
@@ -826,7 +870,7 @@ func (c *Controller) WaitlistSubscribe(ctx *gin.Context) {
 
 	err := c.userFeatureWaitlistRepository.Upsert(ctx, authUserID, feature, body.Active, time.Now().UTC())
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		ctx.JSON(http.StatusInternalServerError, &domain.ErrorResponse{
 			ErrorMessage: err.Error(), // Yes, we are leaking the error message to the client, it's fine for now
@@ -895,7 +939,7 @@ func (c *Controller) CompanyViewStats(ctx *gin.Context) {
 
 	viewsDailyStats, err := c.companyViewDailyStatsRepository.DailyCountStats(ctx, uri.CompanyID, from, to)
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		ctx.JSON(http.StatusInternalServerError, &domain.ErrorResponse{
 			ErrorMessage: err.Error(), // Yes, we are leaking the error message to the client, it's fine for now
@@ -1072,7 +1116,7 @@ func (c *Controller) UnsafeCompaniesV3(ctx *gin.Context) {
 
 	userCompanyFavoriteMap, err := c.userFavoriteCompanyRepository.GetMap(ctx, authUserID, nil)
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}
@@ -1173,7 +1217,7 @@ func (c *Controller) UnsafeVacanciesV3(ctx *gin.Context) {
 
 	userVacancyFavoriteMap, err := c.userFavoriteVacancyRepository.GetMap(ctx, authUserID, nil)
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}
@@ -1253,7 +1297,7 @@ func (c *Controller) UnsafeVacanciesV3(ctx *gin.Context) {
 	month := time.Now().UTC().Truncate(time.Hour*24).AddDate(0, -1, 0)
 	vacancyMonthlyViewsMap, err := c.vacancyViewStatsRepository.Stats(ctx, vacancyIDs, month)
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}
@@ -1530,7 +1574,7 @@ func (c *Controller) redirect(redirect string) string {
 func (c *Controller) waitlistStats(ctx *gin.Context, feature dbs.FeatureWait) {
 	stats, err := c.fetchStats(ctx, feature)
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		ctx.JSON(http.StatusInternalServerError, &domain.ErrorResponse{
 			ErrorMessage: err.Error(), // Yes, we are leaking the error message to the client, it's fine for now
@@ -1590,14 +1634,14 @@ func (c *Controller) companyStats(ctx *gin.Context, companyID int64) template.Co
 
 	totalViews, lastMonthViews, err := c.companyViewDailyStatsRepository.Stats(ctx, companyID, from)
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}
 
 	totalFavorites, lastMonthFavorites, err := c.userFavoriteCompanyRepository.Stats(ctx, companyID, from)
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}

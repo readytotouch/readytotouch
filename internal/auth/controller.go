@@ -10,6 +10,7 @@ import (
 	"github.com/readytotouch/readytotouch/internal/db/postgres"
 	"github.com/readytotouch/readytotouch/internal/domain"
 	"github.com/readytotouch/readytotouch/internal/env"
+	"github.com/readytotouch/readytotouch/internal/logger"
 	"github.com/readytotouch/readytotouch/internal/protos/auth"
 
 	"github.com/gin-gonic/gin"
@@ -154,7 +155,7 @@ func (c *Controller) callback(ctx *gin.Context, provider domain.OAuthProvider) {
 
 	redirect, err := c.decodeRedirectState(queryState)
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		ctx.Redirect(http.StatusFound, "/")
 	}

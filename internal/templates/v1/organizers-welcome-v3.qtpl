@@ -1,4 +1,8 @@
-{%- func OrganizersWelcomeV3(organizer Organizer, authQueryParams string) -%}
+{%- func OrganizersWelcomeV3(
+    organizer Organizer,
+    stars int32,
+    authQueryParams string,
+) -%}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,7 +31,7 @@
       <img width="40" height="40" class="header__logo-img" src="/assets/images/pages/organizer/{%s organizer.Logo %}" alt="{%s organizer.Title %} logo" />
       <h3 class="header__logo-title">Organizer</h3>
     </a>
-    {%= organizersHeaderStarsV3() %}
+    {%= organizersHeaderStarsV3(stars) %}
   </div>
 </header>
 
@@ -97,7 +101,7 @@
 </section>
 </main>
 
-{%= organizersFooterV3() %}
+{%= organizersFooterV3(stars) %}
 
 </div>
 <script src="/assets/js/welcome-app.js?{%d appVersion %}"></script>

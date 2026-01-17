@@ -25,6 +25,7 @@ func StreamOrganizersCompanyV3(qw422016 *qt422016.Writer,
 	userVacancyFavoriteMap map[int64]bool,
 	vacancyMonthlyViewsMap map[int64]int64,
 	stats CompanyStats,
+	stars int32,
 	authQueryParams string,
 ) {
 	qw422016.N().S(`<!DOCTYPE html>
@@ -99,7 +100,7 @@ func StreamOrganizersCompanyV3(qw422016 *qt422016.Writer,
 	qw422016.N().S(`
       </ul>
       `)
-	streamorganizersHeaderStarsV3(qw422016)
+	streamorganizersHeaderStarsV3(qw422016, stars)
 	qw422016.N().S(`
       `)
 	if len(headerProfiles) > 0 {
@@ -1519,7 +1520,7 @@ func StreamOrganizersCompanyV3(qw422016 *qt422016.Writer,
 </main>
 
 `)
-	streamorganizersFooterV3(qw422016)
+	streamorganizersFooterV3(qw422016, stars)
 	qw422016.N().S(`
 </div>
 <script src="/assets/js/organizers-company-app.js?`)
@@ -1542,10 +1543,11 @@ func WriteOrganizersCompanyV3(qq422016 qtio422016.Writer,
 	userVacancyFavoriteMap map[int64]bool,
 	vacancyMonthlyViewsMap map[int64]int64,
 	stats CompanyStats,
+	stars int32,
 	authQueryParams string,
 ) {
 	qw422016 := qt422016.AcquireWriter(qq422016)
-	StreamOrganizersCompanyV3(qw422016, organizerFeature, headerProfiles, company, vacancies, ukrainianUniversities, czechUniversities, favorite, userVacancyFavoriteMap, vacancyMonthlyViewsMap, stats, authQueryParams)
+	StreamOrganizersCompanyV3(qw422016, organizerFeature, headerProfiles, company, vacancies, ukrainianUniversities, czechUniversities, favorite, userVacancyFavoriteMap, vacancyMonthlyViewsMap, stats, stars, authQueryParams)
 	qt422016.ReleaseWriter(qw422016)
 }
 
@@ -1560,10 +1562,11 @@ func OrganizersCompanyV3(
 	userVacancyFavoriteMap map[int64]bool,
 	vacancyMonthlyViewsMap map[int64]int64,
 	stats CompanyStats,
+	stars int32,
 	authQueryParams string,
 ) string {
 	qb422016 := qt422016.AcquireByteBuffer()
-	WriteOrganizersCompanyV3(qb422016, organizerFeature, headerProfiles, company, vacancies, ukrainianUniversities, czechUniversities, favorite, userVacancyFavoriteMap, vacancyMonthlyViewsMap, stats, authQueryParams)
+	WriteOrganizersCompanyV3(qb422016, organizerFeature, headerProfiles, company, vacancies, ukrainianUniversities, czechUniversities, favorite, userVacancyFavoriteMap, vacancyMonthlyViewsMap, stats, stars, authQueryParams)
 	qs422016 := string(qb422016.B)
 	qt422016.ReleaseByteBuffer(qb422016)
 	return qs422016

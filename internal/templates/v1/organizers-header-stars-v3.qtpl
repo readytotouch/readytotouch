@@ -1,6 +1,6 @@
-{% func organizersHeaderStarsV3() %}
+{% func organizersHeaderStarsV3(stars int32) %}
 <div class="header__stars">
-  <span class="github-btn github-stargazers github-btn-large js-github-button">
+  <span class="github-btn github-stargazers github-btn-large">
     <a class="gh-btn"
        href="https://github.com/readytotouch/readytotouch"
        rel="noopener noreferrer"
@@ -10,13 +10,12 @@
       <span class="gh-ico" aria-hidden="true"></span>
       <span class="gh-text">Star</span>
     </a>
-    <a class="gh-count gh-count--is-hidden js-github-count"
+    <a class="gh-count"
        href="https://github.com/readytotouch/readytotouch/stargazers"
        rel="noopener noreferrer"
        target="_blank"
-       aria-label="1000+ stargazers on GitHub"
-       aria-hidden="true"
-    >1000+</a>
+       aria-label="{%d int(stars) %} stargazers on GitHub"
+    >{%d int(stars) %}</a>
   </span>
 </div>
 {% endfunc %}

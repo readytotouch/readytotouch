@@ -18,6 +18,7 @@ import (
 	"github.com/readytotouch/readytotouch/internal/db/redis"
 	"github.com/readytotouch/readytotouch/internal/domain"
 	"github.com/readytotouch/readytotouch/internal/env"
+	"github.com/readytotouch/readytotouch/internal/logger"
 	"github.com/readytotouch/readytotouch/internal/server"
 
 	pkgCAC "github.com/readytotouch/readytotouch/internal/cac"
@@ -37,10 +38,6 @@ import (
 	"github.com/gin-gonic/gin"
 
 	_ "github.com/lib/pq"
-)
-
-const (
-	GithubStarsSyncInterval = 24 * time.Hour
 )
 
 func main() {
@@ -111,8 +108,7 @@ func main() {
 	)
 
 	var (
-		jwtService        = pkgJWT.NewService(jwtSecretKey, 2*30*24*3600)
-		githubStarsClient = pkgGitHubStars.NewClient()
+		jwtService = pkgJWT.NewService(jwtSecretKey, 2*30*24*3600)
 	)
 
 	var (
@@ -134,6 +130,7 @@ func main() {
 			userFavoriteVacancyRepository,
 			companyViewDailyStatsRepository,
 			vacancyViewStatsRepository,
+			githubRepositoryStarsRepository,
 		)
 		cacController = pkgCAC.NewController(
 			userRepository,
@@ -566,17 +563,19 @@ func main() {
 		GET("/sitemap-mojo-companies.xml", organizerController.SitemapCompanies(domain.OrganizerMojo))
 
 	{
+		var ctx = context.Background()
+
 		// very fast solution
 		go func() {
 			for range time.Tick(time.Minute) {
-				pairs, err := onlineRedisStorage.GetAndClear(context.Background())
+				pairs, err := onlineRedisStorage.GetAndClear(ctx)
 				if err != nil {
 					// NOP
 
 					continue
 				}
 
-				err = onlinePostgresStorage.BatchStore(context.Background(), pairs)
+				err = onlinePostgresStorage.BatchStore(ctx, pairs)
 				if err != nil {
 					// NOP
 
@@ -584,25 +583,29 @@ func main() {
 				}
 			}
 		}()
-	}
 
-	{
-		// github stars sync
+		// GitHub stars sync
 		go func() {
-			for range time.Tick(GithubStarsSyncInterval) {
-				ctx := context.Background()
-				repos, err := githubRepositoryStarsRepository.ListAll(ctx)
+			for range time.Tick(3 * time.Hour) {
+				repos, err := githubRepositoryStarsRepository.All(ctx)
 				if err != nil {
+					logger.Error(err)
+
 					continue
 				}
 
 				for _, repo := range repos {
-					count, err := githubStarsClient.GetStargazersCount(ctx, repo.Owner, repo.Repo)
+					count, err := pkgGitHubStars.GetStargazersCount(ctx, repo.Owner, repo.Repo)
 					if err != nil {
+						logger.Error(err)
+
 						continue
 					}
 
-					_ = githubRepositoryStarsRepository.Upsert(ctx, repo.Owner, repo.Repo, count, time.Now())
+					err = githubRepositoryStarsRepository.Upsert(ctx, repo.Owner, repo.Repo, count, time.Now().UTC())
+					if err != nil {
+						logger.Error(err)
+					}
 				}
 			}
 		}()

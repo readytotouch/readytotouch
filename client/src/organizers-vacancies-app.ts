@@ -18,7 +18,6 @@ import {renderSelected} from "./framework/selected_criteria";
 import {firstQuerySelector} from "./framework/query_selector";
 import {setStateByURLMapper} from "./framework/set_state_by_url";
 import {responsiveHeaderProfileWidget} from "./responsive-header-profile-widget";
-import {githubStarsWidget} from "./github-stars-widget";
 import {responsiveFilterWidget} from "./responsive-filter-widget";
 import {addVacancyFavoriteEvent} from "./organizers-vacancies-favorite";
 
@@ -346,5 +345,3 @@ updatePageState();
 responsiveHeaderProfileWidget();
 
 responsiveFilterWidget();
-
-githubStarsWidget();
