@@ -3539,6 +3539,17 @@ func companies18Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Rust Senior Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4359285228/",
+							Location:             "North Sydney, New South Wales, Australia",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-01-16"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig: {

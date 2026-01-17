@@ -4521,7 +4521,7 @@ func companies16Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4287336668/",
 							Location:             "Hong Kong, Hong Kong SAR",
-							Date:                 mustDate("2025-12-11", "2025-11-19", "2025-10-29", "2025-08-22"),
+							Date:                 mustDate("2026-01-16", "2025-12-11", "2025-11-19", "2025-10-29", "2025-08-22"),
 							WithSalary:           false,
 							Remote:               false,
 						},
