@@ -148,6 +148,13 @@ type FeatureViewStat struct {
 	ViewCount int64
 }
 
+type GithubRepositoryStar struct {
+	Owner           string
+	Repo            string
+	StargazersCount int32
+	UpdatedAt       time.Time
+}
+
 type User struct {
 	ID        int64
 	CreatedAt time.Time
