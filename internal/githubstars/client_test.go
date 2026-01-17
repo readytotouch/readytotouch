@@ -6,23 +6,27 @@ import (
 	"testing"
 
 	"github.com/jarcoal/httpmock"
-	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
 )
 
 func TestGetStargazersCount(t *testing.T) {
 	httpmock.Activate()
 	defer httpmock.DeactivateAndReset()
 
-	owner := "readytotouch"
-	repo := "readytotouch"
-	expectedStars := 100
+	const (
+		owner         = "readytotouch"
+		repo          = "readytotouch"
+		expectedStars = 100
+	)
 
-	httpmock.RegisterResponder("GET", "https://api.github.com/repos/readytotouch/readytotouch",
-		httpmock.NewStringResponder(http.StatusOK, `{"stargazers_count": 100}`))
+	httpmock.RegisterResponder(
+		"GET",
+		"https://api.github.com/repos/readytotouch/readytotouch",
+		httpmock.NewStringResponder(http.StatusOK, `{"stargazers_count":100}`),
+	)
 
-	client := NewClient()
-	stars, err := client.GetStargazersCount(context.Background(), owner, repo)
+	stars, err := GetStargazersCount(context.Background(), owner, repo)
 
-	assert.NoError(t, err)
-	assert.Equal(t, expectedStars, stars)
+	require.NoError(t, err)
+	require.Equal(t, int32(expectedStars), stars)
 }

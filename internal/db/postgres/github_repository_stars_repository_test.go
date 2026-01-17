@@ -2,11 +2,13 @@ package postgres
 
 import (
 	"context"
+	"slices"
 	"testing"
 	"time"
 
+	"github.com/readytotouch/readytotouch/internal/domain"
 	"github.com/readytotouch/readytotouch/internal/env"
-	"github.com/stretchr/testify/assert"
+
 	"github.com/stretchr/testify/require"
 )
 
@@ -25,49 +27,55 @@ func TestGithubRepositoryStarsRepository(t *testing.T) {
 
 	repository := NewGithubRepositoryStarsRepository(database)
 
-	ctx := context.Background()
-	owner := "test_owner"
-	repo := "test_repo"
-	stars := 42
-	now := time.Now().Truncate(time.Microsecond).UTC()
+	const (
+		owner    = "test_owner"
+		repo     = "test_repo"
+		stars    = 8096
+		newStars = stars + 100
+	)
 
-	// Test Upsert
-	err = repository.Upsert(ctx, owner, repo, stars, now)
-	require.NoError(t, err)
+	var (
+		ctx = context.Background()
+		now = time.Now().UTC()
+	)
 
-	// Test ListAll
-	repos, err := repository.ListAll(ctx)
-	require.NoError(t, err)
+	// First upsert
+	{
+		err = repository.Upsert(ctx, owner, repo, stars, now)
+		require.NoError(t, err)
 
-	found := false
-	for _, r := range repos {
-		if r.Owner == owner && r.Repo == repo {
-			assert.Equal(t, stars, r.StargazersCount)
-			// Postgres might have slightly different time precision, but Truncate should help
-			assert.WithinDuration(t, now, r.UpdatedAt.UTC(), time.Second)
-			found = true
-			break
-		}
+		rows, err := repository.All(ctx)
+		require.NoError(t, err)
+
+		require.True(
+			t,
+			slices.Contains(rows, domain.GithubRepositoryStar{
+				Owner:           owner,
+				Repo:            repo,
+				StargazersCount: stars,
+			}),
+		)
 	}
-	assert.True(t, found, "Repository not found in ListAll")
 
-	// Test Update via Upsert
-	newStars := 100
-	newNow := time.Now().Truncate(time.Microsecond).UTC()
-	err = repository.Upsert(ctx, owner, repo, newStars, newNow)
-	require.NoError(t, err)
+	// Second upsert with updated stars
+	{
+		err = repository.Upsert(ctx, owner, repo, newStars, now)
+		require.NoError(t, err)
 
-	repos, err = repository.ListAll(ctx)
-	require.NoError(t, err)
+		rows, err := repository.All(ctx)
+		require.NoError(t, err)
 
-	found = false
-	for _, r := range repos {
-		if r.Owner == owner && r.Repo == repo {
-			assert.Equal(t, newStars, r.StargazersCount)
-			assert.WithinDuration(t, newNow, r.UpdatedAt.UTC(), time.Second)
-			found = true
-			break
-		}
+		require.True(
+			t,
+			slices.Contains(rows, domain.GithubRepositoryStar{
+				Owner:           owner,
+				Repo:            repo,
+				StargazersCount: newStars,
+			}),
+		)
+
+		actualStars, err := repository.Get(ctx, owner, repo)
+		require.NoError(t, err)
+		require.Equal(t, newStars, actualStars)
 	}
-	assert.True(t, found, "Updated repository not found in ListAll")
 }

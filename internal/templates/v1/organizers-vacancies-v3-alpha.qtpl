@@ -6,6 +6,7 @@
   vacancies []PreparedVacancy,
   userVacancyFavoriteMap map[int64]bool,
   vacancyMonthlyViewsMap map[int64]int64,
+  stars int32,
   authQueryParams string,
 ) -%}
 <!DOCTYPE html>
@@ -67,7 +68,7 @@
           <a href="/{%s organizerFeature.Organizer.Alias %}/jobs" class="header__nav-link active">Jobs</a>
         </li>
       </ul>
-      {%= organizersHeaderStarsV3() %}
+      {%= organizersHeaderStarsV3(stars) %}
       {% if len(headerProfiles) > 0 %}
         {%= organizersHeaderProfileV3(headerProfiles) %}
       {% else %}
@@ -416,7 +417,7 @@
 
 </main>
 
-{%= organizersFooterV3() %}
+{%= organizersFooterV3(stars) %}
 </div>
 </body>
 <script src="/assets/js/organizers-vacancies-app.js?{%d appVersion %}"></script>

@@ -21,6 +21,7 @@ func StreamOrganizersCompaniesV3Beta(qw422016 *qt422016.Writer,
 	ukrainianUniversities []University,
 	czechUniversities []University,
 	userCompanyFavoriteMap map[int64]bool,
+	stars int32,
 	authQueryParams string,
 ) {
 	qw422016.N().S(`<!DOCTYPE html>
@@ -129,7 +130,7 @@ func StreamOrganizersCompaniesV3Beta(qw422016 *qt422016.Writer,
 	qw422016.N().S(`
       </ul>
       `)
-	streamorganizersHeaderStarsV3(qw422016)
+	streamorganizersHeaderStarsV3(qw422016, stars)
 	qw422016.N().S(`
       `)
 	if len(headerProfiles) > 0 {
@@ -313,7 +314,7 @@ func StreamOrganizersCompaniesV3Beta(qw422016 *qt422016.Writer,
 </main>
 
 `)
-	streamorganizersFooterV3(qw422016)
+	streamorganizersFooterV3(qw422016, stars)
 	qw422016.N().S(`
 </div>
 <script src="/assets/js/organizers-companies-v3-app.js?`)
@@ -332,10 +333,11 @@ func WriteOrganizersCompaniesV3Beta(qq422016 qtio422016.Writer,
 	ukrainianUniversities []University,
 	czechUniversities []University,
 	userCompanyFavoriteMap map[int64]bool,
+	stars int32,
 	authQueryParams string,
 ) {
 	qw422016 := qt422016.AcquireWriter(qq422016)
-	StreamOrganizersCompaniesV3Beta(qw422016, organizerFeature, headerProfiles, companies, ukrainianUniversities, czechUniversities, userCompanyFavoriteMap, authQueryParams)
+	StreamOrganizersCompaniesV3Beta(qw422016, organizerFeature, headerProfiles, companies, ukrainianUniversities, czechUniversities, userCompanyFavoriteMap, stars, authQueryParams)
 	qt422016.ReleaseWriter(qw422016)
 }
 
@@ -346,10 +348,11 @@ func OrganizersCompaniesV3Beta(
 	ukrainianUniversities []University,
 	czechUniversities []University,
 	userCompanyFavoriteMap map[int64]bool,
+	stars int32,
 	authQueryParams string,
 ) string {
 	qb422016 := qt422016.AcquireByteBuffer()
-	WriteOrganizersCompaniesV3Beta(qb422016, organizerFeature, headerProfiles, companies, ukrainianUniversities, czechUniversities, userCompanyFavoriteMap, authQueryParams)
+	WriteOrganizersCompaniesV3Beta(qb422016, organizerFeature, headerProfiles, companies, ukrainianUniversities, czechUniversities, userCompanyFavoriteMap, stars, authQueryParams)
 	qs422016 := string(qb422016.B)
 	qt422016.ReleaseByteBuffer(qb422016)
 	return qs422016

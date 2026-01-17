@@ -8,6 +8,7 @@ import (
 
 	"github.com/readytotouch/readytotouch/internal/db/postgres"
 	"github.com/readytotouch/readytotouch/internal/domain"
+	"github.com/readytotouch/readytotouch/internal/logger"
 	template "github.com/readytotouch/readytotouch/internal/templates/v1"
 
 	"github.com/gin-gonic/gin"
@@ -26,7 +27,7 @@ func NewController(userRepository *postgres.UserRepository, userToLinkedInCompan
 func (c *Controller) Index(ctx *gin.Context) {
 	headerProfiles, err := c.getHeaderProfiles(ctx, domain.ContextGetUserID(ctx))
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}

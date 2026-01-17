@@ -14,7 +14,11 @@ var (
 	_ = qt422016.AcquireByteBuffer
 )
 
-func StreamOrganizersWelcomeV3(qw422016 *qt422016.Writer, organizer Organizer, authQueryParams string) {
+func StreamOrganizersWelcomeV3(qw422016 *qt422016.Writer,
+	organizer Organizer,
+	stars int32,
+	authQueryParams string,
+) {
 	qw422016.N().S(`<!DOCTYPE html>
 <html lang="en">
 
@@ -58,7 +62,7 @@ func StreamOrganizersWelcomeV3(qw422016 *qt422016.Writer, organizer Organizer, a
       <h3 class="header__logo-title">Organizer</h3>
     </a>
     `)
-	streamorganizersHeaderStarsV3(qw422016)
+	streamorganizersHeaderStarsV3(qw422016, stars)
 	qw422016.N().S(`
   </div>
 </header>
@@ -129,7 +133,7 @@ func StreamOrganizersWelcomeV3(qw422016 *qt422016.Writer, organizer Organizer, a
 </main>
 
 `)
-	streamorganizersFooterV3(qw422016)
+	streamorganizersFooterV3(qw422016, stars)
 	qw422016.N().S(`
 
 </div>
@@ -141,15 +145,23 @@ func StreamOrganizersWelcomeV3(qw422016 *qt422016.Writer, organizer Organizer, a
 `)
 }
 
-func WriteOrganizersWelcomeV3(qq422016 qtio422016.Writer, organizer Organizer, authQueryParams string) {
+func WriteOrganizersWelcomeV3(qq422016 qtio422016.Writer,
+	organizer Organizer,
+	stars int32,
+	authQueryParams string,
+) {
 	qw422016 := qt422016.AcquireWriter(qq422016)
-	StreamOrganizersWelcomeV3(qw422016, organizer, authQueryParams)
+	StreamOrganizersWelcomeV3(qw422016, organizer, stars, authQueryParams)
 	qt422016.ReleaseWriter(qw422016)
 }
 
-func OrganizersWelcomeV3(organizer Organizer, authQueryParams string) string {
+func OrganizersWelcomeV3(
+	organizer Organizer,
+	stars int32,
+	authQueryParams string,
+) string {
 	qb422016 := qt422016.AcquireByteBuffer()
-	WriteOrganizersWelcomeV3(qb422016, organizer, authQueryParams)
+	WriteOrganizersWelcomeV3(qb422016, organizer, stars, authQueryParams)
 	qs422016 := string(qb422016.B)
 	qt422016.ReleaseByteBuffer(qb422016)
 	return qs422016

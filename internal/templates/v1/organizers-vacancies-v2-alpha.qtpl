@@ -6,6 +6,7 @@
   vacancies []PreparedVacancy,
   userVacancyFavoriteMap map[int64]bool,
   vacancyMonthlyViewsMap map[int64]int64,
+  stars int32,
   authQueryParams string,
 ) -%}
 <!DOCTYPE html>

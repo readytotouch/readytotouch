@@ -23,6 +23,7 @@ func StreamOrganizersCompaniesV2Alpha(qw422016 *qt422016.Writer,
 	ukrainianUniversities []University,
 	czechUniversities []University,
 	userCompanyFavoriteMap map[int64]bool,
+	stars int32,
 	authQueryParams string,
 ) {
 	qw422016.N().S(`<!DOCTYPE html>
@@ -790,10 +791,11 @@ func WriteOrganizersCompaniesV2Alpha(qq422016 qtio422016.Writer,
 	ukrainianUniversities []University,
 	czechUniversities []University,
 	userCompanyFavoriteMap map[int64]bool,
+	stars int32,
 	authQueryParams string,
 ) {
 	qw422016 := qt422016.AcquireWriter(qq422016)
-	StreamOrganizersCompaniesV2Alpha(qw422016, organizerFeature, headerProfiles, companies, ukrainianUniversities, czechUniversities, userCompanyFavoriteMap, authQueryParams)
+	StreamOrganizersCompaniesV2Alpha(qw422016, organizerFeature, headerProfiles, companies, ukrainianUniversities, czechUniversities, userCompanyFavoriteMap, stars, authQueryParams)
 	qt422016.ReleaseWriter(qw422016)
 }
 
@@ -804,10 +806,11 @@ func OrganizersCompaniesV2Alpha(
 	ukrainianUniversities []University,
 	czechUniversities []University,
 	userCompanyFavoriteMap map[int64]bool,
+	stars int32,
 	authQueryParams string,
 ) string {
 	qb422016 := qt422016.AcquireByteBuffer()
-	WriteOrganizersCompaniesV2Alpha(qb422016, organizerFeature, headerProfiles, companies, ukrainianUniversities, czechUniversities, userCompanyFavoriteMap, authQueryParams)
+	WriteOrganizersCompaniesV2Alpha(qb422016, organizerFeature, headerProfiles, companies, ukrainianUniversities, czechUniversities, userCompanyFavoriteMap, stars, authQueryParams)
 	qs422016 := string(qb422016.B)
 	qt422016.ReleaseByteBuffer(qb422016)
 	return qs422016

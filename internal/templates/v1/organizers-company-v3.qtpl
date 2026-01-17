@@ -9,6 +9,7 @@
   userVacancyFavoriteMap map[int64]bool,
   vacancyMonthlyViewsMap map[int64]int64,
   stats CompanyStats,
+  stars int32,
   authQueryParams string,
 ) -%}
 <!DOCTYPE html>
@@ -59,7 +60,7 @@
         </li>
         {% endcomment %}
       </ul>
-      {%= organizersHeaderStarsV3() %}
+      {%= organizersHeaderStarsV3(stars) %}
       {% if len(headerProfiles) > 0 %}
         {%= organizersHeaderProfileV3(headerProfiles) %}
       {% else %}
@@ -1122,7 +1123,7 @@
   </section>
 </main>
 
-{%= organizersFooterV3() %}
+{%= organizersFooterV3(stars) %}
 </div>
 <script src="/assets/js/organizers-company-app.js?{%d appVersion %}"></script>
 </body>

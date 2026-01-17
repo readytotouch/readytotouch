@@ -14,10 +14,10 @@ var (
 	_ = qt422016.AcquireByteBuffer
 )
 
-func streamorganizersHeaderStarsV3(qw422016 *qt422016.Writer) {
+func streamorganizersHeaderStarsV3(qw422016 *qt422016.Writer, stars int32) {
 	qw422016.N().S(`
 <div class="header__stars">
-  <span class="github-btn github-stargazers github-btn-large js-github-button">
+  <span class="github-btn github-stargazers github-btn-large">
     <a class="gh-btn"
        href="https://github.com/readytotouch/readytotouch"
        rel="noopener noreferrer"
@@ -27,27 +27,30 @@ func streamorganizersHeaderStarsV3(qw422016 *qt422016.Writer) {
       <span class="gh-ico" aria-hidden="true"></span>
       <span class="gh-text">Star</span>
     </a>
-    <a class="gh-count gh-count--is-hidden js-github-count"
+    <a class="gh-count"
        href="https://github.com/readytotouch/readytotouch/stargazers"
        rel="noopener noreferrer"
        target="_blank"
-       aria-label="1000+ stargazers on GitHub"
-       aria-hidden="true"
-    >1000+</a>
+       aria-label="`)
+	qw422016.N().D(int(stars))
+	qw422016.N().S(` stargazers on GitHub"
+    >`)
+	qw422016.N().D(int(stars))
+	qw422016.N().S(`</a>
   </span>
 </div>
 `)
 }
 
-func writeorganizersHeaderStarsV3(qq422016 qtio422016.Writer) {
+func writeorganizersHeaderStarsV3(qq422016 qtio422016.Writer, stars int32) {
 	qw422016 := qt422016.AcquireWriter(qq422016)
-	streamorganizersHeaderStarsV3(qw422016)
+	streamorganizersHeaderStarsV3(qw422016, stars)
 	qt422016.ReleaseWriter(qw422016)
 }
 
-func organizersHeaderStarsV3() string {
+func organizersHeaderStarsV3(stars int32) string {
 	qb422016 := qt422016.AcquireByteBuffer()
-	writeorganizersHeaderStarsV3(qb422016)
+	writeorganizersHeaderStarsV3(qb422016, stars)
 	qs422016 := string(qb422016.B)
 	qt422016.ReleaseByteBuffer(qb422016)
 	return qs422016

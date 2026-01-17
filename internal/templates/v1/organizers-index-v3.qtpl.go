@@ -17,6 +17,7 @@ var (
 func StreamOrganizersIndexV3(qw422016 *qt422016.Writer,
 	headerProfiles []SocialProviderUser,
 	socialProviderUsers []SocialProviderUser,
+	stars int32,
 ) {
 	qw422016.N().S(`<!DOCTYPE html>
 <html lang="en">
@@ -61,7 +62,7 @@ func StreamOrganizersIndexV3(qw422016 *qt422016.Writer,
 		qw422016.N().S(`
       <div class="header__nav-overlay js-header-nav">
         `)
-		streamorganizersHeaderStarsV3(qw422016)
+		streamorganizersHeaderStarsV3(qw422016, stars)
 		qw422016.N().S(`
         `)
 		streamorganizersHeaderProfileV3(qw422016, headerProfiles)
@@ -74,7 +75,7 @@ func StreamOrganizersIndexV3(qw422016 *qt422016.Writer,
 	} else {
 		qw422016.N().S(`
     `)
-		streamorganizersHeaderStarsV3(qw422016)
+		streamorganizersHeaderStarsV3(qw422016, stars)
 		qw422016.N().S(`
     `)
 	}
@@ -340,7 +341,7 @@ func StreamOrganizersIndexV3(qw422016 *qt422016.Writer,
 </main>
 
 `)
-	streamorganizersFooterV3(qw422016)
+	streamorganizersFooterV3(qw422016, stars)
 	qw422016.N().S(`
 </div>
 <script src="/assets/js/online-stats-app.js?`)
@@ -354,18 +355,20 @@ func StreamOrganizersIndexV3(qw422016 *qt422016.Writer,
 func WriteOrganizersIndexV3(qq422016 qtio422016.Writer,
 	headerProfiles []SocialProviderUser,
 	socialProviderUsers []SocialProviderUser,
+	stars int32,
 ) {
 	qw422016 := qt422016.AcquireWriter(qq422016)
-	StreamOrganizersIndexV3(qw422016, headerProfiles, socialProviderUsers)
+	StreamOrganizersIndexV3(qw422016, headerProfiles, socialProviderUsers, stars)
 	qt422016.ReleaseWriter(qw422016)
 }
 
 func OrganizersIndexV3(
 	headerProfiles []SocialProviderUser,
 	socialProviderUsers []SocialProviderUser,
+	stars int32,
 ) string {
 	qb422016 := qt422016.AcquireByteBuffer()
-	WriteOrganizersIndexV3(qb422016, headerProfiles, socialProviderUsers)
+	WriteOrganizersIndexV3(qb422016, headerProfiles, socialProviderUsers, stars)
 	qs422016 := string(qb422016.B)
 	qt422016.ReleaseByteBuffer(qb422016)
 	return qs422016

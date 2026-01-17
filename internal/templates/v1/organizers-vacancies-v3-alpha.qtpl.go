@@ -23,6 +23,7 @@ func StreamOrganizersVacanciesV3Alpha(qw422016 *qt422016.Writer,
 	vacancies []PreparedVacancy,
 	userVacancyFavoriteMap map[int64]bool,
 	vacancyMonthlyViewsMap map[int64]int64,
+	stars int32,
 	authQueryParams string,
 ) {
 	qw422016.N().S(`<!DOCTYPE html>
@@ -129,7 +130,7 @@ func StreamOrganizersVacanciesV3Alpha(qw422016 *qt422016.Writer,
         </li>
       </ul>
       `)
-	streamorganizersHeaderStarsV3(qw422016)
+	streamorganizersHeaderStarsV3(qw422016, stars)
 	qw422016.N().S(`
       `)
 	if len(headerProfiles) > 0 {
@@ -590,7 +591,7 @@ func StreamOrganizersVacanciesV3Alpha(qw422016 *qt422016.Writer,
 </main>
 
 `)
-	streamorganizersFooterV3(qw422016)
+	streamorganizersFooterV3(qw422016, stars)
 	qw422016.N().S(`
 </div>
 </body>
@@ -608,10 +609,11 @@ func WriteOrganizersVacanciesV3Alpha(qq422016 qtio422016.Writer,
 	vacancies []PreparedVacancy,
 	userVacancyFavoriteMap map[int64]bool,
 	vacancyMonthlyViewsMap map[int64]int64,
+	stars int32,
 	authQueryParams string,
 ) {
 	qw422016 := qt422016.AcquireWriter(qq422016)
-	StreamOrganizersVacanciesV3Alpha(qw422016, organizerFeature, headerProfiles, companies, vacancies, userVacancyFavoriteMap, vacancyMonthlyViewsMap, authQueryParams)
+	StreamOrganizersVacanciesV3Alpha(qw422016, organizerFeature, headerProfiles, companies, vacancies, userVacancyFavoriteMap, vacancyMonthlyViewsMap, stars, authQueryParams)
 	qt422016.ReleaseWriter(qw422016)
 }
 
@@ -622,10 +624,11 @@ func OrganizersVacanciesV3Alpha(
 	vacancies []PreparedVacancy,
 	userVacancyFavoriteMap map[int64]bool,
 	vacancyMonthlyViewsMap map[int64]int64,
+	stars int32,
 	authQueryParams string,
 ) string {
 	qb422016 := qt422016.AcquireByteBuffer()
-	WriteOrganizersVacanciesV3Alpha(qb422016, organizerFeature, headerProfiles, companies, vacancies, userVacancyFavoriteMap, vacancyMonthlyViewsMap, authQueryParams)
+	WriteOrganizersVacanciesV3Alpha(qb422016, organizerFeature, headerProfiles, companies, vacancies, userVacancyFavoriteMap, vacancyMonthlyViewsMap, stars, authQueryParams)
 	qs422016 := string(qb422016.B)
 	qt422016.ReleaseByteBuffer(qb422016)
 	return qs422016

@@ -1,6 +1,7 @@
 {%- func OrganizersIndexV3(
   headerProfiles []SocialProviderUser,
   socialProviderUsers []SocialProviderUser,
+  stars int32,
 ) -%}
 <!DOCTYPE html>
 <html lang="en">
@@ -32,12 +33,12 @@
     </a>
     {% if len(headerProfiles) > 0 %}
       <div class="header__nav-overlay js-header-nav">
-        {%= organizersHeaderStarsV3() %}
+        {%= organizersHeaderStarsV3(stars) %}
         {%= organizersHeaderProfileV3(headerProfiles) %}
       </div>
       {%= organizersHamburgerV3() %}
     {% else %}
-    {%= organizersHeaderStarsV3() %}
+    {%= organizersHeaderStarsV3(stars) %}
     {% endif %}
   </div>
 </header>
@@ -302,7 +303,7 @@
 
 </main>
 
-{%= organizersFooterV3() %}
+{%= organizersFooterV3(stars) %}
 </div>
 <script src="/assets/js/online-stats-app.js?{%d appVersion %}"></script>
 </body>
