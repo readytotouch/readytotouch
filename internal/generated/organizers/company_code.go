@@ -1303,6 +1303,8 @@ var (
 		"appdirect":                           1303, // AppDirect
 		"wix-com":                             1304, // Wix
 		"zorgdomein":                          1305, // ZorgDomein
+		"apple":                               1306, // Apple
+		"dragonflydb":                         1307, // Dragonfly
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

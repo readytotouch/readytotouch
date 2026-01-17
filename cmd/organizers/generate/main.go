@@ -253,7 +253,7 @@ func generateVacancies(companies []domain.CompanyProfile) {
 		})
 
 		for _, location := range locations {
-			fmt.Printf("%q: %q, // %d\n", location.Location, organizers.LocationCodeMap[location.Location], location.Count)
+			fmt.Printf("%q: %q, // %3d \n", location.Location, organizers.LocationCodeMap[location.Location], location.Count)
 		}
 	*/
 
@@ -473,7 +473,7 @@ func vacancyContainsCloudProvider(vacancy domain.Vacancy) bool {
 	cloudProviderKeywords := []string{
 		"AWS", "Amazon Web Services",
 		"GCP", "Google Cloud",
-		"Azure",
+		"Azure", "Microsoft Cloud",
 		"DigitalOcean", "Digital Ocean",
 		"Vultr",
 	}

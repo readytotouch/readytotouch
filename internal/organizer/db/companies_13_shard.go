@@ -2028,7 +2028,7 @@ func companies13Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4308497799/",
 							Location:             "Bellevue, WA",
-							Date:                 mustDate("2025-12-25", "2025-11-12", "2025-10-22", "2025-10-01"),
+							Date:                 mustDate("2026-01-16", "2025-12-25", "2025-11-12", "2025-10-22", "2025-10-01"),
 							WithSalary:           true, // $144k/yr - $180k/yr
 							Remote:               false,
 						},

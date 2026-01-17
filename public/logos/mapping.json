@@ -408,6 +408,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "apple",
+    "source": "apple-200x200.jpeg",
+    "destination": "apple.jpeg",
+    "destination_72x72": "apple.jpeg"
+  },
+  {
     "alias": "applied-research-solutions",
     "source": "",
     "destination": "",
@@ -1990,6 +1996,12 @@
     "source": "dottxt-180x180.png",
     "destination": "dottxt.png",
     "destination_72x72": "dottxt.png"
+  },
+  {
+    "alias": "dragonflydb",
+    "source": "dragonflydb-200x200.jpeg",
+    "destination": "dragonflydb.jpeg",
+    "destination_72x72": "dragonflydb.jpeg"
   },
   {
     "alias": "dria-ai",
