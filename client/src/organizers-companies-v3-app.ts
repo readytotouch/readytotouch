@@ -21,7 +21,7 @@ import {Alias} from "./framework/alias";
 import {renderSelected} from "./framework/selected_criteria";
 import {firstQuerySelector} from "./framework/query_selector";
 import {setStateByURLMapper} from "./framework/set_state_by_url";
-import {responsiveHeaderProfileWidget} from "./responsive-header-profile-widget";
+import {isAuth, responsiveHeaderProfileWidget} from "./responsive-header-profile-widget";
 import {responsiveFilterWidget} from "./responsive-filter-widget";
 import {addCompanyShowMoreEvent} from "./responsive-company-show-more-widget";
 import {addCompanyFavoriteEvent} from "./organizers-companies-favorite";
@@ -288,6 +288,12 @@ function setPage(page: number) {
 
     urlStateContainer.storeCurrentState();
 
+    if (!isAuth()) {
+        window.location.href = organizersWelcome();
+
+        return;
+    }
+
     // Faster to just render from current state than re-searching
     {
         const offset = pager.getOffset();
@@ -312,6 +318,12 @@ $paginationShowMoreButton.addEventListener("click", function () {
     $paginationShowAllButton.disabled = true;
     $paginationShowMoreButton.disabled = true;
 
+    if (!isAuth()) {
+        window.location.href = organizersWelcome();
+
+        return;
+    }
+
     pager.incrementOffsetOnly();
 
     // Faster to just render from current state than re-searching
@@ -331,6 +343,12 @@ $paginationShowMoreButton.addEventListener("click", function () {
 $paginationShowAllButton.addEventListener("click", function () {
     $paginationShowAllButton.disabled = true;
     $paginationShowMoreButton.disabled = true;
+
+    if (!isAuth()) {
+        window.location.href = organizersWelcome();
+
+        return;
+    }
 
     pager.incrementOffsetOnly();
 
@@ -550,6 +568,20 @@ function renderCompanies(
 
 function init(companies: Array<CompanyResponse>) {
     sourceCompanies = companies;
+
+    /*
+        Allowing the page to be opened in a new window — someone might think they’ve hacked the system and be happy about it.
+    */
+    /*
+        if (pager.getPage() > 1 && !isAuth()) {
+            window.location.href = organizersWelcome();
+
+            return;
+        }
+    */
+    /*
+        Although it’s also possible that I simply forgot to add this code and later replaced the commit. But then how could I have replaced it in the PR as well: https://github.com/readytotouch/readytotouch/pull/291 ?
+    */
 
     search(true, false);
 }
