@@ -16,8 +16,10 @@ A platform for simplifying job search
 ## Articles
 - Forum | [My list of companies that use Rust](https://users.rust-lang.org/t/my-list-of-companies-that-use-rust/127300)
 - Reddit | [My list of companies that use Rust](https://www.reddit.com/r/rust/comments/1jg4rrl/my_list_of_companies_that_use_rust/)
+- Reddit | [Job-oriented list of companies using Rust in production is now mobile-friendly](https://www.reddit.com/r/rust/comments/1qcalnt/joboriented_list_of_companies_using_rust_in/)
 - Reddit | [My list of companies that use Golang 2.0](https://www.reddit.com/r/golang/comments/1ixglek/my_list_of_companies_that_use_golang_20/)
 - Reddit | [My list of companies that use Golang](https://www.reddit.com/r/golang/comments/1fjbp1p/my_list_of_companies_that_use_golang/)
+- Reddit | [Job-oriented list of companies using Go in production — now mobile-friendly](https://www.reddit.com/r/golang/comments/1qegiyy/joboriented_list_of_companies_using_go_in/)
 
 ## Analytics
 - https://readytotouch.com/plausible

@@ -24,13 +24,8 @@ import (
 
 var (
 	testFullPublicSince = time.Date(2025, time.November, 1, 0, 0, 0, 0, time.UTC)
-	testFullPublicUntil = time.Date(2026, time.January, 25, 0, 0, 0, 0, time.UTC)
-	testStrictAuthUntil = time.Date(2026, time.January, 21, 0, 0, 0, 0, time.UTC)
+	testFullPublicUntil = time.Date(2027, time.January, 25, 0, 0, 0, 0, time.UTC)
 )
-
-func testStrictAuth(date time.Time) bool {
-	return date.Before(testStrictAuthUntil)
-}
 
 func testFullPublic(date time.Time) bool {
 	return date.After(testFullPublicSince) && date.Before(testFullPublicUntil)
@@ -790,7 +785,7 @@ func (c *Controller) VacancyRedirect(ctx *gin.Context) {
 		now        = time.Now().UTC()
 	)
 
-	if authUserID == 0 && (testStrictAuth(now) || !testFullPublic(now)) {
+	if authUserID == 0 {
 		ctx.Redirect(http.StatusFound, "/golang/welcome"+c.redirect(ctx.Request.URL.Path))
 
 		return
@@ -2015,10 +2010,6 @@ func (c *Controller) random(language domain.Language) bool {
 		now    = time.Now()
 		minute = now.Minute()
 	)
-
-	if testStrictAuth(now) {
-		return true
-	}
 
 	if testFullPublic(now) {
 		return false

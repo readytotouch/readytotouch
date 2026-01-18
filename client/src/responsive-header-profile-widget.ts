@@ -69,3 +69,7 @@ export function responsiveHeaderProfileWidget() {
         profileToggle($headerProfileButton, $modalProfile, $headerProfileAvatar)
     }
 }
+
+export function isAuth() {
+    return document.querySelector(".js-header-profile-avatar") !== null;
+}
