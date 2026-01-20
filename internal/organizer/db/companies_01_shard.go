@@ -3237,6 +3237,17 @@ func companies01Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $200.4k/yr - $275.6k/yr
 							Remote:               true,
 						},
+						{
+							Title:                "Staff Software Engineer, Clojure",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4342421488/",
+							Location:             "United States",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-01-20"),
+							WithSalary:           true, // $184.6k/yr - $260.7k/yr
+							Remote:               true,
+						},
 					},
 				},
 				domain.Haskell: {},

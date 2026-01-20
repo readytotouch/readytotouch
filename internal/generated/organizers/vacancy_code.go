@@ -126,6 +126,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4097075408/":                                                               273,  // fastly
 		"https://www.linkedin.com/jobs/view/3983369109/":                                                               400,  // dropbox
 		"https://www.linkedin.com/jobs/view/4342344055/":                                                               3565, // docker
+		"https://www.linkedin.com/jobs/view/4342421488/":                                                               3817, // docker
 		"https://www.linkedin.com/jobs/view/4076482530/":                                                               401,  // grafana-labs
 		"https://www.linkedin.com/jobs/view/4102997754/":                                                               402,  // hashicorp
 		"https://www.indeed.com/viewjob?jk=7af3879e19ecbbee":                                                           1276, // hashicorp
