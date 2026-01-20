@@ -4354,7 +4354,7 @@ func companies07Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4325828607/",
 							Location:             "Prague, Prague, Czechia",
-							Date:                 mustDate("2025-12-06"),
+							Date:                 mustDate("2026-01-18", "2025-12-06"),
 							WithSalary:           false,
 							Remote:               false,
 						},

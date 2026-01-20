@@ -2166,6 +2166,12 @@
     "destination_72x72": "elastic-co.png"
   },
   {
+    "alias": "elastio",
+    "source": "elastio.svg",
+    "destination": "elastio.svg",
+    "destination_72x72": "elastio.svg"
+  },
+  {
     "alias": "electronic-arts",
     "source": "electronic-arts-200x200.jpeg",
     "destination": "electronic-arts.jpeg",

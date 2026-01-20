@@ -365,6 +365,7 @@ var (
 		"edclub":                              "edclub.jpeg",
 		"eightcap-aufx":                       "",
 		"elastic-co":                          "elastic-co.png",
+		"elastio":                             "",
 		"electronic-arts":                     "electronic-arts.jpeg",
 		"eltropy":                             "eltropy.jpeg",
 		"embark-studios-ab":                   "",
