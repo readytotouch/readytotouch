@@ -263,6 +263,7 @@ var (
 		"commercetools":                       "commercetools.png",
 		"commonwealthbank":                    "",
 		"communitydotcom":                     "",
+		"commvault":                           "commvault.png",
 		"compassinc":                          "",
 		"complear":                            "complear.jpeg",
 		"consortgroup":                        "",

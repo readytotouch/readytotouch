@@ -1000,7 +1000,19 @@ func companies11Shard() []domain.CompanyProfile {
 				},
 				domain.Rust: {
 					GitHubRepositoryCount: 2,
-					Vacancies:             nil,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "JetBrains Rust Developer Advocate",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4354123960/",
+							Location:             "Boston, MA",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-01-20"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
 				},
 				domain.Zig:     {},
 				domain.Scala:   {},
@@ -2036,6 +2048,17 @@ func companies11Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4313441005/",
 							Location:             "Jersey City, NJ",
 							Date:                 mustDate("2025-12-10", "2025-12-02", "2025-11-23", "2025-11-02"),
+							WithSalary:           true, // $107k/yr - $216k/yr
+							Remote:               false,
+						},
+						{
+							Title:                "Principal Rust Engineer, Tech Lead",
+							ShortDescription:     "DeFi Yield Gen",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4363833690/",
+							Location:             "Jersey City, NJ",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-01-18"),
 							WithSalary:           true, // $107k/yr - $216k/yr
 							Remote:               false,
 						},

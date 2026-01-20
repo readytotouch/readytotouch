@@ -3547,7 +3547,7 @@ func companies01Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4306506648/",
 							Location:             "Greater Coimbatore Area",
-							Date:                 mustDate("2025-12-06", "2025-10-01"),
+							Date:                 mustDate("2026-01-18"), // mustDate("2025-12-06", "2025-10-01"),
 							WithSalary:           false,
 							Remote:               true,
 						},

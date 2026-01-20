@@ -1467,7 +1467,7 @@ func companies17Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4342567607/",
 							Location:             "Long Beach, CA",
 							Date:                 mustDate("2026-01-20"), // mustDate("2025-12-10"),
-							WithSalary:           true, // $110k/yr - $160k/yr
+							WithSalary:           true,                   // $110k/yr - $160k/yr
 							Remote:               false,
 						},
 					},

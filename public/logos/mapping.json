@@ -1554,6 +1554,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "commvault",
+    "source": "commvault-449x449.png",
+    "destination": "commvault.png",
+    "destination_72x72": "commvault.png"
+  },
+  {
     "alias": "compassinc",
     "source": "",
     "destination": "",

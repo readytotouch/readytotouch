@@ -916,6 +916,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4266413357/":                                                               2429, // paessler-gmbh
 		"https://www.linkedin.com/jobs/view/4270199013/":                                                               2504, // paessler-gmbh
 		"https://www.linkedin.com/jobs/view/4285841701/":                                                               2711, // paessler-gmbh
+		"https://www.linkedin.com/jobs/view/4354043594/":                                                               3824, // paessler-gmbh
 		"https://www.linkedin.com/jobs/view/4026175934/":                                                               387,  // hasura
 		"https://www.linkedin.com/jobs/view/4036409356/":                                                               388,  // hasura
 		"https://www.linkedin.com/jobs/view/4039345477/":                                                               225,  // airahome
@@ -1241,6 +1242,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4310886376/":                                                               3136, // poppi-technologies
 		"https://www.linkedin.com/jobs/view/4335584697/":                                                               3351, // poppi-technologies
 		"https://www.linkedin.com/jobs/view/4346003473/":                                                               3710, // poppi-technologies
+		"https://www.linkedin.com/jobs/view/4362050562/":                                                               3825, // poppi-technologies
 		"https://www.linkedin.com/jobs/view/4242865746/":                                                               2141, // booz-allen-hamilton
 		"https://www.linkedin.com/jobs/view/4056310581/":                                                               513,  // booz-allen-hamilton
 		"https://www.linkedin.com/jobs/view/4033986551/":                                                               514,  // flexera
@@ -2437,6 +2439,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4289482589/":                                                               2733, // arm
 		"https://www.linkedin.com/jobs/view/4285526084/":                                                               2734, // jetbrains
 		"https://www.linkedin.com/jobs/view/4344532660/":                                                               3660, // jetbrains
+		"https://www.linkedin.com/jobs/view/4354123960/":                                                               3826, // jetbrains
 		"https://www.linkedin.com/jobs/view/4163890859/":                                                               977,  // garena
 		"https://www.linkedin.com/jobs/view/4277526629/":                                                               2582, // garena
 		"https://www.linkedin.com/jobs/view/4160597734/":                                                               978,  // moneylion
@@ -2476,6 +2479,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4231780612/":                                                               2015, // fidelity-investments
 		"https://www.linkedin.com/jobs/view/4231777846/":                                                               2185, // fidelity-investments
 		"https://www.linkedin.com/jobs/view/4313441005/":                                                               3306, // fidelity-investments
+		"https://www.linkedin.com/jobs/view/4363833690/":                                                               3827, // fidelity-investments
 		"https://www.linkedin.com/jobs/view/4260468112/":                                                               2217, // fidelity-investments
 		"https://www.linkedin.com/jobs/view/4265238703/":                                                               2378, // fidelity-investments
 		"https://www.linkedin.com/jobs/view/4169628634/":                                                               1058, // bread-financial
@@ -3303,6 +3307,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4258947366/":                                                               2197, // famedly
 		"https://www.linkedin.com/jobs/view/4331456289/":                                                               3277, // famedly
 		"https://www.linkedin.com/jobs/view/4344422351/":                                                               3669, // famedly
+		"https://www.linkedin.com/jobs/view/4353774073/":                                                               3828, // famedly
 		"https://www.linkedin.com/jobs/view/4258996962/":                                                               2198, // chapa-financial-technologies
 		"https://www.linkedin.com/jobs/view/4305719609/":                                                               3102, // chapa-financial-technologies
 		"https://www.linkedin.com/jobs/view/4256478997/":                                                               2199, // webbeds
@@ -3691,7 +3696,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4310350066/":                                                               3191, // centra-commerce
 		"https://www.linkedin.com/jobs/view/4326037685/":                                                               3621, // centra-commerce
 		"https://www.linkedin.com/jobs/view/4311254582/":                                                               3192, // lifemote-networks
-		"https://www.chilipiper.com/careers?ashby_jid=ab556557-83cf-467d-90fb-5119dabf146c#work":                       3195, // chilipiper
+		"https://www.chilipiper.com/careers?ashby_jid=ab556557-83cf-467d-90fb-5119dabf146c":                            3195, // chilipiper
 		"https://www.linkedin.com/jobs/view/4315588096/":                                                               3260, // openvpn
 		"https://www.linkedin.com/jobs/view/4321637674/":                                                               3379, // openvpn
 		"https://www.linkedin.com/jobs/view/4324838905/":                                                               3540, // openvpn
@@ -3739,6 +3744,7 @@ var (
 		"https://app.welcometothejungle.com/jobs/K4rT3xXa":                                                             3406, // loveholidays
 		"https://app.welcometothejungle.com/jobs/GBw_kEIb":                                                             3407, // nominal-inc
 		"https://www.linkedin.com/jobs/view/4348528670/":                                                               3582, // nominal-inc
+		"https://www.linkedin.com/jobs/view/4353864082/":                                                               3829, // nominal-inc
 		"https://www.linkedin.com/jobs/view/4315845952/":                                                               3408, // upsundotcom
 		"https://app.welcometothejungle.com/jobs/a89BBmyB":                                                             3409, // upsundotcom
 		"https://app.welcometothejungle.com/jobs/ZE2xDHam":                                                             3410, // motherduck
@@ -3750,6 +3756,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4316423693/":                                                               3721, // cloudera
 		"https://www.linkedin.com/jobs/view/4344485805/":                                                               3775, // cloudera
 		"https://www.linkedin.com/jobs/view/4316415785/":                                                               3813, // cloudera
+		"https://www.linkedin.com/jobs/view/4322967178/":                                                               3830, // cloudera
 		"https://www.linkedin.com/jobs/view/4317466938/":                                                               3435, // cloudera
 		"https://www.linkedin.com/jobs/view/4336250122/":                                                               3436, // twilio-inc-
 		"https://www.linkedin.com/jobs/view/4361396242/":                                                               3740, // twilio-inc-
@@ -3771,6 +3778,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4343394584/":                                                               3637, // the-modern-milkman
 		"https://www.linkedin.com/jobs/view/4346411724/":                                                               3731, // the-modern-milkman
 		"https://www.linkedin.com/jobs/view/4359609180/":                                                               3741, // the-modern-milkman
+		"https://www.linkedin.com/jobs/view/4360439518/":                                                               3831, // the-modern-milkman
 		"https://www.linkedin.com/jobs/view/4347788624/":                                                               3542, // cynet-security
 		"https://www.linkedin.com/jobs/view/4339345535/":                                                               3543, // ankorstore
 		"https://www.linkedin.com/jobs/view/4344708769/":                                                               3698, // ankorstore
@@ -3819,6 +3827,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4359225502/":                                                               3789, // apple
 		"https://www.dragonflydb.io/careers/senior-control-plane-backend-engineer-golang":                              3816, // dragonflydb
 		"https://www.linkedin.com/jobs/view/4352623829/":                                                               3822, // brp
+		"https://www.linkedin.com/jobs/view/4362002359/":                                                               3832, // commvault
 		"https://www.linkedin.com/jobs/view/3914839625/":                                                               372,  // cognizant
 		"https://www.linkedin.com/jobs/view/4120737001/":                                                               600,  // cognizant
 		"https://www.linkedin.com/jobs/view/4149258542/":                                                               787,  // cognizant
