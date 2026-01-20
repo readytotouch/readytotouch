@@ -5124,6 +5124,17 @@ func companies19Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Scala Developer",
+							ShortDescription:     "Markets Quant Team",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4310458888/",
+							Location:             "Zurich, Zurich, Switzerland",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-01-19"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Elixir: {

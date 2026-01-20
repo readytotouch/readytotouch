@@ -3443,6 +3443,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4345355121/":                                                               3772, // octopusmoney
 		"https://www.linkedin.com/jobs/view/4268438536/":                                                               2465, // swan-embedded-banking
 		"https://www.linkedin.com/jobs/view/4214640651/":                                                               2466, // julius-baer
+		"https://www.linkedin.com/jobs/view/4310458888/":                                                               3818, // julius-baer
 		"https://www.linkedin.com/jobs/view/4268126029/":                                                               2467, // cap-rx
 		"https://www.linkedin.com/jobs/view/4271482521/":                                                               2482, // papainc
 		"https://www.linkedin.com/jobs/view/4270777580/":                                                               2700, // papainc
@@ -3670,6 +3671,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4308983560/":                                                               3180, // avantstay
 		"https://www.linkedin.com/jobs/view/4307236421/":                                                               3181, // kaluza
 		"https://app.welcometothejungle.com/jobs/SyvliXfm":                                                             3404, // kaluza
+		"https://www.linkedin.com/jobs/view/4354044556/":                                                               3819, // kaluza
 		"https://www.linkedin.com/jobs/view/4308245274/":                                                               3182, // zegocover
 		"https://www.linkedin.com/jobs/view/4309608120/":                                                               3183, // lobster-robotics
 		"https://www.linkedin.com/jobs/view/4308288567/":                                                               3184, // affinidi
@@ -3786,6 +3788,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4341524010/":                                                               3554, // sky
 		"https://www.linkedin.com/jobs/view/4327994781/":                                                               3686, // sky
 		"https://www.linkedin.com/jobs/view/4363523052/":                                                               3788, // sky
+		"https://www.linkedin.com/jobs/view/4364629555/":                                                               3820, // sky
 		"https://www.linkedin.com/jobs/view/4325399277/":                                                               3563, // reducate
 		"https://www.linkedin.com/jobs/view/4348395855/":                                                               3574, // myo-healthcare
 		"https://www.linkedin.com/jobs/view/4350156792/":                                                               3699, // myo-healthcare
