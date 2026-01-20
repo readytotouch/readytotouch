@@ -3086,6 +3086,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4314927536/":                                                               3242, // allocator-one
 		"https://www.linkedin.com/jobs/view/4341961080/":                                                               3430, // allocator-one
 		"https://www.linkedin.com/jobs/view/4345561102/":                                                               3693, // allocator-one
+		"https://www.linkedin.com/jobs/view/4353714125/":                                                               3821, // allocator-one
 		"https://www.linkedin.com/jobs/view/4194786604/":                                                               1701, // simacanbv
 		"https://www.linkedin.com/jobs/view/4209595207/":                                                               1702, // impactdotcom
 		"https://www.linkedin.com/jobs/view/4264910255/":                                                               2383, // impactdotcom
@@ -3139,6 +3140,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4236751515/":                                                               1959, // pdq-com
 		"https://www.linkedin.com/jobs/view/4258305221/":                                                               2189, // pdq-com
 		"https://www.linkedin.com/jobs/view/4308900826/":                                                               3100, // pdq-com
+		"https://www.linkedin.com/jobs/view/4364228470/":                                                               3823, // pdq-com
 		"https://www.linkedin.com/jobs/view/4219694154/":                                                               1784, // true-anomaly
 		"https://www.linkedin.com/jobs/view/4273981223/":                                                               2478, // true-anomaly
 		"https://www.linkedin.com/jobs/view/4281934098/":                                                               2664, // true-anomaly
@@ -3816,6 +3818,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4359295380/":                                                               3815, // apple
 		"https://www.linkedin.com/jobs/view/4359225502/":                                                               3789, // apple
 		"https://www.dragonflydb.io/careers/senior-control-plane-backend-engineer-golang":                              3816, // dragonflydb
+		"https://www.linkedin.com/jobs/view/4352623829/":                                                               3822, // brp
 		"https://www.linkedin.com/jobs/view/3914839625/":                                                               372,  // cognizant
 		"https://www.linkedin.com/jobs/view/4120737001/":                                                               600,  // cognizant
 		"https://www.linkedin.com/jobs/view/4149258542/":                                                               787,  // cognizant

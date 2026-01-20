@@ -1014,6 +1014,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "brp",
+    "source": "brp-200x200.jpeg",
+    "destination": "brp.jpeg",
+    "destination_72x72": "brp.jpeg"
+  },
+  {
     "alias": "btaskee",
     "source": "btaskee-200x200.jpeg",
     "destination": "btaskee.jpeg",

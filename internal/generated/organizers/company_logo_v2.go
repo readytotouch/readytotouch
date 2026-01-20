@@ -173,6 +173,7 @@ var (
 		"breezesocial":                        "breezesocial.jpeg",
 		"brevo":                               "brevo.jpeg",
 		"broadcom":                            "",
+		"brp":                                 "brp.jpeg",
 		"btaskee":                             "btaskee.jpeg",
 		"bud-financial":                       "bud-financial.png",
 		"buenro":                              "buenro.jpeg",
