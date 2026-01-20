@@ -1014,6 +1014,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "brp",
+    "source": "brp-200x200.jpeg",
+    "destination": "brp.jpeg",
+    "destination_72x72": "brp.jpeg"
+  },
+  {
     "alias": "btaskee",
     "source": "btaskee-200x200.jpeg",
     "destination": "btaskee.jpeg",
@@ -1546,6 +1552,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "commvault",
+    "source": "commvault-449x449.png",
+    "destination": "commvault.png",
+    "destination_72x72": "commvault.png"
   },
   {
     "alias": "compassinc",
@@ -2152,6 +2164,12 @@
     "source": "elastic-192x192.png",
     "destination": "elastic-co.png",
     "destination_72x72": "elastic-co.png"
+  },
+  {
+    "alias": "elastio",
+    "source": "elastio.svg",
+    "destination": "elastio.svg",
+    "destination_72x72": "elastio.svg"
   },
   {
     "alias": "electronic-arts",

@@ -3522,7 +3522,7 @@ func companies08Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4322082598/",
 							Location:             "Vietnam",
-							Date:                 mustDate("2025-12-26", "2025-12-05", "2025-11-12"),
+							Date:                 mustDate("2026-01-18", "2025-12-26", "2025-12-05", "2025-11-12"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -4297,6 +4297,17 @@ func companies08Shard() []domain.CompanyProfile {
 							Location:             "Palo Alto, CA",
 							Date:                 mustDate("2025-10-29"),
 							WithSalary:           true, // $85/hr - $90/hr
+							Remote:               false,
+						},
+						{
+							Title:                "Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4360844453/",
+							Location:             "Plano, TX",
+							CloudProviders:       []domain.CloudProvider{domain.AWS},
+							Date:                 mustDate("2026-01-20"),
+							WithSalary:           true, // $60/hr - $65/hr
 							Remote:               false,
 						},
 					},

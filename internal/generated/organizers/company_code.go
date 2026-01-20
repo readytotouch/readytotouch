@@ -1305,6 +1305,9 @@ var (
 		"zorgdomein":                          1305, // ZorgDomein
 		"apple":                               1306, // Apple
 		"dragonflydb":                         1307, // Dragonfly
+		"brp":                                 1308, // BRP
+		"commvault":                           1309, // Commvault
+		"elastio":                             1310, // Elastio
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 
