@@ -501,7 +501,7 @@ func companies15Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4338457303/",
 							Location:             "Austin, TX",
-							Date:                 mustDate("2026-01-13", "2025-12-15", "2025-11-25"),
+							Date:                 mustDate("2026-01-21", "2026-01-13", "2025-12-15", "2025-11-25"),
 							WithSalary:           false,
 							Remote:               false,
 						},

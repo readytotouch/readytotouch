@@ -2514,7 +2514,7 @@ func companies21Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4300493896/",
 							Location:             "Gurugram, Haryana, India",
-							Date:                 mustDate("2025-11-20"),
+							Date:                 mustDate("2026-01-24", "2025-11-20"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -4631,6 +4631,17 @@ func companies21Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $136.9k/yr - $205.4k/yr
 							Remote:               false,
 						},
+						{
+							Title:                "Staff Software Engineer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4365360203/",
+							Location:             "Chesterfield, MO",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-01-23"),
+							WithSalary:           true, // $119.1k/yr - $178.6k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
@@ -5104,6 +5115,17 @@ func companies21Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4305014286/",
 							Location:             "Berlin, Berlin, Germany",
 							Date:                 mustDate("2025-09-28"),
+							WithSalary:           true, // €70k/yr - €80k/yr
+							Remote:               false,
+						},
+						{
+							Title:                "(Senior) Developer Backend (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4355773555/",
+							Location:             "Berlin, Berlin, Germany",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-01-25"),
 							WithSalary:           true, // €70k/yr - €80k/yr
 							Remote:               false,
 						},
@@ -6258,7 +6280,7 @@ func companies21Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4312301338/",
 							Location:             "Aarhus, Central Denmark Region, Denmark",
-							Date:                 mustDate("2025-12-13", "2025-11-20", "2025-10-08"),
+							Date:                 mustDate("2026-01-25", "2025-12-13", "2025-11-20", "2025-10-08"),
 							WithSalary:           false,
 							Remote:               false,
 						},

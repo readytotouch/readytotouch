@@ -399,6 +399,17 @@ func companies23Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Staff Engineer – Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4365212068/",
+							Location:             "Berlin, Berlin, Germany",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-01-23"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
@@ -1592,6 +1603,17 @@ func companies23Shard() []domain.CompanyProfile {
 							Location:             "San Diego, CA",
 							CloudProviders:       []domain.CloudProvider{},
 							Date:                 mustDate("2026-01-16"),
+							WithSalary:           true, // $171.6k/yr - $302.2k/yr
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Software Engineer – Golang",
+							ShortDescription:     "Cloud Infrastructure",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4321352292/",
+							Location:             "San Francisco, CA",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-01-24"),
 							WithSalary:           true, // $171.6k/yr - $302.2k/yr
 							Remote:               false,
 						},
