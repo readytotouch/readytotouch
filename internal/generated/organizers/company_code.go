@@ -1309,6 +1309,8 @@ var (
 		"commvault":                           1309, // Commvault
 		"elastio":                             1310, // Elastio
 		"tybaenergy":                          1311, // Tyba
+		"fractile":                            1312, // Fractile
+		"sensit-haptics":                      1313, // SensitHaptics
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

@@ -2045,6 +2045,17 @@ func companies18Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Software Engineer Backend Rust",
+							ShortDescription:     "Microservices",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4365586810/",
+							Location:             "Santa Clara, CA",
+							CloudProviders:       []domain.CloudProvider{domain.AWS, domain.GCP, domain.Azure},
+							Date:                 mustDate("2026-01-25"),
+							WithSalary:           true, // $100k/yr - $160k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig: {
