@@ -3200,7 +3200,7 @@ func companies13Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4311329988/",
 							Location:             "Costa Mesa, CA",
-							Date:                 mustDate("2025-12-10", "2025-11-19"),
+							Date:                 mustDate("2026-01-22", "2025-12-10", "2025-11-19"),
 							WithSalary:           false,
 							Remote:               false,
 						},
