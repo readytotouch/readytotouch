@@ -2424,6 +2424,17 @@ func companies21Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Lead Software Engineer (Scala)",
+							ShortDescription:     "Storefront",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4355394004/",
+							Location:             "Austin, TX",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-01-24"),
+							WithSalary:           true, // $158.3k/yr - $237.4k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Elixir: {
@@ -5512,7 +5523,7 @@ func companies21Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4308245274/",
 							Location:             "United Kingdom",
-							Date:                 mustDate("2025-12-10", "2025-11-19", "2025-10-08"),
+							Date:                 mustDate("2026-01-22", "2025-12-10", "2025-11-19", "2025-10-08"),
 							WithSalary:           false,
 							Remote:               true,
 						},

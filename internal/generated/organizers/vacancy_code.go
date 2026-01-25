@@ -66,6 +66,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4252167022/":                                                               2367, // ibm
 		"https://www.linkedin.com/jobs/view/4282845350/":                                                               2843, // ibm
 		"https://www.linkedin.com/jobs/view/4348824912/":                                                               3564, // ibm
+		"https://www.linkedin.com/jobs/view/4355232038/":                                                               3847, // ibm
 		"https://www.linkedin.com/jobs/view/4072909509/":                                                               258,  // sap
 		"https://www.linkedin.com/jobs/view/4072911263/":                                                               541,  // sap
 		"https://www.linkedin.com/jobs/view/4073625824/":                                                               592,  // sap
@@ -3171,6 +3172,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4225153194/":                                                               1828, // onedoc.ch
 		"https://www.linkedin.com/jobs/view/4248020239/":                                                               2093, // onedoc.ch
 		"https://www.linkedin.com/jobs/view/4262231132/":                                                               2249, // onedoc.ch
+		"https://www.linkedin.com/jobs/view/4365279485/":                                                               3848, // onedoc.ch
 		"https://www.linkedin.com/jobs/view/4220863785/":                                                               1829, // wallee-group
 		"https://www.linkedin.com/jobs/view/4226130637/":                                                               1856, // wallee-group
 		"https://www.linkedin.com/jobs/view/4244541596/":                                                               1983, // wallee-group
@@ -3637,6 +3639,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4337889761/":                                                               3538, // poweredbycommerce
 		"https://www.linkedin.com/jobs/view/4299256946/":                                                               2988, // poweredbycommerce
 		"https://www.linkedin.com/jobs/view/4299264966/":                                                               3177, // poweredbycommerce
+		"https://www.linkedin.com/jobs/view/4355394004/":                                                               3849, // poweredbycommerce
 		"https://www.linkedin.com/jobs/view/4300493896/":                                                               3476, // ciena
 		"https://www.linkedin.com/jobs/view/4327785528/":                                                               3671, // ciena
 		"https://www.linkedin.com/jobs/view/4301301751/":                                                               2989, // ciena
