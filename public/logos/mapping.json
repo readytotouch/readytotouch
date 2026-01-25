@@ -2652,6 +2652,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "fractile",
+    "source": "fractile-200x200.jpeg",
+    "destination": "fractile.jpeg",
+    "destination_72x72": "fractile.jpeg"
+  },
+  {
     "alias": "frankieone",
     "source": "frankieone-256x256.png",
     "destination": "frankieone.png",
@@ -5892,6 +5898,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "sensit-haptics",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
+  },
+  {
     "alias": "sentinelone",
     "source": "sentinelone-180x180.webp",
     "destination": "sentinelone.png",
@@ -7006,6 +7018,12 @@
     "source": "twosixtechnologies-481x481.jpg",
     "destination": "twosixtechnologies.jpg",
     "destination_72x72": "twosixtechnologies.jpg"
+  },
+  {
+    "alias": "tybaenergy",
+    "source": "tybaenergy-180x180.png",
+    "destination": "tybaenergy.png",
+    "destination_72x72": "tybaenergy.png"
   },
   {
     "alias": "tyk",
