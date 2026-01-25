@@ -23,13 +23,11 @@ import (
 )
 
 var (
-	testFullPublicSince = time.Date(2025, time.November, 1, 0, 0, 0, 0, time.UTC)
-	testFullPublicUntil = time.Date(2027, time.January, 25, 0, 0, 0, 0, time.UTC)
+	defaultLanguagePinnedCompanyMap = map[domain.Language]string{
+		domain.Go:   "google",
+		domain.Rust: "mozilla",
+	}
 )
-
-func testFullPublic(date time.Time) bool {
-	return date.After(testFullPublicSince) && date.Before(testFullPublicUntil)
-}
 
 type (
 	companyAliasURI struct {
@@ -285,12 +283,6 @@ func (c *Controller) companiesAction(
 		return
 	}
 
-	if c.softAuthRedirect(ctx, authUserID, organizerFeature.Organizer.Language) {
-		ctx.Redirect(http.StatusFound, "/"+organizerFeature.Organizer.Alias+"/welcome"+c.redirect(ctx.Request.URL.Path))
-
-		return
-	}
-
 	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)
 	if err != nil {
 		logger.Error(err)
@@ -300,7 +292,7 @@ func (c *Controller) companiesAction(
 
 	companies := c.companies(organizerFeature.Organizer.Language)
 
-	c.sortCompanies(companies)
+	c.sortCompanies(companies, defaultLanguagePinnedCompanyMap[organizerFeature.Organizer.Language])
 
 	userCompanyFavoriteMap, err := c.userFavoriteCompanyRepository.GetMap(ctx, authUserID, nil)
 	if err != nil {
@@ -356,12 +348,6 @@ func (c *Controller) companyAction(
 	if !ok {
 		// Should be unreachable
 		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Feature not found"))
-
-		return
-	}
-
-	if c.softAuthRedirect(ctx, authUserID, organizerFeature.Organizer.Language) {
-		ctx.Redirect(http.StatusFound, "/"+organizerFeature.Organizer.Alias+"/welcome"+c.redirect(ctx.Request.URL.Path))
 
 		return
 	}
@@ -545,12 +531,6 @@ func (c *Controller) jobsAction(
 	organizerFeature, ok := c.organizerFeature(ctx.FullPath())
 	if !ok {
 		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Feature not found"))
-
-		return
-	}
-
-	if c.softAuthRedirect(ctx, authUserID, organizerFeature.Organizer.Language) {
-		ctx.Redirect(http.StatusFound, "/"+organizerFeature.Organizer.Alias+"/welcome"+c.redirect(ctx.Request.URL.Path))
 
 		return
 	}
@@ -1107,7 +1087,7 @@ func (c *Controller) UnsafeCompaniesV3(ctx *gin.Context) {
 
 	companies := c.companies(organizer.Language)
 
-	c.sortCompanies(companies)
+	c.sortCompanies(companies, defaultLanguagePinnedCompanyMap[organizer.Language])
 
 	userCompanyFavoriteMap, err := c.userFavoriteCompanyRepository.GetMap(ctx, authUserID, nil)
 	if err != nil {
@@ -1698,7 +1678,7 @@ func (c *Controller) companies(language domain.Language) []domain.CompanyProfile
 	return companies
 }
 
-func (c *Controller) sortCompanies(companies []domain.CompanyProfile) {
+func (c *Controller) sortCompanies(companies []domain.CompanyProfile, defaultPinnedCompanyAlias string) {
 	var (
 		maxPinnedUntilCompanyID = int64(0)
 		maxPinnedUntil          = time.Now()
@@ -1708,6 +1688,17 @@ func (c *Controller) sortCompanies(companies []domain.CompanyProfile) {
 		if company.LinkedInProfile.Verified && company.PinnedUntil.After(maxPinnedUntil) {
 			maxPinnedUntilCompanyID = company.ID
 			maxPinnedUntil = company.PinnedUntil
+		}
+	}
+
+	if maxPinnedUntilCompanyID == 0 && defaultPinnedCompanyAlias != "" {
+		for i, company := range companies {
+			if company.LinkedInProfile.Alias == defaultPinnedCompanyAlias {
+				maxPinnedUntilCompanyID = company.ID
+				company.PinnedUntil = time.Now().UTC().Truncate(time.Hour).AddDate(0, 0, 1)
+				companies[i] = company
+				break
+			}
 		}
 	}
 
@@ -1916,7 +1907,7 @@ func (c *Controller) DataPopulationCompaniesLogo(ctx *gin.Context) {
 		result = append(result, company)
 	}
 
-	c.sortCompanies(result)
+	c.sortCompanies(result, "")
 
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationCompaniesLogo(result, "Populate Logo")))
 }
@@ -1960,7 +1951,7 @@ func (c *Controller) dataPopulationCompanies(match func(company domain.CompanyPr
 		companies = append(companies, company)
 	}
 
-	c.sortCompanies(companies)
+	c.sortCompanies(companies, "")
 
 	return companies
 }
@@ -1980,61 +1971,6 @@ func (c *Controller) anyRemoteVacancy(vacancies []domain.Vacancy) bool {
 		if vacancy.Remote {
 			return true
 		}
-	}
-
-	return false
-}
-
-func (c *Controller) softAuthRedirect(ctx *gin.Context, authUserID int64, language domain.Language) bool {
-	if authUserID > 0 {
-		return false
-	}
-
-	if ctx.Request.Host == "localhost" {
-		return false
-	}
-
-	if c.random(language) {
-		if strings.Contains(ctx.GetHeader("User-Agent"), "Googlebot") {
-			return false
-		}
-
-		return true
-	}
-
-	return false
-}
-
-func (c *Controller) random(language domain.Language) bool {
-	var (
-		now    = time.Now()
-		minute = now.Minute()
-	)
-
-	if testFullPublic(now) {
-		return false
-	}
-
-	const (
-		often = 8  // once in 8 minutes
-		rare  = 16 // once in 16 minutes
-	)
-
-	switch language {
-	case domain.Go:
-		return minute%often == 0
-	case domain.Rust:
-		return minute%often == 0
-	case domain.Zig:
-		return minute%rare == 0
-	case domain.Scala:
-		return minute%rare == 0
-	case domain.Elixir:
-		return minute%often == 0
-	case domain.Clojure:
-		return minute%rare == 0
-	case domain.Haskell:
-		return minute%rare == 0
 	}
 
 	return false
