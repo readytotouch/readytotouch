@@ -1172,6 +1172,7 @@ var (
 		"twilio-inc-":                         "twilio-inc-.jpeg",
 		"twitch-tv":                           "",
 		"twosixtechnologies":                  "twosixtechnologies.jpg",
+		"tybaenergy":                          "tybaenergy.png",
 		"tyk":                                 "",
 		"uber-com":                            "uber-com.jpeg",
 		"ubiquiti-":                           "ubiquiti-.png",

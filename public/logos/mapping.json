@@ -7008,6 +7008,12 @@
     "destination_72x72": "twosixtechnologies.jpg"
   },
   {
+    "alias": "tybaenergy",
+    "source": "tybaenergy-180x180.png",
+    "destination": "tybaenergy.png",
+    "destination_72x72": "tybaenergy.png"
+  },
+  {
     "alias": "tyk",
     "source": "",
     "destination": "",

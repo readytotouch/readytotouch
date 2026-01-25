@@ -3845,6 +3845,17 @@ func companies20Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $110k/yr - $120k/yr
 							Remote:               false,
 						},
+						{
+							Title:                "Clojure/Java Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4329383506/",
+							Location:             "Naperville, IL",
+							CloudProviders:       []domain.CloudProvider{domain.AWS},
+							Date:                 mustDate("2026-01-23"),
+							WithSalary:           true, // $110k/yr - $120k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Haskell: {
@@ -4659,7 +4670,7 @@ func companies20Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4326520542/",
 							Location:             "London, England, United Kingdom",
-							Date:                 mustDate("2025-12-10"),
+							Date:                 mustDate("2026-01-21", "2025-12-10"),
 							WithSalary:           false,
 							Remote:               false,
 						},

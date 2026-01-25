@@ -3548,6 +3548,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4342066018/":                                                               3719, // ifood-
 		"https://www.linkedin.com/jobs/view/4287526043/":                                                               2769, // amplifiloyalty
 		"https://www.linkedin.com/jobs/view/4320054232/":                                                               3322, // amplifiloyalty
+		"https://www.linkedin.com/jobs/view/4329383506/":                                                               3846, // amplifiloyalty
 		"https://www.linkedin.com/jobs/view/4289132808/":                                                               2770, // rublon
 		"https://www.linkedin.com/jobs/view/4290544541/":                                                               2780, // bigabid
 		"https://www.linkedin.com/jobs/view/4288896427/":                                                               2781, // permutive
@@ -3840,6 +3841,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4352623829/":                                                               3822, // brp
 		"https://www.linkedin.com/jobs/view/4362002359/":                                                               3832, // commvault
 		"https://www.linkedin.com/jobs/view/4361981306/":                                                               3835, // elastio
+		"https://www.linkedin.com/jobs/view/4365415737/":                                                               3845, // tybaenergy
 		"https://www.linkedin.com/jobs/view/3914839625/":                                                               372,  // cognizant
 		"https://www.linkedin.com/jobs/view/4120737001/":                                                               600,  // cognizant
 		"https://www.linkedin.com/jobs/view/4149258542/":                                                               787,  // cognizant
