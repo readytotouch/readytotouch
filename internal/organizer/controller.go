@@ -25,7 +25,7 @@ import (
 var (
 	defaultLanguagePinnedCompanyMap = map[domain.Language]string{
 		domain.Go:   "google",
-		domain.Rust: "mozilla",
+		domain.Rust: "mozilla-corporation",
 	}
 )
 
