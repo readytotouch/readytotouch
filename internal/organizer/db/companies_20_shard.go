@@ -5658,6 +5658,17 @@ func companies20Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Golang Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4366177922/",
+							Location:             "Quận 12, Ho Chi Minh City, Vietnam",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-01-26"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
