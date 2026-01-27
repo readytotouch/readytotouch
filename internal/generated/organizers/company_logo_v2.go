@@ -655,7 +655,7 @@ var (
 		"lumeltech":                           "",
 		"lumentechnologies":                   "",
 		"luminovo":                            "",
-		"lyft":                                "",
+		"lyft":                                "lyft.jpeg",
 		"lynk-global-inc":                     "lynk-global-inc.png",
 		"lytxinc":                             "",
 		"macquariegroup":                      "macquariegroup.jpeg",

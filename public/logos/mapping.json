@@ -3907,9 +3907,9 @@
   },
   {
     "alias": "lyft",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "lyft-200x200.jpeg",
+    "destination": "lyft.jpeg",
+    "destination_72x72": "lyft.jpeg"
   },
   {
     "alias": "lynk-global-inc",
