@@ -2521,8 +2521,8 @@ func companies23Shard() []domain.CompanyProfile {
 		{
 			ID:         0,  // system
 			Type:       "", // system
-			Name:       "https://www.lyft.com/",
-			BaseURL:    "",
+			Name:       "Lyft",
+			BaseURL:    "https://www.lyft.com/",
 			CareersURL: "https://www.lyft.com/careers",
 			AboutURL:   "",
 			BlogURL:    "",
