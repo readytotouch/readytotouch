@@ -73,9 +73,9 @@
   },
   {
     "alias": "abnormalsecurity",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "abnormalsecurity-200x200.jpeg",
+    "destination": "abnormalsecurity.jpeg",
+    "destination_72x72": "abnormalsecurity.jpeg"
   },
   {
     "alias": "about-you",
@@ -1164,6 +1164,12 @@
     "destination_72x72": "cars-commerce.jpeg"
   },
   {
+    "alias": "cartahealthcare",
+    "source": "cartahealthcare-180x180.png",
+    "destination": "cartahealthcare.png",
+    "destination_72x72": "cartahealthcare.png"
+  },
+  {
     "alias": "cast-ai",
     "source": "",
     "destination": "",
@@ -1291,9 +1297,9 @@
   },
   {
     "alias": "chime-card",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "chime-200x200.jpeg",
+    "destination": "chime-card.jpeg",
+    "destination_72x72": "chime-card.jpeg"
   },
   {
     "alias": "cho-tot",
@@ -2434,6 +2440,12 @@
     "source": "figma-200x200.jpeg",
     "destination": "figma.jpeg",
     "destination_72x72": "figma.jpeg"
+  },
+  {
+    "alias": "finaryhq",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "fincompare",
@@ -3642,6 +3654,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "league-inc-",
+    "source": "league-200x200.jpeg",
+    "destination": "league-inc-.jpeg",
+    "destination_72x72": "league-inc-.jpeg"
+  },
+  {
     "alias": "leaseweb",
     "source": "leaseweb-200x200.jpeg",
     "destination": "leaseweb.jpeg",
@@ -3886,6 +3904,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "lyft",
+    "source": "lyft-200x200.jpeg",
+    "destination": "lyft.jpeg",
+    "destination_72x72": "lyft.jpeg"
   },
   {
     "alias": "lynk-global-inc",
@@ -4201,9 +4225,9 @@
   },
   {
     "alias": "monzo-bank",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "monzo-bank-200x200.jpeg",
+    "destination": "monzo-bank.jpeg",
+    "destination_72x72": "monzo-bank.jpeg"
   },
   {
     "alias": "moodys-corporation",
@@ -5268,6 +5292,12 @@
     "destination_72x72": "pubmatic.jpeg"
   },
   {
+    "alias": "pulley-cap-table",
+    "source": "pulley-200x200.jpeg",
+    "destination": "pulley-cap-table.jpeg",
+    "destination_72x72": "pulley-cap-table.jpeg"
+  },
+  {
     "alias": "pulsepoint",
     "source": "",
     "destination": "",
@@ -5509,9 +5539,9 @@
   },
   {
     "alias": "remitly",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "remitly-180x180.png",
+    "destination": "remitly.png",
+    "destination_72x72": "remitly.png"
   },
   {
     "alias": "remote.com",
@@ -6498,6 +6528,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "synctera",
+    "source": "synctera-200x200.jpeg",
+    "destination": "synctera.jpeg",
+    "destination_72x72": "synctera.jpeg"
+  },
+  {
     "alias": "synitidata",
     "source": "",
     "destination": "",
@@ -6658,6 +6694,12 @@
     "source": "telnyx-200x200.jpeg",
     "destination": "telnyx.jpeg",
     "destination_72x72": "telnyx.jpeg"
+  },
+  {
+    "alias": "temporal-technologies",
+    "source": "temporal-technologies-200x200.jpeg",
+    "destination": "temporal-technologies.jpeg",
+    "destination_72x72": "temporal-technologies.jpeg"
   },
   {
     "alias": "tenableinc",
@@ -6826,6 +6868,12 @@
     "source": "tietoevry-180x180.webp",
     "destination": "tietoevry.png",
     "destination_72x72": "tietoevry.png"
+  },
+  {
+    "alias": "tigergraph",
+    "source": "tigergraph-270x270.webp",
+    "destination": "tigergraph.png",
+    "destination_72x72": "tigergraph.png"
   },
   {
     "alias": "tiiuae",

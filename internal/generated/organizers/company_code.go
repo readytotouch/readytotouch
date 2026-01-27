@@ -1311,6 +1311,14 @@ var (
 		"tybaenergy":                          1311, // Tyba
 		"fractile":                            1312, // Fractile
 		"sensit-haptics":                      1313, // SensitHaptics
+		"temporal-technologies":               1314, // Temporal Technologies
+		"synctera":                            1315, // Synctera
+		"finaryhq":                            1316, // Finary
+		"lyft":                                1317, // Lyft
+		"pulley-cap-table":                    1318, // Pulley
+		"tigergraph":                          1319, // TigerGraph
+		"cartahealthcare":                     1320, // Carta Healthcare
+		"league-inc-":                         1321, // League
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 
