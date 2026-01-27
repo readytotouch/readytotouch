@@ -385,6 +385,15 @@ func companies01Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Software Engineer",
+							ShortDescription:     "Professional programming experience in Rust",
+							SwitchingOpportunity: "",
+							URL:                  "https://app.welcometothejungle.com/jobs/v9z8vd9V",
+							Date:                 mustDate("2026-01-27"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig:     {},
@@ -880,7 +889,20 @@ func companies01Shard() []domain.CompanyProfile {
 			OttaProfileSlug:   "Amazon",
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
-				domain.Go: {},
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Development Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "We work mostly in Go, and while experience as a Go developer isn’t required (you can learn it pretty quickly)",
+							URL:                  "https://app.welcometothejungle.com/jobs/ZmLEwg_A",
+							Date:                 mustDate("2026-01-27"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
 				domain.Rust: {
 					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
@@ -3343,6 +3365,15 @@ func companies01Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4076482530/",
 							Date:                 mustDate("2024-12-05"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Staff Backend Software Engineer, Grafana Labs",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://app.welcometothejungle.com/jobs/eaAKWyEc",
+							Date:                 mustDate("2026-01-27"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -6292,15 +6323,16 @@ func companies01Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoryCount: 81,
-					Vacancies:             []domain.Vacancy{
-						/*
-							{
-								Title:            "",
-								ShortDescription: "",
-								URL:              "https://app.welcometothejungle.com/jobs/ZwnXtENr",
-								Date:             mustDate(""),
-							},
-						*/
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Backend Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "You have some experience with strongly-typed languages (Go, Java, C, Scala)",
+							URL:                  "https://app.welcometothejungle.com/jobs/mSII8Ef7",
+							Date:                 mustDate("2026-01-27"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},

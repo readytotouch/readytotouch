@@ -643,6 +643,16 @@ func companies15Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $99.5-200k per year
 							Remote:               false,
 						},
+						{
+							Title:                "Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "Proficient experience level in one or more of the following language: Go, Typescript, Ruby, Java, C++",
+							URL:                  "https://app.welcometothejungle.com/jobs/0rHV8iDA",
+							CloudProviders:       []domain.CloudProvider{domain.AWS},
+							Date:                 mustDate("2026-01-27"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -708,6 +718,15 @@ func companies15Shard() []domain.CompanyProfile {
 							URL:                  "https://app.welcometothejungle.com/jobs/ogHfGiQ_",
 							Date:                 mustDate("2025-04-03"),
 							WithSalary:           true, // $125-220k per year + stock options
+							Remote:               false,
+						},
+						{
+							Title:                "Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "Extensive back-end engineering experience in statically typed languages like Go, Java, or Rust",
+							URL:                  "https://app.welcometothejungle.com/jobs/sAXtqwnY",
+							Date:                 mustDate("2026-01-27"),
+							WithSalary:           false,
 							Remote:               false,
 						},
 					},

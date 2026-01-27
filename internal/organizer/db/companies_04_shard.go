@@ -101,15 +101,16 @@ func companies04Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoryCount: 0,
-					Vacancies:             []domain.Vacancy{
-						/*
-							{
-								Title:            "",
-								ShortDescription: "",
-								URL:              "https://app.welcometothejungle.com/jobs/nKhnfPzD",
-								Date:             mustDate(""),
-							},
-						*/
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer",
+							ShortDescription:     "Must have experience in Go",
+							SwitchingOpportunity: "",
+							URL:                  "https://app.welcometothejungle.com/jobs/bgQn7ACK",
+							Date:                 mustDate("2026-01-27"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -119,8 +120,10 @@ func companies04Shard() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
-			Industries:       []domain.Industry{},
+			ShortDescription: "Mobile banking for the everyday person\n\n",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
 			HasEmployeesFromCountries: []domain.Country{
 				domain.Ukraine,
 				domain.Czechia,
@@ -457,6 +460,15 @@ func companies04Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4039096196/",
 							Date:                 mustDate("2024-12-05"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Backend Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://app.welcometothejungle.com/jobs/D-HQrtd0",
+							Date:                 mustDate("2026-01-27"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3968,11 +3980,20 @@ func companies04Shard() []domain.CompanyProfile {
 					GitHubRepositoryCount: 1,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Senior Software Engineer — Platform Security Team",
-							ShortDescription:     "Experience with Golang and Python programming languages",
-							SwitchingOpportunity: "",
+							Title:                "Senior Software Engineer",
+							ShortDescription:     "Platform Security Team",
+							SwitchingOpportunity: "Experience with Go and Python",
 							URL:                  "https://www.linkedin.com/jobs/view/4092851428/",
 							Date:                 mustDate("2024-12-12"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Software Engineer",
+							ShortDescription:     "Identity Security",
+							SwitchingOpportunity: "Experience with Go and Python",
+							URL:                  "https://app.welcometothejungle.com/jobs/wCkDaAMo",
+							Date:                 mustDate("2026-01-27"),
 							WithSalary:           false,
 							Remote:               false,
 						},
