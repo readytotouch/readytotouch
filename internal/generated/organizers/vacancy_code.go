@@ -15,6 +15,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4206880649/":                                                               1470, // google
 		"https://www.linkedin.com/jobs/view/4208955190/":                                                               1787, // google
 		"https://www.linkedin.com/jobs/view/4068076458/":                                                               396,  // mozilla-corporation
+		"https://app.welcometothejungle.com/jobs/v9z8vd9V":                                                             3892, // mozilla-corporation
 		"https://www.linkedin.com/jobs/view/4082697010/":                                                               397,  // discord
 		"https://www.linkedin.com/jobs/view/4102671396/":                                                               398,  // discord
 		"https://www.linkedin.com/jobs/view/3906200700/":                                                               399,  // figma
@@ -26,6 +27,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4302520423/":                                                               2998, // microsoft
 		"https://www.linkedin.com/jobs/view/4343954412/":                                                               3654, // microsoft
 		"https://www.linkedin.com/jobs/view/4359487019/":                                                               3734, // microsoft
+		"https://app.welcometothejungle.com/jobs/ZmLEwg_A":                                                             3893, // amazon
 		"https://www.linkedin.com/jobs/view/4245168055/":                                                               2047, // amazon
 		"https://www.linkedin.com/jobs/view/4036994106/":                                                               1,    // ibm
 		"https://www.linkedin.com/jobs/view/4075807665/":                                                               2,    // ibm
@@ -130,6 +132,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4342344055/":                                                               3565, // docker
 		"https://www.linkedin.com/jobs/view/4342421488/":                                                               3817, // docker
 		"https://www.linkedin.com/jobs/view/4076482530/":                                                               401,  // grafana-labs
+		"https://app.welcometothejungle.com/jobs/eaAKWyEc":                                                             3894, // grafana-labs
 		"https://www.linkedin.com/jobs/view/4102997754/":                                                               402,  // hashicorp
 		"https://www.indeed.com/viewjob?jk=7af3879e19ecbbee":                                                           1276, // hashicorp
 		"https://www.linkedin.com/jobs/view/3996818515/":                                                               7,    // crowdstrike
@@ -260,6 +263,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4296965075/":                                                               2877, // morgan-stanley
 		"https://www.linkedin.com/jobs/view/4303024461/":                                                               3000, // morgan-stanley
 		"https://www.linkedin.com/jobs/view/4318392955/":                                                               3414, // morgan-stanley
+		"https://app.welcometothejungle.com/jobs/mSII8Ef7":                                                             3895, // monzo-bank
 		"https://www.linkedin.com/jobs/view/3912849197/":                                                               307,  // citi
 		"https://www.linkedin.com/jobs/view/4089424578/":                                                               544,  // citi
 		"https://www.linkedin.com/jobs/view/4132150228/":                                                               678,  // citi
@@ -805,9 +809,11 @@ var (
 		"https://www.linkedin.com/jobs/view/4125751681/":                                                               651,  // checkout
 		"https://www.linkedin.com/jobs/view/4318291110/":                                                               3219, // checkout
 		"https://app.welcometothejungle.com/jobs/AO0pWzl7":                                                             3400, // checkout
+		"https://app.welcometothejungle.com/jobs/bgQn7ACK":                                                             3896, // chime-card
 		"https://www.linkedin.com/jobs/view/4162630665/":                                                               985,  // compassinc
 		"https://www.linkedin.com/jobs/view/4017721524/":                                                               429,  // mercuryhq
 		"https://www.linkedin.com/jobs/view/4039096196/":                                                               430,  // tailscale
+		"https://app.welcometothejungle.com/jobs/D-HQrtd0":                                                             3897, // tailscale
 		"https://www.linkedin.com/jobs/view/4265441422/":                                                               2394, // tailscale
 		"https://www.linkedin.com/jobs/view/4265440461/":                                                               3004, // tailscale
 		"https://www.linkedin.com/jobs/view/4012619449/":                                                               379,  // tabbypay
@@ -914,6 +920,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4184693514/":                                                               1436, // cross-river-bank
 		"https://www.linkedin.com/jobs/view/4213025215/":                                                               1834, // cross-river-bank
 		"https://www.linkedin.com/jobs/view/4092851428/":                                                               448,  // abnormalsecurity
+		"https://app.welcometothejungle.com/jobs/wCkDaAMo":                                                             3898, // abnormalsecurity
 		"https://www.linkedin.com/jobs/view/4099234574/":                                                               449,  // scope3data
 		"https://www.linkedin.com/jobs/view/4043213870/":                                                               450,  // apollo-graphql
 		"https://www.linkedin.com/jobs/view/4145959230/":                                                               866,  // apollo-graphql
@@ -1354,6 +1361,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4053346980/":                                                               525,  // ing
 		"https://www.linkedin.com/jobs/view/4157289953/":                                                               1169, // ing
 		"https://www.linkedin.com/jobs/view/4050285116/":                                                               526,  // remitly
+		"https://app.welcometothejungle.com/jobs/2_JtlBcE":                                                             3899, // remitly
 		"https://www.linkedin.com/jobs/view/4092211710/":                                                               205,  // level-all
 		"https://www.linkedin.com/jobs/view/4242216761/":                                                               1971, // level-all
 		"https://www.linkedin.com/jobs/view/4261784244/":                                                               2239, // level-all
@@ -2186,6 +2194,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4359197689/":                                                               3802, // strangebee
 		"https://www.linkedin.com/jobs/view/4364951444/":                                                               3833, // strangebee
 		"https://www.linkedin.com/jobs/view/4365773480/":                                                               3873, // strangebee
+		"https://www.linkedin.com/jobs/view/4366247002/":                                                               3900, // strangebee
 		"https://www.linkedin.com/jobs/view/4287799376/":                                                               2725, // strangebee
 		"https://www.linkedin.com/jobs/view/4120264764/":                                                               587,  // thatgamecompany
 		"https://www.linkedin.com/jobs/view/4121587727/":                                                               588,  // betterme-company
@@ -2784,6 +2793,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4216283297/":                                                               1695, // hubble-pte.-ltd.
 		"https://www.linkedin.com/jobs/view/4304601709/":                                                               3051, // hubble-pte.-ltd.
 		"https://www.linkedin.com/jobs/view/4191748355/":                                                               1312, // unity
+		"https://app.welcometothejungle.com/jobs/BjnIl5UA":                                                             3901, // unity
 		"https://www.linkedin.com/jobs/view/4276985492/":                                                               2518, // unity
 		"https://www.linkedin.com/jobs/view/4190144087/":                                                               1313, // adjoe
 		"https://www.linkedin.com/jobs/view/4198154575/":                                                               1403, // adjoe
@@ -2819,6 +2829,7 @@ var (
 		"https://www.indeed.com/viewjob?jk=1645f9d3eb114feb":                                                           1323, // andurilindustries
 		"https://www.linkedin.com/jobs/view/4275736021/":                                                               2520, // andurilindustries
 		"https://www.linkedin.com/jobs/view/4301541466/":                                                               2963, // andurilindustries
+		"https://app.welcometothejungle.com/jobs/y1qZXQo1":                                                             3902, // andurilindustries
 		"https://www.linkedin.com/jobs/view/3988413256/":                                                               1877, // andurilindustries
 		"https://www.linkedin.com/jobs/view/4261799654/":                                                               2246, // andurilindustries
 		"https://www.linkedin.com/jobs/view/4297611580/":                                                               2904, // andurilindustries
@@ -2882,7 +2893,9 @@ var (
 		"https://www.linkedin.com/jobs/view/4338457303/":                                                               3494, // lightspeed-systems
 		"https://www.linkedin.com/jobs/view/4132287368/":                                                               1405, // knime
 		"https://app.welcometothejungle.com/jobs/Go06Evd5":                                                             1406, // twitch-tv
+		"https://app.welcometothejungle.com/jobs/0rHV8iDA":                                                             3903, // twitch-tv
 		"https://app.welcometothejungle.com/jobs/ogHfGiQ_":                                                             1407, // assembledhq
+		"https://app.welcometothejungle.com/jobs/sAXtqwnY":                                                             3904, // assembledhq
 		"https://app.welcometothejungle.com/jobs/XyNov7nK":                                                             1408, // rundoo
 		"https://www.linkedin.com/jobs/view/4210761460/":                                                               1879, // zelis
 		"https://www.linkedin.com/jobs/view/4198124231/":                                                               1409, // ford-motor-company
@@ -2928,6 +2941,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4201048109/":                                                               1468, // we-are-fyst
 		"https://www.linkedin.com/jobs/view/4271017879/":                                                               2462, // we-are-fyst
 		"https://www.linkedin.com/jobs/view/4334616271/":                                                               3312, // we-are-fyst
+		"https://www.linkedin.com/jobs/view/4366197840/":                                                               3905, // we-are-fyst
 		"https://www.linkedin.com/jobs/view/4204378000/":                                                               1469, // letgo
 		"https://www.linkedin.com/jobs/view/4204597545/":                                                               1505, // daftcode-sp-z-o-o-
 		"https://www.linkedin.com/jobs/view/4205812062/":                                                               1506, // scorebuddy
@@ -3611,6 +3625,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4295629301/":                                                               2838, // robomarkets
 		"https://www.linkedin.com/jobs/view/4295317964/":                                                               2839, // btaskee
 		"https://www.linkedin.com/jobs/view/4301174724/":                                                               2979, // btaskee
+		"https://www.linkedin.com/jobs/view/4366177922/":                                                               3906, // btaskee
 		"https://www.linkedin.com/jobs/view/4295918906/":                                                               2840, // joincruit
 		"https://www.linkedin.com/jobs/view/4294835755/":                                                               2841, // blackpoint
 		"https://www.linkedin.com/jobs/view/4296963567/":                                                               2868, // rapid-ai
@@ -3887,6 +3902,14 @@ var (
 		"https://www.linkedin.com/jobs/view/4365415737/":                                                               3845, // tybaenergy
 		"https://www.linkedin.com/jobs/view/4365068054/":                                                               3855, // fractile
 		"https://www.linkedin.com/jobs/view/4353968645/":                                                               3858, // sensit-haptics
+		"https://app.welcometothejungle.com/jobs/4rzK4S2Q":                                                             3907, // temporal-technologies
+		"https://app.welcometothejungle.com/jobs/Aj9OCtLp":                                                             3908, // synctera
+		"https://www.linkedin.com/jobs/view/4365057961/":                                                               3909, // finaryhq
+		"https://app.welcometothejungle.com/jobs/8uY1vXia":                                                             3910, // lyft
+		"https://app.welcometothejungle.com/jobs/zdAIjgww":                                                             3911, // pulley-cap-table
+		"https://app.welcometothejungle.com/jobs/bxA9L-FI":                                                             3912, // tigergraph
+		"https://app.welcometothejungle.com/jobs/1LWG87a7":                                                             3913, // cartahealthcare
+		"https://app.welcometothejungle.com/jobs/FEj04ps5":                                                             3914, // league-inc-
 		"https://www.linkedin.com/jobs/view/3914839625/":                                                               372,  // cognizant
 		"https://www.linkedin.com/jobs/view/4120737001/":                                                               600,  // cognizant
 		"https://www.linkedin.com/jobs/view/4149258542/":                                                               787,  // cognizant

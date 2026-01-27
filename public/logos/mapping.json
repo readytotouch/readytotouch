@@ -1164,6 +1164,12 @@
     "destination_72x72": "cars-commerce.jpeg"
   },
   {
+    "alias": "cartahealthcare",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
+  },
+  {
     "alias": "cast-ai",
     "source": "",
     "destination": "",
@@ -2436,6 +2442,12 @@
     "destination_72x72": "figma.jpeg"
   },
   {
+    "alias": "finaryhq",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
+  },
+  {
     "alias": "fincompare",
     "source": "",
     "destination": "",
@@ -3642,6 +3654,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "league-inc-",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
+  },
+  {
     "alias": "leaseweb",
     "source": "leaseweb-200x200.jpeg",
     "destination": "leaseweb.jpeg",
@@ -3883,6 +3901,12 @@
   },
   {
     "alias": "luminovo",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
+  },
+  {
+    "alias": "lyft",
     "source": "",
     "destination": "",
     "destination_72x72": ""
@@ -5268,6 +5292,12 @@
     "destination_72x72": "pubmatic.jpeg"
   },
   {
+    "alias": "pulley-cap-table",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
+  },
+  {
     "alias": "pulsepoint",
     "source": "",
     "destination": "",
@@ -6498,6 +6528,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "synctera",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
+  },
+  {
     "alias": "synitidata",
     "source": "",
     "destination": "",
@@ -6658,6 +6694,12 @@
     "source": "telnyx-200x200.jpeg",
     "destination": "telnyx.jpeg",
     "destination_72x72": "telnyx.jpeg"
+  },
+  {
+    "alias": "temporal-technologies",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "tenableinc",
@@ -6826,6 +6868,12 @@
     "source": "tietoevry-180x180.webp",
     "destination": "tietoevry.png",
     "destination_72x72": "tietoevry.png"
+  },
+  {
+    "alias": "tigergraph",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "tiiuae",
