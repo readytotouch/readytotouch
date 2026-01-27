@@ -4061,8 +4061,9 @@ func companies22Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "spotoninc",
+				Followers: "97",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -4085,7 +4086,7 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoryCount: 0,
+					GitHubRepositoryCount: 5,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer II (Golang)",

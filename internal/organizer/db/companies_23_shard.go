@@ -1945,8 +1945,9 @@ func companies23Shard() []domain.CompanyProfile {
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "elastio",
+				Followers: "31",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -1962,7 +1963,7 @@ func companies23Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoryCount: 0,
+					GitHubRepositoryCount: 1,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Go Engineer",
@@ -1978,7 +1979,7 @@ func companies23Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoryCount: 0,
+					GitHubRepositoryCount: 20,
 					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
