@@ -470,6 +470,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4220346486/":                                                               1754, // gymondo-gmbh
 		"https://www.linkedin.com/jobs/view/4224453681/":                                                               1832, // gymondo-gmbh
 		"https://www.linkedin.com/jobs/view/4354240183/":                                                               3861, // gymondo-gmbh
+		"https://www.linkedin.com/jobs/view/4356053613/":                                                               3924, // gymondo-gmbh
 		"https://www.linkedin.com/jobs/view/4023882932/":                                                               13,   // delivery-hero-se
 		"https://www.linkedin.com/jobs/view/4148753946/":                                                               802,  // delivery-hero-se
 		"https://www.linkedin.com/jobs/view/4148759219/":                                                               803,  // delivery-hero-se
@@ -1479,6 +1480,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4285396099/":                                                               2687, // kantox
 		"https://www.linkedin.com/jobs/view/4294103162/":                                                               2792, // kantox
 		"https://www.linkedin.com/jobs/view/4297550524/":                                                               2888, // kantox
+		"https://www.linkedin.com/jobs/view/4367157335/":                                                               3925, // kantox
 		"https://www.linkedin.com/jobs/view/4071960242/":                                                               73,   // smartrentdotcom
 		"https://www.linkedin.com/jobs/view/4130663803/":                                                               1640, // smartrentdotcom
 		"https://www.linkedin.com/jobs/view/4064330407/":                                                               74,   // join-denim
@@ -3201,6 +3203,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4258305221/":                                                               2189, // pdq-com
 		"https://www.linkedin.com/jobs/view/4308900826/":                                                               3100, // pdq-com
 		"https://www.linkedin.com/jobs/view/4364228470/":                                                               3823, // pdq-com
+		"https://www.linkedin.com/jobs/view/4366300800/":                                                               3926, // pdq-com
 		"https://www.linkedin.com/jobs/view/4219694154/":                                                               1784, // true-anomaly
 		"https://www.linkedin.com/jobs/view/4273981223/":                                                               2478, // true-anomaly
 		"https://www.linkedin.com/jobs/view/4281934098/":                                                               2664, // true-anomaly
