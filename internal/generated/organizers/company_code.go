@@ -1319,6 +1319,8 @@ var (
 		"tigergraph":                          1319, // TigerGraph
 		"cartahealthcare":                     1320, // Carta Healthcare
 		"league-inc-":                         1321, // League
+		"imanage":                             1322, // iManage
+		"sentione":                            1323, // SentiOne
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

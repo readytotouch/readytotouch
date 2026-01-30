@@ -1428,6 +1428,17 @@ func companies11Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $120.000 - $160.000 per year
 							Remote:               false,
 						},
+						{
+							Title:                "Scala Backend Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4366908951/",
+							Location:             "United States",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-01-29"),
+							WithSalary:           true, // $160k/yr - $200k/yr
+							Remote:               true,
+						},
 					},
 				},
 				domain.Elixir:  {},
@@ -1609,6 +1620,17 @@ func companies11Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4326006779/",
 							Location:             "Redlands, CA",
 							Date:                 mustDate("2025-12-07"),
+							WithSalary:           true, // $119k/yr - $197.6k/yr
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Software Development Engineer – Scala",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4330693727/",
+							Location:             "Redlands, CA",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-01-29"),
 							WithSalary:           true, // $119k/yr - $197.6k/yr
 							Remote:               false,
 						},

@@ -5894,7 +5894,7 @@ func companies07Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4351144235/",
 							Location:             "Berlin, Germany",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-01-26"),
+							Date:                 mustDate("2026-01-27", "2026-01-26"),
 							WithSalary:           false,
 							Remote:               false,
 						},

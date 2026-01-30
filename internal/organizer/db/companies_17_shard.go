@@ -2808,13 +2808,14 @@ func companies17Shard() []domain.CompanyProfile {
 					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Senior Software Engineer — Scala",
+							Title:                "Senior Scala Engineer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4230030958/",
 							Location:             "Chicago, IL",
-							Date:                 mustDate("2025-10-12", "2025-07-19", "2025-06-06", "2025-05-15"),
-							WithSalary:           false,
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-01-28", "2025-10-12", "2025-07-19", "2025-06-06", "2025-05-15"),
+							WithSalary:           true, // $150k/yr - $200.2k/yr
 							Remote:               false,
 						},
 					},

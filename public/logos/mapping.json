@@ -3282,6 +3282,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "imanage",
+    "source": "imanage-180x180.png",
+    "destination": "imanage.png",
+    "destination_72x72": "imanage.png"
+  },
+  {
     "alias": "immutable-1",
     "source": "immutable-200x200.jpeg",
     "destination": "immutable-1.jpeg",
@@ -5938,6 +5944,12 @@
     "source": "sentinelone-180x180.webp",
     "destination": "sentinelone.png",
     "destination_72x72": "sentinelone.png"
+  },
+  {
+    "alias": "sentione",
+    "source": "sentione-200x200.jpeg",
+    "destination": "sentione.jpeg",
+    "destination_72x72": "sentione.jpeg"
   },
   {
     "alias": "severalnines",
