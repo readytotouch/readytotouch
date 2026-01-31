@@ -870,6 +870,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "bitgo",
+    "source": "bitgo-180x180.png",
+    "destination": "bitgo.png",
+    "destination_72x72": "bitgo.png"
+  },
+  {
     "alias": "bitly",
     "source": "",
     "destination": "",
@@ -4960,6 +4966,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "paribucom",
+    "source": "paribu-200x200.jpeg",
+    "destination": "paribucom.jpeg",
+    "destination_72x72": "paribucom.jpeg"
   },
   {
     "alias": "parshipmeet",

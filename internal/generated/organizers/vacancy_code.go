@@ -422,6 +422,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4265375160/":                                                               2389, // motorolasolutions
 		"https://www.linkedin.com/jobs/view/4315703945/":                                                               3214, // motorolasolutions
 		"https://www.linkedin.com/jobs/view/4328133763/":                                                               3701, // motorolasolutions
+		"https://www.linkedin.com/jobs/view/4366634055/":                                                               3943, // motorolasolutions
 		"https://www.linkedin.com/jobs/view/2711010249/":                                                               1579, // motorolasolutions
 		"https://www.linkedin.com/jobs/view/3919334242/":                                                               315,  // samsung-electronics
 		"https://www.linkedin.com/jobs/view/4139319243/":                                                               754,  // samsung-electronics
@@ -745,6 +746,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4306633118/":                                                               3076, // rapid7
 		"https://www.linkedin.com/jobs/view/4323682958/":                                                               3464, // rapid7
 		"https://www.linkedin.com/jobs/view/4323698647/":                                                               3642, // rapid7
+		"https://www.linkedin.com/jobs/view/4367233778/":                                                               3942, // rapid7
 		"https://www.linkedin.com/jobs/view/4323632973/":                                                               3416, // rapid7
 		"https://www.linkedin.com/jobs/view/3915194291/":                                                               360,  // toggle-ai
 		"https://www.linkedin.com/jobs/view/3914415181/":                                                               361,  // infolob-global
@@ -1098,6 +1100,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4077490300/":                                                               33,   // wargaming-net
 		"https://www.linkedin.com/jobs/view/4044948110/":                                                               231,  // napier
 		"https://www.linkedin.com/jobs/view/4106841758/":                                                               232,  // napier
+		"https://www.linkedin.com/jobs/view/4367179536/":                                                               3944, // napier
 		"https://www.linkedin.com/jobs/view/4149704082/":                                                               968,  // napier
 		"https://www.linkedin.com/jobs/view/4350326493/":                                                               3728, // napier
 		"https://www.linkedin.com/jobs/view/3908613207/":                                                               483,  // kaseya
@@ -3937,6 +3940,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4365966011/":                                                               3922, // imanage
 		"https://www.linkedin.com/jobs/view/4366245449/":                                                               3923, // sentione
 		"https://www.linkedin.com/jobs/view/4356492665/":                                                               3927, // pulsar-crypto
+		"https://www.linkedin.com/jobs/view/4339870078/":                                                               3945, // paribucom
 		"https://www.linkedin.com/jobs/view/3914839625/":                                                               372,  // cognizant
 		"https://www.linkedin.com/jobs/view/4120737001/":                                                               600,  // cognizant
 		"https://www.linkedin.com/jobs/view/4149258542/":                                                               787,  // cognizant

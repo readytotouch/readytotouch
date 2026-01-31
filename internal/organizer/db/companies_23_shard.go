@@ -406,7 +406,7 @@ func companies23Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4365212068/",
 							Location:             "Berlin, Berlin, Germany",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-01-23"),
+							Date:                 mustDate("2026-01-30", "2026-01-23"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -1348,7 +1348,7 @@ func companies23Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4358139738/",
 							Location:             "Greater Buenos Aires",
-							Date:                 mustDate("2026-01-08"),
+							Date:                 mustDate("2026-01-30", "2026-01-08"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3187,6 +3187,262 @@ func companies23Shard() []domain.CompanyProfile {
 				},
 			},
 			ShortDescription: "Pulsar is a proprietary algorithmic trading firm, specialized in high frequency trading and market making in the crypto market",
+			Industries: []domain.Industry{
+				domain.IndustryCryptoCurrency,
+			},
+		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Superbet",
+			BaseURL:    "https://www.super.xyz/",
+			CareersURL: "https://www.super.xyz/careers/",
+			AboutURL:   "",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1162677,
+				IDs:               nil,
+				Alias:             "superbet-international",
+				Name:              "Superbet",
+				Followers:         "66K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "1,722",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Backend Engineer (Go)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4330753912/",
+							Location:             "Zagreb, Croatia",
+							CloudProviders:       []domain.CloudProvider{domain.AWS},
+							Date:                 mustDate("2026-01-29"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "",
+			Industries:       []domain.Industry{
+				// Betting
+			},
+			Ignore: true,
+		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Paribu",
+			BaseURL:    "https://www.paribu.com/",
+			CareersURL: "",
+			AboutURL:   "",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                17978220,
+				IDs:               nil,
+				Alias:             "paribucom",
+				Name:              "Paribu",
+				Followers:         "50K",
+				Employees:         "201-500",
+				AssociatedMembers: "160",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Backend Engineer (Go)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4339870078/",
+							Location:             "Istanbul, Türkiye",
+							CloudProviders:       []domain.CloudProvider{domain.AWS},
+							Date:                 mustDate("2026-01-28"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Türkiye’s crypto asset ecosystem",
+			Industries: []domain.Industry{
+				domain.IndustryCryptoCurrency,
+			},
+		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "BitGo",
+			BaseURL:    "https://www.bitgo.com/",
+			CareersURL: "https://www.bitgo.com/company/careers/",
+			AboutURL:   "https://www.bitgo.com/company/about-us/",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3597797,
+				IDs:               []int{3597797, 18745410},
+				Alias:             "bitgo",
+				Name:              "BitGo",
+				Followers:         "56K",
+				Employees:         "201-500",
+				AssociatedMembers: "148",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer",
+							ShortDescription:     "Experience with server-side languages like Golang",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4365876616/",
+							Location:             "New York, United States",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-01-27"),
+							WithSalary:           true, // $160k/yr - $200k/yr
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Infrastructure provider of digital asset solutions",
 			Industries: []domain.Industry{
 				domain.IndustryCryptoCurrency,
 			},

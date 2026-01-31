@@ -244,6 +244,17 @@ func companies20Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Go/PHP Backend Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4367136267/",
+							Location:             "Limassol, Cyprus",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-01-30"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
