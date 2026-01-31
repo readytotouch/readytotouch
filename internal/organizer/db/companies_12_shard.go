@@ -1844,19 +1844,19 @@ func companies12Shard() []domain.CompanyProfile {
 		{
 			ID:         0,  // system
 			Type:       "", // system
-			Name:       "Kraken Digital Asset Exchange",
-			BaseURL:    "https://kraken.com/",
-			CareersURL: "",
-			AboutURL:   "",
+			Name:       "Kraken",
+			BaseURL:    "https://www.kraken.com/",
+			CareersURL: "https://www.kraken.com/careers",
+			AboutURL:   "https://www.kraken.com/why-kraken",
 			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                3787845,
 				IDs:               []int{3787845, 69222723},
 				Alias:             "krakenfx",
-				Name:              "Kraken Digital Asset Exchange",
-				Followers:         "208K",
+				Name:              "Kraken",
+				Followers:         "268K",
 				Employees:         "1K-5K",
-				AssociatedMembers: "851",
+				AssociatedMembers: "992",
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -1876,7 +1876,10 @@ func companies12Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			Languages: domain.Languages{
-				domain.Go: {},
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
 				domain.Rust: {
 					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
@@ -1889,16 +1892,48 @@ func companies12Shard() []domain.CompanyProfile {
 							WithSalary:           true,
 							Remote:               true,
 						},
+						{
+							Title:                "Software Engineer – Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4324668900/",
+							Location:             "Canada",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-01-30"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
-				domain.Zig:     {},
-				domain.Scala:   {},
-				domain.Elixir:  {},
-				domain.Clojure: {},
-				domain.Haskell: {},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
 			},
-			ShortDescription: "",
-			Ignore:           true, // Crypto
+			ShortDescription: "Crypto platform",
+			Industries: []domain.Industry{
+				domain.IndustryCryptoCurrency,
+			},
 		},
 		{
 			ID:         0,  // system
@@ -3337,17 +3372,17 @@ func companies12Shard() []domain.CompanyProfile {
 			Type:       "", // system
 			Name:       "Keyrock",
 			BaseURL:    "https://keyrock.com/",
-			CareersURL: "",
-			AboutURL:   "",
+			CareersURL: "https://keyrock.com/careers/",
+			AboutURL:   "https://keyrock.com/about-us/",
 			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                11259345,
 				IDs:               nil,
 				Alias:             "keyrock",
 				Name:              "Keyrock",
-				Followers:         "20K",
+				Followers:         "35K",
 				Employees:         "51-200",
-				AssociatedMembers: "166",
+				AssociatedMembers: "222",
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -3372,11 +3407,22 @@ func companies12Shard() []domain.CompanyProfile {
 					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Senior Software Engineer – High Frequency Trading (C++ OR Rust)",
-							ShortDescription:     "",
+							Title:                "Senior Software Engineer – C++ OR Rust",
+							ShortDescription:     "High Frequency Trading",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4180667729/",
 							Date:                 mustDate("2025-03-14"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+						{
+							Title:                "Rust Engineer",
+							ShortDescription:     "Trading",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4324950011/",
+							Location:             "Lisboa, Lisbon, Portugal",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-01-30"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -3388,8 +3434,10 @@ func companies12Shard() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
-			Ignore:           true, // Crypto
+			ShortDescription: "Crypto investment firm",
+			Industries: []domain.Industry{
+				domain.IndustryCryptoCurrency,
+			},
 		},
 		{
 			ID:         0,  // system

@@ -3392,21 +3392,101 @@ func companies11Shard() []domain.CompanyProfile {
 		},
 
 		{
-			ID:      0,  // system
-			Type:    "", // system
-			Name:    "Crypto",
-			BaseURL: "https://www.crypto.com/",
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Crypto.com",
+			BaseURL:    "https://crypto.com/",
+			CareersURL: "https://crypto.com/careers",
+			AboutURL:   "https://crypto.com/about",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                13322447,
 				IDs:               nil,
 				Alias:             "cryptocom",
 				Name:              "Crypto.com",
-				Followers:         "590K",
+				Followers:         "757K",
 				Employees:         "1K-5K",
-				AssociatedMembers: "6,502",
+				AssociatedMembers: "7,520",
 				Verified:          true,
 			},
-			Ignore: true, // Crypto
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Developer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4311267635/",
+							Location:             "Singapore, Singapore",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-01-24"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Rust Engineer",
+							ShortDescription:     "Greenfield project",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/3960326883/",
+							Location:             "Dublin, County Dublin, Ireland",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-01-28"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Crypto trading platform",
+			Industries: []domain.Industry{
+				domain.IndustryCryptoCurrency,
+			},
 		},
 		{
 			ID:         0,                         // system
@@ -3937,6 +4017,17 @@ func companies11Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4344663053/",
 							Location:             "Marlborough, MA",
 							Date:                 mustDate("2026-01-09"),
+							WithSalary:           true, // $111.5k/yr - $208k/yr
+							Remote:               false,
+						},
+						{
+							Title:                "Embedded Software Engineer – Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4344583597/",
+							Location:             "Linthicum Heights, MD",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-01-30"),
 							WithSalary:           true, // $111.5k/yr - $208k/yr
 							Remote:               false,
 						},

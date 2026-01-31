@@ -4006,7 +4006,8 @@ func companies22Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4324341674/",
 							Location:             "Los Angeles, CA",
-							Date:                 mustDate("2026-01-09", "2025-12-09", "2025-11-25"),
+							CloudProviders:       []domain.CloudProvider{domain.AWS},
+							Date:                 mustDate("2026-01-30", "2026-01-09", "2025-12-09", "2025-11-25"),
 							WithSalary:           true, // $200k/yr - $240k/yr
 							Remote:               false,
 						},
@@ -4923,6 +4924,17 @@ func companies22Shard() []domain.CompanyProfile {
 							Location:             "United Kingdom",
 							CloudProviders:       []domain.CloudProvider{domain.AWS},
 							Date:                 mustDate("2026-01-24"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+						{
+							Title:                "Senior Backend Engineer – Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4366844957/",
+							Location:             "United Kingdom",
+							CloudProviders:       []domain.CloudProvider{domain.AWS},
+							Date:                 mustDate("2026-01-30"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -6134,8 +6146,8 @@ func companies22Shard() []domain.CompanyProfile {
 			Type:       "", // system
 			Name:       "Ripple",
 			BaseURL:    "https://ripple.com/",
-			CareersURL: "",
-			AboutURL:   "",
+			CareersURL: "https://ripple.com/careers/",
+			AboutURL:   "https://ripple.com/company/",
 			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                3249443,
@@ -6177,7 +6189,8 @@ func companies22Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4318356923/",
 							Location:             "New York, NY",
-							Date:                 mustDate("2025-12-08"),
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-01-30", "2025-12-08"),
 							WithSalary:           true, // $152k/yr - $190k/yr
 							Remote:               false,
 						},
@@ -6209,10 +6222,9 @@ func companies22Shard() []domain.CompanyProfile {
 				},
 			},
 			ShortDescription: "",
-			Industries:       []domain.Industry{
-				// NOP
+			Industries: []domain.Industry{
+				domain.IndustryCryptoCurrency,
 			},
-			Ignore: true, // Cryptocurrency
 		},
 		{
 			ID:         0,  // system
