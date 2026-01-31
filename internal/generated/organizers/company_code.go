@@ -675,6 +675,7 @@ var (
 		"lotusretails":                        674,  // Lotus&#39;s
 		"aescape":                             675,  // Aescape
 		"smc":                                 676,  // SMC
+		"cryptocom":                           1329, // Crypto.com
 		"depixen-sw":                          677,  // Depixen
 		"climatiq":                            678,  // Climatiq
 		"commercetools":                       679,  // commercetools
@@ -713,6 +714,7 @@ var (
 		"nielseniq":                           712,  // NielsenIQ
 		"adform":                              713,  // Adform
 		"avathonai":                           714,  // Avathon
+		"krakenfx":                            1327, // Kraken
 		"ringcentral":                         715,  // RingCentral
 		"qnx":                                 716,  // QNX
 		"solariscompany":                      717,  // Solaris SE
@@ -726,6 +728,7 @@ var (
 		"ionos":                               725,  // IONOS
 		"velmie":                              726,  // Velmie
 		"clinia":                              727,  // Clinia
+		"keyrock":                             1325, // Keyrock
 		"cloudwick":                           728,  // Cloudwick
 		"fis":                                 729,  // FIS
 		"nike":                                730,  // Nike
@@ -753,6 +756,7 @@ var (
 		"veact":                               752,  // Veact GmbH
 		"walmartdataventures":                 753,  // Walmart Data Ventures
 		"funnel-io":                           754,  // Funnel
+		"okxofficial":                         1326, // OKX
 		"lingopal-ai":                         755,  // Lingopal
 		"scanbo":                              756,  // Scanbo
 		"surrealdb":                           757,  // SurrealDB
@@ -1284,6 +1288,7 @@ var (
 		"sky":                                 1284, // Sky
 		"reducate":                            1285, // Reducate
 		"myo-healthcare":                      1286, // myo
+		"ripple":                              1328, // Ripple
 		"innoflight-llc":                      1287, // Innoflight
 		"alma-security":                       1288, // Alma Security
 		"scoreplay":                           1289, // ScorePlay
@@ -1319,6 +1324,10 @@ var (
 		"tigergraph":                          1319, // TigerGraph
 		"cartahealthcare":                     1320, // Carta Healthcare
 		"league-inc-":                         1321, // League
+		"imanage":                             1322, // iManage
+		"sentione":                            1323, // SentiOne
+		"pulsar-crypto":                       1324, // Pulsar
+		"paribucom":                           1330, // Paribu
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

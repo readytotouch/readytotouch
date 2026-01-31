@@ -870,6 +870,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "bitgo",
+    "source": "bitgo-180x180.png",
+    "destination": "bitgo.png",
+    "destination_72x72": "bitgo.png"
+  },
+  {
     "alias": "bitly",
     "source": "",
     "destination": "",
@@ -1648,6 +1654,12 @@
     "source": "crowdstrike-200x200.jpeg",
     "destination": "crowdstrike.jpeg",
     "destination_72x72": "crowdstrike.jpeg"
+  },
+  {
+    "alias": "cryptocom",
+    "source": "crypto-200x200.jpeg",
+    "destination": "cryptocom.jpeg",
+    "destination_72x72": "cryptocom.jpeg"
   },
   {
     "alias": "csidedev",
@@ -3282,6 +3294,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "imanage",
+    "source": "imanage-180x180.png",
+    "destination": "imanage.png",
+    "destination_72x72": "imanage.png"
+  },
+  {
     "alias": "immutable-1",
     "source": "immutable-200x200.jpeg",
     "destination": "immutable-1.jpeg",
@@ -3552,6 +3570,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "keyrock",
+    "source": "keyrock-200x200.jpeg",
+    "destination": "keyrock.jpeg",
+    "destination_72x72": "keyrock.jpeg"
+  },
+  {
     "alias": "kiddom",
     "source": "",
     "destination": "",
@@ -3628,6 +3652,12 @@
     "source": "konghq-200x200.jpeg",
     "destination": "konghq.jpeg",
     "destination_72x72": "konghq.jpeg"
+  },
+  {
+    "alias": "krakenfx",
+    "source": "kraken-200x200.jpeg",
+    "destination": "krakenfx.jpeg",
+    "destination_72x72": "krakenfx.jpeg"
   },
   {
     "alias": "kroger",
@@ -4662,6 +4692,12 @@
     "destination_72x72": "okta-inc-.jpeg"
   },
   {
+    "alias": "okxofficial",
+    "source": "okx-200x200.png",
+    "destination": "okxofficial.png",
+    "destination_72x72": "okxofficial.png"
+  },
+  {
     "alias": "ola-chat",
     "source": "",
     "destination": "",
@@ -4930,6 +4966,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "paribucom",
+    "source": "paribu-200x200.jpeg",
+    "destination": "paribucom.jpeg",
+    "destination_72x72": "paribucom.jpeg"
   },
   {
     "alias": "parshipmeet",
@@ -5298,6 +5340,12 @@
     "destination_72x72": "pulley-cap-table.jpeg"
   },
   {
+    "alias": "pulsar-crypto",
+    "source": "pulsar-crypto-180x180.png",
+    "destination": "pulsar-crypto.png",
+    "destination_72x72": "pulsar-crypto.png"
+  },
+  {
     "alias": "pulsepoint",
     "source": "",
     "destination": "",
@@ -5608,6 +5656,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "ripple",
+    "source": "ripple-200x200.jpeg",
+    "destination": "ripple.jpeg",
+    "destination_72x72": "ripple.jpeg"
   },
   {
     "alias": "riskified",
@@ -5938,6 +5992,12 @@
     "source": "sentinelone-180x180.webp",
     "destination": "sentinelone.png",
     "destination_72x72": "sentinelone.png"
+  },
+  {
+    "alias": "sentione",
+    "source": "sentione-200x200.jpeg",
+    "destination": "sentione.jpeg",
+    "destination_72x72": "sentione.jpeg"
   },
   {
     "alias": "severalnines",

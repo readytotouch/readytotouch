@@ -95,4 +95,8 @@ var (
 		Alias: "traveltech",
 		Name:  "TravelTech",
 	}
+	IndustryCryptoCurrency = Industry{
+		Alias: "cryptocurrency",
+		Name:  "Cryptocurrency",
+	}
 )
