@@ -435,6 +435,7 @@ var (
 		"flow-traders":                        "flow-traders.jpeg",
 		"flowhub":                             "",
 		"fluidcloud":                          "",
+		"flybits":                             "flybits.png",
 		"flyrinc":                             "flyrinc.jpeg",
 		"flyzipline":                          "flyzipline.jpeg",
 		"fonoa":                               "",

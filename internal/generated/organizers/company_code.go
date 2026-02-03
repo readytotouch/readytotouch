@@ -1328,6 +1328,8 @@ var (
 		"sentione":                            1323, // SentiOne
 		"pulsar-crypto":                       1324, // Pulsar
 		"paribucom":                           1330, // Paribu
+		"bitgo":                               1331, // BitGo
+		"flybits":                             1332, // Flybits
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

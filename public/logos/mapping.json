@@ -2586,6 +2586,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "flybits",
+    "source": "flybits-180x180.png",
+    "destination": "flybits.png",
+    "destination_72x72": "flybits.png"
+  },
+  {
     "alias": "flyrinc",
     "source": "flyr-200x200.jpeg",
     "destination": "flyrinc.jpeg",
