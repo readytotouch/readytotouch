@@ -1185,6 +1185,17 @@ func companies18Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Staff Software Engineer (Java/Go with AI)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4328768284/",
+							Location:             "Bengaluru, Karnataka, India",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-03"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {

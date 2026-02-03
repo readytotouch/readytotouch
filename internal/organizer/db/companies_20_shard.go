@@ -4585,6 +4585,17 @@ func companies20Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Golang Developerr",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4357557341/",
+							Location:             "Noida, Uttar Pradesh, India",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-03"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {

@@ -691,6 +691,7 @@ var (
 		"future-research-inc":                 689,  // Future
 		"los-alamos-national-laboratory":      690,  // Los Alamos National Laboratory
 		"volkswagen-digital-solutions":        691,  // Volkswagen Digital Solutions
+		"binance":                             1333, // Binance
 		"optableco":                           692,  // Optable
 		"scaleops-sh":                         693,  // ScaleOps - Cloud-Native Optimization
 		"zenport":                             694,  // Zenport Inc.
@@ -1330,6 +1331,11 @@ var (
 		"paribucom":                           1330, // Paribu
 		"bitgo":                               1331, // BitGo
 		"flybits":                             1332, // Flybits
+		"worldquant":                          1334, // WorldQuant
+		"delinea":                             1335, // Delinea
+		"monks":                               1336, // Monks
+		"motorinc":                            1337, // MotorInc
+		"ngvoice":                             1338, // ng-voice
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

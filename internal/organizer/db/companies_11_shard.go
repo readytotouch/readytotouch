@@ -346,7 +346,7 @@ func companies11Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4360700114/",
 							Location:             "Sydney, New South Wales, Australia",
 							CloudProviders:       []domain.CloudProvider{domain.AWS, domain.GCP},
-							Date:                 mustDate("2026-01-13"),
+							Date:                 mustDate("2026-02-03", "2026-01-13"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -4685,17 +4685,17 @@ func companies11Shard() []domain.CompanyProfile {
 			Type:       "", // system
 			Name:       "Binance",
 			BaseURL:    "https://www.binance.com/",
-			CareersURL: "",
-			AboutURL:   "",
+			CareersURL: "https://www.binance.com/careers",
+			AboutURL:   "https://www.binance.com/about",
 			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                13336409,
-				IDs:               nil,
+				IDs:               []int{13336409, 106937759},
 				Alias:             "binance",
 				Name:              "Binance",
-				Followers:         "824K",
+				Followers:         "999K",
 				Employees:         "5K-10K",
-				AssociatedMembers: "10,428",
+				AssociatedMembers: "13,799",
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -4737,6 +4737,17 @@ func companies11Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4328158327/",
+							Location:             "Singapore, Singapore",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-01"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -4747,7 +4758,9 @@ func companies11Shard() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Digital Asset Exchange",
-			Ignore:           true, // Cryptocurrency
+			Industries: []domain.Industry{
+				domain.IndustryCryptoCurrency,
+			},
 		},
 		{
 			ID:         0,  // system

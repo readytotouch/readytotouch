@@ -846,6 +846,12 @@
     "destination_72x72": "bill.png"
   },
   {
+    "alias": "binance",
+    "source": "binance-200x200.png",
+    "destination": "binance.png",
+    "destination_72x72": "binance.png"
+  },
+  {
     "alias": "biocatch",
     "source": "",
     "destination": "",
@@ -1834,6 +1840,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "delinea",
+    "source": "delinea-200x200.jpeg",
+    "destination": "delinea.jpeg",
+    "destination_72x72": "delinea.jpeg"
   },
   {
     "alias": "delivery-hero-se",
@@ -4254,6 +4266,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "monks",
+    "source": "monks-200x200.jpeg",
+    "destination": "monks.jpeg",
+    "destination_72x72": "monks.jpeg"
+  },
+  {
     "alias": "monumentalco",
     "source": "monumentalco-256x256.png",
     "destination": "monumentalco.png",
@@ -4291,6 +4309,12 @@
   },
   {
     "alias": "motive-inc",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
+  },
+  {
+    "alias": "motorinc",
     "source": "",
     "destination": "",
     "destination_72x72": ""
@@ -4516,6 +4540,12 @@
     "source": "nfon-200x200.jpeg",
     "destination": "nfon.jpeg",
     "destination_72x72": "nfon.jpeg"
+  },
+  {
+    "alias": "ngvoice",
+    "source": "ngvoice-200x200.jpeg",
+    "destination": "ngvoice.jpeg",
+    "destination_72x72": "ngvoice.jpeg"
   },
   {
     "alias": "nice-systems",
@@ -7723,6 +7753,12 @@
   },
   {
     "alias": "worldpay",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
+  },
+  {
+    "alias": "worldquant",
     "source": "",
     "destination": "",
     "destination_72x72": ""

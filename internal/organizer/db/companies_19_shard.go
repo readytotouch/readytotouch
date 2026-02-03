@@ -3500,6 +3500,17 @@ func companies19Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Go Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4357429081/",
+							Location:             "Montreal, QC",
+							CloudProviders:       []domain.CloudProvider{domain.GCP},
+							Date:                 mustDate("2026-02-03"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust: {

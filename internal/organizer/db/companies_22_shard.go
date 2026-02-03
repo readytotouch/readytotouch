@@ -4236,6 +4236,17 @@ func companies22Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Backend Engineer (Go)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4368205094/",
+							Location:             "Leiden, South Holland, Netherlands",
+							CloudProviders:       []domain.CloudProvider{domain.AWS, domain.GCP},
+							Date:                 mustDate("2026-02-03"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
