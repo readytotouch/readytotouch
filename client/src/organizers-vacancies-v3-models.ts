@@ -21,6 +21,7 @@ export class VacancyResponse {
         public readonly monthly_views: number,
         public company: VacancyCompanyResponse, // to be filled later
         public favorite: boolean,
+        public hidden: boolean,
     ) {
     }
 }

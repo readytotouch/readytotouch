@@ -1087,6 +1087,7 @@ func companies23Shard() []domain.CompanyProfile {
 							PinnedUntil:          mustDate("2026-01-14"),
 						},
 					},
+					PinnedUntil: mustDate("2026-01-14"),
 				},
 				domain.Rust: {
 					GitHubRepositoryCount: 0,
@@ -1121,7 +1122,6 @@ func companies23Shard() []domain.CompanyProfile {
 			Industries:       []domain.Industry{
 				// NOP
 			},
-			PinnedUntil: mustDate("2026-01-14"),
 		},
 		{
 			ID:         0,  // system

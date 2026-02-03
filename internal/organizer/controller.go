@@ -1136,8 +1136,9 @@ func (c *Controller) UnsafeCompaniesV3(ctx *gin.Context) {
 			PinnedUntil:               utils.TimePointerOrNil(company.PinnedUntil),
 			Remote:                    company.Remote,
 			LatestVacancyDate:         utils.TimePointerOrNil(company.LatestVacancyDate),
-			GitHubRepositoryCount:     company.Languages[organizer.Language].GitHubRepositoryCount,
+			GitHubRepositoryCount:     company.GitHubRepositoryCount,
 			Favorite:                  userCompanyFavoriteMap[company.ID],
+			Hidden:                    false,
 		}
 	}
 
@@ -1238,6 +1239,7 @@ func (c *Controller) UnsafeVacanciesV3(ctx *gin.Context) {
 						ID: company.ID,
 					},
 					Favorite: userVacancyFavoriteMap[id],
+					Hidden:   false,
 				})
 
 				vacancyIDs = append(vacancyIDs, id)
@@ -1663,15 +1665,20 @@ func (c *Controller) companies(language domain.Language) []domain.CompanyProfile
 			V2: organizers.CompanyAliasToLogoMapV2[company.LinkedInProfile.Alias],
 		}
 
-		vacancies := company.Languages[language].Vacancies
+		var (
+			languageProfile = company.Languages[language]
+			vacancies       = languageProfile.Vacancies
+		)
 
 		// Show companies only if they have vacancies or are Rust Foundation members
 		if len(vacancies) == 0 && !(language == domain.Rust && company.RustFoundationMember) {
 			continue
 		}
 
+		company.GitHubRepositoryCount = languageProfile.GitHubRepositoryCount
 		company.Remote = company.Remote || c.anyRemoteVacancy(vacancies)
 		company.LatestVacancyDate = c.maxLanguageDate(vacancies)
+		company.PinnedUntil = languageProfile.PinnedUntil
 
 		companies = append(companies, company)
 	}
