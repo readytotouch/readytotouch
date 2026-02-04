@@ -846,6 +846,12 @@
     "destination_72x72": "bill.png"
   },
   {
+    "alias": "binance",
+    "source": "binance-200x200.png",
+    "destination": "binance.png",
+    "destination_72x72": "binance.png"
+  },
+  {
     "alias": "biocatch",
     "source": "",
     "destination": "",
@@ -1836,6 +1842,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "delinea",
+    "source": "delinea-200x200.jpeg",
+    "destination": "delinea.jpeg",
+    "destination_72x72": "delinea.jpeg"
+  },
+  {
     "alias": "delivery-hero-se",
     "source": "delivery-hero-200x200.jpeg",
     "destination": "delivery-hero-se.jpeg",
@@ -2269,9 +2281,9 @@
   },
   {
     "alias": "eset",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "eset-200x200.jpeg",
+    "destination": "eset.jpeg",
+    "destination_72x72": "eset.jpeg"
   },
   {
     "alias": "eskimi",
@@ -2584,6 +2596,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "flybits",
+    "source": "flybits-180x180.png",
+    "destination": "flybits.png",
+    "destination_72x72": "flybits.png"
   },
   {
     "alias": "flyrinc",
@@ -3709,9 +3727,9 @@
   },
   {
     "alias": "lemfi",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "lemfi-200x200.jpeg",
+    "destination": "lemfi.jpeg",
+    "destination_72x72": "lemfi.jpeg"
   },
   {
     "alias": "lenovo",
@@ -4248,6 +4266,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "monks",
+    "source": "monks-200x200.jpeg",
+    "destination": "monks.jpeg",
+    "destination_72x72": "monks.jpeg"
+  },
+  {
     "alias": "monumentalco",
     "source": "monumentalco-256x256.png",
     "destination": "monumentalco.png",
@@ -4285,6 +4309,12 @@
   },
   {
     "alias": "motive-inc",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
+  },
+  {
+    "alias": "motorinc",
     "source": "",
     "destination": "",
     "destination_72x72": ""
@@ -4510,6 +4540,12 @@
     "source": "nfon-200x200.jpeg",
     "destination": "nfon.jpeg",
     "destination_72x72": "nfon.jpeg"
+  },
+  {
+    "alias": "ngvoice",
+    "source": "ngvoice-200x200.jpeg",
+    "destination": "ngvoice.jpeg",
+    "destination_72x72": "ngvoice.jpeg"
   },
   {
     "alias": "nice-systems",
@@ -5845,9 +5881,9 @@
   },
   {
     "alias": "sas",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "sas-200x200.jpeg",
+    "destination": "sas.jpeg",
+    "destination_72x72": "sas.jpeg"
   },
   {
     "alias": "sawitpro",
@@ -7720,6 +7756,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "worldquant",
+    "source": "worldquant-200x200.jpeg",
+    "destination": "worldquant.jpeg",
+    "destination_72x72": "worldquant.jpeg"
   },
   {
     "alias": "worldtechit",

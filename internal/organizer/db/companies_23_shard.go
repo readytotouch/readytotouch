@@ -370,7 +370,15 @@ func companies23Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Staffbase-Jobs-E1980315.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "4.3",
+				Verified:    true,
+				Date:        mustDate("2026-02-04"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -1066,7 +1074,15 @@ func companies23Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/OpenAI-Jobs-E2210885.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "4.4",
+				Verified:    false,
+				Date:        mustDate("2026-02-04"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -1087,6 +1103,7 @@ func companies23Shard() []domain.CompanyProfile {
 							PinnedUntil:          mustDate("2026-01-14"),
 						},
 					},
+					PinnedUntil: mustDate("2026-01-14"),
 				},
 				domain.Rust: {
 					GitHubRepositoryCount: 0,
@@ -1121,7 +1138,6 @@ func companies23Shard() []domain.CompanyProfile {
 			Industries:       []domain.Industry{
 				// NOP
 			},
-			PinnedUntil: mustDate("2026-01-14"),
 		},
 		{
 			ID:         0,  // system
@@ -1323,7 +1339,15 @@ func companies23Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/AppDirect-Jobs-E614387.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "3.7",
+				Verified:    true,
+				Date:        mustDate("2026-02-04"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -1586,7 +1610,15 @@ func companies23Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Apple-Jobs-E1138.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "4.2",
+				Verified:    true,
+				Date:        mustDate("2026-02-04"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -1815,7 +1847,7 @@ func companies23Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4352623829/",
 							Location:             "Greater Campinas",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-01-14"),
+							Date:                 mustDate("2026-02-03", "2026-01-14"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2463,7 +2495,15 @@ func companies23Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Finary-Jobs-E6643956.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "4.7",
+				Verified:    true,
+				Date:        mustDate("2026-02-04"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -2549,7 +2589,15 @@ func companies23Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Lyft-Jobs-E700614.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "3.8",
+				Verified:    false,
+				Date:        mustDate("2026-02-04"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -2716,7 +2764,15 @@ func companies23Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/TigerGraph-Jobs-E1145722.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "3.1",
+				Verified:    true,
+				Date:        mustDate("2026-02-04"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -2965,7 +3021,15 @@ func companies23Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/iManage-Jobs-E1311409.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "4.4",
+				Verified:    true,
+				Date:        mustDate("2026-02-04"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -3447,81 +3511,547 @@ func companies23Shard() []domain.CompanyProfile {
 				domain.IndustryCryptoCurrency,
 			},
 		},
-
-		// Template
-		/*
-			{
-				ID:         0,  // system
-				Type:       "", // system
-				Name:       "",
-				BaseURL:    "",
-				CareersURL: "",
-				AboutURL:   "",
-				BlogURL:    "",
-				LinkedInProfile: domain.LinkedInProfile{
-					ID:                0,
-					Alias:             "",
-					Name:              "",
-					Followers:         "",
-					Employees:         "",
-					AssociatedMembers: "",
-					Verified:          false,
-				},
-				GitHubProfile: domain.GitHubProfile{
-					Login:    "",
-					Verified: false,
-				},
-				BlindProfile: domain.BlindProfile{
-					Alias: "",
-				},
-				LevelsFyiProfile: domain.LevelsFyiProfile{
-					Alias: "",
-				},
-				GlassdoorProfile: domain.GlassdoorProfile{
-					OverviewURL: "",
-				},
-				IndeedProfile: domain.IndeedProfile{
-					Alias: "",
-				},
-				Languages: domain.Languages{
-					domain.Go: {
-						GitHubRepositoryCount: 0,
-						Vacancies:               []domain.Vacancy{},
-					},
-					domain.Rust: {
-						GitHubRepositoryCount: 0,
-						Vacancies:               []domain.Vacancy{},
-					},
-					domain.Zig: {
-						GitHubRepositoryCount: 0,
-						Vacancies:               []domain.Vacancy{},
-					},
-					domain.Scala: {
-						GitHubRepositoryCount: 0,
-						Vacancies:               []domain.Vacancy{},
-					},
-					domain.Elixir: {
-						GitHubRepositoryCount: 0,
-						Vacancies:               []domain.Vacancy{},
-					},
-					domain.Clojure: {
-						GitHubRepositoryCount: 0,
-						Vacancies:               []domain.Vacancy{},
-					},
-					domain.Haskell: {
-						GitHubRepositoryCount: 0,
-						Vacancies:               []domain.Vacancy{},
-					},
-					domain.Erlang: {
-						GitHubRepositoryCount: 0,
-						Vacancies:               []domain.Vacancy{},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Flybits",
+			BaseURL:    "https://flybits.com/",
+			CareersURL: "https://flybits.com/careers/",
+			AboutURL:   "https://flybits.com/about-us/",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2630845,
+				IDs:               nil,
+				Alias:             "flybits",
+				Name:              "Flybits",
+				Followers:         "28K",
+				Employees:         "51-200",
+				AssociatedMembers: "66",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:     "flybits",
+				Followers: "15",
+				Verified:  true,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Flybits-Jobs-E1910414.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "3.6",
+				Verified:    true,
+				Date:        mustDate("2026-02-04"),
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 2,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Backend Engineer",
+							SubTitle:             "",
+							ShortDescription:     "",
+							SwitchingOpportunity: "Expertise in Go or at least one other major systems language with a strong desire to work in Go",
+							URL:                  "https://ats.rippling.com/flybits/jobs/8785b045-6ce7-475e-8d55-3e65f634a6d7",
+							Location:             "Toronto, ON", // Toronto, Canada
+							CloudProviders:       []domain.CloudProvider{domain.AWS, domain.GCP, domain.Azure},
+							Date:                 mustDate("2026-02-03"),
+							WithSalary:           true, // $145,000-$195,000
+							Remote:               false,
+						},
 					},
 				},
-				ShortDescription: "",
-				Industries:       []domain.Industry{
-					// NOP
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
-		*/
+			ShortDescription: "Contextual engagement platform for the financial industry",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
+		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "WorldQuant",
+			BaseURL:    "https://www.worldquant.com/",
+			CareersURL: "https://www.worldquant.com/careers/",
+			AboutURL:   "",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                276383,
+				IDs:               nil,
+				Alias:             "worldquant",
+				Name:              "WorldQuant",
+				Followers:         "149K",
+				Employees:         "501-1K",
+				AssociatedMembers: "2,518",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/WorldQuant-Jobs-E309841.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "4.2",
+				Verified:    true,
+				Date:        mustDate("2026-02-04"),
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Python/Go Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4367337482/",
+							Location:             "Budapest, Budapest, Hungary",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-01-30"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Quantitative asset management",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
+		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Delinea",
+			BaseURL:    "https://delinea.com/",
+			CareersURL: "",
+			AboutURL:   "https://delinea.com/about",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                24070,
+				IDs:               nil,
+				Alias:             "delinea",
+				Name:              "Delinea",
+				Followers:         "42K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "1,233",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:     "DelineaXPM",
+				Followers: "158",
+				Verified:  true,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 10,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Go Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4328183145/",
+							Location:             "Mexico City, Mexico",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-01"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Securing identities through centralized authorization",
+			Industries: []domain.Industry{
+				domain.IndustryCyberSecurity,
+			},
+		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Monks",
+			BaseURL:    "https://www.monks.com/",
+			CareersURL: "https://www.monks.com/careers",
+			AboutURL:   "https://www.monks.com/what-we-do",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                46926,
+				IDs:               nil,
+				Alias:             "monks",
+				Name:              "Monks",
+				Followers:         "543K",
+				Employees:         "5K-10K",
+				AssociatedMembers: "6,521",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:     "mediamonks",
+				Followers: "61",
+				Verified:  false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Staff Engineer – Ruby, Golang, Python",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4367672197/",
+							Location:             "Colombia",
+							CloudProviders:       []domain.CloudProvider{domain.AWS},
+							Date:                 mustDate("2026-02-01"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "",
+			Industries: []domain.Industry{
+				domain.IndustryAdTech,
+			},
+		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "MotorInc",
+			BaseURL:    "https://motorinc.com/",
+			CareersURL: "",
+			AboutURL:   "",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                87400465,
+				IDs:               nil,
+				Alias:             "motorinc",
+				Name:              "MotorInc",
+				Followers:         "14K",
+				Employees:         "11-50",
+				AssociatedMembers: "19",
+				Verified:          false,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Backend Developer (Golang / Elixir / Python)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4367553323/",
+							Location:             "Navi Mumbai, Maharashtra, India",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-01-31"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Backend Developer (Golang / Elixir / Python)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4367553323/",
+							Location:             "Navi Mumbai, Maharashtra, India",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-01-31"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "MotorInc helps people buy vehicles with confidence",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "ng-voice",
+			BaseURL:    "https://www.ng-voice.com/",
+			CareersURL: "https://www.ng-voice.com/careers",
+			AboutURL:   "https://www.ng-voice.com/about-us",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3215598,
+				IDs:               nil,
+				Alias:             "ngvoice",
+				Name:              "ng-voice",
+				Followers:         "6K",
+				Employees:         "51-200",
+				AssociatedMembers: "115",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer – Go",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4368231130/",
+							Location:             "United States",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-03"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "IMS (IP Multimedia Subsystem) Solution",
+			Industries: []domain.Industry{
+				domain.IndustryTelecom,
+			},
+		},
 	}
 }

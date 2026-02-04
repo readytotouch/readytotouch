@@ -677,8 +677,9 @@ func companies13Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "okx",
+				Followers: "2k",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -695,7 +696,7 @@ func companies13Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {},
 				domain.Rust: {
-					GitHubRepositoryCount: 0,
+					GitHubRepositoryCount: 54,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Blockchain Engineer (Rust/Go)",
@@ -2488,6 +2489,17 @@ func companies13Shard() []domain.CompanyProfile {
 							Location:             "Hamburg, Hamburg, Germany",
 							CloudProviders:       []domain.CloudProvider{},
 							Date:                 mustDate("2026-01-23"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Go Backend Developer",
+							ShortDescription:     "Publisher Experience Team",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4357740745/",
+							Location:             "Hamburg, Hamburg, Germany",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-03"),
 							WithSalary:           false,
 							Remote:               false,
 						},

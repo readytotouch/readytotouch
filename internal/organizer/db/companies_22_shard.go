@@ -2688,9 +2688,9 @@ func companies22Shard() []domain.CompanyProfile {
 				IDs:               nil,
 				Alias:             "cybereason",
 				Name:              "Cybereason",
-				Followers:         "101K",
+				Followers:         "102K",
 				Employees:         "1K-5K",
-				AssociatedMembers: "556",
+				AssociatedMembers: "558",
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
@@ -2736,6 +2736,17 @@ func companies22Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4321915810/",
 							Location:             "Tokyo, Tokyo, Japan",
 							Date:                 mustDate("2026-01-09", "2025-12-21", "2025-12-17", "2025-12-10", "2025-12-01", "2025-11-24", "2025-11-20", "2025-11-12"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Rust Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4367560002/",
+							Location:             "Tokyo, Japan",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-03"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2950,8 +2961,8 @@ func companies22Shard() []domain.CompanyProfile {
 					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Senior Software Engineer, Data Integration (Haskell)",
-							ShortDescription:     "",
+							Title:                "Senior Software Engineer (Haskell)",
+							ShortDescription:     "Data Integration",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4308484530/",
 							Location:             "Belgium",
@@ -2960,12 +2971,12 @@ func companies22Shard() []domain.CompanyProfile {
 							Remote:               true,
 						},
 						{
-							Title:                "Senior Software Engineer, Data Integration (Haskell)",
-							ShortDescription:     "",
+							Title:                "Senior Software Engineer (Haskell)",
+							ShortDescription:     "Data Integration",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4306246217/",
 							Location:             "Ghent, Flemish Region, Belgium",
-							Date:                 mustDate("2025-12-21", "2025-11-29"),
+							Date:                 mustDate("2026-02-02", "2025-12-21", "2025-11-29"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -4236,6 +4247,17 @@ func companies22Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Backend Engineer (Go)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4368205094/",
+							Location:             "Leiden, South Holland, Netherlands",
+							CloudProviders:       []domain.CloudProvider{domain.AWS, domain.GCP},
+							Date:                 mustDate("2026-02-03"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
@@ -4467,8 +4489,9 @@ func companies22Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "loopme",
+				Followers: "19",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -4491,7 +4514,7 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoryCount: 0,
+					GitHubRepositoryCount: 1,
 					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Rust: {
@@ -6171,8 +6194,9 @@ func companies22Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "ripple",
+				Followers: "575",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -6181,18 +6205,26 @@ func companies22Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Ripple-Jobs-E798412.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "2.9",
+				Verified:    true,
+				Date:        mustDate("2026-02-04"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoryCount: 0,
+					GitHubRepositoryCount: 1,
 					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Rust: {
-					GitHubRepositoryCount: 0,
+					GitHubRepositoryCount: 5,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer, C++ / Rust",

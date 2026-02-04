@@ -4,12 +4,12 @@ console.log("Glassdoor company profile data copy extension loaded");
 document.body.addEventListener("keydown", (event) => {
     // Y is for English, Н is for Ukrainian
     if (event.ctrlKey && event.shiftKey && (event.key === "Y" || event.key === "Н")) {
-        const goGlassdoorProfileColumns = `				OverviewURL: "${document.querySelector("#overview > a").href}",
-				ReviewsURL:  "${document.querySelector("#reviews > a").href}",
-				JobsURL:     "${document.querySelector("#jobs > a").href}",
-				Jobs:        "${trim(document.querySelector("#jobs div:first-of-type span:first-of-type"))}",
-				Reviews:     "${trim(document.querySelector("#reviews div:first-of-type span:first-of-type"))}",
-				Salaries:    "${trim(document.querySelector("#salaries div:first-of-type span:first-of-type"))}",
+        const goGlassdoorProfileColumns = `				OverviewURL: "${document.querySelector('a[href^="/Overview/"]').href}",
+				ReviewsURL:  "${document.querySelector('a[href^="/Reviews/"]').href}",
+				JobsURL:     "${document.querySelector('a[href^="/Jobs/"]').href}",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
 				ReviewsRate: "${getEmployerRating()}",
 				Verified:    ${isEngagedEmployer() ? "true" : "false"},
 				Date:        mustDate("${date()}"),`
