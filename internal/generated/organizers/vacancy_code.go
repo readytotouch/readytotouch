@@ -286,6 +286,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4253523233/":                                                               2370, // citi
 		"https://www.linkedin.com/jobs/view/4303102482/":                                                               3001, // citi
 		"https://www.linkedin.com/jobs/view/4281376407/":                                                               3283, // citi
+		"https://www.linkedin.com/jobs/view/4325250772/":                                                               3982, // citi
 		"https://www.linkedin.com/jobs/view/4038005635/":                                                               308,  // cloudflare
 		"https://www.linkedin.com/jobs/view/4077533479/":                                                               545,  // cloudflare
 		"https://www.linkedin.com/jobs/view/4038010253/":                                                               645,  // cloudflare
@@ -1381,6 +1382,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4242216761/":                                                               1971, // level-all
 		"https://www.linkedin.com/jobs/view/4261784244/":                                                               2239, // level-all
 		"https://www.linkedin.com/jobs/view/4342749584/":                                                               3571, // level-all
+		"https://www.linkedin.com/jobs/view/4368823387/":                                                               3983, // level-all
 		"https://www.linkedin.com/jobs/view/4046403243/":                                                               527,  // littlelives
 		"https://www.linkedin.com/jobs/view/4197404839/":                                                               1677, // bill
 		"https://www.linkedin.com/jobs/view/3906024674/":                                                               44,   // bill
@@ -2235,6 +2237,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4333363703/":                                                               3421, // quantum-systems-gmbh
 		"https://www.linkedin.com/jobs/view/4324109909/":                                                               3478, // quantum-systems-gmbh
 		"https://www.linkedin.com/jobs/view/4329773545/":                                                               3735, // quantum-systems-gmbh
+		"https://www.linkedin.com/jobs/view/4368259315/":                                                               3984, // quantum-systems-gmbh
 		"https://www.linkedin.com/jobs/view/4118966168/":                                                               591,  // gdms
 		"https://www.linkedin.com/jobs/view/4148907792/":                                                               844,  // gdms
 		"https://www.linkedin.com/jobs/view/4179404017/":                                                               1137, // gdms
@@ -2707,6 +2710,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4181286159/":                                                               1190, // nielseniq
 		"https://www.linkedin.com/jobs/view/4232688139/":                                                               1911, // nielseniq
 		"https://www.linkedin.com/jobs/view/4322148530/":                                                               3426, // nielseniq
+		"https://www.linkedin.com/jobs/view/4345954926/":                                                               3985, // nielseniq
 		"https://www.linkedin.com/jobs/view/3885026236/":                                                               1191, // adform
 		"https://www.linkedin.com/jobs/view/4120994368/":                                                               1344, // adform
 		"https://www.linkedin.com/jobs/view/4285962926/":                                                               2695, // adform
@@ -3799,6 +3803,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4328320716/":                                                               3696, // affinidi
 		"https://www.linkedin.com/jobs/view/4328310746/":                                                               3739, // affinidi
 		"https://www.linkedin.com/jobs/view/4321944130/":                                                               3810, // affinidi
+		"https://www.linkedin.com/jobs/view/4328240908/":                                                               3986, // affinidi
 		"https://www.linkedin.com/jobs/view/4311159672/":                                                               3185, // tensordyne
 		"https://www.linkedin.com/jobs/view/4311203106/":                                                               3186, // rust-foundation
 		"https://www.linkedin.com/jobs/view/4310409066/":                                                               3187, // redox-one
@@ -3852,6 +3857,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4328546895/":                                                               3720, // exein
 		"https://www.linkedin.com/jobs/view/4355190000/":                                                               3812, // exein
 		"https://www.linkedin.com/jobs/view/4321915810/":                                                               3396, // cybereason
+		"https://www.linkedin.com/jobs/view/4367560002/":                                                               3987, // cybereason
 		"https://www.linkedin.com/jobs/view/4315928124/":                                                               3397, // axonius
 		"https://www.linkedin.com/jobs/view/4349645249/":                                                               3636, // axonius
 		"https://www.linkedin.com/jobs/view/4308484530/":                                                               3398, // hubspot
