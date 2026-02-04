@@ -2955,7 +2955,7 @@ func companies15Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4203423628/",
 							Location:             "Madrid, Community of Madrid, Spain",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-01-13", "2025-12-21", "2025-05-22", "2025-04-29"),
+							Date:                 mustDate("2026-02-03", "2026-01-13", "2025-12-21", "2025-05-22", "2025-04-29"),
 							WithSalary:           false,
 							Remote:               true,
 						},

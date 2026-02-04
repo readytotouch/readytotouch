@@ -4792,6 +4792,17 @@ func companies06Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $150k/yr - $175k/yr
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Software Engineer (Elixir)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4368823387/",
+							Location:             "New York, NY",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-03"),
+							WithSalary:           true, // $150k/yr - $175k/yr
+							Remote:               true,
+						},
 					},
 				},
 				domain.Clojure: {},

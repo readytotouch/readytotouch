@@ -1815,7 +1815,7 @@ func companies23Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4352623829/",
 							Location:             "Greater Campinas",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-01-14"),
+							Date:                 mustDate("2026-02-03", "2026-01-14"),
 							WithSalary:           false,
 							Remote:               false,
 						},
