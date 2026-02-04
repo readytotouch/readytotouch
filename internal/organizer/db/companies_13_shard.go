@@ -677,8 +677,9 @@ func companies13Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "okx",
+				Followers: "2k",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -695,7 +696,7 @@ func companies13Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {},
 				domain.Rust: {
-					GitHubRepositoryCount: 0,
+					GitHubRepositoryCount: 54,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Blockchain Engineer (Rust/Go)",

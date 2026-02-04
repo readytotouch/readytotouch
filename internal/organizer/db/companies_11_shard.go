@@ -3421,7 +3421,15 @@ func companies11Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Crypto-com-Jobs-E1984553.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "3.3",
+				Verified:    true,
+				Date:        mustDate("2026-02-04"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -4699,8 +4707,9 @@ func companies11Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "binance",
+				Followers: "2.8k",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -4709,14 +4718,22 @@ func companies11Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Binance-Jobs-E1816824.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "4.0",
+				Verified:    true,
+				Date:        mustDate("2026-02-04"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoryCount: 0,
+					GitHubRepositoryCount: 3,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Golang Developer",

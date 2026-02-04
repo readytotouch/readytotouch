@@ -4489,8 +4489,9 @@ func companies22Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "loopme",
+				Followers: "19",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -4513,7 +4514,7 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoryCount: 0,
+					GitHubRepositoryCount: 1,
 					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Rust: {
@@ -6193,8 +6194,9 @@ func companies22Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "ripple",
+				Followers: "575",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -6203,18 +6205,26 @@ func companies22Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Ripple-Jobs-E798412.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "2.9",
+				Verified:    true,
+				Date:        mustDate("2026-02-04"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoryCount: 0,
+					GitHubRepositoryCount: 1,
 					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Rust: {
-					GitHubRepositoryCount: 0,
+					GitHubRepositoryCount: 5,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer, C++ / Rust",

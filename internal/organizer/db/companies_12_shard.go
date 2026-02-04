@@ -1882,8 +1882,9 @@ func companies12Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "krakenfx",
+				Followers: "176",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -1899,7 +1900,7 @@ func companies12Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoryCount: 0,
+					GitHubRepositoryCount: 1,
 					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Rust: {

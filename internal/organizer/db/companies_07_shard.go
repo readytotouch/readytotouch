@@ -1337,8 +1337,9 @@ func companies07Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "kantox",
+				Followers: "20",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -1368,7 +1369,7 @@ func companies07Shard() []domain.CompanyProfile {
 				domain.Zig:   {},
 				domain.Scala: {},
 				domain.Elixir: {
-					GitHubRepositoryCount: 0,
+					GitHubRepositoryCount: 13,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Elixir Software Engineer",
