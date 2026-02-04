@@ -2961,8 +2961,8 @@ func companies22Shard() []domain.CompanyProfile {
 					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Senior Software Engineer, Data Integration (Haskell)",
-							ShortDescription:     "",
+							Title:                "Senior Software Engineer (Haskell)",
+							ShortDescription:     "Data Integration",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4308484530/",
 							Location:             "Belgium",
@@ -2971,12 +2971,12 @@ func companies22Shard() []domain.CompanyProfile {
 							Remote:               true,
 						},
 						{
-							Title:                "Senior Software Engineer, Data Integration (Haskell)",
-							ShortDescription:     "",
+							Title:                "Senior Software Engineer (Haskell)",
+							ShortDescription:     "Data Integration",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4306246217/",
 							Location:             "Ghent, Flemish Region, Belgium",
-							Date:                 mustDate("2025-12-21", "2025-11-29"),
+							Date:                 mustDate("2026-02-02", "2025-12-21", "2025-11-29"),
 							WithSalary:           false,
 							Remote:               false,
 						},
