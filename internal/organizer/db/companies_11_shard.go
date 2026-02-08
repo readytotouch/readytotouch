@@ -1635,6 +1635,17 @@ func companies11Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $119k/yr - $197.6k/yr
 							Remote:               false,
 						},
+						{
+							Title:                "Software Development Engineer II – Scala",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4368797197/",
+							Location:             "Redlands, CA",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-06"),
+							WithSalary:           true, // $97.8k/yr - $163.3k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Elixir:  {},

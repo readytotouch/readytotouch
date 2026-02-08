@@ -3756,6 +3756,17 @@ func companies22Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Staff Software Engineer (Java/Scala)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4330617473/",
+							Location:             "Greater Madrid Metropolitan Area",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-05"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Elixir: {

@@ -805,7 +805,18 @@ func companies19Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoryCount: 0,
-					Vacancies:             []domain.Vacancy{},
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer – Go",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4315346445/",
+							Location:             "London, England, United Kingdom",
+							Date:                 mustDate("2025-11-29", "2025-11-07"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
 				},
 				domain.Rust: {
 					GitHubRepositoryCount: 0,
@@ -838,12 +849,13 @@ func companies19Shard() []domain.CompanyProfile {
 							Remote:               false,
 						},
 						{
-							Title:                "Software Engineer – Go",
+							Title:                "Data Engineer – Scala",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "https://www.linkedin.com/jobs/view/4315346445/",
-							Location:             "London, England, United Kingdom",
-							Date:                 mustDate("2025-11-29", "2025-11-07"),
+							URL:                  "https://www.linkedin.com/jobs/view/4336058139/",
+							Location:             "Hyderabad, Telangana, India",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-07"),
 							WithSalary:           false,
 							Remote:               false,
 						},

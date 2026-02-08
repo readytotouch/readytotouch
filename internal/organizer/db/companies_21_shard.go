@@ -5460,6 +5460,17 @@ func companies21Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Scala Engineer",
+							ShortDescription:     "API Platform Team",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4354181950/",
+							Location:             "Bristol, England, United Kingdom",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-07"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Elixir: {
