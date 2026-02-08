@@ -3258,6 +3258,17 @@ func companies13Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Embedded Haskell Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4369463265/",
+							Location:             "Costa Mesa, CA",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-06"),
+							WithSalary:           true, // $129k/yr - $171k/yr
+							Remote:               false,
+						},
 					},
 				},
 			},
