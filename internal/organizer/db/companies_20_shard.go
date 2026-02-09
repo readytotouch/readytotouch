@@ -4383,6 +4383,17 @@ func companies20Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Software Engineer (Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4297658872/",
+							Location:             "Washington, DC",
+							CloudProviders:       []domain.CloudProvider{domain.AWS},
+							Date:                 mustDate("2026-02-07"),
+							WithSalary:           true, // $130.5k/yr - $171k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig: {
