@@ -1184,7 +1184,7 @@ func companies23Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4346184199/",
 							Location:             "Atlanta, GA",
-							Date:                 mustDate("2026-01-16", "2025-12-25"),
+							Date:                 mustDate("2026-02-06", "2026-01-16", "2025-12-25"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3061,6 +3061,17 @@ func companies23Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "AI Software Engineer (Java, Scala)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4321918504/",
+							Location:             "London, England, United Kingdom",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-06"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Elixir: {
@@ -4051,6 +4062,91 @@ func companies23Shard() []domain.CompanyProfile {
 			ShortDescription: "IMS (IP Multimedia Subsystem) Solution",
 			Industries: []domain.Industry{
 				domain.IndustryTelecom,
+			},
+		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Soundtrack",
+			BaseURL:    "https://www.soundtrack.io/",
+			CareersURL: "https://careers.soundtrack.io/",
+			AboutURL:   "",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3296806,
+				IDs:               nil,
+				Alias:             "soundtrackio",
+				Name:              "Soundtrack",
+				Followers:         "11K",
+				Employees:         "51-200",
+				AssociatedMembers: "261",
+				Verified:          true,
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Backend Engineer (Go)",
+							ShortDescription:     "Business systems",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4344990032/",
+							Location:             "Stockholm, Stockholm County, Sweden",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-05"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Music streaming service",
+			Industries: []domain.Industry{
+				domain.IndustryEntertainment,
 			},
 		},
 	}

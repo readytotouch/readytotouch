@@ -6282,6 +6282,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "soundtrackio",
+    "source": "soundtrackio-192x192.png",
+    "destination": "soundtrackio.png",
+    "destination_72x72": "soundtrackio.png"
+  },
+  {
     "alias": "sourcegraph",
     "source": "",
     "destination": "",

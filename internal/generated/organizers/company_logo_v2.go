@@ -1051,6 +1051,7 @@ var (
 		"sony-interactive-entertainment-llc":  "",
 		"sophos":                              "sophos.jpeg",
 		"soundcloud":                          "",
+		"soundtrackio":                        "soundtrackio.png",
 		"sourcegraph":                         "",
 		"spe-solution":                        "",
 		"spendbase":                           "spendbase.png",
