@@ -816,6 +816,17 @@ func companies19Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Software Engineer – Go",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4369661632/",
+							Location:             "London, England, United Kingdom",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-06"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {

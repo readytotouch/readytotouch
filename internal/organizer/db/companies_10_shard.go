@@ -610,6 +610,17 @@ func companies10Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Software Engineer – Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4363735115/",
+							Location:             "Plano, TX",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-08"),
+							WithSalary:           true, // $65/hr - $75/hr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},

@@ -6829,7 +6829,7 @@ func companies02Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4273333426/",
 							Location:             "Sofia, Sofia City, Bulgaria",
-							Date:                 mustDate("2025-11-15", "2025-10-04"),
+							Date:                 mustDate("2026-02-08", "2025-11-15", "2025-10-04"),
 							WithSalary:           false,
 							Remote:               false,
 						},

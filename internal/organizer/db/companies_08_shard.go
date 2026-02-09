@@ -2843,6 +2843,17 @@ func companies08Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Software Engineer (Python / Go)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4369937873/",
+							Location:             "India",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-07"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust: {
