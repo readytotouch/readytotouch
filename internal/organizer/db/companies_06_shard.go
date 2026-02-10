@@ -4768,12 +4768,14 @@ func companies06Shard() []domain.CompanyProfile {
 			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                79136550,
+				IDs:               nil,
 				Alias:             "level-all",
 				Name:              "Level All",
-				Followers:         "17K",
+				Followers:         "21K",
 				Employees:         "51-200",
-				AssociatedMembers: "88",
+				AssociatedMembers: "73",
 				Verified:          false,
+				Date:              mustDate("2026-02-11"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:     "Level-All",
@@ -4844,6 +4846,17 @@ func companies06Shard() []domain.CompanyProfile {
 							Location:             "New York, NY",
 							CloudProviders:       []domain.CloudProvider{},
 							Date:                 mustDate("2026-02-03"),
+							WithSalary:           true, // $150k/yr - $175k/yr
+							Remote:               true,
+						},
+						{
+							Title:                "Senior Software Engineer (Elixir)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4371048398/",
+							Location:             "New York, NY",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-10"),
 							WithSalary:           true, // $150k/yr - $175k/yr
 							Remote:               true,
 						},

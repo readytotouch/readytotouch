@@ -1395,6 +1395,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4261784244/":                                                               2239, // level-all
 		"https://www.linkedin.com/jobs/view/4342749584/":                                                               3571, // level-all
 		"https://www.linkedin.com/jobs/view/4368823387/":                                                               3983, // level-all
+		"https://www.linkedin.com/jobs/view/4371048398/":                                                               4034, // level-all
 		"https://www.linkedin.com/jobs/view/4046403243/":                                                               527,  // littlelives
 		"https://www.linkedin.com/jobs/view/4197404839/":                                                               1677, // bill
 		"https://www.linkedin.com/jobs/view/3906024674/":                                                               44,   // bill
@@ -3772,6 +3773,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4277567694/":                                                               2983, // capco
 		"https://www.linkedin.com/jobs/view/4279000425/":                                                               2984, // capco
 		"https://www.linkedin.com/jobs/view/4298961123/":                                                               2985, // facilitapay
+		"https://www.linkedin.com/jobs/view/4370718005/":                                                               4035, // facilitapay
 		"https://www.linkedin.com/jobs/view/4299028566/":                                                               2986, // mckesson
 		"https://www.linkedin.com/jobs/view/4286318398/":                                                               2987, // poweredbycommerce
 		"https://www.linkedin.com/jobs/view/4337919671/":                                                               3377, // poweredbycommerce
