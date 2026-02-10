@@ -3518,7 +3518,7 @@ func companies20Shard() []domain.CompanyProfile {
 		{
 			ID:         0,  // system
 			Type:       "", // system
-			Name:       "Netcore Cloud",
+			Name:       "Netcore",
 			BaseURL:    "https://netcorecloud.com/",
 			CareersURL: "",
 			AboutURL:   "",
@@ -3527,7 +3527,7 @@ func companies20Shard() []domain.CompanyProfile {
 				ID:                31757,
 				IDs:               nil,
 				Alias:             "netcore-cloud",
-				Name:              "Netcore Cloud",
+				Name:              "Netcore",
 				Followers:         "168K",
 				Employees:         "1K-5K",
 				AssociatedMembers: "1,266",
@@ -3577,6 +3577,17 @@ func companies20Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4347018010/",
 							Location:             "Mumbai Metropolitan Region",
 							Date:                 mustDate("2025-11-22"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Back-End Developer- Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4370222893/",
+							Location:             "Mumbai, Maharashtra, India",
+							CloudProviders:       []domain.CloudProvider{domain.AWS},
+							Date:                 mustDate("2026-02-10"),
 							WithSalary:           false,
 							Remote:               false,
 						},

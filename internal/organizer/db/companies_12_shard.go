@@ -3129,6 +3129,17 @@ func companies12Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Software Engineer – Go/Python",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4371087576/",
+							Location:             "San Juan, Puerto Rico",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-11"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {

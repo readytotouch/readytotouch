@@ -252,6 +252,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "allianz-partners",
+    "source": "allianz-partners-100x100.png",
+    "destination": "allianz-partners.png",
+    "destination_72x72": "allianz-partners.png"
+  },
+  {
     "alias": "allocator-one",
     "source": "allocator-one-200x200.jpeg",
     "destination": "allocator-one.jpeg",
@@ -514,6 +520,12 @@
     "source": "armadaai-200x200.jpeg",
     "destination": "armadaai.jpeg",
     "destination_72x72": "armadaai.jpeg"
+  },
+  {
+    "alias": "array-io",
+    "source": "array-200x200.jpeg",
+    "destination": "array-io.jpeg",
+    "destination_72x72": "array-io.jpeg"
   },
   {
     "alias": "artificiallabs",
@@ -3792,6 +3804,12 @@
     "destination_72x72": "liebherr.png"
   },
   {
+    "alias": "lifeatemma",
+    "source": "lifeatemma-200x200.jpeg",
+    "destination": "lifeatemma.jpeg",
+    "destination_72x72": "lifeatemma.jpeg"
+  },
+  {
     "alias": "lifemote-networks",
     "source": "lifemote-256x256.png",
     "destination": "lifemote-networks.png",
@@ -5550,6 +5568,12 @@
     "destination_72x72": "rapid7.jpeg"
   },
   {
+    "alias": "rapidfort",
+    "source": "rapidfort-256x256.png",
+    "destination": "rapidfort.png",
+    "destination_72x72": "rapidfort.png"
+  },
+  {
     "alias": "rbc",
     "source": "",
     "destination": "",
@@ -6040,6 +6064,12 @@
     "source": "sentione-200x200.jpeg",
     "destination": "sentione.jpeg",
     "destination_72x72": "sentione.jpeg"
+  },
+  {
+    "alias": "servicenow",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "severalnines",
@@ -7720,6 +7750,12 @@
     "source": "wix-200x200.jpeg",
     "destination": "wix-com.jpeg",
     "destination_72x72": "wix-com.jpeg"
+  },
+  {
+    "alias": "wmg-international",
+    "source": "wmg-international-200x200.jpeg",
+    "destination": "wmg-international.jpeg",
+    "destination_72x72": "wmg-international.jpeg"
   },
   {
     "alias": "wolt-oy",
