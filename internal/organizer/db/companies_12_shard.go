@@ -1948,6 +1948,17 @@ func companies12Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Software Engineer – Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4317703135/",
+							Location:             "United States",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-08"),
+							WithSalary:           true, // $96k/yr - $192k/yr
+							Remote:               true,
+						},
 					},
 				},
 				domain.Zig: {

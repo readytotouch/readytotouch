@@ -351,6 +351,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4225568243/":                                                               1791, // protonprivacy
 		"https://www.linkedin.com/jobs/view/4294612517/":                                                               2786, // protonprivacy
 		"https://www.linkedin.com/jobs/view/4321261996/":                                                               3285, // protonprivacy
+		"https://www.linkedin.com/jobs/view/4370698848/":                                                               4036, // protonprivacy
 		"https://www.linkedin.com/jobs/view/3907970778/":                                                               211,  // fortinet
 		"https://www.linkedin.com/jobs/view/4104785473/":                                                               212,  // fortinet
 		"https://www.linkedin.com/jobs/view/4122351024/":                                                               572,  // fortinet
@@ -2742,6 +2743,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4053922033/":                                                               1192, // avathonai
 		"https://www.linkedin.com/jobs/view/4137684962/":                                                               3933, // krakenfx
 		"https://www.linkedin.com/jobs/view/4324668900/":                                                               3932, // krakenfx
+		"https://www.linkedin.com/jobs/view/4317703135/":                                                               4037, // krakenfx
 		"https://www.linkedin.com/jobs/view/4168118534/":                                                               1193, // ringcentral
 		"https://www.linkedin.com/jobs/view/4151541268/":                                                               1194, // qnx
 		"https://www.linkedin.com/jobs/view/4151540281/":                                                               1501, // qnx
