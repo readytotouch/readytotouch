@@ -1128,6 +1128,17 @@ func companies20Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Software Engineer (Scala, Spark)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4370131375/",
+							Location:             "Boston, MA",
+							CloudProviders:       []domain.CloudProvider{domain.AWS},
+							Date:                 mustDate("2026-02-08"),
+							WithSalary:           true, // $118.5k/yr - $142k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Elixir: {

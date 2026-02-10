@@ -617,6 +617,7 @@ var (
 		"komerceid":                           "komerceid.jpeg",
 		"konghq":                              "konghq.jpeg",
 		"krakenfx":                            "krakenfx.jpeg",
+		"krakentech":                          "krakentech.png",
 		"kroger":                              "kroger.jpeg",
 		"kyp":                                 "kyp.png",
 		"ladderlife":                          "",

@@ -1337,6 +1337,7 @@ var (
 		"motorinc":                            1337, // MotorInc
 		"ngvoice":                             1338, // ng-voice
 		"soundtrackio":                        1339, // Soundtrack
+		"krakentech":                          1340, // Kraken
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

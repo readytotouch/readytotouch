@@ -13,7 +13,8 @@ document.body.addEventListener("keydown", (event) => {
 				Followers:         "${followers()}",
 				Employees:         "${employees()}",
 				AssociatedMembers: "${associatedMembers()}",
-				Verified:          ${document.querySelectorAll('a[aria-label="Verified"]').length > 0 ? "true" : "false"},`
+				Verified:          ${document.querySelectorAll('a[aria-label="Verified"]').length > 0 ? "true" : "false"},
+				Date:              mustDate("${linkedinProfileUpdatedDate()}"),`
 
         navigator.clipboard.writeText(goLinkedInProfileColumns)
             .then(() => console.log("Page info copied to clipboard:", goLinkedInProfileColumns))
@@ -153,4 +154,8 @@ function toGoInts(ids) {
     }
 
     return `[]int{${ids.join(", ")}}`;
+}
+
+function linkedinProfileUpdatedDate() {
+    return new Intl.DateTimeFormat("en-CA").format(new Date());
 }

@@ -266,6 +266,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4296965075/":                                                               2877, // morgan-stanley
 		"https://www.linkedin.com/jobs/view/4303024461/":                                                               3000, // morgan-stanley
 		"https://www.linkedin.com/jobs/view/4318392955/":                                                               3414, // morgan-stanley
+		"https://www.linkedin.com/jobs/view/4367117430/":                                                               4030, // morgan-stanley
 		"https://app.welcometothejungle.com/jobs/mSII8Ef7":                                                             3895, // monzo-bank
 		"https://www.linkedin.com/jobs/view/3912849197/":                                                               307,  // citi
 		"https://www.linkedin.com/jobs/view/4089424578/":                                                               544,  // citi
@@ -2631,6 +2632,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4263975120/":                                                               2552, // commercetools
 		"https://www.linkedin.com/jobs/view/4280865639/":                                                               2614, // commercetools
 		"https://www.linkedin.com/jobs/view/4269127480/":                                                               2797, // commercetools
+		"https://www.linkedin.com/jobs/view/4370379648/":                                                               4032, // commercetools
 		"https://www.linkedin.com/jobs/view/4148903233/":                                                               1100, // net-health-systems-inc-
 		"https://www.linkedin.com/jobs/view/4149944830/":                                                               1101, // dscout
 		"https://www.linkedin.com/jobs/view/4207056896/":                                                               1772, // viasat
@@ -3631,6 +3633,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4312070903/":                                                               3172, // italki
 		"https://www.linkedin.com/jobs/view/4338774285/":                                                               3511, // italki
 		"https://www.linkedin.com/jobs/view/4254962827/":                                                               2621, // revvity
+		"https://www.linkedin.com/jobs/view/4370131375/":                                                               4033, // revvity
 		"https://www.linkedin.com/jobs/view/4280834608/":                                                               2622, // seagate-technology
 		"https://www.linkedin.com/jobs/view/4280995720/":                                                               2623, // batutaespm
 		"https://www.linkedin.com/jobs/view/4280758824/":                                                               2624, // nozomi-networks-sa
@@ -4025,6 +4028,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4367553323/":                                                               3980, // motorinc
 		"https://www.linkedin.com/jobs/view/4368231130/":                                                               3981, // ngvoice
 		"https://www.linkedin.com/jobs/view/4344990032/":                                                               4025, // soundtrackio
+		"https://www.linkedin.com/jobs/view/4370934479/":                                                               4031, // krakentech
 		"https://www.linkedin.com/jobs/view/3914839625/":                                                               372,  // cognizant
 		"https://www.linkedin.com/jobs/view/4120737001/":                                                               600,  // cognizant
 		"https://www.linkedin.com/jobs/view/4149258542/":                                                               787,  // cognizant

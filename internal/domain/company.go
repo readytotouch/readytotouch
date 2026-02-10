@@ -92,6 +92,7 @@ type LinkedInProfile struct {
 	Employees         string
 	AssociatedMembers string
 	Verified          bool
+	Date              time.Time
 }
 
 type LinkedInProfileShortResponse struct {
