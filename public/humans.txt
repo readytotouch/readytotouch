@@ -33,3 +33,8 @@
     Role: Support
     Profile: https://github.com/MykhailoUpir
     From: Ukraine
+
+    Name: Vladyslav Babenko
+    Role: Back-end Developer
+    Profile: https://www.linkedin.com/in/vladbb/
+    From: Ukraine
