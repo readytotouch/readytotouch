@@ -1128,6 +1128,17 @@ func companies20Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Software Engineer (Scala, Spark)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4370131375/",
+							Location:             "Boston, MA",
+							CloudProviders:       []domain.CloudProvider{domain.AWS},
+							Date:                 mustDate("2026-02-08"),
+							WithSalary:           true, // $118.5k/yr - $142k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Elixir: {
@@ -3507,7 +3518,7 @@ func companies20Shard() []domain.CompanyProfile {
 		{
 			ID:         0,  // system
 			Type:       "", // system
-			Name:       "Netcore Cloud",
+			Name:       "Netcore",
 			BaseURL:    "https://netcorecloud.com/",
 			CareersURL: "",
 			AboutURL:   "",
@@ -3516,7 +3527,7 @@ func companies20Shard() []domain.CompanyProfile {
 				ID:                31757,
 				IDs:               nil,
 				Alias:             "netcore-cloud",
-				Name:              "Netcore Cloud",
+				Name:              "Netcore",
 				Followers:         "168K",
 				Employees:         "1K-5K",
 				AssociatedMembers: "1,266",
@@ -3566,6 +3577,17 @@ func companies20Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4347018010/",
 							Location:             "Mumbai Metropolitan Region",
 							Date:                 mustDate("2025-11-22"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Back-End Developer- Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4370222893/",
+							Location:             "Mumbai, Maharashtra, India",
+							CloudProviders:       []domain.CloudProvider{domain.AWS},
+							Date:                 mustDate("2026-02-10"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -4455,7 +4477,15 @@ func companies20Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/LG-Ad-Solutions-Jobs-E6556153.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "3.1",
+				Verified:    true,
+				Date:        mustDate("2026-02-11"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",

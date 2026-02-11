@@ -943,8 +943,10 @@ func companies11Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "jetbrains",
-				Verified: true,
+				Login:     "jetbrains",
+				Followers: "12.4k",
+				Verified:  true,
+				Date:      mustDate("2026-02-11"),
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "jetbrains",
@@ -974,7 +976,7 @@ func companies11Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoryCount: 0,
+					GitHubRepositoryCount: 12,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Go Developer",
@@ -999,7 +1001,7 @@ func companies11Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoryCount: 2,
+					GitHubRepositoryCount: 5,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Rust Developer Advocate",
@@ -3433,8 +3435,10 @@ func companies11Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "crypto-com",
+				Followers: "237",
+				Verified:  true,
+				Date:      mustDate("2026-02-11"),
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -3458,7 +3462,7 @@ func companies11Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoryCount: 0,
+					GitHubRepositoryCount: 4,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Developer (Golang)",
@@ -3474,7 +3478,7 @@ func companies11Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoryCount: 0,
+					GitHubRepositoryCount: 27,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Rust Engineer",
@@ -3700,10 +3704,11 @@ func companies11Shard() []domain.CompanyProfile {
 				IDs:               nil,
 				Alias:             "commercetools",
 				Name:              "commercetools",
-				Followers:         "41K",
+				Followers:         "46K",
 				Employees:         "501-1K",
-				AssociatedMembers: "696",
+				AssociatedMembers: "626",
 				Verified:          true,
+				Date:              mustDate("2026-02-11"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:     "commercetools",
@@ -3844,6 +3849,17 @@ func companies11Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Backend Engineer – Scala",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4370379648/",
+							Location:             "Valencia, Valencian Community, Spain",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-10"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Elixir:  {},
@@ -3851,6 +3867,9 @@ func companies11Shard() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Composable commerce",
+			Industries: []domain.Industry{
+				domain.IndustryECommerce,
+			},
 		},
 		{
 			ID:         0,  // system
@@ -4795,6 +4814,17 @@ func companies11Shard() []domain.CompanyProfile {
 							Location:             "Singapore, Singapore",
 							CloudProviders:       []domain.CloudProvider{},
 							Date:                 mustDate("2026-02-01"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+						{
+							Title:                "Golang Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4326149568/",
+							Location:             "Hanoi, Hanoi, Vietnam",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-10"),
 							WithSalary:           false,
 							Remote:               true,
 						},

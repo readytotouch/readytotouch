@@ -3718,7 +3718,7 @@ func companies22Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4322967178/",
 							Location:             "Szeged, Csongrád, Hungary",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-01-20"),
+							Date:                 mustDate("2026-02-10", "2026-01-20"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3745,7 +3745,7 @@ func companies22Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4322967178/",
 							Location:             "Szeged, Csongrád, Hungary",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-01-20"),
+							Date:                 mustDate("2026-02-10", "2026-01-20"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -5645,8 +5645,10 @@ func companies22Shard() []domain.CompanyProfile {
 				Verified:          false,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "loyalguru",
+				Followers: "15",
+				Verified:  true,
+				Date:      mustDate("2026-02-11"),
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -5662,7 +5664,7 @@ func companies22Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoryCount: 0,
+					GitHubRepositoryCount: 3,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Backend Developer Go",
@@ -5671,6 +5673,17 @@ func companies22Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4347642829/",
 							Location:             "Spain",
 							Date:                 mustDate("2025-11-27"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+						{
+							Title:                "Backend Developer Go",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4361747792/",
+							Location:             "Spain",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-10"),
 							WithSalary:           false,
 							Remote:               true,
 						},

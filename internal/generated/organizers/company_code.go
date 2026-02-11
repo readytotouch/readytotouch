@@ -1139,7 +1139,7 @@ var (
 		"entrust":                             1134, // Entrust
 		"yolcu-360":                           1135, // Yolcu360
 		"leaseweb":                            1136, // Leaseweb
-		"netcore-cloud":                       1137, // Netcore Cloud
+		"netcore-cloud":                       1137, // Netcore
 		"fluidcloud":                          1138, // FluidCloud
 		"ifood-":                              1139, // iFood
 		"amplifiloyalty":                      1140, // ampliFI Loyalty Solutions
@@ -1337,6 +1337,13 @@ var (
 		"motorinc":                            1337, // MotorInc
 		"ngvoice":                             1338, // ng-voice
 		"soundtrackio":                        1339, // Soundtrack
+		"krakentech":                          1340, // Kraken
+		"servicenow":                          1341, // ServiceNow
+		"allianz-partners":                    1342, // Allianz Partners
+		"wmg-international":                   1343, // adWMG
+		"array-io":                            1344, // Array
+		"lifeatemma":                          1345, // Emma – The Sleep Company
+		"rapidfort":                           1346, // RAPIDFORT
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

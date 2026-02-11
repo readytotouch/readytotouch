@@ -92,6 +92,7 @@ type LinkedInProfile struct {
 	Employees         string
 	AssociatedMembers string
 	Verified          bool
+	Date              time.Time
 }
 
 type LinkedInProfileShortResponse struct {
@@ -226,6 +227,7 @@ type GitHubProfile struct {
 	Login     string
 	Followers string
 	Verified  bool
+	Date      time.Time
 }
 
 type GlassdoorProfile struct {

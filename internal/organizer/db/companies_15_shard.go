@@ -2050,7 +2050,7 @@ func companies15Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4364341641/",
 							Location:             "Krakowski, Małopolskie, Poland",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-01-20"),
+							Date:                 mustDate("2026-02-10", "2026-01-20"),
 							WithSalary:           false,
 							Remote:               false,
 						},

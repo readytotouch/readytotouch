@@ -1915,7 +1915,15 @@ func companies12Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Kraken-Digital-Asset-Exchange-Jobs-E938667.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "4.2",
+				Verified:    true,
+				Date:        mustDate("2026-02-11"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -1946,6 +1954,17 @@ func companies12Shard() []domain.CompanyProfile {
 							CloudProviders:       []domain.CloudProvider{},
 							Date:                 mustDate("2026-01-30"),
 							WithSalary:           false,
+							Remote:               true,
+						},
+						{
+							Title:                "Software Engineer – Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4317703135/",
+							Location:             "United States",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-08"),
+							WithSalary:           true, // $96k/yr - $192k/yr
 							Remote:               true,
 						},
 					},
@@ -3115,6 +3134,17 @@ func companies12Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4343607092/",
 							Location:             "Bengaluru, Karnataka, India",
 							Date:                 mustDate("2025-12-17"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Software Engineer – Go/Python",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4371087576/",
+							Location:             "San Juan, Puerto Rico",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-11"),
 							WithSalary:           false,
 							Remote:               false,
 						},
