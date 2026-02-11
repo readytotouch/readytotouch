@@ -227,6 +227,7 @@ type GitHubProfile struct {
 	Login     string
 	Followers string
 	Verified  bool
+	Date      time.Time
 }
 
 type GlassdoorProfile struct {

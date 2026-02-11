@@ -3732,6 +3732,12 @@ func companies07Shard() []domain.CompanyProfile {
 				AssociatedMembers: "1,958",
 				Verified:          true,
 			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:     "jfrog",
+				Followers: "455",
+				Verified:  true,
+				Date:      mustDate("2026-02-11"),
+			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "JFrog",
 				Employees:   "501 to 1,000",
@@ -3758,7 +3764,7 @@ func companies07Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoryCount: 0,
+					GitHubRepositoryCount: 62,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Golang Developer",

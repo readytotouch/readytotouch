@@ -943,8 +943,10 @@ func companies11Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "jetbrains",
-				Verified: true,
+				Login:     "jetbrains",
+				Followers: "12.4k",
+				Verified:  true,
+				Date:      mustDate("2026-02-11"),
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "jetbrains",
@@ -974,7 +976,7 @@ func companies11Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoryCount: 0,
+					GitHubRepositoryCount: 12,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Go Developer",
@@ -999,7 +1001,7 @@ func companies11Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoryCount: 2,
+					GitHubRepositoryCount: 5,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Rust Developer Advocate",
@@ -3433,8 +3435,10 @@ func companies11Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "crypto-com",
+				Followers: "237",
+				Verified:  true,
+				Date:      mustDate("2026-02-11"),
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -3458,7 +3462,7 @@ func companies11Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoryCount: 0,
+					GitHubRepositoryCount: 4,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Developer (Golang)",
@@ -3474,7 +3478,7 @@ func companies11Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoryCount: 0,
+					GitHubRepositoryCount: 27,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Rust Engineer",
