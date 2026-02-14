@@ -4746,6 +4746,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "ocrolus",
+    "source": "ocrolus-200x200.jpeg",
+    "destination": "ocrolus.jpeg",
+    "destination_72x72": "ocrolus.jpeg"
+  },
+  {
     "alias": "octopusmoney",
     "source": "octopusmoney-300x300.webp",
     "destination": "octopusmoney.png",
@@ -6682,6 +6688,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "synamedia",
+    "source": "synamedia-180x180.webp",
+    "destination": "synamedia.png",
+    "destination_72x72": "synamedia.png"
   },
   {
     "alias": "synctera",

@@ -4084,6 +4084,8 @@ var (
 		"https://www.linkedin.com/jobs/view/4370739065/":                                                               4069, // gridpoint
 		"https://www.linkedin.com/jobs/view/4370703961/":                                                               4079, // viavi-solutions
 		"https://www.linkedin.com/jobs/view/4364140207/":                                                               4080, // machinify
+		"https://www.linkedin.com/jobs/view/4371419072/":                                                               4089, // synamedia
+		"https://www.linkedin.com/jobs/view/4372171272/":                                                               4090, // ocrolus
 		"https://www.linkedin.com/jobs/view/3914839625/":                                                               372,  // cognizant
 		"https://www.linkedin.com/jobs/view/4120737001/":                                                               600,  // cognizant
 		"https://www.linkedin.com/jobs/view/4149258542/":                                                               787,  // cognizant

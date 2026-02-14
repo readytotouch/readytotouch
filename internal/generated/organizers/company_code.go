@@ -1348,6 +1348,8 @@ var (
 		"gridpoint":                           1348, // GridPoint
 		"viavi-solutions":                     1349, // VIAVI Solutions
 		"machinify":                           1350, // Machinify
+		"synamedia":                           1351, // Synamedia
+		"ocrolus":                             1352, // Ocrolus
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 
