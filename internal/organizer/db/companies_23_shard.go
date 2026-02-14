@@ -1668,6 +1668,17 @@ func companies23Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $171.6k/yr - $302.2k/yr
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Software Engineer – Golang",
+							ShortDescription:     "Cloud Infrastructure",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4370779514/",
+							Location:             "Austin, TX",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-12"),
+							WithSalary:           true, // $171.6k/yr - $302.2k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {

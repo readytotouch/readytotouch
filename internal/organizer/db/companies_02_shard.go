@@ -2058,6 +2058,17 @@ func companies02Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Software Engineer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4349303725/",
+							Location:             "Belgrade, Serbia",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-14"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {

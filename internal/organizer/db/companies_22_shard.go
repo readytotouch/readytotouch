@@ -4172,7 +4172,7 @@ func companies22Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4363373884/",
 							Location:             "Cracow, Małopolskie, Poland",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-01-24"),
+							Date:                 mustDate("2026-02-14", "2026-01-24"),
 							WithSalary:           false,
 							Remote:               false,
 						},

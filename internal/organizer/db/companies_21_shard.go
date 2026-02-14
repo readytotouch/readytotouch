@@ -4636,10 +4636,11 @@ func companies21Shard() []domain.CompanyProfile {
 				IDs:               []int{1893, 3422, 86467},
 				Alias:             "bayer",
 				Name:              "Bayer",
-				Followers:         "6M",
+				Followers:         "7M",
 				Employees:         "10K+",
-				AssociatedMembers: "93,319",
+				AssociatedMembers: "96,662",
 				Verified:          true,
+				Date:              mustDate("2026-02-15"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:     "Bayer-Group",
@@ -4698,6 +4699,17 @@ func companies21Shard() []domain.CompanyProfile {
 							CloudProviders:       []domain.CloudProvider{},
 							Date:                 mustDate("2026-01-23"),
 							WithSalary:           true, // $119.1k/yr - $178.6k/yr
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Staff Software Engineer (Golang/Python)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4371236168/",
+							Location:             "Creve Coeur, MO",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-12"),
+							WithSalary:           true, // $136.9k/yr - $205.4k/yr
 							Remote:               false,
 						},
 					},
