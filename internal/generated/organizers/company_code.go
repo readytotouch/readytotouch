@@ -46,7 +46,7 @@ var (
 		"digitalocean":                        27,   // DigitalOcean
 		"canonical":                           28,   // Canonical
 		"suse":                                261,  // SUSE
-		"konghq":                              29,   // Kong Inc.
+		"konghq":                              29,   // Kong
 		"exasol-ag":                           30,   // Exasol
 		"palantir-technologies":               31,   // Palantir Technologies
 		"bufbuild":                            178,  // Buf
@@ -222,7 +222,7 @@ var (
 		"dronesense":                          204,  // DroneSense, Inc.
 		"zurich-instruments-ag":               205,  // Zurich Instruments
 		"palo-alto-networks":                  206,  // Palo Alto Networks
-		"scitecinc":                           207,  // SciTec, Inc.
+		"scitecinc":                           207,  // SciTec
 		"stack-x-me":                          208,  // Stackx.me
 		"the-walt-disney-company":             209,  // The Walt Disney Company
 		"materialise":                         210,  // Materialise
@@ -1346,6 +1346,8 @@ var (
 		"rapidfort":                           1346, // RAPIDFORT
 		"nosto":                               1347, // Nosto
 		"gridpoint":                           1348, // GridPoint
+		"viavi-solutions":                     1349, // VIAVI Solutions
+		"machinify":                           1350, // Machinify
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

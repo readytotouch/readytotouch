@@ -2116,7 +2116,7 @@ func companies11Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4313441005/",
 							Location:             "Jersey City, NJ",
-							Date:                 mustDate("2026-01-22", "2025-12-10", "2025-12-02", "2025-11-23", "2025-11-02"),
+							Date:                 mustDate("2026-02-13", "2026-01-22", "2025-12-10", "2025-12-02", "2025-11-23", "2025-11-02"),
 							WithSalary:           true, // $107k/yr - $216k/yr
 							Remote:               false,
 						},
@@ -4100,6 +4100,17 @@ func companies11Shard() []domain.CompanyProfile {
 							Location:             "Linthicum Heights, MD",
 							CloudProviders:       []domain.CloudProvider{},
 							Date:                 mustDate("2026-01-30"),
+							WithSalary:           true, // $111.5k/yr - $208k/yr
+							Remote:               false,
+						},
+						{
+							Title:                "Embedded Software Engineer – Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4371841074/",
+							Location:             "Tampa, FL",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-13"),
 							WithSalary:           true, // $111.5k/yr - $208k/yr
 							Remote:               false,
 						},

@@ -4002,6 +4002,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "machinify",
+    "source": "machinify-180x180.png",
+    "destination": "machinify.png",
+    "destination_72x72": "machinify.png"
+  },
+  {
     "alias": "macquariegroup",
     "source": "macquariegroup-200x200.jpeg",
     "destination": "macquariegroup.jpeg",
@@ -7474,6 +7480,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "viavi-solutions",
+    "source": "viavisolutions-180x180.png",
+    "destination": "viavi-solutions.png",
+    "destination_72x72": "viavi-solutions.png"
   },
   {
     "alias": "victoriametrics",

@@ -4583,6 +4583,17 @@ func companies17Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $179k/yr - $242k/yr
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Trading Systems Developer (Java/Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4372035345/",
+							Location:             "New York City Metropolitan Area",
+							CloudProviders:       []domain.CloudProvider{domain.AWS, domain.GCP},
+							Date:                 mustDate("2026-02-14"),
+							WithSalary:           true, // $179k/yr - $226k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig:     {},
