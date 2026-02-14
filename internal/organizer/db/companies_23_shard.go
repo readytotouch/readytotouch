@@ -1273,7 +1273,15 @@ func companies23Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Sardine-Jobs-E7044956.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "4.5",
+				Verified:    true,
+				Date:        mustDate("2026-02-15"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -1939,8 +1947,10 @@ func companies23Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "commvault",
+				Followers: "69",
+				Verified:  false,
+				Date:      mustDate("2026-02-15"),
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -1964,7 +1974,7 @@ func companies23Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoryCount: 0,
+					GitHubRepositoryCount: 2,
 					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Rust: {
@@ -4901,8 +4911,10 @@ func companies23Shard() []domain.CompanyProfile {
 				Date:              mustDate("2026-02-14"),
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "nosto",
+				Followers: "14",
+				Verified:  false,
+				Date:      mustDate("2026-02-15"),
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -5169,7 +5181,15 @@ func companies23Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Machinify-Jobs-E3102945.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "2.3",
+				Verified:    true,
+				Date:        mustDate("2026-02-15"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -5331,8 +5351,10 @@ func companies23Shard() []domain.CompanyProfile {
 				Date:              mustDate("2026-02-15"),
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "Ocrolus",
+				Followers: "9",
+				Verified:  true,
+				Date:      mustDate("2026-02-15"),
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -5341,7 +5363,15 @@ func companies23Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Ocrolus-Jobs-E2857732.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "3.7",
+				Verified:    true,
+				Date:        mustDate("2026-02-15"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -5417,8 +5447,10 @@ func companies23Shard() []domain.CompanyProfile {
 				Date:              mustDate("2026-02-15"),
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "mirrorweb",
+				Followers: "7",
+				Verified:  false,
+				Date:      mustDate("2026-02-15"),
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -5427,14 +5459,22 @@ func companies23Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/MirrorWeb-Jobs-E2347924.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "3.6",
+				Verified:    false,
+				Date:        mustDate("2026-02-15"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoryCount: 0,
+					GitHubRepositoryCount: 6,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer (Go)",
@@ -5513,7 +5553,15 @@ func companies23Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Wells-Fargo-Jobs-E8876.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "3.6",
+				Verified:    true,
+				Date:        mustDate("2026-02-15"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -5589,8 +5637,10 @@ func companies23Shard() []domain.CompanyProfile {
 				Date:              mustDate("2026-02-15"),
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "traderepublic",
+				Followers: "198",
+				Verified:  true,
+				Date:      mustDate("2026-02-15"),
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -5599,7 +5649,15 @@ func companies23Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Trade-Republic-Jobs-E3554739.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "2.7",
+				Verified:    true,
+				Date:        mustDate("2026-02-15"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
