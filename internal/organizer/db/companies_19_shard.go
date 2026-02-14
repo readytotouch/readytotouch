@@ -5463,6 +5463,17 @@ func companies19Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Staff Backend Software Engineer (Elixir)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4363900055/",
+							Location:             "San Francisco Bay Area",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-11"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Clojure: {
@@ -5878,6 +5889,17 @@ func companies19Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $152k/yr - $287.5k/yr
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Systems Software Engineer – Rust, Go, C++",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4365194458/",
+							Location:             "United States",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-13"),
+							WithSalary:           true, // $152k/yr - $287.5k/yr
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust: {
@@ -5893,6 +5915,17 @@ func companies19Shard() []domain.CompanyProfile {
 							Date:                 mustDate("2026-02-05"),
 							WithSalary:           true, // $152k/yr - $287.5k/yr
 							Remote:               false,
+						},
+						{
+							Title:                "Senior Systems Software Engineer – Rust, Go, C++",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4365194458/",
+							Location:             "United States",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-13"),
+							WithSalary:           true, // $152k/yr - $287.5k/yr
+							Remote:               true,
 						},
 					},
 				},

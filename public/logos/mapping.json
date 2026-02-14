@@ -3036,6 +3036,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "gridpoint",
+    "source": "gridpoint-180x180.webp",
+    "destination": "gridpoint.png",
+    "destination_72x72": "gridpoint.png"
+  },
+  {
     "alias": "gridx",
     "source": "",
     "destination": "",
@@ -3996,6 +4002,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "machinify",
+    "source": "machinify-180x180.png",
+    "destination": "machinify.png",
+    "destination_72x72": "machinify.png"
+  },
+  {
     "alias": "macquariegroup",
     "source": "macquariegroup-200x200.jpeg",
     "destination": "macquariegroup.jpeg",
@@ -4228,6 +4240,12 @@
     "source": "mirantis-200x200.jpeg",
     "destination": "mirantis.jpeg",
     "destination_72x72": "mirantis.jpeg"
+  },
+  {
+    "alias": "mirrorweb",
+    "source": "mirrorweb-200x200.jpeg",
+    "destination": "mirrorweb.jpeg",
+    "destination_72x72": "mirrorweb.jpeg"
   },
   {
     "alias": "mitratech",
@@ -4662,6 +4680,12 @@
     "destination_72x72": "nordsecurity.jpeg"
   },
   {
+    "alias": "nosto",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
+  },
+  {
     "alias": "notablesystems",
     "source": "",
     "destination": "",
@@ -4726,6 +4750,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "ocrolus",
+    "source": "ocrolus-200x200.jpeg",
+    "destination": "ocrolus.jpeg",
+    "destination_72x72": "ocrolus.jpeg"
   },
   {
     "alias": "octopusmoney",
@@ -6666,6 +6696,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "synamedia",
+    "source": "synamedia-180x180.webp",
+    "destination": "synamedia.png",
+    "destination_72x72": "synamedia.png"
+  },
+  {
     "alias": "synctera",
     "source": "synctera-200x200.jpeg",
     "destination": "synctera.jpeg",
@@ -7110,6 +7146,12 @@
     "destination_72x72": "track24.jpeg"
   },
   {
+    "alias": "trade-republic",
+    "source": "trade-republic-200x200.jpeg",
+    "destination": "trade-republic.jpeg",
+    "destination_72x72": "trade-republic.jpeg"
+  },
+  {
     "alias": "tradevestgmbh",
     "source": "",
     "destination": "",
@@ -7464,6 +7506,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "viavi-solutions",
+    "source": "viavisolutions-180x180.png",
+    "destination": "viavi-solutions.png",
+    "destination_72x72": "viavi-solutions.png"
+  },
+  {
     "alias": "victoriametrics",
     "source": "",
     "destination": "",
@@ -7696,6 +7744,12 @@
     "source": "wellrewarded-200x200.jpeg",
     "destination": "wellrewarded.jpeg",
     "destination_72x72": "wellrewarded.jpeg"
+  },
+  {
+    "alias": "wellsfargo",
+    "source": "wellsfargo-180x180.webp",
+    "destination": "wellsfargo.png",
+    "destination_72x72": "wellsfargo.png"
   },
   {
     "alias": "wexinc",
