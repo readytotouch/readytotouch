@@ -1345,6 +1345,7 @@ var (
 		"lifeatemma":                          1345, // Emma – The Sleep Company
 		"rapidfort":                           1346, // RAPIDFORT
 		"nosto":                               1347, // Nosto
+		"gridpoint":                           1348, // GridPoint
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

@@ -482,6 +482,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4224453681/":                                                               1832, // gymondo-gmbh
 		"https://www.linkedin.com/jobs/view/4354240183/":                                                               3861, // gymondo-gmbh
 		"https://www.linkedin.com/jobs/view/4356053613/":                                                               3924, // gymondo-gmbh
+		"https://www.linkedin.com/jobs/view/4363241466/":                                                               4067, // gymondo-gmbh
 		"https://www.linkedin.com/jobs/view/4023882932/":                                                               13,   // delivery-hero-se
 		"https://www.linkedin.com/jobs/view/4148753946/":                                                               802,  // delivery-hero-se
 		"https://www.linkedin.com/jobs/view/4148759219/":                                                               803,  // delivery-hero-se
@@ -3616,6 +3617,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4271482521/":                                                               2482, // papainc
 		"https://www.linkedin.com/jobs/view/4270777580/":                                                               2700, // papainc
 		"https://www.linkedin.com/jobs/view/4315504772/":                                                               3250, // papainc
+		"https://www.linkedin.com/jobs/view/4363900055/":                                                               4068, // papainc
 		"https://www.linkedin.com/jobs/view/4271123395/":                                                               2483, // bitwarden1
 		"https://www.linkedin.com/jobs/view/4279522160/":                                                               2591, // bitwarden1
 		"https://www.linkedin.com/jobs/view/4267262281/":                                                               2498, // kyp
@@ -4062,6 +4064,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4364275353/":                                                               4060, // lifeatemma
 		"https://www.linkedin.com/jobs/view/4370711609/":                                                               4061, // rapidfort
 		"https://www.linkedin.com/jobs/view/4364423727/":                                                               4066, // nosto
+		"https://www.linkedin.com/jobs/view/4370739065/":                                                               4069, // gridpoint
 		"https://www.linkedin.com/jobs/view/3914839625/":                                                               372,  // cognizant
 		"https://www.linkedin.com/jobs/view/4120737001/":                                                               600,  // cognizant
 		"https://www.linkedin.com/jobs/view/4149258542/":                                                               787,  // cognizant

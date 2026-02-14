@@ -3036,6 +3036,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "gridpoint",
+    "source": "gridpoint-180x180.webp",
+    "destination": "gridpoint.png",
+    "destination_72x72": "gridpoint.png"
+  },
+  {
     "alias": "gridx",
     "source": "",
     "destination": "",

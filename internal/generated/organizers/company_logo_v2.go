@@ -510,6 +510,7 @@ var (
 		"greshamtech":                         "greshamtech.jpeg",
 		"greynoise":                           "",
 		"greyscout":                           "",
+		"gridpoint":                           "gridpoint.png",
 		"gridx":                               "",
 		"groq":                                "",
 		"group-avows":                         "",
