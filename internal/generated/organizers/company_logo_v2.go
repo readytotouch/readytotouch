@@ -781,6 +781,7 @@ var (
 		"nominal-inc":                         "nominal-inc.jpeg",
 		"nordea":                              "nordea.jpeg",
 		"nordsecurity":                        "nordsecurity.jpeg",
+		"nosto":                               "",
 		"notablesystems":                      "",
 		"notchupteam":                         "",
 		"nozomi-networks-sa":                  "nozomi-networks-sa.png",

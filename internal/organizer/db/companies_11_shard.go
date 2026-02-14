@@ -1453,6 +1453,17 @@ func companies11Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $160k/yr - $200k/yr
 							Remote:               true,
 						},
+						{
+							Title:                "Back-End Scala Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4311120216/",
+							Location:             "New York, NY",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-11"),
+							WithSalary:           true, // $130k/yr - $170k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Elixir:  {},

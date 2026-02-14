@@ -2467,7 +2467,7 @@ func companies21Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4355394004/",
 							Location:             "Austin, TX",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-01-24"),
+							Date:                 mustDate("2026-02-14", "2026-01-24"),
 							WithSalary:           true, // $158.3k/yr - $237.4k/yr
 							Remote:               false,
 						},
@@ -5512,7 +5512,7 @@ func companies21Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4354181950/",
 							Location:             "Bristol, England, United Kingdom",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-02-07"),
+							Date:                 mustDate("2026-02-13", "2026-02-07"),
 							WithSalary:           false,
 							Remote:               false,
 						},

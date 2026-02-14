@@ -1344,6 +1344,7 @@ var (
 		"array-io":                            1344, // Array
 		"lifeatemma":                          1345, // Emma – The Sleep Company
 		"rapidfort":                           1346, // RAPIDFORT
+		"nosto":                               1347, // Nosto
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

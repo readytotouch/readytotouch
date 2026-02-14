@@ -2488,6 +2488,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4211271247/":                                                               1620, // tesla-motors
 		"https://www.linkedin.com/jobs/view/4080573355/":                                                               902,  // dhl
 		"https://www.linkedin.com/jobs/view/4300871569/":                                                               2956, // dhl
+		"https://www.linkedin.com/jobs/view/4364461165/":                                                               4062, // dhl
 		"https://www.linkedin.com/jobs/view/4277849491/":                                                               2549, // moia_mobility
 		"https://www.linkedin.com/jobs/view/4302824120/":                                                               3023, // moia_mobility
 		"https://www.linkedin.com/jobs/view/4333046395/":                                                               3270, // moia_mobility
@@ -2548,6 +2549,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4295473279/":                                                               3716, // qonto
 		"https://www.linkedin.com/jobs/view/4168470393/":                                                               1001, // icapital-network-inc
 		"https://www.linkedin.com/jobs/view/4366908951/":                                                               3919, // icapital-network-inc
+		"https://www.linkedin.com/jobs/view/4311120216/":                                                               4063, // icapital-network-inc
 		"https://www.linkedin.com/jobs/view/4141235282/":                                                               1002, // expedia
 		"https://www.linkedin.com/jobs/view/4190174086/":                                                               1560, // esri
 		"https://www.linkedin.com/jobs/view/4321390968/":                                                               3850, // esri
@@ -3089,6 +3091,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4190979349/":                                                               1527, // fossa
 		"https://www.linkedin.com/jobs/view/4144858808/":                                                               1528, // london-stock-exchange-group
 		"https://www.linkedin.com/jobs/view/4144858801/":                                                               2117, // london-stock-exchange-group
+		"https://www.linkedin.com/jobs/view/4363947016/":                                                               4064, // london-stock-exchange-group
 		"https://www.linkedin.com/jobs/view/4206647185/":                                                               1529, // getnetworld
 		"https://www.linkedin.com/jobs/view/4209630478/":                                                               1550, // hunterio
 		"https://www.linkedin.com/jobs/view/4207981446/":                                                               1551, // sawitpro
@@ -3992,6 +3995,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4327994781/":                                                               3686, // sky
 		"https://www.linkedin.com/jobs/view/4363523052/":                                                               3788, // sky
 		"https://www.linkedin.com/jobs/view/4364629555/":                                                               3820, // sky
+		"https://www.linkedin.com/jobs/view/4361949155/":                                                               4065, // sky
 		"https://www.linkedin.com/jobs/view/4325399277/":                                                               3563, // reducate
 		"https://www.linkedin.com/jobs/view/4348395855/":                                                               3574, // myo-healthcare
 		"https://www.linkedin.com/jobs/view/4350156792/":                                                               3699, // myo-healthcare
@@ -4057,6 +4061,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4361873587/":                                                               4059, // array-io
 		"https://www.linkedin.com/jobs/view/4364275353/":                                                               4060, // lifeatemma
 		"https://www.linkedin.com/jobs/view/4370711609/":                                                               4061, // rapidfort
+		"https://www.linkedin.com/jobs/view/4364423727/":                                                               4066, // nosto
 		"https://www.linkedin.com/jobs/view/3914839625/":                                                               372,  // cognizant
 		"https://www.linkedin.com/jobs/view/4120737001/":                                                               600,  // cognizant
 		"https://www.linkedin.com/jobs/view/4149258542/":                                                               787,  // cognizant
