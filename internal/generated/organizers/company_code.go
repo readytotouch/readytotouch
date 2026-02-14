@@ -1350,6 +1350,9 @@ var (
 		"machinify":                           1350, // Machinify
 		"synamedia":                           1351, // Synamedia
 		"ocrolus":                             1352, // Ocrolus
+		"mirrorweb":                           1353, // MirrorWeb
+		"wellsfargo":                          1354, // Wells Fargo
+		"trade-republic":                      1355, // Trade Republic
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

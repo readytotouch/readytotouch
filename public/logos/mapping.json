@@ -4242,6 +4242,12 @@
     "destination_72x72": "mirantis.jpeg"
   },
   {
+    "alias": "mirrorweb",
+    "source": "mirrorweb-200x200.jpeg",
+    "destination": "mirrorweb.jpeg",
+    "destination_72x72": "mirrorweb.jpeg"
+  },
+  {
     "alias": "mitratech",
     "source": "",
     "destination": "",
@@ -7140,6 +7146,12 @@
     "destination_72x72": "track24.jpeg"
   },
   {
+    "alias": "trade-republic",
+    "source": "trade-republic-200x200.jpeg",
+    "destination": "trade-republic.jpeg",
+    "destination_72x72": "trade-republic.jpeg"
+  },
+  {
     "alias": "tradevestgmbh",
     "source": "",
     "destination": "",
@@ -7732,6 +7744,12 @@
     "source": "wellrewarded-200x200.jpeg",
     "destination": "wellrewarded.jpeg",
     "destination_72x72": "wellrewarded.jpeg"
+  },
+  {
+    "alias": "wellsfargo",
+    "source": "wellsfargo-180x180.webp",
+    "destination": "wellsfargo.png",
+    "destination_72x72": "wellsfargo.png"
   },
   {
     "alias": "wexinc",

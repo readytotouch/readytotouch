@@ -7037,7 +7037,7 @@ func companies07Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4332724105/",
 							Location:             "United States",
-							Date:                 mustDate("2026-01-23", "2025-12-10", "2025-11-20"),
+							Date:                 mustDate("2026-02-13", "2026-01-23", "2025-12-10", "2025-11-20"),
 							WithSalary:           false,
 							Remote:               true,
 						},
