@@ -60,6 +60,12 @@ func Prepare(ctx context.Context, db DBTX) (*Queries, error) {
 	if q.socialUserProfilesByUserStmt, err = db.PrepareContext(ctx, socialUserProfilesByUser); err != nil {
 		return nil, fmt.Errorf("error preparing query SocialUserProfilesByUser: %w", err)
 	}
+	if q.userCompanyVisibilityOverrideHistoryNewStmt, err = db.PrepareContext(ctx, userCompanyVisibilityOverrideHistoryNew); err != nil {
+		return nil, fmt.Errorf("error preparing query UserCompanyVisibilityOverrideHistoryNew: %w", err)
+	}
+	if q.userCompanyVisibilityOverrideUpsertStmt, err = db.PrepareContext(ctx, userCompanyVisibilityOverrideUpsert); err != nil {
+		return nil, fmt.Errorf("error preparing query UserCompanyVisibilityOverrideUpsert: %w", err)
+	}
 	if q.userFavoriteCompaniesStmt, err = db.PrepareContext(ctx, userFavoriteCompanies); err != nil {
 		return nil, fmt.Errorf("error preparing query UserFavoriteCompanies: %w", err)
 	}
@@ -89,6 +95,12 @@ func Prepare(ctx context.Context, db DBTX) (*Queries, error) {
 	}
 	if q.userFeatureWaitlistUpsertStmt, err = db.PrepareContext(ctx, userFeatureWaitlistUpsert); err != nil {
 		return nil, fmt.Errorf("error preparing query UserFeatureWaitlistUpsert: %w", err)
+	}
+	if q.userIndustryVisibilityOverrideHistoryNewStmt, err = db.PrepareContext(ctx, userIndustryVisibilityOverrideHistoryNew); err != nil {
+		return nil, fmt.Errorf("error preparing query UserIndustryVisibilityOverrideHistoryNew: %w", err)
+	}
+	if q.userIndustryVisibilityOverrideUpsertStmt, err = db.PrepareContext(ctx, userIndustryVisibilityOverrideUpsert); err != nil {
+		return nil, fmt.Errorf("error preparing query UserIndustryVisibilityOverrideUpsert: %w", err)
 	}
 	if q.userOnlineDailyCountStatsStmt, err = db.PrepareContext(ctx, userOnlineDailyCountStats); err != nil {
 		return nil, fmt.Errorf("error preparing query UserOnlineDailyCountStats: %w", err)
@@ -230,6 +242,16 @@ func (q *Queries) Close() error {
 			err = fmt.Errorf("error closing socialUserProfilesByUserStmt: %w", cerr)
 		}
 	}
+	if q.userCompanyVisibilityOverrideHistoryNewStmt != nil {
+		if cerr := q.userCompanyVisibilityOverrideHistoryNewStmt.Close(); cerr != nil {
+			err = fmt.Errorf("error closing userCompanyVisibilityOverrideHistoryNewStmt: %w", cerr)
+		}
+	}
+	if q.userCompanyVisibilityOverrideUpsertStmt != nil {
+		if cerr := q.userCompanyVisibilityOverrideUpsertStmt.Close(); cerr != nil {
+			err = fmt.Errorf("error closing userCompanyVisibilityOverrideUpsertStmt: %w", cerr)
+		}
+	}
 	if q.userFavoriteCompaniesStmt != nil {
 		if cerr := q.userFavoriteCompaniesStmt.Close(); cerr != nil {
 			err = fmt.Errorf("error closing userFavoriteCompaniesStmt: %w", cerr)
@@ -278,6 +300,16 @@ func (q *Queries) Close() error {
 	if q.userFeatureWaitlistUpsertStmt != nil {
 		if cerr := q.userFeatureWaitlistUpsertStmt.Close(); cerr != nil {
 			err = fmt.Errorf("error closing userFeatureWaitlistUpsertStmt: %w", cerr)
+		}
+	}
+	if q.userIndustryVisibilityOverrideHistoryNewStmt != nil {
+		if cerr := q.userIndustryVisibilityOverrideHistoryNewStmt.Close(); cerr != nil {
+			err = fmt.Errorf("error closing userIndustryVisibilityOverrideHistoryNewStmt: %w", cerr)
+		}
+	}
+	if q.userIndustryVisibilityOverrideUpsertStmt != nil {
+		if cerr := q.userIndustryVisibilityOverrideUpsertStmt.Close(); cerr != nil {
+			err = fmt.Errorf("error closing userIndustryVisibilityOverrideUpsertStmt: %w", cerr)
 		}
 	}
 	if q.userOnlineDailyCountStatsStmt != nil {
@@ -456,6 +488,8 @@ type Queries struct {
 	githubRepositoryStarsUpsertStmt                      *sql.Stmt
 	socialUserProfilesStmt                               *sql.Stmt
 	socialUserProfilesByUserStmt                         *sql.Stmt
+	userCompanyVisibilityOverrideHistoryNewStmt          *sql.Stmt
+	userCompanyVisibilityOverrideUpsertStmt              *sql.Stmt
 	userFavoriteCompaniesStmt                            *sql.Stmt
 	userFavoriteCompaniesStatsStmt                       *sql.Stmt
 	userFavoriteCompaniesUpsertStmt                      *sql.Stmt
@@ -466,6 +500,8 @@ type Queries struct {
 	userFeatureWaitlistStatsStmt                         *sql.Stmt
 	userFeatureWaitlistStatsUpsertStmt                   *sql.Stmt
 	userFeatureWaitlistUpsertStmt                        *sql.Stmt
+	userIndustryVisibilityOverrideHistoryNewStmt         *sql.Stmt
+	userIndustryVisibilityOverrideUpsertStmt             *sql.Stmt
 	userOnlineDailyCountStatsStmt                        *sql.Stmt
 	userOnlineDailyCountStatsUpsertStmt                  *sql.Stmt
 	userOnlineDailyStatsUpsertStmt                       *sql.Stmt
@@ -509,6 +545,8 @@ func (q *Queries) WithTx(tx *sql.Tx) *Queries {
 		githubRepositoryStarsUpsertStmt:                      q.githubRepositoryStarsUpsertStmt,
 		socialUserProfilesStmt:                               q.socialUserProfilesStmt,
 		socialUserProfilesByUserStmt:                         q.socialUserProfilesByUserStmt,
+		userCompanyVisibilityOverrideHistoryNewStmt:          q.userCompanyVisibilityOverrideHistoryNewStmt,
+		userCompanyVisibilityOverrideUpsertStmt:              q.userCompanyVisibilityOverrideUpsertStmt,
 		userFavoriteCompaniesStmt:                            q.userFavoriteCompaniesStmt,
 		userFavoriteCompaniesStatsStmt:                       q.userFavoriteCompaniesStatsStmt,
 		userFavoriteCompaniesUpsertStmt:                      q.userFavoriteCompaniesUpsertStmt,
@@ -519,6 +557,8 @@ func (q *Queries) WithTx(tx *sql.Tx) *Queries {
 		userFeatureWaitlistStatsStmt:                         q.userFeatureWaitlistStatsStmt,
 		userFeatureWaitlistStatsUpsertStmt:                   q.userFeatureWaitlistStatsUpsertStmt,
 		userFeatureWaitlistUpsertStmt:                        q.userFeatureWaitlistUpsertStmt,
+		userIndustryVisibilityOverrideHistoryNewStmt:         q.userIndustryVisibilityOverrideHistoryNewStmt,
+		userIndustryVisibilityOverrideUpsertStmt:             q.userIndustryVisibilityOverrideUpsertStmt,
 		userOnlineDailyCountStatsStmt:                        q.userOnlineDailyCountStatsStmt,
 		userOnlineDailyCountStatsUpsertStmt:                  q.userOnlineDailyCountStatsUpsertStmt,
 		userOnlineDailyStatsUpsertStmt:                       q.userOnlineDailyStatsUpsertStmt,
