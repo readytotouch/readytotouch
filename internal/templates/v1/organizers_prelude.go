@@ -51,7 +51,8 @@ type (
 		TotalFavorites     int64
 		LastMonthFavorites int64
 	}
-	Industry = domain.Industry
+	AliasName = domain.AliasName
+	Industry  = domain.Industry
 )
 
 type featureNavigation struct {
@@ -80,7 +81,15 @@ func toFeatureNavigation(path string) featureNavigation {
 	}
 }
 
-func aliases(source []Industry) string {
+func aliases(source []AliasName) string {
+	result := make([]string, len(source))
+	for i, v := range source {
+		result[i] = v.Alias
+	}
+	return strings.Join(result, ",")
+}
+
+func industryAliases(source []Industry) string {
 	result := make([]string, len(source))
 	for i, v := range source {
 		result[i] = v.Alias

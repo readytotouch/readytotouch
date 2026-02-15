@@ -61,6 +61,36 @@ func (q *Queries) UserCompanyVisibilityOverrideUpsert(ctx context.Context, arg U
 	return result.RowsAffected()
 }
 
+const userCompanyVisibilityOverrides = `-- name: UserCompanyVisibilityOverrides :many
+SELECT company_id
+FROM user_company_visibility_overrides
+WHERE user_id = $1
+  AND visibility = true
+`
+
+func (q *Queries) UserCompanyVisibilityOverrides(ctx context.Context, userID int64) ([]int64, error) {
+	rows, err := q.query(ctx, q.userCompanyVisibilityOverridesStmt, userCompanyVisibilityOverrides, userID)
+	if err != nil {
+		return nil, err
+	}
+	defer rows.Close()
+	var items []int64
+	for rows.Next() {
+		var company_id int64
+		if err := rows.Scan(&company_id); err != nil {
+			return nil, err
+		}
+		items = append(items, company_id)
+	}
+	if err := rows.Close(); err != nil {
+		return nil, err
+	}
+	if err := rows.Err(); err != nil {
+		return nil, err
+	}
+	return items, nil
+}
+
 const userIndustryVisibilityOverrideHistoryNew = `-- name: UserIndustryVisibilityOverrideHistoryNew :exec
 INSERT INTO user_industry_visibility_override_history (user_id, industry_id, visibility, created_at)
 VALUES ($1, $2, $3, $4)
@@ -110,4 +140,34 @@ func (q *Queries) UserIndustryVisibilityOverrideUpsert(ctx context.Context, arg 
 		return 0, err
 	}
 	return result.RowsAffected()
+}
+
+const userIndustryVisibilityOverrides = `-- name: UserIndustryVisibilityOverrides :many
+SELECT industry_id
+FROM user_industry_visibility_overrides
+WHERE user_id = $1
+  AND visibility = true
+`
+
+func (q *Queries) UserIndustryVisibilityOverrides(ctx context.Context, userID int64) ([]int64, error) {
+	rows, err := q.query(ctx, q.userIndustryVisibilityOverridesStmt, userIndustryVisibilityOverrides, userID)
+	if err != nil {
+		return nil, err
+	}
+	defer rows.Close()
+	var items []int64
+	for rows.Next() {
+		var industry_id int64
+		if err := rows.Scan(&industry_id); err != nil {
+			return nil, err
+		}
+		items = append(items, industry_id)
+	}
+	if err := rows.Close(); err != nil {
+		return nil, err
+	}
+	if err := rows.Err(); err != nil {
+		return nil, err
+	}
+	return items, nil
 }

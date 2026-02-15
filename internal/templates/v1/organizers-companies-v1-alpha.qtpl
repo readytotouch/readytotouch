@@ -245,7 +245,7 @@
                  data-company-id="{%dl company.ID %}"
                  data-company-name="{%s company.Name %}"
                  data-company-type="{%s string(company.Type) %}"
-                 data-company-industries="{%s aliases(company.Industries) %}"
+                 data-company-industries="{%s industryAliases(company.Industries) %}"
                  data-company-has-employees-from-countries="{%s aliases(company.HasEmployeesFromCountries) %}"
                  data-company-rust-foundation-members="{%s strconv.FormatBool(company.RustFoundationMember) %}"
                  data-company-remote="{%s strconv.FormatBool(company.Remote) %}"

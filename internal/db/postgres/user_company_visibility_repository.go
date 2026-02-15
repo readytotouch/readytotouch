@@ -45,3 +45,10 @@ func (r *UserCompanyVisibilityRepository) Upsert(
 		})
 	})
 }
+
+func (r *UserCompanyVisibilityRepository) List(
+	ctx context.Context,
+	userID int64,
+) ([]int64, error) {
+	return r.db.Queries().UserCompanyVisibilityOverrides(ctx, userID)
+}

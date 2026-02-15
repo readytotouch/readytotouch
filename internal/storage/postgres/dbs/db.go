@@ -66,6 +66,9 @@ func Prepare(ctx context.Context, db DBTX) (*Queries, error) {
 	if q.userCompanyVisibilityOverrideUpsertStmt, err = db.PrepareContext(ctx, userCompanyVisibilityOverrideUpsert); err != nil {
 		return nil, fmt.Errorf("error preparing query UserCompanyVisibilityOverrideUpsert: %w", err)
 	}
+	if q.userCompanyVisibilityOverridesStmt, err = db.PrepareContext(ctx, userCompanyVisibilityOverrides); err != nil {
+		return nil, fmt.Errorf("error preparing query UserCompanyVisibilityOverrides: %w", err)
+	}
 	if q.userFavoriteCompaniesStmt, err = db.PrepareContext(ctx, userFavoriteCompanies); err != nil {
 		return nil, fmt.Errorf("error preparing query UserFavoriteCompanies: %w", err)
 	}
@@ -101,6 +104,9 @@ func Prepare(ctx context.Context, db DBTX) (*Queries, error) {
 	}
 	if q.userIndustryVisibilityOverrideUpsertStmt, err = db.PrepareContext(ctx, userIndustryVisibilityOverrideUpsert); err != nil {
 		return nil, fmt.Errorf("error preparing query UserIndustryVisibilityOverrideUpsert: %w", err)
+	}
+	if q.userIndustryVisibilityOverridesStmt, err = db.PrepareContext(ctx, userIndustryVisibilityOverrides); err != nil {
+		return nil, fmt.Errorf("error preparing query UserIndustryVisibilityOverrides: %w", err)
 	}
 	if q.userOnlineDailyCountStatsStmt, err = db.PrepareContext(ctx, userOnlineDailyCountStats); err != nil {
 		return nil, fmt.Errorf("error preparing query UserOnlineDailyCountStats: %w", err)
@@ -252,6 +258,11 @@ func (q *Queries) Close() error {
 			err = fmt.Errorf("error closing userCompanyVisibilityOverrideUpsertStmt: %w", cerr)
 		}
 	}
+	if q.userCompanyVisibilityOverridesStmt != nil {
+		if cerr := q.userCompanyVisibilityOverridesStmt.Close(); cerr != nil {
+			err = fmt.Errorf("error closing userCompanyVisibilityOverridesStmt: %w", cerr)
+		}
+	}
 	if q.userFavoriteCompaniesStmt != nil {
 		if cerr := q.userFavoriteCompaniesStmt.Close(); cerr != nil {
 			err = fmt.Errorf("error closing userFavoriteCompaniesStmt: %w", cerr)
@@ -310,6 +321,11 @@ func (q *Queries) Close() error {
 	if q.userIndustryVisibilityOverrideUpsertStmt != nil {
 		if cerr := q.userIndustryVisibilityOverrideUpsertStmt.Close(); cerr != nil {
 			err = fmt.Errorf("error closing userIndustryVisibilityOverrideUpsertStmt: %w", cerr)
+		}
+	}
+	if q.userIndustryVisibilityOverridesStmt != nil {
+		if cerr := q.userIndustryVisibilityOverridesStmt.Close(); cerr != nil {
+			err = fmt.Errorf("error closing userIndustryVisibilityOverridesStmt: %w", cerr)
 		}
 	}
 	if q.userOnlineDailyCountStatsStmt != nil {
@@ -490,6 +506,7 @@ type Queries struct {
 	socialUserProfilesByUserStmt                         *sql.Stmt
 	userCompanyVisibilityOverrideHistoryNewStmt          *sql.Stmt
 	userCompanyVisibilityOverrideUpsertStmt              *sql.Stmt
+	userCompanyVisibilityOverridesStmt                   *sql.Stmt
 	userFavoriteCompaniesStmt                            *sql.Stmt
 	userFavoriteCompaniesStatsStmt                       *sql.Stmt
 	userFavoriteCompaniesUpsertStmt                      *sql.Stmt
@@ -502,6 +519,7 @@ type Queries struct {
 	userFeatureWaitlistUpsertStmt                        *sql.Stmt
 	userIndustryVisibilityOverrideHistoryNewStmt         *sql.Stmt
 	userIndustryVisibilityOverrideUpsertStmt             *sql.Stmt
+	userIndustryVisibilityOverridesStmt                  *sql.Stmt
 	userOnlineDailyCountStatsStmt                        *sql.Stmt
 	userOnlineDailyCountStatsUpsertStmt                  *sql.Stmt
 	userOnlineDailyStatsUpsertStmt                       *sql.Stmt
@@ -547,6 +565,7 @@ func (q *Queries) WithTx(tx *sql.Tx) *Queries {
 		socialUserProfilesByUserStmt:                         q.socialUserProfilesByUserStmt,
 		userCompanyVisibilityOverrideHistoryNewStmt:          q.userCompanyVisibilityOverrideHistoryNewStmt,
 		userCompanyVisibilityOverrideUpsertStmt:              q.userCompanyVisibilityOverrideUpsertStmt,
+		userCompanyVisibilityOverridesStmt:                   q.userCompanyVisibilityOverridesStmt,
 		userFavoriteCompaniesStmt:                            q.userFavoriteCompaniesStmt,
 		userFavoriteCompaniesStatsStmt:                       q.userFavoriteCompaniesStatsStmt,
 		userFavoriteCompaniesUpsertStmt:                      q.userFavoriteCompaniesUpsertStmt,
@@ -559,6 +578,7 @@ func (q *Queries) WithTx(tx *sql.Tx) *Queries {
 		userFeatureWaitlistUpsertStmt:                        q.userFeatureWaitlistUpsertStmt,
 		userIndustryVisibilityOverrideHistoryNewStmt:         q.userIndustryVisibilityOverrideHistoryNewStmt,
 		userIndustryVisibilityOverrideUpsertStmt:             q.userIndustryVisibilityOverrideUpsertStmt,
+		userIndustryVisibilityOverridesStmt:                  q.userIndustryVisibilityOverridesStmt,
 		userOnlineDailyCountStatsStmt:                        q.userOnlineDailyCountStatsStmt,
 		userOnlineDailyCountStatsUpsertStmt:                  q.userOnlineDailyCountStatsUpsertStmt,
 		userOnlineDailyStatsUpsertStmt:                       q.userOnlineDailyStatsUpsertStmt,
