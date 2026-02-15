@@ -56,16 +56,18 @@ func main() {
 	redisClient := redis.MustClient(context.Background(), "redis:6379")
 
 	var (
-		userRepository                  = postgres.NewUserRepository(database)
-		onlineRepository                = postgres.NewOnlineRepository(database)
-		userFeatureWaitlistRepository   = postgres.NewUserFeatureWaitlistRepository(database)
-		featureViewStatsRepository      = postgres.NewFeatureViewStatsRepository(database)
-		userFavoriteCompanyRepository   = postgres.NewUserFavoriteCompanyRepository(database)
-		userFavoriteVacancyRepository   = postgres.NewUserFavoriteVacancyRepository(database)
-		companyViewDailyStatsRepository = postgres.NewCompanyViewDailyStatsRepository(database)
-		vacancyViewStatsRepository      = postgres.NewVacancyViewStatsRepository(database)
-		userToLinkedInCompanyRepository = postgres.NewUserToLinkedInCompanyRepository(database)
-		githubRepositoryStarsRepository = postgres.NewGithubRepositoryStarsRepository(database)
+		userRepository                   = postgres.NewUserRepository(database)
+		onlineRepository                 = postgres.NewOnlineRepository(database)
+		userFeatureWaitlistRepository    = postgres.NewUserFeatureWaitlistRepository(database)
+		featureViewStatsRepository       = postgres.NewFeatureViewStatsRepository(database)
+		userFavoriteCompanyRepository    = postgres.NewUserFavoriteCompanyRepository(database)
+		userFavoriteVacancyRepository    = postgres.NewUserFavoriteVacancyRepository(database)
+		userCompanyVisibilityRepository  = postgres.NewUserCompanyVisibilityRepository(database)
+		userIndustryVisibilityRepository = postgres.NewUserIndustryVisibilityRepository(database)
+		companyViewDailyStatsRepository  = postgres.NewCompanyViewDailyStatsRepository(database)
+		vacancyViewStatsRepository       = postgres.NewVacancyViewStatsRepository(database)
+		userToLinkedInCompanyRepository  = postgres.NewUserToLinkedInCompanyRepository(database)
+		githubRepositoryStarsRepository  = postgres.NewGithubRepositoryStarsRepository(database)
 	)
 
 	var (
@@ -128,6 +130,8 @@ func main() {
 			featureViewStatsRepository,
 			userFavoriteCompanyRepository,
 			userFavoriteVacancyRepository,
+			userCompanyVisibilityRepository,
+			userIndustryVisibilityRepository,
 			companyViewDailyStatsRepository,
 			vacancyViewStatsRepository,
 			githubRepositoryStarsRepository,
@@ -401,6 +405,9 @@ func main() {
 	r.PATCH("/api/v1/companies/:company_id/favorite.json", organizerController.FavoriteCompany)
 	r.GET("/api/v1/companies/:company_id/views/stats/daily.json", organizerController.CompanyViewStats)
 	r.PATCH("/api/v1/vacancies/:vacancy_id/favorite.json", organizerController.FavoriteVacancy)
+
+	r.PATCH("/api/v1/companies/:company_id/visibility.json", organizerController.VisibilityCompany)
+	r.PATCH("/api/v1/industries/:industry_alias/visibility.json", organizerController.VisibilityIndustry)
 
 	r.
 		GET("/auth/github", authController.GithubRedirect).
