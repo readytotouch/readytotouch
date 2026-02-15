@@ -473,7 +473,7 @@
               <a href="https://github.com/{%s company.GitHubProfile.Login %}" target="_blank" class="button-link company-grid__links-link">Overview</a>
             </li>
             <li class="company-grid__links-item">
-              <a href="https://github.com/orgs/{%s company.GitHubProfile.Login %}/repositories?q=lang:{%s organizerFeature.Organizer.GitHubAlias %}" target="_blank" class="button-link company-grid__links-link">Repositories ({%d formatGitHubRepositoryCount(company, organizerFeature.Organizer.Language) %})</a>
+              <a href="https://github.com/orgs/{%s company.GitHubProfile.Login %}/repositories?q=lang:{%s organizerFeature.Organizer.GitHubAlias %}" target="_blank" class="button-link company-grid__links-link">Repositories ({%d company.GitHubRepositoryCount %})</a>
             </li>
             <li class="company-grid__links-item">
               <a href="https://github.com/orgs/{%s company.GitHubProfile.Login %}/followers" target="_blank" class="button-link company-grid__links-link">Followers ({%s formatGitHubFollowers(company) %})</a>

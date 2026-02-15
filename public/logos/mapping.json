@@ -252,6 +252,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "allianz-partners",
+    "source": "allianz-partners-100x100.png",
+    "destination": "allianz-partners.png",
+    "destination_72x72": "allianz-partners.png"
+  },
+  {
     "alias": "allocator-one",
     "source": "allocator-one-200x200.jpeg",
     "destination": "allocator-one.jpeg",
@@ -514,6 +520,12 @@
     "source": "armadaai-200x200.jpeg",
     "destination": "armadaai.jpeg",
     "destination_72x72": "armadaai.jpeg"
+  },
+  {
+    "alias": "array-io",
+    "source": "array-200x200.jpeg",
+    "destination": "array-io.jpeg",
+    "destination_72x72": "array-io.jpeg"
   },
   {
     "alias": "artificiallabs",
@@ -844,6 +856,12 @@
     "source": "bill-256x256.png",
     "destination": "bill.png",
     "destination_72x72": "bill.png"
+  },
+  {
+    "alias": "binance",
+    "source": "binance-200x200.png",
+    "destination": "binance.png",
+    "destination_72x72": "binance.png"
   },
   {
     "alias": "biocatch",
@@ -1836,6 +1854,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "delinea",
+    "source": "delinea-200x200.jpeg",
+    "destination": "delinea.jpeg",
+    "destination_72x72": "delinea.jpeg"
+  },
+  {
     "alias": "delivery-hero-se",
     "source": "delivery-hero-200x200.jpeg",
     "destination": "delivery-hero-se.jpeg",
@@ -2269,9 +2293,9 @@
   },
   {
     "alias": "eset",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "eset-200x200.jpeg",
+    "destination": "eset.jpeg",
+    "destination_72x72": "eset.jpeg"
   },
   {
     "alias": "eskimi",
@@ -2584,6 +2608,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "flybits",
+    "source": "flybits-180x180.png",
+    "destination": "flybits.png",
+    "destination_72x72": "flybits.png"
   },
   {
     "alias": "flyrinc",
@@ -3004,6 +3034,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "gridpoint",
+    "source": "gridpoint-180x180.webp",
+    "destination": "gridpoint.png",
+    "destination_72x72": "gridpoint.png"
   },
   {
     "alias": "gridx",
@@ -3660,6 +3696,12 @@
     "destination_72x72": "krakenfx.jpeg"
   },
   {
+    "alias": "krakentech",
+    "source": "krakentech-180x180.png",
+    "destination": "krakentech.png",
+    "destination_72x72": "krakentech.png"
+  },
+  {
     "alias": "kroger",
     "source": "kroger-200x200.jpeg",
     "destination": "kroger.jpeg",
@@ -3709,9 +3751,9 @@
   },
   {
     "alias": "lemfi",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "lemfi-200x200.jpeg",
+    "destination": "lemfi.jpeg",
+    "destination_72x72": "lemfi.jpeg"
   },
   {
     "alias": "lenovo",
@@ -3766,6 +3808,12 @@
     "source": "liebherr-180x180.png",
     "destination": "liebherr.png",
     "destination_72x72": "liebherr.png"
+  },
+  {
+    "alias": "lifeatemma",
+    "source": "lifeatemma-200x200.jpeg",
+    "destination": "lifeatemma.jpeg",
+    "destination_72x72": "lifeatemma.jpeg"
   },
   {
     "alias": "lifemote-networks",
@@ -3952,6 +4000,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "machinify",
+    "source": "machinify-180x180.png",
+    "destination": "machinify.png",
+    "destination_72x72": "machinify.png"
   },
   {
     "alias": "macquariegroup",
@@ -4188,6 +4242,12 @@
     "destination_72x72": "mirantis.jpeg"
   },
   {
+    "alias": "mirrorweb",
+    "source": "mirrorweb-200x200.jpeg",
+    "destination": "mirrorweb.jpeg",
+    "destination_72x72": "mirrorweb.jpeg"
+  },
+  {
     "alias": "mitratech",
     "source": "",
     "destination": "",
@@ -4248,6 +4308,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "monks",
+    "source": "monks-200x200.jpeg",
+    "destination": "monks.jpeg",
+    "destination_72x72": "monks.jpeg"
+  },
+  {
     "alias": "monumentalco",
     "source": "monumentalco-256x256.png",
     "destination": "monumentalco.png",
@@ -4285,6 +4351,12 @@
   },
   {
     "alias": "motive-inc",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
+  },
+  {
+    "alias": "motorinc",
     "source": "",
     "destination": "",
     "destination_72x72": ""
@@ -4512,6 +4584,12 @@
     "destination_72x72": "nfon.jpeg"
   },
   {
+    "alias": "ngvoice",
+    "source": "ngvoice-200x200.jpeg",
+    "destination": "ngvoice.jpeg",
+    "destination_72x72": "ngvoice.jpeg"
+  },
+  {
     "alias": "nice-systems",
     "source": "nice-systems-64x64.png",
     "destination": "nice-systems.png",
@@ -4602,6 +4680,12 @@
     "destination_72x72": "nordsecurity.jpeg"
   },
   {
+    "alias": "nosto",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
+  },
+  {
     "alias": "notablesystems",
     "source": "",
     "destination": "",
@@ -4666,6 +4750,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "ocrolus",
+    "source": "ocrolus-200x200.jpeg",
+    "destination": "ocrolus.jpeg",
+    "destination_72x72": "ocrolus.jpeg"
   },
   {
     "alias": "octopusmoney",
@@ -5508,6 +5598,12 @@
     "destination_72x72": "rapid7.jpeg"
   },
   {
+    "alias": "rapidfort",
+    "source": "rapidfort-256x256.png",
+    "destination": "rapidfort.png",
+    "destination_72x72": "rapidfort.png"
+  },
+  {
     "alias": "rbc",
     "source": "",
     "destination": "",
@@ -5845,9 +5941,9 @@
   },
   {
     "alias": "sas",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "sas-200x200.jpeg",
+    "destination": "sas.jpeg",
+    "destination_72x72": "sas.jpeg"
   },
   {
     "alias": "sawitpro",
@@ -5998,6 +6094,12 @@
     "source": "sentione-200x200.jpeg",
     "destination": "sentione.jpeg",
     "destination_72x72": "sentione.jpeg"
+  },
+  {
+    "alias": "servicenow",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "severalnines",
@@ -6244,6 +6346,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "soundtrackio",
+    "source": "soundtrackio-192x192.png",
+    "destination": "soundtrackio.png",
+    "destination_72x72": "soundtrackio.png"
   },
   {
     "alias": "sourcegraph",
@@ -6586,6 +6694,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "synamedia",
+    "source": "synamedia-180x180.webp",
+    "destination": "synamedia.png",
+    "destination_72x72": "synamedia.png"
   },
   {
     "alias": "synctera",
@@ -7032,6 +7146,12 @@
     "destination_72x72": "track24.jpeg"
   },
   {
+    "alias": "trade-republic",
+    "source": "trade-republic-200x200.jpeg",
+    "destination": "trade-republic.jpeg",
+    "destination_72x72": "trade-republic.jpeg"
+  },
+  {
     "alias": "tradevestgmbh",
     "source": "",
     "destination": "",
@@ -7386,6 +7506,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "viavi-solutions",
+    "source": "viavisolutions-180x180.png",
+    "destination": "viavi-solutions.png",
+    "destination_72x72": "viavi-solutions.png"
+  },
+  {
     "alias": "victoriametrics",
     "source": "",
     "destination": "",
@@ -7620,6 +7746,12 @@
     "destination_72x72": "wellrewarded.jpeg"
   },
   {
+    "alias": "wellsfargo",
+    "source": "wellsfargo-180x180.webp",
+    "destination": "wellsfargo.png",
+    "destination_72x72": "wellsfargo.png"
+  },
+  {
     "alias": "wexinc",
     "source": "wexinc-200x200.jpeg",
     "destination": "wexinc.jpeg",
@@ -7674,6 +7806,12 @@
     "destination_72x72": "wix-com.jpeg"
   },
   {
+    "alias": "wmg-international",
+    "source": "wmg-international-200x200.jpeg",
+    "destination": "wmg-international.jpeg",
+    "destination_72x72": "wmg-international.jpeg"
+  },
+  {
     "alias": "wolt-oy",
     "source": "wolt-200x200.jpeg",
     "destination": "wolt-oy.jpeg",
@@ -7720,6 +7858,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "worldquant",
+    "source": "worldquant-200x200.jpeg",
+    "destination": "worldquant.jpeg",
+    "destination_72x72": "worldquant.jpeg"
   },
   {
     "alias": "worldtechit",

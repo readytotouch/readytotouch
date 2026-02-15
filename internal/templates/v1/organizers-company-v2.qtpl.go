@@ -457,7 +457,7 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 		qw422016.N().S(`/repositories?q=lang:`)
 		qw422016.E().S(organizerFeature.Organizer.GitHubAlias)
 		qw422016.N().S(`" target="_blank" class="button-link card__links-link">Repositories (`)
-		qw422016.N().D(formatGitHubRepositoryCount(company, organizerFeature.Organizer.Language))
+		qw422016.N().D(company.GitHubRepositoryCount)
 		qw422016.N().S(`)</a>
 			</li>
 			<li class="card__links-item">

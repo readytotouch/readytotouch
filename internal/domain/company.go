@@ -92,6 +92,7 @@ type LinkedInProfile struct {
 	Employees         string
 	AssociatedMembers string
 	Verified          bool
+	Date              time.Time
 }
 
 type LinkedInProfileShortResponse struct {
@@ -163,6 +164,7 @@ type CompanyResponse struct {
 	LatestVacancyDate         *time.Time               `json:"latest_vacancy_date"`
 	GitHubRepositoryCount     int                      `json:"github_repository_count"`
 	Favorite                  bool                     `json:"favorite"`
+	Hidden                    bool                     `json:"hidden"`
 }
 
 type VacancyCompanyLinkedInProfileResponse struct {
@@ -218,12 +220,14 @@ type VacancyResponse struct {
 	MonthlyViews     int64                    `json:"monthly_views"`
 	Company          CompanyReferenceResponse `json:"company"`
 	Favorite         bool                     `json:"favorite"`
+	Hidden           bool                     `json:"hidden"`
 }
 
 type GitHubProfile struct {
 	Login     string
 	Followers string
 	Verified  bool
+	Date      time.Time
 }
 
 type GlassdoorProfile struct {
@@ -298,6 +302,7 @@ type PreparedVacancy struct {
 type LanguageProfile struct {
 	GitHubRepositoryCount int
 	Vacancies             []Vacancy
+	PinnedUntil           time.Time
 }
 
 type CompanyLogo struct {
@@ -340,9 +345,10 @@ type CompanyProfile struct {
 	RustFoundationMember      bool // https://foundation.rust-lang.org/members/
 	Ignore                    bool
 	SyncSources               []CompanySyncSource
-	PinnedUntil               time.Time
-	Remote                    bool      // Mark "remote" if the company has at least one remote job
-	LatestVacancyDate         time.Time // Sort companies by latest vacancy date per technology
+	GitHubRepositoryCount     int       // Populated on the fly from the language profile
+	Remote                    bool      // Populated on the fly if at least one remote job exists in the language profile
+	LatestVacancyDate         time.Time // Populated on the fly from the language profile
+	PinnedUntil               time.Time // Populated on the fly from the language profile
 }
 
 type UnsafeCompaniesResponse struct {

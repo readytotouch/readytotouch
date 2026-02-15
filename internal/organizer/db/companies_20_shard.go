@@ -208,8 +208,9 @@ func companies20Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "mayflower-tech",
+				Followers: "15",
+				Verified:  false,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -1125,6 +1126,17 @@ func companies20Shard() []domain.CompanyProfile {
 							Location:             "Boston, MA",
 							Date:                 mustDate("2025-12-11", "2025-10-08", "2025-09-16", "2025-08-06"),
 							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Software Engineer (Scala, Spark)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4370131375/",
+							Location:             "Boston, MA",
+							CloudProviders:       []domain.CloudProvider{domain.AWS},
+							Date:                 mustDate("2026-02-08"),
+							WithSalary:           true, // $118.5k/yr - $142k/yr
 							Remote:               false,
 						},
 					},
@@ -2573,7 +2585,7 @@ func companies20Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4346107985/",
 							Location:             "Edinburgh, Scotland, United Kingdom",
-							Date:                 mustDate("2026-01-16", "2025-12-25"),
+							Date:                 mustDate("2026-02-06", "2026-01-16", "2025-12-25"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3506,7 +3518,7 @@ func companies20Shard() []domain.CompanyProfile {
 		{
 			ID:         0,  // system
 			Type:       "", // system
-			Name:       "Netcore Cloud",
+			Name:       "Netcore",
 			BaseURL:    "https://netcorecloud.com/",
 			CareersURL: "",
 			AboutURL:   "",
@@ -3515,7 +3527,7 @@ func companies20Shard() []domain.CompanyProfile {
 				ID:                31757,
 				IDs:               nil,
 				Alias:             "netcore-cloud",
-				Name:              "Netcore Cloud",
+				Name:              "Netcore",
 				Followers:         "168K",
 				Employees:         "1K-5K",
 				AssociatedMembers: "1,266",
@@ -3565,6 +3577,17 @@ func companies20Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4347018010/",
 							Location:             "Mumbai Metropolitan Region",
 							Date:                 mustDate("2025-11-22"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Back-End Developer- Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4370222893/",
+							Location:             "Mumbai, Maharashtra, India",
+							CloudProviders:       []domain.CloudProvider{domain.AWS},
+							Date:                 mustDate("2026-02-10"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -4382,6 +4405,17 @@ func companies20Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Software Engineer (Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4297658872/",
+							Location:             "Washington, DC",
+							CloudProviders:       []domain.CloudProvider{domain.AWS},
+							Date:                 mustDate("2026-02-07"),
+							WithSalary:           true, // $130.5k/yr - $171k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig: {
@@ -4443,7 +4477,15 @@ func companies20Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/LG-Ad-Solutions-Jobs-E6556153.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "3.1",
+				Verified:    true,
+				Date:        mustDate("2026-02-11"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -4585,6 +4627,17 @@ func companies20Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Golang Developerr",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4357557341/",
+							Location:             "Noida, Uttar Pradesh, India",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-03"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
@@ -4703,7 +4756,7 @@ func companies20Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4326520542/",
 							Location:             "London, England, United Kingdom",
-							Date:                 mustDate("2026-01-21", "2025-12-10"),
+							Date:                 mustDate("2026-02-11", "2026-01-21", "2025-12-10"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -5055,6 +5108,17 @@ func companies20Shard() []domain.CompanyProfile {
 							Location:             "London, England, United Kingdom",
 							Date:                 mustDate("2025-09-02"),
 							WithSalary:           true, // £55k/yr - £60k/yr
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4371534937/",
+							Location:             "London, England, United Kingdom",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-13"),
+							WithSalary:           false,
 							Remote:               false,
 						},
 					},

@@ -605,7 +605,7 @@ func companies19Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4250646664/",
 							Location:             "San Jose, CA",
-							Date:                 mustDate("2026-01-20", "2025-12-08", "2025-11-17", "2025-10-27", "2025-10-06", "2025-09-14", "2025-08-23", "2025-08-02", "2025-07-10", "2025-06-23"),
+							Date:                 mustDate("2026-02-10", "2026-01-20", "2025-12-08", "2025-11-17", "2025-10-27", "2025-10-06", "2025-09-14", "2025-08-23", "2025-08-02", "2025-07-10", "2025-06-23"),
 							WithSalary:           true, // $150k/yr - $175k/yr
 							Remote:               false,
 						},
@@ -805,7 +805,29 @@ func companies19Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoryCount: 0,
-					Vacancies:             []domain.Vacancy{},
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer – Go",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4315346445/",
+							Location:             "London, England, United Kingdom",
+							Date:                 mustDate("2025-11-29", "2025-11-07"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Software Engineer – Go",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4369661632/",
+							Location:             "London, England, United Kingdom",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-06"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
 				},
 				domain.Rust: {
 					GitHubRepositoryCount: 0,
@@ -838,12 +860,13 @@ func companies19Shard() []domain.CompanyProfile {
 							Remote:               false,
 						},
 						{
-							Title:                "Software Engineer – Go",
+							Title:                "Data Engineer – Scala",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
-							URL:                  "https://www.linkedin.com/jobs/view/4315346445/",
-							Location:             "London, England, United Kingdom",
-							Date:                 mustDate("2025-11-29", "2025-11-07"),
+							URL:                  "https://www.linkedin.com/jobs/view/4336058139/",
+							Location:             "Hyderabad, Telangana, India",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-07"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3500,6 +3523,17 @@ func companies19Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Go Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4357429081/",
+							Location:             "Montreal, QC",
+							CloudProviders:       []domain.CloudProvider{domain.GCP},
+							Date:                 mustDate("2026-02-03"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust: {
@@ -5429,6 +5463,17 @@ func companies19Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Staff Backend Software Engineer (Elixir)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4363900055/",
+							Location:             "San Francisco Bay Area",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-11"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Clojure: {
@@ -5833,11 +5878,56 @@ func companies19Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $152k/yr - $287.5k/yr
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Systems Software Engineer – Rust, Go, C++",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4368893791/",
+							Location:             "Santa Clara, CA",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-05"),
+							WithSalary:           true, // $152k/yr - $287.5k/yr
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Systems Software Engineer – Rust, Go, C++",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4365194458/",
+							Location:             "United States",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-13"),
+							WithSalary:           true, // $152k/yr - $287.5k/yr
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust: {
 					GitHubRepositoryCount: 4,
-					Vacancies:             []domain.Vacancy{},
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Systems Software Engineer – Rust, Go, C++",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4368893791/",
+							Location:             "Santa Clara, CA",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-05"),
+							WithSalary:           true, // $152k/yr - $287.5k/yr
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Systems Software Engineer – Rust, Go, C++",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4365194458/",
+							Location:             "United States",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-13"),
+							WithSalary:           true, // $152k/yr - $287.5k/yr
+							Remote:               true,
+						},
+					},
 				},
 				domain.Zig: {
 					GitHubRepositoryCount: 0,
@@ -6027,6 +6117,17 @@ func companies19Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4306851124/",
 							Location:             "Palo Alto, CA",
 							Date:                 mustDate("2025-11-29", "2025-11-09", "2025-10-19", "2025-09-28"),
+							WithSalary:           true, // $180k/yr - $440k/yr
+							Remote:               false,
+						},
+						{
+							Title:                "Rust/C++ Backend Engineer",
+							ShortDescription:     "Enterprise",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4370152136/",
+							Location:             "Palo Alto, CA",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-08"),
 							WithSalary:           true, // $180k/yr - $440k/yr
 							Remote:               false,
 						},

@@ -46,7 +46,7 @@ var (
 		"digitalocean":                        27,   // DigitalOcean
 		"canonical":                           28,   // Canonical
 		"suse":                                261,  // SUSE
-		"konghq":                              29,   // Kong Inc.
+		"konghq":                              29,   // Kong
 		"exasol-ag":                           30,   // Exasol
 		"palantir-technologies":               31,   // Palantir Technologies
 		"bufbuild":                            178,  // Buf
@@ -222,7 +222,7 @@ var (
 		"dronesense":                          204,  // DroneSense, Inc.
 		"zurich-instruments-ag":               205,  // Zurich Instruments
 		"palo-alto-networks":                  206,  // Palo Alto Networks
-		"scitecinc":                           207,  // SciTec, Inc.
+		"scitecinc":                           207,  // SciTec
 		"stack-x-me":                          208,  // Stackx.me
 		"the-walt-disney-company":             209,  // The Walt Disney Company
 		"materialise":                         210,  // Materialise
@@ -691,6 +691,7 @@ var (
 		"future-research-inc":                 689,  // Future
 		"los-alamos-national-laboratory":      690,  // Los Alamos National Laboratory
 		"volkswagen-digital-solutions":        691,  // Volkswagen Digital Solutions
+		"binance":                             1333, // Binance
 		"optableco":                           692,  // Optable
 		"scaleops-sh":                         693,  // ScaleOps - Cloud-Native Optimization
 		"zenport":                             694,  // Zenport Inc.
@@ -1138,7 +1139,7 @@ var (
 		"entrust":                             1134, // Entrust
 		"yolcu-360":                           1135, // Yolcu360
 		"leaseweb":                            1136, // Leaseweb
-		"netcore-cloud":                       1137, // Netcore Cloud
+		"netcore-cloud":                       1137, // Netcore
 		"fluidcloud":                          1138, // FluidCloud
 		"ifood-":                              1139, // iFood
 		"amplifiloyalty":                      1140, // ampliFI Loyalty Solutions
@@ -1328,6 +1329,30 @@ var (
 		"sentione":                            1323, // SentiOne
 		"pulsar-crypto":                       1324, // Pulsar
 		"paribucom":                           1330, // Paribu
+		"bitgo":                               1331, // BitGo
+		"flybits":                             1332, // Flybits
+		"worldquant":                          1334, // WorldQuant
+		"delinea":                             1335, // Delinea
+		"monks":                               1336, // Monks
+		"motorinc":                            1337, // MotorInc
+		"ngvoice":                             1338, // ng-voice
+		"soundtrackio":                        1339, // Soundtrack
+		"krakentech":                          1340, // Kraken
+		"servicenow":                          1341, // ServiceNow
+		"allianz-partners":                    1342, // Allianz Partners
+		"wmg-international":                   1343, // adWMG
+		"array-io":                            1344, // Array
+		"lifeatemma":                          1345, // Emma – The Sleep Company
+		"rapidfort":                           1346, // RAPIDFORT
+		"nosto":                               1347, // Nosto
+		"gridpoint":                           1348, // GridPoint
+		"viavi-solutions":                     1349, // VIAVI Solutions
+		"machinify":                           1350, // Machinify
+		"synamedia":                           1351, // Synamedia
+		"ocrolus":                             1352, // Ocrolus
+		"mirrorweb":                           1353, // MirrorWeb
+		"wellsfargo":                          1354, // Wells Fargo
+		"trade-republic":                      1355, // Trade Republic
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

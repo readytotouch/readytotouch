@@ -6,7 +6,8 @@ document.body.addEventListener("keydown", (event) => {
     if (event.ctrlKey && event.shiftKey && (event.key === "Y" || event.key === "Н")) {
         const goLinkedInProfileColumns = `				Login:     "${parseVanityName(window.location.href)}",
 				Followers: "${followers()}",
-				Verified:  ${document.querySelectorAll('summary[title="Label: Verified"]').length > 0 ? "true" : "false"},`
+				Verified:  ${document.querySelectorAll('summary[title="Label: Verified"]').length > 0 ? "true" : "false"},
+				Date:      mustDate("${githubProfileUpdatedDate()}"),`
 
         navigator.clipboard.writeText(goLinkedInProfileColumns)
             .then(() => console.log("Page info copied to clipboard:", goLinkedInProfileColumns))
@@ -54,4 +55,8 @@ function followers() {
     }
 
     return "";
+}
+
+function githubProfileUpdatedDate() {
+    return new Intl.DateTimeFormat("en-CA").format(new Date());
 }

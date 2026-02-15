@@ -346,7 +346,7 @@ func companies11Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4360700114/",
 							Location:             "Sydney, New South Wales, Australia",
 							CloudProviders:       []domain.CloudProvider{domain.AWS, domain.GCP},
-							Date:                 mustDate("2026-01-13"),
+							Date:                 mustDate("2026-02-03", "2026-01-13"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -943,8 +943,10 @@ func companies11Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "jetbrains",
-				Verified: true,
+				Login:     "jetbrains",
+				Followers: "12.4k",
+				Verified:  true,
+				Date:      mustDate("2026-02-11"),
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "jetbrains",
@@ -974,7 +976,7 @@ func companies11Shard() []domain.CompanyProfile {
 			YouTubeChannelURL: "",
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoryCount: 0,
+					GitHubRepositoryCount: 12,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Go Developer",
@@ -999,16 +1001,27 @@ func companies11Shard() []domain.CompanyProfile {
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoryCount: 2,
+					GitHubRepositoryCount: 5,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "JetBrains Rust Developer Advocate",
+							Title:                "Rust Developer Advocate",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4354123960/",
 							Location:             "Boston, MA",
 							CloudProviders:       []domain.CloudProvider{},
 							Date:                 mustDate("2026-01-20"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Rust Developer Advocate",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4360555786/",
+							Location:             "Boston, MA",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-06"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -1349,7 +1362,7 @@ func companies11Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4295926435/",
 							Location:             "Berlin, Berlin, Germany",
-							Date:                 mustDate("2026-01-12", "2025-12-21"),
+							Date:                 mustDate("2026-02-06", "2026-01-12", "2025-12-21"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -1439,6 +1452,17 @@ func companies11Shard() []domain.CompanyProfile {
 							Date:                 mustDate("2026-01-29"),
 							WithSalary:           true, // $160k/yr - $200k/yr
 							Remote:               true,
+						},
+						{
+							Title:                "Back-End Scala Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4311120216/",
+							Location:             "New York, NY",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-11"),
+							WithSalary:           true, // $130k/yr - $170k/yr
+							Remote:               false,
 						},
 					},
 				},
@@ -1633,6 +1657,17 @@ func companies11Shard() []domain.CompanyProfile {
 							CloudProviders:       []domain.CloudProvider{},
 							Date:                 mustDate("2026-01-29"),
 							WithSalary:           true, // $119k/yr - $197.6k/yr
+							Remote:               false,
+						},
+						{
+							Title:                "Software Development Engineer II – Scala",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4368797197/",
+							Location:             "Redlands, CA",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-06"),
+							WithSalary:           true, // $97.8k/yr - $163.3k/yr
 							Remote:               false,
 						},
 					},
@@ -2081,7 +2116,7 @@ func companies11Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4313441005/",
 							Location:             "Jersey City, NJ",
-							Date:                 mustDate("2026-01-22", "2025-12-10", "2025-12-02", "2025-11-23", "2025-11-02"),
+							Date:                 mustDate("2026-02-13", "2026-01-22", "2025-12-10", "2025-12-02", "2025-11-23", "2025-11-02"),
 							WithSalary:           true, // $107k/yr - $216k/yr
 							Remote:               false,
 						},
@@ -2092,7 +2127,7 @@ func companies11Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4363833690/",
 							Location:             "Jersey City, NJ",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-01-18"),
+							Date:                 mustDate("2026-02-08", "2026-01-18"),
 							WithSalary:           true, // $107k/yr - $216k/yr
 							Remote:               false,
 						},
@@ -3001,17 +3036,18 @@ func companies11Shard() []domain.CompanyProfile {
 			Name:       "Teramind",
 			BaseURL:    "https://www.teramind.co/",
 			CareersURL: "",
-			AboutURL:   "",
+			AboutURL:   "https://www.teramind.co/company/about/",
 			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                5090184,
 				IDs:               nil,
 				Alias:             "teramindco",
 				Name:              "Teramind",
-				Followers:         "60K",
+				Followers:         "93K",
 				Employees:         "51-200",
-				AssociatedMembers: "161",
-				Verified:          false,
+				AssociatedMembers: "193",
+				Verified:          true,
+				Date:              mustDate("2026-02-15"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -3136,6 +3172,17 @@ func companies11Shard() []domain.CompanyProfile {
 							Location:             "Tallinn, Harjumaa, Estonia",
 							CloudProviders:       []domain.CloudProvider{},
 							Date:                 mustDate("2026-01-25"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+						{
+							Title:                "Principal Golang Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4363271891/",
+							Location:             "Romania",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-12"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -3411,8 +3458,10 @@ func companies11Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "crypto-com",
+				Followers: "237",
+				Verified:  true,
+				Date:      mustDate("2026-02-11"),
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -3421,14 +3470,22 @@ func companies11Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Crypto-com-Jobs-E1984553.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "3.3",
+				Verified:    true,
+				Date:        mustDate("2026-02-04"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoryCount: 0,
+					GitHubRepositoryCount: 4,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Developer (Golang)",
@@ -3441,10 +3498,21 @@ func companies11Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4310267841/",
+							Location:             "Singapore, Singapore",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-14"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
-					GitHubRepositoryCount: 0,
+					GitHubRepositoryCount: 27,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Rust Engineer",
@@ -3454,6 +3522,17 @@ func companies11Shard() []domain.CompanyProfile {
 							Location:             "Dublin, County Dublin, Ireland",
 							CloudProviders:       []domain.CloudProvider{},
 							Date:                 mustDate("2026-01-28"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Rust Engineer / Blockchain Security Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4368943576/",
+							Location:             "Budapest, Hungary",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-06"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3659,10 +3738,11 @@ func companies11Shard() []domain.CompanyProfile {
 				IDs:               nil,
 				Alias:             "commercetools",
 				Name:              "commercetools",
-				Followers:         "41K",
+				Followers:         "46K",
 				Employees:         "501-1K",
-				AssociatedMembers: "696",
+				AssociatedMembers: "626",
 				Verified:          true,
+				Date:              mustDate("2026-02-11"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:     "commercetools",
@@ -3803,6 +3883,17 @@ func companies11Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Backend Engineer – Scala",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4370379648/",
+							Location:             "Valencia, Valencian Community, Spain",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-10"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Elixir:  {},
@@ -3810,6 +3901,9 @@ func companies11Shard() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Composable commerce",
+			Industries: []domain.Industry{
+				domain.IndustryECommerce,
+			},
 		},
 		{
 			ID:         0,  // system
@@ -4029,6 +4123,17 @@ func companies11Shard() []domain.CompanyProfile {
 							Location:             "Linthicum Heights, MD",
 							CloudProviders:       []domain.CloudProvider{},
 							Date:                 mustDate("2026-01-30"),
+							WithSalary:           true, // $111.5k/yr - $208k/yr
+							Remote:               false,
+						},
+						{
+							Title:                "Embedded Software Engineer – Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4371841074/",
+							Location:             "Tampa, FL",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-13"),
 							WithSalary:           true, // $111.5k/yr - $208k/yr
 							Remote:               false,
 						},
@@ -4685,22 +4790,23 @@ func companies11Shard() []domain.CompanyProfile {
 			Type:       "", // system
 			Name:       "Binance",
 			BaseURL:    "https://www.binance.com/",
-			CareersURL: "",
-			AboutURL:   "",
+			CareersURL: "https://www.binance.com/careers",
+			AboutURL:   "https://www.binance.com/about",
 			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                13336409,
-				IDs:               nil,
+				IDs:               []int{13336409, 106937759},
 				Alias:             "binance",
 				Name:              "Binance",
-				Followers:         "824K",
+				Followers:         "999K",
 				Employees:         "5K-10K",
-				AssociatedMembers: "10,428",
+				AssociatedMembers: "13,799",
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "binance",
+				Followers: "2.8k",
+				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -4709,14 +4815,22 @@ func companies11Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Binance-Jobs-E1816824.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "4.0",
+				Verified:    true,
+				Date:        mustDate("2026-02-04"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoryCount: 0,
+					GitHubRepositoryCount: 3,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Golang Developer",
@@ -4737,6 +4851,28 @@ func companies11Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4328158327/",
+							Location:             "Singapore, Singapore",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-01"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+						{
+							Title:                "Golang Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4326149568/",
+							Location:             "Hanoi, Hanoi, Vietnam",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-10"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -4747,7 +4883,9 @@ func companies11Shard() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Digital Asset Exchange",
-			Ignore:           true, // Cryptocurrency
+			Industries: []domain.Industry{
+				domain.IndustryCryptoCurrency,
+			},
 		},
 		{
 			ID:         0,  // system
@@ -5256,7 +5394,7 @@ func companies11Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4359212674/",
 							Location:             "Berlin, Berlin, Germany",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-01-16"),
+							Date:                 mustDate("2026-02-07", "2026-01-16"),
 							WithSalary:           false,
 							Remote:               false,
 						},
