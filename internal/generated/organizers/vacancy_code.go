@@ -3363,6 +3363,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4231817942/":                                                               1918, // lego-group
 		"https://www.linkedin.com/jobs/view/4233764933/":                                                               2095, // lego-group
 		"https://www.linkedin.com/jobs/view/4219049156/":                                                               1919, // deutsche-bank
+		"https://www.linkedin.com/jobs/view/4373875281/":                                                               4110, // deutsche-bank
 		"https://www.linkedin.com/jobs/view/4229279528/":                                                               1920, // tenstorrent-inc.
 		"https://www.linkedin.com/jobs/view/4219347502/":                                                               1921, // promon-as
 		"https://www.linkedin.com/jobs/view/4233145765/":                                                               1922, // csidedev
@@ -4105,6 +4106,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4371181676/":                                                               4107, // mirrorweb
 		"https://www.linkedin.com/jobs/view/4372242028/":                                                               4108, // wellsfargo
 		"https://www.linkedin.com/jobs/view/4372008252/":                                                               4109, // trade-republic
+		"https://www.linkedin.com/jobs/view/4364708193/":                                                               4111, // arkeus-sensors
 		"https://www.linkedin.com/jobs/view/3914839625/":                                                               372,  // cognizant
 		"https://www.linkedin.com/jobs/view/4120737001/":                                                               600,  // cognizant
 		"https://www.linkedin.com/jobs/view/4149258542/":                                                               787,  // cognizant

@@ -510,6 +510,12 @@
     "destination_72x72": "arista-networks-inc.jpeg"
   },
   {
+    "alias": "arkeus-sensors",
+    "source": "arkeus-256x256.png",
+    "destination": "arkeus-sensors.png",
+    "destination_72x72": "arkeus-sensors.png"
+  },
+  {
     "alias": "arm",
     "source": "arm-200x200.jpeg",
     "destination": "arm.jpeg",

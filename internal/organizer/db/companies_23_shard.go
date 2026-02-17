@@ -5713,5 +5713,91 @@ func companies23Shard() []domain.CompanyProfile {
 				domain.IndustryFinTech,
 			},
 		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Arkeus",
+			BaseURL:    "https://arkeus.com/",
+			CareersURL: "https://arkeus.com/careers",
+			AboutURL:   "https://arkeus.com/who-we-are",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                42907079,
+				IDs:               nil,
+				Alias:             "arkeus-sensors",
+				Name:              "Arkeus",
+				Followers:         "7K",
+				Employees:         "11-50",
+				AssociatedMembers: "57",
+				Verified:          false,
+				Date:              mustDate("2026-02-17"),
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer (Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4364708193/",
+							Location:             "Port Melbourne, Victoria, Australia",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-17"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Arkeus wide area autonomous optical search and surveillance systems",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
 	}
 }

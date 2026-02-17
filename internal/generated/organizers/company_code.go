@@ -1353,6 +1353,7 @@ var (
 		"mirrorweb":                           1353, // MirrorWeb
 		"wellsfargo":                          1354, // Wells Fargo
 		"trade-republic":                      1355, // Trade Republic
+		"arkeus-sensors":                      1356, // Arkeus
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

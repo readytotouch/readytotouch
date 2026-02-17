@@ -89,6 +89,7 @@ var (
 		"arfdlaw":                             "",
 		"argela-technologies":                 "",
 		"arista-networks-inc":                 "arista-networks-inc.jpeg",
+		"arkeus-sensors":                      "arkeus-sensors.png",
 		"arm":                                 "arm.jpeg",
 		"armadaai":                            "armadaai.jpeg",
 		"array-io":                            "array-io.jpeg",
