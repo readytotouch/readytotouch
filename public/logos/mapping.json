@@ -2742,6 +2742,12 @@
     "destination_72x72": "fresh-clinics.jpeg"
   },
   {
+    "alias": "ftapi-software-gmbh",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
+  },
+  {
     "alias": "fubotv",
     "source": "",
     "destination": "",
@@ -2782,6 +2788,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "fxcintelligence",
+    "source": "fxcintelligence-256x256.png",
+    "destination": "fxcintelligence.png",
+    "destination_72x72": "fxcintelligence.png"
   },
   {
     "alias": "g-core",
@@ -6120,6 +6132,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "shopfully",
+    "source": "shopfully-200x200.jpeg",
+    "destination": "shopfully.jpeg",
+    "destination_72x72": "shopfully.jpeg"
+  },
+  {
     "alias": "shopify",
     "source": "shopify-120x120.png",
     "destination": "shopify.png",
@@ -7188,7 +7206,7 @@
     "destination_72x72": ""
   },
   {
-    "alias": "trend-micro",
+    "alias": "trendai-security",
     "source": "trend-micro-200x200.jpeg",
     "destination": "trend-micro.jpeg",
     "destination_72x72": "trend-micro.jpeg"

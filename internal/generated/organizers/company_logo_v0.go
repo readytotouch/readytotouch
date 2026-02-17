@@ -409,7 +409,7 @@ var (
 		"tomtom":                             "tomtom.png",
 		"top-doctors-europe":                 "topdoctors.png",
 		"transition-technologies-psc":        "transition.png",
-		"trend-micro":                        "trend-micro.png",
+		"trendai-security":                   "trend-micro.png",
 		"trustingsocial":                     "trustingsocial.png",
 		"tucows":                             "tucows.png",
 		"twosixtechnologies":                 "twosix-tech.png",

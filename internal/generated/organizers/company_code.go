@@ -527,7 +527,7 @@ var (
 		"thousandeyes":                        519,  // Cisco ThousandEyes
 		"us-bank":                             520,  // U.S. Bank
 		"netapp":                              521,  // NetApp
-		"trend-micro":                         522,  // Trend Micro
+		"trendai-security":                    522,  // TrendAI
 		"centralretail":                       523,  // Central Retail
 		"kargo":                               524,  // Kargo
 		"salesloft":                           525,  // Salesloft
@@ -1354,6 +1354,9 @@ var (
 		"wellsfargo":                          1354, // Wells Fargo
 		"trade-republic":                      1355, // Trade Republic
 		"arkeus-sensors":                      1356, // Arkeus
+		"ftapi-software-gmbh":                 1357, // FTAPI
+		"shopfully":                           1358, // Shopfully
+		"fxcintelligence":                     1359, // FXC Intelligence
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

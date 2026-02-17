@@ -7174,6 +7174,17 @@ func companies07Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $80k/yr - $215k/yr
 							Remote:               false,
 						},
+						{
+							Title:                "Staff Software Engineer (Java, Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4321313516/",
+							Location:             "Palo Alto, CA",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-16"),
+							WithSalary:           true, // $105k/yr - $230k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},

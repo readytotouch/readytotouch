@@ -6373,7 +6373,7 @@ func companies21Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4312301338/",
 							Location:             "Aarhus, Central Denmark Region, Denmark",
-							Date:                 mustDate("2026-01-25", "2025-12-13", "2025-11-20", "2025-10-08"),
+							Date:                 mustDate("2026-02-16"), //  mustDate("2026-01-25", "2025-12-13", "2025-11-20", "2025-10-08"),
 							WithSalary:           false,
 							Remote:               false,
 						},

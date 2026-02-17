@@ -6025,6 +6025,17 @@ func companies01Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Principal Software Engineer (Golang, gRPC)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4371928646/",
+							Location:             "Pune, Maharashtra, India",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-17"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
