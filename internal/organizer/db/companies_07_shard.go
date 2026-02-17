@@ -81,7 +81,7 @@ func companies07Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4254632356/",
 							Location:             "Tel Aviv-Yafo, Tel Aviv District, Israel",
-							Date:                 mustDate("2026-01-25", "2025-12-14", "2025-11-22", "2025-09-16", "2025-08-25", "2025-08-04", "2025-07-15"),
+							Date:                 mustDate("2026-02-16"), // mustDate("2026-01-25", "2025-12-14", "2025-11-22", "2025-09-16", "2025-08-25", "2025-08-04", "2025-07-15"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -7172,6 +7172,17 @@ func companies07Shard() []domain.CompanyProfile {
 							Location:             "Seattle, WA",
 							Date:                 mustDate("2025-11-25"),
 							WithSalary:           true, // $80k/yr - $215k/yr
+							Remote:               false,
+						},
+						{
+							Title:                "Staff Software Engineer (Java, Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4321313516/",
+							Location:             "Palo Alto, CA",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-16"),
+							WithSalary:           true, // $105k/yr - $230k/yr
 							Remote:               false,
 						},
 					},

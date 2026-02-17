@@ -246,6 +246,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4299554984/":                                                               2929, // mastercard
 		"https://www.linkedin.com/jobs/view/4341893433/":                                                               3441, // mastercard
 		"https://www.linkedin.com/jobs/view/4352994230/":                                                               3790, // mastercard
+		"https://www.linkedin.com/jobs/view/4371928646/":                                                               4112, // mastercard
 		"https://www.linkedin.com/jobs/view/4262536910/":                                                               2341, // mastercard
 		"https://www.linkedin.com/jobs/view/4241899518/":                                                               1963, // mastercard
 		"https://www.linkedin.com/jobs/view/4180270535/":                                                               2167, // mastercard
@@ -1117,6 +1118,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4248253090/":                                                               2448, // aquasecteam
 		"https://www.linkedin.com/jobs/view/4280126046/":                                                               3008, // aquasecteam
 		"https://www.linkedin.com/jobs/view/4364069224/":                                                               3865, // aquasecteam
+		"https://www.linkedin.com/jobs/view/4368174805/":                                                               4113, // aquasecteam
 		"https://www.linkedin.com/jobs/view/4015809270/":                                                               482,  // verve-ad-solutions
 		"https://www.linkedin.com/jobs/view/4209824959/":                                                               1557, // verve-ad-solutions
 		"https://www.linkedin.com/jobs/view/4267689110/":                                                               2430, // verve-ad-solutions
@@ -1773,6 +1775,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4133418996/":                                                               741,  // geico
 		"https://www.linkedin.com/jobs/view/4133422642/":                                                               742,  // geico
 		"https://www.linkedin.com/jobs/view/4324461000/":                                                               3490, // geico
+		"https://www.linkedin.com/jobs/view/4321313516/":                                                               4114, // geico
 		"https://www.linkedin.com/jobs/view/4025870710/":                                                               120,  // inviatravelgermany
 		"https://www.linkedin.com/jobs/view/4156154054/":                                                               877,  // inviatravelgermany
 		"https://www.linkedin.com/jobs/view/4176950668/":                                                               1078, // inviatravelgermany
@@ -2103,9 +2106,9 @@ var (
 		"https://www.linkedin.com/jobs/view/4347150039/":                                                               3649, // netapp
 		"https://www.linkedin.com/jobs/view/4347808251/":                                                               3761, // netapp
 		"https://www.linkedin.com/jobs/view/4362290586/":                                                               4047, // netapp
-		"https://www.linkedin.com/jobs/view/4063567336/":                                                               197,  // trend-micro
-		"https://www.linkedin.com/jobs/view/4226880347/":                                                               1896, // trend-micro
-		"https://www.linkedin.com/jobs/view/4226881351/":                                                               2454, // trend-micro
+		"https://www.linkedin.com/jobs/view/4063567336/":                                                               197,  // trendai-security
+		"https://www.linkedin.com/jobs/view/4226880347/":                                                               1896, // trendai-security
+		"https://www.linkedin.com/jobs/view/4226881351/":                                                               2454, // trendai-security
 		"https://www.linkedin.com/jobs/view/4093163873/":                                                               198,  // centralretail
 		"https://www.linkedin.com/jobs/view/4133877020/":                                                               745,  // centralretail
 		"https://www.linkedin.com/jobs/view/4089015041/":                                                               199,  // kargo
@@ -2264,6 +2267,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4364951444/":                                                               3833, // strangebee
 		"https://www.linkedin.com/jobs/view/4365773480/":                                                               3873, // strangebee
 		"https://www.linkedin.com/jobs/view/4366247002/":                                                               3900, // strangebee
+		"https://www.linkedin.com/jobs/view/4372529477/":                                                               4115, // strangebee
 		"https://www.linkedin.com/jobs/view/4287799376/":                                                               2725, // strangebee
 		"https://www.linkedin.com/jobs/view/4120264764/":                                                               587,  // thatgamecompany
 		"https://www.linkedin.com/jobs/view/4121587727/":                                                               588,  // betterme-company
@@ -3363,6 +3367,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4231817942/":                                                               1918, // lego-group
 		"https://www.linkedin.com/jobs/view/4233764933/":                                                               2095, // lego-group
 		"https://www.linkedin.com/jobs/view/4219049156/":                                                               1919, // deutsche-bank
+		"https://www.linkedin.com/jobs/view/4373875281/":                                                               4110, // deutsche-bank
 		"https://www.linkedin.com/jobs/view/4229279528/":                                                               1920, // tenstorrent-inc.
 		"https://www.linkedin.com/jobs/view/4219347502/":                                                               1921, // promon-as
 		"https://www.linkedin.com/jobs/view/4233145765/":                                                               1922, // csidedev
@@ -3624,6 +3629,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4266237220/":                                                               2420, // gwidotcom
 		"https://www.linkedin.com/jobs/view/4255303317/":                                                               2421, // pepperstone
 		"https://www.linkedin.com/jobs/view/4255383137/":                                                               2422, // fico
+		"https://www.linkedin.com/jobs/view/4364484097/":                                                               4116, // fico
 		"https://www.linkedin.com/jobs/view/4266332868/":                                                               2423, // allpay-limited
 		"https://www.linkedin.com/jobs/view/4266555529/":                                                               2424, // adyen
 		"https://www.linkedin.com/jobs/view/4267047562/":                                                               2437, // immutable-1
@@ -4105,6 +4111,11 @@ var (
 		"https://www.linkedin.com/jobs/view/4371181676/":                                                               4107, // mirrorweb
 		"https://www.linkedin.com/jobs/view/4372242028/":                                                               4108, // wellsfargo
 		"https://www.linkedin.com/jobs/view/4372008252/":                                                               4109, // trade-republic
+		"https://www.linkedin.com/jobs/view/4364708193/":                                                               4111, // arkeus-sensors
+		"https://www.linkedin.com/jobs/view/4316306633/":                                                               4117, // ftapi-software-gmbh
+		"https://www.linkedin.com/jobs/view/4372733783/":                                                               4118, // shopfully
+		"https://www.linkedin.com/jobs/view/4373565827/":                                                               4119, // fxcintelligence
+		"https://www.linkedin.com/jobs/view/4372926753/":                                                               4120, // wobot-ai
 		"https://www.linkedin.com/jobs/view/3914839625/":                                                               372,  // cognizant
 		"https://www.linkedin.com/jobs/view/4120737001/":                                                               600,  // cognizant
 		"https://www.linkedin.com/jobs/view/4149258542/":                                                               787,  // cognizant

@@ -510,6 +510,12 @@
     "destination_72x72": "arista-networks-inc.jpeg"
   },
   {
+    "alias": "arkeus-sensors",
+    "source": "arkeus-256x256.png",
+    "destination": "arkeus-sensors.png",
+    "destination_72x72": "arkeus-sensors.png"
+  },
+  {
     "alias": "arm",
     "source": "arm-200x200.jpeg",
     "destination": "arm.jpeg",
@@ -2736,6 +2742,12 @@
     "destination_72x72": "fresh-clinics.jpeg"
   },
   {
+    "alias": "ftapi-software-gmbh",
+    "source": "ftapi-180x180.png",
+    "destination": "ftapi-software-gmbh.png",
+    "destination_72x72": "ftapi-software-gmbh.png"
+  },
+  {
     "alias": "fubotv",
     "source": "",
     "destination": "",
@@ -2776,6 +2788,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "fxcintelligence",
+    "source": "fxcintelligence-256x256.png",
+    "destination": "fxcintelligence.png",
+    "destination_72x72": "fxcintelligence.png"
   },
   {
     "alias": "g-core",
@@ -6114,6 +6132,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "shopfully",
+    "source": "shopfully-200x200.jpeg",
+    "destination": "shopfully.jpeg",
+    "destination_72x72": "shopfully.jpeg"
+  },
+  {
     "alias": "shopify",
     "source": "shopify-120x120.png",
     "destination": "shopify.png",
@@ -7182,7 +7206,7 @@
     "destination_72x72": ""
   },
   {
-    "alias": "trend-micro",
+    "alias": "trendai-security",
     "source": "trend-micro-200x200.jpeg",
     "destination": "trend-micro.jpeg",
     "destination_72x72": "trend-micro.jpeg"
@@ -7810,6 +7834,12 @@
     "source": "wmg-international-200x200.jpeg",
     "destination": "wmg-international.jpeg",
     "destination_72x72": "wmg-international.jpeg"
+  },
+  {
+    "alias": "wobot-ai",
+    "source": "wobot-ai-200x200.jpeg",
+    "destination": "wobot-ai.jpeg",
+    "destination_72x72": "wobot-ai.jpeg"
   },
   {
     "alias": "wolt-oy",
