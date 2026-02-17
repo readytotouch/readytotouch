@@ -7836,6 +7836,12 @@
     "destination_72x72": "wmg-international.jpeg"
   },
   {
+    "alias": "wobot-ai",
+    "source": "wobot-ai-200x200.jpeg",
+    "destination": "wobot-ai.jpeg",
+    "destination_72x72": "wobot-ai.jpeg"
+  },
+  {
     "alias": "wolt-oy",
     "source": "wolt-200x200.jpeg",
     "destination": "wolt-oy.jpeg",

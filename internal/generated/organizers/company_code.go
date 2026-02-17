@@ -1357,6 +1357,7 @@ var (
 		"ftapi-software-gmbh":                 1357, // FTAPI
 		"shopfully":                           1358, // Shopfully
 		"fxcintelligence":                     1359, // FXC Intelligence
+		"wobot-ai":                            1360, // Wobot AI
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

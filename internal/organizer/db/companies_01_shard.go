@@ -1619,7 +1619,7 @@ func companies01Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4302722522/",
 							Location:             "Bratislava, Bratislava, Slovakia",
-							Date:                 mustDate("2026-01-25", "2025-12-14"),
+							Date:                 mustDate("2026-02-16"), // mustDate("2026-01-25", "2025-12-14"),
 							WithSalary:           false,
 							Remote:               false,
 						},

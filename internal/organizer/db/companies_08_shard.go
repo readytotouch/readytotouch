@@ -5095,7 +5095,7 @@ func companies08Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4047579348/",
 							Location:             "India",
 							CloudProviders:       []domain.CloudProvider{domain.AWS},
-							Date:                 mustDate("2026-01-27", "2025-12-15", "2025-11-23", "2025-09-19", "2025-08-06", "2025-07-16", "2025-04-17", "2024-12-13"),
+							Date:                 mustDate("2026-02-16"), // mustDate("2026-01-27", "2025-12-15", "2025-11-23", "2025-09-19", "2025-08-06", "2025-07-16", "2025-04-17", "2024-12-13"),
 							WithSalary:           false,
 							Remote:               true,
 						},

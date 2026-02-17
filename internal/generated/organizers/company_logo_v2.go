@@ -1310,6 +1310,7 @@ var (
 		"wisehome":                            "",
 		"wix-com":                             "wix-com.jpeg",
 		"wmg-international":                   "wmg-international.jpeg",
+		"wobot-ai":                            "wobot-ai.jpeg",
 		"wolt-oy":                             "wolt-oy.jpeg",
 		"wolters-kluwer":                      "wolters-kluwer.jpeg",
 		"wonderschool":                        "wonderschool.png",

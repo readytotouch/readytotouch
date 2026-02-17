@@ -4115,6 +4115,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4316306633/":                                                               4117, // ftapi-software-gmbh
 		"https://www.linkedin.com/jobs/view/4372733783/":                                                               4118, // shopfully
 		"https://www.linkedin.com/jobs/view/4373565827/":                                                               4119, // fxcintelligence
+		"https://www.linkedin.com/jobs/view/4372926753/":                                                               4120, // wobot-ai
 		"https://www.linkedin.com/jobs/view/3914839625/":                                                               372,  // cognizant
 		"https://www.linkedin.com/jobs/view/4120737001/":                                                               600,  // cognizant
 		"https://www.linkedin.com/jobs/view/4149258542/":                                                               787,  // cognizant
