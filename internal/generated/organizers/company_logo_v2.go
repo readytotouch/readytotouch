@@ -461,7 +461,7 @@ var (
 		"freeformfuture":                      "",
 		"freewheel":                           "freewheel.jpeg",
 		"fresh-clinics":                       "fresh-clinics.jpeg",
-		"ftapi-software-gmbh":                 "",
+		"ftapi-software-gmbh":                 "ftapi-software-gmbh.png",
 		"fubotv":                              "",
 		"fudosecurity":                        "fudosecurity.jpeg",
 		"fujitsu":                             "",

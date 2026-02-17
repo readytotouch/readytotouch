@@ -2743,9 +2743,9 @@
   },
   {
     "alias": "ftapi-software-gmbh",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "ftapi-180x180.png",
+    "destination": "ftapi-software-gmbh.png",
+    "destination_72x72": "ftapi-software-gmbh.png"
   },
   {
     "alias": "fubotv",
