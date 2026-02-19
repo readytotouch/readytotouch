@@ -536,5 +536,92 @@ func companies24Shard() []domain.CompanyProfile {
 				domain.IndustryDefenseTech,
 			},
 		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Input Output Group",
+			BaseURL:    "https://www.iog.io/",
+			CareersURL: "https://www.iog.io/careers",
+			AboutURL:   "https://www.iog.io/about",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                6385405,
+				IDs:               nil,
+				Alias:             "input-output-group",
+				Name:              "Input Output Group",
+				Followers:         "87K",
+				Employees:         "501-1K",
+				AssociatedMembers: "425",
+				Verified:          true,
+				Date:              mustDate("2026-02-20"),
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer (Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4361625819/",
+							Location:             "United Kingdom",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-18"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Cardano blockchain platform",
+			Industries:       []domain.Industry{
+				// Blockchain
+			},
+			Ignore: true, // Blockchain
+		},
 	}
 }

@@ -3675,12 +3675,14 @@ func companies09Shard() []domain.CompanyProfile {
 			AboutURL:   "https://umbra.space/about/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                18111757,
+				IDs:               nil,
 				Alias:             "umbraspace",
 				Name:              "Umbra",
-				Followers:         "16K",
+				Followers:         "29K",
 				Employees:         "51-200",
-				AssociatedMembers: "156",
+				AssociatedMembers: "226",
 				Verified:          true,
+				Date:              mustDate("2026-02-19"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -3729,6 +3731,17 @@ func companies09Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $150.000 - $200.000 per year
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Flight Software Engineer (Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4374163015/",
+							Location:             "Arlington, VA",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-18"),
+							WithSalary:           true, // $160k/yr - $200k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig:     {},
@@ -3738,6 +3751,10 @@ func companies09Shard() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Creator of space technology",
+			Industries: []domain.Industry{
+				// Defense and Space Manufacturing
+				domain.IndustryDefenseTech,
+			},
 		},
 
 		{

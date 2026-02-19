@@ -2210,6 +2210,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4335977584/":                                                               3491, // nutanix
 		"https://www.linkedin.com/jobs/view/4105560497/":                                                               299,  // umbraspace
 		"https://www.linkedin.com/jobs/view/4145412132/":                                                               882,  // umbraspace
+		"https://www.linkedin.com/jobs/view/4374163015/":                                                               4127, // umbraspace
 		"https://www.linkedin.com/jobs/view/4106227833/":                                                               300,  // cognitedata
 		"https://www.linkedin.com/jobs/view/4306656138/":                                                               3236, // cognitedata
 		"https://www.linkedin.com/jobs/view/4127761267/":                                                               632,  // ubisoft
@@ -2831,6 +2832,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4180667729/":                                                               3928, // keyrock
 		"https://www.linkedin.com/jobs/view/4324950011/":                                                               3929, // keyrock
 		"https://www.linkedin.com/jobs/view/4317489508/":                                                               4006, // keyrock
+		"https://www.linkedin.com/jobs/view/4327636592/":                                                               4128, // keyrock
 		"https://www.linkedin.com/jobs/view/4182758670/":                                                               1221, // cloudwick
 		"https://www.linkedin.com/jobs/view/4172072369/":                                                               1222, // fis
 		"https://www.indeed.com/viewjob?jk=6ea60544f1c6f982":                                                           1229, // nike
@@ -2979,6 +2981,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4081324333/":                                                               1352, // st-jude-childrens-research-hospital
 		"https://www.linkedin.com/jobs/view/4198256844/":                                                               1353, // strongcompute
 		"https://www.linkedin.com/jobs/view/4240340574/":                                                               1980, // tubi-tv
+		"https://www.linkedin.com/jobs/view/4374792569/":                                                               4129, // tubi-tv
 		"https://www.linkedin.com/jobs/view/4195366164/":                                                               1354, // tubi-tv
 		"https://www.linkedin.com/jobs/view/4149148628/":                                                               1355, // samsungfoodofficial
 		"https://www.linkedin.com/jobs/view/4211841294/":                                                               1626, // samsungfoodofficial
@@ -4122,6 +4125,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4373565827/":                                                               4119, // fxcintelligence
 		"https://www.linkedin.com/jobs/view/4372926753/":                                                               4120, // wobot-ai
 		"https://www.linkedin.com/jobs/view/4374784932/":                                                               4123, // gendigitalinc
+		"https://www.linkedin.com/jobs/view/4372675375/":                                                               4130, // six-robotics
 		"https://www.linkedin.com/jobs/view/3914839625/":                                                               372,  // cognizant
 		"https://www.linkedin.com/jobs/view/4120737001/":                                                               600,  // cognizant
 		"https://www.linkedin.com/jobs/view/4149258542/":                                                               787,  // cognizant
