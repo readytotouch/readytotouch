@@ -601,9 +601,9 @@
   },
   {
     "alias": "audibene",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "audibene-200x200.jpeg",
+    "destination": "audibene.jpeg",
+    "destination_72x72": "audibene.jpeg"
   },
   {
     "alias": "audigent",
@@ -1783,9 +1783,9 @@
   },
   {
     "alias": "dailymotion",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "dailymotion-200x200.jpeg",
+    "destination": "dailymotion.jpeg",
+    "destination_72x72": "dailymotion.jpeg"
   },
   {
     "alias": "dailypay",
@@ -3325,9 +3325,9 @@
   },
   {
     "alias": "icapital-network-inc",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "icapital-200x200.jpeg",
+    "destination": "icapital-network-inc.jpeg",
+    "destination_72x72": "icapital-network-inc.jpeg"
   },
   {
     "alias": "idemiagroup",
@@ -4855,9 +4855,9 @@
   },
   {
     "alias": "onedoc.ch",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "onedoc-300x300.png",
+    "destination": "onedoc.ch.png",
+    "destination_72x72": "onedoc.ch.png"
   },
   {
     "alias": "oneschema",
@@ -5779,9 +5779,9 @@
   },
   {
     "alias": "ringcentral",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "ringcentral-200x200.jpeg",
+    "destination": "ringcentral.jpeg",
+    "destination_72x72": "ringcentral.jpeg"
   },
   {
     "alias": "riot-games",
