@@ -1358,6 +1358,10 @@ var (
 		"shopfully":                           1358, // Shopfully
 		"fxcintelligence":                     1359, // FXC Intelligence
 		"wobot-ai":                            1360, // Wobot AI
+		"gendigitalinc":                       1361, // Gen
+		"six-robotics":                        1362, // Six Robotics
+		"glovo-app":                           1363, // Glovo
+		"paysafe":                             1364, // Paysafe
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

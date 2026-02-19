@@ -1984,6 +1984,14 @@ func (c *Controller) anyRemoteVacancy(vacancies []domain.Vacancy) bool {
 }
 
 func (c *Controller) skipSmallCompany(company domain.CompanyProfile) bool {
+	/*
+		const all = true
+
+		if all {
+			return false
+		}
+	*/
+
 	switch company.LinkedInProfile.Employees {
 	case "10K+", "5K-10K", "1K-5K", "501-1K", "201-500", "51-200":
 		return false

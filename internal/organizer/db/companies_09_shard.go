@@ -1158,7 +1158,7 @@ func companies09Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4226880347/",
 							Location:             "Taipei, Taipei City, Taiwan",
-							Date:                 mustDate("2026-02-16"), // mustDate("2025-09-19", "2025-08-08", "2025-06-05", "2025-05-15"),
+							Date:                 mustDate("2026-02-16", "2025-09-19", "2025-08-08", "2025-06-05", "2025-05-15"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3345,12 +3345,14 @@ func companies09Shard() []domain.CompanyProfile {
 			AboutURL:   "https://hotro.hasaki.vn/gioi-thieu-hasaki.html",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                31033180,
+				IDs:               nil,
 				Alias:             "hasaki-vn",
 				Name:              "Hasaki.vn",
-				Followers:         "9K",
+				Followers:         "17K",
 				Employees:         "1K-5K",
-				AssociatedMembers: "243",
+				AssociatedMembers: "352",
 				Verified:          true,
+				Date:              mustDate("2026-02-20"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -3573,6 +3575,17 @@ func companies09Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Software Engineer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4356419407/",
+							Location:             "Ho Chi Minh City Metropolitan Area",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-18"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -3675,12 +3688,14 @@ func companies09Shard() []domain.CompanyProfile {
 			AboutURL:   "https://umbra.space/about/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                18111757,
+				IDs:               nil,
 				Alias:             "umbraspace",
 				Name:              "Umbra",
-				Followers:         "16K",
+				Followers:         "29K",
 				Employees:         "51-200",
-				AssociatedMembers: "156",
+				AssociatedMembers: "226",
 				Verified:          true,
+				Date:              mustDate("2026-02-19"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -3729,6 +3744,17 @@ func companies09Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $150.000 - $200.000 per year
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Flight Software Engineer (Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4374163015/",
+							Location:             "Arlington, VA",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-18"),
+							WithSalary:           true, // $160k/yr - $200k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig:     {},
@@ -3738,6 +3764,10 @@ func companies09Shard() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Creator of space technology",
+			Industries: []domain.Industry{
+				// Defense and Space Manufacturing
+				domain.IndustryDefenseTech,
+			},
 		},
 
 		{
@@ -5052,12 +5082,14 @@ func companies09Shard() []domain.CompanyProfile {
 			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                18993016,
+				IDs:               nil,
 				Alias:             "strangebee",
 				Name:              "StrangeBee",
-				Followers:         "6K",
+				Followers:         "8K",
 				Employees:         "51-200",
-				AssociatedMembers: "43",
+				AssociatedMembers: "65",
 				Verified:          true,
+				Date:              mustDate("2026-02-20"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "StrangeBeeCorp",
