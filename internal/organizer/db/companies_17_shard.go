@@ -1798,7 +1798,7 @@ func companies17Shard() []domain.CompanyProfile {
 			ID:         0,  // system
 			Type:       "", // system
 			Name:       "OneDoc",
-			BaseURL:    "https://info.onedoc.ch/",
+			BaseURL:    "https://onedoc.ch/",
 			CareersURL: "",
 			AboutURL:   "",
 			BlogURL:    "",
@@ -1807,10 +1807,11 @@ func companies17Shard() []domain.CompanyProfile {
 				IDs:               nil,
 				Alias:             "onedoc.ch",
 				Name:              "OneDoc",
-				Followers:         "6K",
-				Employees:         "11-50",
-				AssociatedMembers: "54",
+				Followers:         "7K",
+				Employees:         "51-200",
+				AssociatedMembers: "75",
 				Verified:          false,
+				Date:              mustDate("2026-02-20"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
