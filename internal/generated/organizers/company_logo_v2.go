@@ -1039,6 +1039,7 @@ var (
 		"simulmedia":                          "simulmedia.png",
 		"sinch":                               "",
 		"singlestore":                         "",
+		"six-robotics":                        "sixrobotics.svg",
 		"sixt":                                "sixt.jpeg",
 		"skidos-games":                        "",
 		"sky":                                 "sky.png",

@@ -450,5 +450,91 @@ func companies24Shard() []domain.CompanyProfile {
 				domain.IndustryCyberSecurity,
 			},
 		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Six Robotics",
+			BaseURL:    "https://sixrobotics.com/",
+			CareersURL: "https://sixrobotics.com/careers",
+			AboutURL:   "https://sixrobotics.com/company",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                102401514,
+				IDs:               nil,
+				Alias:             "six-robotics",
+				Name:              "Six Robotics",
+				Followers:         "3K",
+				Employees:         "51-200",
+				AssociatedMembers: "42",
+				Verified:          false,
+				Date:              mustDate("2026-02-19"),
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer (Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4372675375/",
+							Location:             "Oslo, Oslo, Norway",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-19"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Swarm autonomy as a force multiplier",
+			Industries: []domain.Industry{
+				domain.IndustryDefenseTech,
+			},
+		},
 	}
 }

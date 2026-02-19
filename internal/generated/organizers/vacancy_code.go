@@ -2654,6 +2654,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4310267841/":                                                               4099, // cryptocom
 		"https://www.linkedin.com/jobs/view/3960326883/":                                                               3941, // cryptocom
 		"https://www.linkedin.com/jobs/view/4368943576/":                                                               4004, // cryptocom
+		"https://www.linkedin.com/jobs/view/4356252758/":                                                               4126, // cryptocom
 		"https://www.linkedin.com/jobs/view/4174831245/":                                                               1097, // depixen-sw
 		"https://www.linkedin.com/jobs/view/4277351141/":                                                               2613, // depixen-sw
 		"https://www.linkedin.com/jobs/view/4153262881/":                                                               1343, // depixen-sw

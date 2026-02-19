@@ -6210,6 +6210,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "six-robotics",
+    "source": "sixrobotics.svg",
+    "destination": "sixrobotics.svg",
+    "destination_72x72": "sixrobotics.svg"
+  },
+  {
     "alias": "sixt",
     "source": "sixt-200x200.jpeg",
     "destination": "sixt.jpeg",
