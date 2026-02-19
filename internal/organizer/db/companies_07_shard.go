@@ -81,7 +81,7 @@ func companies07Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4254632356/",
 							Location:             "Tel Aviv-Yafo, Tel Aviv District, Israel",
-							Date:                 mustDate("2026-02-16"), // mustDate("2026-01-25", "2025-12-14", "2025-11-22", "2025-09-16", "2025-08-25", "2025-08-04", "2025-07-15"),
+							Date:                 mustDate("2026-02-16", "2026-01-25", "2025-12-14", "2025-11-22", "2025-09-16", "2025-08-25", "2025-08-04", "2025-07-15"),
 							WithSalary:           false,
 							Remote:               false,
 						},

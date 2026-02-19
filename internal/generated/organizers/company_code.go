@@ -1358,6 +1358,7 @@ var (
 		"shopfully":                           1358, // Shopfully
 		"fxcintelligence":                     1359, // FXC Intelligence
 		"wobot-ai":                            1360, // Wobot AI
+		"gendigitalinc":                       1361, // Gen
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

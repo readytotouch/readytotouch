@@ -71,6 +71,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4282845350/":                                                               2843, // ibm
 		"https://www.linkedin.com/jobs/view/4348824912/":                                                               3564, // ibm
 		"https://www.linkedin.com/jobs/view/4355232038/":                                                               3847, // ibm
+		"https://www.linkedin.com/jobs/view/4372647673/":                                                               4121, // ibm
 		"https://www.linkedin.com/jobs/view/4072909509/":                                                               258,  // sap
 		"https://www.linkedin.com/jobs/view/4072911263/":                                                               541,  // sap
 		"https://www.linkedin.com/jobs/view/4073625824/":                                                               592,  // sap
@@ -3338,6 +3339,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4248020239/":                                                               2093, // onedoc.ch
 		"https://www.linkedin.com/jobs/view/4262231132/":                                                               2249, // onedoc.ch
 		"https://www.linkedin.com/jobs/view/4365279485/":                                                               3848, // onedoc.ch
+		"https://www.linkedin.com/jobs/view/4373942029/":                                                               4124, // onedoc.ch
 		"https://www.linkedin.com/jobs/view/4220863785/":                                                               1829, // wallee-group
 		"https://www.linkedin.com/jobs/view/4226130637/":                                                               1856, // wallee-group
 		"https://www.linkedin.com/jobs/view/4244541596/":                                                               1983, // wallee-group
@@ -4034,6 +4036,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4363523052/":                                                               3788, // sky
 		"https://www.linkedin.com/jobs/view/4364629555/":                                                               3820, // sky
 		"https://www.linkedin.com/jobs/view/4361949155/":                                                               4065, // sky
+		"https://www.linkedin.com/jobs/view/4374795586/":                                                               4122, // sky
 		"https://www.linkedin.com/jobs/view/4325399277/":                                                               3563, // reducate
 		"https://www.linkedin.com/jobs/view/4348395855/":                                                               3574, // myo-healthcare
 		"https://www.linkedin.com/jobs/view/4350156792/":                                                               3699, // myo-healthcare
@@ -4116,6 +4119,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4372733783/":                                                               4118, // shopfully
 		"https://www.linkedin.com/jobs/view/4373565827/":                                                               4119, // fxcintelligence
 		"https://www.linkedin.com/jobs/view/4372926753/":                                                               4120, // wobot-ai
+		"https://www.linkedin.com/jobs/view/4374784932/":                                                               4123, // gendigitalinc
 		"https://www.linkedin.com/jobs/view/3914839625/":                                                               372,  // cognizant
 		"https://www.linkedin.com/jobs/view/4120737001/":                                                               600,  // cognizant
 		"https://www.linkedin.com/jobs/view/4149258542/":                                                               787,  // cognizant

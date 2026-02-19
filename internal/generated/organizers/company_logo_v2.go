@@ -476,6 +476,7 @@ var (
 		"gdms":                                "gdms.png",
 		"geico":                               "geico.jpeg",
 		"gelato":                              "gelato.svg",
+		"gendigitalinc":                       "gendigitalinc.jpeg",
 		"geniussports":                        "",
 		"geocomply":                           "geocomply.png",
 		"getansa":                             "",

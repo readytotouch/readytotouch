@@ -2832,6 +2832,12 @@
     "destination_72x72": "gelato.svg"
   },
   {
+    "alias": "gendigitalinc",
+    "source": "gendigitalinc-200x200.jpeg",
+    "destination": "gendigitalinc.jpeg",
+    "destination_72x72": "gendigitalinc.jpeg"
+  },
+  {
     "alias": "geniussports",
     "source": "",
     "destination": "",

@@ -1158,7 +1158,7 @@ func companies09Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4226880347/",
 							Location:             "Taipei, Taipei City, Taiwan",
-							Date:                 mustDate("2026-02-16"), // mustDate("2025-09-19", "2025-08-08", "2025-06-05", "2025-05-15"),
+							Date:                 mustDate("2026-02-16", "2025-09-19", "2025-08-08", "2025-06-05", "2025-05-15"),
 							WithSalary:           false,
 							Remote:               false,
 						},
