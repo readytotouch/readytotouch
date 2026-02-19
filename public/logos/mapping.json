@@ -2940,6 +2940,12 @@
     "destination_72x72": "glasskube.png"
   },
   {
+    "alias": "glovo-app",
+    "source": "glovo-app-200x200.jpeg",
+    "destination": "glovo-app.jpeg",
+    "destination_72x72": "glovo-app.jpeg"
+  },
+  {
     "alias": "go-nitro",
     "source": "go-nitro-180x180.webp",
     "destination": "go-nitro.png",
@@ -5122,6 +5128,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "paysafe",
+    "source": "paysafe-200x200.jpeg",
+    "destination": "paysafe.jpeg",
+    "destination_72x72": "paysafe.jpeg"
   },
   {
     "alias": "pdf-solutions",

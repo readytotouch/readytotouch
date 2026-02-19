@@ -2521,10 +2521,11 @@ func companies21Shard() []domain.CompanyProfile {
 				IDs:               []int{3960, 115098, 2171992},
 				Alias:             "ciena",
 				Name:              "Ciena",
-				Followers:         "269K",
+				Followers:         "285K",
 				Employees:         "5K-10K",
-				AssociatedMembers: "10,128",
+				AssociatedMembers: "10,295",
 				Verified:          true,
+				Date:              mustDate("2026-02-20"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:     "ciena",

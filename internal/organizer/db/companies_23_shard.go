@@ -429,6 +429,17 @@ func companies23Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Backend Engineer – Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4373861093/",
+							Location:             "Dresden, Saxony, Germany",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-19"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {

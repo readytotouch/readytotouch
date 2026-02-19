@@ -3351,6 +3351,17 @@ func companies06Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $155k/yr - $194k/yr
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Software Engineer – Fullstack (Golang/React)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4373678361/",
+							Location:             "Santa Clara, CA",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-19"),
+							WithSalary:           true, // $155k/yr - $194k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
