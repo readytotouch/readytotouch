@@ -4075,10 +4075,11 @@ func companies16Shard() []domain.CompanyProfile {
 				IDs:               nil,
 				Alias:             "allocator-one",
 				Name:              "Allocator One",
-				Followers:         "3K",
+				Followers:         "10K",
 				Employees:         "11-50",
-				AssociatedMembers: "27",
+				AssociatedMembers: "43",
 				Verified:          false,
+				Date:              mustDate("2026-02-19"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -4170,6 +4171,17 @@ func companies16Shard() []domain.CompanyProfile {
 							Location:             "Philippines",
 							CloudProviders:       []domain.CloudProvider{},
 							Date:                 mustDate("2026-01-20"),
+							WithSalary:           true, // $30k/yr - $45k/yr
+							Remote:               true,
+						},
+						{
+							Title:                "Senior Full Stack Developer | Elixir, Phoenix, LiveView",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4372431894/",
+							Location:             "Philippines",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-18"),
 							WithSalary:           true, // $30k/yr - $45k/yr
 							Remote:               true,
 						},

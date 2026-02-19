@@ -3266,6 +3266,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4341961080/":                                                               3430, // allocator-one
 		"https://www.linkedin.com/jobs/view/4345561102/":                                                               3693, // allocator-one
 		"https://www.linkedin.com/jobs/view/4353714125/":                                                               3821, // allocator-one
+		"https://www.linkedin.com/jobs/view/4372431894/":                                                               4125, // allocator-one
 		"https://www.linkedin.com/jobs/view/4194786604/":                                                               1701, // simacanbv
 		"https://www.linkedin.com/jobs/view/4209595207/":                                                               1702, // impactdotcom
 		"https://www.linkedin.com/jobs/view/4264910255/":                                                               2383, // impactdotcom
