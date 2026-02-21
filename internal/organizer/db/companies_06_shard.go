@@ -1700,12 +1700,14 @@ func companies06Shard() []domain.CompanyProfile {
 			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                3237134,
+				IDs:               nil,
 				Alias:             "here",
 				Name:              "HERE Technologies",
-				Followers:         "238K",
+				Followers:         "268K",
 				Employees:         "5K-10K",
-				AssociatedMembers: "8,155",
+				AssociatedMembers: "9,082",
 				Verified:          true,
+				Date:              mustDate("2026-02-19"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:     "heremaps",
@@ -3346,6 +3348,17 @@ func companies06Shard() []domain.CompanyProfile {
 							Location:             "Santa Clara, CA",
 							CloudProviders:       []domain.CloudProvider{},
 							Date:                 mustDate("2026-02-11"),
+							WithSalary:           true, // $155k/yr - $194k/yr
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Software Engineer – Fullstack (Golang/React)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4373678361/",
+							Location:             "Santa Clara, CA",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-19"),
 							WithSalary:           true, // $155k/yr - $194k/yr
 							Remote:               false,
 						},

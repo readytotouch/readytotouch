@@ -510,6 +510,12 @@
     "destination_72x72": "arista-networks-inc.jpeg"
   },
   {
+    "alias": "arkeus-sensors",
+    "source": "arkeus-256x256.png",
+    "destination": "arkeus-sensors.png",
+    "destination_72x72": "arkeus-sensors.png"
+  },
+  {
     "alias": "arm",
     "source": "arm-200x200.jpeg",
     "destination": "arm.jpeg",
@@ -595,9 +601,9 @@
   },
   {
     "alias": "audibene",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "audibene-200x200.jpeg",
+    "destination": "audibene.jpeg",
+    "destination_72x72": "audibene.jpeg"
   },
   {
     "alias": "audigent",
@@ -1777,9 +1783,9 @@
   },
   {
     "alias": "dailymotion",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "dailymotion-200x200.jpeg",
+    "destination": "dailymotion.jpeg",
+    "destination_72x72": "dailymotion.jpeg"
   },
   {
     "alias": "dailypay",
@@ -2736,6 +2742,12 @@
     "destination_72x72": "fresh-clinics.jpeg"
   },
   {
+    "alias": "ftapi-software-gmbh",
+    "source": "ftapi-180x180.png",
+    "destination": "ftapi-software-gmbh.png",
+    "destination_72x72": "ftapi-software-gmbh.png"
+  },
+  {
     "alias": "fubotv",
     "source": "",
     "destination": "",
@@ -2778,6 +2790,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "fxcintelligence",
+    "source": "fxcintelligence-256x256.png",
+    "destination": "fxcintelligence.png",
+    "destination_72x72": "fxcintelligence.png"
+  },
+  {
     "alias": "g-core",
     "source": "gcore-180x180.png",
     "destination": "g-core.png",
@@ -2812,6 +2830,12 @@
     "source": "gelato.svg",
     "destination": "gelato.svg",
     "destination_72x72": "gelato.svg"
+  },
+  {
+    "alias": "gendigitalinc",
+    "source": "gendigitalinc-200x200.jpeg",
+    "destination": "gendigitalinc.jpeg",
+    "destination_72x72": "gendigitalinc.jpeg"
   },
   {
     "alias": "geniussports",
@@ -2914,6 +2938,12 @@
     "source": "glasskube-64x64.png",
     "destination": "glasskube.png",
     "destination_72x72": "glasskube.png"
+  },
+  {
+    "alias": "glovo-app",
+    "source": "glovo-app-200x200.jpeg",
+    "destination": "glovo-app.jpeg",
+    "destination_72x72": "glovo-app.jpeg"
   },
   {
     "alias": "go-nitro",
@@ -3295,9 +3325,9 @@
   },
   {
     "alias": "icapital-network-inc",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "icapital-200x200.jpeg",
+    "destination": "icapital-network-inc.jpeg",
+    "destination_72x72": "icapital-network-inc.jpeg"
   },
   {
     "alias": "idemiagroup",
@@ -4825,9 +4855,9 @@
   },
   {
     "alias": "onedoc.ch",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "onedoc-300x300.png",
+    "destination": "onedoc.ch.png",
+    "destination_72x72": "onedoc.ch.png"
   },
   {
     "alias": "oneschema",
@@ -5098,6 +5128,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "paysafe",
+    "source": "paysafe-200x200.jpeg",
+    "destination": "paysafe.jpeg",
+    "destination_72x72": "paysafe.jpeg"
   },
   {
     "alias": "pdf-solutions",
@@ -5743,9 +5779,9 @@
   },
   {
     "alias": "ringcentral",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "ringcentral-200x200.jpeg",
+    "destination": "ringcentral.jpeg",
+    "destination_72x72": "ringcentral.jpeg"
   },
   {
     "alias": "riot-games",
@@ -6114,6 +6150,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "shopfully",
+    "source": "shopfully-200x200.jpeg",
+    "destination": "shopfully.jpeg",
+    "destination_72x72": "shopfully.jpeg"
+  },
+  {
     "alias": "shopify",
     "source": "shopify-120x120.png",
     "destination": "shopify.png",
@@ -6178,6 +6220,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "six-robotics",
+    "source": "sixrobotics.svg",
+    "destination": "sixrobotics.svg",
+    "destination_72x72": "sixrobotics.svg"
   },
   {
     "alias": "sixt",
@@ -7182,7 +7230,7 @@
     "destination_72x72": ""
   },
   {
-    "alias": "trend-micro",
+    "alias": "trendai-security",
     "source": "trend-micro-200x200.jpeg",
     "destination": "trend-micro.jpeg",
     "destination_72x72": "trend-micro.jpeg"
@@ -7810,6 +7858,12 @@
     "source": "wmg-international-200x200.jpeg",
     "destination": "wmg-international.jpeg",
     "destination_72x72": "wmg-international.jpeg"
+  },
+  {
+    "alias": "wobot-ai",
+    "source": "wobot-ai-200x200.jpeg",
+    "destination": "wobot-ai.jpeg",
+    "destination_72x72": "wobot-ai.jpeg"
   },
   {
     "alias": "wolt-oy",

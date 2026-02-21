@@ -2744,10 +2744,11 @@ func companies20Shard() []domain.CompanyProfile {
 				IDs:               nil,
 				Alias:             "postman-platform",
 				Name:              "Postman",
-				Followers:         "526K",
+				Followers:         "550K",
 				Employees:         "501-1K",
-				AssociatedMembers: "3,129",
+				AssociatedMembers: "3,396",
 				Verified:          true,
+				Date:              mustDate("2026-02-20"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:     "postmanlabs",
@@ -2798,7 +2799,7 @@ func companies20Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4058765320/",
 							Location:             "New York, NY",
-							Date:                 mustDate("2026-01-08", "2025-12-17", "2025-11-26"),
+							Date:                 mustDate("2026-02-19", "2026-01-08", "2025-12-17", "2025-11-26"),
 							WithSalary:           true, // $150k/yr - $245k/yr
 							Remote:               false,
 						},
