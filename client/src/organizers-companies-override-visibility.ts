@@ -1,49 +1,110 @@
 import {organizersWelcome} from "./welcome";
 import {CompanyResponse} from "./organizers-companies-v3-models";
+import {Industry} from "./organizers-v3-common-models";
+
+function overrideCompanyVisibility(companyId: number, callback: () => void) {
+    fetch(`/api/v1/companies/${companyId}/visibility.json`, {
+        method: "PATCH",
+    }).then(function (response) {
+        // Unauthorized
+        if (response.status === 401) {
+            window.location.href = organizersWelcome();
+
+            return;
+        }
+
+        callback();
+    }).catch(console.error);
+}
+
+function overrideIndustryVisibility(industryAlias: string, callback: () => void) {
+    fetch(`/api/v1/industries/${industryAlias}/visibility.json`, {
+        method: "PATCH",
+    }).then(function (response) {
+        // Unauthorized
+        if (response.status === 401) {
+            window.location.href = organizersWelcome();
+
+            return;
+        }
+
+        callback();
+    }).catch(console.error);
+}
 
 function addOverrideCompanyVisibilityEvent(
-    $companyHiddenPlaceholder: HTMLElement,
-    $company: HTMLElement,
-    company: CompanyResponse,
+    $currentCompanyHiddenPlaceholder: HTMLElement,
+    $currentCompany: HTMLElement,
+    currentCompany: CompanyResponse,
 ) {
-    const $button = $companyHiddenPlaceholder.querySelector(".js-override-company-visibility-button");
+    const $button = $currentCompanyHiddenPlaceholder.querySelector(".js-override-company-visibility-button");
     if ($button === null) {
         return;
     }
 
     $button
         .addEventListener("click", function () {
-            $companyHiddenPlaceholder.hidden = true;
-            $company.hidden = false;
-            company.hidden = false;
+            overrideCompanyVisibility(currentCompany.id, function () {
+                $currentCompanyHiddenPlaceholder.hidden = true;
+                $currentCompany.hidden = false;
+                currentCompany.hidden = false;
+            });
         });
 }
 
+function showAllCompanies(sourceCompanies: Array<CompanyResponse>, currentCompanyFirstIndustry: Industry) {
+    sourceCompanies.forEach(function (sourceCompany) {
+        if (!sourceCompany.hidden) {
+            return;
+        }
+
+        if (sourceCompany.emptyIndustries()) {
+            return;
+        }
+
+        for (const sourceCompanyIndustry of sourceCompany.industries) {
+            if (sourceCompanyIndustry.alias === currentCompanyFirstIndustry.alias) {
+                sourceCompany.hidden = false;
+
+                return;
+            }
+        }
+    });
+}
+
 function addOverrideIndustryVisibilityEvent(
-    $companyHiddenPlaceholder: HTMLElement,
-    $company: HTMLElement,
-    company: CompanyResponse,
+    $currentCompanyHiddenPlaceholder: HTMLElement,
+    $currentCompany: HTMLElement,
+    currentCompany: CompanyResponse,
     sourceCompanies: Array<CompanyResponse>,
 ) {
-    const $button = $companyHiddenPlaceholder.querySelector(".js-override-industry-visibility-button");
+    const $button = $currentCompanyHiddenPlaceholder.querySelector(".js-override-industry-visibility-button");
     if ($button === null) {
         return
     }
 
     $button
         .addEventListener("click", function () {
-            $companyHiddenPlaceholder.hidden = true;
-            $company.hidden = false;
-            company.hidden = false;
+            const currentCompanyFirstIndustry = currentCompany.firstIndustry();
+            if (currentCompanyFirstIndustry === null) {
+                return;
+            }
+
+            overrideIndustryVisibility(currentCompanyFirstIndustry.alias, function () {
+                $currentCompanyHiddenPlaceholder.hidden = true;
+                $currentCompany.hidden = false;
+                currentCompany.hidden = false;
+                showAllCompanies(sourceCompanies, currentCompanyFirstIndustry);
+            });
         });
 }
 
 export function addCompanyOverrideVisibilityEvents(
-    $companyHiddenPlaceholder: HTMLElement,
-    $company: HTMLElement,
-    company: CompanyResponse,
+    $currentCompanyHiddenPlaceholder: HTMLElement,
+    $currentCompany: HTMLElement,
+    currentCompany: CompanyResponse,
     sourceCompanies: Array<CompanyResponse>,
 ) {
-    addOverrideCompanyVisibilityEvent($companyHiddenPlaceholder, $company, company);
-    addOverrideIndustryVisibilityEvent($companyHiddenPlaceholder, $company, company, sourceCompanies);
+    addOverrideCompanyVisibilityEvent($currentCompanyHiddenPlaceholder, $currentCompany, currentCompany);
+    addOverrideIndustryVisibilityEvent($currentCompanyHiddenPlaceholder, $currentCompany, currentCompany, sourceCompanies);
 }

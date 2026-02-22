@@ -8,11 +8,10 @@ const currentOrganizer = findOrganizer(parseCurrentOrganizerAlias(window.locatio
 
 export function renderCompanyHiddenPlaceholder(company: CompanyResponse): string {
     // Should be unreachable, but just in case
-    if (company.industries === null || company.industries.length === 0) {
+    const industry = company.firstIndustry();
+    if (industry === null) {
         return "";
     }
-
-    const industry = company.industries[0].name;
 
     return `<div class="card hidden-card">
     <figure class="hidden-card__body">
