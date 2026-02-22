@@ -299,10 +299,16 @@ type PreparedVacancy struct {
 	Remote               bool // for future use
 }
 
+type TechnologyUsageReferences struct {
+	Title string
+	URL   string
+}
+
 type LanguageProfile struct {
-	GitHubRepositoryCount int
-	Vacancies             []Vacancy
-	PinnedUntil           time.Time
+	GitHubRepositoryCount     int
+	Vacancies                 []Vacancy
+	PinnedUntil               time.Time
+	TechnologyUsageReferences []TechnologyUsageReferences
 }
 
 type CompanyLogo struct {
@@ -344,11 +350,12 @@ type CompanyProfile struct {
 	RustFoundationMember      bool // https://foundation.rust-lang.org/members/
 	Ignore                    bool
 	SyncSources               []CompanySyncSource
-	CloudProviders            []CloudProvider // Populated on the fly from the language profile
-	GitHubRepositoryCount     int             // Populated on the fly from the language profile
-	Remote                    bool            // Populated on the fly if at least one remote job exists in the language profile
-	LatestVacancyDate         time.Time       // Populated on the fly from the language profile
-	PinnedUntil               time.Time       // Populated on the fly from the language profile
+	CloudProviders            []CloudProvider             // Populated on the fly from the language profile
+	GitHubRepositoryCount     int                         // Populated on the fly from the language profile
+	TechnologyUsageReferences []TechnologyUsageReferences // Populated on the fly from the language profile
+	Remote                    bool                        // Populated on the fly if at least one remote job exists in the language profile
+	LatestVacancyDate         time.Time                   // Populated on the fly from the language profile
+	PinnedUntil               time.Time                   // Populated on the fly from the language profile
 }
 
 type UnsafeCompaniesResponse struct {

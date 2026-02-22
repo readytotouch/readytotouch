@@ -1535,6 +1535,41 @@ func StreamOrganizersCompanyV3(qw422016 *qt422016.Writer,
 	qw422016.N().S(`
 
   `)
+	if len(company.TechnologyUsageReferences) > 0 {
+		qw422016.N().S(`
+  <section class="sources-evidence">
+    <div class="container sources-evidence__container">
+      <h2 class="sources-evidence__headline">Technology Usage: Sources and Evidence</h2>
+      <div class="sources">
+        `)
+		for _, reference := range company.TechnologyUsageReferences {
+			qw422016.N().S(`
+          <a href="`)
+			qw422016.E().S(reference.URL)
+			qw422016.N().S(`" class="sources__item" target="_blank">
+            <figure class="sources__figure">
+              <p class="sources__text">`)
+			qw422016.E().S(reference.Title)
+			qw422016.N().S(`</p>
+              <div class="sources__image-wrapper">
+                <img
+                  class="sources__image"
+                  alt="Open in new window icon"
+                  src="/assets/images/pages/organizer/open-new-window.svg"
+                  width="12"
+                  height="12"
+                />
+              </div>
+            </figure>
+          </a>
+        `)
+		}
+		qw422016.N().S(`
+      </div>
+    </div>
+  </section>
+  `)
+	}
 	qw422016.N().S(`
 
   <section class="company-statistics">
