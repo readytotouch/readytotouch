@@ -1190,6 +1190,20 @@ func (c *Controller) UnsafeCompaniesV3(ctx *gin.Context) {
 		// NOP, continue
 	}
 
+	userCompanyVisibilityMap, err := c.userCompanyVisibilityRepository.GetMap(ctx, authUserID)
+	if err != nil {
+		logger.Error(err)
+
+		// NOP, continue
+	}
+
+	userIndustryVisibilityMap, err := c.userIndustryVisibilityRepository.GetMap(ctx, authUserID)
+	if err != nil {
+		logger.Error(err)
+
+		// NOP, continue
+	}
+
 	result := make([]domain.CompanyResponse, len(companies))
 	for i, company := range companies {
 		result[i] = domain.CompanyResponse{
@@ -1232,7 +1246,7 @@ func (c *Controller) UnsafeCompaniesV3(ctx *gin.Context) {
 			LatestVacancyDate:         utils.TimePointerOrNil(company.LatestVacancyDate),
 			GitHubRepositoryCount:     company.GitHubRepositoryCount,
 			Favorite:                  userCompanyFavoriteMap[company.ID],
-			Hidden:                    false,
+			Hidden:                    c.companyHidden(company, userCompanyVisibilityMap, userIndustryVisibilityMap),
 		}
 	}
 
@@ -2108,4 +2122,28 @@ func (c *Controller) sitemapCompanyLastModified(vacancies []domain.Vacancy) stri
 	}
 
 	return maxVacancyDate.Format(time.DateOnly)
+}
+
+func (c *Controller) companyHidden(company domain.CompanyProfile, userCompanyVisibilityMap map[int64]bool, userIndustryVisibilityMap map[int64]bool) bool {
+	if userCompanyVisibilityMap[company.ID] {
+		return false
+	}
+
+	if len(company.Industries) == 0 {
+		return false
+	}
+
+	for _, industry := range company.Industries {
+		if userIndustryVisibilityMap[industry.ID] {
+			return false
+		}
+	}
+
+	for _, industry := range company.Industries {
+		if domain.IsIndustryHidden(industry.ID) {
+			return true
+		}
+	}
+
+	return false
 }

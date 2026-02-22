@@ -130,6 +130,9 @@ var (
 	hiddenIndustries = []Industry{
 		IndustryCryptoCurrency,
 	}
+	hiddenIndustryMap = map[int64]bool{
+		IndustryCryptoCurrency.ID: true,
+	}
 )
 
 func FindHiddenIndustryByAlias(alias string) (Industry, bool) {
@@ -140,4 +143,8 @@ func FindHiddenIndustryByAlias(alias string) (Industry, bool) {
 	}
 
 	return Industry{}, false
+}
+
+func IsIndustryHidden(id int64) bool {
+	return hiddenIndustryMap[id]
 }

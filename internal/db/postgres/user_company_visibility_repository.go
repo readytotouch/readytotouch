@@ -46,9 +46,23 @@ func (r *UserCompanyVisibilityRepository) Upsert(
 	})
 }
 
-func (r *UserCompanyVisibilityRepository) List(
+func (r *UserCompanyVisibilityRepository) GetMap(
 	ctx context.Context,
 	userID int64,
-) ([]int64, error) {
-	return r.db.Queries().UserCompanyVisibilityOverrides(ctx, userID)
+) (map[int64]bool, error) {
+	if userID == 0 {
+		return nil, nil
+	}
+
+	rows, err := r.db.Queries().UserCompanyVisibilityOverrides(ctx, userID)
+	if err != nil {
+		return nil, err
+	}
+
+	result := make(map[int64]bool, len(rows))
+	for _, row := range rows {
+		result[row] = true
+	}
+
+	return result, nil
 }
