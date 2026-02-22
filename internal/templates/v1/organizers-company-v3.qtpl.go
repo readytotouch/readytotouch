@@ -411,8 +411,78 @@ func StreamOrganizersCompanyV3(qw422016 *qt422016.Writer,
 	qw422016.E().S(industryNames(company.Industries))
 	qw422016.N().S(`</figcaption>
           </figure>
-          `)
+          <figure class="company-card__figure">
+            <img
+              class="company-card__icon"
+              alt="Cloud provider icon"
+              width="16"
+              height="16"
+              src="/assets/images/pages/organizer/clouds.svg"
+            />
+            <figcaption class="company-card__figcaption card__figcaption--images">
+              `)
+	if len(company.CloudProviders) == 0 {
+		qw422016.N().S(`
+                Unknown cloud
+              `)
+	}
 	qw422016.N().S(`
+              `)
+	for _, cloud := range company.CloudProviders {
+		qw422016.N().S(`
+                `)
+		if cloud.Alias == "aws" {
+			qw422016.N().S(`
+                  <img
+                    alt="AWS icon"
+                    width="20"
+                    height="20"
+                    src="/assets/images/pages/common/amazon-web-services.svg"
+                  />
+                `)
+		} else if cloud.Alias == "gcp" {
+			qw422016.N().S(`
+                  <img
+                    alt="GCP icon"
+                    width="20"
+                    height="20"
+                    src="/assets/images/pages/common/googlecloud.svg"
+                  />
+                `)
+		} else if cloud.Alias == "azure" {
+			qw422016.N().S(`
+                  <img
+                    alt="Azure icon"
+                    width="20"
+                    height="20"
+                    src="/assets/images/pages/common/azure.svg"
+                  />
+                `)
+		} else if cloud.Alias == "digital-ocean" {
+			qw422016.N().S(`
+                  <img
+                    alt="Digital Ocean icon"
+                    width="20"
+                    height="20"
+                    src="/assets/images/pages/common/digitalocean.svg"
+                  />
+                `)
+		} else if cloud.Alias == "vultr" {
+			qw422016.N().S(`
+                  <img
+                    alt="Vultr icon"
+                    width="20"
+                    height="20"
+                    src="/assets/images/pages/common/vultr.svg"
+                  />
+                `)
+		}
+		qw422016.N().S(`
+              `)
+	}
+	qw422016.N().S(`
+            </figcaption>
+          </figure>
         </div>
         <div class="company-card__info-group">
           <div class="company-card__info-group-content">
