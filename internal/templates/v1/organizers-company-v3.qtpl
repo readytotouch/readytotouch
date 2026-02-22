@@ -1094,10 +1094,31 @@
   </section>
   {% endif %}
 
-  {% comment %}
-  <!-- TODO evidence -->
-  <section class="sources-evidence"></section>
-  {% endcomment %}
+  {% if len(company.TechnologyUsageReferences) > 0 %}
+  <section class="sources-evidence">
+    <div class="container sources-evidence__container">
+      <h2 class="sources-evidence__headline">Technology Usage: Sources and Evidence</h2>
+      <div class="sources">
+        {% for _, reference := range company.TechnologyUsageReferences %}
+          <a href="{%s reference.URL %}" class="sources__item" target="_blank">
+            <figure class="sources__figure">
+              <p class="sources__text">{%s reference.Title %}</p>
+              <div class="sources__image-wrapper">
+                <img
+                  class="sources__image"
+                  alt="Open in new window icon"
+                  src="/assets/images/pages/organizer/open-new-window.svg"
+                  width="12"
+                  height="12"
+                />
+              </div>
+            </figure>
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  {% endif %}
 
   <section class="company-statistics">
     <div class="container company-statistics__container">

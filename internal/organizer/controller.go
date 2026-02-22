@@ -477,6 +477,7 @@ func (c *Controller) companyAction(
 
 	company.CloudProviders = c.aggregateOrderedCloudProviders(vacancies)
 	company.GitHubRepositoryCount = languageProfile.GitHubRepositoryCount
+	company.TechnologyUsageReferences = languageProfile.TechnologyUsageReferences
 	company.Remote = company.Remote || c.anyRemoteVacancy(vacancies)
 	company.LatestVacancyDate = c.maxLanguageDate(vacancies)
 	company.PinnedUntil = languageProfile.PinnedUntil
@@ -1795,10 +1796,12 @@ func (c *Controller) companies(language domain.Language) []domain.CompanyProfile
 		var (
 			languageProfile = company.Languages[language]
 			vacancies       = languageProfile.Vacancies
+			show            = len(vacancies) > 0 ||
+				len(languageProfile.TechnologyUsageReferences) > 0 ||
+				(language == domain.Rust && company.RustFoundationMember)
 		)
 
-		// Show companies only if they have vacancies or are Rust Foundation members
-		if len(vacancies) == 0 && !(language == domain.Rust && company.RustFoundationMember) {
+		if !show {
 			continue
 		}
 
