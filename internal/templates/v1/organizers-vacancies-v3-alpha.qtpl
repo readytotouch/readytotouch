@@ -283,7 +283,7 @@
                   data-vacancy-remote="{%s strconv.FormatBool(vacancy.Remote) %}"
                   data-company-name="{%s vacancy.Company.Name %}"
                   data-company-type="{%s string(vacancy.Company.Type) %}"
-                  data-company-industries="{%s aliases(vacancy.Company.Industries) %}"
+                  data-company-industries="{%s industryAliases(vacancy.Company.Industries) %}"
                   data-company-has-employees-from-countries="{%s aliases(vacancy.Company.HasEmployeesFromCountries) %}"
                   data-company-rust-foundation-members="{%s strconv.FormatBool(vacancy.Company.RustFoundationMember) %}"
                 >

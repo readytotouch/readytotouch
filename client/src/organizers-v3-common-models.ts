@@ -7,6 +7,12 @@ export class Industry {
     ) {}
 }
 
+export interface CompanyHidden {
+    id: number;
+    industries: Industry[],
+    hidden: boolean,
+}
+
 export class CloudProvider {
     constructor(
         public readonly alias: string,
@@ -34,4 +40,16 @@ export class LocationResponse {
         public readonly country: LocationCountryResponse,
     ) {
     }
+}
+
+export function companyEmptyIndustries(company: CompanyHidden): boolean {
+    return company.industries === null || company.industries.length === 0;
+}
+
+export function companyFirstIndustry(company: CompanyHidden): Industry | null {
+    if (companyEmptyIndustries(company)) {
+        return null;
+    }
+
+    return company.industries[0];
 }

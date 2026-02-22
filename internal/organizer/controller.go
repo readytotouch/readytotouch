@@ -44,18 +44,20 @@ type (
 )
 
 type Controller struct {
-	userRepository                  *postgres.UserRepository
-	userFeatureWaitlistRepository   *postgres.UserFeatureWaitlistRepository
-	featureViewStatsRepository      *postgres.FeatureViewStatsRepository
-	userFavoriteCompanyRepository   *postgres.UserFavoriteCompanyRepository
-	userFavoriteVacancyRepository   *postgres.UserFavoriteVacancyRepository
-	companyViewDailyStatsRepository *postgres.CompanyViewDailyStatsRepository
-	vacancyViewStatsRepository      *postgres.VacancyViewStatsRepository
-	githubRepositoryStarsRepository *postgres.GithubRepositoryStarsRepository
+	userRepository                   *postgres.UserRepository
+	userFeatureWaitlistRepository    *postgres.UserFeatureWaitlistRepository
+	featureViewStatsRepository       *postgres.FeatureViewStatsRepository
+	userFavoriteCompanyRepository    *postgres.UserFavoriteCompanyRepository
+	userFavoriteVacancyRepository    *postgres.UserFavoriteVacancyRepository
+	userCompanyVisibilityRepository  *postgres.UserCompanyVisibilityRepository
+	userIndustryVisibilityRepository *postgres.UserIndustryVisibilityRepository
+	companyViewDailyStatsRepository  *postgres.CompanyViewDailyStatsRepository
+	vacancyViewStatsRepository       *postgres.VacancyViewStatsRepository
+	githubRepositoryStarsRepository  *postgres.GithubRepositoryStarsRepository
 }
 
-func NewController(userRepository *postgres.UserRepository, userFeatureWaitlistRepository *postgres.UserFeatureWaitlistRepository, featureViewStatsRepository *postgres.FeatureViewStatsRepository, userFavoriteCompanyRepository *postgres.UserFavoriteCompanyRepository, userFavoriteVacancyRepository *postgres.UserFavoriteVacancyRepository, companyViewDailyStatsRepository *postgres.CompanyViewDailyStatsRepository, vacancyViewStatsRepository *postgres.VacancyViewStatsRepository, githubRepositoryStarsRepository *postgres.GithubRepositoryStarsRepository) *Controller {
-	return &Controller{userRepository: userRepository, userFeatureWaitlistRepository: userFeatureWaitlistRepository, featureViewStatsRepository: featureViewStatsRepository, userFavoriteCompanyRepository: userFavoriteCompanyRepository, userFavoriteVacancyRepository: userFavoriteVacancyRepository, companyViewDailyStatsRepository: companyViewDailyStatsRepository, vacancyViewStatsRepository: vacancyViewStatsRepository, githubRepositoryStarsRepository: githubRepositoryStarsRepository}
+func NewController(userRepository *postgres.UserRepository, userFeatureWaitlistRepository *postgres.UserFeatureWaitlistRepository, featureViewStatsRepository *postgres.FeatureViewStatsRepository, userFavoriteCompanyRepository *postgres.UserFavoriteCompanyRepository, userFavoriteVacancyRepository *postgres.UserFavoriteVacancyRepository, userCompanyVisibilityRepository *postgres.UserCompanyVisibilityRepository, userIndustryVisibilityRepository *postgres.UserIndustryVisibilityRepository, companyViewDailyStatsRepository *postgres.CompanyViewDailyStatsRepository, vacancyViewStatsRepository *postgres.VacancyViewStatsRepository, githubRepositoryStarsRepository *postgres.GithubRepositoryStarsRepository) *Controller {
+	return &Controller{userRepository: userRepository, userFeatureWaitlistRepository: userFeatureWaitlistRepository, featureViewStatsRepository: featureViewStatsRepository, userFavoriteCompanyRepository: userFavoriteCompanyRepository, userFavoriteVacancyRepository: userFavoriteVacancyRepository, userCompanyVisibilityRepository: userCompanyVisibilityRepository, userIndustryVisibilityRepository: userIndustryVisibilityRepository, companyViewDailyStatsRepository: companyViewDailyStatsRepository, vacancyViewStatsRepository: vacancyViewStatsRepository, githubRepositoryStarsRepository: githubRepositoryStarsRepository}
 }
 
 func (c *Controller) IndexV1(ctx *gin.Context) {
@@ -760,11 +762,7 @@ func (c *Controller) ClojureCommunities(ctx *gin.Context) {
 }
 
 func (c *Controller) VacancyRedirect(ctx *gin.Context) {
-	var (
-		authUserID = domain.ContextGetUserID(ctx)
-		now        = time.Now().UTC()
-	)
-
+	authUserID := domain.ContextGetUserID(ctx)
 	if authUserID == 0 {
 		ctx.Redirect(http.StatusFound, "/golang/welcome"+c.redirect(ctx.Request.URL.Path))
 
@@ -790,7 +788,7 @@ func (c *Controller) VacancyRedirect(ctx *gin.Context) {
 	}
 
 	if authUserID > 0 {
-		err := c.vacancyViewStatsRepository.Upsert(ctx, uri.VacancyID, authUserID, now)
+		err := c.vacancyViewStatsRepository.Upsert(ctx, uri.VacancyID, authUserID, time.Now().UTC())
 		if err != nil {
 			// @TODO logging
 
@@ -819,10 +817,7 @@ func (c *Controller) WaitlistSubscribe(ctx *gin.Context) {
 		Active bool `json:"active"`
 	}
 
-	var (
-		authUserID = domain.ContextGetUserID(ctx)
-	)
-
+	authUserID := domain.ContextGetUserID(ctx)
 	if authUserID == 0 {
 		ctx.JSON(http.StatusUnauthorized, &domain.ErrorResponse{
 			ErrorMessage: "Unauthorized",
@@ -948,10 +943,7 @@ func (c *Controller) FavoriteCompany(ctx *gin.Context) {
 		return
 	}
 
-	var (
-		authUserID = domain.ContextGetUserID(ctx)
-	)
-
+	authUserID := domain.ContextGetUserID(ctx)
 	if authUserID == 0 {
 		ctx.JSON(http.StatusUnauthorized, &domain.ErrorResponse{
 			ErrorMessage: "Unauthorized",
@@ -1000,10 +992,7 @@ func (c *Controller) FavoriteVacancy(ctx *gin.Context) {
 		return
 	}
 
-	var (
-		authUserID = domain.ContextGetUserID(ctx)
-	)
-
+	authUserID := domain.ContextGetUserID(ctx)
 	if authUserID == 0 {
 		ctx.JSON(http.StatusUnauthorized, &domain.ErrorResponse{
 			ErrorMessage: "Unauthorized",
@@ -1019,6 +1008,111 @@ func (c *Controller) FavoriteVacancy(ctx *gin.Context) {
 	}
 
 	err = c.userFavoriteVacancyRepository.Upsert(ctx, authUserID, uri.VacancyID, body.Favorite, time.Now().UTC())
+	if err != nil {
+		ctx.JSON(http.StatusInternalServerError, &domain.ErrorResponse{
+			ErrorMessage: err.Error(), // Yes, we are leaking the error message to the client, it's fine for now
+		})
+		return
+	}
+
+	ctx.JSON(http.StatusOK, nil)
+}
+
+func (c *Controller) VisibilityCompany(ctx *gin.Context) {
+	type (
+		visibilityCompanyURI struct {
+			CompanyID int64 `uri:"company_id" binding:"required"`
+		}
+		visibilityCompanyRequestBody struct {
+			Visibility bool `json:"visibility"`
+		}
+	)
+
+	var (
+		uri  visibilityCompanyURI
+		body visibilityCompanyRequestBody
+	)
+
+	err := ctx.ShouldBindUri(&uri)
+	if err != nil {
+		ctx.JSON(http.StatusBadRequest, &domain.ErrorResponse{
+			ErrorMessage: err.Error(),
+		})
+		return
+	}
+
+	authUserID := domain.ContextGetUserID(ctx)
+	if authUserID == 0 {
+		ctx.JSON(http.StatusUnauthorized, &domain.ErrorResponse{
+			ErrorMessage: "Unauthorized",
+		})
+		return
+	}
+
+	if err := ctx.ShouldBindJSON(&body); err != nil {
+		ctx.JSON(http.StatusBadRequest, &domain.ErrorResponse{
+			ErrorMessage: err.Error(),
+		})
+		return
+	}
+
+	err = c.userCompanyVisibilityRepository.Upsert(ctx, authUserID, uri.CompanyID, body.Visibility, time.Now().UTC())
+	if err != nil {
+		ctx.JSON(http.StatusInternalServerError, &domain.ErrorResponse{
+			ErrorMessage: err.Error(), // Yes, we are leaking the error message to the client, it's fine for now
+		})
+		return
+	}
+
+	ctx.JSON(http.StatusOK, nil)
+}
+
+func (c *Controller) VisibilityIndustry(ctx *gin.Context) {
+	type (
+		visibilityIndustryURI struct {
+			IndustryAlias string `uri:"industry_alias" binding:"required"`
+		}
+		visibilityIndustryRequestBody struct {
+			Visibility bool `json:"visibility"`
+		}
+	)
+
+	var (
+		uri  visibilityIndustryURI
+		body visibilityIndustryRequestBody
+	)
+
+	err := ctx.ShouldBindUri(&uri)
+	if err != nil {
+		ctx.JSON(http.StatusBadRequest, &domain.ErrorResponse{
+			ErrorMessage: err.Error(),
+		})
+		return
+	}
+
+	authUserID := domain.ContextGetUserID(ctx)
+	if authUserID == 0 {
+		ctx.JSON(http.StatusUnauthorized, &domain.ErrorResponse{
+			ErrorMessage: "Unauthorized",
+		})
+		return
+	}
+
+	if err := ctx.ShouldBindJSON(&body); err != nil {
+		ctx.JSON(http.StatusBadRequest, &domain.ErrorResponse{
+			ErrorMessage: err.Error(),
+		})
+		return
+	}
+
+	industry, ok := domain.FindHiddenIndustryByAlias(uri.IndustryAlias)
+	if !ok {
+		ctx.JSON(http.StatusNotFound, &domain.ErrorResponse{
+			ErrorMessage: "Industry not found",
+		})
+	}
+
+	err = c.userIndustryVisibilityRepository.Upsert(ctx, authUserID, industry.ID, body.Visibility, time.Now().UTC())
 	if err != nil {
 		ctx.JSON(http.StatusInternalServerError, &domain.ErrorResponse{
 			ErrorMessage: err.Error(), // Yes, we are leaking the error message to the client, it's fine for now
@@ -1096,6 +1190,20 @@ func (c *Controller) UnsafeCompaniesV3(ctx *gin.Context) {
 		// NOP, continue
 	}
 
+	userCompanyVisibilityMap, err := c.userCompanyVisibilityRepository.GetMap(ctx, authUserID)
+	if err != nil {
+		logger.Error(err)
+
+		// NOP, continue
+	}
+
+	userIndustryVisibilityMap, err := c.userIndustryVisibilityRepository.GetMap(ctx, authUserID)
+	if err != nil {
+		logger.Error(err)
+
+		// NOP, continue
+	}
+
 	result := make([]domain.CompanyResponse, len(companies))
 	for i, company := range companies {
 		result[i] = domain.CompanyResponse{
@@ -1138,7 +1246,7 @@ func (c *Controller) UnsafeCompaniesV3(ctx *gin.Context) {
 			LatestVacancyDate:         utils.TimePointerOrNil(company.LatestVacancyDate),
 			GitHubRepositoryCount:     company.GitHubRepositoryCount,
 			Favorite:                  userCompanyFavoriteMap[company.ID],
-			Hidden:                    false,
+			Hidden:                    c.companyHidden(company, userCompanyVisibilityMap, userIndustryVisibilityMap),
 		}
 	}
 
@@ -1198,6 +1306,20 @@ func (c *Controller) UnsafeVacanciesV3(ctx *gin.Context) {
 		// NOP, continue
 	}
 
+	userCompanyVisibilityMap, err := c.userCompanyVisibilityRepository.GetMap(ctx, authUserID)
+	if err != nil {
+		logger.Error(err)
+
+		// NOP, continue
+	}
+
+	userIndustryVisibilityMap, err := c.userIndustryVisibilityRepository.GetMap(ctx, authUserID)
+	if err != nil {
+		logger.Error(err)
+
+		// NOP, continue
+	}
+
 	var (
 		companies               = make([]*domain.VacancyCompanyResponse, 0, len(sourceCompanies))
 		vacancies               = make([]*domain.VacancyResponse, 0, 4096)
@@ -1239,7 +1361,6 @@ func (c *Controller) UnsafeVacanciesV3(ctx *gin.Context) {
 						ID: company.ID,
 					},
 					Favorite: userVacancyFavoriteMap[id],
-					Hidden:   false,
 				})
 
 				vacancyIDs = append(vacancyIDs, id)
@@ -1267,6 +1388,7 @@ func (c *Controller) UnsafeVacanciesV3(ctx *gin.Context) {
 				Industries:                company.Industries,
 				HasEmployeesFromCountries: company.HasEmployeesFromCountries,
 				RustFoundationMember:      company.RustFoundationMember,
+				Hidden:                    c.companyHidden(company, userCompanyVisibilityMap, userIndustryVisibilityMap),
 			})
 		}
 	}
@@ -2014,4 +2136,28 @@ func (c *Controller) sitemapCompanyLastModified(vacancies []domain.Vacancy) stri
 	}
 
 	return maxVacancyDate.Format(time.DateOnly)
+}
+
+func (c *Controller) companyHidden(company domain.CompanyProfile, userCompanyVisibilityMap map[int64]bool, userIndustryVisibilityMap map[int64]bool) bool {
+	if userCompanyVisibilityMap[company.ID] {
+		return false
+	}
+
+	if len(company.Industries) == 0 {
+		return false
+	}
+
+	for _, industry := range company.Industries {
+		if userIndustryVisibilityMap[industry.ID] {
+			return false
+		}
+	}
+
+	for _, industry := range company.Industries {
+		if domain.IsIndustryHidden(industry.ID) {
+			return true
+		}
+	}
+
+	return false
 }

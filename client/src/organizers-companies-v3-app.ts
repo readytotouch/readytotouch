@@ -25,6 +25,7 @@ import {isAuth, responsiveHeaderProfileWidget} from "./responsive-header-profile
 import {responsiveFilterWidget} from "./responsive-filter-widget";
 import {addCompanyShowMoreEvent} from "./responsive-company-show-more-widget";
 import {addCompanyFavoriteEvent} from "./organizers-companies-favorite";
+import {addOverrideVisibilityEvents, renderHiddenPlaceholder} from "./organizers-override-visibility";
 
 import {parseCurrentOrganizerAlias} from "./organizer";
 import {organizersWelcome} from "./welcome";
@@ -553,6 +554,15 @@ function renderCompanies(
 
         addCompanyFavoriteEvent($company, company);
         addCompanyShowMoreEvent($company)
+
+        if (company.hidden) {
+            $company.hidden = true;
+
+            const $companyHiddenPlaceholder = htmlToNode(renderHiddenPlaceholder(company));
+            $elements.push($companyHiddenPlaceholder);
+
+            addOverrideVisibilityEvents($companyHiddenPlaceholder, $company, company, sourceCompanies);
+        }
 
         $elements.push($company);
         if (sponsored) {

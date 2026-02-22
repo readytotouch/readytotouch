@@ -156,11 +156,33 @@ type GithubRepositoryStar struct {
 	UpdatedAt       time.Time
 }
 
+type Industry struct {
+	ID        int64
+	CreatedAt time.Time
+	CreatedBy int64
+}
+
 type User struct {
 	ID        int64
 	CreatedAt time.Time
 	UpdatedAt time.Time
 	DeletedAt sql.NullTime
+}
+
+type UserCompanyVisibilityOverride struct {
+	UserID     int64
+	CompanyID  int64
+	Visibility bool
+	CreatedAt  time.Time
+	UpdatedAt  time.Time
+}
+
+type UserCompanyVisibilityOverrideHistory struct {
+	ID         int64
+	UserID     int64
+	CompanyID  int64
+	Visibility bool
+	CreatedAt  time.Time
 }
 
 type UserFavoriteCompany struct {
@@ -190,6 +212,22 @@ type UserFeatureWaitlist struct {
 type UserFeatureWaitlistStat struct {
 	Feature   FeatureWait
 	UserCount int64
+}
+
+type UserIndustryVisibilityOverride struct {
+	UserID     int64
+	IndustryID int64
+	Visibility bool
+	CreatedAt  time.Time
+	UpdatedAt  time.Time
+}
+
+type UserIndustryVisibilityOverrideHistory struct {
+	ID         int64
+	UserID     int64
+	IndustryID int64
+	Visibility bool
+	CreatedAt  time.Time
 }
 
 type UserOnlineDailyCountStat struct {

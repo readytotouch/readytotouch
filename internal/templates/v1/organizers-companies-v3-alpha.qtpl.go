@@ -386,7 +386,7 @@ func StreamOrganizersCompaniesV3Alpha(qw422016 *qt422016.Writer,
 		qw422016.E().S(string(company.Type))
 		qw422016.N().S(`"
                    data-company-industries="`)
-		qw422016.E().S(aliases(company.Industries))
+		qw422016.E().S(industryAliases(company.Industries))
 		qw422016.N().S(`"
                    data-company-has-employees-from-countries="`)
 		qw422016.E().S(aliases(company.HasEmployeesFromCountries))

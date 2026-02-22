@@ -36,6 +36,10 @@ func (r *UserFavoriteCompanyRepository) GetMap(
 	userID int64,
 	companyIDs []int64,
 ) (map[int64]bool, error) {
+	if userID == 0 {
+		return nil, nil
+	}
+
 	rows, err := r.db.Queries().UserFavoriteCompanies(ctx, dbs.UserFavoriteCompaniesParams{
 		UserID:                 userID,
 		CompanyIdsFilterExists: len(companyIDs) > 0,
