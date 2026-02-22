@@ -430,7 +430,8 @@ func (c *Controller) companyAction(
 
 	var (
 		preparedCompany   = c.toPrepareCompany(company)
-		vacancies         = company.Languages[organizerFeature.Organizer.Language].Vacancies
+		languageProfile   = company.Languages[organizerFeature.Organizer.Language]
+		vacancies         = languageProfile.Vacancies
 		preparedVacancies = make([]domain.PreparedVacancy, 0, len(vacancies))
 		vacancyIDs        = make([]int64, 0, len(vacancies))
 	)
@@ -474,7 +475,12 @@ func (c *Controller) companyAction(
 		return preparedVacancies[i].Date.After(preparedVacancies[j].Date)
 	})
 
+	company.CloudProviders = c.aggregateOrderedCloudProviders(vacancies)
+	company.GitHubRepositoryCount = languageProfile.GitHubRepositoryCount
+	company.TechnologyUsageReferences = languageProfile.TechnologyUsageReferences
+	company.Remote = company.Remote || c.anyRemoteVacancy(vacancies)
 	company.LatestVacancyDate = c.maxLanguageDate(vacancies)
+	company.PinnedUntil = languageProfile.PinnedUntil
 
 	stars, err := c.githubRepositoryStarsRepository.Default(ctx)
 	if err != nil {
@@ -1238,13 +1244,13 @@ func (c *Controller) UnsafeCompaniesV3(ctx *gin.Context) {
 			},
 			ShortDescription:          company.ShortDescription,
 			Industries:                company.Industries,
-			CloudProviders:            company.CloudProviders,
 			HasEmployeesFromCountries: company.HasEmployeesFromCountries,
 			RustFoundationMember:      company.RustFoundationMember,
-			PinnedUntil:               utils.TimePointerOrNil(company.PinnedUntil),
+			CloudProviders:            company.CloudProviders,
+			GitHubRepositoryCount:     company.GitHubRepositoryCount,
 			Remote:                    company.Remote,
 			LatestVacancyDate:         utils.TimePointerOrNil(company.LatestVacancyDate),
-			GitHubRepositoryCount:     company.GitHubRepositoryCount,
+			PinnedUntil:               utils.TimePointerOrNil(company.PinnedUntil),
 			Favorite:                  userCompanyFavoriteMap[company.ID],
 			Hidden:                    c.companyHidden(company, userCompanyVisibilityMap, userIndustryVisibilityMap),
 		}
@@ -1790,13 +1796,16 @@ func (c *Controller) companies(language domain.Language) []domain.CompanyProfile
 		var (
 			languageProfile = company.Languages[language]
 			vacancies       = languageProfile.Vacancies
+			show            = len(vacancies) > 0 ||
+				len(languageProfile.TechnologyUsageReferences) > 0 ||
+				(language == domain.Rust && company.RustFoundationMember)
 		)
 
-		// Show companies only if they have vacancies or are Rust Foundation members
-		if len(vacancies) == 0 && !(language == domain.Rust && company.RustFoundationMember) {
+		if !show {
 			continue
 		}
 
+		company.CloudProviders = c.aggregateOrderedCloudProviders(vacancies)
 		company.GitHubRepositoryCount = languageProfile.GitHubRepositoryCount
 		company.Remote = company.Remote || c.anyRemoteVacancy(vacancies)
 		company.LatestVacancyDate = c.maxLanguageDate(vacancies)
@@ -2093,6 +2102,28 @@ func (c *Controller) hasVacancies(company domain.CompanyProfile) bool {
 	}
 
 	return false
+}
+
+func (c *Controller) aggregateOrderedCloudProviders(vacancies []domain.Vacancy) []domain.CloudProvider {
+	var (
+		cloudProviderExistsMap = make(map[domain.CloudProvider]bool)
+	)
+	for _, vacancy := range vacancies {
+		for _, cloudProvider := range vacancy.CloudProviders {
+			cloudProviderExistsMap[cloudProvider] = true
+		}
+	}
+
+	var (
+		result = make([]domain.CloudProvider, 0, len(cloudProviderExistsMap))
+	)
+	for _, cloudProvider := range domain.OrderedCloudProviders {
+		if cloudProviderExistsMap[cloudProvider] {
+			result = append(result, cloudProvider)
+		}
+	}
+
+	return result
 }
 
 func (c *Controller) anyRemoteVacancy(vacancies []domain.Vacancy) bool {

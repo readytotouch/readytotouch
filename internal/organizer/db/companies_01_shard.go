@@ -6937,16 +6937,20 @@ func companies01Shard() []domain.CompanyProfile {
 			BlogURL:    "https://bitly.com/blog/why-we-write-everything-in-go/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                552285,
+				IDs:               nil,
 				Alias:             "bitly",
 				Name:              "Bitly",
-				Followers:         "37K",
+				Followers:         "46K",
 				Employees:         "201-500",
-				AssociatedMembers: "381",
+				AssociatedMembers: "337",
 				Verified:          true,
+				Date:              mustDate("2026-02-23"),
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "bitly",
-				Verified: true,
+				Login:     "bitly",
+				Followers: "101",
+				Verified:  true,
+				Date:      mustDate("2026-02-23"),
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -6971,6 +6975,12 @@ func companies01Shard() []domain.CompanyProfile {
 				domain.Go: {
 					GitHubRepositoryCount: 13,
 					Vacancies:             []domain.Vacancy{},
+					TechnologyUsageReferences: []domain.TechnologyUsageReferences{
+						{
+							Title: "Why We Write Everything in Go",
+							URL:   "https://bitly.com/blog/why-we-write-everything-in-go/",
+						},
+					},
 				},
 				domain.Rust:    {},
 				domain.Zig:     {},
