@@ -545,11 +545,11 @@ function search(replaceHTML: boolean, resetPager: boolean) {
             return false;
         }
 
-        if (!matchHasEmployeesFromCountry(vacancy)) {
+        if (!matchCloudProvider(vacancy)) {
             return false;
         }
 
-        if (!matchCloudProvider(vacancy)) {
+        if (!matchHasEmployeesFromCountry(vacancy)) {
             return false;
         }
 

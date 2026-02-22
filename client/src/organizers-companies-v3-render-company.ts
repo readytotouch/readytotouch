@@ -226,15 +226,23 @@ function industryNames(industries: Industry[]): string {
 }
 
 function renderCloudProviders(company: CompanyResponse): string {
+    const $cloudProviders = [];
+
+    if (company.cloud_providers) {
+        for (const cloudProvider of company.cloud_providers) {
+            $cloudProviders.push(cloudProviderMap[cloudProvider.alias] || '');
+        }
+    }
+
     return `<figure class="card__figure">
     <img
         class="card__icon"
-        alt="card hosting icon"
+        alt="Cloud provider icon"
         width="16"
         height="16"
         src="/assets/images/pages/organizer/clouds.svg"
     />
-    <figcaption class="card__figcaption card__figcaption--images">Unknown cloud</figcaption>
+    <figcaption class="card__figcaption card__figcaption--images">${$cloudProviders.join("") || "Unknown cloud"}</figcaption>
 </figure>`;
 
     // @TODO: implement cloud providers rendering when data is available
@@ -575,3 +583,36 @@ function toLinkedInIds(company: CompanyResponse): Array<string> {
 
     return result;
 }
+
+const cloudProviderMap = {
+    "aws": `<img
+    alt="AWS icon"
+    width="20"
+    height="20"
+    src="/assets/images/pages/common/amazon-web-services.svg"
+/>`,
+    "gcp": `<img
+    alt="GCP icon"
+    width="20"
+    height="20"
+    src="/assets/images/pages/common/googlecloud.svg"
+/>`,
+    "azure": `<img
+    alt="Azure icon"
+    width="20"
+    height="20"
+    src="/assets/images/pages/common/azure.svg"
+/>`,
+    "digital-ocean": `<img
+    alt="Digital Ocean icon"
+    width="20"
+    height="20"
+    src="/assets/images/pages/common/digitalocean.svg"
+/>`,
+    "vultr": `<img
+    alt="Vultr icon"
+    width="20"
+    height="20"
+    src="/assets/images/pages/common/vultr.svg"
+/>`,
+};

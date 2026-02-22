@@ -266,38 +266,58 @@
             />
             <figcaption class="company-card__figcaption">{%s industryNames(company.Industries) %}</figcaption>
           </figure>
-          {% comment %}
-          <!-- TODO Clouds -->
           <figure class="company-card__figure">
             <img
               class="company-card__icon"
-              alt="card hosting icon"
+              alt="Cloud provider icon"
               width="16"
               height="16"
               src="/assets/images/pages/organizer/clouds.svg"
             />
             <figcaption class="company-card__figcaption card__figcaption--images">
-              <img
-                alt="Azure icon"
-                width="20"
-                height="20"
-                src="/assets/images/pages/common/azure.svg"
-              />
-              <img
-                alt="AWS icon"
-                width="20"
-                height="20"
-                src="/assets/images/pages/common/amazon-web-services.svg"
-              />
-              <img
-                alt="GCP icon"
-                width="20"
-                height="20"
-                src="/assets/images/pages/common/googlecloud.svg"
-              />
+              {% if len(company.CloudProviders) == 0 %}
+                Unknown cloud
+              {% endif %}
+              {% for _, cloud := range company.CloudProviders %}
+                {% if cloud.Alias == "aws" %}
+                  <img
+                    alt="AWS icon"
+                    width="20"
+                    height="20"
+                    src="/assets/images/pages/common/amazon-web-services.svg"
+                  />
+                {% elseif cloud.Alias == "gcp" %}
+                  <img
+                    alt="GCP icon"
+                    width="20"
+                    height="20"
+                    src="/assets/images/pages/common/googlecloud.svg"
+                  />
+                {% elseif cloud.Alias == "azure" %}
+                  <img
+                    alt="Azure icon"
+                    width="20"
+                    height="20"
+                    src="/assets/images/pages/common/azure.svg"
+                  />
+                {% elseif cloud.Alias == "digital-ocean" %}
+                  <img
+                    alt="Digital Ocean icon"
+                    width="20"
+                    height="20"
+                    src="/assets/images/pages/common/digitalocean.svg"
+                  />
+                {% elseif cloud.Alias == "vultr" %}
+                  <img
+                    alt="Vultr icon"
+                    width="20"
+                    height="20"
+                    src="/assets/images/pages/common/vultr.svg"
+                  />
+                {% endif %}
+              {% endfor %}
             </figcaption>
           </figure>
-          {% endcomment %}
         </div>
         <div class="company-card__info-group">
           <div class="company-card__info-group-content">

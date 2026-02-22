@@ -98,6 +98,10 @@ func industryAliases(source []Industry) string {
 }
 
 func industryNames(source []Industry) string {
+	if len(source) == 0 {
+		return "Unknown industry"
+	}
+
 	result := make([]string, len(source))
 	for i, v := range source {
 		result[i] = v.Name
