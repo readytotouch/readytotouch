@@ -21,7 +21,6 @@ export class VacancyResponse {
         public readonly monthly_views: number,
         public company: VacancyCompanyResponse, // to be filled later
         public favorite: boolean,
-        public hidden: boolean,
     ) {
     }
 }
@@ -41,6 +40,7 @@ export class VacancyCompanyResponse {
         public readonly industries: Industry[],
         public readonly has_employees_from_countries: Country[],
         public readonly rust_foundation_member: boolean,
+        public hidden: boolean,
     ) {
     }
 }

@@ -187,6 +187,7 @@ type VacancyCompanyResponse struct {
 	Industries                []Industry                             `json:"industries"`
 	HasEmployeesFromCountries []Country                              `json:"has_employees_from_countries"`
 	RustFoundationMember      bool                                   `json:"rust_foundation_member"`
+	Hidden                    bool                                   `json:"hidden"`
 }
 
 type UnsafeVacancyResponse struct {
@@ -220,7 +221,6 @@ type VacancyResponse struct {
 	MonthlyViews     int64                    `json:"monthly_views"`
 	Company          CompanyReferenceResponse `json:"company"`
 	Favorite         bool                     `json:"favorite"`
-	Hidden           bool                     `json:"hidden"`
 }
 
 type GitHubProfile struct {

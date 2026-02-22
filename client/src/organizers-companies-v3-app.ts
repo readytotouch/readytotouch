@@ -25,12 +25,12 @@ import {isAuth, responsiveHeaderProfileWidget} from "./responsive-header-profile
 import {responsiveFilterWidget} from "./responsive-filter-widget";
 import {addCompanyShowMoreEvent} from "./responsive-company-show-more-widget";
 import {addCompanyFavoriteEvent} from "./organizers-companies-favorite";
-import {addCompanyOverrideVisibilityEvents} from "./organizers-companies-override-visibility";
+import {addOverrideVisibilityEvents, renderHiddenPlaceholder} from "./organizers-override-visibility";
 
 import {parseCurrentOrganizerAlias} from "./organizer";
 import {organizersWelcome} from "./welcome";
 import {CompanyResponse} from "./organizers-companies-v3-models";
-import {renderCompany, renderCompanyHiddenPlaceholder} from "./organizers-companies-v3-render-company";
+import {renderCompany} from "./organizers-companies-v3-render-company";
 import {Pager, TotalPages} from "./framework/pager";
 import Pagination from "./framework/pagination";
 import {renderSponsored, sponsoredAvailable} from "./organizers-sponsored";
@@ -558,10 +558,10 @@ function renderCompanies(
         if (company.hidden) {
             $company.hidden = true;
 
-            const $companyHiddenPlaceholder = htmlToNode(renderCompanyHiddenPlaceholder(company));
+            const $companyHiddenPlaceholder = htmlToNode(renderHiddenPlaceholder(company));
             $elements.push($companyHiddenPlaceholder);
 
-            addCompanyOverrideVisibilityEvents($companyHiddenPlaceholder, $company, company, sourceCompanies);
+            addOverrideVisibilityEvents($companyHiddenPlaceholder, $company, company, sourceCompanies);
         }
 
         $elements.push($company);

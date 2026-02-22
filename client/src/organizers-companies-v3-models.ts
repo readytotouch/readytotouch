@@ -37,18 +37,6 @@ export class CompanyResponse {
     }
 }
 
-export function companyEmptyIndustries(company: CompanyResponse): boolean {
-    return company.industries === null || company.industries.length === 0;
-}
-
-export function companyFirstIndustry(company: CompanyResponse): Industry | null {
-    if (companyEmptyIndustries(company)) {
-        return null;
-    }
-
-    return company.industries[0];
-}
-
 export class LinkedInProfileResponse {
     constructor(
         public readonly id: number,

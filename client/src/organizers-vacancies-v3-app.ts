@@ -36,12 +36,14 @@ import {Pager, TotalPages} from "./framework/pager";
 import Pagination from "./framework/pagination";
 import {addVacancyFavoriteEvent} from "./organizers-vacancies-favorite";
 import {VacancyPeriodContainer} from "./organizers-vacancy-period";
+import {addOverrideVisibilityEvents, renderHiddenPlaceholder} from "./organizers-override-visibility";
 import {renderSponsored, sponsoredAvailable} from "./organizers-sponsored";
 
 const LIMIT = 20;
 
 const currentOrganizerAlias = parseCurrentOrganizerAlias(window.location.pathname);
 
+let sourceCompanies: Array<VacancyCompanyResponse> = [];
 let sourceVacancies: Array<VacancyResponse> = [];
 let currentStateVacancies: Array<VacancyResponse> = [];
 let vacancyPeriodContainer: VacancyPeriodContainer = null;
@@ -635,6 +637,15 @@ function renderVacancies(
             }
         }
 
+        if (vacancy.company.hidden) {
+            $vacancy.hidden = true;
+
+            const $vacancyHiddenPlaceholder = htmlToNode(renderHiddenPlaceholder(vacancy.company));
+            $elements.push($vacancyHiddenPlaceholder);
+
+            addOverrideVisibilityEvents($vacancyHiddenPlaceholder, $vacancy, vacancy.company, sourceCompanies);
+        }
+
         $elements.push($vacancy);
         if (sponsored) {
             $elements.push(htmlToNode(renderSponsored("job")))
@@ -657,6 +668,7 @@ function init(vacancies: Array<VacancyResponse>, companies: Array<VacancyCompany
         vacancy.company = companyMap[vacancy.company.id];
     }
 
+    sourceCompanies = companies;
     sourceVacancies = vacancies;
 
     /*

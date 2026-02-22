@@ -1,37 +1,10 @@
 import {Industry} from "./organizers-v3-common-models";
-import {companyFirstIndustry, CompanyResponse} from "./organizers-companies-v3-models";
+import {CompanyResponse} from "./organizers-companies-v3-models";
 import {findOrganizer, parseCurrentOrganizerAlias} from "./organizer";
 import {UkraineUniversities, CzechiaUniversities} from "./universities";
 import {defaultDateFormatter, prettyDateFormatter} from "./organizers-date";
 
 const currentOrganizer = findOrganizer(parseCurrentOrganizerAlias(window.location.pathname));
-
-export function renderCompanyHiddenPlaceholder(company: CompanyResponse): string {
-    // Should be unreachable, but just in case
-    const industry = companyFirstIndustry(company);
-    if (industry === null) {
-        return "";
-    }
-
-    return `<div class="card hidden-card">
-    <figure class="hidden-card__body">
-        <img
-            alt="Lock icon"
-            width="28"
-            height="36"
-            src="/assets/images/pages/organizer/lock.svg"
-            class="hidden-card__image"
-        />
-        <figcaption class="hidden-card__caption">
-            <p class="hidden-card__text">Company hidden due to ${industry} industry</p>
-            <div class="hidden-card__action">
-                <button class="button button--black button--small button--x-small-padding hidden-card__action-button js-override-industry-visibility-button" type="button">Show all companies in this industry</button>
-                <button class="button button--small button--x-small-padding button--bordered-black-transparent hidden-card__action-button js-override-company-visibility-button">Show just this company</button>
-            </div>
-        </figcaption>
-    </figure>
-</div>`;
-}
 
 export function renderCompany(company: CompanyResponse, sponsored: boolean): string {
     const companyURL = `/golang/companies/${company.linkedin_profile.alias}`;

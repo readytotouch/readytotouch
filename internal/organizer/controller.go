@@ -1306,6 +1306,20 @@ func (c *Controller) UnsafeVacanciesV3(ctx *gin.Context) {
 		// NOP, continue
 	}
 
+	userCompanyVisibilityMap, err := c.userCompanyVisibilityRepository.GetMap(ctx, authUserID)
+	if err != nil {
+		logger.Error(err)
+
+		// NOP, continue
+	}
+
+	userIndustryVisibilityMap, err := c.userIndustryVisibilityRepository.GetMap(ctx, authUserID)
+	if err != nil {
+		logger.Error(err)
+
+		// NOP, continue
+	}
+
 	var (
 		companies               = make([]*domain.VacancyCompanyResponse, 0, len(sourceCompanies))
 		vacancies               = make([]*domain.VacancyResponse, 0, 4096)
@@ -1347,7 +1361,6 @@ func (c *Controller) UnsafeVacanciesV3(ctx *gin.Context) {
 						ID: company.ID,
 					},
 					Favorite: userVacancyFavoriteMap[id],
-					Hidden:   false,
 				})
 
 				vacancyIDs = append(vacancyIDs, id)
@@ -1375,6 +1388,7 @@ func (c *Controller) UnsafeVacanciesV3(ctx *gin.Context) {
 				Industries:                company.Industries,
 				HasEmployeesFromCountries: company.HasEmployeesFromCountries,
 				RustFoundationMember:      company.RustFoundationMember,
+				Hidden:                    c.companyHidden(company, userCompanyVisibilityMap, userIndustryVisibilityMap),
 			})
 		}
 	}
