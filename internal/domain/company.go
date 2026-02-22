@@ -156,13 +156,13 @@ type CompanyResponse struct {
 	GlassdoorProfile          GlassdoorProfileResponse `json:"glassdoor_profile"`
 	ShortDescription          string                   `json:"short_description"`
 	Industries                []Industry               `json:"industries"`
-	CloudProviders            []CloudProvider          `json:"cloud_providers"`
 	HasEmployeesFromCountries []Country                `json:"has_employees_from_countries"`
 	RustFoundationMember      bool                     `json:"rust_foundation_member"`
-	PinnedUntil               *time.Time               `json:"pinned_until"`
+	CloudProviders            []CloudProvider          `json:"cloud_providers"`
+	GitHubRepositoryCount     int                      `json:"github_repository_count"`
 	Remote                    bool                     `json:"remote"`
 	LatestVacancyDate         *time.Time               `json:"latest_vacancy_date"`
-	GitHubRepositoryCount     int                      `json:"github_repository_count"`
+	PinnedUntil               *time.Time               `json:"pinned_until"`
 	Favorite                  bool                     `json:"favorite"`
 	Hidden                    bool                     `json:"hidden"`
 }
@@ -340,15 +340,15 @@ type CompanyProfile struct {
 	GoogleFinanceURL          string // Market cap, etc.
 	YCombinatorURL            string // YC profile
 	Industries                []Industry
-	CloudProviders            []CloudProvider
 	HasEmployeesFromCountries []Country
 	RustFoundationMember      bool // https://foundation.rust-lang.org/members/
 	Ignore                    bool
 	SyncSources               []CompanySyncSource
-	GitHubRepositoryCount     int       // Populated on the fly from the language profile
-	Remote                    bool      // Populated on the fly if at least one remote job exists in the language profile
-	LatestVacancyDate         time.Time // Populated on the fly from the language profile
-	PinnedUntil               time.Time // Populated on the fly from the language profile
+	CloudProviders            []CloudProvider // Populated on the fly from the language profile
+	GitHubRepositoryCount     int             // Populated on the fly from the language profile
+	Remote                    bool            // Populated on the fly if at least one remote job exists in the language profile
+	LatestVacancyDate         time.Time       // Populated on the fly from the language profile
+	PinnedUntil               time.Time       // Populated on the fly from the language profile
 }
 
 type UnsafeCompaniesResponse struct {

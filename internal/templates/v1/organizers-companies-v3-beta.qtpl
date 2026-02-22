@@ -199,11 +199,9 @@
               {%= organizersCriteriaLinkedInCompanySize() %}
               <!-- /Company size -->
 
-              {% comment %}
               <!-- Hosting -->
-              <!-- @TODO -->
+              {%= organizersCriteriaCloudProvider() %}
               <!-- /Hosting -->
-              {% endcomment %}
 
               {% comment %}
               <!-- API Type -->

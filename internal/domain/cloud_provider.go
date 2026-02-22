@@ -44,3 +44,13 @@ var (
 		Name:  "Cloudflare",
 	}
 )
+
+var (
+	OrderedCloudProviders = []CloudProvider{
+		AWS,
+		GCP,
+		Azure,
+		DigitalOcean,
+		Vultr,
+	}
+)
