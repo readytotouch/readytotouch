@@ -5,6 +5,9 @@ import {Industry} from "./organizers-v3-common-models";
 function overrideCompanyVisibility(companyId: number, callback: () => void) {
     fetch(`/api/v1/companies/${companyId}/visibility.json`, {
         method: "PATCH",
+        body: JSON.stringify({
+            visibility: true,
+        }),
     }).then(function (response) {
         // Unauthorized
         if (response.status === 401) {
@@ -20,6 +23,9 @@ function overrideCompanyVisibility(companyId: number, callback: () => void) {
 function overrideIndustryVisibility(industryAlias: string, callback: () => void) {
     fetch(`/api/v1/industries/${industryAlias}/visibility.json`, {
         method: "PATCH",
+        body: JSON.stringify({
+            visibility: true,
+        }),
     }).then(function (response) {
         // Unauthorized
         if (response.status === 401) {
