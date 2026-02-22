@@ -1,5 +1,5 @@
 import {Industry} from "./organizers-v3-common-models";
-import {CompanyResponse} from "./organizers-companies-v3-models";
+import {companyFirstIndustry, CompanyResponse} from "./organizers-companies-v3-models";
 import {findOrganizer, parseCurrentOrganizerAlias} from "./organizer";
 import {UkraineUniversities, CzechiaUniversities} from "./universities";
 import {defaultDateFormatter, prettyDateFormatter} from "./organizers-date";
@@ -8,7 +8,7 @@ const currentOrganizer = findOrganizer(parseCurrentOrganizerAlias(window.locatio
 
 export function renderCompanyHiddenPlaceholder(company: CompanyResponse): string {
     // Should be unreachable, but just in case
-    const industry = company.firstIndustry();
+    const industry = companyFirstIndustry(company);
     if (industry === null) {
         return "";
     }

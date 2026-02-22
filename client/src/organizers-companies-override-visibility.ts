@@ -1,5 +1,5 @@
 import {organizersWelcome} from "./welcome";
-import {CompanyResponse} from "./organizers-companies-v3-models";
+import {companyEmptyIndustries, companyFirstIndustry, CompanyResponse} from "./organizers-companies-v3-models";
 import {Industry} from "./organizers-v3-common-models";
 
 function overrideCompanyVisibility(companyId: number, callback: () => void) {
@@ -58,7 +58,7 @@ function showAllCompanies(sourceCompanies: Array<CompanyResponse>, currentCompan
             return;
         }
 
-        if (sourceCompany.emptyIndustries()) {
+        if (companyEmptyIndustries(sourceCompany)) {
             return;
         }
 
@@ -85,7 +85,7 @@ function addOverrideIndustryVisibilityEvent(
 
     $button
         .addEventListener("click", function () {
-            const currentCompanyFirstIndustry = currentCompany.firstIndustry();
+            const currentCompanyFirstIndustry = companyFirstIndustry(currentCompany);
             if (currentCompanyFirstIndustry === null) {
                 return;
             }

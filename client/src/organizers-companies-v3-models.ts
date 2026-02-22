@@ -35,18 +35,18 @@ export class CompanyResponse {
         public hidden: boolean,
     ) {
     }
+}
 
-    public emptyIndustries(): boolean {
-        return this.industries === null || this.industries.length === 0;
+export function companyEmptyIndustries(company: CompanyResponse): boolean {
+    return company.industries === null || company.industries.length === 0;
+}
+
+export function companyFirstIndustry(company: CompanyResponse): Industry | null {
+    if (companyEmptyIndustries(company)) {
+        return null;
     }
 
-    public firstIndustry(): Industry | null {
-        if (this.emptyIndustries()) {
-            return null;
-        }
-
-        return this.industries[0];
-    }
+    return company.industries[0];
 }
 
 export class LinkedInProfileResponse {
