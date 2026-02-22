@@ -430,7 +430,8 @@ func (c *Controller) companyAction(
 
 	var (
 		preparedCompany   = c.toPrepareCompany(company)
-		vacancies         = company.Languages[organizerFeature.Organizer.Language].Vacancies
+		languageProfile   = company.Languages[organizerFeature.Organizer.Language]
+		vacancies         = languageProfile.Vacancies
 		preparedVacancies = make([]domain.PreparedVacancy, 0, len(vacancies))
 		vacancyIDs        = make([]int64, 0, len(vacancies))
 	)
@@ -474,7 +475,11 @@ func (c *Controller) companyAction(
 		return preparedVacancies[i].Date.After(preparedVacancies[j].Date)
 	})
 
+	company.CloudProviders = c.aggregateOrderedCloudProviders(vacancies)
+	company.GitHubRepositoryCount = languageProfile.GitHubRepositoryCount
+	company.Remote = company.Remote || c.anyRemoteVacancy(vacancies)
 	company.LatestVacancyDate = c.maxLanguageDate(vacancies)
+	company.PinnedUntil = languageProfile.PinnedUntil
 
 	stars, err := c.githubRepositoryStarsRepository.Default(ctx)
 	if err != nil {
