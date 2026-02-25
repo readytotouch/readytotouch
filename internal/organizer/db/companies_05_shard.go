@@ -601,6 +601,17 @@ func companies05Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $100k/yr - $140k/yr
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Golang Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4376491969/",
+							Location:             "Allen, TX",
+							CloudProviders:       []domain.CloudProvider{domain.GCP},
+							Date:                 mustDate("2026-02-25"),
+							WithSalary:           true, // $92k/yr - $140k/yr
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust: {},

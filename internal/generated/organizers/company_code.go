@@ -1364,6 +1364,11 @@ var (
 		"paysafe":                             1364, // Paysafe
 		"lookout":                             1365, // Lookout
 		"metalbearco":                         1366, // MetalBear
+		"mx51":                                1367, // mx51
+		"birdapp":                             1368, // Bird
+		"equativ":                             1369, // Equativ
+		"checkboxai":                          1370, // Checkbox
+		"grocery-tv":                          1371, // Grocery TV
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 
