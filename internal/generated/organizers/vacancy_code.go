@@ -496,6 +496,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4354240183/":                                                               3861, // gymondo-gmbh
 		"https://www.linkedin.com/jobs/view/4356053613/":                                                               3924, // gymondo-gmbh
 		"https://www.linkedin.com/jobs/view/4363241466/":                                                               4067, // gymondo-gmbh
+		"https://www.linkedin.com/jobs/view/4375239115/":                                                               4163, // gymondo-gmbh
 		"https://www.linkedin.com/jobs/view/4023882932/":                                                               13,   // delivery-hero-se
 		"https://www.linkedin.com/jobs/view/4148753946/":                                                               802,  // delivery-hero-se
 		"https://www.linkedin.com/jobs/view/4148759219/":                                                               803,  // delivery-hero-se
@@ -3175,6 +3176,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4214931469/":                                                               1698, // togethercomputer
 		"https://www.linkedin.com/jobs/view/4177515860/":                                                               1573, // togethercomputer
 		"https://www.linkedin.com/jobs/view/4327666626/":                                                               3633, // togethercomputer
+		"https://www.linkedin.com/jobs/view/4374991437/":                                                               4164, // togethercomputer
 		"https://www.linkedin.com/jobs/view/4362764491/":                                                               3806, // telnyx
 		"https://www.linkedin.com/jobs/view/4211721655/":                                                               1574, // telnyx
 		"https://www.linkedin.com/jobs/view/4226344237/":                                                               1854, // telnyx
@@ -3350,6 +3352,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4364228470/":                                                               3823, // pdq-com
 		"https://www.linkedin.com/jobs/view/4366300800/":                                                               3926, // pdq-com
 		"https://www.linkedin.com/jobs/view/4369450388/":                                                               4012, // pdq-com
+		"https://www.linkedin.com/jobs/view/4375652214/":                                                               4165, // pdq-com
 		"https://www.linkedin.com/jobs/view/4219694154/":                                                               1784, // true-anomaly
 		"https://www.linkedin.com/jobs/view/4273981223/":                                                               2478, // true-anomaly
 		"https://www.linkedin.com/jobs/view/4281934098/":                                                               2664, // true-anomaly
@@ -3861,6 +3864,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4279000425/":                                                               2984, // capco
 		"https://www.linkedin.com/jobs/view/4298961123/":                                                               2985, // facilitapay
 		"https://www.linkedin.com/jobs/view/4370718005/":                                                               4035, // facilitapay
+		"https://www.linkedin.com/jobs/view/4374096807/":                                                               4166, // facilitapay
 		"https://www.linkedin.com/jobs/view/4299028566/":                                                               2986, // mckesson
 		"https://www.linkedin.com/jobs/view/4286318398/":                                                               2987, // poweredbycommerce
 		"https://www.linkedin.com/jobs/view/4337919671/":                                                               3377, // poweredbycommerce

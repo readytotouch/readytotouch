@@ -2251,6 +2251,17 @@ func companies21Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Team Lead Software Engineer – Elixir | Phoenix",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4374096807/",
+							Location:             "Brazil",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-20"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Clojure: {
