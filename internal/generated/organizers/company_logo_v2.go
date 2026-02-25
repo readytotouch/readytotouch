@@ -404,6 +404,7 @@ var (
 		"exabeam":                             "",
 		"exasol-ag":                           "exasol-ag.png",
 		"exein":                               "exein.png",
+		"exinity":                             "exinity.png",
 		"expedia":                             "",
 		"experian":                            "experian.jpeg",
 		"expressvpn":                          "expressvpn.jpeg",

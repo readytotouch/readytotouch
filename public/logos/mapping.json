@@ -2400,6 +2400,12 @@
     "destination_72x72": "exein.png"
   },
   {
+    "alias": "exinity",
+    "source": "exinity-256x256.png",
+    "destination": "exinity.png",
+    "destination_72x72": "exinity.png"
+  },
+  {
     "alias": "expedia",
     "source": "",
     "destination": "",

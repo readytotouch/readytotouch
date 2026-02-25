@@ -328,6 +328,17 @@ func companies24Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4377062327/",
+							Location:             "Greater Kolkata Area",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-25"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
@@ -1582,6 +1593,92 @@ func companies24Shard() []domain.CompanyProfile {
 				},
 			},
 			ShortDescription: "Platform for payments and banking",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
+		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Exinity",
+			BaseURL:    "https://www.exinity.com/",
+			CareersURL: "",
+			AboutURL:   "",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                34900724,
+				IDs:               nil,
+				Alias:             "exinity",
+				Name:              "Exinity",
+				Followers:         "59K",
+				Employees:         "501-1K",
+				AssociatedMembers: "848",
+				Verified:          true,
+				Date:              mustDate("2026-02-26"),
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Golang Developer",
+							ShortDescription:     "Trading Systems",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4376577496/",
+							Location:             "Limassol, Limassol, Cyprus",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-24"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "",
 			Industries: []domain.Industry{
 				domain.IndustryFinTech,
 			},

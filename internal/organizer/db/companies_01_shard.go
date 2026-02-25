@@ -5872,6 +5872,17 @@ func companies01Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $103.8k/yr - $174.8k/yr
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Golang developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4358347110/",
+							Location:             "Bengaluru South, Karnataka, India",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-22"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {},

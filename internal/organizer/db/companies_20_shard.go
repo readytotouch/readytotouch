@@ -828,6 +828,17 @@ func companies20Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Developer Backend Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4374518165/",
+							Location:             "Madrid, Community of Madrid, Spain",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-24"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
