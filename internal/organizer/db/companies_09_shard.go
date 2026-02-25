@@ -3755,6 +3755,17 @@ func companies09Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $160k/yr - $200k/yr
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Flight Software Engineer (Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4374154313/",
+							Location:             "Santa Barbara, CA",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-25"),
+							WithSalary:           true, // $160k/yr - $200k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig:     {},

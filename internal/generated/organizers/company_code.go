@@ -1363,6 +1363,7 @@ var (
 		"glovo-app":                           1363, // Glovo
 		"paysafe":                             1364, // Paysafe
 		"lookout":                             1365, // Lookout
+		"metalbearco":                         1366, // MetalBear
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

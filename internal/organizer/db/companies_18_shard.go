@@ -2078,6 +2078,17 @@ func companies18Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $100k/yr - $160k/yr
 							Remote:               false,
 						},
+						{
+							Title:                "Staff Software Engineer Rust",
+							ShortDescription:     "Microservices",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4375858474/",
+							Location:             "Santa Clara, CA",
+							CloudProviders:       []domain.CloudProvider{domain.AWS, domain.GCP, domain.Azure},
+							Date:                 mustDate("2026-02-21"),
+							WithSalary:           true, // $200k/yr - $250k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig: {
@@ -4791,7 +4802,7 @@ func companies18Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4359486391/",
 							Location:             "Bengaluru, Karnataka, India",
-							Date:                 mustDate("2026-02-01", "2026-01-10"),
+							Date:                 mustDate("2026-02-23", "2026-02-01", "2026-01-10"),
 							WithSalary:           false,
 							Remote:               false,
 						},

@@ -4224,6 +4224,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "metalbearco",
+    "source": "metalbearco-180x180.png",
+    "destination": "metalbearco.png",
+    "destination_72x72": "metalbearco.png"
+  },
+  {
     "alias": "metric-app",
     "source": "",
     "destination": "",

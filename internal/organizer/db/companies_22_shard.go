@@ -2792,7 +2792,7 @@ func companies22Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4367560002/",
 							Location:             "Tokyo, Japan",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-02-08", "2026-02-03"),
+							Date:                 mustDate("2026-02-24", "2026-02-08", "2026-02-03"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -5944,7 +5944,7 @@ func companies22Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4351981488/",
 							Location:             "San Francisco Bay Area",
-							Date:                 mustDate("2026-01-09"),
+							Date:                 mustDate("2026-02-25", "2026-01-09"),
 							WithSalary:           true, // $175k/yr - $215k/yr
 							Remote:               false,
 						},
@@ -6447,6 +6447,17 @@ func companies22Shard() []domain.CompanyProfile {
 							Location:             "San Diego, CA",
 							Date:                 mustDate("2025-12-11"),
 							WithSalary:           true, // $150k/yr - $170k/yr
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Embedded Software Engineer – Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4375761320/",
+							Location:             "San Diego, CA",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-24"),
+							WithSalary:           true, // $170k/yr - $190k/yr
 							Remote:               false,
 						},
 					},

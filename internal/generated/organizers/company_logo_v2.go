@@ -708,6 +708,7 @@ var (
 		"mercuryhq":                           "",
 		"meta":                                "",
 		"metabase":                            "",
+		"metalbearco":                         "metalbearco.png",
 		"metric-app":                          "",
 		"microsoft":                           "microsoft.jpeg",
 		"milestone-systems":                   "milestone-systems.jpeg",
