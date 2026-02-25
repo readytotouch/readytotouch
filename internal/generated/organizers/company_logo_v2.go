@@ -888,6 +888,7 @@ var (
 		"pindrop":                             "",
 		"pinecone-io":                         "",
 		"pinterest":                           "pinterest.jpeg",
+		"pismo":                               "pismo.jpeg",
 		"pitchhq":                             "",
 		"pixellotltd":                         "",
 		"pizza-hut":                           "pizza-hut.jpeg",

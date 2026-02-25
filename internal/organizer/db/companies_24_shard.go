@@ -1500,5 +1500,91 @@ func companies24Shard() []domain.CompanyProfile {
 				domain.IndustryAdTech,
 			},
 		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Pismo",
+			BaseURL:    "https://www.pismo.io/",
+			CareersURL: "https://www.pismo.io/careers/",
+			AboutURL:   "https://www.pismo.io/about-us/",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3844919,
+				IDs:               nil,
+				Alias:             "pismo",
+				Name:              "Pismo",
+				Followers:         "63K",
+				Employees:         "201-500",
+				AssociatedMembers: "575",
+				Verified:          true,
+				Date:              mustDate("2026-02-26"),
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer – Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4374303417/",
+							Location:             "Warsaw, Mazowieckie, Poland",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-20"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Platform for payments and banking",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
+		},
 	}
 }

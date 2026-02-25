@@ -394,6 +394,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4315833479/":                                                               3341, // sentinelone
 		"https://www.linkedin.com/jobs/view/4341994444/":                                                               3463, // sentinelone
 		"https://www.linkedin.com/jobs/view/4343301005/":                                                               3859, // sentinelone
+		"https://www.linkedin.com/jobs/view/4375662006/":                                                               4196, // sentinelone
 		"https://www.linkedin.com/jobs/view/4093231440/":                                                               415,  // uber-com
 		"https://www.indeed.com/viewjob?jk=4a8e1837ebf1a386":                                                           1278, // uber-com
 		"https://www.linkedin.com/jobs/view/4103717982/":                                                               213,  // siemens
@@ -672,6 +673,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4273333426/":                                                               3128, // sumup
 		"https://www.linkedin.com/jobs/view/4311451114/":                                                               3487, // sumup
 		"https://www.linkedin.com/jobs/view/4344862234/":                                                               3749, // sumup
+		"https://www.linkedin.com/jobs/view/4373144455/":                                                               4197, // sumup
 		"https://www.linkedin.com/jobs/view/4056886705/":                                                               16,   // sumup
 		"https://www.linkedin.com/jobs/view/4054449086/":                                                               569,  // sumup
 		"https://www.linkedin.com/jobs/view/3897014183/":                                                               335,  // levelhome
@@ -2541,6 +2543,7 @@ var (
 		"https://www.indeed.com/viewjob?jk=49493d2b5c6012d7":                                                           1283, // tesla-motors
 		"https://www.linkedin.com/jobs/view/4274114055/":                                                               2476, // tesla-motors
 		"https://www.linkedin.com/jobs/view/4336574561/":                                                               3454, // tesla-motors
+		"https://www.linkedin.com/jobs/view/4375474637/":                                                               4198, // tesla-motors
 		"https://www.linkedin.com/jobs/view/4146191943/":                                                               889,  // tesla-motors
 		"https://www.linkedin.com/jobs/view/4211271247/":                                                               1620, // tesla-motors
 		"https://www.linkedin.com/jobs/view/4080573355/":                                                               902,  // dhl
@@ -4053,6 +4056,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4326711280/":                                                               3593, // spoton
 		"https://www.linkedin.com/jobs/view/4330890856/":                                                               3776, // spoton
 		"https://www.linkedin.com/jobs/view/4363373884/":                                                               3888, // spoton
+		"https://www.linkedin.com/jobs/view/4375623798/":                                                               4199, // spoton
 		"https://www.linkedin.com/jobs/view/4336898660/":                                                               3500, // nebul
 		"https://www.linkedin.com/jobs/view/4342869486/":                                                               3594, // nebul
 		"https://www.linkedin.com/jobs/view/4368205094/":                                                               3979, // nebul
@@ -4191,6 +4195,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4368197876/":                                                               4190, // equativ
 		"https://www.linkedin.com/jobs/view/4375718420/":                                                               4192, // checkboxai
 		"https://www.linkedin.com/jobs/view/4376157523/":                                                               4195, // grocery-tv
+		"https://www.linkedin.com/jobs/view/4374303417/":                                                               4200, // pismo
 		"https://www.linkedin.com/jobs/view/3914839625/":                                                               372,  // cognizant
 		"https://www.linkedin.com/jobs/view/4120737001/":                                                               600,  // cognizant
 		"https://www.linkedin.com/jobs/view/4149258542/":                                                               787,  // cognizant

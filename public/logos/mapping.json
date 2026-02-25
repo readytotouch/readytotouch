@@ -5304,6 +5304,12 @@
     "destination_72x72": "pinterest.jpeg"
   },
   {
+    "alias": "pismo",
+    "source": "pismo-200x200.jpeg",
+    "destination": "pismo.jpeg",
+    "destination_72x72": "pismo.jpeg"
+  },
+  {
     "alias": "pitchhq",
     "source": "",
     "destination": "",
