@@ -1983,7 +1983,7 @@ func companies06Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4369271029/",
 							Location:             "Valparaíso, Valparaiso Region, Chile",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-02-05"),
+							Date:                 mustDate("2026-02-22", "2026-02-05"),
 							WithSalary:           false,
 							Remote:               false,
 						},

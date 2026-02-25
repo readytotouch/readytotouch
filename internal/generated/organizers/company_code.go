@@ -1362,6 +1362,7 @@ var (
 		"six-robotics":                        1362, // Six Robotics
 		"glovo-app":                           1363, // Glovo
 		"paysafe":                             1364, // Paysafe
+		"lookout":                             1365, // Lookout
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

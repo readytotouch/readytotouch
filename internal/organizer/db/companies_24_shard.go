@@ -908,5 +908,79 @@ func companies24Shard() []domain.CompanyProfile {
 			},
 			Ignore: true, // Blockchain
 		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Lookout",
+			BaseURL:    "https://www.lookout.com/",
+			CareersURL: "https://www.lookout.com/careers/join-our-team",
+			AboutURL:   "https://www.lookout.com/company/about-lookout",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                824768,
+				IDs:               []int{824768, 9317165},
+				Alias:             "lookout",
+				Name:              "Lookout",
+				Followers:         "66K",
+				Employees:         "201-500",
+				AssociatedMembers: "520",
+				Verified:          true,
+				Date:              mustDate("2026-02-26"),
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "",
+			Industries: []domain.Industry{
+				domain.IndustryCyberSecurity,
+			},
+		},
 	}
 }

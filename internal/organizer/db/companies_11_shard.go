@@ -4232,11 +4232,22 @@ func companies11Shard() []domain.CompanyProfile {
 					GitHubRepositoryCount: 5,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Senior Backend Clojure Engineer (m/f/d)",
+							Title:                "Senior Backend Clojure Engineer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4128083196/",
 							Date:                 mustDate("2025-02-07"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+						{
+							Title:                "Clojure Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4377838618/",
+							Location:             "Berlin, Berlin, Germany",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-25"),
 							WithSalary:           false,
 							Remote:               true,
 						},

@@ -3948,6 +3948,12 @@
     "destination_72x72": "lonely-planet.jpeg"
   },
   {
+    "alias": "lookout",
+    "source": "lookout-200x200.jpeg",
+    "destination": "lookout.jpeg",
+    "destination_72x72": "lookout.jpeg"
+  },
+  {
     "alias": "loopme",
     "source": "loopme-180x180.webp",
     "destination": "loopme.png",

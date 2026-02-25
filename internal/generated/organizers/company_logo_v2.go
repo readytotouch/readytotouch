@@ -662,6 +662,7 @@ var (
 		"lobster-robotics":                    "",
 		"london-stock-exchange-group":         "",
 		"lonely-planet":                       "lonely-planet.jpeg",
+		"lookout":                             "lookout.jpeg",
 		"loopme":                              "loopme.png",
 		"los-alamos-national-laboratory":      "",
 		"lotusretails":                        "",
