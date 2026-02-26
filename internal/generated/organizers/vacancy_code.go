@@ -2982,6 +2982,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4355313628/":                                                               3876, // adjoe
 		"https://www.linkedin.com/jobs/view/4357740745/":                                                               3976, // adjoe
 		"https://www.linkedin.com/jobs/view/4363073046/":                                                               4051, // adjoe
+		"https://www.linkedin.com/jobs/view/4373756979/":                                                               4223, // adjoe
 		"https://www.linkedin.com/jobs/view/4192297683/":                                                               1314, // docebo
 		"https://www.linkedin.com/jobs/view/4205969730/":                                                               1696, // docebo
 		"https://www.linkedin.com/jobs/view/4205975145/":                                                               1816, // docebo

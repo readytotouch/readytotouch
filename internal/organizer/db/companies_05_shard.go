@@ -2974,7 +2974,7 @@ func companies05Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4358288071/",
 							Location:             "Brno, South Moravia, Czechia",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-02-03", "2026-01-29"),
+							Date:                 mustDate("2026-02-25", "2026-02-03", "2026-01-29"),
 							WithSalary:           false,
 							Remote:               false,
 						},
