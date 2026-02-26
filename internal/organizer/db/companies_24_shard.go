@@ -1769,5 +1769,91 @@ func companies24Shard() []domain.CompanyProfile {
 				// NOP
 			},
 		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "FeedMe",
+			BaseURL:    "https://feedme.ai/",
+			CareersURL: "https://feedme.ai/company/career",
+			AboutURL:   "https://feedme.ai/company/about",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                68880880,
+				IDs:               nil,
+				Alias:             "feedme-pos-sdn-bhd",
+				Name:              "FeedMe",
+				Followers:         "8K",
+				Employees:         "51-200",
+				AssociatedMembers: "64",
+				Verified:          true,
+				Date:              mustDate("2026-02-26"),
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer",
+							ShortDescription:     "Willingness and enthusiasm to learn and write Go (Golang)",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4374571187/",
+							Location:             "Johor Bahru, Johore, Malaysia",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-25"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "We manage to help F&B owners sell online, manage inventory, run a busy kitchen, book appointments, engage loyal customers, cut their labour costs, and improve their operation hassle",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
 	}
 }

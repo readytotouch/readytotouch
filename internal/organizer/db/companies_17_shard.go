@@ -399,7 +399,22 @@ func companies17Shard() []domain.CompanyProfile {
 				Alias: "Epic-Games",
 			},
 			Languages: domain.Languages{
-				domain.Go: {},
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Backend Engineer",
+							ShortDescription:     "Expert knowledge of Go (Golang) for backend services",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4374319918/",
+							Location:             "Cary, NC",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-21"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
 				domain.Rust: {
 					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{

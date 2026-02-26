@@ -1372,6 +1372,7 @@ var (
 		"pismo":                               1372, // Pismo
 		"exinity":                             1373, // Exinity
 		"graphcore":                           1374, // Graphcore
+		"feedme-pos-sdn-bhd":                  1375, // FeedMe
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

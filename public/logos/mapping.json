@@ -2478,6 +2478,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "feedme-pos-sdn-bhd",
+    "source": "feedme-200x200.jpeg",
+    "destination": "feedme-pos-sdn-bhd.jpeg",
+    "destination_72x72": "feedme-pos-sdn-bhd.jpeg"
+  },
+  {
     "alias": "ferretdb",
     "source": "",
     "destination": "",

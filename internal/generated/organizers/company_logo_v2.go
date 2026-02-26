@@ -417,6 +417,7 @@ var (
 		"fanatics-inc-":                       "fanatics-inc-.jpeg",
 		"fastly":                              "fastly.jpeg",
 		"fathom-io":                           "",
+		"feedme-pos-sdn-bhd":                  "feedme-pos-sdn-bhd.jpeg",
 		"ferretdb":                            "",
 		"fetcherr-ltd":                        "fetcherr-ltd.png",
 		"fico":                                "fico.png",

@@ -144,6 +144,7 @@ var (
 		"https://www.linkedin.com/jobs/view/3996818515/":                                                               7,    // crowdstrike
 		"https://www.linkedin.com/jobs/view/4174424253/":                                                               1044, // crowdstrike
 		"https://www.linkedin.com/jobs/view/4196407915/":                                                               1359, // crowdstrike
+		"https://www.linkedin.com/jobs/view/4356772225/":                                                               4224, // crowdstrike
 		"https://www.linkedin.com/jobs/view/4040870810/":                                                               8,    // crowdstrike
 		"https://www.linkedin.com/jobs/view/4258100881/":                                                               2844, // crowdstrike
 		"https://www.linkedin.com/jobs/view/4306506648/":                                                               3066, // crowdstrike
@@ -3071,6 +3072,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4132287368/":                                                               1405, // knime
 		"https://app.welcometothejungle.com/jobs/Go06Evd5":                                                             1406, // twitch-tv
 		"https://app.welcometothejungle.com/jobs/0rHV8iDA":                                                             3903, // twitch-tv
+		"https://www.linkedin.com/jobs/view/4325252246/":                                                               4225, // twitch-tv
 		"https://app.welcometothejungle.com/jobs/ogHfGiQ_":                                                             1407, // assembledhq
 		"https://app.welcometothejungle.com/jobs/sAXtqwnY":                                                             3904, // assembledhq
 		"https://app.welcometothejungle.com/jobs/XyNov7nK":                                                             1408, // rundoo
@@ -3360,6 +3362,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4216696150/":                                                               1741, // flextrade
 		"https://www.linkedin.com/jobs/view/4263362376/":                                                               2332, // flextrade
 		"https://www.linkedin.com/jobs/view/4334468004/":                                                               3314, // flextrade
+		"https://www.linkedin.com/jobs/view/4374319918/":                                                               4226, // epic-games
 		"https://www.linkedin.com/jobs/view/4181595042/":                                                               1742, // epic-games
 		"https://www.linkedin.com/jobs/view/4169030739/":                                                               1780, // epic-games
 		"https://www.linkedin.com/jobs/view/4214284221/":                                                               1743, // notchupteam
@@ -4219,6 +4222,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4374303417/":                                                               4200, // pismo
 		"https://www.linkedin.com/jobs/view/4376577496/":                                                               4206, // exinity
 		"https://www.linkedin.com/jobs/view/4344851946/":                                                               4220, // graphcore
+		"https://www.linkedin.com/jobs/view/4374571187/":                                                               4227, // feedme-pos-sdn-bhd
 		"https://www.linkedin.com/jobs/view/3914839625/":                                                               372,  // cognizant
 		"https://www.linkedin.com/jobs/view/4120737001/":                                                               600,  // cognizant
 		"https://www.linkedin.com/jobs/view/4149258542/":                                                               787,  // cognizant
