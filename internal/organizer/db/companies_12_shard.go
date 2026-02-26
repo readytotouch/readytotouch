@@ -1937,15 +1937,15 @@ func companies12Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Kraken-Digital-Asset-Exchange-EI_IE938667.11,40.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Kraken-Digital-Asset-Exchange-Reviews-E938667.htm",
 				JobsURL:     "https://www.glassdoor.com/Jobs/Kraken-Digital-Asset-Exchange-Jobs-E938667.htm",
 				Jobs:        "", // Becomes empty in the new design version
 				Reviews:     "", // Becomes empty in the new design version
 				Salaries:    "", // Becomes empty in the new design version
-				ReviewsRate: "4.2",
-				Verified:    true,
-				Date:        mustDate("2026-02-11"),
+				ReviewsRate: "",
+				Verified:    false,
+				Date:        mustDate("2026-02-26"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",

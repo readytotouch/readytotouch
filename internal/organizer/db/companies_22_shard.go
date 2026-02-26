@@ -6355,15 +6355,15 @@ func companies22Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Ripple-EI_IE798412.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Ripple-Reviews-E798412.htm",
 				JobsURL:     "https://www.glassdoor.com/Jobs/Ripple-Jobs-E798412.htm",
 				Jobs:        "", // Becomes empty in the new design version
 				Reviews:     "", // Becomes empty in the new design version
 				Salaries:    "", // Becomes empty in the new design version
-				ReviewsRate: "2.9",
-				Verified:    true,
-				Date:        mustDate("2026-02-04"),
+				ReviewsRate: "",
+				Verified:    false,
+				Date:        mustDate("2026-02-26"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",

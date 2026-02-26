@@ -370,15 +370,15 @@ func companies23Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Staffbase-EI_IE1980315.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Staffbase-Reviews-E1980315.htm",
 				JobsURL:     "https://www.glassdoor.com/Jobs/Staffbase-Jobs-E1980315.htm",
 				Jobs:        "", // Becomes empty in the new design version
 				Reviews:     "", // Becomes empty in the new design version
 				Salaries:    "", // Becomes empty in the new design version
-				ReviewsRate: "4.3",
-				Verified:    true,
-				Date:        mustDate("2026-02-04"),
+				ReviewsRate: "",
+				Verified:    false,
+				Date:        mustDate("2026-02-26"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -853,7 +853,15 @@ func companies23Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Tipalti-EI_IE1198180.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Tipalti-Reviews-E1198180.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Tipalti-Jobs-E1198180.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "",
+				Verified:    false,
+				Date:        mustDate("2026-02-26"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -1118,15 +1126,15 @@ func companies23Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-OpenAI-EI_IE2210885.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/OpenAI-Reviews-E2210885.htm",
 				JobsURL:     "https://www.glassdoor.com/Jobs/OpenAI-Jobs-E2210885.htm",
 				Jobs:        "", // Becomes empty in the new design version
 				Reviews:     "", // Becomes empty in the new design version
 				Salaries:    "", // Becomes empty in the new design version
-				ReviewsRate: "4.4",
+				ReviewsRate: "",
 				Verified:    false,
-				Date:        mustDate("2026-02-04"),
+				Date:        mustDate("2026-02-26"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -1213,15 +1221,15 @@ func companies23Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Cargill-EI_IE2739.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Cargill-Reviews-E2739.htm",
 				JobsURL:     "https://www.glassdoor.com/Jobs/Cargill-Jobs-E2739.htm",
 				Jobs:        "", // Becomes empty in the new design version
 				Reviews:     "", // Becomes empty in the new design version
 				Salaries:    "", // Becomes empty in the new design version
-				ReviewsRate: "4.0",
-				Verified:    true,
-				Date:        mustDate("2026-02-11"),
+				ReviewsRate: "",
+				Verified:    false,
+				Date:        mustDate("2026-02-26"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -1306,15 +1314,15 @@ func companies23Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Sardine-EI_IE7044956.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Sardine-Reviews-E7044956.htm",
 				JobsURL:     "https://www.glassdoor.com/Jobs/Sardine-Jobs-E7044956.htm",
 				Jobs:        "", // Becomes empty in the new design version
 				Reviews:     "", // Becomes empty in the new design version
 				Salaries:    "", // Becomes empty in the new design version
-				ReviewsRate: "4.5",
-				Verified:    true,
-				Date:        mustDate("2026-02-15"),
+				ReviewsRate: "",
+				Verified:    false,
+				Date:        mustDate("2026-02-26"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -1410,15 +1418,15 @@ func companies23Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-AppDirect-EI_IE614387.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/AppDirect-Reviews-E614387.htm",
 				JobsURL:     "https://www.glassdoor.com/Jobs/AppDirect-Jobs-E614387.htm",
 				Jobs:        "", // Becomes empty in the new design version
 				Reviews:     "", // Becomes empty in the new design version
 				Salaries:    "", // Becomes empty in the new design version
-				ReviewsRate: "3.7",
-				Verified:    true,
-				Date:        mustDate("2026-02-04"),
+				ReviewsRate: "",
+				Verified:    false,
+				Date:        mustDate("2026-02-26"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -1681,15 +1689,15 @@ func companies23Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Apple-EI_IE1138.11,16.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Apple-Reviews-E1138.htm",
 				JobsURL:     "https://www.glassdoor.com/Jobs/Apple-Jobs-E1138.htm",
 				Jobs:        "", // Becomes empty in the new design version
 				Reviews:     "", // Becomes empty in the new design version
 				Salaries:    "", // Becomes empty in the new design version
-				ReviewsRate: "4.2",
-				Verified:    true,
-				Date:        mustDate("2026-02-04"),
+				ReviewsRate: "",
+				Verified:    false,
+				Date:        mustDate("2026-02-26"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -1897,15 +1905,15 @@ func companies23Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-BRP-EI_IE314918.11,14.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/BRP-Reviews-E314918.htm",
 				JobsURL:     "https://www.glassdoor.com/Jobs/BRP-Jobs-E314918.htm",
 				Jobs:        "", // Becomes empty in the new design version
 				Reviews:     "", // Becomes empty in the new design version
 				Salaries:    "", // Becomes empty in the new design version
-				ReviewsRate: "3.7",
-				Verified:    true,
-				Date:        mustDate("2026-02-11"),
+				ReviewsRate: "",
+				Verified:    false,
+				Date:        mustDate("2026-02-26"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -1992,15 +2000,15 @@ func companies23Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Commvault-EI_IE16184.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Commvault-Reviews-E16184.htm",
 				JobsURL:     "https://www.glassdoor.com/Jobs/Commvault-Jobs-E16184.htm",
 				Jobs:        "", // Becomes empty in the new design version
 				Reviews:     "", // Becomes empty in the new design version
 				Salaries:    "", // Becomes empty in the new design version
-				ReviewsRate: "3.8",
-				Verified:    true,
-				Date:        mustDate("2026-02-11"),
+				ReviewsRate: "",
+				Verified:    false,
+				Date:        mustDate("2026-02-26"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -2595,15 +2603,15 @@ func companies23Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Finary-EI_IE6643956.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Finary-Reviews-E6643956.htm",
 				JobsURL:     "https://www.glassdoor.com/Jobs/Finary-Jobs-E6643956.htm",
 				Jobs:        "", // Becomes empty in the new design version
 				Reviews:     "", // Becomes empty in the new design version
 				Salaries:    "", // Becomes empty in the new design version
-				ReviewsRate: "4.7",
-				Verified:    true,
-				Date:        mustDate("2026-02-04"),
+				ReviewsRate: "",
+				Verified:    false,
+				Date:        mustDate("2026-02-26"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -2689,15 +2697,15 @@ func companies23Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Lyft-EI_IE700614.11,15.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Lyft-Reviews-E700614.htm",
 				JobsURL:     "https://www.glassdoor.com/Jobs/Lyft-Jobs-E700614.htm",
 				Jobs:        "", // Becomes empty in the new design version
 				Reviews:     "", // Becomes empty in the new design version
 				Salaries:    "", // Becomes empty in the new design version
-				ReviewsRate: "3.8",
+				ReviewsRate: "",
 				Verified:    false,
-				Date:        mustDate("2026-02-04"),
+				Date:        mustDate("2026-02-26"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -2780,15 +2788,15 @@ func companies23Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Pulley-EI_IE7426761.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Pulley-Reviews-E7426761.htm",
 				JobsURL:     "https://www.glassdoor.com/Jobs/Pulley-Jobs-E7426761.htm",
 				Jobs:        "", // Becomes empty in the new design version
 				Reviews:     "", // Becomes empty in the new design version
 				Salaries:    "", // Becomes empty in the new design version
-				ReviewsRate: "3.7",
-				Verified:    true,
-				Date:        mustDate("2026-02-11"),
+				ReviewsRate: "",
+				Verified:    false,
+				Date:        mustDate("2026-02-26"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -2872,15 +2880,15 @@ func companies23Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-TigerGraph-EI_IE1145722.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/TigerGraph-Reviews-E1145722.htm",
 				JobsURL:     "https://www.glassdoor.com/Jobs/TigerGraph-Jobs-E1145722.htm",
 				Jobs:        "", // Becomes empty in the new design version
 				Reviews:     "", // Becomes empty in the new design version
 				Salaries:    "", // Becomes empty in the new design version
-				ReviewsRate: "3.1",
-				Verified:    true,
-				Date:        mustDate("2026-02-04"),
+				ReviewsRate: "",
+				Verified:    false,
+				Date:        mustDate("2026-02-26"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -3046,15 +3054,15 @@ func companies23Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-League-EI_IE1165876.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/League-Reviews-E1165876.htm",
 				JobsURL:     "https://www.glassdoor.com/Jobs/League-Jobs-E1165876.htm",
 				Jobs:        "", // Becomes empty in the new design version
 				Reviews:     "", // Becomes empty in the new design version
 				Salaries:    "", // Becomes empty in the new design version
-				ReviewsRate: "3.8",
-				Verified:    true,
-				Date:        mustDate("2026-02-11"),
+				ReviewsRate: "",
+				Verified:    false,
+				Date:        mustDate("2026-02-26"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -3137,15 +3145,15 @@ func companies23Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-iManage-EI_IE1311409.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/iManage-Reviews-E1311409.htm",
 				JobsURL:     "https://www.glassdoor.com/Jobs/iManage-Jobs-E1311409.htm",
 				Jobs:        "", // Becomes empty in the new design version
 				Reviews:     "", // Becomes empty in the new design version
 				Salaries:    "", // Becomes empty in the new design version
-				ReviewsRate: "4.4",
-				Verified:    true,
-				Date:        mustDate("2026-02-04"),
+				ReviewsRate: "",
+				Verified:    false,
+				Date:        mustDate("2026-02-26"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -3604,15 +3612,15 @@ func companies23Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-BitGo-EI_IE1912848.11,16.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/BitGo-Reviews-E1912848.htm",
 				JobsURL:     "https://www.glassdoor.com/Jobs/BitGo-Jobs-E1912848.htm",
 				Jobs:        "", // Becomes empty in the new design version
 				Reviews:     "", // Becomes empty in the new design version
 				Salaries:    "", // Becomes empty in the new design version
-				ReviewsRate: "4.5",
+				ReviewsRate: "",
 				Verified:    false,
-				Date:        mustDate("2026-02-11"),
+				Date:        mustDate("2026-02-26"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -3698,15 +3706,15 @@ func companies23Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Flybits-EI_IE1910414.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Flybits-Reviews-E1910414.htm",
 				JobsURL:     "https://www.glassdoor.com/Jobs/Flybits-Jobs-E1910414.htm",
 				Jobs:        "", // Becomes empty in the new design version
 				Reviews:     "", // Becomes empty in the new design version
 				Salaries:    "", // Becomes empty in the new design version
-				ReviewsRate: "3.6",
-				Verified:    true,
-				Date:        mustDate("2026-02-04"),
+				ReviewsRate: "",
+				Verified:    false,
+				Date:        mustDate("2026-02-26"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -3792,15 +3800,15 @@ func companies23Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-WorldQuant-EI_IE309841.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/WorldQuant-Reviews-E309841.htm",
 				JobsURL:     "https://www.glassdoor.com/Jobs/WorldQuant-Jobs-E309841.htm",
 				Jobs:        "", // Becomes empty in the new design version
 				Reviews:     "", // Becomes empty in the new design version
 				Salaries:    "", // Becomes empty in the new design version
-				ReviewsRate: "4.2",
-				Verified:    true,
-				Date:        mustDate("2026-02-04"),
+				ReviewsRate: "",
+				Verified:    false,
+				Date:        mustDate("2026-02-26"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -4327,15 +4335,15 @@ func companies23Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Kraken-EI_IE8860582.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Kraken-Reviews-E8860582.htm",
 				JobsURL:     "https://www.glassdoor.com/Jobs/Kraken-Jobs-E8860582.htm",
 				Jobs:        "", // Becomes empty in the new design version
 				Reviews:     "", // Becomes empty in the new design version
 				Salaries:    "", // Becomes empty in the new design version
-				ReviewsRate: "4.5",
-				Verified:    true,
-				Date:        mustDate("2026-02-11"),
+				ReviewsRate: "",
+				Verified:    false,
+				Date:        mustDate("2026-02-26"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -4423,15 +4431,15 @@ func companies23Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-ServiceNow-EI_IE403326.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/ServiceNow-Reviews-E403326.htm",
 				JobsURL:     "https://www.glassdoor.com/Jobs/ServiceNow-Jobs-E403326.htm",
 				Jobs:        "", // Becomes empty in the new design version
 				Reviews:     "", // Becomes empty in the new design version
 				Salaries:    "", // Becomes empty in the new design version
-				ReviewsRate: "4.2",
-				Verified:    true,
-				Date:        mustDate("2026-02-11"),
+				ReviewsRate: "",
+				Verified:    false,
+				Date:        mustDate("2026-02-26"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -4517,15 +4525,15 @@ func companies23Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Allianz-Partners-EI_IE497552.11,27.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Allianz-Partners-Reviews-E497552.htm",
 				JobsURL:     "https://www.glassdoor.com/Jobs/Allianz-Partners-Jobs-E497552.htm",
 				Jobs:        "", // Becomes empty in the new design version
 				Reviews:     "", // Becomes empty in the new design version
 				Salaries:    "", // Becomes empty in the new design version
-				ReviewsRate: "3.7",
-				Verified:    true,
-				Date:        mustDate("2026-02-11"),
+				ReviewsRate: "",
+				Verified:    false,
+				Date:        mustDate("2026-02-26"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -4794,15 +4802,15 @@ func companies23Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Emma-EI_IE2114470.11,15.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Emma-Reviews-E2114470.htm",
 				JobsURL:     "https://www.glassdoor.com/Jobs/Emma-Jobs-E2114470.htm",
 				Jobs:        "", // Becomes empty in the new design version
 				Reviews:     "", // Becomes empty in the new design version
 				Salaries:    "", // Becomes empty in the new design version
-				ReviewsRate: "3.5",
-				Verified:    true,
-				Date:        mustDate("2026-02-11"),
+				ReviewsRate: "",
+				Verified:    false,
+				Date:        mustDate("2026-02-26"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -5236,15 +5244,15 @@ func companies23Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Machinify-EI_IE3102945.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Machinify-Reviews-E3102945.htm",
 				JobsURL:     "https://www.glassdoor.com/Jobs/Machinify-Jobs-E3102945.htm",
 				Jobs:        "", // Becomes empty in the new design version
 				Reviews:     "", // Becomes empty in the new design version
 				Salaries:    "", // Becomes empty in the new design version
-				ReviewsRate: "2.3",
-				Verified:    true,
-				Date:        mustDate("2026-02-15"),
+				ReviewsRate: "",
+				Verified:    false,
+				Date:        mustDate("2026-02-26"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -5418,15 +5426,15 @@ func companies23Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Ocrolus-EI_IE2857732.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Ocrolus-Reviews-E2857732.htm",
 				JobsURL:     "https://www.glassdoor.com/Jobs/Ocrolus-Jobs-E2857732.htm",
 				Jobs:        "", // Becomes empty in the new design version
 				Reviews:     "", // Becomes empty in the new design version
 				Salaries:    "", // Becomes empty in the new design version
-				ReviewsRate: "3.7",
-				Verified:    true,
-				Date:        mustDate("2026-02-15"),
+				ReviewsRate: "",
+				Verified:    false,
+				Date:        mustDate("2026-02-26"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -5514,15 +5522,15 @@ func companies23Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-MirrorWeb-EI_IE2347924.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/MirrorWeb-Reviews-E2347924.htm",
 				JobsURL:     "https://www.glassdoor.com/Jobs/MirrorWeb-Jobs-E2347924.htm",
 				Jobs:        "", // Becomes empty in the new design version
 				Reviews:     "", // Becomes empty in the new design version
 				Salaries:    "", // Becomes empty in the new design version
-				ReviewsRate: "3.6",
+				ReviewsRate: "",
 				Verified:    false,
-				Date:        mustDate("2026-02-15"),
+				Date:        mustDate("2026-02-26"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -5608,15 +5616,15 @@ func companies23Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Wells-Fargo-EI_IE8876.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Wells-Fargo-Reviews-E8876.htm",
 				JobsURL:     "https://www.glassdoor.com/Jobs/Wells-Fargo-Jobs-E8876.htm",
 				Jobs:        "", // Becomes empty in the new design version
 				Reviews:     "", // Becomes empty in the new design version
 				Salaries:    "", // Becomes empty in the new design version
-				ReviewsRate: "3.6",
-				Verified:    true,
-				Date:        mustDate("2026-02-15"),
+				ReviewsRate: "",
+				Verified:    false,
+				Date:        mustDate("2026-02-26"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -5704,15 +5712,15 @@ func companies23Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Trade-Republic-EI_IE3554739.11,25.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Trade-Republic-Reviews-E3554739.htm",
 				JobsURL:     "https://www.glassdoor.com/Jobs/Trade-Republic-Jobs-E3554739.htm",
 				Jobs:        "", // Becomes empty in the new design version
 				Reviews:     "", // Becomes empty in the new design version
 				Salaries:    "", // Becomes empty in the new design version
-				ReviewsRate: "2.7",
-				Verified:    true,
-				Date:        mustDate("2026-02-15"),
+				ReviewsRate: "",
+				Verified:    false,
+				Date:        mustDate("2026-02-26"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",

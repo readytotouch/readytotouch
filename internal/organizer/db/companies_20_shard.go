@@ -4489,15 +4489,15 @@ func companies20Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-LG-Ad-Solutions-EI_IE6556153.11,26.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/LG-Ad-Solutions-Reviews-E6556153.htm",
 				JobsURL:     "https://www.glassdoor.com/Jobs/LG-Ad-Solutions-Jobs-E6556153.htm",
 				Jobs:        "", // Becomes empty in the new design version
 				Reviews:     "", // Becomes empty in the new design version
 				Salaries:    "", // Becomes empty in the new design version
-				ReviewsRate: "3.1",
-				Verified:    true,
-				Date:        mustDate("2026-02-11"),
+				ReviewsRate: "",
+				Verified:    false,
+				Date:        mustDate("2026-02-26"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
