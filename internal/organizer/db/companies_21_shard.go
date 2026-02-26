@@ -2435,7 +2435,7 @@ func companies21Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4337919671/",
 							Location:             "Sydney, New South Wales, Australia",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-02-01", "2025-12-21", "2025-11-07"),
+							Date:                 mustDate("2026-02-22", "2026-02-01", "2025-12-21", "2025-11-07"),
 							WithSalary:           false,
 							Remote:               true,
 						},

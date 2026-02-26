@@ -3042,6 +3042,12 @@
     "destination_72x72": "grammarly.jpeg"
   },
   {
+    "alias": "graphcore",
+    "source": "graphcore-200x200.jpeg",
+    "destination": "graphcore.jpeg",
+    "destination_72x72": "graphcore.jpeg"
+  },
+  {
     "alias": "grasshopperasia",
     "source": "",
     "destination": "",

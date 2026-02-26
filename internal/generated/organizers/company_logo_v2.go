@@ -511,6 +511,7 @@ var (
 		"grabapp":                             "",
 		"grafana-labs":                        "grafana-labs.jpeg",
 		"grammarly":                           "grammarly.jpeg",
+		"graphcore":                           "graphcore.jpeg",
 		"grasshopperasia":                     "",
 		"greenbone-ag":                        "greenbone-ag.jpeg",
 		"greengot":                            "",

@@ -1105,7 +1105,7 @@ func companies08Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4344483381/",
 							Location:             "Portugal",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-01-30", "2025-12-17"),
+							Date:                 mustDate("2026-02-21", "2026-01-30", "2025-12-17"),
 							WithSalary:           false,
 							Remote:               true,
 						},
