@@ -1352,7 +1352,7 @@ func companies11Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4314139056/",
 							Location:             "Milan, Lombardy, Italy",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-01-30", "2025-11-26"),
+							Date:                 mustDate("2026-02-22", "2026-01-30", "2025-11-26"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -3470,15 +3470,15 @@ func companies11Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Crypto-com-EI_IE1984553.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Crypto-com-Reviews-E1984553.htm",
 				JobsURL:     "https://www.glassdoor.com/Jobs/Crypto-com-Jobs-E1984553.htm",
 				Jobs:        "", // Becomes empty in the new design version
 				Reviews:     "", // Becomes empty in the new design version
 				Salaries:    "", // Becomes empty in the new design version
-				ReviewsRate: "3.3",
-				Verified:    true,
-				Date:        mustDate("2026-02-04"),
+				ReviewsRate: "",
+				Verified:    false,
+				Date:        mustDate("2026-02-26"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -4232,11 +4232,22 @@ func companies11Shard() []domain.CompanyProfile {
 					GitHubRepositoryCount: 5,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Senior Backend Clojure Engineer (m/f/d)",
+							Title:                "Senior Backend Clojure Engineer",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4128083196/",
 							Date:                 mustDate("2025-02-07"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+						{
+							Title:                "Clojure Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4377838618/",
+							Location:             "Berlin, Berlin, Germany",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-25"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -4826,15 +4837,15 @@ func companies11Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Percona-LLC-EI_IE283779.11,22.htm",
-				ReviewsURL:  "https://www.glassdoor.com/Reviews/index.htm",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Binance-EI_IE1816824.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Binance-Reviews-E1816824.htm",
 				JobsURL:     "https://www.glassdoor.com/Jobs/Binance-Jobs-E1816824.htm",
 				Jobs:        "", // Becomes empty in the new design version
 				Reviews:     "", // Becomes empty in the new design version
 				Salaries:    "", // Becomes empty in the new design version
-				ReviewsRate: "4.0",
-				Verified:    true,
-				Date:        mustDate("2026-02-04"),
+				ReviewsRate: "",
+				Verified:    false,
+				Date:        mustDate("2026-02-26"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -4881,6 +4892,17 @@ func companies11Shard() []domain.CompanyProfile {
 							Location:             "Hanoi, Hanoi, Vietnam",
 							CloudProviders:       []domain.CloudProvider{},
 							Date:                 mustDate("2026-02-10"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+						{
+							Title:                "Senior Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4328237016/",
+							Location:             "Taipei, Taipei City, Taiwan",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-22"),
 							WithSalary:           false,
 							Remote:               true,
 						},

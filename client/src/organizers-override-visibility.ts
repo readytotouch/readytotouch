@@ -122,7 +122,7 @@ export function renderHiddenPlaceholder(company: CompanyHidden): string {
             class="hidden-card__image"
         />
         <figcaption class="hidden-card__caption">
-            <p class="hidden-card__text">Company hidden due to ${industry} industry</p>
+            <p class="hidden-card__text">Company hidden due to ${industry.name} industry</p>
             <div class="hidden-card__action">
                 <button class="button button--black button--small button--x-small-padding hidden-card__action-button js-override-industry-visibility-button" type="button">Show all companies in this industry</button>
                 <button class="button button--small button--x-small-padding button--bordered-black-transparent hidden-card__action-button js-override-company-visibility-button">Show just this company</button>

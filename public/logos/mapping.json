@@ -876,6 +876,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "birdapp",
+    "source": "birdapp-200x200.jpeg",
+    "destination": "birdapp.jpeg",
+    "destination_72x72": "birdapp.jpeg"
+  },
+  {
     "alias": "birdiecare",
     "source": "birdiecare-200x200.jpeg",
     "destination": "birdiecare.jpeg",
@@ -1288,6 +1294,12 @@
     "source": "checkpoint-200x200.jpeg",
     "destination": "check-point-software-technologies.jpeg",
     "destination_72x72": "check-point-software-technologies.jpeg"
+  },
+  {
+    "alias": "checkboxai",
+    "source": "checkboxai-256x256.png",
+    "destination": "checkboxai.png",
+    "destination_72x72": "checkboxai.png"
   },
   {
     "alias": "checkmarx",
@@ -2292,6 +2304,12 @@
     "destination_72x72": "epic-games.jpeg"
   },
   {
+    "alias": "equativ",
+    "source": "equativ-256x256.jpg",
+    "destination": "equativ.jpg",
+    "destination_72x72": "equativ.jpg"
+  },
+  {
     "alias": "ericsson",
     "source": "ericsson-180x180.png",
     "destination": "ericsson.png",
@@ -2382,6 +2400,12 @@
     "destination_72x72": "exein.png"
   },
   {
+    "alias": "exinity",
+    "source": "exinity-256x256.png",
+    "destination": "exinity.png",
+    "destination_72x72": "exinity.png"
+  },
+  {
     "alias": "expedia",
     "source": "",
     "destination": "",
@@ -2452,6 +2476,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "feedme-pos-sdn-bhd",
+    "source": "feedme-200x200.jpeg",
+    "destination": "feedme-pos-sdn-bhd.jpeg",
+    "destination_72x72": "feedme-pos-sdn-bhd.jpeg"
   },
   {
     "alias": "ferretdb",
@@ -3018,6 +3048,12 @@
     "destination_72x72": "grammarly.jpeg"
   },
   {
+    "alias": "graphcore",
+    "source": "graphcore-200x200.jpeg",
+    "destination": "graphcore.jpeg",
+    "destination_72x72": "graphcore.jpeg"
+  },
+  {
     "alias": "grasshopperasia",
     "source": "",
     "destination": "",
@@ -3076,6 +3112,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "grocery-tv",
+    "source": "grocery-tv-200x200.jpeg",
+    "destination": "grocery-tv.jpeg",
+    "destination_72x72": "grocery-tv.jpeg"
   },
   {
     "alias": "groq",
@@ -3948,6 +3990,12 @@
     "destination_72x72": "lonely-planet.jpeg"
   },
   {
+    "alias": "lookout",
+    "source": "lookout-200x200.jpeg",
+    "destination": "lookout.jpeg",
+    "destination_72x72": "lookout.jpeg"
+  },
+  {
     "alias": "loopme",
     "source": "loopme-180x180.webp",
     "destination": "loopme.png",
@@ -4218,6 +4266,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "metalbearco",
+    "source": "metalbearco-180x180.png",
+    "destination": "metalbearco.png",
+    "destination_72x72": "metalbearco.png"
+  },
+  {
     "alias": "metric-app",
     "source": "",
     "destination": "",
@@ -4432,6 +4486,12 @@
     "source": "muzz-200x200.jpeg",
     "destination": "muzz.jpeg",
     "destination_72x72": "muzz.jpeg"
+  },
+  {
+    "alias": "mx51",
+    "source": "mx51-200x200.jpeg",
+    "destination": "mx51.jpeg",
+    "destination_72x72": "mx51.jpeg"
   },
   {
     "alias": "mycafu",
@@ -5260,6 +5320,12 @@
     "source": "pinterest-200x200.jpeg",
     "destination": "pinterest.jpeg",
     "destination_72x72": "pinterest.jpeg"
+  },
+  {
+    "alias": "pismo",
+    "source": "pismo-200x200.jpeg",
+    "destination": "pismo.jpeg",
+    "destination_72x72": "pismo.jpeg"
   },
   {
     "alias": "pitchhq",

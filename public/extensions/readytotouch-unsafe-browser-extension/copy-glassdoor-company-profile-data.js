@@ -4,9 +4,9 @@ console.log("Glassdoor company profile data copy extension loaded");
 document.body.addEventListener("keydown", (event) => {
     // Y is for English, Н is for Ukrainian
     if (event.ctrlKey && event.shiftKey && (event.key === "Y" || event.key === "Н")) {
-        const goGlassdoorProfileColumns = `				OverviewURL: "${document.querySelector('a[href^="/Overview/"]').href}",
-				ReviewsURL:  "${document.querySelector('a[href^="/Reviews/"]').href}",
-				JobsURL:     "${document.querySelector('a[href^="/Jobs/"]').href}",
+        const goGlassdoorProfileColumns = `				OverviewURL: "${document.querySelector('div[class^="EmployerInfo_employerInfoWrapper"] a[href^="/Overview/"]').href}",
+				ReviewsURL:  "${document.querySelector('div[class^="EmployerInfo_employerInfoWrapper"] a[href^="/Reviews/"]').href}",
+				JobsURL:     "${document.querySelector('div[class^="EmployerInfo_employerInfoWrapper"] a[href^="/Jobs/"]').href}",
 				Jobs:        "", // Becomes empty in the new design version
 				Reviews:     "", // Becomes empty in the new design version
 				Salaries:    "", // Becomes empty in the new design version
