@@ -384,6 +384,12 @@
     "destination_72x72": "aonicgroup.png"
   },
   {
+    "alias": "apex-fintech",
+    "source": "apex-fintech-180x180.png",
+    "destination": "apex-fintech.png",
+    "destination_72x72": "apex-fintech.png"
+  },
+  {
     "alias": "apifonica",
     "source": "",
     "destination": "",
@@ -3226,6 +3232,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "hdfc-bank",
+    "source": "hdfc-bank-200x200.jpeg",
+    "destination": "hdfc-bank.jpeg",
+    "destination_72x72": "hdfc-bank.jpeg"
   },
   {
     "alias": "healthequity",
@@ -6822,6 +6834,12 @@
     "destination_72x72": "swiss-post.jpeg"
   },
   {
+    "alias": "swiss-re",
+    "source": "swiss-re-180x180.png",
+    "destination": "swiss-re.png",
+    "destination_72x72": "swiss-re.png"
+  },
+  {
     "alias": "symbolica-ai",
     "source": "symbolica-ai-200x200.jpeg",
     "destination": "symbolica-ai.jpeg",
@@ -7174,6 +7192,12 @@
     "source": "thunes-180x180.png",
     "destination": "thunespayments.png",
     "destination_72x72": "thunespayments.png"
+  },
+  {
+    "alias": "tide-banking",
+    "source": "tide-banking-200x200.jpeg",
+    "destination": "tide-banking.jpeg",
+    "destination_72x72": "tide-banking.jpeg"
   },
   {
     "alias": "tietoevry",

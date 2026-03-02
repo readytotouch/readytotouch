@@ -95,7 +95,7 @@ var (
 		"weaviate-io":                         69,   // Weaviate
 		"fubotv":                              70,   // Fubo
 		"yassir":                              71,   // Yassir
-		"viodotcom":                           72,   // Vio.com
+		"viodotcom":                           72,   // Vio
 		"vodeno":                              73,   // Vodeno
 		"utilitywarehouse":                    74,   // Utility Warehouse
 		"codenotary":                          75,   // Codenotary
@@ -1378,6 +1378,10 @@ var (
 		"narvar":                              1377, // Narvar
 		"balyasny-asset-management-l.p.":      1378, // Balyasny Asset Management L.P.
 		"flight-science":                      1380, // Flight Science
+		"swiss-re":                            1381, // Swiss Re
+		"tide-banking":                        1382, // Tide
+		"apex-fintech":                        1383, // Apex Fintech Solutions
+		"hdfc-bank":                           1384, // HDFC Bank
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 
