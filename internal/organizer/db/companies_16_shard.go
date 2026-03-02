@@ -410,7 +410,7 @@ func companies16Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4363780937/",
 							Location:             "Brazil",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-02-08"),
+							Date:                 mustDate("2026-02-28", "2026-02-08"),
 							WithSalary:           false,
 							Remote:               true,
 						},

@@ -1518,6 +1518,17 @@ func companies17Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $110k/yr - $160k/yr
 							Remote:               false,
 						},
+						{
+							Title:                "Software Engineer I, Elixir",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4379270270/",
+							Location:             "Long Beach, CA",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-28"),
+							WithSalary:           true, // $90k/yr - $120k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Clojure: {},

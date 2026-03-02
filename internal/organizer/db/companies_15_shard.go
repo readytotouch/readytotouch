@@ -3580,6 +3580,17 @@ func companies15Shard() []domain.CompanyProfile {
 							WithSalary:           true,
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Backend Engineer (Elixir)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4377786532/",
+							Location:             "Culver City, CA",
+							CloudProviders:       []domain.CloudProvider{domain.AWS},
+							Date:                 mustDate("2026-03-02"),
+							WithSalary:           true, // $125k/yr - $150k/yr
+							Remote:               true,
+						},
 					},
 				},
 				domain.Clojure: {},
