@@ -4240,7 +4240,7 @@ func companies07Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4359467962/",
 							Location:             "San Jose, CA",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-02-06", "2026-01-16"),
+							Date:                 mustDate("2026-02-27", "2026-02-06", "2026-01-16"),
 							WithSalary:           true, // $182k/yr - $260k/yr
 							Remote:               false,
 						},
@@ -6536,7 +6536,7 @@ func companies07Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4348315219/",
 							Location:             "Wrocław, Dolnośląskie, Poland",
-							Date:                 mustDate("2026-02-06", "2026-01-16", "2025-12-25", "2025-12-04"),
+							Date:                 mustDate("2026-02-26", "2026-02-06", "2026-01-16", "2025-12-25", "2025-12-04"),
 							WithSalary:           false,
 							Remote:               false,
 						},

@@ -2100,6 +2100,17 @@ func companies18Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $200k/yr - $250k/yr
 							Remote:               false,
 						},
+						{
+							Title:                "Staff Software Engineer (Rust)",
+							ShortDescription:     "Confidential Computing Infrastructure",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4378089756/",
+							Location:             "Santa Clara, CA",
+							CloudProviders:       []domain.CloudProvider{domain.AWS, domain.GCP, domain.Azure},
+							Date:                 mustDate("2026-02-27"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig: {

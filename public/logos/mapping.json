@@ -744,6 +744,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "balyasny-asset-management-l.p.",
+    "source": "bamfunds-200x200.jpeg",
+    "destination": "balyasny-asset-management-l.p..jpeg",
+    "destination_72x72": "balyasny-asset-management-l.p..jpeg"
+  },
+  {
     "alias": "bankaktiebolaget-nordiska",
     "source": "bankaktiebolaget-nordiska-180x180.png",
     "destination": "bankaktiebolaget-nordiska.png",
@@ -2070,6 +2076,12 @@
     "destination_72x72": "dottxt.png"
   },
   {
+    "alias": "dragonfly-capital-partners",
+    "source": "dragonfly-capital-partners-200x200.jpeg",
+    "destination": "dragonfly-capital-partners.jpeg",
+    "destination_72x72": "dragonfly-capital-partners.jpeg"
+  },
+  {
     "alias": "dragonflydb",
     "source": "dragonflydb-200x200.jpeg",
     "destination": "dragonflydb.jpeg",
@@ -2596,6 +2608,12 @@
     "source": "flextrade-180x180.png",
     "destination": "flextrade.png",
     "destination_72x72": "flextrade.png"
+  },
+  {
+    "alias": "flight-science",
+    "source": "flight-science-200x200.jpeg",
+    "destination": "flight-science.jpeg",
+    "destination_72x72": "flight-science.jpeg"
   },
   {
     "alias": "flip.id",
@@ -4534,6 +4552,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "narvar",
+    "source": "narvar-256x256.png",
+    "destination": "narvar.png",
+    "destination_72x72": "narvar.png"
   },
   {
     "alias": "nasdaq",
@@ -7780,6 +7804,12 @@
     "source": "watergenics-200x200.jpeg",
     "destination": "watergenics.jpeg",
     "destination_72x72": "watergenics.jpeg"
+  },
+  {
+    "alias": "wavestore-global",
+    "source": "wavestore-256x256.png",
+    "destination": "wavestore-global.png",
+    "destination_72x72": "wavestore-global.png"
   },
   {
     "alias": "waystar",

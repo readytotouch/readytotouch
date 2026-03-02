@@ -4413,7 +4413,7 @@ func companies20Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4297666414/",
 							Location:             "Munich, Bavaria, Germany",
-							Date:                 mustDate("2025-12-05"),
+							Date:                 mustDate("2026-02-28", "2025-12-05"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -5571,7 +5571,19 @@ func companies20Shard() []domain.CompanyProfile {
 				},
 				domain.Rust: {
 					GitHubRepositoryCount: 0,
-					Vacancies:             []domain.Vacancy{},
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Rust Developer Internship",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4378665342/",
+							Location:             "Chennai, Tamil Nadu, India",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-27"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
 				},
 				domain.Zig: {
 					GitHubRepositoryCount: 0,

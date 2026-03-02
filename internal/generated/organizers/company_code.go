@@ -789,6 +789,7 @@ var (
 		"qumulo":                              783,  // Qumulo
 		"zama-ai":                             784,  // Zama
 		"fathom-io":                           785,  // Fathom.io
+		"dragonfly-capital-partners":          1379, // Dragonfly
 		"veeva-systems":                       786,  // Veeva Systems
 		"rivian-and-vw-group-technologies":    787,  // Rivian and Volkswagen Group Technologies
 		"joinpult":                            788,  // PULT
@@ -1373,6 +1374,10 @@ var (
 		"exinity":                             1373, // Exinity
 		"graphcore":                           1374, // Graphcore
 		"feedme-pos-sdn-bhd":                  1375, // FeedMe
+		"wavestore-global":                    1376, // Wavestore
+		"narvar":                              1377, // Narvar
+		"balyasny-asset-management-l.p.":      1378, // Balyasny Asset Management L.P.
+		"flight-science":                      1380, // Flight Science
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

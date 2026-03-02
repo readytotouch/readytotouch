@@ -2240,10 +2240,11 @@ func companies14Shard() []domain.CompanyProfile {
 				IDs:               nil,
 				Alias:             "dragonfly-capital-partners",
 				Name:              "Dragonfly",
-				Followers:         "37K",
+				Followers:         "41K",
 				Employees:         "11-50",
-				AssociatedMembers: "109",
+				AssociatedMembers: "142",
 				Verified:          true,
+				Date:              mustDate("2026-03-03"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -2275,6 +2276,17 @@ func companies14Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Rust Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4375546354/",
+							Location:             "New York City Metropolitan Area",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-27"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig:     {},
@@ -2284,7 +2296,9 @@ func companies14Shard() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "Crypto venture fund",
-			Ignore:           true, // Crypto
+			Industries: []domain.Industry{
+				domain.IndustryCryptoCurrency,
+			},
 		},
 		{
 			ID:         0,  // system

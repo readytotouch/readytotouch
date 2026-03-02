@@ -612,6 +612,17 @@ func companies05Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $92k/yr - $140k/yr
 							Remote:               true,
 						},
+						{
+							Title:                "Full Stack Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4377787812/",
+							Location:             "Allen, TX",
+							CloudProviders:       []domain.CloudProvider{domain.GCP},
+							Date:                 mustDate("2026-03-02"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust: {},
