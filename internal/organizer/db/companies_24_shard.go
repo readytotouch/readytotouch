@@ -934,9 +934,9 @@ func companies24Shard() []domain.CompanyProfile {
 				Name:              "Lookout",
 				Followers:         "66K",
 				Employees:         "201-500",
-				AssociatedMembers: "520",
+				AssociatedMembers: "522",
 				Verified:          true,
-				Date:              mustDate("2026-02-26"),
+				Date:              mustDate("2026-03-02"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -969,7 +969,19 @@ func companies24Shard() []domain.CompanyProfile {
 				},
 				domain.Scala: {
 					GitHubRepositoryCount: 0,
-					Vacancies:             []domain.Vacancy{},
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Staff Backend Software Engineer (Java/Scala)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4377020542/",
+							Location:             "Canada",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-28"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
 				},
 				domain.Elixir: {
 					GitHubRepositoryCount: 0,
