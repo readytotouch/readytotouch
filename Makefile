@@ -241,8 +241,8 @@ ifndef VERSION
 	$(error VERSION is not set. Use `make more-companies-linkedin VERSION=X`)
 endif
 	git checkout main && git pull
-	git checkout -b more-companies-linkedin-february-2026-v$(VERSION)
-	git commit -m "More companies LinkedIn February 2026 v$(VERSION)" --allow-empty
+	git checkout -b more-companies-linkedin-march-2026-v$(VERSION)
+	git commit -m "More companies LinkedIn March 2026 v$(VERSION)" --allow-empty
 
 # make more-companies-welcome-to-the-jungle VERSION=124
 more-companies-welcome-to-the-jungle:
@@ -250,8 +250,8 @@ ifndef VERSION
 	$(error VERSION is not set. Use `make more-companies-welcome-to-the-jungle VERSION=X`)
 endif
 	git checkout main && git pull
-	git checkout -b more-companies-welcome-to-the-jungle-february-2026-v$(VERSION)
-	git commit -m "More companies Welcome to the Jungle February 2026 v$(VERSION)" --allow-empty
+	git checkout -b more-companies-welcome-to-the-jungle-march-2026-v$(VERSION)
+	git commit -m "More companies Welcome to the Jungle March 2026 v$(VERSION)" --allow-empty
 
 # make more-companies-indeed VERSION=124
 more-companies-indeed:
@@ -259,5 +259,5 @@ ifndef VERSION
 	$(error VERSION is not set. Use `make more-companies-indeed VERSION=X`)
 endif
 	git checkout main && git pull
-	git checkout -b more-companies-indeed-february-2026-v$(VERSION)
-	git commit -m "More companies Indeed February 2026 v$(VERSION)" --allow-empty
+	git checkout -b more-companies-indeed-march-2026-v$(VERSION)
+	git commit -m "More companies Indeed March 2026 v$(VERSION)" --allow-empty
