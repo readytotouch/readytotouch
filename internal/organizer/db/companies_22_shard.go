@@ -3024,7 +3024,7 @@ func companies22Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4308484530/",
 							Location:             "Ghent, Flemish Region, Belgium",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-02-07", "2026-01-16", "2025-12-26", "2025-11-12"),
+							Date:                 mustDate("2026-02-27", "2026-02-07", "2026-01-16", "2025-12-26", "2025-11-12"),
 							WithSalary:           false,
 							Remote:               true,
 						},
