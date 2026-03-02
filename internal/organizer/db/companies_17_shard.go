@@ -276,10 +276,11 @@ func companies17Shard() []domain.CompanyProfile {
 				IDs:               nil,
 				Alias:             "flextrade",
 				Name:              "FlexTrade",
-				Followers:         "49K",
+				Followers:         "61K",
 				Employees:         "501-1K",
-				AssociatedMembers: "658",
+				AssociatedMembers: "717",
 				Verified:          true,
+				Date:              mustDate("2026-03-03"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -306,7 +307,22 @@ func companies17Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			Languages: domain.Languages{
-				domain.Go:   {},
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Developer (C++/Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4378772101/",
+							Location:             "Pune/Pimpri-Chinchwad Area",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-28"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
 				domain.Rust: {},
 				domain.Zig:  {},
 				domain.Scala: {

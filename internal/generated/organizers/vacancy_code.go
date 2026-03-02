@@ -455,6 +455,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4328133763/":                                                               3701, // motorolasolutions
 		"https://www.linkedin.com/jobs/view/4366634055/":                                                               3943, // motorolasolutions
 		"https://www.linkedin.com/jobs/view/4371045793/":                                                               4039, // motorolasolutions
+		"https://www.linkedin.com/jobs/view/4378017656/":                                                               4273, // motorolasolutions
 		"https://www.linkedin.com/jobs/view/2711010249/":                                                               1579, // motorolasolutions
 		"https://www.linkedin.com/jobs/view/3919334242/":                                                               315,  // samsung-electronics
 		"https://www.linkedin.com/jobs/view/4139319243/":                                                               754,  // samsung-electronics
@@ -2267,6 +2268,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4352365291/":                                                               3801, // hasaki-vn
 		"https://www.linkedin.com/jobs/view/4360437819/":                                                               3841, // hasaki-vn
 		"https://www.linkedin.com/jobs/view/4356419407/":                                                               4146, // hasaki-vn
+		"https://www.linkedin.com/jobs/view/4375276988/":                                                               4274, // hasaki-vn
 		"https://www.linkedin.com/jobs/view/4110235695/":                                                               298,  // nutanix
 		"https://www.linkedin.com/jobs/view/4335977584/":                                                               3491, // nutanix
 		"https://www.linkedin.com/jobs/view/4105560497/":                                                               299,  // umbraspace
@@ -3385,6 +3387,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4213378861/":                                                               1713, // command-zero
 		"https://www.linkedin.com/jobs/view/4216110820/":                                                               1739, // carecarco
 		"https://www.linkedin.com/jobs/view/4213956380/":                                                               1740, // evident-id-inc.
+		"https://www.linkedin.com/jobs/view/4378772101/":                                                               4275, // flextrade
 		"https://www.linkedin.com/jobs/view/4216696150/":                                                               1741, // flextrade
 		"https://www.linkedin.com/jobs/view/4263362376/":                                                               2332, // flextrade
 		"https://www.linkedin.com/jobs/view/4334468004/":                                                               3314, // flextrade
@@ -3788,6 +3791,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4337640170/":                                                               3439, // deloitte
 		"https://www.linkedin.com/jobs/view/4348328585/":                                                               3610, // deloitte
 		"https://www.linkedin.com/jobs/view/4374518165/":                                                               4204, // deloitte
+		"https://www.linkedin.com/jobs/view/4379909137/":                                                               4276, // deloitte
 		"https://www.linkedin.com/jobs/view/4279716505/":                                                               2598, // 1touch-io
 		"https://www.linkedin.com/jobs/view/4278782092/":                                                               2599, // italki
 		"https://www.linkedin.com/jobs/view/4312070903/":                                                               3172, // italki
@@ -3871,6 +3875,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4258545583/":                                                               2808, // opensignal
 		"https://www.linkedin.com/jobs/view/4294137065/":                                                               2832, // yoti-digital-identity
 		"https://www.linkedin.com/jobs/view/4371534937/":                                                               4103, // yoti-digital-identity
+		"https://www.linkedin.com/jobs/view/4377295239/":                                                               4277, // yoti-digital-identity
 		"https://www.linkedin.com/jobs/view/4294145998/":                                                               2833, // solo-funds
 		"https://www.linkedin.com/jobs/view/4292729748/":                                                               2834, // avey-ai
 		"https://www.linkedin.com/jobs/view/4294341517/":                                                               2835, // evana
@@ -4267,6 +4272,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4358249813/":                                                               4264, // tide-banking
 		"https://www.linkedin.com/jobs/view/4363561357/":                                                               4266, // apex-fintech
 		"https://www.linkedin.com/jobs/view/4375512699/":                                                               4271, // hdfc-bank
+		"https://www.linkedin.com/jobs/view/4377798858/":                                                               4272, // trio-so
 		"https://www.linkedin.com/jobs/view/3914839625/":                                                               372,  // cognizant
 		"https://www.linkedin.com/jobs/view/4120737001/":                                                               600,  // cognizant
 		"https://www.linkedin.com/jobs/view/4149258542/":                                                               787,  // cognizant

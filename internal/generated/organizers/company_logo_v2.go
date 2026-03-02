@@ -1229,6 +1229,7 @@ var (
 		"travelport":                          "travelport.png",
 		"treecardapp":                         "",
 		"trendai-security":                    "trend-micro.jpeg",
+		"trio-so":                             "trio-so.jpeg",
 		"true-anomaly":                        "true-anomaly.png",
 		"truely":                              "",
 		"trustingsocial":                      "",

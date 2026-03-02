@@ -7350,6 +7350,12 @@
     "destination_72x72": "trend-micro.jpeg"
   },
   {
+    "alias": "trio-so",
+    "source": "trio-so-200x200.jpeg",
+    "destination": "trio-so.jpeg",
+    "destination_72x72": "trio-so.jpeg"
+  },
+  {
     "alias": "true-anomaly",
     "source": "true-anomaly-256x256.png",
     "destination": "true-anomaly.png",

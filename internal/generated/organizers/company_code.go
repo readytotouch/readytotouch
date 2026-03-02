@@ -1382,6 +1382,7 @@ var (
 		"tide-banking":                        1382, // Tide
 		"apex-fintech":                        1383, // Apex Fintech Solutions
 		"hdfc-bank":                           1384, // HDFC Bank
+		"trio-so":                             1385, // Trio
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 
