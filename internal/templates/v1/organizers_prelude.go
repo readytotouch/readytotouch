@@ -22,8 +22,12 @@ var (
 	industries = []Industry{
 		domain.IndustryAutomotive,
 		domain.IndustryCyberSecurity,
+		domain.IndustryEdTech,
+		domain.IndustryECommerce,
 		domain.IndustryHealthTech,
+		domain.IndustryMedTech,
 		domain.IndustryFinTech,
+		domain.IndustryGameDev,
 		domain.IndustryAdTech,
 		domain.IndustryMarTech,
 		domain.IndustryDevOps,
