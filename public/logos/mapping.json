@@ -3000,6 +3000,12 @@
     "destination_72x72": "glasskube.png"
   },
   {
+    "alias": "gliainc",
+    "source": "glia-256x256.png",
+    "destination": "gliainc.png",
+    "destination_72x72": "gliainc.png"
+  },
+  {
     "alias": "glovo-app",
     "source": "glovo-app-200x200.jpeg",
     "destination": "glovo-app.jpeg",
@@ -3142,6 +3148,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "griffin-bank",
+    "source": "griffin-180x180.png",
+    "destination": "griffin-bank.png",
+    "destination_72x72": "griffin-bank.png"
   },
   {
     "alias": "grocery-tv",

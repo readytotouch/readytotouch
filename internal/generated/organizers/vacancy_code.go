@@ -122,6 +122,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4143422101/":                                                               1006, // linkedin
 		"https://www.linkedin.com/jobs/view/4210109406/":                                                               1596, // linkedin
 		"https://www.linkedin.com/jobs/view/4075867913/":                                                               263,  // reddit-com
+		"https://www.linkedin.com/jobs/view/4368934237/":                                                               4290, // reddit-com
 		"https://www.linkedin.com/jobs/view/3910516815/":                                                               264,  // medium-com
 		"https://www.linkedin.com/jobs/view/3947425956/":                                                               265,  // pinterest
 		"https://www.linkedin.com/jobs/view/4103915582/":                                                               266,  // snap-inc-co
@@ -171,6 +172,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4304371241/":                                                               3337, // elastic-co
 		"https://www.linkedin.com/jobs/view/4332478840/":                                                               3613, // elastic-co
 		"https://www.linkedin.com/jobs/view/4343314221/":                                                               4091, // elastic-co
+		"https://www.linkedin.com/jobs/view/4335623847/":                                                               4289, // elastic-co
 		"https://www.linkedin.com/jobs/view/4110414724/":                                                               961,  // elastic-co
 		"https://www.linkedin.com/jobs/view/4099667362/":                                                               406,  // mongodbinc
 		"https://app.welcometothejungle.com/jobs/BoykNJtU":                                                             1273, // mongodbinc
@@ -874,6 +876,7 @@ var (
 		"https://app.welcometothejungle.com/jobs/bgQn7ACK":                                                             3896, // chime-card
 		"https://www.linkedin.com/jobs/view/4162630665/":                                                               985,  // compassinc
 		"https://www.linkedin.com/jobs/view/4017721524/":                                                               429,  // mercuryhq
+		"https://www.linkedin.com/jobs/view/4210758136/":                                                               4291, // mercuryhq
 		"https://www.linkedin.com/jobs/view/4039096196/":                                                               430,  // tailscale
 		"https://app.welcometothejungle.com/jobs/D-HQrtd0":                                                             3897, // tailscale
 		"https://www.linkedin.com/jobs/view/4265441422/":                                                               2394, // tailscale
@@ -1565,6 +1568,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4061088133/":                                                               68,   // remarkable-as
 		"https://www.linkedin.com/jobs/view/4234991890/":                                                               1941, // remarkable-as
 		"https://www.linkedin.com/jobs/view/4232561428/":                                                               2067, // remarkable-as
+		"https://www.linkedin.com/jobs/view/4375962249/":                                                               4296, // remarkable-as
 		"https://www.linkedin.com/jobs/view/4027571222/":                                                               69,   // synopsys
 		"https://www.linkedin.com/jobs/view/4044830862/":                                                               70,   // pubmatic
 		"https://www.linkedin.com/jobs/view/4205321156/":                                                               1681, // pubmatic
@@ -2532,6 +2536,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4217633516/":                                                               2014, // bigcommerce
 		"https://www.linkedin.com/jobs/view/4217631602/":                                                               2458, // bigcommerce
 		"https://www.linkedin.com/jobs/view/4141112561/":                                                               782,  // grabapp
+		"https://www.linkedin.com/jobs/view/4369330411/":                                                               4292, // grabapp
 		"https://www.linkedin.com/jobs/view/4148284507/":                                                               798,  // qlik
 		"https://www.linkedin.com/jobs/view/4233808097/":                                                               1908, // qlik
 		"https://www.linkedin.com/jobs/view/4238784810/":                                                               1946, // qlik
@@ -3146,6 +3151,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4321911327/":                                                               3368, // stord
 		"https://www.linkedin.com/jobs/view/4347366946/":                                                               3521, // stord
 		"https://www.linkedin.com/jobs/view/4344752795/":                                                               3692, // stord
+		"https://www.linkedin.com/jobs/view/4377254836/":                                                               4297, // stord
 		"https://www.linkedin.com/jobs/view/4200736486/":                                                               1447, // luminovo
 		"https://www.linkedin.com/jobs/view/4101150703/":                                                               1449, // thought-machine
 		"https://www.linkedin.com/jobs/view/4144629838/":                                                               1464, // kantar
@@ -3241,6 +3247,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4289006848/":                                                               2742, // accessowl
 		"https://www.linkedin.com/jobs/view/4056647024/":                                                               1568, // adobe
 		"https://www.linkedin.com/jobs/view/4130665982/":                                                               1582, // adobe
+		"https://www.linkedin.com/jobs/view/4368503354/":                                                               4293, // adobe
 		"https://www.linkedin.com/jobs/view/4140872032/":                                                               1569, // teller-inc
 		"https://www.linkedin.com/jobs/view/4152246608/":                                                               1570, // mux
 		"https://www.linkedin.com/jobs/view/4126340720/":                                                               1571, // cava-
@@ -4284,6 +4291,8 @@ var (
 		"https://www.linkedin.com/jobs/view/4377798858/":                                                               4272, // trio-so
 		"https://www.linkedin.com/jobs/view/4369220734/":                                                               4286, // earnin
 		"https://www.linkedin.com/jobs/view/4378343310/":                                                               4288, // happyhotel
+		"https://www.linkedin.com/jobs/view/4378321804/":                                                               4294, // griffin-bank
+		"https://www.linkedin.com/jobs/view/4375555017/":                                                               4295, // gliainc
 		"https://www.linkedin.com/jobs/view/3914839625/":                                                               372,  // cognizant
 		"https://www.linkedin.com/jobs/view/4120737001/":                                                               600,  // cognizant
 		"https://www.linkedin.com/jobs/view/4149258542/":                                                               787,  // cognizant

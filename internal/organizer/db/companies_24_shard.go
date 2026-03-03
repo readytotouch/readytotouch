@@ -2874,5 +2874,177 @@ func companies24Shard() []domain.CompanyProfile {
 			ShortDescription: "The revenue management software for the hotel industry",
 			Industries:       []domain.Industry{},
 		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Griffin",
+			BaseURL:    "https://griffin.com/",
+			CareersURL: "https://griffin.com/careers",
+			AboutURL:   "https://griffin.com/about",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                11087261,
+				IDs:               nil,
+				Alias:             "griffin-bank",
+				Name:              "Griffin",
+				Followers:         "15K",
+				Employees:         "51-200",
+				AssociatedMembers: "144",
+				Verified:          true,
+				Date:              mustDate("2026-03-03"),
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer",
+							ShortDescription:     "Our backend stack is Clojure, FoundationDB, Bazel, Kubernetes and AWS",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4378321804/",
+							Location:             "United Kingdom",
+							CloudProviders:       []domain.CloudProvider{domain.AWS},
+							Date:                 mustDate("2026-02-27"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Embed bank accounts, payments, and all kinds of financial products quickly via our simple API",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
+		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Glia",
+			BaseURL:    "https://www.glia.com/",
+			CareersURL: "https://www.glia.com/careers",
+			AboutURL:   "https://www.glia.com/about",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2687116,
+				IDs:               nil,
+				Alias:             "gliainc",
+				Name:              "Glia",
+				Followers:         "34K",
+				Employees:         "201-500",
+				AssociatedMembers: "449",
+				Verified:          true,
+				Date:              mustDate("2026-03-03"),
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer",
+							ShortDescription:     "Backend: Elixir, Go and Ruby",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4375555017/",
+							Location:             "Canada",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-02-27"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Platform for Intelligent Banking Interactions",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
+		},
 	}
 }

@@ -1385,6 +1385,8 @@ var (
 		"trio-so":                             1385, // Trio
 		"earnin":                              1386, // EarnIn
 		"happyhotel":                          1387, // happyhotel
+		"griffin-bank":                        1388, // Griffin
+		"gliainc":                             1389, // Glia
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

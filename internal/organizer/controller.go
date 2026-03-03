@@ -1350,7 +1350,7 @@ func (c *Controller) UnsafeVacanciesV3(ctx *gin.Context) {
 				vacancies = append(vacancies, &domain.VacancyResponse{
 					ID:               id,
 					Title:            vacancy.Title,
-					ShortDescription: vacancy.ShortDescription,
+					ShortDescription: utils.VacancyDescription(vacancy.ShortDescription, vacancy.SwitchingOpportunity),
 					Location: domain.LocationResponse{
 						Raw: vacancy.Location,
 						Country: domain.LocationCountryResponse{

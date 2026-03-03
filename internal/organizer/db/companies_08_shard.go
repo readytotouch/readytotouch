@@ -2378,12 +2378,14 @@ func companies08Shard() []domain.CompanyProfile {
 			BlogURL:    "https://www.drw.com/tags/software-engineering",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                15999,
+				IDs:               []int{15999, 10687331, 81997627},
 				Alias:             "drw",
 				Name:              "DRW",
-				Followers:         "73K",
+				Followers:         "100K",
 				Employees:         "1K-5K",
-				AssociatedMembers: "2,116",
+				AssociatedMembers: "2,385",
 				Verified:          true,
+				Date:              mustDate("2026-03-03"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -4322,12 +4324,14 @@ func companies08Shard() []domain.CompanyProfile {
 			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                24440,
+				IDs:               nil,
 				Alias:             "collabera",
 				Name:              "Collabera",
 				Followers:         "1M",
 				Employees:         "10K+",
-				AssociatedMembers: "6,048",
+				AssociatedMembers: "6,133",
 				Verified:          true,
+				Date:              mustDate("2026-03-03"),
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
