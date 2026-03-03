@@ -949,7 +949,15 @@ func companies24Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Lookout-EI_IE318794.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Lookout-Reviews-E318794.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Lookout-Jobs-E318794.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "",
+				Verified:    false,
+				Date:        mustDate("2026-03-03"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -2304,7 +2312,15 @@ func companies24Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Swiss-Re-EI_IE4716.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Swiss-Re-Reviews-E4716.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Swiss-Re-Jobs-E4716.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "",
+				Verified:    false,
+				Date:        mustDate("2026-03-03"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -2390,7 +2406,15 @@ func companies24Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Tide-EI_IE2058934.11,15.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Tide-Reviews-E2058934.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Tide-Jobs-E2058934.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "",
+				Verified:    false,
+				Date:        mustDate("2026-03-03"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -2724,8 +2748,10 @@ func companies24Shard() []domain.CompanyProfile {
 				Date:              mustDate("2026-03-03"),
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "swissre",
+				Followers: "30",
+				Verified:  true,
+				Date:      mustDate("2026-03-03"),
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -2734,14 +2760,22 @@ func companies24Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-EarnIn-EI_IE962632.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/EarnIn-Reviews-E962632.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/EarnIn-Jobs-E962632.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "",
+				Verified:    false,
+				Date:        mustDate("2026-03-03"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoryCount: 0,
+					GitHubRepositoryCount: 1,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Software Engineer (Go)",
@@ -2990,7 +3024,15 @@ func companies24Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Glia-EI_IE1041718.11,15.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Glia-Reviews-E1041718.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Glia-Jobs-E1041718.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "",
+				Verified:    false,
+				Date:        mustDate("2026-03-03"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
