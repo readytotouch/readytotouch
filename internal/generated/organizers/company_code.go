@@ -1383,6 +1383,8 @@ var (
 		"apex-fintech":                        1383, // Apex Fintech Solutions
 		"hdfc-bank":                           1384, // HDFC Bank
 		"trio-so":                             1385, // Trio
+		"earnin":                              1386, // EarnIn
+		"happyhotel":                          1387, // happyhotel
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

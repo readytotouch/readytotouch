@@ -2190,6 +2190,12 @@
     "destination_72x72": "eachlabs.jpeg"
   },
   {
+    "alias": "earnin",
+    "source": "earnin-200x200.jpeg",
+    "destination": "earnin.jpeg",
+    "destination_72x72": "earnin.jpeg"
+  },
+  {
     "alias": "easypost",
     "source": "",
     "destination": "",
@@ -3196,6 +3202,12 @@
     "source": "happen-ing-200x200.jpeg",
     "destination": "happen-ing.jpeg",
     "destination_72x72": "happen-ing.jpeg"
+  },
+  {
+    "alias": "happyhotel",
+    "source": "happyhotel-256x256.png",
+    "destination": "happyhotel.png",
+    "destination_72x72": "happyhotel.png"
   },
   {
     "alias": "harksys",
