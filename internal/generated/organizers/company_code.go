@@ -95,7 +95,7 @@ var (
 		"weaviate-io":                         69,   // Weaviate
 		"fubotv":                              70,   // Fubo
 		"yassir":                              71,   // Yassir
-		"viodotcom":                           72,   // Vio.com
+		"viodotcom":                           72,   // Vio
 		"vodeno":                              73,   // Vodeno
 		"utilitywarehouse":                    74,   // Utility Warehouse
 		"codenotary":                          75,   // Codenotary
@@ -789,6 +789,7 @@ var (
 		"qumulo":                              783,  // Qumulo
 		"zama-ai":                             784,  // Zama
 		"fathom-io":                           785,  // Fathom.io
+		"dragonfly-capital-partners":          1379, // Dragonfly
 		"veeva-systems":                       786,  // Veeva Systems
 		"rivian-and-vw-group-technologies":    787,  // Rivian and Volkswagen Group Technologies
 		"joinpult":                            788,  // PULT
@@ -1373,6 +1374,19 @@ var (
 		"exinity":                             1373, // Exinity
 		"graphcore":                           1374, // Graphcore
 		"feedme-pos-sdn-bhd":                  1375, // FeedMe
+		"wavestore-global":                    1376, // Wavestore
+		"narvar":                              1377, // Narvar
+		"balyasny-asset-management-l.p.":      1378, // Balyasny Asset Management L.P.
+		"flight-science":                      1380, // Flight Science
+		"swiss-re":                            1381, // Swiss Re
+		"tide-banking":                        1382, // Tide
+		"apex-fintech":                        1383, // Apex Fintech Solutions
+		"hdfc-bank":                           1384, // HDFC Bank
+		"trio-so":                             1385, // Trio
+		"earnin":                              1386, // EarnIn
+		"happyhotel":                          1387, // happyhotel
+		"griffin-bank":                        1388, // Griffin
+		"gliainc":                             1389, // Glia
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

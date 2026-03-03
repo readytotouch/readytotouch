@@ -3183,7 +3183,7 @@ func companies03Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4368745026/",
 							Location:             "Prague, Prague, Czechia",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-02-05"),
+							Date:                 mustDate("2026-02-27", "2026-02-05"),
 							WithSalary:           false,
 							Remote:               false,
 						},

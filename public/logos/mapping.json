@@ -384,6 +384,12 @@
     "destination_72x72": "aonicgroup.png"
   },
   {
+    "alias": "apex-fintech",
+    "source": "apex-fintech-180x180.png",
+    "destination": "apex-fintech.png",
+    "destination_72x72": "apex-fintech.png"
+  },
+  {
     "alias": "apifonica",
     "source": "",
     "destination": "",
@@ -742,6 +748,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "balyasny-asset-management-l.p.",
+    "source": "bamfunds-200x200.jpeg",
+    "destination": "balyasny-asset-management-l.p..jpeg",
+    "destination_72x72": "balyasny-asset-management-l.p..jpeg"
   },
   {
     "alias": "bankaktiebolaget-nordiska",
@@ -2070,6 +2082,12 @@
     "destination_72x72": "dottxt.png"
   },
   {
+    "alias": "dragonfly-capital-partners",
+    "source": "dragonfly-capital-partners-200x200.jpeg",
+    "destination": "dragonfly-capital-partners.jpeg",
+    "destination_72x72": "dragonfly-capital-partners.jpeg"
+  },
+  {
     "alias": "dragonflydb",
     "source": "dragonflydb-200x200.jpeg",
     "destination": "dragonflydb.jpeg",
@@ -2170,6 +2188,12 @@
     "source": "eachlabs-200x200.jpeg",
     "destination": "eachlabs.jpeg",
     "destination_72x72": "eachlabs.jpeg"
+  },
+  {
+    "alias": "earnin",
+    "source": "earnin-200x200.jpeg",
+    "destination": "earnin.jpeg",
+    "destination_72x72": "earnin.jpeg"
   },
   {
     "alias": "easypost",
@@ -2598,6 +2622,12 @@
     "destination_72x72": "flextrade.png"
   },
   {
+    "alias": "flight-science",
+    "source": "flight-science-200x200.jpeg",
+    "destination": "flight-science.jpeg",
+    "destination_72x72": "flight-science.jpeg"
+  },
+  {
     "alias": "flip.id",
     "source": "",
     "destination": "",
@@ -2970,6 +3000,12 @@
     "destination_72x72": "glasskube.png"
   },
   {
+    "alias": "gliainc",
+    "source": "glia-256x256.png",
+    "destination": "gliainc.png",
+    "destination_72x72": "gliainc.png"
+  },
+  {
     "alias": "glovo-app",
     "source": "glovo-app-200x200.jpeg",
     "destination": "glovo-app.jpeg",
@@ -3114,6 +3150,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "griffin-bank",
+    "source": "griffin-180x180.png",
+    "destination": "griffin-bank.png",
+    "destination_72x72": "griffin-bank.png"
+  },
+  {
     "alias": "grocery-tv",
     "source": "grocery-tv-200x200.jpeg",
     "destination": "grocery-tv.jpeg",
@@ -3174,6 +3216,12 @@
     "destination_72x72": "happen-ing.jpeg"
   },
   {
+    "alias": "happyhotel",
+    "source": "happyhotel-256x256.png",
+    "destination": "happyhotel.png",
+    "destination_72x72": "happyhotel.png"
+  },
+  {
     "alias": "harksys",
     "source": "",
     "destination": "",
@@ -3208,6 +3256,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "hdfc-bank",
+    "source": "hdfc-bank-200x200.jpeg",
+    "destination": "hdfc-bank.jpeg",
+    "destination_72x72": "hdfc-bank.jpeg"
   },
   {
     "alias": "healthequity",
@@ -4534,6 +4588,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "narvar",
+    "source": "narvar-256x256.png",
+    "destination": "narvar.png",
+    "destination_72x72": "narvar.png"
   },
   {
     "alias": "nasdaq",
@@ -6798,6 +6858,12 @@
     "destination_72x72": "swiss-post.jpeg"
   },
   {
+    "alias": "swiss-re",
+    "source": "swiss-re-180x180.png",
+    "destination": "swiss-re.png",
+    "destination_72x72": "swiss-re.png"
+  },
+  {
     "alias": "symbolica-ai",
     "source": "symbolica-ai-200x200.jpeg",
     "destination": "symbolica-ai.jpeg",
@@ -7152,6 +7218,12 @@
     "destination_72x72": "thunespayments.png"
   },
   {
+    "alias": "tide-banking",
+    "source": "tide-banking-200x200.jpeg",
+    "destination": "tide-banking.jpeg",
+    "destination_72x72": "tide-banking.jpeg"
+  },
+  {
     "alias": "tietoevry",
     "source": "tietoevry-180x180.webp",
     "destination": "tietoevry.png",
@@ -7300,6 +7372,12 @@
     "source": "trend-micro-200x200.jpeg",
     "destination": "trend-micro.jpeg",
     "destination_72x72": "trend-micro.jpeg"
+  },
+  {
+    "alias": "trio-so",
+    "source": "trio-so-200x200.jpeg",
+    "destination": "trio-so.jpeg",
+    "destination_72x72": "trio-so.jpeg"
   },
   {
     "alias": "true-anomaly",
@@ -7780,6 +7858,12 @@
     "source": "watergenics-200x200.jpeg",
     "destination": "watergenics.jpeg",
     "destination_72x72": "watergenics.jpeg"
+  },
+  {
+    "alias": "wavestore-global",
+    "source": "wavestore-256x256.png",
+    "destination": "wavestore-global.png",
+    "destination_72x72": "wavestore-global.png"
   },
   {
     "alias": "waystar",
