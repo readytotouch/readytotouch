@@ -853,6 +853,7 @@ var (
 		"optimizely":                          "",
 		"oracle":                              "oracle.jpeg",
 		"otiv":                                "",
+		"otrsolutions":                        "otrsolutions.jpeg",
 		"outpost24":                           "",
 		"outreach-saas":                       "outreach-saas.jpeg",
 		"overwolf.com":                        "overwolf.com.jpeg",

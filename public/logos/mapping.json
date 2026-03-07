@@ -5094,6 +5094,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "otrsolutions",
+    "source": "otrsolutions-200x200.jpeg",
+    "destination": "otrsolutions.jpeg",
+    "destination_72x72": "otrsolutions.jpeg"
+  },
+  {
     "alias": "outpost24",
     "source": "",
     "destination": "",

@@ -4293,6 +4293,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4378343310/":                                                               4288, // happyhotel
 		"https://www.linkedin.com/jobs/view/4378321804/":                                                               4294, // griffin-bank
 		"https://www.linkedin.com/jobs/view/4375555017/":                                                               4295, // gliainc
+		"https://www.linkedin.com/jobs/view/4379896178/":                                                               4298, // otrsolutions
 		"https://www.linkedin.com/jobs/view/3914839625/":                                                               372,  // cognizant
 		"https://www.linkedin.com/jobs/view/4120737001/":                                                               600,  // cognizant
 		"https://www.linkedin.com/jobs/view/4149258542/":                                                               787,  // cognizant
