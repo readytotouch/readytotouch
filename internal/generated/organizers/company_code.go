@@ -1388,6 +1388,7 @@ var (
 		"griffin-bank":                        1388, // Griffin
 		"gliainc":                             1389, // Glia
 		"otrsolutions":                        1390, // OTR Solutions
+		"techex":                              1391, // Techex
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

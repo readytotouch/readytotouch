@@ -1175,6 +1175,7 @@ var (
 		"teaching-strategies-llc":             "",
 		"teads":                               "teads.png",
 		"teamwork-com":                        "",
+		"techex":                              "techex.png",
 		"tele2":                               "tele2.png",
 		"telekom":                             "",
 		"telestream":                          "telestream.jpeg",

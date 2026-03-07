@@ -4886,7 +4886,7 @@ func companies16Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4369837850/",
 							Location:             "Calgary, AB",
 							CloudProviders:       []domain.CloudProvider{domain.AWS},
-							Date:                 mustDate("2026-02-07"),
+							Date:                 mustDate("2026-03-07", "2026-02-07"),
 							WithSalary:           false,
 							Remote:               false,
 						},

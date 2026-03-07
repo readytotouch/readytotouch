@@ -7026,6 +7026,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "techex",
+    "source": "techex-180x180.png",
+    "destination": "techex.png",
+    "destination_72x72": "techex.png"
+  },
+  {
     "alias": "tele2",
     "source": "tele2-180x180.png",
     "destination": "tele2.png",
