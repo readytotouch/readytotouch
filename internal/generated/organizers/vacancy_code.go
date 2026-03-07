@@ -1203,6 +1203,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4298630522/":                                                               2884, // fiserv
 		"https://www.linkedin.com/jobs/view/4292455254/":                                                               3133, // fiserv
 		"https://www.linkedin.com/jobs/view/4312819268/":                                                               3223, // fiserv
+		"https://www.linkedin.com/jobs/view/4378897254/":                                                               4299, // fiserv
 		"https://www.linkedin.com/jobs/view/3819936157/":                                                               487,  // gettaxi
 		"https://www.linkedin.com/jobs/view/3949883320/":                                                               488,  // stairwell-inc
 		"https://www.linkedin.com/jobs/view/4050904655/":                                                               489,  // dittolive
@@ -1793,6 +1794,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4296259040/":                                                               2892, // emnify
 		"https://www.linkedin.com/jobs/view/4341652874/":                                                               3420, // emnify
 		"https://www.linkedin.com/jobs/view/4351144235/":                                                               3917, // emnify
+		"https://www.linkedin.com/jobs/view/4378198595/":                                                               4300, // emnify
 		"https://www.linkedin.com/jobs/view/4060347505/":                                                               110,  // moodys-corporation
 		"https://www.linkedin.com/jobs/view/4299339588/":                                                               3578, // moodys-corporation
 		"https://www.linkedin.com/jobs/view/4053645963/":                                                               538,  // lytxinc
@@ -2664,6 +2666,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4326006779/":                                                               3569, // esri
 		"https://www.linkedin.com/jobs/view/4330693727/":                                                               3920, // esri
 		"https://www.linkedin.com/jobs/view/4368797197/":                                                               4003, // esri
+		"https://www.linkedin.com/jobs/view/4363089500/":                                                               4301, // esri
 		"https://www.linkedin.com/jobs/view/4170791654/":                                                               1039, // cloudlinux
 		"https://www.linkedin.com/jobs/view/4197920577/":                                                               1546, // cloudlinux
 		"https://www.linkedin.com/jobs/view/4208666795/":                                                               1621, // cloudlinux
@@ -3248,6 +3251,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4056647024/":                                                               1568, // adobe
 		"https://www.linkedin.com/jobs/view/4130665982/":                                                               1582, // adobe
 		"https://www.linkedin.com/jobs/view/4368503354/":                                                               4293, // adobe
+		"https://www.linkedin.com/jobs/view/4379418539/":                                                               4302, // adobe
 		"https://www.linkedin.com/jobs/view/4140872032/":                                                               1569, // teller-inc
 		"https://www.linkedin.com/jobs/view/4152246608/":                                                               1570, // mux
 		"https://www.linkedin.com/jobs/view/4126340720/":                                                               1571, // cava-
@@ -3814,6 +3818,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4338774285/":                                                               3511, // italki
 		"https://www.linkedin.com/jobs/view/4254962827/":                                                               2621, // revvity
 		"https://www.linkedin.com/jobs/view/4370131375/":                                                               4033, // revvity
+		"https://www.linkedin.com/jobs/view/4371719838/":                                                               4303, // revvity
 		"https://www.linkedin.com/jobs/view/4280834608/":                                                               2622, // seagate-technology
 		"https://www.linkedin.com/jobs/view/4280995720/":                                                               2623, // batutaespm
 		"https://www.linkedin.com/jobs/view/4280758824/":                                                               2624, // nozomi-networks-sa

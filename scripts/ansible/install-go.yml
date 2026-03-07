@@ -3,7 +3,7 @@
   hosts: "web"
   gather_facts: "no"
   vars:
-    GO_VERSION: "1.24.5"
+    GO_VERSION: "1.25.7"
 
   tasks:
     - name: "Remove old Go"

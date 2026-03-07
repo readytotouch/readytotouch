@@ -3485,7 +3485,7 @@ func companies17Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4373875281/",
 							Location:             "Pune, Maharashtra, India",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-02-17"),
+							Date:                 mustDate("2026-03-04", "2026-02-17"),
 							WithSalary:           false,
 							Remote:               false,
 						},

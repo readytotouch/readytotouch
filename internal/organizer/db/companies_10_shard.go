@@ -3081,7 +3081,7 @@ func companies10Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4287543629/",
 							Location:             "Boston, MA",
-							Date:                 mustDate("2026-01-24", "2026-01-16", "2025-12-26", "2025-11-12", "2025-09-10", "2025-08-19"),
+							Date:                 mustDate("2026-03-08", "2026-01-24", "2026-01-16", "2025-12-26", "2025-11-12", "2025-09-10", "2025-08-19"),
 							WithSalary:           true, // $140k/yr - $160k/yr
 							Remote:               false,
 						},

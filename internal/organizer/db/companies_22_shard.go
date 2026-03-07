@@ -6108,7 +6108,7 @@ func companies22Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4361949155/",
 							Location:             "Isleworth, England, United Kingdom",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-02-12"),
+							Date:                 mustDate("2026-03-06", "2026-02-12"),
 							WithSalary:           false,
 							Remote:               false,
 						},

@@ -3126,27 +3126,27 @@ func companies24Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoryCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Rust: {
 					GitHubRepositoryCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Zig: {
 					GitHubRepositoryCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
 					GitHubRepositoryCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Elixir: {
 					GitHubRepositoryCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Clojure: {
 					GitHubRepositoryCount: 0,
-					Vacancies:               []domain.Vacancy{
+					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Clojure Backend Engineer",
 							ShortDescription:     "",
@@ -3162,15 +3162,15 @@ func companies24Shard() []domain.CompanyProfile {
 				},
 				domain.Haskell: {
 					GitHubRepositoryCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Erlang: {
 					GitHubRepositoryCount: 0,
-					Vacancies:               []domain.Vacancy{},
+					Vacancies:             []domain.Vacancy{},
 				},
 			},
 			ShortDescription: "",
-			Industries:       []domain.Industry{
+			Industries: []domain.Industry{
 				domain.IndustryFinTech,
 			},
 		},
