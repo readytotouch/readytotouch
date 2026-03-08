@@ -50,7 +50,7 @@ func companies24Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4316306633/",
 							Location:             "Munich, Bavaria, Germany",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-02-13"),
+							Date:                 mustDate("2026-03-07", "2026-02-13"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2074,7 +2074,7 @@ func companies24Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4374292185/",
 							Location:             "Canada",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-02-26"),
+							Date:                 mustDate("2026-03-03", "2026-02-26"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -2517,6 +2517,17 @@ func companies24Shard() []domain.CompanyProfile {
 							Location:             "Austin, TX",
 							CloudProviders:       []domain.CloudProvider{},
 							Date:                 mustDate("2026-02-28"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Staff Software Engineer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4371462871/",
+							Location:             "Austin, TX",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-03-06"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3086,6 +3097,522 @@ func companies24Shard() []domain.CompanyProfile {
 			ShortDescription: "Platform for Intelligent Banking Interactions",
 			Industries: []domain.Industry{
 				domain.IndustryFinTech,
+			},
+		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "OTR Solutions",
+			BaseURL:    "https://otrsolutions.com/",
+			CareersURL: "https://otrsolutions.com/careers",
+			AboutURL:   "https://otrsolutions.com/about-us",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3488196,
+				IDs:               nil,
+				Alias:             "otrsolutions",
+				Name:              "OTR Solutions",
+				Followers:         "48K",
+				Employees:         "201-500",
+				AssociatedMembers: "497",
+				Verified:          true,
+				Date:              mustDate("2026-03-08"),
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Clojure Backend Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4379896178/",
+							Location:             "Roswell, GA",
+							CloudProviders:       []domain.CloudProvider{domain.AWS},
+							Date:                 mustDate("2026-03-06"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
+		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Techex",
+			BaseURL:    "https://www.techex.tv/",
+			CareersURL: "https://www.techex.tv/pages/careers",
+			AboutURL:   "",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                65589,
+				IDs:               nil,
+				Alias:             "techex",
+				Name:              "Techex",
+				Followers:         "5K",
+				Employees:         "51-200",
+				AssociatedMembers: "128",
+				Verified:          true,
+				Date:              mustDate("2026-03-08"),
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Rust Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4381005660/",
+							Location:             "Bracknell, England, United Kingdom",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-03-07"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Video over IP",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "simplesurance",
+			BaseURL:    "https://www.simplesurance.com/",
+			CareersURL: "https://www.simplesurance.com/careers/",
+			AboutURL:   "https://www.simplesurance.com/who-we-are/",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2867578,
+				IDs:               nil,
+				Alias:             "simplesurance",
+				Name:              "simplesurance",
+				Followers:         "7K",
+				Employees:         "51-200",
+				AssociatedMembers: "122",
+				Verified:          true,
+				Date:              mustDate("2026-03-08"),
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Golang Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4380966201/",
+							Location:             "Lisbon, Lisbon, Portugal",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-03-05"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "",
+			Industries: []domain.Industry{
+				domain.IndustryInsurTech,
+			},
+		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Spacelift",
+			BaseURL:    "https://spacelift.io/",
+			CareersURL: "https://careers.spacelift.io/",
+			AboutURL:   "https://spacelift.io/about-us",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                34594817,
+				IDs:               nil,
+				Alias:             "spacelift-io",
+				Name:              "Spacelift",
+				Followers:         "18K",
+				Employees:         "51-200",
+				AssociatedMembers: "143",
+				Verified:          true,
+				Date:              mustDate("2026-03-08"),
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Product Software Engineer (Go)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4379853305/",
+							Location:             "European Economic Area",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-03-06"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Spacelift is an infrastructure orchestration platform",
+			Industries: []domain.Industry{
+				domain.IndustryDevOps,
+			},
+		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Raidiam",
+			BaseURL:    "https://www.raidiam.com/",
+			CareersURL: "https://www.raidiam.com/company/careers",
+			AboutURL:   "https://www.raidiam.com/company/about-us",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                10985183,
+				IDs:               nil,
+				Alias:             "raidiam",
+				Name:              "Raidiam",
+				Followers:         "5K",
+				Employees:         "51-200",
+				AssociatedMembers: "69",
+				Verified:          true,
+				Date:              mustDate("2026-03-08"),
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Backend Engineer (Go)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4380769640/",
+							Location:             "São Paulo, São Paulo, Brazil",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-03-05"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Skool",
+			BaseURL:    "https://www.skool.com/",
+			CareersURL: "https://www.skool.com/careers",
+			AboutURL:   "",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                34674684,
+				IDs:               nil,
+				Alias:             "skool-com",
+				Name:              "Skool",
+				Followers:         "13K",
+				Employees:         "11-50",
+				AssociatedMembers: "431",
+				Verified:          true,
+				Date:              mustDate("2026-03-08"),
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Principal Software Engineer, Backend (Go)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4362002600/",
+							Location:             "United States",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-03-04"),
+							WithSalary:           true, // $300k/yr - $450k/yr + bonus, stock options
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Skool is a community platform. You can discover communities or create your own.",
+			Industries: []domain.Industry{
+				domain.IndustrySocialMedia,
 			},
 		},
 	}

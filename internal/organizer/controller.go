@@ -475,7 +475,7 @@ func (c *Controller) companyAction(
 		return preparedVacancies[i].Date.After(preparedVacancies[j].Date)
 	})
 
-	company.CloudProviders = c.aggregateOrderedCloudProviders(vacancies)
+	company.CloudProviders = c.aggregateOrderedCloudProviders(company.CloudProviders, vacancies)
 	company.GitHubRepositoryCount = languageProfile.GitHubRepositoryCount
 	company.TechnologyUsageReferences = languageProfile.TechnologyUsageReferences
 	company.Remote = company.Remote || c.anyRemoteVacancy(vacancies)
@@ -1805,7 +1805,7 @@ func (c *Controller) companies(language domain.Language) []domain.CompanyProfile
 			continue
 		}
 
-		company.CloudProviders = c.aggregateOrderedCloudProviders(vacancies)
+		company.CloudProviders = c.aggregateOrderedCloudProviders(company.CloudProviders, vacancies)
 		company.GitHubRepositoryCount = languageProfile.GitHubRepositoryCount
 		company.Remote = company.Remote || c.anyRemoteVacancy(vacancies)
 		company.LatestVacancyDate = c.maxLanguageDate(vacancies)
@@ -2104,10 +2104,14 @@ func (c *Controller) hasVacancies(company domain.CompanyProfile) bool {
 	return false
 }
 
-func (c *Controller) aggregateOrderedCloudProviders(vacancies []domain.Vacancy) []domain.CloudProvider {
+func (c *Controller) aggregateOrderedCloudProviders(sourceCloudProviders []domain.CloudProvider, vacancies []domain.Vacancy) []domain.CloudProvider {
 	var (
 		cloudProviderExistsMap = make(map[domain.CloudProvider]bool)
 	)
+
+	for _, cloudProvider := range sourceCloudProviders {
+		cloudProviderExistsMap[cloudProvider] = true
+	}
 	for _, vacancy := range vacancies {
 		for _, cloudProvider := range vacancy.CloudProviders {
 			cloudProviderExistsMap[cloudProvider] = true

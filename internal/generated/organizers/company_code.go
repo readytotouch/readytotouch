@@ -1387,6 +1387,12 @@ var (
 		"happyhotel":                          1387, // happyhotel
 		"griffin-bank":                        1388, // Griffin
 		"gliainc":                             1389, // Glia
+		"otrsolutions":                        1390, // OTR Solutions
+		"techex":                              1391, // Techex
+		"simplesurance":                       1392, // simplesurance
+		"spacelift-io":                        1393, // Spacelift
+		"raidiam":                             1394, // Raidiam
+		"skool-com":                           1395, // Skool
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 
