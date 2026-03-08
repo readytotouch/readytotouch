@@ -5724,6 +5724,12 @@
     "destination_72x72": "rabbet.png"
   },
   {
+    "alias": "raidiam",
+    "source": "raidiam-180x180.webp",
+    "destination": "raidiam.png",
+    "destination_72x72": "raidiam.png"
+  },
+  {
     "alias": "railsrglobal",
     "source": "",
     "destination": "",
@@ -6378,6 +6384,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "skool-com",
+    "source": "skool-220x220.png",
+    "destination": "skool-com.png",
+    "destination_72x72": "skool-com.png"
+  },
+  {
     "alias": "sky",
     "source": "sky-180x180.png",
     "destination": "sky.png",
@@ -6544,6 +6556,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "spacelift-io",
+    "source": "spacelift-io-180x180.png",
+    "destination": "spacelift-io.png",
+    "destination_72x72": "spacelift-io.png"
   },
   {
     "alias": "spe-solution",

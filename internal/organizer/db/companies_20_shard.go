@@ -5181,6 +5181,17 @@ func companies20Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4378907889/",
+							Location:             "London Area, United Kingdom",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-03-05"),
+							WithSalary:           true, // £75k/yr - £80k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {

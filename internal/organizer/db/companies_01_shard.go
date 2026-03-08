@@ -341,6 +341,7 @@ func companies01Shard() []domain.CompanyProfile {
 			},
 			RustFoundationMember: true,
 			SyncSources:          []domain.CompanySyncSource{domain.RustCompanies},
+			CloudProviders:       []domain.CloudProvider{domain.GCP},
 		},
 
 		// BigTech | Mozilla
