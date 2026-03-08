@@ -652,7 +652,7 @@ func companies10Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4363735115/",
 							Location:             "Plano, TX",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-03-01", "2026-02-08"),
+							Date:                 mustDate("2026-03-04", "2026-03-01", "2026-02-08"),
 							WithSalary:           true, // $65/hr - $75/hr
 							Remote:               false,
 						},

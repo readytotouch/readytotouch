@@ -1374,7 +1374,7 @@ func companies08Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4365358867/",
 							Location:             "Pune/Pimpri-Chinchwad Area",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-02-14"),
+							Date:                 mustDate("2026-03-07", "2026-02-14"),
 							WithSalary:           false,
 							Remote:               false,
 						},

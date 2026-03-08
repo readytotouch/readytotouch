@@ -6324,6 +6324,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "simplesurance",
+    "source": "simplesurance-180x180.png",
+    "destination": "simplesurance.png",
+    "destination_72x72": "simplesurance.png"
+  },
+  {
     "alias": "simpli.fi",
     "source": "simpli.fi-200x200.jpeg",
     "destination": "simpli.fi.jpeg",

@@ -2520,6 +2520,17 @@ func companies24Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Staff Software Engineer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4371462871/",
+							Location:             "Austin, TX",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-03-06"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
@@ -3258,6 +3269,92 @@ func companies24Shard() []domain.CompanyProfile {
 			ShortDescription: "Video over IP",
 			Industries:       []domain.Industry{
 				// NOP
+			},
+		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "simplesurance",
+			BaseURL:    "https://www.simplesurance.com/",
+			CareersURL: "https://www.simplesurance.com/careers/",
+			AboutURL:   "https://www.simplesurance.com/who-we-are/",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2867578,
+				IDs:               nil,
+				Alias:             "simplesurance",
+				Name:              "simplesurance",
+				Followers:         "7K",
+				Employees:         "51-200",
+				AssociatedMembers: "122",
+				Verified:          true,
+				Date:              mustDate("2026-03-08"),
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Golang Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4380966201/",
+							Location:             "Lisbon, Lisbon, Portugal",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-03-05"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "",
+			Industries: []domain.Industry{
+				domain.IndustryInsurTech,
 			},
 		},
 	}

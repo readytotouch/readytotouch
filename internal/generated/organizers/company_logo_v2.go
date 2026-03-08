@@ -1058,6 +1058,7 @@ var (
 		"sides-dach":                          "sides-dach.jpeg",
 		"siemens":                             "siemens.png",
 		"simacanbv":                           "",
+		"simplesurance":                       "simplesurance.png",
 		"simpli.fi":                           "simpli.fi.jpeg",
 		"simplisales":                         "simplisales.jpeg",
 		"simulmedia":                          "simulmedia.png",

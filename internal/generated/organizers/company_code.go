@@ -1389,6 +1389,7 @@ var (
 		"gliainc":                             1389, // Glia
 		"otrsolutions":                        1390, // OTR Solutions
 		"techex":                              1391, // Techex
+		"simplesurance":                       1392, // simplesurance
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 
