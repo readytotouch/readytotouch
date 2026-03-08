@@ -90,6 +90,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4281839653/":                                                               2627, // sap
 		"https://www.linkedin.com/jobs/view/4302729395/":                                                               2999, // sap
 		"https://www.linkedin.com/jobs/view/4302722522/":                                                               3647, // sap
+		"https://www.linkedin.com/jobs/view/4361987792/":                                                               4360, // sap
 		"https://www.linkedin.com/jobs/view/4059368134/":                                                               259,  // sap
 		"https://www.indeed.com/viewjob?jk=a6ecca848079cb48":                                                           1223, // oracle
 		"https://www.indeed.com/viewjob?jk=389f6a7aabfbaf90":                                                           1275, // oracle
@@ -381,6 +382,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4104785473/":                                                               212,  // fortinet
 		"https://www.linkedin.com/jobs/view/4122351024/":                                                               572,  // fortinet
 		"https://www.linkedin.com/jobs/view/4188226108/":                                                               1232, // fortinet
+		"https://www.linkedin.com/jobs/view/4382306185/":                                                               4361, // fortinet
 		"https://www.linkedin.com/jobs/view/4096029115/":                                                               414,  // sentinelone
 		"https://www.linkedin.com/jobs/view/4125792094/":                                                               593,  // sentinelone
 		"https://www.linkedin.com/jobs/view/4125792093/":                                                               785,  // sentinelone
@@ -2135,6 +2137,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4294609425/":                                                               2794, // ubiquiti-
 		"https://www.linkedin.com/jobs/view/4218708804/":                                                               3086, // ubiquiti-
 		"https://www.linkedin.com/jobs/view/4334347580/":                                                               3704, // ubiquiti-
+		"https://www.linkedin.com/jobs/view/4380958171/":                                                               4362, // ubiquiti-
 		"https://www.linkedin.com/jobs/view/4096314146/":                                                               184,  // textnow
 		"https://www.linkedin.com/jobs/view/4096309405/":                                                               557,  // textnow
 		"https://www.linkedin.com/jobs/view/4124814543/":                                                               610,  // textnow
@@ -2232,6 +2235,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4276829192/":                                                               3151, // sas
 		"https://www.linkedin.com/jobs/view/4367322363/":                                                               3948, // sas
 		"https://www.linkedin.com/jobs/view/4368699053/":                                                               4202, // sas
+		"https://www.linkedin.com/jobs/view/4380357617/":                                                               4363, // sas
 		"https://www.linkedin.com/jobs/view/4103430030/":                                                               242,  // kochinc
 		"https://www.linkedin.com/jobs/view/4108714658/":                                                               243,  // groq
 		"https://www.linkedin.com/jobs/view/4105750575/":                                                               244,  // pay-retailers
@@ -3059,6 +3063,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4357740745/":                                                               3976, // adjoe
 		"https://www.linkedin.com/jobs/view/4363073046/":                                                               4051, // adjoe
 		"https://www.linkedin.com/jobs/view/4373756979/":                                                               4223, // adjoe
+		"https://www.linkedin.com/jobs/view/4379847302/":                                                               4364, // adjoe
 		"https://www.linkedin.com/jobs/view/4192297683/":                                                               1314, // docebo
 		"https://www.linkedin.com/jobs/view/4205969730/":                                                               1696, // docebo
 		"https://www.linkedin.com/jobs/view/4205975145/":                                                               1816, // docebo
@@ -3202,6 +3207,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4334616271/":                                                               3312, // we-are-fyst
 		"https://www.linkedin.com/jobs/view/4366197840/":                                                               3905, // we-are-fyst
 		"https://www.linkedin.com/jobs/view/4375007774/":                                                               4155, // we-are-fyst
+		"https://www.linkedin.com/jobs/view/4381917193/":                                                               4365, // we-are-fyst
 		"https://www.linkedin.com/jobs/view/4204378000/":                                                               1469, // letgo
 		"https://www.linkedin.com/jobs/view/4204597545/":                                                               1505, // daftcode-sp-z-o-o-
 		"https://www.linkedin.com/jobs/view/4205812062/":                                                               1506, // scorebuddy

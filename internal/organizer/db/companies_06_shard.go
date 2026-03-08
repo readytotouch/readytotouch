@@ -88,7 +88,7 @@ func companies06Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4004290596/",
 							Location:             "Nicosia, Nicosia, Cyprus",
-							Date:                 mustDate("2026-02-14", "2025-12-13", "2025-11-20", "2025-10-30", "2025-10-08", "2025-09-20", "2025-09-10", "2025-07-28", "2025-07-06", "2025-06-14", "2025-05-03"),
+							Date:                 mustDate("2026-03-07", "2026-02-14", "2025-12-13", "2025-11-20", "2025-10-30", "2025-10-08", "2025-09-20", "2025-09-10", "2025-07-28", "2025-07-06", "2025-06-14", "2025-05-03"),
 							WithSalary:           false,
 							Remote:               false,
 						},
