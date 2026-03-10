@@ -6603,6 +6603,17 @@ func companies02Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Software Developer C++/Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4365497157/",
+							Location:             "Istanbul, Türkiye",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-03-09"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
