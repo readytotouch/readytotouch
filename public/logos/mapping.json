@@ -1254,6 +1254,12 @@
     "destination_72x72": "celonis.png"
   },
   {
+    "alias": "cenareo",
+    "source": "cenareo-256x256.png",
+    "destination": "cenareo.png",
+    "destination_72x72": "cenareo.png"
+  },
+  {
     "alias": "centene-corporation",
     "source": "centene-200x200.jpeg",
     "destination": "centene-corporation.jpeg",

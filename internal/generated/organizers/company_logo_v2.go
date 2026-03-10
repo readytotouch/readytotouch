@@ -213,6 +213,7 @@ var (
 		"catiotech":                           "catiotech.png",
 		"cava-":                               "",
 		"celonis":                             "celonis.png",
+		"cenareo":                             "cenareo.png",
 		"centene-corporation":                 "centene-corporation.jpeg",
 		"centra-commerce":                     "centra-commerce.png",
 		"centralretail":                       "",
