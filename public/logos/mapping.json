@@ -5430,6 +5430,12 @@
     "destination_72x72": "planet.jpeg"
   },
   {
+    "alias": "planitar",
+    "source": "goiguide-180x180.png",
+    "destination": "planitar.png",
+    "destination_72x72": "planitar.png"
+  },
+  {
     "alias": "plannatech",
     "source": "",
     "destination": "",

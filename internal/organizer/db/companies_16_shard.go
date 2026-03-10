@@ -2525,6 +2525,17 @@ func companies16Shard() []domain.CompanyProfile {
 							WithSalary:           true, // £60k/yr - £80k/yr
 							Remote:               false,
 						},
+						{
+							Title:                "Go Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4382286382/",
+							Location:             "London Area, United Kingdom",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-03-10"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},

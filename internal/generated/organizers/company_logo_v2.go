@@ -909,6 +909,7 @@ var (
 		"pizza-hut":                           "pizza-hut.jpeg",
 		"plaid-":                              "",
 		"planet":                              "planet.jpeg",
+		"planitar":                            "planitar.png",
 		"plannatech":                          "",
 		"plentyone-ecommerce":                 "",
 		"pola-rs":                             "",

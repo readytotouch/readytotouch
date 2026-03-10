@@ -3873,5 +3873,91 @@ func companies24Shard() []domain.CompanyProfile {
 				// NOP
 			},
 		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Planitar Inc.",
+			BaseURL:    "https://goiguide.com/",
+			CareersURL: "https://goiguide.com/careers",
+			AboutURL:   "https://goiguide.com/about",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2990083,
+				IDs:               nil,
+				Alias:             "planitar",
+				Name:              "Planitar Inc.",
+				Followers:         "4K",
+				Employees:         "51-200",
+				AssociatedMembers: "163",
+				Verified:          true,
+				Date:              mustDate("2026-03-11"),
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Full Stack Engineer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4334974804/",
+							Location:             "Toronto, ON",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-03-10"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Planitar Inc. is the maker of iGUIDE®, a proprietary camera and software platform for documenting properties and delivering immersive 3D virtual tours and detailed property information, including accurate floor plans and reliable measurements.",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
 	}
 }

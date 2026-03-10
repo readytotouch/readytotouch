@@ -1398,6 +1398,7 @@ func companies23Shard() []domain.CompanyProfile {
 			Industries: []domain.Industry{
 				domain.IndustryCyberSecurity,
 			},
+			Ignore: true, // They are hiring in a country that is the aggressor according to international law | http://web.archive.org/web/20260310215152/https://www.linkedin.com/jobs/view/4365728121/
 		},
 		{
 			ID:         0,  // system
@@ -4802,6 +4803,17 @@ func companies23Shard() []domain.CompanyProfile {
 							Location:             "United States",
 							CloudProviders:       []domain.CloudProvider{},
 							Date:                 mustDate("2026-03-04"),
+							WithSalary:           true, // $80/hr - $100/hr
+							Remote:               true,
+						},
+						{
+							Title:                "Senior Go Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4382510351/",
+							Location:             "United States",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-03-11"),
 							WithSalary:           true, // $80/hr - $100/hr
 							Remote:               true,
 						},
