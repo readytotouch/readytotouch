@@ -279,7 +279,7 @@ func companies01Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4372548348/",
 							Location:             "Sunnyvale, CA",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-02-17"),
+							Date:                 mustDate("2026-03-10", "2026-02-17"),
 							WithSalary:           true, // $166k/yr - $244k/yr
 							Remote:               false,
 						},

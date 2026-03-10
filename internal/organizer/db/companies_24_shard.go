@@ -3701,5 +3701,177 @@ func companies24Shard() []domain.CompanyProfile {
 				domain.IndustryMarTech,
 			},
 		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Torchlight®",
+			BaseURL:    "https://www.torchlight.ai/",
+			CareersURL: "https://www.torchlight.ai/careers/",
+			AboutURL:   "https://www.torchlight.ai/about/",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                79459437,
+				IDs:               nil,
+				Alias:             "torchlightai",
+				Name:              "Torchlight®",
+				Followers:         "20K",
+				Employees:         "11-50",
+				AssociatedMembers: "47",
+				Verified:          true,
+				Date:              mustDate("2026-03-11"),
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4372132912/",
+							Location:             "United States",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-03-10"),
+							WithSalary:           true, // $175k/yr - $195k/yr
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "",
+			Industries: []domain.Industry{
+				domain.IndustryDefenseTech,
+			},
+		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Xperi Inc.",
+			BaseURL:    "https://xperi.com/",
+			CareersURL: "https://xperi.com/careers/",
+			AboutURL:   "",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                17962490,
+				IDs:               nil,
+				Alias:             "xperi-inc",
+				Name:              "Xperi Inc.",
+				Followers:         "35K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "1,581",
+				Verified:          true,
+				Date:              mustDate("2026-03-11"),
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Golang Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4382297495/",
+							Location:             "Warsaw, Mazowieckie, Poland",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-03-10"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
 	}
 }

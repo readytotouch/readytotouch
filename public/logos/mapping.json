@@ -924,6 +924,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "bitpanda",
+    "source": "bitpanda-200x200.jpeg",
+    "destination": "bitpanda.jpeg",
+    "destination_72x72": "bitpanda.jpeg"
+  },
+  {
     "alias": "bitwarden1",
     "source": "bitwarden1-200x200.jpeg",
     "destination": "bitwarden1.jpeg",
@@ -7356,6 +7362,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "torchlightai",
+    "source": "torchlightai.svg",
+    "destination": "torchlightai.svg",
+    "destination_72x72": "torchlightai.svg"
+  },
+  {
     "alias": "torqio",
     "source": "torqio-180x180.webp",
     "destination": "torqio.png",
@@ -8146,6 +8158,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "xperi-inc",
+    "source": "xperi-180x180.webp",
+    "destination": "xperi-inc.png",
+    "destination_72x72": "xperi-inc.png"
   },
   {
     "alias": "yalo",
