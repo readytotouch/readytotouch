@@ -6,9 +6,9 @@ A job-focused list of product companies by programming language — curated manu
 
 | Language                                              | Companies |
 |-------------------------------------------------------|-----------|
-| [Go](https://readytotouch.com/golang/companies)       | 914       |
-| [Rust](https://readytotouch.com/rust/companies)       | 297       |
-| [Scala](https://readytotouch.com/scala/companies)     | 163       |
+| [Go](https://readytotouch.com/golang/companies)       | 913       |
+| [Rust](https://readytotouch.com/rust/companies)       | 298       |
+| [Scala](https://readytotouch.com/scala/companies)     | 164       |
 | [Elixir](https://readytotouch.com/elixir/companies)   | 114       |
 | [Clojure](https://readytotouch.com/clojure/companies) | 25        |
 | [Erlang](https://readytotouch.com/erlang/companies)   | —         |
