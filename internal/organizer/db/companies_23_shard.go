@@ -2103,8 +2103,9 @@ func companies23Shard() []domain.CompanyProfile {
 				Name:              "Elastio",
 				Followers:         "3K",
 				Employees:         "51-200",
-				AssociatedMembers: "42",
+				AssociatedMembers: "46",
 				Verified:          false,
+				Date:              mustDate("2026-03-10"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:     "elastio",
@@ -2142,7 +2143,19 @@ func companies23Shard() []domain.CompanyProfile {
 				},
 				domain.Rust: {
 					GitHubRepositoryCount: 20,
-					Vacancies:             []domain.Vacancy{},
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Rust Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4383731290/",
+							Location:             "Toronto, ON",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-03-10"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
 				},
 				domain.Zig: {
 					GitHubRepositoryCount: 0,
