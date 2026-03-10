@@ -2054,7 +2054,15 @@ func companies24Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Narvar-EI_IE1268435.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Narvar-Reviews-E1268435.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Narvar-Jobs-E1268435.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "",
+				Verified:    true,
+				Date:        mustDate("2026-03-11"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -3129,7 +3137,15 @@ func companies24Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-OTR-Solutions-EI_IE788595.11,24.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/OTR-Solutions-Reviews-E788595.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/OTR-Solutions-Jobs-E788595.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "",
+				Verified:    true,
+				Date:        mustDate("2026-03-11"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -3387,7 +3403,15 @@ func companies24Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Spacelift-EI_IE3644715.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Spacelift-Reviews-E3644715.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Spacelift-Jobs-E3644715.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "",
+				Verified:    false,
+				Date:        mustDate("2026-03-11"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",

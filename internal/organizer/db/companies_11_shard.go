@@ -499,7 +499,15 @@ func companies11Shard() []domain.CompanyProfile {
 				Employees: "60",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Photoroom-EI_IE8011752.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Photoroom-Reviews-E8011752.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Photoroom-Jobs-E8011752.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "",
+				Verified:    false,
+				Date:        mustDate("2026-03-11"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
