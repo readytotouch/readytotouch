@@ -1,35 +1,58 @@
 # ReadyToTouch
-A platform for simplifying job search
 
-## Organizers:
-- [Companies using Go](https://readytotouch.com/golang/companies)
-- [Companies using Rust](https://readytotouch.com/rust/companies)
-- [Companies using Scala](https://readytotouch.com/scala/companies)
-- [Companies using Elixir](https://readytotouch.com/elixir/companies)
-- [Companies using Erlang](https://readytotouch.com/erlang/companies)
-- [Companies using Clojure](https://readytotouch.com/clojure/companies)
-- [Companies using Zig](https://readytotouch.com/zig/companies)
-- [Companies using Haskell](https://readytotouch.com/haskell/companies)
-- [Companies using F#](https://readytotouch.com/fsharp/companies)
-- [Companies using OCaml](https://readytotouch.com/ocaml/companies)
+A job-focused list of product companies by programming language — curated manually, updated weekly.
+
+## Languages
+
+| Language                                              | Companies |
+|-------------------------------------------------------|-----------|
+| [Go](https://readytotouch.com/golang/companies)       | 913       |
+| [Rust](https://readytotouch.com/rust/companies)       | 298       |
+| [Scala](https://readytotouch.com/scala/companies)     | 164       |
+| [Elixir](https://readytotouch.com/elixir/companies)   | 114       |
+| [Clojure](https://readytotouch.com/clojure/companies) | 25        |
+| [Erlang](https://readytotouch.com/erlang/companies)   | —         |
+| [Zig](https://readytotouch.com/zig/companies)         | —         |
+| [Haskell](https://readytotouch.com/haskell/companies) | 11        |
+| [F#](https://readytotouch.com/fsharp/companies)       | —         |
+| [OCaml](https://readytotouch.com/ocaml/companies)     | —         |
+
+Product companies and startups only — no outsourcing, no agencies.
+
+Each company profile includes links to Careers, GitHub, Glassdoor, Levels.fyi, and LinkedIn search for current and former employees.
+
+## Why this exists
+
+I have a stable job at DocHQ and I'm happy there. But after seeing so many posts about layoffs and long job searches, I decided to start preparing before I need a new role — building a list of companies I'd want to work at and connecting with people there early.
+
+That side project grew into ReadyToTouch.
+
+## FAQ
+
+**How do I switch to Go, Rust, Elixir, or another modern backend stack?**
+[How to Switch to Go, Rust, Elixir, or Any Modern Backend Stack](https://dev.to/yaroslavpodorvanov/how-to-switch-to-go-rust-elixir-or-any-modern-backend-stack-1io0)
 
 ## Articles
+
+**Go**
+- Reddit | [Job-focused list of product companies using Go in production — 2026](https://www.reddit.com/r/golang/comments/1rjvskv/)
+- Reddit | [Job-oriented list of companies using Go in production — now mobile-friendly](https://www.reddit.com/r/golang/comments/1qegiyy/)
+- Reddit | [My list of companies that use Golang 2.0](https://www.reddit.com/r/golang/comments/1ixglek/)
+- Reddit | [My list of companies that use Golang](https://www.reddit.com/r/golang/comments/1fjbp1p/)
+
+**Rust**
+- Reddit | [Job-oriented list of companies using Rust in production — now mobile-friendly](https://www.reddit.com/r/rust/comments/1qcalnt/)
+- Reddit | [My list of companies that use Rust](https://www.reddit.com/r/rust/comments/1jg4rrl/)
 - Forum | [My list of companies that use Rust](https://users.rust-lang.org/t/my-list-of-companies-that-use-rust/127300)
-- Reddit | [My list of companies that use Rust](https://www.reddit.com/r/rust/comments/1jg4rrl/my_list_of_companies_that_use_rust/)
-- Reddit | [Job-oriented list of companies using Rust in production is now mobile-friendly](https://www.reddit.com/r/rust/comments/1qcalnt/joboriented_list_of_companies_using_rust_in/)
-- Reddit | [My list of companies that use Golang 2.0](https://www.reddit.com/r/golang/comments/1ixglek/my_list_of_companies_that_use_golang_20/)
-- Reddit | [My list of companies that use Golang](https://www.reddit.com/r/golang/comments/1fjbp1p/my_list_of_companies_that_use_golang/)
-- Reddit | [Job-oriented list of companies using Go in production — now mobile-friendly](https://www.reddit.com/r/golang/comments/1qegiyy/joboriented_list_of_companies_using_go_in/)
+
+**OCaml**
+- Reddit | [I maintain job-focused lists of product companies for Go/Rust/Scala/Elixir — should I add OCaml?](https://www.reddit.com/r/ocaml/comments/1rkjy32/)
 
 ## Analytics
 - https://readytotouch.com/plausible
 - https://readytotouch.com/similarweb
 
-## Research repositories:
-- https://github.com/doutivity/research-online-redis-go
-- https://github.com/doutivity/research-online-postgres-go
-
-## Local development:
+## Local development
 ```bash
 make env-docker-compose-development
 make env-up
@@ -38,19 +61,16 @@ make app-restart
 ```
 
 ## Contributions
-**The project is not open for contributions for now.** 
 
-There are several reasons for that:
-1. I’m planning to monetize the project, for example by pinning one company at the top of the company list.
-2. I have a team already working with me and a well-established workflow — additional help would only slow things down.
-3. Currently, there’s a task to rebuild half of the project: [ReadyToTouch v3 — Responsive web design — Epic](https://github.com/readytotouch/readytotouch/issues/157)
+**The project is not open for contributions at this time.**
 
-Thank you for your interest and understanding!
+Reasons:
+1. The project is planned to be monetized — for example, by featuring companies at the top of the list.
+2. I have a small team with an established workflow — this is a side project we maintain at our own pace, and additional contributions would slow things down rather than help.
 
-## FAQ | Why am I working on this project?
+Thank you for your understanding!
 
-I currently have a stable job in a MedTech project at DocHQ. But because there are many news about layoffs and many people say that finding a job is now harder, I thought about what I can do now, while I have time, to make my future job search easier and less stressful.
+## Research
 
-So I started making a list of companies that use Golang and adding developers from these companies to my contacts with a message like:  "Hi, I also work with Golang and am interested in ExampleCompanyName for future opportunities".
-
-To improve the project, I organized it better and started collecting feedback from the Ukrainian Golang community. Later, I added support for Rust, Scala, and Elixir.
+- https://github.com/doutivity/research-online-redis-go
+- https://github.com/doutivity/research-online-postgres-go

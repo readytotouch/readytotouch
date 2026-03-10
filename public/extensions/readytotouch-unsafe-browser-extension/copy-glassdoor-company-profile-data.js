@@ -30,7 +30,7 @@ function trim($element) {
 }
 
 function isEngagedEmployer() {
-    const elements = document.querySelectorAll(`p[class^="employer-engagement-status_engagement"]`);
+    const elements = document.querySelectorAll(`div[class^="EmployerInfo_employerInfoEngagementStatus"]`);
 
     return Array.from(elements).some($element => $element.textContent.trim() === "Engaged Employer");
 }

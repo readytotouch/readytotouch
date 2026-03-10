@@ -665,7 +665,7 @@ func companies10Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4363735115/",
 							Location:             "Plano, TX",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-03-04", "2026-03-01", "2026-02-08"),
+							Date:                 mustDate("2026-03-10", "2026-03-04", "2026-03-01", "2026-02-08"),
 							WithSalary:           true, // $65/hr - $75/hr
 							Remote:               false,
 						},
@@ -1650,7 +1650,7 @@ func companies10Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4337081482/",
 							Location:             "Chicago, IL",
-							Date:                 mustDate("2026-02-14", "2025-12-11", "2025-11-20"),
+							Date:                 mustDate("2026-03-08", "2026-02-14", "2025-12-11", "2025-11-20"),
 							WithSalary:           true, // $165k/yr - $190k/yr + bonus
 							Remote:               false,
 						},

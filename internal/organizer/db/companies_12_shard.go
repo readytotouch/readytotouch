@@ -798,10 +798,11 @@ func companies12Shard() []domain.CompanyProfile {
 				IDs:               nil,
 				Alias:             "bitpanda",
 				Name:              "Bitpanda",
-				Followers:         "68K",
+				Followers:         "84K",
 				Employees:         "501-1K",
-				AssociatedMembers: "744",
+				AssociatedMembers: "916",
 				Verified:          true,
+				Date:              mustDate("2026-03-11"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -843,6 +844,17 @@ func companies12Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Backend Engineer, Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4383737811/",
+							Location:             "Bucharest, Bucharest, Romania",
+							CloudProviders:       []domain.CloudProvider{domain.AWS},
+							Date:                 mustDate("2026-03-10"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -853,7 +865,9 @@ func companies12Shard() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "",
-			Ignore:           true, // Crypto
+			Industries: []domain.Industry{
+				domain.IndustryCryptoCurrency,
+			},
 		},
 		{
 			ID:         0,  // system

@@ -1398,6 +1398,7 @@ func companies23Shard() []domain.CompanyProfile {
 			Industries: []domain.Industry{
 				domain.IndustryCyberSecurity,
 			},
+			Ignore: true, // They are hiring in a country that is the aggressor according to international law | http://web.archive.org/web/20260310215152/https://www.linkedin.com/jobs/view/4365728121/
 		},
 		{
 			ID:         0,  // system
@@ -1412,10 +1413,11 @@ func companies23Shard() []domain.CompanyProfile {
 				IDs:               nil,
 				Alias:             "appdirect",
 				Name:              "AppDirect",
-				Followers:         "144K",
+				Followers:         "150K",
 				Employees:         "501-1K",
-				AssociatedMembers: "1,109",
+				AssociatedMembers: "1,140",
 				Verified:          true,
+				Date:              mustDate("2026-03-11"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:     "appdirect",
@@ -1463,6 +1465,17 @@ func companies23Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4358139738/",
 							Location:             "Greater Buenos Aires",
 							Date:                 mustDate("2026-02-22", "2026-01-30", "2026-01-08"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Staff Full Stack Developer (Go/React)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4328805012/",
+							Location:             "Greater Buenos Aires",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-03-10"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2103,8 +2116,9 @@ func companies23Shard() []domain.CompanyProfile {
 				Name:              "Elastio",
 				Followers:         "3K",
 				Employees:         "51-200",
-				AssociatedMembers: "42",
+				AssociatedMembers: "46",
 				Verified:          false,
+				Date:              mustDate("2026-03-10"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:     "elastio",
@@ -2142,7 +2156,19 @@ func companies23Shard() []domain.CompanyProfile {
 				},
 				domain.Rust: {
 					GitHubRepositoryCount: 20,
-					Vacancies:             []domain.Vacancy{},
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Rust Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4383731290/",
+							Location:             "Toronto, ON",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-03-10"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
 				},
 				domain.Zig: {
 					GitHubRepositoryCount: 0,
@@ -3227,6 +3253,17 @@ func companies23Shard() []domain.CompanyProfile {
 							Location:             "London, England, United Kingdom",
 							CloudProviders:       []domain.CloudProvider{},
 							Date:                 mustDate("2026-02-24"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Software Engineer (Java, Scala)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4381867077/",
+							Location:             "London, England, United Kingdom",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-03-09"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -4778,6 +4815,17 @@ func companies23Shard() []domain.CompanyProfile {
 							Location:             "United States",
 							CloudProviders:       []domain.CloudProvider{},
 							Date:                 mustDate("2026-03-04"),
+							WithSalary:           true, // $80/hr - $100/hr
+							Remote:               true,
+						},
+						{
+							Title:                "Senior Go Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4382510351/",
+							Location:             "United States",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-03-11"),
 							WithSalary:           true, // $80/hr - $100/hr
 							Remote:               true,
 						},

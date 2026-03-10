@@ -924,6 +924,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "bitpanda",
+    "source": "bitpanda-200x200.jpeg",
+    "destination": "bitpanda.jpeg",
+    "destination_72x72": "bitpanda.jpeg"
+  },
+  {
     "alias": "bitwarden1",
     "source": "bitwarden1-200x200.jpeg",
     "destination": "bitwarden1.jpeg",
@@ -1246,6 +1252,12 @@
     "source": "celonis-180x180.png",
     "destination": "celonis.png",
     "destination_72x72": "celonis.png"
+  },
+  {
+    "alias": "cenareo",
+    "source": "cenareo-256x256.png",
+    "destination": "cenareo.png",
+    "destination_72x72": "cenareo.png"
   },
   {
     "alias": "centene-corporation",
@@ -2713,9 +2725,9 @@
   },
   {
     "alias": "forcepoint",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "forcepoint-180x180.png",
+    "destination": "forcepoint.png",
+    "destination_72x72": "forcepoint.png"
   },
   {
     "alias": "ford-motor-company",
@@ -3193,9 +3205,9 @@
   },
   {
     "alias": "gymondo-gmbh",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "gymondo-200x200.jpeg",
+    "destination": "gymondo-gmbh.jpeg",
+    "destination_72x72": "gymondo-gmbh.jpeg"
   },
   {
     "alias": "hadrianspace",
@@ -4033,9 +4045,9 @@
   },
   {
     "alias": "london-stock-exchange-group",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "lseg-200x200.jpeg",
+    "destination": "london-stock-exchange-group.jpeg",
+    "destination_72x72": "london-stock-exchange-group.jpeg"
   },
   {
     "alias": "lonely-planet",
@@ -4969,9 +4981,9 @@
   },
   {
     "alias": "on2it-cybersecurity",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "on2it-cybersecurity-180x180.png",
+    "destination": "on2it-cybersecurity.png",
+    "destination_72x72": "on2it-cybersecurity.png"
   },
   {
     "alias": "onedoc.ch",
@@ -5353,9 +5365,9 @@
   },
   {
     "alias": "photoroom",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "photoroom-200x200.jpeg",
+    "destination": "photoroom.jpeg",
+    "destination_72x72": "photoroom.jpeg"
   },
   {
     "alias": "phraseplatform",
@@ -5422,6 +5434,12 @@
     "source": "planet-200x200.jpeg",
     "destination": "planet.jpeg",
     "destination_72x72": "planet.jpeg"
+  },
+  {
+    "alias": "planitar",
+    "source": "goiguide-180x180.png",
+    "destination": "planitar.png",
+    "destination_72x72": "planitar.png"
   },
   {
     "alias": "plannatech",
@@ -6624,6 +6642,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "sprout-social-inc-",
+    "source": "sproutsocial-180x180.png",
+    "destination": "sprout-social-inc-.png",
+    "destination_72x72": "sprout-social-inc-.png"
+  },
+  {
     "alias": "squarepoint-capital",
     "source": "squarepoint-capital-200x200.jpeg",
     "destination": "squarepoint-capital.jpeg",
@@ -7348,6 +7372,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "torchlightai",
+    "source": "torchlightai.svg",
+    "destination": "torchlightai.svg",
+    "destination_72x72": "torchlightai.svg"
   },
   {
     "alias": "torqio",
@@ -8140,6 +8170,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "xperi-inc",
+    "source": "xperi-180x180.webp",
+    "destination": "xperi-inc.png",
+    "destination_72x72": "xperi-inc.png"
   },
   {
     "alias": "yalo",
