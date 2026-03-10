@@ -3615,5 +3615,91 @@ func companies24Shard() []domain.CompanyProfile {
 				domain.IndustrySocialMedia,
 			},
 		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Sprout Social, Inc.",
+			BaseURL:    "https://sproutsocial.com/",
+			CareersURL: "https://sproutsocial.com/careers/",
+			AboutURL:   "https://sproutsocial.com/about/",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1175268,
+				IDs:               nil,
+				Alias:             "sprout-social-inc-",
+				Name:              "Sprout Social, Inc.",
+				Followers:         "169K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "1,793",
+				Verified:          true,
+				Date:              mustDate("2026-03-10"),
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer – Back-end (Scala)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4381069460/",
+							Location:             "Poland",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-03-07"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Social media management and analytics software",
+			Industries: []domain.Industry{
+				domain.IndustryMarTech,
+			},
+		},
 	}
 }

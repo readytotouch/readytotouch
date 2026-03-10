@@ -6624,6 +6624,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "sprout-social-inc-",
+    "source": "sproutsocial-180x180.png",
+    "destination": "sprout-social-inc-.png",
+    "destination_72x72": "sprout-social-inc-.png"
+  },
+  {
     "alias": "squarepoint-capital",
     "source": "squarepoint-capital-200x200.jpeg",
     "destination": "squarepoint-capital.jpeg",

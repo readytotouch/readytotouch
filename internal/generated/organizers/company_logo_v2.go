@@ -1108,6 +1108,7 @@ var (
 		"spotify":                             "",
 		"spoton":                              "spoton.jpeg",
 		"spreedly":                            "",
+		"sprout-social-inc-":                  "sprout-social-inc-.png",
 		"squarepoint-capital":                 "squarepoint-capital.jpeg",
 		"squarespace":                         "",
 		"st-jude-childrens-research-hospital": "",

@@ -5006,10 +5006,25 @@ func companies15Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			Languages: domain.Languages{
-				domain.Go:    {},
-				domain.Rust:  {},
-				domain.Zig:   {},
-				domain.Scala: {},
+				domain.Go:   {},
+				domain.Rust: {},
+				domain.Zig:  {},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Backend Engineer (Java, Scala)",
+							ShortDescription:     "Kubernetes",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4382285596/",
+							Location:             "Bucharest, Bucharest, Romania",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-03-10"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
 				domain.Elixir: {
 					GitHubRepositoryCount: 5,
 					Vacancies: []domain.Vacancy{
