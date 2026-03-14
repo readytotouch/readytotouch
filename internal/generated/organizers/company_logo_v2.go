@@ -1248,6 +1248,7 @@ var (
 		"trendai-security":                    "trend-micro.jpeg",
 		"trio-so":                             "trio-so.jpeg",
 		"true-anomaly":                        "true-anomaly.png",
+		"truelayer":                           "truelayer.jpeg",
 		"truely":                              "",
 		"trustingsocial":                      "",
 		"tryprofound":                         "tryprofound.jpeg",

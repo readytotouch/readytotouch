@@ -4620,12 +4620,15 @@ func companies04Shard() []domain.CompanyProfile {
 			BlogURL:    "https://www.ddn.com/blog/",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                21665,
-				Alias:             "ddn", // before ddn-storage
+				IDs:               nil,
+				Alias:             "ddn",
+				PreviousAliases:   []string{"ddn-storage"},
 				Name:              "DDN",
-				Followers:         "51K",
+				Followers:         "82K",
 				Employees:         "1K-5K",
-				AssociatedMembers: "914",
+				AssociatedMembers: "1,425",
 				Verified:          true,
+				Date:              mustDate("2026-03-14"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:     "DDNStorage",
@@ -4707,7 +4710,7 @@ func companies04Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4314714395/",
 							Location:             "India",
-							Date:                 mustDate("2026-02-05", "2025-11-29", "2025-11-12", "2025-10-16"),
+							Date:                 mustDate("2026-03-12", "2026-02-05", "2025-11-29", "2025-11-12", "2025-10-16"),
 							WithSalary:           false,
 							Remote:               true,
 						},

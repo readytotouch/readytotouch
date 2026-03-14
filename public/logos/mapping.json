@@ -7464,6 +7464,12 @@
     "destination_72x72": "true-anomaly.png"
   },
   {
+    "alias": "truelayer",
+    "source": "truelayer-200x200.jpeg",
+    "destination": "truelayer.jpeg",
+    "destination_72x72": "truelayer.jpeg"
+  },
+  {
     "alias": "truely",
     "source": "",
     "destination": "",

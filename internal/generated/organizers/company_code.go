@@ -1401,6 +1401,7 @@ var (
 		"cenareo":                             1401, // Cenareo
 		"alluviumhealth":                      1402, // Alluvium Health
 		"hg-insights":                         1403, // HG Insights
+		"truelayer":                           1404, // TrueLayer
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 
