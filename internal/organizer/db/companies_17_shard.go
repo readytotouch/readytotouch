@@ -1698,10 +1698,11 @@ func companies17Shard() []domain.CompanyProfile {
 				IDs:               nil,
 				Alias:             "alertmedia",
 				Name:              "AlertMedia",
-				Followers:         "13K",
+				Followers:         "16K",
 				Employees:         "201-500",
-				AssociatedMembers: "433",
+				AssociatedMembers: "481",
 				Verified:          true,
+				Date:              mustDate("2026-03-14"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",

@@ -41,6 +41,7 @@ That side project grew into ReadyToTouch.
 - Reddit | [My list of companies that use Golang](https://www.reddit.com/r/golang/comments/1fjbp1p/)
 
 **Rust**
+- Reddit | [Job-focused list of product companies using Rust in production — 2026](https://www.reddit.com/r/rust/comments/1rrnxfh/)
 - Reddit | [Job-oriented list of companies using Rust in production — now mobile-friendly](https://www.reddit.com/r/rust/comments/1qcalnt/)
 - Reddit | [My list of companies that use Rust](https://www.reddit.com/r/rust/comments/1jg4rrl/)
 - Forum | [My list of companies that use Rust](https://users.rust-lang.org/t/my-list-of-companies-that-use-rust/127300)

@@ -388,11 +388,11 @@ func companies24Shard() []domain.CompanyProfile {
 				IDs:               []int{28199, 34316, 86730975},
 				Alias:             "gendigitalinc",
 				Name:              "Gen",
-				Followers:         "77K",
+				Followers:         "79K",
 				Employees:         "5K-10K",
-				AssociatedMembers: "3,441",
+				AssociatedMembers: "3,466",
 				Verified:          true,
-				Date:              mustDate("2026-02-19"),
+				Date:              mustDate("2026-03-14"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -441,7 +441,7 @@ func companies24Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4374784932/",
 							Location:             "New York, NY",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-02-18"),
+							Date:                 mustDate("2026-03-13", "2026-02-18"),
 							WithSalary:           true, // $200k/yr - $225k/yr
 							Remote:               false,
 						},
@@ -655,11 +655,11 @@ func companies24Shard() []domain.CompanyProfile {
 				IDs:               nil,
 				Alias:             "glovo-app",
 				Name:              "Glovo",
-				Followers:         "333K",
+				Followers:         "341K",
 				Employees:         "1K-5K",
-				AssociatedMembers: "14,207",
+				AssociatedMembers: "14,285",
 				Verified:          true,
-				Date:              mustDate("2026-02-20"),
+				Date:              mustDate("2026-03-14"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:     "Glovo",
@@ -698,7 +698,7 @@ func companies24Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4374006073/",
 							Location:             "Barcelona, Catalonia, Spain",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-02-19"),
+							Date:                 mustDate("2026-03-13", "2026-02-19"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -1763,13 +1763,15 @@ func companies24Shard() []domain.CompanyProfile {
 				Name:              "Graphcore",
 				Followers:         "43K",
 				Employees:         "201-500",
-				AssociatedMembers: "555",
+				AssociatedMembers: "578",
 				Verified:          true,
-				Date:              mustDate("2026-02-26"),
+				Date:              mustDate("2026-03-14"),
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "graphcore",
+				Followers: "323",
+				Verified:  true,
+				Date:      mustDate("2026-03-14"),
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -1802,7 +1804,7 @@ func companies24Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4344851946/",
 							Location:             "Gdańsk, Pomorskie, Poland",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-02-21"),
+							Date:                 mustDate("2026-03-13", "2026-02-21"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3841,7 +3843,15 @@ func companies24Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Xperi-EI_IE1563777.11,16.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Xperi-Reviews-E1563777.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Xperi-Jobs-E1563777.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "",
+				Verified:    true,
+				Date:        mustDate("2026-03-14"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -4055,6 +4065,368 @@ func companies24Shard() []domain.CompanyProfile {
 			ShortDescription: "Cenareo is a digital signage platform for managing smart video content and screen fleets",
 			Industries: []domain.Industry{
 				domain.IndustryMarTech,
+			},
+		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Alluvium Health",
+			BaseURL:    "https://www.alluviumhealth.com/",
+			CareersURL: "",
+			AboutURL:   "",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                16188895,
+				IDs:               nil,
+				Alias:             "alluviumhealth",
+				Name:              "Alluvium Health",
+				Followers:         "2K",
+				Employees:         "51-200",
+				AssociatedMembers: "61",
+				Verified:          false,
+				Date:              mustDate("2026-03-14"),
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Elixir Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4384326649/",
+							Location:             "United States",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-03-12"),
+							WithSalary:           true, // $107k/yr - $142k/yr
+							Remote:               true,
+						},
+					},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Capacity performance platform — unify data, predict demand, and optimize patient access at scale",
+			Industries: []domain.Industry{
+				domain.IndustryMedTech,
+			},
+		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "HG Insights",
+			BaseURL:    "https://hginsights.com/",
+			CareersURL: "https://hginsights.com/hg-insights-careers/",
+			AboutURL:   "https://hginsights.com/about/",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1311279,
+				IDs:               nil,
+				Alias:             "hg-insights",
+				Name:              "HG Insights",
+				Followers:         "22K",
+				Employees:         "51-200",
+				AssociatedMembers: "955",
+				Verified:          true,
+				Date:              mustDate("2026-03-14"),
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-HG-Insights-EI_IE1150802.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/HG-Insights-Reviews-E1150802.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/HG-Insights-Jobs-E1150802.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "",
+				Verified:    false,
+				Date:        mustDate("2026-03-14"),
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer – (Elixir/TypeScript)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4383230327/",
+							Location:             "Pune District, Maharashtra, India",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-03-12"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Go-to-market Technology Intelligence",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "TrueLayer",
+			BaseURL:    "https://truelayer.com/",
+			CareersURL: "https://truelayer.com/careers/",
+			AboutURL:   "https://truelayer.com/about/",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                17954388,
+				IDs:               nil,
+				Alias:             "truelayer",
+				Name:              "TrueLayer",
+				Followers:         "63K",
+				Employees:         "201-500",
+				AssociatedMembers: "276",
+				Verified:          true,
+				Date:              mustDate("2026-03-14"),
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:     "truelayer",
+				Followers: "92",
+				Verified:  true,
+				Date:      mustDate("2026-03-14"),
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-TrueLayer-EI_IE2862409.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/TrueLayer-Reviews-E2862409.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/TrueLayer-Jobs-E2862409.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "",
+				Verified:    false,
+				Date:        mustDate("2026-03-14"),
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer (Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4312155633/",
+							Location:             "Italy",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-03-13"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Open banking payments network",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
+		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Toku",
+			BaseURL:    "https://toku.co/",
+			CareersURL: "https://toku.co/careers/",
+			AboutURL:   "https://toku.co/about-us/",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                13650928,
+				IDs:               []int{10983916, 13650928},
+				Alias:             "toku-global",
+				Name:              "Toku",
+				Followers:         "8K",
+				Employees:         "51-200",
+				AssociatedMembers: "122",
+				Verified:          true,
+				Date:              mustDate("2026-03-14"),
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Backend Software Engineer – Go and AWS",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4382656503/",
+							Location:             "Singapore",
+							CloudProviders:       []domain.CloudProvider{domain.AWS},
+							Date:                 mustDate("2026-03-13"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Bespoke cloud communications solutions for enhanced CX in APAC",
+			Industries:       []domain.Industry{
+				// NOP
 			},
 		},
 	}
