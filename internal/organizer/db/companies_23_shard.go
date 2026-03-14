@@ -2144,7 +2144,15 @@ func companies23Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Elastio-EI_IE7547114.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Elastio-Reviews-E7547114.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Elastio-Jobs-E7547114.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "",
+				Verified:    false,
+				Date:        mustDate("2026-03-14"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",

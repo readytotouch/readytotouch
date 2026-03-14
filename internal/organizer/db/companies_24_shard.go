@@ -1768,8 +1768,10 @@ func companies24Shard() []domain.CompanyProfile {
 				Date:              mustDate("2026-03-14"),
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "graphcore",
+				Followers: "323",
+				Verified:  true,
+				Date:      mustDate("2026-03-14"),
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -3841,7 +3843,15 @@ func companies24Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Xperi-EI_IE1563777.11,16.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Xperi-Reviews-E1563777.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Xperi-Jobs-E1563777.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "",
+				Verified:    true,
+				Date:        mustDate("2026-03-14"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -4173,7 +4183,15 @@ func companies24Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-HG-Insights-EI_IE1150802.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/HG-Insights-Reviews-E1150802.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/HG-Insights-Jobs-E1150802.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "",
+				Verified:    false,
+				Date:        mustDate("2026-03-14"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -4249,8 +4267,10 @@ func companies24Shard() []domain.CompanyProfile {
 				Date:              mustDate("2026-03-14"),
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "truelayer",
+				Followers: "92",
+				Verified:  true,
+				Date:      mustDate("2026-03-14"),
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -4259,7 +4279,15 @@ func companies24Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-TrueLayer-EI_IE2862409.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/TrueLayer-Reviews-E2862409.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/TrueLayer-Jobs-E2862409.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "",
+				Verified:    false,
+				Date:        mustDate("2026-03-14"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",

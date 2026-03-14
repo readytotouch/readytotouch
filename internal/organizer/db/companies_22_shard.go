@@ -128,7 +128,15 @@ func companies22Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Lifemote-EI_IE7964659.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Lifemote-Reviews-E7964659.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Lifemote-Jobs-E7964659.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "",
+				Verified:    false,
+				Date:        mustDate("2026-03-14"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",

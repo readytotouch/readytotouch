@@ -1477,7 +1477,15 @@ func companies11Shard() []domain.CompanyProfile {
 				Employees: "690",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-iCapital-EI_IE1261490.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/iCapital-Reviews-E1261490.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/iCapital-Jobs-E1261490.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "",
+				Verified:    true,
+				Date:        mustDate("2026-03-14"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
