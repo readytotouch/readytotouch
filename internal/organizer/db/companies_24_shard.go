@@ -388,11 +388,11 @@ func companies24Shard() []domain.CompanyProfile {
 				IDs:               []int{28199, 34316, 86730975},
 				Alias:             "gendigitalinc",
 				Name:              "Gen",
-				Followers:         "77K",
+				Followers:         "79K",
 				Employees:         "5K-10K",
-				AssociatedMembers: "3,441",
+				AssociatedMembers: "3,466",
 				Verified:          true,
-				Date:              mustDate("2026-02-19"),
+				Date:              mustDate("2026-03-14"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -441,7 +441,7 @@ func companies24Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4374784932/",
 							Location:             "New York, NY",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-02-18"),
+							Date:                 mustDate("2026-03-13", "2026-02-18"),
 							WithSalary:           true, // $200k/yr - $225k/yr
 							Remote:               false,
 						},

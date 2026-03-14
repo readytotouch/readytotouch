@@ -704,6 +704,7 @@ var (
 		"zalopay":                             701,  // Zalopay
 		"td":                                  702,  // TD
 		"airudder":                            703,  // AI Rudder
+		"bitpanda":                            1396, // Bitpanda
 		"guidewire-software":                  704,  // Guidewire Software
 		"makropro":                            705,  // Makro PRO
 		"infoblox":                            706,  // Infoblox
@@ -1393,6 +1394,11 @@ var (
 		"spacelift-io":                        1393, // Spacelift
 		"raidiam":                             1394, // Raidiam
 		"skool-com":                           1395, // Skool
+		"sprout-social-inc-":                  1397, // Sprout Social, Inc.
+		"torchlightai":                        1398, // Torchlight®
+		"xperi-inc":                           1399, // Xperi Inc.
+		"planitar":                            1400, // Planitar Inc.
+		"cenareo":                             1401, // Cenareo
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 
