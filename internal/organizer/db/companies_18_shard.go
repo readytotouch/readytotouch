@@ -1280,10 +1280,11 @@ func companies18Shard() []domain.CompanyProfile {
 				IDs:               []int{1534, 164209},
 				Alias:             "the-home-depot",
 				Name:              "The Home Depot",
-				Followers:         "961K",
+				Followers:         "1M",
 				Employees:         "10K+",
-				AssociatedMembers: "121,537",
+				AssociatedMembers: "132,309",
 				Verified:          true,
+				Date:              mustDate("2026-03-14"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:     "homedepot",
@@ -1335,6 +1336,17 @@ func companies18Shard() []domain.CompanyProfile {
 							Location:             "Atlanta, GA",
 							Date:                 mustDate("2025-08-06"),
 							WithSalary:           true, // $90k/yr - $170k/yr
+							Remote:               true,
+						},
+						{
+							Title:                "Senior Software Engineer – Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4384603488/",
+							Location:             "Atlanta, GA",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-03-14"),
+							WithSalary:           true, // $90k/yr - $180k/yr
 							Remote:               true,
 						},
 					},

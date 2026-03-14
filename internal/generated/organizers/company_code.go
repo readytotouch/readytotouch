@@ -1402,6 +1402,7 @@ var (
 		"alluviumhealth":                      1402, // Alluvium Health
 		"hg-insights":                         1403, // HG Insights
 		"truelayer":                           1404, // TrueLayer
+		"toku-global":                         1405, // Toku
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

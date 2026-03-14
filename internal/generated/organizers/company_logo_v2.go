@@ -1231,6 +1231,7 @@ var (
 		"toast-inc":                           "toast-inc.jpeg",
 		"togethercomputer":                    "togethercomputer.jpeg",
 		"toggle-ai":                           "",
+		"toku-global":                         "toku-global.png",
 		"tomtom":                              "",
 		"tontinetrust":                        "tontinetrust.png",
 		"top-doctors-europe":                  "",

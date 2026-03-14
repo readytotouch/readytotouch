@@ -655,11 +655,11 @@ func companies24Shard() []domain.CompanyProfile {
 				IDs:               nil,
 				Alias:             "glovo-app",
 				Name:              "Glovo",
-				Followers:         "333K",
+				Followers:         "341K",
 				Employees:         "1K-5K",
-				AssociatedMembers: "14,207",
+				AssociatedMembers: "14,285",
 				Verified:          true,
-				Date:              mustDate("2026-02-20"),
+				Date:              mustDate("2026-03-14"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:     "Glovo",
@@ -698,7 +698,7 @@ func companies24Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4374006073/",
 							Location:             "Barcelona, Catalonia, Spain",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-02-19"),
+							Date:                 mustDate("2026-03-13", "2026-02-19"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -1763,9 +1763,9 @@ func companies24Shard() []domain.CompanyProfile {
 				Name:              "Graphcore",
 				Followers:         "43K",
 				Employees:         "201-500",
-				AssociatedMembers: "555",
+				AssociatedMembers: "578",
 				Verified:          true,
-				Date:              mustDate("2026-02-26"),
+				Date:              mustDate("2026-03-14"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -1802,7 +1802,7 @@ func companies24Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4344851946/",
 							Location:             "Gdańsk, Pomorskie, Poland",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-02-21"),
+							Date:                 mustDate("2026-03-13", "2026-02-21"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -4313,6 +4313,92 @@ func companies24Shard() []domain.CompanyProfile {
 			ShortDescription: "Open banking payments network",
 			Industries: []domain.Industry{
 				domain.IndustryFinTech,
+			},
+		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Toku",
+			BaseURL:    "https://toku.co/",
+			CareersURL: "https://toku.co/careers/",
+			AboutURL:   "https://toku.co/about-us/",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                13650928,
+				IDs:               []int{10983916, 13650928},
+				Alias:             "toku-global",
+				Name:              "Toku",
+				Followers:         "8K",
+				Employees:         "51-200",
+				AssociatedMembers: "122",
+				Verified:          true,
+				Date:              mustDate("2026-03-14"),
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Backend Software Engineer – Go and AWS",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4382656503/",
+							Location:             "Singapore",
+							CloudProviders:       []domain.CloudProvider{domain.AWS},
+							Date:                 mustDate("2026-03-13"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Bespoke cloud communications solutions for enhanced CX in APAC",
+			Industries:       []domain.Industry{
+				// NOP
 			},
 		},
 	}

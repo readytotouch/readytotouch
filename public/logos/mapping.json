@@ -7362,6 +7362,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "toku-global",
+    "source": "toku-global-180x180.png",
+    "destination": "toku-global.png",
+    "destination_72x72": "toku-global.png"
+  },
+  {
     "alias": "tomtom",
     "source": "",
     "destination": "",
