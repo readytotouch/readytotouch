@@ -4186,6 +4186,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4349645249/":                                                               3636, // axonius
 		"https://www.linkedin.com/jobs/view/4308484530/":                                                               3398, // hubspot
 		"https://www.linkedin.com/jobs/view/4306246217/":                                                               3515, // hubspot
+		"https://www.linkedin.com/jobs/view/4384870980/":                                                               4406, // hubspot
 		"https://www.linkedin.com/jobs/view/4280933839/":                                                               3405, // loveholidays
 		"https://app.welcometothejungle.com/jobs/K4rT3xXa":                                                             3406, // loveholidays
 		"https://app.welcometothejungle.com/jobs/GBw_kEIb":                                                             3407, // nominal-inc
