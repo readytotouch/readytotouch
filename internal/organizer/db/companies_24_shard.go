@@ -4057,5 +4057,177 @@ func companies24Shard() []domain.CompanyProfile {
 				domain.IndustryMarTech,
 			},
 		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Alluvium Health",
+			BaseURL:    "https://www.alluviumhealth.com/",
+			CareersURL: "",
+			AboutURL:   "",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                16188895,
+				IDs:               nil,
+				Alias:             "alluviumhealth",
+				Name:              "Alluvium Health",
+				Followers:         "2K",
+				Employees:         "51-200",
+				AssociatedMembers: "61",
+				Verified:          false,
+				Date:              mustDate("2026-03-14"),
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Elixir Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4384326649/",
+							Location:             "United States",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-03-12"),
+							WithSalary:           true, // $107k/yr - $142k/yr
+							Remote:               true,
+						},
+					},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Capacity performance platform — unify data, predict demand, and optimize patient access at scale",
+			Industries: []domain.Industry{
+				domain.IndustryMedTech,
+			},
+		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "HG Insights",
+			BaseURL:    "https://hginsights.com/",
+			CareersURL: "https://hginsights.com/hg-insights-careers/",
+			AboutURL:   "https://hginsights.com/about/",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                1311279,
+				IDs:               nil,
+				Alias:             "hg-insights",
+				Name:              "HG Insights",
+				Followers:         "22K",
+				Employees:         "51-200",
+				AssociatedMembers: "955",
+				Verified:          true,
+				Date:              mustDate("2026-03-14"),
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer – (Elixir/TypeScript)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4383230327/",
+							Location:             "Pune District, Maharashtra, India",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-03-12"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Go-to-market Technology Intelligence",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
 	}
 }

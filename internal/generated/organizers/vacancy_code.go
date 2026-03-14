@@ -2712,6 +2712,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4168470393/":                                                               1001, // icapital-network-inc
 		"https://www.linkedin.com/jobs/view/4366908951/":                                                               3919, // icapital-network-inc
 		"https://www.linkedin.com/jobs/view/4311120216/":                                                               4063, // icapital-network-inc
+		"https://www.linkedin.com/jobs/view/4385546734/":                                                               4407, // icapital-network-inc
 		"https://www.linkedin.com/jobs/view/4141235282/":                                                               1002, // expedia
 		"https://www.linkedin.com/jobs/view/4190174086/":                                                               1560, // esri
 		"https://www.linkedin.com/jobs/view/4321390968/":                                                               3850, // esri
@@ -3369,6 +3370,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4336651004/":                                                               3429, // remote.com
 		"https://www.linkedin.com/jobs/view/4329211002/":                                                               3729, // remote.com
 		"https://www.linkedin.com/jobs/view/4304691238/":                                                               4312, // remote.com
+		"https://www.linkedin.com/jobs/view/4385129214/":                                                               4408, // remote.com
 		"https://www.linkedin.com/jobs/view/3933499435/":                                                               1593, // heyfresha
 		"https://www.linkedin.com/jobs/view/4091569026/":                                                               1594, // the-realreal
 		"https://www.linkedin.com/jobs/view/4193174525/":                                                               1630, // blackrock
@@ -3848,6 +3850,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4270777580/":                                                               2700, // papainc
 		"https://www.linkedin.com/jobs/view/4315504772/":                                                               3250, // papainc
 		"https://www.linkedin.com/jobs/view/4363900055/":                                                               4068, // papainc
+		"https://www.linkedin.com/jobs/view/4383297585/":                                                               4409, // papainc
 		"https://www.linkedin.com/jobs/view/4271123395/":                                                               2483, // bitwarden1
 		"https://www.linkedin.com/jobs/view/4279522160/":                                                               2591, // bitwarden1
 		"https://www.linkedin.com/jobs/view/4267262281/":                                                               2498, // kyp
@@ -4402,6 +4405,8 @@ var (
 		"https://www.linkedin.com/jobs/view/4372132912/":                                                               4403, // torchlightai
 		"https://www.linkedin.com/jobs/view/4382297495/":                                                               4404, // xperi-inc
 		"https://www.linkedin.com/jobs/view/4334974804/":                                                               4405, // planitar
+		"https://www.linkedin.com/jobs/view/4384326649/":                                                               4410, // alluviumhealth
+		"https://www.linkedin.com/jobs/view/4383230327/":                                                               4411, // hg-insights
 		"https://www.linkedin.com/jobs/view/3914839625/":                                                               372,  // cognizant
 		"https://www.linkedin.com/jobs/view/4120737001/":                                                               600,  // cognizant
 		"https://www.linkedin.com/jobs/view/4149258542/":                                                               787,  // cognizant

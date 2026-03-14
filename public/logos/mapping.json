@@ -270,6 +270,12 @@
     "destination_72x72": "allpay-limited.png"
   },
   {
+    "alias": "alluviumhealth",
+    "source": "alluviumhealth-200x200.jpeg",
+    "destination": "alluviumhealth.jpeg",
+    "destination_72x72": "alluviumhealth.jpeg"
+  },
+  {
     "alias": "alma-security",
     "source": "alma-security-200x200.jpeg",
     "destination": "alma-security.jpeg",
@@ -3334,6 +3340,12 @@
     "source": "heyfresha-180x180.png",
     "destination": "heyfresha.png",
     "destination_72x72": "heyfresha.png"
+  },
+  {
+    "alias": "hg-insights",
+    "source": "hginsights-180x180.webp",
+    "destination": "hg-insights.png",
+    "destination_72x72": "hg-insights.png"
   },
   {
     "alias": "hiive",
