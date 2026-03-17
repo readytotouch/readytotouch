@@ -4429,5 +4429,91 @@ func companies24Shard() []domain.CompanyProfile {
 				// NOP
 			},
 		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Qvantel",
+			BaseURL:    "https://www.qvantel.com/",
+			CareersURL: "https://www.qvantel.com/careers",
+			AboutURL:   "https://www.qvantel.com/company",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                65215,
+				IDs:               nil,
+				Alias:             "qvantel",
+				Name:              "Qvantel",
+				Followers:         "30K",
+				Employees:         "501-1K",
+				AssociatedMembers: "687",
+				Verified:          true,
+				Date:              mustDate("2026-03-18"),
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Scala Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4384019554/",
+							Location:             "Hyderabad, Telangana, India",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-03-17"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "",
+			Industries: []domain.Industry{
+				domain.IndustryTelecom,
+			},
+		},
 	}
 }

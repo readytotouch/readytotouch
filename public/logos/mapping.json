@@ -5736,6 +5736,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "qvantel",
+    "source": "qvantel-200x200.jpeg",
+    "destination": "qvantel.jpeg",
+    "destination_72x72": "qvantel.jpeg"
+  },
+  {
     "alias": "r-systems",
     "source": "",
     "destination": "",

@@ -960,6 +960,7 @@ var (
 		"qumuluscloudplatform":                "",
 		"quorum-software":                     "quorum-software.jpeg",
 		"qustodio":                            "",
+		"qvantel":                             "qvantel.jpeg",
 		"r-systems":                           "",
 		"r2p-group":                           "",
 		"rabbet":                              "rabbet.png",

@@ -1498,6 +1498,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4298772571/":                                                               2886, // jpmorganchase
 		"https://www.linkedin.com/jobs/view/4333395202/":                                                               3294, // jpmorganchase
 		"https://www.linkedin.com/jobs/view/4308976374/":                                                               3996, // jpmorganchase
+		"https://www.linkedin.com/jobs/view/4367915814/":                                                               4436, // jpmorganchase
 		"https://www.linkedin.com/jobs/view/4074568575/":                                                               43,   // outreach-saas
 		"https://www.linkedin.com/jobs/view/4239988025/":                                                               2144, // outreach-saas
 		"https://www.linkedin.com/jobs/view/4281591591/":                                                               2644, // outreach-saas
@@ -3487,6 +3488,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4297179843/":                                                               2906, // black-duck-software
 		"https://www.linkedin.com/jobs/view/4315723560/":                                                               3243, // black-duck-software
 		"https://www.linkedin.com/jobs/view/4369837850/":                                                               4011, // black-duck-software
+		"https://www.linkedin.com/jobs/view/4386732680/":                                                               4437, // black-duck-software
 		"https://www.linkedin.com/jobs/view/4215016329/":                                                               1708, // stemsmusic
 		"https://www.linkedin.com/jobs/view/4204905697/":                                                               1709, // telekom
 		"https://www.linkedin.com/jobs/view/4215387718/":                                                               1710, // parshipmeet
@@ -4134,6 +4136,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4354044556/":                                                               3819, // kaluza
 		"https://www.linkedin.com/jobs/view/4354181950/":                                                               4020, // kaluza
 		"https://www.linkedin.com/jobs/view/4308245274/":                                                               3182, // zegocover
+		"https://www.linkedin.com/jobs/view/4384478645/":                                                               4438, // zegocover
 		"https://www.linkedin.com/jobs/view/4309608120/":                                                               3183, // lobster-robotics
 		"https://www.linkedin.com/jobs/view/4308288567/":                                                               3184, // affinidi
 		"https://www.linkedin.com/jobs/view/4321884203/":                                                               3555, // affinidi
@@ -4431,6 +4434,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4383230327/":                                                               4411, // hg-insights
 		"https://www.linkedin.com/jobs/view/4312155633/":                                                               4415, // truelayer
 		"https://www.linkedin.com/jobs/view/4382656503/":                                                               4429, // toku-global
+		"https://www.linkedin.com/jobs/view/4384019554/":                                                               4439, // qvantel
 		"https://www.linkedin.com/jobs/view/3914839625/":                                                               372,  // cognizant
 		"https://www.linkedin.com/jobs/view/4120737001/":                                                               600,  // cognizant
 		"https://www.linkedin.com/jobs/view/4149258542/":                                                               787,  // cognizant

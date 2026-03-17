@@ -1935,7 +1935,7 @@ func companies17Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4373942029/",
 							Location:             "Geneva, Switzerland",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-02-17"),
+							Date:                 mustDate("2026-03-17", "2026-02-17"),
 							WithSalary:           false,
 							Remote:               false,
 						},
