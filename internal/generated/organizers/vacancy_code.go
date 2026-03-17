@@ -3542,6 +3542,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4223001348/":                                                               1826, // alertmedia
 		"https://www.linkedin.com/jobs/view/4241241518/":                                                               1982, // alertmedia
 		"https://www.linkedin.com/jobs/view/4297023255/":                                                               2969, // alertmedia
+		"https://www.linkedin.com/jobs/view/4383171224/":                                                               4440, // alertmedia
 		"https://www.linkedin.com/jobs/view/4224532915/":                                                               1827, // fujitsu
 		"https://www.linkedin.com/jobs/view/4225153194/":                                                               1828, // onedoc.ch
 		"https://www.linkedin.com/jobs/view/4248020239/":                                                               2093, // onedoc.ch

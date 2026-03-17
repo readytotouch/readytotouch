@@ -1650,7 +1650,7 @@ func companies16Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4385129214/",
 							Location:             "Ireland",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-03-13"),
+							Date:                 mustDate("2026-03-17", "2026-03-13"),
 							WithSalary:           false,
 							Remote:               true,
 						},
