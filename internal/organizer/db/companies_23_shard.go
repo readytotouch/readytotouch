@@ -3915,7 +3915,7 @@ func companies23Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4367337482/",
 							Location:             "Budapest, Budapest, Hungary",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-02-21", "2026-01-30"),
+							Date:                 mustDate("2026-03-15", "2026-02-21", "2026-01-30"),
 							WithSalary:           false,
 							Remote:               false,
 						},

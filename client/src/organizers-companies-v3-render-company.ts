@@ -7,7 +7,7 @@ import {defaultDateFormatter, prettyDateFormatter} from "./organizers-date";
 const currentOrganizer = findOrganizer(parseCurrentOrganizerAlias(window.location.pathname));
 
 export function renderCompany(company: CompanyResponse, sponsored: boolean): string {
-    const companyURL = `/golang/companies/${company.linkedin_profile.alias}`;
+    const companyURL = `/${currentOrganizer.alias}/companies/${company.linkedin_profile.alias}`;
 
     return `<div class="card ${sponsored ? "card--sponsored" : ""}">
     <aside class="card__action">

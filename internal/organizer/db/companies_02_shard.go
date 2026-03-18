@@ -641,6 +641,17 @@ func companies02Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4385947471/",
+							Location:             "Pune Division, Maharashtra, India",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-03-17"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
@@ -1175,17 +1186,18 @@ func companies02Shard() []domain.CompanyProfile {
 			AboutURL:   "https://www.justeattakeaway.com/about/our-story/default.aspx",
 			BlogURL:    "https://medium.com/justeattakeaway-tech",
 			LinkedInProfile: domain.LinkedInProfile{
-				ID: 0,
+				ID: 103531,
 				IDs: []int{
 					103531,  // Just Eat Takeaway.com
 					2708300, //  SkipTheDishes
 				},
 				Alias:             "just-eat-takeaway-com",
 				Name:              "Just Eat Takeaway.com",
-				Followers:         "246K",
+				Followers:         "265K",
 				Employees:         "10K+",
-				AssociatedMembers: "12,411",
+				AssociatedMembers: "12,437",
 				Verified:          true,
+				Date:              mustDate("2026-03-18"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:     "justeattakeaway",
@@ -1275,6 +1287,17 @@ func companies02Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4313106609/",
 							Location:             "London, England, United Kingdom",
 							Date:                 mustDate("2025-12-15", "2025-11-23"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Golang Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4384098730/",
+							Location:             "London, England, United Kingdom",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-03-17"),
 							WithSalary:           false,
 							Remote:               false,
 						},
