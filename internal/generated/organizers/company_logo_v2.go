@@ -159,6 +159,7 @@ var (
 		"bitfount":                            "",
 		"bitgo":                               "bitgo.png",
 		"bitly":                               "",
+		"bitmart":                             "",
 		"bitpanda":                            "bitpanda.jpeg",
 		"bitwarden1":                          "bitwarden1.jpeg",
 		"black-duck-software":                 "black-duck-software.jpeg",

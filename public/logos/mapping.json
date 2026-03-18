@@ -930,6 +930,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "bitmart",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
+  },
+  {
     "alias": "bitpanda",
     "source": "bitpanda-200x200.jpeg",
     "destination": "bitpanda.jpeg",

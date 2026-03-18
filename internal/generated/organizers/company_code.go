@@ -1404,6 +1404,7 @@ var (
 		"truelayer":                           1404, // TrueLayer
 		"toku-global":                         1405, // Toku
 		"qvantel":                             1406, // Qvantel
+		"bitmart":                             1407, // BitMart
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 
