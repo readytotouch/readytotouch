@@ -5040,7 +5040,7 @@ func companies11Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4328237016/",
 							Location:             "Taipei, Taipei City, Taiwan",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-02-22"),
+							Date:                 mustDate("2026-03-15", "2026-02-22"),
 							WithSalary:           false,
 							Remote:               true,
 						},

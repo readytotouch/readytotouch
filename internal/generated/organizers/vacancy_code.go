@@ -177,6 +177,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4343314221/":                                                               4091, // elastic-co
 		"https://www.linkedin.com/jobs/view/4335623847/":                                                               4289, // elastic-co
 		"https://www.linkedin.com/jobs/view/4385806527/":                                                               4419, // elastic-co
+		"https://www.linkedin.com/jobs/view/4360745217/":                                                               4447, // elastic-co
 		"https://www.linkedin.com/jobs/view/4110414724/":                                                               961,  // elastic-co
 		"https://www.linkedin.com/jobs/view/4099667362/":                                                               406,  // mongodbinc
 		"https://app.welcometothejungle.com/jobs/BoykNJtU":                                                             1273, // mongodbinc
@@ -433,6 +434,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4360474957/":                                                               3837, // siemens
 		"https://www.linkedin.com/jobs/view/4374960772/":                                                               4193, // siemens
 		"https://www.linkedin.com/jobs/view/4374088711/":                                                               4431, // siemens
+		"https://www.linkedin.com/jobs/view/4385947471/":                                                               4448, // siemens
 		"https://www.linkedin.com/jobs/view/4018413094/":                                                               214,  // siemens
 		"https://www.linkedin.com/jobs/view/4292182409/":                                                               2787, // siemens
 		"https://www.linkedin.com/jobs/view/4312186307/":                                                               3286, // siemens
@@ -460,6 +462,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4243370712/":                                                               2002, // just-eat-takeaway-com
 		"https://www.linkedin.com/jobs/view/4297004506/":                                                               2879, // just-eat-takeaway-com
 		"https://www.linkedin.com/jobs/view/4313106609/":                                                               3484, // just-eat-takeaway-com
+		"https://www.linkedin.com/jobs/view/4384098730/":                                                               4449, // just-eat-takeaway-com
 		"https://www.linkedin.com/jobs/view/4085642905/":                                                               419,  // sixt
 		"https://www.linkedin.com/jobs/view/4196140624/":                                                               1362, // sixt
 		"https://www.linkedin.com/jobs/view/4271023702/":                                                               2443, // sixt
@@ -1927,6 +1930,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4300110056/":                                                               2949, // telestream
 		"https://www.linkedin.com/jobs/view/4316348999/":                                                               3231, // telestream
 		"https://www.linkedin.com/jobs/view/4062327545/":                                                               129,  // mitratech
+		"https://www.linkedin.com/jobs/view/4359724614/":                                                               4450, // mitratech
 		"https://www.linkedin.com/jobs/view/3946499898/":                                                               130,  // paddle
 		"https://www.linkedin.com/jobs/view/4073760794/":                                                               700,  // paddle
 		"https://www.linkedin.com/jobs/view/4090994054/":                                                               701,  // paddle

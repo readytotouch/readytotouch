@@ -4994,7 +4994,7 @@ func companies18Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4363622905/",
 							Location:             "Mumbai, Maharashtra, India",
 							CloudProviders:       []domain.CloudProvider{domain.AWS, domain.GCP},
-							Date:                 mustDate("2026-03-07", "2026-02-24", "2026-02-13"),
+							Date:                 mustDate("2026-03-17", "2026-03-07", "2026-02-24", "2026-02-13"),
 							WithSalary:           false,
 							Remote:               true,
 						},
