@@ -5706,6 +5706,12 @@
     "destination_72x72": "quantexa.png"
   },
   {
+    "alias": "quantifind",
+    "source": "quantifind-200x200.jpeg",
+    "destination": "quantifind.jpeg",
+    "destination_72x72": "quantifind.jpeg"
+  },
+  {
     "alias": "quantum-systems-gmbh",
     "source": "quantum-systems-300x300.png",
     "destination": "quantum-systems-gmbh.png",
@@ -6226,6 +6232,12 @@
     "source": "scoreplay.svg",
     "destination": "scoreplay.svg",
     "destination_72x72": "scoreplay.svg"
+  },
+  {
+    "alias": "scotiabank",
+    "source": "scotiabank-200x200.jpeg",
+    "destination": "scotiabank.jpeg",
+    "destination_72x72": "scotiabank.jpeg"
   },
   {
     "alias": "scylladb",

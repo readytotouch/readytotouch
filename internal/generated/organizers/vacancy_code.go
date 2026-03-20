@@ -2732,6 +2732,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4168470393/":                                                               1001, // icapital-network-inc
 		"https://www.linkedin.com/jobs/view/4366908951/":                                                               3919, // icapital-network-inc
 		"https://www.linkedin.com/jobs/view/4311120216/":                                                               4063, // icapital-network-inc
+		"https://www.linkedin.com/jobs/view/4387264618/":                                                               4454, // icapital-network-inc
 		"https://www.linkedin.com/jobs/view/4385546734/":                                                               4407, // icapital-network-inc
 		"https://www.linkedin.com/jobs/view/4141235282/":                                                               1002, // expedia
 		"https://www.linkedin.com/jobs/view/4190174086/":                                                               1560, // esri
@@ -3672,6 +3673,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4252582963/":                                                               2556, // box
 		"https://www.linkedin.com/jobs/view/4277500586/":                                                               2748, // box
 		"https://www.linkedin.com/jobs/view/4362734368/":                                                               3786, // box
+		"https://www.linkedin.com/jobs/view/4388370759/":                                                               4451, // box
 		"https://www.linkedin.com/jobs/view/4250628040/":                                                               2102, // fortanix
 		"https://www.linkedin.com/jobs/view/4317329718/":                                                               3244, // fortanix
 		"https://www.linkedin.com/jobs/view/4365586810/":                                                               3853, // fortanix
@@ -4446,6 +4448,8 @@ var (
 		"https://www.linkedin.com/jobs/view/4382656503/":                                                               4429, // toku-global
 		"https://www.linkedin.com/jobs/view/4384019554/":                                                               4439, // qvantel
 		"https://www.linkedin.com/jobs/view/4380097700/":                                                               4446, // bitmart
+		"https://www.linkedin.com/jobs/view/4387726867/":                                                               4452, // scotiabank
+		"https://www.linkedin.com/jobs/view/4376932890/":                                                               4453, // quantifind
 		"https://www.linkedin.com/jobs/view/3914839625/":                                                               372,  // cognizant
 		"https://www.linkedin.com/jobs/view/4120737001/":                                                               600,  // cognizant
 		"https://www.linkedin.com/jobs/view/4149258542/":                                                               787,  // cognizant

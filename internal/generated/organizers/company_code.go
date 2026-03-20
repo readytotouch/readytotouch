@@ -1405,6 +1405,8 @@ var (
 		"toku-global":                         1405, // Toku
 		"qvantel":                             1406, // Qvantel
 		"bitmart":                             1407, // BitMart
+		"scotiabank":                          1408, // Scotiabank
+		"quantifind":                          1409, // Quantifind
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 
