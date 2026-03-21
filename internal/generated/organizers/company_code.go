@@ -783,7 +783,7 @@ var (
 		"redpanda-data":                       776,  // Redpanda Data
 		"quizlet":                             777,  // Quizlet
 		"svix":                                778,  // Svix
-		"andurilindustries":                   779,  // Anduril Industries
+		"anduril":                             779,  // Anduril Industries
 		"corys":                               780,  // CORYS
 		"gremlin-inc.":                        781,  // Gremlin
 		"materializeinc":                      782,  // Materialize
@@ -1002,7 +1002,7 @@ var (
 		"travelport":                          995,  // Travelport
 		"marketer-com":                        996,  // Marketer.com
 		"wpp-media":                           997,  // WPP Media
-		"lonely-planet":                       998,  // Lonely Planet
+		"lonelyplanet":                        998,  // Lonely Planet
 		"event-inc":                           999,  // Event Inc Group
 		"box":                                 1000, // Box
 		"fortanix":                            1001, // Fortanix
@@ -1405,6 +1405,14 @@ var (
 		"toku-global":                         1405, // Toku
 		"qvantel":                             1406, // Qvantel
 		"bitmart":                             1407, // BitMart
+		"scotiabank":                          1408, // Scotiabank
+		"quantifind":                          1409, // Quantifind
+		"truckstop":                           1410, // Truckstop.com
+		"elevance-health":                     1411, // Elevance Health
+		"onyx-capitalgroup":                   1412, // Onyx Capital Group
+		"urbansportsclub":                     1413, // Urban Sports Club
+		"mcgraw-hill-education":               1414, // McGraw Hill
+		"iproyal":                             1415, // IPRoyal
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

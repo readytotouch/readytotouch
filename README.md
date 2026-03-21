@@ -46,6 +46,10 @@ That side project grew into ReadyToTouch.
 - Reddit | [My list of companies that use Rust](https://www.reddit.com/r/rust/comments/1jg4rrl/)
 - Forum | [My list of companies that use Rust](https://users.rust-lang.org/t/my-list-of-companies-that-use-rust/127300)
 
+**Elixir**
+- Reddit | [Job-focused list of product companies using Elixir in production — 2026](https://www.reddit.com/r/elixir/comments/1ryuz4g/)
+- Forum | [Job-focused list of product companies using Elixir in production](https://elixirforum.com/t/job-focused-list-of-product-companies-using-elixir-in-production/74728)
+
 **OCaml**
 - Reddit | [I maintain job-focused lists of product companies for Go/Rust/Scala/Elixir — should I add OCaml?](https://www.reddit.com/r/ocaml/comments/1rkjy32/)
 
