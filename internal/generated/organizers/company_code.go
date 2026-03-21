@@ -1410,6 +1410,9 @@ var (
 		"truckstop":                           1410, // Truckstop.com
 		"elevance-health":                     1411, // Elevance Health
 		"onyx-capitalgroup":                   1412, // Onyx Capital Group
+		"urbansportsclub":                     1413, // Urban Sports Club
+		"mcgraw-hill-education":               1414, // McGraw Hill
+		"iproyal":                             1415, // IPRoyal
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

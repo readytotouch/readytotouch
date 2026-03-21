@@ -1337,7 +1337,7 @@ func companies24Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4368197876/",
 							Location:             "Berlin, Berlin, Germany",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-02-25"),
+							Date:                 mustDate("2026-03-18", "2026-02-25"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2440,7 +2440,7 @@ func companies24Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4358249813/",
 							Location:             "Belgrade, Serbia",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-02-28"),
+							Date:                 mustDate("2026-03-20", "2026-02-28"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -5029,6 +5029,264 @@ func companies24Shard() []domain.CompanyProfile {
 			ShortDescription: "Liquidity Provider in Oil Derivatives",
 			Industries:       []domain.Industry{
 				// NOP
+			},
+		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Urban Sports Club",
+			BaseURL:    "https://urbansportsclub.com/",
+			CareersURL: "",
+			AboutURL:   "",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2809331,
+				IDs:               nil,
+				Alias:             "urbansportsclub",
+				Name:              "Urban Sports Club",
+				Followers:         "50K",
+				Employees:         "201-500",
+				AssociatedMembers: "501",
+				Verified:          true,
+				Date:              mustDate("2026-03-21"),
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Backend Engineer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4351500786/",
+							Location:             "Greater Madrid Metropolitan Area",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-03-20"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Platform for sports and wellness",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "McGraw Hill",
+			BaseURL:    "https://www.mheducation.com/",
+			CareersURL: "https://careers.mheducation.com/",
+			AboutURL:   "https://www.mheducation.com/about-us.html",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2933,
+				IDs:               []int{2933, 87429},
+				Alias:             "mcgraw-hill-education",
+				Name:              "McGraw Hill",
+				Followers:         "435K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "8,096",
+				Verified:          true,
+				Date:              mustDate("2026-03-21"),
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4375236477/",
+							Location:             "Noida, Uttar Pradesh, India",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-03-20"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "",
+			Industries: []domain.Industry{
+				domain.IndustryEdTech,
+			},
+		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "IPRoyal",
+			BaseURL:    "https://iproyal.com/",
+			CareersURL: "https://iproyal.com/careers/",
+			AboutURL:   "https://iproyal.com/about-us/",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                71890168,
+				IDs:               nil,
+				Alias:             "iproyal",
+				Name:              "IPRoyal",
+				Followers:         "9K",
+				Employees:         "51-200",
+				AssociatedMembers: "112",
+				Verified:          true,
+				Date:              mustDate("2026-03-21"),
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4385468200/",
+							Location:             "Vilnius, Vilniaus, Lithuania",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-03-20"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Proxy Infrastructure",
+			Industries: []domain.Industry{
+				domain.IndustryDevOps,
 			},
 		},
 	}

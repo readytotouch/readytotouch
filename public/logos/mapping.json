@@ -3600,6 +3600,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "iproyal",
+    "source": "iproyal-200x200.jpeg",
+    "destination": "iproyal.jpeg",
+    "destination_72x72": "iproyal.jpeg"
+  },
+  {
     "alias": "ipsos",
     "source": "ipsos-200x200.jpeg",
     "destination": "ipsos.jpeg",
@@ -4300,6 +4306,12 @@
     "source": "mcafee-200x200.jpeg",
     "destination": "mcafee.jpeg",
     "destination_72x72": "mcafee.jpeg"
+  },
+  {
+    "alias": "mcgraw-hill-education",
+    "source": "mcgraw-hill-education-200x200.jpeg",
+    "destination": "mcgraw-hill-education.jpeg",
+    "destination_72x72": "mcgraw-hill-education.jpeg"
   },
   {
     "alias": "mckesson",
@@ -7696,6 +7708,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "urbansportsclub",
+    "source": "urbansportsclub-180x180.webp",
+    "destination": "urbansportsclub.png",
+    "destination_72x72": "urbansportsclub.png"
   },
   {
     "alias": "us-bank",

@@ -1226,7 +1226,7 @@ func companies06Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4368255634/",
 							Location:             "Tallinn, Harjumaa, Estonia",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-02-25"),
+							Date:                 mustDate("2026-03-20", "2026-02-25"),
 							WithSalary:           false,
 							Remote:               false,
 						},
