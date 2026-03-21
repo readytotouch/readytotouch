@@ -2734,6 +2734,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4311120216/":                                                               4063, // icapital-network-inc
 		"https://www.linkedin.com/jobs/view/4387264618/":                                                               4454, // icapital-network-inc
 		"https://www.linkedin.com/jobs/view/4385546734/":                                                               4407, // icapital-network-inc
+		"https://www.linkedin.com/jobs/view/4387278069/":                                                               4458, // icapital-network-inc
 		"https://www.linkedin.com/jobs/view/4141235282/":                                                               1002, // expedia
 		"https://www.linkedin.com/jobs/view/4190174086/":                                                               1560, // esri
 		"https://www.linkedin.com/jobs/view/4321390968/":                                                               3850, // esri
@@ -3478,6 +3479,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4345561102/":                                                               3693, // allocator-one
 		"https://www.linkedin.com/jobs/view/4353714125/":                                                               3821, // allocator-one
 		"https://www.linkedin.com/jobs/view/4372431894/":                                                               4125, // allocator-one
+		"https://www.linkedin.com/jobs/view/4385713797/":                                                               4460, // allocator-one
 		"https://www.linkedin.com/jobs/view/4194786604/":                                                               1701, // simacanbv
 		"https://www.linkedin.com/jobs/view/4209595207/":                                                               1702, // impactdotcom
 		"https://www.linkedin.com/jobs/view/4264910255/":                                                               2383, // impactdotcom
@@ -3663,8 +3665,9 @@ var (
 		"https://www.linkedin.com/jobs/view/4249821311/":                                                               2097, // marketer-com
 		"https://www.linkedin.com/jobs/view/4248410642/":                                                               2098, // wpp-media
 		"https://www.linkedin.com/jobs/view/4296287334/":                                                               2907, // wpp-media
-		"https://www.linkedin.com/jobs/view/4248263842/":                                                               2099, // lonely-planet
-		"https://www.linkedin.com/jobs/view/4269516629/":                                                               2464, // lonely-planet
+		"https://www.linkedin.com/jobs/view/4248263842/":                                                               2099, // lonelyplanet
+		"https://www.linkedin.com/jobs/view/4269516629/":                                                               2464, // lonelyplanet
+		"https://www.linkedin.com/jobs/view/4387464764/":                                                               4455, // lonelyplanet
 		"https://www.linkedin.com/jobs/view/4247993545/":                                                               2100, // event-inc
 		"https://www.linkedin.com/jobs/view/4294469302/":                                                               2908, // event-inc
 		"https://www.linkedin.com/jobs/view/4255716681/":                                                               2161, // box
@@ -3736,6 +3739,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4313221564/":                                                               3194, // bnp-paribas
 		"https://www.linkedin.com/jobs/view/4335431028/":                                                               3553, // bnp-paribas
 		"https://www.linkedin.com/jobs/view/4261717421/":                                                               2256, // distribusion
+		"https://www.linkedin.com/jobs/view/4387820021/":                                                               4456, // distribusion
 		"https://www.linkedin.com/jobs/view/4161416034/":                                                               2257, // thales
 		"https://www.linkedin.com/jobs/view/4299786439/":                                                               2973, // thales
 		"https://www.linkedin.com/jobs/view/4310599223/":                                                               3166, // thales
@@ -4450,6 +4454,8 @@ var (
 		"https://www.linkedin.com/jobs/view/4380097700/":                                                               4446, // bitmart
 		"https://www.linkedin.com/jobs/view/4387726867/":                                                               4452, // scotiabank
 		"https://www.linkedin.com/jobs/view/4376932890/":                                                               4453, // quantifind
+		"https://www.linkedin.com/jobs/view/4387424282/":                                                               4457, // truckstop
+		"https://www.linkedin.com/jobs/view/4386746033/":                                                               4459, // elevance-health
 		"https://www.linkedin.com/jobs/view/3914839625/":                                                               372,  // cognizant
 		"https://www.linkedin.com/jobs/view/4120737001/":                                                               600,  // cognizant
 		"https://www.linkedin.com/jobs/view/4149258542/":                                                               787,  // cognizant

@@ -2286,6 +2286,12 @@
     "destination_72x72": "electronic-arts.jpeg"
   },
   {
+    "alias": "elevance-health",
+    "source": "elevance-health-1200x1200.png",
+    "destination": "elevance-health.png",
+    "destination_72x72": "elevance-health.png"
+  },
+  {
     "alias": "eltropy",
     "source": "eltropy-200x200.jpeg",
     "destination": "eltropy.jpeg",
@@ -4068,7 +4074,7 @@
     "destination_72x72": "london-stock-exchange-group.jpeg"
   },
   {
-    "alias": "lonely-planet",
+    "alias": "lonelyplanet",
     "source": "lonely-planet-200x200.jpeg",
     "destination": "lonely-planet.jpeg",
     "destination_72x72": "lonely-planet.jpeg"
@@ -7486,6 +7492,12 @@
     "source": "trio-so-200x200.jpeg",
     "destination": "trio-so.jpeg",
     "destination_72x72": "trio-so.jpeg"
+  },
+  {
+    "alias": "truckstop",
+    "source": "truckstop-180x180.webp",
+    "destination": "truckstop.png",
+    "destination_72x72": "truckstop.png"
   },
   {
     "alias": "true-anomaly",
