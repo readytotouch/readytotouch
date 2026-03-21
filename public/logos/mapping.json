@@ -360,7 +360,7 @@
     "destination_72x72": "anaplan.jpeg"
   },
   {
-    "alias": "andurilindustries",
+    "alias": "anduril",
     "source": "andurilindustries-200x200.jpeg",
     "destination": "andurilindustries.jpeg",
     "destination_72x72": "andurilindustries.jpeg"
@@ -5032,6 +5032,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "onyx-capitalgroup",
+    "source": "onyxcapitalgroup-180x180.png",
+    "destination": "onyx-capitalgroup.png",
+    "destination_72x72": "onyx-capitalgroup.png"
   },
   {
     "alias": "oolio-au",

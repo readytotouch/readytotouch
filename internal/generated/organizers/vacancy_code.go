@@ -224,6 +224,7 @@ var (
 		"https://app.welcometothejungle.com/jobs/l9x_fLDt":                                                             1274, // konghq
 		"https://www.linkedin.com/jobs/view/4182238733/":                                                               1431, // konghq
 		"https://www.linkedin.com/jobs/view/4289926834/":                                                               2704, // konghq
+		"https://www.linkedin.com/jobs/view/4318541975/":                                                               4461, // konghq
 		"https://app.welcometothejungle.com/jobs/yfqng_As":                                                             408,  // exasol-ag
 		"https://www.linkedin.com/jobs/view/4239048562/":                                                               1962, // exasol-ag
 		"https://www.linkedin.com/jobs/view/4348863391/":                                                               3615, // exasol-ag
@@ -2364,6 +2365,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4151624125/":                                                               841,  // twosixtechnologies
 		"https://www.linkedin.com/jobs/view/4081194563/":                                                               395,  // twosixtechnologies
 		"https://www.linkedin.com/jobs/view/4263672721/":                                                               2299, // twosixtechnologies
+		"https://www.linkedin.com/jobs/view/4387812359/":                                                               4462, // twosixtechnologies
 		"https://www.linkedin.com/jobs/view/4114108035/":                                                               561,  // checkmarx
 		"https://www.linkedin.com/jobs/view/4056869486/":                                                               562,  // visa
 		"https://www.linkedin.com/jobs/view/4121157867/":                                                               582,  // visa
@@ -2708,6 +2710,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4188798669/":                                                               1496, // adtran
 		"https://www.linkedin.com/jobs/view/4159248269/":                                                               959,  // photoroom
 		"https://www.linkedin.com/jobs/view/4382394370/":                                                               4309, // photoroom
+		"https://www.linkedin.com/jobs/view/4387495006/":                                                               4466, // photoroom
 		"https://www.linkedin.com/jobs/view/4139270225/":                                                               960,  // etsy
 		"https://www.linkedin.com/jobs/view/4236800842/":                                                               1948, // arm
 		"https://www.linkedin.com/jobs/view/4289482589/":                                                               2733, // arm
@@ -3130,15 +3133,16 @@ var (
 		"https://www.indeed.com/viewjob?jk=5c8079196dde8330":                                                           1320, // redpanda-data
 		"https://www.indeed.com/viewjob?jk=c5a456ba1962bc7e":                                                           1321, // svix
 		"https://www.indeed.com/viewjob?jk=1f4022f006ac8456":                                                           1322, // svix
-		"https://www.indeed.com/viewjob?jk=1645f9d3eb114feb":                                                           1323, // andurilindustries
-		"https://www.linkedin.com/jobs/view/4275736021/":                                                               2520, // andurilindustries
-		"https://www.linkedin.com/jobs/view/4301541466/":                                                               2963, // andurilindustries
-		"https://app.welcometothejungle.com/jobs/y1qZXQo1":                                                             3902, // andurilindustries
-		"https://www.linkedin.com/jobs/view/3988413256/":                                                               1877, // andurilindustries
-		"https://www.linkedin.com/jobs/view/4261799654/":                                                               2246, // andurilindustries
-		"https://www.linkedin.com/jobs/view/4297611580/":                                                               2904, // andurilindustries
-		"https://www.linkedin.com/jobs/view/4311329988/":                                                               3427, // andurilindustries
-		"https://www.linkedin.com/jobs/view/4369463265/":                                                               4008, // andurilindustries
+		"https://www.indeed.com/viewjob?jk=1645f9d3eb114feb":                                                           1323, // anduril
+		"https://www.linkedin.com/jobs/view/4275736021/":                                                               2520, // anduril
+		"https://www.linkedin.com/jobs/view/4301541466/":                                                               2963, // anduril
+		"https://app.welcometothejungle.com/jobs/y1qZXQo1":                                                             3902, // anduril
+		"https://www.linkedin.com/jobs/view/4388134039/":                                                               4463, // anduril
+		"https://www.linkedin.com/jobs/view/3988413256/":                                                               1877, // anduril
+		"https://www.linkedin.com/jobs/view/4261799654/":                                                               2246, // anduril
+		"https://www.linkedin.com/jobs/view/4297611580/":                                                               2904, // anduril
+		"https://www.linkedin.com/jobs/view/4311329988/":                                                               3427, // anduril
+		"https://www.linkedin.com/jobs/view/4369463265/":                                                               4008, // anduril
 		"https://www.indeed.com/viewjob?jk=078b469307edba42":                                                           1324, // corys
 		"https://app.welcometothejungle.com/jobs/NU9vNkVF":                                                             1326, // gremlin-inc.
 		"https://www.linkedin.com/jobs/view/4177804070/":                                                               1327, // materializeinc
@@ -3717,6 +3721,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4259646441/":                                                               2192, // state-street
 		"https://www.linkedin.com/jobs/view/4256117557/":                                                               2193, // relx-group
 		"https://www.linkedin.com/jobs/view/4359285228/":                                                               3808, // relx-group
+		"https://www.linkedin.com/jobs/view/4387335034/":                                                               4467, // relx-group
 		"https://www.linkedin.com/jobs/view/4256124146/":                                                               2194, // castoredc
 		"https://www.linkedin.com/jobs/view/4255852068/":                                                               2195, // symbolica-ai
 		"https://www.linkedin.com/jobs/view/4265460789/":                                                               2413, // symbolica-ai
@@ -3857,6 +3862,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4266554424/":                                                               2415, // aziontech
 		"https://www.linkedin.com/jobs/view/4266549864/":                                                               2386, // aziontech
 		"https://www.linkedin.com/jobs/view/4249280373/":                                                               2416, // riverside-research
+		"https://www.linkedin.com/jobs/view/4374104702/":                                                               4464, // riverside-research
 		"https://www.linkedin.com/jobs/view/4253805508/":                                                               2417, // ecosia
 		"https://www.linkedin.com/jobs/view/4264494875/":                                                               2418, // breezesocial
 		"https://www.linkedin.com/jobs/view/4281160160/":                                                               2668, // breezesocial
@@ -4456,6 +4462,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4376932890/":                                                               4453, // quantifind
 		"https://www.linkedin.com/jobs/view/4387424282/":                                                               4457, // truckstop
 		"https://www.linkedin.com/jobs/view/4386746033/":                                                               4459, // elevance-health
+		"https://www.linkedin.com/jobs/view/4387690795/":                                                               4465, // onyx-capitalgroup
 		"https://www.linkedin.com/jobs/view/3914839625/":                                                               372,  // cognizant
 		"https://www.linkedin.com/jobs/view/4120737001/":                                                               600,  // cognizant
 		"https://www.linkedin.com/jobs/view/4149258542/":                                                               787,  // cognizant

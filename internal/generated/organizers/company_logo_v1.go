@@ -49,7 +49,7 @@ var (
 		"amoamoamo":                           "",
 		"amuse.io":                            "amuseio.png",
 		"anaplan":                             "anaplan.png",
-		"andurilindustries":                   "andurilindustries.png",
+		"anduril":                             "andurilindustries.png",
 		"anixe-polska-sp--z-o-o-":             "",
 		"anjuna-security":                     "",
 		"antmicro-ltd":                        "",
