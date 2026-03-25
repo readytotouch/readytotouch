@@ -1437,10 +1437,11 @@ func companies17Shard() []domain.CompanyProfile {
 				IDs:               nil,
 				Alias:             "true-anomaly",
 				Name:              "True Anomaly",
-				Followers:         "41K",
-				Employees:         "51-200",
-				AssociatedMembers: "173",
+				Followers:         "54K",
+				Employees:         "201-500",
+				AssociatedMembers: "277",
 				Verified:          false,
+				Date:              mustDate("2026-03-26"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -1541,7 +1542,7 @@ func companies17Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4379270270/",
 							Location:             "Long Beach, CA",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-02-28"),
+							Date:                 mustDate("2026-03-22", "2026-02-28"),
 							WithSalary:           true, // $90k/yr - $120k/yr
 							Remote:               false,
 						},
@@ -3453,9 +3454,9 @@ func companies17Shard() []domain.CompanyProfile {
 				Name:              "Deutsche Bank",
 				Followers:         "3M",
 				Employees:         "10K+",
-				AssociatedMembers: "80,356",
+				AssociatedMembers: "80,871",
 				Verified:          true,
-				Date:              mustDate("2026-02-19"),
+				Date:              mustDate("2026-03-26"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -3486,7 +3487,22 @@ func companies17Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			Languages: domain.Languages{
-				domain.Go:   {},
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Principal Engineer (Full Stack) – Go",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4388261591/",
+							Location:             "London, England, United Kingdom",
+							CloudProviders:       []domain.CloudProvider{domain.GCP},
+							Date:                 mustDate("2026-03-22"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
 				domain.Rust: {},
 				domain.Zig:  {},
 				domain.Scala: {

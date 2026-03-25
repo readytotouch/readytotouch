@@ -6,10 +6,10 @@ A job-focused list of product companies by programming language — curated manu
 
 | Language                                              | Companies |
 |-------------------------------------------------------|-----------|
-| [Go](https://readytotouch.com/golang/companies)       | 913       |
-| [Rust](https://readytotouch.com/rust/companies)       | 298       |
-| [Scala](https://readytotouch.com/scala/companies)     | 164       |
-| [Elixir](https://readytotouch.com/elixir/companies)   | 114       |
+| [Go](https://readytotouch.com/golang/companies)       | 921       |
+| [Rust](https://readytotouch.com/rust/companies)       | 301       |
+| [Scala](https://readytotouch.com/scala/companies)     | 169       |
+| [Elixir](https://readytotouch.com/elixir/companies)   | 119       |
 | [Clojure](https://readytotouch.com/clojure/companies) | 25        |
 | [Erlang](https://readytotouch.com/erlang/companies)   | —         |
 | [Zig](https://readytotouch.com/zig/companies)         | —         |
@@ -36,15 +36,19 @@ That side project grew into ReadyToTouch.
 
 **Go**
 - Reddit | [Job-focused list of product companies using Go in production — 2026](https://www.reddit.com/r/golang/comments/1rjvskv/)
+- Forum | [Job-focused list of product companies using Go in production](https://forum.golangbridge.org/t/job-focused-list-of-product-companies-using-go-in-production-readytotouch/41674)
 - Reddit | [Job-oriented list of companies using Go in production — now mobile-friendly](https://www.reddit.com/r/golang/comments/1qegiyy/)
 - Reddit | [My list of companies that use Golang 2.0](https://www.reddit.com/r/golang/comments/1ixglek/)
 - Reddit | [My list of companies that use Golang](https://www.reddit.com/r/golang/comments/1fjbp1p/)
 
 **Rust**
 - Reddit | [Job-focused list of product companies using Rust in production — 2026](https://www.reddit.com/r/rust/comments/1rrnxfh/)
+- Forum | [Job-focused list of product companies using Rust in production](https://users.rust-lang.org/t/job-focused-list-of-product-companies-using-rust-in-production-2026-readytotouch/138847)
 - Reddit | [Job-oriented list of companies using Rust in production — now mobile-friendly](https://www.reddit.com/r/rust/comments/1qcalnt/)
 - Reddit | [My list of companies that use Rust](https://www.reddit.com/r/rust/comments/1jg4rrl/)
 - Forum | [My list of companies that use Rust](https://users.rust-lang.org/t/my-list-of-companies-that-use-rust/127300)
+
+**Scala**
 
 **Elixir**
 - Reddit | [Job-focused list of product companies using Elixir in production — 2026](https://www.reddit.com/r/elixir/comments/1ryuz4g/)
