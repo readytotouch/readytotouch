@@ -1437,10 +1437,11 @@ func companies17Shard() []domain.CompanyProfile {
 				IDs:               nil,
 				Alias:             "true-anomaly",
 				Name:              "True Anomaly",
-				Followers:         "41K",
-				Employees:         "51-200",
-				AssociatedMembers: "173",
+				Followers:         "54K",
+				Employees:         "201-500",
+				AssociatedMembers: "277",
 				Verified:          false,
+				Date:              mustDate("2026-03-26"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -1541,7 +1542,7 @@ func companies17Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4379270270/",
 							Location:             "Long Beach, CA",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-02-28"),
+							Date:                 mustDate("2026-03-22", "2026-02-28"),
 							WithSalary:           true, // $90k/yr - $120k/yr
 							Remote:               false,
 						},

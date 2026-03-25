@@ -4895,10 +4895,11 @@ func companies15Shard() []domain.CompanyProfile {
 				IDs:               nil,
 				Alias:             "accessowl",
 				Name:              "AccessOwl",
-				Followers:         "1K",
-				Employees:         "2-10",
-				AssociatedMembers: "6",
+				Followers:         "2K",
+				Employees:         "11-50",
+				AssociatedMembers: "12",
 				Verified:          false,
+				Date:              mustDate("2026-03-26"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -4968,6 +4969,17 @@ func companies15Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4289006848/",
 							Location:             "Georgia",
 							Date:                 mustDate("2025-08-22"),
+							WithSalary:           true, // €70k/yr - €95k/yr
+							Remote:               true,
+						},
+						{
+							Title:                "Senior Software Engineer",
+							ShortDescription:     "Elixir Focus",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4388952963/",
+							Location:             "France",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-03-24"),
 							WithSalary:           true, // €70k/yr - €95k/yr
 							Remote:               true,
 						},
