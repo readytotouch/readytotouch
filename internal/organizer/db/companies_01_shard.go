@@ -3737,7 +3737,7 @@ func companies01Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4306506648/",
 							Location:             "Greater Coimbatore Area",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-03-01", "2026-02-08", "2026-01-18", "2025-12-06", "2025-10-01"),
+							Date:                 mustDate("2026-03-23", "2026-03-01", "2026-02-08", "2026-01-18", "2025-12-06", "2025-10-01"),
 							WithSalary:           false,
 							Remote:               true,
 						},

@@ -3805,11 +3805,11 @@ func companies09Shard() []domain.CompanyProfile {
 				IDs:               nil,
 				Alias:             "umbraspace",
 				Name:              "Umbra",
-				Followers:         "29K",
+				Followers:         "30K",
 				Employees:         "51-200",
-				AssociatedMembers: "226",
+				AssociatedMembers: "230",
 				Verified:          true,
-				Date:              mustDate("2026-02-19"),
+				Date:              mustDate("2026-03-26"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -3877,6 +3877,17 @@ func companies09Shard() []domain.CompanyProfile {
 							Location:             "Santa Barbara, CA",
 							CloudProviders:       []domain.CloudProvider{},
 							Date:                 mustDate("2026-02-25"),
+							WithSalary:           true, // $160k/yr - $200k/yr
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Flight Software Engineer (Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4389271188/",
+							Location:             "Arlington, VA",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-03-25"),
 							WithSalary:           true, // $160k/yr - $200k/yr
 							Remote:               false,
 						},
