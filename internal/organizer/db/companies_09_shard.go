@@ -1957,7 +1957,7 @@ func companies09Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4380357617/",
 							Location:             "Pune Division, Maharashtra, India",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-03-04"),
+							Date:                 mustDate("2026-03-25", "2026-03-04"),
 							WithSalary:           false,
 							Remote:               false,
 						},

@@ -4545,6 +4545,17 @@ func companies08Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $60/hr - $65/hr
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4389814280/",
+							Location:             "Toronto, ON",
+							CloudProviders:       []domain.CloudProvider{domain.Azure},
+							Date:                 mustDate("2026-03-25"),
+							WithSalary:           true, // $60/hr - $75/hr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {

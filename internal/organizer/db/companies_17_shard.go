@@ -3454,9 +3454,9 @@ func companies17Shard() []domain.CompanyProfile {
 				Name:              "Deutsche Bank",
 				Followers:         "3M",
 				Employees:         "10K+",
-				AssociatedMembers: "80,356",
+				AssociatedMembers: "80,871",
 				Verified:          true,
-				Date:              mustDate("2026-02-19"),
+				Date:              mustDate("2026-03-26"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -3487,7 +3487,22 @@ func companies17Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			Languages: domain.Languages{
-				domain.Go:   {},
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Principal Engineer (Full Stack) – Go",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4388261591/",
+							Location:             "London, England, United Kingdom",
+							CloudProviders:       []domain.CloudProvider{domain.GCP},
+							Date:                 mustDate("2026-03-22"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
 				domain.Rust: {},
 				domain.Zig:  {},
 				domain.Scala: {
