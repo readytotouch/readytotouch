@@ -2026,7 +2026,7 @@ func companies18Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4388370759/",
 							Location:             "Warsaw, Mazowieckie, Poland",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-03-20"),
+							Date:                 mustDate("2026-03-25", "2026-03-20"),
 							WithSalary:           false,
 							Remote:               false,
 						},

@@ -1159,7 +1159,7 @@ func companies20Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4370131375/",
 							Location:             "Boston, MA",
 							CloudProviders:       []domain.CloudProvider{domain.AWS},
-							Date:                 mustDate("2026-02-28", "2026-02-08"),
+							Date:                 mustDate("2026-03-22", "2026-02-28", "2026-02-08"),
 							WithSalary:           true, // $118.5k/yr - $142k/yr
 							Remote:               false,
 						},
