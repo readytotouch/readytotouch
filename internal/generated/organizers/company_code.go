@@ -802,6 +802,7 @@ var (
 		"samsungfoodofficial":                 794,  // Samsung Food
 		"3085253":                             797,  // Ace &amp; Tate
 		"axpo-group":                          796,  // Axpo Group
+		"swissborg":                           1417, // SwissBorg
 		"starshiptechnologies":                798,  // Starship Technologies
 		"stan-entertainment":                  799,  // Stan.
 		"skyroph":                             800,  // Skyro
@@ -1413,6 +1414,7 @@ var (
 		"urbansportsclub":                     1413, // Urban Sports Club
 		"mcgraw-hill-education":               1414, // McGraw Hill
 		"iproyal":                             1415, // IPRoyal
+		"stellantis":                          1416, // Stellantis
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

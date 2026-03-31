@@ -3699,7 +3699,7 @@ func companies24Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4381069460/",
 							Location:             "Poland",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-03-07"),
+							Date:                 mustDate("2026-03-29", "2026-03-07"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -5287,6 +5287,92 @@ func companies24Shard() []domain.CompanyProfile {
 			ShortDescription: "Proxy Infrastructure",
 			Industries: []domain.Industry{
 				domain.IndustryDevOps,
+			},
+		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Stellantis",
+			BaseURL:    "https://www.stellantis.com/",
+			CareersURL: "https://www.stellantis.com/en/careers",
+			AboutURL:   "https://www.stellantis.com/en/company",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                66256333,
+				IDs:               []int{260214, 304090, 307851, 66256333, 87167025, 91668700, 93658970, 98052149, 99489231, 106014925},
+				Alias:             "stellantis",
+				Name:              "Stellantis",
+				Followers:         "3M",
+				Employees:         "10K+",
+				AssociatedMembers: "115,453",
+				Verified:          true,
+				Date:              mustDate("2026-04-01"),
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Data Engineer",
+							ShortDescription:     "Strong proficiency in Scala or Java",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4368400994/",
+							Location:             "Auburn Hills, MI",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-03-01"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Automotive manufacturing corporation",
+			Industries:       []domain.Industry{
+				// NOP
 			},
 		},
 	}

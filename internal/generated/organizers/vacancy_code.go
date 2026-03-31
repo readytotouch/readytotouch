@@ -2704,6 +2704,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4080573355/":                                                               902,  // dhl
 		"https://www.linkedin.com/jobs/view/4300871569/":                                                               2956, // dhl
 		"https://www.linkedin.com/jobs/view/4364461165/":                                                               4062, // dhl
+		"https://www.linkedin.com/jobs/view/4392931438/":                                                               4532, // dhl
 		"https://www.linkedin.com/jobs/view/4277849491/":                                                               2549, // moia_mobility
 		"https://www.linkedin.com/jobs/view/4302824120/":                                                               3023, // moia_mobility
 		"https://www.linkedin.com/jobs/view/4333046395/":                                                               3270, // moia_mobility
@@ -3224,6 +3225,8 @@ var (
 		"https://www.linkedin.com/jobs/view/4198318379/":                                                               1423, // 3085253
 		"https://www.linkedin.com/jobs/view/4232131818/":                                                               2017, // 3085253
 		"https://www.linkedin.com/jobs/view/4198014569/":                                                               1357, // axpo-group
+		"https://www.linkedin.com/jobs/view/4261402273/":                                                               4533, // swissborg
+		"https://www.linkedin.com/jobs/view/4197856511/":                                                               4534, // swissborg
 		"https://www.linkedin.com/jobs/view/4174644239/":                                                               1375, // starshiptechnologies
 		"https://www.linkedin.com/jobs/view/4174437544/":                                                               1376, // starshiptechnologies
 		"https://www.linkedin.com/jobs/view/4195296291/":                                                               1377, // stan-entertainment
@@ -3366,6 +3369,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4144858808/":                                                               1528, // london-stock-exchange-group
 		"https://www.linkedin.com/jobs/view/4144858801/":                                                               2117, // london-stock-exchange-group
 		"https://www.linkedin.com/jobs/view/4363947016/":                                                               4064, // london-stock-exchange-group
+		"https://www.linkedin.com/jobs/view/4371311646/":                                                               4536, // london-stock-exchange-group
 		"https://www.linkedin.com/jobs/view/4206647185/":                                                               1529, // getnetworld
 		"https://www.linkedin.com/jobs/view/4209630478/":                                                               1550, // hunterio
 		"https://www.linkedin.com/jobs/view/4207981446/":                                                               1551, // sawitpro
@@ -4527,6 +4531,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4351500786/":                                                               4475, // urbansportsclub
 		"https://www.linkedin.com/jobs/view/4375236477/":                                                               4484, // mcgraw-hill-education
 		"https://www.linkedin.com/jobs/view/4385468200/":                                                               4485, // iproyal
+		"https://www.linkedin.com/jobs/view/4368400994/":                                                               4535, // stellantis
 		"https://www.linkedin.com/jobs/view/3914839625/":                                                               372,  // cognizant
 		"https://www.linkedin.com/jobs/view/4120737001/":                                                               600,  // cognizant
 		"https://www.linkedin.com/jobs/view/4149258542/":                                                               787,  // cognizant

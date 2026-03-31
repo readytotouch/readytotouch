@@ -6798,6 +6798,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "stellantis",
+    "source": "stellantis-200x200.jpeg",
+    "destination": "stellantis.jpeg",
+    "destination_72x72": "stellantis.jpeg"
+  },
+  {
     "alias": "stemsmusic",
     "source": "",
     "destination": "",
@@ -6976,6 +6982,12 @@
     "source": "swiss-re-180x180.png",
     "destination": "swiss-re.png",
     "destination_72x72": "swiss-re.png"
+  },
+  {
+    "alias": "swissborg",
+    "source": "swissborg-200x200.jpeg",
+    "destination": "swissborg.jpeg",
+    "destination_72x72": "swissborg.jpeg"
   },
   {
     "alias": "symbolica-ai",

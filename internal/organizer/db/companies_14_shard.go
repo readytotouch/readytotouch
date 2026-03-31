@@ -3388,18 +3388,19 @@ func companies14Shard() []domain.CompanyProfile {
 			Type:       "", // system
 			Name:       "SwissBorg",
 			BaseURL:    "https://swissborg.com/",
-			CareersURL: "",
-			AboutURL:   "",
+			CareersURL: "https://swissborg.com/careers",
+			AboutURL:   "https://swissborg.com/about",
 			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                11040884,
 				IDs:               nil,
 				Alias:             "swissborg",
 				Name:              "SwissBorg",
-				Followers:         "39K",
+				Followers:         "44K",
 				Employees:         "201-500",
-				AssociatedMembers: "241",
-				Verified:          false,
+				AssociatedMembers: "221",
+				Verified:          true,
+				Date:              mustDate("2026-04-01"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -3452,8 +3453,10 @@ func companies14Shard() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
-			Ignore:           true, // Crypto
+			ShortDescription: "Crypto wealth platform",
+			Industries: []domain.Industry{
+				domain.IndustryCryptoCurrency,
+			},
 		},
 		{
 			ID:         0,  // system

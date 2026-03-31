@@ -1801,7 +1801,7 @@ func companies11Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4363089500/",
 							Location:             "Redlands, CA",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-03-06"),
+							Date:                 mustDate("2026-03-28", "2026-03-06"),
 							WithSalary:           false,
 							Remote:               false,
 						},
