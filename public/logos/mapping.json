@@ -7806,6 +7806,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "veo-technologies",
+    "source": "veo-technologies-200x200.jpeg",
+    "destination": "veo-technologies.jpeg",
+    "destination_72x72": "veo-technologies.jpeg"
+  },
+  {
     "alias": "veracitysoftwareinc",
     "source": "",
     "destination": "",

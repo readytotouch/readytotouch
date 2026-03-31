@@ -1415,6 +1415,7 @@ var (
 		"mcgraw-hill-education":               1414, // McGraw Hill
 		"iproyal":                             1415, // IPRoyal
 		"stellantis":                          1416, // Stellantis
+		"veo-technologies":                    1418, // Veo Technologies
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

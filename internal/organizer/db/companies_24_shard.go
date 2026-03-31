@@ -1069,6 +1069,17 @@ func companies24Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Backend Engineer (Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4391567396/",
+							Location:             "Toronto, ON",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-03-28"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Zig: {
@@ -2171,6 +2182,17 @@ func companies24Shard() []domain.CompanyProfile {
 							Location:             "Warsaw Metropolitan Area",
 							CloudProviders:       []domain.CloudProvider{},
 							Date:                 mustDate("2026-02-28"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Rust Engineer",
+							ShortDescription:     "Trade Processing Technology",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4392396395/",
+							Location:             "Warsaw Metropolitan Area",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-03-31"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -4307,7 +4329,7 @@ func companies24Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4312155633/",
 							Location:             "Italy",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-03-17", "2026-03-13"),
+							Date:                 mustDate("2026-03-31", "2026-03-17", "2026-03-13"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -4565,7 +4587,7 @@ func companies24Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4380097700/",
 							Location:             "APAC",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-03-25", "2026-03-17"),
+							Date:                 mustDate("2026-03-28", "2026-03-25", "2026-03-17"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -5371,6 +5393,92 @@ func companies24Shard() []domain.CompanyProfile {
 				},
 			},
 			ShortDescription: "Automotive manufacturing corporation",
+			Industries:       []domain.Industry{
+				// NOP
+			},
+		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Veo Technologies",
+			BaseURL:    "https://www.veo.com/",
+			CareersURL: "https://www.veo.com/careers",
+			AboutURL:   "https://www.veo.com/about-us",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                15225167,
+				IDs:               nil,
+				Alias:             "veo-technologies",
+				Name:              "Veo Technologies",
+				Followers:         "44K",
+				Employees:         "201-500",
+				AssociatedMembers: "388",
+				Verified:          true,
+				Date:              mustDate("2026-04-01"),
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer (Rust, Python, C)",
+							ShortDescription:     "Our firmware stack primarily uses Rust, Python, and C",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4381008158/",
+							Location:             "Copenhagen, Capital Region of Denmark, Denmark",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-03-28"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Veo lets you record your sports match without a camera operator",
 			Industries:       []domain.Industry{
 				// NOP
 			},

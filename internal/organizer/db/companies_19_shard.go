@@ -3931,7 +3931,7 @@ func companies19Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4374104702/",
 							Location:             "Lexington, MA",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-03-21"),
+							Date:                 mustDate("2026-03-28", "2026-03-21"),
 							WithSalary:           false,
 							Remote:               false,
 						},

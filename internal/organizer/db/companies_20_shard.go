@@ -4488,6 +4488,17 @@ func companies20Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Spacecraft Embedded Software Engineer (Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4382144198/",
+							Location:             "Boulder, CO",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-03-29"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig: {

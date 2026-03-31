@@ -2840,15 +2840,17 @@ func companies10Shard() []domain.CompanyProfile {
 			BaseURL:    "https://walmart.com/",
 			CareersURL: "https://careers.walmart.com/",
 			AboutURL:   "https://corporate.walmart.com/about",
-			BlogURL:    "https://tech.walmart.com/content/walmart-global-tech/en_us/blog/post.html",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                2646,
+				IDs:               []int{2646, 7001, 7556, 40925, 1467166, 1527003, 1559771, 2832973, 11174522, 18632302, 31305115, 82099760, 82481809, 89154726},
 				Alias:             "walmart",
 				Name:              "Walmart",
-				Followers:         "4M",
+				Followers:         "5M",
 				Employees:         "10K+",
-				AssociatedMembers: "498,289",
+				AssociatedMembers: "440,809",
 				Verified:          true,
+				Date:              mustDate("2026-04-01"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:     "walmartlabs",
@@ -2894,8 +2896,23 @@ func companies10Shard() []domain.CompanyProfile {
 						},
 					},
 				},
-				domain.Rust: {},
-				domain.Zig:  {},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer III — (Node.js and Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4395572223/",
+							Location:             "Sunnyvale, CA",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-03-31"),
+							WithSalary:           true, // $117k/yr - $234k/yr
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig: {},
 				domain.Scala: {
 					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{

@@ -2756,6 +2756,17 @@ func companies22Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Principal Software Engineer (Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4391824220/",
+							Location:             "Rome, Latium, Italy",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-03-31"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig: {
@@ -6061,7 +6072,18 @@ func companies22Shard() []domain.CompanyProfile {
 							Location:             "San Francisco Bay Area",
 							CloudProviders:       []domain.CloudProvider{},
 							Date:                 mustDate("2026-03-05"),
-							WithSalary:           true, // a$180k/yr - a$220k/yr
+							WithSalary:           true, // $180k/yr - $220k/yr
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Software Engineer, Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4393168065/",
+							Location:             "San Francisco Bay Area",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-03-29"),
+							WithSalary:           true, // $175k/yr - $215k/yr
 							Remote:               false,
 						},
 					},

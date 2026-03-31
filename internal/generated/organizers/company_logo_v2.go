@@ -1305,6 +1305,7 @@ var (
 		"vectoratomic":                        "",
 		"veeva-systems":                       "veeva-systems.jpeg",
 		"velmie":                              "",
+		"veo-technologies":                    "veo-technologies.jpeg",
 		"veracitysoftwareinc":                 "",
 		"vercel":                              "vercel.png",
 		"vereign":                             "vereign.jpeg",
