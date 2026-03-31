@@ -1546,6 +1546,17 @@ func companies17Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $90k/yr - $120k/yr
 							Remote:               false,
 						},
+						{
+							Title:                "Staff Software Engineer, Elixir",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4391541211/",
+							Location:             "Long Beach, CA",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-03-28"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Clojure: {},

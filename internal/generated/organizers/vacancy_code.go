@@ -2895,6 +2895,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4128083196/":                                                               1103, // pitchhq
 		"https://www.linkedin.com/jobs/view/4377838618/":                                                               4157, // pitchhq
 		"https://www.linkedin.com/jobs/view/4008290372/":                                                               1581, // doccla
+		"https://www.linkedin.com/jobs/view/4392174901/":                                                               4537, // doccla
 		"https://www.linkedin.com/jobs/view/4068248164/":                                                               1104, // doccla
 		"https://www.linkedin.com/jobs/view/4228305138/":                                                               1876, // doccla
 		"https://www.linkedin.com/jobs/view/4177332766/":                                                               1143, // university-of-virginia
@@ -3391,6 +3392,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4266510208/":                                                               2381, // accessowl
 		"https://www.linkedin.com/jobs/view/4289006848/":                                                               2742, // accessowl
 		"https://www.linkedin.com/jobs/view/4388952963/":                                                               4503, // accessowl
+		"https://www.linkedin.com/jobs/view/4391866242/":                                                               4538, // accessowl
 		"https://www.linkedin.com/jobs/view/4382285596/":                                                               4391, // adobe
 		"https://www.linkedin.com/jobs/view/4056647024/":                                                               1568, // adobe
 		"https://www.linkedin.com/jobs/view/4130665982/":                                                               1582, // adobe
@@ -3450,6 +3452,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4304691238/":                                                               4312, // remote.com
 		"https://www.linkedin.com/jobs/view/4385129214/":                                                               4408, // remote.com
 		"https://www.linkedin.com/jobs/view/4389267292/":                                                               4505, // remote.com
+		"https://www.linkedin.com/jobs/view/4393209443/":                                                               4539, // remote.com
 		"https://www.linkedin.com/jobs/view/3933499435/":                                                               1593, // heyfresha
 		"https://www.linkedin.com/jobs/view/4091569026/":                                                               1594, // the-realreal
 		"https://www.linkedin.com/jobs/view/4193174525/":                                                               1630, // blackrock
@@ -3602,6 +3605,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4334670217/":                                                               3315, // true-anomaly
 		"https://www.linkedin.com/jobs/view/4342567607/":                                                               3573, // true-anomaly
 		"https://www.linkedin.com/jobs/view/4379270270/":                                                               4232, // true-anomaly
+		"https://www.linkedin.com/jobs/view/4391541211/":                                                               4540, // true-anomaly
 		"https://www.linkedin.com/jobs/view/4221388268/":                                                               1785, // scania
 		"https://www.linkedin.com/jobs/view/4223904753/":                                                               1786, // otiv
 		"https://www.linkedin.com/jobs/view/4223001348/":                                                               1826, // alertmedia
@@ -3960,6 +3964,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4365194458/":                                                               4077, // nvidia
 		"https://www.linkedin.com/jobs/view/4377496542/":                                                               4176, // nvidia
 		"https://www.linkedin.com/jobs/view/4257029469/":                                                               2558, // klarna
+		"https://www.linkedin.com/jobs/view/4387857097/":                                                               4541, // klarna
 		"https://www.linkedin.com/jobs/view/4278324635/":                                                               2559, // xai
 		"https://www.linkedin.com/jobs/view/4262573291/":                                                               2753, // xai
 		"https://www.linkedin.com/jobs/view/4306851124/":                                                               3107, // xai
