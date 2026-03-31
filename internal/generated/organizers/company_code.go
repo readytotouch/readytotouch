@@ -1416,6 +1416,11 @@ var (
 		"iproyal":                             1415, // IPRoyal
 		"stellantis":                          1416, // Stellantis
 		"veo-technologies":                    1418, // Veo Technologies
+		"temporary-cover-ltd":                 1419, // Tempcover
+		"medbridge":                           1420, // Medbridge
+		"zealnetwork":                         1421, // ZEAL Network SE
+		"delio":                               1422, // Delio
+		"trendyolgroup":                       1423, // Trendyol Group
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

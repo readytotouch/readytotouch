@@ -6018,10 +6018,11 @@ func companies20Shard() []domain.CompanyProfile {
 				IDs:               nil,
 				Alias:             "blackpoint",
 				Name:              "Blackpoint Cyber",
-				Followers:         "18K",
+				Followers:         "20K",
 				Employees:         "51-200",
-				AssociatedMembers: "191",
+				AssociatedMembers: "194",
 				Verified:          true,
+				Date:              mustDate("2026-04-01"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -6058,6 +6059,17 @@ func companies20Shard() []domain.CompanyProfile {
 							Location:             "Canada",
 							Date:                 mustDate("2025-09-04"),
 							WithSalary:           true, // $150k/yr - $165k/yr
+							Remote:               true,
+						},
+						{
+							Title:                "Senior Software Engineer (Go)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4390276409/",
+							Location:             "Canada",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-03-27"),
+							WithSalary:           true, // $132k/yr - $160k/yr
 							Remote:               true,
 						},
 					},

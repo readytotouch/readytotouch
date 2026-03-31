@@ -3252,7 +3252,7 @@ func companies17Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4385755547/",
 							Location:             "Berlin, Berlin, Germany",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-03-21"),
+							Date:                 mustDate("2026-03-31", "2026-03-21"),
 							WithSalary:           false,
 							Remote:               true,
 						},

@@ -1914,6 +1914,12 @@
     "destination_72x72": "delinea.jpeg"
   },
   {
+    "alias": "delio",
+    "source": "delio-152x152.png",
+    "destination": "delio.png",
+    "destination_72x72": "delio.png"
+  },
+  {
     "alias": "delivery-hero-se",
     "source": "delivery-hero-200x200.jpeg",
     "destination": "delivery-hero-se.jpeg",
@@ -4324,6 +4330,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "medbridge",
+    "source": "medbridge-180x180.png",
+    "destination": "medbridge.png",
+    "destination_72x72": "medbridge.png"
   },
   {
     "alias": "medium-com",
@@ -7188,6 +7200,12 @@
     "destination_72x72": "temporal-technologies.jpeg"
   },
   {
+    "alias": "temporary-cover-ltd",
+    "source": "temporary-cover-ltd-200x200.jpeg",
+    "destination": "temporary-cover-ltd.jpeg",
+    "destination_72x72": "temporary-cover-ltd.jpeg"
+  },
+  {
     "alias": "tenableinc",
     "source": "",
     "destination": "",
@@ -7516,6 +7534,12 @@
     "source": "trend-micro-200x200.jpeg",
     "destination": "trend-micro.jpeg",
     "destination_72x72": "trend-micro.jpeg"
+  },
+  {
+    "alias": "trendyolgroup",
+    "source": "trendyolgroup-180x180.webp",
+    "destination": "trendyolgroup.png",
+    "destination_72x72": "trendyolgroup.png"
   },
   {
     "alias": "trio-so",
@@ -8350,6 +8374,12 @@
     "source": "zattoo-200x200.jpeg",
     "destination": "zattoo.jpeg",
     "destination_72x72": "zattoo.jpeg"
+  },
+  {
+    "alias": "zealnetwork",
+    "source": "zealnetwork-200x200.jpeg",
+    "destination": "zealnetwork.jpeg",
+    "destination_72x72": "zealnetwork.jpeg"
   },
   {
     "alias": "zegocover",
