@@ -127,11 +127,25 @@ var (
 		Alias: "cryptocurrency",
 		Name:  "Cryptocurrency",
 	}
+	IndustryGambling = Industry{
+		ID:    25,
+		Alias: "gambling",
+		Name:  "Gambling",
+	}
+	IndustryBetting = Industry{
+		ID:    26,
+		Alias: "betting",
+		Name:  "Betting",
+	}
 	hiddenIndustries = []Industry{
 		IndustryCryptoCurrency,
+		IndustryGambling,
+		IndustryBetting,
 	}
 	hiddenIndustryMap = map[int64]bool{
 		IndustryCryptoCurrency.ID: true,
+		IndustryGambling.ID:       true,
+		IndustryBetting.ID:        true,
 	}
 )
 

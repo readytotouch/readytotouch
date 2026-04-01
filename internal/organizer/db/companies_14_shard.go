@@ -2294,7 +2294,7 @@ func companies14Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4384463454/",
 							Location:             "New York City Metropolitan Area",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-03-17"),
+							Date:                 mustDate("2026-03-29", "2026-03-17"),
 							WithSalary:           false,
 							Remote:               true,
 						},
@@ -2731,7 +2731,7 @@ func companies14Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4354294764/",
 							Location:             "York, England, United Kingdom",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-02-13", "2026-01-23"),
+							Date:                 mustDate("2026-03-29", "2026-02-13", "2026-01-23"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3388,18 +3388,19 @@ func companies14Shard() []domain.CompanyProfile {
 			Type:       "", // system
 			Name:       "SwissBorg",
 			BaseURL:    "https://swissborg.com/",
-			CareersURL: "",
-			AboutURL:   "",
+			CareersURL: "https://swissborg.com/careers",
+			AboutURL:   "https://swissborg.com/about",
 			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                11040884,
 				IDs:               nil,
 				Alias:             "swissborg",
 				Name:              "SwissBorg",
-				Followers:         "39K",
+				Followers:         "44K",
 				Employees:         "201-500",
-				AssociatedMembers: "241",
-				Verified:          false,
+				AssociatedMembers: "221",
+				Verified:          true,
+				Date:              mustDate("2026-04-01"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -3452,8 +3453,10 @@ func companies14Shard() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
-			Ignore:           true, // Crypto
+			ShortDescription: "Crypto wealth platform",
+			Industries: []domain.Industry{
+				domain.IndustryCryptoCurrency,
+			},
 		},
 		{
 			ID:         0,  // system

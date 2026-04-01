@@ -1672,7 +1672,7 @@ func companies10Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4337081482/",
 							Location:             "Chicago, IL",
-							Date:                 mustDate("2026-03-08", "2026-02-14", "2025-12-11", "2025-11-20"),
+							Date:                 mustDate("2026-03-31", "2026-03-08", "2026-02-14", "2025-12-11", "2025-11-20"),
 							WithSalary:           true, // $165k/yr - $190k/yr + bonus
 							Remote:               false,
 						},
@@ -2840,15 +2840,17 @@ func companies10Shard() []domain.CompanyProfile {
 			BaseURL:    "https://walmart.com/",
 			CareersURL: "https://careers.walmart.com/",
 			AboutURL:   "https://corporate.walmart.com/about",
-			BlogURL:    "https://tech.walmart.com/content/walmart-global-tech/en_us/blog/post.html",
+			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                2646,
+				IDs:               []int{2646, 7001, 7556, 40925, 1467166, 1527003, 1559771, 2832973, 11174522, 18632302, 31305115, 82099760, 82481809, 89154726},
 				Alias:             "walmart",
 				Name:              "Walmart",
-				Followers:         "4M",
+				Followers:         "5M",
 				Employees:         "10K+",
-				AssociatedMembers: "498,289",
+				AssociatedMembers: "440,809",
 				Verified:          true,
+				Date:              mustDate("2026-04-01"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:     "walmartlabs",
@@ -2894,8 +2896,23 @@ func companies10Shard() []domain.CompanyProfile {
 						},
 					},
 				},
-				domain.Rust: {},
-				domain.Zig:  {},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer III — (Node.js and Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4395572223/",
+							Location:             "Sunnyvale, CA",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-03-31"),
+							WithSalary:           true, // $117k/yr - $234k/yr
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig: {},
 				domain.Scala: {
 					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
@@ -3116,7 +3133,7 @@ func companies10Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4287543629/",
 							Location:             "Boston, MA",
-							Date:                 mustDate("2026-03-08", "2026-01-24", "2026-01-16", "2025-12-26", "2025-11-12", "2025-09-10", "2025-08-19"),
+							Date:                 mustDate("2026-03-30", "2026-03-08", "2026-01-24", "2026-01-16", "2025-12-26", "2025-11-12", "2025-09-10", "2025-08-19"),
 							WithSalary:           true, // $140k/yr - $160k/yr
 							Remote:               false,
 						},
@@ -5564,6 +5581,17 @@ func companies10Shard() []domain.CompanyProfile {
 							Location:             "Utrecht, Utrecht, Netherlands",
 							CloudProviders:       []domain.CloudProvider{},
 							Date:                 mustDate("2026-02-13"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Scala Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4392931438/",
+							Location:             "Utrecht, Utrecht, Netherlands",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-03-31"),
 							WithSalary:           false,
 							Remote:               false,
 						},

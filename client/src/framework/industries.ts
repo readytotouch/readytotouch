@@ -26,6 +26,8 @@ const all = [
     new Alias("defensetech", "DefenseTech"),
     new Alias("traveltech", "TravelTech"),
     new Alias("cryptocurrency", "Cryptocurrency"),
+    new Alias("gambling", "Gambling"),
+    new Alias("betting", "Betting"),
 ];
 
 export function industries(aliases: Array<string>): Array<Alias> {
