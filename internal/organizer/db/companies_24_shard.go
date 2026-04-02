@@ -519,7 +519,7 @@ func companies24Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4372675375/",
 							Location:             "Oslo, Oslo, Norway",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-02-19"),
+							Date:                 mustDate("2026-04-02", "2026-02-19"),
 							WithSalary:           false,
 							Remote:               false,
 						},

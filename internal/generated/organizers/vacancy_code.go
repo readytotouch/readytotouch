@@ -1447,6 +1447,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4369252850/":                                                               3995, // booz-allen-hamilton
 		"https://www.linkedin.com/jobs/view/4386962951/":                                                               4443, // booz-allen-hamilton
 		"https://www.linkedin.com/jobs/view/4389938014/":                                                               4498, // booz-allen-hamilton
+		"https://www.linkedin.com/jobs/view/4384377172/":                                                               4604, // booz-allen-hamilton
 		"https://www.linkedin.com/jobs/view/4033986551/":                                                               514,  // flexera
 		"https://www.linkedin.com/jobs/view/4377267749/":                                                               4287, // flexera
 		"https://www.linkedin.com/jobs/view/4053457618/":                                                               515,  // flowhub
@@ -1780,6 +1781,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4332901018/":                                                               3265, // zscaler
 		"https://www.linkedin.com/jobs/view/4359467962/":                                                               3800, // zscaler
 		"https://www.linkedin.com/jobs/view/4389258278/":                                                               4500, // zscaler
+		"https://www.linkedin.com/jobs/view/4389249538/":                                                               4605, // zscaler
 		"https://www.linkedin.com/jobs/view/4072597478/":                                                               101,  // purestorage
 		"https://www.linkedin.com/jobs/view/4125984657/":                                                               625,  // purestorage
 		"https://www.linkedin.com/jobs/view/4142328113/":                                                               767,  // purestorage
@@ -4271,6 +4273,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4328310746/":                                                               3739, // affinidi
 		"https://www.linkedin.com/jobs/view/4321944130/":                                                               3810, // affinidi
 		"https://www.linkedin.com/jobs/view/4328240908/":                                                               3986, // affinidi
+		"https://www.linkedin.com/jobs/view/4395339260/":                                                               4606, // affinidi
 		"https://www.linkedin.com/jobs/view/4311159672/":                                                               3185, // tensordyne
 		"https://www.linkedin.com/jobs/view/4389972009/":                                                               4507, // tensordyne
 		"https://www.linkedin.com/jobs/view/4311203106/":                                                               3186, // rust-foundation
@@ -4302,6 +4305,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4339420067/":                                                               3525, // livekitco
 		"https://www.linkedin.com/jobs/view/4315680232/":                                                               3330, // watergenics
 		"https://www.linkedin.com/jobs/view/4334348860/":                                                               3331, // versedotinc
+		"https://www.linkedin.com/jobs/view/4395368434/":                                                               4607, // versedotinc
 		"https://www.linkedin.com/jobs/view/4334630561/":                                                               3332, // lowrisc
 		"https://www.linkedin.com/jobs/view/4333383984/":                                                               3333, // polygon-io
 		"https://www.linkedin.com/jobs/view/4334548798/":                                                               3334, // reveniq
