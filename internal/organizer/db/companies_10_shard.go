@@ -354,7 +354,7 @@ func companies10Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4366691599/",
 							Location:             "Ho Chi Minh City, Vietnam",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-02-19"),
+							Date:                 mustDate("2026-04-02", "2026-02-19"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -5520,8 +5520,10 @@ func companies10Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "dhlparcel",
+				Followers: "63",
+				Verified:  false,
+				Date:      mustDate("2026-04-02"),
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias:       "DHL-Express",
@@ -5552,7 +5554,7 @@ func companies10Shard() []domain.CompanyProfile {
 				domain.Rust: {},
 				domain.Zig:  {},
 				domain.Scala: {
-					GitHubRepositoryCount: 0,
+					GitHubRepositoryCount: 4,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Scala Developer",
@@ -5602,6 +5604,7 @@ func companies10Shard() []domain.CompanyProfile {
 				domain.Haskell: {},
 			},
 			ShortDescription: "German multinational package delivery and supply chain management company",
+			Industries:       []domain.Industry{domain.IndustryLogisticsTech},
 		},
 
 		{

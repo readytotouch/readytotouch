@@ -1901,7 +1901,15 @@ func companies17Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-OneDoc-EI_IE3194529.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/OneDoc-Reviews-E3194529.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/OneDoc-Jobs-E3194529.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "",
+				Verified:    false,
+				Date:        mustDate("2026-04-03"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",

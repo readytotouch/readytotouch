@@ -1421,6 +1421,7 @@ var (
 		"zealnetwork":                         1421, // ZEAL Network SE
 		"delio":                               1422, // Delio
 		"trendyolgroup":                       1423, // Trendyol Group
+		"vivino":                              1424, // Vivino
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

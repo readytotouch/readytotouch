@@ -1036,10 +1036,11 @@ func companies23Shard() []domain.CompanyProfile {
 				IDs:               nil,
 				Alias:             "cariad-tech",
 				Name:              "CARIAD",
-				Followers:         "117K",
+				Followers:         "121K",
 				Employees:         "5K-10K",
-				AssociatedMembers: "4,677",
+				AssociatedMembers: "4,604",
 				Verified:          true,
+				Date:              mustDate("2026-04-02"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -1052,7 +1053,15 @@ func companies23Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-CARIAD-EI_IE5058452.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/CARIAD-Reviews-E5058452.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/CARIAD-Jobs-E5058452.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "",
+				Verified:    false,
+				Date:        mustDate("2026-04-03"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -1080,6 +1089,17 @@ func companies23Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4344599600/",
 							Location:             "Ingolstadt, Bavaria, Germany",
 							Date:                 mustDate("2025-12-19"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "(Senior) Cloud Scala Engineer",
+							ShortDescription:     "AI Platform",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4396959016/",
+							Location:             "Berlin, Berlin, Germany",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-04-02"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -5177,7 +5197,15 @@ func companies23Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Nosto-Solutions-EI_IE1148273.11,26.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Nosto-Solutions-Reviews-E1148273.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Nosto-Solutions-Jobs-E1148273.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "",
+				Verified:    false,
+				Date:        mustDate("2026-04-03"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
