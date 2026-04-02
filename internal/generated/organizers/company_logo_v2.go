@@ -1330,6 +1330,7 @@ var (
 		"visionxplus":                         "",
 		"vitalbio":                            "vitalbio.png",
 		"vividmoney":                          "vividmoney.png",
+		"vivino":                              "vivino.jpeg",
 		"vodeno":                              "",
 		"vois":                                "",
 		"volka":                               "",

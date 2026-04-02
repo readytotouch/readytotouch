@@ -8058,7 +8058,7 @@ func companies01Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4351441838/",
 							Location:             "Toronto, ON",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-02-19"),
+							Date:                 mustDate("2026-04-02", "2026-02-19"),
 							WithSalary:           false,
 							Remote:               false,
 						},

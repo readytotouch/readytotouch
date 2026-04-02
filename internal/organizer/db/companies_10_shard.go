@@ -354,7 +354,7 @@ func companies10Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4366691599/",
 							Location:             "Ho Chi Minh City, Vietnam",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-02-19"),
+							Date:                 mustDate("2026-04-02", "2026-02-19"),
 							WithSalary:           false,
 							Remote:               false,
 						},

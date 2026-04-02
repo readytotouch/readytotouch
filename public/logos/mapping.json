@@ -7956,6 +7956,12 @@
     "destination_72x72": "vividmoney.png"
   },
   {
+    "alias": "vivino",
+    "source": "vivino-200x200.jpeg",
+    "destination": "vivino.jpeg",
+    "destination_72x72": "vivino.jpeg"
+  },
+  {
     "alias": "vodeno",
     "source": "",
     "destination": "",
