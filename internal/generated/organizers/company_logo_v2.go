@@ -334,7 +334,7 @@ var (
 		"deutscheboerse":                      "",
 		"device42":                            "",
 		"devolutions-inc-":                    "",
-		"dhl":                                 "",
+		"dhl":                                 "dhl.jpeg",
 		"diabolocom":                          "diabolocom.jpeg",
 		"diagrid-inc":                         "",
 		"digiexams":                           "",

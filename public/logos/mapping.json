@@ -1981,9 +1981,9 @@
   },
   {
     "alias": "dhl",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "dhl-200x200.jpeg",
+    "destination": "dhl.jpeg",
+    "destination_72x72": "dhl.jpeg"
   },
   {
     "alias": "diabolocom",
