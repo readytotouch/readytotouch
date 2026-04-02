@@ -3485,6 +3485,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4385129214/":                                                               4408, // remote.com
 		"https://www.linkedin.com/jobs/view/4389267292/":                                                               4505, // remote.com
 		"https://www.linkedin.com/jobs/view/4393209443/":                                                               4539, // remote.com
+		"https://www.linkedin.com/jobs/view/4394658998/":                                                               4601, // remote.com
 		"https://www.linkedin.com/jobs/view/3933499435/":                                                               1593, // heyfresha
 		"https://www.linkedin.com/jobs/view/4091569026/":                                                               1594, // the-realreal
 		"https://www.linkedin.com/jobs/view/4193174525/":                                                               1630, // blackrock
@@ -3986,6 +3987,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4315504772/":                                                               3250, // papainc
 		"https://www.linkedin.com/jobs/view/4363900055/":                                                               4068, // papainc
 		"https://www.linkedin.com/jobs/view/4383297585/":                                                               4409, // papainc
+		"https://www.linkedin.com/jobs/view/4393802164/":                                                               4602, // papainc
 		"https://www.linkedin.com/jobs/view/4271123395/":                                                               2483, // bitwarden1
 		"https://www.linkedin.com/jobs/view/4279522160/":                                                               2591, // bitwarden1
 		"https://www.linkedin.com/jobs/view/4267262281/":                                                               2498, // kyp
@@ -4576,6 +4578,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4382297495/":                                                               4404, // xperi-inc
 		"https://www.linkedin.com/jobs/view/4334974804/":                                                               4405, // planitar
 		"https://www.linkedin.com/jobs/view/4384326649/":                                                               4410, // alluviumhealth
+		"https://www.linkedin.com/jobs/view/4395270250/":                                                               4603, // alluviumhealth
 		"https://www.linkedin.com/jobs/view/4383230327/":                                                               4411, // hg-insights
 		"https://www.linkedin.com/jobs/view/4312155633/":                                                               4415, // truelayer
 		"https://www.linkedin.com/jobs/view/4382656503/":                                                               4429, // toku-global
