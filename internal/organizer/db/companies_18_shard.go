@@ -3713,7 +3713,15 @@ func companies18Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-RELX-EI_IE1023378.11,15.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/RELX-Reviews-E1023378.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/RELX-Jobs-E1023378.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "",
+				Verified:    true,
+				Date:        mustDate("2026-04-03"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",

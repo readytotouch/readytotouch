@@ -34,7 +34,15 @@ func companies25Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Trendyol-EI_IE722443.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Trendyol-Reviews-E722443.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Trendyol-Jobs-E722443.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "",
+				Verified:    false,
+				Date:        mustDate("2026-04-03"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -110,8 +118,10 @@ func companies25Shard() []domain.CompanyProfile {
 				Date:              mustDate("2026-04-03"),
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "Vivino",
+				Followers: "73",
+				Verified:  true,
+				Date:      mustDate("2026-04-03"),
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -120,14 +130,22 @@ func companies25Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Vivino-EI_IE1350937.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Vivino-Reviews-E1350937.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Vivino-Jobs-E1350937.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "",
+				Verified:    false,
+				Date:        mustDate("2026-04-03"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoryCount: 0,
+					GitHubRepositoryCount: 27,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Backend (Go) Engineer",

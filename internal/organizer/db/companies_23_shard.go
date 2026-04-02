@@ -1053,7 +1053,15 @@ func companies23Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-CARIAD-EI_IE5058452.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/CARIAD-Reviews-E5058452.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/CARIAD-Jobs-E5058452.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "",
+				Verified:    false,
+				Date:        mustDate("2026-04-03"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -5189,7 +5197,15 @@ func companies23Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Nosto-Solutions-EI_IE1148273.11,26.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Nosto-Solutions-Reviews-E1148273.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Nosto-Solutions-Jobs-E1148273.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "",
+				Verified:    false,
+				Date:        mustDate("2026-04-03"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",

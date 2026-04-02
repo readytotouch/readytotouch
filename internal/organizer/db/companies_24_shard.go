@@ -2172,7 +2172,15 @@ func companies24Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Balyasny-Asset-Management-EI_IE262940.11,36.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Balyasny-Asset-Management-Reviews-E262940.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Balyasny-Asset-Management-Jobs-E262940.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "",
+				Verified:    true,
+				Date:        mustDate("2026-04-03"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -3715,7 +3723,15 @@ func companies24Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Sprout-Social-EI_IE701678.11,24.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Sprout-Social-Reviews-E701678.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Sprout-Social-Jobs-E701678.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "",
+				Verified:    true,
+				Date:        mustDate("2026-04-03"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -4428,7 +4444,15 @@ func companies24Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Toku-EI_IE3274715.11,15.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Toku-Reviews-E3274715.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Toku-Jobs-E3274715.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "",
+				Verified:    false,
+				Date:        mustDate("2026-04-03"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -4600,7 +4624,15 @@ func companies24Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-BitMart-EI_IE1928833.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/BitMart-Reviews-E1928833.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/BitMart-Jobs-E1928833.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "",
+				Verified:    false,
+				Date:        mustDate("2026-04-03"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -4686,7 +4718,15 @@ func companies24Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Scotiabank-EI_IE11013.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Scotiabank-Reviews-E11013.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Scotiabank-Jobs-E11013.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "",
+				Verified:    true,
+				Date:        mustDate("2026-04-03"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -4772,7 +4812,15 @@ func companies24Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Quantifind-EI_IE718626.11,21.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Quantifind-Reviews-E718626.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Quantifind-Jobs-E718626.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "",
+				Verified:    true,
+				Date:        mustDate("2026-04-03"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -4944,7 +4992,15 @@ func companies24Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Elevance-Health-EI_IE925157.11,26.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Elevance-Health-Reviews-E925157.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Elevance-Health-Jobs-E925157.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "",
+				Verified:    true,
+				Date:        mustDate("2026-04-03"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -5460,7 +5516,15 @@ func companies24Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Veo-EI_IE2084852.11,14.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Veo-Reviews-E2084852.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Veo-Jobs-E2084852.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "",
+				Verified:    true,
+				Date:        mustDate("2026-04-03"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
