@@ -1411,9 +1411,9 @@
   },
   {
     "alias": "circles1",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "circles1-256x256.png",
+    "destination": "circles1.png",
+    "destination_72x72": "circles1.png"
   },
   {
     "alias": "circuithub",
@@ -2047,9 +2047,9 @@
   },
   {
     "alias": "dittolive",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "dittolive-200x200.jpeg",
+    "destination": "dittolive.jpeg",
+    "destination_72x72": "dittolive.jpeg"
   },
   {
     "alias": "dlocal",
@@ -2065,9 +2065,9 @@
   },
   {
     "alias": "doccla",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "doccla-200x200.jpeg",
+    "destination": "doccla.jpeg",
+    "destination_72x72": "doccla.jpeg"
   },
   {
     "alias": "docebo",
@@ -2767,9 +2767,9 @@
   },
   {
     "alias": "form3-financial-cloud",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "form3-financial-cloud-200x200.jpeg",
+    "destination": "form3-financial-cloud.jpeg",
+    "destination_72x72": "form3-financial-cloud.jpeg"
   },
   {
     "alias": "fortanix",
@@ -3073,9 +3073,9 @@
   },
   {
     "alias": "goflink",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "goflink-80x80.png",
+    "destination": "goflink.png",
+    "destination_72x72": "goflink.png"
   },
   {
     "alias": "gogreyorange",
@@ -3211,9 +3211,9 @@
   },
   {
     "alias": "guardsquare",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "guardsquare-200x200.jpeg",
+    "destination": "guardsquare.jpeg",
+    "destination_72x72": "guardsquare.jpeg"
   },
   {
     "alias": "guidewire-software",
@@ -3565,9 +3565,9 @@
   },
   {
     "alias": "ing",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "ing-200x200.jpeg",
+    "destination": "ing.jpeg",
+    "destination_72x72": "ing.jpeg"
   },
   {
     "alias": "innoflight-llc",
@@ -4495,9 +4495,9 @@
   },
   {
     "alias": "mongodbinc",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "mongodbinc-200x200.jpeg",
+    "destination": "mongodbinc.jpeg",
+    "destination_72x72": "mongodbinc.jpeg"
   },
   {
     "alias": "monil-virtual-fences",
@@ -5065,9 +5065,9 @@
   },
   {
     "alias": "oolio-au",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "oolio-180x180.png",
+    "destination": "oolio-au.png",
+    "destination_72x72": "oolio-au.png"
   },
   {
     "alias": "openai",
@@ -5305,9 +5305,9 @@
   },
   {
     "alias": "paynearme",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "paynearme-76x76.png",
+    "destination": "paynearme.png",
+    "destination_72x72": "paynearme.png"
   },
   {
     "alias": "paypal",
@@ -5593,9 +5593,9 @@
   },
   {
     "alias": "prioritysoftware",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "prioritysoftware-200x200.jpeg",
+    "destination": "prioritysoftware.jpeg",
+    "destination_72x72": "prioritysoftware.jpeg"
   },
   {
     "alias": "prisma-io",
@@ -5605,9 +5605,9 @@
   },
   {
     "alias": "prize-picks",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "prize-picks-256x256.png",
+    "destination": "prize-picks.png",
+    "destination_72x72": "prize-picks.png"
   },
   {
     "alias": "pro-football-focus",
@@ -7261,9 +7261,9 @@
   },
   {
     "alias": "teya-global",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "teya-200x200.jpeg",
+    "destination": "teya-global.jpeg",
+    "destination_72x72": "teya-global.jpeg"
   },
   {
     "alias": "thales",
@@ -8023,9 +8023,9 @@
   },
   {
     "alias": "walmart",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "walmart-200x200.jpeg",
+    "destination": "walmart.jpeg",
+    "destination_72x72": "walmart.jpeg"
   },
   {
     "alias": "walmartdataventures",
