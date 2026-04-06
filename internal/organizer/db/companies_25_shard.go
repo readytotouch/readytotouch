@@ -148,7 +148,7 @@ func companies25Shard() []domain.CompanyProfile {
 					GitHubRepositoryCount: 27,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Senior Backend (Go) Engineer",
+							Title:                "Senior Backend Engineer (Go)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4396662660/",
