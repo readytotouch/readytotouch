@@ -5082,6 +5082,17 @@ func companies15Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Backend Engineer (Java, Scala)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4366879261/",
+							Location:             "Bucharest, Bucharest, Romania",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-04-03"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Elixir: {

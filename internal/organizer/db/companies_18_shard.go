@@ -69,7 +69,7 @@ func companies18Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4375437346/",
 							Location:             "London, England, United Kingdom",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-03-13", "2026-02-20"),
+							Date:                 mustDate("2026-04-04", "2026-03-13", "2026-02-20"),
 							WithSalary:           false,
 							Remote:               false,
 						},
