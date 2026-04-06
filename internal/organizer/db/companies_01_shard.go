@@ -7818,7 +7818,7 @@ func companies01Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4375490689/",
 							Location:             "United States",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-03-13"),
+							Date:                 mustDate("2026-04-04", "2026-03-13"),
 							WithSalary:           true, // $144k/yr - $214k/yr
 							Remote:               true,
 						},
