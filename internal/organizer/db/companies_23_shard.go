@@ -128,7 +128,7 @@ func companies23Shard() []domain.CompanyProfile {
 					GitHubRepositoryCount: 1,
 					Vacancies: []domain.Vacancy{
 						{
-							Title:                "Senior Back-end Engineer (GO)",
+							Title:                "Senior Back-end Engineer (Go)",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4343636595/",
@@ -4022,10 +4022,11 @@ func companies23Shard() []domain.CompanyProfile {
 				IDs:               nil,
 				Alias:             "delinea",
 				Name:              "Delinea",
-				Followers:         "42K",
+				Followers:         "44K",
 				Employees:         "1K-5K",
-				AssociatedMembers: "1,233",
+				AssociatedMembers: "1,286",
 				Verified:          true,
+				Date:              mustDate("2026-04-06"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:     "DelineaXPM",
@@ -4055,7 +4056,7 @@ func companies23Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4328183145/",
 							Location:             "Mexico City, Mexico",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-02-22", "2026-02-01"),
+							Date:                 mustDate("2026-04-04", "2026-02-22", "2026-02-01"),
 							WithSalary:           false,
 							Remote:               false,
 						},
