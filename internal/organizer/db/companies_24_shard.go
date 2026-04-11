@@ -4674,7 +4674,7 @@ func companies24Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4380097700/",
 							Location:             "APAC",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-03-28", "2026-03-25", "2026-03-17"),
+							Date:                 mustDate("2026-04-09", "2026-03-28", "2026-03-25", "2026-03-17"),
 							WithSalary:           false,
 							Remote:               true,
 						},

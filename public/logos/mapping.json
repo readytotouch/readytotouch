@@ -600,6 +600,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "atomic-semi",
+    "source": "atomic-semi-200x200.jpeg",
+    "destination": "atomic-semi.jpeg",
+    "destination_72x72": "atomic-semi.jpeg"
+  },
+  {
     "alias": "atomicskiing",
     "source": "",
     "destination": "",
@@ -5130,6 +5136,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "openyield",
+    "source": "openyield-180x180.webp",
+    "destination": "openyield.png",
+    "destination_72x72": "openyield.png"
+  },
+  {
     "alias": "operantai",
     "source": "",
     "destination": "",
@@ -7246,6 +7258,12 @@
     "source": "teramindco-200x200.jpeg",
     "destination": "teramindco.jpeg",
     "destination_72x72": "teramindco.jpeg"
+  },
+  {
+    "alias": "termius",
+    "source": "termius-200x200.jpeg",
+    "destination": "termius.jpeg",
+    "destination_72x72": "termius.jpeg"
   },
   {
     "alias": "tesla-motors",

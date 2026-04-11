@@ -5471,7 +5471,7 @@ func companies01Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4318541975/",
 							Location:             "Milan, Lombardy, Italy",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-03-20"),
+							Date:                 mustDate("2026-04-09", "2026-03-20"),
 							WithSalary:           false,
 							Remote:               false,
 						},

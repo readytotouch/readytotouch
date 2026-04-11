@@ -1423,6 +1423,9 @@ var (
 		"trendyolgroup":                       1423, // Trendyol Group
 		"vivino":                              1424, // Vivino
 		"chromaticcom":                        1425, // Chromatic
+		"openyield":                           1426, // OpenYield
+		"atomic-semi":                         1427, // Atomic Semi
+		"termius":                             1428, // Termius
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 
