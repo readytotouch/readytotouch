@@ -1422,6 +1422,7 @@ var (
 		"delio":                               1422, // Delio
 		"trendyolgroup":                       1423, // Trendyol Group
 		"vivino":                              1424, // Vivino
+		"chromaticcom":                        1425, // Chromatic
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

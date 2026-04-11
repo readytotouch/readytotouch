@@ -235,6 +235,7 @@ var (
 		"chilipiper":                          "chilipiper.png",
 		"chime-card":                          "chime-card.jpeg",
 		"cho-tot":                             "",
+		"chromaticcom":                        "chromaticcom.jpeg",
 		"cielara":                             "",
 		"ciena":                               "ciena.png",
 		"cimri":                               "",

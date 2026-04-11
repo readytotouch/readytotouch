@@ -3478,6 +3478,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4343031500/":                                                               3572, // telnyx
 		"https://www.linkedin.com/jobs/view/4364050833/":                                                               3785, // telnyx
 		"https://www.linkedin.com/jobs/view/4363780937/":                                                               4009, // telnyx
+		"https://www.linkedin.com/jobs/view/4400595422/":                                                               4647, // telnyx
 		"https://www.linkedin.com/jobs/view/4186581023/":                                                               1575, // eunasolutions
 		"https://www.linkedin.com/jobs/view/4188235715/":                                                               1576, // driftrock
 		"https://www.linkedin.com/jobs/view/4389078637/":                                                               4504, // driftrock
@@ -4629,6 +4630,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4387726867/":                                                               4452, // scotiabank
 		"https://www.linkedin.com/jobs/view/4376932890/":                                                               4453, // quantifind
 		"https://www.linkedin.com/jobs/view/4387424282/":                                                               4457, // truckstop
+		"https://www.linkedin.com/jobs/view/4399296408/":                                                               4649, // truckstop
 		"https://www.linkedin.com/jobs/view/4386746033/":                                                               4459, // elevance-health
 		"https://www.linkedin.com/jobs/view/4387690795/":                                                               4465, // onyx-capitalgroup
 		"https://www.linkedin.com/jobs/view/4351500786/":                                                               4475, // urbansportsclub
@@ -4642,6 +4644,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4391578335/":                                                               4594, // delio
 		"https://www.linkedin.com/jobs/view/4390917180/":                                                               4595, // trendyolgroup
 		"https://www.linkedin.com/jobs/view/4396662660/":                                                               4610, // vivino
+		"https://www.linkedin.com/jobs/view/4399868227/":                                                               4648, // chromaticcom
 		"https://www.linkedin.com/jobs/view/3914839625/":                                                               372,  // cognizant
 		"https://www.linkedin.com/jobs/view/4120737001/":                                                               600,  // cognizant
 		"https://www.linkedin.com/jobs/view/4149258542/":                                                               787,  // cognizant
