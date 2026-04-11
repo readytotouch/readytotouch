@@ -4234,6 +4234,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4299264966/":                                                               3177, // poweredbycommerce
 		"https://www.linkedin.com/jobs/view/4355394004/":                                                               3849, // poweredbycommerce
 		"https://www.linkedin.com/jobs/view/4396766494/":                                                               4598, // poweredbycommerce
+		"https://www.linkedin.com/jobs/view/4384427855/":                                                               4646, // poweredbycommerce
 		"https://www.linkedin.com/jobs/view/4300493896/":                                                               3476, // ciena
 		"https://www.linkedin.com/jobs/view/4327785528/":                                                               3671, // ciena
 		"https://www.linkedin.com/jobs/view/4394480851/":                                                               4643, // ciena

@@ -6709,7 +6709,7 @@ func companies01Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4383262504/",
 							Location:             "Montreal, QC",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-04-02", "2026-03-12"),
+							Date:                 mustDate("2026-04-10", "2026-04-02", "2026-03-12"),
 							WithSalary:           false,
 							Remote:               false,
 						},
