@@ -550,7 +550,7 @@ var (
 		"happen-ing":                          "happen-ing.jpeg",
 		"happyhotel":                          "happyhotel.png",
 		"harksys":                             "",
-		"hasaki-vn":                           "hasaki-vn.jpeg",
+		"hasakivietnam":                       "hasaki-vn.jpeg",
 		"hashicorp":                           "hashicorp.jpeg",
 		"hasura":                              "",
 		"havas":                               "havas.jpeg",

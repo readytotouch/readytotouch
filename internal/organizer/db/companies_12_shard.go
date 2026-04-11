@@ -873,7 +873,7 @@ func companies12Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4383737811/",
 							Location:             "Bucharest, Bucharest, Romania",
 							CloudProviders:       []domain.CloudProvider{domain.AWS},
-							Date:                 mustDate("2026-04-03", "2026-03-10"),
+							Date:                 mustDate("2026-04-09", "2026-04-03", "2026-03-10"),
 							WithSalary:           false,
 							Remote:               false,
 						},

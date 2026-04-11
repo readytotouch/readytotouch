@@ -768,7 +768,7 @@ func companies22Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4322153707/",
 							Location:             "Belgrade, Serbia",
 							CloudProviders:       []domain.CloudProvider{domain.AWS},
-							Date:                 mustDate("2026-03-20", "2026-02-28", "2026-02-07", "2026-01-16", "2025-12-26", "2025-12-05", "2025-11-13"),
+							Date:                 mustDate("2026-04-11", "2026-03-20", "2026-02-28", "2026-02-07", "2026-01-16", "2025-12-26", "2025-12-05", "2025-11-13"),
 							WithSalary:           false,
 							Remote:               false,
 						},

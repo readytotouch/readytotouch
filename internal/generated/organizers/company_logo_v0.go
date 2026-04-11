@@ -191,7 +191,7 @@ var (
 		"group-avows":                        "avowstech.png",
 		"guardsquare":                        "guardsquare.png",
 		"happen-ing":                         "happening.png",
-		"hasaki-vn":                          "hasaki-vn.png",
+		"hasakivietnam":                      "hasaki-vn.png",
 		"hashicorp":                          "hashicorp.png",
 		"hasura":                             "hasura.png",
 		"hearx-group":                        "hearx.png",

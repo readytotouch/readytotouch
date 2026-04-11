@@ -551,7 +551,7 @@ var (
 		"cheesecake-labs":                     547,  // Cheesecake Labs
 		"mayaph":                              548,  // Maya
 		"ashley-furniture-industries":         549,  // Ashley Furniture Industries
-		"hasaki-vn":                           551,  // Hasaki.vn
+		"hasakivietnam":                       551,  // Hasaki
 		"nutanix":                             552,  // Nutanix
 		"umbraspace":                          553,  // Umbra
 		"cognitedata":                         554,  // Cognite
