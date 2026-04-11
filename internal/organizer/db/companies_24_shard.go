@@ -2573,7 +2573,15 @@ func companies24Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Apex-Fintech-Solutions-EI_IE599382.11,33.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Apex-Fintech-Solutions-Reviews-E599382.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Apex-Fintech-Solutions-Jobs-E599382.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "",
+				Verified:    true,
+				Date:        mustDate("2026-04-12"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -4939,7 +4947,15 @@ func companies24Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Truckstop-com-EI_IE484559.11,24.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Truckstop-com-Reviews-E484559.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Truckstop-com-Jobs-E484559.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "",
+				Verified:    true,
+				Date:        mustDate("2026-04-12"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -5216,7 +5232,15 @@ func companies24Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Urban-Sports-Club-EI_IE1667787.11,28.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Urban-Sports-Club-Reviews-E1667787.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Urban-Sports-Club-Jobs-E1667787.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "",
+				Verified:    true,
+				Date:        mustDate("2026-04-12"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",

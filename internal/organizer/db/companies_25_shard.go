@@ -398,7 +398,15 @@ func companies25Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Atomic-Semi-EI_IE9926998.11,22.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Atomic-Semi-Reviews-E9926998.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Atomic-Semi-Jobs-E9926998.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "",
+				Verified:    true,
+				Date:        mustDate("2026-04-12"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -423,7 +431,6 @@ func companies25Shard() []domain.CompanyProfile {
 							Remote:               false,
 						},
 					},
-					PinnedUntil: mustDate("2026-04-16"),
 				},
 				domain.Zig: {
 					GitHubRepositoryCount: 0,

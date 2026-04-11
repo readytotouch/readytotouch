@@ -837,7 +837,15 @@ func companies12Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Bitpanda-EI_IE1925174.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Bitpanda-Reviews-E1925174.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Bitpanda-Jobs-E1925174.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "",
+				Verified:    true,
+				Date:        mustDate("2026-04-12"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
