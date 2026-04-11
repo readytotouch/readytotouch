@@ -600,6 +600,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "atomic-semi",
+    "source": "atomic-semi-200x200.jpeg",
+    "destination": "atomic-semi.jpeg",
+    "destination_72x72": "atomic-semi.jpeg"
+  },
+  {
     "alias": "atomicskiing",
     "source": "",
     "destination": "",
@@ -1384,6 +1390,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "chromaticcom",
+    "source": "chromaticcom-200x200.jpeg",
+    "destination": "chromaticcom.jpeg",
+    "destination_72x72": "chromaticcom.jpeg"
   },
   {
     "alias": "cielara",
@@ -2647,9 +2659,9 @@
   },
   {
     "alias": "flexera",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "flexera-200x200.jpeg",
+    "destination": "flexera.jpeg",
+    "destination_72x72": "flexera.jpeg"
   },
   {
     "alias": "flextrade",
@@ -3264,7 +3276,7 @@
     "destination_72x72": ""
   },
   {
-    "alias": "hasaki-vn",
+    "alias": "hasakivietnam",
     "source": "hasaki-vn-200x200.jpeg",
     "destination": "hasaki-vn.jpeg",
     "destination_72x72": "hasaki-vn.jpeg"
@@ -5122,6 +5134,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "openyield",
+    "source": "openyield-180x180.webp",
+    "destination": "openyield.png",
+    "destination_72x72": "openyield.png"
   },
   {
     "alias": "operantai",
@@ -7242,10 +7260,16 @@
     "destination_72x72": "teramindco.jpeg"
   },
   {
+    "alias": "termius",
+    "source": "termius-200x200.jpeg",
+    "destination": "termius.jpeg",
+    "destination_72x72": "termius.jpeg"
+  },
+  {
     "alias": "tesla-motors",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "tesla-motors-152x152.png",
+    "destination": "tesla-motors.png",
+    "destination_72x72": "tesla-motors.png"
   },
   {
     "alias": "testsigma",

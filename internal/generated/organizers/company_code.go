@@ -551,7 +551,7 @@ var (
 		"cheesecake-labs":                     547,  // Cheesecake Labs
 		"mayaph":                              548,  // Maya
 		"ashley-furniture-industries":         549,  // Ashley Furniture Industries
-		"hasaki-vn":                           551,  // Hasaki.vn
+		"hasakivietnam":                       551,  // Hasaki
 		"nutanix":                             552,  // Nutanix
 		"umbraspace":                          553,  // Umbra
 		"cognitedata":                         554,  // Cognite
@@ -1422,6 +1422,10 @@ var (
 		"delio":                               1422, // Delio
 		"trendyolgroup":                       1423, // Trendyol Group
 		"vivino":                              1424, // Vivino
+		"chromaticcom":                        1425, // Chromatic
+		"openyield":                           1426, // OpenYield
+		"atomic-semi":                         1427, // Atomic Semi
+		"termius":                             1428, // Termius
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

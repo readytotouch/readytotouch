@@ -5854,9 +5854,9 @@ func companies19Shard() []domain.CompanyProfile {
 				Name:              "NVIDIA",
 				Followers:         "5M",
 				Employees:         "10K+",
-				AssociatedMembers: "44,767",
+				AssociatedMembers: "45,936",
 				Verified:          true,
-				Date:              mustDate("2026-03-21"),
+				Date:              mustDate("2026-04-11"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:     "nvidia",
@@ -5994,6 +5994,17 @@ func companies19Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $152k/yr - $287.5k/yr
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Systems Software Engineer – Rust, Go, C++",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4395476335/",
+							Location:             "Santa Clara, CA",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-04-08"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
@@ -6030,6 +6041,17 @@ func companies19Shard() []domain.CompanyProfile {
 							CloudProviders:       []domain.CloudProvider{},
 							Date:                 mustDate("2026-03-19", "2026-02-25"),
 							WithSalary:           true, // $152k/yr - $287.5k/yr
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Systems Software Engineer – Rust, Go, C++",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4395476335/",
+							Location:             "Santa Clara, CA",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-04-08"),
+							WithSalary:           false,
 							Remote:               false,
 						},
 					},

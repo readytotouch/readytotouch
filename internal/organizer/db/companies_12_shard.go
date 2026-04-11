@@ -837,7 +837,15 @@ func companies12Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Bitpanda-EI_IE1925174.11,19.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Bitpanda-Reviews-E1925174.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Bitpanda-Jobs-E1925174.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "",
+				Verified:    true,
+				Date:        mustDate("2026-04-12"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -873,7 +881,7 @@ func companies12Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4383737811/",
 							Location:             "Bucharest, Bucharest, Romania",
 							CloudProviders:       []domain.CloudProvider{domain.AWS},
-							Date:                 mustDate("2026-04-03", "2026-03-10"),
+							Date:                 mustDate("2026-04-09", "2026-04-03", "2026-03-10"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -4784,7 +4792,7 @@ func companies12Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4271201559/",
 							Location:             "Munich, Bavaria, Germany",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-03-19", "2026-02-25", "2026-02-05", "2026-01-15", "2025-12-25", "2025-12-02", "2025-11-12", "2025-09-09", "2025-08-19", "2025-07-28"),
+							Date:                 mustDate("2026-04-10", "2026-03-19", "2026-02-25", "2026-02-05", "2026-01-15", "2025-12-25", "2025-12-02", "2025-11-12", "2025-09-09", "2025-08-19", "2025-07-28"),
 							WithSalary:           false,
 							Remote:               false,
 						},
