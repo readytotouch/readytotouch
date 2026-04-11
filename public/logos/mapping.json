@@ -2659,9 +2659,9 @@
   },
   {
     "alias": "flexera",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "flexera-200x200.jpeg",
+    "destination": "flexera.jpeg",
+    "destination_72x72": "flexera.jpeg"
   },
   {
     "alias": "flextrade",
@@ -7267,9 +7267,9 @@
   },
   {
     "alias": "tesla-motors",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "tesla-motors-152x152.png",
+    "destination": "tesla-motors.png",
+    "destination_72x72": "tesla-motors.png"
   },
   {
     "alias": "testsigma",
