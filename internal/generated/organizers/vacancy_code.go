@@ -3539,6 +3539,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4389267292/":                                                               4505, // remote.com
 		"https://www.linkedin.com/jobs/view/4393209443/":                                                               4539, // remote.com
 		"https://www.linkedin.com/jobs/view/4394658998/":                                                               4601, // remote.com
+		"https://www.linkedin.com/jobs/view/4400566263/":                                                               4687, // remote.com
 		"https://www.linkedin.com/jobs/view/3933499435/":                                                               1593, // heyfresha
 		"https://www.linkedin.com/jobs/view/4091569026/":                                                               1594, // the-realreal
 		"https://www.linkedin.com/jobs/view/4193174525/":                                                               1630, // blackrock
@@ -3777,6 +3778,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4384061242/":                                                               4681, // paypal
 		"https://www.linkedin.com/jobs/view/4242758126/":                                                               2019, // paypal
 		"https://www.linkedin.com/jobs/view/4301461830/":                                                               3030, // paypal
+		"https://www.linkedin.com/jobs/view/4401776456/":                                                               4688, // paypal
 		"https://www.linkedin.com/jobs/view/4245930632/":                                                               2020, // trainline
 		"https://www.linkedin.com/jobs/view/4375437346/":                                                               4161, // trainline
 		"https://www.linkedin.com/jobs/view/4244484254/":                                                               2021, // samba-ai
