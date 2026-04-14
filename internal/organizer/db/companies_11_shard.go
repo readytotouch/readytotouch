@@ -4096,7 +4096,7 @@ func companies11Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4370379648/",
 							Location:             "Valencia, Valencian Community, Spain",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-02-10"),
+							Date:                 mustDate("2026-04-14", "2026-02-10"),
 							WithSalary:           false,
 							Remote:               false,
 						},
