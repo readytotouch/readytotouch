@@ -516,6 +516,17 @@ func companies25Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Product Engineer (Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4402021996/",
+							Location:             "Auckland, Auckland, New Zealand",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-04-14"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig: {

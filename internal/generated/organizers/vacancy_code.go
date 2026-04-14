@@ -188,6 +188,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4099667362/":                                                               406,  // mongodbinc
 		"https://app.welcometothejungle.com/jobs/BoykNJtU":                                                             1273, // mongodbinc
 		"https://www.linkedin.com/jobs/view/4391730496/":                                                               4543, // mongodbinc
+		"https://www.linkedin.com/jobs/view/4389234295/":                                                               4689, // mongodbinc
 		"https://www.linkedin.com/jobs/view/4021697979/":                                                               10,   // redisinc
 		"https://www.linkedin.com/jobs/view/4244497982/":                                                               1999, // redisinc
 		"https://www.linkedin.com/jobs/view/4231390579/":                                                               2314, // redisinc
@@ -527,6 +528,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4398023969/":                                                               4620, // workato
 		"https://www.linkedin.com/jobs/view/4399880662/":                                                               4663, // workato
 		"https://www.linkedin.com/jobs/view/4262421101/":                                                               2232, // workato
+		"https://www.linkedin.com/jobs/view/4402008134/":                                                               4690, // workato
 		"https://www.linkedin.com/jobs/view/4081153248/":                                                               421,  // form3-financial-cloud
 		"https://www.linkedin.com/jobs/view/4286529235/":                                                               2679, // form3-financial-cloud
 		"https://www.linkedin.com/jobs/view/4307549171/":                                                               3124, // form3-financial-cloud
@@ -2537,6 +2539,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4329773545/":                                                               3735, // quantum-systems-gmbh
 		"https://www.linkedin.com/jobs/view/4368259315/":                                                               3984, // quantum-systems-gmbh
 		"https://www.linkedin.com/jobs/view/4395987058/":                                                               4650, // quantum-systems-gmbh
+		"https://www.linkedin.com/jobs/view/4400758763/":                                                               4691, // quantum-systems-gmbh
 		"https://www.linkedin.com/jobs/view/4118966168/":                                                               591,  // gdms
 		"https://www.linkedin.com/jobs/view/4148907792/":                                                               844,  // gdms
 		"https://www.linkedin.com/jobs/view/4179404017/":                                                               1137, // gdms
@@ -4684,6 +4687,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4395949066/":                                                               4652, // openyield
 		"https://www.linkedin.com/jobs/view/4400690851/":                                                               4653, // atomic-semi
 		"https://www.linkedin.com/jobs/view/4398683341/":                                                               4655, // termius
+		"https://www.linkedin.com/jobs/view/4402021996/":                                                               4692, // termius
 		"https://www.linkedin.com/jobs/view/3914839625/":                                                               372,  // cognizant
 		"https://www.linkedin.com/jobs/view/4120737001/":                                                               600,  // cognizant
 		"https://www.linkedin.com/jobs/view/4149258542/":                                                               787,  // cognizant
