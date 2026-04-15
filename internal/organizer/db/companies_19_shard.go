@@ -2236,7 +2236,7 @@ func companies19Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4390852038/",
 							Location:             "European Economic Area",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-03-31"),
+							Date:                 mustDate("2026-04-14", "2026-03-31"),
 							WithSalary:           false,
 							Remote:               true,
 						},

@@ -2409,7 +2409,7 @@ func companies24Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4370033475/",
 							Location:             "Madrid, Community of Madrid, Spain",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-03-23", "2026-03-02"),
+							Date:                 mustDate("2026-04-14", "2026-03-23", "2026-03-02"),
 							WithSalary:           false,
 							Remote:               false,
 						},
