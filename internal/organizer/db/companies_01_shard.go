@@ -4798,7 +4798,7 @@ func companies01Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4335705744/",
 							Location:             "Sofia Metropolitan Area",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-03-22", "2026-03-01"),
+							Date:                 mustDate("2026-04-13", "2026-03-22", "2026-03-01"),
 							WithSalary:           false,
 							Remote:               false,
 						},
