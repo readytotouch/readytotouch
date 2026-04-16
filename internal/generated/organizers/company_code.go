@@ -1426,6 +1426,8 @@ var (
 		"openyield":                           1426, // OpenYield
 		"atomic-semi":                         1427, // Atomic Semi
 		"termius":                             1428, // Termius
+		"tentris":                             1429, // Tentris
+		"cato-networks":                       1430, // Cato Networks
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

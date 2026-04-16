@@ -5096,7 +5096,7 @@ func companies04Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4384780153/",
 							Location:             "Bellevue, WA",
 							CloudProviders:       []domain.CloudProvider{domain.Azure},
-							Date:                 mustDate("2026-04-08"),
+							Date:                 mustDate("2026-04-16", "2026-04-08"),
 							WithSalary:           false,
 							Remote:               false,
 						},

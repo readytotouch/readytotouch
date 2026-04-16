@@ -2182,8 +2182,9 @@ func companies11Shard() []domain.CompanyProfile {
 				Name:              "Fidelity Investments",
 				Followers:         "1M",
 				Employees:         "10K+",
-				AssociatedMembers: "80,034",
+				AssociatedMembers: "85,772",
 				Verified:          true,
+				Date:              mustDate("2026-04-16"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:     "fidelity",
@@ -2288,6 +2289,17 @@ func companies11Shard() []domain.CompanyProfile {
 							CloudProviders:       []domain.CloudProvider{},
 							Date:                 mustDate("2026-02-28", "2026-02-08", "2026-01-18"),
 							WithSalary:           true, // $107k/yr - $216k/yr
+							Remote:               false,
+						},
+						{
+							Title:                "Principal Software Engineer (Rust/Python)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4402275616/",
+							Location:             "Jersey City, NJ",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-04-15"),
+							WithSalary:           false,
 							Remote:               false,
 						},
 					},
