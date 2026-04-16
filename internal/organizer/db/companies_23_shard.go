@@ -4960,6 +4960,17 @@ func companies23Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $80/hr - $100/hr
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Go Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4399963939/",
+							Location:             "Chicago, IL",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-04-15"),
+							WithSalary:           true, // $80/yr - $100/yr
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust: {

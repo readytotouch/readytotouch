@@ -1608,6 +1608,12 @@
     "destination_72x72": "cohesity.jpeg"
   },
   {
+    "alias": "coingate",
+    "source": "coingate-260x260.png",
+    "destination": "coingate.png",
+    "destination_72x72": "coingate.png"
+  },
+  {
     "alias": "collabera",
     "source": "collabera-200x200.jpeg",
     "destination": "collabera.jpeg",

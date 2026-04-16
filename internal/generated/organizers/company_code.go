@@ -721,6 +721,7 @@ var (
 		"qnx":                                 716,  // QNX
 		"solariscompany":                      717,  // Solaris SE
 		"smava":                               718,  // smava
+		"coingate":                            1431, // CoinGate
 		"synitidata":                          719,  // Syniti
 		"goldman-sachs":                       720,  // Goldman Sachs
 		"cho-tot":                             721,  // Chợ Tốt

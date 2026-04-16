@@ -272,6 +272,7 @@ var (
 		"cognitedata":                         "cognitedata.png",
 		"cognyte":                             "cognyte.png",
 		"cohesity":                            "cohesity.jpeg",
+		"coingate":                            "coingate.png",
 		"collabera":                           "collabera.jpeg",
 		"collins-aerospace":                   "",
 		"collx":                               "collx.jpeg",
