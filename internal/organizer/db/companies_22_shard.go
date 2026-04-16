@@ -4248,7 +4248,7 @@ func companies22Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4324341674/",
 							Location:             "Los Angeles, CA",
 							CloudProviders:       []domain.CloudProvider{domain.AWS},
-							Date:                 mustDate("2026-04-04", "2026-03-13", "2026-01-30", "2026-01-09", "2025-12-09", "2025-11-25"),
+							Date:                 mustDate("2026-04-15", "2026-04-04", "2026-03-13", "2026-01-30", "2026-01-09", "2025-12-09", "2025-11-25"),
 							WithSalary:           true, // $200k/yr - $240k/yr
 							Remote:               false,
 						},

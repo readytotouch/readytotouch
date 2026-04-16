@@ -1260,6 +1260,12 @@
     "destination_72x72": "catiotech.png"
   },
   {
+    "alias": "cato-networks",
+    "source": "cato-networks-200x200.jpeg",
+    "destination": "cato-networks.jpeg",
+    "destination_72x72": "cato-networks.jpeg"
+  },
+  {
     "alias": "cava-",
     "source": "",
     "destination": "",
@@ -1600,6 +1606,12 @@
     "source": "cohesity-200x200.jpeg",
     "destination": "cohesity.jpeg",
     "destination_72x72": "cohesity.jpeg"
+  },
+  {
+    "alias": "coingate",
+    "source": "coingate-260x260.png",
+    "destination": "coingate.png",
+    "destination_72x72": "coingate.png"
   },
   {
     "alias": "collabera",
@@ -7246,6 +7258,12 @@
     "source": "tenstorrent-463x463.png",
     "destination": "tenstorrent-inc..png",
     "destination_72x72": "tenstorrent-inc..png"
+  },
+  {
+    "alias": "tentris",
+    "source": "tentris-260x260.png",
+    "destination": "tentris.png",
+    "destination_72x72": "tentris.png"
   },
   {
     "alias": "teradata",

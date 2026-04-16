@@ -6079,7 +6079,7 @@ func companies20Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4390276409/",
 							Location:             "Canada",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-03-27"),
+							Date:                 mustDate("2026-04-16", "2026-03-27"),
 							WithSalary:           true, // $132k/yr - $160k/yr
 							Remote:               true,
 						},

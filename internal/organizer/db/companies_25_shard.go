@@ -430,6 +430,17 @@ func companies25Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $125k/yr - $195k/yr
 							Remote:               false,
 						},
+						{
+							Title:                "Software Engineer, Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4401485694/",
+							Location:             "San Francisco, CA",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-04-15"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig: {
@@ -557,6 +568,180 @@ func companies25Shard() []domain.CompanyProfile {
 			ShortDescription: "Termius is an SSH client",
 			Industries: []domain.Industry{
 				domain.IndustryDevOps,
+			},
+		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Tentris",
+			BaseURL:    "https://tentris.io/",
+			CareersURL: "",
+			AboutURL:   "",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                83062420,
+				IDs:               nil,
+				Alias:             "tentris",
+				Name:              "Tentris",
+				Followers:         "526",
+				Employees:         "2-10",
+				AssociatedMembers: "4",
+				Verified:          false,
+				Date:              mustDate("2026-04-16"),
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:     "tentris",
+				Followers: "9",
+				Verified:  false,
+				Date:      mustDate("2026-04-16"),
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Junior System Engineer",
+							ShortDescription:     "Developing graph database internals in C++/Rust",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4399937525/",
+							Location:             "Cologne, North Rhine-Westphalia, Germany",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-04-15"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "RDF graph database",
+			Industries: []domain.Industry{
+				domain.IndustryDevOps,
+			},
+		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Cato Networks",
+			BaseURL:    "https://www.catonetworks.com/",
+			CareersURL: "https://www.catonetworks.com/careers/",
+			AboutURL:   "https://www.catonetworks.com/company/",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3533853,
+				IDs:               nil,
+				Alias:             "cato-networks",
+				Name:              "Cato Networks",
+				Followers:         "191K",
+				Employees:         "1K-5K",
+				AssociatedMembers: "1,618",
+				Verified:          true,
+				Date:              mustDate("2026-04-16"),
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "C/Rust Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4353962622/",
+							Location:             "Tel Aviv District, Israel",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-04-15"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "SASE platform",
+			Industries: []domain.Industry{
+				domain.IndustryCyberSecurity,
 			},
 		},
 	}

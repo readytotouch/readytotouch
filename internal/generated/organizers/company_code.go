@@ -721,6 +721,7 @@ var (
 		"qnx":                                 716,  // QNX
 		"solariscompany":                      717,  // Solaris SE
 		"smava":                               718,  // smava
+		"coingate":                            1431, // CoinGate
 		"synitidata":                          719,  // Syniti
 		"goldman-sachs":                       720,  // Goldman Sachs
 		"cho-tot":                             721,  // Chợ Tốt
@@ -1426,6 +1427,8 @@ var (
 		"openyield":                           1426, // OpenYield
 		"atomic-semi":                         1427, // Atomic Semi
 		"termius":                             1428, // Termius
+		"tentris":                             1429, // Tentris
+		"cato-networks":                       1430, // Cato Networks
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

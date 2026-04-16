@@ -2577,22 +2577,25 @@ func companies12Shard() []domain.CompanyProfile {
 			Type:       "", // system
 			Name:       "CoinGate",
 			BaseURL:    "https://coingate.com/",
-			CareersURL: "",
-			AboutURL:   "",
+			CareersURL: "https://coingate.com/career",
+			AboutURL:   "https://coingate.com/about-us",
 			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                10586817,
 				IDs:               nil,
 				Alias:             "coingate",
 				Name:              "CoinGate",
-				Followers:         "9K",
+				Followers:         "12K",
 				Employees:         "51-200",
-				AssociatedMembers: "81",
+				AssociatedMembers: "69",
 				Verified:          true,
+				Date:              mustDate("2026-04-16"),
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "coingate",
+				Followers: "73",
+				Verified:  true,
+				Date:      mustDate("2026-04-16"),
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -2608,7 +2611,7 @@ func companies12Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoryCount: 0,
+					GitHubRepositoryCount: 3,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Senior Golang Engineer",
@@ -2630,6 +2633,17 @@ func companies12Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Blockchain Developer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4401742052/",
+							Location:             "Vilniaus, Lithuania",
+							CloudProviders:       []domain.CloudProvider{domain.AWS, domain.GCP},
+							Date:                 mustDate("2026-04-14"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -2639,8 +2653,10 @@ func companies12Shard() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
-			Ignore:           true, // Crypto
+			ShortDescription: "Payment gateway for blockchain payments",
+			Industries: []domain.Industry{
+				domain.IndustryCryptoCurrency,
+			},
 		},
 		{
 			ID:         0,  // system
