@@ -1686,6 +1686,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "consumeredge",
+    "source": "consumeredge-256x256.png",
+    "destination": "consumeredge.png",
+    "destination_72x72": "consumeredge.png"
+  },
+  {
     "alias": "coralogix",
     "source": "coralogix-180x180.png",
     "destination": "coralogix.png",
@@ -5641,6 +5647,12 @@
   },
   {
     "alias": "pro-football-focus",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
+  },
+  {
+    "alias": "prod-g-llc",
     "source": "",
     "destination": "",
     "destination_72x72": ""

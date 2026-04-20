@@ -1444,6 +1444,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4369271029/":                                                               3994, // here
 		"https://www.linkedin.com/jobs/view/4382974896/":                                                               4377, // here
 		"https://www.linkedin.com/jobs/view/4398029809/":                                                               4622, // here
+		"https://www.linkedin.com/jobs/view/4403456199/":                                                               4733, // here
 		"https://www.linkedin.com/jobs/view/4034024007/":                                                               510,  // ubs
 		"https://www.linkedin.com/jobs/view/4097642374/":                                                               656,  // ubs
 		"https://www.linkedin.com/jobs/view/4181826623/":                                                               1202, // ubs
@@ -2642,6 +2643,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4259622350/":                                                               2184, // ninjatrader-group-llc
 		"https://www.linkedin.com/jobs/view/4244567153/":                                                               2457, // ninjatrader-group-llc
 		"https://www.linkedin.com/jobs/view/4337081482/":                                                               3422, // ninjatrader-group-llc
+		"https://www.linkedin.com/jobs/view/4404357472/":                                                               4729, // ninjatrader-group-llc
 		"https://www.linkedin.com/jobs/view/4125716142/":                                                               675,  // tikoafrica
 		"https://www.linkedin.com/jobs/view/4262232116/":                                                               2242, // tikoafrica
 		"https://www.linkedin.com/jobs/view/4121847142/":                                                               676,  // topgolf
@@ -3739,6 +3741,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4262231132/":                                                               2249, // onedoc.ch
 		"https://www.linkedin.com/jobs/view/4365279485/":                                                               3848, // onedoc.ch
 		"https://www.linkedin.com/jobs/view/4373942029/":                                                               4124, // onedoc.ch
+		"https://www.linkedin.com/jobs/view/4403896557/":                                                               4730, // onedoc.ch
 		"https://www.linkedin.com/jobs/view/4220863785/":                                                               1829, // wallee-group
 		"https://www.linkedin.com/jobs/view/4226130637/":                                                               1856, // wallee-group
 		"https://www.linkedin.com/jobs/view/4244541596/":                                                               1983, // wallee-group
@@ -3757,6 +3760,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4248210417/":                                                               2094, // wellrewarded
 		"https://www.linkedin.com/jobs/view/4279720066/":                                                               2586, // wellrewarded
 		"https://www.linkedin.com/jobs/view/4230030958/":                                                               1883, // rewards-network
+		"https://www.linkedin.com/jobs/view/4403436942/":                                                               4734, // rewards-network
 		"https://www.linkedin.com/jobs/view/4229012568/":                                                               1884, // qdrant
 		"https://www.linkedin.com/jobs/view/4278807446/":                                                               2618, // qdrant
 		"https://www.linkedin.com/jobs/view/4294466283/":                                                               2865, // qdrant
@@ -4724,6 +4728,8 @@ var (
 		"https://www.linkedin.com/jobs/view/4402021996/":                                                               4692, // termius
 		"https://www.linkedin.com/jobs/view/4399937525/":                                                               4714, // tentris
 		"https://www.linkedin.com/jobs/view/4353962622/":                                                               4715, // cato-networks
+		"https://www.linkedin.com/jobs/view/4403871153/":                                                               4731, // consumeredge
+		"https://www.linkedin.com/jobs/view/4392022466/":                                                               4732, // prod-g-llc
 		"https://www.linkedin.com/jobs/view/3914839625/":                                                               372,  // cognizant
 		"https://www.linkedin.com/jobs/view/4120737001/":                                                               600,  // cognizant
 		"https://www.linkedin.com/jobs/view/4149258542/":                                                               787,  // cognizant

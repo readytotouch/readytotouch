@@ -4203,7 +4203,7 @@ func companies15Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4363947016/",
 							Location:             "New York, NY",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-03-07", "2026-02-13"),
+							Date:                 mustDate("2026-04-18", "2026-03-07", "2026-02-13"),
 							WithSalary:           true, // $129.7k/yr - $216.1k/yr
 							Remote:               false,
 						},

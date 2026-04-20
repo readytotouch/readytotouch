@@ -1429,6 +1429,8 @@ var (
 		"termius":                             1428, // Termius
 		"tentris":                             1429, // Tentris
 		"cato-networks":                       1430, // Cato Networks
+		"consumeredge":                        1432, // Consumer Edge
+		"prod-g-llc":                          1433, // Prodege, LLC
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 
