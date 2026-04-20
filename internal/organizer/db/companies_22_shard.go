@@ -3969,7 +3969,7 @@ func companies22Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4393036181/",
 							Location:             "Szeged, Csongrád, Hungary",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-04-01"),
+							Date:                 mustDate("2026-04-20", "2026-04-01"),
 							WithSalary:           false,
 							Remote:               false,
 						},

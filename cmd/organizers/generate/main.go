@@ -225,6 +225,17 @@ func generateVacancies(companies []domain.CompanyProfile) {
 
 	fmt.Printf("Location count: %d\n", len(locationCountMap))
 
+	{
+		var newLocationCount = 0
+		for location, count := range locationCountMap {
+			_, exists := organizers.LocationCodeMap[location]
+			if count > 1 && !exists {
+				newLocationCount++
+			}
+		}
+		fmt.Printf("New location count: %d\n", newLocationCount)
+	}
+
 	/*
 		type LocationCount struct {
 			Location string
