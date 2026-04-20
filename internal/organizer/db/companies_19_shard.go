@@ -636,7 +636,7 @@ func companies19Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4365730223/",
 							Location:             "Pune/Pimpri-Chinchwad Area",
 							CloudProviders:       []domain.CloudProvider{domain.AWS, domain.GCP, domain.Azure},
-							Date:                 mustDate("2026-03-30", "2026-03-09", "2026-02-16", "2026-01-25"),
+							Date:                 mustDate("2026-04-20", "2026-03-30", "2026-03-09", "2026-02-16", "2026-01-25"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -6121,7 +6121,19 @@ func companies19Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoryCount: 0,
-					Vacancies:             []domain.Vacancy{},
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Platform Software Engineer – Go",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4404054247/",
+							Location:             "Stockholm, Stockholm County, Sweden",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-04-20"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
 				},
 				domain.Rust: {
 					GitHubRepositoryCount: 0,

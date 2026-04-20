@@ -588,6 +588,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "astronomer",
+    "source": "astronomer.svg",
+    "destination": "astronomer.svg",
+    "destination_72x72": "astronomer.svg"
+  },
+  {
     "alias": "atmail",
     "source": "",
     "destination": "",
@@ -1126,6 +1132,12 @@
     "source": "bunnynet-200x200.jpeg",
     "destination": "bunnynet.jpeg",
     "destination_72x72": "bunnynet.jpeg"
+  },
+  {
+    "alias": "bybitexchange",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
   },
   {
     "alias": "bynder",
@@ -2980,6 +2992,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "getbarter-app",
+    "source": "getbarter-app-200x200.jpeg",
+    "destination": "getbarter-app.jpeg",
+    "destination_72x72": "getbarter-app.jpeg"
   },
   {
     "alias": "getcruise",
@@ -5598,6 +5616,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "prelude-so",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
+  },
+  {
     "alias": "press-ganey-associates",
     "source": "",
     "destination": "",
@@ -7630,6 +7654,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "trustly",
+    "source": "trustly-256x256.jpg",
+    "destination": "trustly.jpg",
+    "destination_72x72": "trustly.jpg"
   },
   {
     "alias": "tryprofound",

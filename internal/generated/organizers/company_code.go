@@ -982,6 +982,7 @@ var (
 		"arc-risk-analytics":                  973,  // ARC Analytics
 		"stark-defence":                       974,  // STARK
 		"thefalconx":                          975,  // FalconX
+		"bybitexchange":                       1435, // Bybit
 		"mythical":                            976,  // Mythical Games
 		"paypal":                              977,  // PayPal
 		"trainline":                           978,  // Trainline
@@ -1431,6 +1432,10 @@ var (
 		"cato-networks":                       1430, // Cato Networks
 		"consumeredge":                        1432, // Consumer Edge
 		"prod-g-llc":                          1433, // Prodege, LLC
+		"astronomer":                          1434, // Astronomer
+		"trustly":                             1436, // Trustly
+		"prelude-so":                          1437, // Prelude
+		"getbarter-app":                       1438, // Barter
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

@@ -4836,10 +4836,11 @@ func companies17Shard() []domain.CompanyProfile {
 				IDs:               nil,
 				Alias:             "bybitexchange",
 				Name:              "Bybit",
-				Followers:         "296K",
+				Followers:         "561K",
 				Employees:         "1K-5K",
-				AssociatedMembers: "2,312",
+				AssociatedMembers: "2,930",
 				Verified:          true,
+				Date:              mustDate("2026-04-21"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -4858,7 +4859,22 @@ func companies17Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			Languages: domain.Languages{
-				domain.Go: {},
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Golang Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4403348634/",
+							Location:             "APAC",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-04-20"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
 				domain.Rust: {
 					GitHubRepositoryCount: 0,
 					Vacancies: []domain.Vacancy{
@@ -4879,11 +4895,10 @@ func companies17Shard() []domain.CompanyProfile {
 				domain.Clojure: {},
 				domain.Haskell: {},
 			},
-			ShortDescription: "",
-			Industries:       []domain.Industry{
-				// NOP
+			ShortDescription: "Cryptocurrency exchange",
+			Industries: []domain.Industry{
+				domain.IndustryCryptoCurrency,
 			},
-			Ignore: true, // Crypto
 		},
 		{
 			ID:         0,  // system
@@ -5056,6 +5071,17 @@ func companies17Shard() []domain.CompanyProfile {
 							Location:             "Bengaluru, Karnataka, India",
 							CloudProviders:       []domain.CloudProvider{},
 							Date:                 mustDate("2026-04-14"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Senior Software Engineer – Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4404309019/",
+							Location:             "Bengaluru, Karnataka, India",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-04-20"),
 							WithSalary:           false,
 							Remote:               false,
 						},
