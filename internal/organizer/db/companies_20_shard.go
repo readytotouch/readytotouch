@@ -4484,7 +4484,7 @@ func companies20Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4382145255/",
 							Location:             "Glasgow, Scotland, United Kingdom",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-03-07"),
+							Date:                 mustDate("2026-04-19", "2026-03-07"),
 							WithSalary:           false,
 							Remote:               false,
 						},

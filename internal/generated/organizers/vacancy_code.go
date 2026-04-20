@@ -352,6 +352,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4338291235/":                                                               3415, // 1password
 		"https://www.linkedin.com/jobs/view/4334289440/":                                                               3524, // 1password
 		"https://www.linkedin.com/jobs/view/4375490689/":                                                               4421, // 1password
+		"https://www.linkedin.com/jobs/view/4402983597/":                                                               4737, // 1password
 		"https://www.linkedin.com/jobs/view/4090884682/":                                                               412,  // okta-inc-
 		"https://www.linkedin.com/jobs/view/4133471372/":                                                               859,  // okta-inc-
 		"https://www.linkedin.com/jobs/view/4135551225/":                                                               893,  // okta-inc-
@@ -3164,6 +3165,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4317489508/":                                                               4006, // keyrock
 		"https://www.linkedin.com/jobs/view/4327636592/":                                                               4128, // keyrock
 		"https://www.linkedin.com/jobs/view/4327656522/":                                                               4546, // keyrock
+		"https://www.linkedin.com/jobs/view/4390739457/":                                                               4738, // keyrock
 		"https://www.linkedin.com/jobs/view/4182758670/":                                                               1221, // cloudwick
 		"https://www.linkedin.com/jobs/view/4172072369/":                                                               1222, // fis
 		"https://www.indeed.com/viewjob?jk=6ea60544f1c6f982":                                                           1229, // nike
@@ -4604,6 +4606,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4366245449/":                                                               3923, // sentione
 		"https://www.linkedin.com/jobs/view/4356492665/":                                                               3927, // pulsar-crypto
 		"https://www.linkedin.com/jobs/view/4376671899/":                                                               4238, // pulsar-crypto
+		"https://www.linkedin.com/jobs/view/4401297746/":                                                               4739, // pulsar-crypto
 		"https://www.linkedin.com/jobs/view/4339870078/":                                                               3945, // paribucom
 		"https://www.linkedin.com/jobs/view/4363635733/":                                                               4106, // paribucom
 		"https://www.linkedin.com/jobs/view/4365876616/":                                                               3954, // bitgo

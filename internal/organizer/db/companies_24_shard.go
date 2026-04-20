@@ -5612,7 +5612,7 @@ func companies24Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4381008158/",
 							Location:             "Copenhagen, Capital Region of Denmark, Denmark",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-03-28"),
+							Date:                 mustDate("2026-04-17", "2026-03-28"),
 							WithSalary:           false,
 							Remote:               false,
 						},

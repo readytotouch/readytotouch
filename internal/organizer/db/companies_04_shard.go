@@ -1291,7 +1291,7 @@ func companies04Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4300979715/",
 							Location:             "South San Francisco, CA",
-							Date:                 mustDate("2026-03-28", "2026-03-07", "2026-02-13", "2026-01-23", "2025-12-10", "2025-11-19", "2025-10-29", "2025-10-08", "2025-09-16"),
+							Date:                 mustDate("2026-04-17", "2026-03-28", "2026-03-07", "2026-02-13", "2026-01-23", "2025-12-10", "2025-11-19", "2025-10-29", "2025-10-08", "2025-09-16"),
 							WithSalary:           true, // $170k/yr - $210k/yr
 							Remote:               false,
 						},
