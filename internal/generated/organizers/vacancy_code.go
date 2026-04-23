@@ -2096,6 +2096,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4245741140/":                                                               1975, // drw
 		"https://www.linkedin.com/jobs/view/4080206651/":                                                               206,  // drw
 		"https://www.linkedin.com/jobs/view/4144714726/":                                                               1096, // drw
+		"https://www.linkedin.com/jobs/view/4405853005/":                                                               4764, // drw
 		"https://www.linkedin.com/jobs/view/4162701643/":                                                               990,  // nice-systems
 		"https://www.linkedin.com/jobs/view/4249951048/":                                                               2324, // nice-systems
 		"https://www.linkedin.com/jobs/view/4307544815/":                                                               3146, // nice-systems
