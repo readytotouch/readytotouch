@@ -3550,6 +3550,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4364050833/":                                                               3785, // telnyx
 		"https://www.linkedin.com/jobs/view/4363780937/":                                                               4009, // telnyx
 		"https://www.linkedin.com/jobs/view/4400595422/":                                                               4647, // telnyx
+		"https://www.linkedin.com/jobs/view/4405813778/":                                                               4768, // telnyx
 		"https://www.linkedin.com/jobs/view/4186581023/":                                                               1575, // eunasolutions
 		"https://www.linkedin.com/jobs/view/4188235715/":                                                               1576, // driftrock
 		"https://www.linkedin.com/jobs/view/4389078637/":                                                               4504, // driftrock
@@ -3587,6 +3588,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4393209443/":                                                               4539, // remote.com
 		"https://www.linkedin.com/jobs/view/4394658998/":                                                               4601, // remote.com
 		"https://www.linkedin.com/jobs/view/4400566263/":                                                               4687, // remote.com
+		"https://www.linkedin.com/jobs/view/4405298085/":                                                               4769, // remote.com
 		"https://www.linkedin.com/jobs/view/3933499435/":                                                               1593, // heyfresha
 		"https://www.linkedin.com/jobs/view/4091569026/":                                                               1594, // the-realreal
 		"https://www.linkedin.com/jobs/view/4193174525/":                                                               1630, // blackrock
