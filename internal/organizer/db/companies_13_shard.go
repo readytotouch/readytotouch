@@ -3413,7 +3413,7 @@ func companies13Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4394319968/",
 							Location:             "Costa Mesa, CA",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-04-01"),
+							Date:                 mustDate("2026-04-23", "2026-04-01"),
 							WithSalary:           false,
 							Remote:               false,
 						},
