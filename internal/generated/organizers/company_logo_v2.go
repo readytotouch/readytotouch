@@ -566,6 +566,7 @@ var (
 		"healthequity":                        "",
 		"hearx-group":                         "",
 		"heb":                                 "",
+		"helfieai":                            "",
 		"hello-health-group":                  "hello-health-group.jpeg",
 		"hello-stake":                         "",
 		"hellofresh":                          "",

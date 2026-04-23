@@ -1437,6 +1437,7 @@ var (
 		"prelude-so":                          1437, // Prelude
 		"getbarter-app":                       1438, // Barter
 		"exante-ltd":                          1439, // EXANTE
+		"helfieai":                            1440, // Helfie.AI
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

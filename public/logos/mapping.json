@@ -3372,6 +3372,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "helfieai",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
+  },
+  {
     "alias": "hello-health-group",
     "source": "hello-health-group-200x200.jpeg",
     "destination": "hello-health-group.jpeg",
