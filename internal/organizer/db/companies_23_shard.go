@@ -1115,6 +1115,17 @@ func companies23Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "(Senior) Cloud Scala Engineer",
+							ShortDescription:     "AI Platform",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4396941985/",
+							Location:             "Berlin, Berlin, Germany",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-04-23"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Elixir: {

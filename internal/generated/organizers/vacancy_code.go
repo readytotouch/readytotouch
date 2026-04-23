@@ -2718,6 +2718,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4143148888/":                                                               1495, // magnite
 		"https://www.linkedin.com/jobs/view/4287543629/":                                                               2730, // magnite
 		"https://www.linkedin.com/jobs/view/4291342584/":                                                               3022, // magnite
+		"https://www.linkedin.com/jobs/view/4404222563/":                                                               4765, // magnite
 		"https://www.linkedin.com/jobs/view/4135250887/":                                                               751,  // prezi
 		"https://www.linkedin.com/jobs/view/4175880468/":                                                               1140, // prezi
 		"https://www.linkedin.com/jobs/view/4139299697/":                                                               777,  // yunopay
@@ -4587,6 +4588,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4314026533/":                                                               3681, // unbabel
 		"https://www.linkedin.com/jobs/view/4344599600/":                                                               3687, // cariad-tech
 		"https://www.linkedin.com/jobs/view/4396959016/":                                                               4600, // cariad-tech
+		"https://www.linkedin.com/jobs/view/4396941985/":                                                               4766, // cariad-tech
 		"https://www.linkedin.com/jobs/view/4346138871/":                                                               3724, // openai
 		"https://www.linkedin.com/jobs/view/4346184199/":                                                               3725, // cargill
 		"https://www.linkedin.com/jobs/view/4345959274/":                                                               3726, // sardineai
@@ -4760,6 +4762,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4343925593/":                                                               4751, // trustly
 		"https://www.linkedin.com/jobs/view/4403822707/":                                                               4758, // prelude-so
 		"https://www.linkedin.com/jobs/view/4403423575/":                                                               4762, // getbarter-app
+		"https://www.linkedin.com/jobs/view/4405247673/":                                                               4767, // exante-ltd
 		"https://www.linkedin.com/jobs/view/3914839625/":                                                               372,  // cognizant
 		"https://www.linkedin.com/jobs/view/4120737001/":                                                               600,  // cognizant
 		"https://www.linkedin.com/jobs/view/4149258542/":                                                               787,  // cognizant

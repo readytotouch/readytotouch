@@ -419,6 +419,7 @@ var (
 		"evident-id-inc.":                     "",
 		"evolve-vacation-rental":              "",
 		"exabeam":                             "",
+		"exante-ltd":                          "",
 		"exasol-ag":                           "exasol-ag.png",
 		"exein":                               "exein.png",
 		"exinity":                             "exinity.png",

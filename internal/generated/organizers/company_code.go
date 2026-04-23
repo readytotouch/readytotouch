@@ -1436,6 +1436,7 @@ var (
 		"trustly":                             1436, // Trustly
 		"prelude-so":                          1437, // Prelude
 		"getbarter-app":                       1438, // Barter
+		"exante-ltd":                          1439, // EXANTE
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

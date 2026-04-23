@@ -2490,6 +2490,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "exante-ltd",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
+  },
+  {
     "alias": "exasol-ag",
     "source": "exasol-300x300.webp",
     "destination": "exasol-ag.png",
