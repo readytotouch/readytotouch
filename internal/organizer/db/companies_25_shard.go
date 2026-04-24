@@ -626,6 +626,17 @@ func companies25Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Junior System Engineer",
+							ShortDescription:     "Developing graph database internals in C++/Rust",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4403220397/",
+							Location:             "Cologne, North Rhine-Westphalia, Germany",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-04-23"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig: {
@@ -1258,6 +1269,178 @@ func companies25Shard() []domain.CompanyProfile {
 			ShortDescription: "Exchange your product or service for content and online reach",
 			Industries: []domain.Industry{
 				domain.IndustryMarTech,
+			},
+		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "EXANTE",
+			BaseURL:    "https://exante.eu/",
+			CareersURL: "https://careers.exante.eu/",
+			AboutURL:   "https://exante.eu/company/",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                2339594,
+				IDs:               nil,
+				Alias:             "exante-ltd",
+				Name:              "EXANTE",
+				Followers:         "86K",
+				Employees:         "501-1K",
+				AssociatedMembers: "638",
+				Verified:          true,
+				Date:              mustDate("2026-04-24"),
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Scala Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4405247673/",
+							Location:             "Warsaw, Mazowieckie, Poland",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-04-23"),
+							WithSalary:           false,
+							Remote:               true,
+						},
+					},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
+			},
+		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Helfie.AI",
+			BaseURL:    "https://www.helfie.ai/",
+			CareersURL: "https://www.helfie.ai/careers/",
+			AboutURL:   "https://www.helfie.ai/about-helfie-your-personal-health-ai/",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                30209856,
+				IDs:               nil,
+				Alias:             "helfieai",
+				Name:              "Helfie.AI",
+				Followers:         "6K",
+				Employees:         "51-200",
+				AssociatedMembers: "55",
+				Verified:          true,
+				Date:              mustDate("2026-04-24"),
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Rust Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4402434294/",
+							Location:             "Melbourne, Victoria, Australia",
+							CloudProviders:       []domain.CloudProvider{domain.Azure},
+							Date:                 mustDate("2026-04-23"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Operating system for human health",
+			Industries: []domain.Industry{
+				domain.IndustryMedTech,
 			},
 		},
 	}

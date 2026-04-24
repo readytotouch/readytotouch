@@ -6005,6 +6005,17 @@ func companies19Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Software Golang Kubernetes Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4404243235/",
+							Location:             "Yokneam Ilit, North District, Israel",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-04-22"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
