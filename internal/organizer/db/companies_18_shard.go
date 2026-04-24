@@ -547,7 +547,7 @@ func companies18Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4399651016/",
 							Location:             "Singapore, Singapore",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-04-14"),
+							Date:                 mustDate("2026-04-23", "2026-04-14"),
 							WithSalary:           false,
 							Remote:               false,
 						},

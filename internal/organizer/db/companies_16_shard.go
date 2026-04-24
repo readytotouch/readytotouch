@@ -4630,10 +4630,11 @@ func companies16Shard() []domain.CompanyProfile {
 				IDs:               []int{51715, 10327626, 16153604, 18254848},
 				Alias:             "symphonyai",
 				Name:              "SymphonyAI",
-				Followers:         "154K",
+				Followers:         "165K",
 				Employees:         "1K-5K",
-				AssociatedMembers: "2,065",
+				AssociatedMembers: "2,075",
 				Verified:          true,
+				Date:              mustDate("2026-04-24"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -4659,7 +4660,22 @@ func companies16Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			Languages: domain.Languages{
-				domain.Go:   {},
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer (VueJS, Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4405468056/",
+							Location:             "Bengaluru, Karnataka, India",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-04-23"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
 				domain.Rust: {},
 				domain.Zig:  {},
 				domain.Scala: {
