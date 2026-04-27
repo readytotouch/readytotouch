@@ -248,6 +248,7 @@ type BlindProfile struct {
 	Salary      string
 	Reviews     string
 	ReviewsRate string
+	Date        time.Time
 }
 
 type LevelsFyiProfile struct {

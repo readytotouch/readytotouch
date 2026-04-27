@@ -7,52 +7,65 @@ document.body.addEventListener("keydown", (event) => {
     if (!event.ctrlKey || !event.shiftKey) return;
     if (event.key !== "Y" && event.key !== "Н") return;
 
-    const alias               = RTT.parseVanityFromPath(
+    const alias = RTT.parseVanityFromPath(
         window.location.href, "/company/",
         "Expected URL like https://www.teamblind.com/company/company-name/"
     );
-    const { ratingValue, ratingCount } = getEmployerRating();
-    const { employees, salary }        = getCompanyInfo();
+    const {ratingValue, ratingCount} = getEmployerRating();
+    const {employees, salary} = getCompanyInfo();
 
     const out = `\t\t\t\tAlias:       "${alias}",
 \t\t\t\tEmployees:   "${employees}",
 \t\t\t\tSalary:      "${salary}",
 \t\t\t\tReviews:     "${ratingCount}",
-\t\t\t\tReviewsRate: "${ratingValue}",`;
+\t\t\t\tReviewsRate: "${ratingValue}",
+\t\t\t\tDate:        mustDate("${RTT.today()}"),`;
 
     RTT.copyToClipboard(out);
 });
 
 function getEmployerRating() {
-    for (const el of document.querySelectorAll('script[type="application/ld+json"]')) {
+    const $scripts = document.querySelectorAll('script[type="application/ld+json"]');
+
+    for (const $script of $scripts) {
         try {
-            const json = JSON.parse(el.textContent.trim());
+            const json = JSON.parse($script.textContent.trim());
             if (json["@type"] === "EmployerAggregateRating") {
                 return {
                     ratingValue: json.ratingValue,
                     ratingCount: json.ratingCount.toLocaleString("en-US"),
                 };
             }
-        } catch (_) {}
+        } catch (error) {
+            console.error("Error parsing JSON-LD:", error);
+        }
     }
-    return { ratingValue: "", ratingCount: "" };
+
+    return {
+        ratingValue: "",
+        ratingCount: ""
+    };
 }
 
 function getCompanyInfo() {
-    const h1 = document.querySelector("h1");
-    if (!h1) return { employees: "", salary: "" };
+    let employees = "",
+        salary = "";
 
-    let employees = "", salary = "";
+    const $rows = document.querySelectorAll("div.text-sm");
+    for (const $row of $rows) {
+        const $first = $row.firstChild;
+        if ($first.textContent.trim() === "Size") {
+            employees = $first.nextElementSibling.textContent.trim()
+                .replace("employees", "")
+                .trim();
+        } else if ($first.textContent.trim() === "Salary") {
+            salary = $first.nextElementSibling.textContent.trim();
 
-    for (const el of h1.nextElementSibling?.querySelectorAll("div.text-sm") ?? []) {
-        if (el.textContent.trim() === "Size") {
-            employees = el.nextElementSibling?.textContent.trim().replace("employees", "").trim() ?? "";
-        }
-        if (el.textContent.trim() === "Salary") {
-            salary = el.nextElementSibling?.textContent.trim() ?? "";
-            if (salary === "-") salary = "";
+            if (salary === "-") {
+                salary = "";
+            }
         }
     }
 
-    return { employees, salary };
+    return {employees, salary};
 }

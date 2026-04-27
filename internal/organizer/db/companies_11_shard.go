@@ -5116,7 +5116,12 @@ func companies11Shard() []domain.CompanyProfile {
 				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Binance",
+				Employees:   "1,001 to 5,000",
+				Salary:      "",
+				Reviews:     "88",
+				ReviewsRate: "3.1",
+				Date:        mustDate("2026-04-28"),
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
 				Alias: "",
