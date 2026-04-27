@@ -57,13 +57,15 @@ RTT.relativeDate = function (text) {
 // ── Cloud providers ────────────────────────────────────────────────────────
 
 RTT.cloudProviders = function (text) {
-    const result = [];
+    const providers = [
+        {pattern: /\b(aws|amazon web services)\b/i, value: "domain.AWS"},
+        {pattern: /\b(gcp|google cloud)\b/i, value: "domain.GCP"},
+        {pattern: /\b(azure|microsoft cloud)\b/i, value: "domain.Azure"}
+    ];
 
-    if (/\b(aws|amazon web services)\b/i.test(text)) result.push("domain.AWS");
-    if (/\b(gcp|google cloud)\b/i.test(text)) result.push("domain.GCP");
-    if (/\b(azure|microsoft cloud)\b/i.test(text)) result.push("domain.Azure");
-
-    return result;
+    return providers
+        .filter(p => p.pattern.test(text))
+        .map(p => p.value);
 };
 
 // ── Clipboard + toast ──────────────────────────────────────────────────────
