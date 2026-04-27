@@ -1,0 +1,82 @@
+{
+  "manifest_version": 3,
+  "name": "Company status checker | ReadyToTouch",
+  "version": "2.0",
+  "description": "Checks the status of a company name and changes the color based on the API response.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "clipboardWrite"
+  ],
+  "host_permissions": [
+    "*://*/*"
+  ],
+  "icons": {
+    "16": "icons/favicon-16x16.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["highlight-company-name.js"]
+    },
+    {
+      "matches": ["https://www.linkedin.com/*"],
+      "js": [
+        "shared/utils.js",
+        "highlight-vacancy-title.js",
+        "linkedin-coordinator.js"
+      ]
+    },
+    {
+      "matches": ["https://app.welcometothejungle.com/jobs/*"],
+      "js": [
+        "shared/utils.js",
+        "highlight-vacancy-title.js",
+        "copy-welcometothejungle-vacancy-data.js"
+      ]
+    },
+    {
+      "matches": ["https://github.com/*"],
+      "js": [
+        "shared/utils.js",
+        "copy-github-company-profile-data.js",
+        "github-append-languages.js"
+      ]
+    },
+    {
+      "matches": ["https://www.glassdoor.com/*"],
+      "js": [
+        "shared/utils.js",
+        "copy-glassdoor-company-profile-data.js"
+      ]
+    },
+    {
+      "matches": ["https://www.teamblind.com/company/*"],
+      "js": [
+        "shared/utils.js",
+        "copy-blind-company-profile-data.js"
+      ]
+    },
+    {
+      "matches": ["https://www.levels.fyi/companies/*"],
+      "js": [
+        "shared/utils.js",
+        "copy-levels-company-profile-data.js"
+      ]
+    },
+    {
+      "matches": ["https://www.indeed.com/cmp/*"],
+      "js": [
+        "shared/utils.js",
+        "copy-indeed-company-profile-data.js"
+      ]
+    },
+    {
+      "matches": ["https://www.indeed.com/viewjob*"],
+      "js": [
+        "shared/utils.js",
+        "copy-indeed-vacancy-data.js"
+      ]
+    }
+  ]
+}
