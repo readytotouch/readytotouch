@@ -254,6 +254,7 @@ type BlindProfile struct {
 type LevelsFyiProfile struct {
 	Alias     string
 	Employees string
+	Date      time.Time
 }
 
 type IndeedProfile struct {

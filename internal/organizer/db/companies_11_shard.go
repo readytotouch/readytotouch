@@ -5124,7 +5124,9 @@ func companies11Shard() []domain.CompanyProfile {
 				Date:        mustDate("2026-04-28"),
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "binance",
+				Employees: "4,050",
+				Date:      mustDate("2026-04-28"),
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Binance-EI_IE1816824.11,18.htm",

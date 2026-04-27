@@ -4,26 +4,31 @@ console.log("[RTT] Levels.fyi company profile copy loaded");
 
 // Ctrl+Shift+Y / Ctrl+Shift+Н
 document.body.addEventListener("keydown", (event) => {
-    if (!event.ctrlKey || !event.shiftKey) return;
-    if (event.key !== "Y" && event.key !== "Н") return;
+    if (event.ctrlKey && event.shiftKey && (event.key === "Y" || event.key === "Н")) {
+        const alias     = RTT.parseVanityFromPath(
+            window.location.href, "/companies/",
+            "Expected URL like https://www.levels.fyi/companies/company-name/"
+        );
+        const employees = getEmployees();
 
-    const alias     = RTT.parseVanityFromPath(
-        window.location.href, "/companies/",
-        "Expected URL like https://www.levels.fyi/companies/company-name/"
-    );
-    const employees = getEmployees();
+        const out = `\t\t\t\tAlias:     "${alias}",
+\t\t\t\tEmployees: "${employees}",
+\t\t\t\tDate:      mustDate("${RTT.today()}"),`;
 
-    const out = `\t\t\t\tAlias:     "${alias}",
-\t\t\t\tEmployees: "${employees}",`;
-
-    RTT.copyToClipboard(out);
+        RTT.copyToClipboard(out);
+    }
 });
 
 function getEmployees() {
-    for (const el of document.querySelectorAll("h6")) {
-        if (el.nextElementSibling?.textContent.trim() === "# of Employees") {
-            return el.textContent.trim();
+    let employees = "";
+
+    const $elements = document.querySelectorAll("h6");
+    for (const $element of $elements) {
+
+        if ($element.nextElementSibling !== null && $element.nextElementSibling.textContent.trim() === "# of Employees") {
+            employees = $element.textContent.trim();
         }
     }
-    return "";
+
+    return employees;
 }
