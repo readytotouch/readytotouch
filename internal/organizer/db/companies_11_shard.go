@@ -5138,7 +5138,7 @@ func companies11Shard() []domain.CompanyProfile {
 				Date:        mustDate("2026-02-26"),
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Binance",
 			},
 			Languages: domain.Languages{
 				domain.Go: {
