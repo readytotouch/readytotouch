@@ -5806,7 +5806,7 @@ func companies07Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4397430303/",
 							Location:             "McLean, VA",
 							CloudProviders:       []domain.CloudProvider{domain.AWS},
-							Date:                 mustDate("2026-04-04"),
+							Date:                 mustDate("2026-04-28", "2026-04-04"),
 							WithSalary:           false,
 							Remote:               false,
 						},

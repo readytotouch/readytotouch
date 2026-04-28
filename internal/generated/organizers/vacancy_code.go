@@ -2977,6 +2977,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4387958739/":                                                               4474, // flatpeak
 		"https://www.linkedin.com/jobs/view/4394495843/":                                                               4631, // flatpeak
 		"https://www.linkedin.com/jobs/view/4402784049/":                                                               4745, // flatpeak
+		"https://www.linkedin.com/jobs/view/4405331178/":                                                               4816, // flatpeak
 		"https://www.linkedin.com/jobs/view/4149196862/":                                                               1087, // teradata
 		"https://www.linkedin.com/jobs/view/4204722411/":                                                               2244, // teradata
 		"https://www.linkedin.com/jobs/view/4172639728/":                                                               1088, // teramindco
@@ -3107,6 +3108,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4168215806/":                                                               4387, // bitpanda
 		"https://www.linkedin.com/jobs/view/4365267610/":                                                               4388, // bitpanda
 		"https://www.linkedin.com/jobs/view/4383737811/":                                                               4389, // bitpanda
+		"https://www.linkedin.com/jobs/view/4406185067/":                                                               4817, // bitpanda
 		"https://www.linkedin.com/jobs/view/4184033707/":                                                               1182, // guidewire-software
 		"https://www.indeed.com/viewjob?jk=8d7ce4fc383b9eac":                                                           1319, // guidewire-software
 		"https://www.linkedin.com/jobs/view/4138748551/":                                                               1183, // makropro
@@ -4013,6 +4015,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4285509703/":                                                               2749, // kissht
 		"https://www.linkedin.com/jobs/view/4333235706/":                                                               3317, // kissht
 		"https://www.linkedin.com/jobs/view/4363622905/":                                                               4102, // kissht
+		"https://www.linkedin.com/jobs/view/4406149759/":                                                               4818, // kissht
 		"https://www.linkedin.com/jobs/view/4262651044/":                                                               2259, // motadata
 		"https://www.linkedin.com/jobs/view/4299703305/":                                                               2974, // motadata
 		"https://www.linkedin.com/jobs/view/4344224603/":                                                               3670, // motadata
@@ -4500,6 +4503,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4353672545/":                                                               3811, // bud-financial
 		"https://www.linkedin.com/jobs/view/4353816700/":                                                               4154, // bud-financial
 		"https://www.linkedin.com/jobs/view/4386669766/":                                                               4527, // bud-financial
+		"https://www.linkedin.com/jobs/view/4403722775/":                                                               4819, // bud-financial
 		"https://www.linkedin.com/jobs/view/4322232069/":                                                               3389, // zixflow
 		"https://www.linkedin.com/jobs/view/4362574370/":                                                               3885, // zixflow
 		"https://www.linkedin.com/jobs/view/4322062869/":                                                               3390, // jabil
@@ -4758,6 +4762,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4377377200/":                                                               4593, // trio-so
 		"https://www.linkedin.com/jobs/view/4369220734/":                                                               4286, // earnin
 		"https://www.linkedin.com/jobs/view/4378343310/":                                                               4288, // happyhotel
+		"https://www.linkedin.com/jobs/view/4405808654/":                                                               4820, // happyhotel
 		"https://www.linkedin.com/jobs/view/4378321804/":                                                               4294, // griffin-bank
 		"https://www.linkedin.com/jobs/view/4375555017/":                                                               4295, // gliainc
 		"https://www.linkedin.com/jobs/view/4379896178/":                                                               4298, // otrsolutions
