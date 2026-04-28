@@ -1370,11 +1370,11 @@ func companies25Shard() []domain.CompanyProfile {
 				IDs:               nil,
 				Alias:             "helfieai",
 				Name:              "Helfie.AI",
-				Followers:         "6K",
+				Followers:         "7K",
 				Employees:         "51-200",
 				AssociatedMembers: "55",
 				Verified:          true,
-				Date:              mustDate("2026-04-24"),
+				Date:              mustDate("2026-04-28"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",

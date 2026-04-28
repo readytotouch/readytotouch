@@ -53,13 +53,17 @@ function parseVanityName(url) {
 }
 
 function followers() {
-    const $elements = document.querySelectorAll("div.org-top-card-summary-info-list__info-item");
+    const elements = document.querySelectorAll("div.org-top-card-summary-info-list__info-item");
 
-    for (const $element of $elements) {
-        const $text = $element.textContent.trim();
+    for (const element of elements) {
+        const text = element.textContent.trim();
 
-        if ($text.endsWith("followers")) {
-            return $text.replace("followers", "").trim();
+        if (text.endsWith("followers")) {
+            return text.replace("followers", "").trim();
+        }
+
+        if (text.endsWith("follower")) {
+            return text.replace("follower", "").trim();
         }
     }
 

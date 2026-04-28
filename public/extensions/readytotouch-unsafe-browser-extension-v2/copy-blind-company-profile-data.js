@@ -4,24 +4,24 @@ console.log("[RTT] Blind company profile copy loaded");
 
 // Ctrl+Shift+Y / Ctrl+Shift+Н
 document.body.addEventListener("keydown", (event) => {
-    if (!event.ctrlKey || !event.shiftKey) return;
-    if (event.key !== "Y" && event.key !== "Н") return;
+    if (event.ctrlKey && event.shiftKey && (event.key === "Y" || event.key === "Н")) {
 
-    const alias = RTT.parseVanityFromPath(
-        window.location.href, "/company/",
-        "Expected URL like https://www.teamblind.com/company/company-name/"
-    );
-    const {ratingValue, ratingCount} = getEmployerRating();
-    const {employees, salary} = getCompanyInfo();
+        const alias = RTT.parseVanityFromPath(
+            window.location.href, "/company/",
+            "Expected URL like https://www.teamblind.com/company/company-name/"
+        );
+        const {ratingValue, ratingCount} = getEmployerRating();
+        const {employees, salary} = getCompanyInfo();
 
-    const out = `\t\t\t\tAlias:       "${alias}",
+        const out = `\t\t\t\tAlias:       "${alias}",
 \t\t\t\tEmployees:   "${employees}",
 \t\t\t\tSalary:      "${salary}",
 \t\t\t\tReviews:     "${ratingCount}",
 \t\t\t\tReviewsRate: "${ratingValue}",
 \t\t\t\tDate:        mustDate("${RTT.today()}"),`;
 
-    RTT.copyToClipboard(out);
+        RTT.copyToClipboard(out);
+    }
 });
 
 function getEmployerRating() {

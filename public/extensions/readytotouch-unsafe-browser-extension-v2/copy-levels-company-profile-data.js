@@ -5,6 +5,7 @@ console.log("[RTT] Levels.fyi company profile copy loaded");
 // Ctrl+Shift+Y / Ctrl+Shift+Н
 document.body.addEventListener("keydown", (event) => {
     if (event.ctrlKey && event.shiftKey && (event.key === "Y" || event.key === "Н")) {
+
         const alias     = RTT.parseVanityFromPath(
             window.location.href, "/companies/",
             "Expected URL like https://www.levels.fyi/companies/company-name/"
