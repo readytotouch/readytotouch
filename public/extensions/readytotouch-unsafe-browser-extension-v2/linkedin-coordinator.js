@@ -11,9 +11,9 @@ console.log("[RTT] LinkedIn coordinator loaded");
 // Fix: intercept pushState/popstate, swap the handler on every URL change.
 
 const ROUTES = [
-    { pattern: /\/jobs\/(view|search)\//, handler: vacancyHandler },
-    { pattern: /\/company\//,             handler: companyHandler },
-    { pattern: /\/school\//,              handler: schoolHandler  },
+    {pattern: /\/jobs\/(view|search)\//, handler: vacancyHandler},
+    {pattern: /\/company\//, handler: companyHandler},
+    {pattern: /\/school\//, handler: schoolHandler},
 ];
 
 let _activeHandler = null;
@@ -28,9 +28,9 @@ let _activeHandler = null;
 })();
 
 function activate() {
-    const url     = window.location.href;
+    const url = window.location.href;
     const matched = ROUTES.find(r => r.pattern.test(url));
-    const next    = matched ? matched.handler : null;
+    const next = matched ? matched.handler : null;
 
     if (_activeHandler === next) return; // same route, nothing to swap
 
@@ -53,10 +53,10 @@ activate(); // run once on initial page load
 
 function vacancyHandler(event) {
     if (event.ctrlKey && event.shiftKey && (event.key === "Y" || event.key === "Н")) {
-        const titleRaw   = document.querySelector("h1")?.innerText.trim() ?? "";
-        const title      = RTT.normalizeTitle(titleRaw);
-        const descText   = (document.querySelector("h2.text-heading-large + div.mt4")?.innerText ?? "");
-        const providers  = RTT.cloudProviders(title + " " + descText);
+        const titleRaw = document.querySelector("h1")?.innerText.trim() ?? "";
+        const title = RTT.normalizeTitle(titleRaw);
+        const descText = (document.querySelector("h2.text-heading-large + div.mt4")?.innerText ?? "");
+        const providers = RTT.cloudProviders(title + " " + descText);
         const [hasSalary, salaryNote] = vacancySalary();
 
         const out = `{
@@ -75,7 +75,7 @@ function vacancyHandler(event) {
     }
 
     // U / Г — just the date (quick-update shortcut)
-    if (event.key === "U" || event.key === "Г") {
+    if (event.ctrlKey && event.shiftKey && (event.key === "U" || event.key === "Г")) {
         RTT.copyToClipboard(`mustDate("${vacancyDate()}"), // `);
     }
 }
