@@ -678,7 +678,7 @@ func companies22Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4333249443/",
 							Location:             "Austin, Texas Metropolitan Area",
-							Date:                 mustDate("2026-04-03", "2026-03-07", "2026-02-14", "2026-01-23", "2026-01-18", "2025-12-26", "2025-11-02"),
+							Date:                 mustDate("2026-04-28", "2026-04-03", "2026-03-07", "2026-02-14", "2026-01-23", "2026-01-18", "2025-12-26", "2025-11-02"),
 							WithSalary:           false,
 							Remote:               false,
 						},

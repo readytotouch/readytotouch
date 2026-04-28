@@ -4421,7 +4421,7 @@ func companies07Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4389249538/",
 							Location:             "San Jose, CA",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-04-23", "2026-04-13", "2026-04-08", "2026-04-02"),
+							Date:                 mustDate("2026-04-28", "2026-04-23", "2026-04-13", "2026-04-08", "2026-04-02"),
 							WithSalary:           false,
 							Remote:               false,
 						},

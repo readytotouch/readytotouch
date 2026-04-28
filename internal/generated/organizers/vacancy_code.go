@@ -20,6 +20,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4376735509/":                                                               4167, // google
 		"https://www.linkedin.com/jobs/view/4068076458/":                                                               396,  // mozilla-corporation
 		"https://app.welcometothejungle.com/jobs/v9z8vd9V":                                                             3892, // mozilla-corporation
+		"https://www.linkedin.com/jobs/view/4403788153/":                                                               4812, // mozilla-corporation
 		"https://www.linkedin.com/jobs/view/4082697010/":                                                               397,  // discord
 		"https://www.linkedin.com/jobs/view/4102671396/":                                                               398,  // discord
 		"https://www.linkedin.com/jobs/view/3906200700/":                                                               399,  // figma
@@ -1400,6 +1401,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4068403021/":                                                               36,   // appodeal
 		"https://www.linkedin.com/jobs/view/4265268365/":                                                               2373, // appodeal
 		"https://www.linkedin.com/jobs/view/4305145067/":                                                               3046, // appodeal
+		"https://www.linkedin.com/jobs/view/4406606876/":                                                               4813, // appodeal
 		"https://www.linkedin.com/jobs/view/4068296805/":                                                               37,   // appodeal
 		"https://www.linkedin.com/jobs/view/4260887118/":                                                               2205, // appodeal
 		"https://www.linkedin.com/jobs/view/4048262224/":                                                               501,  // talamobile
@@ -3268,6 +3270,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4232684429/":                                                               1913, // red-hat
 		"https://www.linkedin.com/jobs/view/4255916516/":                                                               2155, // red-hat
 		"https://www.linkedin.com/jobs/view/4324902117/":                                                               3493, // red-hat
+		"https://www.linkedin.com/jobs/view/4403796776/":                                                               4814, // red-hat
 		"https://www.indeed.com/viewjob?jk=0ce9ca11c038853d":                                                           1288, // occ
 		"https://www.indeed.com/viewjob?jk=8206a2447ac1e213":                                                           1289, // motive-inc
 		"https://www.indeed.com/viewjob?jk=e6442d48c3e89a90":                                                           1290, // stoke-space
@@ -3851,6 +3854,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4240698572/":                                                               1987, // threatconnect-inc
 		"https://www.linkedin.com/jobs/view/4230075544/":                                                               1988, // mapbox
 		"https://www.linkedin.com/jobs/view/4172873087/":                                                               2436, // mapbox
+		"https://www.linkedin.com/jobs/view/4395705470/":                                                               4815, // mapbox
 		"https://www.linkedin.com/jobs/view/4242284379/":                                                               1989, // narrativeapp
 		"https://www.linkedin.com/jobs/view/4244588178/":                                                               1990, // coralogix
 		"https://www.linkedin.com/jobs/view/4336403577/":                                                               3431, // coralogix
