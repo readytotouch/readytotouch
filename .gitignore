@@ -48,7 +48,6 @@ docker-compose.yml
 
 # Only for local use for now
 public/extensions/readytotouch-unsafe-browser-extension.zip
-public/extensions/readytotouch-unsafe-browser-extension-v2.zip
 public/extensions/readytotouch-unsafe-browser-extension/icons
 
 .cache

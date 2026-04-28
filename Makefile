@@ -235,29 +235,29 @@ unsafe-browser-extension:
 		&& zip -r readytotouch-unsafe-browser-extension.zip readytotouch-unsafe-browser-extension \
 		&& chmod 777 readytotouch-unsafe-browser-extension.zip
 
-# make more-companies-linkedin VERSION=139
+# make more-companies-linkedin VERSION=140
 more-companies-linkedin:
 ifndef VERSION
 	$(error VERSION is not set. Use `make more-companies-linkedin VERSION=X`)
 endif
 	git checkout main && git pull
-	git checkout -b more-companies-linkedin-april-2026-v$(VERSION)
-	git commit -m "More companies LinkedIn April 2026 v$(VERSION)" --allow-empty
+	git checkout -b more-companies-linkedin-may-2026-v$(VERSION)
+	git commit -m "More companies LinkedIn May 2026 v$(VERSION)" --allow-empty
 
-# make more-companies-welcome-to-the-jungle VERSION=139
+# make more-companies-welcome-to-the-jungle VERSION=140
 more-companies-welcome-to-the-jungle:
 ifndef VERSION
 	$(error VERSION is not set. Use `make more-companies-welcome-to-the-jungle VERSION=X`)
 endif
 	git checkout main && git pull
-	git checkout -b more-companies-welcome-to-the-jungle-april-2026-v$(VERSION)
-	git commit -m "More companies Welcome to the Jungle April 2026 v$(VERSION)" --allow-empty
+	git checkout -b more-companies-welcome-to-the-jungle-may-2026-v$(VERSION)
+	git commit -m "More companies Welcome to the Jungle May 2026 v$(VERSION)" --allow-empty
 
-# make more-companies-indeed VERSION=139
+# make more-companies-indeed VERSION=140
 more-companies-indeed:
 ifndef VERSION
 	$(error VERSION is not set. Use `make more-companies-indeed VERSION=X`)
 endif
 	git checkout main && git pull
-	git checkout -b more-companies-indeed-april-2026-v$(VERSION)
-	git commit -m "More companies Indeed April 2026 v$(VERSION)" --allow-empty
+	git checkout -b more-companies-indeed-may-2026-v$(VERSION)
+	git commit -m "More companies Indeed May 2026 v$(VERSION)" --allow-empty

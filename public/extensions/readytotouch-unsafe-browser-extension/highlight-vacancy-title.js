@@ -90,34 +90,32 @@ function normalizeURL(url) {
     return url;
 }
 
-let renderVacancyDateOnce = false;
-
 function renderVacancyDate(date, index) {
-    if (renderVacancyDateOnce) {
-        return;
+    const $date = document.getElementById("readytotouch-vacancy-date");
+
+    if ($date === null) {
+        const $date = document.createElement("div");
+        $date.id = "readytotouch-vacancy-date";
+        $date.innerText = date;
+
+        Object.assign($date.style, {
+            position: "fixed",
+            bottom: `${10 + index * 60}px`,
+            right: "10px",
+            backgroundColor: "rgba(0, 0, 0, 0.7)",
+            color: "white",
+            padding: "10px 15px",
+            borderRadius: "8px",
+            fontSize: "16px",
+            zIndex: "999999",
+            fontFamily: "sans-serif",
+            boxShadow: "0 4px 12px rgba(0, 0, 0, 0.3)",
+        });
+
+        document.body.appendChild($date);
+    } else {
+        $date.innerText = date;
     }
-
-    renderVacancyDateOnce = true;
-
-    const $date = document.createElement("div");
-    $date.id = "readytotouch-vacancy-date";
-    $date.innerText = date;
-
-    Object.assign($date.style, {
-        position: "fixed",
-        bottom: `${10 + index * 60}px`,
-        right: "10px",
-        backgroundColor: "rgba(0, 0, 0, 0.7)",
-        color: "white",
-        padding: "10px 15px",
-        borderRadius: "8px",
-        fontSize: "16px",
-        zIndex: "999999",
-        fontFamily: "sans-serif",
-        boxShadow: "0 4px 12px rgba(0, 0, 0, 0.3)",
-    });
-
-    document.body.appendChild($date);
 }
 
 function searchLinkedInCompanyProfile($company) {

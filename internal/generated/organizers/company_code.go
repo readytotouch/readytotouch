@@ -778,7 +778,7 @@ var (
 		"unity":                               770,  // Unity
 		"adjoe":                               771,  // adjoe
 		"docebo":                              772,  // Docebo
-		"getsona":                             773,  // Sona (getsona.com)
+		"getsona":                             773,  // Sona
 		"activeprospect":                      774,  // ActiveProspect
 		"tiledb-inc":                          775,  // TileDB
 		"redpanda-data":                       776,  // Redpanda Data
