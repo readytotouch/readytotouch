@@ -92,6 +92,13 @@ func companies04Shard() []domain.CompanyProfile {
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Chime-EI_IE1493686.11,16.htm",
 				ReviewsURL:  "https://www.glassdoor.com/Reviews/Chime-Reviews-E1493686.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Chime-Jobs-E1493686.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "4.0",
+				Verified:    true,
+				Date:        mustDate("2026-04-28"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",

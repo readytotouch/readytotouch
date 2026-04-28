@@ -5116,10 +5116,17 @@ func companies11Shard() []domain.CompanyProfile {
 				Verified:  true,
 			},
 			BlindProfile: domain.BlindProfile{
-				Alias: "",
+				Alias:       "Binance",
+				Employees:   "1,001 to 5,000",
+				Salary:      "",
+				Reviews:     "88",
+				ReviewsRate: "3.1",
+				Date:        mustDate("2026-04-28"),
 			},
 			LevelsFyiProfile: domain.LevelsFyiProfile{
-				Alias: "",
+				Alias:     "binance",
+				Employees: "4,050",
+				Date:      mustDate("2026-04-28"),
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Binance-EI_IE1816824.11,18.htm",
@@ -5133,7 +5140,7 @@ func companies11Shard() []domain.CompanyProfile {
 				Date:        mustDate("2026-02-26"),
 			},
 			IndeedProfile: domain.IndeedProfile{
-				Alias: "",
+				Alias: "Binance",
 			},
 			Languages: domain.Languages{
 				domain.Go: {

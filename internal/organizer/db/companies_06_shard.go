@@ -276,8 +276,10 @@ func companies06Shard() []domain.CompanyProfile {
 				Date:              mustDate("2026-04-24"),
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "VoodooTeam",
-				Verified: false,
+				Login:     "VoodooTeam",
+				Followers: "",
+				Verified:  false,
+				Date:      mustDate("2026-04-28"),
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
 				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Voodoo-EI_IE1889746.11,17.htm",

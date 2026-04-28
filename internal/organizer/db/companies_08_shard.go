@@ -2194,8 +2194,10 @@ func companies08Shard() []domain.CompanyProfile {
 				Date:              mustDate("2026-04-01"),
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "AxisCommunications",
-				Verified: true,
+				Login:     "AxisCommunications",
+				Followers: "431",
+				Verified:  true,
+				Date:      mustDate("2026-04-28"),
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
