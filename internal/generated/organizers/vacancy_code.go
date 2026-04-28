@@ -3324,6 +3324,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4175895182/":                                                               1315, // getsona
 		"https://www.linkedin.com/jobs/view/4175892408/":                                                               1345, // getsona
 		"https://www.linkedin.com/jobs/view/4209148989/":                                                               1735, // getsona
+		"https://www.linkedin.com/jobs/view/4405172072/":                                                               4810, // getsona
 		"https://www.linkedin.com/jobs/view/4190011323/":                                                               1316, // activeprospect
 		"https://www.linkedin.com/jobs/view/4201324957/":                                                               1444, // activeprospect
 		"https://www.linkedin.com/jobs/view/4201033819/":                                                               1445, // tiledb-inc
@@ -3581,6 +3582,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4363780937/":                                                               4009, // telnyx
 		"https://www.linkedin.com/jobs/view/4400595422/":                                                               4647, // telnyx
 		"https://www.linkedin.com/jobs/view/4405813778/":                                                               4768, // telnyx
+		"https://www.linkedin.com/jobs/view/4407471806/":                                                               4811, // telnyx
 		"https://www.linkedin.com/jobs/view/4186581023/":                                                               1575, // eunasolutions
 		"https://www.linkedin.com/jobs/view/4188235715/":                                                               1576, // driftrock
 		"https://www.linkedin.com/jobs/view/4389078637/":                                                               4504, // driftrock
