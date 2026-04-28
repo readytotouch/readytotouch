@@ -3204,7 +3204,7 @@ func companies10Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4404222563/",
 							Location:             "Los Angeles Metropolitan Area",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-04-22"),
+							Date:                 mustDate("2026-04-28", "2026-04-22"),
 							WithSalary:           false,
 							Remote:               false,
 						},

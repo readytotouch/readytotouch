@@ -3812,6 +3812,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4214803492/":                                                               1882, // wellrewarded
 		"https://www.linkedin.com/jobs/view/4248210417/":                                                               2094, // wellrewarded
 		"https://www.linkedin.com/jobs/view/4279720066/":                                                               2586, // wellrewarded
+		"https://www.linkedin.com/jobs/view/4405132968/":                                                               4808, // wellrewarded
 		"https://www.linkedin.com/jobs/view/4230030958/":                                                               1883, // rewards-network
 		"https://www.linkedin.com/jobs/view/4403436942/":                                                               4734, // rewards-network
 		"https://www.linkedin.com/jobs/view/4229012568/":                                                               1884, // qdrant
@@ -4384,6 +4385,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4299119401/":                                                               2996, // visionxplus
 		"https://www.linkedin.com/jobs/view/4316278689/":                                                               3433, // teads
 		"https://www.linkedin.com/jobs/view/4293125191/":                                                               2997, // teads
+		"https://www.linkedin.com/jobs/view/4405189232/":                                                               4809, // teads
 		"https://www.linkedin.com/jobs/view/4302201309/":                                                               3036, // circuithub
 		"https://www.linkedin.com/jobs/view/4303218078/":                                                               3037, // edclub
 		"https://www.linkedin.com/jobs/view/4302857179/":                                                               3038, // appzen
