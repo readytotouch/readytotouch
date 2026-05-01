@@ -7416,6 +7416,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "thirty-madison",
+    "source": "thirty-madison-200x200.jpeg",
+    "destination": "thirty-madison.jpeg",
+    "destination_72x72": "thirty-madison.jpeg"
+  },
+  {
     "alias": "thomson-reuters",
     "source": "thomson-reuters-200x200.jpeg",
     "destination": "thomson-reuters.jpeg",

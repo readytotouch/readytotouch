@@ -3626,6 +3626,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4394658998/":                                                               4601, // remote.com
 		"https://www.linkedin.com/jobs/view/4400566263/":                                                               4687, // remote.com
 		"https://www.linkedin.com/jobs/view/4405298085/":                                                               4769, // remote.com
+		"https://www.linkedin.com/jobs/view/4409045014/":                                                               4825, // remote.com
 		"https://www.linkedin.com/jobs/view/3933499435/":                                                               1593, // heyfresha
 		"https://www.linkedin.com/jobs/view/4091569026/":                                                               1594, // the-realreal
 		"https://www.linkedin.com/jobs/view/4193174525/":                                                               1630, // blackrock
@@ -4820,6 +4821,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4403423575/":                                                               4762, // getbarter-app
 		"https://www.linkedin.com/jobs/view/4405247673/":                                                               4767, // exante-ltd
 		"https://www.linkedin.com/jobs/view/4402434294/":                                                               4775, // helfieai
+		"https://www.linkedin.com/jobs/view/4408026657/":                                                               4826, // thirty-madison
 		"https://www.linkedin.com/jobs/view/3914839625/":                                                               372,  // cognizant
 		"https://www.linkedin.com/jobs/view/4120737001/":                                                               600,  // cognizant
 		"https://www.linkedin.com/jobs/view/4149258542/":                                                               787,  // cognizant

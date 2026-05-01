@@ -1240,6 +1240,7 @@ var (
 		"thefalconx":                          "thefalconx.png",
 		"thenu":                               "",
 		"theopentag":                          "",
+		"thirty-madison":                      "thirty-madison.jpeg",
 		"thomson-reuters":                     "thomson-reuters.jpeg",
 		"thought-machine":                     "",
 		"thousandeyes":                        "",
