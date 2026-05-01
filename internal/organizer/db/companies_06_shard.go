@@ -4703,6 +4703,17 @@ func companies06Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Lead Software Engineer – Python/Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4369093448/",
+							Location:             "Wilmington, DE",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-05-01"),
+							WithSalary:           true, // $152k/yr - $215k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {},

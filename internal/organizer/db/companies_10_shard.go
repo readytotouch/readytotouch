@@ -2965,7 +2965,7 @@ func companies10Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4406054643/",
 							Location:             "Sunnyvale, CA",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-05-01"),
+							Date:                 mustDate("2026-04-29"),
 							WithSalary:           true, // $117k/yr - $234k/yr
 							Remote:               false,
 						},
@@ -5676,7 +5676,7 @@ func companies10Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4392931438/",
 							Location:             "Utrecht, Utrecht, Netherlands",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-05-01", "2026-03-31"),
+							Date:                 mustDate("2026-04-29", "2026-03-31"),
 							WithSalary:           false,
 							Remote:               false,
 						},

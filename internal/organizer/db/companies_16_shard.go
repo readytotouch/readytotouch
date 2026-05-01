@@ -1762,7 +1762,7 @@ func companies16Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4409045014/",
 							Location:             "Australia",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-05-01"),
+							Date:                 mustDate("2026-04-30"),
 							WithSalary:           false,
 							Remote:               true,
 						},

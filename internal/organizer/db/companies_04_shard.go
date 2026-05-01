@@ -1719,7 +1719,7 @@ func companies04Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4407338980/",
 							Location:             "Hamburg, Hamburg, Germany",
 							CloudProviders:       []domain.CloudProvider{domain.AWS},
-							Date:                 mustDate("2026-05-01"),
+							Date:                 mustDate("2026-04-30"),
 							WithSalary:           false,
 							Remote:               false,
 						},
