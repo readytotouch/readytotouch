@@ -1009,6 +1009,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4031949216/":                                                               435,  // statista
 		"https://www.linkedin.com/jobs/view/4134905562/":                                                               728,  // statista
 		"https://www.linkedin.com/jobs/view/4205969905/":                                                               1476, // statista
+		"https://www.linkedin.com/jobs/view/4407338980/":                                                               4827, // statista
 		"https://www.linkedin.com/jobs/view/4035121961/":                                                               436,  // dronesense
 		"https://www.linkedin.com/jobs/view/4312317101/":                                                               3129, // dronesense
 		"https://www.linkedin.com/jobs/view/4033619128/":                                                               437,  // zurich-instruments-ag
@@ -2595,6 +2596,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4368259315/":                                                               3984, // quantum-systems-gmbh
 		"https://www.linkedin.com/jobs/view/4395987058/":                                                               4650, // quantum-systems-gmbh
 		"https://www.linkedin.com/jobs/view/4400758763/":                                                               4691, // quantum-systems-gmbh
+		"https://www.linkedin.com/jobs/view/4408758157/":                                                               4828, // quantum-systems-gmbh
 		"https://www.linkedin.com/jobs/view/4118966168/":                                                               591,  // gdms
 		"https://www.linkedin.com/jobs/view/4148907792/":                                                               844,  // gdms
 		"https://www.linkedin.com/jobs/view/4179404017/":                                                               1137, // gdms
@@ -2733,6 +2735,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4134786158/":                                                               711,  // sambindonesia
 		"https://www.linkedin.com/jobs/view/4138457629/":                                                               932,  // walmart
 		"https://www.linkedin.com/jobs/view/4395572223/":                                                               4545, // walmart
+		"https://www.linkedin.com/jobs/view/4406054643/":                                                               4829, // walmart
 		"https://www.linkedin.com/jobs/view/4133956837/":                                                               749,  // walmart
 		"https://www.linkedin.com/jobs/view/4208697441/":                                                               1618, // walmart
 		"https://www.linkedin.com/jobs/view/4244761356/":                                                               2012, // magnite
@@ -3425,6 +3428,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4211759935/":                                                               1627, // ford-motor-company
 		"https://www.linkedin.com/jobs/view/4300101816/":                                                               2965, // ford-motor-company
 		"https://www.linkedin.com/jobs/view/4363561794/":                                                               3805, // ford-motor-company
+		"https://www.linkedin.com/jobs/view/4408088229/":                                                               4830, // ford-motor-company
 		"https://www.linkedin.com/jobs/view/4196474583/":                                                               1410, // gitguardian
 		"https://www.linkedin.com/jobs/view/4204807609/":                                                               1503, // gitguardian
 		"https://www.linkedin.com/jobs/view/4269801442/":                                                               2461, // gitguardian

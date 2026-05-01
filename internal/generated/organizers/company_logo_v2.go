@@ -451,6 +451,7 @@ var (
 		"fis":                                 "",
 		"fiserv":                              "fiserv.jpeg",
 		"fiskaly":                             "fiskaly.jpeg",
+		"flamingo-run":                        "flamingo-run.png",
 		"flatpeak":                            "flatpeak.jpeg",
 		"flexaihq":                            "",
 		"flexera":                             "flexera.jpeg",

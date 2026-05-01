@@ -1439,6 +1439,7 @@ var (
 		"exante-ltd":                          1439, // EXANTE
 		"helfieai":                            1440, // Helfie.AI
 		"thirty-madison":                      1441, // Thirty Madison
+		"flamingo-run":                        1442, // Flamingo
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

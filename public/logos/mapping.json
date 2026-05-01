@@ -2682,6 +2682,12 @@
     "destination_72x72": "fiskaly.jpeg"
   },
   {
+    "alias": "flamingo-run",
+    "source": "flamingo-run-180x180.png",
+    "destination": "flamingo-run.png",
+    "destination_72x72": "flamingo-run.png"
+  },
+  {
     "alias": "flatpeak",
     "source": "flatpeak-200x200.jpeg",
     "destination": "flatpeak.jpeg",

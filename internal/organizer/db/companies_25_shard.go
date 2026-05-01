@@ -1529,5 +1529,81 @@ func companies25Shard() []domain.CompanyProfile {
 				domain.IndustryHealthTech,
 			},
 		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Flamingo",
+			BaseURL:    "https://www.flamingo.run/",
+			CareersURL: "",
+			AboutURL:   "https://www.flamingo.run/about",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                105540069,
+				IDs:               nil,
+				Alias:             "flamingo-run",
+				Name:              "Flamingo",
+				Followers:         "710",
+				Employees:         "11-50",
+				AssociatedMembers: "23",
+				Verified:          false,
+				Date:              mustDate("2026-05-01"),
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:     "flamingo-stack",
+				Followers: "24",
+				Verified:  false,
+				Date:      mustDate("2026-05-01"),
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 1,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Open Source OS for MSPs",
+			Industries: []domain.Industry{
+				domain.IndustryDevOps,
+			},
+		},
 	}
 }
