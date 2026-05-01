@@ -48,10 +48,14 @@ RTT.relativeDate = function (text) {
 
     for (const [re, apply] of rules) {
         const m = t.match(re);
-        if (m) { apply(parseInt(m[1], 10)); break; }
+
+        if (m) {
+            apply(parseInt(m[1], 10));
+            return new Intl.DateTimeFormat("en-CA").format(now);
+        }
     }
 
-    return new Intl.DateTimeFormat("en-CA").format(now);
+    return null;
 };
 
 // ── Cloud providers ────────────────────────────────────────────────────────

@@ -2682,6 +2682,12 @@
     "destination_72x72": "fiskaly.jpeg"
   },
   {
+    "alias": "flamingo-run",
+    "source": "flamingo-run-180x180.png",
+    "destination": "flamingo-run.png",
+    "destination_72x72": "flamingo-run.png"
+  },
+  {
     "alias": "flatpeak",
     "source": "flatpeak-200x200.jpeg",
     "destination": "flatpeak.jpeg",
@@ -5941,9 +5947,9 @@
   },
   {
     "alias": "rbc",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "rbc-200x200.jpeg",
+    "destination": "rbc.jpeg",
+    "destination_72x72": "rbc.jpeg"
   },
   {
     "alias": "readdle",
@@ -7414,6 +7420,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "thirty-madison",
+    "source": "thirty-madison-200x200.jpeg",
+    "destination": "thirty-madison.jpeg",
+    "destination_72x72": "thirty-madison.jpeg"
   },
   {
     "alias": "thomson-reuters",

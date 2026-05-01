@@ -216,8 +216,10 @@ func companies25Shard() []domain.CompanyProfile {
 				Date:              mustDate("2026-04-11"),
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "chromaui",
+				Followers: "211",
+				Verified:  true,
+				Date:      mustDate("2026-05-01"),
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -1059,7 +1061,7 @@ func companies25Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4343925593/",
 							Location:             "Stockholm, Stockholm County, Sweden",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-04-18"),
+							Date:                 mustDate("2026-04-29", "2026-04-18"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -1291,8 +1293,10 @@ func companies25Shard() []domain.CompanyProfile {
 				Date:              mustDate("2026-04-24"),
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "exante",
+				Followers: "12",
+				Verified:  false,
+				Date:      mustDate("2026-05-01"),
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -1301,7 +1305,15 @@ func companies25Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Exante-EI_IE498836.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Exante-Reviews-E498836.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Exante-Jobs-E498836.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "4.7",
+				Verified:    false,
+				Date:        mustDate("2026-05-01"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -1320,7 +1332,7 @@ func companies25Shard() []domain.CompanyProfile {
 					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoryCount: 0,
+					GitHubRepositoryCount: 3,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Scala Developer",
@@ -1441,6 +1453,176 @@ func companies25Shard() []domain.CompanyProfile {
 			ShortDescription: "Operating system for human health",
 			Industries: []domain.Industry{
 				domain.IndustryMedTech,
+			},
+		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Thirty Madison",
+			BaseURL:    "https://thirtymadison.com/",
+			CareersURL: "",
+			AboutURL:   "",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                27042439,
+				IDs:               nil,
+				Alias:             "thirty-madison",
+				Name:              "Thirty Madison",
+				Followers:         "23K",
+				Employees:         "501-1K",
+				AssociatedMembers: "217",
+				Verified:          true,
+				Date:              mustDate("2026-05-01"),
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Thirty-Madison-EI_IE2587094.11,25.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Thirty-Madison-Reviews-E2587094.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Thirty-Madison-Jobs-E2587094.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "",
+				Verified:    true,
+				Date:        mustDate("2026-05-01"),
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Software Engineer – Elixir",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4408026657/",
+							Location:             "Summit, NJ",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-04-28"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "",
+			Industries: []domain.Industry{
+				domain.IndustryHealthTech,
+			},
+		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Flamingo",
+			BaseURL:    "https://www.flamingo.run/",
+			CareersURL: "",
+			AboutURL:   "https://www.flamingo.run/about",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                105540069,
+				IDs:               nil,
+				Alias:             "flamingo-run",
+				Name:              "Flamingo",
+				Followers:         "710",
+				Employees:         "11-50",
+				AssociatedMembers: "23",
+				Verified:          false,
+				Date:              mustDate("2026-05-01"),
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:     "flamingo-stack",
+				Followers: "24",
+				Verified:  false,
+				Date:      mustDate("2026-05-01"),
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 1,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "Open Source OS for MSPs",
+			Industries: []domain.Industry{
+				domain.IndustryDevOps,
 			},
 		},
 	}

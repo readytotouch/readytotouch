@@ -1055,8 +1055,10 @@ func companies23Shard() []domain.CompanyProfile {
 				Date:              mustDate("2026-04-02"),
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "cariad-tech",
+				Followers: "89",
+				Verified:  true,
+				Date:      mustDate("2026-05-01"),
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -4004,7 +4006,7 @@ func companies23Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4387800394/",
 							Location:             "Budapest Metropolitan Area",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-04-09", "2026-03-20"),
+							Date:                 mustDate("2026-04-30", "2026-04-09", "2026-03-20"),
 							WithSalary:           false,
 							Remote:               false,
 						},

@@ -129,22 +129,43 @@ function vacancySalary() {
 }
 
 function vacancyLocation() {
-    const $elements = document.querySelectorAll(".job-details-jobs-unified-top-card__primary-description-container span.tvm__text");
+    {
+        const $elements = document.querySelectorAll(".job-details-jobs-unified-top-card__primary-description-container span.tvm__text");
 
-    for (const $element of $elements) {
-        return $element.textContent.trim();
+        for (const $element of $elements) {
+            return $element.textContent.trim();
+        }
+    }
+    {
+        const $elements = document.querySelectorAll(".job-details-jobs-unified-top-card__tertiary-description-container span.tvm__text");
+
+        for (const $element of $elements) {
+            return $element.textContent.trim();
+        }
     }
 
     return "";
 }
 
 function vacancyDate() {
-    const $elements = document.querySelectorAll(".job-details-jobs-unified-top-card__primary-description-container span");
+    {
+        const $elements = document.querySelectorAll(".job-details-jobs-unified-top-card__primary-description-container span");
 
-    for (const $element of $elements) {
-        const publishedAt = $element.textContent.trim().toLowerCase();
-        if (publishedAt) {
-            return RTT.relativeDate(publishedAt);
+        for (const $element of $elements) {
+            const publishedAt = RTT.relativeDate($element.textContent.trim().toLowerCase());
+            if (publishedAt) {
+                return publishedAt;
+            }
+        }
+    }
+    {
+        const $elements = document.querySelectorAll(".job-details-jobs-unified-top-card__tertiary-description-container span");
+
+        for (const $element of $elements) {
+            const publishedAt = RTT.relativeDate($element.textContent.trim().toLowerCase());
+            if (publishedAt) {
+                return publishedAt;
+            }
         }
     }
 
