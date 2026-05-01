@@ -1055,8 +1055,10 @@ func companies23Shard() []domain.CompanyProfile {
 				Date:              mustDate("2026-04-02"),
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "cariad-tech",
+				Followers: "89",
+				Verified:  true,
+				Date:      mustDate("2026-05-01"),
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",

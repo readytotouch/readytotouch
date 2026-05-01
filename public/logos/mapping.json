@@ -5947,9 +5947,9 @@
   },
   {
     "alias": "rbc",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "rbc-200x200.jpeg",
+    "destination": "rbc.jpeg",
+    "destination_72x72": "rbc.jpeg"
   },
   {
     "alias": "readdle",

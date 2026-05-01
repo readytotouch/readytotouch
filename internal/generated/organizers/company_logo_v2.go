@@ -995,7 +995,7 @@ var (
 		"rapid-ai":                            "rapid-ai.jpeg",
 		"rapid7":                              "rapid7.jpeg",
 		"rapidfort":                           "rapidfort.png",
-		"rbc":                                 "",
+		"rbc":                                 "rbc.jpeg",
 		"readdle":                             "",
 		"readytotouch":                        "readytotouch.png",
 		"recorded-future":                     "recorded-future.jpeg",

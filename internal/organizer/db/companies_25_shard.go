@@ -216,8 +216,10 @@ func companies25Shard() []domain.CompanyProfile {
 				Date:              mustDate("2026-04-11"),
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "chromaui",
+				Followers: "211",
+				Verified:  true,
+				Date:      mustDate("2026-05-01"),
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -1291,8 +1293,10 @@ func companies25Shard() []domain.CompanyProfile {
 				Date:              mustDate("2026-04-24"),
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "exante",
+				Followers: "12",
+				Verified:  false,
+				Date:      mustDate("2026-05-01"),
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -1301,7 +1305,15 @@ func companies25Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Exante-EI_IE498836.11,17.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Exante-Reviews-E498836.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Exante-Jobs-E498836.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "4.7",
+				Verified:    false,
+				Date:        mustDate("2026-05-01"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -1320,7 +1332,7 @@ func companies25Shard() []domain.CompanyProfile {
 					Vacancies:             []domain.Vacancy{},
 				},
 				domain.Scala: {
-					GitHubRepositoryCount: 0,
+					GitHubRepositoryCount: 3,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Scala Developer",
@@ -1473,7 +1485,15 @@ func companies25Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Thirty-Madison-EI_IE2587094.11,25.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Thirty-Madison-Reviews-E2587094.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Thirty-Madison-Jobs-E2587094.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "",
+				Verified:    true,
+				Date:        mustDate("2026-05-01"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
