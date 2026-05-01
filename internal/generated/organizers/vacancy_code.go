@@ -3878,6 +3878,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4242758126/":                                                               2019, // paypal
 		"https://www.linkedin.com/jobs/view/4301461830/":                                                               3030, // paypal
 		"https://www.linkedin.com/jobs/view/4401776456/":                                                               4688, // paypal
+		"https://www.linkedin.com/jobs/view/4408041531/":                                                               4821, // paypal
 		"https://www.linkedin.com/jobs/view/4245930632/":                                                               2020, // trainline
 		"https://www.linkedin.com/jobs/view/4375437346/":                                                               4161, // trainline
 		"https://www.linkedin.com/jobs/view/4244484254/":                                                               2021, // samba-ai
@@ -4061,6 +4062,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4263607684/":                                                               2283, // experian
 		"https://www.linkedin.com/jobs/view/4274816427/":                                                               2481, // experian
 		"https://www.linkedin.com/jobs/view/4336058139/":                                                               4014, // experian
+		"https://www.linkedin.com/jobs/view/4408796782/":                                                               4822, // experian
 		"https://www.linkedin.com/jobs/view/4235994956/":                                                               2284, // thomson-reuters
 		"https://www.linkedin.com/jobs/view/4240055195/":                                                               2285, // aiven
 		"https://www.linkedin.com/jobs/view/4265470899/":                                                               2414, // aiven
@@ -4552,6 +4554,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4330617473/":                                                               4022, // cloudera
 		"https://www.linkedin.com/jobs/view/4317968904/":                                                               4162, // cloudera
 		"https://www.linkedin.com/jobs/view/4393036181/":                                                               4599, // cloudera
+		"https://www.linkedin.com/jobs/view/4407617737/":                                                               4823, // cloudera
 		"https://www.linkedin.com/jobs/view/4336250122/":                                                               3436, // twilio-inc-
 		"https://www.linkedin.com/jobs/view/4361396242/":                                                               3740, // twilio-inc-
 		"https://www.linkedin.com/jobs/view/4336878749/":                                                               3437, // albatross-ai
@@ -4766,6 +4769,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4378321804/":                                                               4294, // griffin-bank
 		"https://www.linkedin.com/jobs/view/4375555017/":                                                               4295, // gliainc
 		"https://www.linkedin.com/jobs/view/4379896178/":                                                               4298, // otrsolutions
+		"https://www.linkedin.com/jobs/view/4406403416/":                                                               4824, // otrsolutions
 		"https://www.linkedin.com/jobs/view/4381005660/":                                                               4330, // techex
 		"https://www.linkedin.com/jobs/view/4380966201/":                                                               4352, // simplesurance
 		"https://www.linkedin.com/jobs/view/4379853305/":                                                               4355, // spacelift-io

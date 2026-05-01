@@ -4864,7 +4864,7 @@ func companies12Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4271201559/",
 							Location:             "Munich, Bavaria, Germany",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-04-10", "2026-03-19", "2026-02-25", "2026-02-05", "2026-01-15", "2025-12-25", "2025-12-02", "2025-11-12", "2025-09-09", "2025-08-19", "2025-07-28"),
+							Date:                 mustDate("2026-05-01", "2026-04-10", "2026-03-19", "2026-02-25", "2026-02-05", "2026-01-15", "2025-12-25", "2025-12-02", "2025-11-12", "2025-09-09", "2025-08-19", "2025-07-28"),
 							WithSalary:           false,
 							Remote:               false,
 						},

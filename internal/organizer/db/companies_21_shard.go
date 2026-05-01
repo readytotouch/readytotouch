@@ -2606,7 +2606,7 @@ func companies21Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4384427855/",
 							Location:             "Austin, TX",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-04-08"),
+							Date:                 mustDate("2026-05-01", "2026-04-08"),
 							WithSalary:           false,
 							Remote:               true,
 						},

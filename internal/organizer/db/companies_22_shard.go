@@ -3996,6 +3996,17 @@ func companies22Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Staff Software Engineer (Java or Scala)",
+							ShortDescription:     "Apache Spark",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4407617737/",
+							Location:             "Budapest, Budapest, Hungary",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-05-01"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Elixir: {
