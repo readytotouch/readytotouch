@@ -5219,7 +5219,7 @@ func companies01Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4286642910/",
 							Location:             "EMEA",
-							Date:                 mustDate("2025-10-22"),
+							Date:                 mustDate("2026-05-04", "2025-10-22"),
 							WithSalary:           false,
 							Remote:               true,
 						},

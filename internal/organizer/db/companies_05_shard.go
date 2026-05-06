@@ -4240,7 +4240,7 @@ func companies05Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4401418467/",
 							Location:             "Ulm, Baden-Württemberg, Germany",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-04-15"),
+							Date:                 mustDate("2026-05-06", "2026-04-15"),
 							WithSalary:           false,
 							Remote:               false,
 						},

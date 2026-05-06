@@ -1440,6 +1440,9 @@ var (
 		"helfieai":                            1440, // Helfie.AI
 		"thirty-madison":                      1441, // Thirty Madison
 		"flamingo-run":                        1442, // Flamingo
+		"luxor":                               1443, // Luxor Technology
+		"mercari-inc-":                        1444, // Mercari, Inc.
+		"somosinc":                            1445, // Somos, Inc.
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

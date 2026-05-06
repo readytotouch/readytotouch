@@ -4230,6 +4230,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "luxor",
+    "source": "luxor-200x200.jpeg",
+    "destination": "luxor.jpeg",
+    "destination_72x72": "luxor.jpeg"
+  },
+  {
     "alias": "lyft",
     "source": "lyft-200x200.jpeg",
     "destination": "lyft.jpeg",
@@ -4426,6 +4432,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "mercari-inc-",
+    "source": "mercari-180x180.png",
+    "destination": "mercari-inc-.png",
+    "destination_72x72": "mercari-inc-.png"
   },
   {
     "alias": "mercuryhq",
@@ -6688,6 +6700,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "somosinc",
+    "source": "somosinc-200x200.jpeg",
+    "destination": "somosinc.jpeg",
+    "destination_72x72": "somosinc.jpeg"
   },
   {
     "alias": "sonatus",

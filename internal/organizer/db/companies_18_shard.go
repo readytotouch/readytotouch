@@ -1406,6 +1406,17 @@ func companies18Shard() []domain.CompanyProfile {
 							WithSalary:           true, // $90k/yr - $180k/yr
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Software Engineer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4409963523/",
+							Location:             "Austin, TX",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-05-06"),
+							WithSalary:           true, // $90k/yr - $170k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
@@ -4987,6 +4998,17 @@ func companies18Shard() []domain.CompanyProfile {
 							Location:             "Noida, Uttar Pradesh, India",
 							CloudProviders:       []domain.CloudProvider{},
 							Date:                 mustDate("2026-04-28", "2026-04-03", "2026-01-29"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Lead Engineer – Angular, Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4410202813/",
+							Location:             "Bangalore, New South Wales, Australia",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-05-05"),
 							WithSalary:           false,
 							Remote:               false,
 						},
