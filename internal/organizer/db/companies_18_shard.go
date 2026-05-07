@@ -4788,7 +4788,7 @@ func companies18Shard() []domain.CompanyProfile {
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4335431028/",
 							Location:             "Chennai, Tamil Nadu, India",
-							Date:                 mustDate("2026-04-10", "2026-03-20", "2026-02-25", "2026-02-05", "2026-01-15", "2025-12-25", "2025-12-02"),
+							Date:                 mustDate("2026-05-03", "2026-04-10", "2026-03-20", "2026-02-25", "2026-02-05", "2026-01-15", "2025-12-25", "2025-12-02"),
 							WithSalary:           false,
 							Remote:               false,
 						},
