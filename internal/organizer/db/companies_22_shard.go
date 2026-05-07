@@ -6547,6 +6547,17 @@ func companies22Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Fullstack Engineer (Elixir/Phoenix)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4407779442/",
+							Location:             "Germany",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-05-05"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Clojure: {
