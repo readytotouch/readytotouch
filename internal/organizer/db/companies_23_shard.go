@@ -999,6 +999,17 @@ func companies23Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Software Developer (Python or Go)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4408643212/",
+							Location:             "Lisbon, Portugal",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-05-05"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
@@ -5003,7 +5014,7 @@ func companies23Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4402482367/",
 							Location:             "Chicago, IL",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-04-23"),
+							Date:                 mustDate("2026-05-06", "2026-04-23"),
 							WithSalary:           true, // $80/hr - $100/hr
 							Remote:               true,
 						},

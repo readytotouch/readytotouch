@@ -444,6 +444,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4369764192/":                                                               4280, // sentinelone
 		"https://www.linkedin.com/jobs/view/4390814067/":                                                               4726, // sentinelone
 		"https://www.linkedin.com/jobs/view/4405427170/":                                                               4778, // sentinelone
+		"https://www.linkedin.com/jobs/view/4408871173/":                                                               4864, // sentinelone
 		"https://www.linkedin.com/jobs/view/4093231440/":                                                               415,  // uber-com
 		"https://www.indeed.com/viewjob?jk=4a8e1837ebf1a386":                                                           1278, // uber-com
 		"https://www.linkedin.com/jobs/view/4388544505/":                                                               4487, // uber-com
@@ -643,6 +644,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4364909609/":                                                               4040, // lightspeedcommerce
 		"https://www.linkedin.com/jobs/view/4403258156/":                                                               4783, // lightspeedcommerce
 		"https://www.linkedin.com/jobs/view/4402841010/":                                                               4831, // lightspeedcommerce
+		"https://www.linkedin.com/jobs/view/4409207044/":                                                               4868, // lightspeedcommerce
 		"https://www.linkedin.com/jobs/view/4022342302/":                                                               319,  // squarespace
 		"https://www.linkedin.com/jobs/view/3872933701/":                                                               320,  // curve-ltd
 		"https://www.linkedin.com/jobs/view/4231828489/":                                                               1900, // curve-ltd
@@ -733,6 +735,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4365497157/":                                                               4371, // acronis
 		"https://www.linkedin.com/jobs/view/4365546521/":                                                               4573, // acronis
 		"https://www.linkedin.com/jobs/view/4363651363/":                                                               4665, // acronis
+		"https://www.linkedin.com/jobs/view/4389494594/":                                                               4865, // acronis
 		"https://www.linkedin.com/jobs/view/4366354116/":                                                               4132, // acronis
 		"https://www.linkedin.com/jobs/view/4370529252/":                                                               4235, // acronis
 		"https://www.linkedin.com/jobs/view/4370524526/":                                                               4319, // acronis
@@ -2634,6 +2637,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4381973189/":                                                               4326, // money-forward
 		"https://www.linkedin.com/jobs/view/4124190818/":                                                               613,  // prize-picks
 		"https://www.linkedin.com/jobs/view/4379447115/":                                                               4357, // prize-picks
+		"https://www.linkedin.com/jobs/view/4401133852/":                                                               4866, // prize-picks
 		"https://www.linkedin.com/jobs/view/4123557217/":                                                               614,  // chep
 		"https://www.linkedin.com/jobs/view/4120974608/":                                                               615,  // optimizely
 		"https://www.linkedin.com/jobs/view/4124852341/":                                                               616,  // opswat
@@ -4583,6 +4587,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4319560903/":                                                               3887, // cloudera
 		"https://www.linkedin.com/jobs/view/4330766036/":                                                               4149, // cloudera
 		"https://www.linkedin.com/jobs/view/4393095638/":                                                               4609, // cloudera
+		"https://www.linkedin.com/jobs/view/4409968544/":                                                               4867, // cloudera
 		"https://www.linkedin.com/jobs/view/4317466938/":                                                               3435, // cloudera
 		"https://www.linkedin.com/jobs/view/4330617473/":                                                               4022, // cloudera
 		"https://www.linkedin.com/jobs/view/4317968904/":                                                               4162, // cloudera
@@ -4672,6 +4677,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4338655342/":                                                               3680, // tipalti
 		"https://www.linkedin.com/jobs/view/4376561181/":                                                               4219, // tipalti
 		"https://www.linkedin.com/jobs/view/4314026533/":                                                               3681, // unbabel
+		"https://www.linkedin.com/jobs/view/4408643212/":                                                               4869, // unbabel
 		"https://www.linkedin.com/jobs/view/4344599600/":                                                               3687, // cariad-tech
 		"https://www.linkedin.com/jobs/view/4396959016/":                                                               4600, // cariad-tech
 		"https://www.linkedin.com/jobs/view/4396941985/":                                                               4766, // cariad-tech

@@ -3940,6 +3940,17 @@ func companies22Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Staff Backend Software Engineer – C# & Go",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4409968544/",
+							Location:             "Prague, Prague, Czechia",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-05-06"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
