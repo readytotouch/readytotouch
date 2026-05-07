@@ -2392,7 +2392,7 @@ func companies02Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4402008134/",
 							Location:             "Barcelona, Catalonia, Spain",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-04-14"),
+							Date:                 mustDate("2026-05-06", "2026-04-14"),
 							WithSalary:           false,
 							Remote:               true,
 						},

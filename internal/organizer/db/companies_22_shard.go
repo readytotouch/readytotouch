@@ -807,7 +807,7 @@ func companies22Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4322043806/",
 							Location:             "Belgrade, Serbia",
 							CloudProviders:       []domain.CloudProvider{domain.AWS},
-							Date:                 mustDate("2026-03-20", "2026-02-27", "2026-02-07", "2026-01-16", "2025-12-26", "2025-11-13"),
+							Date:                 mustDate("2026-05-04", "2026-03-20", "2026-02-27", "2026-02-07", "2026-01-16", "2025-12-26", "2025-11-13"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -6637,7 +6637,7 @@ func companies22Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4378480185/",
 							Location:             "New York, NY",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-04-14", "2026-03-24", "2026-03-02"),
+							Date:                 mustDate("2026-05-06", "2026-04-14", "2026-03-24", "2026-03-02"),
 							WithSalary:           true, // $152k/yr - $190k/yr
 							Remote:               false,
 						},

@@ -191,6 +191,7 @@ var (
 		"https://app.welcometothejungle.com/jobs/BoykNJtU":                                                             1273, // mongodbinc
 		"https://www.linkedin.com/jobs/view/4391730496/":                                                               4543, // mongodbinc
 		"https://www.linkedin.com/jobs/view/4389234295/":                                                               4689, // mongodbinc
+		"https://www.linkedin.com/jobs/view/4388540831/":                                                               4870, // mongodbinc
 		"https://www.linkedin.com/jobs/view/4021697979/":                                                               10,   // redisinc
 		"https://www.linkedin.com/jobs/view/4244497982/":                                                               1999, // redisinc
 		"https://www.linkedin.com/jobs/view/4231390579/":                                                               2314, // redisinc
@@ -3367,6 +3368,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4301541466/":                                                               2963, // anduril
 		"https://app.welcometothejungle.com/jobs/y1qZXQo1":                                                             3902, // anduril
 		"https://www.linkedin.com/jobs/view/4388134039/":                                                               4463, // anduril
+		"https://www.linkedin.com/jobs/view/4411262290/":                                                               4871, // anduril
 		"https://www.linkedin.com/jobs/view/3988413256/":                                                               1877, // anduril
 		"https://www.linkedin.com/jobs/view/4261799654/":                                                               2246, // anduril
 		"https://www.linkedin.com/jobs/view/4297611580/":                                                               2904, // anduril
@@ -3477,6 +3479,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4299650626/":                                                               3428, // rakuten
 		"https://www.linkedin.com/jobs/view/4199869768/":                                                               1429, // vitalbio
 		"https://www.linkedin.com/jobs/view/4283951213/":                                                               3311, // vitalbio
+		"https://www.linkedin.com/jobs/view/4411255922/":                                                               4872, // vitalbio
 		"https://www.linkedin.com/jobs/view/4199652107/":                                                               1446, // stord
 		"https://www.linkedin.com/jobs/view/4295396868/":                                                               2862, // stord
 		"https://www.linkedin.com/jobs/view/4314089339/":                                                               3202, // stord

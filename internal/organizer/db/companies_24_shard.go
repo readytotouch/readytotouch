@@ -2128,7 +2128,7 @@ func companies24Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4374292185/",
 							Location:             "Canada",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-04-15", "2026-03-25", "2026-03-03", "2026-02-26"),
+							Date:                 mustDate("2026-05-06", "2026-04-15", "2026-03-25", "2026-03-03", "2026-02-26"),
 							WithSalary:           false,
 							Remote:               true,
 						},

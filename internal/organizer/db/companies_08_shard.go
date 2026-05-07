@@ -3128,7 +3128,7 @@ func companies08Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4400599950/",
 							Location:             "Vancouver, BC",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-04-10"),
+							Date:                 mustDate("2026-05-03", "2026-04-10"),
 							WithSalary:           false,
 							Remote:               false,
 						},
