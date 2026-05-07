@@ -3618,6 +3618,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4400595422/":                                                               4647, // telnyx
 		"https://www.linkedin.com/jobs/view/4405813778/":                                                               4768, // telnyx
 		"https://www.linkedin.com/jobs/view/4407471806/":                                                               4811, // telnyx
+		"https://www.linkedin.com/jobs/view/4411402373/":                                                               4873, // telnyx
 		"https://www.linkedin.com/jobs/view/4186581023/":                                                               1575, // eunasolutions
 		"https://www.linkedin.com/jobs/view/4188235715/":                                                               1576, // driftrock
 		"https://www.linkedin.com/jobs/view/4389078637/":                                                               4504, // driftrock
@@ -4656,6 +4657,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4325399277/":                                                               3563, // reducate
 		"https://www.linkedin.com/jobs/view/4348395855/":                                                               3574, // myo-healthcare
 		"https://www.linkedin.com/jobs/view/4350156792/":                                                               3699, // myo-healthcare
+		"https://www.linkedin.com/jobs/view/4407779442/":                                                               4874, // myo-healthcare
 		"https://www.linkedin.com/jobs/view/4318356923/":                                                               3934, // ripple
 		"https://www.linkedin.com/jobs/view/4378480185/":                                                               4243, // ripple
 		"https://www.linkedin.com/jobs/view/4408990524/":                                                               4861, // ripple
