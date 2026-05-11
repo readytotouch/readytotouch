@@ -1443,6 +1443,10 @@ var (
 		"luxor":                               1443, // Luxor Technology
 		"mercari-inc-":                        1444, // Mercari, Inc.
 		"somosinc":                            1445, // Somos, Inc.
+		"buymedasia":                          1446, // Buymed
+		"mistralai":                           1447, // Mistral AI
+		"ssc-space":                           1448, // SSC Space
+		"cardmarket-com":                      1449, // Cardmarket.com
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

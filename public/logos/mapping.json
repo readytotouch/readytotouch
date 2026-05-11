@@ -1134,6 +1134,12 @@
     "destination_72x72": "bunnynet.jpeg"
   },
   {
+    "alias": "buymedasia",
+    "source": "",
+    "destination": "",
+    "destination_72x72": ""
+  },
+  {
     "alias": "bybitexchange",
     "source": "",
     "destination": "",
@@ -1204,6 +1210,12 @@
     "source": "capital-one-180x180.png",
     "destination": "capital-one.png",
     "destination_72x72": "capital-one.png"
+  },
+  {
+    "alias": "cardmarket-com",
+    "source": "cardmarket-com-152x152.png",
+    "destination": "cardmarket-com.png",
+    "destination_72x72": "cardmarket-com.png"
   },
   {
     "alias": "carecarco",
@@ -4524,6 +4536,12 @@
     "destination_72x72": "mirrorweb.jpeg"
   },
   {
+    "alias": "mistralai",
+    "source": "mistralai-180x180.png",
+    "destination": "mistralai.png",
+    "destination_72x72": "mistralai.png"
+  },
+  {
     "alias": "mitratech",
     "source": "",
     "destination": "",
@@ -6832,6 +6850,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "ssc-space",
+    "source": "ssc-space-180x180.webp",
+    "destination": "ssc-space.png",
+    "destination_72x72": "ssc-space.png"
   },
   {
     "alias": "st-jude-childrens-research-hospital",
