@@ -3682,6 +3682,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4400566263/":                                                               4687, // remote.com
 		"https://www.linkedin.com/jobs/view/4405298085/":                                                               4769, // remote.com
 		"https://www.linkedin.com/jobs/view/4409045014/":                                                               4825, // remote.com
+		"https://www.linkedin.com/jobs/view/4411964138/":                                                               4914, // remote.com
 		"https://www.linkedin.com/jobs/view/3933499435/":                                                               1593, // heyfresha
 		"https://www.linkedin.com/jobs/view/4091569026/":                                                               1594, // the-realreal
 		"https://www.linkedin.com/jobs/view/4193174525/":                                                               1630, // blackrock
@@ -3840,6 +3841,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4369450388/":                                                               4012, // pdq-com
 		"https://www.linkedin.com/jobs/view/4375652214/":                                                               4165, // pdq-com
 		"https://www.linkedin.com/jobs/view/4402246344/":                                                               4710, // pdq-com
+		"https://www.linkedin.com/jobs/view/4411307603/":                                                               4915, // pdq-com
 		"https://www.linkedin.com/jobs/view/4219694154/":                                                               1784, // true-anomaly
 		"https://www.linkedin.com/jobs/view/4273981223/":                                                               2478, // true-anomaly
 		"https://www.linkedin.com/jobs/view/4281934098/":                                                               2664, // true-anomaly
