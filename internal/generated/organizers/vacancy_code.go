@@ -80,6 +80,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4348824912/":                                                               3564, // ibm
 		"https://www.linkedin.com/jobs/view/4355232038/":                                                               3847, // ibm
 		"https://www.linkedin.com/jobs/view/4372647673/":                                                               4121, // ibm
+		"https://www.linkedin.com/jobs/view/4409287625/":                                                               4911, // ibm
 		"https://www.linkedin.com/jobs/view/4072909509/":                                                               258,  // sap
 		"https://www.linkedin.com/jobs/view/4072911263/":                                                               541,  // sap
 		"https://www.linkedin.com/jobs/view/4073625824/":                                                               592,  // sap
@@ -3808,6 +3809,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4216696150/":                                                               1741, // flextrade
 		"https://www.linkedin.com/jobs/view/4263362376/":                                                               2332, // flextrade
 		"https://www.linkedin.com/jobs/view/4334468004/":                                                               3314, // flextrade
+		"https://www.linkedin.com/jobs/view/4413036766/":                                                               4912, // flextrade
 		"https://www.linkedin.com/jobs/view/4374319918/":                                                               4226, // epic-games
 		"https://www.linkedin.com/jobs/view/4181595042/":                                                               1742, // epic-games
 		"https://www.linkedin.com/jobs/view/4169030739/":                                                               1780, // epic-games
@@ -4443,6 +4445,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4355394004/":                                                               3849, // poweredbycommerce
 		"https://www.linkedin.com/jobs/view/4396766494/":                                                               4598, // poweredbycommerce
 		"https://www.linkedin.com/jobs/view/4384427855/":                                                               4646, // poweredbycommerce
+		"https://www.linkedin.com/jobs/view/4411704408/":                                                               4913, // poweredbycommerce
 		"https://www.linkedin.com/jobs/view/4300493896/":                                                               3476, // ciena
 		"https://www.linkedin.com/jobs/view/4327785528/":                                                               3671, // ciena
 		"https://www.linkedin.com/jobs/view/4394480851/":                                                               4643, // ciena
