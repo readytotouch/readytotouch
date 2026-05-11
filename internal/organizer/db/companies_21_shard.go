@@ -6128,6 +6128,17 @@ func companies21Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Staff Rust Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4397613642/",
+							Location:             "Dublin, County Dublin, Ireland",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-05-11"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig: {

@@ -123,6 +123,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4384873942/":                                                               4614, // gitlab-com
 		"https://www.linkedin.com/jobs/view/4382197237/":                                                               4304, // gitlab-com
 		"https://www.linkedin.com/jobs/view/4392039130/":                                                               4542, // gitlab-com
+		"https://www.linkedin.com/jobs/view/4382187760/":                                                               4904, // gitlab-com
 		"https://www.linkedin.com/jobs/view/4023583351/":                                                               5,    // linkedin
 		"https://www.linkedin.com/jobs/view/4103336471/":                                                               210,  // linkedin
 		"https://www.linkedin.com/jobs/view/4127847711/":                                                               620,  // linkedin
@@ -543,6 +544,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4398023969/":                                                               4620, // workato
 		"https://www.linkedin.com/jobs/view/4399880662/":                                                               4663, // workato
 		"https://www.linkedin.com/jobs/view/4346858742/":                                                               4875, // workato
+		"https://www.linkedin.com/jobs/view/4402641561/":                                                               4905, // workato
 		"https://www.linkedin.com/jobs/view/4262421101/":                                                               2232, // workato
 		"https://www.linkedin.com/jobs/view/4402008134/":                                                               4690, // workato
 		"https://www.linkedin.com/jobs/view/4402648437/":                                                               4708, // workato
@@ -741,6 +743,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4365546521/":                                                               4573, // acronis
 		"https://www.linkedin.com/jobs/view/4363651363/":                                                               4665, // acronis
 		"https://www.linkedin.com/jobs/view/4389494594/":                                                               4865, // acronis
+		"https://www.linkedin.com/jobs/view/4390871566/":                                                               4906, // acronis
 		"https://www.linkedin.com/jobs/view/4366354116/":                                                               4132, // acronis
 		"https://www.linkedin.com/jobs/view/4370529252/":                                                               4235, // acronis
 		"https://www.linkedin.com/jobs/view/4370524526/":                                                               4319, // acronis
@@ -2131,6 +2134,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4209899082/":                                                               1542, // sysdig
 		"https://www.linkedin.com/jobs/view/4088212368/":                                                               140,  // arculus-a-jungheinrich-company
 		"https://www.linkedin.com/jobs/view/4112668264/":                                                               568,  // arculus-a-jungheinrich-company
+		"https://www.linkedin.com/jobs/view/4408194087/":                                                               4907, // arculus-a-jungheinrich-company
 		"https://www.linkedin.com/jobs/view/4066364870/":                                                               141,  // ebay
 		"https://www.linkedin.com/jobs/view/4081085456/":                                                               142,  // digiexams
 		"https://www.linkedin.com/jobs/view/4199745876/":                                                               1418, // axis-communications
@@ -2923,6 +2927,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4159248269/":                                                               959,  // photoroom
 		"https://www.linkedin.com/jobs/view/4382394370/":                                                               4309, // photoroom
 		"https://www.linkedin.com/jobs/view/4387495006/":                                                               4466, // photoroom
+		"https://www.linkedin.com/jobs/view/4412799086/":                                                               4908, // photoroom
 		"https://www.linkedin.com/jobs/view/4139270225/":                                                               960,  // etsy
 		"https://www.linkedin.com/jobs/view/4236800842/":                                                               1948, // arm
 		"https://www.linkedin.com/jobs/view/4289482589/":                                                               2733, // arm
@@ -3911,6 +3916,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4230075544/":                                                               1988, // mapbox
 		"https://www.linkedin.com/jobs/view/4172873087/":                                                               2436, // mapbox
 		"https://www.linkedin.com/jobs/view/4395705470/":                                                               4815, // mapbox
+		"https://www.linkedin.com/jobs/view/4412409602/":                                                               4909, // mapbox
 		"https://www.linkedin.com/jobs/view/4242284379/":                                                               1989, // narrativeapp
 		"https://www.linkedin.com/jobs/view/4244588178/":                                                               1990, // coralogix
 		"https://www.linkedin.com/jobs/view/4336403577/":                                                               3431, // coralogix
@@ -4516,6 +4522,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4328240908/":                                                               3986, // affinidi
 		"https://www.linkedin.com/jobs/view/4395339260/":                                                               4606, // affinidi
 		"https://www.linkedin.com/jobs/view/4397616583/":                                                               4651, // affinidi
+		"https://www.linkedin.com/jobs/view/4397613642/":                                                               4910, // affinidi
 		"https://www.linkedin.com/jobs/view/4311159672/":                                                               3185, // tensordyne
 		"https://www.linkedin.com/jobs/view/4389972009/":                                                               4507, // tensordyne
 		"https://www.linkedin.com/jobs/view/4311203106/":                                                               3186, // rust-foundation

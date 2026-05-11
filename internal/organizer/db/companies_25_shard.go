@@ -732,7 +732,7 @@ func companies25Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4353962622/",
 							Location:             "Tel Aviv District, Israel",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-04-15"),
+							Date:                 mustDate("2026-05-08", "2026-04-15"),
 							WithSalary:           false,
 							Remote:               false,
 						},
