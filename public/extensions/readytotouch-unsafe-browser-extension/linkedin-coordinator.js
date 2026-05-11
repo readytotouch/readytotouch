@@ -52,7 +52,10 @@ activate(); // run once on initial page load
 // ── Ctrl+Shift+Y/Н — copy vacancy data ────────────────────────────────────
 
 function vacancyHandler(event) {
-    if (event.ctrlKey && event.shiftKey && (event.key === "Y" || event.key === "Н")) {
+    const old1 = event.ctrlKey && event.shiftKey && (event.key === "Y" || event.key === "Н");
+    const new1 = event.altKey && event.shiftKey && (event.key === "!");
+
+    if (old1 || new1) {
         const titleRaw = document.querySelector("h1")?.innerText.trim() ?? "";
         const title = RTT.normalizeTitle(titleRaw);
         const descText = (document.querySelector("h2.text-heading-large + div.mt4")?.innerText ?? "");
@@ -75,8 +78,16 @@ function vacancyHandler(event) {
     }
 
     // U / Г — just the date (quick-update shortcut)
-    if (event.ctrlKey && event.shiftKey && (event.key === "U" || event.key === "Г")) {
+    const old2 = event.ctrlKey && event.shiftKey && (event.key === "U" || event.key === "Г");
+    const new2 = event.altKey && event.shiftKey && (event.key === "@");
+
+    if (old2 || new2) {
         RTT.copyToClipboard(`mustDate("${vacancyDate()}"), // `);
+    }
+
+    const new3 = event.altKey && event.shiftKey && (event.key === "#");
+    if (new3) {
+        RTT.copyToClipboard(normalizeVacancyURL());
     }
 }
 

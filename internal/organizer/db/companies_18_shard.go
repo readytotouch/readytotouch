@@ -1413,7 +1413,7 @@ func companies18Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4409963523/",
 							Location:             "Austin, TX",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-05-06"),
+							Date:                 mustDate("2026-05-09", "2026-05-06"),
 							WithSalary:           true, // $90k/yr - $170k/yr
 							Remote:               false,
 						},
