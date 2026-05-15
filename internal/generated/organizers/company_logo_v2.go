@@ -193,7 +193,7 @@ var (
 		"bufbuild":                            "",
 		"buildwithfern":                       "buildwithfern.png",
 		"bunnynet":                            "bunnynet.jpeg",
-		"buymedasia":                          "",
+		"buymedasia":                          "buymedasia.png",
 		"bybitexchange":                       "",
 		"bynder":                              "",
 		"cabify":                              "",
