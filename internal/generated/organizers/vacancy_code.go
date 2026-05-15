@@ -3670,6 +3670,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4405813778/":                                                               4768, // telnyx
 		"https://www.linkedin.com/jobs/view/4407471806/":                                                               4811, // telnyx
 		"https://www.linkedin.com/jobs/view/4411402373/":                                                               4873, // telnyx
+		"https://www.linkedin.com/jobs/view/4413486883/":                                                               4960, // telnyx
 		"https://www.linkedin.com/jobs/view/4186581023/":                                                               1575, // eunasolutions
 		"https://www.linkedin.com/jobs/view/4188235715/":                                                               1576, // driftrock
 		"https://www.linkedin.com/jobs/view/4389078637/":                                                               4504, // driftrock
@@ -4906,6 +4907,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4384326649/":                                                               4410, // alluviumhealth
 		"https://www.linkedin.com/jobs/view/4395270250/":                                                               4603, // alluviumhealth
 		"https://www.linkedin.com/jobs/view/4383230327/":                                                               4411, // hg-insights
+		"https://www.linkedin.com/jobs/view/4413890566/":                                                               4961, // hg-insights
 		"https://www.linkedin.com/jobs/view/4312155633/":                                                               4415, // truelayer
 		"https://www.linkedin.com/jobs/view/4382656503/":                                                               4429, // toku-global
 		"https://www.linkedin.com/jobs/view/4384019554/":                                                               4439, // qvantel

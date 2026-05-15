@@ -2869,7 +2869,7 @@ func companies13Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4405172072/",
 							Location:             "United Kingdom",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-04-28"),
+							Date:                 mustDate("2026-05-14"), //  mustDate("2026-04-28"),
 							WithSalary:           false,
 							Remote:               true,
 						},
