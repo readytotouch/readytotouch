@@ -2690,7 +2690,7 @@ func companies15Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4392954560/",
 							Location:             "Limassol, Limassol, Cyprus",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-04-22"),
+							Date:                 mustDate("2026-05-14", "2026-04-22"),
 							WithSalary:           false,
 							Remote:               false,
 						},

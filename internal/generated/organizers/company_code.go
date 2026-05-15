@@ -1447,6 +1447,7 @@ var (
 		"mistralai":                           1447, // Mistral AI
 		"ssc-space":                           1448, // SSC Space
 		"cardmarket-com":                      1449, // Cardmarket.com
+		"equifax":                             1450, // Equifax
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

@@ -2424,6 +2424,12 @@
     "destination_72x72": "equativ.jpg"
   },
   {
+    "alias": "equifax",
+    "source": "equifax-200x200.jpeg",
+    "destination": "equifax.jpeg",
+    "destination_72x72": "equifax.jpeg"
+  },
+  {
     "alias": "ericsson",
     "source": "ericsson-180x180.png",
     "destination": "ericsson.png",

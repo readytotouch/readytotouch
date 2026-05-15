@@ -408,6 +408,7 @@ var (
 		"entrust":                             "entrust.jpeg",
 		"epic-games":                          "epic-games.jpeg",
 		"equativ":                             "equativ.jpg",
+		"equifax":                             "equifax.jpeg",
 		"ericsson":                            "ericsson.png",
 		"eset":                                "eset.jpeg",
 		"eskimi":                              "eskimi.jpeg",

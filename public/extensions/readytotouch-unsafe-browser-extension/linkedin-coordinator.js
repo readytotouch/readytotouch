@@ -89,6 +89,12 @@ function vacancyHandler(event) {
     if (new3) {
         RTT.copyToClipboard(normalizeVacancyURL());
     }
+
+    const new4 = event.altKey && event.shiftKey && (event.key === "$");
+    if (new4) {
+        const title = document.querySelector(".job-details-jobs-unified-top-card__company-name a")?.innerText.trim() ?? "";
+        RTT.copyToClipboard(title);
+    }
 }
 
 function vacancyRemote() {
