@@ -2667,7 +2667,7 @@ func companies08Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4405853005/",
 							Location:             "Chicago, IL",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-04-23"),
+							Date:                 mustDate("2026-05-15", "2026-04-23"),
 							WithSalary:           false,
 							Remote:               false,
 						},
