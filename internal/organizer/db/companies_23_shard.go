@@ -3561,6 +3561,17 @@ func companies23Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Rust Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4410371762/",
+							Location:             "London Area, United Kingdom",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-05-14"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig: {

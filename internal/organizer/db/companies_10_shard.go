@@ -415,7 +415,22 @@ func companies10Shard() []domain.CompanyProfile {
 						},
 					},
 				},
-				domain.Rust:    {},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Software Engineer (C++ or Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4413882877/",
+							Location:             "Ho Chi Minh City, Vietnam",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-05-14"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
 				domain.Zig:     {},
 				domain.Scala:   {},
 				domain.Elixir:  {},

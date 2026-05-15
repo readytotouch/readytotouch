@@ -856,10 +856,11 @@ func companies22Shard() []domain.CompanyProfile {
 				IDs:               nil,
 				Alias:             "livekitco",
 				Name:              "LiveKit",
-				Followers:         "6K",
+				Followers:         "12K",
 				Employees:         "51-200",
-				AssociatedMembers: "69",
+				AssociatedMembers: "118",
 				Verified:          false,
+				Date:              mustDate("2026-05-16"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:     "livekit",
@@ -911,6 +912,17 @@ func companies22Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4339420067/",
 							Location:             "Canada",
 							Date:                 mustDate("2025-11-29"),
+							WithSalary:           true, // $120k/yr - $250k/yr
+							Remote:               true,
+						},
+						{
+							Title:                "Staff Rust SDK Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4410363145/",
+							Location:             "United States",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-05-14"),
 							WithSalary:           true, // $120k/yr - $250k/yr
 							Remote:               true,
 						},
