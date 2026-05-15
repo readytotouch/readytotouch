@@ -454,6 +454,17 @@ func companies25Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Software Engineer, Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4415550242/",
+							Location:             "San Francisco, CA",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-05-15"),
+							WithSalary:           true, // $125k/yr - $195k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig: {
@@ -2238,6 +2249,92 @@ func companies25Shard() []domain.CompanyProfile {
 			ShortDescription: "Platform for trading card games",
 			Industries: []domain.Industry{
 				domain.IndustryECommerce,
+			},
+		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Equifax",
+			BaseURL:    "https://www.equifax.com/",
+			CareersURL: "https://careers.equifax.com/",
+			AboutURL:   "https://www.equifax.com/about-equifax/who-we-are",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                3695,
+				IDs:               []int{3695, 3697, 10519, 270986, 705973, 1049456, 1119725, 1418427, 1781595, 3838526, 10956158, 79626965},
+				Alias:             "equifax",
+				Name:              "Equifax",
+				Followers:         "307K",
+				Employees:         "10K+",
+				AssociatedMembers: "18,632",
+				Verified:          true,
+				Date:              mustDate("2026-05-16"),
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4405042676/",
+							Location:             "Pune/Pimpri-Chinchwad Area",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-05-15"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "",
+			Industries: []domain.Industry{
+				domain.IndustryFinTech,
 			},
 		},
 	}

@@ -17,12 +17,14 @@ func companies04Shard() []domain.CompanyProfile {
 			BlogURL:    "",
 			LinkedInProfile: domain.LinkedInProfile{
 				ID:                56459436,
+				IDs:               nil,
 				Alias:             "unlimit-com",
 				Name:              "Unlimit",
-				Followers:         "138K",
+				Followers:         "275K",
 				Employees:         "201-500",
-				AssociatedMembers: "559",
+				AssociatedMembers: "588",
 				Verified:          true,
+				Date:              mustDate("2026-05-16"),
 			},
 			GitHubProfile: domain.GitHubProfile{
 				Login:    "",
@@ -41,15 +43,18 @@ func companies04Shard() []domain.CompanyProfile {
 			Languages: domain.Languages{
 				domain.Go: {
 					GitHubRepositoryCount: 0,
-					Vacancies:             []domain.Vacancy{
-						/*
-							{
-								Title:            "",
-								ShortDescription: "",
-								URL:              "https://app.welcometothejungle.com/jobs/P4ept_aQ",
-								Date:             mustDate(""),
-							},
-						*/
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Senior Golang Developer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4415506751/",
+							Location:             "Belgrade, Serbia",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-05-15"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust:    {},
@@ -5127,6 +5132,17 @@ func companies04Shard() []domain.CompanyProfile {
 							Location:             "Seattle, WA",
 							CloudProviders:       []domain.CloudProvider{domain.Azure},
 							Date:                 mustDate("2026-04-21"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Forward Deployed Engineer (Rust)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4401665152/",
+							Location:             "Bellevue, WA",
+							CloudProviders:       []domain.CloudProvider{domain.Azure},
+							Date:                 mustDate("2026-05-13"),
 							WithSalary:           false,
 							Remote:               false,
 						},
