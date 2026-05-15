@@ -2017,6 +2017,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4341652874/":                                                               3420, // emnify
 		"https://www.linkedin.com/jobs/view/4351144235/":                                                               3917, // emnify
 		"https://www.linkedin.com/jobs/view/4378198595/":                                                               4300, // emnify
+		"https://www.linkedin.com/jobs/view/4410655038/":                                                               4958, // emnify
 		"https://www.linkedin.com/jobs/view/4060347505/":                                                               110,  // moodys-corporation
 		"https://www.linkedin.com/jobs/view/4299339588/":                                                               3578, // moodys-corporation
 		"https://www.linkedin.com/jobs/view/4053645963/":                                                               538,  // lytxinc
@@ -4480,6 +4481,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4396766494/":                                                               4598, // poweredbycommerce
 		"https://www.linkedin.com/jobs/view/4384427855/":                                                               4646, // poweredbycommerce
 		"https://www.linkedin.com/jobs/view/4411704408/":                                                               4913, // poweredbycommerce
+		"https://www.linkedin.com/jobs/view/4411529125/":                                                               4959, // poweredbycommerce
 		"https://www.linkedin.com/jobs/view/4300493896/":                                                               3476, // ciena
 		"https://www.linkedin.com/jobs/view/4327785528/":                                                               3671, // ciena
 		"https://www.linkedin.com/jobs/view/4394480851/":                                                               4643, // ciena

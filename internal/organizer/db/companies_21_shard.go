@@ -2621,6 +2621,17 @@ func companies21Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Lead Software Engineer – Scala",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4411529125/",
+							Location:             "Austin, TX",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-05-15"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Elixir: {
