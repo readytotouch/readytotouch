@@ -1083,7 +1083,7 @@ func companies25Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4343925593/",
 							Location:             "Stockholm, Stockholm County, Sweden",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-05-06", "2026-04-29", "2026-04-18"),
+							Date:                 mustDate("2026-05-20", "2026-05-06", "2026-04-29", "2026-04-18"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -2335,6 +2335,92 @@ func companies25Shard() []domain.CompanyProfile {
 			ShortDescription: "",
 			Industries: []domain.Industry{
 				domain.IndustryFinTech,
+			},
+		},
+		{
+			ID:         0,  // system
+			Type:       "", // system
+			Name:       "Kai",
+			BaseURL:    "https://www.kai.security/",
+			CareersURL: "https://www.kai.security/careers",
+			AboutURL:   "https://www.kai.security/about",
+			BlogURL:    "",
+			LinkedInProfile: domain.LinkedInProfile{
+				ID:                112737505,
+				IDs:               nil,
+				Alias:             "kai-security",
+				Name:              "Kai",
+				Followers:         "3K",
+				Employees:         "11-50",
+				AssociatedMembers: "49",
+				Verified:          false,
+				Date:              mustDate("2026-05-22"),
+			},
+			GitHubProfile: domain.GitHubProfile{
+				Login:    "",
+				Verified: false,
+			},
+			BlindProfile: domain.BlindProfile{
+				Alias: "",
+			},
+			LevelsFyiProfile: domain.LevelsFyiProfile{
+				Alias: "",
+			},
+			GlassdoorProfile: domain.GlassdoorProfile{
+				OverviewURL: "",
+			},
+			IndeedProfile: domain.IndeedProfile{
+				Alias: "",
+			},
+			Languages: domain.Languages{
+				domain.Go: {
+					GitHubRepositoryCount: 0,
+					Vacancies: []domain.Vacancy{
+						{
+							Title:                "Staff / Senior Staff Software Engineer – Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4383004583/",
+							Location:             "San Jose, CA",
+							CloudProviders:       []domain.CloudProvider{domain.Azure},
+							Date:                 mustDate("2026-05-17"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+					},
+				},
+				domain.Rust: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Zig: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Scala: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Elixir: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Clojure: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Haskell: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+				domain.Erlang: {
+					GitHubRepositoryCount: 0,
+					Vacancies:             []domain.Vacancy{},
+				},
+			},
+			ShortDescription: "",
+			Industries: []domain.Industry{
+				domain.IndustryCyberSecurity,
 			},
 		},
 	}

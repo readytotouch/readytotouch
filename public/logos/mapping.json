@@ -3666,6 +3666,12 @@
     "destination_72x72": "innovatrics.png"
   },
   {
+    "alias": "insiderone",
+    "source": "useinsider-200x200.jpeg",
+    "destination": "useinsider.jpeg",
+    "destination_72x72": "useinsider.jpeg"
+  },
+  {
     "alias": "instinct-science",
     "source": "",
     "destination": "",
@@ -3826,6 +3832,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "kai-security",
+    "source": "kai-security-256x256.png",
+    "destination": "kai-security.png",
+    "destination_72x72": "kai-security.png"
   },
   {
     "alias": "kaluza",
@@ -7918,12 +7930,6 @@
     "source": "usehatchapp-200x200.jpeg",
     "destination": "usehatchapp.jpeg",
     "destination_72x72": "usehatchapp.jpeg"
-  },
-  {
-    "alias": "useinsider",
-    "source": "useinsider-200x200.jpeg",
-    "destination": "useinsider.jpeg",
-    "destination_72x72": "useinsider.jpeg"
   },
   {
     "alias": "utilitywarehouse",

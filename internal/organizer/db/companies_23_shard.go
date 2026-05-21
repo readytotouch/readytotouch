@@ -6007,7 +6007,7 @@ func companies23Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4372242028/",
 							Location:             "Concord, CA",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-03-29", "2026-02-14"),
+							Date:                 mustDate("2026-05-19", "2026-03-29", "2026-02-14"),
 							WithSalary:           false,
 							Remote:               false,
 						},

@@ -4493,7 +4493,7 @@ func companies22Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4408253328/",
 							Location:             "Poland",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-04-29"),
+							Date:                 mustDate("2026-05-21", "2026-04-29"),
 							WithSalary:           false,
 							Remote:               true,
 						},

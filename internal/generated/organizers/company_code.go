@@ -547,7 +547,7 @@ var (
 		"reward-gateway":                      543,  // Reward Gateway
 		"nn-group":                            544,  // NN Group
 		"american-airlines":                   545,  // American Airlines
-		"cake-by-vpbank":                      546,  // Cake by VPBank — Digital Bank
+		"cake-by-vpbank":                      546,  // Cake by VPBank - Digital Bank
 		"cheesecake-labs":                     547,  // Cheesecake Labs
 		"mayaph":                              548,  // Maya
 		"ashley-furniture-industries":         549,  // Ashley Furniture Industries
@@ -997,7 +997,7 @@ var (
 		"snowplow":                            987,  // Snowplow
 		"monumentalco":                        988,  // Monumental
 		"sides-dach":                          989,  // SIDES
-		"useinsider":                          990,  // Insider.
+		"insiderone":                          990,  // Insider One
 		"lucanet-ag":                          991,  // Lucanet
 		"uniphore":                            992,  // Uniphore
 		"the-home-depot":                      993,  // The Home Depot
@@ -1448,6 +1448,7 @@ var (
 		"ssc-space":                           1448, // SSC Space
 		"cardmarket-com":                      1449, // Cardmarket.com
 		"equifax":                             1450, // Equifax
+		"kai-security":                        1451, // Kai
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 
