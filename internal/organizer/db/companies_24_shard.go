@@ -3331,7 +3331,7 @@ func companies24Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4406403416/",
 							Location:             "Roswell, GA",
 							CloudProviders:       []domain.CloudProvider{domain.AWS},
-							Date:                 mustDate("2026-04-30"),
+							Date:                 mustDate("2026-05-21", "2026-04-30"),
 							WithSalary:           false,
 							Remote:               false,
 						},
