@@ -151,6 +151,7 @@ func main() {
 	r.Use(cors.Default())
 	r.Use(redirectTrimPrefix("/organizers/", "/"))
 	r.Use(redirectTrimPrefix("/design/organizers/", "/design/"))
+	r.Use(redirectTrimPrefix("/go/", "/golang/"))
 	r.Use(func(ctx *gin.Context) {
 		user, err := jwtService.ParseToken(ctx)
 		if err != nil {
@@ -363,6 +364,7 @@ func main() {
 	r.GET("/v/:vacancy_id", organizerController.VacancyRedirect)
 
 	r.GET("/golang", found("/golang/companies", true))
+	r.GET("/go", found("/golang/companies", true))
 	r.GET("/rust", found("/rust/companies", true))
 	r.GET("/zig", found("/zig/companies", true))
 	r.GET("/scala", found("/scala/companies", true))
