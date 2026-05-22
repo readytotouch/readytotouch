@@ -1070,6 +1070,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4018720987/":                                                               438,  // scitecinc
 		"https://www.linkedin.com/jobs/view/4195925867/":                                                               1647, // scitecinc
 		"https://www.linkedin.com/jobs/view/4364909674/":                                                               4070, // scitecinc
+		"https://www.linkedin.com/jobs/view/4405384644/":                                                               4996, // scitecinc
 		"https://www.linkedin.com/jobs/view/4034993832/":                                                               439,  // stack-x-me
 		"https://www.linkedin.com/jobs/view/4071554607/":                                                               22,   // the-walt-disney-company
 		"https://www.linkedin.com/jobs/view/4088472435/":                                                               290,  // the-walt-disney-company
@@ -2208,6 +2209,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4160534145/":                                                               1904, // varonis
 		"https://www.linkedin.com/jobs/view/4335902267/":                                                               3580, // varonis
 		"https://www.linkedin.com/jobs/view/4400599950/":                                                               4654, // varonis
+		"https://www.linkedin.com/jobs/view/4416296492/":                                                               4997, // varonis
 		"https://www.linkedin.com/jobs/view/4101282630/":                                                               149,  // worldtechit
 		"https://www.linkedin.com/jobs/view/4101198898/":                                                               150,  // applied-research-solutions
 		"https://www.linkedin.com/jobs/view/4048143482/":                                                               151,  // wexinc
@@ -2672,6 +2674,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4395987058/":                                                               4650, // quantum-systems-gmbh
 		"https://www.linkedin.com/jobs/view/4400758763/":                                                               4691, // quantum-systems-gmbh
 		"https://www.linkedin.com/jobs/view/4408758157/":                                                               4828, // quantum-systems-gmbh
+		"https://www.linkedin.com/jobs/view/4416182406/":                                                               4998, // quantum-systems-gmbh
 		"https://www.linkedin.com/jobs/view/4118966168/":                                                               591,  // gdms
 		"https://www.linkedin.com/jobs/view/4148907792/":                                                               844,  // gdms
 		"https://www.linkedin.com/jobs/view/4179404017/":                                                               1137, // gdms
@@ -3254,6 +3257,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4374362655/":                                                               4412, // krakenfx
 		"https://www.linkedin.com/jobs/view/4374367386/":                                                               4634, // krakenfx
 		"https://www.linkedin.com/jobs/view/4374348860/":                                                               4950, // krakenfx
+		"https://www.linkedin.com/jobs/view/4395923782/":                                                               4999, // krakenfx
 		"https://www.linkedin.com/jobs/view/4321516217/":                                                               4136, // ringcentral
 		"https://www.linkedin.com/jobs/view/4168118534/":                                                               1193, // ringcentral
 		"https://www.linkedin.com/jobs/view/4380478542/":                                                               4311, // ringcentral
@@ -3555,6 +3559,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4199869768/":                                                               1429, // vitalbio
 		"https://www.linkedin.com/jobs/view/4283951213/":                                                               3311, // vitalbio
 		"https://www.linkedin.com/jobs/view/4411255922/":                                                               4872, // vitalbio
+		"https://www.linkedin.com/jobs/view/4417378942/":                                                               5000, // vitalbio
 		"https://www.linkedin.com/jobs/view/4199652107/":                                                               1446, // stord
 		"https://www.linkedin.com/jobs/view/4295396868/":                                                               2862, // stord
 		"https://www.linkedin.com/jobs/view/4314089339/":                                                               3202, // stord
@@ -4595,6 +4600,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4397616583/":                                                               4651, // affinidi
 		"https://www.linkedin.com/jobs/view/4397613642/":                                                               4910, // affinidi
 		"https://www.linkedin.com/jobs/view/4413885169/":                                                               4954, // affinidi
+		"https://www.linkedin.com/jobs/view/4413885168/":                                                               5001, // affinidi
 		"https://www.linkedin.com/jobs/view/4311159672/":                                                               3185, // tensordyne
 		"https://www.linkedin.com/jobs/view/4389972009/":                                                               4507, // tensordyne
 		"https://www.linkedin.com/jobs/view/4311203106/":                                                               3186, // rust-foundation
@@ -4817,6 +4823,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4365415737/":                                                               3845, // tybaenergy
 		"https://www.linkedin.com/jobs/view/4365068054/":                                                               3855, // fractile
 		"https://www.linkedin.com/jobs/view/4353968645/":                                                               3858, // sensit-haptics
+		"https://www.linkedin.com/jobs/view/4413692578/":                                                               5002, // sensit-haptics
 		"https://app.welcometothejungle.com/jobs/4rzK4S2Q":                                                             3907, // temporal-technologies
 		"https://app.welcometothejungle.com/jobs/Aj9OCtLp":                                                             3908, // synctera
 		"https://www.linkedin.com/jobs/view/4365057961/":                                                               3909, // finaryhq
@@ -4991,6 +4998,8 @@ var (
 		"https://www.linkedin.com/jobs/view/4411498615/":                                                               4893, // cardmarket-com
 		"https://www.linkedin.com/jobs/view/4405042676/":                                                               4917, // equifax
 		"https://www.linkedin.com/jobs/view/4383004583/":                                                               4980, // kai-security
+		"https://www.linkedin.com/jobs/view/4416628730/":                                                               5003, // decathlon-group
+		"https://jobs.dou.ua/companies/justmarkets/vacancies/349102/":                                                  5004, // justmarkets
 		"https://www.linkedin.com/jobs/view/3914839625/":                                                               372,  // cognizant
 		"https://www.linkedin.com/jobs/view/4120737001/":                                                               600,  // cognizant
 		"https://www.linkedin.com/jobs/view/4149258542/":                                                               787,  // cognizant

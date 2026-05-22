@@ -1449,6 +1449,8 @@ var (
 		"cardmarket-com":                      1449, // Cardmarket.com
 		"equifax":                             1450, // Equifax
 		"kai-security":                        1451, // Kai
+		"decathlon-group":                     1452, // Decathlon
+		"justmarkets":                         1453, // JustMarkets
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

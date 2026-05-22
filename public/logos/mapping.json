@@ -1962,6 +1962,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "decathlon-group",
+    "source": "decathlon-group-200x200.jpeg",
+    "destination": "decathlon-group.jpeg",
+    "destination_72x72": "decathlon-group.jpeg"
+  },
+  {
     "alias": "delinea",
     "source": "delinea-200x200.jpeg",
     "destination": "delinea.jpeg",
@@ -3808,6 +3814,12 @@
     "source": "just-eat-takeaway-com-200x200.jpeg",
     "destination": "just-eat-takeaway-com.jpeg",
     "destination_72x72": "just-eat-takeaway-com.jpeg"
+  },
+  {
+    "alias": "justmarkets",
+    "source": "justmarkets-180x180.webp",
+    "destination": "justmarkets.png",
+    "destination_72x72": "justmarkets.png"
   },
   {
     "alias": "justpark",
