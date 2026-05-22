@@ -1067,7 +1067,15 @@ func companies25Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Trustly-EI_IE962720.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Trustly-Reviews-E962720.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Trustly-Jobs-E962720.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "3.8",
+				Verified:    true,
+				Date:        mustDate("2026-05-22"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -1849,7 +1857,15 @@ func companies25Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Somos-EI_IE1387502.11,16.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Somos-Reviews-E1387502.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Somos-Jobs-E1387502.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "4.7",
+				Verified:    true,
+				Date:        mustDate("2026-05-22"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -2281,7 +2297,15 @@ func companies25Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Equifax-EI_IE232.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Equifax-Reviews-E232.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Equifax-Jobs-E232.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "3.9",
+				Verified:    true,
+				Date:        mustDate("2026-05-22"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -2453,7 +2477,15 @@ func companies25Shard() []domain.CompanyProfile {
 				Alias: "",
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Decathlon-EI_IE41180.11,20.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Decathlon-Reviews-E41180.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Decathlon-Jobs-E41180.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "4.0",
+				Verified:    true,
+				Date:        mustDate("2026-05-22"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",

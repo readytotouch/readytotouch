@@ -31,9 +31,15 @@ func companies04Shard() []domain.CompanyProfile {
 				Verified: false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
-				Verified:    false,
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Unlimit-EI_IE4106230.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Unlimit-Reviews-E4106230.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Unlimit-Jobs-E4106230.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "4.1",
+				Verified:    true,
+				Date:        mustDate("2026-05-22"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
