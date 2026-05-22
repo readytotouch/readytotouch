@@ -159,6 +159,7 @@ var (
 		"birdapp":                             "birdapp.jpeg",
 		"birdiecare":                          "birdiecare.jpeg",
 		"bitaksi":                             "",
+		"bitdefender":                         "bitdefender.jpeg",
 		"bitfount":                            "",
 		"bitgo":                               "bitgo.png",
 		"bitly":                               "",

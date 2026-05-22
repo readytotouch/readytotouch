@@ -930,6 +930,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "bitdefender",
+    "source": "bitdefender-200x200.jpeg",
+    "destination": "bitdefender.jpeg",
+    "destination_72x72": "bitdefender.jpeg"
+  },
+  {
     "alias": "bitfount",
     "source": "",
     "destination": "",

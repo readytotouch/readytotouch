@@ -5014,6 +5014,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4416628730/":                                                               5003, // decathlon-group
 		"https://jobs.dou.ua/companies/justmarkets/vacancies/349102/":                                                  5004, // justmarkets
 		"https://www.linkedin.com/jobs/view/4414350402/":                                                               5012, // 7mind-gmbh
+		"https://www.linkedin.com/jobs/view/4418091395/":                                                               5019, // bitdefender
 		"https://www.linkedin.com/jobs/view/3914839625/":                                                               372,  // cognizant
 		"https://www.linkedin.com/jobs/view/4120737001/":                                                               600,  // cognizant
 		"https://www.linkedin.com/jobs/view/4149258542/":                                                               787,  // cognizant
