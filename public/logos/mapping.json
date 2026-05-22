@@ -36,6 +36,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "7mind-gmbh",
+    "source": "7mind-gmbh-180x180.png",
+    "destination": "7mind-gmbh.png",
+    "destination_72x72": "7mind-gmbh.png"
+  },
+  {
     "alias": "815488",
     "source": "hollandandbarrett-200x200.jpeg",
     "destination": "815488.jpeg",
@@ -924,6 +930,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "bitdefender",
+    "source": "bitdefender-200x200.jpeg",
+    "destination": "bitdefender.jpeg",
+    "destination_72x72": "bitdefender.jpeg"
+  },
+  {
     "alias": "bitfount",
     "source": "",
     "destination": "",
@@ -943,9 +955,9 @@
   },
   {
     "alias": "bitmart",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "bitmart-200x200.jpeg",
+    "destination": "bitmart.jpeg",
+    "destination_72x72": "bitmart.jpeg"
   },
   {
     "alias": "bitpanda",
@@ -1021,9 +1033,9 @@
   },
   {
     "alias": "bnpparibassecuritiesservices",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "bnpparibassecuritiesservices-200x200.jpeg",
+    "destination": "bnpparibassecuritiesservices.jpeg",
+    "destination_72x72": "bnpparibassecuritiesservices.jpeg"
   },
   {
     "alias": "bol-com",
@@ -1759,9 +1771,9 @@
   },
   {
     "alias": "criteo",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "criteo-200x200.jpeg",
+    "destination": "criteo.jpeg",
+    "destination_72x72": "criteo.jpeg"
   },
   {
     "alias": "cross-river-bank",
@@ -1960,6 +1972,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "decathlon-group",
+    "source": "decathlon-group-200x200.jpeg",
+    "destination": "decathlon-group.jpeg",
+    "destination_72x72": "decathlon-group.jpeg"
   },
   {
     "alias": "delinea",
@@ -2215,9 +2233,9 @@
   },
   {
     "alias": "drw",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "drw-200x200.jpeg",
+    "destination": "drw.jpeg",
+    "destination_72x72": "drw.jpeg"
   },
   {
     "alias": "dscout",
@@ -3259,9 +3277,9 @@
   },
   {
     "alias": "gridx",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "gridx-200x200.jpeg",
+    "destination": "gridx.jpeg",
+    "destination_72x72": "gridx.jpeg"
   },
   {
     "alias": "griffin-bank",
@@ -3577,9 +3595,9 @@
   },
   {
     "alias": "ikea",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "ikea-200x200.jpeg",
+    "destination": "ikea.jpeg",
+    "destination_72x72": "ikea.jpeg"
   },
   {
     "alias": "imanage",
@@ -3664,6 +3682,12 @@
     "source": "innovatrics-180x180.png",
     "destination": "innovatrics.png",
     "destination_72x72": "innovatrics.png"
+  },
+  {
+    "alias": "insiderone",
+    "source": "useinsider-200x200.jpeg",
+    "destination": "useinsider.jpeg",
+    "destination_72x72": "useinsider.jpeg"
   },
   {
     "alias": "instinct-science",
@@ -3804,6 +3828,12 @@
     "destination_72x72": "just-eat-takeaway-com.jpeg"
   },
   {
+    "alias": "justmarkets",
+    "source": "justmarkets-180x180.webp",
+    "destination": "justmarkets.png",
+    "destination_72x72": "justmarkets.png"
+  },
+  {
     "alias": "justpark",
     "source": "",
     "destination": "",
@@ -3826,6 +3856,12 @@
     "source": "",
     "destination": "",
     "destination_72x72": ""
+  },
+  {
+    "alias": "kai-security",
+    "source": "kai-security-256x256.png",
+    "destination": "kai-security.png",
+    "destination_72x72": "kai-security.png"
   },
   {
     "alias": "kaluza",
@@ -5743,9 +5779,9 @@
   },
   {
     "alias": "proofpoint",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "proofpoint-180x180.png",
+    "destination": "proofpoint.png",
+    "destination_72x72": "proofpoint.png"
   },
   {
     "alias": "prosapient",
@@ -6463,9 +6499,9 @@
   },
   {
     "alias": "sensit-haptics",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "sensit-haptics-180x180.jpeg",
+    "destination": "sensit-haptics.jpeg",
+    "destination_72x72": "sensit-haptics.jpeg"
   },
   {
     "alias": "sentinelone",
@@ -6739,9 +6775,9 @@
   },
   {
     "alias": "sonicwall",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "sonicwall-200x200.jpeg",
+    "destination": "sonicwall.jpeg",
+    "destination_72x72": "sonicwall.jpeg"
   },
   {
     "alias": "sony-interactive-entertainment-llc",
@@ -7141,9 +7177,9 @@
   },
   {
     "alias": "symphonyai",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "symphonyai-300x300.png",
+    "destination": "symphonyai.png",
+    "destination_72x72": "symphonyai.png"
   },
   {
     "alias": "synamedia",
@@ -7825,9 +7861,9 @@
   },
   {
     "alias": "umbraspace",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "umbraspace-180x180.webp",
+    "destination": "umbraspace.png",
+    "destination_72x72": "umbraspace.png"
   },
   {
     "alias": "unanet-technologies",
@@ -7867,9 +7903,9 @@
   },
   {
     "alias": "unlimit-com",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "unlimit-com-300x300.png",
+    "destination": "unlimit-com.png",
+    "destination_72x72": "unlimit-com.png"
   },
   {
     "alias": "unnax-emi",
@@ -7918,12 +7954,6 @@
     "source": "usehatchapp-200x200.jpeg",
     "destination": "usehatchapp.jpeg",
     "destination_72x72": "usehatchapp.jpeg"
-  },
-  {
-    "alias": "useinsider",
-    "source": "useinsider-200x200.jpeg",
-    "destination": "useinsider.jpeg",
-    "destination_72x72": "useinsider.jpeg"
   },
   {
     "alias": "utilitywarehouse",
@@ -8413,9 +8443,9 @@
   },
   {
     "alias": "worldpay",
-    "source": "",
-    "destination": "",
-    "destination_72x72": ""
+    "source": "worldpay-200x200.jpeg",
+    "destination": "worldpay.jpeg",
+    "destination_72x72": "worldpay.jpeg"
   },
   {
     "alias": "worldquant",

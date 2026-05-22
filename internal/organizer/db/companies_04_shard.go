@@ -31,9 +31,15 @@ func companies04Shard() []domain.CompanyProfile {
 				Verified: false,
 			},
 			GlassdoorProfile: domain.GlassdoorProfile{
-				OverviewURL: "",
-				ReviewsURL:  "",
-				Verified:    false,
+				OverviewURL: "https://www.glassdoor.com/Overview/Working-at-Unlimit-EI_IE4106230.11,18.htm",
+				ReviewsURL:  "https://www.glassdoor.com/Reviews/Unlimit-Reviews-E4106230.htm",
+				JobsURL:     "https://www.glassdoor.com/Jobs/Unlimit-Jobs-E4106230.htm",
+				Jobs:        "", // Becomes empty in the new design version
+				Reviews:     "", // Becomes empty in the new design version
+				Salaries:    "", // Becomes empty in the new design version
+				ReviewsRate: "4.1",
+				Verified:    true,
+				Date:        mustDate("2026-05-22"),
 			},
 			IndeedProfile: domain.IndeedProfile{
 				Alias: "",
@@ -2242,6 +2248,17 @@ func companies04Shard() []domain.CompanyProfile {
 							CloudProviders:       []domain.CloudProvider{},
 							Date:                 mustDate("2026-02-11"),
 							WithSalary:           true, // $98k/yr - $146k/yr
+							Remote:               false,
+						},
+						{
+							Title:                "Staff/Senior Rust Software Engineer",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4405384644/",
+							Location:             "Boulder, CO",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-05-17"),
+							WithSalary:           false,
 							Remote:               false,
 						},
 					},
@@ -5142,7 +5159,7 @@ func companies04Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4401665152/",
 							Location:             "Bellevue, WA",
 							CloudProviders:       []domain.CloudProvider{domain.Azure},
-							Date:                 mustDate("2026-05-13"),
+							Date:                 mustDate("2026-05-21", "2026-05-13"),
 							WithSalary:           false,
 							Remote:               false,
 						},

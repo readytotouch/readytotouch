@@ -24,8 +24,10 @@ func companies24Shard() []domain.CompanyProfile {
 				Date:              mustDate("2026-02-17"),
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "FTAPI-Software",
+				Followers: "7",
+				Verified:  true,
+				Date:      mustDate("2026-05-22"),
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -41,7 +43,7 @@ func companies24Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoryCount: 0,
+					GitHubRepositoryCount: 1,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "(Senior) Backend Engineer (Go)",
@@ -52,6 +54,17 @@ func companies24Shard() []domain.CompanyProfile {
 							CloudProviders:       []domain.CloudProvider{},
 							Date:                 mustDate("2026-03-07", "2026-02-13"),
 							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "(Senior) Backend Engineer (Go)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4313340152/",
+							Location:             "Munich, Bavaria, Germany",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-05-22"),
+							WithSalary:           true, // €65k/yr - €105k/yr
 							Remote:               false,
 						},
 					},
@@ -710,6 +723,17 @@ func companies24Shard() []domain.CompanyProfile {
 							Location:             "Barcelona, Catalonia, Spain",
 							CloudProviders:       []domain.CloudProvider{},
 							Date:                 mustDate("2026-04-28", "2026-04-03", "2026-03-13", "2026-02-19"),
+							WithSalary:           false,
+							Remote:               false,
+						},
+						{
+							Title:                "Staff Software Engineer, Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4415768286/",
+							Location:             "Barcelona, Catalonia, Spain",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-05-20"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -1673,6 +1697,17 @@ func companies24Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Staff Software Engineer (Golang or Python)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4417762037/",
+							Location:             "Greater São Paulo Area",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-05-21"),
+							WithSalary:           false,
+							Remote:               true,
+						},
 					},
 				},
 				domain.Rust: {
@@ -1859,7 +1894,7 @@ func companies24Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4344851946/",
 							Location:             "Gdańsk, Pomorskie, Poland",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-04-28", "2026-04-03", "2026-03-13", "2026-02-21"),
+							Date:                 mustDate("2026-05-18", "2026-04-28", "2026-04-03", "2026-03-13", "2026-02-21"),
 							WithSalary:           false,
 							Remote:               false,
 						},
@@ -3309,7 +3344,7 @@ func companies24Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4406403416/",
 							Location:             "Roswell, GA",
 							CloudProviders:       []domain.CloudProvider{domain.AWS},
-							Date:                 mustDate("2026-04-30"),
+							Date:                 mustDate("2026-05-21", "2026-04-30"),
 							WithSalary:           false,
 							Remote:               false,
 						},
