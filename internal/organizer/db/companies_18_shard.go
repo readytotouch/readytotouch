@@ -4919,7 +4919,7 @@ func companies18Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4387820021/",
 							Location:             "Berlin, Germany",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-03-20"),
+							Date:                 mustDate("2026-05-22", "2026-03-20"),
 							WithSalary:           false,
 							Remote:               false,
 						},
