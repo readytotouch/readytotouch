@@ -2702,8 +2702,10 @@ func companies25Shard() []domain.CompanyProfile {
 				Date:              mustDate("2026-05-22"),
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "bitdefender",
+				Followers: "169",
+				Verified:  true,
+				Date:      mustDate("2026-05-22"),
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",

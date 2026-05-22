@@ -24,8 +24,10 @@ func companies24Shard() []domain.CompanyProfile {
 				Date:              mustDate("2026-02-17"),
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "",
-				Verified: false,
+				Login:     "FTAPI-Software",
+				Followers: "7",
+				Verified:  true,
+				Date:      mustDate("2026-05-22"),
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -41,7 +43,7 @@ func companies24Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoryCount: 0,
+					GitHubRepositoryCount: 1,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "(Senior) Backend Engineer (Go)",

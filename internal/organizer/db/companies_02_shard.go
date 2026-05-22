@@ -2069,8 +2069,10 @@ func companies02Shard() []domain.CompanyProfile {
 				Date:              mustDate("2026-03-26"),
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "dailymotion",
-				Verified: true,
+				Login:     "dailymotion",
+				Followers: "81",
+				Verified:  true,
+				Date:      mustDate("2026-05-22"),
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",

@@ -5380,8 +5380,10 @@ func companies09Shard() []domain.CompanyProfile {
 				Verified:          true,
 			},
 			GitHubProfile: domain.GitHubProfile{
-				Login:    "grid-x",
-				Verified: true,
+				Login:     "grid-x",
+				Followers: "48",
+				Verified:  true,
+				Date:      mustDate("2026-05-22"),
 			},
 			BlindProfile: domain.BlindProfile{
 				Alias: "",
@@ -5405,7 +5407,7 @@ func companies09Shard() []domain.CompanyProfile {
 			},
 			Languages: domain.Languages{
 				domain.Go: {
-					GitHubRepositoryCount: 0,
+					GitHubRepositoryCount: 23,
 					Vacancies: []domain.Vacancy{
 						{
 							Title:                "Golang Developer",
