@@ -10,6 +10,7 @@ var (
 		"1touch-io":                           "1touch-io.jpeg",
 		"3085253":                             "",
 		"4128":                                "",
+		"7mind-gmbh":                          "7mind-gmbh.png",
 		"815488":                              "815488.jpeg",
 		"90poe":                               "",
 		"ab-tasty":                            "",

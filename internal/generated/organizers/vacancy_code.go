@@ -231,6 +231,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4379741439/":                                                               4250, // canonical
 		"https://www.linkedin.com/jobs/view/4287931158/":                                                               4617, // canonical
 		"https://www.linkedin.com/jobs/view/4292599524/":                                                               4776, // canonical
+		"https://www.linkedin.com/jobs/view/4287925353/":                                                               5013, // canonical
 		"https://www.linkedin.com/jobs/view/3210061536/":                                                               274,  // canonical
 		"https://www.linkedin.com/jobs/view/4034618699/":                                                               302,  // suse
 		"https://www.linkedin.com/jobs/view/4264071475/":                                                               2340, // suse
@@ -1654,6 +1655,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4369093448/":                                                               4835, // jpmorganchase
 		"https://www.linkedin.com/jobs/view/4410953816/":                                                               4847, // jpmorganchase
 		"https://www.linkedin.com/jobs/view/4408242051/":                                                               4965, // jpmorganchase
+		"https://www.linkedin.com/jobs/view/4387680921/":                                                               5014, // jpmorganchase
 		"https://www.linkedin.com/jobs/view/4055220537/":                                                               42,   // jpmorganchase
 		"https://www.linkedin.com/jobs/view/4182056179/":                                                               1121, // jpmorganchase
 		"https://www.linkedin.com/jobs/view/4254515818/":                                                               2143, // jpmorganchase
@@ -2231,6 +2233,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4312897506/":                                                               3301, // comcast
 		"https://www.linkedin.com/jobs/view/4354792574/":                                                               3759, // comcast
 		"https://www.linkedin.com/jobs/view/4393068687/":                                                               4627, // comcast
+		"https://www.linkedin.com/jobs/view/4417114226/":                                                               5015, // comcast
 		"https://www.linkedin.com/jobs/view/4369852783/":                                                               3999, // comcast
 		"https://www.linkedin.com/jobs/view/4063404057/":                                                               153,  // semrush
 		"https://www.linkedin.com/jobs/view/4077464276/":                                                               556,  // semrush
@@ -2459,6 +2462,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4381769106/":                                                               4384, // netapp
 		"https://www.linkedin.com/jobs/view/4393724311/":                                                               4582, // netapp
 		"https://www.linkedin.com/jobs/view/4400408536/":                                                               4719, // netapp
+		"https://www.linkedin.com/jobs/view/4411199065/":                                                               5016, // netapp
 		"https://www.linkedin.com/jobs/view/4063567336/":                                                               197,  // trendai-security
 		"https://www.linkedin.com/jobs/view/4226880347/":                                                               1896, // trendai-security
 		"https://www.linkedin.com/jobs/view/4226881351/":                                                               2454, // trendai-security
@@ -3855,6 +3859,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4287336668/":                                                               2776, // flow-traders
 		"https://www.linkedin.com/jobs/view/4292760005/":                                                               2802, // flow-traders
 		"https://www.linkedin.com/jobs/view/4282310276/":                                                               2663, // black-duck-software
+		"https://www.linkedin.com/jobs/view/4417173304/":                                                               5011, // black-duck-software
 		"https://www.linkedin.com/jobs/view/4214495115/":                                                               1707, // black-duck-software
 		"https://www.linkedin.com/jobs/view/4262898655/":                                                               2305, // black-duck-software
 		"https://www.linkedin.com/jobs/view/4271585493/":                                                               2495, // black-duck-software
@@ -4342,6 +4347,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4374518165/":                                                               4204, // deloitte
 		"https://www.linkedin.com/jobs/view/4379909137/":                                                               4276, // deloitte
 		"https://www.linkedin.com/jobs/view/4411520563/":                                                               4938, // deloitte
+		"https://www.linkedin.com/jobs/view/4413069199/":                                                               5017, // deloitte
 		"https://www.linkedin.com/jobs/view/4279716505/":                                                               2598, // 1touch-io
 		"https://www.linkedin.com/jobs/view/4278782092/":                                                               2599, // italki
 		"https://www.linkedin.com/jobs/view/4312070903/":                                                               3172, // italki
@@ -4894,6 +4900,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4372008252/":                                                               4109, // trade-republic
 		"https://www.linkedin.com/jobs/view/4364708193/":                                                               4111, // arkeus-sensors
 		"https://www.linkedin.com/jobs/view/4316306633/":                                                               4117, // ftapi-software-gmbh
+		"https://www.linkedin.com/jobs/view/4313340152/":                                                               5018, // ftapi-software-gmbh
 		"https://www.linkedin.com/jobs/view/4372733783/":                                                               4118, // shopfully
 		"https://www.linkedin.com/jobs/view/4373565827/":                                                               4119, // fxcintelligence
 		"https://www.linkedin.com/jobs/view/4412746768/":                                                               4881, // fxcintelligence
@@ -5006,6 +5013,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4383004583/":                                                               4980, // kai-security
 		"https://www.linkedin.com/jobs/view/4416628730/":                                                               5003, // decathlon-group
 		"https://jobs.dou.ua/companies/justmarkets/vacancies/349102/":                                                  5004, // justmarkets
+		"https://www.linkedin.com/jobs/view/4414350402/":                                                               5012, // 7mind-gmbh
 		"https://www.linkedin.com/jobs/view/3914839625/":                                                               372,  // cognizant
 		"https://www.linkedin.com/jobs/view/4120737001/":                                                               600,  // cognizant
 		"https://www.linkedin.com/jobs/view/4149258542/":                                                               787,  // cognizant

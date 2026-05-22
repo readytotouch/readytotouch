@@ -4743,7 +4743,7 @@ func companies06Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4369093448/",
 							Location:             "Wilmington, DE",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-05-01"),
+							Date:                 mustDate("2026-05-22", "2026-05-01"),
 							WithSalary:           true, // $152k/yr - $215k/yr
 							Remote:               false,
 						},
@@ -4759,7 +4759,7 @@ func companies06Shard() []domain.CompanyProfile {
 							Remote:               false,
 						},
 						{
-							Title:                "Lead Software Engineer – Golang/ Java",
+							Title:                "Lead Software Engineer – Golang/Java",
 							ShortDescription:     "",
 							SwitchingOpportunity: "",
 							URL:                  "https://www.linkedin.com/jobs/view/4408242051/",
@@ -4767,6 +4767,17 @@ func companies06Shard() []domain.CompanyProfile {
 							CloudProviders:       []domain.CloudProvider{},
 							Date:                 mustDate("2026-05-21"),
 							WithSalary:           true, // $152k/yr - $215k/yr
+							Remote:               false,
+						},
+						{
+							Title:                "Lead Software Engineer – Golang",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4387680921/",
+							Location:             "Plano, TX",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-05-22"),
+							WithSalary:           false,
 							Remote:               false,
 						},
 					},

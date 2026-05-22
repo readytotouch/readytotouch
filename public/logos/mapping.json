@@ -36,6 +36,12 @@
     "destination_72x72": ""
   },
   {
+    "alias": "7mind-gmbh",
+    "source": "7mind-gmbh-180x180.png",
+    "destination": "7mind-gmbh.png",
+    "destination_72x72": "7mind-gmbh.png"
+  },
+  {
     "alias": "815488",
     "source": "hollandandbarrett-200x200.jpeg",
     "destination": "815488.jpeg",

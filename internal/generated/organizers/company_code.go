@@ -1451,6 +1451,7 @@ var (
 		"kai-security":                        1451, // Kai
 		"decathlon-group":                     1452, // Decathlon
 		"justmarkets":                         1453, // JustMarkets
+		"7mind-gmbh":                          1454, // 7Mind GmbH
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

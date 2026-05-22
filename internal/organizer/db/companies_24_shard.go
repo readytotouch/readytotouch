@@ -54,6 +54,17 @@ func companies24Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "(Senior) Backend Engineer (Go)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4313340152/",
+							Location:             "Munich, Bavaria, Germany",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-05-22"),
+							WithSalary:           true, // €65k/yr - €105k/yr
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
