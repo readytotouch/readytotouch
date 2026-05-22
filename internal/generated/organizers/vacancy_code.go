@@ -342,6 +342,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4281376407/":                                                               3283, // citi
 		"https://www.linkedin.com/jobs/view/4325250772/":                                                               3982, // citi
 		"https://www.linkedin.com/jobs/view/4382858579/":                                                               4367, // citi
+		"https://www.linkedin.com/jobs/view/4405398261/":                                                               5008, // citi
 		"https://www.linkedin.com/jobs/view/4038005635/":                                                               308,  // cloudflare
 		"https://www.linkedin.com/jobs/view/4077533479/":                                                               545,  // cloudflare
 		"https://www.linkedin.com/jobs/view/4038010253/":                                                               645,  // cloudflare
@@ -3010,6 +3011,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4330693727/":                                                               3920, // esri
 		"https://www.linkedin.com/jobs/view/4368797197/":                                                               4003, // esri
 		"https://www.linkedin.com/jobs/view/4363089500/":                                                               4301, // esri
+		"https://www.linkedin.com/jobs/view/4417031521/":                                                               5009, // esri
 		"https://www.linkedin.com/jobs/view/4170791654/":                                                               1039, // cloudlinux
 		"https://www.linkedin.com/jobs/view/4197920577/":                                                               1546, // cloudlinux
 		"https://www.linkedin.com/jobs/view/4208666795/":                                                               1621, // cloudlinux
@@ -4710,6 +4712,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4317968904/":                                                               4162, // cloudera
 		"https://www.linkedin.com/jobs/view/4393036181/":                                                               4599, // cloudera
 		"https://www.linkedin.com/jobs/view/4407617737/":                                                               4823, // cloudera
+		"https://www.linkedin.com/jobs/view/4406989233/":                                                               5010, // cloudera
 		"https://www.linkedin.com/jobs/view/4336250122/":                                                               3436, // twilio-inc-
 		"https://www.linkedin.com/jobs/view/4361396242/":                                                               3740, // twilio-inc-
 		"https://www.linkedin.com/jobs/view/4336878749/":                                                               3437, // albatross-ai

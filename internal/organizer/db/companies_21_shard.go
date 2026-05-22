@@ -3663,7 +3663,7 @@ func companies21Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4405189232/",
 							Location:             "Netanya, Center District, Israel",
 							CloudProviders:       []domain.CloudProvider{domain.AWS, domain.GCP},
-							Date:                 mustDate("2026-04-28"),
+							Date:                 mustDate("2026-05-19", "2026-04-28"),
 							WithSalary:           false,
 							Remote:               false,
 						},
