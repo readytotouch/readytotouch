@@ -1519,7 +1519,7 @@ func companies01Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4409287625/",
 							Location:             "Bengaluru, Karnataka, India",
 							CloudProviders:       []domain.CloudProvider{},
-							Date:                 mustDate("2026-05-08"),
+							Date:                 mustDate("2026-06-20", "2026-05-08"),
 							WithSalary:           false,
 							Remote:               false,
 						},

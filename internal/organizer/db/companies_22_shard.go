@@ -4076,6 +4076,17 @@ func companies22Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               true,
 						},
+						{
+							Title:                "Senior Staff Software Engineer (Java or Scala)",
+							ShortDescription:     "Spark",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4414725492/",
+							Location:             "Budapest, Budapest, Hungary",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-06-26"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Elixir: {

@@ -4786,6 +4786,17 @@ func companies18Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Scala Developer",
+							ShortDescription:     "Spark",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4432099991/",
+							Location:             "Mumbai, Maharashtra, India",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-06-24"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {

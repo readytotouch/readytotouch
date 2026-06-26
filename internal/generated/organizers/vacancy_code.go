@@ -2018,6 +2018,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4304673155/":                                                               3299, // capital-one
 		"https://www.linkedin.com/jobs/view/4342812069/":                                                               3570, // capital-one
 		"https://www.linkedin.com/jobs/view/4362383894/":                                                               3782, // capital-one
+		"https://www.linkedin.com/jobs/view/4424732281/":                                                               5020, // capital-one
 		"https://www.linkedin.com/jobs/view/3951768378/":                                                               536,  // dynatrace
 		"https://www.linkedin.com/jobs/view/4104352080/":                                                               605,  // dynatrace
 		"https://www.linkedin.com/jobs/view/4129464627/":                                                               810,  // dynatrace
@@ -2931,6 +2932,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4300871569/":                                                               2956, // dhl
 		"https://www.linkedin.com/jobs/view/4364461165/":                                                               4062, // dhl
 		"https://www.linkedin.com/jobs/view/4392931438/":                                                               4532, // dhl
+		"https://www.linkedin.com/jobs/view/4431366515/":                                                               5021, // dhl
 		"https://www.linkedin.com/jobs/view/4277849491/":                                                               2549, // moia_mobility
 		"https://www.linkedin.com/jobs/view/4302824120/":                                                               3023, // moia_mobility
 		"https://www.linkedin.com/jobs/view/4333046395/":                                                               3270, // moia_mobility
@@ -3878,6 +3880,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4213956380/":                                                               1740, // evident-id-inc.
 		"https://www.linkedin.com/jobs/view/4378772101/":                                                               4275, // flextrade
 		"https://www.linkedin.com/jobs/view/4399610404/":                                                               4701, // flextrade
+		"https://www.linkedin.com/jobs/view/4432630200/":                                                               5022, // flextrade
 		"https://www.linkedin.com/jobs/view/4216696150/":                                                               1741, // flextrade
 		"https://www.linkedin.com/jobs/view/4263362376/":                                                               2332, // flextrade
 		"https://www.linkedin.com/jobs/view/4334468004/":                                                               3314, // flextrade
@@ -4139,6 +4142,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4261003515/":                                                               2229, // bnp-paribas
 		"https://www.linkedin.com/jobs/view/4318534106/":                                                               3246, // bnp-paribas
 		"https://www.linkedin.com/jobs/view/4339050924/":                                                               3510, // bnp-paribas
+		"https://www.linkedin.com/jobs/view/4432099991/":                                                               5023, // bnp-paribas
 		"https://www.linkedin.com/jobs/view/4313221564/":                                                               3194, // bnp-paribas
 		"https://www.linkedin.com/jobs/view/4335431028/":                                                               3553, // bnp-paribas
 		"https://www.linkedin.com/jobs/view/4261717421/":                                                               2256, // distribusion
@@ -4719,6 +4723,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4393036181/":                                                               4599, // cloudera
 		"https://www.linkedin.com/jobs/view/4407617737/":                                                               4823, // cloudera
 		"https://www.linkedin.com/jobs/view/4406989233/":                                                               5010, // cloudera
+		"https://www.linkedin.com/jobs/view/4414725492/":                                                               5024, // cloudera
 		"https://www.linkedin.com/jobs/view/4336250122/":                                                               3436, // twilio-inc-
 		"https://www.linkedin.com/jobs/view/4361396242/":                                                               3740, // twilio-inc-
 		"https://www.linkedin.com/jobs/view/4336878749/":                                                               3437, // albatross-ai
