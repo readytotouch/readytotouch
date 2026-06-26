@@ -3030,6 +3030,12 @@
     "destination_72x72": "gendigitalinc.jpeg"
   },
   {
+    "alias": "general-motors",
+    "source": "general-motors-200x200.jpeg",
+    "destination": "general-motors.jpeg",
+    "destination_72x72": "general-motors.jpeg"
+  },
+  {
     "alias": "geniussports",
     "source": "",
     "destination": "",
@@ -3520,6 +3526,12 @@
     "source": "hostaway-200x200.jpeg",
     "destination": "hostaway.jpeg",
     "destination_72x72": "hostaway.jpeg"
+  },
+  {
+    "alias": "housinganywhere",
+    "source": "housinganywhere-200x200.jpeg",
+    "destination": "housinganywhere.jpeg",
+    "destination_72x72": "housinganywhere.jpeg"
   },
   {
     "alias": "hp",

@@ -5339,6 +5339,17 @@ func companies24Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Backend Engineer (Golang)",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4432284165/",
+							Location:             "València d'Àneu, Catalonia, Spain",
+							CloudProviders:       []domain.CloudProvider{},
+							Date:                 mustDate("2026-06-24"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Rust: {
