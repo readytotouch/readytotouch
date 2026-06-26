@@ -669,6 +669,7 @@ var (
 		"koho":                                "",
 		"komerceid":                           "komerceid.jpeg",
 		"konghq":                              "konghq.jpeg",
+		"kpn":                                 "kpn.svg",
 		"krakenfx":                            "krakenfx.jpeg",
 		"krakentech":                          "krakentech.png",
 		"kroger":                              "kroger.jpeg",

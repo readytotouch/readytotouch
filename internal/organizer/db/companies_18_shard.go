@@ -2243,6 +2243,17 @@ func companies18Shard() []domain.CompanyProfile {
 							WithSalary:           false,
 							Remote:               false,
 						},
+						{
+							Title:                "Senior Software Engineer – Rust",
+							ShortDescription:     "",
+							SwitchingOpportunity: "",
+							URL:                  "https://www.linkedin.com/jobs/view/4432811257/",
+							Location:             "Eindhoven, North Brabant, Netherlands",
+							CloudProviders:       []domain.CloudProvider{domain.AWS, domain.GCP, domain.Azure},
+							Date:                 mustDate("2026-06-25"),
+							WithSalary:           false,
+							Remote:               false,
+						},
 					},
 				},
 				domain.Zig: {
