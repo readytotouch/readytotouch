@@ -3710,6 +3710,7 @@ var (
 		"https://www.linkedin.com/jobs/view/4411402373/":                                                               4873, // telnyx
 		"https://www.linkedin.com/jobs/view/4413486883/":                                                               4960, // telnyx
 		"https://www.linkedin.com/jobs/view/4407459935/":                                                               5005, // telnyx
+		"https://www.linkedin.com/jobs/view/4421140728/":                                                               5025, // telnyx
 		"https://www.linkedin.com/jobs/view/4186581023/":                                                               1575, // eunasolutions
 		"https://www.linkedin.com/jobs/view/4188235715/":                                                               1576, // driftrock
 		"https://www.linkedin.com/jobs/view/4389078637/":                                                               4504, // driftrock
@@ -5020,6 +5021,7 @@ var (
 		"https://jobs.dou.ua/companies/justmarkets/vacancies/349102/":                                                  5004, // justmarkets
 		"https://www.linkedin.com/jobs/view/4414350402/":                                                               5012, // 7mind-gmbh
 		"https://www.linkedin.com/jobs/view/4418091395/":                                                               5019, // bitdefender
+		"https://www.linkedin.com/jobs/view/4430835297/":                                                               5026, // 8seats
 		"https://www.linkedin.com/jobs/view/3914839625/":                                                               372,  // cognizant
 		"https://www.linkedin.com/jobs/view/4120737001/":                                                               600,  // cognizant
 		"https://www.linkedin.com/jobs/view/4149258542/":                                                               787,  // cognizant

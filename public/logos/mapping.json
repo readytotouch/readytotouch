@@ -48,6 +48,12 @@
     "destination_72x72": "815488.jpeg"
   },
   {
+    "alias": "8seats",
+    "source": "8seats-180x180.png",
+    "destination": "8seats.png",
+    "destination_72x72": "8seats.png"
+  },
+  {
     "alias": "90poe",
     "source": "",
     "destination": "",

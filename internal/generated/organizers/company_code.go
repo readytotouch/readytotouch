@@ -1453,6 +1453,7 @@ var (
 		"justmarkets":                         1453, // JustMarkets
 		"7mind-gmbh":                          1454, // 7Mind GmbH
 		"bitdefender":                         1455, // Bitdefender
+		"8seats":                              1456, // 8seats
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

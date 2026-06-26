@@ -1861,7 +1861,7 @@ func companies17Shard() []domain.CompanyProfile {
 							URL:                  "https://www.linkedin.com/jobs/view/4400864440/",
 							Location:             "Mexico",
 							CloudProviders:       []domain.CloudProvider{domain.AWS},
-							Date:                 mustDate("2026-05-10", "2026-04-17"),
+							Date:                 mustDate("2026-06-25", "2026-05-10", "2026-04-17"),
 							WithSalary:           false,
 							Remote:               true,
 						},

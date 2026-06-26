@@ -12,6 +12,7 @@ var (
 		"4128":                                "",
 		"7mind-gmbh":                          "7mind-gmbh.png",
 		"815488":                              "815488.jpeg",
+		"8seats":                              "8seats.png",
 		"90poe":                               "",
 		"ab-tasty":                            "",
 		"abb":                                 "",
