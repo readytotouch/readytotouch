@@ -1,3 +1,9 @@
+> ⚠️ **This repository is archived.** Weekly data updates are on pause while I focus on monetization strategy. The platform remains fully online and free to use. [Read more →](https://www.linkedin.com/feed/update/urn:li:activity:7463733938595909632)
+>
+> **Want to support the project?** Ask your recruiter about a paid pinned placement at the top of your language list — [get in touch](https://www.linkedin.com/in/yaroslav-podorvanov/).
+
+---
+
 # ReadyToTouch
 
 A job-focused list of product companies by programming language — curated manually, updated weekly.

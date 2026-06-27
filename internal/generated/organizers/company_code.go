@@ -1453,6 +1453,10 @@ var (
 		"justmarkets":                         1453, // JustMarkets
 		"7mind-gmbh":                          1454, // 7Mind GmbH
 		"bitdefender":                         1455, // Bitdefender
+		"8seats":                              1456, // 8seats
+		"kpn":                                 1457, // KPN
+		"general-motors":                      1458, // General Motors
+		"housinganywhere":                     1459, // HousingAnywhere
 		"cognizant":                           162,  // Cognizant
 		"teamsparq":                           488,  // Sparq
 

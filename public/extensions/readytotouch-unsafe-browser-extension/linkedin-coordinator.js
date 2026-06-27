@@ -51,6 +51,11 @@ activate(); // run once on initial page load
 
 // ── Ctrl+Shift+Y/Н — copy vacancy data ────────────────────────────────────
 
+// Vacancy Ctrl+Shift+1
+// Vacancy date Ctrl+Shift+2
+// Vacancy URL Ctrl+Shift+3
+// Vacancy company name Ctrl+Shift+4
+
 function vacancyHandler(event) {
     const old1 = event.ctrlKey && event.shiftKey && (event.key === "Y" || event.key === "Н");
     const new1 = event.altKey && event.shiftKey && (event.key === "!");

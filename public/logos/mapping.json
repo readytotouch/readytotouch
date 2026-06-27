@@ -48,6 +48,12 @@
     "destination_72x72": "815488.jpeg"
   },
   {
+    "alias": "8seats",
+    "source": "8seats-180x180.png",
+    "destination": "8seats.png",
+    "destination_72x72": "8seats.png"
+  },
+  {
     "alias": "90poe",
     "source": "",
     "destination": "",
@@ -3024,6 +3030,12 @@
     "destination_72x72": "gendigitalinc.jpeg"
   },
   {
+    "alias": "general-motors",
+    "source": "general-motors-200x200.jpeg",
+    "destination": "general-motors.jpeg",
+    "destination_72x72": "general-motors.jpeg"
+  },
+  {
     "alias": "geniussports",
     "source": "",
     "destination": "",
@@ -3516,6 +3528,12 @@
     "destination_72x72": "hostaway.jpeg"
   },
   {
+    "alias": "housinganywhere",
+    "source": "housinganywhere-200x200.jpeg",
+    "destination": "housinganywhere.jpeg",
+    "destination_72x72": "housinganywhere.jpeg"
+  },
+  {
     "alias": "hp",
     "source": "hp-200x200.jpeg",
     "destination": "hp.jpeg",
@@ -3982,6 +4000,12 @@
     "source": "konghq-200x200.jpeg",
     "destination": "konghq.jpeg",
     "destination_72x72": "konghq.jpeg"
+  },
+  {
+    "alias": "kpn",
+    "source": "kpn.svg",
+    "destination": "kpn.svg",
+    "destination_72x72": "kpn.svg"
   },
   {
     "alias": "krakenfx",
