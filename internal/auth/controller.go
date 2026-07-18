@@ -119,7 +119,7 @@ func (c *Controller) callback(ctx *gin.Context, provider domain.OAuthProvider) {
 
 	token, err := provider.GetConfig().Exchange(ctx, queryCode)
 	if err != nil {
-		ctx.Data(http.StatusInternalServerError, "text/html; charset=utf-8", []byte("Cannot retrieve access token from OAuth2 provider"))
+		ctx.Data(http.StatusInternalServerError, "text/html; charset=utf-8", []byte("Cannot retrieve access token from OAuth2 provider" + " err:" + err.Error()))
 
 		return
 	}
