@@ -67,8 +67,15 @@ func (r *UserToLinkedInCompanyRepository) ExistsVanityName(ctx context.Context, 
 	return r.db.Queries().WipLinkedInCompanyRequestHistoryExistsVanityName(ctx, name)
 }
 
-func (r *UserToLinkedInCompanyRepository) GetRequestHistoryCount(ctx context.Context, userID int64) (int64, error) {
-	return r.db.Queries().WipLinkedInCompanyRequestHistoryCount(ctx, userID)
+func (r *UserToLinkedInCompanyRepository) GetRequestHistoryCount(
+	ctx context.Context,
+	userID int64,
+	afterCreatedAt time.Time,
+) (int64, error) {
+	return r.db.Queries().WipLinkedInCompanyRequestHistoryCount(ctx, dbs.WipLinkedInCompanyRequestHistoryCountParams{
+		CreatedBy:      userID,
+		AfterCreatedAt: afterCreatedAt,
+	})
 }
 
 func (r *UserToLinkedInCompanyRepository) CreateCompany(
