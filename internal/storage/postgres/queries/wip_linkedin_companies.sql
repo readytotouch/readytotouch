@@ -21,7 +21,8 @@ SELECT EXISTS(
 -- name: WipLinkedInCompanyRequestHistoryCount :one
 SELECT COUNT(*) AS total
 FROM wip_linkedin_company_request_history
-WHERE created_by = @created_by;
+WHERE created_by = @created_by
+  AND created_at > @after_created_at;
 
 -- name: WipUserToLinkedInCompaniesAdd :exec
 INSERT INTO wip_user_to_linkedin_companies AS t (user_id, linkedin_company_id, active, created_at, created_by,

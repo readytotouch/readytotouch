@@ -46,7 +46,11 @@ func (s *Service) Load(ctx context.Context, companyVanityName string, userID int
 
 	// Minimize the number of requests to the LinkedIn API per user
 	if organizers.CompanyAliasToCodeMap[companyVanityName] == 0 {
-		previousRequestHistoryCount, err := s.userToLinkedInCompanyRepository.GetRequestHistoryCount(ctx, userID)
+		previousRequestHistoryCount, err := s.userToLinkedInCompanyRepository.GetRequestHistoryCount(
+			ctx,
+			userID,
+			now.Truncate(time.Hour).Add(-7*24*time.Hour), // 7 days ago
+		)
 		if err != nil {
 			return 0, err
 		}
