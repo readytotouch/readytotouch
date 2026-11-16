@@ -1,0 +1,15 @@
+{%- func Companies(data *CompaniesMarkdown) -%}
+# Companies Using {%s data.LanguageTitle %} in Production
+
+Job-focused list of **{%d data.Total %} product companies** using {%s data.LanguageTitle %}. No outsourcing, no agencies.
+
+Browse the full, filterable list on ReadyToTouch: [{%s data.LanguageTitle %} companies](https://readytotouch.com/{%s data.LanguageAlias %}/companies) | [{%s data.LanguageTitle %} jobs](https://readytotouch.com/{%s data.LanguageAlias %}/jobs)
+
+Companies are sorted by the most recent job opening.
+
+| Company | ReadyToTouch | Careers | LinkedIn | GitHub |
+|---------|--------------|---------|----------|--------|
+{% for _, row := range data.Companies -%}
+| {%s= markdownLink(markdownCell(row.Name), row.WebsiteURL) %} | {%s= markdownLink("Profile", row.ProfileURL) %} | {%s= markdownLink("Careers", row.CareersURL) %} | {%s= markdownLink("LinkedIn", row.LinkedIn) %} | {%s= markdownLink("GitHub", row.GitHub) %} |
+{% endfor -%}
+{%- endfunc -%}

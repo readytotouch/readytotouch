@@ -3,6 +3,7 @@ package dev
 import (
 	"fmt"
 	"net/url"
+	"strings"
 )
 
 type CompanyCodePair struct {
@@ -28,4 +29,32 @@ func googleSearchLogos(companyName string) string {
 	}
 
 	return "https://www.google.com/search?" + values.Encode()
+}
+
+type CompanyMarkdownRow struct {
+	Name       string
+	WebsiteURL string
+	ProfileURL string
+	CareersURL string
+	LinkedIn   string
+	GitHub     string
+}
+
+type CompaniesMarkdown struct {
+	LanguageTitle string
+	LanguageAlias string
+	Total         int
+	Companies     []*CompanyMarkdownRow
+}
+
+func markdownCell(s string) string {
+	return strings.NewReplacer("|", "\\|", "[", "\\[", "]", "\\]").Replace(s)
+}
+
+func markdownLink(title, url string) string {
+	if url == "" {
+		return ""
+	}
+
+	return "[" + title + "](" + url + ")"
 }
