@@ -181,6 +181,9 @@ generate-protos:
 generate-organizers:
 	go run ./cmd/organizers/generate/main.go
 
+generate-companies-markdown:
+	go run ./cmd/organizers/generate-companies-markdown/main.go
+
 review-logos:
 	go run ./cmd/organizers/review-logos/main.go
 

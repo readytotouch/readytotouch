@@ -20,18 +20,20 @@
 
 ## Мови
 
-| Мова                                                  | Компаній  |
-|-------------------------------------------------------|-----------|
-| [Go](https://readytotouch.com/golang/companies)       | 921       |
-| [Rust](https://readytotouch.com/rust/companies)       | 301       |
-| [Scala](https://readytotouch.com/scala/companies)     | 169       |
-| [Elixir](https://readytotouch.com/elixir/companies)   | 119       |
-| [Clojure](https://readytotouch.com/clojure/companies) | 25        |
-| [Erlang](https://readytotouch.com/erlang/companies)   | —         |
-| [Zig](https://readytotouch.com/zig/companies)         | —         |
-| [Haskell](https://readytotouch.com/haskell/companies) | 11        |
-| [F#](https://readytotouch.com/fsharp/companies)       | —         |
-| [OCaml](https://readytotouch.com/ocaml/companies)     | —         |
+<!-- languages-table:start -->
+| Мова                                                  | Компаній | Список Markdown                      |
+|-------------------------------------------------------|----------|--------------------------------------|
+| [Go](https://readytotouch.com/golang/companies)       | 953      | [Go](docs/companies/golang.md)       |
+| [Rust](https://readytotouch.com/rust/companies)       | 320      | [Rust](docs/companies/rust.md)       |
+| [Scala](https://readytotouch.com/scala/companies)     | 174      | [Scala](docs/companies/scala.md)     |
+| [Elixir](https://readytotouch.com/elixir/companies)   | 122      | [Elixir](docs/companies/elixir.md)   |
+| [Clojure](https://readytotouch.com/clojure/companies) | 25       | [Clojure](docs/companies/clojure.md) |
+| [Erlang](https://readytotouch.com/erlang/companies)   | 1        | —                                    |
+| [Zig](https://readytotouch.com/zig/companies)         | —        | —                                    |
+| [Haskell](https://readytotouch.com/haskell/companies) | 11       | —                                    |
+| [F#](https://readytotouch.com/fsharp/companies)       | —        | —                                    |
+| [OCaml](https://readytotouch.com/ocaml/companies)     | —        | —                                    |
+<!-- languages-table:end -->
 
 ## Як це працює
 
