@@ -2,11 +2,19 @@
 >
 > **Want to support the project?** Ask your recruiter about a paid pinned placement at the top of your language list — [get in touch](https://www.linkedin.com/in/yaroslav-podorvanov/).
 
+**English** | [Українська](README.uk.md)
+
 ---
 
-# ReadyToTouch
+# ReadyToTouch — Product Companies Using Go, Rust, Scala, Elixir in Production
 
-A job-focused list of product companies by programming language — curated manually, updated weekly.
+A job-focused list of **product companies by programming language** — curated manually. Find companies that use Go, Rust, Scala, Elixir, Clojure and other languages in production, then research them and reach out to the people who work there. 2,000+ GitHub stars, ~1,200 visitors per month.
+
+## Who is this for
+
+- Developers who want to **switch to a modern backend stack** (Go, Rust, Elixir, Scala, …) and need to know which companies actually use it.
+- Engineers who want to **prepare for a job search before they need one** — build a target list of companies and connect with people there early.
+- Anyone looking for **product companies and startups** instead of outsourcing and agencies.
 
 ## Languages
 
@@ -23,9 +31,20 @@ A job-focused list of product companies by programming language — curated manu
 | [F#](https://readytotouch.com/fsharp/companies)       | —         |
 | [OCaml](https://readytotouch.com/ocaml/companies)     | —         |
 
-Product companies and startups only — no outsourcing, no agencies.
+## How it works
+
+1. **Pick a language** and open its company list, sorted by the most recent job openings.
+2. **Filter** by industry (MedTech, FinTech, PropTech, …) and cloud provider (AWS, GCP, Azure) to target companies that match your experience, or a domain you want to grow into.
+3. **Open a company profile** and research the company before applying.
+4. **Connect early** — find current and former employees on LinkedIn, so that when you start looking for a job, they already know you.
 
 Each company profile includes links to Careers, GitHub, Glassdoor, Levels.fyi, and LinkedIn search for current and former employees.
+
+## What gets included
+
+- ✅ Product companies and startups.
+- ❌ No outsourcing, outstaffing, or recruiting agencies.
+- 🔒 Crypto, Web3, and iGaming companies are included but blurred by default, with an opt-in button.
 
 ## Why this exists
 
@@ -37,6 +56,18 @@ That side project grew into ReadyToTouch.
 
 **How do I switch to Go, Rust, Elixir, or another modern backend stack?**
 [How to Switch to Go, Rust, Elixir, or Any Modern Backend Stack](https://dev.to/yaroslavpodorvanov/how-to-switch-to-go-rust-elixir-or-any-modern-backend-stack-1io0)
+
+## Alternatives
+
+- [Golang Cafe](https://golang.cafe/)
+- [Golang Projects](https://www.golangprojects.com/)
+- [Rust Jobs](https://rustjobs.dev/)
+- [Let's Get Rusty Jobs](https://jobs.letsgetrusty.com/)
+- [Scala Jobs](https://scalajobs.com/)
+- [Elixir Forum — Jobs](https://elixirforum.com/c/work/elixir-jobs/16)
+- [OCaml Jobs](https://ocaml.org/jobs)
+- [Awesome Functional Programming Jobs](https://github.com/ad-si/awesome-fp-jobs)
+- [Hacker News "Who is hiring" by technology](https://hnhiring.com/)
 
 ## Articles
 
@@ -72,14 +103,6 @@ That side project grew into ReadyToTouch.
 - https://readytotouch.com/plausible
 - https://readytotouch.com/similarweb
 
-## Local development
-```bash
-make env-docker-compose-development
-make env-up
-make pg-fixtures
-make app-restart
-```
-
 ## Contributions
 
 **The project is not open for contributions at this time.**
@@ -89,6 +112,14 @@ Reasons:
 2. I have a small team with an established workflow — this is a side project we maintain at our own pace, and additional contributions would slow things down rather than help.
 
 Thank you for your understanding!
+
+## Local development
+```bash
+make env-docker-compose-development
+make env-up
+make pg-fixtures
+make app-restart
+```
 
 ## Research
 
