@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 1000">
+  <defs>
+    <style>.cls-1{fill:url(#linear-gradient);}.cls-1,.cls-2,.cls-3{stroke-width:0px;}.cls-2{fill:url(#linear-gradient-2);}.cls-3{fill:#c57768;}</style>
+    <linearGradient id="linear-gradient" x1="134.29" y1="772.56" x2="686.79" y2="356.21" gradientUnits="userSpaceOnUse">
+      <stop offset=".09" stop-color="#f8c840"></stop>
+      <stop offset=".12" stop-color="#f7c241"></stop>
+      <stop offset=".25" stop-color="#f3b047"></stop>
+      <stop offset=".37" stop-color="#f1a44a"></stop>
+      <stop offset=".51" stop-color="#f1a14c"></stop>
+      <stop offset="1" stop-color="#ea805f"></stop>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="134.29" y1="406.36" x2="686.79" y2="-9.98" gradientUnits="userSpaceOnUse">
+      <stop offset=".11" stop-color="#f8c840"></stop>
+      <stop offset=".13" stop-color="#f7c241"></stop>
+      <stop offset=".25" stop-color="#f3b047"></stop>
+      <stop offset=".38" stop-color="#f1a44a"></stop>
+      <stop offset=".51" stop-color="#f1a14c"></stop>
+      <stop offset="1" stop-color="#ea805f"></stop>
+    </linearGradient>
+  </defs>
+  <polyline class="cls-1" points="253 930.09 253 436.1 747 436.1"></polyline>
+  <polyline class="cls-3" points="253 678.24 253 436.1 495.14 436.1"></polyline>
+  <polyline class="cls-2" points="253 563.9 253 69.91 747 69.91"></polyline>
+</svg>

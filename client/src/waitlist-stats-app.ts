@@ -57,11 +57,11 @@ function renderWaitlistStats(data) {
 }
 
 function renderViewsStats(data: Array<TimeCountStats>) {
-    render(document.querySelector(".js-chart-views-statistics"), 'Views', "#8D6DFF", data);
+    render(document.querySelector(".js-chart-views-statistics"), "Views", "#8D6DFF", data);
 }
 
 function renderSubscribersStats(data: Array<TimeCountStats>) {
-    render(document.querySelector(".js-chart-subscribers-statistics"), 'Subscribers', "#5484FF", data);
+    render(document.querySelector(".js-chart-subscribers-statistics"), "Subscribers", "#5484FF", data);
 }
 
 function render($element: Element, name, color: string, data: Array<TimeCountStats>) {

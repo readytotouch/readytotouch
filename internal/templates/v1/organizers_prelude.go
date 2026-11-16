@@ -6,10 +6,11 @@ import (
 	"time"
 
 	"github.com/readytotouch/readytotouch/internal/domain"
+	"github.com/readytotouch/readytotouch/internal/utils"
 )
 
 const (
-	Go = 0
+	Go = domain.Go
 )
 
 const (
@@ -19,16 +20,29 @@ const (
 
 var (
 	industries = []Industry{
+		domain.IndustryAutomotive,
 		domain.IndustryCyberSecurity,
+		domain.IndustryEdTech,
+		domain.IndustryECommerce,
 		domain.IndustryHealthTech,
+		domain.IndustryMedTech,
 		domain.IndustryFinTech,
+		domain.IndustryGameDev,
 		domain.IndustryAdTech,
 		domain.IndustryMarTech,
 		domain.IndustryDevOps,
+		domain.IndustryCloudComputing,
 		domain.IndustryBigData,
 		domain.IndustrySocialMedia,
 		domain.IndustryEntertainment,
 		domain.IndustryPropTech,
+		domain.IndustryAgroTech,
+		domain.IndustryInsurTech,
+		domain.IndustryLogisticsTech,
+		domain.IndustryTelecom,
+		domain.IndustryDefenseTech,
+		domain.IndustryTravelTech,
+		domain.IndustryCryptoCurrency,
 	}
 )
 
@@ -41,7 +55,8 @@ type (
 		TotalFavorites     int64
 		LastMonthFavorites int64
 	}
-	Industry = domain.Industry
+	AliasName = domain.AliasName
+	Industry  = domain.Industry
 )
 
 type featureNavigation struct {
@@ -57,7 +72,7 @@ func toFeatureNavigation(path string) featureNavigation {
 		}
 	}
 
-	if strings.HasSuffix(path, "/vacancies") {
+	if strings.HasSuffix(path, "/jobs") {
 		return featureNavigation{
 			companiesActive: "",
 			vacanciesActive: "active",
@@ -70,7 +85,15 @@ func toFeatureNavigation(path string) featureNavigation {
 	}
 }
 
-func aliases(source []Industry) string {
+func aliases(source []AliasName) string {
+	result := make([]string, len(source))
+	for i, v := range source {
+		result[i] = v.Alias
+	}
+	return strings.Join(result, ",")
+}
+
+func industryAliases(source []Industry) string {
 	result := make([]string, len(source))
 	for i, v := range source {
 		result[i] = v.Alias
@@ -79,11 +102,19 @@ func aliases(source []Industry) string {
 }
 
 func industryNames(source []Industry) string {
+	if len(source) == 0 {
+		return "Unknown industry"
+	}
+
 	result := make([]string, len(source))
 	for i, v := range source {
 		result[i] = v.Name
 	}
 	return strings.Join(result, ", ")
+}
+
+func vacancyDescription(vacancy domain.PreparedVacancy) string {
+	return utils.VacancyDescription(vacancy.ShortDescription, vacancy.SwitchingOpportunity)
 }
 
 func formatLinkedInFollowers(s string) string {
@@ -110,8 +141,16 @@ func formatLinkedInAssociatedMembers(s string) string {
 	return s
 }
 
-func fetchGitHubRepositoriesCount(company domain.CompanyProfile, language domain.Language) int {
-	return company.Languages[language].GitHubRepositoriesCount
+func formatGitHubRepositoryCount(company domain.CompanyProfile, language domain.Language) int {
+	return company.Languages[language].GitHubRepositoryCount
+}
+
+func formatGitHubFollowers(company domain.CompanyProfile) string {
+	if company.GitHubProfile.Followers == "" {
+		return "?"
+	}
+
+	return company.GitHubProfile.Followers
 }
 
 func formatBlindEmployees(s string) string {
@@ -205,12 +244,67 @@ func formatVacancyDiffDate(t time.Time) string {
 }
 
 func isLinkedInVacancyURL(s string) bool {
-	return strings.Contains(s, "https://www.linkedin.com/jobs/view/")
+	return utils.IsLinkedInVacancyURL(s)
 }
 
 func isOttaVacancyURL(s string) bool {
-	return strings.Contains(s, "https://app.welcometothejungle.com/jobs/") ||
-		strings.Contains(s, "https://app.otta.com/jobs/")
+	return utils.IsOttaVacancyURL(s)
+}
+
+func isIndeedVacancyURL(s string) bool {
+	return utils.IsIndeedVacancyURL(s)
+}
+
+func isXingVacancyURL(s string) bool {
+	return utils.IsXingVacancyURL(s)
+}
+
+func logo(l domain.CompanyLogo) string {
+	if l.V2 != "" {
+		return "/assets/unstable/logos/112x56/" + l.V2
+	}
+
+	if l.V1 != "" {
+		return "/assets/unstable/logos-v1/" + l.V1
+	}
+
+	if l.V0 != "" {
+		return "/assets/unstable/logos-v0/" + l.V0
+	}
+
+	return "/assets/images/pages/common-images/unknown.svg"
+}
+
+func logo72x72(l domain.CompanyLogo) string {
+	if l.V2 != "" {
+		return "/assets/unstable/logos/72x72/" + l.V2
+	}
+
+	return "/assets/images/pages/common-images/unknown.svg"
+}
+
+func logoV1(l domain.CompanyLogo) string {
+	if l.V1 != "" {
+		return "/assets/unstable/logos-v1/" + l.V1
+	}
+
+	return "/assets/images/pages/common-images/unknown.svg"
+}
+
+func logoV2(l domain.CompanyLogo) string {
+	if l.V2 != "" {
+		return "/assets/unstable/logos/112x56/" + l.V2
+	}
+
+	return "/assets/images/pages/common-images/unknown.svg"
+}
+
+func logoV0(l domain.CompanyLogo) string {
+	if l.V0 != "" {
+		return "/assets/unstable/logos-v0/" + l.V0
+	}
+
+	return "/assets/images/pages/common-images/unknown.svg"
 }
 
 var (

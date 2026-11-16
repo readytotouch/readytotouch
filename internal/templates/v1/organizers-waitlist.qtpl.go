@@ -47,7 +47,10 @@ func StreamOrganizersWaitlist(qw422016 *qt422016.Writer, organizerFeature Organi
 	streamorganizersWaitlistStyles(qw422016)
 	qw422016.N().S(`
 	<script src="https://cdn.jsdelivr.net/npm/apexcharts@3.52.0"></script>
-	`)
+    `)
+	streamplausibleAnalytics(qw422016)
+	qw422016.N().S(`
+    `)
 	streamga(qw422016)
 	qw422016.N().S(`
 </head>
@@ -58,14 +61,15 @@ func StreamOrganizersWaitlist(qw422016 *qt422016.Writer, organizerFeature Organi
   <div class="header__wrapper">
     <a href="/organizers" class="header__logo">
       <img
-        width="129"
-        height="32"
+        width="30"
+        height="30"
         class="header__logo-img"
         src="/assets/images/pages/organizer/`)
 	qw422016.E().S(organizerFeature.Organizer.Logo)
 	qw422016.N().S(`"
         alt="organizer logo"
       />
+      <span class="header__logo-label">Organizer</span>
     </a>
     `)
 	var navigation = toFeatureNavigation(organizerFeature.Path)
@@ -73,38 +77,35 @@ func StreamOrganizersWaitlist(qw422016 *qt422016.Writer, organizerFeature Organi
 	qw422016.N().S(`
     <ul class="header__nav">
       <li class="header__nav-item">
-        <a href="/organizers/`)
+        <a href="/`)
 	qw422016.E().S(organizerFeature.Organizer.Alias)
 	qw422016.N().S(`/companies" class="header__nav-link `)
 	qw422016.E().S(navigation.companiesActive)
 	qw422016.N().S(`">Companies</a>
       </li>
       <li class="header__nav-item">
-        <a href="/organizers/`)
+        <a href="/`)
 	qw422016.E().S(organizerFeature.Organizer.Alias)
-	qw422016.N().S(`/vacancies" class="header__nav-link `)
+	qw422016.N().S(`/jobs" class="header__nav-link `)
 	qw422016.E().S(navigation.vacanciesActive)
-	qw422016.N().S(`">Vacancies</a>
+	qw422016.N().S(`">Jobs</a>
       </li>
-      <li class="header__nav-item">
-        <a href="/organizers/`)
-	qw422016.E().S(organizerFeature.Organizer.Alias)
-	qw422016.N().S(`/communities" class="header__nav-link">Communities</a>
-      </li>
+      `)
+	qw422016.N().S(`
     </ul>
     `)
-	streamorganizersHeaderStars(qw422016)
+	streamorganizersHeaderStarsV1(qw422016)
 	qw422016.N().S(`
     `)
 	if len(headerProfiles) > 0 {
 		qw422016.N().S(`
     `)
-		streamorganizersHeaderProfile(qw422016, headerProfiles)
+		streamorganizersHeaderProfileV1(qw422016, headerProfiles)
 		qw422016.N().S(`
     `)
 	} else {
 		qw422016.N().S(`
-    <a href="/organizers/`)
+    <a href="/`)
 		qw422016.E().S(organizerFeature.Organizer.Alias)
 		qw422016.N().S(`/welcome`)
 		qw422016.E().S(authQueryParams)
@@ -234,7 +235,7 @@ func StreamOrganizersWaitlist(qw422016 *qt422016.Writer, organizerFeature Organi
 
 </main>
 `)
-	streamorganizersFooter(qw422016)
+	streamorganizersFooterV1(qw422016)
 	qw422016.N().S(`
 <script src="/assets/js/waitlist-stats-app.js?`)
 	qw422016.N().D(appVersion)

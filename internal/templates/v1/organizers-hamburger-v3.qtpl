@@ -1,0 +1,11 @@
+{% func organizersHamburgerV3() %}
+<button class="hamburger hamburger--spin header__hamburger js-hamburger"
+  type="button"
+  aria-expanded="false"
+  aria-label="Open the menu"
+>
+  <span class="hamburger__box">
+    <span class="hamburger__inner"></span>
+  </span>
+</button>
+{% endfunc %}

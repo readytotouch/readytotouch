@@ -1,11 +1,11 @@
-import {organizersWelcome} from "./welcome";
-
 import urlStateContainer from "./framework/company_url_state_container";
 import {
     COMPANY_SEARCH_QUERY,
     COMPANY_TYPE_CRITERIA_NAME,
     COMPANY_INDUSTRY_CRITERIA_NAME,
     COMPANY_HAS_EMPLOYEES_FROM_COUNTRY_CRITERIA_NAME,
+    COMPANY_RUST_FOUNDATION_MEMBERS_CRITERIA_NAME,
+    COMPANY_REMOTE_CRITERIA_NAME,
     COMPANY_IN_FAVORITES_CRITERIA_NAME,
 } from "./framework/company_criteria_names";
 import {InputCheckboxes} from "./framework/checkboxes";
@@ -17,59 +17,35 @@ import {Alias} from "./framework/alias";
 import {renderSelected} from "./framework/selected_criteria";
 import {firstQuerySelector} from "./framework/query_selector";
 import {setStateByURLMapper} from "./framework/set_state_by_url";
-import {toEnter} from "./framework/enter";
-
-function markCompanyFavorite(companyId: number, favorite: boolean, callback: () => void) {
-    fetch(`/api/v1/companies/${companyId}/favorite.json`, {
-        method: "PATCH",
-        body: JSON.stringify({
-            favorite: favorite,
-        }),
-    }).then(function (response) {
-        // Unauthorized
-        if (response.status === 401) {
-            window.location.href = organizersWelcome();
-
-            return;
-        }
-
-        callback();
-    }).catch(console.error);
-}
+import {responsiveHeaderProfileWidget} from "./responsive-header-profile-widget";
+import {responsiveFilterWidget} from "./responsive-filter-widget";
+import {responsiveCompanyShowMoreWidget} from "./responsive-company-show-more-widget";
+import {addCompanyFavoriteEvent} from "./organizers-companies-favorite";
 
 const $companies = document.querySelectorAll(".js-company");
 const $resultCount = document.getElementById("js-result-count");
 
-$companies.forEach(function ($company: HTMLElement) {
-    const companyId = parseInt($company.getAttribute("data-company-id"));
-
-    const $favorite = $company.querySelector(".js-company-favorite");
-    $favorite.addEventListener("click", function () {
-        const current = $favorite.classList.contains("in-favorite");
-        const next = !current;
-
-        markCompanyFavorite(companyId, next, function () {
-            if (next) {
-                $favorite.classList.add("in-favorite");
-
-                $favorite.setAttribute("title", "Remove from favorites")
-            } else {
-                $favorite.classList.remove("in-favorite");
-
-                $favorite.setAttribute("title", "Add to favorites")
-            }
-        });
-    });
+$companies.forEach(function ($company) {
+    addCompanyFavoriteEvent(
+        $company as HTMLElement,
+        {
+            id: parseInt($company.getAttribute("data-company-id")),
+            favorite: $company.querySelector(".js-company-favorite").classList.contains("in-favorite"),
+        } as any,
+    );
 });
 
-
+const $form = document.getElementById("js-company-search-form");
 const $search = document.getElementById("js-company-query") as HTMLInputElement;
 const $typeCheckboxes = new InputCheckboxes(document.querySelectorAll("input.js-criteria-company-type") as any as Array<HTMLInputElement>);
 const $industryCheckboxes = new InputCheckboxes(document.querySelectorAll("input.js-criteria-company-industry") as any as Array<HTMLInputElement>);
 const $hasEmployeesFromCountryCheckboxes = new InputCheckboxes(document.querySelectorAll("input.js-criteria-has-employees-from-country") as any as Array<HTMLInputElement>);
+const $remoteCheckbox = document.getElementById("js-criteria-remote") as HTMLInputElement;
 const $inFavoritesCheckbox = document.getElementById("js-criteria-in-favorites") as HTMLInputElement;
+const $inRustFoundationMembersCheckbox = document.getElementById("js-criteria-rust-foundation-members") as HTMLInputElement;
 const $selectedCriteria = document.getElementById("js-company-selected-criteria");
-const $reset = document.getElementById("js-criteria-reset");
+const $optionalMobileSelectedCriteriaCount = document.getElementById("js-mobile-selected-criteria-count");
+const $resetButtons = document.querySelectorAll(".js-criteria-reset") as any as Array<HTMLElement>;
 
 $typeCheckboxes.onChange(function (state: Array<string>) {
     urlStateContainer.setArrayCriteria(COMPANY_TYPE_CRITERIA_NAME, state);
@@ -101,6 +77,28 @@ $hasEmployeesFromCountryCheckboxes.onChange(function (state: Array<string>) {
     search();
 });
 
+if ($inRustFoundationMembersCheckbox) {
+    $inRustFoundationMembersCheckbox.addEventListener("change", function () {
+        urlStateContainer.setBoolCriteria(COMPANY_RUST_FOUNDATION_MEMBERS_CRITERIA_NAME, $inRustFoundationMembersCheckbox.checked);
+        urlStateContainer.setPage(1);
+        urlStateContainer.storeCurrentState();
+
+        renderSelectedCriteriaByURL();
+
+        search();
+    });
+}
+
+$remoteCheckbox.addEventListener("change", function () {
+    urlStateContainer.setBoolCriteria(COMPANY_REMOTE_CRITERIA_NAME, $remoteCheckbox.checked);
+    urlStateContainer.setPage(1);
+    urlStateContainer.storeCurrentState();
+
+    renderSelectedCriteriaByURL();
+
+    search();
+});
+
 $inFavoritesCheckbox.addEventListener("change", function () {
     urlStateContainer.setBoolCriteria(COMPANY_IN_FAVORITES_CRITERIA_NAME, $inFavoritesCheckbox.checked);
     urlStateContainer.setPage(1);
@@ -124,6 +122,10 @@ function setStateByURL() {
     setCheckboxesStateByURL($industryCheckboxes, COMPANY_INDUSTRY_CRITERIA_NAME);
     setCheckboxesStateByURL($hasEmployeesFromCountryCheckboxes, COMPANY_HAS_EMPLOYEES_FROM_COUNTRY_CRITERIA_NAME);
 
+    if ($inRustFoundationMembersCheckbox) {
+        setCheckboxStateByURL($inRustFoundationMembersCheckbox, COMPANY_RUST_FOUNDATION_MEMBERS_CRITERIA_NAME);
+    }
+    setCheckboxStateByURL($remoteCheckbox, COMPANY_REMOTE_CRITERIA_NAME);
     setCheckboxStateByURL($inFavoritesCheckbox, COMPANY_IN_FAVORITES_CRITERIA_NAME);
 }
 
@@ -133,14 +135,22 @@ function renderSelectedCriteriaByURL() {
     renderSelectedCheckboxes($views, COMPANY_TYPE_CRITERIA_NAME, companyTypes);
     renderSelectedCheckboxes($views, COMPANY_INDUSTRY_CRITERIA_NAME, industries);
     renderSelectedCheckboxes($views, COMPANY_HAS_EMPLOYEES_FROM_COUNTRY_CRITERIA_NAME, hasEmployeesFromCountries);
+    renderSelectedCheckbox($views, COMPANY_RUST_FOUNDATION_MEMBERS_CRITERIA_NAME, "Rust Foundation Members");
+    renderSelectedCheckbox($views, COMPANY_REMOTE_CRITERIA_NAME, "Remote");
     renderSelectedCheckbox($views, COMPANY_IN_FAVORITES_CRITERIA_NAME, "Favorites");
 
     $selectedCriteria.innerHTML = "";
     $selectedCriteria.append(...$views);
 
     const visibility = $views.length === 0 ? "hidden" : "";
-    $reset.style.visibility = visibility;
+    for (const $resetButton of $resetButtons) {
+        $resetButton.style.visibility = visibility;
+    }
     $selectedCriteria.parentElement.style.visibility = visibility;
+    if ($optionalMobileSelectedCriteriaCount) {
+        $optionalMobileSelectedCriteriaCount.innerHTML = $views.length.toString();
+        $optionalMobileSelectedCriteriaCount.style.visibility = visibility;
+    }
 }
 
 function renderSelectedCheckboxes(
@@ -190,19 +200,23 @@ const handleSearch = function () {
     search();
 }
 
-$search.addEventListener("keyup", toEnter(handleSearch));
-$search.addEventListener("change", function () {
+$form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
     urlStateContainer.setStringCriteria(COMPANY_SEARCH_QUERY, $search.value);
-});
-$search.addEventListener("search", handleSearch);
 
-$reset.addEventListener("click", function () {
-    urlStateContainer.keep(COMPANY_SEARCH_QUERY);
-    urlStateContainer.setPage(1);
-    urlStateContainer.storeCurrentState();
-
-    updatePageState();
+    handleSearch();
 });
+
+for (const $resetButton of $resetButtons) {
+    $resetButton.addEventListener("click", function () {
+        urlStateContainer.keep(COMPANY_SEARCH_QUERY);
+        urlStateContainer.setPage(1);
+        urlStateContainer.storeCurrentState();
+
+        updatePageState();
+    });
+}
 
 function updatePageState() {
     setStateByURL();
@@ -217,6 +231,8 @@ function search() {
     const types = urlStateContainer.getCriteria(COMPANY_TYPE_CRITERIA_NAME, []);
     const industries = urlStateContainer.getCriteria(COMPANY_INDUSTRY_CRITERIA_NAME, []);
     const hasEmployeesFromCountries = urlStateContainer.getCriteria(COMPANY_HAS_EMPLOYEES_FROM_COUNTRY_CRITERIA_NAME, []);
+    const isRustFoundationMembers = urlStateContainer.getCriteria(COMPANY_RUST_FOUNDATION_MEMBERS_CRITERIA_NAME, false);
+    const remote = urlStateContainer.getCriteria(COMPANY_REMOTE_CRITERIA_NAME, false);
     const inFavorites = urlStateContainer.getCriteria(COMPANY_IN_FAVORITES_CRITERIA_NAME, false);
 
     const matchQuery = function ($company: HTMLElement): boolean {
@@ -284,6 +300,14 @@ function search() {
             return false;
         }
 
+        if (isRustFoundationMembers && $company.getAttribute("data-company-rust-foundation-members") !== "true") {
+            return false;
+        }
+
+        if (remote && $company.getAttribute("data-company-remote") !== "true") {
+            return false;
+        }
+
         if (inFavorites) {
             const $favorite = $company.querySelector(".js-company-favorite");
             const current = $favorite.classList.contains("in-favorite");
@@ -298,19 +322,36 @@ function search() {
 
     let total = 0;
 
-    $companies.forEach(function ($company: HTMLElement) {
-        if (match($company)) {
-            $company.style.display = "block";
+    // hide container to prevent multiple reflows
+    {
+        // debug time measurement
+        const start = performance.now();
 
-            total++;
+        $companies.forEach(function ($company: HTMLElement) {
+            if (match($company)) {
+                $company.hidden = false;
 
-            return;
-        }
+                total++;
 
-        $company.style.display = "none";
-    });
+                return;
+            }
+
+            $company.hidden = true;
+        });
+
+        // debug time measurement
+        const end = performance.now();
+
+        console.log(`Search took ${end - start} milliseconds.`);
+    }
 
     $resultCount.innerHTML = total.toString();
 }
 
 updatePageState();
+
+responsiveHeaderProfileWidget();
+
+responsiveFilterWidget();
+
+responsiveCompanyShowMoreWidget();

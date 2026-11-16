@@ -1,20 +1,32 @@
 package organizer
 
 import (
+	"encoding/xml"
+	"fmt"
 	"net/http"
 	"net/url"
+	"slices"
 	"sort"
 	"strings"
 	"time"
 
 	"github.com/readytotouch/readytotouch/internal/db/postgres"
 	"github.com/readytotouch/readytotouch/internal/domain"
+	"github.com/readytotouch/readytotouch/internal/generated/organizers"
+	"github.com/readytotouch/readytotouch/internal/logger"
 	"github.com/readytotouch/readytotouch/internal/organizer/db"
-	"github.com/readytotouch/readytotouch/internal/protos/organizers"
 	"github.com/readytotouch/readytotouch/internal/storage/postgres/dbs"
 	template "github.com/readytotouch/readytotouch/internal/templates/v1"
+	"github.com/readytotouch/readytotouch/internal/utils"
 
 	"github.com/gin-gonic/gin"
+)
+
+var (
+	defaultLanguagePinnedCompanyMap = map[domain.Language]string{
+		domain.Go:   "google",
+		domain.Rust: "mozilla-corporation",
+	}
 )
 
 type (
@@ -25,41 +37,95 @@ type (
 	vacancyURI struct {
 		VacancyID int64 `uri:"vacancy_id" binding:"required"`
 	}
+
+	languageURI struct {
+		Language string `uri:"language" binding:"required"`
+	}
 )
 
 type Controller struct {
-	userRepository                  *postgres.UserRepository
-	userFeatureWaitlistRepository   *postgres.UserFeatureWaitlistRepository
-	featureViewStatsRepository      *postgres.FeatureViewStatsRepository
-	userFavoriteCompanyRepository   *postgres.UserFavoriteCompanyRepository
-	userFavoriteVacancyRepository   *postgres.UserFavoriteVacancyRepository
-	companyViewDailyStatsRepository *postgres.CompanyViewDailyStatsRepository
-	vacancyViewStatsRepository      *postgres.VacancyViewStatsRepository
+	userRepository                   *postgres.UserRepository
+	userFeatureWaitlistRepository    *postgres.UserFeatureWaitlistRepository
+	featureViewStatsRepository       *postgres.FeatureViewStatsRepository
+	userFavoriteCompanyRepository    *postgres.UserFavoriteCompanyRepository
+	userFavoriteVacancyRepository    *postgres.UserFavoriteVacancyRepository
+	userCompanyVisibilityRepository  *postgres.UserCompanyVisibilityRepository
+	userIndustryVisibilityRepository *postgres.UserIndustryVisibilityRepository
+	companyViewDailyStatsRepository  *postgres.CompanyViewDailyStatsRepository
+	vacancyViewStatsRepository       *postgres.VacancyViewStatsRepository
+	githubRepositoryStarsRepository  *postgres.GithubRepositoryStarsRepository
 }
 
-func NewController(userRepository *postgres.UserRepository, userFeatureWaitlistRepository *postgres.UserFeatureWaitlistRepository, featureViewStatsRepository *postgres.FeatureViewStatsRepository, userFavoriteCompanyRepository *postgres.UserFavoriteCompanyRepository, userFavoriteVacancyRepository *postgres.UserFavoriteVacancyRepository, companyViewDailyStatsRepository *postgres.CompanyViewDailyStatsRepository, vacancyViewStatsRepository *postgres.VacancyViewStatsRepository) *Controller {
-	return &Controller{userRepository: userRepository, userFeatureWaitlistRepository: userFeatureWaitlistRepository, featureViewStatsRepository: featureViewStatsRepository, userFavoriteCompanyRepository: userFavoriteCompanyRepository, userFavoriteVacancyRepository: userFavoriteVacancyRepository, companyViewDailyStatsRepository: companyViewDailyStatsRepository, vacancyViewStatsRepository: vacancyViewStatsRepository}
+func NewController(userRepository *postgres.UserRepository, userFeatureWaitlistRepository *postgres.UserFeatureWaitlistRepository, featureViewStatsRepository *postgres.FeatureViewStatsRepository, userFavoriteCompanyRepository *postgres.UserFavoriteCompanyRepository, userFavoriteVacancyRepository *postgres.UserFavoriteVacancyRepository, userCompanyVisibilityRepository *postgres.UserCompanyVisibilityRepository, userIndustryVisibilityRepository *postgres.UserIndustryVisibilityRepository, companyViewDailyStatsRepository *postgres.CompanyViewDailyStatsRepository, vacancyViewStatsRepository *postgres.VacancyViewStatsRepository, githubRepositoryStarsRepository *postgres.GithubRepositoryStarsRepository) *Controller {
+	return &Controller{userRepository: userRepository, userFeatureWaitlistRepository: userFeatureWaitlistRepository, featureViewStatsRepository: featureViewStatsRepository, userFavoriteCompanyRepository: userFavoriteCompanyRepository, userFavoriteVacancyRepository: userFavoriteVacancyRepository, userCompanyVisibilityRepository: userCompanyVisibilityRepository, userIndustryVisibilityRepository: userIndustryVisibilityRepository, companyViewDailyStatsRepository: companyViewDailyStatsRepository, vacancyViewStatsRepository: vacancyViewStatsRepository, githubRepositoryStarsRepository: githubRepositoryStarsRepository}
 }
 
-func (c *Controller) Index(ctx *gin.Context) {
+func (c *Controller) IndexV1(ctx *gin.Context) {
 	headerProfiles, err := c.getHeaderProfiles(ctx, domain.ContextGetUserID(ctx))
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}
 
-	socialUserProfiles, err := c.userRepository.SocialUserProfiles(ctx, domain.RegistrationHistoryLimit)
+	socialUserProfiles, err := c.userRepository.SocialUserProfiles(ctx, nil, domain.RegistrationHistoryLimit)
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}
 
-	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.OrganizersOnline(headerProfiles, socialUserProfiles)))
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.IndexV1(headerProfiles, socialUserProfiles)))
 }
 
-func (c *Controller) Welcome(ctx *gin.Context) {
+func (c *Controller) IndexV2(ctx *gin.Context) {
+	headerProfiles, err := c.getHeaderProfiles(ctx, domain.ContextGetUserID(ctx))
+	if err != nil {
+		logger.Error(err)
+
+		// NOP, continue
+	}
+
+	socialUserProfiles, err := c.userRepository.SocialUserProfiles(ctx, nil, domain.RegistrationHistoryLimit)
+	if err != nil {
+		logger.Error(err)
+
+		// NOP, continue
+	}
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.OrganizersIndexV2(headerProfiles, socialUserProfiles)))
+}
+
+func (c *Controller) IndexV3(ctx *gin.Context) {
+	headerProfiles, err := c.getHeaderProfiles(ctx, domain.ContextGetUserID(ctx))
+	if err != nil {
+		logger.Error(err)
+
+		// NOP, continue
+	}
+
+	socialUserProfiles, err := c.userRepository.SocialUserProfiles(
+		ctx,
+		[]dbs.SocialProvider{dbs.SocialProviderGithub},
+		domain.RegistrationHistoryLimit,
+	)
+	if err != nil {
+		logger.Error(err)
+
+		// NOP, continue
+	}
+
+	stars, err := c.githubRepositoryStarsRepository.Default(ctx)
+	if err != nil {
+		logger.Error(err)
+
+		// NOP, continue
+	}
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.OrganizersIndexV3(headerProfiles, socialUserProfiles, stars)))
+}
+
+func (c *Controller) WelcomeV1(ctx *gin.Context) {
 	organizer, ok := c.organizer(ctx.FullPath())
 	if !ok {
 		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Organizer not found"))
@@ -67,15 +133,35 @@ func (c *Controller) Welcome(ctx *gin.Context) {
 		return
 	}
 
-	content := template.OrganizersWelcome(organizer, c.authQueryParams(ctx))
+	content := template.OrganizersWelcomeV1(organizer, c.authQueryParams(ctx))
 
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
 }
 
-func (c *Controller) Main(ctx *gin.Context) {
+func (c *Controller) WelcomeV3(ctx *gin.Context) {
+	organizer, ok := c.organizer(ctx.FullPath())
+	if !ok {
+		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Organizer not found"))
+
+		return
+	}
+
+	stars, err := c.githubRepositoryStarsRepository.Default(ctx)
+	if err != nil {
+		logger.Error(err)
+
+		// NOP, continue
+	}
+
+	content := template.OrganizersWelcomeV3(organizer, stars, c.authQueryParams(ctx))
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
+}
+
+func (c *Controller) Organizers(ctx *gin.Context) {
 	headerProfiles, err := c.getHeaderProfiles(ctx, domain.ContextGetUserID(ctx))
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}
@@ -87,12 +173,12 @@ func (c *Controller) Main(ctx *gin.Context) {
 
 func (c *Controller) GolangCompaniesUkraine(ctx *gin.Context) {
 	var (
-		source    = db.Companies()
+		source    = db.CloneCompanies()
 		companies = make([]domain.CompanyProfile, 0, len(source))
 	)
 
 	for _, company := range source {
-		if len(company.Languages[domain.Go].Vacancies) == 0 && company.Vacancies[domain.Go] == nil {
+		if len(company.Languages[domain.Go].Vacancies) == 0 {
 			continue
 		}
 
@@ -104,185 +190,170 @@ func (c *Controller) GolangCompaniesUkraine(ctx *gin.Context) {
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
 }
 
-func (c *Controller) CompaniesV1(ctx *gin.Context) {
-	var (
-		authUserID = domain.ContextGetUserID(ctx)
-	)
-
-	organizerFeature, ok := c.organizerFeature(ctx.FullPath())
-	if !ok {
-		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Feature not found"))
-
-		return
-	}
-
-	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)
-	if err != nil {
-		// @TODO logging
-
-		// NOP, continue
-	}
-
-	companies := c.companies(organizerFeature, false)
-
-	userCompanyFavoriteMap, err := c.userFavoriteCompanyRepository.GetMap(ctx, authUserID, nil)
-	if err != nil {
-		// @TODO logging
-
-		// NOP, continue
-	}
-
-	content := template.OrganizersCompaniesV1(
-		organizerFeature,
-		headerProfiles,
-		companies,
-		db.UkrainianUniversities(),
-		db.CzechUniversities(),
-		userCompanyFavoriteMap,
-		c.redirect(organizerFeature.Path),
-	)
-
-	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
+func (c *Controller) CompaniesV1Alpha(ctx *gin.Context) {
+	c.companiesAction(ctx, template.OrganizersCompaniesV1Alpha)
 }
 
-func (c *Controller) CompaniesV2(ctx *gin.Context) {
-	var (
-		authUserID = domain.ContextGetUserID(ctx)
-	)
+func (c *Controller) CompaniesV2Alpha(ctx *gin.Context) {
+	c.companiesAction(ctx, template.OrganizersCompaniesV2Alpha)
+}
 
-	organizerFeature, ok := c.organizerFeature(ctx.FullPath())
-	if !ok {
-		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Feature not found"))
+func (c *Controller) CompaniesV3Alpha(ctx *gin.Context) {
+	c.companiesAction(ctx, template.OrganizersCompaniesV3Alpha)
+}
 
-		return
-	}
-
-	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)
-	if err != nil {
-		// @TODO logging
-
-		// NOP, continue
-	}
-
-	companies := c.companies(organizerFeature, false)
-
-	userCompanyFavoriteMap, err := c.userFavoriteCompanyRepository.GetMap(ctx, authUserID, nil)
-	if err != nil {
-		// @TODO logging
-
-		// NOP, continue
-	}
-
-	content := template.OrganizersCompaniesV2(
-		organizerFeature,
-		headerProfiles,
-		companies,
-		db.UkrainianUniversities(),
-		db.CzechUniversities(),
-		userCompanyFavoriteMap,
-		c.redirect(organizerFeature.Path),
-	)
-
-	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
+func (c *Controller) CompaniesV3Beta(ctx *gin.Context) {
+	c.companiesAction(ctx, template.OrganizersCompaniesV3Beta)
 }
 
 func (c *Controller) CompanyV1(ctx *gin.Context) {
+	c.companyAction(ctx, func(organizerFeature domain.OrganizerFeature, headerProfiles []domain.SocialProviderUser, company domain.CompanyProfile, vacancies []domain.PreparedVacancy, ukrainianUniversities []domain.University, czechUniversities []domain.University, favorite bool, userVacancyFavoriteMap map[int64]bool, vacancyMonthlyViewsMap map[int64]int64, stats template.CompanyStats, stars int32, authQueryParams string) string {
+		return template.OrganizersCompanyV1(
+			organizerFeature,
+			headerProfiles,
+			company,
+			// vacancies,
+			ukrainianUniversities,
+			czechUniversities,
+			favorite,
+			// userVacancyFavoriteMap,
+			// vacancyMonthlyViewsMap,
+			stats,
+			authQueryParams,
+		)
+	})
+}
+
+func (c *Controller) CompanyV2(ctx *gin.Context) {
+	c.companyAction(ctx, func(organizerFeature domain.OrganizerFeature, headerProfiles []domain.SocialProviderUser, company domain.CompanyProfile, vacancies []domain.PreparedVacancy, ukrainianUniversities []domain.University, czechUniversities []domain.University, favorite bool, userVacancyFavoriteMap map[int64]bool, vacancyMonthlyViewsMap map[int64]int64, stats template.CompanyStats, stars int32, authQueryParams string) string {
+		return template.OrganizersCompanyV2(
+			organizerFeature,
+			headerProfiles,
+			company,
+			vacancies,
+			ukrainianUniversities,
+			czechUniversities,
+			favorite,
+			userVacancyFavoriteMap,
+			vacancyMonthlyViewsMap,
+			stats,
+			authQueryParams,
+		)
+	})
+}
+
+func (c *Controller) CompanyV3(ctx *gin.Context) {
+	c.companyAction(ctx, func(organizerFeature domain.OrganizerFeature, headerProfiles []domain.SocialProviderUser, company domain.CompanyProfile, vacancies []domain.PreparedVacancy, ukrainianUniversities []domain.University, czechUniversities []domain.University, favorite bool, userVacancyFavoriteMap map[int64]bool, vacancyMonthlyViewsMap map[int64]int64, stats template.CompanyStats, stars int32, authQueryParams string) string {
+		return template.OrganizersCompanyV3(
+			organizerFeature,
+			headerProfiles,
+			company,
+			vacancies,
+			ukrainianUniversities,
+			czechUniversities,
+			favorite,
+			userVacancyFavoriteMap,
+			vacancyMonthlyViewsMap,
+			stats,
+			stars,
+			authQueryParams,
+		)
+	})
+}
+
+func (c *Controller) companiesAction(
+	ctx *gin.Context,
+	render func(
+		organizerFeature domain.OrganizerFeature,
+		headerProfiles []domain.SocialProviderUser,
+		companies []domain.CompanyProfile,
+		ukrainianUniversities []domain.University,
+		czechUniversities []domain.University,
+		userCompanyFavoriteMap map[int64]bool,
+		stars int32,
+		authQueryParams string,
+	) string,
+) {
 	var (
-		uri companyAliasURI
+		authUserID = domain.ContextGetUserID(ctx)
 	)
 
-	err := ctx.ShouldBindUri(&uri)
-	if err != nil {
-		ctx.Data(http.StatusBadRequest, "text/html; charset=utf-8", []byte("Company alias is required"))
-
-		return
-	}
-
-	var (
-		featurePath = c.trimCompanyAlias(ctx)
-	)
-
-	// Redirect to lowercase company alias
-	{
-		redirectAlias := strings.ToLower(uri.CompanyAlias)
-		if uri.CompanyAlias != redirectAlias {
-			ctx.Redirect(http.StatusFound, featurePath+"/"+redirectAlias)
-
-			return
-		}
-	}
-
-	company, ok := c.findCompany(ctx, uri.CompanyAlias)
+	organizerFeature, ok := c.organizerFeature(ctx.FullPath())
 	if !ok {
-		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Company not found"))
-
-		return
-	}
-
-	company.ID = organizers.CompanyAliasMap[company.LinkedInProfile.Alias]
-	if company.ID == 0 {
-		// make generate-organizers
-
-		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Company not found"))
-
-		return
-	}
-
-	if company.Type == "" {
-		company.Type = organizers.ToCompanyType(company.LinkedInProfile.Alias)
-	}
-	if company.Website == "" {
-		company.Website = company.URL
-	}
-
-	organizerFeature, ok := c.organizerFeature(featurePath)
-	if !ok {
-		// Should be unreachable
 		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Feature not found"))
 
 		return
 	}
 
-	var (
-		authUserID = domain.ContextGetUserID(ctx)
-	)
 	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}
 
-	// Should be optimized
-	userCompanyFavoriteMap, err := c.userFavoriteCompanyRepository.GetMap(ctx, authUserID, []int64{company.ID})
+	companies := c.companies(organizerFeature.Organizer.Language)
+
+	c.sortCompanies(companies, defaultLanguagePinnedCompanyMap[organizerFeature.Organizer.Language])
+
+	userCompanyFavoriteMap, err := c.userFavoriteCompanyRepository.GetMap(ctx, authUserID, nil)
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}
 
-	err = c.companyViewDailyStatsRepository.Upsert(ctx, company.ID, time.Now().UTC())
+	stars, err := c.githubRepositoryStarsRepository.Default(ctx)
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}
 
-	content := template.OrganizersCompanyV1(
+	content := render(
 		organizerFeature,
 		headerProfiles,
-		company,
+		companies,
 		db.UkrainianUniversities(),
 		db.CzechUniversities(),
-		userCompanyFavoriteMap[company.ID],
-		c.companyStats(ctx, company.ID),
-		c.redirect(organizerFeature.Path+"/"+uri.CompanyAlias),
+		userCompanyFavoriteMap,
+		stars,
+		c.redirect(organizerFeature.Path),
 	)
 
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
 }
 
-func (c *Controller) CompanyV2(ctx *gin.Context) {
+func (c *Controller) companyAction(
+	ctx *gin.Context,
+	render func(
+		organizerFeature domain.OrganizerFeature,
+		headerProfiles []domain.SocialProviderUser,
+		company domain.CompanyProfile,
+		vacancies []domain.PreparedVacancy,
+		ukrainianUniversities []domain.University,
+		czechUniversities []domain.University,
+		favorite bool,
+		userVacancyFavoriteMap map[int64]bool,
+		vacancyMonthlyViewsMap map[int64]int64,
+		stats template.CompanyStats,
+		stars int32,
+		authQueryParams string,
+	) string,
+) {
+	var (
+		authUserID  = domain.ContextGetUserID(ctx)
+		featurePath = c.trimCompanyAlias(ctx)
+	)
+
+	organizerFeature, ok := c.organizerFeature(featurePath)
+	if !ok {
+		// Should be unreachable
+		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Feature not found"))
+
+		return
+	}
+
 	var (
 		uri companyAliasURI
 	)
@@ -294,10 +365,6 @@ func (c *Controller) CompanyV2(ctx *gin.Context) {
 		return
 	}
 
-	var (
-		featurePath = c.trimCompanyAlias(ctx)
-	)
-
 	// Redirect to lowercase company alias
 	{
 		redirectAlias := strings.ToLower(uri.CompanyAlias)
@@ -308,14 +375,20 @@ func (c *Controller) CompanyV2(ctx *gin.Context) {
 		}
 	}
 
-	company, ok := c.findCompany(ctx, uri.CompanyAlias)
+	company, originalAlias, ok := c.findCompany(ctx, uri.CompanyAlias)
 	if !ok {
 		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Company not found"))
 
 		return
 	}
 
-	company.ID = organizers.CompanyAliasMap[company.LinkedInProfile.Alias]
+	if originalAlias != "" {
+		ctx.Redirect(http.StatusFound, featurePath+"/"+originalAlias)
+
+		return
+	}
+
+	company.ID = organizers.CompanyAliasToCodeMap[company.LinkedInProfile.Alias]
 	if company.ID == 0 {
 		// make generate-organizers
 
@@ -327,24 +400,15 @@ func (c *Controller) CompanyV2(ctx *gin.Context) {
 	if company.Type == "" {
 		company.Type = organizers.ToCompanyType(company.LinkedInProfile.Alias)
 	}
-	if company.Website == "" {
-		company.Website = company.URL
+	company.Logo = domain.CompanyLogo{
+		V0: organizers.CompanyAliasToLogoMapV0[company.LinkedInProfile.Alias],
+		V1: organizers.CompanyAliasToLogoMapV1[company.LinkedInProfile.Alias],
+		V2: organizers.CompanyAliasToLogoMapV2[company.LinkedInProfile.Alias],
 	}
 
-	organizerFeature, ok := c.organizerFeature(featurePath)
-	if !ok {
-		// Should be unreachable
-		ctx.Data(http.StatusNotFound, "text/html; charset=utf-8", []byte("Feature not found"))
-
-		return
-	}
-
-	var (
-		authUserID = domain.ContextGetUserID(ctx)
-	)
 	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}
@@ -352,21 +416,22 @@ func (c *Controller) CompanyV2(ctx *gin.Context) {
 	// Should be optimized
 	userCompanyFavoriteMap, err := c.userFavoriteCompanyRepository.GetMap(ctx, authUserID, []int64{company.ID})
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}
 
 	err = c.companyViewDailyStatsRepository.Upsert(ctx, company.ID, time.Now().UTC())
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}
 
 	var (
 		preparedCompany   = c.toPrepareCompany(company)
-		vacancies         = company.Languages[organizerFeature.Organizer.Language].Vacancies
+		languageProfile   = company.Languages[organizerFeature.Organizer.Language]
+		vacancies         = languageProfile.Vacancies
 		preparedVacancies = make([]domain.PreparedVacancy, 0, len(vacancies))
 		vacancyIDs        = make([]int64, 0, len(vacancies))
 	)
@@ -376,14 +441,16 @@ func (c *Controller) CompanyV2(ctx *gin.Context) {
 
 		if ok {
 			preparedVacancies = append(preparedVacancies, domain.PreparedVacancy{
-				ID:               id,
-				Company:          preparedCompany,
-				Title:            vacancy.Title,
-				ShortDescription: vacancy.ShortDescription,
-				URL:              vacancy.URL,
-				Date:             vacancy.Date,
-				WithSalary:       vacancy.WithSalary,
-				Remote:           vacancy.Remote,
+				ID:                   id,
+				Company:              preparedCompany,
+				Title:                vacancy.Title,
+				ShortDescription:     vacancy.ShortDescription,
+				SwitchingOpportunity: vacancy.SwitchingOpportunity,
+				Location:             vacancy.Location,
+				URL:                  vacancy.URL,
+				Date:                 vacancy.Date,
+				WithSalary:           vacancy.WithSalary,
+				Remote:               vacancy.Remote,
 			})
 			vacancyIDs = append(vacancyIDs, id)
 		}
@@ -391,7 +458,7 @@ func (c *Controller) CompanyV2(ctx *gin.Context) {
 
 	userVacancyFavoriteMap, err := c.userFavoriteVacancyRepository.GetMap(ctx, authUserID, vacancyIDs)
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}
@@ -399,7 +466,7 @@ func (c *Controller) CompanyV2(ctx *gin.Context) {
 	month := time.Now().UTC().Truncate(time.Hour*24).AddDate(0, -1, 0)
 	vacancyMonthlyViewsMap, err := c.vacancyViewStatsRepository.Stats(ctx, vacancyIDs, month)
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}
@@ -408,7 +475,21 @@ func (c *Controller) CompanyV2(ctx *gin.Context) {
 		return preparedVacancies[i].Date.After(preparedVacancies[j].Date)
 	})
 
-	content := template.OrganizersCompanyV2(
+	company.CloudProviders = c.aggregateOrderedCloudProviders(company.CloudProviders, vacancies)
+	company.GitHubRepositoryCount = languageProfile.GitHubRepositoryCount
+	company.TechnologyUsageReferences = languageProfile.TechnologyUsageReferences
+	company.Remote = company.Remote || c.anyRemoteVacancy(vacancies)
+	company.LatestVacancyDate = c.maxLanguageDate(vacancies)
+	company.PinnedUntil = languageProfile.PinnedUntil
+
+	stars, err := c.githubRepositoryStarsRepository.Default(ctx)
+	if err != nil {
+		logger.Error(err)
+
+		// NOP, continue
+	}
+
+	content := render(
 		organizerFeature,
 		headerProfiles,
 		company,
@@ -419,13 +500,38 @@ func (c *Controller) CompanyV2(ctx *gin.Context) {
 		userVacancyFavoriteMap,
 		vacancyMonthlyViewsMap,
 		c.companyStats(ctx, company.ID),
+		stars,
 		c.redirect(organizerFeature.Path+"/"+uri.CompanyAlias),
 	)
 
 	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(content))
 }
 
-func (c *Controller) Vacancies(ctx *gin.Context) {
+func (c *Controller) JobsV2Alpha(ctx *gin.Context) {
+	c.jobsAction(ctx, template.OrganizersVacanciesV2Alpha)
+}
+
+func (c *Controller) JobsV3Alpha(ctx *gin.Context) {
+	c.jobsAction(ctx, template.OrganizersVacanciesV3Alpha)
+}
+
+func (c *Controller) JobsV3Beta(ctx *gin.Context) {
+	c.jobsAction(ctx, template.OrganizersVacanciesV3Beta)
+}
+
+func (c *Controller) jobsAction(
+	ctx *gin.Context,
+	render func(
+		organizerFeature domain.OrganizerFeature,
+		headerProfiles []domain.SocialProviderUser,
+		companies []domain.CompanyProfile,
+		vacancies []domain.PreparedVacancy,
+		userVacancyFavoriteMap map[int64]bool,
+		vacancyMonthlyViewsMap map[int64]int64,
+		stars int32,
+		authQueryParams string,
+	) string,
+) {
 	var (
 		authUserID = domain.ContextGetUserID(ctx)
 	)
@@ -439,12 +545,12 @@ func (c *Controller) Vacancies(ctx *gin.Context) {
 
 	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}
 
-	companies := c.companies(organizerFeature, true)
+	companies := c.companies(organizerFeature.Organizer.Language)
 
 	var (
 		preparedVacancies = make([]domain.PreparedVacancy, 0, 1024)
@@ -462,14 +568,16 @@ func (c *Controller) Vacancies(ctx *gin.Context) {
 
 			if ok {
 				preparedVacancies = append(preparedVacancies, domain.PreparedVacancy{
-					ID:               id,
-					Company:          preparedCompany,
-					Title:            vacancy.Title,
-					ShortDescription: vacancy.ShortDescription,
-					URL:              vacancy.URL,
-					Date:             vacancy.Date,
-					WithSalary:       vacancy.WithSalary,
-					Remote:           vacancy.Remote,
+					ID:                   id,
+					Company:              preparedCompany,
+					Title:                vacancy.Title,
+					ShortDescription:     vacancy.ShortDescription,
+					SwitchingOpportunity: vacancy.SwitchingOpportunity,
+					Location:             vacancy.Location,
+					URL:                  vacancy.URL,
+					Date:                 vacancy.Date,
+					WithSalary:           vacancy.WithSalary,
+					Remote:               vacancy.Remote,
 				})
 				vacancyIDs = append(vacancyIDs, id)
 			}
@@ -478,7 +586,7 @@ func (c *Controller) Vacancies(ctx *gin.Context) {
 
 	userVacancyFavoriteMap, err := c.userFavoriteVacancyRepository.GetMap(ctx, authUserID, vacancyIDs)
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}
@@ -486,7 +594,7 @@ func (c *Controller) Vacancies(ctx *gin.Context) {
 	month := time.Now().UTC().Truncate(time.Hour*24).AddDate(0, -1, 0)
 	vacancyMonthlyViewsMap, err := c.vacancyViewStatsRepository.Stats(ctx, vacancyIDs, month)
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}
@@ -495,13 +603,21 @@ func (c *Controller) Vacancies(ctx *gin.Context) {
 		return preparedVacancies[i].Date.After(preparedVacancies[j].Date)
 	})
 
-	content := template.OrganizersVacanciesV2(
+	stars, err := c.githubRepositoryStarsRepository.Default(ctx)
+	if err != nil {
+		logger.Error(err)
+
+		// NOP, continue
+	}
+
+	content := render(
 		organizerFeature,
 		headerProfiles,
 		companies,
 		preparedVacancies,
 		userVacancyFavoriteMap,
 		vacancyMonthlyViewsMap,
+		stars,
 		c.redirect(organizerFeature.Path),
 	)
 
@@ -513,6 +629,7 @@ func (c *Controller) trimCompanyAlias(ctx *gin.Context) (result string) {
 	result = strings.TrimSuffix(result, "/:company_alias")
 	result = strings.TrimSuffix(result, "/:company_alias/v1")
 	result = strings.TrimSuffix(result, "/:company_alias/v2")
+	result = strings.TrimSuffix(result, "/:company_alias/v3")
 
 	return result
 }
@@ -532,7 +649,7 @@ func (c *Controller) Waitlist(ctx *gin.Context) {
 
 	err := c.featureViewStatsRepository.Upsert(ctx, organizerFeature.Feature, time.Now().UTC())
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}
@@ -551,7 +668,7 @@ func (c *Controller) Waitlist(ctx *gin.Context) {
 
 	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}
@@ -568,7 +685,7 @@ func (c *Controller) GolangCommunities(ctx *gin.Context) {
 
 	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}
@@ -585,7 +702,7 @@ func (c *Controller) RustCommunities(ctx *gin.Context) {
 
 	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}
@@ -606,7 +723,7 @@ func (c *Controller) ScalaCommunities(ctx *gin.Context) {
 
 	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}
@@ -623,7 +740,7 @@ func (c *Controller) ElixirCommunities(ctx *gin.Context) {
 
 	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}
@@ -640,7 +757,7 @@ func (c *Controller) ClojureCommunities(ctx *gin.Context) {
 
 	headerProfiles, err := c.getHeaderProfiles(ctx, authUserID)
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}
@@ -651,12 +768,9 @@ func (c *Controller) ClojureCommunities(ctx *gin.Context) {
 }
 
 func (c *Controller) VacancyRedirect(ctx *gin.Context) {
-	var (
-		authUserID = domain.ContextGetUserID(ctx)
-	)
-
+	authUserID := domain.ContextGetUserID(ctx)
 	if authUserID == 0 {
-		ctx.Redirect(http.StatusFound, "/organizers/golang/welcome"+c.redirect(ctx.Request.URL.Path))
+		ctx.Redirect(http.StatusFound, "/golang/welcome"+c.redirect(ctx.Request.URL.Path))
 
 		return
 	}
@@ -679,11 +793,13 @@ func (c *Controller) VacancyRedirect(ctx *gin.Context) {
 		return
 	}
 
-	err = c.vacancyViewStatsRepository.Upsert(ctx, uri.VacancyID, authUserID, time.Now().UTC())
-	if err != nil {
-		// @TODO logging
+	if authUserID > 0 {
+		err := c.vacancyViewStatsRepository.Upsert(ctx, uri.VacancyID, authUserID, time.Now().UTC())
+		if err != nil {
+			// @TODO logging
 
-		// NOP, continue
+			// NOP, continue
+		}
 	}
 
 	ctx.Redirect(http.StatusFound, vacancyExternalURL)
@@ -707,10 +823,7 @@ func (c *Controller) WaitlistSubscribe(ctx *gin.Context) {
 		Active bool `json:"active"`
 	}
 
-	var (
-		authUserID = domain.ContextGetUserID(ctx)
-	)
-
+	authUserID := domain.ContextGetUserID(ctx)
 	if authUserID == 0 {
 		ctx.JSON(http.StatusUnauthorized, &domain.ErrorResponse{
 			ErrorMessage: "Unauthorized",
@@ -733,7 +846,7 @@ func (c *Controller) WaitlistSubscribe(ctx *gin.Context) {
 
 	err := c.userFeatureWaitlistRepository.Upsert(ctx, authUserID, feature, body.Active, time.Now().UTC())
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		ctx.JSON(http.StatusInternalServerError, &domain.ErrorResponse{
 			ErrorMessage: err.Error(), // Yes, we are leaking the error message to the client, it's fine for now
@@ -742,6 +855,38 @@ func (c *Controller) WaitlistSubscribe(ctx *gin.Context) {
 	}
 
 	ctx.JSON(http.StatusOK, nil)
+}
+
+func (c *Controller) SitemapCompanies(organizer domain.Organizer) gin.HandlerFunc {
+	type Url struct {
+		Loc     string `xml:"loc"`
+		LastMod string `xml:"lastmod"`
+	}
+
+	type UrlSet struct {
+		XMLName xml.Name `xml:"urlset"`
+		Xmlns   string   `xml:"xmlns,attr"`
+		Urls    []Url    `xml:"url"`
+	}
+
+	return func(ctx *gin.Context) {
+		companies := c.companies(organizer.Language)
+
+		urls := make([]Url, len(companies))
+
+		for i, company := range companies {
+			urls[i] = Url{
+				Loc:     fmt.Sprintf("https://%s/%s/companies/%s", ctx.Request.Host, organizer.Alias, company.LinkedInProfile.Alias),
+				LastMod: c.sitemapCompanyLastModified(company.Languages[organizer.Language].Vacancies),
+			}
+		}
+
+		ctx.Header("Content-Type", "application/xml")
+		ctx.XML(http.StatusOK, UrlSet{
+			Xmlns: "http://www.sitemaps.org/schemas/sitemap/0.9",
+			Urls:  urls,
+		})
+	}
 }
 
 func (c *Controller) CompanyViewStats(ctx *gin.Context) {
@@ -770,7 +915,7 @@ func (c *Controller) CompanyViewStats(ctx *gin.Context) {
 
 	viewsDailyStats, err := c.companyViewDailyStatsRepository.DailyCountStats(ctx, uri.CompanyID, from, to)
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		ctx.JSON(http.StatusInternalServerError, &domain.ErrorResponse{
 			ErrorMessage: err.Error(), // Yes, we are leaking the error message to the client, it's fine for now
@@ -804,10 +949,7 @@ func (c *Controller) FavoriteCompany(ctx *gin.Context) {
 		return
 	}
 
-	var (
-		authUserID = domain.ContextGetUserID(ctx)
-	)
-
+	authUserID := domain.ContextGetUserID(ctx)
 	if authUserID == 0 {
 		ctx.JSON(http.StatusUnauthorized, &domain.ErrorResponse{
 			ErrorMessage: "Unauthorized",
@@ -856,10 +998,7 @@ func (c *Controller) FavoriteVacancy(ctx *gin.Context) {
 		return
 	}
 
-	var (
-		authUserID = domain.ContextGetUserID(ctx)
-	)
-
+	authUserID := domain.ContextGetUserID(ctx)
 	if authUserID == 0 {
 		ctx.JSON(http.StatusUnauthorized, &domain.ErrorResponse{
 			ErrorMessage: "Unauthorized",
@@ -885,21 +1024,435 @@ func (c *Controller) FavoriteVacancy(ctx *gin.Context) {
 	ctx.JSON(http.StatusOK, nil)
 }
 
-func (c *Controller) UnsafeCompanies(ctx *gin.Context) {
-	companies := db.Companies()
+func (c *Controller) VisibilityCompany(ctx *gin.Context) {
+	type (
+		visibilityCompanyURI struct {
+			CompanyID int64 `uri:"company_id" binding:"required"`
+		}
+		visibilityCompanyRequestBody struct {
+			Visibility bool `json:"visibility"`
+		}
+	)
 
-	result := make([]domain.LinkedInProfileResponse, len(companies))
+	var (
+		uri  visibilityCompanyURI
+		body visibilityCompanyRequestBody
+	)
+
+	err := ctx.ShouldBindUri(&uri)
+	if err != nil {
+		ctx.JSON(http.StatusBadRequest, &domain.ErrorResponse{
+			ErrorMessage: err.Error(),
+		})
+		return
+	}
+
+	authUserID := domain.ContextGetUserID(ctx)
+	if authUserID == 0 {
+		ctx.JSON(http.StatusUnauthorized, &domain.ErrorResponse{
+			ErrorMessage: "Unauthorized",
+		})
+		return
+	}
+
+	if err := ctx.ShouldBindJSON(&body); err != nil {
+		ctx.JSON(http.StatusBadRequest, &domain.ErrorResponse{
+			ErrorMessage: err.Error(),
+		})
+		return
+	}
+
+	err = c.userCompanyVisibilityRepository.Upsert(ctx, authUserID, uri.CompanyID, body.Visibility, time.Now().UTC())
+	if err != nil {
+		ctx.JSON(http.StatusInternalServerError, &domain.ErrorResponse{
+			ErrorMessage: err.Error(), // Yes, we are leaking the error message to the client, it's fine for now
+		})
+		return
+	}
+
+	ctx.JSON(http.StatusOK, nil)
+}
+
+func (c *Controller) VisibilityIndustry(ctx *gin.Context) {
+	type (
+		visibilityIndustryURI struct {
+			IndustryAlias string `uri:"industry_alias" binding:"required"`
+		}
+		visibilityIndustryRequestBody struct {
+			Visibility bool `json:"visibility"`
+		}
+	)
+
+	var (
+		uri  visibilityIndustryURI
+		body visibilityIndustryRequestBody
+	)
+
+	err := ctx.ShouldBindUri(&uri)
+	if err != nil {
+		ctx.JSON(http.StatusBadRequest, &domain.ErrorResponse{
+			ErrorMessage: err.Error(),
+		})
+		return
+	}
+
+	authUserID := domain.ContextGetUserID(ctx)
+	if authUserID == 0 {
+		ctx.JSON(http.StatusUnauthorized, &domain.ErrorResponse{
+			ErrorMessage: "Unauthorized",
+		})
+		return
+	}
+
+	if err := ctx.ShouldBindJSON(&body); err != nil {
+		ctx.JSON(http.StatusBadRequest, &domain.ErrorResponse{
+			ErrorMessage: err.Error(),
+		})
+		return
+	}
+
+	industry, ok := domain.FindHiddenIndustryByAlias(uri.IndustryAlias)
+	if !ok {
+		ctx.JSON(http.StatusNotFound, &domain.ErrorResponse{
+			ErrorMessage: "Industry not found",
+		})
+	}
+
+	err = c.userIndustryVisibilityRepository.Upsert(ctx, authUserID, industry.ID, body.Visibility, time.Now().UTC())
+	if err != nil {
+		ctx.JSON(http.StatusInternalServerError, &domain.ErrorResponse{
+			ErrorMessage: err.Error(), // Yes, we are leaking the error message to the client, it's fine for now
+		})
+		return
+	}
+
+	ctx.JSON(http.StatusOK, nil)
+}
+
+func (c *Controller) UnsafeCompanies(ctx *gin.Context) {
+	companies := db.CloneCompanies()
+
+	result := make([]domain.UnsafeCompanyResponse, len(companies))
 	for i, company := range companies {
-		result[i] = domain.LinkedInProfileResponse{
-			ID:    int64(company.LinkedInProfile.ID),
-			Alias: company.LinkedInProfile.Alias,
-			Name:  company.LinkedInProfile.Name,
+		var languages []domain.UnsafeCompanyLanguageStats
+
+		for i, language := range company.Languages {
+			if len(language.Vacancies) == 0 {
+				continue
+			}
+
+			languages = append(languages, domain.UnsafeCompanyLanguageStats{
+				Language:       domain.Language(i).String(),
+				MaxVacancyDate: c.maxLanguageDate(language.Vacancies),
+			})
+		}
+
+		result[i] = domain.UnsafeCompanyResponse{
+			ID:                 company.LinkedInProfile.ID,
+			Alias:              company.LinkedInProfile.Alias,
+			Name:               company.LinkedInProfile.Name,
+			GitHubProfileAlias: company.GitHubProfile.Login,
+			OttaProfileAlias:   company.OttaProfileSlug,
+			Ignore:             company.Ignore,
+			Languages:          languages,
 		}
 	}
 
 	ctx.JSON(http.StatusOK, &domain.UnsafeCompaniesResponse{
 		Companies: result,
 	})
+}
+
+func (c *Controller) UnsafeCompaniesV3(ctx *gin.Context) {
+	var (
+		authUserID = domain.ContextGetUserID(ctx)
+		uri        languageURI
+	)
+
+	err := ctx.ShouldBindUri(&uri)
+	if err != nil {
+		ctx.JSON(http.StatusInternalServerError, &domain.ErrorResponse{
+			ErrorMessage: err.Error(), // Yes, we are leaking the error message to the client, it's fine for now
+		})
+		return
+	}
+
+	organizer := domain.FindOrganizer(uri.Language)
+	if organizer.Empty() {
+		ctx.JSON(http.StatusInternalServerError, &domain.ErrorResponse{
+			ErrorMessage: fmt.Sprintf("unknown organizer for language: %s", uri.Language),
+		})
+		return
+	}
+
+	companies := c.companies(organizer.Language)
+
+	c.sortCompanies(companies, defaultLanguagePinnedCompanyMap[organizer.Language])
+
+	userCompanyFavoriteMap, err := c.userFavoriteCompanyRepository.GetMap(ctx, authUserID, nil)
+	if err != nil {
+		logger.Error(err)
+
+		// NOP, continue
+	}
+
+	userCompanyVisibilityMap, err := c.userCompanyVisibilityRepository.GetMap(ctx, authUserID)
+	if err != nil {
+		logger.Error(err)
+
+		// NOP, continue
+	}
+
+	userIndustryVisibilityMap, err := c.userIndustryVisibilityRepository.GetMap(ctx, authUserID)
+	if err != nil {
+		logger.Error(err)
+
+		// NOP, continue
+	}
+
+	result := make([]domain.CompanyResponse, len(companies))
+	for i, company := range companies {
+		result[i] = domain.CompanyResponse{
+			ID:   company.ID,
+			Type: company.Type,
+			Logo: domain.CompanyLogoResponse{
+				MainSize: company.Logo.V2,
+			},
+			Name:       company.Name,
+			BaseURL:    company.BaseURL,
+			CareersURL: company.CareersURL,
+			AboutURL:   company.AboutURL,
+			BlogURL:    company.BlogURL,
+			LinkedInProfile: domain.LinkedInProfileResponse{
+				ID:        company.LinkedInProfile.ID,
+				IDs:       company.LinkedInProfile.IDs,
+				Alias:     company.LinkedInProfile.Alias,
+				Name:      company.LinkedInProfile.Name,
+				Employees: company.LinkedInProfile.Employees,
+				Verified:  company.LinkedInProfile.Verified,
+			},
+			GitHubProfile: domain.GitHubProfileResponse{
+				Login:     company.GitHubProfile.Login,
+				Followers: company.GitHubProfile.Followers,
+				Verified:  company.GitHubProfile.Verified,
+			},
+			GlassdoorProfile: domain.GlassdoorProfileResponse{
+				OverviewURL: company.GlassdoorProfile.OverviewURL,
+				ReviewsURL:  company.GlassdoorProfile.ReviewsURL,
+				ReviewsRate: company.GlassdoorProfile.ReviewsRate,
+				Verified:    company.GlassdoorProfile.Verified,
+			},
+			ShortDescription:          company.ShortDescription,
+			Industries:                company.Industries,
+			HasEmployeesFromCountries: company.HasEmployeesFromCountries,
+			RustFoundationMember:      company.RustFoundationMember,
+			CloudProviders:            company.CloudProviders,
+			GitHubRepositoryCount:     company.GitHubRepositoryCount,
+			Remote:                    company.Remote,
+			LatestVacancyDate:         utils.TimePointerOrNil(company.LatestVacancyDate),
+			PinnedUntil:               utils.TimePointerOrNil(company.PinnedUntil),
+			Favorite:                  userCompanyFavoriteMap[company.ID],
+			Hidden:                    c.companyHidden(company, userCompanyVisibilityMap, userIndustryVisibilityMap),
+		}
+	}
+
+	ctx.JSON(http.StatusOK, &domain.CompaniesResponse{
+		Companies: result,
+	})
+}
+
+func (c *Controller) UnsafeVacancies(ctx *gin.Context) {
+	companies := db.CloneCompanies()
+
+	result := make([]domain.UnsafeVacancyResponse, 0, 4096)
+	for _, company := range companies {
+		for _, language := range company.Languages {
+			for _, vacancy := range language.Vacancies {
+				result = append(result, domain.UnsafeVacancyResponse{
+					URL:  vacancy.URL,
+					Date: vacancy.Date,
+				})
+			}
+		}
+	}
+
+	ctx.JSON(http.StatusOK, &domain.UnsafeVacanciesResponse{
+		Vacancies: result,
+	})
+}
+
+func (c *Controller) UnsafeVacanciesV3(ctx *gin.Context) {
+	var (
+		authUserID = domain.ContextGetUserID(ctx)
+		uri        languageURI
+	)
+
+	err := ctx.ShouldBindUri(&uri)
+	if err != nil {
+		ctx.JSON(http.StatusInternalServerError, &domain.ErrorResponse{
+			ErrorMessage: err.Error(), // Yes, we are leaking the error message to the client, it's fine for now
+		})
+		return
+	}
+
+	organizer := domain.FindOrganizer(uri.Language)
+	if organizer.Empty() {
+		ctx.JSON(http.StatusInternalServerError, &domain.ErrorResponse{
+			ErrorMessage: fmt.Sprintf("unknown organizer for language: %s", uri.Language),
+		})
+		return
+	}
+
+	sourceCompanies := c.companies(organizer.Language)
+
+	userVacancyFavoriteMap, err := c.userFavoriteVacancyRepository.GetMap(ctx, authUserID, nil)
+	if err != nil {
+		logger.Error(err)
+
+		// NOP, continue
+	}
+
+	userCompanyVisibilityMap, err := c.userCompanyVisibilityRepository.GetMap(ctx, authUserID)
+	if err != nil {
+		logger.Error(err)
+
+		// NOP, continue
+	}
+
+	userIndustryVisibilityMap, err := c.userIndustryVisibilityRepository.GetMap(ctx, authUserID)
+	if err != nil {
+		logger.Error(err)
+
+		// NOP, continue
+	}
+
+	var (
+		companies               = make([]*domain.VacancyCompanyResponse, 0, len(sourceCompanies))
+		vacancies               = make([]*domain.VacancyResponse, 0, 4096)
+		vacancyIDs              = make([]int64, 0, 4096)
+		maxPinnedUntilVacancyID = int64(0)
+		maxPinnedUntil          = time.Now()
+	)
+
+	for _, company := range sourceCompanies {
+		var (
+			addCompany = false
+		)
+
+		for _, vacancy := range company.Languages[organizer.Language].Vacancies {
+			id, ok := organizers.VacancyUrlMap[vacancy.URL]
+			if ok {
+				if company.LinkedInProfile.Verified && vacancy.PinnedUntil.After(maxPinnedUntil) {
+					maxPinnedUntilVacancyID = id
+					maxPinnedUntil = vacancy.PinnedUntil
+				}
+
+				vacancies = append(vacancies, &domain.VacancyResponse{
+					ID:               id,
+					Title:            vacancy.Title,
+					ShortDescription: utils.VacancyDescription(vacancy.ShortDescription, vacancy.SwitchingOpportunity),
+					Location: domain.LocationResponse{
+						Raw: vacancy.Location,
+						Country: domain.LocationCountryResponse{
+							Code: organizers.LocationCodeMap[vacancy.Location],
+						},
+					},
+					Source:         utils.DetectVacancySource(vacancy.URL),
+					CloudProviders: vacancy.CloudProviders,
+					Remote:         vacancy.Remote,
+					Date:           vacancy.Date,
+					PinnedUntil:    utils.TimePointerOrNil(vacancy.PinnedUntil),
+					MonthlyViews:   0,
+					Company: domain.CompanyReferenceResponse{
+						ID: company.ID,
+					},
+					Favorite: userVacancyFavoriteMap[id],
+				})
+
+				vacancyIDs = append(vacancyIDs, id)
+
+				addCompany = true
+			}
+		}
+
+		if addCompany {
+			companies = append(companies, &domain.VacancyCompanyResponse{
+				ID:   company.ID,
+				Type: company.Type,
+				Logo: domain.CompanyLogoResponse{
+					MainSize: company.Logo.V2,
+				},
+				Name: company.Name,
+				LinkedInProfile: domain.VacancyCompanyLinkedInProfileResponse{
+					Alias:     company.LinkedInProfile.Alias,
+					Employees: company.LinkedInProfile.Employees,
+					Verified:  company.LinkedInProfile.Verified,
+				},
+				GlassdoorProfile: domain.VacancyCompanyGlassdoorProfileResponse{
+					ReviewsRate: company.GlassdoorProfile.ReviewsRate,
+				},
+				Industries:                company.Industries,
+				HasEmployeesFromCountries: company.HasEmployeesFromCountries,
+				RustFoundationMember:      company.RustFoundationMember,
+				Hidden:                    c.companyHidden(company, userCompanyVisibilityMap, userIndustryVisibilityMap),
+			})
+		}
+	}
+
+	month := time.Now().UTC().Truncate(time.Hour*24).AddDate(0, -1, 0)
+	vacancyMonthlyViewsMap, err := c.vacancyViewStatsRepository.Stats(ctx, vacancyIDs, month)
+	if err != nil {
+		logger.Error(err)
+
+		// NOP, continue
+	}
+
+	for _, vacancy := range vacancies {
+		vacancy.MonthlyViews = vacancyMonthlyViewsMap[vacancy.ID]
+	}
+
+	sort.Slice(companies, func(i, j int) bool {
+		return companies[i].ID < companies[j].ID
+	})
+
+	sort.Slice(vacancies, func(i, j int) bool {
+		if vacancies[i].ID == maxPinnedUntilVacancyID {
+			return true
+		}
+
+		if vacancies[j].ID == maxPinnedUntilVacancyID {
+			return false
+		}
+
+		return vacancies[i].Date.After(vacancies[j].Date)
+	})
+
+	ctx.JSON(http.StatusOK, &domain.VacanciesResponse{
+		Companies: companies,
+		Vacancies: vacancies,
+	})
+}
+
+func (c *Controller) maxLanguageDate(vacancies []domain.Vacancy) time.Time {
+	var maxLanguageDate time.Time
+	for _, vacancy := range vacancies {
+		if vacancy.Date.After(maxLanguageDate) {
+			maxLanguageDate = vacancy.Date
+		}
+	}
+	return maxLanguageDate
+}
+
+func (c *Controller) maxDate(languages domain.Languages) time.Time {
+	var maxLanguageDate time.Time
+	for _, language := range languages {
+		for _, vacancy := range language.Vacancies {
+			if vacancy.Date.After(maxLanguageDate) {
+				maxLanguageDate = vacancy.Date
+			}
+		}
+	}
+	return maxLanguageDate
 }
 
 func (c *Controller) parseFeatureFromReferer(ctx *gin.Context) (dbs.FeatureWait, bool) {
@@ -931,81 +1484,156 @@ func (c *Controller) parseFeatureFromReferer(ctx *gin.Context) (dbs.FeatureWait,
 }
 
 func (c *Controller) organizerFeature(path string) (domain.OrganizerFeature, bool) {
+	path = strings.TrimSuffix(path, "/alpha")
+	path = strings.TrimSuffix(path, "/beta")
 	path = strings.TrimSuffix(path, "/v1")
 	path = strings.TrimSuffix(path, "/v2")
+	path = strings.TrimSuffix(path, "/v3")
 
 	featurePathMap := map[string]domain.OrganizerFeature{
-		"/organizers/golang/companies": {
+		"/golang/companies": {
 			Organizer: domain.OrganizerGolang,
 			Feature:   dbs.FeatureWaitOrganizerGolangCompanies,
 			Path:      path,
 			Title:     "Companies",
 		},
-		"/organizers/golang/vacancies": {
+		"/golang/jobs": {
 			Organizer: domain.OrganizerGolang,
 			Feature:   dbs.FeatureWaitOrganizerGolangVacancies,
 			Path:      path,
-			Title:     "Vacancies",
+			Title:     "Jobs",
 		},
-		"/organizers/rust/companies": {
+		"/rust/companies": {
 			Organizer: domain.OrganizerRust,
 			Feature:   dbs.FeatureWaitOrganizerRustCompanies,
 			Path:      path,
 			Title:     "Companies",
 		},
-		"/organizers/rust/vacancies": {
+		"/rust/jobs": {
 			Organizer: domain.OrganizerRust,
 			Feature:   dbs.FeatureWaitOrganizerRustVacancies,
 			Path:      path,
-			Title:     "Vacancies",
+			Title:     "Jobs",
 		},
-		"/organizers/zig/companies": {
+		"/zig/companies": {
 			Organizer: domain.OrganizerZig,
 			Feature:   dbs.FeatureWaitOrganizerZigCompanies,
 			Path:      path,
 			Title:     "Companies",
 		},
-		"/organizers/zig/vacancies": {
+		"/zig/jobs": {
 			Organizer: domain.OrganizerZig,
 			Feature:   dbs.FeatureWaitOrganizerZigVacancies,
 			Path:      path,
-			Title:     "Vacancies",
+			Title:     "Jobs",
 		},
-		"/organizers/scala/companies": {
+		"/scala/companies": {
 			Organizer: domain.OrganizerScala,
 			Feature:   dbs.FeatureWaitOrganizerScalaCompanies,
 			Path:      path,
 			Title:     "Companies",
 		},
-		"/organizers/scala/vacancies": {
+		"/scala/jobs": {
 			Organizer: domain.OrganizerScala,
 			Feature:   dbs.FeatureWaitOrganizerScalaVacancies,
 			Path:      path,
-			Title:     "Vacancies",
+			Title:     "Jobs",
 		},
-		"/organizers/elixir/companies": {
+		"/elixir/companies": {
 			Organizer: domain.OrganizerElixir,
 			Feature:   dbs.FeatureWaitOrganizerElixirCompanies,
 			Path:      path,
 			Title:     "Companies",
 		},
-		"/organizers/elixir/vacancies": {
+		"/elixir/jobs": {
 			Organizer: domain.OrganizerElixir,
 			Feature:   dbs.FeatureWaitOrganizerElixirVacancies,
 			Path:      path,
-			Title:     "Vacancies",
+			Title:     "Jobs",
 		},
-		"/organizers/clojure/companies": {
+		"/erlang/companies": {
+			Organizer: domain.OrganizerErlang,
+			Feature:   dbs.FeatureWaitOrganizerErlangCompanies,
+			Path:      path,
+			Title:     "Companies",
+		},
+		"/erlang/jobs": {
+			Organizer: domain.OrganizerErlang,
+			Feature:   dbs.FeatureWaitOrganizerErlangVacancies,
+			Path:      path,
+			Title:     "Jobs",
+		},
+		"/clojure/companies": {
 			Organizer: domain.OrganizerClojure,
 			Feature:   dbs.FeatureWaitOrganizerClojureCompanies,
 			Path:      path,
 			Title:     "Companies",
 		},
-		"/organizers/clojure/vacancies": {
+		"/clojure/jobs": {
 			Organizer: domain.OrganizerClojure,
 			Feature:   dbs.FeatureWaitOrganizerClojureVacancies,
 			Path:      path,
-			Title:     "Vacancies",
+			Title:     "Jobs",
+		},
+		"/haskell/companies": {
+			Organizer: domain.OrganizerHaskell,
+			Feature:   dbs.FeatureWaitOrganizerHaskellCompanies,
+			Path:      path,
+			Title:     "Companies",
+		},
+		"/haskell/jobs": {
+			Organizer: domain.OrganizerHaskell,
+			Feature:   dbs.FeatureWaitOrganizerHaskellVacancies,
+			Path:      path,
+			Title:     "Jobs",
+		},
+		"/fsharp/companies": {
+			Organizer: domain.OrganizerFSharp,
+			Feature:   dbs.FeatureWaitOrganizerFsharpCompanies,
+			Path:      path,
+			Title:     "Companies",
+		},
+		"/fsharp/jobs": {
+			Organizer: domain.OrganizerFSharp,
+			Feature:   dbs.FeatureWaitOrganizerFsharpVacancies,
+			Path:      path,
+			Title:     "Jobs",
+		},
+		"/ocaml/companies": {
+			Organizer: domain.OrganizerOCaml,
+			Feature:   dbs.FeatureWaitOrganizerOcamlCompanies,
+			Path:      path,
+			Title:     "Companies",
+		},
+		"/ocaml/jobs": {
+			Organizer: domain.OrganizerOCaml,
+			Feature:   dbs.FeatureWaitOrganizerOcamlVacancies,
+			Path:      path,
+			Title:     "Jobs",
+		},
+		"/gleam/companies": {
+			Organizer: domain.OrganizerGleam,
+			Feature:   dbs.FeatureWaitOrganizerGleamCompanies,
+			Path:      path,
+			Title:     "Companies",
+		},
+		"/gleam/jobs": {
+			Organizer: domain.OrganizerGleam,
+			Feature:   dbs.FeatureWaitOrganizerGleamVacancies,
+			Path:      path,
+			Title:     "Jobs",
+		},
+		"/mojo/companies": {
+			Organizer: domain.OrganizerMojo,
+			Feature:   dbs.FeatureWaitOrganizerMojoCompanies,
+			Path:      path,
+			Title:     "Companies",
+		},
+		"/mojo/jobs": {
+			Organizer: domain.OrganizerMojo,
+			Feature:   dbs.FeatureWaitOrganizerMojoVacancies,
+			Path:      path,
+			Title:     "Jobs",
 		},
 	}
 
@@ -1016,12 +1644,18 @@ func (c *Controller) organizerFeature(path string) (domain.OrganizerFeature, boo
 
 func (c *Controller) organizer(path string) (domain.Organizer, bool) {
 	organizerPathMap := map[string]domain.Organizer{
-		"/organizers/golang/welcome":  domain.OrganizerGolang,
-		"/organizers/rust/welcome":    domain.OrganizerRust,
-		"/organizers/zig/welcome":     domain.OrganizerZig,
-		"/organizers/scala/welcome":   domain.OrganizerScala,
-		"/organizers/elixir/welcome":  domain.OrganizerElixir,
-		"/organizers/clojure/welcome": domain.OrganizerClojure,
+		"/golang/welcome":  domain.OrganizerGolang,
+		"/rust/welcome":    domain.OrganizerRust,
+		"/zig/welcome":     domain.OrganizerZig,
+		"/scala/welcome":   domain.OrganizerScala,
+		"/elixir/welcome":  domain.OrganizerElixir,
+		"/erlang/welcome":  domain.OrganizerErlang,
+		"/clojure/welcome": domain.OrganizerClojure,
+		"/haskell/welcome": domain.OrganizerHaskell,
+		"/fsharp/welcome":  domain.OrganizerFSharp,
+		"/ocaml/welcome":   domain.OrganizerOCaml,
+		"/gleam/welcome":   domain.OrganizerGleam,
+		"/mojo/welcome":    domain.OrganizerMojo,
 	}
 
 	feature, ok := organizerPathMap[path]
@@ -1045,7 +1679,7 @@ func (c *Controller) redirect(redirect string) string {
 func (c *Controller) waitlistStats(ctx *gin.Context, feature dbs.FeatureWait) {
 	stats, err := c.fetchStats(ctx, feature)
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		ctx.JSON(http.StatusInternalServerError, &domain.ErrorResponse{
 			ErrorMessage: err.Error(), // Yes, we are leaking the error message to the client, it's fine for now
@@ -1105,14 +1739,14 @@ func (c *Controller) companyStats(ctx *gin.Context, companyID int64) template.Co
 
 	totalViews, lastMonthViews, err := c.companyViewDailyStatsRepository.Stats(ctx, companyID, from)
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}
 
 	totalFavorites, lastMonthFavorites, err := c.userFavoriteCompanyRepository.Stats(ctx, companyID, from)
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		// NOP, continue
 	}
@@ -1133,13 +1767,17 @@ func (c *Controller) getHeaderProfiles(ctx *gin.Context, userID int64) ([]domain
 	return nil, nil
 }
 
-func (c *Controller) companies(organizerFeature domain.OrganizerFeature, skip bool) []domain.CompanyProfile {
+func (c *Controller) companies(language domain.Language) []domain.CompanyProfile {
 	var (
-		source    = db.Companies()
+		source    = db.CloneCompanies()
 		companies = make([]domain.CompanyProfile, 0, len(source))
 	)
 	for _, company := range source {
-		company.ID = organizers.CompanyAliasMap[company.LinkedInProfile.Alias]
+		if company.Ignore {
+			continue
+		}
+
+		company.ID = organizers.CompanyAliasToCodeMap[company.LinkedInProfile.Alias]
 		if company.ID == 0 {
 			// make generate-organizers
 
@@ -1149,43 +1787,412 @@ func (c *Controller) companies(organizerFeature domain.OrganizerFeature, skip bo
 		if company.Type == "" {
 			company.Type = organizers.ToCompanyType(company.LinkedInProfile.Alias)
 		}
-		if company.Website == "" {
-			company.Website = company.URL
+		company.Logo = domain.CompanyLogo{
+			V0: organizers.CompanyAliasToLogoMapV0[company.LinkedInProfile.Alias],
+			V1: organizers.CompanyAliasToLogoMapV1[company.LinkedInProfile.Alias],
+			V2: organizers.CompanyAliasToLogoMapV2[company.LinkedInProfile.Alias],
 		}
 
-		language := organizerFeature.Organizer.Language
-		if len(company.Languages[language].Vacancies) == 0 && company.Vacancies[language] == nil {
+		var (
+			languageProfile = company.Languages[language]
+			vacancies       = languageProfile.Vacancies
+			show            = len(vacancies) > 0 ||
+				len(languageProfile.TechnologyUsageReferences) > 0 ||
+				(language == domain.Rust && company.RustFoundationMember)
+		)
+
+		if !show {
 			continue
 		}
 
-		if len(company.Languages[language].Vacancies) == 0 && skip {
-			continue
-		}
+		company.CloudProviders = c.aggregateOrderedCloudProviders(company.CloudProviders, vacancies)
+		company.GitHubRepositoryCount = languageProfile.GitHubRepositoryCount
+		company.Remote = company.Remote || c.anyRemoteVacancy(vacancies)
+		company.LatestVacancyDate = c.maxLanguageDate(vacancies)
+		company.PinnedUntil = languageProfile.PinnedUntil
 
 		companies = append(companies, company)
 	}
 	return companies
 }
 
-func (c *Controller) findCompany(ctx *gin.Context, alias string) (domain.CompanyProfile, bool) {
-	// Yes, we are leaking the database implementation to the controller, it's fine for now
-	// Yes, we use linear search, it's fine for now
-	for _, company := range db.Companies() {
-		if company.LinkedInProfile.Alias == alias {
-			return company, true
+func (c *Controller) sortCompanies(companies []domain.CompanyProfile, defaultPinnedCompanyAlias string) {
+	var (
+		maxPinnedUntilCompanyID = int64(0)
+		maxPinnedUntil          = time.Now()
+	)
+
+	for _, company := range companies {
+		if company.LinkedInProfile.Verified && company.PinnedUntil.After(maxPinnedUntil) {
+			maxPinnedUntilCompanyID = company.ID
+			maxPinnedUntil = company.PinnedUntil
 		}
 	}
 
-	return domain.CompanyProfile{}, false
+	if maxPinnedUntilCompanyID == 0 && defaultPinnedCompanyAlias != "" {
+		for i, company := range companies {
+			if company.LinkedInProfile.Alias == defaultPinnedCompanyAlias {
+				maxPinnedUntilCompanyID = company.ID
+				company.PinnedUntil = time.Now().UTC().Truncate(time.Hour).AddDate(0, 0, 1)
+				companies[i] = company
+				break
+			}
+		}
+	}
+
+	slices.SortFunc(companies, func(a, b domain.CompanyProfile) int {
+		if a.ID == maxPinnedUntilCompanyID {
+			return -1
+		}
+
+		if b.ID == maxPinnedUntilCompanyID {
+			return 1
+		}
+
+		if a.LatestVacancyDate.After(b.LatestVacancyDate) {
+			return -1
+		}
+
+		if a.LatestVacancyDate.Before(b.LatestVacancyDate) {
+			return 1
+		}
+
+		return int(b.ID - a.ID) // Sort by ID descending
+	})
+}
+
+func (c *Controller) findCompany(ctx *gin.Context, alias string) (domain.CompanyProfile, string, bool) {
+	companies := db.CloneCompanies()
+
+	// Yes, we are leaking the database implementation to the controller, it's fine for now
+	// Yes, we use linear search, it's fine for now
+
+	for _, company := range companies {
+		if company.LinkedInProfile.Alias == alias {
+			return company, "", true
+		}
+	}
+
+	for _, company := range companies {
+		for _, previousAlias := range company.LinkedInProfile.PreviousAliases {
+			if previousAlias == alias {
+				return company, company.LinkedInProfile.Alias, true
+			}
+		}
+	}
+
+	return domain.CompanyProfile{}, "", false
 }
 
 func (c *Controller) toPrepareCompany(company domain.CompanyProfile) domain.PreparedCompany {
 	return domain.PreparedCompany{
 		ID:                        company.ID,
 		Type:                      company.Type,
+		Logo:                      company.Logo,
 		Name:                      company.Name,
 		Alias:                     company.LinkedInProfile.Alias,
 		Industries:                company.Industries,
 		HasEmployeesFromCountries: company.HasEmployeesFromCountries,
+		RustFoundationMember:      company.RustFoundationMember,
 	}
+}
+
+// DataPopulationLists will be removed in the future.
+func (c *Controller) DataPopulationLists(ctx *gin.Context) {
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationLists()))
+}
+
+// DataPopulationCompaniesCareersAndAboutAndBlog will be removed in the future.
+func (c *Controller) DataPopulationCompaniesCareersAndAboutAndBlog(ctx *gin.Context) {
+	var (
+		companies = c.dataPopulationCompanies(func(company domain.CompanyProfile) bool {
+			if c.skipSmallCompany(company) {
+				return false
+			}
+
+			return company.CareersURL == "" || company.AboutURL == "" || company.BlogURL == ""
+		})
+	)
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationCompaniesCareersAndAboutAndBlog(companies, "Populate Careers & About & Blog")))
+}
+
+// DataPopulationCompaniesLinkedIn will be removed in the future.
+func (c *Controller) DataPopulationCompaniesLinkedIn(ctx *gin.Context) {
+	var (
+		companies = c.dataPopulationCompanies(func(company domain.CompanyProfile) bool {
+			if c.skipSmallCompany(company) {
+				return false
+			}
+
+			return (company.LinkedInProfile.ID == 0 && len(company.LinkedInProfile.IDs) == 0) ||
+				company.LinkedInProfile.Alias == "" ||
+				company.LinkedInProfile.Name == "" ||
+				company.LinkedInProfile.Followers == "" ||
+				company.LinkedInProfile.Employees == "" ||
+				company.LinkedInProfile.AssociatedMembers == ""
+		})
+	)
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationCompaniesLinkedIn(companies, "Populate LinkedIn")))
+}
+
+// DataPopulationCompaniesGitHub will be removed in the future.
+func (c *Controller) DataPopulationCompaniesGitHub(ctx *gin.Context) {
+	var (
+		companies = c.dataPopulationCompanies(func(company domain.CompanyProfile) bool {
+			if c.skipSmallCompany(company) {
+				return false
+			}
+
+			return company.GitHubProfile.Followers == ""
+		})
+	)
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationCompaniesGitHub(companies, "Populate GitHub")))
+}
+
+// DataPopulationCompaniesGlassdoor will be removed in the future.
+func (c *Controller) DataPopulationCompaniesGlassdoor(ctx *gin.Context) {
+	var (
+		companies = c.dataPopulationCompanies(func(company domain.CompanyProfile) bool {
+			if c.skipSmallCompany(company) {
+				return false
+			}
+
+			return company.GlassdoorProfile.OverviewURL == "" ||
+				company.GlassdoorProfile.ReviewsURL == "" ||
+				company.GlassdoorProfile.JobsURL == ""
+		})
+	)
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationCompaniesGlassdoor(companies, "Populate Glassdoor")))
+}
+
+// DataPopulationCompaniesBlind will be removed in the future.
+func (c *Controller) DataPopulationCompaniesBlind(ctx *gin.Context) {
+	var (
+		companies = c.dataPopulationCompanies(func(company domain.CompanyProfile) bool {
+			if c.skipSmallCompany(company) {
+				return false
+			}
+
+			return company.BlindProfile.Alias == ""
+		})
+	)
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationCompaniesBlind(companies, "Populate Blind")))
+}
+
+// DataPopulationCompaniesIndeed will be removed in the future.
+func (c *Controller) DataPopulationCompaniesIndeed(ctx *gin.Context) {
+	var (
+		companies = c.dataPopulationCompanies(func(company domain.CompanyProfile) bool {
+			if c.skipSmallCompany(company) {
+				return false
+			}
+
+			return company.IndeedProfile.Alias == ""
+		})
+	)
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationCompaniesIndeed(companies, "Populate Indeed")))
+}
+
+// DataPopulationCompaniesLevelsFyi will be removed in the future.
+func (c *Controller) DataPopulationCompaniesLevelsFyi(ctx *gin.Context) {
+	var (
+		companies = c.dataPopulationCompanies(func(company domain.CompanyProfile) bool {
+			if c.skipSmallCompany(company) {
+				return false
+			}
+
+			return company.LevelsFyiProfile.Alias == "" ||
+				company.LevelsFyiProfile.Employees == ""
+		})
+	)
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationCompaniesLevelsFyi(companies, "Populate Levels.fyi")))
+}
+
+// DataPopulationCompaniesLogo will be removed in the future.
+func (c *Controller) DataPopulationCompaniesLogo(ctx *gin.Context) {
+	const (
+		keepLatest = 50
+	)
+
+	var (
+		source = c.dataPopulationCompanies(func(company domain.CompanyProfile) bool {
+			return true
+		})
+		result = make([]domain.CompanyProfile, 0, len(source))
+	)
+
+	for i, company := range source {
+		if i < keepLatest {
+			result = append(result, company)
+
+			continue
+		}
+
+		if c.skipSmallCompany(company) {
+			continue
+		}
+
+		company.LatestVacancyDate = c.maxDate(company.Languages)
+
+		// The existing logos must be re-checked
+		result = append(result, company)
+	}
+
+	c.sortCompanies(result, "")
+
+	ctx.Data(http.StatusOK, "text/html; charset=utf-8", []byte(template.DataPopulationCompaniesLogo(result, "Populate Logo")))
+}
+
+func (c *Controller) dataPopulationCompanies(match func(company domain.CompanyProfile) bool) []domain.CompanyProfile {
+	var (
+		source    = db.CloneCompanies()
+		companies = make([]domain.CompanyProfile, 0, len(source))
+	)
+	for _, company := range source {
+		if company.Ignore {
+			continue
+		}
+
+		company.ID = organizers.CompanyAliasToCodeMap[company.LinkedInProfile.Alias]
+		if company.ID == 0 {
+			// make generate-organizers
+
+			continue
+		}
+
+		if !match(company) {
+			continue
+		}
+
+		if company.Type == "" {
+			company.Type = organizers.ToCompanyType(company.LinkedInProfile.Alias)
+		}
+		company.Logo = domain.CompanyLogo{
+			V0: organizers.CompanyAliasToLogoMapV0[company.LinkedInProfile.Alias],
+			V1: organizers.CompanyAliasToLogoMapV1[company.LinkedInProfile.Alias],
+			V2: organizers.CompanyAliasToLogoMapV2[company.LinkedInProfile.Alias],
+		}
+
+		if !c.hasVacancies(company) {
+			continue
+		}
+
+		company.LatestVacancyDate = c.maxDate(company.Languages)
+
+		companies = append(companies, company)
+	}
+
+	c.sortCompanies(companies, "")
+
+	return companies
+}
+
+func (c *Controller) hasVacancies(company domain.CompanyProfile) bool {
+	for _, language := range company.Languages {
+		if len(language.Vacancies) > 0 {
+			return true
+		}
+	}
+
+	return false
+}
+
+func (c *Controller) aggregateOrderedCloudProviders(sourceCloudProviders []domain.CloudProvider, vacancies []domain.Vacancy) []domain.CloudProvider {
+	var (
+		cloudProviderExistsMap = make(map[domain.CloudProvider]bool)
+	)
+
+	for _, cloudProvider := range sourceCloudProviders {
+		cloudProviderExistsMap[cloudProvider] = true
+	}
+	for _, vacancy := range vacancies {
+		for _, cloudProvider := range vacancy.CloudProviders {
+			cloudProviderExistsMap[cloudProvider] = true
+		}
+	}
+
+	var (
+		result = make([]domain.CloudProvider, 0, len(cloudProviderExistsMap))
+	)
+	for _, cloudProvider := range domain.OrderedCloudProviders {
+		if cloudProviderExistsMap[cloudProvider] {
+			result = append(result, cloudProvider)
+		}
+	}
+
+	return result
+}
+
+func (c *Controller) anyRemoteVacancy(vacancies []domain.Vacancy) bool {
+	for _, vacancy := range vacancies {
+		if vacancy.Remote {
+			return true
+		}
+	}
+
+	return false
+}
+
+func (c *Controller) skipSmallCompany(company domain.CompanyProfile) bool {
+	/*
+		const all = true
+
+		if all {
+			return false
+		}
+	*/
+
+	switch company.LinkedInProfile.Employees {
+	case "10K+", "5K-10K", "1K-5K", "501-1K", "201-500", "51-200":
+		return false
+	}
+
+	return true
+}
+
+func (c *Controller) sitemapCompanyLastModified(vacancies []domain.Vacancy) string {
+	if len(vacancies) == 0 {
+		return "2025-01-01"
+	}
+
+	var maxVacancyDate time.Time
+
+	for _, vacancy := range vacancies {
+		if vacancy.Date.After(maxVacancyDate) {
+			maxVacancyDate = vacancy.Date
+		}
+	}
+
+	return maxVacancyDate.Format(time.DateOnly)
+}
+
+func (c *Controller) companyHidden(company domain.CompanyProfile, userCompanyVisibilityMap map[int64]bool, userIndustryVisibilityMap map[int64]bool) bool {
+	if userCompanyVisibilityMap[company.ID] {
+		return false
+	}
+
+	if len(company.Industries) == 0 {
+		return false
+	}
+
+	for _, industry := range company.Industries {
+		if userIndustryVisibilityMap[industry.ID] {
+			return false
+		}
+	}
+
+	for _, industry := range company.Industries {
+		if domain.IsIndustryHidden(industry.ID) {
+			return true
+		}
+	}
+
+	return false
 }

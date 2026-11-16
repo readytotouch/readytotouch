@@ -11,20 +11,24 @@ import (
 	"golang.org/x/oauth2/bitbucket"
 	"golang.org/x/oauth2/github"
 	"golang.org/x/oauth2/gitlab"
+	"golang.org/x/oauth2/google"
 
 	"github.com/readytotouch/readytotouch/internal/auth"
 	"github.com/readytotouch/readytotouch/internal/db/postgres"
 	"github.com/readytotouch/readytotouch/internal/db/redis"
 	"github.com/readytotouch/readytotouch/internal/domain"
 	"github.com/readytotouch/readytotouch/internal/env"
+	"github.com/readytotouch/readytotouch/internal/logger"
 	"github.com/readytotouch/readytotouch/internal/server"
 
 	pkgCAC "github.com/readytotouch/readytotouch/internal/cac"
+	pkgGitHubStars "github.com/readytotouch/readytotouch/internal/githubstars"
 	pkgJWT "github.com/readytotouch/readytotouch/internal/jwt"
 	pkgLinkedIn "github.com/readytotouch/readytotouch/internal/linkedin"
 	pkgBitbucket "github.com/readytotouch/readytotouch/internal/oauth-providers/bitbucket"
 	pkgGitHub "github.com/readytotouch/readytotouch/internal/oauth-providers/github"
 	pkgGitLab "github.com/readytotouch/readytotouch/internal/oauth-providers/gitlab"
+	pkgGoogle "github.com/readytotouch/readytotouch/internal/oauth-providers/google"
 	pkgOnline "github.com/readytotouch/readytotouch/internal/online"
 	pkgOrganizer "github.com/readytotouch/readytotouch/internal/organizer"
 	pkgUsers "github.com/readytotouch/readytotouch/internal/users"
@@ -52,15 +56,18 @@ func main() {
 	redisClient := redis.MustClient(context.Background(), "redis:6379")
 
 	var (
-		userRepository                  = postgres.NewUserRepository(database)
-		onlineRepository                = postgres.NewOnlineRepository(database)
-		userFeatureWaitlistRepository   = postgres.NewUserFeatureWaitlistRepository(database)
-		featureViewStatsRepository      = postgres.NewFeatureViewStatsRepository(database)
-		userFavoriteCompanyRepository   = postgres.NewUserFavoriteCompanyRepository(database)
-		userFavoriteVacancyRepository   = postgres.NewUserFavoriteVacancyRepository(database)
-		companyViewDailyStatsRepository = postgres.NewCompanyViewDailyStatsRepository(database)
-		vacancyViewStatsRepository      = postgres.NewVacancyViewStatsRepository(database)
-		userToLinkedInCompanyRepository = postgres.NewUserToLinkedInCompanyRepository(database)
+		userRepository                   = postgres.NewUserRepository(database)
+		onlineRepository                 = postgres.NewOnlineRepository(database)
+		userFeatureWaitlistRepository    = postgres.NewUserFeatureWaitlistRepository(database)
+		featureViewStatsRepository       = postgres.NewFeatureViewStatsRepository(database)
+		userFavoriteCompanyRepository    = postgres.NewUserFavoriteCompanyRepository(database)
+		userFavoriteVacancyRepository    = postgres.NewUserFavoriteVacancyRepository(database)
+		userCompanyVisibilityRepository  = postgres.NewUserCompanyVisibilityRepository(database)
+		userIndustryVisibilityRepository = postgres.NewUserIndustryVisibilityRepository(database)
+		companyViewDailyStatsRepository  = postgres.NewCompanyViewDailyStatsRepository(database)
+		vacancyViewStatsRepository       = postgres.NewVacancyViewStatsRepository(database)
+		userToLinkedInCompanyRepository  = postgres.NewUserToLinkedInCompanyRepository(database)
+		githubRepositoryStarsRepository  = postgres.NewGithubRepositoryStarsRepository(database)
 	)
 
 	var (
@@ -92,6 +99,14 @@ func main() {
 			Endpoint:     bitbucket.Endpoint,
 			Scopes:       nil, // Scopes are defined on the client/consumer instance.
 		})
+
+		googleOAuthProvider = pkgGoogle.NewGoogleOAuthProvider(&oauth2.Config{
+			ClientID:     os.Getenv("GOOGLE_CLIENT_ID"),
+			ClientSecret: os.Getenv("GOOGLE_CLIENT_SECRET"),
+			RedirectURL:  os.Getenv("GOOGLE_REDIRECT_URL"),
+			Endpoint:     google.Endpoint,
+			Scopes:       []string{"email profile"},
+		})
 	)
 
 	var (
@@ -104,20 +119,25 @@ func main() {
 			githubOAuthProvider,
 			gitlabOAuthProvider,
 			bitbucketOAuthProvider,
+			googleOAuthProvider,
 			jwtService,
 		)
 		userController      = pkgUsers.NewController(userRepository)
-		onlineController    = pkgOnline.NewController(userRepository, onlineRepository)
+		onlineController    = pkgOnline.NewController(onlineRepository)
 		organizerController = pkgOrganizer.NewController(
 			userRepository,
 			userFeatureWaitlistRepository,
 			featureViewStatsRepository,
 			userFavoriteCompanyRepository,
 			userFavoriteVacancyRepository,
+			userCompanyVisibilityRepository,
+			userIndustryVisibilityRepository,
 			companyViewDailyStatsRepository,
 			vacancyViewStatsRepository,
+			githubRepositoryStarsRepository,
 		)
 		cacController = pkgCAC.NewController(
+			userRepository,
 			userToLinkedInCompanyRepository,
 			pkgCAC.NewService(
 				userToLinkedInCompanyRepository,
@@ -129,6 +149,9 @@ func main() {
 	r := gin.New()
 	r.Use(redirectFromWWW())
 	r.Use(cors.Default())
+	r.Use(redirectTrimPrefix("/organizers/", "/"))
+	r.Use(redirectTrimPrefix("/design/organizers/", "/design/"))
+	r.Use(redirectTrimPrefix("/go/", "/golang/"))
 	r.Use(func(ctx *gin.Context) {
 		user, err := jwtService.ParseToken(ctx)
 		if err != nil {
@@ -158,77 +181,226 @@ func main() {
 
 			ctx.Next()
 		})
-	r.GET("/", organizerController.Index)
+	r.GET("/v1", organizerController.IndexV1)
+	r.GET("/v2", organizerController.IndexV2)
+	r.GET("/v3", organizerController.IndexV3)
+	r.GET("/", organizerController.IndexV3)
 
 	r.GET("/api/v1/users/registration/stats/daily.json", userController.RegistrationDailyCountStats)
 	r.GET("/api/v1/users/online/stats/daily.json", onlineController.DailyCountStats)
 
-	r.GET("/organizers", organizerController.Main)
+	r.GET("/organizers", organizerController.Organizers)
 
-	r.GET("/organizers/golang/welcome", organizerController.Welcome)
-	r.GET("/organizers/rust/welcome", organizerController.Welcome)
-	r.GET("/organizers/zig/welcome", organizerController.Welcome)
-	r.GET("/organizers/scala/welcome", organizerController.Welcome)
-	r.GET("/organizers/elixir/welcome", organizerController.Welcome)
-	r.GET("/organizers/clojure/welcome", organizerController.Welcome)
+	r.GET("/golang/welcome", organizerController.WelcomeV3)
+	r.GET("/rust/welcome", organizerController.WelcomeV3)
+	r.GET("/zig/welcome", organizerController.WelcomeV3)
+	r.GET("/scala/welcome", organizerController.WelcomeV3)
+	r.GET("/elixir/welcome", organizerController.WelcomeV3)
+	r.GET("/erlang/welcome", organizerController.WelcomeV3)
+	r.GET("/clojure/welcome", organizerController.WelcomeV3)
+	r.GET("/haskell/welcome", organizerController.WelcomeV3)
+	r.GET("/fsharp/welcome", organizerController.WelcomeV3)
+	r.GET("/ocaml/welcome", organizerController.WelcomeV3)
+	r.GET("/gleam/welcome", organizerController.WelcomeV3)
+	r.GET("/mojo/welcome", organizerController.WelcomeV3)
 
-	r.GET("/organizers/golang/companies/ukraine", organizerController.GolangCompaniesUkraine)
-	r.GET("/organizers/golang/companies", organizerController.CompaniesV2)
-	r.GET("/organizers/golang/companies/v1", organizerController.CompaniesV1)
-	r.GET("/organizers/golang/companies/v2", organizerController.CompaniesV2)
-	r.GET("/organizers/golang/companies/:company_alias", organizerController.CompanyV2)
-	r.GET("/organizers/golang/companies/:company_alias/v1", organizerController.CompanyV1)
-	r.GET("/organizers/golang/companies/:company_alias/v2", organizerController.CompanyV2)
-	r.GET("/organizers/golang/vacancies", organizerController.Vacancies)
-	r.GET("/organizers/golang/communities", organizerController.GolangCommunities)
-	r.GET("/organizers/rust/companies", organizerController.CompaniesV2)
-	r.GET("/organizers/rust/companies/v1", organizerController.CompaniesV1)
-	r.GET("/organizers/rust/companies/v2", organizerController.CompaniesV2)
-	r.GET("/organizers/rust/companies/:company_alias", organizerController.CompanyV2)
-	r.GET("/organizers/rust/companies/:company_alias/v1", organizerController.CompanyV1)
-	r.GET("/organizers/rust/companies/:company_alias/v2", organizerController.CompanyV2)
-	r.GET("/organizers/rust/vacancies", organizerController.Waitlist)
-	r.GET("/organizers/rust/communities", organizerController.RustCommunities)
-	r.GET("/organizers/zig/companies", organizerController.Waitlist)
-	r.GET("/organizers/zig/companies/v1", organizerController.Waitlist)
-	r.GET("/organizers/zig/companies/v2", organizerController.Waitlist)
-	r.GET("/organizers/zig/companies/:company_alias", organizerController.CompanyV2)
-	r.GET("/organizers/zig/companies/:company_alias/v1", organizerController.CompanyV1)
-	r.GET("/organizers/zig/companies/:company_alias/v2", organizerController.CompanyV2)
-	r.GET("/organizers/zig/vacancies", organizerController.Waitlist)
-	r.GET("/organizers/zig/communities", organizerController.ZigCommunities)
-	r.GET("/organizers/scala/companies", organizerController.CompaniesV2)
-	r.GET("/organizers/scala/companies/v1", organizerController.CompaniesV1)
-	r.GET("/organizers/scala/companies/v2", organizerController.CompaniesV2)
-	r.GET("/organizers/scala/companies/:company_alias", organizerController.CompanyV2)
-	r.GET("/organizers/scala/companies/:company_alias/v1", organizerController.CompanyV1)
-	r.GET("/organizers/scala/companies/:company_alias/v2", organizerController.CompanyV2)
-	r.GET("/organizers/scala/vacancies", organizerController.Waitlist)
-	r.GET("/organizers/scala/communities", organizerController.ScalaCommunities)
-	r.GET("/organizers/elixir/companies", organizerController.CompaniesV2)
-	r.GET("/organizers/elixir/companies/v1", organizerController.CompaniesV1)
-	r.GET("/organizers/elixir/companies/v2", organizerController.CompaniesV2)
-	r.GET("/organizers/elixir/companies/:company_alias", organizerController.CompanyV2)
-	r.GET("/organizers/elixir/companies/:company_alias/v1", organizerController.CompanyV1)
-	r.GET("/organizers/elixir/companies/:company_alias/v2", organizerController.CompanyV2)
-	r.GET("/organizers/elixir/vacancies", organizerController.Waitlist)
-	r.GET("/organizers/elixir/communities", organizerController.ElixirCommunities)
-	r.GET("/organizers/clojure/companies", organizerController.Waitlist)
-	r.GET("/organizers/clojure/companies/v1", organizerController.Waitlist)
-	r.GET("/organizers/clojure/companies/v2", organizerController.Waitlist)
-	r.GET("/organizers/clojure/companies/:company_alias", organizerController.CompanyV2)
-	r.GET("/organizers/clojure/companies/:company_alias/v1", organizerController.CompanyV1)
-	r.GET("/organizers/clojure/companies/:company_alias/v2", organizerController.CompanyV2)
-	r.GET("/organizers/clojure/vacancies", organizerController.Waitlist)
-	r.GET("/organizers/clojure/communities", organizerController.ClojureCommunities)
-	r.GET("/organizers/v/:vacancy_id", organizerController.VacancyRedirect)
+	r.GET("/golang/companies/ukraine", organizerController.GolangCompaniesUkraine)
+	r.GET("/golang/companies", organizerController.CompaniesV3Beta)
+	r.GET("/golang/companies/v1", organizerController.CompaniesV1Alpha)
+	r.GET("/golang/companies/v2", organizerController.CompaniesV2Alpha)
+	r.GET("/golang/companies/v3", organizerController.CompaniesV3Beta)
+	r.GET("/golang/companies/v3/alpha", organizerController.CompaniesV3Alpha)
+	r.GET("/golang/companies/v3/beta", organizerController.CompaniesV3Beta)
+	r.GET("/golang/companies/:company_alias", organizerController.CompanyV3)
+	r.GET("/golang/companies/:company_alias/v1", organizerController.CompanyV1)
+	r.GET("/golang/companies/:company_alias/v2", organizerController.CompanyV2)
+	r.GET("/golang/companies/:company_alias/v3", organizerController.CompanyV3)
+	r.GET("/golang/jobs", organizerController.JobsV3Beta)
+	r.GET("/golang/jobs/v2", organizerController.JobsV2Alpha)
+	r.GET("/golang/jobs/v3", organizerController.JobsV3Beta)
+	r.GET("/golang/communities", organizerController.GolangCommunities)
+	r.GET("/rust/companies", organizerController.CompaniesV3Beta)
+	r.GET("/rust/companies/v1", organizerController.CompaniesV1Alpha)
+	r.GET("/rust/companies/v2", organizerController.CompaniesV2Alpha)
+	r.GET("/rust/companies/v3", organizerController.CompaniesV3Beta)
+	r.GET("/rust/companies/v3/alpha", organizerController.CompaniesV3Alpha)
+	r.GET("/rust/companies/v3/beta", organizerController.CompaniesV3Beta)
+	r.GET("/rust/companies/:company_alias", organizerController.CompanyV3)
+	r.GET("/rust/companies/:company_alias/v1", organizerController.CompanyV1)
+	r.GET("/rust/companies/:company_alias/v2", organizerController.CompanyV2)
+	r.GET("/rust/companies/:company_alias/v3", organizerController.CompanyV3)
+	r.GET("/rust/jobs", organizerController.JobsV3Beta)
+	r.GET("/rust/jobs/v2", organizerController.JobsV2Alpha)
+	r.GET("/rust/jobs/v3", organizerController.JobsV3Alpha)
+	r.GET("/rust/communities", organizerController.RustCommunities)
+	r.GET("/zig/companies", organizerController.Waitlist)
+	r.GET("/zig/companies/v1", organizerController.Waitlist)
+	r.GET("/zig/companies/v2", organizerController.Waitlist)
+	r.GET("/zig/companies/v3", organizerController.Waitlist)
+	r.GET("/zig/companies/:company_alias", organizerController.CompanyV3)
+	r.GET("/zig/companies/:company_alias/v1", organizerController.CompanyV1)
+	r.GET("/zig/companies/:company_alias/v2", organizerController.CompanyV2)
+	r.GET("/zig/companies/:company_alias/v3", organizerController.CompanyV3)
+	r.GET("/zig/jobs", organizerController.Waitlist)
+	r.GET("/zig/jobs/v2", organizerController.Waitlist)
+	r.GET("/zig/jobs/v3", organizerController.Waitlist)
+	r.GET("/zig/communities", organizerController.ZigCommunities)
+	r.GET("/scala/companies", organizerController.CompaniesV3Beta)
+	r.GET("/scala/companies/v1", organizerController.CompaniesV1Alpha)
+	r.GET("/scala/companies/v2", organizerController.CompaniesV2Alpha)
+	r.GET("/scala/companies/v3", organizerController.CompaniesV3Beta)
+	r.GET("/scala/companies/v3/alpha", organizerController.CompaniesV3Alpha)
+	r.GET("/scala/companies/v3/beta", organizerController.CompaniesV3Beta)
+	r.GET("/scala/companies/:company_alias", organizerController.CompanyV3)
+	r.GET("/scala/companies/:company_alias/v1", organizerController.CompanyV1)
+	r.GET("/scala/companies/:company_alias/v2", organizerController.CompanyV2)
+	r.GET("/scala/companies/:company_alias/v3", organizerController.CompanyV3)
+	r.GET("/scala/jobs", organizerController.JobsV3Beta)
+	r.GET("/scala/jobs/v2", organizerController.JobsV2Alpha)
+	r.GET("/scala/jobs/v3", organizerController.JobsV3Alpha)
+	r.GET("/scala/communities", organizerController.ScalaCommunities)
+	r.GET("/elixir/companies", organizerController.CompaniesV3Beta)
+	r.GET("/elixir/companies/v1", organizerController.CompaniesV1Alpha)
+	r.GET("/elixir/companies/v2", organizerController.CompaniesV2Alpha)
+	r.GET("/elixir/companies/v3", organizerController.CompaniesV3Beta)
+	r.GET("/elixir/companies/v3/alpha", organizerController.CompaniesV3Alpha)
+	r.GET("/elixir/companies/v3/beta", organizerController.CompaniesV3Beta)
+	r.GET("/elixir/companies/:company_alias", organizerController.CompanyV3)
+	r.GET("/elixir/companies/:company_alias/v1", organizerController.CompanyV1)
+	r.GET("/elixir/companies/:company_alias/v2", organizerController.CompanyV2)
+	r.GET("/elixir/companies/:company_alias/v3", organizerController.CompanyV3)
+	r.GET("/elixir/jobs", organizerController.JobsV3Beta)
+	r.GET("/elixir/jobs/v2", organizerController.JobsV2Alpha)
+	r.GET("/elixir/jobs/v3", organizerController.JobsV3Alpha)
+	r.GET("/elixir/communities", organizerController.ElixirCommunities)
+	r.GET("/erlang/companies", organizerController.Waitlist)
+	r.GET("/erlang/companies/v1", organizerController.Waitlist)
+	r.GET("/erlang/companies/v2", organizerController.Waitlist)
+	r.GET("/erlang/companies/v3", organizerController.Waitlist)
+	r.GET("/erlang/companies/:company_alias", organizerController.CompanyV3)
+	r.GET("/erlang/companies/:company_alias/v1", organizerController.CompanyV1)
+	r.GET("/erlang/companies/:company_alias/v2", organizerController.CompanyV2)
+	r.GET("/erlang/companies/:company_alias/v3", organizerController.CompanyV3)
+	r.GET("/erlang/jobs", organizerController.Waitlist)
+	r.GET("/erlang/jobs/v2", organizerController.JobsV2Alpha)
+	r.GET("/erlang/jobs/v3", organizerController.JobsV3Alpha)
+	r.GET("/erlang/communities", organizerController.TODO)
+	r.GET("/clojure/companies", organizerController.CompaniesV3Beta)
+	r.GET("/clojure/companies/v1", organizerController.CompaniesV1Alpha)
+	r.GET("/clojure/companies/v2", organizerController.CompaniesV2Alpha)
+	r.GET("/clojure/companies/v3", organizerController.CompaniesV3Beta)
+	r.GET("/clojure/companies/v3/alpha", organizerController.CompaniesV3Alpha)
+	r.GET("/clojure/companies/v3/beta", organizerController.CompaniesV3Beta)
+	r.GET("/clojure/companies/:company_alias", organizerController.CompanyV3)
+	r.GET("/clojure/companies/:company_alias/v1", organizerController.CompanyV1)
+	r.GET("/clojure/companies/:company_alias/v2", organizerController.CompanyV2)
+	r.GET("/clojure/companies/:company_alias/v3", organizerController.CompanyV3)
+	r.GET("/clojure/jobs", organizerController.JobsV3Beta)
+	r.GET("/clojure/jobs/v2", organizerController.JobsV2Alpha)
+	r.GET("/clojure/jobs/v3", organizerController.JobsV3Alpha)
+	r.GET("/clojure/communities", organizerController.ClojureCommunities)
+	r.GET("/haskell/companies", organizerController.CompaniesV3Beta)
+	r.GET("/haskell/companies/v1", organizerController.CompaniesV1Alpha)
+	r.GET("/haskell/companies/v2", organizerController.CompaniesV2Alpha)
+	r.GET("/haskell/companies/v3", organizerController.CompaniesV3Beta)
+	r.GET("/haskell/companies/v3/alpha", organizerController.CompaniesV3Alpha)
+	r.GET("/haskell/companies/v3/beta", organizerController.CompaniesV3Beta)
+	r.GET("/haskell/companies/:company_alias", organizerController.CompanyV3)
+	r.GET("/haskell/companies/:company_alias/v1", organizerController.CompanyV1)
+	r.GET("/haskell/companies/:company_alias/v2", organizerController.CompanyV2)
+	r.GET("/haskell/companies/:company_alias/v3", organizerController.CompanyV3)
+	r.GET("/haskell/jobs", organizerController.JobsV3Beta)
+	r.GET("/haskell/jobs/v2", organizerController.JobsV2Alpha)
+	r.GET("/haskell/jobs/v3", organizerController.JobsV3Alpha)
+	r.GET("/haskell/communities", organizerController.TODO)
+	r.GET("/fsharp/companies", organizerController.Waitlist)
+	r.GET("/fsharp/companies/v1", organizerController.Waitlist)
+	r.GET("/fsharp/companies/v2", organizerController.Waitlist)
+	r.GET("/fsharp/companies/v3", organizerController.Waitlist)
+	r.GET("/fsharp/companies/:company_alias", organizerController.CompanyV3)
+	r.GET("/fsharp/companies/:company_alias/v1", organizerController.CompanyV1)
+	r.GET("/fsharp/companies/:company_alias/v2", organizerController.CompanyV2)
+	r.GET("/fsharp/companies/:company_alias/v3", organizerController.CompanyV3)
+	r.GET("/fsharp/jobs", organizerController.Waitlist)
+	r.GET("/fsharp/jobs/v2", organizerController.Waitlist)
+	r.GET("/fsharp/jobs/v3", organizerController.Waitlist)
+	r.GET("/fsharp/communities", organizerController.TODO)
+	r.GET("/ocaml/companies", organizerController.Waitlist)
+	r.GET("/ocaml/companies/v1", organizerController.Waitlist)
+	r.GET("/ocaml/companies/v2", organizerController.Waitlist)
+	r.GET("/ocaml/companies/v3", organizerController.Waitlist)
+	r.GET("/ocaml/companies/:company_alias", organizerController.CompanyV3)
+	r.GET("/ocaml/companies/:company_alias/v1", organizerController.CompanyV1)
+	r.GET("/ocaml/companies/:company_alias/v2", organizerController.CompanyV2)
+	r.GET("/ocaml/companies/:company_alias/v3", organizerController.CompanyV3)
+	r.GET("/ocaml/jobs", organizerController.Waitlist)
+	r.GET("/ocaml/jobs/v2", organizerController.Waitlist)
+	r.GET("/ocaml/jobs/v3", organizerController.Waitlist)
+	r.GET("/ocaml/communities", organizerController.TODO)
+	r.GET("/gleam/companies", organizerController.Waitlist)
+	r.GET("/gleam/companies/v1", organizerController.Waitlist)
+	r.GET("/gleam/companies/v2", organizerController.Waitlist)
+	r.GET("/gleam/companies/v3", organizerController.Waitlist)
+	r.GET("/gleam/companies/:company_alias", organizerController.CompanyV3)
+	r.GET("/gleam/companies/:company_alias/v1", organizerController.CompanyV1)
+	r.GET("/gleam/companies/:company_alias/v2", organizerController.CompanyV2)
+	r.GET("/gleam/companies/:company_alias/v3", organizerController.CompanyV3)
+	r.GET("/gleam/jobs", organizerController.Waitlist)
+	r.GET("/gleam/jobs/v2", organizerController.Waitlist)
+	r.GET("/gleam/jobs/v3", organizerController.Waitlist)
+	r.GET("/gleam/communities", organizerController.TODO)
+	r.GET("/mojo/companies", organizerController.Waitlist)
+	r.GET("/mojo/companies/v1", organizerController.Waitlist)
+	r.GET("/mojo/companies/v2", organizerController.Waitlist)
+	r.GET("/mojo/companies/v3", organizerController.Waitlist)
+	r.GET("/mojo/companies/:company_alias", organizerController.CompanyV3)
+	r.GET("/mojo/companies/:company_alias/v1", organizerController.CompanyV1)
+	r.GET("/mojo/companies/:company_alias/v2", organizerController.CompanyV2)
+	r.GET("/mojo/companies/:company_alias/v3", organizerController.CompanyV3)
+	r.GET("/mojo/jobs", organizerController.Waitlist)
+	r.GET("/mojo/jobs/v2", organizerController.Waitlist)
+	r.GET("/mojo/jobs/v3", organizerController.Waitlist)
+	r.GET("/mojo/communities", organizerController.TODO)
+	r.GET("/v/:vacancy_id", organizerController.VacancyRedirect)
 
-	r.GET("/organizers/golang", found("/organizers/golang/companies"))
-	r.GET("/organizers/rust", found("/organizers/rust/companies"))
-	r.GET("/organizers/zig", found("/organizers/zig/companies"))
-	r.GET("/organizers/scala", found("/organizers/scala/companies"))
-	r.GET("/organizers/elixir", found("/organizers/elixir/companies"))
-	r.GET("/organizers/clojure", found("/organizers/clojure/companies"))
+	r.GET("/golang", found("/golang/companies", true))
+	r.GET("/go", found("/golang/companies", true))
+	r.GET("/rust", found("/rust/companies", true))
+	r.GET("/zig", found("/zig/companies", true))
+	r.GET("/scala", found("/scala/companies", true))
+	r.GET("/elixir", found("/elixir/companies", true))
+	r.GET("/erlang", found("/erlang/companies", true))
+	r.GET("/clojure", found("/clojure/companies", true))
+	r.GET("/haskell", found("/haskell/companies", true))
+	r.GET("/fsharp", found("/fsharp/companies", true))
+	r.GET("/ocaml", found("/ocaml/companies", true))
+	r.GET("/gleam", found("/gleam/companies", true))
+	r.GET("/mojo", found("/mojo/companies", true))
+
+	r.GET("/golang/vacancies", found("/golang/jobs", true))
+	r.GET("/rust/vacancies", found("/rust/jobs", true))
+	r.GET("/zig/vacancies", found("/zig/jobs", true))
+	r.GET("/scala/vacancies", found("/scala/jobs", true))
+	r.GET("/elixir/vacancies", found("/elixir/jobs", true))
+	r.GET("/clojure/vacancies", found("/clojure/jobs", true))
+	r.GET("/erlang/vacancies", found("/erlang/jobs", true))
+	r.GET("/fsharp/vacancies", found("/fsharp/jobs", true))
+	r.GET("/ocaml/vacancies", found("/ocaml/jobs", true))
+	r.GET("/gleam/vacancies", found("/gleam/jobs", true))
+	r.GET("/mojo/vacancies", found("/mojo/jobs", true))
+
+	/*
+		Will be removed in the future.
+	*/
+	r.GET("/private/unstable/wip/organizers/data-population-lists", organizerController.DataPopulationLists)
+	r.GET("/private/unstable/wip/organizers/data-population-lists/careers-and-about-and-blog", organizerController.DataPopulationCompaniesCareersAndAboutAndBlog)
+	r.GET("/private/unstable/wip/organizers/data-population-lists/linkedin", organizerController.DataPopulationCompaniesLinkedIn)
+	r.GET("/private/unstable/wip/organizers/data-population-lists/github", organizerController.DataPopulationCompaniesGitHub)
+	r.GET("/private/unstable/wip/organizers/data-population-lists/glassdoor", organizerController.DataPopulationCompaniesGlassdoor)
+	r.GET("/private/unstable/wip/organizers/data-population-lists/blind", organizerController.DataPopulationCompaniesBlind)
+	r.GET("/private/unstable/wip/organizers/data-population-lists/indeed", organizerController.DataPopulationCompaniesIndeed)
+	r.GET("/private/unstable/wip/organizers/data-population-lists/levels", organizerController.DataPopulationCompaniesLevelsFyi)
+	r.GET("/private/unstable/wip/organizers/data-population-lists/logo", organizerController.DataPopulationCompaniesLogo)
 
 	r.GET("/api/v1/features/auto/waitlist/stats.json", organizerController.WaitlistStats)
 	r.POST("/api/v1/features/auto/waitlist/subscribe.json", organizerController.WaitlistSubscribe)
@@ -236,55 +408,92 @@ func main() {
 	r.GET("/api/v1/companies/:company_id/views/stats/daily.json", organizerController.CompanyViewStats)
 	r.PATCH("/api/v1/vacancies/:vacancy_id/favorite.json", organizerController.FavoriteVacancy)
 
+	r.PATCH("/api/v1/companies/:company_id/visibility.json", organizerController.VisibilityCompany)
+	r.PATCH("/api/v1/industries/:industry_alias/visibility.json", organizerController.VisibilityIndustry)
+
 	r.
 		GET("/auth/github", authController.GithubRedirect).
 		GET("/auth/gitlab", authController.GitlabRedirect).
 		GET("/auth/bitbucket", authController.BitbucketRedirect).
+		GET("/auth/google", authController.GoogleRedirect).
 		GET("/auth/github/callback", authController.GithubCallback).
 		GET("/auth/gitlab/callback", authController.GitlabCallback).
 		GET("/auth/bitbucket/callback", authController.BitbucketCallback).
+		GET("/auth/google/callback", authController.GoogleCallback).
 		GET("/logout", authController.Logout)
 
 	r.
 		// WIP
-		// GET("/wip/companies-and-connections", cacController.Countries).
-		GET("/wip/companies-and-connections/ukraine", cacController.Ukraine).
-		GET("/wip/companies-and-connections/czechia", cacController.Czechia).
-		GET("/wip/companies-and-connections/poland", cacController.Poland).
-		GET("/wip/companies-and-connections/brazil", cacController.Brazil).
+		GET("/companies-and-connections", found("/companies-and-connections/worldwide", true)).
+		GET("/companies-and-connections/worldwide", cacController.Worldwide).
+		GET("/companies-and-connections/ukraine", cacController.Ukraine).
+		GET("/companies-and-connections/brazil", cacController.Brazil).
+		GET("/wip/companies-and-connections", found("/companies-and-connections/worldwide", true)).
+		GET("/wip/companies-and-connections/ukraine", found("/companies-and-connections/ukraine", true)).
+		GET("/wip/companies-and-connections/brazil", found("/companies-and-connections/brazil", true)).
 		GET("/api/v1/companies-and-connections/companies.json", cacController.Companies).
 		POST("/api/v1/companies-and-connections/companies.json", cacController.AddCompany).
 		DELETE("/api/v1/companies-and-connections/companies.json", cacController.DeleteCompany)
 
 	r.
-		// Unsafe API endpoints that can be changed without any notice.
-		GET("/api/v1/unsafe/companies.json", organizerController.UnsafeCompanies)
+		// Unsafe API endpoints for the browser extension that can be changed without any notice.
+		GET("/api/v1/unsafe/companies.json", organizerController.UnsafeCompanies).
+		GET("/api/v1/unsafe/vacancies.json", organizerController.UnsafeVacancies)
 
 	r.
-		StaticFile("/design", "./public/design/online.html").
-		StaticFile("/design/online", "./public/design/online.html").
-		StaticFile("/design/online-auth", "./public/design/online-auth.html").
+		// Unsafe API endpoints for the new v3 functionality that can be changed without any notice.
+		GET("/api/v1/unsafe/:language/companies.json", organizerController.UnsafeCompaniesV3).
+		GET("/api/v1/unsafe/:language/vacancies.json", organizerController.UnsafeVacanciesV3)
 
-		// Design from OrganizerFeature
-		StaticFile("/design/organizers", "./public/design/organizer-main-page-auth.html").
-		StaticFile("/design/organizers-auth", "./public/design/organizer-main-page.html").
-		GET("/design/organizers/:language/welcome", s("./public/design/organizer-welcome.html")).
-		GET("/design/organizers/:language/companies/ukraine", s("./public/design/golang-companies-organizer.html")).
-		GET("/design/organizers/:language/companies/:company_alias", s("./public/design/organizer-statistics.html")).
-		GET("/design/organizers/:language/companies/:company_alias/v1", s("./public/design-v1/organizer-statistics.html")).
-		GET("/design/organizers/:language/companies/:company_alias/v2", s("./public/design/organizer-statistics.html")).
-		GET("/design/organizers/:language/companies", s("./public/design/organizer-companies.html")).
-		GET("/design/organizers/:language/companies/v1", s("./public/design-v1/organizer-companies.html")).
-		GET("/design/organizers/:language/companies/v2", s("./public/design/organizer-companies.html")).
-		GET("/design/organizers/:language/vacancies", s("./public/design/organizer-vacancies.html")).
-		GET("/design/organizers/:language/vacancies/subscribe", s("./public/design/organizer-vacancies-subscribe.html")).
-		GET("/design/organizers/:language/vacancies/unsubscribe", s("./public/design/organizer-vacancies-unsubscribe.html")).
-		GET("/design/organizers/golang/communities", s("./public/design/organizer-go-communities.html")).
-		GET("/design/organizers/rust/communities", s("./public/design/organizer-rust-communities.html")).
-		GET("/design/organizers/scala/communities", s("./public/design/organizer-scala-communities.html")).
-		GET("/design/organizers/elixir/communities", s("./public/design/organizer-elixir-communities.html")).
-		GET("/design/organizers/clojure/communities", s("./public/design/organizer-clojure-communities.html")).
-		GET("/design/organizers/:language/communities", s("./public/design/organizer-go-communities.html")).
+	r.GET("/analytics", found("https://plausible.io/readytotouch.com", false))
+	r.GET("/plausible", found("https://plausible.io/readytotouch.com", false))
+	r.GET("/similarweb", found("https://www.similarweb.com/website/readytotouch.com/", false))
+
+	r.
+		StaticFile("/design", "./public/design-v3/main-responsive.html").
+		StaticFile("/design/v1", "./public/design/online.html").
+		StaticFile("/design/v1/auth", "./public/design/online-auth.html").
+		StaticFile("/design/v2", "./public/design/online-new.html").
+		StaticFile("/design/v2/auth", "./public/design/online-new-auth.html").
+		StaticFile("/design/v3", "./public/design-v3/main-responsive.html").
+		StaticFile("/design/v3/auth", "./public/design-v3/main-responsive-auth.html").
+
+		// Organizers
+		StaticFile("/design/organizers", "./public/design/organizer-main-page.html").
+		StaticFile("/design/organizers-auth", "./public/design/organizer-main-page-auth.html").
+		GET("/design/:language/welcome", s("./public/design/organizer-welcome.html")).
+		GET("/design/:language/companies/ukraine", s("./public/design/golang-companies-organizer.html")).
+		GET("/design/:language/companies/:company_alias", s("./public/design-v3/organizer-company-responsive-auth.html")).
+		GET("/design/:language/companies/:company_alias/v1", s("./public/design-v1/organizer-statistics.html")).
+		GET("/design/:language/companies/:company_alias/v2", s("./public/design/organizer-statistics.html")).
+		GET("/design/:language/companies/:company_alias/v3", s("./public/design-v3/organizer-company-responsive-auth.html")).
+		GET("/design/:language/companies", s("./public/design-v3/organizer-companies-responsive.html")).
+		GET("/design/:language/companies/v1", s("./public/design-v1/organizer-companies.html")).
+		GET("/design/:language/companies/v2", s("./public/design/organizer-companies.html")).
+		GET("/design/:language/companies/v3", s("./public/design-v3/organizer-companies-responsive.html")).
+		GET("/design/:language/companies/v3/auth", s("./public/design-v3/organizer-companies-responsive-auth.html")).
+		GET("/design/:language/jobs", s("./public/design-v3/organizer-vacancies-responsive-auth.html")).
+		// v1 has never existed for the jobs page
+		// GET("/design/:language/jobs/v1", s("./public/design/organizer-vacancies.html")).
+		GET("/design/:language/jobs/v2", s("./public/design/organizer-vacancies.html")).
+		GET("/design/:language/jobs/v3", s("./public/design-v3/organizer-vacancies-responsive-auth.html")).
+		GET("/design/:language/jobs/subscribe", s("./public/design/organizer-vacancies-subscribe.html")).
+		GET("/design/:language/jobs/unsubscribe", s("./public/design/organizer-vacancies-unsubscribe.html")).
+		GET("/design/:language/vacancies", s("./public/design-v3/organizer-vacancies-responsive-auth.html")).
+		GET("/design/:language/vacancies/subscribe", s("./public/design/organizer-vacancies-subscribe.html")).
+		GET("/design/:language/vacancies/unsubscribe", s("./public/design/organizer-vacancies-unsubscribe.html")).
+		GET("/design/golang/communities", s("./public/design/organizer-go-communities.html")).
+		GET("/design/rust/communities", s("./public/design/organizer-rust-communities.html")).
+		GET("/design/scala/communities", s("./public/design/organizer-scala-communities.html")).
+		GET("/design/elixir/communities", s("./public/design/organizer-elixir-communities.html")).
+		GET("/design/clojure/communities", s("./public/design/organizer-clojure-communities.html")).
+		GET("/design/:language/communities", s("./public/design/organizer-go-communities.html")).
+
+		// Companies and connections
+		StaticFile("/design/companies-and-connections", "./public/design/connections.html").
+		StaticFile("/design/companies-and-connections/worldwide", "./public/design/connections.html").
+		StaticFile("/design/companies-and-connections/ukraine", "./public/design/connections.html").
+		StaticFile("/design/companies-and-connections/brazil", "./public/design/connections.html").
 
 		// Design from ChatGPT
 		StaticFile("/design/wip/companies-and-connections", "./public/chatgpt-design/companies-and-connections.html").
@@ -296,6 +505,10 @@ func main() {
 		Static("/assets/images", "./public/assets/images").
 		Static("/assets/fonts", "./public/assets/fonts").
 		Static("/assets/js", "./public/assets/js").
+		Static("/assets/unstable/logos/112x56/", "./public/logos/112x56/").
+		Static("/assets/unstable/logos/72x72/", "./public/logos/72x72/").
+		Static("/assets/unstable/logos-v0/", "./public/logos-v0/adapted/").
+		Static("/assets/unstable/logos-v1/", "./public/logos-v1/adapted/").
 
 		// Favicons
 		StaticFile("/android-icon-144x144.png", "./public/android-icon-144x144.png").
@@ -344,22 +557,64 @@ func main() {
 		// https://www.facebook.com/privacy/policy/
 		StaticFile("privacy-policy", "./public/privacy-policy.html")
 
+	r.
+		GET("/sitemap-golang-companies.xml", organizerController.SitemapCompanies(domain.OrganizerGolang)).
+		GET("/sitemap-rust-companies.xml", organizerController.SitemapCompanies(domain.OrganizerRust)).
+		GET("/sitemap-zig-companies.xml", organizerController.SitemapCompanies(domain.OrganizerZig)).
+		GET("/sitemap-scala-companies.xml", organizerController.SitemapCompanies(domain.OrganizerScala)).
+		GET("/sitemap-elixir-companies.xml", organizerController.SitemapCompanies(domain.OrganizerElixir)).
+		GET("/sitemap-erlang-companies.xml", organizerController.SitemapCompanies(domain.OrganizerErlang)).
+		GET("/sitemap-clojure-companies.xml", organizerController.SitemapCompanies(domain.OrganizerClojure)).
+		GET("/sitemap-haskell-companies.xml", organizerController.SitemapCompanies(domain.OrganizerHaskell)).
+		GET("/sitemap-fsharp-companies.xml", organizerController.SitemapCompanies(domain.OrganizerFSharp)).
+		GET("/sitemap-ocaml-companies.xml", organizerController.SitemapCompanies(domain.OrganizerOCaml)).
+		GET("/sitemap-gleam-companies.xml", organizerController.SitemapCompanies(domain.OrganizerGleam)).
+		GET("/sitemap-mojo-companies.xml", organizerController.SitemapCompanies(domain.OrganizerMojo))
+
 	{
+		var ctx = context.Background()
+
 		// very fast solution
 		go func() {
 			for range time.Tick(time.Minute) {
-				pairs, err := onlineRedisStorage.GetAndClear(context.Background())
+				pairs, err := onlineRedisStorage.GetAndClear(ctx)
 				if err != nil {
 					// NOP
 
 					continue
 				}
 
-				err = onlinePostgresStorage.BatchStore(context.Background(), pairs)
+				err = onlinePostgresStorage.BatchStore(ctx, pairs)
 				if err != nil {
 					// NOP
 
 					continue
+				}
+			}
+		}()
+
+		// GitHub stars sync
+		go func() {
+			for range time.Tick(3 * time.Hour) {
+				repos, err := githubRepositoryStarsRepository.All(ctx)
+				if err != nil {
+					logger.Error(err)
+
+					continue
+				}
+
+				for _, repo := range repos {
+					count, err := pkgGitHubStars.GetStargazersCount(ctx, repo.Owner, repo.Repo)
+					if err != nil {
+						logger.Error(err)
+
+						continue
+					}
+
+					err = githubRepositoryStarsRepository.Upsert(ctx, repo.Owner, repo.Repo, count, time.Now().UTC())
+					if err != nil {
+						logger.Error(err)
+					}
 				}
 			}
 		}()
@@ -379,9 +634,24 @@ func redirectFromWWW() gin.HandlerFunc {
 	}
 }
 
-func found(path string) gin.HandlerFunc {
+func redirectTrimPrefix(old, new string) gin.HandlerFunc {
 	return func(c *gin.Context) {
-		c.Redirect(http.StatusFound, path)
+		if strings.HasPrefix(c.Request.URL.Path, old) {
+			found(new+strings.TrimPrefix(c.Request.URL.Path, old), true)(c)
+			return
+		}
+
+		c.Next()
+	}
+}
+
+func found(path string, keepQueryParams bool) gin.HandlerFunc {
+	return func(c *gin.Context) {
+		if keepQueryParams && c.Request.URL.RawQuery != "" {
+			c.Redirect(http.StatusFound, path+"?"+c.Request.URL.RawQuery)
+		} else {
+			c.Redirect(http.StatusFound, path)
+		}
 	}
 }
 

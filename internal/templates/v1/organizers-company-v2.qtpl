@@ -27,6 +27,7 @@
     {%= organizersFonts() %}
     {%= organizersCompanyV2Styles() %}
     <script src="https://cdn.jsdelivr.net/npm/apexcharts@3.52.0"></script>
+    {%= plausibleAnalytics() %}
     {%= ga() %}
 </head>
 
@@ -36,29 +37,32 @@
   <div class="header__wrapper">
     <a href="/organizers" class="header__logo">
       <img
-        width="129"
-        height="32"
+        width="30"
+        height="30"
         class="header__logo-img"
         src="/assets/images/pages/organizer/{%s organizerFeature.Organizer.Logo %}"
         alt="organizer logo"
       />
+      <span class="header__logo-label">Organizer</span>
     </a>
     <ul class="header__nav">
       <li class="header__nav-item">
-        <a href="/organizers/{%s organizerFeature.Organizer.Alias %}/companies" class="header__nav-link active">Companies</a>
+        <a href="/{%s organizerFeature.Organizer.Alias %}/companies" class="header__nav-link active">Companies</a>
       </li>
       <li class="header__nav-item">
-        <a href="/organizers/{%s organizerFeature.Organizer.Alias %}/vacancies" class="header__nav-link">Vacancies</a>
+        <a href="/{%s organizerFeature.Organizer.Alias %}/jobs" class="header__nav-link">Jobs</a>
       </li>
+      {% comment %}
       <li class="header__nav-item">
-        <a href="/organizers/{%s organizerFeature.Organizer.Alias %}/communities" class="header__nav-link">Communities</a>
+        <a href="/{%s organizerFeature.Organizer.Alias %}/communities" class="header__nav-link">Communities</a>
       </li>
+      {% endcomment %}
     </ul>
-    {%= organizersHeaderStars() %}
+    {%= organizersHeaderStarsV1() %}
     {% if len(headerProfiles) > 0 %}
-    {%= organizersHeaderProfile(headerProfiles) %}
+    {%= organizersHeaderProfileV1(headerProfiles) %}
     {% else %}
-    <a href="/organizers/{%s organizerFeature.Organizer.Alias %}/welcome{%s authQueryParams %}" class="button button--small-padding button--black header__login-button">Log in</a>
+    <a href="/{%s organizerFeature.Organizer.Alias %}/welcome{%s authQueryParams %}" class="button button--small-padding button--black header__login-button">Log in</a>
     {% endif %}
   </div>
 </header>
@@ -122,7 +126,7 @@
       <img
         class="card__image"
         alt="card image preview icon"
-		src="/assets/images/pages/common-images/unknown.svg"
+		src="{%s logo(company.Logo) %}"
       />
     </div>
     <figcaption class="card__header-caption">
@@ -130,21 +134,26 @@
     </figcaption>
   </figure>
 	<div class="card__top-links">
-		<a href="{%s company.Website %}" class="card__top-link button-link">Website</a>
-		{% if company.Careers == "" %}
+		<a href="{%s company.BaseURL %}" target="_blank" class="card__top-link button-link">Website</a>
+		{% if company.CareersURL == "" %}
 			<span class="card__top-link button-link disabled">Careers</span>
 		{% else %}
-			<a href="{%s company.Careers %}" class="card__top-link button-link">Careers</a>
+			<a href="{%s company.CareersURL %}" target="_blank" class="card__top-link button-link">Careers</a>
 		{% endif %}
-		{% if company.About == "" %}
+		{% if company.AboutURL == "" %}
 			<span class="card__top-link button-link disabled">About</span>
 		{% else %}
-			<a href="{%s company.About %}" class="card__top-link button-link">About</a>
+			<a href="{%s company.AboutURL %}" target="_blank" class="card__top-link button-link">About</a>
 		{% endif %}
-		{% if company.Blog == "" %}
+		{% if company.BlogURL == "" %}
 			<span class="card__top-link button-link disabled">Dev Blog</span>
 		{% else %}
-			<a href="{%s company.Blog %}" class="card__top-link button-link">Dev Blog</a>
+			<a href="{%s company.BlogURL %}" target="_blank" class="card__top-link button-link">Dev Blog</a>
+		{% endif %}
+		{% if company.ReferralProgramURL == "" %}
+		    <span class="card__top-link button-link disabled">Referral program</span>
+		{% else %}
+		    <a href="{%s company.ReferralProgramURL %}" target="_blank" class="card__top-link button-link">Referral program</a>
 		{% endif %}
 	</div>
   <div class="card__info">
@@ -185,9 +194,9 @@
 						height="32"
 						src="/assets/images/pages/organizer/linkedin.svg"
 					/>
-					<a href="https://www.linkedin.com/company/{%s company.LinkedInProfile.Alias %}/" class="card__links-link">LinkedIn</a>
+					<a href="https://www.linkedin.com/company/{%s company.LinkedInProfile.Alias %}/" target="_blank" class="card__links-link">LinkedIn</a>
 					{% if company.LinkedInProfile.Verified %}
-					<a href="https://www.linkedin.com/company/{%s company.LinkedInProfile.Alias %}/about" class="card__links-link card__links-link--verify">
+					<a href="https://www.linkedin.com/company/{%s company.LinkedInProfile.Alias %}/about" target="_blank" class="card__links-link card__links-link--verify">
 						<img
 							class="card__links-icon"
 							alt="icon"
@@ -203,10 +212,10 @@
 				</ul>
 			</li>
 			<li class="card__links-item">
-				<a href="https://www.linkedin.com/company/{%s company.LinkedInProfile.Alias %}/" class="button-link card__links-link">Overview</a>
+				<a href="https://www.linkedin.com/company/{%s company.LinkedInProfile.Alias %}/" target="_blank" class="button-link card__links-link">Overview</a>
 			</li>
 			<li class="card__links-item">
-				<a href="{%s linkedinConnectionsURL([]Company{company}, nil) %}" class="button-link card__links-link">Connections</a>
+				<a href="{%s linkedinConnectionsURL([]Company{company}, nil) %}" target="_blank" class="button-link card__links-link">Connections (current employees)</a>
 				<img
 					class="card__links-icon"
 					alt="language icon"
@@ -216,13 +225,19 @@
 				/>
 			</li>
 			<li class="card__links-item">
-				<a href="{%s linkedinConnectionsURL([]Company{company}, ukrainianUniversities) %}" class="button-link card__links-link">Connections 🇺🇦</a>
+				<a href="{%s linkedinConnectionsURL([]Company{company}, ukrainianUniversities) %}" target="_blank" class="button-link card__links-link">Connections (current employees) 🇺🇦</a>
 			</li>
 			<li class="card__links-item">
-				<a href="{%s linkedinConnectionsURL([]Company{company}, czechUniversities) %}" class="button-link card__links-link">Connections 🇨🇿</a>
+				<a href="{%s linkedinConnectionsURL([]Company{company}, czechUniversities) %}" target="_blank" class="button-link card__links-link">Connections (current employees) 🇨🇿</a>
 			</li>
 			<li class="card__links-item">
-				<a href="{%s linkedinJobsURL([]Company{company}, string(organizerFeature.Organizer.LanguageTitleKeywords)) %}" class="button-link card__links-link">Jobs</a>
+				<a href="{%s linkedinConnectionsFormerEmployeesURL([]Company{company}) %}" target="_blank" class="button-link card__links-link">Connections (former employees)</a>
+			</li>
+			<li class="card__links-item">
+				<a href="{%s linkedinEmployeesPostsURL([]Company{company}, organizerFeature.Organizer.Title) %}" target="_blank" class="button-link card__links-link">Employees' posts</a>
+			</li>
+			<li class="card__links-item">
+				<a href="{%s linkedinJobsURL([]Company{company}, string(organizerFeature.Organizer.LanguageTitleKeywords)) %}" target="_blank" class="button-link card__links-link">Jobs</a>
 			</li>
 		</ul>
 	</div>
@@ -233,7 +248,7 @@
 				<div class="card__links-item-group">
 					<img
 						class="card__links-icon"
-						alt="github icon"
+						alt="GitHub icon"
 						width="32"
 						height="32"
 						src="/assets/images/pages/organizer/github.svg"
@@ -243,19 +258,22 @@
 			</li>
 			<li class="card__links-item card__links-item--disabled">
 				<span class="button-link card__links-link">Overview</span>
-				<a href="{%s googleSearchGitHub(company.Name) %}" class="card__links-link card__links-link--google">
+				<a href="{%s googleSearchGitHub(company.Name) %}" target="_blank" class="card__links-link card__links-link--google">
 					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
 				</a>
 			</li>
 			<li class="card__links-item card__links-item--disabled">
 				<span class="button-link card__links-link">Repositories (?)</span>
 			</li>
+			<li class="card__links-item card__links-item--disabled">
+				<span class="button-link card__links-link">Followers (?)</span>
+			</li>
 			{% else %}
 			<li class="card__links-item card__links-item--title">
 				<div class="card__links-item-group">
 					<img
 						class="card__links-icon"
-						alt="github icon"
+						alt="GitHub icon"
 						width="32"
 						height="32"
 						src="/assets/images/pages/organizer/github.svg"
@@ -264,19 +282,22 @@
 					<span class="card__links-link card__links-link--verify">
 						<img
 							class="card__links-icon"
-							alt="icon"
+							alt="GitHub verified icon"
 							src="/assets/images/pages/organizer/verified.png"
 						/>
 					</span>
 					{% endif %}
-					<a href="https://github.com/{%s company.GitHubProfile.Login %}" class="card__links-link">GitHub</a>
+					<a href="https://github.com/{%s company.GitHubProfile.Login %}" target="_blank" class="card__links-link">GitHub</a>
 				</div>
 			</li>
 			<li class="card__links-item">
-				<a href="https://github.com/{%s company.GitHubProfile.Login %}" class="button-link card__links-link">Overview</a>
+				<a href="https://github.com/{%s company.GitHubProfile.Login %}" target="_blank" class="button-link card__links-link">Overview</a>
 			</li>
 			<li class="card__links-item">
-				<a href="https://github.com/orgs/{%s company.GitHubProfile.Login %}/repositories?q=lang:{%s organizerFeature.Organizer.GitHubAlias %}" class="button-link card__links-link">Repositories ({%d fetchGitHubRepositoriesCount(company, organizerFeature.Organizer.Language) %})</a>
+				<a href="https://github.com/orgs/{%s company.GitHubProfile.Login %}/repositories?q=lang:{%s organizerFeature.Organizer.GitHubAlias %}" target="_blank" class="button-link card__links-link">Repositories ({%d company.GitHubRepositoryCount %})</a>
+			</li>
+			<li class="card__links-item">
+				<a href="https://github.com/orgs/{%s company.GitHubProfile.Login %}/followers" target="_blank" class="button-link card__links-link">Followers ({%s formatGitHubFollowers(company) %})</a>
 			</li>
 			{% endif %}
 		</ul>
@@ -288,7 +309,7 @@
 				<div class="card__links-item-group">
 					<img
 						class="card__links-icon"
-						alt="linkedin icon"
+						alt="blind icon"
 						width="32"
 						height="32"
 						src="/assets/images/pages/organizer/blind.png"
@@ -303,7 +324,7 @@
 			</li>
 			<li class="card__links-item card__links-item--disabled">
 				<span class="button-link card__links-link">Overview</span>
-				<a href="{%s googleSearchBlind(company.Name) %}" class="card__links-link card__links-link--google">
+				<a href="{%s googleSearchBlind(company.Name) %}" target="_blank" class="card__links-link card__links-link--google">
 					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
 				</a>
 			</li>
@@ -316,12 +337,12 @@
 				<div class="card__links-item-group">
 					<img
 						class="card__links-icon"
-						alt="linkedin icon"
+						alt="blind icon"
 						width="32"
 						height="32"
 						src="/assets/images/pages/organizer/blind.png"
 					/>
-					<a href="https://www.teamblind.com/company/{%s company.BlindProfile.Alias %}" class="card__links-link">Blind</a>
+					<a href="https://www.teamblind.com/company/{%s company.BlindProfile.Alias %}" target="_blank" class="card__links-link">Blind</a>
 				</div>
 				<ul class="card__links-item-info">
 					<li class="card__link-stats-item">{%s formatBlindEmployees(company.BlindProfile.Employees) %} employees</li>
@@ -330,10 +351,10 @@
 				</ul>
 			</li>
 			<li class="card__links-item">
-				<a href="https://www.teamblind.com/company/{%s company.BlindProfile.Alias %}" class="button-link card__links-link">Overview</a>
+				<a href="https://www.teamblind.com/company/{%s company.BlindProfile.Alias %}" target="_blank" class="button-link card__links-link">Overview</a>
 			</li>
 			<li class="card__links-item">
-				<a href="https://www.teamblind.com/company/{%s company.BlindProfile.Alias %}/reviews" class="button-link card__links-link">Reviews</a>
+				<a href="https://www.teamblind.com/company/{%s company.BlindProfile.Alias %}/reviews" target="_blank" class="button-link card__links-link">Reviews</a>
 				<span class="card__links-link-star">⭐ {%s company.BlindProfile.ReviewsRate %}</span>
 			</li>
 			{% endif %}
@@ -346,7 +367,7 @@
 				<div class="card__links-item-group">
 					<img
 						class="card__links-icon"
-						alt="linkedin icon"
+						alt="levels.fyi icon"
 						width="32"
 						height="32"
 						src="/assets/images/pages/organizer/levels.png"
@@ -359,7 +380,7 @@
 			</li>
 			<li class="card__links-item card__links-item--disabled">
 				<span class="button-link card__links-link">Overview</span>
-				<a href="{%s googleSearchLevelsFyi(company.Name) %}" class="card__links-link card__links-link--google">
+				<a href="{%s googleSearchLevelsFyi(company.Name) %}" target="_blank" class="card__links-link card__links-link--google">
 					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
 				</a>
 			</li>
@@ -371,22 +392,22 @@
 				<div class="card__links-item-group">
 					<img
 						class="card__links-icon"
-						alt="linkedin icon"
+						alt="levels.fyi icon"
 						width="32"
 						height="32"
 						src="/assets/images/pages/organizer/levels.png"
 					/>
-					<a href="https://www.levels.fyi/companies/{%s company.LevelsFyiProfile.Alias %}" class="card__links-link">Levels.fyi</a>
+					<a href="https://www.levels.fyi/companies/{%s company.LevelsFyiProfile.Alias %}" target="_blank" class="card__links-link">Levels.fyi</a>
 				</div>
 				<ul class="card__links-item-info">
 					<li class="card__link-stats-item">{%s formatLevelsFyiEmployees(company.LevelsFyiProfile.Employees) %} employees</li>
 				</ul>
 			</li>
 			<li class="card__links-item">
-				<a href="https://www.levels.fyi/companies/{%s company.LevelsFyiProfile.Alias %}" class="button-link card__links-link">Overview</a>
+				<a href="https://www.levels.fyi/companies/{%s company.LevelsFyiProfile.Alias %}" target="_blank" class="button-link card__links-link">Overview</a>
 			</li>
 			<li class="card__links-item">
-				<a href="https://www.levels.fyi/companies/{%s company.LevelsFyiProfile.Alias %}/jobs" class="button-link card__links-link">Jobs</a>
+				<a href="https://www.levels.fyi/companies/{%s company.LevelsFyiProfile.Alias %}/jobs" target="_blank" class="button-link card__links-link">Jobs</a>
 			</li>
 			{% endif %}
 		</ul>
@@ -421,7 +442,7 @@
 			</li>
 			<li class="card__links-item card__links-item--disabled">
 				<span class="button-link card__links-link">Overview</span>
-				<a href="{%s googleSearchGlassdoor(company.Name) %}" class="card__links-link card__links-link--google">
+				<a href="{%s googleSearchGlassdoor(company.Name) %}" target="_blank" class="card__links-link card__links-link--google">
 					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
 				</a>
 			</li>
@@ -442,7 +463,7 @@
 						height="32"
 						src="/assets/images/pages/organizer/glassdoor.svg"
 					/>
-					<a href="{%s company.GlassdoorProfile.OverviewURL %}" class="card__links-link">Glassdoor</a>
+					<a href="{%s company.GlassdoorProfile.OverviewURL %}" target="_blank" class="card__links-link">Glassdoor</a>
 					{% if company.GlassdoorProfile.Verified %}
 					<span class="card__links-link card__links-link--verify">
 						<img
@@ -468,14 +489,14 @@
 				</ul>
 			</li>
 			<li class="card__links-item">
-				<a href="{%s company.GlassdoorProfile.OverviewURL %}" class="button-link card__links-link">Overview</a>
+				<a href="{%s company.GlassdoorProfile.OverviewURL %}" target="_blank" class="button-link card__links-link">Overview</a>
 			</li>
 			<li class="card__links-item">
-				<a href="{%s company.GlassdoorProfile.ReviewsURL %}" class="button-link card__links-link">Reviews</a>
+				<a href="{%s company.GlassdoorProfile.ReviewsURL %}" target="_blank" class="button-link card__links-link">Reviews</a>
 				<span class="card__links-link-star">{%s formatGlassdoorReviewsRate(company.GlassdoorProfile.ReviewsRate) %} ★</span>
 			</li>
 			<li class="card__links-item">
-				<a href="{%s company.GlassdoorProfile.JobsURL %}" class="button-link card__links-link">Jobs</a>
+				<a href="{%s company.GlassdoorProfile.JobsURL %}" target="_blank" class="button-link card__links-link">Jobs</a>
 			</li>
 			{% endif %}
 		</ul>
@@ -487,7 +508,7 @@
 				<div class="card__links-item-group">
 					<img
 						class="card__links-icon"
-						alt="linkedin icon"
+						alt="indeed icon"
 						width="32"
 						height="32"
 						src="/assets/images/pages/organizer/indeed.png"
@@ -497,7 +518,7 @@
 			</li>
 			<li class="card__links-item card__links-item--disabled">
 				<span class="button-link card__links-link">Overview</span>
-				<a href="{%s googleSearchIndeed(company.Name) %}" class="card__links-link card__links-link--google">
+				<a href="{%s googleSearchIndeed(company.Name) %}" target="_blank" class="card__links-link card__links-link--google">
 					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
 				</a>
 			</li>
@@ -509,19 +530,19 @@
 				<div class="card__links-item-group">
 					<img
 						class="card__links-icon"
-						alt="linkedin icon"
+						alt="indeed icon"
 						width="32"
 						height="32"
 						src="/assets/images/pages/organizer/indeed.png"
 					/>
-					<a href="https://www.indeed.com/cmp/{%s company.IndeedProfile.Alias %}" class="card__links-link">Indeed</a>
+					<a href="https://www.indeed.com/cmp/{%s company.IndeedProfile.Alias %}" target="_blank" class="card__links-link">Indeed</a>
 				</div>
 			</li>
 			<li class="card__links-item">
-				<a href="https://www.indeed.com/cmp/{%s company.IndeedProfile.Alias %}" class="button-link card__links-link">Overview</a>
+				<a href="https://www.indeed.com/cmp/{%s company.IndeedProfile.Alias %}" target="_blank" class="button-link card__links-link">Overview</a>
 			</li>
 			<li class="card__links-item">
-				<a href="https://www.indeed.com/cmp/{%s company.IndeedProfile.Alias %}/jobs" class="button-link card__links-link">Jobs</a>
+				<a href="https://www.indeed.com/cmp/{%s company.IndeedProfile.Alias %}/jobs" target="_blank" class="button-link card__links-link">Jobs</a>
 			</li>
 			{% endif %}
 		</ul>
@@ -532,7 +553,7 @@
 				<div class="card__links-item-group">
 					<img
 						class="card__links-icon"
-						alt="linkedin icon"
+						alt="investors icon"
 						width="32"
 						height="32"
 						src="/assets/images/pages/organizer/investors.svg"
@@ -544,42 +565,42 @@
 			<li class="card__links-item card__links-item--disabled">
 				<img class="card__links-icon" alt="Dealroom icon" width="20" height="20" src="/assets/images/pages/organizer/dealroom.png" />
 				<span class="button-link card__links-link">Dealroom</span>
-				<a href="{%s googleSearchDealroom(company.Name) %}" class="card__links-link card__links-link--google">
+				<a href="{%s googleSearchDealroom(company.Name) %}" target="_blank" class="card__links-link card__links-link--google">
 					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
 				</a>
 			</li>
 			{% else %}
 			<li class="card__links-item">
 				<img class="card__links-icon" alt="Dealroom icon" width="20" height="20" src="/assets/images/pages/organizer/dealroom.png" />
-				<a href="{%s company.DealroomURL %}" class="button-link card__links-link">Dealroom</a>
+				<a href="{%s company.DealroomURL %}" target="_blank" class="button-link card__links-link">Dealroom</a>
 			</li>
 			{% endif %}
 			{% if company.CrunchbaseURL == "" %}
 			<li class="card__links-item card__links-item--disabled">
 				<img class="card__links-icon" alt="Crunchbase icon" width="20" height="20" src="/assets/images/pages/organizer/crunchbase.svg" />
 				<span class="button-link card__links-link">Crunchbase</span>
-				<a href="{%s googleSearchCrunchbase(company.Name) %}" class="card__links-link card__links-link--google">
+				<a href="{%s googleSearchCrunchbase(company.Name) %}" target="_blank" class="card__links-link card__links-link--google">
 					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
 				</a>
 			</li>
 			{% else %}
 			<li class="card__links-item">
 				<img class="card__links-icon" alt="Crunchbase icon" width="20" height="20" src="/assets/images/pages/organizer/crunchbase.svg" />
-				<a href="{%s company.CrunchbaseURL %}" class="button-link card__links-link">Crunchbase</a>
+				<a href="{%s company.CrunchbaseURL %}" target="_blank" class="button-link card__links-link">Crunchbase</a>
 			</li>
 			{% endif %}
 			{% if company.PitchbookURL == "" %}
 			<li class="card__links-item card__links-item--disabled">
 				<img class="card__links-icon" alt="Pitchbook icon" width="20" height="20" src="/assets/images/pages/organizer/pitchbook.png" />
 				<span class="button-link card__links-link">Pitchbook</span>
-				<a href="{%s googleSearchPitchbook(company.Name) %}" class="card__links-link card__links-link--google">
+				<a href="{%s googleSearchPitchbook(company.Name) %}" target="_blank" class="card__links-link card__links-link--google">
 					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
 				</a>
 			</li>
 			{% else %}
 			<li class="card__links-item">
 				<img class="card__links-icon" alt="Pitchbook icon" width="20" height="20" src="/assets/images/pages/organizer/pitchbook.png" />
-				<a href="{%s company.PitchbookURL %}" class="button-link card__links-link">Pitchbook</a>
+				<a href="{%s company.PitchbookURL %}" target="_blank" class="button-link card__links-link">Pitchbook</a>
 			</li>
 			{% endif %}
 		</ul>
@@ -590,7 +611,7 @@
 				<div class="card__links-item-group">
 					<img
 						class="card__links-icon"
-						alt="linkedin icon"
+						alt="market icon"
 						width="32"
 						height="32"
 						src="/assets/images/pages/organizer/query_stats.svg"
@@ -602,28 +623,28 @@
 			<li class="card__links-item card__links-item--disabled">
 				<img class="card__links-icon" alt="Yahoo Finance icon" width="20" height="20" src="/assets/images/pages/organizer/yahoo.png" />
 				<span class="button-link card__links-link">Yahoo Finance</span>
-				<a href="{%s googleSearchYahooFinance(company.Name) %}" class="card__links-link card__links-link--google">
+				<a href="{%s googleSearchYahooFinance(company.Name) %}" target="_blank" class="card__links-link card__links-link--google">
 					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
 				</a>
 			</li>
 			{% else %}
 			<li class="card__links-item">
 				<img class="card__links-icon" alt="Yahoo Finance icon" width="20" height="20" src="/assets/images/pages/organizer/yahoo.png" />
-				<a href="{%s company.YahooFinanceURL %}" class="button-link card__links-link">Yahoo Finance</a>
+				<a href="{%s company.YahooFinanceURL %}" target="_blank" class="button-link card__links-link">Yahoo Finance</a>
 			</li>
 			{% endif %}
 			{% if company.GoogleFinanceURL == "" %}
 			<li class="card__links-item card__links-item--disabled">
 				<img class="card__links-icon" alt="Google Finance icon" width="20" height="20" src="/assets/images/pages/organizer/google-fin.png" />
 				<span class="button-link card__links-link">Google Finance</span>
-				<a href="{%s googleSearchGoogleFinance(company.Name) %}" class="card__links-link card__links-link--google">
+				<a href="{%s googleSearchGoogleFinance(company.Name) %}" target="_blank" class="card__links-link card__links-link--google">
 					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
 				</a>
 			</li>
 			{% else %}
 			<li class="card__links-item">
 				<img class="card__links-icon" alt="Google Finance icon" width="20" height="20" src="/assets/images/pages/organizer/google-fin.png" />
-				<a href="{%s company.GoogleFinanceURL %}" class="button-link card__links-link">Google Finance</a>
+				<a href="{%s company.GoogleFinanceURL %}" target="_blank" class="button-link card__links-link">Google Finance</a>
 			</li>
 			{% endif %}
 		</ul>
@@ -643,7 +664,7 @@
 					height="20"
 					src="/assets/images/pages/organizer/whois.svg"
 				/>
-				<a href="{%s whoisURL(company.Website) %}" class="button-link card__links-link">Whois</a>
+				<a href="{%s whoisURL(company.BaseURL) %}" target="_blank" class="button-link card__links-link">Whois</a>
 			</li>
 			<li class="card__links-item">
 				<img
@@ -653,26 +674,26 @@
 					height="20"
 					src="/assets/images/pages/organizer/similarweb.svg"
 				/>
-				<a href="{%s similarwebURL(company.Website) %}" class="button-link card__links-link">SimilarWeb</a>
+				<a href="{%s similarwebURL(company.BaseURL) %}" target="_blank" class="button-link card__links-link">SimilarWeb</a>
 			</li>
 			{% if company.OttaProfileSlug == "" %}
 			<li class="card__links-item card__links-item--disabled">
 				<img class="card__links-icon" alt="otta icon" width="20" height="20" src="/assets/images/pages/organizer/otta.svg" />
 				<span class="button-link card__links-link">Otta</span>
-				<a href="{%s googleSearchOtta(company.Name) %}" class="card__links-link card__links-link--google">
+				<a href="{%s googleSearchOtta(company.Name) %}" target="_blank" class="card__links-link card__links-link--google">
 					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
 				</a>
 			</li>
 			{% else %}
 			<li class="card__links-item">
 				<img class="card__links-icon" alt="otta icon" width="20" height="20" src="/assets/images/pages/organizer/otta.svg" />
-				<a href="https://app.otta.com/companies/{%s company.OttaProfileSlug %}" class="button-link card__links-link">Otta</a>
+				<a href="https://app.otta.com/companies/{%s company.OttaProfileSlug %}" target="_blank" class="button-link card__links-link">Otta</a>
 			</li>
 			{% endif %}
 			<li class="card__links-item card__links-item--disabled">
 				<img class="card__links-icon" alt="xing icon" width="20" height="20" src="/assets/images/pages/organizer/xing.svg" />
 				<span class="button-link card__links-link">XING</span>
-				<a href="{%s googleSearchXing(company.Name) %}" class="card__links-link card__links-link--google">
+				<a href="{%s googleSearchXing(company.Name) %}" target="_blank" class="card__links-link card__links-link--google">
 					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
 				</a>
 			</li>
@@ -680,14 +701,14 @@
 			<li class="card__links-item card__links-item--disabled">
 				<img class="card__links-icon" alt="Y Combinator icon" width="20" height="20" src="/assets/images/pages/organizer/y-combinator.png" />
 				<span class="button-link card__links-link">Y Combinator</span>
-				<a href="{%s googleSearchYCombinator(company.Name) %}" class="card__links-link card__links-link--google">
+				<a href="{%s googleSearchYCombinator(company.Name) %}" target="_blank" class="card__links-link card__links-link--google">
 					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
 				</a>
 			</li>
 			{% else %}
 			<li class="card__links-item">
 				<img class="card__links-icon" alt="Y Combinator icon" width="20" height="20" src="/assets/images/pages/organizer/y-combinator.png" />
-				<a href="{%s company.YCombinatorURL %}" class="button-link card__links-link">Y Combinator</a>
+				<a href="{%s company.YCombinatorURL %}" target="_blank" class="button-link card__links-link">Y Combinator</a>
 			</li>
 			{% endif %}
 		</ul>
@@ -696,12 +717,12 @@
 </section>
 <section class="company-vacancies">
 	<div class="container company-vacancies__container">
-		<h2 class="company-statistics__headline">Vacancies</h2>
+		<h2 class="company-statistics__headline">Jobs</h2>
 		{% comment %}
 		<div class="vacancies__empty d-none">
 			<img class="vacancies__empty-logo" width="64" height="64" src="/assets/images/pages/common-images/📂.png" alt="folder">
-			<h2 class="vacancies__empty-title">No vacancies yet</h2>
-			<p class="vacancies__empty-subtitle">This company currently has no vacancies, or we are unaware of them.</p>
+			<h2 class="vacancies__empty-title">No jobs yet</h2>
+			<p class="vacancies__empty-subtitle">This company currently has no jobs, or we are unaware of them.</p>
 		</div>
 		{% endcomment %}
 		<div class="vacancies__list">
@@ -709,6 +730,7 @@
 				<div class="js-vacancy card"
 					 data-vacancy-id="{%dl vacancy.ID %}"
 				>
+					<div class="card__vacancy">
 					<aside class="card__action">
 						{% if userVacancyFavoriteMap[vacancy.ID] %}
 						  <button class="js-vacancy-favorite favorite card__action-button button-group__item in-favorite" title="Remove from favorites">
@@ -734,12 +756,12 @@
 						<div class="card__image-overlay">
 							<img class="card__image"
 								alt="card image preview icon"
-								src="/assets/images/pages/common-images/unknown.svg"
+								src="{%s logo(company.Logo) %}"
 							/>
 						</div>
 						<figcaption class="card__header-caption">
-							<a href="/organizers/v/{%dl vacancy.ID %}" class="card__headline vacancy__link">{%s vacancy.Title %}</a>
-							<a href="/organizers/{%s organizerFeature.Organizer.Alias %}/companies/{%s vacancy.Company.Alias %}" class="card__sub-headline vacancy__link">{%s vacancy.Company.Name %}</a>
+							<a href="/v/{%dl vacancy.ID %}" target="_blank" class="card__headline">{%s vacancy.Title %}</a>
+							<a href="/{%s organizerFeature.Organizer.Alias %}/companies/{%s vacancy.Company.Alias %}" class="card__sub-headline">{%s vacancy.Company.Name %}</a>
 						</figcaption>
 					</figure>
 					<p class="card__text card__text--organizer">{%s vacancy.ShortDescription %}</p>
@@ -764,7 +786,7 @@
 								<figcaption class="card__figcaption">Monthly views: {%dl vacancyMonthlyViewsMap[vacancy.ID] %}</figcaption>
 							</figure>
 						</div>
-						<a href="/organizers/v/{%dl vacancy.ID %}" class="button button--bordered-gray button--gap-images">
+						<a href="/v/{%dl vacancy.ID %}" target="_blank" class="button button--bordered-gray button--gap-images">
 							{% if isLinkedInVacancyURL(vacancy.URL) %}
 								<img
 									width="20"
@@ -781,6 +803,14 @@
 									alt="otta logo"
 									class="hero__button-icon"
 								/>
+							{% elseif isIndeedVacancyURL(vacancy.URL) %}
+								<img
+									width="20"
+									height="20"
+									src="/assets/images/pages/organizer/indeed.png"
+									alt="indeed logo"
+									class="hero__button-icon"
+								/>
 							{% endif %}
 							View source
 							<img
@@ -791,6 +821,7 @@
 								class="hero__button-icon"
 							/>
 						</a>
+					</div>
 					</div>
 				</div>
 			{% endfor %}
@@ -843,8 +874,9 @@
 
 
 </main>
-{%= organizersFooter() %}
+{%= organizersFooterV1() %}
 <script src="/assets/js/organizers-company-app.js?{%d appVersion %}"></script>
 </body>
+
 </html>
 {%- endfunc -%}

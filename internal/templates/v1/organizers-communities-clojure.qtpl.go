@@ -43,6 +43,9 @@ func StreamOrganizersCommunitiesClojure(qw422016 *qt422016.Writer, organizer Org
 	streamorganizersCommunitiesStyles(qw422016)
 	qw422016.N().S(`
     `)
+	streamplausibleAnalytics(qw422016)
+	qw422016.N().S(`
+    `)
 	streamga(qw422016)
 	qw422016.N().S(`
 </head>
@@ -53,46 +56,44 @@ func StreamOrganizersCommunitiesClojure(qw422016 *qt422016.Writer, organizer Org
   <div class="header__wrapper">
     <a href="/organizers" class="header__logo">
       <img
-        width="129"
-        height="32"
+        width="30"
+        height="30"
         class="header__logo-img"
         src="/assets/images/pages/organizer/`)
 	qw422016.E().S(organizer.Logo)
 	qw422016.N().S(`"
         alt="organizer logo"
       />
+      <span class="header__logo-label">Organizer</span>
     </a>
     <ul class="header__nav">
       <li class="header__nav-item">
-        <a href="/organizers/`)
+        <a href="/`)
 	qw422016.E().S(organizer.Alias)
 	qw422016.N().S(`/companies" class="header__nav-link">Companies</a>
       </li>
       <li class="header__nav-item">
-        <a href="/organizers/`)
+        <a href="/`)
 	qw422016.E().S(organizer.Alias)
-	qw422016.N().S(`/vacancies" class="header__nav-link">Vacancies</a>
+	qw422016.N().S(`/jobs" class="header__nav-link">Jobs</a>
       </li>
-      <li class="header__nav-item">
-        <a href="/organizers/`)
-	qw422016.E().S(organizer.Alias)
-	qw422016.N().S(`/communities" class="header__nav-link active">Communities</a>
-      </li>
+      `)
+	qw422016.N().S(`
     </ul>
 
     `)
-	streamorganizersHeaderStars(qw422016)
+	streamorganizersHeaderStarsV1(qw422016)
 	qw422016.N().S(`
     `)
 	if len(headerProfiles) > 0 {
 		qw422016.N().S(`
     `)
-		streamorganizersHeaderProfile(qw422016, headerProfiles)
+		streamorganizersHeaderProfileV1(qw422016, headerProfiles)
 		qw422016.N().S(`
     `)
 	} else {
 		qw422016.N().S(`
-    <a href="/organizers/`)
+    <a href="/`)
 		qw422016.E().S(organizer.Alias)
 		qw422016.N().S(`/welcome" class="button button--small-padding button--black header__login-button">Log in</a>
     `)
@@ -146,9 +147,9 @@ func StreamOrganizersCommunitiesClojure(qw422016 *qt422016.Writer, organizer Org
 						/>
 					</div>
 					<figcaption class="card__header-caption">
-						<a href="https://www.reddit.com/r/Clojure/" class="card__headline vacancy__link">r/Clojure</a>
+						<a href="https://www.reddit.com/r/Clojure/" target="_blank" class="card__headline vacancy__link">r/Clojure</a>
 					</figcaption>
-					<a href="https://www.reddit.com/r/Clojure/" class="button button--small-padding button--black button--gap-images">
+					<a href="https://www.reddit.com/r/Clojure/" target="_blank" class="button button--small-padding button--black button--gap-images">
 						Visit
 						<img width="18" height="18" alt="arrow top icon" src="/assets/images/pages/common/external-link-white.svg">
 					</a>
@@ -170,9 +171,9 @@ func StreamOrganizersCommunitiesClojure(qw422016 *qt422016.Writer, organizer Org
 						/>
 					</div>
 					<figcaption class="card__header-caption">
-						<a href="http://clojurians.net/" class="card__headline vacancy__link">Clojurians</a>
+						<a href="http://clojurians.net/" target="_blank" class="card__headline vacancy__link">Clojurians</a>
 					</figcaption>
-					<a href="http://clojurians.net/" class="button button--small-padding button--black button--gap-images">
+					<a href="http://clojurians.net/" target="_blank" class="button button--small-padding button--black button--gap-images">
 						Visit
 						<img width="18" height="18" alt="arrow top icon" src="/assets/images/pages/common/external-link-white.svg">
 					</a>
@@ -190,7 +191,7 @@ func StreamOrganizersCommunitiesClojure(qw422016 *qt422016.Writer, organizer Org
 		<div class="contact__empty">
 			<img class="contact__empty-logo" width="64" height="64" src="/assets/images/pages/organizer/share.png" alt="share">
 			<h2 class="contact__empty-title">Know a great community that should be added to this list?</h2>
-			<a class="button button--small-padding button--black" href="https://www.linkedin.com/in/yaroslav-podorvanov/">Contact me!</a>
+			<a class="button button--small-padding button--black" href="https://www.linkedin.com/in/yaroslav-podorvanov/" target="_blank">Contact me!</a>
 		</div>
 	</div>
 </section>
@@ -199,7 +200,7 @@ func StreamOrganizersCommunitiesClojure(qw422016 *qt422016.Writer, organizer Org
 
 </main>
 `)
-	streamorganizersFooter(qw422016)
+	streamorganizersFooterV1(qw422016)
 	qw422016.N().S(`
 <script src="/assets/js/organizers-communities-app.js?`)
 	qw422016.N().D(appVersion)

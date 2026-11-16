@@ -26,7 +26,7 @@ func (c *Client) CompaniesSearch(vanityName string) ([]Company, []byte, error) {
 	}
 
 	var (
-		path   = "https://api.linkedin.com/rest/organizations"
+		path   = "https://api.linkedin.com/v2/organizations"
 		values = url.Values{
 			"q":          {"vanityName"},
 			"vanityName": {vanityName},

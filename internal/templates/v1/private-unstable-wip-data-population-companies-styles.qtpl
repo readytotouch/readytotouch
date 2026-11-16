@@ -1,0 +1,47 @@
+{% func dataPopulationCompaniesStyles() %}
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        padding: 20px;
+        max-width: 800px;
+        margin: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        background: #ffffff;
+        margin: 10px 0;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .company-name {
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    .links {
+        margin-top: 5px;
+    }
+
+    .links a {
+        color: #0073e6;
+        text-decoration: none;
+        margin-right: 10px;
+    }
+
+    .links a:hover {
+        text-decoration: underline;
+    }
+</style>
+{% endfunc %}

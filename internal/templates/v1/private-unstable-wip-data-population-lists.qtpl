@@ -1,0 +1,70 @@
+{%- func DataPopulationLists() -%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Data Population Lists</title>
+    <meta name="description" content="Data Population Lists">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="author" type="text/plain" href="https://readytotouch.com/humans.txt"/>
+    <meta property="og:image" content="/assets/images/og/organizers-light.jpg">
+
+    {%= favicon() %}
+    {%= plausibleAnalytics() %}
+    {%= ga() %}
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            background: #ffffff;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        a {
+            color: #0073e6;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<h1>Data Population Lists</h1>
+
+<ul>
+    <li><a href="/private/unstable/wip/organizers/data-population-lists/careers-and-about-and-blog" target="_blank">Populate Careers & About & Blog</a></li>
+    <li><a href="/private/unstable/wip/organizers/data-population-lists/linkedin" target="_blank">Populate LinkedIn</a></li>
+    <li><a href="/private/unstable/wip/organizers/data-population-lists/github" target="_blank">Populate GitHub</a></li>
+    <li><a href="/private/unstable/wip/organizers/data-population-lists/glassdoor" target="_blank">Populate Glassdoor</a></li>
+    <li><a href="/private/unstable/wip/organizers/data-population-lists/blind" target="_blank">Populate Blind</a></li>
+    <li><a href="/private/unstable/wip/organizers/data-population-lists/indeed" target="_blank">Populate Indeed</a></li>
+    <li><a href="/private/unstable/wip/organizers/data-population-lists/levels" target="_blank">Populate Levels.fyi</a></li>
+    <li><a href="/private/unstable/wip/organizers/data-population-lists/logo" target="_blank">Populate Logo</a></li>
+</ul>
+
+</body>
+</html>
+{%- endfunc -%}

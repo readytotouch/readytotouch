@@ -1,0 +1,64 @@
+1Password https://1password.com/
+Algorithmia https://www.datarobot.com/
+Amazon https://www.amazon.com/
+Anduril Industries https://www.anduril.com/
+Appodeal https://appodeal.com/
+AppSignal https://www.appsignal.com/
+Atlassian https://www.atlassian.com/
+Axis Communications https://www.axis.com/
+Bencher https://bencher.dev/
+Beyond Identity https://www.beyondidentity.com/
+Bitfount https://www.bitfount.com/
+Brave https://brave.com/
+Canonical https://canonical.com/
+Check Point Software https://www.checkpoint.com/
+Cognite https://www.cognite.com
+CrowdStrike https://www.crowdstrike.com/
+Daedalean AI https://daedalean.ai/
+Datadog https://www.datadoghq.com/
+Discord https://discord.com/
+Dropbox https://www.dropbox.com/
+Dynatrace https://www.dynatrace.com/
+Espressif Systems https://www.espressif.com/
+ExpressVPN https://www.expressvpn.com/
+Ferrous Systems GmbH https://ferrous-systems.com/
+FifthTry https://www.fifthtry.com/
+Fly.io https://fly.io/
+Google https://www.google.com/
+Hasura https://hasura.io/
+Hugging Face https://huggingface.co/
+InfluxData https://www.influxdata.com/
+Kong https://konghq.com/
+Lechev.space https://lechev.space/
+LinkedIn https://www.linkedin.com/
+Los Alamos National Laboratory https://www.lanl.gov/
+Materialize https://materialize.com/
+Meta https://www.facebook.com/
+Microsoft https://www.microsoft.com/
+npm, Inc. https://www.npmjs.com/
+OneSignal https://onesignal.com/
+OVHcloud https://www.ovhcloud.com/
+Palo Alto Networks https://www.paloaltonetworks.com/
+Photoroom https://www.photoroom.com/
+Pinecone https://www.pinecone.io/
+Progress Chef https://www.chef.io/
+Proton https://proton.me/
+Qumulo https://qumulo.com/
+Red Sift https://redsift.com/
+Redis https://redis.io/
+Rustunit https://rustunit.com/
+SAP https://www.sap.com/
+Sentry https://sentry.io/
+Siemens https://www.siemens.com/
+Spice AI https://spice.ai/
+Stackable https://stackable.tech/
+Starry, Inc. https://starry.com/
+SurrealDB https://surrealdb.com/
+Svix https://www.svix.com/
+System76 https://system76.com/
+Tesla https://www.tesla.com/
+Tweede golf https://tweedegolf.nl/
+Ubisoft https://www.ubisoft.com/
+Vercel https://vercel.com/
+Zama https://www.zama.ai/
+Zurich Instruments https://www.zhinst.com/

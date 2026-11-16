@@ -17,7 +17,7 @@ env-docker-compose-production:
 	cp .production.env .env
 
 env-up:
-	docker-compose -f docker-compose.yml --env-file .env up -d
+	docker compose -f docker-compose.yml --env-file .env up -d
 
 postgres-test-run:
 	docker exec readytotouch_postgres_db psql -U yaaws_user -d yaaws -c "SELECT VERSION();"
@@ -31,14 +31,16 @@ app:
 pg:
 	docker exec -it readytotouch_postgres_db bash
 
-pg-users:
+pg-fixtures:
 	cat ./fixtures/postgres/users.sql | docker exec -i readytotouch_postgres_db psql -d yaaws -U yaaws_user
+	cat ./fixtures/postgres/companies.sql | docker exec -i readytotouch_postgres_db psql -d yaaws -U yaaws_user
+	cat ./fixtures/postgres/vacancies.sql | docker exec -i readytotouch_postgres_db psql -d yaaws -U yaaws_user
 
 env-down:
-	docker-compose -f docker-compose.yml --env-file .env down
+	docker compose -f docker-compose.yml --env-file .env down
 
 env-down-with-clear:
-	docker-compose -f docker-compose.yml --env-file .env down --remove-orphans -v # --rmi=all
+	docker compose -f docker-compose.yml --env-file .env down --remove-orphans -v # --rmi=all
 
 app-build:
 	docker exec readytotouch_go_app go build -o /bin/yaaws-server ./cmd/main.go
@@ -91,13 +93,19 @@ generate-template:
 generate-sqlc:
 	sqlc generate
 
+DOCKER_NODE = docker run --rm \
+	-v $(PWD)/client:/app \
+	-v $(PWD)/public/assets/js:/public/assets/js \
+	-v $(PWD)/.cache/npm:/root/.npm \
+	-v $(PWD)/.cache/node_modules:/app/node_modules \
+	-w /app node:20-alpine
+
 esbuild-minify:
-	npm --prefix=client i
-	MINIFY=true npm run --prefix=client esbuild
+	$(DOCKER_NODE) sh -c "npm ci && MINIFY=true npm run esbuild"
 	tree -h ./public/assets/js
 
 esbuild:
-	MINIFY=false npm run --prefix=client esbuild
+	$(DOCKER_NODE) sh -c "npm ci && MINIFY=false npm run esbuild"
 	tree -h ./public/assets/js
 
 # make design DESIGN="~/go/src/github.com/readytotouch/readytotouch.github.io"
@@ -115,6 +123,52 @@ design:
 
 	git add .
 
+# make design-responsive-v3 DESIGN="~/go/src/github.com/readytotouch/readytotouch.github.io"
+design-responsive-v3:
+	$(eval DESIGN := ~/go/src/github.com/readytotouch/readytotouch.github.io)
+	rm -rf ./public/assets/images/pages
+	mkdir -p ./public/assets/images/pages
+
+	cp -r $(DESIGN)/public/assets/images/pages/* ./public/assets/images/pages
+
+	# Main page
+	cp -r $(DESIGN)/public/main-responsive-auth.html ./public/design-v3
+	cp -r $(DESIGN)/public/main-responsive.html ./public/design-v3
+	# Scripts for main-responsive.html and main-responsive-auth.html
+	cp -r $(DESIGN)/public/assets/js/common_c0ddd1cbf1b9bec5f52a9c323b936e83.js ./public/assets/js
+	cp -r $(DESIGN)/public/assets/js/main-responsive_fec482dacc19ed7fa40d2d744752c20e.js ./public/assets/js
+
+	# Company page
+	cp -r $(DESIGN)/public/organizer-company-responsive-auth.html ./public/design-v3
+	# Scripts for organizer-company-responsive-auth.html
+	cp -r $(DESIGN)/public/assets/js/organizer-company-responsive_425c2656a4c0cb23c3c7fc995558ebd1.js ./public/assets/js
+
+	# Companies page
+	cp -r $(DESIGN)/public/organizer-companies-responsive-auth.html ./public/design-v3
+	cp -r $(DESIGN)/public/organizer-companies-responsive.html ./public/design-v3
+	# Scripts for organizer-companies-responsive.html and organizer-companies-responsive-auth.html
+	cp -r $(DESIGN)/public/assets/js/organizer-companies-responsive_3436c6686c2da885de06b56d35bf08dc.js ./public/assets/js
+
+	# Vacancies page
+	cp -r $(DESIGN)/public/organizer-vacancies-responsive-auth.html ./public/design-v3
+	# Scripts for organizer-vacancies-responsive-auth.html
+	cp -r $(DESIGN)/public/assets/js/organizer-vacancies-responsive_142b2d621c9a0ee220772dc55f352c58.js ./public/assets/js
+
+	git restore ./public/assets/images/pages/online-new/cz_flag.svg
+	git restore ./public/assets/images/pages/organizer/zig.svg
+	git restore ./public/assets/images/pages/organizer/ocaml.svg
+	git restore ./public/assets/images/pages/organizer/mojo.svg
+	git restore ./public/assets/images/pages/organizer/haskell.svg
+	git restore ./public/assets/images/pages/organizer/ocaml.svg
+	git restore ./public/assets/images/pages/organizer/gleam.svg
+	git restore ./public/assets/images/pages/organizer/fsharp.svg
+	git restore ./public/assets/images/pages/organizer/erlang.svg
+
+	git add .
+
+design-copy-styles:
+	node ./scripts/design/copy-styles.js
+
 companies-and-connections:
 	firefox ./public/chatgpt-design/companies-and-connections.html
 
@@ -126,6 +180,15 @@ generate-protos:
 
 generate-organizers:
 	go run ./cmd/organizers/generate/main.go
+
+review-logos:
+	go run ./cmd/organizers/review-logos/main.go
+
+# make rust-companies > ./datasync/github.com/readytotouch/readytotouch/companies.txt
+# VERIFIED=true make rust-companies > ./datasync/github.com/readytotouch/readytotouch/verified-companies.txt
+# VERIFIED=true GITHUB=true make rust-companies > ./datasync/github.com/readytotouch/readytotouch/verified-companies-format-github.txt
+rust-companies:
+	VERIFIED=$(VERIFIED) GITHUB=$(GITHUB) go run ./cmd/organizers/rust-companies/main.go
 
 # POSTGRES_PASSWORD=$(echo "$RANDOM$RANDOM" | sha256sum | head -c 32; echo;) JWT_SECRET_KEY=$(echo "$RANDOM$RANDOM" | sha256sum | head -c 32; echo;) make generate-production-environment-file
 generate-production-environment-file:
@@ -151,6 +214,9 @@ generate-production-environment-file:
 	grep -qF 'BITBUCKET_CLIENT_ID=' .production.env || echo 'BITBUCKET_CLIENT_ID="PY4qXGrqgvCS34DuqT"' >> .production.env
 	grep -qF 'BITBUCKET_CLIENT_SECRET=' .production.env || echo 'BITBUCKET_CLIENT_SECRET=""' >> .production.env
 	grep -qF 'BITBUCKET_REDIRECT_URL=' .production.env || echo 'BITBUCKET_REDIRECT_URL="https://readytotouch.com/auth/bitbucket/callback"' >> .production.env
+	grep -qF 'GOOGLE_CLIENT_ID=' .production.env || echo 'GOOGLE_CLIENT_ID="919021173091-eu1073cp19r6ljnauc5at425o6d3keh8.apps.googleusercontent.com"' >> .production.env
+	grep -qF 'GOOGLE_CLIENT_SECRET=' .production.env || echo 'GOOGLE_CLIENT_SECRET=""' >> .production.env
+	grep -qF 'GOOGLE_REDIRECT_URL=' .production.env || echo 'GOOGLE_REDIRECT_URL="https://readytotouch.com/auth/google/callback"' >> .production.env
 	grep -qF 'LINKEDIN_OAUTH2_TOKEN=' .production.env || echo 'LINKEDIN_OAUTH2_TOKEN=""' >> .production.env
 
 	cat .production.env
@@ -168,3 +234,30 @@ unsafe-browser-extension:
 		&& rm -rf readytotouch-unsafe-browser-extension.zip \
 		&& zip -r readytotouch-unsafe-browser-extension.zip readytotouch-unsafe-browser-extension \
 		&& chmod 777 readytotouch-unsafe-browser-extension.zip
+
+# make more-companies-linkedin VERSION=146
+more-companies-linkedin:
+ifndef VERSION
+	$(error VERSION is not set. Use `make more-companies-linkedin VERSION=X`)
+endif
+	git checkout main && git pull
+	git checkout -b more-companies-linkedin-july-2026-v$(VERSION)
+	git commit -m "More companies LinkedIn July 2026 v$(VERSION)" --allow-empty
+
+# make more-companies-welcome-to-the-jungle VERSION=146
+more-companies-welcome-to-the-jungle:
+ifndef VERSION
+	$(error VERSION is not set. Use `make more-companies-welcome-to-the-jungle VERSION=X`)
+endif
+	git checkout main && git pull
+	git checkout -b more-companies-welcome-to-the-jungle-july-2026-v$(VERSION)
+	git commit -m "More companies Welcome to the Jungle July 2026 v$(VERSION)" --allow-empty
+
+# make more-companies-indeed VERSION=146
+more-companies-indeed:
+ifndef VERSION
+	$(error VERSION is not set. Use `make more-companies-indeed VERSION=X`)
+endif
+	git checkout main && git pull
+	git checkout -b more-companies-indeed-july-2026-v$(VERSION)
+	git commit -m "More companies Indeed July 2026 v$(VERSION)" --allow-empty

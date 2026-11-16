@@ -1,0 +1,84 @@
+{% func IndexV1(headerProfiles []SocialProviderUser, socialProviderUsers []SocialProviderUser) %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Yet another anonymous work search</title>
+    <meta name="description" content="Yet another anonymous work search">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="author" type="text/plain" href="https://readytotouch.com/humans.txt"/>
+	<meta property="og:image" content="/assets/images/og/organizers-light.jpg">
+
+	{%= favicon() %}
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+    {%= indexV1Styles() %}
+</head>
+<body>
+{%= header(headerProfiles) %}
+<main class="main-wrapper">
+{% if len(headerProfiles) == 0 %}
+<section class="hero">
+    <div class="hero__wrapper">
+        <div class="hero__header">
+            <div class="hero__status">
+                Service status: <span class="hero__progress">work in progress</span>
+            </div>
+            <a href="https://readytotouch.com/" target="_blank" class="hero__link">
+                <span class="hero__link-title">readytotouch.com</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 17L17 7M7 7h10v10" stroke="#C6CAD2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
+        <div class="hero__main">
+            <h1 class="hero__title">Anonymous work search</h1>
+            <p class="hero__subtitle">Tracking registrations and online users of the platform. Sign in with GitHub or GitLab to support the project</p>
+        </div>
+        <div class="hero__buttons-group">
+            <a href="/auth/github" class="hero__button" rel="nofollow">
+                <img src="/assets/images/pages/online/github-white.svg" alt="GitHub" class="button-icon">Log in with GitHub
+            </a>
+            <a href="/auth/gitlab" class="hero__button" rel="nofollow">
+                <img src="/assets/images/pages/online/gitlab.png" alt="GitLab" class="hero__button-icon">Log in with GitLab
+            </a>
+        </div>
+    </div>
+</section>
+{% else %}
+<section class="hero auth">
+    <div class="hero__wrapper">
+        <div class="hero__header">
+            <div class="hero__status">
+                Service status: <span class="hero__progress">work in progress</span>
+            </div>
+            <a href="https://readytotouch.com/" target="_blank" class="hero__link">
+                <span class="hero__link-title">readytotouch.com</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 17L17 7M7 7h10v10" stroke="#C6CAD2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
+        <div class="hero__main">
+            <h1 class="hero__title">Anonymous work search</h1>
+            <p class="hero__subtitle">Tracking registrations and online users of the platform</p>
+        </div>
+    </div>
+</section>
+{% endif %}
+<div class="container">
+    {%= stats() %}
+    {%= registrationHistoryV1(socialProviderUsers) %}
+    {%= projects() %}
+    {%= articles() %}
+</div>
+</main>
+{%= footer() %}
+<script src="/assets/js/online-stats-app.js?{%d appVersion %}"></script>
+</body>
+</html>
+{% endfunc %}

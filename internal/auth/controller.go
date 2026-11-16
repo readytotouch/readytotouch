@@ -10,6 +10,7 @@ import (
 	"github.com/readytotouch/readytotouch/internal/db/postgres"
 	"github.com/readytotouch/readytotouch/internal/domain"
 	"github.com/readytotouch/readytotouch/internal/env"
+	"github.com/readytotouch/readytotouch/internal/logger"
 	"github.com/readytotouch/readytotouch/internal/protos/auth"
 
 	"github.com/gin-gonic/gin"
@@ -21,11 +22,12 @@ type Controller struct {
 	githubOAuthProvider    domain.OAuthProvider
 	gitlabOAuthProvider    domain.OAuthProvider
 	bitbucketOAuthProvider domain.OAuthProvider
+	googleOAuthProvider    domain.OAuthProvider
 	jwtService             domain.JwtService
 }
 
-func NewController(repository *postgres.UserRepository, githubOAuthProvider domain.OAuthProvider, gitlabOAuthProvider domain.OAuthProvider, bitbucketOAuthProvider domain.OAuthProvider, jwtService domain.JwtService) *Controller {
-	return &Controller{repository: repository, githubOAuthProvider: githubOAuthProvider, gitlabOAuthProvider: gitlabOAuthProvider, bitbucketOAuthProvider: bitbucketOAuthProvider, jwtService: jwtService}
+func NewController(repository *postgres.UserRepository, githubOAuthProvider domain.OAuthProvider, gitlabOAuthProvider domain.OAuthProvider, bitbucketOAuthProvider domain.OAuthProvider, googleOAuthProvider domain.OAuthProvider, jwtService domain.JwtService) *Controller {
+	return &Controller{repository: repository, githubOAuthProvider: githubOAuthProvider, gitlabOAuthProvider: gitlabOAuthProvider, bitbucketOAuthProvider: bitbucketOAuthProvider, googleOAuthProvider: googleOAuthProvider, jwtService: jwtService}
 }
 
 func (c *Controller) GithubRedirect(ctx *gin.Context) {
@@ -40,6 +42,10 @@ func (c *Controller) BitbucketRedirect(ctx *gin.Context) {
 	c.redirect(ctx, c.bitbucketOAuthProvider)
 }
 
+func (c *Controller) GoogleRedirect(ctx *gin.Context) {
+	c.redirect(ctx, c.googleOAuthProvider)
+}
+
 func (c *Controller) GithubCallback(ctx *gin.Context) {
 	c.callback(ctx, c.githubOAuthProvider)
 }
@@ -50,6 +56,10 @@ func (c *Controller) GitlabCallback(ctx *gin.Context) {
 
 func (c *Controller) BitbucketCallback(ctx *gin.Context) {
 	c.callback(ctx, c.bitbucketOAuthProvider)
+}
+
+func (c *Controller) GoogleCallback(ctx *gin.Context) {
+	c.callback(ctx, c.googleOAuthProvider)
 }
 
 func (c *Controller) Logout(ctx *gin.Context) {
@@ -72,7 +82,8 @@ func (c *Controller) redirect(ctx *gin.Context, provider domain.OAuthProvider) {
 		return
 	}
 
-	ctx.SetCookie(c.getStateCookieName(), state, 3600, "/", "", true, true)
+	ctx.SetSameSite(http.SameSiteLaxMode)
+	ctx.SetCookie(c.getStateCookieName(), state, 300, "/", "", true, true)
 	ctx.Redirect(http.StatusFound, provider.GetConfig().AuthCodeURL(state))
 }
 
@@ -144,7 +155,7 @@ func (c *Controller) callback(ctx *gin.Context, provider domain.OAuthProvider) {
 
 	redirect, err := c.decodeRedirectState(queryState)
 	if err != nil {
-		// @TODO logging
+		logger.Error(err)
 
 		ctx.Redirect(http.StatusFound, "/")
 	}

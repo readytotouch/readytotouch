@@ -2,10 +2,11 @@ import {createAliasMap} from "./alias_map";
 
 export interface Checkboxes {
     setState(aliases: Array<string>)
+
     onChange(handler: (state: Array<string>) => void)
 }
 
-export class InputCheckboxes implements Checkboxes{
+export class InputCheckboxes implements Checkboxes {
     constructor(private readonly $elements: Array<HTMLInputElement>) {
     }
 
@@ -14,7 +15,7 @@ export class InputCheckboxes implements Checkboxes{
 
         this.$elements.forEach(function ($element) {
             $element.checked = aliasMap.hasOwnProperty($element.getAttribute("data-alias"));
-        })
+        });
     }
 
     onChange(handler: (state: Array<string>) => void) {
@@ -34,13 +35,50 @@ export class InputCheckboxes implements Checkboxes{
             if ($element.checked) {
                 result.push($element.getAttribute("data-alias"));
             }
-        })
+        });
 
         return result;
     }
 }
 
-export class ButtonCheckboxes implements Checkboxes{
+export class RadioCheckboxes implements Checkboxes {
+    constructor(private readonly $elements: Array<HTMLInputElement>) {
+    }
+
+    setState(aliases: Array<string>) {
+        const aliasMap = createAliasMap(aliases, true);
+        let once = true;
+
+        this.$elements.forEach(function ($element) {
+            if (once && aliasMap.hasOwnProperty($element.getAttribute("data-alias"))) {
+                $element.checked = true;
+
+                once = false;
+            } else {
+                $element.checked = false;
+            }
+        });
+    }
+
+    onChange(handler: (state: Array<string>) => void) {
+        const setState = this.setState.bind(this);
+
+        this.$elements.forEach(function ($element) {
+            $element.addEventListener("change", function () {
+                if ($element.checked) {
+                    const aliases = [$element.getAttribute("data-alias")];
+                    setState(aliases);
+                    handler(aliases);
+                } else {
+                    setState([]);
+                    handler([]);
+                }
+            });
+        });
+    }
+}
+
+export class ButtonCheckboxes implements Checkboxes {
     private readonly buttons: Array<ButtonCheckbox>;
 
     constructor($elements: Array<HTMLElement>) {

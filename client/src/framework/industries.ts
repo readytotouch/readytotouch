@@ -2,22 +2,32 @@ import {Alias} from "./alias";
 import {orderAliases} from "./order_aliases";
 
 const all = [
+    new Alias("automotive", "Automotive"),
     new Alias("cybersecurity", "CyberSecurity"),
-    // new Alias("edtech", "EdTech"),
-    // new Alias("e-commerce", "eCommerce"),
+    new Alias("edtech", "EdTech"),
+    new Alias("e-commerce", "eCommerce"),
     new Alias("healthtech", "HealthTech"),
-    // new Alias("medtech", "MedTech"),
+    new Alias("medtech", "MedTech"),
     new Alias("fintech", "FinTech"),
-    // new Alias("gamedev", "GameDev"),
+    new Alias("gamedev", "GameDev"),
     // new Alias("iot", "IoT"),
     new Alias("adtech", "AdTech"),
     new Alias("martech", "MarTech"),
     new Alias("devops", "DevOps"),
-    // new Alias("cloud-computing", "Cloud Computing"),
+    new Alias("cloud-computing", "Cloud Computing"),
     new Alias("big-data", "Big Data"),
     new Alias("social-media", "Social Media"),
     new Alias("entertainment", "Entertainment"),
     new Alias("proptech", "PropTech"),
+    new Alias("agrotech", "AgroTech"),
+    new Alias("insurtech", "InsurTech"),
+    new Alias("logisticstech", "LogisticsTech"),
+    new Alias("telecom", "Telecom"),
+    new Alias("defensetech", "DefenseTech"),
+    new Alias("traveltech", "TravelTech"),
+    new Alias("cryptocurrency", "Cryptocurrency"),
+    new Alias("gambling", "Gambling"),
+    new Alias("betting", "Betting"),
 ];
 
 export function industries(aliases: Array<string>): Array<Alias> {

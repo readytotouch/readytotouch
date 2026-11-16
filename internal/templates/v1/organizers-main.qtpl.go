@@ -37,6 +37,9 @@ func StreamOrganizersMain(qw422016 *qt422016.Writer, headerProfiles []SocialProv
 	streamorganizersMainStyles(qw422016)
 	qw422016.N().S(`
     `)
+	streamplausibleAnalytics(qw422016)
+	qw422016.N().S(`
+    `)
 	streamga(qw422016)
 	qw422016.N().S(`
 </head>
@@ -47,26 +50,27 @@ func StreamOrganizersMain(qw422016 *qt422016.Writer, headerProfiles []SocialProv
   <div class="header__wrapper">
     <a href="/" class="header__logo">
       <img
-        width="129"
-        height="32"
+        width="30"
+        height="30"
         class="header__logo-img"
-        src="/assets/images/pages/organizer/golang-organizer.svg"
+        src="/assets/images/pages/organizer/rust.svg"
         alt="organizer logo"
       />
+      <span class="header__logo-label">Organizer</span>
     </a>
     `)
-	streamorganizersHeaderStars(qw422016)
+	streamorganizersHeaderStarsV1(qw422016)
 	qw422016.N().S(`
     `)
 	if len(headerProfiles) > 0 {
 		qw422016.N().S(`
     `)
-		streamorganizersHeaderProfile(qw422016, headerProfiles)
+		streamorganizersHeaderProfileV1(qw422016, headerProfiles)
 		qw422016.N().S(`
     `)
 	} else {
 		qw422016.N().S(`
-    <a href="/organizers/golang/welcome`)
+    <a href="/golang/welcome`)
 		qw422016.E().S(authQueryParams)
 		qw422016.N().S(`" class="button button--small-padding button--black header__login-button">Log in</a>
     `)
@@ -91,12 +95,12 @@ func StreamOrganizersMain(qw422016 *qt422016.Writer, headerProfiles []SocialProv
         </p>
       </div>
       <div class="hero__buttons-group">
-        <a href="/organizers/golang" class="button button--bordered-gray hero__button">
+        <a href="/golang" class="button button--bordered-gray hero__button">
           <img
             width="20"
             height="20"
-            src="/assets/images/pages/organizer/go-original.svg"
-            alt="go original logo"
+            src="/assets/images/pages/organizer/go.svg"
+            alt="Go original logo"
             class="hero__button-icon"
           />
           Golang Organizer
@@ -110,12 +114,12 @@ func StreamOrganizersMain(qw422016 *qt422016.Writer, headerProfiles []SocialProv
             />
           </div>
         </a>
-        <a href="/organizers/rust" class="button button--bordered-gray hero__button">
+        <a href="/rust" class="button button--bordered-gray hero__button">
           <img
             width="20"
             height="20"
             src="/assets/images/pages/organizer/rust.svg"
-            alt="go original logo"
+            alt="Rust original logo"
             class="hero__button-icon"
           />
           Rust Organizer
@@ -129,12 +133,12 @@ func StreamOrganizersMain(qw422016 *qt422016.Writer, headerProfiles []SocialProv
             />
           </div>
         </a>
-        <a href="/organizers/scala" class="button button--bordered-gray hero__button">
+        <a href="/scala" class="button button--bordered-gray hero__button">
           <img
             width="20"
             height="20"
             src="/assets/images/pages/organizer/scala.svg"
-            alt="go original logo"
+            alt="Scala original logo"
             class="hero__button-icon"
           />
           Scala Organizer
@@ -148,12 +152,12 @@ func StreamOrganizersMain(qw422016 *qt422016.Writer, headerProfiles []SocialProv
             />
           </div>
         </a>
-        <a href="/organizers/elixir" class="button button--bordered-gray hero__button">
+        <a href="/elixir" class="button button--bordered-gray hero__button">
           <img
             width="20"
             height="20"
             src="/assets/images/pages/organizer/elixir.svg"
-            alt="go original logo"
+            alt="Elixir original logo"
             class="hero__button-icon"
           />
           Elixir Organizer
@@ -167,15 +171,148 @@ func StreamOrganizersMain(qw422016 *qt422016.Writer, headerProfiles []SocialProv
             />
           </div>
         </a>
-        <a href="/organizers/clojure" class="button button--bordered-gray hero__button">
+        <a href="/erlang" class="button button--bordered-gray hero__button">
+          <img
+            width="20"
+            height="20"
+            src="/assets/images/pages/organizer/erlang.svg"
+            alt="Erlang original logo"
+            class="hero__button-icon"
+          />
+          Erlang Organizer
+          <div class="hero__buttons-icon-box">
+            <img
+              width="12"
+              height="12"
+              src="/assets/images/pages/common/arrow-small-top-black.svg"
+              alt="arrow black icon"
+              class="hero__button-icon"
+            />
+          </div>
+        </a>
+        <a href="/clojure" class="button button--bordered-gray hero__button">
           <img
             width="20"
             height="20"
             src="/assets/images/pages/organizer/clojure.svg"
-            alt="go original logo"
+            alt="Clojure original logo"
             class="hero__button-icon"
           />
           Clojure Organizer
+          <div class="hero__buttons-icon-box">
+            <img
+              width="12"
+              height="12"
+              src="/assets/images/pages/common/arrow-small-top-black.svg"
+              alt="arrow black icon"
+              class="hero__button-icon"
+            />
+          </div>
+        </a>
+        <a href="/zig" class="button button--bordered-gray hero__button">
+          <img
+            width="20"
+            height="20"
+            src="/assets/images/pages/organizer/zig.svg"
+            alt="Zig original logo"
+            class="hero__button-icon"
+          />
+          Zig Organizer
+          <div class="hero__buttons-icon-box">
+            <img
+              width="12"
+              height="12"
+              src="/assets/images/pages/common/arrow-small-top-black.svg"
+              alt="arrow black icon"
+              class="hero__button-icon"
+            />
+          </div>
+        </a>
+        <a href="/haskell" class="button button--bordered-gray hero__button">
+          <img
+            width="20"
+            height="20"
+            src="/assets/images/pages/organizer/haskell.svg"
+            alt="Haskell original logo"
+            class="hero__button-icon"
+          />
+          Haskell Organizer
+          <div class="hero__buttons-icon-box">
+            <img
+              width="12"
+              height="12"
+              src="/assets/images/pages/common/arrow-small-top-black.svg"
+              alt="arrow black icon"
+              class="hero__button-icon"
+            />
+          </div>
+        </a>
+        <a href="/fsharp" class="button button--bordered-gray hero__button">
+          <img
+            width="20"
+            height="20"
+            src="/assets/images/pages/organizer/fsharp.svg"
+            alt="F# original logo"
+            class="hero__button-icon"
+          />
+          F# Organizer
+          <div class="hero__buttons-icon-box">
+            <img
+              width="12"
+              height="12"
+              src="/assets/images/pages/common/arrow-small-top-black.svg"
+              alt="arrow black icon"
+              class="hero__button-icon"
+            />
+          </div>
+        </a>
+        <a href="/ocaml" class="button button--bordered-gray hero__button">
+          <img
+            width="20"
+            height="20"
+            src="/assets/images/pages/organizer/ocaml.svg"
+            alt="OCaml original logo"
+            class="hero__button-icon"
+          />
+          OCaml Organizer
+          <div class="hero__buttons-icon-box">
+            <img
+              width="12"
+              height="12"
+              src="/assets/images/pages/common/arrow-small-top-black.svg"
+              alt="arrow black icon"
+              class="hero__button-icon"
+            />
+          </div>
+        </a>
+        <a href="/gleam" class="button button--bordered-gray hero__button">
+          <img
+            width="20"
+            height="20"
+            src="/assets/images/pages/organizer/gleam.svg"
+            alt="Gleam original logo"
+            class="hero__button-icon"
+          />
+          Gleam Organizer
+          <div class="hero__buttons-icon-box">
+            <img
+              width="12"
+              height="12"
+              src="/assets/images/pages/common/arrow-small-top-black.svg"
+              alt="arrow black icon"
+              class="hero__button-icon"
+            />
+          </div>
+        </a>
+        <a href="/mojo" class="button button--bordered-gray hero__button">
+          <img
+            width="20"
+            height="20"
+            src="/assets/images/pages/organizer/mojo.svg"
+            alt="Mojo original logo"
+            class="hero__button-icon"
+          />
+          Mojo Organizer
           <div class="hero__buttons-icon-box">
             <img
               width="12"
@@ -262,7 +399,7 @@ func StreamOrganizersMain(qw422016 *qt422016.Writer, headerProfiles []SocialProv
         </a>
       </div>
       <div class="projects__group">
-        <a class="projects__link" target="_blank" href="/organizers/golang/companies">
+        <a class="projects__link" target="_blank" href="/golang/companies">
           <img
             class="projects__image"
             width="129"
@@ -271,7 +408,7 @@ func StreamOrganizersMain(qw422016 *qt422016.Writer, headerProfiles []SocialProv
             src="/assets/images/pages/organizer/golang-organizer.svg"
           />
         </a>
-        <a class="projects__link" target="_blank" href="/organizers/rust/companies">
+        <a class="projects__link" target="_blank" href="/rust/companies">
           <img
             class="projects__image"
             width="129"
@@ -315,7 +452,7 @@ func StreamOrganizersMain(qw422016 *qt422016.Writer, headerProfiles []SocialProv
 
 </main>
 `)
-	streamorganizersFooter(qw422016)
+	streamorganizersFooterV1(qw422016)
 	qw422016.N().S(`
 
 </body>

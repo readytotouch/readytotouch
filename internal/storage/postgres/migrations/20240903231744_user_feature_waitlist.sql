@@ -13,8 +13,38 @@ CREATE TYPE FEATURE_WAIT AS ENUM (
     'organizer_elixir_companies',
     'organizer_elixir_vacancies',
     'organizer_clojure_companies',
-    'organizer_clojure_vacancies'
+    'organizer_clojure_vacancies',
+    'organizer_haskell_companies',
+    'organizer_haskell_vacancies',
+    'organizer_erlang_companies',
+    'organizer_erlang_vacancies',
+    'organizer_fsharp_companies',
+    'organizer_fsharp_vacancies',
+    'organizer_ocaml_companies',
+    'organizer_ocaml_vacancies',
+    'organizer_gleam_companies',
+    'organizer_gleam_vacancies',
+    'organizer_mojo_companies',
+    'organizer_mojo_vacancies'
     );
+
+/*
+* https://survey.stackoverflow.co/2024/technology#admired-and-desired
+*/
+/*
+    ALTER TYPE FEATURE_WAIT ADD VALUE 'organizer_haskell_companies';
+    ALTER TYPE FEATURE_WAIT ADD VALUE 'organizer_haskell_vacancies';
+    ALTER TYPE FEATURE_WAIT ADD VALUE 'organizer_erlang_companies';
+    ALTER TYPE FEATURE_WAIT ADD VALUE 'organizer_erlang_vacancies';
+    ALTER TYPE FEATURE_WAIT ADD VALUE 'organizer_fsharp_companies';
+    ALTER TYPE FEATURE_WAIT ADD VALUE 'organizer_fsharp_vacancies';
+    ALTER TYPE FEATURE_WAIT ADD VALUE 'organizer_ocaml_companies';
+    ALTER TYPE FEATURE_WAIT ADD VALUE 'organizer_ocaml_vacancies';
+    ALTER TYPE FEATURE_WAIT ADD VALUE 'organizer_gleam_companies';
+    ALTER TYPE FEATURE_WAIT ADD VALUE 'organizer_gleam_vacancies';
+    ALTER TYPE FEATURE_WAIT ADD VALUE 'organizer_mojo_companies';
+    ALTER TYPE FEATURE_WAIT ADD VALUE 'organizer_mojo_vacancies';
+*/
 
 CREATE TABLE user_feature_waitlist
 (

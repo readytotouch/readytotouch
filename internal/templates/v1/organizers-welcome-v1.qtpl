@@ -1,0 +1,84 @@
+{%- func OrganizersWelcomeV1(organizer Organizer, authQueryParams string) -%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Welcome</title>
+    <meta name="description" content="Welcome">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="author" type="text/plain" href="https://readytotouch.com/humans.txt"/>
+    <meta property="og:image" content="/assets/images/og/organizers-light.jpg">
+
+    {%= favicon() %}
+    {%= organizersFonts() %}
+    {%= organizersWelcomeV1Styles() %}
+    {%= plausibleAnalytics() %}
+    {%= ga() %}
+</head>
+
+<body class="organizer-welcome">
+<main class="main-wrapper">
+	<header class="header">
+  <div class="header__wrapper">
+    <a href="/" class="header__logo">
+      <img
+        width="30"
+        height="30"
+        class="header__logo-img"
+        src="/assets/images/pages/organizer/{%s organizer.Logo %}"
+        alt="{%s organizer.Title %} logo"
+      />
+      <span class="header__logo-label">Organizer</span>
+    </a>
+    {%= organizersHeaderStarsV1() %}
+  </div>
+</header>
+
+
+
+<section class="hero">
+  <div class="hero__wrapper">
+    <div class="hero__main">
+      <h1 class="hero__title">Welcome!</h1>
+      <p class="hero__subtitle">Our projects are ReadyToTouch, u8views, Organizer, and others. Log in to support.</p>
+    </div>
+    <div class="hero__buttons-group">
+      <a href="/auth/github{%s authQueryParams %}" class="button button--bordered-gray hero__button" rel="nofollow">
+        <img
+          width="20"
+          height="20"
+          src="/assets/images/pages/online-new/github-black.svg"
+          alt="GitHub logo"
+          class="button-icon"
+        />Log in with GitHub
+      </a>
+      <a href="/auth/gitlab{%s authQueryParams %}" class="button button--bordered-gray hero__button" rel="nofollow">
+        <img
+          width="20"
+          height="20"
+          src="/assets/images/pages/online-new/gitlab.svg"
+          alt="GitLab logo"
+          class="hero__button-icon"
+        />Log in with GitLab
+      </a>
+      <a href="/auth/bitbucket{%s authQueryParams %}" class="button button--bordered-gray hero__button" rel="nofollow">
+        <img
+          width="21"
+          height="20"
+          src="/assets/images/pages/online-new/bitbucket.svg"
+          alt="Bitbucket logo"
+          class="hero__button-icon"
+        />Log in with Bitbucket
+      </a>
+    </div>
+  </div>
+</section>
+
+
+</main>
+
+</body>
+</html>
+{%- endfunc -%}

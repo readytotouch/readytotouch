@@ -1,0 +1,19 @@
+<!--
+  110 for 1 digit
+  120 for 2 digit
+  ...
+  150 for 5 digits
+-->
+{% comment %}
+  This header stars is used for both v1 and v2.
+{% endcomment %}
+{% func organizersHeaderStarsV1() %}
+<div class="header__stars">
+  <iframe
+    src="https://ghbtns.com/github-btn.html?user=readytotouch&repo=readytotouch&type=star&count=true&size=large"
+    width="150"
+    height="33"
+    title="GitHub"
+  ></iframe>
+</div>
+{% endfunc %}

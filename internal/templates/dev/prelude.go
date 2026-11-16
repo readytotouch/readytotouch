@@ -1,8 +1,9 @@
 package dev
 
-import "github.com/readytotouch/readytotouch/internal/domain"
-
-type Company = domain.CompanyProfile
+import (
+	"fmt"
+	"net/url"
+)
 
 type CompanyCodePair struct {
 	ID    int64
@@ -14,4 +15,17 @@ type VacancyCodePair struct {
 	ID           int64
 	URL          string
 	CompanyAlias string
+}
+
+type CompanyLogoPair struct {
+	Alias string
+	Logo  string
+}
+
+func googleSearchLogos(companyName string) string {
+	values := url.Values{
+		"q": {fmt.Sprintf("%q review-logos", companyName)},
+	}
+
+	return "https://www.google.com/search?" + values.Encode()
 }

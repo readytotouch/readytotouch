@@ -1,14 +1,14 @@
 ansible-ping:
-	ansible -i ./scripts/ansible/hosts.txt all -m ping
+	ansible -i ./scripts/ansible/hosts.ini all -m ping
 
 ansible-git-pull:
-	ansible-playbook -i ./scripts/ansible/hosts.txt ./scripts/ansible/git-pull.yml
+	ansible-playbook -i ./scripts/ansible/hosts.ini ./scripts/ansible/git-pull.yml
 
-ansible-install-docker-compose:
-	ansible-playbook -i ./scripts/ansible/hosts.txt ./scripts/ansible/install-docker-compose.yml
+ansible-install-docker:
+	ansible-playbook -i ./scripts/ansible/hosts.ini ./scripts/ansible/install-docker.yml
 
 ansible-install-go:
-	ansible-playbook -i ./scripts/ansible/hosts.txt ./scripts/ansible/install-go.yml
+	ansible-playbook -i ./scripts/ansible/hosts.ini ./scripts/ansible/install-go.yml
 
 ansible-install-nodejs:
-	ansible-playbook -i ./scripts/ansible/hosts.txt ./scripts/ansible/install-nodejs.yml
+	ansible-playbook -i ./scripts/ansible/hosts.ini ./scripts/ansible/install-nodejs.yml

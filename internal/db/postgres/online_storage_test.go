@@ -178,6 +178,7 @@ func expectedHourlyStats(t *testing.T, ctx context.Context, connection *sql.DB, 
 	defer database.Queries().Close()
 
 	actualPairs, err := database.Queries().UserOnlineHourlyStats(ctx)
+	require.NoError(t, err)
 
 	hourlyActualPairs := make([]domain.UserOnlinePair, len(actualPairs))
 	for i, pair := range actualPairs {

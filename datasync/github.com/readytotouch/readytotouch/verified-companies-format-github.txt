@@ -1,0 +1,64 @@
+1Password https://1password.com/ https://github.com/1Password
+Algorithmia https://www.datarobot.com/ https://github.com/algorithmiaio
+Amazon https://www.amazon.com/ https://github.com/aws
+Anduril Industries https://www.anduril.com/ https://github.com/anduril
+Appodeal https://appodeal.com/ https://github.com/appodeal
+AppSignal https://www.appsignal.com/ https://github.com/appsignal
+Atlassian https://www.atlassian.com/ https://github.com/atlassian
+Axis Communications https://www.axis.com/ https://github.com/AxisCommunications
+Bencher https://bencher.dev/ https://github.com/bencherdev
+Beyond Identity https://www.beyondidentity.com/ https://github.com/gobeyondidentity
+Bitfount https://www.bitfount.com/ https://github.com/bitfount
+Brave https://brave.com/ https://github.com/brave
+Canonical https://canonical.com/ https://github.com/canonical
+Check Point Software https://www.checkpoint.com/ https://github.com/checkpointsw
+Cognite https://www.cognite.com https://github.com/cognitedata
+CrowdStrike https://www.crowdstrike.com/ https://github.com/CrowdStrike
+Daedalean AI https://daedalean.ai/ https://github.com/daedaleanai
+Datadog https://www.datadoghq.com/ https://github.com/datadog
+Discord https://discord.com/ https://github.com/discord
+Dropbox https://www.dropbox.com/ https://github.com/dropbox
+Dynatrace https://www.dynatrace.com/ https://github.com/dynatrace
+Espressif Systems https://www.espressif.com/ https://github.com/espressif
+ExpressVPN https://www.expressvpn.com/ https://github.com/expressvpn
+Ferrous Systems GmbH https://ferrous-systems.com/ https://github.com/ferrous-systems
+FifthTry https://www.fifthtry.com/ https://github.com/fifthtry
+Fly.io https://fly.io/ https://github.com/superfly
+Google https://www.google.com/ https://github.com/google
+Hasura https://hasura.io/ https://github.com/hasura
+Hugging Face https://huggingface.co/ https://github.com/huggingface
+InfluxData https://www.influxdata.com/ https://github.com/influxdata
+Kong https://konghq.com/ https://github.com/Kong
+Lechev.space https://lechev.space/ https://github.com/LechevSpace
+LinkedIn https://www.linkedin.com/ https://github.com/linkedin
+Los Alamos National Laboratory https://www.lanl.gov/ https://github.com/LANL
+Materialize https://materialize.com/ https://github.com/materializeinc
+Meta https://www.facebook.com/ https://github.com/facebook
+Microsoft https://www.microsoft.com/ https://github.com/microsoft
+npm, Inc. https://www.npmjs.com/ https://github.com/npm
+OneSignal https://onesignal.com/ https://github.com/OneSignal
+OVHcloud https://www.ovhcloud.com/ https://github.com/ovh
+Palo Alto Networks https://www.paloaltonetworks.com/ https://github.com/paloaltonetworks
+Photoroom https://www.photoroom.com/ https://github.com/photoroom
+Pinecone https://www.pinecone.io/ https://github.com/pinecone-io
+Progress Chef https://www.chef.io/ https://github.com/chef
+Proton https://proton.me/ https://github.com/ProtonMail
+Qumulo https://qumulo.com/ https://github.com/qumulo
+Red Sift https://redsift.com/ https://github.com/redsift
+Redis https://redis.io/ https://github.com/redis
+Rustunit https://rustunit.com/ https://github.com/rustunit
+SAP https://www.sap.com/ https://github.com/SAP
+Sentry https://sentry.io/ https://github.com/getsentry
+Siemens https://www.siemens.com/ https://github.com/siemens
+Spice AI https://spice.ai/ https://github.com/spiceai
+Stackable https://stackable.tech/ https://github.com/stackabletech
+Starry, Inc. https://starry.com/ https://github.com/starryinternet
+SurrealDB https://surrealdb.com/ https://github.com/surrealdb
+Svix https://www.svix.com/ https://github.com/svix
+System76 https://system76.com/ https://github.com/system76
+Tesla https://www.tesla.com/ https://github.com/teslamotors
+Tweede golf https://tweedegolf.nl/ https://github.com/tweedegolf
+Ubisoft https://www.ubisoft.com/ https://github.com/ubisoft
+Vercel https://vercel.com/ https://github.com/vercel
+Zama https://www.zama.ai/ https://github.com/zama-ai
+Zurich Instruments https://www.zhinst.com/ https://github.com/zhinst

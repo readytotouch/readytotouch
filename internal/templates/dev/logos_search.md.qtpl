@@ -1,0 +1,9 @@
+{%- func LogosSearch(pairs []*CompanyCodePair) -%}
+    {% stripspace %}
+        | Name | Logo | {% newline %}
+        {% for _, pair := range pairs %}
+            | [{%s pair.Name %}](https://www.linkedin.com/company/{%s pair.Alias %}/) | [search on Google]({%s googleSearchLogos(pair.Name) %}) |
+            {% newline %}
+        {% endfor %}
+    {% endstripspace %}
+{%- endfunc -%}

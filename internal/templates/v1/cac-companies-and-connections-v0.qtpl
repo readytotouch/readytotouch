@@ -1,0 +1,191 @@
+{%- func CompaniesAndConnectionsV0() -%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Companies and connections | Ukraine | ReadyToTouch</title>
+    <meta name="description" content="Companies and connections">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="author" type="text/plain" href="https://readytotouch.com/humans.txt"/>
+    <meta property="og:image" content="/assets/images/og/organizers-light.jpg">
+    {%= favicon() %}
+
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #4CAF50;
+            cursor: pointer;
+        }
+        .block {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .hidden {
+            display: none;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"], select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+        button:hover:enabled {
+            background-color: #45a049;
+        }
+        #company-list {
+            margin-top: 10px;
+        }
+        .company-card {
+            background-color: #fafafa;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            transition: background-color 0.5s ease;
+        }
+        .highlight {
+            background-color: #d4edda !important;
+        }
+        .company-name {
+            flex-grow: 1;
+            text-align: left;
+        }
+        .company-name a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .company-connections {
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+            margin-right: 20px;
+            flex-grow: 2;
+        }
+        .company-connections a {
+            color: #3498db;
+            text-decoration: none;
+            margin-bottom: 5px;
+        }
+        .company-actions {
+            text-align: right;
+        }
+        .company-actions button {
+            background-color: #e74c3c;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+        .company-actions button:hover {
+            background-color: #c0392b;
+        }
+    </style>
+    {%= plausibleAnalytics() %}
+    {%= ga() %}
+</head>
+<body>
+
+    <!-- Title of the page -->
+    <h1>Companies and connections</h1>
+
+    <!-- Block 1: Manage Connections -->
+    <div class="block">
+        <h2 id="manage-connections-header">Manage Connections</h2>
+        <div id="manage-connections-content">
+            <label for="keywords">Keywords:</label>
+            <input type="text" id="keywords" name="keywords" placeholder="Enter keywords..." list="keywords-list">
+            <datalist id="keywords-list">
+                <option value='"Developer" OR "Engineer" OR "DevOps"'>
+                <option value="Golang">
+                <option value="Rust">
+                <option value="Scala">
+            </datalist>
+            <br><br>
+            <label for="location">Location:</label>
+            <select id="location" name="location">
+                <option value="">Worldwide</option>
+                <option value="105072130">Poland</option>
+                <option value="101282230">Germany</option>
+                <option value="106670623">Romania</option>
+                <option value="105646813">Spain</option>
+                <option value="104508036">Czechia</option>
+                <option value="102105699">Türkiye</option>
+                <option value="100364837">Portugal</option>
+                <option value="105333783">Bulgaria</option>
+                <option value="103350119">Italy</option>
+                <option value="106693272">Switzerland</option>
+                <option value="103644278">United States</option>
+                <option value="101165590">United Kingdom</option>
+                <option value="101174742">Canada</option>
+            </select>
+            <br><br>
+            <button id="update-connections">Update connections</button>
+        </div>
+    </div>
+
+    <!-- Block 2: Load Company -->
+    <div class="block">
+        <h2 id="add-company-header">Add Company</h2>
+        <div id="add-company-content">
+            <label for="company-url">Company URL:</label>
+            <input type="text" id="company-url" name="company-url" placeholder="Enter company URL" list="company-url-list">
+            <datalist id="company-url-list">
+                <option value="https://www.linkedin.com/company/google/">
+                <option value="https://www.linkedin.com/company/microsoft/">
+                <option value="https://www.linkedin.com/company/nvidia/">
+            </datalist>
+            <br><br>
+            <button id="add-company" disabled>Add</button>
+        </div>
+    </div>
+
+    <!-- Block 3: Company List -->
+    <div class="block hidden" id="company-list-block">
+        <h2>Company List</h2>
+        <div id="company-list">
+            <!-- Company cards will be dynamically added here -->
+        </div>
+    </div>
+
+<script src="/assets/js/wip-companies-and-connections-app.js?{%d appVersion %}"></script>
+</body>
+</html>
+{%- endfunc -%}

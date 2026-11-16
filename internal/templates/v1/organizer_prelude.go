@@ -14,12 +14,45 @@ type (
 	Company         = domain.CompanyProfile
 	University      = domain.University
 	PreparedVacancy = domain.PreparedVacancy
+
+	OrganizerState struct {
+		Organizer domain.Organizer
+		Available bool
+	}
 )
 
 const (
 	golangKeywordsTitles = string(domain.GoTitleKeywords)
 	keywordsCommon       = `"Developer" OR "Engineer" OR "DevOps"`
 )
+
+func companyOrganizers(company Company) []OrganizerState {
+	var (
+		source = []domain.Organizer{
+			domain.OrganizerGolang,
+			domain.OrganizerRust,
+			domain.OrganizerScala,
+			domain.OrganizerElixir,
+			domain.OrganizerErlang,
+			domain.OrganizerClojure,
+			domain.OrganizerZig,
+			domain.OrganizerHaskell,
+			domain.OrganizerFSharp,
+			domain.OrganizerOCaml,
+		}
+		result = make([]OrganizerState, len(source))
+	)
+
+	for i, organizer := range source {
+		// Show companies only if they have vacancies or are Rust Foundation members
+		result[i] = OrganizerState{
+			Organizer: organizer,
+			Available: len(company.Languages[organizer.Language].Vacancies) > 0 || (organizer.Language == domain.Rust && company.RustFoundationMember),
+		}
+	}
+
+	return result
+}
 
 func linkedinConnectionsURL(companies []Company, universities []University) string {
 	companyQueryParam, _ := json.Marshal(companiesToLinkedInIDs(companies))
@@ -36,7 +69,44 @@ func linkedinConnectionsURL(companies []Company, universities []University) stri
 		values["schoolFilter"] = []string{string(schoolQueryParam)}
 	}
 
-	return "https://www.linkedin.com/search/results/PEOPLE/?" + values.Encode()
+	return "https://www.linkedin.com/search/results/people/?" + values.Encode()
+}
+
+func linkedinConnectionsFormerEmployeesURL(companies []Company) string {
+	companyQueryParam, _ := json.Marshal(companiesToLinkedInIDs(companies))
+
+	values := url.Values{
+		"pastCompany": {string(companyQueryParam)},
+		"network":     {`["F","S"]`},
+		"keywords":    {keywordsCommon},
+	}
+
+	return "https://www.linkedin.com/search/results/people/?" + values.Encode()
+}
+
+func linkedinConnectionsCEO(company Company) string {
+	companyQueryParam, _ := json.Marshal(companiesToLinkedInIDs([]Company{company}))
+
+	values := url.Values{
+		"currentCompany": {string(companyQueryParam)},
+		"network":        {`["F","S","O"]`},
+		"keywords":       {`"CEO" OR "Chief Executive Officer" OR "Founder" OR "Co-Founder"`},
+	}
+
+	return "https://www.linkedin.com/search/results/people/?" + values.Encode()
+}
+
+func linkedinEmployeesPostsURL(companies []Company, languageTitle string) string {
+	companyQueryParam, _ := json.Marshal(companiesToLinkedInIDs(companies))
+
+	values := url.Values{
+		"authorCompany": {string(companyQueryParam)},
+		"datePosted":    {`"past-month"`},
+		"sortBy":        {`"date_posted"`},
+		"keywords":      {`"Hiring" OR ` + `"` + languageTitle + `"`}, // "Hiring" OR "Golang"
+	}
+
+	return "https://www.linkedin.com/search/results/content/?" + values.Encode()
 }
 
 func linkedinJobsURL(companies []Company, keywords string) string {
@@ -119,6 +189,55 @@ func whoisURL(s string) string {
 	return fmt.Sprintf("https://www.whois.com/whois/%s", parsedURL.Hostname())
 }
 
+func hostname(s string) string {
+	if s == "" {
+		return ""
+	}
+
+	parsedURL, err := url.Parse(s)
+	if err != nil {
+		// panic allowed because HTML is pre-generated
+
+		panic(err)
+	}
+
+	return parsedURL.Hostname()
+}
+
+func googleSearch(q string) string {
+	values := url.Values{
+		"q": {q},
+	}
+
+	return "https://www.google.com/search?" + values.Encode()
+}
+
+func googleSearchLayoffsMonth(companyName string) string {
+	values := url.Values{
+		"q":   {companyName + " " + "layoffs"},
+		"tbs": {"qdr:m"}, // month
+	}
+
+	return "https://www.google.com/search?" + values.Encode()
+}
+
+func googleSearchLayoffsYear(companyName string) string {
+	values := url.Values{
+		"q":   {companyName + " " + "layoffs"},
+		"tbs": {"qdr:y"}, // year
+	}
+
+	return "https://www.google.com/search?" + values.Encode()
+}
+
+func googleSearchOnSite(site string, what string) string {
+	values := url.Values{
+		"q": {"site:" + site + " " + what},
+	}
+
+	return "https://www.google.com/search?" + values.Encode()
+}
+
 func googleSearchGitHub(companyName string) string {
 	values := url.Values{
 		"q": {"site:github.com" + " " + companyName},
@@ -145,7 +264,7 @@ func googleSearchBlind(companyName string) string {
 
 func googleSearchLevelsFyi(companyName string) string {
 	values := url.Values{
-		"q": {"site:levels.fyi" + " " + companyName},
+		"q": {"site:levels.fyi/companies" + " " + companyName},
 	}
 
 	return "https://www.google.com/search?" + values.Encode()
@@ -153,7 +272,7 @@ func googleSearchLevelsFyi(companyName string) string {
 
 func googleSearchIndeed(companyName string) string {
 	values := url.Values{
-		"q": {"site:indeed.com" + " " + companyName},
+		"q": {"site:www.indeed.com/cmp/" + " " + companyName},
 	}
 
 	return "https://www.google.com/search?" + values.Encode()
@@ -221,4 +340,12 @@ func googleSearchYCombinator(companyName string) string {
 	}
 
 	return "https://www.google.com/search?" + values.Encode()
+}
+
+func latestVacancies(vacancies []PreparedVacancy) []PreparedVacancy {
+	if len(vacancies) >= 256 {
+		return vacancies[:256]
+	}
+
+	return vacancies
 }

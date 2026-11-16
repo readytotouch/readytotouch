@@ -1,0 +1,53 @@
+{% comment %}
+  This header profile is used for both v1 and v2.
+{% endcomment %}
+{% func organizersHeaderProfileV1(profiles []SocialProviderUser) %}
+<div class="header__profile">
+  <button class="header__profile-button">
+    <img src="{%s SocialProviderUserHeaderPhoto(profiles) %}" alt="photo-profile" />
+  </button>
+  <div class="header__modal modal-profile">
+    <div class="modal-profile__profile">
+      <figure class="modal-profile__profile-info">
+        <img
+          src="{%s SocialProviderUserHeaderPhoto(profiles) %}"
+          class="modal-profile__user-photo"
+          width="48"
+          height="48"
+          alt="Profile photo"
+        />
+        <figcaption class="modal-profile__profile-name">{%s SocialProviderUserName(profiles[0]) %}</figcaption>
+      </figure>
+      <div class="modal-profile__profile-list">
+        {% for _, profile := range profiles %}
+        {% switch profile.SocialProvider %}
+        {% case github %}
+        <a href="https://github.com/{%s profile.Username %}" target="_blank" class="modal-profile__link">
+          <img src="/assets/images/pages/online-new/github-black.svg" width="20" height="20" alt="GitHub logo" />
+          <span class="modal-profile__profile-github">github.com/{%s profile.Username %}</span>
+        </a>
+        {% case gitlab %}
+        <a href="https://gitlab.com/{%s profile.Username %}" target="_blank" class="modal-profile__link">
+          <img src="/assets/images/pages/online-new/gitlab.svg" width="20" height="20" alt="GitLab logo" />
+          <span class="modal-profile__profile-gitlab">gitlab.com/{%s profile.Username %}</span>
+        </a>
+        {% case bitbucket %}
+        <a href="https://bitbucket.org/{%s profile.Username %}" target="_blank" class="modal-profile__link">
+          <img src="/assets/images/pages/online-new/bitbucket.svg" width="20" height="20" alt="GitLab logo" />
+          <span class="modal-profile__profile-bitbucket">bitbucket.org/{%s profile.Username %}</span>
+        </a>
+        {% endswitch %}
+        {% endfor %}
+      </div>
+    </div>
+    <div class="modal-profile__log-out">
+      <a href="/logout" class="modal-profile__button">Log out</a>
+    </div>
+  </div>
+</div>
+<script>
+  document.querySelector('.header__profile-button').addEventListener('click', () => {
+    document.querySelector('.header__modal').classList.toggle('active');
+  });
+</script>
+{% endfunc %}

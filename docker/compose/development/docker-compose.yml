@@ -3,7 +3,7 @@ version: "3.7"
 services:
   app:
     container_name: "readytotouch_go_app"
-    image: golang:1.22.6-alpine
+    image: golang:1.26.1-alpine
     working_dir: /go/src/github.com/readytotouch/readytotouch
     volumes:
       - .:/go/src/github.com/readytotouch/readytotouch
@@ -22,6 +22,9 @@ services:
       BITBUCKET_CLIENT_ID: ${BITBUCKET_CLIENT_ID}
       BITBUCKET_CLIENT_SECRET: ${BITBUCKET_CLIENT_SECRET}
       BITBUCKET_REDIRECT_URL: ${BITBUCKET_REDIRECT_URL}
+      GOOGLE_CLIENT_ID: ${GOOGLE_CLIENT_ID}
+      GOOGLE_CLIENT_SECRET: ${GOOGLE_CLIENT_SECRET}
+      GOOGLE_REDIRECT_URL: ${GOOGLE_REDIRECT_URL}
       LINKEDIN_OAUTH2_TOKEN: ${LINKEDIN_OAUTH2_TOKEN}
       TLS_CERTIFICATES_DIR: /var/lib/tls-certificates/data/
       HOSTS: ${HOSTS}
@@ -45,6 +48,11 @@ services:
       - "5432:5432"
     volumes:
       - ./.docker/volumes/postgresql/data/:/var/lib/postgresql/data/
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
 
   redis:
     container_name: "readytotouch_redis"
@@ -61,4 +69,5 @@ services:
       GOOSE_DRIVER: "postgres"
       GOOSE_DBSTRING: ${POSTGRES_DSN}
     depends_on:
-      - postgres
+      postgres:
+        condition: service_healthy

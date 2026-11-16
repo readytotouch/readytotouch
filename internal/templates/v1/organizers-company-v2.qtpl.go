@@ -58,6 +58,9 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 	qw422016.N().S(`
     <script src="https://cdn.jsdelivr.net/npm/apexcharts@3.52.0"></script>
     `)
+	streamplausibleAnalytics(qw422016)
+	qw422016.N().S(`
+    `)
 	streamga(qw422016)
 	qw422016.N().S(`
 </head>
@@ -68,45 +71,43 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
   <div class="header__wrapper">
     <a href="/organizers" class="header__logo">
       <img
-        width="129"
-        height="32"
+        width="30"
+        height="30"
         class="header__logo-img"
         src="/assets/images/pages/organizer/`)
 	qw422016.E().S(organizerFeature.Organizer.Logo)
 	qw422016.N().S(`"
         alt="organizer logo"
       />
+      <span class="header__logo-label">Organizer</span>
     </a>
     <ul class="header__nav">
       <li class="header__nav-item">
-        <a href="/organizers/`)
+        <a href="/`)
 	qw422016.E().S(organizerFeature.Organizer.Alias)
 	qw422016.N().S(`/companies" class="header__nav-link active">Companies</a>
       </li>
       <li class="header__nav-item">
-        <a href="/organizers/`)
+        <a href="/`)
 	qw422016.E().S(organizerFeature.Organizer.Alias)
-	qw422016.N().S(`/vacancies" class="header__nav-link">Vacancies</a>
+	qw422016.N().S(`/jobs" class="header__nav-link">Jobs</a>
       </li>
-      <li class="header__nav-item">
-        <a href="/organizers/`)
-	qw422016.E().S(organizerFeature.Organizer.Alias)
-	qw422016.N().S(`/communities" class="header__nav-link">Communities</a>
-      </li>
+      `)
+	qw422016.N().S(`
     </ul>
     `)
-	streamorganizersHeaderStars(qw422016)
+	streamorganizersHeaderStarsV1(qw422016)
 	qw422016.N().S(`
     `)
 	if len(headerProfiles) > 0 {
 		qw422016.N().S(`
     `)
-		streamorganizersHeaderProfile(qw422016, headerProfiles)
+		streamorganizersHeaderProfileV1(qw422016, headerProfiles)
 		qw422016.N().S(`
     `)
 	} else {
 		qw422016.N().S(`
-    <a href="/organizers/`)
+    <a href="/`)
 		qw422016.E().S(organizerFeature.Organizer.Alias)
 		qw422016.N().S(`/welcome`)
 		qw422016.E().S(authQueryParams)
@@ -193,7 +194,9 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
       <img
         class="card__image"
         alt="card image preview icon"
-		src="/assets/images/pages/common-images/unknown.svg"
+		src="`)
+	qw422016.E().S(logo(company.Logo))
+	qw422016.N().S(`"
       />
     </div>
     <figcaption class="card__header-caption">
@@ -208,44 +211,57 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
   </figure>
 	<div class="card__top-links">
 		<a href="`)
-	qw422016.E().S(company.Website)
-	qw422016.N().S(`" class="card__top-link button-link">Website</a>
+	qw422016.E().S(company.BaseURL)
+	qw422016.N().S(`" target="_blank" class="card__top-link button-link">Website</a>
 		`)
-	if company.Careers == "" {
+	if company.CareersURL == "" {
 		qw422016.N().S(`
 			<span class="card__top-link button-link disabled">Careers</span>
 		`)
 	} else {
 		qw422016.N().S(`
 			<a href="`)
-		qw422016.E().S(company.Careers)
-		qw422016.N().S(`" class="card__top-link button-link">Careers</a>
+		qw422016.E().S(company.CareersURL)
+		qw422016.N().S(`" target="_blank" class="card__top-link button-link">Careers</a>
 		`)
 	}
 	qw422016.N().S(`
 		`)
-	if company.About == "" {
+	if company.AboutURL == "" {
 		qw422016.N().S(`
 			<span class="card__top-link button-link disabled">About</span>
 		`)
 	} else {
 		qw422016.N().S(`
 			<a href="`)
-		qw422016.E().S(company.About)
-		qw422016.N().S(`" class="card__top-link button-link">About</a>
+		qw422016.E().S(company.AboutURL)
+		qw422016.N().S(`" target="_blank" class="card__top-link button-link">About</a>
 		`)
 	}
 	qw422016.N().S(`
 		`)
-	if company.Blog == "" {
+	if company.BlogURL == "" {
 		qw422016.N().S(`
 			<span class="card__top-link button-link disabled">Dev Blog</span>
 		`)
 	} else {
 		qw422016.N().S(`
 			<a href="`)
-		qw422016.E().S(company.Blog)
-		qw422016.N().S(`" class="card__top-link button-link">Dev Blog</a>
+		qw422016.E().S(company.BlogURL)
+		qw422016.N().S(`" target="_blank" class="card__top-link button-link">Dev Blog</a>
+		`)
+	}
+	qw422016.N().S(`
+		`)
+	if company.ReferralProgramURL == "" {
+		qw422016.N().S(`
+		    <span class="card__top-link button-link disabled">Referral program</span>
+		`)
+	} else {
+		qw422016.N().S(`
+		    <a href="`)
+		qw422016.E().S(company.ReferralProgramURL)
+		qw422016.N().S(`" target="_blank" class="card__top-link button-link">Referral program</a>
 		`)
 	}
 	qw422016.N().S(`
@@ -296,13 +312,13 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 					/>
 					<a href="https://www.linkedin.com/company/`)
 	qw422016.E().S(company.LinkedInProfile.Alias)
-	qw422016.N().S(`/" class="card__links-link">LinkedIn</a>
+	qw422016.N().S(`/" target="_blank" class="card__links-link">LinkedIn</a>
 					`)
 	if company.LinkedInProfile.Verified {
 		qw422016.N().S(`
 					<a href="https://www.linkedin.com/company/`)
 		qw422016.E().S(company.LinkedInProfile.Alias)
-		qw422016.N().S(`/about" class="card__links-link card__links-link--verify">
+		qw422016.N().S(`/about" target="_blank" class="card__links-link card__links-link--verify">
 						<img
 							class="card__links-icon"
 							alt="icon"
@@ -328,12 +344,12 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 			<li class="card__links-item">
 				<a href="https://www.linkedin.com/company/`)
 	qw422016.E().S(company.LinkedInProfile.Alias)
-	qw422016.N().S(`/" class="button-link card__links-link">Overview</a>
+	qw422016.N().S(`/" target="_blank" class="button-link card__links-link">Overview</a>
 			</li>
 			<li class="card__links-item">
 				<a href="`)
 	qw422016.E().S(linkedinConnectionsURL([]Company{company}, nil))
-	qw422016.N().S(`" class="button-link card__links-link">Connections</a>
+	qw422016.N().S(`" target="_blank" class="button-link card__links-link">Connections (current employees)</a>
 				<img
 					class="card__links-icon"
 					alt="language icon"
@@ -345,17 +361,27 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 			<li class="card__links-item">
 				<a href="`)
 	qw422016.E().S(linkedinConnectionsURL([]Company{company}, ukrainianUniversities))
-	qw422016.N().S(`" class="button-link card__links-link">Connections 🇺🇦</a>
+	qw422016.N().S(`" target="_blank" class="button-link card__links-link">Connections (current employees) 🇺🇦</a>
 			</li>
 			<li class="card__links-item">
 				<a href="`)
 	qw422016.E().S(linkedinConnectionsURL([]Company{company}, czechUniversities))
-	qw422016.N().S(`" class="button-link card__links-link">Connections 🇨🇿</a>
+	qw422016.N().S(`" target="_blank" class="button-link card__links-link">Connections (current employees) 🇨🇿</a>
+			</li>
+			<li class="card__links-item">
+				<a href="`)
+	qw422016.E().S(linkedinConnectionsFormerEmployeesURL([]Company{company}))
+	qw422016.N().S(`" target="_blank" class="button-link card__links-link">Connections (former employees)</a>
+			</li>
+			<li class="card__links-item">
+				<a href="`)
+	qw422016.E().S(linkedinEmployeesPostsURL([]Company{company}, organizerFeature.Organizer.Title))
+	qw422016.N().S(`" target="_blank" class="button-link card__links-link">Employees' posts</a>
 			</li>
 			<li class="card__links-item">
 				<a href="`)
 	qw422016.E().S(linkedinJobsURL([]Company{company}, string(organizerFeature.Organizer.LanguageTitleKeywords)))
-	qw422016.N().S(`" class="button-link card__links-link">Jobs</a>
+	qw422016.N().S(`" target="_blank" class="button-link card__links-link">Jobs</a>
 			</li>
 		</ul>
 	</div>
@@ -368,7 +394,7 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 				<div class="card__links-item-group">
 					<img
 						class="card__links-icon"
-						alt="github icon"
+						alt="GitHub icon"
 						width="32"
 						height="32"
 						src="/assets/images/pages/organizer/github.svg"
@@ -380,12 +406,15 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 				<span class="button-link card__links-link">Overview</span>
 				<a href="`)
 		qw422016.E().S(googleSearchGitHub(company.Name))
-		qw422016.N().S(`" class="card__links-link card__links-link--google">
+		qw422016.N().S(`" target="_blank" class="card__links-link card__links-link--google">
 					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
 				</a>
 			</li>
 			<li class="card__links-item card__links-item--disabled">
 				<span class="button-link card__links-link">Repositories (?)</span>
+			</li>
+			<li class="card__links-item card__links-item--disabled">
+				<span class="button-link card__links-link">Followers (?)</span>
 			</li>
 			`)
 	} else {
@@ -394,7 +423,7 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 				<div class="card__links-item-group">
 					<img
 						class="card__links-icon"
-						alt="github icon"
+						alt="GitHub icon"
 						width="32"
 						height="32"
 						src="/assets/images/pages/organizer/github.svg"
@@ -405,7 +434,7 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 					<span class="card__links-link card__links-link--verify">
 						<img
 							class="card__links-icon"
-							alt="icon"
+							alt="GitHub verified icon"
 							src="/assets/images/pages/organizer/verified.png"
 						/>
 					</span>
@@ -414,21 +443,28 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 		qw422016.N().S(`
 					<a href="https://github.com/`)
 		qw422016.E().S(company.GitHubProfile.Login)
-		qw422016.N().S(`" class="card__links-link">GitHub</a>
+		qw422016.N().S(`" target="_blank" class="card__links-link">GitHub</a>
 				</div>
 			</li>
 			<li class="card__links-item">
 				<a href="https://github.com/`)
 		qw422016.E().S(company.GitHubProfile.Login)
-		qw422016.N().S(`" class="button-link card__links-link">Overview</a>
+		qw422016.N().S(`" target="_blank" class="button-link card__links-link">Overview</a>
 			</li>
 			<li class="card__links-item">
 				<a href="https://github.com/orgs/`)
 		qw422016.E().S(company.GitHubProfile.Login)
 		qw422016.N().S(`/repositories?q=lang:`)
 		qw422016.E().S(organizerFeature.Organizer.GitHubAlias)
-		qw422016.N().S(`" class="button-link card__links-link">Repositories (`)
-		qw422016.N().D(fetchGitHubRepositoriesCount(company, organizerFeature.Organizer.Language))
+		qw422016.N().S(`" target="_blank" class="button-link card__links-link">Repositories (`)
+		qw422016.N().D(company.GitHubRepositoryCount)
+		qw422016.N().S(`)</a>
+			</li>
+			<li class="card__links-item">
+				<a href="https://github.com/orgs/`)
+		qw422016.E().S(company.GitHubProfile.Login)
+		qw422016.N().S(`/followers" target="_blank" class="button-link card__links-link">Followers (`)
+		qw422016.E().S(formatGitHubFollowers(company))
 		qw422016.N().S(`)</a>
 			</li>
 			`)
@@ -445,7 +481,7 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 				<div class="card__links-item-group">
 					<img
 						class="card__links-icon"
-						alt="linkedin icon"
+						alt="blind icon"
 						width="32"
 						height="32"
 						src="/assets/images/pages/organizer/blind.png"
@@ -462,7 +498,7 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 				<span class="button-link card__links-link">Overview</span>
 				<a href="`)
 		qw422016.E().S(googleSearchBlind(company.Name))
-		qw422016.N().S(`" class="card__links-link card__links-link--google">
+		qw422016.N().S(`" target="_blank" class="card__links-link card__links-link--google">
 					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
 				</a>
 			</li>
@@ -477,14 +513,14 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 				<div class="card__links-item-group">
 					<img
 						class="card__links-icon"
-						alt="linkedin icon"
+						alt="blind icon"
 						width="32"
 						height="32"
 						src="/assets/images/pages/organizer/blind.png"
 					/>
 					<a href="https://www.teamblind.com/company/`)
 		qw422016.E().S(company.BlindProfile.Alias)
-		qw422016.N().S(`" class="card__links-link">Blind</a>
+		qw422016.N().S(`" target="_blank" class="card__links-link">Blind</a>
 				</div>
 				<ul class="card__links-item-info">
 					<li class="card__link-stats-item">`)
@@ -501,12 +537,12 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 			<li class="card__links-item">
 				<a href="https://www.teamblind.com/company/`)
 		qw422016.E().S(company.BlindProfile.Alias)
-		qw422016.N().S(`" class="button-link card__links-link">Overview</a>
+		qw422016.N().S(`" target="_blank" class="button-link card__links-link">Overview</a>
 			</li>
 			<li class="card__links-item">
 				<a href="https://www.teamblind.com/company/`)
 		qw422016.E().S(company.BlindProfile.Alias)
-		qw422016.N().S(`/reviews" class="button-link card__links-link">Reviews</a>
+		qw422016.N().S(`/reviews" target="_blank" class="button-link card__links-link">Reviews</a>
 				<span class="card__links-link-star">⭐ `)
 		qw422016.E().S(company.BlindProfile.ReviewsRate)
 		qw422016.N().S(`</span>
@@ -525,7 +561,7 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 				<div class="card__links-item-group">
 					<img
 						class="card__links-icon"
-						alt="linkedin icon"
+						alt="levels.fyi icon"
 						width="32"
 						height="32"
 						src="/assets/images/pages/organizer/levels.png"
@@ -540,7 +576,7 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 				<span class="button-link card__links-link">Overview</span>
 				<a href="`)
 		qw422016.E().S(googleSearchLevelsFyi(company.Name))
-		qw422016.N().S(`" class="card__links-link card__links-link--google">
+		qw422016.N().S(`" target="_blank" class="card__links-link card__links-link--google">
 					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
 				</a>
 			</li>
@@ -554,14 +590,14 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 				<div class="card__links-item-group">
 					<img
 						class="card__links-icon"
-						alt="linkedin icon"
+						alt="levels.fyi icon"
 						width="32"
 						height="32"
 						src="/assets/images/pages/organizer/levels.png"
 					/>
 					<a href="https://www.levels.fyi/companies/`)
 		qw422016.E().S(company.LevelsFyiProfile.Alias)
-		qw422016.N().S(`" class="card__links-link">Levels.fyi</a>
+		qw422016.N().S(`" target="_blank" class="card__links-link">Levels.fyi</a>
 				</div>
 				<ul class="card__links-item-info">
 					<li class="card__link-stats-item">`)
@@ -572,12 +608,12 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 			<li class="card__links-item">
 				<a href="https://www.levels.fyi/companies/`)
 		qw422016.E().S(company.LevelsFyiProfile.Alias)
-		qw422016.N().S(`" class="button-link card__links-link">Overview</a>
+		qw422016.N().S(`" target="_blank" class="button-link card__links-link">Overview</a>
 			</li>
 			<li class="card__links-item">
 				<a href="https://www.levels.fyi/companies/`)
 		qw422016.E().S(company.LevelsFyiProfile.Alias)
-		qw422016.N().S(`/jobs" class="button-link card__links-link">Jobs</a>
+		qw422016.N().S(`/jobs" target="_blank" class="button-link card__links-link">Jobs</a>
 			</li>
 			`)
 	}
@@ -618,7 +654,7 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 				<span class="button-link card__links-link">Overview</span>
 				<a href="`)
 		qw422016.E().S(googleSearchGlassdoor(company.Name))
-		qw422016.N().S(`" class="card__links-link card__links-link--google">
+		qw422016.N().S(`" target="_blank" class="card__links-link card__links-link--google">
 					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
 				</a>
 			</li>
@@ -643,7 +679,7 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 					/>
 					<a href="`)
 		qw422016.E().S(company.GlassdoorProfile.OverviewURL)
-		qw422016.N().S(`" class="card__links-link">Glassdoor</a>
+		qw422016.N().S(`" target="_blank" class="card__links-link">Glassdoor</a>
 					`)
 		if company.GlassdoorProfile.Verified {
 			qw422016.N().S(`
@@ -681,12 +717,12 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 			<li class="card__links-item">
 				<a href="`)
 		qw422016.E().S(company.GlassdoorProfile.OverviewURL)
-		qw422016.N().S(`" class="button-link card__links-link">Overview</a>
+		qw422016.N().S(`" target="_blank" class="button-link card__links-link">Overview</a>
 			</li>
 			<li class="card__links-item">
 				<a href="`)
 		qw422016.E().S(company.GlassdoorProfile.ReviewsURL)
-		qw422016.N().S(`" class="button-link card__links-link">Reviews</a>
+		qw422016.N().S(`" target="_blank" class="button-link card__links-link">Reviews</a>
 				<span class="card__links-link-star">`)
 		qw422016.E().S(formatGlassdoorReviewsRate(company.GlassdoorProfile.ReviewsRate))
 		qw422016.N().S(` ★</span>
@@ -694,7 +730,7 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 			<li class="card__links-item">
 				<a href="`)
 		qw422016.E().S(company.GlassdoorProfile.JobsURL)
-		qw422016.N().S(`" class="button-link card__links-link">Jobs</a>
+		qw422016.N().S(`" target="_blank" class="button-link card__links-link">Jobs</a>
 			</li>
 			`)
 	}
@@ -710,7 +746,7 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 				<div class="card__links-item-group">
 					<img
 						class="card__links-icon"
-						alt="linkedin icon"
+						alt="indeed icon"
 						width="32"
 						height="32"
 						src="/assets/images/pages/organizer/indeed.png"
@@ -722,7 +758,7 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 				<span class="button-link card__links-link">Overview</span>
 				<a href="`)
 		qw422016.E().S(googleSearchIndeed(company.Name))
-		qw422016.N().S(`" class="card__links-link card__links-link--google">
+		qw422016.N().S(`" target="_blank" class="card__links-link card__links-link--google">
 					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
 				</a>
 			</li>
@@ -736,25 +772,25 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 				<div class="card__links-item-group">
 					<img
 						class="card__links-icon"
-						alt="linkedin icon"
+						alt="indeed icon"
 						width="32"
 						height="32"
 						src="/assets/images/pages/organizer/indeed.png"
 					/>
 					<a href="https://www.indeed.com/cmp/`)
 		qw422016.E().S(company.IndeedProfile.Alias)
-		qw422016.N().S(`" class="card__links-link">Indeed</a>
+		qw422016.N().S(`" target="_blank" class="card__links-link">Indeed</a>
 				</div>
 			</li>
 			<li class="card__links-item">
 				<a href="https://www.indeed.com/cmp/`)
 		qw422016.E().S(company.IndeedProfile.Alias)
-		qw422016.N().S(`" class="button-link card__links-link">Overview</a>
+		qw422016.N().S(`" target="_blank" class="button-link card__links-link">Overview</a>
 			</li>
 			<li class="card__links-item">
 				<a href="https://www.indeed.com/cmp/`)
 		qw422016.E().S(company.IndeedProfile.Alias)
-		qw422016.N().S(`/jobs" class="button-link card__links-link">Jobs</a>
+		qw422016.N().S(`/jobs" target="_blank" class="button-link card__links-link">Jobs</a>
 			</li>
 			`)
 	}
@@ -767,7 +803,7 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 				<div class="card__links-item-group">
 					<img
 						class="card__links-icon"
-						alt="linkedin icon"
+						alt="investors icon"
 						width="32"
 						height="32"
 						src="/assets/images/pages/organizer/investors.svg"
@@ -783,7 +819,7 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 				<span class="button-link card__links-link">Dealroom</span>
 				<a href="`)
 		qw422016.E().S(googleSearchDealroom(company.Name))
-		qw422016.N().S(`" class="card__links-link card__links-link--google">
+		qw422016.N().S(`" target="_blank" class="card__links-link card__links-link--google">
 					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
 				</a>
 			</li>
@@ -794,7 +830,7 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 				<img class="card__links-icon" alt="Dealroom icon" width="20" height="20" src="/assets/images/pages/organizer/dealroom.png" />
 				<a href="`)
 		qw422016.E().S(company.DealroomURL)
-		qw422016.N().S(`" class="button-link card__links-link">Dealroom</a>
+		qw422016.N().S(`" target="_blank" class="button-link card__links-link">Dealroom</a>
 			</li>
 			`)
 	}
@@ -807,7 +843,7 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 				<span class="button-link card__links-link">Crunchbase</span>
 				<a href="`)
 		qw422016.E().S(googleSearchCrunchbase(company.Name))
-		qw422016.N().S(`" class="card__links-link card__links-link--google">
+		qw422016.N().S(`" target="_blank" class="card__links-link card__links-link--google">
 					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
 				</a>
 			</li>
@@ -818,7 +854,7 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 				<img class="card__links-icon" alt="Crunchbase icon" width="20" height="20" src="/assets/images/pages/organizer/crunchbase.svg" />
 				<a href="`)
 		qw422016.E().S(company.CrunchbaseURL)
-		qw422016.N().S(`" class="button-link card__links-link">Crunchbase</a>
+		qw422016.N().S(`" target="_blank" class="button-link card__links-link">Crunchbase</a>
 			</li>
 			`)
 	}
@@ -831,7 +867,7 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 				<span class="button-link card__links-link">Pitchbook</span>
 				<a href="`)
 		qw422016.E().S(googleSearchPitchbook(company.Name))
-		qw422016.N().S(`" class="card__links-link card__links-link--google">
+		qw422016.N().S(`" target="_blank" class="card__links-link card__links-link--google">
 					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
 				</a>
 			</li>
@@ -842,7 +878,7 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 				<img class="card__links-icon" alt="Pitchbook icon" width="20" height="20" src="/assets/images/pages/organizer/pitchbook.png" />
 				<a href="`)
 		qw422016.E().S(company.PitchbookURL)
-		qw422016.N().S(`" class="button-link card__links-link">Pitchbook</a>
+		qw422016.N().S(`" target="_blank" class="button-link card__links-link">Pitchbook</a>
 			</li>
 			`)
 	}
@@ -855,7 +891,7 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 				<div class="card__links-item-group">
 					<img
 						class="card__links-icon"
-						alt="linkedin icon"
+						alt="market icon"
 						width="32"
 						height="32"
 						src="/assets/images/pages/organizer/query_stats.svg"
@@ -871,7 +907,7 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 				<span class="button-link card__links-link">Yahoo Finance</span>
 				<a href="`)
 		qw422016.E().S(googleSearchYahooFinance(company.Name))
-		qw422016.N().S(`" class="card__links-link card__links-link--google">
+		qw422016.N().S(`" target="_blank" class="card__links-link card__links-link--google">
 					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
 				</a>
 			</li>
@@ -882,7 +918,7 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 				<img class="card__links-icon" alt="Yahoo Finance icon" width="20" height="20" src="/assets/images/pages/organizer/yahoo.png" />
 				<a href="`)
 		qw422016.E().S(company.YahooFinanceURL)
-		qw422016.N().S(`" class="button-link card__links-link">Yahoo Finance</a>
+		qw422016.N().S(`" target="_blank" class="button-link card__links-link">Yahoo Finance</a>
 			</li>
 			`)
 	}
@@ -895,7 +931,7 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 				<span class="button-link card__links-link">Google Finance</span>
 				<a href="`)
 		qw422016.E().S(googleSearchGoogleFinance(company.Name))
-		qw422016.N().S(`" class="card__links-link card__links-link--google">
+		qw422016.N().S(`" target="_blank" class="card__links-link card__links-link--google">
 					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
 				</a>
 			</li>
@@ -906,7 +942,7 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 				<img class="card__links-icon" alt="Google Finance icon" width="20" height="20" src="/assets/images/pages/organizer/google-fin.png" />
 				<a href="`)
 		qw422016.E().S(company.GoogleFinanceURL)
-		qw422016.N().S(`" class="button-link card__links-link">Google Finance</a>
+		qw422016.N().S(`" target="_blank" class="button-link card__links-link">Google Finance</a>
 			</li>
 			`)
 	}
@@ -929,8 +965,8 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 					src="/assets/images/pages/organizer/whois.svg"
 				/>
 				<a href="`)
-	qw422016.E().S(whoisURL(company.Website))
-	qw422016.N().S(`" class="button-link card__links-link">Whois</a>
+	qw422016.E().S(whoisURL(company.BaseURL))
+	qw422016.N().S(`" target="_blank" class="button-link card__links-link">Whois</a>
 			</li>
 			<li class="card__links-item">
 				<img
@@ -941,8 +977,8 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 					src="/assets/images/pages/organizer/similarweb.svg"
 				/>
 				<a href="`)
-	qw422016.E().S(similarwebURL(company.Website))
-	qw422016.N().S(`" class="button-link card__links-link">SimilarWeb</a>
+	qw422016.E().S(similarwebURL(company.BaseURL))
+	qw422016.N().S(`" target="_blank" class="button-link card__links-link">SimilarWeb</a>
 			</li>
 			`)
 	if company.OttaProfileSlug == "" {
@@ -952,7 +988,7 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 				<span class="button-link card__links-link">Otta</span>
 				<a href="`)
 		qw422016.E().S(googleSearchOtta(company.Name))
-		qw422016.N().S(`" class="card__links-link card__links-link--google">
+		qw422016.N().S(`" target="_blank" class="card__links-link card__links-link--google">
 					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
 				</a>
 			</li>
@@ -963,7 +999,7 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 				<img class="card__links-icon" alt="otta icon" width="20" height="20" src="/assets/images/pages/organizer/otta.svg" />
 				<a href="https://app.otta.com/companies/`)
 		qw422016.E().S(company.OttaProfileSlug)
-		qw422016.N().S(`" class="button-link card__links-link">Otta</a>
+		qw422016.N().S(`" target="_blank" class="button-link card__links-link">Otta</a>
 			</li>
 			`)
 	}
@@ -973,7 +1009,7 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 				<span class="button-link card__links-link">XING</span>
 				<a href="`)
 	qw422016.E().S(googleSearchXing(company.Name))
-	qw422016.N().S(`" class="card__links-link card__links-link--google">
+	qw422016.N().S(`" target="_blank" class="card__links-link card__links-link--google">
 					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
 				</a>
 			</li>
@@ -985,7 +1021,7 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 				<span class="button-link card__links-link">Y Combinator</span>
 				<a href="`)
 		qw422016.E().S(googleSearchYCombinator(company.Name))
-		qw422016.N().S(`" class="card__links-link card__links-link--google">
+		qw422016.N().S(`" target="_blank" class="card__links-link card__links-link--google">
 					<img class="card__links-icon--google" alt="google icon" width="20" height="20" src="/assets/images/pages/organizer/google.svg">
 				</a>
 			</li>
@@ -996,7 +1032,7 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 				<img class="card__links-icon" alt="Y Combinator icon" width="20" height="20" src="/assets/images/pages/organizer/y-combinator.png" />
 				<a href="`)
 		qw422016.E().S(company.YCombinatorURL)
-		qw422016.N().S(`" class="button-link card__links-link">Y Combinator</a>
+		qw422016.N().S(`" target="_blank" class="button-link card__links-link">Y Combinator</a>
 			</li>
 			`)
 	}
@@ -1007,7 +1043,7 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 </section>
 <section class="company-vacancies">
 	<div class="container company-vacancies__container">
-		<h2 class="company-statistics__headline">Vacancies</h2>
+		<h2 class="company-statistics__headline">Jobs</h2>
 		`)
 	qw422016.N().S(`
 		<div class="vacancies__list">
@@ -1019,6 +1055,7 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 		qw422016.N().DL(vacancy.ID)
 		qw422016.N().S(`"
 				>
+					<div class="card__vacancy">
 					<aside class="card__action">
 						`)
 		if userVacancyFavoriteMap[vacancy.ID] {
@@ -1050,20 +1087,22 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 						<div class="card__image-overlay">
 							<img class="card__image"
 								alt="card image preview icon"
-								src="/assets/images/pages/common-images/unknown.svg"
+								src="`)
+		qw422016.E().S(logo(company.Logo))
+		qw422016.N().S(`"
 							/>
 						</div>
 						<figcaption class="card__header-caption">
-							<a href="/organizers/v/`)
+							<a href="/v/`)
 		qw422016.N().DL(vacancy.ID)
-		qw422016.N().S(`" class="card__headline vacancy__link">`)
+		qw422016.N().S(`" target="_blank" class="card__headline">`)
 		qw422016.E().S(vacancy.Title)
 		qw422016.N().S(`</a>
-							<a href="/organizers/`)
+							<a href="/`)
 		qw422016.E().S(organizerFeature.Organizer.Alias)
 		qw422016.N().S(`/companies/`)
 		qw422016.E().S(vacancy.Company.Alias)
-		qw422016.N().S(`" class="card__sub-headline vacancy__link">`)
+		qw422016.N().S(`" class="card__sub-headline">`)
 		qw422016.E().S(vacancy.Company.Name)
 		qw422016.N().S(`</a>
 						</figcaption>
@@ -1098,9 +1137,9 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 		qw422016.N().S(`</figcaption>
 							</figure>
 						</div>
-						<a href="/organizers/v/`)
+						<a href="/v/`)
 		qw422016.N().DL(vacancy.ID)
-		qw422016.N().S(`" class="button button--bordered-gray button--gap-images">
+		qw422016.N().S(`" target="_blank" class="button button--bordered-gray button--gap-images">
 							`)
 		if isLinkedInVacancyURL(vacancy.URL) {
 			qw422016.N().S(`
@@ -1122,6 +1161,16 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 									class="hero__button-icon"
 								/>
 							`)
+		} else if isIndeedVacancyURL(vacancy.URL) {
+			qw422016.N().S(`
+								<img
+									width="20"
+									height="20"
+									src="/assets/images/pages/organizer/indeed.png"
+									alt="indeed logo"
+									class="hero__button-icon"
+								/>
+							`)
 		}
 		qw422016.N().S(`
 							View source
@@ -1133,6 +1182,7 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 								class="hero__button-icon"
 							/>
 						</a>
+					</div>
 					</div>
 				</div>
 			`)
@@ -1196,12 +1246,13 @@ func StreamOrganizersCompanyV2(qw422016 *qt422016.Writer,
 
 </main>
 `)
-	streamorganizersFooter(qw422016)
+	streamorganizersFooterV1(qw422016)
 	qw422016.N().S(`
 <script src="/assets/js/organizers-company-app.js?`)
 	qw422016.N().D(appVersion)
 	qw422016.N().S(`"></script>
 </body>
+
 </html>
 `)
 }
