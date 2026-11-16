@@ -66,8 +66,6 @@ That side project grew into ReadyToTouch.
 - [Scala Jobs](https://scalajobs.com/)
 - [Elixir Forum — Jobs](https://elixirforum.com/c/work/elixir-jobs/16)
 - [OCaml Jobs](https://ocaml.org/jobs)
-- [Awesome Functional Programming Jobs](https://github.com/ad-si/awesome-fp-jobs)
-- [Hacker News "Who is hiring" by technology](https://hnhiring.com/)
 
 ## Articles
 

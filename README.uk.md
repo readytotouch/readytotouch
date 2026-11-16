@@ -68,8 +68,6 @@
 - [Scala Jobs](https://scalajobs.com/)
 - [Elixir Forum — Jobs](https://elixirforum.com/c/work/elixir-jobs/16)
 - [OCaml Jobs](https://ocaml.org/jobs)
-- [Awesome Functional Programming Jobs](https://github.com/ad-si/awesome-fp-jobs)
-- [Hacker News "Who is hiring" за технологіями](https://hnhiring.com/)
 
 ## Статті
 
