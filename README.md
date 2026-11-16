@@ -41,32 +41,32 @@ That side project grew into ReadyToTouch.
 ## Articles
 
 **Go**
-- Reddit | [Job-focused list of product companies using Go in production — 2026](https://www.reddit.com/r/golang/comments/1rjvskv/)
+- Reddit | [Job-focused list of product companies using Go in production — 2026](https://github.com/YaroslavPodorvanov/YaroslavPodorvanovContentArchive/blob/main/raw/reddit/r_golang/1rjvskv.md)
 - Forum | [Job-focused list of product companies using Go in production](https://forum.golangbridge.org/t/job-focused-list-of-product-companies-using-go-in-production-readytotouch/41674)
-- Reddit | [Job-oriented list of companies using Go in production — now mobile-friendly](https://www.reddit.com/r/golang/comments/1qegiyy/)
-- Reddit | [My list of companies that use Golang 2.0](https://www.reddit.com/r/golang/comments/1ixglek/)
-- Reddit | [My list of companies that use Golang](https://www.reddit.com/r/golang/comments/1fjbp1p/)
+- Reddit | [Job-oriented list of companies using Go in production — now mobile-friendly](https://github.com/YaroslavPodorvanov/YaroslavPodorvanovContentArchive/blob/main/raw/reddit/r_golang/1qegiyy.md)
+- Reddit | [My list of companies that use Golang 2.0](https://github.com/YaroslavPodorvanov/YaroslavPodorvanovContentArchive/blob/main/raw/reddit/r_golang/1ixglek.md)
+- Reddit | [My list of companies that use Golang](https://github.com/YaroslavPodorvanov/YaroslavPodorvanovContentArchive/blob/main/raw/reddit/r_golang/1fjbp1p.md)
 
 **Rust**
-- Reddit | [Job-focused list of product companies using Rust in production — 2026](https://www.reddit.com/r/rust/comments/1rrnxfh/)
+- Reddit | [Job-focused list of product companies using Rust in production — 2026](https://github.com/YaroslavPodorvanov/YaroslavPodorvanovContentArchive/blob/main/raw/reddit/r_rust/1rrnxfh.md)
 - Forum | [Job-focused list of product companies using Rust in production](https://users.rust-lang.org/t/job-focused-list-of-product-companies-using-rust-in-production-2026-readytotouch/138847)
-- Reddit | [Job-oriented list of companies using Rust in production — now mobile-friendly](https://www.reddit.com/r/rust/comments/1qcalnt/)
-- Reddit | [My list of companies that use Rust](https://www.reddit.com/r/rust/comments/1jg4rrl/)
+- Reddit | [Job-oriented list of companies using Rust in production — now mobile-friendly](https://github.com/YaroslavPodorvanov/YaroslavPodorvanovContentArchive/blob/main/raw/reddit/r_rust/1qcalnt.md)
+- Reddit | [My list of companies that use Rust](https://github.com/YaroslavPodorvanov/YaroslavPodorvanovContentArchive/blob/main/raw/reddit/r_rust/1jg4rrl.md)
 - Forum | [My list of companies that use Rust](https://users.rust-lang.org/t/my-list-of-companies-that-use-rust/127300)
 
 **Scala**
-- Reddit | [Job-focused list of product companies using Scala in production — 2026](https://www.reddit.com/r/scala/comments/1s4dm9b/)
+- Reddit | [Job-focused list of product companies using Scala in production — 2026](https://github.com/YaroslavPodorvanov/YaroslavPodorvanovContentArchive/blob/main/raw/reddit/r_scala/1s4dm9b.md)
 - Forum | [Job-focused list of product companies using Scala in production](https://users.scala-lang.org/t/job-focused-list-of-product-companies-using-scala-in-production-2026-readytotouch/12240)
 
 **Elixir**
-- Reddit | [Job-focused list of product companies using Elixir in production — 2026](https://www.reddit.com/r/elixir/comments/1ryuz4g/)
+- Reddit | [Job-focused list of product companies using Elixir in production — 2026](https://github.com/YaroslavPodorvanov/YaroslavPodorvanovContentArchive/blob/main/raw/reddit/r_elixir/1ryuz4g.md)
 - Forum | [Job-focused list of product companies using Elixir in production](https://elixirforum.com/t/job-focused-list-of-product-companies-using-elixir-in-production/74728)
 
 **Clojure**
-- Reddit | [Job-focused list of product companies using Clojure in production — 2026](https://www.reddit.com/r/Clojure/comments/1s7nocv/)
+- Reddit | [Job-focused list of product companies using Clojure in production — 2026](https://github.com/YaroslavPodorvanov/YaroslavPodorvanovContentArchive/blob/main/raw/reddit/r_Clojure/1s7nocv.md)
 
 **OCaml**
-- Reddit | [I maintain job-focused lists of product companies for Go/Rust/Scala/Elixir — should I add OCaml?](https://www.reddit.com/r/ocaml/comments/1rkjy32/)
+- Reddit | [I maintain job-focused lists of product companies for Go/Rust/Scala/Elixir — should I add OCaml?](https://github.com/YaroslavPodorvanov/YaroslavPodorvanovContentArchive/blob/main/raw/reddit/r_ocaml/1rkjy32.md)
 
 ## Analytics
 - https://readytotouch.com/plausible
