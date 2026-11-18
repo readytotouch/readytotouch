@@ -1,0 +1,36 @@
+name: Dependencies
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    paths:
+      - "go.mod"
+      - "go.sum"
+      - ".github/workflows/dependencies.yml"
+  schedule:
+    # New vulnerabilities are published without any change in the code
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  dependencies:
+    name: Go dependencies security
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v7
+
+      # The latest patch release of the Go version from go.mod, so the standard library fixes are included
+      - name: Setup Go
+        uses: actions/setup-go@v7
+        with:
+          go-version-file: go.mod
+          check-latest: true
+
+      - name: Verify and scan dependencies
+        run: make deps-check

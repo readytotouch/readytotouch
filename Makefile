@@ -187,6 +187,45 @@ generate-companies-markdown:
 review-logos:
 	go run ./cmd/organizers/review-logos/main.go
 
+# Go dependencies security. Requires Go and jq on the host.
+# https://go.dev/doc/security/vuln/
+GOVULNCHECK_VERSION ?= v1.10.0
+GOVULNCHECK = go run golang.org/x/vuln/cmd/govulncheck@$(GOVULNCHECK_VERSION)
+
+# Ignore a local (git-ignored) vendor directory: check go.mod, not a possibly stale copy of the dependencies
+deps-%: export GOFLAGS := -mod=mod
+
+# go.mod and go.sum are consistent with the code and with the downloaded modules
+deps-verify:
+	go mod verify
+	go mod tidy -diff
+
+# Fails if a reachable vulnerability is found (including the Go standard library)
+deps-vulncheck:
+	$(GOVULNCHECK) ./...
+
+# Direct dependencies which have newer versions
+deps-outdated:
+	go list -u -m -f '{{if and .Update (not .Indirect)}}{{.Path}} {{.Version}} -> {{.Update.Version}}{{end}}' all
+
+deps-check: deps-verify deps-vulncheck
+
+# Updates only vulnerable modules to the minimal fixed version, review `git diff` afterwards
+deps-update-security:
+	GOVULNCHECK="$(GOVULNCHECK)" ./scripts/deps/update-security.sh
+
+# Patch versions only, the lowest risk of breaking changes
+deps-update-patch:
+	go get -u=patch ./...
+	go mod tidy
+	go build ./...
+
+# Minor versions too, run the tests and review `git diff` afterwards
+deps-update-all:
+	go get -u ./...
+	go mod tidy
+	go build ./...
+
 # make rust-companies > ./datasync/github.com/readytotouch/readytotouch/companies.txt
 # VERIFIED=true make rust-companies > ./datasync/github.com/readytotouch/readytotouch/verified-companies.txt
 # VERIFIED=true GITHUB=true make rust-companies > ./datasync/github.com/readytotouch/readytotouch/verified-companies-format-github.txt
