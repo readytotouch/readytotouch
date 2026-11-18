@@ -197,6 +197,66 @@ func (q *Queries) UserSocialProfileChangeHistoryNew(ctx context.Context, arg Use
 	return err
 }
 
+const userSocialProfileCreate = `-- name: UserSocialProfileCreate :one
+WITH existing_user AS (
+    SELECT usp.user_id AS id
+    FROM user_social_profiles usp
+    WHERE usp.email = LOWER($1)
+      AND usp.deleted_at IS NULL
+    ORDER BY usp.id DESC
+    LIMIT 1
+),
+new_user AS (
+    INSERT INTO users (created_at, updated_at)
+    SELECT $2, $2
+    WHERE NOT EXISTS (SELECT 1 FROM existing_user)
+    RETURNING id
+),
+target_user AS (
+    SELECT id FROM existing_user
+    UNION ALL
+    SELECT id FROM new_user
+),
+new_profile AS (
+    INSERT INTO user_social_profiles (user_id, social_provider, social_provider_user_id, email, username, name, created_at, updated_at)
+    SELECT target_user.id, $3, $4, $1, $5, $6, $2, $2
+    FROM target_user
+    RETURNING id, user_id
+),
+new_history AS (
+    INSERT INTO user_social_profile_change_history (user_id, user_social_profile_id, email, username, name, created_at)
+    SELECT new_profile.user_id, new_profile.id, $1, $5, $6, $2
+    FROM new_profile
+)
+SELECT np.user_id::BIGINT AS user_id
+FROM new_profile np
+`
+
+type UserSocialProfileCreateParams struct {
+	Email                string
+	CreatedAt            time.Time
+	SocialProvider       SocialProvider
+	SocialProviderUserID string
+	Username             string
+	Name                 string
+}
+
+// Creates a social profile with its change history. The profile is linked to the existing user
+// with the same email, or to a new user if there is none.
+func (q *Queries) UserSocialProfileCreate(ctx context.Context, arg UserSocialProfileCreateParams) (int64, error) {
+	row := q.queryRow(ctx, q.userSocialProfileCreateStmt, userSocialProfileCreate,
+		arg.Email,
+		arg.CreatedAt,
+		arg.SocialProvider,
+		arg.SocialProviderUserID,
+		arg.Username,
+		arg.Name,
+	)
+	var user_id int64
+	err := row.Scan(&user_id)
+	return user_id, err
+}
+
 const userSocialProfileGetByID = `-- name: UserSocialProfileGetByID :one
 SELECT usp.id, usp.user_id, usp.email, usp.username, usp.name
 FROM user_social_profiles usp
@@ -232,53 +292,6 @@ func (q *Queries) UserSocialProfileGetByID(ctx context.Context, arg UserSocialPr
 	return i, err
 }
 
-const userSocialProfileGetUserByEmail = `-- name: UserSocialProfileGetUserByEmail :one
-SELECT usp.user_id
-FROM user_social_profiles usp
-WHERE usp.email = LOWER($1)
-  AND usp.deleted_at IS NULL
-ORDER BY usp.id DESC
-LIMIT 1
-`
-
-func (q *Queries) UserSocialProfileGetUserByEmail(ctx context.Context, email string) (int64, error) {
-	row := q.queryRow(ctx, q.userSocialProfileGetUserByEmailStmt, userSocialProfileGetUserByEmail, email)
-	var user_id int64
-	err := row.Scan(&user_id)
-	return user_id, err
-}
-
-const userSocialProfileNew = `-- name: UserSocialProfileNew :one
-INSERT INTO user_social_profiles (user_id, social_provider, social_provider_user_id, email, username, name, created_at, updated_at)
-VALUES ($1, $2, $3, $4, $5, $6, $7, $7)
-RETURNING id
-`
-
-type UserSocialProfileNewParams struct {
-	UserID               int64
-	SocialProvider       SocialProvider
-	SocialProviderUserID string
-	Email                string
-	Username             string
-	Name                 string
-	CreatedAt            time.Time
-}
-
-func (q *Queries) UserSocialProfileNew(ctx context.Context, arg UserSocialProfileNewParams) (int64, error) {
-	row := q.queryRow(ctx, q.userSocialProfileNewStmt, userSocialProfileNew,
-		arg.UserID,
-		arg.SocialProvider,
-		arg.SocialProviderUserID,
-		arg.Email,
-		arg.Username,
-		arg.Name,
-		arg.CreatedAt,
-	)
-	var id int64
-	err := row.Scan(&id)
-	return id, err
-}
-
 const userSocialProfileUpdate = `-- name: UserSocialProfileUpdate :exec
 UPDATE user_social_profiles
 SET email      = LOWER($1),
@@ -305,19 +318,6 @@ func (q *Queries) UserSocialProfileUpdate(ctx context.Context, arg UserSocialPro
 		arg.ID,
 	)
 	return err
-}
-
-const usersNew = `-- name: UsersNew :one
-INSERT INTO users (created_at, updated_at)
-VALUES ($1, $1)
-RETURNING id
-`
-
-func (q *Queries) UsersNew(ctx context.Context, createdAt time.Time) (int64, error) {
-	row := q.queryRow(ctx, q.usersNewStmt, usersNew, createdAt)
-	var id int64
-	err := row.Scan(&id)
-	return id, err
 }
 
 const usersUpdate = `-- name: UsersUpdate :exec

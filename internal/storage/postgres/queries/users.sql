@@ -1,8 +1,3 @@
--- name: UsersNew :one
-INSERT INTO users (created_at, updated_at)
-VALUES (@created_at, @created_at)
-RETURNING id;
-
 -- name: UsersUpdate :exec
 UPDATE users
 SET updated_at = @updated_at
@@ -16,18 +11,41 @@ WHERE usp.social_provider = @social_provider
   AND usp.deleted_at IS NULL
     FOR UPDATE;
 
--- name: UserSocialProfileGetUserByEmail :one
-SELECT usp.user_id
-FROM user_social_profiles usp
-WHERE usp.email = LOWER(@email)
-  AND usp.deleted_at IS NULL
-ORDER BY usp.id DESC
-LIMIT 1;
-
--- name: UserSocialProfileNew :one
-INSERT INTO user_social_profiles (user_id, social_provider, social_provider_user_id, email, username, name, created_at, updated_at)
-VALUES (@user_id, @social_provider, @social_provider_user_id, @email, @username, @name, @created_at, @created_at)
-RETURNING id;
+-- name: UserSocialProfileCreate :one
+-- Creates a social profile with its change history. The profile is linked to the existing user
+-- with the same email, or to a new user if there is none.
+WITH existing_user AS (
+    SELECT usp.user_id AS id
+    FROM user_social_profiles usp
+    WHERE usp.email = LOWER(@email)
+      AND usp.deleted_at IS NULL
+    ORDER BY usp.id DESC
+    LIMIT 1
+),
+new_user AS (
+    INSERT INTO users (created_at, updated_at)
+    SELECT @created_at, @created_at
+    WHERE NOT EXISTS (SELECT 1 FROM existing_user)
+    RETURNING id
+),
+target_user AS (
+    SELECT id FROM existing_user
+    UNION ALL
+    SELECT id FROM new_user
+),
+new_profile AS (
+    INSERT INTO user_social_profiles (user_id, social_provider, social_provider_user_id, email, username, name, created_at, updated_at)
+    SELECT target_user.id, @social_provider, @social_provider_user_id, @email, @username, @name, @created_at, @created_at
+    FROM target_user
+    RETURNING id, user_id
+),
+new_history AS (
+    INSERT INTO user_social_profile_change_history (user_id, user_social_profile_id, email, username, name, created_at)
+    SELECT new_profile.user_id, new_profile.id, @email, @username, @name, @created_at
+    FROM new_profile
+)
+SELECT np.user_id::BIGINT AS user_id
+FROM new_profile np;
 
 -- name: UserSocialProfileUpdate :exec
 UPDATE user_social_profiles

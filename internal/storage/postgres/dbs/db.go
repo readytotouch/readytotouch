@@ -129,14 +129,11 @@ func Prepare(ctx context.Context, db DBTX) (*Queries, error) {
 	if q.userSocialProfileChangeHistoryNewStmt, err = db.PrepareContext(ctx, userSocialProfileChangeHistoryNew); err != nil {
 		return nil, fmt.Errorf("error preparing query UserSocialProfileChangeHistoryNew: %w", err)
 	}
+	if q.userSocialProfileCreateStmt, err = db.PrepareContext(ctx, userSocialProfileCreate); err != nil {
+		return nil, fmt.Errorf("error preparing query UserSocialProfileCreate: %w", err)
+	}
 	if q.userSocialProfileGetByIDStmt, err = db.PrepareContext(ctx, userSocialProfileGetByID); err != nil {
 		return nil, fmt.Errorf("error preparing query UserSocialProfileGetByID: %w", err)
-	}
-	if q.userSocialProfileGetUserByEmailStmt, err = db.PrepareContext(ctx, userSocialProfileGetUserByEmail); err != nil {
-		return nil, fmt.Errorf("error preparing query UserSocialProfileGetUserByEmail: %w", err)
-	}
-	if q.userSocialProfileNewStmt, err = db.PrepareContext(ctx, userSocialProfileNew); err != nil {
-		return nil, fmt.Errorf("error preparing query UserSocialProfileNew: %w", err)
 	}
 	if q.userSocialProfileUpdateStmt, err = db.PrepareContext(ctx, userSocialProfileUpdate); err != nil {
 		return nil, fmt.Errorf("error preparing query UserSocialProfileUpdate: %w", err)
@@ -146,9 +143,6 @@ func Prepare(ctx context.Context, db DBTX) (*Queries, error) {
 	}
 	if q.userVacancyViewHourlyStatsUpsertStmt, err = db.PrepareContext(ctx, userVacancyViewHourlyStatsUpsert); err != nil {
 		return nil, fmt.Errorf("error preparing query UserVacancyViewHourlyStatsUpsert: %w", err)
-	}
-	if q.usersNewStmt, err = db.PrepareContext(ctx, usersNew); err != nil {
-		return nil, fmt.Errorf("error preparing query UsersNew: %w", err)
 	}
 	if q.usersUpdateStmt, err = db.PrepareContext(ctx, usersUpdate); err != nil {
 		return nil, fmt.Errorf("error preparing query UsersUpdate: %w", err)
@@ -363,19 +357,14 @@ func (q *Queries) Close() error {
 			err = fmt.Errorf("error closing userSocialProfileChangeHistoryNewStmt: %w", cerr)
 		}
 	}
+	if q.userSocialProfileCreateStmt != nil {
+		if cerr := q.userSocialProfileCreateStmt.Close(); cerr != nil {
+			err = fmt.Errorf("error closing userSocialProfileCreateStmt: %w", cerr)
+		}
+	}
 	if q.userSocialProfileGetByIDStmt != nil {
 		if cerr := q.userSocialProfileGetByIDStmt.Close(); cerr != nil {
 			err = fmt.Errorf("error closing userSocialProfileGetByIDStmt: %w", cerr)
-		}
-	}
-	if q.userSocialProfileGetUserByEmailStmt != nil {
-		if cerr := q.userSocialProfileGetUserByEmailStmt.Close(); cerr != nil {
-			err = fmt.Errorf("error closing userSocialProfileGetUserByEmailStmt: %w", cerr)
-		}
-	}
-	if q.userSocialProfileNewStmt != nil {
-		if cerr := q.userSocialProfileNewStmt.Close(); cerr != nil {
-			err = fmt.Errorf("error closing userSocialProfileNewStmt: %w", cerr)
 		}
 	}
 	if q.userSocialProfileUpdateStmt != nil {
@@ -391,11 +380,6 @@ func (q *Queries) Close() error {
 	if q.userVacancyViewHourlyStatsUpsertStmt != nil {
 		if cerr := q.userVacancyViewHourlyStatsUpsertStmt.Close(); cerr != nil {
 			err = fmt.Errorf("error closing userVacancyViewHourlyStatsUpsertStmt: %w", cerr)
-		}
-	}
-	if q.usersNewStmt != nil {
-		if cerr := q.usersNewStmt.Close(); cerr != nil {
-			err = fmt.Errorf("error closing usersNewStmt: %w", cerr)
 		}
 	}
 	if q.usersUpdateStmt != nil {
@@ -527,13 +511,11 @@ type Queries struct {
 	userOnlineHourlyStatsUpsertStmt                      *sql.Stmt
 	userRegistrationDailyCountStatsStmt                  *sql.Stmt
 	userSocialProfileChangeHistoryNewStmt                *sql.Stmt
+	userSocialProfileCreateStmt                          *sql.Stmt
 	userSocialProfileGetByIDStmt                         *sql.Stmt
-	userSocialProfileGetUserByEmailStmt                  *sql.Stmt
-	userSocialProfileNewStmt                             *sql.Stmt
 	userSocialProfileUpdateStmt                          *sql.Stmt
 	userVacancyViewDailyStatsUpsertStmt                  *sql.Stmt
 	userVacancyViewHourlyStatsUpsertStmt                 *sql.Stmt
-	usersNewStmt                                         *sql.Stmt
 	usersUpdateStmt                                      *sql.Stmt
 	vacancyViewDailyStatsUpsertStmt                      *sql.Stmt
 	vacancyViewStatsStmt                                 *sql.Stmt
@@ -586,13 +568,11 @@ func (q *Queries) WithTx(tx *sql.Tx) *Queries {
 		userOnlineHourlyStatsUpsertStmt:                      q.userOnlineHourlyStatsUpsertStmt,
 		userRegistrationDailyCountStatsStmt:                  q.userRegistrationDailyCountStatsStmt,
 		userSocialProfileChangeHistoryNewStmt:                q.userSocialProfileChangeHistoryNewStmt,
+		userSocialProfileCreateStmt:                          q.userSocialProfileCreateStmt,
 		userSocialProfileGetByIDStmt:                         q.userSocialProfileGetByIDStmt,
-		userSocialProfileGetUserByEmailStmt:                  q.userSocialProfileGetUserByEmailStmt,
-		userSocialProfileNewStmt:                             q.userSocialProfileNewStmt,
 		userSocialProfileUpdateStmt:                          q.userSocialProfileUpdateStmt,
 		userVacancyViewDailyStatsUpsertStmt:                  q.userVacancyViewDailyStatsUpsertStmt,
 		userVacancyViewHourlyStatsUpsertStmt:                 q.userVacancyViewHourlyStatsUpsertStmt,
-		usersNewStmt:                                         q.usersNewStmt,
 		usersUpdateStmt:                                      q.usersUpdateStmt,
 		vacancyViewDailyStatsUpsertStmt:                      q.vacancyViewDailyStatsUpsertStmt,
 		vacancyViewStatsStmt:                                 q.vacancyViewStatsStmt,

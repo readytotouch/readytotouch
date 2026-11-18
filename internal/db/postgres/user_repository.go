@@ -53,7 +53,14 @@ func (r *UserRepository) Create(ctx context.Context, params *domain.SocialProvid
 
 			return r.update(ctx, queries, params, prev, createdAt)
 		case sql.ErrNoRows:
-			id, err := r.create(ctx, queries, params, createdAt)
+			id, err := queries.UserSocialProfileCreate(ctx, dbs.UserSocialProfileCreateParams{
+				Email:                params.Email,
+				CreatedAt:            createdAt,
+				SocialProvider:       dbs.SocialProvider(params.SocialProvider),
+				SocialProviderUserID: params.SocialProviderUserID,
+				Username:             params.Username,
+				Name:                 params.Name,
+			})
 			if err != nil {
 				return err
 			}
@@ -155,62 +162,6 @@ func (r *UserRepository) update(ctx context.Context, queries *dbs.Queries, param
 	err = queries.UserSocialProfileChangeHistoryNew(ctx, dbs.UserSocialProfileChangeHistoryNewParams{
 		UserID:              prev.UserID,
 		UserSocialProfileID: prev.ID,
-		Email:               params.Email,
-		Username:            params.Username,
-		Name:                params.Name,
-		CreatedAt:           now,
-	})
-	if err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func (r *UserRepository) create(ctx context.Context, queries *dbs.Queries, params *domain.SocialProviderUserCreateParams, now time.Time) (int64, error) {
-	userID, err := queries.UserSocialProfileGetUserByEmail(ctx, params.Email)
-	switch err {
-	case nil:
-		err = r.createUserSocialProfile(ctx, queries, userID, params, now)
-		if err != nil {
-			return 0, err
-		}
-
-		return userID, nil
-	case sql.ErrNoRows:
-		userID, err = queries.UsersNew(ctx, now)
-		if err != nil {
-			return 0, err
-		}
-
-		err = r.createUserSocialProfile(ctx, queries, userID, params, now)
-		if err != nil {
-			return 0, err
-		}
-
-		return userID, nil
-	default:
-		return 0, err
-	}
-}
-
-func (r *UserRepository) createUserSocialProfile(ctx context.Context, queries *dbs.Queries, userID int64, params *domain.SocialProviderUserCreateParams, now time.Time) error {
-	userSocialProfileID, err := queries.UserSocialProfileNew(ctx, dbs.UserSocialProfileNewParams{
-		UserID:               userID,
-		SocialProvider:       dbs.SocialProvider(params.SocialProvider),
-		SocialProviderUserID: params.SocialProviderUserID,
-		Email:                params.Email,
-		Username:             params.Username,
-		Name:                 params.Name,
-		CreatedAt:            now,
-	})
-	if err != nil {
-		return err
-	}
-
-	err = queries.UserSocialProfileChangeHistoryNew(ctx, dbs.UserSocialProfileChangeHistoryNewParams{
-		UserID:              userID,
-		UserSocialProfileID: userSocialProfileID,
 		Email:               params.Email,
 		Username:            params.Username,
 		Name:                params.Name,
