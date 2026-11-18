@@ -2,8 +2,6 @@ package postgres
 
 import (
 	"context"
-	"database/sql"
-	"strings"
 	"time"
 
 	"github.com/readytotouch/readytotouch/internal/domain"
@@ -37,46 +35,17 @@ func (r *UserRepository) SocialUserProfilesByUser(ctx context.Context, id int64)
 	return result, nil
 }
 
+// Create signs in the social profile: creates it (and the user if needed) or updates it if it has changed.
+// It is a single statement, so it is atomic and does not need an explicit transaction.
 func (r *UserRepository) Create(ctx context.Context, params *domain.SocialProviderUserCreateParams, createdAt time.Time) (int64, error) {
-	var (
-		userID int64
-	)
-
-	txErr := r.db.WithTransaction(ctx, func(queries *dbs.Queries) error {
-		prev, err := queries.UserSocialProfileGetByID(ctx, dbs.UserSocialProfileGetByIDParams{
-			SocialProvider:       dbs.SocialProvider(params.SocialProvider),
-			SocialProviderUserID: params.SocialProviderUserID,
-		})
-		switch err {
-		case nil:
-			userID = prev.UserID
-
-			return r.update(ctx, queries, params, prev, createdAt)
-		case sql.ErrNoRows:
-			id, err := queries.UserSocialProfileCreate(ctx, dbs.UserSocialProfileCreateParams{
-				Email:                params.Email,
-				CreatedAt:            createdAt,
-				SocialProvider:       dbs.SocialProvider(params.SocialProvider),
-				SocialProviderUserID: params.SocialProviderUserID,
-				Username:             params.Username,
-				Name:                 params.Name,
-			})
-			if err != nil {
-				return err
-			}
-
-			userID = id
-
-			return nil
-		default:
-			return err
-		}
+	return r.db.Queries().UserSocialProfileUpsert(ctx, dbs.UserSocialProfileUpsertParams{
+		SocialProvider:       dbs.SocialProvider(params.SocialProvider),
+		SocialProviderUserID: params.SocialProviderUserID,
+		Email:                params.Email,
+		Username:             params.Username,
+		Name:                 params.Name,
+		CreatedAt:            createdAt,
 	})
-	if txErr != nil {
-		return 0, txErr
-	}
-
-	return userID, nil
 }
 
 func (r *UserRepository) RegistrationDailyCountStats(
@@ -123,53 +92,4 @@ func (r *UserRepository) SocialUserProfiles(ctx context.Context, socialProviders
 		}
 	}
 	return result, nil
-}
-
-func (r *UserRepository) update(ctx context.Context, queries *dbs.Queries, params *domain.SocialProviderUserCreateParams, prev dbs.UserSocialProfileGetByIDRow, now time.Time) error {
-	sensitivitySame := strings.EqualFold(params.Email, prev.Email) &&
-		params.Username == prev.Username &&
-		params.Name == prev.Name
-	if sensitivitySame {
-		return nil
-	}
-
-	err := queries.UserSocialProfileUpdate(ctx, dbs.UserSocialProfileUpdateParams{
-		Email:     params.Email,
-		Username:  params.Username,
-		Name:      params.Name,
-		UpdatedAt: now,
-		ID:        prev.ID,
-	})
-	if err != nil {
-		return err
-	}
-
-	err = queries.UsersUpdate(ctx, dbs.UsersUpdateParams{
-		UpdatedAt: now,
-		ID:        prev.UserID,
-	})
-	if err != nil {
-		return err
-	}
-
-	insensitivitySame := strings.EqualFold(params.Email, prev.Email) &&
-		strings.EqualFold(params.Username, prev.Username) &&
-		strings.EqualFold(params.Name, prev.Name)
-	if insensitivitySame {
-		return nil
-	}
-
-	err = queries.UserSocialProfileChangeHistoryNew(ctx, dbs.UserSocialProfileChangeHistoryNewParams{
-		UserID:              prev.UserID,
-		UserSocialProfileID: prev.ID,
-		Email:               params.Email,
-		Username:            params.Username,
-		Name:                params.Name,
-		CreatedAt:           now,
-	})
-	if err != nil {
-		return err
-	}
-
-	return nil
 }
