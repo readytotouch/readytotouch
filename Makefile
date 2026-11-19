@@ -36,6 +36,22 @@ pg-fixtures:
 	cat ./fixtures/postgres/companies.sql | docker exec -i readytotouch_postgres_db psql -d yaaws -U yaaws_user
 	cat ./fixtures/postgres/vacancies.sql | docker exec -i readytotouch_postgres_db psql -d yaaws -U yaaws_user
 
+# Read-only statistics of the database, see scripts/pg-stats.sh
+pg-stats:
+	./scripts/pg-stats.sh
+
+pg-stats-size:
+	./scripts/pg-stats.sh size
+
+pg-stats-tables:
+	./scripts/pg-stats.sh tables
+
+pg-stats-users:
+	./scripts/pg-stats.sh users
+
+pg-stats-wip-linkedin:
+	./scripts/pg-stats.sh wip-linkedin
+
 env-down:
 	docker compose -f docker-compose.yml --env-file .env down
 
