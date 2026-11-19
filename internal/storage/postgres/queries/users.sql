@@ -1,8 +1,4 @@
 -- name: UserSocialProfileUpsert :one
--- Signs in a social profile and returns the user ID, in a single statement:
---   * the profile exists: updates it (and records the history) only if it has changed;
---   * the profile does not exist: creates it and its history, linked to the existing user
---     with the same email, or to a new user if there is none.
 WITH prev AS (
     SELECT usp.id, usp.user_id, usp.email, usp.username, usp.name
     FROM user_social_profiles usp
@@ -21,27 +17,27 @@ changed AS (
 ),
 updated_profile AS (
     UPDATE user_social_profiles
-        SET email      = LOWER(@email::VARCHAR),
-            username   = @username::VARCHAR,
-            name       = @name::VARCHAR,
-            updated_at = @created_at
-        FROM changed
-        WHERE user_social_profiles.id = changed.id
+    SET email      = LOWER(@email::VARCHAR),
+        username   = @username::VARCHAR,
+        name       = @name::VARCHAR,
+        updated_at = @created_at
+    FROM changed
+    WHERE user_social_profiles.id = changed.id
 ),
 updated_user AS (
-    UPDATE users
-        SET updated_at = @created_at
-        FROM changed
-        WHERE users.id = changed.user_id
+    UPDATE users AS t
+    SET updated_at = @created_at
+    FROM changed
+    WHERE t.id = changed.user_id
 ),
 updated_history AS (
     -- the history is not written if only the case has changed
     INSERT INTO user_social_profile_change_history (user_id, user_social_profile_id, email, username, name, created_at)
-        SELECT changed.user_id, changed.id, @email::VARCHAR, @username::VARCHAR, @name::VARCHAR, @created_at
-        FROM changed
-        WHERE LOWER(changed.email) IS DISTINCT FROM LOWER(@email::VARCHAR)
-           OR LOWER(changed.username) IS DISTINCT FROM LOWER(@username::VARCHAR)
-           OR LOWER(changed.name) IS DISTINCT FROM LOWER(@name::VARCHAR)
+    SELECT changed.user_id, changed.id, @email::VARCHAR, @username::VARCHAR, @name::VARCHAR, @created_at
+    FROM changed
+    WHERE LOWER(changed.email) IS DISTINCT FROM LOWER(@email::VARCHAR)
+       OR LOWER(changed.username) IS DISTINCT FROM LOWER(@username::VARCHAR)
+       OR LOWER(changed.name) IS DISTINCT FROM LOWER(@name::VARCHAR)
 ),
 existing_user AS (
     SELECT usp.user_id AS id
@@ -54,10 +50,10 @@ existing_user AS (
 ),
 new_user AS (
     INSERT INTO users (created_at, updated_at)
-        SELECT @created_at, @created_at
-        WHERE NOT EXISTS (SELECT 1 FROM prev)
-          AND NOT EXISTS (SELECT 1 FROM existing_user)
-        RETURNING id
+    SELECT @created_at, @created_at
+    WHERE NOT EXISTS (SELECT 1 FROM prev)
+      AND NOT EXISTS (SELECT 1 FROM existing_user)
+    RETURNING id
 ),
 target_user AS (
     SELECT id FROM existing_user
@@ -66,14 +62,14 @@ target_user AS (
 ),
 new_profile AS (
     INSERT INTO user_social_profiles (user_id, social_provider, social_provider_user_id, email, username, name, created_at, updated_at)
-        SELECT target_user.id, @social_provider, @social_provider_user_id, @email::VARCHAR, @username::VARCHAR, @name::VARCHAR, @created_at, @created_at
-        FROM target_user
-        RETURNING id, user_id
+    SELECT target_user.id, @social_provider, @social_provider_user_id, @email::VARCHAR, @username::VARCHAR, @name::VARCHAR, @created_at, @created_at
+    FROM target_user
+    RETURNING id, user_id
 ),
 new_history AS (
     INSERT INTO user_social_profile_change_history (user_id, user_social_profile_id, email, username, name, created_at)
-        SELECT new_profile.user_id, new_profile.id, @email::VARCHAR, @username::VARCHAR, @name::VARCHAR, @created_at
-        FROM new_profile
+    SELECT new_profile.user_id, new_profile.id, @email::VARCHAR, @username::VARCHAR, @name::VARCHAR, @created_at
+    FROM new_profile
 )
 SELECT result.user_id::BIGINT AS user_id
 FROM (

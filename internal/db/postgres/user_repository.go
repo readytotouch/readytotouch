@@ -37,6 +37,8 @@ func (r *UserRepository) SocialUserProfilesByUser(ctx context.Context, id int64)
 
 // Create signs in the social profile: creates it (and the user if needed) or updates it if it has changed.
 // It is a single statement, so it is atomic and does not need an explicit transaction.
+//
+// Concurrent first sign-ins of the same profile are not handled: the unique index makes the second one fail.
 func (r *UserRepository) Create(ctx context.Context, params *domain.SocialProviderUserCreateParams, createdAt time.Time) (int64, error) {
 	return r.db.Queries().UserSocialProfileUpsert(ctx, dbs.UserSocialProfileUpsertParams{
 		SocialProvider:       dbs.SocialProvider(params.SocialProvider),

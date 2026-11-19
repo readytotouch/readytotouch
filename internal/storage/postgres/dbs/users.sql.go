@@ -190,27 +190,27 @@ changed AS (
 ),
 updated_profile AS (
     UPDATE user_social_profiles
-        SET email      = LOWER($3::VARCHAR),
-            username   = $4::VARCHAR,
-            name       = $5::VARCHAR,
-            updated_at = $6
-        FROM changed
-        WHERE user_social_profiles.id = changed.id
+    SET email      = LOWER($3::VARCHAR),
+        username   = $4::VARCHAR,
+        name       = $5::VARCHAR,
+        updated_at = $6
+    FROM changed
+    WHERE user_social_profiles.id = changed.id
 ),
 updated_user AS (
-    UPDATE users
-        SET updated_at = $6
-        FROM changed
-        WHERE users.id = changed.user_id
+    UPDATE users AS t
+    SET updated_at = $6
+    FROM changed
+    WHERE t.id = changed.user_id
 ),
 updated_history AS (
     -- the history is not written if only the case has changed
     INSERT INTO user_social_profile_change_history (user_id, user_social_profile_id, email, username, name, created_at)
-        SELECT changed.user_id, changed.id, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6
-        FROM changed
-        WHERE LOWER(changed.email) IS DISTINCT FROM LOWER($3::VARCHAR)
-           OR LOWER(changed.username) IS DISTINCT FROM LOWER($4::VARCHAR)
-           OR LOWER(changed.name) IS DISTINCT FROM LOWER($5::VARCHAR)
+    SELECT changed.user_id, changed.id, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6
+    FROM changed
+    WHERE LOWER(changed.email) IS DISTINCT FROM LOWER($3::VARCHAR)
+       OR LOWER(changed.username) IS DISTINCT FROM LOWER($4::VARCHAR)
+       OR LOWER(changed.name) IS DISTINCT FROM LOWER($5::VARCHAR)
 ),
 existing_user AS (
     SELECT usp.user_id AS id
@@ -223,10 +223,10 @@ existing_user AS (
 ),
 new_user AS (
     INSERT INTO users (created_at, updated_at)
-        SELECT $6, $6
-        WHERE NOT EXISTS (SELECT 1 FROM prev)
-          AND NOT EXISTS (SELECT 1 FROM existing_user)
-        RETURNING id
+    SELECT $6, $6
+    WHERE NOT EXISTS (SELECT 1 FROM prev)
+      AND NOT EXISTS (SELECT 1 FROM existing_user)
+    RETURNING id
 ),
 target_user AS (
     SELECT id FROM existing_user
@@ -235,14 +235,14 @@ target_user AS (
 ),
 new_profile AS (
     INSERT INTO user_social_profiles (user_id, social_provider, social_provider_user_id, email, username, name, created_at, updated_at)
-        SELECT target_user.id, $1, $2, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6, $6
-        FROM target_user
-        RETURNING id, user_id
+    SELECT target_user.id, $1, $2, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6, $6
+    FROM target_user
+    RETURNING id, user_id
 ),
 new_history AS (
     INSERT INTO user_social_profile_change_history (user_id, user_social_profile_id, email, username, name, created_at)
-        SELECT new_profile.user_id, new_profile.id, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6
-        FROM new_profile
+    SELECT new_profile.user_id, new_profile.id, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6
+    FROM new_profile
 )
 SELECT result.user_id::BIGINT AS user_id
 FROM (
@@ -261,10 +261,6 @@ type UserSocialProfileUpsertParams struct {
 	CreatedAt            time.Time
 }
 
-// Signs in a social profile and returns the user ID, in a single statement:
-//   - the profile exists: updates it (and records the history) only if it has changed;
-//   - the profile does not exist: creates it and its history, linked to the existing user
-//     with the same email, or to a new user if there is none.
 func (q *Queries) UserSocialProfileUpsert(ctx context.Context, arg UserSocialProfileUpsertParams) (int64, error) {
 	row := q.queryRow(ctx, q.userSocialProfileUpsertStmt, userSocialProfileUpsert,
 		arg.SocialProvider,
