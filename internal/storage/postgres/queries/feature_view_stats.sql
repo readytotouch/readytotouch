@@ -1,10 +1,10 @@
--- name: FeatureViewDailyStatsUpsert :exec
-INSERT INTO feature_view_daily_stats AS fvds (feature, created_at, view_count)
-VALUES (@feature, @created_at, 1)
-ON CONFLICT (feature, created_at) DO UPDATE
-    SET view_count = fvds.view_count + 1;
-
--- name: FeatureViewStatsUpsert :exec
+-- name: FeatureViewUpsert :exec
+WITH daily AS (
+    INSERT INTO feature_view_daily_stats AS fvds (feature, created_at, view_count)
+    VALUES (@feature, @created_at, 1)
+    ON CONFLICT (feature, created_at) DO UPDATE
+        SET view_count = fvds.view_count + 1
+)
 INSERT INTO feature_view_stats AS fvs (feature, view_count)
 VALUES (@feature, 1)
 ON CONFLICT (feature) DO UPDATE

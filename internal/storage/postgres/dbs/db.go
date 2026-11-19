@@ -36,14 +36,11 @@ func Prepare(ctx context.Context, db DBTX) (*Queries, error) {
 	if q.featureViewDailyStatsStmt, err = db.PrepareContext(ctx, featureViewDailyStats); err != nil {
 		return nil, fmt.Errorf("error preparing query FeatureViewDailyStats: %w", err)
 	}
-	if q.featureViewDailyStatsUpsertStmt, err = db.PrepareContext(ctx, featureViewDailyStatsUpsert); err != nil {
-		return nil, fmt.Errorf("error preparing query FeatureViewDailyStatsUpsert: %w", err)
-	}
 	if q.featureViewStatsStmt, err = db.PrepareContext(ctx, featureViewStats); err != nil {
 		return nil, fmt.Errorf("error preparing query FeatureViewStats: %w", err)
 	}
-	if q.featureViewStatsUpsertStmt, err = db.PrepareContext(ctx, featureViewStatsUpsert); err != nil {
-		return nil, fmt.Errorf("error preparing query FeatureViewStatsUpsert: %w", err)
+	if q.featureViewUpsertStmt, err = db.PrepareContext(ctx, featureViewUpsert); err != nil {
+		return nil, fmt.Errorf("error preparing query FeatureViewUpsert: %w", err)
 	}
 	if q.githubRepositoryStarsStmt, err = db.PrepareContext(ctx, githubRepositoryStars); err != nil {
 		return nil, fmt.Errorf("error preparing query GithubRepositoryStars: %w", err)
@@ -184,19 +181,14 @@ func (q *Queries) Close() error {
 			err = fmt.Errorf("error closing featureViewDailyStatsStmt: %w", cerr)
 		}
 	}
-	if q.featureViewDailyStatsUpsertStmt != nil {
-		if cerr := q.featureViewDailyStatsUpsertStmt.Close(); cerr != nil {
-			err = fmt.Errorf("error closing featureViewDailyStatsUpsertStmt: %w", cerr)
-		}
-	}
 	if q.featureViewStatsStmt != nil {
 		if cerr := q.featureViewStatsStmt.Close(); cerr != nil {
 			err = fmt.Errorf("error closing featureViewStatsStmt: %w", cerr)
 		}
 	}
-	if q.featureViewStatsUpsertStmt != nil {
-		if cerr := q.featureViewStatsUpsertStmt.Close(); cerr != nil {
-			err = fmt.Errorf("error closing featureViewStatsUpsertStmt: %w", cerr)
+	if q.featureViewUpsertStmt != nil {
+		if cerr := q.featureViewUpsertStmt.Close(); cerr != nil {
+			err = fmt.Errorf("error closing featureViewUpsertStmt: %w", cerr)
 		}
 	}
 	if q.githubRepositoryStarsStmt != nil {
@@ -432,9 +424,8 @@ type Queries struct {
 	companyViewDailyStatsStmt                            *sql.Stmt
 	companyViewDailyStatsUpsertStmt                      *sql.Stmt
 	featureViewDailyStatsStmt                            *sql.Stmt
-	featureViewDailyStatsUpsertStmt                      *sql.Stmt
 	featureViewStatsStmt                                 *sql.Stmt
-	featureViewStatsUpsertStmt                           *sql.Stmt
+	featureViewUpsertStmt                                *sql.Stmt
 	githubRepositoryStarsStmt                            *sql.Stmt
 	githubRepositoryStarsAllStmt                         *sql.Stmt
 	githubRepositoryStarsUpsertStmt                      *sql.Stmt
@@ -477,20 +468,19 @@ type Queries struct {
 
 func (q *Queries) WithTx(tx *sql.Tx) *Queries {
 	return &Queries{
-		db:                                                   tx,
-		tx:                                                   tx,
-		companyTotalViewsStmt:                                q.companyTotalViewsStmt,
-		companyViewDailyStatsStmt:                            q.companyViewDailyStatsStmt,
-		companyViewDailyStatsUpsertStmt:                      q.companyViewDailyStatsUpsertStmt,
-		featureViewDailyStatsStmt:                            q.featureViewDailyStatsStmt,
-		featureViewDailyStatsUpsertStmt:                      q.featureViewDailyStatsUpsertStmt,
-		featureViewStatsStmt:                                 q.featureViewStatsStmt,
-		featureViewStatsUpsertStmt:                           q.featureViewStatsUpsertStmt,
-		githubRepositoryStarsStmt:                            q.githubRepositoryStarsStmt,
-		githubRepositoryStarsAllStmt:                         q.githubRepositoryStarsAllStmt,
-		githubRepositoryStarsUpsertStmt:                      q.githubRepositoryStarsUpsertStmt,
-		socialUserProfilesStmt:                               q.socialUserProfilesStmt,
-		socialUserProfilesByUserStmt:                         q.socialUserProfilesByUserStmt,
+		db:                              tx,
+		tx:                              tx,
+		companyTotalViewsStmt:           q.companyTotalViewsStmt,
+		companyViewDailyStatsStmt:       q.companyViewDailyStatsStmt,
+		companyViewDailyStatsUpsertStmt: q.companyViewDailyStatsUpsertStmt,
+		featureViewDailyStatsStmt:       q.featureViewDailyStatsStmt,
+		featureViewStatsStmt:            q.featureViewStatsStmt,
+		featureViewUpsertStmt:           q.featureViewUpsertStmt,
+		githubRepositoryStarsStmt:       q.githubRepositoryStarsStmt,
+		githubRepositoryStarsAllStmt:    q.githubRepositoryStarsAllStmt,
+		githubRepositoryStarsUpsertStmt: q.githubRepositoryStarsUpsertStmt,
+		socialUserProfilesStmt:          q.socialUserProfilesStmt,
+		socialUserProfilesByUserStmt:    q.socialUserProfilesByUserStmt,
 		userCompanyVisibilityOverrideHistoryNewStmt:          q.userCompanyVisibilityOverrideHistoryNewStmt,
 		userCompanyVisibilityOverrideUpsertStmt:              q.userCompanyVisibilityOverrideUpsertStmt,
 		userCompanyVisibilityOverridesStmt:                   q.userCompanyVisibilityOverridesStmt,
