@@ -57,9 +57,6 @@ func Prepare(ctx context.Context, db DBTX) (*Queries, error) {
 	if q.socialUserProfilesByUserStmt, err = db.PrepareContext(ctx, socialUserProfilesByUser); err != nil {
 		return nil, fmt.Errorf("error preparing query SocialUserProfilesByUser: %w", err)
 	}
-	if q.userCompanyVisibilityOverrideHistoryNewStmt, err = db.PrepareContext(ctx, userCompanyVisibilityOverrideHistoryNew); err != nil {
-		return nil, fmt.Errorf("error preparing query UserCompanyVisibilityOverrideHistoryNew: %w", err)
-	}
 	if q.userCompanyVisibilityOverrideUpsertStmt, err = db.PrepareContext(ctx, userCompanyVisibilityOverrideUpsert); err != nil {
 		return nil, fmt.Errorf("error preparing query UserCompanyVisibilityOverrideUpsert: %w", err)
 	}
@@ -95,9 +92,6 @@ func Prepare(ctx context.Context, db DBTX) (*Queries, error) {
 	}
 	if q.userFeatureWaitlistUpsertStmt, err = db.PrepareContext(ctx, userFeatureWaitlistUpsert); err != nil {
 		return nil, fmt.Errorf("error preparing query UserFeatureWaitlistUpsert: %w", err)
-	}
-	if q.userIndustryVisibilityOverrideHistoryNewStmt, err = db.PrepareContext(ctx, userIndustryVisibilityOverrideHistoryNew); err != nil {
-		return nil, fmt.Errorf("error preparing query UserIndustryVisibilityOverrideHistoryNew: %w", err)
 	}
 	if q.userIndustryVisibilityOverrideUpsertStmt, err = db.PrepareContext(ctx, userIndustryVisibilityOverrideUpsert); err != nil {
 		return nil, fmt.Errorf("error preparing query UserIndustryVisibilityOverrideUpsert: %w", err)
@@ -216,11 +210,6 @@ func (q *Queries) Close() error {
 			err = fmt.Errorf("error closing socialUserProfilesByUserStmt: %w", cerr)
 		}
 	}
-	if q.userCompanyVisibilityOverrideHistoryNewStmt != nil {
-		if cerr := q.userCompanyVisibilityOverrideHistoryNewStmt.Close(); cerr != nil {
-			err = fmt.Errorf("error closing userCompanyVisibilityOverrideHistoryNewStmt: %w", cerr)
-		}
-	}
 	if q.userCompanyVisibilityOverrideUpsertStmt != nil {
 		if cerr := q.userCompanyVisibilityOverrideUpsertStmt.Close(); cerr != nil {
 			err = fmt.Errorf("error closing userCompanyVisibilityOverrideUpsertStmt: %w", cerr)
@@ -279,11 +268,6 @@ func (q *Queries) Close() error {
 	if q.userFeatureWaitlistUpsertStmt != nil {
 		if cerr := q.userFeatureWaitlistUpsertStmt.Close(); cerr != nil {
 			err = fmt.Errorf("error closing userFeatureWaitlistUpsertStmt: %w", cerr)
-		}
-	}
-	if q.userIndustryVisibilityOverrideHistoryNewStmt != nil {
-		if cerr := q.userIndustryVisibilityOverrideHistoryNewStmt.Close(); cerr != nil {
-			err = fmt.Errorf("error closing userIndustryVisibilityOverrideHistoryNewStmt: %w", cerr)
 		}
 	}
 	if q.userIndustryVisibilityOverrideUpsertStmt != nil {
@@ -431,7 +415,6 @@ type Queries struct {
 	githubRepositoryStarsUpsertStmt                      *sql.Stmt
 	socialUserProfilesStmt                               *sql.Stmt
 	socialUserProfilesByUserStmt                         *sql.Stmt
-	userCompanyVisibilityOverrideHistoryNewStmt          *sql.Stmt
 	userCompanyVisibilityOverrideUpsertStmt              *sql.Stmt
 	userCompanyVisibilityOverridesStmt                   *sql.Stmt
 	userFavoriteCompaniesStmt                            *sql.Stmt
@@ -444,7 +427,6 @@ type Queries struct {
 	userFeatureWaitlistStatsStmt                         *sql.Stmt
 	userFeatureWaitlistStatsUpsertStmt                   *sql.Stmt
 	userFeatureWaitlistUpsertStmt                        *sql.Stmt
-	userIndustryVisibilityOverrideHistoryNewStmt         *sql.Stmt
 	userIndustryVisibilityOverrideUpsertStmt             *sql.Stmt
 	userIndustryVisibilityOverridesStmt                  *sql.Stmt
 	userOnlineDailyCountStatsStmt                        *sql.Stmt
@@ -468,20 +450,19 @@ type Queries struct {
 
 func (q *Queries) WithTx(tx *sql.Tx) *Queries {
 	return &Queries{
-		db:                              tx,
-		tx:                              tx,
-		companyTotalViewsStmt:           q.companyTotalViewsStmt,
-		companyViewDailyStatsStmt:       q.companyViewDailyStatsStmt,
-		companyViewDailyStatsUpsertStmt: q.companyViewDailyStatsUpsertStmt,
-		featureViewDailyStatsStmt:       q.featureViewDailyStatsStmt,
-		featureViewStatsStmt:            q.featureViewStatsStmt,
-		featureViewUpsertStmt:           q.featureViewUpsertStmt,
-		githubRepositoryStarsStmt:       q.githubRepositoryStarsStmt,
-		githubRepositoryStarsAllStmt:    q.githubRepositoryStarsAllStmt,
-		githubRepositoryStarsUpsertStmt: q.githubRepositoryStarsUpsertStmt,
-		socialUserProfilesStmt:          q.socialUserProfilesStmt,
-		socialUserProfilesByUserStmt:    q.socialUserProfilesByUserStmt,
-		userCompanyVisibilityOverrideHistoryNewStmt:          q.userCompanyVisibilityOverrideHistoryNewStmt,
+		db:                                                   tx,
+		tx:                                                   tx,
+		companyTotalViewsStmt:                                q.companyTotalViewsStmt,
+		companyViewDailyStatsStmt:                            q.companyViewDailyStatsStmt,
+		companyViewDailyStatsUpsertStmt:                      q.companyViewDailyStatsUpsertStmt,
+		featureViewDailyStatsStmt:                            q.featureViewDailyStatsStmt,
+		featureViewStatsStmt:                                 q.featureViewStatsStmt,
+		featureViewUpsertStmt:                                q.featureViewUpsertStmt,
+		githubRepositoryStarsStmt:                            q.githubRepositoryStarsStmt,
+		githubRepositoryStarsAllStmt:                         q.githubRepositoryStarsAllStmt,
+		githubRepositoryStarsUpsertStmt:                      q.githubRepositoryStarsUpsertStmt,
+		socialUserProfilesStmt:                               q.socialUserProfilesStmt,
+		socialUserProfilesByUserStmt:                         q.socialUserProfilesByUserStmt,
 		userCompanyVisibilityOverrideUpsertStmt:              q.userCompanyVisibilityOverrideUpsertStmt,
 		userCompanyVisibilityOverridesStmt:                   q.userCompanyVisibilityOverridesStmt,
 		userFavoriteCompaniesStmt:                            q.userFavoriteCompaniesStmt,
@@ -494,7 +475,6 @@ func (q *Queries) WithTx(tx *sql.Tx) *Queries {
 		userFeatureWaitlistStatsStmt:                         q.userFeatureWaitlistStatsStmt,
 		userFeatureWaitlistStatsUpsertStmt:                   q.userFeatureWaitlistStatsUpsertStmt,
 		userFeatureWaitlistUpsertStmt:                        q.userFeatureWaitlistUpsertStmt,
-		userIndustryVisibilityOverrideHistoryNewStmt:         q.userIndustryVisibilityOverrideHistoryNewStmt,
 		userIndustryVisibilityOverrideUpsertStmt:             q.userIndustryVisibilityOverrideUpsertStmt,
 		userIndustryVisibilityOverridesStmt:                  q.userIndustryVisibilityOverridesStmt,
 		userOnlineDailyCountStatsStmt:                        q.userOnlineDailyCountStatsStmt,

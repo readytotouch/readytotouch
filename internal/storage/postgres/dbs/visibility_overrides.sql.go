@@ -10,55 +10,36 @@ import (
 	"time"
 )
 
-const userCompanyVisibilityOverrideHistoryNew = `-- name: UserCompanyVisibilityOverrideHistoryNew :exec
+const userCompanyVisibilityOverrideUpsert = `-- name: UserCompanyVisibilityOverrideUpsert :exec
+WITH changed AS (
+    INSERT INTO user_company_visibility_overrides AS t (user_id, company_id, visibility, created_at, updated_at)
+    VALUES ($2, $3, $4, $1, $1)
+    ON CONFLICT (user_id, company_id) DO UPDATE
+        SET visibility = excluded.visibility,
+            updated_at = excluded.updated_at
+    WHERE t.visibility <> excluded.visibility
+    RETURNING user_id, company_id, visibility
+)
 INSERT INTO user_company_visibility_override_history (user_id, company_id, visibility, created_at)
-VALUES ($1, $2, $3, $4)
-`
-
-type UserCompanyVisibilityOverrideHistoryNewParams struct {
-	UserID     int64
-	CompanyID  int64
-	Visibility bool
-	CreatedAt  time.Time
-}
-
-func (q *Queries) UserCompanyVisibilityOverrideHistoryNew(ctx context.Context, arg UserCompanyVisibilityOverrideHistoryNewParams) error {
-	_, err := q.exec(ctx, q.userCompanyVisibilityOverrideHistoryNewStmt, userCompanyVisibilityOverrideHistoryNew,
-		arg.UserID,
-		arg.CompanyID,
-		arg.Visibility,
-		arg.CreatedAt,
-	)
-	return err
-}
-
-const userCompanyVisibilityOverrideUpsert = `-- name: UserCompanyVisibilityOverrideUpsert :execrows
-INSERT INTO user_company_visibility_overrides AS t (user_id, company_id, visibility, created_at, updated_at)
-VALUES ($1, $2, $3, $4, $4)
-ON CONFLICT (user_id, company_id) DO UPDATE
-    SET visibility = excluded.visibility,
-        updated_at = excluded.updated_at
-WHERE t.visibility <> excluded.visibility
+SELECT changed.user_id, changed.company_id, changed.visibility, $1
+FROM changed
 `
 
 type UserCompanyVisibilityOverrideUpsertParams struct {
+	CreatedAt  time.Time
 	UserID     int64
 	CompanyID  int64
 	Visibility bool
-	CreatedAt  time.Time
 }
 
-func (q *Queries) UserCompanyVisibilityOverrideUpsert(ctx context.Context, arg UserCompanyVisibilityOverrideUpsertParams) (int64, error) {
-	result, err := q.exec(ctx, q.userCompanyVisibilityOverrideUpsertStmt, userCompanyVisibilityOverrideUpsert,
+func (q *Queries) UserCompanyVisibilityOverrideUpsert(ctx context.Context, arg UserCompanyVisibilityOverrideUpsertParams) error {
+	_, err := q.exec(ctx, q.userCompanyVisibilityOverrideUpsertStmt, userCompanyVisibilityOverrideUpsert,
+		arg.CreatedAt,
 		arg.UserID,
 		arg.CompanyID,
 		arg.Visibility,
-		arg.CreatedAt,
 	)
-	if err != nil {
-		return 0, err
-	}
-	return result.RowsAffected()
+	return err
 }
 
 const userCompanyVisibilityOverrides = `-- name: UserCompanyVisibilityOverrides :many
@@ -91,55 +72,36 @@ func (q *Queries) UserCompanyVisibilityOverrides(ctx context.Context, userID int
 	return items, nil
 }
 
-const userIndustryVisibilityOverrideHistoryNew = `-- name: UserIndustryVisibilityOverrideHistoryNew :exec
+const userIndustryVisibilityOverrideUpsert = `-- name: UserIndustryVisibilityOverrideUpsert :exec
+WITH changed AS (
+    INSERT INTO user_industry_visibility_overrides AS t (user_id, industry_id, visibility, created_at, updated_at)
+    VALUES ($2, $3, $4, $1, $1)
+    ON CONFLICT (user_id, industry_id) DO UPDATE
+        SET visibility = excluded.visibility,
+            updated_at = excluded.updated_at
+    WHERE t.visibility <> excluded.visibility
+    RETURNING user_id, industry_id, visibility
+)
 INSERT INTO user_industry_visibility_override_history (user_id, industry_id, visibility, created_at)
-VALUES ($1, $2, $3, $4)
-`
-
-type UserIndustryVisibilityOverrideHistoryNewParams struct {
-	UserID     int64
-	IndustryID int64
-	Visibility bool
-	CreatedAt  time.Time
-}
-
-func (q *Queries) UserIndustryVisibilityOverrideHistoryNew(ctx context.Context, arg UserIndustryVisibilityOverrideHistoryNewParams) error {
-	_, err := q.exec(ctx, q.userIndustryVisibilityOverrideHistoryNewStmt, userIndustryVisibilityOverrideHistoryNew,
-		arg.UserID,
-		arg.IndustryID,
-		arg.Visibility,
-		arg.CreatedAt,
-	)
-	return err
-}
-
-const userIndustryVisibilityOverrideUpsert = `-- name: UserIndustryVisibilityOverrideUpsert :execrows
-INSERT INTO user_industry_visibility_overrides AS t (user_id, industry_id, visibility, created_at, updated_at)
-VALUES ($1, $2, $3, $4, $4)
-ON CONFLICT (user_id, industry_id) DO UPDATE
-    SET visibility = excluded.visibility,
-        updated_at = excluded.updated_at
-WHERE t.visibility <> excluded.visibility
+SELECT changed.user_id, changed.industry_id, changed.visibility, $1
+FROM changed
 `
 
 type UserIndustryVisibilityOverrideUpsertParams struct {
+	CreatedAt  time.Time
 	UserID     int64
 	IndustryID int64
 	Visibility bool
-	CreatedAt  time.Time
 }
 
-func (q *Queries) UserIndustryVisibilityOverrideUpsert(ctx context.Context, arg UserIndustryVisibilityOverrideUpsertParams) (int64, error) {
-	result, err := q.exec(ctx, q.userIndustryVisibilityOverrideUpsertStmt, userIndustryVisibilityOverrideUpsert,
+func (q *Queries) UserIndustryVisibilityOverrideUpsert(ctx context.Context, arg UserIndustryVisibilityOverrideUpsertParams) error {
+	_, err := q.exec(ctx, q.userIndustryVisibilityOverrideUpsertStmt, userIndustryVisibilityOverrideUpsert,
+		arg.CreatedAt,
 		arg.UserID,
 		arg.IndustryID,
 		arg.Visibility,
-		arg.CreatedAt,
 	)
-	if err != nil {
-		return 0, err
-	}
-	return result.RowsAffected()
+	return err
 }
 
 const userIndustryVisibilityOverrides = `-- name: UserIndustryVisibilityOverrides :many
