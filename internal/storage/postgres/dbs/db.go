@@ -87,9 +87,6 @@ func Prepare(ctx context.Context, db DBTX) (*Queries, error) {
 	if q.userFeatureWaitlistStatsStmt, err = db.PrepareContext(ctx, userFeatureWaitlistStats); err != nil {
 		return nil, fmt.Errorf("error preparing query UserFeatureWaitlistStats: %w", err)
 	}
-	if q.userFeatureWaitlistStatsUpsertStmt, err = db.PrepareContext(ctx, userFeatureWaitlistStatsUpsert); err != nil {
-		return nil, fmt.Errorf("error preparing query UserFeatureWaitlistStatsUpsert: %w", err)
-	}
 	if q.userFeatureWaitlistUpsertStmt, err = db.PrepareContext(ctx, userFeatureWaitlistUpsert); err != nil {
 		return nil, fmt.Errorf("error preparing query UserFeatureWaitlistUpsert: %w", err)
 	}
@@ -260,11 +257,6 @@ func (q *Queries) Close() error {
 			err = fmt.Errorf("error closing userFeatureWaitlistStatsStmt: %w", cerr)
 		}
 	}
-	if q.userFeatureWaitlistStatsUpsertStmt != nil {
-		if cerr := q.userFeatureWaitlistStatsUpsertStmt.Close(); cerr != nil {
-			err = fmt.Errorf("error closing userFeatureWaitlistStatsUpsertStmt: %w", cerr)
-		}
-	}
 	if q.userFeatureWaitlistUpsertStmt != nil {
 		if cerr := q.userFeatureWaitlistUpsertStmt.Close(); cerr != nil {
 			err = fmt.Errorf("error closing userFeatureWaitlistUpsertStmt: %w", cerr)
@@ -425,7 +417,6 @@ type Queries struct {
 	userFeatureWaitlistStmt                              *sql.Stmt
 	userFeatureWaitlistDailyStatsStmt                    *sql.Stmt
 	userFeatureWaitlistStatsStmt                         *sql.Stmt
-	userFeatureWaitlistStatsUpsertStmt                   *sql.Stmt
 	userFeatureWaitlistUpsertStmt                        *sql.Stmt
 	userIndustryVisibilityOverrideUpsertStmt             *sql.Stmt
 	userIndustryVisibilityOverridesStmt                  *sql.Stmt
@@ -473,7 +464,6 @@ func (q *Queries) WithTx(tx *sql.Tx) *Queries {
 		userFeatureWaitlistStmt:                              q.userFeatureWaitlistStmt,
 		userFeatureWaitlistDailyStatsStmt:                    q.userFeatureWaitlistDailyStatsStmt,
 		userFeatureWaitlistStatsStmt:                         q.userFeatureWaitlistStatsStmt,
-		userFeatureWaitlistStatsUpsertStmt:                   q.userFeatureWaitlistStatsUpsertStmt,
 		userFeatureWaitlistUpsertStmt:                        q.userFeatureWaitlistUpsertStmt,
 		userIndustryVisibilityOverrideUpsertStmt:             q.userIndustryVisibilityOverrideUpsertStmt,
 		userIndustryVisibilityOverridesStmt:                  q.userIndustryVisibilityOverridesStmt,

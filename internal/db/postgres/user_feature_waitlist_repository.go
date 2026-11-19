@@ -17,6 +17,8 @@ func NewUserFeatureWaitlistRepository(db *Database) *UserFeatureWaitlistReposito
 	return &UserFeatureWaitlistRepository{db: db}
 }
 
+// Upsert stores the subscription, and updates the subscribers counter if the row is new or the state has changed.
+// It is a single statement, so it is atomic and does not need an explicit transaction.
 func (r *UserFeatureWaitlistRepository) Upsert(
 	ctx context.Context,
 	userID int64,
@@ -24,42 +26,12 @@ func (r *UserFeatureWaitlistRepository) Upsert(
 	active bool,
 	createdAt time.Time,
 ) error {
-	txErr := r.db.WithTransaction(ctx, func(queries *dbs.Queries) error {
-		affected, err := queries.UserFeatureWaitlistUpsert(ctx, dbs.UserFeatureWaitlistUpsertParams{
-			UserID:    userID,
-			Feature:   feature,
-			Active:    active,
-			CreatedAt: createdAt,
-		})
-		if err != nil {
-			return err
-		}
-		if affected == 0 {
-			return nil
-		}
-
-		var diff int64
-		if active {
-			diff = 1 // +1
-		} else {
-			diff = -1
-		}
-
-		err = queries.UserFeatureWaitlistStatsUpsert(ctx, dbs.UserFeatureWaitlistStatsUpsertParams{
-			Feature:   feature,
-			UserCount: diff,
-		})
-		if err != nil {
-			return err
-		}
-
-		return nil
+	return r.db.Queries().UserFeatureWaitlistUpsert(ctx, dbs.UserFeatureWaitlistUpsertParams{
+		UserID:    userID,
+		Feature:   feature,
+		Active:    active,
+		CreatedAt: createdAt,
 	})
-	if txErr != nil {
-		return txErr
-	}
-
-	return nil
 }
 
 func (r *UserFeatureWaitlistRepository) SubscribedState(

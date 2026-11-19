@@ -1,14 +1,16 @@
--- name: UserFeatureWaitlistUpsert :execrows
-INSERT INTO user_feature_waitlist AS ufw (user_id, feature, active, created_at, updated_at)
-VALUES (@user_id, @feature, @active, @created_at, @created_at)
-ON CONFLICT (user_id, feature) DO UPDATE
-    SET active     = excluded.active,
-        updated_at = excluded.updated_at
-WHERE ufw.active <> excluded.active;
-
--- name: UserFeatureWaitlistStatsUpsert :exec
+-- name: UserFeatureWaitlistUpsert :exec
+WITH changed AS (
+    INSERT INTO user_feature_waitlist AS ufw (user_id, feature, active, created_at, updated_at)
+    VALUES (@user_id, @feature, @active, @created_at, @created_at)
+    ON CONFLICT (user_id, feature) DO UPDATE
+        SET active     = excluded.active,
+            updated_at = excluded.updated_at
+    WHERE ufw.active <> excluded.active
+    RETURNING feature, active
+)
 INSERT INTO user_feature_waitlist_stats AS ufws (feature, user_count)
-VALUES (@feature, @user_count)
+SELECT changed.feature, (CASE WHEN changed.active THEN 1 ELSE -1 END)::BIGINT
+FROM changed
 ON CONFLICT (feature) DO UPDATE
     SET user_count = ufws.user_count + excluded.user_count;
 
