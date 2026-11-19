@@ -4,7 +4,7 @@
   "description": "Yet another anonymous work search",
   "license": "MIT",
   "devDependencies": {
-    "esbuild": "^0.19.3"
+    "esbuild": "^0.28.2"
   },
   "scripts": {
     "esbuild": "node esbuild.js"
