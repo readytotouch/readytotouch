@@ -30,7 +30,7 @@ func TestGithubRepositoryStarsRepository(t *testing.T) {
 	const (
 		owner    = "test_owner"
 		repo     = "test_repo"
-		stars    = 8096
+		stars    = int32(8096)
 		newStars = stars + 100
 	)
 

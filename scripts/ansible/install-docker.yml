@@ -1,7 +1,8 @@
 ---
 - name: "Install Docker and Docker Compose"
   hosts: "web"
-  gather_facts: "no"
+  # ansible_distribution_release is needed for the Docker APT repository
+  gather_facts: "yes"
 
   tasks:
     - name: "Update apt cache"
@@ -18,19 +19,32 @@
         - "curl"
         - "software-properties-common"
 
+    - name: "Ensure /etc/apt/keyrings exists"
+      file:
+        path: "/etc/apt/keyrings"
+        state: "directory"
+        mode: "0755"
+
     - name: "Add Docker GPG key"
-      apt_key:
+      get_url:
         url: "https://download.docker.com/linux/ubuntu/gpg"
-        state: "present"
+        dest: "/etc/apt/keyrings/docker.asc"
+        mode: "0644"
 
     - name: "Add Docker APT repository"
       apt_repository:
-        repo: "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+        repo: "deb [arch=amd64 signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu {{ ansible_distribution_release }} stable"
+        filename: "docker"
         state: "present"
+        update_cache: "yes"
 
     - name: "Install Docker"
       package:
-        name: "docker-ce"
+        name:
+          - "docker-ce"
+          - "docker-ce-cli"
+          - "containerd.io"
+          - "docker-compose-plugin"
         state: "present"
 
     - name: "Start and enable Docker service"

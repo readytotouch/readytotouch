@@ -18,20 +18,10 @@ func NewFeatureViewStatsRepository(db *Database) *FeatureViewStatsRepository {
 }
 
 func (r *FeatureViewStatsRepository) Upsert(ctx context.Context, feature dbs.FeatureWait, createdAt time.Time) error {
-	err := r.db.Queries().FeatureViewDailyStatsUpsert(ctx, dbs.FeatureViewDailyStatsUpsertParams{
+	return r.db.Queries().FeatureViewUpsert(ctx, dbs.FeatureViewUpsertParams{
 		Feature:   feature,
 		CreatedAt: createdAt.Truncate(24 * time.Hour),
 	})
-	if err != nil {
-		return err
-	}
-
-	err = r.db.Queries().FeatureViewStatsUpsert(ctx, feature)
-	if err != nil {
-		return err
-	}
-
-	return nil
 }
 
 func (r *FeatureViewStatsRepository) DailyCountStats(

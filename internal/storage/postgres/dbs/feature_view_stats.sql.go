@@ -56,23 +56,6 @@ func (q *Queries) FeatureViewDailyStats(ctx context.Context, arg FeatureViewDail
 	return items, nil
 }
 
-const featureViewDailyStatsUpsert = `-- name: FeatureViewDailyStatsUpsert :exec
-INSERT INTO feature_view_daily_stats AS fvds (feature, created_at, view_count)
-VALUES ($1, $2, 1)
-ON CONFLICT (feature, created_at) DO UPDATE
-    SET view_count = fvds.view_count + 1
-`
-
-type FeatureViewDailyStatsUpsertParams struct {
-	Feature   FeatureWait
-	CreatedAt time.Time
-}
-
-func (q *Queries) FeatureViewDailyStatsUpsert(ctx context.Context, arg FeatureViewDailyStatsUpsertParams) error {
-	_, err := q.exec(ctx, q.featureViewDailyStatsUpsertStmt, featureViewDailyStatsUpsert, arg.Feature, arg.CreatedAt)
-	return err
-}
-
 const featureViewStats = `-- name: FeatureViewStats :one
 SELECT view_count
 FROM feature_view_stats
@@ -86,14 +69,25 @@ func (q *Queries) FeatureViewStats(ctx context.Context, feature FeatureWait) (in
 	return view_count, err
 }
 
-const featureViewStatsUpsert = `-- name: FeatureViewStatsUpsert :exec
+const featureViewUpsert = `-- name: FeatureViewUpsert :exec
+WITH daily AS (
+    INSERT INTO feature_view_daily_stats AS fvds (feature, created_at, view_count)
+    VALUES ($1, $2, 1)
+    ON CONFLICT (feature, created_at) DO UPDATE
+        SET view_count = fvds.view_count + 1
+)
 INSERT INTO feature_view_stats AS fvs (feature, view_count)
 VALUES ($1, 1)
 ON CONFLICT (feature) DO UPDATE
     SET view_count = fvs.view_count + 1
 `
 
-func (q *Queries) FeatureViewStatsUpsert(ctx context.Context, feature FeatureWait) error {
-	_, err := q.exec(ctx, q.featureViewStatsUpsertStmt, featureViewStatsUpsert, feature)
+type FeatureViewUpsertParams struct {
+	Feature   FeatureWait
+	CreatedAt time.Time
+}
+
+func (q *Queries) FeatureViewUpsert(ctx context.Context, arg FeatureViewUpsertParams) error {
+	_, err := q.exec(ctx, q.featureViewUpsertStmt, featureViewUpsert, arg.Feature, arg.CreatedAt)
 	return err
 }

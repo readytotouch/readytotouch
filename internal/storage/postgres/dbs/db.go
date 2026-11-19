@@ -36,14 +36,11 @@ func Prepare(ctx context.Context, db DBTX) (*Queries, error) {
 	if q.featureViewDailyStatsStmt, err = db.PrepareContext(ctx, featureViewDailyStats); err != nil {
 		return nil, fmt.Errorf("error preparing query FeatureViewDailyStats: %w", err)
 	}
-	if q.featureViewDailyStatsUpsertStmt, err = db.PrepareContext(ctx, featureViewDailyStatsUpsert); err != nil {
-		return nil, fmt.Errorf("error preparing query FeatureViewDailyStatsUpsert: %w", err)
-	}
 	if q.featureViewStatsStmt, err = db.PrepareContext(ctx, featureViewStats); err != nil {
 		return nil, fmt.Errorf("error preparing query FeatureViewStats: %w", err)
 	}
-	if q.featureViewStatsUpsertStmt, err = db.PrepareContext(ctx, featureViewStatsUpsert); err != nil {
-		return nil, fmt.Errorf("error preparing query FeatureViewStatsUpsert: %w", err)
+	if q.featureViewUpsertStmt, err = db.PrepareContext(ctx, featureViewUpsert); err != nil {
+		return nil, fmt.Errorf("error preparing query FeatureViewUpsert: %w", err)
 	}
 	if q.githubRepositoryStarsStmt, err = db.PrepareContext(ctx, githubRepositoryStars); err != nil {
 		return nil, fmt.Errorf("error preparing query GithubRepositoryStars: %w", err)
@@ -59,9 +56,6 @@ func Prepare(ctx context.Context, db DBTX) (*Queries, error) {
 	}
 	if q.socialUserProfilesByUserStmt, err = db.PrepareContext(ctx, socialUserProfilesByUser); err != nil {
 		return nil, fmt.Errorf("error preparing query SocialUserProfilesByUser: %w", err)
-	}
-	if q.userCompanyVisibilityOverrideHistoryNewStmt, err = db.PrepareContext(ctx, userCompanyVisibilityOverrideHistoryNew); err != nil {
-		return nil, fmt.Errorf("error preparing query UserCompanyVisibilityOverrideHistoryNew: %w", err)
 	}
 	if q.userCompanyVisibilityOverrideUpsertStmt, err = db.PrepareContext(ctx, userCompanyVisibilityOverrideUpsert); err != nil {
 		return nil, fmt.Errorf("error preparing query UserCompanyVisibilityOverrideUpsert: %w", err)
@@ -93,14 +87,8 @@ func Prepare(ctx context.Context, db DBTX) (*Queries, error) {
 	if q.userFeatureWaitlistStatsStmt, err = db.PrepareContext(ctx, userFeatureWaitlistStats); err != nil {
 		return nil, fmt.Errorf("error preparing query UserFeatureWaitlistStats: %w", err)
 	}
-	if q.userFeatureWaitlistStatsUpsertStmt, err = db.PrepareContext(ctx, userFeatureWaitlistStatsUpsert); err != nil {
-		return nil, fmt.Errorf("error preparing query UserFeatureWaitlistStatsUpsert: %w", err)
-	}
 	if q.userFeatureWaitlistUpsertStmt, err = db.PrepareContext(ctx, userFeatureWaitlistUpsert); err != nil {
 		return nil, fmt.Errorf("error preparing query UserFeatureWaitlistUpsert: %w", err)
-	}
-	if q.userIndustryVisibilityOverrideHistoryNewStmt, err = db.PrepareContext(ctx, userIndustryVisibilityOverrideHistoryNew); err != nil {
-		return nil, fmt.Errorf("error preparing query UserIndustryVisibilityOverrideHistoryNew: %w", err)
 	}
 	if q.userIndustryVisibilityOverrideUpsertStmt, err = db.PrepareContext(ctx, userIndustryVisibilityOverrideUpsert); err != nil {
 		return nil, fmt.Errorf("error preparing query UserIndustryVisibilityOverrideUpsert: %w", err)
@@ -126,38 +114,14 @@ func Prepare(ctx context.Context, db DBTX) (*Queries, error) {
 	if q.userRegistrationDailyCountStatsStmt, err = db.PrepareContext(ctx, userRegistrationDailyCountStats); err != nil {
 		return nil, fmt.Errorf("error preparing query UserRegistrationDailyCountStats: %w", err)
 	}
-	if q.userSocialProfileChangeHistoryNewStmt, err = db.PrepareContext(ctx, userSocialProfileChangeHistoryNew); err != nil {
-		return nil, fmt.Errorf("error preparing query UserSocialProfileChangeHistoryNew: %w", err)
-	}
-	if q.userSocialProfileGetByIDStmt, err = db.PrepareContext(ctx, userSocialProfileGetByID); err != nil {
-		return nil, fmt.Errorf("error preparing query UserSocialProfileGetByID: %w", err)
-	}
-	if q.userSocialProfileGetUserByEmailStmt, err = db.PrepareContext(ctx, userSocialProfileGetUserByEmail); err != nil {
-		return nil, fmt.Errorf("error preparing query UserSocialProfileGetUserByEmail: %w", err)
-	}
-	if q.userSocialProfileNewStmt, err = db.PrepareContext(ctx, userSocialProfileNew); err != nil {
-		return nil, fmt.Errorf("error preparing query UserSocialProfileNew: %w", err)
-	}
-	if q.userSocialProfileUpdateStmt, err = db.PrepareContext(ctx, userSocialProfileUpdate); err != nil {
-		return nil, fmt.Errorf("error preparing query UserSocialProfileUpdate: %w", err)
-	}
-	if q.userVacancyViewDailyStatsUpsertStmt, err = db.PrepareContext(ctx, userVacancyViewDailyStatsUpsert); err != nil {
-		return nil, fmt.Errorf("error preparing query UserVacancyViewDailyStatsUpsert: %w", err)
-	}
-	if q.userVacancyViewHourlyStatsUpsertStmt, err = db.PrepareContext(ctx, userVacancyViewHourlyStatsUpsert); err != nil {
-		return nil, fmt.Errorf("error preparing query UserVacancyViewHourlyStatsUpsert: %w", err)
-	}
-	if q.usersNewStmt, err = db.PrepareContext(ctx, usersNew); err != nil {
-		return nil, fmt.Errorf("error preparing query UsersNew: %w", err)
-	}
-	if q.usersUpdateStmt, err = db.PrepareContext(ctx, usersUpdate); err != nil {
-		return nil, fmt.Errorf("error preparing query UsersUpdate: %w", err)
-	}
-	if q.vacancyViewDailyStatsUpsertStmt, err = db.PrepareContext(ctx, vacancyViewDailyStatsUpsert); err != nil {
-		return nil, fmt.Errorf("error preparing query VacancyViewDailyStatsUpsert: %w", err)
+	if q.userSocialProfileUpsertStmt, err = db.PrepareContext(ctx, userSocialProfileUpsert); err != nil {
+		return nil, fmt.Errorf("error preparing query UserSocialProfileUpsert: %w", err)
 	}
 	if q.vacancyViewStatsStmt, err = db.PrepareContext(ctx, vacancyViewStats); err != nil {
 		return nil, fmt.Errorf("error preparing query VacancyViewStats: %w", err)
+	}
+	if q.vacancyViewUpsertStmt, err = db.PrepareContext(ctx, vacancyViewUpsert); err != nil {
+		return nil, fmt.Errorf("error preparing query VacancyViewUpsert: %w", err)
 	}
 	if q.wipLinkedInCompaniesGetByVanityNameStmt, err = db.PrepareContext(ctx, wipLinkedInCompaniesGetByVanityName); err != nil {
 		return nil, fmt.Errorf("error preparing query WipLinkedInCompaniesGetByVanityName: %w", err)
@@ -208,19 +172,14 @@ func (q *Queries) Close() error {
 			err = fmt.Errorf("error closing featureViewDailyStatsStmt: %w", cerr)
 		}
 	}
-	if q.featureViewDailyStatsUpsertStmt != nil {
-		if cerr := q.featureViewDailyStatsUpsertStmt.Close(); cerr != nil {
-			err = fmt.Errorf("error closing featureViewDailyStatsUpsertStmt: %w", cerr)
-		}
-	}
 	if q.featureViewStatsStmt != nil {
 		if cerr := q.featureViewStatsStmt.Close(); cerr != nil {
 			err = fmt.Errorf("error closing featureViewStatsStmt: %w", cerr)
 		}
 	}
-	if q.featureViewStatsUpsertStmt != nil {
-		if cerr := q.featureViewStatsUpsertStmt.Close(); cerr != nil {
-			err = fmt.Errorf("error closing featureViewStatsUpsertStmt: %w", cerr)
+	if q.featureViewUpsertStmt != nil {
+		if cerr := q.featureViewUpsertStmt.Close(); cerr != nil {
+			err = fmt.Errorf("error closing featureViewUpsertStmt: %w", cerr)
 		}
 	}
 	if q.githubRepositoryStarsStmt != nil {
@@ -246,11 +205,6 @@ func (q *Queries) Close() error {
 	if q.socialUserProfilesByUserStmt != nil {
 		if cerr := q.socialUserProfilesByUserStmt.Close(); cerr != nil {
 			err = fmt.Errorf("error closing socialUserProfilesByUserStmt: %w", cerr)
-		}
-	}
-	if q.userCompanyVisibilityOverrideHistoryNewStmt != nil {
-		if cerr := q.userCompanyVisibilityOverrideHistoryNewStmt.Close(); cerr != nil {
-			err = fmt.Errorf("error closing userCompanyVisibilityOverrideHistoryNewStmt: %w", cerr)
 		}
 	}
 	if q.userCompanyVisibilityOverrideUpsertStmt != nil {
@@ -303,19 +257,9 @@ func (q *Queries) Close() error {
 			err = fmt.Errorf("error closing userFeatureWaitlistStatsStmt: %w", cerr)
 		}
 	}
-	if q.userFeatureWaitlistStatsUpsertStmt != nil {
-		if cerr := q.userFeatureWaitlistStatsUpsertStmt.Close(); cerr != nil {
-			err = fmt.Errorf("error closing userFeatureWaitlistStatsUpsertStmt: %w", cerr)
-		}
-	}
 	if q.userFeatureWaitlistUpsertStmt != nil {
 		if cerr := q.userFeatureWaitlistUpsertStmt.Close(); cerr != nil {
 			err = fmt.Errorf("error closing userFeatureWaitlistUpsertStmt: %w", cerr)
-		}
-	}
-	if q.userIndustryVisibilityOverrideHistoryNewStmt != nil {
-		if cerr := q.userIndustryVisibilityOverrideHistoryNewStmt.Close(); cerr != nil {
-			err = fmt.Errorf("error closing userIndustryVisibilityOverrideHistoryNewStmt: %w", cerr)
 		}
 	}
 	if q.userIndustryVisibilityOverrideUpsertStmt != nil {
@@ -358,59 +302,19 @@ func (q *Queries) Close() error {
 			err = fmt.Errorf("error closing userRegistrationDailyCountStatsStmt: %w", cerr)
 		}
 	}
-	if q.userSocialProfileChangeHistoryNewStmt != nil {
-		if cerr := q.userSocialProfileChangeHistoryNewStmt.Close(); cerr != nil {
-			err = fmt.Errorf("error closing userSocialProfileChangeHistoryNewStmt: %w", cerr)
-		}
-	}
-	if q.userSocialProfileGetByIDStmt != nil {
-		if cerr := q.userSocialProfileGetByIDStmt.Close(); cerr != nil {
-			err = fmt.Errorf("error closing userSocialProfileGetByIDStmt: %w", cerr)
-		}
-	}
-	if q.userSocialProfileGetUserByEmailStmt != nil {
-		if cerr := q.userSocialProfileGetUserByEmailStmt.Close(); cerr != nil {
-			err = fmt.Errorf("error closing userSocialProfileGetUserByEmailStmt: %w", cerr)
-		}
-	}
-	if q.userSocialProfileNewStmt != nil {
-		if cerr := q.userSocialProfileNewStmt.Close(); cerr != nil {
-			err = fmt.Errorf("error closing userSocialProfileNewStmt: %w", cerr)
-		}
-	}
-	if q.userSocialProfileUpdateStmt != nil {
-		if cerr := q.userSocialProfileUpdateStmt.Close(); cerr != nil {
-			err = fmt.Errorf("error closing userSocialProfileUpdateStmt: %w", cerr)
-		}
-	}
-	if q.userVacancyViewDailyStatsUpsertStmt != nil {
-		if cerr := q.userVacancyViewDailyStatsUpsertStmt.Close(); cerr != nil {
-			err = fmt.Errorf("error closing userVacancyViewDailyStatsUpsertStmt: %w", cerr)
-		}
-	}
-	if q.userVacancyViewHourlyStatsUpsertStmt != nil {
-		if cerr := q.userVacancyViewHourlyStatsUpsertStmt.Close(); cerr != nil {
-			err = fmt.Errorf("error closing userVacancyViewHourlyStatsUpsertStmt: %w", cerr)
-		}
-	}
-	if q.usersNewStmt != nil {
-		if cerr := q.usersNewStmt.Close(); cerr != nil {
-			err = fmt.Errorf("error closing usersNewStmt: %w", cerr)
-		}
-	}
-	if q.usersUpdateStmt != nil {
-		if cerr := q.usersUpdateStmt.Close(); cerr != nil {
-			err = fmt.Errorf("error closing usersUpdateStmt: %w", cerr)
-		}
-	}
-	if q.vacancyViewDailyStatsUpsertStmt != nil {
-		if cerr := q.vacancyViewDailyStatsUpsertStmt.Close(); cerr != nil {
-			err = fmt.Errorf("error closing vacancyViewDailyStatsUpsertStmt: %w", cerr)
+	if q.userSocialProfileUpsertStmt != nil {
+		if cerr := q.userSocialProfileUpsertStmt.Close(); cerr != nil {
+			err = fmt.Errorf("error closing userSocialProfileUpsertStmt: %w", cerr)
 		}
 	}
 	if q.vacancyViewStatsStmt != nil {
 		if cerr := q.vacancyViewStatsStmt.Close(); cerr != nil {
 			err = fmt.Errorf("error closing vacancyViewStatsStmt: %w", cerr)
+		}
+	}
+	if q.vacancyViewUpsertStmt != nil {
+		if cerr := q.vacancyViewUpsertStmt.Close(); cerr != nil {
+			err = fmt.Errorf("error closing vacancyViewUpsertStmt: %w", cerr)
 		}
 	}
 	if q.wipLinkedInCompaniesGetByVanityNameStmt != nil {
@@ -496,15 +400,13 @@ type Queries struct {
 	companyViewDailyStatsStmt                            *sql.Stmt
 	companyViewDailyStatsUpsertStmt                      *sql.Stmt
 	featureViewDailyStatsStmt                            *sql.Stmt
-	featureViewDailyStatsUpsertStmt                      *sql.Stmt
 	featureViewStatsStmt                                 *sql.Stmt
-	featureViewStatsUpsertStmt                           *sql.Stmt
+	featureViewUpsertStmt                                *sql.Stmt
 	githubRepositoryStarsStmt                            *sql.Stmt
 	githubRepositoryStarsAllStmt                         *sql.Stmt
 	githubRepositoryStarsUpsertStmt                      *sql.Stmt
 	socialUserProfilesStmt                               *sql.Stmt
 	socialUserProfilesByUserStmt                         *sql.Stmt
-	userCompanyVisibilityOverrideHistoryNewStmt          *sql.Stmt
 	userCompanyVisibilityOverrideUpsertStmt              *sql.Stmt
 	userCompanyVisibilityOverridesStmt                   *sql.Stmt
 	userFavoriteCompaniesStmt                            *sql.Stmt
@@ -515,9 +417,7 @@ type Queries struct {
 	userFeatureWaitlistStmt                              *sql.Stmt
 	userFeatureWaitlistDailyStatsStmt                    *sql.Stmt
 	userFeatureWaitlistStatsStmt                         *sql.Stmt
-	userFeatureWaitlistStatsUpsertStmt                   *sql.Stmt
 	userFeatureWaitlistUpsertStmt                        *sql.Stmt
-	userIndustryVisibilityOverrideHistoryNewStmt         *sql.Stmt
 	userIndustryVisibilityOverrideUpsertStmt             *sql.Stmt
 	userIndustryVisibilityOverridesStmt                  *sql.Stmt
 	userOnlineDailyCountStatsStmt                        *sql.Stmt
@@ -526,17 +426,9 @@ type Queries struct {
 	userOnlineHourlyStatsStmt                            *sql.Stmt
 	userOnlineHourlyStatsUpsertStmt                      *sql.Stmt
 	userRegistrationDailyCountStatsStmt                  *sql.Stmt
-	userSocialProfileChangeHistoryNewStmt                *sql.Stmt
-	userSocialProfileGetByIDStmt                         *sql.Stmt
-	userSocialProfileGetUserByEmailStmt                  *sql.Stmt
-	userSocialProfileNewStmt                             *sql.Stmt
-	userSocialProfileUpdateStmt                          *sql.Stmt
-	userVacancyViewDailyStatsUpsertStmt                  *sql.Stmt
-	userVacancyViewHourlyStatsUpsertStmt                 *sql.Stmt
-	usersNewStmt                                         *sql.Stmt
-	usersUpdateStmt                                      *sql.Stmt
-	vacancyViewDailyStatsUpsertStmt                      *sql.Stmt
+	userSocialProfileUpsertStmt                          *sql.Stmt
 	vacancyViewStatsStmt                                 *sql.Stmt
+	vacancyViewUpsertStmt                                *sql.Stmt
 	wipLinkedInCompaniesGetByVanityNameStmt              *sql.Stmt
 	wipLinkedInCompaniesNewStmt                          *sql.Stmt
 	wipLinkedInCompanyRequestHistoryCountStmt            *sql.Stmt
@@ -555,15 +447,13 @@ func (q *Queries) WithTx(tx *sql.Tx) *Queries {
 		companyViewDailyStatsStmt:                            q.companyViewDailyStatsStmt,
 		companyViewDailyStatsUpsertStmt:                      q.companyViewDailyStatsUpsertStmt,
 		featureViewDailyStatsStmt:                            q.featureViewDailyStatsStmt,
-		featureViewDailyStatsUpsertStmt:                      q.featureViewDailyStatsUpsertStmt,
 		featureViewStatsStmt:                                 q.featureViewStatsStmt,
-		featureViewStatsUpsertStmt:                           q.featureViewStatsUpsertStmt,
+		featureViewUpsertStmt:                                q.featureViewUpsertStmt,
 		githubRepositoryStarsStmt:                            q.githubRepositoryStarsStmt,
 		githubRepositoryStarsAllStmt:                         q.githubRepositoryStarsAllStmt,
 		githubRepositoryStarsUpsertStmt:                      q.githubRepositoryStarsUpsertStmt,
 		socialUserProfilesStmt:                               q.socialUserProfilesStmt,
 		socialUserProfilesByUserStmt:                         q.socialUserProfilesByUserStmt,
-		userCompanyVisibilityOverrideHistoryNewStmt:          q.userCompanyVisibilityOverrideHistoryNewStmt,
 		userCompanyVisibilityOverrideUpsertStmt:              q.userCompanyVisibilityOverrideUpsertStmt,
 		userCompanyVisibilityOverridesStmt:                   q.userCompanyVisibilityOverridesStmt,
 		userFavoriteCompaniesStmt:                            q.userFavoriteCompaniesStmt,
@@ -574,9 +464,7 @@ func (q *Queries) WithTx(tx *sql.Tx) *Queries {
 		userFeatureWaitlistStmt:                              q.userFeatureWaitlistStmt,
 		userFeatureWaitlistDailyStatsStmt:                    q.userFeatureWaitlistDailyStatsStmt,
 		userFeatureWaitlistStatsStmt:                         q.userFeatureWaitlistStatsStmt,
-		userFeatureWaitlistStatsUpsertStmt:                   q.userFeatureWaitlistStatsUpsertStmt,
 		userFeatureWaitlistUpsertStmt:                        q.userFeatureWaitlistUpsertStmt,
-		userIndustryVisibilityOverrideHistoryNewStmt:         q.userIndustryVisibilityOverrideHistoryNewStmt,
 		userIndustryVisibilityOverrideUpsertStmt:             q.userIndustryVisibilityOverrideUpsertStmt,
 		userIndustryVisibilityOverridesStmt:                  q.userIndustryVisibilityOverridesStmt,
 		userOnlineDailyCountStatsStmt:                        q.userOnlineDailyCountStatsStmt,
@@ -585,17 +473,9 @@ func (q *Queries) WithTx(tx *sql.Tx) *Queries {
 		userOnlineHourlyStatsStmt:                            q.userOnlineHourlyStatsStmt,
 		userOnlineHourlyStatsUpsertStmt:                      q.userOnlineHourlyStatsUpsertStmt,
 		userRegistrationDailyCountStatsStmt:                  q.userRegistrationDailyCountStatsStmt,
-		userSocialProfileChangeHistoryNewStmt:                q.userSocialProfileChangeHistoryNewStmt,
-		userSocialProfileGetByIDStmt:                         q.userSocialProfileGetByIDStmt,
-		userSocialProfileGetUserByEmailStmt:                  q.userSocialProfileGetUserByEmailStmt,
-		userSocialProfileNewStmt:                             q.userSocialProfileNewStmt,
-		userSocialProfileUpdateStmt:                          q.userSocialProfileUpdateStmt,
-		userVacancyViewDailyStatsUpsertStmt:                  q.userVacancyViewDailyStatsUpsertStmt,
-		userVacancyViewHourlyStatsUpsertStmt:                 q.userVacancyViewHourlyStatsUpsertStmt,
-		usersNewStmt:                                         q.usersNewStmt,
-		usersUpdateStmt:                                      q.usersUpdateStmt,
-		vacancyViewDailyStatsUpsertStmt:                      q.vacancyViewDailyStatsUpsertStmt,
+		userSocialProfileUpsertStmt:                          q.userSocialProfileUpsertStmt,
 		vacancyViewStatsStmt:                                 q.vacancyViewStatsStmt,
+		vacancyViewUpsertStmt:                                q.vacancyViewUpsertStmt,
 		wipLinkedInCompaniesGetByVanityNameStmt:              q.wipLinkedInCompaniesGetByVanityNameStmt,
 		wipLinkedInCompaniesNewStmt:                          q.wipLinkedInCompaniesNewStmt,
 		wipLinkedInCompanyRequestHistoryCountStmt:            q.wipLinkedInCompanyRequestHistoryCountStmt,

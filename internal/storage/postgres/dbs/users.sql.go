@@ -171,91 +171,88 @@ func (q *Queries) UserRegistrationDailyCountStats(ctx context.Context, arg UserR
 	return items, nil
 }
 
-const userSocialProfileChangeHistoryNew = `-- name: UserSocialProfileChangeHistoryNew :exec
-INSERT INTO user_social_profile_change_history (user_id, user_social_profile_id, email, username, name, created_at)
-VALUES ($1, $2, $3, $4, $5, $6)
+const userSocialProfileUpsert = `-- name: UserSocialProfileUpsert :one
+WITH prev AS (
+    SELECT usp.id, usp.user_id, usp.email, usp.username, usp.name
+    FROM user_social_profiles usp
+    WHERE usp.social_provider = $1
+      AND usp.social_provider_user_id = $2
+      AND usp.deleted_at IS NULL
+        FOR UPDATE
+),
+changed AS (
+    -- the email is compared case-insensitively, the username and the name are case-sensitive
+    SELECT prev.id, prev.user_id, prev.email, prev.username, prev.name
+    FROM prev
+    WHERE LOWER(prev.email) IS DISTINCT FROM LOWER($3::VARCHAR)
+       OR prev.username IS DISTINCT FROM $4::VARCHAR
+       OR prev.name IS DISTINCT FROM $5::VARCHAR
+),
+updated_profile AS (
+    UPDATE user_social_profiles
+    SET email      = LOWER($3::VARCHAR),
+        username   = $4::VARCHAR,
+        name       = $5::VARCHAR,
+        updated_at = $6
+    FROM changed
+    WHERE user_social_profiles.id = changed.id
+),
+updated_user AS (
+    UPDATE users AS t
+    SET updated_at = $6
+    FROM changed
+    WHERE t.id = changed.user_id
+),
+updated_history AS (
+    -- the history is not written if only the case has changed
+    INSERT INTO user_social_profile_change_history (user_id, user_social_profile_id, email, username, name, created_at)
+    SELECT changed.user_id, changed.id, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6
+    FROM changed
+    WHERE LOWER(changed.email) IS DISTINCT FROM LOWER($3::VARCHAR)
+       OR LOWER(changed.username) IS DISTINCT FROM LOWER($4::VARCHAR)
+       OR LOWER(changed.name) IS DISTINCT FROM LOWER($5::VARCHAR)
+),
+existing_user AS (
+    SELECT usp.user_id AS id
+    FROM user_social_profiles usp
+    WHERE NOT EXISTS (SELECT 1 FROM prev)
+      AND usp.email = LOWER($3::VARCHAR)
+      AND usp.deleted_at IS NULL
+    ORDER BY usp.id DESC
+    LIMIT 1
+),
+new_user AS (
+    INSERT INTO users (created_at, updated_at)
+    SELECT $6, $6
+    WHERE NOT EXISTS (SELECT 1 FROM prev)
+      AND NOT EXISTS (SELECT 1 FROM existing_user)
+    RETURNING id
+),
+target_user AS (
+    SELECT id FROM existing_user
+    UNION ALL
+    SELECT id FROM new_user
+),
+new_profile AS (
+    INSERT INTO user_social_profiles (user_id, social_provider, social_provider_user_id, email, username, name, created_at, updated_at)
+    SELECT target_user.id, $1, $2, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6, $6
+    FROM target_user
+    RETURNING id, user_id
+),
+new_history AS (
+    INSERT INTO user_social_profile_change_history (user_id, user_social_profile_id, email, username, name, created_at)
+    SELECT new_profile.user_id, new_profile.id, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6
+    FROM new_profile
+)
+SELECT result.user_id::BIGINT AS user_id
+FROM (
+    SELECT prev.user_id FROM prev
+    UNION ALL
+    SELECT new_profile.user_id FROM new_profile
+) AS result
 `
 
-type UserSocialProfileChangeHistoryNewParams struct {
-	UserID              int64
-	UserSocialProfileID int64
-	Email               string
-	Username            string
-	Name                string
-	CreatedAt           time.Time
-}
-
-func (q *Queries) UserSocialProfileChangeHistoryNew(ctx context.Context, arg UserSocialProfileChangeHistoryNewParams) error {
-	_, err := q.exec(ctx, q.userSocialProfileChangeHistoryNewStmt, userSocialProfileChangeHistoryNew,
-		arg.UserID,
-		arg.UserSocialProfileID,
-		arg.Email,
-		arg.Username,
-		arg.Name,
-		arg.CreatedAt,
-	)
-	return err
-}
-
-const userSocialProfileGetByID = `-- name: UserSocialProfileGetByID :one
-SELECT usp.id, usp.user_id, usp.email, usp.username, usp.name
-FROM user_social_profiles usp
-WHERE usp.social_provider = $1
-  AND usp.social_provider_user_id = $2
-  AND usp.deleted_at IS NULL
-    FOR UPDATE
-`
-
-type UserSocialProfileGetByIDParams struct {
-	SocialProvider       SocialProvider
-	SocialProviderUserID string
-}
-
-type UserSocialProfileGetByIDRow struct {
-	ID       int64
-	UserID   int64
-	Email    string
-	Username string
-	Name     string
-}
-
-func (q *Queries) UserSocialProfileGetByID(ctx context.Context, arg UserSocialProfileGetByIDParams) (UserSocialProfileGetByIDRow, error) {
-	row := q.queryRow(ctx, q.userSocialProfileGetByIDStmt, userSocialProfileGetByID, arg.SocialProvider, arg.SocialProviderUserID)
-	var i UserSocialProfileGetByIDRow
-	err := row.Scan(
-		&i.ID,
-		&i.UserID,
-		&i.Email,
-		&i.Username,
-		&i.Name,
-	)
-	return i, err
-}
-
-const userSocialProfileGetUserByEmail = `-- name: UserSocialProfileGetUserByEmail :one
-SELECT usp.user_id
-FROM user_social_profiles usp
-WHERE usp.email = LOWER($1)
-  AND usp.deleted_at IS NULL
-ORDER BY usp.id DESC
-LIMIT 1
-`
-
-func (q *Queries) UserSocialProfileGetUserByEmail(ctx context.Context, email string) (int64, error) {
-	row := q.queryRow(ctx, q.userSocialProfileGetUserByEmailStmt, userSocialProfileGetUserByEmail, email)
-	var user_id int64
-	err := row.Scan(&user_id)
-	return user_id, err
-}
-
-const userSocialProfileNew = `-- name: UserSocialProfileNew :one
-INSERT INTO user_social_profiles (user_id, social_provider, social_provider_user_id, email, username, name, created_at, updated_at)
-VALUES ($1, $2, $3, $4, $5, $6, $7, $7)
-RETURNING id
-`
-
-type UserSocialProfileNewParams struct {
-	UserID               int64
+type UserSocialProfileUpsertParams struct {
 	SocialProvider       SocialProvider
 	SocialProviderUserID string
 	Email                string
@@ -264,9 +261,8 @@ type UserSocialProfileNewParams struct {
 	CreatedAt            time.Time
 }
 
-func (q *Queries) UserSocialProfileNew(ctx context.Context, arg UserSocialProfileNewParams) (int64, error) {
-	row := q.queryRow(ctx, q.userSocialProfileNewStmt, userSocialProfileNew,
-		arg.UserID,
+func (q *Queries) UserSocialProfileUpsert(ctx context.Context, arg UserSocialProfileUpsertParams) (int64, error) {
+	row := q.queryRow(ctx, q.userSocialProfileUpsertStmt, userSocialProfileUpsert,
 		arg.SocialProvider,
 		arg.SocialProviderUserID,
 		arg.Email,
@@ -274,64 +270,7 @@ func (q *Queries) UserSocialProfileNew(ctx context.Context, arg UserSocialProfil
 		arg.Name,
 		arg.CreatedAt,
 	)
-	var id int64
-	err := row.Scan(&id)
-	return id, err
-}
-
-const userSocialProfileUpdate = `-- name: UserSocialProfileUpdate :exec
-UPDATE user_social_profiles
-SET email      = LOWER($1),
-    username   = $2,
-    name       = $3,
-    updated_at = $4
-WHERE id = $5
-`
-
-type UserSocialProfileUpdateParams struct {
-	Email     string
-	Username  string
-	Name      string
-	UpdatedAt time.Time
-	ID        int64
-}
-
-func (q *Queries) UserSocialProfileUpdate(ctx context.Context, arg UserSocialProfileUpdateParams) error {
-	_, err := q.exec(ctx, q.userSocialProfileUpdateStmt, userSocialProfileUpdate,
-		arg.Email,
-		arg.Username,
-		arg.Name,
-		arg.UpdatedAt,
-		arg.ID,
-	)
-	return err
-}
-
-const usersNew = `-- name: UsersNew :one
-INSERT INTO users (created_at, updated_at)
-VALUES ($1, $1)
-RETURNING id
-`
-
-func (q *Queries) UsersNew(ctx context.Context, createdAt time.Time) (int64, error) {
-	row := q.queryRow(ctx, q.usersNewStmt, usersNew, createdAt)
-	var id int64
-	err := row.Scan(&id)
-	return id, err
-}
-
-const usersUpdate = `-- name: UsersUpdate :exec
-UPDATE users
-SET updated_at = $1
-WHERE id = $2
-`
-
-type UsersUpdateParams struct {
-	UpdatedAt time.Time
-	ID        int64
-}
-
-func (q *Queries) UsersUpdate(ctx context.Context, arg UsersUpdateParams) error {
-	_, err := q.exec(ctx, q.usersUpdateStmt, usersUpdate, arg.UpdatedAt, arg.ID)
-	return err
+	var user_id int64
+	err := row.Scan(&user_id)
+	return user_id, err
 }

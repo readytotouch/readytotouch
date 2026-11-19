@@ -22,27 +22,11 @@ func (r *UserCompanyVisibilityRepository) Upsert(
 	visibility bool,
 	createdAt time.Time,
 ) error {
-	return r.db.WithTransaction(ctx, func(queries *dbs.Queries) error {
-		affected, err := queries.UserCompanyVisibilityOverrideUpsert(ctx, dbs.UserCompanyVisibilityOverrideUpsertParams{
-			UserID:     userID,
-			CompanyID:  companyID,
-			Visibility: visibility,
-			CreatedAt:  createdAt,
-		})
-		if err != nil {
-			return err
-		}
-
-		if affected == 0 {
-			return nil
-		}
-
-		return queries.UserCompanyVisibilityOverrideHistoryNew(ctx, dbs.UserCompanyVisibilityOverrideHistoryNewParams{
-			UserID:     userID,
-			CompanyID:  companyID,
-			Visibility: visibility,
-			CreatedAt:  createdAt,
-		})
+	return r.db.Queries().UserCompanyVisibilityOverrideUpsert(ctx, dbs.UserCompanyVisibilityOverrideUpsertParams{
+		UserID:     userID,
+		CompanyID:  companyID,
+		Visibility: visibility,
+		CreatedAt:  createdAt,
 	})
 }
 

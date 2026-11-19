@@ -36,6 +36,22 @@ pg-fixtures:
 	cat ./fixtures/postgres/companies.sql | docker exec -i readytotouch_postgres_db psql -d yaaws -U yaaws_user
 	cat ./fixtures/postgres/vacancies.sql | docker exec -i readytotouch_postgres_db psql -d yaaws -U yaaws_user
 
+# Read-only statistics of the database, see scripts/pg-stats.sh
+pg-stats:
+	./scripts/pg-stats.sh
+
+pg-stats-size:
+	./scripts/pg-stats.sh size
+
+pg-stats-tables:
+	./scripts/pg-stats.sh tables
+
+pg-stats-users:
+	./scripts/pg-stats.sh users
+
+pg-stats-wip-linkedin:
+	./scripts/pg-stats.sh wip-linkedin
+
 env-down:
 	docker compose -f docker-compose.yml --env-file .env down
 
@@ -187,6 +203,45 @@ generate-companies-markdown:
 review-logos:
 	go run ./cmd/organizers/review-logos/main.go
 
+# Go dependencies security. Requires Go and jq on the host.
+# https://go.dev/doc/security/vuln/
+GOVULNCHECK_VERSION ?= v1.10.0
+GOVULNCHECK = go run golang.org/x/vuln/cmd/govulncheck@$(GOVULNCHECK_VERSION)
+
+# Ignore a local (git-ignored) vendor directory: check go.mod, not a possibly stale copy of the dependencies
+deps-%: export GOFLAGS := -mod=mod
+
+# go.mod and go.sum are consistent with the code and with the downloaded modules
+deps-verify:
+	go mod verify
+	go mod tidy -diff
+
+# Fails if a reachable vulnerability is found (including the Go standard library)
+deps-vulncheck:
+	$(GOVULNCHECK) ./...
+
+# Direct dependencies which have newer versions
+deps-outdated:
+	go list -u -m -f '{{if and .Update (not .Indirect)}}{{.Path}} {{.Version}} -> {{.Update.Version}}{{end}}' all
+
+deps-check: deps-verify deps-vulncheck
+
+# Updates only vulnerable modules to the minimal fixed version, review `git diff` afterwards
+deps-update-security:
+	GOVULNCHECK="$(GOVULNCHECK)" ./scripts/deps/update-security.sh
+
+# Patch versions only, the lowest risk of breaking changes
+deps-update-patch:
+	go get -u=patch ./...
+	go mod tidy
+	go build ./...
+
+# Minor versions too, run the tests and review `git diff` afterwards
+deps-update-all:
+	go get -u ./...
+	go mod tidy
+	go build ./...
+
 # make rust-companies > ./datasync/github.com/readytotouch/readytotouch/companies.txt
 # VERIFIED=true make rust-companies > ./datasync/github.com/readytotouch/readytotouch/verified-companies.txt
 # VERIFIED=true GITHUB=true make rust-companies > ./datasync/github.com/readytotouch/readytotouch/verified-companies-format-github.txt
@@ -220,7 +275,9 @@ generate-production-environment-file:
 	grep -qF 'GOOGLE_CLIENT_ID=' .production.env || echo 'GOOGLE_CLIENT_ID="919021173091-eu1073cp19r6ljnauc5at425o6d3keh8.apps.googleusercontent.com"' >> .production.env
 	grep -qF 'GOOGLE_CLIENT_SECRET=' .production.env || echo 'GOOGLE_CLIENT_SECRET=""' >> .production.env
 	grep -qF 'GOOGLE_REDIRECT_URL=' .production.env || echo 'GOOGLE_REDIRECT_URL="https://readytotouch.com/auth/google/callback"' >> .production.env
-	grep -qF 'LINKEDIN_OAUTH2_TOKEN=' .production.env || echo 'LINKEDIN_OAUTH2_TOKEN=""' >> .production.env
+	grep -qF 'LINKEDIN_CLIENT_ID=' .production.env || echo 'LINKEDIN_CLIENT_ID="77did0eyi8e7fn"' >> .production.env
+	grep -qF 'LINKEDIN_CLIENT_SECRET=' .production.env || echo 'LINKEDIN_CLIENT_SECRET=""' >> .production.env
+	grep -qF 'LINKEDIN_REFRESH_TOKEN=' .production.env || echo 'LINKEDIN_REFRESH_TOKEN=""' >> .production.env
 
 	cat .production.env
 

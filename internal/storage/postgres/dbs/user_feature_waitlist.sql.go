@@ -96,30 +96,21 @@ func (q *Queries) UserFeatureWaitlistStats(ctx context.Context, feature FeatureW
 	return user_count, err
 }
 
-const userFeatureWaitlistStatsUpsert = `-- name: UserFeatureWaitlistStatsUpsert :exec
+const userFeatureWaitlistUpsert = `-- name: UserFeatureWaitlistUpsert :exec
+WITH changed AS (
+    INSERT INTO user_feature_waitlist AS ufw (user_id, feature, active, created_at, updated_at)
+    VALUES ($1, $2, $3, $4, $4)
+    ON CONFLICT (user_id, feature) DO UPDATE
+        SET active     = excluded.active,
+            updated_at = excluded.updated_at
+    WHERE ufw.active <> excluded.active
+    RETURNING feature, active
+)
 INSERT INTO user_feature_waitlist_stats AS ufws (feature, user_count)
-VALUES ($1, $2)
+SELECT changed.feature, (CASE WHEN changed.active THEN 1 ELSE -1 END)::BIGINT
+FROM changed
 ON CONFLICT (feature) DO UPDATE
     SET user_count = ufws.user_count + excluded.user_count
-`
-
-type UserFeatureWaitlistStatsUpsertParams struct {
-	Feature   FeatureWait
-	UserCount int64
-}
-
-func (q *Queries) UserFeatureWaitlistStatsUpsert(ctx context.Context, arg UserFeatureWaitlistStatsUpsertParams) error {
-	_, err := q.exec(ctx, q.userFeatureWaitlistStatsUpsertStmt, userFeatureWaitlistStatsUpsert, arg.Feature, arg.UserCount)
-	return err
-}
-
-const userFeatureWaitlistUpsert = `-- name: UserFeatureWaitlistUpsert :execrows
-INSERT INTO user_feature_waitlist AS ufw (user_id, feature, active, created_at, updated_at)
-VALUES ($1, $2, $3, $4, $4)
-ON CONFLICT (user_id, feature) DO UPDATE
-    SET active     = excluded.active,
-        updated_at = excluded.updated_at
-WHERE ufw.active <> excluded.active
 `
 
 type UserFeatureWaitlistUpsertParams struct {
@@ -129,15 +120,12 @@ type UserFeatureWaitlistUpsertParams struct {
 	CreatedAt time.Time
 }
 
-func (q *Queries) UserFeatureWaitlistUpsert(ctx context.Context, arg UserFeatureWaitlistUpsertParams) (int64, error) {
-	result, err := q.exec(ctx, q.userFeatureWaitlistUpsertStmt, userFeatureWaitlistUpsert,
+func (q *Queries) UserFeatureWaitlistUpsert(ctx context.Context, arg UserFeatureWaitlistUpsertParams) error {
+	_, err := q.exec(ctx, q.userFeatureWaitlistUpsertStmt, userFeatureWaitlistUpsert,
 		arg.UserID,
 		arg.Feature,
 		arg.Active,
 		arg.CreatedAt,
 	)
-	if err != nil {
-		return 0, err
-	}
-	return result.RowsAffected()
+	return err
 }

@@ -3,7 +3,7 @@ version: "3.7"
 services:
   app:
     container_name: "readytotouch_go_app"
-    image: golang:1.26.1-alpine
+    image: golang:1.27.4-alpine
     working_dir: /go/src/github.com/readytotouch/readytotouch
     volumes:
       - .:/go/src/github.com/readytotouch/readytotouch
@@ -25,7 +25,9 @@ services:
       GOOGLE_CLIENT_ID: ${GOOGLE_CLIENT_ID}
       GOOGLE_CLIENT_SECRET: ${GOOGLE_CLIENT_SECRET}
       GOOGLE_REDIRECT_URL: ${GOOGLE_REDIRECT_URL}
-      LINKEDIN_OAUTH2_TOKEN: ${LINKEDIN_OAUTH2_TOKEN}
+      LINKEDIN_CLIENT_ID: ${LINKEDIN_CLIENT_ID}
+      LINKEDIN_CLIENT_SECRET: ${LINKEDIN_CLIENT_SECRET}
+      LINKEDIN_REFRESH_TOKEN: ${LINKEDIN_REFRESH_TOKEN}
       TLS_CERTIFICATES_DIR: /var/lib/tls-certificates/data/
       HOSTS: ${HOSTS}
     ports:
@@ -39,7 +41,7 @@ services:
 
   postgres:
     container_name: "readytotouch_postgres_db"
-    image: postgres:15.3
+    image: postgres:15
     environment:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
@@ -54,7 +56,7 @@ services:
 
   redis:
     container_name: "readytotouch_redis"
-    image: "redis:latest"
+    image: "redis:8"
 
   goose:
     container_name: "readytotouch_postgres_goose_migrations"

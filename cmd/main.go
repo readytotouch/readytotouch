@@ -42,9 +42,13 @@ import (
 
 func main() {
 	var (
-		dsn                = env.Required("POSTGRES_DSN")
-		jwtSecretKey       = env.Required("JWT_SECRET_KEY")
-		linkedinOAuthToken = os.Getenv("LINKEDIN_OAUTH2_TOKEN")
+		dsn            = env.Required("POSTGRES_DSN")
+		jwtSecretKey   = env.Required("JWT_SECRET_KEY")
+		linkedinConfig = pkgLinkedIn.Config{
+			ClientID:     os.Getenv("LINKEDIN_CLIENT_ID"),
+			ClientSecret: os.Getenv("LINKEDIN_CLIENT_SECRET"),
+			RefreshToken: os.Getenv("LINKEDIN_REFRESH_TOKEN"),
+		}
 	)
 
 	pgConnection := postgres.MustConnection(dsn)
@@ -141,7 +145,7 @@ func main() {
 			userToLinkedInCompanyRepository,
 			pkgCAC.NewService(
 				userToLinkedInCompanyRepository,
-				pkgLinkedIn.NewClient(linkedinOAuthToken),
+				pkgLinkedIn.NewClient(linkedinConfig),
 			),
 		)
 	)

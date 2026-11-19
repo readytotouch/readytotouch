@@ -3,24 +3,37 @@
   hosts: "web"
   gather_facts: "no"
   vars:
-    GO_VERSION: "1.26.1"
+    GO_VERSION: "1.27.4"
+    # https://go.dev/dl/ (sha256 of go<GO_VERSION>.linux-amd64.tar.gz), must be updated together with GO_VERSION
+    GO_SHA256: "7226736c2339719cda28fbf3a54d71aa63bcefe376e98cef00034268dab24840"
 
   tasks:
-    - name: "Remove old Go"
-      file:
-        path: "/usr/local/go"
-        state: absent
+    - name: "Get installed Go version"
+      command: "/usr/local/go/bin/go version"
+      register: "installed_go_version"
+      changed_when: false
+      failed_when: false
 
-    - name: "Download Go {{ GO_VERSION }}"
-      get_url:
-        url: "https://go.dev/dl/go{{ GO_VERSION }}.linux-amd64.tar.gz"
-        dest: "/tmp/go{{ GO_VERSION }}.linux-amd64.tar.gz"
+    - name: "Install Go {{ GO_VERSION }}"
+      when: "('go' + GO_VERSION + ' ') not in installed_go_version.stdout"
+      block:
+        - name: "Download Go {{ GO_VERSION }}"
+          get_url:
+            url: "https://go.dev/dl/go{{ GO_VERSION }}.linux-amd64.tar.gz"
+            dest: "/tmp/go{{ GO_VERSION }}.linux-amd64.tar.gz"
+            checksum: "sha256:{{ GO_SHA256 }}"
 
-    - name: "Extract Go tarball"
-      ansible.builtin.unarchive:
-        src: "/tmp/go{{ GO_VERSION }}.linux-amd64.tar.gz"
-        dest: "/usr/local"
-        remote_src: "yes"
+        # Removed only after the new archive is downloaded and verified
+        - name: "Remove old Go"
+          file:
+            path: "/usr/local/go"
+            state: absent
+
+        - name: "Extract Go tarball"
+          ansible.builtin.unarchive:
+            src: "/tmp/go{{ GO_VERSION }}.linux-amd64.tar.gz"
+            dest: "/usr/local"
+            remote_src: "yes"
 
     - name: "Add Go binaries to PATH"
       lineinfile:
@@ -34,5 +47,6 @@
       args:
         executable: "/bin/bash"
       register: "go_version_output"
+      changed_when: false
     - debug:
         var: "go_version_output.stdout"
